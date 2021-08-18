@@ -1,19 +1,19 @@
 ---
-title: UI_ANIMATION_SECONDS (UIAnimation. h)
+title: UI_ANIMATION_SECONDS (UIAnimation.h)
 description: A unidade de tempo usada para todas as animações.
 ms.assetid: 0745b227-61c4-462e-8529-9402c9eaa70a
 keywords:
 - UI_ANIMATION_SECONDS
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea7cdf5b487138f68dac90f1d4f4bd9afcd1e73b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c21b6fbdb053fa46423bf1e29b92d59b9cf6d4007bc46fa739614b21c12d09ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999656"
 ---
-# <a name="ui_animation_seconds"></a>\_segundos de animação da interface do usuário \_
+# <a name="ui_animation_seconds"></a>SEGUNDOS DE \_ ANIMAÇÃO DA INTERFACE DO \_ USUÁRIO
 
 A unidade de tempo usada para todas as animações.
 
@@ -30,10 +30,10 @@ typedef DOUBLE UI_ANIMATION_SECONDS;
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista e atualização de plataforma para \[ aplicativos da área de trabalho do Windows Vista \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista e Atualização de Plataforma para Windows aplicativos \[ UWP da área de trabalho do Vista \|\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                              |
-| parâmetro<br/>                   | <dl> <dt>UIAnimation. h</dt> </dl>               |
-| INSERI<br/>                      | <dl> <dt>UIAnimation. idl</dt> </dl>             |
+| Cabeçalho<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>               |
+| Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl>             |
 
 
 

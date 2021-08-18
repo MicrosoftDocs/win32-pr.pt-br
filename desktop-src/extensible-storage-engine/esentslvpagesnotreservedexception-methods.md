@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentSLVPagesNotReservedException'
+description: 'Saiba mais sobre: Métodos EsentSLVPagesNotReservedException'
 title: 'Métodos EsentSLVPagesNotReservedException '
 TOCTitle: EsentSLVPagesNotReservedException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentSLVPagesNotReservedException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102807
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3c10b12d90699c85256c2557930d61c19e6de230
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6adc187080bef5688b6fa170f7b97218a5dd214af94088eb9cd683b10285e60c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828786"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119850766"
 ---
 # <a name="esentslvpagesnotreservedexception-methods"></a>Métodos EsentSLVPagesNotReservedException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSLVPagesNotReservedException](./esentslvpagesnotreservedexception-class.md) expõe os membros a seguir.
+O [tipo EsentSLVPagesNotReservedException](./esentslvpagesnotreservedexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentSLVPagesNotReservedException](./esentslvpagesnotreservedexception-c
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentSLVPagesNotReservedException](./esentslvpagesnotreservedexception-c
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentSLVPagesNotReservedException](./esentslvpagesnotreservedexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

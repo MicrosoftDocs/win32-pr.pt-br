@@ -4,12 +4,12 @@ ms.assetid: a5cf3512-ee42-4f64-8fe3-73a14589f78c
 title: Constantes de LINEPROXYSTATUS_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e21eaf2708b92448c877230a3be82a6003c9ad9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b49c3e787451024254a25959cdf2e0a8240cba4453c8b888665d14a2aa220e93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105800020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003024"
 ---
 # <a name="lineproxystatus_-constants"></a>\_Constantes LINEPROXYSTATUS
 
@@ -56,7 +56,7 @@ Um novo proxy foi aberto.
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,2<br/>                                                      |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

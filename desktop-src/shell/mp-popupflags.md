@@ -26,12 +26,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5d49f848df7749a732e9f0b849d44a9be56a5c3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1f6211769eca021f76fcbef34625f705cd3bf3fed02ca548d2965f17de80af7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090838"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710006"
 ---
 # <a name="mp_popupflags-constants"></a>\_Constantes POPUPFLAGS MP
 
@@ -39,7 +39,7 @@ Representam opções disponíveis ao exibir um menu pop-up.
 
 
 
-| Constante/valor                                                                                                                                                                                                                               | Description                                                                                                                                                                                                                                                              |
+| Constante/valor                                                                                                                                                                                                                               | Descrição                                                                                                                                                                                                                                                              |
 |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="MPPF_SETFOCUS"></span><span id="mppf_setfocus"></span><dl> <dt>**MPPF \_ SETFOCUS**</dt> <dt>0x00000001</dt> </dl>                | Dê o foco ao menu pop-up.<br/>                                                                                                                                                                                                                               |
 | <span id="MPPF_INITIALSELECT"></span><span id="mppf_initialselect"></span><dl> <dt>**MPPF \_ INITIALSELECT**</dt> <dt>0x00000002</dt> </dl> | Selecione o primeiro item no menu pop-up.<br/>                                                                                                                                                                                                                     |
@@ -48,8 +48,8 @@ Representam opções disponíveis ao exibir um menu pop-up.
 | <span id="MPPF_REPOSITION"></span><span id="mppf_reposition"></span><dl> <dt>**MPPF \_ Reposicionar**</dt> <dt>0x00000020</dt> </dl>          | Exiba a barra em uma posição diferente, com base nas alterações feitas no menu.<br/>                                                                                                                                                                                        |
 | <span id="MPPF_FORCEZORDER"></span><span id="mppf_forcezorder"></span><dl> <dt>**MPPF \_ FORCEZORDER**</dt> <dt>0x00000040</dt> </dl>       | Reservado. Não use.<br/>                                                                                                                                                                                                                                         |
 | <span id="MPPF_FINALSELECT"></span><span id="mppf_finalselect"></span><dl> <dt>**MPPF \_ FINALSELECT**</dt> <dt>0x00000080</dt> </dl>       | Selecione o último item no menu.<br/>                                                                                                                                                                                                                             |
-| <span id="MPPF_ALIGN_LEFT"></span><span id="mppf_align_left"></span><dl> <dt>**MPPF \_ ALINHAr 0x02000000 \_ à esquerda**</dt> <dt></dt> </dl>         | **Windows Vista ou posterior**: Alinhe o menu pop-up à esquerda da área especificada no parâmetro *prcExclude* de [**ITrackShellMenu::P opup**](/windows/desktop/api/Shdeprecated/nf-shdeprecated-itrackshellmenu-popup) ou [**IMenuPopup::P opup**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imenupopup-popup). Esse é o alinhamento padrão.<br/> |
-| <span id="MPPF_ALIGN_RIGHT"></span><span id="mppf_align_right"></span><dl> <dt>**MPPF \_ ALINHAr 0x04000000 \_ à direita**</dt> <dt></dt> </dl>      | **Windows Vista ou posterior**: Alinhe o menu pop-up à direita da área especificada no parâmetro *prcExclude* de [**ITrackShellMenu::P opup**](/windows/desktop/api/Shdeprecated/nf-shdeprecated-itrackshellmenu-popup) ou [**IMenuPopup::P opup**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imenupopup-popup).<br/>                               |
+| <span id="MPPF_ALIGN_LEFT"></span><span id="mppf_align_left"></span><dl> <dt>**MPPF \_ ALINHAr 0x02000000 \_ à esquerda**</dt> <dt></dt> </dl>         | **Windows Vista ou posterior**: alinhe o menu pop-up à esquerda da área especificada no parâmetro *prcExclude* de [**ITrackShellMenu::P opup**](/windows/desktop/api/Shdeprecated/nf-shdeprecated-itrackshellmenu-popup) ou [**IMenuPopup::P opup**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imenupopup-popup). Esse é o alinhamento padrão.<br/> |
+| <span id="MPPF_ALIGN_RIGHT"></span><span id="mppf_align_right"></span><dl> <dt>**MPPF \_ ALINHAr 0x04000000 \_ à direita**</dt> <dt></dt> </dl>      | **Windows Vista ou posterior**: alinhe o menu pop-up à direita da área especificada no parâmetro *prcExclude* de [**ITrackShellMenu::P opup**](/windows/desktop/api/Shdeprecated/nf-shdeprecated-itrackshellmenu-popup) ou [**IMenuPopup::P opup**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imenupopup-popup).<br/>                               |
 | <span id="MPPF_TOP"></span><span id="mppf_top"></span><dl> <dt>**MPPF \_**</dt> <dt>0x20000000</dt> superior </dl>                               | Posicione o menu pop-up acima do ponto inicial especificado no parâmetro *ppt* de [**ITrackShellMenu::P opup**](/windows/desktop/api/Shdeprecated/nf-shdeprecated-itrackshellmenu-popup) ou [**IMenuPopup::P opup**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imenupopup-popup).<br/>                                                                |
 | <span id="MPPF_LEFT"></span><span id="mppf_left"></span><dl> <dt>**MPPF \_**</dt> <dt>0x40000000</dt> esquerdo </dl>                            | Posicione o menu pop-up à esquerda do ponto inicial.<br/>                                                                                                                                                                                                    |
 | <span id="MPPF_RIGHT"></span><span id="mppf_right"></span><dl> <dt>**MPPF \_ 0x60000000 à direita**</dt> <dt></dt> </dl>                         | Posicione o menu pop-up à direita do ponto inicial.<br/>                                                                                                                                                                                                   |
@@ -60,7 +60,7 @@ Representam opções disponíveis ao exibir um menu pop-up.
 
 ## <a name="remarks"></a>Comentários
 
-Essas constantes são definidas no arquivo ShObjIdl. h a partir do Windows XP Service Pack 1 (SP1) e do Windows Server 2003
+essas constantes são definidas no arquivo Shobjidl. h a partir do Windows XP Service Pack 1 (SP1) e do Windows Server 2003
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,9 +68,9 @@ Essas constantes são definidas no arquivo ShObjIdl. h a partir do Windows XP Se
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP com SP1\]<br/>                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>ShObjIdl. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho do SP1\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>ShObjIdl. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>ShObjIdl. idl</dt> </dl> |
 
 

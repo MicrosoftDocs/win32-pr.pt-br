@@ -10,12 +10,12 @@ keywords:
 - DRV_OPEN mensagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7e23f933567d125dd07f81047ea8868c12f41ac
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 5fabb833b0aa3adef444f8242d540eb48dcbe381ebc5c7f62c6dedc0d5e9160e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103823747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119786196"
 ---
 # <a name="callback-functions"></a>Funções de retorno de chamada
 
@@ -23,6 +23,6 @@ Os drivers instaláveis podem notificar o aplicativo, a janela ou a tarefa que a
 
 Se um driver oferecer suporte a funções de retorno de chamada, o aplicativo ou DLL que abre a instância do deve fornecer um valor esse é o endereço de uma função de retorno de chamada, um identificador de janela ou um identificador de tarefa. Esse valor e um sinalizador que identifica o tipo do valor são normalmente passados em uma estrutura apontada pelo segundo parâmetro da mensagem de [**\_ abertura do drv**](drv-open.md) .
 
- 
+ 
 
- 
+ 

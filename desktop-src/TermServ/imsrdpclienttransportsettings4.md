@@ -1,11 +1,11 @@
 ---
 title: Interface IMsRdpClientTransportSettings4
-description: Define propriedades adicionais para o servidor de gateway de Área de Trabalho Remota (Gateway RD). | Interface IMsRdpClientTransportSettings4
+description: Define propriedades adicionais para o servidor Área de Trabalho Remota gateway de área de trabalho (Gateway de Área de Trabalho Remoto). | Interface IMsRdpClientTransportSettings4
 ms.assetid: 8b079d38-f6bc-465b-9af8-414e618f2820
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientTransportSettings4
-- Serviços de Área de Trabalho Remota da interface IMsRdpClientTransportSettings4, descrita
+- Interface IMsRdpClientTransportSettings4 Serviços de Área de Trabalho Remota
+- Interface IMsRdpClientTransportSettings4 Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 902f04641165c5444d1a763ff9381dc9d339e924
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ba2e66687550d3bcc40c5eb6f7fc6a52f2590ab154deae604f3c55ee9587e682
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104506383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000886"
 ---
 # <a name="imsrdpclienttransportsettings4-interface"></a>Interface IMsRdpClientTransportSettings4
 
-Define propriedades adicionais para o servidor de gateway de Área de Trabalho Remota (Gateway RD).
+Define propriedades adicionais para o servidor Área de Trabalho Remota gateway de área de trabalho (Gateway de Área de Trabalho Remoto).
 
 ## <a name="members"></a>Membros
 

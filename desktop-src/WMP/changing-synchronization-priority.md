@@ -3,26 +3,26 @@ title: Alterando a prioridade de sincronização
 description: Alterando a prioridade de sincronização
 ms.assetid: 992781cb-5018-4b88-aa93-2f8a86468a42
 keywords:
-- Windows Media Player, listas de reprodução de sincronização
-- Modelo de objeto do Windows Media Player, listas de reprodução de sincronização
+- Windows Media Player, playlists de sincronização
+- modelo de objeto Windows Media Player, playlists de sincronização
 - modelo de objeto, playlists de sincronização
-- Windows Media Player Mobile, listas de reprodução de sincronização
-- Controle ActiveX do Windows Media Player, listas de reprodução de sincronização
-- Controle ActiveX móvel do Windows Media Player, listas de reprodução de sincronização
-- Controle ActiveX, listas de reprodução de sincronização
+- Windows Media Player Listas de reprodução móveis e de sincronização
+- controle de ActiveX de Windows Media Player, listas de reprodução de sincronização
+- Windows Media Player controle de ActiveX móvel, playlists de sincronização
+- controle de ActiveX, listas de reprodução de sincronização
 - listas de reprodução, sincronização
 - listas de reprodução de metarquivo, sincronização
-- Listas de reprodução do metarquivo do Windows Media, sincronização
+- Windows Listas de reprodução de metarquivo de mídia, sincronização
 - dispositivos portáteis, alterando as prioridades da lista de reprodução de sincronização
 - listas de reprodução de sincronização, prioridades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 327f211282e2e3b35c21dce721a17f99dcb6583d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 1513679bcde31893cd7c4f456bc0e99404bb5dc66de37976f2053ae1559a4cdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103640173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997656"
 ---
 # <a name="changing-synchronization-priority"></a>Alterando a prioridade de sincronização
 
@@ -94,9 +94,9 @@ void CSyncSettings::SetPriorities()
 [**Gerenciando listas de reprodução de sincronização**](managing-synchronization-playlists.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

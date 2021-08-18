@@ -1,17 +1,17 @@
 ---
-description: Usando a exclusão mútua para fluxos ASF
+description: usando a exclusão mútua para o ASF Fluxos
 ms.assetid: fdd31eac-1dd6-45f0-90fb-d5a74c85db2e
-title: Usando a exclusão mútua para fluxos ASF
+title: usando a exclusão mútua para o ASF Fluxos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 411b5aa0638ab1c56298b93d01e8de99920abc6c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40c7fd104659064952803c16f572ee1e55dee0508144474e89ee7c0f362315c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105749934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034555"
 ---
-# <a name="using-mutual-exclusion-for-asf-streams"></a>Usando a exclusão mútua para fluxos ASF
+# <a name="using-mutual-exclusion-for-asf-streams"></a>usando a exclusão mútua para o ASF Fluxos
 
 O conteúdo do ASF pode conter vários fluxos mutuamente exclusivos. Esses fluxos não podem ser lidos simultaneamente, mas apenas um deles é lido por vez. Por exemplo, o arquivo pode conter um conjunto de fluxos que inclui o mesmo conteúdo codificado em uma taxa de bits diferente. O fluxo usado é determinado pela largura de banda disponível para o aplicativo que transmite o conteúdo. O objeto de exclusão mútua do ASF, que faz parte do objeto de cabeçalho, armazena informações sobre o grupo de fluxos mutuamente exclusivos.
 

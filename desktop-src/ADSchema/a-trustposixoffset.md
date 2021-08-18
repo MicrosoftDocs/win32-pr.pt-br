@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de8f3dca090d44ea545dcc290b04d99131d50dc7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2b2f4529c2f3aeef1098d444501a87ed3e45ec39fb2ca6311f9cf017762f091c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104009840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022014"
 ---
 # <a name="trust-posix-offset-attribute"></a>Atributo Trust-POSIX-offset
 
@@ -58,7 +58,7 @@ O deslocamento POSIX (interface do sistema operacional portátil) para o domíni
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -79,7 +79,7 @@ O deslocamento POSIX (interface do sistema operacional portátil) para o domíni
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -100,7 +100,7 @@ O deslocamento POSIX (interface do sistema operacional portátil) para o domíni
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -121,7 +121,7 @@ O deslocamento POSIX (interface do sistema operacional portátil) para o domíni
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -142,7 +142,7 @@ O deslocamento POSIX (interface do sistema operacional portátil) para o domíni
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
@@ -163,7 +163,7 @@ O deslocamento POSIX (interface do sistema operacional portátil) para o domíni
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
+| É de valor único       | Verdadeiro                                                 |
 | É indexado             | Falso                                                |
 | No catálogo global      | Falso                                                |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |

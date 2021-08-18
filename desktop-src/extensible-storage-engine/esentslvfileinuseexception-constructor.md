@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c7b7d1c5e3b13762cb88a3e7772164e1dd3bce87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f170d319e8098f57e7a7d1885b2aafd4d14f17a95e250bcc5498789b3a7abe9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981416"
 ---
 # <a name="esentslvfileinuseexception-constructor"></a>Construtor EsentSLVFileInUseException
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public EsentSLVFileInUseException()
 
 [Classe EsentSLVFileInUseException](./esentslvfileinuseexception-class.md)
 
-[Membros do EsentSLVFileInUseException](./esentslvfileinuseexception-members.md)
+[Membros EsentSLVFileInUseException](./esentslvfileinuseexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

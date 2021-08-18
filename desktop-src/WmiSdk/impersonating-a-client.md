@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Representando um cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 162857d90c8bddb70d90eb2e10efbc08537299d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04b6d1fe931a9e0620643d8b3f8a77c63d031a41f1dac9d17301e11c03d21bfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757936"
 ---
 # <a name="impersonating-a-client"></a>Representando um cliente
 
@@ -29,7 +29,7 @@ As seções a seguir são discutidas neste tópico:
 
 Normalmente, o WMI é executado como um serviço administrativo em um nível de segurança alto, usando o contexto de segurança LocalServer. O uso de um serviço administrativo fornece ao WMI o meio de acessar informações privilegiadas. Ao chamar um provedor para obter informações, o WMI passa seu SID (identificador de segurança) para o provedor, permitindo que o provedor acesse as informações no mesmo nível de segurança alto.
 
-Durante o processo de inicialização do aplicativo WMI, o sistema operacional Windows fornece ao aplicativo WMI o contexto de segurança do usuário que iniciou o processo. O contexto de segurança do usuário normalmente é um nível de segurança mais baixo do que LocalServer, portanto, o usuário pode não ter permissão para acessar todas as informações disponíveis para o WMI. Quando o aplicativo do usuário solicita informações dinâmicas, o WMI passa o SID do usuário para o provedor correspondente. Se for escrito adequadamente, o provedor tentará acessar informações com o SID do usuário, em vez do SID do provedor.
+durante o processo de inicialização do aplicativo wmi, o sistema operacional Windows fornece ao aplicativo WMI o contexto de segurança do usuário que iniciou o processo. O contexto de segurança do usuário normalmente é um nível de segurança mais baixo do que LocalServer, portanto, o usuário pode não ter permissão para acessar todas as informações disponíveis para o WMI. Quando o aplicativo do usuário solicita informações dinâmicas, o WMI passa o SID do usuário para o provedor correspondente. Se for escrito adequadamente, o provedor tentará acessar informações com o SID do usuário, em vez do SID do provedor.
 
 Para que o provedor represente com êxito o aplicativo cliente, o aplicativo cliente e o provedor devem atender aos seguintes critérios:
 
@@ -75,7 +75,7 @@ Se você registrar um provedor com a propriedade de classe [**\_ \_ Win32Provide
 
 A função [**CoImpersonateClient**](/windows/win32/api/combaseapi/nf-combaseapi-coimpersonateclient) permite que um servidor represente o cliente que fez a chamada. Ao fazer uma chamada para **CoImpersonateClient** em sua implementação de [**IWbemServices**](/windows/desktop/api/WbemCli/nn-wbemcli-iwbemservices), você permite que seu provedor defina o token de thread do provedor para corresponder ao token de thread do cliente e, portanto, representa o cliente. Se você não chamar **CoImpersonateClient**, seu provedor executará o código em um nível de segurança de administrador, criando assim uma vulnerabilidade de segurança em potencial. Se o seu provedor precisar agir temporariamente como administrador ou executar a verificação de acesso manualmente, chame o [**CoRevertToSelf**](/windows/win32/api/combaseapi/nf-combaseapi-coreverttoself).
 
-Em contraste com [**CoImpersonateClient**](/windows/win32/api/combaseapi/nf-combaseapi-coimpersonateclient), o [**CoRevertToSelf**](/windows/win32/api/combaseapi/nf-combaseapi-coreverttoself) é uma função com que lida com os níveis de representação do thread. Nesse caso, o **CoRevertToSelf** altera o nível de representação de volta para a configuração de representação original. Em geral, o provedor é inicialmente um administrador e alterna entre **CoImpersonateClient** e **CoRevertToSelf** dependendo se ele está fazendo uma chamada que representa o chamador ou suas próprias chamadas. É responsabilidade do provedor fazer essas chamadas corretamente para não expor uma brecha de segurança para o usuário final. Por exemplo, o provedor deve chamar apenas funções nativas do Windows dentro da sequência de código representada.
+Em contraste com [**CoImpersonateClient**](/windows/win32/api/combaseapi/nf-combaseapi-coimpersonateclient), o [**CoRevertToSelf**](/windows/win32/api/combaseapi/nf-combaseapi-coreverttoself) é uma função com que lida com os níveis de representação do thread. Nesse caso, o **CoRevertToSelf** altera o nível de representação de volta para a configuração de representação original. Em geral, o provedor é inicialmente um administrador e alterna entre **CoImpersonateClient** e **CoRevertToSelf** dependendo se ele está fazendo uma chamada que representa o chamador ou suas próprias chamadas. É responsabilidade do provedor fazer essas chamadas corretamente para não expor uma brecha de segurança para o usuário final. por exemplo, o provedor deve chamar apenas funções nativas de Windows dentro da sequência de código representada.
 
 > [!Note]  
 > A finalidade de [**CoImpersonateClient**](/windows/win32/api/combaseapi/nf-combaseapi-coimpersonateclient) e [**CoRevertToSelf**](/windows/win32/api/combaseapi/nf-combaseapi-coreverttoself) é definir a segurança de um provedor. Se você determinar que sua representação falhou, deverá retornar um código de conclusão apropriado para WMI por meio de [**IWbemObjectSink:: SetStatus**](/windows/desktop/api/Wbemcli/nf-wbemcli-iwbemobjectsink-setstatus). Para obter mais informações, consulte [manipulando mensagens de acesso negado em um provedor](#handling-access-denied-messages-in-a-provider).
@@ -122,29 +122,29 @@ O WMI não requer uma única resposta para clientes que têm acesso parcial a um
 
 Outra ocorrência comum de uma violação de acesso é quando o WMI não pode retornar todas as enumerações. Por exemplo, um cliente pode ter acesso para exibir todos os objetos de computador de rede local, mas pode não ter acesso para exibir objetos de computador fora do seu domínio. Seu provedor deve determinar como lidar com qualquer situação quando uma enumeração não puder ser concluída devido a uma violação de acesso.
 
-Assim como com um provedor de instância, o WMI não requer uma única resposta a uma enumeração parcial. Em vez disso, o WMI versão 1. x permite que um provedor seja uma das seguintes opções:
+Assim como acontece com um provedor de instância, o WMI não requer uma única resposta a uma enumeração parcial. Em vez disso, o WMI versão 1.x permite a um provedor uma das seguintes opções:
 
--   Retornar **WBEM \_ S \_ sem \_ erro** para todas as instâncias que o provedor pode acessar.
+-   Retornar **WBEM \_ S NO ERROR \_ \_ para** todas as instâncias que o provedor pode acessar.
 
-    Se você usar essa opção, o usuário não saberá que algumas instâncias não estavam disponíveis. Vários provedores, como aqueles que usam o linguagem SQL (SQL) com segurança em nível de linha, retornam resultados parciais com êxito usando o nível de segurança do chamador para definir o conjunto de resultados.
+    Se você usar essa opção, o usuário não estará ciente de que algumas instâncias não estavam disponíveis. Vários provedores, como aqueles que usam linguagem SQL (SQL) com segurança em nível de linha, retornam resultados parciais bem-sucedidos usando o nível de segurança do chamador para definir o conjunto de resultados.
 
--   Reprovar toda a operação com **acesso de WBEM e \_ \_ \_ negado** e não retornar nenhuma instância.
+-   Falha em toda a operação com **WBEM \_ E \_ ACCESS \_ DENIED e** não retorna nenhuma instância.
 
-    O provedor pode opcionalmente incluir um objeto de erro que descreve a situação para o cliente. Observe que alguns provedores podem acessar fontes de dados em série e podem não encontrar negações até MSRC durante por meio da enumeração.
+    Opcionalmente, o provedor pode incluir um objeto de erro que descreve a situação para o cliente. Observe que alguns provedores podem acessar fontes de dados em série e não podem encontrar negação até que a enumeração seja parcial.
 
--   Retornar todas as instâncias que podem ser acessadas, mas também retornar o código de status não-erro **WBEM \_ \_ acesso \_ negado**.
+-   Retornar todas as instâncias que podem ser acessadas, mas também retornar o código de status **nãoerror ACESSO \_ \_ \_ NEGADO do WBEM S**.
 
-    O provedor deve observar a negação durante a enumeração e pode continuar fornecendo instâncias, concluindo com o código de status não-erro. O provedor também pode optar por encerrar a enumeração na primeira negação. A justificativa para essa opção é que provedores diferentes têm paradigmas de recuperação diferentes. Um provedor pode já ter entregue instâncias antes de descobrir uma violação de acesso. Alguns provedores podem optar por continuar fornecendo outras instâncias e outras talvez queiram encerrar.
+    O provedor deve observar a negação durante a enumeração e pode continuar fornecendo instâncias, terminando com o código de status nãoerror. O provedor também pode optar por encerrar a enumeração na primeira negação. A justificativa para essa opção é que provedores diferentes têm paradigmas de recuperação diferentes. Um provedor pode já ter entregue instâncias antes de descobrir uma violação de acesso. Alguns provedores podem optar por continuar fornecendo outras instâncias e outros podem desejar encerrar.
 
-Devido à estrutura de COM, não é possível realizar marshaling de todas as informações durante um erro, exceto para um objeto de erro. Portanto, você não pode retornar as informações e um código de erro. Se você optar por retornar informações, deverá usar um código de status de não erro.
+Devido à estrutura do COM, você não pode fazer marshal de nenhuma informação durante um erro, exceto para um objeto de erro. Portanto, você não pode retornar informações e um código de erro. Se você optar por retornar informações, deverá usar um código de status nãoerror.
 
 ## <a name="debugging-your-access-denied-code"></a>Depurando seu código de acesso negado
 
-Alguns aplicativos podem usar níveis de representação inferiores à representação de **nível de imp do RPC \_ \_ \_ \_ C**. Nesse caso, a maioria das chamadas de representação feitas pelo provedor para o aplicativo cliente falhará. Para projetar e implementar um provedor com êxito, você deve ter essa ideia em mente.
+Alguns aplicativos podem usar níveis de representação inferiores ao **RPC \_ C IMP \_ LEVEL \_ \_ IMPERSONATE**. Nesse caso, a maioria das chamadas de representação feitas pelo provedor para o aplicativo cliente falhará. Para projetar e implementar um provedor com êxito, você deve ter essa ideia em mente.
 
-Por padrão, o único outro nível de representação que pode acessar um provedor é **a \_ \_ identificação do \_ nível \_ de imp do RPC C**. Nos casos em que um aplicativo cliente usa a **identificação de nível de Imp de RPC \_ C \_ \_ \_**, [**CoImpersonateClient**](/windows/win32/api/combaseapi/nf-combaseapi-coimpersonateclient) não retorna um código de erro. Em vez disso, o provedor representa o cliente apenas para fins de identificação. Portanto, a maioria dos métodos do Windows chamados pelo provedor retornará uma mensagem de acesso negado. Isso é inofensivo na prática, pois os usuários não terão permissão para fazer nada inadequado. No entanto, pode ser útil durante o desenvolvimento do provedor saber se o cliente foi realmente representado ou não.
+Por padrão, o único outro nível de representação que pode acessar um provedor é **RPC \_ C IMP \_ LEVEL \_ \_ IDENTIFY.** Nos casos em que um aplicativo cliente usa **RPC \_ C IMP LEVEL \_ \_ \_ IDENTIFY,** [**CoImpersonateClient**](/windows/win32/api/combaseapi/nf-combaseapi-coimpersonateclient) não retorna um código de erro. Em vez disso, o provedor representa o cliente apenas para fins de identificação. Portanto, a Windows métodos chamados pelo provedor retornará uma mensagem de acesso negado. Isso é inofensivo na prática, pois os usuários não terão permissão para fazer nada inadequado. No entanto, pode ser útil durante o desenvolvimento do provedor saber se o cliente foi realmente representado ou não.
 
-O código requer as referências a seguir e \# inclui instruções para compilar corretamente.
+O código requer as seguintes referências e instruções \# include para compilar corretamente.
 
 
 ```C++
@@ -231,10 +231,10 @@ CloseHandle(hThreadTok);
 [Desenvolvendo um provedor WMI](developing-a-wmi-provider.md)
 </dt> <dt>
 
-[Configurando descritores de segurança namepace](setting-namespace-security-descriptors.md)
+[Definindo Descritores de Segurança namepace](setting-namespace-security-descriptors.md)
 </dt> <dt>
 
-[Protegendo seu provedor](securing-your-provider.md)
+[Proteger seu provedor](securing-your-provider.md)
 </dt> </dl>
 
  

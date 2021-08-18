@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Scardssp.dll
-ms.openlocfilehash: ee615e7f2e8d7555cfed276658e8de1a97ddf73a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: feb9b5230564122ac3bed3c34271f0c608924babbbc2c263e10425931fb62337
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120014606"
 ---
 # <a name="iscardcmdput_apdu-method"></a>ISCardCmd: método UT \_ Apdu:p
 
-\[O método **Put \_ APDU** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele não está disponível para uso no Windows Server 2003 com Service Pack 1 (SP1) e posterior, no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
+\[O método **Put \_ APDU** está disponível para uso nos sistemas operacionais especificados na seção requisitos. ele não está disponível para uso no Windows server 2003 com Service Pack 1 (SP1) e posterior, Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. Os [módulos de cartão inteligente](/previous-versions/windows/desktop/secsmart/smart-card-modules) fornecem funcionalidade semelhante.\]
 
 O **método Put \_ APDU** copia a APDU ( [*unidade de dados do protocolo de aplicativo*](../secgloss/a-gly.md) ) do objeto [**IBYTEBUFFER**](ibytebuffer.md) (**IStream**) para o APDU encapsulado neste objeto de interface.
 
@@ -48,7 +48,7 @@ Ponteiro para o APDU ISO 7816-4 a ser copiado no.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um dos seguintes valores possíveis.
 
@@ -99,11 +99,11 @@ if (FAILED(hr))
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                   |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Scarddat. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Scarddat. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Scarddat. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Scardssp.dll</dt> </dl> |
 | IID<br/>                      | IID \_ ISCardCmd é definido como D5778AE3-43DE-11D0-9171-00AA00C18068<br/>            |

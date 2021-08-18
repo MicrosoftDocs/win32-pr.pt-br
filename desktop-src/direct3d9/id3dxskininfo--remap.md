@@ -1,7 +1,7 @@
 ---
-description: Atualiza informações de influência de Bone para corresponder os vértices depois que eles são reordenados. Esse método deve ser chamado se o buffer de vértice de destino tiver sido reordenado externamente.
+description: As atualizações influenciam as informações para corresponder aos vértices depois que são reordenadas. Esse método deverá ser chamado se o buffer de vértice de destino tiver sido reordenado externamente.
 ms.assetid: bff5229f-e547-4ab3-84c6-58b15a7825e9
-title: 'Método ID3DXSkinInfo:: remapeador (D3DX9Mesh. h)'
+title: Método ID3DXSkinInfo::Remap (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 657cf0977592a8e19e68b8aeb950c62d404e7cdb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 941a71539184b7d49e35627c932da77b4494486c35506b1b4e5f69ad52c40829
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105790516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727776"
 ---
-# <a name="id3dxskininforemap-method"></a>Método ID3DXSkinInfo:: remapeador
+# <a name="id3dxskininforemap-method"></a>Método ID3DXSkinInfo::Remap
 
-Atualiza informações de influência de Bone para corresponder os vértices depois que eles são reordenados. Esse método deve ser chamado se o buffer de vértice de destino tiver sido reordenado externamente.
+As atualizações influenciam as informações para corresponder aos vértices depois que são reordenadas. Esse método deverá ser chamado se o buffer de vértice de destino tiver sido reordenado externamente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,33 +41,33 @@ HRESULT Remap(
 
 <dl> <dt>
 
-*NumVertices* \[ no\]
+*NumVertices* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Número de vértices para remapear.
+Número de vértices a remapa.
 
 </dd> <dt>
 
-*pVertexRemap* \[ no\]
+*pVertexRemap* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Matriz de DWORDs cujo comprimento é especificado por NumVertices.
+Matriz de DWORDS cujo comprimento é especificado por NumVertices.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-Cada elemento em pVertexRemap especifica o índice de vértice anterior para essa posição. Por exemplo, se um vértice estava na posição 3, mas foi remapeado para a posição 5, o quinto elemento de pVertexRemap deve conter 3. A matriz de remapeamento de vértice retornada por [**ID3DXMesh:: Optimize**](id3dxmesh--optimize.md) pode ser usada.
+Cada elemento em pVertexRemap especifica o índice de vértice anterior para essa posição. Por exemplo, se um vértice estava na posição 3, mas foi remapeado para a posição 5, o quinto elemento de pVertexRemap deve conter 3. A matriz de remapa de vértice retornada [**por ID3DXMesh::Optimize**](id3dxmesh--optimize.md) pode ser usada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Cada elemento em pVertexRemap especifica o índice de vértice anterior para ess
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

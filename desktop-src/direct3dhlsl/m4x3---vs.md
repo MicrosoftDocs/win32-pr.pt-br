@@ -1,6 +1,6 @@
 ---
-title: m4x3-vs
-description: Multiplica um vetor de 4 componentes por uma matriz 4x3. | m4x3-vs
+title: m4x3 – vs
+description: Multiplica um vetor de 4 componentes por uma matriz 4x3. | m4x3 – vs
 ms.assetid: 12dd31bd-2078-44a1-912e-72c8f377bc4c
 ms.topic: reference
 ms.date: 05/31/2018
@@ -16,15 +16,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119457416"
 ---
-# <a name="m4x3---vs"></a>m4x3-vs
+# <a name="m4x3---vs"></a>m4x3 – vs
 
 Multiplica um vetor de 4 componentes por uma matriz 4x3.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 
-| m4x3 DST, src0, src1 |
+| m4x3 dst, src0, src1 |
 |----------------------|
 
 
@@ -33,15 +33,15 @@ Multiplica um vetor de 4 componentes por uma matriz 4x3.
 
 onde
 
--   DST é o registro de destino. O resultado é um vetor de 3 componentes.
--   src0 é um registro de origem que representa um vetor de 4 componentes.
+-   dst é o registro de destino. O resultado é um vetor de três componentes.
+-   src0 é um registro de origem que representa um vetor de quatro componentes.
 -   src1 é um registro de origem que representa uma matriz 4x3, que corresponde ao primeiro de três registros consecutivos.
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de vértice | 1\_1 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |------------------------|------|------|------|-------|------|-------|
 | m4x3                   | x    | x    | x    | x     | x    | x     |
 
@@ -49,7 +49,7 @@ onde
 
  
 
-A máscara XYZ é necessária para o registro de destino. Os modificadores de negação e swizzle são permitidos para src0, mas não para src1.
+A máscara xyz é necessária para o registro de destino. Modificadores negate e swizzle são permitidos para src0, mas não para src1.
 
 O fragmento de código a seguir mostra as operações executadas.
 
@@ -62,9 +62,9 @@ dest.z = (src0.x * src3.x) + (src0.y * src3.y) + (src0.z * src3.z) + (src0.w * s
 
 
 
-O vetor de entrada está no registro src0. A matriz 4x3 de entrada está no registro src1 e nos próximos dois registros mais altos, conforme mostrado na expansão abaixo. Um resultado 3D é produzido, deixando o outro elemento do registro de destino (dest. w) não afetado.
+O vetor de entrada está no registro src0. A matriz de entrada 4x3 está no registro src1 e os próximos dois registros superiores, conforme mostrado na expansão abaixo. Um resultado 3D é produzido, deixando o outro elemento do registro de destino (dest.w) não afetado.
 
-Essa operação é normalmente usada para transformar um vetor de posição por uma matriz que não tem efeito projetado, como ocorre em transformações de espaço de modelo. Essa instrução é implementada como um par de produtos de ponto, conforme mostrado abaixo.
+Essa operação geralmente é usada para transformar um vetor de posição por uma matriz que não tem nenhum efeito projetivo, como ocorre em transformações de espaço de modelo. Essa instrução é implementada como um par de produtos de ponto, conforme mostrado abaixo.
 
 
 ```
@@ -77,7 +77,7 @@ dp4   r0.z, r1, c2
 
 
 
-Os modificadores swizzle e negação são inválidos para o registro src1. O registro de hora de verão e src0 não pode ser o mesmo.
+Modificadores swizzle e negate são inválidos para o registro src1. O registro dst e src0 não pode ser o mesmo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

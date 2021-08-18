@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - Nddeapi.dll
-ms.openlocfilehash: dae1352d9e7c45f9ce301dd30d4e7f73d508498c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 101767516e8bd726ebf1a64ad83cfd924b3696a56d810895b4d9a9ed9a1e0ef8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829336"
 ---
 # <a name="nddegetsharesecurity-function"></a>Função NDdeGetShareSecurity
 
@@ -90,7 +90,7 @@ Um ponteiro para a variável que recebe o tamanho real do descritor de seguranç
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, o valor de retorno será NDDE \_ nenhum \_ erro.
 
@@ -115,7 +115,7 @@ Se a função falhar, o valor de retorno será um código de erro, que pode ser 
 
 <dl> <dt>
 
-[Visão geral de troca dinâmica de dados de rede](network-dynamic-data-exchange.md)
+[visão geral de troca dinâmica de dados de rede](network-dynamic-data-exchange.md)
 </dt> <dt>
 
 [Funções DDE de rede](network-dde-functions.md)

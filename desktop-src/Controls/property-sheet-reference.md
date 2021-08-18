@@ -4,12 +4,12 @@ description: Esta seção contém informações sobre elementos de programação
 ms.assetid: f4fa9815-eab8-4b0b-ae5f-0bce4374223a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c42b7b4c1be7d0dc11613da36f78abbad847d6e
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: d50661ece6985c16f299b514fa59068bf06f115b49c0f0bbea783cf637c2c921
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103917700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826026"
 ---
 # <a name="property-sheet"></a>Folha de propriedades de 
 
@@ -21,7 +21,7 @@ Esta seção contém informações sobre elementos de programação usados com f
 
 | Tópico                                              | Sumário                                                                                                                    |
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [Sobre folhas de propriedades](property-sheets.md)       | Uma *folha de propriedades* é uma janela que permite ao usuário exibir e editar as propriedades de um item.<br/>                  |
+| [Sobre as folhas de propriedades](property-sheets.md)       | Uma *folha de propriedades* é uma janela que permite ao usuário exibir e editar as propriedades de um item.<br/>                  |
 | [Criando assistentes](wizards.md)                    | Um assistente é um tipo de folha de propriedades que fornece uma maneira simples e poderosa de orientar os usuários por meio de um procedimento.<br/> |
 | [Usando folhas de propriedades](using-property-sheets.md) | Esta seção fornece detalhes de implementação e código de exemplo para trabalhar com folhas de propriedades.<br/>                     |
 
@@ -73,7 +73,7 @@ Esta seção contém informações sobre elementos de programação usados com f
 | [**REBOOTSYSTEM de PSM \_**](psm-rebootsystem.md)                       | Indica que o sistema precisa ser reiniciado para que as alterações entrem em vigor. Você pode enviar a mensagem de [**PSM \_ REBOOTSYSTEM**](psm-rebootsystem.md) explicitamente ou usando a macro [**PropSheet \_ REBOOTSYSTEM**](/windows/desktop/api/Prsht/nf-prsht-propsheet_rebootsystem) .<br/>                        |
 | [**RECALCPAGESIZES de PSM \_**](psm-recalcpagesizes.md)                 | Recalcula o tamanho da página de uma folha de propriedades padrão ou do assistente depois que as páginas são adicionadas ou removidas. Você pode enviar essa mensagem explicitamente ou usar a macro [**PropSheet \_ RecalcPageSizes**](/windows/desktop/api/Prsht/nf-prsht-propsheet_recalcpagesizes) .<br/>                                     |
 | [**REMOVEPAGE de PSM \_**](psm-removepage.md)                           | Remove uma página de uma folha de propriedades. Você pode enviar essa mensagem explicitamente ou usando a macro [**PropSheet \_ RemovePage**](/windows/desktop/api/Prsht/nf-prsht-propsheet_removepage) .<br/>                                                                                                              |
-| [**RESTARTWINDOWS de PSM \_**](psm-restartwindows.md)                   | Indica que o Windows precisa ser reiniciado para que as alterações entrem em vigor.<br/>                                                                                                                                                                                         |
+| [**RESTARTWINDOWS de PSM \_**](psm-restartwindows.md)                   | indica que Windows precisa ser reiniciada para que as alterações entrem em vigor.<br/>                                                                                                                                                                                         |
 | [**SETBUTTONTEXT de PSM \_**](psm-setbuttontext.md)                     | Define o texto em um botão em um assistente de Aero. Você pode enviar essa mensagem explicitamente ou usando a macro [**PropSheet \_ SetButtonText**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setbuttontext) .<br/>                                                                                                 |
 | [**PSM \_ SETcurseal**](psm-setcursel.md)                             | Ativa a página especificada em uma folha de propriedades. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ setcurseal PropSheet**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setcursel) .<br/>                                                                                                    |
 | [**SETCURSELID de PSM \_**](psm-setcurselid.md)                         | Ativa a página determinada em uma folha de propriedades com base no identificador de recurso da página. Você pode enviar essa mensagem explicitamente ou usando a macro [**PropSheet \_ SetCurSelByID**](/windows/desktop/api/Prsht/nf-prsht-propsheet_setcurselbyid) .<br/>                                                   |

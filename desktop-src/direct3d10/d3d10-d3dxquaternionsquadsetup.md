@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8d8a778473c0b07ef984facce9c42f947755a74a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 94f6c3fbfa72a46132efe0b9a8057983728d161cc06ba0364019f9d39b4635fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990976"
 ---
 # <a name="d3dxquaternionsquadsetup-function-d3dx10mathh"></a>Função D3DXQuaternionSquadSetup (D3DX10Math. h)
 
@@ -191,7 +191,7 @@ D3DXQuaternionSquad(&Qt, &Q1, &A, &B, &C, time);
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

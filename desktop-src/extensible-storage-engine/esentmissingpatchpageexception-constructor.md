@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b52ead7fcdac3e9ea1c61cfc9de59a652b27cd7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca165bebaf44611cdf20dc0e70794462f756231f805d08c2a14ce2e9c368492d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921081"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119734236"
 ---
 # <a name="esentmissingpatchpageexception-constructor"></a>Construtor EsentMissingPatchPageException
 
 Inicializa uma nova instância da classe EsentMissingPatchPageException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentMissingPatchPageException()
 
 [Classe EsentMissingPatchPageException](./esentmissingpatchpageexception-class.md)
 
-[Membros do EsentMissingPatchPageException](./esentmissingpatchpageexception-members.md)
+[Membros EsentMissingPatchPageException](./esentmissingpatchpageexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

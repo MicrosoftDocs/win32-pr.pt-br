@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentEffectType
-description: O atributo currentEffectType especifica ou recupera o nome do registro da visualização atual. Esse nome é uma ID exclusiva definida pelo autor da visualização.
+title: EFFECTS.currentEffectType
+description: O atributo currentEffectType especifica ou recupera o nome do Registro da visualização atual. Esse nome é uma ID exclusiva definida pelo autor da visualização.
 ms.assetid: 29469272-468d-49b4-a934-e7dc00583efa
 keywords:
-- EFFECTs. currentEffectType Windows Media Player
+- EFFECTS.currentEffectType Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be7c7671c4a5dce9df81cf8f9d770d71eba3325e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8df55ae806781fa0924349cfe472f355cdabd2be6723148fc6100dc39efd9062
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996746"
 ---
-# <a name="effectscurrenteffecttype"></a>EFFECTs. currentEffectType
+# <a name="effectscurrenteffecttype"></a>EFFECTS.currentEffectType
 
-O atributo **currentEffectType** especifica ou recupera o nome do registro da visualização atual. Esse nome é uma ID exclusiva definida pelo autor da visualização.
+O **atributo currentEffectType** especifica ou recupera o nome do Registro da visualização atual. Esse nome é uma ID exclusiva definida pelo autor da visualização.
 
 ``` syntax
         elementID.currentEffectType
@@ -29,15 +29,15 @@ O atributo **currentEffectType** especifica ou recupera o nome do registro da vi
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é uma **cadeia de caracteres** de leitura/gravação.
+Esse atributo é uma cadeia de caracteres de **leitura/gravação.**
 
 ## <a name="remarks"></a>Comentários
 
-Você pode usar esse atributo em tempo de execução para alterar o efeito exibido no momento. Para fazer isso, siga estas etapas:
+Você pode usar esse atributo em tempo de executar para alterar o efeito exibido no momento. Para fazer isso, execute estas etapas:
 
 1.  Use **effectCount** para recuperar a contagem de efeitos registrados.
-2.  Em um loop, recupere o nome de cada efeito registrado usando **effecttype**.
-3.  Especifique um dos nomes que você recuperou para **currentEffectType** para definir o efeito atual.
+2.  Em um loop, recupere o nome de cada efeito registrado usando **effectType**.
+3.  Especifique um dos nomes recuperados para **currentEffectType** para definir o efeito atual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Você pode usar esse atributo em tempo de execução para alterar o efeito exibi
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -53,16 +53,16 @@ Você pode usar esse atributo em tempo de execução para alterar o efeito exibi
 
 <dl> <dt>
 
-[**Elemento EFFECTs**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. currentEffect**](effects-currenteffect.md)
+[**EFFECTS.currentEffect**](effects-currenteffect.md)
 </dt> <dt>
 
-[**EFFECTs. effectCount**](effects-effectcount.md)
+[**EFFECTS.effectCount**](effects-effectcount.md)
 </dt> <dt>
 
-[**EFFECTs. effecttype**](effects-effecttype.md)
+[**EFFECTS.effectType**](effects-effecttype.md)
 </dt> </dl>
 
  

@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 6c7823cecd91035cd5e78970af981cfd9d15c092
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a296343b53ebf57be1b25547f1a7ece02793dcabc7e364f2c5f508c23fa454c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105791469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991796"
 ---
 # <a name="swbemqualifiersetcount-property"></a>Propriedade SWbemQualifierSet. Count
 
@@ -50,7 +50,7 @@ SWbemQualifierSet.Count As Integer
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMQUALIFIERSET CLSID<br/>                                                     |

@@ -1,7 +1,7 @@
 ---
-description: Obtenha um ponteiro de interface de dispositivo do Direct3D 10,1 de um ponteiro de interface do Direct3D 10,0.
+description: Obter um ponteiro de interface do dispositivo Direct3D 10.1 de um ponteiro de interface Direct3D 10.0.
 ms.assetid: cf31a67f-0493-4e79-8e73-0297ab93bbae
-title: Função D3DX10GetFeatureLevel1 (D3DX10Core. h)
+title: Função D3DX10GetFeatureLevel1 (D3DX10Core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Core.h
-ms.openlocfilehash: 817eb4dd68ce797da76c0609e2ead01a21b5b270
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c6511e0d3963e21f8950529b32cf8c3b414cc00b0625b97b2a9d569d1523c326
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105780276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753166"
 ---
 # <a name="d3dx10getfeaturelevel1-function"></a>Função D3DX10GetFeatureLevel1
 
-Obtenha um ponteiro de interface de dispositivo do Direct3D 10,1 de um ponteiro de interface do Direct3D 10,0.
+Obter um ponteiro de interface do dispositivo Direct3D 10.1 de um ponteiro de interface Direct3D 10.0.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,35 +40,35 @@ HRESULT D3DX10GetFeatureLevel1(
 
 <dl> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)\***
 
-Ponteiro para o dispositivo Direct3D 10,0 (consulte a interface [**ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device) ).
+Ponteiro para o dispositivo Direct3D 10.0 (consulte a interface [**ID3D10Device).**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device)
 
 </dd> <dt>
 
-*ppDevice* \[ fora\]
+*ppDevice* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D10Device1**](/windows/desktop/api/D3D10_1/nn-d3d10_1-id3d10device1)\*\***
 
-Ponteiro para o dispositivo Direct3D 10,1 (consulte a interface [**ID3D10Device1**](/windows/desktop/api/D3D10_1/nn-d3d10_1-id3d10device1) ).
+Ponteiro para o dispositivo Direct3D 10.1 (consulte a interface [**ID3D10Device1).**](/windows/desktop/api/D3D10_1/nn-d3d10_1-id3d10device1)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Essa função retorna um dos seguintes [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md). Se uma interface de dispositivo do Direct3D 10,1 puder ser adquirida, essa função terá sucesso e passará um ponteiro para a interface 10,1 usando o parâmetro *ppDevice* . Se uma interface de dispositivo Direct3D 10,1 não puder ser adquirida, essa função retornará E \_ falhará e não retornará nada para o parâmetro *ppDevice* .
+Essa função retorna um dos códigos [de retorno do Direct3D 10 a seguir.](d3d10-graphics-reference-returnvalues.md) Se uma interface do dispositivo Direct3D 10.1 puder ser adquirida, essa função terá êxito e passará um ponteiro para a interface 10.1 usando o *parâmetro ppDevice.* Se uma interface do dispositivo Direct3D 10.1 não puder ser adquirida, essa função retornará E FAIL e não retornará nada para o \_ *parâmetro ppDevice.*
 
 ## <a name="remarks"></a>Comentários
 
-Para que essa função tenha sucesso, você deve ter adquirido o ponteiro [**ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device) fornecido usando uma chamada para a função [**D3DX10CreateDevice**](d3dx10createdevice.md) , a função [**D3DX10CreateDeviceAndSwapChain**](d3dx10createdeviceandswapchain.md) , a função [**D3D10CreateDevice1**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdevice1) ou a função [**D3D10CreateDeviceAndSwapChain1**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdeviceandswapchain1) .
+Para que essa função tenha êxito, você deve ter adquirido o ponteiro [**ID3D10Device**](/windows/desktop/api/D3D10/nn-d3d10-id3d10device) fornecido usando uma chamada para a função [**D3DX10CreateDevice,**](d3dx10createdevice.md) a função [**D3DX10CreateDeviceAndSwapChain,**](d3dx10createdeviceandswapchain.md) a função [**D3D10CreateDevice1**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdevice1) ou a [**função D3D10CreateDeviceAndSwapChain1.**](/windows/desktop/api/D3D10_1/nf-d3d10_1-d3d10createdeviceandswapchain1)
 
-Você só pode criar um dispositivo Direct3D 10,1 em computadores que executam o Windows Vista Service Pack 1 ou posterior e com hardware compatível com Direct3D 10,1 instalado. Essa função retornará E \_ falhará em qualquer computador que não atenda a esses requisitos. No entanto, você pode chamar essa função em qualquer versão do Windows que tenha a DLL D3DX10 instalada.
+Você só pode criar um dispositivo Direct3D 10.1 em computadores que executam o Windows Vista Service Pack 1 ou posterior e com hardware compatível com Direct3D 10.1 instalado. Essa função retornará E \_ FAIL em qualquer computador que não atender a esses requisitos. No entanto, você pode chamar essa função em qualquer versão do Windows que tenha a DLL D3DX10 instalada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Você só pode criar um dispositivo Direct3D 10,1 em computadores que executam o
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX10Core. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX10Core.h</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Você só pode criar um dispositivo Direct3D 10,1 em computadores que executam o
 
 <dl> <dt>
 
-[Funções de Uso Geral](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
+[Uso Geral funções](d3d10-graphics-reference-d3dx10-functions-general-purpose.md)
 </dt> </dl>
 
  

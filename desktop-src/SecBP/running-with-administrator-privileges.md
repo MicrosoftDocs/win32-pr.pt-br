@@ -1,15 +1,15 @@
 ---
-description: Para ajudar a evitar ataques mal-intencionados, determine se seu aplicativo requer privilégios de administrador. Para funções que exigem permissões de administrador, crie um aplicativo separado e use o comando de linha de comando RunAs do Windows.
+description: Para ajudar a evitar ataques mal-intencionados, determine se seu aplicativo requer privilégios de administrador. para funções que exigem permissões de administrador, crie um aplicativo separado e use o comando de linha de comando Windows RunAs.
 ms.assetid: afa520fc-c206-49de-8d73-8f6566ec4fb6
 title: Executando com privilégios de administrador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc28843195e9b5cabadc13aa2317b0bdd8058ef8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87533e71fbce613ff01ec2cf4670f1632d46786eb2a5b77900f950357a9eaa8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119622716"
 ---
 # <a name="running-with-administrator-privileges"></a>Executando com privilégios de administrador
 

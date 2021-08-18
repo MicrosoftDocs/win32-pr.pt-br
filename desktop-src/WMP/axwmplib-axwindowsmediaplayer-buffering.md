@@ -1,9 +1,9 @@
 ---
 title: Evento buffer do objeto AxWindowsMediaPlayer
-description: O evento de buffer ocorre quando o controle do Windows Media Player começa ou termina o armazenamento em buffer ou o download. | Evento buffer do objeto AxWindowsMediaPlayer
+description: o evento de buffer ocorre quando o controle de Windows Media Player começa ou termina o buffer ou o download. | Evento buffer do objeto AxWindowsMediaPlayer
 ms.assetid: ad152c4d-1c91-4da1-bec0-46f89f3b8c79
 keywords:
-- Evento buffer do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento de buffer do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af595443d78a311510df6a7e06b2e716da22ecae
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 30cca5d7ebe91859162bd729cc32cc03f36f9e3c59ba4474d41311befcce1d21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119765246"
 ---
 # <a name="buffering-event-of-the-axwindowsmediaplayer-object"></a>Evento buffer do objeto AxWindowsMediaPlayer
 
-O evento de buffer ocorre quando o controle do Windows Media Player começa ou termina o armazenamento em buffer ou o download.
+o evento de buffer ocorre quando o controle de Windows Media Player começa ou termina o buffer ou o download.
 
 ``` syntax
 [C#]
@@ -55,7 +55,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="remarks"></a>Comentários
 
-Use esse evento para determinar quando o buffer ou o download é iniciado ou interrompido. Você pode usar o mesmo bloco de eventos para ambos os casos e testar o *IWMPNetwork*. **bufferingProgress** e *IWMPNetwork*. **downloadProgress** para determinar se o Windows Media Player está atualmente armazenando em buffer ou baixando conteúdo.
+Use esse evento para determinar quando o buffer ou o download é iniciado ou interrompido. Você pode usar o mesmo bloco de eventos para ambos os casos e testar o *IWMPNetwork*. **bufferingProgress** e *IWMPNetwork*. **downloadProgress** para determinar se Windows Media Player está atualmente armazenando em buffer ou baixando conteúdo.
 
 ## <a name="requirements"></a>Requisitos
 

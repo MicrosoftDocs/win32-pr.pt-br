@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 82b8c56c93f19c99441b93707fac2a0c150e0c38
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4f62cacabbf020d1fe9ff9e83c47acc6c58e52c4ab6be031586bda365745f595
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105764998"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027656"
 ---
 # <a name="d3dxframefind-function"></a>Função D3DXFrameFind
 
@@ -59,7 +59,7 @@ Nome do quadro filho a ser localizado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)**
 

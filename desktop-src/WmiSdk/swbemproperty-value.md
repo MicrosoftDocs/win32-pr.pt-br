@@ -1,8 +1,8 @@
 ---
-description: A propriedade Value do objeto SWbemProperty define o valor da variante da propriedade WMI. Esta é a propriedade de automação padrão deste objeto.
+description: A propriedade Value do objeto SWbemProperty define o valor variante da propriedade WMI. Essa é a propriedade de automação padrão desse objeto.
 ms.assetid: 547ec691-ff1c-4a6d-bee8-54e73d21cc93
 ms.tgt_platform: multiple
-title: Propriedade SWbemProperty. Value (Wbemdisp. h)
+title: Propriedade SWbemProperty.Value (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,20 +17,20 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: e203929d0ce6ce98deff5ea89f9f226cd4cebfbd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a9ebb8d52cf1e26eed158f358435936b9203c1502f153c8f7ec95b6bbbf351b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898146"
 ---
-# <a name="swbempropertyvalue-property"></a>Propriedade SWbemProperty. Value
+# <a name="swbempropertyvalue-property"></a>Propriedade SWbemProperty.Value
 
-A propriedade **Value** do objeto [**SWbemProperty**](swbemproperty.md) define o valor da variante da propriedade WMI. Esta é a propriedade de automação padrão deste objeto.
+A **propriedade** Value do [**objeto SWbemProperty**](swbemproperty.md) define o valor variante da propriedade WMI. Essa é a propriedade de automação padrão desse objeto.
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,11 +51,11 @@ SWbemProperty.Value As Variant
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMPROPERTY CLSID<br/>                                                         |
-| IID<br/>                      | ISWbemProperty de IID \_<br/>                                                          |
+| CLSID<br/>                    | CLSID \_ SWbemProperty<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemProperty<br/>                                                          |
 
 
 

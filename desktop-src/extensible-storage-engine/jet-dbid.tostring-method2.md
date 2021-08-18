@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d705e9899526d6196ba1b4e8b84bc23b933315ff
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: aca24af6600fdbe482d93bea57ceaa738acea478932b412506d7b94faf86c372
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389133"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120017236"
 ---
 # <a name="jet_dbidtostring-method"></a>JET_DBID. Método ToString
 
 Gere uma representação de cadeia de caracteres da estrutura.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,19 +50,19 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. String](/dotnet/api/system.string)  
+Tipo: [System.String](/dotnet/api/system.string)  
 A estrutura como uma cadeia de caracteres.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_DBID](./jet-dbid-structure.md)
+[JET_DBID estrutura](./jet-dbid-structure.md)
 
-[Membros do JET_DBID](./jet-dbid-members.md)
+[JET_DBID membros](./jet-dbid-members.md)
 
-[Sobrecarga de ToString](./jet-dbid.tostring-method.md)
+[Sobrecarga toString](./jet-dbid.tostring-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

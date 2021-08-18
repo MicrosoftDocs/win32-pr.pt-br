@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - wldp.h
-ms.openlocfilehash: 8914f93ff5936451b71b855473a09cb1d06584b4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: fa52bc6259c75d5bb0929cb25610beb2b143515e2874b09bf04c454397a909e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119758376"
 ---
 # <a name="wldp_host_id-enumeration"></a>Enumeração de ID de \_ host WLDP \_
 
@@ -70,14 +70,14 @@ O tipo de host é VBScript.
 <span id="_WLDP_HOST_ID_WSH"></span><span id="_wldp_host_id_wsh"></span>**WLDP \_ ID do HOST \_ \_ WSH**
 </dt> <dd>
 
-O tipo de host é Windows Script Host.
+o tipo de host é Windows host de Script.
 
 </dd> <dt>
 
 <span id="_WLDP_HOST_ID_POWERSHELL"></span><span id="_wldp_host_id_powershell"></span>**WLDP \_ ID do HOST \_ \_ PowerShell**
 </dt> <dd>
 
-O tipo de host é o Windows PowerShell.
+o tipo de host é Windows Powershell.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ O tipo de host é o Internet Explorer.
 <span id="_WLDP_HOST_ID_MSI"></span><span id="_wldp_host_id_msi"></span>**WLDP \_ \_ \_ MSI da ID do host**
 </dt> <dd>
 
-O tipo de host é o Microsoft Windows Installer.
+o tipo de host é o Microsoft Windows Installer.
 
 </dd> <dt>
 
@@ -108,9 +108,9 @@ O valor máximo de enumeração.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Wldp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Wldp. h</dt> </dl> |
 
 
 

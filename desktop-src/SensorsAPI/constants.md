@@ -1,19 +1,19 @@
 ---
-description: Esta seção descreve as constantes definidas pela plataforma.
+description: Esta seção descreve constantes definidas pela plataforma.
 ms.assetid: 1396ffd6-a660-4e0b-96a8-b0ea8b7e208d
-title: Constantes (referência de programação de API de sensor)
+title: Constantes (Referência de Programação da API do Sensor)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d6a5cf5653d9fc19c0560e7e0b0db1ad9007364
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96a72a68baa4d5bdcad120c9448341a76e5856facf9b091c2dad914ea8f441c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755950"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003864"
 ---
-# <a name="constants-sensor-api-programming-reference"></a>Constantes (referência de programação de API de sensor)
+# <a name="constants-sensor-api-programming-reference"></a>Constantes (Referência de Programação da API do Sensor)
 
-Esta seção descreve as constantes definidas pela plataforma.
+Esta seção descreve constantes definidas pela plataforma.
 
 ## <a name="in-this-section"></a>Nesta seção
 

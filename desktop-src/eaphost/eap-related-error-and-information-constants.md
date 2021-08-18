@@ -58,12 +58,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bd7b829cd4c5ba550fd88242ffb8c34572648d9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc4140444d1b5c3ae99c90c2447e165a4143b042dcc7567104e4b5f0063b645b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009458"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984236"
 ---
 # <a name="eap-related-error-and-information-constants"></a>Constantes de erro e informações relacionadas a EAP
 
@@ -261,7 +261,7 @@ Falha na validação do esquema de configuração EAPHost.
 
 
 
-Windows 7 ou posterior: o método EAP não oferece suporte ao SSO (logon único) para a configuração fornecida.
+Windows 7 ou posterior: o método EAP não oferece suporte ao sso (logon único) para a configuração fornecida.
 
 
 </dt> </dl> </dd> <dt>
@@ -474,7 +474,7 @@ Define o limite dos relatórios de erros; qualquer erro relacionado ao servidor 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_LAST"></span><span id="eap_e_server_last"></span>**EAP \_ E \_ servidor \_ último**
+<span id="EAP_E_SERVER_LAST"></span><span id="eap_e_server_last"></span>**EAP \_ E \_ SERVER \_ LAST**
 </dt> <dd> <dl> <dt>
 
 0x804202FFL
@@ -482,12 +482,12 @@ Define o limite dos relatórios de erros; qualquer erro relacionado ao servidor 
 
 
 
-Define o limite dos relatórios de erros; qualquer erro relacionado ao servidor ocorrerá entre o EAP e o servidor **\_ \_ \_ primeiro** e o **EAP \_ e o \_ servidor \_ por último**.
+Define o limite de relatórios de erro; qualquer erro relacionado ao servidor ocorrerá entre **EAP \_ E SERVER \_ \_ FIRST** **e EAP E SERVER \_ \_ \_ LAST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_CERT_NOT_FOUND"></span><span id="eap_e_server_cert_not_found"></span>**\_ \_ certificado do servidor EAP E \_ \_ não \_ encontrado**
+<span id="EAP_E_SERVER_CERT_NOT_FOUND"></span><span id="eap_e_server_cert_not_found"></span>**CERTIFICADO DO \_ SERVIDOR EAP \_ NÃO \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 0x80420200
@@ -495,12 +495,12 @@ Define o limite dos relatórios de erros; qualquer erro relacionado ao servidor 
 
 
 
-O EAPHost não pôde localizar o certificado do servidor para autenticação.
+EAPHost não pôde encontrar o certificado do servidor para autenticação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_CERT_INVALID"></span><span id="eap_e_server_cert_invalid"></span>**\_ \_ certificado do servidor EAP E \_ \_ inválido**
+<span id="EAP_E_SERVER_CERT_INVALID"></span><span id="eap_e_server_cert_invalid"></span>**EAP \_ E \_ SERVER \_ CERT \_ INVALID**
 </dt> <dd> <dl> <dt>
 
 0x80420201
@@ -508,12 +508,12 @@ O EAPHost não pôde localizar o certificado do servidor para autenticação.
 
 
 
-O certificado do servidor sendo o usuário para autenticação não tem um conjunto de EKU (uso estendido de chave) adequado.
+O certificado do servidor que está sendo usuário para autenticação não tem um EKU (uso de chave estendido) adequado definido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_CERT_EXPIRED"></span><span id="eap_e_server_cert_expired"></span>**\_certificado EAP \_ E \_ servidor \_ expirado**
+<span id="EAP_E_SERVER_CERT_EXPIRED"></span><span id="eap_e_server_cert_expired"></span>**CERTIFICADO DO \_ SERVIDOR EAP \_ \_ \_ EXPIRADO**
 </dt> <dd> <dl> <dt>
 
 0x80420202
@@ -526,7 +526,7 @@ O EAPhost encontrou um certificado de servidor expirado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_CERT_REVOKED"></span><span id="eap_e_server_cert_revoked"></span>**\_ \_ certificado do EAP E do servidor \_ \_ revogado**
+<span id="EAP_E_SERVER_CERT_REVOKED"></span><span id="eap_e_server_cert_revoked"></span>**EAP \_ E SERVER CERT \_ \_ \_ REVOGADO**
 </dt> <dd> <dl> <dt>
 
 0x80420203
@@ -539,7 +539,7 @@ O certificado do servidor que está sendo usado para autenticação foi revogado
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_CERT_OTHER_ERROR"></span><span id="eap_e_server_cert_other_error"></span>**\_ \_ \_ \_ outro erro de certificado do servidor EAP E \_**
+<span id="EAP_E_SERVER_CERT_OTHER_ERROR"></span><span id="eap_e_server_cert_other_error"></span>**EAP \_ E \_ SERVER \_ CERT \_ OTHER \_ ERROR**
 </dt> <dd> <dl> <dt>
 
 0x80420204
@@ -552,7 +552,7 @@ Ocorreu um erro desconhecido com o certificado do servidor.
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_ROOT_CERT_FIRST"></span><span id="eap_e_user_root_cert_first"></span>**EAP \_ E \_ \_ certificado raiz do usuário \_ \_ primeiro**
+<span id="EAP_E_USER_ROOT_CERT_FIRST"></span><span id="eap_e_user_root_cert_first"></span>**EAP \_ E CERTIFICADO RAIZ DO USUÁRIO \_ \_ \_ \_ PRIMEIRO**
 </dt> <dd> <dl> <dt>
 
 0x80420300L
@@ -560,12 +560,12 @@ Ocorreu um erro desconhecido com o certificado do servidor.
 
 
 
-Define o limite dos relatórios de erros; qualquer erro relacionado ao certificado raiz do usuário ocorrerá entre o EAP e o certificado raiz do **\_ \_ usuário \_ \_ \_ primeiro** e o **\_ \_ \_ certificado raiz do usuário \_ \_ do EAP** e o primeiro.
+Define o limite de relatórios de erro; qualquer erro relacionado ao certificado raiz do usuário ocorrerá entre **EAP \_ E USER ROOT CERT \_ \_ \_ \_ FIRST** e **EAP E USER \_ ROOT CERT \_ \_ \_ \_ FIRST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_ROOT_CERT_LAST"></span><span id="eap_e_user_root_cert_last"></span>**EAP \_ E \_ \_ certificado raiz do usuário \_ \_ último**
+<span id="EAP_E_USER_ROOT_CERT_LAST"></span><span id="eap_e_user_root_cert_last"></span>**EAP \_ E CERTIFICADO RAIZ DO USUÁRIO POR \_ \_ \_ \_ ÚLTIMO**
 </dt> <dd> <dl> <dt>
 
 0x804203FFL
@@ -573,12 +573,12 @@ Define o limite dos relatórios de erros; qualquer erro relacionado ao certifica
 
 
 
-Define o limite dos relatórios de erros; qualquer erro relacionado ao certificado raiz do usuário ocorrerá entre o EAP e o certificado raiz do **\_ \_ usuário \_ \_ \_ primeiro** e o **\_ \_ \_ certificado raiz do usuário \_ \_ do EAP** e o primeiro.
+Define o limite de relatórios de erro; qualquer erro relacionado ao certificado raiz do usuário ocorrerá entre **EAP \_ E USER ROOT CERT \_ \_ \_ \_ FIRST** e **EAP E USER \_ ROOT CERT \_ \_ \_ \_ FIRST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_ROOT_CERT_NOT_FOUND"></span><span id="eap_e_user_root_cert_not_found"></span>**\_certificado de raiz de usuário E EAP \_ \_ \_ \_ não \_ encontrado**
+<span id="EAP_E_USER_ROOT_CERT_NOT_FOUND"></span><span id="eap_e_user_root_cert_not_found"></span>**EAP \_ E CERTIFICADO RAIZ DO USUÁRIO NÃO \_ \_ \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 0x80420300
@@ -586,12 +586,12 @@ Define o limite dos relatórios de erros; qualquer erro relacionado ao certifica
 
 
 
-O EAPHost não pôde localizar um certificado em um repositório de certificados raiz confiável para a validação de certificação do usuário.
+O EAPHost não pôde encontrar um certificado em um armazenamento de certificados raiz confiável para validação de certificação do usuário.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_ROOT_CERT_INVALID"></span><span id="eap_e_user_root_cert_invalid"></span>**EAP \_ E \_ \_ certificado raiz do usuário \_ \_ inválido**
+<span id="EAP_E_USER_ROOT_CERT_INVALID"></span><span id="eap_e_user_root_cert_invalid"></span>**EAP \_ E CERTIFICADO RAIZ DO USUÁRIO \_ \_ \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 0x80420301
@@ -599,12 +599,12 @@ O EAPHost não pôde localizar um certificado em um repositório de certificados
 
 
 
-A autenticação falhou porque o certificado raiz usado para esta rede é inválido.
+A autenticação falhou porque o certificado raiz usado para essa rede é inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_USER_ROOT_CERT_EXPIRED"></span><span id="eap_e_user_root_cert_expired"></span>**EAP \_ E \_ \_ certificado raiz de usuário \_ \_ expirados**
+<span id="EAP_E_USER_ROOT_CERT_EXPIRED"></span><span id="eap_e_user_root_cert_expired"></span>**O CERTIFICADO RAIZ DO USUÁRIO DO EAP \_ \_ \_ \_ \_ EXPIROU**
 </dt> <dd> <dl> <dt>
 
 0x80420302
@@ -612,12 +612,12 @@ A autenticação falhou porque o certificado raiz usado para esta rede é invál
 
 
 
-O certificado raiz confiável necessário para a validação do certificado do usuário expirou.
+O certificado raiz confiável necessário para validação de certificado de usuário expirou.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_ROOT_CERT_FIRST"></span><span id="eap_e_server_root_cert_first"></span>**\_ \_ certificado raiz do EAP E do servidor \_ \_ \_ primeiro**
+<span id="EAP_E_SERVER_ROOT_CERT_FIRST"></span><span id="eap_e_server_root_cert_first"></span>**CERTIFICADO RAIZ \_ DO SERVIDOR EAP \_ \_ \_ \_ PRIMEIRO**
 </dt> <dd> <dl> <dt>
 
 0x80420400L
@@ -625,12 +625,12 @@ O certificado raiz confiável necessário para a validação do certificado do u
 
 
 
-Define o limite dos relatórios de erros; qualquer erro relacionado ao certificado raiz do servidor ocorrerá entre o **EAP e o certificado \_ \_ raiz do servidor \_ \_ \_ primeiro** e o **\_ \_ certificado raiz do EAP e do servidor \_ \_ \_ primeiro**.
+Define o limite de relatórios de erro; qualquer erro relacionado ao certificado raiz do servidor ocorrerá entre **EAP \_ E SERVER ROOT CERT \_ \_ \_ \_ FIRST** e **EAP E SERVER ROOT \_ \_ CERT \_ \_ \_ FIRST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_ROOT_CERT_LAST"></span><span id="eap_e_server_root_cert_last"></span>**\_ \_ certificado raiz do EAP E do servidor \_ \_ \_ último**
+<span id="EAP_E_SERVER_ROOT_CERT_LAST"></span><span id="eap_e_server_root_cert_last"></span>**EAP \_ E \_ SERVER \_ ROOT \_ CERT \_ LAST**
 </dt> <dd> <dl> <dt>
 
 0x804204FFL
@@ -638,12 +638,12 @@ Define o limite dos relatórios de erros; qualquer erro relacionado ao certifica
 
 
 
-Define o limite dos relatórios de erros; qualquer erro relacionado ao certificado raiz do servidor ocorrerá entre o **EAP e o certificado \_ \_ raiz do servidor \_ \_ \_ primeiro** e o **\_ \_ certificado raiz do EAP e do servidor \_ \_ \_ primeiro**.
+Define o limite de relatórios de erro; qualquer erro relacionado ao certificado raiz do servidor ocorrerá entre **EAP \_ E SERVER ROOT CERT \_ \_ \_ \_ FIRST** e **EAP E SERVER ROOT \_ \_ CERT \_ \_ \_ FIRST.**
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_ROOT_CERT_NOT_FOUND"></span><span id="eap_e_server_root_cert_not_found"></span>**\_ \_ certificado raiz do servidor EAP E \_ \_ \_ não \_ encontrado**
+<span id="EAP_E_SERVER_ROOT_CERT_NOT_FOUND"></span><span id="eap_e_server_root_cert_not_found"></span>**CERTIFICADO RAIZ DO SERVIDOR EAP \_ \_ NÃO \_ \_ \_ \_ ENCONTRADO**
 </dt> <dd> <dl> <dt>
 
 0x80420400
@@ -651,12 +651,12 @@ Define o limite dos relatórios de erros; qualquer erro relacionado ao certifica
 
 
 
-O EAPHost não pôde localizar um certificado raiz em um repositório de certificados raiz confiável para a validação de certificação do servidor.
+O EAPHost não pôde encontrar um certificado raiz em um armazenamento de certificados raiz confiável para a validação de certificação do servidor.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_ROOT_CERT_INVALID__________"></span><span id="eap_e_server_root_cert_invalid__________"></span>**\_ \_ certificado raiz do EAP E do servidor \_ \_ \_ inválido** 
+<span id="EAP_E_SERVER_ROOT_CERT_INVALID__________"></span><span id="eap_e_server_root_cert_invalid__________"></span>**CERTIFICADO RAIZ \_ DO SERVIDOR EAP \_ \_ \_ \_ INVÁLIDO** 
 </dt> <dd> <dl> <dt>
 
 0x80420401
@@ -664,12 +664,12 @@ O EAPHost não pôde localizar um certificado raiz em um repositório de certifi
 
 
 
-A autenticação falhou porque o certificado do servidor necessário para esta rede no computador servidor é inválido.
+A autenticação falhou porque o certificado do servidor necessário para essa rede no computador servidor é inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="EAP_E_SERVER_ROOT_CERT_NAME_REQUIRED"></span><span id="eap_e_server_root_cert_name_required"></span>**\_ \_ nome do certificado raiz do EAP E do servidor \_ \_ \_ \_ necessário**
+<span id="EAP_E_SERVER_ROOT_CERT_NAME_REQUIRED"></span><span id="eap_e_server_root_cert_name_required"></span>**EAP \_ E NOME DO CERTIFICADO RAIZ DO SERVIDOR \_ \_ \_ \_ \_ NECESSÁRIO**
 </dt> <dd> <dl> <dt>
 
 0x80420406
@@ -677,7 +677,7 @@ A autenticação falhou porque o certificado do servidor necessário para esta r
 
 
 
-A autenticação falhou porque o certificado no computador servidor não tem um nome de servidor especificado.
+A autenticação falhou porque o certificado no computador do servidor não tem um nome de servidor especificado.
 
 
 </dt> </dl> </dd> </dl>
@@ -686,8 +686,8 @@ A autenticação falhou porque o certificado no computador servidor não tem um 
 
 Há nomes alternativos para determinados erros:
 
--   Outro nome para **o \_ método EAP E \_ EAPHost \_ \_ \_ pacote inválido** é **\_ pacote de método EAP \_ inválido \_**.
--   Outro nome para **EAP \_ E \_ EAPHost \_ remoto \_ \_** é um pacote inválido de **EAP \_ \_**.
+-   Outro nome para **O PACOTE INVÁLIDO DO MÉTODO \_ \_ EAPHOST EAPHOST \_ \_ \_** **É EAP METHOD INVALID \_ \_ \_ PACKET**.
+-   Outro nome para **EAP \_ \_ EAPHOST \_ REMOTE INVALID PACKET \_ \_ é** **EAP INVALID \_ \_ PACKET**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -695,9 +695,9 @@ Há nomes alternativos para determinados erros:
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                      |
-| parâmetro<br/>                   | <dl> <dt>Eaphosterror. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Eaphosterror.h</dt> </dl> |
 
 
 
@@ -705,7 +705,7 @@ Há nomes alternativos para determinados erros:
 
 <dl> <dt>
 
-[Constantes do EAPHost comuns](common-eap-host-error-constants.md)
+[Constantes comuns de EAPHost](common-eap-host-error-constants.md)
 </dt> </dl>
 
  

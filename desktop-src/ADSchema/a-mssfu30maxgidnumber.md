@@ -1,11 +1,11 @@
 ---
-title: atributo msSFU-30-Max-Gid-Number
+title: Atributo msSFU-30-Max-Gid-Number
 description: Contém o número máximo de grupos migrados para um domínio NIS.
 ms.assetid: 21dccde4-202f-4791-bff2-553dcd4fcdfc
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo msSFU-30-Max-Gid-Number
-- Esquema de AD do atributo msSFU30MaxGidNumber
+- Esquema do AD do atributo msSFU-30-Max-Gid-Number
+- Esquema do AD do atributo msSFU30MaxGidNumber
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9740ad6218966eefae5e1a72a8fd93c9140298f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a70ca8e2d8b7960b929e1b76e9688b9c76e2fb8f505e345a64f7eb7442181a7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022624"
 ---
-# <a name="mssfu-30-max-gid-number-attribute"></a>atributo msSFU-30-Max-Gid-Number
+# <a name="mssfu-30-max-gid-number-attribute"></a>Atributo msSFU-30-Max-Gid-Number
 
 Contém o número máximo de grupos migrados para um domínio NIS.
 
@@ -30,12 +30,12 @@ Contém o número máximo de grupos migrados para um domínio NIS.
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | msSFU-30-Max-Gid-Number              |
-| LDAP-Display-Name | msSFU30MaxGidNumber                  |
+| Ldap-Display-Name | msSFU30MaxGidNumber                  |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.342          |
-| System-ID-GUID    | 04ee6aa6-f83b-469a-bf5a-3c00d3634669 |
+| System-Id-Guid    | 04ee6aa6-f83b-469a-bf5a-3c00d3634669 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -56,15 +56,15 @@ Contém o número máximo de grupos migrados para um domínio NIS.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| Tem valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classes usadas em        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Classes usadas em        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contém o número máximo de grupos migrados para um domínio NIS.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| Tem valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classes usadas em        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Classes usadas em        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contém o número máximo de grupos migrados para um domínio NIS.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
-| No catálogo global      | Falso                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
+| Tem valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
+| No Catálogo Global      | Falso                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000000                                                     |
-| Classes usadas em        | [**msSFU-30-Domain-info**](c-mssfu30domaininfo.md)<br/> |
+| Classes usadas em        | [**msSFU-30-Domain-Info**](c-mssfu30domaininfo.md)<br/> |
 
 
 
@@ -119,8 +119,8 @@ Contém o número máximo de grupos migrados para um domínio NIS.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |

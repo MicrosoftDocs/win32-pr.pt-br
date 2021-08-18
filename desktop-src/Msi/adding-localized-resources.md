@@ -1,75 +1,75 @@
 ---
-description: Dependendo do aplicativo, a localização pode exigir a modificação ou adição de recursos, como arquivos ou chaves do registro.
+description: Dependendo do aplicativo, a localização pode exigir a modificação ou a adição de recursos, como arquivos ou chaves do Registro.
 ms.assetid: f5af0ecd-cb57-4858-88b4-4608893004f6
 title: Adicionando recursos localizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7646499e4bb48e3df9fc1527bff1273e6b6784bf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: de37bfd3c216018f6c4a6f6866206020576153e55383a9d6b36e67533bbb3b6f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829236"
 ---
 # <a name="adding-localized-resources"></a>Adicionando recursos localizados
 
-Dependendo do aplicativo, a localização pode exigir a modificação ou adição de recursos, como arquivos ou chaves do registro. A localização do aplicativo de exemplo MNP2000 requer a adição de um arquivo adicional ao pacote, Fre.txt e às versões em francês de dois arquivos existentes: Help.txt e Readme.txt.
+Dependendo do aplicativo, a localização pode exigir a modificação ou a adição de recursos, como arquivos ou chaves do Registro. A localização do aplicativo de exemplo MNP2000 requer a adição de um arquivo adicional ao pacote, ao Fre.txt e às versões em francês de dois arquivos existentes: Help.txt e Readme.txt.
 
-A prática recomendada nesse caso é localizar o pacote de modo que as versões em inglês e francês possam coexistir com segurança no computador. Isso inclui nunca instalar dois arquivos diferentes com nomes de arquivo idênticos no mesmo diretório. Como Help.txt e Readme.txt têm nomes de arquivo idênticos nas duas versões de idioma, o pacote em francês deve instalar esses arquivos em um diretório diferente do inglês.
+A melhor prática nesse caso é localizar o pacote de modo que as versões em inglês e francês possam coexistir com segurança no computador. Isso inclui nunca instalar dois arquivos diferentes com nomes de arquivo idênticos no mesmo diretório. Como Help.txt e Readme.txt têm nomes de arquivo idênticos nas duas versões de idioma, o pacote francês deve instalar esses arquivos em um diretório diferente do inglês.
 
-O pacote francês instala Help.txt em um novo subdiretório da pasta RedPark, francês. Como a adição de Fre.txt adiciona um recurso ao componente de ajuda original, o código do componente da ajuda deve ser diferente nos pacotes em francês e inglês. Consulte as regras para códigos de componentes em [alterando o código do componente](changing-the-component-code.md).
+O pacote francês instala Help.txt em um novo subdiretório da pasta RedPark, francês. Como a adição de Fre.txt adiciona um recurso ao componente de Ajuda original, o código do componente da Ajuda deve ser diferente nos pacotes em francês e inglês. Consulte as regras para códigos de componente em [Alterando o código do componente.](changing-the-component-code.md)
 
-O pacote francês instala Readme.txt no diretório francês para que esse nome de arquivo não possa entrar em conflito com a versão em inglês. O arquivo Readme.txt é instalado com o componente do bloco de notas, mas as regras de componente não exigem a alteração do código do componente. Neste exemplo, o código do componente do bloco de notas não deve ser alterado porque RedPark.exe, os valores do registro especificados na [tabela do registro](registry-table.md), são compartilhados por versões de idioma. Consulte [adicionando informações do registro](adding-registry-information.md).
+O pacote francês instala Readme.txt no diretório francês para que esse nome de arquivo não entre em conflito com a versão em inglês. O arquivo Readme.txt é instalado com o componente Bloco de notas, mas as regras de componente não exigem a alteração do código do componente. Neste exemplo, o código do componente Bloco de notas não deve ser alteração porque RedPark.exe, os valores do Registro especificados na tabela do Registro [,](registry-table.md)são compartilhados por ambas as versões de idioma. Consulte [Adicionando informações do Registro](adding-registry-information.md).
 
-Remova as versões em inglês do Help.txt e Readme.txt dos arquivos de origem e adicione as novas versões em francês do Help.txt, Readme.txt e Fre.txt. O pacote localizado deve mapear a instalação de arquivos da origem para o destino da seguinte maneira.
+Remova as versões em inglês Help.txt e Readme.txt dos arquivos de origem e adicione as novas versões em francês do Help.txt, Readme.txt e Fre.txt. O pacote localizado deve mapear a instalação de arquivos da origem para o destino da seguinte forma.
 
 
 
 | Arquivo        | Descrição                  | Caminho para a origem                   | Caminho para o destino                                         |
 |-------------|------------------------------|----------------------------------|--------------------------------------------------------|
-| Redpark.exe | Arquivo executável do editor de texto. | C: \\Redpark.exe do bloco de notas de exemplo \\ \\ | \[\] \\Redpark.exe ProgramFilesFolder Red \_ Park \\ francês \\ |
-| Readme.txt  | Um arquivo informativo.       | C: \\Readme.txt do bloco de notas de exemplo \\ \\  | \[\] \\Readme.txt ProgramFilesFolder Red \_ Park \\ francês \\  |
-| Help.txt    | Manual de ajuda                  | C: \\Help.txt do bloco de notas de exemplo \\ \\    | \[\] \\Help.txt ProgramFilesFolder Red \_ Park \\ francês \\    |
-| Fre.txt     | Lista de telefones                   | C: \\Fre.txt do bloco de notas de exemplo \\ \\     | \[\] \\Fre.txt ProgramFilesFolder Red \_ Park \\ francês \\     |
+| Redpark.exe | Arquivo executável do editor de texto. | C: \\ Exemplo \\ Bloco de notas \\Redpark.exe | \[ProgramFilesFolder \] \\ Red Park Em \_ francês \\ \\Redpark.exe |
+| Readme.txt  | Um arquivo informacional.       | C: \\ Exemplo \\ Bloco de notas \\Readme.txt  | \[ProgramFilesFolder \] \\ Red Park Em \_ francês \\ \\Readme.txt  |
+| Help.txt    | Manual de ajuda                  | C: \\ Exemplo \\ Bloco de notas \\Help.txt    | \[ProgramFilesFolder \] \\ Red Park Em \_ francês \\ \\Help.txt    |
+| Fre.txt     | Lista de telefones                   | C: \\ Exemplo \\ Bloco de notas \\Fre.txt     | \[ProgramFilesFolder \] \\ Red Park Em \_ francês \\ \\Fre.txt     |
 
 
 
  
 
-Use o Orca Editor de banco de dados que é fornecido com o SDK ou outro editor para abrir a tabela de diretório e adicionar um registro para a instalação do novo diretório, francês.
+Use o editor de banco de dados Orca fornecido com o SDK ou outro editor para abrir a tabela Diretório e adicionar um registro para a instalação do novo diretório, francês.
 
 [Tabela de diretórios](directory-table.md)
 
 
 
-| Diretório                                        | Pai do diretório \_                                | DefaultDir        |
+| Diretório                                        | Pai do \_ Diretório                                | Defaultdir        |
 |--------------------------------------------------|--------------------------------------------------|-------------------|
-| [**TARGETDIR**](targetdir.md)                   |                                                  | SourceDir         |
-| [**ProgramFilesFolder**](programfilesfolder.md) | [**TARGETDIR**](targetdir.md)                   | .                 |
-| ARTSDIR                                          | NOTEPADDIR                                       | Artes: eventos       |
-| HOLDIR                                           | MONDIR                                           | .: Feriados        |
+| [**Targetdir**](targetdir.md)                   |                                                  | SourceDir         |
+| [**Programfilesfolder**](programfilesfolder.md) | [**Targetdir**](targetdir.md)                   | .                 |
+| KANDIR                                          | NOTEPADDIR                                       | Feiras:Eventos       |
+| HOLDIR                                           | MONDIR                                           | .:Holidays        |
 | MENUDIR                                          | NOTEPADDIR                                       | Menu              |
-| MONDIR                                           | NOTEPADDIR                                       | Check              |
-| NOTEPADDIR                                       | [**ProgramFilesFolder**](programfilesfolder.md) | \_Parque vermelho: bloco de notas |
-| SPORTDIR                                         | NOTEPADDIR                                       | Esportes: eventos     |
+| MONDIR                                           | NOTEPADDIR                                       | Porta              |
+| NOTEPADDIR                                       | [**Programfilesfolder**](programfilesfolder.md) | Red \_ Park:Bloco de notas |
+| SPORTDIR                                         | NOTEPADDIR                                       | Sports:Events     |
 | FRENCHDIR                                        | NOTEPADDIR                                       | Francês:.          |
 
 
 
  
 
-Use o editor de tabela para alterar o Componenteid do componente de ajuda no MNPFren.msi para um novo GUID.
+Use o editor de tabela para alterar o ComponentId do componente ajuda no MNPFren.msi para um novo GUID.
 
 [Tabela de componentes](component-table.md)
 
 
 
-| Componente | ComponentId                            | Diretório\_ | Atributos | Condição | KeyPath      |
+| Componente | Componentid                            | Diretório\_ | Atributos | Condição | Keypath      |
 |-----------|----------------------------------------|-------------|------------|-----------|--------------|
 | Beisebol  | {F54ABAC0-33F2-11D3-91D7-00C04FD70856} | SPORTDIR    | 2          |           | Baseball.txt |
-| Concerto   | {76FA7A80-33F6-11D3-91D8-00C04FD70856} | ARTSDIR     | 2          |           | Concert.txt  |
-| Dance     | {CCF834A1-33F8-11D3-91D8-00C04FD70856} | ARTSDIR     | 2          |           | Dance.txt    |
-| Comemorar  | {CCF834A0-33F8-11D3-91D8-00C04FD70856} | SPORTDIR    | 2          |           | Football.txt |
+| Concerto   | {76FA7A80-33F6-11D3-91D8-00C04FD70856} | KANDIR     | 2          |           | Concert.txt  |
+| Dança     | {CCF834A1-33F8-11D3-91D8-00C04FD70856} | KANDIR     | 2          |           | Dance.txt    |
+| Futebol  | {CCF834A0-33F8-11D3-91D8-00C04FD70856} | SPORTDIR    | 2          |           | Football.txt |
 | Ajuda      | {9ED21229-FE3C-4FE9-B01D-57E00224FD0B} | NOTEPADDIR  | 2          |           | Help.txt     |
 | Janeiro   | {CF0BC690-33C9-11D3-91D6-00C04FD70856} | MONDIR      | 2          |           | January.txt  |
 | NewYears  | {A42D9140-33D8-11D3-91D6-00C04FD70856} | HOLDIR      | 2          |           | NewYears.txt |

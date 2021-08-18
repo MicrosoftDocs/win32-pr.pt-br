@@ -17,12 +17,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 1ae5a54c7645db63b1023c3571f8181f4ee2daec
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 367d50292b283cc7a0dcdef42b2e2c270099e314dc61c8d590e7ef2a1091a4f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104172953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119751325"
 ---
 # <a name="d3d9_resource_priority"></a>\_Prioridade do recurso d3d9 \_
 

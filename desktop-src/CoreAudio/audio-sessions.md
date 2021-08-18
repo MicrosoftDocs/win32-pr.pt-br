@@ -4,12 +4,12 @@ ms.assetid: b8a1b656-a582-4112-99e9-bd575719ebb3
 title: Sessões de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57ae67a3eafe7a76add2fad192823868304e860d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 13d5b8cee0a3a53709d2c450bef36ae00e3a6f4d9323c75ff80e96b19550eb39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929406"
 ---
 # <a name="audio-sessions"></a>Sessões de áudio
 
@@ -27,7 +27,7 @@ Cada sessão de renderização representa um subconjunto dos fluxos que formam a
 
 Frequentemente, um aplicativo com vários fluxos atribui todos os seus fluxos à mesma sessão. No entanto, o aplicativo pode, como uma opção, atribuir fluxos diferentes a sessões diferentes. Qualquer fluxo que o aplicativo não atribui explicitamente a uma sessão pertence à sessão padrão.
 
-Os aplicativos de áudio típicos devem evitar modificar as configurações de volume e mudo para as sessões. Em vez disso, os usuários controlam essas configurações por meio das interfaces de usuário dos programas de controle. Por exemplo, no Windows Vista, o programa fornecido pelo sistema, Sndvol.exe, exibe um controle de volume e controle de mudo para cada sessão de renderização ativa ou recentemente ativa no sistema. Por meio desses controles, os usuários podem ajustar as configurações de volume e mudo para todas as sessões no sistema.
+Os aplicativos de áudio típicos devem evitar modificar as configurações de volume e mudo para as sessões. Em vez disso, os usuários controlam essas configurações por meio das interfaces de usuário dos programas de controle. por exemplo, no Windows Vista, o programa fornecido pelo sistema, Sndvol.exe, exibe um controle de volume e controle de mudo para cada sessão de renderização ativa ou recentemente ativa no sistema. Por meio desses controles, os usuários podem ajustar as configurações de volume e mudo para todas as sessões no sistema.
 
 Atualmente, o programa SNDVOL exibe controles de volume somente para dispositivos de ponto de extremidade de renderização de áudio. Ele não exibe controles de volume para dispositivos de captura de áudio.
 
@@ -57,7 +57,7 @@ Essas informações são suficientes para distinguir uma sessão específica de 
 
 No caso de uma sessão específica de processo, o sistema usa uma combinação de GUID de sessão e ID de processo para identificar exclusivamente a sessão dentro do escopo do computador. Portanto, se os clientes em dois processos diferentes atribuirem seus respectivos fluxos a duas sessões específicas do processo com GUIDs de sessão idênticos, o sistema tratará as sessões como separadas, pois suas IDs de processo são diferentes. Além disso, se uma sessão entre processos usar a mesma GUID de sessão como uma ou mais sessões específicas do processo, o sistema tratará a sessão entre processos como distinta das sessões específicas do processo, mesmo que compartilhem a mesma GUID de sessão.
 
-Por exemplo, no Windows Vista, as APIs de nível superior, como as funções **waveOutXxx** de multimídia do Windows e o DirectSound, normalmente atribuem os fluxos de áudio que eles criam para as sessões padrão, específicas do processo, identificadas pelo valor GUID de sessão GUID \_ NULL. Para clientes dessas APIs, a sessão padrão para cada processo de cliente é separada das sessões padrão para outros processos de cliente, mesmo que as sessões tenham GUIDs de sessão idênticas. Além disso, se um ou mais aplicativos atribuirem fluxos à sessão entre processos que é identificada pelo valor GUID de sessão GUID \_ NULL, o sistema tratará essa sessão entre processos como separada das sessões padrão, específicas do processo que compartilham a mesma GUID de sessão. Da mesma forma, o programa SNDVOL exibe um controle de volume separado para cada sessão padrão, específica de processo do cliente, e ele exibe um controle de volume adicional para a sessão entre processos que é identificada pelo valor GUID de sessão GUID \_ NULL, caso essa sessão exista.
+por exemplo, no Windows Vista, as APIs de nível superior, como as funções Windows multimídia **waveOutXxx** e o DirectSound normalmente atribuem os fluxos de áudio que eles criam para as sessões padrão, específicas do processo, identificadas pelo valor guid da sessão guid \_ NULL. Para clientes dessas APIs, a sessão padrão para cada processo de cliente é separada das sessões padrão para outros processos de cliente, mesmo que as sessões tenham GUIDs de sessão idênticas. Além disso, se um ou mais aplicativos atribuirem fluxos à sessão entre processos que é identificada pelo valor GUID de sessão GUID \_ NULL, o sistema tratará essa sessão entre processos como separada das sessões padrão, específicas do processo que compartilham a mesma GUID de sessão. Da mesma forma, o programa SNDVOL exibe um controle de volume separado para cada sessão padrão, específica de processo do cliente, e ele exibe um controle de volume adicional para a sessão entre processos que é identificada pelo valor GUID de sessão GUID \_ NULL, caso essa sessão exista.
 
 Cada sessão é associada a apenas um dispositivo de ponto de extremidade de áudio. Se duas sessões tiverem GUIDs de sessão e IDs de processo idênticos, mas estiverem associadas a dispositivos diferentes, o sistema tratará as duas sessões como separadas. Uma sessão nunca pode conter fluxos de captura e de renderização porque um fluxo de captura pode ser associado somente a um dispositivo de captura e um fluxo de renderização só pode ser associado a um dispositivo de renderização.
 

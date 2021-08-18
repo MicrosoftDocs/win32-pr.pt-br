@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 853488c98687825ab55d642b2e01e569f0d435c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f4d7a0f8ceadc4e40ceaf327b7dc45fd10bd3427620971b16c5a02659c0a067
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119828706"
 ---
 # <a name="d3dauthenticatedchannel_queryinfobustype_output-structure"></a>Estrutura de saída do D3DAUTHENTICATEDCHANNEL \_ QUERYINFOBUSTYPE \_
 
@@ -78,9 +78,9 @@ Se **for verdadeiro**, blocos não contíguos de memória de vídeo poderão est
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
 
 
 

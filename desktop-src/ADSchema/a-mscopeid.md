@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6437e273fdc93137c7fe99047524e6b2475265d7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0042646ea27cb69f935f4ad8b867aa3930060550c0ecd30b71aafaad8624e2af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119705176"
 ---
 # <a name="mscope-id-attribute"></a>Mscope-Id atributo
 
@@ -58,7 +58,7 @@ Indica que há um escopo de multicast no servidor DHCP especificado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -79,7 +79,7 @@ Indica que há um escopo de multicast no servidor DHCP especificado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -100,7 +100,7 @@ Indica que há um escopo de multicast no servidor DHCP especificado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -121,10 +121,10 @@ Indica que há um escopo de multicast no servidor DHCP especificado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -142,10 +142,10 @@ Indica que há um escopo de multicast no servidor DHCP especificado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -163,10 +163,10 @@ Indica que há um escopo de multicast no servidor DHCP especificado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |

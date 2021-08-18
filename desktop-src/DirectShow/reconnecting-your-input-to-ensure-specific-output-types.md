@@ -1,28 +1,28 @@
 ---
-description: Reconectando sua entrada para garantir tipos de saída específicos
+description: Reconectar sua entrada para garantir tipos de saída específicos
 ms.assetid: c83d002e-59bf-4d03-9917-e39ceab9a4ce
-title: Reconectando sua entrada para garantir tipos de saída específicos
+title: Reconectar sua entrada para garantir tipos de saída específicos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d74d6914989231542ddfea9f97e93ce860d34eb4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 299d8aa400619043cc0d79242e35065ac4fc8490aad4972a33be6aea8fc4e7b7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370149"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119747306"
 ---
-# <a name="reconnecting-your-input-to-ensure-specific-output-types"></a>Reconectando sua entrada para garantir tipos de saída específicos
+# <a name="reconnecting-your-input-to-ensure-specific-output-types"></a>Reconectar sua entrada para garantir tipos de saída específicos
 
-Os filtros implementam o método [**IAMStreamConfig:: SetFormat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-setformat) para definir o formato de áudio ou vídeo antes que os Pins do filtro sejam conectados. Se o seu PIN de saída já estiver conectado e você puder fornecer um novo tipo, reconecte o PIN, mas somente se o outro filtro puder aceitar o novo tipo. Se o outro filtro não puder aceitar o tipo de mídia, execute a chamada para **SetFormat** e deixe a conexão sozinha.
+Os filtros implementam o método [**IAMStreamConfig::SetFormat**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-setformat) para definir o formato de áudio ou vídeo antes que os pinos do filtro sejam conectados. Se o pino de saída já estiver conectado e você puder fornecer um novo tipo, reconecte o pino, mas somente se o outro filtro puder aceitar o novo tipo. Se o outro filtro não puder aceitar o tipo de mídia, falhe na chamada para **SetFormat** e deixe sua conexão em si.
 
-Um filtro de transformação pode não ter nenhum tipo de saída preferencial, a menos que seu PIN de entrada esteja conectado. Nesse caso, os métodos **SetFormat** e [**IAMStreamConfig:: GETSTREAMCAPS**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-getstreamcaps) devem retornar VFW \_ E \_ não \_ conectados até que o pino de entrada seja conectado. Caso contrário, esses métodos podem funcionar como de costume.
+Um filtro de transformação pode não ter nenhum tipo de saída preferencial, a menos que seu pino de entrada esteja conectado. Nesse caso, os métodos **SetFormat** e [**IAMStreamConfig::GetStreamCaps**](/windows/desktop/api/Strmif/nf-strmif-iamstreamconfig-getstreamcaps) devem retornar VFW E NOT CONNECTED até que o pino de entrada esteja \_ \_ \_ conectado. Caso contrário, esses métodos podem funcionar como de costume.
 
-Em alguns casos, é útil reconectar Pins quando você está oferecendo um formato em uma conexão estabelecida. Por exemplo, suponha que um filtro possa compactar vídeo RGB de 24 bits no formato X e que possa compactar o vídeo RGB de 8 bits no formato Y. O pino de saída pode fazer o seguinte:
+Em determinados casos, é útil reconectar pinos quando você está oferecendo um formato em uma conexão estabelecida. Por exemplo, suponha que um filtro possa compactar um vídeo RGB de 24 bits no formato X e que ele possa compactar um vídeo RGB de 8 bits no formato Y. O pino de saída pode fazer o seguinte:
 
--   Sempre ofereça X e Y em **GetStreamCaps** e sempre aceite x e y em **SetFormat**.
--   Ofereça e aceite apenas Format X se o tipo de entrada for RGB de 24 bits. Oferecer e aceitar apenas Formatar Y se o tipo de entrada RGB de 8 bits. Se o pino de entrada não estiver conectado, os dois métodos falharão.
+-   Sempre ofereça X e Y em **GetStreamCaps** e sempre aceite X e Y em **SetFormat.**
+-   Ofereça e aceite apenas o formato X se o tipo de entrada for RGB de 24 bits. Ofereça e aceite apenas o formato Y se o tipo de entrada RGB de 8 bits. Falhará em ambos os métodos se o pino de entrada não estiver conectado.
 
-Em ambos os casos, você precisará de algum código de reconexão parecido com este:
+Em ambos os casos, você precisará de algum código de reconexão com esta aparência:
 
 
 ```C++

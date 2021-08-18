@@ -3,7 +3,7 @@ title: Enumeração ViewContents
 description: Usado pelo conteúdo do IResultsViewer para indicar ou definir como o conjunto de retorno da consulta atual é exibido.
 ms.assetid: aebcbcac-4c45-4097-91a1-5e00611c152c
 keywords:
-- Recursos do ambiente Windows herdado de enumeração ViewContents
+- recursos de ambiente Windows de enumeração herdados do ViewContents
 topic_type:
 - apiref
 api_name:
@@ -14,17 +14,17 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f465b16ef81dd71695f8de0b04b6d7567480f4c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2070b68ec62a8dd6ca86758b98a6399ee41180eaad24613d17d0825a927b1871
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119829106"
 ---
 # <a name="viewcontents-enumeration"></a>Enumeração ViewContents
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use a [API de pesquisa Windows](../search/-search-reference-entry-page.md) em vez disso. 
 
 Usado por [**IResultsViewer:: Contents**](-search-2x-iresultsviewer-contents.md) para indicar ou definir como o conjunto de retorno da consulta atual é exibido.
 

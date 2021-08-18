@@ -9,18 +9,18 @@ keywords:
 - ADSI ADSI, código de exemplo C/C++, usando IADsTranslate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7ff5b44288289f118c41463a22e619aa815ecb2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 60e167363e3c35337e74851dc43126593772aac56236f27e10a98a81b533159e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023444"
 ---
 # <a name="iadsnametranslate-interface"></a>Interface IADsNameTranslate
 
 A interface [**IADsNameTranslate**](/windows/desktop/api/Iads/nn-iads-iadsnametranslate) é usada para converter nomes distintos entre vários formatos. As traduções de nome são executadas no servidor de diretório, e essa interface está atualmente disponível somente para objetos no Active Directory.
 
-O exemplo de código a seguir converte um nome de conta do formato do Windows em formato LDAP.
+o exemplo de código a seguir converte um nome de conta de Windows formato em formato LDAP.
 
 
 ```C++
@@ -51,9 +51,9 @@ HRESULT TranslateNTNameToLDAPName( BSTR * pNTName, BSTR * pLDAPName )
 
 
 
- 
+ 
 
- 
+ 
 
 
 

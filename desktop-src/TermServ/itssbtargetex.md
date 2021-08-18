@@ -4,8 +4,8 @@ description: Expõe propriedades que armazenam informações de configuração e
 ms.assetid: 3f0f26fb-e8bc-47eb-8038-e51792ad4376
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de interface ITsSbTargetEx
-- Serviços de Área de Trabalho Remota da interface ITsSbTargetEx, descrita
+- Interface ITsSbTargetEx Serviços de Área de Trabalho Remota
+- Interface ITsSbTargetEx Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -26,11 +26,11 @@ ms.locfileid: "119989816"
 
 Expõe propriedades que armazenam informações de configuração e estado sobre um destino.
 
-essa interface só está disponível no Windows Server 2012 R2 com o [KB3091411](https://support.microsoft.com/kb/3091411) instalado. A propriedade [**TargetLoad**](itssbtarget-targetload.md) da interface [**ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget) está disponível a partir de Windows Server 2016.
+Essa interface só está disponível no Windows Server 2012 R2 com [KB3091411](https://support.microsoft.com/kb/3091411) instalado. A [**propriedade TargetLoad**](itssbtarget-targetload.md) da interface [**ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget) está disponível a partir do Windows Server 2016.
 
 ## <a name="members"></a>Membros
 
-A interface **ITsSbTargetEx** herda de [**ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget). **ITsSbTargetEx** também tem estes tipos de membros:
+A interface **ITsSbTargetEx** herda de [**ITsSbTarget.**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget) **ITsSbTargetEx** também tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
@@ -43,16 +43,16 @@ A interface **ITsSbTargetEx** tem essas propriedades.
 | Propriedade                                                                      | Tipo de acesso           | Descrição                                                                               |
 |:------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------|
 | [**EnvironmentName**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtarget-get_environmentname)<br/>             | Leitura/gravação<br/> | Recupera ou especifica o nome do ambiente associado ao destino.<br/> |
-| [**Farmname**](itssbtarget-farmname.md)<br/>                           | Leitura/gravação<br/> | Especifica ou recupera o nome do farm ao qual esse destino está associado.<br/>    |
-| [**IpAddresses**](itssbtarget-ipaddresses.md)<br/>                     | Leitura/gravação<br/> | Recupera ou especifica os endereços IP externos do destino.<br/>                |
+| [**FarmName**](itssbtarget-farmname.md)<br/>                           | Leitura/gravação<br/> | Especifica ou recupera o nome do farm ao qual esse destino está unido.<br/>    |
+| [**Ipaddresses**](itssbtarget-ipaddresses.md)<br/>                     | Leitura/gravação<br/> | Recupera ou especifica os endereços IP externos do destino.<br/>                |
 | [**NumPendingConnections**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtarget-get_numpendingconnections)<br/> | Somente leitura<br/>  | Recupera o número de conexões de usuário pendentes para o destino.<br/>               |
-| [**NumSessions**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtarget-get_numsessions)<br/>                     | Somente leitura<br/>  | Recupera o número de sessões mantidas pelo Broker para o destino.<br/>          |
+| [**NumSessions**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtarget-get_numsessions)<br/>                     | Somente leitura<br/>  | Recupera o número de sessões mantidas pelo agente para o destino.<br/>          |
 | [**TargetFQDN**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtarget-get_targetfqdn)<br/>                       | Leitura/gravação<br/> | Especifica ou recupera o nome de domínio totalmente qualificado do destino.<br/>          |
 | [**TargetLoad**](/previous-versions/windows/desktop/legacy/mt703468(v=vs.85))<br/>                     | Somente leitura<br/>  | Recupera a carga relativa em um destino.<br/>                                       |
-| [**TargetName**](itssbtarget-targetname.md)<br/>                       | Leitura/gravação<br/> | Especifica ou recupera o nome do destino.<br/>                                 |
+| [**Targetname**](itssbtarget-targetname.md)<br/>                       | Leitura/gravação<br/> | Especifica ou recupera o nome do destino.<br/>                                 |
 | [**TargetNetbios**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtarget-get_targetnetbios)<br/>                 | Leitura/gravação<br/> | Especifica ou recupera o nome NetBIOS do destino.<br/>                         |
-| [**TargetSet**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtarget-get_targetpropertyset)<br/>         | Leitura/gravação<br/> | Especifica ou recupera o conjunto de propriedades para o destino.<br/>                        |
-| [**Destinostate**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtarget-get_targetstate)<br/>                     | Leitura/gravação<br/> | Especifica ou recupera o estado de destino.<br/>                                       |
+| [**TargetPropertySet**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtarget-get_targetpropertyset)<br/>         | Leitura/gravação<br/> | Especifica ou recupera o conjunto de propriedades para o destino.<br/>                        |
+| [**TargetState**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtarget-get_targetstate)<br/>                     | Leitura/gravação<br/> | Especifica ou recupera o estado de destino.<br/>                                       |
 
 
 
@@ -66,7 +66,7 @@ A interface **ITsSbTargetEx** tem essas propriedades.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                        |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                |
-| Fim do suporte do servidor<br/>    | Windows Server 2012 R2<br/>                                                |
+| Fim do suporte ao servidor<br/>    | Windows Server 2012 R2<br/>                                                |
 | IID<br/>                      | IID \_ ITsSbTargetEx é definido como 74f99987-625d-11e5-bea1-a0481c7e9064<br/> |
 
 
@@ -78,7 +78,7 @@ A interface **ITsSbTargetEx** tem essas propriedades.
 [**ITsSbTarget**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtarget)
 </dt> <dt>
 
-[Interfaces de virtualização Área de Trabalho Remota](remote-desktop-virtualization-interfaces.md)
+[interfaces Área de Trabalho Remota virtualização do Área de Trabalho Remota](remote-desktop-virtualization-interfaces.md)
 </dt> </dl>
 
  

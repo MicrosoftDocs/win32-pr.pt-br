@@ -1,31 +1,31 @@
 ---
-title: Referência da versão 1 do Gerenciador de tabela de roteamento
-description: As seguintes funções, estruturas e constantes fornecem uma interface que os protocolos de roteamento podem usar para acessar as tabelas de roteamento mantidas pelo Gerenciador de tabela de roteamento
+title: Referência do Gerenciador de Tabelas de Roteamento versão 1
+description: As funções, estruturas e constantes a seguir fornecem uma interface que os protocolos de roteamento podem usar para acessar as tabelas de roteamento mantidas pelo gerenciador de tabelas de roteamento
 ms.assetid: a2edf25e-15e4-4c74-90d4-32369f83a776
 keywords:
-- Serviço de roteamento e acesso remoto RRAS, Gerenciador de tabela de roteamento versão 1, referência
-- Gerenciador de tabela de roteamento versão 1 RRAS, referência
+- Roteamento e RRAS do Serviço de Acesso Remoto, Roteamento do Gerenciador de Tabelas versão 1, referência
+- RRAS do Gerenciador de Tabelas de Roteamento versão 1, referência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 03c81e67e6e9f9a8a6ac7477f9c0d2e984af0ede
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d23d0aadd3812afce1a8298518737229bc4e2e945c67b82703c13476d71a8ad8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636437"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120027146"
 ---
-# <a name="routing-table-manager-version-1-reference"></a>Referência da versão 1 do Gerenciador de tabela de roteamento
+# <a name="routing-table-manager-version-1-reference"></a>Referência do Gerenciador de Tabelas de Roteamento versão 1
 
-**Windows Server 2003:** Essa API foi substituída pela API do [Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Novos aplicativos devem usar a API da versão 2 do Gerenciador de tabela de roteamento.
+**Windows Server 2003:** Essa API foi superada pela API do Gerenciador de Tabelas de Roteamento versão [2](about-routing-table-manager-version-2.md) e não estará disponível além do Windows Server 2003. Novos aplicativos devem usar a API do Gerenciador de Tabelas de Roteamento versão 2.
 
-As seguintes funções, estruturas e constantes fornecem uma interface que os protocolos de roteamento podem usar para acessar as tabelas de roteamento mantidas pelo Gerenciador de tabela de roteamento:
+As seguintes funções, estruturas e constantes fornecem uma interface que os protocolos de roteamento podem usar para acessar as tabelas de roteamento mantidas pelo gerenciador de tabelas de roteamento:
 
--   [Funções da versão 1 do Gerenciador de tabela de roteamento](routing-table-manager-version-1-functions.md)
--   [Estruturas da versão 1 do Gerenciador de tabela de roteamento](routing-table-manager-version-1-structures.md)
+-   [Funções do Gerenciador de Tabelas de Roteamento versão 1](routing-table-manager-version-1-functions.md)
+-   [Estruturas do Gerenciador de Tabelas de Roteamento versão 1](routing-table-manager-version-1-structures.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,28 +1,28 @@
 ---
-title: Propriedade IconFile do IMsTscAdvancedSettings
-description: Especifica o nome do arquivo que contém os dados de ícone que serão acessados ao exibir o cliente no modo de tela inteira.
+title: Propriedade IconFile de IMsTscAdvancedSettings
+description: Especifica o nome do arquivo que contém dados de ícone que serão acessados ao exibir o cliente no modo de tela inteira.
 ms.assetid: 2b6ac2ad-9745-4b80-a415-4840cd8aa8b3
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da Propriedade IconFile
-- Propriedade IconFile Serviços de Área de Trabalho Remota, interface IMsTscAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsTscAdvancedSettings, Propriedade IconFile
-- Propriedade IconFile Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade IconFile
-- Propriedade IconFile Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade IconFile
-- Propriedade IconFile Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade IconFile
-- Propriedade IconFile Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade IconFile
-- Propriedade IconFile Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade IconFile
-- Propriedade IconFile Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade IconFile
-- Propriedade IconFile Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade IconFile
-- Propriedade IconFile Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade IconFile
+- Propriedade IconFile Serviços de Área de Trabalho Remota
+- A propriedade IconFile Serviços de Área de Trabalho Remota , interface IMsTscAdvancedSettings
+- Interface IMsTscAdvancedSettings Serviços de Área de Trabalho Remota , propriedade IconFile
+- A propriedade IconFile Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
+- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade IconFile
+- A propriedade IconFile Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade IconFile
+- A propriedade IconFile Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
+- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade IconFile
+- A propriedade IconFile Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade IconFile
+- A propriedade IconFile Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade IconFile
+- A propriedade IconFile Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade IconFile
+- A propriedade IconFile Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade IconFile
+- A propriedade IconFile Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade IconFile
 topic_type:
 - apiref
 api_name:
@@ -50,19 +50,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d8f996e70873d5584bb80bbf4f40f71a7deae8f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4700c549fa82f932ed12e3f4eeb02f2d557db3f940b394e0f2f875ac6dd7dffb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000686"
 ---
-# <a name="imstscadvancedsettingsiconfile-property"></a>Propriedade IMsTscAdvancedSettings:: IconFile
+# <a name="imstscadvancedsettingsiconfile-property"></a>Propriedade IMsTscAdvancedSettings::IconFile
 
-Especifica o nome do arquivo que contém os dados de ícone que serão acessados ao exibir o cliente no modo de tela inteira.
+Especifica o nome do arquivo que contém dados de ícone que serão acessados ao exibir o cliente no modo de tela inteira.
 
 > [!Note]  
-> Não há suporte para essa propriedade no controle ActiveX (MsRdp. ocx). Há suporte na biblioteca MsTscAx.dll incluída no cliente Standard (MsTsc.exe).
+> Não há suporte para essa propriedade no controle ActiveX (MsRdp.ocx). Ele tem suporte na biblioteca MsTscAx.dll de dados incluída no cliente padrão (MsTsc.exe).
 
  
 
@@ -85,13 +85,13 @@ O caminho totalmente qualificado do arquivo de ícone ou um arquivo que contém 
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Retorna **S \_ false**.
+Retorna **S \_ FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-A extensão de nome de arquivo de um arquivo de ícone é ". ico".
+A extensão de nome de arquivo de um arquivo de ícone é ".ico".
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> <dt>
 
 [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md)
@@ -135,7 +135,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md)
+[**Imstscadvancedsettings**](imstscadvancedsettings-interface.md)
 </dt> </dl>
 
  

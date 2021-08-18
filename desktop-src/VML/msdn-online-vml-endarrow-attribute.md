@@ -1,40 +1,40 @@
 ---
-title: Atributo de fim da seta de VML
-description: Atributo de fim da seta de VML
+title: Atributo EndArrow VML
+description: Atributo EndArrow VML
 ms.assetid: 056cd011-bb3b-4f9a-83d0-9702e0e82e4d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 542d6dbb3b30467c4bcad909f2b49d617f8bd886
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7f289342c8bfb67e9a0c2ccc6e418f42bd954e9826a18f07260a2891bf4b4284
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105770125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120007826"
 ---
-# <a name="vml-endarrow-attribute"></a>Atributo de fim da seta de VML
+# <a name="vml-endarrow-attribute"></a>Atributo EndArrow VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define uma ponta de seta para o final de uma linha. Leitura/gravação. **Cadeia de caracteres**.
+Define uma seta para o final de uma linha. Leitura/gravação. **Cadeia de caracteres**.
 
 **Aplica-se a**
 
-[Pincel](msdn-online-vml-stroke-element.md)
+[Curso](msdn-online-vml-stroke-element.md)
 
 **Sintaxe de marca**
 
-<v: *elemento* endarrow = " *expressão* " >
+<v: *element* endarrow=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . endarrow = "*expressão*"
+*expressão* element .endarrow=""
 
-*expressão* = de *elemento*. endarrow
+*expressão* = *elemento*.endarrow
 
 **Comentários**
 
@@ -47,11 +47,11 @@ Os valores são:
 -   Oval
 -   Aberto
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-Uma linha é desenhada com uma ponta de seta clássica no final do traço.
+Uma linha é desenhada com uma seta clássica no final do traço.
 
 
 ```HTML
@@ -63,6 +63,6 @@ Uma linha é desenhada com uma ponta de seta clássica no final do traço.
 
 
 
- 
+ 
 
- 
+ 

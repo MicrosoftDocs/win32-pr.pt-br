@@ -1,19 +1,19 @@
 ---
-title: Configurações do servidor BITS para trabalhos de carregamento
+title: Configurações do servidor BITS para trabalhos do Upload
 description: Esta seção contém os seguintes tópicos.
 ms.assetid: 31be788a-de59-43df-b5cb-e97dfbfd5c05
 keywords:
-- Configurações do servidor BITS para o upload de BITS de trabalhos
+- Configurações do servidor bits para bits de trabalhos de Upload
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a62e2a36743d3f2dac7c70f1b1097187ba44071e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: da8a947c89d0c807064f65a856ed889cde9b672af3ec6518e684fc0efe951413
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005030"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021224"
 ---
-# <a name="bits-server-settings-for-upload-jobs"></a>Configurações do servidor BITS para trabalhos de carregamento
+# <a name="bits-server-settings-for-upload-jobs"></a>Configurações do servidor BITS para trabalhos do Upload
 
 Esta seção contém os seguintes tópicos.
 
@@ -27,13 +27,13 @@ Esta seção contém os seguintes tópicos.
 
 
 
- 
+ 
 
 Para obter informações sobre como configurar o IIS para carregamentos, consulte [Configurando o servidor para carregamentos](setting-up-the-server-for-uploads.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -5,12 +5,12 @@ ms.assetid: 615c2d03-c2fb-46f8-aa78-064f8e7b6064
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de520571c99bf84472760e8a1ca28a52a1d6c32e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7ec12cd3d4648f3ed357e898f75850e77b3b679d59a92d9f0518f809ba52f58f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105761324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000066"
 ---
 # <a name="remote-desktop-services-audioendpoint-interfaces"></a>Serviços de Área de Trabalho Remota interfaces AudioEndpoint
 
@@ -66,9 +66,9 @@ Obtém o buffer de saída para cada passagem de processamento.
 
 O Serviços de Área de Trabalho Remota API AudioEndpoint é para uso em cenários de Área de Trabalho Remota; Não é para aplicativos cliente.
 
- 
+ 
 
- 
+ 
 
 
 

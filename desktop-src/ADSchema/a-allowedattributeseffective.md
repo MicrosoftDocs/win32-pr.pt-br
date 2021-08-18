@@ -1,11 +1,11 @@
 ---
-title: Atributo permitido-atributos efetivos
-description: Uma lista de atributos que podem ser modificados no objeto.
+title: Atributo Allowed-Attributes-Effective
+description: Uma lista de atributos que podem ser modificados no objeto .
 ms.assetid: bf2db8d5-bbef-4063-be94-f657f3b2768b
 ms.tgt_platform: multiple
 keywords:
-- Atributo permitido-esquema do AD de atributos efetivos
-- Esquema de AD do atributo allowedAttributesEffective
+- Esquema do AD do atributo Allowed-Attributes-Effective
+- esquema do AD do atributo allowedAttributesEffective
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 425383e97d924526d926cd8dd08d35e352ac2531
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 654f42a71621118c326480c977e19b04c5658bff87ce4d3c810872af0dff485f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022824"
 ---
-# <a name="allowed-attributes-effective-attribute"></a>Atributo permitido-atributos efetivos
+# <a name="allowed-attributes-effective-attribute"></a>Atributo Allowed-Attributes-Effective
 
-Uma lista de atributos que podem ser modificados no objeto.
+Uma lista de atributos que podem ser modificados no objeto .
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------------------|
-| CN                | Permitido-atributos-efetivos                                    |
-| LDAP-Display-Name | allowedAttributesEffective                                      |
+| CN                | Allowed-Attributes-Effective                                    |
+| Ldap-Display-Name | allowedAttributesEffective                                      |
 | Tamanho              | \-                                                              |
 | Privilégio de atualização  | \-                                                              |
 | Frequência de atualização  | \-                                                              |
 | Attribute-Id      | 1.2.840.113556.1.4.914                                          |
-| System-ID-GUID    | 9a7ad941-ca53-11d1-bbd0-0080c76670c0                            |
-| Syntax            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md) |
+| System-Id-Guid    | 9a7ad941-ca53-11d1-bbd0-0080c76670c0                            |
+| Syntax            | [**String(Object-Identifier)**](s-string-object-identifier.md) |
 
 
 
@@ -44,7 +44,7 @@ Uma lista de atributos que podem ser modificados no objeto.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,11 +58,11 @@ Uma lista de atributos que podem ser modificados no objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -79,11 +79,11 @@ Uma lista de atributos que podem ser modificados no objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ Uma lista de atributos que podem ser modificados no objeto.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,11 +100,11 @@ Uma lista de atributos que podem ser modificados no objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -121,11 +121,11 @@ Uma lista de atributos que podem ser modificados no objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -142,11 +142,11 @@ Uma lista de atributos que podem ser modificados no objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -163,11 +163,11 @@ Uma lista de atributos que podem ser modificados no objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -184,11 +184,11 @@ Uma lista de atributos que podem ser modificados no objeto.
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

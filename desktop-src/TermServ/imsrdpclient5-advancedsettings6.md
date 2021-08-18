@@ -4,19 +4,19 @@ description: Recupera a interface IMsRdpClientAdvancedSettings5.
 ms.assetid: b6a4efcf-87c3-438c-b6de-8a497ee5939d
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade AdvancedSettings6
-- Propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, Propriedade AdvancedSettings6
-- Propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, Propriedade AdvancedSettings6
-- Propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, Propriedade AdvancedSettings6
-- Propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, Propriedade AdvancedSettings6
-- Propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, Propriedade AdvancedSettings6
-- Propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota, interface IMsRdpClient10
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, Propriedade AdvancedSettings6
+- Propriedades AdvancedSettings6 Serviços de Área de Trabalho Remota
+- A propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota , interface IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings6
+- A propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota , interface IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings6
+- A propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota , interface IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings6
+- A propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota , interface IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings6
+- A propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota , interface IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings6
+- A propriedade AdvancedSettings6 Serviços de Área de Trabalho Remota , interface IMsRdpClient10
+- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , propriedade AdvancedSettings6
 topic_type:
 - apiref
 api_name:
@@ -38,16 +38,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b93d2395ec7e673e50023867f4602eea5c2d9fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a457cb0f2b638c24682f1fabd54f3309a1c781055f2df6242b3f6340490481da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001494"
 ---
-# <a name="imsrdpclient5advancedsettings6-property"></a>Propriedade IMsRdpClient5:: AdvancedSettings6
+# <a name="imsrdpclient5advancedsettings6-property"></a>Propriedade IMsRdpClient5::AdvancedSettings6
 
-Recupera a interface [**IMsRdpClientAdvancedSettings5**](imsrdpclientadvancedsettings5.md) .
+Recupera a interface [**IMsRdpClientAdvancedSettings5.**](imsrdpclientadvancedsettings5.md)
 
 Esta propriedade é somente para leitura.
 
@@ -64,7 +64,7 @@ HRESULT get_AdvancedSettings6(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro de interface [**IMsRdpClientAdvancedSettings5**](imsrdpclientadvancedsettings-interface.md) .
+Um ponteiro de interface [**IMsRdpClientAdvancedSettings5.**](imsrdpclientadvancedsettings-interface.md)
 
 ## <a name="requirements"></a>Requisitos
 

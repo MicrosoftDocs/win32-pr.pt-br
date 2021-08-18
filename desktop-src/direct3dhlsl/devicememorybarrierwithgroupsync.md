@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6a7a4a27b3256fb78c7b60b960fc5383cfd5b5d4
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 2567a209b86481cd0f25922e8e3b1cf947196a2c799344089591cf70fa3624fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625816"
 ---
 # <a name="devicememorybarrierwithgroupsync-function"></a>Função DeviceMemoryBarrierWithGroupSync
 
@@ -34,7 +34,7 @@ void DeviceMemoryBarrierWithGroupSync(void);
 
 Essa função não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 
@@ -52,19 +52,19 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -76,9 +76,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

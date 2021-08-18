@@ -4,12 +4,12 @@ description: Esta seção descreve as alterações que você pode fazer no proce
 ms.assetid: ACB4FF34-38EF-4F3D-9395-D48D58A72C0B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9ef9a2eea9490beac7b6ff5048b70de61eb635f
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: d2139ac1bff3d197d63011e6a6e76c861b984c5e20b5c54ceab8871678d31a52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103823994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119914216"
 ---
 # <a name="how-to-scroll-text"></a>Como rolar o texto
 
@@ -19,12 +19,12 @@ Esta seção descreve as alterações que você pode fazer no procedimento de ja
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -326,9 +326,9 @@ switch (uMsg)
 [Usando barras de rolagem](using-scroll-bars.md)
 </dt> <dt>
 
-[Demonstração de controles comuns do Windows (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
+[Windows de demonstração de controles comuns (CppWindowsCommonControls)](https://github.com/microsoftarchive/msdn-code-gallery-microsoft/tree/master/OneCodeTeam/Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/%5BC++%5D-Windows%20common%20controls%20demo%20(CppWindowsCommonControls)/C++/CppWindowsCommonControls)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

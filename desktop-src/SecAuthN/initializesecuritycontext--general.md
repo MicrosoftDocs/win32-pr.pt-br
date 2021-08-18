@@ -4,12 +4,12 @@ ms.assetid: 21d965d4-3c03-4e29-a70d-4538c5c366b0
 title: Função InitializeSecurityContext (geral) (Sspi.h)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: bc96fe74202f1380d2d85946a373f176e14dfd6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f67832ae3593e893d56e9a3d772b635ef2aac327d6e997dafb152682da569ae0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120015916"
 ---
 # <a name="initializesecuritycontext-general-function"></a>Função InitializeSecurityContext (geral)
 
@@ -188,7 +188,7 @@ Não há tempo de expiração para Microsoft Digest s ou credenciais do [*contex
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, a função retornará um dos códigos de êxito a seguir.
 
@@ -283,9 +283,9 @@ Ao usar o SSP do Schannel, depois que um aplicativo cliente recebe um certificad
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>SSPI. h (incluir Security. h)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Secur32. lib</dt> </dl>                 |
 | DLL<br/>                      | <dl> <dt>Secur32.dll</dt> </dl>                 |
 | Nomes Unicode e ANSI<br/>   | **InitializeSecurityContextW** (Unicode) e **InitializeSecurityContextA** (ANSI)<br/>          |

@@ -3,7 +3,7 @@ title: BUTTONelement. cursor
 description: O atributo cursor especifica ou recupera o valor do cursor BUTTONelement que aparece quando o mouse está sobre o BOTÃOelement.
 ms.assetid: 29e7fadb-30d8-40e4-9a64-6b6f45eac80a
 keywords:
-- BUTTONelement. cursor Windows Media Player
+- Windows Media Player. cursorelement
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f267cd54c36ad8f89a7242d7f428fd0d52b75fa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 82f08d8e6b26ac2227d9040249b2daca55dcbe0ec068e120f1aba962bea0f089
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764476"
 ---
 # <a name="buttonelementcursor"></a>BUTTONelement. cursor
 

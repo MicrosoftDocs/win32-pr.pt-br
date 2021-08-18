@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 5ac35f85e904e9a80d9f244a1421b54fd0994a43
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0aa94a2df1c44b53ec9fb8211f7eaed8c955f9f2c1cd824cd4634c754f8c337e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105781414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119824729"
 ---
 # <a name="printprocessor_info_1-structure"></a>Estrutura informações do multiprocessador \_ \_ 1
 

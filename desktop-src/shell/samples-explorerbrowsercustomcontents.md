@@ -1,5 +1,5 @@
 ---
-description: Demonstra como implementar um controle de navegador personalizado do Explorer para seu aplicativo.
+description: Demonstra como implementar um contol personalizado do Explorer Browser para seu aplicativo.
 title: Exemplo de conteúdo personalizado do navegador do Explorer
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: a7caab18e673ceaedb68819c756c9e9755a8af59
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8731494a0ec5e9c7df1344ef8f586142c4672a373a862bd475d10e8a693e220a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104967974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820386"
 ---
 # <a name="explorer-browser-custom-contents-sample"></a>Exemplo de conteúdo personalizado do navegador do Explorer
 
-Demonstra como implementar um controle de navegador personalizado do Explorer para seu aplicativo.
+Demonstra como implementar um contol personalizado do Explorer Browser para seu aplicativo.
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -40,13 +40,13 @@ Este tópico inclui as seções a seguir.
 
  
 
-Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exemplo.
+Para obter requisitos adicionais, consulte o arquivo Leiame incluído no exemplo.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
 | Localização      | URL do caminho                                                                                             |
 |---------------|------------------------------------------------------------------------------------------------------|
-| GitHub  | [Exemplo de ExplorerBrowserCustomContents](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ExplorerBrowserCustomContents) |
+| GitHub  | [Amostra ExplorerBrowserCustomContents](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/shell/appplatform/ExplorerBrowserCustomContents) |
 
 ## <a name="building-the-sample"></a>Compilando o exemplo
 

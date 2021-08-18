@@ -4,12 +4,12 @@ description: Este tópico explica como usar uma barra de progresso para indicar 
 ms.assetid: 4CC25F3A-9CAF-4ADC-B29C-3FACDD73D5A0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c71ff33a14f2d2af5fa8735c5197c50acaa948b
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: e65d47d6b41422853d401a1fb2686e03e3d3f5bc378b78b7ba762b86fc7ffe30
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103917730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826416"
 ---
 # <a name="how-to-use-progress-bar-controls"></a>Como usar controles de barra de progresso
 
@@ -19,12 +19,12 @@ Este tópico explica como usar uma barra de progresso para indicar o progresso d
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -130,7 +130,7 @@ Você deve se certificar de usar a função [**ReadFile**](/windows/desktop/api/
 
 Observe também que o quarto parâmetro de [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea)— ( \_ atributos LPSECURITY)**NULL**— define valores de segurança padrão. Se você precisar de configurações de segurança específicas, deverá definir os valores apropriados nos membros da estrutura. Chame **sizeof** para definir o tamanho correto da estrutura **de \_ atributos LPSECURITY** .
 
-Para obter mais informações, consulte [considerações de segurança: controles do Microsoft Windows](sec-comctls.md).
+para obter mais informações, consulte [considerações de segurança: controles do Microsoft Windows](sec-comctls.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -139,9 +139,9 @@ Para obter mais informações, consulte [considerações de segurança: controle
 [Usando controles de barra de progresso](using-progress-bar-controls.md)
 </dt> <dt>
 
-[Considerações de segurança: controles do Microsoft Windows](sec-comctls.md)
+[considerações de segurança: controles do Microsoft Windows](sec-comctls.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
