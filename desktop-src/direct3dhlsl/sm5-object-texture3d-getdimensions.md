@@ -1,6 +1,6 @@
 ---
-title: 'Função Texture3D:: GetDimensions'
-description: 'Retorna as dimensões do recurso. | Função Texture3D:: GetDimensions'
+title: Função Texture3D::GetDimensions
+description: Retorna as dimensões do recurso. | Função Texture3D::GetDimensions
 ms.assetid: 4a08f14f-7489-4ed1-bf94-4f63f1002eab
 keywords:
 - Função GetDimensions HLSL
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118985706"
 ---
-# <a name="texture3dgetdimensions-function"></a>Função Texture3D:: GetDimensions
+# <a name="texture3dgetdimensions-function"></a>Função Texture3D::GetDimensions
 
 Retorna as dimensões do recurso.
 
@@ -40,48 +40,48 @@ void GetDimensions(
 
 <dl> <dt>
 
-*MipLevel* \[ no\]
+*MipLevel* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Opcional. Nível de mipmap (deve ser especificado se *NumberOfLevels* for usado).
+Opcional. Nível de Mipmap (deve ser especificado se *NumberOfLevels* for usado).
 
 </dd> <dt>
 
-*Largura* \[ fora\]
+*Largura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A largura do recurso, em texels.
 
 </dd> <dt>
 
-*Altura* \[ fora\]
+*Altura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A altura do recurso, em texels.
 
 </dd> <dt>
 
-*Profundidade* \[ fora\]
+*Profundidade* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A profundidade do recurso, em texels.
 
 </dd> <dt>
 
-*NumberOfLevels* \[ fora\]
+*NumberOfLevels* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-O número de níveis de mipmap (também requer *MipLevel* ).
+O número de níveis de mipmap (requer *também MipLevel).*
 
 </dd> </dl>
 
@@ -122,7 +122,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

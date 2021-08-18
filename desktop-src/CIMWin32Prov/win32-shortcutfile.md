@@ -48,12 +48,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b714b4c8119f92931235734664726123744064d8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8f1951d4c52087330ac28e23e59e9403c67aff44bf7f9e94c63d3bfa7fc1bded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917496"
 ---
 # <a name="win32_shortcutfile-class"></a>\_Classe de atalhofile Win32
 
@@ -128,7 +128,7 @@ A **classe \_ Shortcutfile do Win32** tem esses métodos.
 | [**Excluir**](delete-method-in-class-win32-shortcutfile.md)                                           | Método de classe que exclui o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                   |
 | [**DeleteEx**](deleteex-method-in-class-win32-shortcutfile.md)                                       | Método de classe que exclui o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                   |
 | [**GetEffectivePermission**](geteffectivepermission-method-in-class-win32-shortcutfile.md)           | Método de classe que determina se o chamador tem as permissões agregadas especificadas pelo argumento de permissão não apenas no objeto File, mas no compartilhamento o arquivo ou diretório reside (se estiver em um compartilhamento).<br/> |
-| [**Renomear**](rename-method-in-class-win32-shortcutfile.md)                                           | Método de classe que renomeia o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                   |
+| [**Nome**](rename-method-in-class-win32-shortcutfile.md)                                           | Método de classe que renomeia o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                                   |
 | [**TakeOwnerShip**](takeownership-method-in-class-win32-shortcutfile.md)                             | Método de classe que obtém a propriedade do arquivo lógico especificado no caminho do objeto.<br/>                                                                                                                                     |
 | [**TakeOwnerShipEx**](takeownershipex-method-in-class-win32-shortcutfile.md)                         | Método de classe que obtém a propriedade do arquivo lógico especificado no caminho do objeto.<br/>                                                                                                                                     |
 | [**Descompactar**](uncompress-method-in-class-win32-shortcutfile.md)                                   | Método de classe que descompacta o arquivo lógico (ou diretório) especificado no caminho do objeto.<br/>                                                                                                                              |
@@ -545,7 +545,7 @@ Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**Tamanho**
+**FileSize**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **UInt64**
@@ -565,7 +565,7 @@ Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 
 </dd> <dt>
 
-**Talvez**
+**FileType**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -743,7 +743,7 @@ Qualificadores: [ **chave**](../wmisdk/key-qualifier.md)
 
 A propriedade Name é uma cadeia de caracteres que representa o nome herdado que serve como uma chave de uma instância de arquivo lógico em um sistema de arquivos. Devem ser fornecidos nomes de caminho completos.
 
-Exemplo: C: \\ \\ sistema Windows \\win.ini
+exemplo: C: \\ Windows \\ sistema \\win.ini
 
 Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 
@@ -967,7 +967,7 @@ Essa propriedade é herdada [**do \_ LogicalFile CIM**](cim-logicalfile.md).
 
 ## <a name="remarks"></a>Comentários
 
-A **classe \_ shortcutfile do Win32** é derivada de [**CIM \_ DataFile**](cim-datafile.md).
+A **classe \_ ShortcutFile Win32** é derivada de [**CIM \_ DataFile.**](cim-datafile.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -977,8 +977,8 @@ A **classe \_ shortcutfile do Win32** é derivada de [**CIM \_ DataFile**](cim-d
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -987,7 +987,7 @@ A **classe \_ shortcutfile do Win32** é derivada de [**CIM \_ DataFile**](cim-d
 
 <dl> <dt>
 
-[**DataFile de CIM \_**](cim-datafile.md)
+[**CIM \_ DataFile**](cim-datafile.md)
 </dt> <dt>
 
 [Classes do sistema operacional](./operating-system-classes.md)

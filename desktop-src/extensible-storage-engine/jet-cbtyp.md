@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0b01bafad091ed17e018793ea701596aef6d0d72
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa797fac58b0a2663c918e7fef739c6c5ab536dcfa9dc91be13b8196aed5ef43
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105768531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945906"
 ---
 # <a name="jet_cbtyp"></a>JET_CBTYP
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_cbtyp"></a>JET_CBTYP
 
 O **JET_CBTYP** grupo de constantes descreve todos os pontos possíveis em uma operação que o mecanismo de banco de dados notificará um aplicativo chamando a função de retorno de chamada [JET_CALLBACK](./jet-callback-callback-function.md) . O mecanismo de banco de dados passa uma dessas constantes no parâmetro *cbtyp* da função de retorno de chamada. O significado dos outros parâmetros passados pelo mecanismo de banco de dados nessa chamada depende do **JET_CBTYP** específico passado.
 
-**Windows XP:**  O **JET_CBTYP** grupo de constantes é introduzido no Windows XP.
+**Windows XP:**  o **JET_CBTYP** grupo de constantes é introduzido no Windows XP.
 
 <table>
 <colgroup>
@@ -191,7 +191,7 @@ O **JET_CBTYP** grupo de constantes descreve todos os pontos possíveis em uma o
 <tr class="odd">
 <td><p>JET_cbtypFreeCursorLS<br />
 0x00000200</p></td>
-<td><p>Esse retorno de chamada ocorrerá quando o aplicativo precisar limpar o identificador de contexto para o armazenamento local associado a um cursor que está sendo liberado pelo mecanismo de banco de dados. Para obter mais informações, consulte <a href="gg269243(v=exchg.10).md">JetSetLS</a>.</p>
+<td><p>esse retorno de chamada ocorrerá quando o aplicativo precisar limpar o identificador de contexto para o Armazenamento Local associado a um cursor que está sendo liberado pelo mecanismo de banco de dados. Para obter mais informações, consulte <a href="gg269243(v=exchg.10).md">JetSetLS</a>.</p>
 <p>O ponteiro de função para esse motivo de retorno de chamada é configurado por meio de <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> com <a href="gg269310(v=exchg.10).md">JET_paramRuntimeCallback</a>.</p>
 <p>Os parâmetros de retorno de chamada terão os seguintes valores:</p>
 <ul>
@@ -208,7 +208,7 @@ O **JET_CBTYP** grupo de constantes descreve todos os pontos possíveis em uma o
 <tr class="even">
 <td><p>JET_cbtypFreeTableLS<br />
 0x00000400</p></td>
-<td><p>Esse retorno de chamada ocorrerá como resultado da necessidade do aplicativo para limpar o identificador de contexto do armazenamento local associado a uma tabela que está sendo liberada pelo mecanismo de banco de dados. Para obter mais informações, consulte <a href="gg269243(v=exchg.10).md">JetSetLS</a>.</p>
+<td><p>esse retorno de chamada ocorrerá como resultado da necessidade do aplicativo de limpar o identificador de contexto para o Armazenamento Local associado a uma tabela que está sendo liberada pelo mecanismo de banco de dados. Para obter mais informações, consulte <a href="gg269243(v=exchg.10).md">JetSetLS</a>.</p>
 <p>O ponteiro de função para esse motivo de retorno de chamada é configurado por meio de <a href="gg294044(v=exchg.10).md">JetSetSystemParameter</a> com <a href="gg269310(v=exchg.10).md">JET_paramRuntimeCallback</a>.</p>
 <p>Os parâmetros de retorno de chamada terão os seguintes valores:</p>
 <ul>
@@ -236,11 +236,11 @@ O **JET_CBTYP** grupo de constantes descreve todos os pontos possíveis em uma o
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
+<td><p>requer o Windows Vista ou Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
+<td><p>requer o Windows server 2008 ou Windows server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Cláusula WITHIN
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 73d863e2e71d52fe60aeed7697feeb1231164c05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ee35350a52ef6af1aa22aacf775d22b3c7629fb479967a74aed1408aa5e1f39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119757596"
 ---
 # <a name="within-clause"></a>Cláusula WITHIN
 
 Os consumidores de eventos usam a cláusula WITHIN em consultas de evento para especificar um *intervalo de sondagem* ou um *intervalo de agrupamento*.
 
-Um intervalo de sondagem é o intervalo que Instrumentação de Gerenciamento do Windows (WMI) usa para sondar o provedor de dados responsável pela classe para [eventos intrínsecos](determining-the-type-of-event-to-receive.md), dos quais o evento consultado é um membro. Este intervalo é o período máximo de tempo que pode ser decorrido antes que um evento de notificação precise ser entregue. Um consumidor usa um intervalo de sondagem em uma cláusula WITHIN quando o consumidor requer notificação de alterações em uma classe e um provedor de eventos não está disponível. O consumidor registra um evento intrínseco e inclui o intervalo de sondagem.
+um intervalo de sondagem é o intervalo que Instrumentação de Gerenciamento do Windows (WMI) usa para sondar o provedor de dados responsável pela classe para [eventos intrínsecos](determining-the-type-of-event-to-receive.md), dos quais o evento consultado é um membro. Este intervalo é o período máximo de tempo que pode ser decorrido antes que um evento de notificação precise ser entregue. Um consumidor usa um intervalo de sondagem em uma cláusula WITHIN quando o consumidor requer notificação de alterações em uma classe e um provedor de eventos não está disponível. O consumidor registra um evento intrínseco e inclui o intervalo de sondagem.
 
 Para especificar um intervalo de sondagem, coloque a cláusula WITHIN imediatamente antes da cláusula WHERE, conforme mostrado a seguir:
 

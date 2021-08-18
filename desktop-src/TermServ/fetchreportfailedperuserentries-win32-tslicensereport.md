@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 159f980944c70dbad4c6948a614d0c9964a5f0cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ce4d78ff13ff58f7e80c1f177728ded24dc98588b0a0fb25c3976e9dcc19fdc4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119737626"
 ---
 # <a name="fetchreportfailedperuserentries-method-of-the-win32_tslicensereport-class"></a>Método FetchReportFailedPerUserEntries da classe Win32 \_ TSLicenseReport
 
@@ -66,7 +66,7 @@ Uma matriz de [**classes \_ TSLicenseReportFailedPerUserEntry do Win32**](win32-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
 

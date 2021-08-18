@@ -1,9 +1,9 @@
 ---
-title: Métodos ID2D1Geometry incluí
+title: Métodos Tessellate ID2D1Geometry
 description: Cria um conjunto de triângulos abertos em sentido horário que abrangem a geometria depois de ser transformado pela matriz especificada e mesclado com a tolerância especificada.
 ms.assetid: 4e0af188-d14b-43c0-be11-16577f054b90
 keywords:
-- Métodos incluí Direct2D
+- Métodos tessellate Direct2D
 topic_type:
 - apiref
 api_location:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
-ms.openlocfilehash: 060fc42dddd7642f021d073b8addbe089d031393
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b40602fb38ec2a0834ba202252114f7c0c34a4948e4473703ff4daf8bf2ee97a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119917885"
 ---
-# <a name="id2d1geometrytessellate-methods"></a>Métodos ID2D1Geometry:: incluí
+# <a name="id2d1geometrytessellate-methods"></a>Métodos ID2D1Geometry::Tessellate
 
 Cria um conjunto de triângulos abertos em sentido horário que abrangem a geometria depois de ser transformado pela matriz especificada e mesclado com a tolerância especificada.
 
@@ -30,16 +30,16 @@ Cria um conjunto de triângulos abertos em sentido horário que abrangem a geome
 
 | Método                                                                                                                                                    | Descrição                                                                                                                                                                          |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Incluí ( \_ matriz d2d1 \_ 3x2 \_ F \* , ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__id2d1tessellationsink))             | Cria um conjunto de triângulos de rotação horária que cobrem a geometria depois que ela é transformada usando a matriz especificada e achatada usando a tolerância padrão. <br/>   |
-| [**Incluí ( \_ matriz d2d1 \_ 3X2 \_ F&, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_id2d1tessellationsink))              | Cria um conjunto de triângulos de rotação horária que cobrem a geometria depois que ela é transformada usando a matriz especificada e achatada usando a tolerância padrão. <br/>   |
-| [**Incluí ( \_ matriz d2d1 \_ 3x2 \_ F \* , float, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_float_id2d1tessellationsink)) | Cria um conjunto de triângulos abertos em sentido horário que abrangem a geometria depois de ser transformado pela matriz especificada e mesclado com a tolerância especificada. <br/> |
-| [**Incluí ( \_ matriz d2d1 \_ 3X2 \_ F&, float, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__float_id2d1tessellationsink))  | Cria um conjunto de triângulos abertos em sentido horário que abrangem a geometria depois de ser transformado pela matriz especificada e mesclado com a tolerância especificada.<br/>  |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ \* F, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__id2d1tessellationsink))             | Cria um conjunto de triângulos invertidos que abrangem a geometria depois que ela é transformada usando a matriz especificada e nivelada usando a tolerância padrão. <br/>   |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F&,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_id2d1tessellationsink))              | Cria um conjunto de triângulos invertidos que abrangem a geometria depois que ela é transformada usando a matriz especificada e nivelada usando a tolerância padrão. <br/>   |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ \* F, FLOAT, ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f_float_id2d1tessellationsink)) | Cria um conjunto de triângulos abertos em sentido horário que abrangem a geometria depois de ser transformado pela matriz especificada e mesclado com a tolerância especificada. <br/> |
+| [**Tessellate(D2D1 \_ MATRIX \_ 3X2 \_ F&,FLOAT,ID2D1TessellationSink \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1geometry-tessellate(constd2d1_matrix_3x2_f__float_id2d1tessellationsink))  | Cria um conjunto de triângulos abertos em sentido horário que abrangem a geometria depois de ser transformado pela matriz especificada e mesclado com a tolerância especificada.<br/>  |
 
 
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir mostra como usar incluí para criar um conjunto de triângulos de rotação horária que cobrem a geometria.
+O exemplo de código a seguir mostra como usar o Tessellate para criar um conjunto de triângulos com sentido horário que abrangem a geometria.
 
 
 ```C++
@@ -98,7 +98,7 @@ O exemplo de código a seguir mostra como usar incluí para criar um conjunto de
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

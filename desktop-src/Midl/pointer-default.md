@@ -1,9 +1,9 @@
 ---
 title: Atributo pointer_default
-description: O atributo \ pointer default\ especifica o atributo de ponteiro padrão para todos os ponteiros, exceto os ponteiros de nível superior que \_ aparecem nas listas de parâmetros.
+description: O atributo \ padrão \ pointername \_ especifica o atributo de ponteiro padrão para todos os ponteiros, exceto os ponteiros de nível superior que aparecem nas listas de parâmetros.
 ms.assetid: a6e83034-8adb-483d-8d1e-432a1aed22c6
 keywords:
-- pointer_default atributo MIDL
+- pointer_default do atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119013764"
 ---
-# <a name="pointer_default-attribute"></a>atributo \_ padrão do ponteiro
+# <a name="pointer_default-attribute"></a>\_atributo padrão de ponteiro
 
-O **\[ atributo padrão \_ do \]** ponteiro especifica o atributo de ponteiro padrão para todos os ponteiros, exceto os ponteiros de nível superior que aparecem nas listas de parâmetros.
+O atributo **\[ \_ padrão \] de ponteiro** especifica o atributo de ponteiro padrão para todos os ponteiros, exceto para os ponteiros de nível superior que aparecem nas listas de parâmetros.
 
 ``` syntax
 pointer_default ( ptr | ref | unique )
@@ -29,7 +29,7 @@ pointer_default ( ptr | ref | unique )
 
 ## <a name="parameters"></a>Parâmetros
 
-Esse atributo não tem parâmetros.
+Este atributo não tem parâmetros.
 
 ## <a name="examples"></a>Exemplos
 
@@ -49,10 +49,10 @@ interface dictionary
 
 <dl> <dt>
 
-[**Interface**](interface.md)
+[**interface**](interface.md)
 </dt> <dt>
 
-[Atributos de matriz e Sized-Pointer dados](array-and-sized-pointer-attributes.md)
+[Atributos de matriz e de Sized-Pointer](array-and-sized-pointer-attributes.md)
 </dt> <dt>
 
 [**matrizes**](arrays-1.md)
@@ -67,7 +67,7 @@ interface dictionary
 [**ref**](ref.md)
 </dt> <dt>
 
-[**Único**](unique.md)
+[**diferente**](unique.md)
 </dt> <dt>
 
 [Tipos de ponteiro padrão](/windows/desktop/Rpc/default-pointer-types)

@@ -1,6 +1,6 @@
 ---
-description: A partir do Windows Vista, a caixa de diálogo de item comum substitui a caixa de diálogo de arquivo comum mais antiga quando usada para abrir ou salvar um arquivo.
-title: Caixa de diálogo de item comum
+description: Começando com Windows Vista, a Caixa de Diálogo de Item Comum é a que é a mais antiga, quando usada para abrir ou salvar um arquivo.
+title: Caixa de diálogo Item Comum
 ms.topic: article
 ms.date: 05/31/2018
 ms.assetid: f8846148-89a5-4b9b-ad68-56137a5c2f65
@@ -9,27 +9,27 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 896514779b2ba3d11d3db0551f82e21f1d4120b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2956bf7329ff9c92b777199d040d1275aa827cfa9ea9c8bfbec175d234b204f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943516"
 ---
-# <a name="common-item-dialog"></a>Caixa de diálogo de item comum
+# <a name="common-item-dialog"></a>Caixa de diálogo Item Comum
 
-A partir do Windows Vista, a caixa de diálogo de item comum substitui a caixa de diálogo de arquivo comum mais antiga quando usada para abrir ou salvar um arquivo. A caixa de diálogo de item comum é usada em duas variações: a caixa de diálogo **abrir** e **salvar** . Essas duas caixas de diálogo compartilham a maior parte de sua funcionalidade, mas cada uma tem seus próprios métodos exclusivos.
+Começando com Windows Vista, a Caixa de Diálogo de Item Comum é a que é a mais antiga, quando usada para abrir ou salvar um arquivo. A caixa de diálogo Item Comum é usada em duas variações: a **caixa de** diálogo Abrir e a caixa **de diálogo** Salvar. Essas duas caixas de diálogo compartilham a maior parte de suas funcionalidades, mas cada uma tem seus próprios métodos exclusivos.
 
-Embora essa versão mais recente seja chamada de caixa de diálogo de item comum, ela continua a ser chamada de caixa de diálogo de arquivo comum na maioria das documentações. A menos que esteja lidando especificamente com uma versão mais antiga do Windows, você deve supor que qualquer menção da caixa de diálogo arquivo comum se refere a essa caixa de diálogo de item comum.
+Embora essa versão mais recente seja chamada de Caixa de Diálogo de Item Comum, ela continua sendo chamada de Caixa de Diálogo de Arquivo Comum na maioria da documentação. A menos que você esteja lidando especificamente com uma versão mais antiga do Windows, você deve supor que qualquer menção da caixa de diálogo Arquivo Comum refere-se a essa caixa de diálogo Item Comum.
 
 Os tópicos a seguir são discutidos aqui:
 
 -   [IFileDialog, IFileOpenDialog e IFileSaveDialog](#ifiledialog-ifileopendialog-and-ifilesavedialog)
-    -   [Exemplo de uso](#sample-usage)
--   [Ouvindo eventos a partir da caixa de diálogo](#listening-to-events-from-the-dialog)
-    -   [OnFileOk](#onfileok)
-    -   [OnShareViolation e onoverwrite](#onshareviolation-and-onoverwrite)
--   [Personalizando a caixa de diálogo](#customizing-the-dialog)
+    -   [Uso de exemplo](#sample-usage)
+-   [Escutando eventos da caixa de diálogo](#listening-to-events-from-the-dialog)
+    -   [Onfileok](#onfileok)
+    -   [OnShareViolation e OnOverwrite](#onshareviolation-and-onoverwrite)
+-   [Personalização da caixa de diálogo](#customizing-the-dialog)
     -   [Adicionando opções ao botão OK](#adding-options-to-the-ok-button)
     -   [Respondendo a eventos em controles adicionados](#responding-to-events-in-added-controls)
 -   [Exemplos completos](#full-samples)
@@ -37,55 +37,55 @@ Os tópicos a seguir são discutidos aqui:
 
 ## <a name="ifiledialog-ifileopendialog-and-ifilesavedialog"></a>IFileDialog, IFileOpenDialog e IFileSaveDialog
 
-O Windows Vista fornece implementações das caixas de diálogo **abrir** e **salvar** : CLSID \_ FileOpenDialog e CLSID \_ FileSaveDialog. Essas caixas de diálogo são mostradas aqui.
+Windows O Vista fornece implementações  das caixas **de** diálogo Abrir e Salvar: Arquivo CLSIDOpenDialog e \_ Arquivo CLSIDSaveDialog. \_ Essas caixas de diálogo são mostradas aqui.
 
-![captura de tela da caixa de diálogo abrir](images/cid/openfiledialog.png)
+![captura de tela da caixa de diálogo aberta](images/cid/openfiledialog.png)
 
 ![captura de tela da caixa de diálogo Salvar como](images/cid/savefiledialog.png)
 
-[**IFileOpenDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) e [**IFileSaveDialog**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ifilesavedialog) herdam de [**IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog) e compartilham grande parte de sua funcionalidade. Além disso, a caixa de diálogo **abrir** dá suporte a **IFileOpenDialog** e a caixa de diálogo **salvar** dá suporte a **IFileSaveDialog**.
+[**IFileOpenDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifileopendialog) e [**IFileSaveDialog**](/windows/desktop/api/Shobjidl_core/nn-shobjidl_core-ifilesavedialog) herdam [**de IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog) e compartilham grande parte de sua funcionalidade. Além disso, a **caixa de diálogo** Abrir dá  suporte **a IFileOpenDialog** e a caixa de diálogo Salvar dá suporte **a IFileSaveDialog**.
 
-A implementação de caixa de diálogo de item comum encontrada no Windows Vista fornece várias vantagens em relação à implementação fornecida em versões anteriores:
+A implementação do Common Item Dialog encontrada no Windows Vista oferece várias vantagens em relação à implementação fornecida em versões anteriores:
 
--   Dá suporte ao uso direto do namespace do Shell por meio de [**IShellItem**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem) em vez de usar caminhos do sistema de arquivos.
--   Permite a personalização simples da caixa de diálogo, como a definição do rótulo no botão **OK** , sem a necessidade de um procedimento de gancho.
--   Dá suporte à personalização mais ampla da caixa de diálogo pela adição de um conjunto de controles controlados por dados que operam sem um modelo de caixa de diálogo do Win32. Esse esquema de personalização libera o processo de chamada do layout da interface do usuário. Como as alterações no design da caixa de diálogo continuam a usar esse modelo de dados, a implementação da caixa de diálogo não está vinculada à versão atual específica da caixa de diálogo.
--   Dá suporte à notificação do chamador de eventos na caixa de diálogo, como alteração de seleção ou alteração de tipo de arquivo. Também permite que o processo de chamada Conecte determinados eventos na caixa de diálogo, como a análise.
--   Apresenta novos recursos de caixa de diálogo, como adicionar locais especificados pelo chamador à barra de **locais** .
--   Na caixa de diálogo **salvar** , os desenvolvedores podem aproveitar os novos recursos de metadados do shell do Windows Vista.
+-   Dá suporte ao uso direto do namespace do Shell por [**meio de IShellItem em vez**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem) de usar caminhos do sistema de arquivos.
+-   Habilita a personalização simples da caixa de diálogo, como definir o rótulo no **botão OK,** sem a necessidade de um procedimento de gancho.
+-   Dá suporte à personalização mais ampla da caixa de diálogo pela adição de um conjunto de controles orientados a dados que operam sem um modelo de caixa de diálogo Win32. Esse esquema de personalização libera o processo de chamada do layout da interface do usuário. Como as alterações no design da caixa de diálogo continuam a usar esse modelo de dados, a implementação da caixa de diálogo não está vinculada à versão atual específica da caixa de diálogo.
+-   Dá suporte à notificação do chamador de eventos dentro da caixa de diálogo, como alteração de seleção ou alteração de tipo de arquivo. Também permite que o processo de chamada ative determinados eventos na caixa de diálogo, como a análise.
+-   Apresenta novos recursos de caixa de diálogo, como a adição de locais especificados pelo chamador à barra **Locais.**
+-   Na caixa **de diálogo** Salvar, os desenvolvedores podem aproveitar os novos recursos de metadados do Windows Vista Shell.
 
 Além disso, os desenvolvedores podem optar por implementar as seguintes interfaces:
 
 -   [**IFileDialogEvents**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogevents) para receber notificações de eventos dentro da caixa de diálogo.
 -   [**IFileDialogCustomize**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogcustomize) para adicionar controles à caixa de diálogo.
--   [**IFileDialogControlEvents**](/windows/desktop/api/Shobjidl/nn-shobjidl-ifiledialogcontrolevents) a ser notificado sobre eventos nesses controles adicionados.
+-   [**IFileDialogControlEvents**](/windows/desktop/api/Shobjidl/nn-shobjidl-ifiledialogcontrolevents) a ser notificado de eventos nesses controles adicionados.
 
-A caixa de diálogo **abrir** ou **salvar** retorna um objeto [**IShellItem**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem) ou [**IShellitemArray**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitemarray) para o processo de chamada. O chamador pode então usar um objeto **IShellItem** individual para obter um caminho do sistema de arquivos ou abrir um fluxo no item para ler ou gravar informações.
+A **caixa de** diálogo Abrir **ou** Salvar retorna um [**objeto IShellItem**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitem) ou [**IShellItemArray**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ishellitemarray) para o processo de chamada. O chamador pode usar um objeto **IShellItem** individual para obter um caminho do sistema de arquivos ou para abrir um fluxo no item para ler ou gravar informações.
 
-Os sinalizadores e as opções disponíveis para os novos métodos de diálogo são muito semelhantes aos sinalizadores **OFN** mais antigos encontrados na estrutura [**da OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) e usados em [**GetOpenFileName**](/windows/win32/api/commdlg/nf-commdlg-getopenfilenamea) e [**GetSaveFileName**](/windows/win32/api/commdlg/nf-commdlg-getsavefilenamea). Muitos deles são exatamente iguais, exceto que começam com um prefixo de FOS. A lista completa pode ser encontrada nos tópicos [**IFileDialog:: getoptions**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-getoptions) e [**IFileDialog:: SetOptions**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setoptions) . As caixas de diálogo **abrir** e **salvar** são criadas por padrão com os sinalizadores mais comuns. Para a caixa de diálogo **aberta** , isso é (FOS \_ PATHMUSTEXIST \| FOS \_ FILEMUSTEXIST \| FOS \_ NOCHANGEDIR) e, para a caixa de diálogo **salvar** , isso é (FOS \_ OVERWRITEPROMPT FOS NOREADONLYRETURN \| \_ \| FOS \_ PATHMUSTEXIST \| FOS \_ NOCHANGEDIR).
+Sinalizadores e opções disponíveis para os novos métodos de diálogo são muito semelhantes aos sinalizadores **OFN** mais antigos encontrados na estrutura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) e usados em [**GetOpenFileName**](/windows/win32/api/commdlg/nf-commdlg-getopenfilenamea) e [**GetSaveFileName**](/windows/win32/api/commdlg/nf-commdlg-getsavefilenamea). Muitos deles são exatamente os mesmos, exceto que começam com um prefixo FOS. A lista completa pode ser encontrada nos tópicos [**IFileDialog::GetOptions**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-getoptions) [**e IFileDialog::SetOptions.**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setoptions) **As** caixas **de** diálogo Abrir e Salvar são criadas por padrão com os sinalizadores mais comuns. Para  a caixa de diálogo Abrir, isso é (FOS PATHMUSTEXIST FOS FILEMUSTEXIST FOS NOCHANGEDIR) e para a caixa de diálogo Salvar é \_ \| \_ \| \_ (FOS  \_ OVERWRITEPROMPT \| FOS \_ NOREADONLYRETURN \| FOS \_ PATHMUSTEXIST \| FOS \_ NOCHANGEDIR).
 
-[**IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog) e suas interfaces descendentes herdam de e estendem [**IModalWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-imodalwindow). [**Show**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imodalwindow-show) usa como seu único parâmetro o identificador da janela pai. Se **Mostrar** retornar com êxito, haverá um resultado válido. Se ele retornar `HRESULT_FROM_WIN32(ERROR_CANCELLED)` , significa que o usuário cancelou a caixa de diálogo. Ele também pode retornar, legitimamente, outro código de erro, como **E \_ OUTOFMEMORY**.
+[**IFileDialog**](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ifiledialog) e suas interfaces descendentes herdam de [**e estendem IModalWindow**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-imodalwindow). [**Show**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imodalwindow-show) assume como seu único parâmetro o alça da janela pai. Se **Mostrar** retornar com êxito, haverá um resultado válido. Se ele retornar `HRESULT_FROM_WIN32(ERROR_CANCELLED)` , significa que o usuário cancelou a caixa de diálogo. Ele também pode retornar outro código de erro legítimo, como **E \_ OUTOFMEMORY.**
 
 ### <a name="sample-usage"></a>Exemplo de uso
 
-As seções a seguir mostram o código de exemplo para uma variedade de tarefas de caixa de diálogo.
+As seções a seguir mostram o código de exemplo para uma variedade de tarefas de diálogo.
 
--   [Uso básico](#basic-usage)
+-   [Uso Básico](#basic-usage)
 -   [Limitando resultados a itens do sistema de arquivos](#limiting-results-to-file-system-items)
 -   [Especificando tipos de arquivo para uma caixa de diálogo](#specifying-file-types-for-a-dialog)
 -   [Controlando a pasta padrão](#controlling-the-default-folder)
 -   [Adicionando itens à barra de locais](#adding-items-to-the-places-bar)
 -   [Persistência de estado](#state-persistence)
--   [Recursos de seleção ascada](#multiselect-capabilities)
+-   [Recursos de seleção multiseleção](#multiselect-capabilities)
 
-A maior parte do código de exemplo pode ser encontrada no [exemplo de caixa de diálogo SDK do Windows arquivo comum](samples-commonfiledialog.md).
+A maioria do código de exemplo pode ser encontrada no exemplo Windows caixa de diálogo Arquivo [Comum](samples-commonfiledialog.md)do SDK.
 
 ### <a name="basic-usage"></a>Uso básico
 
-O exemplo a seguir ilustra como iniciar uma caixa de diálogo **aberta** . Neste exemplo, ele é restrito aos documentos do Microsoft Word.
+O exemplo a seguir ilustra como iniciar uma **caixa de diálogo** Abrir. Neste exemplo, ele é restrito a Microsoft Word documentos.
 
 > [!Note]  
-> Vários exemplos neste tópico usam a `CDialogEventHandler_CreateInstance` função auxiliar para criar uma instância da implementação [**IFileDialogEvents**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogevents) . Para usar essa função em seu próprio código, copie o código-fonte da `CDialogEventHandler_CreateInstance` função do [exemplo de caixa de diálogo de arquivo comum](samples-commonfiledialog.md), do qual todos os exemplos neste tópico são tirados.
+> Vários exemplos neste tópico usam a função auxiliar para criar uma `CDialogEventHandler_CreateInstance` instância da implementação [**IFileDialogEvents.**](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ifiledialogevents) Para usar essa função em seu próprio código, copie o código-fonte da função do Exemplo de Caixa de Diálogo de Arquivo Comum , do qual todos os `CDialogEventHandler_CreateInstance` exemplos neste tópico são tirados. [](samples-commonfiledialog.md)
 
  
 
@@ -187,7 +187,7 @@ HRESULT BasicFileOpen()
 
 ### <a name="limiting-results-to-file-system-items"></a>Limitando resultados a itens do sistema de arquivos
 
-O exemplo a seguir, extraído acima, demonstra como restringir os resultados em itens do sistema de arquivos. Observe que [**IFileDialog:: SetOptions**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setoptions) adiciona o novo sinalizador a um valor obtido por meio de [**IFileDialog:: getoptions**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-getoptions). Esse é o método recomendado.
+O exemplo a seguir, obtido acima, demonstra como restringir os resultados a itens do sistema de arquivos. Observe que [**IFileDialog::SetOptions**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setoptions) adiciona o novo sinalizador a um valor obtido por [**meio de IFileDialog::GetOptions**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-getoptions). Esse é o método recomendado.
 
 
 ```C++
@@ -207,9 +207,9 @@ O exemplo a seguir, extraído acima, demonstra como restringir os resultados em 
 
 ### <a name="specifying-file-types-for-a-dialog"></a>Especificando tipos de arquivo para uma caixa de diálogo
 
-Para definir tipos de arquivo específicos que a caixa de diálogo pode manipular, use o método [**IFileDialog:: SetFileTypes**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) . Esse método aceita uma matriz de estruturas [**COMDLG \_ FILTERSPEC**](/windows/desktop/api/Shtypes/ns-shtypes-comdlg_filterspec) , cada uma representando um tipo de arquivo.
+Para definir tipos de arquivo específicos que a caixa de diálogo pode manipular, use o [**método IFileDialog::SetFileTypes.**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfiletypes) Esse método aceita uma matriz de estruturas [**COMDLG \_ FILTERSPEC,**](/windows/desktop/api/Shtypes/ns-shtypes-comdlg_filterspec) cada uma representando um tipo de arquivo.
 
-O mecanismo de extensão padrão em uma caixa de diálogo não é alterado em [**GetOpenFileName**](/windows/win32/api/commdlg/nf-commdlg-getopenfilenamea) e [**GetSaveFileName**](/windows/win32/api/commdlg/nf-commdlg-getsavefilenamea). A extensão de nome de arquivo que é anexada ao texto que o usuário digita na caixa de edição de nome de arquivo é inicializada quando o diálogo é aberto. Ele deve corresponder ao tipo de arquivo padrão (selecionado conforme a caixa de diálogo é aberta). Se o tipo de arquivo padrão for " \* . \* " (todos os arquivos), o arquivo pode ser uma extensão de sua escolha. Se o usuário escolher um tipo de arquivo diferente, a extensão será atualizada automaticamente para a primeira extensão de nome de arquivo associada a esse tipo de arquivo. Se o usuário escolher " \* . \* " (todos os arquivos), a extensão é revertida para seu valor original.
+O mecanismo de extensão padrão em uma caixa de diálogo é inalterado [**em GetOpenFileName**](/windows/win32/api/commdlg/nf-commdlg-getopenfilenamea) e [**GetSaveFileName**](/windows/win32/api/commdlg/nf-commdlg-getsavefilenamea). A extensão de nome de arquivo anexada ao texto que o usuário digita na caixa de edição de nome de arquivo é inicializada quando a caixa de diálogo é aberta. Ele deve corresponder ao tipo de arquivo padrão (que selecionou conforme a caixa de diálogo é aberta). Se o tipo de arquivo padrão for " \* . \* " (todos os arquivos), o arquivo pode ser uma extensão de sua escolha. Se o usuário escolher um tipo de arquivo diferente, a extensão será atualizada automaticamente para a primeira extensão de nome de arquivo associada a esse tipo de arquivo. Se o usuário escolher " \* . \* " (todos os arquivos), em seguida, a extensão é reverte para seu valor original.
 
 O exemplo a seguir ilustra como isso foi feito acima.
 
@@ -232,17 +232,17 @@ O exemplo a seguir ilustra como isso foi feito acima.
 
 ### <a name="controlling-the-default-folder"></a>Controlando a pasta padrão
 
-Quase todas as pastas no namespace do Shell podem ser usadas como a pasta padrão para a caixa de diálogo (a pasta apresentada quando o usuário opta por abrir ou salvar um arquivo). Chame [**IFileDialog:: SetDefaultFolder**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setdefaultfolder) antes de chamar [**show**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imodalwindow-show) para fazer isso.
+Quase qualquer pasta no namespace do Shell pode ser usada como a pasta padrão para a caixa de diálogo (a pasta apresentada quando o usuário opta por abrir ou salvar um arquivo). Chame [**IFileDialog::SetDefaultFolder**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setdefaultfolder) antes de chamar [**Mostrar**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imodalwindow-show) para fazer isso.
 
-A pasta padrão é a pasta na qual a caixa de diálogo é iniciada na primeira vez que um usuário a abre do seu aplicativo. Depois disso, a caixa de diálogo será aberta na última pasta que um usuário abriu ou na última pasta usada para salvar um item. Consulte [persistência de estado](#state-persistence) para obter mais detalhes.
+A pasta padrão é a pasta na qual a caixa de diálogo é iniciada na primeira vez que um usuário a abre do seu aplicativo. Depois disso, a caixa de diálogo será aberta na última pasta que um usuário abriu ou na última pasta usada para salvar um item. Confira [Persistência de Estado](#state-persistence) para obter mais detalhes.
 
-Você pode forçar a caixa de diálogo a sempre mostrar a mesma pasta quando ela é aberta, independentemente da ação anterior do usuário, chamando [**IFileDialog:: SetFolder**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfolder). No entanto, não recomendamos fazer isso. Se você chamar **SetFolder** antes de exibir a caixa de diálogo, o local mais recente no qual o usuário salvou ou abrir não será mostrado. A menos que haja um motivo muito específico para esse comportamento, não é uma experiência de usuário boa ou esperada e deve ser evitada. Em quase todas as instâncias, [**IFileDialog:: SetDefaultFolder**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setdefaultfolder) é o melhor método.
+Você pode forçar a caixa de diálogo a sempre mostrar a mesma pasta quando ela for aberta, independentemente da ação do usuário anterior, chamando [**IFileDialog::SetFolder**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setfolder). No entanto, não recomendamos fazer isso. Se você chamar **SetFolder antes** de exibir a caixa de diálogo, o local mais recente em que o usuário salvou ou abriu não será mostrado. A menos que haja um motivo muito específico para esse comportamento, ele não é uma boa ou esperada experiência do usuário e deve ser evitado. Em quase todas as instâncias, [**IFileDialog::SetDefaultFolder**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setdefaultfolder) é o método melhor.
 
-Ao salvar um documento pela primeira vez na caixa de diálogo **salvar** , você deve seguir as mesmas diretrizes para determinar a pasta inicial como fez na caixa de diálogo **abrir** . Se o usuário estiver editando um documento existente anteriormente, abra a caixa de diálogo na pasta em que o documento está armazenado e preencha o quadro de edição com o nome desse documento. Chame [**IFileSaveDialog:: SetSaveAsItem**](/windows/desktop/api/Shobjidl_core/nf-shobjidl_core-ifilesavedialog-setsaveasitem) com o item atual antes de chamar [**show**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imodalwindow-show).
+Ao salvar um documento pela  primeira vez na caixa de diálogo Salvar, você deve seguir as mesmas diretrizes para determinar a pasta inicial como fez na caixa **de diálogo** Abrir. Se o usuário estiver editando um documento existente anteriormente, abra a caixa de diálogo na pasta em que esse documento está armazenado e preencha a caixa de edição com o nome do documento. Chame [**IFileSaveDialog::SetSaveAsItem**](/windows/desktop/api/Shobjidl_core/nf-shobjidl_core-ifilesavedialog-setsaveasitem) com o item atual antes de chamar [**Mostrar**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-imodalwindow-show).
 
 ### <a name="adding-items-to-the-places-bar"></a>Adicionando itens à barra de locais
 
-O exemplo a seguir demonstra a adição de itens à barra de **locais** :
+O exemplo a seguir demonstra a adição de itens à barra **Locais:**
 
 
 ```C++
@@ -304,7 +304,7 @@ HRESULT AddItemsToCommonPlaces()
 
 ### <a name="state-persistence"></a>Persistência de estado
 
-Antes do Windows Vista, um estado, como a última pasta visitada, foi salvo em uma base por processo. No entanto, essas informações foram usadas independentemente da ação em particular. Por exemplo, um aplicativo de edição de vídeo apresentaria a mesma pasta na caixa de diálogo **renderizar como** na caixa de diálogo **importar mídia** . No Windows Vista, você pode ser mais específico por meio do uso de GUIDs. Para atribuir um **GUID** à caixa de diálogo, chame [**IFileDialog:: SetClientGuid**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setclientguid).
+Antes Windows Vista, um estado, como a última pasta visitada, era salvo por processo. No entanto, essas informações foram usadas independentemente da ação específica. Por exemplo, um aplicativo de edição de vídeo apresentaria a mesma pasta na caixa de diálogo **renderizar como** na caixa de diálogo **importar mídia** . no Windows Vista, você pode ser mais específico por meio do uso de guids. Para atribuir um **GUID** à caixa de diálogo, chame [**IFileDialog:: SetClientGuid**](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ifiledialog-setclientguid).
 
 ### <a name="multiselect-capabilities"></a>Recursos de seleção ascada
 
@@ -660,7 +660,7 @@ O manipulador de eventos fornecido pelo processo de chamada pode implementar [**
 
 ## <a name="full-samples"></a>Exemplos completos
 
-Veja a seguir exemplos de C++ completos e baixáveis do SDK (Software Development Kit) do Windows que demonstram o uso e a interação com a caixa de diálogo de item comum.
+veja a seguir exemplos de C++ completos e baixáveis do SDK (Software Development Kit) Windows que demonstram o uso de e a interação com a caixa de diálogo de Item comum.
 
 -   [Exemplo de caixa de diálogo de arquivo comum](samples-commonfiledialog.md)
 -   [Exemplo de modos de diálogo de arquivo comum](samples-commonfiledialogmodes.md)

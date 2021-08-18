@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fc8bf74a80916434f806e2e1f46b633b7243e61
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: bb4b8d8b3f8e1d6bacf8dc9cbfc266d664211d8a741ef4d74211432392de46fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105755983"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741606"
 ---
 # <a name="glgetmapiv-function"></a>função glGetMapiv
 
@@ -68,7 +68,7 @@ Especifica qual parâmetro retornar. Os nomes simbólicos a seguir são aceitos.
 
 </dd> <dt>
 
-*l* 
+*v* 
 </dt> <dd>
 
 Retorna os dados solicitados.

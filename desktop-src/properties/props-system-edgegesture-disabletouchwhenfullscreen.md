@@ -1,19 +1,19 @@
 ---
-description: Impede comportamentos de gestos de borda quando uma janela de aplicativo está ativa e no modo de tela inteira (ou uma janela de propriedade está ativa).
+description: Impede comportamentos de gesto de borda quando uma janela do aplicativo está ativa e no modo de tela inteira (ou uma janela de propriedade está ativa).
 ms.assetid: F4242C05-181B-44FC-BE6C-8ABB76079981
-title: System. EdgeGesture. DisableTouchWhenFullscreen
+title: System.EdgeGesture.DisableTouchWhenFullscreen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 208962f11b96420a8e0ef771ada846a3f802e815
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 13132ba30fd3f1e594ec54966dfe2268ce66d570b66ca6d34b1c63b03bfc0c75
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845116"
 ---
-# <a name="systemedgegesturedisabletouchwhenfullscreen"></a>System. EdgeGesture. DisableTouchWhenFullscreen
+# <a name="systemedgegesturedisabletouchwhenfullscreen"></a>System.EdgeGesture.DisableTouchWhenFullscreen
 
-Impede comportamentos de gestos de borda quando uma janela de aplicativo está ativa e no modo de tela inteira (ou uma janela de propriedade está ativa).
+Impede comportamentos de gesto de borda quando uma janela do aplicativo está ativa e no modo de tela inteira (ou uma janela de propriedade está ativa).
 
 > [!Note]  
 > No modo de tela inteira, o tamanho da janela do aplicativo corresponde à resolução da tela.
@@ -37,15 +37,15 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-No Windows 8, as interações de usuário com as bordas da tela exibem a interface do usuário do sistema, como barras de aplicativo, botões e aplicativos em execução.
+No Windows 8, as interações do usuário com as bordas da tela exibem a interface do usuário do sistema, como barras de aplicativo, charms e aplicativos em execução.
 
-Para aplicativos remotos de tela inteira, esse comportamento de interface do usuário no computador local pode substituir e interferir na interface do usuário da sessão remota. Essa propriedade permite que um aplicativo desabilite a interface do usuário do Edge no computador local.
+Para aplicativos remotos de tela inteira, esse comportamento de interface do usuário no computador local pode substituir e interferir na interface do usuário da sessão remota. Essa propriedade permite que um aplicativo desabilite a interface do usuário de borda no computador local.
 
-Para desabilitar a interface do usuário do Edge, defina essa propriedade como VARIANT \_ true. O valor padrão é VARIANT \_ false.
+Para desabilitar a interface do usuário de borda, de definir essa propriedade como VARIANT \_ TRUE. O valor padrão é VARIANT \_ FALSE.
 
-Esta propriedade não tem nenhum efeito nos aplicativos da Windows Store.
+Essa propriedade não tem nenhum efeito sobre os Windows Store.
 
-O exemplo a seguir mostra como definir os comportamentos da interface do usuário do Edge.
+O exemplo a seguir mostra como definir comportamentos de interface do usuário de borda.
 
 
 ```
@@ -71,13 +71,13 @@ HRESULT SetTouchDisableProperty(HWND hwnd, BOOL fDisableTouch)
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> </dl>
 
  

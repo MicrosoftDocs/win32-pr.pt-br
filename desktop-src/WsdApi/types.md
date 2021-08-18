@@ -1,5 +1,5 @@
 ---
-description: Uma lista de nomes qualificados por XSD.
+description: Uma lista de nomes qualificados XSD.
 title: Elemento Types
 ms.topic: article
 ms.date: 05/31/2018
@@ -12,7 +12,7 @@ ms.locfileid: "118991536"
 ---
 # <a name="types-element"></a>Elemento Types
 
-Uma lista de nomes qualificados por XSD.
+Uma lista de nomes qualificados XSD.
 
 ## <a name="usage"></a>Uso
 
@@ -34,8 +34,8 @@ Não há elementos filho.
 
 | Elemento                             | Descrição                                                            |
 |-------------------------------------|------------------------------------------------------------------------|
-| [**Host**](host.md)<br/>     | Identifica o host do serviço.<br/> <br/>                    |
-| [**Hospedado**](hosted.md)<br/> | Identifica um serviço definido por um host de serviço.<br/> <br/> |
+| [**hospedeira**](host.md)<br/>     | Identifica o host de serviço.<br/> <br/>                    |
+| [**hospedado**](hosted.md)<br/> | Identifica um serviço definido por um host de serviço.<br/> <br/> |
 
 
 

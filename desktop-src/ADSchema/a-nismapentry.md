@@ -1,10 +1,10 @@
 ---
-title: atributo nisMapEntry
+title: Atributo nisMapEntry
 description: Contém uma entrada de mapa para um mapa não padrão.
 ms.assetid: 00975302-3eba-4512-b836-01b38cad4dd5
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo nisMapEntry
+- Esquema do AD do atributo nisMapEntry
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f749bcd41d299e422399043b43c6ca2d8163dbee
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0cff534019d370f5a090854b5cc02ef0b7d29eb6927c410c5c9220cb113bdf4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919440"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704706"
 ---
-# <a name="nismapentry-attribute"></a>atributo nisMapEntry
+# <a name="nismapentry-attribute"></a>Atributo nisMapEntry
 
 Contém uma entrada de mapa para um mapa não padrão.
 
@@ -29,13 +29,13 @@ Contém uma entrada de mapa para um mapa não padrão.
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | nisMapEntry                          |
-| LDAP-Display-Name | nisMapEntry                          |
+| Ldap-Display-Name | nisMapEntry                          |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.27                     |
-| System-ID-GUID    | 4a95216e-fcc0-402e-b57f-5971626148a9 |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | 4a95216e-gem0-402e-b57f-5971626148a9 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -55,10 +55,10 @@ Contém uma entrada de mapa para um mapa não padrão.
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| Tem valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -76,10 +76,10 @@ Contém uma entrada de mapa para um mapa não padrão.
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| Tem valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -97,10 +97,10 @@ Contém uma entrada de mapa para um mapa não padrão.
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| Tem valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -118,10 +118,10 @@ Contém uma entrada de mapa para um mapa não padrão.
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| Tem valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |

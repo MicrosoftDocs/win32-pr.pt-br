@@ -1,7 +1,7 @@
 ---
-description: A interface IDxtCompositor define propriedades na transição do compositor. Essa interface é usada internamente pelos serviços de edição do DirectShow (DES) quando ele renderiza a transição do compositor.
+description: A interface IDxtCompositor define propriedades na transição compositor. Essa interface é usada internamente DirectShow DES (Serviços de Edição) quando renderiza a transição compositora.
 ms.assetid: 519f1e00-4b67-4014-906b-043f2478baa7
-title: Interface IDxtCompositor (QEdit. h)
+title: Interface IDxtCompositor (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: c2e19f555fe01cbec3763bc1dc76d11aeb5f5ecb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dd59f62a4382ae6023a18792ce3547f67b49c9e8ae49e9de7c9c8409bccd788d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119997686"
 ---
 # <a name="idxtcompositor-interface"></a>Interface IDxtCompositor
 
@@ -28,44 +28,44 @@ ms.locfileid: "105759290"
 
  
 
-A `IDxtCompositor` interface define propriedades na transição do [compositor](compositor-transition.md) .
+A `IDxtCompositor` interface define propriedades na transição [compositor.](compositor-transition.md)
 
-Essa interface é usada internamente pelos serviços de edição do DirectShow (DES) quando ele renderiza a transição do compositor. Os aplicativos DES não precisam usar essa interface. Para definir as propriedades em uma transição em DES, use a interface [**IPropertySetter**](ipropertysetter.md) .
+Essa interface é usada internamente DirectShow DES (Serviços de Edição) ao renderizar a transição compositora. Os aplicativos DES não têm que usar essa interface. Para definir as propriedades em uma transição no DES, use a interface [**IPropertySetter.**](ipropertysetter.md)
 
-A transição do compositor compõe uma imagem em primeiro plano em uma imagem de plano de fundo. O *retângulo de origem* define a seção da imagem em primeiro plano que é composta. O *retângulo de destino* define a seção da imagem de plano de fundo que recebe a imagem em primeiro plano. O diagrama a seguir ilustra esses retângulos.
+A transição compositor composição de uma imagem de primeiro plano em uma imagem de plano de fundo. O *retângulo de* origem define a seção da imagem de primeiro plano composta. O *retângulo de* destino define a seção da imagem de plano de fundo que recebe a imagem de primeiro plano. O diagrama a seguir ilustra esses retângulos.
 
-![Propriedades de transição do compositor](images/compmeasure.png)
+![propriedades de transição do compositor](images/compmeasure.png)
 
 ## <a name="members"></a>Membros
 
-A interface **IDxtCompositor** herda de **IDXEffect**. **IDxtCompositor** também tem estes tipos de membros:
+A **interface IDxtCompositor** herda de **IDXEffect.** **O IDxtCompositor** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-A interface **IDxtCompositor** tem esses métodos.
+A **interface IDxtCompositor** tem esses métodos.
 
 
 
 | Método                                                   | Descrição                                                         |
 |:---------------------------------------------------------|:--------------------------------------------------------------------|
 | [**obter \_ altura**](idxtcompositor-get-height.md)         | Recupera a altura do retângulo de destino.<br/>            |
-| [**obter \_ OffsetX**](idxtcompositor-get-offsetx.md)       | Recupera o deslocamento horizontal do retângulo de destino.<br/> |
+| [**get \_ OffsetX**](idxtcompositor-get-offsetx.md)       | Recupera o deslocamento horizontal do retângulo de destino.<br/> |
 | [**obter \_ OffsetY**](idxtcompositor-get-offsety.md)       | Recupera o deslocamento vertical do retângulo de destino.<br/>   |
-| [**obter \_ SrcHeight**](idxtcompositor-get-srcheight.md)   | Recupera a altura do retângulo de origem.<br/>            |
-| [**obter \_ SrcOffsetX**](idxtcompositor-get-srcoffsetx.md) | Recupera o deslocamento horizontal do retângulo de origem.<br/> |
-| [**obter \_ SrcOffsetY**](idxtcompositor-get-srcoffsety.md) | Recupera o deslocamento vertical do retângulo de origem.<br/>   |
-| [**obter \_ SrcWidth**](idxtcompositor-get-srcwidth.md)     | Recupera a largura do retângulo de origem.<br/>             |
-| [**obter \_ largura**](idxtcompositor-get-width.md)           | Recupera a largura do retângulo de destino.<br/>             |
-| [**colocar \_ altura**](idxtcompositor-put-height.md)         | Especifica a altura do retângulo de destino.<br/>            |
-| [**colocar \_ OffsetX**](idxtcompositor-put-offsetx.md)       | Especifica o deslocamento horizontal do retângulo de destino.<br/> |
-| [**colocar \_ OffsetY**](idxtcompositor-put-offsety.md)       | Especifica o deslocamento vertical do retângulo de destino.<br/>   |
-| [**colocar \_ SrcHeight**](idxtcompositor-put-srcheight.md)   | Especifica a altura do retângulo de origem.<br/>            |
-| [**colocar \_ SrcOffsetX**](idxtcompositor-put-srcoffsetx.md) | Especifica o deslocamento horizontal do retângulo de origem.<br/> |
-| [**colocar \_ SrcOffsetY**](idxtcompositor-put-srcoffsety.md) | Especifica o deslocamento vertical do retângulo de origem.<br/>   |
-| [**colocar \_ SrcWidth**](idxtcompositor-put-srcwidth.md)     | Especifica a largura do retângulo de origem.<br/>             |
-| [**colocar \_ largura**](idxtcompositor-put-width.md)           | Especifica a largura do retângulo de destino.<br/>             |
+| [**get \_ SrcHeight**](idxtcompositor-get-srcheight.md)   | Recupera a altura do retângulo de origem.<br/>            |
+| [**get \_ SrcOffsetX**](idxtcompositor-get-srcoffsetx.md) | Recupera o deslocamento horizontal do retângulo de origem.<br/> |
+| [**get \_ SrcOffsetY**](idxtcompositor-get-srcoffsety.md) | Recupera o deslocamento vertical do retângulo de origem.<br/>   |
+| [**get \_ SrcWidth**](idxtcompositor-get-srcwidth.md)     | Recupera a largura do retângulo de origem.<br/>             |
+| [**obter \_ Largura**](idxtcompositor-get-width.md)           | Recupera a largura do retângulo de destino.<br/>             |
+| [**put \_ Height**](idxtcompositor-put-height.md)         | Especifica a altura do retângulo de destino.<br/>            |
+| [**put \_ OffsetX**](idxtcompositor-put-offsetx.md)       | Especifica o deslocamento horizontal do retângulo de destino.<br/> |
+| [**put \_ OffsetY**](idxtcompositor-put-offsety.md)       | Especifica o deslocamento vertical do retângulo de destino.<br/>   |
+| [**put \_ SrcHeight**](idxtcompositor-put-srcheight.md)   | Especifica a altura do retângulo de origem.<br/>            |
+| [**put \_ SrcOffsetX**](idxtcompositor-put-srcoffsetx.md) | Especifica o deslocamento horizontal do retângulo de origem.<br/> |
+| [**put \_ SrcOffsetY**](idxtcompositor-put-srcoffsety.md) | Especifica o deslocamento vertical do retângulo de origem.<br/>   |
+| [**put \_ SrcWidth**](idxtcompositor-put-srcwidth.md)     | Especifica a largura do retângulo de origem.<br/>             |
+| [**put \_ Width**](idxtcompositor-put-width.md)           | Especifica a largura do retângulo de destino.<br/>             |
 
 
 
@@ -74,12 +74,12 @@ A interface **IDxtCompositor** tem esses métodos.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -89,8 +89,8 @@ A interface **IDxtCompositor** tem esses métodos.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 

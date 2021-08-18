@@ -1,28 +1,28 @@
 ---
-description: Enumera os certificados em um repositório de certificados, exibe o assunto e o usuário de cada certificado, e converte o nome da entidade de cada certificado em seu formato codificado de sua notação de sintaxe abstrata (ASN. 1) e, em seguida, de volta ao seu formulário decodificado.
+description: Enumera os certificados em um armazenamento de certificados, exibe o assunto e o usuário de cada certificado e converte o nome da assunto de cada certificado em seu formulário codificado em ASN.1 (Abstract Syntax Notation One) e, em seguida, volta para seu formulário decodificado.
 ms.assetid: 8b4771da-0996-40fb-98ce-73efe8e3534f
-title: 'Programa C de exemplo: convertendo nomes de certificados para ASN. 1 e voltar'
+title: 'Exemplo de programa C: convertendo nomes de certificados para ASN.1 e Back'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a14114d4ba956acabf26ff28368403c699497b45
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e1093f47500592c32142f4680c046b60facc690f7c794c7b850b18e810242e6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119993056"
 ---
-# <a name="example-c-program-converting-names-from-certificates-to-asn1-and-back"></a>Programa C de exemplo: convertendo nomes de certificados para ASN. 1 e voltar
+# <a name="example-c-program-converting-names-from-certificates-to-asn1-and-back"></a>Exemplo de programa C: convertendo nomes de certificados para ASN.1 e Back
 
-O exemplo a seguir enumera os certificados em um [*repositório de certificados*](../secgloss/c-gly.md), exibe o assunto e o usuário de cada certificado e converte o nome da entidade de cada certificado em seu formato codificado de sua [*notação de sintaxe abstrata*](../secgloss/a-gly.md) (ASN. 1) e, em seguida, de volta para seu formulário decodificado.
+O exemplo [*a*](../secgloss/c-gly.md)seguir enumera os certificados em um armazenamento de certificados, exibe o assunto e o usuário de cada certificado e converte o nome da assunto de cada certificado em seu formulário codificado em ASN.1 (Abstract [*Syntax Notation One)*](../secgloss/a-gly.md) e, em seguida, volta para seu formulário decodificado.
 
-Este exemplo mostra as seguintes tarefas e funções de [*CryptoAPI*](../secgloss/c-gly.md) :
+Este exemplo mostra as seguintes tarefas e [*funções CryptoAPI:*](../secgloss/c-gly.md)
 
--   Abrir um armazenamento do sistema usando o [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
--   Usando [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) para obter o primeiro certificado do armazenamento aberto.
--   Usando [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa) para obter o nome da entidade e o nome de usuário do certificado.
--   Usando [**CertNameToStr**](/windows/desktop/api/Wincrypt/nf-wincrypt-certnametostra) para converter o nome da entidade do certificado em sua forma codificada de ASN. 1.
--   Usando [**CertStrToName**](/windows/desktop/api/Wincrypt/nf-wincrypt-certstrtonamea) para converter uma cadeia de caracteres codificada ASN. 1 em seu formulário decodificado.
--   Fechar um repositório de certificados usando [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) com o sinalizador sinalizador de **\_ \_ \_ verificação \_ do repositório próximo do certificado** .
+-   Abrir um repositório do sistema usando [**CertOpenSystemStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea)
+-   Usando [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) para obter o primeiro certificado do repositório aberto.
+-   Usando [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa) para obter o nome da assunto e o nome de usuário do certificado.
+-   Usando [**CertNameToStr**](/windows/desktop/api/Wincrypt/nf-wincrypt-certnametostra) para converter o nome da assunto do certificado em seu formulário codificado em ASN.1.
+-   Usando [**CertStrToName para**](/windows/desktop/api/Wincrypt/nf-wincrypt-certstrtonamea) converter uma cadeia de caracteres codificada em ASN.1 em seu formulário decodificado.
+-   Fechar um repositório de certificados [**usando CertCloseStore com**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) o **sinalizador CERT CLOSE STORE CHECK \_ \_ \_ \_ FLAG.**
 
 
 ```C++

@@ -1,7 +1,7 @@
 ---
 description: Remove sub-redes de rede de migração do serviço de migração do sistema virtual.
 ms.assetid: 6ae8de07-552b-4525-8806-bfb9da73bd42
-title: Método RemoveNetworkSettings da classe Msvm_VirtualSystemMigrationService
+title: Método RemoveNetworkSettings da classe Msvm_VirtualSystemMigrationService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:

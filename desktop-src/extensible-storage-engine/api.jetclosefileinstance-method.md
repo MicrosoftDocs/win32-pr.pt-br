@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Método Api.JetCloseFileInstance'
-title: Método Api.JetCloseFileInstance
+description: 'Saiba mais sobre: método API. JetCloseFileInstance'
+title: Método API. JetCloseFileInstance
 TOCTitle: 'JetCloseFileInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetCloseFileInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE,Microsoft.Isam.Esent.Interop.JET_HANDLE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetclosefileinstance(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118983516"
 ---
-# <a name="apijetclosefileinstance-method"></a>Método Api.JetCloseFileInstance
+# <a name="apijetclosefileinstance-method"></a>Método API. JetCloseFileInstance
 
 Fecha um arquivo que foi aberto com JetOpenFileInstance depois que os dados desse arquivo foram extraídos usando JetReadFileInstance.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,16 +62,16 @@ public static void JetCloseFileInstance(
 #### <a name="parameters"></a>Parâmetros
 
   - instance  
-    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
     A instância a ser usada.
 
 <!-- end list -->
 
-  - Lidar com  
-    Tipo: [Microsoft.Isam.Esent.Interop.JET_HANDLE](./jet-handle-structure.md)  
+  - processamento  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_HANDLE](./jet-handle-structure.md)  
     
-    O alça a ser fechado.
+    O identificador a ser fechado.
 
 ## <a name="see-also"></a>Confira também
 
@@ -81,4 +81,4 @@ public static void JetCloseFileInstance(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

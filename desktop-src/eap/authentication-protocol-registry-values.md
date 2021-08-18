@@ -21,12 +21,12 @@ keywords:
 - RAS_EAP_VALUENAME_FILTER_INNERMETHODS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8091197c7b0d5c5a208bf3658bbc15284a29ac9e
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: a0822e7abb62aad136a3abbe36ee92f5b6f1ec9fbeabd6426c039f05c1f752d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104006958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119739556"
 ---
 # <a name="authentication-protocol-registry-values"></a>Valores do registro do protocolo de autenticação
 
@@ -68,7 +68,7 @@ O software de instalação para a DLL EAP pode criar os seguintes valores de reg
 
 | Valor constante | Caminho                               |
 |----------------|------------------------------------|
-| Tipo           | REG_EXPAND_SZ                    |
+| Type           | REG_EXPAND_SZ                    |
 | Descrição    | Especifica o caminho para a DLL de EAP. |
 
 ## <a name="ras_eap_valuename_friendly_name"></a>RAS_EAP_VALUENAME_FRIENDLY_NAME
@@ -125,14 +125,14 @@ O software de instalação para a DLL EAP pode criar os seguintes valores de reg
 | Valor constante | InvokeUsernameDialog                                                                                                                                                                                   |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo           | REG_DWORD                                                                                                                                                                                             |
-| Descrição    | Especifica se o RAS deve exibir a caixa de diálogo padrão de nome de usuário do Windows NT/Windows 2000 (valor de 1) ou invocar [**RasEapGetIdentity**](/previous-versions/windows/desktop/api/Raseapif/nf-raseapif-raseapgetidentity) (valor de 0). O valor padrão é 1. |
+| Descrição    | especifica se o RAS deve exibir a caixa de diálogo de nome de usuário Windows NT/Windows 2000 padrão (valor de 1) ou invocar [**RasEapGetIdentity**](/previous-versions/windows/desktop/api/Raseapif/nf-raseapif-raseapgetidentity) (valor de 0). O valor padrão é 1. |
 
 ## <a name="ras_eap_valuename_invoke_pwddlg"></a>RAS_EAP_VALUENAME_INVOKE_PWDDLG
 
 | Valor constante | InvokePasswordDialog                                                                                                                                                                        |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo           | REG_DWORD                                                                                                                                                                                  |
-| Descrição    | Especifica se o RAS deve exibir a caixa de diálogo de senha padrão do Windows NT/Windows 2000. Se esse valor existir e for 0, o RAS não exibirá a caixa de diálogo de senha. O valor padrão é 1. |
+| Descrição    | especifica se o RAS deve exibir a caixa de diálogo de senha Windows NT/Windows 2000 padrão. Se esse valor existir e for 0, o RAS não exibirá a caixa de diálogo de senha. O valor padrão é 1. |
 
 
 ## <a name="ras_eap_valuename_encryption"></a>RAS_EAP_VALUENAME_ENCRYPTION
@@ -147,7 +147,7 @@ O software de instalação para a DLL EAP pode criar os seguintes valores de reg
 | Valor constante | StandaloneSupported                                                                                                                                                            |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo           | REG_DWORD                                                                                                                                                                     |
-| Descrição    | Especifica se esse protocolo de autenticação tem suporte em um servidor Windows 2000 autônomo. Um valor de 0 indica que não há suporte para o EAP. O valor padrão é 1. |
+| Descrição    | especifica se esse protocolo de autenticação tem suporte em um servidor Windows 2000 autônomo. Um valor de 0 indica que não há suporte para o EAP. O valor padrão é 1. |
 
 ## <a name="ras_eap_valuename_roles_supported"></a>RAS_EAP_VALUENAME_ROLES_SUPPORTED
 

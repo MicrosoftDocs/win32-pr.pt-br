@@ -4,12 +4,12 @@ ms.assetid: 9433aadf-3440-4249-8f2c-3e22ebc949fb
 title: Mensagem de WM_TABLET_FLICK (Tpcshrd. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 98c95598ac23f37918c67eec70c2ed205f8a4fe3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5bb01fce646d2e7c6cb4e1b25c2f49f0c4dde5258ba2167e117a23eff22a5d1c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119842767"
 ---
 # <a name="wm_tablet_flick-message"></a>Mensagem de movimento do \_ Tablet do WM \_
 
@@ -45,7 +45,7 @@ A [**\_ estrutura do ponto de movimento**](/windows/desktop/api/tabflicks/ns-tab
 
 Um movimento de caneta é um gesto de caneta unidirecional que exige que o usuário contate o digitalizador em um movimento de movimentos rápido e reto. Um movimento é caracterizado por alta velocidade e um alto grau de reta. Um movimento é identificado pela sua direção. Os movimentos podem ser feitos em oito direções correspondentes às direções cardeal e secundária Compass.
 
-Quando ocorre um movimento de caneta, o Windows primeiro notifica um aplicativo enviando uma mensagem de **\_ \_ movimento de Tablet do WM** , que uma janela recebe por meio de sua função [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . Retorne a constante de **movimento \_ \_ manipulada \_ pelo WM** , descrita em constantes de [movimentos](flicks-constants.md), para indicar que o aplicativo respondeu à mensagem de **\_ \_ movimento de Tablet do WM** . Se o aplicativo não retornar a **\_ \_ \_ máscara manipulada do WM de movimento**, o Windows executará a ação padrão especificada no painel de controle de movimentos enviando uma notificação de acompanhamento, como o [**WM \_ APPCOMMAND**](../inputdev/wm-appcommand.md), o [**WM \_ VSCROLL**](../controls/wm-vscroll.md)ou o [**WM \_ KEYDOWN**](../inputdev/wm-keydown.md), dependendo de qual ação está associada ao movimento da caneta.
+quando ocorre um movimento de caneta, Windows primeiro notifica um aplicativo enviando uma mensagem **de \_ \_ movimento de TABLET do WM** , que uma janela recebe por meio de sua função [*WindowProc*](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) . Retorne a constante de **movimento \_ \_ manipulada \_ pelo WM** , descrita em constantes de [movimentos](flicks-constants.md), para indicar que o aplicativo respondeu à mensagem de **\_ \_ movimento de Tablet do WM** . se o aplicativo não retornar a **\_ \_ \_ máscara manipulada do WM de movimento**, Windows executará a ação padrão especificada no painel de controle de movimentos enviando uma notificação de acompanhamento, como o [**wm \_ APPCOMMAND**](../inputdev/wm-appcommand.md), o [**wm \_ VSCROLL**](../controls/wm-vscroll.md)ou o [**wm \_ KEYDOWN**](../inputdev/wm-keydown.md), dependendo da ação associada ao movimento da caneta.
 
 Tenha cuidado ao manipular a mensagem de **\_ \_ Tablet do WM** . **WM \_ O \_ movimento do Tablet** é passado por meio da função [**SendMessageTimeout**](/windows/win32/api/winuser/nf-winuser-sendmessagetimeouta) . Se você chamar métodos em uma interface COM, esse objeto deverá estar dentro do mesmo processo. Caso contrário, COM gera uma exceção.
 
@@ -55,9 +55,9 @@ Tenha cuidado ao manipular a mensagem de **\_ \_ Tablet do WM** . **WM \_ O \_ m
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>Tpcshrd. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Tpcshrd. h</dt> </dl> |
 
 
 

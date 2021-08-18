@@ -4,12 +4,12 @@ description: A função de exemplo a seguir cria uma dica de ferramenta e a asso
 ms.assetid: FDA3B2A0-1256-4DAC-86CF-8F123894E760
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f341c1be1e749c4e0d6f18caf97a3f897cf429e7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9883dc90e8a150c7cc863b59e8388df676ed0f1663aaea7b356cb45292a6c8c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119826566"
 ---
 # <a name="how-to-create-a-tooltip-for-a-control"></a>Como criar uma dica de ferramenta para um controle
 
@@ -19,12 +19,12 @@ A função de exemplo a seguir cria uma dica de ferramenta e a associa ao contro
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
@@ -87,9 +87,9 @@ HWND CreateToolTip(int toolID, HWND hDlg, PTSTR pszText)
 [Usando controles de dica de ferramenta](using-tooltip-contro.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

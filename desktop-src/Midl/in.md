@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b606a834b394197960777fa485d112a94212ec45
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: fb78ad08dd5ba5494181d3fb2adecb7a8441e4716c42ba6cd4f1c119b3ccb046
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103641016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067226"
 ---
 # <a name="in-attribute"></a>atributo in
 
@@ -54,7 +54,7 @@ Especifica zero ou mais declaradores de ponteiro. Um Declarador de ponteiro é o
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Especifica o nome do procedimento remoto.
@@ -102,6 +102,6 @@ HRESULT MyFunction([in] short count);
 [**fora**](out-idl.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

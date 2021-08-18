@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. TryMoveNext'
-title: Método API. TryMoveNext
+description: 'Saiba mais sobre: Método Api.TryMoveNext'
+title: Método Api.TryMoveNext
 TOCTitle: 'TryMoveNext method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.TryMoveNext(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.trymovenext(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4b4b4e1f296e5549ba3823f698cdcb5cc9f9f42a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e0f44caef2cef6d168668525b8dbd4066d1519f7e3d80ee5de9baec5a10d10c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738376"
 ---
-# <a name="apitrymovenext-method"></a>Método API. TryMoveNext
+# <a name="apitrymovenext-method"></a>Método Api.TryMoveNext
 
-Tente mover para o próximo registro na tabela. Se não houver um próximo registro, isso retornará false, se um erro diferente for encontrado, uma exceção será lançada.
+Tente passar para o próximo registro na tabela. Se não houver um próximo registro, isso retornará false, se um erro diferente for encontrado, uma exceção será lançada.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -65,21 +65,21 @@ public static bool TryMoveNext(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     O cursor a ser posicionado.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True se a movimentação tiver sido bem-sucedida.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True se a movimentação foi bem-sucedida.  
 
 ## <a name="see-also"></a>Confira também
 
@@ -89,4 +89,4 @@ True se a movimentação tiver sido bem-sucedida.
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

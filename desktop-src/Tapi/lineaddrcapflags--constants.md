@@ -4,12 +4,12 @@ ms.assetid: 530af273-82ba-4310-8aac-266d657e1bfe
 title: Constantes de LINEADDRCAPFLAGS_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27ce6c8bebb5683d5ecb7d576ff7d376ad0d62cc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 36ee1612c0d57b98a5f3caf82bcd26988fd5d9455c34e5caea5832153af06a50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003114"
 ---
 # <a name="lineaddrcapflags_-constants"></a>\_Constantes LINEADDRCAPFLAGS
 
@@ -348,7 +348,7 @@ Sem extensibilidade. Todos os 32 bits são reservados.
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Tapi.h</dt> </dl> |
 
 
 
@@ -359,25 +359,25 @@ Sem extensibilidade. Todos os 32 bits são reservados.
 [**lineAccept**](/windows/desktop/api/Tapi/nf-tapi-lineaccept)
 </dt> <dt>
 
-[**LINEADDRESSCAPS**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps)
+[**Lineaddresscaps**](/windows/desktop/api/Tapi/ns-tapi-lineaddresscaps)
 </dt> <dt>
 
-[**LINEADDRESSSTATUS**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus)
+[**Lineaddressstatus**](/windows/desktop/api/Tapi/ns-tapi-lineaddressstatus)
 </dt> <dt>
 
-[**LINECALLPARAMS**](/windows/desktop/api/Tapi/ns-tapi-linecallparams)
+[**Linecallparams**](/windows/desktop/api/Tapi/ns-tapi-linecallparams)
 </dt> <dt>
 
 [**lineCompleteCall**](/windows/desktop/api/Tapi/nf-tapi-linecompletecall)
 </dt> <dt>
 
-[**lineDrop**](/windows/desktop/api/Tapi/nf-tapi-linedrop)
+[**Linedrop**](/windows/desktop/api/Tapi/nf-tapi-linedrop)
 </dt> <dt>
 
 [**lineHold**](/windows/desktop/api/Tapi/nf-tapi-linehold)
 </dt> <dt>
 
-[**lineMakeCall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall)
+[**Linemakecall**](/windows/desktop/api/Tapi/nf-tapi-linemakecall)
 </dt> <dt>
 
 [**linePickup**](/windows/desktop/api/Tapi/nf-tapi-linepickup)

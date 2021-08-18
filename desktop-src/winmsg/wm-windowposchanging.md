@@ -4,12 +4,12 @@ ms.assetid: 45ecd966-5222-4738-9e99-8a6edbdd435a
 title: Mensagem de WM_WINDOWPOSCHANGING (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 015a31aac31d38506d1798f83c8dd7f9aa646f85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 68f10abcb0692374209c2070a465df7c4a5f18672eebf376378d6fb16cbca537
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119771936"
 ---
 # <a name="wm_windowposchanging-message"></a>Mensagem do WM \_ WINDOWPOSCHANGING
 
@@ -42,7 +42,7 @@ Um ponteiro para uma estrutura [**WINDOWPOS**](/windows/win32/api/winuser/ns-win
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LRESULT**
 
@@ -62,7 +62,7 @@ Enquanto essa mensagem está sendo processada, modificar qualquer um dos valores
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

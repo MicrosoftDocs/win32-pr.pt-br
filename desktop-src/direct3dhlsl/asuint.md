@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: c54ed89e112482df4a54f35e24a04694e88fa490
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 02f0df4d31ca978b8b58b50cd0c91710056aa9ac0f3cac1ae370a4edba6a9edf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626586"
 ---
 # <a name="asuint-function"></a>função asuint
 
@@ -28,9 +28,9 @@ Reinterpreta o padrão de bit de um valor de 64 bits como dois inteiros de 32 bi
 
 ``` syntax
 void asuint(
-  in  double value,
-  out uint lowbits,
-  out uint highbits
+  in  double value,
+  out uint lowbits,
+  out uint highbits
 );
 ```
 
@@ -85,19 +85,19 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -112,9 +112,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

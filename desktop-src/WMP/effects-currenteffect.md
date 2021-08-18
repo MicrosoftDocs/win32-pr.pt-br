@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentEffect
+title: EFFECTS.currentEffect
 description: O atributo currentEffect especifica ou recupera a visualização atual.
 ms.assetid: d6b0e77d-2872-420a-b5f5-36fd23243648
 keywords:
-- EFFECTs. currentEffect Windows Media Player
+- EFFECTS.currentEffect Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b19398946906fb6c6ea43234c110383b27b16ede
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2d9ac47ef88d1a0bce4982f71ce2e20e33f48933c9916bbb1e62085b5a1e5178
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996866"
 ---
-# <a name="effectscurrenteffect"></a>EFFECTs. currentEffect
+# <a name="effectscurrenteffect"></a>EFFECTS.currentEffect
 
-O atributo **currentEffect** especifica ou recupera a visualização atual.
+O **atributo currentEffect** especifica ou recupera a visualização atual.
 
 ``` syntax
         elementID.currentEffect
@@ -29,11 +29,11 @@ O atributo **currentEffect** especifica ou recupera a visualização atual.
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é um **objeto** de leitura/gravação. O valor padrão é a primeira visualização na ordem de criação. Se não houver visualizações criadas na capa, o padrão será a primeira visualização no registro.
+Esse atributo é um objeto de **leitura/gravação.** O valor padrão é a primeira visualização na ordem de autor. Se não houver visualizações na capa, o padrão será a primeira visualização no Registro.
 
 ## <a name="remarks"></a>Comentários
 
-Você pode usar esse objeto para acessar visualizações personalizadas que você criou. Por exemplo, você pode expor uma propriedade por meio da interface **IDispatch** em sua visualização. Em seguida, você pode alterar o valor da propriedade de sua capa, tornando a visualização o efeito atual e, em seguida, usando o objeto **currentEffect** para definir um novo valor para a propriedade. Por exemplo, se sua visualização expõe uma propriedade chamada backgroundColor, o seguinte código JScript especifica um novo valor:
+Você pode usar esse objeto para acessar visualizações personalizadas criadas. Por exemplo, você pode expor uma propriedade por meio da interface **IDispatch** em sua visualização. Em seguida, você pode alterar o valor da propriedade da sua capa tornando a visualização o efeito atual e, em seguida, usando o objeto **currentEffect** para definir um novo valor para a propriedade . Por exemplo, se sua visualização expõe uma propriedade chamada backgroundColor, o código JScript seguinte especifica um novo valor:
 
 
 ```JScript
@@ -49,7 +49,7 @@ MyEffects.currentEffect.backgroundColor = "blue";
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -57,13 +57,13 @@ MyEffects.currentEffect.backgroundColor = "blue";
 
 <dl> <dt>
 
-[**Elemento EFFECTs**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. currentEffectTitle**](effects-currenteffecttitle.md)
+[**EFFECTS.currentEffectTitle**](effects-currenteffecttitle.md)
 </dt> <dt>
 
-[**EFFECTs. currentEffectType**](effects-currenteffecttype.md)
+[**EFFECTS.currentEffectType**](effects-currenteffecttype.md)
 </dt> </dl>
 
  

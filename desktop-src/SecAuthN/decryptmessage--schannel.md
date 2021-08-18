@@ -4,12 +4,12 @@ ms.assetid: 5d7c8598-2d6b-4839-ae98-dff964bc962c
 title: Função DecryptMessage (Schannel)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 6bfbb354be9f3553e5369b8ce1f8b4260eab8ee9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: feec97f9e989270d812458cd61ff34132d118d192108c3f2372b192f2e383464
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008474"
 ---
 # <a name="decryptmessage-schannel-function"></a>Função DecryptMessage (Schannel)
 
@@ -63,7 +63,7 @@ Esse parâmetro pode ser o sinalizador a seguir.
 <table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th>Valor</th><th>Significado</th></tr></thead><tbody><tr class="odd"><td><span id="SECQOP_WRAP_NO_ENCRYPT"></span><span id="secqop_wrap_no_encrypt"></span><dl> <dt><strong>SECQOP_WRAP_NO_ENCRYPT</strong></dt> </dl></td><td>A mensagem não foi criptografada, mas um cabeçalho ou trailer foi produzido.<br/><blockquote>[!Note]<br />
 KERB_WRAP_NO_ENCRYPT tem o mesmo valor e o mesmo significado.</blockquote><br/></td></tr></tbody></table>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função verificar que a mensagem foi recebida na sequência correta, a função retornará s \_ E \_ OK.
 
@@ -95,9 +95,9 @@ A função **DecryptMessage (Schannel)** retorna s \_ \_ renegotiate quando o re
 
 | Requisito | Valor |
 |--------------------------|-------------------------------------------|
-| Cliente mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows XP\]          |
-| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2003\] |
-| parâmetro                   | SSPI. h (incluir Security. h)               |
+| Cliente mínimo com suporte | Windows \[Somente aplicativos da área de trabalho XP\]          |
+| Servidor mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do servidor 2003\] |
+| Cabeçalho                   | SSPI. h (incluir Security. h)               |
 | Biblioteca                  | Secur32. lib                               |
 | DLL                      | Secur32.dll                               |
 

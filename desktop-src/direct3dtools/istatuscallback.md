@@ -30,7 +30,7 @@ Não usado.
 
 ## <a name="members"></a>Membros
 
-A interface **IStatusCallback** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IStatusCallback** também tem estes tipos de membros:
+A interface **IStatusCallback** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IStatusCallback** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -44,7 +44,7 @@ A interface **IStatusCallback** tem esses métodos.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

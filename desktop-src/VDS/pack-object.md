@@ -4,16 +4,16 @@ ms.assetid: e84a05a0-ea12-4bc1-83e1-1eb0dd291dc9
 title: Objeto Pack
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02b01978747df5ccc273a31ae2f516b35c01df96
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: eaa8c565c45b802258b9d8b9955a2d28adc13c73c989805ce6b2663bc3006d7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104559765"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058015"
 ---
 # <a name="pack-object"></a>Objeto Pack
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Um objeto de pacote modela um grupo de discos, uma coleção de discos e volumes gerenciados pelo provedor de software básico ou dinâmico. Um provedor pode conter vários objetos de pacote.
 
@@ -26,7 +26,7 @@ Usando a API, os aplicativos podem direcionar o VDS para adicionar um ou mais di
 
 Os objetos de disco são não alocados e gerenciados pelo VDS ou são membros de exatamente um pacote. O provedor de software básico pode ter zero ou mais pacotes, cada um contendo um único disco básico. O provedor impõe nenhum limite para o número de volumes em um disco básico. O provedor dinâmico pode ter zero ou mais pacotes com vários discos dinâmicos em cada pacote. Esse provedor limita o número de volumes em um disco, com base no tamanho de um megabyte do banco de dados LDM (Gerenciador de discos lógicos). Considerando que um volume tem pelo menos um plex e uma extensão de disco, o número máximo de volumes para um pacote é de aproximadamente 1000. O número máximo fica inativo conforme o número de discos aumenta.
 
-Além dos objetos de disco, um pacote pode conter um ou mais objetos de LUN implementados por um ou mais provedores de hardware. Para o kernel do Windows, um LUN é apenas outro disco. (Os objetos de LUN devem ser desmascarados para o computador que está executando o programa do provedor.) Quando o disco é um LUN, o objeto LUN expõe as interfaces [**IVdsLun**](/windows/desktop/api/Vds/nn-vds-ivdslun) e [**IVdsDisk**](/windows/desktop/api/Vds/nn-vds-ivdsdisk) . Um objeto de pacote usa **IVdsDisk**, em vez de **IVdsLun**, para enumerar os LUNs em um pacote. Para obter uma descrição mais detalhada de um LUN, consulte o [objeto LUN](lun-object.md).
+Além dos objetos de disco, um pacote pode conter um ou mais objetos de LUN implementados por um ou mais provedores de hardware. para o kernel Windows, um LUN é apenas outro disco. (Os objetos de LUN devem ser desmascarados para o computador que está executando o programa do provedor.) Quando o disco é um LUN, o objeto LUN expõe as interfaces [**IVdsLun**](/windows/desktop/api/Vds/nn-vds-ivdslun) e [**IVdsDisk**](/windows/desktop/api/Vds/nn-vds-ivdsdisk) . Um objeto de pacote usa **IVdsDisk**, em vez de **IVdsLun**, para enumerar os LUNs em um pacote. Para obter uma descrição mais detalhada de um LUN, consulte o [objeto LUN](lun-object.md).
 
 A ilustração a seguir mostra um pacote com dois membros: um disco e um LUN. Um aplicativo pode adicionar esses objetos a um pacote online e criar um volume a partir do disco subjacente e das extensões de unidade representadas por eixos.
 
@@ -54,7 +54,7 @@ A tabela a seguir lista as interfaces, as enumerações e as estruturas relacion
 
  
 
-**\* Windows Server 2003:** essa interface não tem suporte até o Windows Vista.
+**\* Windows Server 2003:** essa interface não tem suporte até Windows Vista.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

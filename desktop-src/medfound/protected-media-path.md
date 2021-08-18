@@ -4,22 +4,22 @@ ms.assetid: e88806ae-0041-4b4a-a8df-69718a651e82
 title: Caminho de mídia protegido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7304edadf1623d41bc2f1f5c6b2b4cda2dd5f598
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 52ebb2b22e6ad887134f91e93b43a698afdef0ebc36e1521d70e5e17fefedd8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104553621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035014"
 ---
 # <a name="protected-media-path"></a>Caminho de mídia protegido
 
 Este tópico discute três tópicos inter-relacionados: ambiente protegido, gateway de interoperabilidade de mídia e revogação e renovação.
 
--   Um PE (ambiente protegido) é um conjunto de tecnologias que permite que o conteúdo protegido flua de e para o Windows Vista de maneira protegida. Todos os componentes dentro de um ambiente protegido são confiáveis e o processo é protegido contra violação.
+-   um PE (ambiente protegido) é um conjunto de tecnologias que permite que o conteúdo protegido flua de e para o Windows Vista de maneira protegida. Todos os componentes dentro de um ambiente protegido são confiáveis e o processo é protegido contra violação.
 -   O caminho de mídia protegido (PMP) é um executável que é executado em um ambiente protegido.
 -   Se um componente confiável no PE for comprometido, após o processo de conclusão, ele será revogado. No entanto, a Microsoft fornece um mecanismo de renovação para instalar uma versão confiável mais recente do componente quando uma estiver disponível.
 
-Para obter informações sobre componentes de mídia protegidos por assinatura de código, consulte o white paper [assinatura de código para componentes de mídia protegidos no Windows Vista](/windows-hardware/test/hlk/).
+para obter informações sobre componentes de mídia protegidos por assinatura de código, consulte o white paper [assinatura de código para componentes de mídia protegidos no Windows Vista](/windows-hardware/test/hlk/).
 
 Este tópico contém as seguintes seções:
 
@@ -39,7 +39,7 @@ Este tópico contém as seguintes seções:
 
 A proteção de conteúdo abrange várias tecnologias, cada uma delas tentando garantir que o conteúdo não possa ser usado de forma inconsistente com a intenção do proprietário do conteúdo ou do provedor. Essas tecnologias incluem proteção contra cópia, proteção de link, acesso condicional e DRM (gerenciamento de direitos digitais). A base de cada um é confiável: o acesso ao conteúdo é concedido somente a componentes de software que aderem aos termos de uso atribuídos a esse conteúdo.
 
-Para minimizar as ameaças contra o conteúdo protegido, o Windows Vista e o software Media Foundation permitem que o código confiável seja executado em um ambiente protegido. Um PE é um conjunto de componentes, diretrizes e ferramentas projetadas para aumentar a proteção contra pirataria de conteúdo.
+para minimizar as ameaças contra o conteúdo protegido, Windows Vista e Media Foundation Software permitem que o código confiável seja executado em um ambiente protegido. Um PE é um conjunto de componentes, diretrizes e ferramentas projetadas para aumentar a proteção contra pirataria de conteúdo.
 
 Antes de examinar o PE com mais detalhes, é importante entender as ameaças que ele foi projetado para minimizar. Suponha que você esteja executando um aplicativo de mídia em um processo de modo de usuário. O aplicativo é vinculado às várias DLLs (bibliotecas de vínculo dinâmico) que contêm plug-ins de mídia, como decodificadores. Outros processos também estão sendo executados no modo de usuário e vários drivers são carregados no kernel. Se nenhum mecanismo de confiança estiver em vigor, haverá as seguintes ameaças:
 
@@ -51,7 +51,7 @@ Antes de examinar o PE com mais detalhes, é importante entender as ameaças que
 
 ## <a name="design-of-the-protected-environment"></a>Design do ambiente protegido
 
-Um ambiente protegido é executado em um processo protegido separado do aplicativo de mídia. O recurso de processo protegido do Windows Vista impede que outros processos acessem o processo protegido.
+Um ambiente protegido é executado em um processo protegido separado do aplicativo de mídia. o recurso de processo protegido do Windows Vista impede que outros processos acessem o processo protegido.
 
 Quando um processo protegido é criado, os principais componentes do kernel identificam componentes e plug-ins não confiáveis para que o ambiente protegido possa se recusar a carregá-los. Um componente confiável é aquele que foi assinado adequadamente pela Microsoft. O kernel também controla os módulos que carregam nele, permitindo que o ambiente protegido pare a reprodução do conteúdo protegido se um módulo não confiável for carregado. Antes que um componente de kernel seja carregado, o kernel verifica se ele é confiável. Se não for, os componentes confiáveis que já estão no PE se recusam a processar o conteúdo protegido. Para habilitar isso, os componentes do PE executam periodicamente um handshake protegido criptograficamente com o kernel. Se um componente de modo kernel não confiável estiver presente, o handshake falhará e indicará ao PE que existe um componente não confiável.
 
@@ -113,7 +113,7 @@ Format: (All DWORD values are serialized in little-endian order)
 
 Há três requisitos fundamentais que devem ser atendidos antes que o conteúdo protegido possa ser processado no PMP. Primeiro, o conteúdo protegido deve ser enviado somente para saídas confiáveis. Segundo, somente as ações permitidas devem ser aplicadas a um fluxo. Terceiro, somente os sistemas de proteção de saída aprovados devem ser usados para reproduzir um fluxo. O mecanismo de política coordena entre ITAs e OTAs para garantir que esses requisitos sejam atendidos.
 
-A maneira mais fácil de entender o processo é percorrer um exemplo simplificado que identifica as etapas necessárias para reproduzir o conteúdo do formato de sistema avançado (ASF) protegido pelo WMDRM (Windows Media Digital Rights Management).
+a maneira mais fácil de entender o processo é percorrer um exemplo simplificado que identifica as etapas necessárias para reproduzir o conteúdo do formato de sistema avançado (ASF) protegido pelo WMDRM (Windows Media Digital Rights Management).
 
 Quando um usuário inicia um aplicativo de Player e abre um arquivo ASF que tem um fluxo de áudio protegido e um fluxo de vídeo protegido, as seguintes etapas devem ser executadas:
 

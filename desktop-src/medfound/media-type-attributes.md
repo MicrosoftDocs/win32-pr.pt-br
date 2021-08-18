@@ -4,12 +4,12 @@ ms.assetid: e84ba3f6-4857-4340-baca-5847650ea7b8
 title: Atributos de tipo de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2fd3bc77197a3a897cd5280338451c33f1ea2637
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: b52e906baa7bbac14d33dbc263e3a1edfa43b65851d96d0573032784c0149425
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104297961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119827456"
 ---
 # <a name="media-type-attributes"></a>Atributos de tipo de mídia
 
@@ -58,10 +58,10 @@ Esses atributos podem ser aplicados a tipos de mídia cujo tipo principal é igu
 | [**\_amostras de áudio MF MT \_ \_ \_ por \_ bloco**](mf-mt-audio-samples-per-block-attribute.md)                | Número de amostras de áudio contidas em um bloco compactado de dados de áudio.                    |
 | [**\_amostras de áudio MF MT \_ \_ \_ por \_ segundo**](mf-mt-audio-samples-per-second-attribute.md)              | Número de amostras de áudio por segundo (valor inteiro).                                         |
 | [**\_áudio MF \_ MT \_ \_ bits válidos \_ por \_ amostra**](mf-mt-audio-valid-bits-per-sample-attribute.md)       | Número de bits válidos de dados de áudio em cada amostra de áudio.                                    |
-| [**\_áudio MF \_ MT \_ WMADRC \_ AVGREF**](mf-mt-audio-wmadrc-avgref-attribute.md)                         | Nível de volume médio de referência de um arquivo de áudio do Windows Media.                               |
-| [**\_áudio MF \_ MT \_ WMADRC \_ AVGTARGET**](mf-mt-audio-wmadrc-avgtarget-attribute.md)                   | Nível de volume médio de destino de um arquivo de áudio do Windows Media.                                  |
-| [**\_áudio MF \_ MT \_ WMADRC \_ PEAKREF**](mf-mt-audio-wmadrc-peakref-attribute.md)                       | Faça referência ao nível de volume de pico de um arquivo de áudio do Windows Media.                                  |
-| [**\_áudio MF \_ MT \_ WMADRC \_ PEAKTARGET**](mf-mt-audio-wmadrc-peaktarget-attribute.md)                 | Nível de volume de pico de destino de um arquivo de áudio do Windows Media.                                     |
+| [**\_áudio MF \_ MT \_ WMADRC \_ AVGREF**](mf-mt-audio-wmadrc-avgref-attribute.md)                         | nível de volume médio de referência de um Windows arquivo de áudio de mídia.                               |
+| [**\_áudio MF \_ MT \_ WMADRC \_ AVGTARGET**](mf-mt-audio-wmadrc-avgtarget-attribute.md)                   | nível de volume médio de destino de um Windows arquivo de áudio de mídia.                                  |
+| [**\_áudio MF \_ MT \_ WMADRC \_ PEAKREF**](mf-mt-audio-wmadrc-peakref-attribute.md)                       | faça referência ao nível de volume de pico de um arquivo de áudio de mídia Windows.                                  |
+| [**\_áudio MF \_ MT \_ WMADRC \_ PEAKTARGET**](mf-mt-audio-wmadrc-peaktarget-attribute.md)                 | nível de volume de pico de destino de um arquivo de áudio de mídia Windows.                                     |
 | [\_marca de \_ \_ formato Wave \_ original \_ MF MT](mf-mt-original-wave-format-tag.md)                            | Contém a marca de formato WAVE original para um fluxo de áudio.                                  |
 
 

@@ -4,12 +4,12 @@ description: Ajusta a imagem.
 ms.assetid: 1eb12d1e-83c1-ba13-33be-df2078f3ccb8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f54203cfeb786204500c905e2ff4cfc83bf9719e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b74d95f7305dd6d44eb4dfbe2707f9e636e2ce704af2dc02fcf55477dbf2222d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119873756"
 ---
 # <a name="sharpen-effect"></a>Efeito de nitidez
 
@@ -57,9 +57,9 @@ As propriedades para o efeito de nitidez são definidas pela enumeração de [**
 
 | Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| Servidor mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| parâmetro                   | d2d1effects \_ 2. h                                  |
+| Cliente mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects \_ 2. h                                  |
 | Biblioteca                  | d2d1. lib, dxguid. lib                              |
 
 

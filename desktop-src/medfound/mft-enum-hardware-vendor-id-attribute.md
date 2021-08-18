@@ -1,5 +1,5 @@
 ---
-description: Especifica a ID do fornecedor para um Microsoft Media Foundation.
+description: Especifica a ID do fornecedor para um Microsoft Media Foundation baseado em hardware.
 ms.assetid: AA31639F-EF70-4454-AC61-60755CAA684A
 title: MFT_ENUM_HARDWARE_VENDOR_ID_Attribute atributo
 ms.topic: reference
@@ -11,23 +11,23 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118973095"
 ---
-# <a name="mft_enum_hardware_vendor_id_attribute-attribute"></a>Atributo MFT \_ ENUM \_ HARDWARE VENDOR \_ \_ ID \_ Attribute
+# <a name="mft_enum_hardware_vendor_id_attribute-attribute"></a>\_Atributo de \_ \_ \_ atributo ID de fornecedor de hardware de enumeração de MFT \_
 
-Especifica a ID do fornecedor para uma transformação de Microsoft Media Foundation (MFT) baseada em hardware.
+Especifica a ID do fornecedor para uma transformação de Microsoft Media Foundation baseada em hardware (MFT).
 
 ## <a name="data-type"></a>Tipo de dados
 
-**Wchar\***
+**WCHAR\***
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes::GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
+Para obter esse atributo, chame [**IMFAttributes:: GetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getstring).
 
-Para definir esse atributo, chame [**IMFAttributes::SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
+Para definir esse atributo, chame [**IMFAttributes:: SetString**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setstring).
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é informacional e opcional.
+Esse atributo é informativo e opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Esse atributo é informacional e opcional.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Mftransform.idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform. idl</dt> </dl> |
 
 
 
@@ -45,13 +45,13 @@ Esse atributo é informacional e opcional.
 
 <dl> <dt>
 
-[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Hardware MFTs](hardware-mfts.md)
+[MFTs de hardware](hardware-mfts.md)
 </dt> <dt>
 
-[Transformar atributos](transform-attributes.md)
+[Atributos de transformação](transform-attributes.md)
 </dt> </dl>
 
  

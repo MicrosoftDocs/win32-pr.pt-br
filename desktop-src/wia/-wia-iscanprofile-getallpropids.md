@@ -1,7 +1,7 @@
 ---
 description: Obtém todas as IDs de propriedade disponíveis em um perfil.
 ms.assetid: 9ef2abdd-0b33-4be3-a124-7795f42d5e55
-title: 'Método IScanProfile:: GetAllPropIDs (ScanProfile. h)'
+title: Método IScanProfile::GetAllPropIDs (Scanprofile.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118965775"
 ---
-# <a name="iscanprofilegetallpropids-method"></a>Método IScanProfile:: GetAllPropIDs
+# <a name="iscanprofilegetallpropids-method"></a>Método IScanProfile::GetAllPropIDs
 
 Obtém todas as IDs de propriedade disponíveis em um perfil.
 
@@ -40,7 +40,7 @@ HRESULT GetAllPropIDs(
 
 <dl> <dt>
 
-*número* \[ de entrada, saída\]
+*num* \[ in, out\]
 </dt> <dd>
 
 Tipo: **ULONG \***
@@ -49,10 +49,10 @@ O número de IDs de propriedade solicitadas ou retornadas.
 
 </dd> <dt>
 
-*PPID* \[ fora\]
+*ppid* \[ out\]
 </dt> <dd>
 
-Tipo: **Propid \***
+Tipo: **PROPID \***
 
 Um ponteiro para uma matriz de IDs de propriedade.
 
@@ -62,7 +62,7 @@ Um ponteiro para uma matriz de IDs de propriedade.
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,10 +70,10 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                        |
-| Cabeçalho<br/>                   | <dl> <dt>ScanProfile. h</dt> </dl>    |
-| INSERI<br/>                      | <dl> <dt>Scanprofiles. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Scanprofile.h</dt> </dl>    |
+| Idl<br/>                      | <dl> <dt>Scanprofiles.idl</dt> </dl> |
 
 
 
@@ -84,7 +84,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 [**IScanProfile**](-wia-iscanprofile.md)
 </dt> <dt>
 
-[Esquema do perfil de verificação](-wia-scan-profile-schema.md)
+[Esquema de perfil de verificação](-wia-scan-profile-schema.md)
 </dt> </dl>
 
  

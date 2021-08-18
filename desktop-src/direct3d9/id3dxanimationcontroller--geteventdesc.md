@@ -1,7 +1,7 @@
 ---
 description: Obtém uma descrição de um evento de animação especificado.
 ms.assetid: 7fb3def5-8df2-458d-b68e-5d540fd0a738
-title: Método ID3DXAnimationController::GetEventDesc (D3dx9 multimídia.h)
+title: 'Método ID3DXAnimationController:: GetEventDesc (D3dx9anim. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118987936"
 ---
-# <a name="id3dxanimationcontrollergeteventdesc-method"></a>Método ID3DXAnimationController::GetEventDesc
+# <a name="id3dxanimationcontrollergeteventdesc-method"></a>Método ID3DXAnimationController:: GetEventDesc
 
 Obtém uma descrição de um evento de animação especificado.
 
@@ -41,21 +41,21 @@ HRESULT GetEventDesc(
 
 <dl> <dt>
 
-*hEvent* \[ Em\]
+*hEvent* \[ no\]
 </dt> <dd>
 
 Tipo: **[ **D3DXEVENTHANDLE**](id3dxanimationcontroller.md)**
 
-Alça de evento para um evento de animação a ser descrito.
+Identificador de evento para um evento de animação a ser descrito.
 
 </dd> <dt>
 
-*pDesc* \[ out\]
+*pDesc* \[ fora\]
 </dt> <dd>
 
-Tipo: **[ **LPD3DXEVENT \_ DESC**](d3dxevent-desc.md)**
+Tipo: **[ **LPD3DXEVENT \_ desc**](d3dxevent-desc.md)**
 
-Ponteiro para uma [**estrutura D3DXEVENT \_ DESC**](d3dxevent-desc.md) que contém uma descrição do evento de animação.
+Ponteiro para uma [**estrutura \_ desc de D3DXEVENT**](d3dxevent-desc.md) que contém uma descrição do evento de animação.
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Ponteiro para uma [**estrutura D3DXEVENT \_ DESC**](d3dxevent-desc.md) que cont�
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o seguinte valor será retornado: D3DERR \_ INVALIDCALL.
+Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o seguinte valor será retornado: D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
 
 
 

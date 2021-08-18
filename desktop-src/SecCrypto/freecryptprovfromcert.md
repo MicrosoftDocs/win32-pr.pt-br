@@ -1,5 +1,5 @@
 ---
-description: Libera o identificador para um CSP (provedor de serviços de criptografia) e, opcionalmente, exclui o contêiner temporário criado pela função GetCryptProvFromCert.
+description: Libera o alça para um CSP (provedor de serviços criptográficos) e, opcionalmente, exclui o contêiner temporário criado pela função GetCryptProvFromCert.
 ms.assetid: 4462eef2-7056-4e48-aa96-c46f29b701d6
 title: Função FreeCryptProvFromCert
 ms.topic: reference
@@ -13,24 +13,24 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: 8201de475a4224aea58267405ccde244e56d59f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8797a6f48bcfb973a6c07a4b05ae0d39bc3b4522ab6f7ae70a80eaa77081da44
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006784"
 ---
 # <a name="freecryptprovfromcert-function"></a>Função FreeCryptProvFromCert
 
 > [!IMPORTANT]
-> Essa API está preterida. A Microsoft poderá remover essa API em versões futuras.
+> Essa API está preterida. A Microsoft pode remover essa API em versões futuras.
 
  
 
-A função **FreeCryptProvFromCert** libera o identificador para um CSP ( [*provedor de serviços de criptografia*](../secgloss/c-gly.md) ) e, opcionalmente, exclui o contêiner temporário criado pela função [**GetCryptProvFromCert**](getcryptprovfromcert.md) .
+A **função FreeCryptProvFromCert** libera [*o*](../secgloss/c-gly.md) alça para um CSP (provedor de serviços de criptografia) e, opcionalmente, exclui o contêiner temporário criado pela função [**GetCryptProvFromCert.**](getcryptprovfromcert.md)
 
 > [!Note]  
-> Esta função não tem nenhum arquivo de cabeçalho ou biblioteca de importação associado. Para chamar essa função, você deve criar um arquivo de cabeçalho definido pelo usuário e usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mssign32.dll.
+> Essa função não tem nenhum arquivo de header associado ou biblioteca de importação. Para chamar essa função, você deve criar um arquivo de título definido pelo usuário e usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mssign32.dll.
 
  
 
@@ -53,35 +53,35 @@ void WINAPI FreeCryptProvFromCert(
 
 <dl> <dt>
 
-*fAcquired* \[ no\]
+*fAcquired* \[ Em\]
 </dt> <dd>
 
-Um valor que especifica se o identificador do provedor foi adquirido do [*certificado*](../secgloss/c-gly.md).
+Um valor que especifica se o handle do provedor foi adquirido do [*certificado*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*hProv* \[ no\]
+*hProv* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**HCRYPTPROV**](hcryptprov.md) para o CSP.
+Um ponteiro para uma [**estrutura HCRYPTPROV**](hcryptprov.md) para o CSP.
 
 </dd> <dt>
 
-*pwszCapiProvider* \[ em, opcional\]
+*pwszCapiProvider* \[ in, opcional\]
 </dt> <dd>
 
 Um ponteiro para uma cadeia de caracteres terminada em nulo para o nome do provedor.
 
 </dd> <dt>
 
-*dwProviderType* \[ no\]
+*dwProviderType* \[ Em\]
 </dt> <dd>
 
-Especifica o tipo de CSP. Isso pode ser zero ou um dos [tipos de provedor criptográfico](cryptographic-provider-types.md). Se esse membro for zero, o contêiner de chave será um dos provedores de armazenamento de chaves CNG.
+Especifica o tipo CSP. Pode ser zero ou um dos Tipos de Provedor [Criptográfico.](cryptographic-provider-types.md) Se esse membro for zero, o contêiner de chave será um dos provedores de armazenamento de chaves CNG.
 
 </dd> <dt>
 
-*pwszTmpContainer* \[ em, opcional\]
+*pwszTmpContainer* \[ in, opcional\]
 </dt> <dd>
 
 Um ponteiro para uma cadeia de caracteres terminada em nulo para o nome do contêiner de chave temporária.
@@ -98,8 +98,8 @@ Essa função não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 

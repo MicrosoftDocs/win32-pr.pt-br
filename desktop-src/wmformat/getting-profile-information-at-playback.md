@@ -3,7 +3,7 @@ title: Obtendo informações de perfil na reprodução
 description: Obtendo informações de perfil na reprodução
 ms.assetid: 4ea6c063-fd53-4b5e-ac01-9e2790322ace
 keywords:
-- SDK do Windows Media Format, perfis
+- Windows SDK do formato de mídia, perfis
 - ASF (Advanced Systems Format), perfis
 - ASF (formato de sistemas avançados), perfis
 - ASF (Advanced Systems Format), exclusão mútua
@@ -16,12 +16,12 @@ keywords:
 - compartilhamento de largura de banda, obtendo informações de perfil em reprodução
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4a5c7083f7bf9e986e8a23ba2c78dfe4404942a
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 4c0f9386301b426adb3c4c425ac9329309c7e45146e312cc41df0bd1c453d485
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104084362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119839916"
 ---
 # <a name="getting-profile-information-at-playback"></a>Obtendo informações de perfil na reprodução
 
@@ -50,7 +50,7 @@ Os objetos de compartilhamento de largura de banda que são incluídos em um per
 > [!Note]  
 > Nem todas as informações do perfil usado para criar um arquivo estão presentes no cabeçalho do arquivo. Como regra geral, os dados que são usados somente no momento da codificação não são persistidos no arquivo. Isso inclui configurações de entrada que foram definidas usando o método [**IWMWriterAdvanced2:: SetInputSetting**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriteradvanced2-setinputsetting) , bem como propriedades definidas usando o método [**IWMPropertyVault:: SetProperty**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmpropertyvault-setproperty) .
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -62,9 +62,9 @@ Os objetos de compartilhamento de largura de banda que são incluídos em um per
 [**Lendo arquivos ASF**](reading-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

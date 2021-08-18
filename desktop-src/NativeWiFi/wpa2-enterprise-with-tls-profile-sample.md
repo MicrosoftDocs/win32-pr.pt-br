@@ -1,29 +1,29 @@
 ---
-description: Usa EAP-TLS (segurança de nível de transporte) de protocolo de autenticação extensível com certificados para autenticação na rede (WPA2-Enterprise).
+description: Usa EAP-TLS (segurança de nível de transporte) do protocolo de autenticação extensível com certificados para autenticar na rede (WPA2-Enterprise).
 ms.assetid: ded07fda-ea7f-4c5a-9433-60196c3f14af
 title: WPA2-Enterprise com exemplo de perfil TLS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba561f552614896ca5da1522180a53146dc5ce54
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 938f3d96ab4a2e1d7fc12f0d6eac0fc67dc7ff14a03401e321b59e1a9926b829
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912486"
 ---
 # <a name="wpa2-enterprise-with-tls-profile-sample"></a>WPA2-Enterprise com exemplo de perfil TLS
 
 Este perfil de exemplo usa EAP-TLS (segurança de nível de transporte) do protocolo de autenticação extensível com certificados para autenticar na rede.
 
-Este exemplo é configurado para usar a segurança do Wi-Fi Protected Access 2 em execução no modo empresarial (WPA2-Enterprise). O tipo de segurança WPA2-Enterprise usa 802.1 X para a troca de autenticação com o back-end. O tipo de codificação criptografia AES (AES) é usado para criptografia.
+este exemplo é configurado para usar a segurança do Wi-Fi Protected Access 2 em execução no modo de Enterprise (WPA2-Enterprise). O tipo de segurança WPA2-Enterprise usa 802.1 X para a troca de autenticação com o back-end. O tipo de codificação criptografia AES (AES) é usado para criptografia.
 
 As credenciais EAP-TLS são obtidas do repositório de certificados. Se a autenticação com base nas credenciais no repositório de certificados falhar, o usuário receberá uma solicitação para fornecer credenciais válidas. Nenhum servidor alternativo, autoridades de certificação raiz ou nomes de usuário serão usados para autenticação se a primeira tentativa falhar.
 
 A configuração EAPHost usada neste exemplo de perfil sem fio foi derivada da amostra de [Propriedades de conexão EAP-TLS](../eaphost/eap-tls-connection-properties.md) .
 
-**Windows 7 e Windows Server 2008 R2 com o serviço de LAN sem fio instalado:** As alterações são implementadas no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado para otimizar o desempenho da rede sem fio. A configuração padrão para [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando este elemento não está definido em um perfil de LAN sem fio foi alterado. A configuração padrão é alterada para "false" no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado. A configuração padrão era "true" no Windows Server 2008 e no Windows Vista. Veja a descrição do elemento de esquema [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obter mais informações.
+**Windows 7 e Windows Server 2008 R2 com o serviço de LAN sem fio instalado:** as alterações são implementadas no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado para otimizar o desempenho da rede sem fio. A configuração padrão para [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) quando este elemento não está definido em um perfil de LAN sem fio foi alterado. a configuração padrão é alterada para "falso" no Windows 7 e no Windows Server 2008 R2 com o serviço de LAN sem fio instalado. a configuração padrão era "true" no Windows Server 2008 e Windows Vista. Veja a descrição do elemento de esquema [**AutoSwitch**](wlan-profileschema-autoswitch-wlanprofile-element.md) para obter mais informações.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para EAP-TLS.
+**Windows xp com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para EAP-TLS.
 
 ``` syntax
 <?xml version="1.0" encoding="US-ASCII"?>

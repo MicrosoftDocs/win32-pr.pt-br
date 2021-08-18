@@ -1,22 +1,22 @@
 ---
-title: Exemplo de código C/C++ recuperando o tempo de MostRecentRun da tarefa
-description: Este exemplo recupera a hora em que a tarefa foi executada pela última vez e a exibe na tela. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+title: Exemplo de código C/C++ Recuperando a tarefa MaisRecentRun Time
+description: Este exemplo recupera a hora em que a tarefa foi executado pela última vez e a exibe na tela. Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 ms.assetid: 683ff1e1-1cb0-4ef7-bca2-9c3a2b4d1bd0
 keywords:
-- Recuperando a tarefa de tempo de execução mais recente Agendador de Tarefas
-- Recuperando propriedades do item de trabalho Agendador de Tarefas, tempo de execução mais recente da tarefa
+- recuperação da tarefa mais recente de tempo de Agendador de Tarefas
+- recuperando propriedades de item de trabalho Agendador de Tarefas , tempo de executar mais recente da tarefa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8cae40de306d79628fa10230091c571e776c5e4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 70e8a49372a082567f5f454cfd01a84239ff622f7ab6121fa07a1f557976c4de
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105764753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738566"
 ---
-# <a name="cc-code-example-retrieving-the-task-mostrecentrun-time"></a>Exemplo de código C/C++: Recuperando o tempo de MostRecentRun da tarefa
+# <a name="cc-code-example-retrieving-the-task-mostrecentrun-time"></a>Exemplo de código C/C++: Recuperando a tarefa MaisRecentRun Time
 
-Este exemplo recupera a hora em que a tarefa foi executada pela última vez e a exibe na tela. Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+Este exemplo recupera a hora em que a tarefa foi executado pela última vez e a exibe na tela. Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 
 
 ```C++
@@ -120,12 +120,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
+[Agendador de Tarefas exemplos 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

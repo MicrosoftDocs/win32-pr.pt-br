@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentOSSnapshotTimeOutException'
+description: 'Saiba mais sobre: Classe EsentOSSnapshotTimeOutException'
 title: Classe EsentOSSnapshotTimeOutException
 TOCTitle: EsentOSSnapshotTimeOutException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentOSSnapshotTimeOutException
@@ -24,30 +24,30 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5ee86c466c827211072f8345f05af2c1df5bf721
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b01b85c9b74dcd95bb6317e89011cf07bd3054a5d0192a52e208fbf5fd0d91c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119835996"
 ---
 # <a name="esentossnapshottimeoutexception-class"></a>Classe EsentOSSnapshotTimeOutException
 
-Classe base para JET_err. OSSnapshotTimeOut exceções.
+Classe base para JET_err. Exceções OSSnapshotTimeOut.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          Microsoft. ISAM. ESENT. Interop. EsentOSSnapshotTimeOutException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentOSSnapshotTimeOutException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -71,6 +71,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-members.md)
+[Membros EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

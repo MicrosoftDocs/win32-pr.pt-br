@@ -3,7 +3,7 @@ title: Mensagem de EM_CANUNDO (WinUser. h)
 description: Determina se há alguma ação em uma fila de desfazer do controle de edição. Você pode enviar essa mensagem para um controle de edição ou um controle de edição rico.
 ms.assetid: ae7ff372-b1f8-4ab7-9a7e-450aed3e0bc5
 keywords:
-- Controles de EM_CANUNDO de mensagens do Windows
+- controles de Windows de mensagem de EM_CANUNDO
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 345367b25790051a444363bb9bbc02af3d6fb0fd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b1cb56b07232c6b55a85b7387cf7b2fafd40ac29e5dc0520b45e1aa50cadcb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915986"
 ---
 # <a name="em_canundo-message"></a>\_Mensagem em CANundo
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se houver ações na fila de desfazer do controle, o valor de retorno será diferente de zero.
 
@@ -65,9 +65,9 @@ Se a fila de desfazer não estiver vazia, você poderá enviar a mensagem em [**
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

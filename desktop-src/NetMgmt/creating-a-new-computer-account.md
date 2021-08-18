@@ -4,25 +4,25 @@ description: O exemplo de código a seguir demonstra como criar uma nova conta d
 ms.assetid: 1e180b8e-b948-4836-b789-cb9dff0829e8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cfd02a9d2053310c50e40957e6afee6e3a4a5ab1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6d9b54b3e3b157bfed33b3f2429024e005b9b859bba563c0173b2ca02ab5f499
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105775677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119912296"
 ---
 # <a name="creating-a-new-computer-account"></a>Criando uma nova conta de computador
 
-O exemplo de código a seguir demonstra como criar uma nova conta de computador usando a função [**NetUserAdd**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuseradd) .
+O exemplo de código a seguir demonstra como criar uma nova conta de computador usando a [**função NetUserAdd.**](/windows/desktop/api/Lmaccess/nf-lmaccess-netuseradd)
 
-Veja a seguir as considerações para o gerenciamento de contas de computador:
+A seguir estão as considerações para gerenciar contas de computador:
 
--   O nome da conta do computador deve estar em letras maiúsculas para fins de consistência com os utilitários de gerenciamento de conta.
--   Um nome de conta de computador sempre tem um sinal de dólar à direita ($). Todas as funções usadas para gerenciar contas de computador devem criar o nome do computador de modo que o último caractere do nome da conta de computador seja um cifrão ($). Para relação de confiança entre domínios, o nome da conta é TrustingDomainName $.
--   O comprimento máximo do nome do computador é o \_ \_ comprimento máximo de ComputerName (15). Esse comprimento não inclui o sinal de dólar à direita ($).
--   A senha para uma nova conta de computador deve ser a representação em minúsculas do nome da conta do computador, sem o sinal de dólar à direita ($). Para relação de confiança entre domínios, a senha pode ser um valor arbitrário que corresponde ao valor especificado no lado de confiança da relação.
--   O comprimento máximo da senha é LM20 \_ PWLEN (14). A senha deve ser truncada para esse comprimento se o nome da conta do computador exceder esse comprimento.
--   A senha fornecida em hora da criação da conta de computador é válida somente até que a conta de computador se torne ativa no domínio. Uma nova senha é estabelecida durante a ativação da relação de confiança.
+-   O nome da conta do computador deve estar em letras maiúsculas para consistência com utilitários de gerenciamento de conta.
+-   Um nome de conta de computador sempre tem um cifrão à sua custa ($). Todas as funções usadas para gerenciar contas de computador devem criar o nome do computador de forma que o último caractere do nome da conta do computador seja um cifrão ($). Para confiança entre domínios, o nome da conta é TrustingDomainName$.
+-   O comprimento máximo do nome do computador é MAX \_ COMPUTERNAME \_ LENGTH (15). Esse comprimento não inclui o sinal de cifrão à parte final ($).
+-   A senha de uma nova conta de computador deve ser a representação em minúsculas do nome da conta do computador, sem o cifrão à frente ($). Para confiança entre domínios, a senha pode ser um valor arbitrário que corresponde ao valor especificado no lado de confiança da relação.
+-   O comprimento máximo da senha é LM20 \_ PWLEN (14). A senha deverá ser truncada até esse comprimento se o nome da conta do computador exceder esse tamanho.
+-   A senha fornecida no momento da criação da conta de computador é válida somente até que a conta de computador se torne ativa no domínio. Uma nova senha é estabelecida durante a ativação da relação de confiança.
 
 
 ```C++
@@ -142,10 +142,10 @@ BOOL AddMachineAccount(
 
 
 
-O usuário que chama as funções de gerenciamento de conta deve ter privilégios de administrador no computador de destino. No caso de contas de computador existentes, o criador da conta pode gerenciar a conta, independentemente da Associação administrativa. Para obter mais informações sobre como chamar funções que exigem privilégios de administrador, consulte [executando com privilégios especiais](/windows/desktop/SecBP/running-with-special-privileges).
+O usuário que chama as funções de gerenciamento de conta deve ter privilégios de Administrador no computador de destino. No caso de contas de computador existentes, o criador da conta pode gerenciar a conta, independentemente da associação administrativa. Para obter mais informações sobre como chamar funções que exigem privilégios de administrador, consulte [Executando com privilégios especiais](/windows/desktop/SecBP/running-with-special-privileges).
 
-O SeMachineAccountPrivilege pode ser concedido no computador de destino para fornecer aos usuários especificados a capacidade de criar contas de computador. Isso dá aos não administradores a capacidade de criar contas de computador. O chamador precisa habilitar esse privilégio antes de adicionar a conta de computador. Para obter mais informações sobre privilégios de conta, consulte [constantes](/windows/desktop/SecAuthZ/authorization-constants)de [privilégios](/windows/desktop/SecAuthZ/privileges) e autorização.
+O SeMachineAccountPrivilege pode ser concedido no computador de destino para dar aos usuários especificados a capacidade de criar contas de computador. Isso oferece aos não administradores a capacidade de criar contas de computador. O chamador precisa habilitar esse privilégio antes de adicionar a conta do computador. Para obter mais informações sobre privilégios de conta, consulte [Privilégios e](/windows/desktop/SecAuthZ/privileges) [constantes de autorização.](/windows/desktop/SecAuthZ/authorization-constants)
 
- 
+ 
 
- 
+ 

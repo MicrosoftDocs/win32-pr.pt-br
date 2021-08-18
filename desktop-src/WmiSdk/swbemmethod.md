@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 055957bf2774fc1e5c2e1f0149b00ece7b0a1bea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c750e81a3e41450e8cd32f37ccab6fee2f08439c6bc8fc8ae18bf0e4f106b551
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119732656"
 ---
 # <a name="swbemmethod-object"></a>Objeto SWbemMethod
 
@@ -49,7 +49,7 @@ O objeto **SWbemMethod** tem essas propriedades.
 |:--------------------------------------------------------------|:---------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
 | [**Inparâmetros**](swbemmethod-inparameters.md)<br/>   | Somente leitura<br/> | Um objeto [**SWbemObject**](swbemobject.md) cujas propriedades definem os parâmetros de entrada para esse método.<br/>              |
 | [**Nome**](swbemmethod-name.md)<br/>                   | Somente leitura<br/> | O nome do método.<br/>                                                                                                     |
-| [**Ter**](swbemmethod-origin.md)<br/>               | Somente leitura<br/> | Classe de origem do método.<br/>                                                                                        |
+| [**Origem**](swbemmethod-origin.md)<br/>               | Somente leitura<br/> | Classe de origem do método.<br/>                                                                                        |
 | [**Parameters**](swbemmethod-outparameters.md)<br/> | Somente leitura<br/> | Um objeto [**SWbemObject**](swbemobject.md) cujas propriedades definem os parâmetros de saída e o tipo de retorno desse método.<br/> |
 | [**Qualificadores\_**](swbemmethod-qualifiers-.md)<br/>    | Somente leitura<br/> | Um objeto [**SWbemQualifierSet**](swbemqualifierset.md) que contém os qualificadores para este método.<br/>                  |
 
@@ -65,7 +65,7 @@ O objeto **SWbemMethod** tem essas propriedades.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMMETHOD CLSID<br/>                                                           |

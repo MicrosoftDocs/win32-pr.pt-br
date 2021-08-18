@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac3f7a883f50b06c8d142cb83bedf0bfa2920191
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec8a446164bb7ae51d36d1a89219f6c3b84eff74b9af3a40c2121b3bd205a581
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119741736"
 ---
 # <a name="helpmsgstring-message"></a>Mensagem HELPMSGSTRING
 
@@ -52,7 +52,7 @@ Um ponteiro para a estrutura de inicialização da caixa de diálogo comum. Essa
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esta mensagem não tem nenhum valor de retorno.
 
@@ -82,7 +82,7 @@ Quando você criar a caixa de diálogo, use o membro **hwndOwner** da estrutura 
 **Referência**
 </dt> <dt>
 
-[**ajuda da CDN \_**](cdn-help.md)
+[**CDN \_ AJUDA**](cdn-help.md)
 </dt> <dt>
 
 [**CHOOSECOLOR**](/windows/win32/api/commdlg/ns-commdlg-choosecolora-r1)

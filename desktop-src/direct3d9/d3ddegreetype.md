@@ -1,7 +1,7 @@
 ---
 description: Define o grau das variáveis na equação que descreve uma curva.
 ms.assetid: 52a9c57e-a48d-4d8a-a208-97a3d09e7abf
-title: Enumeração D3DDEGREETYPE (D3D9Types. h)
+title: Enumeração D3DDEGREETYPE (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -43,44 +43,44 @@ typedef enum D3DDEGREETYPE {
 
 <dl> <dt>
 
-<span id="D3DDEGREE_LINEAR"></span><span id="d3ddegree_linear"></span>**D3DDEGREE \_ linear**
+<span id="D3DDEGREE_LINEAR"></span><span id="d3ddegree_linear"></span>**D3DDEGREE \_ LINEAR**
 </dt> <dd>
 
-A curva é descrita por variáveis da primeira ordem.
+A curva é descrita por variáveis de primeira ordem.
 
 </dd> <dt>
 
-<span id="D3DDEGREE_QUADRATIC"></span><span id="d3ddegree_quadratic"></span>**D3DDEGREE \_ quadrática**
+<span id="D3DDEGREE_QUADRATIC"></span><span id="d3ddegree_quadratic"></span>**D3DDEGREE \_ QUADTIC**
 </dt> <dd>
 
-A curva é descrita por variáveis da segunda ordem.
+A curva é descrita por variáveis de segunda ordem.
 
 </dd> <dt>
 
-<span id="D3DDEGREE_CUBIC"></span><span id="d3ddegree_cubic"></span>**D3DDEGREE \_ cúbico**
+<span id="D3DDEGREE_CUBIC"></span><span id="d3ddegree_cubic"></span>**D3DDEGREE \_ CUBIC**
 </dt> <dd>
 
-A curva é descrita por variáveis da terceira ordem.
+A curva é descrita por variáveis de terceira ordem.
 
 </dd> <dt>
 
-<span id="D3DDEGREE_QUINTIC"></span><span id="d3ddegree_quintic"></span>**D3DDEGREE \_ QUINTIC**
+<span id="D3DDEGREE_QUINTIC"></span><span id="d3ddegree_quintic"></span>**D3DDEGREE:IC \_**
 </dt> <dd>
 
 A curva é descrita por variáveis da quarta ordem.
 
 </dd> <dt>
 
-<span id="D3DCULL_FORCE_DWORD"></span><span id="d3dcull_force_dword"></span>**D3DCULL \_ forçar \_ DWORD**
+<span id="D3DCULL_FORCE_DWORD"></span><span id="d3dcull_force_dword"></span>**D3DCULL \_ FORCE \_ DWORD**
 </dt> <dd>
 
-Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits. Este valor não é usado.
+Força essa enumeração a compilar para 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada para um tamanho diferente de 32 bits. Este valor não é usado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Os valores nessa enumeração são usados para descrever as curvas usadas por patches de retângulo e de triângulo. Para obter mais informações, consulte D3DRS de \_ seleção.
+Os valores nessa enumeração são usados para descrever as curvas usadas por patches retângulo e triângulo. Para obter mais informações, consulte D3DRS \_ CULLMODE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,7 +88,7 @@ Os valores nessa enumeração são usados para descrever as curvas usadas por pa
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -96,7 +96,7 @@ Os valores nessa enumeração são usados para descrever as curvas usadas por pa
 
 <dl> <dt>
 
-[Enumerações do Direct3D](dx9-graphics-reference-d3d-enums.md)
+[Enumerações direct3D](dx9-graphics-reference-d3d-enums.md)
 </dt> <dt>
 
 [**D3DCAPS9**](/windows/desktop/api/D3D9Caps/ns-d3d9caps-d3dcaps9)

@@ -6,12 +6,12 @@ keywords:
 - objetos da área de trabalho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 44ca0b390ec4d34cc943c9d18d958cdea6466634
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5b763c05c3d45c701da0bdd606fa906dec3f8af07ce72d256b402e7df5d9319b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105793349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587346"
 ---
 # <a name="desktops"></a>Desktops
 
@@ -33,12 +33,12 @@ A área de trabalho do Winlogon está ativa enquanto um usuário faz logon. O si
 
 O descritor de segurança da área de trabalho do Winlogon permite o acesso a um conjunto muito restrito de contas, incluindo a [conta LocalSystem](/windows/desktop/Services/localsystem-account). Os aplicativos geralmente não carregam nenhum dos SIDs de uma das contas em seus tokens e, portanto, não podem acessar a área de trabalho do Winlogon ou alternar para uma área de trabalho diferente enquanto a área de trabalho do Winlogon está ativa.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
 -   [Estação de janela e criação de área de trabalho](window-station-and-desktop-creation.md)
 -   [Conexão de thread com uma área de trabalho](thread-connection-to-a-desktop.md)
 -   [Segurança de desktop e direitos de acesso](desktop-security-and-access-rights.md)
 
- 
+ 
 
- 
+ 

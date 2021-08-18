@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b529ed1819864e5fc6106472b33ddd00312560c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5f8593a890097bbfaf6d9c9876bb56d92794ce204f38f349c72beb73b8d28403
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119621026"
 ---
 # <a name="imsrdpclientshell-interface"></a>Interface IMsRdpClientShell
 
@@ -43,7 +43,7 @@ A interface **IMsRdpClientShell** tem esses métodos.
 | Método                                                     | Descrição                                                  |
 |:-----------------------------------------------------------|:-------------------------------------------------------------|
 | [**GetRdpProperty**](/previous-versions/windows/desktop/legacy/aa381303(v=vs.85)) | Recupera uma única propriedade RDP.<br/>                  |
-| [**Inicializar**](imsrdpclientshell-launch.md)                 | Inicia o conteúdo do arquivo remoto no portal da Web.<br/> |
+| [**Iniciar**](imsrdpclientshell-launch.md)                 | Inicia o conteúdo do arquivo remoto no portal da Web.<br/> |
 | [**SetRdpProperty**](/previous-versions/windows/desktop/legacy/aa381312(v=vs.85)) | Define uma única propriedade RDP.<br/>                       |
 
 

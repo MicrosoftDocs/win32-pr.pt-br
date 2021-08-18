@@ -1,7 +1,7 @@
 ---
-description: Função D3DXQuaternionSlerp (D3DX10Math. h) – interpola entre dois quaternions, usando interpolação linear esférica.
+description: Função D3DXQuaternionSlerp (D3DX10Math.h) – interpola entre dois quatérnions, usando interpolação linear esférica.
 ms.assetid: 487e1df1-bf20-49cb-ad14-61fcf1300904
-title: Função D3DXQuaternionSlerp (D3DX10Math. h)
+title: Função D3DXQuaternionSlerp (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118990966"
 ---
-# <a name="d3dxquaternionslerp-function-d3dx10mathh"></a>Função D3DXQuaternionSlerp (D3DX10Math. h)
+# <a name="d3dxquaternionslerp-function-d3dx10mathh"></a>Função D3DXQuaternionSlerp (D3DX10Math.h)
 
 Interpola entre dois quatérnios usando interpolação linear esférica.
 
@@ -43,39 +43,39 @@ D3DXQUATERNION* D3DXQuaternionSlerp(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXQUATERNION**](../direct3d9/d3dxquaternion.md)\***
 
-Ponteiro para o [**D3DXQUATERNION**](d3d10-d3dxquaternion.md) que é o resultado da operação.
+Ponteiro para [**o D3DXQUATERNION**](d3d10-d3dxquaternion.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*pQ1* \[ no\]
+*pQ1* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Ponteiro para uma estrutura de D3DXQUATERNION de origem.
+Ponteiro para uma estrutura D3DXQUATERNION de origem.
 
 </dd> <dt>
 
-*pQ2* \[ no\]
+*pQ2* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXQUATERNION**](../direct3d9/d3dxquaternion.md) \***
 
-Ponteiro para uma estrutura de D3DXQUATERNION de origem.
+Ponteiro para uma estrutura D3DXQUATERNION de origem.
 
 </dd> <dt>
 
 *t* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-Parâmetro que indica a interpolarização entre os quaternions.
+Parâmetro que indica até que ponto interpolar entre os quaterões.
 
 </dd> </dl>
 
@@ -87,9 +87,9 @@ Ponteiro para uma estrutura D3DXQUATERNION que é o resultado da interpolação.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXQuaternionSlerp pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXQuaternionSlerp pode ser usada como um parâmetro para outra função.
 
-Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para qualquer entrada de Quaternion que ainda não esteja normalizada.
+Use [**D3DXQuaternionNormalize para**](d3d10-d3dxquaternionnormalize.md) qualquer entrada de quatérnion que ainda não tenha sido normalizada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,8 +97,8 @@ Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para qualque
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

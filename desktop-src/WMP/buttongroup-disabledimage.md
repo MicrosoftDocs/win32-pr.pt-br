@@ -3,7 +3,7 @@ title: BUTTON. disabledImage
 description: O atributo disabledImage especifica ou recupera o nome da imagem que representa o estado desabilitado dos botões no botão.
 ms.assetid: 34d4e6a9-de73-4dfa-9c23-4f17b55298f6
 keywords:
-- DisabledImage Windows Media Player.
+- Windows Media Player de BUTTON. disabledImage
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9659c4d726313c0fb202a840e12891f00ad3fcf0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7eeef37bbc25185a64e767f00f9ce17934e8b445327606b552ad69d282e42e4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119764346"
 ---
 # <a name="buttongroupdisabledimage"></a>BUTTON. disabledImage
 

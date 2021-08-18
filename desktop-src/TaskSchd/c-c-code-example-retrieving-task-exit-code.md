@@ -1,22 +1,22 @@
 ---
-title: Exemplo de código do C/C++ recuperando código de saída da tarefa
-description: Este exemplo recupera o último código de saída retornado por uma tarefa conhecida. (Um valor retornado de \ 0034; 0 \ 0034; indica que a tarefa nunca foi executada.) Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+title: Exemplo de código C/C++ Recuperando o código de saída da tarefa
+description: Este exemplo recupera o último código de saída retornado por uma tarefa conhecida. (Um valor retornado de \ 0034;0 \ 0034; indica que a tarefa nunca foi executado.) Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 ms.assetid: e7bfe645-7f4c-4700-9adf-c581e6895aec
 keywords:
-- Recuperando o comentário da tarefa Agendador de Tarefas
-- Recuperando propriedades do item de trabalho Agendador de Tarefas, comentário da tarefa
+- recuperando o comentário da tarefa Agendador de Tarefas
+- recuperando propriedades de item de trabalho Agendador de Tarefas , comentário da tarefa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5911cad3831dc8da04e44f161a644bda9742bd33
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0908ae8fc15e3ae34c06f02267e9bad396956181fa058c0bf757b8f8486783d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119738846"
 ---
-# <a name="cc-code-example-retrieving-task-exit-code"></a>Exemplo de código do C/C++: Recuperando o código de saída da tarefa
+# <a name="cc-code-example-retrieving-task-exit-code"></a>Exemplo de código C/C++: Recuperando o código de saída da tarefa
 
-Este exemplo recupera o último código de saída retornado por uma tarefa conhecida. (Um valor retornado de "0" indica que a tarefa nunca foi executada.) Este exemplo supõe que a tarefa e a tarefa de teste já existam no computador local.
+Este exemplo recupera o último código de saída retornado por uma tarefa conhecida. (Um valor retornado de "0" indica que a tarefa nunca foi executado.) Este exemplo presume que a tarefa e a tarefa de teste já existem no computador local.
 
 
 ```C++
@@ -113,12 +113,12 @@ int main(int argc, char **argv)
 
 <dl> <dt>
 
-[Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
+[Agendador de Tarefas exemplos 1.0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
