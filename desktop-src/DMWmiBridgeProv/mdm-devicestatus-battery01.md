@@ -26,7 +26,7 @@ ms.locfileid: "119216396"
 ---
 # <a name="mdm_devicestatus_battery01-class"></a>\_ \_ Classe BATTERY01 do MDM DeviceStatus
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, quanto às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 A classe **MDM \_ DeviceStatus \_ Battery01** é usada pela empresa para consultar o estado de conformidade da bateria de dispositivos com suas políticas corporativas.
 

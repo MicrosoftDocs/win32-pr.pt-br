@@ -1,35 +1,35 @@
 ---
-description: O exemplo a seguir implementa o procedimento descrito em procedimento para assinar dados.
+description: O exemplo a seguir implementa o procedimento descrito em Procedimento para assinatura de dados.
 ms.assetid: beaf3d67-de2b-4b30-812f-1659386a1bfc
-title: 'Programa de exemplo C: assinando uma mensagem e verificando uma assinatura de mensagem'
+title: 'Exemplo de programa C: assinando uma mensagem e verificando uma assinatura de mensagem'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9022b165f586fb293b4de12ec7a8e9f00680b691
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 363b5accb301bc4a3bf46d5f9e6d1fa00fe4f2e52b2e130a543f38ce271b254e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007453"
 ---
-# <a name="example-c-program-signing-a-message-and-verifying-a-message-signature"></a>Programa de exemplo C: assinando uma mensagem e verificando uma assinatura de mensagem
+# <a name="example-c-program-signing-a-message-and-verifying-a-message-signature"></a>Exemplo de programa C: assinando uma mensagem e verificando uma assinatura de mensagem
 
-O exemplo a seguir implementa o procedimento descrito em [procedimento para assinar dados](procedure-for-signing-data.md). Para obter informações gerais, consulte [mensagens simplificadas](simplified-messages.md). Os detalhes sobre as funções e estruturas podem ser encontrados em [funções de criptografia base](cryptography-functions.md), [funções de mensagens simplificadas](cryptography-functions.md)e [estruturas CryptoAPI](cryptography-structures.md).
+O exemplo a seguir implementa o procedimento descrito em [Procedimento para assinatura de dados](procedure-for-signing-data.md). Para obter informações gerais, consulte [Mensagens simplificadas.](simplified-messages.md) Detalhes sobre as funções e estruturas podem ser [encontrados](cryptography-functions.md)em Funções de Criptografia Base, Funções de Mensagem Simplificadas [e](cryptography-functions.md)Estruturas [CryptoAPI](cryptography-structures.md).
 
-Este exemplo também inclui código para verificar a assinatura da mensagem criada. Esse código normalmente estaria em um programa separado, mas está incluído aqui para fins de integridade e clareza.
+Este exemplo também inclui código para verificar a assinatura de mensagem criada. Esse código normalmente estaria em um programa separado, mas é incluído aqui para maior clareza e clareza.
 
-Este exemplo ilustra as seguintes funções de CryptoAPI:
+Este exemplo ilustra as seguintes funções CryptoAPI:
 
--   [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore)
+-   [**Certopenstore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore)
 -   [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage)
 -   [**CryptVerifyMessageSignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptverifymessagesignature)
--   [**CertFreeCertificateContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatecontext)
--   [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
+-   [**Certfreecertificatecontext**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfreecertificatecontext)
+-   [**Certclosestore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore)
 
-A assinatura da mensagem só pode ser feita com acesso a um certificado que tenha uma [*chave privada*](../secgloss/p-gly.md)disponível. A verificação da mensagem só pode ser feita com acesso à chave pública relacionada à chave privada usada para assinar o certificado. O usuário pode alterar a instrução **\# define** para o nome da entidade de um dos certificados pessoais do usuário.
+A assinatura da mensagem só pode ser feita com acesso a um certificado que tenha uma [*chave privada disponível.*](../secgloss/p-gly.md) A verificação da mensagem só pode ser feita com acesso à chave pública relacionada à chave privada usada para assinar o certificado. O usuário pode alterar **\# a instrução define** para o nome da assunto de um dos certificados pessoais do usuário.
 
-Este exemplo também demonstra a inicialização das estruturas de mensagem de sinal cript e de verificação cript. de mensagens de entrada criptografadas \_ \_ \_ \_ \_ \_ necessárias para chamadas para [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage) e [**CryptVerifyMessageSignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptverifymessagesignature).
+Este exemplo também demonstra a inicialização das estruturas CRYPT SIGN MESSAGE PARA e CRYPT VERIFY MESSAGE PARA necessárias para chamadas para \_ \_ \_ \_ \_ \_ [**CryptSignMessage**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptsignmessage) e [**CryptVerifyMessageSignature**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptverifymessagesignature).
 
-Este exemplo também usa a função [**MyHandleError**](myhandleerror.md). O código para essa função está incluído no programa de exemplo e também pode ser visto em [funções uso geral](general-purpose-functions.md).
+Este exemplo também usa a [**função MyHandleError**](myhandleerror.md). O código para essa função está incluído no programa de exemplo e também pode ser visto [no Uso Geral Functions](general-purpose-functions.md).
 
 
 ```C++

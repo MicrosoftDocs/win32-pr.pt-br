@@ -1,9 +1,9 @@
 ---
-title: D3DX11_SAVE_TEXTURE_FLAG enumeração (D3DX11tex.h)
-description: Observação A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store. Opções de economia de textura.
+title: Enumeração de D3DX11_SAVE_TEXTURE_FLAG (D3DX11tex. h)
+description: observe que a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows. Opções de salvamento de textura.
 ms.assetid: 9fee11c3-628f-4535-8e93-510fc77e1a3e
 keywords:
-- D3DX11_SAVE_TEXTURE_FLAG enumeração Direct3D 11
+- Enumeração D3DX11_SAVE_TEXTURE_FLAG Direct3D 11
 topic_type:
 - apiref
 api_name:
@@ -21,14 +21,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118989906"
 ---
-# <a name="d3dx11_save_texture_flag-enumeration"></a>Enumeração D3DX11 \_ \_ SALVAR SINALIZADOR DE \_ TEXTURA
+# <a name="d3dx11_save_texture_flag-enumeration"></a>D3DX11 \_ Salvar \_ enumeração de sinalizador de textura \_
 
 > [!Note]  
-> A biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida para Windows 8 e não tem suporte para aplicativos da Windows Store.
+> a biblioteca de utilitários D3DX (D3DX 9, D3DX 10 e D3DX 11) foi preterida por Windows 8 e não tem suporte para aplicativos da loja Windows.
 
  
 
-Opções de economia de textura.
+Opções de salvamento de textura.
 
 ## <a name="syntax"></a>Syntax
 
@@ -45,10 +45,10 @@ typedef enum D3DX11_SAVE_TEXTURE_FLAG {
 
 <dl> <dt>
 
-<span id="D3DX11_STF_USEINPUTBLOB"></span><span id="d3dx11_stf_useinputblob"></span>**D3DX11 \_ STF \_ USEINPUTBLOB**
+<span id="D3DX11_STF_USEINPUTBLOB"></span><span id="d3dx11_stf_useinputblob"></span>**\_USEINPUTBLOB D3DX11 STF \_**
 </dt> <dd>
 
-Não otimize.
+Não otimizar.
 
 </dd> </dl>
 
@@ -58,7 +58,7 @@ Não otimize.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX11tex.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX11tex. h</dt> </dl> |
 
 
 

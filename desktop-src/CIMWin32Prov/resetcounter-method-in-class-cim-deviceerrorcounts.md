@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 386547362f5a7aa52bddfbf9df3af01949aecbdd
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b36a525be507945113120fc2bdb0084b0a6b1a076101b5e4ab69445146479d1e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119588256"
 ---
 # <a name="resetcounter-method-of-the-cim_deviceerrorcounts-class"></a>Método ResetCounter da \_ classe DEVICEERRORCOUNTS CIM
 
@@ -96,7 +96,7 @@ Contador de erros a ser redefinido.
 
 </dt> <dd></dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará 0 (zero) se for bem-sucedido, 1 (um) se não houver suporte e qualquer outro valor se ocorrer um erro.
 

@@ -4,12 +4,12 @@ ms.assetid: e1ea1e99-a2bc-4e76-91f6-e388c39dfbbb
 title: Divisão de responsabilidades de transporte entre DLL e provedores de serviços
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 142ac98c95e95c310c2eefb7bfdaf1f70a03bf28
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 33c256cb03bcc9e3f8746db5196c21fc2de0a8b157304a205587b275acc0bbb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119733216"
 ---
 # <a name="transport-division-of-responsibilities-between-dll-and-service-providers"></a>Divisão de responsabilidades de transporte entre DLL e provedores de serviços
 
@@ -36,7 +36,7 @@ Além de seu principal serviço de roteamento de tráfego, o ws2 \_32.dll fornec
 
 Os provedores de serviço implementam o protocolo de transporte real que inclui funções como configurar conexões, transferir dados, exercer controle de fluxo e controle de erro, etc. O \_32.dll Ws2 não tem conhecimento sobre como as solicitações para provedores de serviço são realizadas; essa é a implementação do provedor de serviços. A implementação dessas funções pode diferir muito de um provedor para outro. Os provedores de serviço ocultam os detalhes específicos da implementação de como as operações de rede são realizadas.
 
-Os provedores de serviço de transporte podem ser amplamente divididos em duas categorias: aqueles cujos descritores de soquete são identificadores de sistema de arquivos reais (e estão daqui em diante como provedores de IFS (sistema de arquivos instaláveis); o restante é conhecido como provedores não IFS. O ws2 \_32.dll sempre passa o descritor de soquete do provedor do serviço de transporte até o aplicativo do Windows Sockets, para que os aplicativos sejam livres para aproveitar os descritores de soquete que são identificadores do sistema de arquivos, se escolherem.
+Os provedores de serviço de transporte podem ser amplamente divididos em duas categorias: aqueles cujos descritores de soquete são identificadores de sistema de arquivos reais (e estão daqui em diante como provedores de IFS (sistema de arquivos instaláveis); o restante é conhecido como provedores não IFS. o Ws2 \_32.dll sempre passa o descritor de soquete do provedor de serviço de transporte até o aplicativo Windows sockets, para que os aplicativos sejam livres para aproveitar os descritores de soquete que são identificadores do sistema de arquivos, se escolherem.
 
 Para resumir: os provedores de serviço implementam os protocolos específicos de rede de nível baixo. O \_32.dll Ws2 fornece o gerenciamento de tráfego de nível médio que interconecta esses protocolos de transporte com aplicativos. Os aplicativos, por sua vez, fornecem a política de como esses fluxos de tráfego e operações específicas de rede são usados para realizar as funções desejadas pelo usuário.
 

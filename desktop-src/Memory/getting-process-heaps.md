@@ -1,25 +1,25 @@
 ---
-description: Este exemplo ilustra o uso da função GetProcessHeaps para recuperar identificadores para o heap de processo padrão e quaisquer heaps privados que estejam ativos para o processo atual.
+description: Este exemplo ilustra o uso da função GetProcessHeaps para recuperar os alças para o heap de processo padrão e quaisquer heaps privados que estão ativos para o processo atual.
 ms.assetid: 00f69593-f03b-4f30-aeec-db3fda0ac356
-title: Obtendo heaps de processo
+title: Obter heaps de processo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: caffc8dcc69b02ab671b379dbb5e133e65f8d448
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52b055bd558d12506d5a900c369365cb497e3817dbfa1fd53dd6506f6a919eab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067836"
 ---
-# <a name="getting-process-heaps"></a>Obtendo heaps de processo
+# <a name="getting-process-heaps"></a>Obter heaps de processo
 
-Este exemplo ilustra o uso da função [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) para recuperar identificadores para o heap de processo padrão e quaisquer heaps privados que estejam ativos para o processo atual.
+Este exemplo ilustra o uso da função [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) para recuperar os alças para o heap de processo padrão e quaisquer heaps privados que estão ativos para o processo atual.
 
-O exemplo chama [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) duas vezes, primeiro para calcular o tamanho do buffer necessário e novamente para recuperar identificadores no buffer. O buffer é alocado a partir do heap de processo padrão, usando o identificador retornado por [**GetProcessHeap**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheap). O exemplo imprime o endereço inicial de cada heap para o console. Em seguida, ele usa a função [**HeapFree**](/windows/desktop/api/HeapApi/nf-heapapi-heapfree) para liberar memória alocada para o buffer.
+O exemplo chama [**GetProcessHeaps**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheaps) duas vezes, primeiro para calcular o tamanho do buffer necessário e novamente para recuperar os alças no buffer. O buffer é alocado do heap de processo padrão, usando o handle retornado por [**GetProcessHeap.**](/windows/desktop/api/HeapApi/nf-heapapi-getprocessheap) O exemplo imprime o endereço inicial de cada heap no console. Em seguida, ele usa [**a função HeapFree**](/windows/desktop/api/HeapApi/nf-heapapi-heapfree) para liberar memória alocada para o buffer.
 
-O número de heaps em um processo pode variar. Um processo sempre tem pelo menos um heap — o heap de processo padrão — e ele pode ter um ou mais heaps privados criados pelo aplicativo ou DLLs que são carregados no espaço de endereço do processo.
+O número de heaps em um processo pode variar. Um processo sempre tem pelo menos um heap , o heap de processo padrão, e pode ter um ou mais heaps privados criados pelo aplicativo ou por DLLs carregadas no espaço de endereço do processo.
 
-Observe que um aplicativo deve chamar funções de heap somente em seu heap de processo padrão ou em heaps particulares que o aplicativo criou; chamar funções de heap em um heap privado de propriedade de outro componente pode causar um comportamento indefinido.
+Observe que um aplicativo deve chamar funções de heap somente em seu heap de processo padrão ou em heaps privados que o aplicativo criou; chamar funções de heap em um heap privado pertencente a outro componente pode causar um comportamento indefinido.
 
 
 ```C++

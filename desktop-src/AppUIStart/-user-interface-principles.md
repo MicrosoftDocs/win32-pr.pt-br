@@ -1,19 +1,19 @@
 ---
 title: Princípios da interface do usuário
-description: Este tópico discute como implementar uma interface de usuário intuitiva e princípios de design de experiência do usuário em aplicativos do Windows.
+description: este tópico discute como implementar uma interface de usuário intuitiva e princípios de design de experiência do usuário em um Windows aplicativos.
 ms.assetid: 603bc184-3eec-4281-8caa-993834da3131
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 98383f9379248570ef8b254c647ab8348d703696
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b57781ab2cb0a2d9574288000f65805c981afa391d49263bd21e23eeed432416
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021410"
 ---
 # <a name="user-interface-principles"></a>Princípios da interface do usuário
 
-Este tópico discute como implementar uma interface de usuário intuitiva e princípios de design de experiência do usuário em aplicativos do Windows.
+este tópico discute como implementar uma interface de usuário intuitiva e princípios de design de experiência do usuário em um Windows aplicativos.
 
 -   [Introdução](#introduction)
 -   [Os princípios básicos da interface do usuário apropriada](#the-basic-principles-of-proper-ui)
@@ -21,7 +21,7 @@ Este tópico discute como implementar uma interface de usuário intuitiva e prin
     -   [Tamanho](#size)
     -   [Agrupamento](#grouping)
     -   [Intuição](#intuitiveness)
--   [20 dicas para uma experiência de usuário melhor e funcional](#20-tips-for-a-better-functional-user-experience)
+-   [20 Dicas para uma experiência de usuário melhor e funcional](#20-tips-for-a-better-functional-user-experience)
     -   [Usar padrões](#use-standards)
     -   [Chame a atenção para botões importantes](#draw-attention-to-important-buttons)
     -   [Simplifique o reconhecimento com ícones](#simplify-recognition-with-icons)
@@ -50,13 +50,13 @@ Os desenvolvedores geralmente não levam a perspectiva do usuário final em cont
 
 Um aplicativo de software deve ser fácil de navegar e usar possível. Com a quantidade de software que está sendo criada, um total de 4 aplicativos de software tem uma interface do usuário realmente ótima, que ele realmente gosta e é imediatamente confortável usando.
 
-Uma grande quantidade de software de uso interno é criada para as corporações. Se ele é desenvolvido internamente ou sob o cuidado de um consultor, geralmente um mínimo de tempo, esforço ou dinheiro, é investido na criação de uma interface do usuário melhor. A função ' designer ' é rara no ciclo de desenvolvimento, especialmente no mundo dos aplicativos do Windows.
+Uma grande quantidade de software de uso interno é criada para as corporações. Se ele é desenvolvido internamente ou sob o cuidado de um consultor, geralmente um mínimo de tempo, esforço ou dinheiro, é investido na criação de uma interface do usuário melhor. a função ' designer ' é rara no ciclo de desenvolvimento, especialmente no mundo dos aplicativos Windows.
 
 Há algumas regras básicas a serem seguidas para ter uma interface do usuário de funcionamento muito mais atraente para seu aplicativo. Ele não exige muito investimento de tempo ou dinheiro de sua parte e acrescenta um bom retorno sobre o investimento.
 
 Antes de continuarmos, vamos nos diferenciar entre a interface do usuário e a experiência do usuário — pelo menos no escopo deste artigo. Interface do usuário, ou UI, refere-se aos elementos visuais e controles do seu aplicativo, enquanto a experiência do usuário, ou UX, abrange tanto a interface do usuário quanto o comportamento do aplicativo relacionado à interface do usuário, bem como a "sensação" que ele obtém de seu aplicativo. Não se trata apenas de criar uma interface do usuário excelente, mas garantir que ela funcione muito bem.
 
-Aqui, discutiremos 20 pontos de design de UX que você pode integrar facilmente à sua fase de design de aplicativos. O resultado será um aplicativo mais rico com funcionalidade intuitiva, uma "experiência humana". Como todos nós sabemos que a geração de aplicativos para o Windows Vista precisará se parecer diferente. Este tópico ajudará você a se preparar para aplicativos futuros enquanto dá a seus usuários atuais um gosto do futuro.
+Aqui, discutiremos 20 pontos de design de UX que você pode integrar facilmente à sua fase de design de aplicativos. O resultado será um aplicativo mais rico com funcionalidade intuitiva, uma "experiência humana". como todos sabemos, a geração de aplicativos Windows Vista precisará se parecer diferente. Este tópico ajudará você a se preparar para aplicativos futuros enquanto dá a seus usuários atuais um gosto do futuro.
 
 As seções a seguir discutem os conceitos básicos do design adequado da interface do usuário.
 
@@ -69,7 +69,7 @@ Um UX de aparência profissional depende desses quatro fatores:
 -   Agrupamento
 -   Intuição
 
-Com versões do Microsoft Visual Studio anteriores a 8,0, o espaçamento e o dimensionamento eram abaixo do ideal. Uma grade 4x4 ou 8x8 nem sempre funciona. Com a inclusão de SnapLines, o processo foi bastante simplificado. Alinhar um rótulo com uma caixa de texto, ou ainda pior, alinhar vários rótulos com suas caixas de texto correspondentes era extremamente difícil em versões anteriores do Visual Studio. As SnapLines simplificaram muito esse processo.
+com versões do Microsoft Visual Studio anteriores a 8,0, o espaçamento e o dimensionamento eram abaixo do ideal. Uma grade 4x4 ou 8x8 nem sempre funciona. Com a inclusão de SnapLines, o processo foi bastante simplificado. Alinhar um rótulo com uma caixa de texto, ou ainda pior, alinhar vários rótulos com suas caixas de texto correspondentes era extremamente difícil em versões anteriores do Visual Studio. As SnapLines simplificaram muito esse processo.
 
 As seções a seguir descrevem quatro dos aspectos mais importantes do design Professional UX.
 
@@ -89,9 +89,9 @@ Embora não haja regras exatas para espaçamento, as SnapLines fornecem diretriz
 
 As mesmas considerações se aplicam ao tamanho. Quando você arrasta um botão da caixa de ferramentas para o formulário, ele tem a altura e a largura perfeita. A largura máxima recomendada (o bloqueio de qualquer motivo seriamente importante) é dobrar a largura original.
 
-Se você olhar a janela **executar** no menu **Iniciar** ou a caixa de diálogo **Propriedades** de qualquer objeto do Windows Explorer, os tamanhos dos botões serão "apenas à direita". Se você tiver uma função muito importante que você precisa que seu usuário final perceba sem falhar, há outros métodos do que usar um botão grande ou extravagante cores não padrão (mais sobre isso posteriormente).
+se você olhar a janela **executar** no menu **iniciar** ou a caixa de diálogo **propriedades** de qualquer objeto Windows Explorer, os tamanhos dos botões serão ' apenas à direita '. Se você tiver uma função muito importante que você precisa que seu usuário final perceba sem falhar, há outros métodos do que usar um botão grande ou extravagante cores não padrão (mais sobre isso posteriormente).
 
-Na imagem a seguir, você pode ver três botões. O primeiro botão é o tamanho mais recomendado e é o tamanho criado por padrão quando arrastado (ou clicado duas vezes) na caixa de ferramentas. Às vezes, o texto extra exige que você torne o botão maior. O segundo botão mostra um tamanho grande, porém aceitável. Ele não criaria uma bagunça para dispor outros controles. O terceiro botão, no entanto, é um tamanho completamente inaceitável. Você pode ver que ele, até mesmo, distorcer ligeiramente os bitmaps de tema que o Windows usa para desenhar controles com tema. Também será difícil alinhar outros controles intuitivamente.
+Na imagem a seguir, você pode ver três botões. O primeiro botão é o tamanho mais recomendado e é o tamanho criado por padrão quando arrastado (ou clicado duas vezes) na caixa de ferramentas. Às vezes, o texto extra exige que você torne o botão maior. O segundo botão mostra um tamanho grande, porém aceitável. Ele não criaria uma bagunça para dispor outros controles. O terceiro botão, no entanto, é um tamanho completamente inaceitável. você pode ver que ele até ligeiramente distorce os bitmaps de tema Windows usa para desenhar controles com tema. Também será difícil alinhar outros controles intuitivamente.
 
 ![imagem de três botões, aumentando de tamanho da esquerda para a direita.](images/humanux-03.png)
 
@@ -105,13 +105,13 @@ Controles de grupo dentro de controles de grupo não são recomendados, a menos 
 
 Esse é o aspecto mais importante de uma excelente experiência do usuário. O UX intuitivo diminui a necessidade de explicações. O usuário só sabe o que os controles fazem.
 
-Um tópico importante em design intuitivo é a codificação por cores. Um bom exemplo é apresentado no Windows XP, que apresentou novos botões de soft-quadrado para funções como navegação em aplicativos com tema, **logoff e desligamento de caixas** de diálogo de **computador** e outros.
+Um tópico importante em design intuitivo é a codificação por cores. um bom exemplo é apresentado no Windows XP, que apresentou novos botões de soft-quadrado para funções como navegação em aplicativos com tema, **logoff e desligamento de caixas** de diálogo de **computador** e outros.
 
 A cor desses controles foi determinada com base na severidade do resultado que esse botão está sendo enviado por push. A navegação é verde, assim como uma luz de tráfego "Go". O desligamento, que resultaria em uma possível perda de trabalho, é vermelho colorido, como um sinal de aviso. Botões semicríticos, como logoff ou hibernação, são amarelos. Botões neutros que não têm nenhum efeito crítico sobre os processos de trabalho do usuário, como a ajuda, são um azul suave. Ao criar uma interface do usuário com revestimento, esses aspectos de cor devem ser mantidos em mente.
 
-Um exemplo muito bom de reconhecimento de conteúdo por cores é Microsoft Office o OneNote. As guias do aplicativo podem ser definidas para cores diferentes e, ao mesmo tempo, se parecem com uma parte adequada do design geral do estilo do Windows XP.
+um exemplo muito bom de reconhecimento de conteúdo por cores é Microsoft Office OneNote. as guias do aplicativo podem ser definidas para cores diferentes e, ao mesmo tempo, se parecem com uma parte adequada do design geral do estilo Windows XP.
 
-Outro aspecto importante é o texto em seus aplicativos. Recentemente, houve vários esforços para simplificar a linguagem usada para as instruções escritas no software Windows. O uso do texto dentro do software será discutido posteriormente, mas observe os detalhes pequenos, mas importantes, a seguir.
+Outro aspecto importante é o texto em seus aplicativos. recentemente, houve vários esforços para simplificar a linguagem usada para as instruções escritas em Windows software. O uso do texto dentro do software será discutido posteriormente, mas observe os detalhes pequenos, mas importantes, a seguir.
 
 O MSN Messenger tinha uma caixa de seleção em seu diálogo de **Opções** marcada como "compartilhar recursos de webcam". Os desenvolvedores e as pessoas com tecnologia amigável sabem o que isso significa, mas um usuário novato pode, possivelmente, imaginar que você poderia deixar outro usuário na outra extremidade do seu chat usar sua Web Cam também. Em uma versão recente, elas foram alteradas para "minha webcam: permitir que outras pessoas vejam que eu tenho uma webcam". Isso é perfeito para o público-alvo que pode não ter conhecimento técnico e é usado para linguagem simples.
 
@@ -119,15 +119,15 @@ Embora a linguagem mais simples facilite a compreensão, também há uma vantage
 
 Títulos de caixa de mensagem, legendas de GroupBox e outros blocos de texto, facilitam a transmissão da função de um grupo de controles para o usuário final com apenas algumas palavras.
 
-A intuição também nasceu da familiaridade. Por exemplo, o posicionamento dos botões **OK** e **Cancelar** é tão uniforme e bem colocado em nossas mentes que, se uma caixa de diálogo mantiver esses botões em uma sequência inversa (**Cancelar**, **OK**; em vez de **OK**, em seguida, **Cancelar**) — você pode clicar em **Cancelar** . Depois de usar um padrão específico para fazer coisas — aplicativos baseados no Windows, por exemplo — por mais de um ano, os hábitos desenvolvem. Os padrões do setor a seguir (porém informados podem ser) tornam o software mais fácil de usar.
+A intuição também nasceu da familiaridade. Por exemplo, o posicionamento dos botões **OK** e **Cancelar** é tão uniforme e bem colocado em nossas mentes que, se uma caixa de diálogo mantiver esses botões em uma sequência inversa (**Cancelar**, **OK**; em vez de **OK**, em seguida, **Cancelar**) — você pode clicar em **Cancelar** . depois de usar um padrão específico para fazer coisas — aplicativos baseados em Windows, por exemplo — por mais de um ano, os hábitos desenvolvem. Os padrões do setor a seguir (porém informados podem ser) tornam o software mais fácil de usar.
 
-Em um dos primeiros Builds de visualização do Windows Vista, os botões **minimizar**, **maximizar** e **Fechar** de qualquer janela se tornaram diferentes. Nas versões anteriores do Windows (especialmente ao usar um único monitor), você desenvolve um hábito de mover o cursor no canto superior direito da tela e clicar em. Isso sempre resultou no fechamento da janela. Agora, neste Build específico do Windows Vista, havia aproximadamente 8 pixels de espaço entre o botão fechar e a borda à direita da janela. O espaço extra fazia com que pareça legal (e, provavelmente, era necessário para a animação de brilho frio do botão), mas foi irritante porque não permitia que os usuários fechassem o Windows aberto com facilidade. A recondicionação de sua ideia pode ser difícil. Felizmente, na compilação a seguir, esse problema foi resolvido. Agora, ainda há espaço entre a borda da janela e o botão fechar, mas clicar nesse espaço também faz com que a janela seja fechada.
+em uma das versões prévias de visualização do Windows Vista, os botões **minimizar**, **maximizar** e **fechar** de qualquer janela se tornaram diferentes. nas versões anteriores do Windows (especialmente ao usar um único monitor), você desenvolve um hábito de mover o cursor no canto superior direito da tela e clicar em. Isso sempre resultou no fechamento da janela. agora, neste build específico do Windows Vista, havia aproximadamente 8 pixels de espaço entre o botão fechar e a borda à direita da janela. O espaço extra fazia com que pareça legal (e, provavelmente, era necessário para a animação de brilho frio do botão), mas foi irritante porque não permitia que os usuários fechassem o Windows aberto com facilidade. A recondicionação de sua ideia pode ser difícil. Felizmente, na compilação a seguir, esse problema foi resolvido. Agora, ainda há espaço entre a borda da janela e o botão fechar, mas clicar nesse espaço também faz com que a janela seja fechada.
 
 Um fator muito importante do design intuitivo é a quantidade de "mental bandwidth' – a quantidade de tempo que pode levar em consideração a compreensão de algo — ele usa. Quanto menor for o uso da ' largura de banda ', melhor a experiência do usuário.
 
 Essas são pequenas coisas que contribuem para a "experiência" de usar um aplicativo de software. Os exemplos a seguir fornecem dicas sobre como aprimorar seus aplicativos com dicas e truques do mundo real.
 
-## <a name="20-tips-for-a-better-functional-user-experience"></a>20 dicas para uma experiência de usuário melhor e funcional
+## <a name="20-tips-for-a-better-functional-user-experience"></a>20 Dicas para uma experiência de usuário melhor e funcional
 
 A meta de uma experiência de usuário melhor é ter uma interface de usuário mais simples, mais fácil e funcional que também parece boa. Essas dicas ajudarão você a formatar sua interface do usuário para que ela seja mais eficiente.
 
@@ -135,11 +135,11 @@ A meta de uma experiência de usuário melhor é ter uma interface de usuário m
 
 Os padrões estabelecidos de qualquer ambiente de software — seja no nível do sistema operacional, no nível da marca ou no nível do aplicativo — são muito importantes. Além da identidade visual, os padrões atuam como um esquema provérbio na mente do usuário. Quando o usuário passa longos períodos de tempo trabalhando com um aplicativo de software, ele aumentará a produtividade automaticamente devido à familiaridade crescente.
 
-Antes de discutir os padrões, vamos discutir primeiro o que são exatamente esses padrões. Os padrões incluem tudo, desde o layout dos controles de uma maneira específica nas caixas de diálogo, como os botões **OK** e **Cancelar** , a forma da interface do usuário – cantos arredondados da parte superior da janela, como em caixas de diálogo do Windows XP, estilos de ícones, estilos de qualquer outro elemento gráfico, comportamento interativo do seu aplicativo e assim por diante.
+Antes de discutir os padrões, vamos discutir primeiro o que são exatamente esses padrões. os padrões incluem tudo, desde o layout dos controles de uma maneira específica nas caixas de diálogo, como os botões **OK** e **cancelar** , a forma da interface do usuário – cantos arredondados da parte superior da janela, como em caixas de diálogo Windows XP, estilos de ícones, estilos de qualquer outro gráfico, comportamento interativo do seu aplicativo e assim por diante.
 
-Se seu aplicativo se enquadrar em um nicho específico, pode ser melhor seguir um conjunto diferente de padrões. Por exemplo, se seu aplicativo der suporte, aplicativo ou um complemento para o, Office OneNote 2003, é prudente seguir os estilos de padrões de interface do usuário e interatividade do Office — e o próprio OneNote, em particular. Isso inclui o uso das barras de comando no estilo do Office em vez das barras de ferramentas padrão, além de outras coisas, visuais e comportamentais. Se seu aplicativo for fazer parte da categoria Microsoft Visual Studio .NET, você terá um conjunto separado de padrões. Na verdade, para esses aplicativos complementares ou de suporte, as empresas, como a Microsoft, lançam diretrizes escritas. Observe também que, às vezes, os conceitos gráficos e de design são propriedades intelectuais protegidas. Sempre verifique a documentação correta para ter certeza de que você tem a licença para criar esses designs.
+Se seu aplicativo se enquadrar em um nicho específico, pode ser melhor seguir um conjunto diferente de padrões. por exemplo, se seu aplicativo dá suporte a, aplicativo ou um complemento do, Office OneNote 2003, é prudente seguir os estilos de padrões de interface do usuário e interatividade de Office — e OneNote em particular. isso inclui o uso das barras de comando de estilo Office em vez das barras de ferramentas padrão, além de outras coisas, visuais e comportamentais. se seu aplicativo for fazer parte da categoria Microsoft Visual Studio .net, você terá um conjunto separado de padrões. Na verdade, para esses aplicativos complementares ou de suporte, as empresas, como a Microsoft, lançam diretrizes escritas. Observe também que, às vezes, os conceitos gráficos e de design são propriedades intelectuais protegidas. Sempre verifique a documentação correta para ter certeza de que você tem a licença para criar esses designs.
 
-Um terceiro exemplo de padrões seria o ambiente do Tablet PC. Esses padrões cruzam os limites entre as diretrizes do sistema operacional e as diretrizes do aplicativo. A [documentação do SDK do Tablet PC](/previous-versions/ms840465(v=msdn.10)) contém algumas informações muito úteis no tópico "planejando seu aplicativo". Ao contrário das diretrizes do Office 2003 ou do Visual Studio, essas recomendações de design afetam diretamente como o usuário irá interagir com seu aplicativo e como ele deve se comportar por vez. Por exemplo, se você estiver encaixando janelas em seu aplicativo, a documentação recomenda que você verifique se ela pode detectar quando a orientação da tela é alterada e se as janelas de encaixe se reorganizam corretamente em uma orientação retrato ou paisagem, conforme necessário. Mesmo que você não esteja projetando seu aplicativo para ser específico do Tablet, você deve seguir essas diretrizes.
+Um terceiro exemplo de padrões seria o ambiente do Tablet PC. Esses padrões cruzam os limites entre as diretrizes do sistema operacional e as diretrizes do aplicativo. A [documentação do SDK do Tablet PC](/previous-versions/ms840465(v=msdn.10)) contém algumas informações muito úteis no tópico "planejando seu aplicativo". ao contrário das diretrizes do office 2003 ou Visual Studio, essas recomendações de design afetam diretamente como o usuário irá interagir com seu aplicativo e como ele deve se comportar por vez. Por exemplo, se você estiver encaixando janelas em seu aplicativo, a documentação recomenda que você verifique se ela pode detectar quando a orientação da tela é alterada e se as janelas de encaixe se reorganizam corretamente em uma orientação retrato ou paisagem, conforme necessário. Mesmo que você não esteja projetando seu aplicativo para ser específico do Tablet, você deve seguir essas diretrizes.
 
 Com o aumento dos Smart Clients, agora os aplicativos estão ultrapassando os limites entre hardwares diferentes – computadores normais, Tablet PCs, dispositivos móveis ou ultra móveis, PCs do Media Center e assim por diante. Cada situação chama um conjunto de padrões diferente (ou adicional) a ser seguido.
 
@@ -161,27 +161,27 @@ A opção recomendada é definir para receber o foco por padrão. Por exemplo, e
 
 ### <a name="simplify-recognition-with-icons"></a>Simplifique o reconhecimento com ícones
 
-Ícones — especialmente os ícones do Windows XP e do Office 2003 e os bitmaps da barra de ferramentas — ajudam a acelerar a cognição da interface do usuário e a tarefa que ele precisa executar.
+ícones — especialmente os ícones Windows XP e Office 2003 e bitmaps de barra de ferramentas — ajudam a acelerar a cognição da interface do usuário e a tarefa que ele precisa executar.
 
 Por exemplo, quando você vê o ícone de exclamação mais frequentemente visto na caixa de mensagem, fica imediatamente atento ao nível de risco associado aos controles ao lado desse ícone. Da mesma forma, quando seu aplicativo coloca muitos controles, independentemente de como organizados corretamente, pode ser assustador encontrar o conjunto de controles que você está procurando.
 
-No Windows XP Service Pack 2, uma guia atualizada é adicionada ao miniaplicativo do painel de controle **Propriedades do sistema** chamado "atualizações automáticas". Há quatro opções presentes – baixar atualizações automaticamente, baixar atualizações, mas permitir que o usuário decida quando instalá-las, notificar o usuário se as atualizações estiverem disponíveis, mas não iniciar o download e desabilitar completamente as atualizações automáticas.
+no Windows XP Service Pack 2, uma guia atualizada é adicionada ao miniaplicativo do painel de controle **propriedades do sistema** chamado "Atualizações Automáticas". Há quatro opções presentes – baixar atualizações automaticamente, baixar atualizações, mas permitir que o usuário decida quando instalá-las, notificar o usuário se as atualizações estiverem disponíveis, mas não iniciar o download e desabilitar completamente as atualizações automáticas.
 
 Um novo usuário de PC pode não estar ciente do que são essas atualizações e pode não saber qual opção é melhor escolher. Portanto, a Microsoft colocou um ícone de escudo verde com uma grande marca de seleção na ti, ao lado do mais recomendado, que significa uma opção "segura", e um ícone de escudo vermelho com um grande "x" nele próximo daquele que seria potencialmente prejudicial ao usuário. Isso é muito útil em situações críticas, especialmente quando o usuário não tem tempo para ler muito texto.
 
 No mesmo applet **Propriedades do sistema** , cada guia tem várias groupboxs com controles diferentes para tarefas diferentes. Um gráfico relativo é colocado ao lado de cada grupo que significaria facilmente a tarefa do grupo de controle. Esse tipo de código gráfico é semelhante à codificação por cores em arquivos físicos ou estacionamentos. Isso também funciona no mesmo princípio de ter pelo menos alguns elementos visuais em um artigo de revista – ele mantém o interesse do leitor.
 
-Escolher o ícone à direita também é importante. A Microsoft fornece muitos gráficos padrão como parte do Visual Studio 2005. Essa seria a melhor opção. Se você criar seus próprios ícones, é altamente recomendável que você siga os padrões no nível do sistema operacional ou do aplicativo para esses gráficos, conforme mencionado na seção de [padrões de uso](#use-standards) acima.
+Escolher o ícone à direita também é importante. a Microsoft fornece muitos gráficos padrão como parte do Visual Studio 2005. Essa seria a melhor opção. Se você criar seus próprios ícones, é altamente recomendável que você siga os padrões no nível do sistema operacional ou do aplicativo para esses gráficos, conforme mencionado na seção de [padrões de uso](#use-standards) acima.
 
-As [diretrizes de interação da experiência do usuário do Windows](/windows/apps/desktop/) contêm um guia muito útil para a criação de [ícones](https://msdn.microsoft.com/library/aa511280.aspx)de estilo do Windows.
+a [Windows diretrizes de interação da experiência do usuário](/windows/apps/desktop/) contém um guia muito útil para criar [ícones](https://msdn.microsoft.com/library/aa511280.aspx)de Windows estilo.
 
 ### <a name="simplify-recognition-with-headers"></a>Simplificar o reconhecimento com cabeçalhos
 
 Os cabeçalhos são a maneira perfeita de explicar a caixa de diálogo inteira em uma única frase (e, opcionalmente, um gráfico). Às vezes, os cabeçalhos podem até mesmo ajudá-lo a acomodar a navegação e os comandos dentro deles também. Os cabeçalhos funcionam com mais eficiência do que rótulos de descrição normais porque são a primeira coisa que um usuário vê quando a caixa de diálogo é exibida.
 
-Os assistentes de Windows Installer são talvez os cabeçalhos mais populares: um ícone simples na extrema direita; um rótulo de título que descreve a caixa de diálogo (por exemplo, Selecionar pasta de instalação); e um subtítulo que descreva a finalidade da caixa de diálogo (por exemplo, selecione a pasta onde os arquivos de software serão instalados).
+os assistentes de Windows Installer são talvez os cabeçalhos mais populares: um ícone simples na extrema direita; um rótulo de título que descreve a caixa de diálogo (por exemplo, Selecionar pasta de instalação); e um subtítulo que descreva a finalidade da caixa de diálogo (por exemplo, selecione a pasta onde os arquivos de software serão instalados).
 
-Digamos que tenhamos um aplicativo de negócios típico com uma seção de contas. Seguindo o paradigma de design criado pelo Windows Vista, podemos fornecer informações críticas e comandos relacionados no cabeçalho (ou rodapé, se o cenário chamar). Nosso usuário abriu o arquivo de conta para "grande empresa", e o cabeçalho ficaria parecido com o mostrado na captura de tela a seguir.
+Digamos que tenhamos um aplicativo de negócios típico com uma seção de contas. seguindo o paradigma de design criado pelo Windows Vista, podemos fornecer informações críticas e comandos relacionados no cabeçalho (ou no rodapé, se o cenário o chamar). Nosso usuário abriu o arquivo de conta para "grande empresa", e o cabeçalho ficaria parecido com o mostrado na captura de tela a seguir.
 
 ![captura de tela de uma caixa de diálogo que contém um rodapé detalhado.](images/humanux-06.png)
 
@@ -189,22 +189,22 @@ A captura de tela a seguir mostra um exemplo de um cabeçalho detalhado em uma c
 
 ![captura de tela de uma caixa de diálogo que contém um cabeçalho detalhado.](images/humanux-07.png)
 
-Da mesma forma, você pode evitar ter que adicionar painéis de tarefas no estilo do Windows XP, especialmente quando há apenas alguns comandos, o que desperdiçaria muito espaço vertical, movendo esses comandos para o cabeçalho.
+da mesma forma, você pode evitar ter que adicionar Windows painéis de tarefas no estilo XP, especialmente quando há apenas alguns comandos, o que desperdiçaria muito espaço vertical, movendo esses comandos para o cabeçalho.
 
 Há algumas coisas que você deve ter em mente ao criar cabeçalhos:
 
--   Verifique se a cor do plano de fundo é diferente da cor do plano de fundo da caixa de diálogo. Com mais frequência do que não, um cabeçalho branco sobre uma cor de face de controle intrínseco padrão do Windows fará. Mas se você realmente quiser ter certeza de que nenhum tema especial ou cores personalizadas bagunçam o cabeçalho, desenhe um **LinearGradient** usando o **Color. FromKnownColor** com as cores **ControlLight** e **ControlDark**.
+-   Verifique se a cor do plano de fundo é diferente da cor do plano de fundo da caixa de diálogo. com mais frequência do que não, um cabeçalho branco sobre uma cor de face de controle intrínseco de Windows padrão fará. Mas se você realmente quiser ter certeza de que nenhum tema especial ou cores personalizadas bagunçam o cabeçalho, desenhe um **LinearGradient** usando o **Color. FromKnownColor** com as cores **ControlLight** e **ControlDark**.
 -   Se possível, mantenha a altura do cabeçalho abaixo de 150 pixels. Geralmente, uma altura de 100 ou 120 fará. Como regra geral, verifique se ele é inferior a 1/4 da altura do formulário inteiro.
 -   Se você quiser adicionar a edição in-loco para obter informações mostradas no cabeçalho acima, substitua dinamicamente o LinkLabel por uma caixa de texto e troque-os novamente quando a edição for concluída.
--   Se você tiver um rótulo de título com uma fonte de tamanho de 10 pt, use Arial ou Franklin Gothic Medium. MS Sans Serif parecerá muito irregular e não será profissional. O Franklin Gothic Medium é a recomendação da documentação de diretrizes de design do Windows XP. Para aplicativos destinados ao Windows Vista, use a fonte Segoe UI que é a fonte padrão do sistema.
+-   Se você tiver um rótulo de título com uma fonte de tamanho de 10 pt, use Arial ou Franklin Gothic Medium. MS Sans Serif parecerá muito irregular e não será profissional. o Franklin Gothic medium é a recomendação na documentação de diretrizes de Design do Windows XP. para aplicativos voltados para o Windows Vista, use a fonte Segoe UI que é a fonte padrão do sistema.
 
 ### <a name="use-custom-message-boxes"></a>Usar caixas de mensagem personalizadas
 
-As opções disponíveis na caixa de mensagem padrão do Windows são muito limitadas. Quando você precisa perguntar ao usuário uma pergunta que não pode ser respondida com um simples sim/não ou OK/cancelar, ela se torna complicada.
+as opções disponíveis na caixa de mensagem de Windows padrão são muito limitadas. Quando você precisa perguntar ao usuário uma pergunta que não pode ser respondida com um simples sim/não ou OK/cancelar, ela se torna complicada.
 
-Agora, os aplicativos do Windows estão se tornando mais simples de usar devido ao alto volume de usuários não técnicos. Às vezes, pode ser muito mais simples fornecer botões com textos mais amigáveis e até mesmo alguns controles adicionais – LinkLabels, por exemplo, para facilitar a realização da tarefa em questão.
+os aplicativos Windows agora estão se tornando mais simples de usar devido ao alto volume de usuários não técnicos. Às vezes, pode ser muito mais simples fornecer botões com textos mais amigáveis e até mesmo alguns controles adicionais – LinkLabels, por exemplo, para facilitar a realização da tarefa em questão.
 
-O Microsoft .NET Framework facilita a implementação de caixas de diálogo personalizadas. Ao atribuir apenas algumas propriedades em seu formulário de diálogo personalizado ou com uma única linha de código, seu formulário pode funcionar como uma caixa de mensagem padrão. Em um evento de clique de botão, defina a propriedade **DialogResult** da caixa de diálogo como **DialogResult. ok** ou **DialogResult. Cancel**. Use o método **ShowDialog ( \[ OwnerForm \] )** do formulário pai. Esse método de método retorna o valor **DialogResult** .
+o Microsoft .NET Framework facilita a implementação de caixas de diálogo personalizadas. Ao atribuir apenas algumas propriedades em seu formulário de diálogo personalizado ou com uma única linha de código, seu formulário pode funcionar como uma caixa de mensagem padrão. Em um evento de clique de botão, defina a propriedade **DialogResult** da caixa de diálogo como **DialogResult. ok** ou **DialogResult. Cancel**. Use o método **ShowDialog ( \[ OwnerForm \] )** do formulário pai. Esse método de método retorna o valor **DialogResult** .
 
 Você pode usar todos os membros do **DialogResult** . Essas mesmas opções são usadas pelo método **MessageBox. show** padrão.
 
@@ -214,14 +214,14 @@ Aqui estão algumas dicas para aprimorar suas caixas de diálogo personalizadas:
 
 -   Para tópicos complicados, forneça links para a ajuda local ou online com um LinkLabel dizendo "Saiba mais" no rótulo de texto apropriado.
 -   Em vez de **Sim** / **nenhum** / botão **Cancelar** , use textos que declaram claramente o resultado de clicar no botão, como "salvar arquivo e sair", sair sem salvar, "e" não sair ". No entanto, não fique com os botões padrão **Yes** / **no**, **OK** / **Cancel** e tais Standard sempre que possível. A familiaridade possibilita uma grande produtividade.
--   Mantenha 50 pixels de espaço de margem no lado esquerdo (ou no lado direito, dependendo das configurações de cultura de destino) e adicione um ícone que represente o cenário da caixa de diálogo. Se for uma caixa de diálogo de informações, você poderá usar o ícone "i" usado por caixas de mensagem padrão; Se for uma caixa de diálogo de segurança, você poderá usar um ícone de cadeado ou um ícone de chave. O Visual Studio 2005 vem com alguns gráficos ótimos de alta qualidade.
+-   Mantenha 50 pixels de espaço de margem no lado esquerdo (ou no lado direito, dependendo das configurações de cultura de destino) e adicione um ícone que represente o cenário da caixa de diálogo. Se for uma caixa de diálogo de informações, você poderá usar o ícone "i" usado por caixas de mensagem padrão; Se for uma caixa de diálogo de segurança, você poderá usar um ícone de cadeado ou um ícone de chave. o Visual Studio 2005 é fornecido com alguns gráficos ótimos de alta qualidade.
 -   Sempre certifique-se de fornecer navegação de teclado adequada para esses botões – os usuários usam os atalhos de teclado para caixas de mensagem (por exemplo, O para Ok, Y para Sim, C para cancelar e assim por diante) de forma intensiva. Eles certamente achariam irritantes se sua caixa de diálogo personalizada não os utilizasse.
 
 ### <a name="include-alternate-commands"></a>Incluir comandos alternativos
 
 Dois fatores importantes determinam a necessidade de métodos de entrada alternativos – frustração e a prenossa. A frustração é uma coisa que ocorre com muita frequência para usuários de computador. Quando estiver frustrado, você deseja que a tarefa seja feita rapidamente. Um clique extra ou uma espera extra de alguns segundos realmente infuriates uma pessoa sob estresse – você sabe como eles estão lá. A precerteza geralmente solicita que você conclua a tarefa apenas com o teclado ou o mouse – o que estiver usando no momento. Mas, a não ser por esses dois fatores, ter métodos de entrada alternativos torna mais fácil para o usuário realizar tarefas.
 
-Por exemplo, se você tiver uma caixa de listagem com dois botões — "Adicionar" e "remover" — em ambos os lados, deverá adicionar um menu de contexto para essa caixa de listagem com comandos de menu análogos a esses botões. Isso dá ao usuário uma oportunidade de escolher o método que ele encontra o mais adequado. Os usuários iniciantes, como o estado das diretrizes de experiência do usuário do Windows Vista, usam os menus de contexto muito e esperam que eles estejam em qualquer lugar que cliquem com o botão direito do mouse.
+Por exemplo, se você tiver uma caixa de listagem com dois botões — "Adicionar" e "remover" — em ambos os lados, deverá adicionar um menu de contexto para essa caixa de listagem com comandos de menu análogos a esses botões. Isso dá ao usuário uma oportunidade de escolher o método que ele encontra o mais adequado. os usuários iniciantes, como o Windows estado das diretrizes de experiência do usuário Vista, usam os menus de contexto muito e esperam que eles estejam em qualquer lugar que cliquem com o botão direito do mouse.
 
 Da mesma forma, usamos controles visuais para texto ou entrada numérica. Por exemplo, os controles deslizantes são usados para especificar números inteiros e o calendário é usado para entrada de data. Às vezes, pode ser mais confortável apenas inserir digitando. Em geral, ele pode fazer uma diferença para o usuário se você adicionar um controle de Up-Down numérico vinculado a um controle deslizante ou usar um DateTimePicker em vez do controle Calendar.
 
@@ -263,7 +263,7 @@ A barra de tarefas pisca pode ser útil, é claro, mas deve ser chamada somente 
 
 As janelas "do sistema" (veja a Figura 10), feitas por clientes de mensagens instantâneas como o MSN Messenger, são uma ótima solução para informar o usuário sobre algo sem desagradáveis ou interromper seu fluxo de trabalho. Há um ótimo artigo ( https://docs.microsoft.com/archive/msdn-magazine/2005/september/sprinkle-some-pizzazz-on-your-plain-vanilla-windows-forms-apps) por Bill Wagner sobre a criação de janelas de notificação. É uma boa política (e modos) não incomodar as notificações de qualquer outro aplicativo. A obstrução dessas janelas pode ser irritante e não-técnica. Uma solução é usar o mutex ToastSemaphore (/library/WinMessenger/winmessenger/overview/toast.asp) fornecido pelo sistema operacional para evitar a colisão do sistema.
 
-Às vezes, talvez seja necessário mostrar vários itens pelo sistema de notificação. O pop-up de três ou mais torradeiras não seria realmente aconselhável. Em vez disso, fazer o ciclo de cada uma das exibições/esmaecimento de uma notificação após a outra seria melhor. O Microsoft Outlook implementa uma solução semelhante ao notificar o usuário sobre emails de entrada.
+Às vezes, talvez seja necessário mostrar vários itens pelo sistema de notificação. O pop-up de três ou mais torradeiras não seria realmente aconselhável. Em vez disso, fazer o ciclo de cada uma das exibições/esmaecimento de uma notificação após a outra seria melhor. o Microsoft Outlook implementa uma solução semelhante ao notificar o usuário sobre emails de entrada.
 
 ### <a name="provide-progress-status"></a>Fornecer status de progresso
 
@@ -281,13 +281,13 @@ Outro método que está se tornando popular é uma janela fixa "do sistema" que 
 
 É seguro pressupor que, se enfrentar uma grande quantidade de controles em um único Formulário, um usuário típico será confundido sem fim. Às vezes, nenhuma quantidade de agrupamento, dimensionamento ou espaçamento pode ajudá-lo quando você tem muitos controles importantes.
 
-Um assistente é a melhor coisa para esses cenários. Você pode dividir os controles por tarefa ou categorias conforme aplicável e colocá-los em etapas separadas. Isso pode ajudar o usuário a se manter focado e não ser intimidado pela tarefa. Você pode fornecer ajuda específica de etapas ou tarefas com um botão de ajuda. Você pode encontrar as diretrizes de criação do assistente na biblioteca MSDN.
+Um assistente é a melhor coisa para esses cenários. Você pode dividir os controles por tarefa ou categorias conforme aplicável e colocá-los em etapas separadas. Isso pode ajudar o usuário a se manter focado e não ser intimidado pela tarefa. Você pode fornecer ajuda específica de etapas ou tarefas com um botão de ajuda. você pode encontrar as diretrizes de criação do assistente no Biblioteca MSDN.
 
 Os assistentes também são uma boa maneira de ajudar a configurar a configuração inicial do seu aplicativo. Muitos aplicativos usam esse assistente para definir a configuração personalizada logo após a conclusão da instalação ou na primeira utilização. Esse assistente inicial também deve se tornar opcional, se possível — se o usuário cancelar a qualquer momento, as configurações não especificadas vão para valores padrão. Se você puder tornar o assistente um gráfico de bits (consulte a seção [usar elementos gráficos](#use-pretty-graphics) ), ele tornará a tarefa de configuração muito mais fácil.
 
 ### <a name="get-the-tone-of-your-text-right"></a>Obter o tom do texto à direita
 
-Nas [diretrizes de interação da experiência do usuário do Windows](/windows/apps/desktop/), um ponto muito importante foi feito sobre "Tom de texto". Essa é a impressão e a sensação fornecida pelo texto em seu aplicativo. Isso pode ser qualquer coisa, desde uma dica de ferramenta simples, até um controle de rótulo de instrução.
+no [Windows diretrizes de interação da experiência do usuário](/windows/apps/desktop/), um ponto muito importante foi feito sobre "tom de texto". Essa é a impressão e a sensação fornecida pelo texto em seu aplicativo. Isso pode ser qualquer coisa, desde uma dica de ferramenta simples, até um controle de rótulo de instrução.
 
 Anteriormente, discutimos a alteração de texto na opção de webcam no MSN Messenger. Isso é chamado de Tom de texto adequado. Ao lidar com usuários não técnicos ou iniciantes, fazer com que a mensagem entre em um aspecto diferente.
 
@@ -295,7 +295,7 @@ Se você escrever "caminho de destino" acima de uma caixa de texto em um aplicat
 
 Fornecer uma descrição clara do que você deseja que o usuário também reduz a necessidade de arquivos de ajuda ou, pelo menos, diminui os detalhes que você precisa incluir nos arquivos de ajuda.
 
-Uma sugestão muito boa das [diretrizes de interação da experiência do usuário do Windows](/windows/apps/desktop/) se aplica a qualquer software. Ele afirma que o gravador deve manter o texto de conversa. As diretrizes definem isso como "Evite palavras que você não diria a outra pessoa pessoalmente".
+uma sugestão muito boa do [Windows diretrizes de interação da experiência do usuário](/windows/apps/desktop/) se aplica a qualquer software. Ele afirma que o gravador deve manter o texto de conversa. As diretrizes definem isso como "Evite palavras que você não diria a outra pessoa pessoalmente".
 
 Algumas dicas para escrever texto:
 
@@ -309,13 +309,13 @@ Algumas dicas para escrever texto:
 
 ### <a name="sometimes-a-listview-is-better"></a>Às vezes, um ListView é melhor
 
-Muitas vezes, temos o DataGrid ou ListBox ou até mesmo ComboBox para tarefas de seleção, mas com o Windows XP e versões posteriores do Windows, o uso de ListView pode fornecer opções maiores.
+geralmente, periremos para DataGrid ou ListBox ou até mesmo ComboBox para tarefas de seleção, mas com Windows XP e versões posteriores do Windows, usar um ListView pode fornecer opções maiores.
 
 Os pontos finos do controle ListView:
 
 -   Acelera o reconhecimento de itens com ícones e bitmaps.
 -   Exibe informações adicionais com detalhes ou exibições de bloco.
--   Com o Visual Studio 2005, você pode até mesmo ter grupos para categorização adicional. Os grupos se estendem por todas as exibições e são flexíveis. Os grupos também podem ser usados para mesclar uma exibição de hierarquia (como uma TreeView) em que há mais nós filho do que os nós pai. Um bom exemplo disso é a caixa de diálogo conexões de rede no Windows XP, quando exibido com "mostrar em grupos" e o modo de exibição definido como detalhes.
+-   com o Visual Studio 2005, você pode até mesmo ter grupos para categorização adicional. Os grupos se estendem por todas as exibições e são flexíveis. Os grupos também podem ser usados para mesclar uma exibição de hierarquia (como uma TreeView) em que há mais nós filho do que os nós pai. um bom exemplo disso é a caixa de diálogo conexões de rede no Windows XP, quando exibida com "mostrar em grupos" e a exibição definida como detalhes.
 -   Para personalizar um controle ListView, pinte-o manualmente definindo a propriedade **OwnerDraw** e usando os eventos **DrawItem** e **DrawSubItem** .
 -   Dá suporte à edição rápida in-loco de itens ListView.
 -   Dá suporte facilmente à reordenação manual.
@@ -325,62 +325,62 @@ Os pontos finos do controle ListView:
 
 A "subnavegação" é a chave para a interface do usuário complexa. Às vezes, você não pode escapar ter uma interface do usuário complicada. A melhor coisa a fazer nessa situação é tornar a experiência o mais fácil possível para o usuário. Uma barra lateral que consiste em rótulos de link ou em um TreeView para navegação baseada em hierarquia, sugere uma navegação de nível irmão para a tarefa da caixa de diálogo atual. Ele torna muito fácil para o usuário saltar entre as etapas do processo e saber onde ela está.
 
-Se você for para uma navegação baseada em hierarquia com TreeViews ou outra navegação complexa semelhante, um bom utilitário para o usuário seria um controle de navegação estrutural. Embora o Visual Studio não seja fornecido com um controle interno para isso ainda, consulte [criando um controle de navegação estrutural](/archive/msdn-magazine/2005/july/advanced-basics-creating-a-breadcrumb-control) para obter informações sobre como criar um por conta própria. Um controle de navegação estrutural facilita a localização do local atual em relação à hierarquia.
+Se você for para uma navegação baseada em hierarquia com TreeViews ou outra navegação complexa semelhante, um bom utilitário para o usuário seria um controle de navegação estrutural. embora Visual Studio ainda não seja fornecido com um controle interno para isso, consulte [criando um controle de navegação estrutural](/archive/msdn-magazine/2005/july/advanced-basics-creating-a-breadcrumb-control) para obter informações sobre como criar um por conta própria. Um controle de amplitude facilita a localização atual em relação à hierarquia.
 
-A navegação por trilha pode ser mesclada facilmente no cabeçalho se o formulário tiver um. Consulte a seção anterior sobre [cabeçalhos](#simplify-recognition-with-headers).
+A navegação breadcrumb pode ser facilmente mesclada no header se o formulário tiver um. Consulte a seção anterior em [headers](#simplify-recognition-with-headers).
 
-### <a name="use-pretty-graphics"></a>Usar elementos gráficos bastante
+### <a name="use-pretty-graphics"></a>Usar elementos gráficos
 
-Todos adora aplicativos com gráficos frios – a maioria faz, pelo menos. Embora uma interface do usuário com elementos gráficos não seja uma opção lógica para todos os aplicativos, ela ajuda a fazer uma boa impressão e pode ser um prazer trabalhar no. É claro que os gráficos não devem impedir a produtividade, mas se forem usados corretamente, eles poderão aumentar!
+Todos gostam de aplicativos com gráficos interessantes– a maioria, pelo menos. Embora uma interface do usuário com elementos gráficos interessantes não seja uma opção lógica para todos os aplicativos, ela ajuda a dar uma boa impressão e pode ser um prazer trabalhar. É claro que os gráficos não devem impedir a produtividade, mas se usados corretamente, eles podem aumentar isso!
 
-Não precisa haver muitos elementos gráficos, nem necessariamente requer muito trabalho, ou seja, precisa. Uma tela inicial criada profissionalmente ou um cabeçalho (como aquele que falamos anteriormente) faz o truque. Se o seu orçamento permitir, você poderá usar gráficos bem projetados para barras de ferramentas, assistentes e muito mais. Eles fazem com que seu aplicativo pareça bem e também mais profissional. É um efeito sutil, mas uma aparência profissional transmite confiança e estabilidade. Se você for uma empresa relativamente pequena criando aplicativos de varejo, esse é um aspecto fundamental a ser considerado.
+Não precisa haver muitos gráficos, nem eles exigem necessariamente muito trabalho. Uma tela inicial projetada profissionalmente ou um header (como aquele sobre o qual falamos anteriormente) faz o truque. Se o orçamento permitir, você poderá usar gráficos bem projetados para barras de ferramentas, assistentes e muito mais. Eles também fazem com que seu aplicativo pareça muito mais profissional. É um efeito sutil, mas uma aparência profissional transmite confiança e estabilidade. Se você for uma empresa relativamente pequena que cria aplicativos de varejo, esse é um aspecto importante a ser considerado.
 
-Sempre faça um ponto para usar gráficos com design profissional. Os gráficos isentos de royalties são facilmente disponíveis e acessíveis. Você também pode contratar um designer. Mas se os elementos gráficos não forem seus forte, não o experimente. Se você não puder adquirir ou usar gráficos com design profissional, será melhor não usá-los.
+Sempre faça questão de usar gráficos projetados profissionalmente. Gráficos sem royalties são facilmente disponíveis e acessíveis. Você também pode contratar um designer. Mas se os gráficos não são seu forte, não tente você mesmo. Se você não puder adquirir ou usar gráficos projetados profissionalmente, é melhor não usá-los.
 
-Para elementos gráficos pequenos, você sempre pode ir para os ícones e bitmaps fornecidos com o Visual Studio 2005. (Os gráficos fornecidos com versões anteriores não são recomendados!)
+Para gráficos pequenos, você sempre pode ir para os ícones e bitmaps que são Visual Studio 2005. (Os gráficos fornecidos com versões anteriores não são recomendados!)
 
-### <a name="provide-resizable-forms-when-possible"></a>Fornecer formulários redimensionáveis quando possível
+### <a name="provide-resizable-forms-when-possible"></a>Fornecer formulários reizáveis quando possível
 
-As janelas redimensionáveis são um pouco parecidas com as janelas independentes de resolução. As janelas independentes de resolução têm a mesma aparência se você usar as telas 96DPI ou 300DPI. Se a interface do usuário do aplicativo for ou não independente de resolução, ela se tornará melhor se for redimensionável. É claro que isso não se aplica a muitos cenários, mas é uma boa regra de uso geral.
+Janelas reizáveis são um pouco parecidos com janelas independentes de resolução. As janelas independentes de resolução são iguais se você usa telas 96DPI ou 300DPI. Se a interface do usuário do aplicativo for independente de resolução ou não, ela será melhor se for resizável. É claro que isso não se aplicaria a muitos cenários, mas é uma boa regra de uso geral.
 
-Se sua janela lida com listas de qualquer tipo, especialmente ListViews, isso se torna ainda mais importante. O redimensionamento permite que o usuário examine mais dados ao mesmo tempo.
+Se sua janela lida com listas de qualquer tipo, especialmente ListViews, isso se torna ainda mais importante. O resizing permite que o usuário veja mais dados ao mesmo tempo.
 
-Por exemplo, temos um aplicativo onde o usuário precisa selecionar uma imagem de uma coleção grande. A caixa de diálogo abrir permite que você selecione um modo de exibição de miniatura, mas a caixa de diálogo é de tamanho fixo e a lista de miniaturas mostra apenas quatro miniaturas por vez. Se a coleção tiver centenas de imagens, rolar e olhar — uma tarefa repetitiva — pode ser bastante cansativo e uma diminuição na eficiência. Se a caixa de diálogo for redimensionável, o usuário poderá torná-la tão grande quanto é confortável ou pelo menos tão grande quanto a tela permitiria, e poderá concluir a tarefa rapidamente. Se sua lista tiver rolagem horizontal, como um ListView ou DataGrid detalhado, será ainda mais cansativo! As janelas redimensionáveis são muito úteis nessa situação.
+Por exemplo, temos um aplicativo em que o usuário precisa selecionar uma imagem de uma coleção grande. A caixa de diálogo aberta permite que você selecione uma exibição miniatura, mas a caixa de diálogo tem tamanho fixo e a lista de miniaturas mostra apenas quatro miniaturas por vez. Se a coleção tiver centenas de imagens, rolar e procurar – uma tarefa repetitiva – poderá ser bastante cansativa e uma diminuição na eficiência. Se a caixa de diálogo for reizável, o usuário poderá torná-la tão grande quanto for confortável ou pelo menos tão grande quanto a tela permitir e ser capaz de concluir a tarefa rapidamente. Se sua lista tiver rolagem horizontal, como um ListView ou DataGrid detalhado, isso será ainda mais cansativa! Janelas reizáveis são muito úteis nessa situação.
 
-### <a name="provide-more-functionality-with-sidebarstask-panes"></a>Fornecer mais funcionalidade com painéis de tarefas/barras laterais
+### <a name="provide-more-functionality-with-sidebarstask-panes"></a>Fornecer mais funcionalidade com barras laterais/painéis de tarefa
 
-Como os cabeçalhos que falamos anteriormente, os painéis de tarefas e barras laterais são uma maneira maravilhosa de fornecer funcionalidade extra e comandos de utilitário. Por exemplo, os painéis de tarefas no Office Word 2003 são muito convenientes, acessíveis e não intrusivos. Elas também funcionam de forma assíncrona ao se conectar a recursos online, fornecendo ao usuário a opção de várias tarefas.
+Assim como os headers que falamos anteriormente, as barras laterais e os painéis de tarefas são uma ótima maneira de fornecer funcionalidade extra e comandos de utilitário. Por exemplo, os painéis de tarefa Office Word 2003 são muito convenientes, acessíveis e não intrusivos. Eles também funcionam de forma assíncrona ao se conectar a recursos online, fornecendo ao usuário a opção de várias tarefas.
 
-Criar um painel de tarefas ou uma barra lateral é tão fácil quanto criar um painel de encaixe, com a opção de colocar um gráfico inteligente na parte superior para agir como uma barra de título. Você pode até mesmo usar um controle de rótulo colorido para isso. As oportunidades para os painéis de tarefas são muitas!
+Criar um painel de tarefas ou barra lateral é tão fácil quanto criar um painel de encaixe, com a opção de colocar um gráfico na parte superior para atuar como uma barra de título. Você pode até mesmo usar um controle Rótulo colorido para isso. As oportunidades para painéis de tarefas são muitas!
 
-Se você tiver funcionalidade adicional e quiser fornecê-las de forma não invasiva para o usuário, não haverá lugar como o painel de tarefas. Você também pode tornar os painéis de tarefas "Ocultar Automaticamente" ou recolher como as janelas de ferramentas do Visual Studio.
+Se você tiver funcionalidade adicional e quiser forneciá-la de forma não intrusiva ao usuário, não haverá nenhum lugar como o painel de tarefas. Você também pode fazer com que os painéis de tarefas "Ocultar Automaticamente" ou se ressumente como as janelas Visual Studio ferramentas.
 
-### <a name="give-a-notification-choice"></a>Dê uma opção de notificação
+### <a name="give-a-notification-choice"></a>Dar uma opção de notificação
 
-Anteriormente, vimos como criar uma caixa de mensagem personalizada. Se uma caixa de mensagem em seu aplicativo for exibida frequentemente para o usuário, pode ser prudente adicionar uma caixa de seleção que o usuário pode selecionar para desabilitar a exibição do diálogo no futuro. Essa opção é especialmente boa para mais mensagens óbvias.
+Anteriormente, vimos como fazer uma caixa de mensagem personalizada. Se uma caixa de mensagem em seu aplicativo for exibida com frequência para o usuário, pode ser uma boa opção adicionar uma caixa de seleção que o usuário pode selecionar para desabilitar que a caixa de diálogo seja mostrada no futuro. Essa opção é especialmente boa para mensagens mais óbvias.
 
-Um exemplo familiar disso é a caixa de diálogo de localização do Visual Studio. Quando você pesquisa ou Substitui texto, o Visual Studio mostra uma caixa de mensagem que informa os resultados. Mas você também terá a opção de desabilitar essa caixa de mensagem. Pode ser realmente irritante se você precisar pressionar Enter ou clicar em OK toda vez que Pesquisar.
+Um exemplo familiar disso é a caixa Visual Studio caixa de diálogo Encontrar. Quando você pesquisa ou substitui texto, Visual Studio mostra uma caixa de mensagem informando os resultados. Mas você também tem a opção de desabilitar essa caixa de mensagem. Isso pode ser muito entediante se você tiver que clicar em Enter ou clicar em OK toda vez que pesquisar.
 
-Outra coisa interessante que o Visual Studio faz é que, mesmo que a caixa de diálogo seja desabilitada, ela ainda exibe os resultados dessa operação na barra de status.
+Outra coisa interessante Visual Studio é que, mesmo que a caixa de diálogo esteja desabilitada, ela ainda exibirá os resultados dessa operação na barra de status.
 
-### <a name="provide-tooltips"></a>Fornecer dicas de ferramentas!
+### <a name="provide-tooltips"></a>Forneça dicas de ferramenta!
 
-Às vezes, as dicas de ferramenta podem poupar muito tempo. Botões, caixas de seleção e outros controles podem ser ambíguos e o usuário pode não ter certeza do que fazer. As dicas de ferramenta fornecem a melhor forma de ajuda contextual em apenas uma única linha. O usuário pode rapidamente decidir o que fazer sem Pesquisar nada no arquivo de ajuda ou abrir outra janela.
+Às vezes, dicas de ferramenta podem economizar muito tempo. Botões, caixas de seleção e outros controles podem ser ambíguos e o usuário pode não ter certeza do que fazer. As dicas de ferramenta fornecem a melhor forma de Ajuda contextitivo em apenas uma única linha. O usuário pode decidir rapidamente o que fazer sem pesquisar nada no arquivo de Ajuda ou abrir outra janela.
 
-As pessoas costumam ignorar isso em seus aplicativos. Faça um ponto para adicionar dicas de ferramenta a todos os controles ambíguos — ou a todos os controles, se possível. Não repita o texto de um rótulo que o acompanha ou o texto próprio do controle, mas forneça informações adicionais sobre esse controle. O texto deve explicar a função do controle em apenas algumas palavras.
+As pessoas geralmente ignoram isso em seus aplicativos. Faça questão de adicionar dicas de ferramenta a todos os controles ambíguos ou a todos os controles, se possível. Não repita o texto de um rótulo de acompanhamento ou do próprio texto desse controle, mas forneça informações adicionais sobre esse controle. O texto deve explicar a função do controle em apenas algumas palavras.
 
 ### <a name="do-not-forget-the-little-things"></a>Não se esqueça das pequenas coisas
 
-As pequenas coisas podem incomodar você, mas ignorá-las pode afetar a impressão que você faz. Uma vez usei um aplicativo feito por uma pessoa importante no setor de software que tinha o BorderStyle de seu formulário definido como considerável, mas os controles no lado direito do formulário não eram ancorados. Por isso, o aplicativo criado por uma alta gramatura do setor tinha uma sensação não profissional.
+As pequenas coisas podem desabordá-lo, mas ignorá-los pode afetar a impressão que você tem. Uma vez, usei um aplicativo feito por uma pessoa importante no setor de software que tinha o BorderStyle do formulário definido como Sizeable, mas os controles no lado direito do formulário não estavam ancorados. Por isso, o aplicativo criado por um profissional do setor tinha uma sensação não profissional.
 
-Esses tipos de "pequenas coisas" são o núcleo da impressão geral. A interface do usuário e a experiência do seu aplicativo são as quais os usuários julgarão seu aplicativo — pelo menos a princípio. Se eles veem bugs óbvios em sua interface do usuário, eles podem perceber que seu aplicativo é menos eficiente e eficaz.
+Esses tipos de "pequenas coisas" são o núcleo da impressão geral. A interface do usuário e a UX do aplicativo são o que os usuários vão avaliar seu aplicativo– pelo menos, primeiro. Se eles veem bugs óbvios em sua interface do usuário, eles podem perceber que seu aplicativo é menos eficiente e eficiente.
 
 ## <a name="conclusion"></a>Conclusão
 
-Abordamos apenas uma pequena experiência humana do usuário humano. À medida que a experiência do usuário torna-se mais simples, eficaz, divertida e mais amigável, a tarefa de criar essa experiência de usuário se torna muito mais complexa. Mas com alguns antecipação e bom planejamento, você pode criar uma excelente experiência do usuário.
+Nós tocamos apenas em uma pequena parte da experiência do usuário humano. À medida que a experiência do usuário se torna mais simples, eficaz, divertida e mais amigável, a tarefa de criar essa experiência do usuário se torna muito mais complexa. Mas com alguma previsão e bom planejamento, você pode criar uma ótima experiência do usuário.
 
-A melhor maneira de criar a experiência do usuário perfeita é fazer um teste de usabilidade direcionado especialmente na interface do usuário — seja com um grupo de teste especial ou por conta própria. Quanto mais tempo você gasta testando a experiência do usuário antes de liberar seu aplicativo, melhor. Ele irá poupar muitos problemas mais tarde.
+A melhor maneira de criar a experiência do usuário perfeita é fazer testes de usabilidade direcionados especialmente à interface do usuário, seja com um grupo de teste especial ou por conta própria. Quanto mais tempo você gastar testando a experiência do usuário antes de liberar seu aplicativo, melhor. Isso lhe causará muitos problemas posteriormente.
 
- 
+ 
 
- 
+ 

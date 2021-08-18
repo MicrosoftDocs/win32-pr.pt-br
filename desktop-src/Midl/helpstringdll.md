@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dace4fb9ddc3908ce637cd2d8521a1ab4671d620
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f773ed18e72f184305275ce238ddf0576c81447181a0b7fb420c30341935f5e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067246"
 ---
 # <a name="helpstringdll-attribute"></a>atributo helpstringdll
 
@@ -88,6 +88,6 @@ Use as funções **GetDocumentation2** nas interfaces **ITypeLib2** e **ITypeInf
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

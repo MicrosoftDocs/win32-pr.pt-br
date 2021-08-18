@@ -1,19 +1,19 @@
 ---
-description: Lista alfabética de interfaces do DirectShow
+description: Lista alfabética de DirectShow interfaces
 ms.assetid: 9c7f56f4-92af-40c6-8124-f2715ac3f6d7
-title: Lista alfabética de interfaces do DirectShow
+title: Lista alfabética de DirectShow interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: de76bd17dfb8be99f8cb3554015d6860785fb148
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: bd37ad1d6b510f61964eb9f210ab9481560b2d3e2f522b8fc38da10b7582a991
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074820"
 ---
-# <a name="alphabetical-list-of-directshow-interfaces"></a>Lista alfabética de interfaces do DirectShow
+# <a name="alphabetical-list-of-directshow-interfaces"></a>Lista alfabética de DirectShow interfaces
 
-Veja a seguir uma lista alfabética de interfaces do DirectShow.
+Veja a seguir uma lista alfabética de DirectShow interfaces.
 
 
 
@@ -31,7 +31,7 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 <tbody>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamanalogvideodecoder"><strong>IAMAnalogVideoDecoder</strong></a></td>
-<td>Define e recupera informações sobre o processo de conversão analógica para digital em um filtro de captura de vídeo.</td>
+<td>Define e recupera informações sobre o processo de conversão analogo-digital em um filtro de captura de vídeo.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamaudioinputmixer"><strong>IAMAudioInputMixer</strong></a></td>
@@ -39,51 +39,51 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamaudiorendererstats"><strong>IAMAudioRendererStats</strong></a></td>
-<td>Recupera informações de desempenho estatísticas de um filtro de processador de áudio.</td>
+<td>Recupera informações estatísticas de desempenho de um filtro do renderador de áudio.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iambuffernegotiation"><strong>IAMBufferNegotiation</strong></a></td>
-<td>Solicita o número de buffers para um filtro a ser criado e o tamanho de cada buffer.</td>
+<td>Solicita o número de buffers para um filtro criar e o tamanho de cada buffer.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamcameracontrol"><strong>IAMCameraControl</strong></a></td>
-<td>Controla as configurações da câmera, como zoom, panorâmica, ajuste de abertura ou velocidade do obturador.</td>
+<td>Controla as configurações da câmera, como zoom, panorático, ajuste de abertura ou velocidade do obturador.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamcertifiedoutputprotection"><strong>IAMCertifiedOutputProtection</strong></a></td>
-<td>Envia mensagens de COPP (protocolo de proteção de saída) certificadas para o driver de gráficos.</td>
+<td>Envia mensagens COPP (Certified Output Protection Protocol) para o driver gráfico.</td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/api/qnetwork/nn-qnetwork-iamchannelinfo"><strong>IAMChannelInfo</strong></a></td>
-<td>Obtém e define informações de canal para arquivos de estação de mídia do Windows (. NSC).</td>
+<td>Obtém e define informações de canal Windows arquivos da Estação de Mídia (.nsc).</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamclockadjust"><strong>IAMClockAdjust</strong></a></td>
 <td>Ajusta o relógio de referência.</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamclockslave"><strong>IAMClockSlave</strong></a></td>
-<td>Controla a tolerância de um processador de áudio quando ele é taxas de correspondência com outro relógio.</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamclockslave"><strong>IAMClock Ltda</strong></a></td>
+<td>Controla a tolerância de um renderador de áudio quando ele corresponde às taxas com outro relógio.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamcopycapturefileprogress"><strong>IAMCopyCaptureFileProgress</strong></a></td>
-<td>Interface de retorno de chamada para o método <a href="/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-copycapturefile"><strong>ICaptureGraphBuilder2:: CopyCaptureFile</strong></a> .</td>
+<td>Interface de retorno de chamada para <a href="/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-copycapturefile"><strong>o método ICaptureGraphBuilder2::CopyCaptureFile.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamcrossbar"><strong>IAMCrossbar</strong></a></td>
-<td>Roteia sinais de uma fonte analógica ou digital para um filtro de captura de vídeo.</td>
+<td>Encaminha sinais de uma fonte digital ou análoga para um filtro de captura de vídeo.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamdecodercaps"><strong>IAMDecoderCaps</strong></a></td>
-<td>Retorna informações de recursos de um filtro de decodificador MPEG.</td>
+<td>Retorna informações de funcionalidades de um filtro de decodificador MPEG.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamdeviceremoval"><strong>IAMDeviceRemoval</strong></a></td>
-<td>Fornece uma maneira para o Gerenciador de gráficos de filtro se registrar para eventos de remoção de dispositivo para um dispositivo de captura.</td>
+<td>Fornece uma maneira para o Gerenciador de Graph filtrar registrar eventos de remoção de dispositivo para um dispositivo de captura.</td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/Amaudio/nn-amaudio-iamdirectsound"><strong>IAMDirectSound</strong></a></td>
-<td>Especifica qual janela tem o foco para controlar a reprodução de áudio DirectSound.</td>
+<td>Especifica qual janela tem foco para controlar a reprodução de áudio DirectSound.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamdroppedframes"><strong>IAMDroppedFrames</strong></a></td>
@@ -91,39 +91,39 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamextdevice"><strong>IAMExtDevice</strong></a></td>
-<td>Controla um dispositivo externo, como uma câmera de DV ou um VTR (recodificador de fita de vídeo).</td>
+<td>Controla um dispositivo externo, como uma câmera DV ou um VTR (recodificador de fita de vídeo).</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamexttransport"><strong>IAMExtTransport</strong></a></td>
-<td>Controla o transporte em um VTR ou camcorder.</td>
+<td>Controla o transporte em uma VTR ou uma câmera.</td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/qnetwork/nn-qnetwork-iamextendedseeking"><strong>IAMExtendedSeeking</strong></a></td>
-<td>Busca um marcador em um fluxo do Windows Media ou altera a taxa de reprodução de um arquivo do Windows Media.</td>
+<td>Busca um marcador em um fluxo de mídia Windows ou altera a taxa de reprodução para um arquivo Windows Mídia.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamfiltergraphcallback"><strong>IAMFilterGraphCallback</strong></a></td>
-<td>Interface de retorno de chamada para construção de grafo.</td>
+<td>Interface de retorno de chamada para criação de grafo.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags"><strong>IAMFilterMiscFlags</strong></a></td>
-<td>Consulta se um filtro é um filtro de origem ou um processador.</td>
+<td>Consulta se um filtro é um filtro de origem ou um renderdor.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamgraphbuildercallback"><strong>IAMGraphBuilderCallback</strong></a></td>
-<td>Interface de retorno de chamada para construção de grafo.</td>
+<td>Interface de retorno de chamada para criação de grafo.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamgraphstreams"><strong>IAMGraphStreams</strong></a></td>
-<td>Controla um grafo de filtro que renderiza uma fonte dinâmica.</td>
+<td>Controla um grafo de filtro que renderiza uma fonte ao vivo.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamlatency"><strong>IAMLatency</strong></a></td>
-<td>Relata a quantidade de latência que um filtro apresenta no grafo.</td>
+<td>Relata a quantidade de latência que um filtro introduz no grafo.</td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/il21dec/nn-il21dec-iamline21decoder"><strong>IAMLine21Decoder</strong></a></td>
-<td>Define e recupera informações sobre legendas ocultas.</td>
+<td>Define e recupera informações sobre legendas fechadas.</td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/api/qnetwork/nn-qnetwork-iammediacontent"><strong>IAMMediaContent</strong></a></td>
@@ -131,19 +131,19 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/qnetwork/nn-qnetwork-iamnetshowconfig"><strong>IAMNetShowConfig</strong></a></td>
-<td>Configura o filtro de origem herdado do Windows Media Player 6,4.</td>
+<td>Configura o filtro de origem Windows Media Player 6.4 herdado.</td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/api/qnetwork/nn-qnetwork-iamnetshowexprops"><strong>IAMNetShowExProps</strong></a></td>
-<td>Configura o filtro de origem herdado do Windows Media Player 6,4.</td>
+<td>Configura o filtro de origem Windows Media Player 6.4 herdado.</td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/qnetwork/nn-qnetwork-iamnetshowpreroll"><strong>IAMNetShowPreroll</strong></a></td>
-<td>Define e recupera as configurações de preversão do filtro de origem herdado do Windows Media Player 6,4.</td>
+<td>Define e recupera as configurações de pré-roll para o filtro de origem Windows Media Player 6.4.</td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/api/qnetwork/nn-qnetwork-iamnetworkstatus"><strong>IAMNetworkStatus</strong></a></td>
-<td>Relata a qualidade da conexão de rede para o filtro de origem herdado do Windows Media Player 6,4.</td>
+<td>Relata a qualidade da conexão de rede para o filtro de origem Windows Media Player 6.4 herdado.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamopenprogress"><strong>IAMOpenProgress</strong></a></td>
@@ -155,67 +155,67 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/Amparse/nn-amparse-iamparse"><strong>IAMParse</strong></a></td>
-<td>Define e recupera o tempo de análise para um fluxo MPEG-2.</td>
+<td>Define e recupera o tempo de análise de um fluxo MPEG-2.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iampushsource"><strong>IAMPushSource</strong></a></td>
-<td>Sincroniza um grafo de filtro que renderiza uma fonte dinâmica.</td>
+<td>Sincroniza um grafo de filtro que renderiza uma fonte ao vivo.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamresourcecontrol"><strong>IAMResourceControl</strong></a></td>
-<td>Abre e mantém um recurso de dispositivo de áudio.</td>
+<td>Abre e contém um recurso de dispositivo de áudio.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Control/nn-control-iamstats"><strong>IAMStats</strong></a></td>
-<td>Recupera dados de desempenho do Gerenciador de gráfico de filtro.</td>
+<td>Recupera dados de desempenho do Gerenciador de Graph Filtro.</td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig"><strong>IAMStreamConfig</strong></a></td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig"><strong>Iamstreamconfig</strong></a></td>
 <td>Define o formato de saída em determinados filtros de captura e compactação.</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamstreamcontrol"><strong>IAMStreamControl</strong></a></td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamstreamcontrol"><strong>Iamstreamcontrol</strong></a></td>
 <td>Controla fluxos individuais em um filtro.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamstreamselect"><strong>IAMStreamSelect</strong></a></td>
-<td>seleciona os fluxos disponíveis em um filtro do analisador.</td>
+<td>seleciona entre os fluxos disponíveis em um filtro de analisador.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamtimecodereader"><strong>IAMTimecodeReader</strong></a></td>
-<td>Lê o código de erro SMPTE ou MIDI de um dispositivo externo.</td>
+<td>Lê o código de tempo SMPTE ou MIDI de um dispositivo externo.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamtuner"><strong>IAMTuner</strong></a></td>
-<td>Controla um sintonizador de TV.</td>
+<td>Controla um ajuste de TV.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamtvaudio"><strong>IAMTVAudio</strong></a></td>
-<td>Controla o áudio de uma fonte de televisão.</td>
+<td>Controla o áudio de uma fonte de tv.</td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamtvtuner"><strong>IAMTVTuner</strong></a></td>
-<td>Controla um sintonizador de TV.</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamtvtuner"><strong>Iamtvtuner</strong></a></td>
+<td>Controla um ajuste de TV.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamvfwcapturedialogs"><strong>IAMVfwCaptureDialogs</strong></a></td>
-<td>Exibe uma caixa de diálogo fornecida por um driver de captura de vídeo para Windows (VFW).</td>
+<td>Exibe uma caixa de diálogo fornecida por um driver de captura de vídeo Windows (VFW).</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamvfwcompressdialogs"><strong>IAMVfwCompressDialogs</strong></a></td>
-<td>Exibe uma caixa de diálogo fornecida por um codec VFW (Video for Windows).</td>
+<td>Exibe uma caixa de diálogo fornecida por um codec de Vídeo Windows (VFW).</td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoaccelerator"><strong>IAMVideoAccelerator</strong></a></td>
-<td>Habilita um filtro de decodificador de vídeo para acessar a funcionalidade de DXVA (DirectX Video Acceleration) 1,0.</td>
+<td>Habilita um filtro de decodificador de vídeo para acessar a funcionalidade DXVA (Aceleração de Vídeo) 1.0 do DirectX.</td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/videoacc/nn-videoacc-iamvideoacceleratornotify"><strong>IAMVideoAcceleratorNotify</strong></a></td>
-<td>Interface de retorno de chamada para DXVA 1,0.</td>
+<td>Interface de retorno de chamada para DXVA 1.0.</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamvideocompression"><strong>IAMVideoCompression</strong></a></td>
-<td>Define e recupera as propriedades de compactação de vídeo.</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-iamvideocompression"><strong>Iamvideocompression</strong></a></td>
+<td>Define e recupera propriedades de compactação de vídeo.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamvideocontrol"><strong>IAMVideoControl</strong></a></td>
@@ -223,7 +223,7 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamvideodecimationproperties"><strong>IAMVideoDecimationProperties</strong></a></td>
-<td>Controla como o mixer de sobreposição executa Decimation de vídeo.</td>
+<td>controla como a sobreposição Mixer executa decimation de vídeo.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iamvideoprocamp"><strong>IAMVideoProcAmp</strong></a></td>
@@ -247,7 +247,7 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ibasefilter"><strong>IBaseFilter</strong></a></td>
-<td>Exposto por filtros. Esta é a interface principal para todos os filtros do DirectShow.</td>
+<td>Exposto por filtros. essa é a interface primária para todos os filtros de DirectShow.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Control/nn-control-ibasicaudio"><strong>IBasicAudio</strong></a></td>
@@ -315,7 +315,7 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/amstream/nn-amstream-idirectdrawmediasample"><strong>IDirectDrawMediaSample</strong></a></td>
-<td>Fornece acesso a superfícies do DirectDraw alocadas pelo filtro do <a href="overlay-mixer-filter.md">mixer de sobreposição</a> .</td>
+<td>fornece acesso a superfícies do DirectDraw alocadas pelo filtro de <a href="overlay-mixer-filter.md">Mixer de sobreposição</a> .</td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/api/amstream/nn-amstream-idirectdrawmediasampleallocator"><strong>IDirectDrawMediaSampleAllocator</strong></a></td>
@@ -327,11 +327,11 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/api/dmodshow/nn-dmodshow-idmowrapperfilter"><strong>IDMOWrapperFilter</strong></a></td>
-<td>Permite que um aplicativo use um objeto de mídia do DirectX (DMO) dentro de um grafo de filtro.</td>
+<td>permite que um aplicativo use um objeto de mídia DirectX (DMO) dentro de um grafo de filtro.</td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/qnetwork/nn-qnetwork-idshowplugin"><strong>IDShowPlugin</strong></a></td>
-<td>Permite que o filtro de origem do Windows Media se comunique com o plug-in do Windows Media Player 6,4 para Netscape Navigator.</td>
+<td>permite que o filtro de origem de mídia Windows se comunique com o Plug-in Windows Media Player 6,4 do Netscape Navigator.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-idvdcmd"><strong>IDvdCmd</strong></a></td>
@@ -415,23 +415,23 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2"><strong>IFilterMapper2</strong></a></td>
-<td>Registra e cancela o registro de filtros e localiza filtros no registro.</td>
+<td>Registra e registra filtros e localiza filtros no Registro.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ifiltermapper3"><strong>IFilterMapper3</strong></a></td>
-<td>Estende a interface <a href="/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2"><strong>IFilterMapper2</strong></a> .</td>
+<td>Estende a interface <a href="/windows/desktop/api/Strmif/nn-strmif-ifiltermapper2"><strong>IFilterMapper2.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-ifullscreenvideoex"><strong>IFullScreenVideoEx</strong></a></td>
-<td>Exposto pelo filtro de <a href="full-screen-renderer-filter.md">processador de tela inteira</a> .</td>
+<td>Exposto pelo filtro <a href="full-screen-renderer-filter.md">Renderização de Tela</a> Inteira.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-igetcapabilitieskey"><strong>IGetCapabilitiesKey</strong></a></td>
-<td>Recupera os recursos de um codificador de software ou hardware do registro.</td>
+<td>Recupera as funcionalidades de um codificador de software ou hardware do Registro.</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-igraphbuilder"><strong>IGraphBuilder</strong></a></td>
-<td>Estende a interface <a href="/windows/desktop/api/Strmif/nn-strmif-ifiltergraph"><strong>IFilterGraph</strong></a> . Essa é a interface principal do Gerenciador de gráfico de filtro.</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-igraphbuilder"><strong>Igraphbuilder</strong></a></td>
+<td>Estende a interface <a href="/windows/desktop/api/Strmif/nn-strmif-ifiltergraph"><strong>IFilterGraph.</strong></a> Essa é a interface principal do Gerenciador de Graph Filtro.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-igraphconfig"><strong>IGraphConfig</strong></a></td>
@@ -439,7 +439,7 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-igraphconfigcallback"><strong>IGraphConfigCallback</strong></a></td>
-<td>Interface de retorno de chamada para a interface <a href="/windows/desktop/api/Strmif/nn-strmif-igraphconfig"><strong>IGraphConfig</strong></a> .</td>
+<td>Interface de retorno de chamada para a interface <a href="/windows/desktop/api/Strmif/nn-strmif-igraphconfig"><strong>IGraphConfig.</strong></a></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-igraphversion"><strong>IGraphVersion</strong></a></td>
@@ -447,15 +447,15 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iipdvdec"><strong>IIPDVDec</strong></a></td>
-<td>Configura o filtro de <a href="dv-video-decoder-filter.md">decodificador de vídeo DV</a> .</td>
+<td>Configura o filtro <a href="dv-video-decoder-filter.md">de decodificador de vídeo</a> DV.</td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/vidcap/nn-vidcap-iksnodecontrol"><strong>IKsNodeControl</strong></a></td>
-<td>Exposto por unidades de extensão de classe de vídeo USB (UVC).</td>
+<td>Exposto por unidades de extensão da UVC (Classe de Vídeo USB).</td>
 </tr>
 <tr class="odd">
 <td><a href="ikspin.md"><strong>IKsPin</strong></a></td>
-<td>Recupera os meios suportados por um PIN do modo kernel.</td>
+<td>Recupera as mídias com suporte por um pino de modo kernel.</td>
 </tr>
 <tr class="even">
 <td><a href="ikspropertyset.md"><strong>IKsPropertySet</strong></a></td>
@@ -466,52 +466,52 @@ Veja a seguir uma lista alfabética de interfaces do DirectShow.
 <td>Enumera os nós em um driver de classe de fluxo.</td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Control/nn-control-imediacontrol"><strong>IMediaControl</strong></a></td>
+<td><a href="/windows/desktop/api/Control/nn-control-imediacontrol"><strong>Imediacontrol</strong></a></td>
 <td>Controla o fluxo de dados por meio do grafo de filtro.</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Control/nn-control-imediaevent"><strong>IMediaEvent</strong></a></td>
-<td>Recupera notificações de eventos do gráfico de filtro.</td>
+<td><a href="/windows/desktop/api/Control/nn-control-imediaevent"><strong>Imediaevent</strong></a></td>
+<td>Recupera notificações de eventos do grafo de filtro.</td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Control/nn-control-imediaeventex"><strong>IMediaEventEx</strong></a></td>
-<td>Estende a interface <a href="/windows/desktop/api/Control/nn-control-imediaevent"><strong>IMediaEvent</strong></a> .</td>
+<td><a href="/windows/desktop/api/Control/nn-control-imediaeventex"><strong>Imediaeventex</strong></a></td>
+<td>Estende a interface <a href="/windows/desktop/api/Control/nn-control-imediaevent"><strong>IMediaEvent.</strong></a></td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imediaeventsink"><strong>IMediaEventSink</strong></a></td>
-<td>Notifica o Gerenciador de gráfico de filtro de eventos que ocorrem no gráfico de filtro.</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-imediaeventsink"><strong>Imediaeventsink</strong></a></td>
+<td>Notifica o Gerenciador de Graph filtro de eventos que ocorrem dentro do grafo de filtro.</td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imediafilter"><strong>IMediaFilter</strong></a></td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-imediafilter"><strong>Imediafilter</strong></a></td>
 <td>Controla o estado de streaming de um filtro.</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>IMediaPosition</strong></a></td>
+<td><a href="/windows/desktop/api/Control/nn-control-imediaposition"><strong>Imediaposition</strong></a></td>
 <td>Controles que buscam no grafo de filtro.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-imediapropertybag"><strong>IMediaPropertyBag</strong></a></td>
-<td>Define e recupera partes de informações e de DISP em Audio-Video arquivos intercalados (AVI).</td>
+<td>Define e recupera partes INFO e DISP Audio-Video arquivos INTERcalados (AVI).</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imediasample"><strong>IMediaSample</strong></a></td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-imediasample"><strong>Imediasample</strong></a></td>
 <td>Define e recupera propriedades em amostras de mídia.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-imediasample2"><strong>IMediaSample2</strong></a></td>
-<td>Estende a interface <a href="/windows/desktop/api/Strmif/nn-strmif-imediasample"><strong>IMediaSample</strong></a> .</td>
+<td>Estende a interface <a href="/windows/desktop/api/Strmif/nn-strmif-imediasample"><strong>IMediaSample.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-imediasample2config"><strong>IMediaSample2Config</strong></a></td>
-<td>Retorna um ponteiro para uma superfície de Direct3D que representa um buffer de captura de VRAM.</td>
+<td>Retorna um ponteiro para uma superfície Direct3D que representa um buffer de captura de VRAM.</td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>IMediaSeeking</strong></a></td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-imediaseeking"><strong>Imediaseeking</strong></a></td>
 <td>Controles que buscam no grafo de filtro.</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imemallocator"><strong>IMemAllocator</strong></a></td>
-<td>Aloca amostras de mídia.</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-imemallocator"><strong>Imemallocator</strong></a></td>
+<td>Aloca exemplos de mídia.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-imemallocatorcallbacktemp"><strong>IMemAllocatorCallbackTemp</strong></a></td>
@@ -524,7 +524,7 @@ Preterido.
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-imemallocatornotifycallbacktemp"><strong>IMemAllocatorNotifyCallbackTemp</strong></a></td>
-<td>Interface de retorno de chamada para a interface <a href="/windows/desktop/api/Strmif/nn-strmif-imemallocatorcallbacktemp"><strong>IMemAllocatorCallbackTemp</strong></a> .
+<td>Interface de retorno de chamada para a interface <a href="/windows/desktop/api/Strmif/nn-strmif-imemallocatorcallbacktemp"><strong>IMemAllocatorCallbackTemp.</strong></a>
 <blockquote>
 [!Note]<br />
 Preterido.
@@ -532,92 +532,92 @@ Preterido.
 <br/></td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>IMemInputPin</strong></a></td>
-<td>Fornece dados de mídia para um PIN de entrada.</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-imeminputpin"><strong>Imeminputpin</strong></a></td>
+<td>Fornece dados de mídia para um pino de entrada.</td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/api/mixerocx/nn-mixerocx-imixerocx"><strong>IMixerOCX</strong></a></td>
-<td>Exposto pelo filtro de mixer de sobreposição.</td>
+<td>Exposto pelo filtro de Mixer sobreposição.</td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/mixerocx/nn-mixerocx-imixerocxnotify"><strong>IMixerOCXNotify</strong></a></td>
-<td>Interface de retorno de chamada para a interface <a href="/previous-versions/windows/desktop/api/mixerocx/nn-mixerocx-imixerocx"><strong>IMixerOCX</strong></a> .</td>
+<td>Interface de retorno de chamada para a interface <a href="/previous-versions/windows/desktop/api/mixerocx/nn-mixerocx-imixerocx"><strong>IMixerOCX.</strong></a></td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Mpconfig/nn-mpconfig-imixerpinconfig"><strong>IMixerPinConfig</strong></a></td>
-<td>Manipula fluxos de vídeo no filtro de mixer de sobreposição.</td>
+<td><a href="/windows/desktop/api/Mpconfig/nn-mpconfig-imixerpinconfig"><strong>Imixerpinconfig</strong></a></td>
+<td>Manipula fluxos de vídeo no filtro de Mixer sobreposição.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Mpconfig/nn-mpconfig-imixerpinconfig2"><strong>IMixerPinConfig2</strong></a></td>
-<td>Estende a interface <a href="/windows/desktop/api/Mpconfig/nn-mpconfig-imixerpinconfig"><strong>IMixerPinConfig</strong></a> .</td>
+<td>Estende a interface <a href="/windows/desktop/api/Mpconfig/nn-mpconfig-imixerpinconfig"><strong>IMixerPinConfig.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-impeg2demultiplexer"><strong>IMpeg2Demultiplexer</strong></a></td>
-<td>Configura o filtro de Desmultiplexador MPEG-2.</td>
+<td>Configura o filtro Demultiplexer MPEG-2.</td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/bdaiface/nn-bdaiface-impeg2pidmap"><strong>IMPEG2PIDMap</strong></a></td>
-<td>Associa um pino de saída no filtro de demultiplexador MPEG-2 com uma ou mais IDs de pacote (PIDs).</td>
+<td>Associa um pino de saída no filtro MpEG-2 Demultiplexer a uma ou mais PIDs (IDs de pacote).</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-impeg2streamidmap"><strong>IMPEG2StreamIdMap</strong></a></td>
-<td>Associa um pino de saída no filtro de demultiplexador MPEG-2 com uma ou mais IDs de fluxo.</td>
+<td>Associa um pino de saída no filtro MpEG-2 Demultiplexer a uma ou mais IDs de fluxo.</td>
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/mpegtype/nn-mpegtype-impegaudiodecoder"><strong>IMpegAudioDecoder</strong></a></td>
-<td>Configura o decodificador de áudio MPEG-1.</td>
+<td>Configura o Decodificador de Áudio MPEG-1.</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ioverlay"><strong>IOverlay</strong></a></td>
-<td>Permite que um filtro grave diretamente na memória de vídeo.</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-ioverlay"><strong>Ioverlay</strong></a></td>
+<td>Permite que um filtro seja gravado diretamente na memória de vídeo.</td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ioverlaynotify"><strong>IOverlayNotify</strong></a></td>
-<td>Interface de retorno de chamada para a interface <a href="/windows/desktop/api/Strmif/nn-strmif-ioverlay"><strong>IOverlay</strong></a> .</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-ioverlaynotify"><strong>Ioverlaynotify</strong></a></td>
+<td>Interface de retorno de chamada para a interface <a href="/windows/desktop/api/Strmif/nn-strmif-ioverlay"><strong>IOverlay.</strong></a></td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ioverlaynotify2"><strong>IOverlayNotify2</strong></a></td>
-<td>Interface de retorno de chamada para a interface <a href="/windows/desktop/api/Strmif/nn-strmif-ioverlay"><strong>IOverlay</strong></a> .</td>
+<td>Interface de retorno de chamada para a interface <a href="/windows/desktop/api/Strmif/nn-strmif-ioverlay"><strong>IOverlay.</strong></a></td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ipersistmediapropertybag"><strong>IPersistMediaPropertyBag</strong></a></td>
-<td>Define e recupera partes de informações e de DISP em fluxos de Audio-Video AVI (intercalado).</td>
+<td>Define e recupera partes INFO e DISP Audio-Video fluxos INTERcalados (AVI).</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>IPin</strong></a></td>
-<td>Exposto por todos os Pins de filtro.</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-ipin"><strong>Ipin</strong></a></td>
+<td>Exposto por todos os pinos de filtro.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ipinconnection"><strong>IPinConnection</strong></a></td>
-<td>Reconecta um PIN de entrada enquanto o filtro ainda está em execução.</td>
+<td>Reconecta um pino de entrada enquanto o filtro ainda está em execução.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ipinflowcontrol"><strong>IPinFlowControl</strong></a></td>
-<td>Bloqueia o fluxo de dados de um PIN de saída ativo.</td>
+<td>Bloqueia o fluxo de dados de um pino de saída ativo.</td>
 </tr>
 <tr class="even">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>IQualityControl</strong></a></td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol"><strong>Iqualitycontrol</strong></a></td>
 <td>Fornece suporte para controle de qualidade no grafo de filtro.</td>
 </tr>
 <tr class="odd">
-<td><a href="/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop"><strong>IQualProp</strong></a></td>
-<td>Recupera informações de desempenho de renderizadores de vídeo.</td>
+<td><a href="/previous-versions/windows/desktop/api/Amvideo/nn-amvideo-iqualprop"><strong>Iqualprop</strong></a></td>
+<td>Recupera informações de desempenho de renderadores de vídeo.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Control/nn-control-iqueuecommand"><strong>IQueueCommand</strong></a></td>
-<td>Enfileira um comando no grafo de filtro para processamento em um horário designado.</td>
+<td>Enfiltre um comando no grafo de filtro para processamento em um momento designado.</td>
 </tr>
 <tr class="odd">
-<td><a href="/windows/desktop/api/Strmif/nn-strmif-ireferenceclock"><strong>IReferenceClock</strong></a></td>
-<td>Fornece o tempo de referência para o gráfico de filtro.</td>
+<td><a href="/windows/desktop/api/Strmif/nn-strmif-ireferenceclock"><strong>Ireferenceclock</strong></a></td>
+<td>Fornece o tempo de referência para o grafo de filtro.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ireferenceclocktimercontrol"><strong>IReferenceClockTimerControl</strong></a></td>
-<td>Altera o período de timer usado por um relógio de referência.</td>
+<td>Altera o período de temporizador usado por um relógio de referência.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iregisterserviceprovider"><strong>IRegisterServiceProvider</strong></a></td>
-<td>Registra um objeto como um serviço com o Gerenciador de gráfico de filtro.</td>
+<td>Registra um objeto como um serviço com o Gerenciador Graph Filtro.</td>
 </tr>
 <tr class="even">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-iresourceconsumer"><strong>IResourceConsumer</strong></a></td>
@@ -781,7 +781,7 @@ Preterido.
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/vpconfig/nn-vpconfig-ivpconfig"><strong>IVPConfig</strong></a></td>
-<td>Permite que uma porta de vídeo se comunique com o filtro de mixer de sobreposição.</td>
+<td>permite que uma porta de vídeo se comunique com o filtro de Mixer de sobreposição.</td>
 </tr>
 <tr class="odd">
 <td><a href="/windows/desktop/api/Strmif/nn-strmif-ivpmanager"><strong>IVPManager</strong></a></td>
@@ -789,7 +789,7 @@ Preterido.
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/Vpnotify/nn-vpnotify-ivpnotify"><strong>IVPNotify</strong></a></td>
-<td>Habilita o mixer de sobreposição para controlar as propriedades de um dispositivo de hardware que usa uma porta de vídeo.</td>
+<td>habilita o Mixer de sobreposição para controlar as propriedades de um dispositivo de hardware que usa uma porta de vídeo.</td>
 </tr>
 <tr class="odd">
 <td><a href="/previous-versions/windows/desktop/api/vpnotify/nn-vpnotify-ivpnotify2"><strong>IVPNotify2</strong></a></td>
@@ -797,7 +797,7 @@ Preterido.
 </tr>
 <tr class="even">
 <td><a href="/previous-versions/windows/desktop/api/amxmlgraphbuilder/nn-amxmlgraphbuilder-ixmlgraphbuilder"><strong>IXMLGraphBuilder</strong></a></td>
-<td>Mantém um grafo de filtro do DirectShow usando um formato de arquivo XML.
+<td>mantém um DirectShow gráfico de filtro usando um formato de arquivo XML.
 <blockquote>
 [!Note]<br />
 Preterido.

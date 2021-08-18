@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 329d638f1b5be97e5b441aa4e84825fe59a4a3f0
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 383a8fc0379ca81abb9ad0a88edab8750661bdfa429e32e7e91d193aa0fd2938
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105757134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146169"
 ---
 # <a name="unsigned-attribute"></a>atributo não assinado
 
@@ -67,10 +67,10 @@ Quando você usa o [**/Char**](-char.md)do compilador de MIDL, os tipos de carac
 [Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**int**](int.md)
+[**INT**](int.md)
 </dt> <dt>
 
-[**Longas**](long.md)
+[**long**](long.md)
 </dt> <dt>
 
 [**short**](short.md)
@@ -85,9 +85,9 @@ Quando você usa o [**/Char**](-char.md)do compilador de MIDL, os tipos de carac
 [**WCHAR \_ t**](wchar-t.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

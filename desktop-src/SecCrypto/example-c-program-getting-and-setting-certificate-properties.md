@@ -1,27 +1,27 @@
 ---
-description: Obtém e define as propriedades do certificado e ilustra as seguintes tarefas e funções de CryptoAPI.
+description: Obtém e define as propriedades do certificado e ilustra as seguintes tarefas e funções CryptoAPI.
 ms.assetid: 4cc20a59-d8e9-4c9b-9438-21bccbbe4a64
-title: 'Programa C de exemplo: obtendo e definindo propriedades de certificado'
+title: 'Exemplo de programa C: obter e definir propriedades de certificado'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99ac3d865eb90f57f1c687dbf58e89a2725066aa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f4197d4ba716f780fec419aaf9588807d379ac85ccbfdb95535936539129dbb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011714"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007664"
 ---
-# <a name="example-c-program-getting-and-setting-certificate-properties"></a>Programa C de exemplo: obtendo e definindo propriedades de certificado
+# <a name="example-c-program-getting-and-setting-certificate-properties"></a>Exemplo de programa C: obter e definir propriedades de certificado
 
-O exemplo a seguir obtém e define as propriedades do certificado e ilustra as seguintes tarefas e funções do [*CryptoAPI*](../secgloss/c-gly.md) .
+O exemplo a seguir obtém e define propriedades de certificado e ilustra as seguintes tarefas e [*funções CryptoAPI.*](../secgloss/c-gly.md)
 
--   Abrir um repositório do sistema usando o [**CertOpenSystemStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea).
--   Usando [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) para listar todos os certificados no armazenamento aberto.
--   Recuperando e imprimindo o nome da entidade do certificado usando [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
--   Definir a propriedade [*uso avançado de chave*](../secgloss/e-gly.md) em certificados usando a função [**CertAddEnhancedKeyUsageIdentifier**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddenhancedkeyusageidentifier) .
--   Definindo a propriedade de nome de exibição no certificado usando [**CertSetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsetcertificatecontextproperty).
+-   Abrir um repositório do sistema usando [**CertOpenSystemStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopensystemstorea)
+-   Usando [**CertEnumCertificatesInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certenumcertificatesinstore) para listar todos os certificados no repositório aberto.
+-   Recuperar e imprimir o nome da assunto do certificado usando [**CertGetNameString**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetnamestringa).
+-   Definir a [*propriedade de uso de chave*](../secgloss/e-gly.md) aprimorada em certificados usando a função [**CertAddEnhancedKeyUsageIdentifier.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certaddenhancedkeyusageidentifier)
+-   Definir a propriedade de nome de exibição no certificado usando [**CertSetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certsetcertificatecontextproperty).
 -   Recuperando as propriedades de um certificado usando [**CertGetCertificateContextProperty**](/windows/desktop/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty).
--   Fechando um repositório de certificados usando [**CertCloseStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) com o \_ \_ \_ sinalizador sinalizador de verificação do repositório de fechamento de certificado \_ .
+-   Fechar um repositório de certificados [**usando CertCloseStore com**](/windows/desktop/api/Wincrypt/nf-wincrypt-certclosestore) o sinalizador CERT \_ CLOSE STORE CHECK \_ \_ \_ FLAG.
 
 
 ```C++

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e4aa5fb9398478e4b91fb8f36b8cf96a244935fd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8ff893bdd3fa5ec5b9a42c02dfe6d3bd994e7d8fc9e680d3162c49f07c1c5ec8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021974"
 ---
 # <a name="upn-suffixes-attribute"></a>UPN-Suffixes atributo
 
@@ -109,7 +109,7 @@ A lista de sufixos de nome de entidade de usuário para um domínio.
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classes usadas em        | [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> |
+| Classes usadas em        | [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ A lista de sufixos de nome de entidade de usuário para um domínio.
 | ID do link                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| É de valor único       | Falso                                                                                                                        |
+| Tem valor único       | Falso                                                                                                                        |
 | É indexado             | Falso                                                                                                                        |
-| No catálogo global      | Falso                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                 |
+| No Catálogo Global      | Falso                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classes usadas em        | [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> |
+| Classes usadas em        | [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ A lista de sufixos de nome de entidade de usuário para um domínio.
 | ID do link                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| É de valor único       | Falso                                                                                                                        |
+| Tem valor único       | Falso                                                                                                                        |
 | É indexado             | Falso                                                                                                                        |
-| No catálogo global      | Falso                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                 |
+| No Catálogo Global      | Falso                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classes usadas em        | [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> |
+| Classes usadas em        | [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ A lista de sufixos de nome de entidade de usuário para um domínio.
 | ID do link                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| É de valor único       | Falso                                                                                                                        |
+| Tem valor único       | Falso                                                                                                                        |
 | É indexado             | Falso                                                                                                                        |
-| No catálogo global      | Falso                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                 |
+| No Catálogo Global      | Falso                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classes usadas em        | [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> |
+| Classes usadas em        | [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ A lista de sufixos de nome de entidade de usuário para um domínio.
 | ID do link                | \-                                                                                                                           |
 | MAPI-Id                | \-                                                                                                                           |
 | System-Only            | Falso                                                                                                                        |
-| É de valor único       | Falso                                                                                                                        |
+| Tem valor único       | Falso                                                                                                                        |
 | É indexado             | Falso                                                                                                                        |
-| No catálogo global      | Falso                                                                                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                 |
+| No Catálogo Global      | Falso                                                                                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                 |
 | Range-Lower            | \-                                                                                                                           |
 | Range-Upper            | \-                                                                                                                           |
 | Search-Flags           | 0x00000000                                                                                                                   |
 | System-Flags           | 0x00000010                                                                                                                   |
-| Classes usadas em        | [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> |
+| Classes usadas em        | [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> [**Unidade organizacional**](c-organizationalunit.md)<br/> |
 
 
 

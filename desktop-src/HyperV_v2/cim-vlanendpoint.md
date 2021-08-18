@@ -20,12 +20,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 0f7b0d1318e4c24ab7381032877d16a8ea83868b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: caaedae456ded5b918a19b09f18ebcf7f32c0edf2c0eff6c16d8ff98519b1dd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068496"
 ---
 # <a name="cim_vlanendpoint-class"></a>\_Classe CIM VLANEndpoint
 
@@ -119,7 +119,7 @@ O modo de VLAN solicitado para o ponto de extremidade.
 
 <span id="Dot1Q_Tunnel"></span><span id="dot1q_tunnel"></span><span id="DOT1Q_TUNNEL"></span>
 
-**Túnel Dot1Q** (6)
+**Tunnel Dot1Q** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -330,7 +330,7 @@ O modo de VLAN atual para o ponto de extremidade.
 
 <span id="Dot1Q_Tunnel"></span><span id="dot1q_tunnel"></span><span id="DOT1Q_TUNNEL"></span>
 
-**Túnel Dot1Q** (6)
+**Tunnel Dot1Q** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -480,7 +480,7 @@ O tipo de encapsulamento de VLAN que é suportado pelo ponto de extremidade de V
 
 <dl> <dt>
 
-[**CIM \_ ProtocolEndpoint**](cim-protocolendpoint.md)
+[**Protocolo \_ CIMEndpoint**](cim-protocolendpoint.md)
 </dt> </dl>
 
  

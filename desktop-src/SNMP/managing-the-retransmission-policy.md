@@ -4,12 +4,12 @@ description: O aplicativo WinSNMP pode solicitar que a implementação do Micros
 ms.assetid: 1f1a9589-3566-4d90-ac4d-7acf69f34676
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f2e47d983f8da62ccb8ffbe9c20b35c71bfbb70
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 63737f8cb4a0fcdb8c6e3824d07cbc7c592c1f7e9813e8751197fcd1d64ad786
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009424"
 ---
 # <a name="managing-the-retransmission-policy"></a>Gerenciando a política de retransmissão
 
@@ -26,7 +26,7 @@ A implementação identifica o modo de retransmissão padrão em um valor de ret
 
 
 
- 
+ 
 
 Um aplicativo WinSNMP pode recuperar a qualquer momento o modo de retransmissão atual em vigor para a implementação chamando a função [**SnmpGetRetransmitMode**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpgetretransmitmode) . A API WinSNMP fornece outras [funções de banco de dados](winsnmp-functions.md) que simplificam o gerenciamento da política de retransmissão.
 
@@ -38,9 +38,9 @@ A qualquer momento durante a execução do programa, o aplicativo WinSNMP pode a
 
 O aplicativo pode executar sua própria política de retransmissão. Nesse caso, a execução pode ou não ser baseada nos valores no banco de dados.
 
- 
+ 
 
- 
+ 
 
 
 

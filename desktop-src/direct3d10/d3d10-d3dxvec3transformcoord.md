@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 5b3e763d87503f9ca71911ad40ccf3c6ae9ca722
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b50c6680a52ef64e46e8dace325f124362e4efa79576e0d386c445a3766bf943
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729906"
 ---
 # <a name="d3dxvec3transformcoord-function-d3dx10mathh"></a>Função D3DXVec3TransformCoord (D3DX10Math. h)
 
@@ -90,7 +90,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

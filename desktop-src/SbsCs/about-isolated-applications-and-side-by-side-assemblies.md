@@ -1,27 +1,27 @@
 ---
-description: Os aplicativos isolados e os assemblies lado a lado fornecem uma solução que reduz conflitos de controle de versão de DLL. Eles permitem que os aplicativos compartilhem assemblies com segurança. Para obter mais informações, consulte assemblies compartilhados.
+description: Aplicativos isolados e assemblies lado a lado fornecem uma solução que reduz conflitos de versão de DLL. Eles permitem que os aplicativos compartilhem assemblies com segurança. Para obter mais informações, consulte Assemblies compartilhados.
 ms.assetid: 0fb0d9c2-9f6d-4fcd-a6c6-9ba8fe9f5fb5
 title: Sobre aplicativos isolados e assemblies lado a lado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c9099ca2e41d61c84e2952661b33ca008651f8a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 08ab72689173d4e8942d10dfc62259091574634227c3f4d252b0d87853ec9be7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142659"
 ---
 # <a name="about-isolated-applications-and-side-by-side-assemblies"></a>Sobre aplicativos isolados e assemblies lado a lado
 
-[Os aplicativos isolados e os](isolated-applications.md) assemblies lado a lado fornecem uma solução que reduz [*conflitos de controle*](d-sbscs-gly.md) [de](about-side-by-side-assemblies-.md) versão de dll. Eles permitem que os aplicativos compartilhem assemblies com segurança. Para obter mais informações, consulte [assemblies compartilhados](/windows/desktop/Msi/shared-assemblies).
+[Aplicativos isolados](isolated-applications.md) [e assemblies lado](about-side-by-side-assemblies-.md) a lado fornecem uma solução que reduz conflitos de [*versão de DLL.*](d-sbscs-gly.md) Eles permitem que os aplicativos compartilhem assemblies com segurança. Para obter mais informações, consulte [Assemblies compartilhados](/windows/desktop/Msi/shared-assemblies).
 
-Um assembly é uma unidade fundamental para nomeação, vinculação, controle de versão, implantação ou configuração de um bloco de código de programação. Aplicativos com funcionalidade comum podem executar blocos compartilhados de código de programação que são chamados de módulos ou assemblies de código. Esses assemblies de código podem ser colocados em DLLs ou assemblies COM. A infraestrutura para o compartilhamento seguro de assemblies é conhecida como compartilhamento de assembly lado a lado.
+Um assembly é uma unidade fundamental para nomear, vincular, controle de versão, implantar ou configurar um bloco de código de programação. Aplicativos com funcionalidade comum podem executar blocos compartilhados de código de programação que são chamados de módulos ou assemblies de código. Esses assemblies de código podem ser colocados em assemblies COM ou DLLs. A infraestrutura para o compartilhamento seguro de assemblies é conhecida como compartilhamento de assembly lado a lado.
 
-[Assemblies lado a lado](about-side-by-side-assemblies-.md) são assemblies de código descritos por [manifestos](manifests.md) e criados para que várias versões possam ser executadas ao mesmo tempo sem entrar em conflito entre si. Quando os desenvolvedores criam manifestos e escrevem aplicativos para usar o [compartilhamento de assembly lado a lado](side-by-side-assembly-sharing.md), várias versões de assembly podem ser executadas no sistema e cada aplicativo pode especificar qual versão de assembly deve ser usada.
+[Assemblies lado a lado](about-side-by-side-assemblies-.md) são assemblies de código descritos por manifestos e autorados para que várias versões possam ser [executados](manifests.md) ao mesmo tempo sem conflitos entre si. Quando os desenvolvedores escrevem manifestos e escrevem aplicativos para usar o compartilhamento de [assembly](side-by-side-assembly-sharing.md)lado a lado, várias versões de assembly podem ser executados no sistema e cada aplicativo pode especificar qual versão de assembly ele deve usar.
 
-Um [*assembly lado a lado*](s-sbscs-gly.md) típico é uma única DLL com um único manifesto. Os assemblies lado a lado armazenam as informações sobre associação e ativação COM, tradicionalmente salvas no registro, em manifestos. Em alguns casos, as versões do assembly especificado em manifestos podem ser alteradas, em uma base global ou por aplicativo, por editores de assembly, desenvolvedores de aplicativos ou administradores. Para obter mais informações, consulte [configuração padrão](default-configuration.md), [configuração do editor](publisher-configuration.md)e [configuração por aplicativo](per-application-configuration.md).
+Um assembly lado a [*lado típico é*](s-sbscs-gly.md) uma única DLL com um único manifesto. Assemblies lado a lado armazenam as informações sobre associação e ativação COM, tradicionalmente salvas no Registro, em manifestos. Em alguns casos, as versões do assembly especificado nos manifestos podem ser alteradas, global ou por aplicativo, por editores de assembly, desenvolvedores de aplicativos ou administradores. Para obter mais informações, consulte [configuração padrão,](default-configuration.md)configuração [do](publisher-configuration.md)publicador e [configuração por aplicativo.](per-application-configuration.md)
 
-Os desenvolvedores podem usar os assemblies lado a lado fornecidos pela Microsoft ou outros publicadores de assembly lado a lado, em seus aplicativos. Por exemplo, os desenvolvedores podem obter a funcionalidade dos controles comuns atualizados, como eles, criando seus aplicativos para usar o assembly lado a lado que contém Comctl32.dll 6,0. Para obter a lista de assemblies e manifestos lado a lado que acompanham o Windows XP, consulte [assemblies lado a lado da Microsoft com suporte](supported-microsoft-side-by-side-assemblies.md). Os desenvolvedores também podem criar seus próprios assemblies lado a lado. Para obter mais informações, consulte [diretrizes para criar assemblies lado a lado](guidelines-for-creating-side-by-side-assemblies.md).
+Os desenvolvedores podem usar os assemblies lado a lado fornecidos pela Microsoft ou outros editores de assembly lado a lado em seus aplicativos. Por exemplo, os desenvolvedores podem obter a funcionalidade dos controles comuns atualizados, como temas, projetando seus aplicativos para usar o assembly lado a lado que contém Comctl32.dll 6.0. Para ver a lista de assemblies e manifestos lado a lado que acompanham o Windows XP, consulte Assemblies lado a lado da [Microsoft com suporte.](supported-microsoft-side-by-side-assemblies.md) Os desenvolvedores também podem criar seus próprios assemblies lado a lado. Para obter mais informações, [consulte Diretrizes para criar assemblies](guidelines-for-creating-side-by-side-assemblies.md)lado a lado.
 
  
 

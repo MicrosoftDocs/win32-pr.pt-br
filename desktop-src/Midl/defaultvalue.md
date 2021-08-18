@@ -1,9 +1,9 @@
 ---
 title: atributo defaultvalue
-description: O atributo \ DefaultValue \ permite que você especifique um valor padrão para um parâmetro opcional tipado.
+description: O atributo \ defaultvalue\ permite que você especifique um valor padrão para um parâmetro opcional digitado.
 ms.assetid: a974a0f7-7b08-4f17-bb28-0e23e6aa97db
 keywords:
-- atributo DefaultValue de MIDL
+- atributo defaultvalue MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 04f4efaac16325ec77721665a4dee14c9514a192
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 97f38fe7dfc99c5c9c1c6a7cae1a5fdd5750c5f3e9af37e56706b27300876da1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104294008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067346"
 ---
 # <a name="defaultvalue-attribute"></a>atributo defaultvalue
 
-O atributo **\[ DefaultValue \]** permite que você especifique um valor padrão para um parâmetro opcional tipado.
+O **\[ atributo \] defaultvalue** permite que você especifique um valor padrão para um parâmetro opcional digitado.
 
 ``` syntax
 interface interface-name
@@ -37,7 +37,7 @@ interface interface-name
 
 <dl> <dt>
 
-*nome da interface* 
+*interface-name* 
 </dt> <dd>
 
 Especifica o nome da interface.
@@ -51,59 +51,59 @@ Especifica o tipo de retorno da função.
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
-Especifica o nome da função à qual o atributo **\[ DefaultValue \]** será aplicado.
+Especifica o nome da função à qual o **\[ atributo defaultvalue \]** será aplicado.
 
 </dd> <dt>
 
-*obrigatório-param-List* 
+*mandatory-param-list* 
 </dt> <dd>
 
-Especifica um ou mais parâmetros necessários.
+Especifica em ou mais parâmetros necessários.
 
 </dd> <dt>
 
 *lista de atributos* 
 </dt> <dd>
 
-Especifica uma lista de um ou mais atributos, separados por vírgulas, que se aplicam ao parâmetro.
+Especifica uma lista de um ou mais atributos, separados por vírgulas, que se aplicam ao parâmetro .
 
 </dd> <dt>
 
-*tipo de parâmetro* 
+*param-type* 
 </dt> <dd>
 
 Indica o tipo do parâmetro opcional.
 
 </dd> <dt>
 
-*nome do parâmetro* 
+*param-name* 
 </dt> <dd>
 
 Especifica o nome do parâmetro opcional.
 
 </dd> <dt>
 
-*opcional-lista de parâmetros* 
+*optional-param-list* 
 </dt> <dd>
 
-Especifica zero ou mais parâmetros adicionais, cada um dos quais deve ter um valor padrão.
+Especifica zero ou mais parâmetros adicionais, cada um deles deve ter um valor padrão.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O valor padrão especificado para o parâmetro pode ser qualquer constante ou uma expressão que seja resolvida para uma constante, que pode ser representada por uma **variante**. Especificamente, você não pode aplicar o atributo **\[ \] DefaultValue** a um parâmetro que é uma estrutura, uma matriz ou um tipo **SafeArray** .
+O valor padrão especificado para o parâmetro pode ser qualquer constante ou uma expressão que é resolvida para uma constante, que pode ser representada por **uma VARIANT**. Especificamente, você não pode aplicar o **\[ atributo \] defaultvalue** a um parâmetro que seja uma estrutura, uma matriz ou um tipo **SAFEARRAY.**
 
-O compilador MIDL aceita a seguinte ordenação de parâmetro (da esquerda para a direita):
+O compilador MIDL aceita a seguinte ordenação de parâmetros (da esquerda para a direita):
 
-1.  Parâmetros necessários (parâmetros que não têm os atributos **\[ DefaultValue \]** ou **\[** [**optional**](optional.md) **\]** ),
-2.  parâmetros opcionais com ou sem o atributo **\[ DefaultValue \]** ,
-3.  parâmetros com o atributo **\[ opcional \]** e sem o atributo **\[ DefaultValue \]** ,
-4.  **\[** parâmetro [**LCID**](lcid.md) **\]** , se houver,
-5.  **\[**[**retval**](retval.md) **\]** meter
+1.  Parâmetros necessários (parâmetros que não têm o valor padrão **\[ \] ou** atributos **\[** [**opcionais),**](optional.md) **\]**
+2.  parâmetros opcionais com ou sem o **\[ atributo defaultvalue, \]**
+3.  parâmetros com o **\[ atributo opcional \]** e sem o atributo **\[ defaultvalue, \]**
+4.  **\[**[**Parâmetro lcid,**](lcid.md) **\]** se for o caso,
+5.  **\[**[**retval**](retval.md) **\]** Parâmetro
 
 ## <a name="examples"></a>Exemplos
 
@@ -136,27 +136,27 @@ interface QueryDef : IUnknown
 [Gerando uma biblioteca de tipos com MIDL](generating-a-type-library-with-midl-2.md)
 </dt> <dt>
 
-[**interface**](interface.md)
+[**Interface**](interface.md)
 </dt> <dt>
 
-[**LCID**](lcid.md)
+[**Lcid**](lcid.md)
 </dt> <dt>
 
-[**adicional**](optional.md)
+[**Opcional**](optional.md)
 </dt> <dt>
 
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
 [**retval**](retval.md)
 </dt> <dt>
 
-[TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
+[Typeflags](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

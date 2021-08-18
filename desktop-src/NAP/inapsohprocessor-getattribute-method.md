@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ed2d7d9cbafa5a44e0f6c24f4c42959c456722a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ba1b86ca1eab51fdca382a758a9a65650af2249eb0d605c24274c84d1f95669
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105810157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939563"
 ---
 # <a name="inapsohprocessorgetattribute-method"></a>Método INapSoHProcessor:: GetAttribute
 
@@ -70,7 +70,7 @@ Um ponteiro para um ponteiro para uma estrutura [**SoHAttributeValue**](sohattri
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Outros códigos de erro específicos de COM também podem ser retornados.
 
@@ -78,7 +78,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 | Código de retorno                                                                                     | Descrição                                                        |
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>           | Operação bem-sucedida.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>           | Êxito na operação.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
 
@@ -92,9 +92,9 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 

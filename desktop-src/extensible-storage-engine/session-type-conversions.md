@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/Dn351173(v=EXCHG.10)
 ms:contentKeyID: 55104066
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 1564da6f146b14e31c10c7070eaa0bc574ef4ce0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 059575dcbf13ad06be71cc5015eeaebf34c2024379d8f484d93ac85cc0a72154
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727836"
 ---
 # <a name="session-type-conversions"></a>Conversões de tipo de sessão
 

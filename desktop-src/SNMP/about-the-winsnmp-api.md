@@ -13,18 +13,18 @@ ms.locfileid: "119009834"
 ---
 # <a name="about-the-winsnmp-api"></a>Sobre a API WinSNMP
 
-\[O SNMP está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, [Windows gerenciamento remoto,](/windows/desktop/WinRM/portal)que é a implementação da Microsoft do WS-Man.\]
+\[O SNMP está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. em vez disso, use [Gerenciamento Remoto do Windows](/windows/desktop/WinRM/portal), que é a implementação da Microsoft do WS-Man.\]
 
 A API WinSNMP é uma interface para o desenvolvimento de aplicativos de gerenciamento de rede habilitados para SNMP.
 
-A API winSNMP fornece os seguintes recursos:
+A API WinSNMP fornece os seguintes recursos:
 
 -   Tecnologia de habilitação de SNMP para aplicativos de gerenciamento de rede
--   Suporte a SNMP versão 1 (SNMPv1) e SNMP versão 2C (SNMPv2C)
+-   Suporte para SNMP versão 1 (SNMPv1) e SNMP versão 2C (SNMPv2C)
 
-Além das operações do gerenciador SNMP, a API WinSNMP versão 2.0 também dá suporte a operações de agente SNMP.
+Além das operações do Gerenciador SNMP, a versão 2,0 da API WinSNMP também dá suporte a operações de agente SNMP.
 
-A API winSNMP dá suporte a aplicativos de 32 bits e é executada em ambientes de thread único e multi-thread. O suporte para a API WinSNMP está disponível para aplicativos que são executados no ambiente operacional Windows 2000 ou posterior.
+A API WinSNMP dá suporte a aplicativos de 32 bits e é executada em ambientes de thread único e multi-threaded. o suporte para a API WinSNMP está disponível para aplicativos que são executados no ambiente operacional Windows 2000 ou posterior.
 
  
 

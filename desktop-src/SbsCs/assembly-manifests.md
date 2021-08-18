@@ -4,12 +4,12 @@ ms.assetid: f7973019-0a80-498e-adf1-c66267c813f4
 title: Manifestos de assembly
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 254702d5044331fa5d47def815556dbd8edef2f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5d7c6739bc83e56a42a926ca6aecb739fc41bbf39225cc531afc7afc6706ccc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119142509"
 ---
 # <a name="assembly-manifests"></a>Manifestos de assembly
 
@@ -23,66 +23,66 @@ Os manifestos de assembly têm os seguintes elementos e atributos.
 
 | Elemento                           | Atributos                | Obrigatório |
 |-----------------------------------|---------------------------|----------|
-| **)**                      |                           | Yes      |
-|                                   | **manifestVersion**       | Yes      |
-| **não herdado**                 |                           | No       |
-| **assemblyIdentity**              |                           | Yes      |
+| **)**                      |                           | Sim      |
+|                                   | **manifestVersion**       | Sim      |
+| **não herdado**                 |                           | Não       |
+| **assemblyIdentity**              |                           | Sim      |
 |                                   | **tipo**                  | Sim      |
 |                                   | **name**                  | Sim      |
-|                                   | **linguagem**              | No       |
-|                                   | **processorArchitecture** | No       |
-|                                   | **version**               | Yes      |
-|                                   | **publicKeyToken**        | No       |
-| **Estados**                    |                           | No       |
-| **dependentAssembly**             |                           | No       |
-| **file**                          |                           | No       |
+|                                   | **linguagem**              | Não       |
+|                                   | **processorArchitecture** | Não       |
+|                                   | **version**               | Sim      |
+|                                   | **publicKeyToken**        | Não       |
+| **Estados**                    |                           | Não       |
+| **dependentAssembly**             |                           | Não       |
+| **file**                          |                           | Não       |
 |                                   | **name**                  | Sim      |
-|                                   | **hashalg**               | No       |
-|                                   | **hash**                  | No       |
-| **comClass**                      |                           | No       |
-|                                   | **descrição**           | No       |
-|                                   | **CLSID**                 | Yes      |
-|                                   | **threadingModel**        | No       |
-|                                   | **tlbid**                 | No       |
-|                                   | **ProgID**                | No       |
-|                                   | **miscStatus**            | No       |
-|                                   | **miscStatusIcon**        | No       |
-|                                   | **miscStatusContent**     | No       |
-|                                   | **miscStatusDocPrint**    | No       |
-|                                   | **miscStatusDocPrint**    | No       |
-| **importação**                       |                           | No       |
-|                                   | **tlbid**                 | Yes      |
-|                                   | **version**               | Yes      |
-|                                   | **helpdir**               | Yes      |
-|                                   | **identificação**            | No       |
-|                                   | **sinalizadores**                 | No       |
-| **comInterfaceExternalProxyStub** |                           | No       |
-|                                   | **IID**                   | Yes      |
-|                                   | **baseInterface**         | No       |
-|                                   | **numMethods**            | No       |
-|                                   | **name**                  | No       |
-|                                   | **tlbid**                 | No       |
-|                                   | **proxyStubClsid32**      | No       |
-| **comInterfaceProxyStub**         |                           | No       |
-|                                   | **IID**                   | Yes      |
+|                                   | **hashalg**               | Não       |
+|                                   | **hash**                  | Não       |
+| **comClass**                      |                           | Não       |
+|                                   | **descrição**           | Não       |
+|                                   | **CLSID**                 | Sim      |
+|                                   | **threadingModel**        | Não       |
+|                                   | **tlbid**                 | Não       |
+|                                   | **ProgID**                | Não       |
+|                                   | **miscStatus**            | Não       |
+|                                   | **miscStatusIcon**        | Não       |
+|                                   | **miscStatusContent**     | Não       |
+|                                   | **miscStatusDocPrint**    | Não       |
+|                                   | **miscStatusDocPrint**    | Não       |
+| **importação**                       |                           | Não       |
+|                                   | **tlbid**                 | Sim      |
+|                                   | **version**               | Sim      |
+|                                   | **helpdir**               | Sim      |
+|                                   | **identificação**            | Não       |
+|                                   | **sinalizadores**                 | Não       |
+| **comInterfaceExternalProxyStub** |                           | Não       |
+|                                   | **IID**                   | Sim      |
+|                                   | **baseInterface**         | Não       |
+|                                   | **numMethods**            | Não       |
+|                                   | **name**                  | Não       |
+|                                   | **tlbid**                 | Não       |
+|                                   | **proxyStubClsid32**      | Não       |
+| **comInterfaceProxyStub**         |                           | Não       |
+|                                   | **IID**                   | Sim      |
 |                                   | **name**                  | Sim      |
-|                                   | **tlbid**                 | No       |
-|                                   | **baseInterface**         | No       |
-|                                   | **numMethods**            | No       |
-|                                   | **proxyStubClsid32**      | No       |
-|                                   | **threadingModel**        | No       |
-| **windowClass**                   |                           | No       |
-|                                   | **versão**             | No       |
+|                                   | **tlbid**                 | Não       |
+|                                   | **baseInterface**         | Não       |
+|                                   | **numMethods**            | Não       |
+|                                   | **proxyStubClsid32**      | Não       |
+|                                   | **threadingModel**        | Não       |
+| **windowClass**                   |                           | Não       |
+|                                   | **versão**             | Não       |
 
 
 
  
 
-## <a name="file-location"></a>Local do arquivo
+## <a name="file-location"></a>Localização do arquivo
 
 Os manifestos de assembly podem ser instalados em três locais:
 
--   Como manifestos que acompanham [assemblies compartilhados](/windows/desktop/Msi/shared-assemblies), os manifestos de assembly devem ser instalados como um arquivo separado no cache de assembly lado a lado. Normalmente, essa é a pasta WinSxS no diretório do Windows.
+-   Como manifestos que acompanham [assemblies compartilhados](/windows/desktop/Msi/shared-assemblies), os manifestos de assembly devem ser instalados como um arquivo separado no cache de assembly lado a lado. normalmente, essa é a pasta WinSxS no diretório Windows.
 -   Como manifestos que acompanham [assemblies privados](/windows/desktop/Msi/private-assemblies), os manifestos de assembly devem ser instalados na estrutura de diretório do aplicativo. Normalmente, esse é um arquivo separado na mesma pasta que o arquivo executável do aplicativo.
 -   Como um recurso em uma DLL, o assembly está disponível para o uso particular da DLL. Um manifesto do assembly não pode ser incluído como um recurso em um EXE. Um arquivo EXE pode incluir um [manifesto do aplicativo](application-manifests.md) como um recurso.
 
@@ -96,7 +96,7 @@ Por exemplo, um manifesto do assembly que se refere a myAssembly usaria a seguin
 </dl>
 
 > [!Note]  
-> Por causa da maneira como pesquisas lado a lado para assemblies particulares, as seguintes restrições de nomenclatura se aplicam ao empacotar uma DLL como um assembly privado. Uma maneira recomendada de fazer isso é colocar o manifesto do assembly na DLL como um recurso. Nesse caso, a ID do recurso deve ser igual a 1 e o nome do assembly privado pode ser o mesmo que o nome da DLL. Por exemplo, se o nome da DLL for Microsoft.Windows.mysample.dll, o valor do atributo name usado no elemento **AssemblyIdentity** do manifesto também poderá ser Microsoft. Windows. MySample. Uma maneira alternativa é colocar o manifesto do assembly em um arquivo separado. Nesse caso, o nome do assembly e seu manifesto devem ser diferentes do nome da DLL. Por exemplo, Microsoft. Windows. mysampleAsm, Microsoft. Windows. mysampleAsm. manifest e Microsoft.Windows.Mysample.dll. Para obter mais informações sobre como as pesquisas lado a lado de assemblies particulares, consulte [sequência de pesquisa de assembly](assembly-searching-sequence.md).
+> Por causa da maneira como pesquisas lado a lado para assemblies particulares, as seguintes restrições de nomenclatura se aplicam ao empacotar uma DLL como um assembly privado. Uma maneira recomendada de fazer isso é colocar o manifesto do assembly na DLL como um recurso. Nesse caso, a ID do recurso deve ser igual a 1 e o nome do assembly privado pode ser o mesmo que o nome da DLL. Por exemplo, se o nome da DLL for Microsoft.Windows.mysample.dll, o valor do atributo name usado no elemento **AssemblyIdentity** do manifesto também poderá ser Microsoft. Windows. mysample. Uma maneira alternativa é colocar o manifesto do assembly em um arquivo separado. Nesse caso, o nome do assembly e seu manifesto devem ser diferentes do nome da DLL. Por exemplo, Microsoft. Windows. mysampleAsm, Microsoft. Windows. mysampleAsm. manifest e Microsoft.Windows.Mysample.dll. Para obter mais informações sobre como as pesquisas lado a lado de assemblies particulares, consulte [sequência de pesquisa de assembly](assembly-searching-sequence.md).
 
  
 
@@ -152,7 +152,7 @@ Este elemento não tem subelementos. O elemento **AssemblyIdentity** tem os segu
 | **tipo**                  | Especifica o tipo de assembly. O valor deve ser Win32 e em letras minúsculas. Obrigatórios.                                                                                                                                                                                                                                                                                                                                                         |
 | **name**                  | Nomeia exclusivamente o assembly. Use o seguinte formato para o nome do assembly: Organization.Division.Name. Por exemplo, Microsoft. Windows. mysampleAsm. Obrigatórios. Observe que, no caso de uma DLL empacotada como um assembly privado com um arquivo de manifesto separado, o nome do assembly deve ser diferente do nome da DLL e do manifesto.<br/>                                                                              |
 | **linguagem**              | Identifica o idioma do assembly. Opcional. Se o assembly for específico a um idioma, especifique o código de linguagem DHTML. No **AssemblyIdentity** de contexto def de um manifesto de assembly destinado para uso mundial (neutro à linguagem), omita o atributo language.<br/> Em um **AssemblyIdentity** de contexto de referência de um manifesto de assembly destinado para uso mundial (neutro à linguagem), defina o valor de idioma como " \* ".<br/> |
-| **processorArchitecture** | Especifica o processador. Os valores válidos são x86 para Windows de 32 bits e IA64 para o Windows de 64 bits. Opcional.                                                                                                                                                                                                                                                                                                                               |
+| **processorArchitecture** | Especifica o processador. os valores válidos são x86 para 32 bits Windows e ia64 para Windows de 64 bits. Opcional.                                                                                                                                                                                                                                                                                                                               |
 | **version**               | Especifica a versão do assembly. Use o formato de versão de quatro partes: mmmmm. NNNNN. Ooooo. ppppp. Cada uma das partes separadas por períodos pode ser de 0-65535 inclusive. Para obter mais informações, consulte [versões de assembly](assembly-versions.md). Obrigatórios.                                                                                                                                                                                               |
 | **publicKeyToken**        | Uma cadeia de caracteres hexadecimal de 16 caracteres que representa os últimos 8 bytes do hash SHA-1 da chave pública sob a qual o assembly está assinado. A chave pública usada para assinar o catálogo deve ter 2048 bits ou mais. Necessário para assemblies compartilhados lado a lado.                                                                                                                                                                                |
 
@@ -254,16 +254,16 @@ Se sua classe COM é uma classe OCX que requer a subchave do registro MiscStatus
 | islinkobject                 | islinkobject do OLEMISC \_                 |
 | inverso                    | OLEMISC \_                    |
 | activatewhenvisible          | OLEMISC \_ ACTIVATEWHENVISIBLE          |
-| renderingisdeviceindependent | OLEMISC \_ RENDERINGISDEVICEINDEPENDENT |
+| renderingisdeviceindependent | RENDERIZAÇÃO \_ OLEMISCISDEVICEINDEPENDENT |
 | invisibleatruntime           | OLEMISC \_ INVISIBLEATRUNTIME           |
 | alwaysrun                    | OLEMISC \_ ALWAYSRUN                    |
 | actslikebutton               | OLEMISC \_ ACTSLIKEBUTTON               |
 | actslikelabel                | OLEMISC \_ ACTSLIKELABEL                |
 | nouiactivate                 | OLEMISC \_ NOUIACTIVATE                 |
-| de alinhamento                    | OLEMISC de \_ alinhamento                    |
+| alinhável                    | OLEMISC \_ ALIGNABLE                    |
 | simpleframe                  | OLEMISC \_ SIMPLEFRAME                  |
 | setclientsitefirst           | OLEMISC \_ SETCLIENTSITEFIRST           |
-| ImeMode                      | TOLEMISC \_ IMEMODE                     |
+| Imemode                      | TOLEMISC \_ IMEMODE                     |
 | ignoreativatewhenvisible     | OLEMISC \_ IGNOREACTIVATEWHENVISIBLE    |
 | wantstomenumerge             | OLEMISC \_ WANTSTOMENUMERGE             |
 | supportsmultilevelundo       | OLEMISC \_ SUPPORTSMULTILEVELUNDO       |
@@ -274,28 +274,28 @@ Se sua classe COM é uma classe OCX que requer a subchave do registro MiscStatus
 
 </dd> <dt>
 
-<span id="typelib"></span><span id="TYPELIB"></span>**importação**
+<span id="typelib"></span><span id="TYPELIB"></span>**Typelib**
 </dt> <dd>
 
-Um subelemento de um elemento **File** . Opcional.
+Um subelemento de um **elemento de** arquivo. Opcional.
 
-O elemento **TypeLib** tem os atributos mostrados na tabela a seguir.
+O **elemento typelib** tem os atributos mostrados na tabela a seguir.
 
 
 
 | Atributo      | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **tlbid**      | A ID exclusiva da biblioteca de tipos. Obrigatórios.                                                                                                                                                                                                                                                                                                                                                                                    |
-| **version**    | O número de versão de duas partes da biblioteca de tipos. Se apenas o número de versão secundária aumentar, todos os recursos da biblioteca de tipos anteriores têm suporte de maneira compatível. Se o número de versão principal for alterado, o código compilado na biblioteca de tipos deverá ser recompilado. O número de versão da biblioteca de tipos pode ser diferente do número de versão do aplicativo. Obrigatórios.                                      |
-| **helpdir**    | O diretório em que o arquivo de ajuda para os tipos na biblioteca de tipos está localizado. Se o aplicativo oferecer suporte a bibliotecas de tipos para vários idiomas, as bibliotecas poderão se referir a nomes de arquivo diferentes no diretório do arquivo de ajuda. Se nenhum valor, especifique "". Obrigatórios.                                                                                                                                                          |
-| **identificação** | A representação de cadeia de caracteres hexadecimal do identificador de localidade (LCID). É um a quatro dígitos hexadecimais sem nenhum prefixo 0x e nenhum zero à esquerda. O LCID pode ter um identificador de subidioma neutro. Para obter mais informações, consulte [identificadores de localidade](/windows/desktop/Intl/locale-identifiers). Opcional.                                                                                                                                      |
-| **sinalizadores**      | A representação de cadeia de caracteres dos sinalizadores de biblioteca de tipos para esta biblioteca de tipos. Especificamente, deve ser um "RESTRICTED", "CONTROL", "HIDDEN" e "HASDISKIMAGE". Esses são os valores da enumeração [**LIBFLAGS**](/windows/win32/api/oaidl/ne-oaidl-libflags) e são os mesmos sinalizadores especificados no parâmetro *ULibFlags* do método [**ICreateTypeLib:: SetLibFlags**](/windows/win32/api/oaidl/nf-oaidl-icreatetypelib-setlibflags) . Opcional. |
+| **version**    | O número de versão de duas partes da biblioteca de tipos. Se apenas o número de versão secundária aumentar, todos os recursos da biblioteca de tipos anteriores serão compatíveis. Se o número de versão principal mudar, o código compilado na biblioteca de tipos deverá ser recompilado. O número de versão da biblioteca de tipos pode ser diferente do número de versão do aplicativo. Obrigatórios.                                      |
+| **helpdir**    | O diretório em que o arquivo de Ajuda para os tipos na biblioteca de tipos está localizado. Se o aplicativo for compatível com bibliotecas de tipos para vários idiomas, as bibliotecas poderão se referir a nomes de arquivo diferentes no diretório arquivo de Ajuda. Se nenhum valor, especifique "". Obrigatórios.                                                                                                                                                          |
+| **Resourceid** | A representação de cadeia de caracteres hexadecimal do LCID (identificador de localidade). São de um a quatro dígitos hexadecimais sem prefixo 0x e sem zeros à esquerda. O LCID pode ter um identificador de sublânguo neutro. Para obter mais informações, consulte [Identificadores de localidade](/windows/desktop/Intl/locale-identifiers). Opcional.                                                                                                                                      |
+| **sinalizadores**      | A representação de cadeia de caracteres dos sinalizadores de biblioteca de tipos para essa biblioteca de tipos. Especificamente, ele deve ser um de "RESTRICTED", "CONTROL", "HIDDEN" e "HASDISKIMAGE". Esses são os valores da enumeração [**LIBFLAGS**](/windows/win32/api/oaidl/ne-oaidl-libflags) e são os mesmos sinalizadores especificados no parâmetro *uLibFlags* do [**método ICreateTypeLib::SetLibFlags.**](/windows/win32/api/oaidl/nf-oaidl-icreatetypelib-setlibflags) Opcional. |
 
 
 
  
 
-O exemplo a seguir mostra um elemento **TypeLib** incluído em um elemento **File** .
+O exemplo a seguir mostra um **elemento typelib** incluído em um **elemento de** arquivo.
 
 ``` syntax
 <file name="sampleu.dll">
@@ -309,26 +309,26 @@ O exemplo a seguir mostra um elemento **TypeLib** incluído em um elemento **Fil
 <span id="comInterfaceExternalProxyStub"></span><span id="cominterfaceexternalproxystub"></span><span id="COMINTERFACEEXTERNALPROXYSTUB"></span>**comInterfaceExternalProxyStub**
 </dt> <dd>
 
-O **comInterfaceExternalProxyStub** é um subelemento de um elemento de **assembly** e é usado para interfaces de automação. Por exemplo, [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) e suas interfaces derivadas. Opcional.
+O **comInterfaceExternalProxyStub** é um subelemento de um elemento **assembly** e é usado para interfaces de automação. Por exemplo, [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) e suas interfaces derivadas. Opcional.
 
-A implementação padrão de stub de proxy é adequada para a maioria das interfaces de automação, como interfaces derivadas de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch). O stub de proxy de interface e todas as outras implementações de interface de stub de proxy externas devem ser listados no **comInterfaceExternalProxyStub**. O elemento **comInterfaceExternalProxyStub** tem os atributos mostrados na tabela a seguir.
+A implementação de proxy-stub padrão é adequada para a maioria das interfaces de automação, como interfaces derivadas de [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch). O stub de proxy de interface e todas as outras implementações de interface proxy-stub externos devem estar listados no **comInterfaceExternalProxyStub**. O **elemento comInterfaceExternalProxyStub** tem os atributos mostrados na tabela a seguir.
 
 
 
 | Atributo         | Descrição                                                                                                                                                                                 |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **IID**           | O IID da interface para a qual o proxy está sendo declarado. Obrigatórios. O valor deve estar no formato: "{IID}".                                                                         |
-| **baseInterface** | O IID da interface da qual o descrito pelo atributo **IID** é derivado. Esse atributo é opcional. O valor deve estar no formato: "{IID}".                            |
-| **numMethods**    | O número de métodos implementados pela interface. Esse atributo é opcional. O valor deve estar no formato: "n".                                                                       |
-| **name**          | Nome da interface como apareceria no código. Por exemplo, "IViewObject". Essa não deve ser uma cadeia de caracteres descritiva. Esse atributo é opcional. O valor deve estar no formato: "nome". |
-| **tlbid**         | A biblioteca de tipos que contém a descrição da interface especificada pelo atributo **IID** . Esse atributo é opcional. O valor deve estar no formato: "{TLBID}".                |
-| proxyStubClsid32  | Mapeia um IID para um CLSID em DLLs de proxy de 32 bits.                                                                                                                                                |
+| **Iid**           | O IID da interface para a qual o proxy está sendo declarado. Obrigatórios. O valor deve estar no formato: "{iid}".                                                                         |
+| **Baseinterface** | O IID da interface da qual o descrito pelo atributo **iid** é derivado. Esse atributo é opcional. O valor deve estar no formato: "{iid}".                            |
+| **numMethods**    | O número de métodos implementados pela interface . Esse atributo é opcional. O valor deve estar no formato: "n".                                                                       |
+| **name**          | Nome da interface como ela seria exibida no código. Por exemplo, "IViewObject". Isso não deve ser uma cadeia de caracteres descritiva. Esse atributo é opcional. O valor deve estar no formato: "name". |
+| **tlbid**         | A biblioteca de tipos que contém a descrição da interface especificada pelo atributo **iid.** Esse atributo é opcional. O valor deve estar no formato: "{tlbid}".                |
+| proxyStubClsid32  | Mapas um IID para um CLSID em DLLs de proxy de 32 bits.                                                                                                                                                |
 
 
 
  
 
-O exemplo a seguir mostra um elemento **comInterfaceExternalProxyStub** .
+O exemplo a seguir mostra **um elemento comInterfaceExternalProxyStub.**
 
 ``` syntax
 <comInterfaceExternalProxyStub 
@@ -343,11 +343,11 @@ O exemplo a seguir mostra um elemento **comInterfaceExternalProxyStub** .
 <span id="comInterfaceProxyStub"></span><span id="cominterfaceproxystub"></span><span id="COMINTERFACEPROXYSTUB"></span>**comInterfaceProxyStub**
 </dt> <dd>
 
-Um subelemento de um elemento **File** . Opcional.
+Um subelemento de um **elemento de** arquivo. Opcional.
 
-Se um arquivo no assembly implementar um stub de proxy, a marca de arquivo correspondente deverá incluir um subelemento **comInterfaceProxyStub** com atributos idênticos a um elemento **comInterfaceProxyStub** . O marshaling de interfaces entre processos e threads pode não funcionar conforme o esperado se você omitir algumas das dependências **comInterfaceProxyStub** para seu componente.
+Se um arquivo no assembly implementar um stub de proxy, a marca de arquivo correspondente deverá incluir um subelemento **comInterfaceProxyStub** com atributos idênticos a um **elemento comInterfaceProxyStub.** O marshaling de interfaces entre processos e threads pode não funcionar conforme o esperado se você omitir algumas das dependências **comInterfaceProxyStub** para seu componente.
 
-O elemento **comInterfaceProxyStub** tem os atributos a seguir.
+O **elemento comInterfaceProxyStub** tem os seguintes atributos.
 
 
 
@@ -358,7 +358,7 @@ O elemento **comInterfaceProxyStub** tem os atributos a seguir.
 | **tlbid**            | A biblioteca de tipos que contém a descrição da interface especificada pelo atributo **IID** . Esse atributo é opcional. O valor deve estar no formato: "{TLBID}".                                                                                                                                 |
 | **baseInterface**    | O IID da interface da qual o descrito pelo atributo **IID** é derivado. Esse atributo é opcional. O valor deve estar no formato: "{IID}".                                                                                                                                            |
 | **numMethods**       | O número de métodos implementados pela interface. Esse atributo é opcional. O valor deve estar no formato: "n".                                                                                                                                                                                       |
-| **proxyStubClsid32** | Mapeia um IID para um CLSID em DLLs de proxy de 32 bits.                                                                                                                                                                                                                                                                |
+| **proxyStubClsid32** | Mapas um IID a um CLSID em DLLs de proxy de 32 bits.                                                                                                                                                                                                                                                                |
 | **threadingModel**   | O modelo de Threading usado por classes COM em processo. Se essa propriedade for nula, nenhum modelo de Threading será usado. O componente é criado no thread principal do cliente e as chamadas de outros threads são empacotadas para esse thread. Opcional. Os valores válidos são: "Apartment", "Free", "both" e "neutral". |
 
 

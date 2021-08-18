@@ -4,29 +4,29 @@ description: Tipos de gerenciamento
 ms.assetid: 9C392913-C1CA-4988-978C-8AC030FD0A26
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 974bb7ced2a18a533f7b732a52d9c528419dbb62
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: eeece6f09151b82056206fefe3d3a3775dd2d004815eac8fec299ee4a8708ad0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068866"
 ---
 # <a name="management-types"></a>Tipos de gerenciamento
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**\_tipo de endereço de DL \_**](/windows/win32/api/fwpmtypes/ne-fwpmtypes-dl_address_type)
--   [**\_tipo de \_ recurso de rede FWPM APPC \_ \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_appc_network_capability_type)
--   [**FWPM \_ alterar \_ tipo**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_change_type)
--   [**\_tipo de \_ evento de conexão FWPM \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_connection_event_type)
--   [**\_opção de mecanismo FWPM \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_engine_option)
--   [**\_tipo de campo FWPM \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_field_type)
--   [**\_tipo de \_ evento FWPM NET \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_net_event_type)
--   [**\_tipo de \_ contexto do provedor FWPM \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_provider_context_type)
--   [**\_estado do serviço FWPM \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_service_state)
--   [**\_tipo de \_ porta do sistema FWPM \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_system_port_type)
--   [**\_tipo de \_ evento FWPM VSWITCH \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_vswitch_event_type)
+-   [**TIPO DE ENDEREÇO DL \_ \_**](/windows/win32/api/fwpmtypes/ne-fwpmtypes-dl_address_type)
+-   [**FWPM \_ APPC \_ NETWORK \_ CAPABILITY \_ TYPE**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_appc_network_capability_type)
+-   [**TIPO DE ALTERAÇÃO DO FWPM \_ \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_change_type)
+-   [**TIPO DE EVENTO DE CONEXÃO FWPM \_ \_ \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_connection_event_type)
+-   [**OPÇÃO MECANISMO \_ \_ FWPM**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_engine_option)
+-   [**TIPO DE CAMPO FWPM \_ \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_field_type)
+-   [**TIPO DE EVENTO FWPM \_ NET \_ \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_net_event_type)
+-   [**TIPO DE CONTEXTO DO PROVEDOR FWPM \_ \_ \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_provider_context_type)
+-   [**ESTADO DO SERVIÇO \_ \_ FWPM**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_service_state)
+-   [**TIPO DE PORTA DO SISTEMA FWPM \_ \_ \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_system_port_type)
+-   [**TIPO DE EVENTO \_ VSWITCH DO FWPM \_ \_**](/windows/desktop/api/Fwpmtypes/ne-fwpmtypes-fwpm_vswitch_event_type)
 
- 
+ 
 
- 
+ 

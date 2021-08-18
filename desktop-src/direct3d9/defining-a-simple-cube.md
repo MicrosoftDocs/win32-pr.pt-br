@@ -1,5 +1,5 @@
 ---
-description: O arquivo a seguir define um cubo simples que tem quatro lados vermelhos e dois lados verdes. Nesse arquivo, as informações opcionais são usadas para adicionar informações ao objeto de dados definido pelo modelo de malha.
+description: O arquivo a seguir define um cubo simples que tem quatro lados vermelhos e dois lados verdes. Nesse arquivo, informações opcionais são usadas para adicionar informações ao objeto de dados definido pelo modelo de Malha.
 ms.assetid: 310981bf-3536-43dd-ad7c-40ab6c8ef6c4
 title: Definindo um cubo simples (Direct3D 9)
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118988296"
 ---
 # <a name="defining-a-simple-cube-direct3d-9"></a>Definindo um cubo simples (Direct3D 9)
 
-O arquivo a seguir define um cubo simples que tem quatro lados vermelhos e dois lados verdes. Nesse arquivo, as informações opcionais são usadas para adicionar informações ao objeto de dados definido pelo modelo de [**malha**](mesh.md) .
+O arquivo a seguir define um cubo simples que tem quatro lados vermelhos e dois lados verdes. Nesse arquivo, informações opcionais são usadas para adicionar informações ao objeto de dados definido pelo [**modelo de**](mesh.md) Malha.
 
 
 ```

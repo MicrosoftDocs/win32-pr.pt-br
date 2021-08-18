@@ -4,12 +4,12 @@ ms.assetid: 3c8fcb8d-2ea4-4b24-b649-7bd375c1133d
 title: Manipulando nomes de instância duplicada
 ms.topic: article
 ms.date: 08/17/2020
-ms.openlocfilehash: 220e5d7d0181a79c1d1415486cc946d484e11952
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f58f6ed11951c7b66951f5154009127c5029de3760a9419a7c9716781be8234f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143999"
 ---
 # <a name="handling-duplicate-instance-names"></a>Manipulando nomes de instância duplicada
 
@@ -19,7 +19,7 @@ Infelizmente, essa Convenção não resolve completamente o problema. Os número
 
 ## <a name="process-counterset"></a>Contador de processoset
 
-Esse problema é especialmente problemático para o `Process` CounterSet porque ele usa apenas o nome do exe do processo como o nome da instância, mesmo que o nome do exe não seja exclusivo. O comportamento padrão do `Process` CounterSet no Windows não pode ser alterado devido a problemas de compatibilidade.
+Esse problema é especialmente problemático para o `Process` CounterSet porque ele usa apenas o nome do exe do processo como o nome da instância, mesmo que o nome do exe não seja exclusivo. o comportamento padrão do `Process` counterset em Windows não pode ser alterado devido a problemas de compatibilidade.
 
 Você pode alterar o comportamento dos `Process` conjuntos e `Thread` configurados para usar nomes de instância exclusivos definindo `ProcessNameFormat` os `ThreadNameFormat` valores de registro ou na `HKLM\System\CurrentControlSet\Services\Perfproc\Performance` chave do registro.
 

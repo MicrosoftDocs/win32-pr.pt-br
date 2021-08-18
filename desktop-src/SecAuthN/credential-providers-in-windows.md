@@ -4,18 +4,18 @@ ms.assetid: BCF69196-D4E4-41D0-B372-5000FD50164B
 title: Provedores de credenciais no Windows 10
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12a7947000e5d5a989f71dcdddd808a8e1d5ab3f
-ms.sourcegitcommit: cd9672511263d04c0e4bc41758dd1d9e89ea92b4
+ms.openlocfilehash: 38543127709007407c013a2a8ff047f7c91f4440351653061e894f4e7c2d90d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "104297814"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008794"
 ---
 # <a name="credential-providers-in-windows-10"></a>Provedores de credenciais no Windows 10
 
-Os provedores de credenciais são o mecanismo principal para autenticação de usuário — atualmente, eles são o único método para os usuários comprovarem sua identidade, que é necessária para o logon e outros cenários de autenticação do sistema. Com o Windows 10 e a introdução do Microsoft Passport, os provedores de credenciais são mais importantes do que nunca; Eles serão usados para autenticação em aplicativos, sites e muito mais.
+Os provedores de credenciais são o mecanismo principal para autenticação de usuário — atualmente, eles são o único método para os usuários comprovarem sua identidade, que é necessária para o logon e outros cenários de autenticação do sistema. com Windows 10 e a introdução do Microsoft Passport, os provedores de credenciais são mais importantes do que nunca; Eles serão usados para autenticação em aplicativos, sites e muito mais.
 
-A Microsoft fornece uma variedade de provedores de credenciais como parte do Windows, como senha, PIN, SmartCard e Windows Hello (reconhecimento de impressão digital, facial e íris). Eles são chamados de "provedores de credenciais do sistema" neste artigo. OEMs, empresas e outras entidades podem escrever seus próprios provedores de credenciais e integrá-los facilmente ao Windows. Eles são chamados de "provedores de credenciais de terceiros" neste artigo. Observe que os provedores de credenciais v1 e v2 têm suporte no Windows 10. É importante que os criadores e gerentes de provedores de credenciais de terceiros compreendam essas recomendações.
+a Microsoft fornece uma variedade de provedores de credenciais como parte do Windows, como senha, PIN, cartão inteligente e Windows Hello (reconhecimento de impressão digital, facial e íris). Eles são chamados de "provedores de credenciais do sistema" neste artigo. OEMs, empresas e outras entidades podem escrever seus próprios provedores de credenciais e integrá-los facilmente ao Windows. Eles são chamados de "provedores de credenciais de terceiros" neste artigo. Observe que os provedores de credenciais v1 e v2 têm suporte no Windows 10. É importante que os criadores e gerentes de provedores de credenciais de terceiros compreendam essas recomendações.
 
 ## <a name="system-credential-providers"></a>Provedores de credenciais do sistema
 
@@ -39,15 +39,15 @@ Em resumo, queremos desencorajar a desabilitação de todos os provedores de cre
 
 ## <a name="custom-credential-providers"></a>Provedores de credenciais personalizados
 
-A estrutura do provedor de credenciais do Windows permite que os desenvolvedores criem provedores de credenciais personalizados. Quando o [Winlogon](winlogon.md) deseja coletar credenciais, a interface do usuário de logon consulta cada provedor de credenciais para obter o número de credenciais que deseja enumerar. Depois que todos os provedores tiverem enumerado seus blocos, a interface do usuário de logon os exibirá para o usuário. O usuário interage com um bloco para fornecer as credenciais necessárias. A interface do usuário de logon envia essas credenciais para autenticação. Os provedores de credenciais também podem ser usados pela interface do usuário da credencial quando as credenciais são necessárias. Consulte [**\_ cenário de \_ uso \_ do provedor de credenciais**](/windows/desktop/api/credentialprovider/ne-credentialprovider-credential_provider_usage_scenario) para obter uma lista de cenários em que um provedor de credenciais pode ter suporte.
+o Windows framework do provedor de credenciais permite que os desenvolvedores criem provedores de credenciais personalizados. Quando o [Winlogon](winlogon.md) deseja coletar credenciais, a interface do usuário de logon consulta cada provedor de credenciais para obter o número de credenciais que deseja enumerar. Depois que todos os provedores tiverem enumerado seus blocos, a interface do usuário de logon os exibirá para o usuário. O usuário interage com um bloco para fornecer as credenciais necessárias. A interface do usuário de logon envia essas credenciais para autenticação. Os provedores de credenciais também podem ser usados pela interface do usuário da credencial quando as credenciais são necessárias. Consulte [**\_ cenário de \_ uso \_ do provedor de credenciais**](/windows/desktop/api/credentialprovider/ne-credentialprovider-credential_provider_usage_scenario) para obter uma lista de cenários em que um provedor de credenciais pode ter suporte.
 
 Graças a esse sistema, é muito mais fácil criar um provedor de credenciais do que era historicamente. Grande parte do trabalho é tratada pela combinação de [Winlogon](winlogon.md), a interface do usuário de logon e a interface do usuário da credencial. Para fazer isso, você precisará criar sua própria implementação de [**ICredentialProvider**](/windows/desktop/api/credentialprovider/nn-credentialprovider-icredentialprovider) e [**ICredentialProviderCredential**](/windows/desktop/api/credentialprovider/nn-credentialprovider-icredentialprovidercredential). Se você estiver implementando um provedor de credenciais v2, que é recomendado, também precisará implementar o [**ICredentialProviderCredential2**](/windows/desktop/api/credentialprovider/nn-credentialprovider-icredentialprovidercredential2).
 
 É importante observar que os provedores de credenciais não são mecanismos de imposição. Eles são usados simplesmente para reunir e serializar credenciais, enviando-as para autorização. A autoridade local e os pacotes de autenticação serão tratados e qualquer imposição de segurança necessária.
 
-Combinando provedores de credenciais com hardware com suporte, você pode estender o Windows para dar suporte ao logon com informações biométricas, senhas, PINs, certificados de cartão inteligente ou qualquer pacote de autenticação personalizado que você escolher criar. Você também pode personalizar a experiência de logon para o usuário de várias maneiras. Por exemplo, quando a interface do usuário de logon consulta seu provedor de credenciais para os blocos de credencial, você pode especificar um bloco padrão para fornecer uma experiência personalizada para um usuário. Os provedores de credenciais podem até mesmo ser projetados para dar suporte ao SSO (logon único), autenticar usuários em um ponto de acesso seguro, bem como logon no computador.
+combinando provedores de credenciais com hardware com suporte, você pode estender Windows para dar suporte ao logon com informações biométricas, senhas, PINs, certificados de cartão inteligente ou qualquer pacote de autenticação personalizado que você escolher criar. Você também pode personalizar a experiência de logon para o usuário de várias maneiras. Por exemplo, quando a interface do usuário de logon consulta seu provedor de credenciais para os blocos de credencial, você pode especificar um bloco padrão para fornecer uma experiência personalizada para um usuário. Os provedores de credenciais podem até mesmo ser projetados para dar suporte ao SSO (logon único), autenticar usuários em um ponto de acesso seguro, bem como logon no computador.
 
-Os provedores de credenciais são registrados em um computador Windows e são responsáveis pelo seguinte.
+os provedores de credenciais são registrados em um computador Windows e são responsáveis pelo seguinte.
 
 -   Descrever as informações de credenciais necessárias para a autenticação.
 -   Tratamento da comunicação e da lógica com qualquer autoridade de autenticação externa.
@@ -59,7 +59,7 @@ Os provedores de credenciais são registrados em um computador Windows e são re
 
 ## <a name="wrapping-credential-providers"></a>Encapsulando provedores de credenciais
 
-O encapsulamento de um provedor de credenciais do sistema pode ser feito para adicionar funcionalidade a esse provedor de credenciais que não tem suporte nativo. Isso não é recomendado porque pode levar a um comportamento problemático. As alterações podem ser feitas no provedor de credenciais que podem entrar em conflito com o wrapper, causando uma experiência de usuário ruim ou até mesmo impedindo o usuário de entrar em seu dispositivo. Isso é especialmente verdadeiro com a cadência de atualização frequente do Windows 10.
+O encapsulamento de um provedor de credenciais do sistema pode ser feito para adicionar funcionalidade a esse provedor de credenciais que não tem suporte nativo. Isso não é recomendado porque pode levar a um comportamento problemático. As alterações podem ser feitas no provedor de credenciais que podem entrar em conflito com o wrapper, causando uma experiência de usuário ruim ou até mesmo impedindo o usuário de entrar em seu dispositivo. Isso é especialmente verdadeiro com a cadência de atualização frequente de Windows 10.
 
 Se a funcionalidade em um provedor de credenciais for necessária e não estiver incluída nativamente, o caminho recomendado será criar um provedor de credenciais personalizado. Essa é uma abordagem mais estável que não assume dependências dos provedores do sistema.
 
@@ -67,7 +67,7 @@ Se a funcionalidade em um provedor de credenciais for necessária e não estiver
 
 <dl> <dt>
 
-[Experiência de logon do Windows controlada pelo provedor de credenciais](https://go.microsoft.com/fwlink/?LinkId=717287)
+[experiência de Logon Windows controlada pelo provedor de credenciais](https://go.microsoft.com/fwlink/?LinkId=717287)
 </dt> <dt>
 
 [ICredentialProvider](/windows/desktop/api/credentialprovider/nn-credentialprovider-icredentialprovider)

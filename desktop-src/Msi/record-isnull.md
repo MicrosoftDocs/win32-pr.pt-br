@@ -47,7 +47,7 @@ Campo obrigatório número do valor dentro do registro, baseado em 1.
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP<br/> |
-| parâmetro<br/>  | <dl> <dt>Instância. h</dt> </dl>                                                                                                                                                                   |
+| Cabeçalho<br/>  | <dl> <dt>Instância. h</dt> </dl>                                                                                                                                                                   |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
 | IID<br/>     | IID \_ IRecord é definido como 000C1093-0000-0000-C000-000000000046<br/>                                                                                                                                                                              |
 

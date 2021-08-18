@@ -1,17 +1,17 @@
 ---
 description: A interface ICertificateEnrollmentServerSetup expõe as propriedades a seguir.
 ms.assetid: D5F4CC15-F280-4F4F-9C57-B2ED42AF0822
-title: Propriedades de ICertificateEnrollmentServerSetup
+title: Propriedades ICertificateEnrollmentServerSetup
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b496445b0a00ebb3f6cc401dd8705bf0ff0345b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1f558b9a24567332483f0f4c7d70abeeb65c08d203a77cd0cb8edc11c590773b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105758911"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119005794"
 ---
-# <a name="icertificateenrollmentserversetup-properties"></a>Propriedades de ICertificateEnrollmentServerSetup
+# <a name="icertificateenrollmentserversetup-properties"></a>Propriedades ICertificateEnrollmentServerSetup
 
 A interface [**ICertificateEnrollmentServerSetup**](/windows/desktop/api/Casetup/nn-casetup-icertificateenrollmentserversetup) expõe as propriedades a seguir.
 

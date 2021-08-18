@@ -617,7 +617,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**propagados**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**Produto CIM \_**](cim-product.md).**Vendor**"), [**CIM \_ Key**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("DMTF \| ComponentID \| 001.1")
 </dt> </dl>
 
-Nome do fornecedor do produto, que corresponde à propriedade **Vendor** no objeto do produto da Solução DMTF Exchange Standard.
+Nome do fornecedor do produto, que corresponde à propriedade **Vendor** no objeto de produto da Solução DMTF Exchange Standard.
 
 Essa propriedade é herdada de [**CIM \_ SoftwareFeature.**](cim-softwarefeature.md)
 

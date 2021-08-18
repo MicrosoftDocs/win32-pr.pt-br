@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4cd00bfbd832db12a722363bf5b1af8f7298345
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e73ccbb0c742d0be09570b0959c9c1a663d7f4d0f054cc88070d842ac6d954ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119657296"
 ---
 # <a name="client-side-service-operations"></a>Operações de serviço no lado do cliente
 
@@ -72,7 +72,7 @@ if(FAILED(hr))
 O aplicativo sempre deve passar o parâmetro de erro para:
 
 -   Obtenha informações de erro avançadas se ocorrer uma falha durante a chamada de operação de serviço.
--   Obtenha o objeto de falha se o serviço retornar uma falha. A falha está contida no objeto de erro. Nesse caso, o valor **HRESULT** retornado da operação de serviço é de **\_ falha de \_ ponto de extremidade WS E \_ \_ recebido** (consulte [valores de retorno dos serviços Web do Windows](windows-web-services-return-values.md)).
+-   Obtenha o objeto de falha se o serviço retornar uma falha. A falha está contida no objeto de erro. nesse caso, o valor **HRESULT** retornado da operação de serviço é de **\_ falha de \_ ponto de extremidade WS E \_ \_ recebido** (consulte [Windows valores de retorno de serviços Web](windows-web-services-return-values.md)).
 
 ### <a name="call-properties-for-client-side-service-operations"></a>Chamar Propriedades para operações de serviço no lado do cliente
 
@@ -125,7 +125,7 @@ Todos os valores **HRESULT** de êxito devem ser tratados como êxito e todos os
 -   **WS \_ \_Operação E \_ abandonada**: a chamada foi abandonada. O objeto de erro contém o motivo para abandono.
 -   **WS \_ E \_ \_ operação inválida**: o proxy de serviço não está em um estado apropriado para fazer uma chamada, verifique o estado do proxy de serviço para descobrir o estado do proxy de serviço.
 
-Para obter uma lista completa de valores de retorno, consulte [valores de retorno dos serviços Web do Windows](windows-web-services-return-values.md).
+para obter uma lista completa de valores de retorno, consulte [Windows valores de retorno de serviços Web](windows-web-services-return-values.md).
 
 ### <a name="code-examples"></a>Exemplos de código
 

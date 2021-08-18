@@ -4,8 +4,8 @@ description: O nome da DLL que gerenciará um transporte.
 ms.assetid: a6b078ec-8738-4c57-9d94-05a96dbc645b
 ms.tgt_platform: multiple
 keywords:
-- Atributo do AD de atributos de Transport-DLL-Name
-- Esquema de AD do atributo transportDLLName
+- Esquema do AD do atributo Transport-DLL-Name
+- esquema do AD do atributo transportDLLName
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c118a2f7553c86de4b3c36b2904a3b7d75518a2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2520eb57be8b14f33314192cb6347d85ca3a0ad8a1fc1818b53e5da52099d33d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022004"
 ---
 # <a name="transport-dll-name-attribute"></a>Atributo Transport-DLL-Name
 
@@ -30,13 +30,13 @@ O nome da DLL que gerenciará um transporte.
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Transport-DLL-Name                          |
-| LDAP-Display-Name | transportDLLName                            |
+| Ldap-Display-Name | transportDLLName                            |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.            |
 | Frequência de atualização  | Ao conectar sites.                      |
 | Attribute-Id      | 1.2.840.113556.1.4.789                      |
-| System-ID-GUID    | 26d97372-6070-11d1-a9c6-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 26d97372-6070-11d1-a9c6-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ O nome da DLL que gerenciará um transporte.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ O nome da DLL que gerenciará um transporte.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -80,10 +80,10 @@ O nome da DLL que gerenciará um transporte.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -92,7 +92,7 @@ O nome da DLL que gerenciará um transporte.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ O nome da DLL que gerenciará um transporte.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -122,10 +122,10 @@ O nome da DLL que gerenciará um transporte.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -143,10 +143,10 @@ O nome da DLL que gerenciará um transporte.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -164,10 +164,10 @@ O nome da DLL que gerenciará um transporte.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |
@@ -185,10 +185,10 @@ O nome da DLL que gerenciará um transporte.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | 0                                                               |
 | Range-Upper            | 1024                                                            |
 | Search-Flags           | 0x00000000                                                      |

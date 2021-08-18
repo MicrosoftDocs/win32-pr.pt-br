@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 375052e240973f56af32825f74caccf6f9411d75
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: aa4e1292f4b5c42515351d89dc7fc039f1f6f29201da72a78e07f447818e0f91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988636"
 ---
 # <a name="d3dxcreatepatchmesh-function"></a>Função D3DXCreatePatchMesh
 
@@ -109,7 +109,7 @@ Ponteiro para o objeto [**ID3DXPatchMesh**](id3dxpatchmesh.md) que é criado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

@@ -1,7 +1,7 @@
 ---
-description: Remoção de WPDUSB.SYS driver para Windows portáteis
+description: Remoção do WPDUSB.SYS driver para dispositivos Windows portáteis
 ms.assetid: 3ad0c892-8b19-465d-af2f-9207f98e27b7
-title: Remoção de WPDUSB.SYS driver para Windows portáteis
+title: Remoção do WPDUSB.SYS driver para dispositivos Windows portáteis
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 94b5d1a815b97049816a618b9e93d0767e321fd60b689e6845318c1605574c5f
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118994736"
 ---
-# <a name="removal-of-wpdusbsys-driver-for-windows-portable-devices"></a>Remoção de WPDUSB.SYS driver para Windows portáteis
+# <a name="removal-of-wpdusbsys-driver-for-windows-portable-devices"></a>Remoção do WPDUSB.SYS driver para dispositivos Windows portáteis
 
 ## <a name="affected-platforms"></a>Plataformas afetadas
 
@@ -37,7 +37,7 @@ ms.locfileid: "118994736"
 
 ## <a name="description"></a>Descrição
 
-A Microsoft substituiu o componente de modo kernel da pilha de driver USB (WPDUSB.SYS) do Windows Vista para wpd (dispositivos portáteis) Windows pelo driver WINUSB.SYS genérico. A comunicação com o driver WPDUSB.SYS original ocorreu por meio de códigos de IOCTL (Controle de E/S privado); O suporte a eles também foi removido.
+A Microsoft substituiu o componente de modo kernel da pilha de driver USB do Windows Vista (WPDUSB.SYS) para wpd (dispositivos portáteis) Windows pelo driver WINUSB.SYS genérico. A comunicação com o driver WPDUSB.SYS original ocorreu por meio de códigos de IOCTL (Controle de E/S privado); O suporte a eles também foi removido.
 
 Qualquer consumidor desses códigos IOCTL seria responsável pela interpretação e implementação adequadas do protocolo MTP. Windows O Vista não deu suporte ao uso desses códigos IOCTL por aplicativos de terceiros.
 

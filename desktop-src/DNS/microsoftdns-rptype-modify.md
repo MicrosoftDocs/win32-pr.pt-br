@@ -1,11 +1,11 @@
 ---
-title: Método Modify da classe MicrosoftDNS_RPType
-description: O método Modify atualiza um registro de recurso de pessoa responsável (RP).
+title: Modificar o método da MicrosoftDNS_RPType classe
+description: O método Modify atualiza um registro de recurso rp (pessoa responsável).
 ms.assetid: a779b905-922c-42ff-b3d9-318b3a848230
 keywords:
 - Modificar o método DNS
 - Modificar o método DNS, MicrosoftDNS_RPType classe
-- MicrosoftDNS_RPType classe de DNS, método Modify
+- MicrosoftDNS_RPType classe DNS, método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10ec575424e6e26c79f8d6a27e62732cad6ddc57
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5d237879b883e21c3c6289542e4eae7b9703be64931af788f042b6cdbec2ca49
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587486"
 ---
-# <a name="modify-method-of-the-microsoftdns_rptype-class"></a>Método Modify da classe MicrosoftDNS \_ RPType
+# <a name="modify-method-of-the-microsoftdns_rptype-class"></a>Modificar o método da classe RPType do MicrosoftDNS \_
 
-O método **Modify** atualiza um registro de recurso de pessoa responsável (RP).
+O **método Modify** atualiza um registro de recurso rp (pessoa responsável).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,24 +45,24 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ em, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
-Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de DNS.
+Tempo, em segundos, em que o RR pode ser armazenado em cache por um resolvedor de DNS.
 
 </dd> <dt>
 
-*RPMailbox* \[ em, opcional\]
+*RPMailbox* \[ in, opcional\]
 </dt> <dd>
 
-FQDN que especifica a caixa de correio da pessoa responsável.
+FQDN especificando a caixa de correio do responsável.
 
 </dd> <dt>
 
-*TXTDomainName* \[ em, opcional\]
+*TXTDomainName* \[ in, opcional\]
 </dt> <dd>
 
-FQDN para o qual os registros de recurso TXT existem.
+FQDN para o qual existem registros de recursos TXT.
 
 </dd> <dt>
 
@@ -73,13 +73,13 @@ Referência ao objeto modificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Qualquer parâmetro não especificado permanece inalterado no registro modificado.
+Qualquer parâmetro não especificado é deixado inalterado no registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Qualquer parâmetro não especificado permanece inalterado no registro modificad
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -98,10 +98,10 @@ Qualquer parâmetro não especificado permanece inalterado no registro modificad
 
 <dl> <dt>
 
-[**MicrosoftDNS \_ RPType**](microsoftdns-rptype.md)
+[**RpType do MicrosoftDNS \_**](microsoftdns-rptype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData da \_ classe RPType MicrosoftDNS**](microsoftdns-rptype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData da classe RPType do MicrosoftDNS \_**](microsoftdns-rptype-createinstancefrompropertydata.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)

@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - Idndl.dll
-ms.openlocfilehash: f636ab426cd4d50878df93e3e30d69de54d60ac6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02631a605f67f3c27dfcc29c1e660ca24e56b6072d4490ba8ba090ebdd8b9019
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068246"
 ---
 # <a name="downlevelgetlocalescripts-function"></a>Função DownlevelGetLocaleScripts
 
 Fornece uma lista de scripts para a localidade especificada.
 
 > [!Note]  
-> Essa função é usada somente por aplicativos que são executados em sistemas operacionais anteriores ao Windows Vista. Seu uso requer o pacote de download. Os aplicativos que só são executados no Windows Vista e posterior devem chamar [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) com *LCTYPE* definido como [localidade \_ SSCRIPTS](locale-sscripts.md).
+> essa função é usada somente por aplicativos que são executados em sistemas operacionais anteriores ao Windows Vista. Seu uso requer o pacote de download. os aplicativos que só são executados no Windows Vista e posterior devem chamar [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) com *LCType* definido como [localidade \_ SSCRIPTS](locale-sscripts.md).
 
  
 
@@ -71,7 +71,7 @@ Como alternativa, o aplicativo pode definir esse parâmetro como 0. Nesse caso, 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o número de caracteres recuperados no buffer de script, incluindo o caractere nulo de terminação. Se a função for bem sucedido e o valor de *cchScripts* for 0, o valor de retorno será o tamanho necessário, em caracteres, incluindo um caractere nulo de terminação, para o buffer de script.
 
@@ -89,7 +89,7 @@ Aqui estão alguns exemplos de entradas e saídas para essa função, supondo um
 
 
 
-| Locale                  | *lpLocaleName* | *lpScripts*     |
+| Local                  | *lpLocaleName* | *lpScripts*     |
 |-------------------------|----------------|-----------------|
 | Inglês (Estados Unidos) | pt-BR          | Latn           |
 | Híndi (Índia)           | hi-IN          | DESVPADPA           |
@@ -109,10 +109,10 @@ O arquivo de cabeçalho e a DLL necessários fazem parte do download ["APIs de m
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                                                                        |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                                                                                 |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                                                                        |
 | Redistribuível<br/>          | APIs de mitigação do IDN (Microsoft internacionalizated Domain Name) no Windows XP (SP2 ou posterior), Windows Server 2003 (SP1 ou posterior) ou Windows Vista<br/> |
-| parâmetro<br/>                   | <dl> <dt>Idndl. h</dt> </dl>                                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Idndl. h</dt> </dl>                                                                          |
 | DLL<br/>                      | <dl> <dt>Idndl.dll</dt> </dl>                                                                        |
 
 

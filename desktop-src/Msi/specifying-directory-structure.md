@@ -1,40 +1,40 @@
 ---
-description: O instalador mantém informações sobre a estrutura do diretório de instalação na tabela de diretórios.
+description: O instalador mantém informações sobre a estrutura do diretório de instalação na Tabela de Diretórios.
 ms.assetid: 31390138-b1d0-4f0b-9304-6e7c69e6a736
-title: Especificando a estrutura do diretório
+title: Especificando a estrutura de diretório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80a87880921799158559e28fed2c6dde97c9a331
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbc71e448c03a7fdbdf9de249122246aaf0038769a1dd409551330a503be7e2b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119627886"
 ---
-# <a name="specifying-directory-structure"></a>Especificando a estrutura do diretório
+# <a name="specifying-directory-structure"></a>Especificando a estrutura de diretório
 
-O instalador mantém informações sobre a estrutura do diretório de instalação na [tabela de diretórios](directory-table.md). Consulte o [grupo tabelas principais](core-tables-group.md). Nesta seção, você adiciona informações de estrutura de diretório para o exemplo do bloco de notas ao banco de dados vazio que você criou na [importação de um banco de dados em branco](importing-a-blank-database.md). Use o editor de banco de dados Orca fornecido com o SDK ou outro editor para abrir a tabela de diretórios no MNP2000.msi. Use o editor para inserir os dados a seguir na tabela de diretório em branco.
+O instalador mantém informações sobre a estrutura do diretório de instalação na [Tabela de Diretórios](directory-table.md). Consulte o [Grupo de Tabelas Principais](core-tables-group.md). Nesta seção, você adiciona informações de estrutura de diretório para o exemplo Bloco de notas ao banco de dados vazio criado em [Importando um banco de dados em branco.](importing-a-blank-database.md) Use o Orca do editor de banco de dados fornecido com o SDK ou outro editor para abrir a Tabela de Diretórios no MNP2000.msi. Use o editor para inserir os dados a seguir na tabela Diretório em branco.
 
 [Tabela de diretórios](directory-table.md)
 
 
 
-| Diretório                                        | Pai do diretório \_                                | DefaultDir        |
+| Diretório                                        | Pai do \_ Diretório                                | Defaultdir        |
 |--------------------------------------------------|--------------------------------------------------|-------------------|
-| [**TARGETDIR**](targetdir.md)                   |                                                  | SourceDir         |
-| [**ProgramFilesFolder**](programfilesfolder.md) | [**TARGETDIR**](targetdir.md)                   | .                 |
-| ARTSDIR                                          | NOTEPADDIR                                       | Artes: eventos       |
-| HOLDIR                                           | MONDIR                                           | .: Feriados        |
+| [**Targetdir**](targetdir.md)                   |                                                  | SourceDir         |
+| [**Programfilesfolder**](programfilesfolder.md) | [**Targetdir**](targetdir.md)                   | .                 |
+| KANDIR                                          | NOTEPADDIR                                       | Feiras:Eventos       |
+| HOLDIR                                           | MONDIR                                           | .:Holidays        |
 | MENUDIR                                          | NOTEPADDIR                                       | Menu              |
-| MONDIR                                           | NOTEPADDIR                                       | Check              |
-| NOTEPADDIR                                       | [**ProgramFilesFolder**](programfilesfolder.md) | \_Parque vermelho: bloco de notas |
-| SPORTDIR                                         | NOTEPADDIR                                       | Esportes: eventos     |
+| MONDIR                                           | NOTEPADDIR                                       | Porta              |
+| NOTEPADDIR                                       | [**Programfilesfolder**](programfilesfolder.md) | Red \_ Park:Bloco de notas |
+| SPORTDIR                                         | NOTEPADDIR                                       | Sports:Events     |
 
 
 
  
 
-A inserção desses dados na tabela de diretórios especifica as estruturas de diretório de origem e de destino. Consulte a [tabela de diretórios](directory-table.md) e [usando os tópicos da tabela de diretórios](using-the-directory-table.md) . Observe que a propriedade [**TARGETDIR**](targetdir.md) deve ser o nome de uma raiz na tabela de diretórios de cada instalação.
+Inserir esses dados na tabela Diretório especifica as estruturas de diretório de origem e de destino. Consulte os [tópicos Tabela de](directory-table.md) Diretório [e Usando a Tabela de](using-the-directory-table.md) Diretórios. Observe que a [**propriedade TARGETDIR**](targetdir.md) deve ser o nome de uma raiz na tabela Diretório de cada instalação.
 
 [Continuar](specifying-components.md)
 

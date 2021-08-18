@@ -8,12 +8,12 @@ keywords:
 - ADSI de enumerações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 459aa59bc0f7907f59a4cd5a7e5fcb4f1b2630d8
-ms.sourcegitcommit: cb844c9ab17577ce171fd7b03add668645867bc7
+ms.openlocfilehash: c10d5aed5688e7128a64a32dee2f83efa22ab5bf292231517026299ccb592886
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "104007195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023904"
 ---
 # <a name="adsi-enumerations"></a>Enumerações ADSI
 
@@ -56,11 +56,11 @@ As interfaces de serviço Active Directory (ADSI) definem e usam as enumeraçõe
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
-Como os aplicativos Visual Basic Scripting Edition não podem ler dados de uma biblioteca de tipos, os aplicativos VBScript não podem reconhecer constantes simbólicas conforme definido nessas enumerações. Use as constantes numéricas em vez disso para definir os sinalizadores apropriados em aplicativos VBScript. Para usar as constantes simbólicas como uma boa prática de programação, grave declarações explícitas dessas constantes, como feito aqui, em aplicativos VBScript.
+como os aplicativos do Visual Basic script Edition não podem ler dados de uma biblioteca de tipos, os aplicativos VBScript não podem reconhecer constantes simbólicas conforme definido nessas enumerações. Use as constantes numéricas em vez disso para definir os sinalizadores apropriados em aplicativos VBScript. Para usar as constantes simbólicas como uma boa prática de programação, grave declarações explícitas dessas constantes, como feito aqui, em aplicativos VBScript.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -72,9 +72,9 @@ Como os aplicativos Visual Basic Scripting Edition não podem ler dados de uma b
 [**IADsPathname:: Set**](/windows/desktop/api/Iads/nf-iads-iadspathname-set)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

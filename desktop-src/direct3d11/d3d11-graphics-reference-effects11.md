@@ -4,12 +4,12 @@ description: Use a fonte Effects 11 para criar seu aplicativo de tipo de efeitos
 ms.assetid: 7c692a37-879b-4f37-8f4f-4d6cfa9cde8b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07471c127dfbfe96376508bc6d2b60e1d99e207f
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 11ad13b58093ed8e172024795c85814d913e67a37c5ed93c0fd5cbe6791d4fd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104499189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119729326"
 ---
 # <a name="effects-11-reference"></a>Referência dos efeitos 11
 

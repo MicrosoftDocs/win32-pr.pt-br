@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: ba2b9642bcc142c4d0dd759ff2801207617524fe
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 3418d05371da651894c59461c7b467a5da5435c76d8dddc48caf4c050c498a81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105749422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119629336"
 ---
 # <a name="id3dxpatchmeshgetnumvertices-method"></a>Método ID3DXPatchMesh:: GetNumVertices
 
@@ -38,7 +38,7 @@ DWORD GetNumVertices();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 

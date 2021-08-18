@@ -1,9 +1,9 @@
 ---
 title: represent_as atributo
-description: O atributo \ represente \_ como \ ACF associa um tipo de local nomeado no idioma de destino repr com um tipo de transferência denominado-Type que é transferido entre cliente e servidor.
+description: O atributo \ represent as\ ACF associa um tipo local nomeado no tipo de repr do idioma de destino a um tipo de transferência chamado tipo que é transferido entre o \_ cliente e o servidor.
 ms.assetid: ae44d220-e8f3-47a3-8f5e-a2668ac75411
 keywords:
-- represent_as do atributo MIDL
+- represent_as atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a17d0b8915e75bb3065b394ef76900bd8efb5e0c
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c76576a7d6710c54573ff78186b3cf6d347afc8c4c242fd6e4c1d49865fb521f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146359"
 ---
 # <a name="represent_as-attribute"></a>representar \_ como atributo
 
-O atributo **\[ represente \_ como \]** ACF associa um tipo de local nomeado no idioma de destino *repr* com um tipo de transferência *denominado-Type* que é transferido entre o cliente e o servidor.
+O **\[ representa como \_ atributo \]** ACF associa um tipo local nomeado no tipo *de repr do* idioma de destino a um tipo de transferência chamado *tipo* que é transferido entre o cliente e o servidor.
 
 ``` syntax
 typedef [represent_as(repr-type) [[ , type-attribute-list ]] ] named-type; 
@@ -44,14 +44,14 @@ Especifica o tipo de dados de transferência nomeado que é transferido entre o 
 
 </dd> <dt>
 
-*lista de atributos de tipo* 
+*type-attribute-list* 
 </dt> <dd>
 
 Especifica um ou mais atributos que se aplicam ao tipo. Separe vários atributos com vírgulas.
 
 </dd> <dt>
 
-*repr-tipo* 
+*repr-type* 
 </dt> <dd>
 
 Especifica o tipo local representado no idioma de destino que é apresentado aos aplicativos cliente e servidor.
@@ -60,9 +60,9 @@ Especifica o tipo local representado no idioma de destino que é apresentado aos
 
 ## <a name="remarks"></a>Comentários
 
-Ao usar **\[ representar \_ como \]**, você deve fornecer rotinas que são convertidas entre os tipos local e de transferência e a memória livre usada para manter os dados convertidos. O atributo **\[ representar \_ como \]** instrui os stubs a chamar as rotinas de conversão fornecidas pelo usuário.
+Ao usar **\[ representar \_ como \]**, você deve fornecer rotinas que são convertidas entre os tipos local e de transferência e a memória livre usada para manter os dados convertidos. O **\[ atributo representar \_ como \]** instrui os stubs a chamar as rotinas de conversão fornecidas pelo usuário.
 
-O tipo de *nome* transferido deve ser resolvido para um tipo base de MIDL, tipo predefinido ou para um identificador de tipo. Para obter mais informações, consulte [tipos base de MIDL](midl-base-types.md).
+O tipo nomeado *transferido deve ser* resolvido para um tipo base MIDL, tipo predefinido ou para um identificador de tipo. Para obter mais informações, consulte [Tipos base MIDL](midl-base-types.md).
 
 Você deve fornecer as seguintes rotinas:
 
@@ -70,28 +70,28 @@ Você deve fornecer as seguintes rotinas:
 
 | Nome da rotina                   | Descrição                                                                                                                                                                                                |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *\_tipo nomeado * * * \_ do \_ local** | Converte dados do tipo local para o tipo de rede. A rotina aloca memória para o tipo de dados de rede, incluindo memória para todos os dados referenciados por ponteiros no tipo de dados de rede.              |
-| *\_tipo nomeado * * * \_ para \_ local**   | Converte dados do tipo de rede para o tipo local. A rotina é responsável por alocar memória para os dados referenciados por ponteiros no tipo local. O RPC aloca memória para o tipo local em si. |
-| *\_tipo nomeado * * * \_ \_ local livre** | Libera memória alocada para dados referenciados por ponteiros no tipo local. O RPC libera a memória para o próprio tipo                                                                                             |
-| *\_tipo nomeado * * * \_ \_ Inst gratuito**  | Libera memória alocada para os dados referenciados por ponteiros no tipo de rede e para o próprio tipo de rede.                                                                                            |
+| *tipo \_ nomeado*** \_ do \_ local** | Converte dados do tipo local para o tipo de rede. A rotina aloca memória para o tipo de dados de rede, incluindo memória para todos os dados referenciados por ponteiros no tipo de dados de rede.              |
+| *tipo \_ nomeado*** \_ para \_ local**   | Converte dados do tipo de rede para o tipo local. A rotina é responsável por alocar memória para dados referenciados por ponteiros no tipo local. O RPC aloca memória para o próprio tipo local. |
+| *tipo \_ nomeado*** \_ \_ local gratuito** | Libera a memória alocada para dados referenciados por ponteiros no tipo local. O RPC libera memória para o próprio tipo                                                                                             |
+| *named \_ type*** \_ \_ free inst**  | Libera a memória alocada para os dados referenciados por ponteiros no tipo de rede e para o próprio tipo de rede.                                                                                            |
 
 
 
- 
+ 
 
-O stub de cliente chama o *tipo nomeado * * * \_ de \_ local** para alocar espaço para o tipo transmitido e para converter os dados do tipo local para o tipo de rede. O stub do servidor aloca espaço para o tipo de dados original e chama o *tipo nomeado * * * \_ para \_ local** para converter os dados do tipo de rede para o tipo local.
+O stub do cliente chama *named-type*** de \_ \_ local** para alocar espaço para o tipo transmitido e converter os dados do tipo local para o tipo de rede. O stub do servidor aloca espaço para o tipo de dados original e chama *named-type*** \_ \_ para local** para converter os dados do tipo de rede para o tipo local.
 
-Após o retorno do código do aplicativo, os stubs do cliente e do servidor chamam o *tipo nomeado * * * \_ Free \_ Inst** para desalocar o armazenamento para o tipo de rede. O stub de cliente chama o *tipo nomeado * * \_ * \_ local * gratuito* para desalocar o armazenamento retornado pela rotina.
+Após o retorno do código do aplicativo, os stubs de cliente e servidor chamam *named-type*** \_ free \_ inst** para desalocar o armazenamento para o tipo de rede. O stub do cliente *chama named-type*** \_ local \_ gratuito** para desalocar o armazenamento retornado pela rotina.
 
-Os tipos a seguir não podem ter um atributo " **\[ representar \_ como \]** ":
+Os seguintes tipos não podem ter uma **\[ representação \_ como \]** atributo:
 
--   Matrizes em conformidade, variável ou em conformidade
--   Estruturas nas quais o último membro é uma matriz de conformidade (uma estrutura compatível)
+-   Matrizes compatíveis, variáveis ou de variáveis compatíveis
+-   Estruturas nas quais o último membro é uma matriz compatível (uma estrutura compatível)
 -   Ponteiros ou tipos que contêm um ponteiro
 -   Pipes ou tipos que contêm pipes
 -   Tipos que são usados como o tipo base para um pipe
--   Tipos predefinidos [**manipulam \_ t**](handle-t.md), [**void**](void.md)
--   Tipos que têm o atributo [**\[ Handle \]**](handle.md)
+-   Tipos predefinidos [**\_ lidam com t**](handle-t.md), [**void**](void.md)
+-   Tipos que têm o [**\[ atributo handle \]**](handle.md)
 
 ## <a name="examples"></a>Exemplos
 
@@ -119,24 +119,24 @@ interface iface
 [Arquivo de configuração de aplicativo (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**Storage**](arrays-1.md)
+[**matrizes**](arrays-1.md)
 </dt> <dt>
 
-[Tipos base de MIDL](midl-base-types.md)
+[Tipos base MIDL](midl-base-types.md)
 </dt> <dt>
 
-[**lidar com \_ t**](handle-t.md)
+[**handle \_ t**](handle-t.md)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> <dt>
 
-[**void**](void.md)
+[**Vazio**](void.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

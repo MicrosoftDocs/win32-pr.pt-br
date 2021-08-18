@@ -1,11 +1,11 @@
 ---
-title: Método INapEnforcementClientConnection SetSoHResponse (NapEnforcementClient. h)
-description: Define o SoH-Response e é usado pelo cliente de imposição no recebimento de um pacote.
+title: Método INapEnforcementClientConnection SetSoHResponse (NapEnforcementClient.h)
+description: Define o SoH-Response e é usado pelo cliente de imposição ao receber um pacote.
 ms.assetid: 718669c7-73cf-44f4-8463-c59fdbe215cc
 keywords:
-- Método SetSoHResponse NAP
-- Método SetSoHResponse NAP, interface INapEnforcementClientConnection
-- INapEnforcementClientConnection interface NAP, método SetSoHResponse
+- NAP do método SetSoHResponse
+- Método SETSoHResponse NAP, interface INapEnforcementClientConnection
+- Interface NAP de INapEnforcementClientConnection, método SetSoHResponse
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fdc403a1ff68e28f7d262e64ebe558226741b22
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 97a86c1a0fc86fcef9189f9d575063cee9abdf627e1cf3c58e68d669358142f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119626226"
 ---
-# <a name="inapenforcementclientconnectionsetsohresponse-method"></a>Método INapEnforcementClientConnection:: SetSoHResponse
+# <a name="inapenforcementclientconnectionsetsohresponse-method"></a>Método INapEnforcementClientConnection::SetSoHResponse
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método **INapEnforcementClientConnection:: SetSoHResponse** define o SoH-Response e é usado pelo cliente de imposição no recebimento de um pacote.
+O **método INapEnforcementClientConnection::SetSoHResponse** define o SoH-Response e é usado pelo cliente de imposição ao receber um pacote.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,16 +47,16 @@ HRESULT SetSoHResponse(
 
 <dl> <dt>
 
-*sohResponse* \[ no\]
+*sohResponse* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NetworkSoHResponse**](/windows/win32/api/naptypes/ns-naptypes-networksoh) exclusiva, que é um blob de dados opaco para o aplicador.
+Um ponteiro para uma estrutura [**NetworkSoHResponse**](/windows/win32/api/naptypes/ns-naptypes-networksoh) exclusiva, que é um blob de dados opaco para o executor.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Outros códigos de erro específicos de COM também podem ser retornados.
+Outros códigos de erro específicos do COM também podem ser retornados.
 
 
 
@@ -64,7 +64,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | O pacote SoH é válido.<br/>                                |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite de recursos do sistema, não foi possível executar a operação.<br/> |
 
 
 
@@ -80,10 +80,10 @@ Um pacote de tamanho zero é válido.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                |
-| parâmetro<br/>                   | <dl> <dt>NapEnforcementClient. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapEnforcementClient. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                |
+| Cabeçalho<br/>                   | <dl> <dt>NapEnforcementClient.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapEnforcementClient.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 

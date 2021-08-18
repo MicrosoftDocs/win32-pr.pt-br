@@ -1,7 +1,7 @@
 ---
 description: Descreve uma região retangular bloqueada.
 ms.assetid: ee5d2ea6-bf98-4b09-bc67-b808ffcb23c6
-title: Estrutura de D3DLOCKED_RECT (D3D9Types. h)
+title: D3DLOCKED_RECT (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 9242a267085579cce52e66f2b9326a8e6298c87c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b419483329e5461de5bc98b3a37b556e37138a055932b1d6c80d3a19b13ae516
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988896"
 ---
-# <a name="d3dlocked_rect-structure"></a>\_Estrutura D3DLOCKED Rect
+# <a name="d3dlocked_rect-structure"></a>Estrutura D3DLOCKED \_ RECT
 
 Descreve uma região retangular bloqueada.
 
@@ -40,10 +40,10 @@ typedef struct D3DLOCKED_RECT {
 
 <dl> <dt>
 
-**Zumbi**
+**Densidade**
 </dt> <dd>
 
-Tipo: **[ **int**](../winprog/windows-data-types.md)**
+Tipo: **[ **INT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -54,17 +54,17 @@ Número de bytes em uma linha da superfície.
 **pBits**
 </dt> <dd>
 
-Tipo: **void \***
+Tipo: **\* void**
 
 </dd> <dd>
 
-Ponteiro para os bits bloqueados. Se um [**Rect**](/previous-versions//dd162897(v=vs.85)) foi fornecido para a chamada [**LockRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-lockrect) , pBits será adequadamente deslocado do início da superfície.
+Ponteiro para os bits bloqueados. Se um [**RECT**](/previous-versions//dd162897(v=vs.85)) tiver sido fornecido para a [**chamada LockRect,**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dsurface9-lockrect) pBits será devidamente deslocada do início da superfície.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O Tom dos formatos DXTn é diferente do que foi retornado no DirectX 7. Agora, ele se refere ao número de bytes em uma linha de blocos. Por exemplo, se você tiver uma largura de 16, terá um timbre de 4 blocos (4 \* 8 para DXT1, 4 \* 16 para DXT2-5).
+O tom para formatos DXTn é diferente do que foi retornado no DirectX 7. Agora, ele se refere ao número de bytes em uma linha de blocos. Por exemplo, se você tiver uma largura de 16, terá um tom de 4 blocos (4 8 para \* DXT1, 4 \* 16 para DXT2-5.)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ O Tom dos formatos DXTn é diferente do que foi retornado no DirectX 7. Agora, e
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -80,7 +80,7 @@ O Tom dos formatos DXTn é diferente do que foi retornado no DirectX 7. Agora, e
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> <dt>
 
 [**IDirect3DCubeTexture9::LockRect**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3dcubetexture9-lockrect)

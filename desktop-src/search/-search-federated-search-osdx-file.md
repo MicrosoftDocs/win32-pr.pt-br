@@ -1,7 +1,7 @@
 ---
 description: Descreve como criar um arquivo OpenSearch Description (.osdx) para conectar armazenamentos de dados externos ao cliente Windows por meio do protocolo OpenSearch.
 ms.assetid: 62cd88cd-e6ff-4e46-887d-e62f7018c065
-title: Criando um arquivo OpenSearch descrição no Windows Federado
+title: Criando um arquivo OpenSearch descrição no Windows Federated Search
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 3f58b29a860c7d53583b7fd17ddd942bb21b08d649ea7e54d5b2278be2f8d4c2
@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119456829"
 ---
-# <a name="creating-an-opensearch-description-file-in-windows-federated-search"></a>Criando um arquivo OpenSearch descrição no Windows Federado
+# <a name="creating-an-opensearch-description-file-in-windows-federated-search"></a>Criando um arquivo OpenSearch descrição no Windows Federated Search
 
-Descreve como criar um arquivo OpenSearch Description (.osdx) para conectar armazenamentos de dados externos ao cliente Windows por meio do [protocolo OpenSearch.](https://github.com/dewitt/opensearch) A pesquisa federada permite que os usuários pesquisem um armazenamento de dados remoto e vejam os resultados de dentro Windows Explorer.
+Descreve como criar um arquivo OpenSearch Description (.osdx) para conectar armazenamentos de dados externos ao cliente Windows por meio do [protocolo OpenSearch.](https://github.com/dewitt/opensearch) A pesquisa federada permite que os usuários pesquisem um armazenamento de dados remoto e vejam os resultados no Windows Explorer.
 
 Este tópico contém as seguintes seções:
 
 -   [OpenSearch Arquivo de descrição](#opensearch-description-file)
     -   [Elementos filho mínimos necessários](#mininum-required-child-elements)
--   [Elementos padrão na Windows Federadas](#standard-elements-in-windows-federated-search)
+-   [Elementos padrão na Windows Federado](#standard-elements-in-windows-federated-search)
     -   [Shortname](#shortname)
     -   [Descrição](#description)
     -   [Modelo de URL para resultados RSS/Atom](#url-template-for-rssatom-results)
@@ -62,13 +62,13 @@ O arquivo .osdx de exemplo a seguir consiste em **ShortName** e elementos, que s
 
 
 
-## <a name="standard-elements-in-windows-federated-search"></a>Elementos padrão na Windows Federadas
+## <a name="standard-elements-in-windows-federated-search"></a>Elementos padrão na Windows Federado
 
 Além dos elementos filho mínimos, a pesquisa federada dá suporte aos seguintes elementos padrão.
 
 ### <a name="shortname"></a>Shortname
 
-Windows usa o valor do elemento **ShortName** para nomear o arquivo .searchconnector-ms (conector de pesquisa) criado quando o usuário abre o arquivo .osdx. Windows garante que o nome de arquivo gerado use apenas caracteres que são permitidos em Windows de arquivo. Se nenhum **valor ShortName** for fornecido, o arquivo .searchconnector-ms tentará usar o nome do arquivo .osdx.
+Windows usa o valor do elemento **ShortName** para nomear o arquivo .searchconnector-ms (conector de pesquisa) criado quando o usuário abre o arquivo .osdx. Windows garante que o nome de arquivo gerado use apenas caracteres permitidos em Windows de arquivo. Se nenhum **valor ShortName** for fornecido, o arquivo .searchconnector-ms tentará usar o nome do arquivo .osdx.
 
 O código a seguir ilustra como usar o **elemento ShortName** em um arquivo .osdx.
 
@@ -130,13 +130,13 @@ Se houver uma versão dos resultados da pesquisa que possa ser exibida em um nav
 
 
 
-Se você fornecer um elemento **url format="text/html"** e um atributo de modelo, um botão aparecerá na barra de comandos do Windows Explorer, conforme mostrado na captura de tela a seguir, que permite que o usuário abra um navegador da Web para exibir os resultados da pesquisa quando o usuário executa uma consulta. 
+Se você fornecer um elemento **url format="text/html"** e um atributo de modelo, um botão será exibido na barra de comandos do Windows Explorer, conforme mostrado na captura de tela a seguir, que permite que o usuário abra um navegador da Web para exibir os resultados da pesquisa quando o usuário executa uma consulta. 
 
 ![captura de tela mostrando o botão de rolagem de pesquisa na Web.](images/websearchroll-overcommandbarbutton.png)
 
 A replicação da consulta de volta para a interface do usuário da Web do armazenamento de dados é importante em alguns cenários. Por exemplo, um usuário pode querer exibir mais de 100 resultados (o número padrão de itens que o provedor OpenSearch solicita). Nesse caso, o usuário também pode querer usar recursos de pesquisa que estão disponíveis apenas no site do armazenamento de dados, como a consulta com uma ordem de classificação diferente ou a dinâmica e filtragem da consulta com metadados relacionados.
 
-### <a name="url-template-parameters&quot;></a>Parâmetros de modelo de URL
+### <a name="url-template-parameters"></a>Parâmetros de modelo de URL
 
 O OpenSearch provedor executa sempre as seguintes ações:
 
@@ -150,11 +150,11 @@ O OpenSearch provedor executa sempre as seguintes ações:
 | Token com suporte  | Como usado pelo OpenSearch provedor                                                                                                                 |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | {searchTerms}    | Substituídos por termos de pesquisa que o usuário digita na caixa de Windows de entrada de pesquisa do Explorer.<br/>                                         |
-| {startIndex}     | Usado ao obter resultados em &quot;páginas&quot;.<br/> Substituído pelo índice para o primeiro item de resultado a ser retornada.<br/>                        |
-| {startPage}      | Usado ao obter resultados em &quot;páginas&quot;.<br/> Substituído pelo número de página do conjunto de resultados da pesquisa a ser retornada.<br/>               |
-| {count}          | Usado ao obter resultados em &quot;páginas&quot;.<br/> Substituído pelo número de resultados da pesquisa por página que Windows Explorer.<br/> |
+| {startIndex}     | Usado ao obter resultados em "páginas".<br/> Substituído pelo índice para o primeiro item de resultado a ser retornada.<br/>                        |
+| {startPage}      | Usado ao obter resultados em "páginas".<br/> Substituído pelo número de página do conjunto de resultados da pesquisa a ser retornada.<br/>               |
+| {count}          | Usado ao obter resultados em "páginas".<br/> Substituído pelo número de resultados da pesquisa por página que Windows Explorer.<br/> |
 | {language}       | Substituído por uma cadeia de caracteres que indica o idioma da consulta que está sendo enviada.<br/>                                                          |
-| {inputEncoding}  | Substituído por uma cadeia de caracteres (como &quot;UTF-16") que indica a codificação de caracteres da consulta que está sendo enviada.<br/>                                |
+| {inputEncoding}  | Substituído por uma cadeia de caracteres (como "UTF-16") que indica a codificação de caracteres da consulta que está sendo enviada.<br/>                                |
 | {outputEncoding} | Substituído por uma cadeia de caracteres (como "UTF-16") que indica a codificação de caracteres desejada para a resposta do serviço Web.<br/>       |
 
 
@@ -163,7 +163,7 @@ O OpenSearch provedor executa sempre as seguintes ações:
 
 ### <a name="paged-results"></a>Resultados de página
 
-Talvez você queira limitar o número de resultados retornados por solicitação. Você pode optar por retornar uma "página" de resultados por vez ou fazer com que o provedor OpenSearch receba páginas adicionais de resultados por número de item ou número de página. Por exemplo, se você enviar vinte resultados por página, a primeira página que você enviar começará no índice de item 1 e na página 1; a segunda página que você envia começa no índice de item 21 e na página 2. Você pode definir como deseja que o provedor OpenSearch solicite itens usando o ou o `{startItem}` token no modelo de `{startPage}` URL.
+Talvez você queira limitar o número de resultados retornados por solicitação. Você pode optar por retornar uma "página" de resultados por vez ou fazer com que o provedor de OpenSearch receba páginas adicionais de resultados por número de item ou número de página. Por exemplo, se você enviar vinte resultados por página, a primeira página que você enviar começará no índice de item 1 e na página 1; a segunda página que você envia começa no índice de item 21 e na página 2. Você pode definir como deseja que o provedor OpenSearch solicite itens usando o ou o `{startItem}` token no modelo de `{startPage}` URL.
 
 ### <a name="paging-using-the-item-index"></a>Paging usando o índice de item
 
@@ -205,7 +205,7 @@ Um índice de página identifica a página de resultados especificada. Se você 
 
 
 
-O OpenSearch de dados substitui o token na URL por um parâmetro de número de página. A primeira solicitação começa com a primeira página, conforme mostrado no exemplo a seguir:
+em seguida, o provedor de OpenSearch substitui o token na URL por um parâmetro de número de página. A primeira solicitação começa com a primeira página, conforme mostrado no exemplo a seguir:
 
 
 ```
@@ -215,13 +215,13 @@ https://example.com/rss.php?query=frogs&page=1
 
 
 > [!Note]  
-> Se uma página de resultados retornados pelo serviço Web tiver menos itens do que o tamanho esperado da página, o provedor OpenSearch assumirá que recebeu a última página de resultados e para de fazer solicitações.
+> se uma página de resultados retornada pelo serviço web tiver menos itens que o tamanho de página esperado, o provedor de OpenSearch assumirá que recebeu a última página de resultados e interromperá a realização de solicitações.
 
  
 
 ### <a name="page-size"></a>Tamanho da Página
 
-Talvez você queira configurar seu serviço Web para permitir que uma solicitação especifique o tamanho das páginas usando algum parâmetro na URL. Uma solicitação deve ser especificada no arquivo .osdx usando o `{count}` token , da seguinte forma:
+Talvez você queira configurar seu serviço Web para permitir que uma solicitação especifique o tamanho das páginas usando algum parâmetro na URL. Uma solicitação deve ser especificada no arquivo. osdx usando o `{count}` token, da seguinte maneira:
 
 
 ```
@@ -231,7 +231,7 @@ Talvez você queira configurar seu serviço Web para permitir que uma solicitaç
 
 
 
-O [OpenSearch](https://github.com/dewitt/opensearch) provedor pode definir o tamanho desejado da página, em número de resultados por página, conforme mostrado no exemplo a seguir:
+o provedor de [OpenSearch](https://github.com/dewitt/opensearch) pode então definir o tamanho de página desejado, em número de resultados por página, conforme mostrado no exemplo a seguir:
 
 
 ```
@@ -240,15 +240,15 @@ https://example.com/rss.php?query=frogs&start=1&cnt=50
 
 
 
-Por padrão, o OpenSearch faz solicitações usando um tamanho de página de 50. Se você quiser um tamanho de página diferente, não forneça um token e, em vez disso, coloque o número desejado diretamente no elemento de modelo `{count}` **de** URL.
+por padrão, o provedor de OpenSearch faz solicitações usando um tamanho de página de 50. Se você quiser um tamanho de página diferente, não forneça um `{count}` token e, em vez disso, coloque o número desejado diretamente no elemento de **modelo de URL** .
 
-O OpenSearch provedor determina o tamanho da página com base no número de resultados retornados na primeira solicitação. Se a primeira página de resultados recebida tiver menos itens do que a contagem solicitada, o provedor redefini o tamanho da página para quaisquer solicitações de página subsequentes. Se as solicitações de página subsequentes retornarem menos itens do que o solicitado, o provedor de OpenSearch assumirá que ele atingiu o final dos resultados.
+o provedor de OpenSearch determina o tamanho da página com base no número de resultados retornados na primeira solicitação. Se a primeira página de resultados recebidos tiver menos itens do que a contagem solicitada, o provedor redefinirá o tamanho da página para todas as solicitações de página subsequentes. se as solicitações de página subsequentes retornarem menos itens que o solicitado, o provedor de OpenSearch assumirá que atingiu o final dos resultados.
 
-## <a name="extended-elements-in-windows-federated-search"></a>Elementos estendidos Windows pesquisa federada
+## <a name="extended-elements-in-windows-federated-search"></a>elementos estendidos em Windows pesquisa federada
 
-Além dos elementos padrão, a pesquisa federada dá suporte aos seguintes elementos estendidos: **MaximumResultCount** e **ResultsProcessing.**
+Além dos elementos padrão, a pesquisa federada dá suporte aos seguintes elementos estendidos: **MaximumResultCount** e **ResultsProcessing**.
 
-Como esses elementos filho estendidos não têm suporte na especificação [OpenSearch](https://github.com/dewitt/opensearch) v1.1, eles devem ser adicionados usando o seguinte namespace:
+como esses elementos filho estendidos não têm suporte na especificação [OpenSearch](https://github.com/dewitt/opensearch) v 1.1, eles devem ser adicionados usando o seguinte namespace:
 
 
 ```
@@ -259,7 +259,7 @@ http://schemas.microsoft.com/opensearchext/2009/
 
 ### <a name="maximum-result-count"></a>Contagem máxima de resultados
 
-Por padrão, os conectores de pesquisa são limitados a 100 resultados por consulta de usuário. Esse limite pode ser personalizado incluindo o **elemento MaximumResultCount** dentro do arquivo OSD, conforme mostrado no exemplo a seguir:
+Por padrão, os conectores de pesquisa são limitados a resultados de 100 por consulta de usuário. Esse limite pode ser personalizado incluindo o elemento **MaximumResultCount** dentro do arquivo OSD, conforme mostrado no exemplo a seguir:
 
 
 ```
@@ -272,67 +272,67 @@ Por padrão, os conectores de pesquisa são limitados a 100 resultados por consu
 
 
 
-O exemplo anterior declara o prefixo de namespace no elemento `ms-ose` **OpenSearchDescription** de nível superior e, em seguida, o usa como um prefixo no nome do elemento. Essa declaração é necessária porque Não há suporte para **MaximumResultCount** na [especificação OpenSearch](https://github.com/dewitt/opensearch) v1.1.
+O exemplo anterior declara o prefixo do namespace `ms-ose` no elemento **OpenSearchDescription** de nível superior e, em seguida, o usa como um prefixo no nome do elemento. essa declaração é necessária porque o **MaximumResultCount** não tem suporte na especificação [OpenSearch](https://github.com/dewitt/opensearch) v 1.1.
 
 ### <a name="property-mapping"></a>Mapeamento de propriedade
 
-Quando os resultados são retornados pelo serviço Web como um RSS ou feed Atom, o provedor OpenSearch deve mapear os metadados do item nos feeds para propriedades que o shell Windows pode usar. A captura de tela a seguir ilustra como o provedor OpenSearch mapeia alguns dos elementos RSS padrão.
+quando os resultados são retornados pelo serviço web como um feed RSS ou Atom, o provedor de OpenSearch deve mapear os metadados do item nos feeds para propriedades que o Shell de Windows pode usar. a captura de tela a seguir ilustra como o provedor de OpenSearch mapeia alguns dos elementos RSS padrão.
 
-![captura de tela mostrando mapeamentos de propriedade rss-to-windows-shell integrados](images/built-inrsstowindowsshellpropertymappings.png)
+![captura de tela mostrando mapeamentos de propriedades internos de RSS para Windows-Shell](images/built-inrsstowindowsshellpropertymappings.png)
 
 ### <a name="default-mappings"></a>Mapeamentos padrão
 
-Os mapeamentos padrão de elementos XML do RSS Windows propriedades do sistema shell são listados na tabela a seguir. Os caminhos XML são relativos ao elemento de item. O `"media:"` prefixo é definido pelo [namespace do Namespace](https://www.rssboard.org/media-rss) do Yahoo Search.
+os mapeamentos padrão dos elementos RSS XML para Windows propriedades do sistema Shell são listados na tabela a seguir. Os caminhos XML são relativos ao elemento item. O `"media:"` prefixo é definido pelo namespace do [namespace de pesquisa do Yahoo](https://www.rssboard.org/media-rss) .
 
 
 
-| Caminho XML do RSS                  | Windows Propriedade shell (nome canônico) |
+| Caminho XML do RSS                  | Windows Propriedade Shell (nome canônico) |
 |-------------------------------|-----------------------------------------|
-| Link                          | System.ItemUrl                          |
-| Título                         | System.ItemName                         |
+| Link                          | System. ItemUrl                          |
+| Título                         | System. ItemName                         |
 | Autor                        | System.Author                           |
-| pubDate                       | System.DateModified                     |
-| Descrição                   | System.AutoSummary                      |
+| pubDate                       | System. DateModified                     |
+| Descrição                   | System. autosummary                      |
 | Categoria                      | System.Keywords                         |
-| enclosure/@type               | System.MIMEType                         |
-| enclosure/@length             | System.Size                             |
-| enclosure/@url                | System.ContentUrl                       |
-| media:category                | System.Keywords                         |
-| media:content/@fileSize       | System.Size                             |
-| media:content/@type           | System.MIMEType                         |
-| media:content/@url            | System.ContentUrl                       |
-| media:group/content/@fileSize | System.Size                             |
-| media:group/content/@type     | System.MIMEType                         |
-| media:group/content/@url      | System.ContentUrl                       |
-| media:thumbnail/@url          | System.ItemThumbnailUrl                 |
+| enclosure/@type               | System. MIMEType                         |
+| enclosure/@length             | Sistema. tamanho                             |
+| enclosure/@url                | System. ContentUrl                       |
+| mídia: categoria                | System.Keywords                         |
+| media:content/@fileSize       | Sistema. tamanho                             |
+| media:content/@type           | System. MIMEType                         |
+| media:content/@url            | System. ContentUrl                       |
+| media:group/content/@fileSize | Sistema. tamanho                             |
+| media:group/content/@type     | System. MIMEType                         |
+| media:group/content/@url      | System. ContentUrl                       |
+| media:thumbnail/@url          | System. ItemThumbnailUrl                 |
 
 
 
  
 
 > [!Note]  
-> Além dos mapeamentos padrão de elementos RSS ou Atom padrão, você pode mapear outras propriedades do sistema shell do Windows incluindo elementos XML adicionais no namespace Windows para cada uma das propriedades. Você também pode mapear elementos de outros namespaces XML existentes, como MediaRSS, iTunes e assim por diante, adicionando o mapeamento de propriedade personalizado no arquivo .osdx.
+> além dos mapeamentos padrão dos elementos RSS ou Atom padrão, você pode mapear outras propriedades do sistema Windows Shell, incluindo elementos XML adicionais no namespace Windows para cada uma das propriedades. Você também pode mapear elementos de outros namespaces XML existentes, como MediaRSS, iTunes e assim por diante, adicionando o mapeamento de propriedade personalizada no arquivo. osdx.
 
  
 
-### <a name="custom-property-mappings"></a>Mapeamentos de propriedade personalizados
+### <a name="custom-property-mappings"></a>Mapeamentos de propriedade personalizada
 
-Você pode personalizar o mapeamento de elementos da saída do RSS para Windows do sistema shell especificando o mapeamento no arquivo .osdx.
+você pode personalizar o mapeamento de elementos de sua saída RSS para Windows propriedades do sistema Shell especificando o mapeamento no arquivo. osdx.
 
-A saída do RSS especifica:
+A saída RSS especifica:
 
 -   Um namespace XML e
--   Para qualquer elemento filho de um item, um nome de elemento para mapear.
+-   Para qualquer elemento filho de um item, um nome de elemento para o qual mapear.
 
-O arquivo .osdx identifica uma propriedade Windows Shell para cada nome de elemento em um namespace. Os mapeamentos de propriedade que você define no arquivo .osdx substituem os mapeamentos padrão, se existirem, para essas propriedades especificadas.
+o arquivo. osdx identifica uma propriedade de Shell Windows para cada nome de elemento em um namespace. Os mapeamentos de propriedade que você define em seu arquivo. osdx substituem os mapeamentos padrão, se existirem, para essas propriedades especificadas.
 
-O diagrama a seguir ilustra como uma extensão RSS é mapeado para Windows propriedades (nome canônico).
+o diagrama a seguir ilustra como uma extensão RSS é mapeada para Windows propriedades (nome canônico).
 
-![diagrama mostrando que a combinação de namespace xml e caminho xml produz o nome canônico](images/rssextensionsusexmlnamespaceandpathstomaptowindowsproperties.png)
+![diagrama mostrando que a combinação de namespace XML e caminho XML produz o nome canônico](images/rssextensionsusexmlnamespaceandpathstomaptowindowsproperties.png)
 
-### <a name="example-rss-results-and-osd-property-mapping"></a>Exemplo de resultados do RSS e mapeamento de propriedade osd
+### <a name="example-rss-results-and-osd-property-mapping"></a>Resultados RSS de exemplo e mapeamento de propriedade OSD
 
-O exemplo de saída RSS a seguir identifica `https://example.com/schema/2009` como o namespace XML com o prefixo "example". Esse prefixo deve aparecer novamente antes do **elemento de email.**
+O exemplo de saída RSS a seguir identifica `https://example.com/schema/2009` como o namespace XML com o prefixo "example". Esse prefixo deve aparecer novamente antes do elemento de **email** .
 
 
 ```
@@ -346,7 +346,7 @@ O exemplo de saída RSS a seguir identifica `https://example.com/schema/2009` co
 
 
 
-No arquivo .osdx de exemplo a seguir, o elemento **de email** XML é mapeado para a propriedade Windows Shell [System.Contact.EmailAddress](../properties/props-system-contact-emailaddress.md).
+no arquivo de exemplo. osdx a seguir, o elemento **email** XML é mapeado para a propriedade Windows Shell [System. Contact. EmailAddress](../properties/props-system-contact-emailaddress.md).
 
 
 ```
@@ -368,15 +368,15 @@ No arquivo .osdx de exemplo a seguir, o elemento **de email** XML é mapeado par
 
 
 
-Há algumas propriedades que não podem ser mapeadas porque os valores para elas são substituídos posteriormente ou não são editáveis. Por exemplo, [System.ItemFolderPathDisplay](../properties/props-system-itempathdisplay.md) ou [System.ItemPathDisplayNarrow](../properties/props-system-itempathdisplaynarrow.md) não podem ser mapeados porque são calculados com base no valor de URL fornecido nos elementos de link ou compartimento.
+Há algumas propriedades que não podem ser mapeadas porque os valores para elas são substituídos posteriormente ou não são editáveis. Por exemplo, [System. ItemFolderPathDisplay](../properties/props-system-itempathdisplay.md) ou [System. ItemPathDisplayNarrow](../properties/props-system-itempathdisplaynarrow.md) não podem ser mapeados porque eles são calculados a partir do valor da URL fornecido nos elementos do link ou do compartimento.
 
 ### <a name="thumbnails"></a>Miniaturas
 
-UrLs de imagem em miniatura podem ser fornecidas para qualquer item usando o **elemento media:thumbnail url="".** A resolução ideal é de 150 x 150 pixels. As maiores miniaturas com suporte são 256 x 256 pixels. Fornecer imagens maiores leva mais largura de banda para nenhum benefício adicional para o usuário.
+As URLs de imagem em miniatura podem ser fornecidas para qualquer item usando o elemento **Media: thumbnail URL = ""** . A resolução ideal é 150 x 150 pixels. As maiores miniaturas com suporte são 256 x 256 pixels. Fornecer imagens maiores consome mais largura de banda para nenhum benefício adicional ao usuário.
 
-### <a name="open-file-location-context-menu"></a>Menu de contexto Abrir Local do Arquivo
+### <a name="open-file-location-context-menu"></a>Abrir menu de contexto do local do arquivo
 
-Windows fornece um menu de atalho chamado **Abrir local do arquivo para** itens de resultado. Se o usuário selecionar um item nesse menu, a URL "pai" do item selecionado será aberta. Se a URL for uma URL da Web, como , o navegador da `https://...` Web será aberto e navegará até essa URL. Seu feed deve fornecer uma URL personalizada para cada item para garantir que Windows abra uma URL válida. Isso pode ser feito incluindo a URL dentro de um elemento dentro do XML do item, conforme ilustrado no exemplo a seguir:
+Windows fornece um menu de atalho chamado **abrir local do arquivo** para itens de resultado. Se o usuário selecionar um item desse menu, a URL "pai" para o item selecionado será aberta. Se a URL for uma URL da Web, como `https://...` , o navegador da Web será aberto e navegado para essa URL. o feed deve fornecer uma url personalizada para cada item para garantir que Windows abra uma url válida. Isso pode ser feito com a inclusão da URL dentro de um elemento dentro do XML do item, conforme ilustrado no exemplo a seguir:
 
 
 ```
@@ -394,25 +394,25 @@ Windows fornece um menu de atalho chamado **Abrir local do arquivo para** itens 
 
 
 
-Se essa propriedade não for definida explicitamente no XML do item, o provedor OpenSearch o definirá como a pasta pai da URL do item. No exemplo acima, o provedor OpenSearch usaria o valor do link e definiria o valor da propriedade [System.ItemFolderPathDisplay](../properties/props-system-itemfolderpathdisplay.md) Windows Shell como `"https://example.com/"` .
+se essa propriedade não estiver definida explicitamente no XML do item, o provedor de OpenSearch a definirá como a pasta pai da URL do item. no exemplo acima, o provedor de OpenSearch usaria o valor do link e definiu o valor da propriedade do Shell [System. ItemFolderPathDisplay](../properties/props-system-itemfolderpathdisplay.md) Windows como `"https://example.com/"` .
 
-### <a name="customize-windows-explorer-views-with-property-description-lists"></a>Personalizar exibições Windows Explorer com listas de descrição da propriedade
+### <a name="customize-windows-explorer-views-with-property-description-lists"></a>personalizar exibições do Windows Explorer com listas de descrição de propriedade
 
-Alguns Windows layouts de exibição do Explorer são definidos por listas de descrições de propriedade ou proplists. Uma lista de propriedades é uma lista delimitada por ponto e vírgula de propriedades, como , que é usada para controlar como os resultados aparecem no `"prop:System.ItemName; System.Author"` Windows Explorer.
+alguns layouts de exibição do Windows Explorer são definidos pelas listas de descrição de propriedade ou pelo propliss. uma proplist é uma lista delimitada por ponto-e-vírgula de propriedades, como `"prop:System.ItemName; System.Author"` , que é usada para controlar como os resultados são exibidos no Windows Explorer.
 
-As áreas de interface do Windows Explorer que podem ser personalizadas usando proplists são ilustradas na captura de tela a seguir:
+as áreas de interface do usuário do Windows Explorer que podem ser personalizadas usando o propliss são ilustradas na captura de tela a seguir:
 
-![captura de tela mostrando as áreas de interface do usuário do Windows Explorer que podem ser personalizadas usando proplists](images/areasofwindowsexplorerthatyoucancontrolwithproplists.png)
+![captura de tela mostrando as áreas de interface do usuário do Windows Explorer que podem ser personalizadas usando o propliss](images/areasofwindowsexplorerthatyoucancontrolwithproplists.png)
 
-Cada área do Windows Explorer tem um conjunto associado de proplists, que são especificados como propriedades. Você pode especificar listas de propriedades personalizadas para itens individuais em seus conjuntos de resultados ou para todos os itens em um conjunto de resultados.
+cada área do Windows Explorer tem um conjunto associado de propliss, que são especificados como propriedades. Você pode especificar proplistes personalizados para itens individuais em seus conjuntos de resultados ou para todos os itens em um conjunto de resultados.
 
 
 
-| Área de interface do usuário para personalizar               | Windows Propriedade shell que implementa a personalização |
+| Área da interface do usuário a ser personalizada               | Windows Propriedade do shell que implementa a personalização |
 |------------------------------------|----------------------------------------------------------|
-| Modo de exibição de conteúdo (ao pesquisar) | System.PropList.ContentViewModeForSearch                 |
-| Modo de exibição de conteúdo (ao navegar)  | System.PropList.ContentViewModeForBrowse                 |
-| Modo de exibição de tile                     | System.PropList.TileInfo                                 |
+| Modo de exibição de conteúdo (ao Pesquisar) | System. PropList. ContentViewModeForSearch                 |
+| Modo de exibição de conteúdo (ao navegar)  | System. PropList. ContentViewModeForBrowse                 |
+| Modo de exibição de bloco                     | System. PropList. TileInfo                                 |
 | Painel de detalhes                       | System.PropList.PreviewDetails                           |
 | Infotip (dica de ferramenta de foco do item)     | System.PropList.Infotip                                  |
 
@@ -532,7 +532,7 @@ Para obter informações adicionais sobre como implementar a federação de pesq
 [Conectando seu serviço Web Windows Pesquisa Federada](-search-federated-search-web-service.md)
 </dt> <dt>
 
-[Habilitando seu armazenamento de dados Windows pesquisa federada](-search-federated-search-data-store.md)
+[Habilitando seu armazenamento de dados Windows Pesquisa Federada](-search-federated-search-data-store.md)
 </dt> <dt>
 
 [Seguindo as práticas recomendadas Windows pesquisa federada](-search-fedsearch-best.md)

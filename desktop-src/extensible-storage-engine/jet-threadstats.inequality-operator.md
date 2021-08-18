@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9dd3bc0f56b5fbbc47928387f999664df7bcc7a0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d66f390049893b5dd529cfa5978cab3ed966654655ac5816a6d3f9638525dd8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728636"
 ---
 # <a name="jet_threadstatsinequality-operator"></a>JET_THREADSTATS. Operador de desigualdade
 
@@ -76,7 +76,7 @@ public static bool operator !=(
     
     A segunda instância a ser comparada.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Boolean](/dotnet/api/system.boolean)  
 True se as duas instâncias não forem iguais.  

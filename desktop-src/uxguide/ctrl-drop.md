@@ -100,8 +100,8 @@ Listas suspensas e caixas de combinação têm vários padrões de uso:
 |-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Lista** suspensa uma lista suspensa padrão, com um conjunto fixo de valores predeterminados. <br/>                                 | quando fechado, somente o item selecionado fica visível. Quando os usuários clicarem no botão suspenso, todas as opções se tornarão visíveis. para alterar o valor, os usuários abrem a lista e clicam em outro valor.<br/> ![captura de tela da lista suspensa, opções ocultas ](images/ctrl-drop-image6.png)<br/> Neste exemplo, a lista está em seu estado normal.<br/> ![captura de tela da lista suspensa, opções exibidas ](images/ctrl-drop-image7.png)<br/> Neste exemplo, a lista foi descartada.<br/> |
 | **Visualização lista** suspensa uma lista suspensa que visualiza os resultados da seleção para ajudar os usuários a escolherem.<br/>             | ![captura de tela das opções de cor e texto ](images/ctrl-drop-image8.png)<br/> Nesses exemplos, as listas suspensas visualizam os resultados da seleção.<br/>                                                                                                                                                                                                                                                                                                                                           |
-| **Lista suspensa editável** uma caixa de combinação suspensa, que permite aos usuários inserir um valor que não esteja na lista suspensa.<br/> | ![aa511458. dropdownlists27 (en-US, msdn. 10) .png](images/ctrl-drop-image9.png)![captura de tela da caixa de combinação de tamanho de fonte editável ](images/ctrl-drop-image10.png)<br/> Exemplos de uma lista suspensa editável nos modos editar e descartar.<br/> Use esse controle quando desejar dar a flexibilidade de uma caixa de texto, mas quiser ajudar os usuários fornecendo uma lista conveniente de opções prováveis.<br/>                                                                                                   |
-| **Caixas de listagem editáveis** uma caixa de combinação regular, que permite aos usuários inserir um valor que não esteja na lista sempre visível. <br/> | ![captura de tela da lista suspensa de opções de fonte ](images/ctrl-drop-image11.png)<br/> Nesses exemplos, as caixas de listagem editáveis são sempre exibidas.<br/> Esse controle é uma opção melhor do que a lista suspensa editável quando é importante encorajar os usuários a revisarem as opções alternativas ou a alteração de convite.<br/>                                                                                                                                                                      |
+| **Lista de listas listadas editáveis** uma caixa de combinação listada, que permite que os usuários insiram um valor que não está na lista de listas listadas.<br/> | ![aa511458.dropdownlists27(en-us,msdn.10).png](images/ctrl-drop-image9.png)![captura de tela da caixa de combinação de tamanho da fonte editável ](images/ctrl-drop-image10.png)<br/> Exemplos de uma lista de listas listadas editáveis nos modos de edição e de lista de insociáveis.<br/> Use esse controle quando quiser dar a flexibilidade de uma caixa de texto, mas quiser ajudar os usuários fornecendo uma lista conveniente de opções prováveis.<br/>                                                                                                   |
+| **Caixas de listagem editáveis** em uma caixa de combinação regular, que permite que os usuários insiram um valor que não está na lista sempre visível. <br/> | ![captura de tela da listada de opções de fonte ](images/ctrl-drop-image11.png)<br/> Nesses exemplos, as caixas de listagem editáveis são sempre exibidas.<br/> Esse controle é uma opção melhor do que a lista de listas listadas editáveis quando é importante incentivar os usuários a revisar as opções alternativas ou convidar alterações.<br/>                                                                                                                                                                      |
 
 
 
@@ -111,78 +111,78 @@ Listas suspensas e caixas de combinação têm vários padrões de uso:
 
 ### <a name="general"></a>Geral
 
--   **Não use a alteração de uma lista suspensa ou caixa de combinação para**:
+-   **Não use a alteração de uma lista de** listas ou caixa de combinação para :
     -   Executar comandos.
-    -   Exiba outras janelas, como uma caixa de diálogo para coletar mais entradas.
-    -   Exibir dinamicamente outros controles relacionados ao controle selecionado ([leitores de tela](inter-accessibility.md) não podem detectar esses eventos).
+    -   Exibir outras janelas, como uma caixa de diálogo para coletar mais entradas.
+    -   Exibir dinamicamente outros controles relacionados ao controle selecionado ( leitores[de tela](inter-accessibility.md) não podem detectar esses eventos).
 
 ### <a name="presentation"></a>Apresentação
 
--   **Classifique itens de lista em uma ordem lógica**, como agrupar opções altamente relacionadas juntas, colocando as opções mais comuns primeiro ou usando a ordem alfabética. Classifique os nomes em ordem alfabética, números em ordem numérica e datas em ordem cronológica. Listas com 12 ou mais itens devem ser classificadas alfabeticamente para facilitar a localização dos itens.
+-   **Classificar itens de lista em uma ordem lógica,** como agrupar opções altamente relacionadas, colocar as opções mais comuns primeiro ou usar ordem alfabética. Classificar nomes em ordem alfabética, números em ordem numérica e datas em ordem cronológica. Listas com 12 ou mais itens devem ser ordenadas em ordem alfabética para tornar os itens mais fáceis de encontrar.
 
-    **Correto:** ![ captura de tela da lista suspensa lógica ](images/ctrl-drop-image12.png)
+    **Correto:** ![ captura de tela da lista de listas listas de listas listas de espera lógicas ](images/ctrl-drop-image12.png)
 
-    Neste exemplo, os itens de lista são classificados por sua relação espacial.
+    Neste exemplo, os itens de lista são classificação por sua relação espacial.
 
-    **Incorreto:** ![ captura de tela da lista suspensa desorganizada ](images/ctrl-drop-image13.png)
+    **Incorreto:** ![ captura de tela da lista de listas listadas desorganizadas ](images/ctrl-drop-image13.png)
 
-    Neste exemplo, há muitos itens de lista que precisam ser classificados em ordem alfabética.
+    Neste exemplo, há tantos itens de lista que eles precisam ser ordenados em ordem alfabética.
 
-    **Correto:** ![ captura de tela da lista suspensa em ordem alfabética ](images/ctrl-drop-image14.png)
+    **Correto:** ![ captura de tela da lista de listas listadas em ordem alfabética ](images/ctrl-drop-image14.png)
 
-    Neste exemplo, os itens de lista são classificados em ordem alfabética, exceto para a opção que representa todos os itens.
+    Neste exemplo, os itens de lista são ordenados em ordem alfabética, exceto pela opção que representa todos os itens.
 
--   **Coloque opções que representem todas ou nenhuma no início da lista, independentemente da ordem de classificação dos itens restantes.**
--   **Coloque meta-Options entre parênteses.**
+-   **Coloque opções que representam Todos ou Nenhum no início da lista, independentemente da ordem de classificação dos itens restantes.**
+-   **Coloque as meta opções entre parênteses.**
 
-    ![Captura de tela que mostra uma lista suspensa com ' (nenhum) ' selecionado.](images/ctrl-drop-image15.png)
+    ![Captura de tela que mostra uma lista lista listada com '(None)' selecionado.](images/ctrl-drop-image15.png)
 
-    Neste exemplo, "(None)" é uma meta-opção porque não é um valor válido para a escolha, em vez disso, ela descreve que a própria opção não está sendo usada.
+    Neste exemplo, "(None)" é uma meta-opção porque não é um valor válido para a escolha, em vez de descrever que a opção em si não está sendo usada.
 
--   **Ao desabilitar uma lista suspensa ou caixa de combinação, desabilite também todos os rótulos e botões de comando associados.**
+-   **Ao desabilitar uma lista ou caixa de combinação, desabilite também os rótulos e botões de comando associados.**
 
 ### <a name="drop-down-lists"></a>Listas suspensas
 
--   Quando uma única lista suspensa é usada para alterar a exibição de um controle associado, **altere a exibição imediatamente na seleção, em vez de exigir um botão de comando separado.** Use um botão de comando separado somente se a lista levar um tempo significativo para ser renderizado. No entanto, os cabeçalhos de lista e os [botões de menu](ctrl-command-buttons.md) são os controles preferidos para essa finalidade.
--   **Não faça com que itens de lista em branco** **usem meta-Options em vez disso**. Os usuários não sabem como interpretar itens em branco, enquanto o significado das meta-opções é explícito.
+-   Quando uma única lista de listas é usada para alterar a exibição de um controle associado, altere a exibição imediatamente na seleção em vez de exigir **um botão de comando separado.** Use um botão de comando separado somente se a lista levar um tempo significativo para renderizar. No entanto, os botões de menu e os [headers de](ctrl-command-buttons.md) lista são os controles preferenciais para essa finalidade.
+-   **Não há itens de lista em branco que** usam **meta-opções em vez disso.** Os usuários não sabem interpretar itens em branco, enquanto o significado das meta-opções é explícito.
 
-    **Correto:** ![ captura de tela da lista suspensa com nenhum selecionado ](images/ctrl-drop-image16.png)
+    **Correto:** ![ captura de tela da lista lista listada com nenhum selecionado ](images/ctrl-drop-image16.png)
 
-    **Incorreto:** ![ captura de tela da lista suspensa com o branco selecionado ](images/ctrl-drop-image17.png)
+    **Incorreto:** ![ captura de tela da lista lista listada com a opção em branco selecionada ](images/ctrl-drop-image17.png)
 
-    No exemplo incorreto, o significado da opção em branco não é claro.
+    No exemplo incorreto, o significado da opção em branco não está claro.
 
-### <a name="preview-drop-down-lists"></a>Listas suspensas de visualização
+### <a name="preview-drop-down-lists"></a>Visualizar listas listadas
 
--   **Use visualizações na lista de itens quando for melhor mostrar com imagens do que descrever usando apenas texto.**
+-   **Use visualizações nos itens de lista quando for melhor mostrar com imagens do que descrever o uso de texto sozinho.**
 
-    ![captura de tela da lista suspensa de fontes visualizadas ](images/ctrl-drop-image18.png)
+    ![captura de tela da lista lista de fontes visualizadas ](images/ctrl-drop-image18.png)
 
-    Neste exemplo, a visualização explica as opções muito melhores do que apenas texto.
+    Neste exemplo, a versão prévia explica as opções muito melhores do que apenas texto.
 
--   **Não use ícones desnecessários e não auxiliares em visualizações**.
+-   **Não use ícones desnecessários e desnecessários em visualizações.**
 
-    **Incorreto:** ![ captura de tela da lista suspensa de rótulos com ícones ](images/ctrl-drop-image19.png)
+    **Incorreto:** ![ captura de tela da lista lista de rótulos com ícones ](images/ctrl-drop-image19.png)
 
     Neste exemplo, os ícones de visualização são desnecessários porque não comunicam nenhuma informação.
 
 ### <a name="combo-boxes"></a>Caixas de combinação
 
--   **Limite o tamanho do texto de entrada quando possível.** Por exemplo, se a entrada válida for um número entre 0 e 999, use uma caixa de combinação limitada a três caracteres.
--   **Se houver muitas opções possíveis, concentre o conteúdo da lista nas opções mais prováveis**. Como os usuários podem inserir valores que não estão na lista, as caixas de combinação não precisam listar todas as opções, apenas as opções prováveis ou um exemplo representativo.
+-   **Limite o comprimento do texto de entrada quando possível.** Por exemplo, se a entrada válida for um número entre 0 e 999, use uma caixa de combinação limitada a três caracteres.
+-   **Se houver muitas opções possíveis, concentre o conteúdo da lista nas opções mais prováveis.** Como os usuários podem inserir valores que não estão na lista, as caixas de combinação não têm que listar todas as opções, apenas as opções prováveis ou um exemplo representativo.
 
-    ![captura de tela da lista suspensa de tamanhos de fonte ](images/ctrl-drop-image10.png)
+    ![captura de tela da lista lista listada de tamanhos de fonte ](images/ctrl-drop-image10.png)
 
-    Neste exemplo, muitas opções válidas não são listadas, como 15, ou fontes de meio tamanho, como 9,5.
+    Neste exemplo, muitas opções válidas não são listadas, como 15 ou fontes de tamanho médio, como 9,5.
 
 ### <a name="default-values"></a>Valores padrão
 
--   **Selecione a opção mais segura (para evitar perda de dados ou acesso ao sistema) e a mais segura por padrão.** Se não houver fatores de segurança e segurança, selecione a opção mais provável ou conveniente.
-    -   **Exceção:** Exibir um valor padrão em branco se o controle representar uma propriedade em um [estado misto](glossary.md), o que acontece ao exibir uma propriedade para vários objetos que não têm a mesma configuração.
+-   **Selecione a opção mais segura (para evitar a perda de dados ou acesso ao sistema) e a opção mais segura por padrão.** Se segurança e segurança não são fatores, selecione a opção mais provável ou conveniente.
+    -   **Exceção:** Exibir um valor padrão em branco se o controle representar uma propriedade em um estado misto [,](glossary.md)que acontece ao exibir uma propriedade para vários objetos que não têm a mesma configuração.
 
 ## <a name="prompts"></a>Solicitações
 
-Um prompt é um rótulo ou uma instrução curta colocada dentro de uma lista suspensa editável como seu valor padrão. Ao contrário do texto estático, os prompts desaparecerão da tela quando os usuários digitarem algo na caixa de combinação ou se chegarem ao foco de entrada.
+Um prompt é um rótulo ou uma instrução curta colocada dentro de uma lista de listas listadas editáveis como seu valor padrão. Ao contrário do texto estático, os prompts desaparecem da tela depois que os usuários digitam algo na caixa de combinação ou ele obtém o foco de entrada.
 
 ![captura de tela de uma caixa de pesquisa ](images/ctrl-drop-image20.png)
 
@@ -190,95 +190,95 @@ Um prompt típico.
 
 Use um prompt quando:
 
--   O espaço na tela é um tanto que usar um rótulo ou instrução é indesejável, como em uma barra de ferramentas.
--   O prompt destina-se principalmente a identificar a finalidade da lista de forma compactada. Elas não devem ser informações cruciais que os usuários precisam ver ao usar a caixa de combinação.
+-   O espaço na tela é tão premium que usar um rótulo ou instrução é indesejável, como em uma barra de ferramentas.
+-   O prompt serve principalmente para identificar a finalidade da lista de maneira compacta. Não deve ser informações cruciais que os usuários precisam ver ao usar a caixa de combinação.
 
-Não use prompts apenas para direcionar os usuários a selecionar algo na lista ou clicar em botões. Por exemplo, prompts como selecionar uma opção ou inserir um nome de arquivo e, em seguida, clique em enviar são desnecessários.
+Não use prompts apenas para direcionar os usuários para selecionar algo na lista ou clicar em botões. Por exemplo, prompts como Selecionar uma opção ou Inserir um nome de arquivo e, em seguida, clicar em Enviar são desnecessários.
 
 Ao usar prompts:
 
--   Desenhe o texto do prompt em itálico e texto em branco em preto normal. O texto do prompt não deve ser confundido com texto real.
+-   Desenhe o texto do prompt em cinza itálico e texto real em preto normal. O texto do prompt não deve ser confundido com texto real.
 -   Mantenha o texto do prompt conciso. Você pode usar fragmentos em vez de frases completas.
--   Use [a capitalização no estilo de frase](glossary.md).
--   Não use pontuação final ou reticências.
--   O texto do prompt não deve ser editável e deve desaparecer quando os usuários clicarem na caixa de texto ou na guia.
-    -   **Exceção:** O prompt será exibido se a caixa de texto tiver o foco de entrada padrão e apenas desaparecer quando o usuário começar a digitar.
+-   Use [a capitalização de estilo de frase](glossary.md).
+-   Não use a pontuação final ou as reticpses.
+-   O texto do prompt não deve ser editável e deve desaparecer depois que os usuários clicam ou clicam na guia na caixa de texto.
+    -   **Exceção:** O prompt será exibido se a caixa de texto tiver o foco de entrada padrão e só desaparecerá quando o usuário começar a digitar.
 -   O texto do prompt será restaurado se a caixa de texto ainda estiver vazia quando perder o foco de entrada.
 
-**Incorreto:** ![ captura de tela de seis listas suspensas editáveis](images/ctrl-drop-image21.png)
+**Incorreto:** ![ captura de tela de seis listas de listas listadas editáveis](images/ctrl-drop-image21.png)
 
-Neste exemplo, o espaço da tela não está em um Premium; Depois que uma lista suspensa editável é preenchida, é difícil para os usuários se lembrarem do que se trata; e o texto do prompt é editável e desenhado da mesma maneira que o texto real.
+Neste exemplo, o espaço na tela não está em um premium; depois que uma lista de listas de listagem editável é preenchida, é difícil para os usuários se lembrarem do que se trata; e o texto do prompt é editável e desenhado da mesma maneira que o texto real.
 
-## <a name="recommended-sizing-and-spacing"></a>Dimensionamento e espaçamento recomendados
+## <a name="recommended-sizing-and-spacing"></a>Espaçamento e o espaçamento recomendados
 
-![captura de tela de especificações e lista suspensa ](images/ctrl-drop-image22.png)
+![captura de tela de lista e especificações da lista de listas listadas ](images/ctrl-drop-image22.png)
 
-Dimensionamento e espaçamento recomendados para listas suspensas e caixas de combinação.
+O espaçamento e o espaçamento recomendados para listas e caixas de combinação.
 
--   **Escolha uma largura apropriada para os dados válidos mais longos.** As listas suspensas não podem ser roladas horizontalmente, para que os usuários possam ver apenas o que está visível no controle. (No entanto, observe que as caixas de combinação podem ter a funcionalidade de rolagem habilitada.)
--   **Inclua mais 30%** (até 200 por cento para texto mais curto) para qualquer texto (mas não números) que serão localizados.
--   **Escolha um comprimento de lista que elimine a rolagem vertical desnecessária.** Como as listas suspensas são exibidas sob demanda, suas listas devem mostrar até 30 itens. As caixas de listagem editáveis (aquelas que não têm um botão suspenso) devem mostrar entre 3 e 12 itens.
+-   **Escolha uma largura apropriada para os dados válidos mais longos.** As listas listadas não podem ser roladas horizontalmente, portanto, os usuários podem ver apenas o que está visível no controle. (Observe, no entanto, que as caixas de combinação podem ter a funcionalidade AutoScroll habilitada.)
+-   **Inclua 30%** adicionais (até 200% para texto mais curto) para qualquer texto (mas não números) que será localizado.
+-   **Escolha um comprimento de lista que elimine a rolagem vertical desnecessária.** Como as listas listadas são exibidas sob demanda, suas listas devem mostrar até 30 itens. As caixas de listagem editáveis (aquelas que não têm um botão de lista listada) devem mostrar entre 3 e 12 itens.
 
 ## <a name="labels"></a>Rótulos
 
 **Rótulos de controle**
 
--   Grave o rótulo como uma palavra ou frase, não como uma frase, e termine-o com dois-pontos. **Exceções:**
-    -   Listas suspensas editáveis com prompts localizados onde o espaço está em um nível Premium.
-    -   Se uma lista suspensa ou caixa de combinação for subordinada a um botão de opção ou caixa de seleção e for introduzida por seu rótulo que termina com dois-pontos, não coloque um rótulo adicional no controle.
--   Atribua uma [chave de acesso](glossary.md) exclusiva para cada rótulo. Para obter diretrizes, consulte [teclado](inter-keyboard.md).
--   Use [a capitalização no estilo de frase](glossary.md).
--   Posicione o rótulo à esquerda ou acima do controle e alinhe o rótulo com a borda esquerda do controle. Se o rótulo estiver à esquerda, alinhe verticalmente o texto do rótulo com o texto de controle.
+-   Escreva o rótulo como uma palavra ou frase, não como uma frase e termine-o com dois-pontos. **Exceções:**
+    -   Listas de listas listadas editáveis com prompts localizados em que o espaço está em um premium.
+    -   Se uma lista de listas ou caixa de combinação for subordinada a um botão de opção ou caixa de seleção e for introduzida por seu rótulo terminando com dois-pontos, não coloque um rótulo adicional no controle.
+-   Atribua uma chave [de acesso exclusiva](glossary.md) para cada rótulo. Para diretrizes, consulte [Teclado](inter-keyboard.md).
+-   Use [a capitalização de estilo de frase](glossary.md).
+-   Posiciona o rótulo à esquerda ou acima do controle e alinhe o rótulo com a borda esquerda do controle. Se o rótulo estiver à esquerda, alinhe verticalmente o texto do rótulo com o texto de controle.
 
-    **Correto:** ![ captura de tela do alinhamento do rótulo da lista suspensa ](images/ctrl-drop-image23.png)
+    **Correto:** ![ captura de tela do alinhamento do rótulo da lista de lista listada ](images/ctrl-drop-image23.png)
 
     Neste exemplo, o rótulo está alinhado corretamente com o texto de controle.
 
-    **Incorreto:** ![ captura de tela da lista suspensa alinhada incorretamente ](images/ctrl-drop-image24.png)
+    **Incorreto:** ![ captura de tela da lista de listas listadas incorretamente alinhadas ](images/ctrl-drop-image24.png)
 
-    Neste exemplo, o rótulo está alinhado incorretamente com o texto de controle.
+    Neste exemplo, o rótulo está alinhado incorretamente ao texto do controle.
 
 -   Você pode especificar unidades (segundos, conexões e assim por diante) entre parênteses após o rótulo.
--   Não faça do conteúdo da lista suspensa ou da caixa de combinação (ou seu rótulo de unidades) parte de uma frase, pois isso não é localizável.
+-   Não faça com que o conteúdo da lista suspensa ou caixa de combinação (ou seu rótulo de unidades) faça parte de uma frase, porque isso não é localizável.
 
 **Texto da opção**
 
 -   Atribua um nome exclusivo a cada opção.
--   Use [maiúsculas e minúsculas no estilo de frase](glossary.md), a menos que um item seja um substantivo adequado.
--   Grave o rótulo como uma palavra ou frase, não como uma frase e não use pontuação final.
--   Use frases paralelas e tente manter o comprimento sobre o mesmo para todas as opções.
+-   Use [a capitalização de estilo de frase](glossary.md), a menos que um item seja um substantivo adequado.
+-   Escreva o rótulo como uma palavra ou frase, não como uma frase e não use nenhuma pontuação final.
+-   Use frases paralelas e tente manter o comprimento aproximadamente o mesmo para todas as opções.
 
 **Texto de instrução**
 
--   Se você precisar adicionar texto de instrução sobre uma lista suspensa ou caixa de combinação, adicione-a acima do rótulo. Use frases completas com pontuação final.
--   Use [a capitalização no estilo de frase](glossary.md).
--   Informações adicionais que são úteis, mas não necessárias, devem ser mantidas curtas. Coloque essas informações entre parênteses entre o rótulo e os dois-pontos ou sem parênteses abaixo do controle.
+-   Se você precisar adicionar texto de instrução sobre uma lista ou caixa de combinação, adicione-o acima do rótulo. Use frases completas com pontuação final.
+-   Use [a capitalização de estilo de frase](glossary.md).
+-   Informações adicionais úteis, mas não necessárias, devem ser mantidas curtas. Coloque essas informações entre parênteses entre o rótulo e dois-pontos ou sem parênteses abaixo do controle .
 
-    ![captura de tela da lista suspensa com dados adicionados ](images/ctrl-drop-image25.png)
+    ![captura de tela da lista lista listada com dados adicionados ](images/ctrl-drop-image25.png)
 
-    Este exemplo mostra informações adicionais colocadas abaixo do controle.
+    Este exemplo mostra informações adicionais colocadas abaixo do controle .
 
 ## <a name="documentation"></a>Documentação
 
-Ao fazer referência a listas suspensas:
+Ao fazer referência a listas listadas:
 
--   Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua a tecla de acesso sublinhado ou dois-pontos; inclua lista ou caixa, o que for mais claro.
--   Para opções de lista, use o texto de opção exato, incluindo sua capitalização.
--   Em programação e outras documentações técnicas, consulte listas suspensas como listas suspensas. Em qualquer outro lugar, use List ou Box, o que for mais claro.
+-   Use o texto de rótulo exato, incluindo sua capitalização, mas não inclua o sublinhado ou dois-pontos da chave de acesso; inclua uma lista ou uma caixa, o que for mais claro.
+-   Para opções de lista, use o texto exato da opção, incluindo sua capitalização.
+-   Na programação e em outras documentações técnicas, consulte listas listadas como listas listadas. Em qualquer outro lugar, use lista ou caixa, o que for mais claro.
 -   Para descrever a interação do usuário, use clique.
--   Quando possível, formate as opções de rótulo e lista usando texto em negrito. Caso contrário, coloque o rótulo e as opções entre aspas somente se necessário para evitar confusão.
+-   Quando possível, forja as opções de rótulo e lista usando texto em negrito. Caso contrário, coloque o rótulo e as opções entre aspas somente se necessário para evitar confusão.
 
-Exemplo: na lista **tamanho da fonte** , clique em **fontes grandes**.
+Exemplo: na lista **Tamanho da** fonte, clique em **Fontes grandes**.
 
 Ao fazer referência a caixas de combinação:
 
--   Use o texto exato do rótulo, incluindo sua capitalização, mas não inclua a tecla de acesso sublinhado ou dois-pontos; inclua a caixa palavra.
--   Para obter opções de lista, use o texto de opção exato, incluindo sua capitalização.
--   Em programação e outras documentações técnicas, consulte caixas de combinação como caixas de combinação. Em qualquer outro lugar, use box.
+-   Use o texto de rótulo exato, incluindo sua capitalização, mas não inclua o sublinhado ou dois-pontos da chave de acesso; inclua a caixa de palavras.
+-   Para opções de lista, use o texto da opção exata, incluindo sua capitalização.
+-   Na programação e em outras documentações técnicas, consulte caixas de combinação como caixas de combinação. Em qualquer outro lugar, use a caixa .
 -   Para descrever a interação do usuário, use Enter.
--   Quando possível, formate as opções de rótulo e lista usando texto em negrito. Caso contrário, coloque o rótulo e as opções entre aspas somente se necessário para evitar confusão.
+-   Quando possível, forja as opções de rótulo e lista usando texto em negrito. Caso contrário, coloque o rótulo e as opções entre aspas somente se necessário para evitar confusão.
 
-Exemplo: na caixa **fonte** , insira a fonte que você deseja usar.
+Exemplo: na caixa **Fonte,** insira a fonte que você deseja usar.
 
  
 

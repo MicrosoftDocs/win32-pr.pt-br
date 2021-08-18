@@ -1,7 +1,7 @@
 ---
-description: Função D3DXVec2Transform (D3DX10Math. h) – transforma um vetor 2D por uma determinada matriz.
+description: Função D3DXVec2Transform (D3DX10Math.h) – transforma um vetor 2D por uma determinada matriz.
 ms.assetid: 4b57eb7f-fae9-48ac-a806-510da75d25a6
-title: Função D3DXVec2Transform (D3DX10Math. h)
+title: Função D3DXVec2Transform (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: b1d8eed447b56e6f379ffe96cbbcb4820fbdaf14
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 18b239ea888d576dcbcc87b07944efb21a77ac9f13f671b2bd4f096b93b976de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990686"
 ---
-# <a name="d3dxvec2transform-function-d3dx10mathh"></a>Função D3DXVec2Transform (D3DX10Math. h)
+# <a name="d3dxvec2transform-function-d3dx10mathh"></a>Função D3DXVec2Transform (D3DX10Math.h)
 
 Transforma um vetor 2D por uma determinada matriz.
 
@@ -42,30 +42,30 @@ D3DXVECTOR4* D3DXVec2Transform(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](../direct3d9/d3dxvector4.md)\***
 
-Ponteiro para a estrutura [**D3DXVECTOR4**](d3d10-d3dxvector4.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXVECTOR4**](d3d10-d3dxvector4.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*VP* \[ no\]
+*pV* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](../direct3d9/d3dxvector2.md) \***
 
-Ponteiro para o [**D3DXVECTOR2**](d3d10-d3dxvector2.md)de origem.
+Ponteiro para o [**D3DXVECTOR2 de origem.**](d3d10-d3dxvector2.md)
 
 </dd> <dt>
 
-*PM* \[ no\]
+*pM* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Ponteiro para a estrutura de [**D3DXMATRIX**](d3d10-d3dxmatrix.md) de origem.
+Ponteiro para a estrutura [**D3DXMATRIX de origem.**](d3d10-d3dxmatrix.md)
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Ponteiro para uma estrutura D3DXVECTOR4 que é o vetor transformado.
 
 Essa função transforma o vetor pV (x, y, 0, 1) pela matriz pM.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXVec2Transform pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXVec2Transform pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,12 +87,12 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

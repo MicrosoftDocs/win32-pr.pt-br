@@ -4,12 +4,12 @@ ms.assetid: 75ba330d-afcd-4d8f-93c7-a1b9f80dd050
 title: Capturando logs do WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 378801e97b2eef8c1ea0c40a5973844d75a94e02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 648ebb95182096fc4a853c2685f896fa2902a828c8ed0ab143ce89c04831c7ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991776"
 ---
 # <a name="capturing-winhttp-logs"></a>Capturando logs do WinHTTP
 

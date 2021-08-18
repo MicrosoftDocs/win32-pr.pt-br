@@ -5,16 +5,16 @@ ms.assetid: 8534ceba-5fcb-441f-9e76-3060319478af
 ms.tgt_platform: multiple
 keywords:
 - Colocar ADSI, sobre
-- ADSI ADSI, exemplo de código Visual Basic, usando o método Put
+- adsi adsi, exemplo de código Visual Basic, usando o método Put
 - Propriedades ADSI, salvando um valor para uma propriedade no cache de propriedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a64a5cba8056f8eac0125fc5b32fd66bdf988dae
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b8be79892c62d788f711163ec1fad7c555f6e6f0a897f805341a588a4b6d3619
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023204"
 ---
 # <a name="the-put-method"></a>O método Put
 
@@ -173,9 +173,9 @@ int main(int argc, char* argv[], LPWSTR pszADsPath)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

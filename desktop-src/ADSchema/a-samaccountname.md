@@ -1,6 +1,6 @@
 ---
 title: SAM-atributo de nome de conta
-description: O nome de logon usado para dar suporte a clientes e servidores que executam versões anteriores do sistema operacional, como o Windows NT 4,0, o Windows 95, o Windows 98 e o LAN Manager.
+description: o nome de logon usado para dar suporte a clientes e servidores que executam versões anteriores do sistema operacional, como Windows NT 4,0, Windows 95, Windows 98 e LAN Manager.
 ms.assetid: dc661e59-9a36-4d2b-93f0-f88edf7efd66
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cb64cba7825c3b4400641cdc5c62890f64bc299
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c74aa558f63c2e1822f1435cdafd6290755b92b4d5e34c329d8472693f37185d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022224"
 ---
 # <a name="sam-account-name-attribute"></a>SAM-atributo de nome de conta
 
-O nome de logon usado para dar suporte a clientes e servidores que executam versões anteriores do sistema operacional, como o Windows NT 4,0, o Windows 95, o Windows 98 e o LAN Manager.
+o nome de logon usado para dar suporte a clientes e servidores que executam versões anteriores do sistema operacional, como Windows NT 4,0, Windows 95, Windows 98 e LAN Manager.
 
 Esse atributo deve ter 20 caracteres ou menos para dar suporte a clientes anteriores e não pode conter nenhum destes caracteres:
 
@@ -62,9 +62,9 @@ Esse atributo deve ter 20 caracteres ou menos para dar suporte a clientes anteri
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
+| É indexado             | Verdadeiro                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
@@ -83,9 +83,9 @@ Esse atributo deve ter 20 caracteres ou menos para dar suporte a clientes anteri
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
+| É indexado             | Verdadeiro                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
@@ -104,15 +104,15 @@ Esse atributo deve ter 20 caracteres ou menos para dar suporte a clientes anteri
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
+| É indexado             | Verdadeiro                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
 | Search-Flags           | 0x0000000D                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -125,15 +125,15 @@ Esse atributo deve ter 20 caracteres ou menos para dar suporte a clientes anteri
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| Tem valor único       | Verdadeiro                                                         |
+| É indexado             | Verdadeiro                                                         |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
 | Search-Flags           | 0x0000000D                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -146,15 +146,15 @@ Esse atributo deve ter 20 caracteres ou menos para dar suporte a clientes anteri
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| Tem valor único       | Verdadeiro                                                         |
+| É indexado             | Verdadeiro                                                         |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
 | Search-Flags           | 0x0000000D                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -167,15 +167,15 @@ Esse atributo deve ter 20 caracteres ou menos para dar suporte a clientes anteri
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| Tem valor único       | Verdadeiro                                                         |
+| É indexado             | Verdadeiro                                                         |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 0                                                            |
 | Range-Upper            | 256                                                          |
 | Search-Flags           | 0x0000000D                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 

@@ -1,24 +1,24 @@
 ---
 title: Procurando grupos por escopo ou tipo em um domínio
-description: Em domínios do Windows 2000, há uma classe única chamada grupo para todos os escopos de grupo (domínio local, global, universal) e tipos (segurança, distribuição).
+description: em domínios Windows 2000, há uma classe única chamada grupo para todos os escopos de grupo (domínio Local, Global, Universal) e tipos (segurança, distribuição).
 ms.assetid: e32629d9-aa62-4953-aa49-43af726b7deb
 ms.tgt_platform: multiple
 keywords:
 - Procurando grupos por escopo ou tipo em um AD de domínio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ee9aae5e2c7be7b9cba590f9bc80f0517bca918
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 84d424ce21912aa1e7fa7104099fc8359a5a1c80beeae1fc143aa0bd4aea71d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103640381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024944"
 ---
 # <a name="searching-for-groups-by-scope-or-type-in-a-domain"></a>Procurando grupos por escopo ou tipo em um domínio
 
-Em domínios do Windows 2000, há uma classe única chamada [**grupo**](/windows/desktop/ADSchema/c-group) para todos os escopos de grupo (domínio local, global, universal) e tipos (segurança, distribuição). O atributo [**GroupType**](/windows/desktop/ADSchema/a-grouptype) do objeto Group especifica o tipo e o escopo do grupo.
+em domínios Windows 2000, há uma classe única chamada [**grupo**](/windows/desktop/ADSchema/c-group) para todos os escopos de grupo (domínio Local, Global, Universal) e tipos (segurança, distribuição). O atributo [**GroupType**](/windows/desktop/ADSchema/a-grouptype) do objeto Group especifica o tipo e o escopo do grupo.
 
-Para usar tipo ou escopo para pesquisar grupos em domínios do Windows 2000, use um filtro que contenha uma regra de correspondência para o atributo [**GroupType**](/windows/desktop/ADSchema/a-grouptype) . Para obter mais informações sobre regras de correspondência, consulte [sintaxe do filtro de pesquisa](/windows/desktop/ADSI/search-filter-syntax).
+para usar tipo ou escopo para pesquisar grupos em domínios Windows 2000, use um filtro que contenha uma regra de correspondência para o atributo [**grouptype**](/windows/desktop/ADSchema/a-grouptype) . Para obter mais informações sobre regras de correspondência, consulte [sintaxe do filtro de pesquisa](/windows/desktop/ADSI/search-filter-syntax).
 
 Para obter mais informações e um exemplo de código que mostra como procurar grupos em um domínio, consulte [exemplo de código para pesquisar grupos em um domínio](example-code-for-performing-a-query-in-a-domain.md).
 
@@ -44,6 +44,6 @@ A cadeia de caracteres de consulta a seguir pesquisará grupos de distribuição
 
 
 
- 
+ 
 
- 
+ 

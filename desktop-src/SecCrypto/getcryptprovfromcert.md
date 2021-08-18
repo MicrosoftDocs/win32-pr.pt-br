@@ -1,5 +1,5 @@
 ---
-description: Obtém um identificador para um CSP (provedor de serviços de criptografia) e uma especificação de chave para um contexto de certificado.
+description: Obtém um handle para um CSP (provedor de serviços de criptografia) e uma especificação de chave para um contexto de certificado.
 ms.assetid: ff72231f-e10f-49d2-b0e0-0008923803cc
 title: Função GetCryptProvFromCert
 ms.topic: reference
@@ -13,24 +13,24 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: bcd396c45333dee42bae4cb8bdfdd52792f1bdd6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c885c439014a26bafba3be8614981c67d200e9f87cd4e3c4f03e8cbcc1b77e38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006654"
 ---
 # <a name="getcryptprovfromcert-function"></a>Função GetCryptProvFromCert
 
 > [!IMPORTANT]
-> Essa API está preterida. A Microsoft poderá remover essa API em versões futuras.
+> Essa API está preterida. A Microsoft pode remover essa API em versões futuras.
 
  
 
-A função **GetCryptProvFromCert** Obtém um identificador para um CSP ( [*provedor de serviços de criptografia*](../secgloss/c-gly.md) ) e uma especificação de chave para um contexto de [*certificado*](../secgloss/c-gly.md) . Use essa função para obter acesso à [*chave privada*](../secgloss/p-gly.md) do emissor do certificado.
+A **função GetCryptProvFromCert** obtém um handle para um CSP [*(provedor*](../secgloss/c-gly.md) de serviços de criptografia) e uma especificação de chave para um [*contexto de*](../secgloss/c-gly.md) certificado. Use essa função para obter acesso à [*chave privada*](../secgloss/p-gly.md) do emissor do certificado.
 
 > [!Note]  
-> Esta função não tem nenhum arquivo de cabeçalho ou biblioteca de importação associado. Para chamar essa função, você deve criar um arquivo de cabeçalho definido pelo usuário e usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mssign32.dll.
+> Essa função não tem nenhum arquivo de header associado ou biblioteca de importação. Para chamar essa função, você deve criar um arquivo de título definido pelo usuário e usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mssign32.dll.
 
  
 
@@ -56,73 +56,73 @@ BOOL WINAPI GetCryptProvFromCert(
 
 <dl> <dt>
 
-*HWND* \[ no\]
+*hwnd* \[ Em\]
 </dt> <dd>
 
-O identificador da janela a ser usada como o proprietário de qualquer caixa de diálogo exibida. Esse membro não é usado no momento e é ignorado. É seguro passar **NULL** para esse parâmetro.
+O alça da janela a ser usada como o proprietário de todas as caixas de diálogo exibidas. Esse membro não é usado no momento e é ignorado. É seguro passar **NULL para** esse parâmetro.
 
 </dd> <dt>
 
-*pCert* \[ no\]
+*pCert* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ contexto**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) de certificado para o certificado.
+Um ponteiro para uma [**estrutura DE \_ CONTEXTO DE**](/windows/desktop/api/Wincrypt/ns-wincrypt-cert_context) CERTIFICADO para o certificado.
 
 </dd> <dt>
 
-*phCryptProv* \[ fora\]
+*phCryptProv* \[ out\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**HCRYPTPROV**](hcryptprov.md) que é um identificador para o CSP.
+Um ponteiro para uma [**estrutura HCRYPTPROV**](hcryptprov.md) que é um ponteiro para o CSP.
 
 </dd> <dt>
 
-*pdwKeySpec* \[ fora\]
+*pdwKeySpec* \[ out\]
 </dt> <dd>
 
-A especificação da chave privada a ser recuperada. Os valores possíveis incluem **em \_ keyexchange** ou **na \_ assinatura**.
+A especificação da chave privada a ser recuperada. Os valores possíveis **\_ incluem AT KEYEXCHANGE** **ou AT \_ SIGNATURE.**
 
 </dd> <dt>
 
-*pfDidCryptAcquire* \[ no\]
+*pfDidCryptAcquire* \[ Em\]
 </dt> <dd>
 
-Um valor que especifica se a função adquiriu o identificador do provedor com base no certificado.
+Um valor que especifica se a função adquiriu o handle do provedor com base no certificado.
 
 </dd> <dt>
 
 *ppwszTmpContainer* \[ out, opcional\]
 </dt> <dd>
 
-O endereço de um ponteiro para uma cadeia de caracteres terminada em nulo para o nome do contêiner de chave temporária. A função **GetCryptProvFromCert** fornece e inicializa o contêiner temporário. Ao chamar **GetCryptProvFromCert**, o endereço deve apontar para um valor **nulo** .
+O endereço de um ponteiro para uma cadeia de caracteres terminada em nulo para o nome do contêiner de chave temporária. A **função GetCryptProvFromCert** fornece e inicializa o contêiner temporário. Ao chamar **GetCryptProvFromCert**, o endereço deve apontar para um **valor NULL.**
 
 </dd> <dt>
 
 *ppwszProviderName* \[ out, opcional\]
 </dt> <dd>
 
-O endereço de um ponteiro para uma cadeia de caracteres terminada em nulo para o nome do provedor. A função **GetCryptProvFromCert** retorna o nome do provedor. Ao chamar **GetCryptProvFromCert**, o endereço deve apontar para um valor **nulo** .
+O endereço de um ponteiro para uma cadeia de caracteres terminada em nulo para o nome do provedor. A **função GetCryptProvFromCert** retorna o nome do provedor. Ao chamar **GetCryptProvFromCert**, o endereço deve apontar para um **valor NULL.**
 
 </dd> <dt>
 
-*pdwProviderType* \[ fora\]
+*pdwProviderType* \[ out\]
 </dt> <dd>
 
-Especifica o tipo de CSP. Isso pode ser zero ou um dos [tipos de provedor criptográfico](cryptographic-provider-types.md). Se esse membro for zero, o contêiner de chave será um dos provedores de armazenamento de chaves CNG.
+Especifica o tipo CSP. Pode ser zero ou um dos Tipos de Provedor [Criptográfico.](cryptographic-provider-types.md) Se esse membro for zero, o contêiner de chave será um dos provedores de armazenamento de chaves CNG.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Após o êxito, essa função retornará **true**. A função **GetCryptProvFromCert** retornará **false** se falhar.
+Após o sucesso, essa função retorna **TRUE.** A **função GetCryptProvFromCert** retornará **FALSE** se falhar.
 
 ## <a name="remarks"></a>Comentários
 
-A ferramenta [MakeCert](makecert.md) chama **GetCryptProvFromCert** quando você a invoca usando a opção de linha de comando **-is** .
+A [ferramenta MakeCert](makecert.md) chama **GetCryptProvFromCert** quando você a invoca usando a opção de linha de comando **-is.**
 
-Se o parâmetro *pfDidCryptAcquire* for definido como **true**, a função definirá os parâmetros *phCryptProv*, *pdwKeySpec* e *pdwProviderType* para os valores do provedor.
+Se o *parâmetro pfDidCryptAcquire* for definido como **TRUE,** a função definirá os parâmetros *phCryptProv*, *pdwKeySpec* e *pdwProviderType* para os valores do provedor.
 
-Quando você terminar de usar o CSP, libere-o chamando a função [**FreeCryptProvFromCert**](freecryptprovfromcert.md) .
+Quando terminar de usar o CSP, livre-o chamando a [**função FreeCryptProvFromCert.**](freecryptprovfromcert.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -130,8 +130,8 @@ Quando você terminar de usar o CSP, libere-o chamando a função [**FreeCryptPr
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
 | DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 
