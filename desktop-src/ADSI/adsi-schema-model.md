@@ -8,12 +8,12 @@ keywords:
 - ADSI ADSI, sobre, esquema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 23eec9264ae2692952106802cc06cbad937a42a9
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: dfd8c06d10e05c11b2cc7c578814bb4ded2d897d3b7913b9b3d341a8a6c49086
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103917672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023744"
 ---
 # <a name="adsi-schema-model"></a>Modelo de esquema ADSI
 
@@ -26,7 +26,7 @@ Há três tipos de objetos de esquema: classes, propriedades e sintaxes, cada um
 > [!Note]  
 > A classe é um termo sobrecarregado. Há classes C++, classes Java, classes COM e classes ADSI. Neste documento, a palavra classe, a menos que qualificado de outra forma, se refere a uma categoria ou tipo de objeto de esquema.
 
- 
+ 
 
 A ADSI abstrai o esquema de cada serviço de diretório e o coloca em cada nó raiz de nível superior no objeto **namespace** . Para identificar as classes que um serviço de diretório dá suporte em um determinado nó raiz, você enumera o objeto de esquema e obtém uma lista de objetos de classe, objetos de propriedade e objetos de sintaxe. Para obter mais informações, consulte [usando o esquema ADSI](using-the-adsi-schema.md).
 
@@ -47,6 +47,6 @@ Se os dados do subesquema puderem ser processados, mas nenhum atributo [**modify
 -   A ADSI não pôde processar o esquema.
 -   A ADSI não pôde gravar o arquivo no sistema de arquivos.
 
- 
+ 
 
- 
+ 

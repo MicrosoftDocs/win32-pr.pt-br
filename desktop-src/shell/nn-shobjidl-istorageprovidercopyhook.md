@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location:
 - shobjidl.h
-ms.openlocfilehash: 52f2a7fb7c8d7b37fc27fd1e91c93d716bc92086
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aa26a329bd80295a6a46a1bb11d1dc651baf1ea71975576ed704b29a7fee8b57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968865"
 ---
 # <a name="istorageprovidercopyhook-interface"></a>Interface IStorageProviderCopyHook
 
@@ -25,7 +25,7 @@ Expõe um método que determina se o Shell terá permissão para mover, copiar, 
 
 ## <a name="members"></a>Membros
 
-A interface **IStorageProviderCopyHook** herda da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) . **IStorageProviderCopyHook** também tem estes tipos de membros:
+A interface **IStorageProviderCopyHook** herda da interface [**IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown) **IStorageProviderCopyHook** também tem estes tipos de membros:
 
 - [Métodos](#methods)
 
@@ -44,5 +44,5 @@ A interface **IStorageProviderCopyHook** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Build 19624 do Windows 10 Insider Preview                                                |
-| parâmetro<br/>                   | ShObjIdl. h   |
+| Cliente mínimo com suporte | Windows 10 Insider Preview Build 19624                                                |
+| Cabeçalho<br/>                   | shobjidl.h   |

@@ -24,12 +24,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b9d8afb1ba3cbf7749ad8e3d14fa970662715909
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bebe534df506bcf25aa618213a4e274500035c8ea8b21941ae4e57a784d26c30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961925"
 ---
 # <a name="iadsacl-property-methods"></a>Métodos de propriedade IADsAcl
 
@@ -39,7 +39,7 @@ O método Property da interface [**IADsAcl**](/windows/desktop/api/Iads/nn-iads-
 
 <dl> <dt>
 
-**Direitos**
+**Privilégios**
 </dt> <dd> <dl>
 
 Configurações de privilégio.
@@ -133,7 +133,7 @@ HRESULT put_SubjectName(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsAcl é definido como 8452D3AB-0869-11D1-A377-00C04FB950DC<br/>              |
 

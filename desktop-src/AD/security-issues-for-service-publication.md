@@ -8,12 +8,12 @@ keywords:
 - Active Directory, usando, segurança, problemas de segurança da publicação de serviço
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fee5be89c490fa938cdc9c7cf3d7d72434a3dffa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 86e4cec29d08a029bca52a99b573eb339964dd42274d3ca2e54795bb80b60897
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024904"
 ---
 # <a name="security-issues-for-service-publication"></a>Problemas de segurança para publicação de serviço
 
@@ -29,9 +29,9 @@ Um serviço em execução na conta LocalSystem pode criar um ponto de conexão c
 
 O aplicativo que cria um objeto de ponto de conexão ou qualquer objeto deve ter permissões criar filho para a classe de objeto a ser criada no contêiner em que o objeto será criado. Para remover um objeto, o processo que executa a operação deve ter permissões de excluir filho para a classe de objeto a ser excluída no contêiner que contém o objeto ou ter permissões de exclusão no próprio objeto. Para atualizar um ponto de conexão, o processo que executa a operação deve ter acesso de gravação às propriedades a serem atualizadas no objeto.
 
- 
+ 
 
- 
+ 
 
 
 

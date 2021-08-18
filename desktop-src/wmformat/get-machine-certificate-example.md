@@ -1,22 +1,22 @@
 ---
-title: Obter exemplo de certificado de computador
-description: Obter exemplo de certificado de computador
+title: Obter exemplo de certificado do computador
+description: Obter exemplo de certificado do computador
 ms.assetid: 4112e29e-7c86-4825-9798-dd1a81b82083
 keywords:
-- SDK do Windows Media Format, certificados de máquina
-- SDK do Windows Media Format, certificados
-- SDK do Windows Media Format, código de exemplo
-- SDK do Windows Media Format, exemplos de código
-- DRM (gerenciamento de direitos digitais), certificados de máquina
-- DRM (gerenciamento de direitos digitais), certificados de máquina
+- Windows SDK de Formato de Mídia, certificados de computador
+- Windows SDK de Formato de Mídia, certificados
+- Windows SDK de Formato de Mídia, código de exemplo
+- Windows SDK de Formato de Mídia, exemplos de código
+- DRM (gerenciamento de direitos digitais), certificados de computador
+- DRM (gerenciamento de direitos digitais), certificados de computador
 - DRM (gerenciamento de direitos digitais), certificados
 - DRM (gerenciamento de direitos digitais), certificados
 - DRM (gerenciamento de direitos digitais), código de exemplo
 - DRM (gerenciamento de direitos digitais), código de exemplo
 - DRM (gerenciamento de direitos digitais), exemplos de código
 - DRM (gerenciamento de direitos digitais), exemplos de código
-- APIs estendidas do cliente DRM, certificados de máquina
-- APIs estendidas do cliente, certificados de máquina
+- APIs estendidas do cliente DRM, certificados de computador
+- APIs estendidas do cliente, certificados de computador
 - APIs estendidas do cliente DRM, certificados
 - APIs estendidas do cliente, certificados
 - APIs estendidas do cliente DRM, código de exemplo
@@ -26,14 +26,14 @@ keywords:
 - certificados, exemplos de código
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e68a8ecbaf3e3c0ba8001a7a2094ab2b4a7e09a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 855479e90095f204a3ba7abafadcb4a31bbcaeaf7c592221ab0d5906cb1d8b18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964005"
 ---
-# <a name="get-machine-certificate-example"></a>Obter exemplo de certificado de computador
+# <a name="get-machine-certificate-example"></a>Obter exemplo de certificado do computador
 
 O exemplo a seguir mostra como recuperar a coleção de certificados do computador:
 
@@ -78,9 +78,9 @@ EXIT:
 [**Exemplos de importação de DRM**](drm-import-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

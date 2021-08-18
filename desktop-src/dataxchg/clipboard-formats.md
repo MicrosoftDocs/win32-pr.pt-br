@@ -15,12 +15,12 @@ keywords:
 - formatos de histórico da área de transferência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 193ee4cc10c17846d974e50b17a464207026280b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ac6bd2dc9dda8c8ccecd164123af68865005d9d28d328ce5489abf23926113ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105765015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991336"
 ---
 # <a name="clipboard-formats"></a>Formatos da área de transferência
 
@@ -55,7 +55,7 @@ Os identificadores de dados associados a formatos de área de transferência pri
 
 Para obter mais informações sobre a mensagem do [**WM \_ DESTROYCLIPBOARD**](wm-destroyclipboard.md) , consulte [propriedade da área de transferência](clipboard-operations.md).
 
-Um aplicativo pode posicionar identificadores de dados na área de transferência definindo um formato privado no intervalo de **CF \_ GDIOBJFIRST** por meio de **CF \_ GDIOBJLAST**. Ao usar valores nesse intervalo, o identificador de dados não é um identificador para um objeto Windows Graphics Device Interface (GDI), mas é um identificador alocado pela função [**GlobalAlloc**](/windows/desktop/api/winbase/nf-winbase-globalalloc) com o sinalizador GMEMable \_ . Quando a área de transferência é esvaziada, o sistema exclui automaticamente o objeto usando a função [**GlobalFree**](/windows/desktop/api/winbase/nf-winbase-globalfree) .
+Um aplicativo pode posicionar identificadores de dados na área de transferência definindo um formato privado no intervalo de **CF \_ GDIOBJFIRST** por meio de **CF \_ GDIOBJLAST**. ao usar valores nesse intervalo, o identificador de dados não é um identificador para um objeto Windows Graphics Device Interface (GDI), mas é um identificador alocado pela função [**GlobalAlloc**](/windows/desktop/api/winbase/nf-winbase-globalalloc) com o sinalizador GMEMable \_ . Quando a área de transferência é esvaziada, o sistema exclui automaticamente o objeto usando a função [**GlobalFree**](/windows/desktop/api/winbase/nf-winbase-globalfree) .
 
 ## <a name="multiple-clipboard-formats"></a>Vários formatos de área de transferência
 
@@ -94,28 +94,28 @@ O sistema converte implicitamente os dados entre determinados formatos de área 
 
 
 
- 
+ 
 
 Se o sistema fornecer uma conversão automática de tipo para um formato de área de transferência específico, não haverá vantagem em colocar os formatos de conversão na área de transferência.
 
 Se o sistema fornecer uma conversão automática de tipo para um formato de área de transferência específico e você chamar [**EnumClipboardFormats**](/windows/desktop/api/Winuser/nf-winuser-enumclipboardformats) para enumerar os formatos de dados da área de transferência, o sistema primeiro enumerará o formato que está na área de transferência, seguido pelos formatos para os quais ele pode ser convertido.
 
-Ao copiar bitmaps, é melhor inserir o formato de **\_ DIBV5** do CF **ou do \_** CF na área de transferência. Isso ocorre porque as cores em um bitmap do CF (bitmap **dependente \_** de dispositivo) são relativas à paleta do sistema, que pode ser alterada antes de o bitmap ser colado. Se o formato de **\_ DIBV5** de **\_ DIB** ou CF do CF estiver na área de transferência e uma janela solicitar o formato de **\_ bitmap do CF** , o sistema renderizará o DIB (bitmap independente de dispositivo) usando a paleta atual nesse momento.
+Ao copiar bitmaps, é melhor inserir o formato de **\_ DIBV5** do CF **ou do \_** CF na área de transferência. Isso porque as cores em um bitmap dependente do dispositivo (**CF \_ BITMAP**) são relativas à paleta do sistema, que pode mudar antes que o bitmap seja colar. Se o **formato \_ CF DIB** ou **CF \_ DIBV5** estiver na área de transferência e uma janela solicitar o formato **\_ BITMAP do CF,** o sistema renderizará o DIB (bitmap independente do dispositivo) usando a paleta atual no momento.
 
-Se você colocar o formato de **\_ bitmap do CF** na área de transferência (e não o **CF \_ DIB**) **, o sistema \_** renderizará o formato de área de transferência do CF ou do **CF \_ DIBV5** assim que a área de transferência for fechada. Isso garante que a paleta correta seja usada para gerar o DIB. Se você posicionar o formato de **\_ DIBV5 do CF** com as informações de espaço de cores do bitmap na área de transferência, o sistema converterá os bits do bitmap do espaço de cores do bitmap para o espaço de cores sRGB quando o **CF \_ DIB** ou o **CF \_ DIBV5** for solicitado. Se o **CF \_ DIBV5** for solicitado quando não houver nenhuma informação de espaço de cores na área de transferência, o sistema retornará informações de espaço de cores sRGB na estrutura [**BITMAPV5HEADER**](/windows/desktop/api/wingdi/ns-wingdi-bitmapv5header) . As conversões entre outros formatos de área de transferência ocorrem sob demanda.
+Se você colocar o formato **\_ BITMAP** do CF na área de transferência (e não no **CF \_ DIB),** o sistema renderizará o formato de área de transferência CF **\_ DIB** ou **CF \_ DIBV5** assim que a área de transferência for fechada. Isso garante que a paleta correta seja usada para gerar o DIB. Se você colocar o formato **\_ CF DIBV5** com as informações de espaço de cor de bitmap na área de transferência, o sistema converterá os bits de bitmap do espaço de cores do bitmap para o espaço de cores sRGB quando **CF \_ DIB** ou **CF \_ DIBV5** for solicitado. Se **CF \_ DIBV5** for solicitado quando não houver nenhuma informação de espaço de cor na área de transferência, o sistema retornará informações de espaço de cor sRGB na estrutura [**BITMAPV5HEADER.**](/windows/desktop/api/wingdi/ns-wingdi-bitmapv5header) Conversões entre outros formatos de área de transferência ocorrem sob demanda.
 
-Se a área de transferência contiver dados no formato de **\_ paleta do CF** , o aplicativo deverá usar as funções [**SelectPalette**](/windows/desktop/api/wingdi/nf-wingdi-selectpalette) e [**RealizePalette**](/windows/desktop/api/wingdi/nf-wingdi-realizepalette) para obter quaisquer outros dados na área de transferência em relação a essa paleta lógica.
+Se a área de transferência contiver dados no formato **\_ PALETTE** cf, o aplicativo deverá usar as funções [**SelectPalette**](/windows/desktop/api/wingdi/nf-wingdi-selectpalette) e [**RealizePalette**](/windows/desktop/api/wingdi/nf-wingdi-realizepalette) para realizar quaisquer outros dados na área de transferência em relação a essa paleta lógica.
 
-Há dois formatos de área de transferência para metaarquivos: **CF \_ ENHMETAFILE** e **CF \_ METAFILEPICT**. Especifique **o \_ ENHMETAFILE CF** para os metaarquivos avançados e o **CF \_ METAFILEPICT** para metarquivos do Windows.
+Há dois formatos de área de transferência para metarquivos: **CF \_ ENFILEAFILE** e **CF \_ METAFILEPICT.** **Especifique \_ CF EN LTDAFILE** para metadados aprimorados e **CF \_ METAFILEPICT** para Windows metadados.
 
-## <a name="cloud-clipboard-and-clipboard-history-formats"></a>Formatos de histórico de área de transferência da nuvem e área transferência
+## <a name="cloud-clipboard-and-clipboard-history-formats"></a>Formatos de histórico de área de transferência e área de transferência na nuvem
 
-Algumas versões do Windows incluem a [área de transferência na nuvem](/windows/whats-new/whats-new-windows-10-version-1809#cloud-clipboard), que mantém um histórico dos itens de dados recentes da área de transferência e pode sincronizá-lo entre os dispositivos do usuário.
-Se você não quiser que os dados que seu aplicativo coloca na área de transferência sejam incluídos no histórico da área de transferência ou sincronizados com outros dispositivos, seu aplicativo poderá controlar esse comportamento colocando dados em determinados [formatos de área de transferência registrados](#registered-clipboard-formats) cujos nomes são conhecidos pelo sistema Windows:
+Algumas versões do [](/windows/whats-new/whats-new-windows-10-version-1809#cloud-clipboard)Windows incluem a Área de Transferência de Nuvem, que mantém um histórico de itens de dados recentes da área de transferência e pode sincroná-lo entre os dispositivos do usuário.
+Se você não quiser que os dados que seu aplicativo coloca na área de transferência sejam incluídos no histórico da área de transferência ou sincronizados com outros dispositivos, seu aplicativo poderá controlar esse comportamento colocando dados em [determinados formatos](#registered-clipboard-formats) de área de transferência registrados cujos nomes são conhecidos pelo sistema Windows:
 
-- **ExcludeClipboardContentFromMonitorProcessing** : Coloque os dados na área de transferência neste formato para impedir que todos os formatos da área de transferência sejam incluídos no histórico da área de transferência ou sincronizados com os outros dispositivos do usuário.
-- **CanIncludeInClipboardHistory** : Coloque um valor **[DWORD](../WinProg/windows-data-types.md)** serializado de zero na área de transferência neste formato para impedir que todos os formatos da área de transferência sejam incluídos no histórico da área de transferência ou coloque um valor de um, para solicitar explicitamente que o item da área de transferência seja incluído no histórico da área de transferência. Isso não afeta a sincronização para outros dispositivos do usuário.
-- **CanUploadToCloudClipboard** : Coloque um valor **[DWORD](../WinProg/windows-data-types.md)** serializado de zero na área de transferência neste formato para impedir que todos os formatos da área de transferência sejam sincronizados com os outros dispositivos do usuário, ou coloque um valor de um, para solicitar explicitamente que o item da área de transferência seja sincronizado com outros dispositivos. Isso não afeta o histórico da área de transferência do dispositivo local.
+- **ExcludeClipboardContentFromMonitorProcessing:** coloque todos os dados na área de transferência nesse formato para impedir que todos os formatos da área de transferência estejam incluídos no histórico da área de transferência ou sincronizados com outros dispositivos do usuário.
+- **CanIncludeInClipboardHistory:** coloque um valor **[DWORD](../WinProg/windows-data-types.md)** serializado de zero na área de transferência nesse formato para impedir que todos os formatos da área de transferência sejam incluídos no histórico da área de transferência ou coloque um valor de um em vez disso para solicitar explicitamente que o item da área de transferência seja incluído no histórico da área de transferência. Isso não afeta a sincronização com outros dispositivos do usuário.
+- **CanUploadToCloudClipboard:** coloque um valor **[DWORD](../WinProg/windows-data-types.md)** serializado de zero na área de transferência nesse formato para impedir que todos os formatos da área de transferência sejam sincronizados com outros dispositivos do usuário ou coloque um valor de um para solicitar explicitamente que o item da área de transferência seja sincronizado com outros dispositivos. Isso não afeta o histórico da área de transferência do dispositivo local.
 
-Assim como acontece com outros formatos de área de transferência registrados, você precisará usar a função [**RegisterClipboardFormat**](
-/windows/win32/api/winuser/nf-winuser-registerclipboardformata) para obter um valor inteiro sem sinal que identifique cada um dos três formatos acima.
+Assim como com outros formatos de área de transferência registrados, você precisará usar a função [**RegisterClipboardFormat**](
+/windows/win32/api/winuser/nf-winuser-registerclipboardformata) para obter um valor inteiro sem sinal que identifica cada um dos três formatos acima.

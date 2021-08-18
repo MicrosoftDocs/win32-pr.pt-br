@@ -4,12 +4,12 @@ description: Single-Threaded Apartments
 ms.assetid: 2f345ae2-8314-4067-a6d6-5a0275941ed4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f0a8cb1422b6866d9e0d043fdd46c895e6d335b
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: 41f9b969a48fd83ac82307c42bf4e801168bcf97f83536045fc078b19e3eb77d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129818"
 ---
 # <a name="single-threaded-apartments"></a>Single-Threaded Apartments
 
@@ -46,7 +46,7 @@ Se um apartamento (apartamento 1) em um processo tiver um ponteiro de interface 
 
 Para lidar com chamadas de outros processos e Apartments no mesmo processo, cada apartamento de thread único deve ter um loop de mensagem. Isso significa que a função de trabalho do thread deve ter um loop GetMessage/DispatchMessage. Se outros primitivos de sincronização estiverem sendo usados para comunicação entre threads, a função [**MsgWaitForMultipleObjects**](/windows/desktop/api/winuser/nf-winuser-msgwaitformultipleobjects) poderá ser usada para aguardar as mensagens e os eventos de sincronização de thread. A documentação para essa função tem um exemplo desse tipo de loop de combinação.
 
-COM cria uma janela oculta usando a classe do Windows "OleMainThreadWndClass" em cada apartamento de thread único. Uma chamada para um objeto é recebida como uma mensagem de janela para esta janela oculta. Quando o apartamento do objeto recupera e despacha a mensagem, a janela oculta a receberá. O procedimento de janela Então chamará o método de interface correspondente do objeto.
+com cria uma janela oculta usando a classe de Windows "OleMainThreadWndClass" em cada apartamento de thread único. Uma chamada para um objeto é recebida como uma mensagem de janela para esta janela oculta. Quando o apartamento do objeto recupera e despacha a mensagem, a janela oculta a receberá. O procedimento de janela Então chamará o método de interface correspondente do objeto.
 
 Quando vários clientes chamarem um objeto, as chamadas serão enfileiradas na fila de mensagens e o objeto receberá uma chamada cada vez que seu apartamento recuperar e enviar mensagens. Como as chamadas são sincronizadas pelo COM e as chamadas são sempre entregues pelo thread que pertence ao apartamento do objeto, as implementações de interface do objeto não precisam fornecer sincronização. Apartments de thread único podem implementar [**IMessageFilter**](/windows/desktop/api/ObjIdl/nn-objidl-imessagefilter) para permitir que eles cancelem chamadas ou recebam mensagens de janela quando necessário.
 
@@ -74,6 +74,6 @@ O objeto poderá ser reinserido se uma de suas implementações de método de in
 [Comunicação de thread único e multithread](single-threaded-and-multithreaded-communication.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

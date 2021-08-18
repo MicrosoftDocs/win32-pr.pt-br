@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DXMATRIXStack:: RotateYawPitchRoll (D3DX10. h) – gira (em relação ao espaço de coordenadas mundiais) em um eixo arbitrário.'
+description: Método ID3DXMATRIXStack::RotateYawPitchRoll (D3DX10.h) – gira (em relação ao espaço de coordenadas do mundo) em torno de um eixo arbitrário.
 ms.assetid: 35e237f6-40f2-4001-adb0-f489d61f64e7
-title: 'Método ID3DXMATRIXStack:: RotateYawPitchRoll (D3DX10. h)'
+title: Método ID3DXMATRIXStack::RotateYawPitchRoll (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 8c4f167f769a1ed46404028916477d6784e4a436
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e43422e5872708a61b5f066725e61c16e55d04dd94f5c8527c7b86e1f7a543c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128328"
 ---
-# <a name="id3dxmatrixstackrotateyawpitchroll-method-d3dx10h"></a>Método ID3DXMATRIXStack:: RotateYawPitchRoll (D3DX10. h)
+# <a name="id3dxmatrixstackrotateyawpitchroll-method-d3dx10h"></a>Método ID3DXMATRIXStack::RotateYawPitchRoll (D3DX10.h)
 
-Gira (em relação ao espaço de coordenadas mundiais) em um eixo arbitrário.
+Gira (em relação ao espaço de coordenadas do mundo) em torno de um eixo arbitrário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,30 +42,30 @@ HRESULT RotateYawPitchRoll(
 
 <dl> <dt>
 
-*Guinada* \[ no\]
+*Yaw* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-A guinada em volta do eixo y em radianos.
+O yaw em torno do eixo y em radianos.
 
 </dd> <dt>
 
-*Pitch* \[ no\]
+*Apresentação* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-A inclinação em volta do eixo x em radianos.
+O tom em torno do eixo x em radianos.
 
 </dd> <dt>
 
-*Rolar* \[ no\]
+*Roll* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-O rolo em volta do eixo z em radianos.
+O roll around do eixo z em radianos.
 
 </dd> </dl>
 
@@ -73,11 +73,11 @@ O rolo em volta do eixo z em radianos.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método adiciona a rotação à pilha de matriz com a matriz de rotação computada semelhante à seguinte:
+Esse método adiciona a rotação à pilha de matrizes com a matriz de rotação computada semelhante à seguinte:
 
 
 ```
@@ -88,7 +88,7 @@ m_stack[m_currentPos] = m_stack[m_currentPos] * tmp;
 
 
 
-Como a rotação é multiplicada à pilha da matriz, a rotação é relativa ao espaço de coordenadas do mundo.
+Como a rotação é multiplicada à direita para a pilha de matriz, a rotação é relativa ao espaço de coordenadas do mundo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,19 +96,19 @@ Como a rotação é multiplicada à pilha da matriz, a rotação é relativa ao 
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [ID3DXMatrixStack](d3d10-id3dxmatrixstack.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

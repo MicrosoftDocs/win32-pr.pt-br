@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1739e6bac82aed0b4e318d1f1359444b73e61090
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3ddb7d089858e23dd69a3fd9c58f64e75def9a3d00b74adf0cdea313524b7ee6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112355"
 ---
 # <a name="jet_conditionalcolumndeepclone-method"></a>JET_CONDITIONALCOLUMN. Método DeepClone
 
@@ -54,7 +54,7 @@ returnValue = instance.DeepClone()
 public JET_CONDITIONALCOLUMN DeepClone()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [Microsoft.ISAM.ESENT.Interop.JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-class.md)  
 Uma cópia profunda do objeto.  

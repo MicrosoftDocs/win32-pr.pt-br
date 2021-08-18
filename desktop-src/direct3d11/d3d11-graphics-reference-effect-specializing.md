@@ -4,12 +4,12 @@ description: O ID3DX11EffectVariable tem vários métodos para converter a inter
 ms.assetid: 20892af0-7d4a-4a89-b8d7-4ef225400697
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cb9f8adb5a5bb184473ff5679df99f0b71557fa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d6e4cff9c74f7a4b4034578b7ddeec2c388f0f953534393ac27778c31ed3856c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119126070"
 ---
 # <a name="specializing-interfaces-direct3d-11"></a>Interfaces especializadas (Direct3D 11)
 
@@ -60,9 +60,9 @@ As interfaces que herdam de [**ID3DX11EffectVariable**](id3dx11effectvariable.md
 [Efeitos (Direct3D 11)](d3d11-graphics-programming-guide-effects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

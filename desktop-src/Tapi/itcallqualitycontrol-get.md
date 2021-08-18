@@ -4,16 +4,16 @@ ms.assetid: 0fec408e-2751-4c99-afe1-4337d22eff83
 title: 'Método ITCallQualityControl:: Get (Ipmsp. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ea42768c173c0c073abe356e1ae6816a486a03c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 173ed08a7b8f166e267b32a80416387bd309c0c3a60e4ee06117ae9b8c43e037
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003404"
 ---
 # <a name="itcallqualitycontrolget-method"></a>Método ITCallQualityControl:: Get
 
-\[ Esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O método **Get** Obtém o valor de uma determinada [propriedade de controle de qualidade de chamada](callqualityproperty.md).
 
@@ -55,7 +55,7 @@ Valor da enumeração [**TAPIControlFlags**](tapicontrolflags.md) indicando como
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -77,7 +77,7 @@ Esse método pode retornar um desses valores.
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                         |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: cefcf9a927cee0d8f7c83ff42ae6ca4fc699bb09
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c3df77d7137b369b44d391ea1d8c607ca38dad83c95920d5a1eaf5e359b2b1be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990996"
 ---
 # <a name="d3dxquaternionrotationyawpitchroll-function-d3dx10mathh"></a>Função D3DXQuaternionRotationYawPitchRoll (D3DX10Math. h)
 
@@ -102,7 +102,7 @@ Use [**D3DXQuaternionNormalize**](d3d10-d3dxquaternionnormalize.md) para qualque
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

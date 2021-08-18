@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4e324131591f1d6bee3c00e6260f31f6580ec086
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae569dc8a4810552edd52e618162f3147a47e69171ea1ee82037d0fa881b4ac4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922279"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119109217"
 ---
 # <a name="jet_lgposinequality-operator"></a>JET_LGPOS. Operador de desigualdade
 
-Determina se duas instâncias especificadas do JET_LGPOS não são iguais.
+Determina se duas instâncias especificadas do JET_LGPOS são iguais.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,29 +64,29 @@ public static bool operator !=(
 
 #### <a name="parameters"></a>Parâmetros
 
-  - lhs  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
     A primeira instância a ser comparada.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
     A segunda instância a ser comparada.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True se as duas instâncias não forem iguais.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True se as duas instâncias não são iguais.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_LGPOS](./jet-lgpos-structure2.md)
+[JET_LGPOS estrutura](./jet-lgpos-structure2.md)
 
-[Membros do JET_LGPOS](./jet-lgpos-members.md)
+[JET_LGPOS membros](./jet-lgpos-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

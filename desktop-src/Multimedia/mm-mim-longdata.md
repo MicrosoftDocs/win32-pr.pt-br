@@ -1,9 +1,9 @@
 ---
 title: Mensagem de MM_MIM_LONGDATA (mmsystem. h)
-description: A \_ mensagem mm mim \_ LONGDATA é enviada para uma janela quando uma mensagem exclusiva do sistema MIDI é recebida ou quando um buffer é preenchido com dados exclusivos do sistema.
+description: a \_ mensagem MM MIM \_ LONGDATA é enviada para uma janela quando uma mensagem exclusiva do sistema MIDI é recebida ou quando um buffer é preenchido com dados exclusivos do sistema.
 ms.assetid: 72b9eade-4224-436f-bfef-32204eaf51ae
 keywords:
-- Multimídia do Windows de mensagem MM_MIM_LONGDATA
+- mensagem de MM_MIM_LONGDATA Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25bf1900ef2e9394b9d8772747eba873f8d607f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9e4748381500f42a5dc4f2bceae8ad862a64f237c9d5024e4b0b7cc96a694e5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065516"
 ---
-# <a name="mm_mim_longdata-message"></a>MM \_ mensagem do mim \_ LONGDATA
+# <a name="mm_mim_longdata-message"></a>MM \_ MIM \_ mensagem LONGDATA
 
-A mensagem **mm \_ mim \_ LONGDATA** é enviada para uma janela quando uma mensagem exclusiva do sistema MIDI é recebida ou quando um buffer é preenchido com dados exclusivos do sistema.
+a mensagem **MM \_ MIM \_ LONGDATA** é enviada para uma janela quando uma mensagem exclusiva do sistema MIDI é recebida ou quando um buffer é preenchido com dados exclusivos do sistema.
 
 
 ```C++

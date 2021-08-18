@@ -1,39 +1,39 @@
 ---
 description: Desempenho
 ms.assetid: a0d5c4ae-e0a3-466b-bf43-6bf7cda7aa21
-title: Desempenho (Windows Imaging Component)
+title: Desempenho (Windows componente de imagens)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 997c6c5da78567642a29ecc7ac88f6b66c3fb0b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a6a3fedd9ed83e30316dfac260b2dbb9a15e326e576146739b866369f2a5ddb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086869"
 ---
-# <a name="performance-windows-imaging-component"></a>Desempenho (Windows Imaging Component)
+# <a name="performance-windows-imaging-component"></a>Desempenho (Windows componente de imagens)
 
-O objetivo da Microsoft é que o desempenho do processamento bruto por meio da interface do Windows Imaging Component (WIC) seja equivalente a ferramentas e aplicativos de processamento bruto líderes do setor. Para fornecer diretrizes de desempenho, um conjunto de testes abrangentes que comparam o desempenho de ferramentas de fluxo de trabalho BRUTOs populares foi realizado. Os testes incluíam versões do sistema operacional Windows e Apple Macintosh de produtos de processamento bruto, arquivos BRUTOs de exemplo de câmeras atuais de SLR (lançamento de lentes simples) e uma série de funções que representam etapas de fluxo de trabalho comuns.
+A meta da Microsoft é que o desempenho do processamento RAW por meio da interface WIC (componente de imagens Windows) seja equivalente a aplicativos e ferramentas de processamento RAW líderes do setor. Para fornecer diretrizes de desempenho, foi executado um conjunto de testes abrangentes que comparam o desempenho de ferramentas populares de fluxo de trabalho RAW. Os testes incluíram as versões do sistema operacional Windows e do Apple Macintosh de produtos de processamento RAW, arquivos RAW de exemplo de câmeras SLR (reflex de lente única) atuais e uma série de funções que representam etapas comuns de fluxo de trabalho.
 
-Com base nesses resultados, a Microsoft sugere as seguintes recomendações aos parceiros para desempenho de processamento bruto:
+Com base nesses resultados, a Microsoft sugere as seguintes recomendações aos parceiros para o desempenho do processamento RAW:
 
--   O desempenho da linha de base deve ser igual ou melhor do que os tempos de processamento das ferramentas e dos aplicativos de processamento bruto fornecidos pelo fabricante atual.
--   As metas de desempenho ideais devem corresponder ou exceder o aplicativo de melhor desempenho sem sacrificar a qualidade (nesses testes, o Photoshop Camera RAW geralmente é executado mais rápido).
+-   O desempenho da linha de base deve ser igual ou melhor do que os tempos de processamento dos aplicativos e ferramentas de processamento RAW fornecidos pelo fabricante atual.
+-   Os destinos de desempenho ideais devem corresponder ou exceder o aplicativo de desempenho mais alto sem qualquer negociação de qualidade (nesses testes, o Raw da Câmera do Generic geralmente foi executado mais rápido).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de imagens](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
-[Diretrizes do WIC para formatos de imagem bruta de câmera](-wic-rawguidelines.md)
+[Diretrizes do WIC para formatos de imagem RAW da câmera](-wic-rawguidelines.md)
 </dt> <dt>
 
-[Como escrever um CODEC de WIC-Enabled](-wic-howtowriteacodec.md)
+[Como escrever um codec WIC-Enabled código](-wic-howtowriteacodec.md)
 </dt> </dl>
 
  

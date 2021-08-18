@@ -5,34 +5,34 @@ ms.assetid: 47460d57-936d-4c5f-8ff6-a4d9d60d0b68
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4946f05806a6e24ff466d08dc141aadf9c995e5
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6ebe355e3274821bf81a666380bfe70ca0f3f7b49e2bc9de10bf2aa4796b5288
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023294"
 ---
 # <a name="programming-language-support"></a>Suporte à linguagem de programação
 
-Você pode escrever aplicativos cliente ADSI em vários idiomas. Para a maioria das tarefas administrativas, a ADSI define interfaces e objetos acessíveis de linguagens em conformidade com a automação. Por exemplo, o sistema de desenvolvimento da Microsoft Visual Basic, o Microsoft Visual Basic Scripting Edition (VBScript) e o Java, bem como mais linguagens de desempenho e eficiência, como C e C++.
+Você pode escrever aplicativos cliente ADSI em vários idiomas. Para a maioria das tarefas administrativas, a ADSI define interfaces e objetos acessíveis de linguagens compatíveis com a Automação. Por exemplo, o sistema de desenvolvimento do Microsoft Visual Basic, o Microsoft Visual Basic Scripting Edition (VBScript) e o Java, bem como mais linguagens de desempenho e eficiência, como C e C++.
 
-A integração tranqüila com as páginas Active Server e o VBScript facilita a gravação de aplicativos de Internet que acessam os serviços de diretório. Para a integração com OLE DB aplicativos, a ADSI fornece um provedor de OLE DB ao oferecer suporte a um subconjunto das interfaces de consulta OLE DB. O provedor de OLE DB dá suporte ao acesso somente leitura ao Active Directory.
+A integração suave com Active Server Pages e VBScript facilitam a gravação de aplicativos da Internet que acessam serviços de diretório. Para integração com OLE DB, a ADSI fornece um provedor OLE DB, dando suporte a um subconjunto das interfaces de OLE DB de consulta. O OLE DB provedor dá suporte ao acesso somente leitura ao Active Directory.
 
-Para aplicativos da Internet, o uso de scripts em arquivos ASP (página de Active Server) pode criar e manipular objetos ADSI no servidor e exibir os resultados em uma página da Web. No console de gerenciamento Microsoft, os snap-ins de administração do serviço de diretório podem usar ADSI para localizar serviços de diretório de interesse. Em suma, Active Directory interfaces de serviço podem fornecer acesso a um conjunto amplo e diversificado de serviços de diretório, incluindo aqueles ainda não compilados.
+Para aplicativos de Internet, o uso de scripts em arquivos ASP (página Active Server) pode criar e manipular objetos ADSI no servidor e exibir os resultados em uma página da Web. No Console de Gerenciamento Microsoft, os snap-ins de administração de serviço de diretório podem usar a ADSI para encontrar serviços de diretório de interesse. Em resumo, as Interfaces de Serviço do Active Directory podem fornecer acesso a um amplo e diversificado conjunto de serviços de diretório , incluindo aqueles que ainda não foram construídos.
 
-Para acessar estruturas que usam APIs tradicionais, a arquitetura ADSI define interfaces de baixo nível que não dão suporte à automação que são acessíveis de linguagens como C e C++. Essas interfaces são pouco mais do que wrappers COM para protocolos de rede para um serviço de diretório.
+Para acesso a estruturas que usam APIs tradicionais, a arquitetura ADSI define interfaces de baixo nível que não são suportadas pela Automação que podem ser acessadas em linguagens como C e C++. Essas interfaces são pouco mais do que wrappers COM para protocolos de rede para um serviço de diretório.
 
-Escrever código para as interfaces publicadas permite que seu aplicativo alcance serviços de diretório para todos os provedores ADSI instalados e integre os dados resultantes. Com pouca ou nenhuma alteração no seu código, seu aplicativo pode continuar a acessar serviços de diretório adicionais na sua rede à medida que novos provedores ADSI são instalados.
+Escrever código nas interfaces publicadas permite que seu aplicativo alcance os serviços de diretório para todos os provedores ADSI instalados e integre os dados resultantes. Com pouca ou nenhuma alteração no código, seu aplicativo pode continuar acessando serviços de diretório adicionais em sua rede à medida que novos provedores ADSI são instalados.
 
-A figura a seguir mostra como o ADSI se encaixa em um ambiente de aplicativo. Quer o aplicativo seja escrito em Visual Basic, C/C++, VBScript, Microsoft JScript Development System ou como um aplicativo Web usando Active Server páginas, Active Directory interfaces de serviço fornecem um acesso limpo e fácil de usar aos serviços de diretório subjacentes sem precisar usar as APIs de rede nativas.
+A figura a seguir mostra como a ADSI se encaixa em um ambiente de aplicativo. Se o aplicativo for escrito em Visual Basic, C/C++, VBScript, sistema de desenvolvimento do Microsoft JScript ou como um aplicativo Web usando páginas do Active Server, as Interfaces de Serviço do Active Directory fornecem um acesso limpo e fácil de usar aos serviços de diretório subjacentes sem a necessidade de usar as APIs de rede nativas.
 
-![suporte ADSI para linguagens de programação](images/ds2layr.png)
+![Suporte adsi para linguagens de programação](images/ds2layr.png)
 
-Conforme mostrado na figura anterior, os clientes que não dão suporte à automação têm acesso a todas as interfaces ADSI, incluindo interfaces COM puras com a Convenção de nomenclatura **IDirectoryXXX** e interfaces com de automação com a Convenção de nomenclatura **IADsXXX**. Como os clientes solicitam predominantemente informações de serviços de diretório, o modelo de consulta flexível da ADSI por meio de OLE DB e [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) é eficaz.
+Conforme mostrado na figura anterior, os clientes que não são suportados pela Automação têm acesso a todas as interfaces ADSI, incluindo interfaces COM puras com a convenção de nomenal **IDirectoryXXX** e interfaces COM de Automação com a convenção de **nomenal IADsXXX**. Como os clientes solicitam predominantemente informações dos serviços de diretório, o modelo de consulta flexível ADSI por meio de OLE DB [**e IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) é eficaz.
 
- 
+ 
 
- 
+ 
 
 
 

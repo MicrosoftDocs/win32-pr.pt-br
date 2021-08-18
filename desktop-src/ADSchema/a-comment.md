@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f367b0159a28e5276e09a0b585cea7f04f6e447
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4ad501be055b89132a22eb3fddae83d6ba689e39f2347155d462e1b6bed7c031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961815"
 ---
 # <a name="user-comment-attribute"></a>User-Comment atributo
 
@@ -58,7 +58,7 @@ Os comentários do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -79,7 +79,7 @@ Os comentários do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -100,7 +100,7 @@ Os comentários do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -121,7 +121,7 @@ Os comentários do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -142,7 +142,7 @@ Os comentários do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
@@ -163,7 +163,7 @@ Os comentários do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
 | No catálogo global      | Falso                                                              |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |

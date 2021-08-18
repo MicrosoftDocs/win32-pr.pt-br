@@ -1,21 +1,21 @@
 ---
-description: O \_ método obter contagem Obtém o número de mídias na sessão.
+description: O método \_ get Count obtém o número de mídias na sessão.
 ms.assetid: 9d085a34-9a49-4447-8d11-56d71a2a3592
-title: 'Método ITMediaCollection:: get_Count (Sdpblb. h)'
+title: Método ITMediaCollection::get_Count (Sdpblb.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1f5a4fb6d7f1b942f37aae1356c7b49e0e60f77
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9ef5e1c2c204f31d9e2ba18b6b0ba04a8c8d988455b9e587f86f33655ecc5a13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003274"
 ---
-# <a name="itmediacollectionget_count-method"></a>Método de contagem ITMediaCollection:: get \_
+# <a name="itmediacollectionget_count-method"></a>Método ITMediaCollection::get \_ Count
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[As interfaces e controles de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **obter \_ contagem** Obtém o número de mídias na sessão.
+O **método \_ get Count** obtém o número de mídias na sessão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,14 +32,14 @@ HRESULT get_Count(
 
 <dl> <dt>
 
-*PVal* \[ fora\]
+*pVal* \[ out\]
 </dt> <dd>
 
-Contagem de mídia na sessão.
+Contagem de mídias na sessão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -48,9 +48,9 @@ Esse método pode retornar um desses valores.
 | Código de retorno                                                                                   | Descrição                                                     |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>          | O método foi bem-sucedido.<br/>                                    |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>     | O parâmetro *PVal* não é um ponteiro válido.<br/>         |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>     | O *parâmetro pVal* não é um ponteiro válido.<br/>         |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Há memória insuficiente para executar a operação.<br/> |
-| <dl> <dt>**E \_ falha**</dt> </dl>        | Erro não especificado.<br/>                                   |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>        | Erro não especificado.<br/>                                   |
 | <dl> <dt>**E \_ NOTIMPL**</dt> </dl>     | Este método ainda não foi implementado.<br/>                  |
 
 
@@ -63,9 +63,9 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
+| Versão do TAPI<br/> | Requer TAPI 3.0 ou posterior<br/>                                                 |
+| Cabeçalho<br/>       | <dl> <dt>Sdpblb.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 
 

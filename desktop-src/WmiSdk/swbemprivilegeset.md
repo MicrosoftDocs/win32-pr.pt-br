@@ -1,5 +1,5 @@
 ---
-description: Um objeto SWbemPrivilegeSet é uma coleção de objetos SWbemPrivilege em um objeto SWbemSecurity que solicita privilégios específicos para um objeto Instrumentação de Gerenciamento do Windows (WMI).
+description: um objeto SWbemPrivilegeSet é uma coleção de objetos SWbemPrivilege em um objeto SWbemSecurity que solicita privilégios específicos para um objeto Instrumentação de Gerenciamento do Windows (WMI).
 ms.assetid: 073cf2d4-f7ee-45a6-8fa6-ca77a4870346
 ms.tgt_platform: multiple
 title: Objeto SWbemPrivilegeSet (Wbemdisp. h)
@@ -15,16 +15,16 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: b2946f8b1f745c0db123ed33dab312cbbe9d16c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2117aec6fada67bddce9f07a6c985c73a3dcd93ef217ed7fe77dc46cc5659d26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991946"
 ---
 # <a name="swbemprivilegeset-object"></a>Objeto SWbemPrivilegeSet
 
-Um objeto **SWbemPrivilegeSet** é uma coleção de objetos [**SWbemPrivilege**](swbemprivilege.md) em um objeto [**SWbemSecurity**](swbemsecurity.md) que solicita privilégios específicos para um objeto Instrumentação de gerenciamento do Windows (WMI). Consulte a lista de privilégios em [**constantes de privilégio**](privilege-constants.md). Os itens são adicionados à coleção usando os métodos [**Add**](swbemprivilegeset-add.md) e [**AddAsString**](swbemprivilegeset-addasstring.md) . Os itens são recuperados da coleção usando o método [**Item**](swbemprivilegeset-item.md) e removidos usando o método [**Remove**](swbemprivilegeset-remove.md) . Este objeto não pode ser criado pela chamada do método [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) do VBScript. Para obter mais informações, consulte [acessando uma coleção](accessing-a-collection.md).
+um objeto **SWbemPrivilegeSet** é uma coleção de objetos [**SWbemPrivilege**](swbemprivilege.md) em um objeto [**SWbemSecurity**](swbemsecurity.md) que solicita privilégios específicos para um objeto Instrumentação de Gerenciamento do Windows (WMI). Consulte a lista de privilégios em [**constantes de privilégio**](privilege-constants.md). Os itens são adicionados à coleção usando os métodos [**Add**](swbemprivilegeset-add.md) e [**AddAsString**](swbemprivilegeset-addasstring.md) . Os itens são recuperados da coleção usando o método [**Item**](swbemprivilegeset-item.md) e removidos usando o método [**Remove**](swbemprivilegeset-remove.md) . Este objeto não pode ser criado pela chamada do método [CreateObject](/previous-versions//xzysf6hc(v=vs.85)) do VBScript. Para obter mais informações, consulte [acessando uma coleção](accessing-a-collection.md).
 
 Um objeto **SWbemPrivilegeSet** é um conjunto de solicitações de substituição de privilégio para um objeto específico. Quando uma chamada à API é feita usando esse objeto, as solicitações de substituição de privilégio são tentadas. O objeto **SWbemPrivilegeSet** não define os privilégios disponíveis para o usuário ou processo atual. Em outras palavras, a obtenção de privilégios para qualquer objeto WMI não identifica as configurações de privilégio feitas na conexão com o WMI ou os privilégios em vigor quando um objeto é entregue a um coletor.
 
@@ -61,7 +61,7 @@ O objeto **SWbemPrivilegeSet** tem essas propriedades.
 
 | Propriedade                                            | Tipo de acesso          | Descrição                                       |
 |:----------------------------------------------------|:---------------------|:--------------------------------------------------|
-| [**Contar**](swbemprivilegeset-count.md)<br/> | Somente leitura<br/> | Número de itens na coleção.<br/> |
+| [**Contagem**](swbemprivilegeset-count.md)<br/> | Somente leitura<br/> | Número de itens na coleção.<br/> |
 
 
 
@@ -201,7 +201,7 @@ else
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMPRIVILEGESET CLSID<br/>                                                     |

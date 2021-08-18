@@ -1,20 +1,20 @@
 ---
-title: Usando os exemplos de código do SDK do Windows Media Format
-description: Usando os exemplos de código do SDK do Windows Media Format
+title: usando os exemplos de código do SDK do formato de mídia Windows
+description: usando os exemplos de código do SDK do formato de mídia Windows
 ms.assetid: 1459a438-d42c-4d84-baa8-fc672f5d5d27
 keywords:
-- SDK do Windows Media Format, exemplos de código
-- SDK do Windows Media Format, código de exemplo
+- Windows SDK do formato de mídia, exemplos de código
+- Windows SDK do formato de mídia, código de exemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8db438a8cb42bbb45768421cc34c129f19948f1c
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: ba6a5b6718bf7665d04fedb5d5a0bad473a632cbeeabdfd756a52877ccdc84ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963935"
 ---
-# <a name="using-the-windows-media-format-sdk-code-examples"></a>Usando os exemplos de código do SDK do Windows Media Format
+# <a name="using-the-windows-media-format-sdk-code-examples"></a>usando os exemplos de código do SDK do formato de mídia Windows
 
 Muitas das seções explicativas deste SDK incluem exemplos de código. Os exemplos são escritos para serem tão claros e concisos quanto possível. Ao ler os exemplos, você deve estar ciente das convenções a seguir.
 

@@ -4,12 +4,12 @@ ms.assetid: 005512c6-934a-4f50-9253-e60030aa1a95
 title: System. GPS. DOPDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fbaa4ce6bbc45fd547145e7593eaf70ca9be547
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67095c3df8233b360f38fee59040188ea3682268a21a0a129509f7a77f97d456
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119096845"
 ---
 # <a name="systemgpsdopdenominator"></a>System. GPS. DOPDenominator
 

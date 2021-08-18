@@ -1,9 +1,9 @@
 ---
 title: Recurso VERSIONINFO
-description: Define um recurso de informações de versão. O recurso contém informações sobre o arquivo como seu número de versão, seu sistema operacional pretendido e seu nome de arquivo original. O recurso destina-se a ser usado com as funções de informações de versão.
+description: Define um recurso de informações de versão. O recurso contém essas informações sobre o arquivo como seu número de versão, seu sistema operacional pretendido e seu nome de arquivo original. O recurso destina-se a ser usado com as funções informações de versão.
 ms.assetid: be4fbf3d-ca30-4de1-b17a-691a316edfad
 keywords:
-- Menus de recursos do VERSIONINFO e outros recursos
+- Menus de recurso VERSIONINFO e outros recursos
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9248abe18d07820ebefaa6d939f36f617f6cd07f
-ms.sourcegitcommit: 25e1fa2b3641ae13b79e0afdf9cb7a168d99e009
+ms.openlocfilehash: d6708b4fefc564685a9989140e5f07dd20714e8bbcb60c53710f43cbfee4aa7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "104294587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971865"
 ---
 # <a name="versioninfo-resource"></a>Recurso VERSIONINFO
 
-Define um recurso de informações de versão. O recurso contém informações sobre o arquivo como seu número de versão, seu sistema operacional pretendido e seu nome de arquivo original. O recurso destina-se a ser usado com as funções de [informações de versão](./version-information.md) .
+Define um recurso de informações de versão. O recurso contém essas informações sobre o arquivo como seu número de versão, seu sistema operacional pretendido e seu nome de arquivo original. O recurso destina-se a ser usado com as funções [informações de](./version-information.md) versão.
 
-Há duas maneiras de Formatar uma instrução **VERSIONINFO** :
+Há duas maneiras de formatar uma **instrução VERSIONINFO:**
 
 ``` syntax
 versionID VERSIONINFO fixed-info  { block-statement . . . }
@@ -44,10 +44,10 @@ END
 
 <dl> <dt>
 
-<span id="versionID"></span><span id="versionid"></span><span id="VERSIONID"></span>*versionID*
+<span id="versionID"></span><span id="versionid"></span><span id="VERSIONID"></span>*Versionid*
 </dt> <dd>
 
-Versão – identificador de recurso de informações. Esse valor deve ser 1.
+Identificador de recurso de informações de versão. Esse valor deve ser 1.
 
 </dd> <dt>
 
@@ -60,36 +60,36 @@ Informações de versão, como a versão do arquivo e o sistema operacional pret
 
 | Instrução                         | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  *Versão* da versão         | Número de versão binária do arquivo. A *versão* consiste em inteiros de 2 32 bits, definidos por inteiros de 4 16 bits. Por exemplo, "FileVersion 3, 10, 0, 61" é traduzido em dois doublewords: 0x0003000a e 0x0000003d, nessa ordem. Portanto, se a *versão* for definida pelos valores **DWORD** *dw1* e *DW2*, eles precisarão aparecer na instrução **FileVersion** da seguinte maneira: `HIWORD(dw1)` , `LOWORD(dw1)` , `HIWORD(dw2)` , `LOWORD(dw2)` . |
-|  *Versão* do PRODUCTVERSION      | Número de versão binária do produto com o qual o arquivo é distribuído. O parâmetro *version* é um número inteiro de 2 32 bits, definido por inteiros de 4 16 bits. Para obter mais informações sobre a *versão*, consulte a descrição de **FileVersion** .                                                                                                                                                                                                           |
-| **FILEFLAGSMASK** *FILEFLAGSMASK* | Indica quais bits na instrução **FILEFLAGS** são válidos. Para o Windows de 16 bits, esse valor é 0x3F.                                                                                                                                                                                                                                                                                                                                          |
-| *Sinalizadors* de **FILEFLAGS**         | Atributos do arquivo.                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| **FILEOS** *FILEOS*               | Sistema operacional para o qual este arquivo foi projetado. O parâmetro *fileos* pode ser um dos valores do sistema operacional fornecidos na seção comentários.                                                                                                                                                                                                                                                                                               |
-|  *Filetype* de filetype           | Tipo geral de arquivo. O parâmetro *filetype* pode ser um dos valores de tipo de arquivo listados na seção comentários.                                                                                                                                                                                                                                                                                                                                |
-| Subtipo **FILESUBTYPE**          | Função do arquivo. O parâmetro de *subtipo* é zero, a menos que o parâmetro *filetype* na instrução **FILETYPE** seja VFT \_ DRV, VFT \_ Font ou VFT \_ VXD. Para obter uma lista de valores de subtipo de arquivo, consulte a seção comentários.                                                                                                                                                                                                                            |
+| **Versão do FILEVERSION**          | Número de versão binária para o arquivo. A *versão* consiste em dois inteiros de 32 bits, definidos por quatro inteiros de 16 bits. Por exemplo, "FILEVERSION 3,10,0,61" é convertido em duas palavras duplas: 0x0003000a e 0x0000003d, nessa ordem. Portanto, se *a* versão for definida pelos valores **DWORD** *dw1* e *dw2*, ela precisará aparecer na instrução **FILEVERSION** da seguinte forma: `HIWORD(dw1)` , , , `LOWORD(dw1)` `HIWORD(dw2)` `LOWORD(dw2)` . |
+| **Versão do PRODUCTVERSION**       | Número de versão binária para o produto com o qual o arquivo é distribuído. O *parâmetro* version é dois inteiros de 32 bits, definidos por quatro inteiros de 16 bits. Para obter mais informações sobre *a versão*, consulte a **descrição FILEVERSION.**                                                                                                                                                                                                           |
+| **FileFLAGSMASK** *fileflagsmask* | Indica quais bits na instrução **FILEFLAGS são** válidos. Para 16 bits Windows, esse valor é 0x3f.                                                                                                                                                                                                                                                                                                                                          |
+| **FileFLAGS** *fileflags*         | Atributos do arquivo.                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| **FileOS** *fileos*               | Sistema operacional para o qual esse arquivo foi projetado. O *parâmetro fileos* pode ser um dos valores do sistema operacional determinados na seção Comentários.                                                                                                                                                                                                                                                                                               |
+| **Tipo de arquivo FILETYPE**            | Tipo geral de arquivo. O *parâmetro filetype* pode ser um dos valores de tipo de arquivo listados na seção Comentários.                                                                                                                                                                                                                                                                                                                                |
+| **Subtipo FILESUBTYPE**          | Função do arquivo. O *parâmetro de subtipo* é zero, a menos que o parâmetro *filetype* na instrução **FILETYPE** seja VFT \_ DRV, VFT \_ FONT ou VFT \_ VXD. Para ver uma lista de valores de subtipo de arquivo, consulte a seção Comentários.                                                                                                                                                                                                                            |
 
 
 
- 
+ 
 
 </dd> <dt>
 
-<span id="block-statement"></span><span id="BLOCK-STATEMENT"></span>*instrução Block*
+<span id="block-statement"></span><span id="BLOCK-STATEMENT"></span>*instrução block*
 </dt> <dd>
 
-Especifica um ou mais blocos de informações de versão. Um bloco pode conter informações de cadeia de caracteres ou informações de variáveis. Para obter mais informações, consulte bloco [**StringFileInfo**](stringfileinfo-block.md) ou [**bloco VarFileInfo**](varfileinfo-block.md).
+Especifica um ou mais blocos de informações de versão. Um bloco pode conter informações de cadeia de caracteres ou informações de variável. Para obter mais informações, consulte [**Bloco StringFileInfo ou**](stringfileinfo-block.md) [**Bloco VarFileInfo**](varfileinfo-block.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Para usar as constantes especificadas com a instrução **VERSIONINFO** , você deve incluir o arquivo de cabeçalho winver. h ou Windows. h no arquivo de definição de recurso.
+Para usar as constantes especificadas com a instrução **VERSIONINFO,** você deve incluir o arquivo de título Winver.h ou Windows.h no arquivo de definição de recurso.
 
-A lista a seguir descreve os parâmetros usados na instrução **VERSIONINFO** :
+A lista a seguir descreve os parâmetros usados na **instrução VERSIONINFO:**
 
 <dl> <dt>
 
-<span id="fileflags"></span><span id="FILEFLAGS"></span>*sinalizadores de*
+<span id="fileflags"></span><span id="FILEFLAGS"></span>*Fileflags*
 </dt> <dd>
 
 Uma combinação dos valores a seguir.
@@ -98,16 +98,16 @@ Uma combinação dos valores a seguir.
 
 | Valor                      | Descrição                                                                                                                                                                                                                                                                 |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **depuração do VS \_ FF \_**          | O arquivo contém informações de depuração ou é compilado com recursos de depuração habilitados.                                                                                                                                                                                         |
-| **com \_ patch do vs FF \_**        | O arquivo foi modificado e não é idêntico ao arquivo de envio original do mesmo número de versão.                                                                                                                                                                       |
-| **PRÉ-lançamento do VS \_ FF \_**     | O arquivo é uma versão de desenvolvimento, não um produto lançado comercialmente.                                                                                                                                                                                                         |
-| **PRIVATEBUILD do VS \_ FF \_**   | O arquivo não foi compilado usando procedimentos de versão padrão. Se esse valor for fornecido, o [**bloco StringFileInfo**](stringfileinfo-block.md) deverá conter uma cadeia de caracteres **PrivateBuild** .                                                                                              |
-| **SPECIALBUILD do VS \_ FF \_**   | O arquivo foi criado pela empresa original usando procedimentos de versão padrão, mas é uma variação do arquivo padrão do mesmo número de versão. Se esse valor for fornecido, o bloco de [bloco **StringFileInfo**](stringfileinfo-block.md) deverá conter uma cadeia de caracteres **SpecialBuild** . |
+| **DEPURAÇÃO DO VS \_ \_ FF**          | O arquivo contém informações de depuração ou é compilado com recursos de depuração habilitados.                                                                                                                                                                                         |
+| **VS \_ FF \_ PATCHED**        | O arquivo foi modificado e não é idêntico ao arquivo de envio original do mesmo número de versão.                                                                                                                                                                       |
+| **PRÉ-LANÇAMENTO DO VS \_ FF \_**     | O arquivo é uma versão de desenvolvimento, não um produto lançado comercialmente.                                                                                                                                                                                                         |
+| **PRIVATEBUILD do VS \_ FF \_**   | O arquivo não foi criado usando procedimentos de versão padrão. Se esse valor for dado, o [**bloco StringFileInfo deverá**](stringfileinfo-block.md) conter uma **cadeia de caracteres PrivateBuild.**                                                                                              |
+| **VS \_ FF \_ SPECIALBUILD**   | O arquivo foi criado pela empresa original usando procedimentos de versão padrão, mas é uma variação do arquivo padrão do mesmo número de versão. Se esse valor for dado, o bloco [ **StringFileInfo**](stringfileinfo-block.md) deverá conter uma cadeia de caracteres **SpecialBuild.** |
 | **VS \_ FFI \_ FILEFLAGSMASK** | Uma combinação de todos os valores anteriores.                                                                                                                                                                                                                                  |
 
 
 
- 
+ 
 
 </dd> <dt>
 
@@ -120,24 +120,24 @@ Um dos valores a seguir.
 
 | Valor                   | Descrição                                                      |
 |-------------------------|------------------------------------------------------------------|
-| **VOS \_ desconhecido**        | O sistema operacional para o qual o arquivo foi projetado é desconhecido. |
-| **VOS \_ dos**            | O arquivo foi projetado para o MS-DOS.                                    |
-| **VOS \_ NT**             | O arquivo foi projetado para o Windows de 32 bits.                            |
-| **VOS \_ \_ WINDOWS16**    | O arquivo foi projetado para o Windows de 16 bits.                            |
-| **VOS \_ \_ WINDOWS32**    | O arquivo foi projetado para o Windows de 32 bits.                            |
-| **VOS \_ dos \_ WINDOWS16** | O arquivo foi projetado para o Windows de 16 bits em execução com o MS-DOS.        |
-| **VOS \_ dos \_ WINDOWS32** | O arquivo foi projetado para o Windows de 32 bits em execução com o MS-DOS.        |
-| **VOS \_ NT \_ WINDOWS32**  | O arquivo foi projetado para o Windows de 32 bits.                            |
+| **OPERAÇÃO \_ DESCONHECIDA**        | O sistema operacional para o qual o arquivo foi projetado é desconhecido. |
+| **VOS \_ DOS**            | O arquivo foi projetado para o MS-DOS.                                    |
+| **OPERAÇÃO \_ NT**             | O arquivo foi projetado para 32 bits Windows.                            |
+| **OPERAÇÃO \_ \_ WINDOWS16**    | O arquivo foi projetado para 16 bits Windows.                            |
+| **OPERAÇÃO \_ \_ WINDOWS32**    | O arquivo foi projetado para 32 bits Windows.                            |
+| **OPERAÇÃO \_ DOS \_ WINDOWS16** | O arquivo foi projetado para 16 bits Windows em execução com o MS-DOS.        |
+| **OPERAÇÃO \_ DOS \_ WINDOWS32** | O arquivo foi projetado para 32 bits Windows em execução com o MS-DOS.        |
+| **OPERAÇÃO \_ NT \_ WINDOWS32**  | O arquivo foi projetado para 32 bits Windows.                            |
 
 
 
- 
+ 
 
 Os valores 0x00002L, 0x00003L, 0x20000L e 0x30000L são reservados.
 
 </dd> <dt>
 
-<span id="filetype"></span><span id="FILETYPE"></span>*Talvez*
+<span id="filetype"></span><span id="FILETYPE"></span>*Filetype*
 </dt> <dd>
 
 Um dos valores a seguir.
@@ -146,79 +146,79 @@ Um dos valores a seguir.
 
 | Valor                | Descrição                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **VFT \_ desconhecido**     | O tipo de arquivo é desconhecido.                                                                                                       |
-| **\_aplicativo VFT**         | O arquivo contém um aplicativo.                                                                                               |
-| **\_dll VFT**         | O arquivo contém uma DLL (biblioteca de vínculo dinâmico).                                                                                 |
-| **VFT \_ drv**         | O arquivo contém um driver de dispositivo. Se o *filetype* for **VFT \_ drv**, o *subtipo* conterá uma descrição mais específica do driver. |
-| **\_fonte VFT**        | O arquivo contém uma fonte. Se *filetype* for VFT \_ fonte, *subtipo* conterá uma descrição mais específica da fonte.               |
-| **VFT \_ vxd**         | O arquivo contém um dispositivo virtual.                                                                                             |
-| **\_lib VFT static \_** | O arquivo contém uma biblioteca de vínculo estático.                                                                                        |
+| **VFT \_ UNKNOWN**     | O tipo de arquivo é desconhecido.                                                                                                       |
+| **APLICATIVO \_ VFT**         | O arquivo contém um aplicativo.                                                                                               |
+| **DLL \_ do VFT**         | O arquivo contém uma DLL (biblioteca de vínculo dinâmico).                                                                                 |
+| **DRV do VFT \_**         | O arquivo contém um driver de dispositivo. Se *filetype* for **\_ DRV da VFT,** *o subtipo* conterá uma descrição mais específica do driver. |
+| **FONTE \_ VFT**        | O arquivo contém uma fonte. Se *filetype* for FONT \_ VFT, o *subtipo* conterá uma descrição mais específica da fonte.               |
+| **VFT \_ VXD**         | O arquivo contém um dispositivo virtual.                                                                                             |
+| **BIBLIOTECA ESTÁTICA do VFT \_ \_** | O arquivo contém uma biblioteca de vínculo estático.                                                                                        |
 
 
 
- 
+ 
 
 Todos os outros valores são reservados para uso pela Microsoft.
 
 </dd> <dt>
 
-<span id="subtype"></span><span id="SUBTYPE"></span>*subtipo*
+<span id="subtype"></span><span id="SUBTYPE"></span>*Subtipo*
 </dt> <dd>
 
 Informações adicionais sobre o tipo de arquivo.
 
-Se *filetype* especificar **VFT \_ drv**, esse parâmetro poderá ser um dos valores a seguir.
+Se *filetype* especificar **\_ DRV da VFT,** esse parâmetro poderá ser um dos valores a seguir.
 
 
 
 | Valor                             | Descrição                               |
 |-----------------------------------|-------------------------------------------|
-| **VFT2 \_ desconhecido**                 | O tipo de driver é desconhecido.                   |
-| **\_Comm VFT2 drv \_**               | O arquivo contém um driver de comunicação.    |
-| **\_Impressora VFT2 drv \_**            | O arquivo contém um driver de impressora.           |
-| **\_Teclado VFT2 drv \_**           | O arquivo contém um driver de teclado.          |
-| **\_Linguagem VFT2 drv \_**           | O arquivo contém um driver de idioma.          |
-| **Exibição de VFT2 \_ drv \_**            | O arquivo contém um driver de vídeo.           |
-| **\_Mouse VFT2 drv \_**              | O arquivo contém um driver de mouse.             |
-| **\_Rede VFT2 drv \_**            | O arquivo contém um driver de rede.           |
-| **\_Sistema VFT2 drv \_**             | O arquivo contém um driver de sistema.            |
-| **VFT2 \_ drv \_ instalável**        | O arquivo contém um driver instalável.      |
-| **\_Som VFT2 drv \_**              | O arquivo contém um driver de som.             |
-| **\_Impressora com \_ versão VFT2 \_ drv** | O arquivo contém um driver de impressora com versão. |
+| **VFT2 \_ UNKNOWN**                 | O tipo de driver é desconhecido.                   |
+| **VFT2 \_ DRV \_ COMM**               | O arquivo contém um driver de comunicação.    |
+| **IMPRESSORA DRV VFT2 \_ \_**            | O arquivo contém um driver de impressora.           |
+| **TECLADO DRV VFT2 \_ \_**           | O arquivo contém um driver de teclado.          |
+| **LINGUAGEM DRV VFT2 \_ \_**           | O arquivo contém um driver de idioma.          |
+| **VFT2 \_ DRV \_ DISPLAY**            | O arquivo contém um driver de exibição.           |
+| **VFT2 \_ DRV \_ MOUSE**              | O arquivo contém um driver do mouse.             |
+| **REDE DE DRV VFT2 \_ \_**            | O arquivo contém um driver de rede.           |
+| **SISTEMA DRV VFT2 \_ \_**             | O arquivo contém um driver do sistema.            |
+| **VFT2 \_ DRV \_ INSTALLABLE**        | O arquivo contém um driver instalável.      |
+| **SOM DRV VFT2 \_ \_**              | O arquivo contém um driver de som.             |
+| **IMPRESSORA COM \_ VERSÃO DE DRV VFT2 \_ \_** | O arquivo contém um driver de impressora com versão. |
 
 
 
- 
+ 
 
-Se *filetype* especificar **a \_ fonte VFT**, esse parâmetro poderá ser um dos valores a seguir.
+Se *filetype* especificar **FONT VFT \_**, esse parâmetro poderá ser um dos valores a seguir.
 
 
 
 | Valor                    | Descrição                    |
 |--------------------------|--------------------------------|
-| **VFT2 \_ desconhecido**        | O tipo de fonte é desconhecido.          |
-| **\_Rasterização de fonte VFT2 \_**   | O arquivo contém uma fonte de varredura.   |
-| **\_Vetor de fonte VFT2 \_**   | O arquivo contém uma fonte de vetor.   |
-| **Fonte de VFT2 \_ \_ TrueType** | O arquivo contém uma fonte TrueType. |
+| **VFT2 \_ UNKNOWN**        | O tipo de fonte é desconhecido.          |
+| **RASTER DE FONTE VFT2 \_ \_**   | O arquivo contém uma fonte raster.   |
+| **VETOR DE FONTE VFT2 \_ \_**   | O arquivo contém uma fonte de vetor.   |
+| **VFT2 \_ FONT \_ TRUETYPE** | O arquivo contém uma fonte TrueType. |
 
 
 
- 
+ 
 
-Se *filetype* especificar VFT \_ vxd, esse parâmetro deverá ser o identificador de dispositivo virtual incluído no bloco de controle de dispositivo virtual.
+Se *filetype* especificar \_ VFT VXD, esse parâmetro deverá ser o identificador de dispositivo virtual incluído no bloco de controle de dispositivo virtual.
 
-Todos os valores de *subtipo* não listados aqui são reservados para uso pela Microsoft.
+Todos *os valores de* subtipo não listados aqui são reservados para uso pela Microsoft.
 
 </dd> <dt>
 
-<span id="langID"></span><span id="langid"></span><span id="LANGID"></span>*langID*
+<span id="langID"></span><span id="langid"></span><span id="LANGID"></span>*Langid*
 </dt> <dd>
 
 Um dos códigos de idioma a seguir.
 
 
 
-| Código   | Idioma            | Código   | Idioma                  |
+| Código   | Linguagem            | Código   | Linguagem                  |
 |--------|---------------------|--------|---------------------------|
 | 0x0401 | Árabe              | 0x0415 | Polonês                    |
 | 0x0402 | Búlgaro           | 0x0416 | Português (Brasil)       |
@@ -228,25 +228,25 @@ Um dos códigos de idioma a seguir.
 | 0x0406 | Dinamarquês              | 0x041A | Croato-Serbian (latino)    |
 | 0x0407 | Alemão              | 0x041B | Eslovaco                    |
 | 0x0408 | Grego               | 0x041C | Albanês                  |
-| 0x0409 | Inglês americano        | 0x041D | Sueco                   |
-| 0x040A | Castelhano espanhol   | 0x041E | Tailandês                      |
+| 0x0409 | Inglês dos EUA        | 0x041D | Sueco                   |
+| 0x040A | Castiliano espanhol   | 0x041e | Tailandês                      |
 | 0x040B | Finlandês             | 0x041F | Turco                   |
 | 0x040C | Francês              | 0x0420 | Urdu                      |
 | 0x040D | Hebraico              | 0x0421 | Bahasa                    |
 | 0x040E | Húngaro           | 0x0804 | Chinês simplificado        |
-| 0x040F | Islandês           | 0x0807 | Alemão suíço              |
-| 0x0410 | Italiano             | 0x0809 | Inglaterra Inglês              |
+| 0x040F | Islandês           | 0x0807 | Alemão alemão              |
+| 0x0410 | Italiano             | 0x0809 | Reino Unido Inglês              |
 | 0x0411 | Japonês            | 0x080A | Espanhol (México)          |
-| 0x0412 | Coreano              | 0x080C | Francês belga            |
+| 0x0412 | Coreano              | 0x080C | Francês francês francês            |
 | 0x0413 | Holandês               | 0x0C0C | Francês do Canadá           |
-| 0x0414 | Norueguês? Bokmal  | 0x100C | Francês suíço              |
-| 0x0810 | Italiano suíço       | 0x0816 | Português (Portugal)     |
-| 0x0813 | Holandês belga       | 0x081A | Serbo-Croatian (cirílico) |
+| 0x0414 | Norueguês? Bokmal  | 0x100C | Francês francês              |
+| 0x0810 | Italiano italiano       | 0x0816 | Português (Portugal)     |
+| 0x0813 | Holandês holandês       | 0x081A | Serbo-Croatian (cirílico) |
 | 0x0814 | Norueguês? Nynorsk |        |                           |
 
 
 
- 
+ 
 
 </dd> <dt>
 
@@ -260,13 +260,13 @@ Um dos seguintes identificadores de conjunto de caracteres.
 | Decimal | Hexadecimal | Conjunto de caracteres              |
 |---------|-------------|----------------------------|
 | 0       | 0000        | ASCII de 7 bits                |
-| 932     | 03A4        | Japão (Shift? JIS X-0208) |
-| 949     | 03B5        | Coreia (Shift? KS 5601)   |
+| 932     | 03A4        | Japão (Shift ? JIS X-0208) |
+| 949     | 03B5        | Coreia do Sul (Shift ? KSC 5601)   |
 | 950     | 03B6        | Taiwan (Big5)              |
 | 1200    | 04B0        | Unicode                    |
-| 1250    | 04E2        | Latim-2 (Europa Oriental) |
+| 1250    | 04E2        | Latin-2 (Leste da Europa) |
 | 1251    | 04E3        | Cirílico                   |
-| 1252    | 04E4        | Multilíngüe               |
+| 1252    | 04E4        | Multilingue               |
 | 1253    | 04E5        | Grego                      |
 | 1254    | 04E6        | Turco                    |
 | 1255    | 04E7        | Hebraico                     |
@@ -274,11 +274,11 @@ Um dos seguintes identificadores de conjunto de caracteres.
 
 
 
- 
+ 
 
 </dd> <dt>
 
-<span id="string-name"></span><span id="STRING-NAME"></span>*nome da cadeia de caracteres*
+<span id="string-name"></span><span id="STRING-NAME"></span>*string-name*
 </dt> <dd>
 
 Um dos nomes predefinidos a seguir.
@@ -302,7 +302,7 @@ Um dos nomes predefinidos a seguir.
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -376,6 +376,6 @@ END
 [Informações sobre versão](./version-information.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

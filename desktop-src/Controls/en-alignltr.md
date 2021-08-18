@@ -3,7 +3,7 @@ title: EN_ALIGNLTR código de notificação (RichEdit. h)
 description: Notifica uma janela pai do controle de edição rico que a direção do parágrafo foi alterada da esquerda para a direita. Um controle de edição rico envia esse código de notificação na forma de uma \_ mensagem de comando do WM.
 ms.assetid: 754ac2b5-bcec-487b-a1ab-b653f673830a
 keywords:
-- EN_ALIGNLTR de código de notificação controles do Windows
+- EN_ALIGNLTR código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f55c20a9ae4efb3ba5758ed0740b20b8b57f3877
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 884f2750501dc1670d2f8e0497a196276571328809d295a687b3518a34b38ec2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009206"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019444"
 ---
 # <a name="en_alignltr-notification-code"></a>\_Código de notificação en ALIGNLTR
 
@@ -53,7 +53,7 @@ Manipular para o controle de edição rico.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Este código de notificação não retorna um valor.
 
@@ -63,9 +63,9 @@ Este código de notificação não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

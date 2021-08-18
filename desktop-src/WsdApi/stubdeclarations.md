@@ -4,12 +4,12 @@ ms.assetid: d43baeff-c941-4ce9-a6ae-8aa61ef44048
 title: elemento stubDeclarations
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1543883b4d41e7571cd4a4725e2aeab181530d30
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 846cea00438a5e2571e0e5c6a2b4af2a5ec519071ece2fa3570e0281fc9a22b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107996403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991586"
 ---
 # <a name="stubdeclarations-element"></a>elemento stubDeclarations
 
@@ -33,7 +33,7 @@ Não há atributos.
 
 | Elemento                                   | Descrição                                                                                      |
 |-------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [**LostFocus**](events.md)<br/>       | Especifica se os eventos relacionados estão incluídos nas funções geradas.<br/> <br/> |
+| [**events**](events.md)<br/>       | Especifica se os eventos relacionados estão incluídos nas funções geradas.<br/> <br/> |
 | [**operacional**](operation.md)<br/> | Especifica uma operação para a qual o código deve ser gerado.<br/> <br/>                 |
 | [**portType**](porttype.md)<br/>   | Especifica o tipo de porta para o qual o código deve ser gerado.<br/> <br/>                |
 
@@ -63,7 +63,7 @@ Não há atributos.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

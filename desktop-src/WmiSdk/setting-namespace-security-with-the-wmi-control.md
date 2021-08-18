@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Definindo a segurança do namespace com o controle WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f8e8b6ed7c45b6b0d107f7f4e4b92f31f504900
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f97971e09897f8fa744f72d5ad0da59dc2292ebe7ceb88f6500e3c30e124db0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105807906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992346"
 ---
 # <a name="setting-namespace-security-with-the-wmi-control"></a>Definindo a segurança do namespace com o controle WMI
 
@@ -35,7 +35,7 @@ O procedimento a seguir descreve como usar o controle WMI para configurar a segu
 3.  No painel **controle WMI** , clique com o botão direito do mouse em **controle WMI**, escolha **Propriedades** e, em seguida, selecione a guia **segurança** .
 4.  Navegue até o novo namespace, clique em **segurança** e, em seguida, configure grupos e permissões para o namespace.
 
-Você também pode usar Instrumentação de Gerenciamento do Windows Command-Line ([WMIC](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754534(v=ws.11))) para definir a segurança do namespace. Para obter mais informações, consulte [**WMIC**](wmic.md).
+você também pode usar Instrumentação de Gerenciamento do Windows Command-Line ([WMIC](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc754534(v=ws.11))) para definir a segurança do namespace. Para obter mais informações, consulte [**WMIC**](wmic.md).
 
 ## <a name="setting-the-default-namespace-for-scripts"></a>Definindo o namespace padrão para scripts
 

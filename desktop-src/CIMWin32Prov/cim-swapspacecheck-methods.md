@@ -1,23 +1,23 @@
 ---
-description: A \_ classe CIM SwapSpaceCheck expõe os métodos a seguir.
+description: A classe \_ SWAPSpaceCheck cim expõe os métodos a seguir.
 ms.assetid: 09149D0A-9AB8-4582-9976-371278E851D0
 ms.tgt_platform: multiple
-title: Métodos de CIM_SwapSpaceCheck
+title: Métodos CIM_SwapSpaceCheck de CIM_SwapSpaceCheck
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e599b4bf94b0aa695dd48a2b885eda806fbb6253
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b25aaa12a3c1d56bccb99fb8aeac201286419174fb0cb26da0d50d8a0c9325c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020894"
 ---
-# <a name="cim_swapspacecheck-methods"></a>\_Métodos CIM SwapSpaceCheck
+# <a name="cim_swapspacecheck-methods"></a>Métodos CIM \_ SwapSpaceCheck
 
-A classe [**CIM \_ SwapSpaceCheck**](cim-swapspacecheck.md) expõe os métodos a seguir.
+A [**classe \_ SWAPSpaceCheck**](cim-swapspacecheck.md) cim expõe os métodos a seguir.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 

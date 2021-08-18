@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 63e69d12d47f90ba40f5cc785d8b864c40158774
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9137fdd33f59eb841a54e84a6d12bb0b08968ac29c8737afbf56f66c57176c20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965639"
 ---
 # <a name="iwiadevmgr2registereventcallbackclsid-method"></a>Método IWiaDevMgr2:: RegisterEventCallbackCLSID
 
@@ -78,18 +78,18 @@ Especifica um identificador de dispositivo. Passe **NULL** para registrar o even
 *pEventGUID* \[ no\]
 </dt> <dd>
 
-Tipo: **const GUID \** _
+Tipo: **GUID \* const**
 
 Especifica o evento para o qual o aplicativo está se registrando. Para obter uma lista de eventos padrão, consulte [identificadores de evento WIA](-wia-wia-event-identifiers.md).
 
 </dd> <dt>
 
-_pClsID * \[ in\]
+*pCLSID* \[ no\]
 </dt> <dd>
 
-Tipo: **const GUID \** _
+Tipo: **GUID \* const**
 
-Ponteiro para a ID de classe do aplicativo (_ * CLSID * *). O sistema de tempo de execução WIA 2,0 usa o **CLSID** do aplicativo para iniciar o aplicativo quando ocorre um evento no qual ele está registrado.
+Ponteiro para a ID de classe do aplicativo (**CLSID**). O sistema de tempo de execução WIA 2,0 usa o **CLSID** do aplicativo para iniciar o aplicativo quando ocorre um evento no qual ele está registrado.
 
 </dd> <dt>
 
@@ -120,7 +120,7 @@ Especifica o nome de um arquivo de imagem a ser usado para o ícone do aplicativ
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -147,9 +147,9 @@ Se o aplicativo não for um componente COM (Component Object Model registrado) e
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                             |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                             |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl> |
 
 
 

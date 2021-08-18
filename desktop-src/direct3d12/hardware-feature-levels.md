@@ -10,12 +10,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d464f6cc52539e31fee5e234af2c045dfff7e413
-ms.sourcegitcommit: 218b1ff779402c3ebe1786679e1aa80a5c0d6c95
+ms.openlocfilehash: bf069baca3d9ff56c0d3d98e79bb553df7e8acf1fadf7b5888c5b5d211f7a874
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "104548205"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119124144"
 ---
 # <a name="hardware-feature-levels"></a>Níveis de recursos de hardware
 
@@ -64,11 +64,11 @@ Os títulos na linha superior são os níveis de recurso do Direct3D. Os cabeça
 | Modelo de Sombreador                                                                                                             | 5.1                       | 5.1                       | 5,1 ²                     | 5,1 ²                     |
 | [Camada de associação de recursos](hardware-support.md)                                                                            | Tier2 ³                    | Tier2 ³                    | Nível 1 ³                   | Nível 1 ³                   |
 | [Recursos em ladrilho](/windows/desktop/api/d3d12/ne-d3d12-d3d12_tiled_resources_tier)                                                                        | Tier2 ³                    | Tier2 ³                    | Opcional                 | Opcional                 |
-| [Rasterização conservadora](conservative-rasterization.md)                                                             | Nível 1 ³                    | Opcional                  | Opcional                 | Não                       |
-| [Exibições ordenadas do rasterizador](rasterizer-order-views.md)                                                                   | Sim                       | Opcional                  | Opcional                 | Não                       |
+| [Rasterização conservativa](conservative-rasterization.md)                                                             | Nível 1 ³                    | Opcional                  | Opcional                 | Não                       |
+| [Modos de exibição ordenados do rasterizador](rasterizer-order-views.md)                                                                   | Sim                       | Opcional                  | Opcional                 | Não                       |
 | [Filtros mín./máx.](/windows/desktop/api/d3d12/ne-d3d12-d3d12_filter)                                                                                      | Sim                       | Sim                       | Opcional                 | Não                       |
 | Mapear buffer padrão                                                                                                       | Opcional                  | Opcional                  | Opcional                 | Opcional                 |
-| [Valor de referência de estêncil especificado do sombreador](shader-specified-stencil-reference-value.md)                                 | Opcional                  | Opcional                  | Opcional                 | Não                       |
+| [Valor de referência de estêncil especificado pelo sombreador](shader-specified-stencil-reference-value.md)                                 | Opcional                  | Opcional                  | Opcional                 | Não                       |
 | [Cargas de exibição de acesso não ordenado digitado](typed-unordered-access-view-loads.md)                                               | 18 formatos, mais opcional | 18 formatos, mais opcional | 3 formatos, mais opcionais | 3 formatos, mais opcionais |
 | [Sombreador de geometria](/previous-versions//bb205146(v=vs.85)) | Sim                       | Sim                       | Sim                      | Sim                      |
 | [Saída de fluxo](/windows/desktop/direct3d11/d3d10-graphics-programming-guide-output-stream-stage)                                            | Sim                       | Sim                       | Sim                      | Sim                      |
@@ -92,34 +92,34 @@ Os títulos na linha superior são os níveis de recurso do Direct3D. Os cabeça
 | Máximo de Slots de entrada                                                                                                          | 32                        | 32                        | 32                       | 32                       |
 | Destinos de renderização simultânea                                                                                              | 8                         | 8                         | 8                        | 8                        |
 | Consultas do oclusão                                                                                                        | Sim                       | Sim                       | Sim                      | Sim                      |
-| Separar alfa combinada                                                                                                     | Sim                       | Sim                       | Sim                      | Sim                      |
+| Combinação alfa separada                                                                                                     | Sim                       | Sim                       | Sim                      | Sim                      |
 | Espelhar uma vez                                                                                                              | Sim                       | Sim                       | Sim                      | Sim                      |
-| Sobrepondo elementos Vertex                                                                                              | Sim                       | Sim                       | Sim                      | Sim                      |
-| Máscaras de gravação independentes                                                                                                  | Sim                       | Sim                       | Sim                      | Sim                      |
+| Sobrepondo elementos de vértice                                                                                              | Sim                       | Sim                       | Sim                      | Sim                      |
+| Máscaras de Gravação Independentes                                                                                                  | Sim                       | Sim                       | Sim                      | Sim                      |
 | Instanciação                                                                                                               | Sim                       | Sim                       | Sim                      | Sim                      |
 
 
 
- 
+ 
 
--   ⁰ requer o tempo de execução do Direct3D 11,3 ou Direct3D 12.
--   ¹ requer o tempo de execução do Direct3D 11,1.
--   o modelo de sombreador ² 5,0 pode opcionalmente dar suporte a sombreadores de precisão dupla, sombreadores de precisão dupla estendida, instrução de sombreador **SAD4** e sombreadores de precisão parcial. Para determinar as opções do Shader Model 5,0 disponíveis, chame [**ID3D12Device:: CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport). Algumas compatibilidades dependem de qual hardware você está executando: o modelo do sombreador 5,1 tem suporte apenas em hardware que dá suporte à API DirectX 12, independentemente do nível de recurso que está sendo usado. O hardware DirectX 11 dá suporte apenas ao modelo do sombreador 5,0. A API DirectX 12 fica inativa apenas para o nível de recurso 11 \_ 0.
--   as camadas mais altas do ³ são opcionais.
--   Os níveis de recurso 12 \_ 0 e 12 \_ 1 exigem o tempo de execução do Direct3D 11,3 ou Direct3D 12.
--   O nível de recurso 11 \_ 1 requer o tempo de execução do Direct3D 11,1.
--   O nível de recurso 11 \_ 0 requer o tempo de execução do Direct3D 11,0.
+-   Requer o runtime direct3D 11.3 ou Direct3D 12.
+-   8 Requer o runtime do Direct3D 11.1.
+-   Opcionalmente, o modelo de sombreador 5.0 pode dar suporte a sombreadores de precisão dupla, sombreadores de precisão dupla estendidos, a instrução **sombreador SAD4** e sombreadores de precisão parcial. Para determinar as opções do modelo de sombreador 5.0 disponíveis, chame [**ID3D12Device::CheckFeatureSupport**](/windows/desktop/api/d3d12/nf-d3d12-id3d12device-checkfeaturesupport). Alguma compatibilidade depende de qual hardware você está executando: o modelo de sombreador 5.1 só tem suporte em hardware que dá suporte à API do DirectX 12, independentemente do nível de recurso que está sendo usado. O hardware do DirectX 11 dá suporte apenas ao modelo de sombreador 5.0. A API do DirectX 12 só vai para o nível de recurso 11 \_ 0.
+-   As camadas superiores são opcionais.
+-   Os níveis de recurso 12 0 e 12 1 exigem o \_ \_ runtime direct3D 11.3 ou Direct3D 12.
+-   O nível de recurso \_ 11 1 requer o runtime do Direct3D 11.1.
+-   O nível de recurso \_ 11 0 requer o runtime do Direct3D 11.0.
 
 ## <a name="hardware-support-for-dxgi-formats"></a>Suporte de hardware para formatos DXGI
 
-Para exibir tabelas de formatos de DXGI e recursos de hardware, consulte:
+Para exibir tabelas de formatos DXGI e recursos de hardware, consulte:
 
--   [Suporte ao formato DXGI para hardware 12,1 de nível de recurso Direct3D](/windows/desktop/direct3ddxgi/hardware-support-for-direct3d-12-1-formats)
--   [Suporte ao formato DXGI para hardware 12,0 de nível de recurso Direct3D](/windows/desktop/direct3ddxgi/hardware-support-for-direct3d-12-0-formats)
--   [Suporte ao formato DXGI para hardware 11,1 de nível de recurso Direct3D](/windows/desktop/direct3ddxgi/format-support-for-direct3d-11-1-feature-level-hardware)
--   [Suporte ao formato DXGI para hardware 11,0 de nível de recurso Direct3D](/windows/desktop/direct3ddxgi/format-support-for-direct3d-11-0-feature-level-hardware)
+-   [Suporte ao formato DXGI para hardware de nível de recurso 12.1 do Direct3D](/windows/desktop/direct3ddxgi/hardware-support-for-direct3d-12-1-formats)
+-   [Suporte ao formato DXGI para hardware de nível de recurso 12.0 do Direct3D](/windows/desktop/direct3ddxgi/hardware-support-for-direct3d-12-0-formats)
+-   [Suporte ao formato DXGI para hardware de nível de recurso 11.1 do Direct3D](/windows/desktop/direct3ddxgi/format-support-for-direct3d-11-1-feature-level-hardware)
+-   [Suporte ao formato DXGI para hardware de nível de recurso 11.0 do Direct3D](/windows/desktop/direct3ddxgi/format-support-for-direct3d-11-0-feature-level-hardware)
 -   [Suporte de hardware para formatos Direct3D 10Level9](/previous-versions//ff471324(v=vs.85))
--   [Suporte de hardware para formatos Direct3D 10,1](/previous-versions//cc627091(v=vs.85))
+-   [Suporte de hardware para formatos Direct3D 10.1](/previous-versions//cc627091(v=vs.85))
 -   [Suporte de hardware para formatos Direct3D 10](/previous-versions//cc627090(v=vs.85))
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -129,9 +129,9 @@ Para exibir tabelas de formatos de DXGI e recursos de hardware, consulte:
 [Consulta de funcionalidade](capability-querying.md)
 </dt> <dt>
 
-[Entendendo o Direct3D 12](directx-12-getting-started.md)
+[Introdução ao Direct3D 12](directx-12-getting-started.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

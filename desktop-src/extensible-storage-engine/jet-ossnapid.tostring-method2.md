@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 31f35df0e5d7e6939797a06da215ac7566380257
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 6246aa390a99db44bdfa6062b199978971c2f2ed859703a45cc51d6edc22788a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107665"
 ---
 # <a name="jet_ossnapidtostring-method"></a>JET_OSSNAPID. Método ToString
 
@@ -50,7 +50,7 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. String](/dotnet/api/system.string)  
 A estrutura como uma cadeia de caracteres.  

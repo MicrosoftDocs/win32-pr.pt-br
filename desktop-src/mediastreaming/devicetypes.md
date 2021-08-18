@@ -1,9 +1,9 @@
 ---
 title: Enumeração DeviceTypes
-description: Descreve os tipos de dispositivo DLNA que são suportados pela API de streaming de mídia.
+description: Descreve os tipos de dispositivo DLNA com suporte pela API de Streaming de Mídia.
 ms.assetid: ec6bbc1f-653a-414c-b458-1a5e1b101781
 keywords:
-- API de streaming de mídia de enumeração DeviceTypes
+- API de Streaming de Mídia de Enumeração DeviceTypes
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - IDLDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9caf60fa5736f9db442da5787746a49f71c61c89
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 969eb389a1216ec0e30f27a938ca4f5382397ac5489f87add87731b69824b87f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105798047"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100650"
 ---
 # <a name="devicetypes-enumeration"></a>Enumeração DeviceTypes
 
-Descreve os tipos de dispositivo DLNA que são suportados pela API de streaming de mídia.
+Descreve os tipos de dispositivo DLNA com suporte pela API de Streaming de Mídia.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,7 +43,7 @@ typedef enum DeviceTypes {
 
 <dl> <dt>
 
-<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Conhecidos**
+<span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconhecido**
 </dt> <dd>
 
 Tipo de dispositivo desconhecido.
@@ -53,21 +53,21 @@ Tipo de dispositivo desconhecido.
 <span id="DigitalMediaRenderer"></span><span id="digitalmediarenderer"></span><span id="DIGITALMEDIARENDERER"></span>**DigitalMediaRenderer**
 </dt> <dd>
 
-DMR (processador de mídia digital DLNA). O valor é equivalente ao tipo de dispositivo **urn: schemas-UPnP-org: Device: MediaRenderer: 1**.
+DMR (Renderização de Mídia Digital) DLNA. O valor é equivalente ao tipo de dispositivo **urn:schemas-upnp-org:device:MediaRenderer:1**.
 
 </dd> <dt>
 
 <span id="DigitalMediaServer"></span><span id="digitalmediaserver"></span><span id="DIGITALMEDIASERVER"></span>**DigitalMediaServer**
 </dt> <dd>
 
-Servidor de mídia digital DLNA (DMS). O valor é equivalente ao tipo de dispositivo **urn: schemas-UPnP-org: Device: MediaServer: 1**.
+DMS (Servidor de Mídia Digital) DLNA. O valor é equivalente ao tipo de **dispositivo urn:schemas-upnp-org:device:MediaServer:1**.
 
 </dd> <dt>
 
 <span id="DigitalMediaPlayer"></span><span id="digitalmediaplayer"></span><span id="DIGITALMEDIAPLAYER"></span>**DigitalMediaPlayer**
 </dt> <dd>
 
-Player de mídia digital DLNA
+Player de Mídia Digital da DLNA
 
 </dd> </dl>
 
@@ -77,7 +77,7 @@ Player de mídia digital DLNA
 
 | Requisito | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| INSERI<br/> | <dl> <dt>Windows. Media. streaming. idl (referência Windows. Media. streaming. idl)</dt> </dl> |
+| Idl<br/> | <dl> <dt>Windows. Media.Streaming.idl (referência Windows. Media.Streaming.idl)</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Estrutura D3DXCOLOR (D3dx9math. h) – descreve os valores de cor.
+description: Estrutura D3DXCOLOR (D3dx9math.h) – descreve valores de cor.
 ms.assetid: 53d3176a-f727-498e-8bea-0e30e0a1c66e
-title: Estrutura D3DXCOLOR (D3dx9math. h)
+title: Estrutura D3DXCOLOR (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: 58b02abc49b695169674a2579b73dc2359801a73
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 28f170814988317cd1cdf3300e4cbb3c2a97fa0fac7a43b2231767914a9b103a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108115924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988716"
 ---
-# <a name="d3dxcolor-structure-d3dx9mathh"></a>Estrutura D3DXCOLOR (D3dx9math. h)
+# <a name="d3dxcolor-structure-d3dx9mathh"></a>Estrutura D3DXCOLOR (D3dx9math.h)
 
-Descreve os valores de cor.
+Descreve valores de cor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ typedef struct D3DXCOLOR {
 **r**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -53,10 +53,10 @@ Componente vermelho da cor.
 
 </dd> <dt>
 
-**m**
+**G**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -67,7 +67,7 @@ Componente verde da cor.
 **b**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -75,10 +75,10 @@ Componente azul da cor.
 
 </dd> <dt>
 
-**um**
+**Um**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -88,7 +88,7 @@ Componente alfa da cor.
 
 ## <a name="remarks"></a>Comentários
 
-Os programadores de C++ podem aproveitar a sobrecarga de operador e a conversão de tipos com as [**extensões D3DXCOLOR**](d3dxcolor-extensions.md), que implementam construtores sobrecarregados, bem como operadores de atribuição, unários e binários (incluindo igualdade).
+Os programadores C++ podem aproveitar a sobrecarga do operador e a seleção de tipo com as Extensões [**D3DXCOLOR**](d3dxcolor-extensions.md), que implementam construtores sobrecarregados, bem como operadores de atribuição, unários e binários (incluindo igualdade).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,11 +96,11 @@ Os programadores de C++ podem aproveitar a sobrecarga de operador e a conversão
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

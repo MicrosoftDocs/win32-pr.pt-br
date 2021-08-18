@@ -3,7 +3,7 @@ title: Código de notificação de NM_CHAR (barra de ferramentas) (commctrl. h)
 description: Enviado por uma barra de ferramentas quando recebe uma \_ mensagem do WM Char. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 7bf0b046-da8e-448f-94e1-62ba0989f7ba
 keywords:
-- Código de notificação de NM_CHAR (barra de ferramentas) controles do Windows
+- código de notificação de NM_CHAR (barra de ferramentas) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5a68cb85130f22c8cda63920ada974453a36991
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a318c7385e9d7205ad0fa159e1f987c5d650d27414eefeed4d915c5544cb4564
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018934"
 ---
 # <a name="nm_char-toolbar-notification-code"></a>\_Código de notificação de caracteres nm (barra de ferramentas)
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMCHAR**](/windows/win32/api/commctrl/ns-commctrl
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **true** para indicar que a barra de ferramentas não deve processar o caractere e **false** para que a barra de ferramentas processe o caractere.
 
@@ -55,9 +55,9 @@ Retorna **true** para indicar que a barra de ferramentas não deve processar o c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

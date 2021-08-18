@@ -5,12 +5,12 @@ ms.assetid: 5C39E1E3-C0AD-4A55-A064-10E432557116
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c24b9214d0cfbc6aa72a67ec951fde95a950210
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 8d6608f3d2b6599e7a335a53115ccf36624e153b168b7523eeedb520c10cff99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119138339"
 ---
 # <a name="itssbsession-properties"></a>Propriedades de ITsSbSession
 
@@ -29,9 +29,9 @@ A interface [**ITsSbSession**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbsession)
 -   [**Propriedade TargetName**](itssbsession-targetname.md)
 -   [**Propriedade UserName**](itssbsession-username.md)
 
- 
+ 
 
- 
+ 
 
 
 

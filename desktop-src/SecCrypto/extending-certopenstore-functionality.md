@@ -4,19 +4,19 @@ ms.assetid: e5c7c882-cbfc-4343-952c-b13c67326756
 title: Estendendo a funcionalidade CertOpenStore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cce198578cc482ba0488bd97ae0f1d7f923511b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c770ae56ff597f51248486db2c9eb2d74bea8d63d2e8daad83d5938594b2f1a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104553116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007075"
 ---
 # <a name="extending-certopenstore-functionality"></a>Estendendo a funcionalidade CertOpenStore
 
 O [*repositório de certificados*](../secgloss/c-gly.md) é fundamental para todas as operações de gerenciamento de certificados. A funcionalidade da função [**CertOpenStore**](/windows/win32/api/Wincrypt/nf-wincrypt-certopenstore) pode ser estendida por meio do uso de uma função de provedor de repositório de certificados instalável (ou registrada). Para obter uma visão geral de como instalar ou registrar funções para usar com o CryptoAPI, consulte [visão geral de OID](oid-overview.md).
 
 > [!Note]  
-> Os repositórios de certificados personalizados não são migrados automaticamente ao executar implantações automatizadas. Para migrar repositórios de certificados personalizados, você deve criar um manifesto para migrar os repositórios personalizados e usar o Ferramenta de Migração do Usuário Windows (USMT). A USMT está disponível para download no centro de download da Microsoft em <https://www.microsoft.com/download/details.aspx?id=10837> .
+> Os repositórios de certificados personalizados não são migrados automaticamente ao executar implantações automatizadas. para migrar repositórios de certificados personalizados, você deve criar um manifesto para migrar os repositórios personalizados e usar o Ferramenta de Migração do Usuário Windows (USMT). A USMT está disponível para download no centro de download da Microsoft em <https://www.microsoft.com/download/details.aspx?id=10837> .
 
  
 
@@ -143,24 +143,24 @@ O \_ retorno de chamada de certificado de localização gratuita \_ é chamado q
 
 O \_ retorno de chamada obter propriedade de certificado \_ é chamado por [**CertGetCertificateContextProperty**](/windows/win32/api/Wincrypt/nf-wincrypt-certgetcertificatecontextproperty) se não for possível encontrar a propriedade especificada para o parâmetro *pCertContext* . O mesmo é verdadeiro para obter \_ a \_ propriedade de CRL e obter a \_ \_ Propriedade CTL.
 
-O \_ retorno de chamada Find CRL é chamado quando as APIs de armazenamento enumeram ou obtêm CRLs e antes da adição de uma CRL. Os seguintes tipos de localização de CRL serão definidos:
+O \_ retorno de chamada Find CRL é chamado quando as APIs de armazenamento enumeram ou obtêm CRLs e antes da adição de uma CRL. Os seguintes tipos de local de CRL serão definidos:
 
-Para a \_ localização da CRL \_ emitida \_ por, *pvFindPara* é um ponteiro para um [**\_ contexto de certificado**](/windows/win32/api/Wincrypt/ns-wincrypt-cert_context) do emissor da CRL. Para \_ Localizar CRL \_ existente, *pvFindPara* é um ponteiro para um [**\_ contexto de CRL**](/windows/win32/api/Wincrypt/ns-wincrypt-crl_context) da CRL para determinar se ele já existe no repositório.
+Para CRL \_ FIND \_ ISSUED \_ BY, *pvFindPara* é [**\_**](/windows/win32/api/Wincrypt/ns-wincrypt-cert_context) um ponteiro para um CONTEXTO DE CERTIFICADO do emissor da CRL. Para CRL \_ FIND \_ EXISTING, *pvFindPara* [**\_**](/windows/win32/api/Wincrypt/ns-wincrypt-crl_context) é um ponteiro para um CONTEXTO de CRL da CRL para determinar se ela já existe no armazenamento.
 
-O \_ retorno de chamada Find CTL é chamado quando as APIs de armazenamento enumeram ou localizam CTLs. Os tipos de localização de lista de certificados confiáveis a seguir têm suporte no [**CertFindCTLInStore**](/windows/win32/api/Wincrypt/nf-wincrypt-certfindctlinstore):
+O retorno \_ de chamada FIND CTL é chamado quando as APIs do armazenamento enumeram ou encontram CTLs. Os seguintes tipos de encontrar CTL têm suporte [**em CertFindCTLInStore:**](/windows/win32/api/Wincrypt/nf-wincrypt-certfindctlinstore)
 
--   CTL \_ localizar \_ qualquer
--   CTL \_ localizar \_ \_ hash SHA1
--   CTL \_ encontrar \_ \_ hash MD5
--   uso da lista de certificados confiáveis \_ \_
--   localização da lista de certificados confiáveis \_ \_
--   CTL \_ localizar \_ existente
+-   CTL \_ FIND \_ ANY
+-   CTL \_ FIND \_ SHA1 \_ HASH
+-   CTL \_ FIND \_ MD5 \_ HASH
+-   USO DE \_ CTL \_ FIND
+-   CTL \_ FIND \_ SUBJECT
+-   CTL \_ FIND \_ EXISTING
 
-O \_ retorno de chamada Find CTL é chamado para cada um dos tipos de localização acima. Os parâmetros passados para [**CertFindCTLInStore**](/windows/win32/api/Wincrypt/nf-wincrypt-certfindctlinstore) são copiados diretamente para o \_ repositório de certificados \_ Prov \_ localizar a estrutura de \_ informações antes de o \_ retorno de chamada Find CTL ser chamado. Para obter detalhes sobre os valores de campo para os diferentes tipos de localização do \_ repositório CERT \_ Prov \_ , encontre a estrutura de \_ informações, consulte **CertFindCTLInStore**.
+O retorno \_ de chamada FIND CTL é chamado para cada um dos tipos de encontrar acima. Os parâmetros passados [**para CertFindCTLInStore**](/windows/win32/api/Wincrypt/nf-wincrypt-certfindctlinstore) são copiados diretamente para a estrutura CERT STORE PROV FIND INFO antes que o retorno de chamada \_ FIND \_ \_ \_ \_ CTL seja chamado. Para obter detalhes sobre os valores de campo para os diferentes tipos de local da estrutura CERT \_ STORE \_ PROV \_ FIND \_ INFO, consulte **CertFindCTLInStore**.
 
-A CTL \_ localizar \_ tipo de localização de CTL existente ajuda a determinar se a CTL já existe no armazenamento antes de fazer uma CTL adicionar.
+O tipo de encontre CTL EXISTENTE ajuda a determinar se a CTL já existe no armazenamento antes \_ \_ de fazer uma ação de CTL.
 
-Para CTL \_ Find \_ existing, *pvFindPara* é um ponteiro para a estrutura de [**\_ contexto de CTL**](/windows/win32/api/Wincrypt/ns-wincrypt-ctl_context) da CTL para determinar se ele já existe no repositório.
+Para CTL \_ FIND \_ EXISTING, *pvFindPara* é um ponteiro para a estrutura [**CTL \_ CONTEXT**](/windows/win32/api/Wincrypt/ns-wincrypt-ctl_context) da CTL para determinar se ela já existe no armazenamento.
 
  
 

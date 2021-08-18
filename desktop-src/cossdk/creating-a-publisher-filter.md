@@ -1,17 +1,17 @@
 ---
-description: Criando um filtro de Publicador
+description: criando um filtro de Publisher
 ms.assetid: d91efecc-f02a-41c6-acf7-37b74723e7e8
-title: Criando um filtro de Publicador
+title: criando um filtro de Publisher
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 997fe37cf0021bcb2aa153c2dc4b73597e0c43cc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: d2cf3391cd331f7d81c3bb7ff467c140a78b0c8e30fb609ea655596dfe745a74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128788"
 ---
-# <a name="creating-a-publisher-filter"></a>Criando um filtro de Publicador
+# <a name="creating-a-publisher-filter"></a>criando um filtro de Publisher
 
 Há dois métodos para estabelecer o filtro de editor: usando a propriedade MultiPublisherFilterCLSID da classe de evento ou usando [**IEventControl:: SetPublisherFilter**](/windows/desktop/api/Eventsys/nf-eventsys-ieventcontrol-setpublisherfilter).
 

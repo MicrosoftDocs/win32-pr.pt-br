@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 5cf2610e-fbd2-4e87-a323-f024283db546
-ms.openlocfilehash: 389c07325f4e504424c43b0983eaa643ea608008
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: f26f5bb8bc8413c633bfe5a2757eceb7ccab9e32d411020b0bd113d4c4919f12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841608"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969445"
 ---
 # <a name="didiskquotauserid-property"></a>DIDiskQuotaUser.ID propriedade
 
@@ -49,8 +49,8 @@ Essa propriedade destina-se ao uso por linguagens como Microsoft Visual Basic qu
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, somente aplicativos da área de trabalho do Windows XP \[\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Somente aplicativos da área de trabalho do Windows Server 2003 \[\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 

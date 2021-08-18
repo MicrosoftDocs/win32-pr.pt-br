@@ -3,7 +3,7 @@ title: Elemento body
 description: O elemento body contém os elementos que definem o conteúdo de uma playlist.
 ms.assetid: 96d09635-c360-4a36-a56e-6cecbbd4ff30
 keywords:
-- Elemento body Windows Media Player
+- Elemento de corpo Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: eb30885efe9e018bf8792b38facdc086c5473b3f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4c785b7db7b44177469596450ee75a460e2bc6224b191a2811baf95380bea25a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135949"
 ---
 # <a name="body-element"></a>Elemento body
 
@@ -97,7 +97,7 @@ O conteúdo de uma lista de reprodução é organizado em um elemento **Seq** qu
 [**Elemento SMIL**](smil-element.md)
 </dt> <dt>
 
-[**Referência de elementos da playlist do Windows Media**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos de playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  

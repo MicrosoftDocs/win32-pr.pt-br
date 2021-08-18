@@ -1,9 +1,9 @@
 ---
-title: TEXT. hoverFontStyle
-description: O atributo hoverFontStyle especifica ou recupera o estilo de fonte usado para o controle de texto quando o cursor do mouse passa sobre ele.
+title: TEXT.hoverFontStyle
+description: O atributo hoverFontStyle especifica ou recupera o estilo de fonte usado para o controle Texto quando o cursor do mouse sobre ele.
 ms.assetid: 77ca8512-6150-4a75-8220-19de3fe9e719
 keywords:
-- TEXT. hoverFontStyle Windows Media Player
+- TEXT.hoverFontStyle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ebaeed6d9701b6e81ac91bc5292dc5b431aa70d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d04f2ae8e4231ca89f37a65e591271f2536679da649d1efd22ffc1063c89d17d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134619"
 ---
-# <a name="texthoverfontstyle"></a>TEXT. hoverFontStyle
+# <a name="texthoverfontstyle"></a>TEXT.hoverFontStyle
 
-O atributo **hoverFontStyle** especifica ou recupera o estilo de fonte usado para o controle de texto quando o cursor do mouse passa sobre ele.
+O **atributo hoverFontStyle** especifica ou recupera o estilo de fonte usado para o controle Texto quando o cursor do mouse sobre ele.
 
 ``` syntax
         elementID.hoverFontStyle
@@ -29,16 +29,16 @@ O atributo **hoverFontStyle** especifica ou recupera o estilo de fonte usado par
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém um ou mais dos valores a seguir.
+Esse atributo é uma Cadeia de **caracteres** de leitura/gravação que contém um ou mais dos valores a seguir.
 
 
 
 | Valor     | Descrição           |
 |-----------|-----------------------|
 | Negrito      | Estilo de fonte em negrito.      |
-| Itálico    | Estilo de fonte em itálico.    |
-| Underline | Sublinhar estilo da fonte. |
-| Riscado | Estilo da fonte de riscado. |
+| Itálico    | Estilo de fonte itálico.    |
+| Underline | Estilo de fonte sublinhado. |
+| Riscado | Estilo de fonte de ataque. |
 | Normal    | Estilo de fonte normal.    |
 
 
@@ -47,11 +47,11 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém 
 
 ## <a name="remarks"></a>Comentários
 
-Qualquer combinação dos valores pode ser usada, separada com espaços. O estilo normal tem prioridade sobre todos os outros valores, e quaisquer outros especificados juntamente com normal serão ignorados.
+Qualquer combinação dos valores pode ser usada, separada por espaços. O estilo Normal tem prioridade sobre todos os outros valores e quaisquer outros especificados junto com Normal serão ignorados.
 
-Se **hoverFontStyle** não for especificado, **FontStyle** será usado.
+Se **hoverFontStyle** não for especificado, **fontStyle** será usado.
 
-Consulte o atributo [Value](text-value.md) para ver um exemplo ilustrando como os atributos do elemento **Text** são usados.
+Consulte o [atributo value](text-value.md) para um exemplo que ilustra como os atributos do **elemento TEXT** são usados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Consulte o atributo [Value](text-value.md) para ver um exemplo ilustrando como o
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -67,10 +67,10 @@ Consulte o atributo [Value](text-value.md) para ver um exemplo ilustrando como o
 
 <dl> <dt>
 
-[**Elemento de texto**](text-element.md)
+[**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXT. fontStyle**](text-fontstyle.md)
+[**TEXT.fontStyle**](text-fontstyle.md)
 </dt> </dl>
 
  

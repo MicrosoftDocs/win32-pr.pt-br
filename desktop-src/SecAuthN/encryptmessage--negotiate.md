@@ -4,12 +4,12 @@ ms.assetid: b80b3d64-9c0a-4602-9378-1e208f6593fc
 title: Função EncryptMessage (Negotiate)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: 037866088f58fa1d70939b84062161a6e4f610b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4aac05a4ad030e72953cc997671b7d348cb2a598a0f56f80963f69847cdf357
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008304"
 ---
 # <a name="encryptmessage-negotiate-function"></a>Função EncryptMessage (Negotiate)
 
@@ -54,7 +54,7 @@ Os aplicativos que não usam SSL devem fornecer um [**SecBuffer**](/windows/win3
 
 *MessageSeqNo* \[ no \] número de sequência que o aplicativo de transporte atribuiu à mensagem. Se o aplicativo de transporte não mantiver números de sequência, esse parâmetro deverá ser zero.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com sucesso, a função retornará s \_ E \_ OK.
 
@@ -94,9 +94,9 @@ Para um desempenho ideal, as estruturas *PMessage* devem ser alocadas da memóri
 
 | Requisito | Valor |
 |--------------------------|-------------------------------------------------|
-| Cliente mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows XP\]                |
-| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2003\]       |
-| parâmetro                   | SSPI. h (incluir Security. h)                     |
+| Cliente mínimo com suporte | Windows \[Somente aplicativos da área de trabalho XP\]                |
+| Servidor mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]       |
+| Cabeçalho                   | SSPI. h (incluir Security. h)                     |
 | Biblioteca                  | Secur32. lib                                     |
 | DLL                      | Secur32.dll                                     |
 

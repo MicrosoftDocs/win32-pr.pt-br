@@ -1,10 +1,10 @@
 ---
-title: atributo gecos
-description: Contém as informações que são armazenadas no campo GECOS.
+title: Atributo gecos
+description: Contém as informações armazenadas no campo GECOS.
 ms.assetid: 017884a5-697f-481d-b119-075deb96fd6f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo gecos
+- Esquema do AD do atributo gecos
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37847f13f7b0d168907f11307b57e893949cc83b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: fad96c4e73808608a6175e42ba81b5115b6a84fe9daf2048b4d3d0fefdf8eb05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961365"
 ---
-# <a name="gecos-attribute"></a>atributo gecos
+# <a name="gecos-attribute"></a>Atributo gecos
 
-Contém as informações que são armazenadas no campo GECOS.
+Contém as informações armazenadas no campo GECOS.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | gecos                                |
-| LDAP-Display-Name | gecos                                |
+| CN                | Gecos                                |
+| Ldap-Display-Name | Gecos                                |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.2                      |
-| System-ID-GUID    | a3e03f1f-1d55-4253-a0af-30c2a784e46e |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | a3e03f1f-1d55-4253-a0af-30c2a784e46e |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -55,10 +55,10 @@ Contém as informações que são armazenadas no campo GECOS.
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| Tem valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
-| No catálogo global      | Falso                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
+| No Catálogo Global      | Falso                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
@@ -76,10 +76,10 @@ Contém as informações que são armazenadas no campo GECOS.
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| Tem valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
-| No catálogo global      | Falso                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
+| No Catálogo Global      | Falso                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
@@ -97,10 +97,10 @@ Contém as informações que são armazenadas no campo GECOS.
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| Tem valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
-| No catálogo global      | Falso                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
+| No Catálogo Global      | Falso                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                      |
 | Range-Lower            | \-                                                |
 | Range-Upper            | \-                                                |
 | Search-Flags           | 0x00000000                                        |
@@ -118,7 +118,7 @@ Contém as informações que são armazenadas no campo GECOS.
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| É de valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
 | No catálogo global      | Falso                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |

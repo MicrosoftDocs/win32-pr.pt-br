@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a9562fc94cc0d4253ce80f6bd494c818689c71a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e1761d0f3d846e44746bbb213233bd846ddd56de3b5ef16cd99b2dce5b4fabf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119093110"
 ---
 # <a name="folderitempath-property"></a>Propriedade FolderItem. Path
 
@@ -41,9 +41,9 @@ Uma variável do tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa o **caminho** para recuperar o caminho da pasta do Windows. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+o exemplo a seguir usa o **caminho** para recuperar o caminho da pasta Windows. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -148,7 +148,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

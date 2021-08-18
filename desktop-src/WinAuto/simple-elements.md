@@ -4,12 +4,12 @@ description: Um elemento simples é um elemento de interface do usuário que com
 ms.assetid: 3f6bd992-4e0a-4dba-b6e9-e70dca77c880
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8f8cb00b19719a4a8779a61f37b079633ada40c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9676b8bf4198f8be753b3788fcc6defdec2d6a1d8ad3ff3fed2f41da4f256554
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105811398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133639"
 ---
 # <a name="simple-elements"></a>Elementos simples
 
@@ -21,9 +21,9 @@ O objeto [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) co
 
 Para obter mais informações sobre objetos acessíveis, consulte [objetos acessíveis](accessible-objects.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,8 +1,8 @@
 ---
-description: O método CompressEx compacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método compress. Esse método é herdado do \_ LogicalFile CIM.
+description: O método CompressEx compacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método Compress. Esse método é herdado de CIM \_ LogicalFile.
 ms.assetid: a5f7b35b-5d52-4129-bf7e-6db5e0ff6852
 ms.tgt_platform: multiple
-title: Método CompressEx da classe CIM_DeviceFile
+title: Método CompressEx da classe CIM_DeviceFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 8e607497a8bb49d0a5926e5b50eb3310c671d9f4
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 628ce157039e86430a049d1c1efa3f4b083256bbc0e882873e53f59e316eea21
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826187"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020694"
 ---
-# <a name="compressex-method-of-the-cim_devicefile-class"></a>Método CompressEx da classe CIM \_ devicefile
+# <a name="compressex-method-of-the-cim_devicefile-class"></a>Método CompressEx da classe \_ DeviceFile CIM
 
-O método **CompressEx** compacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método [**compress**](compress-method-in-class-cim-devicefile.md) . Esse método é herdado [**do \_ LogicalFile CIM**](cim-logicalfile.md).
+O **método CompressEx** compacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do [**método Compress.**](compress-method-in-class-cim-devicefile.md) Esse método é herdado de [**CIM \_ LogicalFile.**](cim-logicalfile.md)
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,28 +49,28 @@ uint32 CompressEx(
 
 <dl> <dt>
 
-*StopFileName* \[ fora\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Cadeia de caracteres que representa o nome do arquivo (ou diretório) em que o método falhou. Esse parâmetro será **nulo** se o método tiver sucesso.
+Cadeia de caracteres que representa o nome do arquivo (ou diretório) em que o método falhou. Esse parâmetro será **nulo** se o método for bem-sucedido.
 
 </dd> <dt>
 
-*StartFileName* \[ no\]
+*StartFileName* \[ Em\]
 </dt> <dd>
 
-Cadeia de caracteres que representa o arquivo filho (ou diretório) a ser usado como ponto de partida para esse método. Normalmente, o parâmetro *StartFileName* é o parâmetro *StopFileName* que especifica o arquivo (ou diretório) no qual ocorreu um erro da chamada de método anterior. Se esse parâmetro for **nulo**, a operação será executada no arquivo (ou diretório) especificado na chamada de [**ExecMethod**](/windows/desktop/WmiSdk/swbemservices-execmethod) .
+Cadeia de caracteres que representa o arquivo filho (ou diretório) a ser usado como um ponto de partida para esse método. Normalmente, o *parâmetro StartFileName* é o parâmetro *StopFileName* que especifica o arquivo (ou diretório) no qual ocorreu um erro da chamada de método anterior. Se esse parâmetro for **nulo,** a operação será executada no arquivo (ou diretório) especificado na [**chamada ExecMethod.**](/windows/desktop/WmiSdk/swbemservices-execmethod)
 
 </dd> <dt>
 
-*Recursivo* \[ no\]
+*Recursivo* \[ Em\]
 </dt> <dd>
 
-Se **for true**, o método também será aplicado recursivamente a arquivos e diretórios dentro do diretório especificado pela instância do [**\_ dispositivo CIM**](cim-devicefile.md) . Para instâncias de arquivo, esse parâmetro é ignorado.
+Se **TRUE**, o método também será aplicado recursivamente a arquivos e diretórios dentro do diretório especificado pela [**instância de \_ DeviceFile cim.**](cim-devicefile.md) Para instâncias de arquivo, esse parâmetro é ignorado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) em caso de êxito e qualquer outro número para indicar um erro.
 
@@ -90,7 +90,7 @@ Sucesso.
 
 2
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -195,9 +195,9 @@ Parâmetro inválido.
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está implementado no momento pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
+Atualmente, esse método não é implementado pelo WMI. Para usar esse método, você deve implementá-lo em seu próprio provedor.
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -207,8 +207,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -217,10 +217,10 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[\_Dispositivo CIM](compressex-method-in-class-cim-devicefile.md)
+[CIM \_ DeviceFile](compressex-method-in-class-cim-devicefile.md)
 </dt> <dt>
 
-[**\_Dispositivo CIM**](cim-devicefile.md)
+[**CIM \_ DeviceFile**](cim-devicefile.md)
 </dt> </dl>
 
  

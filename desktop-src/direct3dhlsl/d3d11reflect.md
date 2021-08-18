@@ -3,7 +3,7 @@ title: Função D3D11Reflect
 description: Obtém um ponteiro para uma interface de reflexão.
 ms.assetid: 855097c7-988b-4ab6-90c5-e5dd0bc9e1e0
 keywords:
-- HLSL da função D3D11Reflect
+- Função D3D11Reflect HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e54a1f388ebb122398ad33c3a8d942496fa55393
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 44b980d955dcd37197c8d8ed05a6602025d1e21731ca6d22302b76cc2f2e53da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104091995"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986876"
 ---
 # <a name="d3d11reflect-function"></a>Função D3D11Reflect
 
@@ -39,7 +39,7 @@ HRESULT D3D11Reflect(
 
 <dl> <dt>
 
-*pSrcData* \[ no\]
+*pSrcData* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](/windows/desktop/WinProg/windows-data-types)**
@@ -48,33 +48,33 @@ Um ponteiro para dados de origem como código HLSL compilado.
 
 </dd> <dt>
 
-*SrcDataSize* \[ no\]
+*SrcDataSize* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **tamanho \_ T**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **SIZE \_ T**](/windows/desktop/WinProg/windows-data-types)**
 
-Comprimento de *pSrcData*.
+Comprimento de *pSrcData.*
 
 </dd> <dt>
 
-*ppReflector* \[ fora\]
+*ppReflector* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3D11ShaderReflection**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection)\*\***
 
-O endereço de um ponteiro para a interface [**ID3D11ShaderReflection**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection) .
+O endereço de um ponteiro para a interface [**ID3D11ShaderReflection.**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](/windows/desktop/WinProg/windows-data-types)**
 
-Retorna um dos códigos de retorno descritos no tópico [códigos de retorno do Direct3D 11](/windows/desktop/direct3d11/d3d11-graphics-reference-returnvalues).
+Retorna um dos códigos de retorno descritos no tópico Códigos de retorno [do Direct3D 11.](/windows/desktop/direct3d11/d3d11-graphics-reference-returnvalues)
 
 ## <a name="remarks"></a>Comentários
 
-A função de compilador **D3D11Reflect** embutida é um wrapper para a função de compilador [**D3DReflect**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dreflect) . **D3D11Reflect** pode recuperar apenas uma interface [**ID3D11ShaderReflection**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection) de um sombreador. O **D3DReflect** pode recuperar uma interface **ID3D11ShaderReflection** ou uma interface de reflexão direct3d 10 ou Direct3D 10,1, por exemplo, [**ID3D10ShaderReflection**](/windows/desktop/api/d3d10shader/nn-d3d10shader-id3d10shaderreflection).
+A função do **compilador D3D11Reflect** em linha é um wrapper para a função do compilador [**D3DReflect.**](/windows/win32/api/d3dcompiler/nf-d3dcompiler-d3dreflect) **D3D11Reflect** pode recuperar apenas uma interface [**ID3D11ShaderReflection**](/windows/desktop/api/d3d11shader/nn-d3d11shader-id3d11shaderreflection) de um sombreador. **D3DReflect** pode recuperar uma interface **ID3D11ShaderReflection** ou uma interface de reflexão Direct3D 10 ou Direct3D 10.1, por [**exemplo, ID3D10ShaderReflection**](/windows/desktop/api/d3d10shader/nn-d3d10shader-id3d10shaderreflection).
 
 O código do sombreador contém metadados que podem ser inspecionados usando as APIs de reflexão.
 
@@ -98,9 +98,9 @@ D3D11Reflect( pPixelShaderBuffer->GetBufferPointer(), pPixelShaderBuffer->GetBuf
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DCompiler. inl</dt> </dl>     |
-| Biblioteca<br/> | <dl> <dt>D3dcompiler \_ 47. lib</dt> </dl> |
-| DLL<br/>     | <dl> <dt>\_47.dllD3dcompiler</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DCompiler.inl</dt> </dl>     |
+| Biblioteca<br/> | <dl> <dt>D3dcompiler \_ 47.lib</dt> </dl> |
+| DLL<br/>     | <dl> <dt>D3dcompiler \_47.dll</dt> </dl> |
 
 
 

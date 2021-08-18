@@ -3,19 +3,19 @@ title: Implementando DoProcessOutput
 description: Implementando DoProcessOutput
 ms.assetid: c6fbcfc0-741b-4aa7-9109-e06810a2e081
 keywords:
-- Plug-ins do Windows Media Player, DSP de áudio
+- plug-ins Windows Media Player, DSP de áudio
 - plug-ins, DSP de áudio
 - plug-ins de processamento de sinal digital, DoProcessOutput
 - Plug-ins do DSP, DoProcessOutput
 - plug-ins do DSP de áudio, DoProcessOutput
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f68562444a3a8f0bfacad26fc5246181d33cefa2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fc2f5aa1a952f16de196bed72ed7ac93dfac95d8333496824e3f0740f506a6fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135579"
 ---
 # <a name="implementing-doprocessoutput"></a>Implementando DoProcessOutput
 
@@ -67,7 +67,7 @@ Para processar dados de áudio, você precisará executar várias etapas em **Do
 
     
 
-    – ou –
+    -ou-
 
     ```C++
     // For 16-bit audio.
@@ -101,9 +101,9 @@ Para processar dados de áudio, você precisará executar várias etapas em **Do
 [**Implementando um plug-in do DSP de áudio**](implementing-an-audio-dsp-plug-in.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

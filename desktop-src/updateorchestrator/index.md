@@ -3,18 +3,18 @@ title: Atualizar a API do Orchestrator
 description: O UpdateOrchestrator agenda as atualizações automáticas de software com o impacto do usuário em mente.
 ms.date: 01/14/2021
 ms.topic: overview
-ms.openlocfilehash: a172cccdc56d2c645bb4e7d048066ca34aea07ba
-ms.sourcegitcommit: 9c8ddec1e955f181beecad0478c1fb79013b5e9d
+ms.openlocfilehash: 6460446397af168a4098a7203179d5587d4dcd9a3cea813991648a5083d07334
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "103837527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966089"
 ---
 # <a name="updateorchestrator-api"></a>API UpdateOrchestrator
 
 O **UpdateOrchestrator** agenda as atualizações automáticas de software com o impacto do usuário em mente. Essa API permite que você agende o download e as instalações automáticos, juntamente com seus requisitos, para executar atualizações em um momento ideal que minimize o impacto do usuário presente. Esses recursos particularmente beneficiam os sistemas de desempenho menores com recursos de computação limitados ou mais lentos.
 
-O Windows 19H1 inclui uma solução de primeira geração para casos de uso de atualização automática de software que foram adotados por atualizações do sistema operacional e armazenam atualizações de aplicativos e expõem uma versão inicial de ' acesso limitado ' dessa API para um conjunto selecionado de atualizadores dos aplicativos ' modo de usuário ', conforme descrito abaixo.
+Windows 19H1 inclui uma solução de primeira geração para casos de uso de atualização automática de software que foram adotados por atualizações do sistema operacional e armazenam atualizações de aplicativos e expõe uma versão inicial de ' acesso limitado ' dessa API para um conjunto selecionado de atualizadores dos aplicativos ' modo de usuário ', conforme descrito abaixo.
 
 ## <a name="features"></a>Recursos
 
@@ -31,7 +31,7 @@ O Windows 19H1 inclui uma solução de primeira geração para casos de uso de a
 > [!IMPORTANT]
 > Atualmente, a API UpdateOrchestrator é um [recurso de acesso limitado](/uwp/api/windows.applicationmodel.limitedaccessfeatures). Essa API ficará disponível publicamente em uma versão futura.
 
-Use a API do UpdateOrchestrator se você já tiver atualizadores de software em segundo plano para aplicativos de ' modo de usuário ' do Win32, como o atualizador da Adobe para leitor Acrobat ou de válvula. Essa interface não é necessária para aplicativos UWP/Store, pois o Microsoft Store já aproveita essa funcionalidade para atualizações de software.
+Use a API do UpdateOrchestrator se você já tiver atualizadores de software em segundo plano para aplicativos de ' modo de usuário ' do Win32, como o atualizador da Adobe para leitor Acrobat ou de válvula. essa interface não é necessária para aplicativos UWP/Store, pois o Microsoft Store já aproveita essa funcionalidade para atualizações de software.
 
 Para fornecer a melhor experiência do cliente, essa versão inicial da API tem como escopo um conjunto selecionado de atualizadores registrados que atendem aos seguintes critérios:
 
@@ -42,5 +42,5 @@ Para fornecer a melhor experiência do cliente, essa versão inicial da API tem 
 
 Essa API pode ser modificada significativamente antes da liberação pública.   Embora a API do UpdateOrchestrator esteja em desenvolvimento, essa versão inicial como recurso de acesso limitado é apenas para atualizadores que atendem aos critérios acima neste momento.
 
-Nosso objetivo é melhorar a funcionalidade dessa API e reduzir o impacto de vários atualizadores de software automáticos no Windows. Agradecemos sua opinião por essa [**breve pesquisa**](https://aka.ms/UOAPISurvey) para nos ajudar a entender como a API do UpdateOrchestrator pode atender melhor às suas necessidades de desenvolvedor.
+Nosso objetivo é melhorar a funcionalidade dessa API e reduzir o impacto de vários atualizadores de software automáticos em Windows. Agradecemos sua opinião por essa [**breve pesquisa**](https://aka.ms/UOAPISurvey) para nos ajudar a entender como a API do UpdateOrchestrator pode atender melhor às suas necessidades de desenvolvedor.
 

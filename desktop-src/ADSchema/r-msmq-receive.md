@@ -1,10 +1,10 @@
 ---
-title: MSMQ-recebimento estendido à direita
-description: Permite receber mensagens da fila.
+title: msmq-Receive estendido direito
+description: Permite o recebimento de mensagens da fila.
 ms.assetid: 8c889542-f30a-4580-8dfb-96594f7d6ad6
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-receber esquema do AD estendido à direita
+- Esquema do AD estendido msmq-Receive
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7984a2517bce5e30ac1ee48dc5523e4de5a84b2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3f403de565e7e976f16d2e0c016ae8651fe2bc1c6481b76ff4f6caae68350f1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021654"
 ---
-# <a name="msmq-receive-extended-right"></a>MSMQ-recebimento estendido à direita
+# <a name="msmq-receive-extended-right"></a>msmq-Receive estendido direito
 
-Permite receber mensagens da fila.
+Permite o recebimento de mensagens da fila.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | MSMQ-receber                         |
-| Display-Name | Receber mensagem                      |
-| GUID de direitos  | 06bd3200-df3e-11d1-9c86-006008764d0e |
+| CN           | msmq-Receive                         |
+| Display-Name | Receber Mensagem                      |
+| RIGHTS-GUID  | 06bd3200-df3e-11d1-9c86-006008764d0e |
 
 
 
@@ -50,7 +50,7 @@ Permite receber mensagens da fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localização-exibição-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -61,7 +61,7 @@ Permite receber mensagens da fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localização-exibição-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -72,7 +72,7 @@ Permite receber mensagens da fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localização-exibição-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -83,7 +83,7 @@ Permite receber mensagens da fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localização-exibição-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -94,7 +94,7 @@ Permite receber mensagens da fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localização-exibição-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 
@@ -105,7 +105,7 @@ Permite receber mensagens da fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localização-exibição-ID | 42                                           |
+| Localization-Display-ID | 42                                           |
 
 
 

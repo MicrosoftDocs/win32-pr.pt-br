@@ -4,12 +4,12 @@ ms.assetid: 1ad77adb-5960-4965-bddb-5967b982b034
 title: HCRYPTPROV_OR_NCRYPT_KEY_HANDLE (Wincrypt. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bbd442b93cdb9ba7479878aa9fcad095b7903af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 982ab2a37c1a2d6035f76cac5c55dcdae44c4cf38f86138c52590c73724b53e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105770338"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006334"
 ---
 # <a name="hcryptprov_or_ncrypt_key_handle"></a>\_identificador de chave HCRYPTPROV ou \_ NCRYPT \_ \_
 
@@ -28,9 +28,9 @@ typedef ULONG_PTR HCRYPTPROV_OR_NCRYPT_KEY_HANDLE;
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Wincrypt. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Wincrypt. h</dt> </dl> |
 
 
 

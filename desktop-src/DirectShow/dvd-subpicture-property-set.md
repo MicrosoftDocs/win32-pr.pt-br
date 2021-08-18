@@ -4,12 +4,12 @@ ms.assetid: ddbfb65c-7630-4e9f-8013-c5d65c62c628
 title: Conjunto de propriedades de subimagem de DVD (DVDMedia. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a45b83595e8657ee0c60f39cd67f2d0e4c71511
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 7293e38665fc59cf47b44e6466302655afd2ccf2a909034afd803201f6ea5a78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148689"
 ---
 # <a name="dvd-subpicture-property-set"></a>Conjunto de propriedades de subimagem de DVD
 
@@ -19,7 +19,7 @@ As informações a seguir apresentam as constantes e os tipos de dados necessár
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------|----------------------------|
 | GUID do Conjunto de Propriedades | \_KSPROPSETID \_ DvdSubPic |
 
@@ -31,7 +31,7 @@ As informações a seguir apresentam as constantes e os tipos de dados necessár
 
 | ID da propriedade                           | Descrição                                                                                                                                                                                                                                                                                                                                                              |
 |---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_ \_ \_ composição \_ de DVDSUBPIC da propriedade am | Propriedade somente definição que habilita ou desabilita a exibição de subimagem. O DirectShow define **a \_ composição da propriedade am \_ \_ no** tipo de dados booliano para essa propriedade, bem como a \_ composição da propriedade \_ do Pam \_ como um ponteiro para esse tipo de dados. **Verdadeiro** indica que a subimagem é exibida, **falso** indica desabilitá-la. Consulte a parte WDM do Windows DDK para obter mais informações. |
+| \_ \_ \_ composição \_ de DVDSUBPIC da propriedade am | Propriedade somente definição que habilita ou desabilita a exibição de subimagem. DirectShow define a **\_ composição da propriedade AM \_ \_ no** tipo de dados booliano para essa propriedade, bem como a \_ \_ composição da propriedade do PAM \_ como um ponteiro para esse tipo de dados. **Verdadeiro** indica que a subimagem é exibida, **falso** indica desabilitá-la. consulte a parte WDM do Windows DDK para obter mais informações. |
 | \_Propriedade am \_ DVDSUBPIC \_ HLI          | Propriedade somente definição que especifica um retângulo de subimagem ou tela cuja cor ou contraste será alterado. O tipo de dados é [**\_ propriedade \_ SPHLI**](/previous-versions/windows/desktop/api/Dvdmedia/ns-dvdmedia-am_property_sphli). Consulte Observações.                                                                                                                                                                                |
 | \_ \_ paleta DVDSUBPIC da propriedade am \_      | Define a paleta para uma subimagem. O tipo de dados é [**\_ propriedade \_ SPPAL**](/previous-versions/windows/desktop/api/Dvdmedia/ns-dvdmedia-am_property_sppal).                                                                                                                                                                                                                                                                        |
 

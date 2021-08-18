@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método GetVersion.
+description: Função proxy para o método GetVersion.
 ms.assetid: b064b065-bc02-4943-b208-ce5e40c12aa2
-title: Função IWICComponentInfo_GetVersion_Proxy
+title: IWICComponentInfo_GetVersion_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: bad3677068802861bce9c0c7d0c1b03e5d06d0db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a781aacbe0b5b9dd35a94c2ce906ee546e0b1da6b426a6848b6aafed2721cb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965215"
 ---
-# <a name="iwiccomponentinfo_getversion_proxy-function"></a>\_Função de proxy GetVersion do IWICComponentInfo \_
+# <a name="iwiccomponentinfo_getversion_proxy-function"></a>Função \_ proxy GetVersion IWICComponentInfo \_
 
-Função de proxy para o método [**GetVersion**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getversion) .
+Função proxy para o [**método GetVersion.**](/windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getversion)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,47 +43,47 @@ HRESULT IWICComponentInfo_GetVersion_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
-Tipo: **[**IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) \** _
+Tipo: **[ **IWICComponentInfo**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)\***
 
-Ponteiro para este objeto [_ *IWICComponentInfo* *](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo) .
+Ponteiro para este [**objeto IWICComponentInfo.**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo)
 
 </dd> <dt>
 
-*cchVersion* \[ no\]
+*cchVersion* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-O tamanho do buffer *wzVersion* .
+O tamanho do buffer *wzVersion.*
 
 </dd> <dt>
 
-*wzVersion* \[ entrada, saída\]
+*wzVersion* \[ in, out\]
 </dt> <dd>
 
-Tipo: **WCHAR \** _
+Tipo: **WCHAR \***
 
 Um ponteiro que recebe uma cadeia de caracteres invariável de cultura da versão do componente.
 
 </dd> <dt>
 
-_pcchActual * \[ out\]
+*pcchActual* \[ out\]
 </dt> <dd>
 
-Tipo: **uint \** _
+Tipo: **UINT \***
 
 Um ponteiro que recebe o comprimento real da versão do componente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -93,9 +93,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

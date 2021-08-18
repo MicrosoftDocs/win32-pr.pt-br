@@ -4,18 +4,18 @@ ms.assetid: 17e3c779-91ba-4901-9435-b73dedbf0b89
 title: Enumerando dispositivos de bateria
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d610feda8fd312bbefe2742da50d82a664a8ce2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28ed27979ca8b6abdb8015da58a9b6205f9ee3123cd4a82ccf7bd9c121e10441
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105769296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143549"
 ---
 # <a name="enumerating-battery-devices"></a>Enumerando dispositivos de bateria
 
-Para enumerar os dispositivos de bateria em um computador local, use a função [SetupDiGetClassDevs](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) . O parâmetro *ClassGuid* é um ponteiro para **a \_ \_ bateria GUID DEVCLASS** (definida em BatClass. h). Para enumerar todas as baterias, defina o parâmetro *Enumerator* como **nulo** e defina o parâmetro *flags* como **DIGCF \_ presente** \| **DIGCF \_ INTERFACEDEVICE**. Para obter os nomes dos dispositivos de bateria, use as funções [SetupDiEnumDeviceInterfaces](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) e [SetupDiGetDeviceInterfaceDetail](https://msdn.microsoft.com/library/ms792901.aspx) nos dados retornados. Para abrir um identificador de arquivo para cada um dos dispositivos de bateria, chame a função [**CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) com esses nomes.
+Para enumerar os dispositivos de bateria em um computador local, use a [função SetupDiGetClassDevs.](/windows/win32/api/setupapi/nf-setupapi-setupdigetclassdevsw) O *parâmetro ClassGuid* é um ponteiro para **GUID \_ DEVCLASS \_ BATTERY** (definido emClass.h). Para enumerar todas as baterias, de definir o parâmetro *Enumerador* como **NULL** e definir o parâmetro *Flags* como **DIGCF \_ PRESENT** \| **DIGCF \_ INTERFACEDEVICE**. Para obter os nomes dos dispositivos de bateria, use as funções [SetupDiEnumDeviceInterfaces](/windows/win32/api/setupapi/nf-setupapi-setupdienumdeviceinterfaces) e [SetupDiGetDeviceInterfaceDetail](https://msdn.microsoft.com/library/ms792901.aspx) nos dados retornados. Para abrir uma alça de arquivo para cada um dos dispositivos de bateria, chame a [**função CreateFile**](/windows/desktop/api/fileapi/nf-fileapi-createfilea) com esses nomes.
 
-O exemplo de C++ a seguir mostra como enumerar dispositivos de bateria em um computador local.
+O exemplo C++ a seguir mostra como enumerar dispositivos de bateria em um computador local.
 
 
 ```C++
@@ -174,7 +174,7 @@ DWORD GetBatteryState()
 
 
 
-Para enumerar os dispositivos de bateria conectados a um computador remoto, use a classe WMI de [**\_ bateria do Win32**](/windows/desktop/CIMWin32Prov/win32-battery) em um script ou aplicativo de cliente.
+Para enumerar os dispositivos de bateria conectados a um computador remoto, use a classe WMI de bateria [**Win32 \_**](/windows/desktop/CIMWin32Prov/win32-battery) em um script ou aplicativo cliente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -189,13 +189,13 @@ Para enumerar os dispositivos de bateria conectados a um computador remoto, use 
 [SetupDiGetDeviceInterfaceDetail](https://msdn.microsoft.com/library/ms792901.aspx)
 </dt> <dt>
 
-[**\_marca de \_ consulta da bateria do IOCTL \_**](ioctl-battery-query-tag.md)
+[**MARCA DE \_ CONSULTA IOCTL BATTERY \_ \_**](ioctl-battery-query-tag.md)
 </dt> <dt>
 
-[**\_informações de \_ consulta da bateria do IOCTL \_**](ioctl-battery-query-information.md)
+[**INFORMAÇÕES DE CONSULTA DA BATERIA IOCTL \_ \_ \_**](ioctl-battery-query-information.md)
 </dt> <dt>
 
-[**\_status de \_ consulta da bateria do IOCTL \_**](ioctl-battery-query-status.md)
+[**STATUS DA CONSULTA DA BATERIA DE IOCTL \_ \_ \_**](ioctl-battery-query-status.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 40aa7ba317b7ba7c3f7a06cce87ef57c2906fe4b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: f3f9de6ee28077b5206a9783ef7722864a479e1e5f26b78e4402ac79c6e4be5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105747262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984006"
 ---
 # <a name="servernames-servervalidationparameters-element-peap"></a>Elemento servernames (ServerValidationParameters) (PEAP)
 
@@ -44,8 +44,8 @@ Cada nome de servidor é delimitado por ponto e vírgula e pode ser representado
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

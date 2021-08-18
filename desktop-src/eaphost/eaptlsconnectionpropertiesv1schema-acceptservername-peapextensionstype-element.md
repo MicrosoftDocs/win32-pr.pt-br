@@ -1,6 +1,6 @@
 ---
 title: TLSExtensions (esquema v1)
-description: Saiba mais sobre o elemento TLSExtensions (EapType). Esse elemento permite aprimoramentos futuros no esquema.
+description: Saiba mais sobre o elemento TLSExtensions (EapType). Esse elemento permite aprimoramentos futuros para o esquema.
 ms.assetid: f968d91d-e226-44a9-98db-347cbedfa201
 keywords:
 - elemento EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 886f1ab2a6f00a4a8a9d530fa41865b2fd0cf0b8
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 245fcac23de64c6f392cccfbacf1def48fc6465c0f1fbaf7fc004ac628f5864c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105789925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984196"
 ---
 # <a name="tlsextensions-v1-schema"></a>TLSExtensions (esquema v1)
 
-O elemento **TLSExtensions (EapType)** permite aprimoramentos futuros no esquema.
+O **elemento TLSExtensions (EapType)** permite aprimoramentos futuros para o esquema.
 
 ``` syntax
 <xs:element
@@ -33,11 +33,11 @@ O elemento **TLSExtensions (EapType)** permite aprimoramentos futuros no esquema
  />
 ```
 
-O elemento é definido pelo elemento [**EapType**](eaptlsconnectionpropertiesv1schema-eaptype-element.md) .
+O elemento é definido pelo elemento [**EapType.**](eaptlsconnectionpropertiesv1schema-eaptype-element.md)
 
 ## <a name="remarks"></a>Comentários
 
-O elemento **TLSExtensions** é opcional.
+O **elemento TLSExtensions** é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,8 +45,8 @@ O elemento **TLSExtensions** é opcional.
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -75,7 +75,7 @@ O elemento **TLSExtensions** é opcional.
 [Esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-schema.md)
 </dt> <dt>
 
-[Elementos do esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-elements.md)
+[Elementos de esquema eaptlsconnectionpropertiesv1](eaptlsconnectionpropertiesv1schema-elements.md)
 </dt> <dt>
 
 [**TLSExtensions (TLSExtensionsType)**](eaptlsconnectionpropertiesv2schema-performservervalidation-eaptype-element.md)

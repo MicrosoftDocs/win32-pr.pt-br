@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETIMEMODEBIAS (RichEdit. h)
-description: Recupera o ajuste do modo IME (editor de método de entrada) para um controle de edição rico da Microsoft.
+title: EM_GETIMEMODEBIAS mensagem (Richedit.h)
+description: Recupera o desvio de modo do IME (Editor de Método de Entrada) para um controle Microsoft Rich Edit.
 ms.assetid: e8ca899f-3423-4814-86e9-133dfd11f9a6
 keywords:
-- Controles de EM_GETIMEMODEBIAS de mensagens do Windows
+- EM_GETIMEMODEBIAS controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea13e151ae9d487340ee440e3b123ae70b437a02
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 49ad5504ca2e5ac1a332657c4f539c9f983292617b6e74b949598488ceb38dfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019534"
 ---
-# <a name="em_getimemodebias-message"></a>\_Mensagem em GETIMEMODEBIAS
+# <a name="em_getimemodebias-message"></a>Mensagem EM \_ GETIMEMODEBIAS
 
-Recupera o ajuste do modo IME (editor de método de entrada) para um controle de edição rico da Microsoft.
+Recupera o desvio de modo do IME (Editor de Método de Entrada) para um controle Microsoft Rich Edit.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -43,15 +43,15 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Essa mensagem retorna a configuração de ajuste do modo IME atual.
+Essa mensagem retorna a configuração de desvio de modo IME atual.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter a tendência do modo de estrutura de serviços de texto, use em [**\_ GETCTFMODEBIAS**](em-getctfmodebias.md).
+Para obter o desvio Estrutura de Serviços de Texto modo de uso, use [**EM \_ GETCTFMODEBIAS**](em-getctfmodebias.md).
 
-O aplicativo deve chamar [**em \_ ISIME**](em-isime.md) antes de chamar essa função.
+O aplicativo deve chamar [**EM \_ ISIME antes**](em-isime.md) de chamar essa função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ O aplicativo deve chamar [**em \_ ISIME**](em-isime.md) antes de chamar essa fun
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP com SP1\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP1\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -72,10 +72,10 @@ O aplicativo deve chamar [**em \_ ISIME**](em-isime.md) antes de chamar essa fun
 **Referência**
 </dt> <dt>
 
-[**em \_ ISIME**](em-isime.md)
+[**EM \_ ISIME**](em-isime.md)
 </dt> <dt>
 
-[**em \_ GETCTFMODEBIAS**](em-getctfmodebias.md)
+[**EM \_ GETCTFMODEBIAS**](em-getctfmodebias.md)
 </dt> </dl>
 
  

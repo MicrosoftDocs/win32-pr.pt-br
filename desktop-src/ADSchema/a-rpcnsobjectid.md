@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 30aa2ceefb95edb0f70be3cabbea8b76a4863337
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 30aed84b3a25041cf10525310682b3f04eb84abdf232391f98614f44e085ca77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104009844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022254"
 ---
 # <a name="rpc-ns-object-id-attribute"></a>atributo RPC-NS-Object-ID
 
@@ -59,7 +59,7 @@ As IDs de objeto exportadas por um determinado servidor.
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
 | É de valor único       | Falso                                                                                   |
-| É indexado             | True                                                                                    |
+| É indexado             | Verdadeiro                                                                                    |
 | No catálogo global      | Falso                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                            |
 | Range-Lower            | \-                                                                                      |
@@ -80,7 +80,7 @@ As IDs de objeto exportadas por um determinado servidor.
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
 | É de valor único       | Falso                                                                                   |
-| É indexado             | True                                                                                    |
+| É indexado             | Verdadeiro                                                                                    |
 | No catálogo global      | Falso                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                            |
 | Range-Lower            | \-                                                                                      |
@@ -101,7 +101,7 @@ As IDs de objeto exportadas por um determinado servidor.
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
 | É de valor único       | Falso                                                                                   |
-| É indexado             | True                                                                                    |
+| É indexado             | Verdadeiro                                                                                    |
 | No catálogo global      | Falso                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                            |
 | Range-Lower            | \-                                                                                      |
@@ -121,15 +121,15 @@ As IDs de objeto exportadas por um determinado servidor.
 | ID do link                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| É de valor único       | Falso                                                                                   |
-| É indexado             | True                                                                                    |
-| No catálogo global      | Falso                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                            |
+| Tem valor único       | Falso                                                                                   |
+| É indexado             | Verdadeiro                                                                                    |
+| No Catálogo Global      | Falso                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classes usadas em        | [**Grupo de RPC**](c-rpcgroup.md)<br/> [**Servidor RPC**](c-rpcserver.md)<br/> |
+| Classes usadas em        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ As IDs de objeto exportadas por um determinado servidor.
 | ID do link                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| É de valor único       | Falso                                                                                   |
-| É indexado             | True                                                                                    |
-| No catálogo global      | Falso                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                            |
+| Tem valor único       | Falso                                                                                   |
+| É indexado             | Verdadeiro                                                                                    |
+| No Catálogo Global      | Falso                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classes usadas em        | [**Grupo de RPC**](c-rpcgroup.md)<br/> [**Servidor RPC**](c-rpcserver.md)<br/> |
+| Classes usadas em        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ As IDs de objeto exportadas por um determinado servidor.
 | ID do link                | \-                                                                                      |
 | MAPI-Id                | \-                                                                                      |
 | System-Only            | Falso                                                                                   |
-| É de valor único       | Falso                                                                                   |
-| É indexado             | True                                                                                    |
-| No catálogo global      | Falso                                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                            |
+| Tem valor único       | Falso                                                                                   |
+| É indexado             | Verdadeiro                                                                                    |
+| No Catálogo Global      | Falso                                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                            |
 | Range-Lower            | \-                                                                                      |
 | Range-Upper            | \-                                                                                      |
 | Search-Flags           | 0x00000001                                                                              |
 | System-Flags           | 0x00000010                                                                              |
-| Classes usadas em        | [**Grupo de RPC**](c-rpcgroup.md)<br/> [**Servidor RPC**](c-rpcserver.md)<br/> |
+| Classes usadas em        | [**rpc-Group**](c-rpcgroup.md)<br/> [**rpc-Server**](c-rpcserver.md)<br/> |
 
 
 

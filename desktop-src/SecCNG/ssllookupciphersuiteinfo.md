@@ -1,7 +1,7 @@
 ---
-description: Recupera as informações do pacote de codificação para um protocolo especificado, um conjunto de codificação e um conjunto de tipos de chave.
+description: Recupera as informações do conjunto de criptografias para um protocolo, conjunto de criptografias e conjunto de tipos de chave especificados.
 ms.assetid: ab995d9a-48fa-491a-95b1-d15c5b92f1da
-title: Função SslLookupCipherSuiteInfo (Sslprovider. h)
+title: Função SslLookupCipherSuiteInfo (Sslprovider.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Ncrypt.dll
-ms.openlocfilehash: 7aff6c9e08351ce771669535a98ec817bfc4aaf5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf56f199ae0d367517558a12a0e84bf8ce26e7bdf5f70625b878066152d0b696
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118905605"
 ---
 # <a name="ssllookupciphersuiteinfo-function"></a>Função SslLookupCipherSuiteInfo
 
-A função **SslLookupCipherSuiteInfo** recupera as informações do pacote de codificação para um protocolo especificado, o conjunto de codificação e o conjunto de tipos de chave.
+A **função SslLookupCipherSuiteInfo** recupera as informações do conjunto de criptografias para um protocolo, conjunto de criptografias e conjunto de tipos de chave especificados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,61 +44,61 @@ SECURITY_STATUS WINAPI SslLookupCipherSuiteInfo(
 
 <dl> <dt>
 
-*hSslProvider* \[ no\]
+*hSslProvider* \[ Em\]
 </dt> <dd>
 
-O identificador para a instância do provedor de protocolo de protocolo de [*protocolo SSL*](/windows/desktop/SecGloss/s-gly) (SSL).
+O handle para a [*instância do provedor protocolo SSL protocolo*](/windows/desktop/SecGloss/s-gly) SSL.
 
 </dd> <dt>
 
-*dwProtocol* \[ no\]
+*dwProtocol* \[ Em\]
 </dt> <dd>
 
-Um dos valores do [**identificador do protocolo do provedor de SSL CNG**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx) .
+Um dos valores [**do Identificador de Protocolo do Provedor SSL CNG.**](https://msdn.microsoft.com/library/Hh971257(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwCipherSuite* \[ no\]
+*dwCipherSuite* \[ Em\]
 </dt> <dd>
 
-Um dos valores dos [**identificadores do pacote de codificação do provedor de SSL CNG**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx) .
+Um dos valores de Identificadores do Pacote de [**Criptografia do Provedor SSL CNG.**](https://msdn.microsoft.com/library/Hh971253(v=VS.85).aspx)
 
 </dd> <dt>
 
-*dwKeyType* \[ no\]
+*dwKeyType* \[ Em\]
 </dt> <dd>
 
-Um dos valores dos [**identificadores de tipo de chave do provedor de SSL CNG**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx) .
+Um dos valores de Identificadores de Tipo de Chave do Provedor [**SSL CNG.**](https://msdn.microsoft.com/library/Hh971256(v=VS.85).aspx)
 
 </dd> <dt>
 
-*pCipherSuite* \[ fora\]
+*pCipherSuite* \[ out\]
 </dt> <dd>
 
-O endereço de um buffer que contém uma estrutura de [**\_ pacote de \_ criptografia \_ de SSL NCRYPT**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**) na qual gravar as informações do pacote de codificação.
+O endereço de um buffer que contém uma estrutura [**NCRYPT \_ SSL \_ CIPHER \_ SUITE**](https://www.bing.com/search?q=**NCRYPT\_SSL\_CIPHER\_SUITE**) na qual gravar as informações do conjunto de criptografias.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado para uso futuro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, ela retornará zero.
+Se a função for bem-sucedida, ela retornará zero.
 
-Se a função falhar, ela retornará um valor de erro diferente de zero.
+Se a função falhar, ela retornará um valor de erro diferentes de zero.
 
-Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
+Os possíveis códigos de retorno incluem, mas não estão limitados a, o seguinte.
 
 
 
-| Código/valor de retorno                                                                                                                                                    | Description                                        |
+| Valor/código de retorno                                                                                                                                                    | Descrição                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| <dl> <dt>**Nte \_ \_Identificador inválido**</dt> <dt>0x80090026L</dt> </dl> | O identificador *hSslProvider* não é válido.<br/> |
+| <dl> <dt>**NTE \_ HANDLE \_ INVÁLIDO**</dt> <dt>0x80090026L</dt> </dl> | O *alça hSslProvider* não é válido.<br/> |
 
 
 
@@ -110,9 +110,9 @@ Os códigos de retorno possíveis incluem, mas não se limitam a, o seguinte.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Sslprovider. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| parâmetro<br/>                   | <dl> <dt>Sslprovider.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ncrypt.dll</dt> </dl>    |
 
 

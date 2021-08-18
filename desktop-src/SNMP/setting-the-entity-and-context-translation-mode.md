@@ -4,12 +4,12 @@ description: O aplicativo WinSNMP pode especificar a interpretação e a traduç
 ms.assetid: 2550f235-1351-440a-8b4e-f0d30b058229
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a50b5ecfb1a4703795f970f5d7c13ceaa3d64980
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ab459c0b33ffe1cc43c81858b57ec55942f61f2b5b736ca0124f31f52cc960d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009054"
 ---
 # <a name="setting-the-entity-and-context-translation-mode"></a>Definindo a entidade e o modo de tradução de contexto
 
@@ -29,15 +29,15 @@ Os modos de validação de entidade e contexto válidos são os seguintes.
 
 
 
- 
+ 
 
 A implementação tenta associar recursos em seu banco de dados com o endereço de transporte literal da entidade de gerenciamento.
 
 Para alterar a entidade e o modo de tradução do contexto, a configuração de um aplicativo WinSNMP deve chamar a função [**SnmpSetTranslateMode**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpsettranslatemode) . Se o modo de tradução solicitado for inválido, a função falhará e [**SnmpGetLastError**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpgetlasterror) retornará o código de erro snmpapi \_ modo \_ inválido.
 
- 
+ 
 
- 
+ 
 
 
 

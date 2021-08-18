@@ -3,7 +3,7 @@ title: Mensagem de CB_GETITEMDATA (WinUser. h)
 description: Um aplicativo envia uma \_ mensagem GETITEMDATA CB para uma caixa de combinação para recuperar o valor fornecido pelo aplicativo associado ao item especificado na caixa de combinação.
 ms.assetid: 433b7f75-2831-4919-b931-c17ba651d145
 keywords:
-- Controles de CB_GETITEMDATA de mensagens do Windows
+- controles de Windows de mensagem de CB_GETITEMDATA
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 643954cf266c52ccbeae082ffacf317c91bc7b33
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8427e666668303456d16c00ae460a608a51bc31cd59e0ee6fa6851031057695b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644638"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019924"
 ---
 # <a name="cb_getitemdata-message"></a>\_Mensagem de GETITEMDATA CB
 
@@ -43,7 +43,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é o valor associado ao item. Se ocorrer um erro, será CB \_ Err.
 
@@ -55,9 +55,9 @@ Se o item estiver em uma caixa de combinação desenhada pelo proprietário cria
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

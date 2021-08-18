@@ -1,6 +1,6 @@
 ---
 title: Exemplo de gatilho de inicialização (script)
-description: Este exemplo de script mostra como criar uma tarefa que está agendada para executar o bloco de notas quando o sistema é inicializado.
+description: este exemplo de script mostra como criar uma tarefa que está agendada para executar Bloco de notas quando o sistema é inicializado.
 ms.assetid: 73ae9cc4-ef89-4390-ac05-8a773f45fa46
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,29 +9,29 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 72b7735c607dfc39b848532a70e4d24b1a14d346
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ff02bef70b4003c4e7b6e9aff03e2d615f24d7e15707cddcae3a4637ff2b11f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002514"
 ---
 # <a name="boot-trigger-example-scripting"></a>Exemplo de gatilho de inicialização (script)
 
-Este exemplo de script mostra como criar uma tarefa que está agendada para executar o bloco de notas quando o sistema é inicializado. A tarefa contém um gatilho de inicialização que especifica um limite inicial e um tempo de atraso para a tarefa ser iniciada depois que o sistema é inicializado. A tarefa também contém uma ação que especifica a tarefa para executar o bloco de notas. A tarefa é registrada usando a conta de serviço local como um contexto de segurança para executar a tarefa.
+este exemplo de script mostra como criar uma tarefa que está agendada para executar Bloco de notas quando o sistema é inicializado. A tarefa contém um gatilho de inicialização que especifica um limite inicial e um tempo de atraso para a tarefa ser iniciada depois que o sistema é inicializado. a tarefa também contém uma ação que especifica a tarefa a ser executada Bloco de notas. A tarefa é registrada usando a conta de serviço local como um contexto de segurança para executar a tarefa.
 
-O procedimento a seguir descreve como agendar um executável, como o bloco de notas, para iniciar quando o sistema for inicializado.
+o procedimento a seguir descreve como agendar um executável, como Bloco de notas para iniciar quando o sistema é inicializado.
 
-**Para agendar o bloco de notas para iniciar quando o sistema for inicializado**
+**para agendar Bloco de notas iniciar quando o sistema for inicializado**
 
 1.  Crie um objeto [**TaskService**](taskservice.md) . Esse objeto permite que você crie a tarefa em uma pasta especificada.
 2.  Obter uma pasta de tarefas e criar uma tarefa. Use o método [**TaskService. GetFolder**](taskservice-getfolder.md) para obter a pasta onde a tarefa está armazenada e o método [**TaskService. NewTask**](taskservice-newtask.md) para criar o objeto [**TaskDefinition**](taskdefinition.md) que representa a tarefa.
-3.  Defina informações sobre a tarefa usando o objeto [**TaskDefinition**](taskdefinition.md) . Use a propriedade [**TaskDefinition. Settings**](taskdefinition-settings.md) para definir as configurações que determinam como o serviço de Agendador de tarefas executa a tarefa e a propriedade [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir as informações que descrevem a tarefa.
+3.  Defina informações sobre a tarefa usando o objeto [**TaskDefinition**](taskdefinition.md) . Use a propriedade [**TaskDefinition. Configurações**](taskdefinition-settings.md) para definir as configurações que determinam como o serviço de Agendador de Tarefas executa a tarefa e a propriedade [**TaskDefinition. RegistrationInfo**](taskdefinition-registrationinfo.md) para definir as informações que descrevem a tarefa.
 4.  Crie um gatilho de logon usando a propriedade [**TaskDefinition. Triggers**](taskdefinition-triggers.md) . Esta propriedade fornece acesso ao objeto [**TriggerCollection**](triggercollection.md) . Use o método [**TriggerCollection. Create**](triggercollection-create.md) (especificando o tipo de gatilho que você deseja criar) para criar um gatilho de inicialização. Ao criar o gatilho, defina as propriedades [**StartBoundary**](trigger-startboundary.md) e [**endboundal**](trigger-endboundary.md) do gatilho para ativar e desativar o gatilho. Você também pode especificar um valor para a propriedade [**Delay**](boottrigger-delay.md) do gatilho de inicialização.
 5.  Crie uma ação para a tarefa Executar usando a propriedade [**TaskDefinition. Actions**](taskdefinition-actions.md) . Essa propriedade fornece acesso ao objeto [**ActionCollection**](actioncollection.md) . Use o método [**ActionCollection. Create**](actioncollection-create.md) para especificar o tipo de ação que você deseja criar. Este exemplo usa um objeto [**execaction**](execaction.md) , que representa uma ação que inicia um executável.
 6.  Registre a tarefa usando o método [**TaskFolder. RegisterTaskDefinition**](taskfolder-registertaskdefinition.md) . A tarefa é registrada usando a conta de serviço local como um contexto de segurança para executar a tarefa.
 
-O exemplo de VBScript a seguir mostra como agendar uma tarefa para executar o bloco de notas 30 segundos após a inicialização do sistema.
+o exemplo de VBScript a seguir mostra como agendar uma tarefa para execução Bloco de notas 30 segundos após a inicialização do sistema.
 
 
 ```VB
@@ -128,9 +128,9 @@ WScript.Echo "Task submitted."
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

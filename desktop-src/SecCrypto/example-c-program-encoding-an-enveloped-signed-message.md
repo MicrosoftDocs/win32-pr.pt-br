@@ -1,31 +1,31 @@
 ---
-description: Cria, assina e envelope uma mensagem.
+description: Cria, assina e envelere uma mensagem.
 ms.assetid: 1d9d8a7a-0088-41a7-98fe-4f0e9cb21f31
-title: 'Programa C de exemplo: codificando uma mensagem envelopada e assinada'
+title: 'Exemplo de programa C: codificando uma mensagem enveloada assinada'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c5ae8008794dc7f8fa32f39543cf2ddc61827bd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da56213c11d0cd6d7241ff60c1f77252f1e21682feff9f5913e0a43fdaf3034b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007734"
 ---
-# <a name="example-c-program-encoding-an-enveloped-signed-message"></a>Programa C de exemplo: codificando uma mensagem envelopada e assinada
+# <a name="example-c-program-encoding-an-enveloped-signed-message"></a>Exemplo de programa C: codificando uma mensagem enveloada assinada
 
-O exemplo a seguir cria, assina e envelope uma mensagem e ilustra as seguintes tarefas e funções de [*CryptoAPI*](../secgloss/c-gly.md) :
+O exemplo a seguir cria, assina e envelila uma mensagem e ilustra as seguintes tarefas e [*funções CryptoAPI:*](../secgloss/c-gly.md)
 
--   Adquirindo o identificador de um CSP usando [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
--   Abrir um armazenamento do sistema usando o [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
--   Localizar um signatário e certificados de destinatário usando [**CertFindCertificateInStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore).
--   Inicializando estruturas de dados apropriadas para assinar uma mensagem envelopada.
--   Localizando o tamanho da mensagem envelopada usando [**CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength).
--   Criar e assinar a mensagem usando [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)e [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
--   Enveloping a mensagem assinada e codificada para um receptor usando [**CryptMsgOpenToEncode**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode), [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)e [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
+-   Adquirir o handle de um CSP usando [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta).
+-   Abrir um repositório do sistema usando [**CertOpenStore**](/windows/desktop/api/Wincrypt/nf-wincrypt-certopenstore).
+-   Localizar um signante e certificados de destinatário usando [**CertFindCertificateInStore.**](/windows/desktop/api/Wincrypt/nf-wincrypt-certfindcertificateinstore)
+-   Inicializar estruturas de dados apropriadas para assinar uma mensagem enveloada.
+-   Localizar o comprimento da mensagem envelheçada [**usando CryptMsgCalculateEncodedLength**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgcalculateencodedlength).
+-   Criar e assinar a mensagem [**usando CryptMsgOpenToEncode,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode) [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)e [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
+-   Envolvendo a mensagem assinada e codificada para um receptor usando [**CryptMsgOpenToEncode,**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgopentoencode) [**CryptMsgUpdate**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsgupdate)e [**CryptMsgGetParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptmsggetparam).
 
-Este exemplo falhará se uma chave privada utilizável não existir no [*contêiner de chave*](../secgloss/k-gly.md)padrão. Se a chave privada necessária não estiver disponível, o código usando [**CryptAcquireCertificatePrivateKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecertificateprivatekey), conforme demonstrado no exemplo de código [C Program: enviar e receber uma mensagem assinada e criptografada](example-c-program-sending-and-receiving-a-signed-and-encrypted-message.md), poderá ser usado.
+Este exemplo falhará se uma chave privada acessível não existir no contêiner de [*chave padrão*](../secgloss/k-gly.md). Se a chave privada necessária não estiver disponível, o código usando [**CryptAcquireCertificatePrivateKey**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecertificateprivatekey), conforme demonstrado no exemplo de código Programa [C de exemplo:](example-c-program-sending-and-receiving-a-signed-and-encrypted-message.md)enviando e recebendo uma mensagem assinada e criptografada, poderá ser usado.
 
-Este exemplo usa a função [**MyHandleError**](myhandleerror.md). O código para essa função está incluído no exemplo. O código para essa e outras funções auxiliares também está listado em [funções uso geral](general-purpose-functions.md).
+Este exemplo usa a [**função MyHandleError**](myhandleerror.md). O código para essa função está incluído no exemplo. O código para essa e outras funções auxiliares também é listado [em Uso Geral Functions](general-purpose-functions.md).
 
 
 ```C++

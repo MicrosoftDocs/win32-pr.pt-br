@@ -1,7 +1,7 @@
 ---
 description: Cria uma instância adicional da interface IEnumWiaItem2 e envia de volta um ponteiro para ela.
 ms.assetid: 0d36d555-d0d9-4a1c-ac54-de611850449c
-title: 'Método IEnumWiaItem2:: clone (WIA. h)'
+title: Método IEnumWiaItem2::Clone (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 3279e7db3efe66e940adbcb9677204e5df7867f0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21c94c634a6930f28f48cdc35a4d3cf199b8fa33e9fb5f08444797fd76f50c45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965845"
 ---
-# <a name="ienumwiaitem2clone-method"></a>Método IEnumWiaItem2:: clone
+# <a name="ienumwiaitem2clone-method"></a>Método IEnumWiaItem2::Clone
 
 Cria uma instância adicional da interface [**IEnumWiaItem2**](-wia-ienumwiaitem2.md) e envia de volta um ponteiro para ela.
 
@@ -39,24 +39,24 @@ HRESULT Clone(
 
 <dl> <dt>
 
-*ppIEnum* \[ fora\]
+*ppIEnum* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IEnumWiaItem2**](-wia-ienumwiaitem2.md)\*\***
 
-Recebe o endereço da instância de interface [**IEnumWiaItem2**](-wia-ienumwiaitem2.md) que **IEnumWiaItem2:: clone** cria.
+Recebe o endereço da instância da interface [**IEnumWiaItem2**](-wia-ienumwiaitem2.md) que **IEnumWiaItem2::Clone** cria.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) nos ponteiros de interface recebidos por meio do parâmetro *ppIEnum* .
+Os aplicativos devem chamar [o método IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) nos ponteiros de interface que recebem por meio do *parâmetro ppIEnum.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,10 +64,10 @@ Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/un
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Valida o sistema planejado especificado.
 ms.assetid: cb969b38-f36d-4c70-b234-590f1c219d22
-title: Método ValidatePlannedSystem da classe Msvm_VirtualSystemManagementService
+title: Método ValidatePlannedSystem da classe Msvm_VirtualSystemManagementService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 96137c3774291e06bfffdea3843658a427e36950
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a35c34967272563426fc70cc6b9b0dd6d5aeaa682202e1d5ca52a2a0d5720d2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119212946"
 ---
-# <a name="validateplannedsystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ValidatePlannedSystem da \_ classe VirtualSystemManagementService Msvm
+# <a name="validateplannedsystem-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método ValidatePlannedSystem da classe Msvm \_ VirtualSystemManagementService
 
 Valida o sistema planejado especificado. Isso envolve verificações de configuração de máquina virtual, dispositivos, configuração de instantâneo, dispositivos de instantâneo, arquivos de estado salvos e arquivos de armazenamento.
 
@@ -40,21 +40,21 @@ uint32 ValidatePlannedSystem(
 
 <dl> <dt>
 
-*PlannedSystem* \[ no\]
+*PlannedSystem* \[ Em\]
 </dt> <dd>
 
-Uma referência a um objeto [**Msvm \_ PlannedComputerSystem**](msvm-plannedcomputersystem.md) que representa o sistema planejado a ser validado.
+Uma referência a [**um objeto Msvm \_ PlannedComputerSystem**](msvm-plannedcomputersystem.md) que representa o sistema planejado a ser validado.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -63,7 +63,7 @@ Esse método retorna um dos valores a seguir.
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -75,16 +75,16 @@ Esse método retorna um dos valores a seguir.
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em uso** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -93,10 +93,10 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> <dt>
 
 **Arquivo em uso** (32779)
@@ -104,10 +104,10 @@ O **sistema não está disponível** (32777)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de C# a seguir usa o método **ValidatePlannedSystem** para validar uma máquina virtual planejada. Esse código é obtido do [exemplo de máquinas virtuais planejadas do Hyper-V](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Pvm). Os utilitários referenciados podem ser encontrados em [utilitários comuns para os exemplos de virtualização (v2)](common-utilities-for-the-virtualization-samples-v2.md).
+O exemplo de C# a seguir usa o **método ValidatePlannedSystem** para validar uma máquina virtual planejada. Esse código é retirado do exemplo de máquinas virtuais [planejadas do Hyper-V.](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Hyper-V/Pvm) Os utilitários referenciados podem ser encontrados em [Utilitários comuns para as amostras de virtualização (V2)](common-utilities-for-the-virtualization-samples-v2.md).
 
 > [!IMPORTANT]
-> Para funcionar corretamente, o código a seguir deve ser executado no servidor de host da máquina virtual e deve ser executado com privilégios de administrador.
+> Para funcionar corretamente, o código a seguir deve ser executado no servidor host da máquina virtual e deve ser executado com privilégios de Administrador.
 
  
 
@@ -159,10 +159,10 @@ ValidatePvm(
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

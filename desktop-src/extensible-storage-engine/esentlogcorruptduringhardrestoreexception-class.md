@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: daeabeae72916781e01640cd0de10c737b53e5ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a11e072a3cef1c01041e52737186597e060c99877c96ad5b0c35964e4e0faa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115766"
 ---
 # <a name="esentlogcorruptduringhardrestoreexception-class"></a>Classe EsentLogCorruptDuringHardRestoreException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. LogCorruptDuringHardRestore exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  
