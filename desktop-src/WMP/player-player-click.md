@@ -3,9 +3,9 @@ title: Evento Player. Click
 description: O evento de clique ocorre quando o usuário clica em um botão do mouse.
 ms.assetid: c2d5fab9-9b53-4d0c-a001-8cbf4430e713
 keywords:
-- Clique em evento Windows Media Player
-- Clique em evento Windows Media Player, classe Player
-- Classe de Player Windows Media Player, evento de clique
+- Windows Media Player de eventos de clique
+- Windows Media Player de evento de clique, classe de jogador
+- Windows Media Player de classe do Player, evento de clique
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e8389460d59018b221749719d32edbaa89943808
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b60e6368c6ccb70d0bc87c9fc2d1d99770b4fa36dfe957365d48a2e26c00a163
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995926"
 ---
 # <a name="playerclick-event"></a>Evento Player. Click
 
@@ -73,13 +73,13 @@ Player.Click(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O valor dos parâmetros de evento é especificado pelo Windows Media Player e pode ser acessado ou transmitido para um método em um arquivo JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse evento.
 

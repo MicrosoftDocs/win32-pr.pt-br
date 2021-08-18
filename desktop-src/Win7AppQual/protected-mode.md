@@ -4,22 +4,22 @@ ms.assetid: 88810916-A85E-4EC7-A6AE-1CA2A2205DBC
 title: Modo protegido
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dbc1b8b1e6931ed83ec59ccfe4c3c63d8e5b5eed
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 2d2f16b9f923215af6c2211339859d8eab4803e6793be248a83760e298ed084c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994776"
 ---
 # <a name="protected-mode"></a>Modo protegido
 
-A maioria dos recursos de segurança do Windows Internet Explorer 8 está disponível no Internet Explorer 8 para o sistema operacional Windows XP com Service Pack 2 (SP2) e versões posteriores. O modo protegido está disponível apenas para o Windows Vista ou versões posteriores porque ele se baseia nos seguintes recursos de segurança que são novos no Windows Vista:
+a maioria Windows recursos de segurança do internet explorer 8 estão disponíveis no Internet explorer 8 para o sistema operacional Windows XP com Service Pack 2 (SP2) e versões posteriores. o modo protegido está disponível somente para o Windows Vista ou versões posteriores porque ele se baseia nos seguintes recursos de segurança que são novos no Windows Vista:
 
--   O [UAC (controle de conta de usuário)](https://msdn.microsoft.com/library/aa511445.aspx) facilita a execução sem privilégios de administrador. Quando os usuários executam programas com privilégios de usuário limitados, eles são mais seguros de um ataque do que quando são executados com privilégios de administrador. O sistema operacional Windows pode restringir o código mal-intencionado de realizar ações perigosas.
+-   O [UAC (controle de conta de usuário)](https://msdn.microsoft.com/library/aa511445.aspx) facilita a execução sem privilégios de administrador. Quando os usuários executam programas com privilégios de usuário limitados, eles são mais seguros de um ataque do que quando são executados com privilégios de administrador. o sistema operacional Windows pode restringir o código mal-intencionado de realizar ações perigosas.
 -   Um mecanismo de integridade restringe o acesso de gravação a [objetos protegíveis](../secauthz/securable-objects.md) por processos de baixa integridade, da mesma maneira que a associação de grupo de contas de usuário restringe os direitos de usuários para acessar componentes confidenciais do sistema.
 -   O [UIPI (isolamento de privilégios de interface do usuário)](/previous-versions/dotnet/articles/bb625963(v=msdn.10)) impede que processos enviem mensagens de janela selecionadas e outras APIs de usuário para processos que estão sendo executados com maior integridade.
 
-A infraestrutura de segurança do mecanismo de integridade do Windows permite que o modo protegido forneça ao Windows Internet Explorer os privilégios de que os usuários precisam para navegar na Web, enquanto os privilégios de retenção dos usuários precisam instalar programas silenciosamente ou modificar dados confidenciais do sistema.
+a infra-estrutura de segurança do mecanismo de integridade Windows permite que o modo protegido forneça Windows Internet Explorer com os privilégios de que os usuários precisam para navegar na web, enquanto os privilégios de retenção que os usuários precisam para instalar programas silenciosamente ou modificar dados confidenciais do sistema.
 
 Os usuários podem desabilitar esse recurso por meio de uma caixa de seleção e os administradores podem desabilitá-lo usando Política de Grupo.
 

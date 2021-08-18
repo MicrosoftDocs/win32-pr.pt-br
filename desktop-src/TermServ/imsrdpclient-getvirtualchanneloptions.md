@@ -1,30 +1,30 @@
 ---
-title: Método IMsRdpClient GetVirtualChannelOptions
+title: Método GetVirtualChannelOptions de IMsRdpClient
 description: Recupera as opções definidas para um canal virtual.
 ms.assetid: d2ec9fb2-c0dc-49f1-a86b-d7abca13a322
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota, interface IMsRdpClient
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient, método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota, interface IMsRdpClient2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient2, método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota, interface IMsRdpClient3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient3, método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota, interface IMsRdpClient4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient4, método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota, interface IMsRdpClient5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient5, método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota, interface IMsRdpClient6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient6, método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota, interface IMsRdpClient7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota, interface IMsRdpClient8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota, interface IMsRdpClient9
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, método GetVirtualChannelOptions
-- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota, interface IMsRdpClient10
-- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota interface , IMsRdpClient
+- Interface IMsRdpClient Serviços de Área de Trabalho Remota , método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota interface , IMsRdpClient2
+- Interface IMsRdpClient2 Serviços de Área de Trabalho Remota , método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota interface , IMsRdpClient3
+- Interface IMsRdpClient3 Serviços de Área de Trabalho Remota , método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota interface , IMsRdpClient4
+- Interface IMsRdpClient4 Serviços de Área de Trabalho Remota , método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota interface , IMsRdpClient5
+- Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota interface , IMsRdpClient6
+- Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota interface , IMsRdpClient7
+- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota interface , IMsRdpClient8
+- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota interface , IMsRdpClient9
+- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , método GetVirtualChannelOptions
+- Método GetVirtualChannelOptions Serviços de Área de Trabalho Remota interface , IMsRdpClient10
+- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , método GetVirtualChannelOptions
 topic_type:
 - apiref
 api_name:
@@ -44,14 +44,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71548002ebc67dae8dc1a49e8144da3de608afb2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 70d51ad6ccd1924c78817f76f385d65e1963b68c1b1329c3d6ba924f25a827a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105780576"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059084"
 ---
-# <a name="imsrdpclientgetvirtualchanneloptions-method"></a>Método IMsRdpClient:: GetVirtualChannelOptions
+# <a name="imsrdpclientgetvirtualchanneloptions-method"></a>Método IMsRdpClient::GetVirtualChannelOptions
 
 Recupera as opções definidas para um canal virtual.
 
@@ -71,27 +71,27 @@ HRESULT GetVirtualChannelOptions(
 
 <dl> <dt>
 
-*Canalname* \[ no\]
+*ChanName* \[ Em\]
 </dt> <dd>
 
-O nome de um canal virtual que foi especificado na chamada para o método [**CreateVirtualChannels**](imstscax-createvirtualchannels.md) .
+O nome de um canal virtual que foi especificado na chamada para [**o método CreateVirtualChannels.**](imstscax-createvirtualchannels.md)
 
 </dd> <dt>
 
-*pChanOptions* \[ fora\]
+*pChanOptions* \[ out\]
 </dt> <dd>
 
-As opções definidas para o canal virtual especificado pelo parâmetro *canalname* . Para obter uma descrição das opções possíveis, confira [**\_ definição de canal**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def).
+As opções definidas para o canal virtual especificado pelo *parâmetro ChanName.* Para ver uma descrição das opções possíveis, consulte [**CHANNEL \_ DEF**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar **S \_ OK** se for bem-sucedido.
+Retornar **S \_ OK se** for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -111,7 +111,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClient**](imsrdpclient-interface.md)
+[**Imsrdpclient**](imsrdpclient-interface.md)
 </dt> <dt>
 
 [**IMsRdpClient2**](imsrdpclient2.md)
@@ -141,7 +141,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClient10**](imsrdpclient10.md)
 </dt> <dt>
 
-[**DEF. de canal \_**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def)
+[**CHANNEL \_ DEF**](/windows/desktop/api/Pchannel/ns-pchannel-tagchannel_def)
 </dt> <dt>
 
 [**CreateVirtualChannels**](imstscax-createvirtualchannels.md)

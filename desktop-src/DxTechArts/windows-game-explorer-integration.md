@@ -1,23 +1,23 @@
 ---
-title: Explorador de jogos do Windows para desenvolvedores de jogos
-description: Este artigo descreve o processo de registro de um jogo com o explorador de jogos e controles dos pais no Windows Vista e no Windows 7 usando o novo esquema GDF.
+title: Windows Explorador de jogos para desenvolvedores de jogos
+description: este artigo descreve o processo de registro de um jogo com o explorador de jogos e controles dos pais em Windows Vista e Windows 7 usando o novo esquema GDF.
 ms.assetid: 628f14bf-2714-0d68-8267-4f7f48c2774a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7f59b90a23f407be3990a6a4e24b92d39e66852
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6420b4783cfad7afd82483d45448ccb219342b4a7b88aa54e36c2de15ca0f778
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105754683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070416"
 ---
-# <a name="windows-games-explorer-for-game-developers"></a>Explorador de jogos do Windows para desenvolvedores de jogos
+# <a name="windows-games-explorer-for-game-developers"></a>Windows Explorador de jogos para desenvolvedores de jogos
 
-O Windows Vista aprimora a experiência do usuário de jogos no Windows, incluindo o explorador de jogos. O explorador de jogos é exposto no menu Iniciar do Windows Vista como a pasta jogos e fornece um local central para o acesso a jogos.
+Windows o Vista melhora a experiência do usuário em jogos em Windows, incluindo o explorador de jogos. o explorador de jogos é exposto no Menu iniciar do Windows Vista como a pasta jogos e fornece um local central para acessar jogos.
 
-A partir da versão de março de 2009 do SDK do DirectX, um novo esquema de GDF (arquivo de definição de jogo) é usado para dar suporte a recursos no Windows 7, provedor de jogos e RSS feed e IGameExplorer2. O IGameExplorer2 é uma nova interface no Windows 7 que simplifica o processo de integração de um jogo com o explorador de jogos.
+a partir da versão de março de 2009 do SDK do DirectX, um novo esquema de GDF (arquivo de definição de jogo) é usado para dar suporte a recursos no Windows 7, provedor de jogos e RSS feed e IGameExplorer2. o IGameExplorer2 é uma nova interface no Windows 7 que simplifica o processo de integração de um jogo com o explorador de jogos.
 
-Este artigo descreve o processo de registro de um jogo com o explorador de jogos e controles dos pais no Windows Vista e no Windows 7 usando o novo esquema GDF.
+este artigo descreve o processo de registro de um jogo com o explorador de jogos e controles dos pais em Windows Vista e Windows 7 usando o novo esquema GDF.
 
 Conteúdo:
 
@@ -42,11 +42,11 @@ Para poder integrar um jogo no explorador de jogos, você deve criar um arquivo 
 
 A Microsoft fornece uma ferramenta para a criação de GDFs no SDK do DirectX, editor de arquivos de definição de jogos, para facilitar esse processo de criação. Essa ferramenta também ajuda a criar versões localizadas de um GDF.
 
-Depois que um GDF tiver sido criado e localizado, ele deverá ser encapsulado dentro de uma seção de recurso de um arquivo binário (executável ou DLL), junto com a miniatura e o ícone do jogo. O GDF contém todos os metadados associados ao jogo, incluindo a classificação do jogo. Os controles dos pais do Windows usam a classificação do jogo para permitir que os pais controlem o acesso ao jogo. O arquivo binário que contém o GDF deve ser assinado digitalmente com um certificado Authenticode válido; caso contrário, o explorador de jogos e o sistema de controle de pais ignoram a classificação do jogo, pois as informações de classificação não podem ser confiáveis sem certificação. Para obter mais detalhes sobre o código de assinatura com Authenticode, consulte [assinatura Authenticode para desenvolvedores de jogos](/windows/desktop/DxTechArts/authenticode-signing-for-game-developers).
+Depois que um GDF tiver sido criado e localizado, ele deverá ser encapsulado dentro de uma seção de recurso de um arquivo binário (executável ou DLL), junto com a miniatura e o ícone do jogo. O GDF contém todos os metadados associados ao jogo, incluindo a classificação do jogo. Windows Os controles dos pais usam a classificação do jogo para permitir que os pais controlem o acesso ao jogo. O arquivo binário que contém o GDF deve ser assinado digitalmente com um certificado Authenticode válido; caso contrário, o explorador de jogos e o sistema de controle de pais ignoram a classificação do jogo, pois as informações de classificação não podem ser confiáveis sem certificação. Para obter mais detalhes sobre o código de assinatura com Authenticode, consulte [assinatura Authenticode para desenvolvedores de jogos](/windows/desktop/DxTechArts/authenticode-signing-for-game-developers).
 
 ## <a name="integrating-with-an-installer"></a>Integração com um instalador
 
-Para simplificar a integração do explorador de jogos, o exemplo GameUXInstallHelper fornece uma API comum que pode ser chamada no Windows XP, no Windows Vista e no Windows 7. Ele foi projetado para trabalhar com scripts para o sistema de instalação do InstallShield e Wise, bem como ações personalizadas do MSI e ferramentas de instalação personalizadas. A detecção do sistema operacional é tratada dentro dessa DLL de exemplo, portanto, o chamador não precisa se preocupar se o cliente está executando o Windows XP, o Windows Vista ou o Windows 7.
+para simplificar a integração do explorador de jogos, o exemplo GameUXInstallHelper fornece uma API comum que pode ser chamada em Windows XP, Windows Vista e Windows 7. Ele foi projetado para trabalhar com scripts para o sistema de instalação do InstallShield e Wise, bem como ações personalizadas do MSI e ferramentas de instalação personalizadas. a detecção do sistema operacional é tratada dentro dessa DLL de exemplo, portanto, o chamador não precisa se preocupar se o cliente está executando o Windows XP, Windows Vista ou Windows 7.
 
 As funções exportadas por essa DLL são as seguintes:
 
@@ -113,9 +113,9 @@ Observe que o processo de remoção remove apenas uma instalação exclusiva. Se
 
 As tarefas do explorador de jogos serão exibidas no menu de contexto de um item no explorador de jogos. As tarefas são divididas em tarefas de reprodução e tarefas de suporte. As tarefas de reprodução iniciam um jogo em um modo específico, enquanto as tarefas de suporte atendem a qualquer outra finalidade, incluindo a vinculação a sites da Web.
 
-No Windows Vista, as tarefas são simplesmente atalhos que estão localizados em pastas específicas. Tarefas de reprodução e tarefas de suporte são armazenadas em pastas com os nomes correspondentes PlayTasks e SupportTasks. GameUXInstallHelper pode ler as informações sobre a tarefa do jogo do arquivo binário GDF e criar todos os atalhos automaticamente.
+no Windows Vista, as tarefas são simplesmente atalhos que estão localizados em pastas específicas. Tarefas de reprodução e tarefas de suporte são armazenadas em pastas com os nomes correspondentes PlayTasks e SupportTasks. GameUXInstallHelper pode ler as informações sobre a tarefa do jogo do arquivo binário GDF e criar todos os atalhos automaticamente.
 
-No Windows 7, os atalhos para as tarefas não são necessários, pois o explorador de jogos obtém todas as informações da tarefa diretamente do arquivo binário GDF.
+no Windows 7, os atalhos para as tarefas não são necessários, pois o explorador de jogos obtém todas as informações da tarefa diretamente do arquivo binário GDF.
 
 ## <a name="integrating-into-installscript"></a>Integrando no InstallScript
 
@@ -225,12 +225,12 @@ Esse procedimento é descrito em detalhes nas instruções a seguir, que descrev
 
     
 
-     
+     
 
     > [!Note]  
     > Esse arquivo será inserido no pacote MSI, portanto, você deve fazer essa etapa sempre que recompilar GameUXInstallHelper.dll.
 
-     
+     
 
 3.  Adicione as linhas mostradas na tabela a seguir à tabela **CustomAction** no pacote MSI.
 
@@ -248,7 +248,7 @@ Esse procedimento é descrito em detalhes nas instruções a seguir, que descrev
 
     
 
-     
+     
 
 4.  Adicione os valores mostrados para ação, condição e sequência na tabela a seguir à tabela **InstallExecuteSequence** no pacote MSI.
 
@@ -266,7 +266,7 @@ Esse procedimento é descrito em detalhes nas instruções a seguir, que descrev
 
     
 
-     
+     
 
 5.  Adicione a linha mostrada na tabela a seguir à tabela de propriedades no pacote MSI.
 
@@ -276,16 +276,16 @@ Esse procedimento é descrito em detalhes nas instruções a seguir, que descrev
 
     
 
-     
+     
 
     > [!Note]  
     > O local especificado pelo caminho é relativo ao local especificado pelo caminho de instalação. Por exemplo, bin \\GDF.dll.
 
-     
+     
 
 6.  Salve o pacote MSI.
 
-Para obter informações mais detalhadas sobre pacotes e Windows Installer do MSI, consulte [Windows Installer](/windows/desktop/Msi/windows-installer-portal).
+para obter informações mais detalhadas sobre pacotes e Windows Installer do MSI, consulte [Windows Installer](/windows/desktop/Msi/windows-installer-portal).
 
 ## <a name="debugging-tips"></a>Dicas de depuração
 
@@ -301,7 +301,7 @@ Se você não tiver um binário GDF ou o seu não for instalado, tente usar o GD
 
 Se o jogo já estiver instalado no explorador de jogos, as chamadas subsequentes para **IGameExplorer:: addgame** retornarão E \_ falharão. portanto, verifique se o jogo não está instalado antes do teste. Isso também se aplicará se você instalar o GDF somente para o usuário atual e, em seguida, tentar instalar o GDF para todos os usuários. Primeiro, você deve remover o jogo dos usuários atuais antes de **IGameExplorer:: addgame** terá sucesso.
 
-Se você executar **GDFInstall.exe Enumeração**, o aplicativo de exemplo entrará em um modo diferente que enumerará todos os jogos do explorador de jogos instalados e solicitará que você os remova. Você também pode procurar e pesquisar o registro em HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows \\ CurrentVersion \\ GameUX para ter certeza de que seu jogo não está instalado para outro usuário no sistema. No entanto, não altere essas configurações de registro para nenhuma outra finalidade, pois não há garantia de que elas permaneçam compatíveis em versões futuras do sistema operacional.
+Se você executar **GDFInstall.exe Enumeração**, o aplicativo de exemplo entrará em um modo diferente que enumerará todos os jogos do explorador de jogos instalados e solicitará que você os remova. você também pode procurar e pesquisar o registro em HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ GameUX para ter certeza de que seu jogo não está instalado para outro usuário no sistema. No entanto, não altere essas configurações de registro para nenhuma outra finalidade, pois não há garantia de que elas permaneçam compatíveis em versões futuras do sistema operacional.
 
 ### <a name="be-sure-to-sign-using-authenticode"></a>Não se esqueça de assinar usando Authenticode
 
@@ -309,7 +309,7 @@ Se você forneceu uma classificação, mas não a está vendo no explorador de j
 
 ### <a name="be-sure-that-parental-controls-are-available"></a>Verifique se os controles dos pais estão disponíveis
 
-Verifique se você está testando controles dos pais em uma edição do Windows Vista que fornece controles dos pais: Home Basic, Home Premium ou Ultimate. O Windows Vista Business e o Windows Vista Enterprise não fornecem controles dos pais no entanto, se você estiver testando no Windows Vista Ultimate e o computador de teste estiver ingressado em um domínio, será necessário alterar uma configuração de diretiva de grupo para tornar os controles pais visíveis. Para fazer isso, consulte [introdução com o explorador de jogos](/previous-versions/windows/desktop/legacy/ee417682(v=vs.85)).
+verifique se você está testando controles dos pais em uma edição do Windows Vista que fornece controles dos pais: home Basic, home Premium ou Ultimate. Windows o vista Business e Windows vista Enterprise não fornecem controles dos pais no entanto, se você estiver testando no Windows Vista Ultimate e o computador de teste estiver ingressado em um domínio, será necessário alterar uma configuração de diretiva de grupo para tornar os controles dos pais visíveis. Para fazer isso, consulte [introdução com o explorador de jogos](/previous-versions/windows/desktop/legacy/ee417682(v=vs.85)).
 
 ### <a name="verify-that-tasks-are-of-the-correct-type"></a>Verificar se as tarefas são do tipo correto
 
@@ -321,8 +321,8 @@ GDFTrace.exe é uma ferramenta encontrada no SDK do DirectX. Você pode executar
 
 ## <a name="summary"></a>Resumo
 
-O Game Explorer do Windows Vista fornece uma maneira fácil e personalizável de apresentar os usuários do Windows Vista, mas também exige que você registre o jogo com o sistema durante o processo de instalação. O exemplo GameUXInstallHelper simplifica muito esse processo para os desenvolvedores.
+o explorador de jogos no Windows Vista fornece uma maneira fácil e personalizável de apresentar os usuários do Windows vista, mas também exige que você registre o jogo com o sistema durante o processo de instalação. O exemplo GameUXInstallHelper simplifica muito esse processo para os desenvolvedores.
 
- 
+ 
 
- 
+ 

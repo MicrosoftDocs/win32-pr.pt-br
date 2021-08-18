@@ -1,6 +1,6 @@
 ---
-title: RPC_NS_HANDLE (Rpcnsi. h)
-description: O identificador do tipo de dados RPC \_ ns \_ define um identificador de serviço de nome.
+title: RPC_NS_HANDLE (Rpcnsi.h)
+description: O tipo de dados RPC \_ NS \_ HANDLE define um identificador nome-serviço.
 ms.assetid: d9c2a376-4972-4f16-aa8d-f0e43d5ddb8d
 keywords:
 - RPC_NS_HANDLE
@@ -13,9 +13,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118926280"
 ---
-# <a name="rpc_ns_handle"></a>identificador de RPC \_ ns \_
+# <a name="rpc_ns_handle"></a>RPC \_ NS \_ HANDLE
 
-O **\_ \_ identificador** do tipo de dados RPC NS define um identificador de serviço de nome.
+O tipo de **dados RPC \_ NS \_ HANDLE** define um identificador nome-serviço.
 
 
 ```C++
@@ -26,15 +26,15 @@ typedef void* RPC_NS_HANDLE;
 
 ## <a name="remarks"></a>Comentários
 
-Um identificador de serviço de nome é uma variável opaca que contém informações que a biblioteca de tempo de execução RPC usa para retornar os seguintes dados de RPC do nome-do-serviço:
+Um nome-serviço handle é uma variável opaca que contém informações que a biblioteca de tempo de executar RPC usa para retornar os seguintes dados RPC do banco de dados name-service:
 
--   Identificadores de associação de servidor
--   UUIDs de recursos oferecidos por membros do perfil do servidor
+-   Alças de associação de servidor
+-   UUIDs de recursos oferecidos por membros do perfil de servidor
 -   Membros do grupo
 
-O escopo de um identificador de serviço de nome é de uma rotina de "início" por meio da rotina "concluída" correspondente.
+O escopo de um nome-serviço é de uma rotina "Begin" até a rotina "Done" correspondente.
 
-Os aplicativos são responsáveis pelo controle de simultaneidade de identificadores de serviço de nome entre threads.
+Os aplicativos são responsáveis pelo controle de concurreência de alças de nome-serviço entre threads.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,7 +44,7 @@ Os aplicativos são responsáveis pelo controle de simultaneidade de identificad
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                |
-| Cabeçalho<br/>                   | <dl> <dt>Rpcnsi. h (incluir RPC. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Rpcnsi.h (inclua Rpc.h)</dt> </dl> |
 
 
 

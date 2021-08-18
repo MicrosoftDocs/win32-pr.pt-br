@@ -4,12 +4,12 @@ description: Um proxy reside no espaço de endereço do processo de chamada e at
 ms.assetid: 6c82f655-ac46-4ed9-992b-0387b324a8f9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a11257dd060f51bef118a4afc0cc35acf995c111
-ms.sourcegitcommit: d39e82e232f6510f843fdb8d55d25b4e9e02e880
+ms.openlocfilehash: c0478ce9ad1e08d343f1536fcd4bba63e59ae0fd229390be31c978bd20f737b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "105780693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129998"
 ---
 # <a name="proxy"></a>Proxy
 

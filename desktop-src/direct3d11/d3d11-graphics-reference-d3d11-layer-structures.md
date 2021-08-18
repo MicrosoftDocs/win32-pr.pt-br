@@ -6,12 +6,12 @@ keywords:
 - estruturas, camada do Direct3D 11
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df8fa476d31fea9f77879f89604f591032476a59
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 74dfea7f801c357c16c31842166f1488a5b9306a503ecf74fc00967f2a7be672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "104967240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119126080"
 ---
 # <a name="layer-structures"></a>Estruturas de camada
 

@@ -3,9 +3,9 @@ title: Método mediacollection. getAttributeStringCollection
 description: O método getAttributeStringCollection recupera um objeto StringCollection que representa o conjunto de todos os valores de um atributo especificado dentro de um tipo de mídia especificado.
 ms.assetid: 75563a75-88f5-419e-983b-d105bce02511
 keywords:
-- método getAttributeStringCollection Windows Media Player
-- método getAttributeStringCollection Windows Media Player, classe Mediacollection
-- Classe mediacollection Windows Media Player, método getAttributeStringCollection
+- Windows Media Player do método getAttributeStringCollection
+- método getAttributeStringCollection Windows Media Player, classe mediacollection
+- classe mediacollection Windows Media Player, método getAttributeStringCollection
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d50d25488a05e6076c99802ce738edf02298ade
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c27b7c6dbef585763ecfda1abdc7beadfa3d883476033424ff868a3d56c4bb96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782982"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996296"
 ---
 # <a name="mediacollectiongetattributestringcollection-method"></a>Método mediacollection. getAttributeStringCollection
 
@@ -57,7 +57,7 @@ retVal = MediaCollection.getAttributeStringCollection(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um objeto **StringCollection** .
 
@@ -65,11 +65,11 @@ Esse método retorna um objeto **StringCollection** .
 
 Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
 
-Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a seção [referência de atributo](attribute-reference.md) .
+para obter informações sobre os atributos com suporte pelo Windows Media Player, consulte a seção [referência de atributo](attribute-reference.md) .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *mediacollection*. **getAttributeStringCollection** para exibir uma lista de valores que correspondem a um atributo específico para itens de áudio na coleção de mídia. Um elemento HTML SELECT, criado com ID = "Attribute", permite ao usuário selecionar um atributo, como artista, gênero ou álbum. Um elemento de TEXTAREA HTML, criado com ID = "AttributeVals", exibe o resultado. O objeto de **jogador** foi criado com ID = "Player".
+o exemplo a seguir JScript usa *mediacollection*. **getAttributeStringCollection** para exibir uma lista de valores que correspondem a um atributo específico para itens de áudio na coleção de mídia. Um elemento HTML SELECT, criado com ID = "Attribute", permite ao usuário selecionar um atributo, como artista, gênero ou álbum. Um elemento de TEXTAREA HTML, criado com ID = "AttributeVals", exibe o resultado. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript
@@ -112,10 +112,10 @@ for (i = 0; i < all.count; i++){
 [**Objeto mediacollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> <dt>
 
 [**Objeto StringCollection**](stringcollection-object.md)

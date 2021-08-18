@@ -4,12 +4,12 @@ description: Os aplicativos de servidor devem selecionar uma ou mais sequências
 ms.assetid: bde26a86-dc4f-4d18-ba51-c6536c62bb75
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a700299e3d2bd98fa5fb0aaebea25e907d85afb0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 61f43b8dc7b21fc2a6bebe98010b80dbf369ac96bb185cc75afa3b0a4f1acbba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118925146"
 ---
 # <a name="specifying-protocol-sequences"></a>Especificando sequências de protocolo
 
@@ -34,6 +34,6 @@ Além dos protocolos orientados a conexão, o Microsoft RPC também dá suporte 
 -   O datagrama RPC dá suporte ao atributo IDL de [difusão](/windows/desktop/Midl/broadcast) . A difusão permite que um cliente emita mensagens para vários servidores ao mesmo tempo. Isso permite que o cliente Localize um dos vários servidores disponíveis na rede ou controle vários servidores simultaneamente. Observe que a difusão de datagrama é válida somente dentro do link local e geralmente não cruza roteadores. As chamadas de difusão são implicitamente idempotentes. Se a chamada contiver parâmetros de \[ **saída** \] , somente a primeira resposta do servidor será retornada. Quando um servidor responde, todas as futuras RPCs sobre esse identificador de ligação serão enviadas somente para esse servidor, incluindo chamadas com o atributo de difusão. Para enviar outra difusão, crie um novo identificador de associação ou chame [**RpcBindingReset**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingreset) no identificador existente.
 -   O datagrama RPC dá suporte ao atributo [talvez](/windows/desktop/Midl/maybe) IDL. Isso permite que o cliente envie uma chamada para o servidor sem aguardar uma resposta ou confirmação. A chamada não pode conter parâmetros de \[ **saída** \] . Chamadas que usam **\[ as \]** chamadas If podem ser implicitamente idempotentes.
 
- 
+ 
 
- 
+ 

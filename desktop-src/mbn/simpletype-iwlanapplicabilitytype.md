@@ -1,22 +1,22 @@
 ---
-description: Enumeração que descreve o tipo de conexão de rede onde um perfil é aplicável.
+description: Enumeração que descreve o tipo de conexão de rede em que um perfil é aplicável.
 MS-HAID: WWAN\_profile\_v4.simpleType\_iwlanApplicabilityType
 MSHAttr:
 - PreferredSiteName:MSDN
 - PreferredLib:/library/windows/desktop
-title: Tipo simples de iwlanApplicabilityType
+title: Tipo simples iwlanApplicabilityType
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80013fa21574221de24a7fc8309e4459a80ad670
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2ede1e4c360bfd88fa8ca0eb3494a9400f4dfc2a1eb70f7857156caabf7b469
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035744"
 ---
-# <a name="span-idwwan_profile_v4simpletype_iwlanapplicabilitytypespaniwlanapplicabilitytype-simple-type"></a><span id="WWAN_profile_v4.simpleType_iwlanApplicabilityType"></span>Tipo simples de iwlanApplicabilityType
+# <a name="span-idwwan_profile_v4simpletype_iwlanapplicabilitytypespaniwlanapplicabilitytype-simple-type"></a><span id="WWAN_profile_v4.simpleType_iwlanApplicabilityType"></span>Tipo simples iwlanApplicabilityType
 
-Enumeração que descreve o tipo de conexão de rede onde um perfil é aplicável.
+Enumeração que descreve o tipo de conexão de rede em que um perfil é aplicável.
 
 ``` syntax
 <xs:simpleType name="iwlanApplicabilityType">
@@ -38,7 +38,7 @@ Enumeração que descreve o tipo de conexão de rede onde um perfil é aplicáve
 
 ## <a name="enumeration-values"></a>Valores de enumeração
 
-O tipo simples **iwlanApplicabilityType** define os valores a seguir.
+O **tipo simples iwlanApplicabilityType** define os valores a seguir.
 
 <table>
 <colgroup>
@@ -58,11 +58,11 @@ O tipo simples **iwlanApplicabilityType** define os valores a seguir.
 </tr>
 <tr class="even">
 <td>CellularAndIwlan</td>
-<td><p>O perfil é válido para conexões de celular ou Wi-Fi descarregadas.</p></td>
+<td><p>O perfil é válido para conexões de celular Wi-Fi descarregadas.</p></td>
 </tr>
 <tr class="odd">
 <td>IwlanOnly</td>
-<td><p>O perfil é válido somente para conexões descarregadas Wi-Fi.</p></td>
+<td><p>O perfil é válido para Wi-Fi somente conexões descarregadas.</p></td>
 </tr>
 </tbody>
 </table>

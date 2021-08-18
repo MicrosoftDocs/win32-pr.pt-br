@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 291db699df12fd2692a3a5130a70d2dfdf241e10
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b640676817388b8ba450df02adc3d32afd0b7ff7fb8c710a35b3c35692090423
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981066"
 ---
 # <a name="esenttableinuseexception-constructor"></a>Construtor EsentTableInUseException
 
 Inicializa uma nova instância da classe EsentTableInUseException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentTableInUseException()
 
 [Classe EsentTableInUseException](./esenttableinuseexception-class.md)
 
-[Membros do EsentTableInUseException](./esenttableinuseexception-members.md)
+[Membros EsentTableInUseException](./esenttableinuseexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

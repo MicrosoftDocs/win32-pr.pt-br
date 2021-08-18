@@ -1,6 +1,6 @@
 ---
 title: atributo ms-DS-AZ-biz-Rule-Language
-description: O idioma em que o script de regra de negócio está (JScript, VBScript).
+description: o idioma no qual o script de regra de negócio está (JScript, VBScript).
 ms.assetid: 980f4715-b905-41aa-8274-de320be4a5a7
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 980fb7e08e972bef367c06187a88f0a3ef0a4979
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d1c29767322d8d211b051d13e58db9a9e4f8b1e30dfacc3423f95bdd3993299c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960915"
 ---
 # <a name="ms-ds-az-biz-rule-language-attribute"></a>atributo ms-DS-AZ-biz-Rule-Language
 
-O idioma em que o script de regra de negócio está (JScript, VBScript).
+o idioma no qual o script de regra de negócio está (JScript, VBScript).
 
 
 
@@ -57,7 +57,7 @@ O idioma em que o script de regra de negócio está (JScript, VBScript).
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| É de valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
 | No catálogo global      | Falso                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
@@ -78,7 +78,7 @@ O idioma em que o script de regra de negócio está (JScript, VBScript).
 | ID do link                | \-                                                |
 | MAPI-Id                | \-                                                |
 | System-Only            | Falso                                             |
-| É de valor único       | True                                              |
+| É de valor único       | Verdadeiro                                              |
 | É indexado             | Falso                                             |
 | No catálogo global      | Falso                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                      |
@@ -99,7 +99,7 @@ O idioma em que o script de regra de negócio está (JScript, VBScript).
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| É de valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
@@ -107,7 +107,7 @@ O idioma em que o script de regra de negócio está (JScript, VBScript).
 | Range-Upper            | 64                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -120,7 +120,7 @@ O idioma em que o script de regra de negócio está (JScript, VBScript).
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| É de valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
@@ -128,7 +128,7 @@ O idioma em que o script de regra de negócio está (JScript, VBScript).
 | Range-Upper            | 64                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
 
 
 
@@ -141,7 +141,7 @@ O idioma em que o script de regra de negócio está (JScript, VBScript).
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| É de valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
@@ -149,7 +149,7 @@ O idioma em que o script de regra de negócio está (JScript, VBScript).
 | Range-Upper            | 64                                                                                    |
 | Search-Flags           | 0x00000000                                                                            |
 | System-Flags           | 0x00000010                                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**ms-DS-AZ-Task**](c-msds-aztask.md)<br/> |
 
 
 

@@ -3,25 +3,25 @@ title: Usando a priorização de fluxo
 description: Usando a priorização de fluxo
 ms.assetid: 5fff212e-b47b-49a6-817f-f0e09c895b3a
 keywords:
-- SDK do Windows Media Format, priorização de fluxo
+- Windows SDK de Formato de Mídia, priorização de fluxo
 - perfis, priorização de fluxo
 - fluxos, priorização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99a6b0bd3d49db9523ef9ea5585803b4c703c279
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 3db00466eb27685a33851f7bffa5133e1d94a203985b1a0a56b110a09ad88ab6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103916971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963945"
 ---
 # <a name="using-stream-prioritization"></a>Usando a priorização de fluxo
 
-A priorização de fluxo permite que você tenha mais controle sobre a reprodução de conteúdo, permitindo que você especifique a ordem de prioridade para os fluxos em um perfil. Quando o leitor e o servidor de streaming encontram uma falta de largura de banda durante a reprodução, os exemplos podem ter que ser descartados para fornecer reprodução ininterrupta. Se você especificar uma ordem de prioridade com um objeto de priorização de fluxo no perfil, os exemplos serão removidos dos fluxos de prioridade mais baixos primeiro.
+A priorização de fluxo permite que você tenha mais controle sobre a reprodução de conteúdo, permitindo que você especifique a ordem de prioridade para os fluxos em um perfil. Quando o leitor e o servidor de streaming encontram uma falta de largura de banda durante a reprodução, os exemplos podem ter que ser descartados para fornecer reprodução ininterrupta. Se você especificar uma ordem de prioridade com um objeto de priorização de fluxo no perfil, os exemplos serão descartados dos fluxos de prioridade mais baixa primeiro.
 
-Ao contrário dos objetos de compartilhamento de largura de banda e de exclusão mútua, um objeto de priorização de fluxo não usa a interface [**IWMStreamList**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamlist) para controlar a lista de fluxos. Em vez disso, você deve usar uma matriz de estruturas de [**registro de prioridade de fluxo do WM \_ \_ \_**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_stream_priority_record) . As estruturas devem ser organizadas na matriz em ordem decrescente de prioridade. Além de conter um número de fluxo, a estrutura de prioridade de fluxo também permite que você especifique se um fluxo é obrigatório. Os fluxos obrigatórios não serão removidos, independentemente de sua posição na lista.
+Ao contrário do compartilhamento de largura de banda e dos objetos de exclusão mútua, um objeto de priorização de fluxo não usa a interface [**IWMStreamList**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmstreamlist) para controlar a lista de fluxos. Em vez disso, você deve usar uma matriz de [**estruturas WM \_ STREAM PRIORITY \_ \_ RECORD.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wm_stream_priority_record) As estruturas devem ser organizadas na matriz em ordem decrescente de prioridade. Além de manter um número de fluxo, a estrutura de prioridade de fluxo também permite que você especifique se um fluxo é obrigatório. Os fluxos obrigatórios não serão descartados, independentemente de sua posição na lista.
 
-O código de exemplo a seguir mostra como incluir uma priorização de fluxo em um perfil. Esse perfil é para uma apresentação da sala de aula, com um fluxo de áudio do palestrante, um fluxo de vídeo do palestrante e um fluxo de vídeo capturando os slides da apresentação. O fluxo de áudio é o mais importante e será obrigatório. Os slides de apresentação terão a menor prioridade, pois a imagem será bastante constante, portanto, alguns quadros serão perdidos e não haverá muita diferença.
+O código de exemplo a seguir mostra como incluir uma priorização de fluxo em um perfil. Esse perfil é para uma apresentação de sala de aula, com um fluxo de áudio da palestra, um fluxo de vídeo do palestrante e um fluxo de vídeo capturando os slides de apresentação. O fluxo de áudio é o mais importante e será obrigatório. Os slides de apresentação terão a prioridade mais baixa porque a imagem será muito constante, portanto, alguns quadros perdidos aqui e não fará muita diferença.
 
 
 ```C++
@@ -131,9 +131,9 @@ pProfileMgr = NULL;
 [**Trabalhando com perfis**](working-with-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

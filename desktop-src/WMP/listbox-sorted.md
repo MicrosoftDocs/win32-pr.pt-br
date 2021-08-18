@@ -3,7 +3,7 @@ title: Caixa de listagem. classificada
 description: O atributo ordenado especifica ou recupera um valor que indica se o controle da caixa de listagem está classificado em ordem alfabética. Só pode ser definido em tempo de design.
 ms.assetid: f07bf9bf-fe01-4d7c-a630-075ea809fd32
 keywords:
-- LISTBOX. classificação do Windows Media Player
+- Caixa de listagem. classificada Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dc0f6ca663d3bd5b934208061b0d7cd7b19a267d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aa099c6164478a30ae87fc5415327a2c8643935ef70cd8a1d236b9a2217082b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996426"
 ---
 # <a name="listboxsorted"></a>Caixa de listagem. classificada
 

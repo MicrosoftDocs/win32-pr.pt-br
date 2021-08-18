@@ -4,12 +4,12 @@ ms.assetid: 94015595-99a0-4b9b-b6b7-7bf81d88a4e8
 title: Banda Larga Móvel
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92b6851a337227b762ac4bdfc931574bdaa515a7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2db975658538f4cc6f332e9e06d43ac36861444141dbdc591497855484cecc14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105784123"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035864"
 ---
 # <a name="mobile-broadband"></a>Banda Larga Móvel
 
@@ -27,7 +27,7 @@ A API de banda larga móvel pode ser usada por aplicativos de terceiros que prec
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
-O suporte a banda larga móvel começa com o Windows 7.
+o suporte à banda larga móvel começa com o Windows 7.
 
 ## <a name="in-this-section"></a>Nesta seção
 

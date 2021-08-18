@@ -4,12 +4,12 @@ ms.assetid: 1869d845-6264-425a-ab3e-e0a9f942961a
 title: Política de metadados de foto System. Photo. TranscodedForSync
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5884ad469fcf7b5dffc8c4ad14f0ee5ff90cd07
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 34e78086284e1ca13b01c5e7cd188b761afe7eeba8acb5f2bca103234f80955b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964755"
 ---
 # <a name="systemphototranscodedforsync-photo-metadata-policy"></a>Política de metadados de foto System. Photo. TranscodedForSync
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

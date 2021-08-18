@@ -4,12 +4,12 @@ description: O procedimento a seguir descreve o uso do Gerenciador de reiniciali
 ms.assetid: aa55ab09-206b-49ed-8cb4-e311c1ed2d9d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bb44105d9f3d391bb2ed793aca8a6da2c330b30
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8aefb1f9658752677e7850e939fcb6a3c4c6047c5efc2dc0ceb06ec0f51900ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009984"
 ---
 # <a name="using-restart-manager-with-a-secondary-installer"></a>Usando o Gerenciador de reinicialização com um instalador secundário
 
@@ -31,7 +31,7 @@ Ao usar instaladores primários e secundários, o instalador principal controla 
 
 6.  O instalador primário e o secundário chamam a função [**RmEndSession**](/windows/desktop/api/RestartManager/nf-restartmanager-rmendsession) para fechar a sessão do Gerenciador de reinicialização.
 
-O trecho de código a seguir mostra um exemplo de um instalador primário que inicia e usa uma sessão do Gerenciador de reinicialização. O exemplo requer o Windows 7 ou o Windows Server 2008 R2. No Windows Vista ou no Windows Server 2008, o aplicativo de calculadora é desligado, mas não é reiniciado. Este exemplo mostra como um instalador primário pode usar o Gerenciador de reinicialização para desligar e reiniciar um processo. O exemplo supõe que a calculadora já está em execução antes de iniciar a sessão do Gerenciador de reinicialização.
+O trecho de código a seguir mostra um exemplo de um instalador primário que inicia e usa uma sessão do Gerenciador de reinicialização. o exemplo requer Windows 7 ou Windows Server 2008 R2. no Windows Vista ou no Windows Server 2008, o aplicativo de calculadora é desligado, mas não é reiniciado. Este exemplo mostra como um instalador primário pode usar o Gerenciador de reinicialização para desligar e reiniciar um processo. O exemplo supõe que a calculadora já está em execução antes de iniciar a sessão do Gerenciador de reinicialização.
 
 
 ```C++
@@ -238,7 +238,7 @@ int _cdecl wmain()
 
 
 
-O trecho de código a seguir mostra um exemplo de junção de um instalador secundário à sessão do Gerenciador de reinicialização existente. O exemplo requer o Windows Vista ou o Windows Server 2008. O instalador secundário Obtém a chave de sessão do instalador primário e a usa para ingressar na sessão.
+O trecho de código a seguir mostra um exemplo de junção de um instalador secundário à sessão do Gerenciador de reinicialização existente. o exemplo requer o Windows Vista ou o Windows Server 2008. O instalador secundário Obtém a chave de sessão do instalador primário e a usa para ingressar na sessão.
 
 
 ```C++
@@ -321,9 +321,9 @@ int _cdecl wmain()
 
 
 
- 
+ 
 
- 
+ 
 
 
 

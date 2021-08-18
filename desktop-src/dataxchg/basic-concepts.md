@@ -3,27 +3,27 @@ title: Conceitos básicos
 description: Este tópico discute os principais conceitos relacionados à troca de dados dinâmicas.
 ms.assetid: 37826d83-4dcd-484f-b1aa-87bf309c5c09
 keywords:
-- Interface do usuário do Windows, troca dinâmica de dados (DDE)
-- Interface do usuário do Windows, biblioteca de gerenciamento de troca dinâmica de dados (DDEML)
-- Troca dinâmica de dados (DDE), interação do servidor cliente
+- Windows Interface do usuário, troca dinâmica de dados (DDE)
+- Windows Interface do usuário, biblioteca de gerenciamento de troca dinâmica de dados (DDEML)
+- troca dinâmica de dados (DDE), interação do servidor cliente
 - DDE (troca dinâmica de dados), interação do servidor cliente
 - troca de dados, troca dinâmica de dados (DDE)
-- Data Exchange, biblioteca de gerenciamento de troca dinâmica de dados (DDEML)
-- Troca dinâmica de dados (DDE), aplicativos cliente
+- data exchange, biblioteca de gerenciamento de troca dinâmica de dados (DDEML)
+- troca dinâmica de dados (DDE), aplicativos cliente
 - DDE (troca dinâmica de dados), aplicativos cliente
-- Troca dinâmica de dados (DDE), aplicativos de servidor
+- troca dinâmica de dados (DDE), aplicativos de servidor
 - DDE (troca dinâmica de dados), aplicativos de servidor
-- Troca dinâmica de dados (DDE), funções de retorno de chamada
+- troca dinâmica de dados (DDE), funções de retorno de chamada
 - DDE (troca dinâmica de dados), funções de retorno de chamada
-- Troca dinâmica de dados (DDE), transações
+- troca dinâmica de dados (DDE), transações
 - DDE (troca dinâmica de dados), transações
-- Troca dinâmica de dados (DDE), nomes de serviço
+- troca dinâmica de dados (DDE), nomes de serviço
 - DDE (troca dinâmica de dados), nomes de serviço
-- Troca dinâmica de dados (DDE), nomes de item
+- troca dinâmica de dados (DDE), nomes de item
 - DDE (troca dinâmica de dados), nomes de item
-- Troca dinâmica de dados (DDE), nomes de tópico
+- troca dinâmica de dados (DDE), nomes de tópico
 - DDE (troca dinâmica de dados), nomes de tópico
-- Troca dinâmica de dados (DDE), tópico do sistema
+- troca dinâmica de dados (DDE), tópico do sistema
 - DDE (troca dinâmica de dados), tópico do sistema
 - DDEML (biblioteca de gerenciamento de troca dinâmica de dados), inicialização
 - DDEML (biblioteca de gerenciamento de troca dinâmica de dados), inicialização
@@ -33,22 +33,22 @@ keywords:
 - DDEML (biblioteca de gerenciamento de troca dinâmica de dados), gerenciamento de cadeia de caracteres
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c564bffbcbb06ddc3a0e0fa4e0a9ed398d3ca55
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fae271c359afd571cf6c51fb3387a15f1496416e5eb54b055ef518fd213f30fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128618"
 ---
 # <a name="basic-concepts-dde"></a>Conceitos básicos (DDE)
 
-Esses conceitos são fundamentais para entender troca dinâmica de dados (DDE) e a biblioteca de gerenciamento de troca dinâmica de dados (DDEML).
+esses conceitos são fundamentais para entender troca dinâmica de dados (DDE) e a biblioteca de gerenciamento de troca dinâmica de dados (DDEML).
 
 -   [Interação de cliente e servidor](#client-and-server-interaction)
 -   [Transações e a função de retorno de chamada DDE](#transactions-and-the-dde-callback-function)
 -   [Nomes de serviço, nomes de tópico e nomes de item](#service-names-topic-names-and-item-names)
 -   [Tópico do sistema](#system-topic)
--   [Initialization](#initialization)
+-   [Inicialização](#initialization)
 -   [Função de retorno de chamada](#callback-function)
 -   [Gerenciamento de cadeia de caracteres](#string-management)
 -   [DDEML e threads](#ddeml-and-threads)

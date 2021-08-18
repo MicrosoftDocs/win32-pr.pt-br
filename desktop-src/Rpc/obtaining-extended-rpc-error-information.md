@@ -6,12 +6,12 @@ keywords:
 - RPC de chamada de procedimento remoto, práticas recomendadas, informações de erro estendidas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7856dd76a86763fc3f537577f9c547508fbf34ee
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 70816130a85d384e814d0653ce0502a8b3ed4e8b758768002f1ebdd98710c09a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118927609"
 ---
 # <a name="obtaining-extended-rpc-error-information"></a>Obtendo informações estendidas de erro RPC
 
@@ -31,9 +31,9 @@ Esta seção é dividida nos seguintes tópicos:
 
 Esta seção está fortemente ligada à depuração do aplicativo RPC. Para obter informações adicionais sobre a depuração RPC, consulte \[ pacote do depurador \] .
 
- 
+ 
 
- 
+ 
 
 
 

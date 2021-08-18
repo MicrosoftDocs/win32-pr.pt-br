@@ -1,19 +1,19 @@
 ---
-description: Este tópico fornece uma visão geral de como você pode usar as APIs do Windows Imaging Component (WIC) para ler e gravar metadados inseridos em arquivos de imagem.
+description: este tópico fornece uma visão geral de como você pode usar as APIs do componente de Windows Imaging (WIC) para ler e gravar metadados inseridos em arquivos de imagem.
 ms.assetid: b1e0b936-a13a-42dd-8470-957ba1d90423
 title: Visão geral da leitura e gravação de metadados de imagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 484d562b71184c20adf054f1de2a4203878da9b8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 191ffbe919e09acb153505fd3b43b50453b67708259206bffe66a0322d485a1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119088128"
 ---
 # <a name="overview-of-reading-and-writing-image-metadata"></a>Visão geral da leitura e gravação de metadados de imagem
 
-Este tópico fornece uma visão geral de como você pode usar as APIs do Windows Imaging Component (WIC) para ler e gravar metadados inseridos em arquivos de imagem.
+este tópico fornece uma visão geral de como você pode usar as APIs do componente de Windows Imaging (WIC) para ler e gravar metadados inseridos em arquivos de imagem.
 
 Este tópico inclui as seções a seguir.
 
@@ -49,7 +49,7 @@ O mais fácil é usar um leitor de consulta/gravador e uma expressão de consult
 
 O método mais avançado é acessar diretamente os manipuladores de metadados. Um manipulador de metadados é obtido dos quadros individuais usando um leitor de bloco ([**IWICMetadataBlockReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockreader)) ou um gravador de bloco ([**IWICMetadataBlockWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatablockwriter)). Os dois tipos de manipuladores de metadados disponíveis são o leitor de metadados ([**IWICMetadataReader**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatareader)) e o gravador de metadados ([**IWICMetadataWriter**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwicmetadatawriter)).
 
-O diagrama a seguir do conteúdo de um arquivo de imagem JPEG é usado em todos os exemplos neste tópico. A imagem representada por este diagrama foi criada usando o Microsoft Paint; os metadados de classificação foram adicionados usando o recurso Galeria de fotos do Windows Vista.
+O diagrama a seguir do conteúdo de um arquivo de imagem JPEG é usado em todos os exemplos neste tópico. A imagem representada por este diagrama foi criada usando Microsoft Paint; os metadados de classificação foram adicionados usando o recurso galeria de fotos do Windows Vista.
 
 ![ilustração de imagem JPEG com metadados de classificação](graphics/jpeg.png)
 
@@ -248,11 +248,11 @@ hr = pFrameEncode->GetMetadataQueryWriter(&pFrameQWriter);
 
 
 
-Da mesma forma, um gravador de consulta também pode ser obtido para o nível do codificador. Uma chamada simples para o método **GetMetadataQueryWriter** do codificador Obtém o gravador de consulta do codificador. O gravador de consulta de um codificador, diferente do gravador de consulta de um quadro, grava metadados para uma imagem fora do quadro individual. No entanto, esse cenário não é comum e os formatos de imagem nativa não oferecem suporte a esse recurso. Os codecs de imagem nativa fornecidos pelos metadados de leitura e gravação do WIC no nível do quadro, mesmo para formatos de quadro único, como JPEG.
+Da mesma forma, um gravador de consulta também pode ser obtido para o nível do codificador. Uma chamada simples para o método **GetMetadataQueryWriter** do codificador Obtém o gravador de consulta do codificador. O gravador de consulta de um codificador, diferente do gravador de consulta de um quadro, grava metadados para uma imagem fora do quadro individual. No entanto, esse cenário não é comum e os formatos de imagem nativa não suportam essa funcionalidade. Os codecs de imagem nativa fornecidos pelo WIC leem e escrevem metadados no nível do quadro, mesmo para formatos de quadro único, como JPEG.
 
-Você também pode obter um gravador de consulta diretamente do [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)(Imaging Factory). Há dois métodos de fábrica de geração de imagens que retornam um gravador de consulta: **CreateQueryWriter** e **CreateQueryWriterFromReader**.
+Você também pode obter um autor de consulta diretamente da fábrica de imagens ([**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)). Há dois métodos de fábrica de imagens que retornam um autor de consulta: **CreateQueryWriter** e **CreateQueryWriterFromReader**.
 
-**CreateQueryWriter** cria um gravador de consulta para o formato de metadados e o fornecedor especificados. Esse gravador de consulta permite que você grave metadados para um formato de metadados específico e adicione-os à imagem. O código a seguir demonstra uma chamada **CreateQueryWriter** para criar um gravador de consulta XMP.
+**CreateQueryWriter** cria um autor de consulta para o formato de metadados e o fornecedor especificados. Esse autor de consulta permite que você escreva metadados para um formato de metadados específico e adicione-os à imagem. O código a seguir demonstra uma **chamada CreateQueryWriter** para criar um autor de consulta XMP.
 
 
 ```
@@ -268,9 +268,9 @@ hr = pFactory->CreateQueryWriter(
 
 
 
-Neste exemplo, o nome amigável `GUID_MetadataFormatXMP` é usado como o parâmetro *guidMetadataFormat* . Ele representa o GUID do formato de metadados XMP e o fornecedor representa o manipulador criado pela Microsoft. Como alternativa, **NULL** pode ser passado como o parâmetro *pguidVendor* com os mesmos resultados se nenhum outro manipulador XMP existir. Se um manipulador XMP personalizado for instalado junto com o manipulador XMP nativo, a passagem de **NULL** para o fornecedor resultará no gravador de consultas com o menor GUID sendo retornado.
+Neste exemplo, o nome amigável `GUID_MetadataFormatXMP` é usado como o parâmetro *guidMetadataFormat.* Ele representa o GUID de formato de metadados XMP e o fornecedor representa o manipulador criado pela Microsoft. Como alternativa, **NULL** pode ser passado como o *parâmetro pguidVendor* com os mesmos resultados se nenhum outro manipulador XMP existir. Se um manipulador XMP personalizado for instalado junto com o manipulador XMP nativo, passar **NULL** para o fornecedor fará com que o autor da consulta com o GUID mais baixo seja retornado.
 
-**CreateQueryWriterFromReader** é semelhante ao método **CreateQueryWriter** , exceto pelo fato de que ele popula o novo gravador de consulta com os dados fornecidos pelo leitor de consultas. Isso é útil para codificar novamente uma imagem enquanto mantém os metadados existentes ou para remover metadados indesejados. O código a seguir demonstra uma chamada **CreateQueryWriterFromReader** .
+**CreateQueryWriterFromReader** é semelhante ao método **CreateQueryWriter,** exceto que ele pré-popula o novo autor de consultas com os dados fornecidos pelo leitor de consulta. Isso é útil para codificar uma imagem enquanto mantém os metadados existentes ou para remover metadados indesejados. O código a seguir demonstra uma **chamada CreateQueryWriterFromReader.**
 
 
 ```
@@ -292,9 +292,9 @@ if(SUCCEEDED(hr) && pFrameQReader)
 
 ### <a name="adding-metadata"></a>Adicionando metadados
 
-Depois de obter um gravador de consulta, você pode usá-lo para adicionar itens e blocos de metadados. Para gravar metadados, use o método **SetMetadataByName** do gravador de consulta. **SetMetadataByName** usa dois parâmetros: uma expressão de consulta (*wzName*) e um ponteiro para um [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) (*pvarValue*). A expressão de consulta define o bloco ou o item a ser definido enquanto o PROPVARIANT fornece o valor de dados real a ser definido.
+Depois de obter um autor de consulta, você pode usá-lo para adicionar blocos de metadados e itens. Para gravar metadados, use o método **SetMetadataByName** do autor da consulta. **SetMetadataByName** aceita dois parâmetros: uma expressão de consulta (*wzName*) e um ponteiro para [um PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) (*pvarValue*). A expressão de consulta define o bloco ou item a ser definido enquanto PROPVARIANT fornece o valor de dados real a ser definido.
 
-O exemplo a seguir demonstra como adicionar um título usando o gravador de consulta XMP obtido anteriormente usando o método **CreateQueryWriter** .
+O exemplo a seguir demonstra como adicionar um título usando o autor da consulta XMP obtido anteriormente usando o **método CreateQueryWriter.**
 
 
 ```
@@ -315,9 +315,9 @@ if (SUCCEEDED(hr))
 
 
 
-Neste exemplo, o tipo do valor (VT) é definido como `VT_LPWSTR` , indicando que uma cadeia de caracteres será usada como o valor dos dados. Como o tipo do *valor* é uma cadeia de caracteres, *pwszVal* é usado para definir o título a ser usado. Em seguida, **SetMetadataByName** é chamado usando a expressão de consulta "/DC: title" e o [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant)definido recentemente. A expressão de consulta usada indica que a propriedade Title no esquema de Digital Camera (DC) deve ser definida. Observe que a expressão não é "/XMP/DC: title"; Isso ocorre porque o gravador de consulta já é específico do XMP e não contém um bloco XMP inserido, que "/XMP/DC: title" sugere.
+Neste exemplo, o tipo de value (vt) é definido como , indicando que uma cadeia de caracteres `VT_LPWSTR` será usada como o valor de dados. Como *o tipo* do valor é uma cadeia de *caracteres, pwszVal* é usado para definir o título a ser usado. **SetMetadataByName** é chamado usando a expressão de consulta "/dc:title" e o [recém-definido PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant). A expressão de consulta usada indica que a propriedade title no esquema da câmera digital (dc) deve ser definida. Observe que a expressão não é "/xmp/dc:title"; isso porque o autor da consulta já é específico do XMP e não contém um bloco XMP inserido, que "/xmp/dc:title" sugeriria.
 
-Até este ponto, você não adicionou nenhum metadado a um quadro de imagem. Você simplesmente preencheu um gravador de consulta com dados. Para adicionar a um quadro um bloco de metadados representado pelo gravador de consulta, você chama novamente **SetMetadataByName** usando o gravador de consulta como o valor de [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant). Isso efetivamente copia os metadados no gravador de consulta para o quadro de imagem. O código a seguir demonstra como adicionar os metadados no gravador de consulta XMP obtido anteriormente ao bloco de metadados raiz de um quadro.
+Até esse ponto, você não adicionou nenhum metadado a um quadro de imagem. Você simplesmente preencheu um autor de consultas com dados. Para adicionar a um quadro um bloco de metadados representado pelo autor da consulta, chame novamente **SetMetadataByName** usando o autor da consulta como o [valor de PROPVARIANT.](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) Isso efetivamente copia os metadados no autor da consulta para o quadro de imagem. O código a seguir demonstra como adicionar os metadados no autor da consulta XMP obtidos anteriormente ao bloco de metadados raiz de um quadro.
 
 
 ```
@@ -345,16 +345,16 @@ if (SUCCEEDED(hr))
 
 
 
-Neste exemplo, um tipo de valor (VT) de `VT_UNKOWN` é usado; indicando um tipo de valor de interface com. O gravador de consulta XMP (piXMPWriter) é usado como o valor de [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant), adicionando uma referência a ele usando o método AddRef. Por fim, o gravador de consulta XMP é definido chamando o método **SetMetadataByName** do quadro e passando a expressão de consulta "/", indicando o bloco raiz e o PROPVARIANT recentemente definido.
+Neste exemplo, um tipo de valor (vt) de `VT_UNKOWN` é usado, indicando um tipo de valor de interface COM. O autor da consulta XMP (piXMPWriter) é usado como o valor de [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant), adicionando uma referência a ele usando o método AddRef. Por fim, o autor da consulta XMP é definido chamando o método **SetMetadataByName** do quadro e passando a expressão de consulta "/", indicando o bloco raiz e o PROPVARIANT recém-definido.
 
 > [!Note]  
-> Se o quadro já contiver o bloco de metadados que você está tentando adicionar, os metadados que você está adicionando serão adicionados e os metadados existentes são substituídos.
+> Se o quadro já contiver o bloco de metadados que você está tentando adicionar, os metadados que você está adicionando serão adicionados e os metadados existentes serão substituídos.
 
  
 
 ### <a name="removing-metadata"></a>Removendo metadados
 
-Um gravador de consulta também permite remover metadados chamando o método **RemoveMetadataByName** . **RemoveMetadataByName** usa uma expressão de consulta e remove o bloco de metadados ou o item, se ele existir. O código a seguir demonstra como remover o título que foi adicionado anteriormente.
+Um autor de consulta também permite remover metadados chamando o **método RemoveMetadataByName.** **RemoveMetadataByName** pega uma expressão de consulta e remove o bloco ou item de metadados, se ele existir. O código a seguir demonstra como remover o título que foi adicionado anteriormente.
 
 
 ```
@@ -378,16 +378,16 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="copying-metadata-for-re-encoding"></a>Copiando metadados para nova codificação
+### <a name="copying-metadata-for-re-encoding"></a>Copiando metadados para codificação
 
 > [!Note]  
-> O código nesta seção é válido somente quando os formatos de imagem de origem e destino são os mesmos. Você não pode copiar todos os metadados de uma imagem em uma única operação ao codificar para um formato de imagem diferente.
+> O código nesta seção é válido somente quando os formatos de imagem de origem e de destino são os mesmos. Você não pode copiar todos os metadados de uma imagem em uma única operação ao codificar para um formato de imagem diferente.
 
  
 
-Para preservar os metadados ao codificar novamente uma imagem no mesmo formato de imagem, há métodos disponíveis para copiar todos os metadados em uma única operação. Cada uma dessas operações segue um padrão semelhante; cada um define os metadados do quadro decodificado diretamente no novo quadro que está sendo codificado.
+Para preservar metadados ao codificar uma imagem no mesmo formato de imagem, há métodos disponíveis para copiar todos os metadados em uma única operação. Cada uma dessas operações segue um padrão semelhante; cada define os metadados do quadro decodificado diretamente no novo quadro que está sendo codificado.
 
-O método preferencial para copiar metadados é inicializar o gravador de bloco do novo quadro com o leitor de bloco do quadro decodificado. O código a seguir demonstra esse método.
+O método preferencial para copiar metadados é inicializar o bloqueador do novo quadro com o leitor de bloco do quadro decodificado. O código a seguir demonstra esse método.
 
 
 ```
@@ -415,9 +415,9 @@ if (SUCCEEDED(hr) && formatsEqual)
 
 
 
-Neste exemplo, o leitor de bloco e o gravador de bloco são obtidos do quadro de origem e do quadro de destino, respectivamente. Em seguida, o gravador de bloco é inicializado a partir do leitor de blocos. Isso inicializa o leitor de bloco com os metadados preenchidos previamente do leitor de bloco.
+Neste exemplo, o leitor de bloco e o bloqueador são obtidos do quadro de origem e do quadro de destino, respectivamente. O bloqueador de blocos é inicializado do leitor de bloco. Isso inicializa o leitor de bloco com os metadados pré-populados do leitor de bloco.
 
-Outro método para copiar metadados é gravar o bloco de metadados referenciado pelo leitor de consulta usando o gravador de consultas do codificador. O código a seguir demonstra esse método.
+Outro método para copiar metadados é gravar o bloco de metadados referenciado pelo leitor de consulta usando o autor da consulta do codificador. O código a seguir demonstra esse método.
 
 
 ```
@@ -444,9 +444,9 @@ if (SUCCEEDED(hr) && formatsEqual)
 
 
 
-Aqui, um leitor de consulta é obtido do quadro decodificado e, em seguida, usado como o valor da Propriedade do [PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) com um tipo de valor definido como VT \_ desconhecido. O gravador de consulta para o codificador é obtido e a expressão de consulta "/" é usada para definir os metadados no caminho de navegação raiz. Você também pode usar esse método ao definir blocos de metadados aninhados, ajustando a expressão de consulta para o local desejado.
+Aqui, um leitor de consulta é obtido do quadro decodificado e, em seguida, usado como o valor da propriedade [do PROPVARIANT](/windows/win32/api/propidlbase/ns-propidlbase-propvariant) com um tipo de valor definido como VT \_ UNKNOWN. O autor da consulta para o codificador é obtido e a expressão de consulta "/" é usada para definir os metadados no caminho de navegação raiz. Você também pode usar esse método ao definir blocos de metadados aninhados, ajustando a expressão de consulta para o local desejado.
 
-Da mesma forma, você pode criar um gravador de consulta baseado no leitor de consulta do quadro decodificado usando o método **CreateQueryWriterFromReader** do Imaging Factory. O gravador de consulta criado nesta operação será preenchido previamente com os metadados do leitor de consulta e, em seguida, poderá ser definido no quadro. O código a seguir demonstra a operação de cópia **CreateQueryWriterFromReader** .
+Da mesma forma, você pode criar um autor de consulta com base no leitor de consulta do quadro decodificado usando o método **CreateQueryWriterFromReader** da fábrica de imagens. O autor da consulta criado nesta operação será pré-populado com os metadados do leitor de consulta e poderá ser definido no quadro. O código a seguir demonstra a **operação de cópia CreateQueryWriterFromReader.**
 
 
 ```
@@ -479,19 +479,19 @@ if (SUCCEEDED(hr))
 
 
 
-Esse método usa um gravador de consulta separado criado com base nos dados do leitor de consulta. Esse novo gravador de consulta, em seguida, é definido no quadro.
+Esse método usa um autor de consulta separado criado com base nos dados do leitor de consulta. Em seguida, esse novo autor de consulta é definido no quadro.
 
-Novamente, essas operações para copiar metadados só funcionam quando as imagens de origem e destino têm o mesmo formato. Isso ocorre porque diferentes formatos de imagem armazenam os blocos de metadados em locais diferentes. Por exemplo, JPEG e TIFF dão suporte a blocos de metadados XMP. Em imagens JPEG, o bloco XMP está no bloco de metadados raiz, conforme ilustrado na [visão geral dos metadados do WIC](-wic-about-metadata.md). No entanto, em uma imagem TIFF, o bloco XMP é aninhado em um bloco de IFD raiz. O diagrama a seguir ilustra as diferenças entre uma imagem JPEG e uma imagem TIFF com os mesmos metadados de classificação.
+Novamente, essas operações para copiar metadados só funcionam quando as imagens de origem e de destino têm o mesmo formato. Isso porque formatos de imagem diferentes armazenam os blocos de metadados em locais diferentes. Por exemplo, JPEG e TIFF são suportados por blocos de metadados XMP. Em imagens JPEG, o bloco XMP está no bloco de metadados raiz, conforme ilustrado na Visão geral de [metadados do WIC.](-wic-about-metadata.md) No entanto, em uma imagem TIFF, o bloco XMP é aninhado em um bloco IFD raiz. O diagrama a seguir ilustra as diferenças entre uma imagem JPEG e uma imagem TIFF com os mesmos metadados de classificação.
 
-![comparação de JPEG e TIFF.](graphics/jpgvstiff.png)
+![Comparação jpeg e tiff.](graphics/jpgvstiff.png)
 
 ## <a name="fast-metadata-encoding"></a>Codificação rápida de metadados
 
-Nem sempre é necessário codificar novamente uma imagem para gravar novos metadados nela. Os metadados também podem ser gravados usando um codificador de metadados rápido. Um codificador de metadados rápido pode gravar uma quantidade limitada de metadados em uma imagem sem codificar novamente a imagem. Isso é feito escrevendo-se os novos metadados dentro do preenchimento vazio fornecido por alguns formatos de metadados. Os formatos de metadados nativos que dão suporte ao preenchimento de metadados são EXIF, IFD, GPS e XMP.
+Nem sempre é necessário codificar uma imagem para gravar novos metadados nele. Os metadados também podem ser gravados usando um codificador de metadados rápido. Um codificador de metadados rápido pode gravar uma quantidade limitada de metadados em uma imagem sem codificar a imagem. Isso é feito escrevendo os novos metadados no preenchimento vazio fornecido por alguns formatos de metadados. Os formatos de metadados nativos que suportam o preenchimento de metadados são Exif, IFD, GPS e XMP.
 
 ### <a name="adding-padding-to-metadata-blocks"></a>Adicionando preenchimento a blocos de metadados
 
-Antes que você possa executar a codificação de metadados rápida, deve haver espaço no bloco de metadados para gravar mais metadados. Se não houver espaço suficiente no preenchimento existente para gravar os novos metadados, a codificação rápida de metadados falhará. Para adicionar o preenchimento de metadados a uma imagem, a imagem deve ser codificada novamente. Você pode adicionar o preenchimento da mesma maneira que adicionaria qualquer outro item de metadados, usando uma expressão de consulta, se o bloco de metadados que você está preenchendo oferecer suporte a ele. O exemplo a seguir demonstra como adicionar o preenchimento a um bloco IFD inserido em um bloco App1.
+Antes de executar a codificação de metadados rápida, deve haver espaço dentro do bloco de metadados para gravar mais metadados. Se não houver espaço suficiente no preenchimento existente para gravar os novos metadados, a codificação rápida de metadados falhará. Para adicionar preenchimento de metadados a uma imagem, a imagem deve ser codificada de forma nova. Você pode adicionar o preenchimento da mesma maneira que adicionaria qualquer outro item de metadados, usando uma expressão de consulta, se o bloco de metadados que você estiver padding dá suporte a ele. O exemplo a seguir demonstra como adicionar preenchimento a um bloco IFD inserido em um bloco App1.
 
 
 ```
@@ -512,16 +512,16 @@ if (SUCCEEDED(hr))
 
 
 
-Para adicionar o preenchimento, crie um PROPVARIANT do tipo VT \_ UI4 e um valor correspondente ao número de bytes de preenchimento a serem adicionados. Um valor típico é 4096 bytes. As consultas de metadados para JPEG, TIFF e JPEG-XR estão nesta tabela.
+Para adicionar preenchimento, crie um PROPVARIANT do tipo VT UI4 e um valor correspondente ao número de \_ bytes de preenchimento a adicionar. Um valor típico é 4096 bytes. As consultas de metadados para JPEG, TIFF e JPEG-XR estão nesta tabela.
 
 
 
-| Formato de metadados | Consulta de metadados JPEG                  | TIFF, consulta de metadados de JPEG-XR    |
+| Formato de metadados | Consulta de metadados JPEG                  | Consulta de metadados TIFF, JPEG-XR    |
 |-----------------|--------------------------------------|---------------------------------|
-| IFD             | /app1/ifd/PaddingSchema: preenchimento      | /ifd/PaddingSchema: preenchimento      |
-| EXIF            | /app1/ifd/exif/PaddingSchema: preenchimento | /ifd/exif/PaddingSchema: preenchimento |
-| XMP             | /xmp/PaddingSchema: preenchimento           | /ifd/xmp/PaddingSchema: preenchimento  |
-| GPS             | /app1/ifd/gps/PaddingSchema: preenchimento  | /ifd/gps/PaddingSchema: preenchimento  |
+| IFD             | /app1/ifd/PaddingSchema:Padding      | /ifd/PaddingSchema:Padding      |
+| Exif            | /app1/ifd/exif/PaddingSchema:Padding | /ifd/exif/PaddingSchema:Padding |
+| Xmp             | /xmp/PaddingSchema:Padding           | /ifd/xmp/PaddingSchema:Padding  |
+| GPS             | /app1/ifd/gps/PaddingSchema:Padding  | /ifd/gps/PaddingSchema:Padding  |
 
 
 
@@ -529,11 +529,11 @@ Para adicionar o preenchimento, crie um PROPVARIANT do tipo VT \_ UI4 e um valor
 
 ### <a name="obtaining-a-fast-metadata-encoder"></a>Obtendo um codificador de metadados rápido
 
-Quando você tem uma imagem com preenchimento de metadados, um codificador de metadados rápido pode ser obtido usando os métodos **CreateFastMetadataEncoderFromDecoder** e **CreateFastMetadataEncoderFromFrameDecode** do Imaging Factory.
+Quando você tem uma imagem com preenchimento de metadados, um codificador de metadados rápido pode ser obtido usando os métodos de fábrica de imagens **CreateFastMetadataEncoderFromDecoder** e **CreateFastMetadataEncoderFromFrameDecode**.
 
-Como o nome indica, o **CreateFastMetadataEncoderFromDecoder** cria um codificador de metadados rápido para metadados no nível do decodificador. Os formatos de imagem nativa fornecidos pelo WIC não dão suporte a metadados em nível de decodificador, mas esse método é fornecido no caso de um formato de imagem ser desenvolvido no futuro.
+Como o nome indica, **CreateFastMetadataEncoderFromDecoder** cria um codificador de metadados rápido para metadados no nível do decodificador. Os formatos de imagem nativa fornecidos pelo WIC não são suportados por metadados no nível do decodificador, mas esse método é fornecido caso esse formato de imagem seja desenvolvido no futuro.
 
-O cenário mais comum é obter um codificador de metadados rápido de um quadro de imagem usando **CreateFastMetadataEncoderFromFrameDecode**. O código a seguir obtém um codificador de metadados rápidos de um quadro decodificado e altera o valor de classificação no bloco App1.
+O cenário mais comum é obter um codificador de metadados rápido de um quadro de imagem usando **CreateFastMetadataEncoderFromFrameDecode**. O código a seguir obtém o codificador de metadados rápidos de um quadro decodificado e altera o valor de classificação no bloco App1.
 
 
 ```
@@ -550,9 +550,9 @@ if (SUCCEEDED(hr))
 
 
 
-### <a name="using-the-fast-metadata-encoder"></a>Usando o codificador de metadados rápido
+### <a name="using-the-fast-metadata-encoder"></a>Usando o Codificador de Metadados Rápidos
 
-No codificador de metadados rápido, você pode obter um gravador de consulta. Isso permite que você grave metadados usando uma expressão de consulta como demonstrado anteriormente. Depois que os metadados tiverem sido definidos no gravador de consultas, confirme o codificador de metadados rápidos para finalizar a atualização de metadados. O código a seguir demonstra como configurar e confirmar as alterações de metadados
+No codificador de metadados rápido, você pode obter um autor de consulta. Isso permite que você escreva metadados usando uma expressão de consulta conforme demonstrado anteriormente. Depois que os metadados foram definidos no autor da consulta, commit o codificador de metadados rápido para finalizar a atualização de metadados. O código a seguir demonstra a configuração e a confirmação das alterações de metadados
 
 
 ```
@@ -584,16 +584,16 @@ No codificador de metadados rápido, você pode obter um gravador de consulta. I
 
 
 
-Se a **confirmação** falhar por algum motivo, será necessário codificar novamente a imagem para garantir que os novos metadados sejam adicionados à imagem.
+Se **a** confirmação falhar por algum motivo, você precisará codificar a imagem de novo para garantir que os novos metadados são adicionados à imagem.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de imagens](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [Visão geral dos metadados do WIC](-wic-about-metadata.md)
@@ -605,7 +605,7 @@ Se a **confirmação** falhar por algum motivo, será necessário codificar nova
 [Visão geral da extensibilidade de metadados](-wic-codec-metadatahandlers.md)
 </dt> <dt>
 
-[Como: codificar novamente uma imagem JPEG com metadados](-wic-codec-jpegmetadataencoding.md)
+[Como codificar uma imagem JPEG com metadados](-wic-codec-jpegmetadataencoding.md)
 </dt> </dl>
 
  

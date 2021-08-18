@@ -1,7 +1,7 @@
 ---
 description: Essa classe é a classe de tipo de evento para eventos de contador de processo. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 7f1fa1c4-a2ff-4a1c-ac9d-e922a13c99a1
-title: Classe Process_V2_TypeGroup2
+title: Process_V2_TypeGroup2 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -27,14 +27,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 284b77da03b53f9c2662c8729a7bf6606c45630a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 51c24e12ed423b6240daeefee0b69a40f9b14b86813ca83cb09f74f807e24429
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119069946"
 ---
-# <a name="process_v2_typegroup2-class"></a>\_Classe Process v2 \_ TypeGroup2
+# <a name="process_v2_typegroup2-class"></a>Classe \_ Process V2 \_ TypeGroup2
 
 Essa classe é a classe de tipo de evento para eventos de contador de processo.
 
@@ -66,42 +66,42 @@ class Process_V2_TypeGroup2 : Process_V2
 
 ## <a name="members"></a>Membros
 
-A classe **process \_ v2 \_ TypeGroup2** tem estes tipos de membros:
+A **classe \_ Process V2 \_ TypeGroup2** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **process \_ v2 \_ TypeGroup2** tem essas propriedades.
+A **classe Process \_ V2 \_ TypeGroup2** tem essas propriedades.
 
 <dl> <dt>
 
 **HandleCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3)
+Qualificadores: WmiDataId(3)
 </dt> </dl>
 
-Contagem de identificadores usados.
+Contagem de alças usadas.
 
 </dd> <dt>
 
 **PageFaultCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2)
+Qualificadores: WmiDataId(2)
 </dt> </dl>
 
 Contagem de falhas de página.
@@ -117,10 +117,10 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (12), extensão ("tamanho")
+Qualificadores: WmiDataId(12), Extension("SizeT")
 </dt> </dl>
 
-Uso do arquivo de paginação atual.
+Uso atual do arquivo de página.
 
 </dd> <dt>
 
@@ -133,10 +133,10 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (7), extensão ("Tamanhot")
+Qualificadores: WmiDataId(7), Extension("SizeT")
 </dt> </dl>
 
-Tamanho de arquivo de paginação maior usado.
+Maior tamanho de arquivo de página usado.
 
 </dd> <dt>
 
@@ -149,7 +149,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5), extensão ("tamanho")
+Qualificadores: WmiDataId(5), Extension("SizeT")
 </dt> </dl>
 
 Maior tamanho de página virtual usado.
@@ -165,7 +165,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (6), extensão ("tamanho")
+Qualificadores: WmiDataId(6), Extension("SizeT")
 </dt> </dl>
 
 Maior tamanho de conjunto de trabalho usado.
@@ -181,7 +181,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (15), extensão ("tamanho")
+Qualificadores: WmiDataId(15), Extension("SizeT")
 </dt> </dl>
 
 Contagem de páginas físicas privadas atuais.
@@ -191,16 +191,16 @@ Contagem de páginas físicas privadas atuais.
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), formato ("x")
+Qualificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
-Identificador de processo global que você pode usar para identificar um processo. O valor é válido a partir do momento em que um processo é criado até ser encerrado.
+Identificador de processo global que você pode usar para identificar um processo. O valor é válido desde o momento em que um processo é criado até ser encerrado.
 
 </dd> <dt>
 
@@ -213,10 +213,10 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (14), extensão ("Tamanhot")
+Qualificadores: WmiDataId(14), Extension("SizeT")
 </dt> </dl>
 
-Uso atual da memória não paginável confirmada.
+Uso atual de memória não pageda.
 
 </dd> <dt>
 
@@ -229,10 +229,10 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (13), extensão ("tamanho")
+Qualificadores: WmiDataId(13), Extension("SizeT")
 </dt> </dl>
 
-Uso atual da memória paginável confirmada.
+Uso de memória com página de compromisso atual.
 
 </dd> <dt>
 
@@ -245,10 +245,10 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (9), extensão ("Tamanhot")
+Qualificadores: WmiDataId(9), Extension("SizeT")
 </dt> </dl>
 
-Maior memória confirmada que não foi paginável usada.
+Maior memória não pageda usada.
 
 </dd> <dt>
 
@@ -261,23 +261,23 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (8), extensão ("tamanho")
+Qualificadores: WmiDataId(8), Extension("SizeT")
 </dt> </dl>
 
-Maior memória paginável confirmada usada.
+Maior memória com página comprometida usada.
 
 </dd> <dt>
 
 **Reserved**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4)
+Qualificadores: WmiDataId(4)
 </dt> </dl>
 
 Reservado.
@@ -293,7 +293,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (10), extensão ("tamanho")
+Qualificadores: WmiDataId(10), Extension("SizeT")
 </dt> </dl>
 
 Tamanho atual da página virtual.
@@ -309,7 +309,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (11), extensão ("Tamanhot")
+Qualificadores: WmiDataId(11), Extension("SizeT")
 </dt> </dl>
 
 Tamanho atual do conjunto de trabalho.
@@ -318,7 +318,7 @@ Tamanho atual do conjunto de trabalho.
 
 ## <a name="remarks"></a>Comentários
 
-Esses eventos são registrados quando o processo termina. O evento indica como um processo tratou de uso de memória.
+Esses eventos são registrados quando o processo termina. O evento indica como um processo tratou o uso de memória.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -326,8 +326,8 @@ Esses eventos são registrados quando o processo termina. O evento indica como u
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -335,7 +335,7 @@ Esses eventos são registrados quando o processo termina. O evento indica como u
 
 <dl> <dt>
 
-[**Processo \_ v2**](process-v2.md)
+[**Processo \_ V2**](process-v2.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
 title: Elemento ENTRYREF
-description: O elemento ENTRYREF aponta para os elementos de entrada em um metarquivo externo.
+description: O elemento ENTRYREF aponta para os elementos ENTRY em um metadado externo.
 ms.assetid: ba39db39-fa90-455b-b278-ca866ce0b69c
 keywords:
-- Elemento ENTRYREF do Windows Media Player
+- Elemento ENTRYREF Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 520a4262baf17badb136b55e7b2e216bf89d7edf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 61fa3403fc56c6a02f97330b3c2f62d1c3e3c723f50672520ea42fb4a2018705
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996665"
 ---
 # <a name="entryref-element"></a>Elemento ENTRYREF
 
-O elemento **ENTRYREF** aponta para os elementos de **entrada** em um metarquivo externo.
+O **elemento ENTRYREF** aponta para os **elementos ENTRY** em um metadado externo.
 
 ``` syntax
 <ENTRYREF
@@ -32,9 +32,9 @@ O elemento **ENTRYREF** aponta para os elementos de **entrada** em um metarquivo
 
 ## <a name="attributes"></a>Atributos
 
-**Href** (obrigatório)
+**HREF** (obrigatório)
 
-URL para um metarquivo referenciado.
+URL para um metadado referenciado.
 
 **CLIENTBIND**
 
@@ -46,7 +46,7 @@ Não há mais suporte para este atributo.
 
 | Hierarquia       | Elementos                       |
 |-----------------|--------------------------------|
-| Elementos pai | **ASX**, **evento**, **repetir** |
+| Elementos pai | **ASX,** **EVENT,** **REPEAT** |
 | Elementos filho  | Nenhum                           |
 
 
@@ -55,11 +55,11 @@ Não há mais suporte para este atributo.
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento aponta para o conteúdo de um metarquivo externo. O Windows Media Player processa os elementos de **entrada** do metarquivo referenciado como se eles estivessem incluídos no metarquivo primário na posição do elemento **ENTRYREF** . No entanto, ele ignora todos os elementos de **entrada** no metarquivo referenciado que têm o atributo **SKIPIFREF** definido como Sim.
+Esse elemento aponta para o conteúdo de um metadado externo. Windows Media Player processa os elementos **ENTRY** do metadado referenciado como se eles fossem incluídos no metadado primário na posição do **elemento ENTRYREF.** No entanto, ele ignora todos **os elementos ENTRY** no metadado referenciado que têm o atributo **SKIPIFREF** definido como YES.
 
-O Windows Media Player 7,0, 7,1 e Windows Media Player para Windows XP ignoram todos os elementos **ENTRYREF** no metarquivo referenciado. Portanto, os metaarquivos só podem ser aninhados em um nível profundo ao usar essas versões do Player. O Windows Media Player também ignora o elemento **ASX** no arquivo referenciado junto com seus atributos. O Windows Media Player 9 Series ou posterior dá suporte ao aninhamento de metaarquivos de até cinco níveis de profundidade.
+Windows Media Player 7.0, 7.1 e Windows Media Player para Windows XP ignoram quaisquer elementos **ENTRYREF** no metadado referenciado. Portanto, os metadados só podem ser aninhados em um nível profundo ao usar essas versões do Player. Windows Media Player também ignora o **elemento ASX** no arquivo referenciado junto com seus atributos. Windows Media Player Série 9 ou posterior dá suporte ao aninhamento de metadados de até cinco níveis de profundidade.
 
-A URL especificada no atributo **href** torna-se a URL base para quaisquer URLs relativas no metarquivo externo. Essa URL é usada quando uma entrada do metarquivo externo está sendo executada e o usuário a adiciona à biblioteca.
+A URL especificada no atributo **HREF** se torna a URL base para todas as URLs relativas no metadado externo. Essa URL é usada quando uma entrada do metadado externo está sendo reprodução e o usuário a adiciona à biblioteca.
 
 ## <a name="examples"></a>Exemplos
 
@@ -88,10 +88,10 @@ A URL especificada no atributo **href** torna-se a URL base para quaisquer URLs 
 
 <dl> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metadados de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referência do metarquivo do Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referência de metadados de mídia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

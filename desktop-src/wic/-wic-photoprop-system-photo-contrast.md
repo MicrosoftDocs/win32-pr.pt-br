@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. Photo. Contrast.
+description: A política de metadados de foto para a propriedade System.Photo.Contrast.
 ms.assetid: c5e2589d-507c-4b92-9ada-7d64e7c45dd8
-title: Política de metadados de foto System. Photo. Contrast
+title: Política de metadados de foto System.Photo.Contrast
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a1d6ed34854b525e9eaac2ff5ac7339a75ad10e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f4a9309ecab96a2244e08ebf05ff8896c792f7366c9db21d41072d2d94aacf47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119087092"
 ---
-# <a name="systemphotocontrast-photo-metadata-policy"></a>Política de metadados de foto System. Photo. Contrast
+# <a name="systemphotocontrast-photo-metadata-policy"></a>Política de metadados de foto System.Photo.Contrast
 
-A política de metadados de foto para a propriedade [System. Photo. Contrast](../properties/props-system-photo-contrast.md) .
+A política de metadados de foto para a [propriedade System.Photo.Contrast.](../properties/props-system-photo-contrast.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Contraste de fotos PKEY \_
+Contraste de \_ fotos PKEY \_
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,30 +25,30 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-No
+Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-\_UI4 VT
+VT \_ UI4
 
 ### <a name="input-type"></a>Tipo de entrada
 
 UShort
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 41992} | ushort      |
-| 2     | /XMP/EXIF: contraste            | Unicode     |
+| 1     | /app1/ifd/exif/{ushort=41992} | ushort      |
+| 2     | /xmp/exif:Contrast            | Unicode     |
 
 
 
@@ -60,8 +60,8 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 41992} | ushort      |
-| 2     | /XMP/EXIF: contraste            | Unicode     |
+| 1     | /app1/ifd/exif/{ushort=41992} | ushort      |
+| 2     | /xmp/exif:Contrast            | Unicode     |
 
 
 
@@ -73,8 +73,8 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{UShort = 41992} |
-| 2     | /XMP/EXIF: contraste            |
+| 1     | /app1/ifd/exif/{ushort=41992} |
+| 2     | /xmp/exif:contrast            |
 
 
 
@@ -82,14 +82,14 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 41992} | ushort      |
-| 2     | /IFD/XMP/EXIF: contraste   | Unicode     |
+| 1     | /ifd/exif/{ushort=41992} | ushort      |
+| 2     | /ifd/xmp/exif:Contrast   | Unicode     |
 
 
 
@@ -101,8 +101,8 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 41992} | ushort      |
-| 2     | /IFD/XMP/EXIF: contraste   | Unicode     |
+| 1     | /ifd/exif/{ushort=41992} | ushort      |
+| 2     | /ifd/xmp/exif:Contrast   | Unicode     |
 
 
 
@@ -114,8 +114,8 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     |
 |-------|--------------------------|
-| 1     | /IFD/EXIF/{UShort = 41992} |
-| 2     | /IFD/XMP/EXIF: contraste   |
+| 1     | /ifd/exif/{ushort=41992} |
+| 2     | /ifd/xmp/exif:contrast   |
 
 
 
@@ -127,7 +127,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. Photo. Contrast](../properties/props-system-photo-contrast.md)
+[System.Photo.Contrast](../properties/props-system-photo-contrast.md)
 </dt> </dl>
 
  

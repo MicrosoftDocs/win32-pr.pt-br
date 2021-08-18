@@ -4,12 +4,12 @@ ms.assetid: 0abcc20c-ba89-4eb4-bbd1-7ea27d367fb8
 title: Linhas e curvas combinadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2ee6aaa3e7a1be580e36c01fb44c81296e894d4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b1939b863bfacf2176f15c950b48c8b7c91cc43e7b6b4d4c58ac08e1760c4cee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967696"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105715"
 ---
 # <a name="combined-lines-and-curves"></a>Linhas e curvas combinadas
 

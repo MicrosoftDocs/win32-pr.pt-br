@@ -1,29 +1,29 @@
 ---
-title: Iniciando o processo de gravação
-description: Iniciando o processo de gravação
+title: Iniciando o processo de burn
+description: Iniciando o processo de burn
 ms.assetid: 91442bd2-1a68-465c-b865-63d309f33d55
 keywords:
 - Windows Media Player, gravação de CD
-- Modelo de objeto do Windows Media Player, gravação de CD
+- Windows Media Player modelo de objeto, gravação de CD
 - modelo de objeto, gravação de CD
-- Controle ActiveX do Windows Media Player, gravação de CD
-- Controle ActiveX, gravação de CD
-- Controle ActiveX móvel do Windows Media Player, gravação de CD
-- Windows Media Player Mobile, gravação de CD
-- Gravação de CD, iniciando processo de gravação
-- gravando CDs, iniciando o processo de gravação
+- Windows Media Player ActiveX controle, gravação de CD
+- ActiveX controle, gravação de CD
+- Windows Media Player Controle ActiveX dispositivo móvel, gravação de CD
+- Windows Media Player Móvel, gravação de CD
+- Gravação de CD, iniciando o processo de gravação
+- CDs de gravação, iniciando o processo de gravação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4a35f473eebe35bffd48ac802dcfe79082689de
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 50f5620ba8fa6ab911cf0fd594fd27f139b5061d1383575f861dadfec45dabbf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103917004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995076"
 ---
-# <a name="starting-the-burn-process"></a>Iniciando o processo de gravação
+# <a name="starting-the-burn-process"></a>Iniciando o processo de burn
 
-Antes que a gravação possa começar, você deve atribuir uma lista de reprodução a ser gravada. Use [IWMPCdromBurn::p UT \_ burnPlaylist](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-put_burnplaylist) para especificar uma lista de reprodução para gravação.
+Antes que a gravação possa começar, você deve atribuir uma playlist para ser desarmada. Use [IWMPCdrom Ltd::p ut \_ burnPlaylist](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-put_burnplaylist) para especificar uma playlist para gravação.
 
 
 ```C++
@@ -45,9 +45,9 @@ HRESULT CMainDlg::PutPlaylist (void)
 
 
 
-Para obter informações sobre como usar listas de reprodução, consulte [IWMPPlaylist](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist).
+Para obter informações sobre como usar playlists, consulte [IWMPPlaylist](/previous-versions/windows/desktop/api/wmp/nn-wmp-iwmpplaylist).
 
-Para iniciar a operação de gravação, chame [IWMPCdromBurn:: startBurn](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-startburn).
+Para iniciar a operação de gravação, chame [IWMPCdrom Ltd::startEar.](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-startburn)
 
 
 ```C++
@@ -58,7 +58,7 @@ hr = m_spCdromBurn->startBurn();
 
 
 
-Você pode interromper a operação de gravação chamando [IWMPCdromBurn:: stopBurn](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-stopburn).
+Você pode interromper a operação de gravação chamando [IWMPCdrom Ltd::stopEar.](/previous-versions/windows/desktop/api/wmp/nf-wmp-iwmpcdromburn-stopburn)
 
 
 ```C++
@@ -73,24 +73,24 @@ hr = m_spCdromBurn->stopBurn();
 
 <dl> <dt>
 
-[**Gravando um CD**](burning-a-cd.md)
+[**Gravar um CD**](burning-a-cd.md)
 </dt> <dt>
 
 [**Recuperar a interface de gravação de CD**](retrieving-the-cd-burning-interface.md)
 </dt> <dt>
 
-[**Apagando um CD regravável**](erasing-a-rewritable-cd.md)
+[**Apagando um CD reeritável**](erasing-a-rewritable-cd.md)
 </dt> <dt>
 
-[**Recuperando a unidade e o status do disco**](retrieving-the-drive-and-disc-status.md)
+[**Recuperando o status da unidade e do disco**](retrieving-the-drive-and-disc-status.md)
 </dt> <dt>
 
-[**Recuperando o status da gravação**](retrieving-the-burn-status.md)
+[**Recuperando o status de burn**](retrieving-the-burn-status.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

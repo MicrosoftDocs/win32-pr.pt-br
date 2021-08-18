@@ -1,27 +1,27 @@
 ---
-title: Exemplo de código para criar uma classe
+title: Código de exemplo para criar uma classe
 description: Mostra como criar um objeto classSchema no cache ADSI.
 ms.assetid: 021a0c7b-0e08-4d7a-af9a-9e3e868b90b6
 ms.tgt_platform: multiple
 keywords:
-- Exemplo de código para criar uma classe
-- Criando uma classe, anúncio de código de exemplo
+- Código de exemplo para criar uma classe
+- Criando uma classe, um AD de código de exemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cef1ca029bd9e53a6fee401168a83294eb2b2915
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5a53b1cebfb443e1fa258c80a2e74bb0634496c13a5f3cca3f6c1667aeada141
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104084447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962445"
 ---
-# <a name="example-code-for-creating-a-class"></a>Exemplo de código para criar uma classe
+# <a name="example-code-for-creating-a-class"></a>Código de exemplo para criar uma classe
 
-O exemplo de código C e C++ a seguir mostra como criar um objeto [**classSchema**](/windows/desktop/ADSchema/c-classschema) no cache ADSI.
+O exemplo de código C e C++ a seguir mostra como criar um [**objeto classSchema**](/windows/desktop/ADSchema/c-classschema) no cache ADSI.
 
-A função de exemplo **createclass** mostra como criar o objeto [**classSchema**](/windows/desktop/ADSchema/c-classschema) e retorna um ponteiro [**IADs**](/windows/desktop/api/iads/nn-iads-iads) para o novo objeto. Lembre-se de que **Createclass** não chama [**IADs:: setinfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) para confirmar o novo objeto **classSchema** para o diretório. O chamador deve fazer a chamada usando o ponteiro retornado.
+A função de exemplo **CreateClass** mostra como criar o [**objeto classSchema**](/windows/desktop/ADSchema/c-classschema) e retorna um ponteiro [**IADs**](/windows/desktop/api/iads/nn-iads-iads) para o novo objeto. Esteja ciente de **que CreateClass** não chama [**IADs::SetInfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) para fazer commit do novo **objeto classSchema** no diretório. O chamador deve fazer a chamada usando o ponteiro retornado.
 
-O exemplo de código **BytesToVariantArray** a seguir mostra uma função de utilitário que empacota uma cadeia de caracteres de octeto em uma matriz variante.
+O exemplo **de código BytesToVariantArray** a seguir mostra uma função de utilitário que empacota uma cadeia de caracteres de octeto em uma matriz variante.
 
 
 ```C++
@@ -390,6 +390,6 @@ HRESULT BytesToVariantArray(
 
 
 
- 
+ 
 
- 
+ 

@@ -1,35 +1,35 @@
 ---
 title: ProxyStubClsid
-description: Mapeia um IID para um CLSID em DLLs de proxy de 16 bits.
+description: Mapas um IID para um CLSID em DLLs de proxy de 16 bits.
 ms.assetid: 07e1e9de-e529-496c-b9f7-e7f799089f02
 keywords:
-- COM valor do registro ProxyStubClsid COM
+- Valor do Registro ProxyStubClsid COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9adfbe319903b2e278be342d169a2e523c952693
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 93f86db768979a72d2d2f0b8c7a137d6b105f4a52d082ec50c6e78ba271fbca3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005923"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129988"
 ---
 # <a name="proxystubclsid"></a>ProxyStubClsid
 
-Mapeia um IID para um CLSID em DLLs de proxy de 16 bits.
+Mapas um IID para um CLSID em DLLs de proxy de 16 bits.
 
 ## <a name="registry-entry"></a>Entrada do Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Interface
-   {IID}
-      ProxyStubClsid = {CLSID}
+   {IID}
+      ProxyStubClsid = {CLSID}
 ```
 
 ## <a name="remarks"></a>Comentários
 
-Este é um **valor \_ sz de reg** que especifica o CLSID para o IID.
+Esse é um **valor \_ REG SZ** que especifica o CLSID para o IID.
 
-Se você adicionar interfaces, deverá usar essa entrada para registrá-las (sistemas de 16 bits) para que o OLE possa encontrar o código de comunicação remota apropriado para estabelecer a comunicação entre processos.
+Se você adicionar interfaces, deverá usar essa entrada para registrá-las (sistemas de 16 bits) para que o OLE possa encontrar o código de comunicação removível apropriado para estabelecer a comunicação entre processos.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -41,9 +41,9 @@ Se você adicionar interfaces, deverá usar essa entrada para registrá-las (sis
 [**ProxyStubClsid32**](proxystubclsid32.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

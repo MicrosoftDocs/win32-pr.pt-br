@@ -4,12 +4,12 @@ ms.assetid: 29E67C0A-36EB-47B2-8708-36EC733D0D37
 title: XAUDIO2_PROCESSOR (Xaudio2. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c3e9d73da37f6d330832234b63674e363d3b6d2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ceb8fd7f904e60728f60ae2a2880422e7a12ed2ee49c314e4932471caecf7871
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962565"
 ---
 # <a name="xaudio2_processor"></a>\_Processador XAudio2
 
@@ -73,7 +73,7 @@ typedef UINT32 XAUDIO2_PROCESSOR;
 
 ### <a name="platform-requirements"></a>Requisitos de plataforma
 
-Windows 10 (XAudio 2.9); Windows 8, Windows Phone 8 (XAudio 2,8); SDK do DirectX (XAudio 2,7)
+Windows 10 (xaudio 2.9); Windows 8, Windows Phone 8 (XAudio 2,8); SDK do DirectX (XAudio 2,7)
 
 ## <a name="requirements"></a>Requisitos
 

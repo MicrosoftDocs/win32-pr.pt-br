@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: métodos de JET_INDEX_RANGE'
-title: Métodos de JET_INDEX_RANGE (Microsoft. ISAM. ESENT. Interop. Windows8)
+description: 'Saiba mais sobre: JET_INDEX_RANGE métodos'
+title: JET_INDEX_RANGE (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_INDEX_RANGE methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_range_methods(v=EXCHG.10)
 ms:contentKeyID: 55104324
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: e37fdc2d350037a1671b804fde1bc22847f77264
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc8ead23795ccc775a94f7b9197289891930d3ae4901da425902a33464206bec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104550525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119110133"
 ---
-# <a name="jet_index_range-methods"></a>Métodos de JET_INDEX_RANGE
+# <a name="jet_index_range-methods"></a>JET_INDEX_RANGE métodos
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [JET_INDEX_RANGE](./jet-index-range-class.md) expõe os membros a seguir.
+O [JET_INDEX_RANGE](./jet-index-range-class.md) de dados expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -49,18 +49,18 @@ O tipo de [JET_INDEX_RANGE](./jet-index-range-class.md) expõe os membros a segu
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335361(v=exchg.10).md">ToString</a></td>
-<td>Retorna uma <a href="/dotnet/api/system.string">cadeia de caracteres</a> que representa a <a href="dn335481(v=exchg.10).md">JET_INDEX_RANGE</a>atual. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>.)</td>
+<td>Retorna uma <a href="/dotnet/api/system.string">Cadeia de</a> caracteres que representa o <a href="dn335481(v=exchg.10).md">valor JET_INDEX_RANGE</a>. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -72,6 +72,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_INDEX_RANGE](./jet-index-range-class.md)
+[JET_INDEX_RANGE classe](./jet-index-range-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

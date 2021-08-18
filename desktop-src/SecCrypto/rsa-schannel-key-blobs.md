@@ -4,12 +4,12 @@ ms.assetid: 97d5ee6d-4687-4cd2-b122-36f8ea3c93ca
 title: BLOBs de chave RSA/Schannel
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cea26a98e9c2925442166eb28245ebc471b1749e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3be8bfa8b87ee901317e220583ff7b08ea110e342a2d9dd9abb477053ffdf05c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827245"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118900531"
 ---
 # <a name="rsaschannel-key-blobs"></a>BLOBs de chave RSA/Schannel
 

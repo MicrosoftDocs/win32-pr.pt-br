@@ -18,17 +18,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7820f90ef0192c1f700759835bf1572b187cf3be
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 616a1a5a93c10ae79894c81e4530edc618848716190b887f16e850f89e3a79e0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978807"
 ---
 # <a name="jetopentemptable3-function"></a>Função JetOpenTempTable3
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetopentemptable3-function"></a>Função JetOpenTempTable3
 
@@ -126,7 +126,7 @@ Um grupo de bits que contém as opções a serem usadas para esta chamada, que i
 <td><p>JET_bitTTForwardOnly</p></td>
 <td><p>Essa opção solicita que a tabela temporária só seja criada se o Gerenciador de tabelas temporárias puder usar a implementação otimizada para resultados de consulta intermediários. Se qualquer característica da tabela temporária impedir o uso dessa otimização, a operação falhará com JET_errCannotMaterializeForwardOnlySort.</p>
 <p>Um efeito colateral dessa opção é permitir que a tabela temporária contenha registros com chaves de índice duplicadas. Consulte JET_bitTTUnique para obter mais informações.</p>
-<p>Essa opção só está disponível no Windows Server 2003 e versões posteriores.</p></td>
+<p>essa opção só está disponível no Windows Server 2003 e versões posteriores.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_bitTTIndexed</p></td>
@@ -136,7 +136,7 @@ Um grupo de bits que contém as opções a serem usadas para esta chamada, que i
 <tr class="odd">
 <td><p>JET_bitTTUnique</p></td>
 <td><p>Essa opção solicita que os registros com chaves de índice duplicados sejam removidos do conjunto final de registros na tabela temporária.</p>
-<p>Antes do Windows Server 2003, o mecanismo de banco de dados sempre assumiu que essa opção está em vigor devido ao fato de que todos os índices clusterizados também devem ser uma chave primária e, portanto, devem ser exclusivos. A partir do Windows Server 2003, agora é possível criar uma tabela temporária que não remove duplicatas quando a opção de JET_bitTTForwardOnly também é especificada.</p>
+<p>antes do Windows Server 2003, o mecanismo de banco de dados sempre assumiu que essa opção está em vigor devido ao fato de que todos os índices clusterizados também devem ser uma chave primária e, portanto, devem ser exclusivos. a partir do Windows Server 2003, agora é possível criar uma tabela temporária que não remove duplicatas quando a opção JET_bitTTForwardOnly também é especificada.</p>
 <p>Não é possível saber qual duplicata será vencedora e quais duplicatas serão descartadas em geral. No entanto, quando a opção JET_bitTTErrorOnDuplicateInsertion for solicitada, o primeiro registro com uma determinada chave de índice a ser inserida na tabela temporária sempre vencerá.</p></td>
 </tr>
 <tr class="even">
@@ -156,7 +156,7 @@ Um grupo de bits que contém as opções a serem usadas para esta chamada, que i
 <tr class="odd">
 <td><p>JET_bitTTIntrinsicLVsOnly</p></td>
 <td><p>Solicitações para permitir somente valores longos intrínsecos.</p>
-<p><strong>Windows 7</strong>: o <strong>JET_bitTTIntrinsicLVsOnly</strong> é introduzido no Windows 7.</p></td>
+<p><strong>Windows 7</strong>: <strong>JET_bitTTIntrinsicLVsOnly</strong> é introduzido no Windows 7.</p></td>
 </tr>
 </tbody>
 </table>
@@ -174,7 +174,7 @@ As IDs de coluna nessa matriz correspondem exatamente à matriz de entrada de de
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -194,7 +194,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errCannotMaterializeForwardOnlySort</p></td>
-<td><p><strong>JetOpenTempTable3</strong> falhou porque JET_bitTTForwardOnly foi especificado e a tabela temporária como especificada não pôde ser criada usando a otimização somente de encaminhamento. Esse erro só será retornado pelo Windows Server 2003 e por versões posteriores.</p></td>
+<td><p><strong>JetOpenTempTable3</strong> falhou porque JET_bitTTForwardOnly foi especificado e a tabela temporária como especificada não pôde ser criada usando a otimização somente de encaminhamento. esse erro só será retornado pelo Windows Server 2003 e versões posteriores.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errClientRequestToStopJetService</p></td>
@@ -207,11 +207,11 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <li><p>A localidade neutra do idioma é especificada.</p></li>
 <li><p>Um conjunto inválido de sinalizadores de normalização foi especificado.</p></li>
 </ul>
-<p>Esse erro só será retornado pelo Windows 2000.</p></td>
+<p>esse erro só será retornado por Windows 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidCodePage</p></td>
@@ -227,7 +227,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidLCMapStringFlags</p></td>
-<td><p>Não foi possível criar o índice porque foi feita uma tentativa de usar um conjunto inválido de sinalizadores de normalização. Esse erro só será retornado pelo Windows XP e por versões posteriores. No Windows 2000, sinalizadores de normalização inválidos resultarão em JET_errIndexInvalidDef em vez disso.</p></td>
+<td><p>Não foi possível criar o índice porque foi feita uma tentativa de usar um conjunto inválido de sinalizadores de normalização. esse erro só será retornado pelo Windows XP e versões posteriores. no Windows 2000, sinalizadores de normalização inválidos resultarão em JET_errIndexInvalidDef em vez disso.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidSesid</p></td>
@@ -253,7 +253,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <tr class="odd">
 <td><p>JET_errSessionSharingViolation</p></td>
 <td><p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo.</p>
-<p>Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<p>esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errTermInProgress</p></td>
@@ -293,11 +293,11 @@ Em caso de falha, a tabela temporária não será criada e um cursor não será 
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
@@ -317,7 +317,7 @@ Em caso de falha, a tabela temporária não será criada e um cursor não será 
 
 #### <a name="see-also"></a>Consulte Também
 
-[Erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md)  
+[erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md)  
 [Parâmetros de tratamento de erros](./error-handling-parameters.md)  
 [JET_COLUMNDEF](./jet-columndef-structure.md)  
 [JET_COLUMNID](./jet-columnid.md)  

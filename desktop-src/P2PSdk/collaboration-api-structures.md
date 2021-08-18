@@ -4,12 +4,12 @@ ms.assetid: 2634899c-3263-45ce-9fac-407e11e42cd4
 title: Estruturas de API de colaboração
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6d4fe42a28eb8ace13087fff43d29aa00e5551ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa003702b9d42202bf344f6e512a1ca42d90a2ced701dc327fdc91eefb8fdcb9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011754"
 ---
 # <a name="collaboration-api-structures"></a>Estruturas de API de colaboração
 

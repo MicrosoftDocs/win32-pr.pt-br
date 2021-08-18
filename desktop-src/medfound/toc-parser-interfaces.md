@@ -4,12 +4,12 @@ ms.assetid: 25039e6c-dd2a-4516-bf27-8e9d6ca0f00e
 title: Interfaces do analisador de Sumário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4bf66f5df1474e95b96bf14a073cce0ecb0d2b1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d20bc6a0a61c73e016b3eb62733fff76f61c4172614036c7af9588bddb6f9a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091352"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034714"
 ---
 # <a name="table-of-contents-parser-interfaces"></a>Interfaces do analisador de Sumário
 

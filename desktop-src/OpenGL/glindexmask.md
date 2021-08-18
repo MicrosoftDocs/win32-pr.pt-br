@@ -1,9 +1,9 @@
 ---
-title: função glIndexMask (GL. h)
-description: A função glIndexMask controla a gravação de bits individuais nos buffers de índice de cor.
+title: Função glIndexMask (Gl.h)
+description: A função glIndexMask controla a escrita de bits individuais nos buffers de índice de cores.
 ms.assetid: f4b5df36-390f-4254-95fb-98589750a11b
 keywords:
-- função glIndexMask OpenGL
+- Função glIndexMask OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d426cb1f4bb2e794bef53853d0336db1d64b263
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f8e022bb3cbb5be5ac15049b5e8bc128d2ac7e100d5bcec6a87988dd2d14c5d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105811312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012194"
 ---
-# <a name="glindexmask-function"></a>função glIndexMask
+# <a name="glindexmask-function"></a>Função glIndexMask
 
-A função **glIndexMask** controla a gravação de bits individuais nos buffers de índice de cor.
+A **função glIndexMask** controla a escrita de bits individuais nos buffers de índice de cores.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,10 +40,10 @@ void WINAPI glIndexMask(
 
 <dl> <dt>
 
-*mascara* 
+*mask* 
 </dt> <dd>
 
-Uma máscara de bits para habilitar e desabilitar a gravação de bits individuais nos buffers de índice de cores. Inicialmente, a máscara é tudo.
+Uma máscara de bits para habilitar e desabilitar a escrita de bits individuais nos buffers de índice de cores. Inicialmente, a máscara é de todos.
 
 </dd> </dl>
 
@@ -53,25 +53,25 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-O código de erro a seguir pode ser recuperado pela função [**glGetError**](glgeterror.md) .
+O código de erro a seguir pode ser recuperado pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A função **glIndexMask** controla a gravação de bits individuais nos buffers de índice de cor. Os *n* bits menos significativos de *Mask*, em que *1* é o número de bits em um buffer de índice de cor, especifique uma máscara. Sempre que um deles aparecer na máscara, o bit correspondente no buffer de índice de cor (ou buffers) se tornará gravável. Onde um zero é exibido, o bit é protegido contra gravação.
+A **função glIndexMask** controla a escrita de bits individuais nos buffers de índice de cores. Os n *bits menos significativos* da *máscara*, em *que 1* é o número de bits em um buffer de índice de cores, especifique uma máscara. Sempre que um aparece na máscara, o bit correspondente no buffer de índice de cor (ou buffers) se tornou writable. Quando um zero é exibido, o bit é protegido por gravação.
 
-Essa máscara é usada somente no modo de índice de cor e afeta somente os buffers selecionados atualmente para gravação (consulte [**glDrawBuffer**](gldrawbuffer.md)). Inicialmente, todos os bits estão habilitados para gravação.
+Essa máscara é usada somente no modo de índice de cores e afeta apenas os buffers atualmente selecionados para escrita (consulte [**glDrawBuffer**](gldrawbuffer.md)). Inicialmente, todos os bits estão habilitados para escrita.
 
-A função a seguir recupera informações relacionadas a **glIndexMask**:
+A função a seguir recupera informações relacionadas **a glIndexMask:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ index \_ WRITEMASK
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ INDEX \_ WRITEMASK
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ A função a seguir recupera informações relacionadas a **glIndexMask**:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

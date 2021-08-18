@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-AllowQueuedUpdatingSubscription
+title: atributo MS-SQL-AllowQueuedUpdatingSubscription
 description: True para permitir transações enfileiradas ao atualizar assinaturas.
 ms.assetid: 132c107f-8586-48db-b70c-027c619aadf7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-AllowQueuedUpdatingSubscription
-- Esquema de AD do atributo mS-SQL-AllowQueuedUpdatingSubscription
+- esquema de AD do atributo MS-SQL-AllowQueuedUpdatingSubscription
+- esquema de AD do atributo mS-SQL-AllowQueuedUpdatingSubscription
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2056a04b6e0f155c156cde06975e96eb13f61eb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a473537954beac60d9fa87d72c23d69193d12bb862ccab1d5414d65a4f25fa01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961145"
 ---
-# <a name="ms-sql-allowqueuedupdatingsubscription-attribute"></a>Atributo MS-SQL-AllowQueuedUpdatingSubscription
+# <a name="ms-sql-allowqueuedupdatingsubscription-attribute"></a>atributo MS-SQL-AllowQueuedUpdatingSubscription
 
 True para permitir transações enfileiradas ao atualizar assinaturas.
 
@@ -58,7 +58,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -66,7 +66,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -79,7 +79,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -87,7 +87,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -100,7 +100,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -108,7 +108,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -129,7 +129,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -150,7 +150,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -171,7 +171,7 @@ True para permitir transações enfileiradas ao atualizar assinaturas.
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> |
 
 
 

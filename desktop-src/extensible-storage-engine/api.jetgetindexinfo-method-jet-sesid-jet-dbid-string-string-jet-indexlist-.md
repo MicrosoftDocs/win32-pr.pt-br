@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetGetIndexInfo (JET_SESID, JET_DBID, String, String JET_INDEXLIST)'
-title: Método API. JetGetIndexInfo (JET_SESID, JET_DBID, String, String JET_INDEXLIST)
+description: 'Saiba mais sobre: Método Api.JetGetIndexInfo (JET_SESID, JET_DBID, cadeia de caracteres, cadeia de caracteres, JET_INDEXLIST)'
+title: Método Api.JetGetIndexInfo (JET_SESID, JET_DBID, cadeia de caracteres, cadeia de caracteres, JET_INDEXLIST)
 TOCTitle: JetGetIndexInfo method (JET_SESID, JET_DBID, String, String, JET_INDEXLIST)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetIndexInfo(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,System.String,System.String,Microsoft.Isam.Esent.Interop.JET_INDEXLIST@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetindexinfo(v=EXCHG.10)
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2320b72a90ff97326c027b00cfeb5bf38453f68c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c1e12b64655b4c2db3d378f9bcde985fd3684cdb8beb24ac6ad9ecddc84f8b9c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983310"
 ---
-# <a name="apijetgetindexinfo-method-jet_sesid-jet_dbid-string-string-jet_indexlist"></a>Método API. JetGetIndexInfo (JET_SESID, JET_DBID, String, String JET_INDEXLIST)
+# <a name="apijetgetindexinfo-method-jet_sesid-jet_dbid-string-string-jet_indexlist"></a>Método Api.JetGetIndexInfo (JET_SESID, JET_DBID, cadeia de caracteres, cadeia de caracteres, JET_INDEXLIST)
 
-**Observação: essa API agora está obsoleta.**
+**OBSERVAÇÃO: essa API agora está obsoleta.**
 
 Recupera informações sobre índices em uma tabela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -71,35 +71,35 @@ public static void JetGetIndexInfo(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     O banco de dados a ser usado.
 
 <!-- end list -->
 
   - tablename  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    O nome da tabela sobre a qual recuperar informações de índice.
+    O nome da tabela sobre a que recuperar informações de índice.
 
 <!-- end list -->
 
   - ignorado  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     Este parâmetro é ignorado.
 
 <!-- end list -->
 
-  - IndexList  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INDEXLIST](./jet-indexlist-class.md)  
+  - indexlist  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXLIST](./jet-indexlist-class.md)  
     
     Preenchido com informações sobre índices na tabela.
 
@@ -111,6 +111,6 @@ public static void JetGetIndexInfo(
 
 [Membros da API](./api-members.md)
 
-[Sobrecarga de JetGetIndexInfo](./api.jetgetindexinfo-method.md)
+[Sobrecarga JetGetIndexInfo](./api.jetgetindexinfo-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

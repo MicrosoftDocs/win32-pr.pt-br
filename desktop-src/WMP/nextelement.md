@@ -1,9 +1,9 @@
 ---
-title: PRÓXIMOelement
-description: Este é um BUTTONelement predefinido com os valores padrão a seguir. | PRÓXIMOelement
+title: NEXTELEMENT
+description: Este é um BUTTONELEMENT predefinido com os seguintes valores padrão. | NEXTELEMENT
 ms.assetid: 8dcf9031-febc-459f-b781-8ee2f93580c8
 keywords:
-- PRÓXIMO Windows Media Player
+- NEXTELEMENT Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f8583e868fa1e4ddbf3d5b347b0a45926b4eb60e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3dc89b62e21702bda6348b050eb40b79c3c70117b1a56e71a7de03d1cd844c33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996066"
 ---
-# <a name="nextelement"></a>PRÓXIMOelement
+# <a name="nextelement"></a>NEXTELEMENT
 
-Este é um **buttonelement** predefinido com os valores padrão a seguir.
+Este é um **BUTTONELEMENT predefinido** com os seguintes valores padrão.
 
 ``` syntax
 onclick="jscript:player.controls.next()"
@@ -33,7 +33,7 @@ enabled="wmpenabled:player.controls.next"
 
 ## <a name="remarks"></a>Comentários
 
-Todas as propriedades desse **botão** podem ser substituídas especificando-as explicitamente.
+Todas as propriedades desse **BUTTONELEMENT** podem ser substituídos especificando-as explicitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Todas as propriedades desse **botão** podem ser substituídas especificando-as 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -49,7 +49,7 @@ Todas as propriedades desse **botão** podem ser substituídas especificando-as 
 
 <dl> <dt>
 
-[**Elemento BUTTONelement**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> </dl>
 
  

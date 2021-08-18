@@ -1,19 +1,19 @@
 ---
-description: 'O exemplo a seguir usa o método de aquisição de imagem do Windows (WIA) 1,0 IWiaDevMgr:: RegisterEventCallbackCLSID para se registrar para notificação quando qualquer dispositivo WIA (aquisição de imagem do Windows) estiver conectado ao sistema.'
+description: 'o exemplo a seguir usa o método wia (Windows image Acquisition) 1,0 IWiaDevMgr:: RegisterEventCallbackCLSID para se registrar para notificação quando qualquer dispositivo wia (Windows image acquisition) estiver conectado ao sistema.'
 ms.assetid: 1f2c7bc9-876a-4693-9439-52735e4b9d5f
 title: Registrar-se em eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40fe29be23bda4a3094ff8bcf90ae1ca677e858d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc7a72614533ccc7c2f72bb4f2cf105107cc88ef8030cf306d31d6d9ffa5b4d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965545"
 ---
 # <a name="registering-for-events"></a>Registrar-se em eventos
 
-O exemplo a seguir usa o método de aquisição de imagem do Windows (WIA) 1,0 [**IWiaDevMgr:: RegisterEventCallbackCLSID**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-registereventcallbackclsid) para se registrar para notificação quando qualquer dispositivo WIA (aquisição de imagem do Windows) estiver conectado ao sistema. Os aplicativos também podem usar WIA 1,0 [**IWiaDevMgr:: RegisterEventCallbackInterface**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-registereventcallbackinterface) e WIA 1,0 [**IWiaDevMgr:: RegisterEventCallbackProgram**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-registereventcallbackprogram) para registrar eventos. Com o Windows Vista e posterior, você pode usar os métodos Windows Image Acquisition (WIA) 2,0 [**IWiaDevMgr2:: RegisterEventCallbackCLSID**](-wia-iwiadevmgr2-registereventcallbackclsid.md), [**IWiaDevMgr2:: RegisterEventCallbackInterface**](-wia-iwiadevmgr2-registereventcallbackinterface.md)ou [**IWiaDevMgr2:: RegisterEventCallbackProgram**](-wia-iwiadevmgr2-registereventcallbackprogram.md) para se registrar em eventos.
+o exemplo a seguir usa o método wia (Windows image Acquisition) 1,0 [**IWiaDevMgr:: RegisterEventCallbackCLSID**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-registereventcallbackclsid) para se registrar para notificação quando qualquer dispositivo wia (Windows image acquisition) estiver conectado ao sistema. Os aplicativos também podem usar WIA 1,0 [**IWiaDevMgr:: RegisterEventCallbackInterface**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-registereventcallbackinterface) e WIA 1,0 [**IWiaDevMgr:: RegisterEventCallbackProgram**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-registereventcallbackprogram) para registrar eventos. com o Windows Vista e posterior, você pode usar os métodos WIA (Windows Image Acquisition) 2,0 [**IWiaDevMgr2:: RegisterEventCallbackCLSID**](-wia-iwiadevmgr2-registereventcallbackclsid.md), [**IWiaDevMgr2:: RegisterEventCallbackInterface**](-wia-iwiadevmgr2-registereventcallbackinterface.md)ou [**IWiaDevMgr2:: RegisterEventCallbackProgram**](-wia-iwiadevmgr2-registereventcallbackprogram.md) para se registrar em eventos.
 
 Supõe-se que o exemplo é obtido de um aplicativo registrado como um objeto de servidor fora do processo Component Object Model (COM).
 

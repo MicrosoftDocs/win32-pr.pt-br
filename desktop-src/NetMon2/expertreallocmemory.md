@@ -1,7 +1,7 @@
 ---
 description: A função ExpertReallocMemory aumenta ou diminui a quantidade de memória alocada por Monitor de Rede.
 ms.assetid: 78b99a66-692a-4e83-8b0d-d68caf156bb6
-title: Função ExpertReallocMemory (Netmon. h)
+title: Função ExpertReallocMemory (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 8f562443f9ca66def7e053f5958b17e70af50140
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: be43fa99021ec5612a148ba42db1b11e1fd6d885fa64fa003c0dfa672688d555
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012254"
 ---
 # <a name="expertreallocmemory-function"></a>Função ExpertReallocMemory
 
-A função **ExpertReallocMemory** aumenta ou diminui a quantidade de memória alocada por monitor de rede.
+A **função ExpertReallocMemory** aumenta ou diminui a quantidade de memória alocada por Monitor de Rede.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,43 +42,43 @@ LPVOID WINAPI ExpertReallocMemory(
 
 <dl> <dt>
 
-*hExpertKey* \[ no\]
+*hExpertKey* \[ Em\]
 </dt> <dd>
 
-Identificador exclusivo passado para o especialista em [**executar**](run.md) ou [**Configurar**](configure.md).
+Identificador exclusivo passado para o especialista em [**Executar**](run.md) ou [**Configurar**](configure.md).
 
 </dd> <dt>
 
-*pOriginalMemory* \[ no\]
+*pOriginalMemory* \[ Em\]
 </dt> <dd>
 
-Ponteiro para a memória alocada por Monitor de Rede. O ponteiro *pOriginalMemory* pode ser retornado por uma chamada anterior para [**ExpertAllocMemory**](expertallocmemory.md) ou **ExpertReallocMemory**.
+Ponteiro para a memória alocada por Monitor de Rede. O *ponteiro pOriginalMemory* pode ser retornado por uma chamada anterior para [**ExpertAllocMemory**](expertallocmemory.md) ou **ExpertReallocMemory.**
 
 </dd> <dt>
 
-*nbytes* \[ no\]
+*nBytes* \[ Em\]
 </dt> <dd>
 
 Tamanho da memória realocada.
 
 </dd> <dt>
 
-*perror* \[ fora\]
+*pError* \[ out\]
 </dt> <dd>
 
-No retorno, um código de erro se a função falhar. Se o código de erro for NMERR \_ expert \_ Finalize, o especialista deverá limpar e retornar imediatamente.
+No retorno, um código de erro se a função falhar. Se o código de erro for NMERR \_ EXPERT \_ TERMINATE, o especialista deverá limpar e retornar imediatamente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será um ponteiro para a memória alocada.
 
-Se a função não for bem-sucedida, o valor de retorno será **nulo** e *perror* (se for um valor não **nulo** ) indica o motivo da falha.
+Se a função não for bem-sucedida, o valor de retorno será **NULL** e *pError* (se for um valor não **NULL)** indicará o motivo da falha.
 
 ## <a name="remarks"></a>Comentários
 
-É importante observar que um especialista deve usar as funções de alocação de memória Monitor de Rede para gerenciamento de memória. Se o seu especialista falhar durante o tempo de execução, usar essas funções permitirá Monitor de Rede liberar a memória alocada.
+É importante observar que um especialista deve usar as funções de alocação Monitor de Rede memória para gerenciamento de memória. Se o especialista falhar durante o tempo de operação, o uso dessas funções permitirá Monitor de Rede liberar a memória alocada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,8 +88,8 @@ Se a função não for bem-sucedida, o valor de retorno será **nulo** e *perror
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>  |
-| Biblioteca<br/>                  | <dl> <dt>Nmapi. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>  |
+| Biblioteca<br/>                  | <dl> <dt>Nmapi.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Nmapi.dll</dt> </dl> |
 
 

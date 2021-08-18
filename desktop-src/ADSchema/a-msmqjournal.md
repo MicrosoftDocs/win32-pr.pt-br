@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f8a28e7740e41f8209e37345e934a36d10512bc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8b45cbb39bc0a0fd0f217d91ce7471f1a0f587315df2902fb6ce83c11f10a114
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081840"
 ---
 # <a name="msmq-journal-attribute"></a>MSMQ-Journal atributo
 
@@ -58,9 +58,9 @@ Indica se as mensagens recuperadas formam a fila devem ser mantidas no diário.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
+| No catálogo global      | Verdadeiro                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -79,9 +79,9 @@ Indica se as mensagens recuperadas formam a fila devem ser mantidas no diário.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
+| No catálogo global      | Verdadeiro                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -100,9 +100,9 @@ Indica se as mensagens recuperadas formam a fila devem ser mantidas no diário.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
+| No catálogo global      | Verdadeiro                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
@@ -121,10 +121,10 @@ Indica se as mensagens recuperadas formam a fila devem ser mantidas no diário.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -142,10 +142,10 @@ Indica se as mensagens recuperadas formam a fila devem ser mantidas no diário.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
@@ -163,10 +163,10 @@ Indica se as mensagens recuperadas formam a fila devem ser mantidas no diário.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | True                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Verdadeiro                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |

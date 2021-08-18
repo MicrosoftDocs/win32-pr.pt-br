@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7086a49d920caf5bbddd075437648701f4067ea8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f5ef3fca13afac0642bccca1e278a63a79e4728cc74430fde1db02e5aa47efa3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961565"
 ---
 # <a name="ds-ui-shell-maximum-attribute"></a>DS-UI-Shell-máximo de atributos
 
@@ -58,7 +58,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -66,7 +66,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -79,7 +79,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -87,7 +87,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -100,7 +100,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -108,7 +108,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -129,7 +129,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -142,7 +142,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -150,7 +150,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 
@@ -163,7 +163,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | True                                                |
+| É de valor único       | Verdadeiro                                                |
 | É indexado             | Falso                                               |
 | No catálogo global      | Falso                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
@@ -171,7 +171,7 @@ Este é o número máximo padrão de objetos a serem mostrados em um contêiner 
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |
 | System-Flags           | 0x00000010                                          |
-| Classes usadas em        | [**DS-UI-Settings**](c-dsuisettings.md)<br/> |
+| Classes usadas em        | [**DS-interface do usuário-Configurações**](c-dsuisettings.md)<br/> |
 
 
 

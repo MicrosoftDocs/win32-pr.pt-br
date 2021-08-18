@@ -1,11 +1,11 @@
 ---
-title: MSMQ-atributo de cota de diário
+title: Atributo MSMQ-Journal-Quota
 description: Cota de mensagens de diário MSMQ do computador.
 ms.assetid: 0793b8fa-1b9a-495f-a9f2-21dd8c174038
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-diário-atributo de cota esquema do AD
-- Esquema de AD do atributo mSMQJournalQuota
+- Esquema do AD do atributo MSMQ-Journal-Quota
+- Esquema do AD do atributo mSMQJournalQuota
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb6c49a94049452ad595db8e709326ee562854ba
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5eb094c92b84f1f208e09866577fcbb9ce4f63dff396ecbca4a3464069a9f904
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118960515"
 ---
-# <a name="msmq-journal-quota-attribute"></a>MSMQ-atributo de cota de diário
+# <a name="msmq-journal-quota-attribute"></a>Atributo MSMQ-Journal-Quota
 
 Cota de mensagens de diário MSMQ do computador.
 
@@ -29,13 +29,13 @@ Cota de mensagens de diário MSMQ do computador.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-diário-cota                   |
-| LDAP-Display-Name | mSMQJournalQuota                     |
+| CN                | MSMQ-Journal-Quota                   |
+| Ldap-Display-Name | mSMQJournalQuota                     |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.921               |
-| System-ID-GUID    | 9a0dc324-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc324-c100-11d1-football5-0080c76670c0 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Cota de mensagens de diário MSMQ do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Cota de mensagens de diário MSMQ do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Cota de mensagens de diário MSMQ do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Cota de mensagens de diário MSMQ do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Cota de mensagens de diário MSMQ do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Cota de mensagens de diário MSMQ do computador.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 

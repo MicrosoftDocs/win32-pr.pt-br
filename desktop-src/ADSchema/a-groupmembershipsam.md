@@ -1,11 +1,11 @@
 ---
-title: Grupo-Associação-atributo SAM
-description: Segurança do Windows NT. Suporte de nível inferior do Windows NT.
+title: Atributo Group-Membership-SAM
+description: Windows NT Segurança. Suporte de nível Windows NT inferior.
 ms.assetid: 14e2f7c1-4d2b-4c0d-bf13-9abb576cd931
 ms.tgt_platform: multiple
 keywords:
-- Group-membership-SAM atributo AD Schema
-- Esquema de AD do atributo groupMembershipSAM
+- Esquema do AD do atributo Group-Membership-SAM
+- Esquema do AD do atributo groupMembershipSAM
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44fe8a9ff92077d22a628c9a85b942382cbb2034
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 73c552e863c0a20ebada09fcd5c28cfe7c597510c0eaa057f02c17b4caf3fb5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086969"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961325"
 ---
-# <a name="group-membership-sam-attribute"></a>Grupo-Associação-atributo SAM
+# <a name="group-membership-sam-attribute"></a>Atributo Group-Membership-SAM
 
-Segurança do Windows NT. Suporte de nível inferior do Windows NT.
+Windows NT Segurança. Suporte de nível Windows NT inferior.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | Grupo-Associação-SAM                                  |
-| LDAP-Display-Name | groupMembershipSAM                                    |
+| CN                | Group-Membership-SAM                                  |
+| Ldap-Display-Name | groupMembershipSAM                                    |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.166                                |
-| System-ID-GUID    | bf967980-0de6-11d0-a285-00aa003049e2                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | bf967980-0de6-11d0-a285-00aa003049e2                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ Segurança do Windows NT. Suporte de nível inferior do Windows NT.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Segurança do Windows NT. Suporte de nível inferior do Windows NT.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Segurança do Windows NT. Suporte de nível inferior do Windows NT.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Segurança do Windows NT. Suporte de nível inferior do Windows NT.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Segurança do Windows NT. Suporte de nível inferior do Windows NT.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Segurança do Windows NT. Suporte de nível inferior do Windows NT.
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
 | System-Flags           | 0x00000010                                                            |
-| Classes usadas em        | [**Group**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
+| Classes usadas em        | [**Grupo**](c-group.md)<br/> [**Usuário**](c-user.md)<br/> |
 
 
 

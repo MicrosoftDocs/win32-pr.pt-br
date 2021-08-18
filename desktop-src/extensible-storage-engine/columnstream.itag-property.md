@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4ea3a6cab067665ec1aa69a6f473d82ab1c656f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 426dc67c40dfd14773bfb2c0d09e0d1be019921501e0908c1a38e6d330e2925b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118982656"
 ---
 # <a name="columnstreamitag-property"></a>Propriedade ColumnStream. ITAG
 
@@ -40,7 +40,7 @@ Obtém ou define o iTag da coluna.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

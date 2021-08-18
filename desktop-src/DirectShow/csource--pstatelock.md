@@ -1,7 +1,7 @@
 ---
-description: O método pStateLock recupera um ponteiro para o objeto de seção crítica do filtro.
+description: O método pStateLock recupera um ponteiro para o objeto de seção crítico do filtro.
 ms.assetid: 10a2e74b-a5aa-4d68-958e-d86f4b78037e
-title: Método CSource. pStateLock (Source. h)
+title: Método CSource.pStateLock (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,19 +16,19 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c0705584a513d64dfd1cd17075d95617234f7f8b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b74027e2ee2339e647938592e05162ce85108eb6985061b30a825394c2f2e7be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757897"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953785"
 ---
-# <a name="csourcepstatelock-method"></a>Método CSource. pStateLock
+# <a name="csourcepstatelock-method"></a>Método CSource.pStateLock
 
-O método **pStateLock** recupera um ponteiro para o objeto de seção crítica do filtro.
+O **método pStateLock** recupera um ponteiro para o objeto de seção crítico do filtro.
 
 > [!Note]  
-> Embora nomeado como uma variável de membro, **pStateLock** é um método.
+> Embora nomeado como uma variável de membro, **pStateLock** é um método .
 
  
 
@@ -45,9 +45,9 @@ CCritSec* pStateLock();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um ponteiro para a variável de membro [**CSource:: m \_ cStateLock**](csource-m-cstatelock.md) .
+Retorna um ponteiro para a [**variável de membro CSource::m \_ cStateLock.**](csource-m-cstatelock.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,8 +55,8 @@ Retorna um ponteiro para a variável de membro [**CSource:: m \_ cStateLock**](c
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Source. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Source.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

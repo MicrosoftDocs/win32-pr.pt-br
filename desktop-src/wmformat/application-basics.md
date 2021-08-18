@@ -3,7 +3,7 @@ title: Noções básicas do aplicativo
 description: Noções básicas do aplicativo
 ms.assetid: 5593d27e-e97d-4f03-99ff-aee856abec8e
 keywords:
-- SDK do Windows Media Format, noções básicas do aplicativo DRM
+- Windows SDK do formato de mídia, noções básicas do aplicativo DRM
 - DRM (gerenciamento de direitos digitais), noções básicas do aplicativo
 - DRM (gerenciamento de direitos digitais), noções básicas do aplicativo
 - DRM (gerenciamento de direitos digitais), função WMDRMStartup
@@ -11,31 +11,31 @@ keywords:
 - WMDRMStartup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 182a9e54e077c174c4f4cbe74ba392aa44ce5112
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8356160565754764ac71cb152799a0fd9d1530e6e6969dc7a56e203b7504645d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086202"
 ---
 # <a name="application-basics"></a>Noções básicas do aplicativo
 
-Há algum processamento extra que você deve executar para qualquer aplicativo que use as APIs estendidas do cliente DRM do Windows Media. Este tópico descreve os requisitos para um aplicativo simples.
+há algum processamento extra que você deve executar para qualquer aplicativo que use as APIs estendidas do cliente DRM de mídia Windows. Este tópico descreve os requisitos para um aplicativo simples.
 
-Primeiro, você deve inicializar as APIs estendidas do cliente DRM do Windows Media chamando a função [**WMDRMStartup**](wmdrmstartup.md) . Os objetos do SDK são objetos COM, mas você não precisa chamar **CoIntialize**, pois a função **WMDRMStatup** inicializa com para você.
+primeiro, você deve inicializar as APIs estendidas do cliente DRM do Windows de mídia chamando a função [**WMDRMStartup**](wmdrmstartup.md) . Os objetos do SDK são objetos COM, mas você não precisa chamar **CoIntialize**, pois a função **WMDRMStatup** inicializa com para você.
 
 > [!Note]  
-> O Windows Media Format SDK usa apenas um subconjunto de COM, portanto, se você usar objetos COM diferentes daqueles na API estendida do cliente DRM do Windows Media, ainda deverá chamar **CoInitialize**.
+> o SDK do formato de mídia Windows usa apenas um subconjunto de COM, portanto, se você usar objetos COM diferentes daqueles na API estendida do cliente do DRM Windows mídia, ainda deverá chamar **coinitialize**.
 
- 
+ 
 
-Todos os objetos das APIs estendidas do cliente DRM do Windows Media são criados usando funções e métodos auxiliares. Você nunca precisa chamar **CoCreateInstance** para criar um objeto. A primeira interface a ser instanciada para qualquer aplicativo que usa o SDK é [**IWMDRMProvider**](iwmdrmprovider.md), que você pode usar para instanciar todas as outras interfaces base. Para obter uma instância de **IWMDRMProvider**, você deve chamar [**WMDRMCreateProvider**](wmdrmcreateprovider.md) ou [**WMDRMCreateProtectedProvider**](wmdrmcreateprotectedprovider.md). A diferença entre essas funções é que o **WMDRMCreateProvider** cria um objeto que, por sua vez, pode criar apenas objetos que não dão suporte a métodos que exigem a biblioteca de stub.
+todos os objetos das APIs estendidas do cliente DRM de mídia Windows são criados usando funções e métodos auxiliares. Você nunca precisa chamar **CoCreateInstance** para criar um objeto. A primeira interface a ser instanciada para qualquer aplicativo que usa o SDK é [**IWMDRMProvider**](iwmdrmprovider.md), que você pode usar para instanciar todas as outras interfaces base. Para obter uma instância de **IWMDRMProvider**, você deve chamar [**WMDRMCreateProvider**](wmdrmcreateprovider.md) ou [**WMDRMCreateProtectedProvider**](wmdrmcreateprotectedprovider.md). A diferença entre essas funções é que o **WMDRMCreateProvider** cria um objeto que, por sua vez, pode criar apenas objetos que não dão suporte a métodos que exigem a biblioteca de stub.
 
 Depois de ter uma instância do **IWMDRMProvider**, você pode criar os outros objetos necessários chamando [**IWMDRMProvider:: CreateObject**](iwmdrmprovider-createobject.md).
 
 Quando estiver pronto para sair do aplicativo, você deverá liberar os recursos do subsistema DRM chamando a função [**WMDRMShutdown**](wmdrmshutdown.md) . Essa função também desliga o COM para você.
 
-O exemplo de código a seguir demonstra como inicializar e concluir um aplicativo que usa as APIs estendidas do cliente DRM do Windows Media.
+o exemplo de código a seguir demonstra como inicializar e concluir um aplicativo que usa as APIs estendidas do cliente de DRM de mídia Windows.
 
 
 ```C++
@@ -91,9 +91,9 @@ void main(void)
 [**Introdução**](drm-getting-started.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

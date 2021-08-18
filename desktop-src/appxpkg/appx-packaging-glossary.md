@@ -1,16 +1,16 @@
 ---
 title: Glossário de empacotamento, implantação e consulta
-description: Fornece definições para termos relacionados ao empacotamento, implantação e consulta para aplicativos do Windows.
+description: fornece definições para termos relacionados ao empacotamento, implantação e consulta para aplicativos Windows.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 15E35DCF-C6C1-446A-B09B-6428F9C8A677
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 83a2112b593e2d2a5aaf4f06525160e2d799bad1
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 678a273b82806a724e50c7f29c512d19e1723283582abb3aa8b97f49f6293182
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104365832"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119130268"
 ---
 # <a name="packaging-deployment-and-query-glossary"></a>Glossário de empacotamento, implantação e consulta
 
@@ -47,7 +47,7 @@ Um pacote que usa uma dependência em outro pacote. A dependência é declarada 
 <span id="appxpkg_packaging_glossary_footpint_files"></span><span id="APPXPKG_PACKAGING_GLOSSARY_FOOTPINT_FILES"></span>**arquivos de superfície**
 </dt> <dd>
 
-Arquivos em um pacote de aplicativo que não fazem parte do aplicativo a ser implantado. Esses arquivos fornecem metadados referentes ao pacote. Os arquivos de superfície padrão incluem o manifesto, o mapa de blocos, o mapa de fluxo e a assinatura digital. Os arquivos de superfície são criados como parte do processo de compilação do pacote. Além da especificação OPC, \[ Content \_ Types \] . xml e arquivos cujos nomes correspondem ao \* \\ \_ padrão "rels \\ \* . rels" são os arquivos de superfície.
+Arquivos em um pacote de aplicativo que não fazem parte do aplicativo a ser implantado. Esses arquivos fornecem metadados referentes ao pacote. Os arquivos de superfície padrão incluem o manifesto, o mapa de blocos, o mapa de fluxo e a assinatura digital. Os arquivos de superfície são criados como parte do processo de compilação do pacote. Além da especificação OPC, os \[ \_ tipos de conteúdo \].xml e arquivos cujos nomes correspondem ao \* \\ \_ padrão "rels \\ \* . rels" são arquivos de superfície.
 
 </dd> <dt>
 
@@ -68,7 +68,7 @@ As Open Packaging Conventions (OPC) descreve uma tecnologia de arquivo de contê
 <span id="appxpkg.appx_packaging_glossary_package"></span><span id="APPXPKG.APPX_PACKAGING_GLOSSARY_PACKAGE"></span>**agrupa**
 </dt> <dd>
 
-A unidade de implantação, gerenciamento e software de serviço associada ao modelo de empacotamento de aplicativo. Um pacote contém os arquivos que constituem o aplicativo, juntamente com um arquivo de manifesto que descreve o software para o Windows.
+A unidade de implantação, gerenciamento e software de serviço associada ao modelo de empacotamento de aplicativo. Um pacote contém os arquivos que constituem o aplicativo, juntamente com um arquivo de manifesto que descreve o software a ser Windows.
 
 </dd> <dt>
 
@@ -121,6 +121,6 @@ As sequências de bytes em um arquivo ZIP que armazenam metadados sobre o arquiv
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 

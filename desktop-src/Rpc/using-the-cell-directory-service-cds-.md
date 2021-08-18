@@ -1,21 +1,21 @@
 ---
-title: Usando o CDS (serviço de diretório de células)
+title: Usando o CDS (Serviço de Diretório de Célula)
 description: Se você tiver CDS, poderá usá-lo em vez do Microsoft Locator.
 ms.assetid: df4b8db1-08f1-4ed8-895d-236199289e87
 keywords:
-- RPC de chamada de procedimento remoto, tarefas, usando o serviço de diretório de célula
+- RPC de Chamada de Procedimento Remoto , tarefas, usando o serviço de diretório de célula
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0029bf78308d6963d615daa04eaf87f3617ebbb2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2df9058d917396a4e2e2dc3579768c3f3d5b46242b34c0fa5411c6d2204ed20b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010632"
 ---
-# <a name="using-the-cell-directory-service-cds"></a>Usando o CDS (serviço de diretório de células)
+# <a name="using-the-cell-directory-service-cds"></a>Usando o CDS (Serviço de Diretório de Célula)
 
-Se você tiver CDS, poderá usá-lo em vez do Microsoft Locator. Altere as entradas do registro, conforme mostrado:
+Se você tiver CDS, poderá usá-lo em vez do Microsoft Locator. Altere as entradas do Registro conforme mostrado:
 
 ``` syntax
 HKEY_LOCAL_MACHINE
@@ -33,11 +33,11 @@ HKEY_LOCAL_MACHINE
                     Endpoint
 ```
 
-A alteração dessas entradas apontará para um computador de gateway que esteja executando o NSID. Isso será usado como o localizador mestre. No caso de uma falha, não haverá nenhuma pesquisa por uma substituição.
+Alterar essas entradas apontará para um computador gateway que está executando o NSID. Isso será usado como o localizador mestre. No caso de uma falha, não haverá nenhuma pesquisa para uma substituição.
 
- 
+ 
 
- 
+ 
 
 
 

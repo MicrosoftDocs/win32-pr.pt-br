@@ -4,12 +4,12 @@ ms.assetid: 0da4eab9-cabc-4bcc-8267-4aa1cd79e78b
 title: Tabela ListView
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a0e7296db9f71a7c40550fdcaab18d8f0d0f41f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a84ebab6c90486283c3dd8d4731cc0b7f3aff11a5459a0e93496bab83d7c277
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013074"
 ---
 # <a name="listview-table"></a>Tabela ListView
 
@@ -21,11 +21,11 @@ A tabela ListView tem as colunas a seguir.
 
 | Coluna   | Tipo                         | Chave | Nullable |
 |----------|------------------------------|-----|----------|
-| Propriedade | [Identificador](identifier.md) | S   | N        |
-| Ordem    | [Inteiro](integer.md)       | S   | N        |
+| Propriedade | [Identificador](identifier.md) | Y   | N        |
+| Ordem    | [Inteiro](integer.md)       | Y   | N        |
 | Valor    | [Binário](formatted.md)   | N   | N        |
-| Texto     | [Binário](formatted.md)   | N   | S        |
-| Binário\_ | [Identificador](identifier.md) | N   | S        |
+| Texto     | [Binário](formatted.md)   | N   | Y        |
+| Binário\_ | [Identificador](identifier.md) | N   | Y        |
 
 
 

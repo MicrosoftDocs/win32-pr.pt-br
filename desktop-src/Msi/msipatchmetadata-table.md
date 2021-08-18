@@ -1,19 +1,19 @@
 ---
-description: A tabela MsiPatchMetadata contém informações sobre um patch Windows Installer necessário para remover o patch e que é usado por adicionar ou remover programas.
+description: a tabela MsiPatchMetadata contém informações sobre um patch Windows Installer necessário para remover o patch e que é usado por adicionar ou remover programas.
 ms.assetid: b1c30e16-6c91-451a-8b75-7ddbcefcc092
 title: Tabela MsiPatchMetadata
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2642661a8f9dc067086926f8e993fc32c95a4a85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7094e644ff02caa1cbf4b3e53e5761740ff9a5492c92ca746404b1d243e09285
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012893"
 ---
 # <a name="msipatchmetadata-table"></a>Tabela MsiPatchMetadata
 
-A tabela MsiPatchMetadata contém informações sobre um patch Windows Installer necessário para remover o patch e que é usado por **Adicionar ou remover programas**.
+a tabela MsiPatchMetadata contém informações sobre um patch Windows Installer necessário para remover o patch e que é usado por **adicionar ou remover programas**.
 
 Os patches instalados sem esta tabela presentes no banco de dados de patch (arquivo. msp) não podem ser removidos e estão faltando algumas informações em **Adicionar ou remover programas**. A tabela deve estar no banco de dados do arquivo de patch e não em uma transformação no patch.
 
@@ -23,8 +23,8 @@ A tabela MsiPatchMetadata tem as colunas a seguir.
 
 | Coluna   | Tipo                         | Chave | Nullable |
 |----------|------------------------------|-----|----------|
-| Empresa  | [Identificador](identifier.md) | S   | S        |
-| Propriedade | [Identificador](identifier.md) | S   | N        |
+| Empresa  | [Identificador](identifier.md) | Y   | Y        |
+| Propriedade | [Identificador](identifier.md) | Y   | N        |
 | Valor    | [Text](text.md)             | N   | N        |
 
 
@@ -38,7 +38,7 @@ A tabela MsiPatchMetadata tem as colunas a seguir.
 <span id="Company"></span><span id="company"></span><span id="COMPANY"></span>Corporativa
 </dt> <dd>
 
-O nome da empresa. Um campo vazio (um valor nulo) indica que a linha contém uma das propriedades de metadados padrão do Windows Installer. Para obter mais informações, consulte a seção comentários deste tópico.
+O nome da empresa. um campo vazio (um valor nulo) indica que a linha contém uma das propriedades de metadados padrão do Windows Installer. Para obter mais informações, consulte a seção comentários deste tópico.
 
 Ao adicionar uma linha à tabela e inserir um nome de empresa neste campo, você pode adicionar qualquer empresa para estender o conjunto de propriedades.
 
@@ -60,9 +60,9 @@ O valor da propriedade de metadados. Isso nunca pode ser nulo ou uma cadeia de c
 
 ## <a name="remarks"></a>Comentários
 
-Disponível no Windows Installer 3,0 e posterior.
+disponível no Windows Installer 3,0 e posterior.
 
-As linhas na tabela MsiPatchMetadata que contêm um valor nulo no campo CompanyName referem-se a uma das propriedades de metadados de Windows Installer padrão a seguir.
+as linhas na tabela MsiPatchMetadata que contêm um valor nulo no campo CompanyName referem-se a uma das propriedades de metadados de Windows Installer padrão a seguir.
 
 
 
@@ -88,7 +88,7 @@ As linhas na tabela MsiPatchMetadata que contêm um valor nulo no campo CompanyN
 </tr>
 <tr class="odd">
 <td>MinorUpdateTargetRTM</td>
-<td>Indica que o patch destina-se à versão RTM do produto ou ao patch de atualização principal mais recente. Crie essa propriedade opcional em patches de atualização secundárias que contenham informações de sequenciamento para indicar que o patch remove todos os patches até a versão RTM do produto ou até o patch de atualização principal mais recente. Essa propriedade está disponível no Windows Installer 3,1 e posterior. <br/></td>
+<td>Indica que o patch destina-se à versão RTM do produto ou ao patch de atualização principal mais recente. Crie essa propriedade opcional em patches de atualização secundárias que contenham informações de sequenciamento para indicar que o patch remove todos os patches até a versão RTM do produto ou até o patch de atualização principal mais recente. essa propriedade está disponível no Windows Installer 3,1 e posterior. <br/></td>
 </tr>
 <tr class="even">
 <td>TargetProductName</td>
@@ -96,7 +96,7 @@ As linhas na tabela MsiPatchMetadata que contêm um valor nulo no campo CompanyN
 </tr>
 <tr class="odd">
 <td>MoreInfoURL</td>
-<td>Uma URL que fornece informações específicas para esse patch. Essa propriedade é registrada e seu valor pode ser obtido usando a função <a href="/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa"><strong>MsiGetPatchInfoEx</strong></a> . A partir do Windows XP com Service Pack 2 (SP2), esse valor pode ser o link de suporte para o patch exibido em <strong>Adicionar ou remover programas</strong>.<br/></td>
+<td>Uma URL que fornece informações específicas para esse patch. Essa propriedade é registrada e seu valor pode ser obtido usando a função <a href="/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa"><strong>MsiGetPatchInfoEx</strong></a> . a partir do Windows XP com Service Pack 2 (SP2), esse valor pode ser o link de suporte para o patch exibido em <strong>adicionar ou remover programas</strong>.<br/></td>
 </tr>
 <tr class="even">
 <td>CreationTimeUTC</td>
@@ -104,7 +104,7 @@ As linhas na tabela MsiPatchMetadata que contêm um valor nulo no campo CompanyN
 </tr>
 <tr class="odd">
 <td>DisplayName</td>
-<td>Um título para o patch que é OK para a exibição pública. Essa propriedade é registrada e seu valor pode ser obtido usando a função <a href="/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa"><strong>MsiGetPatchInfoEx</strong></a> . A partir do Windows XP com SP2, esse valor é o nome do patch exibido em <strong>Adicionar ou remover programas</strong>.<br/></td>
+<td>Um título para o patch que é OK para a exibição pública. Essa propriedade é registrada e seu valor pode ser obtido usando a função <a href="/windows/desktop/api/Msi/nf-msi-msigetpatchinfoexa"><strong>MsiGetPatchInfoEx</strong></a> . a partir do Windows XP com SP2, esse valor é o nome do patch exibido em <strong>adicionar ou remover programas</strong>.<br/></td>
 </tr>
 <tr class="even">
 <td>Descrição</td>
@@ -116,7 +116,7 @@ As linhas na tabela MsiPatchMetadata que contêm um valor nulo no campo CompanyN
 </tr>
 <tr class="even">
 <td>OptimizeCA</td>
-<td>Indica se o Windows Installer deve ignorar ações personalizadas ao aplicar o patch. Isso pode reduzir o tempo necessário para aplicar o patch. A propriedade OptimizeCA pode ter um dos seguintes valores:<br/>
+<td>indica se o Windows Installer deve ignorar ações personalizadas ao aplicar o patch. Isso pode reduzir o tempo necessário para aplicar o patch. A propriedade OptimizeCA pode ter um dos seguintes valores:<br/>
 <ul>
 <li>0-não ignore nenhuma ação personalizada.</li>
 <li>1-ignorar ações personalizadas de atribuição de propriedade e de diretório. O <a href="custom-action-type-35.md">tipo de ação personalizada 35</a> e o <a href="custom-action-type-51.md">tipo de ação personalizada 51</a> podem ser ações personalizadas de atribuição de diretório e propriedade.</li>
@@ -127,7 +127,7 @@ O valor de OptimizeCA deve ser o mesmo para todos os patches que estão sendo in
 </tr>
 <tr class="odd">
 <td>OptimizedInstallMode</td>
-<td>Se essa propriedade for definida como 1 (uma) em todos os patches a serem aplicados em uma transação, um aplicativo do patch será otimizado, se possível. Para obter mais informações, consulte <a href="patch-optimization.md">otimização de patch</a>. Disponível a partir do Windows Installer 3,1.</td>
+<td>Se essa propriedade for definida como 1 (uma) em todos os patches a serem aplicados em uma transação, um aplicativo do patch será otimizado, se possível. Para obter mais informações, consulte <a href="patch-optimization.md">otimização de patch</a>. disponível a partir do Windows Installer 3,1.</td>
 </tr>
 </tbody>
 </table>
@@ -148,7 +148,7 @@ O valor de OptimizeCA deve ser o mesmo para todos os patches que estão sendo in
 
 <dl> <dt>
 
-[Sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
+[sem suporte no Windows Installer 2,0 e versões anteriores](not-supported-in-windows-installer-version-2-0.md)
 </dt> </dl>
 
  

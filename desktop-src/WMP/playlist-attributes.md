@@ -4,24 +4,24 @@ description: Atributos da lista de reprodução
 ms.assetid: 2f2224ad-a1de-4f88-9166-8c00137a3695
 keywords:
 - Windows Media Player, listas de reprodução
-- Modelo de objeto do Windows Media Player, listas de reprodução
+- modelo de objeto Windows Media Player, listas de reprodução
 - modelo de objeto, listas de reprodução
-- Windows Media Player Mobile, listas de reprodução
-- Controle ActiveX do Windows Media Player, listas de reprodução
-- Controle ActiveX móvel do Windows Media Player, listas de reprodução
-- Controle ActiveX, listas de reprodução
+- Windows Media Player Listas de reprodução móveis
+- controle de ActiveX de Windows Media Player, listas de reprodução
+- Windows Media Player controle de ActiveX móvel, listas de reprodução
+- controle de ActiveX, listas de reprodução
 - listas de reprodução, atributos
 - listas de reprodução de metarquivo, atributos
-- Listas de reprodução do metarquivo do Windows Media, atributos
+- Windows Listas de reprodução de metarquivo de mídia, atributos
 - atributos, listas de reprodução
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 669d3203fdb703099a7089e2165f31fd5bb326bb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d00416f641fac89c707405c03dc70af0497b34d4cf646aa44fad5124f97f09a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995706"
 ---
 # <a name="playlist-attributes"></a>Atributos da lista de reprodução
 
@@ -29,7 +29,7 @@ As listas de reprodução têm informações de metadados chamadas atributos, as
 
 As listas de reprodução são definidas em arquivos organizados em um formato XML e determinados elementos no arquivo definem atributos de playlist. Alguns elementos de atributo são bem conhecidos; o autor do metarquivo também pode definir atributos arbitrários. Para obter mais informações sobre elementos de atributo em arquivos de playlist, consulte [Recuperando metadados](retrieving-metadata.md).
 
-A biblioteca pode fornecer atributos adicionais de playlist, como **SourceURL** ou **UserLastPlayedTime**. Para obter mais informações sobre os atributos da lista de reprodução da biblioteca, consulte a [referência de atributo](attribute-reference.md)do Windows Media Player.
+A biblioteca pode fornecer atributos adicionais de playlist, como **SourceURL** ou **UserLastPlayedTime**. para obter mais informações sobre os atributos da lista de reprodução da biblioteca, consulte a [referência de atributo](attribute-reference.md)Windows Media Player.
 
 A *lista de reprodução*. a propriedade **attributeCount** recupera o número de atributos associados à playlist. A *lista de reprodução*. a propriedade **AttributeName** recupera o nome de um atributo com base em seu índice e na *lista de reprodução*. o método **getItemInfo** recupera o valor de um atributo com base em seu nome.
 
@@ -127,9 +127,9 @@ private void lstPlaylist_SelectedIndexChanged(object sender, System.EventArgs e)
 [**Objeto playlist**](playlist-object.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

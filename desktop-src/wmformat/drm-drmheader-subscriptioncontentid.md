@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 151665777aa6b68078361eb6e063e374a52f30bf
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: a2b273cf95d2bbb271b055eeff3da80a788a38c88bb2e87db37f5a73e6e918e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "103916988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086146"
 ---
 # <a name="drm_drmheader_subscriptioncontentid"></a>\_SubscriptionContentID DRMHEADER \_ DRM
 
@@ -42,9 +42,9 @@ Esse atributo está presente somente com conteúdo do DRM versão 7. A ID do con
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
