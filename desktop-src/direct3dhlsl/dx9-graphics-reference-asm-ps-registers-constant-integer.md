@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 9b03a27a95f84ae30a70147caaf5662e1949cf18
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ce2d9ba19f97439da098563639bc8940cdae2f202a6f24cdd1940e25cfc14e9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104967201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119489376"
 ---
 # <a name="constant-integer-register-hlsl-ps-reference"></a>Registro de inteiro constante (referência do HLSL PS)
 
@@ -36,7 +36,7 @@ Quando usado como um argumento para a instrução do [loop-PS](loop---ps.md) :
 
 
 
- 
+ 
 
 O comportamento das constantes do sombreador foi alterado entre o Direct3D 8 e o Direct3D 9.
 
@@ -50,6 +50,6 @@ O comportamento das constantes do sombreador foi alterado entre o Direct3D 8 e o
 [Register](dx9-graphics-reference-asm-ps-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

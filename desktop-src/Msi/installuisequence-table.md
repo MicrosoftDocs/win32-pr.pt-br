@@ -4,12 +4,12 @@ ms.assetid: 076d7c14-e302-4465-aed5-27a4b1f70ac8
 title: Tabela InstallUISequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 19a4d8d3033645ac1f414e3aff67be2a26d7a6ab
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2234ddcad587a495eceb79cc4511100f483bcfd96b388164f6e3c2d6a39eca3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013244"
 ---
 # <a name="installuisequence-table"></a>Tabela InstallUISequence
 
@@ -23,9 +23,9 @@ A tabela InstallUISequence tem as colunas a seguir.
 
 | Coluna    | Tipo                         | Chave | Nullable |
 |-----------|------------------------------|-----|----------|
-| Ação    | [Identificador](identifier.md) | S   | N        |
-| Condição | [Condição](condition.md)   | N   | S        |
-| Sequência  | [Inteiro](integer.md)       | N   | S        |
+| Ação    | [Identificador](identifier.md) | Y   | N        |
+| Condição | [Condição](condition.md)   | N   | Y        |
+| Sequência  | [Inteiro](integer.md)       | N   | Y        |
 
 
 

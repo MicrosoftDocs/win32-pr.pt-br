@@ -4,12 +4,12 @@ ms.assetid: b795a385-b48d-4a16-9d91-e48bca120572
 title: Conformidade de especificação de WS-Discovery
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bcae062448b1913f0cc62dff3b6c86b98280a902
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07794140f05a065fb770ae2d5782f24180fb7e7ef66757278d5c5c93a3fd7e95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991406"
 ---
 # <a name="ws-discovery-specification-compliance"></a>Conformidade de especificação de WS-Discovery
 
@@ -39,7 +39,7 @@ No WS-Discovery, o WSDAPI usa os endereços especificados na seção 2,4. O WSDA
 
 WS-Discovery descreve a `uuid:` recomendação de formato de URI na seção 2,6, mas o WSDAPI substitui essa recomendação. Em vez disso, o WSDAPI usa o `urn:uuid:` formato de URI descrito em DPWS.
 
-A seção 3 de WS-Discovery descreve como um cliente interage com um proxy de descoberta. O WSDAPI não reconhece essa interação e ignora anúncios de proxies de descoberta. No Windows 7, o WSDAPI implementa uma extensão privada para o protocolo WS-Discovery, WS-Discovery extensões remotas, para permitir que os clientes de descoberta pesquisem serviços distribuídos em várias redes diferentes enviando solicitações para proxies centralizados. Para obter mais informações, consulte [funcionalidade adicional de WS-Discovery](additional-ws-discovery-functionality.md).
+A seção 3 de WS-Discovery descreve como um cliente interage com um proxy de descoberta. O WSDAPI não reconhece essa interação e ignora anúncios de proxies de descoberta. no Windows 7, o WSDAPI implementa uma extensão privada para o protocolo WS-Discovery, WS-Discovery extensões remotas, para permitir que os clientes de descoberta pesquisem serviços distribuídos em várias redes diferentes enviando solicitações para proxies centralizados. Para obter mais informações, consulte [funcionalidade adicional de WS-Discovery](additional-ws-discovery-functionality.md).
 
 A seção 4,1, parágrafo 3 de WS-Discovery requer que um temporizador decorra antes que uma mensagem de [saudação](hello-message.md) seja enviada. A API de hospedagem não espera antes de enviar uma mensagem de saudação. Se um cenário exigir um atraso antes que uma mensagem de saudação seja enviada, o desenvolvedor do aplicativo deverá implementar uma espera.
 

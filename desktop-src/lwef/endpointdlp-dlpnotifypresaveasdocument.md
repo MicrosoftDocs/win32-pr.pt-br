@@ -1,6 +1,6 @@
 ---
-description: Fornece ao sistema informações sobre um documento antes de uma operação salvar como ser iniciada.
-title: Função DlpNotifyPreSaveAsDocument (endpointdlp. h)
+description: Fornece ao sistema informações sobre um documento antes que uma operação salvar como seja iniciada.
+title: Função DlpNotifyPreSaveAsDocument (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
 topic_type:
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 api_location:
 - EndpointDlp.dll
-ms.openlocfilehash: 5226ed63227e2d9dd01155066e2e6e19f77e063f
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: 1dbd565ac7a86e381e1e70facf79a2883182260f82c31a2e8a9a3de4f6da8f2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107495307"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119778216"
 ---
 # <a name="dlpnotifypresaveasdocument-function"></a>Função DlpNotifyPreSaveAsDocument
 
-Fornece ao sistema informações sobre um documento antes de uma operação salvar como ser iniciada.
+Fornece ao sistema informações sobre um documento antes que uma operação salvar como seja iniciada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,26 +36,26 @@ void WINAPI DlpNotifyPreSaveAsDocument(_In_ const PDLP_DOCUMENT_INFO DocumentInf
 
 <dl> <dt>
 
-*DocumentInfo* \[ no\]
+*DocumentInfo* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) que contém informações sobre o documento a ser salvo.
+Um ponteiro para uma [PDLP_DOCUMENT_INFO](endpointdlp-dlp_document_info.md) que contém informações sobre o documento a ser salvo.
 
 </dd> </dl>
 
 <dl> <dt>
 
-*Destino* \[ no\]
+*Destino* \[ Em\]
 </dt> <dd>
 
-Um **LPCWSTR** que contém o caminho de destino do documento a ser salvo.
+Um **LPCWSTR que** contém o caminho de destino do documento a ser salvo.
 
 </dd> </dl>
 
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar void.
+Retornar nulo.
 
 ## <a name="remarks"></a>Comentários
 
@@ -66,5 +66,5 @@ Retornar void.
 
 | Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10,0; Build 17763)           |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10.0; Build 17763)           |
 | DLL<br/>                      | EndpointDlp.dll |

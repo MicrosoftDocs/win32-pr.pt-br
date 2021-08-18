@@ -1,52 +1,52 @@
 ---
-title: Adicionando suporte à manipulação em código não gerenciado
-description: Esta seção explica como adicionar suporte de manipulação a código não gerenciado implementando um coletor de eventos para a \_ interface IManipulationEvents.
+title: Adicionando suporte à manipulação em código não manipulado
+description: Esta seção explica como adicionar suporte de manipulação ao código não gerenciamento implementando um sink de evento para a \_ interface IManipulationEvents.
 ms.assetid: 7d8c6230-eaca-43c7-ad2f-651851b69d7f
 keywords:
-- Windows Touch, manipulações
-- Windows Touch, interface _IManipulationEvents
+- Windows Toque, manipulações
+- Windows Touch,_IManipulationEvents interface
 - Windows Touch, interface IManipulationProcessor
-- manipulações, adicionando suporte em código não gerenciado
-- manipulações, suporte a código não gerenciado
-- manipulações, suporte no código não gerenciado
+- manipulações, adicionando suporte em código não manipulado
+- manipulações, suporte a código não manipulado
+- manipulações, suporte em código não manipulado
 - manipulações, _IManipulationEvents interface
-- manipulações, interface IManipulationProcessor
-- Interface _IManipulationEvents, suporte a manipulação em código não gerenciado
-- Interface IManipulationProcessor, suporte à manipulação em código não gerenciado
+- manipulations,interface IManipulationProcessor
+- _IManipulationEvents interface, suporte à manipulação em código não gerenciamento
+- Interface IManipulationProcessor, suporte à manipulação em código não gerenciamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a2e000b6d3518c4e90eb5ae03b581e81037edf9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7ff526c128b6da83fae3a74b88cd3bb21bc3a81c507c0a76a7c70dbddc5f76d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119709996"
 ---
-# <a name="adding-manipulation-support-in-unmanaged-code"></a>Adicionando suporte à manipulação em código não gerenciado
+# <a name="adding-manipulation-support-in-unmanaged-code"></a>Adicionando suporte à manipulação em código não manipulado
 
-Esta seção explica como adicionar suporte de manipulação a código não gerenciado implementando um coletor de eventos para a interface [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) .
+Esta seção explica como adicionar suporte de manipulação ao código não gerenciamento implementando um sink de evento para a interface [**\_ IManipulationEvents.**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents)
 
 A imagem a seguir descreve a arquitetura de manipulação.
 
-![ilustração que mostra as mensagens de toque do Windows que são passadas para o processador de manipulação de um objeto, que manipula eventos com a \- interface imanipulationevents](images/manipulation-arch.png)
+![ilustração que mostra as mensagens de toque do Windows que são passadas para o processador de manipulação de um objeto , que manipula eventos com a \- interface imanipulationevents](images/manipulation-arch.png)
 
-Os dados de toque recebidos do [**WM \_ Touch**](wm-touchdown.md) messages são passados para o [**IMANIPULATIONPROCESSOR**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) junto com a ID de contato da mensagem de toque. Com base na sequência de mensagens, a interface **IManipulationProcessor** calculará que tipo de transformação está sendo executada e quais os valores associados a essa transformação são. Em seguida, o **IManipulationProcessor** gerará [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) que são manipulados por um coletor de eventos. O coletor de eventos pode usar esses valores para executar operações personalizadas no objeto que está sendo transformado.
+Os dados de toque recebidos das [**mensagens WM \_ TOUCH**](wm-touchdown.md) são passados para [**o IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) junto com a ID de contato da mensagem de toque. Com base na sequência de mensagens, a interface **IManipulationProcessor** calculará que tipo de transformação está sendo executada e quais são os valores associados a essa transformação. O **IManipulationProcessor** gerará [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) que são manipulados por um sink de evento. O sink de evento pode usar esses valores para executar operações personalizadas no objeto que está sendo transformado.
 
-Para adicionar suporte à manipulação ao seu aplicativo, você deve seguir estas etapas:
+Para adicionar suporte de manipulação ao seu aplicativo, você deve seguir estas etapas:
 
-1.  Implemente um coletor de eventos para a interface [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) .
-2.  Crie uma instância de uma interface [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) .
-3.  Crie uma instância do seu coletor de eventos e configure eventos de toque.
-4.  Enviar dados de evento de toque para o processador de manipulação.
+1.  Implemente um sink de evento para a interface [**\_ IManipulationEvents.**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents)
+2.  Crie uma instância de uma [**interface IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor)
+3.  Crie uma instância do seu sink de eventos e configurar eventos de toque.
+4.  Envie dados de evento de toque para o processador de manipulação.
 
-Esta seção explica as etapas que você deve seguir para adicionar suporte à manipulação ao seu aplicativo. O código é fornecido em cada etapa para você começar.
+Esta seção explica as etapas que você deve seguir para adicionar suporte de manipulação ao seu aplicativo. O código é fornecido em cada etapa para começar.
 
 > [!Note]  
-> Você não pode usar manipulações e gestos ao mesmo tempo porque as mensagens de gesto e toque são mutuamente exclusivas.
+> Você não pode usar manipulações e gestos ao mesmo tempo porque mensagens de gesto e toque são mutuamente exclusivas.
 
-### <a name="implement-an-event-sink-for-_imanipualtionevents-interface"></a>Implementar um coletor de eventos para a \_ interface IManipualtionEvents
+### <a name="implement-an-event-sink-for-_imanipualtionevents-interface"></a>Implementar um sink de eventos \_ para interface IManipualtionEvents
 
-Antes de criar uma instância do coletor de eventos, você deve criar uma classe que implemente a interface [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) para eventos. Este é o coletor de eventos. Eventos gerados pela interface [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) são tratados pelo seu coletor de eventos. O código a seguir mostra um cabeçalho de exemplo para uma classe que herda a interface **\_ IManipulationEvents** .
+Antes de criar uma instância do seu sink de eventos, você deve criar uma classe que implemente a interface [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) para eventos. Esse é o seu sink de eventos. Os eventos gerados pela interface [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) são manipulados pelo seu sink de evento. O código a seguir mostra um header de exemplo para uma classe que herda a interface **\_ IManipulationEvents.**
 
 ```C++
 // Manipulation Header Files
@@ -122,7 +122,7 @@ private:
 };     
 ```
 
-Dado o cabeçalho, você deve criar uma implementação da interface de eventos para que sua classe execute as ações que você deseja que o processador de manipulação realize. O código a seguir é um modelo que implementa a funcionalidade mínima de um coletor de eventos para a interface [**\_ IManipulationEvents**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents) .
+Considerando o header, você deve criar uma implementação da interface de eventos para que sua classe execute as ações que você deseja que o processador de manipulação execute. O código a seguir é um modelo que implementa a funcionalidade mínima de um sink de evento para a interface [**\_ IManipulationEvents.**](/windows/win32/api/manipulations/nn-manipulations-_imanipulationevents)
 
 ```C++
 #include "stdafx.h"
@@ -299,11 +299,11 @@ HRESULT CManipulationEventSink::QueryInterface(REFIID riid, LPVOID *ppvObj)
 }         
 ```
 
-Preste atenção extra às implementações dos métodos [**ManipulationStarted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationstarted), [**ManipulationDelta**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationdelta)e [**ManipulationCompleted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationcompleted) na classe. Esses são os métodos mais prováveis na interface que exigirão que você execute operações com base nas informações de manipulação que são passadas no evento. Observe também que o segundo parâmetro no construtor é o objeto usado nas manipulações de evento. No código usado para produzir o exemplo, o hWnd do aplicativo é enviado ao construtor para que ele possa ser reposicionado e redimensionado.
+Preste atenção extra às implementações dos métodos [**ManipulationStarted,**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationstarted) [**ManipulationDelta**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationdelta)e [**ManipulationCompleted**](/windows/win32/api/manipulations/nf-manipulations-_imanipulationevents-manipulationcompleted) na classe . Esses são os métodos mais prováveis na interface que exigirão que você execute operações com base nas informações de manipulação passadas no evento. Observe também que o segundo parâmetro no construtor é o objeto usado nas manipulações de eventos. No código usado para produzir o exemplo, o hWnd para o aplicativo é enviado ao construtor para que ele possa ser reposicionado e reposicionado.
 
 ### <a name="create-an-instance-of-an-imanipulationprocessor-interface"></a>Criar uma instância de uma interface IManipulationProcessor
 
-No código em que você usará as manipulações, será necessário criar uma instância de uma interface [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) . Primeiro, você deve adicionar suporte para a classe Manipulations. O código a seguir mostra como você pode fazer isso em sua classe.
+No código em que você usará manipulações, você deve criar uma instância de uma interface [**IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) Primeiro, você deve adicionar suporte para a classe de manipulações. O código a seguir mostra como você pode fazer isso em sua classe.
 
 ```C++
 //Include windows.h for touch events
@@ -316,7 +316,7 @@ No código em que você usará as manipulações, será necessário criar uma in
 IManipulationProcessor* g_pIManipProc;     
 ```
 
-Depois que você tiver a variável para o processador de manipulação e tiver incluído os cabeçalhos para as manipulações, você precisará criar uma instância da interface [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) . Este é um objeto COM. Portanto, você deve chamar [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)e, em seguida, criar uma instância de sua referência para o **IManipulationProcessor**. O código a seguir mostra como você pode criar uma instância dessa interface.
+Depois de ter sua variável para o processador de manipulação e incluir os headers para manipulações, você precisa criar uma instância da interface [**IManipulationProcessor.**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) Esse é um objeto COM. Portanto, você deve chamar [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)e, em seguida, criar uma instância de sua referência para **o IManipulationProcessor**. O código a seguir mostra como você pode criar uma instância dessa interface.
 
 ```C++
    HRESULT hr = CoInitialize(0);
@@ -329,9 +329,9 @@ Depois que você tiver a variável para o processador de manipulação e tiver i
    );
 ```
 
-### <a name="create-an-instance-of-your-event-sink-and-set-up-touch-events"></a>Criar uma instância do seu coletor de eventos e configurar eventos de toque
+### <a name="create-an-instance-of-your-event-sink-and-set-up-touch-events"></a>Criar uma instância do seu Sink de Eventos e configurar Eventos de Toque
 
-Inclua a definição de sua classe de coletor de eventos em seu código e, em seguida, adicione uma variável para a classe de coletor de eventos Manipulation. O exemplo de código a seguir inclui o cabeçalho para a implementação de classe e configura uma variável global para armazenar o coletor de eventos.
+Inclua a definição da classe do seu sink de evento ao seu código e adicione uma variável para a classe de sink de evento de manipulação. O exemplo de código a seguir inclui o header para a implementação de classe e configura uma variável global para armazenar o sink de eventos.
 
 ```C++
 //Include your definition of the event sink, CManipulationEventSink.h in this case
@@ -341,7 +341,7 @@ Inclua a definição de sua classe de coletor de eventos em seu código e, em se
 CManipulationEventSink* g_pManipulationEventSink;   
 ```
 
-Depois de ter a variável e incluir sua definição para a nova classe de coletor de eventos, você pode construir a classe usando o processador de manipulação que você configurou na etapa anterior. O código a seguir mostra como uma instância dessa classe seria criada a partir de **OnInitDialog**.
+Depois de ter a variável e incluir sua definição para a nova classe de sink de evento, você pode construir a classe usando o processador de manipulação que você definiu na etapa anterior. O código a seguir mostra como uma instância dessa classe seria criada de **OnInitDialog.**
 
 ```C++
    g_pManipulationEventSink = new CManipulationEventSink(g_pIManipProc, hWnd);
@@ -351,16 +351,16 @@ Depois de ter a variável e incluir sua definição para a nova classe de coleto
 ```
 
 > [!Note]  
-> A maneira como você cria uma instância do seu coletor de eventos depende do que você está fazendo com os dados de manipulação. Na maioria dos casos, você criará um coletor de eventos do processador de manipulação que não tem o mesmo construtor que este exemplo.
+> A maneira como você cria uma instância do seu sink de evento depende do que você está fazendo com os dados de manipulação. Na maioria dos casos, você criará um sink de eventos do processador de manipulação que não tem o mesmo construtor que este exemplo.
 
 ### <a name="send-touch-event-data-to-the-manipulation-processor"></a>Enviar dados de evento de toque para o processador de manipulação
 
-Agora que o processador de manipulação e o coletor de eventos foram configurados, você deve alimentar os dados de toque no processador de manipulação para disparar eventos de manipulação.
+Agora que você tem o processador de manipulação e o sink de eventos definidos, você deve alimentar dados de toque para o processador de manipulação para disparar eventos de manipulação.
 
 > [!Note]  
-> Esse é o mesmo procedimento discutido em [introdução com mensagens de toque do Windows](getting-started-with-multi-touch-messages.md).
+> Esse é o mesmo procedimento discutido no Ponto de Partida [com Windows Touch Messages](getting-started-with-multi-touch-messages.md).
 
-Primeiro, você criará um código para decodificar as mensagens do [**WM \_ Touch**](wm-touchdown.md) e enviá-las para a interface [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) para gerar eventos. O código a seguir mostra uma implementação de exemplo que é chamada do método **WndProc** e retorna um **LRESULT** para mensagens.
+Primeiro, você criará um código para decodificar as mensagens [**WM \_ TOUCH**](wm-touchdown.md) e enviá-las para a interface [**IManipulationProcessor**](/windows/desktop/api/manipulations/nn-manipulations-imanipulationprocessor) para gerar eventos. O código a seguir mostra uma implementação de exemplo que é chamada do **método WndProc** e retorna um **LRESULT** para mensagens.
 
 ```C++
 LRESULT OnTouch(HWND hWnd, WPARAM wParam, LPARAM lParam )
@@ -408,7 +408,7 @@ LRESULT OnTouch(HWND hWnd, WPARAM wParam, LPARAM lParam )
 }
 ```
 
-Agora que você tem um método utilitário para decodificar a mensagem do [**WM \_ Touch**](wm-touchdown.md) , você deve passar as mensagens do **WM \_ Touch** para a função utilitário do seu método **WndProc** . O código a seguir mostra como você pode fazer isso.
+Agora que você tem um método utilitário para decodificar a mensagem [**WM \_ TOUCH,**](wm-touchdown.md) você deve passar as mensagens **WM \_ TOUCH** para a função de utilitário do **método WndProc.** O código a seguir mostra como você pode fazer isso.
 
 ```C++
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
@@ -452,7 +452,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 }
 ```
 
-Os métodos personalizados que você implementou em seu coletor de eventos agora devem funcionar. Neste exemplo, tocar na janela irá movê-la.
+Os métodos personalizados que você implementou no seu sink de eventos agora devem funcionar. Neste exemplo, tocar na janela a move.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -462,4 +462,4 @@ Os métodos personalizados que você implementou em seu coletor de eventos agora
 </dt> </dl>
 
 
- 
+ 

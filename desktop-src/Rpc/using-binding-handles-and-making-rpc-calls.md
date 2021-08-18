@@ -4,12 +4,12 @@ description: Um erro comum entre os programadores de RPC é A manipulação de t
 ms.assetid: 5b452129-4060-49f9-9400-8585fb5714a4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b285fc3030b92e2616c850bf79c73e37f0341c9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1f1350e29344d09f42417a30fa3d32729d7ddd02247b17f80bccd0ae537c6c8c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010804"
 ---
 # <a name="using-binding-handles-and-making-rpc-calls"></a>Usando identificadores de associação e fazendo chamadas RPC
 
@@ -71,6 +71,6 @@ Além disso, o uso do **\[** [ \_ \_ identificador de contexto estrito](/windows
 [tipo \_ de \_ identificador de contexto estrito \_](/windows/desktop/Midl/type-strict-context-handle)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

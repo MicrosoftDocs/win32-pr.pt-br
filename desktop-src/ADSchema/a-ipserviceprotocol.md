@@ -1,10 +1,10 @@
 ---
-title: atributo ipServiceProtocol
-description: Contém a seção do mapa de serviços que armazena o número de protocolo para um serviço UNIX.
+title: Atributo ipServiceProtocol
+description: Contém a seção do mapa de serviços que armazena o número de protocolo para um UNIX serviço.
 ms.assetid: 44ab7637-c9c0-4d7c-898c-a9de45f75ccb
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ipServiceProtocol
+- Esquema do AD do atributo ipServiceProtocol
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 874b08d687ac621e15ae9b2268dcabef21e4c2aa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 4951a8927671edd569f91b51449e4f0d4ff6f326da35a138681626f96852abf4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105771758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322376"
 ---
-# <a name="ipserviceprotocol-attribute"></a>atributo ipServiceProtocol
+# <a name="ipserviceprotocol-attribute"></a>Atributo ipServiceProtocol
 
-Contém a seção do mapa de serviços que armazena o número de protocolo para um serviço UNIX.
+Contém a seção do mapa de serviços que armazena o número de protocolo para um UNIX serviço.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ipServiceProtocol                    |
-| LDAP-Display-Name | ipServiceProtocol                    |
+| Ldap-Display-Name | ipServiceProtocol                    |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.16                     |
-| System-ID-GUID    | cd96ec0b-1ed6-43b4-b26b-f170b645883f |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | cd96ec0b-1ed6-43b4-b26b-f170b645883f |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -55,10 +55,10 @@ Contém a seção do mapa de serviços que armazena o número de protocolo para 
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | True                                        |
+| Tem valor único       | Verdadeiro                                        |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -76,10 +76,10 @@ Contém a seção do mapa de serviços que armazena o número de protocolo para 
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | Falso                                       |
+| Tem valor único       | Falso                                       |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -97,10 +97,10 @@ Contém a seção do mapa de serviços que armazena o número de protocolo para 
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | Falso                                       |
+| Tem valor único       | Falso                                       |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
@@ -118,10 +118,10 @@ Contém a seção do mapa de serviços que armazena o número de protocolo para 
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
 | System-Only            | Falso                                       |
-| É de valor único       | Falso                                       |
+| Tem valor único       | Falso                                       |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |

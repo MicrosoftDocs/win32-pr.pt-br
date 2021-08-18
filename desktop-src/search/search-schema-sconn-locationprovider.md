@@ -1,19 +1,19 @@
 ---
-description: O <locationProvider> elemento opcional especifica o provedor de pesquisa a ser usado pelo conector de pesquisa do provedor de serviço Web. Esse elemento contém um atributo obrigatório e um elemento filho opcional.
+description: O elemento <locationProvider> opcional especifica o provedor de pesquisa a ser usado pelo conector de pesquisa do provedor de serviços Web. Esse elemento contém um atributo obrigatório e um elemento filho opcional.
 ms.assetid: 5481b1ae-e166-4f09-bf0d-d6b7f7c8a331
-title: Elemento LocationProvider (esquema do conector de pesquisa)
+title: Elemento locationProvider (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26c68732300c190b44b984bbe64ca031a81ced84
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 21101fd0e7c57b73af7bc9de525baaca9583d11e425b168d806f750063ac7203
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105797615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119711036"
 ---
-# <a name="locationprovider-element-search-connector-schema"></a>Elemento LocationProvider (esquema do conector de pesquisa)
+# <a name="locationprovider-element-search-connector-schema"></a>Elemento locationProvider (esquema do conector de pesquisa)
 
-O <locationProvider> elemento opcional especifica o provedor de pesquisa a ser usado pelo conector de pesquisa do provedor de serviço Web. Esse elemento contém um atributo obrigatório e um elemento filho opcional.
+O elemento <locationProvider> opcional especifica o provedor de pesquisa a ser usado pelo conector de pesquisa do provedor de serviços Web. Esse elemento contém um atributo obrigatório e um elemento filho opcional.
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,8 +58,8 @@ O <locationProvider> elemento opcional especifica o provedor de pesquisa a ser u
 
 | Atributo | Descrição                                                    |
 |-----------|----------------------------------------------------------------|
-| @clsid    | Obrigatórios. O identificador de classe (CLSID) do provedor de pesquisa. |
-| bases  | Opcional.                                                      |
+| @clsid    | Obrigatórios. O CLSID (identificador de classe) do provedor de pesquisa. |
+| Codebase  | Opcional.                                                      |
 
 
 
@@ -67,11 +67,11 @@ O <locationProvider> elemento opcional especifica o provedor de pesquisa a ser u
 
 ## <a name="remarks"></a>Comentários
 
-O @clsid valor do atributo para o provedor de OpenSearch é {48E277F6-4E74-4cd6-BA6F-FA4F42898223}.
+O valor do atributo para @clsid o provedor OpenSearch é {48E277F6-4E74-4cd6-BA6F-FA4F42898223}.
 
-Os conectores de pesquisa baseados no sistema de arquivos e no manipulador de protocolo podem usar o [<simpleLocation>](search-schema-sconn-simplelocation.md) elemento em vez disso. Se <locationProvider> estiver presente, não deverá haver um <simpleLocation> elemento na descrição do conector de pesquisa.
+Em vez disso, os conectores de pesquisa baseados no sistema de arquivos e no manipulador de protocolos podem usar [<simpleLocation>](search-schema-sconn-simplelocation.md) o elemento . Se <locationProvider> estiver presente, NÃO DEVERÁ haver um <simpleLocation> elemento na descrição do Conector de Pesquisa.
 
-## <a name="example-of-a-locationprovider-element"></a>Exemplo de um elemento LocalProvider
+## <a name="example-of-a-locationprovider-element"></a>Exemplo de um elemento locationProvider
 
 
 ```

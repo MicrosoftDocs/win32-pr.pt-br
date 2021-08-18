@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 572b85d75674676bb8bb89eb0ae440c48f22c114
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 0120251b3871b21716fde48b6f53bc3bc9e3649f408c74e90a7c610093744c4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119542546"
 ---
 # <a name="mssfu-30-intra-field-separator-attribute"></a>atributo msSFU-30-intra-Field-Separator
 
@@ -56,7 +56,7 @@ Contém os separadores intra-Field para cada mapa NIS.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -77,7 +77,7 @@ Contém os separadores intra-Field para cada mapa NIS.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -98,7 +98,7 @@ Contém os separadores intra-Field para cada mapa NIS.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
@@ -119,7 +119,7 @@ Contém os separadores intra-Field para cada mapa NIS.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |

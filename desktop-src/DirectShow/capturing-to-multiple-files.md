@@ -1,19 +1,19 @@
 ---
-description: Capturando para vários arquivos
+description: Capturando em vários arquivos
 ms.assetid: 6073a891-e9f5-442d-a2d9-3a7b97f7f735
-title: Capturando para vários arquivos
+title: Capturando em vários arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b40091acff8edffbe84550b03d1ccd4073ddb6b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 79ce7a1b4b91a0f78031a661e2c2e10895b4a21b1cfb068ca505429468a3af1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087462"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017574"
 ---
-# <a name="capturing-to-multiple-files"></a>Capturando para vários arquivos
+# <a name="capturing-to-multiple-files"></a>Capturando em vários arquivos
 
-Depois de capturar algum vídeo em um arquivo, você pode alternar para um novo arquivo interrompendo o grafo e Configurando o nome do arquivo no filtro do [gravador de arquivo](file-writer-filter.md) . Chame o método [**IFileSinkFilter:: SetFileName**](/windows/desktop/api/Strmif/nf-strmif-ifilesinkfilter-setfilename) no gravador de arquivo. Você pode obter um ponteiro para a interface [**IFileSinkFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter) ao criar o grafo, por meio do parâmetro *PSink* do método SetOutputFileName. O código a seguir mostra como fazer isso:
+Depois de capturar algum vídeo em um arquivo, você pode alternar para um novo arquivo interrompendo o grafo e definindo o nome do arquivo no filtro [Do autor do](file-writer-filter.md) arquivo. Chame o [**método IFileSinkFilter::SetFileName**](/windows/desktop/api/Strmif/nf-strmif-ifilesinkfilter-setfilename) no File Writer. Você pode obter um ponteiro para a interface [**IFileSinkFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter) ao criar o grafo, por meio do parâmetro *pSink* do método SetOutputFileName. O código a seguir mostra como fazer isso:
 
 
 ```C++

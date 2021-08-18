@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 321b27239114fc86861c0360d507db6c8c520a9c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ca513a31eded5202639da13b8e9f2e817c9df336b227ba93d903e44068b98898
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119440186"
 ---
 # <a name="change-method-of-the-win32_service-class-mbnapih"></a>Método Change da classe Win32_Service (Mbnapi. h)
 
@@ -180,7 +180,7 @@ O sistema tenta reiniciar com uma configuração adequada.
 *StartMode* \[ no\]
 </dt> <dd>
 
-Modo de início do serviço base do Windows. Para obter mais informações, consulte a seção Comentários.
+modo de início do serviço base de Windows. Para obter mais informações, consulte a seção Comentários.
 
 <dt>
 
@@ -272,7 +272,7 @@ Lista que contém os nomes dos serviços que devem ser iniciados antes do iníci
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -527,23 +527,23 @@ Na ocasião, talvez seja necessário alterar a conta sob a qual um determinado s
 
 -   A conta que está sendo usada como uma conta de serviço deve ter o direito de fazer logon como um serviço. Esse direito pode ser concedido usando Política de Grupo.
 -   A conta que está sendo usada como uma conta de serviço não deve ser membro de um grupo local, de domínio ou de administradores de empresa.
--   Cada instância de um serviço deve ser executada em uma conta de usuário exclusiva. Isso fornece segurança adicional e habilita a auditoria de instâncias de serviço individuais.
+-   Cada instância de um serviço deve ser executado em uma conta de usuário exclusiva. Isso fornece segurança adicional e permite a auditoria de instâncias de serviço individuais.
 -   Se o serviço for interativo, o serviço deverá ser executado na conta LocalSystem.
 
-    O LocalSystem é necessário porque apenas uma estação de janela (WinSta0) pode ser visível e interativa por vez. Se um serviço for executado em uma conta diferente de LocalSystem, ele será executado na estação de janela padrão Service-0x03E7 $ \\ , que é uma janela invisível. Os serviços em execução nesta estação de janela não podem receber entrada ou exibir a saída.
+    LocalSystem é necessário porque apenas uma estação de janela (WinSta0) pode ser visível e interativa por vez. Se um serviço for executado em uma conta diferente de LocalSystem, ele será executado na estação de janela padrão Service-0x03e7$ , que é \\ uma janela invisível. Os serviços em execução nessa estação de janela não podem receber a entrada ou a saída de exibição.
 
-Quando você atribui uma conta a um serviço, o SCM requer a senha correta para essa conta antes de fazer a atribuição. Se você fornecer uma senha incorreta, o SCM rejeitará a conta. Se você configurar uma conta de serviço usando a conta LocalSystem, LocalService ou NetworkService, não será necessário fornecer uma senha de conta, pois essas contas não têm senhas.
+Quando você atribui uma conta a um serviço, o SCM requer a senha correta para essa conta antes de fazer a atribuição. Se você fornecer uma senha incorreta, o SCM rejeitará a conta. Se você configurar uma conta de serviço usando a conta LocalSystem, LocalService ou NetworkService, não precisará fornecer uma senha de conta porque essas contas não têm senhas.
 
 O SCM armazena a senha da conta no banco de dados de serviços. No entanto, depois que a senha é atribuída, o SCM não garante que a senha armazenada no banco de dados de serviços e a senha atribuída à conta de usuário no Active Directory continuem a corresponder. Consequentemente, uma situação semelhante à seguinte pode ocorrer:
 
 -   Você configura um serviço para ser executado em uma conta de usuário específica.
--   O serviço é iniciado sob essa conta usando a senha da conta atual.
+-   O serviço é iniciado nessa conta usando a senha da conta atual.
 -   Você altera a senha da conta de usuário.
--   O serviço continua a ser executado. No entanto, se o serviço for interrompido, você não poderá reiniciá-lo porque o SCM continua a usar a senha antiga e inválida. Alterar a senha em Active Directory não altera a senha armazenada no banco de dados de serviços.
+-   O serviço continua sendo executado. No entanto, se o serviço for interrompido, você não poderá reiniciá-lo porque o SCM continua a usar a senha antiga e inválida. Alterar a senha no Active Directory não altera a senha armazenada no banco de dados de serviços.
 
-Se você executar serviços em contas de usuário regulares, precisará atualizar essas senhas de serviço sempre que a senha da conta de usuário for alterada. Isso pode ser particularmente demorado se você não tiver certeza de quais serviços estão sendo executados nessa conta ou quais computadores têm serviços em execução nessa conta. Felizmente, você pode usar o WMI para verificar as contas de serviço em todos os seus computadores e, se necessário, alterar a senha da conta de serviço.
+Se você executar serviços em contas de usuário regulares, precisará atualizar essas senhas de serviço sempre que a senha da conta de usuário for muda. Isso pode ser particularmente demorado se você não tiver certeza de quais serviços estão sendo executados nessa conta ou quais computadores têm serviços em execução nessa conta. Felizmente, você pode usar o WMI para verificar as contas de serviço em todos os seus computadores e, se necessário, alterar a senha da conta de serviço.
 
-O parâmetro do [**\_ Sqlorder OrderGroup do Win32**](win32-loadordergroup.md) representa um grupo de serviços do sistema que definem dependências de execução. Os serviços devem ser iniciados na ordem especificada pelo grupo de ordem de carregamento, pois os serviços dependem uns dos outros. Esses serviços dependentes exigem a presença dos serviços antecedentes para funcionar corretamente.
+O [**parâmetro Win32 \_ LoadOrderGroup**](win32-loadordergroup.md) representa um grupo de serviços do sistema que definem dependências de execução. Os serviços devem ser iniciados na ordem especificada pelo Grupo de Ordem de Carregamento porque os serviços dependem uns dos outros. Esses serviços dependentes exigem a presença dos serviços antecessores para funcionar corretamente.
 
 Para alterar um serviço de um serviço de rede para um sistema local, os parâmetros *StartName* e *StartPassword* devem ter os seguintes valores:
 
@@ -555,7 +555,7 @@ StartPassword = "" // - empty string, not NULL
 
 
 
-Para alterar um serviço de um serviço do sistema local para uma rede, os parâmetros *StartName* e *StartPassword* devem ter os seguintes valores:
+Para alterar um serviço de um serviço de sistema local para uma rede, os parâmetros *StartName* e *StartPassword* devem ter os seguintes valores:
 
 
 ```C++
@@ -567,7 +567,7 @@ StartPassword = "" // - empty string, not NULL
 
 ## <a name="examples"></a>Exemplos
 
-O VBScript a seguir altera a conta de serviço para que os serviços sejam executados em uma conta de usuário especificada para LocalSystem.
+O VBScript a seguir altera a conta de serviço para serviços de execução em uma conta de usuário especificada para LocalSystem.
 
 
 ```VB
@@ -581,7 +581,7 @@ Next
 
 
 
-O VBScript a seguir altera a senha da conta de serviço para todos os scripts em execução em netsvc
+O VBScript a seguir altera a senha da conta de serviço para todos os scripts em execução no Netsvc
 
 
 ```VB
@@ -603,9 +603,9 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| parâmetro<br/>                   | <dl> <dt>Mbnapi. h</dt> </dl>     |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| parâmetro<br/>                   | <dl> <dt>Mbnapi.h</dt> </dl>     |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -617,10 +617,10 @@ Next
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Serviço Win32**](win32-service.md)
+[**Serviço \_ Win32**](win32-service.md)
 </dt> <dt>
 
-[Tarefas do WMI: serviços](/windows/desktop/WmiSdk/wmi-tasks--services)
+[Tarefas WMI: Serviços](/windows/desktop/WmiSdk/wmi-tasks--services)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Código de notificação EN_ALIGN_RTL_EC (WinUser. h)
-description: Enviado quando o usuário altera a direção do controle de edição para a direita para a esquerda. A janela pai do controle de edição recebe esse código de notificação por meio de uma mensagem de comando do WM \_ .
+title: EN_ALIGN_RTL_EC de notificação (Winuser.h)
+description: Enviado quando o usuário alterou a direção do controle de edição para da direita para a esquerda. A janela pai do controle de edição recebe esse código de notificação por meio de uma mensagem WM \_ COMMAND.
 ms.assetid: c53bc808-48c6-4a8f-ae5d-af2164fe419a
 keywords:
-- EN_ALIGN_RTL_EC de código de notificação controles do Windows
+- EN_ALIGN_RTL_EC código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eca94073b86ea44b192360e593f4b76d4227cf82
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d16b44ecd143715eb5c1bc895ca5c20fa066b17b71ab31ee667e2d6b2b6a0852
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119437086"
 ---
-# <a name="en_align_rtl_ec-notification-code"></a>PT \_ alinhar \_ \_ código de notificação do EC DPE
+# <a name="en_align_rtl_ec-notification-code"></a>EN \_ ALIGN \_ RTL EC notification \_ code
 
-Enviado quando o usuário altera a direção do controle de edição para a direita para a esquerda. A janela pai do controle de edição recebe esse código de notificação por meio de uma mensagem de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) .
+Enviado quando o usuário alterou a direção do controle de edição para da direita para a esquerda. A janela pai do controle de edição recebe esse código de notificação por meio de uma [**mensagem WM \_ COMMAND.**](/windows/desktop/menurc/wm-command)
 
 
 ```C++
@@ -49,15 +49,15 @@ O [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) cont
 *lParam* 
 </dt> <dd>
 
-Um identificador para o controle de edição que envia o código de notificação.
+Um alça para o controle de edição que envia o código de notificação.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Se houver uma linguagem bidirecional instalada em seu sistema, por exemplo, árabe ou Hebraico, você poderá alterar a direção do controle de edição usando CTRL + LSHIFT (da esquerda para a direita) e CTRL + RSHIFT (da direita para a esquerda).
+Se houver uma linguagem bidirecional instalada em seu sistema, por exemplo, árabe ou hebraico, você poderá alterar a direção do controle de edição usando CTRL+LSHIFT (da esquerda para a direita) e CTRL+RSHIFT (para a direita para a esquerda).
 
-**Edição avançada:** Não há suporte para este código de notificação.
+**Edição rica:** Não há suporte para esse código de notificação.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,9 +65,9 @@ Se houver uma linguagem bidirecional instalada em seu sistema, por exemplo, ára
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Se houver uma linguagem bidirecional instalada em seu sistema, por exemplo, ára
 
 <dl> <dt>
 
-[**comando do WM \_**](/windows/desktop/menurc/wm-command)
+[**COMANDO \_ WM**](/windows/desktop/menurc/wm-command)
 </dt> </dl>
 
  

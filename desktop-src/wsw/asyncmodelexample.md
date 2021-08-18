@@ -3,17 +3,17 @@ title: Exemplo de função assíncrona
 description: Este exemplo ilustra a implementação e a chamada de funções assíncronas.
 ms.assetid: e71bd231-c69c-409f-874c-a0798b844ee6
 keywords:
-- AsyncModelExample Web Services para Windows
+- Serviços Web AsyncModelExample para Windows
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbfc0963ef1f62a5458f9353245e96959be2f32d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3c2c5470596bf34a2d0d0e96311445de262f68c13f2684a26bac7f773cd2959f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119444756"
 ---
 # <a name="asynchronous-function-example"></a>Exemplo de função assíncrona
 
@@ -21,11 +21,11 @@ Este exemplo ilustra a implementação e a chamada de funções assíncronas.
 
 O exemplo consiste nas seguintes partes:
 
--   A função Add, que adicionará dois números de forma síncrona ou assíncrona. Ele cria um thread como um detalhe de implementação para o caso assíncrono.
+-   A função Add que adicionará dois números de forma síncrona ou assíncrona. Ele cria um thread como um detalhe de implementação para o caso assíncrono.
 -   A função CallAddSync invoca as funções Add de forma síncrona.
 -   A função CallAddAsync invoca as funções Add de forma assíncrona.
 
-## <a name="asyncmodelcpp"></a>AsyncModel. cpp
+## <a name="asyncmodelcpp"></a>AsyncModel.cpp
 
 
 ```C++
@@ -383,9 +383,9 @@ int __cdecl wmain(int argc, __in_ecount(argc) wchar_t **argv)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

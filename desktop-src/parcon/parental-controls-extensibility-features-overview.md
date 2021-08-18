@@ -4,12 +4,12 @@ ms.assetid: f0fc1b11-6de4-48f6-afc9-f05c8812d2bd
 title: Visão geral dos recursos de extensibilidade dos controles dos pais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fe150c5955881b8038cdca9a1e4562ee28093f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3bf609c08a4114d7d96ae600744879bda53ac483d90bcd25def3dd0d5f9e3c26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971715"
 ---
 # <a name="parental-controls-extensibility-features-overview"></a>Visão geral dos recursos de extensibilidade dos controles dos pais
 
@@ -37,7 +37,7 @@ A Microsoft definiu vários eventos padrão para tratar de atividades comuns:
 Nem todos os eventos anteriores são adequados para uso por aplicativos. As alterações de conta, a alteração do relógio do sistema e o log de eventos de logon e logoff são implementadas somente pelo sistema operacional e, portanto, não são expostas publicamente.
 
 > [!Note]  
-> A instrumentação de eventos de entrada e saída do aplicativo está disponível no Windows Vista e é configurada pelos controles dos pais para registrar esses dados.
+> a instrumentação de eventos de entrada e saída do aplicativo está disponível no Windows Vista e é configurada pelos controles dos pais para registrar esses dados.
 
  
 
@@ -47,11 +47,11 @@ Um evento personalizado genérico também é definido com 3 marcas/valores dispo
 
 Se o evento personalizado genérico não for adequado, um ISV poderá definir seu próprio usando um manifesto do aplicativo e poderá registrar cabeçalhos para até três campos usando a mesma API do WMI.
 
-Os ISVs podem optar por definir seus próprios eventos e consumi-los independentemente do Visualizador de log por meio de APIs públicas do Windows. Isso não tem o benefício da centralização de log completa.
+os ISVs podem optar por definir seus próprios eventos e consumi-los independentemente do visualizador de Log por meio de APIs de Windows pública. Isso não tem o benefício da centralização de log completa.
 
 ## <a name="parental-controls-panel-general-ui-extensibility-link-addition"></a>Adição de link de extensibilidade da interface do usuário geral do painel de controles pais
 
-Um link de extensibilidade da interface do usuário de uso geral é exposto acessando as configurações por meio do WMI, criando uma instância de extensão do caminho de DLL de recurso de nome e ID, caminho de imagem (bitmap), caminho de imagem de estado desabilitado (bitmap), caminho de DLL de recurso de subtítulo e ID e especificações de caminho executável. Depois de registrado, o link será exibido na área mais configurações do painel de controles dos pais e clicar nele invocará o executável especificado.
+Um link de extensibilidade da interface do usuário de uso geral é exposto acessando as configurações por meio do WMI, criando uma instância de extensão do caminho de DLL de recurso de nome e ID, caminho de imagem (bitmap), caminho de imagem de estado desabilitado (bitmap), caminho de DLL de recurso de subtítulo e ID e especificações de caminho executável. depois de registrado, o link aparecerá na área mais Configurações do painel de controles dos pais e, se você clicar nele, ele invocará o executável especificado.
 
 A cadeia de caracteres do caminho executável pode, opcionalmente, incluir um token para que o SID do usuário atual seja substituído antes da invocação. Isso permite que a execução do link opere no contexto do usuário para o qual a página de Hub está sendo exibida no momento, se o executável precisar saber o SID.
 
@@ -59,11 +59,11 @@ A cadeia de caracteres do caminho executável pode, opcionalmente, incluir um to
 
 Conforme observado no tópico, os [controles dos pais In-Box restrições e interfaces do usuário](parental-controls-in-box-restrictions-and-user-interfaces.md), o filtro de conteúdo da Web na caixa pode ser substituído por um filtro fornecido pelo fornecedor. Isso é realizado acessando as configurações por meio do WMI para definir um GUID e um nome proprietário da filtragem.
 
-O mecanismo geral de extensibilidade da interface do usuário é usado para expor um filtro de terceiros. Esse é o mesmo mecanismo usado para qualquer extensão que deseja aparecer na seção mais configurações do painel de controle pai de nível superior. Fazer a etapa adicional de definir o mesmo GUID e um caminho de DLL de recurso de nome apropriado e uma ID para as configurações de filtro no nível do sistema fará com que o link de filtro exibido na caixa seja ocultado e a entrada de terceiros seja mostrada na parte superior da seção mais configurações. O nome registrado para o filtro será mostrado na seção de resumo.
+O mecanismo geral de extensibilidade da interface do usuário é usado para expor um filtro de terceiros. esse é o mesmo mecanismo usado para qualquer extensão que deseja aparecer na seção mais Configurações do painel de controle pai de nível superior. fazer a etapa adicional de definir o mesmo GUID e um caminho de DLL de recurso de nome apropriado e uma ID para as configurações de filtro no nível do sistema fará com que o link de filtro exibido na caixa seja ocultado e a entrada de terceiros seja mostrada na parte superior da seção mais Configurações. O nome registrado para o filtro será mostrado na seção de resumo.
 
-Redefinir o GUID do filtro e as configurações do caminho/ID do nome resultará no filtro de conteúdo da Web na caixa, restabelecendo a si mesmo como o filtro ativo e aparecendo novamente na seção Configurações do Windows.
+redefinir o GUID do filtro e as configurações do caminho/ID do nome resultará no filtro de conteúdo da Web na caixa, restabelecendo a si mesmo como o filtro ativo e aparecendo novamente na seção Windows Configurações.
 
-Observe que os filtros de terceiros não são restritos nas tecnologias usadas para conectar-se ao Windows Communications. Um filtro deve expor apenas suas configurações usando um link de extensibilidade e honrar as configurações de controles pais adequadas.
+observe que os filtros de terceiros não são restritos nas tecnologias usadas para conectar-se a Windows comunicações. Um filtro deve expor apenas suas configurações usando um link de extensibilidade e honrar as configurações de controles pais adequadas.
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: ace31e17-a638-414f-8518-9b944118047b
 title: Eventos de relatório
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 644163c5838b703d28db628c643c5cd12c73c22e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a52c5fe2abba47adb3b1b7bdf7d5562da8e57eb26aa21fe8448871c940cf2c34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661917"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015424"
 ---
 # <a name="reporting-events"></a>Eventos de relatório
 
@@ -130,7 +130,7 @@ Para compilar os recursos gerados pelo compilador de mensagem, use o seguinte co
 
 **RC Provider. rc**
 
-Para criar a DLL somente de recursos que contém os recursos de cadeia de caracteres da tabela de mensagens, use o comando a seguir (você pode executar o comando em um prompt de comando do Visual Studio):
+para criar a DLL somente de recursos que contém os recursos de cadeia de caracteres da tabela de mensagens, use o comando a seguir (você pode executar o comando em um Prompt de comando Visual Studio):
 
 **link-dll-NOENTRY Provider. res**
 

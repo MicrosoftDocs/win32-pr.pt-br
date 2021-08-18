@@ -4,12 +4,12 @@ ms.assetid: b8f290fb-ae0b-44de-87cc-d25f7e0e3ae6
 title: Estruturas comuns
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3fb4afd791d42565202ef55779d1b4ee9260efa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41458411378350737d6bd9b6d59690f5e261f48948739d25e6127a39e2191bc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011664"
 ---
 # <a name="common-structures"></a>Estruturas comuns
 

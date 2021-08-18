@@ -6,12 +6,12 @@ keywords:
 - definindo propriedades do item de trabalho Agendador de Tarefas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e026ea3d2b3f6677a3d229e9289ab9b201e02b94
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e6a29ff08c4f9129b8dc9ab749cd6db5807fd0c52449e48b64d5f3b36631fef6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119402536"
 ---
 # <a name="setting-work-item-property-examples"></a>Definindo exemplos de propriedade de item de trabalho
 
@@ -22,7 +22,7 @@ Os exemplos de código listados na parte inferior da página mostram como defini
 > [!Note]  
 > No exemplo de código a seguir, todas as interfaces são lançadas depois que elas não são mais necessárias.
 
- 
+ 
 
 Nos exemplos a seguir, o objeto modificado é sempre salvo em disco por uma chamada para [**IPersistFile:: Save**](/windows/win32/api/objidl/nf-objidl-ipersistfile-save). (A interface [**IPersistFile**](/windows/win32/api/objidl/nn-objidl-ipersistfile) é uma interface com padrão herdada pelo objeto Task.)
 
@@ -44,7 +44,7 @@ O procedimento a seguir descreve como definir uma propriedade de tarefa.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -53,6 +53,6 @@ O procedimento a seguir descreve como definir uma propriedade de tarefa.
 [Exemplos de Agendador de Tarefas 1,0](task-scheduler-1-0-examples.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

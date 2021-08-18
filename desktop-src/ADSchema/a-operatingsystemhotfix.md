@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c32ced3ea760eab9d97828369b51ec596d561ebd
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f0ece851b703c543740716ec042331c4ede69aa79b7dc06b4ee9fdce8c974c4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825306"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119442146"
 ---
 # <a name="operating-system-hotfix-attribute"></a>Atributo Operating-System-hotfix
 
@@ -36,7 +36,7 @@ O nível de hotfix do sistema operacional.
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.415                      |
 | System-ID-GUID    | bd951b3c-9c96-11d0-afdd-00c04fd930c9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| Sintaxe            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -121,15 +121,15 @@ O nível de hotfix do sistema operacional.
 | ID do link                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| É de valor único       | True                                                                                     |
+| Tem valor único       | True                                                                                     |
 | É indexado             | Falso                                                                                    |
-| No catálogo global      | Falso                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                             |
+| No Catálogo Global      | Falso                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O nível de hotfix do sistema operacional.
 | ID do link                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| É de valor único       | True                                                                                     |
+| Tem valor único       | True                                                                                     |
 | É indexado             | Falso                                                                                    |
-| No catálogo global      | Falso                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                             |
+| No Catálogo Global      | Falso                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O nível de hotfix do sistema operacional.
 | ID do link                | \-                                                                                       |
 | MAPI-Id                | \-                                                                                       |
 | System-Only            | Falso                                                                                    |
-| É de valor único       | True                                                                                     |
+| Tem valor único       | True                                                                                     |
 | É indexado             | Falso                                                                                    |
-| No catálogo global      | Falso                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                             |
+| No Catálogo Global      | Falso                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                             |
 | Range-Lower            | \-                                                                                       |
 | Range-Upper            | \-                                                                                       |
 | Search-Flags           | 0x00000000                                                                               |
 | System-Flags           | 0x00000010                                                                               |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 

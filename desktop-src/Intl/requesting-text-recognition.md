@@ -4,12 +4,12 @@ ms.assetid: 9db9045d-b289-4c6c-9b17-ddbc2c1d3089
 title: Solicitando reconhecimento de texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db2442cfa1e26185c4c8d882fe71bb178911f4d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f8efd4fe8b2f37c134480aa1b057705af8826bbf7490b1dc4d40fb5a2755b043
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105796345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147045"
 ---
 # <a name="requesting-text-recognition"></a>Solicitando reconhecimento de texto
 
@@ -127,7 +127,7 @@ void PrintAllResults(PMAPPING_PROPERTY_BAG pBag)
 O exemplo a seguir ilustra o uso de [**MappingRecognizeText**](/windows/desktop/api/Elscore/nf-elscore-mappingrecognizetext) com o serviço de detecção de scripts da Microsoft e imprime todos os resultados recuperados. O formato de saída desse serviço é uma matriz de estruturas de [**\_ \_ intervalo de dados de mapeamento**](/windows/desktop/api/Elscore/ns-elscore-mapping_data_range) , cada um especificando o texto escrito no mesmo script. Os caracteres comuns (Zyyy) são adicionados ao intervalo anterior, ou ao próximo intervalo, se o intervalo anterior não existir. O membro **pData** de cada estrutura aponta para uma cadeia de caracteres Unicode terminada em nulo que contém o nome Unicode padrão do script para o intervalo específico.
 
 > [!Note]  
-> A partir do Windows 7, o serviço de detecção de scripts da Microsoft está em conformidade com o Unicode 5,1.
+> a partir do Windows 7, o serviço de detecção de scripts da Microsoft está em conformidade com o Unicode 5,1.
 
  
 

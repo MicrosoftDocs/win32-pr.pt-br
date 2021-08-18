@@ -1,23 +1,23 @@
 ---
 title: Personalizando cores da faixa de das
-description: A estrutura da faixa de faixas do Windows expõe um conjunto de propriedades de cor que permite que um aplicativo Personalize a aparência de vários elementos da interface do usuário da faixa de para-tempo de execução.
+description: o Windows estrutura da faixa de de faixas expõe um conjunto de propriedades de cores que permite que um aplicativo personalize a aparência de vários elementos da interface do usuário da faixa de da Ribbon em tempo de execução.
 ms.assetid: e070aaca-d350-4336-8e5d-d5d9c8167287
 keywords:
-- Faixa de-se do Windows, personalizando cores
+- Windows Faixa de faixas, personalizando cores
 - Faixa de faixas, personalizando cores
-- Personalizando as cores da faixa de das janelas
+- personalizando as cores da faixa de Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 55ff6527dc67ee18df4723fc33e4b764e20127e8
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: e7ef83c40d49656c82aabfbf41c4ec5375f7f3f54f063ccf30d917e740f87408
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103640226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710886"
 ---
 # <a name="customizing-ribbon-colors"></a>Personalizando cores da faixa de das
 
-A estrutura da faixa de faixas do Windows expõe um conjunto de propriedades de cor que permite que um aplicativo Personalize a aparência de vários elementos da interface do usuário da faixa de para-tempo de execução.
+o Windows estrutura da faixa de de faixas expõe um conjunto de propriedades de cores que permite que um aplicativo personalize a aparência de vários elementos da interface do usuário da faixa de da Ribbon em tempo de execução.
 
 -   [Introdução](#introduction)
 -   [Especificar cores da faixa de medida](#specify-ribbon-colors)
@@ -31,8 +31,8 @@ As [chaves de propriedade da estrutura](windowsribbon-reference-properties-frame
 | Cor da faixa de da                     | Chave de propriedade da estrutura                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cor da tela de fundo                 | [\_GlobalBackgroundColor PKEY \_ UI](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md)                                                                                                                                                                                                                                                                                                                                                                 |
-| Cor de realce (somente Windows 7) | [Interface do usuário \_ PKEY \_ GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md)* * * * introduzido no Windows 8 * *: * * [UI \_ PKEY \_ GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md) não pode ser definido independentemente da [interface do usuário \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md).<br/> <br/>                                                              |
-| Cor do texto                       | [Interface do usuário \_ PKEY \_ GlobalTextColor](windowsribbon-reference-properties-uipkey-globaltextcolor.md)* * * * introduzido no Windows 8 **:** as alterações no valor padrão da [interface do usuário \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md) no Windows 8 podem exigir um ajuste para a [interface do usuário \_ PKEY \_ GlobalTextColor](windowsribbon-reference-properties-uipkey-globaltextcolor.md) em aplicativos da faixa de faixas projetados para o Windows 7.<br/> <br/> |
+| cor de realce (somente Windows 7) | [Interface do usuário \_ PKEY \_ GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md)* * * * introduzido em Windows 8 * *: * * [UI \_ PKEY \_ GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md) não pode ser definido independentemente da [interface do usuário \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md).<br/> <br/>                                                              |
+| Cor do texto                       | [Interface do usuário \_ PKEY \_ GlobalTextColor](windowsribbon-reference-properties-uipkey-globaltextcolor.md)* * * * introduzido na Windows 8 **:** as alterações no valor padrão da [interface do usuário \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md) no Windows 8 podem exigir um ajuste para a [interface do usuário \_ PKEY \_ GlobalTextColor](windowsribbon-reference-properties-uipkey-globaltextcolor.md) em aplicativos da faixa de faixas projetados para o Windows 7.<br/> <br/> |
 
 
 
@@ -44,7 +44,7 @@ A estrutura da faixa de faixas usa um modelo de cores de matiz, saturação, bri
 
 Para especificar a cor dos elementos da interface do usuário na estrutura da faixa de faixas, um aplicativo atribui valores HSB a cada uma das propriedades de cores globais. Esses valores são aplicados universalmente em todos os elementos da faixa de faixas, conforme exigido pelo aplicativo da faixa de faixas (a estrutura não dá suporte à atribuição de valores HSB a elementos individuais e controles).
 
-Introduzido no Windows 8 * *: * *[UI \_ PKEY \_ GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md) recebe o mesmo valor que a [interface do usuário \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md).
+introduzido em Windows 8 * *: * *[UI \_ PKEY \_ GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md) é atribuído ao mesmo valor que a [interface do usuário \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md).
 
 A tabela a seguir descreve os parâmetros HSB da estrutura da faixa de opções.
 
@@ -85,7 +85,7 @@ Os valores HSB não identificam cores específicas. Em vez disso, a combinação
 Ao atribuir valores HSB personalizados à [interface do usuário \_ PKEY \_ GlobalTextColor](windowsribbon-reference-properties-uipkey-globaltextcolor.md) e à [interface do usuário do \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md), é recomendável que esses valores sejam de contraste alto o suficiente para garantir a legibilidade. Especificamente, a cor do texto deve ser mais escura do que a tonalidade mais clara da interface do usuário da faixa de uma. Quando necessário, a estrutura ajusta automaticamente o valor HSB da interface do usuário \_ PKEY \_ GlobalTextColor para fornecer contraste suficiente em relação a qualquer sombra de plano de fundo ou gradiente derivado da interface do usuário \_ PKEY \_ GlobalBackgroundColor.
 
 > [!Note]  
-> No Windows 7, a [interface do usuário \_ PKEY \_ GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md) pode ser definida independentemente da [interface do usuário \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md).
+> no Windows 7, a [interface do usuário \_ PKEY \_ GlobalHighlightColor](windowsribbon-reference-properties-uipkey-globalhighlightcolor.md) pode ser definida independentemente da [interface do usuário \_ PKEY \_ GlobalBackgroundColor](windowsribbon-reference-properties-uipkey-globalbackgroundcolor.md).
 
  
 

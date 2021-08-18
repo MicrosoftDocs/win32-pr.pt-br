@@ -1,5 +1,5 @@
 ---
-description: 'Libera o identificador para um CSP (provedor de serviços de criptografia) ou para uma chave de Cryptography API: próxima geração (CNG).'
+description: 'Libera o handle para um CSP (provedor de serviços de criptografia) ou para uma chave CNG (Cryptography API: Next Generation).'
 ms.assetid: 76cbf8ae-c4ab-43d9-b06d-ea0b2a66368a
 title: Função FreeCryptProvFromCertEx
 ms.topic: reference
@@ -13,19 +13,19 @@ api_type:
 - DllExport
 api_location:
 - Mssign32.dll
-ms.openlocfilehash: 1be6270ebf9320a9c7527736b9fc4894cd50de9a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b887fd7cd37e8963430378590552273b0856dc2cf73e9d0da15ab41a5a622447
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006734"
 ---
 # <a name="freecryptprovfromcertex-function"></a>Função FreeCryptProvFromCertEx
 
-A função **FreeCryptProvFromCertEx** libera o identificador para um CSP ( [*provedor de serviços de criptografia*](../secgloss/c-gly.md) ) ou para uma chave de Cryptography API: próxima geração (CNG).
+A **função FreeCryptProvFromCertEx** libera [*o*](../secgloss/c-gly.md) handle para um CSP (provedor de serviços de criptografia) ou para uma chave CNG (Api de Criptografia: Próxima Geração).
 
 > [!Note]  
-> Esta função não tem nenhum arquivo de cabeçalho ou biblioteca de importação associado. Para chamar essa função, você deve criar um arquivo de cabeçalho definido pelo usuário e usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mssign32.dll.
+> Essa função não tem nenhum arquivo de header associado ou biblioteca de importação. Para chamar essa função, você deve criar um arquivo de título definido pelo usuário e usar as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Mssign32.dll.
 
  
 
@@ -49,32 +49,32 @@ void WINAPI FreeCryptProvFromCertEx(
 
 <dl> <dt>
 
-*fAcquired* \[ no\]
+*fAcquired* \[ Em\]
 </dt> <dd>
 
-Um valor que especifica se o identificador do provedor foi adquirido do [*certificado*](../secgloss/c-gly.md).
+Um valor que especifica se o handle do provedor foi adquirido do [*certificado*](../secgloss/c-gly.md).
 
 </dd> <dt>
 
-*hProv* \[ no\]
+*hProv* \[ Em\]
 </dt> <dd>
 
-Um identificador para um CSP capicor ou um identificador para uma chave CNG.
+Um alça para um CSP CAPICOM ou um alça para uma chave CNG.
 
 </dd> <dt>
 
-*dwKeySpec* 
+*Dwkeyspec* 
 </dt> <dd>
 
-O endereço de uma variável **DWORD** que recebe informações adicionais sobre a chave. Isso pode ser um dos valores a seguir.
+O endereço de uma **variável DWORD** que recebe informações adicionais sobre a chave. Esse pode ser um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                | Significado                                                                                                          |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| <span id="AT_KEYEXCHANGE"></span><span id="at_keyexchange"></span><dl> <dt>**em \_ troca de**</dt> </dl>                     | O par de chaves é um par de troca de chaves.<br/>                                                                  |
-| <span id="AT_SIGNATURE"></span><span id="at_signature"></span><dl> <dt>**NA \_ assinatura**</dt> </dl>                           | O par de chaves é um par de assinaturas.<br/>                                                                     |
-| <span id="CERT_NCRYPT_KEY_SPEC"></span><span id="cert_ncrypt_key_spec"></span><dl> <dt>**especificação de chave de certificado \_ NCRYPT \_ \_**</dt> </dl> | A chave é uma chave CNG.<br/> **Windows Server 2003 e Windows XP:** Não há suporte para esse valor.<br/> |
+| <span id="AT_KEYEXCHANGE"></span><span id="at_keyexchange"></span><dl> <dt>**AT \_ KEYEXCHANGE**</dt> </dl>                     | O par de chaves é um par de troca de chaves.<br/>                                                                  |
+| <span id="AT_SIGNATURE"></span><span id="at_signature"></span><dl> <dt>**AT \_ SIGNATURE**</dt> </dl>                           | O par de chaves é um par de assinaturas.<br/>                                                                     |
+| <span id="CERT_NCRYPT_KEY_SPEC"></span><span id="cert_ncrypt_key_spec"></span><dl> <dt>**CERT \_ NCRYPT \_ KEY \_ SPEC**</dt> </dl> | A chave é uma chave CNG.<br/> **Windows Server 2003 e Windows XP:** Não há suporte para esse valor.<br/> |
 
 
 
@@ -82,21 +82,21 @@ O endereço de uma variável **DWORD** que recebe informações adicionais sobre
 
 </dd> <dt>
 
-*pwszCapiProvider* \[ em, opcional\]
+*pwszCapiProvider* \[ in, opcional\]
 </dt> <dd>
 
 Um ponteiro para uma cadeia de caracteres terminada em nulo para o nome do provedor.
 
 </dd> <dt>
 
-*dwProviderType* \[ no\]
+*dwProviderType* \[ Em\]
 </dt> <dd>
 
-Especifica o tipo de CSP. Isso pode ser zero ou um dos [tipos de provedor criptográfico](cryptographic-provider-types.md). Se esse membro for zero, o contêiner de chave será um dos provedores de armazenamento de chaves CNG.
+Especifica o tipo CSP. Pode ser zero ou um dos Tipos de Provedor [Criptográfico.](cryptographic-provider-types.md) Se esse membro for zero, o contêiner de chave será um dos provedores de armazenamento de chaves CNG.
 
 </dd> <dt>
 
-*pwszTmpContainer* \[ em, opcional\]
+*pwszTmpContainer* \[ in, opcional\]
 </dt> <dd>
 
 Um ponteiro para uma cadeia de caracteres terminada em nulo para o nome do contêiner de chave temporária.
@@ -113,8 +113,8 @@ Essa função não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                 |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Mssign32.dll</dt> </dl> |
 
 

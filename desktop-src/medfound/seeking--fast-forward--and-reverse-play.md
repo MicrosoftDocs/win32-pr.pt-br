@@ -1,32 +1,32 @@
 ---
-description: Este tópico mostra o código de exemplo para gerenciar alterações de busca e taxa, ao usar a sessão de mídia para reprodução.
+description: Este tópico mostra o código de exemplo para gerenciar a busca e a taxa de alterações ao usar a Sessão de Mídia para reprodução.
 ms.assetid: 50bf4c05-99c0-4cf0-aaca-8ee717cafd12
-title: Busca, avanço rápido e reprodução reversa
+title: Busca, Avançar e reprodução inversa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68c42e4ab2bbf5bd3ac1057ce4bb0e09fceddc44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e49fb8731b005da12adf51880f4375c6610348ac73bd0bdc592e8478383df676
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766519"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034774"
 ---
-# <a name="seeking-fast-forward-and-reverse-play"></a>Busca, avanço rápido e reprodução reversa
+# <a name="seeking-fast-forward-and-reverse-play"></a>Busca, Avançar e reprodução inversa
 
-Este tópico mostra o código de exemplo para gerenciar alterações de busca e taxa, ao usar a [sessão de mídia](media-session.md) para reprodução.
+Este tópico mostra o código de exemplo para gerenciar a busca e a taxa de alterações ao usar a Sessão [de Mídia](media-session.md) para reprodução.
 
-Ao usar a sessão de mídia para reprodução, um aplicativo pode buscar e alterar a taxa de reprodução da seguinte maneira:
+Ao usar a Sessão de Mídia para reprodução, um aplicativo pode buscar e alterar a taxa de reprodução da seguinte forma:
 
--   Para buscar, chame [**IMFMediaSession:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) e especifique a posição de busca.
--   Para alterar a taxa de reprodução, use a interface [**IMFRateControl**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) , conforme descrito em [controle de taxa](rate-control.md).
--   Para obter quadros de vídeo atualizados ao procurar, defina a taxa de reprodução como zero antes de chamar [**IMFMediaSession:: Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start). Essa operação é chamada de *depuração*. (Consulte [como executar a depuração](how-to-perform-scrubbing.md).)
+-   Para buscar, chame [**IMFMediaSession::Start e**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start) especifique a posição de busca.
+-   Para alterar a taxa de reprodução, use a interface [**IMFRateControl,**](/windows/desktop/api/mfidl/nn-mfidl-imfratecontrol) conforme descrito em [Controle de Taxa.](rate-control.md)
+-   Para obter quadros de vídeo atualizados durante a busca, de definido a taxa de reprodução como zero antes de chamar [**IMFMediaSession::Start**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasession-start). Essa operação é chamada *de depuração*. (Consulte [Como executar a depuração](how-to-perform-scrubbing.md).)
 
 No entanto, para criar a melhor experiência do usuário, você deve levar em conta os seguintes comportamentos:
 
--   A busca é assíncrona e a sessão de mídia enfileira todas as solicitações de busca em uma fila FIFO. Se você enviar várias solicitações de busca, a interface do usuário poderá ser executada antes do estado de reprodução real. Por exemplo, suponha que seu aplicativo implemente uma barra de busca. Se o usuário arrastar a barra de busca para frente e para trás, pode haver um atraso enquanto as buscas posteriores são executadas. Enquanto uma busca está em andamento, você deve armazenar em cache as solicitações de busca do usuário. Quando a operação de busca atual for concluída, envie a solicitação de busca mais recente do usuário e descarte as outras.
--   Algumas transições de taxa não são permitidas em alguns Estados de transporte. Por exemplo, não é permitido alternar da reprodução de encaminhamento para reprodução reversa durante a reprodução. As transições com suporte são descritas em [**IMFRateControl:: SetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate). As alterações de taxa também são assíncronas.
+-   A busca é assíncrona e a Sessão de Mídia enfileira todas as solicitações de busca em uma fila FIFO. Se você enviar várias solicitações de busca, a interface do usuário poderá ser executado antes do estado de reprodução real. Por exemplo, suponha que seu aplicativo implemente uma barra de busca. Se o usuário arrastar a barra de busca para frente e para trás, poderá haver um retardo enquanto as buscas para frente são executadas. Enquanto uma busca está em andamento, você deve armazenar em cache as solicitações de busca do usuário. Quando a operação de busca atual for concluída, envie a solicitação de busca mais recente do usuário e descarte as outras.
+-   Algumas transições de taxa não são permitidas em alguns estados de transporte. Por exemplo, a alternação da reprodução para a reprodução inversa não é permitida durante a reprodução. As transições com suporte são descritas [**em IMFRateControl::SetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate). As alterações de taxa também são assíncronas.
 
-A seguinte classe auxiliar pode ser usada para gerenciar solicitações de busca e classificar alterações. Enquanto uma operação assíncrona está pendente, a classe armazena em cache qualquer solicitação de busca ou alteração de taxa. Quando a operação atual for concluída, a classe enviará a solicitação mais recente, se houver. A classe também gerencia o estado de transporte para evitar alterações de taxa inválidas.
+A classe auxiliar a seguir pode ser usada para gerenciar solicitações de busca e alterações de taxa. Enquanto uma operação assíncrona está pendente, a classe armazena em cache todas as solicitações de busca ou alteração de taxa. Quando a operação atual for concluída, a classe enviará a solicitação mais recente, se for o caso. A classe também gerencia o estado de transporte para evitar alterações de taxa inválidas.
 
 Aqui está a declaração da classe PlayerSeeking.
 

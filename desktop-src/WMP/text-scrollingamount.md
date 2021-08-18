@@ -3,7 +3,7 @@ title: TEXT. scrollingAmount
 description: O atributo scrollingAmount especifica ou recupera o número de pixels que o texto move durante cada movimento de rolagem.
 ms.assetid: 46f74531-69dd-4505-8937-5b48b6e9be7b
 keywords:
-- TEXT. scrollingAmount Windows Media Player
+- Windows Media Player TEXT. scrollingAmount
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66de7bfc6001f10c429d05c480dc315edfe72f76
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2a8d5b703c02c2d3049f98a934980f1dbf8b1c5beceaca4d97158ea68c13db9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759586"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119466956"
 ---
 # <a name="textscrollingamount"></a>TEXT. scrollingAmount
 

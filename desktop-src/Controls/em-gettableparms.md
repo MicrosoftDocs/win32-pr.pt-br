@@ -3,7 +3,7 @@ title: Mensagem de EM_GETTABLEPARMS (RichEdit. h)
 description: Recupera os parâmetros de tabela para uma linha de tabela e os parâmetros de célula para o número especificado de células.
 ms.assetid: 36ADA41B-735B-4D6E-92B1-33260C71DF73
 keywords:
-- Controles de EM_GETTABLEPARMS de mensagens do Windows
+- controles de Windows de mensagem de EM_GETTABLEPARMS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b7eb244b64258b1cf83559e21affea51b1d0c5d6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c2ddca96ce29a0f7b7076580b48cfeceecf1f638830b7c77bc9406a39e97de57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119545026"
 ---
 # <a name="em_gettableparms-message"></a>\_Mensagem em GETTABLEPARMS
 
@@ -50,7 +50,7 @@ Um ponteiro para uma estrutura [**TABLECELLPARMS**](/windows/desktop/api/Richedi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK se for bem-sucedido ou um dos seguintes códigos de erro.
 
@@ -78,9 +78,9 @@ A posição do caractere especificada pelo membro **cpStartRow** da estrutura [*
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

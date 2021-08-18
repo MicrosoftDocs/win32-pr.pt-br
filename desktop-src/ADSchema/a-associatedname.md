@@ -1,10 +1,10 @@
 ---
-title: atributo associado
-description: O tipo de atributo associadoname especifica uma entrada na DIT organizacional associada a um domínio DNS.
+title: Atributo associatedName
+description: O tipo de atributo associatedName especifica uma entrada no DIT organizacional associada a um domínio DNS.
 ms.assetid: c9df20d0-8ab4-463c-ac03-93af648bfbb1
 ms.tgt_platform: multiple
 keywords:
-- atributo associado do esquema do AD
+- Esquema do AD do atributo associatedName
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a59ea112947f89e928cf118f849ba0ec6f5d8230
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 13596e8a8ba36247e44cae423255a6fa36bfa6c81cebbdf07071b45f2016c236
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119443126"
 ---
-# <a name="associatedname-attribute"></a>atributo associado
+# <a name="associatedname-attribute"></a>Atributo associatedName
 
-O tipo de atributo associadoname especifica uma entrada na DIT organizacional associada a um domínio DNS.
+O tipo de atributo associatedName especifica uma entrada no DIT organizacional associada a um domínio DNS.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | associador                          |
-| LDAP-Display-Name | associador                          |
+| CN                | associatedName                          |
+| Ldap-Display-Name | associatedName                          |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 0.9.2342.19200300.100.1.38              |
-| System-ID-GUID    | f7fbfc45-85ab-42a4-a435-780e62f7858b    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | f7fbfc45-85ab-42a4-a435-780e62f7858b    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -56,10 +56,10 @@ O tipo de atributo associadoname especifica uma entrada na DIT organizacional as
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -77,10 +77,10 @@ O tipo de atributo associadoname especifica uma entrada na DIT organizacional as
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -98,10 +98,10 @@ O tipo de atributo associadoname especifica uma entrada na DIT organizacional as
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -119,7 +119,7 @@ O tipo de atributo associadoname especifica uma entrada na DIT organizacional as
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |

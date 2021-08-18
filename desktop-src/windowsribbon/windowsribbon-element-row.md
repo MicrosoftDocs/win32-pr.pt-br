@@ -3,7 +3,7 @@ title: Elemento Row
 description: Representa uma linha de controles em um modelo de layout SizeDefinition personalizado.
 ms.assetid: c3dac35f-3537-4eb7-b378-501ea88813f5
 keywords:
-- Faixa de das janelas do elemento Row
+- Elemento Row Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7d642cd209b3e00e2c63f7376e321132a1c0e686
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: d59913d8a733e4186f2c00e35431d68ebdea839e67103a46873e6f3f64f3a72b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111445017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119449556"
 ---
 # <a name="row-element"></a>Elemento Row
 
@@ -42,8 +42,8 @@ Não há atributos.
 
 | Elemento                                                                                 | Descrição                                        |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [**Controlador de controle**](windowsribbon-element-controlgroup.md)<br/>                   | Pode ocorrer uma ou mais vezes<br/> <br/> |
-| [**ControlSizeDefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**ControlGroup**](windowsribbon-element-controlgroup.md)<br/>                   | Pode ocorrer uma ou mais vezes<br/> <br/> |
+| [**Controlsizedefinition**](windowsribbon-element-controlsizedefinition.md)<br/> | Pode ocorrer uma ou mais vezes<br/> <br/> |
 
 
 
@@ -61,11 +61,11 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer uma ou mais vezes para cada elemento [**GroupSizeDefinition**](windowsribbon-element-groupsizedefinition.md) .
+Pode ocorrer uma ou mais vezes para cada [**elemento GroupSizeDefinition.**](windowsribbon-element-groupsizedefinition.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir demonstra a marcação básica para um modelo personalizado de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) de quatro botões com vários elementos de **linha** .
+O exemplo de código a seguir demonstra a marcação básica para um modelo de layout [**SizeDefinition**](windowsribbon-element-sizedefinition.md) personalizado de quatro botões com vários **elementos Row.**
 
 
 ```XML
@@ -160,8 +160,8 @@ O exemplo de código a seguir demonstra a marcação básica para um modelo pers
 
 
 
-* **Sistema mínimo com suporte**: Windows 7
-* **Pode estar vazio**: não
+* **Sistema mínimo com suporte:** Windows 7
+* **Pode estar vazio:** Não
 
 
 
@@ -169,7 +169,7 @@ O exemplo de código a seguir demonstra a marcação básica para um modelo pers
 
 <dl> <dt>
 
-[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

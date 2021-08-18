@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: be63845f389936656172b4cbb4e42de659bbf0e1
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 372163b39ea788b5c03bd25aedcc44aee172d58080fb94e3333a029a514962a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104084890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119404586"
 ---
 # <a name="innereapoptional-eaptype-element"></a>Elemento InnerEapOptional (EapType)
 
@@ -43,8 +43,8 @@ Se o elemento **InnerEapOptional** for true, o elemento [**EAP**](baseeapconnect
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

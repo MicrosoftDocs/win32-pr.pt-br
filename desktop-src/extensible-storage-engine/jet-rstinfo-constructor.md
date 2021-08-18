@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Construtor de JET_RSTINFO'
-title: Construtor de JET_RSTINFO
+description: 'Saiba mais sobre: JET_RSTINFO construtor'
+title: JET_RSTINFO construtor
 TOCTitle: 'JET_RSTINFO constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_RSTINFO.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_rstinfo.jet_rstinfo(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f26ae112cd33988e838fbb48a64ebfcbd7cb4607
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 26196aa5f640a91424179df32e2aaed16423f3c312281652c6f8870fe21b2553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646919"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038664"
 ---
-# <a name="jet_rstinfo-constructor"></a>Construtor de JET_RSTINFO
+# <a name="jet_rstinfo-constructor"></a>JET_RSTINFO construtor
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,8 +54,8 @@ public JET_RSTINFO()
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RSTINFO](./jet-rstinfo-class.md)
+[JET_RSTINFO classe](./jet-rstinfo-class.md)
 
-[Membros do JET_RSTINFO](./jet-rstinfo-members.md)
+[JET_RSTINFO membros](./jet-rstinfo-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

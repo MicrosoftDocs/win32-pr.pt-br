@@ -4,12 +4,12 @@ ms.assetid: 1ED6587A-8880-4DC7-90DA-D6AC9EDFEEB5
 title: Atributo MFPROTECTION_DISABLE (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1b2c8b5fa90218ef58300ccfdcd77f465f0685d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 698bf0da67b825d3a6eaf319ac0a6bb4d6d5eaa0413d53861c7f847a6922abdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105812236"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973195"
 ---
 # <a name="mfprotection_disable-attribute"></a>MFPROTECTION \_ desabilitar atributo
 
@@ -25,9 +25,9 @@ Especifica se a proteção está desabilitada.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

@@ -1,26 +1,26 @@
 ---
-title: Atributo de orientação da VML
-description: Atributo de orientação da VML
+title: Atributo de orientação VML
+description: Atributo de orientação VML
 ms.assetid: 62298908-6e88-470d-bca2-0cfc1a38c2eb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fa19d8826638ef44ed99f9560e0db5dcb7ae455e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1fdbe13a21963972b4501ddc8224f23df89c7ccb5e850b8c1e0aa1087cb6c5f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105754295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999116"
 ---
-# <a name="vml-orientation-attribute"></a>Atributo de orientação da VML
+# <a name="vml-orientation-attribute"></a>Atributo de orientação VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Especifica o vetor em volta do qual uma forma pode ser girada. Leitura/gravação. **VgVector3D**.
+Especifica o vetor em torno do qual uma forma pode ser girada. Leitura/gravação. **VgVector3D.**
 
 **Aplica-se a**
 
@@ -28,20 +28,20 @@ Especifica o vetor em volta do qual uma forma pode ser girada. Leitura/gravaçã
 
 **Sintaxe de marca**
 
-<o: *elemento* Orientation = " *expressão* " >
+<o: *elemento* orientation=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . Orientation = "*expressão*"
+*expressão element* .orientation=""
 
-*expressão* = de *elemento*. Orientation
+*expressão* = *elemento*.orientation
 
 **Comentários**
 
-Use o atributo [OrientationAngle](msdn-online-vml-orientationangle-attribute.md) para especificar a quantidade de rotação ao nosso vetor. O valor padrão é 100, 0, 0.
+Use o [atributo OrientationAngle](msdn-online-vml-orientationangle-attribute.md) para especificar a quantidade de rotação em torno desse vetor. O valor padrão é 100,0,0.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

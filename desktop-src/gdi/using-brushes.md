@@ -1,27 +1,27 @@
 ---
-description: Você pode usar um pincel para pintar o interior de praticamente qualquer forma usando uma função de interface de dispositivo de gráficos (GDI).
+description: Você pode usar um pincel para pintar o interior de praticamente qualquer forma usando uma função de GDI (interface de dispositivo gráfico).
 ms.assetid: 64cd6e82-7a0d-4b5e-b491-450f37eea43a
 title: Usando pincéis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b65ad4b14ba445642f224b0002eb1e7517c1008b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c42e09dc5731ceba7961dfd66b296df531897f2915cff53ccdacf1b5b5740160
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037494"
 ---
 # <a name="using-brushes"></a>Usando pincéis
 
-Você pode usar um pincel para pintar o interior de praticamente qualquer forma usando uma função de interface de dispositivo de gráficos (GDI). Isso inclui os Interiors dos retângulos, das reticências, dos polígonos e dos caminhos. Dependendo dos requisitos do seu aplicativo, você pode usar um pincel sólido de uma cor especificada, um pincel de ação, um pincel de hachura ou um pincel de padrão.
+Você pode usar um pincel para pintar o interior de praticamente qualquer forma usando uma função de GDI (interface de dispositivo gráfico). Isso inclui os interiores de retângulos, reellipses, polígonos e caminhos. Dependendo dos requisitos do seu aplicativo, você pode usar um pincel sólido de uma cor especificada, um pincel de estoque, um pincel de hatch ou um pincel de padrão.
 
-Esta seção contém exemplos de código que demonstram a criação de uma caixa de diálogo de pincel personalizada. A caixa de diálogo contém uma grade que representa o bitmap que o sistema usa como um pincel. Um usuário pode usar essa grade para criar um bitmap de pincel de padrão e, em seguida, exibir o padrão personalizado clicando no botão **padrão de teste** .
+Esta seção contém exemplos de código que demonstram a criação de uma caixa de diálogo de pincel personalizada. A caixa de diálogo contém uma grade que representa o bitmap que o sistema usa como um pincel. Um usuário pode usar essa grade para criar um bitmap de pincel padrão e, em seguida, exibir o padrão personalizado clicando no **botão Padrão de** Teste.
 
-A ilustração a seguir mostra um padrão criado usando a caixa de diálogo **pincel personalizado** .
+A ilustração a seguir mostra um padrão criado usando a **caixa de diálogo Pincel** Personalizado .
 
 ![captura de tela da caixa de diálogo pincel personalizado](images/custbrush.png)
 
-Para exibir uma caixa de diálogo, primeiro você deve criar um modelo de caixa de diálogo. O modelo de caixa de diálogo a seguir define a caixa de diálogo **pincel personalizado** .
+Para exibir uma caixa de diálogo, você deve primeiro criar um modelo de caixa de diálogo. O modelo de caixa de diálogo a seguir define a **caixa de diálogo Pincel** Personalizado.
 
 
 ```C++
@@ -42,9 +42,9 @@ END
 
 
 
-A caixa de diálogo **pincel personalizado** contém cinco controles: uma janela de grade de bitmap, uma janela de exibição de padrão e três botões de push, o **padrão de teste** rotulado, **OK** e **Cancelar**. O botão de ação de **padrão de teste** permite que o usuário exiba o padrão. O modelo da caixa de diálogo especifica as dimensões gerais da janela da caixa de diálogo, atribui um valor a cada controle, especifica o local de cada controle e assim por diante. Para obter mais informações, consulte [caixas de diálogo](../dlgbox/dialog-boxes.md).
+A **caixa de** diálogo Pincel Personalizado contém cinco controles: uma janela de grade bitmap, uma janela de exibição de padrões e três botões de push, rotulados Padrão de Teste , **OK** e **Cancelar**.  O **botão de** push Padrão de Teste permite que o usuário veja o padrão. O modelo de caixa de diálogo especifica as dimensões gerais da janela da caixa de diálogo, atribui um valor a cada controle, especifica o local de cada controle e assim por diante. Para obter mais informações, consulte [Caixas de diálogo](../dlgbox/dialog-boxes.md).
 
-Os valores de controle no modelo da caixa de diálogo são constantes que foram definidas da seguinte maneira no arquivo de cabeçalho do aplicativo.
+Os valores de controle no modelo de caixa de diálogo são constantes que foram definidas da seguinte forma no arquivo de header do aplicativo.
 
 
 ```C++
@@ -57,7 +57,7 @@ Os valores de controle no modelo da caixa de diálogo são constantes que foram 
 
 
 
-Depois de criar um modelo de caixa de diálogo e incluí-lo no arquivo de definição de recurso do aplicativo, você deve escrever um procedimento de diálogo. Esse procedimento processa as mensagens que o sistema envia para a caixa de diálogo. O trecho a seguir do código-fonte de um aplicativo mostra o procedimento da caixa de diálogo para a caixa de diálogo **pincel personalizado** e as duas funções definidas pelo aplicativo que ele chama.
+Depois de criar um modelo de caixa de diálogo e incluí-lo no arquivo de definição de recursos do aplicativo, você deve escrever um procedimento de caixa de diálogo. Esse procedimento processa mensagens que o sistema envia para a caixa de diálogo. O trecho a seguir do código-fonte de um aplicativo  mostra o procedimento da caixa de diálogo para a caixa de diálogo Pincel Personalizado e as duas funções definidas pelo aplicativo que ele chama.
 
 
 ```C++
@@ -291,26 +291,26 @@ DWORD RetrieveWidth(LPTSTR cArray, int iLength)
 
 
 
-O procedimento da caixa de diálogo para a caixa de diálogo **pincel personalizado** processa quatro mensagens, conforme descrito na tabela a seguir.
+O procedimento da caixa de diálogo para **a caixa de** diálogo Pincel Personalizado processa quatro mensagens, conforme descrito na tabela a seguir.
 
 
 
 | Mensagem                                          | Ação                                                                                                                                                                                                                                                                                                     |
 |--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**INITDIALOG do WM \_**](../dlgbox/wm-initdialog.md)   | Recupera um identificador de janela e dimensões para os controles da janela de grade e do pincel de padrão, computa as dimensões de uma única célula no controle de janela de grade e Inicializa uma matriz de coordenadas de célula de grade.                                                                                           |
-| [**pintura do WM \_**](wm-paint.md)                    | Desenha o padrão de grade no controle da janela de grade.                                                                                                                                                                                                                                                         |
-| [**LBUTTONDOWN do WM \_**](../inputdev/wm-lbuttondown.md) | Determina se o cursor está dentro do controle da janela de grade quando o usuário pressiona o botão esquerdo do mouse. Nesse caso, o procedimento da caixa de diálogo inverte a célula de grade apropriada e registra o estado dessa célula em uma matriz de bits que é usada para criar o bitmap para o pincel personalizado.              |
-| [**comando do WM \_**](../menurc/wm-command.md)         | Processa a entrada para os três controles de botão de ação. Se o usuário clicar no botão de **padrão de teste** , o procedimento da caixa de diálogo pintará o controle de padrão de teste com o novo padrão de pincel personalizado. Se o usuário clicar no botão **OK** ou **Cancelar** , o procedimento da caixa de diálogo executará as ações adequadamente. |
+| [**WM \_ INITDIALOG**](../dlgbox/wm-initdialog.md)   | Recupera uma alça de janela e dimensões para os controles de janela de grade e de pincel padrão, calcula as dimensões de uma única célula no controle de janela de grade e inicializa uma matriz de coordenadas de célula de grade.                                                                                           |
+| [**WM \_ PAINT**](wm-paint.md)                    | Desenha o padrão de grade no controle de janela de grade.                                                                                                                                                                                                                                                         |
+| [**WM \_ LBUTTONDOWN**](../inputdev/wm-lbuttondown.md) | Determina se o cursor está dentro do controle de janela de grade quando o usuário pressiona o botão esquerdo do mouse. Nesse caso, o procedimento da caixa de diálogo inverte a célula de grade apropriada e registra o estado dessa célula em uma matriz de bits que é usada para criar o bitmap para o pincel personalizado.              |
+| [**COMANDO \_ WM**](../menurc/wm-command.md)         | Processa a entrada para os três controles de botão de push. Se o usuário clicar no botão **Padrão de** Teste, o procedimento da caixa de diálogo pintará o controle Padrão de Teste com o novo padrão de pincel personalizado. Se o usuário clicar no **botão OK** ou **Cancelar,** o procedimento da caixa de diálogo executará ações de acordo. |
 
 
 
  
 
-Para obter mais informações sobre mensagens e processamento de mensagem, consulte [mensagens e filas](../winmsg/messages-and-message-queues.md)de mensagens.
+Para obter mais informações sobre mensagens e processamento de mensagens, consulte [Mensagens e filas de mensagens](../winmsg/messages-and-message-queues.md).
 
-Depois de escrever o procedimento da caixa de diálogo, inclua a definição da função para o procedimento no arquivo de cabeçalho do aplicativo e, em seguida, chame o procedimento da caixa de diálogo no ponto apropriado do aplicativo.
+Depois de gravar o procedimento da caixa de diálogo, inclua a definição de função para o procedimento no arquivo de header do aplicativo e, em seguida, chame o procedimento da caixa de diálogo no ponto apropriado no aplicativo.
 
-O trecho a seguir do arquivo de cabeçalho do aplicativo mostra a definição da função para o procedimento da caixa de diálogo e as duas funções que ele chama.
+O trecho a seguir do arquivo de header do aplicativo mostra a definição de função para o procedimento da caixa de diálogo e as duas funções que ele chama.
 
 
 ```C++
@@ -321,7 +321,7 @@ DWORD RetrieveWidth(LPTSTR, int);
 
 
 
-Por fim, o código a seguir mostra como o procedimento da caixa de diálogo é chamado a partir do arquivo de código-fonte do aplicativo.
+Por fim, o código a seguir mostra como o procedimento da caixa de diálogo é chamado do arquivo de código-fonte do aplicativo.
 
 
 ```C++
@@ -333,7 +333,7 @@ Por fim, o código a seguir mostra como o procedimento da caixa de diálogo é c
 
 
 
-Normalmente, essa chamada é feita em resposta ao usuário que escolhe uma opção no menu do aplicativo.
+Essa chamada geralmente é feita em resposta ao usuário escolhendo uma opção no menu do aplicativo.
 
  
 

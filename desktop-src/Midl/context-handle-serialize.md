@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c74e364c3ae8bf0439e50ae53130542762f37484
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: c91bf9ab1610585001b1380b15ba5a89433f80194596e26cbae84692ff3a872a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105758783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013954"
 ---
 # <a name="context_handle_serialize-attribute"></a>\_ \_ atributo serializar identificador de contexto
 
@@ -57,7 +57,7 @@ Quaisquer atributos adicionais do ACF que se aplicam à função.
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 O nome da função, conforme definido no arquivo IDL.
@@ -86,7 +86,7 @@ Por padrão, as chamadas em identificadores de contexto são serializadas, mas u
 
 Esse atributo está disponível no MIDL versão 5,0.
 
-**Windows Server ServerÂ 2003 e WINDOWSÂ XP ou posterior:** Uma única interface pode acomodar identificadores de contexto serializados e não serializados, permitindo que um método em uma interface acesse um identificador de contexto exclusivamente (serializado), enquanto outros métodos acessam esse identificador de contexto no modo compartilhado (não serializado). Esses recursos de acesso são comparáveis a mecanismos de bloqueio de leitura/gravação; os métodos que usam um identificador de contexto serializado são usuários exclusivos (gravadores), enquanto os métodos que usam um identificador de contexto não serializado são usuários compartilhados (leitores). Os métodos que destruim ou modificam o estado de um identificador de contexto devem ser serializados. Os métodos que não modificam o estado de um identificador de contexto, como os métodos que simplesmente lêem de um identificador de contexto, podem ser não serializados. Observe que os métodos de criação são serializados implicitamente.
+**Windows ServerÂ 2003 e WindowsÂ XP ou posterior:** Uma única interface pode acomodar identificadores de contexto serializados e não serializados, permitindo que um método em uma interface acesse um identificador de contexto exclusivamente (serializado), enquanto outros métodos acessam esse identificador de contexto no modo compartilhado (não serializado). Esses recursos de acesso são comparáveis a mecanismos de bloqueio de leitura/gravação; os métodos que usam um identificador de contexto serializado são usuários exclusivos (gravadores), enquanto os métodos que usam um identificador de contexto não serializado são usuários compartilhados (leitores). Os métodos que destruim ou modificam o estado de um identificador de contexto devem ser serializados. Os métodos que não modificam o estado de um identificador de contexto, como os métodos que simplesmente lêem de um identificador de contexto, podem ser não serializados. Observe que os métodos de criação são serializados implicitamente.
 
 ## <a name="examples"></a>Exemplos
 
@@ -126,6 +126,6 @@ HRESULT RemoteFunc([context_handle_serialize] pCxHandle);
 [**typedef**](typedef.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

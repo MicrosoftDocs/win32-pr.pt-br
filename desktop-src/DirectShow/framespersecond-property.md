@@ -4,12 +4,12 @@ ms.assetid: c5d36308-1447-4636-9b3a-4a3f93d27789
 title: Propriedade FramesPerSecond
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e00ec3281d88a2901f630c9231edbf1e76a89c23
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 96a883f031680a57711fa092f29bc9ecbd76cb1a017c03f80337959050e62cd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105782246"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015664"
 ---
 # <a name="framespersecond-property"></a>Propriedade FramesPerSecond
 
@@ -30,7 +30,7 @@ Retorna um valor inteiro que representa a taxa de quadros de vídeo; 25 ou 30 qu
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade é somente leitura sem valor padrão. Os sinais de vídeo NTSC são exibidos em 30 quadros por segundo. PAL é exibido em 25 quadros por segundo. Um disco é codificado para reprodução em NTSC ou PAL, mas não pode ser executado em ambos.
+Essa propriedade é somente leitura sem valor padrão. Os sinais de vídeo NTSC são exibidos a 30 quadros por segundo. PAL é exibido em 25 quadros por segundo. Um disco é codificado para reproduzir em NTSC ou PAL, mas não pode ser reproduzir em ambos.
 
  
 

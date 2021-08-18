@@ -1,11 +1,11 @@
 ---
-title: Método Settings. setmode
+title: método Configurações. setmode
 description: O método setmode define vários modos como ativo ou inativo.
 ms.assetid: 9ab88aeb-53f6-4798-9299-14961e373ca6
 keywords:
-- método setmode do Windows Media Player
-- método setmode Windows Media Player, classe Settings
-- Classe de configurações Windows Media Player, método setmode
+- método setmode Windows Media Player
+- método setmode Windows Media Player, classe Configurações
+- classe Configurações Windows Media Player, método setmode
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf5740bf5638ce34e161414ac96eaa0fc80fcdb7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f504fe429dddf1b3db191545e2f34a3605a8fc390346c8f00afe8c3d005f0277
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747495"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995316"
 ---
-# <a name="settingssetmode-method"></a>Método Settings. setmode
+# <a name="settingssetmode-method"></a>método Configurações. setmode
 
 O método **setmode** define vários modos como ativo ou inativo.
 
@@ -70,7 +70,7 @@ Settings.setMode(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -84,7 +84,7 @@ Quando o modo de conquadro é ativo, o Player deve acessar o conteúdo da faixa 
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Para modos de loop e ordem aleatória, Windows Media Player versão 7,0 ou posterior. Para modos de autoretrocesso e de conframe, o Windows Media Player 9 Series ou posterior.<br/> |
+| Versão<br/> | para modos de loop e ordem aleatória, Windows Media Player versão 7,0 ou posterior. para modos de autoretrocesso e de conquadro, Windows Media Player 9 Series ou posterior.<br/> |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl>                                                                            |
 
 
@@ -93,10 +93,10 @@ Quando o modo de conquadro é ativo, o Player deve acessar o conteúdo da faixa 
 
 <dl> <dt>
 
-[**Objeto de configurações**](settings-object.md)
+[**Configurações Objeto**](settings-object.md)
 </dt> <dt>
 
-[**Settings. GetMode**](settings-getmode.md)
+[**Configurações. getmode**](settings-getmode.md)
 </dt> </dl>
 
  

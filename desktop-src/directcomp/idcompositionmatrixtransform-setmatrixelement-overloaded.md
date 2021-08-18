@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: d5707ad441e9a3205ed52808b6203a3172d1ab48
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc35caa8e19e7a3e0f9e5867d169c3380459be82419f17785902089a89e031d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119484476"
 ---
 # <a name="idcompositionmatrixtransformsetmatrixelement-methods"></a>Métodos IDCompositionMatrixTransform:: setmatrixelement
 
@@ -40,9 +40,9 @@ Altera ou anima o valor de um elemento da matriz dessa transformação 2D.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | \[apenas aplicativos de área de trabalho Windows 8\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2012\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>DCOMP. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 

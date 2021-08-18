@@ -1,6 +1,6 @@
 ---
 title: Assoc-atributo de conta do NT
-description: A conta do Windows NT que se aplica a esse objeto.
+description: a conta de Windows NT que se aplica a esse objeto.
 ms.assetid: 58aa877d-a627-48e9-8137-9dc7cd9b8ada
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 868e0caaedb446cdbaf1cd598ce54e25fc1fc599
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 16ef122d9f76e8a449f78e875223bc31a6584203d00f363cb69883433f2f5eba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119443116"
 ---
 # <a name="assoc-nt-account-attribute"></a>Assoc-atributo de conta do NT
 
-A conta do Windows NT que se aplica a esse objeto.
+a conta de Windows NT que se aplica a esse objeto.
 
 
 
@@ -58,7 +58,7 @@ A conta do Windows NT que se aplica a esse objeto.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -79,7 +79,7 @@ A conta do Windows NT que se aplica a esse objeto.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -100,7 +100,7 @@ A conta do Windows NT que se aplica a esse objeto.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -121,10 +121,10 @@ A conta do Windows NT que se aplica a esse objeto.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -142,10 +142,10 @@ A conta do Windows NT que se aplica a esse objeto.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -163,10 +163,10 @@ A conta do Windows NT que se aplica a esse objeto.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

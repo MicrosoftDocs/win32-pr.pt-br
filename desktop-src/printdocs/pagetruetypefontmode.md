@@ -4,12 +4,12 @@ ms.assetid: 36b1de5d-8575-42cf-b158-dcf7705ec157
 title: PageTrueTypeFontMode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf30af3684693f594f497dbad95d4f9a7743d624
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: e22765acba62747c26544739c85d0709250463d130ec09ff6c66ca25e472cf7e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120112276"
 ---
 # <a name="pagetruetypefontmode"></a>PageTrueTypeFontMode
 
@@ -25,7 +25,7 @@ Descreve o método de manipulação de fonte TrueType a ser usado.
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de definição de scoping <br/> | ?<br/>    |
@@ -70,7 +70,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 ## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:PageTrueTypeFontMode">

@@ -5,12 +5,12 @@ ms.assetid: 33bacbf0-c558-497a-a08a-95eb398fad97
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fd6f26e926958ceba5418a72849b75a66b11d2d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 58e3f73b8e7a3d7db8ac109e84c9c638845af441b58568156782710fdac0968a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105780092"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058235"
 ---
 # <a name="writing-data-by-using-a-dvc-channel"></a>Gravando dados usando um canal DVC
 
@@ -20,9 +20,9 @@ A ilustração a seguir mostra o envio e recebimento do pacote de dados entre o 
 
 ![enviando e recebendo um pacote de dados entre o cliente e o servidor do DVC](images/writedvcchannel.png)
 
- 
+ 
 
- 
+ 
 
 
 

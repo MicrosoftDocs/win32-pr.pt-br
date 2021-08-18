@@ -102,12 +102,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c84524aad68d3d7a95201e61a2753e86ead91bd2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ee244bd68171abb296baf1941c79199122b121793d5107ee8866eac87be0776
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473916"
 ---
 # <a name="jet_param-enumeration"></a>Enumeração de JET_param
 
@@ -239,12 +239,12 @@ public enum JET_param
 <tr class="odd">
 <td></td>
 <td>StartFlushThreshold</td>
-<td>Esse parâmetro controla quando o cache de página do banco de dados começa a remover páginas do cache para liberar espaço para páginas que não são armazenadas em cache. Quando o número de buffers de página no cache cair abaixo desse limite, um processo em segundo plano será iniciado para reabastecer o pool de buffers disponíveis. Esse limite é sempre relativo ao tamanho máximo do cache, conforme definido por JET_paramCacheSizeMax. Esse limite também deve ser menor que o limite de parada definido por JET_paramStopFlushThreshold. A altura da distância do limite inicial determinará o tempo de resposta que o cache da página do banco de dados deve ter para produzir os buffers disponíveis antes que o aplicativo precise deles. Um limite de início alto dará ao processo em segundo plano mais tempo para reagir. No entanto, um limite de início alto implica um limite de parada maior e reduzirá o tamanho efetivo do cache de página de banco de dados para páginas modificadas (Windows 2000) ou para todas as páginas (Windows XP e posterior).</td>
+<td>Esse parâmetro controla quando o cache de página do banco de dados começa a remover páginas do cache para liberar espaço para páginas que não são armazenadas em cache. Quando o número de buffers de página no cache cair abaixo desse limite, um processo em segundo plano será iniciado para reabastecer o pool de buffers disponíveis. Esse limite é sempre relativo ao tamanho máximo do cache, conforme definido por JET_paramCacheSizeMax. Esse limite também deve ser menor que o limite de parada definido por JET_paramStopFlushThreshold. A altura da distância do limite inicial determinará o tempo de resposta que o cache da página do banco de dados deve ter para produzir os buffers disponíveis antes que o aplicativo precise deles. Um limite de início alto dará ao processo em segundo plano mais tempo para reagir. no entanto, um limite de início alto implica um limite de parada maior e reduzirá o tamanho efetivo do cache de página de banco de dados para páginas modificadas (Windows 2000) ou para todas as páginas (Windows XP e posterior).</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>StopFlushThreshold</td>
-<td>Esse parâmetro controla quando o cache da página do banco de dados encerra a remoção de páginas do cache para liberar espaço para páginas que não são armazenadas em cache. Quando o número de buffers de página no cache ultrapassar esse limite, o processo em segundo plano que foi iniciado para reabastecer o pool de buffers disponíveis será interrompido. Esse limite é sempre relativo ao tamanho máximo do cache, conforme definido por JET_paramCacheSizeMax. Esse limite também deve ser maior que o limite de início definido por JET_paramStartFlushThreshold. A distância entre o limite inicial e o limite de interrupção afeta a eficiência com a qual as páginas de banco de dados são liberadas pelo processo em segundo plano. Um intervalo maior fará com que seja mais provável que as gravações nas páginas vizinhas possam ser combinadas. No entanto, um limite de parada alta reduzirá o tamanho efetivo do cache de página de banco de dados para páginas modificadas (Windows 2000) ou para todas as páginas (Windows XP e posterior).</td>
+<td>Esse parâmetro controla quando o cache da página do banco de dados encerra a remoção de páginas do cache para liberar espaço para páginas que não são armazenadas em cache. Quando o número de buffers de página no cache ultrapassar esse limite, o processo em segundo plano que foi iniciado para reabastecer o pool de buffers disponíveis será interrompido. Esse limite é sempre relativo ao tamanho máximo do cache, conforme definido por JET_paramCacheSizeMax. Esse limite também deve ser maior que o limite de início definido por JET_paramStartFlushThreshold. A distância entre o limite inicial e o limite de interrupção afeta a eficiência com a qual as páginas de banco de dados são liberadas pelo processo em segundo plano. Um intervalo maior fará com que seja mais provável que as gravações nas páginas vizinhas possam ser combinadas. no entanto, um limite de parada alta reduzirá o tamanho efetivo do cache de página de banco de dados para páginas modificadas (Windows 2000) ou para todas as páginas (Windows XP e posterior).</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -320,7 +320,7 @@ public enum JET_param
 <tr class="odd">
 <td></td>
 <td>Exceçãoaction</td>
-<td>Esse parâmetro controla o que acontece quando uma exceção é lançada pelo mecanismo de banco de dados ou pelo código que é chamado pelo mecanismo de banco de dados. Quando definido como JET_ExceptionMsgBox, qualquer exceção será lançada para o filtro de exceção sem tratamento do Windows. Isso fará com que a exceção seja tratada como uma falha do aplicativo. A intenção é impedir que o código do aplicativo tente detectar erroneamente e ignorar uma exceção gerada pelo mecanismo de banco de dados. Isso não pode ser permitido porque a corrupção do banco de dados pode ocorrer. Se o aplicativo quiser lidar corretamente com essas exceções, a proteção poderá ser desabilitada definindo esse parâmetro como JET_ExceptionNone.</td>
+<td>Esse parâmetro controla o que acontece quando uma exceção é lançada pelo mecanismo de banco de dados ou pelo código que é chamado pelo mecanismo de banco de dados. quando definido como JET_ExceptionMsgBox, qualquer exceção será lançada para o Windows filtro de exceção sem tratamento. Isso fará com que a exceção seja tratada como uma falha do aplicativo. A intenção é impedir que o código do aplicativo tente detectar erroneamente e ignorar uma exceção gerada pelo mecanismo de banco de dados. Isso não pode ser permitido porque a corrupção do banco de dados pode ocorrer. Se o aplicativo quiser lidar corretamente com essas exceções, a proteção poderá ser desabilitada definindo esse parâmetro como JET_ExceptionNone.</td>
 </tr>
 <tr class="even">
 <td></td>

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_TABLECREATE. ulPages'
-title: Propriedade JET_TABLECREATE. ulPages
+description: 'Saiba mais sobre: JET_TABLECREATE.ulPages'
+title: JET_TABLECREATE.ulPages
 TOCTitle: 'ulPages property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.ulPages
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.ulpages(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a562915574f4730e52e8bf9b4bd49c51573a5c0e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63c62c37b35d129abd95409ff2498f4a82a189e1b5e4f99e9a04158094d751c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120115826"
 ---
-# <a name="jet_tablecreateulpages-property"></a>Propriedade JET_TABLECREATE. ulPages
+# <a name="jet_tablecreateulpages-property"></a>JET_TABLECREATE.ulPages
 
-Obtém ou define as páginas iniciais a serem alocadas para a tabela.
+Obtém ou define as páginas iniciais a alocar para a tabela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -62,14 +62,14 @@ public int ulPages { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_TABLECREATE](./jet-tablecreate-class.md)
+[JET_TABLECREATE classe](./jet-tablecreate-class.md)
 
-[Membros do JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE membros](./jet-tablecreate-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

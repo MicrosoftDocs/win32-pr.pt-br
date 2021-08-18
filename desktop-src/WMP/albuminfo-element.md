@@ -1,9 +1,9 @@
 ---
 title: Elemento AlbumInfo
-description: O elemento AlbumInfo especifica a URL para a página da Web que o Windows Media Player exibe quando o usuário escolhe para exibir mais informações sobre um item de mídia específico.
+description: O elemento AlbumInfo especifica a URL da página da Web que Windows Media Player é exibida quando o usuário opta por exibir mais informações sobre um item de mídia específico.
 ms.assetid: c872e95a-3723-4ce8-8d61-e2bc9e12c785
 keywords:
-- Elemento AlbumInfo do Windows Media Player
+- Elemento AlbumInfo Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3805ae2d5fca687ce024efca74e0254db7c8ae3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1d9a5f8fab7da8f61ce6ee5451ebcef4dc33517aae2396f0817fac19222713db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055374"
 ---
 # <a name="albuminfo-element"></a>Elemento AlbumInfo
 
@@ -26,7 +26,7 @@ ms.locfileid: "105796448"
 
  
 
-O elemento **AlbumInfo** especifica a URL para a página da Web que o Windows Media Player exibe quando o usuário escolhe para exibir mais informações sobre um item de mídia específico.
+O **elemento AlbumInfo** especifica a URL da página da Web Windows Media Player exibida quando o usuário opta por exibir mais informações sobre um item de mídia específico.
 
 ``` syntax
 <AlbumInfo
@@ -42,7 +42,7 @@ O elemento **AlbumInfo** especifica a URL para a página da Web que o Windows Me
 <span id="URL__required_"></span><span id="url__required_"></span><span id="URL__REQUIRED_"></span>**URL** (obrigatório)
 </dt> <dd>
 
-URL da página da Web exibida pelo Windows Media Player.
+URL para a página da Web Windows Media Player exibida.
 
 </dd> </dl>
 
@@ -61,20 +61,20 @@ URL da página da Web exibida pelo Windows Media Player.
 
 ## <a name="remarks"></a>Comentários
 
-Quando o usuário clica em um botão no Windows Media Player para exibir informações adicionais sobre um item de mídia específico, o Player envia a solicitação de URL com parâmetros anexados usando um separador de cadeia de caracteres de consulta de ponto de interrogação (?). A tabela a seguir detalha os parâmetros enviados com a solicitação de URL. Outros podem estar presentes para fins de compatibilidade herdada.
+Quando o usuário clica em um botão no Windows Media Player para exibir informações adicionais sobre um item de mídia específico, o Player envia a solicitação de URL com parâmetros anexados usando um separador de cadeia de caracteres de consulta de ponto de interrogação (?). A tabela a seguir detalha os parâmetros enviados com a solicitação de URL. Outros podem estar presentes para fins de compatibilidade herdado.
 
 
 
 | Nome         | Valor                                                                                                                                                               |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Álbuns*      | Valor do atributo **WM/campos AlbumTitle** para o item de mídia.                                                                                                        |
-| *Autor*     | Valor do atributo **WM/AlbumArtist** , se houver um, ou o valor do atributo **Author** para o item de mídia.                                         |
-| *GeoId*      | ID da localização geográfica do Windows. A ID de local é especificada pelo usuário na área **local** das configurações de opções regionais e de idiomas no painel de controle. |
-| *locale*     | ID de localidade do Windows Media Player.                                                                                                                                     |
-| *Título*      | Valor do atributo de **título** para o item de mídia.                                                                                                                |
-| *UFID*       | Valor do atributo **WM/UniqueFileIdentifier** para o item de mídia.                                                                                              |
-| *UserLocale* | IDENTIFICAÇÃO de localidade do Windows. A localidade é especificada pelo usuário na área **padrões e formatos** das configurações de opções regionais e de idiomas no painel de controle.        |
-| *version*    | Número de versão do Windows Media Player usando o seguinte formato: 10.0. x. xxxx ou 11.0. x. xxxx.                                                                         |
+| *Álbum*      | Valor do atributo **WM/AlbumTitle** para o item de mídia.                                                                                                        |
+| *Artista*     | Valor do **atributo WM/AlbumArtist,** se houver ou o valor do atributo **Author** para o item de mídia.                                         |
+| *Geoid*      | Windows ID de localização geográfica. A ID de local é especificada pelo usuário na **área** Local das configurações De Opções Regionais e de Idioma Painel de Controle. |
+| *locale*     | Windows Media Player ID da localidade.                                                                                                                                     |
+| *Título*      | Valor do atributo **Title** para o item de mídia.                                                                                                                |
+| *UFID*       | Valor do **atributo WM/UniqueFileIdentifier** para o item de mídia.                                                                                              |
+| *userlocale* | Windows ID da localidade. A localidade é especificada pelo usuário na área Padrões e **Formatos** das configurações Opções Regionais e de Idioma Painel de Controle.        |
+| *version*    | Windows Media Player número de versão usando o seguinte formato: 10.0.x.xxxx ou 11.0.x.xxxx.                                                                         |
 
 
 
@@ -94,13 +94,13 @@ Quando o usuário clica em um botão no Windows Media Player para exibir informa
 
 <dl> <dt>
 
-[**Documento de informações de exemplo para uma loja online tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
+[**Documento ServiceInfo de exemplo para uma loja online do tipo 1**](example-serviceinfo-document-for-a-type-1-online-store.md)
 </dt> <dt>
 
-[**Documento de informações de exemplo para uma loja online tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
+[**Documento ServiceInfo de exemplo para uma loja online do tipo 2**](example-serviceinfo-document-for-a-type-2-online-store.md)
 </dt> <dt>
 
-[**Documento do serviceInfo**](serviceinfo-document.md)
+[**Documento ServiceInfo**](serviceinfo-document.md)
 </dt> </dl>
 
  

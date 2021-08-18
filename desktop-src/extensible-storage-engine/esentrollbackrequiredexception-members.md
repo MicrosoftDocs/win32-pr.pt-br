@@ -1,27 +1,27 @@
 ---
-description: 'Saiba mais sobre: membros do EsentRollbackRequiredException'
-title: Membros do EsentRollbackRequiredException
+description: 'Saiba mais sobre: Membros EsentRollbackRequiredException'
+title: Membros EsentRollbackRequiredException
 TOCTitle: EsentRollbackRequiredException members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.EsentRollbackRequiredException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrollbackrequiredexception_members(v=EXCHG.10)
 ms:contentKeyID: 55102647
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 14794da5d76efacabad0da3b311f9c8cca21e046
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7cf20bf2867b0cf6adce962346b82d45402b222d6605e80a206f69c92c8f5e41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981956"
 ---
-# <a name="esentrollbackrequiredexception-members"></a>Membros do EsentRollbackRequiredException
+# <a name="esentrollbackrequiredexception-members"></a>Membros EsentRollbackRequiredException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-Classe base para JET_err. RollbackRequired exceções.
+Classe base para JET_err. Exceções rollbackRequired.
 
-O tipo [EsentRollbackRequiredException](./esentrollbackrequiredexception-class.md) expõe os membros a seguir.
+O [tipo EsentRollbackRequiredException](./esentrollbackrequiredexception-class.md) expõe os membros a seguir.
 
 ## <a name="constructors"></a>Construtores
 
@@ -64,16 +64,16 @@ Parte superior
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -93,7 +93,7 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -130,7 +130,7 @@ Parte superior
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -145,12 +145,12 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -170,4 +170,4 @@ Parte superior
 
 [Classe EsentRollbackRequiredException](./esentrollbackrequiredexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

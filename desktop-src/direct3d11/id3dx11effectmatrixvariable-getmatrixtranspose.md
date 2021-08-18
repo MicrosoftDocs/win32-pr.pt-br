@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectMatrixVariable GetMatrixTranspose (D3dx11effect. h)
+title: Método GetMatrixTranspose ID3DX11EffectMatrixVariable (D3dx11effect.h)
 description: Transpor e obter uma matriz de ponto flutuante.
 ms.assetid: a261128c-d1f9-4864-b562-5fe9a69c9969
 keywords:
 - Método GetMatrixTranspose Direct3D 11
-- Método GetMatrixTranspose Direct3D 11, interface ID3DX11EffectMatrixVariable
-- Interface ID3DX11EffectMatrixVariable Direct3D 11, método GetMatrixTranspose
+- Método GetMatrixTranspose Direct3D 11 , interface ID3DX11EffectMatrixVariable
+- ID3DX11EffectMatrixVariable interface Direct3D 11 , método GetMatrixTranspose
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fa5c8eb8e424041a05461636d1eaf7b65c7cd4f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c8d2f04057dac5bc432cc3c6a9a3060654d8f6d181836823aa29f0a02f82f667
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046174"
 ---
-# <a name="id3dx11effectmatrixvariablegetmatrixtranspose-method"></a>Método ID3DX11EffectMatrixVariable:: GetMatrixTranspose
+# <a name="id3dx11effectmatrixvariablegetmatrixtranspose-method"></a>Método ID3DX11EffectMatrixVariable::GetMatrixTranspose
 
 Transpor e obter uma matriz de ponto flutuante.
 
@@ -43,27 +43,27 @@ HRESULT GetMatrixTranspose(
 
 <dl> <dt>
 
-*pData* 
+*Pdata* 
 </dt> <dd>
 
-Tipo: **float \***
+Tipo: **\* float**
 
-Um ponteiro para o primeiro elemento de uma matriz transpoda.
+Um ponteiro para o primeiro elemento de uma matriz transposta.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
-A transposição de uma matriz reorganizará a ordem dos dados da ordem da coluna de linha para a ordem da linha de coluna (ou vice-versa).
+A transposição de uma matriz reorganizará a ordem de dados da ordem da coluna de linha para a ordem da linha de coluna (ou vice-versa).
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ A transposição de uma matriz reorganizará a ordem dos dados da ordem da colun
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

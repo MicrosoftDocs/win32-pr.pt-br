@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Shlwapi.dll
-ms.openlocfilehash: c9c369584fd15a27d5e684452b2277104b5b1da4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9a45222c316d321ee151c19464d453827437514dd93ffe3da5b1a9849e8a7196
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119395876"
 ---
 # <a name="getdateformatwrapw-function"></a>Função GetDateFormatWrapW
 
-\[O **GetDateFormatWrapW** está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**GetDateFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-getdateformata) em seu lugar.\]
+\[o **GetDateFormatWrapW** está disponível para uso no Windows XP. Ele não estará disponível nas versões subsequentes. Você deve usar [**GetDateFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-getdateformata) em seu lugar.\]
 
 Formata uma data como uma cadeia de caracteres de data para uma localidade especificada. A função formata uma data especificada ou a data do sistema local.
 
@@ -184,9 +184,9 @@ Adiciona marcas para layout de leitura da direita para a esquerda. Esse valor n�
 *lpDate* \[ no\]
 </dt> <dd>
 
-Tipo: **const [**SYSTEMTIME**](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) \** _
+Tipo: **const [**SYSTEMTIME**](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) \***
 
-Um ponteiro para uma estrutura [_ *SYSTEMTIME* *](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) que contém as informações de data a serem formatadas. Se esse ponteiro for **nulo**, a função usará a data atual do sistema local.
+Um ponteiro para uma estrutura [**SYSTEMTIME**](/windows/win32/api/minwinbase/ns-minwinbase-systemtime) que contém as informações de data a serem formatadas. Se esse ponteiro for **nulo**, a função usará a data atual do sistema local.
 
 </dd> <dt>
 
@@ -217,7 +217,7 @@ Especifica o tamanho, em caracteres, do buffer *pwzDateStr* . Se *cchDate* for z
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **int**
 
@@ -238,7 +238,7 @@ Se a função falhar, o valor retornado será zero. Para obter informações de 
 
 ## <a name="remarks"></a>Comentários
 
-O **GetDateFormatWrapW** fornece a capacidade de usar cadeias de caracteres Unicode em sistemas operacionais anteriores ao Windows XP. O método preferencial é usar [**GetDateFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-getdateformata) em conjunto com a camada Microsoft para Unicode (MSLU).
+o **GetDateFormatWrapW** fornece a capacidade de usar cadeias de caracteres Unicode em sistemas operacionais anteriores ao Windows XP. O método preferencial é usar [**GetDateFormatW**](/windows/win32/api/datetimeapi/nf-datetimeapi-getdateformata) em conjunto com a camada Microsoft para Unicode (MSLU).
 
 **GetDateFormatWrapW** deve ser chamado diretamente do Shlwapi.dll, usando o ordinal 311.
 
@@ -248,8 +248,8 @@ O **GetDateFormatWrapW** fornece a capacidade de usar cadeias de caracteres Unic
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
 | DLL<br/>                      | <dl> <dt>Shlwapi.dll (versão 5,0 ou posterior)</dt> </dl> |
 
 

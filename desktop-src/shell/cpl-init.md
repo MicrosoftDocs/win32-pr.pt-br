@@ -1,19 +1,19 @@
 ---
-description: Enviado para a função CPlApplet de um aplicativo de painel de controle para solicitar que ele execute a inicialização global, especialmente a alocação de memória.
+description: Enviado para a função CPlApplet de um Painel de Controle para solicitar que ele execute a inicialização global, especialmente a alocação de memória.
 ms.assetid: 0e7e9b14-9f44-496e-a518-5d3ae92868c5
-title: Mensagem de CPL_INIT (CPL. h)
+title: CPL_INIT mensagem (Cpl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f5206d773a7a0b1786b8c95104bbcf71561d120
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8be6acdf58822e6f10f35880a97a7b5bbb9ce0b7bbbf7556b4c18c3f7ad96f72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119456366"
 ---
-# <a name="cpl_init-message"></a>CPL \_ mensagem de inicialização
+# <a name="cpl_init-message"></a>Mensagem \_ CPL INIT
 
-Enviado para a função [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) de um aplicativo de painel de controle para solicitar que ele execute a inicialização global, especialmente a alocação de memória.
+Enviado para a [**função CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) de um aplicativo Painel de Controle para solicitar que ele execute a inicialização global, especialmente a alocação de memória.
 
 
 ```C++
@@ -45,17 +45,17 @@ Enviado para a função [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_pro
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a inicialização for realizada com sucesso, a função [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) deverá retornar diferente de zero. Caso contrário, ele deve retornar zero.
+Se a inicialização for bem-sucedida, [**a função CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) deverá retornar diferentes de zero. Caso contrário, ele deverá retornar zero.
 
-Se [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) retornar zero, o aplicativo de controle terminará a comunicação e liberará a DLL que contém o aplicativo do painel de controle.
+Se [**CPlApplet retornar**](/windows/win32/api/cpl/nc-cpl-applet_proc) zero, o aplicativo de controle terminará a comunicação e liberará a DLL que contém o Painel de Controle aplicativo.
 
 ## <a name="remarks"></a>Comentários
 
-Como essa é a única maneira como um aplicativo do painel de controle pode sinalizar uma condição de erro, o aplicativo deve alocar memória em resposta a essa mensagem.
+Como essa é a única maneira Painel de Controle aplicativo pode sinalizar uma condição de erro, o aplicativo deve alocar memória em resposta a essa mensagem.
 
-Essa mensagem é enviada imediatamente depois que a DLL que contém o aplicativo é carregada.
+Essa mensagem é enviada imediatamente após a DLL que contém o aplicativo ser carregada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Essa mensagem é enviada imediatamente depois que a DLL que contém o aplicativo
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                      |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                      |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>CPL. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Cpl.h</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Essa mensagem é enviada imediatamente depois que a DLL que contém o aplicativo
 
 <dl> <dt>
 
-[**FreeLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary)
+[**Freelibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-freelibrary)
 </dt> </dl>
 
  

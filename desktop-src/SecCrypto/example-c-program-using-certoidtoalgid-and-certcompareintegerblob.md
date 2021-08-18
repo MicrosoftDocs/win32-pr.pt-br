@@ -4,12 +4,12 @@ ms.assetid: 89186d98-80a9-460a-be2b-3e328675c485
 title: 'Programa C de exemplo: usando CertOIDToAlgId e CertCompareIntegerBlob'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dd7239dc8872d1330cfd0dc96b00bcc201f94e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72b40bfcc8758c634a17747f58687d0382fc13f503b391b27514cc50577768d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007444"
 ---
 # <a name="example-c-program-using-certoidtoalgid-and-certcompareintegerblob"></a>Programa C de exemplo: usando CertOIDToAlgId e CertCompareIntegerBlob
 

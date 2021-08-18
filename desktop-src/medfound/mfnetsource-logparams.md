@@ -1,39 +1,39 @@
 ---
-description: Matriz de cadeias de caracteres com os parâmetros a serem enviados ao servidor de log.
+description: Matriz de cadeias de caracteres com os parâmetros a enviar ao servidor de log.
 ms.assetid: 36d711c7-a1ff-4ef2-b633-5f9f1662801e
-title: Propriedade MFNETSOURCE_LOGPARAMS (Mfidl. h)
+title: MFNETSOURCE_LOGPARAMS propriedade (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec30f3f4d85f44905288601ba73ee6c246d8a9db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba557c4fb0bf77693669e8cb46af269ec3a4f2ed72c536e4bdab53a0778dc038
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921265"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113516"
 ---
-# <a name="mfnetsource_logparams-property"></a>\_Propriedade MFNETSOURCE LOGPARAMS
+# <a name="mfnetsource_logparams-property"></a>Propriedade MFNETSOURCE \_ LOGPARAMS
 
-Matriz de cadeias de caracteres com os parâmetros a serem enviados ao servidor de log.
+Matriz de cadeias de caracteres com os parâmetros a enviar ao servidor de log.
 
 
 
 Tipo de dados
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Membro PROPVARIANT
 
-**WCHAR \** _
+**Wchar\***
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
-_ *pwszVal**
+**pwszVal**
 
 
 
 ## <a name="remarks"></a>Comentários
 
-A constante **MFNETSOURCE \_ LOGPARAMS** define o GUID da chave de propriedade. O identificador de propriedade (PID) é zero. Para definir essa propriedade na fonte de rede, passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma origem de mídia](configuring-a-media-source.md).
+A **constante \_ LOGPARAMS MFNETSOURCE** define o GUID para a chave de propriedade. O PID (identificador de propriedade) é zero. Para definir essa propriedade na origem da rede, passe **um ponteiro IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma fonte de mídia](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,9 +41,9 @@ A constante **MFNETSOURCE \_ LOGPARAMS** define o GUID da chave de propriedade. 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ A constante **MFNETSOURCE \_ LOGPARAMS** define o GUID da chave de propriedade. 
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
 [Rede em Media Foundation](networking-in-media-foundation.md)

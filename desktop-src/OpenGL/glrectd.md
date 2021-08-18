@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad37f2d21891ee47182b484741caabda906b20f6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 961b5b9ddf478475806d391d6499eed01fd43e14781f57dcd82e9ff6a1a55a72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105810525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119492166"
 ---
 # <a name="glrectd-function"></a>função glRectd
 
@@ -50,7 +50,7 @@ A coordenada *x* do vértice de um retângulo.
 
 </dd> <dt>
 
-*Y1* 
+*y1* 
 </dt> <dd>
 
 A coordenada *y* do vértice de um retângulo.

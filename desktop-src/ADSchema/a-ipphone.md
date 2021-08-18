@@ -1,10 +1,10 @@
 ---
-title: Atributo de telefone-IP-primário
+title: atributo Telefone-Ip-Primary
 description: O endereço TCP/IP do telefone. Usado por telefonia.
 ms.assetid: b51f28e4-4677-4798-87f1-2bd952a528ea
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD-IP-primário de atributo de telefone
+- esquema de AD de atributo Telefone-Ip-primário
 - Esquema de AD do atributo ipPhone
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f4f16d29f6b3f45c5a229d76ec30c0dd7efdea2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d45b04fb4d9f86e07173076aab949581c15fe98e883992153190f5bb7cf0f2fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322876"
 ---
-# <a name="phone-ip-primary-attribute"></a>Atributo de telefone-IP-primário
+# <a name="phone-ip-primary-attribute"></a>atributo Telefone-Ip-Primary
 
 O endereço TCP/IP do telefone. Usado por telefonia.
 
@@ -29,7 +29,7 @@ O endereço TCP/IP do telefone. Usado por telefonia.
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefone-IP-primário                                                                 |
+| CN                | Telefone-Ip-primário                                                                 |
 | LDAP-Display-Name | ipPhone                                                                          |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                           |
@@ -58,9 +58,9 @@ O endereço TCP/IP do telefone. Usado por telefonia.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
@@ -79,9 +79,9 @@ O endereço TCP/IP do telefone. Usado por telefonia.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
@@ -100,9 +100,9 @@ O endereço TCP/IP do telefone. Usado por telefonia.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
@@ -121,9 +121,9 @@ O endereço TCP/IP do telefone. Usado por telefonia.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
@@ -142,9 +142,9 @@ O endereço TCP/IP do telefone. Usado por telefonia.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
@@ -163,9 +163,9 @@ O endereço TCP/IP do telefone. Usado por telefonia.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| É de valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
+| No catálogo global      | Verdadeiro                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |

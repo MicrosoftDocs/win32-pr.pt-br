@@ -16,12 +16,12 @@ keywords:
 - alterando configurações do monitor
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7e03917f63f31099ebc79776bcbee37f4ef0205
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 749b985dad92dc41f7c145662234e6efe1947145dedc5251dd587ffba734d46d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103644129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013374"
 ---
 # <a name="monitor-configuration-monitor-configuration"></a>Configuração do monitor (configuração do monitor)
 
