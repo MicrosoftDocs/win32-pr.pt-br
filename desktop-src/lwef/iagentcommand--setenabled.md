@@ -1,6 +1,6 @@
 ---
-title: IAgentCommand sethabilitado
-description: IAgentCommand sethabilitado
+title: IAgentCommand SetEnabled
+description: IAgentCommand SetEnabled
 ms.assetid: e0a724b4-3613-400f-a801-efc8bf66e355
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118976306"
 ---
-# <a name="iagentcommandsetenabled"></a>IAgentCommand:: sethabilitado
+# <a name="iagentcommandsetenabled"></a>IAgentCommand::SetEnabled
 
-\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT SetEnabled(
@@ -21,7 +21,7 @@ HRESULT SetEnabled(
 );
 ```
 
-Define a propriedade [**Enabled**](enabled-property.md) para um [**comando**](/windows/desktop/lwef/the-command-object).
+Define a [**propriedade Enabled**](enabled-property.md) para um [**Comando**](/windows/desktop/lwef/the-command-object).
 
 -   Retorna S \_ OK para indicar que a operação foi bem-sucedida.
 
@@ -30,15 +30,15 @@ Define a propriedade [**Enabled**](enabled-property.md) para um [**comando**](/w
 <span id="bEnabled"></span><span id="benabled"></span><span id="BENABLED"></span>*bEnabled*
 </dt> <dd>
 
-Um valor booliano que define o valor da configuração [**habilitada**](enabled-property.md) de um [**comando**](/windows/desktop/lwef/the-command-object). **True** habilita o **comando**; **False** desabilita. Um **comando** desabilitado não pode ser selecionado.
+Um valor booliana que define o valor da [**configuração Habilitado**](enabled-property.md) de um [**Comando**](/windows/desktop/lwef/the-command-object). **True** habilita o **comando**; **False** desabilita-o. Um **Comando desabilitado** não pode ser selecionado.
 
 </dd> </dl>
 
-Um [**comando**](/windows/desktop/lwef/the-command-object) deve ter sua propriedade [**Enabled**](enabled-property.md) definida como **true** para ser selecionável. Ele também deve ter sua propriedade [**Caption**](caption-property.md) definida e sua propriedade [**Visible**](visible-property.md) definida como **true** para aparecer no menu pop-up do caractere. Para fazer com que o **comando** apareça na **janela de comandos de voz**, você deve definir sua propriedade de [**voz**](voice-property.md).
+Um [**Comando**](/windows/desktop/lwef/the-command-object) deve ter sua [**propriedade Enabled**](enabled-property.md) definida como **True** para ser selecionável. Ele também deve ter sua [**propriedade Caption**](caption-property.md) definida e sua propriedade [**Visible**](visible-property.md) definida como **True** para aparecer no menu pop-up do caractere. Para fazer com **que o Comando** apareça na janela Comandos de **Voz**, você deve definir sua [**propriedade Voz.**](voice-property.md)
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCommand:: getCaption**](iagentcommand--getcaption.md), [**IAgentCommand:: setvoice**](iagentcommand--setvoice.md), [**IAgentCommands:: Adicionar**](iagentcommands--add.md), [**IAgentCommands:: Insert**](iagentcommands--insert.md)
+[**IAgentCommand::GetCaption**](iagentcommand--getcaption.md), [**IAgentCommand::SetVoice,**](iagentcommand--setvoice.md) [**IAgentCommands::Add**](iagentcommands--add.md), [**IAgentCommands::Insert**](iagentcommands--insert.md)
 
 
  

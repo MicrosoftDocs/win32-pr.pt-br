@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentLogDiskFullException'
+description: 'Saiba mais sobre: Métodos EsentLogDiskFullException'
 title: 'Métodos EsentLogDiskFullException '
 TOCTitle: EsentLogDiskFullException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentLogDiskFullException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102157
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 70641ef6ea3d89578b198d30bfa94e980635fa86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ac11ffd8afc555a8221b6cc27c8487fe2855e001844c82254ff3ca728fc7e03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104566023"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119480156"
 ---
 # <a name="esentlogdiskfullexception-methods"></a>Métodos EsentLogDiskFullException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentLogDiskFullException](./esentlogdiskfullexception-class.md) expõe os membros a seguir.
+O [tipo EsentLogDiskFullException](./esentlogdiskfullexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentLogDiskFullException](./esentlogdiskfullexception-class.md) expõe 
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentLogDiskFullException](./esentlogdiskfullexception-class.md) expõe 
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentLogDiskFullException](./esentlogdiskfullexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

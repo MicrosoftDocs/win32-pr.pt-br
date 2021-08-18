@@ -4,16 +4,16 @@ ms.assetid: 39e1d4b9-2e39-4b36-9a6a-89e41cd59153
 title: 'Método ITParticipantSubStreamControl:: SwitchTerminalToSubStream (Confpriv. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 00f10401b2cf1598c76537ebd3a7049d67bf0657
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 41f211d4f3ff0f01801fb5497d36d81fa46e43397d8b69227180b022c9e74a34
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119774646"
 ---
 # <a name="itparticipantsubstreamcontrolswitchterminaltosubstream-method"></a>Método ITParticipantSubStreamControl:: SwitchTerminalToSubStream
 
-\[O **SwitchTerminalToSubStream** não está disponível para uso no Windows Vista, no windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[o **SwitchTerminalToSubStream** não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O método **SwitchTerminalToSubStream** define um terminal para o Subfluxo de participante.
 
@@ -47,7 +47,7 @@ Ponteiro para a interface [**ITSubStream**](/windows/win32/api/tapi3if/nn-tapi3i
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -72,7 +72,7 @@ Esse método pode retornar um desses valores.
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 

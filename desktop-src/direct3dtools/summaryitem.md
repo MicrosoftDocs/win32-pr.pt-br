@@ -1,5 +1,5 @@
 ---
-description: Representa informações resumidas sobre um evento.
+description: Representa informações de resumo sobre um evento.
 MS-HAID: vspixengine.SummaryItem
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -26,7 +26,7 @@ ms.locfileid: "118985436"
 ---
 # <a name="span-idvspixenginesummaryitemspansummaryitem-structure"></a><span id="vspixengine.summaryitem"></span>Estrutura SummaryItem
 
-Representa informações resumidas sobre um evento.
+Representa informações de resumo sobre um evento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,12 +46,12 @@ Uma cadeia de caracteres COM que contém um valor relacionado ao evento.
 **ID**  
 A ID do evento.
 
-**Parentid**  
-A ID do evento Pai, se for o caso.
+**ParentID**  
+A ID do evento pai, se houver.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

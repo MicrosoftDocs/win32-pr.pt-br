@@ -3,7 +3,7 @@ title: Recurso RCDATA
 description: Define um recurso de dados brutos para um aplicativo. Os recursos de dados brutos permitem a inclusão de dados binários diretamente no arquivo executável.
 ms.assetid: 7535cb06-858b-4726-aaa5-43519f84d0e4
 keywords:
-- Menus de recursos do RCDATA e outros recursos
+- Menus de recurso RCDATA e outros recursos
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44de0e71e3ba744f668535950224129b91bc3653
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 62f813bde1195d8adcad708c40857cc11b1e7b70f696455168e174a4bf2f6cf3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103916806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119847036"
 ---
 # <a name="rcdata-resource"></a>Recurso RCDATA
 
@@ -38,7 +38,7 @@ Nome exclusivo ou um valor inteiro sem sinal de 16 bits que identifica o recurso
 
 </dd> <dt>
 
-<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*instruções opcionais*
+<span id="optional-statements"></span><span id="OPTIONAL-STATEMENTS"></span>*optional-statements*
 </dt> <dd>
 
 Esse parâmetro pode ser zero ou mais das instruções a seguir.
@@ -47,32 +47,32 @@ Esse parâmetro pode ser zero ou mais das instruções a seguir.
 
 | Instrução                                                        | Descrição                                                                                                                                                                             |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Características**](characteristics-statement.md) *DWORD*     | Informações definidas pelo usuário sobre um recurso que pode ser usado por ferramentas que lêem e gravam arquivos de recursos. Para obter mais informações, consulte [**características**](characteristics-statement.md). |
-| [](language-statement.md) *Idioma* do idioma, *subidioma* | Idioma do recurso. Para obter mais informações, consulte [**Language**](language-statement.md).                                                                                            |
-| [](version-statement.md) *DWORD* da versão                     | Número de versão definido pelo usuário para o recurso que pode ser usado por ferramentas que lêem e gravam arquivos de recursos. Para obter mais informações, consulte [**versão**](version-statement.md).              |
+| [**CHARACTERISTICS**](characteristics-statement.md) *dword*     | Informações definidas pelo usuário sobre um recurso que pode ser usado por ferramentas que leem e escrevem arquivos de recurso. Para obter mais informações, consulte [**CARACTERÍSTICAS**](characteristics-statement.md). |
+| [**Language**](language-statement.md) *language*, *sublanguage* | Idioma do recurso. Para obter mais informações, consulte [**LANGUAGE**](language-statement.md).                                                                                            |
+| [**VERSION**](version-statement.md) *dword*                     | Número de versão definido pelo usuário para o recurso que pode ser usado por ferramentas que leem e escrevem arquivos de recurso. Para obter mais informações, consulte [**VERSION**](version-statement.md).              |
 
 
 
- 
+ 
 
 </dd> <dt>
 
 <span id="raw-data"></span><span id="RAW-DATA"></span>*dados brutos*
 </dt> <dd>
 
-Dados brutos que consistem em um ou mais números inteiros ou cadeias de caracteres. Os inteiros podem ser especificados em formato decimal, octal ou hexadecimal. Para ser compatível com o Windows de 16 bits, os inteiros são armazenados como valores de **palavra** . Você pode armazenar um inteiro como um valor **DWORD** qualificando o inteiro com o sufixo "L".
+Dados brutos que consistem em um ou mais inteiros ou cadeias de caracteres. Inteiros podem ser especificados em formato decimal, octal ou hexadecimal. Para ser compatível com o Windows de 16 bits, os inteiros são armazenados como valores **WORD.** Você pode armazenar um inteiro como um **valor DWORD** qualificando o inteiro com o sufixo "L".
 
-As cadeias de caracteres são colocadas entre aspas. O RC não acrescenta automaticamente um caractere nulo de terminação a uma cadeia de caracteres. Cada cadeia de caracteres é uma sequência dos caracteres ANSI especificados, a menos que você o qualifique como uma cadeia de caracteres largos com o prefixo L.
+As cadeias de caracteres são entre aspas. RC não anexa automaticamente um caractere nulo de terminação a uma cadeia de caracteres. Cada cadeia de caracteres é uma sequência dos caracteres ANSI especificados, a menos que você a qualifique como uma cadeia de caracteres largos com o prefixo L.
 
-O bloco de dados começa em um limite **DWORD** e o RC não executa nenhum preenchimento ou alinhamento de dados dentro do bloco de *dados brutos* . É sua responsabilidade garantir o alinhamento adequado dos dados dentro do bloco.
+O bloco de dados começa em um limite **DWORD** e o RC não executa nenhum preenchimento ou alinhamento de dados dentro do *bloco de dados* brutos. É sua responsabilidade garantir o alinhamento adequado dos dados dentro do bloco.
 
 </dd> </dl>
 
-Alguns atributos também têm suporte para compatibilidade com versões anteriores. Para obter mais informações, consulte [atributos de recursos comuns](common-resource-attributes.md).
+Determinados atributos também têm suporte para compatibilidade com backward. Para obter mais informações, consulte [Common Resource Attributes](common-resource-attributes.md).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra o uso da instrução **RCDATA** :
+O exemplo a seguir demonstra o uso da **instrução RCDATA:**
 
 ``` syntax
 resname RCDATA
@@ -90,27 +90,27 @@ resname RCDATA
 
 <dl> <dt>
 
-[**ACELERADORES**](accelerators-resource.md)
+[**Aceleradores**](accelerators-resource.md)
 </dt> <dt>
 
-[**CARACTERÍSTICAS**](characteristics-statement.md)
+[**Características**](characteristics-statement.md)
 </dt> <dt>
 
-[**LANGUAGE**](language-statement.md)
+[**Língua**](language-statement.md)
 </dt> <dt>
 
-[**ADICIONARMENU**](menu-resource.md)
+[**Menu**](menu-resource.md)
 </dt> <dt>
 
-[**STRINGTABLE**](stringtable-resource.md)
+[**Stringtable**](stringtable-resource.md)
 </dt> <dt>
 
-[**VERSION**](version-statement.md)
+[**Versão**](version-statement.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,39 +1,39 @@
 ---
-description: As ferramentas a seguir estão disponíveis apenas nos SDK do Windows components for Windows Installer Developers.
+description: As ferramentas a seguir só estão disponíveis nos componentes Windows SDK para desenvolvedores Windows instalador.
 ms.assetid: b1305eaf-cd25-4684-a593-d8b1aac83592
-title: Ferramentas de desenvolvimento Windows Installer
+title: Windows Ferramentas de desenvolvimento do instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9f4d3cfdac2bae4c131b47e1c5e0cf7a63fc5a3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 674d32f8932e4ac35d18ae0a39671feb948e8395381e843f6f267f090289c9be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012654"
 ---
-# <a name="windows-installer-development-tools"></a>Ferramentas de desenvolvimento Windows Installer
+# <a name="windows-installer-development-tools"></a>Windows Ferramentas de desenvolvimento do instalador
 
-As ferramentas a seguir estão disponíveis apenas nos [SDK do Windows components for Windows Installer Developers](platform-sdk-components-for-windows-installer-developers.md).
+As ferramentas a seguir só estão disponíveis no Windows [componentes do SDK para desenvolvedores Windows instalador.](platform-sdk-components-for-windows-installer-developers.md)
 
 
 
 | Utilitário                          | Descrição                                                                                                                                                                                                                                      |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Instmsi.exe](instmsi-exe.md)   | Pacote redistribuível para instalar o Windows Installer em sistemas operacionais Windows anteriores ao Windows me.                                                                                                                               |
-| [Msicert.exe](msicert-exe.md)   | Popula a tabela MsiDigitalSignature e a tabela MsiDigitalCertificate com as informações de assinatura digital que pertencem a arquivos de gabinete externo na tabela de mídia.                                                                           |
-| [Msidb.exe](msidb-exe.md)       | Importa e exporta as tabelas e fluxos de banco de dados, mescla bancos e aplica transformações.                                                                                                                                                       |
-| [Msifiler.exe](msifiler-exe.md) | Popula a tabela de arquivos com versões de arquivo, idiomas e tamanhos com base em um diretório de origem. Ele também pode atualizar a tabela MsiFileHash com hashes de arquivo.                                                                                      |
-| [Msiinfo.exe](msiinfo-exe.md)   | Edita ou exibe o [fluxo de informações de resumo](summary-information-stream.md).                                                                                                                                                                  |
+| [Instmsi.exe](instmsi-exe.md)   | Pacote redistribuível para instalar o instalador Windows em sistemas operacionais Windows anteriores Windows Me.                                                                                                                               |
+| [Msicert.exe](msicert-exe.md)   | Popula a tabela MsiDigitalSignature e a tabela MsiDigitalCertificate com as informações de assinatura digital que pertencem a arquivos de gabinete externos na tabela Mídia.                                                                           |
+| [Msidb.exe](msidb-exe.md)       | Importa e exporta tabelas e fluxos de banco de dados, mescla bancos de dados e aplica as transformação.                                                                                                                                                       |
+| [Msifiler.exe](msifiler-exe.md) | Popula a tabela Arquivo com versões de arquivo, idiomas e tamanhos com base em um diretório de origem. Ele também pode atualizar a tabela MsiFileHash com hashes de arquivo.                                                                                      |
+| [Msiinfo.exe](msiinfo-exe.md)   | Edita ou exibe o [fluxo de informações resumidas.](summary-information-stream.md)                                                                                                                                                                  |
 | [Msimerg.exe](msimerg-exe.md)   | Mescla um banco de dados em outro.                                                                                                                                                                                                                |
 | [Msimsp.exe](msimsp-exe.md)     | Ferramenta de criação de patch. O método recomendado para gerar um pacote de patch é usar uma ferramenta de criação de patch, como Msimsp.exe com PATCHWIZ.DLL.                                                                                                 |
-| [Msistuff.exe](msistuff-exe.md) | Exibe ou configura os recursos no executável de inicialização Setup.exe.                                                                                                                                                                      |
-| [Msitool. Mak](msitool-mak.md)   | Makefile que pode ser usado para fazer ferramentas e ações personalizadas.                                                                                                                                                                                      |
+| [Msistuff.exe](msistuff-exe.md) | Exibe ou configura os recursos no executável Setup.exe inicialização.                                                                                                                                                                      |
+| [Msitool.mak](msitool-mak.md)   | Makefile que pode ser usado para fazer ferramentas e ações personalizadas.                                                                                                                                                                                      |
 | [Msitran.exe](msitran-exe.md)   | Gera uma transformação ou aplica um arquivo de transformação a um banco de dados.                                                                                                                                                                                 |
-| [Msival2.exe](msival2-exe.md)   | Executa um ou um pacote de [avaliadores de consistência internos-ICES](internal-consistency-evaluators-ices.md).                                                                                                                                       |
-| [Msizap.exe](msizap-exe.md)     | Remove Windows Installer informações de um produto ou de todos os produtos instalados em um computador.                                                                                                                                                      |
-| [Orca.exe](orca-exe.md)         | Editor de banco de dados. Cria e edita arquivos. msi e módulos de mesclagem.                                                                                                                                                                                 |
-| [PATCHWIZ.DLL](patchwiz-dll.md) | Gera um Windows Installer [pacote de patch](patch-packages.md) de um arquivo de propriedades de criação de patch (arquivo. PCP). O método recomendado para gerar um pacote de patch é usar uma ferramenta de criação de patch, como Msimsp.exe com PATCHWIZ.DLL. |
-| [Wilogutl.exe](wilogutl-exe.md) | Auxilia a análise de arquivos de log de uma instalação Windows Installer e exibe soluções sugeridas para erros.                                                                                                                              |
+| [Msival2.exe](msival2-exe.md)   | Executa um ou um conjunto de [Avaliadores de Consistência Interna – ICEs.](internal-consistency-evaluators-ices.md)                                                                                                                                       |
+| [Msizap.exe](msizap-exe.md)     | Remove Windows informações do Instalador para um produto ou todos os produtos instalados em um computador.                                                                                                                                                      |
+| [Orca.exe](orca-exe.md)         | Editor de banco de dados. Cria e edita .msi arquivos e módulos de mesclagem.                                                                                                                                                                                 |
+| [PATCHWIZ.DLL](patchwiz-dll.md) | Gera um pacote de patch Windows [instalador de um](patch-packages.md) arquivo de propriedades de criação de patch (arquivo .pcp). O método recomendado para gerar um pacote de patch é usar uma ferramenta de criação de patch, como Msimsp.exe com PATCHWIZ.DLL. |
+| [Wilogutl.exe](wilogutl-exe.md) | Auxilia na análise de arquivos de log de uma instalação do Windows e exibe soluções sugeridas para erros.                                                                                                                              |
 
 
 

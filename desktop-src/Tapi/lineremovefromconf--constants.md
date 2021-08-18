@@ -4,12 +4,12 @@ ms.assetid: fa1b36de-8be3-48ae-a58b-800f30259041
 title: Constantes de LINEREMOVEFROMCONF_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 51fbb3c6261addf28f1bb9b101b29882d2c00218
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 917cfdd27500a45689df036ff094334f862d889abe9bb8acccaeb5113773c175
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002994"
 ---
 # <a name="lineremovefromconf_-constants"></a>\_Constantes LINEREMOVEFROMCONF
 
@@ -58,7 +58,7 @@ Sem extensibilidade. Todos os 32 bits são reservados.
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

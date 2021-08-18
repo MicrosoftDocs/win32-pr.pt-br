@@ -1,6 +1,6 @@
 ---
 title: Elemento Credentials (EapHostUserCredentials)
-description: É usado quando a configuração do método está no formato de texto XML em vez de um BLOB binário.
+description: É usado quando a configuração do método está no formato de texto XML em vez de em um BLOB binário.
 ms.assetid: 9c350891-bf40-430d-837a-f2e58bde41fc
 keywords:
 - Elemento Credentials EAPHost
@@ -23,7 +23,7 @@ ms.locfileid: "118984206"
 ---
 # <a name="credentials-eaphostusercredentials-element"></a>Elemento Credentials (EapHostUserCredentials)
 
-O **elemento Credentials (EapHostUserCredentials)** é usado quando a configuração do método está no formato de texto XML em vez de um BLOB binário.
+O elemento **Credentials (EapHostUserCredentials)** é usado quando a configuração do método está no formato de texto XML em vez de em um blob binário.
 
 ``` syntax
 <xs:element name="Credentials"
@@ -31,7 +31,7 @@ O **elemento Credentials (EapHostUserCredentials)** é usado quando a configura�
  />
 ```
 
-O **elemento Credentials** é definido pelo [**elemento EapHostUserCredentials.**](eaphostusercredentialsschema-eaphostusercredentials-element.md)
+O elemento **Credentials** é definido pelo elemento [**EapHostUserCredentials**](eaphostusercredentialsschema-eaphostusercredentials-element.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,8 +39,8 @@ O **elemento Credentials** é definido pelo [**elemento EapHostUserCredentials.*
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMDevice GetDeviceCertificate
+title: Método GetDeviceCertificate de IWMDRMDevice
 description: O método GetDeviceCertificate recupera o certificado do dispositivo.
 ms.assetid: 9e345bf9-a158-4c0e-a9f1-e4ce3ec16b58
 keywords:
-- Método GetDeviceCertificate Windows Media Gerenciador de Dispositivos
-- Método GetDeviceCertificate Windows Media Gerenciador de Dispositivos, interface IWMDRMDevice
-- Interface IWMDRMDevice Windows Media Gerenciador de Dispositivos, método GetDeviceCertificate
+- Método GetDeviceCertificate windows Media Gerenciador de Dispositivos
+- Método GetDeviceCertificate windows Media Gerenciador de Dispositivos , interface IWMDRMDevice
+- Interface IWMDRMDevice windows Media Gerenciador de Dispositivos , método GetDeviceCertificate
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9ceecca32f2455d73ca1dce76a4f8a17613a1ee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 299233ff4344f44535933221141534ab2b0173ba54e47c9cc340020a2f462eb3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619816"
 ---
-# <a name="iwmdrmdevicegetdevicecertificate-method"></a>Método IWMDRMDevice:: GetDeviceCertificate
+# <a name="iwmdrmdevicegetdevicecertificate-method"></a>Método IWMDRMDevice::GetDeviceCertificate
 
-O método **GetDeviceCertificate** recupera o certificado do dispositivo.
+O **método GetDeviceCertificate** recupera o certificado do dispositivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,16 +43,16 @@ HRESULT GetDeviceCertificate(
 
 <dl> <dt>
 
-*pbstrDevCert* \[ fora\]
+*pbstrDevCert* \[ out\]
 </dt> <dd>
 
-Ponteiro para um **BSTR** que contém o certificado de dispositivo recuperado.
+Ponteiro para um **BSTR** que contém o certificado do dispositivo recuperado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -70,8 +70,8 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
@@ -79,7 +79,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 <dl> <dt>
 
-[**Interface IWMDRMDevice**](iwmdrmdevice.md)
+[**IWMDRMDevice Interface**](iwmdrmdevice.md)
 </dt> </dl>
 
  

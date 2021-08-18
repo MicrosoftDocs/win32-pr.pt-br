@@ -3,7 +3,7 @@ title: Mensagem de TVM_SETTOOLTIPS (commctrl. h)
 description: Define um controle de dica de ferramenta filho do controle de exibição de árvore. Você pode enviar essa mensagem explicitamente ou usando a \_ macro SetToolTips de TreeView.
 ms.assetid: beb9a739-868e-46a8-95d9-9dc032c79dd4
 keywords:
-- Controles de TVM_SETTOOLTIPS de mensagens do Windows
+- controles de Windows de mensagem de TVM_SETTOOLTIPS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: efd9d5957a38d873993405a5283545472433e958
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bd18a5217db0d105841722d208904c1b65199504750576acf1ff8035f31bd585
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085535"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119913956"
 ---
 # <a name="tvm_settooltips-message"></a>\_Mensagem TVM SETtooltips
 
@@ -39,7 +39,7 @@ Identificador para um controle de dica de ferramenta.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o identificador para o controle de dica de ferramenta definido anteriormente para o controle de exibição em árvore ou **NULL** se as dicas de ferramentas não foram usadas anteriormente.
 
@@ -53,9 +53,9 @@ Quando criados, os controles de exibição de árvore criam automaticamente um c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

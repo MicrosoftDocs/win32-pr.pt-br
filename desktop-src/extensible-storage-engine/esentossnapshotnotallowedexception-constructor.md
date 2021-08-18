@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6bea6b6d5370165cffa8ef141cab66870e62cdbc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d482494f567ad1e7bca14dbd213e9f24798e047026cdcb8f135111be0a5bdc2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105772718"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119040084"
 ---
 # <a name="esentossnapshotnotallowedexception-constructor"></a>Construtor EsentOSSnapshotNotAllowedException
 
 Inicializa uma nova instância da classe EsentOSSnapshotNotAllowedException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentOSSnapshotNotAllowedException()
 
 [Classe EsentOSSnapshotNotAllowedException](./esentossnapshotnotallowedexception-class.md)
 
-[Membros do EsentOSSnapshotNotAllowedException](./esentossnapshotnotallowedexception-members.md)
+[Membros EsentOSSnapshotNotAllowedException](./esentossnapshotnotallowedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

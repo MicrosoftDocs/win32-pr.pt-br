@@ -1,18 +1,18 @@
 ---
-title: Criando heaps de descritor
+title: Como criar heaps de descritores
 description: Para criar e configurar um heap de descritor, você deve selecionar um tipo de heap de descritor, determinar quantos descritores ele contém e definir sinalizadores que indiquem se a CPU está visível e/ou sombreador visível.
 ms.assetid: 58677023-692C-4BA4-90B7-D568F3DD3F73
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e472a0749634d5cbaa9cbf1cde5e11202d4c4f9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 218d21d462dd393360e9ebfcb07ab5b35524b9d8d8c01c8ab1ef28ef90166eb2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548225"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857986"
 ---
-# <a name="creating-descriptor-heaps"></a>Criando heaps de descritor
+# <a name="creating-descriptor-heaps"></a>Como criar heaps de descritores
 
 Para criar e configurar um heap de descritor, você deve selecionar um tipo de heap de descritor, determinar quantos descritores ele contém e definir sinalizadores que indiquem se a CPU está visível e/ou sombreador visível.
 
@@ -88,7 +88,7 @@ Os aplicativos podem descobrir o tamanho de incremento dos descritores para um d
 >
 > Há uma estrutura auxiliar, o \_ \_ identificador do descritor de GPU CD3DX12 \_ , definido no cabeçalho d3dx12. h, que herda a estrutura de [**\_ \_ \_ identificador do descritor de GPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_gpu_descriptor_handle) e fornece inicialização e outras operações úteis. Da mesma forma, a \_ \_ estrutura auxiliar do identificador do descritor de CPU CD3DX12 \_ é definida para a estrutura de [**\_ \_ \_ identificador do descritor de CPU D3D12**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_cpu_descriptor_handle)
 
- 
+ 
 
 Ambas as estruturas auxiliares são usadas ao preencher as listas de comandos.
 
@@ -291,6 +291,6 @@ public:
 [Heaps de descritores](descriptor-heaps.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

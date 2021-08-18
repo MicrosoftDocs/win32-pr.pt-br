@@ -1,18 +1,18 @@
 ---
-title: Simulação de gravidade n-Body de vários mecanismos
+title: Simulação de gravidade de n-corpos de vários mecanismos
 description: O exemplo D3D12nBodyGravity demonstra como fazer o trabalho de computação de forma assíncrona.
 ms.assetid: B20C5575-0616-43F7-9AC9-5F802E5597B5
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e60782519de6f655882717c4ea657668129a6ce3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: da14e34bfc881e000eb4f4557a0dddef3cee3d0ab55343a9e5597a483af39adc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104548229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119632036"
 ---
-# <a name="multi-engine-n-body-gravity-simulation"></a>Simulação de gravidade n-Body de vários mecanismos
+# <a name="multi-engine-n-body-gravity-simulation"></a>Simulação de gravidade de n-corpos de vários mecanismos
 
 O exemplo **D3D12nBodyGravity** demonstra como fazer o trabalho de computação de forma assíncrona. O exemplo gira um número de threads cada um com uma fila de comando de computação e agenda o trabalho de computação na GPU que executa uma simulação de gravidade de n-corpo. Cada thread opera em dois buffers cheios de posição e dados de velocidade. Com cada iteração, o sombreador de computação lê a posição atual e os dados de velocidade de um buffer e grava a próxima iteração no outro buffer. Quando a iteração é concluída, o sombreador de computação troca qual buffer é o SRV para ler dados de posição/velocidade e que é o UAV para gravar atualizações de posição/velocidade alterando o estado do recurso em cada buffer.
 
@@ -20,7 +20,7 @@ O exemplo **D3D12nBodyGravity** demonstra como fazer o trabalho de computação 
 -   [Criar os buffers SRV e UAV](#create-the-srv-and-uav-buffers)
 -   [Criar os buffers de CBV e de vértice](#create-the-cbv-and-vertex-buffers)
 -   [Sincronizar os threads de renderização e de computação](#synchronize-the-rendering-and-compute-threads)
--   [Execute o exemplo](#run-the-sample)
+-   [Executar o exemplo](#run-the-sample)
 -   [Tópicos relacionados](#related-topics)
 
 ## <a name="create-the-root-signatures"></a>Criar as assinaturas raiz
@@ -74,7 +74,7 @@ Começamos criando um gráfico e uma assinatura de raiz de computação, no mét
 
 
 
- 
+ 
 
 ## <a name="create-the-srv-and-uav-buffers"></a>Criar os buffers SRV e UAV
 
@@ -101,7 +101,7 @@ Os buffers SRV e UAV consistem em uma matriz de dados de posição e velocidade.
 
 
 
- 
+ 
 
 ## <a name="create-the-cbv-and-vertex-buffers"></a>Criar os buffers de CBV e de vértice
 
@@ -127,7 +127,7 @@ Para o pipeline de gráficos, o CBV é um **struct** que contém duas matrizes u
 
 
 
- 
+ 
 
 Como resultado, o buffer de vértice usado pelo sombreador de vértice na verdade não contém dados posicionais.
 
@@ -149,7 +149,7 @@ Como resultado, o buffer de vértice usado pelo sombreador de vértice na verdad
 
 
 
- 
+ 
 
 Para o pipeline de computação, o CBV é um **struct** que contém algumas constantes usadas pela simulação de gravidade de n-Body no sombreador de computação.
 
@@ -210,7 +210,7 @@ void D3D12nBodyGravity::OnRender()
 |------------------------------------------------------------------------|------------|
 | [**InterlockedExchange**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedexchange)                  |            |
 | [**InterlockedGetValue**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedcompareexchange)           |            |
-| [**Getcompletedvalue**](/windows/win32/api/d3d12/nf-d3d12-id3d12fence-getcompletedvalue)             |            |
+| [**GetCompletedValue**](/windows/win32/api/d3d12/nf-d3d12-id3d12fence-getcompletedvalue)             |            |
 | [**Aguarde**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-wait)                                |            |
 | [**ID3D12CommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12commandlist)                         |            |
 | [**ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists)  |            |
@@ -218,7 +218,7 @@ void D3D12nBodyGravity::OnRender()
 
 
 
- 
+ 
 
 Para simplificar o exemplo um pouco, o thread de computação aguarda a GPU concluir cada iteração antes de agendar mais trabalho de computação. Na prática, os aplicativos provavelmente desejarão manter a fila de computação cheia para alcançar o desempenho máximo da GPU.
 
@@ -279,15 +279,15 @@ DWORD D3D12nBodyGravity::AsyncComputeThreadProc(int threadIndex)
 | [**ID3D12GraphicsCommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12graphicscommandlist)              |            |
 | [**ID3D12Fence**](/windows/win32/api/d3d12/nn-d3d12-id3d12fence)                                          |            |
 | [**InterlockedGetValue**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedcompareexchange)                |            |
-| [**Fechar**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-close)                            |            |
+| [**Inclui**](/windows/win32/api/d3d12/nf-d3d12-id3d12graphicscommandlist-close)                            |            |
 | [**ID3D12CommandList**](/windows/win32/api/d3d12/nn-d3d12-id3d12commandlist)                              |            |
 | [**ExecuteCommandLists**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-executecommandlists)       |            |
 | [**InterlockedIncrement**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedincrement)                     |            |
-| [**Aviso**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-signal)                                 |            |
+| [**Sinal**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-signal)                                 |            |
 | [**SetEventOnCompletion**](/windows/win32/api/d3d12/nf-d3d12-id3d12fence-seteventoncompletion)            |            |
 | [**WaitForSingleObject**](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject)                         |            |
 | [**InterlockedGetValue**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedcompareexchange)                |            |
-| [**Getcompletedvalue**](/windows/win32/api/d3d12/nf-d3d12-id3d12fence-getcompletedvalue)                  |            |
+| [**GetCompletedValue**](/windows/win32/api/d3d12/nf-d3d12-id3d12fence-getcompletedvalue)                  |            |
 | [**Aguarde**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandqueue-wait)                                     |            |
 | [**InterlockedExchange**](/windows-hardware/drivers/ddi/content/wdm/nf-wdm-interlockedexchange)                       |            |
 | [**ID3D12CommandAllocator:: Reset**](/windows/win32/api/d3d12/nf-d3d12-id3d12commandallocator-reset)       |            |
@@ -295,7 +295,7 @@ DWORD D3D12nBodyGravity::AsyncComputeThreadProc(int threadIndex)
 
 
 
- 
+ 
 
 ## <a name="run-the-sample"></a>Execute o exemplo
 
@@ -303,6 +303,6 @@ DWORD D3D12nBodyGravity::AsyncComputeThreadProc(int threadIndex)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Instruções passo a passo de código do D3D12](d3d12-code-walk-throughs.md)
+[Guia detalhado do código D3D12](d3d12-code-walk-throughs.md)
 
 [Sincronização de vários mecanismos](./user-mode-heap-synchronization.md)

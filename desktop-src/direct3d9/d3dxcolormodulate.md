@@ -1,7 +1,7 @@
 ---
 description: Combina duas cores.
 ms.assetid: deff70c7-2359-48b2-ab40-8c418acf5a07
-title: Função D3DXColorModulate (D3dx9math.h)
+title: Função D3DXColorModulate (D3dx9math. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -42,30 +42,30 @@ D3DXCOLOR* D3DXColorModulate(
 
 <dl> <dt>
 
-*pOut* \[ in, out\]
+*pout* \[ entrada, saída\]
 </dt> <dd>
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Ponteiro para uma [**estrutura D3DXCOLOR**](d3dxcolor.md) que é o resultado da operação.
+Ponteiro para uma estrutura [**D3DXCOLOR**](d3dxcolor.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*pC1* \[ Em\]
+ \ \[ no\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Ponteiro para uma estrutura [**D3DXCOLOR de origem.**](d3dxcolor.md)
+Ponteiro para uma estrutura de [**D3DXCOLOR**](d3dxcolor.md) de origem.
 
 </dd> <dt>
 
-*pC2* \[ Em\]
+*pC2* \[ no\]
 </dt> <dd>
 
 Tipo: **const [**D3DXCOLOR**](d3dxcolor.md) \***
 
-Ponteiro para uma estrutura [**D3DXCOLOR de origem.**](d3dxcolor.md)
+Ponteiro para uma estrutura de [**D3DXCOLOR**](d3dxcolor.md) de origem.
 
 </dd> </dl>
 
@@ -73,13 +73,13 @@ Ponteiro para uma estrutura [**D3DXCOLOR de origem.**](d3dxcolor.md)
 
 Tipo: **[ **D3DXCOLOR**](d3dxcolor.md)\***
 
-Essa função retorna um ponteiro para uma [**estrutura D3DXCOLOR**](d3dxcolor.md) que é o resultado da operação de mesclagem.
+Essa função retorna um ponteiro para uma estrutura [**D3DXCOLOR**](d3dxcolor.md) que é o resultado da operação de mesclagem.
 
 ## <a name="remarks"></a>Comentários
 
-O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a **função D3DXColorModulate** pode ser usada como um parâmetro para outra função.
+O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função **D3DXColorModulate** pode ser usada como um parâmetro para outra função.
 
-Essa função combina duas cores multiplicando componentes de cores correspondentes, conforme mostrado no exemplo a seguir.
+Essa função combina duas cores multiplicando os componentes de cor correspondentes, conforme mostrado no exemplo a seguir.
 
 
 ```
@@ -94,8 +94,8 @@ pOut->r = pC1->r * pC2->r;
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
 
 
 

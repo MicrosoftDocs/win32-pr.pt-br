@@ -4,12 +4,12 @@ ms.assetid: e0ca356e-f8c1-4845-ae1e-ce2ae8987515
 title: Tratando IDNs (nomes de domínio internacionalizados)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95e853f0ea3f62fc3e5ee848431417cc031eaa5a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6310cf74e39758dc6974a1247fe9a5b506276f5c3da55d546d6bc6c2b5a8c992
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119898576"
 ---
 # <a name="handling-internationalized-domain-names-idns"></a>Tratando IDNs (nomes de domínio internacionalizados)
 
@@ -33,13 +33,13 @@ O NLS inclui as seguintes funções de conversão que seu aplicativo pode usar p
 -   [**IdnToNameprepUnicode**](/windows/desktop/api/Winnls/nf-winnls-idntonameprepunicode). Executa a parte NamePrep da conversão de um IDN em um nome ASCII. Essa função cria uma representação Unicode canônica de uma cadeia de caracteres.
 -   [**IdnToUnicode**](/windows/desktop/api/Winnls/nf-winnls-idntounicode). Converte uma cadeia de caracteres Punycode em uma cadeia de caracteres UTF-16 normal.
 
-O NLS também define várias funções de API que podem ser usadas para atenuar alguns dos riscos de segurança apresentados pela tecnologia IDN. No Windows Vista e posterior, as funções a seguir são usadas para verificar se os caracteres em um determinado IDN são desenhados inteiramente dos scripts associados a uma localidade ou localidades em particular. Para obter um exemplo do uso dessas funções, consulte [NLS: exemplo de mitigação do IDN (nome de domínio internacionalizado)](nls--internationalized-domain-name--idn--mitigation-sample.md).
+O NLS também define várias funções de API que podem ser usadas para atenuar alguns dos riscos de segurança apresentados pela tecnologia IDN. no Windows Vista e posterior, as funções a seguir são usadas para verificar se os caracteres em um determinado IDN são desenhados inteiramente dos scripts associados a uma localidade ou localidades em particular. Para obter um exemplo do uso dessas funções, consulte [NLS: exemplo de mitigação do IDN (nome de domínio internacionalizado)](nls--internationalized-domain-name--idn--mitigation-sample.md).
 
 -   [**GetStringScripts**](/windows/desktop/api/Winnls/nf-winnls-getstringscripts). Fornece uma lista de scripts usados em uma cadeia de caracteres específica.
 -   [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa), [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex). Recuperar informações de localidade. Usar as funções com *LCTYPE* definido como [localidade \_ SSCRIPTS](locale-sscripts.md) fornece uma lista de scripts normalmente usados para uma localidade específica.
 -   [**VerifyScripts**](/windows/desktop/api/Winnls/nf-winnls-verifyscripts). Compara listas de scripts. Para verificar em várias localidades, o aplicativo pode fazer várias chamadas para [**GetLocaleInfo**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoa) ou [**GetLocaleInfoEx**](/windows/desktop/api/Winnls/nf-winnls-getlocaleinfoex) e [**VerifyScripts**](/windows/desktop/api/Winnls/nf-winnls-verifyscripts).
 
-Para aplicativos executados no Windows XP e no Windows Server 2003, as funções [**DownlevelGetLocaleScripts**](downlevelgetlocalescripts.md), [**DownlevelGetStringScripts**](downlevelgetstringscripts.md)e [**DownlevelVerifyScripts**](downlevelverifyscripts.md) desempenham uma função semelhante às funções listadas acima em mitigar o risco de segurança. O download ["APIs de mitigação do IDN (Microsoft Internacionalizated Domain Name)"](https://www.microsoft.com/downloads/details.aspx?FamilyID=AD6158D7-DDBA-416A-9109-07607425A815&displaylang=en) está disponível no [centro de download do MSDN](https://www.microsoft.com/?ref=go).
+para aplicativos executados no Windows XP e no Windows Server 2003, as funções [**DownlevelGetLocaleScripts**](downlevelgetlocalescripts.md), [**DownlevelGetStringScripts**](downlevelgetstringscripts.md)e [**DownlevelVerifyScripts**](downlevelverifyscripts.md) desempenham uma função semelhante às funções listadas acima em mitigar o risco de segurança. O download ["APIs de mitigação do IDN (Microsoft Internacionalizated Domain Name)"](https://www.microsoft.com/downloads/details.aspx?FamilyID=AD6158D7-DDBA-416A-9109-07607425A815&displaylang=en) está disponível no [centro de download do MSDN](https://www.microsoft.com/?ref=go).
 
 ## <a name="handle-unicode-strings"></a>Manipular cadeias de caracteres Unicode
 

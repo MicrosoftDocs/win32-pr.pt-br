@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 291d72797b1ee765507a3d23921cd518cf605354
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f3851d32b43bc7ebd170a1179ecda1e25f86e43ddaf819453a4af6998e2f7efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014344"
 ---
 # <a name="requeststatechange-method-of-the-msvm_computersystem-class"></a>Método RequestStateChange da classe de \_ ComputerSystem Msvm
 
@@ -317,7 +317,7 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -329,7 +329,7 @@ Esse método retorna um dos valores a seguir.
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | <dl> <dt>**Concluído sem erro**</dt> <dt>0</dt> </dl>                           | Êxito.<br/>                                                                |
 | <dl> <dt>**Parâmetros de método verificados-transição iniciada**</dt> <dt>4096</dt> </dl> | A transição é assíncrona.<br/>                                         |
-| <dl> <dt>**Acesso negado**</dt> <dt>32769</dt> </dl>                                 | Acesso negado.<br/>                                                          |
+| <dl> <dt>**Acesso negado**</dt> <dt>32769</dt> </dl>                                 | Acesso negado<br/>                                                          |
 | <dl> <dt></dt><dt>32768</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32770</dt> </dl>                                                  |                                                                                    |
 | <dl> <dt></dt><dt>32771</dt> </dl>                                                  |                                                                                    |
@@ -449,7 +449,7 @@ namespace HyperVSamples
 
 
 
-O exemplo a seguir Visual Basic Scripting Edition (VBScript) inicia ou desabilita uma máquina virtual.
+o exemplo a seguir Visual Basic scripting Edition (VBScript) inicia ou desabilita uma máquina virtual.
 
 > [!IMPORTANT]
 > Para funcionar corretamente, o código a seguir deve ser executado no servidor de host da máquina virtual e deve ser executado com privilégios de administrador.
@@ -630,10 +630,10 @@ End Function
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

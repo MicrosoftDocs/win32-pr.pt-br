@@ -4,19 +4,19 @@ ms.assetid: ea45cd5f-9cb0-41bb-99bf-f84781ae9604
 title: 'Interação entre Winlogon e GINA '
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 759d9171bca02e0a00fd35b77a4514d7438d43f8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 824c658e4f19b14de339b569a8c9d17992c1b60bb5d4d526de949ce76cd1554d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119482356"
 ---
 # <a name="interaction-between-winlogon-and-gina"></a>Interação entre Winlogon e GINA 
 
 O [*Winlogon*](../secgloss/w-gly.md) e a [*Gina*](../secgloss/g-gly.md) devem comunicar informações de inicialização, lidar com monitoramento e notificação de [*sequência de atenção segura*](../secgloss/s-gly.md) (SAS) e permitir atividades de logoff e desligamento. O estado do Winlogon determina qual função GINA é chamada para processar qualquer evento SAS específico. As comunicações ocorrem na ordem mostrada aqui.
 
 > [!Note]  
-> As DLLs GINAs são ignoradas no Windows Vista.
+> as DLLs ginas são ignoradas no Windows Vista.
 
  
 

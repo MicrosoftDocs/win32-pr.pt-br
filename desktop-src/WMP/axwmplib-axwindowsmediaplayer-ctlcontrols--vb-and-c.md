@@ -3,9 +3,9 @@ title: Propriedade AxWindowsMediaPlayer. Ctlcontrols
 description: A propriedade Ctlcontrols Obtém uma interface IWMPControls que fornece uma maneira de manipular a reprodução de um item de mídia.
 ms.assetid: 0f0067e5-91bb-4179-a054-51f709b90c01
 keywords:
-- Propriedade Ctlcontrols Windows Media Player
-- Propriedade Ctlcontrols Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer do Windows Media Player, Propriedade Ctlcontrols
+- Windows Media Player da propriedade Ctlcontrols
+- propriedade Ctlcontrols Windows Media Player, classe AxWindowsMediaPlayer
+- classe AxWindowsMediaPlayer Windows Media Player, propriedade Ctlcontrols
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85a1929542a168a873e50baf9994375d09311cfe
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b2a3ece2da72c5fe35a2710d83c0d9abd3376c6c4f1715d129bb63bd8a42e72
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105794524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119619046"
 ---
 # <a name="axwindowsmediaplayerctlcontrols-property"></a>Propriedade AxWindowsMediaPlayer. Ctlcontrols
 

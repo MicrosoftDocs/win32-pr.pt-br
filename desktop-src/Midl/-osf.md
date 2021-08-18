@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2936401d59bb8c2c2bcfdcffce27ba9ed978d506
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: eb887997642b0d0ff81314d6cf81dc148e57547727a09b1fe646f04d0391f967
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014114"
 ---
 # <a name="osf-switch"></a>comutador/OSF
 
@@ -66,7 +66,7 @@ As seguintes extensões de linguagem C/C++ não estão disponíveis quando você
 -   Declarações externas.
 -   Procedimentos com reticências na lista de parâmetros.
 -   Digite [**int**](int.md).
--   Digite **void \*** (exceto com o atributo de [**\_ identificador de contexto**](context-handle.md) ).
+-   Digite **void \** _ (exceto com o atributo [_ *contexto \_ Handle* *](context-handle.md) ).
 -   Os qualificadores de tipo, incluindo o formulário com o prefixo de conformidade com ANSI, contêm dois caracteres de sublinhado: **\_ \_ cdecl**, **cdecl**, [**const**](const.md), **const**, **\_ \_ Exportar**, **Exportar**, **\_ \_ longe**, **longe**, **\_ \_ LOADDS**, **LOADDS**, **\_ \_ próximo**, **próximo**, **\_ \_ Pascal**, **Pascal**, **\_ \_ stdcall**, **stdcall**, **\_ \_ volátil** e **volátil**.
 -   Qualquer \# aviso [**pragma**](pragma.md) ou comentário **\# pragma** .
 -   Serialização de tipo.
@@ -95,6 +95,6 @@ As seguintes extensões de linguagem C/C++ não estão disponíveis quando você
 [Pacote de gerenciamento de memória de RPCSS](/windows/desktop/Rpc/rpcss-memory-management-package)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

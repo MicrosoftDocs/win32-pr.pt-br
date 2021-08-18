@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_DWMSENDICONICLIVEPREVIEWBITMAP (dwmapi. h)
-description: Instrui uma janela para fornecer um bitmap estático a ser usado como uma visualização dinâmica (também conhecida como visualização de inspeção) dessa janela.
+title: WM_DWMSENDICONICLIVEPREVIEWBITMAP mensagem (Dwmapi.h)
+description: Instrui uma janela a fornecer um bitmap estático a ser usado como uma visualização ao vivo (também conhecida como uma visualização de Espiar) dessa janela.
 ms.assetid: 24bf3b42-a850-4aa5-966a-29baab6b4d21
 keywords:
-- Mensagem de WM_DWMSENDICONICLIVEPREVIEWBITMAP Gerenciador de Janelas da Área de Trabalho
+- WM_DWMSENDICONICLIVEPREVIEWBITMAP mensagem Gerenciador de Janelas da Área de Trabalho
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 21f73076ab313da66171bc8265f7f4e7d068f93e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a7742b70afad62a42378e50a06a6e40e503bee72309f5f233f9cf8bf62cf41d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985237"
 ---
-# <a name="wm_dwmsendiconiclivepreviewbitmap-message"></a>Mensagem do WM \_ DWMSENDICONICLIVEPREVIEWBITMAP
+# <a name="wm_dwmsendiconiclivepreviewbitmap-message"></a>Mensagem WM \_ DWMSENDICONICLIVEPREVIEWBITMAP
 
-Instrui uma janela para fornecer um bitmap estático a ser usado como uma *Visualização dinâmica* (também conhecida como *visualização de inspeção*) dessa janela.
+Instrui uma janela a fornecer um bitmap estático *a* ser usado como uma visualização ao vivo (também conhecida como uma *visualização de* Espiar ) dessa janela.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -43,25 +43,25 @@ Não usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se um aplicativo processar essa mensagem, ele deverá retornar zero.
+Se um aplicativo processa essa mensagem, ele deve retornar zero.
 
 ## <a name="remarks"></a>Comentários
 
-Uma *Visualização dinâmica* (também conhecida como *visualização do Peek*) de uma janela é exibida quando um usuário move o ponteiro do mouse sobre a miniatura da janela na barra de tarefas ou dá o foco da miniatura na janela Alt + Tab. Essa exibição é uma visualização de tamanho completo da janela e pode ser um instantâneo ao vivo ou uma representação icônico.
+Uma *visualização* ao vivo (também conhecida como visualização de Espiar *)* de uma janela é exibida quando um usuário move o ponteiro do mouse sobre a miniatura da janela na barra de tarefas ou fornece o foco da miniatura na janela ALT+TAB. Essa exibição é uma versão prévia de tamanho completo da janela e pode ser um instantâneo ao vivo ou uma representação de descarada.
 
-Gerenciador de Janelas da Área de Trabalho (DWM) enviará essa mensagem para uma janela se todas as seguintes situações forem verdadeiras:
+Gerenciador de Janelas da Área de Trabalho (DWM) envia essa mensagem para uma janela se todas as seguintes situações são verdadeiras:
 
--   A visualização dinâmica foi invocada na janela.
--   O atributo [**DWMWA \_ tem \_ icônico \_ bitmap**](/windows/desktop/api/Dwmapi/ne-dwmapi-dwmwindowattribute) está definido na janela.
--   Uma representação icônico é a única que existe para essa janela.
+-   A versão prévia ao vivo foi invocada na janela.
+-   O [**atributo BITMAP DWMWA \_ HAS VOCÊ TEM O \_ \_ BITMAP**](/windows/desktop/api/Dwmapi/ne-dwmapi-dwmwindowattribute) é definido na janela.
+-   Uma representação de reação é a única que existe para essa janela.
 
-A janela que recebe essa mensagem deve responder gerando um bitmap de escala completa. Em seguida, a janela chama a função [**DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) para definir a visualização dinâmica. Se a janela não definir um bitmap em um determinado período de tempo, o DWM usará sua própria representação icônico padrão para a janela.
+A janela que recebe essa mensagem deve responder gerando um bitmap de escala completa. Em seguida, a janela chama a [**função DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) para definir a visualização ao vivo. Se a janela não definir um bitmap em um determinado período de tempo, a DWM usará sua própria representação padrão de desapresentação para a janela.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra uma resposta à **mensagem \_ DWMSENDICONICLIVEPREVIEWBITMAP do WM** . O exemplo chama a função [**DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) com um identificador para um bitmap personalizado independente de dispositivo a ser usado como a representação da janela.
+O exemplo a seguir demonstra uma resposta à mensagem **WM \_ DWMSENDICONICLIVEPREVIEWBITMAP.** O exemplo chama a [**função DwmSetIconicLivePreviewBitmap**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmseticoniclivepreviewbitmap) com um handle para um bitmap personalizado e independente do dispositivo a ser usado como representação da janela.
 
 
 ```C++
@@ -88,7 +88,7 @@ O exemplo a seguir demonstra uma resposta à **mensagem \_ DWMSENDICONICLIVEPREV
 
 
 
-Para obter o código completo, consulte a amostra [personalizar uma miniatura do icônico e um bitmap de visualização dinâmica](dwm-sample-customizethumbnail.md) .
+Para ver o código completo, consulte o exemplo Personalizar [uma miniatura de miniatura e um bitmap](dwm-sample-customizethumbnail.md) de visualização ao vivo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,9 +96,9 @@ Para obter o código completo, consulte a amostra [personalizar uma miniatura do
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                             |
-| parâmetro<br/>                   | <dl> <dt>Dwmapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                             |
+| Cabeçalho<br/>                   | <dl> <dt>Dwmapi.h</dt> </dl> |
 
 
 
@@ -106,7 +106,7 @@ Para obter o código completo, consulte a amostra [personalizar uma miniatura do
 
 <dl> <dt>
 
-[**DWMSENDICONICTHUMBNAIL do WM \_**](wm-dwmsendiconicthumbnail.md)
+[**WM \_ DWMSENDICONICTHUMBNAIL**](wm-dwmsendiconicthumbnail.md)
 </dt> <dt>
 
 [**DwmInvalidateIconicBitmaps**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwminvalidateiconicbitmaps)

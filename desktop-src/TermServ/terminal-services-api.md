@@ -5,12 +5,12 @@ ms.assetid: 4bd10a15-78d6-4754-9e17-f2576ee8b9d0
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a5aa187378625242463ea91151a6961b08d2a77
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fbdaff1f09a0de3fad20f4de334af1030c52e16ef795b1ece51cdaead639825a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000106"
 ---
 # <a name="remote-desktop-services-api"></a>API de Serviços de Área de Trabalho Remota
 
@@ -25,9 +25,9 @@ A API Serviços de Área de Trabalho Remota permite que os aplicativos executem 
 -   Usar [serviços de área de trabalho remota canais virtuais](terminal-services-virtual-channels.md) para se comunicar entre módulos de cliente e de servidor de um aplicativo.
 -   [Definir e recuperar serviços de área de trabalho remota informações específicas de configuração do usuário](terminal-services-user-configuration.md).
 
- 
+ 
 
- 
+ 
 
 
 

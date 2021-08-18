@@ -1,7 +1,7 @@
 ---
 description: Obtém uma descrição de passagem.
 ms.assetid: 44c65a82-bcf4-49f5-9312-8320e133bb2f
-title: Método ID3DXBaseEffect::GetPassDesc (D3DX9Effect.h)
+title: 'Método ID3DXBaseEffect:: GetPassDesc (D3DX9Effect. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118987746"
 ---
-# <a name="id3dxbaseeffectgetpassdesc-method"></a>Método ID3DXBaseEffect::GetPassDesc
+# <a name="id3dxbaseeffectgetpassdesc-method"></a>Método ID3DXBaseEffect:: GetPassDesc
 
 Obtém uma descrição de passagem.
 
@@ -41,21 +41,21 @@ HRESULT GetPassDesc(
 
 <dl> <dt>
 
-*hPass* \[ Em\]
+*hPass* \[ no\]
 </dt> <dd>
 
 Tipo: **[D3DXHANDLE](dx9-graphics-reference-effects-constants.md)**
 
-Passar a alça. Consulte [Handles (Direct3D 9)](handles.md).
+Ponteiro de passagem. Consulte [Handles (Direct3D 9)](handles.md).
 
 </dd> <dt>
 
-*pDesc* \[ out\]
+*pDesc* \[ fora\]
 </dt> <dd>
 
-Tipo: **[ **D3DXPASS \_ DESC**](d3dxpass-desc.md)\***
+Tipo: **[ **D3DXPASS \_ desc**](d3dxpass-desc.md)\***
 
-Retorna uma descrição da passagem especificada. Consulte [**D3DXPASS \_ DESC**](d3dxpass-desc.md).
+Retorna uma descrição da passagem especificada. Consulte [**D3DXPASS \_ desc**](d3dxpass-desc.md).
 
 </dd> </dl>
 
@@ -63,12 +63,12 @@ Retorna uma descrição da passagem especificada. Consulte [**D3DXPASS \_ DESC**
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Se um efeito for criado com [D3DXFX \_ NOT \_ CLONEABLE,](d3dxfx.md)esse método retornará ponteiros **NULL** (em [**D3DXPASS \_ DESC**](d3dxpass-desc.md)) para as funções de sombreador.
+> Se um efeito for criado com [D3DXFX \_ não \_ clonável](d3dxfx.md), esse método retornará ponteiros **nulos** (em [**D3DXPASS \_ desc**](d3dxpass-desc.md)) para as funções de sombreador.
 
  
 
@@ -78,8 +78,8 @@ Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: MCN_SELECT código de notificação (commctrl. h)
-description: Enviado por um controle de calendário mensal quando o usuário faz uma seleção de data explícita dentro de um controle de calendário mensal. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: MCN_SELECT de notificação (Commctrl.h)
+description: Enviado por um controle de calendário de mês quando o usuário faz uma seleção de data explícita dentro de um controle de calendário de mês. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 3cabb4b2-9422-4190-85d3-ab6593891e3d
 keywords:
-- MCN_SELECT de código de notificação controles do Windows
+- MCN_SELECT de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9252133267b9c552542df17ed73caa8c34a69641
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e71674ebccd9a896a92f701e65c7767866b64edac25208248f4683792b5261c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018964"
 ---
-# <a name="mcn_select-notification-code"></a>MCN \_ selecionar código de notificação
+# <a name="mcn_select-notification-code"></a>Código de \_ notificação MCN SELECT
 
-Enviado por um controle de calendário mensal quando o usuário faz uma seleção de data explícita dentro de um controle de calendário mensal. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Enviado por um controle de calendário de mês quando o usuário faz uma seleção de data explícita dentro de um controle de calendário de mês. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,17 +41,17 @@ MCN_SELECT
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMSELCHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmselchange) que contém informações sobre o intervalo de datas selecionado no momento.
+Ponteiro para uma [**estrutura NMSELCHANGE**](/windows/win32/api/commctrl/ns-commctrl-nmselchange) que contém informações sobre o intervalo de datas selecionado no momento.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-O código de notificação **MCN \_ Select** é semelhante a [**MCN \_ SELCHANGE**](mcn-selchange.md), mas **MCN \_ Select** é enviada somente em resposta às seleções de data explícitas de um usuário. **MCN \_ SELCHANGE** aplica-se a qualquer alteração de seleção.
+O código de notificação **MCN \_ SELECT** é semelhante ao [**MCN \_ SELCHANGE**](mcn-selchange.md), mas **MCN \_ SELECT** é enviado somente em resposta às seleções de data explícitas de um usuário. **MCN \_ SELCHANGE** se aplica a qualquer alteração de seleção.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ O código de notificação **MCN \_ Select** é semelhante a [**MCN \_ SELCHANGE
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

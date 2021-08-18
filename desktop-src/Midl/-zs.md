@@ -1,9 +1,9 @@
 ---
-title: Comutador/ZS
-description: A opção/Zs indica que o compilador verifica apenas a sintaxe e não gera arquivos de saída.
+title: Opção /Zs
+description: A opção /Zs indica que o compilador verifica apenas a sintaxe e não gera arquivos de saída.
 ms.assetid: 5ff44607-12c3-4a2d-8a7f-2056504990e2
 keywords:
-- MIDL do comutador/ZS
+- /Zs switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,51 +12,51 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 469802434d54319aa55c1e409ccb8d64e942836f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: f92bd2321567bbc565d3198fe5ebf5c98a3d8df440ea967409830c8e73488609
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014014"
 ---
-# <a name="zs-switch"></a>Comutador/ZS
+# <a name="zs-switch"></a>Opção /Zs
 
-A opção **/ZS** indica que o compilador verifica apenas a sintaxe e não gera arquivos de saída.
+A **opção /Zs** indica que o compilador verifica apenas a sintaxe e não gera arquivos de saída.
 
 ``` syntax
 midl /Zs
 midl /syntax_check
 ```
 
-## <a name="switch-options"></a>Opções de comutação
+## <a name="switch-options"></a>Opções de opção
 
 Essa opção não tem parâmetros.
 
 ## <a name="remarks"></a>Comentários
 
-Essa opção substitui todas as outras opções que especificam informações sobre os arquivos de saída.
+Essa opção substitui todas as outras opções que especificam informações sobre arquivos de saída.
 
-Você também pode especificar o modo de verificação de sintaxe com a [**\_ verificação/Syntax**](-syntax-check.md)do compilador MIDL.
+Você também pode especificar o modo de verificação de sintaxe com a opção do compilador MIDL [**/verificação de \_ sintaxe**](-syntax-check.md).
 
 ## <a name="examples"></a>Exemplos
 
-**MIDL/ZS filename. idl**
+**midl /Zs filename.idl**
 
-**MIDL/Syntax \_ verificar filename. idl**
+**midl /syntax \_ check filename.idl**
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
+[Sintaxe geral da linha de comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[**verificação de/Syntax \_**](-syntax-check.md)
+[**/sintaxe \_ check**](-syntax-check.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

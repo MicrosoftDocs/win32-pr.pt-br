@@ -7,12 +7,12 @@ keywords:
 - Armazenamento de reserva HTTP, acessando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a138a0a2385e6338877e5e8623527a64a6eca796
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 14f9244fd4513517793bf85d205308fc49ac2d8ca0a246c17a68c730d1c76168
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015014"
 ---
 # <a name="accessing-the-reservation-store"></a>Acessando o armazenamento de reserva
 
@@ -22,9 +22,9 @@ Para adicionar uma reserva ao repositório de reserva persistente, o aplicativo 
 
 A API do servidor HTTP também fornece funções para consultar e excluir as configurações de serviço para namespaces de URL. A função [**HttpQueryServiceConfiguration**](/windows/desktop/api/Http/nf-http-httpqueryserviceconfiguration) chamada com o parâmetro de ID de configuração definido como as consultas de valor de **HttpServiceConfigUrlAclInfo** e a função [**HttpDeleteServiceConfiguration**](/windows/desktop/api/Http/nf-http-httpdeleteserviceconfiguration) exclui no repositório de namespace de URL.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,26 +1,26 @@
 ---
-description: Espaço mundial para Page-Space transformações
+description: Espaço do mundo para Page-Space transformações
 ms.assetid: 5563bc5f-8150-4ec7-a60c-d46ee6bf35cd
-title: Espaço mundial para Page-Space transformações
+title: Espaço do mundo para Page-Space transformações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea851e7f498847bb9c4deb91ebb0a79de1196eb1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 854ba7c666e6aadc1e471ee431e9cfc84650fd22852a1b802daa52f43873bfb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119727286"
 ---
-# <a name="world-space-to-page-space-transformations"></a>Espaço mundial para Page-Space transformações
+# <a name="world-space-to-page-space-transformations"></a>Espaço do mundo para Page-Space transformações
 
-O espaço mundial para transformações de espaço em página dá suporte à conversão e ao dimensionamento. Além disso, eles dão suporte a recursos de rotação, distorção e reflexo. As seções a seguir descrevem essas transformações, ilustram seus efeitos e fornecem os algoritmos usados para obtê-las.
+As transformações de espaço do mundo para o espaço de página são suportadas pela tradução e pelo dimensionamento. Além disso, eles suportam recursos de rotação, csa e reflexão. As seções a seguir descrevem essas transformações, ilustram seus efeitos e fornecem os algoritmos usados para elas.
 
 -   [Tradução](translation.md)
 -   [Dimensionamento](scaling.md)
 -   [Rotação](rotation.md)
--   [Quantidade](shear.md)
+-   [Cisalhamento](shear.md)
 -   [Reflexão](reflection.md)
--   [Transformações de espaço de mundo para página combinadas](combined-world-to-page-space-transformations.md)
+-   [Transformações de espaço mundo a página combinadas](combined-world-to-page-space-transformations.md)
 
  
 

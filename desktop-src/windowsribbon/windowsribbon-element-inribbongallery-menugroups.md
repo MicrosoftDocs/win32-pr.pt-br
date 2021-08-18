@@ -1,9 +1,9 @@
 ---
-title: Propriedade InRibbonGallery. MenuGroups
-description: Representa um contêiner para o conjunto de itens de menu suspenso de um controle da Galeria de In-Ribbon.
+title: Propriedade InRibbonGallery.MenuGroups
+description: Representa um contêiner para o conjunto de itens de menu suspenso de um controle In-Ribbon Gallery.
 ms.assetid: 6b9ded25-4e8e-4e30-a349-f7c091dbfe7a
 keywords:
-- Faixa de InRibbonGallery de propriedades do Windows. MenuGroups
+- Propriedade InRibbonGallery.MenuGroups Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd447b66dada74b1a9b909b3030e080198143b12
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1722c8963b57256cf74f5911c8273539e10b5c6a6fef96dcfa1f0fec591bca04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009428"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119710476"
 ---
-# <a name="inribbongallerymenugroups-property"></a>Propriedade InRibbonGallery. MenuGroups
+# <a name="inribbongallerymenugroups-property"></a>Propriedade InRibbonGallery.MenuGroups
 
-Representa um contêiner para o conjunto de itens de menu suspenso de um controle [da Galeria de faixas](windowsribbon-controls-inribbongallery.md) de uma.
+Representa um contêiner para o conjunto de itens de menu suspenso de um [controle na Galeria](windowsribbon-controls-inribbongallery.md) na Faixa de Opções.
 
 ## <a name="usage"></a>Uso
 
@@ -41,7 +41,7 @@ Não há atributos.
 
 | Elemento                                                         | Descrição                                     |
 |-----------------------------------------------------------------|-------------------------------------------------|
-| [**Grupo Backstage**](windowsribbon-element-menugroup.md)<br/> | Deve ocorrer pelo menos uma vez<br/> <br/> |
+| [**Menugroup**](windowsribbon-element-menugroup.md)<br/> | Deve ocorrer pelo menos uma vez<br/> <br/> |
 
 
 
@@ -59,13 +59,13 @@ Não há atributos.
 
 Opcional.
 
-Pode ocorrer no máximo uma vez para cada elemento [**InRibbonGallery**](windowsribbon-element-inribbongallery.md) .
+Pode ocorrer no máximo uma vez para cada [**elemento InRibbonGallery.**](windowsribbon-element-inribbongallery.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir demonstra a marcação básica para um controle [da galeria na faixa de](windowsribbon-controls-inribbongallery.md) opções.
+O exemplo a seguir demonstra a marcação básica para um controle na Galeria na Faixa [de Opções.](windowsribbon-controls-inribbongallery.md)
 
-Esta seção de código mostra a declaração de controle **InRibbonGallery. MenuGroups** .
+Esta seção de código mostra a **declaração de controle InRibbonGallery.MenuGroups.**
 
 
 ```XML
@@ -102,8 +102,8 @@ Esta seção de código mostra a declaração de controle **InRibbonGallery. Men
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/> |
 
 
 
@@ -111,13 +111,13 @@ Esta seção de código mostra a declaração de controle **InRibbonGallery. Men
 
 <dl> <dt>
 
-[Controle da Galeria de faixa de bits](windowsribbon-controls-inribbongallery.md)
+[Controle na Galeria na Faixa de Opções](windowsribbon-controls-inribbongallery.md)
 </dt> <dt>
 
 [Trabalhando com galerias](ribbon-controls-galleries.md)
 </dt> <dt>
 
-[Personalizando uma faixa de guia por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
+[Personalização de uma faixa de opções por meio de definições de tamanho e políticas de dimensionamento](windowsribbon-templates.md)
 </dt> </dl>
 
  

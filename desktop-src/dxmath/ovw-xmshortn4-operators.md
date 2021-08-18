@@ -13,7 +13,7 @@ ms.locfileid: "118984876"
 ---
 # <a name="xmshortn4-operators"></a>Operadores XMSHORTN4
 
-A [**estrutura XMSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn4) expõe os operadores a seguir.
+A estrutura [**XMSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmshortn4) expõe os operadores a seguir.
 
 > [!Note]  
 > Os operadores listados aqui só estão disponíveis em C++.
@@ -26,7 +26,7 @@ A [**estrutura XMSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxp
 
 | Métodos                                                | Descrição                                                                                                            |
 |--------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [**operator =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmshortn4-operator-assign)<br/> | Atribui os dados do componente de vetor de uma instância `XMSHORTN4` do à instância atual do `XMSHORTN4` . <br/> |
+| [**operador =**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmshortn4-operator-assign)<br/> | Atribui os dados do componente de vetor de uma instância do `XMSHORTN4` à instância atual do `XMSHORTN4` . <br/> |
 
 
 

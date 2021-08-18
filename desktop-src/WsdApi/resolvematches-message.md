@@ -4,18 +4,18 @@ ms.assetid: 0eaa4348-968e-4b45-9509-8b15476edaa1
 title: Mensagem ResolveMatches
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40ab5c0d66541b93eeee13966d686c94eef9364d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1daffe985f3956e57ad69fd7c4fc4d199f0b24bd5fdab5677b7ef83765e5fcdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119756796"
 ---
 # <a name="resolvematches-message"></a>Mensagem ResolveMatches
 
 Uma mensagem ResolveMatches é uma mensagem WS-Discovery enviada em resposta a uma mensagem de [resolução](resolve-message.md) de um cliente por um serviço correspondente. Para obter mais informações sobre mensagens ResolveMatches, consulte a seção 6,2 da [especificação do WS-Discovery](https://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf).
 
-Uma mensagem ResolveMatches é enviada por UDP unicast para a porta 3702 (a porta da qual a mensagem de [resolução](resolve-message.md) do cliente foi enviada). ResolveMatches deve ser enviado dentro de 4 segundos da mensagem de resolução; caso contrário, o Firewall do Windows pode descartar o pacote.
+Uma mensagem ResolveMatches é enviada por UDP unicast para a porta 3702 (a porta da qual a mensagem de [resolução](resolve-message.md) do cliente foi enviada). ResolveMatches deve ser enviado dentro de 4 segundos da mensagem de resolução; caso contrário, Windows Firewall pode descartar o pacote.
 
 Qualquer aplicativo DPWS que envie mensagens de [resolução](resolve-message.md) receberá mensagens ResolveMatches.
 
@@ -135,7 +135,7 @@ Uma mensagem ResolveMatches tem os seguintes pontos de foco.
 
 <dl> <dt>
 
-[Descoberta e mensagens de troca de metadados](discovery-and-metadata-exchange-message-patterns.md)
+[descoberta e metadados Exchange mensagens](discovery-and-metadata-exchange-message-patterns.md)
 </dt> <dt>
 
 [Resolver mensagem](resolve-message.md)

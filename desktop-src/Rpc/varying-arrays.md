@@ -4,12 +4,12 @@ description: No MIDL, matrizes variadas são fixas em tamanho. Eles permitem que
 ms.assetid: 31c4bc63-de55-4937-832e-8dde9bcc47b9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4b2d79ee37f3e366bbf232b362306f78ca6ada4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3919eed28ef7a9c888d7c23e4ebe12a1db39c97b18fa325c6daf8a4cd62d6554
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010544"
 ---
 # <a name="varying-arrays"></a>Matrizes variáveis
 
@@ -66,6 +66,6 @@ MyRemoteProc(
 
 Esse fragmento chama o procedimento remoto MyRemoteProc duas vezes. Na primeira invocação, ele passa os elementos de matriz numerados 20 a 119, conforme indicado pelos valores nas variáveis firstArrayElementNumber e totalElementsPassed. Na segunda chamada, o cliente passa os elementos de matriz numerados de 120 a 319.
 
- 
+ 
 
- 
+ 

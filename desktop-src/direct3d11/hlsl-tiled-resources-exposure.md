@@ -1,23 +1,23 @@
 ---
-title: Exposição dos recursos do lado do HLSL
-description: A nova sintaxe de HLSL (linguagem de sombreamento de alto nível) da Microsoft é necessária para dar suporte a recursos de lado do sombreado no modelo de Shader
+title: Exposição de recursos lado a lado HLSL
+description: A nova sintaxe HLSL (Microsoft High Level Shader Language) é necessária para dar suporte a recursos lado a lado no Modelo de Sombreador 5.
 ms.assetid: B6CE51E6-1BA9-4D15-9654-86FE9BAAF585
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2b266b98045b38645e1e8d24ed0014a5f448a38
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c66ded502bebefc1061028115a12026f67c26cad89ddc57f98a5ae6fee923591
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119633326"
 ---
-# <a name="hlsl-tiled-resources-exposure"></a>Exposição dos recursos do lado do HLSL
+# <a name="hlsl-tiled-resources-exposure"></a>Exposição de recursos lado a lado HLSL
 
-A nova sintaxe de HLSL (linguagem de sombreamento de alto nível) da Microsoft é necessária para dar suporte a recursos de lado do [sombreado no modelo de Shader](/windows/desktop/direct3dhlsl/d3d11-graphics-reference-sm5)
+Nova sintaxe HLSL (Microsoft High Level Shader Language) é necessária para dar suporte a recursos lado a lado no [Modelo de Sombreador 5](/windows/desktop/direct3dhlsl/d3d11-graphics-reference-sm5).
 
-A nova sintaxe HLSL é permitida somente em dispositivos com suporte a recursos de lado. Cada método HLSL relevante para os recursos ao lado do quadro na tabela a seguir aceita um (feedback) ou dois (fixe e comentários nesta ordem) parâmetros opcionais adicionais. Por exemplo, um método de **Amostra** é:
+A nova sintaxe HLSL é permitida somente em dispositivos com suporte a recursos lado a lado. Cada método HLSL relevante para recursos lado a lado na tabela a seguir aceita um (comentários) ou dois parâmetros opcionais adicionais (fixação e comentários nessa ordem). Por exemplo, um método de **Amostra** é:
 
-**Exemplo (amostra, local \[ , deslocamento \[ , fixe \[ , comentários \] \] \] )**
+**Sample(sampler, location \[ , offset \[ , fixe , feedback \[ \] \] \] )**
 
 Um exemplo de um método de **Amostra** é [**Texture2D.Sample(S,float,int,float,uint)**](/windows/desktop/direct3dhlsl/t2darray-sample-s-float-int-float-uint-).
 
@@ -33,21 +33,21 @@ Veja aqui a sintaxe de [**CheckAccessFullyMapped**](/windows/desktop/direct3dhls
 
 [**CheckAccessFullyMapped**](/windows/desktop/direct3dhlsl/checkaccessfullymapped) interpreta o valor de *FeedbackVar* e retorna true se todos os dados que estão sendo acessados foram mapeados no recurso; caso contrário, **CheckAccessFullyMapped** retorna false.
 
-Se o parâmetro de feedback ou vinculação estiver presente, o compilador emite uma variante de instrução básica. Por exemplo, um exemplo de um recurso de lado-a-botão gera a `sample_cl_s` instrução. Se nem a vinculação nem o feedback forem especificados, o compilador emite a instrução básica, para que não haja nenhuma alteração do comportamento atual. O valor de vinculação de 0.0f indica que nenhuma vinculação é realizada; dessa forma, o compilador de driver adicional pode continuar adaptando a instrução para o hardware de destino. Se o feedback for um registro NULL em uma instrução, o feedback não é utilizado; dessa forma, o compilador de driver pode continuar adaptando a instrução para a arquitetura de destino.
+Se o parâmetro de feedback ou vinculação estiver presente, o compilador emite uma variante de instrução básica. Por exemplo, o exemplo de um recurso lado a lado gera a `sample_cl_s` instrução . Se nem a vinculação nem o feedback forem especificados, o compilador emite a instrução básica, para que não haja nenhuma alteração do comportamento atual. O valor de vinculação de 0.0f indica que nenhuma vinculação é realizada; dessa forma, o compilador de driver adicional pode continuar adaptando a instrução para o hardware de destino. Se o feedback for um registro NULL em uma instrução, o feedback não é utilizado; dessa forma, o compilador de driver pode continuar adaptando a instrução para a arquitetura de destino.
 
 Se o compilador HLSL infere que vinculação é 0.0f e feedback não é utilizado, o compilador emite a instrução básica correspondente (por exemplo, `sample` em vez de `sample_cl_s`).
 
-Se um acesso a recursos de lado ladrilho consistir em várias instruções de código de byte constituintes, por exemplo, para recursos estruturados, o compilador agregará valores de Comentários individuais por meio da operação ou para produzir o valor de comentários final. Portanto, você pode ver um único valor de feedback para tal acesso complexo.
+Se um acesso a recursos lado a lado consiste em várias instruções de código de byte constituintes, por exemplo, para recursos estruturados, o compilador agrega valores de comentários individuais por meio da operação OR para produzir o valor de comentários final. Portanto, você pode ver um único valor de feedback para tal acesso complexo.
 
-Esta é a tabela resumida dos métodos HLSL que são alterados para dar suporte a feedback e/ou vinculação. Tudo isso funciona em recursos ao lado e fora do lado da região de todas as dimensões. Os recursos sem ladrilhos sempre parecem estar totalmente mapeados.
+Esta é a tabela resumida dos métodos HLSL que são alterados para dar suporte a feedback e/ou vinculação. Todos eles funcionam em recursos lado a lado e não lado a lado de todas as dimensões. Recursos não lado a lado sempre parecem estar totalmente mapeados.
 
 
 
-| [Objetos HLSL](/windows/desktop/direct3dhlsl/d3d11-graphics-reference-sm5-objects)                                                                                                                                                                                                                                | Os métodos intrínsecos com a opção de comentários ( \* ) – também tem a opção fixe                                                                                                                                                                  |
+| [Objetos HLSL](/windows/desktop/direct3dhlsl/d3d11-graphics-reference-sm5-objects)                                                                                                                                                                                                                                | Métodos intrínsecos com a opção de comentários ( \* ) – também tem a opção de fixação                                                                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \[\]TEXTURE2D RW<br/> \[\]TEXTURE2DARRAY RW<br/> TextureCUBE<br/> TextureCUBEArray<br/>                                                                                                                                                                                    | Coletar<br/> GatherRed<br/> GatherGreen<br/> GatherBlue<br/> GatherAlpha<br/> GatherCmp<br/> GatherCmpRed<br/> GatherCmpGreen<br/> GatherCmpBlue<br/> GatherCmpAlpha<br/> |
-| \[\]TEXTURE1D RW<br/> \[\]TEXTURE1DARRAY RW<br/> \[\]TEXTURE2D RW<br/> \[\]TEXTURE2DARRAY RW<br/> \[\]TEXTURE3D RW<br/> TextureCUBE<br/> TextureCUBEArray<br/>                                                                                              | Nova\*<br/> SampleBias\*<br/> SampleCmp\*<br/> SampleCmpLevelZero<br/> SampleGrad\*<br/> SampleLevel<br/>                                                                                      |
-| \[\]TEXTURE1D RW<br/> \[\]TEXTURE1DARRAY RW<br/> \[\]TEXTURE2D RW<br/> Texture2DMS<br/> \[\]TEXTURE2DARRAY RW<br/> Texture2DArrayMS<br/> \[\]TEXTURE3D RW<br/> \[Buffer de RW \]<br/> \[\]BYTEADDRESSBUFFER RW<br/> \[\]STRUCTUREDBUFFER RW<br/> | Carregamento                                                                                                                                                                                                                                 |
+| \[Textura de \] RW2D<br/> \[RW \] Texture2DArray<br/> TextureCUBE<br/> TextureCUBEArray<br/>                                                                                                                                                                                    | Coletar<br/> GatherRed<br/> GatherGreen<br/> GatherBlue<br/> GatherAlpha<br/> GatherCmp<br/> GatherCmpRed<br/> GatherCmpGreen<br/> GatherCmpBlue<br/> GatherCmpAlpha<br/> |
+| \[RW \] Texture1D<br/> \[RW \] Texture1DArray<br/> \[Textura de \] RW2D<br/> \[RW \] Texture2DArray<br/> \[Textura \] RW3D<br/> TextureCUBE<br/> TextureCUBEArray<br/>                                                                                              | Amostra\*<br/> SampleBias\*<br/> SampleCmp\*<br/> SampleCmpLevelZero<br/> SampleGrad\*<br/> SampleLevel<br/>                                                                                      |
+| \[RW \] Texture1D<br/> \[RW \] Texture1DArray<br/> \[Textura de \] RW2D<br/> Texture2DMS<br/> \[RW \] Texture2DArray<br/> Texture2DArrayMS<br/> \[Textura \] RW3D<br/> \[RW \] Buffer<br/> \[ByteAddressBuffer do RW \]<br/> \[RW \] StructuredBuffer<br/> | Carregar                                                                                                                                                                                                                                 |
 
 
 
@@ -57,7 +57,7 @@ Esta é a tabela resumida dos métodos HLSL que são alterados para dar suporte 
 
 <dl> <dt>
 
-[Acesso ao pipeline para recursos lado a lado](pipeline-access-to-tiled-resources.md)
+[Acesso de pipeline a recursos lado a lado](pipeline-access-to-tiled-resources.md)
 </dt> </dl>
 
  

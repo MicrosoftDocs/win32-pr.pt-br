@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_SCROLL (commctrl. h)
-description: Rola o conteúdo de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a macro de \_ rolagem de ListView.
+title: LVM_SCROLL mensagem (Commctrl.h)
+description: Rola o conteúdo de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a macro Rolagem de \_ ListView.
 ms.assetid: 4bf6b74e-8fea-48ca-a151-8fd649fc50f8
 keywords:
-- Controles de LVM_SCROLL de mensagens do Windows
+- LVM_SCROLL controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c05c3ed991cfc933a4436baf332b49c67a907b11
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 604ef35b6d7e62e626aa7cbee32c1563224794781275c470a1b3cd1727b926bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019224"
 ---
-# <a name="lvm_scroll-message"></a>\_Mensagem de rolagem LVM
+# <a name="lvm_scroll-message"></a>Mensagem LVM \_ SCROLL
 
-Rola o conteúdo de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a macro [**de \_ rolagem de ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_scroll) .
+Rola o conteúdo de um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a macro [**Rolagem de \_ ListView.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_scroll)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,24 +32,24 @@ Rola o conteúdo de um controle de exibição de lista. Você pode enviar essa m
 *wParam* 
 </dt> <dd>
 
-Valor do tipo **int** que especifica a quantidade de rolagem horizontal, em pixels, relativa à posição atual do conteúdo da exibição de lista. Se o controle de exibição de lista estiver no modo de exibição de lista, esse valor será arredondado para o número mais próximo de pixels que formam uma coluna inteira.
+Valor do tipo **int** que especifica a quantidade de rolagem horizontal, em pixels, em relação à posição atual do conteúdo da exibição de lista. Se o controle de exibição de lista estiver na exibição de lista, esse valor será arredondado para cima até o número mais próximo de pixels que formam uma coluna inteira.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Valor do tipo **int** que especifica a quantidade de rolagem vertical, em pixels, relativa à posição atual do conteúdo da exibição de lista.
+Valor do tipo **int** que especifica a quantidade de rolagem vertical, em pixels, em relação à posição atual do conteúdo da exibição de lista.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se for bem-sucedido; caso contrário, **false**.
+Retornará **TRUE** se for bem-sucedido; caso contrário, **FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Quando o controle de exibição de lista está no modo de exibição de relatório, o controle só pode ser rolado verticalmente em incrementos de linha inteira. Portanto, o parâmetro *lParam* será arredondado para o número mais próximo de pixels que formam um incremento de linha inteiro. Por exemplo, se a altura de uma linha for de 16 pixels e 8 for passada para *lParam*, a lista será rolada por 16 pixels (1 linha). Se 7 for passado para *lParam*, a lista será rolada em 0 pixels (0 linhas).
+Quando o controle de exibição de lista está na exibição de relatório, o controle só pode ser rolado verticalmente em incrementos de linha inteira. Portanto, o *parâmetro lParam* será arredondado para o número mais próximo de pixels que formam um incremento de linha inteira. Por exemplo, se a altura de uma linha for de 16 pixels e 8 for passada para *lParam*, a lista será rolada por 16 pixels (1 linha). Se 7 for passado para *lParam*, a lista será rolada 0 pixels (0 linhas).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Quando o controle de exibição de lista está no modo de exibição de relatór
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

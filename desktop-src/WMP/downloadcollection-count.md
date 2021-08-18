@@ -1,9 +1,9 @@
 ---
-title: DownloadCollection.count
-description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. A propriedade count recupera o número de downloads pendentes na coleção.
+title: Baixar. Count
+description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. A propriedade Count recupera o número de downloads pendentes na coleção.
 ms.assetid: 8f9245aa-6d92-4dd3-9b45-97ee37de680d
 keywords:
-- DownloadCollection.count Windows Media Player
+- Windows Media Player de downloadcollection. contagem
 topic_type:
 - apiref
 api_name:
@@ -21,14 +21,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118997086"
 ---
-# <a name="downloadcollectioncount"></a>DownloadCollection.count
+# <a name="downloadcollectioncount"></a>Baixar. Count
 
 > [!Note]  
 > Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
  
 
-A **propriedade** count recupera o número de downloads pendentes na coleção.
+A propriedade **Count** recupera o número de downloads pendentes na coleção.
 
 ## <a name="syntax"></a>Syntax
 
@@ -41,7 +41,7 @@ DownloadManager.getDownloadCollection(
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um Número somente **leitura** (**long**).
+Essa propriedade é um **número** somente leitura (**Long**).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ Essa propriedade é um Número somente **leitura** (**long**).
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player série 9 ou posterior<br/>                                  |
+| Versão<br/> | Windows Media Player 9 Series ou posterior<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -58,7 +58,7 @@ Essa propriedade é um Número somente **leitura** (**long**).
 
 <dl> <dt>
 
-[**Objeto DownloadCollection**](downloadcollection-object.md)
+[**Objeto downloadcollection**](downloadcollection-object.md)
 </dt> </dl>
 
  

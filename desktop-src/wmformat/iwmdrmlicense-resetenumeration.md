@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicense ResetEnumeration (wmdrmsdk. h)
-description: O método ResetEnumeration redefine a lista de licenças para seu estado original. A licença ativa torna-se a primeira licença da lista.
+title: Método ResetEnumeration de IWMDRMLicense (Wmdrmsdk.h)
+description: O método ResetEnumeration redefine a lista de licenças para seu estado original. A licença ativa se torna a primeira licença na lista.
 ms.assetid: cb5a31a8-ee25-44d6-81ca-746c379cb99e
 keywords:
-- Formato de mídia do Windows do método ResetEnumeration
-- Método ResetEnumeration Windows Media Format, interface IWMDRMLicense
-- Formato de mídia do Windows de interface IWMDRMLicense, método ResetEnumeration
+- Formato de mídia do windows do método ResetEnumeration
+- Formato de mídia do método ResetEnumeration, interface IWMDRMLicense
+- Formato de mídia da interface IWMDRMLicense, método ResetEnumeration
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6510c05b4c974051d9902ed2d30d9cdf99956af
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0dda6de46a2ce96d1fec1abaaae56edcbc5b0d6a73e8ee13f038dba6b5577c23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027684"
 ---
-# <a name="iwmdrmlicenseresetenumeration-method"></a>Método IWMDRMLicense:: ResetEnumeration
+# <a name="iwmdrmlicenseresetenumeration-method"></a>Método IWMDRMLicense::ResetEnumeration
 
-O método **ResetEnumeration** redefine a lista de licenças para seu estado original. A licença ativa torna-se a primeira licença da lista.
+O **método ResetEnumeration** redefine a lista de licenças para seu estado original. A licença ativa se torna a primeira licença na lista.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,15 +41,15 @@ HRESULT ResetEnumeration();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                                                | Descrição                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**RIV do NS \_ E \_ DRM \_ \_ muito \_ pequeno**</dt> </dl> | Uma lista de revogação de conteúdo atualizada é necessária.<br/> |
+| <dl> <dt>**NS \_ E \_ DRM \_ RIV MUITO \_ \_ PEQUENO**</dt> </dl> | Uma lista de revogação de conteúdo atualizada é necessária.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | O método foi bem-sucedido.<br/>                         |
 
 
@@ -66,8 +66,8 @@ Nenhum.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Nenhum.
 
 <dl> <dt>
 
-[**Interface IWMDRMLicense**](iwmdrmlicense.md)
+[**IWMDRMLicense Interface**](iwmdrmlicense.md)
 </dt> </dl>
 
  

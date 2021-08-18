@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: propriedades EsentRecoveredWithErrorsException'
-title: Propriedades EsentRecoveredWithErrorsException
+description: 'Saiba mais sobre: Propriedades de EsentRecoveredWithErrorsException'
+title: Propriedades de EsentRecoveredWithErrorsException
 TOCTitle: EsentRecoveredWithErrorsException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentRecoveredWithErrorsException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentrecoveredwitherrorsexception_properties(v=EXCHG.10)
@@ -14,12 +14,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118982060"
 ---
-# <a name="esentrecoveredwitherrorsexception-properties"></a>Propriedades EsentRecoveredWithErrorsException
+# <a name="esentrecoveredwitherrorsexception-properties"></a>Propriedades de EsentRecoveredWithErrorsException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O [tipo EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-class.md) expõe os membros a seguir.
+O tipo [EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,11 +40,11 @@ O [tipo EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-c
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-class.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

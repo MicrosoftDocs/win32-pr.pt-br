@@ -1,7 +1,7 @@
 ---
-description: Ocorre quando a caneta está sendo movida no digitalizador.
+description: Ocorre quando a caneta está se movendo no digitalizador.
 ms.assetid: 67d55dbc-6119-45d9-8016-a2a59f5f04ea
-title: 'ITabletEventSink: método ackets de:P'
+title: Método ITabletEventSink::P ackets
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: fb671b0556cf121e28ae81c5dcfa804208e00006
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29b118771fb5217ed13c01ef9376ad9b426e1ecd74a4bf931d8412a0b47e913b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119712116"
 ---
-# <a name="itableteventsinkpackets-method"></a>ITabletEventSink: método ackets de:P
+# <a name="itableteventsinkpackets-method"></a>Método ITabletEventSink::P ackets
 
-Ocorre quando a caneta está sendo movida no digitalizador.
+Ocorre quando a caneta está se movendo no digitalizador.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,49 +45,49 @@ HRESULT Packets(
 
 <dl> <dt>
 
-*TCID* \[ no\]
+*tcid* \[ Em\]
 </dt> <dd>
 
-O identificador do Tablet.
+O identificador do tablet.
 
 </dd> <dt>
 
-*cPkts* \[ no\]
+*cPkts* \[ Em\]
 </dt> <dd>
 
 O número de pacotes.
 
 </dd> <dt>
 
-*cbPkts* \[ no\]
+*cbPkts* \[ Em\]
 </dt> <dd>
 
 O tamanho do buffer de pacote
 
 </dd> <dt>
 
-*pbPkts* \[ no\]
+*pbPkts* \[ Em\]
 </dt> <dd>
 
-O buffer de pacotes.
+O buffer de pacote.
 
 </dd> <dt>
 
-*pnSerialNumbers* \[ no\]
+*pnSerialNumbers* \[ Em\]
 </dt> <dd>
 
 A matriz de número de série.
 
 </dd> <dt>
 
-*CID* 
+*Cid* 
 </dt> <dd>
 
 O identificador da caneta.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -96,7 +96,7 @@ Esse método pode retornar um desses valores.
 | Código de retorno                                                                            | Descrição                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>   | Êxito.<br/>                       |
-| <dl> <dt>**E \_ falha**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
 
 
 
@@ -108,7 +108,7 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -118,7 +118,7 @@ Esse método pode retornar um desses valores.
 
 <dl> <dt>
 
-[**Interface ITabletEventSink**](itableteventsink.md)
+[**ITabletEventSink Interface**](itableteventsink.md)
 </dt> </dl>
 
  

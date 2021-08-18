@@ -1,26 +1,26 @@
 ---
-title: Atributo de clipe da VML
-description: Atributo de clipe da VML
+title: Atributo de clipe VML
+description: Atributo de clipe VML
 ms.assetid: 8839c10e-96dd-4419-9f02-80033a4633e9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2702355ea93d8e87d173ee4c23406b12557dce4a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 3cab4afdef2a10c9c6f6a0561dedf5b4df3538a97152cb53181452b8ac531bb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105763436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999286"
 ---
-# <a name="vml-clip-attribute"></a>Atributo de clipe da VML
+# <a name="vml-clip-attribute"></a>Atributo de clipe VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se o recorte está ativado. Leitura/gravação. **VgTriState**.
+Determina se o recorte está em. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,21 +28,21 @@ Determina se o recorte está ativado. Leitura/gravação. **VgTriState**.
 
 **Sintaxe de marca**
 
-<v: *elemento* clip = " *expression* " >
+<v: *elemento* clip=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . Clip = "*expressão*"
+*elemento* .clip="*expression*"
 
-*expressão* = de *elemento*. clip
+*expressão* = *elemento*.clip
 
 **Comentários**
 
-Se **clip** for **false**, a forma será dimensionada para caber no quadro. Se **for true**, qualquer parte da forma que estiver fora do quadro não será exibida.
+Se **Clip** for **False**, a forma será dimensionado para se ajustar ao quadro. Se **True**, todas as partes da forma que estão fora do quadro não serão exibidas.
 
-Observe que a [origem](origin-attribute--vmlframe--vml.md) e o [tamanho](size-attribute--vmlframe.md) não serão usados, a menos que o **clipe** seja **verdadeiro**.
+Observe que [a origem](origin-attribute--vmlframe--vml.md) [e o tamanho](size-attribute--vmlframe.md) não serão usados, a menos que Clip **seja** **True.**
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
@@ -59,6 +59,6 @@ A imagem definida no arquivo externo será recortada.
 
 
 
- 
+ 
 
- 
+ 

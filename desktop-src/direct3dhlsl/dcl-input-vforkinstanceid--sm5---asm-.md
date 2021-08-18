@@ -1,6 +1,6 @@
 ---
-title: dcl_input vForkInstanceID (SM5-ASM)
-description: Declare a ID da instância em uma fase de bifurcação do sombreador envoltória.
+title: dcl_input v ForkInstanceID (sm5 – asm)
+description: Declare a ID da instância em uma fase de bifurcação do sombreador de chassi.
 ms.assetid: AA73E8B6-C6D7-4483-B46E-C733341F552C
 ms.topic: reference
 ms.date: 05/31/2018
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118986756"
 ---
-# <a name="dcl_input-vforkinstanceid-sm5---asm"></a>\_vForkInstanceID de entrada DCL (SM5-ASM)
+# <a name="dcl_input-vforkinstanceid-sm5---asm"></a>dcl \_ input v ForkInstanceID (sm5 - asm)
 
-Declare a ID da instância em uma fase de bifurcação do sombreador envoltória.
+Declare a ID da instância em uma fase de bifurcação do sombreador de chassi.
 
 
 
-| \_vForkInstanceID de entrada DCL |
+| dcl \_ input v ForkInstanceID |
 |----------------------------|
 
 
@@ -28,7 +28,7 @@ Declare a ID da instância em uma fase de bifurcação do sombreador envoltória
 
 | Item                                                                                                                               | Descrição                        |
 |------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| <span id="vForkInstanceID"></span><span id="vforkinstanceid"></span><span id="VFORKINSTANCEID"></span>*vForkInstanceID*<br/> | \[na \] ID da instância.<br/> |
+| <span id="vForkInstanceID"></span><span id="vforkinstanceid"></span><span id="VFORKINSTANCEID"></span>*v ForkInstanceID*<br/> | \[na \] ID da instância.<br/> |
 
 
 
@@ -36,11 +36,11 @@ Declare a ID da instância em uma fase de bifurcação do sombreador envoltória
 
 ## <a name="remarks"></a>Comentários
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        | X    |        |          |       |         |
 
@@ -48,7 +48,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
 Essa instrução tem suporte nos seguintes modelos de sombreador:
 
@@ -57,7 +57,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | não        |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | não        |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -71,7 +71,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 
 <dl> <dt>
 
-[Assembly do Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly do modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

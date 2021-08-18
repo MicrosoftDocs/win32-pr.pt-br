@@ -1,6 +1,6 @@
 ---
-title: 'Buffer:: função GetDimensions'
-description: 'Obtém o comprimento do buffer. | Buffer:: função GetDimensions'
+title: Função Buffer::GetDimensions
+description: Obtém o comprimento do buffer. | Função Buffer::GetDimensions
 ms.assetid: 704890e8-43e4-4e72-b7e2-eeef331bef1c
 keywords:
 - Função GetDimensions HLSL
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118986096"
 ---
-# <a name="buffergetdimensions-function"></a>Buffer:: função GetDimensions
+# <a name="buffergetdimensions-function"></a>Função Buffer::GetDimensions
 
 Obtém o comprimento do buffer.
 
@@ -36,7 +36,7 @@ void GetDimensions(
 
 <dl> <dt>
 
-*esmaecer* \[\]
+*esmaecimento* \[\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -55,7 +55,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

@@ -4,16 +4,16 @@ ms.assetid: 79a29a55-e211-4921-ac78-a21ef8ef238f
 title: Enumerar provedores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63f12ba5ad17816ada25bcaffd169e89acca8868
-ms.sourcegitcommit: 3d9dce1bd6c84e2b51759e940aa95aa9b459cd20
+ms.openlocfilehash: a1b93bcecbd1713a2945ea97703a77ab33629987f989505dea9498d03b7cb17c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "104172522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755066"
 ---
 # <a name="enumerating-providers"></a>Enumerar provedores
 
-Para recuperar uma lista de provedores que instalaram suas classes de manifesto ou MOF no computador, chame a função [**TdhEnumerateProviders**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviders) .
+Para recuperar uma lista de provedores que instalaram suas classes de manifesto ou MOF no computador, chame a [**função TdhEnumerateProviders.**](/windows/desktop/api/Tdh/nf-tdh-tdhenumerateproviders)
 
 O exemplo a seguir mostra como enumerar provedores.
 

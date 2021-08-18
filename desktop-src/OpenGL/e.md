@@ -1,6 +1,6 @@
 ---
 title: E (OpenGL)
-description: Definições de termos OpenGL que começam com a letra E.
+description: Definições de termos openGL que começam com a letra E.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: de499edb-59f2-4488-bb49-17e44876f5c8
 keywords:
@@ -10,34 +10,34 @@ keywords:
 - coordenadas de olho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2537424ffa7726e2110d0a6724377f5b53416a13
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: badab97c395859d5561663038088718159f2d29e08522767f2fe8bc7496f345a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104294707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119625866"
 ---
 # <a name="e-opengl"></a>E (OpenGL)
 
-[A](a.md) [B](b.md) [C](c.md) [D](d.md) E [F](f.md) [G](g.md) [H](h.md) [i](i.md) [J K](jk.md) [L](l.md) [M](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) [U V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)
+[A](a.md) [B](b.md) [C](c.md) [D](d.md) E F [G](f.md) [](g.md) [H](h.md) [I](i.md) [J K](jk.md) L [M](l.md) [](m.md) [N](n.md) [O](o.md) [P](p.md) [Q](q.md) [R](r.md) [S](s.md) [T](t.md) U [V](u-v.md) [W](w.md) [X Y Z](x-y-z.md)
 
 <dl> <dt>
 
-<span id="opengl_element"></span><span id="OPENGL_ELEMENT"></span>**elementos**
+<span id="opengl_element"></span><span id="OPENGL_ELEMENT"></span>**Elemento**
 </dt> <dd>
 
 Um único componente ou índice.
 
 </dd> <dt>
 
-<span id="opengl_evaluation"></span><span id="OPENGL_EVALUATION"></span>**período**
+<span id="opengl_evaluation"></span><span id="OPENGL_EVALUATION"></span>**Avaliação**
 </dt> <dd>
 
-O processo OpenGL de gerar vértices de coordenadas de objeto e parâmetros de equações de Bézier especificadas anteriormente.
+O processo OpenGL de gerar vértices e parâmetros de coordenadas de objeto de equações bézier especificadas anteriormente.
 
 </dd> <dt>
 
-<span id="opengl_execute"></span><span id="OPENGL_EXECUTE"></span>**executados**
+<span id="opengl_execute"></span><span id="OPENGL_EXECUTE"></span>**Executar**
 </dt> <dd>
 
 Para chamar um comando OpenGL no modo imediato ou para chamar a lista de exibição da qual o comando faz parte.

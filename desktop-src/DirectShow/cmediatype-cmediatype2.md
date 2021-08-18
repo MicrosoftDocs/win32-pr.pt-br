@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a99717e41424a99b3c1e79674426fb14c5b57b9d
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: b1ebf3cec41c4180a4dcad4a5a7c273996f70bfdb6d052127ff71dd1b929238c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105759137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073990"
 ---
 # <a name="cmediatypecmediatype-constructor-mtypeh---majortype-parameter"></a>Construtor CMediaType. CMediaType (mtype. h)-parâmetro majortype
 
@@ -57,7 +57,7 @@ O construtor chama o método [**CMediaType:: InitMediaType**](cmediatype-initmed
 
 | Requisito                   | Valor                                                                                                                                                                                           |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro  | Mtype. h (incluir fluxos. h)                                                                                     |
+| parâmetro  | Mtype. h (incluir Fluxos. h)                                                                                     |
 | Biblioteca | Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
 
 ## <a name="see-also"></a>Confira também

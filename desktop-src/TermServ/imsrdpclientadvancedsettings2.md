@@ -4,8 +4,8 @@ description: Gerencia configurações avançadas do cliente. Deriva da interface
 ms.assetid: 78cffdf5-bd99-4140-80b6-aa8632894487
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2
-- Serviços de Área de Trabalho Remota da interface IMsRdpClientAdvancedSettings2, descrita
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 70d7f9ad9b93c0f3cd1d62fdbbaddf4faa55ad9c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b97584aa3b37adc148672777e95fe0b2c8b101e09989bfa1ab5debbffe489640
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001404"
 ---
 # <a name="imsrdpclientadvancedsettings2-interface"></a>Interface IMsRdpClientAdvancedSettings2
 
-Gerencia configurações avançadas do cliente. Deriva da interface [**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md) . Essa interface inclui métodos para recuperar e definir propriedades avançadas (opcionais) para o controle ActiveX Área de Trabalho Remota.
+Gerencia configurações avançadas do cliente. Deriva da interface [**IMsRdpClientAdvancedSettings.**](imsrdpclientadvancedsettings-interface.md) Essa interface inclui métodos para recuperar e definir propriedades avançadas (opcionais) para o Área de Trabalho Remota ActiveX controle.
 
-Para obter uma instância dessa interface, use a propriedade [**IMsTscAx:: AdvancedSettings**](imstscax-advancedsettings.md) para obter um ponteiro de interface [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) . Em seguida, chame [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no ponteiro **IMsTscAdvancedSettings** e passe **\_ IMsRdpClientAdvancedSettings2 de IID** para **QueryInterface**.
+Para obter uma instância dessa interface, use a propriedade [**IMsTscAx::AdvancedSettings**](imstscax-advancedsettings.md) para obter um ponteiro de interface [**IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md) Em seguida, chame [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no ponteiro **IMsTscAdvancedSettings** e passe **\_ IMs IIDRdpClientAdvancedSettings2** para **QueryInterface**.
 
 ## <a name="members"></a>Membros
 
@@ -44,7 +44,7 @@ A interface **IMsRdpClientAdvancedSettings2** tem essas propriedades.
 | Propriedade                                                                                      | Tipo de acesso           | Descrição                                                                                                                                           |
 |:----------------------------------------------------------------------------------------------|:----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**CanAutoReconnect**](imsrdpclientadvancedsettings2-canautoreconnect.md)<br/>         | Somente leitura<br/>  | Especifica se o controle de cliente é capaz de se reconectar automaticamente à sessão atual no caso de uma desconexão de rede.<br/>    |
-| [**EnableAutoReconnect**](imsrdpclientadvancedsettings2-enableautoreconnect.md)<br/>   | Leitura/gravação<br/> | Especifica se o controle de cliente deve ser habilitado para se reconectar automaticamente a uma sessão no caso de uma desconexão de rede.<br/>            |
+| [**EnableAutoReconnect**](imsrdpclientadvancedsettings2-enableautoreconnect.md)<br/>   | Leitura/gravação<br/> | Especifica se o controle de cliente deve ser reconectado automaticamente a uma sessão no caso de uma desconexão de rede.<br/>            |
 | [**MaxReconnectAttempts**](imsrdpclientadvancedsettings2-maxreconnectattempts.md)<br/> | Leitura/gravação<br/> | Especifica o número de vezes para tentar se reconectar durante a reconexão automática. Os valores válidos dessa propriedade são de 0 a 200, inclusive.<br/> |
 
 
@@ -61,7 +61,7 @@ Essa interface foi estendida pelas seguintes interfaces, com cada nova interface
 -   [**IMsRdpClientAdvancedSettings6**](imsrdpclientadvancedsettings6.md)
 -   [**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md)
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,13 +81,13 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 
 <dl> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> <dt>
 
-[**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md)
+[**Imstscadvancedsettings**](imstscadvancedsettings-interface.md)
 </dt> <dt>
 
-[Referência de Conexão Web de Área de Trabalho Remota](remote-desktop-web-connection-reference.md)
+[Conexão Web de Área de Trabalho Remota referência](remote-desktop-web-connection-reference.md)
 </dt> </dl>
 
  

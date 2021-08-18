@@ -13,19 +13,19 @@ api_type:
 - COM
 api_location:
 - Root\CIMV2\Security\MicrosoftVolumeEncryption
-ms.openlocfilehash: d7ce1705c0ec457f64eb825e49334e76a14c184c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 576de5820e5b16b59a0b77659a4833a261ecd9ef8445306ce3d6f320c664f833
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105754119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004224"
 ---
-# <a name="unlockwithcertificatefile-method-of-the-win32_encryptablevolume-class"></a>Método UnlockWithCertificateFile da classe Win32 \_ EncryptableVolume
+# <a name="unlockwithcertificatefile-method-of-the-win32_encryptablevolume-class"></a>Método UnlockWithCertificateFile da classe EncryptableVolume do Win32 \_
 
-O método **UnlockWithCertificateFile** da classe [**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md) usa o arquivo de [*certificado*](../secgloss/c-gly.md) fornecido para obter a chave derivada e desbloquear o volume criptografado.
+O **método UnlockWithCertificateFile** da classe [**\_ EncryptableVolume win32**](win32-encryptablevolume.md) usa o arquivo de certificado fornecido para obter a chave derivada e desbloquear o volume criptografado. [](../secgloss/c-gly.md)
 
 > [!Note]  
-> Se o disco oferecer suporte à criptografia de hardware, essa função definirá o status da banda como "desbloqueado" "
+> Se o disco dá suporte à criptografia de hardware, essa função define o status da banda como "desbloqueado""
 
  
 
@@ -45,40 +45,40 @@ uint32 UnlockWithCertificateFile(
 
 <dl> <dt>
 
-*Nome do arquivo* \[ no\]
+*FileName* \[ Em\]
 </dt> <dd>
 
-Tipo: **cadeia de caracteres**
+Tipo: cadeia **de caracteres**
 
-Uma cadeia de caracteres que especifica o local e o nome do arquivo. cer usado para recuperar a impressão digital do certificado. Um certificado de [*criptografia*](../secgloss/e-gly.md) deve ser exportado no formato. cer ([*Distinguished Encoding Rules*](../secgloss/d-gly.md) (der) – binário codificado [*x. 509*](../secgloss/x-gly.md) ou x. 509 codificado em base-64). O certificado de criptografia pode ser gerado por meio da PKI da Microsoft, PKI de terceiros ou autoassinado.
+Uma cadeia de caracteres que especifica o local e o nome do arquivo .cer usado para recuperar a impressão digital do certificado. Um [*certificado*](../secgloss/e-gly.md) de criptografia deve ser exportado no formato .cer ( binário codificado por [*DER (Distinguished Encoding Rules)*](../secgloss/d-gly.md) [*X.509*](../secgloss/x-gly.md) ou X.509 codificado em Base 64). O certificado de criptografia pode ser gerado a partir da PKI da Microsoft, PKI de terceiros ou auto-assinado.
 
 </dd> <dt>
 
-*Fixar* \[ no\]
+*PIN* \[ Em\]
 </dt> <dd>
 
-Tipo: **cadeia de caracteres**
+Tipo: cadeia **de caracteres**
 
-Uma cadeia de caracteres de identificação pessoal especificada pelo usuário. Essa cadeia de caracteres deve consistir em uma sequência de 4 a 20 dígitos. Essa cadeia de caracteres é usada para autenticar silenciosamente o KSP ( [*provedor de armazenamento de chaves*](../secgloss/k-gly.md) ) quando usado com um [*cartão inteligente*](../secgloss/s-gly.md).
+Uma cadeia de caracteres de identificação pessoal especificada pelo usuário. Essa cadeia de caracteres deve consistir em uma sequência de 4 a 20 dígitos. Essa cadeia de caracteres é usada para autenticar silenciosamente o KSP (provedor de [*armazenamento*](../secgloss/k-gly.md) de chaves) quando usado com um [*cartão inteligente*](../secgloss/s-gly.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 Esse método retornará um dos códigos a seguir ou outro código de erro se ele falhar.
 
 
 
-| Código/valor de retorno                                                                                                                                                                            | Descrição                                                                                                                                                                                                                                                              |
+| Valor/código de retorno                                                                                                                                                                            | Descrição                                                                                                                                                                                                                                                              |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0 (0x0)</dt> </dl>                                            | O método foi bem-sucedido.<br/>                                                                                                                                                                                                                                    |
-| <dl> <dt>**Erro \_ do ARQUIVO \_ não \_ encontrado**</dt> <dt>0000000002 (0x2)</dt> </dl>                 | O sistema não pode arquivar o arquivo especificado.<br/>                                                                                                                                                                                                                    |
-| <dl> <dt>**FVE \_ E \_ não \_ ativado**</dt> <dt>2150694920 (0x80310008)</dt> </dl>           | O BitLocker não está habilitado no volume. Adicione um protetor de chave para habilitar o BitLocker. <br/>                                                                                                                                                                             |
-| <dl> <dt>**FVE \_ E \_ \_ autenticação com falha**</dt> <dt>2150694951 (0x80310027)</dt> </dl>   | O volume não pode ser desbloqueado com as informações fornecidas. <br/>                                                                                                                                                                                                 |
-| <dl> <dt>**FVE \_ O \_ protetor E \_ não \_ foi encontrado**</dt> <dt>2150694963 (0x80310033)</dt> </dl>    | O protetor de chave fornecido não existe no volume. Você deve inserir outro protetor de chave.<br/>                                                                                                                                                                |
-| <dl> <dt>**FVE \_ \_Falha de \_ autenticação \_ do E PRIVATEKEY**</dt> <dt>2150695060 (0x80310094)</dt> </dl> | A [*chave privada*](../secgloss/p-gly.md), associada ao certificado especificado, não pôde ser autorizada. A autorização de chave privada não foi fornecida ou a autorização fornecida era inválida.<br/> |
+| <dl> <dt>**ERRO \_ ARQUIVO \_ NÃO \_ ENCONTRADO**</dt> <dt>0000000002 (0x2)</dt> </dl>                 | O sistema não pode arquivar o arquivo especificado.<br/>                                                                                                                                                                                                                    |
+| <dl> <dt>**FVE \_ E \_ \_ NOTACTIVATED 2150694920**</dt> <dt>(0x80310008)</dt> </dl>           | O BitLocker não está habilitado no volume. Adicione um protetor de chave para habilitar o BitLocker. <br/>                                                                                                                                                                             |
+| <dl> <dt>**FVE \_ E \_ FALHA \_ NA AUTENTICAÇÃO**</dt> 2150694951 <dt>(0x80310027)</dt> </dl>   | O volume não pode ser desbloqueado com as informações fornecidas. <br/>                                                                                                                                                                                                 |
+| <dl> <dt>**FVE \_ E \_ PROTECTOR NÃO ENCONTRADO \_ \_ 2150694963**</dt> <dt>(0x80310033)</dt> </dl>    | O protetor de chave fornecido não existe no volume. Você deve inserir outro protetor de chave.<br/>                                                                                                                                                                |
+| <dl> <dt>**FVE \_ E \_ PRIVATEKEY \_ AUTH \_ FAILED**</dt> <dt>2150695060 (0x80310094)</dt> </dl> | A [*chave privada*](../secgloss/p-gly.md), associada ao certificado especificado, não pôde ser autorizada. A autorização de chave privada não foi fornecida ou a autorização fornecida foi inválida.<br/> |
 
 
 
@@ -90,10 +90,10 @@ Esse método retornará um dos códigos a seguir ou outro código de erro se ele
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows 7 Enterprise, Windows 7 Ultimate \[\]<br/>                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                 |
-| Namespace<br/>                | \\MicrosoftVolumeEncryption de \\ segurança \\ cimv2 raiz<br/>                                             |
-| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 Enterprise, Windows 7 aplicativos de área de \[ trabalho ultimate\]<br/>                               |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                 |
+| Namespace<br/>                | Segurança \\ RAIZ CIMV2 \\ \\ MicrosoftVolumeEncryption<br/>                                             |
+| MOF<br/>                      | <dl> <dt>Win32 \_ encryptablevolume.mof</dt> </dl> |
 
 
 
@@ -101,7 +101,7 @@ Esse método retornará um dos códigos a seguir ou outro código de erro se ele
 
 <dl> <dt>
 
-[**\_EncryptableVolume Win32**](win32-encryptablevolume.md)
+[**Win32 \_ EncryptableVolume**](win32-encryptablevolume.md)
 </dt> </dl>
 
  

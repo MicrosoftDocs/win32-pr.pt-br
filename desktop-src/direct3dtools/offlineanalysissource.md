@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: d49ed42d58db6d56e4fd2e24217b32726dcfbf07
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 62ecd7906ed5717937902bb259cb2858ef79cd5e0b1a8c3dc91bfeecd69a16b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119844746"
 ---
 # <a name="span-idvspixengineofflineanalysissourcespanofflineanalysissource-enumeration"></a><span id="vspixengine.offlineanalysissource"></span>Enumeração OFFLINEANALYSISSOURCE
 
@@ -42,7 +42,7 @@ As informações gráficas vêm de um arquivo de log de gráficos.
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>parâmetro</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: Representa o serviço VSS convidado. Ele é usado para consultar informações de cluster de convidado do host Hyper-V.
+description: Representa o serviço VSS convidado. Ele é usado para consultar informações de cluster convidado do host Hyper-V.
 ms.assetid: 82321456-a24e-4f67-9346-f0844e2913dc
-title: Classe Msvm_VssService
+title: Msvm_VssService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 298ced09537ffc6e17f98484f600b05155fe0d97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c84e9fd96ea4f82c5e89138cfb75f42e2bd184f66926d7139958f485273d6425
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296203"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014464"
 ---
-# <a name="msvm_vssservice-class"></a>\_Classe Msvm VssService
+# <a name="msvm_vssservice-class"></a>Classe Msvm \_ VssService
 
-Representa o serviço VSS convidado. Ele é usado para consultar informações de cluster de convidado do host Hyper-V.
+Representa o serviço VSS convidado. Ele é usado para consultar informações de cluster convidado do host Hyper-V.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -37,13 +37,13 @@ class Msvm_VssService : Msvm_GuestService
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ VssService** tem estes tipos de membros:
+A **classe Msvm \_ VssService** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Msvm \_ VssService** tem esses métodos.
+A **classe Msvm \_ VssService** tem esses métodos.
 
 
 
@@ -61,10 +61,10 @@ A classe **Msvm \_ VssService** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

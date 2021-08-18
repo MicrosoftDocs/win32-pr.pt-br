@@ -18,9 +18,9 @@ ms.locfileid: "118995268"
 ---
 # <a name="skin-creation-guide"></a>Guia de criação de capa
 
-Este guia é uma série de explicações detalhadas sobre como criar diferentes tipos de capas. Para obter informações mais gerais sobre capas, consulte [About Skins](about-skins.md). Para obter detalhes específicos sobre cada atributo, método e evento usado em capas, consulte a Referência [de programação de capa](skin-programming-reference.md). À medida que você se envolve mais na programação da sua capa, talvez você queira ler a parte desse SDK que abrange o modelo [Windows Media Player objeto .](windows-media-player-object-model.md)
+Este guia é uma série de explicações detalhadas sobre como criar diferentes tipos de capas. Para obter informações mais gerais sobre capas, consulte [About Skins](about-skins.md). Para obter detalhes específicos sobre cada atributo, método e evento usado em capas, consulte a Referência [de programação de capa](skin-programming-reference.md). À medida que você se envolve mais na programação da sua capa, talvez você queira ler a parte desse SDK que abrange o [modelo Windows Media Player objeto .](windows-media-player-object-model.md)
 
-Neste guia, instruções para criar a arte serão fornecidas para o Adobe Adobe 5.5, um programa de manipulação de arte popular. As instruções específicas podem ser diferentes se você tiver um programa de arte semelhante, como Jasc Paint Shop Pro ou Sonic Foundry Ltdsity, mas os conceitos serão os mesmos. O Photoshop foi escolhido por dois motivos: é um programa de arte popular para os artista comerciais e funciona com camadas. Como você verá nos tutoriais, as camadas são muito úteis para a criação da capa.
+Neste guia, instruções para criar a arte serão fornecidas para o Adobe Adobe 5.5, um programa de manipulação de arte popular. As instruções específicas poderão ser diferentes se você tiver um programa de arte semelhante, como Jasc Paint Shop Pro ou Sonic Foundry Ltdsity, mas os conceitos serão os mesmos. O Photoshop foi escolhido por dois motivos: é um programa de arte popular para os artista comerciais e funciona com camadas. Como você verá nos tutoriais, as camadas são muito úteis para a criação da capa.
 
 Este guia abrange as tarefas a seguir.
 

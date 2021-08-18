@@ -3,7 +3,7 @@ title: Mensagem de EM_CHARFROMPOS (WinUser. h)
 description: Obtém informações sobre o caractere mais próximo de um ponto especificado na área do cliente de um controle de edição. Você pode enviar essa mensagem para um controle de edição ou um controle de edição rico.
 ms.assetid: fe9f96f2-5b3c-4039-befd-5e9a456ba32d
 keywords:
-- Controles de EM_CHARFROMPOS de mensagens do Windows
+- controles de Windows de mensagem de EM_CHARFROMPOS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1156d69c012faa0141726c00ab880d954fe2857
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3a133907b29857abdc1663d3283bc4b4164878f3fa0976769e6d42daef2c4cb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455443"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119915956"
 ---
 # <a name="em_charfrompos-message"></a>\_Mensagem em CHARFROMPOS
 
@@ -47,7 +47,7 @@ As coordenadas de um ponto na área do cliente do controle. As coordenadas estã
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **Controles de edição avançados:** O valor de retorno especifica o índice de caracteres com base em zero do caractere mais próximo ao ponto especificado. O valor de retorno indica o último caractere no controle de edição se o ponto especificado estiver além do último caractere no controle.
 
@@ -65,9 +65,9 @@ Se um ponto for passado para **em \_ CHARFROMPOS** como o *lParam* e o ponto est
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 
