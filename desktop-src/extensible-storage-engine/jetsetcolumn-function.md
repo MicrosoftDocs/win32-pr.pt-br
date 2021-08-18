@@ -18,17 +18,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3c1fd267bea6bbb995a13ce65f97f1f531572a52
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 848d575f6fd8598aa3262273e9da3ce4cd1aaed12bcb2dc17e41e0d2f98bfdad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978856"
 ---
 # <a name="jetsetcolumn-function"></a>Função JetSetColumn
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetsetcolumn-function"></a>Função JetSetColumn
 
@@ -169,7 +169,7 @@ As seguintes opções podem ser definidas para este parâmetro:
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -210,7 +210,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
 <td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p>
-<p><strong>Windows XP:</strong>  Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<p><strong>Windows XP:</strong>  esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidBufferSize</p></td>
@@ -259,7 +259,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <tr class="odd">
 <td><p>JET_errSessionSharingViolation</p></td>
 <td><p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo.</p>
-<p><strong>Windows XP:</strong>  Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<p><strong>Windows XP:</strong>  esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errTermInProgress</p></td>
@@ -303,11 +303,11 @@ Um registro é limitado em tamanho com base no tamanho da página do banco de da
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

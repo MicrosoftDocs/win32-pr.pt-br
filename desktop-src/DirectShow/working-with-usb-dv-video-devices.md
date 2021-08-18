@@ -4,18 +4,18 @@ ms.assetid: 6244f006-db9f-42b2-81cd-26eba583613e
 title: Trabalhando com dispositivos de vídeo USB DV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 75647aa7b53bac45c155b4e0a9283418c9af58b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd1f83fb490f4bd1e71714dcb0658d01a41d6e45af6f3e89436f6e32c1cdc985
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119071731"
 ---
 # <a name="working-with-usb-dv-video-devices"></a>Trabalhando com dispositivos de vídeo USB DV
 
 Este tópico descreve como escrever aplicativos para dispositivos de vídeo USB (barramento serial universal) que capturam vídeo DV.
 
-O formato DV padrão tem uma taxa de dados de cerca de 25 megabits por segundo (Mbps). Quando o USB foi introduzido pela primeira vez, ele não tinha largura de banda suficiente para dar suporte ao vídeo DV. No entanto, o USB 2,0 pode dar suporte a até 480 Mbps, o que é mais do que suficiente para vídeo DV. A especificação da classe de dispositivo de vídeo USB (UVC), lançada em 2003, define o formato de carga para dispositivos de vídeo DV USB. Um driver de classe Windows Driver Model (WDM) para dispositivos UVC foi introduzido no Windows XP Service Pack 2.
+O formato DV padrão tem uma taxa de dados de cerca de 25 megabits por segundo (Mbps). Quando o USB foi introduzido pela primeira vez, ele não tinha largura de banda suficiente para dar suporte ao vídeo DV. No entanto, o USB 2,0 pode dar suporte a até 480 Mbps, o que é mais do que suficiente para vídeo DV. A especificação da classe de dispositivo de vídeo USB (UVC), lançada em 2003, define o formato de carga para dispositivos de vídeo DV USB. um Driver de classe Windows Driver Model (WDM) para dispositivos UVC foi introduzido no Windows XP Service Pack 2.
 
 Na maioria dos aspectos, o driver UVC dá suporte ao mesmo modelo de programação que o driver MSDV para dispositivos IEEE 1394. Os aplicativos escritos para MSDV devem exigir apenas pequenas modificações para dar suporte a dispositivos UVC.
 

@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8ec121f9d13686d3d5c8ad22aa0fb3aed8562b5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5ddc1b94ad90476d9ab154d10b87ea3c137226b949fd58b9e6b32af02c7018fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119109194"
 ---
 # <a name="jet_lgposlessthan-operator"></a>JET_LGPOS. Operador LessThan
 
-Determinar se uma posição de log é anterior a outra posição de log.
+Determine se uma posição de log está antes de outra posição de log.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,29 +64,29 @@ public static bool operator <(
 
 #### <a name="parameters"></a>Parâmetros
 
-  - lhs  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
     A primeira posição de log a ser comparada.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_LGPOS](./jet-lgpos-structure2.md)  
     
-    A segunda posição de log para comparar.
+    A segunda posição de log a ser comparada.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True se o LHS vier antes do RHS.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True se lhs vem antes de rhs.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_LGPOS](./jet-lgpos-structure2.md)
+[JET_LGPOS estrutura](./jet-lgpos-structure2.md)
 
-[Membros do JET_LGPOS](./jet-lgpos-members.md)
+[JET_LGPOS membros](./jet-lgpos-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

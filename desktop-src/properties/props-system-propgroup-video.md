@@ -4,12 +4,12 @@ ms.assetid: 81a4a52e-610e-45a6-838c-e82c74d92ced
 title: System. PROPER. Video
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d12397bf3d9e6e71941f9ea49085a568ec1d0d6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b1e911bb4eea6ff72b1b77594015ef6f2ad1176e6a124bbcff71e6ef104d74a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969925"
 ---
 # <a name="systempropgroupvideo"></a>System. PROPER. Video
 

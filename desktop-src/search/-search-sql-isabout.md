@@ -4,18 +4,18 @@ ms.assetid: e2629c4c-4b44-4427-ac1d-17f55fd969e3
 title: '@ SOBRE o termo'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f79fc2fa4a56b3ca6b3b412141f096b282e3aa9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5665e7bf62da4858cf2e7d68e65d0f42771903d55e3189db12f19cdd5414530d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646870"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118969605"
 ---
 # <a name="isabout-term"></a>@ SOBRE o termo
 
 **Preterido**
 
-Esse recurso foi removido a partir do Windows 8. Se você escrever novos aplicativos, evite usar esse recurso preterido. Se você modificar os aplicativos existentes, será altamente recomendável remover qualquer dependência desse recurso.
+Este recurso foi removido a partir de Windows 8. Se você escrever novos aplicativos, evite usar esse recurso preterido. Se você modificar os aplicativos existentes, será altamente recomendável remover qualquer dependência desse recurso.
 
 O termo ISABOUT corresponde a colunas em um grupo de um ou mais termos de pesquisa. Ele tem a seguinte sintaxe:
 

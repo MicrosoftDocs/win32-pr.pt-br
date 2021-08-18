@@ -40,12 +40,12 @@ api_type:
 - HeaderDef
 api_location:
 - Wbemdisp.h
-ms.openlocfilehash: 73fb9167af63f40f3a6e1c00470d871f749d228a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 38d104c99885d4328ce8b12413e91607655ab1e260a61b511e3ea4a600b80b4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131018"
 ---
 # <a name="privilege-constants"></a>Constantes de privilégio
 
@@ -74,7 +74,7 @@ Muitos métodos WMI exigem que uma ou mais permissões sejam habilitadas. Se uma
 
 
 
-Constante de C++: se criar cadeia de caracteres  de **\_ \_ \_ nome de token** : SeCreateTokenPrivilege
+constante C++: ES criar cadeia de caracteres de  **\_ \_ \_ nome de TOKEN** : SeCreateTokenPrivilege
 
 Nome curto do script: **Createtoken**
 
@@ -108,7 +108,7 @@ Necessário para substituir um token de nível de processo.
 
 
 
-Constante de C++: cadeia de **nome da memória de bloqueio do se \_ \_ \_** : **SeLockMemoryPrivilege**
+constante de C++: cadeia de **nome de memória de bloqueio de ES \_ \_ \_** : **SeLockMemoryPrivilege**
 
 Nome curto de script: **LockMemory**
 
@@ -125,7 +125,7 @@ Necessário para bloquear páginas na memória.
 
 
 
-Constante de C++: se aumentar a cadeia de  caracteres do **\_ \_ \_ nome da cota** : SeIncreaseQuotaPrivilege
+constante C++: ES aumentar a cadeia de caracteres  do **\_ \_ \_ nome da cota** : SeIncreaseQuotaPrivilege
 
 Nome curto de script: **IncreaseQuotaPrivilege**
 
@@ -142,7 +142,7 @@ Necessário para ajustar as cotas de memória de um processo.
 
 
 
-Constante de C++ **: \_ máquina \_ \_ nome da conta de se** cadeia de caracteres: **SeMachineAccountPrivilege**
+constante de C++: ES cadeia de **\_ \_ \_ nome de conta máquina** : **SeMachineAccountPrivilege**
 
 Nome curto de script: **MachineAccount**
 
@@ -159,7 +159,7 @@ Necessário para adicionar estações de trabalho a um domínio.
 
 
 
-C Constant: **se \_ o \_ nome do TCB** String: **SeTcbPrivilege;**
+constante C++: cadeia de caracteres de **\_ \_ nome ES TCB** : **setcbprivilege;**
 
 Nome curto do script: **TCB**
 
@@ -176,7 +176,7 @@ Necessário para atuar como parte do sistema operacional. O detentor é parte da
 
 
 
-Constante de C++: cadeia de **\_ \_ nome de segurança se** : **SeSecurityPrivilege**
+constante de C++: ES cadeia de caracteres de **\_ \_ nome de segurança** : **SeSecurityPrivilege**
 
 Nome curto do script: **segurança**
 
@@ -193,7 +193,7 @@ Necessário para gerenciar a auditoria e o log de segurança do NT.
 
 
 
-Constante de C++: se obter cadeia de caracteres  de **\_ \_ \_ nome de propriedade** : SeTakeOwnershipPrivilege
+constante de C++: ES obter a cadeia de  caracteres do **\_ \_ \_ nome da propriedade** : SeTakeOwnershipPrivilege
 
 Nome curto de script: **TakeOwnership**
 
@@ -210,7 +210,7 @@ Necessário para assumir a propriedade de arquivos ou outros objetos sem ter uma
 
 
 
-Constante de C++: se carregar cadeia de caracteres de **\_ \_ Driver** : **SeLoadDriverPrivilege**
+constante C++: **ES \_ carregar \_** cadeia de caracteres de DRIVER: **SeLoadDriverPrivilege**
 
 Nome curto da script: **LoadDriver**
 
@@ -227,7 +227,7 @@ Necessário para carregar ou descarregar um driver de dispositivo.
 
 
 
-Constante de C++: **nome do perfil do sistema se cadeia de caracteres do \_ \_ \_ Name** : **SeSystemProfilePrivilege**
+constante de C++: ES cadeia de caracteres do  **nome do \_ \_ perfil \_ do sistema** : SeSystemProfilePrivilege
 
 Nome curto de script: **SystemProfile**
 
@@ -244,7 +244,7 @@ Necessário para coletar informações de perfil sobre o desempenho do sistema.
 
 
 
-Constante de C++: **se \_ SYSTEMTIME** \_ nome cadeia de caracteres: **SeSystemtimePrivilege**
+constante de C++ **: \_ ES** \_ cadeia de nome SYSTEMTIME: **SeSystemtimePrivilege**
 
 Nome curto de script: **SYSTEMTIME**
 
@@ -261,7 +261,7 @@ Necessário para alterar a hora do sistema.
 
 
 
-Constante do C++: **se Prof cadeia de \_ \_ \_ \_ nome de processo único** : **SeProfileSingleProcessPrivilege**
+constante de C++: ES a cadeia de **nome do \_ \_ único \_ processo \_ do PROF** : **SeProfileSingleProcessPrivilege**
 
 Nome curto de script: **ProfileSingleProcess**
 
@@ -278,7 +278,7 @@ Necessário para coletar informações de perfil para um único processo.
 
 
 
-Constante de C++: de **\_ \_ \_ \_ nome de prioridade base do se Inc** : **SeIncreaseBasePriorityPrivilege**
+constante de C++: cadeia de **\_ \_ \_ \_ nome de prioridade BASE ES INC** : **SeIncreaseBasePriorityPrivilege**
 
 Nome curto de script: **IncreaseBasePriority**
 
@@ -295,7 +295,7 @@ Necessário para aumentar a prioridade de agendamento.
 
 
 
-Constante C++: **se \_ criar \_ \_ nome de arquivo de paginação** cadeia de caracteres: **SeCreatePagefilePrivilege**
+constante C++: ES criar cadeia de caracteres de **nome de arquivo de \_ \_ \_ paginação** : **SeCreatePagefilePrivilege**
 
 Nome curto de script: **CreatePageFile**
 
@@ -312,7 +312,7 @@ Necessário para criar um arquivo de paginação.
 
 
 
-Constante de C++: **se criar cadeia de \_ \_ \_ nome permanente** : **SeCreatePermanentPrivilege**
+constante C++: **ES \_ criar cadeia de \_ \_ nome permanente** : **SeCreatePermanentPrivilege**
 
 Nome curto de script: **Createpermanent**
 
@@ -329,7 +329,7 @@ Necessário para criar objetos compartilhados permanentes.
 
 
 
-Constante de C++ **: \_ se \_ nome de backup** cadeia de caracteres: **SeBackupPrivilege**
+constante de C++: ES cadeia de **\_ \_ nome de BACKUP** : **SeBackupPrivilege**
 
 Nome curto do script: **backup**
 
@@ -346,7 +346,7 @@ Necessário para fazer backup de arquivos e diretórios, independentemente da AC
 
 
 
-Constante de C++ **: \_ se \_ nome de restauração** da cadeia de caracteres: **SeRestorePrivilege**
+constante de C++: ES cadeia de **\_ \_ nome de restauração** : **SeRestorePrivilege**
 
 Nome curto da script: **restaurar**
 
@@ -363,7 +363,7 @@ Necessário para restaurar arquivos e diretórios, independentemente da ACL espe
 
 
 
-Constante C++: **se \_ \_ nome do desligamento** da cadeia de caracteres: **SeShutdownPrivilege**
+constante de C++: ES cadeia de **\_ \_ nome de desligamento** : **SeShutdownPrivilege**
 
 Nome curto do script: **desligamento**
 
@@ -380,7 +380,7 @@ Necessário para desligar o sistema local.
 
 
 
-Constante de C++ **: \_ se \_ nome de depuração** cadeia de caracteres: **SeDebugPrivilege**
+constante de C++: ES cadeia de **\_ \_ nome de depuração** : **SeDebugPrivilege**
 
 Nome curto do script: **depuração**
 
@@ -397,7 +397,7 @@ Necessário para depurar e ajustar a memória de um processo de propriedade de o
 
 
 
-Constante de C++ **: \_ se \_ nome de auditoria** String: **SeAuditPrivilege**
+constante de C++: ES cadeia de **\_ \_ nome de auditoria** : **SeAuditPrivilege**
 
 Nome curto da script: **auditoria**
 
@@ -414,7 +414,7 @@ Necessário para gerar entradas de auditoria no log de segurança do NT. Somente
 
 
 
-Constante de C++: cadeia de **nome de \_ ambiente de sistema \_ \_ se** : **SeSystemEnvironmentPrivilege**
+constante de C++: ES cadeia de caracteres do  **nome do \_ \_ ambiente \_ do sistema** : SeSystemEnvironmentPrivilege
 
 Nome curto de script: **SystemEnvironment**
 
@@ -431,7 +431,7 @@ Necessário para modificar a RAM não volátil de sistemas que usam esse tipo de
 
 
 
-Constante de C++: **se alterar String de \_ \_ \_ nome de notificação** : **SeChangeNotifyPrivilege**
+constante de C++: **ES \_ alterar o \_ \_ nome** da cadeia de caracteres de notificação: **SeChangeNotifyPrivilege**
 
 Nome curto de script: **ChangeNotify**
 
@@ -448,7 +448,7 @@ Necessário para receber notificações de alterações em arquivos ou diretóri
 
 
 
-Constante de C++: se a cadeia de **\_ \_ \_ nome de desligamento remoto** : **SeRemoteShutdownPrivilege**
+constante de C++: ES cadeia de **\_ \_ \_ nome de desligamento remoto** : **SeRemoteShutdownPrivilege**
 
 Nome curto de script: **RemoteShutdown**
 
@@ -465,7 +465,7 @@ Necessário para desligar um computador remoto.
 
 
 
-C Constant: **se \_ \_ desencaixar** cadeia de caracteres de nome: **SeUndockPrivilege**
+constante de C++: ES cadeia de caracteres de **\_ \_ nome desencaixe** : **SeUndockPrivilege**
 
 Nome curto do script: **desencaixar**
 
@@ -482,7 +482,7 @@ Necessário para remover um laptop de uma estação de encaixe.
 
 
 
-Constante de C++ **: \_ se \_ \_ nome do agente de sincronização** cadeia de caracteres: **SeSyncAgentPrivilege**
+constante do C++: ES cadeia de caracteres do  **nome do \_ \_ agente \_ de sincronização** : SeSyncAgentPrivilege
 
 Nome curto de script: **SyncAgent**
 
@@ -499,7 +499,7 @@ Necessário para sincronizar os dados do serviço de diretório.
 
 
 
-Constante de C++: se habilitar a cadeia de  **\_ \_ \_ nome de delegação** : seenabledelegationprivilege foi
+constante de C++: ES habilitar a cadeia de  **\_ \_ \_ nome de delegação** : seenabledelegationprivilege foi
 
 Nome curto de script: **EnableDelegation**
 
@@ -516,7 +516,7 @@ Necessário para permitir que contas de computador e de usuário sejam confiáve
 
 
 
-Constante de C++: se gerenciar a cadeia de  caracteres do **\_ \_ \_ nome do volume** : SeManageVolumePrivilege
+constante de C++: ES gerenciar a cadeia de  caracteres do **\_ \_ \_ nome do VOLUME** : SeManageVolumePrivilege
 
 Nome curto de script: **ManageVolume**
 
@@ -533,7 +533,7 @@ Necessário para executar tarefas de manutenção de volume.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Wbemdisp. idl</dt> </dl> |
 
 

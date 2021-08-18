@@ -30,21 +30,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 4028a2a337b32394029960e45bb0e485c2b6b705
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfd4bd427321137add1d0669fcaf798a353309a825d1ccf9544f45098d3454f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978636"
 ---
 # <a name="objectinfogrbit-enumeration"></a>Enumeração ObjectInfoGrbit
 
-Opções de tabela, usadas em [JET_OBJECTINFO](./jet-objectinfo-class.md).
+Opções de tabela, usadas [JET_OBJECTINFO](./jet-objectinfo-class.md).
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -80,7 +80,7 @@ public enum ObjectInfoGrbit
 <tr class="even">
 <td></td>
 <td>Reversão</td>
-<td>A tabela pode ser revertida.</td>
+<td>A tabela pode ser relembolsada.</td>
 </tr>
 <tr class="odd">
 <td></td>
@@ -95,4 +95,4 @@ public enum ObjectInfoGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

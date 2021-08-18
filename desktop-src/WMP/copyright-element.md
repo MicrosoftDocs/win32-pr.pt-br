@@ -1,9 +1,9 @@
 ---
-title: Elemento COPYRIGHT (msfeeds. h)
-description: O elemento de direitos AUTORais define uma cadeia de caracteres de texto especificando as informações de direitos autorais de um elemento ASX ou de entrada.
+title: Elemento COPYRIGHT (Msfeeds.h)
+description: O elemento COPYRIGHT define uma cadeia de caracteres de texto que especifica as informações de direitos autorais para um elemento ASX ou ENTRY.
 ms.assetid: 264b92de-b10c-41b9-b219-727879079f15
 keywords:
-- Windows Media Player de elemento de direitos AUTORais
+- Elemento COPYRIGHT Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118997456"
 ---
-# <a name="copyright-element"></a>Elemento de direitos AUTORais
+# <a name="copyright-element"></a>Elemento COPYRIGHT
 
-O elemento de **direitos autorais** define uma cadeia de caracteres de texto especificando as informações de direitos autorais de um elemento **ASX** ou de **entrada** .
+O **elemento COPYRIGHT** define uma cadeia de caracteres de texto que especifica as informações de direitos autorais para um elemento **ASX** **ou ENTRY.**
 
 ``` syntax
 <COPYRIGHT>
@@ -41,7 +41,7 @@ Esse elemento não tem atributos.
 
 | Hierarquia       | Elementos           |
 |-----------------|--------------------|
-| Elementos pai | **ASX**, **entrada** |
+| Elementos pai | **ASX**, **ENTRY** |
 | Elementos filho  | Nenhum               |
 
 
@@ -50,13 +50,13 @@ Esse elemento não tem atributos.
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento define uma cadeia de texto que especifica as informações de direitos autorais de um elemento **ASX** ou de **entrada** .
+Esse elemento define uma cadeia de caracteres de texto que especifica as informações de direitos autorais para um **elemento ASX** **ou ENTRY.**
 
-Quando esse elemento aparece dentro de um elemento **ASX** , a cadeia de caracteres de direitos autorais é exibida apenas como **Mostrar** informações. Quando esse elemento aparece dentro de um elemento de **entrada** , o texto é exibido como informações de clipe. Cada elemento de **entrada** e **ASX** pai deve conter no máximo um elemento de **direitos autorais** filho. Vários elementos de **direitos autorais** após o primeiro serão ignorados e não serão exibidos.
+Quando esse elemento aparece em um **elemento ASX,** a cadeia de caracteres de direitos autorais é exibida apenas como **Mostrar** informações. Quando esse elemento aparece dentro de **um elemento ENTRY,** o texto é exibido como informações de clipe. Cada elemento **PAI ASX** e **ENTRY** deve conter no máximo um elemento **COPYRIGHT** filho. Vários **elementos COPYRIGHT** após o primeiro serão ignorados e não serão exibidos.
 
-Os caracteres de símbolos de registro de direitos autorais e marcas comerciais (ou) podem não ser exibidos corretamente se o metarquivo não for codificado usando o esquema de codificação UTF-8. Nesse caso, para exibir qualquer um desses símbolos corretamente para todos os usuários, você pode usar os equivalentes ASCII (c) e (R) em vez disso.
+Os caracteres para símbolos de registro de marcas e direitos autorais ( ou ) poderão não ser exibidos corretamente se o metadado não estiver codificado usando o esquema de codificação UTF-8. Nesse caso, para exibir qualquer um desses símbolos corretamente para todos os usuários, você pode usar os equivalentes ASCII (c) e (R) em vez disso.
 
-Se o metarquivo for codificado usando UTF-8, os símbolos de direitos autorais e marcas comerciais serão exibidos corretamente.
+Se o metadado for codificado usando UTF-8, os símbolos de direitos autorais e marcas comerciais serão exibidos corretamente.
 
 ## <a name="examples"></a>Exemplos
 
@@ -74,8 +74,8 @@ Se o metarquivo for codificado usando UTF-8, os símbolos de direitos autorais e
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/>                                 |
-| Cabeçalho<br/>  | <dl> <dt>Msfeeds. h</dt> </dl> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/>                                 |
+| Cabeçalho<br/>  | <dl> <dt>Msfeeds.h</dt> </dl> |
 
 
 
@@ -83,13 +83,13 @@ Se o metarquivo for codificado usando UTF-8, os símbolos de direitos autorais e
 
 <dl> <dt>
 
-[**Adicionando caracteres de direitos autorais a metaarquivos**](adding-copyright-characters-to-metafiles.md)
+[**Adicionando caracteres de direitos autorais a metadados**](adding-copyright-characters-to-metafiles.md)
 </dt> <dt>
 
-[**Windows Referência de elementos de metarquivo de mídia**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metadados de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Windows Referência de metarquivo de mídia**](windows-media-metafile-reference.md)
+[**Windows Referência de metadados de mídia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

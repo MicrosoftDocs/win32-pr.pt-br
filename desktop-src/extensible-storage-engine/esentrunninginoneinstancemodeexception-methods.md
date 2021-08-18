@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102674
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: d683b0ae09803b8d01561ef42f7ab7c407b6589d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9c17c7f2c76c1ebfe70765862878d9e0d1a13ed76f30e8477330be1b7b6ac0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297544"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981846"
 ---
 # <a name="esentrunninginoneinstancemodeexception-methods"></a>Métodos EsentRunningInOneInstanceModeException 
 

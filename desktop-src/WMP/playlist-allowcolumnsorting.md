@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. allowColumnSorting
+title: PLAYLIST.allowColumnSorting
 description: O atributo allowColumnSorting especifica ou recupera um valor que indica se o conteúdo da coluna de classificação é permitido.
 ms.assetid: b838f346-a0ab-40d3-893e-94c23142839e
 keywords:
-- PLAYLIST. allowColumnSorting Windows Media Player
+- PLAYLIST.allowColumnSorting Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef853bc1aabde4c261037cbeb31ce2deba34c631
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fee3fadcd58f74b534c8d4b32ee2db0f87fd160d55abbb2dde243693696bbd2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995726"
 ---
-# <a name="playlistallowcolumnsorting"></a>PLAYLIST. allowColumnSorting
+# <a name="playlistallowcolumnsorting"></a>PLAYLIST.allowColumnSorting
 
-O atributo **allowColumnSorting** especifica ou recupera um valor que indica se o conteúdo da coluna de classificação é permitido.
+O **atributo allowColumnSorting** especifica ou recupera um valor que indica se o conteúdo da coluna de classificação é permitido.
 
 ``` syntax
         elementID.allowColumnSorting
@@ -29,14 +29,14 @@ O atributo **allowColumnSorting** especifica ou recupera um valor que indica se 
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                                  |
 |-------|----------------------------------------------|
-| true  | Padrão. O conteúdo da coluna de classificação é permitido. |
-| false | O conteúdo da coluna de classificação não é permitido.      |
+| true  | Padrão. A classificação do conteúdo da coluna é permitida. |
+| false | Não é permitido classificar o conteúdo da coluna.      |
 
 
 
@@ -48,7 +48,7 @@ Esse atributo é um **booliano** de leitura/gravação.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

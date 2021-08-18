@@ -7,52 +7,52 @@
         - name: Fazendo chamadas de função RPC
           href: making-rpc-function-calls.md
           items:
-            - name: Usando identificadores de associação e fazendo chamadas RPC
+            - name: Usando alças de associação e fazendo chamadas RPC
               href: using-binding-handles-and-making-rpc-calls.md
-            - name: Escolhendo o tipo de identificadores de associação a ser usado
+            - name: Escolhendo o tipo de identificador de associação a ser usado
               href: choosing-the-type-of-binding-handles-to-use.md
             - name: Escolhendo uma sequência de protocolo
               href: choosing-a-protocol-sequence.md
-            - name: Usar identificadores de contexto para manter o estado no servidor
+            - name: Usar alças de contexto para manter o estado no servidor
               href: use-context-handles-for-keeping-state-on-the-server.md
             - name: Indicar erros por exceções
               href: indicate-errors-by-exceptions.md
-        - name: Usando identificadores de contexto
+        - name: Usando alças de contexto
           href: using-context-handles.md
           items:
-            - name: Mantendo o estado no servidor entre as chamadas
+            - name: Mantendo o estado no servidor entre chamadas
               href: maintaining-state-on-the-server-between-calls.md
-            - name: Descarregando um servidor com identificadores de contexto pendentes
+            - name: Descarregando um servidor com alças de contexto pendentes
               href: unloading-a-server-with-outstanding-context-handles.md
-            - name: Usando mais de um identificador de contexto por chamada
+            - name: Usando mais de um alça de contexto por chamada
               href: using-more-than-one-context-handle-per-call.md
-            - name: Semântica de falha para identificadores de contexto
+            - name: Semântica de falha para alças de contexto
               href: failure-semantics-for-context-handles.md
         - name: RPC e a rede
           href: rpc-and-the-network.md
           items:
             - name: Desenvolvimento versus implantação na rede
               href: development-versus-deployment-in-the-network.md
-            - name: Prevenção de suspensões do lado do cliente
+            - name: Impedindo travamentos do lado do cliente
               href: preventing-client-side-hangs.md
             - name: Gerenciando conjuntos de conexões de rede (associações)
               href: managing-network-connection-sets-associations-.md
             - name: Limpeza de conexão ociosa
               href: idle-connection-cleanup.md
-            - name: Lidando com a perda de conectividade
+            - name: Lidando com perda de conectividade
               href: dealing-with-loss-of-connectivity.md
-            - name: Limpeza no lado do servidor
+            - name: Limpeza do lado do servidor
               href: server-side-cleanup.md
-        - name: Gravando clientes e servidores compatíveis com versões anteriores
+        - name: Escrevendo clientes e servidores compatíveis com versões anteriores
           href: writing-backward-compatible-clients-and-servers.md
           items:
-            - name: A teoria do controle de versão para RPC e COM
+            - name: A teoria do versioning para RPC e COM
               href: the-versioning-theory-for-rpc-and-com.md
             - name: Alterando interfaces de maneira compatível com versões anteriores
               href: changing-interfaces-in-a-backward-compatible-manner.md
             - name: Exemplos de alterações incompatíveis
               href: examples-of-incompatible-changes.md
-        - name: Gravando um cliente ou servidor RPC seguro
+        - name: Escrevendo um cliente ou servidor RPC seguro
           href: writing-a-secure-rpc-client-or-server.md
           items:
             - name: Qual provedor de segurança usar
@@ -61,59 +61,59 @@
               href: controlling-client-authentication.md
             - name: Escolhendo um nível de autenticação
               href: choosing-an-authentication-level.md
-            - name: Escolhendo as opções de QOS de segurança
+            - name: Escolhendo opções de QOS de segurança
               href: choosing-security-qos-options.md
-            - name: 'Erro comum: supondo que RpcServerRegisterAuthInfo impede que usuários não autorizados chamem seu servidor'
+            - name: 'Erro comum: supondo que RpcServerRegisterAuthInfo impeça usuários não autorizados de chamar seu servidor'
               href: common-mistake-assuming-rpcserverregisterauthinfo-prevents-unauthorized-users-from-calling-your-server.md
             - name: Retornos de chamada
               href: callbacks.md
             - name: Sessões nulas
               href: null-sessions.md
-            - name: Usar o sinalizador/robust
+            - name: Usar o sinalizador /robust
               href: use-the-robust-flag.md
-            - name: Identificadores de contexto estrito e de tipo estrito
+            - name: Identificador de contexto estrito e de tipo estrito
               href: strict-and-type-strict-context-handles.md
-            - name: Não confie no seu par
+            - name: Não confiar em seu par
               href: do-not-trust-your-peer.md
             - name: Não usar a segurança do ponto de extremidade
               href: do-not-use-endpoint-security.md
-            - name: Tenha cuidado com outros pontos de extremidade RPC em execução no mesmo processo
+            - name: Seja cuidado com outros pontos de extremidade RPC em execução no mesmo processo
               href: be-wary-of-other-rpc-endpoints-running-in-the-same-process.md
-            - name: Verifique se o servidor é quem alega ser
+            - name: Verifique se o servidor está Who ele declara ser
               href: verify-the-server-is-who-it-claims-to-be.md
-            - name: Usar sequências de protocolo principais
+            - name: Usar sequências de protocolo base
               href: use-mainstream-protocol-sequences.md
-            - name: Qual a segurança do meu servidor RPC agora?
+            - name: Qual é a segurança do meu servidor RPC agora?
               href: how-secure-is-my-rpc-server-now.md
-            - name: Técnicas de IDL para melhor design de interface e de método
+            - name: Técnicas de IDL para melhor interface e design de método
               href: idl-techniques-for-better-interface-and-method-design.md
         - name: Desenvolvendo um servidor RPC de alto desempenho
           href: developing-a-high-performance-rpc-server.md
           items:
-            - name: Latência de rede e taxa de transferência
+            - name: Latência de rede e produtividade
               href: network-latency-and-throughput.md
             - name: Escalabilidade
               href: scalability.md
-            - name: Dicas de desempenho de RPC diversas
+            - name: Desempenho diverso de RPC Dicas
               href: miscellaneous-rpc-performance-tips.md
-        - name: Obtendo informações estendidas de erro RPC
+        - name: Obtendo informações de erro RPC estendidas
           href: obtaining-extended-rpc-error-information.md
           items:
             - name: A necessidade de informações de erro estendidas
               href: the-need-for-extended-error-information.md
-            - name: Informações de segurança e de erro estendidas
+            - name: Informações de erro de segurança e estendidas
               href: security-and-extended-error-information.md
             - name: Habilitando informações de erro estendidas
               href: enabling-extended-error-information.md
             - name: Noções básicas sobre informações de erro estendidas
               href: understanding-extended-error-information.md
-            - name: Confiabilidade das informações de erro estendidas
+            - name: Confiabilidade de informações de erro estendidas
               href: reliability-of-extended-error-information.md
             - name: Independência de outros componentes
               href: independence-from-other-components.md
             - name: Informações de erro estendidas para o usuário
               href: extended-error-information-for-the-user.md
-            - name: Informações de erro estendidas para o servidor ou aplicativo
+            - name: Informações de erro estendidas para servidor ou aplicativo
               href: extended-error-information-for-the-server-or-application.md
               items:
                 - name: Gerando informações de erro
@@ -122,7 +122,7 @@
                   href: propagating-error-information.md
                 - name: Disponibilizando informações de erro para o usuário
                   href: making-error-information-available-to-the-user.md
-            - name: Locais de detecção de informações de erro estendidas
+            - name: Locais de detecção de informações de erro estendidos
               href: extended-error-information-detection-locations.md
     - name: Visões gerais
       href: overviews.md
@@ -139,17 +139,17 @@
                   href: implementing-a-distributed-system.md
             - name: Como funciona o RPC
               href: how-rpc-works.md
-            - name: Componentes RPC da Microsoft
+            - name: Componentes do Microsoft RPC
               href: microsoft-rpc-components.md
         - name: Instalando o ambiente de programação RPC
           href: installing-the-rpc-programming-environment.md
           items:
-            - name: Desenvolvendo aplicativos RPC do Windows
+            - name: Desenvolvendo aplicativos RPC Windows RPC
               href: developing-32-bit-windows-applications.md
         - name: Criando aplicativos RPC
           href: building-rpc-applications.md
           items:
-            - name: Procedimento de Build geral
+            - name: Procedimento de build geral
               href: general-build-procedure.md
               items:
                 - name: Desenvolvendo a interface
@@ -168,7 +168,7 @@
         - name: Conectando o cliente e o servidor
           href: connecting-the-client-and-the-server.md
           items:
-            - name: Terminologia de ligação de RPC essencial
+            - name: Terminologia de associação RPC essencial
               href: essential-rpc-binding-terminology.md
             - name: Como o servidor se prepara para uma conexão
               href: how-the-server-prepares-for-a-connection.md
@@ -184,13 +184,13 @@
             - name: Como o cliente estabelece uma conexão
               href: how-the-client-establishes-a-connection.md
               items:
-                - name: Criando um identificador de associação
+                - name: Criando um alça de associação
                   href: creating-a-binding-handle.md
                 - name: Fazendo uma chamada de procedimento remoto
                   href: making-a-remote-procedure-call.md
-                - name: Localizando o programa do servidor
+                - name: Localizar o programa de servidor
                   href: finding-the-server-program.md
-                - name: Enviando a chamada para o programa do servidor
+                - name: Enviando a chamada para o programa de servidor
                   href: sending-the-call-to-the-server-program.md
         - name: Tutorial
           href: tutorial.md
@@ -211,7 +211,7 @@
               href: the-client-application.md
             - name: O aplicativo de servidor
               href: the-server-application.md
-            - name: Parando o aplicativo de servidor
+            - name: Interrompendo o aplicativo de servidor
               href: stopping-the-server-application.md
             - name: Compilando e vinculando
               href: compiling-and-linking.md
@@ -513,9 +513,9 @@
                   href: server-stub-memory-management.md
                 - name: Buffer de Application-Allocated
                   href: application-allocated-buffer.md
-                - name: Armazenamento persistente no servidor
+                - name: Armazenamento persistentes no servidor
                   href: persistent-storage-on-the-server.md
-            - name: Quem gerencia a memória?
+            - name: Who Gerencia a memória?
               href: who-manages-memory-.md
               items:
                 - name: Top-Level e ponteiros inseridos
@@ -622,12 +622,12 @@
               items:
                 - name: Configurando o serviço de nome
                   href: configuring-the-name-service-for-windows-xp-windows-2000-or-windows-nt.md
-                - name: Configurando o serviço de nome para o Windows 95
+                - name: configurando o serviço de nome para o Windows 95
                   href: configuring-the-name-service-for-windows-95.md
                   items:
-                    - name: Editando o registro do Windows 95
+                    - name: editando o registro Windows 95
                       href: editing-the-windows-95-registry.md
-                - name: Configurando o serviço de nome para Windows 3. x ou MS-DOS
+                - name: configurando o serviço de nome para Windows 3. x ou MS-DOS
                   href: configuring-the-name-service-for-windows-3-x-or-ms-dos.md
                   items:
                     - name: Configurando o provedor de serviços do Microsoft Locator Name
@@ -726,7 +726,7 @@
               href: system-requirements-and-interoperability-for-rpc-over-http.md
             - name: Configurando computadores para RPC sobre HTTP
               href: configuring-computers-for-rpc-over-http.md
-            - name: Recomendações de implantação de RPC sobre HTTP
+            - name: Recomendações de implantação RPC sobre HTTP
               href: rpc-over-http-deployment-recommendations.md
         - name: Balanceamento de carga RPC
           href: rpc-load-balancing.md
@@ -1275,7 +1275,7 @@
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-uuidisnil
                 - name: UuidToString
                   href: /windows/desktop/api/Rpcdce/nf-rpcdce-uuidtostring
-            - name: Retorno de chamada RPC e funções de notificação
+            - name: Funções de retorno de chamada e notificação RPC
               href: rpc-callback-and-notification-functions.md
               items:
                 - name: RPC_AUTH_KEY_RETRIEVAL_FN
@@ -1290,7 +1290,7 @@
                   href: /windows/desktop/api/Rpcdce/nc-rpcdce-rpc_interface_group_idle_callback_fn
                 - name: RPCNOTIFICATION_ROUTINE
                   href: /previous-versions/aa375808(v=vs.80)
-        - name: Macros RPC
+        - name: RPC Macros
           href: rpc-macros.md
           items:
             - name: Macros de portabilidade
@@ -1311,27 +1311,27 @@
               href: rpctryexcept.md
             - name: RpcTryFinally
               href: rpctryfinally.md
-    - name: Mecanismo de NDR de RPC
+    - name: Mecanismo NDR RPC
       href: rpc-ndr-engine.md
       items:
         - name: Sintaxe de transferência e NDR64
           href: transfer-syntax-and-ndr64.md
-        - name: Cadeias de caracteres de formato NDR de RPC
+        - name: Cadeias de caracteres de formato NDR RPC
           href: rpc-ndr-format-strings.md
           items:
             - name: Cadeias de caracteres de formato
               href: format-strings.md
             - name: Cadeias de caracteres de formato de procedimento
               href: procedure-format-strings.md
-            - name: Descritor de cabeçalho de procedimento
+            - name: Descritor de header de procedimento
               href: procedure-header-descriptor.md
             - name: Alças
               href: handles.md
-            - name: O cabeçalho
+            - name: O header
               href: the-header.md
             - name: Descritores de parâmetro
               href: parameter-descriptors.md
-            - name: Cadeias de formato de tipo
+            - name: Cadeias de caracteres de formato de tipo
               href: type-format-strings.md
               items:
                 - name: Tipos simples
@@ -1354,7 +1354,7 @@
                   href: transmit-as-and-represent-as-tfs.md
                 - name: Marshal do usuário
                   href: user-marshal-tfs.md
-        - name: Referência da interface NDR de RPC
+        - name: Referência da interface NDR RPC
           href: rpc-ndr-interface-reference.md
           items:
             - name: CStdAsyncStubBuffer_AddRef

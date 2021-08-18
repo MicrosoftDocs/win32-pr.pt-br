@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e741d91187a138d7b8d9a57d0c4e76f54979d99e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58ac34dd551b38dc6179bbe1448d0b96e09073fff4ce716ac6efaf74037c0f3e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119107452"
 ---
 # <a name="jet_recsize-structure"></a>Estrutura de JET_RECSIZE
 

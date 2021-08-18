@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentTooManyTestInjectionsException'
+description: 'Saiba mais sobre: Classe EsentTooManyTestInjectionsException'
 title: Classe EsentTooManyTestInjectionsException
 TOCTitle: EsentTooManyTestInjectionsException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentTooManyTestInjectionsException
@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 9dbf35aebeace7c4384dc254211f5ed061029449
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e5c90ccda8585f208917447ec3b1f331b1743bdbd0be3f24800c08d50233818
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112896"
 ---
 # <a name="esenttoomanytestinjectionsexception-class"></a>Classe EsentTooManyTestInjectionsException
 
-Classe base para JET_err. TooManyTestInjections exceções.
+Classe base para JET_err. Exceções TooManyTestInjections.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentUsageException](./esentusageexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentTooManyTestInjectionsException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentTooManyTestInjectionsException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentTooManyTestInjectionsException](./esenttoomanytestinjectionsexception-members.md)
+[Membros EsentTooManyTestInjectionsException](./esenttoomanytestinjectionsexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

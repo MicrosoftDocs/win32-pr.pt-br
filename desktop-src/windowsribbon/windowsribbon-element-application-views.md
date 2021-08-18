@@ -3,7 +3,7 @@ title: Propriedade Application. views
 description: Representa um contêiner para cada exibição de estrutura da faixa de forma, especificamente a faixa de e ContextPopup.
 ms.assetid: e7549b8b-0f95-477a-9024-1a99ee1412c2
 keywords:
-- Faixa de vista da propriedade Application. views Windows
+- propriedade Application. views Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 57e7d106d346a790ee3bd8879b2367f38341f0a9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fe063397698a74da0421cf0c9c3b2ef46861f1477e0f4ac99fe5d6e6063c7251
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105764121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964305"
 ---
 # <a name="applicationviews-property"></a>Propriedade Application. views
 
@@ -104,8 +104,8 @@ O exemplo a seguir mostra um elemento **Application. views** que contém um mani
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

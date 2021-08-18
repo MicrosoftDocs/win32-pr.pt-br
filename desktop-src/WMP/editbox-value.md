@@ -1,9 +1,9 @@
 ---
-title: Mythe. Value
-description: O atributo Value especifica ou recupera o texto que é exibido no controle caixa de edição.
+title: EDITBOX.value
+description: O atributo value especifica ou recupera o texto exibido no controle de caixa de edição.
 ms.assetid: e9dea029-389a-4d52-8739-4a570e275840
 keywords:
-- Admy. Value Windows Media Player
+- EDITBOX.value Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 358dcafe73dd08ffa14e27c67742b6c630c19f59
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2de47d276e882f58ddc2b99d39e89ad43c3265c263e7841701ba32d8d502def
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996836"
 ---
-# <a name="editboxvalue"></a>Mythe. Value
+# <a name="editboxvalue"></a>EDITBOX.value
 
-O atributo **Value** especifica ou recupera o texto que é exibido no controle caixa de edição.
+O **atributo** value especifica ou recupera o texto exibido no controle de caixa de edição.
 
 ``` syntax
         elementID.value
@@ -29,7 +29,7 @@ O atributo **Value** especifica ou recupera o texto que é exibido no controle c
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação com um valor padrão de "" (cadeia de caracteres vazia).
+Esse atributo é uma cadeia de **caracteres** de leitura/gravação com um valor padrão de "" (cadeia de caracteres vazia).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação com um valor
 
 <dl> <dt>
 
-[**Elemento admy**](editbox-element.md)
+[**Elemento EDITBOX**](editbox-element.md)
 </dt> </dl>
 
  

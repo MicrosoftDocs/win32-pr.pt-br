@@ -33,8 +33,8 @@ ms.locfileid: "118981426"
 ---
 # <a name="esentslvealistzeroallocationexception-constructor"></a>Construtor EsentSLVEAListZeroAllocationException
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public EsentSLVEAListZeroAllocationException()
 
 [Classe EsentSLVEAListZeroAllocationException](./esentslvealistzeroallocationexception-class.md)
 
-[Membros do EsentSLVEAListZeroAllocationException](./esentslvealistzeroallocationexception-members.md)
+[Membros EsentSLVEAListZeroAllocationException](./esentslvealistzeroallocationexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,12 +4,12 @@ ms.assetid: 1466b4c7-49ea-417a-ac94-7b45515ccb96
 title: Usando nomes de tipo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dca36d7c1de587efd8d96f0c18aaca9457721714
-ms.sourcegitcommit: ecd0ba4732f5264aab9baa2839c11f7fea36318f
+ms.openlocfilehash: 38d5f1432e7680cfed63c2c210375f3b7a300fae4563ca308a3b25b8751fb139
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/07/2021
-ms.locfileid: "113481871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118971095"
 ---
 # <a name="using-kind-names"></a>Usando nomes de tipo
 
@@ -26,7 +26,7 @@ Este tópico é organizado da seguinte forma:
 
 O tipo foi introduzido no Windows Vista para expressar uma noção mais amigável de tipo de arquivo. A propriedade divide itens em tipos e fornece um Nome de tipo com o qual os usuários finais podem se identificar, como `System.Kind` Documentos, Música, Imagens e assim por diante. Portanto, os Nomes de tipo vêm a ser conhecidos como amigáveis. Como a propriedade é definida com o mesmo valor para itens do mesmo tipo de arquivo e associa itens que têm características semelhantes a uma propriedade comum, o sistema e o usuário podem agir no grupo como `System.Kind` um todo. Por exemplo, a propriedade pode ser usada para limitar uma pesquisa a itens de um tipo específico, exibir as propriedades mais relevantes para um item na exibição Conteúdo ou agrupar itens `System.Kind` semelhantes.
 
-Como Kind é uma propriedade de cadeia de caracteres de vários valores, você pode ter `audio;video` um valor `link;document` ou Kind. Um `System.Kind` valor é uma lista ordenada de valores de cadeia de caracteres. Em alguns casos, pode haver apenas um elemento nessa lista. Em outros casos, um item pode pertencer a mais de um Tipo. Para obter um exemplo de um item que pertence a mais de um Kind, consulte o exemplo de chave do Registro neste tópico. Os valores de cadeia de caracteres são de um conjunto predefinido de valores conhecidos. Os valores são comparados usando funções de comparação de cadeia de caracteres não sensíveis a maiúsculas e minúsculas e sem valor de localidade. Essas cadeias de caracteres não são localizadas.
+Como Kind é uma propriedade de cadeia de caracteres de vários valores, você pode ter `audio;video` um valor `link;document` ou Kind. Um `System.Kind` valor é uma lista ordenada de valores de cadeia de caracteres. Em alguns casos, pode haver apenas um elemento nessa lista. Em outros casos, um item pode pertencer a mais de um Tipo. Para obter um exemplo de um item que pertence a mais de um Kind, consulte o exemplo de chave do Registro neste tópico. Os valores de cadeia de caracteres são de um conjunto predefinido de valores conhecidos. Os valores são comparados usando funções de comparação de cadeia de caracteres sem valor de maiúsculas e minúsculas e sem valor de localidade. Essas cadeias de caracteres não são localizadas.
 
 Alguns nomes kind já estão associados a propriedades e padrões de layout. Por exemplo, itens associados a e itens associados a exibem propriedades diferentes mesmo quando estão na mesma exibição, devido às propriedades e padrões de layout que já estão associados a esses dois `Kind.Picture` `Kind.Document` Nomes de tipo. Cada tipo de item pode ser associado a um dos quatro padrões de layout exclusivos que define o número de propriedades exibidas para cada item e seu layout. Para obter mais informações, consulte [Exibição de conteúdo com base no tipo de arquivo ou associação de tipo](/previous-versions/windows/desktop/legacy/ee330739(v=vs.85)).
 

@@ -1,5 +1,5 @@
 ---
-description: Saiba mais sobre o elemento JobID, que especifica uma ID exclusiva para o trabalho. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Saiba mais sobre o elemento JobID, que especifica uma ID exclusiva para o trabalho. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 138a0ae5-160d-46f2-91ae-596d8892351a
 title: JobID
 ms.topic: article
@@ -13,13 +13,13 @@ ms.locfileid: "118971285"
 ---
 # <a name="jobid"></a>JobID
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
 Especifica uma ID exclusiva para o trabalho.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo estrutural](#structural-content)
--   [Conteúdo de linguagem XML (XML)](#extensible-markup-language-xml-content)
+-   [linguagem XML conteúdo (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informações do elemento
 
@@ -28,7 +28,7 @@ Especifica uma ID exclusiva para o trabalho.
 | Nome | Valor |
 |----------------------------|---------------------|
 | Tipo de elemento <br/>   | Propriedade<br/> |
-| Prefixo de escopo <br/> | Trabalho<br/>      |
+| Prefixo de definição de scoping <br/> | Trabalho<br/>      |
 | Observações <br/>          | Nenhum<br/>     |
 
 
@@ -59,7 +59,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Conteúdo de linguagem XML (XML)
+## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
 ``` syntax
 <psf:Property name="psk:JobID">

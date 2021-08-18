@@ -4,12 +4,12 @@ description: RPC via HTTP permite que os programas cliente usem a Internet para 
 ms.assetid: b5062d70-7625-4a9f-a8c1-025ef8342fcb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5860757a6c5df9937e77fc078df2526affb967fa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8775aab1771dcc6da9cade97d36c7141d6d66d8bc8172a20c8263ef64b8ed7ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010775"
 ---
 # <a name="using-http-as-an-rpc-transport"></a>Usando HTTP como um transporte RPC
 
@@ -41,7 +41,7 @@ Em que:
 -   O **RpcProxy** especifica o endereço e o número da porta do computador IIS que atua como um proxy para o servidor RPC. Você só precisará especificar isso se o processo do servidor RPC residir em um computador diferente do proxy RPC. Se você não especificar um número de porta, o stub de cliente RPC usará a porta 80 se o SSL não for especificado e usará a porta 443 se o SSL (HTTPS) for especificado.
 -   O **HttpConnectionOption** opcionalmente permite direcionar o comportamento do RPC ao fazer conexões http. O valor **UseHttpProxy** INSTRUI o RPC a rotear seu tráfego por meio do proxy http em todos os momentos, incluindo quando o cliente tem suas opções de Internet definidas no Internet Explorer como "ignorar servidor proxy para endereços locais".
 
-    Essa opção tem suporte no Windows 7, Windows Server 2008 R2, Windows 8.1 e Windows Server 2012 R2 com KB2916915 instalado. Não há suporte para essa opção no Windows 8 e no Windows Server 2012. Os aplicativos podem determinar se essa opção é suportada pelo tempo de execução RPC, verificando o valor do registro **ConnectionOptionsFlag** localizado na seguinte chave do registro:
+    essa opção tem suporte no Windows 7, Windows Server 2008 r2, Windows 8.1 e Windows Server 2012 r2 com o KB2916915 instalado. não há suporte para essa opção em Windows 8 e Windows Server 2012. Os aplicativos podem determinar se essa opção é suportada pelo tempo de execução RPC, verificando o valor do registro **ConnectionOptionsFlag** localizado na seguinte chave do registro:
 
     **HKEY \_ local \_ Machine \\ software \\ Microsoft \\ RPC**
 
@@ -53,13 +53,13 @@ O programa do servidor RPC pode aceitar chamadas RPC em túnel ouvindo na sequê
 
 A Microsoft tem duas implementações principais do RPC sobre HTTP: versão 1 e versão 2.
 
-A versão 1 (chamada RPC sobre HTTP v1) tem suporte por meio do Windows XP. A versão 1 do proxy RPC tem suporte por meio do Windows 2000.
+a versão 1 (chamada RPC sobre HTTP v1) tem suporte por meio do Windows XP. a versão 1 do proxy RPC tem suporte por meio do Windows 2000.
 
 A versão 2 (chamada RPC sobre HTTP v2) é a versão atual.
 
 As duas versões têm diferentes recursos e interoperabilidade limitada. Um resumo das diferenças é fornecido aqui. Para considerações sobre interoperabilidade, consulte [requisitos do sistema e interoperabilidade para RPC sobre http](system-requirements-and-interoperability-for-rpc-over-http.md).
 
--   RPC sobre HTTP v1 requer que o túnel SSL seja habilitado em todos os proxies/firewalls HTTP entre o cliente RPC sobre HTTP e o proxy RPC. O RPC sobre HTTP v1 tenta criar um túnel SSL pela porta 80, embora os dados enviados por ele não sejam criptografados por SSL. Os proxies e os firewalls geralmente rejeitam essas solicitações, a menos que sejam explicitamente configuradas para permiti-las. RPC sobre HTTP v2 não tem tal requisito.
+-   RPC sobre HTTP v1 requer que o túnel SSL seja habilitado em todos os proxies/firewalls HTTP entre o cliente RPC sobre HTTP e o proxy RPC. o RPC sobre HTTP v1 tenta criar um Tunnel SSL pela porta 80, embora os dados enviados por ele não sejam criptografados por ssl. Os proxies e os firewalls geralmente rejeitam essas solicitações, a menos que sejam explicitamente configuradas para permiti-las. RPC sobre HTTP v2 não tem tal requisito.
 -   RPC sobre HTTP v1 não pode estabelecer uma sessão SSL para o proxy RPC. O RPC sobre HTTP V2 pode enviar todo o tráfego RPC sobre HTTP dentro de uma sessão SSL; Por padrão v2 exige que os dados sejam enviados em uma sessão SSL.
 -   RPC sobre HTTP v1 não pode autenticar no proxy RPC. RPC sobre HTTP V2 pode autenticar; Por padrão, v2 requer autenticação para o proxy RPC.
 -   O proxy RPC v1 não funciona corretamente quando o computador IIS no qual ele está instalado faz parte de um web farm. O proxy RPC v2 funciona corretamente quando o computador IIS no qual ele está instalado faz parte de um web farm.
@@ -67,7 +67,7 @@ As duas versões têm diferentes recursos e interoperabilidade limitada. Um resu
 > [!Note]  
 > Se o Microsoft Internet Explorer estiver instalado no computador do programa cliente e o cliente não especificar um **HttpProxy** em sua associação de cadeia de caracteres, o stub do cliente RPC pesquisará o registro no computador cliente em busca de uma entrada **HttpProxy** . Se encontrar um, ele usará o proxy especificado na entrada do registro.
 
- 
+ 
 
 Suponha, por exemplo, que o programa cliente precise se conectar pela Internet a um servidor RPC em um computador chamado Server7.microsoft.com. Além disso, suponha que o proxy RPC seja executado em Major7.microsoft.com. O programa do servidor RPC escuta a porta 2225. O cliente usaria a associação de cadeia de caracteres:
 
@@ -101,9 +101,9 @@ Se a opção **HttpConnectionOption** for usada e o Internet Explorer no cliente
 
 A grande maioria dos computadores hoje está configurada para navegação na Web. Portanto, a maioria dos clientes não precisa especificar o **HttpProxy**, pois ele será recuperado das configurações de conectividade da Internet.
 
- 
+ 
 
- 
+ 
 
 
 

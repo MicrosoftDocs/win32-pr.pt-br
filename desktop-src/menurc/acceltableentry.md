@@ -1,9 +1,9 @@
 ---
 title: Estrutura ACCELTABLEENTRY
-description: Descreve os dados em um recurso de tabela de acelerador individual. A definição de estrutura fornecida aqui é apenas para fins de explicação; Ele não está presente em nenhum arquivo de cabeçalho padrão.
+description: Descreve os dados em um recurso de tabela de acelerador individual. A definição de estrutura fornecida aqui é apenas para explicação; ele não está presente em nenhum arquivo de header padrão.
 ms.assetid: 510594ae-56ea-49fb-abd3-ec06e51f2e0e
 keywords:
-- Menus de estrutura ACCELTABLEENTRY e outros recursos
+- Menus da estrutura ACCELTABLEENTRY e outros recursos
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 9ff12fe39f2ea54c90530133263bceb157d79dcf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5ef163c8473c049d3bbe6fbfa8b36876765bf07df0b26cd1d68d3f92c5d315f4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972125"
 ---
 # <a name="acceltableentry-structure"></a>Estrutura ACCELTABLEENTRY
 
-Descreve os dados em um recurso de tabela de acelerador individual. A definição de estrutura fornecida aqui é apenas para fins de explicação; Ele não está presente em nenhum arquivo de cabeçalho padrão.
+Descreve os dados em um recurso de tabela de acelerador individual. A definição de estrutura fornecida aqui é apenas para explicação; ele não está presente em nenhum arquivo de header padrão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,21 +45,21 @@ typedef struct {
 **fFlags**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Descreve as características do acelerador de teclado. Esse membro pode ter um ou mais dos seguintes valores de WinUser. h.
+Descreve as características do acelerador de teclado. Esse membro pode ter um ou mais dos valores a seguir de Winuser.h.
 
 
 
 | Valor                                                                                                                                                                                                      | Significado                                                                                                                                                                                                         |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="FVIRTKEY"></span><span id="fvirtkey"></span><dl> <dt>**FVIRTKEY**</dt> <dt>true</dt> </dl>    | A chave do acelerador é um [código de chave virtual](/windows/desktop/inputdev/virtual-key-codes). Se esse sinalizador não for especificado, a tecla aceleradora será considerada para especificar um código de caractere ASCII. <br/>                          |
-| <span id="FNOINVERT"></span><span id="fnoinvert"></span><dl> <dt>**FNOINVERT**</dt> <dt>0x02</dt> </dl> | Um item de menu na barra de menus não é realçado quando um acelerador é usado. Este atributo é obsoleto e mantido somente para compatibilidade com versões anteriores com arquivos de recursos projetados para o Windows de 16 bits.<br/> |
-| <span id="FSHIFT"></span><span id="fshift"></span><dl> <dt>**FSHIFT**</dt> <dt>0x04</dt> </dl>          | O acelerador será ativado somente se o usuário pressionar a tecla SHIFT. Esse sinalizador se aplica somente a chaves virtuais. <br/>                                                                                        |
+| <span id="FVIRTKEY"></span><span id="fvirtkey"></span><dl> <dt>**FVIRTKEY**</dt> <dt>TRUE</dt> </dl>    | A chave de acelerador é um [código de chave virtual](/windows/desktop/inputdev/virtual-key-codes). Se esse sinalizador não for especificado, supõe-se que a tecla de acelerador especifique um código de caractere ASCII. <br/>                          |
+| <span id="FNOINVERT"></span><span id="fnoinvert"></span><dl> <dt>**FNOINVERT**</dt> <dt>0x02</dt> </dl> | Um item de menu na barra de menus não é realçada quando um acelerador é usado. Esse atributo é obsoleto e mantido somente para compatibilidade com arquivos de recurso projetados para 16 bits Windows.<br/> |
+| <span id="FSHIFT"></span><span id="fshift"></span><dl> <dt>**FSHIFT**</dt> <dt>0x04</dt> </dl>          | O acelerador só será ativado se o usuário pressionar a tecla SHIFT. Esse sinalizador se aplica somente a chaves virtuais. <br/>                                                                                        |
 | <span id="FCONTROL"></span><span id="fcontrol"></span><dl> <dt>**FCONTROL**</dt> <dt>0x08</dt> </dl>    | O acelerador será ativado somente se o usuário pressionar a tecla CTRL. Esse sinalizador se aplica somente a chaves virtuais. <br/>                                                                                         |
-| <span id="FALT"></span><span id="falt"></span><dl> <dt>**FALT**</dt> <dt>0x10</dt> </dl>                | O acelerador será ativado somente se o usuário pressionar a tecla ALT. Esse sinalizador se aplica somente a chaves virtuais. <br/>                                                                                          |
+| <span id="FALT"></span><span id="falt"></span><dl> <dt>**0x10**</dt> <dt></dt> </dl>                | O acelerador será ativado somente se o usuário pressionar a tecla ALT. Esse sinalizador se aplica somente a chaves virtuais. <br/>                                                                                          |
 | <span id="0x80"></span><span id="0X80"></span><dl> <dt>**0x80**</dt> </dl>                                                                          | A entrada é a última em uma tabela de acelerador. <br/>                                                                                                                                                          |
 
 
@@ -71,18 +71,18 @@ Descreve as características do acelerador de teclado. Esse membro pode ter um o
 **wAnsi**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-Um valor de caractere ANSI ou um código de chave virtual que identifica a chave do acelerador.
+Um valor de caractere ANSI ou um código de chave virtual que identifica a chave de acelerador.
 
 </dd> <dt>
 
-**wId**
+**Wid**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
@@ -93,19 +93,19 @@ Um identificador para o acelerador de teclado. Esse é o valor passado para o pr
 **padding**
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
 </dd> <dd>
 
-O número de bytes inseridos para garantir que a estrutura seja alinhada em um limite **DWORD** .
+O número de bytes inseridos para garantir que a estrutura esteja alinhada em um **limite DWORD.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A estrutura **ACCELTABLEENTRY** é repetida para todas as entradas de tabela de acelerador no recurso. A última entrada na tabela é sinalizada com o valor 0x0080.
+A **estrutura ACCELTABLEENTRY** é repetida para todas as entradas de tabela de acelerador no recurso. A última entrada na tabela é sinalizada com o valor 0x0080.
 
-Você pode calcular o número de elementos na tabela se dividir o comprimento do recurso em oito. Em seguida, seu aplicativo pode acessar aleatoriamente as entradas individuais de comprimento fixo.
+Você poderá calcular o número de elementos na tabela se dividir o comprimento do recurso por oito. Em seguida, seu aplicativo pode acessar aleatoriamente as entradas de comprimento fixo individuais.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -128,7 +128,7 @@ Você pode calcular o número de elementos na tabela se dividir o comprimento do
 [**CreateAcceleratorTable**](/windows/desktop/api/Winuser/nf-winuser-createacceleratortablea)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Recursos](resources.md)

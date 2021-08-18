@@ -16,12 +16,12 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 5796afb061bdc758bba020384501699fe3627e16
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: c3be80fd71504f068da3ab8d40974b6ee397074e1b476e21c1f5f6901235671a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106388839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035924"
 ---
 # <a name="span-idwwan_profile_v4element_1_compressionspanmodemdmconfigprofilecompression-v4"></a><span id="WWAN_profile_v4.element_1_Compression"></span>ModemDMConfigProfile \/ ... \/ Compactação (v4)
 
@@ -39,7 +39,7 @@ Para obter mais informações, consulte a documentação do elemento de [**compa
 &nbsp;&nbsp;[\<Context\>](element-1-context.md)  
 &nbsp;&nbsp;&nbsp;&nbsp;**\<Compression\>**
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <Compression>

@@ -1,6 +1,6 @@
 ---
-title: Usar o sinalizador /robust
-description: Sempre compile arquivos .idl usando a opção /robust.
+title: Usar o sinalizador/robust
+description: Sempre compile arquivos. idl usando a opção/robust
 ms.assetid: bb2fd026-3ad8-4bb5-b05e-4835b874882f
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119010884"
 ---
-# <a name="use-the-robust-flag"></a>Usar o sinalizador /robust
+# <a name="use-the-robust-flag"></a>Usar o sinalizador/robust
 
-Sempre compile arquivos .idl usando a [**opção /robust.**](/windows/desktop/Midl/-robust) O uso da opção **/robust** gera informações adicionais que permitem que o mecanismo de NDR (Representação de Dados de Rede) execute a verificação de erro em tempo de execução em argumentos correlacionados em matrizes dinâmicas, uniões e ponteiros de interface de saída em aplicativos COM e RPC. Se o software não for compilado com esse sinalizador, o software será tão exposto a ataques que nenhum esforço em nenhuma outra área poderá protegê-lo.
+Sempre compile arquivos. idl usando a opção [**/robust**](/windows/desktop/Midl/-robust) O uso da opção **/robust** gera informações adicionais que permitem que o mecanismo de representação de dados de rede (NDR) execute a verificação de erros em tempo de execução em argumentos correlacionados em matrizes dinâmicas, uniões e ponteiros de interface em aplicativos com e RPC. Se o software não conseguir compilar com esse sinalizador, o software será tão exposto a ataques que nenhum esforço em nenhuma outra área poderá protegê-lo.
 
  
 

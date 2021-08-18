@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. currentEffectPresetCount
+title: EFFECTS.currentEffectPresetCount
 description: O atributo currentEffectPresetCount recupera o número de predefinições disponíveis para a visualização atual.
 ms.assetid: 8dba1414-f965-4709-b8ae-44be231b3f0c
 keywords:
-- EFFECTs. currentEffectPresetCount Windows Media Player
+- EFFECTS.currentEffectPresetCount Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cca60843fa8a2f27fd1cfb9cba7f038acbcc44f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e16ef4f7544bdeda3d8bf29f7170ada048c8574d53ac8d6f098eadbcaef6c0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996826"
 ---
-# <a name="effectscurrenteffectpresetcount"></a>EFFECTs. currentEffectPresetCount
+# <a name="effectscurrenteffectpresetcount"></a>EFFECTS.currentEffectPresetCount
 
-O atributo **currentEffectPresetCount** recupera o número de predefinições disponíveis para a visualização atual.
+O **atributo currentEffectPresetCount** recupera o número de predefinições disponíveis para a visualização atual.
 
 ``` syntax
         elementID.currentEffectPresetCount
@@ -29,7 +29,7 @@ O atributo **currentEffectPresetCount** recupera o número de predefinições di
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **número** somente leitura (**Long**).
+Esse atributo é um Número somente **leitura** (**long).**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é um **número** somente leitura (**Long**).
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Esse atributo é um **número** somente leitura (**Long**).
 
 <dl> <dt>
 
-[**Elemento EFFECTs**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> </dl>
 
  

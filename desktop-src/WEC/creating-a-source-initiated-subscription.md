@@ -1,31 +1,31 @@
 ---
-title: Criando uma assinatura iniciada pelo código-fonte
-description: As assinaturas iniciadas pela origem permitem que você defina uma assinatura em um computador do coletor de eventos sem definir os computadores de origem do evento e, em seguida, vários computadores remotos de origem do evento podem ser configurados (usando uma configuração de política de grupo) para encaminhar eventos para o computador do coletor de eventos. Antes que um computador local possa assinar eventos e um computador remoto possa encaminhar eventos, ambos os computadores devem ser configurados para coleta de eventos e encaminhamento de eventos. Para obter mais informações sobre como configurar os computadores, consulte Configurando uma assinatura iniciada por origem.
+title: Criando uma assinatura iniciada por origem
+description: As assinaturas iniciadas pela origem permitem definir uma assinatura em um computador coletor de eventos sem definir os computadores de origem do evento e, em seguida, vários computadores de origem de eventos remotos podem ser definidos (usando uma configuração de política de grupo) para encaminhar eventos para o computador do coletor de eventos. Antes que um computador local possa assinar eventos e um computador remoto possa encaminhar eventos, ambos os computadores devem ser definidos para coleta de eventos e encaminhamento de eventos. Para obter mais informações sobre como configurar os computadores, consulte Configurando uma assinatura iniciada por origem.
 ms.assetid: 489d3613-177f-4045-a055-2c1577ef2191
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06e0e6d4aa7c94afcdbe6458c2c23c214d935db2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ef0f3a40b3404441df40434c7ddb2f1bb6ac578caaf182c14d2825c6f99e7f9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641533"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997966"
 ---
-# <a name="creating-a-source-initiated-subscription"></a>Criando uma assinatura iniciada pelo código-fonte
+# <a name="creating-a-source-initiated-subscription"></a>Criando uma assinatura iniciada por origem
 
-As assinaturas iniciadas pela origem permitem que você defina uma assinatura em um computador do coletor de eventos sem definir os computadores de origem do evento e, em seguida, vários computadores remotos de origem do evento podem ser configurados (usando uma configuração de política de grupo) para encaminhar eventos para o computador do coletor de eventos. Antes que um computador local possa assinar eventos e um computador remoto possa encaminhar eventos, ambos os computadores devem ser configurados para coleta de eventos e encaminhamento de eventos. Para obter mais informações sobre como configurar os computadores, consulte [Configurando uma assinatura iniciada por origem](setting-up-a-source-initiated-subscription.md).
+As assinaturas iniciadas pela origem permitem definir uma assinatura em um computador coletor de eventos sem definir os computadores de origem do evento e, em seguida, vários computadores de origem de eventos remotos podem ser definidos (usando uma configuração de política de grupo) para encaminhar eventos para o computador do coletor de eventos. Antes que um computador local possa assinar eventos e um computador remoto possa encaminhar eventos, ambos os computadores devem ser definidos para coleta de eventos e encaminhamento de eventos. Para obter mais informações sobre como configurar os computadores, consulte [Configurando uma assinatura iniciada por origem.](setting-up-a-source-initiated-subscription.md)
 
-O exemplo de código a seguir segue uma série de etapas para criar uma assinatura iniciada pela fonte em que as origens do evento estão no mesmo domínio que o computador do coletor de eventos.
+O exemplo de código a seguir segue uma série de etapas para criar uma assinatura iniciada por origem em que as fontes de evento estão no mesmo domínio que o computador do coletor de eventos.
 
-**Para criar programaticamente uma assinatura iniciada pela fonte**
+**Para criar programaticamente uma assinatura iniciada por origem**
 
-1.  Abra a assinatura fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a função [**EcOpenSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) . Para obter mais informações sobre direitos de acesso, consulte as [**constantes do coletor de eventos do Windows**](windows-event-collector-constants.md).
-2.  Defina as propriedades da assinatura chamando a função [**EcSetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) . Para obter mais informações sobre as propriedades de assinatura que podem ser definidas, consulte a enumeração de [**ID de propriedade da assinatura do EC \_ \_ \_**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) .
-3.  Salve a assinatura chamando a função [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription) .
-4.  Feche a assinatura chamando a função [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose) .
+1.  Abra a assinatura fornecendo o nome da assinatura e os direitos de acesso como parâmetros para a [**função EcOpenSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecopensubscription) Para obter mais informações sobre direitos de acesso, [**consulte constantes Windows coletor de eventos**](windows-event-collector-constants.md).
+2.  De definir as propriedades da assinatura chamando a [**função EcSetSubscriptionProperty.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetsubscriptionproperty) Para obter mais informações sobre as propriedades de assinatura que podem ser definidas, consulte a [**enumeração \_ \_ \_ ID**](/windows/desktop/api/Evcoll/ne-evcoll-ec_subscription_property_id) da PROPRIEDADE DA ASSINATURA EC.
+3.  Salve a assinatura chamando a [**função EcSaveSubscription.**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
+4.  Feche a assinatura chamando a [**função EcClose.**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 
-O exemplo de C++ a seguir mostra como criar uma assinatura de origem iniciada:
+O exemplo C++ a seguir mostra como criar uma assinatura iniciada por origem:
 
 
 ```C++
@@ -417,18 +417,18 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 
 1.  No computador do coletor de eventos, conclua o seguinte procedimento:
 
-    1.  Execute o comando a seguir em um prompt de comando de privilégio elevado para obter o status de tempo de execução da assinatura:
+    1.  Execute o seguinte comando em um prompt de comando com privilégios elevados para obter o status de runtime da assinatura:
 
         **wecutil gr***<subscriptionID>*
 
-    2.  Verifique se a origem do evento está conectada. Talvez seja necessário aguardar até que o intervalo de atualização especificado na política fique acima depois que você criar a assinatura para a origem do evento ser conectada.
-    3.  Execute o seguinte comando para obter as informações de assinatura:
+    2.  Verifique se a origem do evento se conectou. Talvez seja necessário aguardar até que o intervalo de atualização especificado na política tenha acabado depois de criar a assinatura para que a origem do evento seja conectada.
+    3.  Execute o seguinte comando para obter as informações da assinatura:
 
-        **wecutil GS***<subscriptionID>*
+        **wecutil gs***<subscriptionID>*
 
-    4.  Obtenha o valor de DeliveryMaxItems das informações de assinatura.
+    4.  Obter o valor DeliveryMaxItems das informações da assinatura.
 
-2.  No computador de origem do evento, gere os eventos que correspondem à consulta da assinatura do evento. O número DeliveryMaxItems de eventos deve ser gerado para que os eventos sejam encaminhados.
+2.  No computador de origem do evento, aumente os eventos que corresponderem à consulta da assinatura do evento. O número deliveryMaxItems de eventos deve ser gerado para que os eventos sejam encaminhados.
 3.  No computador do coletor de eventos, valide se os eventos foram encaminhados para o log ForwardedEvents ou para o log especificado na assinatura.
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -438,12 +438,12 @@ DWORD GetProperty(EC_HANDLE hSubscription,
 [Configurar computadores para encaminhar e coletar eventos](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11))
 </dt> <dt>
 
-[Configurando uma assinatura iniciada pela origem](setting-up-a-source-initiated-subscription.md)
+[Configurando uma assinatura iniciada por origem](setting-up-a-source-initiated-subscription.md)
 </dt> <dt>
 
-[Referência do coletor de eventos do Windows](windows-event-collector-reference.md)
+[Windows Referência do coletor de eventos](windows-event-collector-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,9 +1,9 @@
 ---
-title: comando de captura
-description: O comando Capture copia o conteúdo do buffer de quadro e o armazena no arquivo especificado. Dispositivos de vídeo digital reconhecem este comando.
+title: Comando capture
+description: O comando capture copia o conteúdo do buffer de quadro e o armazena no arquivo especificado. Os dispositivos de vídeo digital reconhecem esse comando.
 ms.assetid: cdf177b9-874e-40d8-af3e-59070c55903d
 keywords:
-- Multimídia do Windows de comando de captura
+- comando capture Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdf5edce248fc5402245e36e869cddc97ba3430a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 68bc32fd247cbe3519fbffad778b33679e3b71c652b476f557db5a910e87721c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118941514"
 ---
-# <a name="capture-command"></a>comando de captura
+# <a name="capture-command"></a>Comando capture
 
-O comando Capture copia o conteúdo do buffer de quadro e o armazena no arquivo especificado. Dispositivos de vídeo digital reconhecem este comando.
+O comando capture copia o conteúdo do buffer de quadro e o armazena no arquivo especificado. Os dispositivos de vídeo digital reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -55,8 +55,8 @@ Um ou mais dos seguintes sinalizadores:
 
 | Valor          | Significado                                                                                                                                                                                                                                                   |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| como *nome do caminho*  | Especifica o caminho de destino e o nome do arquivo para a imagem capturada. Esse sinalizador é necessário.                                                                                                                                                                |
-| no *retângulo* | Especifica a região retangular dentro do buffer de quadro que o dispositivo corta e salva em disco. Se omitido, a região cortada usa como padrão o retângulo especificado ou padronizado em um comando "Source" de [Put](put.md) anterior para essa instância de dispositivo. |
+| como *pathname*  | Especifica o caminho de destino e o nome do arquivo para a imagem capturada. Esse sinalizador é necessário.                                                                                                                                                                |
+| retângulo *em* | Especifica a região retangular dentro do buffer de quadro que o dispositivo cortará e salvará em disco. Se omitido, a região cortada assume como padrão o retângulo especificado ou padrão em um comando [put](put.md) "source" anterior para esta instância do dispositivo. |
 
 
 
@@ -67,17 +67,17 @@ Um ou mais dos seguintes sinalizadores:
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "Notify", "Test" ou uma combinação desses. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify", "test" ou uma combinação deles. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Esse comando poderá falhar se o dispositivo estiver executando o vídeo de movimento no momento ou executando alguma outra operação de uso intensivo de recursos. Se o buffer de quadros estiver sendo atualizado em tempo real, a atualização pausará momentaneamente para que uma imagem completa seja capturada. Se o dispositivo pausar a atualização, poderá haver um efeito visual ou audível. Se o formato de arquivo, o algoritmo de compactação e os níveis de qualidade não tiverem sido definidos, seus padrões serão usados.
+Esse comando poderá falhar se o dispositivo estiver executando vídeo de movimento no momento ou executando outra operação com uso intensivo de recursos. Se o buffer de quadro estiver sendo atualizado em tempo real, a atualização pausa momentaneamente para que uma imagem completa seja capturada. Se o dispositivo pausar a atualização, poderá haver um efeito visual ou audível. Se o formato de arquivo, o algoritmo de compactação e os níveis de qualidade não foram definidos, seus padrões serão usados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,13 +94,13 @@ Esse comando poderá falhar se o dispositivo estiver executando o vídeo de movi
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)
 </dt> <dt>
 
-[Posicione](put.md)
+[Colocar](put.md)
 </dt> </dl>
 
  

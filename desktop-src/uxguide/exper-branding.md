@@ -4,17 +4,17 @@ description: A identidade visual é o posicionamento emocional de um produto, co
 ms.assetid: 49c10879-2f3a-4dff-b628-8d70e389fae6
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: ea9954c7ce0c082cf6b1b692cdccf5a7d6a3a132
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 91d1446d3d3f499f0b56f857b4e2806e266e32df1bb4120d93416eb1cb225581
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104560427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119090492"
 ---
 # <a name="software-branding"></a>Identidade visual do software
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
 A identidade visual é o posicionamento emocional de um produto, conforme percebido por seus clientes. A identidade visual bem-sucedida requer a criação de Skillful de uma imagem de produto e não é obtida apenas por meio de logotipos de produto e esquemas de cores.
 
@@ -69,7 +69,7 @@ Elementos de identidade visual de software podem ser categorizados da seguinte m
 
 ![captura de tela do logotipo do Windows ](images/exper-branding-image1.png)![captura de tela de temas do Windows ](images/exper-branding-image2.png)
 
-Alguns elementos de identidade visual principais do Windows Vista.
+alguns elementos de identidade visual principais do Windows Vista.
 
 Os elementos de identidade visual primária tendem a atrair muita atenção, portanto, devem ser usados com o retentor. **Limite seu uso de elementos de identidade visual primária a algumas experiências estratégicas.** Os sons específicos do produto não são recomendados para a maioria dos programas.
 
@@ -88,7 +88,7 @@ Os elementos de identidade visual primária tendem a atrair muita atenção, por
 
 ![Figura de design em cores sólidas e primárias ](images/exper-branding-image4.png)![figura do design do tipo azul e verde da faixa de bits ](images/exper-branding-image5.png)
 
-Alguns elementos secundários de identidade visual do Windows Vista.
+alguns elementos secundários de identidade visual do Windows Vista.
 
 Os elementos de identidade visual secundária tendem a ser mais sutis e, por isso, eles podem ser usados com mais frequência. Embora alguns desses elementos de identidade visual secundárias possam não ter muito impacto individualmente, quando juntos, eles podem fornecer seu caractere e estilo de produto. As transições podem ter mais impacto do que os elementos gráficos fixos, que os usuários aprendem a ignorar ao longo do tempo. Prefira o nível secundário de identidade visual no nível primário.
 
@@ -116,9 +116,9 @@ Concentre seu esforço de identidade visual em experiências especiais em seu pr
 
 ### <a name="where-not-to-brand"></a>Onde não marca
 
-Embora você possa potencialmente usar qualquer elemento em seu programa como uma oportunidade de identidade visual, não use a área de trabalho do Windows (incluindo a [área](glossary.md), a [barra de início rápido](glossary.md)ou a [área de notificação](winenv-notification.md)) para identidade visual.
+embora você possa usar qualquer elemento em seu programa como uma oportunidade de identidade visual, não use o Windows desktop (incluindo a [área de trabalho](glossary.md), a [barra de início rápido](glossary.md)ou a [área de notificação](winenv-notification.md)) para a identidade visual.
 
-**A área de trabalho é o ponto de entrada do usuário para o Windows. Deixe o usuário no controle.** Use esses pontos de entrada adequadamente – nunca os exiba como maneiras de promover a conscientização do seu programa ou de sua marca. Para obter mais informações, consulte [área de trabalho](winenv-desktop.md).
+**A área de trabalho é o ponto de entrada do usuário para Windows. Deixe o usuário no controle.** Use esses pontos de entrada adequadamente – nunca os exiba como maneiras de promover a conscientização do seu programa ou de sua marca. Para obter mais informações, consulte [área de trabalho](winenv-desktop.md).
 
 ### <a name="use-branding-professionals"></a>Usar profissionais de identidade visual
 
@@ -153,10 +153,10 @@ A identidade visual é uma habilidade especializada que é melhor feita por prof
 
     ![captura de tela do painel de controle sem logotipo](images/exper-branding-image7.png)
 
-    No exemplo melhor, um elemento gráfico secundário é usado em vez do logotipo do produto para itens do painel de controle do Windows.
+    no exemplo melhor, um elemento gráfico secundário é usado em vez do logotipo do produto para Windows itens do painel de controle.
 
 -   **Não use a identidade visual que seja confuso ou danifique a usabilidade ou o desempenho.**
--   **Não use a área de trabalho do Windows para identidade visual.** Para obter mais informações, consulte [área de trabalho](winenv-desktop.md).
+-   **não use a área de trabalho Windows para identidade visual.** Para obter mais informações, consulte [área de trabalho](winenv-desktop.md).
 
 ### <a name="names-and-logos"></a>Nomes e logotipos
 

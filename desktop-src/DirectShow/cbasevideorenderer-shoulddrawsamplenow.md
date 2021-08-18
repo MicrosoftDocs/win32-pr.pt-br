@@ -1,7 +1,7 @@
 ---
-description: O método ShouldDrawSampleNow determina se o vídeo deve ser desenhado sem definir um link de aviso de temporizador com o relógio.
+description: O método ShouldDrawSampleNow determina se o vídeo deve ser desenhado sem configurar um link de aviso do temporizador com o relógio.
 ms.assetid: 2cbefc66-0d99-4559-b210-3163cd413dbf
-title: Método CBaseVideoRenderer. ShouldDrawSampleNow (Renbase. h)
+title: Método CBaseVideoRenderer.ShouldDrawSampleNow (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8c96b7453eb6009121fd6782030f7988663f5e8f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e3c0297ccf670de12380c5f02af2c67d6050bac29dd1fa7e7e89a6e6c7c20592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074680"
 ---
-# <a name="cbasevideorenderershoulddrawsamplenow-method"></a>Método CBaseVideoRenderer. ShouldDrawSampleNow
+# <a name="cbasevideorenderershoulddrawsamplenow-method"></a>Método CBaseVideoRenderer.ShouldDrawSampleNow
 
-O `ShouldDrawSampleNow` método determina se o vídeo deve ser desenhado sem definir um link de aviso de temporizador com o relógio.
+O método determina se o vídeo deve ser desenhado sem `ShouldDrawSampleNow` definir um link de aviso do temporizador com o relógio.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,24 +54,24 @@ Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strm
 *ptrStart* 
 </dt> <dd>
 
-Ponteiro para o tempo para começar a renderização.
+Ponteiro para a hora de início da renderização.
 
 </dd> <dt>
 
 *ptrEnd* 
 </dt> <dd>
 
-Ponteiro para a hora para parar a renderização.
+Ponteiro para o tempo para parar a renderização.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Retorna S \_ OK para a média desenhar ao mesmo tempo sem espera, S \_ false para significar Draw no time *ptrStart* ou um erro para significar não desenhar o exemplo; ou seja, ignorá-lo para economizar tempo.
+Retorna um **valor HRESULT.** Retorna S OK para desenhar de uma vez sem esperar, S FALSE para significar desenhar no momento \_ \_ *ptrStart* ou um erro para significar que não desenhar o exemplo; ou seja, ignore-o para economizar tempo.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função de membro substitui [**CBaseRenderer:: ShouldDrawSampleNow**](cbaserenderer-shoulddrawsamplenow.md).
+Essa função membro substitui [**CBaseRenderer::ShouldDrawSampleNow**](cbaserenderer-shoulddrawsamplenow.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Essa função de membro substitui [**CBaseRenderer:: ShouldDrawSampleNow**](cbas
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

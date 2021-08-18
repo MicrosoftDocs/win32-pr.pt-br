@@ -1,7 +1,7 @@
 - name: Coletor de Eventos do Windows
   href: windows-event-collector.md
   items:
-    - name: Usando o coletor de eventos do Windows
+    - name: usando Windows coletor de eventos
       href: using-windows-event-collector.md
       items:
         - name: Criando uma assinatura iniciada pelo coletor
@@ -27,14 +27,14 @@
           href: removing-an-event-source-from-an-event-collector-subscription.md
         - name: Repetindo uma assinatura do coletor de eventos
           href: retrying-an-event-collector-subscription.md
-    - name: Referência do coletor de eventos do Windows
+    - name: Windows Referência do coletor de eventos
       href: windows-event-collector-reference.md
       items:
-        - name: Constantes do coletor de eventos do Windows
+        - name: Windows Constantes do coletor de eventos
           href: windows-event-collector-constants.md
-        - name: Tipos de dados do coletor de eventos do Windows
+        - name: Windows Tipos de dados do coletor de eventos
           href: windows-event-collector-data-types.md
-        - name: Enumerações do coletor de eventos do Windows
+        - name: Windows Enumerações do coletor de eventos
           href: windows-event-collector-enumerations.md
           items:
             - name: EC_SUBSCRIPTION_CONFIGURATION_MODE
@@ -55,7 +55,7 @@
               href: /windows/win32/api/Evcoll/ne-evcoll-ec_subscription_type
             - name: EC_VARIANT_TYPE
               href: /windows/win32/api/Evcoll/ne-evcoll-ec_variant_type
-        - name: Funções do coletor de eventos do Windows
+        - name: Windows Funções do coletor de eventos
           href: windows-event-collector-functions.md
           items:
             - name: EcClose
@@ -88,7 +88,7 @@
               href: /windows/desktop/api/Evcoll/nf-evcoll-ecremoveobjectarrayelement
             - name: EcRetrySubscription
               href: /windows/desktop/api/Evcoll/nf-evcoll-ecretrysubscription
-        - name: Estruturas do coletor de eventos do Windows
+        - name: Windows Estruturas do coletor de eventos
           href: windows-event-collector-structures.md
           items:
             - name: EC_VARIANT

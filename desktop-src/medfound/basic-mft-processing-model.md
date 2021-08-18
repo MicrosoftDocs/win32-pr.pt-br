@@ -4,12 +4,12 @@ ms.assetid: be977d75-999e-4e57-9672-00a89246a2c1
 title: Modelo de processamento de MFT básico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ca54df6d9765aaf54456c3d9dc4461a82a93d41
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19a1edb0c5144c6e3a3e1825e637cd5d19049699ad60bbf764629c9ade7cd3aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035444"
 ---
 # <a name="basic-mft-processing-model"></a>Modelo de processamento de MFT básico
 
@@ -52,7 +52,7 @@ Alguns MFTs podem fornecer outras opções, como uma função de criação espec
 
 ### <a name="get-stream-identifiers"></a>Obter identificadores de fluxo
 
-Uma MFT tem um ou mais *fluxos*. Os fluxos de entrada recebem dados de entrada e os fluxos de saída geram dados de saída. Os fluxos não são representados como objetos distintos. Em vez disso, vários métodos de MFT usam identificadores de fluxo como parâmetros.
+Uma MFT tem um ou mais *fluxos*. Os fluxos de entrada recebem dados de entrada e os fluxos de saída geram dados de saída. os Fluxos não são representados como objetos distintos. Em vez disso, vários métodos de MFT usam identificadores de fluxo como parâmetros.
 
 Alguns MFTs permitem que o cliente adicione ou remova fluxos de entrada. Durante o streaming, um MFT pode adicionar ou remover fluxos de saída. (O cliente não pode adicionar ou remover fluxos de saída.)
 
@@ -120,7 +120,7 @@ Opcionalmente, uma MFT pode dar suporte a algumas extensões para o modelo de st
 -   Fluxos de leitura lenta. Se o método [**IMFTransform:: GetOutputStreamInfo**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputstreaminfo) retornar o sinalizador de **\_ \_ \_ \_ leitura lenta do fluxo de saída do MFT** para um fluxo de saída, o cliente não precisará coletar dados desse fluxo de saída. O MFT continua aceitando a entrada e, em algum momento, o MFT descartará os dados de saída desse fluxo. Se todos os fluxos de saída tiverem esse sinalizador, o MFT nunca falhará ao aceitar a entrada. Um exemplo pode ser uma transformação de visualização, em que o cliente obtém a saída somente quando tem ciclos de CPU sobressalentes para desenhar a visualização.
 -   Fluxos descartados. Se o método [**GetOutputStreamInfo**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputstreaminfo) retornar o **sinalizador \_ \_ \_ descartado do fluxo de saída do MFT** para um fluxo de saída, o cliente poderá solicitar que o MFT descarte a saída, mas o MFT não descartará nenhuma saída, a menos que solicitado. Quando o MFT atinge seu buffer de entrada máximo, o cliente deve coletar alguns dados de saída ou solicitar o MFT para descartar a saída.
 -   Fluxos opcionais. Se o método [**GetOutputStreamInfo**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getoutputstreaminfo) retornar o **sinalizador \_ \_ \_ opcional do fluxo de saída do MFT** para um fluxo de saída ou o método [**IMFTransform:: GetInputStreamInfo**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputstreaminfo) retornar o sinalizador **\_ \_ \_ opcional do fluxo de entrada do MFT** para um fluxo de entrada, esse fluxo será opcional. O cliente não precisa definir um tipo de mídia no fluxo. Se o cliente não definir o tipo, o fluxo será desmarcado. Um fluxo de saída desmarcado não produz amostras e o cliente não fornece um buffer para o fluxo quando chama [**ProcessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput). Um fluxo de entrada desmarcado não aceita dados de entrada. Um MFT pode marcar todos os seus fluxos de entrada e saída como opcionais. No entanto, espera-se que pelo menos uma entrada e uma saída devam ser selecionadas para que o MFT funcione.
--   Processamento assíncrono. O modelo de processamento assíncrono foi introduzido no Windows 7. Ele é descrito no tópico [MFTs assíncrona](asynchronous-mfts.md).
+-   Processamento assíncrono. o modelo de processamento assíncrono foi introduzido no Windows 7. Ele é descrito no tópico [MFTs assíncrona](asynchronous-mfts.md).
 
 ## <a name="imf2dbuffer"></a>IMF2DBuffer
 

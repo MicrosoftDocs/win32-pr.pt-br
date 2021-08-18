@@ -1,6 +1,6 @@
 ---
 title: g_wszWMACFoldDownXToYChannels
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | g_wszWMACFoldDownXToYChannels
+description: para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte Windows áudio de mídia e o Codec de vídeo e APIs do DSP. | g_wszWMACFoldDownXToYChannels
 ms.assetid: fba57510-f609-42f9-b33d-16668fd0f2fa
 keywords:
 - g_wszWMACFoldDownXToYChannels o formato Windows Media
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c45dbd46274daa243f3e005bfcdfe0ad4d5b69ab
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: e04ae2a0ade0a9affe5d1f666f22762179b7b596072c7b700ca369460229f78a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105790298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119085758"
 ---
 # <a name="g_wszwmacfolddownxtoychannels"></a>g \_ wszWMACFoldDownXToYChannels
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte [Windows áudio de mídia e o Codec de vídeo e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

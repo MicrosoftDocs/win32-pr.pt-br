@@ -1,29 +1,29 @@
 ---
-title: Para alterar as versões do perfil do sistema
-description: Para alterar as versões do perfil do sistema
+title: Para alterar versões de perfil do sistema
+description: Para alterar versões de perfil do sistema
 ms.assetid: 66bf4041-47b5-41b4-abb4-eb08d05e3b28
 keywords:
 - perfis, sistema
-- perfis de sistema, versões
+- perfis do sistema, versões
 - perfis do sistema, alterando versões
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 824e2b1cf4a43cef0e87daa461c6510a6672472d
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: c963a142c879242b5e2ae734dedb4073a120a57a9121c3f3f95e5838c15110a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104293782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119084259"
 ---
-# <a name="to-change-system-profile-versions"></a>Para alterar as versões do perfil do sistema
+# <a name="to-change-system-profile-versions"></a>Para alterar versões de perfil do sistema
 
-Sempre que você cria um objeto do Gerenciador de perfis, ele analisa os perfis de sistema. Você pode iterar pelos perfis de sistema usando os métodos [**IWMProfileManager:: GetSystemProfileCount**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-getsystemprofilecount) e [**IWMProfileManager:: LoadSystemProfile**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-loadsystemprofile) , mas o Gerenciador de perfis contará e listará somente os perfis de uma única versão por vez. Se desejar usar esse método de localização de perfis de sistema, você precisará garantir que o Gerenciador de perfis lida com a versão desejada. Use os métodos da interface [**IWMProfileManager2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager2) para definir e recuperar a versão do perfil do sistema usada pelo Gerenciador de perfis.
+Sempre que você cria um objeto do gerenciador de perfil, ele analisará os perfis do sistema. Você pode iterar pelos perfis do sistema usando os métodos [**IWMProfileManager::GetSystemProfileCount**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-getsystemprofilecount) e [**IWMProfileManager::LoadSystemProfile,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmprofilemanager-loadsystemprofile) mas o gerenciador de perfil contará e lista apenas os perfis de uma única versão por vez. Se você quiser usar esse método de localizar perfis do sistema, precisará garantir que o manger de perfil lida com a versão que você deseja. Use os métodos da interface [**IWMProfileManager2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmprofilemanager2) para definir e recuperar a versão do perfil do sistema usada pelo gerenciador de perfil.
 
-As versões são especificadas usando os membros do tipo de enumeração de [**\_ versão WMT**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_version) . Se você definir a versão do perfil do sistema como WMT \_ Ver \_ 9 \_ 0, a chamada terá sucesso, mas a contagem do perfil do sistema será zero. Isso ocorre porque nenhum perfil de sistema predefinido usa os codecs de áudio do Windows Media e vídeo 9 Series. Para obter mais informações sobre como atualizar perfis para usar os codecs mais recentes, consulte [reutilizando configurações de fluxo](reusing-stream-configurations.md).
+As versões são especificadas usando os membros do tipo de [**enumeração WMT \_ VERSION.**](/previous-versions/windows/desktop/api/Wmsdkidl/ne-wmsdkidl-wmt_version) Se você definir a versão do perfil do sistema como WMT \_ VER \_ 9 0, a chamada terá êxito, mas a contagem de perfil do sistema \_ será zero. Isso porque nenhum perfil de sistema predefinido usa os codecs Windows Media Audio e Video 9 Series. Para obter mais informações sobre como atualizar perfis para usar os codecs mais novos, consulte [Reutilizando configurações de fluxo.](reusing-stream-configurations.md)
 
-Se você carregar um perfil do sistema por seu identificador GUID, não importa qual versão do perfil do sistema o Gerenciador de perfis está usando. Para obter mais informações sobre como carregar perfis de sistema, consulte [para carregar um perfil do sistema](to-load-a-system-profile.md).
+Se você carregar um perfil do sistema por seu identificador guid, não importa qual versão do perfil do sistema o gerenciador de perfil está usando. Para obter mais informações sobre como carregar perfis do sistema, [consulte Para carregar um perfil do sistema.](to-load-a-system-profile.md)
 
-O código de exemplo a seguir mostra como definir e recuperar a versão do perfil do sistema. Este exemplo usa printf para saída de console e requer que stdio. h seja incluído. Para obter mais informações sobre como usar esse código, consulte [usando os exemplos de código](using-the-code-examples.md).
+O código de exemplo a seguir mostra como definir e recuperar a versão do perfil do sistema. Este exemplo usa printf para a saída do console e requer que stdio.h seja incluído. Para obter mais informações sobre como usar esse código, [consulte Usando os exemplos de código](using-the-code-examples.md).
 
 
 ```C++
@@ -134,12 +134,12 @@ int main(void)
 
 <dl> <dt>
 
-[**Usando perfis de sistema**](using-system-profiles.md)
+[**Usando perfis do sistema**](using-system-profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

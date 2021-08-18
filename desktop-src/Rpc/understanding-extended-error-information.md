@@ -4,16 +4,16 @@ description: Informações de erro estendidas são uma matriz de registros, cada
 ms.assetid: 1b112e49-bdb2-4014-b86d-3c6d8ebe4fcd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b2918caa446f7cee9c4eaa609a5713c9cb385e4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e003214198b06f04479ec4c1a8d23cb1acedafda49eefcf2880741416901323e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011054"
 ---
 # <a name="understanding-extended-error-information"></a>Noções básicas sobre informações de erro estendidas
 
-Informações de erro estendidas são uma matriz de registros, cada um indicando a passagem do código de erro por meio de uma camada específica no sistema ou aplicativo. Se ocorrer um erro em um computador C, como ele é chamado a partir da máquina B, que, por sua vez, é chamado do computador A, o tempo de execução do RPC no computador C gera um ou mais registros que descrevem o erro e os transmite para a máquina B. a máquina B pode adicionar um ou mais registros ao início da cadeia existente e passa a cadeia completa para um. Um pode adicionar um ou mais registros e exibir ou registrar as informações. Essencialmente, em seguida, a cadeia de erros estendidos representa o histórico do erro.
+Informações de erro estendidas são uma matriz de registros, cada um indicando a passagem do código de erro por meio de uma camada específica no sistema ou aplicativo. Se ocorrer um erro em um computador C, como ele é chamado a partir da máquina B, que, por sua vez, é chamado do computador A, o tempo de execução do RPC no computador C gera um ou mais registros que descrevem o erro e os transmite para a máquina B. a máquina B pode adicionar um ou mais registros ao início da cadeia existente,  e passa a cadeia completa para um. Um pode adicionar um ou mais registros e exibir ou registrar as informações. Essencialmente, em seguida, a cadeia de erros estendidos representa o histórico do erro.
 
 As informações de erro estendidas não substituem o código de erro (o \_ código de status RPC S \_ \* ). Independentemente de quanto ou se as informações de erro estendidas forem geradas, o código de erro permanecerá inalterado.
 
@@ -32,11 +32,11 @@ Cada registro de informações de erro estendido contém o seguinte. Consulte [*
     | Registro \# 1 gerado pela máquina A | \-                 |
     | Registro \# 2 gerado pela máquina A | \-                 |
     | Registro \# 3 gerado pelo computador A | \-                 |
-    | Início da cadeia                 |                    |
+    | Início da cadeia                 |                    |
 
     
 
-     
+     
 
 <!-- -->
 
@@ -59,7 +59,7 @@ Cada registro de informações de erro estendido contém o seguinte. Consulte [*
 
     
 
-     
+     
 
 <!-- -->
 
@@ -68,9 +68,9 @@ Cada registro de informações de erro estendido contém o seguinte. Consulte [*
 -   Flags – sinalizadores que especificam informações sobre o registro. Os sinalizadores definidos no momento são EEInfoPreviousRecordsMissing e EEInfoNextRecordsMissing, correspondentes aos valores numéricos 1 e 2, respectivamente. Se EEInfoPreviousRecordsMissing for definido, um ou mais registros antes do registro ficarão ausentes. Se EEInfoNextRecordsMissing for definido, um ou mais registros depois desse registro estarão ausentes. Para obter uma descrição de por que os registros podem estar ausentes, consulte [confiabilidade das informações de erro estendidas](reliability-of-extended-error-information.md).
 -   Até quatro parâmetros de erro. Um parâmetro de erro é uma estrutura de variante leve que fornece informações adicionais sobre o erro. As informações adicionais dependem do erro e do local de detecção. Os parâmetros podem ser do tipo LPSTR (cadeia de caracteres ANSI), Cadeia de caracteres Unicode (LPWSTR), valor longo (longo), valor curto (curto), ponteiro (Int64) ou nenhum.
 
- 
+ 
 
- 
+ 
 
 
 

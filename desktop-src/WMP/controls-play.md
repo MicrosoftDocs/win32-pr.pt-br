@@ -4,7 +4,7 @@ description: O método play faz com que o item de mídia atual comece a reproduz
 ms.assetid: 2218a13b-6294-45f5-bb6f-c5a1e433e0c6
 keywords:
 - método play Windows Media Player
-- método play Windows Media Player classe , Controls
+- classe play method Windows Media Player , Controls
 - Classe Controls Windows Media Player , método play
 topic_type:
 - apiref

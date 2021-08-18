@@ -4,12 +4,12 @@ ms.assetid: 70FFDD44-9FDE-4D86-AD65-60019AC4A2BC
 title: Atributo MF_MEDIA_ENGINE_VIDEO_OUTPUT_FORMAT (Mfmediaengine. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 004025da1ad5258e5b04a3afba4a359f50f7444c
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: eaa0dab3c3ea1c9ce23d767458df0b68a9b3c787f80ca1af786061536343a356
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103663784"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973725"
 ---
 # <a name="mf_media_engine_video_output_format-attribute"></a>\_Atributo de \_ \_ formato de saída de vídeo do mecanismo de \_ mídia MF \_
 
@@ -29,9 +29,9 @@ Defina esse atributo se você criar o mecanismo de mídia no modo de servidor de
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Mfmediaengine. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ aplicativos UWP de aplicativos de desktop \|\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Mfmediaengine. h</dt> </dl> |
 
 
 

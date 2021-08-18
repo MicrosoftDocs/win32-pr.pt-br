@@ -1,9 +1,9 @@
 ---
-title: Pausar
-description: Este é um BUTTONelement predefinido com os valores padrão a seguir. | Pausar
+title: PAUSEELEMENT
+description: Este é um BUTTONELEMENT predefinido com os seguintes valores padrão. | PAUSEELEMENT
 ms.assetid: 9472ea68-daab-4969-b407-287aedb00fbf
 keywords:
-- Pausar o Windows Media Player
+- PAUSEELEMENT Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ee55b347db98e14360200257c2dedd314f61ce4e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae9a19c532fcee6c57d6bc318631447eefcdc421b4f57dd2284e0f05b4b86b32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996036"
 ---
-# <a name="pauseelement"></a>Pausar
+# <a name="pauseelement"></a>PAUSEELEMENT
 
-Este é um **buttonelement** predefinido com os valores padrão a seguir.
+Este é um **BUTTONELEMENT predefinido** com os seguintes valores padrão.
 
 ``` syntax
 onclick="jscript:player.controls.pause()" 
@@ -33,7 +33,7 @@ enabled="wmpenabled:player.controls.pause"
 
 ## <a name="remarks"></a>Comentários
 
-Todas as propriedades desse **botão** podem ser substituídas especificando-as explicitamente.
+Todas as propriedades desse **BUTTONELEMENT** podem ser substituídos especificando-as explicitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Todas as propriedades desse **botão** podem ser substituídas especificando-as 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -49,7 +49,7 @@ Todas as propriedades desse **botão** podem ser substituídas especificando-as 
 
 <dl> <dt>
 
-[**Elemento BUTTONelement**](buttonelement-element.md)
+[**Elemento BUTTONELEMENT**](buttonelement-element.md)
 </dt> </dl>
 
  

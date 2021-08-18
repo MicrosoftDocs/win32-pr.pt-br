@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. effectTitle
-description: O método effectTitle recupera o título de exibição da visualização com o índice de registro especificado.
+title: EFFECTS.effectTitle
+description: O método effectTitle recupera o título de exibição da visualização com o índice do Registro especificado.
 ms.assetid: f3ea33f6-a8fc-4a18-993e-69b549fbea16
 keywords:
-- EFFECTs. effectTitle Windows Media Player
+- EFFECTS.effectTitle Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 99d5bcbc25dc12891241cfcd99d770242a581475
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0173f5d1bd4755da1feb024b26fc581e63029f48dcde27f5009fd508db3c9d40
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996676"
 ---
-# <a name="effectseffecttitle"></a>EFFECTs. effectTitle
+# <a name="effectseffecttitle"></a>EFFECTS.effectTitle
 
-O método **effectTitle** recupera o título de exibição da visualização com o índice de registro especificado.
+O **método effectTitle** recupera o título de exibição da visualização com o índice do Registro especificado.
 
 ``` syntax
         elementID.effectTitle(index)
@@ -32,16 +32,16 @@ O método **effectTitle** recupera o título de exibição da visualização com
 
 <dl> <dt>
 
-<span id="index"></span><span id="INDEX"></span>*index*
+<span id="index"></span><span id="INDEX"></span>*Índice*
 </dt> <dd>
 
-**Número** (**longo**) que contém o índice de uma visualização do registro.
+**Número** (**longo**) que contém o índice do Registro de uma visualização.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Esse método retorna uma **cadeia de caracteres**.
+Esse método retorna uma **Cadeia de Caracteres**.
 
 ## <a name="remarks"></a>Comentários
 
@@ -53,7 +53,7 @@ Esse método é usado para exibir títulos de visualização em uma interface do
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 
@@ -61,10 +61,10 @@ Esse método é usado para exibir títulos de visualização em uma interface do
 
 <dl> <dt>
 
-[**Elemento EFFECTs**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> <dt>
 
-[**EFFECTs. currentEffectTitle**](effects-currenteffecttitle.md)
+[**EFFECTS.currentEffectTitle**](effects-currenteffecttitle.md)
 </dt> </dl>
 
  

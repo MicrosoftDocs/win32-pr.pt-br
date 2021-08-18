@@ -1,6 +1,6 @@
 ---
 title: Tipo complexo PeapExtensionsType
-description: Contém aprimoramentos de esquema feitos no Windows 7. Futuros aprimoramentos de esquema serão tratados pelo PeapExtensionsTypeV2.
+description: contém aprimoramentos de esquema feitos no Windows 7. Futuros aprimoramentos de esquema serão tratados pelo PeapExtensionsTypeV2.
 ms.assetid: a8fb8474-a375-4401-83b0-4fa87d637209
 keywords:
 - PeapExtensionsType tipo complexo EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7cb8c698122c5a466ae95f728838425a5f10c665
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 212c8bf6b1421cfc461288e8f57258b40e11e9118c9ea2b2f620986e91d226f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644985"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984026"
 ---
 # <a name="peapextensionstype-complex-type"></a>Tipo complexo PeapExtensionsType
 
-O tipo complexo **PeapExtensionsType** contém aprimoramentos de esquema feitos no Windows 7. Futuros aprimoramentos de esquema serão tratados pelo [**PeapExtensionsTypeV2**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md).
+o tipo complexo **PeapExtensionsType** contém aprimoramentos de esquema feitos no Windows 7. Futuros aprimoramentos de esquema serão tratados pelo [**PeapExtensionsTypeV2**](mspeapconnectionpropertiesv2-peapextensionstypev2-complextype.md).
 
 ``` syntax
 <xs:complexType name="PeapExtensionsType">
@@ -71,8 +71,8 @@ O elemento **PeapExtensionsType** é opcional.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

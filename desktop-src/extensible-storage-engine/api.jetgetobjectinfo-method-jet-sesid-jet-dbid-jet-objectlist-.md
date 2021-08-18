@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)'
-title: Método API. JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)
+description: 'Saiba mais sobre: Método Api.JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)'
+title: Método Api.JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)
 TOCTitle: JetGetObjectInfo method (JET_SESID, JET_DBID, JET_OBJECTLIST)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetObjectInfo(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,Microsoft.Isam.Esent.Interop.JET_OBJECTLIST@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetobjectinfo(v=EXCHG.10)
@@ -27,12 +27,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118983296"
 ---
-# <a name="apijetgetobjectinfo-method-jet_sesid-jet_dbid-jet_objectlist"></a>Método API. JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)
+# <a name="apijetgetobjectinfo-method-jet_sesid-jet_dbid-jet_objectlist"></a>Método Api.JetGetObjectInfo (JET_SESID, JET_DBID, JET_OBJECTLIST)
 
 Recupera informações sobre objetos de banco de dados.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,21 +61,21 @@ public static void JetGetObjectInfo(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     O banco de dados a ser usado.
 
 <!-- end list -->
 
-  - ObjectList  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_OBJECTLIST](./jet-objectlist-class.md)  
+  - Objectlist  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_OBJECTLIST](./jet-objectlist-class.md)  
     
     Preenchido com informações sobre os objetos no banco de dados.
 
@@ -87,6 +87,6 @@ public static void JetGetObjectInfo(
 
 [Membros da API](./api-members.md)
 
-[Sobrecarga de JetGetObjectInfo](./api.jetgetobjectinfo-method.md)
+[Sobrecarga JetGetObjectInfo](./api.jetgetobjectinfo-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,12 +4,12 @@ description: Converte uma determinada cor mais ou menos uma tolerância para alf
 ms.assetid: f7bb5c65-f406-f947-c05d-2756cff99d21
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a13d5558d103d6f937ed6638d0debbeddaf71dd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 485cec7842c8460169b9c335eb74e9cc6d5a13e0541a49fc99835dfaa591efc2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075580"
 ---
 # <a name="chroma-key-effect"></a>Croma-efeito de chave
 
@@ -55,9 +55,9 @@ As propriedades para o efeito croma-Key são definidas pela enumeração [**d2d1
 
 | Requisito | Valor |
 |--------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| Servidor mínimo com suporte | Aplicativos do Windows 10 \[ Desktop aplicativos da \| Windows Store\] |
-| parâmetro                   | d2d1effects \_ 2. h                                  |
+| Cliente mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
+| Servidor mínimo com suporte | Windows 10 \[ aplicativos da área de trabalho \| Windows aplicativos da loja\] |
+| Cabeçalho                   | d2d1effects \_ 2. h                                  |
 | Biblioteca                  | d2d1. lib, dxguid. lib                              |
 
 ## <a name="related-topics"></a>Tópicos relacionados

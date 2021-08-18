@@ -1,9 +1,9 @@
 ---
-title: Estrutura XML do arquivo de definição de capa
-description: Estrutura XML do arquivo de definição de capa
+title: Estrutura XML do arquivo de definição de aparência
+description: Estrutura XML do arquivo de definição de aparência
 ms.assetid: 93325b94-667a-42a6-92f8-78288d36da81
 keywords:
-- criando capas, arquivos de definição de capa
+- Criando capas, arquivos de definição de capa
 - Windows Media Player capas, arquivos de definição de capa
 - capas, arquivos de definição de capa
 - arquivos para capas, definição de capa
@@ -18,9 +18,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118995246"
 ---
-# <a name="skin-definition-file-xml-structure"></a>Estrutura XML do arquivo de definição de capa
+# <a name="skin-definition-file-xml-structure"></a>Estrutura XML do arquivo de definição de aparência
 
-O arquivo de definição de capa é gravado em XML. Um dos recursos importantes do XML é que ele é completamente estruturado e é semelhante a um contorno. O código XML é simplesmente uma série de elementos como **VIEW** e **BUTTONGROUP.** Você começará com os elementos e os definirá com atributos. O restante deste tutorial lhe dará detalhes sobre os atributos, mas aqui está o contorno dos elementos que serão usados:
+O arquivo de definição de capa é escrito em XML. Um dos recursos importantes do XML é que ele é totalmente estruturado e é semelhante a uma estrutura de tópicos. O código XML é simplesmente uma série de elementos, como **View** e **Button**. Você começará com os elementos e, em seguida, os definirá com atributos. O restante deste tutorial fornecerá detalhes sobre os atributos, mas aqui está o contorno dos elementos que serão usados:
 
 
 ```C++
@@ -37,7 +37,7 @@ O arquivo de definição de capa é gravado em XML. Um dos recursos importantes 
 
 
 
-Tendo em mente a estrutura simples dos elementos, você pode entender os atributos que torna cada elemento exclusivo. Os detalhes de cada elemento serão abordados nos tópicos restantes desta seção. Para obter mais informações sobre elementos e atributos, consulte a Referência [de programação de capa](skin-programming-reference.md).
+Tendo em mente a estrutura simples dos elementos, você pode fazer sentido dos atributos que tornam cada elemento exclusivo. Os detalhes de cada elemento serão abordados nos tópicos restantes desta seção. Para obter mais informações sobre elementos e atributos, consulte a [referência de programação de capa](skin-programming-reference.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

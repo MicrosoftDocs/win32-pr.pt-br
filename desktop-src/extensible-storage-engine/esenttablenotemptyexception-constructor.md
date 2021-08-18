@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5abe32294105f281a8fe3f242419dffd2965cfe8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23a35ed5a87a206c1ff448274ef2b5f9921b014b71d116599b3d334add62982e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118981026"
 ---
 # <a name="esenttablenotemptyexception-constructor"></a>Construtor EsentTableNotEmptyException
 
 Inicializa uma nova instância da classe EsentTableNotEmptyException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentTableNotEmptyException()
 
 [Classe EsentTableNotEmptyException](./esenttablenotemptyexception-class.md)
 
-[Membros do EsentTableNotEmptyException](./esenttablenotemptyexception-members.md)
+[Membros EsentTableNotEmptyException](./esenttablenotemptyexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

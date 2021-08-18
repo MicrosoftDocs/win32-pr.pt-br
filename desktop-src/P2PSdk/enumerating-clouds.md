@@ -1,29 +1,29 @@
 ---
-description: Ao enumerar nuvens, um aplicativo deve fornecer o escopo da pesquisa para nuvens. Depois que o escopo é identificado, o aplicativo pode iniciar o processo de enumeração.
+description: Ao enumerar nuvens, um aplicativo deve fornecer o escopo da pesquisa de nuvens. Depois que o escopo é identificado, o aplicativo pode iniciar o processo de enumeração.
 ms.assetid: efd16cca-ac63-4bfa-bc6c-d7465cc374ee
 title: Enumerando nuvens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f958a2cc958c10bd85e674b43a3b41354fc344c0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c651fcfd003e4cafdf9b0f04c7cfc993a1e677b03630a61556523eed8c3aaece
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119011554"
 ---
 # <a name="enumerating-clouds"></a>Enumerando nuvens
 
-Ao enumerar nuvens, um aplicativo deve fornecer o escopo da pesquisa para nuvens. Depois que o escopo é identificado, o aplicativo pode iniciar o processo de enumeração.
+Ao enumerar nuvens, um aplicativo deve fornecer o escopo da pesquisa de nuvens. Depois que o escopo é identificado, o aplicativo pode iniciar o processo de enumeração.
 
 O procedimento a seguir identifica as chamadas que precisam ser feitas para enumerar nuvens.
 
 **Para enumerar nuvens**
 
-1.  Chame [**WSALookupServiceBegin**](pnrp-and-wsalookupservicebegin.md) para iniciar o processo e retornar um identificador.
+1.  Chame [**WSALookupServiceBegin**](pnrp-and-wsalookupservicebegin.md) para iniciar o processo e retornar um handle.
 2.  Chame [**WSALookupServiceNext**](pnrp-and-wsalookupservicenext.md) para recuperar um conjunto de nuvens e, em seguida, chame essa função até que o aplicativo tenha recuperado todas as nuvens.
 3.  Chame [**WSALookupServiceEnd**](pnrp-and-wsalookupserviceend.md) para concluir a enumeração.
 
-## <a name="example-enumerating-and-printing-the-names-of-available-link-local-clouds"></a>Exemplo: enumerando e imprimindo os nomes das nuvens de link local disponíveis
+## <a name="example-enumerating-and-printing-the-names-of-available-link-local-clouds"></a>Exemplo: enumerando e imprimindo os nomes de nuvens locais de link disponíveis
 
 
 ```C++

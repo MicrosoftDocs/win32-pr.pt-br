@@ -6,12 +6,12 @@ keywords:
 - RPC de chamada de procedimento remoto, tarefas, usando segurança em nível de transporte no cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c10360d5b8d11640803e31ee1d1d0490a6edfdf7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 83ee610da50d34711c9ec40f93c29ed08d2bb97ba83c02bc4e8c297b08f859c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119010594"
 ---
 # <a name="using-transport-level-security-on-the-client"></a>Usando Transport-Level segurança no cliente
 
@@ -23,7 +23,7 @@ O cliente especifica como o servidor representa o cliente quando o cliente estab
 2.  O cliente chama [**RpcBindingFromStringBinding**](/windows/desktop/api/Rpcdce/nf-rpcdce-rpcbindingfromstringbinding) para obter um novo identificador de ligação e aplicar as informações de qualidade de serviço para o cliente.
 3.  O cliente faz chamadas de procedimento remoto usando a alça.
 
-O Microsoft RPC dá suporte a recursos de segurança do Windows somente em [**ncacn \_ NP**](/windows/desktop/Midl/ncacn-np) e [**Ncalrpc**](/windows/desktop/Midl/ncalrpc). As opções de segurança para outros transportes são ignoradas.
+o Microsoft RPC dá suporte Windows recursos de segurança somente em [**ncacn \_ np**](/windows/desktop/Midl/ncacn-np) e [**ncalrpc**](/windows/desktop/Midl/ncalrpc). As opções de segurança para outros transportes são ignoradas.
 
 O cliente pode associar os seguintes parâmetros de segurança à associação para o transporte nomeado pipe [**ncacn \_ NP**](/windows/desktop/Midl/ncacn-np) ou [**Ncalrpc**](/windows/desktop/Midl/ncalrpc):
 
@@ -46,6 +46,6 @@ As configurações de parâmetro de segurança padrão variam de acordo com o pr
 
 Para obter informações adicionais sobre a sintaxe das opções de ponto de extremidade, consulte [ponto de extremidade](/windows/desktop/Midl/endpoint).
 
- 
+ 
 
- 
+ 

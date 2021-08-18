@@ -8,12 +8,12 @@ keywords:
 - ADSI do provedor de serviços LDAP, mapeamento de tipo de dados entre Active Directory e LDAP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45157fb7cefe1a993e6e16dffe28f101bc73759b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e1aed0ff0071c55e381e1eb66f1f84e5a98aa8acf2c361816444533c6d0ad886
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105754854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118961965"
 ---
 # <a name="data-type-mapping-between-active-directory-and-ldap"></a>Mapeamento de tipo de dados entre Active Directory e LDAP
 
@@ -53,27 +53,27 @@ A tabela a seguir mapeia o nome de sintaxe amigável para a OID de sintaxe LDAP 
 | MailPreference                    | 1.3.6.1.4.1.1466.115.121.1.32 | **\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**     |
 | NameAndOptionalUID                | 1.3.6.1.4.1.1466.115.121.1.34 | **\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**     |
 | NumericString                     | 1.3.6.1.4.1.1466.115.121.1.36 | **\_cadeia de \_ caracteres numérica ADSTYPE**          |
-| ObjectClassDescription            | 1.3.6.1.4.1.1466.115.121.1.37 | **\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**     |
-| Octetstring (não em RFC)          | 1.3.6.1.4.1.1466.115.121.1.40 | **Cadeia de caracteres de \_ OCTETO ADSTYPE \_**            |
-| OID                               | 1.3.6.1.4.1.1466.115.121.1.38 | **\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**     |
-| ORName                            | 1.2.840.113556.1.4.1221       | **\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**     |
-| OtherMailbox                      | 1.3.6.1.4.1.1466.115.121.1.39 | **\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**     |
-| PostalAddress                     | 1.3.6.1.4.1.1466.115.121.1.41 | **\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**     |
-| PresentationAddress               | 1.3.6.1.4.1.1466.115.121.1.43 | **\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**     |
-| Imenablestring                   | 1.3.6.1.4.1.1466.115.121.1.44 | **\_cadeia de caracteres imprimível do ADSTYPE \_**        |
-| ObjectSecurityDescriptor          | 1.2.840.113556.1.4.907        | **\_ \_ descritor de segurança do ADSTYPE NT \_** |
-| TelephoneNumber                   | 1.3.6.1.4.1.1466.115.121.1.50 | **\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**     |
-| TeletexTerminalIdentifier         | 1.3.6.1.4.1.1466.115.121.1.51 | **Cadeia de caracteres de \_ OCTETO ADSTYPE \_**            |
-| TelexNumber                       | 1.3.6.1.4.1.1466.115.121.1.52 | **\_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_**     |
-| UTCTime                           | 1.3.6.1.4.1.1466.115.121.1.53 | **ADSTYPE \_ \_ hora UTC**                |
+| ObjectClassDescription            | 1.3.6.1.4.1.1466.115.121.1.37 | **ADSTYPE \_ CASE \_ IGNORE \_ STRING**     |
+| OctetString (não no RFC)          | 1.3.6.1.4.1.1466.115.121.1.40 | **CADEIA DE \_ CARACTERES DE OCTETO ADSTYPE \_**            |
+| OID                               | 1.3.6.1.4.1.1466.115.121.1.38 | **ADSTYPE \_ CASE \_ IGNORE \_ STRING**     |
+| ORName                            | 1.2.840.113556.1.4.1221       | **ADSTYPE \_ CASE \_ IGNORE \_ STRING**     |
+| OtherMailbox                      | 1.3.6.1.4.1.1466.115.121.1.39 | **ADSTYPE \_ CASE \_ IGNORE \_ STRING**     |
+| PostalAddress                     | 1.3.6.1.4.1.1466.115.121.1.41 | **ADSTYPE \_ CASE \_ IGNORE \_ STRING**     |
+| PresentationAddress               | 1.3.6.1.4.1.1466.115.121.1.43 | **ADSTYPE \_ CASE \_ IGNORE \_ STRING**     |
+| PrintableString                   | 1.3.6.1.4.1.1466.115.121.1.44 | **CADEIA DE \_ CARACTERES IMPRIMÍVEL ADSTYPE \_**        |
+| ObjectSecurityDescriptor          | 1.2.840.113556.1.4.907        | **DESCRITOR DE SEGURANÇA ADSTYPE \_ NT \_ \_** |
+| TelephoneNumber                   | 1.3.6.1.4.1.1466.115.121.1.50 | **ADSTYPE \_ CASE \_ IGNORE \_ STRING**     |
+| TeletexTerminalIdentifier         | 1.3.6.1.4.1.1466.115.121.1.51 | **CADEIA DE \_ CARACTERES DE OCTETO ADSTYPE \_**            |
+| TelexNumber                       | 1.3.6.1.4.1.1466.115.121.1.52 | **ADSTYPE \_ CASE \_ IGNORE \_ STRING**     |
+| UTCTime                           | 1.3.6.1.4.1.1466.115.121.1.53 | **HORA \_ UTC ADSTYPE \_**                |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

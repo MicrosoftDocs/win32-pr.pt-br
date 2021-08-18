@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 832e6d6cc123e4a85a2cacb2df688348732fcc0b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c0d2144b0c60ce4d9a7aa9c1198839dd43be3a4c5b682fc8a7e92ce3f3c637a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297569"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118983216"
 ---
 # <a name="apijetretrievecolumn-method-jet_sesid-jet_tableid-jet_columnid-byte--int32-int32-int32-retrievecolumngrbit-jet_retinfo"></a>Método API. JetRetrieveColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, byte, Int32, Int32, Int32, RetrieveColumnGrbit, JET_RETINFO)
 
@@ -144,7 +144,7 @@ public static JET_wrn JetRetrieveColumn(
     
     Se pretinfo for atribuído como NULL, a função se comporta como se um itagSequence de 1 e um ibLongValue de 0 (zero) fossem fornecidos. Isso faz com que a recuperação de coluna recupere o primeiro valor de uma coluna com vários valores e recupere dados longos no deslocamento 0 (zero).
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [Microsoft.ISAM.ESENT.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 Um código de aviso de ESENT.  

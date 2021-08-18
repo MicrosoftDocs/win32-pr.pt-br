@@ -16,12 +16,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 2e8a8c31cee7e45311887c16a1d10545e6a38e41
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 35144317b67a8d24ec07d72633897366e83628d6cc66d9c4661980fc44c373b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108106494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070156"
 ---
 # <a name="image_v1_load-class"></a>\_Classe de \_ carga Image v1
 
@@ -126,12 +126,12 @@ Identifica o processo no qual a imagem é carregada.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

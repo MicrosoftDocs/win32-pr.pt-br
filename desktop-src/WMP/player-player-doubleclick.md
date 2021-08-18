@@ -3,9 +3,9 @@ title: Evento Player. DoubleClick
 description: O evento DoubleClick ocorre quando o usuário clica duas vezes em um botão do mouse.
 ms.assetid: e2055cff-e4b0-49e3-a93a-7084789b6842
 keywords:
-- Evento de DoubleClick Windows Media Player
-- Evento de DoubleClick Windows Media Player, classe Player
-- Classe Player Windows Media Player, evento DoubleClick
+- Windows Media Player de eventos de DoubleClick
+- Windows Media Player de eventos de DoubleClick, classe de jogador
+- classe de jogador Windows Media Player, evento DoubleClick
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb3670bfbf3b72fad64f8fb515f5151920b34f52
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 67a8e6a21c46a8b1c5d7960d70233e38333f9ff2052826bb68d573d4b2f0cd15
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995916"
 ---
 # <a name="playerdoubleclick-event"></a>Evento Player. DoubleClick
 
@@ -73,13 +73,13 @@ Player.DoubleClick(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O valor dos parâmetros de evento é especificado pelo Windows Media Player e pode ser acessado ou transmitido para um método em um arquivo JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse evento.
 

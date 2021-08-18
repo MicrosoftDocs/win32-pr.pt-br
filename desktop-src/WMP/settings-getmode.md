@@ -1,11 +1,11 @@
 ---
-title: Método Settings. GetMode
-description: O método GetMode determina se o modo de loop ou de ordem aleatória está ativo.
+title: método Configurações.getMode
+description: O método getMode determina se o modo de loop ou modo de embaralhamento está ativo.
 ms.assetid: 41c3725f-ae8f-4b45-856a-b7245c9ad2b3
 keywords:
-- método GetMode do Windows Media Player
-- método GetMode Windows Media Player, classe Settings
-- Classe de configurações Windows Media Player, método GetMode
+- Método getMode Windows Media Player
+- Método getMode Windows Media Player classe Configurações ,
+- Configurações classe Windows Media Player , método getMode
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5fc3e82091200d05bb173c71f2c0e5a7d213b80
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 779c775319cbe0d6dc443b4eb99febd494db3d30fb35228b7310f8f1ae7d691d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995326"
 ---
-# <a name="settingsgetmode-method"></a>Método Settings. GetMode
+# <a name="settingsgetmode-method"></a>método Configurações.getMode
 
-O método **GetMode** determina se o modo de loop ou de ordem aleatória está ativo.
+O **método getMode** determina se o modo de loop ou modo de embaralhamento está ativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,19 +42,19 @@ bRetVal = Settings.getMode(
 
 <dl> <dt>
 
-*modeName* \[ no\]
+*modeName* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que especifica o nome do modo em questão, contendo um dos valores a seguir.
+**Cadeia** de caracteres que especifica o nome do modo em questão, contendo um dos valores a seguir.
 
 
 
 | String     | Descrição                                                                                                              |
 |------------|--------------------------------------------------------------------------------------------------------------------------|
-| rebobinar | As faixas são reiniciadas no início depois da reprodução até o fim.                                                          |
+| autoRewind | As faixas são reiniciadas no início após a reprodução até o final.                                                          |
 | loop       | A sequência de faixas se repete.                                                                                   |
-| conmoldura  | O quadro de chave mais próximo é exibido na posição atual quando não está sendo executado. Esse modo não é relevante para faixas de áudio. |
-| ordem aleatória    | As faixas são reproduzidas em ordem aleatória.                                                                                       |
+| showFrame  | O quadro-chave mais próximo é exibido na posição atual quando não está em reprodução. Esse modo não é relevante para faixas de áudio. |
+| ordem aleatória    | As faixas são tocadas em ordem aleatória.                                                                                       |
 
 
 
@@ -62,9 +62,9 @@ bRetVal = Settings.getMode(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um valor **booliano** que indica se o modo especificado está ativo.
+Esse método retorna um **valor booliana** que indica se o modo especificado está ativo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Esse método retorna um valor **booliano** que indica se o modo especificado est
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Para modos de loop e ordem aleatória, Windows Media Player versão 7,0 ou posterior. Para modos de autoretrocesso e de conframe, o Windows Media Player 9 Series ou posterior.<br/> |
+| Versão<br/> | Para modos de loop e embaralhamento, Windows Media Player versão 7.0 ou posterior. Para os modos autoRewind e showFrame, Windows Media Player Série 9 ou posterior.<br/> |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl>                                                                            |
 
 
@@ -81,10 +81,10 @@ Esse método retorna um valor **booliano** que indica se o modo especificado est
 
 <dl> <dt>
 
-[**Objeto de configurações**](settings-object.md)
+[**Configurações Objeto**](settings-object.md)
 </dt> <dt>
 
-[**Settings. setmode**](settings-setmode.md)
+[**Configurações.setMode**](settings-setmode.md)
 </dt> </dl>
 
  

@@ -1,21 +1,21 @@
 ---
 description: Construtores expostos por XMFLOAT4.
 ms.assetid: 889c715b-6342-4766-9c69-62e87c440d42
-title: Construtores XMFLOAT4 (Directxmath. h)
+title: Construtores XMFLOAT4 (Directxmath.h)
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 6ac3dc09a46bfed95a034a4489f6453ffc93b6fc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1bd38b584404cc0ae6397e38ac0a25f30e0939849cb617748d37996cd2f45592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984636"
 ---
 # <a name="xmfloat4-constructors"></a>Construtores XMFLOAT4
 
 Construtores expostos por `XMFLOAT4` .
 
-Constrói instâncias da estrutura [**XMFLOAT4**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) .
+Constrói instâncias da [**estrutura XMFLOAT4.**](/windows/win32/api/directxmath/ns-directxmath-xmfloat4)
 
 > [!Note]  
 > Os construtores listados aqui só estão disponíveis em C++.
@@ -40,7 +40,7 @@ Constrói instâncias da estrutura [**XMFLOAT4**](/windows/win32/api/directxmath
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">[<strong>XMFLOAT4 ()</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat4-xmfloat4(constfloat))</td>
-<td style="text-align: left;">Construtor padrão para <code>XMFLOAT4</code> . <br/> Construtor padrão para [<strong>XMFLOAT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmfloat4). <br/>
+<td style="text-align: left;">Construtor padrão para <code>XMFLOAT4</code> . <br/> Construtor padrão para [<strong>XMFLOAT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat4). <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -48,8 +48,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">[<strong>XMFLOAT4 (const float *)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat4a-xmfloat4a(constfloat))</td>
-<td style="text-align: left;">Inicializa uma nova instância de <code>XMFLOAT4</code> de um argumento de matriz de quatro elementos <code>float</code> . <br/> Esse construtor inicializa uma nova instância de [<strong>XMFLOAT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmfloat4) de um de um argumento de matriz de quatro elementos <code>float</code> . <br/>
+<td style="text-align: left;">[<strong>XMFLOAT4 (const float*)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat4a-xmfloat4a(constfloat))</td>
+<td style="text-align: left;">Inicializa uma nova instância de de um <code>XMFLOAT4</code> argumento de matriz de quatro <code>float</code> elementos. <br/> Esse construtor inicializa uma nova instância de [<strong>XMFLOAT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) de um de um argumento de matriz de quatro <code>float</code> elementos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -57,8 +57,8 @@ Esse construtor só está disponível em C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">[<strong>XMFLOAT4 (float, float, float, float)</strong>] (/Windows/Win32/API/directxmath/NF-directxmath-xmfloat4-xmfloat4 (float_float_float_float))</td>
-<td style="text-align: left;">Inicializa uma nova instância do de <code>XMFLOAT4</code> quatro <code>float</code> argumentos. <br/> Esse construtor inicializa uma nova instância de [<strong>XMFLOAT4</strong>] (/Windows/Win32/API/directxmath/NS-directxmath-xmfloat4) de quatro <code>float</code> argumentos. <br/>
+<td style="text-align: left;">[<strong>XMFLOAT4 (float, float, float,float)</strong>] (/windows/win32/api/directxmath/nf-directxmath-xmfloat4-xmfloat4(float_float_float_float))</td>
+<td style="text-align: left;">Inicializa uma nova instância de de <code>XMFLOAT4</code> quatro <code>float</code> argumentos. <br/> Esse construtor inicializa uma nova instância de [<strong>XMFLOAT4</strong>](/windows/win32/api/directxmath/ns-directxmath-xmfloat4) de quatro <code>float</code> argumentos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível em C++.
@@ -76,7 +76,7 @@ Esse construtor só está disponível em C++.
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Directxmath. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Directxmath.h</dt> </dl> |
 
 
 

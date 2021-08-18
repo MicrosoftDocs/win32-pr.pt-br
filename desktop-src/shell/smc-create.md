@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 59219f376288431fa20e198d8c427ff40c7fba62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 537c535d5470a691cf110b2217bb31cbfd0ad78b328f4fbb32a1445e0c5e6597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968215"
 ---
 # <a name="smc_create-message"></a>\_Criar mensagem do SMC
 
@@ -44,7 +44,7 @@ Um ponteiro para o membro **pvUserData** de uma estrutura [**SMDATA**](/windows/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar S \_ OK.
 

@@ -4,12 +4,12 @@ description: O ambiente de programação WinSNMP atribui a desalocação de recu
 ms.assetid: 3e4cbbc5-18bc-4731-971c-6e533d904f56
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f97828c55d59932b7f4bdb75cbcf98964edd4a7e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 86081a69cd5455bc3c58ca2bcea50154d75920a17655a1feef30ac2d29675d0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084862"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009524"
 ---
 # <a name="freeing-winsnmp-descriptors"></a>Liberando descritores de WinSNMP
 
@@ -31,6 +31,6 @@ Para liberar os recursos para uma estrutura [**smiVALUE**](/windows/desktop/api/
 
 Para obter mais informações, consulte [alocando objetos de memória WinSNMP](allocating-winsnmp-memory-objects.md).
 
- 
+ 
 
- 
+ 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8bd748076eec80b5b7d97e7c041f454c4f9193f6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 22ba314208db3cb5529042011f269f026a4cf2bd4d4b01d1b8d64719b96a5f90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119507"
 ---
 # <a name="closedcaptionsamifilename"></a>ClosedCaption.SAMIFileName
 
@@ -41,13 +41,13 @@ Se você não especificar um valor para **SAMIFileName**, essa propriedade recup
 
 Depois de especificar um valor para **SAMIFileName**, esse valor persiste até que você especifique um novo valor (ou até que um novo item de mídia seja aberto usando o parâmetro de URL *Sami* ). Portanto, você deve especificar um novo valor para essa propriedade antes de reproduzir cada novo item de mídia. Dessa forma, o novo valor de **SAMIFileName** entrará em vigor quando o próximo item de mídia for aberto (ou quando o *Player*.**fechar** é chamado). A especificação de um novo valor para **SAMIFileName** não tem nenhum efeito para a mídia atual.
 
-Para fazer com que o Windows Media Player volte a usar o arquivo SAMI associado a um item de mídia específico, especifique um valor para **SAMIFileName** igual a uma cadeia de caracteres vazia ("") antes de reproduzir o próximo item de mídia.
+para fazer com que Windows Media Player retornar ao uso do arquivo SAMI associado a um item de mídia específico, especifique um valor para **SAMIFileName** igual a uma cadeia de caracteres vazia ("") antes de reproduzir o próximo item de mídia.
 
 **Windows Media Player 10 Mobile:** Essa propriedade é somente leitura e sempre retorna uma cadeia de caracteres vazia.
 
 ## <a name="examples"></a>Exemplos
 
-Os três exemplos de JScript a seguir usam *ClosedCaption*. **SAMIFileName** para especificar o nome de um arquivo de texto de legenda oculta. O objeto de **jogador** foi criado com ID = "Player".
+os três exemplos de JScript a seguir usam *ClosedCaption*. **SAMIFileName** para especificar o nome de um arquivo de texto de legenda oculta. O objeto de **jogador** foi criado com ID = "Player".
 
 
 ```JScript

@@ -1,22 +1,22 @@
 ---
-description: Impede que uma entrada do menu Iniciar para um atalho do aplicativo recentemente instalado receba um realce.
+description: impede que uma entrada de menu Iniciar para um atalho de aplicativo recém-instalado receba um realce.
 ms.assetid: ff85da6f-a506-4225-8ac9-4a8a7be8d599
 title: System. AppUserModel. ExcludeFromShowInNewInstall
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 206cbbc6b07b0d3fec5833c046d4cb44c1e5e4e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba75b28b789fd9972eb484797957601dbcb5e93694b469eeb8b81bf9ba198d13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970895"
 ---
 # <a name="systemappusermodelexcludefromshowinnewinstall"></a>System. AppUserModel. ExcludeFromShowInNewInstall
 
 Impede que uma entrada do menu **Iniciar** para um atalho do aplicativo recentemente instalado receba um realce. Isso é equivalente a limpar a opção **realçar programas recentemente instalados** na janela **Personalizar menu iniciar** em um item individual. Essa propriedade deve ser definida em atalhos para ferramentas e aplicativos secundários.
 
 > [!Note]  
-> Essa propriedade é usada apenas pelo menu iniciar no Windows Vista e no Windows 7. A propriedade não é usada pela tela inicial ou pelo menu iniciar no Windows 8 e posterior
+> essa propriedade é usada somente pelo menu Iniciar no Windows Vista e no Windows 7. a propriedade não é usada pela tela inicial ou menu Iniciar em Windows 8 e posterior
 
  
 

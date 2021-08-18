@@ -4,12 +4,12 @@ ms.assetid: 4db2e7fc-0a87-0344-a07c-3abf2b21af32
 title: 'Como: Inicializar o XAudio2'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e4a613c1ae2b7c3a7f0c55ab5349a0a605aaeb2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4eb55425c92e6d28a2689fb388869bbf42339d14bec3550e3f9e17798c1af68f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962725"
 ---
 # <a name="how-to-initialize-xaudio2"></a>Como: Inicializar o XAudio2
 
@@ -17,7 +17,7 @@ O XAudio2 é inicializado para reprodução de áudio criando uma instância do 
 
 **Para inicializar o XAudio2**
 
-1.  Verifique se você inicializou COM. Para um aplicativo da Windows Store, isso é feito como parte da inicialização da Windows Runtime. Caso contrário, use [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex).
+1.  Verifique se você inicializou COM. para um aplicativo da loja Windows, isso é feito como parte da inicialização da Windows Runtime. Caso contrário, use [**CoInitializeEx**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializeex).
 
     ```
     HRESULT hr;
@@ -50,9 +50,9 @@ O XAudio2 é inicializado para reprodução de áudio criando uma instância do 
 
     
 
-## <a name="notes-for-windows-store-apps"></a>Observações para aplicativos da Windows Store
+## <a name="notes-for-windows-store-apps"></a>observações para aplicativos da Windows Store
 
-É recomendável que você use um [ponteiro inteligente](/previous-versions/visualstudio/visual-studio-2012/hh279674(v=vs.110)) para gerenciar o tempo de vida de objetos XAudio2 de forma segura de exceção. Para aplicativos da Windows Store, você pode usar o modelo de ponteiro inteligente [**ComPtr**](/previous-versions/visualstudio/visual-studio-2012/br244983(v=vs.110)) do WRL (Windows Runtime C++ Template Library).
+É recomendável que você use um [ponteiro inteligente](/previous-versions/visualstudio/visual-studio-2012/hh279674(v=vs.110)) para gerenciar o tempo de vida de objetos XAudio2 de forma segura de exceção. para aplicativos da Windows Store, você pode usar o modelo de ponteiro inteligente [**ComPtr**](/previous-versions/visualstudio/visual-studio-2012/br244983(v=vs.110)) da WRL (biblioteca de modelos do C++) do Windows Runtime.
 
 
 ```C++

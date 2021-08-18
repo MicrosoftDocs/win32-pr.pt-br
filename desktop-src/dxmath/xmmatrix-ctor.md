@@ -20,9 +20,9 @@ ms.locfileid: "118984626"
 ---
 # <a name="xmmatrix-constructors"></a>Construtores XMMATRIX
 
-Constrói instâncias da estrutura [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) .
+Constrói instâncias da [**estrutura XMMATRIX.**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix)
 
-Constrói instâncias da estrutura [**XMMATRIX**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix) .
+Constrói instâncias da [**estrutura XMMATRIX.**](/windows/win32/api/directxmath/ns-directxmath-xmmatrix)
 
 > [!Note]  
 > Os construtores listados aqui só estão disponíveis em C++.
@@ -46,8 +46,8 @@ Constrói instâncias da estrutura [**XMMATRIX**](/windows/win32/api/directxmath
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmmatrix-xmmatrix(float_float_float_float_float_float_float_float_float_float_float_float_float_float_float_float)"><strong>XMMATRIX (float, float, float, float, float, float, float, float, float, float, float, float, float, float)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância da <code>XMMATRIX</code> estrutura a partir de dezesseis <code>float</code> valores escalares. <br/> Inicializa uma nova instância da estrutura <a href="/windows/desktop/api/directxmath/ns-directxmath-xmmatrix"><strong>XMMATRIX</strong></a> a partir de dezesseis <code>float</code> valores escalares. <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmmatrix-xmmatrix(float_float_float_float_float_float_float_float_float_float_float_float_float_float_float_float)"><strong>XMMATRIX (float, float, float, float, float, float, float, float, float, float, float, float, float, float,float)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância da estrutura de <code>XMMATRIX</code> 16 valores <code>float</code> escalares. <br/> Inicializa uma nova instância da estrutura <a href="/windows/desktop/api/directxmath/ns-directxmath-xmmatrix"><strong>XMMATRIX</strong></a> de 16 valores <code>float</code> escalares. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível ao desenvolver com C++.
@@ -56,7 +56,7 @@ Esse construtor só está disponível ao desenvolver com C++.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmmatrix-xmmatrix(constfloat)"><strong>XMMATRIX ()</strong></a></td>
-<td style="text-align: left;">Construtor padrão para <code>XMMATRIX</code> .<br/> Construtor padrão para <a href="/windows/desktop/api/directxmath/ns-directxmath-xmmatrix"><strong>XMMATRIX</strong></a>.<br/>
+<td style="text-align: left;">Construtor padrão para <code>XMMATRIX</code> .<br/> Construtor padrão para <a href="/windows/desktop/api/directxmath/ns-directxmath-xmmatrix"><strong>XMMATRIX.</strong></a><br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível ao desenvolver com C++.
@@ -64,8 +64,8 @@ Esse construtor só está disponível ao desenvolver com C++.
 <br/></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmmatrix-xmmatrix(constfloat)"><strong>XMMATRIX (const float *)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância da <code>XMMATRIX</code> estrutura a partir de uma matriz de dezesseis elementos <code>float</code> . <br/> Inicializa uma nova instância da estrutura <a href="/windows/desktop/api/directxmath/ns-directxmath-xmmatrix"><strong>XMMATRIX</strong></a> a partir de uma matriz de dezesseis elementos <code>float</code> . <br/>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmmatrix-xmmatrix(constfloat)"><strong>XMMATRIX (const float*)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância da estrutura de <code>XMMATRIX</code> uma matriz de 16 <code>float</code> elementos. <br/> Inicializa uma nova instância da estrutura <a href="/windows/desktop/api/directxmath/ns-directxmath-xmmatrix"><strong>XMMATRIX</strong></a> de uma matriz de 16 <code>float</code> elementos. <br/>
 <blockquote>
 [!Note]<br />
 Esse construtor só está disponível ao desenvolver com C++.
@@ -73,8 +73,8 @@ Esse construtor só está disponível ao desenvolver com C++.
 <br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmmatrix-xmmatrix(fxmvector_fxmvector_fxmvector_cxmvector)"><strong>XMMATRIX (XMVECTOR,XMVECTOR,XMVECTOR,XMVECTOR)</strong></a></td>
-<td style="text-align: left;">Inicializa uma nova instância da <code>XMMATRIX</code> estrutura a partir de quatro instâncias do <code>XMVECTOR</code> .<br/> Inicializa uma nova instância da estrutura <a href="/windows/desktop/api/directxmath/ns-directxmath-xmmatrix"><strong>XMMATRIX</strong></a> de quatro instâncias do <a href="xmvector-data-type.md"><strong>tipo de dados XMVECTOR</strong></a><br/></td>
+<td style="text-align: left;"><a href="/windows/desktop/api/directxmath/nf-directxmath-xmmatrix-xmmatrix(fxmvector_fxmvector_fxmvector_cxmvector)"><strong>XMMATRIX (XMVECTOR, XMVECTOR, XMVECTOR, XMVECTOR)</strong></a></td>
+<td style="text-align: left;">Inicializa uma nova instância da estrutura de <code>XMMATRIX</code> quatro instâncias do <code>XMVECTOR</code> .<br/> Inicializa uma nova instância da estrutura <a href="/windows/desktop/api/directxmath/ns-directxmath-xmmatrix"><strong>XMMATRIX</strong></a> de quatro instâncias do tipo de <a href="xmvector-data-type.md"><strong>dados XMVECTOR</strong></a><br/></td>
 </tr>
 </tbody>
 </table>
