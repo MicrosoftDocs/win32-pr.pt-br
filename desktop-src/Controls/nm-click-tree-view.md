@@ -1,9 +1,9 @@
 ---
-title: Código de notificação de NM_CLICK (exibição em árvore) (commctrl. h)
-description: Notifica a janela pai de um controle de exibição de árvore que o usuário clicou com o botão esquerdo do mouse dentro do controle. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: NM_CLICK (exibição de árvore) de código de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de exibição de árvore de que o usuário clicou no botão esquerdo do mouse dentro do controle. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 39b5716d-cae7-4dc4-b257-0118f4f432c6
 keywords:
-- Código de notificação de NM_CLICK (exibição de árvore) controles do Windows
+- NM_CLICK (exibição de árvore) de código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 45809a683d06871398e79419ec08729b1edcd2c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d9d942504afd13359f38fa62c4f6a283367288873f89922311242516b9063990
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018884"
 ---
-# <a name="nm_click-tree-view-notification-code"></a>\_Código de notificação de clique do nm (modo de exibição de árvore)
+# <a name="nm_click-tree-view-notification-code"></a>Código de \_ notificação NM CLICK (exibição de árvore)
 
-Notifica a janela pai de um controle de exibição de árvore que o usuário clicou com o botão esquerdo do mouse dentro do controle. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de exibição de árvore de que o usuário clicou no botão esquerdo do mouse dentro do controle. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_CLICK
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.
+Ponteiro para uma [**estrutura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre essa notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornar um valor diferente de zero para impedir o processamento padrão ou zero para permitir o processamento padrão.
+Retorne um valor que não seja zero para impedir o processamento padrão ou zero para permitir o processamento padrão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Retornar um valor diferente de zero para impedir o processamento padrão ou zero
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

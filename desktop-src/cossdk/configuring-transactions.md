@@ -4,12 +4,12 @@ ms.assetid: ea0e4d7e-2598-4a42-993c-58815f2fa138
 title: Configurando transações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b57f27d47836193dc5d23c44e3344cb2a81d5984
-ms.sourcegitcommit: bf526e267d3991892733bdd229c66d5365cf244a
+ms.openlocfilehash: a9d613eb49a5f053b869e3efc90e04b9455644ea52acbaf651f33b00909e6e35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "104551699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119128879"
 ---
 # <a name="configuring-transactions"></a>Configurando transações
 
@@ -98,19 +98,19 @@ Uma maneira de garantir que um objeto seja incluído no limite de transação co
 
 Em tempo de execução, o COM+ examina o atributo Transaction para determinar se um objeto deve ser a raiz de uma nova transação, ser criado em uma transação existente ou ser criado como um objeto não transacional.
 
-A ilustração a seguir mostra um possível mapeamento de transação. Na ilustração, o cliente cria o objeto 1, que requer uma transação. Como não existe nenhuma transação, o COM+ cria a transação 1 e coloca o objeto 1 nela como o objeto raiz. O objeto 1 cria o objeto 2, que dá suporte a transações e, portanto, é colocado na transação 1. O objeto 2 cria o objeto 3, que não oferece suporte a transações e, portanto, é colocado fora de todas as transações. O objeto 2 também cria o objeto 4, que requer uma transação e, portanto, é colocado na transação 1. O objeto 3 cria o objeto 5, que dá suporte a transações. No entanto, como o objeto 5 é criado por um objeto que não existe em uma transação, ele também é colocado fora de todas as transações. O objeto 4 cria o objeto 6, que requer uma nova transação, portanto, o COM+ cria a transação 2 e coloca o objeto 6 nela como o objeto raiz. O objeto 6 cria o objeto 7, que dá suporte a transações e, portanto, é colocado na transação 2.
+A ilustração a seguir mostra um possível mapeamento de transação. Na ilustração, o cliente cria o objeto 1, que requer uma transação. Como não existe nenhuma transação, o COM+ cria a transação 1 e coloca o objeto 1 nela como o objeto raiz. O objeto 1 cria o objeto 2, que dá suporte a transações e, portanto, é colocado na transação 1. O objeto 2 cria o objeto 3, que não oferece suporte a transações e, portanto, é colocado fora de todas as transações. O objeto 2 também cria o objeto 4, que requer uma transação e, portanto, é colocado na transação 1. O objeto 3 cria o objeto 5, que dá suporte a transações. No entanto, como o objeto 5 é criado por um objeto que não existe em uma transação, ele também é colocado fora de todas as transações. O objeto 4 cria o objeto 6, que requer uma nova transação, portanto, o COM+ cria a transação 2 e coloca o objeto 6 nela como o objeto raiz. O Objeto 6 cria o Objeto 7, que dá suporte a transações e, portanto, é colocado na Transação 2.
 
-![Diagrama que mostra uma interação do cliente com a transação 1 e a transação 2.](images/fc7e2d03-94c2-40d9-a79b-1e05ca31dd80.png)
+![Diagrama que mostra uma interação do cliente com a Transação 1 e a Transação 2.](images/fc7e2d03-94c2-40d9-a79b-1e05ca31dd80.png)
 
-A ilustração anterior mostra duas áreas problemáticas potenciais. Primeiro, a maior parte do trabalho é dividida entre duas transações distintas. Se a transação 1 falhar depois que o objeto 4 criar o objeto 6, a transação 2 não será afetada pelo resultado da transação 1. Se esse resultado não for intencional, talvez você prefira dobrar as operações de ambas as transações em uma única transação, o que pode ser feito alterando o atributo de transação do objeto 6 para necessário.
+A ilustração anterior mostra duas áreas de problema potenciais. Primeiro, a maioria do trabalho é dividida entre duas transações distintas. Se a Transação 1 falhar depois que o Objeto 4 criar o Objeto 6, a Transação 2 não será afetada pelo resultado da Transação 1. Se esse resultado não for intencional, você poderá preferir dobrar as operações de ambas as transações em uma única transação, o que pode ser feito alterando o atributo de transação do Objeto 6 para Obrigatório.
 
-A ilustração de mapeamento também mostra que o objeto 3 e o objeto 5 não são transacionais, executando completamente fora do escopo das transações 1 e 2. Se o objeto 5 atualizar dados persistentes, talvez você queira reconsiderar seu status não transacional. O objeto 5 pode ser colocado em uma transação alterando seu atributo de transação para obrigatório.
+A ilustração de mapeamento também mostra que o Objeto 3 e o Objeto 5 não são transacionais, sendo executados completamente fora do escopo das Transações 1 e 2. Se o Objeto 5 atualizar dados persistentes, talvez você queira reconsiderar seu status não transacional. O objeto 5 pode ser colocado dentro de uma transação alterando seu atributo de transação para Obrigatório.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Configurando o atributo de transação](setting-the-transaction-attribute.md)
+[Definindo o atributo transaction](setting-the-transaction-attribute.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Mensagem de EM_GETHYPHENATEINFO (RichEdit. h)
 description: Recupera informações sobre a hifenização para um controle de edição rico da Microsoft.
 ms.assetid: 70ccb698-e440-493b-8f38-2bf7f32e4b26
 keywords:
-- Controles de EM_GETHYPHENATEINFO de mensagens do Windows
+- controles de Windows de mensagem de EM_GETHYPHENATEINFO
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d083b4bbc4b6854f767395d51dd9899c2a185d0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bd9bbb6eb156bd2a5af1b69ecaad800f721aebb68b3d8ccfcb7bf8cb9ba465e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019614"
 ---
 # <a name="em_gethyphenateinfo-message"></a>\_Mensagem em GETHYPHENATEINFO
 
@@ -49,9 +49,9 @@ Não usado; deve ser zero.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP com SP1\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho do SP1\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
 
 
 

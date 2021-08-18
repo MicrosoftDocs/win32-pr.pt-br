@@ -1,5 +1,5 @@
 ---
-description: Este tópico inclui um exemplo de como escrever um script que obtém dados por meio do Microsoft Windows HTTP Services (WinHTTP) de forma síncrona ou assíncrona.
+description: este tópico inclui um exemplo de como escrever um script que obtém dados por meio do Microsoft Windows HTTP Services (WinHTTP) de forma síncrona ou assíncrona.
 ms.assetid: 84b847f8-4d9e-4fea-9e87-df4c65b54a02
 title: Recuperando dados usando script
 ms.topic: article
@@ -9,16 +9,16 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 734516cf75f92cc43ab4cb15f22bd97aa803ec33
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e018aa680808feddc021c7c03937d085b0d0f787c3213720cbb5e94a46a85c0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119133059"
 ---
 # <a name="retrieving-data-using-script"></a>Recuperando dados usando script
 
-Este tópico inclui um exemplo de como escrever um script que obtém dados por meio do Microsoft Windows HTTP Services (WinHTTP) de forma síncrona ou assíncrona. Os conceitos demonstrados neste exemplo fornecem a base para gravar aplicativos de servidor de cliente ou de camada intermediária que exigem acesso aos dados usando o protocolo HTTP.
+este tópico inclui um exemplo de como escrever um script que obtém dados por meio do Microsoft Windows HTTP Services (WinHTTP) de forma síncrona ou assíncrona. Os conceitos demonstrados neste exemplo fornecem a base para gravar aplicativos de servidor de cliente ou de camada intermediária que exigem acesso aos dados usando o protocolo HTTP.
 
 -   [Pré-requisitos e requisitos](#prerequisites-and-requirements)
 -   [Recuperando dados de forma síncrona](#retrieving-data-synchronously)
@@ -27,10 +27,10 @@ Este tópico inclui um exemplo de como escrever um script que obtém dados por m
 
 ## <a name="prerequisites-and-requirements"></a>Pré-requisitos e requisitos
 
-Além de um conhecimento prático do Microsoft JScript, este exemplo requer o seguinte:
+além de um conhecimento prático do Microsoft JScript, este exemplo requer o seguinte:
 
--   A versão atual do SDK (Software Development Kit) do Microsoft Windows.
--   A ferramenta de configuração de proxy para estabelecer as configurações de proxy para o Microsoft Windows HTTP Services (WinHTTP), se a conexão com a Internet for por meio de um servidor proxy. Para obter mais informações, consulte [ProxyCfg.exe, uma ferramenta de configuração de proxy](proxycfg-exe--a-proxy-configuration-tool.md).
+-   a versão atual do Microsoft Windows Software Development Kit (SDK).
+-   a ferramenta de configuração de proxy para estabelecer as configurações de proxy para o Microsoft Windows HTTP Services (WinHTTP), se a conexão com a Internet for por meio de um servidor proxy. Para obter mais informações, consulte [ProxyCfg.exe, uma ferramenta de configuração de proxy](proxycfg-exe--a-proxy-configuration-tool.md).
 -   Familiaridade com a [terminologia](network-terminology.md) e os conceitos de rede.
 
 ## <a name="retrieving-data-synchronously"></a>Recuperando dados de forma síncrona
@@ -92,7 +92,7 @@ O aplicativo contém apenas uma função, "gettext". A primeira linha do script 
 
 
 
-Quando o mecanismo JScript encontra essa linha, ele cria uma instância desse objeto. Se você receber a mensagem de erro "o componente ActiveX não pode criar objeto", nessa linha, provavelmente a WinHttp.dll não foi corretamente registrada ou não está presente no sistema.
+quando o mecanismo de JScript encontra essa linha, ele cria uma instância desse objeto. se você receber a mensagem de erro "o componente ActiveX não pode criar objeto", nessa linha, provavelmente a WinHttp.dll não foi corretamente registrada ou não está presente no sistema.
 
 A próxima linha do script chama o método [**Open**](iwinhttprequest-open.md) .
 

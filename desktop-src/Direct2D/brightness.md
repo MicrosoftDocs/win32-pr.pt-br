@@ -6,12 +6,12 @@ keywords:
 - efeito de brilho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 88dd9797aa125e7099ba4a706bac730a30715f6c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f88b67615948cbea74333605e900de194c0eeeb3d747d83af5eae8a750e6f135
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104563971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119215359"
 ---
 # <a name="brightness-effect"></a>Efeito de brilho
 
@@ -20,7 +20,7 @@ Use o efeito de brilho para controlar o brilho da imagem.
 O CLSID para esse efeito é CLSID \_ D2D1Brightness.
 
 -   [Imagem de exemplo](#example-image)
--   [Propriedades do efeito](#effect-properties)
+-   [Propriedades de efeito](#effect-properties)
 -   [Bitmap de saída](#output-bitmap)
 -   [Requirements](#requirements)
 -   [Tópicos relacionados](#related-topics)
@@ -32,7 +32,7 @@ O CLSID para esse efeito é CLSID \_ D2D1Brightness.
 | Antes                                                      |
 |-------------------------------------------------------------|
 | ![a imagem antes do efeito.](images/default-before.jpg)  |
-| After (após)                                                       |
+| Depois                                                       |
 | ![a imagem após a transformação.](images/34-brightness.png) |
 
 
@@ -53,14 +53,14 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propriedades do efeito
+## <a name="effect-properties"></a>Propriedades de efeito
 
 
 
 | Nome de exibição da propriedade                                                 | Tipo e valor padrão                              | Descrição                                                                                                                                                                                                                                                                 |
 |-----------------------------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| WhitePoint<br/> \_ \_ \_ Ponto branco de prop \_ d2d1 de brilho<br/> | \_Vetor d2d1 \_ 2F<br/> {1,0 f, 1,0 f}<br/> | A parte superior da curva de transferência de brilho. O ponto branco ajusta a aparência das partes mais brilhantes da imagem. Essa propriedade é para o valor x e o valor y, nessa ordem. Cada um dos valores dessa propriedade está entre 0 e 1, inclusive. |
-| BlackPoint<br/> \_ \_ \_ Ponto preto de prop \_ d2d1 de brilho<br/> | \_Vetor d2d1 \_ 2F<br/> {0,0 f, 0,0 f}<br/> | A parte inferior da curva de transferência de brilho. O ponto preto ajusta a aparência das partes mais escuras da imagem. Essa propriedade é para o valor x e o valor y, nessa ordem. Cada um dos valores dessa propriedade está entre 0 e 1, inclusive.   |
+| WhitePoint<br/> PONTO EM BRANCO DO \_ \_ PROP DE BRILHO \_ D2D1 \_<br/> | D2D1 \_ VECTOR \_ 2F<br/> {1.0f, 1.0f}<br/> | A parte superior da curva de transferência de brilho. O ponto em branco ajusta a aparência das partes mais interessantes da imagem. Essa propriedade é para o valor x e o valor y, nessa ordem. Cada um dos valores dessa propriedade está entre 0 e 1, inclusive. |
+| BlackPoint<br/> PONTO PRETO DO \_ \_ PROP DE BRILHO \_ D2D1 \_<br/> | D2D1 \_ VECTOR \_ 2F<br/> {0.0f, 0.0f}<br/> | A parte inferior da curva de transferência de brilho. O ponto preto ajusta a aparência das partes mais escuras da imagem. Essa propriedade é para o valor x e o valor y, nessa ordem. Cada um dos valores dessa propriedade está entre 0 e 1, inclusive.   |
 
 
 
@@ -70,22 +70,22 @@ Esse efeito usa os pontos branco e preto especificados para gerar uma função d
 
 ![algoritmo de brilho](images/brightness-formula1.png)
 
-O algoritmo de efeito implementa uma equação que cria a função de transferência. Usamos essa função para ajustar os pixels da imagem. Os valores x e y do ponto preto e do ponto branco são as coordenadas em duas dimensões que estão conectadas para formar a transformação. Cada parte da equação de saída final:
+O algoritmo de efeito implementa uma equação que cria a função de transferência. Usamos essa função para ajustar os pixels da imagem. Os valores x e y do ponto preto e do ponto em branco são as coordenadas em duas dimensões conectadas para formar a transformação. Cada parte da equação de saída final:
 
-1.  Converte os dados de imagem do espaço linear em espaço não linear usando esta equação:![função auxiliar 1](images/brightness-formula2.png)
+1.  Converte os dados de imagem de espaço linear em espaço não linear usando esta equação:![função auxiliar 1](images/brightness-formula2.png)
 
 2.  Ajusta a imagem de acordo com estes valores:
-    -   *entrada* são os valores de intensidade de pixel da imagem de entrada de 0 a 1.
+    -   *input* são os valores de intensidade de pixel da imagem de entrada de 0 a 1.
 
-    -   *Pt branca. (x, y)* o local da curva de transformação para intensidades de pixel mais brilhantes.
+    -   *White Pt. (x, y) o* local da curva de transformação para intenções de pixel mais brilhante.
 
-    -   *Black pt. (x, y)* é o local da curva de transformação para intensidades de pixel do DIMM.
+    -   *Black Pt. (x, y) é* o local da curva de transformação para intensidades de pixel de imersão.
 
-3.  Converte os dados da imagem de volta em espaço linear usando esta equação: ![função auxiliar 2](images/brightness-formula3.png)
+3.  Converte os dados de imagem de volta em espaço linear usando esta equação: ![função auxiliar 2](images/brightness-formula3.png)
 
 A equação de saída final e as partes do componente são mostradas aqui.
 
-![os cálculos completos para o ajuste de brilho](images/brightness-formula4.png)
+![os cálculos completos para ajuste de brilho](images/brightness-formula4.png)
 
 ## <a name="output-bitmap"></a>Bitmap de saída
 
@@ -97,10 +97,10 @@ O tamanho do bitmap de saída é o mesmo que o tamanho do bitmap de entrada.
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

@@ -24,33 +24,33 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b5fbcbf38ae60ae17f74e650c403611a88d89662
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 82c10cc71e7621aa5fb338acc8964a3e221af3cc068eafb1d32aab6273182501
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119115946"
 ---
 # <a name="esentioexception-class"></a>Classe EsentIOException
 
-Classe base para exceções de e/s.
+Classe base para exceções de E/S.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          Microsoft. ISAM. ESENT. Interop. EsentIOException  
-            [Microsoft. ISAM. ESENT. Interop. EsentDeleteBackupFileFailException](./esentdeletebackupfilefailexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentDiskIOException](./esentdiskioexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentFileAccessDeniedException](./esentfileaccessdeniedexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentLogWriteFailException](./esentlogwritefailexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentMakeBackupDirectoryFailException](./esentmakebackupdirectoryfailexception-class.md)  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentIOException  
+            [Microsoft.Isam.Esent.Interop.EsentDeleteBackupFileFailException](./esentdeletebackupfilefailexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentDiskIOException](./esentdiskioexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentFileAccessDeniedException](./esentfileaccessdeniedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentLogWriteFailException](./esentlogwritefailexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentMakeBackupDirectoryFailException](./esentmakebackupdirectoryfailexception-class.md)  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -76,6 +76,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentIOException](./esentioexception-members.md)
+[Membros EsentIOException](./esentioexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

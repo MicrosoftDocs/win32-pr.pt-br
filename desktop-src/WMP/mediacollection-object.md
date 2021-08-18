@@ -3,7 +3,7 @@ title: Objeto mediacollection
 description: O objeto Mediacollection fornece uma maneira de organizar uma grande coleção de itens de mídia. Ele pode ser consultado para gerar listas de reprodução automaticamente.
 ms.assetid: afcb2c51-3ecb-4529-8f3e-56aa6d0ec2b4
 keywords:
-- Objeto mediacollection Windows Media Player
+- Windows Media Player de objeto mediacollection
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2232e3590acd371039494b31c5d592c2e00f0199
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 8e529bec203b836f1f1022793a18320a7612cb242de58407ddb998c7410a47cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105800121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996246"
 ---
 # <a name="mediacollection-object"></a>Objeto mediacollection
 
@@ -49,7 +49,7 @@ O objeto **mediacollection** dá suporte aos seguintes métodos.
 
 
 
- 
+ 
 
 O objeto **mediacollection** é acessado por meio da propriedade a seguir.
 
@@ -61,7 +61,7 @@ O objeto **mediacollection** é acessado por meio da propriedade a seguir.
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -70,9 +70,9 @@ O objeto **mediacollection** é acessado por meio da propriedade a seguir.
 [**Referência de modelo de objeto para scripts**](object-model-reference-for-scripting.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

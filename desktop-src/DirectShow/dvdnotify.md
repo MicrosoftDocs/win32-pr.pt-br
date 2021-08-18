@@ -1,15 +1,15 @@
 ---
-description: O evento DVDNotify notifica um aplicativo sobre vários eventos de DVD e instruções de disco diferentes.
+description: O evento DVDNotify notifica uma aplicação de muitos eventos de DVD e instruções de disco diferentes.
 ms.assetid: 8e7d85fb-95c0-472d-ab17-a82da303b68f
-title: DVDNotify (Segment. h)
+title: DVDNotify (Segment.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b31a2974bec428cb8ffe290edc9a384445e42070
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 988deaf53fb2b50555b4cf19a38684610aa0822a270dfba079defab92ce8aec0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782198"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148699"
 ---
 # <a name="dvdnotify"></a>DVDNotify
 
@@ -18,7 +18,7 @@ ms.locfileid: "105782198"
 
  
 
-O `DVDNotify` evento notifica um aplicativo sobre vários eventos de DVD e instruções de disco diferentes.
+O `DVDNotify` evento notifica uma aplicação de muitos eventos de DVD e instruções de disco diferentes.
 
 ``` syntax
 DVDNotify(EventCode, Param1, Param2)
@@ -51,7 +51,7 @@ Pode conter informações adicionais relacionadas ao evento.
 
 ## <a name="remarks"></a>Comentários
 
-Os [códigos de notificação de eventos de DVD](dvd-notification-codes.md) fornecem uma explicação completa de todos os códigos de notificação de eventos de DVD e seus parâmetros.
+[Códigos de notificação de eventos de DVD](dvd-notification-codes.md) fornece uma explicação completa de todos os códigos de notificação de evento de DVD e seus parâmetros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Os [códigos de notificação de eventos de DVD](dvd-notification-codes.md) forn
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Segment. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Segment.h</dt> </dl> |
 
 
 

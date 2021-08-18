@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1f2763733e3e87862cfd1e411f3cbf1b79ac753c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e653f38dcb3867ef9ca6605b8553ad162d24e4cdf450ed6b4ab32c44115cc1a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112792"
 ---
 # <a name="esentupdatemustversionexception-constructor"></a>Construtor EsentUpdateMustVersionException
 
 Inicializa uma nova instância da classe EsentUpdateMustVersionException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentUpdateMustVersionException()
 
 [Classe EsentUpdateMustVersionException](./esentupdatemustversionexception-class.md)
 
-[Membros do EsentUpdateMustVersionException](./esentupdatemustversionexception-members.md)
+[Membros EsentUpdateMustVersionException](./esentupdatemustversionexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,7 +1,7 @@
 ---
-description: Retorna o identificador da API do Microsoft DirectX do modo kernel a ser usado em chamadas subsequentes para os pontos de entrada do modo kernel que controlam o mecanismo da API do DirectX.
+description: Retorna o handle da API do Microsoft DirectX no modo kernel a ser usado em chamadas subsequentes para os pontos de entrada no modo kernel que controlam o mecanismo de API do DirectX.
 ms.assetid: c95cb188-305f-4b60-be55-0511b57f0597
-title: Função NtGdiDdGetDxHandle (Ntgdi. h)
+title: Função NtGdiDdGetDxHandle (Ntgdi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_location:
 - Ext-MS-Win-GDI-Internal-Desktop-L1-1-0.dll
 - GDI32.dll
 - GDI32Full.dll
-ms.openlocfilehash: f1b304216c518765be73d9f3a3e63d39ec4b37fb
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 13234c7ebe350f096164f0a5de0bde7a60e819e80899aa87258a76727855b869
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119331916"
 ---
 # <a name="ntgdiddgetdxhandle-function"></a>Função NtGdiDdGetDxHandle
 
-\[Essa função está sujeita a alterações em cada revisão do sistema operacional. Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam os aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação direta com os drivers de vídeo.\]
+\[Essa função está sujeita a alterações com cada revisão do sistema operacional. Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação diretamente com drivers de exibição.\]
 
-Retorna o identificador da API do Microsoft DirectX do modo kernel a ser usado em chamadas subsequentes para os pontos de entrada do modo kernel que controlam o mecanismo da API do DirectX.
+Retorna o handle da API do Microsoft DirectX no modo kernel a ser usado em chamadas subsequentes para os pontos de entrada no modo kernel que controlam o mecanismo de API do DirectX.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,34 +46,34 @@ DWORD APIENTRY NtGdiDdGetDxHandle(
 
 <dl> <dt>
 
-*hDirectDraw* \[ no\]
+*hDirectDraw* \[ Em\]
 </dt> <dd>
 
-Identificador para o objeto do DirectDraw que possui a superfície. Esse parâmetro é opcional e pode ser definido como **nulo**.
+Identificador para o objeto DirectDraw que possui a superfície. Esse parâmetro é opcional e pode ser definido como **NULL.**
 
 </dd> <dt>
 
-*hSurface* \[ no\]
+*hSurface* \[ Em\]
 </dt> <dd>
 
-Identificador para superfície para o qual retornar um identificador de API DirectX do modo kernel. Esse parâmetro é opcional e pode ser definido como **nulo**.
+Lidar com a superfície para a qual retornar um handle de API directX no modo kernel. Esse parâmetro é opcional e pode ser definido como **NULL.**
 
 </dd> <dt>
 
-*bRelease* \[ no\]
+*bRelease* \[ Em\]
 </dt> <dd>
 
-Defina como **true** se a interface do modo kernel da API do DirectX for lançada. Caso contrário, **false**.
+Definido como **TRUE se** a interface do modo de kernel da API do DirectX deve ser liberada. Caso contrário, **FALSE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um identificador de API do DirectX usado em pontos de entrada do kernel com orientação de API do DirectX subsequentes.
+Um alça de API do DirectX usado em pontos de entrada de kernel orientados à API do DirectX subsequentes.
 
 ## <a name="remarks"></a>Comentários
 
-Se *hDirectDraw* e *hSurface* forem especificados, *hSurface* será ignorado.
+Se *hDirectDraw* e *hSurface* são especificados, *hSurface* é ignorado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,7 +83,7 @@ Se *hDirectDraw* e *hSurface* forem especificados, *hSurface* será ignorado.
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de LVM_SETTILEVIEWINFO (commctrl. h)
 description: Define informações que um controle de exibição de lista usa no modo de exibição de bloco.
 ms.assetid: 1c4f2aff-1ce1-484a-9360-3efbe870b39b
 keywords:
-- Controles de LVM_SETTILEVIEWINFO de mensagens do Windows
+- controles de Windows de mensagem de LVM_SETTILEVIEWINFO
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25d6c728d92bb931837eca440af679b5bcb98d1e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bf22f94ec3db661823bfb1582dd97975e41bc11d2803e4380d8f0f45afae02f4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119217376"
 ---
 # <a name="lvm_settileviewinfo-message"></a>\_Mensagem SETTILEVIEWINFO LVM
 
@@ -35,7 +35,7 @@ Define informações que um controle de exibição de lista usa no modo de exibi
 *lParam* 
 </dt> <dd>Ponteiro para uma estrutura <a href="/windows/win32/api/commctrl/ns-commctrl-lvtileviewinfo">**LVTILEVIEWINFO**</a> que contém as informações a serem definidas.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -49,9 +49,9 @@ Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ description: As funções a seguir são usadas para implementar documentos compo
 ms.assetid: cab450bb-13d8-4a5f-b8f3-ad68a483afbb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c578d18b54547cf5639faa1ea2f84cc5cfa126b1
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 71267809dfbc1601a4e8a1529dcf3852eecead1db829922c14cb6dd1a3433f68
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104008756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462516"
 ---
 # <a name="functions-ole-and-data-transfer"></a>Funções (OLE e Transferência de Dados)
 

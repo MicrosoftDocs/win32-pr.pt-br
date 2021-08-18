@@ -1,231 +1,231 @@
 ---
-description: A partir do Windows 10, a CNG fornece suporte para as seguintes curvas elípticas nomeadas (ANSI X 9.62, X 9.63, FIPS 186-2).
+description: A partir do Windows 10, o CNG fornece suporte para as seguintes curvas elípticas nomeadas (ANSI X9.62, X9.63, FIPS 186-2).
 ms.assetid: 0607E8C3-6372-47E1-B16F-EF156D5EBA7D
 title: Curvas elípticas nomeadas CNG (Bcrypt.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35092d463e6f83917d231a87659e690ffeb59fe3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 691f1211b56abc41d622d20857653723be37681014a9bf72b91c1384c8f4b8cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118908247"
 ---
-# <a name="cng-named-elliptic-curves"></a>CNG denominada curvas elípticas
+# <a name="cng-named-elliptic-curves"></a>Curvas elípticas nomeadas em CNG
 
-A partir do Windows 10, a CNG fornece suporte para as seguintes curvas elípticas nomeadas (ANSI X 9.62, X 9.63, FIPS 186-2).
+A partir do Windows 10, o CNG fornece suporte para as seguintes curvas elípticas nomeadas (ANSI X9.62, X9.63, FIPS 186-2).
 
-<dl> <dt><span id="BCRYPT_ECC_CURVE_25519"></span><span id="bcrypt_ecc_curve_25519"></span>**\_Curva ECC de BCRYPT \_ \_ 25519**</dt> <dd> <dl> <dt> 
+<dl> <dt><span id="BCRYPT_ECC_CURVE_25519"></span><span id="bcrypt_ecc_curve_25519"></span>**BCRYPT \_ ECC \_ CURVE \_ 25519**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------|
 | Nome              | curve25519                                                  |
 | Standard          | [Curva 25519](https://cr.yp.to/ecdh/curve25519-20060209.pdf) |
 | Tamanho da chave (bits)   | 255                                                         |
-| Compatível com TLS       |                                                             |
+| Capacidade para TLS       |                                                             |
 | Identificador de objeto | Nenhum                                                        |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP160R1"></span><span id="bcrypt_ecc_curve_brainpoolp160r1"></span>**\_BRAINPOOLP160R1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP160R1"></span><span id="bcrypt_ecc_curve_brainpoolp160r1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP160R1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP160r1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 160                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.1                                                                                              |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP160T1_"></span><span id="bcrypt_ecc_curve_brainpoolp160t1_"></span>**BCRYPT \_ \_ \_ BRAINPOOLP160T1 de curva ECC**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP160T1_"></span><span id="bcrypt_ecc_curve_brainpoolp160t1_"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP160T1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP160t1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 160                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.2                                                                                              |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP192R1"></span><span id="bcrypt_ecc_curve_brainpoolp192r1"></span>**\_BRAINPOOLP192R1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP192R1"></span><span id="bcrypt_ecc_curve_brainpoolp192r1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP192R1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP192r1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 192                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.3                                                                                              |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP192T1"></span><span id="bcrypt_ecc_curve_brainpoolp192t1"></span>**\_BRAINPOOLP192T1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP192T1"></span><span id="bcrypt_ecc_curve_brainpoolp192t1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP192T1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP192t1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 192                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.4                                                                                              |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP224R1"></span><span id="bcrypt_ecc_curve_brainpoolp224r1"></span>**\_BRAINPOOLP224R1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP224R1"></span><span id="bcrypt_ecc_curve_brainpoolp224r1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP224R1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP224r1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 224                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.5                                                                                              |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP224T1"></span><span id="bcrypt_ecc_curve_brainpoolp224t1"></span>**\_BRAINPOOLP224T1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP224T1"></span><span id="bcrypt_ecc_curve_brainpoolp224t1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP224T1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP224t1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 224                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.6                                                                                              |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP256R1"></span><span id="bcrypt_ecc_curve_brainpoolp256r1"></span>**\_BRAINPOOLP256R1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP256R1"></span><span id="bcrypt_ecc_curve_brainpoolp256r1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP256R1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP256r1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 256                                                                                                               |
-| Compatível com TLS       | Sim                                                                                                               |
+| Capacidade para TLS       | Sim                                                                                                               |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.7                                                                                              |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP256T1"></span><span id="bcrypt_ecc_curve_brainpoolp256t1"></span>**\_BRAINPOOLP256T1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP256T1"></span><span id="bcrypt_ecc_curve_brainpoolp256t1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP256T1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP256t1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 256                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.8                                                                                              |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP320R1"></span><span id="bcrypt_ecc_curve_brainpoolp320r1"></span>**\_BRAINPOOLP320R1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP320R1"></span><span id="bcrypt_ecc_curve_brainpoolp320r1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP320R1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP320r1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 320                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.9                                                                                              |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP32_0T1"></span><span id="bcrypt_ecc_curve_brainpoolp32_0t1"></span>**\_ \_ BRAINPOOLP32 0T1 de curva de BCRYPT ECC \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP32_0T1"></span><span id="bcrypt_ecc_curve_brainpoolp32_0t1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP32 0T1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP320t1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 320                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.10                                                                                             |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP384R1_"></span><span id="bcrypt_ecc_curve_brainpoolp384r1_"></span>**BCRYPT \_ \_ \_ BRAINPOOLP384R1 de curva ECC**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP384R1_"></span><span id="bcrypt_ecc_curve_brainpoolp384r1_"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP384R1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP384r1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 384                                                                                                               |
-| Compatível com TLS       | Sim                                                                                                               |
+| Capacidade para TLS       | Sim                                                                                                               |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.11                                                                                             |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP384T1"></span><span id="bcrypt_ecc_curve_brainpoolp384t1"></span>**\_BRAINPOOLP384T1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP384T1"></span><span id="bcrypt_ecc_curve_brainpoolp384t1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP384T1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP384t1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 384                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.12                                                                                             |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP512R1"></span><span id="bcrypt_ecc_curve_brainpoolp512r1"></span>**\_BRAINPOOLP512R1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP512R1"></span><span id="bcrypt_ecc_curve_brainpoolp512r1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP512R1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP512r1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 512                                                                                                               |
-| Compatível com TLS       | Sim                                                                                                               |
+| Capacidade para TLS       | Sim                                                                                                               |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.13                                                                                             |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP512T1"></span><span id="bcrypt_ecc_curve_brainpoolp512t1"></span>**\_BRAINPOOLP512T1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_BRAINPOOLP512T1"></span><span id="bcrypt_ecc_curve_brainpoolp512t1"></span>**BCRYPT \_ ECC \_ CURVE \_ BRAINPOOLP512T1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------------------------------------|
 | Nome              | brainpoolP512t1                                                                                                   |
-| Standard          | [Curvas padrão ECC brainpool e geração de curva](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
+| Standard          | [ECC Brainpool Standard Curves and Curve Generation](https://www.teletrust.de/fileadmin/files/oid/oid_ECC-Brainpool-Standard-curves-V1.pdf) |
 | Tamanho da chave (bits)   | 512                                                                                                               |
-| Compatível com TLS       | Não                                                                                                                |
+| Capacidade para TLS       | Não                                                                                                                |
 | Identificador de objeto | 1.3.36.3.3.2.8.1.1.14                                                                                             |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_EC192WAPI_"></span><span id="bcrypt_ecc_curve_ec192wapi_"></span>**BCRYPT \_ \_ \_ EC192WAPI de curva ECC**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_EC192WAPI_"></span><span id="bcrypt_ecc_curve_ec192wapi_"></span>**BCRYPT \_ ECC \_ CURVE \_ EC192WAPI**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------|
@@ -552,93 +552,93 @@ A partir do Windows 10, a CNG fornece suporte para as seguintes curvas elíptica
 | Requisito | Valor |
 |-------------------|---------------------|
 | Nome              | x962P192v1          |
-| Standard          | ANSI X 9.62          |
+| Standard          | ANSI X9.62          |
 | Tamanho da chave (bits)   | 192                 |
-| Compatível com TLS       | Não                  |
+| Capacidade para TLS       | Não                  |
 | Identificador de objeto | 1.2.840.10045.3.1.1 |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P192V2_"></span><span id="bcrypt_ecc_curve_x962p192v2_"></span>**BCRYPT \_ \_ \_ X962P192V2 de curva ECC**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P192V2_"></span><span id="bcrypt_ecc_curve_x962p192v2_"></span>**BCRYPT \_ CURVA ECC \_ \_ X962P192V2**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|---------------------|
 | Nome              | x962P192v2          |
-| Standard          | ANSI X 9.62          |
+| Standard          | ANSI X9.62          |
 | Tamanho da chave (bits)   | 192                 |
-| Compatível com TLS       | Não                  |
+| Capacidade para TLS       | Não                  |
 | Identificador de objeto | 1.2.840.10045.3.1.2 |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P192V3"></span><span id="bcrypt_ecc_curve_x962p192v3"></span>**\_X962P192V3 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P192V3"></span><span id="bcrypt_ecc_curve_x962p192v3"></span>**BCRYPT \_ ECC \_ CURVE \_ X962P192V3**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|---------------------|
 | Nome              | x962P192v3          |
-| Standard          | ANSI X 9.62          |
+| Standard          | ANSI X9.62          |
 | Tamanho da chave (bits)   | 192                 |
-| Compatível com TLS       | Não                  |
+| Capacidade para TLS       | Não                  |
 | Identificador de objeto | 1.2.840.10045.3.1.3 |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P239V1_"></span><span id="bcrypt_ecc_curve_x962p239v1_"></span>**BCRYPT \_ \_ \_ X962P239V1 de curva ECC**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P239V1_"></span><span id="bcrypt_ecc_curve_x962p239v1_"></span>**BCRYPT \_ CURVA ECC \_ \_ X962P239V1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|---------------------|
 | Nome              | x962P239v1          |
-| Standard          | ANSI X 9.62          |
+| Standard          | ANSI X9.62          |
 | Tamanho da chave (bits)   | 239                 |
-| Compatível com TLS       | Não                  |
+| Capacidade para TLS       | Não                  |
 | Identificador de objeto | 1.2.840.10045.3.1.4 |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P239V2_"></span><span id="bcrypt_ecc_curve_x962p239v2_"></span>**BCRYPT \_ \_ \_ X962P239V2 de curva ECC**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P239V2_"></span><span id="bcrypt_ecc_curve_x962p239v2_"></span>**BCRYPT \_ CURVA ECC \_ \_ X962P239V2**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|---------------------|
 | Nome              | x962P239v2          |
-| Standard          | ANSI X 9.62          |
+| Standard          | ANSI X9.62          |
 | Tamanho da chave (bits)   | 239                 |
-| Compatível com TLS       | Não                  |
+| Capacidade para TLS       | Não                  |
 | Identificador de objeto | 1.2.840.10045.3.1.5 |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P239V3_"></span><span id="bcrypt_ecc_curve_x962p239v3_"></span>**BCRYPT \_ \_ \_ X962P239V3 de curva ECC**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P239V3_"></span><span id="bcrypt_ecc_curve_x962p239v3_"></span>**BCRYPT \_ CURVA ECC \_ \_ X962P239V3**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|---------------------|
 | Nome              | x962P239v3          |
-| Standard          | ANSI X 9.62          |
+| Standard          | ANSI X9.62          |
 | Tamanho da chave (bits)   | 239                 |
-| Compatível com TLS       | Não                  |
+| Capacidade para TLS       | Não                  |
 | Identificador de objeto | 1.2.840.10045.3.1.6 |
 
 
 
  
 
-</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P256V1"></span><span id="bcrypt_ecc_curve_x962p256v1"></span>**\_X962P256V1 de \_ curva de ECC BCRYPT \_**</dt> <dd> <dl> <dt> 
+</dt> </dl> </dd> <dt><span id="BCRYPT_ECC_CURVE_X962P256V1"></span><span id="bcrypt_ecc_curve_x962p256v1"></span>**BCRYPT \_ ECC \_ CURVE \_ X962P256V1**</dt> <dd> <dl> <dt> 
 
 | Requisito | Valor |
 |-------------------|---------------------|
 | Nome              | x962P256v1          |
-| Standard          | ANSI X 9.62          |
+| Standard          | ANSI X9.62          |
 | Tamanho da chave (bits)   | 256                 |
-| Compatível com TLS       | Não                  |
+| Capacidade para TLS       | Não                  |
 | Identificador de objeto | 1.2.840.10045.3.1.7 |
 
 
@@ -650,7 +650,7 @@ A partir do Windows 10, a CNG fornece suporte para as seguintes curvas elíptica
 
 ## <a name="remarks"></a>Comentários
 
-Para usar uma curva nomeada, chame [**BCryptOpenAlgorithmProvider**](/windows/win32/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) usando o **algoritmo de \_ ECDSA \_ BCrypt** ou o **\_ \_ algoritmo BCrypt ECDH** como a ID do algoritmo. Em seguida, chame [**BCryptSetProperty**](/windows/win32/api/Bcrypt/nf-bcrypt-bcryptsetproperty) e defina a propriedade de nome de **\_ \_ curva \_ de ECC BCRYPT** como uma das curvas acima ou quaisquer curvas nomeadas registradas no computador, conforme mostrado pelo `certutil -displayEccCurve` comando.
+Para usar uma curva nomeada, chame [**BCryptOpenAlgorithmProvider**](/windows/win32/api/Bcrypt/nf-bcrypt-bcryptopenalgorithmprovider) usando o ALGORITMO **\_ \_ ECDSA BCRYPT** ou o **ALGORITMO \_ ECDH \_ BCRYPT** como a ID do algoritmo. Em seguida, [**chame BCryptSetProperty**](/windows/win32/api/Bcrypt/nf-bcrypt-bcryptsetproperty) e delimita a propriedade **BCRYPT \_ ECC \_ CURVE \_ NAME** como uma das curvas acima ou quaisquer curvas nomeadas registradas no computador, conforme mostrado pelo `certutil -displayEccCurve` comando.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -658,9 +658,9 @@ Para usar uma curva nomeada, chame [**BCryptOpenAlgorithmProvider**](/windows/wi
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Bcrypt. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                |
+| parâmetro<br/>                   | <dl> <dt>Bcrypt.h</dt> </dl> |
 
 
 

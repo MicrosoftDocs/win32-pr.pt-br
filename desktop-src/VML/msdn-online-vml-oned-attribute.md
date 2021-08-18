@@ -1,26 +1,26 @@
 ---
-title: Atributo OnEd de VML
-description: Atributo OnEd de VML
+title: Atributo OnEd do VML
+description: Atributo OnEd do VML
 ms.assetid: d24137c3-73cb-4b92-bf25-ffe4aa8b0069
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1892d5ed185358c4abc5fa6fdaf6448ac5b6317c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 48ef444037a0cd05a7cfbed5a97bb93ed7e8236a9d9f66bf1f7bd77b92b82e02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999146"
 ---
-# <a name="vml-oned-attribute"></a>Atributo OnEd de VML
+# <a name="vml-oned-attribute"></a>Atributo OnEd do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se os identificadores extras de uma forma ficam ocultos. Leitura/gravação. **VgTriState**.
+Determina se os alças extras de uma forma estão ocultos. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,17 +28,17 @@ Determina se os identificadores extras de uma forma ficam ocultos. Leitura/grava
 
 **Sintaxe de marca**
 
-<v: *Element* o:oned = " *expressão* " >
+<v: *elemento* o:oned=" *expressão* ">
 
 **Comentários**
 
-Oculta todas as alças de forma, exceto as partes superior esquerda e inferior direita; ou seja, os mesmos identificadores que são usados para um segmento de linha reta. O padrão é **False**.
+Oculta todos os alças de forma, exceto a parte superior esquerda e inferior direita; ou seja, os mesmos alças usados para um segmento de linha reta. O padrão é **False**.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
 **Exemplo**
 
-Todos, exceto os identificadores esquerdo superior e inferior direito da forma ficam ocultos.
+Todos, menos os alças superior esquerdo e inferior direito da forma, estão ocultos.
 
 
 ```HTML
@@ -52,6 +52,6 @@ Todos, exceto os identificadores esquerdo superior e inferior direito da forma f
 
 
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
 description: Estilos de janela estendidos para a janela.
 ms.assetid: 53e71d4c-1620-45d9-b082-fdf2a7f3d2f7
-title: 'Membro CBaseWindow:: m_WindowStylesEx (Winutil. h)'
+title: Membro CBaseWindow::m_WindowStylesEx (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 25548953ff624e88690c4a5a5bed4510a4236be6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7e9cd1e7d5ae161ca2b66f59faee4252a8e1c02b0d4cd47d1db0aefb73dc53db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074590"
 ---
-# <a name="cbasewindowm_windowstylesex-member"></a>Membro de CBaseWindow:: m \_ WindowStylesEx
+# <a name="cbasewindowm_windowstylesex-member"></a>Membro CBaseWindow::m \_ WindowStylesEx
 
 Estilos de janela estendidos para a janela.
 
@@ -42,8 +42,8 @@ DWORD m_WindowStylesEx;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

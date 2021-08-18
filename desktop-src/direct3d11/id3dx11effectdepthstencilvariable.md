@@ -1,10 +1,10 @@
 ---
-title: Interface ID3DX11EffectDepthStencilVariable (D3dx11effect. h)
-description: Uma interface de profundidade-estêncil-variável acessa o estado de estêncil de profundidade.
+title: Interface ID3DX11EffectDepthStencilVariable (D3dx11effect.h)
+description: Uma interface de variável de estêncil de profundidade acessa o estado de estêncil de profundidade.
 ms.assetid: 8fb1be19-eed4-4d69-bbbe-94484531eba2
 keywords:
-- Interface ID3DX11EffectDepthStencilVariable Direct3D 11
-- Interface ID3DX11EffectDepthStencilVariable Direct3D 11, descrita
+- ID3DX11EffectDepthStencilVariable interface Direct3D 11
+- ID3DX11EffectDepthStencilVariable interface Direct3D 11 , descrita
 topic_type:
 - apiref
 api_name:
@@ -16,20 +16,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d7aa520df0c13c81435421d5f605f901a61da6e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9d743bfebfa9722261d220800a633bdc8b268a520b883c9fea11f9f7948f7bca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930709"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989766"
 ---
 # <a name="id3dx11effectdepthstencilvariable-interface"></a>Interface ID3DX11EffectDepthStencilVariable
 
-Uma interface de profundidade-estêncil-variável acessa o estado de estêncil de profundidade.
+Uma interface de variável de estêncil de profundidade acessa o estado de estêncil de profundidade.
 
 ## <a name="members"></a>Membros
 
-A interface **ID3DX11EffectDepthStencilVariable** herda de [**ID3DX11EffectVariable**](id3dx11effectvariable.md). **ID3DX11EffectDepthStencilVariable** também tem estes tipos de membros:
+A interface **ID3DX11EffectDepthStencilVariable** herda de [**ID3DX11EffectVariable.**](id3dx11effectvariable.md) **ID3DX11EffectDepthStencilVariable** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -41,8 +41,8 @@ A interface **ID3DX11EffectDepthStencilVariable** tem esses métodos.
 
 | Método                                                                                         | Descrição                                                               |
 |:-----------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------|
-| [**GetBackingStore**](id3dx11effectdepthstencilvariable-getbackingstore.md)                   | Obtenha um ponteiro para uma variável que contém o estado de estêncil de profundidade.<br/> |
-| [**GetDepthStencilState**](id3dx11effectdepthstencilvariable-getdepthstencilstate.md)         | Obtenha um ponteiro para uma interface de estêncil de profundidade.<br/>                    |
+| [**GetBackingStore**](id3dx11effectdepthstencilvariable-getbackingstore.md)                   | Obter um ponteiro para uma variável que contém o estado de estêncil de profundidade.<br/> |
+| [**GetDepthStencilState**](id3dx11effectdepthstencilvariable-getdepthstencilstate.md)         | Obter um ponteiro para uma interface de estêncil de profundidade.<br/>                    |
 | [**SetDepthStencilState**](id3dx11effectdepthstencilvariable-setdepthstencilstate.md)         | Define o estado de estêncil de profundidade.<br/>                                  |
 | [**UndoSetDepthStencilState**](id3dx11effectdepthstencilvariable-undosetdepthstencilstate.md) | Reverte um estado de estêncil de profundidade definido anteriormente.<br/>                  |
 
@@ -54,10 +54,10 @@ A interface **ID3DX11EffectDepthStencilVariable** tem esses métodos.
 
 Uma interface [**ID3DX11EffectVariable**](id3dx11effectvariable.md) é criada quando um efeito é lido na memória.
 
-As variáveis de efeito são salvas na memória no repositório de backup; Quando uma técnica é aplicada, os valores no repositório de backup são copiados para o dispositivo. Você pode usar qualquer um desses métodos para retornar o estado.
+As variáveis de efeito são salvas na memória no armazenamento de back-back; quando uma técnica é aplicada, os valores no armazenamento de back-back são copiados para o dispositivo. Você pode usar qualquer um desses métodos para retornar o estado.
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -67,8 +67,8 @@ As variáveis de efeito são salvas na memória no repositório de backup; Quand
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 
@@ -79,10 +79,10 @@ As variáveis de efeito são salvas na memória no repositório de backup; Quand
 [**ID3DX11EffectVariable**](id3dx11effectvariable.md)
 </dt> <dt>
 
-[Efeitos 11 interfaces](d3d11-graphics-reference-effects11-interfaces.md)
+[Effects 11 Interfaces](d3d11-graphics-reference-effects11-interfaces.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d11-graphics-reference-d3dx11-interfaces.md)
+[D3DX Interfaces](d3d11-graphics-reference-d3dx11-interfaces.md)
 </dt> </dl>
 
  

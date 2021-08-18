@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Vinculando classes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89c36956d20d9390462577332e7ac7b644d4ffc7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da48ab6b816eece1184915026ca32ed152b896f0555ca6c546d0b8ed4d6a7640
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105794613"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119131218"
 ---
 # <a name="linking-classes-together"></a>Vinculando classes
 

@@ -1,22 +1,22 @@
 ---
-title: Cortando uma imagem
-description: Cortando uma imagem
+title: Corte de uma imagem
+description: Corte de uma imagem
 ms.assetid: 6600751c-d4b6-481d-bf69-be2d34244c05
 keywords:
 - Macro MCIWndGetSource
 - Macro MCIWndPutSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b2d73eb37792c124ad907f660d4b906ca80e715d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d0150962dc85e1e179e52a06c7af6c29193b40b50e9acc7a9feecd0570ab4214
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119144599"
 ---
-# <a name="cropping-an-image"></a>Cortando uma imagem
+# <a name="cropping-an-image"></a>Corte de uma imagem
 
-O exemplo a seguir cria uma janela MCIWnd e carrega um arquivo AVI. A janela inclui um comando de corte no menu, que corta um trimestre da altura ou largura de cada um dos quatro lados do quadro. O exemplo recupera as dimensões atuais (iniciais) do retângulo de origem usando a macro [**MCIWndGetSource**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetsource) . O retângulo de origem modificado é metade da altura e largura originais e é centralizado no quadro original. A chamada para a macro [**MCIWndPutSource**](/windows/desktop/api/Vfw/nf-vfw-mciwndputsource) redefine as coordenadas do retângulo de origem.
+O exemplo a seguir cria uma janela MCIWnd e carrega um arquivo AVI. A janela inclui um comando de corte no menu, que recorta um quarto da altura ou largura de cada um dos quatro lados do quadro. O exemplo recupera as dimensões atuais (iniciais) do retângulo de origem usando a macro [**MCIWndGetSource.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetsource) O retângulo de origem modificado tem metade da altura e largura originais e é centralizado no quadro original. A chamada para a macro [**MCIWndPutSource**](/windows/desktop/api/Vfw/nf-vfw-mciwndputsource) redefine as coordenadas do retângulo de origem.
 
 
 ```C++
@@ -51,9 +51,9 @@ case WM_COMMAND:
 
 
 
- 
+ 
 
- 
+ 
 
 
 

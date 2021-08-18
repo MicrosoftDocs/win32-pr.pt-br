@@ -3,7 +3,7 @@ title: TVN_SELCHANGING código de notificação (commctrl. h)
 description: Notifica uma janela pai do controle de exibição de árvore que a seleção está prestes a ser alterada de um item para outro. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 53f24ee0-433c-4680-9075-5e2b21117ed9
 keywords:
-- TVN_SELCHANGING de código de notificação controles do Windows
+- TVN_SELCHANGING código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 14de700bc058b8c6454a2f7e08fb9986697438fe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4b09933e1e4c7393521f298c60435efde76fbea23ef703f536fb241cc9f78610
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119433476"
 ---
 # <a name="tvn_selchanging-notification-code"></a>Código de notificação do TVN \_ SELCHANGING
 
@@ -47,7 +47,7 @@ Ponteiro para uma estrutura [**NMTREEVIEW**](/windows/win32/api/commctrl/ns-comm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **true** para impedir que a seleção seja alterada.
 
@@ -61,9 +61,9 @@ Ao responder a esse código de notificação, os aplicativos não devem excluir 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TVN \_ SELCHANGINGW** (Unicode) e **TVN \_ SELCHANGINGA** (ANSI)<br/>           |
 
 

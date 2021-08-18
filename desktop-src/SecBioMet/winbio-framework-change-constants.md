@@ -1,6 +1,6 @@
 ---
-title: Constantes de WINBIO_FRAMEWORK_CHANGE (WinBio \_ Types. h)
-description: Identifique o tipo de alteração ocorrida na estrutura.
+title: WINBIO_FRAMEWORK_CHANGE constantes (tipos \_ Winbio.h)
+description: Identifique o tipo de alteração que ocorreu na estrutura.
 ms.assetid: 826CE4D7-236D-42ED-9888-3898A5057032
 topic_type:
 - apiref
@@ -12,20 +12,20 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d15a736a6eb889aec96d55a72fce38edadf98347
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 98b9041794506ec631776827a9cee3574bf60101f3c3db6f320c14bc2b39de00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105811295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910262"
 ---
-# <a name="winbio_framework_change-constants"></a>Constantes de alteração de \_ estrutura WINBIO \_
+# <a name="winbio_framework_change-constants"></a>Constantes DE ALTERAÇÃO DO WINBIO \_ FRAMEWORK \_
 
-As constantes a seguir podem ser usadas na função [**WinBioAsyncMonitorFrameworkChanges**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncmonitorframeworkchanges) para identificar o tipo de alteração ocorrida na estrutura.
+As constantes a seguir podem ser usadas na função [**WinBioAsyncMonitorFrameworkChanges**](/windows/desktop/api/Winbio/nf-winbio-winbioasyncmonitorframeworkchanges) para identificar o tipo de alteração que ocorreu na estrutura.
 
 <dl> <dt>
 
-<span id="WINBIO_FRAMEWORK_CHANGE_UNIT"></span><span id="winbio_framework_change_unit"></span>**\_unidade de \_ alteração da estrutura WINBIO \_**
+<span id="WINBIO_FRAMEWORK_CHANGE_UNIT"></span><span id="winbio_framework_change_unit"></span>**UNIDADE DE \_ ALTERAÇÃO \_ DA ESTRUTURA WINBIO \_**
 </dt> <dd> <dl> <dt>
 
 0x00000001
@@ -33,7 +33,7 @@ As constantes a seguir podem ser usadas na função [**WinBioAsyncMonitorFramewo
 
 
 
-Uma unidade biométrica foi anexada ou desanexada do computador.
+Uma unidade biométrica foi anexada ou desvinculada do computador.
 
 
 </dt> </dl> </dd> </dl>
@@ -44,9 +44,9 @@ Uma unidade biométrica foi anexada ou desanexada do computador.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                                    |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                                    |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                          |
+| parâmetro<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h)</dt> </dl> |
 
 
 

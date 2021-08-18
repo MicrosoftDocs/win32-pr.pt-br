@@ -4,12 +4,12 @@ ms.assetid: a7f2fdd1-9514-4cda-bae2-2f379dd9a27d
 title: 'Programa de exemplo C: exportando uma chave de sessão'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5252e5eced86dd4e671f5080cf6dab5e1ec96b9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d10e3f8ea93d11460522383584d5847473a17497ad13ccfae72b0415e958bf52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119140909"
 ---
 # <a name="example-c-program-exporting-a-session-key"></a>Programa de exemplo C: exportando uma chave de sessão
 

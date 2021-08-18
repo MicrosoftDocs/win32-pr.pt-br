@@ -4,12 +4,12 @@ ms.assetid: 400a2b6e-6bbe-4ba4-abde-a2f625007517
 title: Recursos da CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df40606a255adc90bd36540571979c1c34579611
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 434c72075c04b0c280c85831ca78d930c0fcc047de19609d11764bcf63ddad56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750766"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118908443"
 ---
 # <a name="cng-features"></a>Recursos da CNG
 
@@ -29,7 +29,7 @@ A CNG tem os seguintes recursos.
 
 Uma das principais proposições de valor da CNG é a agilidade criptográfica, às vezes chamada de independente de criptografia. No entanto, a conversão de implementação de protocolos como [*protocolo de protocolo SSL*](/windows/desktop/SecGloss/s-gly) (SSL) ou TLS (segurança de [*camada de transporte*](/windows/desktop/SecGloss/t-gly) ), CMS (S/MIME), IPsec, Kerberos e assim por diante, foi necessária para tornar essa capacidade valiosa. No nível da CNG, era necessário fornecer substituição e descoberta para todos os tipos de algoritmos (funções simétricas, assimétricas, de hash), geração de números aleatórios e outras funções de utilitário. As alterações no nível de protocolo são mais significativas porque, em muitos casos, as APIs de protocolo precisavam adicionar a seleção de algoritmos e outras opções de flexibilidade que não existiam anteriormente.
 
-A CNG está disponível primeiro no Windows Vista e está posicionada para substituir os usos existentes de [*CryptoAPI*](/windows/desktop/SecGloss/c-gly) em toda a pilha de software da Microsoft. Os desenvolvedores de terceiros encontrarão muitos recursos novos na CNG, incluindo:
+a CNG está disponível primeiro no Windows Vista e está posicionada para substituir os usos existentes de [*CryptoAPI*](/windows/desktop/SecGloss/c-gly) em toda a pilha de software da Microsoft. Os desenvolvedores de terceiros encontrarão muitos recursos novos na CNG, incluindo:
 
 -   Um novo sistema de configuração de criptografia, dando suporte à melhor agilidade de criptografia.
 -   Abstração mais refinada para armazenamento de chaves (e separação de armazenamento de operações de algoritmos).
@@ -43,7 +43,7 @@ Além disso, a CNG inclui suporte para todos os algoritmos de Suite B necessári
 
 ## <a name="certification-and-compliance"></a>Certificação e conformidade
 
-A CNG é validada para o FIPS 140-2 (Federal Information Processing Standards) e faz parte do destino da avaliação para a certificação de critérios comuns do Windows. A CNG foi projetada para ser utilizável como um componente em um sistema validado pelo FIPS nível 2.
+a CNG é validada para o FIPS 140-2 (Federal Information Processing standards) e faz parte do destino da avaliação para a Windows certificação de critérios comuns. A CNG foi projetada para ser utilizável como um componente em um sistema validado pelo FIPS nível 2.
 
 A CNG está em conformidade com os requisitos de critérios comuns por meio do armazenamento e uso de chaves de vida longa em um processo seguro.
 
@@ -53,9 +53,9 @@ Um recurso importante da CNG é seu suporte para os algoritmos de Suite B. Em fe
 
 Todos os algoritmos de Suite B são conhecidos publicamente. Eles foram desenvolvidos fora do escopo do sigilo governamental historicamente associado ao desenvolvimento de algoritmos criptográficos. Nesse mesmo período de tempo, alguns países e regiões europeus também propuseram os mesmos requisitos de Suite B para proteger suas informações.
 
-A criptografia de Suite B recomenda o uso de Diffie-Hellman de curva elíptica (ECDH) em muitos protocolos existentes, como o protocolo IKE (IKE, usado principalmente no IPsec), TLS ( [*Transport Layer Security*](/windows/desktop/SecGloss/t-gly) ) e MIME (S/MIME) seguros.
+a criptografia de Suite B recomenda o uso de Diffie-Hellman de curva elíptica (ECDH) em muitos protocolos existentes, como o protocolo IKE (IKE, usado principalmente no IPsec), TLS ( [*transport layer security*](/windows/desktop/SecGloss/t-gly) ) e mime (S/mime) seguros.
 
-A CNG inclui suporte para Suite B que se estende a todos os algoritmos necessários: AES (todos os tamanhos de chave), família SHA-2 (SHA-256, SHA-384 e SHA-512) de algoritmos de hashing, ECDH e o ECDSA (DSA de curva elíptica) nas curvas elementares padrão do NIST P-256, P-384 e P-521. As curvas binárias, as curvas Koblitz, as curvas primos personalizadas e a curva elíptica Menezes-t-Vanstone (ECMQV) não têm suporte dos provedores de algoritmos da Microsoft incluídos no Windows Vista.
+A CNG inclui suporte para Suite B que se estende a todos os algoritmos necessários: AES (todos os tamanhos de chave), família SHA-2 (SHA-256, SHA-384 e SHA-512) de algoritmos de hashing, ECDH e o ECDSA (DSA de curva elíptica) nas curvas elementares padrão do NIST P-256, P-384 e P-521. as curvas binárias, as curvas Koblitz, as curvas primos personalizadas e a curva elíptica Menezes-t-Vanstone (ECMQV) não têm suporte dos provedores de algoritmos da Microsoft incluídos no Windows Vista.
 
 ## <a name="legacy-support"></a>Suporte herdado
 
@@ -65,7 +65,7 @@ A CNG fornece suporte para o conjunto atual de algoritmos no [*CryptoAPI*](/wind
 
 A CNG dá suporte à criptografia no modo kernel. As mesmas APIs são usadas no modo kernel e de usuário para oferecer suporte total aos recursos de criptografia. O SSL/TLS e o IPsec operam no modo kernel, além dos processos de inicialização que usarão a CNG. Nem todas as funções CNG podem ser chamadas do modo kernel. O tópico de referência para as funções que não podem ser chamadas do modo kernel irá declarar explicitamente que a função não pode ser chamada do modo kernel. Caso contrário, todas as funções CNG poderão ser chamadas do modo kernel se o chamador estiver sendo executado no [*IRQL*](/windows/desktop/SecGloss/i-gly)de **\_ nível passivo** . Além disso, algumas funções CNG de modo kernel podem ser chamadas **no \_ nível de expedição IRQL**, dependendo dos recursos do provedor.
 
-A interface do provedor de suporte do Microsoft kernel Security (Ksecdd.sys) é um módulo criptográfico baseado em software e de uso geral que reside no nível do modo kernel do Windows. Ksecdd.sys é executado como um driver de exportação de modo kernel e fornece serviços de criptografia por meio de suas interfaces documentadas para componentes de kernel. O único algoritmo de provedor da Microsoft interno que não tem suporte pelo Ksecdd.sys é DSA.
+A interface do provedor de suporte do Microsoft kernel Security (Ksecdd.sys) é um módulo criptográfico baseado em software e de uso geral que reside no nível do modo kernel de Windows. Ksecdd.sys é executado como um driver de exportação de modo kernel e fornece serviços de criptografia por meio de suas interfaces documentadas para componentes de kernel. O único algoritmo de provedor da Microsoft interno que não tem suporte pelo Ksecdd.sys é DSA.
 
 **Windows Server 2008 e Windows Vista:** A CNG não dá suporte a algoritmos e provedores conectáveis no modo kernel. Os únicos algoritmos de criptografia com suporte disponíveis no modo kernel são as implementações fornecidas pela Microsoft por meio das APIs CNG do modo kernel.
 
@@ -104,16 +104,16 @@ A CNG dá suporte a cinco modos de operações que podem ser usadas com codifica
 |-----------------------------|------------------------------|-------------------------|-----------|
 | ECB (Electronic Codebook)   | **\_ \_ ECB modo de cadeia de BCRYPT \_** | Codificações de bloco simétrico | SP800-38A |
 | CBC (encadeamento de blocos de codificação) | **\_CBC do \_ modo de cadeia BCRYPT \_** | Codificações de bloco simétrico | SP800-38A |
-| CFB (comentários cifrados)       | **\_modo de cadeia BCRYPT \_ \_ CFB** | Codificações de bloco simétrico | SP800-38A |
-| CCM (contador com CBC)      | **\_CCM de \_ modo de cadeia BCRYPT \_** | AES                     | SP800-38C |
-| GCM (modo Galois/Counter)   | **\_modo de cadeia BCRYPT \_ \_ GCM** | AES                     | SP800-38D |
+| CFB (comentários cifrados)       | **CFB DO MODO CADEIA BCRYPT \_ \_ \_** | Codificações de bloco simétricas | SP800-38A |
+| CCM (contador com CBC)      | **\_CCM DO MODO CADEIA BCRYPT \_ \_** | AES                     | SP800-38C |
+| GCM (modo de contador/de contadores)   | **BCRYPT \_ CHAIN \_ MODE \_ GCM** | AES                     | SP800-38D |
 
 
 
  
 
 > [!Note]  
-> Somente os modos ECB, CBC e CFB da operação são definidos no Windows Vista. O GCM e CCM exigem o Windows Vista com Service Pack 1 (SP1) ou o Windows Server 2008.
+> Somente os modos de operação ECB, CBC e CFB são definidos Windows Vista. O GCM e o CCM Windows Vista com Service Pack 1 (SP1) ou Windows Server 2008.
 
  
 

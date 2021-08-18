@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LB_GETITEMDATA (WinUser. h)
-description: Obtém o valor definido pelo aplicativo associado ao item da caixa de listagem especificado.
+title: LB_GETITEMDATA mensagem (Winuser.h)
+description: Obtém o valor definido pelo aplicativo associado ao item de caixa de listagem especificado.
 ms.assetid: 3a3f7fa5-ce04-4e95-86e1-5c7de796d1b6
 keywords:
-- Controles de LB_GETITEMDATA de mensagens do Windows
+- LB_GETITEMDATA controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80da838828cad7354aaa244f2218e8f9a8346755
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1bbfdb091fb98c0cf448af1cf5f554f7d0db2b03f53826154f7d62f2f6b27b62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019334"
 ---
-# <a name="lb_getitemdata-message"></a>GETITEMDATA de mensagens de LB \_
+# <a name="lb_getitemdata-message"></a>Mensagem \_ LB GETITEMDATA
 
-Obtém o valor definido pelo aplicativo associado ao item da caixa de listagem especificado.
+Obtém o valor definido pelo aplicativo associado ao item de caixa de listagem especificado.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -34,7 +34,7 @@ Obtém o valor definido pelo aplicativo associado ao item da caixa de listagem e
 
 O índice do item.
 
-Windows 95/Windows 98/Windows Millennium Edition (Windows me): o parâmetro *wParam* é limitado a valores de 16 bits. Isso significa que as caixas de listagem não podem conter mais de 32.767 itens. Embora o número de itens seja restrito, o tamanho total em bytes dos itens em uma caixa de listagem é limitado apenas pela memória disponível.
+Windows 95/Windows 98/Windows Edition DaNium (Windows Me) : o parâmetro *wParam* é limitado a valores de 16 bits. Isso significa que as caixas de listagem não podem conter mais de 32.767 itens. Embora o número de itens seja restrito, o tamanho total em bytes dos itens em uma caixa de listagem é limitado apenas pela memória disponível.
 
 </dd> <dt>
 
@@ -45,9 +45,9 @@ Este parâmetro não é usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é o valor associado ao item, ou erro de LB \_ se ocorrer um erro. Se o item estiver em uma caixa de listagem desenhada pelo proprietário e tiver sido criado sem o estilo de [**lbs \_ HASSTRINGS**](list-box-styles.md) , esse valor estará no parâmetro *lParam* da mensagem do [**lb \_ AddString**](lb-addstring.md) ou [**lb \_ InsertString**](lb-insertstring.md) que adicionou o item à caixa de listagem. Caso contrário, é o valor no *lParam* da mensagem [**\_ SETITEMDATA de lb**](lb-setitemdata.md) .
+O valor de retorno é o valor associado ao item ou LB \_ ERR se ocorrer um erro. Se o item estiver em uma caixa de listagem desenhada pelo proprietário e tiver sido criado sem o estilo [**\_ HASSTRINGS do LBS,**](list-box-styles.md) esse valor estava no parâmetro *lParam* da mensagem [**LB \_ ADDSTRING**](lb-addstring.md) ou [**LB \_ INSERTSTRING**](lb-insertstring.md) que adicionou o item à caixa de listagem. Caso contrário, será o valor no *lParam* da mensagem [**LB \_ SETITEMDATA.**](lb-setitemdata.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ O valor de retorno é o valor associado ao item, ou erro de LB \_ se ocorrer um 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -68,13 +68,13 @@ O valor de retorno é o valor associado ao item, ou erro de LB \_ se ocorrer um 
 **Referência**
 </dt> <dt>
 
-[**seqüência de caracteres de LB \_**](lb-addstring.md)
+[**LB \_ ADDSTRING**](lb-addstring.md)
 </dt> <dt>
 
-[**KG \_ InsertString**](lb-insertstring.md)
+[**LB \_ INSERTSTRING**](lb-insertstring.md)
 </dt> <dt>
 
-[**\_SETITEMDATA lb**](lb-setitemdata.md)
+[**LB \_ SETITEMDATA**](lb-setitemdata.md)
 </dt> </dl>
 
  

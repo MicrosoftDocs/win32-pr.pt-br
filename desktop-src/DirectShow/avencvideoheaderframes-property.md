@@ -1,21 +1,21 @@
 ---
-description: Especifica o número do quadro inicial no cabeçalho do grupo de imagens (GOP).
+description: Especifica o número do quadro inicial no header do grupo de imagens (GOP).
 ms.assetid: 77b04001-f524-49c0-b2cf-be32ad16564b
-title: Propriedade AVEncVideoHeaderFrames (Codecapi. h)
+title: Propriedade AVEncVideoHeaderFrames (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c49d31a4b399f9f3af7ecb85cba65aa8fe536ba
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d20f90c50baed4278bf7c91a5838235e764ccf196dfb2575eac202d33fd88955
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119275686"
 ---
 # <a name="avencvideoheaderframes-property"></a>Propriedade AVEncVideoHeaderFrames
 
-Especifica o número do quadro inicial no cabeçalho do grupo de imagens (GOP).
+Especifica o número do quadro inicial no header do grupo de imagens (GOP).
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -35,9 +35,9 @@ O intervalo válido dessa propriedade depende da taxa de quadros.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| parâmetro<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -45,10 +45,10 @@ O intervalo válido dessa propriedade depende da taxa de quadros.
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

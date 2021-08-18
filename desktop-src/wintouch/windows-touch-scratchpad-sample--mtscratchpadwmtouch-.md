@@ -1,28 +1,28 @@
 ---
-title: Exemplo de bloco de rascunho do Windows (C++)
-description: O exemplo de bloco de rascunho do Windows mostra como usar as mensagens do Windows Touch para desenhar rastreamentos dos pontos de toque em uma janela.
+title: Windows Exemplo de bloco de rascunho de toque (C++)
+description: O exemplo Windows Touch Scratchpad mostra como usar mensagens Windows Touch para desenhar rastreamentos dos pontos de toque para uma janela.
 ms.assetid: 6c4b4595-1e95-499c-b045-b5ae01aa5a6e
 keywords:
-- Windows Touch, exemplos de código
-- Windows Touch, código de exemplo
-- Windows Touch, amostras de bloco de rascunho
-- Amostras de bloco de rascunho
+- Windows Toque, exemplos de código
+- Windows Toque, código de exemplo
+- Windows Toque, exemplos do Scratchpad
+- Exemplos de bloco de rascunho
 ms.topic: article
 ms.date: 02/18/2020
-ms.openlocfilehash: afdd39e886d97671942b4ff67a74c0da75924fbb
-ms.sourcegitcommit: 3d718d8f69d3f86eaecf94c5705d761c5a9ef4a1
+ms.openlocfilehash: 7f3be8c120a935bc1a8d65dfdd8c7ab9894e0360d3415e8c645e5b3afae87012
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104008566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119086242"
 ---
-# <a name="windows-touch-scratchpad-sample-c"></a>Exemplo de bloco de rascunho do Windows (C++)
+# <a name="windows-touch-scratchpad-sample-c"></a>Windows Exemplo de bloco de rascunho de toque (C++)
 
-O [exemplo de bloco de rascunho do Windows](https://github.com/MicrosoftDocs/win32-pr/blob/master/desktop-src/wintouch/windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md) mostra como usar as mensagens do Windows Touch para desenhar rastreamentos dos pontos de toque em uma janela. O rastreamento do dedo principal, aquele que foi colocado no digitalizador primeiro, é desenhado em preto. Os dedos secundários são desenhados em seis outras cores: vermelho, verde, azul, ciano, magenta e amarelo. A imagem a seguir mostra como o aplicativo pode ser examinado durante a execução.
+O [exemplo Windows Touch Scratchpad](https://github.com/MicrosoftDocs/win32-pr/blob/master/desktop-src/wintouch/windows-touch-scratchpad-sample--mtscratchpadwmtouch-.md) mostra como usar mensagens Windows Touch para desenhar rastreamentos dos pontos de toque para uma janela. O rastreamento do dedo primário, aquele que foi colocado primeiro no digitalizador, é desenhado em preto. Os dedos secundários são desenhados em seis outras cores: vermelho, verde, azul, ciano, magenta e amarelo. A imagem a seguir mostra a aparência do aplicativo durante a execução.
 
-![captura de tela mostrando o bloco de rascunho do Windows Touch, com ondulado vermelho e preto na tela](images/mtscratchpadwmtouch.png)
+![captura de tela mostrando o bloco de rascunho de toque do Windows, com botões vermelhos e pretos na tela](images/mtscratchpadwmtouch.png)
 
-Para este aplicativo, a janela é registrada como uma janela de toque, as mensagens de toque são interpretadas para adicionar pontos de toque a objetos de traço e os traços de tinta são renderizados na tela no manipulador de mensagens **WM_PAINT** .
+Para esse aplicativo, a janela é registrada como uma janela de toque, as mensagens de toque são interpretadas para adicionar pontos de toque a objetos de traço e traços de tinta são renderizados na tela no manipulador **WM_PAINT** mensagem.
 
 O código a seguir mostra como a janela é registrada como uma janela de toque.
 
@@ -78,7 +78,7 @@ O código a seguir mostra como as mensagens de toque são usadas para adicionar 
             break;
 ```
 
-O código a seguir mostra como os traços de tinta são desenhados na tela no manipulador de mensagens de **WM_PAINT** .
+O código a seguir mostra como os traços de tinta são desenhados para a tela no manipulador **WM_PAINT** de mensagens.
 
 ```C++
         case WM_PAINT:
@@ -91,7 +91,7 @@ O código a seguir mostra como os traços de tinta são desenhados na tela no ma
             break;
 ```
 
-O código a seguir mostra como o objeto Stroke renderiza os traços para a tela.
+O código a seguir mostra como o objeto de traço renderiza traços na tela.
 
 ```C++
 void CStroke::Draw(HDC hDC) const
@@ -111,4 +111,4 @@ void CStroke::Draw(HDC hDC) const
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-[Exemplo de bloco de rascunho do Windows (C#)](windows-touch-scratchpad-sample-in-c---mtscratchpadwmtouchcs-.md), [aplicativo de bloco de rascunho multitoque (WM_TOUCH/c #)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS), [aplicativo de bloco de rascunho multitoque (WM_TOUCH/C + +)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/cpp), [exemplos de toque do Windows](windows-touch-samples.md)
+Windows exemplo de scratchpad de toque [(C#),](windows-touch-scratchpad-sample-in-c---mtscratchpadwmtouchcs-.md)aplicativo de bloco de rascunho com vários [toques (WM_TOUCH/C#),](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/CS)aplicativo de bloco de rascunho de toque [múltiplo (WM_TOUCH/C++)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/Touch/MTScratchpadWMTouch/cpp), [Windows amostras](windows-touch-samples.md) de toque

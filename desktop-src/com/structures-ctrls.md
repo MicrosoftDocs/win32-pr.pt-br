@@ -1,28 +1,28 @@
 ---
-title: Estruturas (páginas de controles e propriedades)
+title: Estruturas (controles e páginas de propriedades)
 description: As estruturas a seguir são usadas para criar objetos COM padrão e páginas de propriedades.
 ms.assetid: ab884119-0d8c-459f-b28a-6890fbe8c297
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16966522faffcb3e8282075b3ee0b3aa7a83163e
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 469423f11e46512a73f4ed4dd85adf4e2951833c0d62acb0db22d3ebac931c84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119129668"
 ---
-# <a name="structures-controls-and-property-pages"></a>Estruturas (páginas de controles e propriedades)
+# <a name="structures-controls-and-property-pages"></a>Estruturas (controles e páginas de propriedades)
 
 As estruturas a seguir são usadas para criar objetos COM padrão e páginas de propriedades.
 
 -   [**CADWORD**](/windows/win32/api/ocidl/ns-ocidl-cadword)
--   [**CALPOLESTR**](/windows/win32/api/ocidl/ns-ocidl-calpolestr)
--   [**CAUUID**](/windows/win32/api/ocidl/ns-ocidl-cauuid)
+-   [**CAL LTDASTR**](/windows/win32/api/ocidl/ns-ocidl-calpolestr)
+-   [**Cauuid**](/windows/win32/api/ocidl/ns-ocidl-cauuid)
 -   [**CONTROLINFO**](/windows/win32/api/ocidl/ns-ocidl-controlinfo)
--   [**FONTDESC**](/windows/win32/api/olectl/ns-olectl-fontdesc)
--   [**LICINFO**](/windows/win32/api/ocidl/ns-ocidl-licinfo)
+-   [**Fontdesc**](/windows/win32/api/olectl/ns-olectl-fontdesc)
+-   [**Licinfo**](/windows/win32/api/ocidl/ns-ocidl-licinfo)
 -   [**OCPFIPARAMS**](/windows/win32/api/olectl/ns-olectl-ocpfiparams)
--   [**PAGERANGE**](/windows/win32/api/docobj/ns-docobj-pagerange)
+-   [**Pagerange**](/windows/win32/api/docobj/ns-docobj-pagerange)
 -   [**PAGESET**](/windows/win32/api/docobj/ns-docobj-pageset)
 -   [**PICTDESC**](/windows/win32/api/olectl/ns-olectl-pictdesc)
 -   [**PROPPAGEINFO**](/windows/win32/api/ocidl/ns-ocidl-proppageinfo)

@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a4ae14243582ea1239e8cc68c1e1d5464339a45b
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a85b18a04672f63c4f1fd8fe4fa386ffb4e3094e817b53a20af9887a84748a3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119080150"
 ---
 # <a name="create-method-of-the-win32_systemdriver-class"></a>Criar método da \_ classe systemdrive do Win32
 
@@ -182,7 +182,7 @@ O sistema tenta iniciar com uma configuração válida.
 *StartMode* \[ no\]
 </dt> <dd>
 
-Modo de início do serviço base do Windows.
+modo de início do serviço base de Windows.
 
 <dt>
 
@@ -276,18 +276,18 @@ Nome do grupo associado ao novo serviço. Os grupos de ordem de carregamento est
 *LoadOrderGroupDependencies* \[ no\]
 </dt> <dd>
 
-Matriz de grupos de ordenação de carga que devem iniciar antes desse serviço. Cada item na matriz é delimitado por **NULL** e a lista é encerrada por dois valores **nulos** . Em Visual Basic ou script, você pode passar um vbArray. Se o ponteiro for **nulo** ou se apontar para uma cadeia de caracteres vazia, o serviço não terá dependências. Os nomes de grupo devem ser prefixados pelo **\_ \_ identificador do grupo SC** (definido no arquivo Winsvc. h) para diferenciá-lo de um nome de serviço, pois serviços e grupos de serviço compartilham o mesmo namespace. A dependência de um grupo significa que esse serviço pode ser executado se pelo menos um membro do grupo estiver em execução depois de uma tentativa de iniciar todos os membros do grupo.
+Matriz de grupos de ordenação de carga que devem iniciar antes desse serviço. Cada item na matriz é delimitado por **NULL** e a lista é encerrada por dois valores **nulos** . em Visual Basic ou script, você pode passar um vbArray. Se o ponteiro for **nulo** ou se apontar para uma cadeia de caracteres vazia, o serviço não terá dependências. Os nomes de grupo devem ser prefixados pelo **\_ \_ identificador do grupo SC** (definido no arquivo Winsvc. h) para diferenciá-lo de um nome de serviço, pois serviços e grupos de serviço compartilham o mesmo namespace. A dependência de um grupo significa que esse serviço pode ser executado se pelo menos um membro do grupo estiver em execução depois de uma tentativa de iniciar todos os membros do grupo.
 
 </dd> <dt>
 
 *Imdependências* \[ no\]
 </dt> <dd>
 
-Uma matriz que contém os nomes de serviços que devem ser iniciados antes do início desse serviço. Cada item na matriz é delimitado por **NULL** e a lista é encerrada por dois valores **nulos** . Em Visual Basic ou script, você pode passar um vbArray. Se o ponteiro for **nulo** ou se apontar para uma cadeia de caracteres vazia, o serviço não terá dependências. A dependência de um serviço significa que esse serviço só poderá ser executado se o serviço do qual ele depende estiver em execução.
+Uma matriz que contém os nomes de serviços que devem ser iniciados antes do início desse serviço. Cada item na matriz é delimitado por **NULL** e a lista é encerrada por dois valores **nulos** . em Visual Basic ou script, você pode passar um vbArray. Se o ponteiro for **nulo** ou se apontar para uma cadeia de caracteres vazia, o serviço não terá dependências. A dependência de um serviço significa que esse serviço só poderá ser executado se o serviço do qual ele depende estiver em execução.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) se o serviço foi criado com êxito, 1 (um) se a solicitação não tiver suporte e qualquer outro número para indicar um erro.
 

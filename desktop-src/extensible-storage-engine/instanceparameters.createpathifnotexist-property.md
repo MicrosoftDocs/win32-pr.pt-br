@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: Instanceparameters. CreatePathIfNotExist'
-title: Propriedade instanceparameters. CreatePathIfNotExist
+description: 'Saiba mais sobre: propriedade InstanceParameters.CreatePathIfNotExist'
+title: Propriedade InstanceParameters.CreatePathIfNotExist
 TOCTitle: 'CreatePathIfNotExist property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.InstanceParameters.CreatePathIfNotExist
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.instanceparameters.createpathifnotexist(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d777c7bae3c375118488105e275edba59e57cd05
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7cf48149548a21cc225816d307f65ac7c24bdaba4bfd090def9951e773f251c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119112415"
 ---
-# <a name="instanceparameterscreatepathifnotexist-property"></a>Propriedade instanceparameters. CreatePathIfNotExist
+# <a name="instanceparameterscreatepathifnotexist-property"></a>Propriedade InstanceParameters.CreatePathIfNotExist
 
-Obtém ou define um valor que indica se o ESENT criará silenciosamente pastas que estão ausentes em seus caminhos do sistema de arquivos.
+Obtém ou define um valor que indica se o ESENT criará silenciosamente pastas ausentes em seus caminhos do sistema de arquivos.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -62,14 +62,14 @@ public bool CreatePathIfNotExist { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe instanceparameters](./instanceparameters-class.md)
+[Classe InstanceParameters](./instanceparameters-class.md)
 
-[Membros de instanceparameters](./instanceparameters-members.md)
+[Membros instanceParameters](./instanceparameters-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

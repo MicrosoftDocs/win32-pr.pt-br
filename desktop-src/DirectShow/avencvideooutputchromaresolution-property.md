@@ -4,12 +4,12 @@ ms.assetid: b0614cdb-1eef-486d-85c1-d5644853fa94
 title: Propriedade AVEncVideoOutputChromaResolution (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e83bcc7b5399cc1633ea50a9a917f55ec18c378b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 597b3422320087565c52817340a60bf16769606d2b3cfb20947af3d8535809a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105784038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119274956"
 ---
 # <a name="avencvideooutputchromaresolution-property"></a>Propriedade AVEncVideoOutputChromaResolution
 
@@ -35,8 +35,8 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncVideoChromaResol
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
 | parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 

@@ -1,19 +1,19 @@
 ---
-description: Instrui uma janela do IME para obter a posição da janela de status. Para enviar esse comando, o aplicativo usa a \_ mensagem de controle IME do WM \_ com as configurações de parâmetro mostradas abaixo.
+description: Instrui uma janela do IME a obter a posição da janela de status. Para enviar esse comando, o aplicativo usa a mensagem WM \_ IME \_ CONTROL com as configurações de parâmetro mostradas abaixo.
 ms.assetid: 59c7baae-1b8a-4761-9814-31afd8d39691
-title: Comando IMC_GETSTATUSWINDOWPOS (IMM. h)
+title: IMC_GETSTATUSWINDOWPOS comando (Imm.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cfd17c5787d9ef8c787e62a556afa2f136bd65c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfb542ef95a7825e4809e0fa2ce9175493bffeffbbaa36926a91299746026d51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068076"
 ---
-# <a name="imc_getstatuswindowpos-command"></a>\_Comando GETSTATUSWINDOWPOS do IMC
+# <a name="imc_getstatuswindowpos-command"></a>Comando \_ GETSTATUSWINDOWPOS do IMC
 
-Instrui uma janela do IME para obter a posição da janela de status. Para enviar esse comando, o aplicativo usa a mensagem de [**\_ \_ controle IME do WM**](wm-ime-control.md) com as configurações de parâmetro mostradas abaixo.
+Instrui uma janela do IME a obter a posição da janela de status. Para enviar esse comando, o aplicativo usa a mensagem [**WM \_ IME \_ CONTROL**](wm-ime-control.md) com as configurações de parâmetro mostradas abaixo.
 
 
 ```C++
@@ -26,14 +26,14 @@ LRESULT IMC_GETSTATUSWINDOWPOS
 
 <dl> <dt>
 
-<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*wParam*
+<span id="wParam"></span><span id="wparam"></span><span id="WPARAM"></span>*Wparam*
 </dt> <dd>
 
-Defina como IMC \_ GETSTATUSWINDOWPOS.
+De definido como IMC \_ GETSTATUSWINDOWPOS.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
 Não usado.
@@ -42,7 +42,7 @@ Não usado.
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna uma estrutura de [**pontos**](/previous-versions//dd162808(v=vs.85)) que contém a coordenada x e a coordenada y da posição da janela de status em coordenadas de tela, em relação ao canto superior esquerdo da tela.
+Retorna uma [**estrutura POINTS**](/previous-versions//dd162808(v=vs.85)) que contém a coordenada x e a coordenada y da posição da janela de status nas coordenadas da tela, em relação ao canto superior esquerdo da tela.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Retorna uma estrutura de [**pontos**](/previous-versions//dd162808(v=vs.85)) que
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Imm.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -60,13 +60,13 @@ Retorna uma estrutura de [**pontos**](/previous-versions//dd162808(v=vs.85)) que
 
 <dl> <dt>
 
-[Gerenciador de métodos de entrada](input-method-manager.md)
+[Gerenciador de Métodos de Entrada](input-method-manager.md)
 </dt> <dt>
 
-[Comandos do Gerenciador de métodos de entrada](input-method-manager-commands.md)
+[Comandos do Gerenciador de Métodos de Entrada](input-method-manager-commands.md)
 </dt> <dt>
 
-[**\_controle IME do WM \_**](wm-ime-control.md)
+[**CONTROLE \_ WM IME \_**](wm-ime-control.md)
 </dt> </dl>
 
  

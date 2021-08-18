@@ -1,23 +1,23 @@
 ---
 title: Expiração da conta (provedor LDAP)
-description: Para definir a data de expiração da conta, defina a propriedade IADsUser. AccountExpirationDate para o valor de data desejado.
+description: Para definir a data de expiração da conta, de definido a propriedade IADsUser.AccountExpirationDate como o valor de data desejado.
 ms.assetid: d0b90bb3-ad7c-4394-956d-061a915f210d
 ms.tgt_platform: multiple
 keywords:
 - ADSI de expiração da conta, provedor LDAP
-- ADSI do provedor LDAP, exemplos de gerenciamento de usuário, expiração de conta
+- ADSI do provedor LDAP, exemplos de gerenciamento de usuário, Expiração da Conta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c03ea33d8d5abb219c2b562aa05058b5dec45919
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 645ce5e2e1ae72ace0a8a642642eb5c15e7eabd63d51dba3f03596869bfb9efc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "105771727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024064"
 ---
 # <a name="account-expiration-ldap-provider"></a>Expiração da conta (provedor LDAP)
 
-Para definir a data de expiração da conta, defina a propriedade [**IADsUser. AccountExpirationDate**](iadsuser-property-methods.md) para o valor de data desejado. Para desabilitar a data de expiração da conta, defina o atributo [**accountExpires**](/windows/desktop/ADSchema/a-accountexpires) como zero. Os exemplos de código a seguir mostram como definir a data de validade.
+Para definir a data de expiração da conta, de definido a [**propriedade IADsUser.AccountExpirationDate**](iadsuser-property-methods.md) como o valor de data desejado. Para desabilitar a data de expiração da conta, de definir [**o atributo accountExpires**](/windows/desktop/ADSchema/a-accountexpires) como zero. Os exemplos de código a seguir mostram como definir a data de validade.
 
 
 ```VB
@@ -84,10 +84,10 @@ HRESULT SetUserAccountExpirationDate(IADsUser *pUser, DATE date)
 
 
 > [!Note]  
-> O atributo [**accountExpires**](/windows/desktop/ADSchema/a-accountexpires) contém a data de expiração da conta. O snap-in Active Directory usuários e computadores do MMC exibe a data em que a conta irá expirar no final de. Ou seja, o snap-in do MMC Active Directory usuários e computadores exibirá a data de expiração da conta como um dia anterior à data contida no atributo **accountExpires** .
+> O [**atributo accountExpires**](/windows/desktop/ADSchema/a-accountexpires) contém a data de expiração da conta. O Usuários e Computadores do Active Directory snap-in do MMC exibe a data em que a conta expirará no final. Ou seja, o Usuários e Computadores do Active Directory snap-in do MMC exibirá a data de expiração da conta como um dia antes da data contida no atributo **accountExpires.**
 
- 
+ 
 
- 
+ 
 
- 
+ 

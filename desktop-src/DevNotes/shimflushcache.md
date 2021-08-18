@@ -1,5 +1,5 @@
 ---
-description: Libera o cache do banco de dados Shim. Essa função deve ser chamada após a instalação de um novo banco de dados de Shim.
+description: Libera o cache do banco de dados shim. Essa função deve ser chamada depois de instalar um novo banco de dados shim.
 ms.assetid: 7e5bbdca-7b58-4c51-9cd1-105b05ee7fbe
 title: Função ShimFlushCache
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 35e279c5036142ec87c5bad6d7c512388033bc94
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: ecf1291b7fdcfb43170ec7e269fa140c321fafdbc09989fc7ee2b392f11c1160
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075910"
 ---
 # <a name="shimflushcache-function"></a>Função ShimFlushCache
 
-Libera o cache do banco de dados Shim. Essa função deve ser chamada após a instalação de um novo banco de dados de Shim.
+Libera o cache do banco de dados shim. Essa função deve ser chamada depois de instalar um novo banco de dados shim.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,37 +42,37 @@ BOOL WINAPI ShimFlushCache(
 
 <dl> <dt>
 
-*HWND* \[ em, opcional\]
+*hwnd* \[ in, opcional\]
 </dt> <dd>
 
-Não utilizado deve ser 0.
+Nãousado; deve ser 0.
 
 </dd> <dt>
 
-*HINSTANCE* \[ em, opcional\]
+*hInstance* \[ in, opcional\]
 </dt> <dd>
 
-Não utilizado deve ser 0.
+Nãousado; deve ser 0.
 
 </dd> <dt>
 
-*lpszCmdLine* \[ em, opcional\]
+*lpszCmdLine* \[ in, opcional\]
 </dt> <dd>
 
-Não utilizado deve ser 0.
+Nãousado; deve ser 0.
 
 </dd> <dt>
 
-*nCmdShow* \[ no\]
+*nCmdShow* \[ Em\]
 </dt> <dd>
 
-Não utilizado deve ser 0.
+Nãousado; deve ser 0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna **true** em caso de êxito ou **false** em caso de falha.
+A função retorna **TRUE em** caso de êxito **ou FALSE** em caso de falha.
 
 ## <a name="remarks"></a>Comentários
 
@@ -84,8 +84,8 @@ O chamador deve ser um administrador.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

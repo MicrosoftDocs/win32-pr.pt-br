@@ -22,7 +22,7 @@
           href: creating-an-engine-adapter.md
         - name: Criando um adaptador de sensor
           href: creating-a-sensor-adapter.md
-        - name: Criando um adaptador de armazenamento
+        - name: criando um adaptador de Armazenamento
           href: creating-a-storage-adapter.md
     - name: Criando um pool de sensores privado
       href: creating-a-private-sensor-pool.md
@@ -46,7 +46,7 @@
           href: private-pool-helper-functions.md
         - name: Criar aplicativos cliente
           href: creating-client-applications.md
-    - name: Referência de API de Windows Biometric Framework
+    - name: Windows Referência da API da estrutura biométrica
       href: biometric-service-api-reference.md
       items:
         - name: Referência de aplicativo cliente
@@ -217,7 +217,7 @@
                   href: winbio-unit-schema.md
                 - name: WINBIO_VERSION
                   href: winbio-version.md
-            - name: Enumerações de aplicativos cliente
+            - name: Enumerações de aplicativo cliente
               href: client-application-enumerations.md
               items:
                 - name: WINBIO_ANTI_SPOOF_POLICY_ACTION
@@ -232,7 +232,7 @@
                   href: winbio-credential-type.md
                 - name: WINBIO_POLICY_SOURCE
                   href: winbio-policy-source.md
-            - name: Sindicatos de aplicativos cliente
+            - name: Uniões de aplicativo cliente
               href: client-application-unions.md
               items:
                 - name: WINBIO_PRESENCE_PROPERTIES
@@ -258,7 +258,7 @@
                   href: winbio-ansi-381-pixels-constants.md
                 - name: WINBIO_ANSI_381_POS constantes de impressão digital
                   href: winbio-ansi-381-pos-fingerprint-constants.md
-                - name: WINBIO_ANSI_381_POS constantes de Palm
+                - name: WINBIO_ANSI_381_POS constantes de codora
                   href: winbio-ansi-381-pos-palm-constants.md
                 - name: WINBIO_ANSI_385_FACE constantes
                   href: winbio-ansi-385-face-constants.md
@@ -326,7 +326,7 @@
             - name: Funções de plug-in
               href: plug-in-functions.md
               items:
-                - name: Funções do adaptador do mecanismo
+                - name: Funções de adaptador de mecanismo
                   href: engine-adapter-functions.md
                   items:
                     - name: EngineAdapterCreateKey
@@ -405,7 +405,7 @@
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_engine_verify_feature_set_fn
                     - name: WbioQueryEngineInterface
                       href: /windows/desktop/api/Winbio_adapter/nf-winbio_adapter-wbioqueryengineinterface
-                - name: Funções do adaptador do sensor
+                - name: Funções do adaptador de sensor
                   href: sensor-adapter-functions.md
                   items:
                     - name: SensorAdapterAcceptCalibrationData
@@ -458,7 +458,7 @@
                       href: /windows/desktop/api/Winbio_adapter/nc-winbio_adapter-pibio_sensor_start_capture_fn
                     - name: WbioQuerySensorInterface
                       href: /windows/desktop/api/Winbio_adapter/nf-winbio_adapter-wbioquerysensorinterface
-                - name: Funções do adaptador de armazenamento
+                - name: Armazenamento Funções de adaptador
                   href: storage-adapter-functions.md
                   items:
                     - name: StorageAdapterActivate
@@ -537,7 +537,7 @@
               items:
                 - name: Wrappers do adaptador do mecanismo
                   href: engine-adapter-wrappers.md
-                - name: Wrappers do adaptador do sensor
+                - name: Wrappers do adaptador de sensor
                   href: sensor-adapter-wrappers.md
-                - name: Wrappers do adaptador de armazenamento
+                - name: Armazenamento Wrappers de adaptador
                   href: storage-adapter-wrappers.md

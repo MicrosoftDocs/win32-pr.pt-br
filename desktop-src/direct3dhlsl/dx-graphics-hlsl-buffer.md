@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e36030f3dd31f1bdada238e89c1048e4971cd45c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 78d0b452a387ed1d4bf750062963996d0248fa249954a99be581118560866123
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120340"
 ---
 # <a name="buffer-type"></a>Tipo de buffer
 
@@ -26,32 +26,32 @@ Use a sintaxe a seguir para declarar uma variável de buffer.
 
 
 
-| Nome do *tipo* de<de buffer >  ; |
+| Nome do tipo<>  *buffer;* |
 |------------------------------|
 
 
 
- 
+ 
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="Buffer"></span><span id="buffer"></span><span id="BUFFER"></span>**Completo**
+<span id="Buffer"></span><span id="buffer"></span><span id="BUFFER"></span>**Buffer**
 </dt> <dd>
 
-Palavra-chave required.
+Palavra-chave necessária.
 
 </dd> <dt>
 
-<span id="Type"></span><span id="type"></span><span id="TYPE"></span>*Escreva*
+<span id="Type"></span><span id="type"></span><span id="TYPE"></span>*Tipo*
 </dt> <dd>
 
-Um dos tipos de HLSL [escalar](dx-graphics-hlsl-scalar.md), de [vetor](dx-graphics-hlsl-vector.md)e de [matriz](dx-graphics-hlsl-matrix.md) . Você pode declarar uma variável de buffer com uma matriz, desde que ela caiba em quantidades de 4 32 bits. Portanto, você pode escrever `Buffer<float2x2>` . Mas `Buffer<float4x4>` é muito grande, e o compilador irá gerar um erro.
+Um dos tipos [escalares](dx-graphics-hlsl-scalar.md), [vetor](dx-graphics-hlsl-vector.md)e [alguns](dx-graphics-hlsl-matrix.md) tipos de HLSL de matriz. Você pode declarar uma variável de buffer com uma matriz, desde que ela se ajuste em quantidades de 4 32 bits. Portanto, você pode escrever `Buffer<float2x2>` . Mas `Buffer<float4x4>` é muito grande e o compilador gerará um erro.
 
 </dd> <dt>
 
-<span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nomes*
+<span id="Name"></span><span id="name"></span><span id="NAME"></span>*Nome*
 </dt> <dd>
 
 Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável.
@@ -60,7 +60,7 @@ Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da variável
 
 ## <a name="example"></a>Exemplo
 
-Aqui está um exemplo de uma declaração de buffer do arquivo PipesGS. FX no [exemplo PipesGS](https://msdn.microsoft.com/library/Ee416423(v=VS.85).aspx).
+Aqui está um exemplo de uma declaração de buffer do arquivo PipesGS.fx em [PipesGS Sample](https://msdn.microsoft.com/library/Ee416423(v=VS.85).aspx).
 
 
 ```
@@ -69,7 +69,7 @@ Buffer<float4> g_Buffer;
 
 
 
-Os dados são lidos de um buffer usando uma versão sobrecarregada da função intrínseca [**Load**](dx-graphics-hlsl-to-load.md) HLSL que usa um parâmetro de entrada (um índice de número inteiro). Um buffer é acessado como uma matriz de elementos; Portanto, este exemplo lê o segundo elemento.
+Os dados são lidos de um buffer usando uma versão sobrecarregada da função intrínseca [**Load**](dx-graphics-hlsl-to-load.md) HLSL que usa um parâmetro de entrada (um índice inteiro). Um buffer é acessado como uma matriz de elementos; portanto, este exemplo lê o segundo elemento.
 
 
 ```
@@ -78,7 +78,7 @@ float4 bufferData = g_Buffer.Load( 1 );
 
 
 
-Use o [estágio Stream-output](/windows/desktop/direct3d11/d3d10-graphics-programming-guide-output-stream-stage) para gerar dados de saída para um buffer.
+Use o [estágio stream-output](/windows/desktop/direct3d11/d3d10-graphics-programming-guide-output-stream-stage) para transmitir dados para um buffer.
 
 ## <a name="see-also"></a>Confira também
 
@@ -87,6 +87,6 @@ Use o [estágio Stream-output](/windows/desktop/direct3d11/d3d10-graphics-progra
 [Tipos de dados (DirectX HLSL)](dx-graphics-hlsl-data-types.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

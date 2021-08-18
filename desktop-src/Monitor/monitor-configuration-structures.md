@@ -8,12 +8,12 @@ keywords:
 - monitorar a configuração, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5aaa7c2911e884d92638e45a9d438f0741b8cc0c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b20177a5c13aa5c3a50ae0b5c63642edf89c5d70165b1c1c9f002efe61e937f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119146109"
 ---
 # <a name="monitor-configuration-structures"></a>Monitorar estruturas de configuração
 
@@ -28,7 +28,7 @@ As estruturas a seguir são usadas pelas funções de configuração do monitor.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -37,9 +37,9 @@ As estruturas a seguir são usadas pelas funções de configuração do monitor.
 [Referência de configuração do monitor](monitor-configuration-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

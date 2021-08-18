@@ -3,7 +3,7 @@ title: LISTBOX. focusItem
 description: O atributo focusItem especifica ou recupera a linha que contém o foco.
 ms.assetid: 0d568bc5-6770-4e04-b99f-f535b806f865
 keywords:
-- LISTBOX. focusItem Windows Media Player
+- Windows Media Player LISTBOX. focusItem
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 781d9c09785c86643cae549fc1c4d427782880b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 46ba6a402d32dcaa3e2b64d95b0201cd5cfa8ae0ebe76ddc3b8ece675d69fc8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118887"
 ---
 # <a name="listboxfocusitem"></a>LISTBOX. focusItem
 

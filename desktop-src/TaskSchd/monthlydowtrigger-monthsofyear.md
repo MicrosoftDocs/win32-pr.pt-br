@@ -1,11 +1,11 @@
 ---
-title: Propriedade MonthlyDOWTrigger. MonthsOfYear
-description: Para scripts, Obtém ou define os meses do ano durante os quais a tarefa é executada. | Propriedade MonthlyDOWTrigger. MonthsOfYear
+title: Propriedade MonthlyDOWTrigger.MonthsOfYear
+description: Para scripts, obtém ou define os meses do ano durante os quais a tarefa é executado. | Propriedade MonthlyDOWTrigger.MonthsOfYear
 ms.assetid: 4ab7ab43-9c9b-4cd3-be8f-1989b83e8cf3
 keywords:
-- Agendador de Tarefas da Propriedade MonthsOfYear
-- Propriedade MonthsOfYear Agendador de Tarefas, objeto MonthlyDOWTrigger
-- Objeto MonthlyDOWTrigger Agendador de Tarefas, Propriedade MonthsOfYear
+- Propriedade MonthsOfYear Agendador de Tarefas
+- Propriedade MonthsOfYear Agendador de Tarefas objeto , MonthlyDOWTrigger
+- Objeto MonthlyDOWTrigger Agendador de Tarefas propriedade , MonthsOfYear
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c345cd3de12d7dba3450f62bdb18bfdcee496b13
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7f8dc9752cf241218a95a9816824bc6ccf560f47c3445df9e5f40406381de3b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103837869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253816"
 ---
-# <a name="monthlydowtriggermonthsofyear-property"></a>Propriedade MonthlyDOWTrigger. MonthsOfYear
+# <a name="monthlydowtriggermonthsofyear-property"></a>Propriedade MonthlyDOWTrigger.MonthsOfYear
 
-Para scripts, Obtém ou define os meses do ano durante os quais a tarefa é executada.
+Para scripts, obtém ou define os meses do ano durante os quais a tarefa é executado.
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 
 ```VB
@@ -38,11 +38,11 @@ MonthlyDOWTrigger.MonthsOfYear As short
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma máscara de bits bit que indica os meses do ano durante os quais a tarefa é executada.
+Uma máscara bit a bit que indica os meses do ano durante os quais a tarefa é executado.
 
 ## <a name="remarks"></a>Comentários
 
-A tabela a seguir mostra o mapeamento da máscara de bits bit que é usada por essa propriedade.
+A tabela a seguir mostra o mapeamento da máscara bit a bit usada por essa propriedade.
 
 
 
@@ -65,7 +65,7 @@ A tabela a seguir mostra o mapeamento da máscara de bits bit que é usada por e
 
  
 
-Ao ler ou gravar XML para uma tarefa, os meses do ano de um calendário mensal de dia da semana são especificados pelo elemento [**months**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) do esquema de Agendador de tarefas.
+Ao ler ou escrever XML para uma tarefa, os meses do ano de um calendário mensal do dia da semana são especificados pelo elemento [**Months**](taskschedulerschema-months-monthlydayofweekscheduletype-element.md) do esquema Agendador de Tarefas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,9 +73,9 @@ Ao ler ou gravar XML para uma tarefa, os meses do ano de um calendário mensal d
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

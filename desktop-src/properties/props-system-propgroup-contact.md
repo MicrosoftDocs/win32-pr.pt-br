@@ -4,12 +4,12 @@ ms.assetid: fbeef429-e5e0-4fa4-9402-72e421ef4cbc
 title: System. Propobject. Contact
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdfca8ad6a0c9409367fb8b9f74252dd15855c34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ffe5fe6d5d334007a7aa37dabe4200cb4238e5ef5210cf4c4ca86fda82ec0ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119095808"
 ---
 # <a name="systempropgroupcontact"></a>System. Propobject. Contact
 

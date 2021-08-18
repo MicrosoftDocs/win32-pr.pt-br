@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: effe4819c674a7909cc445b9e9f7b5322fae7676
-ms.sourcegitcommit: 5724b38883e518ac565e1b266defa85ad0941bb2
+ms.openlocfilehash: a23c45ea5f21667bde6817469bce43e8f7e9a0a41d8b62b016e739abb744b53c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "104172446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985776"
 ---
 # <a name="texture2dmsarray"></a>Texture2DMSArray
 
@@ -30,7 +30,7 @@ Tipo de Texture2DMSArray (como ele existe no modelo de sombreador 4) mais variá
 |------------------------------------------------------------------------------------|----------------------------------------------------|
 | [**GetDimensions**](sm5-object-texture2dmsarray-getdimensions.md)                  | Obtém as dimensões do recurso.                      |
 | [**GetSamplePosition**](sm5-object-texture2dmsarray-getsampleposition.md)          | Obtém a posição do exemplo especificado.         |
-| [**Carregamento**](texture2dmsarray-load.md)                                               | Obtém um valor.                                    |
+| [**Carregar**](texture2dmsarray-load.md)                                               | Obtém um valor.                                    |
 | [**Nova. Operador\[\]\[\]**](sm5-object-texture2dmsarray-sampleoperatorindex.md)  | Obtém uma variável de recurso somente leitura.                |
 
 
@@ -55,7 +55,7 @@ Este objeto tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

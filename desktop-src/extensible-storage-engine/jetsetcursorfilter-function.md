@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetSetCursorFilter'
+description: 'Saiba mais sobre: Função JetSetCursorFilter'
 title: Função JetSetCursorFilter
 TOCTitle: JetSetCursorFilter Function
 ms:assetid: 3cea5beb-2cf8-4053-8e7f-7b8645580ef0
@@ -19,21 +19,21 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ad589fecb190ad0f0676325b78adc7c96028a3fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 76e92f768fd99cdd755e435caf4ba24dbbba0e3b0ee6338ffe7f49c2f506f2f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090113"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978796"
 ---
 # <a name="jetsetcursorfilter-function"></a>Função JetSetCursorFilter
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
-A função **JetSetCursorFilter** define uma matriz de filtros simples para a função [JetMove](./jetmove-function.md) .
+A **função JetSetCursorFilter** define uma matriz de filtros simples para a [função JetMove.](./jetmove-function.md)
 
-A função **JetSetCursorFilter** foi introduzida no sistema operacional Windows 8.
+A **função JetSetCursorFilter** foi introduzida no Windows 8 operacional.
 
 ``` c++
 JET_ERR JET_API JetSetCursorFilter(
@@ -49,9 +49,9 @@ JET_ERR JET_API JetSetCursorFilter(
 
 *sesid*
 
-O contexto da sessão de banco de dados a ser usado para a chamada à API.
+O contexto de sessão do banco de dados a ser usado para a chamada à API.
 
-*TableID*
+*Tableid*
 
 O cursor a ser posicionado.
 
@@ -87,9 +87,9 @@ Um grupo de bits que especifica zero ou mais das opções de movimentação list
 </table>
 
 
-### <a name="return-value"></a>Retornar valor
+### <a name="return-value"></a>Valor retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno listados na tabela a seguir. Para obter mais informações sobre os possíveis erros do ESE (mecanismo de armazenamento extensível), consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) de dados com um dos códigos de retorno listados na tabela a seguir. Para obter mais informações sobre os possíveis erros de ESE (Extensible Armazenamento Engine), consulte [Extensible Armazenamento Engine Error](./extensible-storage-engine-errors.md) [Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -121,19 +121,19 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows 8.</p></td>
+<td><p>Requer Windows 8.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2012.</p></td>
+<td><p>Requer Windows Server 2012.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

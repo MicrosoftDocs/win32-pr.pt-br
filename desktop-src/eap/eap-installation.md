@@ -4,12 +4,12 @@ description: Os fornecedores implementam EAPs, também conhecidos como protocolo
 ms.assetid: af10b1e9-45c9-4640-ba79-fc9c23cc3c47
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 619505a55108ebde0e14d7ff20c78394c6c90fad
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: f9a790f4282ef2658bacdd7f25be647234c3cf32d62ca80e8ce2745da3f4f738
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "104365327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118984446"
 ---
 # <a name="eap-installation"></a>Instalação do EAP
 
@@ -25,9 +25,9 @@ No caminho anterior, **&lt; eaptypeid &gt;** é a ID do protocolo de autenticaç
 
 Para obter mais informações e uma descrição dos valores com suporte para essa chave, consulte [valores do registro do protocolo de autenticação](authentication-protocol-registry-values.md).
 
- 
+ 
 
- 
+ 
 
 
 

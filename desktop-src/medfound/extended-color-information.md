@@ -4,12 +4,12 @@ ms.assetid: 05ca73c6-d105-47bc-96bc-b784f669febe
 title: Informações de cores estendidas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 29ba43180a0f1e5253540088c1638f59d52380c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07ffce83acccd2004156d55c0711836271d9ad5cfe7a6ac395e0d9fcbb418142
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119466366"
 ---
 # <a name="extended-color-information"></a>Informações de cores estendidas
 
@@ -17,7 +17,7 @@ Se você souber algo sobre a cor RGB, sabe que (255, 255, 255) é o terceto RGB 
 
 A resposta pode ser surpreendente: sem algumas informações adicionais, essa terceto não define nenhuma cor específica! O significado de qualquer valor RGB depende do *espaço de cores*. Se não soubermos o espaço de cores, falará estritamente que não conhecemos a cor.
 
-Um espaço de cores define como a representação numérica de um determinado valor de cor deve ser reproduzida como uma luz física. Quando o vídeo é codificado em um espaço de cor, mas é exibido em outro, ele resulta em cores distorcidas, a menos que o vídeo seja corrigido por cores. Para obter uma fidelidade de cor precisa, portanto, é crucial saber o espaço de cores do vídeo de origem. Anteriormente, o pipeline de vídeo no Windows não transporteu informações sobre o espaço de cores pretendido. A partir do Windows Vista, o DirectShow e o Media Foundation oferecem suporte a informações de cores estendidas no tipo de mídia. Essas informações também estão disponíveis para a DXVA (aceleração de vídeo do DirectX).
+Um espaço de cores define como a representação numérica de um determinado valor de cor deve ser reproduzida como uma luz física. Quando o vídeo é codificado em um espaço de cor, mas é exibido em outro, ele resulta em cores distorcidas, a menos que o vídeo seja corrigido por cores. Para obter uma fidelidade de cor precisa, portanto, é crucial saber o espaço de cores do vídeo de origem. anteriormente, o pipeline de vídeo no Windows não transporteu informações sobre o espaço de cores pretendido. a partir do Windows Vista, DirectShow e Media Foundation dão suporte a informações de cores estendidas no tipo de mídia. Essas informações também estão disponíveis para a DXVA (aceleração de vídeo do DirectX).
 
 A maneira padrão de descrever um espaço de cores matematicamente é usar o espaço de cores de CIE XYZ, definido pela CIE (Comissão Internacional de iluminação). Não é prático usar valores de CIE XYZ diretamente em vídeo, mas o espaço de cores de CIE XYZ pode ser usado como uma representação intermediária ao converter entre espaços de cores.
 
@@ -32,7 +32,7 @@ Para reproduzir as cores com precisão, as seguintes informações são necessá
 
 ## <a name="color-space-in-media-types"></a>Espaço de cores em tipos de mídia
 
-O DirectShow, Media Foundation e a DXVA (aceleração de vídeo DirectX) têm maneiras diferentes de representar formatos de vídeo. Felizmente, é fácil converter as informações de espaço de cor de um para outro, pois as enumerações relevantes são as mesmas.
+DirectShow, Media Foundation e a DXVA (aceleração de vídeo DirectX) têm maneiras diferentes de representar formatos de vídeo. Felizmente, é fácil converter as informações de espaço de cor de um para outro, pois as enumerações relevantes são as mesmas.
 
 -   DXVA 1,0: as informações de espaço de cores são fornecidas na estrutura de [**\_ ExtendedFormat de DXVA**](/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_extendedformat) .
 -   DXVA 2,0: as informações de espaço de cores são fornecidas na estrutura de estrutura [**DXVA2 \_ ExtendedFormat**](/windows/desktop/api/dxva2api/ns-dxva2api-dxva2_extendedformat) . Essa estrutura é idêntica à estrutura DXVA 1,0 e o significado dos campos é o mesmo.
@@ -95,15 +95,15 @@ A maioria dos dispositivos de captura analógica usa um espaço de cores bem def
 
 ### <a name="file-based-sources"></a>Fontes baseadas em arquivo
 
-Ao analisar um arquivo de vídeo, a origem da mídia (ou o filtro do analisador, no DirectShow) pode ser capaz de fornecer algumas das informações de cor. Por exemplo, o navegador de DVD pode determinar o espaço de cores com base no conteúdo do DVD. Outras informações de cor podem estar disponíveis para o decodificador. Por exemplo, um fluxo de vídeo elementar MPEG-2 fornece as informações de cor no \_ campo extensão de exibição de sequência \_ . Se as informações de cor não forem descritas explicitamente na origem, elas poderão ser definidas implicitamente pelo tipo de conteúdo. Por exemplo, as variedades de NTSC e PAL de vídeo DV usam espaços de cores diferentes. Por fim, o decodificador pode usar qualquer informação de cor obtida do tipo de mídia da fonte.
+ao analisar um arquivo de vídeo, a origem da mídia (ou o filtro do analisador, em DirectShow) pode ser capaz de fornecer algumas das informações de cor. Por exemplo, o navegador de DVD pode determinar o espaço de cores com base no conteúdo do DVD. Outras informações de cor podem estar disponíveis para o decodificador. Por exemplo, um fluxo de vídeo elementar MPEG-2 fornece as informações de cor no \_ campo extensão de exibição de sequência \_ . Se as informações de cor não forem descritas explicitamente na origem, elas poderão ser definidas implicitamente pelo tipo de conteúdo. Por exemplo, as variedades de NTSC e PAL de vídeo DV usam espaços de cores diferentes. Por fim, o decodificador pode usar qualquer informação de cor obtida do tipo de mídia da fonte.
 
 ### <a name="other-components"></a>Outros componentes
 
-Outros componentes podem precisar usar as informações de espaço de cores em um tipo de mídia:
+Outros componentes talvez precisem usar as informações de espaço de cores em um tipo de mídia:
 
--   Os conversores de espaço de cor de software devem usar informações de espaço de cores ao selecionar um algoritmo de conversão.
--   Os mixers de vídeo, como o mixer EVR (processador de vídeo avançado), devem usar as informações de cor ao misturar fluxos de vídeo de diferentes tipos de conteúdo.
--   As APIs de processamento de vídeo de DXVA e DDIs permitem que o chamador Especifique informações de informações de espaço de cores. A GPU deve usar essas informações ao executar a mixagem de vídeo hardward.
+-   Conversores de espaço em cores de software devem usar informações de espaço em cores ao selecionar um algoritmo de conversão.
+-   Os mixers de vídeo, como o mixer EVR (renderização de vídeo aprimorado), devem usar as informações de cor ao misturar fluxos de vídeo de diferentes tipos de conteúdo.
+-   As APIs e DDIs de processamento de vídeo DXVA permitem que o chamador especifique informações de espaço de cor. A GPU deve usar essas informações quando executar a combinação de vídeo em hardward.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -112,7 +112,7 @@ Outros componentes podem precisar usar as informações de espaço de cores em u
 [Tipos de mídia de vídeo](video-media-types.md)
 </dt> <dt>
 
-[Aceleração de vídeo do DirectX 2,0](directx-video-acceleration-2-0.md)
+[Aceleração de vídeo do DirectX 2.0](directx-video-acceleration-2-0.md)
 </dt> </dl>
 
  

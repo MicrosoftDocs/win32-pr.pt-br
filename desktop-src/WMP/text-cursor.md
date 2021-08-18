@@ -1,9 +1,9 @@
 ---
-title: TEXT. cursor
-description: O atributo cursor especifica ou recupera um valor que indica qual cursor aparece quando o mouse está sobre o controle de texto.
+title: TEXT.cursor
+description: O atributo de cursor especifica ou recupera um valor que indica qual cursor aparece quando o mouse está sobre o controle Texto.
 ms.assetid: 360d4ed1-9c4f-4210-8e77-2dfbe7573869
 keywords:
-- TEXT. cursor Windows Media Player
+- Text.cursor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8cf7b135ed0a99b5c65f760a08e4e7083234674
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72dc904371333dcdf3b9c80e441fb1d8254285bcd6193150ecd3df4032afd22d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105791286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119134649"
 ---
-# <a name="textcursor"></a>TEXT. cursor
+# <a name="textcursor"></a>TEXT.cursor
 
-O atributo **cursor** especifica ou recupera um valor que indica qual cursor aparece quando o mouse está sobre o controle de texto.
+O **atributo de cursor** especifica ou recupera um valor que indica qual cursor aparece quando o mouse está sobre o controle Texto.
 
 ``` syntax
         elementID.cursor
@@ -29,28 +29,28 @@ O atributo **cursor** especifica ou recupera um valor que indica qual cursor apa
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é uma **cadeia de caracteres** de leitura/gravação.
+Esse atributo é uma cadeia de caracteres de **leitura/gravação.**
 
 
 
 | Valor            | Descrição                                                                                 |
 |------------------|---------------------------------------------------------------------------------------------|
-| sistema           | Padrão. Cursor dependente de plataforma (geralmente uma seta).                                      |
-| existentes             | Existentes.                                                                                       |
-| ajuda             | Seta com um ponto de interrogação indicando que a ajuda está disponível.                                      |
-| sizeall          | Seta de quatro pontas apontando para norte, Sul, leste e oeste.                                   |
-| sizenesw         | Seta de duas pontas apontando para nordeste e sudoeste.                                      |
-| sizens           | Seta de duas pontas apontando para norte e Sul.                                              |
-| sizenwse         | Seta de duas pontas apontando para noroeste e sudeste.                                      |
-| sizewe           | Seta de duas pontas apontando para o oeste e o leste.                                                |
-| upseta          | Seta vertical apontando para cima.                                                             |
-| \*. ani ou \* . cur | Qualquer arquivo. ani ou. cur (deve estar no mesmo diretório que o arquivo. WMS ou no arquivo. wmz). |
+| sistema           | Padrão. Cursor dependente da plataforma (geralmente uma seta).                                      |
+| Mão             | Mão.                                                                                       |
+| ajuda             | Seta com ponto de interrogação indicando que a Ajuda está disponível.                                      |
+| sizeall          | Seta de quatro pontos apontando para norte, sul, leste e oeste.                                   |
+| sizenesw         | Seta de ponta dupla apontando para o sudeste e para o sudeste.                                      |
+| sizens           | Seta de ponta dupla apontando para norte e sul.                                              |
+| sizenwse         | Seta de ponta dupla apontando para noroeste e sudeste.                                      |
+| sizewe           | Seta de ponta dupla apontando para oeste e leste.                                                |
+| Uparrow          | Seta vertical apontando para cima.                                                             |
+| \*.ani ou \* .cur | Qualquer arquivo .ani ou .cur (deve estar no mesmo diretório que o arquivo .wms ou no arquivo .wmz). |
 
 
 
  
 
-Consulte o atributo [Value](text-value.md) para ver um exemplo ilustrando como os atributos do elemento **Text** são usados.
+Consulte o [atributo value](text-value.md) para um exemplo que ilustra como os atributos do **elemento TEXT** são usados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Consulte o atributo [Value](text-value.md) para ver um exemplo ilustrando como o
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -66,7 +66,7 @@ Consulte o atributo [Value](text-value.md) para ver um exemplo ilustrando como o
 
 <dl> <dt>
 
-[**Elemento de texto**](text-element.md)
+[**Elemento TEXT**](text-element.md)
 </dt> </dl>
 
  

@@ -1,7 +1,7 @@
 ---
 description: Obtém a descrição do efeito.
 ms.assetid: 96b53b8a-0c20-4bfd-af45-626f6e0305d2
-title: 'Método ID3DXBaseEffect:: GetDesc (D3DX9Effect. h)'
+title: Método ID3DXBaseEffect::GetDesc (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 35fcb62e9461d419e6643c99c1879efa28fa78c1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ab9177e4d3bf878c64073e3fb8e94038ea6765ab06873c5fe107c850d513e771
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105796088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119369606"
 ---
-# <a name="id3dxbaseeffectgetdesc-method"></a>Método ID3DXBaseEffect:: GetDesc
+# <a name="id3dxbaseeffectgetdesc-method"></a>Método ID3DXBaseEffect::GetDesc
 
 Obtém a descrição do efeito.
 
@@ -40,20 +40,20 @@ HRESULT GetDesc(
 
 <dl> <dt>
 
-*pDesc* \[ fora\]
+*pDesc* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **D3DXEFFECT \_ desc**](d3dxeffect-desc.md)\***
+Tipo: **[ **D3DXEFFECT \_ DESC**](d3dxeffect-desc.md)\***
 
-Retorna uma descrição do efeito. Consulte [**D3DXEFFECT \_ desc**](d3dxeffect-desc.md).
+Retorna uma descrição do efeito. Consulte [**D3DXEFFECT \_ DESC**](d3dxeffect-desc.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método fa
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

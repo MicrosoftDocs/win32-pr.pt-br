@@ -3,22 +3,22 @@ title: Sobre manipuladores de arquivo e fluxo personalizados
 description: Sobre manipuladores de arquivo e fluxo personalizados
 ms.assetid: 6a00c8db-3ac6-4826-a373-52b6b7d1652f
 keywords:
-- Video for Windows (VFW), manipuladores de arquivo personalizado
-- Vídeo para Windows (VFW), manipuladores de fluxo personalizados
-- Video for Windows (VFW), manipuladores de arquivos
-- Vídeo para Windows (VFW), manipuladores de fluxo
+- vídeo para Windows (VFW), manipuladores de arquivo personalizados
+- vídeo para Windows (VFW), manipuladores de fluxo personalizados
+- vídeo para Windows (VFW), manipuladores de arquivo
+- vídeo para Windows (VFW), manipuladores de fluxo
 - VFW (vídeo para Windows), manipuladores de arquivo personalizado
 - VFW (vídeo para Windows), manipuladores de fluxo personalizados
 - VFW (vídeo para Windows), manipuladores de arquivo
 - VFW (vídeo para Windows), manipuladores de fluxo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94e1872aa8a2f5c55df0db43860e318c792801e8
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 719c5312c5ba1e783e0cd4cdb81565f66241e4662772ca441283571f0335fb31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103823018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145150"
 ---
 # <a name="about-custom-file-and-stream-handlers"></a>Sobre manipuladores de arquivo e fluxo personalizados
 
@@ -29,11 +29,11 @@ Da mesma forma, seu aplicativo pode usar um manipulador de fluxo personalizado p
 > [!Note]  
 > Você deve posicionar os manipuladores de arquivo e fluxo personalizados em uma ou mais DLLs, separadas dos arquivos principais do aplicativo.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

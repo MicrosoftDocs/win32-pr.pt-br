@@ -21,12 +21,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: ab399ce08374a954b3bbc015cfee7b4d20167b70
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 4e2c2b2329884b22eecdc00a629abb8d05bc87435ce06d35e51907cb4095c8fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020084"
 ---
 # <a name="win32_privilegesstatus-class-cimwin32-wmi-providers"></a>Classe Win32_PrivilegesStatus (provedores WMI CIMWin32)
 
@@ -86,7 +86,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Operação que ocorre no momento de uma falha ou anomalia. Normalmente, Instrumentação de Gerenciamento do Windows (WMI) define essa propriedade como o nome de uma API COM para o método WMI, como o seguinte: [**IWbemServices:: CreateInstanceEnum**](/windows/win32/api/wbemcli/nf-wbemcli-iwbemservices-createinstanceenum).
+Operação que ocorre no momento de uma falha ou anomalia. normalmente, Instrumentação de Gerenciamento do Windows (WMI) define essa propriedade como o nome de uma API COM para o método WMI, como o seguinte: [**IWbemServices:: CreateInstanceEnum**](/windows/win32/api/wbemcli/nf-wbemcli-iwbemservices-createinstanceenum).
 
 Essa propriedade é herdada de [**\_ \_ ExtendedStatus**](../wmisdk/--extendedstatus.md).
 
@@ -116,12 +116,12 @@ Tipo de dados: matriz de **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| AccessControl \| Privileges do Windows NT")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| AccessControl \| Windows NT privileges")
 </dt> </dl>
 
-Listando os privilégios de acesso necessários ausentes para concluir uma operação. Os tipos de privilégios de acesso podem ser encontrados sob os privilégios do Windows.
+Listando os privilégios de acesso necessários ausentes para concluir uma operação. os tipos de privilégios de acesso podem ser encontrados sob os privilégios de Windows.
 
-Exemplo: "SE \_ nome de desligamento \_ "
+exemplo: " \_ nome de desligamento de ES \_ "
 
 </dd> <dt>
 
@@ -134,12 +134,12 @@ Tipo de dados: matriz de **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("win32api \| AccessControl \| Privileges do Windows NT")
+qualificadores: [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("Win32API \| AccessControl \| Windows NT privileges")
 </dt> </dl>
 
 Listagem de todos os privilégios necessários para executar uma operação. Isso inclui valores da propriedade **PrivilegesNotHeld** .
 
-Exemplo: "SE \_ nome de desligamento \_ "
+exemplo: " \_ nome de desligamento de ES \_ "
 
 </dd> <dt>
 
@@ -152,7 +152,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identifica o provedor que causa ou relata um erro ou uma alteração de status. Se um provedor não estiver envolvido, essa cadeia de caracteres será definida como "Gerenciamento do Windows".
+Identifica o provedor que causa ou relata um erro ou uma alteração de status. se um provedor não estiver envolvido, essa cadeia de caracteres será definida como "gerenciamento de Windows".
 
 Essa propriedade é herdada de [**\_ \_ ExtendedStatus**](../wmisdk/--extendedstatus.md).
 

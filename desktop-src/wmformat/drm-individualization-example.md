@@ -3,8 +3,8 @@ title: Exemplo de individualização de DRM
 description: Exemplo de individualização de DRM
 ms.assetid: 665a5005-d435-4783-b48e-2d8400aa7638
 keywords:
-- SDK do Windows Media Format, individualização de DRM
-- SDK do Windows Media Format, individualização
+- Windows SDK de formato de mídia, individualização de DRM
+- Windows SDK de formato de mídia, individualização
 - DRM (gerenciamento de direitos digitais), individualização
 - DRM (gerenciamento de direitos digitais), individualização
 - DRM (gerenciamento de direitos digitais), individualização de DRM
@@ -13,16 +13,16 @@ keywords:
 - APIs estendidas do cliente, individualização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1252fe951e306f837f2df95245b3cfc81dac03c2
-ms.sourcegitcommit: cb844c9ab17577ce171fd7b03add668645867bc7
+ms.openlocfilehash: 4eeb13f44eaa5fe3a3d67560d6fa7bb1e39250842ba0707ef62969b91fb50d47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "104365686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119085982"
 ---
 # <a name="drm-individualization-example"></a>Exemplo de individualização de DRM
 
-O código a seguir é um exemplo de individualização forçada e também mostra como usar o modelo de manipulação de eventos síncronos com eventos que têm interfaces de status associadas.
+O código a seguir é um exemplo de individualização forçada e também mostra como usar o modelo de manipulação de eventos síncrono com eventos que têm interfaces de status associadas.
 
 
 ```C++
@@ -175,15 +175,15 @@ HRESULT Individualize(IWMDRMSecurity* pSecurity)
 
 <dl> <dt>
 
-[**Executando individualização de DRM**](performing-drm-individualization.md)
+[**Executando a individualização de DRM**](performing-drm-individualization.md)
 </dt> <dt>
 
-[**Usando o modelo de evento Media Foundation**](using-the-media-foundation-model.md)
+[**Usando o modelo Media Foundation evento**](using-the-media-foundation-model.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_DBINFOMISC. dbstate'
-title: Propriedade JET_DBINFOMISC. dbstate
+description: 'Saiba mais sobre: JET_DBINFOMISC.dbstate'
+title: JET_DBINFOMISC.dbstate
 TOCTitle: 'dbstate property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.dbstate
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.dbstate(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 90d1cbb9ed4418d88a2a76f9a9922305d83d3ac2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fece25cfd46154168216d197c114fa2f688855d10556aeeb925d9ba970ad9c9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980416"
 ---
-# <a name="jet_dbinfomiscdbstate-property"></a>Propriedade JET_DBINFOMISC. dbstate
+# <a name="jet_dbinfomiscdbstate-property"></a>JET_DBINFOMISC.dbstate
 
 Obtém o estado consistente/inconsistente do banco de dados.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public JET_dbstate dbstate { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_dbstate](./jet-dbstate-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_dbstate](./jet-dbstate-enumeration.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membros do JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membros](./jet-dbinfomisc-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

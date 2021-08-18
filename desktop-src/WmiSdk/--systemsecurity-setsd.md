@@ -1,8 +1,8 @@
 ---
-description: Define o descritor de segurança para o namespace ao qual um usuário está conectado. Esse método requer um descritor de segurança em formato de matriz de bytes binários. Se você estiver escrevendo um script, use o método SetSecurityDescriptor.
+description: Define o descritor de segurança para o namespace ao qual um usuário está conectado. Esse método requer um descritor de segurança no formato de matriz de byte binário. Se você estiver escrevendo um script, use o método SetSecurityDescriptor.
 ms.assetid: 049f8722-1674-4c4f-9300-09b1cc1412fb
 ms.tgt_platform: multiple
-title: Método definido da classe __SystemSecurity
+title: Método SetSD da classe __SystemSecurity classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,23 +14,23 @@ api_type:
 - COM
 api_location:
 - All
-ms.openlocfilehash: 21f09a412a662cec8629fa9237d8dbb5902426c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04da59b6370e2e9a381f2e3889b75ac37cb926e54c46cc0e616ec5353ed6f665
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132029"
 ---
-# <a name="setsd-method-of-the-__systemsecurity-class"></a>Método SetS da \_ \_ classe SystemSecurity
+# <a name="setsd-method-of-the-__systemsecurity-class"></a>Método SetSD da \_ \_ classe SystemSecurity
 
-O método **sets** define o descritor de segurança para o namespace ao qual um usuário está conectado. Esse método requer um descritor de segurança em formato de matriz de bytes binários. Se você estiver escrevendo um script, use o método [**SetSecurityDescriptor**](setsecuritydescriptor-method-in-class---systemsecurity.md) . Para obter mais informações, consulte [protegendo os namespaces do WMI](securing-wmi-namespaces.md) e [alterando a segurança de acesso em objetos protegíveis](changing-access-security-on-securable-objects.md).
+O **método SetSD** define o descritor de segurança para o namespace ao qual um usuário está conectado. Esse método requer um descritor de segurança no formato de matriz de byte binário. Se você estiver escrevendo um script, use o [**método SetSecurityDescriptor.**](setsecuritydescriptor-method-in-class---systemsecurity.md) Para obter mais informações, consulte [Proteger namespaces WMI e](securing-wmi-namespaces.md) Alterar a segurança [de acesso em objetos securáveis.](changing-access-security-on-securable-objects.md)
 
-Se você estiver programando em C++, poderá manipular o descritor de segurança binário usando [SDDL](/windows/desktop/SecAuthZ/security-descriptor-definition-language)e os métodos de conversão [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) e [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora).
+Se você estiver programando no C++, poderá manipular o descritor de segurança binária usando [SDDL](/windows/desktop/SecAuthZ/security-descriptor-definition-language)e os métodos de conversão [**ConvertSecurityDescriptorToStringSecurityDescriptor**](/windows/desktop/api/sddl/nf-sddl-convertsecuritydescriptortostringsecuritydescriptora) e [**ConvertStringSecurityDescriptorToSecurityDescriptor**](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora).
 
-Um usuário deve ter a permissão **Write \_ DAC** e, por padrão, um administrador tem essa permissão. A única parte do descritor de segurança que é usada é a ACE (entrada de controle de acesso) não herdada na DACL (lista de controle de acesso discricionário). Ao definir o sinalizador de **\_ herança de contêiner** nas Aces, o descritor de segurança afeta os namespaces filho. As ACEs allow e Deny são permitidas.
+Um usuário deve ter a **permissão WRITE \_ DAC** e, por padrão, um administrador tem essa permissão. A única parte do descritor de segurança usado é a ACE (entrada de controle de acesso) não herherida na DACL (lista de controle de acesso discricionário). Ao definir o **sinalizador \_ CONTAINER INHERIT** nas ACEs, o descritor de segurança afeta os namespaces filho. As ACEs allow e deny são permitidas.
 
 > [!Note]  
-> Como Deny e Allow ACEs são permitidas em uma DACL, a ordem das ACEs é importante. Para obter mais informações, consulte [ordenando ACEs em uma DACL](/windows/desktop/SecAuthZ/order-of-aces-in-a-dacl).
+> Como negar e permitir ACEs são permitidos em uma DACL, a ordem das ACEs é importante. Para obter mais informações, [consulte Ordenação de ACEs em um DACL](/windows/desktop/SecAuthZ/order-of-aces-in-a-dacl).
 
  
 
@@ -49,18 +49,18 @@ HRESULT SetSD(
 
 <dl> <dt>
 
-*SD* \[ no\]
+*SD* \[ Em\]
 </dt> <dd>
 
-Matriz de bytes que compõe o descritor de segurança.
+Matriz de byte que com forma o descritor de segurança.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um **HRESULT** que indica o status de uma chamada de método. Para aplicativos de script e Visual Basic, o resultado pode ser obtido de [Parameters. ReturnValue](parsing-outparameters-objects.md). Para obter mais informações, consulte [construindo objetos de inparâmetros e analisando objetos de Parameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
+Retorna um **HRESULT** que indica o status de uma chamada de método. Para scripts e Visual Basic aplicativos, o resultado pode ser obtido de [OutParameters.ReturnValue.](parsing-outparameters-objects.md) Para obter mais informações, [consulte Constructing InParameters Objects and Parsing OutParameters Objects](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
 
-A lista a seguir lista os valores de retorno que são significativos para **conjuntos**.
+A lista a seguir lista os valores de retorno que são significativos **para SetSD.**
 
 <dl> <dt>
 
@@ -71,52 +71,52 @@ Método executado com êxito.
 
 </dd> <dt>
 
-**acesso ao WBEM \_ E \_ \_ negado**
+**ACESSO DO WBEM \_ E \_ \_ NEGADO**
 </dt> <dd>
 
-O chamador não tem direitos suficientes para chamar este método.
+O chamador não tem direitos suficientes para chamar esse método.
 
 </dd> <dt>
 
-**\_método WBEM \_ E \_ desabilitado**
+**MÉTODO WBEM \_ E \_ \_ DESABILITADO**
 </dt> <dd>
 
-Tentativa de executar este método no sistema operacional que não oferece suporte a ele.
+Tentativa de executar esse método no sistema operacional que não dá suporte a ele.
 
 </dd> <dt>
 
-**\_objeto WBEM E \_ inválido \_**
+**OBJETO WBEM \_ E \_ \_ INVÁLIDO**
 </dt> <dd>
 
-O SD não passa por testes de validade básicos.
+O SD não passa em testes de validade básicos.
 
 </dd> <dt>
 
-**parâmetro de WBEM \_ E \_ inválido \_**
+**PARÂMETRO WBEM \_ E \_ \_ INVÁLIDO**
 </dt> <dd>
 
 O SD não é válido devido a um dos seguintes:
 
--   A DACL está ausente.
+-   DACL está ausente.
 -   A DACL não é válida.
--   ACE tem o sinalizador de **\_ \_ \_ representante de gravação completa de WBEM** definido e o sinalizador de **\_ \_ \_ Representante** de gravação parcial do WBEM ou do **\_ \_ provedor de gravação** do WBEM não está definido.
--   ACE tem o **sinalizador \_ \_ ACE somente Inherit** definido sem o **sinalizador \_ \_ Ace Inherit do contêiner** .
--   ACE tem um conjunto de bits de acesso desconhecido.
--   ACE tem um sinalizador definido que não está na tabela.
+-   ACE tem o **sinalizador WBEM \_ FULL WRITE \_ \_ REP** definido e o sinalizador **WBEM \_ PARTIAL WRITE \_ \_ REP** ou **WBEM \_ WRITE \_ PROVIDER** não está definido.
+-   ACE tem o **sinalizador INHERIT \_ ONLY \_ ACE** definido sem o **sinalizador ACE CONTAINER \_ INHERIT. \_**
+-   ACE tem um bit bit de acesso desconhecido definido.
+-   ACE tem um conjunto de sinalizadores que não está na tabela.
 -   ACE tem um tipo que não está na tabela.
--   O proprietário e o grupo estão ausentes no SD.
+-   O proprietário e o grupo estão ausentes do SD.
 
-Para obter mais informações sobre os sinalizadores de ACE (entrada de controle de acesso), consulte [constantes de segurança do WMI](wmi-security-constants.md).
+Para obter mais informações sobre os sinalizadores ace (entrada de controle de acesso), consulte [Constantes de segurança WMI](wmi-security-constants.md).
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre como modificar a segurança do namespace de forma programática ou manual, consulte [protegendo os namespaces do WMI](securing-wmi-namespaces.md).
+Para obter mais informações sobre como modificar a segurança do namespace de forma programática ou manual, consulte [Proteger namespaces WMI](securing-wmi-namespaces.md).
 
 ## <a name="examples"></a>Exemplos
 
-O script a seguir mostra como usar o **sets** para definir o descritor de segurança do namespace para o namespace raiz e alterá-lo para a matriz de bytes mostrada em *strSD*.
+O script a seguir mostra como usar **SetSD** para definir o descritor de segurança do namespace para o namespace raiz e alterá-lo para a matriz de byte mostrada *em strSD*.
 
 
 ```VB
@@ -150,7 +150,7 @@ WScript.Echo "ReturnValue " & nReturn
 
 
 
-O exemplo de código C# a seguir usa System. Security. AccessControl. RawSecurityDescriptor para enumerar, inserir e remover novos objetos CommonAce em RawSecurityDescriptor. DiscretionaryAcl e, em seguida, convertê-lo novamente em uma matriz de bytes para salvá-lo por meio de SetS. Um SecurityIdentifier pode ser recuperado usando NTAccount e translate.
+O exemplo de código C# a seguir usa o System.Security.AccessControl.RawSecurityDescriptor para enumerar, inserir e remover novos objetos CommonAce em RawSecurityDescriptor.DiscretionaryAcl e convertê-lo de volta em uma matriz de byte para salvá-lo por meio de SetSD. Um SecurityIdentifier pode ser recuperado usando NTAccount e Translate.
 
 
 ```CSharp
@@ -232,7 +232,7 @@ O exemplo de código C# a seguir usa System. Security. AccessControl. RawSecurit
 |-------------------------------------|--------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>       |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/> |
-| Namespace<br/>                | Todos os namespaces do WMI<br/>  |
+| Namespace<br/>                | Todos os namespaces WMI<br/>  |
 
 
 
@@ -246,19 +246,19 @@ O exemplo de código C# a seguir usa System. Security. AccessControl. RawSecurit
 [**\_\_SystemSecurity**](--systemsecurity.md)
 </dt> <dt>
 
-[**\_\_SystemSecurity:: Obtém-se**](--systemsecurity-getsd.md)
+[**\_\_SystemSecurity::GetSD**](--systemsecurity-getsd.md)
 </dt> <dt>
 
-[Constantes de segurança do WMI](wmi-security-constants.md)
+[Constantes de segurança WMI](wmi-security-constants.md)
 </dt> <dt>
 
-[**Ace do Win32 \_**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
+[**ACE do \_ Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-ace)
 </dt> <dt>
 
-[**\_SecurityDescriptor Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
+[**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor)
 </dt> <dt>
 
-[Protegendo namespaces WMI](securing-wmi-namespaces.md)
+[Proteger namespaces WMI](securing-wmi-namespaces.md)
 </dt> </dl>
 
  
