@@ -13,7 +13,7 @@ ms.locfileid: "118501558"
 ---
 # <a name="xmbyte4-operators"></a>Operadores XMBYTE4
 
-A estrutura [**XMBYTE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmbyte4) expõe os operadores a seguir.
+A [**estrutura XMBYTE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmbyte4) expõe os operadores a seguir.
 
 > [!Note]  
 > Os operadores listados aqui só estão disponíveis em C++.
@@ -26,7 +26,7 @@ A estrutura [**XMBYTE4**](/windows/win32/api/directxpackedvector/ns-directxpacke
 
 | Métodos                                              | Descrição                                                                                                        |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/previous-versions/windows/desktop/legacy/ee419283(v=vs.85))<br/> | Atribui os dados do componente de vetor de uma instância do `XMBYTE4` à instância atual do `XMBYTE4` . <br/> |
+| [**operator =**](/previous-versions/windows/desktop/legacy/ee419283(v=vs.85))<br/> | Atribui os dados do componente de vetor de uma instância `XMBYTE4` do à instância atual do `XMBYTE4` . <br/> |
 
 
 

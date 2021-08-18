@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Cardmod.h
-ms.openlocfilehash: d3ef9fc81c9ab3bff5f3992c3aedeb3f923648ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9a38e7d67e413352de693f52b07ba11bf34858854fa708b41a735152ad3ed2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105783242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117771982"
 ---
 # <a name="card_file_access_condition-enumeration"></a>\_Enumeração de \_ condição de acesso do arquivo de cartão \_
 
@@ -84,9 +84,9 @@ As permissões de acesso para o arquivo são desconhecidas.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP, Windows XP\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows Server 2003, Windows Server 2003 \[\]<br/>            |
-| parâmetro<br/>                   | <dl> <dt>Cardmod. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows xp, \[ somente aplicativos da área de trabalho do Windows xp\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows servidor 2003, Windows server 2003 \[ somente aplicativos da área de trabalho\]<br/>            |
+| Cabeçalho<br/>                   | <dl> <dt>Cardmod. h</dt> </dl> |
 
 
 

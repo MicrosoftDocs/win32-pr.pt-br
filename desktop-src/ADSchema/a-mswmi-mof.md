@@ -1,11 +1,11 @@
 ---
-title: atributo ms-WMI-MOF
-description: Mantém uma definição de MOF de algum objeto WMI.
+title: Atributo ms-WMI-Mof
+description: Contém uma definição de MOF de algum objeto WMI.
 ms.assetid: 0408b857-4b72-40dc-9d95-d7faecce8119
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-WMI-MOF
-- Esquema de AD do atributo msWMI-MOF
+- Esquema do AD do atributo ms-WMI-Mof
+- Esquema do AD do atributo msWMI-Mof
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8971a96f007460dc1905c35da1cbfb78865dc9ec
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bb9f4a053ee1e3ee7af88dfec8964348a3835a997201965ecc7c02bd0fda5768
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837316"
 ---
-# <a name="ms-wmi-mof-attribute"></a>atributo ms-WMI-MOF
+# <a name="ms-wmi-mof-attribute"></a>Atributo ms-WMI-Mof
 
-Mantém uma definição de MOF de algum objeto WMI.
+Contém uma definição de MOF de algum objeto WMI.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-MOF                                  |
-| LDAP-Display-Name | msWMI-MOF                                   |
+| CN                | ms-WMI-Mof                                  |
+| Ldap-Display-Name | msWMI-Mof                                   |
 | Tamanho              | \-                                          |
-| Privilégio de atualização  | Administrador de Política de Grupo                  |
+| Privilégio de atualização  | Política de Grupo administrador                  |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1638                     |
-| System-ID-GUID    | 6736809f-2064-443e-a145-81262b1f1366        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 6736809f-2064-443e-a145-81262b1f1366        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,10 +57,10 @@ Mantém uma definição de MOF de algum objeto WMI.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -78,10 +78,10 @@ Mantém uma definição de MOF de algum objeto WMI.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -99,10 +99,10 @@ Mantém uma definição de MOF de algum objeto WMI.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -120,7 +120,7 @@ Mantém uma definição de MOF de algum objeto WMI.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -141,7 +141,7 @@ Mantém uma definição de MOF de algum objeto WMI.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |

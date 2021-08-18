@@ -20,12 +20,12 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: 983fa9e8fe36b872d05c3140c74f572b7d1ebf50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b05a1eca97c650b130170af2c6c03a958b6022017902e39f15156b08038bad08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118317407"
 ---
 # <a name="cimmofdeserializerdeserializeclasses-method-byteuint32"></a>Método CimMofDeserializer. DeserializeClasses (byte \[ \] , UInt32)
 
@@ -78,7 +78,7 @@ Public Function DeserializeClasses (
     
     O deslocamento de byte para o local no qual começar a ler os dados. Quando o método retornar, o deslocamento estará apontando para o próximo byte após as classes desserializadas.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Collections. Generic. IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.8)\<[CimClass](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832269(v=vs.85))\>
 

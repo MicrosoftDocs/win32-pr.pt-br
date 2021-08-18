@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 173f023e941655c609d94f8f75d48d4546a3c2ad
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6538eaf3f702f07fc5b8c569b44be38a28c2892b4f0b8104b999e1aaaea0a484
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117835753"
 ---
 # <a name="user-change-password-extended-right"></a>Usuário-alterar-senha estendida à direita
 

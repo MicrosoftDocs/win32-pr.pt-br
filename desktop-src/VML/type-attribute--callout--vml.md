@@ -1,26 +1,26 @@
 ---
-title: Atributo de tipo (balão) (VML)
-description: Atributo de tipo (balão) (VML)
+title: Atributo type (callout)(VML)
+description: Atributo type (callout)(VML)
 ms.assetid: 8c5c6ef9-dee0-41a5-bc8c-6abfaf337e9c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91b61e518d2ca533caa6cc9f9cea28db2d2870b2
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e8972f5635406b8d9bbbddc12841152e6c4d4ea9b4cc911367078e52c30682a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105763789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117753777"
 ---
-# <a name="type-attribute-calloutvml"></a>Atributo de tipo (balão) (VML)
+# <a name="type-attribute-calloutvml"></a>Atributo type (callout)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define o tipo de texto explicativo. Leitura/gravação. **Cadeia de caracteres**.
+Define o tipo de texto explicado. Leitura/gravação. **Cadeia de caracteres**.
 
 **Aplica-se a**
 
@@ -28,7 +28,7 @@ Define o tipo de texto explicativo. Leitura/gravação. **Cadeia de caracteres**
 
 **Sintaxe de marca**
 
-<o: tipo de *elemento* = " *expressão* " >
+<o: *expressão de elemento* type=" "> 
 
 **Comentários**
 
@@ -36,11 +36,11 @@ Os valores são:
 
 -   retângulo (padrão)
 -   roundedrectangle
--   formas
+-   Oval
 -   nuvem
 
-**Atributo de extensões de Microsoft Office**
+**Microsoft Office Atributo Extensions**
 
- 
+ 
 
- 
+ 

@@ -1,23 +1,23 @@
 ---
-title: Código de exemplo para variação com IDirectorySearch
+title: Código de exemplo para variando com IDirectorySearch
 description: O exemplo de código a seguir usa a variação para recuperar os membros de um grupo usando a interface IDirectorySearch.
 ms.assetid: 13aba22f-c649-4dda-804f-01ba493cd6d7
 ms.tgt_platform: multiple
 keywords:
-- Código de exemplo para variação com IDirectorySearch ADSI
-- ADSI de recuperação de intervalo, código de exemplo, usando IDirectorySearch
+- Código de exemplo para variando com IDirectorySearch ADSI
+- ADSI de Recuperação de Intervalo , código de exemplo, Usando IDirectorySearch
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 94a5744c4952db3a8026db6c27cc0ecd2c4543de
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0c1c2f5cda530268fdc046c807a69ed8cec7ac2807fc4eb3225701209d4f261d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117839996"
 ---
-# <a name="example-code-for-ranging-with-idirectorysearch"></a>Código de exemplo para variação com IDirectorySearch
+# <a name="example-code-for-ranging-with-idirectorysearch"></a>Código de exemplo para variando com IDirectorySearch
 
-O exemplo de código a seguir usa a variação para recuperar os membros de um grupo usando a interface [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) .
+O exemplo de código a seguir usa a variação para recuperar os membros de um grupo usando a interface [**IDirectorySearch.**](/windows/desktop/api/Iads/nn-iads-idirectorysearch)
 
 
 ```C++
@@ -214,9 +214,9 @@ HRESULT EnumGroupWithIDirectorySearch(LPCWSTR pwszGroupDN,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

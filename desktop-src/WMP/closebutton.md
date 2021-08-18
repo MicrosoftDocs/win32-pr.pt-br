@@ -3,23 +3,23 @@ title: BOTÃOFECHAR
 description: BOTÃOFECHAR
 ms.assetid: 39e2de27-c5aa-4a8f-8545-8b7e5cab730f
 keywords:
-- Aparência do Windows Media Player, elemento BUTTON
+- Windows Media Player aparências, elemento BUTTON
 - capas, elemento BUTTON
 - referência para capas, elemento BUTTON
 - Elemento BUTTON
 - elementos, botão
-- Capas do Windows Media Player, botões fechar
+- Windows Media Player aparências, botões fechar
 - capas, botões fechar
 - Botões de fechamento
 - referência para capas, botões de fechamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a7b3d6df8984d966e84a68cadaf38d1cc8ab369
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0f8123305c92bfe7f5fccc69b9fd8a92429a67fb933189bd3b0285834cccd2a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105784905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119784"
 ---
 # <a name="closebutton"></a>BOTÃOFECHAR
 
@@ -45,9 +45,9 @@ Isso cria um controle de **botão** que fecha o Player. As dicas de ferramenta s
 [**Elemento BUTTON**](button-element.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Atributo tem-Master-NCs
-description: O nome distinto para os contextos de nomenclatura do controlador de domínio. Link de encaminhamento do atributo Mastered-By.
+title: Atributo Has-Master-NCs
+description: O nome diferenciado para os contextos de nomentura para o DC. Link de encaminhamento para o Mastered-By atributo.
 ms.assetid: 77a7e693-513f-4f76-8c4f-d2ef3240323b
 ms.tgt_platform: multiple
 keywords:
-- Tem Esquema de AD do atributo-Master-NCs
-- Esquema de AD do atributo hasMasterNCs
+- Esquema do AD do atributo Has-Master-NCs
+- esquema do AD do atributo hasMasterNCs
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d34756c491c5228c58da1b95d4fd7b838c691f38
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f5c9f80861076d685da972666d61767b80dfe835445bcafb15a6a3f1a9c686f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176810"
 ---
-# <a name="has-master-ncs-attribute"></a>Atributo tem-Master-NCs
+# <a name="has-master-ncs-attribute"></a>Atributo Has-Master-NCs
 
-O nome distinto para os contextos de nomenclatura do controlador de domínio. Link de encaminhamento do atributo Mastered-By.
+O nome diferenciado para os contextos de nomentura para o DC. Link de encaminhamento para o Mastered-By atributo.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Tem-mestre-NCs                          |
-| LDAP-Display-Name | hasMasterNCs                            |
+| CN                | Has-Master-NCs                          |
+| Ldap-Display-Name | hasMasterNCs                            |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.2.14                   |
-| System-ID-GUID    | bf967982-0de6-11d0-a285-00aa003049e2    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | bf967982-0de6-11d0-a285-00aa003049e2    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -44,7 +44,7 @@ O nome distinto para os contextos de nomenclatura do controlador de domínio. Li
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,11 +58,11 @@ O nome distinto para os contextos de nomenclatura do controlador de domínio. Li
 |------------------------|------------------------------------------|
 | ID do link                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
-| É de valor único       | Falso                                    |
+| System-Only            | Verdadeiro                                     |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -79,11 +79,11 @@ O nome distinto para os contextos de nomenclatura do controlador de domínio. Li
 |------------------------|------------------------------------------|
 | ID do link                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
-| É de valor único       | Falso                                    |
+| System-Only            | Verdadeiro                                     |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -92,7 +92,7 @@ O nome distinto para os contextos de nomenclatura do controlador de domínio. Li
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,11 +100,11 @@ O nome distinto para os contextos de nomenclatura do controlador de domínio. Li
 |------------------------|------------------------------------------|
 | ID do link                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
-| É de valor único       | Falso                                    |
+| System-Only            | Verdadeiro                                     |
+| Tem valor único       | Falso                                    |
 | É indexado             | Falso                                    |
-| No catálogo global      | Falso                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
+| No Catálogo Global      | Falso                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000000                               |
@@ -121,7 +121,7 @@ O nome distinto para os contextos de nomenclatura do controlador de domínio. Li
 |------------------------|------------------------------------------|
 | ID do link                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
+| System-Only            | Verdadeiro                                     |
 | É de valor único       | Falso                                    |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
@@ -142,7 +142,7 @@ O nome distinto para os contextos de nomenclatura do controlador de domínio. Li
 |------------------------|------------------------------------------|
 | ID do link                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
+| System-Only            | Verdadeiro                                     |
 | É de valor único       | Falso                                    |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
@@ -163,7 +163,7 @@ O nome distinto para os contextos de nomenclatura do controlador de domínio. Li
 |------------------------|------------------------------------------|
 | ID do link                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
+| System-Only            | Verdadeiro                                     |
 | É de valor único       | Falso                                    |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |
@@ -184,7 +184,7 @@ O nome distinto para os contextos de nomenclatura do controlador de domínio. Li
 |------------------------|------------------------------------------|
 | ID do link                | 76                                       |
 | MAPI-Id                | 0x80B6                                   |
-| System-Only            | True                                     |
+| System-Only            | Verdadeiro                                     |
 | É de valor único       | Falso                                    |
 | É indexado             | Falso                                    |
 | No catálogo global      | Falso                                    |

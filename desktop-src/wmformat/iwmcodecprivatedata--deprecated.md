@@ -1,6 +1,6 @@
 ---
-title: IWMCodecPrivateData (Wmcodecdsp. h)
-description: para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte Windows áudio de mídia e o Codec de vídeo e APIs do DSP. | IWMCodecPrivateData (Wmcodecdsp. h)
+title: IWMCodecPrivateData (Wmcodecdsp.h)
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | IWMCodecPrivateData (Wmcodecdsp.h)
 ms.assetid: a2c7e727-52ce-495e-b538-5e1bd2ad4ce4
 keywords:
 - Formato de mídia do Windows IWMCodecPrivateData
@@ -23,7 +23,7 @@ ms.locfileid: "118198235"
 ---
 # <a name="iwmcodecprivatedata"></a>IWMCodecPrivateData
 
-para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte [Windows áudio de mídia e o Codec de vídeo e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ para obter a documentação atual sobre codecs de mídia Windows e processadores
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: Simula um clique de botão do botão de dispositivo especificado.
+description: Simula um clique de botão do botão do dispositivo especificado.
 ms.assetid: 1153BF91-F1F6-4E0A-8100-7625A3C73BB3
-title: Método ClickButton da classe Msvm_SyntheticMouse
+title: Método ClickButton da classe Msvm_SyntheticMouse dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2f5ea8e1f5984bd7e4b77222d6cbd8a05d1ed40b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2812bd898d674b9d17aba51db6d93e43c53a049800214c1373e41a45dfc1d02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105778757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118150123"
 ---
-# <a name="clickbutton-method-of-the-msvm_syntheticmouse-class"></a>Método ClickButton da \_ classe SyntheticMouse Msvm
+# <a name="clickbutton-method-of-the-msvm_syntheticmouse-class"></a>Método ClickButton da classe Msvm \_ SyntheticMouse
 
-Simula um clique de botão do botão de dispositivo especificado.
+Simula um clique de botão do botão do dispositivo especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,27 +39,27 @@ uint32 ClickButton(
 
 <dl> <dt>
 
-*buttonIndex* \[ no\]
+*buttonIndex* \[ Em\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-O índice de base 1 do botão.
+O índice baseado em 1 do botão.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Um valor de retorno igual A zero indica êxito. Um valor diferente de zero indica uma falha ao modificar o estado do botão.
+Um valor de retorno de zero indica êxito. Um valor não zero indica uma falha ao modificar o estado do botão.
 
 <dl> <dt>
 
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -71,16 +71,16 @@ Um valor de retorno igual A zero indica êxito. Um valor diferente de zero indic
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em usado** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -89,19 +89,19 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe [**Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md) pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à [**classe Msvm \_ SyntheticMouse**](msvm-syntheticmouse.md) pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de C# a seguir simula um clique de botão. Os utilitários referenciados podem ser encontrados em [utilitários comuns para os exemplos de virtualização (v2)](common-utilities-for-the-virtualization-samples-v2.md).
+O exemplo de C# a seguir simula um clique de botão. Os utilitários referenciados podem ser encontrados em [Utilitários comuns para as amostras de virtualização (V2)](common-utilities-for-the-virtualization-samples-v2.md).
 
 
 ```CSharp
@@ -260,7 +260,7 @@ namespace HyperVSamples
 
 
 
-O exemplo a seguir Visual Basic Scripting Edition (VBScript) simula um clique de botão.
+O exemplo Visual Basic Scripting Edition (VBScript) a seguir simula um clique de botão.
 
 
 ```VB
@@ -448,10 +448,10 @@ End Function
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

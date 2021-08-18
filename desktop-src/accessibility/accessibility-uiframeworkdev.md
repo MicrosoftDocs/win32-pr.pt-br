@@ -12,7 +12,7 @@ ms.locfileid: "117737765"
 ---
 # <a name="developing-accessible-ui-frameworks-for-windows"></a>Desenvolvimento de estruturas da interface do usuário acessíveis para Windows
 
-Para ser usada pelo máximo de pessoas possível, as estruturas de interface do usuário criadas para a plataforma Windows devem dar suporte a recursos de acessibilidade que facilitam para pessoas com deficiências, preferências pessoais ou estilos de trabalho específicos usarem seus dispositivos Windows com êxito.
+Para ser usada pelo máximo de pessoas possível, as estruturas de interface do usuário criadas para a plataforma Windows devem dar suporte a recursos de acessibilidade que facilitam para aqueles com deficiências, preferências pessoais ou estilos de trabalho específicos usarem seus dispositivos Windows com êxito.
 
 Esta visão geral descreve como criar uma estrutura de interface do usuário que dá suporte a recursos como acesso programático e automação, navegação por teclado e comandos, opções de cores e tema e personalização por meio de configurações do usuário.
 

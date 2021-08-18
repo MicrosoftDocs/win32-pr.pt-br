@@ -1,17 +1,17 @@
 ---
 description: Contém o tipo de mídia principal para um nó de topologia. Esse atributo é definido quando a topologia não é carregada porque não foi possível encontrar o decodificador correto.
 ms.assetid: eb837fe6-12c9-479c-a0be-63b24093e6fd
-title: Atributo MF_TOPONODE_ERROR_MAJORTYPE (Mfidl. h)
+title: MF_TOPONODE_ERROR_MAJORTYPE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd68ace0cd3bec4f32536e7d0d8d29bcea60d997
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e32752f74708272c367e3f15b208ed66fb0d476baab75b8032ed028e1b9e4162
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105771403"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117875140"
 ---
-# <a name="mf_toponode_error_majortype-attribute"></a>MF \_ TOPONODE \_ erro de \_ atributo majortype
+# <a name="mf_toponode_error_majortype-attribute"></a>Atributo MF \_ TOPONODE \_ ERROR \_ MAJORTYPE
 
 Contém o tipo de mídia principal para um nó de topologia. Esse atributo é definido quando a topologia não é carregada porque não foi possível encontrar o decodificador correto.
 
@@ -23,11 +23,11 @@ Contém o tipo de mídia principal para um nó de topologia. Esse atributo é de
 
 Esse atributo se aplica a todos os tipos de nó.
 
-O carregador de topologia pode definir o atributo. Normalmente, os aplicativos lêem esse atributo, mas não os definem.
+O carregador de topologia pode definir o atributo . Os aplicativos normalmente leem esse atributo, mas não o configuram.
 
-Para obter uma lista de valores possíveis, consulte [tipos de mídia principais](media-type-guids.md).
+Para ver uma lista de valores possíveis, consulte [Tipos de mídia principais.](media-type-guids.md)
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -45,13 +45,13 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetGuid**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
+[**IMFAttributes::GetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getguid)
 </dt> <dt>
 
-[**IMFAttributes:: SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
+[**IMFAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid)
 </dt> <dt>
 
 [**IMFTopologyNode**](/windows/desktop/api/mfidl/nn-mfidl-imftopologynode)

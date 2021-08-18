@@ -6,26 +6,26 @@ ms.tgt_platform: multiple
 keywords:
 - IADs ADSI, sobre
 - IDirectoryObject ADSI, sobre
-- Interfaces ADSI ADSI, using, IADs e IDirectoryObject
+- Interfaces ADSI ADSI , using, IADs e IDirectoryObject
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32dfef47fe1c66e4303725deecec14fe93d1fd92
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 6dccfa643c0076224abece6f449f20caf5a4de5d378c03d37cf0e2248ed5a50b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103823989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117838376"
 ---
 # <a name="the-iads-and-idirectoryobject-interfaces"></a>As interfaces IADs e IDirectoryObject
 
-Os clientes ADSI gerenciam e manipulam objetos de serviço de diretório usando uma das duas interfaces COM: [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) ou [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject). **IADs** é uma interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) destinada a uso por clientes com associação tardia, como as escritas em Microsoft Visual Basic, Java e várias linguagens de script. **IDirectoryObject** é uma interface vtable que fornece acesso direto a objetos por clientes de ligação antecipada, como aqueles escritos em C e C++.
+Os clientes ADSI gerenciam e manipulam objetos de serviço de diretório usando uma das duas interfaces COM: [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) ou [**IDirectoryObject.**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) **IADs** é uma interface [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) destinada a uso por clientes de limite tardia, como aqueles escritos no Microsoft Visual Basic, Java e várias linguagens de script. **IDirectoryObject** é uma interface vtable que fornece acesso direto a objetos por clientes com limite antecipado, como aqueles escritos em C e C++.
 
-Cada objeto ADSI deve implementar [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) e [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject). Os clientes ADSI escritos em linguagens como C ou C++, que são capazes de acessar diretamente vtables, podem usar qualquer interface, mas não ambos no mesmo aplicativo. Os clientes ADSI escritos em Visual Basic ou Java são limitados ao uso de **IADs**.
+Cada objeto ADSI deve implementar [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) e [**IDirectoryObject.**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) Os clientes ADSI escritos em linguagens como C ou C++, que são capazes de acessar diretamente vtables, podem usar qualquer interface, mas não ambos no mesmo aplicativo. Os clientes ADSI escritos em Visual Basic java ou java estão limitados ao uso **de IADs**.
 
-A interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iads) permite que os clientes de ligação tardia tirem proveito dos recursos de manutenção inerentes do modelo de objeto ADSI. Entre esses recursos está o cache de propriedades, que permite que os clientes leiam e gravem Propriedades sem passar pelo fio para cada chamada. Além disso, os aplicativos cliente têm o uso de uma interface do usuário e de bibliotecas de controles ActiveX poderosas e um estilo mais simples de programação. Em retorno, os clientes de ligação tardia devem usar o tipo de dados **Variant** , que impede o uso de tipos de dados nativos mais avançados fornecidos pela ADSI.
+A [**interface IADs**](/windows/desktop/api/Iads/nn-iads-iads) permite que clientes com limite tardia aproveitem os recursos de manutenção inerentes do modelo de objeto ADSI. Entre esses recursos está o cache de propriedades, que permite que os clientes leiam e escrevam propriedades sem passar pela transmissão de cada chamada. Além disso, os aplicativos cliente têm o uso de bibliotecas de controle ActiveX interface do usuário e um estilo mais simples de programação. Em troca, os clientes com limite tardia devem usar o tipo de dados **VARIANT,** que impede o uso dos tipos de dados nativos mais antigos fornecidos pela ADSI.
 
-A interface [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) permite que os clientes de ligação inicial aproveitem ao máximo os tipos de dados nativos do serviço de diretório no custo de uma ligeira vantagem de desempenho de usar o cache de propriedades. Em retorno, a interface **IDirectoryObject** fornece acesso direto e durante a transmissão às propriedades do objeto por meio de uma única solicitação, em vez de chamadas **Get** e **Put** individuais.
+A interface [**IDirectoryObject**](/windows/desktop/api/Iads/nn-iads-idirectoryobject) permite que os clientes com limite antecipado aproveitem ao máximo os tipos de dados do serviço de diretório nativo, com o custo de uma pequena vantagem de desempenho do uso do cache de propriedades. Em troca, a interface **IDirectoryObject** fornece acesso direto e na conexão às propriedades  do objeto por meio de uma única solicitação, em vez de por meio de chamadas get e **put** individuais.
 
- 
+ 
 
- 
+ 

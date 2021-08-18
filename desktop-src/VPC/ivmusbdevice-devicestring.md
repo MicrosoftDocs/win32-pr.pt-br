@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMUSBDevice DeviceString (VPCCOMInterfaces. h)
+title: Propriedade DeviceString IVMUSBDevice (VPCCOMInterfaces.h)
 description: Recupera o nome do dispositivo USB.
 ms.assetid: 2ae82e2a-b33a-4039-acdb-958b094b1045
 keywords:
-- Propriedade DeviceString do PC virtual
-- Propriedade DeviceString, PC virtual, interface IVMUSBDevice
-- IVMUSBDevice interface virtual PC, Propriedade DeviceString
+- Propriedade DeviceString Pc Virtual
+- Propriedade DeviceString Pc Virtual , interface IVMUSBDevice
+- INTERFACE IVMUSB Pc Virtual , propriedade DeviceString
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117752555"
 ---
-# <a name="ivmusbdevicedevicestring-property"></a>IVMUSBDevice: Propriedade eviceString de:D
+# <a name="ivmusbdevicedevicestring-property"></a>Propriedade IVMUSBDevice::D eviceString
 
-\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera o nome do dispositivo USB.
 
@@ -54,7 +54,7 @@ O nome do dispositivo USB.
 | Nome/valor                                                                                                                                            | Significado                                       |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>               | O método foi concluído com êxito.<br/> |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl> | O parâmetro é **NULL**.<br/>         |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl> | O parâmetro é **NULL.**<br/>         |
 
 
 
@@ -64,12 +64,12 @@ O nome do dispositivo USB.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMUSBDevice é definido como 63C1258C-5721-4070-B86B-A6CE2AFEC0B3<br/>               |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMUSBDevice é definido como \_ 63C1258C-5721-4070-B86B-A6CE2AFEC0B3<br/>               |
 
 
 

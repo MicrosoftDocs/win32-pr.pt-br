@@ -11,12 +11,12 @@ api_name: ''
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 0e2441b9f9a41d533c31c35729cf0a33c583f85f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2667bd939f5ea659921fbcb946cfce18d3fb913d4b1faab9e4b466e23504aba5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118278383"
 ---
 # <a name="boundingorientedboxintersects-methods"></a>Métodos de interseção BoundingOrientedBox.
 

@@ -4,12 +4,12 @@ description: Esses dois exemplos de C++ mostram como enumerar tarefas. Um exempl
 ms.assetid: 32037133-d3f3-4186-b035-ab01d37ed58d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6189960ef5b6e4ad78e75f156a482481f347b4b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b80ec17b71ae45c951a27ca582855936d73457401d878b0f21f69bcbaa71ca23
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117760181"
 ---
 # <a name="displaying-task-names-and-states-c"></a>Exibindo nomes e Estados de tarefas (C++)
 
@@ -364,9 +364,9 @@ int __cdecl wmain()
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

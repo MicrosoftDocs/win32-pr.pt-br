@@ -11,27 +11,27 @@ keywords:
 - relações de miniatura
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e3e0f1e6875e447a18ff5e63d703460ff909b25
-ms.sourcegitcommit: 37f276b5d887a3aad04b1ba86e390dea9d87e591
+ms.openlocfilehash: b333d84496828c451ff6e0eb7dbf3a86f91d629623d9939f66e874cfa82ee47d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "104566630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118279758"
 ---
 # <a name="dwm-thumbnail-overview"></a>Visão geral da miniatura do DWM
 
 Gerenciador de Janelas da Área de Trabalho (DWM) permite a exibição de representações em miniatura de janelas de aplicativos. Esses não são instantâneos estáticos de uma janela, mas são dinâmicos, em vez de conexões constantes entre uma janela de origem em miniatura e um local em uma janela de destino que recebe a renderização de miniaturas ao vivo. Isso permite uma exibição rápida da execução de aplicativos passando o mouse sobre o aplicativo na barra de tarefas ou usando o gesto de tecla ALT-TAB para ver e alternar rapidamente para um aplicativo.
 
-A imagem a seguir ilustra a miniatura do Windows Vista ao vivo vista quando você passa o mouse sobre o aplicativo na barra de tarefas.
+a imagem a seguir ilustra a miniatura em tempo real do Windows Vista visto quando você passa o mouse sobre o aplicativo na barra de tarefas.
 
 ![Captura de tela que mostra a miniatura D W M vista ao passar o mouse sobre um aplicativo na barra de tarefas.](images/dwm-livethumbnail.png)
 
-A imagem a seguir ilustra o Windows Vista Flip (ALT-TAB) habilitado pelo DWM.
+a imagem a seguir ilustra o Windows Vista Flip (ALT-TAB) habilitado pelo DWM.
 
 ![captura de tela da guia Alt habilitada para DWM](images/dwm-flip.png)
 
 > [!Note]  
-> As miniaturas do DWM não permitem que os desenvolvedores criem aplicativos como o recurso Windows Vista Flip3D (WINKEY-TAB). As miniaturas são renderizadas diretamente para a janela de destino em 2-D.
+> as miniaturas do DWM não permitem que os desenvolvedores criem aplicativos como o recurso Windows Flip3D Vista (com a guia WINKEY). As miniaturas são renderizadas diretamente para a janela de destino em 2-D.
 
  
 
@@ -43,7 +43,7 @@ Para exibir miniaturas em seu aplicativo, primeiro você deve estabelecer uma re
 
 Para encerrar uma relação de miniatura, chame a função [**DwmUnregisterThumbnail**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmunregisterthumbnail) .
 
-O exemplo a seguir demonstra como criar um releationship com a área de trabalho do Windows e exibi-lo em um aplicativo.
+o exemplo a seguir demonstra como criar um releationship com a área de trabalho Windows e exibi-lo em um aplicativo.
 
 
 ```

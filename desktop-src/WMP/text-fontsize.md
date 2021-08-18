@@ -3,7 +3,7 @@ title: TEXT. fontSize
 description: O atributo fontSize especifica ou recupera o tamanho da fonte para o controle de texto.
 ms.assetid: 066b7c8c-d029-464b-b2f3-7eb070046d99
 keywords:
-- TEXT. fontSize Windows Media Player
+- Windows Media Player TEXT. fontSize
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47abd2b14b43c77d160faab20608c524c3c257c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c717ea717daedce069e84d82f76edabc285b7f43fbf0a3b8759ef129fbbfdc47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118310"
 ---
 # <a name="textfontsize"></a>TEXT. fontSize
 

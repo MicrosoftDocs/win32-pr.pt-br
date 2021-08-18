@@ -9,12 +9,12 @@ keywords:
 - pontos de conexão de serviço AD, publicando com
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a458822f6c5e4d764b2e330c7ba084021b586548
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 058c0a0e1f488ecdb50c14eb04788470b6bc25a0a3442457f1c57ced4b13efd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118184940"
 ---
 # <a name="publishing-with-service-connection-points"></a>Publicando com pontos de conexão de serviço
 
@@ -56,9 +56,9 @@ Para obter mais informações sobre o tipo de dados a ser armazenado em um SCP, 
 
 Para obter mais informações sobre como um instalador de serviço e o serviço funcionam em conjunto para manter os dados atuais em um SCP, consulte [criando e mantendo um ponto de conexão de serviço](creating-and-maintaining-a-service-connection-point.md).
 
- 
+ 
 
- 
+ 
 
 
 

@@ -12,16 +12,16 @@ api_name:
 api_type:
 - UserDefined
 api_location: ''
-ms.openlocfilehash: b96832fa647fde920a70ac3d6608c8ebb0048892
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e8fd0afbd901d48386859e9b5d3557a173cfe6a23d749dc776992a4aedebed1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750194"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783740"
 ---
 # <a name="authzgetcentralaccesspolicycallback-callback-function"></a>Função de retorno de chamada AuthzGetCentralAccessPolicyCallback
 
-A função *AuthzGetCentralAccessPolicyCallback* é uma função definida pelo aplicativo que recupera a política de acesso central. *AuthzGetCentralAccessPolicyCallback* é um espaço reservado para o nome da função definida pelo aplicativo.
+A *função AuthzGetCentralAccessPolicyCallback* é uma função definida pelo aplicativo que recupera a política de acesso central. *AuthzGetCentralAccessPolicyCallback* é um espaço reservado para o nome da função definida pelo aplicativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,46 +42,46 @@ BOOL CALLBACK AuthzGetCentralAccessPolicyCallback (
 
 <dl> <dt>
 
-*hAuthzClientContext* \[ no\]
+*hAuthzClientContext* \[ Em\]
 </dt> <dd>
 
-Identificador para o contexto do cliente.
+Lidar com o contexto do cliente.
 
 </dd> <dt>
 
-*capid* \[ no\]
+*capid* \[ Em\]
 </dt> <dd>
 
 ID da política de acesso central a ser recuperada.
 
 </dd> <dt>
 
-*pArgs* \[ em, opcional\]
+*pArgs* \[ in, opcional\]
 </dt> <dd>
 
-Argumentos opcionais que foram passados para a função [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) por meio do membro **OptionalArguments** da estrutura de [**solicitação de \_ acesso \_ do AUTHZ**](/windows/desktop/api/Authz/ns-authz-authz_access_request) .
+Argumentos opcionais que foram passados para a função [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck) por meio do membro **OptionalArguments** da estrutura [**AUTHZ \_ ACCESS \_ REQUEST.**](/windows/desktop/api/Authz/ns-authz-authz_access_request)
 
 </dd> <dt>
 
-*pCentralAccessPolicyApplicable* \[ fora\]
+*pCentralAccessPolicyApplicable* \[ out\]
 </dt> <dd>
 
-Ponteiro para um valor booliano que o Gerenciador de recursos usa para indicar se uma política de acesso central deve ser usada durante a avaliação do acesso.
+Ponteiro para um valor booliana que o gerenciador de recursos usa para indicar se uma política de acesso central deve ser usada durante a avaliação de acesso.
 
 </dd> <dt>
 
-*ppCentralAccessPolicy* \[ fora\]
+*ppCentralAccessPolicy* \[ out\]
 </dt> <dd>
 
-Ponteiro para a política de acesso central (CAP) a ser usado para avaliar o acesso. Se esse valor for **NULL**, a extremidade padrão será aplicada.
+Ponteiro para a CAP (política de acesso central) a ser usada para avaliar o acesso. Se esse valor for **NULL,** o CAP padrão será aplicado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for realizada com sucesso, a função retornará **true**.
+Se a função for bem-sucedida, a função **retornará TRUE.**
 
-Se a função não puder executar a avaliação, ela retornará **false**. Use [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para retornar um erro para a função de verificação de acesso.
+Se a função não puder executar a avaliação, ela retornará **FALSE.** Use [**SetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-setlasterror) para retornar um erro para a função de verificação de acesso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,9 +89,9 @@ Se a função não puder executar a avaliação, ela retornará **false**. Use [
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                   |
-| Redistribuível<br/>          | Pacote de ferramentas de administração do Windows Server 2003 no Windows XP<br/> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                             |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                   |
+| Redistribuível<br/>          | Windows Pacote de Ferramentas de Administração do Server 2003 no Windows XP<br/> |
 
 
 
@@ -99,10 +99,10 @@ Se a função não puder executar a avaliação, ela retornará **false**. Use [
 
 <dl> <dt>
 
-[**\_solicitação de acesso de AUTHZ \_**](/windows/desktop/api/Authz/ns-authz-authz_access_request)
+[**SOLICITAÇÃO DE \_ ACESSO \_ AUTHZ**](/windows/desktop/api/Authz/ns-authz-authz_access_request)
 </dt> <dt>
 
-[**informações de todas as AUTHZ \_ \_**](/windows/desktop/api/Authz/ns-authz-authz_init_info)
+[**INFORMAÇÕES DE \_ INIT DO AUTHZ \_**](/windows/desktop/api/Authz/ns-authz-authz_init_info)
 </dt> <dt>
 
 [**AuthzAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzaccesscheck)

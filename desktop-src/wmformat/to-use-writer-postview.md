@@ -1,14 +1,14 @@
 ---
-title: Para usar a exibição do gravador
-description: Para usar a exibição do gravador
+title: Para usar o Postview do Writer
+description: Para usar o Postview do Writer
 ms.assetid: 9da3c749-f6bd-43b5-9eff-3a637ddef048
 keywords:
-- Formato de sistema avançado (ASF), modo de exibição de gravador
-- ASF (formato de sistemas avançados), modo de exibição de gravador
-- Formato de sistema avançado (ASF), visualização
-- ASF (formato de sistemas avançados), visualização
-- visualização do gravador
-- visualização
+- ASF (Advanced Systems Format), postview de writer
+- ASF (Formato de Sistemas Avançados), postview do autor
+- ASF (Advanced Systems Format), postviewing
+- ASF (Formato de Sistemas Avançados), postviewing
+- postview do writer
+- postviewing
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 7800f3ba50f9f1d61793a0d2ada2db0c03d6b88551ac1147e17872aa8e428c39
@@ -18,30 +18,30 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118196400"
 ---
-# <a name="to-use-writer-postview"></a>Para usar a exibição do gravador
+# <a name="to-use-writer-postview"></a>Para usar o Postview do Writer
 
-O objeto Writer fornece recursos de visualização para que você possa verificar o conteúdo escrito sem precisar configurar o objeto leitor. O objeto gravador não oferece suporte à visualização de conteúdo de áudio.
+O objeto writer fornece recursos de pós-visualização para que você possa verificar o conteúdo gravado sem precisar configurar o objeto de leitor. O objeto writer não dá suporte à postviewing para conteúdo de áudio.
 
-O gravador de gravação funciona praticamente da mesma forma que o objeto leitor assíncrono, apenas com menos recursos. Para obter informações detalhadas sobre como ler mídia digital, consulte [lendo arquivos ASF](reading-asf-files.md).
+O postviewer do autor funciona da mesma maneira que o objeto de leitor assíncrono, apenas com menos recursos. Para obter informações detalhadas sobre como ler mídia digital, consulte [Lendo arquivos ASF](reading-asf-files.md).
 
-Para implementar o revisor, execute as etapas a seguir.
+Para implementar o postviewer, execute as etapas a seguir.
 
-1.  Implemente o retorno de chamada [**IWMWriterPostViewCallback:: OnPostViewSample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterpostviewcallback-onpostviewsample) . Esse método é essencialmente o mesmo que [**IWMReaderCallback:: onsample**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadercallback-onsample) , exceto que ele especifica números de fluxo em vez de saídas.
-2.  Configure para escrever como de costume.
-3.  Obtenha um ponteiro para a interface [**IWMWriterPostView**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpostview) do objeto gravador chamando **IWMWriter:: QueryInterface**.
-4.  Defina o retorno de chamada para o revisor a ser usado chamando [**IWMWriterPostView:: SetPostViewCallback**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterpostview-setpostviewcallback).
-5.  Para cada fluxo para o qual você deseja receber exemplos de exibição prévia, chame [**IWMWriterPostView:: SetReceivePostViewSamples**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterpostview-setreceivepostviewsamples). Você pode verificar se um fluxo está definido para receber exemplos de exibição prévia chamando [**IWMWriterPostView:: GetReceivePostViewSamples**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterpostview-getreceivepostviewsamples).
-6.  Você pode manipular os formatos de exemplo, assim como faria com os formatos de saída no objeto leitor ou no objeto leitor síncrono.
-7.  Ao começar a gravar o arquivo, você começará a receber exemplos em sua implementação do método de retorno de chamada **OnPostViewSample** .
+1.  Implemente [**o retorno de chamada IWMWriterPostViewCallback::OnPostViewSample.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterpostviewcallback-onpostviewsample) Esse método é essencialmente o mesmo que [**IWMReaderCallback::OnSample,**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmreadercallback-onsample) exceto que especifica números de fluxo em vez de saídas.
+2.  Configurar para escrever como de costume.
+3.  Obtenha um ponteiro para a interface [**IWMWriterPostView**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpostview) do objeto de autor chamando **IWMWriter::QueryInterface**.
+4.  De definir o retorno de chamada para o postviewer a ser usado chamando [**IWMWriterPostView::SetPostViewCallback**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterpostview-setpostviewcallback).
+5.  Para cada fluxo para o qual você deseja receber exemplos de postview, chame [**IWMWriterPostView::SetReceivePostViewSamples**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterpostview-setreceivepostviewsamples). Você pode verificar se um fluxo está definido para receber exemplos de postview chamando [**IWMWriterPostView::GetReceivePostViewSamples.**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmwriterpostview-getreceivepostviewsamples)
+6.  Você pode manipular os formatos de exemplo, assim como faria com os formatos de saída no objeto de leitor ou objeto de leitor síncrono.
+7.  Ao começar a escrever o arquivo, você começará a receber exemplos em sua implementação do método de retorno de chamada **OnPostViewSample.**
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Interface IWMWriterPostViewCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpostviewcallback)
+[**IWMWriterPostViewCallback Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpostviewcallback)
 </dt> <dt>
 
-[**Gravando arquivos ASF**](writing-asf-files.md)
+[**Escrevendo arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
  

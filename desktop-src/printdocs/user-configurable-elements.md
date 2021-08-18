@@ -4,12 +4,12 @@ ms.assetid: 1aa38771-65c1-4441-8ea3-9bda4071879f
 title: Elementos configuráveis pelo usuário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a67b67c3d8da3dbdb3094692e754220953c8421
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: a8c97e84081ba2e5c228fc0f31bfa5b3ef176db60a43ee44abab8d3a7cc2e386
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117685965"
 ---
 # <a name="user-configurable-elements"></a>Elementos configuráveis pelo usuário
 

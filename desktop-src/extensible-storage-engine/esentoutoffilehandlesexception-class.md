@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentOutOfFileHandlesException'
+description: 'Saiba mais sobre: Classe EsentOutOfFileHandlesException'
 title: Classe EsentOutOfFileHandlesException
 TOCTitle: EsentOutOfFileHandlesException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentOutOfFileHandlesException
@@ -33,21 +33,21 @@ ms.locfileid: "118492623"
 ---
 # <a name="esentoutoffilehandlesexception-class"></a>Classe EsentOutOfFileHandlesException
 
-Classe base para JET_err. OutOfFileHandles exceções.
+Classe base para JET_err. Exceções OutOfFileHandles.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentResourceException](./esentresourceexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentMemoryException](./esentmemoryexception-class.md)  
-              Microsoft. ISAM. ESENT. Interop. EsentOutOfFileHandlesException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentResourceException](./esentresourceexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentMemoryException](./esentmemoryexception-class.md)  
+              Microsoft.Isam.Esent.Interop.EsentOutOfFileHandlesException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -73,6 +73,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentOutOfFileHandlesException](./esentoutoffilehandlesexception-members.md)
+[Membros EsentOutOfFileHandlesException](./esentoutoffilehandlesexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

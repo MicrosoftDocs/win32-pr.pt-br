@@ -3,7 +3,7 @@ title: ForegroundColor de edição
 description: O atributo foregroundColor especifica ou recupera a cor do texto no controle da caixa de edição.
 ms.assetid: 22de7e70-0ea8-45bb-abf1-21b6ab6a61fa
 keywords:
-- Admy. foregroundColor Windows Media Player
+- ForegroundColor Windows Media Player de edição
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0ea1535a2a107814b817399c5d4a166ce54f9de
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 220a8540999d786c7305c224553f9c79153988a700d9697626242faef33d73ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749329"
 ---
 # <a name="editboxforegroundcolor"></a>ForegroundColor de edição
 
@@ -29,7 +29,7 @@ O atributo **foregroundColor** especifica ou recupera a cor do texto no controle
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém qualquer valor de cor do Microsoft Internet Explorer. Ele tem um valor padrão igual à cor de texto do Windows.
+Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém qualquer valor de cor do Microsoft Internet Explorer. ele tem um valor padrão igual ao Windows cor do texto.
 
 ## <a name="requirements"></a>Requisitos
 

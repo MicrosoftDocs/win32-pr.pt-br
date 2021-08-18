@@ -1,9 +1,9 @@
 ---
-title: DownloadItem. Size
-description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. A propriedade Size recupera o tamanho do download.
+title: DownloadItem.size
+description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. A propriedade size recupera o tamanho do download.
 ms.assetid: e0fd9cb5-155a-4159-94b8-1bf05b4d1062
 keywords:
-- DownloadItem. dimensionar o Windows Media Player
+- DownloadItem.size Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0ebb1ce15d34ad04095f1ef1ed84ad2df008c7e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 046c48cc324b8d388d9f730dc3ed4d6739632d169d02d11c77201fe1da3e98c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749717"
 ---
-# <a name="downloaditemsize"></a>DownloadItem. Size
+# <a name="downloaditemsize"></a>DownloadItem.size
 
 > [!Note]  
 > Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
  
 
-A propriedade **size** recupera o tamanho do download.
+A **propriedade** size recupera o tamanho do download.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,7 +43,7 @@ DownloadManager.getDownloadCollection(
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um **número** somente leitura (**Long**).
+Essa propriedade é um Número somente **leitura** (**long**).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,7 +51,7 @@ Essa propriedade é um **número** somente leitura (**Long**).
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/>                                  |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/>                                  |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -63,7 +63,7 @@ Essa propriedade é um **número** somente leitura (**Long**).
 [**Objeto DownloadItem**](downloaditem-object.md)
 </dt> <dt>
 
-[**DownloadItem. Progress**](downloaditem-progress.md)
+[**DownloadItem.progress**](downloaditem-progress.md)
 </dt> </dl>
 
  

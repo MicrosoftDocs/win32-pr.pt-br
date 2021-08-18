@@ -1,11 +1,11 @@
 ---
-title: Método Controls. Previous
-description: O método anterior define o item atual para o item anterior na lista de reprodução.
+title: Método Controls.previous
+description: O método anterior define o item atual para o item anterior na playlist.
 ms.assetid: 09f83306-5e82-4384-ad28-38e406a401d8
 keywords:
 - método anterior Windows Media Player
-- método anterior Windows Media Player, classe Controls
-- Classe Controls do Windows Media Player, método anterior
+- método anterior Windows Media Player classe , Controls
+- Classe Controls Windows Media Player , método anterior
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b8fcfacd93412f467e6ef1def5afa6305a6bc0c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f67dbc80fb731f32eefb36f2a0f66c852da3da69dbc6b7ae56c03ebafb06e07e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760270"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119325"
 ---
-# <a name="controlsprevious-method"></a>Método Controls. Previous
+# <a name="controlsprevious-method"></a>Método Controls.previous
 
-O método **anterior** define o item atual para o item anterior na lista de reprodução.
+O **método** anterior define o item atual para o item anterior na playlist.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,17 +40,17 @@ Controls.previous()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Se a lista de reprodução estiver na primeira entrada quando a **anterior** for invocada, a última entrada na lista de reprodução se tornará a atual.
+Se a playlist estiver na primeira entrada quando **anterior** for invocada, a última entrada na playlist se tornará a atual.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir cria um elemento de botão HTML que usa **Previous** para mover para o item anterior na playlist atual. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo a seguir cria um elemento HTML BUTTON que usa **anterior** para mover para o item anterior na playlist atual. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -74,7 +74,7 @@ O exemplo a seguir cria um elemento de botão HTML que usa **Previous** para mov
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -86,10 +86,10 @@ O exemplo a seguir cria um elemento de botão HTML que usa **Previous** para mov
 [**Objeto Controls**](controls-object.md)
 </dt> <dt>
 
-[**Controles. Next**](controls-next.md)
+[**Controls.next**](controls-next.md)
 </dt> <dt>
 
-[**Controls. Stop**](controls-stop.md)
+[**Controls.stop**](controls-stop.md)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Duração da mídia
 description: A Propriedade Duration recupera a duração do item de mídia atual em segundos.
 ms.assetid: d7d36858-812d-471b-84ce-fe2ab96b86b3
 keywords:
-- Media. Duration Windows Media Player
+- Windows Media Player de mídia. duração
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 71586f6aa37401d56a9e9537bfbea6c5af23f318
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e89eab1ffbb8c9f3d48c3f61eb6d831af66b4931ed1d858658eed3fc21d08183
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761281"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118796"
 ---
 # <a name="mediaduration"></a>Duração da mídia
 
@@ -37,15 +37,15 @@ Essa propriedade é um **número** somente leitura ( **duplo**).
 
 Se essa propriedade for usada com um item de mídia diferente daquele especificado no *Player*. **currentMedia**, ele não pode conter um valor válido.
 
-Para recuperar a duração de arquivos que não estão na biblioteca do usuário, você deve aguardar que o Windows Media Player Abra o arquivo; ou seja, o OpenState atual deve ser igual a MediaOpen. Você pode verificar isso manipulando o *Player*. Evento **OpenStateChange** ou verificando periodicamente o valor do *Player*. **OpenState**.
+para recuperar a duração de arquivos que não estão na biblioteca do usuário, você deve aguardar a Windows Media Player abrir o arquivo; ou seja, o OpenState atual deve ser igual a MediaOpen. Você pode verificar isso manipulando o *Player*. Evento **OpenStateChange** ou verificando periodicamente o valor do *Player*. **OpenState**.
 
 Para listas de reprodução, a duração de cada item de mídia pode ser recuperada quando o item de mídia individual é aberto, em vez de quando a playlist é aberta.
 
 Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
 
-O exemplo de JScript a seguir usa *mídia*. **duração** para exibir o tempo restante no item de mídia atual. Um elemento HTML DIV chamado RemTime exibe as informações. Um temporizador HTML atualiza o texto no elemento DIV a cada segundo.
+o exemplo a seguir JScript usa *mídia*. **duração** para exibir o tempo restante no item de mídia atual. Um elemento HTML DIV chamado RemTime exibe as informações. Um temporizador HTML atualiza o texto no elemento DIV a cada segundo.
 
-O código JScript a seguir inicia o temporizador:
+o código de JScript a seguir inicia o temporizador:
 
 
 ```JScript
@@ -55,7 +55,7 @@ idTmr = window.setInterval("update()",1000);
 
 
 
-O seguinte código JScript interrompe o temporizador:
+o código de JScript a seguir interrompe o temporizador:
 
 
 ```JScript
@@ -66,7 +66,7 @@ window.clearInterval(idTmr);
 
 Use o *Player*. Evento **PlayStateChange** com uma instrução **switch** para determinar quando iniciar e parar o temporizador.
 
-O seguinte código JScript é executado cada vez que o temporizador chama a função Update:
+o código de JScript a seguir é executado cada vez que o temporizador chama a função update:
 
 
 ```JScript
@@ -107,10 +107,10 @@ RemTime.innerHTML += Math.floor(Player.currentMedia.duration - TimeNow);
 [**Evento Player. PlayStateChange**](player-player-playstatechange.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

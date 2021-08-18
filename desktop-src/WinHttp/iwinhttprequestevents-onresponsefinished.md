@@ -4,12 +4,12 @@ ms.assetid: 0df2031e-826f-436e-a689-201fa8b5c38f
 title: 'Evento IWinHttpRequestEvents:: OnResponseFinished'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 19d3a596e23028cec0401a21a1ee866ef6e51d9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2114135c17f3e2eb2f9d60a7044f7441271f257fe099de31ea70c6030de769df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105791472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117744246"
 ---
 # <a name="iwinhttprequesteventsonresponsefinished-event"></a>Evento IWinHttpRequestEvents:: OnResponseFinished
 
@@ -28,7 +28,7 @@ void OnResponseFinished();
 
 Este evento não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
@@ -37,7 +37,7 @@ Esse evento não retorna um valor.
 Esse evento sinaliza que todos os dados de resposta que pertencem à solicitação mais recente foram recebidos. [**OnResponseDataAvailable**](iwinhttprequestevents-onresponsedataavailable.md) não ocorre novamente até a próxima solicitação.
 
 > [!Note]  
-> Para o Windows XP e o Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHTTP.
+> para Windows XP e Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHTTP.
 
  
 
@@ -47,9 +47,9 @@ Esse evento sinaliza que todos os dados de resposta que pertencem à solicitaç�
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>            |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>         |
-| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior no Windows XP e no Windows 2000.<br/> |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com \[ aplicativos da área de trabalho do SP3\]<br/>            |
+| Servidor mínimo com suporte<br/> | Windows servidor 2003, Windows 2000 servidor somente com \[ aplicativos de área de trabalho do SP3\]<br/>         |
+| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior em Windows XP e Windows 2000.<br/> |
 | INSERI<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
-description: A função DbgTerminate limpa a biblioteca de depuração. Ignorado em compilações de varejo.
+description: A função DbgTerminate limpa a biblioteca de depuração. Ignorado em builds de varejo.
 ms.assetid: a0e23c57-b4b5-4bcf-8c63-0dee40cc71a7
-title: Função DbgTerminate (Wxdebug. h)
+title: Função DbgTerminate (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d29e5fde86b9573261e39a0dbe2e9d87018ff23c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6846f6899730a8b9d128d1bc0a6069fd8a67a5f4f9d8a5a3d618bebad67b0468
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117821555"
 ---
 # <a name="dbgterminate-function"></a>Função DbgTerminate
 
-A função **DbgTerminate** limpa a biblioteca de depuração. Ignorado em compilações de varejo.
+A **função DbgTerminate** limpa a biblioteca de depuração. Ignorado em builds de varejo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ void DbgTerminate(void);
 
 Essa função não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Chame essa função se você chamar a função [**DbgInitialise**](dbginitialise.md) .
+Chame essa função se você chamar a [**função DbgInitialise.**](dbginitialise.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Chame essa função se você chamar a função [**DbgInitialise**](dbginitialise
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxdebug. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxdebug.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

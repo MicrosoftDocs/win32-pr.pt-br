@@ -1,23 +1,23 @@
 ---
-description: A estrutura a seguir é usada com o registro.
+description: A estrutura a seguir é usada com o Registro.
 ms.assetid: 3fe81263-4d26-472d-9479-c0fa1ea0ffed
-title: Estruturas do registro
+title: Estruturas do Registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0a7f29e096472c9847a35638579e7c77982b847
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 23e8dd673d7ccef4052841018f2991e351382ebeee9e531b3af55ab5b7551549
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105750416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117763603"
 ---
-# <a name="registry-structures"></a>Estruturas do registro
+# <a name="registry-structures"></a>Estruturas do Registro
 
-A estrutura a seguir é usada com o registro.
+A estrutura a seguir é usada com o Registro.
 
 <dl>
 
-[**DISSEMINA**](/windows/win32/api/winreg/ns-winreg-valentw)  
+[**Valente**](/windows/win32/api/winreg/ns-winreg-valentw)  
 </dl>
 
  

@@ -3,9 +3,9 @@ title: Método Controls. getAudioLanguageID
 description: O método getAudioLanguageID recupera o LCID (identificador de localidade) para um índice de idioma de áudio especificado.
 ms.assetid: 8134a7ce-bdc7-46b2-b10e-2bf1215b0de1
 keywords:
-- método getAudioLanguageID Windows Media Player
+- Windows Media Player do método getAudioLanguageID
 - método getAudioLanguageID Windows Media Player, classe Controls
-- Classe Controls Windows Media Player, método getAudioLanguageID
+- classe Controls Windows Media Player, método getAudioLanguageID
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ab27e95edfc74fa7a9f57d2010bf86299c55dd4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2352162d810ca75aeeee6db1c3d59c297b85414be46a365909c4ed56af179f8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780019"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119334"
 ---
 # <a name="controlsgetaudiolanguageid-method"></a>Método Controls. getAudioLanguageID
 
@@ -49,7 +49,7 @@ retVal = Controls.getAudioLanguageID(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um **número** (**longo**).
 
@@ -57,7 +57,7 @@ Esse método retorna um **número** (**longo**).
 
 Um LCID identifica exclusivamente um dialeto de idioma específico, chamado de localidade.
 
-Para conteúdo baseado no Windows Media, as propriedades e os métodos relacionados à seleção de idioma dão suporte apenas a uma única saída.
+para Windows conteúdo baseado em mídia, as propriedades e os métodos relacionados à seleção de idioma dão suporte apenas a uma única saída.
 
 **Windows Media Player 10 Mobile:** Essa propriedade sempre retorna o LCID com neutralidade de idioma (0).
 

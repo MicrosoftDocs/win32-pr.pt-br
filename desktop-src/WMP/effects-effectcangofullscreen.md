@@ -1,9 +1,9 @@
 ---
-title: EFFECTs. effectCanGoFullScreen
+title: EFFECTS.effectCanGoFullScreen
 description: O atributo effectCanGoFullScreen recupera um valor que indica se a visualização atual pode ser exibida em tela inteira.
 ms.assetid: 48f042f4-f440-4ea1-8985-1d7dd52706ca
 keywords:
-- EFFECTs. effectCanGoFullScreen Windows Media Player
+- EFFECTS.effectCanGoFullScreen Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0792d4cce994f4698c71252fcaaba4ebab4a62ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ae561002c6be13d33805d5e459357e26e0f64721cb5cec2b32def4c143feaf46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117749258"
 ---
-# <a name="effectseffectcangofullscreen"></a>EFFECTs. effectCanGoFullScreen
+# <a name="effectseffectcangofullscreen"></a>EFFECTS.effectCanGoFullScreen
 
-O atributo **effectCanGoFullScreen** recupera um valor que indica se a visualização atual pode ser exibida em tela inteira.
+O **atributo effectCanGoFullScreen** recupera um valor que indica se a visualização atual pode ser exibida em tela inteira.
 
 ``` syntax
         elementID.effectCanGoFullScreen
@@ -29,7 +29,7 @@ O atributo **effectCanGoFullScreen** recupera um valor que indica se a visualiza
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** somente leitura.
+Esse atributo é um **booliana somente leitura.**
 
 
 
@@ -56,7 +56,7 @@ Esse atributo é um **booliano** somente leitura.
 
 <dl> <dt>
 
-[**Elemento EFFECTs**](effects-element.md)
+[**Elemento EFFECTS**](effects-element.md)
 </dt> </dl>
 
  

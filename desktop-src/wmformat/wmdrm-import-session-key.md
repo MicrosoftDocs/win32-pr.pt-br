@@ -1,10 +1,10 @@
 ---
-title: Estrutura de WMDRM_IMPORT_SESSION_KEY (Drmexternals. h)
-description: A estrutura de chave de sessão de importação do WMDRM \_ \_ \_ contém a chave de sessão para importar conteúdo protegido.
+title: WMDRM_IMPORT_SESSION_KEY estrutura (Drmexternals.h)
+description: A estrutura WMDRM \_ IMPORT SESSION KEY contém a chave de sessão para importar conteúdo \_ \_ protegido.
 ms.assetid: 2dd1e8ec-a25f-4ced-8f1b-286534c66ebf
 keywords:
-- Formato de mídia do Windows de estrutura de WMDRM_IMPORT_SESSION_KEY
-- estruturar formato de mídia do Windows
+- WMDRM_IMPORT_SESSION_KEY formato de mídia do Windows
+- formato de mídia de janelas de estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 93295e73e4e3e5e13b438f8b62e0ab6bfff43ee7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d34cdff6d17ad6ce60dd40478b56c9718be0863295422d2e5c60fee2c437dc6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117844055"
 ---
-# <a name="wmdrm_import_session_key-structure"></a>\_Estrutura de \_ chave de sessão de importação WMDRM \_
+# <a name="wmdrm_import_session_key-structure"></a>Estrutura DE CHAVE DE \_ \_ SESSÃO DE \_ IMPORTAÇÃO DO WMDRM
 
-A estrutura de chave de sessão de importação do WMDRM contém a chave de sessão para importar conteúdo protegido. **\_ \_ \_**
+A **estrutura WMDRM \_ IMPORT SESSION \_ \_ KEY** contém a chave de sessão para importar conteúdo protegido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,27 +46,27 @@ typedef struct WMDRM_IMPORT_SESSION_KEY {
 **dwKeyType**
 </dt> <dd>
 
-Tipo de chave de sessão. Defina como WMDRM \_ KeyType \_ RC4.
+Tipo de chave de sessão. Definido como WMDRM \_ KEYTYPE \_ RC4.
 
 </dd> <dt>
 
 **cbKey**
 </dt> <dd>
 
-Tamanho da chave de sessão, em bytes. Esse valor pode ser tão grande quanto necessário, considerando os limites de uma única operação RSA OAEP sobre toda a mensagem (essa estrutura e a chave de sessão).
+Tamanho da chave de sessão, em bytes. Esse valor pode ser tão grande quanto você precisar, considerando os limites de uma única operação RSA OAEP em toda a mensagem (essa estrutura mais a chave de sessão).
 
 </dd> <dt>
 
-**rgbKey**
+**Rgbkey**
 </dt> <dd>
 
-Endereço de um buffer que contém a chave de sessão. O tamanho do buffer deve corresponder ao valor de **cbKey**. Os dados no buffer são um valor de chave gerado aleatoriamente.
+Endereço de um buffer que contém a chave de sessão. O tamanho do buffer deve corresponder ao valor **de cbKey.** Os dados no buffer são um valor de chave gerado aleatoriamente.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura, incluindo o buffer que contém a chave de sessão, deve ser criptografada com a chave pública do computador DRM do Windows Media e incluída no membro **pbEncryptedSessionKeyMessage** da estrutura de [**\_ \_ \_ struct init Import do WMDRM**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmdrm_import_init_struct) .
+Essa estrutura, incluindo o buffer que contém a chave de sessão, deve ser criptografada com a chave pública do computador drm de mídia Windows e incluída no **membro pbEncryptedSessionKeyMessage** da estrutura [**\_ \_ \_ STRUCT WMDRM IMPORT INIT.**](/previous-versions/windows/desktop/api/wmsdkidl/ns-wmsdkidl-wmdrm_import_init_struct)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -74,10 +74,10 @@ Essa estrutura, incluindo o buffer que contém a chave de sessão, deve ser crip
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                      |
-| Versão<br/>                  | SDK do Windows Media Format 11<br/>                                                    |
-| parâmetro<br/>                   | <dl> <dt>Drmexternals. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                      |
+| Versão<br/>                  | Windows SDK do Formato de Mídia 11<br/>                                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Drmexternals.h</dt> </dl> |
 
 
 

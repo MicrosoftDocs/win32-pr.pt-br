@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: função JetGotoSecondaryIndexBookmark'
+description: 'Saiba mais sobre: Função JetGotoSecondaryIndexBookmark'
 title: Função JetGotoSecondaryIndexBookmark
 TOCTitle: JetGotoSecondaryIndexBookmark Function
 ms:assetid: 06983b1e-503a-469b-9be5-b37e7551de67
@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 893833fd1770fe3d972033a4d10f9047b0f61dfc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e720286c3e7308078d5d5ec91aa27edc95b725830824473e7b5858f2de5bc90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921880"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118072474"
 ---
 # <a name="jetgotosecondaryindexbookmark-function"></a>Função JetGotoSecondaryIndexBookmark
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetgotosecondaryindexbookmark-function"></a>Função JetGotoSecondaryIndexBookmark
 
-A função **JetGotoSecondaryIndexBookmark** posiciona um cursor para uma entrada de índice que está associada ao indicador de índice secundário especificado. O indicador de índice secundário deve ser usado com o mesmo índice na mesma tabela da qual ele foi recuperado originalmente. O indicador de índice secundário para uma entrada de índice pode ser recuperado usando **JetGotoSecondaryIndexBookmark**.
+A **função JetGotoSecondaryIndexBookmark** posiciona um cursor para uma entrada de índice associada ao indicador de índice secundário especificado. O indicador de índice secundário deve ser usado com o mesmo índice na mesma tabela da qual foi originalmente recuperado. O indicador de índice secundário para uma entrada de índice pode ser recuperado usando **JetGotoSecondaryIndexBookmark**.
 
-**Windows XP:** o **JetGotoSecondaryIndexBookmark** é introduzido no Windows XP.  
+**Windows XP:****JetGotoSecondaryIndexBookmark** é introduzido no Windows XP.  
 
 ```cpp
     JET_ERR JET_API JetGotoSecondaryIndexBookmark(
@@ -52,11 +52,11 @@ A função **JetGotoSecondaryIndexBookmark** posiciona um cursor para uma entrad
 
 *sesid*
 
-A sessão a ser usada para esta chamada.
+A sessão a ser usada para essa chamada.
 
-*TableID*
+*Tableid*
 
-O cursor a ser usado para esta chamada.
+O cursor a ser usado para essa chamada.
 
 *pvSecondaryKey*
 
@@ -92,7 +92,7 @@ Um grupo de bits que especifica zero ou mais das opções a seguir.
 <tbody>
 <tr class="odd">
 <td><p>JET_bitBookmarkPermitVirtualCurrency</p></td>
-<td><p>Caso a entrada de índice não possa mais ser encontrada, o cursor será deixado posicionado onde essa entrada de índice foi encontrada anteriormente. A operação ainda falhará com JET_errRecordDeleted; no entanto, será possível mover para a entrada de índice seguinte ou anterior em relação à entrada de índice que agora está ausente.</p></td>
+<td><p>Caso a entrada de índice não possa mais ser encontrada, o cursor será posicionado à esquerda onde essa entrada de índice foi encontrada anteriormente. A operação ainda falhará com JET_errRecordDeleted; no entanto, será possível mover para a entrada de índice seguinte ou anterior em relação à entrada de índice que agora está ausente.</p></td>
 </tr>
 </tbody>
 </table>
@@ -100,7 +100,7 @@ Um grupo de bits que especifica zero ou mais das opções a seguir.
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o [JET_ERR](./jet-err.md) tipo de dados com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros de ESE, consulte [Extensible Armazenamento Engine Errors](./extensible-storage-engine-errors.md) and [Error Handling Parameters](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -120,24 +120,24 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errClientRequestToStopJetService</p></td>
-<td><p>A operação não pode ser concluída porque toda a atividade da instância associada à sessão foi interrompida como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
+<td><p>A operação não pode ser concluída porque todas as atividades na instância associada à sessão foram encerradas como resultado de uma chamada para <a href="gg269240(v=exchg.10).md">JetStopService</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>A operação não pode ser concluída porque o é porque a instância associada à sessão encontrou um erro fatal que requer que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p>
+<td><p>A operação não pode ser concluída porque é porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p>
 <p><strong>Windows XP:</strong>  Esse valor de retorno é introduzido no Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidBookmark</p></td>
-<td><p>O indicador de índice secundário fornecido era inválido. Esse erro pode ter ocorrido porque a chave secundária é zero ou o ponteiro de buffer de chave secundária é <strong>nulo</strong>. Esse erro ocorre porque</p>
+<td><p>O indicador de índice secundário fornecido era inválido. Esse erro pode ter ocorrido porque a chave secundária é zero ou o ponteiro do buffer de chave secundária é <strong>NULL.</strong> Esse erro ocorre porque</p>
 <ul>
 <li><p>O índice secundário atual não tem uma restrição de exclusividade e o tamanho do indicador fornecido é zero.</p></li>
-<li><p>O ponteiro do buffer de indicadores é <strong>nulo</strong>.</p></li>
+<li><p>O ponteiro do buffer de indicador é <strong>NULL.</strong></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errNoCurrentIndex</p></td>
-<td><p>O cursor não está em um índice secundário no momento. Não é significativo ir para um indicador de índice secundário quando o cursor não está usando um índice secundário no momento. <a href="gg294053(v=exchg.10).md">JetGotoBookmark</a> deve ser usado quando o cursor não estiver em um índice secundário.</p></td>
+<td><p>O cursor não está atualmente em um índice secundário. Não é significativo ir para um indicador de índice secundário quando o cursor não está usando um índice secundário no momento. <a href="gg294053(v=exchg.10).md">JetGotoBookmark</a> deve ser usado quando o cursor não está em um índice secundário.</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errNotInitialized</p></td>
@@ -158,17 +158,17 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errTermInProgress</p></td>
-<td><p>A operação não pode ser concluída porque a instância associada à sessão está sendo desligada.</p></td>
+<td><p>A operação não pode ser concluída porque a instância associada à sessão está sendo fechada.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Se essa função for bem sucedido, o cursor será posicionado em uma entrada de índice que está associada ao indicador de índice secundário especificado. Se um registro tiver sido preparado para atualização, essa atualização será cancelada. Se um intervalo de índice estiver em vigor, esse intervalo de índice será cancelado. Se uma chave de pesquisa tiver sido construída para o cursor a ser usado, essa chave de pesquisa será excluída. Nenhuma alteração no estado do banco de dados ocorrerá.
+Se essa função for bem-sucedida, o cursor será posicionado em uma entrada de índice associada ao indicador de índice secundário especificado. Se um registro tiver sido preparado para atualização, essa atualização será cancelada. Se um intervalo de índice estiver em vigor, esse intervalo de índice será cancelado. Se uma chave de pesquisa tiver sido construída para o cursor usar, essa chave de pesquisa será excluída. Nenhuma alteração no estado do banco de dados ocorrerá.
 
-Se essa função falhar, a posição do cursor permanecerá inalterada, a menos que JET_errRecordDeleted seja retornado e JET_bitBookmarkPermitVirtualCurrency seja especificado. Nesse caso, o cursor será posicionado onde a entrada de índice associada ao indicador de índice secundário especificado teria sido. O cursor pode ser movido em relação a essa posição, mas ainda não está em uma entrada de índice válida.
+Se essa função falhar, a posição do cursor permanecerá inalterada, a menos que JET_errRecordDeleted seja retornado e JET_bitBookmarkPermitVirtualCurrency for especificado. Nesse caso, o cursor será posicionado onde a entrada de índice associada ao indicador de índice secundário especificado teria sido. O cursor pode ser movido em relação a essa posição, mas ainda não está em uma entrada de índice válida.
 
-Se um registro tiver sido preparado para atualização, essa atualização será cancelada. Se um intervalo de índice estiver em vigor, esse intervalo de índice será cancelado. Se uma chave de pesquisa tiver sido construída para o cursor a ser usado, essa chave de pesquisa será excluída. De qualquer forma, nenhuma alteração no estado do banco de dados ocorrerá.
+Se um registro tiver sido preparado para atualização, essa atualização será cancelada. Se um intervalo de índice estiver em vigor, esse intervalo de índice será cancelado. Se uma chave de pesquisa tiver sido construída para o cursor usar, essa chave de pesquisa será excluída. Em qualquer caso, nenhuma alteração no estado do banco de dados ocorrerá.
 
 #### <a name="requirements"></a>Requisitos
 
@@ -180,19 +180,19 @@ Se um registro tiver sido preparado para atualização, essa atualização será
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista ou o Windows XP.</p></td>
+<td><p>Requer Windows Vista ou Windows XP.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008 ou o Windows Server 2003.</p></td>
+<td><p>Requer Windows Server 2008 ou Windows Server 2003.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

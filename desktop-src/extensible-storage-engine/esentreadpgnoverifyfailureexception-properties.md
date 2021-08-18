@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102502
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3908ee83510b75d3487d1065f34ec43c85bd781a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a984b5dcf93ba1d55b98cb19fb0dace6a6bf68ee6c3c4d6face1bb8007f1a37b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118491560"
 ---
 # <a name="esentreadpgnoverifyfailureexception-properties"></a>Propriedades de EsentReadPgnoVerifyFailureException
 
@@ -49,7 +49,7 @@ O tipo [EsentReadPgnoVerifyFailureException](./esentreadpgnoverifyfailureexcepti
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentReadPgnoVerifyFailureException](./esentreadpgnoverifyfailureexcepti
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">

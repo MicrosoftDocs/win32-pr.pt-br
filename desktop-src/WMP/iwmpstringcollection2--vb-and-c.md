@@ -3,8 +3,8 @@ title: Interface IWMPStringCollection2 (VB e C) (WMP. h)
 description: Fornece métodos que complementam a interface IWMPStringCollection.
 ms.assetid: be93ff47-7f76-4b5e-ad30-3094a75147c8
 keywords:
-- IWMPStringCollection2 (VB e C) interface do Windows Media Player
-- IWMPStringCollection2 (VB e C) interface do Windows Media Player, descrito
+- Windows Media Player de interface IWMPStringCollection2 (VB e C)
+- Windows Media Player de interface IWMPStringCollection2 (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 184e1a16ea0e6b33cc5b67eaeac6b050e5cda97a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 93695fa0f14cfd4ab01f80206b223cfe6d387b1afb59ce1521b14eb1b7c9f996
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810713"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118985"
 ---
 # <a name="iwmpstringcollection2-vb-and-c-interface"></a>Interface IWMPStringCollection2 (VB e C#)
 
@@ -65,7 +65,7 @@ Obtenha uma interface **IWMPStringCollection2** convertendo o valor retornado pe
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPStringCollection (VB e C#)**](iwmpstringcollection--vb-and-c.md)

@@ -1,22 +1,22 @@
 ---
-title: Texto (SDK do Windows Media Player)
+title: texto (SDK do Windows Media Player)
 description: Texto
 ms.assetid: 8c10cefb-d0d0-4214-8712-d171a76de95d
 keywords:
-- Aparências móveis do Windows Media Player, texto
+- Windows Media Player Aparências móveis, texto
 - capas, texto
 - referência de capas, texto
 - texto em capas, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c801d93698bc7a17eea34df71514dd88b485f0d9
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 55027415222516e72df61afab01a14cceb503528467bf329264014c94bf31ed7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "103824128"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118094"
 ---
-# <a name="text-windows-media-player-sdk"></a>Texto (SDK do Windows Media Player)
+# <a name="text-windows-media-player-sdk"></a>texto (SDK do Windows Media Player)
 
 Talvez você queira usar uma ou mais caixas de exibição de texto em sua capa. Cada caixa de exibição de texto que você usa deve ser definida no arquivo de definição de capa. Se você não definir uma caixa de exibição de texto nesta seção, sua capa não será capaz de usá-la.
 

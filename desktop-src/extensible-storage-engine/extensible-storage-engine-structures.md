@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estruturas do mecanismo de armazenamento extensível'
-title: Estruturas do mecanismo de armazenamento extensível
+description: 'saiba mais sobre: estruturas do mecanismo de Armazenamento extensível'
+title: estruturas do mecanismo de Armazenamento extensível
 TOCTitle: Extensible Storage Engine Structures
 ms:assetid: 0fe8a183-0f4b-4840-a53f-2d6494c43f22
 ms:mtpsurl: https://msdn.microsoft.com/library/Gg269187(v=EXCHG.10)
@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d1ca5bf214b4aad7d39000f1fe3e58c540cfe8dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e67f30c4fa2f142e616074bb50994da31b5e992e16123e195c6124741182e38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117706228"
 ---
-# <a name="extensible-storage-engine-structures"></a>Estruturas do mecanismo de armazenamento extensível
+# <a name="extensible-storage-engine-structures"></a>estruturas do mecanismo de Armazenamento extensível
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
-## <a name="extensible-storage-engine-structures"></a>Estruturas do mecanismo de armazenamento extensível
+## <a name="extensible-storage-engine-structures"></a>estruturas do mecanismo de Armazenamento extensível
 
-A API do mecanismo de armazenamento extensível tem as seguintes estruturas:
+a API do mecanismo de Armazenamento extensível tem as seguintes estruturas:
 
   - [JET_BKINFO](./jet-bkinfo-structure.md)
 

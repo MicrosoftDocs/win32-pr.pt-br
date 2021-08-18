@@ -7,32 +7,32 @@ keywords:
 - Nomeando atributos e classes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 80bfd2614033e12f68ba2727cc7aec689c16071e
-ms.sourcegitcommit: 02e6e0b58720bf6b77797dd7a9ddc11c95f42b33
+ms.openlocfilehash: e042decaf7d3dd15606ea7e138d9e6315d4200f2a641c10381951f2657a5aafe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "105752988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118185991"
 ---
 # <a name="naming-attributes-and-classes"></a>Nomeando atributos e classes
 
 Este tópico inclui diretrizes para nomear atributos e classes.
 
-Para criar uma nova classe ou atributo, siga as seguintes regras de nomenclatura:
+Para criar uma nova classe ou atributo, adera às seguintes regras de nomen entre:
 
--   Use o mesmo nome para as propriedades **CN** e **lDAPDisplayName** de um novo objeto **attributeSchema** ou **classSchema** .
--   Identifique a empresa com um prefixo em minúsculas na primeira seção do nome. Esse prefixo pode ser um nome DNS, acrônimo ou outra cadeia de caracteres que identifica exclusivamente a empresa. O prefixo garante que todos os atributos e classes de uma empresa específica sejam exibidos consecutivamente ao navegar no esquema.
+-   Use o mesmo nome para as propriedades **cn** e **lDAPDisplayName** de um novo **objeto attributeSchema** **ou classSchema.**
+-   Identifique a empresa com um prefixo de caso inferior na primeira seção do nome. Esse prefixo pode ser um nome DNS, acrônimo ou outra cadeia de caracteres que identifica exclusivamente a empresa. O prefixo garante que todos os atributos e classes de uma empresa específica sejam exibidos consecutivamente ao navegar pelo esquema.
 -   Se você estiver desenvolvendo uma extensão de esquema como um fornecedor de software independente, adicione uma abreviação do nome do produto do prefixo. Isso adiciona distinção entre vários produtos que contêm extensões de esquema LDAP.
 -   Use um hífen como o próximo caractere após o prefixo.
--   Especifique um nome de atributo ou classe que seja exclusivo dentro dos atributos da empresa após o hífen. Essa parte do nome comum deve ser descritiva. Não use nomes de ilógico que não sejam de sentido para desenvolvedores e visualizadores do esquema.
+-   Especifique um atributo ou nome de classe exclusivo nos atributos da empresa após o hífen. Essa parte do nome comum deve ser descritiva. Não use nomes lógicos sem sentido para desenvolvedores e visualizadores do esquema.
 
-Por exemplo, se a empresa fictícia Fabrikam estendeu o esquema adicionando um atributo para armazenar um identificador de correio de voz, o **CN** e o **lDAPDisplayName** do novo atributo poderiam ser "fabrikam-postalid".
+Por exemplo, se a empresa fictícia Fabrikam estendeu o esquema adicionando um atributo para armazenar um identificador de email de voz, **cn** e **lDAPDisplayName** do novo atributo poderão ser "fabrikam-VoiceMailID".
 
-Se o **lDAPDisplayName** de um atributo ou classe não for especificado, o sistema usará o **CN** para gerar um. No entanto, o algoritmo do sistema para gerar o nome pode resultar em colisões de nome ou nomes que são difíceis de ler. Para evitar esses problemas, é recomendável que um **lDAPDisplayName** seja explicitamente especificado para todos os atributos e classes.
+Se **o lDAPDisplayName** de um atributo ou classe não for especificado, o sistema usará **o cn** para gerar um. No entanto, o algoritmo do sistema para gerar o nome pode resultar em colisões de nomes ou nomes difíceis de ler. Para evitar esses problemas, é recomendável que **um lDAPDisplayName** seja especificado explicitamente para todos os atributos e classes.
 
-Para fins de desenvolvimento e teste, pode ser desejável acrescentar um sufixo de versão ao **CN** e ao **lDAPDisplayName**, por exemplo, "fabrikam-correio de voz-001". Em um ambiente de desenvolvimento/teste distribuído, um sufixo de versão permite que os desenvolvedores executem várias versões de seu software simultaneamente. Após a conclusão do teste, renomeie o atributo ou a classe para remover o sufixo.
+Para fins de desenvolvimento e teste, pode ser desejável anexar um sufixo de versão ao **cn** e **lDAPDisplayName,** por exemplo, "fabrikam-VoiceMailID-001". Em um ambiente de desenvolvimento/teste distribuído, um sufixo de versão permite que os desenvolvedores executem várias versões de seu software simultaneamente. Após a conclusão do teste, renomeie o atributo ou a classe para remover o sufixo.
 
-Não é possível excluir versões expiradas de extensões de esquema, mas é possível desabilitá-las e renomeá-las com nomes obscuros. Para obter mais informações, consulte [desabilitando classes e atributos existentes](disabling-existing-classes-and-attributes.md).
+Não é possível excluir versões antigas de extensões de esquema, mas é possível desabilitá-las e renomeá-las com nomes obscurecidos. Para obter mais informações, [consulte Desabilitando classes e atributos existentes.](disabling-existing-classes-and-attributes.md)
 
  
 

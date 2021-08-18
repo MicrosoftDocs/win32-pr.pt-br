@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedade BytesColumnValue. Value'
-title: Propriedade BytesColumnValue. Value
+description: 'Saiba mais sobre: propriedade BytesColumnValue.Value'
+title: Propriedade BytesColumnValue.Value
 TOCTitle: 'Value property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.BytesColumnValue.Value
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.bytescolumnvalue.value(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0804a7a05640336be77e5f446ad99227db592f04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffe33303a84f9a5726ae64ae08ba9de65e355d5bfd59f318dcb84baa8053b83f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117717094"
 ---
-# <a name="bytescolumnvaluevalue-property"></a>Propriedade BytesColumnValue. Value
+# <a name="bytescolumnvaluevalue-property"></a>Propriedade BytesColumnValue.Value
 
-Obtém ou define o valor da coluna. Use [SetColumns (JET_SESID, JET_TABLEID, \[ \] )](./api.setcolumns-method.md) para atualizar um registro com o valor da coluna.
+Obtém ou define o valor da coluna. Use [SetColumns(JET_SESID, JET_TABLEID, ) \[ \] para](./api.setcolumns-method.md) atualizar um registro com o valor da coluna.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -62,7 +62,7 @@ public byte[] Value { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Escreva \[\]  
+Tipo: \[\]  
 
 ## <a name="see-also"></a>Confira também
 
@@ -70,6 +70,6 @@ Escreva \[\]
 
 [Classe BytesColumnValue](./bytescolumnvalue-class.md)
 
-[Membros do BytesColumnValue](./bytescolumnvalue-members.md)
+[Membros BytesColumnValue](./bytescolumnvalue-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

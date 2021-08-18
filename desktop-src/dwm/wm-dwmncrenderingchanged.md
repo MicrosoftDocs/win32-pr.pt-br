@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_DWMNCRENDERINGCHANGED (WinUser. h)
-description: Enviado quando a política de renderização de área não cliente é alterada.
+title: WM_DWMNCRENDERINGCHANGED mensagem (Winuser.h)
+description: Enviado quando a política de renderização de área não cliente foi alterada.
 ms.assetid: 31beb127-ebec-49a8-8b65-de00941cbd67
 keywords:
-- Mensagem de WM_DWMNCRENDERINGCHANGED Gerenciador de Janelas da Área de Trabalho
+- WM_DWMNCRENDERINGCHANGED mensagem Gerenciador de Janelas da Área de Trabalho
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac32704ea240ccfc4d4de913b940e098ff8f4de4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4bcae8595315d43737d88d6a302bcac3a328418abd19d77b96bd13ee5ef66496
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118502649"
 ---
-# <a name="wm_dwmncrenderingchanged-message"></a>Mensagem do WM \_ DWMNCRENDERINGCHANGED
+# <a name="wm_dwmncrenderingchanged-message"></a>Mensagem WM \_ DWMNCRENDERINGCHANGED
 
-Enviado quando a política de renderização de área não cliente é alterada.
+Enviado quando a política de renderização de área não cliente foi alterada.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Enviado quando a política de renderização de área não cliente é alterada.
 *wParam* 
 </dt> <dd>
 
-Especifica se a renderização DWM está habilitada para a área não cliente da janela. **Verdadeiro** se habilitado; caso contrário, **false**.
+Especifica se a renderização DWM está habilitada para a área não cliente da janela. **TRUE** se habilitado; caso contrário, **FALSE.**
 
 </dd> <dt>
 
@@ -43,15 +43,15 @@ Não usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se um aplicativo processar essa mensagem, ele deverá retornar zero.
+Se um aplicativo processa essa mensagem, ele deve retornar zero.
 
 ## <a name="remarks"></a>Comentários
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
-As funções [**DwmGetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmgetwindowattribute) e [**DwmSetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmsetwindowattribute) são usadas para obter ou definir a política de renderização que não é de cliente.
+As [**funções DwmGetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmgetwindowattribute) e [**DwmSetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-dwmsetwindowattribute) são usadas para obter ou definir a política de renderização não cliente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ As funções [**DwmGetWindowAttribute**](/windows/desktop/api/Dwmapi/nf-dwmapi-d
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 

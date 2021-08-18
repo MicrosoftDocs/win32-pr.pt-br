@@ -1,14 +1,14 @@
 ---
-title: Entrada de registro de permissões
-description: Entrada de registro de permissões
+title: Entrada do Registro de Permissões
+description: Entrada do Registro de Permissões
 ms.assetid: 01d55d2d-fe29-4006-a34b-9fbc730f9cbc
 keywords:
 - Windows Media Player, extensões de nome de arquivo
 - Windows Media Player, permissões
-- Windows Media Player, registro
+- Windows Media Player,Registro
 - registro, extensões de nome de arquivo
 - registro, permissões
-- registro, configurações para Windows Media Player
+- registry,settings for Windows Media Player
 - configurações do registro de extensão de nome de arquivo
 - permissões
 ms.topic: article
@@ -20,48 +20,48 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117747733"
 ---
-# <a name="permissions-registry-entry"></a>Entrada de registro de permissões
+# <a name="permissions-registry-entry"></a>Entrada do Registro de Permissões
 
-quando Windows Media Player encontra uma extensão de nome de arquivo personalizada, ele procura uma subchave do registro que corresponda à extensão. a subchave é descrita em [Configurações do registro de extensão de nome de arquivo](file-name-extension-registry-settings.md). Uma das entradas do registro que podem aparecer na subchave da extensão é a entrada de **permissões** .
+Quando Windows Media Player encontrar uma extensão de nome de arquivo personalizada, ela procura uma sub-chave do Registro que corresponde à extensão. A sub-chave é descrita em Registro de Extensão de [Nome de Arquivo Configurações](file-name-extension-registry-settings.md). Uma das entradas do Registro que podem aparecer sob a sub-chave da extensão é a **entrada Permissões.**
 
-a entrada de **permissões** especifica as ações que Windows Media Player tem permissão para executar em arquivos que têm a extensão personalizada. A entrada de **permissões** tem o seguinte formato.
+A **entrada Permissões** especifica as ações que Windows Media Player tem permissão para executar em arquivos que têm a extensão personalizada. A **entrada Permissões** tem o seguinte formulário.
 
 
 
 | Nome        | Tipo           | Valor                                                                  |
 |-------------|----------------|------------------------------------------------------------------------|
-| Permissões | **REG \_ DWORD** | Um conjunto de sinalizadores, cada um concedendo permissão para uma ação específica. |
+| Permissões | **REG \_ DWORD** | Um conjunto de sinalizadores, cada um concede permissão para uma ação específica. |
 
 
 
  
 
-O valor da entrada **Permissions** é uma operação OR de um ou **mais dos sinalizadores** a seguir.
+O valor da **entrada Permissões** é um **OR** bit a bit de um ou mais dos sinalizadores a seguir.
 
 
 
 | Sinalizador (valor decimal) | Descrição                                                                                                                                                                                                                                                                   |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1                    | Permissão para reprodução. Arquivos com a extensão de nome de arquivo registrado podem ser reproduzidos.                                                                                                                                                                                       |
-| 2                    | Permissão para drop de pasta. Os arquivos com a extensão de nome de arquivo registrado serão incluídos na playlist criada quando o usuário arrastar uma pasta que contém os arquivos e o descartará na interface do usuário do Player.                                                      |
-| 4                    | Permissão para CD de mídia. Os arquivos com a extensão de nome de arquivo registrado serão incluídos na playlist criada quando um CD que contém os arquivos for inserido na unidade de CD-ROM.                                                                                           |
-| 8                    | Permissão para a biblioteca. Arquivos com a extensão de nome de arquivo registrado podem ser adicionados à biblioteca. Necessário para plug-ins de conversão.                                                                                                                                    |
-| 16                   | Permissão para streaming HTML. Os arquivos com a extensão de nome de arquivo registrado serão inseridos no cache do Internet Explorer quando entregues de um fluxo da Web.                                                                                                            |
-| 128                  | Permissão para transcodificação. arquivos com a extensão de nome de arquivo registrado podem ser transcodificados para Windows formato de mídia em determinadas condições. Consulte [IWMPTranscodePolicy:: allowTranscode](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmptranscodepolicy-allowtranscode). requer o Windows Media Player 10 ou posterior. |
+| 1                    | Permissão para reprodução. Arquivos que têm a extensão de nome de arquivo registrado podem ser interpretados.                                                                                                                                                                                       |
+| 2                    | Permissão para a redução de pasta. Os arquivos que têm a extensão de nome de arquivo registrado serão incluídos na playlist criada quando o usuário arrastar uma pasta que contém os arquivos e a descarta na interface do usuário do Player.                                                      |
+| 4                    | Permissão para CD de mídia. Os arquivos que têm a extensão de nome de arquivo registrado serão incluídos na playlist criada quando um CD que contém os arquivos for inserido na unidade CD-ROM.                                                                                           |
+| 8                    | Permissão para a biblioteca. Arquivos que têm a extensão de nome de arquivo registrado podem ser adicionados à biblioteca. Necessário para plug-ins de conversão.                                                                                                                                    |
+| 16                   | Permissão para streaming HTML. Os arquivos que têm a extensão de nome de arquivo registrado serão inseridos no cache Internet Explorer quando entregues de um fluxo da Web.                                                                                                            |
+| 128                  | Permissão para transcodificação. Arquivos que têm a extensão de nome de arquivo registrado podem ser transcodificados para Windows Formato de Mídia sob determinadas condições. Consulte [IWMPTranscodePolicy::allowTranscode](/previous-versions/windows/desktop/api/wmpservices/nf-wmpservices-iwmptranscodepolicy-allowtranscode). Requer Windows Media Player 10 ou posterior. |
 
 
 
  
 
-quando o usuário tenta reproduzir um arquivo de mídia que tem uma extensão de nome de arquivo personalizada, Windows Media Player procura uma subchave do registro que corresponda à extensão. Se nenhuma correspondência for encontrada, o Player apresentará ao usuário uma caixa de diálogo de aviso que solicita ao usuário a permissão para tentar reproduzir o arquivo. Se você criar arquivos de mídia digital com extensões de nome de arquivo personalizadas, poderá evitar que esse aviso apareça no computador do usuário registrando a extensão de nome de arquivo e fornecendo uma entrada de **permissões** .
+Quando o usuário tenta reproduzir um arquivo de mídia que tem uma extensão de nome de arquivo personalizada, Windows Media Player procura uma sub-chave do Registro que corresponde à extensão. Se nenhuma combinação for encontrada, o Player apresentará ao usuário uma caixa de diálogo de aviso que solicita ao usuário permissão para tentar reproduzir o arquivo. Se você criar arquivos de mídia digital com extensões de nome de arquivo personalizadas, poderá impedir que esse aviso apareça no computador do usuário registrando a extensão de nome de arquivo e fornecendo uma **entrada Permissões.**
 
-a entrada de **permissões** (exceto para o valor de sinalizador 128) tem suporte no Windows Media Player 9 Series e posterior. o valor do sinalizador 128 tem suporte no Windows Media Player 10 e posterior.
+A **entrada Permissões** (exceto pelo valor de sinalizador 128) é suportada pelo Windows Media Player Série 9 e posterior. O valor do sinalizador 128 é suportado pelo Windows Media Player 10 e posteriores.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Configurações de registro de extensão de nome de arquivo**](file-name-extension-registry-settings.md)
+[**Registro de Extensão de Nome de Arquivo Configurações**](file-name-extension-registry-settings.md)
 </dt> </dl>
 
  
