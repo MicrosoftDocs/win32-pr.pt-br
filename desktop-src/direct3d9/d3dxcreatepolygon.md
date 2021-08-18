@@ -1,7 +1,7 @@
 ---
-description: Usa um sistema de coordenadas à esquerda para criar uma malha que contém um polígono n.
+description: Usa um sistema de coordenadas à esquerda para criar uma malha que contém um polígono de n lados.
 ms.assetid: f3313f55-3e60-4440-8bea-d2886b636c9a
-title: Função D3DXCreatePolygon (D3dx9shape. h)
+title: Função D3DXCreatePolygon (D3dx9shape.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 94a7e48f512d25ca53d1f3ff80889a013e2ecdcb
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cf3694bb247fb95e654452c8db3887fcebc2832ac28ec0b2ac920b28f285e22d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045144"
 ---
 # <a name="d3dxcreatepolygon-function"></a>Função D3DXCreatePolygon
 
-Usa um sistema de coordenadas à esquerda para criar uma malha que contém um polígono n.
+Usa um sistema de coordenadas à esquerda para criar uma malha que contém um polígono de n lados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,62 +44,62 @@ HRESULT D3DXCreatePolygon(
 
 <dl> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Ponteiro para uma interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , representando o dispositivo associado à malha Polygon criada.
+Ponteiro para uma interface [**IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) que representa o dispositivo associado à malha de polígono criada.
 
 </dd> <dt>
 
-*Comprimento* \[ no\]
+*Comprimento* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Comprimento de cada lado.
 
 </dd> <dt>
 
-*Lados* \[ no\]
+*Lados* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Número de lados do polígono. O valor deve ser maior ou igual a 3.
+Número de lados para o polígono. O valor deve ser maior ou igual a 3.
 
 </dd> <dt>
 
-*ppMesh* \[ fora\]
+*ppMesh* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Endereço de um ponteiro para a forma de saída, uma interface [**ID3DXMesh**](id3dxmesh.md) .
+Endereço de um ponteiro para a forma de saída, uma interface [**ID3DXMesh.**](id3dxmesh.md)
 
 </dd> <dt>
 
-*ppAdjacency* \[ fora\]
+*ppAdjacency* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Endereço de um ponteiro para uma interface [**ID3DXBuffer**](id3dxbuffer.md) . Quando o método retorna, esse parâmetro é preenchido com uma matriz de três DWORDs por face que especificam os três vizinhos para cada face na malha. **NULL** pode ser especificado.
+Endereço de um ponteiro para uma [**interface ID3DXBuffer.**](id3dxbuffer.md) Quando o método retorna, esse parâmetro é preenchido com uma matriz de três DWORDs por face que especificam os três vizinhos para cada rosto na malha. **NULL** pode ser especificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
 O polígono criado é centralizado na origem.
 
-Essa função cria uma malha com a \_ opção de criação gerenciada D3DXMESH e [D3DFVF \_ XYZ \| D3DFVF \_ ](d3dfvf.md) formato de vértice flexível normal (FVF).
+Essa função cria uma malha com a opção de criação GERENCIADA D3DXMESH e o formato de vértice flexível \_ [ \_ \| D3DFVF XYZ D3DFVF \_ NORMAL](d3dfvf.md) (FVF).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -107,8 +107,8 @@ Essa função cria uma malha com a \_ opção de criação gerenciada D3DXMESH e
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9shape. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>    |
+| parâmetro<br/>  | <dl> <dt>D3dx9shape.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>    |
 
 
 

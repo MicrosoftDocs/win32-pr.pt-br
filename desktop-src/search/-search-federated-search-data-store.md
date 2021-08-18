@@ -1,7 +1,7 @@
 ---
-description: Explica como permitir que seu armazenamento de dados seja acessado por um OpenSearch Web e como evitar possíveis barreiras para fazer isso.
+description: explica como habilitar o armazenamento de dados para ser acessado por um serviço web OpenSearch e como evitar possíveis barreiras para isso.
 ms.assetid: 27d7676c-f4e8-43b4-856b-826e07afcd78
-title: Habilitando seu armazenamento de dados Windows Pesquisa Federada
+title: habilitando seu armazenamento de dados no Windows pesquisa federada
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d26feb231f17dbaacb9656f2ef91e1cdb64bc598831a1e4808327dff7e5787bc
@@ -11,28 +11,28 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119456747"
 ---
-# <a name="enabling-your-data-store-in-windows-federated-search"></a>Habilitando seu armazenamento de dados Windows Pesquisa Federada
+# <a name="enabling-your-data-store-in-windows-federated-search"></a>habilitando seu armazenamento de dados no Windows pesquisa federada
 
-Explica como permitir que o armazenamento de dados seja acessado por um OpenSearch [Web](https://github.com/dewitt/opensearch) e como evitar possíveis barreiras para fazer isso.
+explica como habilitar o armazenamento de dados para ser acessado por um serviço web [OpenSearch](https://github.com/dewitt/opensearch) e como evitar possíveis barreiras para isso.
 
-Este tópico é organizado da seguinte forma:
+Este tópico é organizado da seguinte maneira:
 
--   [Condições para aceitação da solicitação de pesquisa](#conditions-for-search-request-acceptance)
+-   [Condições para a aceitação da solicitação de pesquisa](#conditions-for-search-request-acceptance)
     -   [Sintaxe de consulta com suporte](#supported-query-syntax)
     -   [Protocolos de autenticação com suporte](#supported-authentication-protocols)
--   [Enviando consultas e retornando resultados da pesquisa no RSS ou atom](#sending-queries-and-returning-search-results-in-rss-or-atom)
-    -   [Exemplo de uma saída do RSS Feed](#example-of-an-rss-feed-output)
--   [Mapeamento automático para propriedades Windows Shell](#automatic-mapping-to-windows-shell-properties)
--   [Noções básicas sobre Mapas do Windows itens para tipos de arquivo](#understanding-how-windows-maps-items-to-file-types)
--   [Evitando possíveis barreiras à habilitação de um armazenamento de dados](#avoiding-potential-barriers-to-enabling-a-data-store)
+-   [Enviando consultas e retornando resultados da pesquisa em RSS ou Atom](#sending-queries-and-returning-search-results-in-rss-or-atom)
+    -   [Exemplo de uma saída de RSS feed](#example-of-an-rss-feed-output)
+-   [mapeamento automático para Windows propriedades do Shell](#automatic-mapping-to-windows-shell-properties)
+-   [compreendendo como Mapas do Windows itens aos tipos de arquivo](#understanding-how-windows-maps-items-to-file-types)
+-   [Evitando possíveis barreiras para habilitar um armazenamento de dados](#avoiding-potential-barriers-to-enabling-a-data-store)
 -   [Recursos adicionais](#additional-resources)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="conditions-for-search-request-acceptance"></a>Condições para aceitação da solicitação de pesquisa
+## <a name="conditions-for-search-request-acceptance"></a>Condições para a aceitação da solicitação de pesquisa
 
-O [OpenSearch](https://github.com/dewitt/opensearch) Web criado no servidor Web deve **atender** aos dois requisitos a seguir:
+o serviço web [OpenSearch](https://github.com/dewitt/opensearch) criado no servidor web **deve** atender aos dois requisitos a seguir:
 
--   Ser capaz de aceitar `GET URL` uma consulta do cliente.
+-   Ser capaz de aceitar uma `GET URL` consulta do cliente.
 -   Permitir que os termos de pesquisa sejam inseridos na URL.
 
     O exemplo a seguir mostra como um termo de pesquisa pode ser inserido em uma URL.
@@ -48,30 +48,30 @@ O [OpenSearch](https://github.com/dewitt/opensearch) Web criado no servidor Web 
 
  
 
-Para obter mais informações sobre como construir uma URL, consulte "Parâmetros de modelo de URL" em Criando um arquivo OpenSearch descrição no [Windows Federated Search](-search-federated-search-osdx-file.md).
+para obter mais informações sobre como construir uma URL, consulte "parâmetros de modelo de URL" em [criando um arquivo de descrição de OpenSearch em Windows pesquisa federada](-search-federated-search-osdx-file.md).
 
 ### <a name="supported-query-syntax"></a>Sintaxe de consulta com suporte
 
-Não há nenhuma sintaxe de consulta específica esperada Windows 7. O OpenSearch provedor aceita quaisquer termos que o usuário insira na caixa de entrada no Windows Explorer e codifica-o na URL. Ele faz isso de acordo com o modelo de URL descrito em "Parâmetros de modelo de URL" em Criando um arquivo OpenSearch descrição no [Windows Federated Search](-search-federated-search-osdx-file.md).
+não há sintaxe de consulta específica esperada no Windows 7. o provedor de OpenSearch aceita quaisquer termos que o usuário insere na caixa de entrada no Windows Explorer e o codifica na URL. ele faz isso de acordo com o modelo de url descrito em "parâmetros de modelo de url" na [criação de um arquivo de descrição de OpenSearch em Windows pesquisa federada](-search-federated-search-osdx-file.md).
 
-Os usuários esperam que termos separados sejam tratados como ANDed implicitamente juntos. Por exemplo, uma consulta para "Microsoft Windows" deve retornar apenas os resultados que contêm "Windows" e "Microsoft".
+Os usuários esperam que termos separados sejam tratados como ANDed implicitamente juntos. por exemplo, uma consulta para "Microsoft Windows" deve retornar apenas os resultados que contenham "Windows" e "Microsoft".
 
 ### <a name="supported-authentication-protocols"></a>Protocolos de autenticação com suporte
 
-Windows A Pesquisa Federada dá suporte Windows autenticação baseada em dados e pode fornecer credenciais para serviços Web por meio dos seguintes protocolos:
+Windows a pesquisa federada dá suporte à autenticação baseada em Windows e pode fornecer credenciais para serviços web por meio dos seguintes protocolos:
 
 -   NTLM.
 -   Kerberos.
--   Básico (somente por https).
--   Outros SSPs (Provedores de Suporte de Segurança) instalados no Windows que fornecem capacidade de consulta adicional. Confira a documentação do SDK da [Interface SSP](../secauthn/sspi.md) para se manter atualizado sobre a possível adição de outros SSPs.
+-   Básico (somente via HTTPS).
+-   outros SSPs (provedores de suporte de segurança) instalados em Windows que fornecem capacidade de consulta adicional. Consulte a documentação do SDK da [interface do SSP](../secauthn/sspi.md) para manter-se atualizado sobre a possível adição de outros SSPs.
 
-## <a name="sending-queries-and-returning-search-results-in-rss-or-atom"></a>Enviando consultas e retornando resultados da pesquisa no RSS ou atom
+## <a name="sending-queries-and-returning-search-results-in-rss-or-atom"></a>Enviando consultas e retornando resultados da pesquisa em RSS ou Atom
 
-O [OpenSearch](https://github.com/dewitt/opensearch) provedor é responsável por mapear os valores do elemento XML para Windows do sistema shell que podem ser usadas por Windows aplicativos. Mas você não está limitado aos mapeamentos padrão de elementos RSS ou Atom padrão e pode incluir elementos XML personalizados no namespace Windows para cada uma das propriedades. Por exemplo, você pode adicionar seus próprios elementos XML personalizados dentro do **elemento de item** para fornecer metadados adicionais para Windows. Você também pode mapear elementos de outros namespaces XML, como o iTunes
+o provedor de [OpenSearch](https://github.com/dewitt/opensearch) é responsável por mapear os valores do elemento XML para Windows propriedades do sistema Shell que podem ser usadas pelos aplicativos Windows. mas você não está limitado aos mapeamentos padrão de elementos RSS ou Atom padrão e pode incluir elementos XML personalizados no namespace Windows para cada uma das propriedades. Por exemplo, você pode adicionar seus próprios elementos XML personalizados dentro do elemento **Item** para fornecer metadados adicionais para Windows. Você também pode mapear elementos de outros namespaces XML, como o iTunes
 
-### <a name="example-of-an-rss-feed-output"></a>Exemplo de uma saída do RSS Feed
+### <a name="example-of-an-rss-feed-output"></a>Exemplo de uma saída de RSS feed
 
-O exemplo a seguir RSS feed saída retorna um item.
+O exemplo de saída de RSS feed a seguir retorna um item.
 
 
 ```
@@ -93,11 +93,11 @@ O exemplo a seguir RSS feed saída retorna um item.
 
 
 
-Para obter informações mais detalhadas sobre o mapeamento de propriedades, consulte as seções "Elementos Estendidos na Pesquisa Federada do WIndows" e "Mapeamentos de Propriedades Personalizadas" em Criando um arquivo de descrição do OpenSearch no [Windows Federated Search](-search-federated-search-osdx-file.md).
+para obter informações mais detalhadas sobre o mapeamento de propriedade, consulte as seções "elementos estendidos na pesquisa federada do WIndows" e "mapeamentos de propriedade personalizada" em [criando um arquivo de descrição de OpenSearch em Windows pesquisa federada](-search-federated-search-osdx-file.md).
 
-## <a name="automatic-mapping-to-windows-shell-properties"></a>Mapeamento automático para propriedades Windows Shell
+## <a name="automatic-mapping-to-windows-shell-properties"></a>mapeamento automático para Windows propriedades do Shell
 
-Dentro dos itens em sua RSS feed, você pode optar por incluir outros elementos XML que são mapeados automaticamente para Windows do sistema shell. Para fazer isso, inclua um elemento chamado após a propriedade Windows Shell e prefixado com o namespace do sistema Windows Shell. O exemplo a seguir ilustra a declaração de namespace `win=" http://schemas.microsoft.com/windows/2008/propertynamespace"` e a inclusão de um elemento para o mapeamento de propriedade `win:System.Contact.PrimaryEmailAddress` :
+dentro dos itens em seu RSS feed, você pode optar por incluir outros elementos XML que são mapeados automaticamente para Windows propriedades do sistema Shell. para fazer isso, inclua um elemento chamado após a propriedade Windows shell e prefixado com o namespace do sistema Windows Shell. O exemplo a seguir ilustra a declaração de namespace `win=" http://schemas.microsoft.com/windows/2008/propertynamespace"` e a inclusão de um elemento para o mapeamento de propriedade `win:System.Contact.PrimaryEmailAddress` :
 
 
 ```
@@ -112,7 +112,7 @@ Dentro dos itens em sua RSS feed, você pode optar por incluir outros elementos 
 
 
 
-O prefixo de namespace usado aqui ( `"win"` ) é uma sugestão; você pode usar qualquer prefixo. No entanto, você deve usar os nomes de propriedade Windows Shell exatos e deve incluir o URI (Uniform Resource Identifier) exato, conforme mostrado no exemplo a seguir:
+O prefixo de namespace usado aqui ( `"win"` ) é uma sugestão; você pode usar qualquer prefixo. no entanto, você deve usar os nomes de propriedade de Shell exatos Windows e deve incluir o Uniform Resource Identifier (URI) exato, conforme mostrado no exemplo a seguir:
 
 
 ```
@@ -121,9 +121,9 @@ http://schemas.microsoft.com/windows/2008/propertynamespace
 
 
 
-**Sobre Windows do sistema shell**
+**sobre as propriedades do sistema Windows Shell**
 
-Windows define uma lista completa de [Propriedades](../properties/props.md) do Sistema e o formato de tipo de valor necessário para cada propriedade. A documentação da propriedade [System.FileExtension](../properties/props-system-fileextension.md) Window Shell, por exemplo, especifica que o valor deve conter o ponto à frente (".docx" e não "docx").
+Windows define uma lista completa de [propriedades do sistema](../properties/props.md) e o formato do tipo de valor necessário para cada propriedade. A documentação para a propriedade [System. FileExtension](../properties/props-system-fileextension.md) do Shell de janela, por exemplo, especifica que o valor deve conter o ponto à esquerda (".docx" e não "docx").
 
 **Valores de data e hora**
 
@@ -136,59 +136,59 @@ O formato de data e hora preferencial é ISO-8601, conforme mostrado no exemplo 
 
 
 
-Os desenvolvedores do .NET devem usar a classe DateTime com `ToString("R") ` para a saída do formato correto.
+Os desenvolvedores do .NET devem usar a classe DateTime com `ToString("R") ` para gerar o formato correto.
 
-Para obter informações mais detalhadas sobre o mapeamento de propriedades, consulte "Extended Elements in Windows Federated Search" em Criando um arquivo de descrição OpenSearch no [Windows Federated Search](-search-federated-search-osdx-file.md).
+para obter informações mais detalhadas sobre o mapeamento de propriedade, consulte "elementos estendidos em Windows pesquisa federada" em [criando um arquivo de descrição de OpenSearch no Windows pesquisa federada](-search-federated-search-osdx-file.md).
 
-## <a name="understanding-how-windows-maps-items-to-file-types"></a>Noções básicas sobre Mapas do Windows itens para tipos de arquivo
+## <a name="understanding-how-windows-maps-items-to-file-types"></a>compreendendo como Mapas do Windows itens aos tipos de arquivo
 
-Pesquisar na interface do usuário Windows Explorer permite que os usuários tratem os resultados como arquivos quando um item RSS aponta para um arquivo armazenado remotamente. O usuário pode arrastar e soltar itens para a área de trabalho e a interface do usuário Windows Explorer exibe o ícone correto e fornece o menu de atalho apropriado. Se o item RSS não apontar para um arquivo armazenado remotamente, o arquivo será tratado como um link e os usuários poderão executar ações nele, como criar um atalho ou abri-lo no navegador.
+pesquisar dentro da interface do usuário do Windows Explorer permite que os usuários tratem os resultados como arquivos quando um item RSS aponta para um arquivo armazenado remotamente. o usuário pode arrastar e soltar itens para a área de trabalho, e a interface do usuário do Windows Explorer exibe o ícone correto e fornece o menu de atalho apropriado. Se o item RSS não apontar para um arquivo armazenado remotamente, o arquivo será tratado como um link e os usuários poderão executar ações nele, como criar um atalho ou abri-lo no navegador.
 
-O fluxograma a seguir mostra como Windows determina o tipo de arquivo de um item.
+o fluxograma a seguir mostra como Windows determina o tipo de arquivo de um item.
 
 ![fluxograma mostrando caminhos de um item para decisões para tratá-lo como um item de tipo de link da Web ou como um tipo de arquivo](images/determineanitemfiletype.png)
 
-O [OpenSearch](https://github.com/dewitt/opensearch) provedor executa as seguintes etapas para mapear um item para um tipo de arquivo:
+o provedor de [OpenSearch](https://github.com/dewitt/opensearch) executa as seguintes etapas para mapear um item para um tipo de arquivo:
 
 -   Identifique se o item deve ser tratado como um arquivo ou um link da Web.
 -   Identifique a extensão de nome de arquivo correta a ser usada.
 
-Por exemplo, se o item tiver uma URL de link que usa um caminho do sistema de arquivos (como ), o provedor OpenSearch tratará o link como um arquivo e determinará o tipo pela extensão de nome de arquivo `file:///\\server\share\etc\item.ext` usado no caminho (.ext [neste](https://github.com/dewitt/opensearch) exemplo).
+por exemplo, se o item tiver uma URL de link que usa um caminho de sistema de arquivos (como `file:///\\server\share\etc\item.ext` ), o provedor de [OpenSearch](https://github.com/dewitt/opensearch) tratará o link como um arquivo e determinará o tipo pela extensão de nome de arquivo usada no caminho (. ext neste exemplo).
 
-Se o item usar o compartimento RSS padrão ou o elemento **media:content mediaRSS,** o provedor [OpenSearch](https://github.com/dewitt/opensearch) assumirá que o item é um arquivo e identificará a extensão de nome de arquivo da seguinte forma:
+se o item usar o elemento RSS standard ou **MediaRSS media: content** , o provedor de [OpenSearch](https://github.com/dewitt/opensearch) pressupõe que o item é um arquivo e identifica a extensão de nome de arquivo da seguinte maneira:
 
--   Se a [propriedade System.FileExtension](../properties/props-system-fileextension.md) Windows Shell tiver sido mapeada para o item, o provedor usará essa extensão de nome de arquivo.
--   Se a [propriedade System.FileExtension](../properties/props-system-fileextension.md) Windows Shell não tiver sido mapeada, o provedor usará o atributo **Type** especificado no compartimento ou no elemento de conteúdo. Esse elemento deve conter uma cadeia `MIMEType` de caracteres, como `"image/jpeg"` . Se o estiver associado a uma extensão de nome de arquivo registrada no computador cliente, o item será considerado como `MIMEType` um arquivo desse tipo. Se o não estiver associado a uma extensão de nome de arquivo registrada no computador `MIMEType` cliente, o item será tratado como um tipo de link da Web. O [OpenSearch](https://github.com/dewitt/opensearch) provedor não tenta analisar o atributo **url** para localizar a extensão de nome de arquivo.
--   Se o estiver associado a uma extensão de nome de arquivo registrada no computador cliente, o provedor determinará se a extensão de nome de arquivo é um tipo de arquivo Web conhecido `MIMEType` (.htm, .html, .asp, .aspx, .php, .swf, .stm). Nesse caso, o tipo de arquivo é considerado um tipo de link da Web; caso contrário, ele será considerado como um tipo de arquivo. Por exemplo, se o estiver associado à extensão .htm nome de arquivo, esse item será considerado como um link da Web em vez de como um tipo `MIMEType "text/html"` .htm arquivo.
+-   se a propriedade de Shell [System. FileExtension](../properties/props-system-fileextension.md) Windows tiver sido mapeada para o item, o provedor usará essa extensão de nome de arquivo.
+-   se a propriedade de Shell [System. FileExtension](../properties/props-system-fileextension.md) Windows não tiver sido mapeada, o provedor usará o atributo **Type** especificado no elemento de compartimento ou de conteúdo. Esse elemento deve conter uma `MIMEType` cadeia de caracteres, como `"image/jpeg"` . Se o `MIMEType` estiver associado a uma extensão de nome de arquivo registrada no computador cliente, o item será considerado como um arquivo desse tipo. Se o `MIMEType` não estiver associado a uma extensão de nome de arquivo registrada no computador cliente, o item será tratado como um tipo de link da Web. o provedor de [OpenSearch](https://github.com/dewitt/opensearch) não tenta analisar o atributo de **Url** para localizar a extensão de nome de arquivo.
+-   Se o `MIMEType` estiver associado a uma extensão de nome de arquivo registrada no computador cliente, o provedor determinará se a extensão de nome de arquivo é um tipo de arquivo da Web conhecido (.htm, .html,. asp,. aspx,. php,. swf,. stm). Nesse caso, o tipo de arquivo é considerado um tipo de link da Web; caso contrário, será considerado um tipo de arquivo. Por exemplo, se o `MIMEType "text/html"` estiver associado à extensão de nome de arquivo .htm, esse item será considerado como um link da Web em vez de um tipo de arquivo .htm.
 
-## <a name="avoiding-potential-barriers-to-enabling-a-data-store"></a>Evitando possíveis barreiras à habilitação de um armazenamento de dados
+## <a name="avoiding-potential-barriers-to-enabling-a-data-store"></a>Evitando possíveis barreiras para habilitar um armazenamento de dados
 
-Alguns armazenamentos de dados não fornecem um serviço Web compatível [com](https://github.com/dewitt/opensearch)OpenSearch, mas ainda podem ser conectados Windows Federated Search. Esses armazenamentos de dados incluem:
+alguns armazenamentos de dados não fornecem um serviço web compatível com [OpenSearch](https://github.com/dewitt/opensearch), mas ainda podem ser conectados a Windows pesquisa federada. Esses armazenamentos de dados incluem:
 
--   Índices remotos com métodos de autenticação sem suporte no Windows 7 Federated Search.
+-   índices remotos com métodos de autenticação que não têm suporte na pesquisa federada do Windows 7.
 
-    Exemplos incluem autenticação baseada em formulários e outros métodos de autenticação personalizados.
+    Os exemplos incluem autenticação baseada em formulários e outros métodos de autenticação personalizados.
 
--   Se um armazenamento público de alto valor tiver APIs Web [](https://github.com/dewitt/opensearch)públicas, qualquer pessoa poderá escrever outro serviço Web que seja compatível com OpenSearch e chamar essas APIs nos bastidores.
+-   se um armazenamento público de alto valor tiver APIs web públicas, qualquer pessoa poderá escrever outro serviço web [OpenSearch](https://github.com/dewitt/opensearch)compatível e chamar essas APIs nos bastidores.
 
-    Os exemplos incluem a Biblioteca de Médicos e os bancos de dados de pesquisa médica.
+    Os exemplos incluem a biblioteca do Congresso e bancos de dados de pesquisa médica.
 
--   Armazenamentos de dados corporativos proprietários ou índices e armazenamentos de gerenciamento de conteúdo herdado, para os quais pode ser impossível implementar um front-end.
+-   Armazenamentos de dados corporativos ou índices proprietários e armazenamentos de gerenciamento de conteúdo herdados, para os quais pode ser impossível implementar um front-end.
 
-No entanto, há alternativas que podem evitar barreiras na habilitação de um armazenamento de dados. A seguir estão algumas dessas alternativas:
+No entanto, há alternativas que podem evitar barreiras para habilitar um armazenamento de dados. A seguir estão algumas dessas alternativas:
 
-**Para escrever um serviço Web intermediário quando você não pode modificar o serviço Web para a fonte de dados existente ou o serviço Web fornece uma API personalizada:**
+**Para gravar um serviço Web intermediário quando você não pode modificar o serviço Web para a fonte de dados existente ou o serviço Web fornece uma API personalizada:**
 
-1.  Escreva um serviço Web intermediário que possa aceitar uma Windows 7.
+1.  escreva um serviço web de man-middle que possa aceitar uma consulta Windows 7.
 2.  Conexão à fonte de dados e recuperar os resultados da consulta.
 3.  Reformate os resultados no formato RSS ou Atom.
-4.  Retorne os resultados para o cliente Windows 7.
-5.  Observe que, para serviços de dados corporativos e muitos serviços de dados da Internet, talvez seja necessário passar as credenciais do usuário em nome do serviço Web para executar o corte de resultados com base nas permissões do usuário.
+4.  retornar os resultados para o cliente do Windows 7.
+5.  Observe que para o Enterprise Data Services e muitos serviços de dados da Internet, talvez seja necessário passar as credenciais do usuário por meio de em nome do serviço Web para executar a corte de resultados com base nas permissões do usuário.
 
-**Para usar um mecanismo de pesquisa existente quando não é possível habilitar um armazenamento de dados público:**
+**Para usar um mecanismo de pesquisa existente quando não for possível habilitar um armazenamento de dados público:**
 
-1.  Use um mecanismo de pesquisa público que já dá [suporte OpenSearch](https://github.com/dewitt/opensearch) com RSS. Você pode fazer isso fornecendo aos usuários um arquivo .osdx que tem um modelo de URL que restringe os resultados apenas àqueles para seu domínio específico.
-2.  Consulte o exemplo a seguir de [uma OpenSearch](https://github.com/dewitt/opensearch) para pesquisar apenas o conteúdo da Ajuda para Windows usando uma consulta em live.com.
+1.  Use um mecanismo de pesquisa pública que já dá suporte a [OpenSearch](https://github.com/dewitt/opensearch) com RSS. Você pode fazer isso fornecendo aos usuários um arquivo. osdx que tem um modelo de URL que restringe os resultados para apenas aqueles para seu domínio específico.
+2.  consulte o exemplo a seguir de uma descrição de [OpenSearch](https://github.com/dewitt/opensearch) para pesquisar somente o conteúdo da ajuda para Windows usando uma consulta em relação a live.com.
 
     ```
     <?xml version="1.0" encoding="UTF-8"?>
@@ -203,24 +203,24 @@ No entanto, há alternativas que podem evitar barreiras na habilitação de um a
 
     
 
-**Para usar um servidor de indexação existente que dá suporte OpenSearch quando você não pode habilitar índices ou armazenamentos de dados corporativos proprietários:**
+**para usar um servidor de indexação existente que dá suporte a OpenSearch quando não é possível habilitar armazenamentos de dados corporativos próprios ou índices:**
 
-1.  Selecione um servidor de indexação existente que OpenSearch [para](https://github.com/dewitt/opensearch) indexar seu conteúdo, como o SharePoint Search Server.
-2.  Crie um arquivo .osdx que restrinja os resultados do índice SharePoint somente aqueles do servidor usando sua sintaxe KeyWord no modelo de URL.
+1.  selecione um servidor de indexação existente que dê suporte a [OpenSearch](https://github.com/dewitt/opensearch) para indexar o conteúdo, como o SharePoint servidor de pesquisa.
+2.  crie um arquivo. osdx que restringe os resultados do índice de SharePoint para apenas aqueles do seu servidor usando a sintaxe de palavra-chave no modelo de URL.
 
-**Para gravar um armazenamento de dados do lado do cliente se uma solução somente do lado do servidor não funcionar:**
+**Para gravar um armazenamento de dados no lado do cliente se uma solução somente no lado do servidor não funcionar:**
 
-1.  Escreva uma fonte de dados [OpenSearch](https://github.com/dewitt/opensearch) do lado do cliente que fica entre o provedor Windows [OpenSearch](https://github.com/dewitt/opensearch) e a fonte de dados externa.
-2.  Use a API de [Interface IOpenSearchSource](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iopensearchsource) no SDK do Windows para criar um arquivo .searchconnector-ms configurado adequadamente por meio do qual o Windows Explorer pode chamar sua implementação com os parâmetros de consulta. Sua implementação pode retornar resultados formatados no formato RSS ou Atom. Isso permite que sua implementação forneça a interface do usuário de autenticação personalizada e conecte-se à fonte de dados usando sua API proprietária.
+1.  escreva uma fonte de dados [OpenSearch](https://github.com/dewitt/opensearch) no lado do cliente que se situa entre o provedor de [OpenSearch](https://github.com/dewitt/opensearch) Windows e a fonte de dados externa.
+2.  Use a API de [Interface IOpenSearchSource](/windows/win32/api/shobjidl_core/nn-shobjidl_core-iopensearchsource) no SDK do Windows para criar um arquivo. searchconnector-ms configurado adequadamente por meio do qual o Windows Explorer pode chamar sua implementação com os parâmetros de consulta. Em seguida, sua implementação pode retornar os resultados formatados no formato RSS ou Atom. Isso permite que sua implementação forneça a interface do usuário de autenticação personalizada e se conecte à fonte de dados usando sua API proprietária.
 
 > [!Note]  
-> Abrir um arquivo .osdx cria um arquivo .searchconnector-ms (conector de pesquisa) no diretório %userprofile%/searches e coloca um link para ele no diretório %userprofile%/links.
+> Abrir um arquivo. osdx cria um arquivo. searchconnector-MS (conector de pesquisa) no diretório% USERPROFILE%/Searches e coloca um link para ele no diretório% USERPROFILE%/links.
 
  
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-Para obter informações adicionais sobre como implementar a federação de pesquisa para armazenamentos de dados remotos usando tecnologias OpenSearch no Windows 7 e posterior, consulte "Recursos adicionais" em [Pesquisa Federada](/previous-versions//dd742958(v=vs.85))no Windows .
+para obter informações adicionais sobre como implementar a federação de pesquisa em armazenamentos de dados remotos usando OpenSearch tecnologias no Windows 7 e posterior, consulte "recursos adicionais" em [pesquisa federada no Windows](/previous-versions//dd742958(v=vs.85)).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -229,19 +229,19 @@ Para obter informações adicionais sobre como implementar a federação de pesq
 [Pesquisa federada no Windows](-search-federated-search-overview.md)
 </dt> <dt>
 
-[Ponto de Partida com a Pesquisa Federada Windows](getting-started-with-federated-search-in-windows.md)
+[Introdução com pesquisa federada no Windows](getting-started-with-federated-search-in-windows.md)
 </dt> <dt>
 
-[Conectando seu serviço Web Windows Pesquisa Federada](-search-federated-search-web-service.md)
+[conectando seu serviço web no Windows pesquisa federada](-search-federated-search-web-service.md)
 </dt> <dt>
 
-[Criando um arquivo OpenSearch descrição no Windows Federado](-search-federated-search-osdx-file.md)
+[criando um arquivo de descrição de OpenSearch no Windows pesquisa federada](-search-federated-search-osdx-file.md)
 </dt> <dt>
 
-[Seguindo as práticas recomendadas Windows pesquisa federada](-search-fedsearch-best.md)
+[seguindo as práticas recomendadas em Windows pesquisa federada](-search-fedsearch-best.md)
 </dt> <dt>
 
-[Implantando conectores de pesquisa Windows Pesquisa Federada](-search-federated-search-deploying.md)
+[implantando conectores de pesquisa no Windows pesquisa federada](-search-federated-search-deploying.md)
 </dt> </dl>
 
  

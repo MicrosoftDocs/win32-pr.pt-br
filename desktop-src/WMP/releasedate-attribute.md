@@ -1,9 +1,9 @@
 ---
-title: Atributo liberado
-description: O atributo liberado é a data da versão original do item.
+title: Atributo ReleaseDate
+description: O atributo ReleaseDate é a data da versão original do item.
 ms.assetid: 6bfc364e-2aa6-4742-8db5-5d32406c7a10
 keywords:
-- Atributo liberado do Windows Media Player
+- Atributo ReleaseDate Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e13088e33a7b7f7ec915c1c595b528c446a2f66d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2efb8a873a7690ada0b6da9edaaebabc5c4681a055e099848aee7e96c22f1238
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118995606"
 ---
-# <a name="releasedate-attribute"></a>Atributo liberado
+# <a name="releasedate-attribute"></a>Atributo ReleaseDate
 
-O atributo **liberado** é a data da versão original do item.
+O **atributo ReleaseDate** é a data da versão original do item.
 
 ## <a name="applies-to"></a>Aplica-se A
 
 -   [Itens de áudio](audio-item-attributes.md)
--   [Playlists de CD](cd-playlist-attributes.md)
+-   [CD Playlists](cd-playlist-attributes.md)
 -   [Faixas de CD](cd-track-attributes.md)
 -   [DVDs](dvd-attributes.md)
 -   [Itens de vídeo](video-item-attributes.md)
@@ -35,7 +35,7 @@ O atributo **liberado** é a data da versão original do item.
 
 Esse atributo é armazenado somente no banco de dados de biblioteca (ou cache).
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

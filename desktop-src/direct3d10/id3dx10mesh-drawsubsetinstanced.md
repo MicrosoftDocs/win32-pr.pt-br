@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2e28d7a7d2c1d743090832d68793ec3743662308
-ms.sourcegitcommit: ca37395fd832e798375e81142b97cffcffabf184
+ms.openlocfilehash: 41da932b5f9445df83c0783b7788b8a7079af2acb74643ea37111d8482e8e208
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110335630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990426"
 ---
 # <a name="id3dx10meshdrawsubsetinstanced-method"></a>ID3DX10Mesh: método rawSubsetInstanced de:D
 
@@ -69,7 +69,7 @@ A qual instância iniciar a busca em cada buffer marcado como dados de instânci
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -84,18 +84,18 @@ Uma malha contém uma tabela de atributos. A tabela de atributos pode dividir um
 | Subset     | Faces           |
 |------------|-----------------|
 | AttribId 0 | Faces 0 ~ 50    |
-| AttribID 1 | Faces 51 ~ 125  |
-| AttribID 2 | Faces 126 ~ 200 |
+| AttribId 1 | Rostos 51 ~ 125  |
+| AttribId 2 | Rostos 126 ~ 200 |
 
 
 
  
 
-O instanciamento pode estender o desempenho reutilização da mesma geometria para desenhar vários objetos em uma cena. Um exemplo de instanciamento pode ser desenhar o mesmo objeto com diferentes posições e cores. A indexação requer vários buffers de vértice: pelo menos um para dados por vértice e um segundo buffer para dados por instância.
+A instanciação pode estender o desempenho reutilizando a mesma geometria para desenhar vários objetos em uma cena. Um exemplo de instanciação poderia ser desenhar o mesmo objeto com diferentes posições e cores. A indexação requer vários buffers de vértice: pelo menos um para dados por vértice e um segundo buffer para dados por instância.
 
-As instâncias de desenho com DrawSubsetInstanced são muito semelhantes ao processo usado com [**ID3D10Device::D rawIndexedInstanced**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-drawindexedinstanced) descrito em [Instancing Sample](https://msdn.microsoft.com/library/Ee418269(v=VS.85).aspx). A principal diferença ao usar DrawSubsetInstanced é que os buffers de vértice e índice devem ser extraídos do objeto [**interface ID3DX10Mesh**](id3dx10mesh.md) antes que os dados de instanciação possam ser combinados.
+As instâncias de desenho com DrawSubsetInstanced são muito semelhantes ao processo usado com [**ID3D10Device::D rawindexedinstanced**](/windows/desktop/api/D3D10/nf-d3d10-id3d10device-drawindexedinstanced) que é descrito no [exemplo de instanciação](https://msdn.microsoft.com/library/Ee418269(v=VS.85).aspx). A principal diferença ao usar DrawSubsetInstanced é que os buffers de vértice e de índice devem ser extraídos do objeto de [**interface ID3DX10Mesh**](id3dx10mesh.md) antes que os dados de instanciação possam ser combinados.
 
-O código a seguir ilustra a extração dos buffers de vértice e índice do objeto de malha.
+O código a seguir ilustra a extração dos buffers de vértice e de índice do objeto de malha.
 
 
 ```
@@ -114,8 +114,8 @@ O código a seguir ilustra a extração dos buffers de vértice e índice do obj
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
 
 
 
@@ -126,7 +126,7 @@ O código a seguir ilustra a extração dos buffers de vértice e índice do obj
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
+[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

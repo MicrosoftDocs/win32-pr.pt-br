@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 84b88588238c9a7e4158fe21bca8904bf6f39b51
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 06583aaef7f41a2752ace9c67599c1d299b72f87cb9984674994ede10d89525b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119872387"
 ---
 # <a name="repetitionpattern-object"></a>Objeto RepetitionPattern
 
@@ -42,7 +42,7 @@ O objeto **RepetitionPattern** tem essas propriedades.
 
 | Propriedade                                                                    | Tipo de acesso           | Descrição                                                                                                                                        |
 |:----------------------------------------------------------------------------|:----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Duration**](repetitionpattern-duration.md)<br/>                   | Leitura/gravação<br/> | Obtém ou define por quanto tempo o padrão é repetido.<br/>                                                                                          |
+| [**Permanência**](repetitionpattern-duration.md)<br/>                   | Leitura/gravação<br/> | Obtém ou define por quanto tempo o padrão é repetido.<br/>                                                                                          |
 | [**Intervalo**](repetitionpattern-interval.md)<br/>                   | Leitura/gravação<br/> | Obtém ou define o período de tempo entre cada reinicialização da tarefa.<br/>                                                                       |
 | [**StopAtDurationEnd**](repetitionpattern-stopatdurationend.md)<br/> | Leitura/gravação<br/> | Obtém ou define um valor booliano que indica se uma instância em execução da tarefa é interrompida no final da duração do padrão de repetição.<br/> |
 
@@ -62,7 +62,7 @@ Se você registrar uma tarefa que contém um gatilho com um intervalo de repeti�
 4.  A próxima tarefa começa no final do terceiro minuto.
 5.  A próxima tarefa é iniciada no final do quarto minuto.
 
-**Windows Server 2003, Windows XP e windows 2000:** Se você registrar uma tarefa que contém um gatilho com um intervalo de repetição igual a um minuto e uma duração de repetição igual a quatro minutos, a tarefa será iniciada quatro vezes.
+**Windows Server 2003, Windows XP e Windows 2000:** Se você registrar uma tarefa que contém um gatilho com um intervalo de repetição igual a um minuto e uma duração de repetição igual a quatro minutos, a tarefa será iniciada quatro vezes.
 
 Ao ler ou gravar XML em uma tarefa, o padrão de repetição é especificado usando o elemento de [**repetição**](taskschedulerschema-repetition-triggerbasetype-element.md) do esquema de Agendador de tarefas.
 
@@ -76,8 +76,8 @@ Para obter mais informações e código de exemplo para essa propriedade, consul
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

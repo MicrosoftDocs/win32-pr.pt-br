@@ -1,7 +1,7 @@
 ---
-description: Representa os Estados de alocação atuais e registrados de um recurso virtual.
+description: Representa os estados de alocação atuais e registrados de um recurso virtual.
 ms.assetid: 5C180933-2013-4E16-A9BD-653D5426F468
-title: Classe Msvm_ResourceAllocationSettingData
+title: Msvm_ResourceAllocationSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -37,18 +37,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6d1cb2f97dcb3fa144db5cf27c1a82690214b11d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d79da0eabb193c7f71e1c327263831e62edf13c44b9bed33af02a1f46be34934
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068466"
 ---
-# <a name="msvm_resourceallocationsettingdata-class"></a>\_Classe Msvm ResourceAllocationSettingData
+# <a name="msvm_resourceallocationsettingdata-class"></a>Classe Msvm \_ ResourceAllocationSettingData
 
-Representa os Estados de alocação atuais e registrados de um recurso virtual.
+Representa os estados de alocação atuais e registrados de um recurso virtual.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -85,13 +85,13 @@ class Msvm_ResourceAllocationSettingData : CIM_ResourceAllocationSettingData
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ ResourceAllocationSettingData** tem estes tipos de membros:
+A **classe Msvm \_ ResourceAllocationSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ ResourceAllocationSettingData** tem essas propriedades.
+A **classe Msvm \_ ResourceAllocationSettingData** tem essas propriedades.
 
 <dl> <dt>
 
@@ -104,9 +104,9 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O endereço do recurso. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+O endereço do recurso. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
-Essa é uma propriedade somente leitura, mas se a propriedade **ResourceType** for 20 (controlador de gráficos), ela poderá ser alterada usando o método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Essa é uma propriedade somente leitura, mas se a propriedade **ResourceType** for 20 (controlador gráfico), ela poderá ser alterada usando o método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 </dd> <dt>
 
@@ -119,7 +119,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descreve o endereço deste recurso no contexto do pai. As propriedades **pai** e **AddressOnParent** são usadas para descrever a relação do controlador, bem como a ordem dos dispositivos em um controlador. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Descreve o endereço desse recurso no contexto do pai. As **propriedades Parent** e **AddressOnParent** são usadas para descrever a relação do controlador, bem como a ordenação de dispositivos em um controlador. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -132,33 +132,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A unidade de alocação usada pelas propriedades **Reservation** e **Limit** . Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+A unidade de alocação usada pelas **propriedades Reserva** **e** Limite. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
 **AutomaticAllocation**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o recurso será alocado automaticamente. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Indica se o recurso será alocado automaticamente. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
 **AutomaticDeallocation**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o recurso será desalocado automaticamente. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Indica se o recurso será desaloqueado automaticamente. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -171,38 +171,38 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (64)
+Qualificadores: **MaxLen** (64)
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **Conexão**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O dispositivo ao qual esse recurso está conectado. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+O dispositivo ao qual esse recurso está conectado. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
-Trata-se de uma propriedade somente leitura. Mas se a propriedade **ResourceType** for 21 (porta serial) e a **Propriedade ResourceSubType** for "Microsoft: Hyper-V: porta serial", a propriedade de **conexão** poderá ser alterada usando o método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Trata-se de uma propriedade somente leitura. Mas se a propriedade **ResourceType** for 21 (porta serial) e a propriedade **ResourceSubType**  for "Microsoft:Hyper-V:Serial Port", a propriedade Connection poderá ser alterada usando [**o método ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 </dd> <dt>
 
 **ConsumerVisibility**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A visibilidade do consumidor para o recurso alocado. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+A visibilidade do consumidor para o recurso alocado. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -215,7 +215,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -228,24 +228,24 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada do [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)). A alteração dessa propriedade irá alterar o nome do elemento do derivado do dispositivo lógico associado.
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85)) Alterar essa propriedade alterará o nome do elemento do derivado de dispositivo lógico associado.
 
-Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da [**classe Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 </dd> <dt>
 
 **HostResource**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Somente um recurso de host pode ser atribuído a cada dispositivo na máquina virtual, de modo que somente o primeiro elemento dessa matriz pode ser definido. Para dispositivos que dão suporte a esse recurso, defina o primeiro elemento da matriz **HostResource** para conter uma referência ao recurso de host subjacente a ser atribuído. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Somente um recurso de host pode ser atribuído a cada dispositivo na máquina virtual, portanto, somente o primeiro elemento dessa matriz pode ser definido. Para dispositivos que suportam esse recurso, de definido o primeiro elemento da matriz **HostResource** para conter uma referência ao recurso de host subjacente a ser atribuído. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
-Trata-se de uma propriedade somente leitura. Mas se a propriedade **ResourceType** for 17 (disco) e a **Propriedade ResourceSubType** for "Microsoft: Hyper-V: unidade de disco físico", a propriedade **HostResource** poderá ser alterada usando o método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Trata-se de uma propriedade somente leitura. Mas se a propriedade **ResourceType** for 17 (Disco) e a propriedade **ResourceSubType** for "Microsoft:Hyper-V:Physical Disk Drive", a propriedade **HostResource** poderá ser alterada usando [**o método ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 </dd> <dt>
 
@@ -258,36 +258,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada do [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85))e é sempre definida como "Microsoft:*GUID* \\ *DeviceSpecificData*".
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**Cim \_ SettingData**](/previous-versions//cc136911(v=vs.85))e sempre é definida como "Microsoft:*GUID* \\ *DeviceSpecificData".*
 
 </dd> <dt>
 
 **Limite**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A quantidade máxima de recursos que serão concedidos para essa alocação. A unidade de medida para essa propriedade é especificada pela propriedade **VirtualQuantityUnits** . Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+A quantidade máxima de recursos que será concedida para essa alocação. A unidade de medida para essa propriedade é especificada pela **propriedade VirtualQuantityUnits.** Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
 **MappingBehavior**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica como esse recurso é mapeado para recursos subjacentes. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Especifica como esse recurso é mapeados para recursos subjacentes. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -300,7 +300,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o tipo de recurso quando um valor bem definido não está disponível e [**ResourceType**](msvm-processorsettingdata.md) tem o valor 1 (outro). Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Uma cadeia de caracteres que descreve o tipo de recurso quando um valor bem definido não está disponível e [**ResourceType**](msvm-processorsettingdata.md) tem o valor 1(Outro). Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -423,10 +423,10 @@ O tipo de recurso que essa configuração de alocação representa. Essa proprie
 <span id="Tape_Drive"></span><span id="tape_drive"></span><span id="TAPE_DRIVE"></span>**Unidade de fita** (18)
 </dt> <dt>
 
-<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Extensão de armazenamento** (19)
+<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**extensão de Armazenamento** (19)
 </dt> <dt>
 
-<span id="Other_Storage_Device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>**Outro dispositivo de armazenamento** (20)
+<span id="Other_Storage_Device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>**outro dispositivo de Armazenamento** (20)
 </dt> <dt>
 
 <span id="Serial_port"></span><span id="serial_port"></span><span id="SERIAL_PORT"></span>**Porta serial** (21)
@@ -462,7 +462,7 @@ O tipo de recurso que essa configuração de alocação representa. Essa proprie
 <span id="Logical_Disk"></span><span id="logical_disk"></span><span id="LOGICAL_DISK"></span>**Disco lógico** (31)
 </dt> <dt>
 
-<span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>**Volume de armazenamento** (32)
+<span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>**Armazenamento Volume** (32)
 </dt> <dt>
 
 <span id="Ethernet_connection"></span><span id="ethernet_connection"></span><span id="ETHERNET_CONNECTION"></span>**Conexão Ethernet** (33)
@@ -545,8 +545,8 @@ O acesso à classe **Msvm \_ ResourceAllocationSettingData** pode ser restringid
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

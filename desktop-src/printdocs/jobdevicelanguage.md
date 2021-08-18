@@ -4,31 +4,31 @@ ms.assetid: 3894d9fa-2bf7-447a-bac3-e72a0fdb7187
 title: JobDeviceLanguage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b7bf56018a2b395ec5aa182336a89d8872057e7
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 5e71d45f013b90c733f4e7116c65de451b0735c894cb166a1d3a84497457a1c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408990"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034144"
 ---
 # <a name="jobdevicelanguage"></a>JobDeviceLanguage
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descreve os idiomas de dispositivo com suporte para enviar dados do driver para o dispositivo físico. Isso geralmente é chamado de "linguagem de descrição de página". Essa palavra-chave define qual linguagem de descrição de página é suportada pelo driver e pelo dispositivo físico.
+Descreve os idiomas de dispositivo com suporte para enviar dados do driver para o dispositivo físico. Isso geralmente é chamado de "Linguagem de Descrição da Página". Essa palavra-chave define qual linguagem de descrição de página é suportada pelo driver e pelo dispositivo físico.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo estrutural](#structural-content)
--   [Conteúdo de linguagem XML (XML)](#extensible-markup-language-xml-content)
+-   [linguagem XML conteúdo (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informações do elemento
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
-| Prefixo de escopo <br/> | Trabalho<br/>     |
+| Prefixo de definição de scoping <br/> | Trabalho<br/>     |
 | Observações <br/>          | Nenhum<br/>    |
 
 
@@ -70,19 +70,19 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 | Nome                                 | Tipo de dados         | Unidade                  | Valores com suporte                                                                                                                                                                      | Resumo                                                                      |
 |--------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>            | string<br/> | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                           |
-| \_IdentityOptionValue\_<br/>   | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
-| \_LanguageLevelValue\_<br/>    | string<br/> | n/d<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica o nível de linguagem (por exemplo, PS nível 2).<br/>           |
-| \_LanguageEncodingValue\_<br/> | string<br/> | n/d<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica a codificação de idioma (por exemplo, ISOLatin1).<br/>         |
+| \_Optionname\_<br/>            | string<br/> | characters<br/> | Nome totalmente qualificado válido, conforme definido [por Namespaces em XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                           |
+| \_IdentityOptionValue\_<br/>   | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma Opção que, quando selecionada, desabilitará esse recurso.<br/> |
+| \_LanguageLevelValue\_<br/>    | string<br/> | n/d<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica o nível de idioma (por exemplo, PS Nível 2).<br/>           |
+| \_LanguageEncodingValue\_<br/> | string<br/> | n/d<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica a codificação de linguagem (por exemplo, ISOLtina1).<br/>         |
 | \_LanguageVersionValue\_<br/>  | string<br/> | n/d<br/>        | Nenhum.<br/>                                                                                                                                                                      | Especifica a versão do idioma.<br/>                                   |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Conteúdo de linguagem XML (XML)
+## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave do esquema de impressão pública são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace. O conteúdo do linguagem XML público (XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:JobDeviceLanguage">

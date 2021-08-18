@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 81a9f272cb0769d4313a4375f98bdc25b9e403e7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 63546fbf7424189c5b9d398b4c6ddce076d7e02db5900031c15b579048da1965
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104371026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119753156"
 ---
 # <a name="d3dx10preprocessshaderfromresource-function"></a>Função D3DX10PreprocessShaderFromResource
 
@@ -124,7 +124,7 @@ O endereço de um ponteiro para a memória (consulte a [**interface ID3D10Blob**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

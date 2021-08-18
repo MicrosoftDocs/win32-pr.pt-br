@@ -4,17 +4,17 @@ description: Os comandos são ações que os usuários podem executar ao usar se
 ms.assetid: 64DF83BC-CC6D-4F0F-A1B2-AB3CF6DA33B3
 ms.topic: reference
 ms.date: 10/20/2020
-ms.openlocfilehash: ece3f8f4fe395bb6ccf20a2b8b3db6bb36b00aee
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: fbbe0180011a2930d52230bff2653145f3cea6159f68c4cc3661eca1065b07f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103663702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119818516"
 ---
 # <a name="commands-design-basics"></a>Comandos (noções básicas de Design)
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
 Os comandos são ações que os usuários podem executar ao usar seu aplicativo. Conheça as diretrizes para adicionar comandos aos menus, às faixas de ferramentas e às barras de ferramentas do seu aplicativo.
 

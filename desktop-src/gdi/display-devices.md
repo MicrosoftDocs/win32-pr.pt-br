@@ -4,12 +4,12 @@ ms.assetid: a3802aa7-deec-4151-b1b1-4cd38f769864
 title: Dispositivos de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6df9e5e1746f309f402b31e736c58092d134d38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd71b943d294bf89e932f965b023ecbce7f4e594044fe96b70bb84d41a27f777
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038114"
 ---
 # <a name="display-devices"></a>Dispositivos de vídeo
 

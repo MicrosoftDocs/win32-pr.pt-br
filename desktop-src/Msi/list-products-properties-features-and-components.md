@@ -1,19 +1,19 @@
 ---
-description: O arquivo VBScript WiLstPrd.vbs é fornecido nos componentes SDK do Windows para os desenvolvedores de Windows Installer. O script de exemplo se conecta a um objeto do instalador e enumera os produtos registrados e as informações do produto.
+description: o arquivo VBScript WiLstPrd.vbs é fornecido nos componentes SDK do Windows para os desenvolvedores de Windows Installer. O script de exemplo se conecta a um objeto do instalador e enumera os produtos registrados e as informações do produto.
 ms.assetid: 13615dc2-ebc7-4536-9dd8-9bb1dbf3cfaf
 title: Listar produtos, propriedades, recursos e componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e20d2f563efad42108f763b909e7a1118e255dcb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa090deef877757277b64cef02ecf42df61405fdc9238935bfffba756434f316
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013144"
 ---
 # <a name="list-products-properties-features-and-components"></a>Listar produtos, propriedades, recursos e componentes
 
-O arquivo VBScript WiLstPrd.vbs é fornecido nos [componentes SDK do Windows para os desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md). O script de exemplo se conecta a um objeto do [**instalador**](installer-object.md) e enumera os produtos registrados e as informações do produto.
+o arquivo VBScript WiLstPrd.vbs é fornecido nos [componentes SDK do Windows para os desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md). O script de exemplo se conecta a um objeto do [**instalador**](installer-object.md) e enumera os produtos registrados e as informações do produto.
 
 Este exemplo demonstra o uso de:
 
@@ -29,7 +29,7 @@ Este exemplo demonstra o uso de:
 -   [**Método LastErrorRecord**](installer-lasterrorrecord.md)
 -   [**Método REGISTRYVALUE**](installer-registryvalue.md) do [ **objeto instalador**](installer-object.md)
 
-Você precisará da versão CScript.exe ou WScript.exe do Windows Script Host para usar este exemplo. Para usar CScript.exe para executar este exemplo, digite uma linha de comando no prompt de comando usando a sintaxe a seguir. A ajuda será exibida se o primeiro argumento for/? ou se poucos argumentos forem especificados. Para redirecionar a saída para um arquivo, termine a linha de comando com VBS > \[ caminho para o arquivo \] . O exemplo retorna um valor de 0 para êxito, 1 se a ajuda for invocada e 2 se o script falhar.
+você precisará da versão CScript.exe ou WScript.exe do Host de Script Windows para usar este exemplo. Para usar CScript.exe para executar este exemplo, digite uma linha de comando no prompt de comando usando a sintaxe a seguir. A ajuda será exibida se o primeiro argumento for/? ou se poucos argumentos forem especificados. Para redirecionar a saída para um arquivo, termine a linha de comando com VBS > \[ caminho para o arquivo \] . O exemplo retorna um valor de 0 para êxito, 1 se a ajuda for invocada e 2 se o script falhar.
 
 **cscript WiLstPrd.vbs \[ Opções de nome do produto \] \[\]**
 
@@ -45,13 +45,13 @@ Observe que essas opções não são opções, portanto, você não deve prefixa
 | p                    | Listar as propriedades dos produtos.                                                                                                        |
 | f                    | Listar os recursos dos produtos, os pais de recursos e os Estados de instalação                                                                 |
 | c                    | Lista os componentes instalados dos produtos.                                                                                              |
-| d                    | Liste o valor em **HKLM \\ software \\ Microsoft \\ Windows \\ CurrentVersion \\ SharedDlls** para os arquivos de chave do componente Products. |
+| d                    | liste o valor em **HKLM \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ SharedDlls** para os arquivos de chave do componente products. |
 
 
 
  
 
-Para obter mais informações, consulte [Windows Installer exemplos de script](windows-installer-scripting-examples.md) para obter exemplos de script adicionais. Para utilitários de exemplo que não exigem o Windows Script Host, consulte [Windows Installer ferramentas de desenvolvimento](windows-installer-development-tools.md).
+para obter mais informações, consulte [Windows Installer exemplos de script](windows-installer-scripting-examples.md) para obter exemplos de script adicionais. para utilitários de exemplo que não exigem Windows Host de Script, consulte [Windows Installer ferramentas de desenvolvimento](windows-installer-development-tools.md).
 
  
 

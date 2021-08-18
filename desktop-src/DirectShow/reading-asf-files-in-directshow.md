@@ -1,25 +1,25 @@
 ---
 description: Use os recursos deste artigo para saber mais sobre como ler arquivos de formato de sistemas avançados no DirectShow.
 ms.assetid: bd57334b-22b3-40e2-8841-e5d2df196eef
-title: Lendo arquivos ASF no DirectShow (DirectShow)
+title: Lendo arquivos ASF em DirectShow (DirectShow)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 406e1455b1fa6fdc018636a7850de1c31c550eb7
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 763176f04caae57a75bbeb24dee64132ffa2b65f017205e90ab2f24a8666bc2f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405099"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119697246"
 ---
-# <a name="reading-asf-files-in-directshow-directshow"></a>Lendo arquivos ASF no DirectShow (DirectShow)
+# <a name="reading-asf-files-in-directshow-directshow"></a>Lendo arquivos ASF em DirectShow (DirectShow)
 
 Este tópico inclui as seções a seguir.
 
 -   [Sobre o filtro de leitor ASF do WM](about-the-wm-asf-reader-filter.md)
--   [Reprodução de áudio de WMA multicanal no DirectShow](multichannel-wma-audio-playback-in-directshow.md)
+-   [Reprodução de áudio de WMA multicanal em DirectShow](multichannel-wma-audio-playback-in-directshow.md)
 -   [Obtendo um ponteiro para o objeto leitor](obtaining-a-pointer-to-the-reader-object.md)
 -   [Reprodução de fluxo da Web ASF no DirectShow](asf-web-stream-playback-in-directshow.md)
--   [Fluxos de script ASF no DirectShow](asf-script-streams-in-directshow.md)
+-   [Fluxos de Script ASF no DirectShow](asf-script-streams-in-directshow.md)
 -   [Procurando em arquivos ASF](seeking-in-asf-files.md)
 -   [Lendo DRM-Protected arquivos ASF no DirectShow](reading-drm-protected-asf-files-in-directshow.md)
 
@@ -27,7 +27,7 @@ Este tópico inclui as seções a seguir.
 
 <dl> <dt>
 
-[Usando o Windows Media no DirectShow](using-windows-media-in-directshow.md)
+[usando Windows mídia no DirectShow](using-windows-media-in-directshow.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: Várias opções estão disponíveis quando um aplicativo WinSNMP r
 ms.assetid: 76a4095f-ab5c-4f7a-9b60-a383a632fd65
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 81aebf94d60ca26f39bcd53b26cb1f794f43af0d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4e2149e4ac1e9880601ae64718cd78991718d54a6228488a03e593376d9a7937
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009321"
 ---
 # <a name="multiple-trap-registrations"></a>Vários registros de interceptação
 
@@ -25,9 +25,9 @@ Para cancelar o registro da sessão, você deve corresponder a cada chamada de r
 
 Para alterar os critérios de filtragem, pode ser necessário que um aplicativo primeiro cancele o registro e desabilite a entrega de determinadas interceptações ou notificações. Em seguida, o aplicativo pode criar um novo filtro chamando [**SnmpRegister**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmpregister), passando os valores apropriados.
 
- 
+ 
 
- 
+ 
 
 
 

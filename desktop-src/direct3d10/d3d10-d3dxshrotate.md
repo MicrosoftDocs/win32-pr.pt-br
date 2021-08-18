@@ -1,7 +1,7 @@
 ---
-description: Função D3DXSHRotate (D3DX10. h) – gira o vetor harmônica (SH) esférico pela matriz especificada.
+description: Função D3DXSHRotate (D3DX10.h) – gira o vetor sh (ataque esférico) pela matriz determinada.
 ms.assetid: 22ed379a-ce08-46df-9cc1-8d5fde87c179
-title: Função D3DXSHRotate (D3DX10. h)
+title: Função D3DXSHRotate (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 2f2af3fe59c57ba32bc03bb59233bec72722bbb5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 0ff63f6ad2fbbb75baaa32c4754a4cee3437ba34fe6dbd3b0412464deaf8fd71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108108534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118990776"
 ---
-# <a name="d3dxshrotate-function-d3dx10h"></a>Função D3DXSHRotate (D3DX10. h)
+# <a name="d3dxshrotate-function-d3dx10h"></a>Função D3DXSHRotate (D3DX10.h)
 
-Gira o vetor harmônica (SH) esférico pela matriz especificada.
+Gira o vetor sh (metal esférico) pela matriz determinada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,54 +43,54 @@ FLOAT* D3DXSHRotate(
 
 <dl> <dt>
 
-*pout* \[ no\]
+*pOut* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para os coeficientes de saída harmônicas (SH). A avaliação gera coeficientes do Order ². Esse ponteiro não deve ser alias com pIn. Consulte Observações.
+Ponteiro para coeficientes de saída sh (spherical) . A avaliação gera coeficientes orderâmicos. Esse ponteiro não deve ser alias com pIn. Consulte Observações.
 
 </dd> <dt>
 
-*Ordem* \[ no\]
+*Ordem* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordem da avaliação SH. Deve estar no intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, inclusive. A avaliação gera coeficientes do Order ². O grau da avaliação é a ordem 1.
+Ordem da avaliação de SH. Deve estar no intervalo de D3DXSH \_ MINORDER a D3DXSH \_ MAXORDER, inclusive. A avaliação gera coeficientes orderâmicos. O grau da avaliação é Order - 1.
 
 </dd> <dt>
 
-*pMatrix* \[ no\]
+*pMatrix* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](../direct3d9/d3dxmatrix.md) \***
 
-Ponteiro para a matriz de rotação. A submatriz de rotação deve ser ortogonal, com um determinante de unidade.
+Ponteiro para a matriz de rotação. A sub-matriz de rotação deve ser ortogonal, com uma unidade determinante.
 
 </dd> <dt>
 
-*fixar* \[ no\]
+*pIn* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Ponteiro para de doeficientes de forma girada.
+Ponteiro para coeficientes SH girados.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para SH coeficientes de saída.
+Ponteiro para coeficientes de saída sh.
 
 ## <a name="remarks"></a>Comentários
 
-Cada coeficiente da função base Ylm é armazenado no local da memória l ² + m + l, em que:
+Cada coeficiente da função de base Ylm é armazenado no local de memória lá + m + l, em que:
 
 -   l é o grau da função base.
--   m é o índice de função base para o valor l fornecido e varia de-l a l, inclusive.
+-   m é o índice de função base para o valor l e intervalos de -l a l, inclusive.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -98,12 +98,12 @@ Cada coeficiente da função base Ylm é armazenado no local da memória l ² + 
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

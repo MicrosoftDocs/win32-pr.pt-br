@@ -4,21 +4,21 @@ description: Atributo onmouseover da VML
 ms.assetid: 68f0fa7a-0d22-4ede-8404-e007296960e5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f8318235b660f92f3d82b2dd8dd15e2192e97a84
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6d2bb65864987988996cfad710360fd908a5248c11857e8df1eb5a941b1b895b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999126"
 ---
 # <a name="vml-onmouseover-attribute"></a>Atributo onmouseover da VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Dispara um evento de mouse para uma forma. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -56,6 +56,6 @@ Quando o ponteiro do mouse estiver na forma, a cor de preenchimento mudará de v
 
 [Exemplo de atributo onmouseover](/previous-versions/bb264088(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
 
- 
+ 
 
- 
+ 

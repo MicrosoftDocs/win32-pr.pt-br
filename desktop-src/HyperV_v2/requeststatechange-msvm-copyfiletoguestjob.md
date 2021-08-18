@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: adf5d866989f3b3518cf53b52e073239e023e3c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09fdc3a1ee7d0f8942e1e02c5d18f20c42f74db2e65ae065132f164b199ee861
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105775722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014334"
 ---
 # <a name="msvm_copyfiletoguestjobrequeststatechange-method"></a>\_Método Msvm CopyFileToGuestJob:: RequestStateChange
 
@@ -123,7 +123,7 @@ Um período de tempo limite que especifica a quantidade máxima de tempo que o c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -134,7 +134,7 @@ Esse método retorna um dos valores a seguir.
 | <dl> <dt>**Concluído sem erro**</dt> <dt>0</dt> </dl>                   | Êxito.<br/>                                                                |
 | <dl> <dt>**Uso do parâmetro timeout sem suporte**</dt> <dt>4098</dt> </dl> |                                                                                    |
 | <dl> <dt>32768</dt> <dt>**com falha**</dt> </dl>                                |                                                                                    |
-| <dl> <dt>**Acesso negado**</dt> <dt>32769</dt> </dl>                         | Acesso negado.<br/>                                                          |
+| <dl> <dt>**Acesso negado**</dt> <dt>32769</dt> </dl>                         | Acesso negado<br/>                                                          |
 | <dl> <dt>**Sem suporte**</dt> <dt>32770</dt> </dl>                         |                                                                                    |
 | <dl> O <dt>**status é desconhecido**</dt> <dt>32771</dt> </dl>                     |                                                                                    |
 | <dl> <dt>**Tempo limite**</dt> <dt>32772</dt> </dl>                               |                                                                                    |
@@ -155,8 +155,8 @@ Esse método retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                                                 |
 | Namespace<br/>                | \\\\\\Virtualização \\ v2 de raiz<br/>                                                                 |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

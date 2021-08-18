@@ -4,8 +4,8 @@ description: O nome de um servidor.
 ms.assetid: 60c2afb4-5c3d-4628-95f8-f57dc7b9cb79
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Server-Name do atributo AD
-- Esquema de AD do atributo do ServerName
+- Server-Name atributo AD Schema
+- Esquema do AD do atributo serverName
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 145fdedf82e36886db8813447514142f8ce0e95e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 985c4119c44b0e60f83712590f7c7ee453601159fec75770c2c2569329f8b093
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022194"
 ---
 # <a name="server-name-attribute"></a>Server-Name atributo
 
@@ -30,13 +30,13 @@ O nome de um servidor.
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Server-Name                                 |
-| LDAP-Display-Name | serverName                                  |
+| Ldap-Display-Name | serverName                                  |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.223                      |
-| System-ID-GUID    | 09dcb7a0-165f-11d0-a064-00aa006c33ed        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 09dcb7a0-165f-11d0-a064-00aa006c33ed        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ O nome de um servidor.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Verdadeiro                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | 0                                              |
 | Range-Upper            | 1024                                           |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O nome de um servidor.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Verdadeiro                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | 0                                              |
 | Range-Upper            | 1024                                           |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O nome de um servidor.
 | ID do link                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| É de valor único       | True                                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                                      |
 | É indexado             | Falso                                                                                                                     |
-| No catálogo global      | True                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                              |
+| No Catálogo Global      | Verdadeiro                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | 0                                                                                                                         |
 | Range-Upper            | 1024                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Classes usadas em        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O nome de um servidor.
 | ID do link                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| É de valor único       | True                                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                                      |
 | É indexado             | Falso                                                                                                                     |
-| No catálogo global      | True                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                              |
+| No Catálogo Global      | Verdadeiro                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | 0                                                                                                                         |
 | Range-Upper            | 1024                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Classes usadas em        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O nome de um servidor.
 | ID do link                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| É de valor único       | True                                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                                      |
 | É indexado             | Falso                                                                                                                     |
-| No catálogo global      | True                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                              |
+| No Catálogo Global      | Verdadeiro                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | 0                                                                                                                         |
 | Range-Upper            | 1024                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Classes usadas em        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O nome de um servidor.
 | ID do link                | \-                                                                                                                        |
 | MAPI-Id                | \-                                                                                                                        |
 | System-Only            | Falso                                                                                                                     |
-| É de valor único       | True                                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                                      |
 | É indexado             | Falso                                                                                                                     |
-| No catálogo global      | True                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                              |
+| No Catálogo Global      | Verdadeiro                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                              |
 | Range-Lower            | 0                                                                                                                         |
 | Range-Upper            | 1024                                                                                                                      |
 | Search-Flags           | 0x00000000                                                                                                                |
 | System-Flags           | 0x00000010                                                                                                                |
-| Classes usadas em        | [**MS-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**ms-Print-ConnectionPolicy**](c-msprint-connectionpolicy.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 

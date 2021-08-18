@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - fil_data.h
-ms.openlocfilehash: 1e43e0f16ddfdee596f0dc6bd736ed86fc6fa37d
-ms.sourcegitcommit: 6fc8a7419bd01787cf6a1c52c355a4a2d1aec471
+ms.openlocfilehash: 9174549c93a76f94ccb7f039343a8eab5e75ece252871d11d60221df03aabe87
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111989431"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823596"
 ---
 # <a name="iamfilterdata-interface"></a>Interface IAMFilterData
 
@@ -53,7 +53,7 @@ A interface **IAMFilterData** tem esses métodos.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O cabeçalho Fil \_ Data. h está localizado no diretório de [exemplo do mapeador](mapper-sample.md) no SDK do Windows.
+> o cabeçalho Fil \_ data. h está localizado no diretório de [exemplo do mapeador](mapper-sample.md) no SDK do Windows.
 
  
 

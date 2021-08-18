@@ -1,7 +1,7 @@
 ---
-description: O método Deactivate destrói a janela da caixa de diálogo. Esse método implementa o método IPropertyPage::D eactivate.
+description: O método Desativar destrói a janela da caixa de diálogo. Esse método implementa o método IPropertyPage::D eactivate.
 ms.assetid: f2d2f15f-15f6-4902-bafc-f58a684ff193
-title: Método CBasePropertyPage. Deactivate (cProp. h)
+title: Método CBasePropertyPage.Deactivate (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 63a843502fc735cc41ff3656e83ef3d6cb839a19
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5acb906a28087464f349aff3fdcdf367d7e3bceaa5a29cfa1cad4143b80e10c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119526766"
 ---
-# <a name="cbasepropertypagedeactivate-method"></a>Método CBasePropertyPage. Deactivate
+# <a name="cbasepropertypagedeactivate-method"></a>Método CBasePropertyPage.Deactivate
 
-O `Deactivate` método destrói a janela da caixa de diálogo. Esse método implementa o método **IPropertyPage::D eactivate** .
+O `Deactivate` método destrói a janela da caixa de diálogo. Esse método implementa o **método IPropertyPage::D eactivate.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,16 +40,16 @@ HRESULT Deactivate();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
+Retorna um **valor HRESULT.** Os possíveis valores incluem os seguintes.
 
 
 
 | Código de retorno                                                                                  | Descrição                    |
 |----------------------------------------------------------------------------------------------|--------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>         | Êxito.<br/>            |
-| <dl> <dt>**E \_ inesperado**</dt> </dl> | Falha inesperada.<br/> |
+| <dl> <dt>**E \_ UNEXPECTED**</dt> </dl> | Falha inesperada.<br/> |
 
 
 
@@ -61,8 +61,8 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>CProp. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Cprop.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 [**Classe CBasePropertyPage**](cbasepropertypage.md)
 </dt> <dt>
 
-[**CBasePropertyPage:: OnActivate**](cbasepropertypage-ondeactivate.md)
+[**CBasePropertyPage::OnDeactivate**](cbasepropertypage-ondeactivate.md)
 </dt> </dl>
 
  

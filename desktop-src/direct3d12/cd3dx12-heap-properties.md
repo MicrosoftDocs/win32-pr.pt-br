@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 90cc5f5cee6bf70aad064396589aad8a483f2c50
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 36a4d2241568d98957ecd809f33f27c343bb0e73d0d246284e5635f22a594108
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105811461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119752316"
 ---
 # <a name="cd3dx12_heap_properties-structure"></a>Estrutura de propriedades do \_ heap CD3DX12 \_
 

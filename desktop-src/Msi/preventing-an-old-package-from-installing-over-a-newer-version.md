@@ -1,19 +1,19 @@
 ---
-description: Windows Installer pacotes de atualização podem ser criados para que as principais atualizações não sejam instaladas se um usuário já tiver uma versão mais recente instalada.
+description: Windows Os pacotes de atualização do instalador podem ser criados para que as principais atualizações não sejam instaladas se um usuário já tiver uma versão mais recente instalada.
 ms.assetid: f46e82bd-70b3-46a2-8246-a1eadfdc589d
 title: Impedir que um pacote antigo seja instalado em uma versão mais recente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 320ab062c4ffbc740d85c59ece3d3baaa63f4209
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e992cc1e32d2b25e5af587c00ca4f8ee28e4b09fd3100cb12b382ae90f8c1d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145379"
 ---
 # <a name="preventing-an-old-package-from-installing-over-a-newer-version"></a>Impedindo que um pacote antigo seja instalado em uma versão mais recente
 
-Windows Installer pacotes de atualização podem ser criados para que as principais atualizações não sejam instaladas se um usuário já tiver uma versão mais recente instalada. O procedimento neste tópico só pode impedir downgrades que podem ser causados pela execução de um pacote de atualização principal. Esse procedimento depende da [ação FindRelatedProducts](findrelatedproducts-action.md), que é executada apenas durante uma instalação inicial e não é executada no modo de manutenção (reinstalação). Como as atualizações secundárias são executadas usando a reinstalação, esse procedimento não pode ser usado para determinar se um pacote de atualização secundário está tentando fazer downgrade de um aplicativo. Para obter mais informações, consulte [preparando um aplicativo para futuras atualizações importantes](preparing-an-application-for-future-major-upgrades.md).
+Windows Os pacotes de atualização do instalador podem ser criados para que as principais atualizações não sejam instaladas se um usuário já tiver uma versão mais recente instalada. O procedimento neste tópico só pode impedir downgrades que podem ser causados pela execução de um pacote de atualização principal. Esse procedimento depende da [ação FindRelatedProducts](findrelatedproducts-action.md), que é executada apenas durante uma instalação inicial e não é executada no modo de manutenção (reinstalação). Como as atualizações secundárias são executadas usando a reinstalação, esse procedimento não pode ser usado para determinar se um pacote de atualização secundário está tentando fazer downgrade de um aplicativo. Para obter mais informações, consulte [preparando um aplicativo para futuras atualizações importantes](preparing-an-application-for-future-major-upgrades.md).
 
 **Para impedir que um pacote antigo seja instalado em uma versão mais recente**
 
@@ -25,7 +25,7 @@ Windows Installer pacotes de atualização podem ser criados para que as princip
 6.  Adicione um [tipo de ação personalizada 19](custom-action-type-19.md) após a ação FindRelatedProducts na [tabela InstallExecuteSequence](installexecutesequence-table.md). Inclua um registro na [tabela CustomAction](customaction-table.md) para esta ação e insira o texto a ser exibido na coluna de destino. A ação personalizada Type 19 é criada no instalador, portanto, não há nenhum código a ser escrito.
 7.  Insira o nome da Actionproperty na coluna Condition do registro na [tabela InstallExecuteSequence](installexecutesequence-table.md) que contém o [tipo de ação personalizada 19](custom-action-type-19.md). Isso faz com que a ação personalizada seja executada somente quando a [tabela de atualização](upgrade-table.md) detectar que uma versão mais recente já está instalada.
 
-    Por exemplo, um pacote Windows Installer que atualiza um grupo de produtos relacionados à versão 3,0 pode incluir os seguintes registros em suas tabelas de [Propriedade](property-table.md) , [CustomAction](customaction-table.md), [InstallExecuteSequence](installexecutesequence-table.md)e de [atualização](upgrade-table.md). Todos os produtos relacionados no grupo têm o mesmo UpgradeCode, mas o instalador não instala esse pacote de atualização se uma versão posterior à 3,0 já estiver instalada no computador. Nesse caso, o instalador apresenta uma mensagem de erro e a instalação falha. O pacote de atualização da versão 3,0 é instalado nas versões 1,0 e 2,0.
+    por exemplo, um pacote Windows Installer que atualiza um grupo de produtos relacionados à versão 3,0 pode incluir os seguintes registros em suas tabelas de [propriedade](property-table.md) , [CustomAction](customaction-table.md), [InstallExecuteSequence](installexecutesequence-table.md)e de [atualização](upgrade-table.md). Todos os produtos relacionados no grupo têm o mesmo UpgradeCode, mas o instalador não instala esse pacote de atualização se uma versão posterior à 3,0 já estiver instalada no computador. Nesse caso, o instalador apresenta uma mensagem de erro e a instalação falha. O pacote de atualização da versão 3,0 é instalado nas versões 1,0 e 2,0.
 
     [Atualizar tabela](upgrade-table.md)
 

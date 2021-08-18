@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentInvalidPlaceholderColumnException'
+description: 'Saiba mais sobre: Classe EsentInvalidPlaceholderColumnException'
 title: Classe EsentInvalidPlaceholderColumnException
 TOCTitle: EsentInvalidPlaceholderColumnException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentInvalidPlaceholderColumnException
@@ -33,22 +33,22 @@ ms.locfileid: "119480766"
 ---
 # <a name="esentinvalidplaceholdercolumnexception-class"></a>Classe EsentInvalidPlaceholderColumnException
 
-Classe base para JET_err. InvalidPlaceholderColumn exceções.
+Classe base para JET_err. Exceções InvalidPlaceholderColumn.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentUsageException](./esentusageexception-class.md)  
-            Microsoft. ISAM. ESENT. Interop. EsentInvalidPlaceholderColumnException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUsageException](./esentusageexception-class.md)  
+            Microsoft.Isam.Esent.Interop.EsentInvalidPlaceholderColumnException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentInvalidPlaceholderColumnException](./esentinvalidplaceholdercolumnexception-members.md)
+[Membros EsentInvalidPlaceholderColumnException](./esentinvalidplaceholdercolumnexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

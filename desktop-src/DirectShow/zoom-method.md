@@ -4,17 +4,17 @@ ms.assetid: 050f1264-8fbe-4322-970c-184275d5b219
 title: Método de zoom
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2625e6c4facf006a0d904e49068853720e20c29e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb0c260e5a5404b65f4e0d0595a87ee78103c5acccedd32abf50fc5706c6b42f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104461289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119632692"
 ---
 # <a name="zoom-method"></a>Método de zoom
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

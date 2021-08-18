@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 60e3bde90da36a6122608b463b28df670f0d2a8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe0ba5c86fdb2df5fe168559aa019941897563823e75670b0813ecb7e9e44d69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119820346"
 ---
 # <a name="file-operation-progress-sink"></a>Coletor do andamento da operação de arquivo
 
@@ -22,7 +22,7 @@ Demonstra como usar os métodos de interface [**IFileOperationProgressSink**](/w
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -53,21 +53,21 @@ Para criar o exemplo na janela de prompt de comando:
 1.  Abra a janela do prompt de comando e navegue até o diretório do projeto **FileOperationProgressSink** .
 2.  Digite `msbuild FileOperationProgressSinkSample.sln`.
 
-Para criar o exemplo usando Microsoft Visual Studio (preferencial):
+para criar o exemplo usando Microsoft Visual Studio (preferencial):
 
-1.  Abra o Windows Explorer e navegue até o diretório do projeto **FilesInUse** . Por exemplo, o caminho de instalação padrão completo é `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppPlatform\FileOperationProgressSinkSample` .
+1.  abra Windows Explorer e navegue até o diretório do projeto **FilesInUse** . Por exemplo, o caminho de instalação padrão completo é `C:\Program Files\Microsoft SDKs\Windows\v7.0\Samples\WinUI\Shell\AppPlatform\FileOperationProgressSinkSample` .
 2.  Clique duas vezes no ícone do arquivo FileOperationProgressSinkSample. sln para abrir o projeto no Visual Studio.
     > [!Note]  
-    > A extensão de nome de arquivo. sln não é mostrada em configurações de pasta padrão. Nessa situação, ela pode ser identificada por seu ícone exclusivo ou por sua descrição de tipo, "solução de Microsoft Visual Studio".
+    > A extensão de nome de arquivo. sln não é mostrada em configurações de pasta padrão. nessa situação, ela pode ser identificada por seu ícone exclusivo ou por sua descrição de tipo, "solução de Microsoft Visual Studio".
 
      
 
-3.  No menu **Compilar** , selecione **Compilar solução**.
+3.  No menu **Compilar**, selecione **Compilar Solução**.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
-1.  Navegue até o diretório que contém o novo executável, usando a janela de prompt de comando ou o Windows Explorer.
-2.  No prompt de comando, digite `FileOperationProgressSinkSample.exe` ou, no Windows Explorer, clique duas vezes no ícone para FileOperationProgressSinkSample.exe.
+1.  navegue até o diretório que contém o novo executável, usando a janela de prompt de comando ou Windows Explorer.
+2.  no prompt de comando, digite `FileOperationProgressSinkSample.exe` ou, no Windows Explorer, clique duas vezes no ícone para FileOperationProgressSinkSample.exe.
 
  
 

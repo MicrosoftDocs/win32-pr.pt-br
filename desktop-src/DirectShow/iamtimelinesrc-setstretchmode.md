@@ -1,7 +1,7 @@
 ---
-description: O método setstretchmode define o modo de ampliação. O modo de ampliação determina como uma fonte de vídeo será renderizada se seu tamanho não corresponder às dimensões de saída.
+description: O método SetStretchMode define o modo de alongamento. O modo de alongamento determina como uma fonte de vídeo será renderizada se seu tamanho não corresponder às dimensões de saída.
 ms.assetid: 4f720975-5035-4539-895f-3eb3c3b31719
-title: 'Método IAMTimelineSrc:: setstretchmode (QEdit. h)'
+title: Método IAMTimelineSrc::SetStretchMode (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 2fae71362f6e09d2eae6c2cdf574a2fbda43930b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c12d14edf665bb3257b627a194923c267ee9e8bd25027e40a7a975a15c10025f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148539"
 ---
-# <a name="iamtimelinesrcsetstretchmode-method"></a>Método IAMTimelineSrc:: setstretchmode
+# <a name="iamtimelinesrcsetstretchmode-method"></a>Método IAMTimelineSrc::SetStretchMode
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `SetStretchMode` método define o modo Stretch. O modo de ampliação determina como uma fonte de vídeo será renderizada se seu tamanho não corresponder às dimensões de saída.
+O `SetStretchMode` método define o modo de alongamento. O modo de alongamento determina como uma fonte de vídeo será renderizada se seu tamanho não corresponder às dimensões de saída.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,23 +48,23 @@ HRESULT SetStretchMode(
 *nStretchMode* 
 </dt> <dd>
 
-Sinalizador que indica o modo de Stretch atual. Para obter uma lista de valores possíveis, consulte [**redimensionar sinalizadores**](resize-flags.md).
+Sinalizador que indica o modo de alongamento atual. Para ver uma lista de valores possíveis, consulte [**Resize Flags**](resize-flags.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Retorna S \_ OK.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Retorna S \_ OK.
 
 <dl> <dt>
 
-[**Interface IAMTimelineSrc**](iamtimelinesrc.md)
+[**IAMTimelineSrc Interface**](iamtimelinesrc.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

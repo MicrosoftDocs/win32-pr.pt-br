@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetGetLock'
-title: Método API. JetGetLock
+description: 'Saiba mais sobre: Método Api.JetGetLock'
+title: Método Api.JetGetLock
 TOCTitle: 'JetGetLock method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetLock(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.GetLockGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetlock(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b8480b6ac2eab84a0299e0bb3d480908e4f646fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 692d78c274d497c64deff20fc61f2cc6a32e868b6f591e4dd6a32437d007b1b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119623556"
 ---
-# <a name="apijetgetlock-method"></a>Método API. JetGetLock
+# <a name="apijetgetlock-method"></a>Método Api.JetGetLock
 
-Reserve explicitamente a capacidade de atualizar uma linha, bloqueio de gravação ou impedir explicitamente que uma linha seja atualizada por qualquer outra sessão, bloqueio de leitura. Normalmente, os bloqueios de gravação de linha são adquiridos implicitamente como resultado da atualização de linhas. Os bloqueios de leitura geralmente não são necessários devido ao controle de versão de registro. No entanto, em alguns casos, uma transação pode desejar bloquear explicitamente uma linha para impor a serialização ou para garantir que uma operação subsequente terá sucesso.
+Reserve explicitamente a capacidade de atualizar uma linha, um bloqueio de gravação ou impedir explicitamente que uma linha seja atualizada por qualquer outra sessão, bloqueio de leitura. Normalmente, os bloqueios de gravação de linha são adquiridos implicitamente como resultado da atualização de linhas. Bloqueios de leitura geralmente não são necessários devido ao registro de versão. No entanto, em alguns casos, uma transação pode desejar bloquear explicitamente uma linha para impor a serialização ou garantir que uma operação subsequente seja bem-sucedida.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,23 +64,23 @@ public static void JetGetLock(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     O cursor a ser usado. Um bloqueio será adquirido no registro atual.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. GetLockGrbit](./getlockgrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.GetLockGrbit](./getlockgrbit-enumeration.md)  
     
-    Opções de bloqueio, use esta opção para especificar o tipo de bloqueio a ser obtido.
+    Opções de bloqueio, use isso para especificar qual tipo de bloqueio obter.
 
 ## <a name="see-also"></a>Confira também
 
@@ -90,4 +90,4 @@ public static void JetGetLock(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

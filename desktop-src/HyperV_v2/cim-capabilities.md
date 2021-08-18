@@ -1,7 +1,7 @@
 ---
-description: Uma classe abstrata para subclasses que descreve as capacidades de um elemento gerenciado associado e o potencial das habilidades.
+description: Uma classe abstrata para subclasses que descreve as habilidades de um elemento gerenciado associado e o potencial das habilidades.
 ms.assetid: f0ffddf5-99d4-49be-ac0a-c2cfd4a92d96
-title: Classe CIM_Capabilities
+title: CIM_Capabilities classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e08fcef34c8c2e932851fb428fd32533eee4877e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7fc640950b7e943f0e549f41ec216b2832ec9de3b91938ef1aadea1893ac2faa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119561906"
 ---
-# <a name="cim_capabilities-class"></a>\_Classe de recursos CIM
+# <a name="cim_capabilities-class"></a>Classe De \_ funcionalidades CIM
 
-Uma classe abstrata para subclasses que descreve as capacidades de um elemento gerenciado associado e o potencial das habilidades.
+Uma classe abstrata para subclasses que descreve as habilidades de um elemento gerenciado associado e o potencial das habilidades.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,13 +39,13 @@ class CIM_Capabilities : CIM_ManagedElement
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ recursos CIM** tem estes tipos de membros:
+A **classe \_ Funcionalidades CIM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ recursos CIM** tem essas propriedades.
+A **classe \_ Funcionalidades CIM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -58,10 +58,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**obrigatório**](/windows/desktop/WmiSdk/standard-qualifiers), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
+Qualificadores: [**Obrigatório,**](/windows/desktop/WmiSdk/standard-qualifiers) [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("ElementName")
 </dt> </dl>
 
-O nome amigável do usuário para esta instância de classe. Além disso, o nome amigável do usuário pode ser usado como uma propriedade de índice para uma consulta. Esse valor não precisa ser exclusivo em seu namespace.
+O nome amigável para essa instância de classe. Além disso, o nome amigável do usuário pode ser usado como uma propriedade de índice para uma consulta. Esse valor não precisa ser exclusivo em seu namespace.
 
 </dd> <dt>
 
@@ -74,22 +74,22 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceId")
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
 </dt> </dl>
 
-Identifica exclusivamente e de forma opaca uma instância dessa classe dentro do escopo do namespace que a contém.
+Identifica de forma exclusiva e opaca uma instância dessa classe dentro do escopo do namespace que o contém.
 
 > [!IMPORTANT]
 >
-> Para garantir a exclusividade no namespace, o valor da propriedade **InstanceId** deve ser construído no seguinte padrão: *OrgID*:*LocalId*
+> Para garantir a exclusividade no namespace, o valor da **propriedade InstanceID** deve ser construído no seguinte padrão: *OrgID*:*LocalID*
 >
-> *OrgID* deve incluir um nome de direitos autorais, com marca registrada ou exclusivo que pertença à entidade de negócios que define a **InstanceId** ou ser uma ID registrada que é atribuída por uma autoridade global reconhecida. Esse padrão é semelhante à estrutura de nomes de classe de esquema. Além disso, para garantir a exclusividade, os primeiros dois-pontos em **InstanceId** devem estar entre *OrgID* e *LocalId*. Portanto, o *OrgID* não deve conter dois-pontos (': ').
+> *OrgID* deve incluir um nome protegido por direitos autorais, marcas comerciais ou exclusivos pertencentes à entidade de negócios que define a **InstanceID** ou ser uma ID registrada atribuída por uma autoridade global reconhecida. Esse padrão é semelhante à estrutura de nomes de classe de esquema. Além disso, para garantir a exclusividade, os primeiros dois-pontos **em InstanceID** devem estar entre *o OrgID* e *o LocalID.* Portanto, *a OrgID* não deve conter dois-pontos (':').
 >
-> A *LocalId* é escolhida pela entidade de negócios e não deve ser reutilizada para identificar elementos do mundo real subjacentes diferentes.
+> *LocalID* é escolhido pela entidade de negócios e não deve ser usado de novo para identificar diferentes elementos subjacentes do mundo real.
 >
-> Se o padrão acima não for usado, a entidade de definição deverá garantir que o valor de **InstanceId** resultante não seja reutilizado em todas as propriedades **InstanceId** produzidas por este provedor ou por outros provedores para esse namespace.
+> Se o padrão acima não for usado, a entidade de definição deverá garantir que o valor **de InstanceID** resultante não seja rea usado em nenhuma propriedade **InstanceID** produzida por esse provedor ou outros provedores para esse namespace.
 >
-> Para instâncias definidas pela DMTF (Distributed Management Task Force), o padrão deve ser usado com o *OrgID* definido como CIM.
+> Para instâncias definidas pela DMTF (Distributed Management Task Force), o padrão deve ser usado com *o OrgID* definido como CIM.
 
  
 
@@ -103,8 +103,8 @@ Identifica exclusivamente e de forma opaca uma instância dessa classe dentro do
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -113,7 +113,7 @@ Identifica exclusivamente e de forma opaca uma instância dessa classe dentro do
 
 <dl> <dt>
 
-[**\_Managedelement do CIM**](cim-managedelement.md)
+[**ManagedElement do CIM \_**](cim-managedelement.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Tex.h
-ms.openlocfilehash: f21958ab964a70116a551c0cb8dadbce6db88f7d
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4b29cbb958b2aa8af02000fc62d4d3a848c2efba585bd927674c9ceca9d65d9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119634956"
 ---
 # <a name="d3dx10_channel_flag-enumeration"></a>Enumeração de sinalizador de \_ canal D3DX10 \_
 

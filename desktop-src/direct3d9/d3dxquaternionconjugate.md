@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: bbf288724dbdede9d98ec4ee21afd1bb57dd7a49
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cb4828d6e6dec80e8721b4e5bddd4728da7a72dc0c6ea9a9c315800e0b17fa00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988456"
 ---
 # <a name="d3dxquaternionconjugate-function"></a>Função D3DXQuaternionConjugate
 
@@ -59,7 +59,7 @@ Ponteiro para a estrutura de [**D3DXQUATERNION**](d3dxquaternion.md) de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXQUATERNION**](d3dxquaternion.md)\***
 

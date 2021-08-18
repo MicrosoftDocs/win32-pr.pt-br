@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd11ac2b96846912b0c6b1e8d01c6fd558f5f6db
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 12fbda25794dfe75e7f75fce4c2796cabca00e26697f7321f9edec46276e874a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803056"
 ---
 # <a name="ms-pki-supersede-templates-attribute"></a>MS-PKI-precedência-atributo-templates
 
@@ -120,15 +120,15 @@ Especifica os nomes dos modelos de certificado que são substituídos pelo model
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Especifica os nomes dos modelos de certificado que são substituídos pelo model
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | Falso                                                                   |
+| Tem valor único       | Falso                                                                   |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

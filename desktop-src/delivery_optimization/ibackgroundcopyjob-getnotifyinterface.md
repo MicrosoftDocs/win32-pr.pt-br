@@ -1,11 +1,11 @@
 ---
-title: Método método ibackgroundcopyjob GetNotifyInterface (Deliveryoptimization. h)
+title: Método GetNotifyInterface de IBackgroundCopyJob (Deliveryoptimization.h)
 description: Recupera o ponteiro de interface para sua implementação da interface IBackgroundCopyCallback.
 ms.assetid: 1AA50C03-AC84-4AA9-8EC3-3FBA865C70C0
 keywords:
 - Método GetNotifyInterface
-- Método GetNotifyInterface, interface método ibackgroundcopyjob
-- Interface método ibackgroundcopyjob, método GetNotifyInterface
+- Método GetNotifyInterface, interface IBackgroundCopyJob
+- Interface IBackgroundCopyJob, método GetNotifyInterface
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6586a90de5783ceb24e5a7677f699a9cf6dfa60c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef8eab6c101cadde2b715c48fe3dae2443e72e93f623b397036e2467bcbf0b5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105763801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119755376"
 ---
-# <a name="ibackgroundcopyjobgetnotifyinterface-method"></a>Método método ibackgroundcopyjob:: GetNotifyInterface
+# <a name="ibackgroundcopyjobgetnotifyinterface-method"></a>Método IBackgroundCopyJob::GetNotifyInterface
 
-Recupera o ponteiro de interface para sua implementação da interface [**IBackgroundCopyCallback**](ibackgroundcopycallback.md) .
+Recupera o ponteiro de interface para sua implementação da interface [**IBackgroundCopyCallback.**](ibackgroundcopycallback.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,22 +43,22 @@ HRESULT GetNotifyInterface(
 
 <dl> <dt>
 
-*ppNotifyInterface* \[ fora\]
+*ppNotifyInterface* \[ out\]
 </dt> <dd>
 
-Ponteiro de interface para sua implementação da interface [**IBackgroundCopyCallback**](ibackgroundcopycallback.md) . Quando terminar, libere *ppNotifyInterface*.
+Ponteiro de interface para sua implementação da interface [**IBackgroundCopyCallback.**](ibackgroundcopycallback.md) Quando terminar, libere *ppNotifyInterface.*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna os valores **HRESULT** a seguir, bem como outros.
+Esse método retorna os seguintes **valores HRESULT,** bem como outros.
 
 
 
 | Código de retorno                                                                              | Descrição                                                           |
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| <dl> <dt>S_OK * * * *</dt> </dl> | O ponteiro da interface de notificação foi recuperado com êxito.<br/> |
+| <dl> <dt>S_OK****</dt> </dl> | O ponteiro da interface de notificação foi recuperado com êxito.<br/> |
 
 
 
@@ -70,11 +70,11 @@ Esse método retorna os valores **HRESULT** a seguir, bem como outros.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1709 somente para \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 somente \[ aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>DeliveryOptimization.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Dosvc.lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |
 | IID<br/>                      | IID_IBackgroundCopyJob é definido como 37668D37-507E-4160-9316-26306D150B12<br/>               |
 
@@ -84,16 +84,16 @@ Esse método retorna os valores **HRESULT** a seguir, bem como outros.
 
 <dl> <dt>
 
-[**Método ibackgroundcopyjob**](ibackgroundcopyjob-.md)
+[**IBackgroundCopyJob**](ibackgroundcopyjob-.md)
 </dt> <dt>
 
 [**IBackgroundCopyCallback**](ibackgroundcopycallback.md)
 </dt> <dt>
 
-[**Método ibackgroundcopyjob:: GetNotifyFlags**](ibackgroundcopyjob-getnotifyflags.md)
+[**IBackgroundCopyJob::GetNotifyFlags**](ibackgroundcopyjob-getnotifyflags.md)
 </dt> <dt>
 
-[**Método ibackgroundcopyjob:: SetNotifyInterface**](ibackgroundcopyjob-setnotifyinterface.md)
+[**IBackgroundCopyJob::SetNotifyInterface**](ibackgroundcopyjob-setnotifyinterface.md)
 </dt> </dl>
 
  

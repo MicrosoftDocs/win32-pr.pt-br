@@ -1,9 +1,9 @@
 ---
-title: SLIDER. transparencyColor
-description: O atributo transparencyColor especifica ou recupera a cor transparente das imagens de plano de fundo e de primeiro plano do controle deslizante.
+title: SLIDER.transparencyColor
+description: O atributo transparencyColor especifica ou recupera a cor transparente da tela de fundo do controle deslizante e das imagens em primeiro plano.
 ms.assetid: 857e3e48-bff2-4396-9f8c-c3d80b37c1d1
 keywords:
-- Controle deslizante. transparencyColor Windows Media Player
+- CONTROLE DESLIZANTE.transparencyColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cda638e03b62ff81e6c9470239c71c441c755c2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 43e853a788c92fbbf3f5b9135918b3be53e21ad76f7b50270e46ba2f92ff6191
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762858"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118644"
 ---
-# <a name="slidertransparencycolor"></a>SLIDER. transparencyColor
+# <a name="slidertransparencycolor"></a>SLIDER.transparencyColor
 
-O atributo **transparencyColor** especifica ou recupera a cor transparente das imagens de plano de fundo e de primeiro plano do controle deslizante.
+O **atributo transparencyColor** especifica ou recupera a cor transparente da tela de fundo do controle deslizante e das imagens em primeiro plano.
 
 ``` syntax
         elementID.transparencyColor
@@ -29,13 +29,13 @@ O atributo **transparencyColor** especifica ou recupera a cor transparente das i
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém qualquer valor de cor do Microsoft Internet Explorer. Não tem nenhum valor padrão.
+Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém qualquer valor de cor Internet Explorer Microsoft. Não tem nenhum valor padrão.
 
 ## <a name="remarks"></a>Comentários
 
-Qualquer parte da imagem que contenha o **transparencyColor** permitirá que o plano de fundo seja mostrado.
+Qualquer parte da imagem que contenha **a transparencyColor** permitirá que a plano de fundo seja demonstrada.
 
-Como JPGs são derrotas e, portanto, sujeitos à alteração de cor inesperada, eles não são recomendados quando **transparencyColor** é usado.
+Como os JPGs são com perda e, portanto, estão sujeitos a alterações de cor inesperadas, eles não são recomendados quando **transparencyColor** é usado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Como JPGs são derrotas e, portanto, sujeitos à alteração de cor inesperada, 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -54,7 +54,7 @@ Como JPGs são derrotas e, portanto, sujeitos à alteração de cor inesperada, 
 [**Elemento SLIDER**](slider-element.md)
 </dt> <dt>
 
-[**Referência de cor**](color-reference.md)
+[**Referência de cores**](color-reference.md)
 </dt> </dl>
 
  

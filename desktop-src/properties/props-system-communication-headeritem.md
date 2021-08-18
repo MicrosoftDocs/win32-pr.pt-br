@@ -1,19 +1,19 @@
 ---
-description: Essa propriedade será true se o item for um item de cabeçalho, o que significa que o item não foi totalmente baixado.
+description: Essa propriedade será verdadeira se o item for um item de header, o que significa que o item não foi totalmente baixado.
 ms.assetid: f7f904a6-99b8-4680-ac16-8ecbccf3239f
-title: System. Communication. HeaderItem
+title: System.Communication.HeaderItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eae7973d50d1bf6cee6c7f25c097813490fc52af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16af0bea85f3e1f24442da8ab4e1a5162e724131c497daf40cb1e3850492ec26
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119823216"
 ---
-# <a name="systemcommunicationheaderitem"></a>System. Communication. HeaderItem
+# <a name="systemcommunicationheaderitem"></a>System.Communication.HeaderItem
 
-Essa propriedade será true se o item for um item de cabeçalho, o que significa que o item não foi totalmente baixado.
+Essa propriedade será verdadeira se o item for um item de header, o que significa que o item não foi totalmente baixado.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81-windows-8-windows-7-windows-vista"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1, Windows 8, Windows 7, Windows Vista
 
@@ -32,13 +32,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -47,19 +47,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -74,7 +74,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

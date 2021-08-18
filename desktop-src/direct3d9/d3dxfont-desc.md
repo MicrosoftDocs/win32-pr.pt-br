@@ -1,7 +1,7 @@
 ---
 description: Define os atributos de uma fonte.
 ms.assetid: 6f456f26-3410-4205-a013-e3c12bf0feb1
-title: Estrutura de D3DXFONT_DESC (D3dx9core. h)
+title: D3DXFONT_DESC estrutura (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9core.h
-ms.openlocfilehash: d7c142787e4e4fac5be53763a3c19fd86a27efd9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: b458d9c3575993dd3d478f886d0b71b3cd5c1af0a53330b0813deafa188ac4c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119728536"
 ---
-# <a name="d3dxfont_desc-structure"></a>\_Estrutura desc de D3DXFONT
+# <a name="d3dxfont_desc-structure"></a>Estrutura D3DXFONT \_ DESC
 
 Define os atributos de uma fonte.
 
@@ -51,18 +51,18 @@ typedef struct D3DXFONT_DESC {
 **Altura**
 </dt> <dd>
 
-Tipo: **[ **int**](../winprog/windows-data-types.md)**
+Tipo: **[ **INT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Altura, em unidades lógicas, da célula ou do caractere de caractere da fonte.
+Altura, em unidades lógicas, da célula ou caractere de caractere da fonte.
 
 </dd> <dt>
 
 **Largura**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -73,7 +73,7 @@ Largura, em unidades lógicas, de caracteres na fonte.
 **Weight**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -84,29 +84,29 @@ Peso da fonte no intervalo de 0 a 1000.
 **MipLevels**
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de níveis de MIP solicitados. Se esse valor for zero ou D3DX \_ padrão, uma cadeia de mipmap completa será criada. Se o valor for 1, o espaço de textura será mapeado de forma idêntica ao espaço da tela.
+Número de níveis de mip solicitados. Se esse valor for zero ou D3DX \_ DEFAULT, uma cadeia de mipmap completa será criada. Se o valor for 1, o espaço de textura será mapeado de forma idêntica ao espaço da tela.
 
 </dd> <dt>
 
 **Itálico**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Defina como **true** para uma fonte em itálico.
+Definido como **TRUE** para uma fonte Itálico.
 
 </dd> <dt>
 
 **CharSet**
 </dt> <dd>
 
-Tipo: **[ **byte**](../winprog/windows-data-types.md)**
+Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -117,33 +117,33 @@ Conjunto de caracteres.
 **OutputPrecision**
 </dt> <dd>
 
-Tipo: **[ **byte**](../winprog/windows-data-types.md)**
+Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Precisão de saída. A precisão de saída define o quão próximo a saída deve corresponder à altura da fonte, largura, orientação do caractere, escape, Tom e tipo de fonte solicitados.
+Precisão de saída. A precisão de saída define o quanto a saída deve corresponder à altura, largura, orientação de caracteres, escape, tom e tipo de fonte solicitados.
 
 </dd> <dt>
 
 **Qualidade**
 </dt> <dd>
 
-Tipo: **[ **byte**](../winprog/windows-data-types.md)**
+Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Qualidade de saída.
+Qualidade da saída.
 
 </dd> <dt>
 
 **PitchAndFamily**
 </dt> <dd>
 
-Tipo: **[ **byte**](../winprog/windows-data-types.md)**
+Tipo: **[ **BYTE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Densidade e família da fonte.
+Tom e família da fonte.
 
 </dd> <dt>
 
@@ -154,15 +154,15 @@ Tipo: **TCHAR**
 
 </dd> <dd>
 
-Uma cadeia de caracteres terminada em nulo que especifica o nome de tipo da fonte. O comprimento da cadeia de caracteres não deve exceder 32 caracteres, incluindo o caractere nulo de terminação. Se facename for uma cadeia de caracteres vazia, a primeira fonte que corresponde aos outros atributos especificados será usada. Se as configurações do compilador exigirem Unicode, o tipo de dados TCHAR será resolvido para WCHAR; caso contrário, o tipo de dados será resolvido para CHAR. Consulte Observações.
+Uma cadeia de caracteres terminada em nulo ou caracteres que especifica o nome da face de tipo da fonte. O comprimento da cadeia de caracteres não deve exceder 32 caracteres, incluindo o caractere nulo de terminação. Se FaceName for uma cadeia de caracteres vazia, a primeira fonte que corresponder aos outros atributos especificados será usada. Se as configurações do compilador exigirem Unicode, o tipo de dados TCHAR será resolvido para WCHAR; caso contrário, o tipo de dados será resolvido como CHAR. Consulte Observações.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A configuração do compilador também determina o tipo de estrutura. Se o Unicode estiver definido, o \_ tipo de estrutura desc D3DXFONT resolverá para um D3DXFONT \_ DESCW; caso contrário, o tipo de estrutura será resolvido para um D3DXFONT \_ desca.
+A configuração do compilador também determina o tipo de estrutura. Se Unicode for definido, o tipo de estrutura DESC D3DXFONT será resolvido para um DESCW D3DXFONT; caso contrário, o tipo de estrutura será resolvido para um \_ \_ DESCA D3DXFONT. \_
 
-Os valores possíveis dos membros acima são fornecidos na estrutura GDI [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) .
+Os valores possíveis dos membros acima são dados na estrutura [**GDI LOGFONT.**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -170,7 +170,7 @@ Os valores possíveis dos membros acima são fornecidos na estrutura GDI [**LOGF
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9core. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9core.h</dt> </dl> |
 
 
 

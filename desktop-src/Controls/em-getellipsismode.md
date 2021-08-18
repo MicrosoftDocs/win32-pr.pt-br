@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETELLIPSISMODE (RichEdit. h)
-description: Recupera o modo de reticências atual.
+title: EM_GETELLIPSISMODE mensagem (Richedit.h)
+description: Recupera o modo de reellipse atual.
 ms.assetid: 01A755F3-6C6E-4974-9866-76BF15E0F3AD
 keywords:
-- Controles de EM_GETELLIPSISMODE de mensagens do Windows
+- EM_GETELLIPSISMODE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09b7273cbfd6e87b4591c00267860c9a164aad5e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6706c2b6ee75852fd0b3ee7a1a9d18b25d20d242d72068ba073d1bb025ff8ed5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019694"
 ---
-# <a name="em_getellipsismode-message"></a>\_Mensagem em getreticências
+# <a name="em_getellipsismode-message"></a>Mensagem EM \_ GETELLIPSISMODE
 
-Recupera o modo de reticências atual. Quando habilitado, uma reticências () é exibida para texto que não se encaixa na janela de exibição. As reticências só são usadas quando o controle não está ativo. Quando ativas, as barras de rolagem são usadas para revelar texto que não se encaixa na janela de exibição.
+Recupera o modo de reellipse atual. Quando habilitada, uma reellipse ( ) é exibida para o texto que não se ajusta à janela de exibição. As reellipses só são usadas quando o controle não está ativo. Quando ativas, as barras de rolagem são usadas para revelar texto que não se ajusta à janela de exibição.
 
 
 ```C++
@@ -52,9 +52,9 @@ Ponteiro para um DWORD que recebe um dos valores a seguir.
 
 | Valor                                                                                                                                                         | Significado                                        |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| <span id="ELLIPSIS_NONE"></span><span id="ellipsis_none"></span><dl> <dt>**RETICÊNCIAs \_ None**</dt> </dl> | Nenhuma elipse é usada.<br/>                |
-| <span id="ELLIPSIS_END"></span><span id="ellipsis_end"></span><dl> <dt>**fim da elipse \_**</dt> </dl>    | Reticências no final (quebra forçada).<br/> |
-| <span id="ELLIPSIS_WORD"></span><span id="ellipsis_word"></span><dl> <dt>**palavra de RETICÊNCIAs \_**</dt> </dl> | Reticências no final (quebra de palavra).<br/>   |
+| <span id="ELLIPSIS_NONE"></span><span id="ellipsis_none"></span><dl> <dt>**REELLIPSIS \_ NONE**</dt> </dl> | Nenhuma reellipse é usada.<br/>                |
+| <span id="ELLIPSIS_END"></span><span id="ellipsis_end"></span><dl> <dt>**FIM DAS \_ REELLIPSES**</dt> </dl>    | Reellipses no final (quebra forçada).<br/> |
+| <span id="ELLIPSIS_WORD"></span><span id="ellipsis_word"></span><dl> <dt>**PALAVRA DE \_ RELIPSIS**</dt> </dl> | Reellipse no final (quebra de palavra).<br/>   |
 
 
 
@@ -62,9 +62,9 @@ Ponteiro para um DWORD que recebe um dos valores a seguir.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se wParam for 0 e lParam não for NULL, o valor de retorno será igual a TRUE; caso contrário, o valor de retorno será igual a falso.
+Se wparam for 0 e lparam não for NULL, o valor de retorno será igual a TRUE; caso contrário, o valor de retorno será igual a FALSE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,9 +72,9 @@ Se wParam for 0 e lParam não for NULL, o valor de retorno será igual a TRUE; c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -82,10 +82,10 @@ Se wParam for 0 e lParam não for NULL, o valor de retorno será igual a TRUE; c
 
 <dl> <dt>
 
-[**em \_ setreticências**](em-setellipsismode.md)
+[**EM \_ SETELLIPSISMODE**](em-setellipsismode.md)
 </dt> <dt>
 
-[**em \_ getreticências**](em-getellipsisstate.md)
+[**EM \_ GETELLIPSISSTATE**](em-getellipsisstate.md)
 </dt> </dl>
 
  

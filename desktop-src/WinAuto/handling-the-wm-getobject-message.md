@@ -4,12 +4,12 @@ description: O Microsoft Acessibilidade Ativa e a automação da interface do us
 ms.assetid: 4b8e551f-aba7-4a89-8874-ba690175f525
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 695fad8f050606f0a95a1780551d35499e39d166
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 732ebd21cc6d198040e5502554ce2a8cf1abb718c055bc9af9f88e0c5d123b4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105780309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994186"
 ---
 # <a name="handling-the-wm_getobject-message"></a>Manipulando a \_ mensagem do WM GETobject
 
@@ -24,8 +24,8 @@ O Microsoft Acessibilidade Ativa ou a automação da interface do usuário espec
 
 A Microsoft Acessibilidade Ativa e a automação da interface do usuário podem passar identificadores de objeto personalizados em uma mensagem do [**WM \_ GetObject**](wm-getobject.md) para recuperar valores ou objetos definidos pelo aplicativo de um servidor ou provedor. O identificador de objeto [**OBJID \_ NATIVEOM**](object-identifiers.md) ou [**OBJID \_ QUERYCLASSNAMEIDX**](object-identifiers.md) pode ser usado para recuperar uma interface de modelo de objeto nativo ou para solicitar um objeto proxy específico com suporte pelo Oleacc.dll.
 
-Ao manipular o [**\_ cliente OBJID**](object-identifiers.md) e os identificadores de objeto **UiaRootObjectId** , uma implementação do Microsoft acessibilidade ativa Server pode coexistir junto com uma implementação do provedor de automação da interface do usuário. Como a maioria dos controles padrão do Windows e os controles comuns implementados pela biblioteca de controle comum (ComCtl32.dll) não implementam o Microsoft Acessibilidade Ativa ou a automação da interface do usuário, normalmente esses controles não manipulam a mensagem do [**WM \_ GetObject**](wm-getobject.md) . Em vez disso, o Microsoft Acessibilidade Ativa ou a estrutura de automação de interface do usuário verifica se um objeto proxy está disponível para um determinado elemento de interface do usuário. Caso contrário, ele fornece o objeto proxy padrão para o objeto de janela do host.
+Ao manipular o [**\_ cliente OBJID**](object-identifiers.md) e os identificadores de objeto **UiaRootObjectId** , uma implementação do Microsoft acessibilidade ativa Server pode coexistir junto com uma implementação do provedor de automação da interface do usuário. como a maioria dos controles de Windows padrão e os controles comuns implementados pela biblioteca de controle comum (ComCtl32.dll) não implementam o Microsoft Acessibilidade Ativa ou a automação da interface do usuário, normalmente esses controles não manipulam a mensagem do [**WM \_ getobject**](wm-getobject.md) . Em vez disso, o Microsoft Acessibilidade Ativa ou a estrutura de automação de interface do usuário verifica se um objeto proxy está disponível para um determinado elemento de interface do usuário. Caso contrário, ele fornece o objeto proxy padrão para o objeto de janela do host.
 
- 
+ 
 
- 
+ 

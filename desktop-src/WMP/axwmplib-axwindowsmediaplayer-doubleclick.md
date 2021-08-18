@@ -1,9 +1,9 @@
 ---
 title: Evento DoubleClick do objeto AxWindowsMediaPlayer
-description: O evento DoubleClick ocorre quando o usuário clica duas vezes em um botão do mouse em um controle do Windows Media Player.
+description: O evento DoubleClick ocorre quando o usuário clica duas vezes em um botão do mouse em um Windows Media Player controle.
 ms.assetid: 4f116d8a-1ad5-443a-9c91-66214bbdebcf
 keywords:
-- Evento DoubleClick do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento DoubleClick do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ac809e8ea61b3abbbc964f6dc9ee2976442fc31
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cb01a5d0d5b9dd750c1232badb913000218a088d1ba6b41bc22e4e5dd49a6230
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119136099"
 ---
 # <a name="doubleclick-event-of-the-axwindowsmediaplayer-object"></a>Evento DoubleClick do objeto AxWindowsMediaPlayer
 
-O evento DoubleClick ocorre quando o usuário clica duas vezes em um botão do mouse em um controle do Windows Media Player.
+O evento DoubleClick ocorre quando o usuário clica duas vezes em um botão do mouse em um Windows Media Player controle.
 
 ``` syntax
 [C#]
@@ -47,10 +47,10 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Propriedade    | Descrição                                                                                                                                                                                                                                                                                                                    |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nnovo     | O campo do sistema. Int16a com bits correspondente ao botão esquerdo (bit 0), botão direito (bit 1) e botão do meio (bit 2). Esses bits correspondem aos valores 1, 2 e 4, respectivamente. Apenas um dos bits é definido, indicando o botão que causou o evento.<br/>                                                |
-| nShiftState | O campo do sistema. Int16a com os bits menos significativos correspondentes à tecla SHIFT (bit 0), a tecla CTRL (bit 1) e a tecla ALT (bit 2). Esses bits correspondem aos valores 1, 2 e 4, respectivamente. Alguns, todos ou nenhum dos bits podem ser definidos, indicando que algumas, todas ou nenhuma das chaves são pressionadas.<br/> |
-| Efeito          | System. Int32The x-coordenada do ponteiro do mouse em relação ao canto superior esquerdo do controle.<br/>                                                                                                                                                                                                                 |
-| SAR          | System. Int32The y-coordenada do ponteiro do mouse em relação ao canto superior esquerdo do controle.<br/>                                                                                                                                                                                                                 |
+| nButton     | System.Int16A bitfield com bits correspondentes ao botão esquerdo (bit 0), botão direito (bit 1) e botão central (bit 2). Esses bits correspondem aos valores 1, 2 e 4, respectivamente. Apenas um dos bits está definido, indicando o botão que causou o evento.<br/>                                                |
+| nShiftState | Campo de bits System.Int16A com os bits menos significativos correspondentes à tecla SHIFT (bit 0), à tecla CTRL (bit 1) e à tecla ALT (bit 2). Esses bits correspondem aos valores 1, 2 e 4, respectivamente. Alguns, todos ou nenhum dos bits podem ser definidos, indicando que algumas, todas ou nenhuma das chaves são pressionadas.<br/> |
+| Fx          | System.Int32A coordenada x do ponteiro do mouse em relação ao canto superior esquerdo do controle.<br/>                                                                                                                                                                                                                 |
+| Fy          | System.Int32A coordenada y do ponteiro do mouse em relação ao canto superior esquerdo do controle.<br/>                                                                                                                                                                                                                 |
 
 
 
@@ -62,7 +62,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

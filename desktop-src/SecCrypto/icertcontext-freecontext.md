@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: e1f4c216f6e417726e60d5f2e2bd67387a51d352
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 06809d8950d62f1136b8efc25c8e5b4499e020dce956d65f9e0d4a0e349567de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119006184"
 ---
 # <a name="icertcontextfreecontext-method"></a>Método ICertContext:: FreeContext
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP.\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP.\]
 
 O método **FreeContext** libera um \_ contexto PCCERT adquirido por meio da propriedade [**CertContext**](icertcontext-certcontext.md) .
 
@@ -49,7 +49,7 @@ O contexto de PCCERT \_ a ser liberado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é um **HRESULT**. Um valor de S \_ OK indica êxito. Qualquer outro valor indica que a operação falhou.
 
@@ -63,7 +63,7 @@ Esse método não libera o contexto PCCERT \_ contido em um objeto de [**certifi
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: eee6e0555d45d3f52173fce085d19c14f2ccfe8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5be9402dbbbf7c46528ceeab944317fa35857f9521db41b621ab246c8da86be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119821126"
 ---
 # <a name="iuseridentitymanagerlogon-method"></a>Método IUserIdentityManager:: logon
 
@@ -46,7 +46,7 @@ HRESULT Logon(
 *hwndParent* \[ no\]
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 Um valor de **HWND** que identifica uma janela que será colocada em primeiro plano depois que a interface do usuário de logon for ignorada.
 
@@ -70,7 +70,7 @@ O endereço do ponteiro que recebe a identidade do usuário escolhida.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -78,7 +78,7 @@ Resultado da operação de logon. Se for bem-sucedido, retornará S \_ OK. Caso 
 
 
 
-| Código de retorno                                                                                            | Description                                                                                 |
+| Código de retorno                                                                                            | Descrição                                                                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
 | <dl> <dt>**E \_ usuário \_ cancelados**</dt> </dl>      | O usuário cancelou a operação de logon da IU.<br/>                               |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Não foi possível criar a identidade do usuário.<br/>                                          |
@@ -101,7 +101,7 @@ Resultado da operação de logon. Se for bem-sucedido, retornará S \_ OK. Caso 
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Fim do suporte do cliente<br/>    | Windows 2000 Professional<br/>                                                   |
 | Fim do suporte do servidor<br/>    | Windows 2000 Server<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 

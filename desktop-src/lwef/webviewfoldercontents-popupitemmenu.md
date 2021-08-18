@@ -3,9 +3,9 @@ title: Método WebViewFolderContents. PopupItemMenu (shldisp. h)
 description: Método WebViewFolderContents. PopupItemMenu – cria um menu de atalho para o item especificado e retorna a cadeia de caracteres de comando selecionada.
 ms.assetid: 3c07500c-2fe9-4976-a1a8-b128e75f9325
 keywords:
-- Recursos do ambiente Windows herdado do método PopupItemMenu
-- Método PopupItemMenu recursos de ambiente herdados do Windows, objeto WebViewFolderContents
-- Recursos do ambiente Windows herdado do objeto WebViewFolderContents, método PopupItemMenu
+- recursos de ambiente de Windows herdado do método PopupItemMenu
+- método PopupItemMenu herdado Windows recursos de ambiente, objeto WebViewFolderContents
+- WebViewFolderContents objeto herdado Windows recursos de ambiente, método PopupItemMenu
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c879e10097b334f0c2d4f98b1b76289d20ee4a93
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 274237b2a17aa3e891f0c65f139cc7b251c1ff8a78b1f0ad387fb2931c8e3107
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035964"
 ---
 # <a name="webviewfoldercontentspopupitemmenu-method"></a>Método WebViewFolderContents. PopupItemMenu
 
@@ -79,7 +79,7 @@ Quando esse método retorna, contém a cadeia de caracteres de comando.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso apropriado de **PopupItemMenu** para JScript Embedded em HTML.
+o exemplo a seguir mostra o uso apropriado de **PopupItemMenu** para JScript inserido em HTML.
 
 
 ```HTML
@@ -121,7 +121,7 @@ O exemplo a seguir mostra o uso apropriado de **PopupItemMenu** para JScript Emb
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9960f47ac21dad2521f6272c9176e3d895bbd109
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cd4aaa857ac89594b1114612c59f959f0d91b050f6f9c0f0c9290798acf829f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105768273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120820"
 ---
 # <a name="id3dxloaduserdataloadmeshchilddata-method"></a>Método ID3DXLoadUserData:: LoadMeshChildData
 
@@ -59,7 +59,7 @@ Ponteiro para uma estrutura de dados de arquivo. x. Isso é definido em Dxfile. 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

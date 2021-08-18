@@ -3,9 +3,9 @@ title: Método IWMPNetwork getProxyBypassForLocal
 description: O método getProxyBypassForLocal retorna um valor que indica se o servidor proxy será ignorado se o servidor de origem estiver em uma rede local.
 ms.assetid: 150a05f3-6979-4a88-a617-472f07d38807
 keywords:
-- método getProxyBypassForLocal Windows Media Player
+- Windows Media Player do método getProxyBypassForLocal
 - método getProxyBypassForLocal Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, método getProxyBypassForLocal
+- Windows Media Player de interface IWMPNetwork, método getProxyBypassForLocal
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b87b1f00432ec91dd4379a9fa5e31664437afe0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 50d23307ab8872fb49b2b4797d54b78a71a04adba350287fa23cb8e5ab90541c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996476"
 ---
 # <a name="iwmpnetworkgetproxybypassforlocal-method"></a>Método IWMPNetwork:: getProxyBypassForLocal
 
@@ -60,7 +60,7 @@ Um **System. String** que é o nome do protocolo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um valor **System. Boolean** que indica se o servidor proxy é ignorado. O valor é significativo somente quando **IWMPNetwork. getProxySettings** retorna um valor de 2 (use as configurações manuais).
 
@@ -70,7 +70,7 @@ Esse método falha a menos que o aplicativo de chamada esteja em execução no c
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir usa **getProxyBypassForLocal** para exibir se o Windows Media Player está definido para ignorar o servidor proxy para endereços locais. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+o exemplo de código a seguir usa **getProxyBypassForLocal** para exibir se Windows Media Player está definido para ignorar o servidor proxy para endereços locais. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
 
 
 ```VB

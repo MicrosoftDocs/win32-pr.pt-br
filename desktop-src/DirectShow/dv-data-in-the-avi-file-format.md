@@ -4,16 +4,16 @@ ms.assetid: ae1ec184-afc3-4ec1-9b92-f53656293446
 title: Dados de DV no formato de arquivo AVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 65f1393bfe4bbee4d080d90755f33cfa7f4a7fa4
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0c048cb42fa3ba49457c115944075c064b9cfd4c31263519e9d5af3e5f0a268a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119749106"
 ---
 # <a name="dv-data-in-the-avi-file-format"></a>Dados de DV no formato de arquivo AVI
 
-A Microsoft especificou o formato de armazenamento de dados de vídeo digital (DV) em arquivos AVI. Em conformidade com essa especificação, você garantirá que os arquivos AVI criados nesse formato serão compatíveis com as versões futuras da arquitetura de vídeo digital do DirectShow para o Windowsplatform.
+A Microsoft especificou o formato de armazenamento de dados de vídeo digital (DV) em arquivos AVI. em conformidade com essa especificação, você garantirá que os arquivos AVI criados nesse formato serão compatíveis com as versões futuras da arquitetura de vídeo digital DirectShow para o Windowsplatform.
 
 Este artigo descreve o formato dos arquivos AVI que contêm dados DV. Os FOURCC (códigos de quatro caracteres) específicos para os fluxos de dados de DV e os manipuladores de fluxo do DV compressor/descompactador estão definidos. A estrutura de formato de fluxo para dados DV está definida. As especificações para dois métodos de armazenamento de dados DV no formato de arquivo AVI são especificadas.
 
@@ -23,7 +23,7 @@ Há dois tipos de arquivos AVI do DV: arquivos AVI que contêm um fluxo de dados
 
 **Arquivos AVI contendo um fluxo de dados DV (tipo 1)**
 
-Os dados intercalados de DV podem ser armazenados em seu formato nativo como um único fluxo dentro de um arquivo RIFF AVI. Isso tem a vantagem de usar a quantidade mínima de armazenamento de dados para DV. A desvantagem principal é que esse formato de arquivo não é compatível com versões anteriores com vídeo para Windows, porque ele não contém um vídeo "vids" ou um fluxo "auds" de áudio. O suporte é fornecido para o fluxo DV intercalado por meio dos filtros [DV Muxer](dv-muxer-filter.md) e [DV Splitter](dv-splitter-filter.md) fornecidos com o DirectShow.
+Os dados intercalados de DV podem ser armazenados em seu formato nativo como um único fluxo dentro de um arquivo RIFF AVI. Isso tem a vantagem de usar a quantidade mínima de armazenamento de dados para DV. a desvantagem principal é que esse formato de arquivo não é compatível com versões anteriores com vídeo para Windows, porque ele não contém um vídeo "vids" ou um fluxo "auds" de áudio. O suporte é fornecido para o fluxo DV intercalado por meio dos filtros [DV Muxer](dv-muxer-filter.md) e [DV splitter](dv-splitter-filter.md) fornecidos com DirectShow.
 
 Os dados de DV podem ser armazenados em um único fluxo dentro de um arquivo RIFF AVI especificando o "iAVS" (fluxo de áudio e vídeo intercalado) FOURCC (código de quatro caracteres) no membro **fccType** e qualquer um dos "dvsd", "dvhd" ou "DVSL" FOURCC no membro **fccHandler** da parte de cabeçalho de fluxo "strh". Os quadros por segundo do fluxo de vídeo devem ser especificados nos membros **dwRate** e **dwScale** e o número total de blocos de vídeo na parte ' movi ' no membro **dwLength** .
 
@@ -90,9 +90,9 @@ O exemplo a seguir mostra o formato de RIFF AIFF para um arquivo AVI com um flux
 
 
 
-**Arquivos AVI que contêm vídeo DV e fluxos de áudio DV (tipo 2)**
+**arquivos AVI que contêm vídeo dv e áudio dv Fluxos (tipo 2)**
 
-Os dados intercalados de DV podem ser divididos em um fluxo de vídeo e de um a quatro fluxos de áudio em um arquivo RIFF AVI. Isso tem a vantagem de ser compatível com versões anteriores com vídeo para Windows, pois contém um fluxo de vídeo "vids" padrão e pelo menos um fluxo de áudio "auds" padrão. a desvantagem principal é que esse formato de arquivo requer que os dados de áudio sejam armazenados de forma redundante como fluxos de áudio. O fluxo de "vídeo" é, na verdade, o fluxo de dados de DV intercalado nativo. No entanto, como um fluxo "vids" padrão com um tipo de manipulador de "dvsd", o [decodificador de vídeo DV](dv-video-decoder-filter.md) é usado. Esse formato também requer o uso do filtro de [Splitter DV](dv-splitter-filter.md) para dividir arquivos "capturados" antes de gravá-los como arquivos AVI.
+Os dados intercalados de DV podem ser divididos em um fluxo de vídeo e de um a quatro fluxos de áudio em um arquivo RIFF AVI. isso tem a vantagem de ser compatível com versões anteriores com vídeo para Windows, pois contém um fluxo padrão de vídeo ' vids ' e pelo menos um fluxo de áudio padrão ' auds '. a desvantagem principal é que esse formato de arquivo requer que os dados de áudio sejam armazenados de forma redundante como fluxos de áudio. O fluxo de "vídeo" é, na verdade, o fluxo de dados de DV intercalado nativo. No entanto, como um fluxo "vids" padrão com um tipo de manipulador de "dvsd", o [decodificador de vídeo DV](dv-video-decoder-filter.md) é usado. Esse formato também requer o uso do filtro de [Splitter DV](dv-splitter-filter.md) para dividir arquivos "capturados" antes de gravá-los como arquivos AVI.
 
 Os dados DV podem ser armazenados como um fluxo de vídeo com um número separado de fluxos de áudio em um arquivo RIFF AVI. O fluxo de vídeo é especificado com um cabeçalho de fluxo de vídeo padrão (o valor do membro **fccType** é ' vids '). O membro **fccHandler** é especificado como ' dvsd ', ' dvhd ' ou ' dvsl '. Os quadros por segundo do fluxo de vídeo devem ser especificados nos membros **dwRate** e **dwScale** e o número total de blocos de vídeo na parte ' movi ' no membro **dwLength** .
 

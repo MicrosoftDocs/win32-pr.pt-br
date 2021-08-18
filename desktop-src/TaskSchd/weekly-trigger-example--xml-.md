@@ -1,6 +1,6 @@
 ---
 title: Exemplo de gatilho semanal (XML)
-description: O XML neste exemplo define uma tarefa que inicia o bloco de notas em uma base quinzenal.
+description: o XML neste exemplo define uma tarefa que inicia Bloco de notas em uma base quinzenal.
 ms.assetid: 1911e8b1-2583-440c-a6ed-d71080b60987
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: bf8c2683311aecc427e9570a0452c746375eca01
-ms.sourcegitcommit: 40dd8501397fc79a643deb528c6c57ac2e9726ce
+ms.openlocfilehash: 7c038c21db137ce9180d76cecf4c2885274f7cdd72720b12b919f9a39e98e575
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2020
-ms.locfileid: "104365424"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001800"
 ---
 # <a name="weekly-trigger-example-xml"></a>Exemplo de gatilho semanal (XML)
 
-O XML neste exemplo define uma tarefa que inicia o bloco de notas em uma base quinzenal.
+o XML neste exemplo define uma tarefa que inicia Bloco de notas em uma base quinzenal.
 
-Para registrar uma tarefa que é definida em XML, você pode usar a função [**ITaskFolder:: RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder. RegisterTask**](taskfolder-registertask.md) para scripts) ou a ferramenta de linha de comando Schtasks.exe. Se você usar a ferramenta de Schtasks.exe (localizada no diretório C: \\ Windows \\ System32), poderá usar o comando a seguir para registrar a tarefa: **SCHTASKS/CREATE/XML** *<path to the XML file containing the task definition>* **/TN** *<task name>* .
+Para registrar uma tarefa que é definida em XML, você pode usar a função [**ITaskFolder:: RegisterTask**](/windows/desktop/api/taskschd/nf-taskschd-itaskfolder-registertask) ([**TaskFolder. RegisterTask**](taskfolder-registertask.md) para scripts) ou a ferramenta de linha de comando Schtasks.exe. se você usar a ferramenta de Schtasks.exe (localizada no diretório C: \\ Windows \\ System32), poderá usar o comando a seguir para registrar a tarefa: **schtasks/create/xml** *<path to the XML file containing the task definition>* **/tn** *<task name>* .
 
-## <a name="to-define-a-task-to-start-notepad-every-other-week-on-monday-at-800-am"></a>Para definir uma tarefa para iniciar o bloco de notas a cada outra semana na segunda-feira às 8:00
+## <a name="to-define-a-task-to-start-notepad-every-other-week-on-monday-at-800-am"></a>para definir uma tarefa a ser iniciada Bloco de notas todas as outras semanas na segunda-feira às 8:00
 
-O exemplo de XML a seguir mostra como definir uma tarefa com uma única ação de execução (iniciando o bloco de notas), um único gatilho de calendário (inicia a tarefa a cada outra semana na segunda-feira às 8:00 AM) e várias outras configurações de tarefa que afetam o modo como a tarefa é manipulada pelo Agendador de Tarefas.
+o exemplo de XML a seguir mostra como definir uma tarefa com uma única ação de execução (iniciando Bloco de notas), um único gatilho de calendário (inicia a tarefa a cada outra semana na segunda-feira às 8:00 AM) e várias outras configurações de tarefa que afetam o modo como a tarefa é manipulada pelo Agendador de Tarefas.
 
 
 ```XML
@@ -92,7 +92,7 @@ Aqui estão alguns elementos importantes para ter em mente ao usar este exemplo.
 
     Define o agendamento semanal. Nesse caso, o intervalo é definido para executar a tarefa a cada segunda semana em uma segunda-feira.
 
--   [**Beneficiário**](taskschedulerschema-principal-principaltype-element.md)
+-   [**Principal**](taskschedulerschema-principal-principaltype-element.md)
 
     Define o contexto de segurança em que uma tarefa é executada.
 
@@ -102,7 +102,7 @@ Aqui estão alguns elementos importantes para ter em mente ao usar este exemplo.
 
 -   [**Ações**](taskschedulerschema-actions-tasktype-element.md)
 
-    Define as ações que a tarefa executa (nesse caso, executando o bloco de notas).
+    define as ações que a tarefa executa (nesse caso, executando Bloco de notas).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -111,9 +111,9 @@ Aqui estão alguns elementos importantes para ter em mente ao usar este exemplo.
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

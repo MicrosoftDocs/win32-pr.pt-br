@@ -4,12 +4,12 @@ ms.assetid: 7183be25-a8e4-47a0-a34a-63eadf6ca10d
 title: Criação e seleção de fontes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 37b4a70a1a49fc318ca69998d97e15fca838668d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 555293e78d5ddc60284f8cb36aa3da9cfcc84062e1954059af4ead1ad9e19c5e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988825"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119037934"
 ---
 # <a name="font-creation-and-selection"></a>Criação e seleção de fontes
 
@@ -33,7 +33,7 @@ Um aplicativo pode enumerar as fontes disponíveis usando as funções [**EnumFo
 
 Depois que um aplicativo tiver enumerado as fontes disponíveis e localizado uma correspondência apropriada, ele deverá usar os valores retornados pela função de enumeração de fonte para inicializar os membros de uma estrutura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) . Em seguida, ele pode chamar a função [**CreateFontIndirect**](/windows/desktop/api/Wingdi/nf-wingdi-createfontindirecta) , passando um ponteiro para a estrutura [**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta) inicializada. Se a função [**CreateFontIndirect**](/windows/win32/api/wingdi/nf-wingdi-createfontindirecta) for bem-sucedida, o aplicativo poderá selecionar a fonte lógica chamando a função [**SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) . Ao inicializar os membros da estrutura **LOGFONT** , certifique-se de especificar um conjunto de caracteres específico no membro **lfCharSet** . Esse membro é importante no processo de mapeamento de fontes e os resultados serão inconsistentes se esse membro não for inicializado corretamente. Se você especificar um nome de tipo de fonte no membro **lfFaceName** da estrutura **LOGFONT** , certifique-se de que o valor **lfCharSet** corresponde ao conjunto de caracteres da face de tipos especificada em **lfFaceName**. Por exemplo, se você quiser selecionar uma fonte como MS Mincho, **lfCharSet** deverá ser definido como o valor predefinido SHIFTJIS \_ CharSet.
 
-As fontes para muitos idiomas do leste asiático têm dois nomes de tipos: um nome em inglês e um nome localizado. [**CreateFont**](/windows/desktop/api/Wingdi/nf-wingdi-createfonta), [**CreateFontIndirect**](/windows/desktop/api/Wingdi/nf-wingdi-createfontindirecta)e [**CreateFontIndirectEx**](/windows/desktop/api/Wingdi/nf-wingdi-createfontindirectexa) usam o nome da face de tipos localizada para uma localidade do sistema que corresponda ao idioma, mas eles usam o nome de tipo em inglês para todas as outras localidades do sistema. O melhor método é tentar um nome e, em caso de falha, tentar o outro. Observe que [**EnumFonts**](/windows/win32/api/wingdi/nf-wingdi-enumfontsa), [**EnumFontFamilies**](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesa)e [**EnumFontFamiliesEx**](/windows/desktop/api/Wingdi/nf-wingdi-enumfontfamiliesexa) retornam o nome da face de tipos em inglês se a localidade do sistema não corresponder ao idioma da fonte. A partir do Windows 2000, isso não é mais um problema porque o mapeador de fontes para [**CreateFont**](/windows/win32/api/wingdi/nf-wingdi-createfonta), [**CreateFontIndirect**](/windows/win32/api/wingdi/nf-wingdi-createfontindirecta)e [**CreateFontIndirectEx**](/windows/win32/api/wingdi/nf-wingdi-createfontindirectexa) reconhece o nome do tipo, independentemente da localidade.
+As fontes para muitos idiomas do leste asiático têm dois nomes de tipos: um nome em inglês e um nome localizado. [**CreateFont**](/windows/desktop/api/Wingdi/nf-wingdi-createfonta), [**CreateFontIndirect**](/windows/desktop/api/Wingdi/nf-wingdi-createfontindirecta)e [**CreateFontIndirectEx**](/windows/desktop/api/Wingdi/nf-wingdi-createfontindirectexa) usam o nome da face de tipos localizada para uma localidade do sistema que corresponda ao idioma, mas eles usam o nome de tipo em inglês para todas as outras localidades do sistema. O melhor método é tentar um nome e, em caso de falha, tentar o outro. Observe que [**EnumFonts**](/windows/win32/api/wingdi/nf-wingdi-enumfontsa), [**EnumFontFamilies**](/windows/win32/api/wingdi/nf-wingdi-enumfontfamiliesa)e [**EnumFontFamiliesEx**](/windows/desktop/api/Wingdi/nf-wingdi-enumfontfamiliesexa) retornam o nome da face de tipos em inglês se a localidade do sistema não corresponder ao idioma da fonte. a partir do Windows 2000, isso não é mais um problema porque o mapeador de fonte para [**createfont**](/windows/win32/api/wingdi/nf-wingdi-createfonta), [**CreateFontIndirect**](/windows/win32/api/wingdi/nf-wingdi-createfontindirecta)e [**CreateFontIndirectEx**](/windows/win32/api/wingdi/nf-wingdi-createfontindirectexa) reconhece o nome do tipo, independentemente da localidade.
 
  
 

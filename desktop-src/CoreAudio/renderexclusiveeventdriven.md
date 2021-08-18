@@ -50,7 +50,7 @@ Este exemplo está disponível nos locais a seguir.
 
 
 
-| Location    | Caminho/URL                                                                                                    |
+| Localização    | Caminho/URL                                                                                                    |
 |-------------|-------------------------------------------------------------------------------------------------------------|
 | SDK do Windows | \\arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ áudio multimídia \\ \\ RenderExclusiveEventDriven \\ ... |
 

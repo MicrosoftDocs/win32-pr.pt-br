@@ -22,7 +22,7 @@ ms.locfileid: "118995506"
 ---
 # <a name="running-the-sample-project"></a>Executando o exemplo de Project
 
-O componente COM de exemplo demonstra a funcionalidade fornecida pelos métodos **de IWMPSubscriptionServices** exibindo uma caixa de diálogo sempre que Windows Media Player chama um dos métodos. Para ver isso acontecer, você deve primeiro adicionar algum conteúdo à biblioteca que contém um atributo **ContentDistributor** que corresponde ao seu serviço. Consulte [Adicionando o atributo ContentDistributor](adding-the-contentdistributor-attribute.md). Em seguida, use Windows Media Player 10 ou posterior para abrir sua loja online, reproduzir seu conteúdo Premium e copiar seu conteúdo Premium para um dispositivo. Windows Media Player insinuará o componente COM de exemplo e chamará métodos quando apropriado.
+O componente COM de exemplo demonstra a funcionalidade fornecida pelos métodos **de IWMPSubscriptionServices** exibindo uma caixa de diálogo sempre que Windows Media Player chama um dos métodos. Para ver isso acontecer, primeiro você deve adicionar algum conteúdo à biblioteca que contém um atributo **ContentDistributor** que corresponde ao seu serviço. Consulte [Adicionando o atributo ContentDistributor](adding-the-contentdistributor-attribute.md). Em seguida, use Windows Media Player 10 ou posterior para abrir sua loja online, reproduzir seu conteúdo Premium e copiar seu conteúdo Premium para um dispositivo. Windows Media Player insinuará o componente COM de exemplo e chamará métodos quando apropriado.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

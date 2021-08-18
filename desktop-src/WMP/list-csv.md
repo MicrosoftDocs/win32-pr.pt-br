@@ -3,18 +3,18 @@ title: list.csv
 description: list.csv
 ms.assetid: 020b213c-826c-430c-8ce7-92b819581de8
 keywords:
-- Armazenamentos online do Windows Media Player, list.csv
+- Windows Media Player lojas online list.csv
 - lojas online, list.csv
 - Digite 1 lojas online, list.csv
 - list.csv
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f41ed237c5f4a185f01feace8f09b4615e4922b
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: 3e754f7985fbf59c23cccae5fd9780ff4b4579205ceaf3ef3cc8f74c768d4e71
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104084342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119135339"
 ---
 # <a name="listcsv"></a>list.csv
 
@@ -136,17 +136,17 @@ A coluna Format na tabela a seguir descreve a maneira como cada campo de texto U
 <ul>
 <li>- = Automático</li>
 <li>P = executor</li>
-<li>A = álbum</li>
+<li>A = Álbum</li>
 <li>C = Composer</li>
-<li>R = classificação</li>
-<li>D = data</li>
+<li>R = Classificação</li>
+<li>D = Data</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>ListItemsAreDynamic</td>
 <td>Sim</td>
 <td>Booliano. Pode ser 0 ou 1.</td>
-<td>Indica se a lista é gerada dinamicamente. Listas dinâmicas não têm itens em listitem.csv. Se uma lista for marcada como dinâmica, seus itens serão fornecidos por <a href="/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getlistcontents">IWMPContentPartner:: GetListContents</a></td>
+<td>Indica se a lista é gerada dinamicamente. As listas dinâmicas não têm itens listitem.csv. Se uma lista for marcada como dinâmica, seus itens serão fornecidos por <a href="/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getlistcontents">IWMPContentPartner::GetListContents</a></td>
 </tr>
 </tbody>
 </table>

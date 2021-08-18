@@ -20,17 +20,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: fa1e51931c11e0fce0b18c0c102c4d54c0b47976
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f768ff08e8f84e3e0705d38c0f0d8eacdfa01e94e5f968e87f8dfdfbfa65b09
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119719176"
 ---
 # <a name="jetgetattachinfo-function"></a>Função JetGetAttachInfo
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetgetattachinfo-function"></a>Função JetGetAttachInfo
 
@@ -60,7 +60,7 @@ Ponteiro para o buffer de saída que recebeu a quantidade real de dados de cadei
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -80,7 +80,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errBackupAbortByServer</p></td>
-<td><p>A operação falhou porque o backup externo atual foi anulado por uma chamada para <a href="gg294067(v=exchg.10).md">JetStopBackup</a>. Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<td><p>A operação falhou porque o backup externo atual foi anulado por uma chamada para <a href="gg294067(v=exchg.10).md">JetStopBackup</a>. esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errClientRequestToStopJetService</p></td>
@@ -88,7 +88,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errInstanceUnavailable</p></td>
-<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados. esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidBackupSequence</p></td>
@@ -96,7 +96,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Isso pode ocorrer para <strong>JetGetAttachInfo</strong> quando o identificador de instância especificado é inválido (Windows XP e versões posteriores).</p></td>
+<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. isso pode ocorrer para <strong>JetGetAttachInfo</strong> quando o identificador de instância especificado é inválido (Windows XP e versões posteriores).</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errNoBackup</p></td>
@@ -112,7 +112,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="even">
 <td><p>JET_errRunningInMultiInstanceMode</p></td>
-<td><p>A operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (modo de compatibilidade do Windows 2000) em que apenas uma instância tem suporte quando, na verdade, várias instâncias já existem.</p></td>
+<td><p>a operação falhou porque foi feita uma tentativa de usar o mecanismo no modo herdado (Windows modo de compatibilidade 2000) em que há suporte para apenas uma instância quando, na verdade, várias instâncias já existem.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
@@ -140,11 +140,11 @@ Em caso de falha, o estado dos buffers de saída é indefinido. A falha resultar
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

@@ -3,16 +3,16 @@ title: Gerenciamento de memória no WOW64
 description: O gerenciamento de memória sob WOW64 depende da arquitetura do processador.
 ms.assetid: a3fa6e51-2895-4941-9304-5939208e8102
 keywords:
-- Programação WOW64 de 64 bits do Windows, gerenciamento de memória
-- Programação de gerenciamento de memória do Windows de 64 bits
+- programação de Windows de 64 bits de WOW64, gerenciamento de memória
+- gerenciamento de memória 64-bit Windows programação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8602bf6e7e7d9e55894215938932559cfadc6848
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9908c8127f4fbe15b636d7d72fd19d2d8057c1d0a0c126393bc6c182e46925f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119132829"
 ---
 # <a name="memory-management-under-wow64"></a>Gerenciamento de memória no WOW64
 
@@ -39,12 +39,12 @@ O tamanho da página nativa é de 4 KB. Portanto, há suporte para os seguintes:
 
 <dl> <dt>
 
-[Limites de memória para versões do Windows](/windows/desktop/Memory/memory-limits-for-windows-releases)
+[limites de memória para versões de Windows](/windows/desktop/Memory/memory-limits-for-windows-releases)
 </dt> <dt>
 
 [Ajuste de RAM 4GT](/windows/desktop/Memory/4-gigabyte-tuning)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

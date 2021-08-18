@@ -3,35 +3,35 @@ title: Criando o plug-in para uma loja online tipo 1
 description: Criando o plug-in para uma loja online tipo 1
 ms.assetid: 5d38a41f-9859-452b-953f-3449c2b0ce06
 keywords:
-- Repositórios online do Windows Media Player, plug-ins
+- Windows Media Player lojas online, plug-ins
 - lojas online, plug-ins
 - Digite 1 lojas online, plug-ins
-- Lojas online do Windows Media Player, criando plug-ins
+- Windows Media Player lojas online, criando plug-ins
 - lojas online, criando plug-ins
 - Digite 1 lojas online, criando plug-ins
-- Lojas online do Windows Media Player, interface IWMPContentPartner
+- Windows Media Player lojas online, interface IWMPContentPartner
 - lojas online, interface IWMPContentPartner
 - Digite 1 lojas online, interface IWMPContentPartner
-- plug-ins, lojas online do Windows Media Player
+- plug-ins, Windows Media Player lojas online
 - plug-ins, lojas online
 - plug-ins, digite 1 lojas online
 - plug-ins, interface IWMPContentPartner
 - plug-ins, compilando
-- Plug-ins do Windows Media Player, tipo 1 lojas online
-- Plug-ins do Windows Media Player, lojas online
-- Plug-ins do Windows Media Player, lojas online do Windows Media Player
-- Plug-ins do Windows Media Player, interface IWMPContentPartner
-- Plug-ins do Windows Media Player, compilando
+- plug-ins Windows Media Player, tipo 1 lojas online
+- plug-ins Windows Media Player, lojas online
+- Windows Media Player plug-ins, Windows Media Player lojas online
+- plug-ins Windows Media Player, interface IWMPContentPartner
+- plug-ins Windows Media Player, compilando
 - IWMPContentPartner
 - Criando plug-ins, tipo 1 lojas online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 36272e3497eebc7b5362d793a0ee265d2c3166fc
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: d1fdc5b01a0a8ec526af22e6be90c562524536cdb30b37bd03eb40132af0be49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105794510"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997846"
 ---
 # <a name="building-the-plug-in-for-a-type-1-online-store"></a>Criando o plug-in para uma loja online tipo 1
 
@@ -55,9 +55,9 @@ Você pode usar o assistente de plug-in da loja online para criar rapidamente um
 [**Guia de programação para lojas online do tipo 1**](programming-guide-for-type-1-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

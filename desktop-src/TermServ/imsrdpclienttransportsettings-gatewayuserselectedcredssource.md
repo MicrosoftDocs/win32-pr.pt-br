@@ -1,12 +1,12 @@
 ---
 title: Propriedade IMsRdpClientTransportSettings GatewayUserSelectedCredsSource
-description: Define ou recupera a origem de credencial do gateway de Área de Trabalho Remota especificado pelo usuário (Gateway RD).
+description: Define ou recupera a fonte de credencial Área de Trabalho Remota Gateway de RD (Gateway de RD) especificada pelo usuário.
 ms.assetid: 0c12ddf6-52c2-40a2-af2b-effd4e8bbdb6
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade GatewayUserSelectedCredsSource
-- Propriedade GatewayUserSelectedCredsSource Serviços de Área de Trabalho Remota, interface IMsRdpClientTransportSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientTransportSettings, Propriedade GatewayUserSelectedCredsSource
+- Propriedade GatewayUserSelectedCredsSource Serviços de Área de Trabalho Remota
+- Propriedade GatewayUserSelectedCredsSource Serviços de Área de Trabalho Remota , interface IMsRdpClientTransportSettings
+- Interface IMsRdpClientTransportSettings Serviços de Área de Trabalho Remota , propriedade GatewayUserSelectedCredsSource
 topic_type:
 - apiref
 api_name:
@@ -19,18 +19,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1556088e62221df7ff91b4b0069bb1ec938ebf23
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7632609f34d0133f37af4e8df16ebd574b3ef84e248c2bb3d2b1a84313957b43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499278"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001006"
 ---
-# <a name="imsrdpclienttransportsettingsgatewayuserselectedcredssource-property"></a>Propriedade IMsRdpClientTransportSettings:: GatewayUserSelectedCredsSource
+# <a name="imsrdpclienttransportsettingsgatewayuserselectedcredssource-property"></a>Propriedade IMsRdpClientTransportSettings::GatewayUserSelectedCredsSource
 
-Define ou recupera a origem de credencial do gateway de Área de Trabalho Remota especificado pelo usuário (Gateway RD).
+Define ou recupera a fonte de credencial Área de Trabalho Remota Gateway de RD (Gateway de RD) especificada pelo usuário.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,40 +49,40 @@ HRESULT get_GatewayUserSelectedCredsSource(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Uma variável **ULONG** que especifica o método de autenticação de gateway de área de trabalho remota. Esse parâmetro pode usar um dos valores a seguir.
+Uma **variável ULONG** que especifica o método de autenticação do Gateway de RD. Esse parâmetro pode usar um dos valores a seguir.
 
 <dt>
 
 <span id="TSC_PROXY_CREDS_MODE_USERPASS"></span><span id="tsc_proxy_creds_mode_userpass"></span>
 
-<span id="TSC_PROXY_CREDS_MODE_USERPASS"></span><span id="tsc_proxy_creds_mode_userpass"></span>**TSC \_ Modo de credenciais de PROXY \_ \_ \_ userpass** (0 (0x0))
+<span id="TSC_PROXY_CREDS_MODE_USERPASS"></span><span id="tsc_proxy_creds_mode_userpass"></span>**TSC \_ MODO \_ CREDS DE PROXY \_ \_ USERPASS** (0 (0x0))
 
 
 </dt> <dd>
 
-Use uma senha (NTLM) como o método de autenticação para o gateway de área de trabalho remota.
+Use uma senha (NTLM) como o método de autenticação para o Gateway de RD.
 
 </dd> <dt>
 
 <span id="TSC_PROXY_CREDS_MODE_SMARTCARD"></span><span id="tsc_proxy_creds_mode_smartcard"></span>
 
-<span id="TSC_PROXY_CREDS_MODE_SMARTCARD"></span><span id="tsc_proxy_creds_mode_smartcard"></span>**TSC \_ \_ \_ \_ SmartCard do modo de credenciais de proxy** (1 (0x1))
+<span id="TSC_PROXY_CREDS_MODE_SMARTCARD"></span><span id="tsc_proxy_creds_mode_smartcard"></span>**TSC \_ PROXY \_ CREDS \_ MODE \_ SMARTCARD** (1 (0x1))
 
 
 </dt> <dd>
 
-Use um cartão inteligente como o método de autenticação para o Gateway RD.
+Use um cartão inteligente como o método de autenticação para o Gateway de RD.
 
 </dd> <dt>
 
 <span id="TSC_PROXY_CREDS_MODE_ANY"></span><span id="tsc_proxy_creds_mode_any"></span>
 
-<span id="TSC_PROXY_CREDS_MODE_ANY"></span><span id="tsc_proxy_creds_mode_any"></span>**TSC \_ Modo de credenciais de PROXY \_ \_ \_ any** (4 (0x4))
+<span id="TSC_PROXY_CREDS_MODE_ANY"></span><span id="tsc_proxy_creds_mode_any"></span>**TSC \_ PROXY \_ CREDS \_ MODE \_ ANY** (4 (0x4))
 
 
 </dt> <dd>
 
-Use qualquer método de autenticação para o Gateway RD.
+Use qualquer método de autenticação para o Gateway de RD.
 
 </dd> </dl>
 

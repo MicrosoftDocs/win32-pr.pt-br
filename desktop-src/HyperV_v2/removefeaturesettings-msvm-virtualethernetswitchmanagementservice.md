@@ -1,7 +1,7 @@
 ---
-description: Remove as configurações de recurso de uma porta de comutador Ethernet.
+description: Remove as configurações de recurso de uma porta de opção Ethernet.
 ms.assetid: 3d45259e-34e4-417b-a895-4926b0eaaf59
-title: Método RemoveFeatureSettings da classe Msvm_VirtualEthernetSwitchManagementService
+title: Método RemoveFeatureSettings da classe Msvm_VirtualEthernetSwitchManagementService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 919e2b69e2a0ef215a522c601088cb7aa2976a35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 39c78295ad3c2aaa91a0a92c71062ea83bb68a58eb646a5bce4db024de15e7a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757806"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014424"
 ---
-# <a name="removefeaturesettings-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método RemoveFeatureSettings da \_ classe VirtualEthernetSwitchManagementService Msvm
+# <a name="removefeaturesettings-method-of-the-msvm_virtualethernetswitchmanagementservice-class"></a>Método RemoveFeatureSettings da classe \_ Msvm VirtualEthernetSwitchManagementService
 
-Remove as configurações de recurso de uma porta de comutador Ethernet.
+Remove as configurações de recurso de uma porta de opção Ethernet.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,21 +40,21 @@ uint32 RemoveFeatureSettings(
 
 <dl> <dt>
 
-*FeatureSettings* \[ no\]
+*FeatureSettings* \[ Em\]
 </dt> <dd>
 
-Uma matriz de referências a instâncias da classe [**Msvm \_ FeatureSettingData**](msvm-featuresettingdata.md) que representa as configurações de recurso a serem removidas.
+Uma matriz de referências a instâncias da [**classe Msvm \_ FeatureSettingData**](msvm-featuresettingdata.md) que representam as configurações de recurso a serem removidas.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -69,7 +69,7 @@ Esse método retorna um dos valores a seguir.
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
@@ -78,16 +78,16 @@ Esse método retorna um dos valores a seguir.
 **Estado inválido** (5)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -96,10 +96,10 @@ Esse método retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

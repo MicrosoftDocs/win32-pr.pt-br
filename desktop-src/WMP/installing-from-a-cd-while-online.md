@@ -1,60 +1,60 @@
 ---
-title: Instalando de um CD enquanto estiver online
-description: Instalando de um CD enquanto estiver online
+title: Instalação de um CD enquanto estiver online
+description: Instalação de um CD enquanto estiver online
 ms.assetid: 4cf34f0e-caa0-42d1-b99a-51bbb7f0a7df
 keywords:
-- Armazenamentos online do Windows Media Player, instalando do CD enquanto estiver online
-- lojas online, instalando do CD enquanto estiver online
-- Digite 1 lojas online, instalando do CD enquanto estiver online
-- Digite 2 lojas online, instalando do CD enquanto estiver online
-- Armazenamentos online do Windows Media Player, instalações online do CD
-- lojas online, instalações online do CD
-- Digite 1 lojas online, instalações online do CD
-- Digite 2 lojas online, instalações online do CD
-- Armazenamentos online do Windows Media Player, instalações de CD quando estiverem online
-- lojas online, instalações de CD enquanto estão online
-- Digite 1 lojas online, instalações de CD quando estiverem online
-- Digite 2 lojas online, instalações de CD quando estiverem online
-- Instalando lojas online do CD enquanto estiver online
-- Instalações de CD de lojas online enquanto estão online
-- instalações online de lojas online
+- Windows Media Player online, instalando do CD enquanto online
+- lojas online, instalando do CD enquanto online
+- type 1 online stores,installing from CD while online
+- type 2 online stores,installing from CD while online
+- Windows Media Player online online, instalação online do CD
+- online stores,online installs from CD
+- type 1 online stores,online installs from CD
+- type 2 online stores,online installs from CD
+- Windows Media Player online, o CD é instalado enquanto online
+- online stores,CD installs while online
+- type 1 online stores,CD installs while online
+- type 2 online stores,CD installs while online
+- instalando lojas online do CD enquanto estiver online
+- Instalação de CD de lojas online enquanto online
+- instalação online de lojas online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd57015e64dece444b1a91afebe3144bee117caa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 13589d7ba6dea0693acaacb5e0d1f551b4a4f178c4ccb50a1bd8ebb513dda3de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105800127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118996506"
 ---
-# <a name="installing-from-a-cd-while-online"></a>Instalando de um CD enquanto estiver online
+# <a name="installing-from-a-cd-while-online"></a>Instalação de um CD enquanto estiver online
 
-Os usuários podem instalar o Windows Media Player a partir de um CD enquanto estiverem conectados à Internet. Quando isso acontece, a instalação do Windows Media Player localiza o documento serviceInfo especificado pelo parâmetro de linha de comando *serviceInfo* . Se o atributo de **chave** corresponder ao parâmetro de linha de comando *defaultservice* , a instalação inspecionará o elemento install para personalizar o processo de instalação. Usando os valores de atributo, a instalação exibe o contrato de licença de usuário final (EULA) e sua declaração de privacidade, além de recuperar e instalar o arquivo. cab no computador do usuário. Por exemplo, você pode usar esse recurso para instalar a versão mais recente de um objeto COM que sua loja online requer.
+Os usuários podem instalar Windows Media Player de um CD enquanto estão conectados à Internet. Quando isso acontece, Windows Media Player configuração localiza o documento ServiceInfo especificado pelo parâmetro de linha de comando *ServiceInfo.* Se o **atributo Key** corresponde ao parâmetro de linha de comando *DefaultService,* a instalação inspecionará o elemento Install para personalizar o processo de instalação. Usando os valores de atributo, a instalação exibe seu EULA (Contrato de Licença de Usuário Final) e sua política de privacidade e também recupera e instala o arquivo .cab no computador do usuário. Por exemplo, você pode usar esse recurso para instalar a versão mais recente de um objeto COM que sua loja online requer.
 
-Após a instalação, o Windows Media Player define o armazenamento online inicial usando o nome da chave que você especificou para o parâmetro de linha de comando *defaultservice* .
+Depois que ele for instalado, Windows Media Player o armazenamento online inicial usando o nome da chave especificado para o parâmetro de linha de comando *DefaultService.*
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Informações comuns às lojas online tipo 1 e tipo 2**](information-common-to-type-1-and-type-2-online-stores.md)
+[**Informações comuns às lojas online do tipo 1 e do tipo 2**](information-common-to-type-1-and-type-2-online-stores.md)
 </dt> <dt>
 
-[**Elemento de instalação**](install-element.md)
+[**Elemento Install**](install-element.md)
 </dt> <dt>
 
-[**Documento do serviceInfo**](serviceinfo-document.md)
+[**Documento ServiceInfo**](serviceinfo-document.md)
 </dt> <dt>
 
-[**Configurando a loja online inicial**](setting-the-initial-online-store.md)
+[**Definindo a loja online inicial**](setting-the-initial-online-store.md)
 </dt> <dt>
 
-[**Parâmetros de linha de comando de instalação para lojas online**](setup-command-line-parameters-for-online-stores.md)
+[**Configurar parâmetros de linha de comando para lojas online**](setup-command-line-parameters-for-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

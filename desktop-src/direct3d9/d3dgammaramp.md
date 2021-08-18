@@ -1,7 +1,7 @@
 ---
 description: Contém dados de rampa vermelho, verde e azul.
 ms.assetid: c596f47a-6c09-4b97-ab2f-b1da3d851aa4
-title: Estrutura D3DGAMMARAMP (D3D9Types. h)
+title: Estrutura D3DGAMMARAMP (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 496885b8267d339c7617ec24b884fa193f8d9945
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: fbd3acc35b7fd4998f5ba536c1fe4a28cf2a17153bf24aacde1f9f39bbbcd09e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105797933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119750996"
 ---
 # <a name="d3dgammaramp-structure"></a>Estrutura D3DGAMMARAMP
 
@@ -41,36 +41,36 @@ typedef struct D3DGAMMARAMP {
 
 <dl> <dt>
 
-**vermelho**
+**Vermelho**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matriz do elemento de palavra 256 que descreve a rampa de gama vermelha.
+Matriz de elemento 256 WORD que descreve a rampa gama vermelha.
 
 </dd> <dt>
 
-**amarela**
+**Verde**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matriz do elemento de palavra 256 que descreve a rampa de gama verde.
+Matriz de elemento 256 WORD que descreve a rampa gama verde.
 
 </dd> <dt>
 
-**azul**
+**Azul**
 </dt> <dd>
 
-Tipo: **[ **Word**](../winprog/windows-data-types.md)**
+Tipo: **[ **WORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Matriz do elemento de palavra 256 que descreve a rampa de gama azul.
+Matriz de elemento WORD 256 que descreve a rampa gama azul.
 
 </dd> </dl>
 
@@ -80,7 +80,7 @@ Matriz do elemento de palavra 256 que descreve a rampa de gama azul.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -88,7 +88,7 @@ Matriz do elemento de palavra 256 que descreve a rampa de gama azul.
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> <dt>
 
 [**GetGammaRamp**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getgammaramp)

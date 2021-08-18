@@ -1,19 +1,19 @@
 ---
-description: O Windows Installer reduz o TCO (custo total de propriedade) para seus clientes, permitindo que eles instalem e configurem seus produtos e aplicativos com eficiência.
+description: O Windows instalador reduz o custo total de propriedade (TCO) para seus clientes, permitindo que eles instalem e configurem seus produtos e aplicativos com eficiência.
 ms.assetid: 28d2c205-795e-4ed0-8c16-925ad8f638d2
-title: Visão geral do Windows Installer
+title: Visão geral do Windows Instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c4f692bb98b885673473b76fbcc95d90b8bd46d0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5c5caae4f939983d0d246f3b3bd82ee55f20344481a01c50316aa66926b2553
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119145519"
 ---
-# <a name="overview-of-windows-installer"></a>Visão geral do Windows Installer
+# <a name="overview-of-windows-installer"></a>Visão geral do Windows Instalador
 
-O Windows Installer reduz o TCO (custo total de propriedade) para seus clientes, permitindo que eles instalem e configurem seus produtos e aplicativos com eficiência. O instalador também pode fornecer a seus produtos novos recursos para anunciar recursos sem instalá-los, instalar produtos sob demanda e adicionar personalizações do usuário.
+O Windows instalador reduz o custo total de propriedade (TCO) para seus clientes, permitindo que eles instalem e configurem seus produtos e aplicativos com eficiência. O instalador também pode fornecer ao seu produto novos recursos para anunciar recursos sem instalá-los, instalar produtos sob demanda e adicionar personalizações do usuário.
 
 As seções a seguir fornecem uma visão geral de alto nível do instalador:
 
