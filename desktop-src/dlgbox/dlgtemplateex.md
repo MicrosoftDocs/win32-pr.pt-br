@@ -76,7 +76,7 @@ Tipo: **WORD**
 
 </dd> <dd>
 
-Indica se um modelo é um modelo de caixa de diálogo estendido. Se **a** assinatura for 0xFFFF, esse será um modelo de caixa de diálogo estendido. Nesse caso, o **membro dlgVer** especifica o número de versão do modelo. Se **a** assinatura for qualquer valor diferente 0xFFFF, esse será um modelo de caixa de diálogo padrão que usa as estruturas [**DLGTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgtemplate) e [**DLGITEMTEMPLATE.**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate)
+Indica se um modelo é um modelo de caixa de diálogo estendido. Se **a assinatura** for 0xFFFF, esse será um modelo de caixa de diálogo estendido. Nesse caso, o **membro dlgVer** especifica o número de versão do modelo. Se **a** assinatura for qualquer valor diferente 0xFFFF, esse será um modelo de caixa de diálogo padrão que usa as estruturas [**DLGTEMPLATE**](/windows/desktop/api/Winuser/ns-winuser-dlgtemplate) e [**DLGITEMTEMPLATE.**](/windows/desktop/api/Winuser/ns-winuser-dlgitemtemplate)
 
 </dd> <dt>
 
@@ -280,9 +280,9 @@ Cada [**estrutura DLGITEMTEMPLATEEX**](dlgitemtemplateex.md) no modelo deve ser 
 
 As **matrizes de menu**, **windowClass**, **title** e **typeface** devem ser alinhadas nos limites **do WORD.**
 
-Se você especificar cadeias de caracteres no **menu**, **windowClass**, **título** e **matrizes de face** de tipo, deverá usar cadeias de caracteres Unicode. Use a função [**MultiByteToWideChar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) para gerar essas cadeias de caracteres Unicode a partir de cadeias de caracteres ANSI.
+Se você especificar cadeias de caracteres no **menu**, **windowClass**, **título** e **matrizes de face** de tipo, deverá usar cadeias de caracteres Unicode. Use a [**função MultiByteToWideChar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) para gerar essas cadeias de caracteres Unicode de cadeias de caracteres ANSI.
 
-Os membros **x**, **y**, **CX** e **CY** especificam valores nas unidades da caixa de diálogo. Você pode converter esses valores em unidades de tela (pixels) usando a função [**MapDialogRect**](/windows/desktop/api/Winuser/nf-winuser-mapdialogrect) .
+Os **membros x**, **y**, **cx** e **cy** especificam valores em unidades de caixa de diálogo. Você pode converter esses valores em unidades de tela (pixels) usando a [**função MapDialogRect.**](/windows/desktop/api/Winuser/nf-winuser-mapdialogrect)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -302,28 +302,28 @@ Os membros **x**, **y**, **CX** e **CY** especificam valores nas unidades da cai
 **Referência**
 </dt> <dt>
 
-[**CreateDialogIndirect**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirecta)
+[**Createdialogindirect**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirecta)
 </dt> <dt>
 
-[**CreateDialogIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirectparama)
+[**Createdialogindirectparam**](/windows/desktop/api/Winuser/nf-winuser-createdialogindirectparama)
 </dt> <dt>
 
-[**DialogBoxIndirect**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirecta)
+[**Dialogboxindirect**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirecta)
 </dt> <dt>
 
-[**DialogBoxIndirectParam**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirectparama)
+[**Dialogboxindirectparam**](/windows/desktop/api/Winuser/nf-winuser-dialogboxindirectparama)
 </dt> <dt>
 
 [**DLGITEMTEMPLATEEX**](dlgitemtemplateex.md)
 </dt> <dt>
 
-[**MapDialogRect**](/windows/desktop/api/Winuser/nf-winuser-mapdialogrect)
+[**Mapdialogrect**](/windows/desktop/api/Winuser/nf-winuser-mapdialogrect)
 </dt> <dt>
 
-[**WM \_ SETfont**](/windows/desktop/winmsg/wm-setfont)
+[**WM \_ SETFONT**](/windows/desktop/winmsg/wm-setfont)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Caixas de diálogo](dialog-boxes.md)
@@ -332,10 +332,10 @@ Os membros **x**, **y**, **CX** e **CY** especificam valores nas unidades da cai
 **Outros recursos**
 </dt> <dt>
 
-[**LOGFONT**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
+[**Logfont**](/windows/win32/api/wingdi/ns-wingdi-logfonta)
 </dt> <dt>
 
-[**MultiByteToWideChar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)
+[**Multibytetowidechar**](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)
 </dt> </dl>
 
  

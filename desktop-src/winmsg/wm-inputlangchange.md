@@ -1,5 +1,5 @@
 ---
-description: Enviado para a janela afetada na extremidade superior após a alteração do idioma de entrada de um aplicativo. Você deve fazer qualquer configuração específica do aplicativo e passar a mensagem para a função DefWindowProc, que passa a mensagem para todas as janelas filho de primeiro nível.
+description: Enviado para a janela mais afetada depois que o idioma de entrada de um aplicativo foi alterado. Você deve fazer configurações específicas do aplicativo e passar a mensagem para a função DefWindowProc, que passa a mensagem para todas as janelas filho de primeiro nível.
 ms.assetid: 4d403b1d-f6f7-40d5-9bf5-6a9c4da0803c
 title: Mensagem WM_INPUTLANGCHANGE (Winuser.h)
 ms.topic: reference
@@ -11,11 +11,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118436241"
 ---
-# <a name="wm_inputlangchange-message"></a>Mensagem do WM \_ INPUTLANGCHANGE
+# <a name="wm_inputlangchange-message"></a>Mensagem \_ WM INPUTLANGCHANGE
 
-Enviado para a janela afetada na extremidade superior após a alteração do idioma de entrada de um aplicativo. Você deve fazer qualquer configuração específica do aplicativo e passar a mensagem para a função [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) , que passa a mensagem para todas as janelas filho de primeiro nível. Essas janelas filhas podem passar a mensagem para [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para que ela passe a mensagem para suas janelas filhas e assim por diante.
+Enviado para a janela mais afetada depois que o idioma de entrada de um aplicativo foi alterado. Você deve fazer configurações específicas do aplicativo e passar a mensagem para a função [**DefWindowProc,**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) que passa a mensagem para todas as janelas filho de primeiro nível. Essas janelas filho podem passar a mensagem [**para DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para que ela passe a mensagem para suas janelas filho e assim por diante.
 
-Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85)) .
+Uma janela recebe essa mensagem por meio de [**sua função WindowProc.**](/previous-versions/windows/desktop/legacy/ms633573(v=vs.85))
 
 ```C++
 #define WM_INPUTLANGCHANGE              0x0051
@@ -29,9 +29,9 @@ Uma janela recebe essa mensagem por meio de sua função [**WindowProc**](/previ
 
 </dt> <dd>
   
-Tipo: **wParam**
+Tipo: **WPARAM**
 
-A [página de código](../Intl/code-pages.md) da nova localidade.
+A [página de](../Intl/code-pages.md) código da nova localidade.
 
 </dd> <dt>
 
@@ -39,9 +39,9 @@ A [página de código](../Intl/code-pages.md) da nova localidade.
 
 </dt> <dd>
  
-Tipo: **lParam**
+Tipo: **LPARAM**
 
-O identificador de localidade de entrada **HKL** . Para obter mais informações, consulte [idiomas, localidades e layouts de teclado](../inputdev/about-keyboard-input.md).
+O identificador de localidade de entrada **HKL.** Para obter mais informações, [consulte Idiomas, localidades e layouts de teclado.](../inputdev/about-keyboard-input.md)
 
 </dd> </dl>
 
@@ -49,11 +49,11 @@ O identificador de localidade de entrada **HKL** . Para obter mais informações
 
 Tipo: **LRESULT**
 
-Um aplicativo deve retornar diferente de zero se processar essa mensagem.
+Um aplicativo deverá retornar um zero se ele processa essa mensagem.
 
 ## <a name="remarks"></a>Comentários
 
-Você pode recuperar o [nome da localidade](../Intl/locale-names.md) do teclado por meio da função [LCIDToLocaleName](/windows/win32/api/winnls/nf-winnls-lcidtolocalename) . Com o nome da localidade, você pode usar [funções de localidade modernas](/windows/win32/intl/calling-the--locale-name--functions):
+Você pode recuperar o nome [da localidade do teclado](../Intl/locale-names.md) por meio da função [LCIDToLocaleName.](/windows/win32/api/winnls/nf-winnls-lcidtolocalename) Com o nome da localidade, você pode usar [funções de localidade modernas:](/windows/win32/intl/calling-the--locale-name--functions)
 
 ```cpp
 case WM_INPUTLANGCHANGE:
@@ -73,15 +73,15 @@ case WM_INPUTLANGCHANGE:
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 ## <a name="see-also"></a>Confira também
 
 **Referência**
 
-- [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
-- [**INPUTLANGCHANGEREQUEST do WM \_**](wm-inputlangchangerequest.md)
+- [**Defwindowproc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca)
+- [**WM \_ INPUTLANGCHANGEREQUEST**](wm-inputlangchangerequest.md)
 
-**Conceitua**
+**Conceitual**
 
 - [Windows](windows.md) 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 26298f8a63ccfde2171578c27e9208011c16dd28
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: cc3d8d8bce22a8a77f8744bf2540fba7ede58fc4122c8fa2a8fea8147a8f6332
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117732037"
 ---
 # <a name="d3dxcreatetexturefromresourceex-function"></a>Função D3DXCreateTextureFromResourceEx
 
@@ -189,7 +189,7 @@ Endereço de um ponteiro para uma interface [**IDirect3DTexture9**](/windows/win
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -199,9 +199,9 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 A configuração do compilador também determina a versão da função. Se o Unicode for definido, a chamada de função será resolvida como D3DXCreateTextureFromResourceExW. Caso contrário, a chamada de função é resolvida como D3DXCreateTextureFromResourceExA porque as cadeias de caracteres ANSI estão sendo usadas.
 
-O recurso que está sendo carregado deve ser do tipo \_ bitmap RT ou RT \_ RCDATA. O tipo de recurso RT \_ RCDATA é usado para carregar formatos diferentes de bitmaps (como. tga,. jpg e. DDS).
+O recurso que está sendo carregado deve ser do tipo \_ bitmap RT ou RT \_ RCDATA. O tipo de recurso RT \_ RCDATA é usado para carregar formatos diferentes de bitmaps (como. tga, .jpg e. DDS).
 
-Essa função dá suporte aos seguintes formatos de arquivo:. bmp,. DDS,. dib,. HDR,. jpg,. PFM,. png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
+Essa função dá suporte aos seguintes formatos de arquivo: .bmp,. DDS,. dib,. HDR, .jpg,. PFM, .png,. ppm e. tga. Consulte [**D3DXIMAGE \_ FileFormat**](./d3dximage-fileformat.md).
 
 ## <a name="requirements"></a>Requisitos
 

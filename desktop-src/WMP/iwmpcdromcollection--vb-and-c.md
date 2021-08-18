@@ -3,8 +3,8 @@ title: Interface IWMPCdromCollection (VB e C) (WMP. h)
 description: Fornece uma maneira de organizar e acessar uma coleção de unidades de CD ou DVD. A interface IWMPCdromCollection expõe a propriedade a seguir.
 ms.assetid: 60874603-d9c8-4ed1-a92a-bd069bd0c253
 keywords:
-- IWMPCdromCollection (VB e C) interface do Windows Media Player
-- IWMPCdromCollection (VB e C) interface do Windows Media Player, descrito
+- Windows Media Player de interface IWMPCdromCollection (VB e C)
+- Windows Media Player de interface IWMPCdromCollection (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d3fbc9c053c186b6d542e201f7bee5d2331b649
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c935d4875307c7712036ed51304996028db6ba2a88fc1d5e54c77b7948c72252
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119295"
 ---
 # <a name="iwmpcdromcollection-vb-and-c-interface"></a>Interface IWMPCdromCollection (VB e C#)
 
@@ -58,7 +58,7 @@ A interface **IWMPCdromCollection (VB e C#)** tem essas propriedades.
 
 | Propriedade                                                                                  | Tipo de acesso          | Descrição                                                              |
 |:------------------------------------------------------------------------------------------|:---------------------|:-------------------------------------------------------------------------|
-| [**count**](wmplibiwmpcdromcollection-iwmpcdromcollection-count--vb-and-c.md)<br/> | Somente leitura<br/> | Obtém o número de unidades de CD e DVD disponíveis no sistema.<br/> |
+| [**contar**](wmplibiwmpcdromcollection-iwmpcdromcollection-count--vb-and-c.md)<br/> | Somente leitura<br/> | Obtém o número de unidades de CD e DVD disponíveis no sistema.<br/> |
 
 
 
@@ -90,7 +90,7 @@ Obtenha uma interface **IWMPCdromCollection** usando a propriedade a seguir.
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
 [**Interface IWMPCdrom (VB e C#)**](iwmpcdrom--vb-and-c.md)

@@ -17,14 +17,14 @@ ms.locfileid: "118502237"
 
 | Método                                                                           | Descrição                                                                                                  |
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [**Terá**](boundingsphere-contains.md)<br/>                           | Testa se o BoundingSphere contém um objeto especificado.<br/>                                     |
-| [**Intersecciona esses**](boundingsphere-intersects.md)<br/>                       | Testa o BoundingSphere para interseção com um objeto.<br/>                                         |
+| [**Contém**](boundingsphere-contains.md)<br/>                           | Testa se BoundingSphere contém um objeto especificado.<br/>                                     |
+| [**Intercepta**](boundingsphere-intersects.md)<br/>                       | Testa o BoundingSphere para interseção com um objeto .<br/>                                         |
 | [**Transform**](boundingsphere-transform.md)<br/>                         | Transforma o BoundingSphere.<br/>                                                                    |
-| [**ContainedBy**](/windows/desktop/api/DirectXCollision/nf-directxcollision-boundingbox-containedby)<br/>                     | Testa se o [**BoundingSphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere) está contido no frustum especificado.<br/> |
-| [**CreateFromBoundingBox**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-createfromboundingbox(boundingsphere__constboundingorientedbox_))<br/> | Cria um BoundingSphere que contém o BoundingBox especificado.<br/>                                    |
-| [**CreateFromPoints**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-createfrompoints)<br/>           | Cria um novo BoundingSphere de uma lista de pontos.<br/>                                               |
-| [**Createmerged**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-createmerged)<br/>                   | Cria um BoundingSphere que contém os dois objetos BoundingSphere especificados.<br/>                  |
-| [**atribuição de op \_**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-operator-assign(boundingsphere__))<br/>                | Inicializa o BoundingSphere com valores de um BoundingSphere especificado.<br/>                       |
+| [**ContainedBy**](/windows/desktop/api/DirectXCollision/nf-directxcollision-boundingbox-containedby)<br/>                     | Testa se [**BoundingSphere**](/windows/win32/api/directxcollision/ns-directxcollision-boundingsphere) está contido pelo frustum especificado.<br/> |
+| [**CreateFromBoundingBox**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-createfromboundingbox(boundingsphere__constboundingorientedbox_))<br/> | Cria uma BoundingSphere que contém a BoundingBox especificada.<br/>                                    |
+| [**CreateFromPoints**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-createfrompoints)<br/>           | Cria uma nova BoundingSphere de uma lista de pontos.<br/>                                               |
+| [**Criar Mesclado**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-createmerged)<br/>                   | Cria um BoundingSphere que contém os dois objetos BoundingSphere especificados.<br/>                  |
+| [**atribuição de \_ op**](/windows/win32/api/directxcollision/nf-directxcollision-boundingsphere-operator-assign(boundingsphere__))<br/>                | Inicializa o BoundingSphere com valores de um BoundingSphere especificado.<br/>                       |
 
 
 

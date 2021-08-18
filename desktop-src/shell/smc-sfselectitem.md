@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 3cfb3384fcfff73d264d21c53a91ede554cc7da5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5eafe0e910c9c0b934dac7d11219869245a619564909968c39a95cd2ae1484f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104967964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118046842"
 ---
 # <a name="smc_sfselectitem-message"></a>Mensagem do SMC \_ SFSELECTITEM
 
@@ -36,7 +36,7 @@ SMC_SFSELECTITEM
 
 Esta mensagem não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar S \_ OK.
 

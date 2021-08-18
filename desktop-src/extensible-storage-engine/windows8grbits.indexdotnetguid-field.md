@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: campo Windows8Grbits. IndexDotNetGuid'
-title: Campo Windows8Grbits. IndexDotNetGuid (Microsoft. ISAM. ESENT. Interop. Windows8)
+description: 'Saiba mais sobre: campo Windows8Grbits.IndexDotNetGuid'
+title: Campo Windows8Grbits.IndexDotNetGuid (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: IndexDotNetGuid field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Windows8.Windows8Grbits.IndexDotNetGuid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8grbits.indexdotnetguid(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117889283"
 ---
-# <a name="windows8grbitsindexdotnetguid-field"></a>Campo Windows8Grbits. IndexDotNetGuid
+# <a name="windows8grbitsindexdotnetguid-field"></a>Campo Windows8Grbits.IndexDotNetGuid
 
-a especificação desse sinalizador irá alterar a ordem de classificação GUID para .NET Framework padrão.
+Especificar esse sinalizador alterará a ordem de classificação do GUID para .NET Framework padrão.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,4 +61,4 @@ public const CreateIndexGrbit IndexDotNetGuid
 
 [Membros do Windows8Grbits](./windows8grbits-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

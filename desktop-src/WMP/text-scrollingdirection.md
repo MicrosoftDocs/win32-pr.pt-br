@@ -3,7 +3,7 @@ title: TEXT. scrollingDirection
 description: O atributo scrollingDirection especifica ou recupera a direção do texto de rolagem.
 ms.assetid: b7f6daf3-3180-4937-93e6-266d875dbbfd
 keywords:
-- TEXT. scrollingDirection Windows Media Player
+- Windows Media Player TEXT. scrollingDirection
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a729b2b917f38e12639fb1acda8eeb36808be990
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 73652b1eda6fb05c9e058a47bb988ab3098e451facc898d55bcd89257bec958b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118236"
 ---
 # <a name="textscrollingdirection"></a>TEXT. scrollingDirection
 

@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4a129b7c8368e6af1d259d6c19a9dde963d9deef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ee4eca1bad0859159821d7717ba6c23c352e03b33a1fcab81721e08dba465c83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118452927"
 ---
 # <a name="change_log_entry-structure"></a>ALTERAR \_ estrutura de entrada de log \_
 
-\[Essas informações se aplicam somente ao Windows XP com Service Pack 2 (SP2).\]
+\[essas informações se aplicam somente ao Windows XP com Service Pack 2 (SP2).\]
 
 Uma entrada do log de alterações.
 
@@ -184,7 +184,7 @@ Os registros de dados de comprimento variável consistem em uma estrutura de [**
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                            |
 | Fim do suporte do cliente<br/>    | Windows XP com SP2<br/>                       |
 

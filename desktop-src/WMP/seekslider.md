@@ -1,6 +1,6 @@
 ---
 title: SEEKSLIDER
-description: Este é um controle deslizante predefinido com os valores padrão a seguir. | SEEKSLIDER
+description: Este é um SLIDER predefinido com os seguintes valores padrão. | SEEKSLIDER
 ms.assetid: 9fdb0f70-e5ce-4dbc-aeba-44fa0e2c9b3c
 keywords:
 - SEEKSLIDER Windows Media Player
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 59808fa7c41acfcc28b715362b8724c7f113faee
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a294eede05ec2b2f0f84e925aa299c9bcb2388ee2151385e48f2c68e6b4c1328
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747286"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118833335"
 ---
 # <a name="seekslider"></a>SEEKSLIDER
 
-Este é um **controle deslizante** predefinido com os valores padrão a seguir.
+Este é um **SLIDER predefinido** com os seguintes valores padrão.
 
 ``` syntax
 toolTip="Seek"
@@ -36,7 +36,7 @@ useForegroundProgress="true"
 
 ## <a name="remarks"></a>Comentários
 
-Isso cria um controle **deslizante** que procura o arquivo de mídia em qualquer posição. As dicas de ferramenta são localizadas. Todas as propriedades desse **controle deslizante** podem ser substituídas especificando-as explicitamente.
+Isso cria um **controle SLIDER** que busca o arquivo de mídia para qualquer posição. As Dicas de Ferramenta são localizadas. Todas as propriedades desse **SLIDER** podem ser substituídos especificando-as explicitamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,7 +44,7 @@ Isso cria um controle **deslizante** que procura o arquivo de mídia em qualquer
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------|
-| Versão<br/> | Windows Media Player 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player 7.0 ou posterior<br/> |
 
 
 

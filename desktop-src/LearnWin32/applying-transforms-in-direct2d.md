@@ -109,7 +109,7 @@ void Scene::RenderScene()
 }
 ```
 
-Você pode baixar o projeto completo Visual Studio de exemplo [Direct2D relógio.](direct2d-clock-sample.md) (Apenas para se divertido, a versão de download adiciona um gradiant radial à face do relógio.)
+Você pode baixar o projeto completo Visual Studio de exemplo [Direct2D Relógio.](direct2d-clock-sample.md) (Apenas para se divertido, a versão de download adiciona um gradiant radial à face do relógio.)
 
 ## <a name="combining-transforms"></a>Combinando transformaçãos
 

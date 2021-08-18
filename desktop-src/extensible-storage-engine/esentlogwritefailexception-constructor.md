@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 87ca456b7a3613e2935d2e3014edb24205c841a9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f3e3927605489765ebd9ab46bf94cec5b07fa4ec8d8a92c83e999851d7c69f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118494322"
 ---
 # <a name="esentlogwritefailexception-constructor"></a>Construtor EsentLogWriteFailException
 
 Inicializa uma nova instância da classe EsentLogWriteFailException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentLogWriteFailException()
 
 [Classe EsentLogWriteFailException](./esentlogwritefailexception-class.md)
 
-[Membros do EsentLogWriteFailException](./esentlogwritefailexception-members.md)
+[Membros EsentLogWriteFailException](./esentlogwritefailexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

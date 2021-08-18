@@ -1,7 +1,7 @@
 ---
 description: O tipo de objeto.
 ms.assetid: ab405984-2ebc-4514-9400-bdb13676eda5
-title: D3DXPARAMETER_CLASS enumeração (D3dx9shader.h)
+title: Enumeração de D3DXPARAMETER_CLASS (D3dx9shader. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118525235"
 ---
-# <a name="d3dxparameter_class-enumeration"></a>Enumeração D3DXPARAMETER \_ CLASS
+# <a name="d3dxparameter_class-enumeration"></a>\_Enumeração de classe D3DXPARAMETER
 
 O tipo de objeto.
 
@@ -45,52 +45,52 @@ typedef enum D3DXPARAMETER_CLASS {
 
 <dl> <dt>
 
-<span id="D3DXPC_SCALAR"></span><span id="d3dxpc_scalar"></span>**ESCALAR D3DXPC \_**
+<span id="D3DXPC_SCALAR"></span><span id="d3dxpc_scalar"></span>**D3DXPC \_ escalar**
 </dt> <dd>
 
 Constante é um escalar.
 
 </dd> <dt>
 
-<span id="D3DXPC_VECTOR"></span><span id="d3dxpc_vector"></span>**VETOR D3DXPC \_**
+<span id="D3DXPC_VECTOR"></span><span id="d3dxpc_vector"></span>**\_Vetor D3DXPC**
 </dt> <dd>
 
 Constante é um vetor.
 
 </dd> <dt>
 
-<span id="D3DXPC_MATRIX_ROWS"></span><span id="d3dxpc_matrix_rows"></span>**LINHAS DE MATRIZ D3DXPC \_ \_**
+<span id="D3DXPC_MATRIX_ROWS"></span><span id="d3dxpc_matrix_rows"></span>**\_Linhas da matriz D3DXPC \_**
 </dt> <dd>
 
-Constante é uma matriz principal de linha.
+Constante é uma matriz de linha principal.
 
 </dd> <dt>
 
-<span id="D3DXPC_MATRIX_COLUMNS"></span><span id="d3dxpc_matrix_columns"></span>**COLUNAS DE MATRIZ D3DXPC \_ \_**
+<span id="D3DXPC_MATRIX_COLUMNS"></span><span id="d3dxpc_matrix_columns"></span>**\_Colunas da matriz D3DXPC \_**
 </dt> <dd>
 
-Constante é uma matriz principal de coluna.
+Constante é uma matriz de coluna principal.
 
 </dd> <dt>
 
-<span id="D3DXPC_OBJECT"></span><span id="d3dxpc_object"></span>**OBJETO D3DXPC \_**
+<span id="D3DXPC_OBJECT"></span><span id="d3dxpc_object"></span>**\_Objeto D3DXPC**
 </dt> <dd>
 
-Constante é uma textura, sombreador ou uma cadeia de caracteres.
+Constant é uma textura, um sombreador ou uma cadeia de caracteres.
 
 </dd> <dt>
 
-<span id="D3DXPC_STRUCT"></span><span id="d3dxpc_struct"></span>**D3DXPC \_ STRUCT**
+<span id="D3DXPC_STRUCT"></span><span id="d3dxpc_struct"></span>**\_Estrutura D3DXPC**
 </dt> <dd>
 
 Constante é uma estrutura.
 
 </dd> <dt>
 
-<span id="D3DXPC_FORCE_DWORD"></span><span id="d3dxpc_force_dword"></span>**D3DXPC \_ FORCE \_ DWORD**
+<span id="D3DXPC_FORCE_DWORD"></span><span id="d3dxpc_force_dword"></span>**D3DXPC \_ forçar \_ DWORD**
 </dt> <dd>
 
-Força essa enumeração a compilar para 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada para um tamanho diferente de 32 bits. Este valor não é usado.
+Força essa enumeração a compilar a 32 bits de tamanho. Sem esse valor, alguns compiladores permitiriam que essa enumeração fosse compilada em um tamanho diferente de 32 bits. Este valor não é usado.
 
 </dd> </dl>
 
@@ -100,7 +100,7 @@ Força essa enumeração a compilar para 32 bits de tamanho. Sem esse valor, alg
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9shader.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9shader. h</dt> </dl> |
 
 
 
@@ -114,7 +114,7 @@ Força essa enumeração a compilar para 32 bits de tamanho. Sem esse valor, alg
 [**D3DXSHADER \_ TYPEINFO**](d3dxshader-typeinfo.md)
 </dt> <dt>
 
-[**D3DXCONSTANT \_ DESC**](d3dxconstant-desc.md)
+[**D3DXCONSTANT \_ desc**](d3dxconstant-desc.md)
 </dt> </dl>
 
  

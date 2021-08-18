@@ -4,12 +4,12 @@ ms.assetid: 771479f4-0819-48e3-afae-a79ee2c502b6
 title: Extensões XMBYTE4
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 46ca0b85625ebaaeb6aac58b68a76af4b8ec15f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5e683eca6c9477edfe7009b615eada7727fb82b58fc671294427eca4a51fa51d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118501632"
 ---
 # <a name="xmbyte4-extensions"></a>Extensões XMBYTE4
 

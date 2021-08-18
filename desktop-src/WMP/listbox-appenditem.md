@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. appendItem
-description: O método appendItem insere um novo texto no final do controle da caixa de listagem.
+title: LISTBOX.appendItem
+description: O método appendItem insere um novo texto no final do controle de caixa de listagem.
 ms.assetid: 899b9806-7135-4e87-bd1c-82b703a3ed20
 keywords:
-- LISTBOX. appendItem Windows Media Player
+- LISTBOX.appendItem Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0ca7f1fde59f248899e2443fbeb5f8cf201e7679
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2d94ae581a1bdd83e02e3840ee79c21d9edd965f3963c421073fba85c1fd9d67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119032"
 ---
-# <a name="listboxappenditem"></a>LISTBOX. appendItem
+# <a name="listboxappenditem"></a>LISTBOX.appendItem
 
-O método **appendItem** insere um novo texto no final do controle da caixa de listagem.
+O **método appendItem** insere um novo texto no final do controle de caixa de listagem.
 
 ``` syntax
         elementID.appendItem(newVal)
@@ -35,7 +35,7 @@ O método **appendItem** insere um novo texto no final do controle da caixa de l
 <span id="newVal"></span><span id="newval"></span><span id="NEWVAL"></span>*newVal*
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o texto a ser inserido.
+**Cadeia** de caracteres que contém o texto a ser inserido.
 
 </dd> </dl>
 

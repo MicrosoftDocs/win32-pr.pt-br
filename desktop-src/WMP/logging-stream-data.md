@@ -1,18 +1,18 @@
 ---
-title: Log de dados de fluxo
-description: Log de dados de fluxo
+title: Registrando dados de fluxo de log
+description: Registrando dados de fluxo de log
 ms.assetid: c902a755-afdd-4dea-bc3e-036555fdff10
 keywords:
-- Listas de reprodução do metarquivo do Windows Media, log de dados de fluxo
-- listas de reprodução, log de dados de fluxo
-- listas de reprodução de metarquivo, log de dados de fluxo
-- Playlists do metarquivo do Windows Media, log de dados de fluxo
-- listas de reprodução, log de dados de fluxo
-- playlists de metarquivo, log de dados de fluxo
-- log de dados de fluxo
-- log de dados de fluxo
-- Windows Media Player, log de dados de fluxo
-- Windows Media Player, log de dados de fluxo
+- Windows Playlists de metadados de mídia, registro em log de dados de fluxo
+- playlists, registro em log de dados de fluxo
+- listas de reprodução de metadados, registro em log de dados de fluxo
+- Windows Playlists de metadados de mídia, log de dados de fluxo
+- playlists, log de dados de fluxo
+- listas de reprodução de metadados, log de dados de fluxo
+- registro em log de dados de fluxo
+- registro em log de dados de fluxo
+- Windows Media Player, registrando dados de fluxo
+- Windows Media Player, registro em log de dados de fluxo
 ms.topic: article
 ms.date: 05/31/2018
 topic_type:
@@ -20,20 +20,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f234851cabf071ed2308fb5c96df2b53b60b9d45
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c0a2ae6fe4b647e8a5c19fc6f30562973b3280f37cd3af3a1b9d9093771959de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104084129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118860"
 ---
-# <a name="logging-stream-data"></a>Log de dados de fluxo
+# <a name="logging-stream-data"></a>Registrando dados de fluxo de log
 
-As informações registradas podem ser adquiridas e usadas para determinar o comportamento do visualizador, por exemplo, com que frequência um fluxo é exibido ou se um usuário específico exibiu um fluxo e por quanto tempo a qualidade.
+As informações registradas podem ser adquiridas e usadas para determinar o comportamento do visualizador, por exemplo, com que frequência um fluxo é exibido ou se um usuário específico exibiu um fluxo e por quanto tempo em qual qualidade.
 
-As informações de log são enviadas automaticamente para o servidor do qual a lista de reprodução foi originada. Você também pode enviar informações de log para servidores adicionais, incluindo servidores Web que você usa exclusivamente para registro em log. Para fazer isso, use o elemento **LogURL** , ESPECIFICANDO uma URL válida para o atributo **href** . Você pode incluir elementos **LogURL** como filhos do elemento **ASX** e como filhos de elementos de **entrada** individuais. Quando a playlist é aberta pela primeira vez, as informações de log são enviadas para o servidor de origem e para cada URL especificada em **LogURL** filhos do elemento **ASX** . Em seguida, à medida que cada entrada é atingida, as informações de log específicas para essa entrada são enviadas para cada URL especificada em **LogURL** filhos do elemento de **entrada** .
+As informações de registro em log são enviadas automaticamente ao servidor do qual a playlist foi originada. Você também pode enviar informações de log para servidores adicionais, incluindo servidores Web que você usa exclusivamente para registro em log. Para fazer isso, use o **elemento LOGURL,** especificando uma URL válida para o **atributo HREF.** Você pode incluir **elementos LOGURL** como filhos do **elemento ASX** e como filhos de elementos **ENTRY** individuais. Quando a playlist é aberta pela primeira vez, as informações de log são enviadas para o servidor de origem e para cada URL especificada em filhos **LOGURL** do **elemento ASX.** Em seguida, conforme cada entrada é atingida, as informações de registro em log específicas dessa entrada são enviadas para cada URL especificada em **filhos LOGURL** do **elemento ENTRY.**
 
-O SDK do Windows Media Format dá suporte ao elemento **LogURL** por meio da interface **IWMSReaderNetworkConfig** e dos seguintes métodos:
+O SDK Windows Media Format dá suporte ao elemento **LOGURL** por meio da interface **IWMSReaderNetworkConfig** e dos seguintes métodos:
 
 
 ```XML
@@ -46,9 +46,9 @@ HRESULT ResetLoggingUrlList();
 
 
 
-Além das informações que são registradas automaticamente, uma lista de reprodução de metarquivo pode registrar informações personalizadas por meio do uso do elemento **param** . Para usar o elemento **param** dessa forma, defina o atributo **Name** como "log:" seguido de um nome de campo de log e um namespace XML opcional separado do nome do campo por dois pontos (":"). Tudo depois que o segundo dois pontos é tratado como um namespace, portanto, o nome do campo não deve conter dois-pontos.
+Além das informações registradas automaticamente, uma playlist de metadados pode registrar informações personalizadas por meio do uso do **elemento PARAM.** Para usar o elemento **PARAM** dessa forma, de definir o atributo **NAME** como "log:" seguido por um nome de campo de log e um namespace XML opcional separado do nome do campo por outros dois-pontos (":"). Tudo após o segundo dois-pontos é tratado como um namespace, portanto, o nome do campo não deve conter dois-pontos.
 
-O campo de log especificado no atributo **Name** é definido como o valor do atributo **Value** . Se o log ainda não contiver um campo com o nome especificado, ele será adicionado.
+O campo de log especificado no **atributo NAME** é definido como o valor do **atributo VALUE.** Se o log ainda não tiver um campo com o nome especificado, ele será adicionado.
 
 **Código de exemplo**
 
@@ -79,15 +79,15 @@ O campo de log especificado no atributo **Name** é definido como o valor do atr
 
 <dl> <dt>
 
-[**Playlists de metarquivo**](metafile-playlists.md)
+[**Playlists de metadados**](metafile-playlists.md)
 </dt> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metadados de mídia**](windows-media-metafile-elements-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

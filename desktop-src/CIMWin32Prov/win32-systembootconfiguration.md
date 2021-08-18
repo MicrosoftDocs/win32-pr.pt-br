@@ -1,8 +1,8 @@
 ---
-description: A \_ classe WMI de associação SystemBootConfiguration do Win32 relaciona um sistema de computador e sua configuração de inicialização.
+description: A classe WMI de associação SystemBootConfiguration do Win32 relaciona um sistema de computador \_ e sua configuração de inicialização.
 ms.assetid: 1c6bce81-84d9-4949-92da-6111b4ecc939
 ms.tgt_platform: multiple
-title: Classe Win32_SystemBootConfiguration
+title: Win32_SystemBootConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,11 +23,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118416749"
 ---
-# <a name="win32_systembootconfiguration-class"></a>\_Classe Win32 SystemBootConfiguration
+# <a name="win32_systembootconfiguration-class"></a>Classe Win32 \_ SystemBootConfiguration
 
-A [classe WMI](../wmisdk/retrieving-a-class.md) de associação **\_ SystemBootConfiguration do Win32** relaciona um sistema de computador e sua configuração de inicialização.
+A classe [WMI](../wmisdk/retrieving-a-class.md) de associação **\_ SystemBootConfiguration do Win32** relaciona um sistema de computador e sua configuração de inicialização.
 
-A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
+A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,26 +42,26 @@ class Win32_SystemBootConfiguration : Win32_SystemSetting
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ SystemBootConfiguration** tem estes tipos de membros:
+A **classe \_ SystemBootConfiguration do Win32** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ SystemBootConfiguration** tem essas propriedades.
+A **classe \_ SystemBootConfiguration do Win32** tem essas propriedades.
 
 <dl> <dt>
 
 **Element**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ sistema de ComputerSystem Win32**
+Tipo de dados: **Win32 \_ ComputerSystem**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](../wmisdk/standard-qualifiers.md) ("element"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
+Qualificadores: [**Substituir**](../wmisdk/standard-qualifiers.md) ("Elemento"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ ComputerSystem")
 </dt> </dl>
 
 Referência à instância que representa o sistema de computador usando a configuração de inicialização.
@@ -77,16 +77,16 @@ Tipo de dados: **Win32 \_ BootConfiguration**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](../wmisdk/standard-qualifiers.md) ("Setting"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ BootConfiguration")
+Qualificadores: [**Substituir**](../wmisdk/standard-qualifiers.md) ("Configuração"), [**MappingStrings**](../wmisdk/standard-qualifiers.md) ("WMI \| Win32 \_ BootConfiguration")
 </dt> </dl>
 
-Referência à instância que representa a configuração de inicialização do sistema de computador.
+Referência à instância que representa a configuração de inicialização para o sistema de computador.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **Win32 \_ SystemBootConfiguration** é derivada de [**Win32 \_ SystemSetting**](win32-systemsetting.md).
+A **classe Win32 \_ SystemBootConfiguration** é derivada de [**Win32 \_ SystemSetting**](win32-systemsetting.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ A classe **Win32 \_ SystemBootConfiguration** é derivada de [**Win32 \_ SystemS
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -106,7 +106,7 @@ A classe **Win32 \_ SystemBootConfiguration** é derivada de [**Win32 \_ SystemS
 
 <dl> <dt>
 
-[**\_SystemSetting Win32**](win32-systemsetting.md)
+[**SystemSetting do Win32 \_**](win32-systemsetting.md)
 </dt> <dt>
 
 [Classes do sistema operacional](./operating-system-classes.md)

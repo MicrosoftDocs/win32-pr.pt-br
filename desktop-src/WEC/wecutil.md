@@ -1,6 +1,6 @@
 ---
 title: Wecutil.exe
-description: Wecutil.exe é um utilitário coletor de eventos do Windows que permite que um administrador crie e gerencie assinaturas para eventos encaminhados de fontes de eventos remotas que dão suporte ao protocolo WS-Management.
+description: Wecutil.exe é um utilitário de coletor de eventos Windows que permite que um administrador crie e gerencie assinaturas para eventos encaminhados de fontes de eventos remotas que dão suporte ao protocolo WS-Management.
 ms.assetid: 93ce25df-f829-43b9-96f2-7f2f291d100e
 ms.tgt_platform: multiple
 keywords:
@@ -13,18 +13,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aaf6f74007b56cff85c28c4106fd4345c5627d4e
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: 6e93e09bc4eed51448b686f0d18f00ecacaacd31d063c4905757d0185128ee64
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "104298445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117750966"
 ---
 # <a name="wecutilexe"></a>Wecutil.exe
 
-Wecutil.exe é um utilitário coletor de eventos do Windows que permite que um administrador crie e gerencie assinaturas para eventos encaminhados de fontes de eventos remotas que dão suporte ao protocolo WS-Management. Comandos, opções e valores de opção não diferenciam maiúsculas de minúsculas para este utilitário.
+Wecutil.exe é um utilitário de coletor de eventos Windows que permite que um administrador crie e gerencie assinaturas para eventos encaminhados de fontes de eventos remotas que dão suporte ao protocolo WS-Management. Comandos, opções e valores de opção não diferenciam maiúsculas de minúsculas para este utilitário.
 
-Se você receber uma mensagem dizendo "o servidor RPC não está disponível" ou "a interface é desconhecida" ao tentar executar wecutil, será necessário iniciar o serviço coletor de eventos do Windows (Wecsvc). Para iniciar o Wecsvc, em um prompt de comandos com privilégios elevados, digite **net start Wecsvc**.
+se você receber uma mensagem dizendo "o servidor RPC não está disponível" ou "a interface é desconhecida" ao tentar executar wecutil, será necessário iniciar o serviço coletor de eventos Windows (wecsvc). Para iniciar o Wecsvc, em um prompt de comandos com privilégios elevados, digite **net start Wecsvc**.
 
 ## <a name="list-existing-subscriptions"></a>Listar assinaturas existentes
 
@@ -605,15 +605,15 @@ Um valor que identifica um computador que é uma origem de evento para uma assin
 
 </dd> </dl>
 
-## <a name="configure-the-windows-event-collector-service"></a>Configurar o serviço coletor de eventos do Windows
+## <a name="configure-the-windows-event-collector-service"></a>configurar o serviço coletor de eventos Windows
 
-A sintaxe a seguir é usada para configurar o serviço coletor de eventos do Windows para garantir que as assinaturas de evento possam ser criadas e mantidas por meio de reinicializações do computador. Isso inclui o seguinte procedimento:
+a sintaxe a seguir é usada para configurar o Windows serviço coletor de eventos para garantir que as assinaturas de evento possam ser criadas e mantidas por meio de reinicializações do computador. Isso inclui o seguinte procedimento:
 
-**Para configurar o serviço coletor de eventos do Windows**
+**para configurar o Windows serviço coletor de eventos**
 
 1.  Habilite o canal ForwardedEvents se ele estiver desabilitado.
-2.  Atrase o início do serviço coletor de eventos do Windows.
-3.  Inicie o serviço coletor de eventos do Windows se ele não estiver em execução.
+2.  atrase o início do serviço do coletor de eventos Windows.
+3.  inicie o Windows serviço coletor de eventos se ele não estiver em execução.
 
 ``` syntax
 wecutil { qc | quick-config } /q:VALUE

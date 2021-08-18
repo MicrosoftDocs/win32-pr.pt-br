@@ -13,17 +13,17 @@ ms.locfileid: "117736415"
 ---
 # <a name="enabling-authentication-for-a-library-application"></a>Habilitando a autenticação para um aplicativo de biblioteca
 
-Como os aplicativos de biblioteca COM+ são hospedados por outros processos, seus requisitos de segurança podem ser diferentes daqueles de aplicativos de servidor. Se o aplicativo de biblioteca for hospedado por um navegador, talvez seja necessário receber retornos de chamada não autenticados.
+Como os aplicativos de biblioteca COM+ são hospedados por outros processos, seus requisitos de segurança podem ser diferentes dos aplicativos de servidor. Se o aplicativo de biblioteca for hospedado por um navegador, talvez seja necessário receber retornos de chamada não autenticados.
 
-Para atender a essa necessidade, você pode desabilitar a autenticação para que o processo de hospedagem não execute verificações de segurança para chamadores do aplicativo de biblioteca. Quando você desabilita a autenticação, as chamadas para o aplicativo de biblioteca efetivamente não são autenticadas– todas as chamadas para ele terão êxito. Para obter mais informações, consulte [Segurança do aplicativo de biblioteca.](library-application-security.md)
+Para atender a essa necessidade, você pode desabilitar a autenticação para que o processo de hospedagem não execute verificações de segurança para os chamadores do aplicativo de biblioteca. Quando você desabilita a autenticação, as chamadas para o aplicativo de biblioteca efetivamente não são autenticadas – todas as chamadas para ela serão realizadas com sucesso. Para obter mais informações, consulte [segurança do aplicativo de biblioteca](library-application-security.md).
 
 **Para habilitar (ou desabilitar) a autenticação para um aplicativo de biblioteca**
 
 1.  Clique com o botão direito do mouse no aplicativo COM+ para o qual você está habilitando ou desabilitando a autenticação e clique em **Propriedades**.
 
-2.  Na caixa de diálogo propriedades do aplicativo, clique na **guia** Segurança.
+2.  Na caixa de diálogo Propriedades do aplicativo, clique na guia **segurança** .
 
-3.  Em **Autenticação**, marque a caixa de seleção **Habilitar** autenticação para habilitar a autenticação; desempurar a caixa de seleção desabilitará a autenticação.
+3.  Em **autenticação**, marque a caixa de seleção **habilitar autenticação** para habilitar a autenticação; desmarcar a caixa de seleção desativará a autenticação.
 
 4.  Clique em **OK**.
 

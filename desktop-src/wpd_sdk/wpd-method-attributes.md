@@ -1,5 +1,5 @@
 ---
-description: 'Para o Windows 7, os dispositivos portáteis do Windows oferecem suporte aos seguintes atributos para métodos de um serviço de dispositivo. Esses atributos são retornados pelo método IPortableDeviceServiceCapabilities:: getmethodattributes.'
+description: 'para Windows 7, Windows dispositivos portáteis dão suporte aos seguintes atributos para métodos de um serviço de dispositivo. Esses atributos são retornados pelo método IPortableDeviceServiceCapabilities:: getmethodattributes.'
 ms.assetid: b920e037-7737-4a18-b4f1-5c59e0a857dd
 title: Atributos do método (PortableDevice. h)
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: fe638bcd0d87af7b16bfb4f202f21cea97908fcd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ac41b4e9c7273c953a9689ce8c3d9f44d32925aded5b36291c45895b872fa9fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105807139"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118026333"
 ---
 # <a name="method-attributes"></a>Atributos de método
 
-Para o Windows 7, os dispositivos portáteis do Windows oferecem suporte aos seguintes atributos para métodos de um serviço de dispositivo. Esses atributos são retornados pelo método [**IPortableDeviceServiceCapabilities:: Getmethodattributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getmethodattributes) .
+para Windows 7, Windows dispositivos portáteis dão suporte aos seguintes atributos para métodos de um serviço de dispositivo. Esses atributos são retornados pelo método [**IPortableDeviceServiceCapabilities:: Getmethodattributes**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getmethodattributes) .
 
 
 

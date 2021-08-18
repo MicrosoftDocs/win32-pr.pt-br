@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. itemSelectedBackgroundFocusLostColor
-description: O atributo itemSelectedBackgroundFocusLostColor especifica ou recupera um valor que indica a cor do texto de um item selecionado na lista de reprodução.
+title: PLAYLIST.itemSelectedBackgroundFocusLostColor
+description: O atributo itemSelectedBackgroundFocusLostColor especifica ou recupera um valor que indica a cor do texto de um item selecionado na playlist.
 ms.assetid: 65be17ab-1e1e-4aea-ad8f-f21dd8bfc14c
 keywords:
-- PLAYLIST. itemSelectedBackgroundFocusLostColor Windows Media Player
+- PLAYLIST.itemSelectedBackgroundFocusLostColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49c130119d1aad503c0c236ac9c28a61746645ac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1f3a812958b4d2923190390e565a44a05bc18f22731e687bef527605cafbc25b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118834360"
 ---
-# <a name="playlistitemselectedbackgroundfocuslostcolor"></a>PLAYLIST. itemSelectedBackgroundFocusLostColor
+# <a name="playlistitemselectedbackgroundfocuslostcolor"></a>PLAYLIST.itemSelectedBackgroundFocusLostColor
 
-O atributo **itemSelectedBackgroundFocusLostColor** especifica ou recupera um valor que indica a cor do texto de um item selecionado na lista de reprodução.
+O **atributo itemSelectedBackgroundFocusLostColor** especifica ou recupera um valor que indica a cor do texto de um item selecionado na playlist.
 
 ``` syntax
         elementID.itemSelectedBackgroundFocusLostColor
@@ -29,7 +29,7 @@ O atributo **itemSelectedBackgroundFocusLostColor** especifica ou recupera um va
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que representa uma cor. O valor padrão é a cor da face do botão do Windows.
+Esse atributo é uma cadeia de caracteres de **leitura/gravação** que representa uma cor. O valor padrão é a Windows de rosto do botão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação que represen
 
 <dl> <dt>
 
-[**Referência de cor**](color-reference.md)
+[**Referência de cores**](color-reference.md)
 </dt> <dt>
 
 [**Elemento PLAYLIST**](playlist-element.md)

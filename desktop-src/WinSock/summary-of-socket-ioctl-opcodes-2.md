@@ -1,19 +1,19 @@
 ---
-description: Alguns dos opcodes de soquete do Windows Sockets 2 são resumidos na tabela a seguir.
+description: alguns dos opcodes de soquete do IOCTL para Windows sockets 2 são resumidos na tabela a seguir.
 ms.assetid: fb6447b4-28f5-4ab7-bbdc-5a57ed38a994
 title: Resumo dos opcodes do slot IOCTL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2243457ddbb7e0bb59f14357cf61d2e771c6a7d2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 88f0d6163e4ef36598dad56dd4d81201bdda3c2a3b1bb0473a0ef9ffb4675b2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118559656"
 ---
 # <a name="summary-of-socket-ioctl-opcodes"></a>Resumo dos opcodes do slot IOCTL
 
-Alguns dos opcodes de soquete do Windows Sockets 2 são resumidos na tabela a seguir. Informações mais detalhadas estão na referência do Winsock em [**IOCTLs do Winsock**](winsock-ioctls.md) e na função [**WSPIoctl**](/previous-versions/windows/hardware/network/ff566296(v=vs.85)) . Há outros novos opcodes do IOCTL específicos de protocolo que podem ser encontrados no anexo específico do protocolo.
+alguns dos opcodes de soquete do IOCTL para Windows sockets 2 são resumidos na tabela a seguir. Informações mais detalhadas estão na referência do Winsock em [**IOCTLs do Winsock**](winsock-ioctls.md) e na função [**WSPIoctl**](/previous-versions/windows/hardware/network/ff566296(v=vs.85)) . Há outros novos opcodes do IOCTL específicos de protocolo que podem ser encontrados no anexo específico do protocolo.
 
 Uma lista completa de [**IOCTLs do Winsock**](winsock-ioctls.md) está disponível na referência do Winsock.
 

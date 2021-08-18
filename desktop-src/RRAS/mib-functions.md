@@ -1,6 +1,6 @@
 ---
-title: Funções de MIB de gerenciamento de roteador
-description: Usar as seguintes funções do Gerenciador de roteador para consultar e definir variáveis MIB
+title: Funções MIB de gerenciamento de roteador
+description: Use as seguintes funções de gerenciador de roteador para consultar e definir variáveis MIB
 ms.assetid: c911daa4-4f3d-4944-9dc0-695a4efbcb1b
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117790440"
 ---
-# <a name="router-management-mib-functions"></a>Funções de MIB de gerenciamento de roteador
+# <a name="router-management-mib-functions"></a>Funções MIB de gerenciamento de roteador
 
-Use as seguintes funções do Gerenciador de roteador para consultar e definir variáveis MIB:
+Use as seguintes funções de gerenciador de roteador para consultar e definir variáveis MIB:
 
 -   [**MprAdminMIBBufferFree**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminmibbufferfree)
--   [**MprAdminMIBEntryCreate**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminmibentrycreate)
+-   [**MprAdminMIBEntryCriar**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminmibentrycreate)
 -   [**MprAdminMIBEntryDelete**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminmibentrydelete)
 -   [**MprAdminMIBEntryGet**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminmibentryget)
 -   [**MprAdminMIBEntryGetFirst**](/windows/desktop/api/Mprapi/nf-mprapi-mpradminmibentrygetfirst)

@@ -13,11 +13,11 @@ ms.locfileid: "117790096"
 ---
 # <a name="next-hops"></a>Próximos saltos
 
-As rotas têm um ou mais próximos saltos associados a elas. Se o destino não estiver em uma rede conectada diretamente, o próximo salto será o endereço do próximo roteador (ou rede) na rede de saída que pode melhor rotear os dados para o destino. A melhor rota é a rota que tem o menor custo, com base na política de roteamento em uso. Cada próximo salto pode ser usado para encaminhar dados no caminho para o destino. Todas as rotas de propriedade de um cliente compartilham um conjunto comum de entradas de próximo salto que foram adicionadas pelo cliente.
+As rotas têm um ou mais próximos saltos associados a elas. Se o destino não estiver em uma rede conectada diretamente, o próximo salto será o endereço do próximo roteador (ou rede) na rede de saída que pode rotear melhor os dados para o destino. A melhor rota é a rota que tem o menor custo, com base na política de roteamento em uso. Cada próximo salto pode ser usado para encaminhar dados no caminho para o destino. Todas as rotas pertencentes a um cliente compartilham um conjunto comum de entradas de próximo salto que foram adicionadas pelo cliente.
 
-Cada próximo salto é identificado exclusivamente pelo endereço do próximo salto e o índice de interface usado para alcançar o próximo salto.
+Cada próximo salto é identificado exclusivamente pelo endereço do próximo salto e pelo índice da interface usado para alcançar o próximo salto.
 
-Se o próximo salto em si não estiver diretamente conectado, ele será marcado como um próximo salto "remoto". Nesse caso, o encaminhador deve executar outra pesquisa usando o endereço de rede do próximo salto. Essa pesquisa é necessária para localizar o próximo salto "local" usado para alcançar o próximo salto e o destino remotos.
+Se o próximo salto não estiver conectado diretamente, ele será marcado como um próximo salto "remoto". Nesse caso, o encaminhador deve executar outra olhada usando o endereço de rede do próximo salto. Essa busca é necessária para encontrar o próximo salto "local" usado para alcançar o próximo salto remoto e o destino.
 
 Uma entrada de próximo salto na tabela de roteamento inclui:
 
@@ -26,8 +26,8 @@ Uma entrada de próximo salto na tabela de roteamento inclui:
 -   O identificador da interface de saída
 -   O estado do próximo salto
 -   Sinalizadores associados ao próximo salto
--   Informações que são privadas para o proprietário do próximo salto
--   Um identificador para o destino correspondente ao próximo salto remoto
+-   Informações privadas para o proprietário do próximo salto
+-   Um alça para o destino correspondente ao próximo salto remoto
 
  
 

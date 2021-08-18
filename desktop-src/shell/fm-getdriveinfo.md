@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 142fff71-3a1b-4197-8c06-2e981cce4e4f
-ms.openlocfilehash: 0abac794ed23eca30676a839a6eb5ad7c1079c3c
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 39df15a4522e863fada40d3c964d709f40d2a26d01240aaefe51b09924b8c9ba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459116"
 ---
 # <a name="fm_getdriveinfo-message"></a>Mensagem \_ FM GETDRIVEINFO
 
@@ -38,7 +38,7 @@ O endereço de uma estrutura [**\_ GETDRIVEINFO do FMS**](fms-getdriveinfo.md) q
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um zero.
 

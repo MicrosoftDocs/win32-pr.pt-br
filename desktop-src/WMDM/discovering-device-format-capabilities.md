@@ -3,20 +3,20 @@ title: Descobrindo recursos de formato de dispositivo
 description: Descobrindo recursos de formato de dispositivo
 ms.assetid: dd139816-dc8c-4e73-9a21-67287bfe6405
 keywords:
-- Windows Media Gerenciador de Dispositivos, recursos do dispositivo
+- Windows Gerenciador de Dispositivos de mídia, recursos do dispositivo
 - Gerenciador de Dispositivos, recursos do dispositivo
 - Guia de programação, recursos do dispositivo
 - aplicativos de desktop, recursos de dispositivo
-- Criando aplicativos de Gerenciador de Dispositivos de mídia do Windows, recursos do dispositivo
+- criação de aplicativos de Gerenciador de Dispositivos de mídia Windows, recursos de dispositivo
 - gravando arquivos em dispositivos, recursos do dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c0ee05476f6b84bc85bb81cc7cff5815649f5842
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 03e4fc32c0980a1022f7affb225918ccf0d49e5d14c5bb7310e70e7aa4f83a62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105763394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118585142"
 ---
 # <a name="discovering-device-format-capabilities"></a>Descobrindo recursos de formato de dispositivo
 
@@ -46,9 +46,9 @@ Como um aplicativo solicita os recursos de formato de um dispositivo depende de 
 [**Gravando arquivos no dispositivo**](writing-files-to-the-device.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

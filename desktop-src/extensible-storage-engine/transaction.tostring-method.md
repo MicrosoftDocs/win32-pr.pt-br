@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f22a3f608e5e6a8a8b2711ca552ff0238c88212c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e0ab68e4637fe83ebffc1acf0eb6f177b97324530ec7a8d7b32d14a071c5c56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105758262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890337"
 ---
 # <a name="transactiontostring-method"></a>Método Transaction. ToString
 
@@ -54,7 +54,7 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. String](/dotnet/api/system.string)  
 Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [transação](./transaction-class.md)atual.  

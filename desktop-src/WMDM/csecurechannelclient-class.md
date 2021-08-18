@@ -3,7 +3,7 @@ title: Classe CSecureChannelClient
 description: Classe CSecureChannelClient
 ms.assetid: f02220b8-0d1c-416c-97ea-e5e7455fcbba
 keywords:
-- Windows Media Gerenciador de Dispositivos, classe CSecureChannelClient
+- Windows Mídia Gerenciador de Dispositivos, classe CSecureChannelClient
 - Gerenciador de Dispositivos, classe CSecureChannelClient
 - aplicativos de área de trabalho, classe CSecureChannelClient
 - referência de programação, classe CSecureChannelClient
@@ -11,12 +11,12 @@ keywords:
 - Classe CSecureChannelClient
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 59a886ba45648b2ba0356e9d7f246c2de912cedd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4ef469c1e7a73b04124850952ef0690bd18c82ecb3fc624d08df081b7b669637
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105789594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118585609"
 ---
 # <a name="csecurechannelclient-class"></a>Classe CSecureChannelClient
 
@@ -28,7 +28,7 @@ A classe **CSecureChannelClient** expõe os métodos a seguir.
 
 | Método                                                            | Descrição                                                                                                               |
 |-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [**Autenticação**](/previous-versions/ms983906(v=msdn.10))         | Dispara a troca de certificados entre componentes para estabelecer confiança.                                              |
+| [**Autenticar**](/previous-versions/ms983906(v=msdn.10))         | Dispara a troca de certificados entre componentes para estabelecer confiança.                                              |
 | [**DecryptParam**](/previous-versions/bb231586(v=vs.85))         | Descriptografa os dados recebidos por meio de um parâmetro.                                                                               |
 | [**EncryptParam**](/previous-versions/bb231587(v=vs.85))         | Criptografa os dados sendo enviados por meio de um parâmetro.                                                                         |
 | [**fIsAuthenticated**](/previous-versions/ms868497(v=msdn.10)) | Verifica se um canal de autenticação segura foi estabelecido com êxito. Esse método não é usado por aplicativos. |
@@ -43,7 +43,7 @@ A classe **CSecureChannelClient** expõe os métodos a seguir.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -58,6 +58,6 @@ A classe **CSecureChannelClient** expõe os métodos a seguir.
 [**Interfaces para aplicativos**](interfaces-for-applications.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -19,7 +19,7 @@ Normalmente, os controles são adicionados a um projeto como componentes e não 
 
 A distinção entre usar uma classe como uma referência versus um componente é sutil, mas importante. Ao adicionar um objeto como referência, você pode usar apenas a biblioteca de tipos que o controle fornece ou a biblioteca de tipos "brutos".
 
-Se você adicionar um controle como um componente, o Visual Basic mesclará as propriedades e os métodos do extensor do formulário no qual o controle é inserido com a biblioteca de tipos do controle, fornecendo, assim, uma versão estendida e empacotada da biblioteca de tipos. Com essa versão da biblioteca de tipos, você pode usar propriedades de extensor, como Top e Left, como se elas fossem parte do controle, em vez do contêiner do controle.
+Se você adicionar um controle como um componente, o Visual Basic mesclará as propriedades e métodos do extensor do formulário no qual o controle é inserido com a biblioteca de tipos do controle, fornecendo, assim, uma versão estendida e empacotada da biblioteca de tipos. Com essa versão da biblioteca de tipos, você pode usar propriedades de extensor, como Top e Left, como se elas fossem parte do controle, em vez do contêiner do controle.
 
 Visual Basic atualmente não dá suporte a várias bibliotecas de tipos criadas em um único .dll arquivo. Se você tiver uma DLL que incorpora várias bibliotecas de tipos, deverá obter cópias autônomos das bibliotecas de tipo da origem que forneceu o objeto para usar o objeto com Visual Basic.
 

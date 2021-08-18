@@ -55,7 +55,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Descrição    | O nome da propriedade. Espaços extras no início e no final da cadeia de caracteres são removidos. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) ou [**nome**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
-| Acesso         | WriteOnce                                                                                                                                                                                                                                                              |
+| Access         | WriteOnce                                                                                                                                                                                                                                                              |
 | Type           | String                                                                                                                                                                                                                                                                 |
 | Padrão        | "Nova propriedade"                                                                                                                                                                                                                                                         |
 | Sistema mínimo | Windows 2000                                                                                                                                                                                                                                                           |
@@ -71,8 +71,8 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 | Entrada | Valor |
 |----------------|---------------------------|
 | Descrição    | Um valor para a propriedade. |
-| Acesso         | ReadWrite                 |
-| Digite           | Variante                   |
+| Access         | ReadWrite                 |
+| Tipo           | Variante                   |
 | Padrão        | N/D                       |
 | Sistema mínimo | Windows 2000              |
 

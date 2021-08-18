@@ -1,6 +1,6 @@
 ---
-title: protocolo PPP sobre conexões Ethernet
-description: Windows O Server 2003, Windows XP e sistemas operacionais posteriores oferecem suporte para protocolo PPP via Ethernet (PPPoE). Para uma conexão PPPoE, de definir os seguintes valores na estrutura RASENTRY.
+title: protocolo PPP em conexões Ethernet
+description: Windows o servidor 2003, Windows XP e sistemas operacionais posteriores oferecem suporte para protocolo PPP via Ethernet (PPPoE). Para uma conexão PPPoE, defina os valores a seguir na estrutura RASENTRY.
 ms.assetid: abdbf22c-abeb-4363-bfa6-e0002d1637f4
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,15 +11,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117789806"
 ---
-# <a name="point-to-point-protocol-over-ethernet-connections"></a>protocolo PPP sobre conexões Ethernet
+# <a name="point-to-point-protocol-over-ethernet-connections"></a>protocolo PPP em conexões Ethernet
 
-Windows O Server 2003, Windows XP e sistemas operacionais posteriores oferecem suporte para protocolo PPP via Ethernet (PPPoE). Para uma conexão PPPoE, de definir os seguintes valores na [**estrutura RASENTRY.**](/previous-versions/windows/desktop/legacy/aa377274(v=vs.85))
+Windows o servidor 2003, Windows XP e sistemas operacionais posteriores oferecem suporte para protocolo PPP via Ethernet (PPPoE). Para uma conexão PPPoE, defina os valores a seguir na estrutura [**RASENTRY**](/previous-versions/windows/desktop/legacy/aa377274(v=vs.85)) .
 
 
 
 | Membro                      | Valor             |
 |-----------------------------|-------------------|
-| RASENTRY.dwType             | Banda larga \_ RASET  |
+| RASENTRY.dwType             | \_Banda larga RASET  |
 | RAENTRY.szDeviceType        | RASDT \_ PPPoE      |
 | RASENTRY.szLocalPhoneNumber | O nome do serviço. |
 
@@ -27,9 +27,9 @@ Windows O Server 2003, Windows XP e sistemas operacionais posteriores oferecem s
 
  
 
-Use a [**função RasSetEntryProperties**](/windows/desktop/api/Ras/nf-ras-rassetentrypropertiesa) para definir esses valores.
+Use a função [**RasSetEntryProperties**](/windows/desktop/api/Ras/nf-ras-rassetentrypropertiesa) para definir esses valores.
 
-Você também pode usar [**RasEntryDlg**](/windows/desktop/api/Rasdlg/nf-rasdlg-rasentrydlga) e o sinalizador \_ NewBroadbandEntry RASEDFLAG para [**RASENTRYDLG**](/windows/desktop/api/Rasdlg/nf-rasdlg-rasentrydlga) para exibir um assistente para criar uma entrada de lista telefônica PPPoE.
+Você também pode usar [**RasEntryDlg**](/windows/desktop/api/Rasdlg/nf-rasdlg-rasentrydlga) e o \_ sinalizador RASEDFLAG NewBroadbandEntry para [**RasEntryDlg**](/windows/desktop/api/Rasdlg/nf-rasdlg-rasentrydlga) para exibir um assistente para a criação de uma entrada de lista telefônica PPPoE.
 
  
 

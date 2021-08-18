@@ -1,6 +1,6 @@
 ---
 title: Instalando extensões de esquema
-description: As atualizações de esquema serão estritamente controladas na maioria dos sites do cliente – essa é a prática recomendada.
+description: As atualizações de esquema serão estritamente controladas na maioria dos sites de clientes – essa é a prática recomendada.
 ms.assetid: 5e495175-51d3-477c-9ec4-51c30677e735
 ms.tgt_platform: multiple
 ms.topic: article
@@ -14,7 +14,7 @@ ms.locfileid: "118187364"
 ---
 # <a name="installing-schema-extensions"></a>Instalando extensões de esquema
 
-As atualizações de esquema serão estritamente controladas na maioria dos sites do cliente – essa é a prática recomendada. Se um serviço exigir extensões de esquema, as extensões de esquema deverão ser instaladas separadamente. Isso permite que os clientes executem a atualização de esquema separadamente e antes do restante da instalação.
+As atualizações de esquema serão estritamente controladas na maioria dos sites de clientes – essa é a prática recomendada. Se um serviço exigir extensões de esquema, as extensões de esquema deverão ser instaláveis separadamente. Isso permite que os clientes executem a atualização de esquema separadamente e antes do restante da instalação.
 
  
 

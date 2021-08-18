@@ -15,13 +15,13 @@ ms.locfileid: "117789927"
 
 Os membros da estrutura [**RASDIALPARAMS**](/previous-versions/windows/desktop/legacy/aa377238(v=vs.85)) também podem especificar as informações de conexão a seguir.
 
--   Um número de telefone para substituir o número na entrada do catálogo telefônico.
--   Um número de telefone de [retorno](callback-connections.md) de chamada que o servidor remoto pode chamar de volta para estabelecer a conexão.
+-   Um número de telefone para substituir o número na entrada de lista telefônica.
+-   Um [número de telefone](callback-connections.md) de retorno de chamada que o servidor remoto pode chamar de volta para estabelecer a conexão.
 -   O nome do domínio de rede remota no qual a autenticação deve ocorrer.
 
-Para o número de retorno de chamada e o domínio, os membros do [**RASDIALPARAMS**](/previous-versions/windows/desktop/legacy/aa377238(v=vs.85)) podem indicar que o RAS deve usar as informações na entrada do catálogo telefônico ou pode fornecer informações que substituam os dados do catálogo telefônico.
+Para o número de retorno de chamada e o domínio, os membros [**RASDIALPARAMS**](/previous-versions/windows/desktop/legacy/aa377238(v=vs.85)) podem indicar que o RAS deve usar as informações na entrada de phone-book ou pode fornecer informações que substituem os dados da agenda telefônica.
 
-Um cliente RAS pode usar o parâmetro *lpRasDialExtensions* da função [**RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) para controlar se o RAS usa um prefixo ou sufixo de número de telefone especificado em uma entrada de catálogo telefônico.
+Um cliente RAS pode usar o parâmetro *lpRasDialExtensions* da [**função RasDial**](/windows/desktop/api/Ras/nf-ras-rasdiala) para controlar se o RAS usa um prefixo de número de telefone ou sufixo especificado em uma entrada de phone-book.
 
  
 

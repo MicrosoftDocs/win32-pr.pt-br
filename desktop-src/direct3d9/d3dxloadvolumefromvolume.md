@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: da2cedf42533fa1d170269e97a366f7e4a1a41f5
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 634d455a0611faabd9005d674af920d1fccd67534eedd2dedba68d08678f9b0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118525317"
 ---
 # <a name="d3dxloadvolumefromvolume-function"></a>Função D3DXLoadVolumeFromVolume
 
@@ -119,7 +119,7 @@ Valor [**D3DCOLOR**](d3dcolor.md) a ser substituído por preto transparente ou 0
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

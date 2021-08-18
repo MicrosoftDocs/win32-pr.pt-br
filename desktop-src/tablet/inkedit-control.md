@@ -4,18 +4,18 @@ ms.assetid: a1dfa254-cade-44c5-8fdd-74bb40849063
 title: Controle InkEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf6d5441506ee791eefddba05b9b1f3ddb8a8ec4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4fa64c4452ba5d7f66cdc03a1148c02a12f3945f876d68ac240ff4473e8d50bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118451317"
 ---
 # <a name="inkedit-control"></a>Controle InkEdit
 
 O controle [InkEdit](inkedit-control-reference.md) fornece uma maneira fácil de capturar, reconhecer e exibir tinta.
 
-Essa implementação do controle [InkEdit](inkedit-control-reference.md) é baseada no controle [**RichEdit**](/windows/desktop/api/richole/nn-richole-iricheditole) . A implementação gerenciada (.NET Framework) de [InkEdit](/previous-versions/ms835842(v=msdn.10)) é baseada no controle [**RichTextBox**](/previous-versions/windows/) .
+Essa implementação do controle [InkEdit](inkedit-control-reference.md) é baseada no controle [**RichEdit**](/windows/desktop/api/richole/nn-richole-iricheditole) . a implementação gerenciada (.NET Framework) de [InkEdit](/previous-versions/ms835842(v=msdn.10)) é baseada no controle [**RichTextBox**](/previous-versions/windows/) .
 
 A principal finalidade do controle [InkEdit](inkedit-control-reference.md) é coletar tinta, reconhecê-la e exibi-la em formato de texto. Além disso, ele dá suporte à exibição de tinta como um objeto incorporado com recursos de formatação de texto, como negrito e sublinhado.
 

@@ -1,9 +1,9 @@
 ---
-title: Função D3DX_SRGB_to_FLOAT_inexact
-description: Converte um valor SRGB em FLOAT. | Função D3DX_SRGB_to_FLOAT_inexact
+title: D3DX_SRGB_to_FLOAT_inexact função
+description: Converte um valor SRGB em FLOAT. | D3DX_SRGB_to_FLOAT_inexact função
 ms.assetid: 6eadda6d-ff99-4a8e-9e30-ae455732438e
 keywords:
-- Função D3DX_SRGB_to_FLOAT_inexact HLSL
+- D3DX_SRGB_to_FLOAT_inexact função HLSL
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44804ad73ab49ce4f62274c870d8487501c44361
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f9dd841e022da85d609c203f57288af62a6c99ecc9f56079982308a095285f39
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118515687"
 ---
-# <a name="d3dx_srgb_to_float_inexact-function"></a>D3DX \_ sRGB \_ para \_ flutuar \_ função inexata
+# <a name="d3dx_srgb_to_float_inexact-function"></a>Função \_ \_ \_ inexact D3DX SRGB para FLOAT \_
 
 Converte um valor SRGB em FLOAT.
 
@@ -44,13 +44,13 @@ Valor SRGB a ser convertido.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de SRGB convertido.
+O valor SRGB convertido.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função não tem uma precisão alta o suficiente para fornecer a resposta exata. A função alternativa [**D3DX \_ sRGB \_ para \_ flutuar**](d3dx-srgb-to-float.md) usa uma tabela de pesquisa para fornecer uma conversão exata de sRGB para float.
+Essa função não tem uma precisão alta o suficiente para dar a resposta exata. A função alternativa [**D3DX \_ SRGB \_ para \_ FLOAT**](d3dx-srgb-to-float.md) usa uma tabela de lookup para dar um SRGB exato para conversão float.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ Essa função não tem uma precisão alta o suficiente para fornecer a resposta 
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Essa função não tem uma precisão alta o suficiente para fornecer a resposta 
 [Funções](format-conversion-functions.md)
 </dt> <dt>
 
-[Descompactando e empacotando o \_ formato dxgi para a edição de imagem In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempacotar e empacotar formato DXGI \_ para In-Place edição de imagem](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

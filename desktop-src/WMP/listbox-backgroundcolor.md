@@ -1,9 +1,9 @@
 ---
-title: LISTBOX. backgroundColor
-description: O atributo backgroundColor especifica ou recupera a cor do plano de fundo no controle da caixa de listagem.
+title: LISTBOX.backgroundColor
+description: O atributo backgroundColor especifica ou recupera a cor da tela de fundo no controle da caixa de listagem.
 ms.assetid: 1ffa51cc-6d28-4b83-8127-eb2a67d98c79
 keywords:
-- LISTBOX. backgroundColor Windows Media Player
+- LISTBOX.backgroundColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 961a431f91d0ed16ce34593f6bef66a13981d850
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 37c170ee249e325aa9893515da94683703426327f0a556283125116e8c8d1522
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813343"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118941"
 ---
-# <a name="listboxbackgroundcolor"></a>LISTBOX. backgroundColor
+# <a name="listboxbackgroundcolor"></a>LISTBOX.backgroundColor
 
-O atributo **backgroundColor** especifica ou recupera a cor do plano de fundo no controle da caixa de listagem.
+O **atributo backgroundColor** especifica ou recupera a cor da tela de fundo no controle da caixa de listagem.
 
 ``` syntax
         elementID.backgroundColor
@@ -29,7 +29,7 @@ O atributo **backgroundColor** especifica ou recupera a cor do plano de fundo no
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém qualquer valor de cor do Microsoft Internet Explorer ou o valor "None". Ele tem um valor padrão igual à cor do plano de fundo do Windows.
+Esse atributo é uma Cadeia de **caracteres** de leitura/gravação que contém qualquer valor de cor Internet Explorer Microsoft ou o valor "none". Ele tem um valor padrão igual à cor Windows tela de fundo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,13 +45,13 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém 
 
 <dl> <dt>
 
-[**Referência de cor**](color-reference.md)
+[**Referência de cores**](color-reference.md)
 </dt> <dt>
 
 [**Elemento LISTBOX**](listbox-element.md)
 </dt> <dt>
 
-[**LISTBOX. foregroundColor**](listbox-foregroundcolor.md)
+[**LISTBOX.foregroundColor**](listbox-foregroundcolor.md)
 </dt> </dl>
 
  

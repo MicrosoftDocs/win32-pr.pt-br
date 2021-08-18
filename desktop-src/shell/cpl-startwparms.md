@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 790779c1c45acbc211fe36e28b2e55d5ae2e60da
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f836f868b81daa49e87eb4efc804442bed25690ce126852891327d0eb042aaec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920752"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118460605"
 ---
 # <a name="cpl_startwparms-message"></a>CPL \_ mensagem STARTWPARMS
 
@@ -42,7 +42,7 @@ Uma cadeia de caracteres com direções adicionais para execução.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se a mensagem tiver sido tratada ou **false** caso contrário.
 
@@ -56,9 +56,9 @@ Retornará **true** se a mensagem tiver sido tratada ou **false** caso contrári
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                             |
-| parâmetro<br/>                   | <dl> <dt>CPL. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                             |
+| Cabeçalho<br/>                   | <dl> <dt>CPL. h</dt> </dl> |
 
 
 

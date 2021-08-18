@@ -1,7 +1,7 @@
 ---
-description: Função D3DXSphereBoundProbe (D3DX9Mesh. h) – determina se um raio intersecciona o volume da caixa delimitadora de uma esfera.
+description: Função D3DXSphereBoundProbe (D3DX9Mesh.h) – determina se um raio intersecção do volume da caixa delimitada de uma esfera.
 ms.assetid: fa2e9ecf-7905-4a62-ba48-774bd522525a
-title: Função D3DXSphereBoundProbe (D3DX9Mesh. h)
+title: Função D3DXSphereBoundProbe (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: e2d3ea263d7ad8bc50b936fd1010c352c0c01783
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 85dbd46233176d65e7e7abbf0eb266c81868ceba7e67e3257bf902d1775d6a90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731149"
 ---
-# <a name="d3dxsphereboundprobe-function-d3dx9meshh"></a>Função D3DXSphereBoundProbe (D3DX9Mesh. h)
+# <a name="d3dxsphereboundprobe-function-d3dx9meshh"></a>Função D3DXSphereBoundProbe (D3DX9Mesh.h)
 
-Determina se um raio intersecciona o volume da caixa delimitadora de uma esfera.
+Determina se um raio intersecção do volume da caixa delimitada de uma esfera.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,51 +43,51 @@ BOOL D3DXSphereBoundProbe(
 
 <dl> <dt>
 
-*pCenter* \[ no\]
+*pCenter* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , especificando a coordenada central da esfera.
+Ponteiro para uma [**estrutura D3DXVECTOR3,**](d3dxvector3.md) especificando a coordenada central da esfera.
 
 </dd> <dt>
 
-*RADIUS* \[ no\]
+*Raio* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Raio da esfera.
 
 </dd> <dt>
 
-*pRayPosition* \[ no\]
+*pRayPosition* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , especificando a coordenada de origem do raio.
+Ponteiro para uma [**estrutura D3DXVECTOR3,**](d3dxvector3.md) especificando a coordenada de origem do raio.
 
 </dd> <dt>
 
-*pRayDirection* \[ no\]
+*pRayDirection* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) , especificando a direção do raio. Esse vetor não deve ser (0, 0, 0), mas não precisa ser normalizado.
+Ponteiro para uma [**estrutura D3DXVECTOR3,**](d3dxvector3.md) especificando a direção do raio. Esse vetor não deve ser (0,0,0), mas não precisa ser normalizado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Retornará **true** se Ray Interseccionar o volume da caixa delimitadora da esfera. Caso contrário, retornará **false**.
+Retornará **TRUE** se o raio intersecção do volume da caixa delimitada da esfera. Caso contrário, **retornará FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-**D3DXSphereBoundProbe** determina se Ray cruza o volume da caixa delimitadora da esfera, não apenas a superfície da esfera.
+**D3DXSphereBoundProbe** determina se o raio intersecção do volume da caixa delimitada da esfera, não apenas a superfície da esfera.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -95,12 +95,12 @@ Retornará **true** se Ray Interseccionar o volume da caixa delimitadora da esfe
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

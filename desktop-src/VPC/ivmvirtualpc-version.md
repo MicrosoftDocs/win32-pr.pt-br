@@ -1,6 +1,6 @@
 ---
 title: Propriedade de versão IVMVirtualPC (VPCCOMInterfaces. h)
-description: Recupera a versão desta instância do Windows Virtual PC.
+description: recupera a versão desta instância do Windows Virtual PC.
 ms.assetid: efcd5e71-8752-45a2-8138-4bc214762f39
 keywords:
 - Propriedade de versão Virtual PC
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0dc84fd714c50c0a0adb3084603aeea2419d3ce
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1fad1f72c5a87e047001f013c70e5b730bcd06b342d8e56cc390b62b2f284ae4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455981"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118591689"
 ---
 # <a name="ivmvirtualpcversion-property"></a>Propriedade IVMVirtualPC:: Version
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Recupera a versão desta instância do Windows Virtual PC.
+recupera a versão desta instância do Windows Virtual PC.
 
 Esta propriedade é somente para leitura.
 
@@ -62,7 +62,7 @@ A versão.
 
 ## <a name="remarks"></a>Comentários
 
-As informações de versão do Windows Virtual PC são retornadas como um valor de cadeia de caracteres com o seguinte formato: "*v*. *s*. *BBB*. " *t*", em que *v* é o número de versão principal, *s* é o número de versão secundário, *BBB* é o número de Build, *t* é o tipo de compilação (0 = Build de versão) e o *EE* é a Server Edition (se = Standard Edition, EE = Enterprise Edition).
+as informações de versão do Windows Virtual PC são retornadas como um valor de cadeia de caracteres com o seguinte formato: "*v*. *s*. *BBB*. " *t*", em que *v* é o número de versão principal, *s* é o número de versão secundário, *bbb* é o número de build, *t* é o tipo de compilação (0 = build de versão) e o *ee* é a server edition (ES = Edição Standard, EE = Edição Enterprise).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ As informações de versão do Windows Virtual PC são retornadas como um valor 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |

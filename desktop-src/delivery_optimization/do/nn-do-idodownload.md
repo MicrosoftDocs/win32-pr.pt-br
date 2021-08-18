@@ -14,12 +14,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/03/2019
-ms.openlocfilehash: ec2f74ce7daae6f612297d21e15e6993fcd78382
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 356d6ae2e01f91eae94d9d2ff01a39dd49708eb73a7287d8c176b4231654a74a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118543813"
 ---
 # <a name="idodownload-interface"></a>Interface IDODownload
 
@@ -31,18 +31,18 @@ A interface **IDODownload** tem esses métodos.
 
 | Método | Descrição |
 | ---- |:---- |
-| [IDODownload:: Abort](./nf-do-idomanager-createdownload.md) | Anula o download. |
-| [IDODownload:: Finalize](./nf-do-idodownload-finalize.md) | Finaliza o download. |
-| [IDODownload:: GetProperty](./nf-do-idodownload-getproperty.md) | Recupera um ponteiro para uma **variante** que contém uma propriedade de download específica. |
-| [IDODownload:: GetStatus](./nf-do-idodownload-getstatus.md) | Recupera um ponteiro para uma estrutura de **DO_DOWNLOAD_STATUS** que reflete o status atual do download. |
+| [IDODownload::Abort](./nf-do-idomanager-createdownload.md) | Anula o download. |
+| [IDODownload::Finalize](./nf-do-idodownload-finalize.md) | Finaliza o download. |
+| [IDODownload::GetProperty](./nf-do-idodownload-getproperty.md) | Recupera um ponteiro para uma **VARIANT que** contém uma propriedade de download específica. |
+| [IDODownload::GetStatus](./nf-do-idodownload-getstatus.md) | Recupera um ponteiro para uma **estrutura DO_DOWNLOAD_STATUS** que reflete o status atual do download. |
 | [IDODownload::P ause](./nf-do-idodownload-pause.md) | Pausa o download. |
-| [IDODownload:: SetProperty](./nf-do-idodownload-setproperty.md) | Define uma propriedade de download. |
-| [IDODownload:: iniciar](./nf-do-idodownload-start.md) | Inicia ou retoma um download. |
+| [IDODownload::SetProperty](./nf-do-idodownload-setproperty.md) | Define uma propriedade de download. |
+| [IDODownload::Start](./nf-do-idodownload-start.md) | Inicia ou retoma um download. |
 
 ## <a name="requirements"></a>Requisitos
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | Somente aplicativos do Windows 10, versão 1809 \[ Win32\] |
-| **Servidor mínimo com suporte** | Somente aplicativos do Windows Server, versão 1809 \[ Win32\] |
-| **Cabeçalho** | Do. h |
+| **Cliente mínimo com suporte** | \[Windows 10, versão 1809 Somente aplicativos Win32\] |
+| **Servidor mínimo com suporte** | Windows Servidor, versão 1809 \[ Somente aplicativos Win32\] |
+| **Cabeçalho** | Do.h |

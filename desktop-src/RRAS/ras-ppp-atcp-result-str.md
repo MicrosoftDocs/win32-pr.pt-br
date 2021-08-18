@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 66f3f950af9d5bdde8feef085457a895212ad04b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: faa3122026613ba5012f950a98a615dbb8c9ef34133a2a24249fca545eaa2060
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918555"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789630"
 ---
 # <a name="ras_ppp_atcp_result-structure"></a>\_Estrutura de \_ resultados do ATCP do RAS PPP \_
 
-\[Não há suporte para a estrutura de **\_ resultados do \_ ATCP \_ do protocolo RAS** no Windows Vista.\]
+\[não há suporte para a estrutura de **\_ resultados do \_ ATCP \_ do protocolo RAS** no Windows Vista.\]
 
 A estrutura de **\_ resultados do \_ ATCP \_ do RAS PPP** é usada para relatar o resultado de uma operação de projeção do protocolo AppleTalk para uma porta.
 
@@ -67,7 +67,7 @@ Especifica uma cadeia de caracteres Unicode terminada em nulo que especifica o e
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                       |
-| parâmetro<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Rassapi. h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método IVMKeyboard PressAndReleaseKey (VPCCOMInterfaces. h)
+title: Método IVMKeyboard PressAndReleaseKey (VPCCOMInterfaces.h)
 description: Simula uma tecla que está sendo pressionada e liberada.
 ms.assetid: 2a7fc36f-f1bf-4f1d-b8f7-ea5b167c82a7
 keywords:
-- PressAndReleaseKey do método virtual PC
-- Método PressAndReleaseKey Virtual PC, interface IVMKeyboard
-- IVMKeyboard interface virtual PC, método PressAndReleaseKey
+- Pc Virtual do método PressAndReleaseKey
+- Pc Virtual do método PressAndReleaseKey, interface IVMKeyboard
+- INTERFACE IVMKeyboard pc virtual, método PressAndReleaseKey
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4adbcac2c79c02ce69584bbfdf21a6b08b350a3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3c8678bf335392f8dd552817b915938445911e4a28a37662130e9f28b26c0318
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105813253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118593508"
 ---
-# <a name="ivmkeyboardpressandreleasekey-method"></a>IVMKeyboard: método ressAndReleaseKey de:P
+# <a name="ivmkeyboardpressandreleasekey-method"></a>Método IVMKeyboard::P ressAndReleaseKey
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Simula uma tecla que está sendo pressionada e liberada.
 
@@ -44,25 +44,25 @@ HRESULT PressAndReleaseKey(
 
 <dl> <dt>
 
-*chave* \[ no\]
+*chave* \[ Em\]
 </dt> <dd>
 
-O código de chave da chave a ser pressionada e liberada.
+O código-chave para a tecla a ser pressionada e liberada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                 | Descrição                                                                |
+| Valor/código de retorno                                                                                                                                                 | Descrição                                                                |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>                                   |
-| <dl> <dt>**E \_**</dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>                                      |
+| <dl> <dt>**E \_ PONTEIRO**</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>                                      |
 | <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>      | A cadeia de caracteres especificada está vazia ou contém um código de chave inválido.<br/> |
-| <dl> <dt>**DISP \_ E \_**</dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/>                               |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/>                               |
 
 
 
@@ -74,12 +74,12 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMKeyboard é definido como 00695f2e-c5ad-4d6e-B1ab-336ed121f8c4<br/>                |
+| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID \_ IVMKeyboard é definido como 00695f2e-c5ad-4d6e-b1ab-336ed121f8c4<br/>                |
 
 
 

@@ -3,12 +3,12 @@ title: Notificações de estado do soquete Winsock
 description: As APIs de notificações de estado do soquete fornecem uma maneira escalonável e eficiente de obter notificações sobre alterações de estado do soquete. Isso inclui notificações sobre coisas como leitura sem bloqueio, gravação sem bloqueio, condições de erro e outras informações.
 ms.topic: article
 ms.date: 11/18/2020
-ms.openlocfilehash: 9ad7f7afcb3dda223b4d54af293bc9a4dd019758
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: ed0bd6e37117377f91dc01cb56225b8c268cd87a0148d9ad05c2fd1a8f005f68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110559927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118558709"
 ---
 # <a name="winsock-socket-state-notifications"></a>Notificações de estado do soquete Winsock
 
@@ -30,15 +30,15 @@ Essas APIs permitem uma fácil construção de abstrações independentes de pla
 
 Essas APIs fornecem uma alternativa escalonável para o [**WSAPoll**](/windows/win32/api/winsock2/nf-winsock2-wsapoll) e [**selecionam**](/windows/win32/api/winsock2/nf-winsock2-select) APIs.
 
-Eles são uma alternativa à [E/S](/windows/win32/api/winsock2/nf-winsock2-wsasend#overlapped-socket-i-o) de soquete sobressalo usada com portas de conclusão de [E/S](/windows/win32/fileio/i-o-completion-ports)e evitam a necessidade de buffers de E/S permanentes por soquete. Mas, em um cenário em que buffers de E/S por soquete não são uma consideração importante (o número de soquetes é relativamente baixo ou são constantemente usados), a E/S de soquete sobressalo pode ter menos sobrecarga devido a um número menor de transições de kernel, bem como um modelo mais simples.
+Elas são uma alternativa à e [/s de soquete sobreposta](/windows/win32/api/winsock2/nf-winsock2-wsasend#overlapped-socket-i-o) usada com portas de conclusão de e [/s](/windows/win32/fileio/i-o-completion-ports)e evitam a necessidade de buffers de e/s permanentes por soquete. Mas, em um cenário em que os buffers de e/s por soquete não são uma consideração importante (o número de soquetes é relativamente baixo ou são constantemente usados), a e/s de Soquete sobreposto pode ter menos sobrecarga devido a um número menor de transições de kernel, bem como um modelo mais simples.
 
-Um soquete pode ser associado a apenas uma única porta de conclusão de E/S. Um soquete pode ser registrado com uma porta de conclusão de E/S apenas uma vez. Para alterar **as** chaves de conclusão, descreva a notificação, aguarde a mensagem SOCK_NOTIFY_EVENT_REMOVE (consulte os [**tópicos ProcessSocketNotifications**](/windows/win32/api/winsock2/nf-winsock2-processsocketnotifications) e [**SocketNotificationRetrieveEvents)**](/windows/win32/api/winsock2/nf-winsock2-socketnotificationretrieveevents) e registre o soquete.
+Um soquete pode ser associado a apenas uma única porta de conclusão de e/s. Um soquete pode ser registrado com uma porta de conclusão de e/s apenas uma vez. Para alterar as chaves de conclusão, cancele o registro da notificação, aguarde a **SOCK_NOTIFY_EVENT_REMOVE** mensagem (consulte os tópicos [**ProcessSocketNotifications**](/windows/win32/api/winsock2/nf-winsock2-processsocketnotifications) e [**SocketNotificationRetrieveEvents**](/windows/win32/api/winsock2/nf-winsock2-socketnotificationretrieveevents) ) e registre novamente o soquete.
 
-Para evitar a liberação de memória que ainda está em uso, você deve  liberar as estruturas de dados associadas de um registro somente depois de receber a SOCK_NOTIFY_EVENT_REMOVE para o registro. Quando o descritor de soquete usado para registrar-se para notificações é fechado usando a [função closesocket,](/windows/win32/api/winsock/nf-winsock-closesocket) suas notificações são automaticamente desreguladas. No entanto, as notificações já na fila ainda podem ser entregues. Um desregistramento automático por **meio de closesocket** não gerará uma **notificação SOCK_NOTIFY_EVENT_REMOVE** dados.
+Para evitar a liberação de memória que ainda está em uso, você deve liberar as estruturas de dados associadas de um registro somente depois de receber a notificação de **SOCK_NOTIFY_EVENT_REMOVE** para o registro. Quando o descritor de soquete usado para se registrar para notificações é fechado usando a função [fechamento](/windows/win32/api/winsock/nf-winsock-closesocket) , suas notificações são desregistradas automaticamente. No entanto, as notificações já enfileiradas ainda podem ser entregues. Um desregistro automático via **fechamento** não gerará uma notificação de **SOCK_NOTIFY_EVENT_REMOVE** .
 
-Se você quiser processamento multi-threaded, deverá usar uma única porta de conclusão de E/S com várias notificações de processamento de threads. Isso permite que a porta de conclusão de E/S dimensione o trabalho em vários threads, conforme necessário. Evite ter várias portas de conclusão de E/S (por exemplo, uma por thread), porque esse design é vulnerável a gargalos em um único thread enquanto outros estão ociosos.
+Se você quiser processamento multi-threaded, deverá usar uma única porta de conclusão de e/s com vários threads processando notificações. Isso permite que a porta de conclusão de e/s Escale horizontalmente o trabalho entre vários threads, conforme necessário. Evite ter várias portas de conclusão de e/s (por exemplo, uma por thread), pois esse design é vulnerável ao pescoço da garrafa em um único thread, enquanto outros estão ociosos.
 
-Se vários threads estão desempatando pacotes de notificação com notificações **disparadas** por nível, SOCK_NOTIFY_TRIGGER_ONESHOT deve ser fornecido para evitar que vários threads recebam notificações para uma alteração de estado. Depois que a notificação de soquete for processada, a notificação deverá ser registrada novamente.
+Se vários threads estiverem defilando pacotes de notificação com notificações disparadas por nível, **SOCK_NOTIFY_TRIGGER_ONESHOT** deverá ser fornecido para evitar que vários threads recebam notificações para uma alteração de estado. Depois que a notificação de soquete for processada, a notificação deverá ser registrada novamente.
 
 Se vários threads estiverem defilando pacotes de notificação em uma conexão orientada a fluxo em que as mensagens individuais precisam ser processadas em um único thread, considere o uso de notificações únicas disparadas por nível. Isso reduz a probabilidade de que vários threads recebam fragmentos de mensagem que precisam ser remontados entre threads. 
 
@@ -421,9 +421,9 @@ Exit:
 Esta é uma ilustração simples de como usar as APIs com gatilho de borda.
 
 > [!IMPORTANT]
-> O servidor deve continuar recebendo até receber um **WSAEWOULDBLOCK**. Caso contrário, não poderá ter certeza de que uma borda crescente será observada. Assim, o soquete do servidor também deve ser sem bloqueio.
+> O servidor deve continuar recebendo até receber um **WSAEWOULDBLOCK**. Caso contrário, não poderá ter certeza de que uma borda crescente será observada. Como tal, o soquete do servidor também deve ser sem bloqueio.
 
-Este exemplo usa UDP para demonstrar a falta de uma notificação **HANGUP.** É necessário alguns problemas ao supor que os auxiliares comuns criem soquetes UDP, se necessário.
+Este exemplo usa UDP para demonstrar a falta de uma notificação de **desligamento** . É necessário um pouco de Liberties supondo que os auxiliares comuns criem soquetes UDP, se necessário.
 
 ```cpp
 // This example assumes that substantially similar helpers are available for UDP sockets.
@@ -586,11 +586,11 @@ Exit:
 
 ## <a name="multi-threaded-server"></a>Servidor multi-threaded
 
-Este exemplo demonstra um padrão de uso multi-threaded mais realista que usa os recursos de escalabilidade de escalabilidade da porta de conclusão de E/S para distribuir o trabalho entre vários threads de servidor. O servidor usa o gatilho de nível único para evitar que vários threads escolham notificações para o mesmo soquete e para permitir que cada thread esvaia os dados recebidos uma parte por vez.
+Este exemplo demonstra um padrão de uso multithread realista que usa os recursos de expansão da porta de conclusão de e/s para distribuir o trabalho entre vários threads de servidor. O servidor usa o gatilho de nível One-shot para evitar que vários threads escolham notificações para o mesmo soquete e para permitir que cada thread dissipe dados recebidos uma parte por vez.
 
-Ele também demonstra alguns padrões comuns usados com a porta de conclusão. A chave de conclusão é usada para fornecer um ponteiro de contexto por soquete. O ponteiro de contexto tem um header que descreve o tipo de soquete que está sendo usado, para que vários tipos de soquetes possam ser usados em uma única porta de conclusão. Os comentários no exemplo realçam que as conclusão arbitrárias podem ser desfeitas (assim como com a função [**GetQueuedCompletionStatusEx),**](/windows/win32/fileio/getqueuedcompletionstatusex-func) não apenas notificações de soquete. A API [**PostQueuedCompletionStatus**](/windows/win32/fileio/postqueuedcompletionstatus) é usada para postar mensagens em threads e apertá-las sem precisar aguardar a chegada de uma notificação de soquete.
+Ele também demonstra alguns padrões comuns usados com a porta de conclusão. A chave de conclusão é usada para fornecer um ponteiro de contexto por soquete. O ponteiro de contexto tem um cabeçalho que descreve o tipo de soquete que está sendo usado, para que vários tipos de soquetes possam ser usados em uma única porta de conclusão. Os comentários no exemplo realçam que as conclusões arbitrárias podem ser removidas da fila (assim como ocorre com a função [**GetQueuedCompletionStatusEx**](/windows/win32/fileio/getqueuedcompletionstatusex-func) ), não apenas as notificações de soquete. A API [**PostQueuedCompletionStatus**](/windows/win32/fileio/postqueuedcompletionstatus) é usada para postar mensagens em threads e ativá-las sem precisar aguardar a chegada de uma notificação de soquete.
 
-Por fim, o exemplo demonstra algumas das complexidades de desregistrização e limpeza corretas de contextos de soquete em uma carga de trabalho threaded. Neste exemplo, o contexto de soquete pertence implicitamente ao thread que recebe a notificação. O thread manterá a propriedade se não registrar a notificação.
+Por fim, o exemplo demonstra algumas das complicações de cancelar corretamente o registro e a limpeza de contextos de soquete em uma carga de trabalho encadeada. Neste exemplo, o contexto de soquete é implicitamente pertencente ao thread que recebe a notificação. O thread mantém a propriedade se não conseguir registrar a notificação.
 
 ```cpp
 #define CLIENT_THREAD_COUNT         100

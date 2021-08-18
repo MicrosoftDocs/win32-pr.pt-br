@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 8ec217276b5d038f85f33887b771b0afa0c6e40a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8da0ad9681f3dd87227a7fe0b5a5419ceac4c7ee354fb1548427c100561e816b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117770835"
 ---
 # <a name="certificatepolicies-object"></a>Objeto CertificatePolicies
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use a [**classe X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) chamando o construtor que usa um OID como parâmetro e, em seguida, use o OID para as políticas de certificado para recuperar as políticas de certificado.\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista e Windows XP. Em vez disso, use a [**classe X509Extension**](/dotnet/api/system.security.cryptography.x509certificates.x509extension?view=netcore-3.1) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) chamando o construtor que usa um OID como parâmetro e, em seguida, use o OID para as políticas de certificado para recuperar as políticas de certificado.\]
 
 O objeto **CertificatePolicies** representa uma coleção de objetos [**PolicyInformation**](policyinformation.md) . Cada objeto [**PolicyInformation**](policyinformation.md) representa uma única política de certificado.
 
@@ -48,8 +48,8 @@ O objeto **CertificatePolicies** tem essas propriedades.
 
 | Propriedade                                                    | Tipo de acesso          | Descrição                                                                                                                                                                                                                     |
 |:------------------------------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_NewEnum**](certificatepolicies-newenum.md)<br/> | Somente leitura<br/> | Recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. Essa propriedade é oculta em Visual Basic Scripting Edition (VBScript).<br/> |
-| [**Contar**](certificatepolicies-count.md)<br/>       | Somente leitura<br/> | Recupera o número de objetos [**PolicyInformation**](policyinformation.md) na coleção.<br/>                                                                                                                    |
+| [**\_NewEnum**](certificatepolicies-newenum.md)<br/> | Somente leitura<br/> | Recupera uma interface [**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant) em um objeto que pode ser usado para enumerar a coleção. essa propriedade é oculta no Visual Basic scripting Edition (VBScript).<br/> |
+| [**Contagem**](certificatepolicies-count.md)<br/>       | Somente leitura<br/> | Recupera o número de objetos [**PolicyInformation**](policyinformation.md) na coleção.<br/>                                                                                                                    |
 | [**Item**](certificatepolicies-item.md)<br/>         | Somente leitura<br/> | Recupera um objeto [**PolicyInformation**](policyinformation.md) que representa a política de certificado indexado da coleção. Essa é a propriedade padrão.<br/>                                                    |
 
 
@@ -68,7 +68,7 @@ O objeto **CertificatePolicies** não pode ser criado.
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fim do suporte do cliente<br/> | Windows Vista<br/>                                                               |
 | Fim do suporte do servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuível<br/>       | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/>       | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

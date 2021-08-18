@@ -1,6 +1,6 @@
 ---
 title: Propriedade nome do IVMVirtualPC (VPCCOMInterfaces. h)
-description: Recupera o nome do aplicativo do Windows Virtual PC.
+description: recupera o nome do aplicativo de Windows Virtual PC.
 ms.assetid: d33af684-ecba-4177-9ef3-cf6dff5bee4d
 keywords:
 - Propriedade do nome Virtual PC
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0bab8dbb624a63d5278560f8285abeac49166a6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 76b3a0ea30ab6e78e0180a33d3955e5141ec70a5d4f3bac09204aa2a133517c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644707"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118591709"
 ---
 # <a name="ivmvirtualpcname-property"></a>Propriedade IVMVirtualPC:: Name
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Recupera o nome do aplicativo do Windows Virtual PC.
+recupera o nome do aplicativo de Windows Virtual PC.
 
 Esta propriedade é somente para leitura.
 
@@ -45,7 +45,7 @@ HRESULT get_Name(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O nome do aplicativo do Windows Virtual PC.
+o nome do aplicativo de Windows Virtual PC.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -66,7 +66,7 @@ O nome do aplicativo do Windows Virtual PC.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |

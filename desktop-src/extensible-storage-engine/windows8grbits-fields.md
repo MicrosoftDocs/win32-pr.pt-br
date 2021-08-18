@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.wind
 ms:contentKeyID: 55104348
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 0b554b7c88a5d9066c5f9b7bc9b087cd0455f25b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f979be06c4812780dc0397d87fd831fb61684be646262afd7b605b9040c4bcea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104554037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889297"
 ---
 # <a name="windows8grbits-fields"></a>Campos Windows8Grbits
 
@@ -35,7 +35,7 @@ O tipo [Windows8Grbits](./windows8grbits-class.md) expõe os membros a seguir.
 <tr class="odd">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335502(v=exchg.10).md">IndexDotNetGuid</a></td>
-<td>A especificação desse sinalizador irá alterar a ordem de classificação GUID para .NET Framework padrão.</td>
+<td>a especificação desse sinalizador irá alterar a ordem de classificação GUID para .NET Framework padrão.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
@@ -50,7 +50,7 @@ O tipo [Windows8Grbits](./windows8grbits-class.md) expõe os membros a seguir.
 <tr class="even">
 <td><img src="../images/hh596466.pubfield(exchg.10).gif" title="Campo público" alt="Public field" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
 <td><a href="dn335394(v=exchg.10).md">TTDotNetGuid</a></td>
-<td>Essa opção solicita que as colunas de classificação de tabela temporária do tipo JET_coltypGUID de acordo com a ordem de classificação .NET Framework GUID.</td>
+<td>essa opção solicita que as colunas de classificação de tabela temporária do tipo JET_coltypGUID de acordo com a ordem de classificação .NET Framework GUID.</td>
 </tr>
 </tbody>
 </table>

@@ -15,7 +15,7 @@ ms.locfileid: "118452971"
 
 O <propertyStore> elemento especifica um conjunto de uma ou mais propriedades usadas por essa biblioteca. Esse elemento é opcional e não tem atributos.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` syntax
 <!-- propertyStore -->
@@ -35,7 +35,7 @@ O <propertyStore> elemento especifica um conjunto de uma ou mais propriedades us
 
 | Elemento pai                                                               | Elementos filho                                                   |
 |------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md) | [Elemento Property (esquema de biblioteca)](schema-library-property.md) |
+| [Elemento libraryDescription (esquema de biblioteca)](schema-librarydescription.md) | [Elemento property (esquema de biblioteca)](schema-library-property.md) |
 
 
 
@@ -43,7 +43,7 @@ O <propertyStore> elemento especifica um conjunto de uma ou mais propriedades us
 
 ## <a name="remarks"></a>Comentários
 
-O <propertyStore> elemento pode ter um ou mais <property> elementos filho.
+O <propertyStore> elemento pode ter um ou mais elementos <property> filho.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

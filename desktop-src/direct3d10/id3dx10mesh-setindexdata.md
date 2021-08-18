@@ -1,7 +1,7 @@
 ---
-description: Defina os dados de índice da malha.
+description: Definir os dados de índice da malha.
 ms.assetid: f3e7e166-94b5-45f6-9d43-8d7e32b7b523
-title: 'Método ID3DX10Mesh:: SetIndexData (D3DX10. h)'
+title: Método ID3DX10Mesh::SetIndexData (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118540177"
 ---
-# <a name="id3dx10meshsetindexdata-method"></a>Método ID3DX10Mesh:: SetIndexData
+# <a name="id3dx10meshsetindexdata-method"></a>Método ID3DX10Mesh::SetIndexData
 
-Defina os dados de índice da malha.
+Definir os dados de índice da malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,19 +41,19 @@ HRESULT SetIndexData(
 
 <dl> <dt>
 
-*pData* \[ no\]
+*pData* \[ Em\]
 </dt> <dd>
 
-Tipo: **const void \***
+Tipo: **const \* void**
 
-Os dados do índice.
+Os dados de índice.
 
 </dd> <dt>
 
-*cIndices* \[ no\]
+*cIndices* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
 O número de índices em pData.
 
@@ -63,7 +63,7 @@ O número de índices em pData.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

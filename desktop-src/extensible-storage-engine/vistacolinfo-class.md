@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 5319a763c657988cb6cd58d0fc7aca7e89a65a11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4d2603b792d2003fb2a69e866c9752b975ca7b916e062e9e6aa1a45b2a24690c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117889858"
 ---
 # <a name="vistacolinfo-class"></a>Classe VistaColInfo
 
@@ -43,7 +43,7 @@ Os níveis de informações de coluna foram adicionados à versão vista do ESEN
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

@@ -16,7 +16,7 @@ ms.locfileid: "118551370"
 
 Consulte também [Exemplo de Espelhamento de Nuvem.](./build-a-cloud-file-sync-engine.md#cloud-mirror-sample)
 
-A partir do Windows 10, versão 1709, o Windows fornece a *API de arquivos de nuvem*. Essa API consiste em várias APIs win32 e WinRT nativas que formalizam o suporte para mecanismos de sincronização de nuvem e lidam com tarefas como criar e gerenciar arquivos e diretórios de espaço reservado. Os usuários dessa API normalmente são provedores de sincronização e, até certo ponto, Windows aplicativos.
+A partir do Windows 10, versão 1709, o Windows fornece a *API de arquivos de nuvem*. Essa API consiste em várias APIs nativas win32 e WinRT que formalizam o suporte para mecanismos de sincronização de nuvem e lidam com tarefas como criar e gerenciar arquivos e diretórios de espaço reservado. Os usuários dessa API normalmente são provedores de sincronização e, até certo ponto, Windows aplicativos.
 
 ## <a name="in-this-section"></a>Nesta seção
 

@@ -3,26 +3,26 @@ title: Formulário de informações de inicialização para uma loja de música 
 description: Formulário de informações de inicialização para uma loja de música online
 ms.assetid: 6ee30446-7505-40ae-b664-3727a5be9976
 keywords:
-- Lojas online do Windows Media Player
+- Windows Media Player Lojas Online
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a3ded923538d6be6c8a22fa0ba96ddcd0814348d
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 83acbe30b3d5232abb6c79cb845f29d46cd741b2ea6b3a84f03ecd082cb13e99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118536"
 ---
 # <a name="startup-information-form-for-an-online-music-store"></a>Formulário de informações de inicialização para uma loja de música online
 
-Preencha e envie um formulário para cada loja e cada localidade para a equipe virtual dos serviços do Windows Media Player em mpsvctm@microsoft.com .
+Preencha e envie um formulário para cada loja e cada localidade para a equipe virtual Windows Media Player Services em mpsvctm@microsoft.com .
 
 
 
 | Item                      | Descrição |
 |---------------------------|-------------|
 | Nome da Loja                |             |
-| Locale                    |             |
+| Local                    |             |
 | Data                      |             |
 | Janela de entrada de destino |             |
 
@@ -30,7 +30,7 @@ Preencha e envie um formulário para cada loja e cada localidade para a equipe v
 
  
 
-## <a name="startup-information-for-test-store"></a>Informações de inicialização para o repositório de teste
+## <a name="startup-information-for-test-store"></a>Informações de inicialização para o Test Store
 
 
 
@@ -39,9 +39,9 @@ Preencha e envie um formulário para cada loja e cada localidade para a equipe v
 | URL XML de informações de serviço (limite de 2048 caracteres)                                                              |             |
 | Chave de serviço (ID exclusiva)                                                                                  |             |
 | Nome amigável (limite de 30 caracteres)                                                                       |             |
-| URL da imagem do menu (limite de 2048 caracteres)                                                                    |             |
-| Comprar a URL de música (limite de 2048 caracteres)<br/> (Somente armazenamentos de música integrados)<br/>                |             |
-| URL de compra da interface do usuário de 10 pés (limite de 2048 caracteres)<br/> (Somente armazenamentos de música integrados--opcional)<br/> |             |
+| URL da imagem de menu (limite de 2048 caracteres)                                                                    |             |
+| Comprar URL de Música (limite de 2048 caracteres)<br/> (Somente lojas de música integradas)<br/>                |             |
+| URL de compra de interface do usuário de 10 pés (limite de 2048 caracteres)<br/> (Somente lojas de música integradas – opcional)<br/> |             |
 
 
 
@@ -49,10 +49,10 @@ Preencha e envie um formulário para cada loja e cada localidade para a equipe v
 
 
 
-| Item hospedado pela Microsoft em "procurar todas as lojas online"                             | Descrição |
+| Item hospedado pela Microsoft em "Procurar todas as lojas online"                             | Descrição |
 |------------------------------------------------------------------------------------|-------------|
-| Logotipo da loja (130W x 30h)<br/> (Anexe o arquivo PNG separadamente.)<br/>        |             |
-| Procurar todas as imagens (108w x 108h)<br/> (Anexar o arquivo PNG separadamente.)<br/> |             |
+| Logotipo da Loja (130w x 30h)<br/> (Anexar o arquivo PNG separadamente.)<br/>        |             |
+| Imagem Browse-all (108w x 108h)<br/> (Anexar o arquivo PNG separadamente.)<br/> |             |
 | Armazenar texto de descrição (limite de 110 caracteres)                                       |             |
 | Texto para hiperlink (limite de 45 caracteres)                                            |             |
 
@@ -96,13 +96,13 @@ Preencha e envie um formulário para cada loja e cada localidade para a equipe v
 
 | Item                                                                                     | Descrição |
 |------------------------------------------------------------------------------------------|-------------|
-| Como recarregamos contas de teste?<br/> (Número de cartão de crédito fictício?, ...?<br/> |             |
+| Como podemos fazer contas de teste?<br/> (Número de cartão de crédito fictício?, ...?<br/> |             |
 
 
 
  
 
-## <a name="valid-accounts-that-testers-can-use-to-purchase-albums-or-tracks"></a>Contas válidas que os testadores podem usar para comprar álbuns ou faixas
+## <a name="valid-accounts-that-testers-can-use-to-purchase-albums-or-tracks"></a>Contas válidas que os testadores podem usar para comprar músicas ou faixas
 
 
 

@@ -28,7 +28,7 @@ ms.locfileid: "118556805"
 Usado para associar uma instância [**CIM \_ RegisteredProfile**](/previous-versions//ee309375(v=vs.85)) a uma instância de **CIM \_ RegisteredProfile** de outro perfil que faz referência ao perfil dependente como um perfil relacionado.
 
 > [!IMPORTANT]
-> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 

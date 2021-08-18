@@ -19,12 +19,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: b64ea80fe1304a0991e592a582ea16db76722b0a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 111cb3893f835483320b1875636c3715b756f9328d15e402e25ce5e3161ee9eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118417620"
 ---
 # <a name="win32_pnpdevicepropertyboolean-class"></a>\_Classe Win32 PnPDevicePropertyBoolean
 
@@ -232,7 +232,7 @@ Os valores possíveis são.
 
 <span id="Currency"></span><span id="currency"></span><span id="CURRENCY"></span>
 
-**Moeda** (14)
+**Conversor de Moedas** (14)
 
 
 </dt> <dd></dd> <dt>
@@ -504,7 +504,7 @@ Os valores possíveis são.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                             |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                          |
 | Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
 | MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |

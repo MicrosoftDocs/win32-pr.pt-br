@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 06a71f04a5837f09575a2f4bccf4b17e34e30d63
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e91ac5049740d360ae0c5f53959b3d952188bfa2a569c58a9e7cf86ae0c22577
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810596"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118584545"
 ---
 # <a name="iwmdrmdeviceappgeneratemeterchallenge-method"></a>Método IWMDRMDeviceApp:: GenerateMeterChallenge
 
@@ -63,14 +63,14 @@ O certificado de medição do aplicativo, como um **BSTR**. Este é um certifica
 *pbstrMeterURL* \[ fora\]
 </dt> <dd>
 
-A URL na qual os dados de medição devem ser enviados. Isso é alocado pelo Windows Media Gerenciador de Dispositivos e deve ser gratuito pelo chamador usando **SysFreeString**.
+A URL na qual os dados de medição devem ser enviados. isso é alocado por Gerenciador de Dispositivos de mídia Windows e deve ser gratuito pelo chamador usando **SysFreeString**.
 
 </dd> <dt>
 
 *pbstrMeterData* \[ fora\]
 </dt> <dd>
 
-Medição de dados a serem enviados para o serviço de medição. Isso é alocado pelo Windows Media Gerenciador de Dispositivos e deve ser gratuito pelo chamador usando **SysFreeString**.
+Medição de dados a serem enviados para o serviço de medição. isso é alocado por Gerenciador de Dispositivos de mídia Windows e deve ser gratuito pelo chamador usando **SysFreeString**.
 
 </dd> </dl>
 
@@ -90,7 +90,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 | <dl> <dt>**DRM \_ E \_ XMLNOTFOUND**</dt> </dl>               | Falha ao localizar uma marca XML necessária.<br/>                                 |
 | <dl> <dt>**Erros do dispositivo**</dt> </dl>            | Qualquer um dos vários erros do dispositivo.<br/>                                  |
 | <dl> <dt>**Erros do cliente DRM**</dt> </dl>        | Qualquer um dos vários erros internos do cliente DRM.<br/>                     |
-| <dl> <dt>**dispositivo \_ ns \_ E \_ não \_ WMDRM \_**</dt> </dl> | O dispositivo especificado não é um dispositivo compatível com DRM do Windows Media.<br/> |
+| <dl> <dt>**dispositivo \_ ns \_ E \_ não \_ WMDRM \_**</dt> </dl> | o dispositivo especificado não é um dispositivo compatível com DRM com mídia Windows.<br/> |
 
 
 
@@ -98,7 +98,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Antes de chamar esse método, o aplicativo deve chamar [**IWMDRMDeviceApp:: QueryDeviceStatus**](iwmdrmdeviceapp-querydevicestatus.md) ou [**IWMDRMDeviceApp2:: QueryDeviceStatus2**](iwmdrmdeviceapp2-querydevicestatus2.md) para verificar se todos os componentes DRM do dispositivo estão atualizados. Esse método só pode ser chamado em um dispositivo que ofereça suporte ao Windows Media DRM 10 para dispositivos portáteis.
+Antes de chamar esse método, o aplicativo deve chamar [**IWMDRMDeviceApp:: QueryDeviceStatus**](iwmdrmdeviceapp-querydevicestatus.md) ou [**IWMDRMDeviceApp2:: QueryDeviceStatus2**](iwmdrmdeviceapp2-querydevicestatus2.md) para verificar se todos os componentes DRM do dispositivo estão atualizados. esse método só pode ser chamado em um dispositivo que ofereça suporte a Windows mídia DRM 10 para dispositivos portáteis.
 
 Os dados recuperados *pbstrMeterData* devem ser enviados para a URL especificada por *pbstrMeterURL*. Certifique-se de codificar por URL os dados recuperados para que eles não sejam modificados durante a transferência.
 
@@ -106,7 +106,7 @@ Consulte [lidando com conteúdo protegido no aplicativo](handling-protected-cont
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código C++ a seguir cria um objeto **WMDRMDeviceApp** , verifica se o dispositivo é um dispositivo Windows Media DRM 10, se o relógio está correto e solicita os dados de medição.
+o exemplo de código C++ a seguir cria um objeto **WMDRMDeviceApp** , verifica se o dispositivo é um dispositivo Windows mídia DRM 10, se o relógio está correto e solicita os dados de medição.
 
 
 ```C++

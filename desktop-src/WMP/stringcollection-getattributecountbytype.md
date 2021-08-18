@@ -1,11 +1,11 @@
 ---
-title: Método StringCollection. getAttributeCountByType
-description: O método getAttributeCountByType recupera o número de atributos associados ao índice do item StringCollection especificado, ao nome do atributo e ao idioma.
+title: Método StringCollection.getAttributeCountByType
+description: O método getAttributeCountByType recupera o número de atributos associados ao índice de item StringCollection, ao nome do atributo e ao idioma especificados.
 ms.assetid: 3671b7b7-d6d4-4049-8710-d0f34c740b1e
 keywords:
-- método getAttributeCountByType Windows Media Player
-- método getAttributeCountByType Windows Media Player, classe StringCollection
-- Classe StringCollection Windows Media Player, método getAttributeCountByType
+- Método getAttributeCountByType Windows Media Player
+- Método getAttributeCountByType Windows Media Player classe , StringCollection
+- Classe StringCollection Windows Media Player método , getAttributeCountByType
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2acf2d7a1f8849f9bd0e83ead3880ca90d2d6149
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2e10f88a3b8e4847588ff8f7f924333c6649e59c362b3296b54ef8b83368b7af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118832423"
 ---
-# <a name="stringcollectiongetattributecountbytype-method"></a>Método StringCollection. getAttributeCountByType
+# <a name="stringcollectiongetattributecountbytype-method"></a>Método StringCollection.getAttributeCountByType
 
-O método **getAttributeCountByType** recupera o número de atributos associados ao índice do item **StringCollection** especificado, ao nome do atributo e ao idioma.
+O **método getAttributeCountByType** recupera o número de atributos associados ao índice de item **StringCollection,** ao nome do atributo e ao idioma especificados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,36 +44,36 @@ retVal = StringCollection.getAttributeCountByType(
 
 <dl> <dt>
 
-*índice* \[ do no\]
+*índice* \[ Em\]
 </dt> <dd>
 
-**Número** (**longo**) especificando o índice de base zero do item **StringCollection** do qual obter o atributo.
+**Number** (**long**) especificando o índice baseado em zero do item **StringCollection** do qual obter o atributo.
 
 </dd> <dt>
 
-*nome* \[ do no\]
+*name* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o nome do atributo.
+**Cadeia** de caracteres que contém o nome do atributo.
 
 </dd> <dt>
 
-*idioma* \[ do no\]
+*idioma* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que contém o idioma. Se o valor for definido como nulo ou a cadeia de caracteres vazia (""), a cadeia de caracteres de localidade atual será usada. Caso contrário, o valor deve ser uma cadeia de caracteres de linguagem RFC 1766 válida, como "en-US".
+**Cadeia de** caracteres que contém o idioma. Se o valor for definido como nulo ou a cadeia de caracteres vazia (""), a cadeia de caracteres de localidade atual será usada. Caso contrário, o valor deverá ser uma cadeia de caracteres de linguagem RFC 1766 válida, como "en-us".
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um **número** (**longo**).
+Esse método retorna um **Número** (**long**).
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é usado para determinar o número de atributos correspondentes a um determinado nome de atributo para um determinado item **StringCollection** . Os números de índice podem então ser passados para o quarto parâmetro do método **StringCollection. getItemInfoByType** .
+Esse método é usado para determinar o número de atributos correspondentes a um nome de atributo específico para um item **StringCollection** específico. Os números de índice podem ser passados para o quarto parâmetro do **método StringCollection.getItemInfoByType.**
 
-Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 

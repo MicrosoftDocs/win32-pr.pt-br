@@ -1,9 +1,9 @@
 ---
-title: 'Função RWStructuredBuffer:: Operator'
-description: 'Retorna uma variável de recurso. | Função RWStructuredBuffer:: Operator'
+title: Função RWStructuredBuffer::Operator
+description: Retorna uma variável de recurso. | Função RWStructuredBuffer::Operator
 ms.assetid: e821b60e-38db-463f-b0c6-47f2a4c9ccee
 keywords:
-- Função Operator HLSL
+- Função de operador HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e915d7862f7994d3b438bf3255ee836ede4b3d7d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ad2e8085a52a920f7fe87a2820398877167a137c14c4ebe39bacd71ae2ba0324
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104506387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118509315"
 ---
-# <a name="rwstructuredbufferoperator--function"></a>Função RWStructuredBuffer:: Operator
+# <a name="rwstructuredbufferoperator--function"></a>Função RWStructuredBuffer::Operator
 
 Retorna uma variável de recurso.
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ no\]
+*pos* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -45,7 +45,7 @@ A posição do índice.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **R**
 
@@ -59,7 +59,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

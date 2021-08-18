@@ -1,9 +1,9 @@
 ---
-title: comutador/winmd
-description: A opção/winmd especifica o nome do arquivo de metadados de saída (. winmd).
+title: /winmd switch
+description: A opção /winmd especifica o nome do arquivo de metadados de saída (.winmd).
 ms.assetid: AC4CE044-17FA-4D37-A800-EDD2A247AB7E
 keywords:
-- MIDL do comutador/winmd
+- /winmd switch MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,26 +12,26 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80a5e9f68cbeb1cffaa9eb16b7d4cb2b44f154c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 03d951530c94b14162b5ca3d91d9bb9d615a5a9ca23cc6468ace3c74da0f1687
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752665"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118385242"
 ---
-# <a name="winmd-switch"></a>comutador/winmd
+# <a name="winmd-switch"></a>/winmd switch
 
-A opção [**/winmd**](-metadata-dir.md) especifica o nome do arquivo de metadados de saída (. winmd).
+A [**opção /winmd**](-metadata-dir.md) especifica o nome do arquivo de metadados de saída (.winmd).
 
 ``` syntax
 midlrt /winmd metadata_filename
 ```
 
-## <a name="switch-options"></a>Opções de comutação
+## <a name="switch-options"></a>Opções de opção
 
 <dl> <dt>
 
-*nome de arquivo de metadados \_* 
+*nome do arquivo \_ de metadados* 
 </dt> <dd>
 
 Especifica o nome do arquivo de metadados.
@@ -42,7 +42,7 @@ Especifica o nome do arquivo de metadados.
 
 ## <a name="examples"></a>Exemplos
 
-**arquivo midlrt/winmd. winmd**
+**midlrt /winmd file.winmd**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,7 +59,7 @@ Especifica o nome do arquivo de metadados.
 
 <dl> <dt>
 
-[Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
+[Sintaxe geral da linha de comando MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Implementado pelo navegador. Expõe métodos que gerenciam qual monitor contém a barra de tarefas do Windows em um sistema de vários monitores.
+description: Implementado pelo navegador. expõe métodos que gerenciam qual monitor contém a barra de tarefas Windows em um sistema de vários monitores.
 title: Interface IMultiMonitorDockingSite
 ms.topic: reference
 ms.date: 05/31/2018
@@ -12,16 +12,16 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: af9a7a9e-bd7c-4b17-9cb6-008df5c820d8
-ms.openlocfilehash: 5ea3461d00c16f7384d7396e2f03946d517c460f
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: a5a17e8206af8f0821833f4b2ea250606de29b6fbe74b7a29ced6c5b5dc13ed0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841887"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118458216"
 ---
 # <a name="imultimonitordockingsite-interface"></a>Interface IMultiMonitorDockingSite
 
-Implementado pelo navegador. Expõe métodos que gerenciam qual monitor contém a barra de tarefas do Windows em um sistema de vários monitores.
+Implementado pelo navegador. expõe métodos que gerenciam qual monitor contém a barra de tarefas Windows em um sistema de vários monitores.
 
 ## <a name="members"></a>Membros
 
@@ -55,8 +55,8 @@ Normalmente, você não implementa a interface **IMultiMonitorDockingSite** . O 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                   |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                   |
 
 
 
