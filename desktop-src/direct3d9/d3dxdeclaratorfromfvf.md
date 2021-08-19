@@ -1,7 +1,7 @@
 ---
-description: Retorna um Declarador de um código de formato de vértice flexível (FVF).
+description: Retorna um declarador de um código FVF (formato de vértice flexível).
 ms.assetid: 0272239c-0873-4a5c-b046-541f4ba603f4
-title: Função D3DXDeclaratorFromFVF (D3DX9Mesh. h)
+title: Função D3DXDeclaratorFromFVF (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.locfileid: "118526178"
 ---
 # <a name="d3dxdeclaratorfromfvf-function"></a>Função D3DXDeclaratorFromFVF
 
-Retorna um Declarador de um código de formato de vértice flexível (FVF).
+Retorna um declarador de um código FVF (formato de vértice flexível).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ HRESULT D3DXDeclaratorFromFVF(
 
 <dl> <dt>
 
-*FVF* \[ no\]
+*FVF* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinação de [D3DFVF](d3dfvf.md) que descreve o FVF do qual gerar a matriz de Declarador retornado.
+Combinação de [D3DFVF](d3dfvf.md) que descreve o FVF do qual gerar a matriz declarator retornada.
 
 </dd> <dt>
 
-*Declaração* \[ de entrada, saída\]
+*Declaração* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DVERTEXELEMENT9**](d3dvertexelement9.md)**
 
-Uma matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) que descreve o formato de vértice dos vértices de malha. O limite superior dessa matriz de Declarador é o [**tamanho máximo de \_ \_ DECL \_ FVF**](./max-fvf-decl-size.md).
+Uma matriz de [**elementos D3DVERTEXELEMENT9**](d3dvertexelement9.md) que descreve o formato de vértice dos vértices de malha. O limite superior dessa matriz declarator é [**MAX \_ FVF \_ DECL \_ SIZE**](./max-fvf-decl-size.md).
 
 </dd> </dl>
 
@@ -63,7 +63,7 @@ Uma matriz de elementos [**D3DVERTEXELEMENT9**](d3dvertexelement9.md) que descre
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DXERR \_ INVALIDMESH.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DXERR \_ INVALIDMESH.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,8 +71,8 @@ Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a funçã
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

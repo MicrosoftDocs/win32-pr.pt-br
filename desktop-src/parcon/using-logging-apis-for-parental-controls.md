@@ -13,9 +13,9 @@ ms.locfileid: "117869058"
 ---
 # <a name="using-logging-apis-for-parental-controls"></a>Usando APIs de log para controles dos pais
 
-### <a name="activity-reporting-logging"></a>Sistema de Relatório de Atividades (registro em log)
+### <a name="activity-reporting-logging"></a>Relatório de atividades (registro em log)
 
-O arquivo de título WpcEvent.h contém definições dos campos para cada tipo de evento de atividade predefinido e o tipo personalizado. Este código de exemplo mostra as etapas para registrar em log um evento de convite de conversa de mensagens instantâneas usando a API de publicação ETW:
+O arquivo de cabeçalho WpcEvent. h contém definições dos campos para cada tipo de evento de atividade predefinido e o tipo personalizado. Este código de exemplo mostra as etapas para registrar um evento de convite de conversa de mensagens instantâneas usando a API de publicação do ETW:
 
 
 ```C++
@@ -88,36 +88,36 @@ void main()
 
 ### <a name="custom-logging"></a>Registro em log personalizado
 
-Para que um aplicativo estenda os eventos registrados fora do conjunto de eventos predefinidos ou de um tipo personalizado, você precisará definir um provedor para isso no manifesto do aplicativo. O canal padrão do WPC pode ser importado e os eventos definidos pelo aplicativo podem ser registrados.
+Para que um aplicativo estenda os eventos registrados fora do conjunto de eventos predefinidos ou um tipo personalizado, será necessário definir um provedor para isso no manifesto do aplicativo. O canal padrão WPC pode ser importado e os eventos definidos pelo aplicativo podem ser registrados.
 
 ### <a name="logging-rights"></a>Direitos de registro em log
 
-O canal de registro em log do WPC é controlado pela ACL (lista de [*controle*](/windows/desktop/SecGloss/a-gly) de acesso) para fornecer acesso completo somente aos administradores. Contas não administradoras podem gravar no canal, mas não têm acesso de leitura ou exclusão. O acesso ao canal é usando a API ETW.
+O canal de log WPC é controlado pela ACL ( [*lista de controle de acesso*](/windows/desktop/SecGloss/a-gly) ) para fornecer acesso completo apenas para administradores. Contas que não são de administrador podem gravar no canal, mas não têm acesso de leitura ou exclusão. O acesso ao canal é usando a API do ETW.
 
-### <a name="parental-controls-logging-provider-details"></a>Detalhes do provedor de registro em log de controles dos pais
+### <a name="parental-controls-logging-provider-details"></a>Detalhes do provedor de log de controles dos pais
 
-O provedor WPC é nomeado Microsoft.com/Windows/ParentControls com GUID {01090065-B467-4503-9B28-533766761087}. O canal de log local padrão é Microsoft.com/Windows/ParentControls/LocalEvents.
+o provedor WPC é denominado Microsoft.com/Windows/ParentalControls com GUID {01090065-B467-4503-9B28-533766761087}. o canal de log local padrão é Microsoft.com/Windows/ParentalControls/LocalEvents.
 
-Os arquivos de log são armazenados na pasta logs Windows \\ System32 \\ \\ Wpc.
+os arquivos de Log são armazenados na \\ pasta de Logs do Windows System32 \\ Wpc \\ .
 
-### <a name="notification-of-impending-time-limits-logout"></a>Notificação de logout de limites de tempo pendentes
+### <a name="notification-of-impending-time-limits-logout"></a>Notificação de logoff de limites de tempo iminente
 
-O sistema de Controles Dos Pais disparará um evento de aviso em 15 minutos e novamente em 1 minuto antes do logout de um usuário controlado com base nas restrições de tempo. Os aplicativos podem assinar esses eventos, especialmente quando estão em execução no modo de tela inteira do DirectX, em que as notificações Windows padrão não são exibidas. O código de exemplo é fornecido que mostra como assinar os eventos, registrar uma função de retorno de chamada e receber os eventos.
+O sistema de controles dos pais acionará um evento de aviso em 15 minutos e novamente em 1 minuto antes do logoff de um usuário controlado com base nas restrições de tempo. os aplicativos podem assinar esses eventos, especialmente quando estão sendo executados no modo de tela inteira do DirectX, em que as notificações padrão de Windows não são exibidas. É fornecido um código de exemplo que mostra como assinar os eventos, registrar uma função de retorno de chamada e receber os eventos.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Visão geral dos recursos de extensibilidade de controles dos pais](parental-controls-extensibility-features-overview.md)
+[Visão geral dos recursos de extensibilidade dos controles dos pais](parental-controls-extensibility-features-overview.md)
 </dt> <dt>
 
-[**DESCRITOR \_ \_ DE DADOS DE EVENTO**](/windows/desktop/api/evntprov/ns-evntprov-event_data_descriptor)
+[**\_descritor de dados de evento \_**](/windows/desktop/api/evntprov/ns-evntprov-event_data_descriptor)
 </dt> <dt>
 
 [**EventDataDescCreate**](/windows/desktop/api/evntprov/nf-evntprov-eventdatadesccreate)
 </dt> <dt>
 
-[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

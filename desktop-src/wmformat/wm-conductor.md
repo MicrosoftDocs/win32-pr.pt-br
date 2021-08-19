@@ -1,9 +1,9 @@
 ---
-title: WM/Wm/Wm
-description: O atributo WM/Attribute contém o nome do motorista.
+title: WM/condutor
+description: O atributo WM/condutor contém o nome do condutor.
 ms.assetid: 12c58716-7b91-4014-9741-575a017cf7f1
 keywords:
-- Formato de mídia do Windows WM/Wm/Wm
+- Formato de mídia do Windows para WM/condutor
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119027094"
 ---
-# <a name="wmconductor"></a>WM/Wm/Wm
+# <a name="wmconductor"></a>WM/condutor
 
-O **atributo WM/Attribute** contém o nome do motorista.
+O atributo **WM/condutor** contém o nome do condutor.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMConductor
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
+**Cadeia de caracteres do \_ tipo WMT \_**
 
 ## <a name="see-also"></a>Confira também
 

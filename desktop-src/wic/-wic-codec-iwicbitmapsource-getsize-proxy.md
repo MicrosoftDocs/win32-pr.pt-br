@@ -1,7 +1,7 @@
 ---
-description: Função proxy para o método GetSize.
+description: Função de proxy para o método GetSize.
 ms.assetid: a9b7d01c-78d9-47b8-a373-a7c49f7bccfd
-title: IWICBitmapSource_GetSize_Proxy função
+title: Função IWICBitmapSource_GetSize_Proxy
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118711638"
 ---
-# <a name="iwicbitmapsource_getsize_proxy-function"></a>Função \_ proxy GetSize IWICBitmapSource \_
+# <a name="iwicbitmapsource_getsize_proxy-function"></a>\_Função de \_ proxy IWICBitmapSource GetSize
 
-Função proxy para o [**método GetSize.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getsize)
+Função de proxy para o método [**GetSize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getsize) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,30 +42,30 @@ HRESULT IWICBitmapSource_GetSize_Proxy(
 
 <dl> <dt>
 
-*ESTE \_ PTR* \[ em\]
+*Isso \_ PTR* \[\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)\***
 
-Ponteiro para este [**objeto IWICBitmapSource.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)
+Ponteiro para este objeto [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) .
 
 </dd> <dt>
 
-*puiWidth* \[ out\]
+*puiWidth* \[ fora\]
 </dt> <dd>
 
-Tipo: **UINT \***
+Tipo: **uint \***
 
 Um ponteiro que recebe a largura de pixel do bitmap.
 
 </dd> <dt>
 
-*puiHeight* \[ out\]
+*puiHeight* \[ fora\]
 </dt> <dd>
 
-Tipo: **UINT \***
+Tipo: **uint \***
 
-Um ponteiro que recebe a altura de pixel do bitmap
+Um ponteiro que recebe a altura do pixel do bitmap
 
 </dd> </dl>
 
@@ -73,7 +73,7 @@ Um ponteiro que recebe a altura de pixel do bitmap
 
 Tipo: **HRESULT**
 
-Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="remarks"></a>Comentários
 
@@ -83,9 +83,9 @@ Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
 
 
 

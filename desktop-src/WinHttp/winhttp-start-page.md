@@ -1,5 +1,5 @@
 ---
-description: O Microsoft Windows HTTP Services (WinHTTP) fornece aos desenvolvedores uma API (interface de programação de aplicativo) cliente HTTP para enviar solicitações por meio do protocolo HTTP para outros servidores HTTP.
+description: O Microsoft Windows Http Services (WinHTTP) fornece aos desenvolvedores uma API (interface de programação de aplicativo) cliente HTTP para enviar solicitações por meio do protocolo HTTP para outros servidores HTTP.
 ms.assetid: 354ab65d-5e46-451d-b36b-2f8166a1a048
 title: Windows Serviços HTTP
 ms.topic: article
@@ -15,7 +15,7 @@ ms.locfileid: "119051964"
 
 ## <a name="purpose"></a>Finalidade
 
-O Microsoft Windows HTTP Services (WinHTTP) fornece aos desenvolvedores uma API (interface de programação de aplicativo) cliente HTTP para enviar solicitações por meio do protocolo HTTP para outros servidores HTTP.
+O Microsoft Windows Http Services (WinHTTP) fornece aos desenvolvedores uma API (interface de programação de aplicativo) cliente HTTP para enviar solicitações por meio do protocolo HTTP para outros servidores HTTP.
 
 ## <a name="where-applicable"></a>Quando aplicável
 
@@ -25,7 +25,7 @@ Para obter mais informações sobre como usar o WinHTTP para aplicativos com bas
 
 ## <a name="developer-audience"></a>Público de desenvolvedores
 
-O WinHTTP oferece uma API (interface de programação de aplicativo) C/C++ e um componente de automação com (COM) do Component Object Model adequado para uso em aplicativos baseados em PÁGINAS Active Server (ASP).
+O WinHTTP oferece uma API (interface de programação de aplicativos) C/C++ e um componente de automação com Component Object Model (COM) adequado para uso em aplicativos baseados em PÁGINAS Active Server (ASP).
 
 Uma compreensão básica do protocolo HTTP é importante para usar qualquer interface.
 

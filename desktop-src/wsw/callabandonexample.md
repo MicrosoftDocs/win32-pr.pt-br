@@ -1,11 +1,11 @@
 ---
 title: CallAbandonExample
-description: Exemplo de aplicativo cliente demonstrando o abandono de uma chamada.
+description: Exemplo de aplicativo cliente que demonstra o abandono de uma chamada.
 ms.assetid: 71253dd6-4f59-4acd-b244-c721834ca381
 keywords:
-- CallAbandonExample nativo – Web-Services
+- CallAbandonExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b5aa53de83d703850ad3eb24086c59a4322ee51e69f268ee80de1557bc99785d
@@ -17,13 +17,13 @@ ms.locfileid: "118963445"
 ---
 # <a name="callabandonexample"></a>CallAbandonExample
 
-Exemplo de aplicativo cliente demonstrando o abandono de uma chamada.
+Exemplo de aplicativo cliente que demonstra o abandono de uma chamada.
 
--   [AbandonCallClient. cpp](#abandoncallclientcpp)
--   [BlockUnBlockService. WSDL](#blockunblockservicewsdl)
+-   [AbandonCallClient.cpp](#abandoncallclientcpp)
+-   [BlockUnBlockService.wsdl](#blockunblockservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="abandoncallclientcpp"></a>AbandonCallClient. cpp
+## <a name="abandoncallclientcpp"></a>AbandonCallClient.cpp
 
 
 ```C++
@@ -193,7 +193,7 @@ Exit:
 
 
 
-## <a name="blockunblockservicewsdl"></a>BlockUnBlockService. WSDL
+## <a name="blockunblockservicewsdl"></a>BlockUnBlockService.wsdl
 
 ``` syntax
 <?xml version="1.0" encoding="UTF-8"?>

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d9e9f04ce3d25399866c711dad7a853f2c43c2ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d1bab0d66a081c175d997e093d7dd1ff2b0d1c9622ecff73e0b3b1473edc885
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759188"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495205"
 ---
 # <a name="istatspause-method"></a>IStats: método ause de:P
 
@@ -38,7 +38,7 @@ HRESULT STDMETHODCALLTYPE Pause();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o método for bem-sucedido, o valor de retorno será NMERR com \_ êxito.
 
@@ -50,8 +50,8 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**captura de NMERR \_ \_ pausada**</dt> </dl>  | A captura já está em pausa.<br/>                                                                                                    |
 | <dl> <dt>**NMERR \_ não \_ capturando**</dt> </dl>   | O NPP não está capturando dados. Chame o método [IStats:: Start](istats-start.md) para iniciar a captura.<br/>                            |
-| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>   | O NPP não está conectado à rede. Chame o método [IStats:: Connect](istats-connect.md) para conectar o NPP à rede.<br/> |
-| <dl> <dt>**NMERR \_ \_ somente não estatísticas \_**</dt> </dl> | O NPP está conectado à rede, mas não com o método [IStats:: Connect](istats-connect.md) .<br/>                                |
+| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>   | O NPP não está conectado à rede. chame o método [IStats:: Conexão](istats-connect.md) para conectar o NPP à rede.<br/> |
+| <dl> <dt>**NMERR \_ \_ somente não estatísticas \_**</dt> </dl> | o NPP está conectado à rede, mas não com o método [IStats:: Conexão](istats-connect.md) .<br/>                                |
 
 
 
@@ -85,7 +85,7 @@ Para reiniciar a chamada de captura [IStats:: resume](istats-resume.md). Para in
 [IStats](istats.md)
 </dt> <dt>
 
-[IStats:: conectar](istats-connect.md)
+[IStats:: Conexão](istats-connect.md)
 </dt> <dt>
 
 [IStats:: retomar](istats-resume.md)

@@ -1,7 +1,7 @@
 ---
-description: Retorna um identificador para o dispositivo que está associado a este canal autenticado.
+description: Retorna um alça para o dispositivo associado a esse canal autenticado.
 ms.assetid: 948eac1a-640a-47fd-b538-1de3ea5d8f0b
-title: D3DAUTHENTICATEDQUERY_DEVICEHANDLE (D3d9types. h)
+title: D3DAUTHENTICATEDQUERY_DEVICEHANDLE (D3d9types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,15 +22,15 @@ ms.locfileid: "118974655"
 ---
 # <a name="d3dauthenticatedquery_devicehandle"></a>D3DAUTHENTICATEDQUERY \_ DEVICEHANDLE
 
-Retorna um identificador para o dispositivo que está associado a este canal autenticado. Você pode usar esse identificador para verificar se dois canais autenticados estão se comunicando com o mesmo dispositivo.
+Retorna um alça para o dispositivo associado a esse canal autenticado. Você pode usar esse alça para verificar se dois canais autenticados estão se comunicando com o mesmo dispositivo.
 
 
 
 | Requisito | Valor |
 |-------------|----------------------------------------------------------------------------------------------------------------|
-| GUID de consulta  | **D3DAUTHENTICATEDQUERY \_ DEVICEHANDLE**                                                                        |
-| Dados de entrada  | [**\_Entrada de consulta D3DAUTHENTICATEDCHANNEL \_**](d3dauthenticatedchannel-query-input.md)                           |
-| Retornar dados | [**\_Saída D3DAUTHENTICATEDCHANNEL QUERYDEVICEHANDLE \_**](d3dauthenticatedchannel-querydevicehandle-output.md) |
+| GUID de Consulta  | **D3DAUTHENTICATEDQUERY \_ DEVICEHANDLE**                                                                        |
+| Dados de entrada  | [**ENTRADA DE CONSULTA D3DAUTHENTICATEDCHANNEL \_ \_**](d3dauthenticatedchannel-query-input.md)                           |
+| Retornar dados | [**SAÍDA D3DAUTHENTICATEDCHANNEL \_ QUERYDEVICEHANDLE \_**](d3dauthenticatedchannel-querydevicehandle-output.md) |
 
 
 
@@ -38,7 +38,7 @@ Retorna um identificador para o dispositivo que está associado a este canal aut
 
 ## <a name="remarks"></a>Comentários
 
-Esta consulta é válida para todos os tipos de canal.
+Essa consulta é válida para todos os tipos de canal.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ Esta consulta é válida para todos os tipos de canal.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types.h</dt> </dl> |
 
 
 
@@ -56,13 +56,13 @@ Esta consulta é válida para todos os tipos de canal.
 
 <dl> <dt>
 
-[Consultas de Proteção de Conteúdo](content-protection-queries.md)
+[Proteção de Conteúdo consultas](content-protection-queries.md)
 </dt> <dt>
 
-[Proteção de Conteúdo baseado em GPU](gpu-based-content-protection.md)
+[Dados baseados em GPU Proteção de Conteúdo](gpu-based-content-protection.md)
 </dt> <dt>
 
-[**IDirect3DAuthenticatedChannel9:: Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
+[**IDirect3DAuthenticatedChannel9::Query**](/windows/desktop/api/d3d9/nf-d3d9-idirect3dauthenticatedchannel9-query)
 </dt> </dl>
 
  

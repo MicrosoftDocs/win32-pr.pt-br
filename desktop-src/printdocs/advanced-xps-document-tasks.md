@@ -20,7 +20,7 @@ Os tópicos nesta seção demonstram como executar tarefas mais avançadas com a
 <dl>
 
 [Mesclar documentos XPS](merging-xps-documents.md)  
-[Processamento de documentos XPS em um filtro XPSDrv](processing-xps-documents-in-an-xpsdrv-filter.md)  
+[Processando documentos XPS em um filtro XPSDrv](processing-xps-documents-in-an-xpsdrv-filter.md)  
 </dl>
 
 ## <a name="related-topics"></a>Tópicos relacionados

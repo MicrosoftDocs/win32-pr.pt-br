@@ -3,8 +3,8 @@ title: Elemento ScheduleByWeek (calendarTriggerType)
 description: Especifica uma agenda semanal.
 ms.assetid: d2c33e76-0564-4b3c-ab86-e7bca667fa4f
 keywords:
-- gatilho semanal Agendador de Tarefas, elemento XML
-- Agendador de Tarefas do elemento ScheduleByWeek
+- gatilho semanal Agendador de Tarefas , elemento XML
+- Elemento ScheduleByWeek Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2d5ab62a0c39c4c1d0102edcdb96d310e9315820
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ddf37c6261ba28c4cb4f59c47ee8ebd8c09afc4e36c3d1aa218efe8caa81e8c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002274"
 ---
 # <a name="schedulebyweek-calendartriggertype-element"></a>Elemento ScheduleByWeek (calendarTriggerType)
 
-Especifica uma agenda semanal. Por exemplo, a tarefa começa às 8:00 em um dia específico da semana a cada semana ou em um dia específico da semana a cada semana.
+Especifica uma agenda semanal. Por exemplo, a tarefa começa às 8h em um dia específico da semana toda semana ou em um dia específico da semana a cada outra semana.
 
 ``` syntax
 <xs:element name="ScheduleByWeek"
@@ -31,7 +31,7 @@ Especifica uma agenda semanal. Por exemplo, a tarefa começa às 8:00 em um dia 
  />
 ```
 
-O elemento **ScheduleByWeek** é definido pelo tipo complexo [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) .
+O **elemento ScheduleByWeek** é definido pelo tipo complexo [**calendarTriggerType.**](taskschedulerschema-calendartriggertype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -39,7 +39,7 @@ O elemento **ScheduleByWeek** é definido pelo tipo complexo [**calendarTriggerT
 
 | Elemento                                                                             | Derivado de                                                                       | Descrição                                                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Especifica um gatilho diário, semanal, mensal ou um dia da semana (DOW) mensal.<br/> |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Especifica um gatilho diário, semanal, mensal ou um gatilho DOW (dia da semana).<br/> |
 
 
 
@@ -49,24 +49,24 @@ O elemento **ScheduleByWeek** é definido pelo tipo complexo [**calendarTriggerT
 
 | Elemento                                                                               | Type                                                                     | Descrição                                                          |
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [**DaysOfWeek**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)       | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executada.<br/>    |
-| [**WeeksInterval**](taskschedulerschema-weeksinterval-weeklyscheduletype-element.md) | unsignedByte                                                             | Especifica o intervalo entre as semanas no agendamento.<br/> |
+| [**DaysOfWeek**](taskschedulerschema-daysofweek-weeklyscheduletype-element.md)       | [**daysOfWeekType**](taskschedulerschema-daysofweektype-complextype.md) | Especifica os dias da semana em que a tarefa é executado.<br/>    |
+| [**WeeksInterval**](taskschedulerschema-weeksinterval-weeklyscheduletype-element.md) | unsignedByte                                                             | Especifica o intervalo entre as semanas na agenda.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Os elementos filho listados acima são definidos pelos tipos de elementos complexos [**weeklyScheduleType**](taskschedulerschema-weeklyscheduletype-complextype.md) .
+Os elementos filho listados acima são definidos pelos tipos [**de elementos complexos weeklyScheduleType.**](taskschedulerschema-weeklyscheduletype-complextype.md)
 
-A hora do dia em que a tarefa é iniciada é definida pelo elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) .
+A hora do dia em que a tarefa é iniciada é definida pelo [**elemento StartBoundary.**](taskschedulerschema-startboundary-triggerbasetype-element.md)
 
-Para o desenvolvimento de scripts, um gatilho semanal é especificado usando o objeto [**WeeklyTrigger**](weeklytrigger.md) .
+Para o desenvolvimento de scripts, um gatilho semanal é especificado usando o [**objeto WeeklyTrigger.**](weeklytrigger.md)
 
-Para desenvolvimento em C++, um gatilho semanal é especificado usando a interface [**IWeeklyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger) .
+Para o desenvolvimento em C++, um gatilho semanal é especificado usando a interface [**IWeeklyTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-iweeklytrigger)
 
 ## <a name="examples"></a>Exemplos
 
-O XML a seguir define um gatilho de calendário semanal que inicia uma tarefa de segunda-feira a sexta-feira (às 8:00) todas as semanas.
+O XML a seguir define um gatilho de calendário semanal que inicia uma tarefa de segunda a sexta-feira (às 8h) toda semana.
 
 
 ```XML
@@ -94,8 +94,8 @@ O XML a seguir define um gatilho de calendário semanal que inicia uma tarefa de
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -103,7 +103,7 @@ O XML a seguir define um gatilho de calendário semanal que inicia uma tarefa de
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

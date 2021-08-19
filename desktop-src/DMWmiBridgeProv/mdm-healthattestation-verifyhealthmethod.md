@@ -1,11 +1,11 @@
 ---
-title: Método VerifyHealthMethod da classe MDM_HealthAttestation
-description: Método para notificar o dispositivo para preparar uma solicitação de verificação de certificado de integridade. Consulte também VerifyHealth.
+title: Método VerifyHealthMethod da classe MDM_HealthAttestation dados
+description: Método para notificar o dispositivo para preparar uma solicitação de verificação de certificado de saúde. Consulte também VerifyHealth.
 ms.assetid: f5b11081-c664-4525-8f36-5f17c21e7f22
 keywords:
 - Método VerifyHealthMethod
-- Método VerifyHealthMethod, classe MDM_HealthAttestation
-- Classe MDM_HealthAttestation, método VerifyHealthMethod
+- Método VerifyHealthMethod, MDM_HealthAttestation classe
+- MDM_HealthAttestation classe, método VerifyHealthMethod
 topic_type:
 - apiref
 api_name:
@@ -25,9 +25,9 @@ ms.locfileid: "119077201"
 ---
 # <a name="verifyhealthmethod-method-of-the-mdm_healthattestation-class"></a>Método VerifyHealthMethod da classe MDM \_ HealthAttestation
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Método para notificar o dispositivo para preparar uma solicitação de verificação de certificado de integridade. Consulte também [VerifyHealth](/windows/client-management/mdm/healthattestation-csp).
+Método para notificar o dispositivo para preparar uma solicitação de verificação de certificado de saúde. Consulte também [VerifyHealth.](/windows/client-management/mdm/healthattestation-csp)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,10 +48,10 @@ Esse método não tem parâmetros.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 
@@ -60,7 +60,7 @@ Esse método não tem parâmetros.
 
 <dl> <dt>
 
-[**\_HEALTHATTESTATION MDM**](mdm-healthattestation.md)
+[**MDM \_ HealthAttestation**](mdm-healthattestation.md)
 </dt> <dt>
 
 [Como usar os scripts do PowerShell com o provedor de ponte WMI](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider)

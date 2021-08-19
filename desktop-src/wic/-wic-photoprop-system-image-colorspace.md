@@ -1,7 +1,7 @@
 ---
-description: A política de metadados de foto para a propriedade System. Image. ColorSpace.
+description: A política de metadados de foto para a propriedade System.Image.ColorSpace.
 ms.assetid: 10770f16-8db2-4719-bce3-452f578002ec
-title: Política de metadados de foto System. Image. ColorSpace
+title: Política de metadados de foto System.Image.ColorSpace
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 85c7d7c9134a8bd93a12ba6cfb6bd8605e228cb6b745ad4401a94f91a2ba9ff9
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118710416"
 ---
-# <a name="systemimagecolorspace-photo-metadata-policy"></a>Política de metadados de foto System. Image. ColorSpace
+# <a name="systemimagecolorspace-photo-metadata-policy"></a>Política de metadados de foto System.Image.ColorSpace
 
-A política de metadados de foto para a propriedade [System. Image. colorspace](../properties/props-system-image-colorspace.md) .
+A política de metadados de foto para a [propriedade System.Image.ColorSpace.](../properties/props-system-image-colorspace.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-PKEY \_ Image \_ colorspace
+ColorSpace \_ de Imagem \_ PKEY
 
 ### <a name="containers"></a>Contêineres
 
@@ -27,27 +27,27 @@ JPEG, TIFF
 
 Sim
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-\_UI2 VT
+VT \_ UI2
 
 ### <a name="input-type"></a>Tipo de entrada
 
 UShort
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 40961} | ushort      |
+| 1     | /app1/ifd/exif/{ushort=40961} | ushort      |
 | 2     | /xmp/exif:ColorSpace          | Unicode     |
 
 
@@ -60,7 +60,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                          | Formato de disco |
 |-------|-------------------------------|-------------|
-| 1     | /App1/IFD/EXIF/{UShort = 40961} | ushort      |
+| 1     | /app1/ifd/exif/{ushort=40961} | ushort      |
 | 2     | /xmp/exif:ColorSpace          | Unicode     |
 
 
@@ -73,7 +73,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                          |
 |-------|-------------------------------|
-| 1     | /App1/IFD/EXIF/{UShort = 40961} |
+| 1     | /app1/ifd/exif/{ushort=40961} |
 | 2     | /xmp/exif:colorspace          |
 
 
@@ -82,13 +82,13 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 40961} | ushort      |
+| 1     | /ifd/exif/{ushort=40961} | ushort      |
 | 2     | /ifd/xmp/exif:ColorSpace | Unicode     |
 
 
@@ -101,7 +101,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /IFD/EXIF/{UShort = 40961} | ushort      |
+| 1     | /ifd/exif/{ushort=40961} | ushort      |
 | 2     | /ifd/xmp/exif:ColorSpace | Unicode     |
 
 
@@ -114,7 +114,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     |
 |-------|--------------------------|
-| 1     | /IFD/EXIF/{UShort = 40961} |
+| 1     | /ifd/exif/{ushort=40961} |
 | 2     | /ifd/xmp/exif:colorspace |
 
 
@@ -127,7 +127,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. Image. ColorSpace](../properties/props-system-image-colorspace.md)
+[System.Image.ColorSpace](../properties/props-system-image-colorspace.md)
 </dt> </dl>
 
  

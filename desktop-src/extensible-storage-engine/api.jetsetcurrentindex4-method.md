@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Método Api.JetSetCurrentIndex4'
-title: Método Api.JetSetCurrentIndex4
+description: 'Saiba mais sobre: método API. JetSetCurrentIndex4'
+title: Método API. JetSetCurrentIndex4
 TOCTitle: 'JetSetCurrentIndex4 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetCurrentIndex4(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String,Microsoft.Isam.Esent.Interop.JET_INDEXID,Microsoft.Isam.Esent.Interop.SetCurrentIndexGrbit,System.Int32)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetcurrentindex4(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118497880"
 ---
-# <a name="apijetsetcurrentindex4-method"></a>Método Api.JetSetCurrentIndex4
+# <a name="apijetsetcurrentindex4-method"></a>Método API. JetSetCurrentIndex4
 
-Definir o índice atual de um cursor.
+Define o índice atual de um cursor.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -74,44 +74,44 @@ public static void JetSetCurrentIndex4(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - Tableid  
-    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - TableID  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    O cursor no que definir o índice.
+    O cursor no qual definir o índice.
 
 <!-- end list -->
 
   - índice  
-    Tipo: [System.String](/dotnet/api/system.string)  
+    Tipo: [System. String](/dotnet/api/system.string)  
     
-    O nome do índice a ser selecionado. Se for nulo ou vazio, o índice primário será selecionado.
+    O nome do índice a ser selecionado. Se isso for nulo ou vazio, o índice primário será selecionado.
 
 <!-- end list -->
 
   - indexid  
-    Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
     
-    A ID do índice a ser selecionado. Essa ID pode ser obtida usando JetGetIndexInfo ou JetGetTableIndexInfo com a [opção IndexId.](./jet-idxinfo-enumeration.md)
+    A ID do índice a ser selecionado. Essa ID pode ser obtida usando JetGetIndexInfo ou JetGetTableIndexInfo com a opção [IndexID](./jet-idxinfo-enumeration.md) .
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft.Isam.Esent.Interop.SetCurrentIndexGrbit](./setcurrentindexgrbit-enumeration.md)  
+    Tipo: [Microsoft. ISAM. ESENT. Interop. SetCurrentIndexGrbit](./setcurrentindexgrbit-enumeration.md)  
     
     Definir opções de índice.
 
 <!-- end list -->
 
   - itagSequence  
-    Tipo: [System.Int32](/dotnet/api/system.int32)  
+    Tipo: [System. Int32](/dotnet/api/system.int32)  
     
-    Número de sequência do valor de coluna com vários valores que será usado para posicionar o cursor no novo índice. Esse parâmetro só é usado em conjunto com [NoMove](./setcurrentindexgrbit-enumeration.md). Quando esse parâmetro não está presente ou está definido como zero, presume-se que seu valor seja 1.
+    Número de sequência do valor de coluna com valores múltiplos que será usado para posicionar o cursor no novo índice. Esse parâmetro só é usado em conjunto com [nomove](./setcurrentindexgrbit-enumeration.md). Quando esse parâmetro não estiver presente ou estiver definido como zero, seu valor será presumido como 1.
 
 ## <a name="see-also"></a>Confira também
 
@@ -121,4 +121,4 @@ public static void JetSetCurrentIndex4(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

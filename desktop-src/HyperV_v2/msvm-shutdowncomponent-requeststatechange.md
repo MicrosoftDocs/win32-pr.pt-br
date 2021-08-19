@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 71237715f08e3775ff4c61660a789e000e4f5a5d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 88c567a0035db7bcf4788d013c7e123e4e58cb05eefb231c96c425e92e4701a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950405"
 ---
 # <a name="requeststatechange-method-of-the-msvm_shutdowncomponent-class"></a>Método RequestStateChange da classe Msvm \_ ShutdownComponent
 
@@ -167,7 +167,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

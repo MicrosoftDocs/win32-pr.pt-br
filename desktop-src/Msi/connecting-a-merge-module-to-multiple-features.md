@@ -15,7 +15,7 @@ ms.locfileid: "118948417"
 
 O [**Conexão**](merge-connect.md) método do [](merge-object.md) Objeto de Mesclagem pode ser usado para conectar um módulo a um recurso adicional que foi mesclado ao banco de dados ou que será mesclado no banco de dados. O recurso deve existir antes de chamar esse método.
 
-Um módulo de mesclagem nunca deve entregar um componente que contém arquivos do sistema para o recurso principal de um aplicativo, pois isso pode fazer com que o Instalador valide e repare o aplicativo sempre que o arquivo do sistema for usado. Um arquivo .msi que se destina a aceitar componentes de um módulo de mesclagem deve ser autorado para que todos os componentes que contêm arquivos do sistema só pertençam a recursos separados do recurso principal do aplicativo.
+Um módulo de mesclagem nunca deve entregar um componente que contém arquivos do sistema para o recurso principal de um aplicativo, pois isso pode fazer com que o Instalador valide e repare o aplicativo sempre que o arquivo do sistema for usado. Um .msi que se destina a aceitar componentes de um módulo de mesclagem deve ser autorado para que todos os componentes que contêm arquivos do sistema pertençam apenas a recursos separados do recurso principal do aplicativo.
 
 Se o pacote usar um módulo de mesclagem contendo arquivos do sistema que vinculam todos os componentes do módulo de mesclagem ao recurso principal do aplicativo, uma tentativa de usar o arquivo do sistema poderá disparar o Instalador para tentar reparar o recurso principal do aplicativo. Se o recurso principal não puder ser reparado, a instalação poderá falhar.
 

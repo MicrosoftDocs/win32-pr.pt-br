@@ -1,5 +1,5 @@
 ---
-description: 'A tabela a seguir descreve quais threads os eventos de controle InkEdit podem disparar. EventThreadsChangeFires no threadClickFires da interface do usuário do aplicativo no threadDblClickFires da interface do usuário do aplicativoDblClickFires no thread de interface do usuário do aplicativoGestureFires no thread de interface do usuário do aplicativoKeyDownFires no thread de interface do usuário do aplicativoKeyPress É acionada no thread de interface do usuário do aplicativoKeyUpFires no thread de interface do usuário do aplicativoMouseDownFires no thread de interface do usuário do aplicativoMouseMoveFires no thread de interface do usuário do aplicativoMouseUpFires no thread de interface do usuário do aplicativoRecognition (somente biblioteca gerenciada). Aciona o thread de interface do usuário do aplicativoRecognitionResultFires no thread de interface do usuário do aplicativoSelChangeFires no thread de interface do usuário do aplicativoAlterkeFires no thread de interface do usuário do aplicativo '
+description: 'A tabela a seguir descreve em quais threads os eventos de controle InkEdit podem ser acionados. EventThreadsChangeFires na interface do usuário do aplicativo (UI) threadClickFires na interface de usuários do aplicativo threadDblClickFires na interface do usuário do aplicativo threadGestureFires na interface do usuário do aplicativo threadKeyDownFires na interface do usuário do aplicativo threadKeyPressFires na interface do usuário do aplicativo threadKeyUpFires na interface do usuário do aplicativo threadMouseDownFires no threadMouseMoveFires da interface do usuário do aplicativo na threadMouseUpFires da interface do usuário do aplicativo (somente biblioteca gerenciada). Acionado na interface do usuário do aplicativo threadRecognitionResultFires na interface do usuário do aplicativo threadSelChangeFires na interface do usuário do aplicativo threadStrokeFires no thread da interface do usuário do aplicativo '
 ms.assetid: 8554a1ab-3288-4bdd-866b-dd2c25842b1f
 title: Eventos de controle InkEdit
 ms.topic: article
@@ -13,26 +13,26 @@ ms.locfileid: "118967155"
 ---
 # <a name="inkedit-control-events"></a>Eventos de controle InkEdit
 
-A tabela a seguir descreve quais threads os [eventos de controle InkEdit](inkedit-control-reference.md) podem disparar.
+A tabela a seguir descreve em quais threads os eventos de controle [InkEdit](inkedit-control-reference.md) podem ser acionados.
 
 
 
 | Evento                                                                          | Threads                                                          |
 |--------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [**Alteração**](inkedit-change.md)                                               | Ativas no thread de interface do usuário do aplicativo<br/> |
-| [**Clicar**](inkedit-click.md)                                                 | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**DblClick**](inkedit-dblclick.md)                                           | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**Gesto**](inkedit-gesture.md)                                             | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**KeyDown**](inkedit-keydown.md)                                             | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**Keypress**](inkedit-keypress.md)                                           | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**KeyUp**](inkedit-keyup.md)                                                 | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**Mousedown**](inkedit-mousedown.md)                                         | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**Mousemove**](inkedit-mousemove.md)                                         | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**Mouseup**](inkedit-mouseup.md)                                             | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**Reconhecimento**](/previous-versions/ms567627(v=vs.100)) (somente Biblioteca Gerenciada). | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**Recognitionresult**](inkedit-recognitionresult.md)                         | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**SelChange**](inkedit-selchange.md)                                         | Ativas no thread de interface do usuário do aplicativo<br/>                  |
-| [**Curso**](inkedit-stroke.md)                                               | Ativas no thread de interface do usuário do aplicativo<br/>                  |
+| [**Alteração**](inkedit-change.md)                                               | Acionado no thread da interface do usuário (IU) do aplicativo<br/> |
+| [**Clicar**](inkedit-click.md)                                                 | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**DblClick**](inkedit-dblclick.md)                                           | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**Gesto**](inkedit-gesture.md)                                             | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**KeyDown**](inkedit-keydown.md)                                             | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**Pressionar**](inkedit-keypress.md)                                           | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**KeyUp**](inkedit-keyup.md)                                                 | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**MouseDown**](inkedit-mousedown.md)                                         | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**Ocorra**](inkedit-mousemove.md)                                         | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**MouseUp**](inkedit-mouseup.md)                                             | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**Reconhecimento**](/previous-versions/ms567627(v=vs.100)) (somente biblioteca gerenciada). | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**RecognitionResult**](inkedit-recognitionresult.md)                         | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**SelChange**](inkedit-selchange.md)                                         | Acionado no thread da interface do usuário do aplicativo<br/>                  |
+| [**Pincel**](inkedit-stroke.md)                                               | Acionado no thread da interface do usuário do aplicativo<br/>                  |
 
 
 

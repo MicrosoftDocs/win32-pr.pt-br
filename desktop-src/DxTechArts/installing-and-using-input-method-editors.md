@@ -1,6 +1,6 @@
 ---
 title: Instalar e usar editores de método de entrada
-description: Este artigo oferece um tutorial sobre como instalar e usar o IME (Editor Windows Método de Entrada) padrão.
+description: este artigo oferece um tutorial sobre como instalar e usar o IME (Editor de método de entrada) Windows padrão.
 ms.assetid: 0dc430ce-bed4-8d02-f45e-4eefb0ad0369
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,85 +13,85 @@ ms.locfileid: "118153361"
 ---
 # <a name="installing-and-using-input-method-editors"></a>Instalar e usar editores de método de entrada
 
-Este artigo oferece um tutorial sobre como instalar e usar o IME (Editor Windows Método de Entrada) padrão.
+este artigo oferece um tutorial sobre como instalar e usar o IME (Editor de método de entrada) Windows padrão.
 
 -   [Instalando um editor de método de entrada](#installing-an-input-method-editor)
--   [IME chinês simplificado](#simplified-chinese-ime)
+-   [IME para chinês simplificado](#simplified-chinese-ime)
 -   [IME chinês tradicional](#traditional-chinese-ime)
--   [IME japonês](#japanese-ime)
+-   [IME do japonês](#japanese-ime)
 -   [IME coreano](#korean-ime)
 -   [Requirements](#requirements)
 
 ## <a name="installing-an-input-method-editor"></a>Instalando um editor de método de entrada
 
-As seções a seguir descrevem como instalar e usar IMEs (Editores de Método de Entrada) para inserir caracteres complexos em quatro idiomas diferentes do Leste da Ásia. Recursos exclusivos para cada idioma são discutidos.
+As seções a seguir descrevem como instalar e usar IMEs (editores de método de entrada) para inserir caracteres complexos em quatro idiomas do leste asiático diferentes. Recursos exclusivos de cada idioma são discutidos.
 
-Para implementar a funcionalidade do IME (Editor de Método de Entrada) em um aplicativo, consulte [Usando um Editor de Método](/windows/desktop/DxTechArts/using-an-input-method-editor-in-a-game)de Entrada em um Jogo .
+Para implementar a funcionalidade do IME (editor de método de entrada) em um aplicativo, consulte [usando um editor de método de entrada em um jogo](/windows/desktop/DxTechArts/using-an-input-method-editor-in-a-game).
 
-Um IME não está instalado nos sistemas microsoft Windows XP por padrão. Para instalar, conclua as etapas a seguir.
+por padrão, um IME não é instalado em sistemas Microsoft Windows XP. Para instalar o, conclua as etapas a seguir.
 
 **Para instalar um IME**
 
-1.  No Painel de Controle, abra Opções Regionais e de Idioma.
-2.  Na guia Idiomas, marque a caixa de seleção Instalar arquivos para idiomas do Leste da Ásia.
+1.  No painel de controle, abra opções regionais e de idioma.
+2.  Na guia idiomas, marque a caixa de seleção instalar arquivos para idiomas do leste asiático.
 
-    ![guia idiomas de opções regionais e de idioma](images/ime-1.png)
+    ![guia idiomas das opções regionais e de idioma](images/ime-1.png)
 
-    Uma caixa de diálogo Instalar Suporte de Linguagem Suplementar é exibida informando sobre os requisitos de armazenamento para os arquivos de idioma.
+    Uma caixa de diálogo Instalar suporte ao idioma suplementar é exibida informando os requisitos de armazenamento dos arquivos de idioma.
 
-    ![caixa de diálogo instalar suporte de linguagem complementar](images/ime-install-lang-dialog.png)
+    ![caixa de diálogo Instalar suporte a idioma suplementar](images/ime-install-lang-dialog.png)
 
 3.  Clique em OK para fechar a caixa de diálogo.
-4.  Clique em OK na guia Idiomas.
-5.  Outra caixa de diálogo é exibida solicitando um Windows de instalação xp ou local de compartilhamento de rede em que os arquivos de suporte de idioma estão localizados. Insira um Windows XP compact disk ou navegue até o local de rede apropriado e clique em OK. O Microsoft Windows instala os arquivos necessários e solicita que você reinicie o computador.
+4.  Clique em OK na guia idiomas.
+5.  outra caixa de diálogo é exibida solicitando um disco de instalação Windows XP ou local de compartilhamento de rede onde os arquivos de suporte de idioma estão localizados. insira um disco Windows XP compact ou navegue até o local de rede apropriado e clique em OK. o Microsoft Windows instala os arquivos necessários e solicita que você reinicie o computador.
 6.  Clique em Sim para reiniciar o computador.
-7.  Depois de reiniciar, abra o painel de controle Regional e Opções de Idioma mais uma vez.
-8.  Na guia Idiomas, clique em Detalhes. A janela Serviços de Texto e Idiomas de Entrada é exibida.
+7.  Após a reinicialização, abra o painel de controle opções regionais e de idiomas novamente.
+8.  Na guia idiomas, clique em detalhes. A janela Serviços de texto e idiomas de entrada é exibida.
 
-    ![janela de idiomas de entrada e serviços ext](images/ime-2.png)
+    ![janela Serviços ext e idiomas de entrada](images/ime-2.png)
 
-9.  Na guia Configurações, clique em Adicionar. A janela Adicionar Idioma de Entrada é exibida.
+9.  na guia Configurações, clique em adicionar. A janela Adicionar idioma de entrada é exibida.
 
-    ![janela adicionar idioma de entrada](images/ime-3.png)
+    ![Adicionar janela de idioma de entrada](images/ime-3.png)
 
-10. Selecione Chinês (Taiwan) para linguagem de entrada e Microsoft New Phonetic IME 2002a para layout/IME do teclado.
+10. Selecione chinês (Taiwan) para idioma de entrada e Microsoft novo IME fonético 2002a para layout de teclado/IME.
 11. Clique em OK. Agora você pode adicionar outros idiomas e IMEs de maneira semelhante.
-12. Clique em Adicionar novamente, selecione Chinês (PRC) para idioma de entrada e Chinês (Simplificado) – Microsoft Pinyin IME 3.0 para layout/IME do teclado e clique em OK.
-13. Clique em Adicionar novamente, selecione Japonês para linguagem de entrada e Microsoft IME Standard 2002 ver. 8.1 para layout/IME do teclado e clique em OK.
-14. Clique em Adicionar novamente, selecione Coreano para idioma de entrada e Sistema de Entrada Coreano (IME 2002) para layout/IME do teclado e clique em OK. Na janela Serviços de Texto e Idiomas de Entrada, a caixa de listagem Serviços instalados agora deve conter os quatro IMEs recém-adicionados.
+12. Clique em adicionar novamente, selecione chinês (PRC) para idioma de entrada e chinês (simplificado)-Microsoft Pinyin IME 3,0 para layout de teclado/IME e clique em OK.
+13. Clique em adicionar novamente, selecione japonês para idioma de entrada e Microsoft IME Standard 2002 ver. 8,1 para layout do teclado/IME e clique em OK.
+14. Clique em adicionar novamente, selecione coreano para idioma de entrada e sistema de entrada coreano (IME 2002) para layout do teclado/IME e clique em OK. Na janela Serviços de texto e idiomas de entrada, a caixa de listagem serviços instalados agora deve conter os quatro IMEs adicionados recentemente.
 
     ![caixa de listagem de serviços instalados](images/ime-7.png)
 
-15. Clique em OK para fechar a janela Serviços de Texto e Idiomas de Entrada.
-16. Clique em OK para fechar o painel de controle Opções Regionais e de Idioma. A Windows de tarefas agora deve conter um indicador de localidade de entrada circulado em vermelho. A existência do indicador significa que mais de um idioma de entrada foi instalado no sistema.
+15. Clique em OK para fechar a janela Serviços de texto e idiomas de entrada.
+16. Clique em OK para fechar o painel de controle opções regionais e de idioma. a barra de tarefas Windows agora deve conter um indicador de localidade de entrada circulado em vermelho. A existência do indicador significa que mais de um idioma de entrada foi instalado no sistema.
 
-    ![indicador que significa que mais de um idioma de entrada foi instalado no sistema](images/ime-8.png)
+    ![indicador de que significa que mais de um idioma de entrada foi instalado no sistema](images/ime-8.png)
 
-## <a name="simplified-chinese-ime"></a>IME chinês simplificado
+## <a name="simplified-chinese-ime"></a>IME para chinês simplificado
 
-Esta seção descreve como usar o PinYin (IME chinês simplificado) com o Microsoft Bloco de notas para inserir alguns caracteres chineses.
+esta seção descreve como usar o IME do chinês simplificado (PinYin) com o Microsoft Bloco de notas para inserir alguns caracteres chineses.
 
-1.  Iniciar Bloco de notas (disponível no botão Iniciar e, em seguida, selecione Todos os Programas e Acessórios). Digite alguns caracteres em Bloco de notas. Esses caracteres ajudarão você a visualizar melhor a janela do IME mais tarde.
+1.  inicie o Bloco de notas (disponível no botão iniciar e, em seguida, selecione todos os programas e acessórios). digite alguns caracteres em Bloco de notas. Esses caracteres o ajudarão a visualizar a janela do IME mais tarde.
 
-    ![Captura de tela que mostra os caracteres que ajudam a visualizar melhor a janela de E/S mais tarde para chinês simplificado.](images/ime-sc1.png)
+    ![Captura que mostra caracteres que ajudam a visualizar a janela I M mais tarde para chinês simplificado.](images/ime-sc1.png)
 
-2.  Com Bloco de notas como o aplicativo ativo, clique no indicador de localidade de entrada e selecione Chinês (PRC). O indicador exibe alterações no CH para refletir que o novo idioma de entrada é chinês (PRC).
+2.  com Bloco de notas como o aplicativo ativo, clique no indicador de localidade de entrada e selecione chinês (PRC). O indicador exibe alterações em CH para refletir que o novo idioma de entrada é chinês (PRC).
 
     ![Captura de tela que mostra o indicador de localidade de entrada para selecionar chinês (P R C).](images/ime-sc2.png)
 
-3.  Coloque o cursor em Bloco de notas. Pressione HOME no teclado para que o cursor seja no início da linha. No teclado, digite "N", em seguida, "I". A figura a seguir mostra a aparência da exibição. O retângulo horizontal pequeno é a janela de leitura, que exibe a cadeia de caracteres de leitura atual. Atualmente, a cadeia de caracteres de leitura é "ni" como resultado da digitação de "N" e "I".
+3.  coloque o cursor em Bloco de notas. Pressione HOME no teclado para que o cursor esteja no início da linha. No teclado, digite "N" e, em seguida, "I". A figura a seguir mostra a aparência da exibição. O pequeno retângulo horizontal é a janela de leitura, que exibe a cadeia de caracteres de leitura atual. Atualmente, a cadeia de caracteres de leitura é "Ni" como resultado da digitação de "N" e "I".
 
-    ![Captura de tela que mostra uma cadeia de caracteres de leitura com 'n' e 'i'.](images/ime-sc3.png)
+    ![Captura de tela que mostra uma cadeia de caracteres de leitura com ' n' e ' i '.](images/ime-sc3.png)
 
-4.  Digite "3". Agora Bloco de notas tem a exibição a seguir. Como N+I+3 é uma pronúncia completa em Pinyin chinês simplificado, o IME tem informações suficientes para prever o caractere que o usuário pode ter pretendido inserir. A janela de leitura desaparece porque você entrou em uma pronúncia completa. Um caractere é exibido na parte superior da Bloco de notas cursor. Esse caractere não faz parte Bloco de notas, em vez disso, é exibido em outra janela sobre Bloco de notas e oculta os caracteres existentes em Bloco de notas que estão abaixo. Essa nova janela é chamada de janela de composição e a cadeia de caracteres é chamada de cadeia de caracteres de composição. A cadeia de caracteres de composição é sublinhada na exibição.
+4.  Digite "3". agora Bloco de notas tem a exibição a seguir. Como N + I + 3 é uma pronúncia completa em Pinyin chinês simplificado, o IME tem informações suficientes para prever o caractere que o usuário pode ter destinado a inserir. A janela de leitura desaparece porque você inseriu uma pronúncia completa. um caractere é exibido na parte superior do cursor de Bloco de notas. esse caractere não faz parte de Bloco de notas, em vez disso, é exibido em outra janela sobre Bloco de notas e oculta os caracteres existentes no Bloco de notas que estão abaixo. Essa nova janela é chamada de janela de composição, e a cadeia de caracteres nela é chamada de cadeia de caracteres de composição. A cadeia de caracteres de composição é sublinhada na exibição.
 
     ![Captura de tela que mostra uma janela de composição com uma cadeia de caracteres de composição de um caractere.](images/ime-sc4.png)
 
-5.  Agora digite "H", "A", "O", "3" para inserir outro caractere. Observe que a janela de leitura aparece quando "H" é digitado e desaparece quando "3" é digitado. Conforme mostrado abaixo, a cadeia de caracteres de composição agora contém dois caracteres.
+5.  Agora, digite "H", "A", "O", "3" para inserir outro caractere. Observe que a janela de leitura aparece quando "H" é digitada e desaparece quando "3" é digitado. Como mostrado abaixo, a cadeia de caracteres de composição agora contém dois caracteres.
 
     ![Captura de tela que mostra uma janela de composição com uma cadeia de caracteres de composição de dois caracteres.](images/ime-sc5.png)
 
-6.  Pressione a seta para a esquerda no teclado uma vez. O cursor de composição move um caractere para a esquerda, no segundo caractere digitado. Uma janela é exibida na parte superior Bloco de notas conforme mostrado abaixo. Essa janela é chamada de janela candidata. Ele exibe uma lista de caracteres ou frases que corresponderem à pronúncia que você digitou. Você pode selecionar a palavra pretendido nas entradas na lista de candidatos. Neste exemplo, dois caracteres candidatos estão disponíveis com a mesma pronúncia.
+6.  Pressione a seta para a esquerda no teclado uma vez. O cursor de composição move um caractere para a esquerda, no segundo caractere que você digitou. uma janela aparece na parte superior de Bloco de notas, conforme mostrado abaixo. Essa janela é chamada de janela candidata. Ele exibe uma lista de caracteres ou frases que correspondem à pronúncia que você digitou. Você pode selecionar a palavra desejada nas entradas na lista de candidatos. Neste exemplo, dois caracteres candidatos estão disponíveis com a mesma pronúncia.
 
     ![dois caracteres candidatos disponíveis com a mesma pronúncia](images/ime-sc6.png)
 
@@ -99,15 +99,15 @@ Esta seção descreve como usar o PinYin (IME chinês simplificado) com o Micros
 
     ![Captura de tela que mostra uma cadeia de caracteres de composição atualizada com o caractere selecionado.](images/ime-sc7.png)
 
-8.  Pressione ENTER. Isso informa ao IME que a composição está concluída e que a cadeia de caracteres deve ser enviada ao aplicativo – Bloco de notas neste exemplo. A janela de composição é fechada e os dois caracteres são enviados para Bloco de notas por meio do WM \_ CHAR. O sublinhado foi embora na figura a seguir porque os dois caracteres mostrados fazem parte do texto em Bloco de notas. O texto existente "ABCDEFG" no Bloco de notas é movido para a direita porque mais dois caracteres foram inseridos. Agora você entrou com êxito dois caracteres chinês simplificados usando um IME.
+8.  Pressione ENTER. isso informa ao IME que a composição está concluída e que a cadeia de caracteres deve ser enviada ao Bloco de notas do aplicativo neste exemplo. a janela composição é fechada e os dois caracteres são enviados para Bloco de notas por meio do WM \_ CHAR. o sublinhado não existe na figura a seguir porque os dois caracteres mostrados fazem parte do texto em Bloco de notas. o texto existente "ABCDEFG" em Bloco de notas é movido para a direita porque mais dois caracteres foram inseridos. Agora você inseriu com êxito dois caracteres do chinês simplificado usando um IME.
 
-    ![entrou com êxito dois caracteres chineses simplificados usando um ime](images/ime-sc8.png)
+    ![inserido com êxito dois caracteres do chinês simplificado usando um IME](images/ime-sc8.png)
 
 ## <a name="traditional-chinese-ime"></a>IME chinês tradicional
 
-Esta seção descreve como usar o IME chinês tradicional (novo phonetic) com Bloco de notas para inserir alguns caracteres chineses.
+esta seção descreve como usar o IME do chinês tradicional (novo fonético) com Bloco de notas para inserir alguns caracteres chineses.
 
-1.  Inicie o Bloco de notas. Digite alguns caracteres em Bloco de notas. Esses caracteres ajudarão você a visualizar melhor a janela do IME mais tarde.
+1.  Inicie o Bloco de notas. digite alguns caracteres em Bloco de notas. Esses caracteres ajudarão você a visualizar melhor a janela do IME mais tarde.
 
     ![Captura de tela que mostra os caracteres que ajudam a visualizar melhor a janela de E/S mais tarde para chinês tradicional.](images/ime-tc1.png)
 
@@ -119,7 +119,7 @@ Esta seção descreve como usar o IME chinês tradicional (novo phonetic) com Bl
 
     ![Captura de tela que mostra uma cadeia de caracteres de leitura com dois caracteres.](images/ime-tc3.png)
 
-4.  Digite "3". Agora Bloco de notas tem a exibição a seguir. Como S+U+3 é uma pronúncia completa em chinês tradicional, o IME tem informações suficientes para prever o caractere que o usuário pode ter pretendido inserir. A janela de leitura desaparece porque você entrou em uma pronúncia completa. Um caractere é exibido na parte superior do Bloco de notas cursor. Esse caractere não faz parte do Bloco de notas, em vez disso, é exibido em outra janela sobre Bloco de notas e oculta os caracteres existentes no Bloco de notas que estão abaixo. Essa nova janela é chamada de janela de composição e a cadeia de caracteres é chamada de cadeia de caracteres de composição. A cadeia de caracteres de composição é sublinhada na exibição.
+4.  Digite "3". Agora Bloco de notas tem a exibição a seguir. Como S+U+3 é uma pronúncia completa em chinês tradicional, o IME tem informações suficientes para prever o caractere que o usuário pode ter pretendido inserir. A janela de leitura desaparece porque você entrou em uma pronúncia completa. Um caractere é exibido na parte superior Bloco de notas cursor. Esse caractere não faz parte do Bloco de notas, em vez disso, é exibido em outra janela sobre Bloco de notas e oculta os caracteres existentes Bloco de notas que estão abaixo. Essa nova janela é chamada de janela de composição e a cadeia de caracteres é chamada de cadeia de caracteres de composição. A cadeia de caracteres de composição é sublinhada na exibição.
 
     ![Captura de tela que mostra uma janela de composição com uma cadeia de caracteres de composição sublinhada.](images/ime-tc4.png)
 
@@ -141,7 +141,7 @@ Esta seção descreve como usar o IME chinês tradicional (novo phonetic) com Bl
 
 ## <a name="japanese-ime"></a>IME japonês
 
-Esta seção é um passo a passo do uso do IME japonês Bloco de notas inserir alguns caracteres em japonês.
+Esta seção é um passo a passo do uso do IME japonês com Bloco de notas inserir alguns caracteres em japonês.
 
 1.  Inicie o Bloco de notas. Digite alguns caracteres em Bloco de notas. Esses caracteres ajudarão você a visualizar melhor a janela do IME mais tarde.
 
@@ -151,7 +151,7 @@ Esta seção é um passo a passo do uso do IME japonês Bloco de notas inserir a
 
     ![indicador de localidade de entrada para selecionar japonês](images/ime-j2.png)
 
-3.  Coloque o cursor em Bloco de notas. Pressione HOME no teclado para que o cursor seja no início da linha. No teclado, digite "N", em seguida, "I". A figura a seguir mostra a aparência da exibição. Como N+I é uma pronúncia completa em japonês, o IME tem informações suficientes para prever o caractere que o usuário pode ter pretendido inserir. Um caractere é exibido na parte superior do Bloco de notas cursor. Esse caractere não faz parte do Bloco de notas, em vez disso, é exibido em outra janela sobre Bloco de notas e oculta os caracteres existentes no Bloco de notas que estão abaixo. Essa nova janela é chamada de janela de composição e a cadeia de caracteres é chamada de cadeia de caracteres de composição. A cadeia de caracteres de composição é sublinhada na exibição.
+3.  Coloque o cursor em Bloco de notas. Pressione HOME no teclado para que o cursor seja no início da linha. No teclado, digite "N", em seguida, "I". A figura a seguir mostra a aparência da exibição. Como N+I é uma pronúncia completa em japonês, o IME tem informações suficientes para prever o caractere que o usuário pode ter pretendido inserir. Um caractere é exibido na parte superior Bloco de notas cursor. Esse caractere não faz parte do Bloco de notas, em vez disso, é exibido em outra janela sobre Bloco de notas e oculta os caracteres existentes Bloco de notas que estão abaixo. Essa nova janela é chamada de janela de composição e a cadeia de caracteres é chamada de cadeia de caracteres de composição. A cadeia de caracteres de composição é sublinhada na exibição.
 
     ![Captura de tela que mostra uma cadeia de caracteres de composição com um caractere japonês sublinhado.](images/ime-j3.png)
 

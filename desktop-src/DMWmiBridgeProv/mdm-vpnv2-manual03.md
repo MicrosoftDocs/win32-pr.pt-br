@@ -1,10 +1,10 @@
 ---
-title: MDM_VPNv2_Manual03 classe
-description: A \_ VPNv2 Manual03class do MDM é um nó \_ opcional que contém as configurações manuais do servidor.
+title: Classe MDM_VPNv2_Manual03
+description: O MDM \_ VPNv2 \_ Manual03class é um nó opcional que contém as configurações manuais do servidor.
 ms.assetid: c294c5a2-35e2-46ca-b7d8-9c63f9d3cdd6
 keywords:
-- MDM_VPNv2_Manual03 classe
-- MDM_VPNv2_Manual03 classe , descrita
+- Classe MDM_VPNv2_Manual03
+- Classe MDM_VPNv2_Manual03, descrita
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119076940"
 ---
-# <a name="mdm_vpnv2_manual03-class"></a>Classe MDM \_ VPNv2 \_ Manual03
+# <a name="mdm_vpnv2_manual03-class"></a>\_ \_ Classe MANUAL03 do MDM VPNv2
 
-\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A **classe MDM \_ VPNv2 \_ Manual03** é um nó opcional que contém as configurações manuais do servidor.
+A classe **MDM \_ VPNv2 \_ Manual03** é um nó opcional que contém as configurações manuais do servidor.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -46,13 +46,13 @@ class MDM_VPNv2_Manual03
 
 ## <a name="members"></a>Membros
 
-A **classe MDM \_ VPNv2 \_ Manual03** tem estes tipos de membros:
+A **classe \_ \_ Manual03 de MDM VPNv2** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe MDM \_ VPNv2 \_ Manual03** tem essas propriedades.
+A **classe \_ \_ Manual03 do MDM VPNv2** tem essas propriedades.
 
 <dl> <dt>
 
@@ -72,7 +72,7 @@ Identifica o nome do nó pai.
 
 </dd> <dt>
 
-**Parentid**
+**ParentID**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -84,7 +84,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/VPNv2/*ProfileName*/Proxy/"
+Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/VPNv2/*ProfileName*/proxy/"
 
 </dd> <dt>
 
@@ -94,7 +94,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -105,10 +105,10 @@ Tipo de acesso: Leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
+| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

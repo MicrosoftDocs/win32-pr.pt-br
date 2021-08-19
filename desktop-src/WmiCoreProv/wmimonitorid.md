@@ -24,16 +24,16 @@ api_type:
 api_location:
 - WmiProv.dll
 ms.custom: project-verbatim
-ms.openlocfilehash: 485b42a86ca67d15ec00be13992c17b31ed51608
-ms.sourcegitcommit: af120ad5c30da2fc5eb717ca2a1c4c45878efd71
+ms.openlocfilehash: 552e66a4e3a0c6f120bcc95123e3a2674fc579457de16c9ef8cd1e80161f175e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "105764999"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051144"
 ---
 # <a name="wmimonitorid-class"></a>Classe WmiMonitorID
 
-A classe WMI **WmiMonitorID** representa as informações de identificação sobre um monitor de vídeo, como nome do fabricante, ano de fabricação ou número de série. Os dados nessa classe correspondem aos dados no bloco de identificação do fornecedor/produto da definição de entrada de vídeo do padrão de dados de identificação de exibição estendida (VESA) (E-EDID) avançado de associação de vídeo eletrônicos.
+A **classe WMI WmiMonitorID** representa as informações de identificação sobre um monitor de vídeo, como nome do fabricante, ano de fabricação ou número de série. Os dados nessa classe correspondem aos dados no bloco De identificação de fornecedor/produto da definição de entrada de vídeo do padrão E-EDID (Video Electronics Standard Association) enhanced Display Identification Data (E-EDID).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,20 +55,20 @@ class WmiMonitorID : MSMonitorClass
 
 ## <a name="members"></a>Membros
 
-A classe **WmiMonitorID** tem estes tipos de membros:
+A **classe WmiMonitorID** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **WmiMonitorID** tem essas propriedades.
+A **classe WmiMonitorID** tem essas propriedades.
 
 <dl> <dt>
 
 **Ativo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -87,7 +87,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
 Nome da instância de monitor específica.
@@ -97,7 +97,7 @@ Nome da instância de monitor específica.
 **ManufacturerName**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -110,33 +110,33 @@ Nome do fabricante.
 **ManufacturerNameLength**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Comprimento do nome do fabricante localizado na propriedade **ManufacturerName** .
+Comprimento do nome do fabricante localizado na **propriedade ManufacturerName.**
 
 </dd> <dt>
 
-**ProductCodeid**
+**ProductCodeID**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-ID de código do produto atribuído pelo fornecedor.
+ID do código do produto atribuída pelo fornecedor.
 
 </dd> <dt>
 
-**SerialNumberid**
+**SerialNumberID**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -149,7 +149,7 @@ Número de série.
 UserFriendlyName
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -162,13 +162,13 @@ O nome amigável do monitor. O tamanho do nome é o comprimento especificado pel
 UserFriendlyNameLength
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de caracteres no nome localizado na propriedade userfriendlyname.
+Número de caracteres no nome localizado na propriedade UserFriendlyName.
 
 </dd> <dt>
 
@@ -188,7 +188,7 @@ Semana de fabricação por número da semana. O intervalo é de 1 a 53. Zero (0)
 **YearOfManufacture**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -200,7 +200,7 @@ Ano de fabricação.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter uma discussão sobre como converter as matrizes que armazenam IDs de número de série, consulte o artigo [informações do monitor de relatório com Configuration Manager](/archive/blogs/kmongwa/reporting-monitor-information-with-configuration-manager) blog.
+Para obter uma discussão sobre como traduzir as matrizes que armazenam as IDs de número de série, consulte o artigo Informações do Monitor de Relatórios [Gerenciador de Configurações](/archive/blogs/kmongwa/reporting-monitor-information-with-configuration-manager) blog.
 
 ## <a name="examples"></a>Exemplos
 
@@ -213,7 +213,7 @@ gwmi WmiMonitorID -Namespace root\wmi | ForEach-Object {($_.UserFriendlyName -ne
 
 
 
-O código VBScript a seguir também recupera informações de ID de monitor de um sistema.
+O código VBScript a seguir também recupera informações de ID do monitor de um sistema.
 
 
 ```VB
@@ -245,8 +245,8 @@ Next
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| Namespace<br/>                | \\WMI raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>WmiCore. mof</dt> </dl> |
+| Namespace<br/>                | WMI \\ raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>WmiCore.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WmiProv.dll</dt> </dl> |
 
 

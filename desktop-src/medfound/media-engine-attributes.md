@@ -1,7 +1,7 @@
 ---
-description: O mecanismo de mídia dá suporte aos seguintes atributos de configuração.
+description: O Mecanismo de Mídia dá suporte aos seguintes atributos de configuração.
 ms.assetid: 08282D80-53F5-463F-B87F-522F72823E99
-title: Atributos do mecanismo de mídia
+title: Atributos do Mecanismo de Mídia
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 4413932ff345c2b95f780bcbaecc81d3ddc5e39071986a5270778223b0f752a1
@@ -11,34 +11,34 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118974225"
 ---
-# <a name="media-engine-attributes"></a>Atributos do mecanismo de mídia
+# <a name="media-engine-attributes"></a>Atributos do Mecanismo de Mídia
 
-O mecanismo de mídia dá suporte aos seguintes atributos de configuração.
+O Mecanismo de Mídia dá suporte aos seguintes atributos de configuração.
 
--   [\_categoria de \_ áudio do mecanismo de mídia MF \_ \_](mf-media-engine-audio-category.md)
--   [\_função de \_ ponto \_ de \_ extremidade de áudio do mecanismo de mídia MF \_](mf-media-engine-audio-endpoint-role.md)
--   [\_modo de \_ compatibilidade do navegador de mecanismo de mídia MF \_ \_ \_](mf-media-engine-browser-compatibility-mode.md)
--   [\_retorno de \_ chamada do mecanismo de mídia MF \_](mf-media-engine-callback.md)
--   [\_sinalizadores de \_ proteção de conteúdo do mecanismo de mídia MF \_ \_ \_](mf-media-engine-content-protection-flags.md)
--   [\_Gerenciador de mídia MF \_ \_ Content \_ Protection \_ Manager](mf-media-engine-content-protection-manager.md)
--   [\_COREWINDOW do \_ mecanismo de mídia MF \_](mf-media-engine-corewindow.md)
--   [\_Gerenciador de \_ dxgi do mecanismo de mídia MF \_ \_](mf-media-engine-dxgi-manager.md)
--   [\_extensão do \_ mecanismo de mídia MF \_](mf-media-engine-extension.md)
--   [\_HWND de \_ OPM do mecanismo de mídia MF \_ \_](mf-media-engine-opm-hwnd.md)
--   [\_HWND de \_ reprodução do mecanismo de mídia MF \_ \_](mf-media-engine-playback-hwnd.md)
--   [\_Visual de \_ reprodução do mecanismo de mídia MF \_ \_](mf-media-engine-playback-visual.md)
--   [\_repositório de \_ \_ configuração do \_ RESOLVEdor de origem \_ \_ MF do mecanismo de mídia](mf-media-engine-source-resolver-config-store.md)
--   [o \_ fluxo do mecanismo de mídia MF \_ contém o \_ \_ \_ \_ canal alfa](mf-media-engine-stream-contains-alpha-channel.md)
--   [\_formato de \_ saída de vídeo do mecanismo de mídia MF \_ \_ \_](mf-media-engine-video-output-format.md)
+-   [CATEGORIA DE ÁUDIO \_ DO MECANISMO DE MÍDIA \_ \_ \_ MF](mf-media-engine-audio-category.md)
+-   [FUNÇÃO DE \_ PONTO DE EXTREMIDADE DE ÁUDIO DO MECANISMO DE \_ \_ \_ MÍDIA \_ MF](mf-media-engine-audio-endpoint-role.md)
+-   [MODO DE COMPATIBILIDADE DO NAVEGADOR DO MECANISMO \_ \_ DE MÍDIA \_ \_ \_ MF](mf-media-engine-browser-compatibility-mode.md)
+-   [RETORNO DE CHAMADA \_ DO MECANISMO DE MÍDIA \_ \_ MF](mf-media-engine-callback.md)
+-   [SINALIZADORES DE PROTEÇÃO DE CONTEÚDO DO MECANISMO \_ \_ DE MÍDIA \_ \_ \_ MF](mf-media-engine-content-protection-flags.md)
+-   [GERENCIADOR DE PROTEÇÃO DE CONTEÚDO \_ DO MECANISMO DE MÍDIA \_ \_ \_ MF \_](mf-media-engine-content-protection-manager.md)
+-   [CORE DO \_ MECANISMO \_ DE MÍDIA \_ MFWINDOW](mf-media-engine-corewindow.md)
+-   [MF \_ MEDIA \_ ENGINE \_ DXGI \_ MANAGER](mf-media-engine-dxgi-manager.md)
+-   [EXTENSÃO DO MECANISMO \_ \_ DE MÍDIA MF \_](mf-media-engine-extension.md)
+-   [MF \_ MEDIA \_ ENGINE \_ OPM \_ HWND](mf-media-engine-opm-hwnd.md)
+-   [HWND DE REPRODUÇÃO \_ DO MECANISMO DE MÍDIA \_ \_ \_ MF](mf-media-engine-playback-hwnd.md)
+-   [VISUAL DE REPRODUÇÃO \_ DO \_ MECANISMO DE MÍDIA \_ MF \_](mf-media-engine-playback-visual.md)
+-   [ARMAZENAMENTO DE \_ CONFIGURAÇÃO DO \_ \_ \_ RESOLVEDOR DE ORIGEM DO MECANISMO DE MÍDIA \_ MF \_](mf-media-engine-source-resolver-config-store.md)
+-   [O FLUXO \_ DO MECANISMO DE MÍDIA \_ \_ \_ MF CONTÉM O CANAL \_ \_ ALFA](mf-media-engine-stream-contains-alpha-channel.md)
+-   [FORMATO DE SAÍDA DE VÍDEO DO MECANISMO \_ \_ DE \_ \_ MÍDIA \_ MF](mf-media-engine-video-output-format.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Atributos de Media Foundation](media-foundation-attributes.md)
+[Media Foundation atributos](media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFMediaEngineClassFactory:: CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance)
+[**IMFMediaEngineClassFactory::CreateInstance**](/windows/desktop/api/mfmediaengine/nf-mfmediaengine-imfmediaengineclassfactory-createinstance)
 </dt> </dl>
 
  

@@ -3,7 +3,7 @@ title: Playlist. attributeCount
 description: A propriedade attributeCount recupera o número de atributos associados à playlist.
 ms.assetid: 92063131-0118-4458-9122-0539628a9821
 keywords:
-- Playlist. attributeCount Windows Media Player
+- Windows Media Player de playlist. attributeCount
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e42d72e029f232bb6dabc074b412406a1bb64c7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 63616096dbfc3989a93d3dc8010dd0ed1f256ccd9e9bf2cc7b3c825c88a63d0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054294"
 ---
 # <a name="playlistattributecount"></a>Playlist. attributeCount
 
@@ -39,11 +39,11 @@ Como as listas de reprodução podem vir de várias fontes diferentes, elas pode
 
 Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
 
-Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md)do Windows Media Player.
+para obter informações sobre os atributos com suporte pelo Windows Media Player, consulte a [referência de atributo](attribute-reference.md)Windows Media Player.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir ilustra como várias propriedades e métodos da **playlist** e dos objetos de **mídia** são usados.
+o exemplo a seguir JScript ilustra como várias propriedades e métodos da **Playlist** e dos objetos de **mídia** são usados.
 
 
 ```JScript
@@ -106,10 +106,10 @@ function onLoad() {
 [**Playlist. setItemInfo**](playlist-setiteminfo.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

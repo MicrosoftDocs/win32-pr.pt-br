@@ -4,12 +4,12 @@ description: Os desenvolvedores de servidor devem tomar cuidado ao criar control
 ms.assetid: 2b4ec5ae-bda1-41e6-9387-6ee3cb6c3163
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11d7a4c30c6bc228785a886d9a41717f8cdb8dda
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a6c93205430f3063b993c49a7145658d7748aac0e697257789c31ac0653d6189
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052544"
 ---
 # <a name="providing-the-name-property"></a>Fornecendo a propriedade Name
 
@@ -24,6 +24,6 @@ Para localizar o rótulo do controle, o Microsoft Acessibilidade Ativa procura u
 
 Para obter mais informações sobre as técnicas que o Microsoft Acessibilidade Ativa usa para expor a [Propriedade Name](name-property.md), consulte [referência de elemento de interface do usuário](user-interface-element-reference.md).
 
- 
+ 
 
- 
+ 

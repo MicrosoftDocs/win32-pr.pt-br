@@ -1,23 +1,23 @@
 ---
-description: A função MsiGetPatchFileList e a propriedade PatchFiles do objeto instalador usam uma lista de patches Windows Installer (arquivos. msp) e retornam uma lista de arquivos que podem ser atualizados pelos patches.
+description: a função MsiGetPatchFileList e a propriedade PatchFiles do objeto instalador usam uma lista de patches Windows Installer (arquivos. msp) e retornam uma lista de arquivos que podem ser atualizados pelos patches.
 ms.assetid: cc2eb506-c1fc-4125-b98c-12221b918e23
 title: Listando os arquivos que podem ser atualizados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c15872cce902f5a9059d4256e9e5c30ecff213f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ad76355c97d62d9c3f1282b5ebd66f54c5fef0f6f7359a41a35f2ebaee9a2fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105766396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118945901"
 ---
 # <a name="listing-the-files-that-can-be-updated"></a>Listando os arquivos que podem ser atualizados
 
-A função [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) e a propriedade [**PatchFiles**](installer-patchfiles.md) do [**objeto instalador**](installer-object.md) usam uma lista de patches Windows Installer (arquivos. msp) e retornam uma lista de arquivos que podem ser atualizados pelos patches. A função [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) e a propriedade [**PatchFiles**](installer-patchfiles.md) estão disponíveis a partir do Windows Installer 4,0.
+a função [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) e a propriedade [**PatchFiles**](installer-patchfiles.md) do [**objeto instalador**](installer-object.md) usam uma lista de patches Windows Installer (arquivos. msp) e retornam uma lista de arquivos que podem ser atualizados pelos patches. a função [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista) e a propriedade [**PatchFiles**](installer-patchfiles.md) estão disponíveis a partir do Windows Installer 4,0.
 
 ## <a name="listing-files-that-can-be-updated"></a>Listando arquivos que podem ser atualizados
 
-O exemplo a seguir mostra como extrair as informações de aplicabilidade para uma lista de patches de Windows Installer (arquivos. msp) usando o [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista). A função **MsiGetPatchFileList** fornece o código do produto para o destino dos patches e uma lista de arquivos. msp delimitadas por ponto e vírgula. Este exemplo requer Windows Installer 4,0 em execução no Windows Vista.
+o exemplo a seguir mostra como extrair as informações de aplicabilidade para uma lista de patches de Windows Installer (arquivos. msp) usando o [**MsiGetPatchFileList**](/windows/desktop/api/Msi/nf-msi-msigetpatchfilelista). A função **MsiGetPatchFileList** fornece o código do produto para o destino dos patches e uma lista de arquivos. msp delimitadas por ponto e vírgula. este exemplo requer Windows Installer 4,0 em execução no Windows Vista.
 
 
 ```C++
@@ -111,7 +111,7 @@ void CloseMsiHandles(MSIHANDLE* phFileListRec, DWORD dwcFiles)
 
 
 
-O exemplo a seguir mostra como extrair as informações de aplicabilidade para uma lista de patches de Windows Installer (arquivos. msp) usando a propriedade [**PatchFiles**](installer-patchfiles.md) do [**objeto do instalador**](installer-object.md). A propriedade **PatchFiles** fornece o código do produto para o destino dos patches e uma lista de arquivos. msp delimitadas por ponto e vírgula. Este exemplo requer Windows Installer 4,0 em execução no Windows Vista.
+o exemplo a seguir mostra como extrair as informações de aplicabilidade para uma lista de patches de Windows Installer (arquivos. msp) usando a propriedade [**PatchFiles**](installer-patchfiles.md) do [**objeto do instalador**](installer-object.md). A propriedade **PatchFiles** fornece o código do produto para o destino dos patches e uma lista de arquivos. msp delimitadas por ponto e vírgula. este exemplo requer Windows Installer 4,0 em execução no Windows Vista.
 
 
 ```VB

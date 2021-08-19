@@ -1,5 +1,5 @@
 ---
-description: O tipo de dados HTAPIPHONE representa o handle opaco TAPIs para uma estrutura de dados de telefone.
+description: O DataType HTAPIPHONE representa o identificador opaco TAPIs para uma estrutura de dados de telefone.
 ms.assetid: e869cb3e-0eeb-4edf-a272-a655a236a3a2
 title: HTAPIPHONE
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119003594"
 ---
 # <a name="htapiphone"></a>HTAPIPHONE
 
-O **tipo de dados HTAPIPHONE** representa o handle opaco da TAPI para uma estrutura de dados de telefone. A TAPI deve resolver um valor desse tipo em uma referência à instância de estrutura de dados apropriada. O provedor de serviços não deve tentar fazer referência a isso como se fosse um ponteiro, fazer suposições sobre seus valores ou interpretar sua representação de forma diferente de passar seu valor para TAPI em momentos apropriados.
+O DataType **HTAPIPHONE** representa o identificador opaco da TAPI para uma estrutura de dados de telefone. A TAPI deve resolver um valor desse tipo em uma referência à instância de estrutura de dados apropriada. O provedor de serviços não deve tentar fazer referência a isso como se fosse um ponteiro, fazer suposições sobre seus valores ou interpretar sua representação de qualquer forma diferente de passar seu valor para a TAPI em momentos apropriados.
 
  
 

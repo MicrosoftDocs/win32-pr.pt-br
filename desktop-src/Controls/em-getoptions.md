@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETOPTIONS (RichEdit. h)
-description: Recupera opções de controle de edição avançadas.
+title: EM_GETOPTIONS mensagem (Richedit.h)
+description: Recupera opções de controle de edição rich.
 ms.assetid: 183f0fed-8666-4ed5-ac48-362c818378d2
 keywords:
-- controles de Windows de mensagem de EM_GETOPTIONS
+- EM_GETOPTIONS controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119019514"
 ---
-# <a name="em_getoptions-message"></a>\_Mensagem em GEToptionss
+# <a name="em_getoptions-message"></a>Mensagem EM \_ GETOPTIONS
 
-Recupera opções de controle de edição avançadas.
+Recupera opções de controle de edição rich.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -45,7 +45,7 @@ Não usado; deve ser zero.
 
 ## <a name="return-value"></a>Valor retornado
 
-Essa mensagem retorna uma combinação dos valores de sinalizador de opção atual descritos na mensagem em [**\_ setoptionss**](em-setoptions.md) .
+Essa mensagem retorna uma combinação dos valores atuais do sinalizador de opção descritos na [**mensagem EM \_ SETOPTIONS.**](em-setoptions.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Essa mensagem retorna uma combinação dos valores de sinalizador de opção atu
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Essa mensagem retorna uma combinação dos valores de sinalizador de opção atu
 
 <dl> <dt>
 
-[**\_SEToptions**](em-setoptions.md)
+[**EM \_ SETOPTIONS**](em-setoptions.md)
 </dt> </dl>
 
  

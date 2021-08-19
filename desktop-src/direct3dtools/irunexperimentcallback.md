@@ -30,7 +30,7 @@ Retorno de chamada para retornar erros do mecanismo durante a captura.
 
 ## <a name="members"></a>Membros
 
-A interface **IRunExperimentCallback** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IRunExperimentCallback** também tem estes tipos de membros:
+A interface **IRunExperimentCallback** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IRunExperimentCallback** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,13 +38,13 @@ A interface **IRunExperimentCallback** herda da interface [**IUnknown**](/window
 
 A interface **IRunExperimentCallback** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/irunexperimentcallback-resultcallback-dword"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Solicitações para executar um experimento (captura) no processo especificado.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/irunexperimentcallback-resultcallback-dword"><strong>Resultcallback</strong></a></td><td style="text-align: left;"><p>Solicitações para executar um experimento (captura) no processo especificado.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

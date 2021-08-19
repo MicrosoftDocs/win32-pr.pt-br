@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetTruncateLogInstance'
-title: Método API. JetTruncateLogInstance
+description: 'Saiba mais sobre: Método Api.JetTruncateLogInstance'
+title: Método Api.JetTruncateLogInstance
 TOCTitle: 'JetTruncateLogInstance method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetTruncateLogInstance(Microsoft.Isam.Esent.Interop.JET_INSTANCE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jettruncateloginstance(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118497777"
 ---
-# <a name="apijettruncateloginstance-method"></a>Método API. JetTruncateLogInstance
+# <a name="apijettruncateloginstance-method"></a>Método Api.JetTruncateLogInstance
 
-Usado durante um backup iniciado pelo JetBeginExternalBackup para excluir qualquer arquivo de log de transações que não será mais necessário depois que o backup atual for concluído com êxito.
+Usado durante um backup iniciado por JetBeginExternalBackup para excluir todos os arquivos de log de transações que não serão mais necessários depois que o backup atual for concluído com êxito.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,7 +58,7 @@ public static void JetTruncateLogInstance(
 #### <a name="parameters"></a>Parâmetros
 
   - instance  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INSTANCE](./jet-instance-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INSTANCE](./jet-instance-structure.md)  
     
     A instância a ser truncada.
 
@@ -70,4 +70,4 @@ public static void JetTruncateLogInstance(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -13,7 +13,7 @@ ms.locfileid: "118951225"
 ---
 # <a name="using-tdhformatproperty-to-consume-event-data"></a>Usando TdhFormatProperty para consumir dados de evento
 
-O exemplo a seguir mostra como consumir dados de evento usando a [**função TdhFormatProperty.**](/windows/desktop/api/Tdh/nf-tdh-tdhformatproperty)
+O exemplo a seguir mostra como consumir dados de evento usando a função [**TdhFormatProperty**](/windows/desktop/api/Tdh/nf-tdh-tdhformatproperty) .
 
 
 ```C++

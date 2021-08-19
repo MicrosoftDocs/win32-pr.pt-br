@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Executando operações privilegiadas usando C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fbc0468fef7531586020f55032bff94c977c4ac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e83667cd4a4cd81439392f1f58d77fb56109f79c2dd6d826c9390d62008553b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050884"
 ---
 # <a name="executing-privileged-operations-using-c"></a>Executando operações privilegiadas usando C++
 
-Aplicativos cliente especiais podem invocar operações privilegiadas. Por exemplo, um aplicativo pode permitir que um gerente reinicie um computador do Office sem resposta. Usando o Instrumentação de Gerenciamento do Windows (WMI), você pode executar uma operação privilegiada chamando o provedor WMI para a operação privilegiada.
+Aplicativos cliente especiais podem invocar operações privilegiadas. Por exemplo, um aplicativo pode permitir que um gerente reinicie um computador do Office sem resposta. usando o Instrumentação de Gerenciamento do Windows (WMI), você pode executar uma operação privilegiada chamando o provedor WMI para a operação privilegiada.
 
 O procedimento a seguir descreve como chamar um provedor para uma operação privilegiada.
 

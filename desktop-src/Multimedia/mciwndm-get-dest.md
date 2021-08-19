@@ -1,9 +1,9 @@
 ---
-title: MCIWNDM_GET_DEST mensagem (Vfw.h)
-description: A mensagem GET DEST MCIWNDM recupera as coordenadas do retângulo de destino usadas para ampliar ou ampliar as imagens de um arquivo AVI durante \_ \_ a reprodução. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndGetDest.
+title: Mensagem de MCIWNDM_GET_DEST (VFW. h)
+description: O MCIWNDM \_ obter \_ mensagem de destino recupera as coordenadas do retângulo de destino usado para ampliar ou alongar as imagens de um arquivo AVI durante a reprodução. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndGetDest.
 ms.assetid: d4d8a3eb-aad4-4435-a23b-7a9c55fc194d
 keywords:
-- MCIWNDM_GET_DEST mensagem Windows Multimídia
+- mensagem de MCIWNDM_GET_DEST Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117802900"
 ---
-# <a name="mciwndm_get_dest-message"></a>Mensagem GET \_ DEST MCIWNDM \_
+# <a name="mciwndm_get_dest-message"></a>MCIWNDM \_ obter \_ mensagem de destino
 
-A **mensagem GET \_ \_ DEST MCIWNDM** recupera as coordenadas do retângulo de destino usadas para ampliar ou ampliar as imagens de um arquivo AVI durante a reprodução. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndGetDest.**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest)
+O **MCIWNDM \_ obter \_** mensagem de destino recupera as coordenadas do retângulo de destino usado para ampliar ou alongar as imagens de um arquivo AVI durante a reprodução. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndGetDest**](/windows/desktop/api/Vfw/nf-vfw-mciwndgetdest) .
 
 
 ```C++
@@ -38,16 +38,16 @@ lParam = (LPARAM) (LPRECT) prc;
 
 <dl> <dt>
 
-<span id="prc"></span><span id="PRC"></span>*Prc*
+<span id="prc"></span><span id="PRC"></span>*popular*
 </dt> <dd>
 
-Ponteiro para uma [**estrutura RECT**](/previous-versions//dd162897(v=vs.85)) para retornar as coordenadas do retângulo de destino.
+Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) para retornar as coordenadas do retângulo de destino.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro, caso contrário.
+Retornará zero se for bem-sucedido ou um erro de outra forma.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Retornará zero se for bem-sucedido ou um erro, caso contrário.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
 
 
 

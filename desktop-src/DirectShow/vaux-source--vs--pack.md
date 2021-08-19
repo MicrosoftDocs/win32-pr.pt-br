@@ -1,21 +1,21 @@
 ---
-description: Pacote de origem do VAUX (VS)
+description: Vs (Pacote de Origem V LTDA)
 ms.assetid: 5ffd2883-0e56-459f-b229-cc014b894237
-title: Pacote de origem do VAUX (VS)
+title: Vs (Pacote de Origem V LTDA)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28f7ad2a91f1be1291b564013041e6dfa23bb014
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 477e7a3257c11d6d8b42e16d2f066251452bc42a489abe9e666e374a565fa77c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780037"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072090"
 ---
-# <a name="vaux-source-vs-pack"></a>Pacote de origem do VAUX (VS)
+# <a name="vaux-source-vs-pack"></a>Vs (Pacote de Origem V LTDA)
 
-As tabelas a seguir listam os valores usados pelo driver MSDV para preencher o membro **dwDVVAuxSrc** da estrutura [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) . Para obter mais informações, consulte [configurações de campo DVINFO no driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
+As tabelas a seguir listam os valores usados pelo driver MSDV para preencher o membro **dwDVVVpSrc** da estrutura [**DVINFO.**](/windows/desktop/api/strmif/ns-strmif-dvinfo) Para obter mais informações, [consulte Campo DVINFO Configurações no Driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
 
-**Configurações de DVCR**
+**DVCR Configurações**
 
 
 
@@ -119,7 +119,7 @@ STYPE (5)
 
 0:0000
 
-CATEGORIA DO SINTONIZADOR (8)
+CATEGORIA DO TUNER (8)
 
 1111:1111
 
@@ -129,7 +129,7 @@ CATEGORIA DO SINTONIZADOR (8)
 
 1111:1111
 
-Pacote do VS
+VS Pack
 
 0xFFC1FFFF
 
@@ -143,13 +143,13 @@ Pacote do VS
 
  
 
-**Configurações do DVCPRO 25 e DVCPRO 50 (planejadas)**
+**DVCPRO 25 e DVCPRO 50 Configurações (Planejado)**
 
 
 
 DV Standard
 
-DVCPRO (SMPTE 314M) – planejado
+DVCPRO (SMPTE 314M) — Planejado
 
 FOURCC
 
@@ -271,7 +271,7 @@ Pacote do VS
 
  
 
-**Configurações do DVCR 100 (planejadas)**
+**Configurações DVCR 100 (planejado)**
 
 
 
@@ -407,7 +407,7 @@ Os códigos de campo a seguir são de interesse:
 [Vídeo digital no DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Configurações de campo DVINFO no driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
+[Configurações de campo DVINFO no Driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
 </dt> </dl>
 
  

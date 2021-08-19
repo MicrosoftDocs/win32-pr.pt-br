@@ -97,34 +97,34 @@ Os arquivos de imagem PNG fornecem sete níveis progressivos para decodificaçã
 
  
 
-Na tabela acima, você pode determinar os pixels que serão decodificados com cada passagem do decodificador. ao contrário do codec GIF Windows 7, o codec de PNG Windows 7 replica o pixel mais disponível à esquerda em uma linha de exame para popular pixels vazios.
+Na tabela acima, você pode determinar os pixels que serão decodificados com cada passagem do decodificador. Ao contrário do codec Windows 7 GIF, o codec Windows 7 PNG replica o pixel mais à esquerda disponível em uma linha de verificação para preencher pixels vazios.
 
-as imagens a seguir mostram um exemplo do codec de decodificação progressiva do PNG Windows 7 em três níveis progressivos.
+As imagens a seguir mostram um exemplo do codec de decodificação progressiva Windows 7 PNG em três níveis progressivos.
 
-![exemplos de decodificação progressiva de png](graphics/PNG_Progressive_Comparison.jpg)
+![exemplos de decodificação progressiva png](graphics/PNG_Progressive_Comparison.jpg)
 
-A imagem na parte superior esquerda mostra uma imagem PNG decodificada no nível progressivo 0. A imagem superior direita mostra a mesma imagem PNG decodificada no nível progressivo 3. A imagem inferior mostra a mesma imagem totalmente decodificada após 7 níveis progressivos.
+A imagem na parte superior esquerda mostra uma imagem PNG decodificada no nível progressivo 0. A imagem superior direita mostra a mesma imagem PNG decodificada no nível progressivo 3. A imagem inferior mostra a mesma imagem totalmente decodificada após sete níveis progressivos.
 
-### <a name="gif-progressive-decoding"></a>Decodificação progressiva de GIF
+### <a name="gif-progressive-decoding"></a>Decodificação progressiva gif
 
-Os arquivos de imagem GIF fornecem quatro níveis progressivos para decodificação, conforme descrito na especificação GIF. Cada passagem popula determinadas linhas em uma imagem, produzindo uma imagem completa após a quarta passagem. A tabela a seguir da especificação GIF mostra quais linhas de verificação são decodificadas por cada passagem do decodificador. 
+Os arquivos de imagem GIF fornecem quatro níveis progressivos para decodificação, conforme descrito na especificação gif. Cada passagem popula determinadas linhas dentro de uma imagem, produzindo uma imagem completa após a quarta passagem. A tabela a seguir da especificação GIF mostra quais linhas de verificação são decodificadas por cada passagem do decodificador. 
 
-| Número de nível/número de passagem | Linhas de verificação preenchidas   | Iniciando linha de varredura |
+| Número de nível/número de passagem | Examinar linhas preenchidas   | Iniciando a linha de verificação |
 |---------------------------|------------------------|--------------------|
-| 1                         | Toda oitava linha de varredura | 0                  |
-| 2                         | Toda oitava linha de varredura | 4                  |
-| 3                         | A cada quarta linha de varredura | 2                  |
-| 4                         | Toda segunda linha de varredura | 1                  |
+| 1                         | A cada oito linhas de verificação | 0                  |
+| 2                         | A cada oito linhas de verificação | 4                  |
+| 3                         | A cada quarta linha de verificação | 2                  |
+| 4                         | A cada segunda linha de verificação | 1                  |
 
 
 
  
 
-embora os codecs possam especificar o conteúdo de pixels vazios em qualquer nível específico, o codec Windows GIF popula as linhas de digitalização vazias, replicando as linhas de digitalização preenchidas acima da linha de varredura vazia.
+Embora os codecs possam especificar o conteúdo de pixels vazios em qualquer nível específico, o codec gif Windows preenche linhas de verificação vazias replicando linhas de verificação populadas acima da linha de verificação vazia.
 
 ## <a name="progressive-decoding-in-applications"></a>Decodificação progressiva em aplicativos
 
-A interface de decodificação progressiva principal é a interface [**IWICProgressiveLevelControl**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) . Para obter uma referência à interface, consulte um quadro de imagem ([**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)) para **IWICProgressiveLevelControl**. Os métodos progressivos podem ser acessados a partir da interface.
+A principal interface de decodificação progressiva é a interface [**IWICProgressiveLevelControl.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) Para obter uma referência à interface, consulte um quadro de imagem ([**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)) para **IWICProgressiveLevelControl**. Métodos progressivos podem ser acessados da interface .
 
 O código a seguir fornece um exemplo para usar a decodificação progressiva em aplicativos.
 
@@ -163,35 +163,35 @@ if (pProgressive)
 
 
 
-O código anterior fornece a funcionalidade básica necessária para implementar a decodificação progressiva na maioria dos aplicativos. Usando o código, os níveis progressivos podem ser acessados como dados de pixel de imagem ficam disponíveis. A função [**SetCurrentLevel**](/windows/desktop/api/Wincodec/nf-wincodec-iwicprogressivelevelcontrol-setcurrentlevel) bloqueia a execução até que o nível solicitado esteja disponível.
+O código anterior fornece a funcionalidade básica necessária para implementar a decodificação progressiva na maioria dos aplicativos. Usando o código, os níveis progressivos podem ser acessados à medida que os dados de pixel de imagem se tornam disponíveis. A [**função SetCurrentLevel**](/windows/desktop/api/Wincodec/nf-wincodec-iwicprogressivelevelcontrol-setcurrentlevel) bloqueia a execução até que o nível que está sendo solicitado está disponível.
 
-## <a name="custom-codec-support-for-progressive-decoding"></a>Suporte de codec personalizado para decodificação progressiva
+## <a name="custom-codec-support-for-progressive-decoding"></a>Suporte a codec personalizado para decodificação progressiva
 
-Os desenvolvedores de codec podem optar por implementar o [**IWICProgressiveLevelControl**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) se seus formatos de imagem oferecerem suporte à decodificação progressiva. O suporte para decodificação progressiva não é um requisito para descoberta e arbitragem pelo WIC. No entanto, a decodificação progressiva aprimora muito a experiência do usuário e a implementação deve ser considerada se possível.
+Os desenvolvedores de codec podem optar por implementar [**o IWICProgressiveLevelControl**](/windows/desktop/api/Wincodec/nn-wincodec-iwicprogressivelevelcontrol) se seus formatos de imagem deem suporte à decodificação progressiva. O suporte para decodificação progressiva não é um requisito para descoberta e mediação pelo WIC. No entanto, a decodificação progressiva aprimora muito a experiência do usuário e a implementação deve ser considerada, se possível.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Windows Visão geral do componente de geração de imagens](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de imagens](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 **Outros recursos**
 </dt> <dt>
 
-[Compactação e codificação digitais de Continuous-Tone imagens ainda-requisitos e diretrizes](https://www.w3.org/Graphics/JPEG/itu-t81.pdf)
+[Compactação digital e codificação de Continuous-Tone still images – Requisitos e diretrizes](https://www.w3.org/Graphics/JPEG/itu-t81.pdf)
 </dt> <dt>
 
-[Formato de intercâmbio de arquivos JPEG](https://www.w3.org/Graphics/JPEG/jfif3.pdf)
+[Formato de intercâmbio de arquivo JPEG](https://www.w3.org/Graphics/JPEG/jfif3.pdf)
 </dt> <dt>
 
-[Especificação de GIF89a](https://www.w3.org/Graphics/GIF/spec-gif89a.txt)
+[Especificação GIF89a](https://www.w3.org/Graphics/GIF/spec-gif89a.txt)
 </dt> <dt>
 
-[Especificação e extensões PNG (Portable Network Graphics)](http://www.libpng.org/pub/png/spec/)
+[Especificação e extensões PNG (Elementos Gráficos de Rede Portátil)](http://www.libpng.org/pub/png/spec/)
 </dt> </dl>
 
  

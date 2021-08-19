@@ -1,7 +1,7 @@
 ---
-description: O método settimelineobject define a linha do tempo para o mecanismo de renderização usar.
+description: O método SetTimelineObject define a linha do tempo para o mecanismo de renderização usar.
 ms.assetid: 9b60b148-9768-43ba-a986-a96838c4d2bb
-title: 'Método IRenderEngine:: settimelineobject (QEdit. h)'
+title: Método IRenderEngine::SetTimelineObject (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 954fab15e92e6111439abb66d53d53525a5afdb5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb7862f247181d9aed6123e90507ed119594306a8d84be59ddd5204a816b33fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952485"
 ---
-# <a name="irenderenginesettimelineobject-method"></a>Método IRenderEngine:: settimelineobject
+# <a name="irenderenginesettimelineobject-method"></a>Método IRenderEngine::SetTimelineObject
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -52,18 +52,18 @@ Ponteiro para a interface [**IAMTimeline**](iamtimeline.md) do objeto de linha d
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um dos seguintes valores de **HRESULT** :
+Retorna um dos seguintes **valores HRESULT:**
 
 
 
 | Código de retorno                                                                                            | Descrição                                    |
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                   | Êxito.<br/>                            |
-| <dl> <dt>**E \_ deve \_ iniciar o \_ renderizador**</dt> </dl> | Falha ao inicializar o mecanismo de renderização.<br/> |
+| <dl> <dt>**E \_ DEVE \_ INIT \_ RENDERER**</dt> </dl> | Falha na inicialização do mecanismo de renderização.<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Memória insuficiente.<br/>                |
-| <dl> <dt>**\_ponteiro E**</dt> </dl>              | Ponteiro inválido.<br/>                    |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl>              | Ponteiro inválido.<br/>                    |
 
 
 
@@ -72,12 +72,12 @@ Retorna um dos seguintes valores de **HRESULT** :
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -87,8 +87,8 @@ Retorna um dos seguintes valores de **HRESULT** :
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -96,7 +96,7 @@ Retorna um dos seguintes valores de **HRESULT** :
 
 <dl> <dt>
 
-[**Interface IRenderEngine**](irenderengine.md)
+[**IRenderEngine Interface**](irenderengine.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

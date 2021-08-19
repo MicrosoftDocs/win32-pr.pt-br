@@ -151,7 +151,7 @@ sections:
       DirectShow foi removido do SDK do DirectX a partir de abril de 2005. Você pode obter os headers, bibliotecas, ferramentas e exemplos para DirectShow no Windows Software Development Kit (anteriormente conhecido como SDK da plataforma). O DirectSetup no SDK do DirectX continua a dar suporte à redistribuição dos componentes do sistema do DirectShow, e os componentes mais recentes já estão instalados nos seguintes sistemas operacionais: Microsoft Windows XP Service Pack 2, Windows XP Professional x64 Edition, Windows Server 2003 Service Pack 1 e Windows Vista.
   - question: "Quais alterações foram feitas no runtime do DirectX para Windows Vista? \n"
     answer: >
-      As principais alterações foram feitas para dar suporte ao novo WDDM. Para obter detalhes sobre o novo modelo de driver, sobre os impactos no Direct3D 9 e nas duas novas interfaces gráficas, Direct3D 9Ex e Direct3D 10, consulte [APIs gráficas no Windows](/windows/desktop/direct3darticles/graphics-apis-in-windows-vista). Novas APIs de gráficos para o Windows 7 – Direct3D 11, Direct2D, DirectWrite, DXGI 1.1 e um Direct3D 10.1 atualizado – estão disponíveis como uma atualização para o Windows Vista (consulte <https://go.microsoft.com/fwlink/p/?linkid=160189> ).
+      As principais alterações foram feitas para dar suporte ao novo WDDM. Para obter detalhes sobre o novo modelo de driver, sobre os impactos no Direct3D 9 e nas duas novas interfaces gráficas, Direct3D 9Ex e Direct3D 10, consulte [APIs gráficas no Windows](/windows/desktop/direct3darticles/graphics-apis-in-windows-vista). Novas APIs de gráficos para Windows 7 – Direct3D 11, Direct2D, DirectWrite, DXGI 1.1 e um Direct3D 10.1 atualizado – estão disponíveis como uma atualização para o Windows Vista (consulte <https://go.microsoft.com/fwlink/p/?linkid=160189> ).
 
 
       Windows O Vista Service Pack 1 inclui uma versão atualizada do runtime do DirectX. Essa atualização estende o suporte do Windows Vista para incluir o Direct3D 10.1, expondo novos recursos de hardware opcionais. (Todo hardware capaz de dar suporte ao Direct3D 10.1 também dá suporte completo a todos os recursos do Direct3D 10.)
@@ -160,10 +160,10 @@ sections:
       O DirectSound foi atualizado para expor os recursos da nova pilha de driver de áudio Windows Vista, que dá suporte a buffers de software de vários canais. A API do Modo Retido direct3D foi completamente removida do Windows Vista. O DirectPlay Voice também foi removido, bem como o Auxiliar NAT do DirectPlay e a interface do usuário do mapeador de ação do DirectInput. O suporte para as interfaces DirectX 7 e DirectX 8 para Visual Basic 6.0 não está disponível no Windows Vista.
   - question: "Quais alterações foram feitas no runtime do DirectX para Windows 7? \n"
     answer: >
-      O Windows 7 inclui todos os componentes de runtime do DirectX encontrados no Windows Vista e adiciona os níveis de recurso Direct3D 11, DXGI 1.1, 10Level9, o dispositivo de software WARP10, Direct2D, DirectWrite e uma atualização para Direct3D 10.1 para dar suporte a 10Level9 e WARP10. Para obter mais informações, consulte [APIs de gráficos no Windows](/windows/desktop/direct3darticles/graphics-apis-in-windows-vista).
+      O Windows 7 inclui todos os componentes de runtime do DirectX encontrados no Windows Vista e adiciona os níveis de recurso Direct3D 11, DXGI 1.1, 10Level9, o dispositivo de software WARP10, Direct2D, DirectWrite e uma atualização para Direct3D 10.1 para dar suporte a 10Level9 e WARP10. Para obter mais informações, consulte [APIs de gráficos Windows](/windows/desktop/direct3darticles/graphics-apis-in-windows-vista).
 
 
-      Todos os outros componentes são idênticos ao Windows Vista, com a adição de suporte nativo de 64 bits (x64) para a API principal do DirectMusic relacionada ao MIDI com o timestamped. A camada de desempenho do DirectMusic permanece preterida e só está disponível para aplicativos de 32 bits no Windows 7 para compatibilidade do aplicativo. Observe que o suporte nativo de 64 bits do DirectMusic não está disponível no Windows Vista.
+      Todos os outros componentes são idênticos ao Windows Vista, com a adição de suporte nativo de 64 bits (x64) para a API Principal do DirectMusic relacionada ao MIDI com o timestamped. A camada de desempenho do DirectMusic permanece preterida e só está disponível para aplicativos de 32 bits no Windows 7 para compatibilidade do aplicativo. Observe que o suporte nativo de 64 bits do DirectMusic não está disponível no Windows Vista.
   - question: "Acho que encontrei um bug de driver, o que devo fazer? \n"
     answer: >
       Primeiro, verifique se você verificou os resultados com o Rasterizador de Referência. Em seguida, verifique os resultados com a versão certificada WHQL mais recente do driver IHVs. Você pode verificar programaticamente o status WHQL usando o método GetAdapterIdentifier() na interface IDirect3D9 passando o sinalizador D3DENUM \_ WHQL \_ LEVEL.
@@ -193,7 +193,7 @@ sections:
       Um ponteiro inteligente é uma classe de modelo C++ projetada para encapsular a funcionalidade do ponteiro. Em particular, há classes de ponteiro inteligente padrão projetadas para encapsular ponteiros de interface COM. Esses ponteiros executam automaticamente QueryInterface em vez de uma cast e lidam com AddRef e Release para você. Se você deve usá-los é, em grande parte, uma questão de bom gosto. Se seu código contiver muitas cópias de ponteiros de interface, com várias AddRefs e Versões, os ponteiros inteligentes provavelmente poderão tornar seu código mais organizado e menos propenso a erros. Caso contrário, você pode fazer sem eles. Visual C++ inclui um ponteiro inteligente padrão do Microsoft COM, definido no arquivo de header "comdef.h" (procure com \_ ptr \_ t na ajuda).
   - question: "Tenho problemas para depurar meu aplicativo DirectX, alguma dica? \n"
     answer: >
-      O problema mais comum com a depuração de aplicativos DirectX é tentar depurar enquanto uma superfície do DirectDraw está bloqueada. Essa situação pode causar um "Bloqueio Win16" no Microsoft Windows 9x, o que impede que a janela do depurador seja pintura. Especificar o sinalizador NOSYSLOCK D3DLOCK ao \_ bloquear a superfície geralmente pode eliminar isso. Windows 2000 não sofrerá esse problema. Ao desenvolver um aplicativo, é útil estar em execução com a versão de depuração do runtime do DirectX (selecionado quando você instala o SDK), que executa alguma validação de parâmetro e saída de mensagens úteis para a saída do depurador.
+      O problema mais comum com a depuração de aplicativos DirectX é tentar depurar enquanto uma superfície do DirectDraw está bloqueada. Essa situação pode causar um "Bloqueio Win16" em sistemas Microsoft Windows 9x, o que impede a pintura da janela do depurador. Especificar o sinalizador NOSYSLOCK D3DLOCK ao \_ bloquear a superfície geralmente pode eliminar isso. Windows 2000 não sofrerá esse problema. Ao desenvolver um aplicativo, é útil estar em execução com a versão de depuração do runtime do DirectX (selecionado quando você instala o SDK), que executa alguma validação de parâmetro e saída de mensagens úteis para a saída do depurador.
   - question: "Qual é a maneira correta de verificar códigos de retorno? \n"
     answer: >
       Use as macros SUCCEEDED e FAILED. Os métodos DirectX podem retornar vários códigos de êxito e falha, portanto, um simples:
@@ -212,13 +212,13 @@ sections:
       Você não faz isso! Os jogos precisam ser capazes de lidar com a alternância de tarefas normalmente, pois muitas coisas causam isso: ALT+TAB, conexões de área de trabalho remota, Alternância rápida de usuário, limites de uso de Controles Dos Pais e muitos outros eventos.
 
 
-      Ao mesmo tempo, duas fontes comuns de troca acidental de tarefas em jogos com esquemas de controle centrados em teclado pressionam a tecla de logotipo Windows e ativam o recurso de acessibilidade StickyKeys com a tecla SHIFT. Para resolver esses casos desabilitando a funcionalidade, consulte as técnicas descritas em Desabilitando teclas de [atalho em jogos.](/windows/desktop/DxTechArts/disabling-shortcut-keys-in-games)
+      Ao mesmo tempo, duas fontes comuns de troca acidental de tarefas em jogos com esquemas de controle centrados em teclado pressionam Windows tecla de logotipo do Windows e ativam o recurso de acessibilidade StickyKeys com a tecla SHIFT. Para resolver esses casos desabilitando a funcionalidade, consulte as técnicas descritas em Desabilitando teclas de [atalho em jogos.](/windows/desktop/DxTechArts/disabling-shortcut-keys-in-games)
   - question: "Há um livro recomendado explicando COM? \n"
     answer: >
       *Dentro do COM,* por Nós, publicado pela Microsoft Press, é uma excelente introdução ao COM. Para obter uma análise mais detalhada do COM, o livro *Essential COM* de Don Box, publicado por Longman, também é altamente recomendado.
   - question: "O que é código gerenciado? \n"
     answer: >
-      O código gerenciado é um código que tem sua execução gerenciada pelo CLR (Common Language Runtime) .NET Framework. Ele se refere a um contrato de cooperação entre a execução nativa do código e o runtime. Esse contrato especifica que, em qualquer ponto de execução, o runtime pode interromper uma CPU em execução e recuperar informações específicas para o endereço de instrução da CPU atual. As informações que devem ser consultadas geralmente pertencem ao estado de runtime, como registrar ou empilhar conteúdo de memória.
+      Código gerenciado é um código que tem sua execução gerenciada pelo CLR (Common Language Runtime) .NET Framework. Ele se refere a um contrato de cooperação entre a execução nativa do código e o runtime. Esse contrato especifica que, em qualquer ponto de execução, o runtime pode interromper uma CPU em execução e recuperar informações específicas para o endereço de instrução da CPU atual. As informações que devem ser consultadas geralmente pertencem ao estado de runtime, como registrar ou empilhar conteúdo de memória.
 
 
       Antes que o código seja executado, a IL é compilada em código executável nativo. E, como essa compilação ocorre pelo ambiente de execução gerenciada (ou, mais corretamente, por um compilador com conhecimento de runtime que sabe como direcionar o ambiente de execução gerenciada), o ambiente de execução gerenciada pode fazer garantias sobre o que o código fará. Ele pode inserir interceptações e ganchos de coleta de lixo apropriados, tratamento de exceções, segurança de tipo, limites de matriz e verificação de índice e assim por diante. Por exemplo, um compilador desse tipo faz questão de colocar os quadros de pilha e tudo exatamente certo para que o coletor de lixo possa ser executado em segundo plano em um thread separado, constantemente passeando pela pilha de chamada ativa, encontrando todas as raízes, ressalvando todos os objetos ao vivo. Além disso, como a IL tem uma noção de segurança de tipo, o mecanismo de execução manterá a garantia de segurança de tipo eliminando uma classe inteira de erros de programação que geralmente levam a falhas de segurança.
@@ -230,12 +230,12 @@ sections:
       Muito. No entanto, os dois que são altamente recomendados são:
 
 
-      -   Programação Windows por Charles Pet ltda (Microsoft Press)
+      -   Windows de programação por Charles Petzold (Microsoft Press)
 
-      -   Programando aplicativos para Windows por Jeffrey Ltda (Microsoft Press)
-  - question: "Como fazer depuração usando os arquivos Windows símbolo? \n"
+      -   programando aplicativos para Windows por Jeffrey Richter (Microsoft Press)
+  - question: "Como fazer depurar usando os arquivos de símbolo de Windows? \n"
     answer: >
-      A Microsoft publica símbolos removidos para todas as DLLs do sistema (além de algumas outras). Para acessá-los, adicione o seguinte ao caminho do símbolo nas configurações do projeto dentro Visual Studio:
+      A Microsoft publica símbolos removidos para todas as DLLs do sistema (mais algumas outras). Para acessá-los, adicione o seguinte ao seu caminho de símbolo nas configurações do projeto dentro de Visual Studio:
 
 
       ``` syntax
@@ -245,7 +245,7 @@ sections:
       ```
 
 
-      para cache de símbolos localmente, use a seguinte sintaxe:
+      para armazenar em cache os símbolos localmente, use a seguinte sintaxe:
 
 
       ``` syntax
@@ -255,63 +255,63 @@ sections:
       ```
 
 
-      Em que c: \\ cache é um diretório local para armazenar arquivos de símbolo em cache.
+      Em que c: \\ cache é um diretório local para arquivos de símbolo de cache.
 
 
-      ## <a name="direct3d-questions"></a>Perguntas do Direct3D
+      ## <a name="direct3d-questions"></a>Perguntas sobre o Direct3D
 
 
-      ### <a name="general-direct3d-questions"></a>Perguntas gerais do Direct3D
+      ### <a name="general-direct3d-questions"></a>Perguntas gerais sobre o Direct3D
   - question: "Onde posso encontrar informações sobre técnicas de gráficos 3D? \n"
     answer: >
-      O livro padrão sobre o assunto é Gráficos do Computador: Princípios e Prática de Ryan, Van Dam et al. É um recurso valioso para qualquer pessoa que queira entender as bases matemáticas das técnicas de geometria, rasterização e iluminação. As perguntas frequentes sobre o grupo usenet comp.graphics.algorithms também contêm material útil.
-  - question: "O Direct3D emular a funcionalidade não é fornecida pelo hardware? \n"
+      O livro padrão sobre o assunto é gráfico de computador: princípios e prática de Foley, Van Dam et al. É um recurso valioso para qualquer pessoa que queira entender as bases matemáticas de geometria, rasterização e técnicas de iluminação. As perguntas frequentes para o grupo de Usenet comp. Graphics. Algorithms também contêm material útil.
+  - question: "O Direct3D emula a funcionalidade não fornecida pelo hardware? \n"
     answer: >
-      Depende. O Direct3D tem um pipeline de processamento de vértice de software totalmente em destaque (incluindo suporte para sombreadores de vértices personalizados). No entanto, nenhuma emulação é fornecida para operações em nível de pixel; os aplicativos devem verificar os bits de caps apropriados e usar a API ValidateDevice para determinar o suporte.
-  - question: "Há um rasterizador de software incluído no Direct3D? \n"
+      Depende. O Direct3D tem um pipeline de processamento de vértices de software totalmente em destaque (incluindo suporte para sombreadores de vértices personalizados). No entanto, nenhuma emulação é fornecida para operações em nível de pixel; os aplicativos devem verificar os bits de Caps apropriados e usar a API ValidateDevice para determinar o suporte.
+  - question: "Há um rasterizador de software incluído com o Direct3D? \n"
     answer: >
-      Não para aplicativos de desempenho. Um rasterizador de referência é fornecido para validação de driver, mas a implementação foi projetada para precisão e não para desempenho. O Direct3D dá suporte a rasterizadores de software de plug-in.
-  - question: "Como posso executar a chave de cores com gráficos DirectX? \n"
+      Não para aplicativos de desempenho. Um rasterizador de referência é fornecido para validação de driver, mas a implementação é projetada para precisão e não para desempenho. O Direct3D oferece suporte a rasterizadores de software de plug-in.
+  - question: "Como posso executar a criação de cores com elementos gráficos do DirectX? \n"
     answer: >
-      Não há suporte direto para a chave de cores, em vez disso, você terá que usar a combinação alfa para emular o chaveamento de cores. A função D3DXCreateTextureFromFileEx() pode ser usada para facilitar isso. Essa função aceita um parâmetro de cor de chave e substituirá todos os pixels da imagem de origem que contém a cor especificada por pixels pretos transparentes na textura criada.
-  - question: "O código geometry do Direct3D utiliza o 3DNow! instruções de SIMD de e/ou Pentium III? \n"
+      Não há suporte direto para a codificação de cores. em vez disso, você precisará usar a mistura alfa para emular a chave de cores. A função D3DXCreateTextureFromFileEx () pode ser usada para facilitar isso. Essa função aceita um parâmetro de cor de chave e substituirá todos os pixels da imagem de origem que contém a cor especificada com pixels pretos transparentes na textura criada.
+  - question: "O código de geometria do Direct3D utiliza 3DNow! e/ou instruções de Pentium III SIMD? \n"
     answer: >
-      Sim. O pipeline de geometria Direct3D tem vários caminhos de código diferentes, dependendo do tipo de processador, e utilizará as operações especiais de ponto flutuante fornecidas pelo 3DNow! ou instruções SIMD do Pentium III em que elas estão disponíveis. Isso inclui o processamento de sombreadores de vértice personalizados.
-  - question: "Como fazer impedir que pixels transparentes são gravados no buffer z? \n"
+      Sim. O pipeline Direct3D Geometry tem vários caminhos de código diferentes, dependendo do tipo de processador, e ele utilizará as operações especiais de ponto flutuante fornecidas pelo 3DNow! ou as instruções de Pentium III SIMD em que estão disponíveis. Isso inclui o processamento de sombreadores de vértices personalizados.
+  - question: "Como fazer impedir que os pixels transparentes sejam gravados no buffer z? \n"
     answer: >
-      Você pode filtrar pixels com um valor alfa acima ou abaixo de um determinado limite. Você controla esse comportamento usando os renderstates ALPHATESTENABLE, ALPHAREF e ALPHAFUNC.
+      Você pode filtrar os pixels com um valor alfa acima ou abaixo de um determinado limite. Você controla esse comportamento usando renderstates ALPHATESTENABLE, ALPHAREF e ALPHAFUNC.
   - question: "O que é um buffer de estêncil? \n"
     answer: >
-      Um buffer de estêncil é um buffer adicional de informações por pixel, assim como um buffer z. Na verdade, ele reside em alguns dos bits de um buffer z. Os formatos de esêncil/z-buffer comuns são z de 15 bits e estêncil de 1 bit ou z de 24 bits e estêncil de 8 bits. É possível executar operações aritméticas simples no conteúdo do buffer de estêncil por pixel à medida que os polígonos são renderizados. Por exemplo, o buffer de estêncil pode ser incrementado ou decrementado ou o pixel pode ser rejeitado se o valor de estêncil falhar em um teste de comparação simples. Isso é útil para efeitos que envolvem marcar uma região do buffer de quadro e, em seguida, executar a renderização apenas da região marcada (ou não marcada). Bons exemplos são efeitos volumosos, como volumes de sombra.
+      Um buffer de estêncil é um buffer adicional de informações por pixel, assim como um buffer z. Na verdade, ele reside em alguns dos bits de um buffer z. Os formatos comum de estêncil/buffer z são um estêncil de 15 bits z e 1 bits ou um estêncil de 24 bits z e 8 bits. É possível executar operações aritméticas simples no conteúdo do buffer de estêncil por pixel, pois os polígonos são renderizados. Por exemplo, o buffer de estêncil pode ser incrementado ou diminuído, ou o pixel pode ser rejeitado se o valor do estêncil falhar em um teste de comparação simples. Isso é útil para efeitos que envolvem a marcação de uma região do buffer de quadro e a execução da renderização apenas da região marcada (ou desmarcada). Bons exemplos são efeitos volumétricoss, como volumes de sombra.
   - question: "Como fazer usar um buffer de estêncil para renderizar volumes de sombra? \n"
     answer: >
-      A chave para esse e outros efeitos de buffer de estêncil volumoso é a interação entre o buffer de estêncil e o buffer z. Uma cena com um volume de sombra é renderizada em três estágios. Primeiro, a cena sem a sombra é renderizada como de costume, usando o buffer z. Em seguida, a sombra é marcada no buffer de estêncil da seguinte forma. As faces da frente do volume de sombra são desenhadas usando polígonos invisíveis, com z-testing habilitado, mas z-writes desabilitado e o buffer de estêncil incrementado em cada pixel que passa o teste z. As faces traseiras do volume de sombra são renderizadas da mesma forma, mas diminuindo o valor de estêncil.
+      A chave para esse e outros efeitos de buffer de estêncil volumétricos é a interação entre o buffer de estêncil e o z-buffer. Uma cena com um volume de sombra é renderizada em três estágios. Primeiro, a cena sem a sombra é renderizada como de costume, usando o z-buffer. Em seguida, a sombra é marcada no buffer do estêncil da seguinte maneira. As faces frontais do volume de sombra são desenhadas usando polígonos invisíveis, com teste de z habilitado, mas z-gravações desabilitadas e o buffer de estêncil incrementado a cada pixel passando o teste z. As faces posteriores do volume de sombra são renderizadas da mesma forma, mas decrementando o valor do estêncil em vez disso.
 
 
-      Agora, considere um único pixel. Supondo que a câmera não está no volume de sombra, há quatro possibilidades para o ponto correspondente na cena. Se o raio da câmera para o ponto não intersecção do volume de sombra, nenhum polígono de sombra será desenhado lá e o buffer de estêncil ainda será zero. Caso contrário, se o ponto estiver na frente do volume de sombra, os polígonos de sombra serão armazenados em buffer z e o estêncil permanecerá inalterado novamente. Se os pontos estão atrás do volume de sombra, o mesmo número de faces de sombra frontal que as faces traseiras terá sido renderizado e o estêncil será zero, tendo sido incrementado tantas vezes quanto decrementado.
+      Agora, considere um único pixel. Supondo que a câmera não esteja no volume de sombra, há quatro possibilidades para o ponto correspondente na cena. Se o raio da câmera até o ponto não interceptar o volume de sombra, nenhum polígono de sombra terá sido desenhado lá e o buffer de estêncil ainda será zero. Caso contrário, se o ponto estiver na frente do volume de sombra, os polígonos de sombra serão armazenados em buffer z e o estêncil novamente permanecerá inalterado. Se os pontos estiverem atrás do volume de sombra, o mesmo número de faces de sombra frontal como faces traseiras terá sido renderizado e o estêncil será zero, tendo sido incrementado quantas vezes forem decrementadas.
 
 
-      A possibilidade final é que o ponto esteja dentro do volume de sombra. Nesse caso, a face traseira do volume de sombra será em buffer z, mas não a face frontal, portanto, o buffer de estêncil será um valor que não é zero. O resultado é que as partes do buffer de quadro que estão na sombra têm valor de estêncil não zero. Por fim, para realmente renderizar a sombra, toda a cena é limpa com um polígono de combinação alfa definido para afetar apenas pixels com valor de estêncil não zero. Um exemplo dessa técnica pode ser visto no exemplo de "Volume de Sombra" que vem com o SDK do DirectX.
-  - question: "Quais são as regras de alinhamento do texel? Como fazer obter um mapeamento um-para-um? \n"
+      A possibilidade final é que o ponto está dentro do volume de sombra. Nesse caso, o verso do volume de sombra será armazenado em buffer z, mas não na face frontal, portanto, o buffer de estêncil será um valor diferente de zero. O resultado é que partes do buffer de quadro com base em sombra têm um valor de estêncil diferente de zero. Por fim, para realmente renderizar a sombra, toda a cena é desbotada com um polígono combinado alfa definido para afetar apenas os pixels com um valor de estêncil diferente de zero. Um exemplo dessa técnica pode ser visto no exemplo de "volume de sombra" que vem com o SDK do DirectX.
+  - question: "Quais são as regras de alinhamento do Texel? Como fazer obter um mapeamento um-para-um? \n"
     answer: >
-      Isso é explicado por completo na documentação do Direct3D 9. No entanto, o resumo executivo é que você deve desvio das coordenadas de tela em -0,5 de um pixel para alinhar-se corretamente com os texels. A maioria dos cartões agora está em conformidade corretamente com as regras de alinhamento do texel, no entanto, há alguns cartões ou drivers mais antigos que não. Para lidar com esses casos, o melhor conselho é entrar em contato com o fornecedor de hardware em questão e solicitar drivers atualizados ou sua solução alternativa sugerida. Observe que, no Direct3D 10, essa regra não é mais retém.
+      Isso é explicado totalmente na documentação do Direct3D 9. No entanto, o resumo executivo é que você deve inclinar suas coordenadas de tela de-0,5 de um pixel para se alinhar corretamente com o texels. A maioria dos cartões agora está em conformidade com as regras de alinhamento Texel, no entanto, há alguns cartões ou drivers mais antigos que não têm. Para lidar com esses casos, o melhor conselho é entrar em contato com o fornecedor de hardware em questão e solicitar drivers atualizados ou sua solução alternativa sugerida. Observe que, no Direct3D 10, essa regra não é mais segura.
   - question: "Qual é a finalidade do sinalizador D3DCREATE \\_ PUREDEVICE? \n"
     answer: >
-      Use o sinalizador D3DCREATE \_ PUREDEVICE durante a criação do dispositivo para criar um dispositivo puro. Um dispositivo puro não salva o estado atual (durante alterações de estado), o que geralmente melhora o desempenho; esse dispositivo também requer processamento de vértice de hardware. Um dispositivo puro normalmente é usado quando o desenvolvimento e a depuração são concluídos e você deseja obter o melhor desempenho.
+      Use o \_ sinalizador D3DCREATE PUREDEVICE durante a criação do dispositivo para criar um dispositivo puro. Um dispositivo puro não salva o estado atual (durante as alterações de estado), o que geralmente melhora o desempenho; Esse dispositivo também requer o processamento de vértices de hardware. Um dispositivo puro normalmente é usado quando o desenvolvimento e a depuração são concluídos e você deseja obter o melhor desempenho.
 
 
-      Uma desvantagem de um dispositivo puro é que ele não dá suporte a todas as chamadas à API Get; isso significa que você não pode usar um dispositivo puro para consultar o \* estado do pipeline. Isso dificulta a depuração durante a execução de um aplicativo. Abaixo está uma lista de todos os métodos desabilitados por um dispositivo puro.
+      Uma desvantagem de um dispositivo puro é que ele não dá suporte a todas as \* chamadas get API; isso significa que você não pode usar um dispositivo puro para consultar o estado do pipeline. Isso dificulta a depuração durante a execução de um aplicativo. Abaixo está uma lista de todos os métodos que são desabilitados por um dispositivo puro.
 
 
       -   [**IDirect3DDevice9::GetClipPlane**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getclipplane)
 
       -   [**IDirect3DDevice9::GetClipStatus**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getclipstatus)
 
-      -   [**IDirect3DDevice9::GetLight**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getlight)
+      -   [**IDirect3DDevice9:: GetLight**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getlight)
 
-      -   [**IDirect3DDevice9::GetLightEnable**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getlightenable)
+      -   [**IDirect3DDevice9:: getclareable**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getlightenable)
 
-      -   [**IDirect3DDevice9::GetMaterial**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getmaterial)
+      -   [**IDirect3DDevice9:: GetMaterial**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getmaterial)
 
       -   [**IDirect3DDevice9::GetPixelShaderConstantF**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getpixelshaderconstantf)
 
@@ -319,13 +319,13 @@ sections:
 
       -   [**IDirect3DDevice9::GetPixelShaderConstantB**](/windows/desktop/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-getpixelshaderconstantb)
 
-      -   [**IDirect3DDevice9::GetRenderState**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getrenderstate)
+      -   [**IDirect3DDevice9:: getrenderingstate**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getrenderstate)
 
-      -   [**IDirect3DDevice9::GetSamplerState**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getsamplerstate)
+      -   [**IDirect3DDevice9:: getsamplestate**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getsamplerstate)
 
       -   [**IDirect3DDevice9::GetTextureStageState**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-gettexturestagestate)
 
-      -   [**IDirect3DDevice9::GetTransform**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-gettransform)
+      -   [**IDirect3DDevice9:: GetTransform**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-gettransform)
 
       -   [**IDirect3DDevice9::GetVertexShaderConstantF**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getvertexshaderconstantf)
 
@@ -334,80 +334,80 @@ sections:
       -   [**IDirect3DDevice9::GetVertexShaderConstantB**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getvertexshaderconstantb)
 
 
-      Uma segunda desvantagem de um dispositivo puro é que ele não filtra nenhuma alteração de estado redundante. Ao usar um dispositivo puro, seu aplicativo deve reduzir o número de alterações de estado no loop de renderização para um mínimo; isso pode incluir alterações de estado de filtragem para garantir que os estados não são definidos mais de uma vez. Essa troca depende do aplicativo; Se você usar mais de 1.000 Chamadas definidas por quadro, considere aproveitar a filtragem de redundância que é feita automaticamente por um dispositivo não puro.
+      Uma segunda desvantagem de um dispositivo puro é que ele não filtra nenhuma alteração de estado redundante. Ao usar um dispositivo puro, seu aplicativo deve reduzir o número de alterações de estado no loop de renderização para um mínimo; Isso pode incluir a filtragem de alterações de estado para garantir que os Estados não sejam definidos mais de uma vez. Essa desvantagem é dependente do aplicativo; Se você usar mais de uma chamada de conjunto de 1000 por quadro, considere aproveitar a filtragem de redundância feita automaticamente por um dispositivo não puro.
 
 
-      Assim como com todos os problemas de desempenho, a única maneira de saber se seu aplicativo terá um desempenho melhor ou não com um dispositivo puro é comparar o desempenho do aplicativo com um dispositivo puro versus não puro. Um dispositivo puro tem o potencial de acelerar um aplicativo reduzindo a sobrecarga de CPU da API. Mas tenha cuidado! Em alguns cenários, um dispositivo puro reduzirá a velocidade do aplicativo (devido ao trabalho adicional da CPU causado por alterações de estado redundantes). Se você não tiver certeza de qual tipo de dispositivo funcionará melhor para seu aplicativo e não filtrar alterações redundantes no aplicativo, use um dispositivo não puro.
-  - question: "Como fazer enumerar os dispositivos de exibição em um sistema de vários monitores? \n"
+      Assim como ocorre com todos os problemas de desempenho, a única maneira de saber se seu aplicativo será executado melhor com um dispositivo puro é comparar o desempenho do aplicativo com um dispositivo puro vs. não puro. Um dispositivo puro tem o potencial de acelerar um aplicativo reduzindo a sobrecarga da CPU da API. Mas tenha cuidado! Para alguns cenários, um dispositivo puro tornará o seu aplicativo mais lento (devido ao trabalho adicional de CPU causado por alterações de estado redundantes). Se você não tiver certeza de qual tipo de dispositivo funcionará melhor para seu aplicativo e não filtrar alterações redundantes no aplicativo, use um dispositivo não puro.
+  - question: "Como fazer enumerar os dispositivos de vídeo em um sistema de vários monitores? \n"
     answer: >
-      A enumeração pode ser executada por meio de uma iteração simples pelo aplicativo usando métodos da interface IDirect3D9. Chame GetAdapterCount para determinar o número de adaptadores de exibição no sistema. Chame GetAdapterMonitor para determinar a qual monitor físico um adaptador está conectado (esse método retorna um HMONITOR, que pode ser usado no GetMonitorInfo da API do Win32 para determinar informações sobre o monitor físico). Determinar as características de um adaptador de exibição específico ou criar um dispositivo Direct3D nesse adaptador é tão simples quanto passar o número do adaptador apropriado no lugar de D3DADAPTER DEFAULT ao chamar \_ GetDeviceCaps, CreateDevice ou outros métodos.
-  - question: "O que aconteceu com a função fixa Bumpmapping em D3D9? \n"
-    answer: "A partir do Direct3D 9, fortalecemos a validação em cartões que podiam dar suporte apenas a > duas texturas simultâneas. Determinados cartões mais antigos têm apenas 3 estágios de textura disponíveis quando você usa uma operação alfa modular específica. O uso mais comum que as pessoas usam os três estágios para o é o bumpmapping de entalhe, e você ainda pode fazer isso com o D3D9.\n\nO campo altura deve ser armazenado no canal alfa e é usado para modular a contribuição de luzes, isto é:\n\n``` syntax\n// Stage 0 is the base texture, with the height map in the alpha channel\nm_pd3dDevice->SetTexture(0, m_pEmbossTexture );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_TEXCOORDINDEX, 0 );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP,   D3DTOP_MODULATE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG1, D3DTA_TEXTURE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG2, D3DTA_DIFFUSE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP,   D3DTOP_SELECTARG1 );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TEXTURE );\nif( m_bShowEmbossMethod )\n{\n // Stage 1 passes through the RGB channels (SELECTARG2 = CURRENT), and \n // does a signed add with the inverted alpha channel. \n // The texture coords associated with Stage 1 are the shifted ones, so \n // the result is:\n //    (height - shifted_height) * tex.RGB * diffuse.RGB\n   m_pd3dDevice->SetTexture( 1, m_pEmbossTexture );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_TEXCOORDINDEX, 1 );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLOROP, D3DTOP_SELECTARG2 );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG1, D3DTA_TEXTURE );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG2, D3DTA_CURRENT );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAOP, D3DTOP_ADDSIGNED );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAARG1, D3DTA_TEXTURE|D3DTA_COMPLEMENT );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAARG2, D3DTA_CURRENT );\n\n   // Set up the alpha blender to multiply the alpha channel \n   // (monochrome emboss) with the src color (lighted texture)\n   m_pd3dDevice->SetRenderState( D3DRS_ALPHABLENDENABLE, TRUE );\n   m_pd3dDevice->SetRenderState( D3DRS_SRCBLEND,  D3DBLEND_SRCALPHA );\n   m_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ZERO );\n}\n```\n\nEste exemplo, juntamente com outros exemplos mais antigos, não são mais fornecidos na versão atual do SDK e não serão enviados em futuras versões do SDK.\n\n### <a name=\"geometry-vertex-processing\"></a>Processamento de geometria (vértice)\n"
-  - question: "Os fluxos de vértice confundem como funcionam? \n"
+      A enumeração pode ser executada por meio de uma iteração simples pelo aplicativo usando métodos da interface IDirect3D9. Chame GetAdapterCount para determinar o número de adaptadores de vídeo no sistema. Chame GetAdapterMonitor para determinar a qual monitor físico um adaptador está conectado (esse método retorna um HMONITOR, que você pode usar na API do Win32 GetMonitorInfo para determinar informações sobre o monitor físico). Determinar as características de um adaptador de vídeo específico ou criar um dispositivo Direct3D nesse adaptador é tão simples quanto passar o número do adaptador apropriado no lugar do \_ padrão D3DADAPTER ao chamar GetDeviceCaps, CreateDevice ou outros métodos.
+  - question: "O que aconteceu com o aumento de função fixo em D3D9? \n"
+    answer: "A partir do Direct3D 9, reforçamos a validação em cartões que só podiam dar suporte > duas texturas simultâneas. Determinados cartões mais antigos só têm três estágios de textura disponíveis quando você usa uma operação de modular alfa específica. O uso mais comum para o que as pessoas usam os 3 estágios é o aumento de inboss e você ainda pode fazer isso com o D3D9.\n\nO campo de altura deve ser armazenado no canal alfa e é usado para modular a contribuição das luzes, ou seja:\n\n``` syntax\n// Stage 0 is the base texture, with the height map in the alpha channel\nm_pd3dDevice->SetTexture(0, m_pEmbossTexture );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_TEXCOORDINDEX, 0 );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLOROP,   D3DTOP_MODULATE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG1, D3DTA_TEXTURE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_COLORARG2, D3DTA_DIFFUSE );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAOP,   D3DTOP_SELECTARG1 );\nm_pd3dDevice->SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TEXTURE );\nif( m_bShowEmbossMethod )\n{\n // Stage 1 passes through the RGB channels (SELECTARG2 = CURRENT), and \n // does a signed add with the inverted alpha channel. \n // The texture coords associated with Stage 1 are the shifted ones, so \n // the result is:\n //    (height - shifted_height) * tex.RGB * diffuse.RGB\n   m_pd3dDevice->SetTexture( 1, m_pEmbossTexture );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_TEXCOORDINDEX, 1 );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLOROP, D3DTOP_SELECTARG2 );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG1, D3DTA_TEXTURE );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_COLORARG2, D3DTA_CURRENT );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAOP, D3DTOP_ADDSIGNED );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAARG1, D3DTA_TEXTURE|D3DTA_COMPLEMENT );\n   m_pd3dDevice->SetTextureStageState( 1, D3DTSS_ALPHAARG2, D3DTA_CURRENT );\n\n   // Set up the alpha blender to multiply the alpha channel \n   // (monochrome emboss) with the src color (lighted texture)\n   m_pd3dDevice->SetRenderState( D3DRS_ALPHABLENDENABLE, TRUE );\n   m_pd3dDevice->SetRenderState( D3DRS_SRCBLEND,  D3DBLEND_SRCALPHA );\n   m_pd3dDevice->SetRenderState( D3DRS_DESTBLEND, D3DBLEND_ZERO );\n}\n```\n\nEste exemplo, juntamente com outros exemplos mais antigos, não são mais enviados na versão atual do SDK e não serão enviados em versões futuras do SDK.\n\n### <a name=\"geometry-vertex-processing\"></a>Processamento de geometria (vértice)\n"
+  - question: "Os fluxos de vértice me confundam como eles funcionam? \n"
     answer: >
-      O Direct3D monta cada vértice que é colocado na parte de processamento do pipeline de um ou mais fluxos de vértice. Ter apenas um fluxo de vértice corresponde ao antigo modelo anterior ao DirectX 8, no qual os vértices são provenientes de uma única fonte. Com o DirectX 8, diferentes componentes de vértice podem vir de fontes diferentes; por exemplo, um buffer de vértice pode conter posições e normais, enquanto um segundo valores de cor e coordenadas de textura são mantidos.
+      O Direct3D monta cada vértice que é alimentado na parte de processamento do pipeline de um ou mais fluxos de vértice. Ter apenas um fluxo de vértice corresponde ao antigo modelo pré-DirectX 8, no qual os vértices vêm de uma única fonte. Com o DirectX 8, diferentes componentes de vértice podem vir de fontes diferentes; por exemplo, um buffer de vértice pode conter posições e normais, enquanto um segundo mantém valores de cor e coordenadas de textura.
   - question: "O que é um sombreador de vértice? \n"
     answer: >
-      Um sombreador de vértice é um procedimento para processar um único vértice. Ele é definido usando uma linguagem simples semelhante a assembly, que é montada pela biblioteca do utilitário D3DX em um fluxo de token que o Direct3D aceita. O sombreador de vértice usa como entrada um único vértice e um conjunto de valores constantes; Ele gera uma posição de vértice (no espaço de clipe) e, opcionalmente, um conjunto de cores e coordenadas de textura, que são usadas na rasterização. Observe que, quando você tem um sombreador de vértice personalizado, os componentes de vértice não têm mais nenhuma semântica aplicada a eles pelo Direct3D e os vértices são simplesmente dados arbitrários que são interpretados pelo sombreador de vértice que você criar.
-  - question: "Um sombreador de vértice executa divisão em perspectiva ou recorte? \n"
+      Um sombreador de vértice é um procedimento para processar um único vértice. Ele é definido usando uma linguagem simples do tipo assembly que é montada pela biblioteca do utilitário D3DX em um fluxo de tokens aceito pelo Direct3D. O sombreador de vértice assume como entrada um único vértice e um conjunto de valores constantes; ele saída de uma posição de vértice (no espaço de clipe) e, opcionalmente, um conjunto de cores e coordenadas de textura, que são usadas na rasterização. Observe que quando você tem um sombreador de vértice personalizado, os componentes de vértice não têm mais nenhuma semântica aplicada a eles pelo Direct3D e os vértices são simplesmente dados arbitrários que são interpretados pelo sombreador de vértice que você cria.
+  - question: "Um sombreador de vértice executa divisão de perspectiva ou recorte? \n"
     answer: >
-      Não. O sombreador de vértice gera uma coordenada homogênea no espaço de clipe para a posição de vértice transformada. A divisão de perspectiva e o recorte são executados automaticamente após o sombreador.
-  - question: "Posso gerar Geometry com um sombreador de vértice? \n"
+      Não. O sombreador de vértice lança uma coordenada homogênea no espaço de clipe para a posição do vértice transformado. A divisão de perspectiva e o recorte são executados automaticamente após o sombreador.
+  - question: "Posso gerar geometria com um sombreador de vértice? \n"
     answer: >
-      Um sombreador de vértice não pode criar ou destruir vértices; Ele opera em um único vértice de cada vez, fazendo um vértice não processado como entrada e gerando um único vértice processado. Portanto, ele pode ser usado para manipular a geometria existente (aplicando as deformações ou realizando operações de aparência), mas não pode realmente gerar uma nova geometria por si.
+      Um sombreador de vértice não pode criar ou destruir vértices; ele opera em um único vértice por vez, levando um vértice não processado como entrada e processando um único vértice processado. Portanto, ele pode ser usado para manipular a geometria existente (aplicando deformações ou executando operações de redução), mas não pode realmente gerar nova geometria por si só.
   - question: "Posso aplicar um sombreador de vértice personalizado aos resultados do pipeline de geometria de função fixa (ou vice-versa)? \n"
     answer: >
-      Não. Você precisa escolher uma ou outra. Se você estiver usando um sombreador de vértice personalizado, você será responsável por executar toda a transformação de vértice.
-  - question: "Posso usar um sombreador de vértice personalizado se meu hardware não oferecer suporte a ele? \n"
+      Não. Você precisa escolher um ou outro. Se você estiver usando um sombreador de vértice personalizado, será responsável por executar toda a transformação de vértice.
+  - question: "Posso usar um sombreador de vértice personalizado se meu hardware não dá suporte a ele? \n"
     answer: >
-      Sim. O mecanismo de processamento de vértices de software do Direct3D dá suporte total a sombreadores de vértices personalizados com um nível surpreendentemente alto de desempenho.
+      Sim. O mecanismo de processamento de vértice de software Direct3D dá suporte total a sombreadores de vértice personalizados com um nível surpreendentemente alto de desempenho.
   - question: "Como fazer determinar se o hardware dá suporte ao meu sombreador de vértice personalizado? \n"
     answer: >
-      Dispositivos capazes de dar suporte a sombreadores de vértice no hardware são necessários para preencher o campo D3DCAPS9:: VertexShaderVersion para indicar o nível de versão do sombreador de vértice ao qual eles dão suporte. Qualquer dispositivo que diz dar suporte a um nível específico de sombreador de vértice deve dar suporte a todos os sombreadores de vértices legais que atendem à especificação para esse nível ou abaixo.
+      Os dispositivos capazes de dar suporte a sombreadores de vértice no hardware são necessários para preencher o campo D3DCAPS9::VertexShaderVersion para indicar o nível de versão do sombreador de vértice que eles suportam. Qualquer dispositivo que diz dar suporte a um nível específico de sombreador de vértice deve dar suporte a todos os sombreadores de vértice legais que atendem à especificação para esse nível ou abaixo.
   - question: "Quantos registros constantes estão disponíveis para sombreadores de vértice? \n"
     answer: >
-      Os dispositivos com suporte a sombreadores de vértice vs 1,0 são necessários para dar suporte a um mínimo de registros de constante 96. Os dispositivos podem dar suporte a mais do que esse número mínimo e podem relatá-lo por meio do campo D3DCAPS9:: MaxVertexShaderConst.
-  - question: "Posso compartilhar dados de posição entre vértices com diferentes coordenadas de textura? \n"
+      Dispositivos que suportam sombreadores de vértice versus 1.0 são necessários para dar suporte a um mínimo de 96 registros constantes. Os dispositivos podem dar suporte a mais do que esse número mínimo e podem relatar isso por meio do campo D3DCAPS9::MaxVertexShaderConst.
+  - question: "Posso compartilhar dados de posição entre vértices com coordenadas de textura diferentes? \n"
     answer: >
-      O exemplo comum dessa situação é um cubo no qual você deseja usar uma textura diferente para cada face. Infelizmente, a resposta é não, atualmente, não é possível indexar os componentes de vértice de forma independente. Mesmo com vários fluxos de vértice, todos os fluxos são indexados juntos.
-  - question: "Quando eu envio uma lista indexada de primitivos, o Direct3D processa todos os vértices no buffer ou apenas aqueles que indexei? \n"
+      O exemplo comum dessa situação é um cubo no qual você deseja usar uma textura diferente para cada rosto. Infelizmente, a resposta é não, atualmente não é possível indexar os componentes de vértice de forma independente. Mesmo com vários fluxos de vértice, todos os fluxos são indexados juntos.
+  - question: "Quando eu envio uma lista indexada de primitivos, o Direct3D processa todos os vértices no buffer ou apenas os que indexei? \n"
     answer: >
-      Ao usar o pipeline de geometria de software, o Direct3D primeiro transforma todos os vértices no intervalo que você enviou, em vez de transformá-los "sob demanda" conforme eles são indexados. Para dados compactados de forma densa (ou seja, onde a maioria dos vértices são usados), isso é mais eficiente, especialmente quando há instruções SIMD disponíveis. Se seus dados forem empacotados de forma grosseira (ou seja, vários vértices não são usados), talvez você queira considerar a reorganização dos dados para evitar muitas transformações redundantes. Ao usar a aceleração de geometria de hardware, os vértices são normalmente transformados sob demanda conforme são necessários.
+      Ao usar o pipeline de geometria de software, o Direct3D primeiro transforma todos os vértices no intervalo enviado, em vez de transformá-los "sob demanda" conforme eles são indexados. Para dados densamente empacotados (ou seja, onde a maioria dos vértices são usados), isso é mais eficiente, especialmente quando as instruções SIMD estão disponíveis. Se os dados são empacotados esparsamente (ou seja, muitos vértices não são usados), talvez você queira considerar reorganizar seus dados para evitar muitas transformações redundantes. Ao usar a aceleração de geometria de hardware, os vértices normalmente são transformados sob demanda conforme necessário.
   - question: "O que é um buffer de índice? \n"
     answer: >
-      Um buffer de índice é exatamente análogo a um buffer de vértice, mas, em vez disso, ele contém índices para uso em chamadas DrawIndexedPrimitive. É altamente recomendável que você use buffers de índice em vez de memória bruta alocada por aplicativo, quando possível, pelos mesmos motivos que os buffers de vértice.
-  - question: "Observe que os índices de 32 bits são um tipo com suporte; Posso usá-los em todos os dispositivos? \n"
+      Um buffer de índice é exatamente análogo a um buffer de vértice, mas, em vez disso, ele contém índices para uso em chamadas DrawIndexedPrimitive. É altamente recomendável que você use buffers de índice em vez de memória bruta alocada pelo aplicativo quando possível, pelos mesmos motivos que buffers de vértice.
+  - question: "Noto que índices de 32 bits são um tipo com suporte; Posso usá-los em todos os dispositivos? \n"
     answer: >
-      Não. Você deve verificar o campo D3DCAPS9:: MaxVertexIndex para determinar o valor de índice máximo que é suportado pelo dispositivo. Esse valor deve ser maior do que 2 para a 16º potência-1 (0xFFFF) para que haja suporte para buffers de índice do tipo D3DFMT \_ INDEX32. Além disso, observe que alguns dispositivos podem dar suporte a índices de 32 bits, mas dão suporte a um valor de índice máximo menor que 2 para o 32 º Power-1 (0xFFFFFFFF); Nesse caso, o aplicativo deve respeitar o limite relatado pelo dispositivo.
-  - question: "O processamento de vértices S/W dá suporte a 64 bits? \n"
+      Não. Você deve verificar o campo D3DCAPS9::MaxVertexIndex para determinar o valor máximo de índice com suporte do dispositivo. Esse valor deve ser maior que 2 à 16ª potência -1 (0xffff) para que os buffers de índice do tipo D3DFMT \_ INDEX32 sejam suportados. Além disso, observe que alguns dispositivos podem dar suporte a índices de 32 bits, mas dar suporte a um valor de índice máximo menor que 2 para a 32ª potência -1 (0xffffffff); nesse caso, o aplicativo deve respeitar o limite relatado pelo dispositivo.
+  - question: "O processamento de vértice S/W dá suporte a 64 bits? \n"
     answer: >
       Há um pipeline de vértice s/w otimizado para x64, mas ele não existe para IA64.
 
 
       ### <a name="performance-tuning"></a>Ajuste de desempenho
-  - question: "Como posso melhorar o desempenho do meu aplicativo do Direct3D? \n"
+  - question: "Como posso melhorar o desempenho do meu aplicativo Direct3D? \n"
     answer: >
-      Veja a seguir as principais áreas a serem examinadas ao otimizar o desempenho:
+      Veja a seguir as principais áreas a se olhar ao otimizar o desempenho:
   - question: "Tamanho do lote \n"
     answer: >
-      O Direct3D é otimizado para grandes lotes de primitivos. Quanto mais polígonos podem ser enviados em uma única chamada, melhor. Uma boa regra prática é visar a média de 1000 vértices por chamada primitiva. Abaixo desse nível, você provavelmente não está obtendo um desempenho ideal, acima disso, e está em redução de retornos e conflitos potenciais com considerações de simultaneidade (veja abaixo).
+      O Direct3D é otimizado para grandes lotes de primitivos. Quanto mais polígonos puderem ser enviados em uma única chamada, melhor. Uma boa regra geral é visar a média de 1.000 vértices por chamada primitiva. Abaixo desse nível, você provavelmente não está tendo um desempenho ideal, acima disso e está em redução de retornos e possíveis conflitos com considerações de simultnância (veja abaixo).
   - question: "Alterações de estado \n"
-    answer: "Alterar o estado de renderização pode ser uma operação cara, especialmente ao alterar a textura. Por esse motivo, é importante minimizar o máximo possível do número de alterações de estado feitas por quadro. Além disso, tente minimizar as alterações de vértice ou buffer de índice.\n\n> [!Note]  \n> A partir do DirectX 8, o custo da alteração do buffer de vértice não é mais tão caro quanto era com versões anteriores, mas ainda é uma prática recomendada evitar alterações no buffer de vértice sempre que possível.\n\n \n"
+    answer: "Alterar o estado de renderização pode ser uma operação cara, especialmente ao alterar a textura. Por esse motivo, é importante minimizar o máximo possível o número de alterações de estado feitas por quadro. Além disso, tente minimizar as alterações de vértice ou buffer de índice.\n\n> [!Note]  \n> A partir do DirectX 8, o custo de alterar o buffer de vértice não é mais tão caro quanto era com as versões anteriores, mas ainda é uma boa prática evitar alterações de buffer de vértice sempre que possível.\n\n \n"
   - question: >
       Simultaneidade
     answer: >
-      Se você puder se organizar para executar a renderização simultaneamente com outro processamento, você aproveitará ao máximo o desempenho do sistema. Essa meta pode entrar em conflito com a meta de reduzir as alterações de renderingstate. Você precisa ter um equilíbrio entre o envio em lote para reduzir as alterações de estado e enviar dados por push para o driver antes para ajudar a alcançar a simultaneidade. O uso de vários buffers de vértices no modo Round Robin pode ajudar com a simultaneidade.
-  - question: "Carregamentos de textura \n"
+      Se você puder organizar a renderização simultaneamente com outro processamento, você aproveitará ao máximo o desempenho do sistema. Essa meta pode ser conflitada com a meta de reduzir as alterações de renderstate. Você precisa encontrar um equilíbrio entre o processamento em lote para reduzir as alterações de estado e o emissão antecipada de dados para o driver para ajudar a obter a competência. O uso de vários buffers de vértice no estilo round robin pode ajudar com a concurreência.
+  - question: "Uploads de textura \n"
     answer: >
-      O carregamento de texturas para o dispositivo consome largura de banda e causa uma competição de largura de banda com dados de vértice. Portanto, é importante não fazer a confirmação da memória de textura, o que forçaria o esquema de cache a carregar quantidades excessivas de texturas em cada quadro.
+      Carregar texturas no dispositivo consome largura de banda e causa uma competição de largura de banda com dados de vértice. Portanto, é importante não sobrecarcar a memória de textura de commit, o que forçaria seu esquema de cache a carregar quantidades excessivas de texturas em cada quadro.
   - question: "Buffers de vértice e índice \n"
     answer: >
-      Você sempre deve usar os buffers de vértice e de índice, em vez de blocos simples de memória alocada do aplicativo. No mínimo, a semântica de bloqueio para o vértice e os buffers de índice pode evitar uma operação de cópia redundante. Com alguns drivers, o vértice ou o buffer de índice podem ser colocados em memória mais ideal (talvez na memória de vídeo ou AGP) para acesso pelo hardware.
+      Você sempre deve usar buffers de vértice e índice, em vez de blocos simples de memória alocada do aplicativo. No mínimo, a semântica de bloqueio para buffers de vértice e índice pode evitar uma operação de cópia redundante. Com alguns drivers, o vértice ou buffer de índice pode ser colocado em uma memória mais ideal (talvez em vídeo ou memória AGP) para acesso pelo hardware.
   - question: "Blocos de macro de estado \n"
-    answer: "Elas foram introduzidas no DirectX 7,0. Eles fornecem um mecanismo para gravar uma série de alterações de estado (incluindo as alterações de iluminação, material e matriz) em uma macro, que pode ser reproduzida por uma única chamada. Isso apresenta duas vantagens:\n\n-   Você reduz a sobrecarga de chamada fazendo uma chamada em vez de muitos.\n-   Um driver ciente pode pré-configurar e pré-compilar as alterações de estado, tornando muito mais rápido enviar para o hardware de gráficos.\n\nAs alterações de estado ainda podem ser caras, mas o uso de macros de estado pode ajudar a reduzir pelo menos um pouco do custo. Use apenas um único dispositivo Direct3D. Se você precisar renderizar para vários destinos, use SetRenderTarget. Se você estiver criando um aplicativo em janela com várias janelas 3D, use a API CreateAdditionalSwapChain. O tempo de execução é otimizado para um único dispositivo e há uma penalidade de velocidade considerável para usar vários dispositivos.\n\n \n"
+    answer: "Eles foram introduzidos no DirectX 7.0. Eles fornecem um mecanismo para registrar uma série de alterações de estado (incluindo iluminação, material e alterações de matriz) em uma macro, que pode ser reprodução por uma única chamada. Isso apresenta duas vantagens:\n\n-   Você reduz a sobrecarga de chamada fazendo uma chamada em vez de muitas.\n-   Um driver com conhecimento pode pré-analisar e pré-compilar as alterações de estado, tornando muito mais rápido enviar para o hardware gráfico.\n\nAs alterações de estado ainda podem ser caras, mas o uso de macros de estado pode ajudar a reduzir pelo menos parte do custo. Use apenas um único dispositivo Direct3D. Se você precisar renderizar para vários destinos, use SetRenderTarget. Se você estiver criando um aplicativo em janelas com várias janelas 3D, use a API CreateAdditionalSwapChain. O runtime é otimizado para um único dispositivo e há uma penalidade de velocidade considerável para usar vários dispositivos.\n\n \n"
   - question: "Quais tipos primitivos (faixas, ventiladores, listas e assim por diante) devo usar? \n"
     answer: >
-      Muitas malhas encontradas em vértices de recursos de dados reais que são compartilhados por vários polígonos. Para maximizar o desempenho, é desejável reduzir a duplicação em vértices transformados e enviados pelo barramento para o dispositivo de renderização. É claro que o uso de listas de triângulo simples não realiza nenhum compartilhamento de vértice, o que o torna o método menos ideal. A escolha é, então, entre o uso de faixas e ventiladores, o que implica uma relação de conectividade específica entre polígonos e o uso de listas indexadas. Em que os dados naturalmente se enquadram em faixas e ventiladores, essas são as opções mais apropriadas, pois minimizam os dados enviados ao driver. No entanto, a decomposição de malhas em faixas e ventiladores geralmente resulta em um grande número de partes separadas, o que implica um grande número de chamadas DrawPrimitive. Por esse motivo, o método mais eficiente geralmente é usar uma única chamada DrawIndexedPrimitive com uma lista de triângulos. Uma vantagem adicional de usar uma lista indexada é que um benefício pode ser obtido mesmo quando triângulos consecutivos compartilham apenas um único vértice. Em resumo, se os dados naturalmente se enquadram em faixas grandes ou ventiladores, use faixas ou ventiladores; caso contrário, use listas indexadas.
+      Muitas malhas encontradas em vértices de recursos de dados reais que são compartilhadas por vários polígonos. Para maximizar o desempenho, é desejável reduzir a duplicação em vértices transformados e enviados pelo barramento para o dispositivo de renderização. É claro que o uso de listas de triângulo simples não atinge nenhum compartilhamento de vértice, tornando-o o método menos ideal. A escolha está entre o uso de faixas e ventiladores, o que implica uma relação de conectividade específica entre polígonos e o uso de listas indexadas. Quando os dados naturalmente se enquadram em faixas e ventiladores, eles são a opção mais apropriada, pois minimizam os dados enviados ao driver. No entanto, a decomposição de malhas em faixas e ventiladores geralmente resulta em um grande número de partes separadas, implicando um grande número de chamadas DrawPrimitive. Por esse motivo, o método mais eficiente geralmente é usar uma única chamada DrawIndexedPrimitive com uma lista de triângulos. Uma vantagem adicional de usar uma lista indexada é que um benefício pode ser obtido mesmo quando triângulos consecutivos compartilham apenas um único vértice. Em resumo, se os dados naturalmente se enquadram em faixas grandes ou ventiladores, use faixas ou ventiladores; caso contrário, use listas indexadas.
   - question: "Como determinar a memória de textura total que um cartão tem, excluindo a memória AGP? \n"
     answer: >
       [**IDirect3DDevice9::GetAvailableTextureMem**](/windows/desktop/api/d3d9/nf-d3d9-idirect3ddevice9-getavailabletexturemem) retorna a memória total disponível, incluindo o AGP. Alocar recursos com base em uma suposição da memória de vídeo que você tem não é uma ótima ideia. Por exemplo, e se o cartão estiver em execução em uma UMA (Arquitetura unificada de memória) ou for capaz de compactar as texturas? Pode haver mais espaço disponível do que você poderia ter pensado. Você deve criar recursos e verificar se há erros "sem memória" e, em seguida, dimensionar novamente nas texturas. Por exemplo, você pode remover os principais níveis de mip de suas texturas.
@@ -419,7 +419,7 @@ sections:
 
       3.  Definir estado (texturas, renderstates e assim por diante).
 
-      4.  Verifique se há espaço no buffer, ou seja, por exemplo, I + M <= N? (Em que M é o número de novos vértices).
+      4.  Verifique se há espaço no buffer, ou seja, I + M <= N? (Em que M é o número de novos vértices).
 
       5.  Se sim, bloqueie a VB com D3DLOCK \_ NOOVERWRITE. Isso informa ao Direct3D e ao driver que você adicionará vértices e não modificará aqueles que você fez em lote anteriormente. Portanto, se uma operação de DMA estiver em andamento, ela não será interrompida. Se não, goto 11.
 
@@ -486,7 +486,7 @@ sections:
   - question: "Para que o ruído HLSL() é intrínseco? \n"
     answer: >
       A função intrínseca de ruído gera ruído de perlin, conforme definido por Ken Perlin. Atualmente, a função HLSL só pode ser usada para preencher texturas em sombreadores de textura, pois o h/w atual não dá suporte ao método na nativa. Sombreadores de textura são usados em conjução com as funções D3DXFill Texture(), que são funções auxiliares úteis para gerar texturas definidas proceduralmente durante o tempo \* de carregamento.
-  - question: "Como fazer detectar se deve usar o modelo de sombreador de pixel 2.0 ou 2.a? \n"
+  - question: "Como fazer detectar se deve ser usado o modelo de sombreador de pixel 2.0 ou 2.a? \n"
     answer: >
       Você pode usar as funções D3DXGetPixelShaderProfile() e D3DXGetPixelShaderProfile() que retornam uma cadeia de caracteres que determina qual perfil HLSL é mais adequado para o dispositivo que está sendo usado.
   - question: "Como fazer acessar os parâmetros em meus sombreadores de efeitos pré-compilados? \n"
@@ -496,21 +496,21 @@ sections:
     answer: "Sim, para definir dados privados, você chama SetPrivateData (pReal é o objeto de textura D3D, pSpoof é o objeto de textura empacotado).\n\n``` syntax\nhr = pReal->SetPrivateData(IID_Spoof, &pSpoof, \n            sizeof(IDirect3DResource9*), 0)));\n```\n\nPara procurar o ponteiro empacotado:\n\n``` syntax\n    IDirect3DResource9* pSpoof;\n    DWORD dwSize = sizeof(pSpoof);\n    hr = pReal->GetPrivateData(IID_Spoof, (void*) &pSpoof, &dwSize);\n```\n"
   - question: "Por que a renderização de um objeto ID3DXMesh diminui significativamente depois de definir subconjunto? \n"
     answer: >
-      Você provavelmente não otimizou a malha depois de definir os atributos de rosto. Se você especificar atributos e chamar ID3DXMesh::D rawSubset(), esse método deverá executar uma pesquisa da malha para todos os rostos que contêm os atributos solicitados. Além disso, as faces renderizadas provavelmente estão em um padrão de acesso aleatório, não utilizando o cache de vértice. Depois de definir os atributos de rosto para seus subconjunto, chame os métodos ID3DXMesh::Optimize ou ID3DXMesh::OptimizeInPlace e especifique um método de otimização de D3DXMESHOPT \_ ATTRSORT ou mais forte. Observe que, para um desempenho ideal, você deve otimizar com o sinalizador VERTEXCACHE D3DXMESHOPT, que também reordenará vértices para uma utilização ideal do cache de \_ vértices. A matriz de adjacency gerada para uma Malha D3DX tem três entradas por face, mas algumas faces podem não ter rostos adjacentes nas três bordas. Como isso é codificado? Entradas em que não há rostos adjacentes são codificadas como 0xffffffff.
+      Você provavelmente não otimizou a malha depois de definir os atributos de rosto. Se você especificar atributos e, em seguida, chamar ID3DXMesh::D rawSubset(), esse método deverá executar uma pesquisa da malha para todos os rostos que contêm os atributos solicitados. Além disso, as faces renderizadas provavelmente estão em um padrão de acesso aleatório, não utilizando o cache de vértice. Depois de definir os atributos de rosto para seus subconjunto, chame os métodos ID3DXMesh::Optimize ou ID3DXMesh::OptimizeInPlace e especifique um método de otimização de D3DXMESHOPT \_ ATTRSORT ou mais forte. Observe que, para um desempenho ideal, você deve otimizar com o sinalizador VERTEXCACHE D3DXMESHOPT, que também reordenará vértices para uma utilização ideal do cache de \_ vértices. A matriz de adjacency gerada para uma Malha D3DX tem três entradas por face, mas algumas faces podem não ter rostos adjacentes nas três bordas. Como isso é codificado? Entradas em que não há rostos adjacentes são codificadas como 0xffffffff.
   - question: "Eu já li muito sobre a PRT (Transferência de Radiance Pré-computada), onde posso saber mais? \n"
     answer: >
       PRT é um novo recurso do D3DX adicionado na Atualização do SDK de Verão de 2003. Ele permite a renderização de cenários de iluminação complexos, como -llumination global, sombreamento suave e dispersão de sub-superfície em tempo real. O SDK contém documentação e exemplos de como integrar a tecnologia ao seu jogo. Os exemplos de Exemplo de Demonstração de PRT e LocalDeformablePRT demonstram como usar o simulador para cenários de iluminação por vértice e por pixel, respectivamente. Mais informações sobre esse e outros tópicos também podem ser encontradas na página da Web de Peter Ltda.
-  - question: "Como posso renderizar em uma textura e usar o Suavização Anti? \n"
+  - question: "Como posso renderizar para uma textura e fazer uso da suavização de serrilhado? \n"
     answer: >
-      Crie um destino de renderização multisampled usando Direct3DDevice9::CreateRenderTarget. Depois de renderizar a cena para esse destino de renderização, StretchRect dela para uma textura de destino de renderização. Se você fizer qualquer alteração no texto fora da tela (como desfocar ou desfocar), copie-o de volta para o buffer de fundo antes de apresentar().
-- name: Perguntas do DirectSound
+      Crie um destino de renderização multiamostrado usando Direct3DDevice9:: CreateRenderTarget. Depois de renderizar a cena para esse destino de renderização, StretchRect a partir dela para uma textura de destino de renderização. Se você fizer alguma alteração para o textre fora da tela (como borrar ou cair dele), copie-o de volta para o buffer de fundo antes de apresentá-lo ().
+- name: Perguntas sobre o DirectSound
   questions:
-  - question: "Por que eu tenho um estouro de estático quando meu aplicativo é iniciado? Noto esse problema com outros aplicativos também. \n"
+  - question: "Por que obtenho uma intermitência de estática quando meu aplicativo é iniciado? Eu observo esse problema também com outros aplicativos. \n"
     answer: >
-      Você provavelmente instalou o runtime do DirectX de depuração. A versão de depuração do runtime preenche buffers com estático para ajudar os desenvolvedores a capturar bugs com buffers não reinicializados. Você não pode garantir o conteúdo de um buffer DirectSound após a criação; em particular, você não pode supor que um buffer com seja zerado.
-  - question: "Por que estou enfrentando um atraso entre alterar parâmetros de efeitos e ouvir os resultados? \n"
+      Você provavelmente instalou o tempo de execução de depuração DirectX. A versão de depuração do tempo de execução preenche os buffers com estáticos para ajudar os desenvolvedores a detectar bugs com buffers não inicializados. Você não pode garantir o conteúdo de um buffer do DirectSound após a criação; em particular, você não pode supor que um buffer com seja zerado.
+  - question: "Por que estou tendo um atraso entre alterar os parâmetros de efeitos e ouvir os resultados? \n"
     answer: >
-      As alterações nos parâmetros de efeito nem sempre ocorrem imediatamente no DirectX 8. Para eficiência, o DirectSound processa 100 milissegundos de dados de som em um buffer, começando no cursor de reprodução, antes que o buffer seja reproduzir. Esse pré-processamento ocorre após todas as chamadas a seguir:
+      As alterações nos parâmetros de efeito nem sempre ocorrem imediatamente no DirectX 8. Para eficiência, o DirectSound processa 100 milissegundos de dados de som em um buffer, iniciando no cursor de reprodução, antes de o buffer ser reproduzido. Esse pré-processamento ocorre após todas as seguintes chamadas:
 
 
       ``` syntax
@@ -526,72 +526,72 @@ sections:
       ```
 
 
-      A partir do DirectX 9, um novo algoritmo de processamento FX que processa efeitos just-in-time resolve esse problema e reduziu a latência. O algoritmo foi adicionado à chamada IDirectSoundBuffer8::P lay(), juntamente com um thread adicional que processa efeitos logo à frente do cursor de gravação. Portanto, você pode definir parâmetros a qualquer momento e eles funcionarão conforme o esperado. No entanto, observe que, em um buffer de reprodução, haverá um pequeno atraso (geralmente 100 ms) antes de você ouvir a alteração do parâmetro, porque o áudio entre os cursores de reprodução e gravação (e um pouco mais de preenchimento) já foi processado nesse momento.
+      A partir do DirectX 9, um novo algoritmo de processamento FX que processa os efeitos just-in-time resolve esse problema e reduziu a latência. O algoritmo foi adicionado à chamada IDirectSoundBuffer8::P deite (), juntamente com um thread adicional que processa os efeitos logo antes do cursor de gravação. Portanto, você pode definir parâmetros a qualquer momento e eles funcionarão conforme o esperado. No entanto, observe que em um buffer de reprodução haverá um pequeno atraso (geralmente 100 ms) antes de você ouvir a alteração do parâmetro, pois o áudio entre os cursores de reprodução e gravação (e um pouco mais de preenchimento) já foi processado nesse momento.
   - question: "Como fazer detectar se o DSound está instalado? \n"
     answer: >
-      Se você não precisar usar DirectSoundEnumerate() para listar os dispositivos DSound disponíveis, não vincule seu aplicativo a dsound.lib e, em vez disso, use-o por meio de COMs CoCreateInstance(CLSID DirectSound...) e inicialize o objeto DSound usando \_ Initialize(NULL). Se você precisar usar DirectSoundEnumerate(), poderá carregar dinamicamente dsound.dll usando LoadLibrary("dsound.dll"); e acessam seus métodos usando GetProcAddress("DirectSoundEnumerateA/W") e GetProcAddress("DirectSoundCreateA/W") e assim por diante.
-  - question: "Como fazer áudio multicanal com WAVEFORMATEXTENSIBLE? \n"
+      Se você não precisar usar DirectSoundEnumerate () para listar os dispositivos DSound disponíveis, não vincule seu aplicativo com dsound. lib e, em vez disso, use-o por meio de COMs CoCreateInstance (CLSID \_ DirectSound...) e, em seguida, inicialize o objeto dsound usando Initialize (NULL). Se você precisar usar DirectSoundEnumerate (), poderá carregar dinamicamente dsound.dll usando LoadLibrary ("dsound.dll"); e acesse seus métodos usando GetProcAddress ("DirectSoundEnumerateA/W") e GetProcAddress ("DirectSoundCreateA/W") e assim por diante.
+  - question: "Como fazer criar áudio de multicanal com WAVEFORMATEXTENSIBLE? \n"
     answer: >
-      Se você não encontrar uma resposta para sua pergunta nos arquivos de ajuda do DirectSound, há um bom artigo com mais informações disponíveis em Dados de Áudio de Vários Canais e Arquivos WAVE.
-  - question: "Como posso usar o DirectSound Voice Manager com conjuntos de propriedades como EAX? \n"
+      Se você não encontrar uma resposta à sua pergunta nos arquivos de ajuda do DirectSound, há um bom artigo com mais informações disponíveis em dados de áudio de vários canais e arquivos WAVE.
+  - question: "Como posso usar o Gerenciador de voz do DirectSound com conjuntos de propriedades como o EAX? \n"
     answer: >
-      No DirectSound 9.0 quando você duplica um buffer, agora é possível obter a interface IDirectSoundBuffer8 no buffer duplicado, o que lhe dará acesso ao método AcquireResources. Isso permitirá que você associe um buffer ao sinalizador LOCDEFER DSBCAPS \_ a um recurso de hardware. Em seguida, você pode definir os parâmetros EAX nesse buffer antes de precisar chamar Play().
-  - question: "Estou tendo problemas com comportamento não confiável ao usar notificações de posição do cursor. Como posso obter informações mais precisas? \n"
+      No DirectSound 9,0, quando você duplica um buffer, agora é possível obter a interface IDirectSoundBuffer8 no buffer duplicado, o que dará acesso ao método AcquireResources. Isso permitirá que você associe um buffer ao sinalizador DSBCAPS \_ LOCDEFER a um recurso de hardware. Em seguida, você pode definir seus parâmetros EAX nesse buffer antes de ter que chamar Play ().
+  - question: "Estou tendo problemas com o comportamento não confiável ao usar notificações de posição do cursor. Como posso obter informações mais precisas? \n"
     answer: >
-      Há alguns bugs sutis em várias versões do DirectSound, o núcleo Windows de áudio e drivers de áudio que fazem as notificações de posições do cursor não confiáveis. A menos que você esteja direcionando uma configuração HW/SW conhecida na qual você sabe que as notificações estão bem comportadas, evite notificações de posição do cursor. Para o controle de posição GetCurrentPosition() é uma técnica mais segura.
-  - question: "Estou sofrendo com a degradação do desempenho ao usar GetCurrentPosition(). O que posso fazer para melhorar o desempenho? \n"
+      há alguns bugs sutis em várias versões do DirectSound, o núcleo Windows pilha de áudio e os drivers de áudio que tornam as notificações de posições do cursor não confiáveis. A menos que você esteja visando uma configuração conhecida de HW/SW em que você sabe que as notificações estão bem comparadas, evite as notificações de posição do cursor. Para o controle de posição GetCurrentPosition () é uma técnica mais segura.
+  - question: "Estou sofrendo da degradação do desempenho ao usar GetCurrentPosition (). O que posso fazer para melhorar o desempenho? \n"
     answer: >
-      Cada chamada GetCurrentPosition() em cada buffer causa uma chamada do sistema e as chamadas do sistema devem ser minimizadas, pois são um componente grande do volume de CPU do DSound. No NT (Win2K e XP), os cursores em buffers SW (e buffers HW em alguns dispositivos) são movimentados em incrementos de 10 ms, portanto, chamar GetCurrentPosition() a cada 10 ms é ideal. Chamá-lo com mais frequência do que a cada 5 ms causará alguma degradação de desempenho.
-  - question: "Meu aplicativo DirectSound está ocupando muito tempo de CPU ou está apresentando um desempenho lento. Há algo que eu possa fazer para otimizar meu código? \n"
+      Cada chamada de GetCurrentPosition () em cada buffer causa uma chamada do sistema e as chamadas do sistema devem ser minimizadas, pois são um componente grande da superfície da CPU do DSound. No NT (Win2K e XP), os cursores em buffers de SW (e buffers de HW em alguns dispositivos) se movem em incrementos de 10 ms, de modo que chamar GetCurrentPosition () a cada 10 é ideal. Chamá-lo com mais frequência do que todos os 5 ms causará uma degradação do desempenho.
+  - question: "Meu aplicativo DirectSound está ocupando muito tempo de CPU ou está sendo executado lentamente. Há algo que eu posso fazer para otimizar meu código? \n"
     answer: >
       Há várias coisas que você pode fazer para melhorar o desempenho do seu código de áudio:
 
 
-      -   Não chame GetCurrentPosition com muita frequência. Cada chamada GetCurrentPosition() em cada buffer causa uma chamada do sistema e as chamadas do sistema devem ser minimizadas, pois são um componente grande do volume de CPU do DSound. No NT (Win2K e XP), os cursores em buffers SW (e buffers HW em alguns dispositivos) são movimentados em incrementos de 10 ms, portanto, chamar GetCurrentPosition() a cada 10 ms é ideal. Chamá-lo com mais frequência do que a cada 5 ms causará alguma degradação de desempenho.
+      -   Não chame GetCurrentPosition com muita frequência. Cada chamada de GetCurrentPosition () em cada buffer causa uma chamada do sistema e as chamadas do sistema devem ser minimizadas, pois são um componente grande da superfície da CPU do DSound. No NT (Win2K e XP), os cursores em buffers de SW (e buffers de HW em alguns dispositivos) se movem em incrementos de 10 ms, de modo que chamar GetCurrentPosition () a cada 10 é ideal. Chamá-lo com mais frequência do que cada 5 ms causará uma degradação de desempenho.
 
-      -   Utilize uma taxa de quadros separada e inferior para áudio. Atualmente, muitos Windows jogos podem exceder 100 Quadros por Segundo e não é necessário, na maioria dos casos, atualizar os parâmetros de áudio 3D na mesma taxa de quadros. O processamento do áudio a cada segundo ou terceiro quadro gráfico, ou a cada 30 ms ou mais, pode reduzir significativamente o número de chamadas de áudio em todo o aplicativo sem reduzir a qualidade do áudio.
+      -   Utilize uma taxa de quadros separada e menor para áudio. hoje em dia, muitos Windows jogos podem exceder 100 quadros por segundo e não é necessário na maioria dos casos para atualizar os parâmetros de áudio 3d na mesma taxa de quadros. O processamento de áudio a cada segundo ou terceiro quadro de gráficos, ou a cada 30ms, pode reduzir significativamente o número de chamadas de áudio em todo o aplicativo, sem reduzir a qualidade de áudio.
 
-      -   Use DS3D \_ ADIADO para objetos 3D. A maioria das placas de som responde imediatamente às alterações de parâmetro e, em um único quadro, muito pode mudar, especialmente se você alterar a posição ou a orientação do ouvinte. Isso faz com que a placa de som/CPU execute muitos cálculos desnecessários, portanto, outra otimização rápida e universal é adiar algumas alterações de parâmetro e fazer commit delas no final do quadro.
+      -   Use DS3D \_ adiado para objetos 3D. A maioria das placas de som responde imediatamente às alterações de parâmetros e em um único quadro pode ser alterada, especialmente se você alterar a posição ou a orientação do ouvinte. Isso faz com que o soundcard/CPU execute muitos cálculos desnecessários, portanto, outra otimização rápida e universal é adiar algumas alterações de parâmetro e confirmá-las no final do quadro.
 
-          ou pelo menos use SetAllParameters em vez de chamadas individuais set3DParamX em buffers.
+          ou, pelo menos, use SetAllParameters em vez de chamadas individuais Set3DParamX em buffers.
 
-          Da mesma forma, você deve usar pelo menos chamadas SetAllParamenters em buffers 3D, em vez das chamadas individuais set3DParamX. Tente minimizar as chamadas do sistema sempre que possível.
+          Da mesma forma, você deve usar pelo menos o uso de chamadas SetAllParamenters em buffers 3D em vez de chamadas Set3DParamX individuais. Basta tentar minimizar as chamadas do sistema sempre que possível.
 
-      -   Não faça chamadas redundantes; armazenar e classificar uma lista de chamadas de reprodução. Geralmente, em um quadro de atualização de áudio, há duas solicitações para reproduzir novos sons. Se as solicitações são processadas conforme elas chegam, o primeiro novo som pode ser iniciado e, em seguida, substituiu imediatamente o segundo som solicitado. Isso resulta em cálculos redundantes, uma chamada de reprodução desnecessária e uma chamada de parada desnecessária. É melhor armazenar uma lista de solicitações para que novos sons sejam tocadas, para que a lista possa ser classificação e apenas as vozes que devem começar a tocar sejam realmente tocadas.
+      -   Não faça chamadas redundantes; armazene e classifique uma lista de chamadas de reprodução. Geralmente, em um quadro de atualização de áudio, há duas solicitações para reproduzir novos sons. Se as solicitações forem processadas à medida que chegarem, o primeiro som novo poderá ser iniciado e, em seguida, substituído imediatamente o segundo som solicitado. Isso resulta em cálculos redundantes, uma chamada de reprodução desnecessária e uma chamada de parada desnecessária. É melhor armazenar uma lista de solicitações para que novos sons sejam reproduzidos, de modo que a lista possa ser classificada, e somente as vozes que devem começar a ser reproduzidas, na verdade já foram jogadas.
 
-          Além disso, você deve armazenar cópias locais dos parâmetros 3D e EAX para cada fonte de som. Se for feita uma solicitação para definir um parâmetro para um valor específico, você poderá verificar se o valor é realmente diferente do último conjunto de valores. Se não for, a chamada não precisará ser feita.
+          Além disso, você deve armazenar cópias locais dos parâmetros 3D e EAX para cada fonte de som. Se for feita uma solicitação para definir um parâmetro para um valor específico, você poderá verificar se o valor é, na verdade, diferente do último conjunto de valores. Se não estiver, a chamada não precisará ser feita.
 
-          Embora o driver da placa de som provavelmente detecte esse cenário e não execute o (mesmo) cálculo novamente, a chamada de áudio terá que alcançar o driver de áudio (por meio de uma transição de anel) e essa já é uma operação lenta.
-  - question: "Quando eu transmitir um buffer, ele tende a apresentar falhas e ter um desempenho ruim. Qual é a melhor maneira de transmitir um buffer? \n"
+          Embora o driver da placa de som provavelmente detecte esse cenário e não execute o (mesmo) cálculo novamente, a chamada de áudio precisará alcançar o driver de áudio (por meio de uma transição de anel) e essa já é uma operação lenta.
+  - question: "Quando faço o streaming de um buffer, ele tende a apresentar uma falha e é mal executado. Qual é a melhor maneira de transmitir um buffer? \n"
     answer: >
-      Ao transmitir áudio para um buffer, há dois algoritmos básicos: AWC (After-Write-Cursor) e BPC (Before-Play-Cursor). A AWC minimiza a latência às custas de falhas, enquanto o BPC é o oposto. Como geralmente não há alterações interativas no som transmitido, esse tipo de latência raramente é um problema para jogos e aplicativos semelhantes, portanto, o BPC é o algoritmo mais apropriado. Na AWC, cada vez que o thread de streaming executa "top up" os dados em seus buffers de loop até N ms além de seus cursores de gravação (normalmente N= 40 ou mais, para permitir Windows tremagem de agendamento). No BPC, você sempre escreve o máximo de dados possível nos buffers, preenchendo-os até seus cursores de reprodução (ou talvez 32 bytes antes de permitir que drivers que reportem incorretamente o progresso do cursor de reprodução).
+      Ao transmitir áudio para um buffer, há dois algoritmos básicos: After-Write-cursor (AWC) e before-Play-cursor (BPC). O AWC minimiza a latência no custo da falha, enquanto BPC é o oposto. Como geralmente não há alterações interativas no som transmitido, esse tipo de latência raramente é um problema para jogos e aplicativos semelhantes, portanto, BPC é o algoritmo mais apropriado. no AWC, cada vez que seu thread de streaming executa "de cima" os dados em seus buffers de loop até N ms além dos cursores de gravação (normalmente N = 40 ou mais, para permitir a tremulação de agendamento de Windows). Em BPC, você sempre escreve tantos dados para os buffers quanto possível, preenchendo-os de acordo com os cursores de reprodução (ou talvez 32 bytes antes de permitir que os drivers relatem incorretamente o andamento do cursor de reprodução).
 
 
-      Use o BPC para simular falhas e use buffers de 100 ms ou maiores, mesmo se os jogos não falham no hardware de teste, ele falha em algum computador.
-  - question: "Estou reproduzindo os mesmos sons várias vezes e muito rapidamente e, às vezes, eles não tocam corretamente, ou a chamada Play() leva muito tempo. O que devo fazer? \n"
+      Use BPC para mimimize a falha e use buffers de 100 ms ou mais, mesmo que seus jogos não tenham problemas no seu hardware de teste, haverá uma falha em algum computador lá.
+  - question: "Estou jogando os mesmos sons várias vezes e com muita frequência e, com algumas ocasiões, eles não são reproduzidos corretamente, ou a chamada Play () leva muito tempo. O que devo fazer? \n"
     answer: >
-      A latência de inicialização (que é diferente da latência de streaming mencionada acima) pode ser um problema no caso de algum hardware (a chamada Play() leva muito tempo, às vezes, em determinadas placas de som). Se você realmente quiser reduzir essa latência, para sons debilituos (disparos de artilhar, truques e assim por diante). Um truque útil é manter alguns buffers sempre em loop e tocar em silêncio. Quando você precisar reproduzir um som de ruído, escolha um buffer livre, veja onde está o cursor de gravação e coloque o som no buffer logo após o cursor de gravação. Algumas soundcards falham em QuerySupport para propriedades adiadas que eu sei que elas suportam. Há uma solução alternativa? Você pode apenas ConsultarSupport para as versões não adiadas das propriedades e usar as configurações adiadas de qualquer forma. Os drivers de placa de som mais recentes também podem corrigir esse problema.
-  - question: "Como fazer codificar arquivos WAV no WMA? \n"
+      A latência de inicialização (que é diferente da latência de streaming mencionada acima) pode ser um problema no caso de algum hardware (a chamada Play () demora muito tempo em algumas placas de som. Se você realmente quiser reduzir essa latência, para sons twitchs (tomadas de pressão, trilha e assim por diante). um truque útil é manter alguns buffers sempre executando um loop e tocando em silêncio. Quando você precisar reproduzir um som Twitch, escolha um buffer livre, veja onde está o cursor de gravação e coloque o som no buffer apenas fora do cursor de gravação. Alguns soundcards falham QuerySupport para propriedades adiadas que eu sei que eles dão suporte. Há uma solução alternativa? Você poderia apenas QuerySupport as versões não adiadas das propriedades e usar as configurações adiadas de qualquer forma. Os drivers soundcard mais recentes também podem corrigir esse problema.
+  - question: "Como fazer codificar arquivos WAV em WMA? \n"
     answer: >
-      Consulte a documentação sobre o Windows Media Encoder em: Windows Media Encoder Série 9.
+      consulte a documentação sobre o codificador de mídia do Windows em: Windows media encoder 9 Series.
   - question: "Como fazer decodificar arquivos MP3 com DirectSound? \n"
     answer: >
-      O DirectSound não dá suporte nativo à decodificação do MP3. Você pode decodificar os arquivos com antecedência (usando um codec do ACM de um filtro DirectShow) ou simplesmente usar o próprio DirectShow, que pode fazer a decodificar para você; em seguida, você pode copiar os dados de áudio PCM resultantes para seus buffers DirectSound.
+      O DirectSound não dá suporte nativo à decodificação de MP3. você pode decodificar os arquivos com antecedência (usando um codec do ACM de um filtro de DirectShow) ou simplesmente usar DirectShow si mesmo, o que pode fazer a decodificação para você; em seguida, você pode copiar os dados de áudio do PCM resultantes em seus buffers do DirectSound.
 - name: Extensões do DirectX para Alias Maya
   questions:
-  - question: "Por que meu NALTERS não está aparecendo? \n"
+  - question: "Por que minha NURBS não está aparecendo? \n"
     answer: >
-      Não há suporte para N LTDA. Você pode convertê-las em malhas de polígono.
+      Não há suporte para NURBS. Você pode convertê-los em malhas de polígono.
   - question: >
-      Por que meus SUBDs não estão aparecendo?
+      Por que minha SUBDs não está aparecendo?
     answer: >
-      Não há suporte para SUBDs. Você pode convertê-las em malhas de polígono.
-  - question: "Por que minha animação no arquivo X é diferente da animação na janela de visualização? \n"
+      Não há suporte para SUBDs. Você pode convertê-los em malhas de polígono.
+  - question: "Por que minha animação no arquivo X parece ser diferente da animação na janela de visualização? \n"
     answer: >
-      A janela de visualização não está animando no sentido mais estrito do assunto. Ele não está interpretando animação, mas, em vez disso, está sincronizando com o estado mais atual da cena de Maya. Quando a animação é exportada, as matrizes em cada transformação são decompostas em dimensionamento, rotação (quaterão) e componentes de tradução (geralmente chamados de SRTs). AS SRTs são mais desejáveis do que matrizes porque interpolam bem, fornecem uma forma mais compacta dos dados e podem ser compactadas de forma independente. Nem todas as matrizes podem se separar em SRTs. Se não puderem decompor, os SRTs resultantes serão desconhecidos, portanto, pequenos erros na animação poderão ser detectados. Os dois recursos no Maya que geralmente causam problemas durante a decomposição são rotações ou escalas fora do centro. Se você estiver encontrando esse problema, porque está usando rotações ou escalas fora do centro, considere adicionar outras transformares aumentando seu nível de hierarquia.
+      A janela de visualização não está animando na noção mais estrita da questão. Ele não está reproduzindo animação, mas sim sincronizando com o estado mais atual da cena do Maya. Quando a animação é exportada, as matrizes em cada transformação são decompostas em escala, rotação (Quaternion) e componentes de tradução (geralmente chamados de SRTs). SRTs são mais desejáveis do que as matrizes porque interpolarem bem, fornecem uma forma mais compacta dos dados e podem ser compactados de forma independente. Nem todas as matrizes podem dividir em SRTs. Se não puderem decompor, o SRTs resultante será desconhecido e, portanto, erros pequenos na animação poderão ser detectados. Os dois recursos do Maya que geralmente causam problemas durante a decomposição são distorceções e rotações fora do centro. Se você estiver encontrando esse problema, porque está usando escalas ou rotações fora do centro, considere adicionar transformações adicionais aumentando seu nível de hierarquia.
 
 
-      Em que a animação D3DX dá suporte a SRTs, ela tem esta aparência:
+      Quando a animação D3DX dá suporte a SRTs, ela tem esta aparência:
 
 
       ``` syntax
@@ -609,52 +609,52 @@ sections:
       [SpInv]x[S]x[Sh]x[Sp]x[St]x[RpInv]x[Ro]x[R]x[Rp]x[Rt]x[T]
 
       ```
-  - question: "Eu esmaecei minha malha com RigidSkin, mas a malha (ou parte) não está se movendo. Por quê? \n"
+  - question: "Eu revestimento minha malha com RigidSkin, mas a malha (ou parte) não está se movendo. Por quê? \n"
     answer: >
-      No momento, não há suporte para a Capa Rígida de Maya. Please use Smooth Skin.
-  - question: "Para onde foi toda a minha IK no arquivo X? \n"
+      Não há suporte para a aparência rígida de Maya no momento. Use uma aparência suave.
+  - question: "Onde todas as minhas IK ficaram no arquivo X? \n"
     answer: >
-      Os arquivos X não são suportados por IK. Em vez disso, as soluções de IK são integradas aos quadros armazenados no arquivo X.
-  - question: "Por que nenhuma das cores dos meus materiais aparece, exceto DirectXShaders? \n"
+      Os arquivos X não dão suporte a IK. Em vez disso, as soluções IK são inclusas nos quadros armazenados no arquivo X.
+  - question: "Por que nenhuma das cores dos materiais é exibida, exceto DirectXShaders? \n"
     answer: >
-      Atualmente, as Extensões directX para Maya só são suportadas por materiais DirectXShader para visualização e exportação. Em uma versão futura, outros materiais podem ter suporte.
-- name: Perguntas sobre XInput
+      Atualmente, as extensões do DirectX para Maya dão suporte apenas ao material do DirectXShader para visualização e exportação. Em uma versão futura, outros materiais podem ter suporte.
+- name: Perguntas XInputs
   questions:
   - question: "Posso usar o DirectInput para ler os gatilhos? \n"
     answer: >
-      Sim, mas eles atuam como o mesmo eixo. Portanto, você não pode ler os gatilhos independentemente com DirectInput. Usando XInput, os gatilhos retornam valores separados.
+      Sim, mas atuam como o mesmo eixo. Portanto, você não pode ler os gatilhos independentemente com o DirectInput. Usando XInput, os gatilhos retornam valores separados.
 
 
-      Para obter mais informações sobre por que DirectInput interpreta os gatilhos como um eixo, consulte Usando o [Controle Xbox 360 com DirectInput](/windows/desktop/xinput/xinput-and-directinput).
+      para obter mais informações sobre por que o DirectInput interpreta os gatilhos como um eixo, consulte [usando o Controle Xbox 360 com o DirectInput](/windows/desktop/xinput/xinput-and-directinput).
   - question: "A quantos controladores o XInput dá suporte? \n"
     answer: >
-      O XInput dá suporte a quatro controladores conectados por vez.
+      O XInput dá suporte a 4 controladores conectados por vez.
   - question: "O XInput dá suporte a controladores não comuns? \n"
     answer: >
-      Não, não faz isso.
+      Não, não.
   - question: "Os controladores comuns estão disponíveis por meio do DirectInput? \n"
     answer: >
       Sim, você pode acessar controladores comuns por meio do DirectInput.
-  - question: "Como fazer obter comentários de força sobre os controladores comuns? \n"
+  - question: "Como fazer obter feedback forçado sobre os controladores comuns? \n"
     answer: >
-      Use a [**função XInputSetState.**](/windows/desktop/api/xinput/nf-xinput-xinputsetstate)
+      Use a função [**XInputSetState**](/windows/desktop/api/xinput/nf-xinput-xinputsetstate) .
   - question: "Por que meu dispositivo de áudio padrão muda? \n"
     answer: >
-      Ao conectar o headset, o headset do controlador atua como um dispositivo de áudio USB padrão, portanto, quando ele está conectado, o Windows automaticamente muda para usar esse dispositivo de áudio USB como o padrão. Como o usuário provavelmente não deseja que todo o áudio seja passado pelo headset, ele precisará ajustá-lo manualmente de volta à configuração original.
+      ao conectar o headset, o headset do controlador atua como um dispositivo de áudio usb padrão, portanto, quando ele está conectado, Windows muda automaticamente para usar esse dispositivo de áudio usb como o padrão. Como o usuário provavelmente não quer que todo o áudio passe pelo Headset, ele precisará ajustá-lo manualmente de volta à configuração original.
   - question: "Como fazer controlar as luzes no controlador? \n"
     answer: >
       As luzes no controlador são predeterminadas pelo sistema operacional e não podem ser alteradas.
-  - question: "Como fazer acessar o botão Xbox 360 em meus aplicativos? \n"
+  - question: "Como fazer acessar o botão do Xbox 360 em meus aplicativos? \n"
     answer: >
-      Esse botão é reservado para uso futuro.
-  - question: "Onde posso obter drivers? \n"
+      Desculpe, esse botão está reservado para uso futuro.
+  - question: "Onde obtenho drivers? \n"
     answer: >
-      Os drivers estarão disponíveis por meio Windows Atualização.
+      os drivers estarão disponíveis por meio de Windows Update.
   - question: "Como a ID do controlador é determinada? \n"
     answer: >
-      Na inicialização do XInput, a ID é determinada não determinísticamente pelo mecanismo XInput e pelos controladores conectados. Se os controladores são conectados enquanto um aplicativo XInput está em execução, o sistema atribuirá ao novo controlador o número mais baixo disponível. Se um controlador estiver desconectado, seu número será disponibilizado novamente.
+      Na inicialização do XInput, a ID é determinada de forma não determinística pelo mecanismo de XInput e pelos controladores que estão conectados. Se os controladores estiverem conectados enquanto um aplicativo XInput estiver em execução, o sistema atribuirá ao novo controlador o menor número disponível. Se um controlador estiver desconectado, seu número será disponibilizado novamente.
   - question: "Como fazer obter os dispositivos de áudio para o controlador? \n"
     answer: >
-      Use a [**função XInputGetDSoundAudioDeviceGuids.**](/windows/desktop/api/xinput/nf-xinput-xinputgetdsoundaudiodeviceguids) Consulte o exemplo AudioController para obter detalhes.
-  - question: "O que devo fazer quando um controlador é desconectado? \n"
-    answer: Se o controlador estava em uso por um jogador, você deve pausar o jogo até que o controlador seja reconectado e o jogador pressione um botão para sinalizar que está pronto para desempacotar.
+      Use a função [**XInputGetDSoundAudioDeviceGuids**](/windows/desktop/api/xinput/nf-xinput-xinputgetdsoundaudiodeviceguids) . Consulte o exemplo de AudioController para obter detalhes.
+  - question: "O que devo fazer quando um controlador está desconectado? \n"
+    answer: Se o controlador estava em uso por um jogador, você deve pausar o jogo até que o controlador seja reconectado e o Player Pressione um botão para sinalizar que está pronto para não pausar.

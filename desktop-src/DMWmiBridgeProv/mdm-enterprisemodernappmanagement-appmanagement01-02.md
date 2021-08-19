@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_EnterpriseModernAppManagement_AppManagement01_02
-description: A \_ classe MDM EnterpriseModernAppManagement \_ AppManagement01 \_ 02 especifica se você deseja impedir que um aplicativo específico seja atualizado por meio de atualizações automáticas.
+title: MDM_EnterpriseModernAppManagement_AppManagement01_02 classe
+description: A classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 02 especifica se você deseja impedir que um aplicativo específico seja atualizado por meio de atualizações \_ automáticas.
 ms.assetid: b018f61a-2458-4c1a-b75c-6ca5eebb2977
 keywords:
-- Classe MDM_EnterpriseModernAppManagement_AppManagement01_02
-- Classe MDM_EnterpriseModernAppManagement_AppManagement01_02, descrita
+- MDM_EnterpriseModernAppManagement_AppManagement01_02 classe
+- MDM_EnterpriseModernAppManagement_AppManagement01_02, descrita
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119018174"
 ---
-# <a name="mdm_enterprisemodernappmanagement_appmanagement01_02-class"></a>\_Classe MDM EnterpriseModernAppManagement \_ AppManagement01 \_ 02
+# <a name="mdm_enterprisemodernappmanagement_appmanagement01_02-class"></a>Classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** especifica se você deseja impedir que um aplicativo específico seja atualizado por meio de atualizações automáticas.
+A **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** especifica se você deseja impedir que um aplicativo específico seja atualizado por meio de atualizações automáticas.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -46,13 +46,13 @@ class MDM_EnterpriseModernAppManagement_AppManagement01_02
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** tem estes tipos de membros:
+A **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** tem essas propriedades.
+A **classe MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** tem essas propriedades.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ A classe **MDM \_ EnterpriseModernAppManagement \_ AppManagement01 \_ 02** tem e
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -83,7 +83,7 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é a inst
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -95,7 +95,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/*enterpriseid*"
+Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caracteres é "./Vendor/MSFT/EnterpriseModernAppManagement/AppManagement/EnterpriseID"
 
 </dd> </dl>
 
@@ -105,10 +105,10 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

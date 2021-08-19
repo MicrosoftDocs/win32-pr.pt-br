@@ -1,6 +1,6 @@
 ---
-title: 'Função Texture2DMS:: GetDimensions'
-description: 'Retorna as dimensões do recurso. | Função Texture2DMS:: GetDimensions'
+title: Função Texture2DMS::GetDimensions
+description: Retorna as dimensões do recurso. | Função Texture2DMS::GetDimensions
 ms.assetid: badf4127-2498-4c2e-acc7-20507488fc6b
 keywords:
 - Função GetDimensions HLSL
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118985826"
 ---
-# <a name="texture2dmsgetdimensions-function"></a>Função Texture2DMS:: GetDimensions
+# <a name="texture2dmsgetdimensions-function"></a>Função Texture2DMS::GetDimensions
 
 Retorna as dimensões do recurso.
 
@@ -38,28 +38,28 @@ void GetDimensions(
 
 <dl> <dt>
 
-*Largura* \[ fora\]
+*Largura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A largura do recurso, em texels.
 
 </dd> <dt>
 
-*Altura* \[ fora\]
+*Altura* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 A altura do recurso, em texels.
 
 </dd> <dt>
 
-*NumberOfSamples* \[ fora\]
+*NumberOfSamples* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 O número de locais de exemplo.
 
@@ -86,7 +86,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

@@ -3,7 +3,7 @@ title: LVM_SETCOLUMN mensagem (Commctrl.h)
 description: Define os atributos de uma coluna de exibição de lista. Você pode enviar essa mensagem explicitamente ou usando a macro ListView \_ SetColumn.
 ms.assetid: 8ca1c269-fd86-4561-940d-b75f8ca2b731
 keywords:
-- LVM_SETCOLUMN controles de Windows mensagem
+- LVM_SETCOLUMN controles Windows mensagem
 topic_type:
 - apiref
 api_name:

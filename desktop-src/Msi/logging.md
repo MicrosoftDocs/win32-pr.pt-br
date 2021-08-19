@@ -15,7 +15,7 @@ ms.locfileid: "118945631"
 
 Essa política de sistema por [computador](system-policy.md) será usada somente se o registro em log não tiver sido habilitado pela opção de linha de comando "/L" ou [**por MsiEnableLog**](/windows/desktop/api/Msi/nf-msi-msienableloga). Se a política for definida nesse caso, o instalador criará um arquivo de log em %temp% com o nome aleatório: MSI \* . Log. Especifique o modo de registro em log definindo o valor da política como uma cadeia de caracteres. Use os mesmos caracteres para especificar a política de modo de registro em log, conforme usado pela opção de linha de comando ["/L".](command-line-options.md) Observe que você não pode usar "+" e \* "" para a política.
 
-O modo de registro em log pode ser definido usando a política, uma opção de linha de comando ou programaticamente. Para obter mais informações sobre todos os métodos disponíveis para definir o modo de registro em log, consulte Registro em log [normal](normal-logging.md) na seção registro em log do [Windows Instalador.](windows-installer-logging.md)
+O modo de registro em log pode ser definido usando a política, uma opção de linha de comando ou programaticamente. Para obter mais informações sobre todos os métodos disponíveis para definir o modo de registro em log, consulte Registro em log [normal](normal-logging.md) na seção Windows [registro em log do instalador.](windows-installer-logging.md)
 
 Você pode impedir que informações confidenciais, por exemplo, senhas, possam ser inseridas no arquivo de log e se tornou visíveis. Para obter mais informações, [consulte Impedindo que informações confidenciais são escritas no arquivo de log](preventing-confidential-information-from-being-written-into-the-log-file.md)
 

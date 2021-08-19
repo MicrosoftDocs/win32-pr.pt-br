@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdcd8db7d60c65bcb7ceedcac4498ac650f90d9a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 028207ee152acac289da6608c682f5fc14a4fde69603a2aae05b841d0cfb46ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105808273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027944"
 ---
 # <a name="currentbitrate"></a>CurrentBitrate
 
@@ -29,17 +29,17 @@ g \_ wszWMCurrentBitrate
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**WMT \_ tipo \_ DWORD**
+**WMT \_ TYPE \_ DWORD**
 
 ## <a name="remarks"></a>Comentários
 
-Este é um atributo codificado.
+Esse é um atributo codificado.
 
-O valor recuperado para **CurrentBitrate** é diferente, dependendo do objeto usado. No objeto leitor ou leitor síncrono, o valor é a taxa de bits real no momento da chamada. No objeto editor de metadados, o valor é a taxa média de bits do arquivo.
+O valor recuperado para **CurrentBitrate** é diferente dependendo do objeto usado. No objeto leitor ou de leitor síncrono, o valor é a taxa de bits real no momento da chamada. No objeto do editor de metadados, o valor é a taxa média de bits do arquivo.
 
-A taxa de bits real de um arquivo é igual às taxas de bits de todos os fluxos ativos mais alguma sobrecarga. Esse é o valor que é, por exemplo, exibido ao reproduzir um arquivo com o Windows Media Player.
+A taxa de bits real de um arquivo é igual às taxas de bits de todos os fluxos ativos mais alguma sobrecarga. Esse é o valor que é, por exemplo, exibido ao tocar um arquivo com o Windows Media Player.
 
-Este atributo não pode ser duplicado no nível do arquivo. Se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK do Windows Media Format.
+Esse atributo não pode ser duplicado no nível do arquivo. Se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK Windows Formato de Mídia.
 
 ## <a name="see-also"></a>Confira também
 
@@ -48,9 +48,9 @@ Este atributo não pode ser duplicado no nível do arquivo. Se esse atributo for
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

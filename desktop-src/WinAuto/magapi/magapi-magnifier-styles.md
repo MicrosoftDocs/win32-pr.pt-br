@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: article
 ms.date: 02/07/2020
-ms.openlocfilehash: 212e079a59db9a85b6d232d1c11ac9f46eceb314
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ef65f736b50210ed52c542375aa340d5bd85ae38265a71858d82e069d830aa62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052574"
 ---
 # <a name="magnifier-styles"></a>Estilos da lupa
 
@@ -35,9 +35,9 @@ Este tópico descreve os estilos usados com o controle lupa. Para criar um contr
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Ampliação. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Ampliação. h</dt> </dl> |
 
 ## <a name="see-also"></a>Confira também
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MM_MIM_ERROR (mmsystem. h)
-description: a \_ mensagem de erro MM MIM \_ é enviada para uma janela quando uma mensagem MIDI inválida é recebida.
+title: MM_MIM_ERROR mensagem (Mmsystem.h)
+description: A mensagem MM \_ MIM ERROR é enviada para uma janela quando uma mensagem \_ MIDI inválida é recebida.
 ms.assetid: 03760bfc-a4ef-48cd-97a9-1b93b56fc641
 keywords:
-- mensagem de MM_MIM_ERROR Windows multimídia
+- MM_MIM_ERROR mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117802414"
 ---
-# <a name="mm_mim_error-message"></a>MM \_ MIM \_ mensagem de erro
+# <a name="mm_mim_error-message"></a>MENSAGEM \_ DE ERRO MIM \_ MM
 
-a mensagem de **\_ \_ erro MM MIM** é enviada para uma janela quando uma mensagem MIDI inválida é recebida.
+A **mensagem MM MIM \_ \_ ERRO** é enviada para uma janela quando uma mensagem MIDI inválida é recebida.
 
 
 ```C++
@@ -41,14 +41,14 @@ lParam = (LPARAM) (DWORD) lMidiMessage
 <span id="hInput"></span><span id="hinput"></span><span id="HINPUT"></span>*hInput*
 </dt> <dd>
 
-Identificador para o dispositivo de entrada MIDI que recebeu a mensagem inválida.
+Lidar com o dispositivo de entrada MIDI que recebeu a mensagem inválida.
 
 </dd> <dt>
 
 <span id="lMidiMessage"></span><span id="lmidimessage"></span><span id="LMIDIMESSAGE"></span>*lMidiMessage*
 </dt> <dd>
 
-Mensagem MIDI inválida. A mensagem é empacotada em um valor **DWORD** com o primeiro byte da mensagem no byte de ordem inferior.
+Mensagem MIDI inválida. A mensagem é empacotada em **um valor DWORD** com o primeiro byte da mensagem no byte de ordem baixa.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Essa mensagem não retorna um valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ Essa mensagem não retorna um valor.
 
 <dl> <dt>
 
-[MIDI (interface digital de instrumento musical)](musical-instrument-digital-interface--midi.md)
+[MIDI (Instrument Digital Interface)](musical-instrument-digital-interface--midi.md)
 </dt> <dt>
 
 [Mensagens MIDI](midi-messages.md)

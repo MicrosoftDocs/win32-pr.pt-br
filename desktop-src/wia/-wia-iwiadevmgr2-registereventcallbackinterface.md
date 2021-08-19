@@ -1,7 +1,7 @@
 ---
-description: registra um aplicativo em execução para notificação de eventos de aquisição de Windows Image (WIA) 2,0.
+description: Registra um aplicativo em execução para Windows de evento WIA (Aquisição de Imagem) 2.0.
 ms.assetid: 978dcd41-d63b-421d-b7e1-8e9368b36180
-title: 'Método IWiaDevMgr2:: RegisterEventCallbackInterface (WIA. h)'
+title: Método IWiaDevMgr2::RegisterEventCallbackInterface (Wia.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118965635"
 ---
-# <a name="iwiadevmgr2registereventcallbackinterface-method"></a>Método IWiaDevMgr2:: RegisterEventCallbackInterface
+# <a name="iwiadevmgr2registereventcallbackinterface-method"></a>Método IWiaDevMgr2::RegisterEventCallbackInterface
 
-registra um aplicativo em execução para notificação de eventos de aquisição de Windows Image (WIA) 2,0.
+Registra um aplicativo em execução para Windows de evento WIA (Aquisição de Imagem) 2.0.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,48 +43,48 @@ HRESULT RegisterEventCallbackInterface(
 
 <dl> <dt>
 
-*lFlags* \[ no\]
+*lFlags* \[ Em\]
 </dt> <dd>
 
-Tipo: **longo**
+Tipo: **LONG**
 
-Atualmente não utilizado. Deve ser definido como zero.
+Atualmente não éusado. Deve ser definido como zero.
 
 </dd> <dt>
 
-*bstrDeviceID* \[ no\]
+*bstrDeviceID* \[ Em\]
 </dt> <dd>
 
 Tipo: **BSTR**
 
-Especifica o identificador exclusivo de um dispositivo WIA 2,0. Defina esse parâmetro como **NULL** para registrar o evento em todos os dispositivos WIA 2,0.
+Especifica o identificador exclusivo de um dispositivo WIA 2.0. De definir esse parâmetro como **NULL** para registrar o evento em todos os dispositivos WIA 2.0.
 
 </dd> <dt>
 
-*pEventGUID* \[ no\]
+*pEventGUID* \[ Em\]
 </dt> <dd>
 
-Tipo: **GUID \* const**
+Tipo: **const \* GUID**
 
-Especifica um ponteiro para o identificador de evento para o qual o aplicativo está se registrando. Consulte [identificadores de evento WIA](-wia-wia-event-identifiers.md) para identificadores de evento padrão.
+Especifica um ponteiro para o identificador de evento para o que o aplicativo está registrando. Consulte [Identificadores de evento WIA para](-wia-wia-event-identifiers.md) identificadores de evento padrão.
 
 </dd> <dt>
 
-*pIWiaEventCallback* \[ no\]
+*pIWiaEventCallback* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **IWiaEventCallback**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaeventcallback)\***
 
-Especifica um ponteiro para a interface [**IWiaEventCallback**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaeventcallback) que o WIA 2,0 usa para enviar a notificação de eventos.
+Especifica um ponteiro para a interface [**IWiaEventCallback**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaeventcallback) que o WIA 2.0 usa para enviar notificação de evento.
 
 </dd> <dt>
 
-*pEventObject* \[ fora\]
+*pEventObject* \[ out\]
 </dt> <dd>
 
 Tipo: **[IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown)\*\***
 
-Recebe o endereço de um ponteiro para a interface [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) .
+Recebe o endereço de um ponteiro para a interface [IUnknown.](/windows/win32/api/unknwn/nn-unknwn-iunknown)
 
 </dd> </dl>
 
@@ -98,7 +98,7 @@ Retorna os códigos de erro COM padrão ou o seguinte.
 
 | Código de retorno                                                                               | Descrição                                                            |
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | A interface [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) não pode ser retornada. <br/> |
+| <dl> <dt>**E \_ NOTIMPL**</dt> </dl> | A [interface IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) não pode ser retornada. <br/> |
 
 
 
@@ -107,16 +107,16 @@ Retorna os códigos de erro COM padrão ou o seguinte.
 ## <a name="remarks"></a>Comentários
 
 > [!WARNING]
-> O uso dos métodos [**IWiaDevMgr:: RegisterEventCallbackInterface**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-registereventcallbackinterface), **IWiaDevMgr2:: RegisterEventCallbackInterface** e [**DeviceManager. RegisterEvent**](/previous-versions/windows/desktop/wiaaut/-wiaaut-idevicemanager-registerevent) do mesmo processo após a reinicialização do serviço de imagem ainda pode causar uma violação de acesso, se as funções tiverem sido usadas antes de o serviço ser interrompido.
+> Usar os métodos [**IWiaDevMgr::RegisterEventCallbackInterface**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-registereventcallbackinterface), **IWiaDevMgr2::RegisterEventCallbackInterface** e [**DeviceManager.RegisterEvent**](/previous-versions/windows/desktop/wiaaut/-wiaaut-idevicemanager-registerevent) do mesmo processo depois que o Serviço de Imagem Ainda for reiniciado poderá causar uma violação de acesso, se as funções foram usadas antes que o serviço fosse interrompido.
 
  
 
-Quando os aplicativos WIA 2,0 começam a ser executados, eles usam esse método para se registrar para receber eventos de dispositivo de hardware. Isso impede que o aplicativo seja reiniciado quando outro evento para o qual ele está registrado ocorre. Quando um aplicativo chama **IWiaDevMgr2:: RegisterEventCallbackInterface** para se registrar para receber eventos WIA 2,0 de um dispositivo, os eventos registrados são roteados para o programa pela WIA 2,0.
+Quando os aplicativos WIA 2.0 começam a ser executados, eles usam esse método para se registrar para receber eventos de dispositivo de hardware. Isso impede que o aplicativo seja reiniciado quando ocorre outro evento para o qual ele está registrado. Depois que um aplicativo chama **IWiaDevMgr2::RegisterEventCallbackInterface** para se registrar para receber eventos WIA 2.0 de um dispositivo, os eventos registrados são roteados para o programa pelo WIA 2.0.
 
-Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) nos ponteiros de interface recebidos por meio do parâmetro *pEventObject* .
+Os aplicativos devem chamar [o método IUnknown::Release](/windows/win32/api/unknwn/nf-unknwn-iunknown-release) nos ponteiros de interface que recebem por meio do *parâmetro pEventObject.*
 
 > [!Note]  
-> Em um aplicativo multithread, o retorno de chamada de notificação de evento pode vir em um thread diferente daquele que registrou o retorno de chamada.
+> Em um aplicativo multithread, o retorno de chamada de notificação de evento pode entrar em um thread diferente do que registrou o retorno de chamada.
 
  
 
@@ -126,10 +126,10 @@ Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/un
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Wia.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Wia.idl</dt> </dl> |
 
 
 

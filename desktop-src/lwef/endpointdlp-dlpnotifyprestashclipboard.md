@@ -1,5 +1,5 @@
 ---
-description: Fornece ao sistema informações sobre um documento antes que uma operação de área de transferência de stash seja iniciada.
+description: Fornece ao sistema informações sobre um documento antes de uma operação de área de transferência de stash ser iniciada.
 title: Função DlpNotifyPreStashClipboard (endpointdlp.h)
 ms.topic: reference
 ms.date: 03/18/2021
@@ -39,7 +39,7 @@ void WINAPI DlpNotifyPreStashClipboard();
 
 ## <a name="return-value"></a>Valor retornado
 
-Retornar nulo.
+Retornar void.
 
 ## <a name="remarks"></a>Comentários
 
@@ -50,5 +50,5 @@ Retornar nulo.
 
 | Requisito          |    Valor                   |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10.0; Build 17763)           |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 (10,0; Build 17763)           |
 | DLL<br/>                      | EndpointDlp.dll |

@@ -113,35 +113,35 @@ As classes de subcategoria de placa-mãe, controladores e portas que representam
 | [**\_MemoryArrayLocation Win32**](win32-memoryarraylocation.md)             | Relaciona uma matriz de memória lógica e a matriz de memória física na qual ela existe.<br/>                                                                                                                             |
 | [**\_MemoryDevice Win32**](win32-memorydevice.md)                           | Representa as propriedades do dispositivo de memória de um sistema de computador junto com seus endereços mapeados associados.<br/>                                                                                                     |
 | [**\_MemoryDeviceArray Win32**](win32-memorydevicearray.md)                 | Relaciona um dispositivo de memória e a matriz de memória na qual ele reside.<br/>                                                                                                                                              |
-| [**\_MemoryDeviceLocation Win32**](win32-memorydevicelocation.md)           | Classe de associação que relaciona um dispositivo de memória e a memória física na qual ele existe.<br/>                                                                                                                     |
-| [**\_MotherboardDevice Win32**](win32-motherboarddevice.md)                 | Representa um dispositivo que contém os componentes centrais do sistema de computador que executa o Windows.<br/>                                                                                                               |
-| [**\_OnBoardDevice Win32**](win32-onboarddevice.md)                         | Representa dispositivos de adaptador comum incorporados à placa-mãe (placa do sistema).<br/>                                                                                                                                   |
-| [**\_ParallelPort Win32**](win32-parallelport.md)                           | Representa as propriedades de uma porta paralela em um sistema de computador que executa o Windows.<br/>                                                                                                                             |
-| [**\_PCMCIAController Win32**](win32-pcmciacontroller.md)                   | Gerencia os recursos de um dispositivo de controlador PCMCIA (adaptador de interface de cartão de memória) do computador pessoal.<br/>                                                                                                      |
-| [**\_PhysicalMemory Win32**](win32-physicalmemory.md)                       | Representa um dispositivo de memória física localizado em um computador como disponível para o sistema operacional.<br/>                                                                                                                |
-| [**\_PhysicalMemoryArray Win32**](win32-physicalmemoryarray.md)             | Representa detalhes sobre a memória física do sistema do computador.<br/>                                                                                                                                                |
-| [**\_PhysicalMemoryLocation Win32**](win32-physicalmemorylocation.md)       | Relaciona uma matriz de memória física e sua memória física.<br/>                                                                                                                                                   |
-| [**\_PNPAllocatedResource Win32**](win32-pnpallocatedresource.md)           | Representa uma associação entre dispositivos lógicos e recursos do sistema.<br/>                                                                                                                                        |
-| [**\_PNPDevice Win32**](win32-pnpdevice.md)                                 | Relaciona um dispositivo (conhecido para Configuration Manager como um PNPEntity) e a função que ele executa.<br/>                                                                                                                |
-| [**\_PNPEntity Win32**](win32-pnpentity.md)                                 | Representa as propriedades de um dispositivo Plug and Play.<br/>                                                                                                                                                           |
-| [**\_PortConnector Win32**](win32-portconnector.md)                         | Representa portas de conexão física, como DB-25 Pin masculino, Centronics e PS/2.<br/>                                                                                                                            |
-| [**\_PortResource Win32**](win32-portresource.md)                           | Representa uma porta de e/s em um sistema de computador que executa o Windows.<br/>                                                                                                                                                   |
-| [**\_Processador Win32**](win32-processor.md)                                 | Representa um dispositivo capaz de interpretar uma sequência de instruções de máquina em um sistema de computador que executa o Windows.<br/>                                                                                           |
-| [**\_SCSIController Win32**](win32-scsicontroller.md)                       | Representa um controlador de interface de sistema de computador pequeno (SCSI) em um sistema de computador que executa o Windows.<br/>                                                                                                           |
-| [**\_SCSIControllerDevice Win32**](win32-scsicontrollerdevice.md)           | Relaciona um controlador SCSI e o dispositivo lógico (unidade de disco) conectado a ele.<br/>                                                                                                                                 |
-| [**SerialPort do Win32 \_**](win32-serialport.md)                               | Representa uma porta serial em um sistema de computador que executa o Windows.<br/>                                                                                                                                                 |
-| [**\_SerialPortConfiguration Win32**](win32-serialportconfiguration.md)     | representa as configurações de transmissão de dados em uma porta serial Windows.<br/>                                                                                                                                        |
-| [**\_SerialPortSetting Win32**](win32-serialportsetting.md)                 | Relaciona uma porta serial e suas definições de configuração.<br/>                                                                                                                                                          |
-| [**\_SMBIOSMemory Win32**](win32-smbiosmemory.md)                           | Representa os recursos e o gerenciamento de dispositivos lógicos relacionados à memória.<br/>                                                                                                                                  |
-| [**\_SoundDevice Win32**](win32-sounddevice.md)                             | Representa as propriedades de um dispositivo de som em um sistema de computador que executa o Windows.<br/>                                                                                                                              |
-| [**\_SystemBIOS Win32**](win32-systembios.md)                               | Relaciona um sistema de computador (incluindo dados como propriedades de inicialização, fusos horários, configurações de inicialização ou senhas administrativas) e um BIOS do sistema (serviços, linguagens e propriedades de gerenciamento do sistema).<br/> |
-| [**\_SystemDriverPNPEntity Win32**](win32-systemdriverpnpentity.md)         | relaciona um dispositivo Plug and Play no sistema de computador Windows e o driver que dá suporte ao dispositivo Plug and Play.<br/>                                                                                           |
-| [**\_SystemEnclosure Win32**](win32-systemenclosure.md)                     | Representa as propriedades associadas a um compartimento de sistema físico.<br/>                                                                                                                                         |
-| [**\_SystemMemoryResource Win32**](win32-systemmemoryresource.md)           | representa um recurso de memória do sistema em um sistema Windows.<br/>                                                                                                                                                       |
-| [**\_SystemSlot Win32**](win32-systemslot.md)                               | Representa pontos de conexão física, incluindo portas, slots de placa-mãe e periféricos, e pontos de conexões proprietárias.<br/>                                                                                  |
-| [**\_USBController Win32**](win32-usbcontroller.md)                         | Gerencia os recursos de um controlador USB (barramento serial universal).<br/>                                                                                                                                           |
-| [**\_USBControllerDevice Win32**](win32-usbcontrollerdevice.md)             | Relaciona um controlador USB e as instâncias de [**\_ LogicalDevice CIM**](cim-logicaldevice.md) conectadas a ele.<br/>                                                                                                    |
-| [**\_USBHub Win32**](/previous-versions/windows/desktop/cimwin32a/win32-usbhub)                                 | Representa as características de gerenciamento de um hub USB.<br/>                                                                                                                                                        |
+| [**Win32 \_ MemoryDeviceLocation**](win32-memorydevicelocation.md)           | Classe de associação que relaciona um dispositivo de memória e a memória física em que ele existe.<br/>                                                                                                                     |
+| [**Win32 \_ MotherboardDevice**](win32-motherboarddevice.md)                 | Representa um dispositivo que contém os componentes centrais do sistema de computador que executa Windows.<br/>                                                                                                               |
+| [**Win32 \_ OnBoardDevice**](win32-onboarddevice.md)                         | Representa dispositivos de adaptador comuns integrados à placa-mãe (placa-mãe do sistema).<br/>                                                                                                                                   |
+| [**Win32 \_ ParallelPort**](win32-parallelport.md)                           | Representa as propriedades de uma porta paralela em um sistema de computador executando Windows.<br/>                                                                                                                             |
+| [**Win32 \_ PCMCIAController**](win32-pcmciacontroller.md)                   | Gerencia os recursos de um dispositivo de controlador PCMCIA (Adaptador de Placa de Memória do Computador Pessoal).<br/>                                                                                                      |
+| [**Win32 \_ PhysicalMemory**](win32-physicalmemory.md)                       | Representa um dispositivo de memória física localizado em um computador, conforme disponível para o sistema operacional.<br/>                                                                                                                |
+| [**Win32 \_ PhysicalMemoryArray**](win32-physicalmemoryarray.md)             | Representa detalhes sobre a memória física do sistema de computador.<br/>                                                                                                                                                |
+| [**Win32 \_ PhysicalMemoryLocation**](win32-physicalmemorylocation.md)       | Relaciona uma matriz de memória física e sua memória física.<br/>                                                                                                                                                   |
+| [**Win32 \_ PNPAllocatedResource**](win32-pnpallocatedresource.md)           | Representa uma associação entre dispositivos lógicos e recursos do sistema.<br/>                                                                                                                                        |
+| [**Win32 \_ PNPDevice**](win32-pnpdevice.md)                                 | Relaciona um dispositivo (conhecido como Gerenciador de Configurações como um PNPEntity) e a função que ele executa.<br/>                                                                                                                |
+| [**Win32 \_ PNPEntity**](win32-pnpentity.md)                                 | Representa as propriedades de um Plug and Play dispositivo.<br/>                                                                                                                                                           |
+| [**Win32 \_ PortConnector**](win32-portconnector.md)                         | Representa portas de conexão físicas, como pin DB-25, Centronics e PS/2.<br/>                                                                                                                            |
+| [**Win32 \_ PortResource**](win32-portresource.md)                           | Representa uma porta de E/S em um sistema de computador executando Windows.<br/>                                                                                                                                                   |
+| [**Processador \_ Win32**](win32-processor.md)                                 | Representa um dispositivo capaz de interpretar uma sequência de instruções do computador em um sistema de computador executando Windows.<br/>                                                                                           |
+| [**Win32 \_ SCSIController**](win32-scsicontroller.md)                       | Representa um pequeno controlador SCSI (interface do sistema de computador) em um sistema de computador executando Windows.<br/>                                                                                                           |
+| [**Win32 \_ SCSIControllerDevice**](win32-scsicontrollerdevice.md)           | Relaciona um controlador SCSI e o dispositivo lógico (unidade de disco) conectado a ele.<br/>                                                                                                                                 |
+| [**Win32 \_ SerialPort**](win32-serialport.md)                               | Representa uma porta serial em um sistema de computador executando Windows.<br/>                                                                                                                                                 |
+| [**Win32 \_ SerialPortConfiguration**](win32-serialportconfiguration.md)     | Representa as configurações de transmissão de dados em uma Windows serial.<br/>                                                                                                                                        |
+| [**Win32 \_ SerialPortSetting**](win32-serialportsetting.md)                 | Relaciona uma porta serial e suas definições de configuração.<br/>                                                                                                                                                          |
+| [**Win32 \_ SMBIOSMemory**](win32-smbiosmemory.md)                           | Representa os recursos e o gerenciamento de dispositivos lógicos relacionados à memória.<br/>                                                                                                                                  |
+| [**Win32 \_ SoundDevice**](win32-sounddevice.md)                             | Representa as propriedades de um dispositivo de som em um sistema de computador executando Windows.<br/>                                                                                                                              |
+| [**SystemBIOS do Win32 \_**](win32-systembios.md)                               | Relaciona um sistema de computador (incluindo dados como propriedades de inicialização, fusos horário, configurações de inicialização ou senhas administrativas) e um BIOS do sistema (serviços, idiomas e propriedades de gerenciamento do sistema).<br/> |
+| [**Win32 \_ SystemDriverPNPEntity**](win32-systemdriverpnpentity.md)         | Relaciona um Plug and Play no sistema Windows computador e o driver que dá suporte ao Plug and Play dispositivo.<br/>                                                                                           |
+| [**Win32 \_ SystemEnclosure**](win32-systemenclosure.md)                     | Representa as propriedades associadas a um compartimento do sistema físico.<br/>                                                                                                                                         |
+| [**Win32 \_ SystemMemoryResource**](win32-systemmemoryresource.md)           | Representa um recurso de memória do sistema em um Windows sistema.<br/>                                                                                                                                                       |
+| [**Win32 \_ SystemSlot**](win32-systemslot.md)                               | Representa pontos de conexão físicos, incluindo portas, slots de placa-mãe e periféricos e pontos de conexões proprietários.<br/>                                                                                  |
+| [**Win32 \_ USBController**](win32-usbcontroller.md)                         | Gerencia os recursos de um controlador usb (barramento serial universal).<br/>                                                                                                                                           |
+| [**Win32 \_ USBControllerDevice**](win32-usbcontrollerdevice.md)             | Relaciona um controlador USB e as instâncias [**\_ LogicalDevice cim**](cim-logicaldevice.md) conectadas a ele.<br/>                                                                                                    |
+| [**Win32 \_ USBHub**](/previous-versions/windows/desktop/cimwin32a/win32-usbhub)                                 | Representa as características de gerenciamento de um hub USB.<br/>                                                                                                                                                        |
 
 
 
@@ -149,15 +149,15 @@ As classes de subcategoria de placa-mãe, controladores e portas que representam
 
 ## <a name="networking-device-classes"></a>Classes de dispositivo de rede
 
-A subcategoria dispositivos de rede agrupa classes que representam o controlador de interface de rede, suas configurações e suas configurações.
+A subcategoria Dispositivos de Rede grupos classes que representam o controlador de interface de rede, suas configurações e suas configurações.
 
 
 
 | Classe                                                                           | Descrição                                                                                                                                                                                                            |
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_Adaptador Win32**](win32-networkadapter.md)                           | Representa um adaptador de rede em um sistema de computador que executa o Windows.<br/>                                                                                                                                          |
-| [**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md) | Representa os atributos e comportamentos de um adaptador de rede. A classe não tem garantia de suporte após o Ratification da especificação de rede CIM da DMTF (Distributed Management Task Force).<br/> |
-| [**\_NetworkAdapterSetting Win32**](win32-networkadaptersetting.md)             | Relaciona um adaptador de rede e suas definições de configuração.<br/>                                                                                                                                                   |
+| [**Win32 \_ NetworkAdapter**](win32-networkadapter.md)                           | Representa um adaptador de rede em um sistema de computador executando Windows.<br/>                                                                                                                                          |
+| [**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md) | Representa os atributos e comportamentos de um adaptador de rede. Não há garantia de que a classe seja suportada após a especificação de rede CIM da DMTF (Distributed Management Task Force).<br/> |
+| [**Win32 \_ NetworkAdapterSetting**](win32-networkadaptersetting.md)             | Relaciona um adaptador de rede e suas definições de configuração.<br/>                                                                                                                                                   |
 
 
 
@@ -165,17 +165,17 @@ A subcategoria dispositivos de rede agrupa classes que representam o controlador
 
 ## <a name="power-classes"></a>Classes de energia
 
-A subcategoria de energia agrupa as classes que representam fontes de alimentação, baterias e eventos relacionados a esses dispositivos.
+A subcategoria Power grupos classes que representam fontes de alimentação, baterias e eventos relacionados a esses dispositivos.
 
 
 
 | Classe                                                             | Descrição                                                                                           |
 |-------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [**\_Bateria Win32**](win32-battery.md)                           | Representa uma bateria conectada ao sistema de computador.<br/>                                     |
-| [**\_CurrentProbe Win32**](win32-currentprobe.md)                 | Representa as propriedades de um sensor de monitoramento atual (ammeter).<br/>                        |
-| [**\_PortableBattery Win32**](win32-portablebattery.md)           | Representa as propriedades de uma bateria portátil, como uma usada para um computador notebook.<br/> |
-| [**\_PowerManagementEvent Win32**](win32-powermanagementevent.md) | Representa os eventos de gerenciamento de energia resultantes de alterações de estado de energia.<br/>                     |
-| [**\_VoltageProbe Win32**](win32-voltageprobe.md)                 | Representa as propriedades de um sensor de tensão (voltímetro eletrônico).<br/>                      |
+| [**Bateria \_ win32**](win32-battery.md)                           | Representa uma bateria conectada ao sistema de computador.<br/>                                     |
+| [**Win32 \_ CurrentProbe**](win32-currentprobe.md)                 | Representa as propriedades de um sensor de monitoramento atual (ammeter).<br/>                        |
+| [**Win32 \_ PortableBattery**](win32-portablebattery.md)           | Representa as propriedades de uma bateria portátil, como uma usada para um computador de notebook.<br/> |
+| [**Win32 \_ PowerManagementEvent**](win32-powermanagementevent.md) | Representa eventos de gerenciamento de energia resultantes de alterações de estado de energia.<br/>                     |
+| [**Win32 \_ VoltageProbe**](win32-voltageprobe.md)                 | Representa as propriedades de um sensor de tensão (meter eletrônico).<br/>                      |
 
 
 
@@ -183,21 +183,21 @@ A subcategoria de energia agrupa as classes que representam fontes de alimentaç
 
 ## <a name="printing-classes"></a>Classes de impressão
 
-A subcategoria de impressão agrupa classes que representam impressoras, configurações de impressora e trabalhos de impressão.
+A subcategoria Impressão grupos classes que representam impressoras, configurações de impressora e trabalhos de impressão.
 
 
 
 | Classe                                                             | Descrição                                                                                                                              |
 |-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_DriverForDevice Win32**](win32-driverfordevice.md)           | Relaciona uma impressora a um driver de impressora.<br/>                                                                                        |
-| [**\_Impressora Win32**](win32-printer.md)                           | representa um dispositivo conectado a um sistema de computador executando Windows que é capaz de reproduzir uma imagem visual em um meio.<br/> |
-| [**\_PrinterConfiguration Win32**](win32-printerconfiguration.md) | Define a configuração de um dispositivo de impressora.<br/>                                                                               |
-| [**\_PrinterController Win32**](win32-printercontroller.md)       | Relaciona uma impressora e o dispositivo local ao qual a impressora está conectada.<br/>                                                     |
-| [**\_PrinterDriver Win32**](win32-printerdriver.md)               | Representa os drivers para uma instância de [**\_ impressora Win32**](win32-printer.md) .<br/>                                                |
-| [**\_PrinterDriverDll Win32**](win32-printerdriverdll.md)         | Relaciona uma impressora local e seu arquivo de driver (não o próprio driver).<br/>                                                          |
-| [**\_PrinterSetting Win32**](win32-printersetting.md)             | Relaciona uma impressora e suas definições de configuração.<br/>                                                                             |
-| [**PrintJob do Win32 \_**](win32-printjob.md)                         | representa um trabalho de impressão gerado por um aplicativo baseado em Windows.<br/>                                                              |
-| [**\_TCPIPPrinterPort Win32**](win32-tcpipprinterport.md)         | Representa um ponto de acesso do serviço TCP/IP.<br/>                                                                                     |
+| [**Win32 \_ DriverForDevice**](win32-driverfordevice.md)           | Relaciona uma impressora a um driver de impressora.<br/>                                                                                        |
+| [**Impressora \_ Win32**](win32-printer.md)                           | Representa um dispositivo conectado a um sistema de computadores Windows que é capaz de reproduzir uma imagem visual em uma mídia.<br/> |
+| [**Impressora \_ Win32Configuration**](win32-printerconfiguration.md) | Define a configuração de um dispositivo de impressora.<br/>                                                                               |
+| [**Impressora \_ Win32Controller**](win32-printercontroller.md)       | Relaciona uma impressora e o dispositivo local ao qual a impressora está conectada.<br/>                                                     |
+| [**Win32 \_ PrinterDriver**](win32-printerdriver.md)               | Representa os drivers para uma [**instância da Impressora Win32. \_**](win32-printer.md)<br/>                                                |
+| [**Impressora \_ Win32DriverDll**](win32-printerdriverdll.md)         | Relaciona uma impressora local e seu arquivo de driver (não o próprio driver).<br/>                                                          |
+| [**Impressora \_ Win32Conjunto**](win32-printersetting.md)             | Relaciona uma impressora e suas definições de configuração.<br/>                                                                             |
+| [**Win32 \_ PrintJob**](win32-printjob.md)                         | Representa um trabalho de impressão gerado por um Windows baseado em dados.<br/>                                                              |
+| [**Win32 \_ TCPIPPrinterPort**](win32-tcpipprinterport.md)         | Representa um ponto de acesso do serviço TCP/IP.<br/>                                                                                     |
 
 
 
@@ -205,14 +205,14 @@ A subcategoria de impressão agrupa classes que representam impressoras, configu
 
 ## <a name="telephony-classes"></a>Classes de telefonia
 
-A subcategoria de telefonia agrupa classes que representam dispositivos de modem "telefone antigo" e suas conexões seriais associadas.
+A subcategoria Telefonia grupos classes que representam dispositivos de modem "telefone antigo sem-valor" e suas conexões seriais associadas.
 
 
 
 | Classe                                                               | Descrição                                                                                                                                |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_POTSModem Win32**](win32-potsmodem.md)                         | Representa os serviços e as características de um modem de serviço de telefonia comum (POTS) em um sistema de computador que executa o Windows.<br/> |
-| [**\_POTSModemToSerialPort Win32**](win32-potsmodemtoserialport.md) | Relaciona um modem e a porta serial que o modem usa.<br/>                                                                             |
+| [**Win32 \_ POTSModem**](win32-potsmodem.md)                         | Representa os serviços e as características de um modem DOLS (Plain Old Telephone Service) em um sistema de computador que executa Windows.<br/> |
+| [**Win32 \_ POTSModemToSerialPort**](win32-potsmodemtoserialport.md) | Relaciona um modem e a porta serial que o modem usa.<br/>                                                                             |
 
 
 
@@ -220,16 +220,16 @@ A subcategoria de telefonia agrupa classes que representam dispositivos de modem
 
 ## <a name="video-and-monitor-classes"></a>Classes de vídeo e monitor
 
-A subcategoria vídeo e monitores agrupa as classes que representam monitores, placas de vídeo e suas configurações associadas.
+As classes de subcategoria Vídeo e Monitores que representam monitores, placas de vídeo e suas configurações associadas.
 
 
 
 | Classe                                                                                 | Descrição                                                                                                                                                                                                                                                                                                                                                                        |
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**\_DesktopMonitor Win32**](win32-desktopmonitor.md)                                 | Representa o tipo de monitor ou dispositivo de exibição conectado ao sistema de computador.<br/>                                                                                                                                                                                                                                                                                       |
-| [**\_DisplayControllerConfiguration Win32**](win32-displaycontrollerconfiguration.md) | Representa as informações de configuração do adaptador de vídeo de um sistema de computador que executa o Windows. Essa classe está obsoleta. No lugar dessa classe, use as propriedades nas classes [**Win32 \_ VideoController**](win32-videocontroller.md), [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)e [CIM \_ VideoControllerResolution](cim-videocontrollerresolution.md) .<br/> |
-| [**\_VideoController Win32**](win32-videocontroller.md)                               | Representa os recursos e a capacidade de gerenciamento do controlador de vídeo em um sistema de computador que executa o Windows.<br/>                                                                                                                                                                                                                                                       |
-| [**\_VideoSettings Win32**](win32-videosettings.md)                                   | Relaciona um controlador de vídeo e as configurações de vídeo que podem ser aplicadas a ele.<br/>                                                                                                                                                                                                                                                                                                |
+| [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)                                 | Representa o tipo de monitor ou dispositivo de exibição anexado ao sistema de computador.<br/>                                                                                                                                                                                                                                                                                       |
+| [**Win32 \_ DisplayControllerConfiguration**](win32-displaycontrollerconfiguration.md) | Representa as informações de configuração do adaptador de vídeo de um sistema de computador executando Windows. Essa classe está obsoleta. No lugar dessa classe, use as propriedades nas classes [**Win32 \_ VideoController,**](win32-videocontroller.md) [**Win32 \_ DesktopMonitor**](win32-desktopmonitor.md)e [CIM \_ VideoControllerResolution.](cim-videocontrollerresolution.md)<br/> |
+| [**VideoController do Win32 \_**](win32-videocontroller.md)                               | Representa os recursos e a capacidade de gerenciamento do controlador de vídeo em um sistema de computador executando Windows.<br/>                                                                                                                                                                                                                                                       |
+| [**VideoSettings do Win32 \_**](win32-videosettings.md)                                   | Relaciona um controlador de vídeo e configurações de vídeo que podem ser aplicadas a ele.<br/>                                                                                                                                                                                                                                                                                                |
 
 
 
@@ -239,7 +239,7 @@ A subcategoria vídeo e monitores agrupa as classes que representam monitores, p
 
 <dl> <dt>
 
-[Classes Win32](/previous-versions//aa394084(v=vs.85))
+[Win32 Classes](/previous-versions//aa394084(v=vs.85))
 </dt> </dl>
 
  

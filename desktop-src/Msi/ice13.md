@@ -1,5 +1,5 @@
 ---
-description: ICE13 valida se as caixas de diálogo em tabelas de sequência aparecem nas tabelas AdminUISequence ou InstallUISequence. As caixas de diálogo não devem ser listadas nas tabelas InstallExecuteSequence, AdminExecuteSequence ou AdvtExecuteSequence.
+description: ICE13 valida que as caixas de diálogo em tabelas de sequência aparecem nas tabelas AdminUISequence ou InstallUISequence. As caixas de diálogo não devem ser listadas nas tabelas InstallExecuteSequence, AdminExecuteSequence ou AdvtExecuteSequence.
 ms.assetid: 51542a8f-2fb6-4021-b52d-6f7a2b0294d6
 title: ICE13
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "118946630"
 ---
 # <a name="ice13"></a>ICE13
 
-ICE13 valida se as caixas de diálogo em tabelas de sequência aparecem nas tabelas [AdminUISequence](adminuisequence-table.md)ou [InstallUISequence.](installuisequence-table.md) As caixas de diálogo não devem ser listadas nas tabelas [InstallExecuteSequence](installexecutesequence-table.md), [AdminExecuteSequence](adminexecutesequence-table.md)ou [AdvtExecuteSequence.](advtexecutesequence-table.md)
+ICE13 valida que as caixas de diálogo em tabelas de sequência aparecem nas tabelas [AdminUISequence](adminuisequence-table.md)ou [InstallUISequence](installuisequence-table.md) . As caixas de diálogo não devem ser listadas nas tabelas [InstallExecuteSequence](installexecutesequence-table.md), [AdminExecuteSequence](adminexecutesequence-table.md)ou [AdvtExecuteSequence](advtexecutesequence-table.md) .
 
 ## <a name="result"></a>Resultado
 
-ICE13 postará uma mensagem de erro se uma caixa de diálogo aparecer em uma tabela de sequência de execução.
+ICE13 posta uma mensagem de erro se uma caixa de diálogo aparecer em uma tabela de sequência de execução.
 
 ## <a name="example"></a>Exemplo
 
-Para o exemplo a seguir, ICE13 posta uma mensagem de erro informando que 'WelcomeDialog' não pode ser listado na tabela 'InstallExecuteSequence'.
+Para o exemplo a seguir, ICE13 posta uma mensagem de erro informando que o ' WelcomeDialog ' não pode ser listado na tabela ' InstallExecuteSequence '.
 
 [Tabela InstallExecuteSequence](installexecutesequence-table.md) (parcial)
 

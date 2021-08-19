@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. playlistItemsVisible
-description: O atributo playlistItemsVisible especifica ou recupera um valor que indica se a área de itens da lista de reprodução está visível.
+title: PLAYLIST.playlistItemsVisible
+description: O atributo playlistItemsVisible especifica ou recupera um valor que indica se a área Itens de playlist está visível.
 ms.assetid: 9335bd64-c692-4d11-9912-c611208fbc34
 keywords:
-- Windows Media Player de PLAYLIST. playlistItemsVisible
+- PLAYLIST.playlistItemsVisible Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118336693"
 ---
-# <a name="playlistplaylistitemsvisible"></a>PLAYLIST. playlistItemsVisible
+# <a name="playlistplaylistitemsvisible"></a>PLAYLIST.playlistItemsVisible
 
-O atributo **playlistItemsVisible** especifica ou recupera um valor que indica se a área de itens da lista de reprodução está visível.
+O **atributo playlistItemsVisible** especifica ou recupera um valor que indica se a área Itens de playlist está visível.
 
 ``` syntax
         elementID.playlistItemsVisible
@@ -29,14 +29,14 @@ O atributo **playlistItemsVisible** especifica ou recupera um valor que indica s
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                              |
 |-------|------------------------------------------|
-| true  | Padrão. A área itens da lista de reprodução está visível. |
-| false | A área itens da playlist não está visível.      |
+| true  | Padrão. A área de itens de playlist está visível. |
+| false | A área de itens de playlist não está visível.      |
 
 
 
@@ -44,7 +44,7 @@ Esse atributo é um **booliano** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-A área itens da lista de reprodução inclui os cabeçalhos de coluna, o conteúdo das colunas e as barras de rolagem (se houver).
+A área Itens de playlist inclui os headers de coluna, o conteúdo das colunas e as barras de rolagem (se presente).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ A área itens da lista de reprodução inclui os cabeçalhos de coluna, o conte�
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

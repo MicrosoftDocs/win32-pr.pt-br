@@ -1,7 +1,7 @@
 ---
-description: A política de metadados de foto para a propriedade System.GPS.Satellites.
+description: A política de metadados de foto para a propriedade System. GPS. satélites.
 ms.assetid: 5dbbbeaf-e67d-45f6-95b2-de3287202d41
-title: Política de metadados de foto system.GPS.Satellites
+title: Política de metadados de foto System. GPS. satélites
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: a65bdc244324df513b5029c682e9c2cb355da58f2c95d13910fe093ce2521c8d
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118964835"
 ---
-# <a name="systemgpssatellites-photo-metadata-policy"></a>Política de metadados de foto system.GPS.Satellites
+# <a name="systemgpssatellites-photo-metadata-policy"></a>Política de metadados de foto System. GPS. satélites
 
-A política de metadados de foto para a [propriedade System.GPS.Satellites.](../properties/props-system-gps-satellites.md)
+A política de metadados de foto para a propriedade [System. GPS. satélites](../properties/props-system-gps-satellites.md) .
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
-PKEY \_ GPS \_ Satellites
+\_Satélites de GPS PKEY \_
 
 ### <a name="containers"></a>Contêineres
 
@@ -27,27 +27,27 @@ JPEG, TIFF
 
 Não
 
-### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
-VT \_ LPWSTR
+LPWStr do VT \_
 
 ### <a name="input-type"></a>Tipo de entrada
 
 Cadeia de caracteres.
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
 
-Valores de esquemas diferentes são reconciliados.
+Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policies"></a>Políticas JPEG
 
-### <a name="read-paths"></a>Ler caminhos
+### <a name="read-paths"></a>Caminhos de leitura
 
 
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/ifd/gps/{ushort=8} | ascii       |
+| 1     | /App1/IFD/GPS/{UShort = 8} | ascii       |
 | 2     | /xmp/exif:GPSSatellites  | Unicode     |
 
 
@@ -60,7 +60,7 @@ Valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/ifd/gps/{ushort=8} | ascii       |
+| 1     | /App1/IFD/GPS/{UShort = 8} | ascii       |
 | 2     | /xmp/exif:GPSSatellites  | Unicode     |
 
 
@@ -73,7 +73,7 @@ Valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     |
 |-------|--------------------------|
-| 1     | /app1/ifd/gps/{ushort=8} |
+| 1     | /App1/IFD/GPS/{UShort = 8} |
 | 2     | /xmp/exif:gpssatellites  |
 
 
@@ -82,13 +82,13 @@ Valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Ler caminhos
+### <a name="read-paths"></a>Caminhos de leitura
 
 
 
 | Ordem | Caminho                        | Formato de disco |
 |-------|-----------------------------|-------------|
-| 1     | /ifd/gps/{ushort=8}         | ascii       |
+| 1     | /IFD/GPS/{UShort = 8}         | ascii       |
 | 2     | /ifd/xmp/exif:GPSSatellites | Unicode     |
 
 
@@ -101,7 +101,7 @@ Valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                        | Formato de disco |
 |-------|-----------------------------|-------------|
-| 1     | /ifd/gps/{ushort=8}         | ascii       |
+| 1     | /IFD/GPS/{UShort = 8}         | ascii       |
 | 2     | /ifd/xmp/exif:GPSSatellites | Unicode     |
 
 
@@ -114,7 +114,7 @@ Valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                        |
 |-------|-----------------------------|
-| 1     | /ifd/gps/{ushort=8}         |
+| 1     | /IFD/GPS/{UShort = 8}         |
 | 2     | /ifd/xmp/exif:gpssatellites |
 
 
@@ -127,7 +127,7 @@ Valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System.GPS.Satellites](../properties/props-system-gps-satellites.md)
+[System. GPS. satélites](../properties/props-system-gps-satellites.md)
 </dt> </dl>
 
  

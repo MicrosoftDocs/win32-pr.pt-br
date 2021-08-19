@@ -4,12 +4,12 @@ ms.assetid: 82ef20b5-bdfa-4bde-abb4-3d14ae35c116
 title: IMR_RECONVERTSTRING código de notificação (IMM. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cbb1caeedb729b176f116a15e64879d79d519fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b0dfc2b188a2873af3ec7004ffaac65a3cce0b4257c1428dfe4abfcba9d2b2aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828271"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118948753"
 ---
 # <a name="imr_reconvertstring-notification-code"></a>\_Código de notificação de REconversão de IMR
 
@@ -52,7 +52,7 @@ Retorna a estrutura da cadeia de caracteres de reconversão atual. Se *lParam* f
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Imm. h (incluir Windows. h)</dt> </dl> |
 
 
 
