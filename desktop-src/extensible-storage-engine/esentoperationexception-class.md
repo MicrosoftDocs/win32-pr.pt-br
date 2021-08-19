@@ -33,19 +33,19 @@ ms.locfileid: "118493958"
 ---
 # <a name="esentoperationexception-class"></a>Classe EsentOperationException
 
-Classe base para exceções de operação.
+Classe base para exceções operation.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        Microsoft. ISAM. ESENT. Interop. EsentOperationException  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        Microsoft.Isam.Esent.Interop.EsentOperationException  
           
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -71,28 +71,28 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentOperationException](./esentoperationexception-members.md)
+[Membros EsentOperationException](./esentoperationexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
 
 ## <a name="derived-types"></a>Tipos derivados
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        Microsoft. ISAM. ESENT. Interop. EsentOperationException  
-          [Microsoft. ISAM. ESENT. Interop. EsentBackupAbortByServerException](./esentbackupabortbyserverexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentCheckpointDepthTooDeepException](./esentcheckpointdepthtoodeepexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentClientRequestToStopJetServiceException](./esentclientrequesttostopjetserviceexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentFatalException](./esentfatalexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentInitInProgressException](./esentinitinprogressexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentInternalErrorException](./esentinternalerrorexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentIOException](./esentioexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentNTSystemCallFailedException](./esentntsystemcallfailedexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentRecordNotDeletedException](./esentrecordnotdeletedexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentResourceException](./esentresourceexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentTermInProgressException](./esentterminprogressexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentUnicodeLanguageValidationFailureException](./esentunicodelanguagevalidationfailureexception-class.md)  
-          [Microsoft. ISAM. ESENT. Interop. EsentUnicodeTranslationFailException](./esentunicodetranslationfailexception-class.md)
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        Microsoft.Isam.Esent.Interop.EsentOperationException  
+          [Microsoft.Isam.Esent.Interop.EsentBackupAbortByServerException](./esentbackupabortbyserverexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentCheckpointDepthTooDeepException](./esentcheckpointdepthtoodeepexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentClientRequestToStopJetServiceException](./esentclientrequesttostopjetserviceexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentFatalException](./esentfatalexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentInitInProgressException](./esentinitinprogressexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentInternalErrorException](./esentinternalerrorexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentIOException](./esentioexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentNTSystemCallFailedException](./esentntsystemcallfailedexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentOSSnapshotTimeOutException](./esentossnapshottimeoutexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentRecordNotDeletedException](./esentrecordnotdeletedexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentResourceException](./esentresourceexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentTermInProgressException](./esentterminprogressexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUnicodeLanguageValidationFailureException](./esentunicodelanguagevalidationfailureexception-class.md)  
+          [Microsoft.Isam.Esent.Interop.EsentUnicodeTranslationFailException](./esentunicodetranslationfailexception-class.md)

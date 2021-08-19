@@ -18,12 +18,12 @@ api_type:
 - DllExport
 api_location:
 - WmiProv.dll
-ms.openlocfilehash: 79566dccceb36281c9b3a94b19fed2ed5679dc8e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 72b82f2c6eb967f39823d5b56174bb82e7503ee56f676ffb49b65822ec435936
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105815452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821141"
 ---
 # <a name="wmimonitorraweedidv1block-class"></a>Classe WmiMonitorRawEEdidV1Block
 

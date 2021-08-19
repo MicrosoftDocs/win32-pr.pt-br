@@ -3,7 +3,7 @@ title: Atributo CDTrackEnabled
 description: O atributo CDTrackEnabled indica se a faixa está habilitada para reprodução.
 ms.assetid: ebbc42bd-2d6c-47ae-9a3f-c6256b120d35
 keywords:
-- Atributo CDTrackEnabled Windows Media Player
+- Windows Media Player de atributo CDTrackEnabled
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118342679"
 ---
 # <a name="cdtrackenabled-attribute"></a>Atributo CDTrackEnabled
 
-O **atributo CDTrackEnabled** indica se a faixa está habilitada para reprodução.
+O atributo **CDTrackEnabled** indica se a faixa está habilitada para reprodução.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -31,9 +31,9 @@ O **atributo CDTrackEnabled** indica se a faixa está habilitada para reproduç�
 
 Esse atributo é armazenado somente no cache da biblioteca.
 
-Ao tocar um CD Windows Media Player, o usuário pode selecionar uma faixa e especificar que ela não deve ser tocada. Esse valor desse atributo será True se a faixa puder ser tocada ou False se o usuário tiver especificado que a faixa não deve ser tocada.
+ao reproduzir um CD no Windows Media Player, o usuário pode selecionar uma faixa e especificar que ela não deve ser reproduzida. Esse valor desse atributo será true se a faixa puder ser reproduzida, ou false se o usuário especificou que a faixa não deve ser reproduzida.
 
-Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
+Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Para determinar se você pode alterar o valor desse atributo, use o [método Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
+| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
 
 
 

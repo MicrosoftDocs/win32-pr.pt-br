@@ -13,7 +13,7 @@ ms.locfileid: "118502431"
 ---
 # <a name="idxcoreadapterlist-interface"></a>Interface IDXCoreAdapterList
 
-A interface **IDXCoreAdapterList** implementa métodos para recuperar itens de adaptador de uma lista gerada, bem como detalhes sobre a lista. **IDXCoreAdapterList** herda da interface [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) . Para obter diretrizes de programação e exemplos de código, consulte [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md).
+A interface **IDXCoreAdapterList** implementa métodos para recuperar itens de adaptador de uma lista gerada, bem como detalhes sobre a lista. **IDXCoreAdapterList** herda da interface [IUnknown.](/windows/win32/api/unknwn/nn-unknwn-iunknown) Para obter diretrizes de programação e exemplos de código, consulte [Usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md).
 
 ## <a name="see-also"></a>Confira também
 

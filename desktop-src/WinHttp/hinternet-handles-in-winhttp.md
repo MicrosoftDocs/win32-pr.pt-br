@@ -1,5 +1,5 @@
 ---
-description: O Microsoft Windows Http Services (WinHTTP) usa os handles para controlar as configurações e as informações necessárias ao usar o protocolo HTTP.
+description: O Microsoft Windows Http Services (WinHTTP) usa alças para controlar as configurações e as informações necessárias ao usar o protocolo HTTP.
 ms.assetid: 0bd82860-1347-40c8-ae77-c4d865c109be
 title: Alças HINTERNET no WinHTTP
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118563262"
 ---
 # <a name="hinternet-handles-in-winhttp"></a>Alças HINTERNET no WinHTTP
 
-O Microsoft Windows Http Services (WinHTTP) usa os handles para controlar as configurações e as informações necessárias ao usar o protocolo HTTP. Cada alça mantém informações pertinentes a uma sessão HTTP, uma conexão com um servidor HTTP ou um recurso específico. Este tópico descreve os vários tipos de alças, as convenções de nomen por esses alças e sua estrutura hierárquica.
+O Microsoft Windows Http Services (WinHTTP) usa alças para controlar as configurações e as informações necessárias ao usar o protocolo HTTP. Cada alça mantém informações pertinentes a uma sessão HTTP, uma conexão com um servidor HTTP ou um recurso específico. Este tópico descreve os vários tipos de alças, as convenções de nomen por esses alças e sua estrutura hierárquica.
 
 -   [Sobre os alças HINTERNET](#about-hinternet-handles)
 -   [Alças de nomeação](#naming-handles)

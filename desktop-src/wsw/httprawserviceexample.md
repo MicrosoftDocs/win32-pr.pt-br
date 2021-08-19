@@ -3,9 +3,9 @@ title: HttpRawServiceExample
 description: Este exemplo mostra como usar o host de serviço para lidar com solicitações HTTP brutas (não SOAP).
 ms.assetid: fbe5ad9c-f3f4-40c2-86e0-03b945aab89f
 keywords:
-- HttpRawServiceExample nativo – Web-Services
+- HttpRawServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: bc1aa7e7aec653aa5bdff294cfd86346cec06378e5a5e9a3923540642f44bef5
@@ -19,7 +19,7 @@ ms.locfileid: "117841523"
 
 Este exemplo mostra como usar o host de serviço para lidar com solicitações HTTP brutas (não SOAP).
 
-## <a name="httprawservicecpp"></a>HttpRawService. cpp
+## <a name="httprawservicecpp"></a>HttpRawService.cpp
 
 
 ```C++

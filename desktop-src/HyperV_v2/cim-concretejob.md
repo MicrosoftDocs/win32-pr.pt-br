@@ -1,7 +1,7 @@
 ---
-description: Uma versão concreta da classe de \_ trabalho do CIM. Essa classe representa uma unidade de trabalho instanciáveis genérica a ser executada, como um lote ou um trabalho de impressão.
+description: Uma versão concreta da classe de \_ trabalho CIM. Essa classe representa uma unidade de trabalho instalível genérica a ser executado, como um lote ou um trabalho de impressão.
 ms.assetid: fad4d894-d1f5-428d-819f-74966dd9f410
-title: Classe CIM_ConcreteJob
+title: CIM_ConcreteJob classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,16 +18,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 949d7c85643919f784a82e7722c9d49a9d9d2e97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a62ab2392ce2c069aa88ebb465f7028368f30bd5432cf96559c7eebe6edb8bdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105778599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813157"
 ---
-# <a name="cim_concretejob-class"></a>\_Classe CIM ConcreteJob
+# <a name="cim_concretejob-class"></a>Classe CIM \_ ConcreteJob
 
-Uma versão concreta da classe [**de \_ trabalho do CIM**](cim-job.md) . Essa classe representa uma unidade de trabalho instanciáveis genérica a ser executada, como um lote ou um trabalho de impressão.
+Uma versão concreta da classe [**de \_ trabalho CIM.**](cim-job.md) Essa classe representa uma unidade de trabalho instalível genérica a ser executado, como um lote ou um trabalho de impressão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,20 +45,20 @@ class CIM_ConcreteJob : CIM_Job
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ConcreteJob** tem estes tipos de membros:
+A **classe CIM \_ ConcreteJob** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **CIM \_ ConcreteJob** tem esses métodos.
+A **classe CIM \_ ConcreteJob** tem esses métodos.
 
 
 
 | Método                                                           | Descrição                                                                          |
 |:-----------------------------------------------------------------|:-------------------------------------------------------------------------------------|
-| [**GetError**](cim-concretejob-geterror.md)                     | Recupera informações de erro para o status operacional de um trabalho concreto.<br/> |
+| [**Geterror**](cim-concretejob-geterror.md)                     | Recupera informações de erro para o status operacional de um trabalho concreto.<br/> |
 | [**RequestStateChange**](cim-concretejob-requeststatechange.md) | Solicita a alteração de estado especificada para um trabalho concreto.<br/>                    |
 
 
@@ -67,7 +67,7 @@ A classe **CIM \_ ConcreteJob** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ConcreteJob** tem essas propriedades.
+A **classe CIM \_ ConcreteJob** tem essas propriedades.
 
 <dl> <dt>
 
@@ -80,22 +80,22 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceId")
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("InstanceID")
 </dt> </dl>
 
-Identifica exclusivamente e de forma opaca uma instância dessa classe dentro do escopo do namespace que a contém.
+Identifica de forma exclusiva e opaca uma instância dessa classe dentro do escopo do namespace que o contém.
 
 > [!IMPORTANT]
 >
-> Para garantir a exclusividade no namespace, o valor da propriedade **InstanceId** deve ser construído no seguinte padrão: *OrgID*:*LocalId*
+> Para garantir a exclusividade no namespace, o valor da **propriedade InstanceID** deve ser construído no seguinte padrão: *OrgID*:*LocalID*
 >
-> *OrgID* deve incluir um nome de direitos autorais, com marca registrada ou exclusivo que pertença à entidade de negócios que define a **InstanceId** ou ser uma ID registrada que é atribuída por uma autoridade global reconhecida. Esse padrão é semelhante à estrutura de nomes de classe de esquema. Além disso, para garantir a exclusividade, os primeiros dois-pontos em **InstanceId** devem estar entre *OrgID* e *LocalId*. Portanto, o *OrgID* não deve conter dois-pontos (': ').
+> *OrgID* deve incluir um nome protegido por direitos autorais, marcas comerciais ou exclusivos pertencentes à entidade de negócios que define a **InstanceID** ou ser uma ID registrada atribuída por uma autoridade global reconhecida. Esse padrão é semelhante à estrutura de nomes de classe de esquema. Além disso, para garantir a exclusividade, os primeiros dois-pontos **em InstanceID** devem estar entre *o OrgID* e *o LocalID.* Portanto, *a OrgID* não deve conter dois-pontos (':').
 >
-> A *LocalId* é escolhida pela entidade de negócios e não deve ser reutilizada para identificar elementos do mundo real subjacentes diferentes.
+> *LocalID* é escolhido pela entidade de negócios e não deve ser usado de novo para identificar diferentes elementos subjacentes do mundo real.
 >
-> Se o padrão acima não for usado, a entidade de definição deverá garantir que o valor de **InstanceId** resultante não seja reutilizado em todas as propriedades **InstanceId** produzidas por este provedor ou por outros provedores para esse namespace.
+> Se o padrão acima não for usado, a entidade de definição deverá garantir que o valor **de InstanceID** resultante não seja rea usado em nenhuma propriedade **InstanceID** produzida por esse provedor ou outros provedores para esse namespace.
 >
-> Para instâncias definidas pela DMTF (Distributed Management Task Force), o padrão deve ser usado com o *OrgID* definido como CIM.
+> Para instâncias definidas pela DMTF (Distributed Management Task Force), o padrão deve ser usado com *o OrgID* definido como CIM.
 
  
 
@@ -104,13 +104,13 @@ Identifica exclusivamente e de forma opaca uma instância dessa classe dentro do
 **JobState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O estado operacional do trabalho e a transição entre esses Estados.
+O estado operacional do trabalho e a transição entre esses estados.
 
 <dt>
 
@@ -132,13 +132,13 @@ o trabalho nunca foi iniciado.
 
 </dt> <dd>
 
-O trabalho está sendo movido dos Estados ' novo ', ' suspenso ' ou ' serviço ' para o estado ' em execução '.
+O trabalho está mudando dos estados 'Novo', 'Suspenso' ou 'Serviço' para o estado 'Em execução'.
 
 </dd> <dt>
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Em execução** (4)
+<span id="Running"></span><span id="running"></span><span id="RUNNING"></span>**Em** execução (4)
 
 
 </dt> <dd>
@@ -154,7 +154,7 @@ O trabalho está em execução.
 
 </dt> <dd>
 
-O trabalho é interrompido, mas pode ser reiniciado de maneira direta.
+O trabalho é interrompido, mas pode ser reiniciado de maneira perfeita.
 
 </dd> <dt>
 
@@ -165,7 +165,7 @@ O trabalho é interrompido, mas pode ser reiniciado de maneira direta.
 
 </dt> <dd>
 
-O trabalho está mudando para um estado ' Concluído ', ' encerrado ' ou ' eliminado '.
+O trabalho está mudando para um estado 'Concluído', 'Encerrado' ou 'Encerrado'.
 
 </dd> <dt>
 
@@ -187,18 +187,18 @@ O trabalho foi concluído normalmente.
 
 </dt> <dd>
 
-O trabalho foi interrompido por uma solicitação de alteração de estado ' Terminate '. O trabalho e todos os seus processos subjacentes são encerrados e podem ser reiniciados (isso é específico do trabalho) somente como um novo trabalho.
+O trabalho foi interrompido por uma solicitação de alteração de estado 'Terminate'. O trabalho e todos os seus processos subjacentes são encerrados e podem ser reiniciados (isso é específico do trabalho) apenas como um novo trabalho.
 
 </dd> <dt>
 
 <span id="Killed"></span><span id="killed"></span><span id="KILLED"></span>
 
-<span id="Killed"></span><span id="killed"></span><span id="KILLED"></span>**Eliminado** (9)
+<span id="Killed"></span><span id="killed"></span><span id="KILLED"></span>**Morto** (9)
 
 
 </dt> <dd>
 
-O trabalho foi interrompido por uma solicitação de alteração de estado ' Kill '. Os processos subjacentes podem ter sido deixados em execução e a limpeza pode ser necessária para liberar recursos.
+O trabalho foi interrompido por uma solicitação de alteração de estado 'Kill'. Os processos subjacentes podem ter sido deixados em execução e a limpeza pode ser necessária para liberar recursos.
 
 </dd> <dt>
 
@@ -209,7 +209,7 @@ O trabalho foi interrompido por uma solicitação de alteração de estado ' Kil
 
 </dt> <dd>
 
-O trabalho está em um estado anormal que pode indicar uma condição de erro. O status real pode ser exibido, embora objetos específicos do trabalho.
+O trabalho está em um estado anormal que pode ser um indicativo de uma condição de erro. O status real pode ser exibido por meio de objetos específicos do trabalho.
 
 </dd> <dt>
 
@@ -220,7 +220,7 @@ O trabalho está em um estado anormal que pode indicar uma condição de erro. O
 
 </dt> <dd>
 
-O trabalho está em um estado específico de fornecedor que dá suporte à descoberta de problemas, ou resolução, ou ambos
+O Trabalho está em um estado específico do fornecedor que dá suporte à descoberta de problemas, à resolução ou a ambos
 
 </dd> <dt>
 
@@ -237,14 +237,14 @@ Aguardando um cliente resolver uma consulta.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (13.. 32767)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (13..32767)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornecedor reservado** (32768.. 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornecedor Reservado** (32768..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -260,13 +260,13 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**obrigatório**](/windows/desktop/WmiSdk/standard-qualifiers), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("nome")
+Qualificadores: [**Obrigatório,**](/windows/desktop/WmiSdk/standard-qualifiers) [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Nome")
 </dt> </dl>
 
-O nome amigável da instância do. Além disso, o nome amigável do usuário pode ser usado como uma propriedade para uma pesquisa ou consulta.
+O nome amigável da instância. Além disso, o nome amigável pode ser usado como uma propriedade para uma pesquisa ou consulta.
 
 > [!Note]  
-> O nome não precisa ser exclusivo no namespace.
+> O nome não precisa ser exclusivo dentro do namespace.
 
  
 
@@ -275,23 +275,23 @@ O nome amigável da instância do. Além disso, o nome amigável do usuário pod
 **TimeBeforeRemoval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: [ **obrigatório**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
-Indica por quanto tempo um trabalho concluído é retido. O valor padrão é "00000000000500.000000:000" (cinco minutos).
+Indica por quanto tempo um trabalho concluído é retido. O valor padrão é "0000000000500.0000000:000" (cinco minutos).
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -300,7 +300,7 @@ Tipo de acesso: Somente leitura
 A data ou a hora em que o estado do trabalho foi alterado pela última vez.
 
 > [!Note]  
-> Se o estado do trabalho não tiver sido alterado e essa propriedade for populada, ela deverá ser definida como um valor de intervalo de zero.
+> Se o estado do Trabalho não tiver sido alterado e essa propriedade for populada, ela deverá ser definida como um valor de intervalo zero.
 
  
 
@@ -314,8 +314,8 @@ A data ou a hora em que o estado do trabalho foi alterado pela última vez.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -324,7 +324,7 @@ A data ou a hora em que o estado do trabalho foi alterado pela última vez.
 
 <dl> <dt>
 
-[**Trabalho do CIM \_**](cim-job.md)
+[**Trabalho \_ CIM**](cim-job.md)
 </dt> </dl>
 
  

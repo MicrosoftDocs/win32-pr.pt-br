@@ -1,7 +1,7 @@
 ---
 description: Uma abstração ou emulação de uma entidade de hardware que pode ou não ser baseada em hardware físico.
 ms.assetid: e31c82ed-2da2-4a18-a55e-16931d74f243
-title: Classe CIM_LogicalDevice (gerenciamento do Hyper-V)
+title: CIM_LogicalDevice classe (gerenciamento do Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -30,14 +30,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 471b10f8d3c8640cfcc4277d0151bdd46d59db86
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0831bff996721a170da105c800e670cf10cb4b422869062014ab4df9e2441416
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812110"
 ---
-# <a name="cim_logicaldevice-class-hyper-v-management"></a>Classe CIM_LogicalDevice (gerenciamento do Hyper-V)
+# <a name="cim_logicaldevice-class-hyper-v-management"></a>CIM_LogicalDevice classe (gerenciamento do Hyper-V)
 
 Uma abstração ou emulação de uma entidade de hardware que pode ou não ser baseada em hardware físico.
 
@@ -69,26 +69,26 @@ class CIM_LogicalDevice : CIM_EnabledLogicalElement
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ LogicalDevice** tem estes tipos de membros:
+A **classe \_ LogicalDevice cim** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **CIM \_ LogicalDevice** tem esses métodos.
+A **classe \_ LogicalDevice cim** tem esses métodos.
 
 
 
 | Método                                                           | Descrição                                                                                                                                                                                                                              |
 |:-----------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**EnableDevice**](cim-logicaldevice-enabledevice.md)           | Esse método é preterido. Em vez disso, use o método **RequestStateChange** .<br/> **Descrição preterida:** Habilita ou desabilita o dispositivo lógico.<br/>                                                                     |
-| [**OnlineDevice**](cim-logicaldevice-onlinedevice.md)           | Esse método é preterido. Em vez disso, use o método **RequestStateChange** .<br/> **Descrição preterida:** Coloca o dispositivo lógico online para que ele possa aceitar solicitações ou offline para que não possa mais aceitar solicitações.<br/> |
-| [**QuiesceDevice**](cim-logicaldevice-quiescedevice.md)         | Esse método é preterido. Em vez disso, use o método **RequestStateChange** .<br/> **Descrição preterida:** Suspende temporariamente a atividade no dispositivo lógico ou habilita novamente a atividade.<br/>                            |
+| [**EnableDevice**](cim-logicaldevice-enabledevice.md)           | Esse método é preterido. Em vez disso, use **o método RequestStateChange.**<br/> **Descrição preterida:** Habilita ou desabilita o dispositivo lógico.<br/>                                                                     |
+| [**OnlineDevice**](cim-logicaldevice-onlinedevice.md)           | Esse método é preterido. Em vez disso, use **o método RequestStateChange.**<br/> **Descrição preterida:** Coloca o dispositivo lógico online para que ele possa aceitar solicitações ou offline para que ele não possa mais aceitar solicitações.<br/> |
+| [**QuiesceDevice**](cim-logicaldevice-quiescedevice.md)         | Esse método é preterido. Em vez disso, use **o método RequestStateChange.**<br/> **Descrição preterida:** Suspende temporariamente a atividade no dispositivo lógico ou reabilitará a atividade.<br/>                            |
 | [**Redefinir**](cim-logicaldevice-reset.md)                         | Redefine o dispositivo lógico.<br/>                                                                                                                                                                                                    |
-| [**Restaurarproperties**](cim-logicaldevice-restoreproperties.md) | Restaura uma configuração anterior e o estado do dispositivo lógico.<br/>                                                                                                                                                            |
-| [**Salvarproperties**](cim-logicaldevice-saveproperties.md)       | Salva a configuração e o estado do dispositivo lógico.<br/>                                                                                                                                                                      |
-| [**SetPowerState**](cim-logicaldevice-setpowerstate.md)         | Esse método é preterido. Em vez disso, use a propriedade **SetPowerState** da classe **CIM \_ PowerManagementService** .<br/> **Descrição preterida:** Define o estado de energia do dispositivo lógico.<br/>                       |
+| [**RestoreProperties**](cim-logicaldevice-restoreproperties.md) | Restaura uma configuração anterior e um estado do dispositivo lógico.<br/>                                                                                                                                                            |
+| [**SaveProperties**](cim-logicaldevice-saveproperties.md)       | Salva a configuração e o estado do dispositivo lógico.<br/>                                                                                                                                                                      |
+| [**SetPowerState**](cim-logicaldevice-setpowerstate.md)         | Esse método é preterido. Em vez disso, use **a propriedade SetPowerState** da **classe CIM \_ PowerManagementService.**<br/> **Descrição preterida:** Define o estado de energia do dispositivo lógico.<br/>                       |
 
 
 
@@ -96,29 +96,29 @@ A classe **CIM \_ LogicalDevice** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ LogicalDevice** tem essas propriedades.
+A **classe \_ LogicalDevice cim** tem essas propriedades.
 
 <dl> <dt>
 
 **AdditionalAvailability**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**\_ LogicalDevice CIM**.**Disponibilidade**")
+Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalDevice**.**Disponibilidade**")
 </dt> </dl>
 
-Uma matriz que contém informações de disponibilidade sobre o dispositivo lógico, além da propriedade de **disponibilidade** .
+Uma matriz que contém informações de disponibilidade sobre o dispositivo lógico, além da propriedade **Availability.**
 
 <dt>
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -132,7 +132,7 @@ Uma matriz que contém informações de disponibilidade sobre o dispositivo lóg
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-**Execução/energia completa** (3)
+**Executando/energia completa** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -146,7 +146,7 @@ Uma matriz que contém informações de disponibilidade sobre o dispositivo lóg
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>
 
-**Em teste** (5)
+**Em Teste** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -160,21 +160,21 @@ Uma matriz que contém informações de disponibilidade sobre o dispositivo lóg
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-**Desligar (7** )
+**Desligar** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-**Off line** (8)
+**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>
 
-**Fora do imposto** (9)
+**Fora de** serviço (9)
 
 
 </dt> <dd></dd> <dt>
@@ -202,42 +202,42 @@ Uma matriz que contém informações de disponibilidade sobre o dispositivo lóg
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-Economia **de energia-desconhecido** (13)
+**Power Save – Desconhecido** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-Economia **de energia-modo de baixa energia** (14)
+**Economia de energia – modo de energia baixa** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-**Power Save-em espera** (15)
+**Economia de energia – espera** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>
 
-**Ciclo de energia** (16)
+**Power Cycle** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-Economia **de energia-aviso** (17)
+**Power Save – Aviso** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-Em **pausa** (18)
+**Pausado** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -258,7 +258,7 @@ Em **pausa** (18)
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-**Desativado** (21)
+**Quiesced** (21)
 
 
 </dt> <dd></dd> </dl>
@@ -268,13 +268,13 @@ Em **pausa** (18)
 **Disponibilidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Estado operacional da DMTF \| 6,5 "," MIB. IETF \| host-REsources-MIB. hrDeviceStatus "," MIF. \|Dispositivo de host DMTF \| 1,5 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalDevice**.**AdditionalAvailability**")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Estado Operacional DMTF \| \| 006.5", "MIB. IETF \| HOST-RESOURCES-MIB.hrDeviceStatus", "MIF. Dispositivo host DMTF \| \| 001.5"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalDevice**.**AdditionalAvailability**")
 </dt> </dl>
 
 Contém a disponibilidade do dispositivo lógico.
@@ -283,7 +283,7 @@ Contém a disponibilidade do dispositivo lógico.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -297,7 +297,7 @@ Contém a disponibilidade do dispositivo lógico.
 
 <span id="Running_Full_Power"></span><span id="running_full_power"></span><span id="RUNNING_FULL_POWER"></span>
 
-**Execução/energia completa** (3)
+**Executando/energia completa** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -311,7 +311,7 @@ Contém a disponibilidade do dispositivo lógico.
 
 <span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>
 
-**Em teste** (5)
+**Em Teste** (5)
 
 
 </dt> <dd></dd> <dt>
@@ -325,21 +325,21 @@ Contém a disponibilidade do dispositivo lógico.
 
 <span id="Power_Off"></span><span id="power_off"></span><span id="POWER_OFF"></span>
 
-**Desligar (7** )
+**Desligar** (7)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Line"></span><span id="off_line"></span><span id="OFF_LINE"></span>
 
-**Off line** (8)
+**Off Line** (8)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Off_Duty"></span><span id="off_duty"></span><span id="OFF_DUTY"></span>
 
-**Fora do imposto** (9)
+**Fora de** serviço (9)
 
 
 </dt> <dd></dd> <dt>
@@ -367,42 +367,42 @@ Contém a disponibilidade do dispositivo lógico.
 
 <span id="Power_Save_-_Unknown"></span><span id="power_save_-_unknown"></span><span id="POWER_SAVE_-_UNKNOWN"></span>
 
-Economia **de energia-desconhecido** (13)
+**Power Save – Desconhecido** (13)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Low_Power_Mode"></span><span id="power_save_-_low_power_mode"></span><span id="POWER_SAVE_-_LOW_POWER_MODE"></span>
 
-Economia **de energia-modo de baixa energia** (14)
+**Economia de energia – modo de energia baixa** (14)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Standby"></span><span id="power_save_-_standby"></span><span id="POWER_SAVE_-_STANDBY"></span>
 
-**Power Save-em espera** (15)
+**Economia de energia – espera** (15)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Cycle"></span><span id="power_cycle"></span><span id="POWER_CYCLE"></span>
 
-**Ciclo de energia** (16)
+**Power Cycle** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Power_Save_-_Warning"></span><span id="power_save_-_warning"></span><span id="POWER_SAVE_-_WARNING"></span>
 
-Economia **de energia-aviso** (17)
+**Power Save – Aviso** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Paused"></span><span id="paused"></span><span id="PAUSED"></span>
 
-Em **pausa** (18)
+**Pausado** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -423,7 +423,7 @@ Em **pausa** (18)
 
 <span id="Quiesced"></span><span id="quiesced"></span><span id="QUIESCED"></span>
 
-**Desativado** (21)
+**Quiesced** (21)
 
 
 </dt> <dd></dd> </dl>
@@ -439,14 +439,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-O nome da classe usada para criar uma instância do dispositivo lógico. **CreationClassName** é combinado com outras propriedades de chave dessa classe para identificar exclusivamente as instâncias dessa classe e suas subclasses.
+O nome de classe usado para criar uma instância do dispositivo lógico. **CreationClassName** é combinado com outras propriedades de chave dessa classe para identificar exclusivamente as instâncias dessa classe e suas subclasses.
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -455,7 +455,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Um identificador exclusivo do dispositivo lógico, como o endereço.

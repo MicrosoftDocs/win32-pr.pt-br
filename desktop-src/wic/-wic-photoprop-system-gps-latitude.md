@@ -1,7 +1,7 @@
 ---
-description: A política de metadados de foto para a propriedade System.GPS.Latitude.
+description: A política de metadados de foto para a propriedade System. GPS. latitude.
 ms.assetid: 0f8cea07-da96-4d2a-8444-6073b51e1236
-title: Política de metadados de foto System.GPS.Latitude
+title: Política de metadados de foto System. GPS. latitude
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 41dd1eb0ee21ab02eeb8c83d5ea84f28c07c2811929f2b8c973cace4a4a06fd7
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118710620"
 ---
-# <a name="systemgpslatitude-photo-metadata-policy"></a>Política de metadados de foto System.GPS.Latitude
+# <a name="systemgpslatitude-photo-metadata-policy"></a>Política de metadados de foto System. GPS. latitude
 
-A política de metadados de foto para a [propriedade System.GPS.Latitude.](../properties/props-system-gps-latitude.md)
+A política de metadados de foto para a propriedade [System. GPS. latitude](../properties/props-system-gps-latitude.md) .
 
-### <a name="pkey"></a>Pkey
+### <a name="pkey"></a>PKEY
 
-PKEY \_ GPS \_ Latitude
+\_Latitude PKEY GPS \_
 
 ### <a name="containers"></a>Contêineres
 
@@ -27,23 +27,23 @@ JPEG, TIFF
 
 Sim
 
-### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 
-VT \_ VECTOR \| VT \_ R8
+\_R8 de \| VT de vetor VT \_
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
 
-Esse valor pode ser escrito escrevendo em System.GPS.LatitudeNumerator e System.GPS.LatitudeDenominator. Ele não pode ser gravado diretamente. Valores de esquemas diferentes são reconciliados.
+Esse valor pode ser gravado escrevendo em System. GPS. LatitudeNumerator e System. GPS. LatitudeDenominator. Ele não pode ser gravado diretamente. Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Ler caminhos
+### <a name="read-paths"></a>Caminhos de leitura
 
 
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/ifd/gps/{ushort=2} |             |
+| 1     | /App1/IFD/GPS/{UShort = 2} |             |
 | 2     | /xmp/exif:GPSLatitude    |             |
 
 
@@ -56,7 +56,7 @@ Esse valor pode ser escrito escrevendo em System.GPS.LatitudeNumerator e System.
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /app1/ifd/gps/{ushort=2} |             |
+| 1     | /App1/IFD/GPS/{UShort = 2} |             |
 | 2     | /xmp/exif:GPSLatitude    |             |
 
 
@@ -69,7 +69,7 @@ Esse valor pode ser escrito escrevendo em System.GPS.LatitudeNumerator e System.
 
 | Ordem | Caminho                     |
 |-------|--------------------------|
-| 1     | /app1/ifd/gps/{ushort=2} |
+| 1     | /App1/IFD/GPS/{UShort = 2} |
 | 2     | /xmp/exif:gpslatitude    |
 
 
@@ -78,13 +78,13 @@ Esse valor pode ser escrito escrevendo em System.GPS.LatitudeNumerator e System.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Ler caminhos
+### <a name="read-paths"></a>Caminhos de leitura
 
 
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /ifd/gps/{ushort=2}       |             |
+| 1     | /IFD/GPS/{UShort = 2}       |             |
 | 2     | /ifd/xmp/exif:GPSLatitude |             |
 
 
@@ -97,7 +97,7 @@ Esse valor pode ser escrito escrevendo em System.GPS.LatitudeNumerator e System.
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /ifd/gps/{ushort=2}       |             |
+| 1     | /IFD/GPS/{UShort = 2}       |             |
 | 2     | /ifd/xmp/exif:GPSLatitude |             |
 
 
@@ -110,7 +110,7 @@ Esse valor pode ser escrito escrevendo em System.GPS.LatitudeNumerator e System.
 
 | Ordem | Caminho                      |
 |-------|---------------------------|
-| 1     | /ifd/gps/{ushort=2}       |
+| 1     | /IFD/GPS/{UShort = 2}       |
 | 2     | /ifd/xmp/exif:gpslatitude |
 
 
@@ -123,7 +123,7 @@ Esse valor pode ser escrito escrevendo em System.GPS.LatitudeNumerator e System.
 
 <dl> <dt>
 
-[System.GPS.Latitude](../properties/props-system-gps-latitude.md)
+[System. GPS. latitude](../properties/props-system-gps-latitude.md)
 </dt> </dl>
 
  

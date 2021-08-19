@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_FontProperties_Italic
-description: Identifica a propriedade \_ IU PKEY \_ FontProperties \_ Italic.
+description: Identifica a propriedade de itálico da interface do usuário \_ PKEY \_ fontproperties \_ .
 ms.assetid: 53edd88e-ed7e-4385-9fd9-bfa90be348cd
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118438531"
 ---
-# <a name="ui_pkey_fontproperties_italic"></a>Fonte \_ de PKEY \_ da interface do \_ usuárioPropriedades itálico
+# <a name="ui_pkey_fontproperties_italic"></a>Interface do usuário \_ PKEY \_ fontproperties \_ itálico
 
-Identifica a propriedade \_ IU PKEY \_ FontProperties \_ Italic.
+Identifica a propriedade de itálico da interface do usuário \_ PKEY \_ fontproperties \_ .
 
 ```
 propertyDescription
@@ -27,9 +27,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-A \_ interface do usuário \_ PKEY FontProperties Italic é usada por um aplicativo para consultar o \_ estado do botão **Itálico.**
+A interface do usuário \_ PKEY \_ FontProperty \_ Italic é usada por um aplicativo para consultar o estado do botão **itálico** .
 
-O valor da propriedade é da [**enumeração \_ FONTPROPERTIES**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontproperties) da interface do usuário.
+O valor da propriedade é da [**enumeração \_ fontproperties da interface do usuário**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontproperties) .
 
 O valor padrão é `UI_FONTPROPERTIES_NOTSET`.
 
@@ -37,11 +37,11 @@ A tabela a seguir descreve as propriedades e o resultado da interface do usuári
 
 
 
-|    Propriedade                      |       Resultado da interface do usuário                                                       |
+|    Propriedade                      |       Resultado da IU                                                       |
 |----------------------------------|-----------------------------------------------------------------------|
-| `UI_FONTPROPERTIES_NOTAVAILABLE` | **O botão Itálico** está desabilitado e só pode ser definido pelo aplicativo. |
-| `UI_FONTPROPERTIES_NOTSET`       | **O botão Itálico** não está selecionado.                                    |
-| `UI_FONTPROPERTIES_SET`          | **O botão Itálico** está selecionado.                                        |
+| `UI_FONTPROPERTIES_NOTAVAILABLE` | O botão **itálico** está desabilitado e só pode ser definido pelo aplicativo. |
+| `UI_FONTPROPERTIES_NOTSET`       | O botão **itálico** não está selecionado.                                    |
+| `UI_FONTPROPERTIES_SET`          | O botão **itálico** está selecionado.                                        |
 
 
 
@@ -51,10 +51,10 @@ A tabela a seguir descreve as propriedades e o resultado da interface do usuári
 
 <dl> <dt>
 
-[Propriedades do controle de fonte](windowsribbon-reference-properties-fontcontrol.md)
+[Propriedades de controle de fonte](windowsribbon-reference-properties-fontcontrol.md)
 </dt> <dt>
 
-[**\_FONTPROPERTIES da interface do usuário**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontproperties)
+[**fonte de fontes da interface do usuário \_**](/windows/desktop/api/uiribbon/ne-uiribbon-ui_fontproperties)
 </dt> <dt>
 
 [Controle de fonte](windowsribbon-controls-fontcontrol.md)

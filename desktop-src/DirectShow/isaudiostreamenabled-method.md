@@ -14,7 +14,7 @@ ms.locfileid: "117817471"
 # <a name="isaudiostreamenabled-method"></a>Método IsAudioStreamEnabled
 
 > [!Note]  
-> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 
@@ -28,20 +28,20 @@ O `IsAudioStreamEnabled` método recupera um valor que indica se o fluxo de áud
 
 <dl> <dt>
 
-<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*iStream*
+<span id="iStream"></span><span id="istream"></span><span id="ISTREAM"></span>*Istream*
 </dt> <dd>
 
-Especifica o fluxo de áudio como um valor inteiro de 0 a 7.
+Especifica o fluxo de áudio como um valor Inteiro de 0 a 7.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retorna um valor booliano que indica se o fluxo de áudio especificado está disponível para o título atual. Verdadeiro significa que está disponível.
+Retorna um valor booliana que indica se o fluxo de áudio especificado está disponível para o título atual. True significa que ele está disponível.
 
 ## <a name="remarks"></a>Comentários
 
-Embora um disco possa conter até oito fluxos de áudio independentes, cada fluxo não está necessariamente disponível para cada título. Por exemplo, um título de filme principal pode ter três fluxos de áudio para inglês, espanhol e japonês, mas o título "chegando Attractions" pode ter apenas um fluxo de áudio em inglês. Sempre verifique se um fluxo está disponível para um título antes de definir a propriedade [**CurrentAudioStream**](currentaudiostream-property.md) .
+Embora um disco possa conter até oito fluxos de áudio independentes, cada fluxo não está necessariamente disponível para cada título. Por exemplo, um título de filme principal pode ter três fluxos de áudio para inglês, espanhol e japonês, mas o título "Próximas atrações" pode ter apenas um fluxo de áudio em inglês. Sempre verifique se um fluxo está disponível para um título antes de definir a [**propriedade CurrentAudioStream.**](currentaudiostream-property.md)
 
  
 

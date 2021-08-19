@@ -31,7 +31,7 @@ Executa uma negação (y = -x), em todos os componentes de registro.
 
 ## <a name="registers"></a>Registros
 
-Registro de Origem. Para obter mais informações sobre tipos de registro, [consulte ps \_ 1 \_ 1 \_ \_ ps \_ 1 \_ 2 \_ \_ ps \_ 1 \_ 3 \_ \_ ps \_ 1 \_ 4 Registers](dx9-graphics-reference-asm-ps-registers-ps-1-x.md).
+Registro de Origem. Para obter mais informações sobre tipos de registro, [consulte ps \_ 1 \_ \_ \_ 1 ps \_ 1 \_ 2 \_ \_ ps \_ 1 \_ 3 \_ \_ ps \_ 1 \_ 4 Registers](dx9-graphics-reference-asm-ps-registers-ps-1-x.md).
 
 ## <a name="remarks"></a>Comentários
 

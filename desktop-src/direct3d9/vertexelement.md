@@ -1,7 +1,7 @@
 ---
-description: Descreve um elemento Vertex individual em uma declaração de vértice.
+description: Descreve um elemento de vértice individual em uma declaração de vértice.
 ms.assetid: efe3e98b-938d-4d4c-b790-2b8c8aab0ded
-title: Vérticeelement
+title: VertexElement
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 9c2ecef6cfa8c522532599acef1b83343c64edd2b5eca93fe461d8bf8419ada8
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118518847"
 ---
-# <a name="vertexelement"></a>Vérticeelement
+# <a name="vertexelement"></a>VertexElement
 
-Descreve um elemento Vertex individual em uma declaração de vértice.
+Descreve um elemento de vértice individual em uma declaração de vértice.
 
 ``` syntax
 template VertexElement 
@@ -28,9 +28,9 @@ template VertexElement
 
 Em que:
 
--   Tipo de dados de vértice de tipo. Consulte [**D3DDECLTYPE**](./d3ddecltype.md).
--   Método-método de processamento Tessellator. Consulte [**D3DDECLMETHOD**](./d3ddeclmethod.md).
--   Uso pretendido pelo uso dos dados de vértice. Consulte [**D3DDECLUSAGE**](./d3ddeclusage.md).
+-   Tipo – tipo de dados de vértice. Consulte [**D3DDECLTYPE**](./d3ddecltype.md).
+-   Método – método de processamento do Mosaico. Consulte [**D3DDECLMETHOD**](./d3ddeclmethod.md).
+-   Uso – uso pretendido dos dados de vértice. Consulte [**D3DDECLUSAGE**](./d3ddeclusage.md).
 -   UsageIndex – modifica os dados de uso. Consulte [**D3DDECLUSAGE**](./d3ddeclusage.md).
 
 ## <a name="see-also"></a>Confira também

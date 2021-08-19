@@ -3,14 +3,14 @@ title: Manipulando eventos de individualização
 description: Manipulando eventos de individualização
 ms.assetid: f533978f-f366-4900-b784-f51e88393984
 keywords:
-- Windows SDK de formato de mídia, tratando eventos de individualização
-- Windows SDK do formato de mídia, eventos de individualização
-- ASF (Advanced Systems Format), tratando eventos de individualização
-- ASF (formato de sistemas avançados), tratando eventos de individualização
-- ASF (Advanced Systems Format), eventos de individualização
-- ASF (formato de sistemas avançados), eventos de individualização
-- DRM (gerenciamento de direitos digitais), tratando eventos de individualização
-- DRM (gerenciamento de direitos digitais), manipulação de eventos de individualização
+- Windows SDK de Formato de Mídia, manipulando eventos de individualização
+- Windows SDK de Formato de Mídia, eventos de individualização
+- ASF (Advanced Systems Format), manipulando eventos de individualização
+- ASF (Formato de Sistemas Avançados), manipulando eventos de individualização
+- FORMATO DE SISTEMAS Avançados (ASF), eventos de individualização
+- ASF (Formato de Sistemas Avançados), eventos de individualização
+- DRM (gerenciamento de direitos digitais), manipulando eventos de individualização
+- DRM (gerenciamento de direitos digitais), manipulando eventos de individualização
 - DRM (gerenciamento de direitos digitais), eventos de individualização
 - DRM (gerenciamento de direitos digitais), eventos de individualização
 - eventos de individualização
@@ -26,21 +26,21 @@ ms.locfileid: "118433606"
 ---
 # <a name="handling-individualization-events"></a>Manipulando eventos de individualização
 
-Quando um aplicativo habilitado para DRM tenta abrir um arquivo protegido, o componente DRM examina o atributo [**DRM \_ DRMHeader \_ IndividualizedVersion**](drm-drmheader-individualizedversion.md) no arquivo, que especifica o nível mínimo de versão necessário para acessar o conteúdo. todos os níveis do componente DRM funcionam com todas as versões 7,0 e posteriores do Windows Media Player e o SDK do formato de mídia do Windows. Se o nível de versão individual do componente DRM for menor do que a versão necessária, o componente DRM enviará um evento de **\_ \_ individualização de WMT precisará** para o método [**IWMStatusCallback:: OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) do aplicativo. O aplicativo deve exibir uma mensagem ou caixa de diálogo solicitando que os usuários iniciem ou cancelem a atualização de segurança. Esse prompt é necessário porque, por motivos de privacidade, os usuários devem conceder sua permissão antes que uma atualização de segurança seja instalada em seu computador.
+Quando um aplicativo habilitado para DRM tenta abrir um arquivo protegido, o componente DRM examina o atributo [**\_ DRM DRMHeader \_ IndividualizedVersion**](drm-drmheader-individualizedversion.md) no arquivo, que especifica o nível mínimo de versão necessário para acessar o conteúdo. Todos os níveis do componente DRM funcionam com todas as versões 7.0 e posteriores do Windows Media Player e o SDK Windows Formato de Mídia. Se o nível de versão individualizado do componente DRM for inferior à versão necessária, o componente DRM enviará um evento **WMT \_ NEEDS \_ INDIVIDUALIZATION** para o método [**IWMStatusCallback::OnStatus**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmstatuscallback-onstatus) do aplicativo. Em seguida, o aplicativo deve exibir uma mensagem ou caixa de diálogo solicitando que os usuários iniciem ou cancelem a atualização de segurança. Esse prompt é necessário porque, por motivos de privacidade, os usuários devem dar suas permissões antes que uma atualização de segurança seja instalada em seu computador.
 
 > [!Note]  
-> O cabeçalho do conteúdo especifica apenas os dois primeiros dígitos para DRM \_ DRMVersion \_ IndividualizedVersion. Em outras palavras, para exigir um componente 2.2.0.1 DRM de nível, o cabeçalho conterá "2,2".
+> O título do conteúdo especifica apenas os dois primeiros dígitos para \_ DRM DRMVersion \_ IndividualizedVersion. Em outras palavras, para exigir um componente DRM de nível 2.2.0.1, o header conteria "2.2".
 
  
 
-Para iniciar a atualização de segurança e/ou disparar a individualização, chame o método [**IWMDRMReader:: individual**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-individualize) com o parâmetro *dwFlags* definido como 1.
+Para iniciar a atualização de segurança e/ou disparar a individualização, chame o método [**IWMDRMReader::Individualize**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmdrmreader-individualize) com o parâmetro *dwFlags* definido como 1.
 
-Você deve manipular o **evento \_ individual WMT** em seu aplicativo. Esse evento será acionado várias vezes pelo componente DRM com o status do processo de individualização indicado *no parâmetro atingir* , que é convertido em um ponteiro para uma estrutura de [**\_ \_ status individual do WM**](wm-individualize-status.md) .
+Você deve manipular o **evento WMT \_ INDIVIDUALIZE** em seu aplicativo. Esse evento será acionado várias vezes pelo componente DRM com o status do processo de individualização indicado no parâmetro *pValue,* que é lançado em um ponteiro para uma estrutura [**WM \_ INDIVIDUALIZE \_ STATUS.**](wm-individualize-status.md)
 
-Depois que o componente DRM for individualizado com êxito, o aplicativo receberá um evento **WMT \_ no \_ Rights \_ ex** , indicando que o aplicativo agora pode continuar a adquirir uma licença para o conteúdo.
+Depois que o componente DRM for individualizado com êxito, o aplicativo receberá um evento **WMT \_ NO RIGHTS \_ \_ EX,** indicando que o aplicativo agora pode prosseguir para adquirir uma licença para o conteúdo.
 
 > [!Note]  
-> O DRM não é compatível com a versão baseada em x64 deste SDK.
+> O DRM não é suportado pela versão baseada em x64 deste SDK.
 
  
 
@@ -48,13 +48,13 @@ Depois que o componente DRM for individualizado com êxito, o aplicativo receber
 
 <dl> <dt>
 
-[**Lidando com eventos de aquisição de licença**](handling-license-acquisition-events.md)
+[**Manipulando eventos de aquisição de licença**](handling-license-acquisition-events.md)
 </dt> <dt>
 
 [**Individualizando aplicativos DRM**](individualizing-drm-applications.md)
 </dt> <dt>
 
-[**Interface IWMDRMReader**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader)
+[**IWMDRMReader Interface**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmdrmreader)
 </dt> </dl>
 
  

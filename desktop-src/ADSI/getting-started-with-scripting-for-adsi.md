@@ -18,7 +18,7 @@ ms.locfileid: "117839949"
 
 O script é útil para administradores de sistema que querem criar scripts em lotes para tarefas usadas com frequência.
 
-Para iniciar o script com ADSI, você deve ter um computador que executa Windows ou estar conectado a um domínio que contenha dados para contas de computador no diretório.
+Para iniciar o script com ADSI, você deve ter um computador que seja executado Windows ou estar conectado a um domínio que contenha dados para contas de computador no diretório.
 
 ## <a name="a-simple-scripting-sample-finding-names-and-locations-of-computer-accounts"></a>Um exemplo de script simples: localizando nomes e locais de contas de computador
 

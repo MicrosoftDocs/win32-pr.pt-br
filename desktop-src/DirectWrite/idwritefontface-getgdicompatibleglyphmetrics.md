@@ -1,11 +1,11 @@
 ---
-title: Método IDWriteFontFace GetGdiCompatibleGlyphMetrics
-description: Obtém métricas de glifo em unidades de design de fonte com os valores de retorno compatíveis com o que o GDI produziria.
+title: Método GetGdiCompatibleGlyphMetrics de IDWriteFontFace
+description: Obtém métricas de glifo em unidades de design de fonte com os valores de retorno compatíveis com o que a GDI produziria.
 ms.assetid: 7bda3916-6db3-4f56-b18c-288506c0b646
 keywords:
-- Gravação direta do método GetGdiCompatibleGlyphMetrics
-- Método GetGdiCompatibleGlyphMetrics Direct Write, interface IDWriteFontFace
-- IDWriteFontFace interface de gravação direta, método GetGdiCompatibleGlyphMetrics
+- Método GetGdiCompatibleGlyphMetrics Direct Write
+- Método GetGdiCompatibleGlyphMetrics Direct Write , interface IDWriteFontFace
+- Método Direct Write , GetGdiCompatibleGlyphMetrics da interface IDWriteFontFace
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117816496"
 ---
-# <a name="idwritefontfacegetgdicompatibleglyphmetrics-method"></a>Método IDWriteFontFace:: GetGdiCompatibleGlyphMetrics
+# <a name="idwritefontfacegetgdicompatibleglyphmetrics-method"></a>Método IDWriteFontFace::GetGdiCompatibleGlyphMetrics
 
-Obtém métricas de glifo em unidades de design de fonte com os valores de retorno compatíveis com o que o GDI produziria.
+Obtém métricas de glifo em unidades de design de fonte com os valores de retorno compatíveis com o que a GDI produziria.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,7 +52,7 @@ virtual HRESULT GetGdiCompatibleGlyphMetrics(
 *emSize* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 O tamanho ogical da fonte em unidades DIP.
 
@@ -61,63 +61,63 @@ O tamanho ogical da fonte em unidades DIP.
 *pixelsPerDip* 
 </dt> <dd>
 
-Tipo: **float**
+Tipo: **FLOAT**
 
 O número de pixels físicos por DIP.
 
 </dd> <dt>
 
-*transformar* \[ em, opcional\]
+*transformação* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **\* [**\_ matriz DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) const**
+Tipo: **const [**DWRITE \_ MATRIX**](/windows/win32/api/dwrite/ns-dwrite-dwrite_matrix) \***
 
-Uma transformação opcional aplicada aos glifos e às suas posições. Essa transformação é aplicada após o dimensionamento especificado pelo tamanho da fonte e *pixelsPerDip*.
+Uma transformação opcional aplicada aos glifos e suas posições. Essa transformação é aplicada após o dimensionamento especificado pelo tamanho da fonte e *pixelsPerDip.*
 
 </dd> <dt>
 
 *useGdiNatural* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Quando definido como **false**, as métricas são as mesmas que as métricas de texto com alias GDI. Quando definido como **true**, as métricas são as mesmas que as métricas de texto medido por GDI usando uma fonte criada com a **\_ \_ qualidade natural de ClearType**.
+Quando definidas como **FALSE,** as métricas são as mesmas que as métricas do texto com alias GDI. Quando definidas como **TRUE,** as métricas são as mesmas que as métricas de texto medida pela GDI usando uma fonte criada com **CLEARTYPE \_ NATURAL \_ QUALITY**.
 
 </dd> <dt>
 
-*glyphIndices* \[ no\]
+*glifoIndices* \[ Em\]
 </dt> <dd>
 
 Tipo: **const UINT16 \***
 
-Uma matriz de índices de glifo para os quais computar as métricas.
+Uma matriz de índices de glifo para os quais calcular as métricas.
 
 </dd> <dt>
 
-*glyphCount* 
+*glifoCount* 
 </dt> <dd>
 
 Tipo: **UINT32**
 
-O número de elementos na matriz *glyphIndices* .
+O número de elementos na *matriz glifoIndices.*
 
 </dd> <dt>
 
-*glyphMetrics* \[ fora\]
+*glifoMetrics* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ métricas de glifo DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics)\***
+Tipo: **[ **DWRITE \_ \_ MÉTRICAS DE GLIFO**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics)\***
 
-Uma matriz de estruturas de [**\_ \_ métricas de glifo DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics) preenchidas por essa função. As métricas estão em unidades de design de fontes.
+Uma matriz de [**estruturas \_ \_ MÉTRICAS de GLIFO DWRITE**](/windows/win32/api/dwrite/ns-dwrite-dwrite_glyph_metrics) preenchidas por essa função. As métricas estão em unidades de design de fonte.
 
 </dd> <dt>
 
-*islaterals* 
+*isSideways* 
 </dt> <dd>
 
-Tipo: **bool**
+Tipo: **BOOL**
 
-Um valor BOOL que indica se a fonte está sendo usada em uma execução lateral. Isso pode afetar as métricas de glifo se a fonte tiver uma simulação oblíqua porque a simulação de oblíquo lateral difere da simulação oblíqua não lateral.
+Um valor BOOL que indica se a fonte está sendo usada em uma operação lateral. Isso poderá afetar as métricas de glifo se a fonte tiver simulação oblíqua porque a simulação oblíqua lateral é diferente da simulação oblíqua não lateral.
 
 </dd> </dl>
 
@@ -125,7 +125,7 @@ Um valor BOOL que indica se a fonte está sendo usada em uma execução lateral.
 
 Tipo: **HRESULT**
 
-Código de erro **HRESULT** padrão. Se qualquer um dos índices de glifos de entrada estiver fora do intervalo de índice de glifo válido para o tipo de fonte atual, **E \_ INVALIDARG** será retornado.
+Código **de erro HRESULT** padrão. Se qualquer um dos índices de glifo de entrada estiver fora do intervalo de índice de glifo válido para a face da fonte atual, **E \_ INVALIDARG** será retornado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -133,7 +133,7 @@ Código de erro **HRESULT** padrão. Se qualquer um dos índices de glifos de en
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Dwrite. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

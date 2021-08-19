@@ -1,29 +1,29 @@
 ---
-description: Lista as ferramentas que são usadas no rastreamento de eventos.
+description: Lista as ferramentas usadas no rastreamento de eventos.
 ms.assetid: 7a1c9d8c-5bf4-4f0c-b815-5b70e53c5e2d
-title: Ferramentas de rastreamento de eventos
+title: Ferramentas de Rastreamento de Eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf1cb68e3d04be53f5a99c9e319540fd49f02000
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03050abe119dff7017cb4025fd3336b2b1b898095c366a3e61aaca9390aa6c79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814766"
 ---
-# <a name="event-tracing-tools"></a>Ferramentas de rastreamento de eventos
+# <a name="event-tracing-tools"></a>Ferramentas de Rastreamento de Eventos
 
-As seguintes ferramentas de rastreamento de eventos estão disponíveis para seu uso.
+As ferramentas de rastreamento de eventos a seguir estão disponíveis para seu uso.
 
 
 
 | Ferramenta     | Descrição                                                                                                                                                                                                                                                                                                                                |
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Logman   | Gerencia e agenda as coleções de log de rastreamento de eventos e contador de desempenho em sistemas locais e remotos. Você pode usar essa ferramenta para listar os provedores que [publicaram o layout de seus dados de evento](publishing-your-event-schema.md) no \\ namespace raiz WMI. Para obter detalhes sobre como usar essa ferramenta, consulte o **centro de ajuda e suporte**. |
-| Tracefmt | Formata informações em um arquivo de log de rastreamento em formato legível. Para obter detalhes, consulte ferramentas para rastreamento de software no Microsoft Windows Driver Development Kit (DDK). Usado somente pelo rastreamento de software do WPP.                                                                                                                                      |
-| Tracelog | Controla uma sessão de rastreamento de eventos. Para obter detalhes, consulte ferramentas para rastreamento de software no DDK.                                                                                                                                                                                                                                                   |
-| Tracepdb | Cria um arquivo de formato de mensagem de rastreamento que a ferramenta tracefmt usa para converter mensagens registradas em um formulário legível. Para obter detalhes, consulte ferramentas para rastreamento de software no DDK. Usado somente pelo rastreamento de software do WPP.                                                                                                                            |
-| Tracerpt | Processa logs de rastreamento de eventos ou eventos em tempo real de provedores de rastreamento de eventos instrumentados e permite gerar relatórios de análise de rastreamento e arquivos CSV (delimitados por vírgula) para os eventos gerados. Para obter detalhes, consulte o **centro de ajuda e suporte**.                                                                                       |
+| Logman   | Gerencia e agenda coleções de log de rastreamento de eventos e contador de desempenho em sistemas locais e remotos. Você pode usar essa ferramenta para listar os provedores que publicaram o layout de seus dados [de](publishing-your-event-schema.md) evento no \\ namespace wmi raiz. Para obter detalhes sobre como usar essa ferramenta, consulte **o Centro de Ajuda e Suporte**. |
+| Tracefmt | Formatar informações em um arquivo de log de rastreamento em formato acessível por humanos. Para obter detalhes, consulte Ferramentas para rastreamento de software no DDK (Microsoft Windows Driver Development Kit). Usado somente pelo Rastreamento de Software WPP.                                                                                                                                      |
+| Tracelog | Controla uma sessão de rastreamento de eventos. Para obter detalhes, consulte Ferramentas para rastreamento de software no DDK.                                                                                                                                                                                                                                                   |
+| Tracepdb | Cria um arquivo de formato de mensagem de rastreamento que a ferramenta Tracefmt usa para converter mensagens registradas em um formulário acessível por humanos. Para obter detalhes, consulte Ferramentas para rastreamento de software no DDK. Usado somente pelo Rastreamento de Software WPP.                                                                                                                            |
+| Tracerpt | Processa logs de rastreamento de eventos ou eventos em tempo real de provedores de rastreamento de eventos instrumentados e permite que você gere relatórios de análise de rastreamento e arquivos CSV (delimitados por vírgula) para os eventos gerados. Para obter detalhes, consulte o **Centro de Ajuda e Suporte**.                                                                                       |
 
 
 

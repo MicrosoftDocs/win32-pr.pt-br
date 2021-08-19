@@ -1,6 +1,6 @@
 ---
-title: Funções (entrada Windows toque)
-description: Esta seção contém funções para Windows entrada touch.
+title: funções (Windows entrada por toque)
+description: esta seção contém funções para Windows entrada por toque.
 ms.assetid: 6c64ed75-37ac-47ae-b39e-bdf10d2b5211
 keywords:
 - Windows Toque, funções
@@ -13,22 +13,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118435322"
 ---
-# <a name="functions-windows-touch-input"></a>Funções (entrada Windows toque)
+# <a name="functions-windows-touch-input"></a>funções (Windows entrada por toque)
 
-Esta seção contém funções para Windows entrada touch.
+esta seção contém funções para Windows entrada por toque.
 
-As funções a seguir são usadas para Windows entrada touch.
+as funções a seguir são usadas para Windows entrada por toque.
 
 
 
 | Função                                                                                               | Descrição                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| [**CloseTouchInputHandle**](/windows/desktop/api/winuser/nf-winuser-closetouchinputhandle)                                                 | Fecha um alça de entrada de toque, libera a memória do processo associada a ele e invalida o alça.                                       |
-| [**GetTouchInputInfo**](/windows/desktop/api/winuser/nf-winuser-gettouchinputinfo)                                                         | Recupera informações detalhadas sobre entradas de toque associadas a uma alça de entrada de toque específica.                                        |
-| [**IsTouchWindow**](/windows/desktop/api/winuser/nf-winuser-istouchwindow)                                                                 | Verifica se uma janela especificada é sensível ao toque e, opcionalmente, recupera os sinalizadores modificador definidos para a funcionalidade de toque da janela. |
-| [**RegisterTouchWindow**](/windows/desktop/api/winuser/nf-winuser-registertouchwindow)                                                     | Registra uma janela como com capacidade de toque.                                                                                              |
-| [**UnregisterTouchWindow**](/windows/desktop/api/winuser/nf-winuser-unregistertouchwindow)                                                 | Registra uma janela como não sendo mais sensível ao toque.                                                                                    |
-| [Funções SendMessage, PostMessage e Related](sendmessage--postmessage--and-related-functions.md) | Contém considerações sobre o encaminhamento de mensagens.                                                                                      |
+| [**CloseTouchInputHandle**](/windows/desktop/api/winuser/nf-winuser-closetouchinputhandle)                                                 | Fecha um identificador de entrada por toque, libera a memória de processo associada a ele e invalida o identificador.                                       |
+| [**GetTouchInputInfo**](/windows/desktop/api/winuser/nf-winuser-gettouchinputinfo)                                                         | Recupera informações detalhadas sobre as entradas de toque associadas a um identificador de entrada de toque específico.                                        |
+| [**IsTouchWindow**](/windows/desktop/api/winuser/nf-winuser-istouchwindow)                                                                 | Verifica se uma janela especificada é compatível com toque e, opcionalmente, recupera os sinalizadores modificadores definidos para o recurso de toque da janela. |
+| [**RegisterTouchWindow**](/windows/desktop/api/winuser/nf-winuser-registertouchwindow)                                                     | Registra uma janela como sendo compatível com toque.                                                                                              |
+| [**UnregisterTouchWindow**](/windows/desktop/api/winuser/nf-winuser-unregistertouchwindow)                                                 | Registra uma janela como não está mais sendo compatível com toque.                                                                                    |
+| [SendMessage, mensagem de mensagens e funções relacionadas](sendmessage--postmessage--and-related-functions.md) | Contém considerações sobre o encaminhamento de mensagens.                                                                                      |
 
 
 
@@ -38,10 +38,10 @@ As funções a seguir são usadas para Windows entrada touch.
 
 <dl> <dt>
 
-[Windows Entrada de toque](multi-touch-input.md)
+[Windows Entrada por toque](multi-touch-input.md)
 </dt> <dt>
 
-[Windows Guia de Programação de Entrada por Toque](guide-multi-touch-input.md)
+[Windows Guia de programação de entrada por toque](guide-multi-touch-input.md)
 </dt> </dl>
 
  

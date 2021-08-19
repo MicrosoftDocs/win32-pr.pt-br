@@ -1,7 +1,7 @@
 ---
 description: Indica se um fluxo contém conteúdo protegido.
 ms.assetid: 1c1a201c-4b55-4b86-a08f-d06c1a7db29d
-title: MF_SD_PROTECTED atributo (Mfidl.h)
+title: Atributo MF_SD_PROTECTED (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 22ae6cf92b3ada6309de7e92a722db38c88ce94a8af88aa6cc0176f738ff194b
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118474044"
 ---
-# <a name="mf_sd_protected-attribute"></a>Atributo MF \_ SD \_ PROTECTED
+# <a name="mf_sd_protected-attribute"></a>\_ \_ Atributo protegido do MF SD
 
 Indica se um fluxo contém conteúdo protegido.
 
@@ -19,17 +19,17 @@ Indica se um fluxo contém conteúdo protegido.
 
 **UINT32**
 
-Trate como um valor booliana.
+Tratar como um valor booliano.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo se aplica a descritores de fluxo. Se o valor do atributo for **TRUE,** o fluxo conterá conteúdo protegido. Se o valor for **FALSE** ou se o atributo não estiver definido, o fluxo conterá conteúdo não definido.
+Esse atributo se aplica a descritores de fluxo. Se o valor do atributo for **true**, o fluxo conterá conteúdo protegido. Se o valor for **false** ou o atributo não estiver definido, o fluxo conterá limpar conteúdo.
 
-Em vez de verificar cada fluxo para esse atributo, você pode passar um descritor de apresentação para a [**função MFRequireProtectedEnvironment.**](/windows/desktop/api/mfidl/nf-mfidl-mfrequireprotectedenvironment) Essa função testa se o descritor de apresentação contém fluxos protegidos.
+Em vez de verificar cada fluxo para esse atributo, você pode passar um descritor de apresentação para a função [**MFRequireProtectedEnvironment**](/windows/desktop/api/mfidl/nf-mfidl-mfrequireprotectedenvironment) . Essa função testa se o descritor de apresentação contém quaisquer fluxos protegidos.
 
-Uma fonte de mídia deverá definir esse atributo no descritor de fluxo se o conteúdo exigir o caminho de mídia protegido (PMP).
+Uma fonte de mídia deve definir esse atributo no descritor de fluxo se o conteúdo exigir o caminho de mídia protegido (PMP).
 
-A constante GUID para esse atributo é exportada de mfuuid.lib.
+A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 ## <a name="examples"></a>Exemplos
 
@@ -54,9 +54,9 @@ BOOL StreamHasProtectedContent(IMFStreamDescriptor *pSD)
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Aplicativos \| UWP de aplicativos da área de trabalho do Vista\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP do Server 2008 Desktop \|\]<br/>                        |
-| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos de aplicativos UWP do vista desktop \|\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows \[Aplicativos da área de trabalho do servidor 2008 \| aplicativo UWP\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 
@@ -64,13 +64,13 @@ BOOL StreamHasProtectedContent(IMFStreamDescriptor *pSD)
 
 <dl> <dt>
 
-[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFStreamDescriptor**](/windows/desktop/api/mfidl/nn-mfidl-imfstreamdescriptor)

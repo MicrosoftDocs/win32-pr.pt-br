@@ -1,7 +1,7 @@
 ---
 description: Converte um fluxo de vídeo entre formatos de cor.
 ms.assetid: 1c15dc2b-0e69-4d16-af02-8056a1eb2c5c
-title: DSP do Conversor de Cores (Wmcodecdsp.h)
+title: Conversor de cores DSP (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 3e97db9f3131ed7cea9076255005149544363ba8d6b548736a211973cda3999d
@@ -11,20 +11,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117880658"
 ---
-# <a name="color-converter-dsp"></a>DSP do Conversor de Cores
+# <a name="color-converter-dsp"></a>DSP de conversor de cores
 
 Converte um fluxo de vídeo entre formatos de cor.
 
 ## <a name="clsid"></a>CLSID
 
-CLSID \_ CColorConvertDMO
+\_CCOLORCONVERTDMO CLSID
 
 ## <a name="interfaces"></a>Interfaces
 
--   [**Imediaobject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject)
+-   [**IMediaObject**](/previous-versions/windows/desktop/api/mediaobj/nn-mediaobj-imediaobject)
 -   [**IMFRealTimeClient**](/windows/desktop/api/mfidl/nn-mfidl-imfrealtimeclient)
 -   [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
--   [**Ipropertystore**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+-   [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 -   [IWMColorConvProps](/windows/desktop/api/wmcodecdsp/nn-wmcodecdsp-iwmcolorconvprops)
 
 ## <a name="input-formats"></a>Formatos de entrada
@@ -47,7 +47,7 @@ CLSID \_ CColorConvertDMO
 -   Y42T
 -   YUY2
 -   YV12
--   Y LTD9
+-   YVU9
 -   YVYU
 
 ## <a name="output-formats"></a>Formatos de saída
@@ -75,21 +75,21 @@ CLSID \_ CColorConvertDMO
 -   [MFPKEY \_ COLORCONV \_ SRCTOP](mfpkey-colorconv-srctop.md)
 -   [MFPKEY \_ COLORCONV \_ DSTLEFT](mfpkey-colorconv-dstleft.md)
 -   [MFPKEY \_ COLORCONV \_ DSTTOP](mfpkey-colorconv-dsttop.md)
--   [MFPKEY \_ COLORCONV \_ WIDTH](mfpkey-colorconv-width.md)
--   [MFPKEY \_ COLORCONV \_ HEIGHT](mfpkey-colorconv-height.md)
--   [MODO MFPKEY \_ \_ COLORCONV](mfpkey-colorconv-mode.md)
+-   [\_largura de COLORCONV MFPKEY \_](mfpkey-colorconv-width.md)
+-   [\_altura de COLORCONV MFPKEY \_](mfpkey-colorconv-height.md)
+-   [\_modo de COLORCONV MFPKEY \_](mfpkey-colorconv-mode.md)
 
 ## <a name="remarks"></a>Comentários
 
-O DSP do Conversor de Cores é implementado como um objeto COM que pode atuar como um objeto directXMedia (DMO) ou uma transformação Media Foundation (MFT). O objeto tem um CLSID (identificador de classe única), independentemente de atuar como um DMO ou um MFT. Para obter informações sobre quando um DSP atua como um DMO ou um MFT, consulte [Processadores de sinal digital](windowsmediadigitalsignalprocessors.md).
+o DSP do conversor de cores é implementado como um objeto COM que pode agir como um objeto DirectXMedia (DMO) ou uma Media Foundation transformação (MFT). o objeto tem um único identificador de classe (CLSID), independentemente de agir como um DMO ou um MFT. para obter informações sobre quando um DSP atua como um DMO ou uma MFT, consulte [processadores de sinais digitais](windowsmediadigitalsignalprocessors.md).
 
-Os GUIDs (identificadores globalmente exclusivos) para subtipos de mídia RGB diferem dependendo se um DSP está atuando como um DMO ou um MFT. Os GUIDs para subtipos de mídia não RGB são os mesmos, independentemente de um DSP estar atuando como um DMO ou um MFT. Para obter informações sobre os GUIDs que representam subtipos de mídia, consulte [GUIDs de subtipo de vídeo](video-subtype-guids.md).
+os identificadores globalmente exclusivos (guids) para subtipos de mídia RGB diferem dependendo se um DSP está agindo como um DMO ou um MFT. os guids para subtipos de mídia não RGB são os mesmos, independentemente de um DSP estar agindo como um DMO ou um MFT. Para obter informações sobre os GUIDs que representam subtipos de mídia, consulte [GUIDs de subtipo de vídeo](video-subtype-guids.md).
 
-Por padrão, esse DSP copia toda a imagem de origem para o buffer de saída. Opcionalmente, você pode especificar retângulos de origem e de destino. O DSP copia a parte da imagem de origem definida pelo retângulo de origem e a grava no retângulo de destino no buffer de saída. O DSP não executa nenhum dimensionamento; os retângulos de origem e de destino devem ter o mesmo tamanho. Os retângulos de origem e destino não podem exceder os limites do quadro de vídeo.
+Por padrão, esse DSP copia a imagem de origem inteira para o buffer de saída. Opcionalmente, você pode especificar retângulos de origem e de destino. O DSP copia a parte da imagem de origem definida pelo retângulo de origem e a grava no retângulo de destino no buffer de saída. O DSP não executa nenhum dimensionamento; os retângulos de origem e de destino devem ter o mesmo tamanho. Os retângulos de origem e de destino não podem exceder os limites do quadro de vídeo.
 
-Todas as propriedades, exceto [**MFPKEY \_ COLORCONV \_ MODE,**](mfpkey-colorconv-mode.md) devem ser definidas em um grupo. Se você definir qualquer uma dessas propriedades, deverá definir todas as outras. Caso contrário, os retângulos de origem e de destino poderão ser inválidos; nesse caso, os métodos [**IMFTransform::P rocessOutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) e [**IMediaObject::P rocessOutput**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-processoutput) retornarão **E \_ INVALIDARG.**
+Todas as propriedades, exceto [**o \_ \_ modo MFPKEY COLORCONV**](mfpkey-colorconv-mode.md) , devem ser definidas em um grupo. Se você definir qualquer uma dessas propriedades, deverá definir todas as outras. Caso contrário, os retângulos de origem e de destino podem ser inválidos. nesse caso, os métodos [**IMFTransform::P rocessoutput**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-processoutput) e [**IMediaObject::P Rocessoutput**](/previous-versions/windows/desktop/api/mediaobj/nf-mediaobj-imediaobject-processoutput) retornarão **E \_ INVALIDARG**.
 
-O conversor de cores não dá suporte a todas as combinações de formato de entrada e formato de saída. Normalmente, você deve definir o formato de mídia que você conhece, entrada ou saída e, em seguida, enumerar os formatos disponíveis no fluxo oposto.
+O conversor de cores não oferece suporte a todas as combinações de formato de entrada e saída. Normalmente, você deve definir o formato de mídia que você conhece, entrada ou saída e, em seguida, enumerar os formatos disponíveis no fluxo oposto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,9 +97,9 @@ O conversor de cores não dá suporte a todas as combinações de formato de ent
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Colorcnv.dll</dt> </dl> |
 
 
@@ -108,7 +108,7 @@ O conversor de cores não dá suporte a todas as combinações de formato de ent
 
 <dl> <dt>
 
-[Processadores de sinal digital](windowsmediadigitalsignalprocessors.md)
+[Processadores de sinais digitais](windowsmediadigitalsignalprocessors.md)
 </dt> </dl>
 
  

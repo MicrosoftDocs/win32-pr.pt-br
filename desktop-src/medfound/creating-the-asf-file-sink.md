@@ -30,7 +30,7 @@ Considere [**MFCreateASFMediaSinkActivate**](/windows/desktop/api/wmcontainer/nf
 
      
 
--   As informações de fluxo são configuradas no objeto ContentInfo. Desaprovado na próxima subseção.
+-   As informações de fluxo são configuradas no objeto ContentInfo. Sem sucesso na próxima subseção.
 
 Depois de criar o sink de arquivo ASF, ele deve ser configurado antes de criar a topologia. O sink de arquivo precisa saber as informações a seguir para gerar o arquivo de saída.
 

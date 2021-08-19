@@ -1,7 +1,7 @@
 ---
-description: Propriedade ShellFolderView. Folder – Obtém um objeto Folder que representa a exibição.
+description: Propriedade ShellFolderView.Folder – Obtém um objeto Folder que representa a exibição.
 ms.assetid: 8f3e7827-f2a0-4ce9-b3e9-e6316ec58863
-title: Propriedade ShellFolderView. Folder (shldisp. h)
+title: Propriedade ShellFolderView.Folder (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117857705"
 ---
-# <a name="shellfolderviewfolder-property"></a>Propriedade ShellFolderView. Folder
+# <a name="shellfolderviewfolder-property"></a>Propriedade ShellFolderView.Folder
 
-Obtém um objeto [**Folder**](folder.md) que representa a exibição.
+Obtém [**um objeto**](folder.md) Folder que representa a exibição.
 
 Esta propriedade é somente para leitura.
 
@@ -37,15 +37,15 @@ Folder = ShellFolderView.Folder
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Objeto que recebe o objeto de [**pasta**](folder.md) .
+Objeto que recebe o [**objeto Pasta.**](folder.md)
 
 ## <a name="remarks"></a>Comentários
 
-A **pasta** só pode ser chamada no sistema local. Ele não funcionará quando for executado em uma página da Web por HTTP ou UNC.
+**A** pasta só pode ser chamada no sistema local. Ele não funcionará quando executado em uma página da Web por HTTP ou UNC.
 
 ## <a name="examples"></a>Exemplos
 
-o exemplo a seguir mostra o uso apropriado dessa propriedade para JScript inserido em HTML.
+O exemplo a seguir mostra o uso adequado dessa propriedade para JScript inserido em HTML.
 
 
 ```JScript
@@ -99,11 +99,11 @@ o exemplo a seguir mostra o uso apropriado dessa propriedade para JScript inseri
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4,71 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |
 
 
 

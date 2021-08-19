@@ -1,6 +1,6 @@
 ---
-title: callnz bool - ps
-description: Chame se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo. | callnz bool - ps
+title: callnz bool-PS
+description: Chamar se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo. | callnz bool-PS
 ms.assetid: 1b9ff276-c2b8-46cc-96ac-a5b5455c5cc0
 ms.topic: reference
 ms.date: 05/31/2018
@@ -16,15 +16,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118516619"
 ---
-# <a name="callnz-bool---ps"></a>callnz bool - ps
+# <a name="callnz-bool---ps"></a>callnz bool-PS
 
-Chame se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo.
+Chamar se não for zero. Executa uma chamada condicional para a instrução marcada pelo índice de rótulo.
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| callnz l \# , \[ ! \] B\# |
+| callnz l \# , \[ ! \] b\# |
 |----------------------|
 
 
@@ -33,17 +33,17 @@ Chame se não for zero. Executa uma chamada condicional para a instrução marca
 
 Em que:
 
--   l \# é um rótulo – [ps](label---ps.md) marcando o início da sub-rotina a ser chamada.
--   \[!\] é um modificador de negação opcional.
--   b \# identifica um Registro [Booliana Constante](dx9-graphics-reference-asm-ps-registers-constant-boolean.md).
+-   l \# é um [rótulo-PS](label---ps.md) marcando o início da sub-rotina a ser chamada.
+-   \[!\] é um modificador opcional de negação.
+-   b \# identifica um [registro booliano constante](dx9-graphics-reference-asm-ps-registers-constant-boolean.md).
 
 ## <a name="remarks"></a>Comentários
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| callnz bool           |      |      |      |      |      | x    | x     | x    | x     |
+| bool callnz           |      |      |      |      |      | x    | x     | x    | x     |
 
 
 

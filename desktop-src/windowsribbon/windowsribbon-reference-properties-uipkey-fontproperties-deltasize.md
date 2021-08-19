@@ -31,7 +31,7 @@ A interface do usuário \_ \_ PKEY FontProperties \_ DeltaSize é usada por um a
 
 UI PKEY FontProperties DeltaSize está incluído na interface do usuário \_ \_ \_ [ \_ PKEY \_ FontProperties \_ ChangedProperties](windowsribbon-reference-properties-uipkey-fontproperties-changedproperties.md).
 
-A captura de tela a seguir mostra os **botões Aumentar e** Reduzir fonte da Faixa de Opções [**FontControl.**](windowsribbon-element-fontcontrol.md) 
+A captura de tela a seguir mostra os **botões Crescimento da** fonte e **Redução** de fonte do FontControl da Faixa [**de Opções.**](windowsribbon-element-fontcontrol.md)
 
 ![captura de tela dos botões de redução de fonte e de crescimento de fonte no controle de fonte.](images/markup/fontcontrol-incdec.png)
 

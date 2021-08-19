@@ -24,7 +24,7 @@ Especifica a origem de uma marca d' água em relação à origem do PageImageabl
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
 | Prefixo de escopo <br/> | ?<br/>                            |

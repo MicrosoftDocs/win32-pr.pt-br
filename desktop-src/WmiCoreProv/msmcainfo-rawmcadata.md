@@ -1,5 +1,5 @@
 ---
-description: Especifica os logs da arquitetura de verificação de máquina (MCA) brutos. Essa classe está disponível somente em sistemas Windows de 64 bits.
+description: Especifica os logs da arquitetura de verificação de máquina (MCA) brutos. essa classe está disponível somente em sistemas Windows de 64 bits.
 ms.assetid: d465ba8d-14b2-4911-ae19-19ebeb32126e
 title: Classe MSMCAInfo_RawMCAData
 ms.topic: reference
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: 6cafc16ddbc91181cc2114def07a193941988228
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2b7ac9f8c474a1aee55d0dd70a5a838102aec66bc8b3ba3d867070430c38a3ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501672"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821860"
 ---
 # <a name="msmcainfo_rawmcadata-class"></a>\_Classe MSMCAInfo RawMCAData
 
-O **MSMCAInfo \_ RawMCAData** especifica os logs da arquitetura de verificação de máquina (MCA) brutos. Essa classe está disponível somente em sistemas Windows de 64 bits.
+O **MSMCAInfo \_ RawMCAData** especifica os logs da arquitetura de verificação de máquina (MCA) brutos. essa classe está disponível somente em sistemas Windows de 64 bits.
 
 A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 

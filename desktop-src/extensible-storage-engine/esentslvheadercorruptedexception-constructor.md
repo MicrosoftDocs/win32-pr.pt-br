@@ -33,8 +33,8 @@ ms.locfileid: "118490663"
 ---
 # <a name="esentslvheadercorruptedexception-constructor"></a>Construtor EsentSLVHeaderCorruptedException
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public EsentSLVHeaderCorruptedException()
 
 [Classe EsentSLVHeaderCorruptedException](./esentslvheadercorruptedexception-class.md)
 
-[Membros do EsentSLVHeaderCorruptedException](./esentslvheadercorruptedexception-members.md)
+[Membros EsentSLVHeaderCorruptedException](./esentslvheadercorruptedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

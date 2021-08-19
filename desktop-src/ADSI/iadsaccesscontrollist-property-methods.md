@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADsAccessControlList (IADs. h)
-description: Os métodos de propriedade da interface IADsAccessControlList obtêm ou definem as propriedades descritas na tabela a seguir. Para obter mais informações, consulte interface Property Methods.
+title: Métodos de propriedade IADsAccessControlList (Iads.h)
+description: Os métodos de propriedade da interface IADsAccessControlList obterão ou definirão as propriedades descritas na tabela a seguir. Para obter mais informações, consulte Métodos de propriedade de interface.
 ms.assetid: cb68bb61-4216-4f69-bea1-ab7f98937a27
 ms.tgt_platform: multiple
 keywords:
-- ADSI de métodos de propriedade IADsAccessControlList
+- Métodos de propriedade IADsAccessControlList ADSI
 topic_type:
 - apiref
 api_name:
@@ -30,7 +30,7 @@ ms.locfileid: "118428391"
 ---
 # <a name="iadsaccesscontrollist-property-methods"></a>Métodos de propriedade IADsAccessControlList
 
-Os métodos de propriedade da interface [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) obtêm ou definem as propriedades descritas na tabela a seguir. Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).
+Os métodos de propriedade da interface [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist) obterão ou definirão as propriedades descritas na tabela a seguir. Para obter mais informações, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
@@ -43,10 +43,10 @@ O número de entradas de controle de acesso na lista de controle de acesso.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -67,14 +67,14 @@ HRESULT put_AceCount(
 **AclRevision**
 </dt> <dd> <dl>
 
-O nível de revisão de uma lista de controle de acesso. Esse valor pode ser **a \_ revisão de ACL** ou a **revisão de ACL \_ \_ DS**. Use **a \_ revisão \_ de ACL DS** se a ACL contiver uma ACE específica de objeto. Todas as ACEs em uma ACL devem estar no mesmo nível de revisão.
+O nível de revisão de uma lista de controle de acesso. Esse valor pode ser **ACL \_ REVISION ou** **ACL REVISION \_ \_ DS**. Use **ACL \_ REVISION \_ DS** se a ACL contiver uma ACE específica do objeto. Todas as ACEs em uma ACL devem estar no mesmo nível de revisão.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -205,7 +205,7 @@ HRESULT ShowACEInACL(LPWSTR guestPath,LPWSTR user,LPWSTR passwd)
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>        |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>        |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl>  |
 | IID<br/>                      | IID \_ IADsAccessControlList é definido como B7EE91CC-9BDD-11D0-852C-00C04FD8D503<br/> |
 
@@ -218,7 +218,7 @@ HRESULT ShowACEInACL(LPWSTR guestPath,LPWSTR user,LPWSTR passwd)
 [**IADsAccessControlList**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrollist)
 </dt> <dt>
 
-[**IEnumVARIANT**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant)
+[**Ienumvariant**](/windows/win32/api/oaidl/nn-oaidl-ienumvariant)
 </dt> <dt>
 
 [**IADsAccessControlEntry**](/windows/desktop/api/Iads/nn-iads-iadsaccesscontrolentry)

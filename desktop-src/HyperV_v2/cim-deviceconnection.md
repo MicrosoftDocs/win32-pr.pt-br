@@ -1,7 +1,7 @@
 ---
-description: Uma relação que indica que dois ou mais dispositivos estão conectados juntos.
+description: Uma relação que indica que dois ou mais dispositivos estão conectados.
 ms.assetid: 84282740-f60f-46fa-95b7-b52a7e6efcc4
-title: Classe CIM_DeviceConnection (gerenciamento do Hyper-V)
+title: CIM_DeviceConnection classe (gerenciamento do Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: f58c66199abeb5b3586f52e91828b8b194bdbbd1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 81ec2826339e27d956750360b280fcafd7b55e6264a6bcab83ebc1cb41a1ddee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770229"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812840"
 ---
-# <a name="cim_deviceconnection-class-hyper-v-management"></a>Classe CIM_DeviceConnection (gerenciamento do Hyper-V)
+# <a name="cim_deviceconnection-class-hyper-v-management"></a>CIM_DeviceConnection classe (gerenciamento do Hyper-V)
 
-Uma relação que indica que dois ou mais dispositivos estão conectados juntos.
+Uma relação que indica que dois ou mais dispositivos estão conectados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,77 +43,77 @@ class CIM_DeviceConnection : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ DeviceConnection** tem estes tipos de membros:
+A **classe \_ DeviceConnection CIM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ DeviceConnection** tem essas propriedades.
+A **classe \_ DeviceConnection cim** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ LogicalDevice CIM**
+Tipo de dados: **Cim \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
 Um dispositivo.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ LogicalDevice CIM**
+Tipo de dados: **Cim \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
-Um segundo dispositivo que está conectado a outro dispositivo.
+Um segundo dispositivo que está conectado ao outro dispositivo.
 
 </dd> <dt>
 
 **NegotiatedDataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Units**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Associação de porta do barramento DMTF \| 1,3 "), **PUnit** (" bit ")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bits"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Associação de porta do Barramento DMTF \| \| 001.3"), **PUnit** ("bit")
 </dt> </dl>
 
-Quando várias larguras de dados de conexão e barramento são possíveis, a propriedade NegotiatedDataWidth define aquela que está em uso entre os dispositivos. A largura dos dados é especificada em bits. Se a largura dos dados não for negociada ou se essas informações não estiverem disponíveis ou não forem importantes para o gerenciamento de dispositivos, a propriedade deverá ser definida como 0.
+Quando várias larguras de dados de conexão e barramento são possíveis, a propriedade NegotiatedDataWidth define aquela que está em uso entre os Dispositivos. A largura dos dados é especificada em bits. Se a largura dos dados não for negociada ou se essas informações não estão disponíveis ou não são importantes para o Gerenciamento de dispositivos, a propriedade deve ser definida como 0.
 
 </dd> <dt>
 
 **NegotiatedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits por segundo"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Associação de porta do barramento DMTF \| 1,2 "), **PUnit** (" bit/segundo ")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bits por Segundo"), [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Associação de porta do Barramento DMTF \| \| 001.2"), **PUnit** ("bit/segundo")
 </dt> </dl>
 
-Quando várias velocidades de barramento e conexão são possíveis, essa propriedade define a velocidade em uso entre os dispositivos, em bits por segundo. Se as velocidades de conexão ou de barramento não forem negociadas, ou se essas informações não estiverem disponíveis ou não forem importantes para o gerenciamento de dispositivos, a propriedade deverá ser definida como "0".
+Quando várias velocidades de conexão e barramento são possíveis, essa propriedade define a velocidade que está em uso entre os dispositivos, em bits por segundo. Se as velocidades de conexão ou barramento não são negociadas ou se essas informações não estão disponíveis ou não são importantes para o gerenciamento de dispositivos, a propriedade deve ser definida como "0".
 
 </dd> </dl>
 
@@ -125,8 +125,8 @@ Quando várias velocidades de barramento e conexão são possíveis, essa propri
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -135,7 +135,7 @@ Quando várias velocidades de barramento e conexão são possíveis, essa propri
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

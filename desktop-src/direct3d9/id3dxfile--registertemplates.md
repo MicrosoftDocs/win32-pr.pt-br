@@ -1,7 +1,7 @@
 ---
 description: Registra modelos personalizados.
 ms.assetid: e142a0f2-d0ef-4479-82cd-ba8d5059d1d2
-title: Método ID3DXFile::RegisterTemplates (D3DX9Xof.h)
+title: 'Método ID3DXFile:: RegisterTemplates (D3DX9Xof. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118520781"
 ---
-# <a name="id3dxfileregistertemplates-method"></a>Método ID3DXFile::RegisterTemplates
+# <a name="id3dxfileregistertemplates-method"></a>Método ID3DXFile:: RegisterTemplates
 
 Registra modelos personalizados.
 
@@ -41,19 +41,19 @@ HRESULT RegisterTemplates(
 
 <dl> <dt>
 
-*pvData* \[ Em\]
+*pvData* \[ no\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
 
-Ponteiro para um buffer que consiste em um arquivo .x no formato de texto ou binário que contém modelos.
+Ponteiro para um buffer que consiste em um arquivo. x no formato de texto ou binário que contém modelos.
 
 </dd> <dt>
 
-*cbSize* \[ Em\]
+*cbSize* \[ no\]
 </dt> <dd>
 
-Tipo: **[ **SIZE \_ T**](../winprog/windows-data-types.md)**
+Tipo: **[ **tamanho \_ T**](../winprog/windows-data-types.md)**
 
 Tamanho do buffer apontado por pvData, em bytes.
 
@@ -63,11 +63,11 @@ Tamanho do buffer apontado por pvData, em bytes.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes: D3DXFERR \_ BADVALUE, D3DXFERR \_ PARSEERROR.
+Se o método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser um dos seguintes: D3DXFERR \_ BADVALUE, D3DXFERR \_ PARSEERROR.
 
 ## <a name="remarks"></a>Comentários
 
-O fragmento de código a seguir fornece uma chamada de exemplo para **RegisterTemplates** e conteúdo de exemplo para o buffer para o qual **o pvData aponta.**
+O fragmento de código a seguir fornece uma chamada de exemplo para **RegisterTemplates** e conteúdo de exemplo para o buffer para o qual **pvData** aponta.
 
 
 ```
@@ -113,7 +113,7 @@ goto End;
 
 Todos os modelos devem especificar um nome e um UUID.
 
-Esse método chama o [**método RegisterEnumTemplates,**](id3dxfile--registerenumtemplates.md) obtendo um ponteiro de interface [**ID3DXFileEnumObject**](id3dxfileenumobject.md) chamando [**CreateEnumObject**](id3dxfile--createenumobject.md) com **pvData** como o primeiro parâmetro.
+Esse método chama o método [**RegisterEnumTemplates**](id3dxfile--registerenumtemplates.md) , obtendo um ponteiro de interface [**ID3DXFileEnumObject**](id3dxfileenumobject.md) chamando [**createenumobject**](id3dxfile--createenumobject.md) com **pvData** como o primeiro parâmetro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -121,8 +121,8 @@ Esse método chama o [**método RegisterEnumTemplates,**](id3dxfile--registerenu
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Xof.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>  |
+| parâmetro<br/>  | <dl> <dt>D3DX9Xof. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>  |
 
 
 

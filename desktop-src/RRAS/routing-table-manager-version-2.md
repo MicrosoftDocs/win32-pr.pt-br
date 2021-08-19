@@ -1,6 +1,6 @@
 ---
-title: Roteamento do Gerenciador de Tabelas versão 2
-description: Roteamento do Gerenciador de Tabelas versão 2
+title: Gerenciador de tabela de roteamento versão 2
+description: Gerenciador de tabela de roteamento versão 2
 ms.assetid: 570321b2-a499-4428-892b-fbd2cc76be4f
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117787555"
 ---
-# <a name="routing-table-manager-version-2"></a>Roteamento do Gerenciador de Tabelas versão 2
+# <a name="routing-table-manager-version-2"></a>Gerenciador de tabela de roteamento versão 2
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [Sobre o Gerenciador de Tabelas de Roteamento versão 2](about-routing-table-manager-version-2.md)
--   [Usando o Gerenciador de Tabelas de Roteamento versão 2](using-routing-table-manager-version-2.md)
--   [Referência do Gerenciador de Tabelas de Roteamento versão 2](routing-table-manager-version-2-reference.md)
+-   [Sobre o Gerenciador de tabela de roteamento versão 2](about-routing-table-manager-version-2.md)
+-   [Usando o Gerenciador de tabela de roteamento versão 2](using-routing-table-manager-version-2.md)
+-   [Referência da versão 2 do Gerenciador de tabela de roteamento](routing-table-manager-version-2-reference.md)
 
  
 

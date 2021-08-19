@@ -1,9 +1,9 @@
 ---
-title: Elemento body (sendEmailType)
+title: Elemento Body (sendEmailType)
 description: Contém o texto no corpo da mensagem de email.
 ms.assetid: fac6ddd5-6f73-427b-b213-ab946512c87a
 keywords:
-- Elemento de corpo Agendador de Tarefas
+- Elemento Body Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4659f2ff03f69b6bba40d9cd16e9b68515cc8889
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a924062b3a382bc8362bdfa45e1477b4e841222bdd1f5ac70fbb8adbc9b070b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105760142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118857959"
 ---
-# <a name="body-sendemailtype-element"></a>Elemento body (sendEmailType)
+# <a name="body-sendemailtype-element"></a>Elemento Body (sendEmailType)
 
 Contém o texto no corpo da mensagem de email.
 
@@ -30,7 +30,7 @@ Contém o texto no corpo da mensagem de email.
  />
 ```
 
-O elemento **Body** é definido pelo tipo complexo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+O **elemento Body** é definido pelo tipo complexo [**sendEmailType.**](taskschedulerschema-sendemailtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,15 +38,15 @@ O elemento **Body** é definido pelo tipo complexo [**sendEmailType**](tasksched
 
 | Elemento                                                                              | Derivado de                                                           | Descrição                                                  |
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------------------------------------------------------------|
-| [**SendEmail (The Action)**](taskschedulerschema-sendemail-actiongroup-element.md) | [**sendEMailType**](taskschedulerschema-sendemailtype-complextype.md) | Representa uma ação que envia uma mensagem de email.<br/> |
+| [**SendEmail (actionGroup)**](taskschedulerschema-sendemail-actiongroup-element.md) | [**sendEMailType**](taskschedulerschema-sendemailtype-complextype.md) | Representa uma ação que envia uma mensagem de email.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para desenvolvimento em C++, consulte a [**Propriedade Body de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_body).
+Para desenvolvimento em C++, consulte [**Propriedade body de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_body).
 
-Para desenvolvimento de script, consulte [**emailaction. Body**](emailaction-body.md).
+Para desenvolvimento de scripts, [**consulte EmailAction.Body**](emailaction-body.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Para desenvolvimento de script, consulte [**emailaction. Body**](emailaction-bod
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

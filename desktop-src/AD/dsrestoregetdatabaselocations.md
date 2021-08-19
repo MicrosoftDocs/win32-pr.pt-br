@@ -1,10 +1,10 @@
 ---
-title: Função DsRestoreGetDatabaseLocations (Ntdsbcli. h)
+title: Função DsRestoreGetDatabaseLocations (Ntdsbcli.h)
 description: Obtém os locais em que os arquivos de backup devem ser copiados durante uma operação de restauração.
 ms.assetid: f91d701c-72cf-418a-8d1c-6bf6ef41c2c1
 ms.tgt_platform: multiple
 keywords:
-- Função DsRestoreGetDatabaseLocations Active Directory
+- Função DsRestoreGetDatabaseLocations active directory
 topic_type:
 - apiref
 api_name:
@@ -26,9 +26,9 @@ ms.locfileid: "118429988"
 ---
 # <a name="dsrestoregetdatabaselocations-function"></a>Função DsRestoreGetDatabaseLocations
 
-\[Essa função está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. a partir do Windows Vista, use [Serviço de Cópias de Sombra de Volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
+\[Essa função está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Começando com Windows Vista, use [Serviço de Cópias de Sombra de Volume (VSS)](../vss/volume-shadow-copy-service-overview.md) em vez disso.\]
 
-A função **DsRestoreGetDatabaseLocations** Obtém os locais em que os arquivos de backup devem ser copiados durante uma operação de restauração.
+A **função DsRestoreGetDatabaseLocations** obtém os locais em que os arquivos de backup devem ser copiados durante uma operação de restauração.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,85 +47,85 @@ HRESULT DsRestoreGetDatabaseLocations(
 
 <dl> <dt>
 
-*HBC* \[ no\]
+*hbc* \[ Em\]
 </dt> <dd>
 
-Contém o identificador de contexto de restauração obtido com a função [**DsRestorePrepare**](dsrestoreprepare.md) .
+Contém o handle de contexto de restauração obtido com a [**função DsRestorePrepare.**](dsrestoreprepare.md)
 
 </dd> <dt>
 
-*pszDatabaseLocationList* \[ fora\]
+*pszDatabaseLocationList* \[ out\]
 </dt> <dd>
 
-Ponteiro para um ponteiro de cadeia de caracteres que recebe a lista de locais de banco de dados como caminhos UNC. Essa lista recebe uma lista terminada por nulo de cadeias de caracteres com terminação nula.
+Ponteiro para um ponteiro de cadeia de caracteres que recebe a lista de locais de banco de dados como caminhos UNC. Essa lista recebe uma lista de terminação nula dupla de cadeias de caracteres terminadas em nulo único.
 
-Esse buffer é alocado pela função **DsRestoreGetDatabaseLocations** e deve ser liberado quando não for mais necessário chamando a função [**DsBackupFree**](dsbackupfree.md) .
+Esse buffer é alocado pela função **DsRestoreGetDatabaseLocations** e deve ser liberado quando não for mais necessário chamando a [**função DsBackupFree.**](dsbackupfree.md)
 
-O primeiro caractere de cada um dos nomes de arquivo contém uma das [**constantes BFT**](bft-constants.md) que identifica o tipo de nome. A função **DsRestoreGetDatabaseLocations** fornece apenas os seguintes tipos de nome.
+O primeiro caractere de cada um dos nomes de arquivo contém uma das [**Constantes BFT**](bft-constants.md) que identifica o tipo de nome. A **função DsRestoreGetDatabaseLocations** fornece apenas os seguintes tipos de nome.
 
 <dt>
 
 <span id="BFT_NTDS_DATABASE"></span><span id="bft_ntds_database"></span>
 
-<span id="BFT_NTDS_DATABASE"></span><span id="bft_ntds_database"></span>**\_banco de \_ dados NTDS BFT**
+<span id="BFT_NTDS_DATABASE"></span><span id="bft_ntds_database"></span>**BFT \_ NTDS \_ DATABASE**
 
 
 </dt> <dd>
 
-O arquivo de banco de dados NTDS deve ser copiado para esse arquivo. Esse é o arquivo que foi identificado como **\_ banco de \_ dados BFT NTDS** quando o backup foi executado.
+O arquivo de banco de dados NTDS deve ser copiado para esse arquivo. Esse é o arquivo que foi identificado como **BFT \_ NTDS \_ DATABASE** quando o backup foi executado.
 
 </dd> <dt>
 
 <span id="BFT_LOG_DIR"></span><span id="bft_log_dir"></span>
 
-<span id="BFT_LOG_DIR"></span><span id="bft_log_dir"></span>**Dir. de log do BFT \_ \_**
+<span id="BFT_LOG_DIR"></span><span id="bft_log_dir"></span>**BFT \_ LOG \_ DIR**
 
 
 </dt> <dd>
 
-Todos os arquivos de log são copiados para esse diretório. Os arquivos de log foram identificados **como \_ log de BFT** quando o backup foi executado.
+Todos os arquivos de log são copiados para esse diretório. Os arquivos de log foram identificados como **LOG BFT \_** quando o backup foi executado.
 
 </dd> <dt>
 
 <span id="BFT_CHECKPOINT_DIR"></span><span id="bft_checkpoint_dir"></span>
 
-<span id="BFT_CHECKPOINT_DIR"></span><span id="bft_checkpoint_dir"></span>**BFT de \_ ponto de verificação de \_ diretório**
+<span id="BFT_CHECKPOINT_DIR"></span><span id="bft_checkpoint_dir"></span>**DIR DO \_ PONTO DE VERIFICAÇÃO do BFT \_**
 
 
 </dt> <dd>
 
-Todos os arquivos de patch são copiados para esse diretório. Os arquivos de patch foram identificados como um **\_ \_ arquivo de patch BFT** quando o backup foi executado.
+Todos os arquivos de patch são copiados para esse diretório. Os arquivos de patch foram identificados como **BFT \_ PATCH \_ FILE** quando o backup foi executado.
 
 </dd> </dl> </dd> <dt>
 
-*pcbSize* \[ fora\]
+*pcbSize* \[ out\]
 </dt> <dd>
 
-Ponteiro para o valor **DWORD** que recebe o tamanho, em bytes, do buffer *pszDatabaseLocationList* .
+Ponteiro para **o valor DWORD** que recebe o tamanho, em bytes, do buffer *pszDatabaseLocationList.*
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retornará **S \_ OK** se a função for bem-sucedida, ou um código de erro Win32 ou RPC. A lista a seguir lista os possíveis códigos de erro.
+Retornará **S \_ OK** se a função for bem-sucedida ou um código de erro Win32 ou RPC caso contrário. A lista a seguir lista possíveis códigos de erro.
 
 <dl> <dt>
 
-**ERRO de \_ acesso \_ negado**
+**ACESSO \_ DE ERRO \_ NEGADO**
 </dt> <dd>
 
-O chamador não tem os privilégios de acesso apropriados para chamar essa função. A função [**DsSetAuthIdentity**](dssetauthidentity.md) pode ser usada para definir as credenciais a serem usadas para as funções de backup e restauração.
+O chamador não tem os privilégios de acesso adequados para chamar essa função. A [**função DsSetAuthIdentity**](dssetauthidentity.md) pode ser usada para definir as credenciais a serem usadas para as funções de backup e restauração.
 
 </dd> <dt>
 
-**\_parâmetro inválido de erro \_**
+**ERRO \_ PARÂMETRO \_ INVÁLIDO**
 </dt> <dd>
 
-*HBC*, *pszDatabaseLocationList* ou *pcbSize* são inválidos.
+*hbc*, *pszDatabaseLocationList* ou *pcbSize* são inválidos.
 
 </dd> <dt>
 
-**ERRO \_ de \_ memória insuficiente \_**
+**ERRO \_ SEM \_ MEMÓRIA \_ SUFICIENTE**
 </dt> <dd>
 
 Ocorreu uma falha de alocação de memória.
@@ -134,7 +134,7 @@ Ocorreu uma falha de alocação de memória.
 
 ## <a name="remarks"></a>Comentários
 
-A função **DsRestoreGetDatabaseLocations** pode ser usada para obter os diretórios de restauração sem acesso aos dados de backup. Para fazer isso, chame [**DsRestorePrepare**](dsrestoreprepare.md) com **NULL** para o parâmetro *pvExpiryToken* . Isso faz com que o **DsRestorePrepare** retorne um identificador de contexto restrito que só pode ser usado com a função **DsRestoreGetDatabaseLocations** .
+A **função DsRestoreGetDatabaseLocations** pode ser usada para obter os diretórios de restauração sem acesso aos dados de backup. Para fazer isso, chame [**DsRestorePrepare**](dsrestoreprepare.md) com **NULL** para o *parâmetro pvExpiryToken.* Isso faz **com que DsRestorePrepare** retorne um handle de contexto restrito que só pode ser usado com a **função DsRestoreGetDatabaseLocations.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -144,8 +144,8 @@ A função **DsRestoreGetDatabaseLocations** pode ser usada para obter os diret�
 |-------------------------------------|-------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                        |
-| Cabeçalho<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>                 |
-| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl>               |
+| Cabeçalho<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl>                 |
+| Biblioteca<br/>                  | <dl> <dt>Ntdsbcli.lib</dt> </dl>               |
 | DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl>               |
 | Nomes Unicode e ANSI<br/>   | **DsRestoreGetDatabaseLocationsW** (Unicode) e **DsRestoreGetDatabaseLocationsA** (ANSI)<br/> |
 
