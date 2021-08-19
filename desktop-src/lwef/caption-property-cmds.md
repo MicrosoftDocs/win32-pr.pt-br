@@ -43,7 +43,7 @@ Determina o texto exibido para um [**objeto Commands**](/windows/desktop/lwef/th
 
 ## <a name="remarks"></a>Comentários
 
-Definir a propriedade [**Legenda**](caption-property.md) para sua coleção [**De**](/windows/desktop/lwef/the-commands-collection-object) comandos define como ela será exibida no menu pop-up do caractere quando sua propriedade [**Visible**](visible-property.md) estiver definida como True e seu aplicativo não for o cliente ativo de entrada. Para especificar uma chave de acesso (mnemônica não emlinada) para a **Legenda,** inclua um caractere & (entese) antes desse caractere.
+Definir a propriedade [**Legenda**](caption-property.md) para sua coleção [**De**](/windows/desktop/lwef/the-commands-collection-object) comandos define como ela será exibida no menu pop-up do caractere quando sua propriedade [**Visible**](visible-property.md) estiver definida como True e seu aplicativo não for o cliente ativo de entrada. Para especificar uma chave de acesso (mnemônico não emlindado) para a **Legenda**, inclua um caractere & (entese) antes desse caractere.
 
 Se você definir comandos para uma coleção [**De**](/windows/desktop/lwef/the-commands-collection-object) comandos que tem uma [**Legenda**](caption-property.md), normalmente também definirá uma **Legenda** para sua coleção **de Comandos** associada.
 

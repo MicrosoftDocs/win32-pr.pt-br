@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 691bd3e943f491ba93d867097ac0167c97be6108
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2b96dd7363b5c2a48a6c25826d8c2752c181bc9125955b6c73d5532eb2665514
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455669"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024664"
 ---
 # <a name="syncnamingcontext-method-of-the-msad_replneighbor-class"></a>Método SyncNamingContext da \_ classe REPLNEIGHBOR MSAD
 
@@ -164,7 +164,7 @@ Indica que esta réplica é gravável. Se esse sinalizador não for definido, a 
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

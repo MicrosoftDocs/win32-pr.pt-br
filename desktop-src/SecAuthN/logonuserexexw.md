@@ -196,7 +196,7 @@ Se o parâmetro *pTokenGroups* opcional for fornecido, o LSA não adicionará o 
 | Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                                        |
 | Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                  |
 | Versão<br/>                  | LogonUserExExW também está disponível noWindows Server 2003 ou Windows XP com a Versão de Distribuição Geral.<br/> |
-| parâmetro<br/>                   | <dl> <dt>Winbasep.h</dt> </dl>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Winbasep.h</dt> </dl>                                 |
 | DLL<br/>                      | <dl> <dt>Advapi32.dll</dt> </dl>                               |
 
 

@@ -54,12 +54,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d889c262eee9d827a02547ddbfdff2cb121cb337
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ba95ef5f4eb0afd20b80ab97db1ab7fc9a37b11e45638188c31459f8003cbda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950215"
 ---
 # <a name="msvm_storageallocationsettingdata-class"></a>\_Classe Msvm StorageAllocationSettingData
 
@@ -233,7 +233,7 @@ Tipo de acesso: Somente leitura
 Indica se e como o cache de arquivo na memória deve ser usado para este VHD. A política padrão é definida no campo **DefaultVirtualHardDiskCachingMode** da classe [**Msvm \_ VirtualSystemManagementServiceSettingData**](msvm-virtualsystemmanagementservicesettingdata.md) .
 
 > [!Note]  
-> Adicionado no Windows 10.
+> Adicionado em Windows 10.
 
  
 
@@ -255,7 +255,7 @@ Indica se e como o cache de arquivo na memória deve ser usado para este VHD. A 
 
 <span id="No_Caching"></span><span id="no_caching"></span><span id="NO_CACHING"></span>
 
-**Sem cache** (3)
+**sem Caching** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -281,7 +281,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: **maxlen** (64)
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações padrão de imagem de disco rígido".
+Uma breve descrição do objeto. essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "padrão de imagem de disco rígido Configurações".
 
 </dd> <dt>
 
@@ -500,7 +500,7 @@ Tipo de acesso: Somente leitura
 
 Se definido como true, o Hyper-V ignorará a liberação de write-back para essa máquina virtual específica. Se definido como false, o Hyper-V continuará a fazer write-back no disco em cada liberação. A configuração padrão é false.
 
-**Windows 10:** Não há suporte para esse valor até o Windows 10.
+**Windows 10:** Não há suporte para esse valor até Windows 10.
 
 </dd> <dt>
 
@@ -535,7 +535,7 @@ Especifica as unidades de alocação usadas pelas propriedades **IOPSLimit** e *
 
 A taxa de transferência é medida em IOPS (operações de e/s normalizadas por segundo) em vez de IOPS brutos. Ao usar IOPS normalizado, cada solicitação de e/s será contabilizada como 1 e/s normalizada se o tamanho da solicitação for menor ou igual a um tamanho de base predefinido (8 KB). As solicitações que são maiores que o tamanho base são contabilizadas como N operações de e/s, em que N é o valor arredondado do tamanho da solicitação dividido pelo tamanho base. Por exemplo, se o tamanho base for de 8 KB, uma solicitação de 16 KB será contada como duas operações de e/s normalizadas, uma solicitação de 32 KB como 4 operações de e/s normalizadas e assim por diante.
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -558,7 +558,7 @@ O número máximo de operações de e/s por segundo (IOPS) que serão atendidas 
 
  
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -583,7 +583,7 @@ Se **IOPSLimit** e **IOPSReservation** forem definidos, o valor de **IOPSLimit**
 
  
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -622,7 +622,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o formato da propriedade **HostExtentName** se a propriedade **HostExtentNameFormat** for 1 (Other). Essa propriedade é herdada do **CIM \_ StorageAllocationSettingData**.
+Uma cadeia de caracteres que descreve o formato da **propriedade HostExtentName** se a propriedade **HostExtentNameFormat** for 1 (Outro). Essa propriedade é herdada de **\_ StorageAllocationSettingData do CIM.**
 
 </dd> <dt>
 
@@ -635,7 +635,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o namespace da propriedade **HostExtentName** se a propriedade **HostExtentNameNamespace** contiver 1 (Other). Essa propriedade é herdada do **CIM \_ StorageAllocationSettingData**.
+Uma cadeia de caracteres que descreve o namespace da propriedade **HostExtentName** se a propriedade **HostExtentNameNamespace** contiver 1 (Outro). Essa propriedade é herdada de **\_ StorageAllocationSettingData do CIM.**
 
 </dd> <dt>
 
@@ -648,7 +648,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o tipo de recurso quando um valor bem definido não está disponível e [**ResourceType**](msvm-processorsettingdata.md) tem o valor 1 (outro). Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Uma cadeia de caracteres que descreve o tipo de recurso quando um valor bem definido não está disponível e [**ResourceType**](msvm-processorsettingdata.md) tem o valor 1(Outro). Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -661,14 +661,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O pai do recurso. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+O pai do recurso. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
 **PersistentReservationsSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -676,11 +676,11 @@ Tipo de acesso: Somente leitura
 
 Indica se o disco rígido virtual dá suporte a reservas persistentes SCSI-3.
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** Esse valor não tem suporte até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
-**Poolid**
+**PoolID**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -689,23 +689,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O identificador do pool de recursos do qual esse recurso foi alocado. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+O identificador do pool de recursos do qual esse recurso foi alocado. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
 **Reserva**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **override** ("reserva"), **ModelCorrespondence** ("CIM \_ StorageAllocationSettingData. HostResourceBlockSize")
+Qualificadores: **Substituir** ("Reserva"), **ModelCorrespondence** ("CIM \_ StorageAllocationSettingData.HostResourceBlockSize")
 </dt> </dl>
 
-O número de blocos que têm garantia de disponibilidade para essa alocação de recursos de armazenamento no host. O tamanho do bloco é especificado pela propriedade **HostResourceBlockSize** . Essa propriedade é herdada do **CIM \_ StorageAllocationSettingData**.
+O número de blocos que têm a garantia de estar disponíveis para essa alocação de recursos de armazenamento no host. O tamanho do bloco é especificado pela **propriedade HostResourceBlockSize.** Essa propriedade é herdada de **\_ StorageAllocationSettingData do CIM.**
 
 </dd> <dt>
 
@@ -718,27 +718,27 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve um subtipo específico da implementação para esse recurso. Por exemplo, isso pode ser usado para distinguir modelos diferentes do mesmo tipo de recurso. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Uma cadeia de caracteres que descreve um subtipo específico da implementação para esse recurso. Por exemplo, isso pode ser usado para distinguir modelos diferentes do mesmo tipo de recurso. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
 **ResourceType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de recurso que essa configuração de alocação representa. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+O tipo de recurso que essa configuração de alocação representa. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 <dl> <dt>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 </dt> <dt>
 
-<span id="Computer_System"></span><span id="computer_system"></span><span id="COMPUTER_SYSTEM"></span>**Sistema de computador** (2)
+<span id="Computer_System"></span><span id="computer_system"></span><span id="COMPUTER_SYSTEM"></span>**Sistema de Computador** (2)
 </dt> <dt>
 
 <span id="Processor"></span><span id="processor"></span><span id="PROCESSOR"></span>**Processador** (3)
@@ -750,13 +750,13 @@ O tipo de recurso que essa configuração de alocação representa. Essa proprie
 <span id="IDE_Controller"></span><span id="ide_controller"></span><span id="IDE_CONTROLLER"></span>**Controlador IDE** (5)
 </dt> <dt>
 
-<span id="Parallel_SCSI_HBA"></span><span id="parallel_scsi_hba"></span><span id="PARALLEL_SCSI_HBA"></span>**HBA SCSI paralelo** (6)
+<span id="Parallel_SCSI_HBA"></span><span id="parallel_scsi_hba"></span><span id="PARALLEL_SCSI_HBA"></span>**SCSI HBA paralelo** (6)
 </dt> <dt>
 
-<span id="FC_HBA"></span><span id="fc_hba"></span>**HBA FC** (7)
+<span id="FC_HBA"></span><span id="fc_hba"></span>**FC HBA** (7)
 </dt> <dt>
 
-<span id="iSCSI_HBA"></span><span id="iscsi_hba"></span><span id="ISCSI_HBA"></span>**HBA iSCSI** (8)
+<span id="iSCSI_HBA"></span><span id="iscsi_hba"></span><span id="ISCSI_HBA"></span>**iSCSI HBA** (8)
 </dt> <dt>
 
 <span id="IB_HCA"></span><span id="ib_hca"></span>**IB HCA** (9)
@@ -768,16 +768,16 @@ O tipo de recurso que essa configuração de alocação representa. Essa proprie
 <span id="Other_Network_Adapter"></span><span id="other_network_adapter"></span><span id="OTHER_NETWORK_ADAPTER"></span>**Outro adaptador de rede** (11)
 </dt> <dt>
 
-<span id="I_O_Slot"></span><span id="i_o_slot"></span><span id="I_O_SLOT"></span>**Slot de e/s** (12)
+<span id="I_O_Slot"></span><span id="i_o_slot"></span><span id="I_O_SLOT"></span>**Slot de E/S** (12)
 </dt> <dt>
 
-<span id="I_O_Device"></span><span id="i_o_device"></span><span id="I_O_DEVICE"></span>**Dispositivo de e/s** (13)
+<span id="I_O_Device"></span><span id="i_o_device"></span><span id="I_O_DEVICE"></span>**Dispositivo de E/S** (13)
 </dt> <dt>
 
-<span id="Diskette_Drive"></span><span id="diskette_drive"></span><span id="DISKETTE_DRIVE"></span>**Unidade de disquete** (14)
+<span id="Diskette_Drive"></span><span id="diskette_drive"></span><span id="DISKETTE_DRIVE"></span>**Unidade diskette** (14)
 </dt> <dt>
 
-<span id="CD_Drive"></span><span id="cd_drive"></span><span id="CD_DRIVE"></span>**Unidade de CD** (15)
+<span id="CD_Drive"></span><span id="cd_drive"></span><span id="CD_DRIVE"></span>**Unidade cd** (15)
 </dt> <dt>
 
 <span id="DVD_drive"></span><span id="dvd_drive"></span><span id="DVD_DRIVE"></span>**Unidade de DVD** (16)
@@ -789,10 +789,10 @@ O tipo de recurso que essa configuração de alocação representa. Essa proprie
 <span id="Tape_Drive"></span><span id="tape_drive"></span><span id="TAPE_DRIVE"></span>**Unidade de fita** (18)
 </dt> <dt>
 
-<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Extensão de armazenamento** (19)
+<span id="Storage_Extent"></span><span id="storage_extent"></span><span id="STORAGE_EXTENT"></span>**Armazenamento extensão** (19)
 </dt> <dt>
 
-<span id="Other_Storage_Device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>**Outro dispositivo de armazenamento** (20)
+<span id="Other_Storage_Device"></span><span id="other_storage_device"></span><span id="OTHER_STORAGE_DEVICE"></span>**Outros Armazenamento dispositivo** (20)
 </dt> <dt>
 
 <span id="Serial_port"></span><span id="serial_port"></span><span id="SERIAL_PORT"></span>**Porta serial** (21)
@@ -804,31 +804,31 @@ O tipo de recurso que essa configuração de alocação representa. Essa proprie
 <span id="USB_controller"></span><span id="usb_controller"></span><span id="USB_CONTROLLER"></span>**Controlador USB** (23)
 </dt> <dt>
 
-<span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>**Controlador de gráficos** (24)
+<span id="Graphics_controller"></span><span id="graphics_controller"></span><span id="GRAPHICS_CONTROLLER"></span>**Controlador gráfico** (24)
 </dt> <dt>
 
-<span id="IEEE_1394_controller"></span><span id="ieee_1394_controller"></span><span id="IEEE_1394_CONTROLLER"></span>**Controlador IEEE 1394** (25)
+<span id="IEEE_1394_controller"></span><span id="ieee_1394_controller"></span><span id="IEEE_1394_CONTROLLER"></span>**IEEE 1394 controlador** (25)
 </dt> <dt>
 
 <span id="Partitionable_Unit"></span><span id="partitionable_unit"></span><span id="PARTITIONABLE_UNIT"></span>**Unidade particionável** (26)
 </dt> <dt>
 
-<span id="Base_Partitionable_Unit"></span><span id="base_partitionable_unit"></span><span id="BASE_PARTITIONABLE_UNIT"></span>**Unidade particionável de base** (27)
+<span id="Base_Partitionable_Unit"></span><span id="base_partitionable_unit"></span><span id="BASE_PARTITIONABLE_UNIT"></span>**Unidade particionável base** (27)
 </dt> <dt>
 
-<span id="Power_Supply"></span><span id="power_supply"></span><span id="POWER_SUPPLY"></span>**Fonte de energia** (28)
+<span id="Power_Supply"></span><span id="power_supply"></span><span id="POWER_SUPPLY"></span>**Fonte de** alimentação (28)
 </dt> <dt>
 
 <span id="Cooling_Device"></span><span id="cooling_device"></span><span id="COOLING_DEVICE"></span>**Dispositivo de resfriamento** (29)
 </dt> <dt>
 
-<span id="Ethernet_Switch_Port"></span><span id="ethernet_switch_port"></span><span id="ETHERNET_SWITCH_PORT"></span>**Porta do comutador Ethernet** (30)
+<span id="Ethernet_Switch_Port"></span><span id="ethernet_switch_port"></span><span id="ETHERNET_SWITCH_PORT"></span>**Porta do comutamento Ethernet** (30)
 </dt> <dt>
 
 <span id="Logical_Disk"></span><span id="logical_disk"></span><span id="LOGICAL_DISK"></span>**Disco lógico** (31)
 </dt> <dt>
 
-<span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>**Volume de armazenamento** (32)
+<span id="Storage_Volume"></span><span id="storage_volume"></span><span id="STORAGE_VOLUME"></span>**Armazenamento volume** (32)
 </dt> <dt>
 
 <span id="Ethernet_connection"></span><span id="ethernet_connection"></span><span id="ETHERNET_CONNECTION"></span>**Conexão Ethernet** (33)
@@ -837,7 +837,7 @@ O tipo de recurso que essa configuração de alocação representa. Essa proprie
 <span id="DMTF_reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (30 32767)
 </dt> <dt>
 
-<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornecedor reservado** (32768 65535)
+<span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>**Fornecedor Reservado** (32768 65535)
 </dt> </dl>
 
 </dd> <dt>
@@ -851,10 +851,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um GUID que representa qual instantâneo dentro do arquivo de conjunto VHD deve ser anexado.
+Um GUID que representa qual instantâneo dentro do arquivo de Conjunto de VHDs deve ser anexado.
 
 > [!Note]  
-> Adicionado no Windows 10.
+> Adicionado em Windows 10.
 
  
 
@@ -869,10 +869,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica o identificador exclusivo da política de QoS de armazenamento a ser aplicada a essa extensão de armazenamento virtual.
+Especifica o identificador exclusivo da política Armazenamento QoS a ser aplicada a essa extensão de armazenamento virtual.
 
 > [!Note]  
-> Adicionado no Windows 10.
+> Adicionado em Windows 10.
 
  
 
@@ -881,13 +881,13 @@ Especifica o identificador exclusivo da política de QoS de armazenamento a ser 
 **VirtualQuantity**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número de blocos que são apresentados ao consumidor. O tamanho do bloco é especificado pela propriedade **VirtualResourceBlockSize** . Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+O número de blocos que são apresentados ao consumidor. O tamanho do bloco é especificado pela **propriedade VirtualResourceBlockSize.** Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -900,14 +900,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica as unidades usadas pela propriedade **VirtualQuantity** . Essa propriedade é herdada do **CIM \_ StorageAllocationSettingData**.
+Especifica as unidades usadas pela **propriedade VirtualQuantity.** Essa propriedade é herdada de **\_ StorageAllocationSettingData do CIM.**
 
 
 
 | Valor                                                                                                | Significado                                                                                    |
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| <dl> <dt>"Count (bloco de tamanho fixo)"</dt> </dl> | O tamanho do bloco fixo está contido na propriedade **VirtualResourceBlockSize** .<br/> |
-| <dl> <dt>minuciosa</dt> </dl>                    | A propriedade **VirtualQuantity** é medida em bytes.<br/>                          |
+| <dl> <dt>"count(fixed size block)"</dt> </dl> | O tamanho fixo do bloco está contido na **propriedade VirtualResourceBlockSize.**<br/> |
+| <dl> <dt>"byte"</dt> </dl>                    | A **propriedade VirtualQuantity** é medida em bytes.<br/>                          |
 
 
 
@@ -918,29 +918,29 @@ Especifica as unidades usadas pela propriedade **VirtualQuantity** . Essa propri
 **VirtualResourceBlockSize**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tamanho, em bytes, dos blocos que são apresentados ao consumidor como resultado dessa solicitação de alocação de recursos de armazenamento ou alocação de recursos de armazenamento. Se o tamanho do bloco for variável, o tamanho máximo do bloco, em bytes, será especificado. Se o tamanho do bloco for desconhecido ou se um conceito de bloco não se aplicar, o valor 1 será usado. Essa propriedade é herdada do **CIM \_ StorageAllocationSettingData**.
+O tamanho, em bytes, dos blocos apresentados ao consumidor como resultado dessa alocação de recursos de armazenamento ou da solicitação de alocação de recursos de armazenamento. Se o tamanho do bloco for variável, o tamanho máximo do bloco, em bytes, será especificado. Se o tamanho do bloco for desconhecido ou se um conceito de bloco não se aplicar, o valor 1 será usado. Essa propriedade é herdada de **\_ StorageAllocationSettingData do CIM.**
 
 </dd> <dt>
 
 **Weight**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("peso"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (10000)
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Peso"), [**MinValue**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**MaxValue**](/windows/desktop/WmiSdk/standard-qualifiers) (10000)
 </dt> </dl>
 
-Especifica uma prioridade relativa para essa alocação em relação a outras alocações do mesmo pool de recursos. Essa propriedade não tem nenhuma unidade de medida e só é relevante quando comparada a outras alocações vying para os mesmos recursos de host. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Especifica uma prioridade relativa para essa alocação em relação a outras alocações do mesmo pool de recursos. Essa propriedade não tem unidade de medida e só é relevante quando comparada a outras alocações que vying para os mesmos recursos de host. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 Intervalo: 1 10000
 
@@ -949,16 +949,16 @@ Intervalo: 1 10000
 **WriteHardeningMethod**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica qual método de proteção contra gravação é suportado pelo disco.
+Indica qual método de proteger a gravação tem suporte no disco.
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703.
+> Essa propriedade foi adicionada na Windows 10, versão 1703.
 
  
 
@@ -1000,10 +1000,10 @@ Indica qual método de proteção contra gravação é suportado pelo disco.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

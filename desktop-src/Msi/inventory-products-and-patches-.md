@@ -1,25 +1,25 @@
 ---
-description: 'Usuários e aplicativos com privilégios administrativos podem usar Windows Installer funções para inventariar os aplicativos Windows Installer, os recursos, os componentes e os patches instalados no sistema. A partir do Windows Installer&\# 160; 3.0, os usuários e aplicativos que têm privilégios de administrador podem enumerar os aplicativos Windows Installer, os recursos, os componentes e os patches instalados no sistema por todos os usuários. Os administradores e aplicativos podem obter informações sobre um produto ou patch para um determinado usuário ou todos os usuários no sistema. Os aplicativos podem obter o estado do recurso ou do componente para um usuário específico. As funções de inventário disponíveis a partir do Windows Installer&\# 160; 3.0 podem limitar o escopo dos itens a serem encontrados pelo contexto de instalação e pelo contexto do usuário. Há três contextos de instalação possíveis: por usuário, por computador e gerenciado por usuário. O contexto do usuário pode ser um usuário específico ou todos os usuários no sistema. As versões das funções de inventário de Windows Installer anteriores a Windows Installer&\# 160; 3.0 só podem enumerar itens instalados no sistema no contexto da máquina ou no contexto por usuário do usuário atual. Essa limitação impede um inventário completo de todos os produtos Windows Installer e patches instalados no sistema por usuários diferentes do usuário atual. Enumerando ProductsEnumerating PatchesObtaining produto InformationObtaining patch InformationObtaining componente estado InformationObtaining informações de estado do recurso'
+description: 'usuários e aplicativos com privilégios administrativos podem usar Windows Installer funções para inventariar os aplicativos Windows Installer, os recursos, os componentes e os patches instalados no sistema. a partir do Windows Installer&\# 160; 3.0, os usuários e aplicativos que têm privilégios de administrador podem enumerar os aplicativos Windows Installer, os recursos, os componentes e os patches instalados no sistema por todos os usuários. Os administradores e aplicativos podem obter informações sobre um produto ou patch para um determinado usuário ou todos os usuários no sistema. Os aplicativos podem obter o estado do recurso ou do componente para um usuário específico. as funções de inventário disponíveis a partir do Windows Installer&\# 160; 3.0 podem limitar o escopo dos itens a serem encontrados pelo contexto de instalação e pelo contexto do usuário. Há três contextos de instalação possíveis: por usuário, por computador e gerenciado por usuário. O contexto do usuário pode ser um usuário específico ou todos os usuários no sistema. as versões das funções de inventário de Windows Installer anteriores a Windows Installer&\# 160; 3.0 só podem enumerar itens instalados no sistema no contexto da máquina ou no contexto por usuário do usuário atual. essa limitação impede um inventário completo de todos os produtos Windows Installer e patches instalados no sistema por usuários diferentes do usuário atual. Enumerando ProductsEnumerating PatchesObtaining produto InformationObtaining patch InformationObtaining componente estado InformationObtaining informações de estado do recurso'
 ms.assetid: ef95c3c8-b4c8-4305-8aa2-07ec74b3121b
-title: Usando Windows Installer para produtos e patches de inventário
+title: usando Windows Installer para produtos e patches de inventário
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7915a8a58954c2e07a3dae9536ed7bae399e416b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9406d0984e58efdb8344fbf8974234690e3a6aaeb1cc697b5a76e6af940554e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013224"
 ---
-# <a name="using-windows-installer-to-inventory-products-and-patches"></a>Usando Windows Installer para produtos e patches de inventário
+# <a name="using-windows-installer-to-inventory-products-and-patches"></a>usando Windows Installer para produtos e patches de inventário
 
-Usuários e aplicativos com privilégios administrativos podem usar Windows Installer funções para inventariar os aplicativos Windows Installer, os recursos, os componentes e os patches instalados no sistema.
+usuários e aplicativos com privilégios administrativos podem usar Windows Installer funções para inventariar os aplicativos Windows Installer, os recursos, os componentes e os patches instalados no sistema.
 
-A partir do Windows Installer 3,0, os usuários e aplicativos que têm privilégios de administrador podem enumerar os aplicativos Windows Installer, os recursos, os componentes e os patches instalados no sistema por todos os usuários. Os administradores e aplicativos podem obter informações sobre um produto ou patch para um determinado usuário ou todos os usuários no sistema. Os aplicativos podem obter o estado do recurso ou do componente para um usuário específico.
+a partir do Windows Installer 3,0, os usuários e aplicativos que têm privilégios de administrador podem enumerar os aplicativos Windows Installer, os recursos, os componentes e os patches instalados no sistema por todos os usuários. Os administradores e aplicativos podem obter informações sobre um produto ou patch para um determinado usuário ou todos os usuários no sistema. Os aplicativos podem obter o estado do recurso ou do componente para um usuário específico.
 
-As funções de inventário disponíveis a partir do Windows Installer 3,0 podem limitar o escopo dos itens a serem encontrados pelo contexto de instalação e pelo contexto do usuário. Há três contextos de instalação possíveis: por usuário, por computador e gerenciado por usuário. O contexto do usuário pode ser um usuário específico ou todos os usuários no sistema.
+as funções de inventário disponíveis a partir do Windows Installer 3,0 podem limitar o escopo dos itens a serem encontrados pelo contexto de instalação e pelo contexto do usuário. Há três contextos de instalação possíveis: por usuário, por computador e gerenciado por usuário. O contexto do usuário pode ser um usuário específico ou todos os usuários no sistema.
 
-As versões do Windows Installer funções de inventário anteriores a Windows Installer 3,0 só podem enumerar itens instalados no sistema no contexto do computador ou no contexto por usuário do usuário atual. Essa limitação impede um inventário completo de todos os produtos Windows Installer e patches instalados no sistema por usuários diferentes do usuário atual.
+as versões do Windows Installer funções de inventário anteriores a Windows Installer 3,0 só podem enumerar itens instalados no sistema no contexto do computador ou no contexto por usuário do usuário atual. essa limitação impede um inventário completo de todos os produtos Windows Installer e patches instalados no sistema por usuários diferentes do usuário atual.
 
 -   [Enumerando produtos](#enumerating-products)
 -   [Enumerando patches](#enumerating-patches)

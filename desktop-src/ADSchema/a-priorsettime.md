@@ -1,11 +1,11 @@
 ---
-title: Atributo de tempo definido anterior
+title: Atributo Prior-Set-Time
 description: A hora anterior definida para um segredo.
 ms.assetid: 052dbfe3-8326-48a2-8d5f-2889d8e34848
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo de tempo de definição anterior
-- Esquema de AD do atributo priorSetTime
+- Esquema do AD do atributo de tempo de definição anterior
+- Esquema do AD do atributo priorSetTime
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2c33521b1a29907b13181b715f0d46a8d12999b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 5836335ef814e7b3dbda1931fa8ee7544b8da0570a7581c7b63a40d9db94626f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022264"
 ---
-# <a name="prior-set-time-attribute"></a>Atributo de tempo definido anterior
+# <a name="prior-set-time-attribute"></a>Atributo Prior-Set-Time
 
 A hora anterior definida para um segredo.
 
@@ -30,12 +30,12 @@ A hora anterior definida para um segredo.
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | Tempo de definição anterior                       |
-| LDAP-Display-Name | priorSetTime                         |
+| Ldap-Display-Name | priorSetTime                         |
 | Tamanho              | 8 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.99                |
-| System-ID-GUID    | bf967a01-0de6-11d0-a285-00aa003049e2 |
+| System-Id-Guid    | bf967a01-0de6-11d0-a285-00aa003049e2 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -58,15 +58,15 @@ A hora anterior definida para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A hora anterior definida para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A hora anterior definida para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ A hora anterior definida para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A hora anterior definida para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A hora anterior definida para um segredo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| Tem valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
-| No catálogo global      | Falso                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
+| No Catálogo Global      | Falso                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                          |
 | Range-Lower            | \-                                    |
 | Range-Upper            | \-                                    |
 | Search-Flags           | 0x00000000                            |
 | System-Flags           | 0x00000010                            |
-| Classes usadas em        | [**RADIUS**](c-secret.md)<br/> |
+| Classes usadas em        | [**Segredo**](c-secret.md)<br/> |
 
 
 

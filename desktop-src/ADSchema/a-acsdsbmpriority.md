@@ -1,11 +1,11 @@
 ---
-title: ACS-DSBM-atributo de prioridade
-description: Esses atributos contêm a prioridade para esse Gerenciador de largura de banda de sub-rede (SBM).
+title: Atributo ACS-DSBM-Priority
+description: Esses atributos contêm a prioridade para esse SBM (Gerenciador de Largura de Banda de Sub-rede).
 ms.assetid: 08dd49d2-a2fa-4707-8302-25566680b91d
 ms.tgt_platform: multiple
 keywords:
-- ACS-DSBM-esquema de atributo de prioridade do AD
-- Esquema de AD do atributo aCSDSBMPriority
+- Esquema do AD do atributo ACS-DSBM-Priority
+- Esquema do AD do atributo aCSDSBMPriority
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dd32c9e9cca95dbd5f52569de0b61e886033d13
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c2e7a80c9c866b5c91f83f884ecaafe60e4596af4ca8d625791ed9264679c356
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087177"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119637486"
 ---
-# <a name="acs-dsbm-priority-attribute"></a>ACS-DSBM-atributo de prioridade
+# <a name="acs-dsbm-priority-attribute"></a>Atributo ACS-DSBM-Priority
 
-Esses atributos contêm a prioridade para esse Gerenciador de largura de banda de sub-rede (SBM). Quando um novo DSBM (Gerenciador de largura de banda de sub-rede) designado precisa ser eleito, esse valor é enviado para outros SBMs no domínio como parte de uma mensagem de DSBM \_ disposta. O SBM com a prioridade mais alta é eleito como o novo DSBM.
+Esses atributos contêm a prioridade para esse SBM (Gerenciador de Largura de Banda de Sub-rede). Quando um novo DSBM (Gerenciador de Largura de Banda de Sub-rede Designada) precisa ser selecionado, esse valor é enviado para outros SBMs no domínio como parte de uma mensagem de disposição do DSBM. \_ O SBM com a prioridade mais alta é selecionado como o novo DSBM.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ACS-DSBM-Priority                    |
-| LDAP-Display-Name | aCSDSBMPriority                      |
+| Ldap-Display-Name | aCSDSBMPriority                      |
 | Tamanho              | 4 bytes                              |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.776               |
-| System-ID-GUID    | 1cb3559e-56d0-11d1-a9c6-0000f80367c1 |
+| System-Id-Guid    | 1cb3559e-56d0-11d1-a9c6-0000f80367c1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ Esses atributos contêm a prioridade para esse Gerenciador de largura de banda d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Esses atributos contêm a prioridade para esse Gerenciador de largura de banda d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Esses atributos contêm a prioridade para esse Gerenciador de largura de banda d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Esses atributos contêm a prioridade para esse Gerenciador de largura de banda d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Esses atributos contêm a prioridade para esse Gerenciador de largura de banda d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Esses atributos contêm a prioridade para esse Gerenciador de largura de banda d
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-sub-rede**](c-acssubnet.md)<br/> |
+| Classes usadas em        | [**Sub-rede do ACS**](c-acssubnet.md)<br/> |
 
 
 

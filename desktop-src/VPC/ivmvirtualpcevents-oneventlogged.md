@@ -1,11 +1,11 @@
 ---
-title: Método IVMVirtualPCEvents OnEventLogged (VPCCOMInterfaces. h)
-description: Recebe uma notificação de que o Windows Virtual PC registra um evento.
+title: Método IVMVirtualPCEvents OnEventLogged (VPCCOMInterfaces.h)
+description: Recebe uma notificação de que Windows pc virtual registra um evento.
 ms.assetid: 89439e8e-e9bf-409e-a129-525b9feb8fdd
 keywords:
-- OnEventLogged do método virtual PC
-- Método OnEventLogged Virtual PC, interface IVMVirtualPCEvents
-- IVMVirtualPCEvents interface virtual PC, método OnEventLogged
+- Computador Virtual do método OnEventLogged
+- Computador Virtual do método OnEventLogged, interface IVMVirtualPCEvents
+- INTERFACE IVMVirtualPCEvents pc virtual , método OnEventLogged
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 196d480383f488c9c0885e95857c8d1a053d5887
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f4994f37cd0e6f83162171fbbdacbf2247a8d472cd49b5750aa2d1b735e4b554
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499450"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998516"
 ---
-# <a name="ivmvirtualpceventsoneventlogged-method"></a>Método IVMVirtualPCEvents:: OnEventLogged
+# <a name="ivmvirtualpceventsoneventlogged-method"></a>Método IVMVirtualPCEvents::OnEventLogged
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Recebe uma notificação de que o Windows Virtual PC registra um evento.
+Recebe uma notificação de que Windows pc virtual registra um evento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,20 +44,20 @@ HRESULT OnEventLogged(
 
 <dl> <dt>
 
-*logMessageID* \[ no\]
+*logMessageID* \[ Em\]
 </dt> <dd>
 
-O identificador de mensagem da mensagem de log de eventos que foi registrada.
+O identificador de mensagem da mensagem de log de eventos registrada em log.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é chamado quando o Windows Virtual PC registra uma mensagem no log de eventos do Windows. O programa cliente deve implementar esse método de interface para receber a notificação do evento **vmVirtualPCEvent \_ EventLogged** originado do [**IVMVirtualPC**](ivmvirtualpc.md).
+Esse método é chamado quando Windows computador virtual registra uma mensagem no log Windows eventos. O programa cliente deve implementar esse método de interface para receber notificação do evento **\_ EventLogged vmVirtualPCEvent** originado de [**IVMVirtualPC**](ivmvirtualpc.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,12 +65,12 @@ Esse método é chamado quando o Windows Virtual PC registra uma mensagem no log
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | DIID \_ IVMVirtualPCEvents é definido como efed1ef1-3c09-41F7-a9c2-7e29fa286c9d<br/>        |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | DIID \_ IVMVirtualPCEvents é definido como efed1ef1-3c09-41f7-a9c2-7e29fa286c9d<br/>        |
 
 
 

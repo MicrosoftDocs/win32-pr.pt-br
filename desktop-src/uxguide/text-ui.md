@@ -1,27 +1,27 @@
 ---
-title: Interface do Usuário texto
+title: Texto da interface do usuário
 description: Saiba mais sobre o texto da interface do usuário que aparece nas superfícies da interface do usuário.
 ms.assetid: db42fe22-9baf-453a-9b89-9bbb251b0b6f
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: a0ab5025407d5149d1747fbd083fed7df345e3f3
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 93dd04bdce0331e6dca97922e2f5f8879a2214e932ac51889f03114009dc1165
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119030535"
 ---
-# <a name="user-interface-text"></a>Interface do Usuário texto
+# <a name="user-interface-text"></a>Texto da interface do usuário
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte das diretrizes ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais.](/windows/uwp/design/)
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
-O texto da interface do usuário é exibido nas superfícies da interface do usuário. Este texto inclui rótulos de controle e texto estático:
+O texto da interface do usuário é exibido nas superfícies da interface de usuários. Esse texto inclui rótulos de controle e texto estático:
 
--   Os rótulos de controle identificam os controles e são colocados diretamente ou ao lado dos controles.
--   O texto estático, que é chamado porque não faz parte de um controle interativo, fornece aos usuários instruções ou explicações detalhadas para que possam tomar decisões informadas.
+-   Os rótulos de controle identificam controles e são colocados diretamente em ou ao lado dos controles.
+-   Texto estático, que é tão chamado porque não faz parte de um controle interativo, fornece aos usuários instruções detalhadas ou explicações para que eles possam tomar decisões informadas.
 
-**Observação:** As diretrizes relacionadas [ao estilo e ao tom,](text-style-tone.md)às fontes e aos [rótulos](vis-fonts.md) [de controle de comon](controls.md) são apresentadas em artigos separados.
+**Observação:** As diretrizes relacionadas a rótulos de controle de [estilo e Tom](text-style-tone.md), [fontes](vis-fonts.md)e [controles](controls.md) de as são apresentadas em artigos separados.
 
 ## <a name="usage-patterns"></a>Padrões de uso
 
@@ -31,11 +31,11 @@ O texto da interface do usuário tem vários padrões de uso:
 
 |   Uso                                                                                                                                                                                          |    Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Texto da barra de título**<br/> use o texto da barra de título para identificar uma janela ou a origem de uma caixa de diálogo. <br/>                                                                            | ![captura de tela da barra de título das opções de pasta](images/text-ui-image1.png)<br/> Neste exemplo, o texto da barra de título identifica uma janela.<br/>                                                                                                                                                                                                                                                                                                             |
-| **Instruções principais**<br/> use a instrução principal proeminente para explicar concisamente o que fazer na janela ou na página. <br/>                                                      | A instrução deve ser uma instrução específica, uma direção imperativa ou uma pergunta. boas instruções principais comunicam o objetivo do usuário em vez de se concentrar apenas em manipular a interface do usuário. <br/> ![captura de tela da pergunta: você deseja a ajuda mais recente? ](images/text-ui-image2.png)<br/> Neste exemplo, o texto de instrução principal envolve diretamente o usuário com uma pergunta em termos de benefício ou interesse próprio do usuário.<br/>             |
-| **Instruções complementares**<br/> Quando necessário, use uma instrução complementar para apresentar informações adicionais úteis para entender ou usar a janela ou a página. <br/> | Você pode fornecer informações mais detalhadas, fornecer contexto e definir terminologia. instruções complementares detalham a instrução principal sem simplesmente repromentá-la. <br/> ![captura de tela do texto ao alternar para a conta de administrador ](images/text-ui-image3.png)<br/> Neste exemplo, as instruções complementares fornecem dois cursos possíveis de ação a tomar em resposta às informações apresentadas na instrução principal.<br/> |
-| **Rótulos de controle**<br/> rótulos diretamente em ou ao lado de controles. <br/>                                                                                                           | ![captura de tela das opções do relógio da área de trabalho ](images/text-ui-image4.png)<br/> Neste exemplo, os rótulos de controle identificam as configurações do relógio da área de trabalho que os usuários podem selecionar ou modificar.<br/>                                                                                                                                                                                                                                                                       |
-| **Explicações complementares**<br/> uma união dos rótulos de controle (normalmente para links de comando, botões de opção e caixas de seleção). <br/>                                    | ![Captura de tela que mostra uma caixa de diálogo de configurações de segurança.](images/text-ui-image5.png)<br/> Neste exemplo, as explicações complementares esclarecem as opções.<br/>                                                                                                                                                                                                                                                                                             |
+| **Texto da barra de título**<br/> Use o texto da barra de título para identificar uma janela ou a origem de uma caixa de diálogo. <br/>                                                                            | ![captura de tela da barra de título de opções de pasta](images/text-ui-image1.png)<br/> Neste exemplo, o texto da barra de título identifica uma janela.<br/>                                                                                                                                                                                                                                                                                                             |
+| **Instruções principais**<br/> Use a instrução principal proeminente para explicar de forma concisa o que fazer na janela ou na página. <br/>                                                      | A instrução deve ser uma instrução específica, uma direção imperativa ou uma pergunta. boas instruções principais comunicam o objetivo do usuário em vez de se concentrar apenas na manipulação da interface do usuário. <br/> ![captura de tela de pergunta: deseja obter a ajuda mais recente? ](images/text-ui-image2.png)<br/> Neste exemplo, o texto de instrução principal envolve diretamente o usuário com uma pergunta em termos de interesse ou benefício do usuário.<br/>             |
+| **Instruções complementares**<br/> quando necessário, use uma instrução complementar para apresentar informações adicionais úteis para entender ou usar a janela ou a página. <br/> | Você pode fornecer informações mais detalhadas, fornecer contexto e definir a terminologia. instruções complementares elaboradas sobre a instrução principal sem simplesmente reformular a ti. <br/> ![captura de tela de texto ao alternar para a conta do administrador ](images/text-ui-image3.png)<br/> Neste exemplo, as instruções complementares fornecem dois possíveis cursos de ação a serem adotados em resposta às informações apresentadas na instrução principal.<br/> |
+| **Rótulos de controle**<br/> rótulos diretamente no ou ao lado dos controles. <br/>                                                                                                           | ![captura de tela das opções de relógio da área de trabalho ](images/text-ui-image4.png)<br/> Neste exemplo, os rótulos de controle identificam as configurações de relógio da área de trabalho que os usuários podem selecionar ou modificar.<br/>                                                                                                                                                                                                                                                                       |
+| **Explicações suplementares**<br/> um elaboration dos rótulos de controle (normalmente para links de comando, botões de opção e caixas de seleção). <br/>                                    | ![Captura de tela que mostra uma caixa de diálogo Configurações de segurança.](images/text-ui-image5.png)<br/> Neste exemplo, as explicações suplementares esclarecem as opções.<br/>                                                                                                                                                                                                                                                                                             |
 
 
 
@@ -43,77 +43,77 @@ O texto da interface do usuário tem vários padrões de uso:
 
 ## <a name="design-concepts"></a>Conceitos de design
 
-Os desenvolvedores de software geralmente pensam no texto como relegado à documentação do produto e ao suporte técnico. "Primeiro, escreveremos o código e, em seguida, contratamos alguém para nos ajudar a explicar o que desenvolvemos." No entanto, na realidade, um texto importante é escrito anteriormente no processo, pois a interface do usuário é criada e codificada. Esse texto é visto com mais frequência e por mais pessoas do que talvez qualquer outro tipo de escrita técnica.
+Os desenvolvedores de software geralmente consideram o texto relegado à documentação do produto e ao suporte técnico. "Primeiro vamos escrever o código e, em seguida, contrataremos alguém para nos ajudar a explicar o que desenvolvemos." Ainda na realidade, o texto importante é escrito anteriormente no processo, pois a interface do usuário é concebida e codificada. Esse texto é, afinal, visto com mais frequência e por mais pessoas do que talvez qualquer outro tipo de escrita técnica.
 
-**O texto compreensível é crucial para a interface do usuário efetiva.** Editores e editores profissionais devem trabalhar com desenvolvedores de software no texto da interface do usuário como parte integrante do processo de design. Fazer com que eles trabalhem no texto no início porque os problemas de texto geralmente revelam problemas de design. Se sua equipe tiver problemas para explicar um design, geralmente é o design, não a explicação, que precisa melhorar.
+**O texto abrangente é crucial para a interface do usuário efetiva.** Professional gravadores e editores devem funcionar com desenvolvedores de software no texto da interface do usuário como parte integrante do processo de design. Faça com que eles trabalhem no texto antecipadamente porque problemas de texto geralmente revelam problemas de design. Se sua equipe tiver problemas para explicar um design, com muita frequência ele é o design, não a explicação, que precisa de melhoria.
 
 ### <a name="a-design-model-for-ui-text"></a>Um modelo de design para texto da interface do usuário
 
-Ao pensar sobre o texto da interface do usuário e seu posicionamento nas superfícies da interface do usuário, considere estes fatos:
+Como você imagina o texto da interface do usuário e seu posicionamento nas suas superfícies de interface do usuário, considere estes fatos:
 
--   Durante a leitura focada e imersiva, as pessoas leem em uma ordem da esquerda para a direita, de cima para baixo (em culturas ocidental).
--   Ao usar software, os usuários não são imersos na própria interface do usuário, mas em seu trabalho. Consequentemente, os usuários não leem o texto da interface do usuário que o digitalizarem.
--   Ao digitalr uma janela, os usuários podem parecer estar lendo texto quando, na realidade, estão filtrando-o. Geralmente, eles não compreendem realmente o texto da interface do usuário, a menos que percebam a necessidade.
--   Dentro de uma janela, diferentes elementos da interface do usuário recebem diferentes níveis de atenção. Os usuários tendem a ler rótulos de controle primeiro, especialmente aqueles que parecem relevantes para concluir a tarefa em questão. Por outro lado, os usuários tendem a ler texto estático somente quando eles pensam que precisam.
+-   Durante o foco, a leitura de imersão, as pessoas lidam em uma ordem da esquerda para a direita, de cima para baixo (em culturas ocidentais).
+-   Ao usar o software, os usuários não estão imersos na própria interface do usuário, mas em seu trabalho. Consequentemente, os usuários não lêem o texto da interface do usuário que o examinam.
+-   Ao digitalizar uma janela, os usuários podem parecer ler o texto quando, na realidade, estão filtrando. Em geral, eles não entendem verdadeiramente o texto da interface do usuário, a menos que eles se compreendam a necessidade.
+-   Em uma janela, diferentes elementos da interface do usuário recebem diferentes níveis de atenção. Os usuários tendem a ler os rótulos de controle primeiro, especialmente aqueles que parecem relevantes para concluir a tarefa em questão. Por outro lado, os usuários tendem a ler texto estático apenas quando acham que precisam.
 
-Para um modelo de design geral, não suponha que os usuários leiam cuidadosamente o texto em uma ordem da esquerda para a direita, de cima para baixo. Em vez disso, suponha que os usuários comecem digitalizando rapidamente toda a janela e, em seguida, leiam o texto da interface do usuário aproximadamente na seguinte ordem:
+Para um modelo de design geral, não assuma que os usuários leiam atentamente o texto em uma ordem da esquerda para a direita, de cima para baixo. Em vez disso, suponha que os usuários comecem verificando rapidamente toda a janela e, em seguida, leia o texto da interface do usuário em aproximadamente a seguinte ordem:
 
 -   Controles interativos no centro
 -   Os [botões de confirmação](glossary.md)
 -   Controles interativos encontrados em outro lugar
 -   Instrução principal
--   Explicações complementares
+-   Explicações suplementares
 -   Título da janela
 -   Outro texto estático no corpo principal
 -   Notas de rodapé
 
-Você também deve supor que, depois que os usuários decidirem o que fazer, eles interromperão imediatamente a leitura e o fazerão.
+Você também deve supor que, depois que os usuários decidirem o que fazer, eles imediatamente irão parar de ler e fazer isso.
 
 ### <a name="eliminate-redundancy"></a>Eliminar redundância
 
-O texto redundante não só ocupa espaço valioso na tela, mas também diminui a eficácia das ideias ou ações importantes que você está tentando transmitir. Também é um desperdício de tempo do leitor e muito mais em um contexto em que a verificação é a norma. **O Windows se esforça para explicar o que os usuários precisam fazer uma vez de forma bem e concisa.**
+O texto redundante não só leva um espaço de tela valioso, mas enfraquece a eficácia das ideias ou ações importantes que você está tentando transmitir. Também é um desperdício do tempo do leitor, e tudo isso em um contexto em que a verificação é a norma. **Windows se esforça para explicar o que os usuários precisam fazer uma única vez e concisamente.**
 
-Revise cada janela e elimine palavras e instruções duplicadas, dentro e entre controles. Não evite que texto importante seja explícito sempre que necessário, mas não seja redundante e não explique o óbvio.
+Examine cada janela e elimine palavras e instruções duplicadas, dentro e entre os controles. Não evite que textos importantes sejam explícitos sempre que necessário, mas não sejam redundantes e não expliquem o óbvio.
 
-### <a name="avoid-over-communication"></a>Evitar a comunicação em excesso
+### <a name="avoid-over-communication"></a>Evitar comunicação excessiva
 
-Mesmo que o texto não seja redundante, ele pode simplesmente ser muito wordy em um esforço para explicar cada detalhe. **O excesso de texto desestimula a leitura do olho tende a ignorar imediatamente, resultando em menos comunicação em vez de mais.** No texto da interface do usuário, comunique concisamente as informações essenciais. Se mais informações são necessárias para alguns usuários ou alguns [](winenv-help.md)cenários, forneça um link para conteúdo de Ajuda mais detalhado ou talvez para uma entrada de glossário para esclarecimento de um termo.
+Mesmo que o texto não seja redundante, ele pode simplesmente ser um pouco simples em um esforço para explicar cada detalhe. **O excesso de texto não incentiva a leitura do olho tende a ignorar a ti de forma Ironic, resultando em menos comunicação em vez de mais.** No texto da interface do usuário, comunique-se de forma concisa as informações essenciais. Se mais informações forem necessárias para alguns usuários ou alguns cenários, forneça um link para o conteúdo mais detalhado da [ajuda](winenv-help.md)ou talvez em uma entrada de glossário para esclarecimentos de um termo.
 
 **Incorreto:**
 
 ![captura de tela da caixa de diálogo com 6 parágrafos](images/text-ui-image6.png)
 
-Neste exemplo, há muito texto para examinar facilmente. Embora não seja pretendido pelo designer, há tanto texto que os usuários provavelmente clicarão em Próximo sem ler nada.
+Neste exemplo, há muito texto para examinar facilmente. Embora não seja destinado ao designer, há muito texto que provavelmente os usuários clicarão em avançar sem ler nada.
 
-Para evitar texto que não desanimo a leitura, crie seu texto para fazer com que cada palavra seja contada. O que não adiciona subtrações, portanto, use texto simples e conciso.
+Para evitar texto que desanime a leitura, crie seu texto para fazer cada contagem de palavras. O que não adiciona subtração, portanto, use texto simples e conciso.
 
 ### <a name="use-the-inverted-pyramid"></a>Usar a pirâmide invertida
 
-A escrita acadêmica normalmente usa um estilo estrutural de "pirâmide" que estabelece uma base de fatos, funciona com esses fatos e se acumula até uma conclusão que forma uma estrutura como pirâmide. Por outro lado, os amigos usam um estilo de "pirâmide invertida" que começa com a conclusão da "mudança" fundamental que os leitores devem ter. Em seguida, ele preenche progressivamente mais detalhes em que os leitores podem estar interessados, talvez, apenas para verificar. A vantagem desse estilo é que ele chega ao ponto certo e permite que os leitores pare de ler a qualquer momento que escolherem e ainda entendam as informações essenciais.
+A escrita acadêmica normalmente usa um estilo estrutural "pirâmide" que apresenta uma base de fatos, trabalha com esses fatos e cria até uma conclusão formando uma estrutura semelhante a pirâmide. Por outro lado, os jornalistas usam um estilo de "pirâmide invertida" que começa com a conclusão do "argumento" fundamental que os leitores devem ter. Em seguida, ele preenche progressivamente mais detalhes que os leitores podem estar interessados em talvez apenas examinar. A vantagem desse estilo é que ele fica certo até o ponto e permite que os leitores parem de ler a qualquer momento que escolherem e ainda compreendam as informações essenciais.
 
-Você deve aplicar a estrutura de pirâmide invertida ao texto da interface do usuário. Vá direto ao ponto com as informações essenciais, deixe os usuários pararem de ler a qualquer momento que escolherem e use um link da Ajuda para apresentar o restante da pirâmide.
+Você deve aplicar a estrutura de pirâmide invertida ao texto da interface do usuário. Fique à direita até o ponto com as informações essenciais, deixe que os usuários parem de ler a qualquer momento que escolherem e use um link de ajuda para apresentar o restante da pirâmide.
 
-![captura de tela da mensagem ao ingressar no programa Windows ](images/text-ui-image7.png)
+![captura de tela de mensagem ao ingressar no programa do Windows ](images/text-ui-image7.png)
 
-Neste exemplo, as informações essenciais estão na consulta do texto de instrução principal, informações úteis adicionais estão nas instruções complementares e os detalhes estão disponíveis clicando em um link da Ajuda.
+Neste exemplo, as informações essenciais estão na consulta do texto de instrução principal, informações úteis adicionais estão nas instruções complementares e os detalhes estão disponíveis ao clicar em um link de ajuda.
 
 **Se você fizer apenas cinco coisas...**
 
-1.  Trabalhe no texto no início porque os problemas de texto geralmente revelam problemas de design.
+1.  Trabalhe no texto antecipadamente porque problemas de texto geralmente revelam problemas de design.
 2.  Projete seu texto para verificação.
-3.  Eliminar texto redundante.
-4.  Usar texto fácil de entender; não se comunicam em excesso.
-5.  Quando necessário, forneça links para o conteúdo da Ajuda para obter informações mais detalhadas.
+3.  Elimine o texto redundante.
+4.  Use texto fácil de entender; Não se comunique mais.
+5.  Quando necessário, forneça links para o conteúdo da ajuda para obter informações mais detalhadas.
 
 ## <a name="guidelines"></a>Diretrizes
 
 ### <a name="general"></a>Geral
 
--   **Remova texto redundante.** Procure texto redundante em títulos de janela, instruções principais, instruções complementares, áreas de conteúdo, links de comando e botões de commit. Em geral, deixe o texto completo nas instruções principais e controles interativos e remova qualquer redundância de outros locais.
+-   **Remova o texto redundante.** Procure texto redundante em títulos de janela, instruções principais, instruções complementares, áreas de conteúdo, links de comando e botões de confirmação. Em geral, deixe texto completo nas instruções principais e nos controles interativos e remova qualquer redundância dos outros locais.
 -   **Evite grandes blocos de texto da interface do usuário.** As maneiras de fazer isso incluem:
-    -   Em partes de texto em frases e parágrafos mais curtos.
-    -   Quando necessário, fornecer [links de Ajuda](winenv-help.md) para informações úteis, mas não essenciais.
--   **Escolha nomes de objeto e rótulos que se comunicam claramente e diferenciem o que o objeto faz.** Os usuários não devem ter que descobrir o que o objeto realmente significa ou como ele difere de outros objetos.
+    -   Agrupamento de texto em frases e parágrafos menores.
+    -   Quando necessário, fornecendo [links de ajuda](winenv-help.md) para informações úteis, mas não essenciais.
+-   **Escolha nomes de objetos e rótulos que se comunicam claramente e diferenciam o que o objeto faz.** Os usuários não devem ter que descobrir o que o objeto realmente significa ou como ele difere de outros objetos.
 
     Incorreto:
 
@@ -125,69 +125,69 @@ Neste exemplo, as informações essenciais estão na consulta do texto de instru
 
     No exemplo incorreto, os nomes de objeto não são diferenciados; o exemplo melhor mostra uma diferenciação forte por nome do produto.
 
--   **Se você quiser garantir que os usuários leiam textos específicos relacionados a uma ação, coloque-o em um controle interativo.**
+-   **Se você quiser garantir que os usuários leiam texto específico relacionado a uma ação, coloque-o em um controle interativo.**
     -   **Aceitável:**
-    -   ![captura de tela do aviso de formatação usando o botão OK ](images/text-ui-image10.png)
-    -   Neste exemplo, há uma chance de os usuários não lerem o texto que explica o que eles estão confirmando.
+    -   ![captura de tela de aviso de formatação usando o botão OK ](images/text-ui-image10.png)
+    -   Neste exemplo, há a possibilidade de que os usuários não leiam o texto que explica o que eles estão confirmando.
     -   **Melhor:**
-    -   ![captura de tela do botão de aviso e formato de formatação ](images/text-ui-image11.png)
+    -   ![captura de tela da formatação de aviso e botão Formatar ](images/text-ui-image11.png)
     -   Neste exemplo, você pode ter certeza de que pelo menos os usuários entendem que estão prestes a formatar um disco.
--   **Use um espaço entre frases.** Não dois.
+-   **Use um espaço entre as frases.** Não dois.
 
 ### <a name="text-fonts-sizes-and-colors"></a>Fontes de texto, tamanhos e cores
 
 -   **Use texto azul somente para links e instruções principais.**
 -   **Use texto verde somente para URLs nos resultados da pesquisa.**
 
-As fontes e cores a seguir são padrões para o Windows.
+As fontes e cores a seguir são padrões para Windows.
 
 
 
-| Padrão                                                                                     | Símbolo de tema                            | Fonte, Cor                                                           |
+| Padrão                                                                                     | Símbolo de tema                            | Fonte, cor                                                           |
 |--------------------------------------------------------------------------------------|-----------------------------|------------------------------------------------------------|
 | ![primeira coluna: texto da barra de título ](images/text-ui-image12.png)<br/>              | CaptionFont<br/>      | 9 pt. preto ( \# 000000) Segoe UI<br/>                 |
-| ![primeira coluna: instruções principais ](images/text-ui-image13.png)<br/>           | MainInstruction<br/>  | 12 pt. blue ( \# 003399) Segoe UI<br/>                 |
+| ![primeira coluna: instruções principais ](images/text-ui-image13.png)<br/>           | MainInstruction<br/>  | 12 pt. azul ( \# 003399) Segoe UI<br/>                 |
 | ![primeira coluna: instruções secundárias ](images/text-ui-image14.png)<br/>      | Instrução<br/>      | 9 pt. preto ( \# 000000) Segoe UI<br/>                 |
-| ![primeira coluna: texto normal ](images/text-ui-image15.png)<br/>                 | Bodytext<br/>         | 9 pt. preto ( \# 000000) Segoe UI<br/>                 |
-| ![primeira coluna: texto enfatizado ](images/text-ui-image16.png)<br/>             | Bodytext<br/>         | 9 pt. preto ( \# 000000) Segoe UI, negrito ou itálico<br/> |
-| ![primeira coluna: texto editável ](images/text-ui-image17.png)<br/>               | Bodytext<br/>         | 9 pt. preto ( \# 000000) Segoe UI, em uma caixa<br/>       |
+| ![primeira coluna: texto normal ](images/text-ui-image15.png)<br/>                 | BodyText<br/>         | 9 pt. preto ( \# 000000) Segoe UI<br/>                 |
+| ![primeira coluna: texto enfatizado ](images/text-ui-image16.png)<br/>             | BodyText<br/>         | 9 pt. preto ( \# 000000) Segoe UI, negrito ou itálico<br/> |
+| ![primeira coluna: texto editável ](images/text-ui-image17.png)<br/>               | BodyText<br/>         | 9 pt. preto ( \# 000000) Segoe UI, em uma caixa<br/>       |
 | ![primeira coluna: texto desabilitado ](images/text-ui-image18.png)<br/>               | Desabilitado<br/>         | 9 pt. cinza-escuro ( \# 323232) Segoe UI<br/>             |
-| ![primeira coluna: link ](images/text-ui-image19.png)<br/>                        | HyperLinkText<br/>    | 9 pt. blue ( \# 0066CC) Segoe UI<br/>                  |
-| ![primeira coluna: links (foco) ](images/text-ui-image20.png)<br/>               | Frequente<br/>              | 9 pt. azul-claro ( \# 3399FF) Segoe UI<br/>            |
-| ![primeira coluna: título do grupo ](images/text-ui-image21.png)<br/>                |  <br/>                | 11 pt. blue ( \# 003399) Segoe UI<br/>                 |
+| ![primeira coluna: link ](images/text-ui-image19.png)<br/>                        | HyperLinkText<br/>    | 9 pt. Segoe UI azul ( \# 0066CC)<br/>                  |
+| ![primeira coluna: links (focalizar) ](images/text-ui-image20.png)<br/>               | Frequente<br/>              | 9 pt. azul-claro ( \# 3399FF) Segoe UI<br/>            |
+| ![primeira coluna: cabeçalho do grupo ](images/text-ui-image21.png)<br/>                |  <br/>                | 11 pt. azul ( \# 003399) Segoe UI<br/>                 |
 | ![primeira coluna: nome do arquivo (na exibição de conteúdo) ](images/text-ui-image22.png)<br/> |  <br/>                | 11 pt. preto ( \# 000000) Segoe UI<br/>                |
-| ![primeira coluna: texto do documento ](images/text-ui-image23.png)<br/>               | (nenhum)<br/>           | 9 pt. black ( \# 000000) Californiabri<br/>                  |
-| ![primeira coluna: títulos de documento ](images/text-ui-image24.png)<br/>           | (nenhum)<br/>           | 17 pt. black ( \# 000000) Californiabri<br/>                 |
+| ![primeira coluna: texto do documento ](images/text-ui-image23.png)<br/>               | (nenhum)<br/>           | 9 pt. preto ( \# 000000) Calibri<br/>                  |
+| ![primeira coluna: títulos de documento ](images/text-ui-image24.png)<br/>           | (nenhum)<br/>           | 17 pt. preto ( \# 000000) Calibri<br/>                 |
 
 
 
  
 
-Para obter mais informações e exemplos, consulte [Fontes](vis-fonts.md) e [cores.](vis-color.md)
+Para obter mais informações e exemplos, consulte [fontes](vis-fonts.md) e [cores](vis-color.md).
 
 ### <a name="other-text-characteristics"></a>Outras características de texto
 
 **Negrito**
 
--   **Use negrito com moderação para chamar a atenção para o texto que os usuários devem ler.** Por exemplo, os usuários que examinam uma lista de opções de botão de opção podem gostar de ver os rótulos em negrito, para se destacar do texto que adiciona informações complementares sobre cada opção. Esteja ciente de que o uso de negrito demais diminui seu impacto.
+-   **Use em negrito para chamar atenção para texto que os usuários devem ler.** Por exemplo, os usuários que verificam uma lista de opções de botão de opção podem apreciar a exibição dos rótulos em negrito, para destacar o texto que adiciona informações complementares sobre cada opção. Lembre-se de que o uso de muito mais negrito diminui seu impacto.
 -   **Com os dados rotulados, use negrito para enfatizar o que for mais importante para os dados como um todo.**
-    -   Para dados genéricos principalmente (em que os dados têm pouco significado sem seus rótulos, como com numerais ou datas), use rótulos em negrito e dados simples para que os usuários possam examinar e entender mais facilmente os tipos de dados.
-    -   Para dados principalmente autoexplicativos, use rótulos simples e dados em negrito para que os usuários possam se concentrar nos dados em si.
-    -   Como alternativa, você pode usar texto cinza escuro para des enfatizar informações menos importantes em vez de usar negrito para enfatizar as informações mais importantes.
+    -   Para os dados mais genéricos (onde os dados têm pouco significado sem seus rótulos, como com numerais ou datas), use rótulos em negrito e dados sem formatação para que os usuários possam examinar e entender os tipos de dados com mais facilidade.
+    -   Para obter principalmente dados autoexplicativos, use rótulos simples e dados em negrito para que os usuários possam se concentrar nos dados em si.
+    -   Como alternativa, você pode usar texto cinza escuro para desenfatizar informações menos importantes em vez de usar negrito para enfatizar as informações mais importantes.
 
-        ![captura de tela da exibição em miniatura do Windows Explorer ](images/text-ui-image25.png)
+        ![captura de tela do modo de exibição de miniatura do Windows Explorer ](images/text-ui-image25.png)
 
-        Neste exemplo, em vez de enfatizar os dados usando negrito, os rótulos são des enfatizados usando cinza-escuro.
+        Neste exemplo, em vez de enfatizar os dados usando negrito, os rótulos são realçados com o uso de cinza escuro.
 
--   **Nem todas as fontes são suportadas em negrito, portanto, nunca deve ser crucial entender o texto.**
+-   **Nem todas as fontes dão suporte a negrito, portanto, nunca deve ser crucial para entender o texto.**
 
 **Itálico**
 
--   Use para se referir ao texto literalmente. Não use aspas para essa finalidade.
+-   Use para fazer referência ao texto literalmente. Não use aspas para essa finalidade.
 
     **Correto:**
 
-    Os termos documento e arquivo geralmente são usados de forma intercambiável.
+    Os termos documento e arquivo são frequentemente usados de maneira intercambiável.
 
 -   Use para [prompts](glossary.md) em [caixas de texto](ctrl-text-boxes.md) e [listas suspensas editáveis](/windows/desktop/uxguide/ctrl-drop).
 
@@ -202,7 +202,7 @@ Para obter mais informações e exemplos, consulte [Fontes](vis-fonts.md) e [cor
 
 -   Não use o texto da interface do usuário.
 
-**Aplicar**
+**Underline**
 
 -   Não use, exceto links.
 -   Não use para dar ênfase. Em vez disso, use itálico.
@@ -259,7 +259,7 @@ Para obter mais informações e exemplos, consulte [Fontes](vis-fonts.md) e [cor
 
 ### <a name="capitalization"></a>Uso de maiúsculas
 
--   **Use a capitalização de estilo de título para títulos, capitalização de estilo de frase para todos os outros elementos da interface do usuário.** Fazer isso é mais apropriado para o [Tom do Windows](text-style-tone.md).
+-   **Use a capitalização de estilo de título para títulos, capitalização de estilo de frase para todos os outros elementos da interface do usuário.** fazer isso é mais apropriado para o [tom de Windows](text-style-tone.md).
 
     -   **Exceção:** Para aplicativos herdados, você pode usar a capitalização de estilo de título para botões de comando, menus e títulos de coluna, se necessário, para evitar a mistura de estilos de capitalização.
 
@@ -302,7 +302,7 @@ Para obter mais informações, consulte a seção "texto" ou "rótulos" nas dire
 
     ![captura de tela do formato de data: segunda-feira, 06 de julho de 2009](images/text-ui-image29.png)![captura de tela do formato de data: 06 de julho de 2009](images/text-ui-image30.png)
 
-    Nestes exemplos do Microsoft Outlook, os dois formatos para a data por extenso estão corretos. Eles refletem opções diferentes que os usuários fizeram no item do painel de controle região e idioma.
+    nestes exemplos do Microsoft Outlook, os dois formatos da data por extenso estão corretos. Eles refletem opções diferentes que os usuários fizeram no item do painel de controle região e idioma.
 
 -   **Use o formato de data por extenso para cenários que se beneficiam de ter informações adicionais.** Use o formato de data abreviada para contextos que não têm espaço suficiente para o formato longo. Embora os usuários escolham quais informações gostaria de incluir nos formatos longo e curto, os designers escolhem qual formato exibir em seus programas com base no cenário e no contexto.
 
@@ -341,7 +341,7 @@ Para obter mais informações, consulte o [centro de desenvolvedores do Go Globa
     -   **Janelas de programas de nível superior que não são centradas em documentos:** Exiba apenas o nome do programa.
     -   **Caixas de diálogo:** Exibe o comando, o recurso ou o programa do qual a caixa de diálogo veio. Não use o título para explicar a finalidade da caixa de diálogo que é a finalidade das principais instruções. Para obter mais diretrizes, consulte [caixas de diálogo](win-dialog-box.md).
     -   **Assistentes:** Exibir o nome do assistente. Observe que a palavra "assistente" não deve ser incluída em nomes de assistente. Para obter mais diretrizes, consulte [assistentes](win-wizards.md).
--   **Para janelas de programas de nível superior, se a legenda da barra de título e o ícone forem exibidos em destaque na parte superior da janela, você poderá ocultar a legenda da barra de título e o ícone para evitar redundância.** No entanto, você ainda precisa definir um título adequado internamente para uso pelo Windows.
+-   **Para janelas de programas de nível superior, se a legenda da barra de título e o ícone forem exibidos em destaque na parte superior da janela, você poderá ocultar a legenda da barra de título e o ícone para evitar redundância.** No entanto, você ainda precisa definir um título adequado internamente para uso por Windows.
 -   **Para caixas de diálogo, não inclua as palavras "Dialog" ou "Progress" nos títulos.** Esses conceitos são implícitos e deixar essas palavras desativadas torna os títulos mais fáceis de serem verificados pelos usuários.
 
 ### <a name="main-instructions"></a>Instruções principais
@@ -437,64 +437,64 @@ Para obter mais informações, consulte a seção "instrução principal" nas di
 
     **Incorreto:**
 
-    ![captura de tela de rótulos com frases primeiro duplicadas](images/text-ui-image40.png)
+    ![captura de tela de rótulos com as primeiras frases duplicadas](images/text-ui-image40.png)
 
     **Correto:**
 
-    ![captura de tela da primeira frase movida para o rótulo de grupo](images/text-ui-image41.png)
+    ![captura de tela da primeira frase movida para o rótulo do grupo](images/text-ui-image41.png)
 
-    O exemplo correto move a frase introdutória idêntica para o rótulo, de modo que as duas opções sejam diferenciadas com mais clareza.
+    O exemplo correto move a frase introdutório idêntica para o rótulo, de modo que as duas opções sejam diferenciadas de forma mais limpa.
 
--   **Em geral, prefira frases positivas.** Por exemplo, use do em vez de não, e notifique em vez de não notificar.
-    -   **Exceção:** O rótulo da caixa de seleção "não mostrar esta mensagem novamente" é amplamente usado.
--   **Omita os verbos instrutivos que se aplicam a todos os controles do tipo fornecido.** Em vez disso, focalize os rótulos sobre o que é exclusivo sobre os controles. Por exemplo, ele vai sem dizer que os usuários precisam digitar em um controle de caixa de texto ou que os usuários precisem clicar em um link.
+-   **Em geral, prefira frases positivas.** Por exemplo, use fazer em vez de não fazer e notificar em vez de não notificar.
+    -   **Exceção:** O rótulo da caixa de seleção "Não mostrar esta mensagem novamente" é amplamente usado.
+-   **Omita verbos instrucionais que se aplicam a todos os controles do tipo determinado.** Em vez disso, concentre os rótulos no que é exclusivo sobre os controles. Por exemplo, não é necessário dizer que os usuários precisam digitar em um controle de caixa de texto ou que os usuários precisam clicar em um link.
 
     **Incorreto:**
 
-    ![captura de tela do rótulo: ' Digite seu nome ' ](images/text-ui-image42.png)
+    ![captura de tela do rótulo: 'digite seu nome' ](images/text-ui-image42.png)
 
     **Correto:**
 
-    ![captura de tela do rótulo: ' seu nome ' ](images/text-ui-image43.png)
+    ![captura de tela do rótulo: 'seu nome' ](images/text-ui-image43.png)
 
-    Nos exemplos incorretos, os rótulos de controle têm verbos instrutivos que se aplicam a todos os controles de seu tipo.
+    Nos exemplos incorretos, os rótulos de controle têm verbos instrucionais que se aplicam a todos os controles de seu tipo.
 
--   Em alguns casos, as seguintes anotações entre parênteses para controlar rótulos podem ser úteis:
+-   Em alguns casos, as seguintes anotações parênteses para controlar rótulos podem ser úteis:
     -   **Se uma opção for opcional, considere adicionar "(opcional)" ao rótulo.**
-    -   **Se uma opção for altamente recomendável, adicione "(recomendado)" ao rótulo.** Isso significa que a configuração é opcional, mas deve ser definida de qualquer forma.
-    -   **Se uma opção for destinada apenas a usuários avançados, considere adicionar "(avançado)" ao rótulo.**
+    -   **Se uma opção for altamente recomendada, adicione "(recomendado)" ao rótulo.** Isso significa que a configuração é opcional, mas deve ser definida de qualquer forma.
+    -   **Se uma opção for destinada somente a usuários avançados, considere adicionar "(advanced)" ao rótulo.**
 -   Você pode especificar unidades (segundos, conexões e assim por diante) entre parênteses após o rótulo.
 
-    ![captura de tela do rótulo: tamanho inicial (MB) ](images/text-ui-image44.png)
+    ![captura de tela do rótulo: tamanho inicial (mb) ](images/text-ui-image44.png)
 
-    Este exemplo mostra que a unidade de medida é de megabytes (MB).
+    Este exemplo mostra que a unidade de medida é mb (megabytes).
 
-Para obter mais informações, consulte a seção "texto" ou "rótulos" nas diretrizes específicas do componente da interface do usuário.
+Para obter mais informações, consulte a seção "Texto" ou "Rótulos" nas diretrizes de componente de interface do usuário específicas.
 
-### <a name="supplemental-explanations"></a>Explicações suplementares
+### <a name="supplemental-explanations"></a>Explicações complementares
 
--   **Use explicações suplementares quando os controles exigirem mais informações do que podem ser transmitidos por seu rótulo.** Mas não use uma explicação suplementar se uma não for necessária, prefira comunicar tudo com o rótulo de controle se você puder fazer isso de forma concisa. Normalmente, explicações suplementares são usadas com links de comando, botões de opção e caixas de seleção.
--   Quando necessário, **use negrito nos rótulos de controle para facilitar a verificação do texto** quando houver explicações suplementares.
+-   **Use explicações complementares quando os controles exigirem mais informações do que podem ser transmitidas pelo rótulo.** Mas não use uma explicação complementar se não for necessário preferir comunicar tudo com o rótulo de controle se você puder fazer isso de forma concisa. Normalmente, explicações complementares são usadas com links de comando, botões de rádio e caixas de seleção.
+-   Quando necessário, **use negrito nos rótulos de controle para** facilitar a verificação do texto quando houver explicações complementares.
 
-    ![captura de tela da caixa de diálogo Configurações de segurança ](images/text-ui-image45.png)
+    ![captura de tela da caixa de diálogo configurações de segurança ](images/text-ui-image45.png)
 
-    Neste exemplo, os rótulos do botão de opção estão em negrito para facilitar a verificação.
+    Neste exemplo, os rótulos de botão de rádio estão em negrito para facilitar a verificação.
 
--   **Adicionar uma explicação suplementar a um controle em um grupo não significa que você precisa fornecer explicações para todos os outros controles no grupo.** Forneça as informações relevantes no rótulo se você puder e usar explicações somente quando necessário. Não tenha explicações suplementares que simplesmente redeclarem o rótulo para fins de consistência.
+-   **Adicionar uma explicação complementar a um controle em um grupo não significa que você precisa fornecer explicações para todos os outros controles no grupo.** Forneça as informações relevantes no rótulo se você puder e usar explicações somente quando necessário. Não tem explicações complementares que simplesmente restate o rótulo para consistência.
 
-    ![captura de tela de três botões de opção ](images/text-ui-image46.png)
+    ![captura de tela de três botões de rádio ](images/text-ui-image46.png)
 
-    Neste exemplo, dois controles no grupo incluem explicações suplementares, mas o terceiro não.
+    Neste exemplo, dois controles no grupo incluem explicações complementares, mas o terceiro não.
 
--   Se uma explicação suplementar seguir um link de comando, grave o texto suplementar na segunda pessoa.
+-   Se uma explicação complementar seguir um link de comando, escreva o texto suplementar na segunda pessoa.
 
     **Exemplo:** Link de comando: criar configurações de rede sem fio e salvar na unidade flash USB
 
-    Explicação suplementar: isso criará configurações que você pode transferir para o roteador com uma unidade flash USB. Faça isso somente se você tiver um roteador sem fio que dê suporte à configuração da unidade flash USB.
+    Explicação complementar: isso criará configurações que você pode transferir para o roteador com uma unidade flash USB. Faça isso somente se você tiver um roteador sem fio que dá suporte à configuração de unidade flash USB.
 
 -   Use frases completas e pontuação final.
 
-### <a name="commit-button-labels"></a>Rótulos do botão confirmar
+### <a name="commit-button-labels"></a>Rótulos de botão de commit
 
 A tabela a seguir mostra os rótulos de botão de confirmação mais comuns e seu uso.
 
@@ -517,90 +517,90 @@ A tabela a seguir mostra os rótulos de botão de confirmação mais comuns e se
 <tr class="even">
 <td><strong>OK</strong><br/></td>
 <td><ul>
-<li>Nas caixas de diálogo: aplique as alterações ou confirme-as à tarefa e feche a janela.</li>
-<li>Nas janelas de propriedades do proprietário: aplique as alterações pendentes (feitas desde que a janela foi aberta ou a última aplicação) e feche a janela.</li>
-<li>Janelas de propriedade pertencentes: Mantenha as alterações, feche a janela e aplique as alterações quando as alterações da janela do proprietário forem aplicadas.</li>
+<li>Nas caixas de diálogo: aplique as alterações ou commit à tarefa e feche a janela.</li>
+<li>Nas janelas de propriedades do proprietário: aplique as alterações pendentes (feitas desde que a janela foi aberta ou a última Aplicar) e feche a janela.</li>
+<li>Em janelas de propriedade própria: mantenha as alterações, feche a janela e aplique as alterações quando as alterações da janela do proprietário são aplicadas.</li>
 </ul></td>
 <td><ul>
-<li>Use com o Windows que não são específicas à tarefa, como folhas de propriedades.</li>
-<li>Para o Windows usado para executar uma tarefa específica, use um rótulo específico, em vez disso, que comece com um verbo (exemplo: Print).</li>
-<li>Para o Windows no qual os usuários não podem fazer alterações, use fechar.</li>
+<li>Use com janelas que não são específicas da tarefa, como folhas de propriedades.</li>
+<li>Para janelas usadas para executar uma tarefa específica, use um rótulo específico que comece com um verbo (exemplo: Imprimir).</li>
+<li>Para janelas nas quais os usuários não podem fazer alterações, use Fechar.</li>
 </ul></td>
 <td>Digite<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>Sim/Não</strong><br/></td>
-<td>Sim é a resposta afirmativo para uma pergunta Sim ou não, enquanto que não é a resposta negativa.<br/></td>
+<td>Sim é a resposta afirmativa a uma pergunta sim ou não, enquanto Não é a resposta negativa.<br/></td>
 <td><ul>
-<li>Use os botões Sim e não apenas para responder a sim ou nenhuma pergunta. Nunca use OK e cancele para Sim ou sem perguntas.</li>
-<li>Prefira respostas específicas nos botões Sim e não. Embora não haja nada de errado com o uso de Sim e não, respostas específicas podem ser compreendidas mais rapidamente, resultando em uma tomada de decisão eficiente.</li>
-<li>No entanto, considere o uso de Sim e nenhuma resposta se a frase de respostas específicas se tornar longa ou estranha.</li>
-<li>Não use botões Sim e não se o significado da resposta não estiver claro. Nesse caso, use respostas específicas.</li>
-<li>Sim e não deve sempre ser usado como um par.</li>
+<li>Use os botões Sim e Não apenas para responder a perguntas sim ou não. Nunca use OK e Cancelar para perguntas sim ou não.</li>
+<li>Prefira respostas específicas em vez dos botões Sim e Não. Embora não haja nada de errado com o uso de Sim e Não, respostas específicas podem ser compreendidas mais rapidamente, resultando em uma tomada de decisão eficiente.</li>
+<li>No entanto, considere usar respostas Sim e Não se a frase de respostas específicas for longa ou complicada.</li>
+<li>Não use os botões Sim e Não se o significado da resposta Não estiver claro. Em caso afirmado, use respostas específicas.</li>
+<li>Sim e Não sempre devem ser usados como um par.</li>
 </ul></td>
-<td>S e N<br/></td>
+<td>Y e N<br/></td>
 </tr>
 <tr class="even">
 <td><strong>Cancelar</strong><br/></td>
 <td><ul>
-<li>Nas caixas de diálogo: descartar todas as alterações ou o trabalho em andamento, reverter para o estado anterior (não deixando nenhum efeito colateral perceptível) e fechará a janela.</li>
-<li>Em folhas de propriedades: descartar todas as alterações pendentes (feitas desde que a janela foi aberta ou a última aplicação) e fechar a janela.</li>
-<li>Em itens do painel de controle: descartar todas as alterações ou trabalho em andamento, reverter para o estado anterior e retornar para a página de Hub da qual a tarefa foi iniciada. Se não houver essa página de Hub, feche a janela do item do painel de controle.</li>
+<li>Nas caixas de diálogo: descarte todas as alterações ou trabalhe em andamento, reverta para o estado anterior (não deixando nenhum efeito colateral perceptível) e feche a janela.</li>
+<li>Em folhas de propriedades: descarte todas as alterações pendentes (feitas desde que a janela foi aberta ou a última Aplicar) e feche a janela.</li>
+<li>Nos itens do painel de controle: descarte todas as alterações ou trabalhe em andamento, reverta para o estado anterior e retorne à página do hub da qual a tarefa foi lançada. Se não houver essa página de hub, feche a janela de item do painel de controle.</li>
 </ul></td>
 <td><ul>
-<li>Use quando todas as alterações ou ações pendentes puderem ser descartadas e qualquer efeito colateral puder ser desfeito.</li>
-<li>Para as alterações que não podem ser descartadas, use fechar. Para ações em andamento que podem ser interrompidas, use parar. Se as alterações iniciais ou as ações puderem ser descartadas, você poderá usar cancelar inicialmente e, em seguida, alterar para fechar ou parar quando não puder ser desfeita.</li>
+<li>Use quando todas as alterações ou ações pendentes puderem ser descartadas e os efeitos colaterais puderem ser desfeitos.</li>
+<li>Para alterações que não podem ser descartadas, use Fechar. Para ações em andamento que podem ser interrompidas, use Parar. Se inicialmente as alterações ou ações puderem ser descartadas, você poderá usar Cancelar inicialmente e, em seguida, alterar para Fechar ou Parar quando ele não puder ser desfeito.</li>
 </ul></td>
 <td>Esc<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>Close</strong><br/></td>
-<td>Feche a janela. Quaisquer alterações ou efeitos colaterais não são descartados.<br/></td>
+<td>Feche a janela. Alterações ou efeitos colaterais não são descartados.<br/></td>
 <td><ul>
-<li>Use quando as alterações ou os efeitos colaterais não puderem ser descartados. Use fechar em vez de cancelar para janelas primárias.</li>
-<li>Use o para Windows no qual os usuários não podem fazer alterações.</li>
+<li>Use quando alterações ou efeitos colaterais não puderem ser descartados. Use Fechar em vez de Cancelar para janelas primárias.</li>
+<li>Use para janelas nas quais os usuários não podem fazer alterações.</li>
 </ul></td>
-<td>ALT + F4, CTRL + F4<br/></td>
+<td>Alt+F4, Ctrl+F4<br/></td>
 </tr>
 <tr class="even">
 <td><strong>Parar</strong><br/></td>
 <td>Pare uma tarefa em execução no momento e feche a janela. Qualquer trabalho em andamento ou efeitos colaterais não são descartados.<br/></td>
 <td><ul>
-<li>Use quando o trabalho em andamento e qualquer efeito colateral não puder ou não ser descartado, normalmente com barras de progresso ou animações.</li>
+<li>Use quando estiver em andamento e quaisquer efeitos colaterais não puderem ou não serão descartados, normalmente com barras de progresso ou animações.</li>
 </ul></td>
 <td>Esc<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>Aplicar</strong><br/></td>
-<td>Nas folhas de propriedades do proprietário: aplique as alterações pendentes (feitas desde que a janela foi aberta ou a última aplicação), mas deixe a janela aberta. Isso permite que os usuários avaliem as alterações antes de fechar a folha de propriedades. Folhas de propriedades de propriedade: não use.<br/></td>
+<td>Em folhas de propriedades do proprietário: aplique as alterações pendentes (feitas desde que a janela foi aberta ou a última Aplicar), mas deixe a janela aberta. Isso permite que os usuários avaliem as alterações antes de fechar a folha de propriedades. Em folhas de propriedades de propriedade: não use.<br/></td>
 <td><ul>
 <li>Use somente em folhas de propriedades.</li>
-<li>Forneça um botão aplicar somente se a folha de propriedades tiver configurações (pelo menos uma) com efeitos que os usuários podem avaliar de maneira significativa. Normalmente, os botões aplicar são usados quando as configurações fazem alterações visíveis. Os usuários devem ser capazes de aplicar uma alteração, avaliar a alteração e fazer outras alterações com base nessa avaliação. Caso contrário, remova o botão aplicar em vez de desabilitá-lo.</li>
+<li>Forneça um botão Aplicar somente se a folha de propriedades tiver configurações (pelo menos uma) com efeitos que os usuários podem avaliar de maneira significativa. Normalmente, os botões Aplicar são usados quando as configurações fazem alterações visíveis. Os usuários devem ser capazes de aplicar uma alteração, avaliar a alteração e fazer outras alterações com base nessa avaliação. Caso contrário, remova o botão Aplicar em vez de desabilitá-lo.</li>
 </ul></td>
 <td>Um<br/></td>
 </tr>
 <tr class="even">
 <td><strong>Próximo</strong><br/></td>
-<td>Em assistentes e tarefas de várias etapas: avance para a próxima etapa sem confirmar a tarefa.<br/></td>
+<td>Em assistentes e tarefas de várias etapas: avance para a próxima etapa sem se comprometer com a tarefa.<br/></td>
 <td><ul>
 <li>Use somente em assistentes e tarefas de várias etapas para avançar para a próxima etapa sem compromisso.</li>
-<li>O efeito de um botão Avançar sempre pode ser desfeito clicando em voltar.</li>
+<li>O efeito de um botão Próximo sempre pode ser desfeito clicando em Voltar.</li>
 </ul></td>
 <td>N<br/></td>
 </tr>
 <tr class="odd">
 <td><strong>Concluir</strong><br/></td>
-<td>Em assistentes e tarefas de várias etapas: Feche a janela. Se a tarefa ainda não tiver sido executada, execute a tarefa. Se essa tarefa já tiver sido executada, quaisquer alterações ou efeitos colaterais não serão descartados.<br/></td>
+<td>Em assistentes e tarefas de várias etapas: feche a janela. Se a tarefa ainda não tiver sido executada, execute a tarefa. Se essa tarefa já tiver sido executada, quaisquer alterações ou efeitos colaterais não serão descartados.<br/></td>
 <td><ul>
-<li>Use somente em assistentes e tarefas de várias etapas. No entanto, o uso de Finish é desencorajado porque geralmente há um botão de confirmação melhor e mais específico:
+<li>Use somente em assistentes e tarefas de várias etapas. No entanto, o uso de Concluir é desencorajado porque geralmente há um botão de confirmação melhor e mais específico:
 <ul>
-<li>Se você clicar no botão for confirmado na tarefa (para que a tarefa ainda não tenha sido executada), use um rótulo específico que comece com um verbo (exemplos: imprimir, conectar, iniciar) que seja uma resposta à instrução principal.</li>
-<li>Se a tarefa já tiver sido executada no assistente, use fechar em vez disso.</li>
+<li>Se clicar no botão se confirma na tarefa (para que a tarefa ainda não tenha sido executada), use um rótulo específico que comece com um verbo (exemplos: Imprimir, Conexão, Iniciar) que é uma resposta à instrução principal.</li>
+<li>Se a tarefa já tiver sido executada no assistente, use Fechar.</li>
 </ul></li>
-<li>No entanto, você pode usar concluir quando:
+<li>No entanto, você pode usar Concluir quando:
 <ul>
-<li>O rótulo específico ainda é genérico, como salvar, selecionar, escolher ou obter.</li>
-<li>A tarefa envolve alterar uma configuração ou uma coleção de configurações.</li>
+<li>O rótulo específico ainda é genérico, como Salvar, Selecionar, Escolher ou Obter.</li>
+<li>A tarefa envolve alterar uma configuração ou coleção de configurações.</li>
 </ul></li>
 </ul></td>
 <td>Digite<br/></td>
@@ -609,7 +609,7 @@ A tabela a seguir mostra os rótulos de botão de confirmação mais comuns e se
 <td><strong>Concluído</strong><br/></td>
 <td>Não aplicável.<br/></td>
 <td><ul>
-<li>Não use. Concluído como um comando está gramaticalmente incorreto.</li>
+<li>Não use. Feito como um comando está gramaticalmente incorreto.</li>
 </ul></td>
 <td>Não aplicável.<br/></td>
 </tr>

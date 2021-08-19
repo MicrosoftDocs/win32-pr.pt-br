@@ -1,33 +1,33 @@
 ---
 title: Portando a função bbox2
-description: Não há nenhum equivalente em OpenGL para a função bbox2 do íris GL.
+description: Não há nenhum equivalente de OpenGL para a função IRIS GL bbox2.
 ms.assetid: 2d8082bf-c2c3-41d9-9bf7-b4ac2fdefbd6
 keywords:
-- Portabilidade do íris GL, função bbox2
-- portando do íris GL, função bbox2
-- portando para OpenGL do íris GL, função bbox2
-- Portabilidade OpenGL do íris GL, função bbox2
+- Portação IRIS GL, função bbox2
+- portando da função IRIS GL,bbox2
+- portando para OpenGL da função IRIS GL,bbox2
+- Portação openGL da função IRIS GL,bbox2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 21060b8a11ccd6c44297c8b533bca98d79cc00f7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b9f34bc9035e9aa9fac884a14946a0593cb70702cf19f22d5d4c82011b58077e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636568"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119012004"
 ---
 # <a name="porting-the-bbox2-function"></a>Portando a função bbox2
 
-Não há nenhum equivalente em OpenGL para a função **bbox2** do íris GL.
+Não há nenhum equivalente de OpenGL para a função IRIS GL **bbox2.**
 
-**Para o código de porta que contém funções bbox2**
+**Para portar o código que contém funções bbox2**
 
-1.  Crie uma nova lista de exibição (OpenGL) que contenha tudo na lista de exibição equivalente do íris GL, exceto a chamada para **bbox2**.
-2.  Use o código do Windows apropriado para desenhar um retângulo com o mesmo tamanho que o íris GL **bbox**.
+1.  Crie uma nova lista de exibição (OpenGL) que contém tudo na lista de exibição iris GL equivalente, exceto a chamada para **bbox2**.
+2.  Use o Windows código apropriado para desenhar um retângulo do mesmo tamanho que o IRIS GL **bbox**.
 
- 
+ 
 
- 
+ 
 
 
 

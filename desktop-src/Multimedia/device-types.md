@@ -4,43 +4,43 @@ description: Tipos de dispositivo
 ms.assetid: 6556fa6a-5906-4afb-ab7d-ef41a0e22d13
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e27ed77debb663a1d90e03512832ca83e6e276d3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 167eedddfc61960de35e979480c44b8f2efab5bf89738047446196b81a95a5b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497156"
 ---
 # <a name="device-types"></a>Tipos de dispositivo
 
-O MCI reconhece um conjunto básico de *tipos de dispositivo*. Um tipo de dispositivo é um conjunto de drivers MCI que compartilham um conjunto de comandos comum e são usados para controlar dispositivos multimídia ou arquivos de dados semelhantes. Muitos comandos MCI, como [**Open**](open.md) ([**MCI \_ Open**](mci-open.md)), exigem que você especifique um tipo de dispositivo.
+A MCI reconhece um conjunto básico de tipos *de dispositivo.* Um tipo de dispositivo é um conjunto de drivers MCI que compartilham um conjunto de comandos comum e são usados para controlar dispositivos multimídia ou arquivos de dados semelhantes. Muitos comandos MCI, como [**open**](open.md) ([**MCI \_ OPEN**](mci-open.md)), exigem que você especifique um tipo de dispositivo.
 
-A tabela a seguir lista os tipos de dispositivos definidos. A implementação atual do MCI inclui conjuntos de comandos para um subconjunto desses dispositivos.
+A tabela a seguir lista os tipos de dispositivo definidos. A implementação atual da MCI inclui conjuntos de comandos para um subconjunto desses dispositivos.
 
 
 
 | Tipo de dispositivo      | Constante                      | Descrição                                      |
 |------------------|-------------------------------|--------------------------------------------------|
-| **cdaudio**      | \_áudio MCI DEVTYPE \_ CD \_       | Player de áudio de CD                                  |
-| **DATs**          | \_dat DEVTYPE \_ MCI             | Player de fita de áudio digital                        |
-| **digitalvideo** | \_ \_ vídeo digital DEVTYPE \_ MCI  | Vídeo digital em uma janela (não baseado em GDI)        |
-| **outros**        | \_DEVTYPE MCI \_           | Dispositivo MCI indefinido                             |
-| **Overlay**      | sobreposição de \_ DEVTYPE MCI \_         | Dispositivo de sobreposição (vídeo analógico em uma janela)        |
-| **detector**      | \_scanner MCI DEVTYPE \_         | Scanner de imagem                                    |
-| **sequenciador**    | \_ \_ sequenciador DEVTYPE MCI       | Sequenciador MIDI                                   |
-| **videocassete**          | \_VCR DEVTYPE \_ MCI             | Gravador ou player de fita de vídeo                |
-| **videodisc**    | \_VIDEODISC MCI DEVTYPE \_       | VIDEODISC Player                                 |
-| **waveaudio**    | \_áudio MCI DEVTYPE \_ Wave \_ | Dispositivo de áudio que reproduz arquivos de formato de onda digitalizados |
+| **cdaudio**      | MCI \_ DEVTYPE \_ CD \_ AUDIO       | Player de áudio de CD                                  |
+| **Dat**          | MCI \_ DEVTYPE \_ DAT             | Player de fita de áudio digital                        |
+| **digitalvideo** | VÍDEO DIGITAL MCI \_ DEVTYPE \_ \_  | Vídeo digital em uma janela (não baseado em GDI)        |
+| **Outros**        | MCI \_ DEVTYPE \_ OTHER           | Dispositivo MCI indefinido                             |
+| **Sobreposição**      | SOBREPOSIÇÃO \_ DE MCI DEVTYPE \_         | Dispositivo de sobreposição (vídeo análogo em uma janela)        |
+| **scanner**      | MCI \_ DEVTYPE \_ SCANNER         | Scanner de imagem                                    |
+| **sequenciador**    | MCI \_ DEVTYPE \_ SEQUENCER       | Sequenciador MIDI                                   |
+| **Videocassete**          | MCI \_ DEVTYPE \_ VCR             | Gravador ou player de gravador de vídeo                |
+| **videodisc**    | MCI \_ DEVTYPE \_ VIDEODISC       | Player do Videodisc                                 |
+| **Waveaudio**    | MCI \_ DEVTYPE \_ WAVEFORM \_ AUDIO | Dispositivo de áudio que reproduz arquivos de forma de onda digitalizados |
 
 
 
- 
+ 
 
-Neste documento, os nomes dos tipos de dispositivo estão em negrito. Nomes de tipo de dispositivo são usados com a interface de cadeia de caracteres de comando. As constantes do tipo de dispositivo são usadas com a interface de mensagem de comando.
+Neste documento, os nomes dos tipos de dispositivo estão em negrito. Os nomes de tipo de dispositivo são usados com a interface de cadeia de caracteres de comando. Constantes de tipo de dispositivo são usadas com a interface de mensagem de comando.
 
- 
+ 
 
- 
+ 
 
 
 

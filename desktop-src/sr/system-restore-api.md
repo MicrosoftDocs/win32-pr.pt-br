@@ -1,6 +1,6 @@
 ---
-title: API de restauração do sistema
-description: A API de restauração do sistema permite que um aplicativo gerencie pontos de restauração. também há uma interface programável por script disponível por meio de Instrumentação de Gerenciamento do Windows (WMI).
+title: API do Restauração do Sistema
+description: A API Restauração do Sistema permite que um aplicativo gerencie pontos de restauração. Também há uma interface que pode ser roteável disponível por meio Windows WMI (Instrumentação de Gerenciamento de Dados).
 ms.assetid: e80fb930-8711-4347-b802-d55f780ee589
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118968025"
 ---
-# <a name="system-restore-api"></a>API de restauração do sistema
+# <a name="system-restore-api"></a>API do Restauração do Sistema
 
-A API de restauração do sistema permite que um aplicativo gerencie pontos de restauração. também há uma interface programável por script disponível por meio de [Instrumentação de Gerenciamento do Windows](/windows/desktop/WmiSdk/wmi-start-page) (WMI).
+A API Restauração do Sistema permite que um aplicativo gerencie pontos de restauração. Também há uma interface que pode ser roteável disponível por meio Windows WMI [(Instrumentação](/windows/desktop/WmiSdk/wmi-start-page) de Gerenciamento).
 
-Para obter mais informações sobre a API de restauração do sistema, consulte os seguintes tópicos:
+Para obter mais informações sobre a API Restauração do Sistema, consulte os seguintes tópicos:
 
 -   [Chamando SRSetRestorePoint](calling-srsetrestorepoint.md)
 -   [Texto de descrição do ponto de restauração](restore-point-description-text.md)
 -   [Chamadas aninhadas para SRSetRestorePoint](nested-calls-to-srsetrestorepoint.md)
 
-Para obter mais informações sobre as classes WMI de restauração do sistema, consulte [Configuring System Restore](configuring-system-restore.md).
+Para obter mais informações sobre as Restauração do Sistema WMI, consulte [Configurando Restauração do Sistema](configuring-system-restore.md).
 
  
 

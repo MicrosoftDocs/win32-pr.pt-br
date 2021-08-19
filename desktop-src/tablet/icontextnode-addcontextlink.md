@@ -1,7 +1,7 @@
 ---
 description: Adiciona um novo IContextLink à coleção de links de contexto do objeto IContextNode.
 ms.assetid: b7b9da10-3015-4976-bc4e-1a7f69b7c85b
-title: Método IContextNode::AddContextLink (IACom.h)
+title: 'Método IContextNode:: AddContextLink (IACom. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118967435"
 ---
-# <a name="icontextnodeaddcontextlink-method"></a>Método IContextNode::AddContextLink
+# <a name="icontextnodeaddcontextlink-method"></a>Método IContextNode:: AddContextLink
 
-Adiciona um novo [**IContextLink**](icontextlink.md) à coleção de links de contexto do objeto [**IContextNode.**](icontextnode.md)
+Adiciona um novo [**IContextLink**](icontextlink.md) à coleção de links de contexto do objeto [**IContextNode**](icontextnode.md) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,39 +41,39 @@ HRESULT AddContextLink(
 
 <dl> <dt>
 
-*pDestinationNode* \[ Em\]
+*pDestinationNode* \[ no\]
 </dt> <dd>
 
-O [**IContextNode de**](icontextnode.md) destino para o [**novo IContextLink.**](icontextlink.md)
+O [**IContextNode**](icontextnode.md) de destino para o novo [**IContextLink**](icontextlink.md).
 
 </dd> <dt>
 
-*linkDirection* \[ Em\]
+*linkDirection* \[ no\]
 </dt> <dd>
 
-A direção do [**objeto IContextLink**](icontextlink.md) a ser criado.
+A direção do objeto [**IContextLink**](icontextlink.md) a ser criado.
 
 </dd> <dt>
 
-*ppContextLinkToAdd* \[ out\]
+*ppContextLinkToAdd* \[ fora\]
 </dt> <dd>
 
-Um ponteiro para o novo [**objeto IContextLink.**](icontextlink.md)
+Um ponteiro para o novo objeto [**IContextLink**](icontextlink.md) .
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
+Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
 
 ## <a name="remarks"></a>Comentários
 
 > [!Caution]  
-> Para evitar uma perda de memória, chame [**IUnknown::Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em \* *ppContextLinkToAdd* quando você não precisar mais usar o nó de contexto.
+> Para evitar um vazamento de memória, chame [**IUnknown:: Release**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) em \* *ppContextLinkToAdd* quando você não precisar mais usar o nó de contexto.
 
  
 
-Esse [**objeto IContextNode**](icontextnode.md) é o nó de origem (consulte [**IContextLink::GetSourceNode**](icontextlink-getsourcenode.md)) para o novo [**objeto IContextLink.**](icontextlink.md)
+Esse objeto [**IContextNode**](icontextnode.md) é o nó de origem (consulte [**IContextLink:: GetSourceNode**](icontextlink-getsourcenode.md)) para o novo objeto [**IContextLink**](icontextlink.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,9 +81,9 @@ Esse [**objeto IContextNode**](icontextnode.md) é o nó de origem (consulte [**
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

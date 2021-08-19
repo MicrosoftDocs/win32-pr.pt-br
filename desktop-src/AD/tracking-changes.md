@@ -7,16 +7,16 @@ keywords:
 - Active Directory, usando, controlando alterações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6dc772f883b97eb4e7305b39f0a582448a8bc021
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: fe3d8521fbd7b04d2c317246d81e0b9af7bce888bcc8e78b7bc9fcbbdd05b0c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103917098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024564"
 ---
 # <a name="tracking-changes"></a>Controlando alterações
 
-Alguns aplicativos devem manter a consistência entre dados específicos armazenados no serviço de diretório Active Directory e outros dados. Os outros dados podem ser armazenados no diretório, em uma tabela SQL Server, em um arquivo ou no registro. Quando os dados armazenados no diretório são alterados, os outros dados podem precisar ser alterados para permanecerem consistentes. Os aplicativos que têm esse requisito incluem:
+Alguns aplicativos devem manter a consistência entre dados específicos armazenados no serviço de diretório Active Directory e outros dados. os outros dados podem ser armazenados no diretório, em uma tabela SQL Server, em um arquivo ou no registro. Quando os dados armazenados no diretório são alterados, os outros dados podem precisar ser alterados para permanecerem consistentes. Os aplicativos que têm esse requisito incluem:
 
 Esta seção não aborda os mecanismos usados pelos aplicativos de monitoramento. Esses são aplicativos que monitoram as alterações de diretório sem a finalidade de manter dados consistentes entre repositórios separados, mas como uma ferramenta de gerenciamento de sistema. Embora os aplicativos de monitoramento possam usar os mesmos mecanismos que oferecem suporte a aplicativos de controle de alterações, os mecanismos a seguir são projetados especificamente para monitorar aplicativos:
 
@@ -25,16 +25,16 @@ Esta seção não aborda os mecanismos usados pelos aplicativos de monitoramento
 
     ```
     HKEY_LOCAL_MACHINE
-       SYSTEM
-          CurrentControlSet
-             Services
-                NTDS
-                   Diagnostics
+       SYSTEM
+          CurrentControlSet
+             Services
+                NTDS
+                   Diagnostics
     ```
 
     Para obter mais informações, consulte [log de eventos](/windows/desktop/EventLog/event-logging).
 
--   Rastreamento de eventos. O Windows 2000 introduziu uma API de rastreamento de eventos para rastreamento e registro em log de eventos interessantes em software ou hardware. O sistema operacional Windows, e Active Directory Domain Services em particular, dão suporte ao uso de rastreamento de eventos para planejamento de capacidade e análise de desempenho detalhada. Para obter mais informações, consulte [rastreamento de eventos](/windows/desktop/ETW/event-tracing-portal) e [rastreamento de eventos em ADSI](/windows/desktop/ADSI/adsi-and-etw).
+-   Rastreamento de eventos. Windows 2000 introduziu uma API de rastreamento de eventos para rastreamento e registro em log de eventos interessantes em software ou hardware. o sistema operacional Windows e Active Directory Domain Services em particular oferecem suporte ao uso de rastreamento de eventos para planejamento de capacidade e análise de desempenho detalhada. Para obter mais informações, consulte [rastreamento de eventos](/windows/desktop/ETW/event-tracing-portal) e [rastreamento de eventos em ADSI](/windows/desktop/ADSI/adsi-and-etw).
 
 Esta seção inclui os tópicos a seguir:
 
@@ -43,6 +43,6 @@ Esta seção inclui os tópicos a seguir:
 -   [Sondando alterações usando o controle DirSync](polling-for-changes-using-the-dirsync-control.md)
 -   [Sondando alterações usando USNChanged](polling-for-changes-using-usnchanged.md)
 
- 
+ 
 
- 
+ 

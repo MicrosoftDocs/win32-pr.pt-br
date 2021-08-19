@@ -1,9 +1,9 @@
 ---
 title: WM/Track
-description: O atributo WM/Track contém o número de faixa do conteúdo. Esse atributo é baseado em zero e tem suporte para compatibilidade com versões anteriores. Em vez disso, o novo conteúdo deve usar o atributo WM/TrackNumber.
+description: O atributo WM/Track contém o número de faixa do conteúdo. Esse atributo é baseado em zero e tem suporte para compatibilidade com backward. Em vez disso, o novo conteúdo deve usar o atributo WM/TrackNumber.
 ms.assetid: c763d7b0-9d12-4a4e-8c9f-9cf67bd2a02b
 keywords:
-- Formato de mídia do WM/Track Windows
+- Formato de mídia do Windows WM/Track
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 244426175ea74bc0281f8822964c2fc0bfa37aa7
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: d1113fde7b0b29b6f1f7618e9d531df83070725b9e05e70e09f64f93b027abfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104364591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119026934"
 ---
 # <a name="wmtrack"></a>WM/Track
 
-O atributo **WM/Track** contém o número de faixa do conteúdo. Esse atributo é baseado em zero e tem suporte para compatibilidade com versões anteriores. Em vez disso, o novo conteúdo deve usar o atributo [**WM/TrackNumber**](wm-tracknumber.md) .
+O **atributo WM/Track** contém o número de faixa do conteúdo. Esse atributo é baseado em zero e tem suporte para compatibilidade com backward. Em vez disso, o novo conteúdo deve usar o atributo [**WM/TrackNumber.**](wm-tracknumber.md)
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMTrack
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Comentários
 
-Muitos aplicativos existentes gravam o valor do **WM/Track** como um **DWORD**. Se você criar um aplicativo que reproduza arquivos de fontes desconhecidas, deverá incluir o código para lidar com valores de cadeia de caracteres e **DWORD** .
+Muitos aplicativos existentes escrevem o valor **para WM/Track** como **um DWORD.** Se você criar um aplicativo que reproduz arquivos de fontes desconhecidas, deverá incluir código para manipular valores de cadeia de caracteres e **DWORD.**
 
 ## <a name="see-also"></a>Confira também
 
@@ -42,9 +42,9 @@ Muitos aplicativos existentes gravam o valor do **WM/Track** como um **DWORD**. 
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

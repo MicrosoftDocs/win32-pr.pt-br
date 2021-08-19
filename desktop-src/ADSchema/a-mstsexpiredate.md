@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-TS-Expired
-description: Data de expiração TS.
+title: Atributo MS-TS-ExpireDate
+description: Data de validade do TS.
 ms.assetid: be314a8d-aca9-4655-a1be-3632b2ee4c43
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-TS-Expired
-- Esquema de AD do atributo msTSExpireDate
+- Esquema do AD do atributo MS-TS-ExpireDate
+- Esquema do AD do atributo msTSExpireDate
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 328e566a6973c6a79363ff3ce05ef1427ffc8c56
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: dd5d9f24f94e19346685842491b982fa8ab7c481e739adfea766f932efc07fc5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022604"
 ---
-# <a name="ms-ts-expiredate-attribute"></a>Atributo MS-TS-Expired
+# <a name="ms-ts-expiredate-attribute"></a>Atributo MS-TS-ExpireDate
 
-Data de expiração TS.
+Data de validade do TS.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------|
-| CN                | MS-TS-expirado                                              |
-| LDAP-Display-Name | msTSExpireDate                                                |
+| CN                | MS-TS-ExpireDate                                              |
+| Ldap-Display-Name | msTSExpireDate                                                |
 | Tamanho              | \-                                                            |
 | Privilégio de atualização  | \-                                                            |
 | Frequência de atualização  | \-                                                            |
 | Attribute-Id      | 1.2.840.113556.1.4.1993                                       |
-| System-ID-GUID    | 70004ef5-25c3-446a-97c8-996ae8566776                          |
-| Syntax            | [**Cadeia de caracteres (em tempo geral)**](s-string-generalized-time.md) |
+| System-Id-Guid    | 70004ef5-25c3-446a-97c8-996ae8566776                          |
+| Syntax            | [**String(Generalized-Time)**](s-string-generalized-time.md) |
 
 
 
@@ -55,10 +55,10 @@ Data de expiração TS.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| Tem valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
@@ -76,10 +76,10 @@ Data de expiração TS.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| Tem valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |
@@ -97,10 +97,10 @@ Data de expiração TS.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| Tem valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000001   |

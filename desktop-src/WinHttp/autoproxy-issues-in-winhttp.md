@@ -4,12 +4,12 @@ ms.assetid: 9bae89b7-8f54-42ec-a240-998c97e26d25
 title: Problemas de AutoProxy no WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22c6edbf56ec1ffc4dfac930a5d4858429cc6447
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc07ca7320fee028431ff0d89be78ee0b2dc4bb63e8191386808f0936c8a1518
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052084"
 ---
 # <a name="autoproxy-issues-in-winhttp"></a>Problemas de AutoProxy no WinHTTP
 
@@ -23,14 +23,14 @@ Atualmente, o WinHTTP não dá suporte a configurações de proxy que especifica
 
 O processamento do arquivo de configuração automática do proxy requer a execução do código de script baixado. Algumas questões de segurança a considerar: se o servidor no qual o arquivo PAC reside foi comprometido, é possível que o código do script PAC seja mal-intencionado. Portanto, o WinHTTP usa as seguintes precauções para proteger o cliente:
 
-1.  O código do script é impedido de instanciar quaisquer objetos ActiveX. Isso bloqueia uma grande quantidade de funcionalidades potencialmente perigosas, como a capacidade de acessar arquivos e executar e/s de rede.
-2.  * * Windows Server 2003: * * o [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) Delega todo o processamento de WPAD a um serviço externo fora do processo, o serviço de descoberta automática de proxy da Web do WinHTTP, que é executado na conta de usuário interna do serviço local de baixo privilégio.
+1.  o código do script é impedido de instanciar quaisquer ActiveX objetos. Isso bloqueia uma grande quantidade de funcionalidades potencialmente perigosas, como a capacidade de acessar arquivos e executar e/s de rede.
+2.  * * Windows Server 2003: * *[**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) delega todo o processamento de WPAD a um serviço externo fora do processo, o serviço de descoberta automática de Proxy da Web do WinHTTP, que é executado na conta de usuário interna do serviço Local de baixo privilégio.
 
 3.  **Windows XP com SP2 e Windows Server 2003:** Um script de PAC não tem permissão para ser executado por mais de 60 segundos, após o qual a execução do script é encerrada.
 
 4.  **Windows XP com SP2 e Windows Server 2003:** O WinHTTP rejeita arquivos PAC maiores que 1 MB. Normalmente, um arquivo PAC típico não tem mais do que alguns quilobytes de tamanho.
 
-Lembre-se de que o processamento do código do script PAC requer o uso de COM, porque o WinHTTP usa o componente do Microsoft JScript para executar o script. Se o WinHTTP não puder delegar o processamento do protocolo WPAD a um serviço de descoberta de proxy da Web externo, fora do processo, o [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) carregará o tempo de execução com dentro do processo do aplicativo durante a chamada. Se o aplicativo em si já estiver usando COM, isso não deve ser uma preocupação.
+lembre-se de que o processamento do código do script PAC requer o uso de COM, porque o WinHTTP usa o componente do Microsoft JScript para executar o script. Se o WinHTTP não puder delegar o processamento do protocolo WPAD a um serviço de descoberta de proxy da Web externo, fora do processo, o [**WinHttpGetProxyForUrl**](/windows/desktop/api/Winhttp/nf-winhttp-winhttpgetproxyforurl) carregará o tempo de execução com dentro do processo do aplicativo durante a chamada. Se o aplicativo em si já estiver usando COM, isso não deve ser uma preocupação.
 
 ## <a name="performance-considerations"></a>Considerações sobre desempenho
 

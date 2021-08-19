@@ -1,10 +1,10 @@
 ---
-title: atributo Bootfile
+title: Atributo bootFile
 description: Contém o nome da imagem de inicialização.
 ms.assetid: 8fb31ff0-eb0b-446b-8626-67138ad20d31
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo Bootfile
+- Esquema do AD do atributo bootFile
 topic_type:
 - apiref
 api_name:
@@ -13,29 +13,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ff8805f12dbe04232efccdaad11033714379a8b9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3b3883029b64aedb1db00bf3e53a2bd5b88db2b25c232ed393ce0f69fb6573e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022744"
 ---
-# <a name="bootfile-attribute"></a>atributo Bootfile
+# <a name="bootfile-attribute"></a>Atributo bootFile
 
-Contém o nome da imagem de inicialização para suporte ao gerenciamento de identidade do UNIX.
+Contém o nome da imagem de inicialização para suporte UNIX gerenciamento de identidade.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | arquivo de inicialização                             |
-| LDAP-Display-Name | arquivo de inicialização                             |
+| CN                | bootFile                             |
+| Ldap-Display-Name | bootFile                             |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.3.6.1.1.1.1.24                     |
-| System-ID-GUID    | e3f3cb4e-0f20-42eb-9703-d2ff26e52667 |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | e3f3cb4e-0f20-42eb-9703-d2ff26e52667 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -55,10 +55,10 @@ Contém o nome da imagem de inicialização para suporte ao gerenciamento de ide
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | Falso                                                 |
+| Tem valor único       | Falso                                                 |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
@@ -76,10 +76,10 @@ Contém o nome da imagem de inicialização para suporte ao gerenciamento de ide
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | Falso                                                 |
+| Tem valor único       | Falso                                                 |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
@@ -97,10 +97,10 @@ Contém o nome da imagem de inicialização para suporte ao gerenciamento de ide
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | Falso                                                 |
+| Tem valor único       | Falso                                                 |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
@@ -118,10 +118,10 @@ Contém o nome da imagem de inicialização para suporte ao gerenciamento de ide
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| É de valor único       | Falso                                                 |
+| Tem valor único       | Falso                                                 |
 | É indexado             | Falso                                                 |
-| No catálogo global      | Falso                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
+| No Catálogo Global      | Falso                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |

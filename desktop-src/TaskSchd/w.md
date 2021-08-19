@@ -14,14 +14,14 @@ ms.locfileid: "119001864"
 ---
 # <a name="w-task-scheduler"></a>W (Agendador de Tarefas)
 
-A B C D [E](e.md) F G H [I](i.md) J K L M N O [P](p.md) Q R [S](s.md) [T](t.md) U V W X Y Z
+A B C D [E](e.md) F G H [i](i.md) J K L M N O [P](p.md) Q R [S](s.md) [T](t.md) U V W X Y Z
 
 <dl> <dt>
 
 <span id="_msb_work_items_gly"></span><span id="_MSB_WORK_ITEMS_GLY"></span>**itens de trabalho**
 </dt> <dd>
 
-Um item que pode ser agendado usando o Agendador de Tarefas serviço. Pode ser qualquer item que o serviço Agendador de Tarefas seja executado em um momento especificado pelos gatilhos do item.
+Um item que pode ser agendado usando o serviço de Agendador de Tarefas. Pode ser qualquer item que o serviço Agendador de Tarefas seja executado em um momento especificado pelos gatilhos do item.
 
 Atualmente, as tarefas são o único tipo válido de item de trabalho.
 
@@ -30,7 +30,7 @@ Atualmente, as tarefas são o único tipo válido de item de trabalho.
 <span id="_msb_working_directory_gly"></span><span id="_MSB_WORKING_DIRECTORY_GLY"></span>**diretório de trabalho**
 </dt> <dd>
 
-O diretório onde Agendador de Tarefas iniciará a executar a tarefa. Se nenhum diretório de trabalho for especificado, Agendador de Tarefas executará a tarefa no diretório %windir% \\ system32.
+O diretório em que Agendador de Tarefas começará a executar a tarefa. Se nenhum diretório de trabalho for especificado, Agendador de Tarefas executará a tarefa no diretório% windir% \\ System32.
 
 </dd> </dl>
 

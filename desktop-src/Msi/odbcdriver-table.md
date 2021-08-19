@@ -59,14 +59,14 @@ A descrição registrada para esse driver ODBC. Esse valor não pode ser localiz
 <span id="File_"></span><span id="file_"></span><span id="FILE_"></span>Arquivo\_
 </dt> <dd>
 
-O arquivo DLL para drivers listados na coluna Driver. A coluna \_ Arquivo é uma chave externa na tabela [Arquivo](file-table.md). O nome do arquivo inserido na coluna Nome do arquivo desse registro de tabela de arquivos deve estar no formato de nome de arquivo curto. A sintaxe \| LFN do SFN não pode ser usada.
+O arquivo DLL para drivers listados na coluna Driver. A coluna \_ Arquivo é uma chave externa na tabela [Arquivo](file-table.md). O nome do arquivo inserido na coluna Nome do arquivo desse registro da tabela arquivo deve estar no formato de nome de arquivo curto. A sintaxe \| LFN do SFN não pode ser usada.
 
 </dd> <dt>
 
 <span id="File_Setup"></span><span id="file_setup"></span><span id="FILE_SETUP"></span>Configuração de \_ arquivo
 </dt> <dd>
 
-O arquivo DLL de instalação para o driver se ele for diferente do Driver. A coluna \_ Arquivo é uma chave externa na tabela [Arquivo](file-table.md). O nome do arquivo inserido na coluna Nome do arquivo desse registro de tabela de arquivos deve estar no formato de nome de arquivo curto. A sintaxe \| LFN do SFN não pode ser usada.
+O arquivo DLL de instalação para o driver se ele for diferente do Driver. A coluna \_ Arquivo é uma chave externa na tabela [Arquivo](file-table.md). O nome do arquivo inserido na coluna Nome do arquivo desse registro da tabela arquivo deve estar no formato de nome de arquivo curto. A sintaxe \| LFN do SFN não pode ser usada.
 
 </dd> </dl>
 

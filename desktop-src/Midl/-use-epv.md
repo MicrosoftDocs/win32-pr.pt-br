@@ -1,9 +1,9 @@
 ---
-title: opção/use_epv
-description: A \_ opção/use EPV instrui o compilador MIDL a gerar código stub de servidor que chama a rotina de aplicativo de servidor por meio de um vetor de ponto de entrada (EPV), em vez de uma chamada estática. O uso desse atributo não é recomendado.
+title: /use_epv switch
+description: A opção /use epv direciona o compilador MIDL para gerar o código stub do servidor que chama a rotina do aplicativo do servidor por meio de um vetor de ponto de entrada (epv), em vez de por uma chamada \_ estática. O uso desse atributo não é recomendado.
 ms.assetid: 2853d836-ded3-412a-916b-1143968123a2
 keywords:
-- /use_epv MIDL do comutador
+- /use_epv com a opção MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,49 +12,49 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec73b5cb9833c15a77c96a784e1ded88d266f9a6
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 614abaf4c124aa0a6e1ca5f7da347ab4a9a2264e174c91734e6a75b188500a3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105785439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014054"
 ---
-# <a name="use_epv-switch"></a>\_comutador/use EPV
+# <a name="use_epv-switch"></a>/use \_ a opção epv
 
-A opção **/use \_ EPV** INSTRUI o compilador MIDL a gerar código stub de servidor que chama a rotina de aplicativo de servidor por meio de um vetor de ponto de entrada (EPV), em vez de uma chamada estática. O uso desse atributo não é recomendado.
+A **opção /use \_ epv** direciona o compilador MIDL para gerar o código stub do servidor que chama a rotina do aplicativo do servidor por meio de um vetor de ponto de entrada (epv), em vez de por uma chamada estática. O uso desse atributo não é recomendado.
 
 ``` syntax
 midl /use_epv
 ```
 
-## <a name="switch-options"></a>Opções de comutação
+## <a name="switch-options"></a>Opções de opção
 
 Essa opção não tem parâmetros.
 
 ## <a name="remarks"></a>Comentários
 
-Normalmente, os aplicativos exigem ligação estática para a rotina de aplicativo do servidor. O compilador MIDL gera tal chamada por padrão. No entanto, se um aplicativo exigir que o stub do servidor chame a rotina de aplicativo do servidor usando o EPV, a opção **/use \_ EPV** deverá ser especificada. Quando a opção **/use \_ EPV** é especificada, o compilador MIDL gera um EPV padrão. Esse EPV padrão será usado se o aplicativo não registrar outro EPV por meio da chamada [**RpcServerRegisterIf**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcserverregisterif) .
+Normalmente, os aplicativos exigem vinculação estática à rotina de aplicativo do servidor. O compilador MIDL gera essa chamada por padrão. No entanto, se um aplicativo exigir que o stub do servidor chame a rotina de aplicativo do servidor usando o epv, a opção **/use \_ epv** deverá ser especificada. Quando a **opção /use \_ epv** é especificada, o compilador MIDL gera um epv padrão. Esse epv padrão será usado se o aplicativo não registrar outro epv por meio da [**chamada RpcServerRegisterIf.**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcserverregisterif)
 
 ## <a name="examples"></a>Exemplos
 
-**MIDL/use \_ EPV** *filename * * *. idl**
+**midl /use \_ epv** *filename***.idl**
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
+[Sintaxe geral da linha de comando MIDL](general-midl-command-line-syntax.md)
 </dt> <dt>
 
-[Arquivo de definição de interface (IDL)](interface-definition-idl-file.md)
+[Arquivo IDL (definição de interface)](interface-definition-idl-file.md)
 </dt> <dt>
 
-[**/ \_ \_ EPV padrão**](-no-default-epv.md)
+[**/no \_ \_ epv padrão**](-no-default-epv.md)
 </dt> <dt>
 
 [**RpcServerRegisterIf**](/windows/desktop/api/rpcdce/nf-rpcdce-rpcserverregisterif)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7525416eed7700709d02d2ec17823cd57a8c12ba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 26369ef5be8c9dea81bf95e60c09ca0041d4275114c8892b85b6b5525f45504b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755373"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087777"
 ---
 # <a name="d2d_ps_entry-function"></a>Função de entrada do \_ PS D2D \_
 
@@ -50,7 +50,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Use essa macro em vez de especificar a assinatura de entrada do ponto de entrada da maneira normal: todos os parâmetros são implícitos e adicionados pelo Direct2D durante a compilação, dependendo do tipo de destino de compilação (sombreador completo ou função de exportação).
+Use essa macro em vez de especificar a assinatura de entrada do ponto de entrada da maneira normal: todos os parâmetros são implícitos e adicionados por Direct2D durante a compilação, dependendo do tipo de destino de compilação (sombreador completo ou função de exportação).
 
 ``` syntax
 #define D2D_INPUT_COUNT 1 

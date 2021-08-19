@@ -4,12 +4,12 @@ description: A implementação do Microsoft WinSNMP fornece suporte a comunicaç
 ms.assetid: 9874ad9b-4eb9-4d63-816b-fe444c5b4d8a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 92b48c930266073f10e5cb8019a7462317bd798c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fa76a475ed266a7a4928a79f809b7011a537c777c89ea0a97d06983d6656a9ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104084040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009454"
 ---
 # <a name="levels-of-snmp-support"></a>Níveis de suporte a SNMP
 
@@ -21,9 +21,9 @@ A implementação retorna o nível máximo de comunicações SNMP que ele dá su
 
 Se o aplicativo WinSNMP usar a implementação para codificação e decodificação de mensagens SNMP somente, o aplicativo deverá executar as transformações necessárias que a implementação teria feito. Isso inclui a conversão de desvios de SNMPv1 retornados por uma chamada à função [**SnmpRecvMsg**](/windows/desktop/api/Winsnmp/nf-winsnmp-snmprecvmsg) , para interceptações de SNMPv2c. Ele também inclui a tradução de tipos de PDU definidos por SNMPv1 para o tipo de PDU relevante definido pelo SNMPv2C, de acordo com a RFC 1908.
 
- 
+ 
 
- 
+ 
 
 
 

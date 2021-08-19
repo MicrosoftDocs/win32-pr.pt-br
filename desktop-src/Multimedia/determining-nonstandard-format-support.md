@@ -9,12 +9,12 @@ keywords:
 - áudio auxiliar, suporte a formato padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d0933a82ca8da53c89e1cb8b7d32b40dc89ae0c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 30a90d38f7419b6fbdb3de951c0aa2205ccd3dd9ff5366eb1e69eab945220db1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007460"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497276"
 ---
 # <a name="determining-nonstandard-format-support"></a>Determinando o suporte a formato não padrão
 
@@ -47,6 +47,6 @@ Essa técnica para determinar o suporte a formato não padrão também se aplica
 
 Para determinar se um formato de dados de wave-áudio específico é suportado por qualquer um dos dispositivos de wave-áudio em um sistema, use a técnica ilustrada no exemplo anterior, mas especifique a \_ constante do mapeador de ondas para o parâmetro *uDeviceID* .
 
- 
+ 
 
- 
+ 

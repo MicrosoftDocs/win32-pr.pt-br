@@ -4,12 +4,12 @@ ms.assetid: 9d54fe11-b1ad-4723-a42a-00bc6dc64072
 title: Bloqueio e desbloqueio de intervalos de bytes em arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7789c56cea100d00168494fac97bdb46e036953c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ccd18fc8a5e2f143cb58717f72abbc135421ee802ff93b651dad0916ed8a953
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951155"
 ---
 # <a name="locking-and-unlocking-byte-ranges-in-files"></a>Bloqueio e desbloqueio de intervalos de bytes em arquivos
 
@@ -1028,7 +1028,7 @@ int __cdecl wmain(int argc, LPCWSTR argv[])
 
 
 
-Este exemplo é um aplicativo de console do Windows que executa vários acessos simultâneos a um arquivo, todos coordenados por intervalos de intervalo de bytes usando um banco de dados simples, composto por vários registros de um tamanho fixo. Observe que true simultaneidade depende de quantos núcleos de processador existem no sistema host.
+este exemplo é um aplicativo de console Windows que executa vários acessos simultâneos a um arquivo, todos coordenados por intervalos de intervalo de bytes usando um banco de dados simples, composto por vários registros de um tamanho fixo. Observe que true simultaneidade depende de quantos núcleos de processador existem no sistema host.
 
 Todos os registros têm os dois primeiros campos em comum: um código de tipo e um número de sequência. O código de tipo é um dos dois códigos: o código "Mstr" refere-se ao tipo de **\_ registro mestre** e o código de "dados" refere-se a um tipo de **\_ registro de dados** . Pode haver apenas um **\_ registro mestre** e zero ou mais **\_ registros de dados** s. Para este exemplo, os dados contidos nos registros de dados são gerados aleatoriamente. O segundo campo, o número de sequência, é incrementado toda vez que um registro é modificado.
 

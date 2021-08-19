@@ -1,6 +1,6 @@
 ---
 title: Atributo de agendamento
-description: Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows NT. Usado pela replicação.
+description: um BLOB de agendamento, conforme definido pelo serviço de trabalho Windows NT. Usado pela replicação.
 ms.assetid: 5eb6409d-3fb5-4368-8b7f-ce19567b7260
 ms.tgt_platform: multiple
 keywords:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: abf53e86f77ecffc872d8b007e32b1f964ae244e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6b65ff20b9eaba0c8429f5fec164e44a3e4b842e82bfddcca61461f6832f55d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022214"
 ---
 # <a name="schedule-attribute"></a>Atributo de agendamento
 
-Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows NT. Usado pela replicação.
+um BLOB de agendamento, conforme definido pelo serviço de trabalho Windows NT. Usado pela replicação.
 
 
 
@@ -59,7 +59,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | ID do link                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                                                                                                                             |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                                                                                                                            |
 | No catálogo global      | Falso                                                                                                                                                                                                                                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                     |
@@ -67,7 +67,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
+| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
 
 
 
@@ -80,7 +80,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | ID do link                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                                                                                                                             |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                                                                                                                            |
 | No catálogo global      | Falso                                                                                                                                                                                                                                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                     |
@@ -88,7 +88,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
+| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
 
 
 
@@ -101,7 +101,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | ID do link                | \-                                                                                                                                                            |
 | MAPI-Id                | \-                                                                                                                                                            |
 | System-Only            | Falso                                                                                                                                                         |
-| É de valor único       | True                                                                                                                                                          |
+| É de valor único       | Verdadeiro                                                                                                                                                          |
 | É indexado             | Falso                                                                                                                                                         |
 | No catálogo global      | Falso                                                                                                                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                  |
@@ -109,7 +109,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | Range-Upper            | \-                                                                                                                                                            |
 | Search-Flags           | 0x00000000                                                                                                                                                    |
 | System-Flags           | 0x00000010                                                                                                                                                    |
-| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
+| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
 
 
 
@@ -122,7 +122,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | ID do link                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                                                                                                                             |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                                                                                                                            |
 | No catálogo global      | Falso                                                                                                                                                                                                                                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                     |
@@ -130,7 +130,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
+| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
 
 
 
@@ -143,7 +143,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | ID do link                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                                                                                                                             |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                                                                                                                            |
 | No catálogo global      | Falso                                                                                                                                                                                                                                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                     |
@@ -151,7 +151,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
+| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
 
 
 
@@ -164,7 +164,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | ID do link                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                                                                                                                             |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                                                                                                                            |
 | No catálogo global      | Falso                                                                                                                                                                                                                                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                     |
@@ -172,7 +172,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
+| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
 
 
 
@@ -185,7 +185,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | ID do link                | \-                                                                                                                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                                                                                                                             |
+| É de valor único       | Verdadeiro                                                                                                                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                                                                                                                            |
 | No catálogo global      | Falso                                                                                                                                                                                                                                                                            |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                     |
@@ -193,7 +193,7 @@ Um BLOB de agendamento, conforme definido pelo serviço de trabalho do Windows N
 | Range-Upper            | \-                                                                                                                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                       |
-| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS – configurações de site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
+| Classes usadas em        | [**NTDS-conexão**](c-ntdsconnection.md)<br/> [**NTDS-Configurações de Site**](c-ntdssitesettings.md)<br/> [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> [**NTFRS-assinante**](c-ntfrssubscriber.md)<br/> [**Link de site**](c-sitelink.md)<br/> |
 
 
 

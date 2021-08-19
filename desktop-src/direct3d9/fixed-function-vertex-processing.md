@@ -4,12 +4,12 @@ ms.assetid: a882a5c5-b05e-4659-9040-92d3e2ccd89c
 title: Processamento de vértice de função fixa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da30dd0fb6cf6e055d8b1bbb31fdfdb01d9e1e20
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 827a293a4fbd552327d93076de773aec90dbd895faf3c086f4794036978984fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087438"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118988016"
 ---
 # <a name="fixed-function-vertex-processing-direct3d-9"></a>Processamento de vértice de função fixa (Direct3D 9)
 
@@ -19,7 +19,7 @@ O primeiro, o segundo e o terceiro parâmetros, SrcStartIndex, DestIndex e Conta
 
 O parâmetro final, flags, determina as opções de processamento especial para o método. Você pode definir esse parâmetro como 0 para o processamento de vértice padrão ou para [D3DPV \_ DONOTCOPYDATA](other-direct3d-constants.md) para otimizar o processamento em algumas situações. Você também pode combinar o \_ valor de DONOTCOPYDATA D3DPV com um ou mais valores de [D3DLOCK](d3dlock.md) apropriados para o buffer de destino. Quando você define sinalizadores como 0, os componentes de vértice do formato de vértice do buffer de vértices de destino que não são afetados pela operação de vértice ainda são copiados do sombreador de vértice ou definidos como 0. No entanto, ao usar D3DPV \_ DONOTCOPYDATA, [**IDirect3DDevice9::P rocessvertices**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-processvertices) não substitui as informações de coordenadas de cor e de textura no buffer de destino, a menos que esses dados sejam gerados pelo Direct3D. A cor difusa é gerada quando a iluminação está habilitada, ou seja, \_ a iluminação D3DRS é definida como **true**. A cor especular é gerada quando a iluminação está habilitada e o especular está habilitado, ou seja, D3DRS \_ SPECULARENABLE e D3DRS \_ Lighting são definidos como **true**. A cor especular também é gerada quando a neblina está habilitada. As coordenadas de textura são geradas quando a transformação de textura ou a geração de textura está habilitada. **IDirect3DDevice9::P rocessvertices** usa os Estados de renderização atuais para determinar qual processamento de vértice deve ser feito.
 
-## <a name="fvf-usage-settings-for-destination-vertex-buffers"></a>Configurações de uso de FVF para buffers de vértice de destino
+## <a name="fvf-usage-settings-for-destination-vertex-buffers"></a>Configurações de uso FVF para buffers de vértice de destino
 
 O método [**IDirect3DDevice9::P rocessvertices**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-processvertices) requer configurações específicas para o [D3DFVF](d3dfvf.md) do buffer de vértice de destino. As configurações de uso de FVF devem ser compatíveis com as configurações atuais para processamento de vértice.
 

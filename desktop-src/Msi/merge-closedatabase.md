@@ -1,7 +1,7 @@
 ---
-description: O método CloseDatabase do objeto de mesclagem fecha o banco de dados Windows Installer aberto no momento.
+description: O método CloseDatabase do objeto Merge fecha o banco de dados Windows Instalador aberto no momento.
 ms.assetid: a89fe77a-0099-4c49-b484-c05ee351a66a
-title: Método Merge. CloseDatabase (Mergemod. h)
+title: Método Merge.CloseDatabase (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 5df72b9423ad212264736d16db0ae73ded9afef5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3f3b250cbaebd565f14ef7f10cd8180e497f20347d00a7e96a74298d3e5dc770
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013024"
 ---
-# <a name="mergeclosedatabase-method"></a>Método Merge. CloseDatabase
+# <a name="mergeclosedatabase-method"></a>Método Merge.CloseDatabase
 
-O método **CloseDatabase** do objeto de [**mesclagem**](merge-object.md) fecha o banco de dados Windows Installer aberto no momento.
+O **método CloseDatabase** do objeto [**Merge**](merge-object.md) fecha o banco de dados Windows Instalador aberto no momento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,21 +43,21 @@ Merge.CloseDatabase(
 *bCommit* 
 </dt> <dd>
 
-**True** se as alterações devem ser salvas; caso contrário, **false** .
+**TRUE** se as alterações devem ser salvas; caso contrário, **FALSE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Fechar um banco de dados limpa todas as informações de dependência, mas não afeta os erros que não foram recuperados.
+Fechar um banco de dados limpa todas as informações de dependência, mas não afeta erros que não foram recuperados.
 
 ### <a name="c"></a>C++
 
-Consulte a função [**CloseDatabase**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closedatabase) .
+Consulte [**Função CloseDatabase.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closedatabase)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Consulte a função [**CloseDatabase**](/windows/win32/api/mergemod/nf-mergemod-
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versão<br/> | Mergemod.dll 1,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versão<br/> | Mergemod.dll 1.0 ou posterior<br/>                                                    |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

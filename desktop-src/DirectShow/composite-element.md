@@ -1,17 +1,17 @@
 ---
 description: O elemento composto define uma composição, um objeto de contêiner para faixas e outras composições aninhadas.
 ms.assetid: 7551da3a-1da6-426a-ba9d-f715df53718f
-title: Elemento composto
+title: Elemento composite
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5eff3e0c16040f837e4c8a792ebac3124d723d1
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: dec9ce7c889829ee227ce31df25d5d17985e877ed107870170f6939aebf14fd3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120084306"
 ---
-# <a name="composite-element"></a>Elemento composto
+# <a name="composite-element"></a>Elemento composite
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -22,16 +22,16 @@ O `composite` elemento define uma composição, um objeto de contêiner para fai
 
 ## <a name="attributes"></a>Atributos
 
-[**Lock**](lock-attribute.md), [**mudo**](mute-attribute.md), [**UserData**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
+[**lock**](lock-attribute.md), [**mute**](mute-attribute.md), [**userdata**](userdata-attribute.md), [**userid**](userid-attribute.md), [**username**](username-attribute.md)
 
-## <a name="parentchild-information"></a>Informações de pai/filho
+## <a name="parentchild-information"></a>Informações pai/filho
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |----------|-------------------------------------------------------------------------------------------------------------------------|
 | Pai   | `composite`, [ **grupo**](group-element.md)                                                                             |
-| Children | `composite`, [**efeito**](effect-element.md), [**controle**](track-element.md), [**transição**](transition-element.md) |
+| Children | `composite`, [**efeito**](effect-element.md), [**acompanhar**](track-element.md), [**transição**](transition-element.md) |
 
 
 
@@ -39,7 +39,7 @@ O `composite` elemento define uma composição, um objeto de contêiner para fai
 
 ## <a name="remarks"></a>Comentários
 
-Dentro de um `composite` elemento, a prioridade de camadas aninhadas é determinada implicitamente pela ordem em que aparecem dentro do elemento. A primeira camada tem a prioridade 0 e as camadas subsequentes têm valores de prioridade crescentes.
+Dentro de `composite` um elemento, a prioridade das camadas aninhadas é determinada implicitamente pela ordem em que elas aparecem dentro do elemento . A primeira camada tem prioridade 0 e as camadas subsequentes têm valores de prioridade crescentes.
 
 ## <a name="examples"></a>Exemplos
 

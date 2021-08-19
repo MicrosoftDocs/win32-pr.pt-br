@@ -4,12 +4,12 @@ ms.assetid: 871d0608-53a8-4b85-8c03-e7dd464015aa
 title: Várias estruturas de monitores de exibição
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a154ab769bcfe22c40139a947f1b09cf881baf1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b6e880b47161f0e214ee56f5faa796e1de948b522c6e071d2edfdd7a3aabccfd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119779116"
 ---
 # <a name="multiple-display-monitors-structures"></a>Várias estruturas de monitores de exibição
 

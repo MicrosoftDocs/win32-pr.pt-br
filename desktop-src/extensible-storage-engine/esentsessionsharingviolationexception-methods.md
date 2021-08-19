@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentSessionSharingViolationException'
+description: 'Saiba mais sobre: Métodos EsentSessionSharingViolationException'
 title: 'Métodos EsentSessionSharingViolationException '
 TOCTitle: EsentSessionSharingViolationException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentSessionSharingViolationException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55102716
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: af4c04b38c3fa29f571287d50914c01ba6d765ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd48613a3b30deffb086331927eb999da6ccadbd47952b510d6f8b6e1e3be114
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104505966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781706"
 ---
 # <a name="esentsessionsharingviolationexception-methods"></a>Métodos EsentSessionSharingViolationException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSessionSharingViolationException](./esentsessionsharingviolationexception-class.md) expõe os membros a seguir.
+O [tipo EsentSessionSharingViolationException](./esentsessionsharingviolationexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentSessionSharingViolationException](./esentsessionsharingviolationexc
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentSessionSharingViolationException](./esentsessionsharingviolationexc
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentSessionSharingViolationException](./esentsessionsharingviolationexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

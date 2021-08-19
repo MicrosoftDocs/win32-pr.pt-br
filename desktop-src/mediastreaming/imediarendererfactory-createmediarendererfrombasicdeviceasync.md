@@ -3,9 +3,9 @@ title: Método IMediaRendererFactory CreateMediaRendererFromBasicDeviceAsync
 description: Cria de forma assíncrona uma nova instância de um objeto que implementa a interface IMediaRenderer usando a interface IBasicDevice especificada.
 ms.assetid: 14A83789-0F3C-467B-8EFD-3BB421C54217
 keywords:
-- API de streaming de mídia do método CreateMediaRendererFromBasicDeviceAsync
-- API de streaming de mídia do método CreateMediaRendererFromBasicDeviceAsync, interface IMediaRendererFactory
-- API de streaming de mídia da interface IMediaRendererFactory, método CreateMediaRendererFromBasicDeviceAsync
+- Api de Streaming de Mídia do método CreateMediaRendererFromBasicDeviceAsync
+- CreateMediaRendererFromBasicDeviceAsync method Media Streaming API , interface IMediaRendererFactory
+- API de Streaming de Mídia da interface IMediaRendererFactory , método CreateMediaRendererFromBasicDeviceAsync
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 7e4ee614cca9a03ca203ecde9203e019fab38ab4
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 2b9ee80a4f681bb57d62f84d35cf3a254e38982a10f642a35e35187f6af9e48e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120092282"
 ---
-# <a name="imediarendererfactorycreatemediarendererfrombasicdeviceasync-method"></a>Método IMediaRendererFactory:: CreateMediaRendererFromBasicDeviceAsync
+# <a name="imediarendererfactorycreatemediarendererfrombasicdeviceasync-method"></a>Método IMediaRendererFactory::CreateMediaRendererFromBasicDeviceAsync
 
 Cria de forma assíncrona uma nova instância de um objeto que implementa a interface [**IMediaRenderer**](imediarenderer.md) usando a interface [**IBasicDevice**](ibasicdevice.md) especificada.
 
@@ -42,23 +42,23 @@ HRESULT CreateMediaRendererFromBasicDeviceAsync(
 
 <dl> <dt>
 
-*basicDevice* \[ no\]
+*basicDevice* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma interface [**IBasicDevice**](ibasicdevice.md) que representa o dispositivo para o qual uma instância de [**IMediaRenderer**](imediarenderer.md) será criada.
+Um ponteiro para uma interface [**IBasicDevice**](ibasicdevice.md) que representa o dispositivo para o qual uma instância [**de IMediaRenderer**](imediarenderer.md) será criada.
 
 </dd> <dt>
 
-*valor* \[ do out, retval\]
+*value* \[ out, retval\]
 </dt> <dd>
 
-Recebe uma referência a um objeto [**CreateMediaRendererOperation**](createmediarendereroperation.md) que é usado para obter resultados da operação assíncrona.
+Recebe uma referência a [**um objeto CreateMediaRendererOperation**](createmediarendereroperation.md) usado para obter resultados da operação assíncrona.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 

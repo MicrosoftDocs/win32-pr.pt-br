@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3158a216ba4fd4f82f3e4fc21fc1e0043b16a46a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 010fdc6cbb236a113e4f1804d3a4780c0e6a72f89b1f03bf90f1d99a92dc2bdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105755583"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781076"
 ---
 # <a name="inapcomponentconfig3setconfigtoid-method"></a>Método INapComponentConfig3:: SetConfigToID
 
@@ -70,7 +70,7 @@ Na entrada, uma matriz de bytes que contém os dados de configuração definidos
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos seguintes códigos de erro com base no resultado dessa operação.
 
@@ -96,8 +96,8 @@ O método [**newconfig**](inapcomponentconfig3-newconfig.md) deve ser usado para
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
 
 

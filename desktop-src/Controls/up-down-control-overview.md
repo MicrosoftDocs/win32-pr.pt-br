@@ -1,6 +1,6 @@
 ---
-title: Up-Down de controle de Up-Down
-description: Up-Down de controle de Up-Down
+title: Visões gerais de controle de Up-Down
+description: Visões gerais de controle de Up-Down
 ms.assetid: 4FEFAC0C-EF16-411B-828B-9944167BF68D
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,10 +11,10 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118957705"
 ---
-# <a name="up-down-control-overviews"></a>Up-Down de controle de Up-Down
+# <a name="up-down-control-overviews"></a>Visões gerais de controle de Up-Down
 
--   [Sobre Up-Down controles](up-down-controls.md)
--   [Usando Up-Down controles](using-up-down-controls.md)
+-   [Sobre controles de Up-Down](up-down-controls.md)
+-   [Usando controles de Up-Down](using-up-down-controls.md)
 
  
 

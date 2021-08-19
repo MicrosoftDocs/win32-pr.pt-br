@@ -21,12 +21,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 097e9ae7387658f983c691e56e4f90ba40dea407
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9b46a992accea468b6f3c8a70c7fcfcbe63cf72667c4394c27df273767a387b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023474"
 ---
 # <a name="iadslargeinteger-property-methods"></a>Métodos de propriedade IADsLargeInteger
 
@@ -107,7 +107,7 @@ largeInt = HighPart * 2^32 + LowPart
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir Visual Basic define um inteiro grande como 43937327281.
+o exemplo de código a seguir Visual Basic define um inteiro grande como 43937327281.
 
 
 ```VB
@@ -126,7 +126,7 @@ LI.LowPart = 987654321
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsLargeInteger é definido como 9068270B-0939-11D1-8BE1-00C04FD8D503<br/>     |
 

@@ -1,5 +1,5 @@
 ---
-description: Retorno de chamada para retornar informações do arquivo de origem de uma callstack.
+description: Retorno de chamada para retornar informações do arquivo de origem de uma pilha de chamadas.
 MS-HAID: vspixengine.ISourceFileInfoCallback
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -26,11 +26,11 @@ ms.locfileid: "118985646"
 ---
 # <a name="span-idvspixengineisourcefileinfocallbackspanisourcefileinfocallback-interface"></a><span id="vspixengine.isourcefileinfocallback"></span>Interface ISourceFileInfoCallback
 
-Retorno de chamada para retornar informações do arquivo de origem de uma callstack.
+Retorno de chamada para retornar informações do arquivo de origem de uma pilha de chamadas.
 
 ## <a name="members"></a>Membros
 
-A interface **ISourceFileInfoCallback** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ISourceFileInfoCallback** também tem estes tipos de membros:
+A interface **ISourceFileInfoCallback** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ISourceFileInfoCallback** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,13 +38,13 @@ A interface **ISourceFileInfoCallback** herda da interface [**IUnknown.**](/wind
 
 A interface **ISourceFileInfoCallback** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinfocallback-resultcallback-dword-sourcefileinfo-arr"><strong>Resultcallback</strong></a></td><td style="text-align: left;"><p>Uma função de retorno de chamada usada para notificar o host de informações sobre arquivos de origem associados à callstack.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinfocallback-resultcallback-dword-sourcefileinfo-arr"><strong>ResultCallback</strong></a></td><td style="text-align: left;"><p>Uma função de retorno de chamada usada para notificar o host de informações sobre os arquivos de origem associados à pilha de chamadas.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

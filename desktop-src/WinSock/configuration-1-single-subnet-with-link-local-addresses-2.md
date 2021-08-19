@@ -4,12 +4,12 @@ ms.assetid: ceed4983-e088-44e8-9cfc-26afb3c35ba0
 title: 'Configuração 1: sub-rede única com endereços de link local'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d09feb44c222b7213da18a6745fc632f3903209
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a541edd96175dc61ec0aba3b1358c2bbd9464668e6aa1a11aeb6f2097e5b13bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051725"
 ---
 # <a name="configuration-1-single-subnet-with-link-local-addresses"></a>Configuração 1: sub-rede única com endereços de link local
 
@@ -92,7 +92,7 @@ Você pode fazer um ping simples (uma troca de mensagens de resposta de eco e de
 
 **Para executar ping usando o IPv6 entre dois hosts de link local**
 
-1.  Instale o Microsoft IPv6 Technology Preview para Windows em dois hosts do Windows (host A e host B) que estão no mesmo link (sub-rede).
+1.  instale o Microsoft IPv6 Technology Preview para Windows em dois hosts Windows (host A e host B) que estão no mesmo link (sub-rede).
 2.  Use o IPv6 se estiver no host a para obter o endereço de vínculo local para a interface Ethernet.
 
     Exemplo: o endereço de link local do host A é FE80:: 210:5AFF: FEAA: 20A2.

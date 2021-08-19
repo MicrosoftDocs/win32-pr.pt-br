@@ -1,7 +1,7 @@
 ---
-description: A \_ estrutura do descritor de quadros fornece informações descritivas sobre quadros brutos.
+description: A estrutura FRAME \_ DESCRIPTOR fornece informações descritivas sobre quadros brutos.
 ms.assetid: f2fc256e-8e64-49c1-b2ad-ef656762d5c7
-title: Estrutura de FRAME_DESCRIPTOR (Netmon. h)
+title: FRAME_DESCRIPTOR (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118938567"
 ---
-# <a name="frame_descriptor-structure"></a>\_Estrutura do descritor de quadros
+# <a name="frame_descriptor-structure"></a>Estrutura \_ DESCRIPTOR FRAME
 
-A estrutura do **\_ descritor de quadros** fornece informações descritivas sobre quadros brutos.
+A **estrutura FRAME \_ DESCRIPTOR** fornece informações descritivas sobre quadros brutos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,14 +51,14 @@ typedef struct _FRAME_DESCRIPTOR {
 **FramePointer**
 </dt> <dd>
 
-Ponteiro para dados de quadro.
+Ponteiro para os dados de quadro.
 
 </dd> <dt>
 
-**Estampa**
+**Timestamp**
 </dt> <dd>
 
-Hora do sistema, em microssegundos, quando o quadro foi capturado. Esse tempo normalmente é usado para determinar o intervalo entre os tempos em que dois quadros foram capturados.
+Tempo do sistema, em microssegundos, quando o quadro foi capturado. Normalmente, esse tempo é usado para determinar o intervalo entre as vezes em que dois quadros foram capturados.
 
 </dd> <dt>
 
@@ -72,18 +72,18 @@ Comprimento do quadro.
 **nBytesAvail**
 </dt> <dd>
 
-Tamanho de quadro real copiado.
+Comprimento real do quadro copiado.
 
 </dd> <dt>
 
-**ETYPE**
+**Etype**
 </dt> <dd>
 
-Nome do ETYPE.
+Nome do tipo.
 
 </dd> <dt>
 
-**SAP**
+**Sap**
 </dt> <dd>
 
 Valor SAP.
@@ -93,28 +93,28 @@ Valor SAP.
 **LowProtocol**
 </dt> <dd>
 
-Índice do protocolo encontrado.
+Índice de protocolo encontrado.
 
 </dd> <dt>
 
 **LowProtocolOffset**
 </dt> <dd>
 
-Deslocamento para os dados de protocolo obtidos de **LowProtocol**.
+Deslocamento para dados de protocolo obtidos **de LowProtocol.**
 
 </dd> <dt>
 
 **HighPort**
 </dt> <dd>
 
-Porta de protocolo alto identificado em **LowProtocol**.
+Porta de alto protocolo identificado em **LowProtocol.**
 
 </dd> <dt>
 
 **HighProtocolOffset**
 </dt> <dd>
 
-Deslocamento para os dados de protocolo obtidos de **HighPort**.
+Deslocamento para dados de protocolo obtidos de **HighPort.**
 
 </dd> </dl>
 
@@ -126,7 +126,7 @@ Deslocamento para os dados de protocolo obtidos de **HighPort**.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

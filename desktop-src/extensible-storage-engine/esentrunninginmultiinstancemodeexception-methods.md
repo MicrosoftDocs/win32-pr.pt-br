@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentRunningInMultiInstanceModeException'
+description: 'Saiba mais sobre: Métodos EsentRunningInMultiInstanceModeException'
 title: 'Métodos EsentRunningInMultiInstanceModeException '
 TOCTitle: EsentRunningInMultiInstanceModeException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentRunningInMultiInstanceModeException
@@ -19,7 +19,7 @@ ms.locfileid: "118981847"
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentRunningInMultiInstanceModeException](./esentrunninginmultiinstancemodeexception-class.md) expõe os membros a seguir.
+O [tipo EsentRunningInMultiInstanceModeException](./esentrunninginmultiinstancemodeexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentRunningInMultiInstanceModeException](./esentrunninginmultiinstancem
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentRunningInMultiInstanceModeException](./esentrunninginmultiinstancem
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentRunningInMultiInstanceModeException](./esentrunninginmultiinstancemodeexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

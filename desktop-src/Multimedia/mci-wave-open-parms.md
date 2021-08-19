@@ -3,7 +3,7 @@ title: Estrutura de MCI_WAVE_OPEN_PARMS (Mciapi. h)
 description: A \_ estrutura MCI \_ Open \_ parms de Wave contém informações para o \_ comando MCI Open para dispositivos de forma de onda-áudio.
 ms.assetid: 2fc9383e-4610-4751-acad-b545dc6d8992
 keywords:
-- Multimídia do Windows da estrutura de MCI_WAVE_OPEN_PARMS
+- estrutura de MCI_WAVE_OPEN_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5a4107c6283edab1ffeaf18297e2898a8b17761
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 470b00bc818fb184174f27a8ff281359788f235ec7e31b899b051dc90423426c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105760817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119783780"
 ---
 # <a name="mci_wave_open_parms-structure"></a>\_Estrutura de \_ \_ parâmetros abertos do MCI Wave
 

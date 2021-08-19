@@ -1,19 +1,19 @@
 ---
-description: Evento por usuário gerado por um cliente de mensagens instantâneas quando um usuário deixa uma conversa em controles dos pais.
+description: Evento por usuário gerado por um cliente de Mensagens Instantâneas quando um usuário deixa uma conversa em Controles Dos Pais.
 ms.assetid: e6bd6bce-9eba-4192-aac8-c9e47d7180a1
-title: WPCEVENT_IM_LEAVE evento (Wpcevent. h)
+title: WPCEVENT_IM_LEAVE evento (Wpcevent.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 260833a30f08330da9c622faae06f76b5d79e682
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f6d814f6c9d4e3ec5acd3ee3cf3a6eb6e67d315148304f2766baf45fc633fa22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119951206"
 ---
-# <a name="wpcevent_im_leave-event"></a>Evento de saída do WPCEVENT \_ im \_
+# <a name="wpcevent_im_leave-event"></a>Evento WPCEVENT \_ IM \_ LEAVE
 
-Evento por usuário gerado por um cliente de mensagens instantâneas quando um usuário deixa uma conversa em controles dos pais.
+Evento por usuário gerado por um cliente de Mensagens Instantâneas quando um usuário deixa uma conversa em Controles Dos Pais.
 
 
 ```C++
@@ -36,46 +36,46 @@ O nome do aplicativo que está gerando o evento.
 *AppVersion* 
 </dt> <dd>
 
-A cadeia de caracteres da versão do aplicativo que está gerando o evento.
+A cadeia de caracteres de versão do aplicativo que está gerando o evento.
 
 </dd> <dt>
 
 *AccountName* 
 </dt> <dd>
 
-A cadeia de caracteres de identidade da conta de mensagens instantâneas para este usuário.
+A cadeia de caracteres de identidade da conta de mensagens instantânea para esse usuário.
 
 </dd> <dt>
 
-*Convid* 
+*ConvID* 
 </dt> <dd>
 
-O identificador desta conversa.
+O identificador dessa conversa.
 
 </dd> <dt>
 
 *LeavingIP* 
 </dt> <dd>
 
-Uma cadeia de caracteres que contém o endereço IP do computador que está saindo desta conversa.
+Uma cadeia de caracteres que contém o endereço IP do computador que está deixando essa conversa.
 
 </dd> <dt>
 
 *LeavingUser* 
 </dt> <dd>
 
-A cadeia de caracteres de identidade da conta de mensagens instantâneas para o usuário que está saindo.
+A cadeia de caracteres de identidade da conta de mensagens instantânea para o usuário que está saindo.
 
 </dd> <dt>
 
 *Motivo* 
 </dt> <dd>
 
-Um valor da enumeração [**\_ IsBlocked de WPCFLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica informações sobre quais eventos são bloqueados do uso e quais controles estão em vigor.
+Um valor da [**enumeração \_ ISBLOCKED WPCFLAG**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_isblocked) que indica informações sobre quais eventos são impedidos de usar e quais controles estão em uso.
 
 </dd> <dt>
 
-*MemberCount* 
+*Membercount* 
 </dt> <dd>
 
 A contagem de participantes que estão na conversa e que têm identidades definidas no campo membro.
@@ -85,14 +85,14 @@ A contagem de participantes que estão na conversa e que têm identidades defini
 *Membro* 
 </dt> <dd>
 
-Uma cadeia delimitada que contém cadeias de caracteres de identidade da conta de mensagens instantâneas para todos os membros atuais desta conversa.
+Uma cadeia de caracteres delimitada que contém cadeias de caracteres de identidade da conta de mensagens instantâneas para todos os membros atuais desta conversa.
 
 </dd> <dt>
 
 *Sinalizadores* 
 </dt> <dd>
 
-Um valor da enumeração [**de \_ \_ saída do WPCFLAG im**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_im_leave) que indica informações sobre quando um participante deixa a interação de mensagens instantâneas.
+Um valor da [**enumeração WPCFLAG \_ IM \_ LEAVE**](/windows/win32/api/wpcevent/ne-wpcevent-wpcflag_im_leave) que indica informações sobre quando um participante sai da interação instantânea de mensagens.
 
 </dd> </dl>
 
@@ -102,9 +102,9 @@ Um valor da enumeração [**de \_ \_ saída do WPCFLAG im**](/windows/win32/api/
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
-| parâmetro<br/>                   | <dl> <dt>Wpcevent. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wpcevent.h</dt> </dl> |
 
 
 
@@ -115,7 +115,7 @@ Um valor da enumeração [**de \_ \_ saída do WPCFLAG im**](/windows/win32/api/
 [Usando APIs de log para controles dos pais](using-logging-apis-for-parental-controls.md)
 </dt> <dt>
 
-[**WPC \_ args \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
+[**WPC \_ ARGS \_ CONVERSATIONINITEVENT**](/windows/win32/api/wpcevent/ne-wpcevent-wpc_args_conversationinitevent)
 </dt> </dl>
 
  

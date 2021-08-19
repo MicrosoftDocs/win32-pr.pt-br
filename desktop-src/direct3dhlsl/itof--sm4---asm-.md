@@ -4,12 +4,12 @@ description: Inteiro assinado para conversão de ponto flutuante.
 ms.assetid: 60652168-25FA-4084-8CC1-73F12984ECED
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f9d262f65801cd2caa0e6432b335ce32fff0d4e
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: f473b5cc9664ee1c9acab88381bc9de6a5b4897fac3899923c6bb20c22bba7fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103823452"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986476"
 ---
 # <a name="itof-sm4---asm"></a>itof (sm4-ASM)
 

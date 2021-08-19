@@ -18,7 +18,7 @@ ms.locfileid: "118937315"
 ---
 # <a name="matrix-transformations"></a>Transformações de matriz
 
-Vértices e normais são transformados pela modelview e matrizes de projeção antes que sejam usados para produzir uma imagem no framebuffer. Use funções como [**glMatrixMode**](glmatrixmode.md), [ * *\* glMultMatrix* _](glmultmatrix.md), [_*glRotate, \**_](glrotate.md) [_*glTranslate \**_](gltranslate.md)e [_*glScale \**_](glscale.md) para compor as transformações desejadas. Ou especifique matrizes diretamente com [_*glLoadMatrix \**_](glloadmatrix.md) e [_ *glLoadIdentity* *](glloadidentity.md). Use [**glPushMatrix e**](glpushmatrix.md) [**glPopMatrix**](glpopmatrix.md) para salvar e restaurar modelview e matrizes de projeção em suas respectivas pilhas.
+Vértices e normais são transformados pela modelview e matrizes de projeção antes que sejam usados para produzir uma imagem no framebuffer. Use funções como [**glMatrixMode**](glmatrixmode.md), [ * *\* glMultMatrix* _](glmultmatrix.md), [_*glRotate, \**_](glrotate.md) [_*glTranslate \**_](gltranslate.md)e [_*glScale \**_](glscale.md) para compor as transformações desejadas. Ou especifique matrizes diretamente com [_*glLoadMatrix \**_](glloadmatrix.md) e [_ *glLoadIdentity* *](glloadidentity.md). Use [**glPushMatrix**](glpushmatrix.md) e [**glPopMatrix**](glpopmatrix.md) para salvar e restaurar modelview e matrizes de projeção em suas respectivas pilhas.
 
  
 

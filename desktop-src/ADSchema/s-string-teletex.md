@@ -1,10 +1,10 @@
 ---
-title: Sintaxe da cadeia de caracteres (Teletex)
-description: Uma cadeia de caracteres que não diferencia maiúsculas de minúsculas que contém caracteres do conjunto de caracteres Teletex.
+title: Sintaxe string(Teletex)
+description: Uma cadeia de caracteres que não reconhece maiúsculas de minúsculas que contém caracteres do conjunto de caracteres teletex.
 ms.assetid: f3217d22-147b-4d96-9169-14c2cc9573eb
 ms.tgt_platform: multiple
 keywords:
-- Teletex (cadeia de caracteres) esquema do AD de sintaxe
+- Esquema do AD de sintaxe string(Teletex)
 topic_type:
 - apiref
 api_name:
@@ -13,28 +13,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c0d3f9536423788fefd36b5e70a3813facaba66
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 19d4ff84e26fa649286a24cb7dd62789474fdcb6481111902e677964ff32f235
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021554"
 ---
-# <a name="stringteletex-syntax"></a>Sintaxe da cadeia de caracteres (Teletex)
+# <a name="stringteletex-syntax"></a>Sintaxe string(Teletex)
 
-Uma cadeia de caracteres que não diferencia maiúsculas de minúsculas que contém caracteres do conjunto de caracteres Teletex.
+Uma cadeia de caracteres que não reconhece maiúsculas de minúsculas que contém caracteres do conjunto de caracteres teletex.
 
 
 
 | Entrada | Valor |
 |--------------|------------------------------------------------------------------------|
-| Nome         | Cadeia de caracteres (Teletex)                                                        |
+| Nome         | String(Teletex)                                                        |
 | ID da sintaxe    | 2.5.5.4                                                                |
-| ID DO OM        | 20                                                                     |
-| Tipo de MAPI    | TSTRING                                                                |
-| Tipo de ADS     | \_cadeia de \_ caracteres de ignorar caso de ADSTYPE \_                                          |
+| OM ID        | 20                                                                     |
+| Tipo MAPI    | TSTRING                                                                |
+| Tipo ADS     | ADSTYPE \_ CASE \_ IGNORE \_ STRING                                          |
 | Tipo de variante | VT \_ BSTR                                                               |
-| Tipo SDS     | [System.String](/dotnet/api/system.string) |
+| Tipo de SDS     | [System.String](/dotnet/api/system.string) |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: atributo ms-WMI-TargetClass
-description: Nome da classe do objeto de política a ser criado.
+title: Atributo ms-WMI-TargetClass
+description: Nome de classe do objeto de política a ser criado.
 ms.assetid: 3b6dbdd2-e87f-4ae5-97a0-ccbee7221593
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-WMI-TargetClass
-- Esquema de AD do atributo msWMI-TargetClass
+- Esquema do AD do atributo ms-WMI-TargetClass
+- Esquema do AD do atributo msWMI-TargetClass
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b617d2c68bba314610bdf81902c0e2696d9f96ba
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: a854ded477199728bad845baf73d49a57241a5d01de109fe732062837f4a36d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022474"
 ---
-# <a name="ms-wmi-targetclass-attribute"></a>atributo ms-WMI-TargetClass
+# <a name="ms-wmi-targetclass-attribute"></a>Atributo ms-WMI-TargetClass
 
-Nome da classe do objeto de política a ser criado.
+Nome de classe do objeto de política a ser criado.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | MS-WMI-TargetClass                          |
-| LDAP-Display-Name | msWMI-TargetClass                           |
-| Tamanho              | Menos de vinte caracteres.                |
-| Privilégio de atualização  | Administrador de Política de Grupo                  |
+| CN                | ms-WMI-TargetClass                          |
+| Ldap-Display-Name | msWMI-TargetClass                           |
+| Tamanho              | Menos de 20 caracteres.                |
+| Privilégio de atualização  | Política de Grupo administrador                  |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1645                     |
-| System-ID-GUID    | 95b6d8d6-c9e8-4661-a2bc-6a5cabc04c62        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 95b6d8d6-c9e8-4661-a2bc-6a5cabc04c62        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,15 +57,15 @@ Nome da classe do objeto de política a ser criado.
 | ID do link                | \-                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                             |
+| Tem valor único       | Verdadeiro                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                            |
-| No catálogo global      | Falso                                                                                                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                     |
+| No Catálogo Global      | Falso                                                                                                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                       |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Nome da classe do objeto de política a ser criado.
 | ID do link                | \-                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                             |
+| Tem valor único       | Verdadeiro                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                            |
-| No catálogo global      | Falso                                                                                                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                     |
+| No Catálogo Global      | Falso                                                                                                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                       |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Nome da classe do objeto de política a ser criado.
 | ID do link                | \-                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                             |
+| Tem valor único       | Verdadeiro                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                            |
-| No catálogo global      | Falso                                                                                                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                     |
+| No Catálogo Global      | Falso                                                                                                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                       |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Nome da classe do objeto de política a ser criado.
 | ID do link                | \-                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                             |
+| Tem valor único       | Verdadeiro                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                            |
-| No catálogo global      | Falso                                                                                                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                     |
+| No Catálogo Global      | Falso                                                                                                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                       |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Nome da classe do objeto de política a ser criado.
 | ID do link                | \-                                                                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                                                                               |
 | System-Only            | Falso                                                                                                                                                                            |
-| É de valor único       | True                                                                                                                                                                             |
+| Tem valor único       | Verdadeiro                                                                                                                                                                             |
 | É indexado             | Falso                                                                                                                                                                            |
-| No catálogo global      | Falso                                                                                                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                     |
+| No Catálogo Global      | Falso                                                                                                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                     |
 | Range-Lower            | \-                                                                                                                                                                               |
 | Range-Upper            | \-                                                                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                                                                       |
 | System-Flags           | 0x00000010                                                                                                                                                                       |
-| Classes usadas em        | [**MS-WMI-Policytemplate**](c-mswmi-policytemplate.md)<br/> [**MS-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**MS-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
+| Classes usadas em        | [**ms-WMI-PolicyTemplate**](c-mswmi-policytemplate.md)<br/> [**ms-WMI-RangeParam**](c-mswmi-rangeparam.md)<br/> [**ms-WMI-WMIGPO**](c-mswmi-wmigpo.md)<br/> |
 
 
 

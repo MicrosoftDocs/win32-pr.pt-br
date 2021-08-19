@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CB_GETCURSEL (WinUser. h)
-description: Um aplicativo envia uma \_ mensagem de IScursel de CB para recuperar o índice do item atualmente selecionado, se houver, na caixa de listagem de uma caixa de combinação.
+title: CB_GETCURSEL mensagem (Winuser.h)
+description: Um aplicativo envia uma mensagem CB GETCURSEL para recuperar o índice do item selecionado no momento, se for o caso, na caixa de listagem de \_ uma caixa de combinação.
 ms.assetid: 47bf87f6-637f-48e9-849e-b2acbe5a6a7b
 keywords:
-- Controles de CB_GETCURSEL de mensagens do Windows
+- CB_GETCURSEL controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fbc9aa1785738fb061696fbad64598747168269
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e9bc51f43fd28563be4bc3f024bf6afd35c297648aa6c6cad677aca4582c3737
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120089256"
 ---
-# <a name="cb_getcursel-message"></a>\_Mensagem de ISCURSE CB
+# <a name="cb_getcursel-message"></a>Mensagem \_ CB GETCURSEL
 
-Um aplicativo envia uma mensagem de **\_ iscursel de CB** para recuperar o índice do item atualmente selecionado, se houver, na caixa de listagem de uma caixa de combinação.
+Um aplicativo envia uma mensagem **\_ CB GETCURSEL** para recuperar o índice do item selecionado no momento, se for o caso, na caixa de listagem de uma caixa de combinação.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -43,9 +43,9 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é o índice de base zero do item selecionado no momento. Se nenhum item for selecionado, será CB \_ Err.
+O valor de retorno é o índice baseado em zero do item selecionado no momento. Se nenhum item for selecionado, ele será CB \_ ERR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ O valor de retorno é o índice de base zero do item selecionado no momento. Se 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -66,10 +66,10 @@ O valor de retorno é o índice de base zero do item selecionado no momento. Se 
 **Referência**
 </dt> <dt>
 
-[**seleção do CB \_**](cb-selectstring.md)
+[**CB \_ SELECTSTRING**](cb-selectstring.md)
 </dt> <dt>
 
-[**CB \_ SETcurseal**](cb-setcursel.md)
+[**CB \_ SETCURSEL**](cb-setcursel.md)
 </dt> </dl>
 
  

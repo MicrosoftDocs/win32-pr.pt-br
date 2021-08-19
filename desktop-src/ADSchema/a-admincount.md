@@ -1,11 +1,11 @@
 ---
 title: Admin-Count atributo
-description: Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seguro pelo sistema porque ele era um membro de um dos grupos administrativos (de forma direta ou transitiva).
+description: Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seguro pelo sistema porque ele era membro de um dos grupos administrativos (direta ou transitivamente).
 ms.assetid: b2384ada-a792-42fa-be64-291d23e00887
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Admin-Count do atributo AD
-- Esquema de AD do atributo adminCount
+- Admin-Count atributo AD Schema
+- Esquema do AD do atributo adminCount
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e95b953aebaa39bb3fc3e4c9cf96632f32a37850
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d652d53627643e1028ee73cc67678119c689e46d8f4ec289c92ca32127e098dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645601"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022844"
 ---
 # <a name="admin-count-attribute"></a>Admin-Count atributo
 
-Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seguro pelo sistema porque ele era um membro de um dos grupos administrativos (de forma direta ou transitiva).
+Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seguro pelo sistema porque ele era membro de um dos grupos administrativos (direta ou transitivamente).
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------|
 | CN                | Admin-Count                                         |
-| LDAP-Display-Name | adminCount                                          |
+| Ldap-Display-Name | adminCount                                          |
 | Tamanho              | 4 bytes                                             |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                    |
 | Frequência de atualização  | Quando um objeto é adicionado a um grupo administrativo. |
 | Attribute-Id      | 1.2.840.113556.1.4.150                              |
-| System-ID-GUID    | bf967918-0de6-11d0-a285-00aa003049e2                |
+| System-Id-Guid    | bf967918-0de6-11d0-a285-00aa003049e2                |
 | Syntax            | [**Enumeração**](s-enumeration.md)                |
 
 
@@ -58,10 +58,10 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
@@ -79,10 +79,10 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
@@ -100,10 +100,10 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
@@ -121,10 +121,10 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
@@ -142,10 +142,10 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |
@@ -163,10 +163,10 @@ Indica que um determinado objeto teve suas ACLs alteradas para um valor mais seg
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| É de valor único       | True                                                                  |
+| Tem valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No catálogo global      | Falso                                                                 |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
+| No Catálogo Global      | Falso                                                                 |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |

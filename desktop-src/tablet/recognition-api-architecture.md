@@ -4,12 +4,12 @@ ms.assetid: 0ea6881f-d2d7-4646-9c41-53d1c03ea55b
 title: Arquitetura da API de reconhecimento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72838b77e11092cacd4adb998c669167940ecad2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59775658bcda2ecafd142476e6ff48ccdda2e82b31af62d5f49b218513f9b326
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104565097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118966885"
 ---
 # <a name="recognition-api-architecture"></a>Arquitetura da API de reconhecimento
 

@@ -1,7 +1,7 @@
 ---
 description: Inicia uma operação de desligamento do sistema operacional na máquina virtual filho associada. Se zero (0) for retornado, o desligamento foi iniciado com êxito. Qualquer outro código de retorno indica uma condição de erro.
 ms.assetid: 946BBC62-5479-4AE0-8870-D0A07827B902
-title: Método InitiateShutdown da classe Msvm_ShutdownComponent (winreg. h)
+title: Método InitiateShutdown da classe Msvm_ShutdownComponent (Winreg.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 266ab64bb058325ac165a2e12c2a91d442a90269
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f128eb2babfed0c70aca063832e579ad254ca1b02d6beaefb451c64598faa8d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170251"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950395"
 ---
-# <a name="initiateshutdown-method-of-the-msvm_shutdowncomponent-class"></a>Método InitiateShutdown da \_ classe ShutdownComponent Msvm
+# <a name="initiateshutdown-method-of-the-msvm_shutdowncomponent-class"></a>Método InitiateShutdown da classe Msvm \_ ShutdownComponent
 
 Inicia uma operação de desligamento do sistema operacional na máquina virtual filho associada. Se zero (0) for retornado, o desligamento foi iniciado com êxito. Qualquer outro código de retorno indica uma condição de erro.
 
@@ -40,34 +40,34 @@ uint32 InitiateShutdown(
 
 <dl> <dt>
 
-*Forçar* \[ no\]
+*Forçar* \[ Em\]
 </dt> <dd>
 
-Tipo: **booliano**
+Tipo: **booliana**
 
-Um sinalizador que, se **verdadeiro**, força os aplicativos a serem fechados, apesar de terem dados não salvos.
+Um sinalizador que, se **True,** força os aplicativos a serem fechados, apesar de ter dados não savados.
 
 </dd> <dt>
 
-*Motivo* \[ no\]
+*Motivo* \[ Em\]
 </dt> <dd>
 
-Tipo: **cadeia de caracteres**
+Tipo: cadeia **de caracteres**
 
-O motivo para a operação de desligamento. Esta é uma cadeia de caracteres definida pelo usuário.
+O motivo da operação de desligamento. Essa é uma cadeia de caracteres definida pelo usuário.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
 <dl> <dt>
 
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -79,16 +79,16 @@ Tipo: **UInt32**
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em usado** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -97,10 +97,10 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> <dt>
 
 **Arquivo não encontrado** (32779)
@@ -109,7 +109,7 @@ O **sistema não está disponível** (32777)
 **O sistema não está pronto** (32780)
 </dt> <dt>
 
-**A máquina está bloqueada e não pode ser desligada sem a opção Force** (32781)
+**O computador está bloqueado e não pode ser desligado sem a opção force** (32781)
 </dt> <dt>
 
 **Um desligamento do sistema está em andamento** (32782)
@@ -117,7 +117,7 @@ O **sistema não está disponível** (32777)
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe [**Msvm \_ ShutdownComponent**](msvm-shutdowncomponent.md) pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à [**classe \_ ShutdownComponent do Msvm**](msvm-shutdowncomponent.md) pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -125,11 +125,11 @@ O acesso à classe [**Msvm \_ ShutdownComponent**](msvm-shutdowncomponent.md) po
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Winreg. h</dt> </dl>                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winreg.h</dt> </dl>                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -138,7 +138,7 @@ O acesso à classe [**Msvm \_ ShutdownComponent**](msvm-shutdowncomponent.md) po
 
 <dl> <dt>
 
-[**Msvm \_ ShutdownComponent**](msvm-shutdowncomponent.md)
+[**Desligamento do \_ MsvmComponent**](msvm-shutdowncomponent.md)
 </dt> </dl>
 
  

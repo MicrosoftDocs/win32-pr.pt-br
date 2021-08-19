@@ -1,49 +1,49 @@
 ---
-title: Conjunto de comandos Waveform-Audio
-description: Conjunto de comandos Waveform-Audio
+title: Waveform-Audio conjunto de comandos
+description: Waveform-Audio conjunto de comandos
 ms.assetid: 469e29bf-8f7c-41d8-9d18-08b19cd14110
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fbb5653a09d48e44ecfb5a0cce9c78e7dd78c2af
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b5f3f351fc730a26de9dc99e82c145e4385016b97300c86a2a7ee3d74a9389b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105764650"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119781486"
 ---
-# <a name="waveform-audio-command-set"></a>Conjunto de comandos Waveform-Audio
+# <a name="waveform-audio-command-set"></a>Waveform-Audio conjunto de comandos
 
-Formato de onda-os dispositivos de áudio dão suporte ao seguinte conjunto de comandos.
+Os dispositivos waveform-audio são compatíveis com o seguinte conjunto de comandos.
 
 
 
 | Formulário de cadeia de caracteres                      | Formulário de mensagem                              |
 |----------------------------------|-------------------------------------------|
-| [**interrupção**](break.md)           | [**interrupção de MCI \_**](mci-break.md)           |
-| [**recursos**](capability.md) | [**\_GETDEVCAPS MCI**](mci-getdevcaps.md) |
-| [**inclui**](close.md)           | [**fechamento de MCI \_**](mci-close.md)           |
-| [**advertência**](cue.md)               | [**indicação de MCI \_**](mci-cue.md)               |
-| [**apagar**](delete.md)         | [**exclusão de MCI \_**](mci-delete.md)         |
-| [**detalhes**](info.md)             | [**informações do MCI \_**](mci-info.md)             |
-| [**abrir**](open.md)             | [**MCI \_ aberto**](mci-open.md)             |
-| [**temporariamente**](pause.md)           | [**pausa de MCI \_**](mci-pause.md)           |
-| [**reproduzir**](play.md)             | [**\_reprodução MCI**](mci-play.md)             |
-| [**gravável**](record.md)         | [**\_registro MCI**](mci-record.md)         |
-| [**Volte**](resume.md)         | [**retomar MCI \_**](mci-resume.md)         |
-| [**Guarde**](save.md)             | [**\_salvar MCI**](mci-save.md)             |
-| [**Procure**](seek.md)             | [**busca de MCI \_**](mci-seek.md)             |
-| [**Definição**](set.md)               | [**conjunto de MCI \_**](mci-set.md)               |
-| [**Estado**](status.md)         | [**STATUS do MCI \_**](mci-status.md)         |
-| [**deixar**](stop.md)             | [**parada do MCI \_**](mci-stop.md)             |
-| [SysInfo](sysinfo.md)           | [**SysInfo do MCI \_**](mci-sysinfo.md)       |
+| [**Quebrar**](break.md)           | [**MCI \_ BREAK**](mci-break.md)           |
+| [**Capacidade**](capability.md) | [**MCI \_ GETDEVCAPS**](mci-getdevcaps.md) |
+| [**Perto**](close.md)           | [**MCI \_ CLOSE**](mci-close.md)           |
+| [**Cue**](cue.md)               | [**MCI \_ CUE**](mci-cue.md)               |
+| [**Excluir**](delete.md)         | [**MCI \_ DELETE**](mci-delete.md)         |
+| [**informações**](info.md)             | [**INFORMAÇÕES \_ DA MCI**](mci-info.md)             |
+| [**Aberto**](open.md)             | [**MCI \_ OPEN**](mci-open.md)             |
+| [**Pausa**](pause.md)           | [**PAUSA DA \_ MCI**](mci-pause.md)           |
+| [**Jogar**](play.md)             | [**MCI \_ PLAY**](mci-play.md)             |
+| [**Registro**](record.md)         | [**REGISTRO \_ MCI**](mci-record.md)         |
+| [**Currículo**](resume.md)         | [**MCI \_ RESUME**](mci-resume.md)         |
+| [**Salvar**](save.md)             | [**MCI \_ SAVE**](mci-save.md)             |
+| [**Procurar**](seek.md)             | [**MCI \_ SEEK**](mci-seek.md)             |
+| [**Definir**](set.md)               | [**MCI \_ SET**](mci-set.md)               |
+| [**Status**](status.md)         | [**STATUS DA MCI \_**](mci-status.md)         |
+| [**Parar**](stop.md)             | [**MCI \_ STOP**](mci-stop.md)             |
+| [Sysinfo](sysinfo.md)           | [**MCI \_ SYSINFO**](mci-sysinfo.md)       |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

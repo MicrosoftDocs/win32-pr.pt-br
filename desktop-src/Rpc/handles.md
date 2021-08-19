@@ -1,6 +1,6 @@
 ---
 title: Alças
-description: Até duas partes na descrição da cadeia de caracteres de formato de identificadores de endereço de procedimento.
+description: Até duas partes na descrição da cadeia de caracteres de formato de um endereço de procedimento são lidas.
 ms.assetid: 11c6742c-b2f5-4201-8b1c-7e31ae52e0da
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,11 +13,11 @@ ms.locfileid: "118929533"
 ---
 # <a name="handles"></a>Alças
 
-Até duas partes na descrição da cadeia de caracteres de formato de identificadores de endereço de procedimento. A primeira parte é o tipo de identificador \_<1> campo da descrição de um procedimento, usado para indicar identificadores implícitos. Esta parte está sempre presente. A segunda parte é uma descrição de parâmetro de qualquer identificador explícito no procedimento. Ambos são explicados nas seções a seguir, juntamente com uma discussão sobre o suporte adicional do compilador MIDL da estrutura do descritor de stub para problemas de identificador de associação.
+Até duas partes na descrição da cadeia de caracteres de formato de um endereço de procedimento são lidas. A primeira parte é o tipo de identificador<1> campo da descrição de um \_ procedimento, usado para indicar identificador implícito. Essa parte está sempre presente. A segunda parte é uma descrição de parâmetro de qualquer alça explícita no procedimento. Ambos são explicados nas seções a seguir, juntamente com uma discussão sobre o suporte adicional do compilador MIDL da estrutura do descritor stub para problemas de alça de associação.
 
-## <a name="implicit-handles"></a>Identificadores implícitos
+## <a name="implicit-handles"></a>Alças implícitas
 
-Se um procedimento usar um identificador implícito para associação, o tipo de identificador \_<1> campo da descrição do procedimento conterá um dos três valores válidos de zero. O suporte do compilador MIDL para identificadores implícitos é encontrado no \_ \_ campo informações do identificador implícito da estrutura do descritor de stub:
+Se um procedimento usar um identificador implícito para associação, o tipo de identificador<1> campo da descrição do procedimento conterá um dos três valores diferentes \_ de zero válidos. O suporte do compilador MIDL para alças implícitas é encontrado no campo IMPLICIT \_ HANDLE INFO da estrutura do \_ Descritor de Stub:
 
 ``` syntax
 typedef  (__RPC_FAR * GENERIC_BINDING_ROUTINE)();
@@ -44,28 +44,28 @@ union
   } IMPLICIT_HANDLE_INFO;
 ```
 
-Se o procedimento usar um identificador automático, o membro **pAutoHandle** conterá o endereço do stub definido – variável de identificador auto.
+Se o procedimento usar um handle automático, o membro **pAutoHandle** conterá o endereço da variável de alça automática definida pelo stub.
 
-Se o procedimento usar um identificador primitivo implícito, o membro **pPrimitiveHandle** conterá o endereço do stub definido – variável de identificador primitivo.
+Se o procedimento usar um manipulador primitivo implícito, o membro **pPrimitiveHandle** conterá o endereço da variável de alça stub defined-primitive.
 
-Por fim, se o procedimento usar um identificador genérico implícito, o membro **pGenericBindingInfo** manterá o endereço do ponteiro para a estrutura de **\_ \_ informações de associação genérica** correspondente. A estrutura de dados do **stub de MIDL \_ \_** contém um ponteiro para uma coleção de estruturas de **\_ \_ par de ligação genérica** . A entrada na posição zero dessa coleção é reservada para as rotinas **de associação e** **desvinculação** correspondentes ao identificador de associação genérico referenciado por **PGenericBindingInfo** nas **\_ \_ informações do identificador implícito**. O tipo de identificador de ligação implícita é indicado na cadeia de caracteres de formato.
+Por fim, se o procedimento usar um handle genérico implícito, o membro **pGenericBindingInfo** manterá o endereço do ponteiro para a estrutura **GENERIC BINDING \_ \_ INFO** correspondente. A ESTRUTURA de **dados MIDL \_ STUB \_ DESC** contém um ponteiro para uma coleção de **estruturas GENERIC \_ BINDING \_ PAIR.** A entrada na posição zero desta coleção é  reservada para as rotinas **de** associação e desa associação correspondentes ao handle de associação genérico referenciado por **pGenericBindingInfo** em **IMPLICIT \_ HANDLE \_ INFO**. O tipo de identificador de associação implícita é indicado na cadeia de caracteres de formato.
 
-## <a name="explicit-handles"></a>Identificadores explícitos
+## <a name="explicit-handles"></a>Alças explícitas
 
-Há três tipos de identificador explícitos possíveis: contexto, genérico e primitivo. No caso de um identificador explícito (ou um \[  \] identificador de contexto somente out, que é manipulado da mesma maneira), as informações do identificador de associação são exibidas como um dos parâmetros do procedimento. As três descrições possíveis são as seguintes.
+Há três tipos de alça explícitos possíveis: contexto, genérico e primitivo. No caso de um alça explícito (ou um alça de contexto somente de saída, que é tratado da mesma maneira), as informações de manipulação de associação aparecem como um dos \[  \] parâmetros do procedimento. As três descrições possíveis são as a seguir.
 
-Primitiva
+Primitivo
 
 ``` syntax
 FC_BIND_PRIMITIVE, flag<1>, offset<2>.
 ```
 
-O sinalizador<1> indica se o identificador é passado por um ponteiro.
+O sinalizador<1> indica se o ponteiro é passado por um ponteiro.
 
-O deslocamento<2> fornece o deslocamento desde o início da pilha até o identificador primitivo.
+O deslocamento<2> fornece o deslocamento do início da pilha para o alça primitivo.
 
 > [!Note]  
-> Uma descrição do identificador primitivo na cadeia de caracteres de formato de tipo é reduzida para uma única \_ ignorar FC.
+> Uma descrição de identificador primitivo na cadeia de caracteres de formato de tipo é reduzida a um único FC \_ IGNORE.
 
  
 
@@ -75,14 +75,14 @@ Genérico
 FC_BIND_GENERIC, flag_and_size<1>, offset<2>, binding_routine_pair_index<1>, FC_PAD
 ```
 
-O sinalizador \_ e \_ o tamanho<1> tem o sinal superior Nibble e o tamanho inferior Nibble. O sinalizador indica se o identificador é passado por um ponteiro. O campo tamanho fornece o tamanho do tipo de identificador genérico definido pelo usuário. Esse tamanho é limitado a 1, 2 ou 4 bytes em sistemas de 32 bits e 1, 2, 4 ou 8 bytes em sistemas de 64 bits.
+O sinalizador e o tamanho<1> tem a nibble de sinalizador superior e a \_ \_ nibble de tamanho inferior. O sinalizador indica se o alça é passado por um ponteiro. O campo tamanho fornece o tamanho do tipo de identificador genérico definido pelo usuário. Esse tamanho é limitado a ser de 1, 2 ou 4 bytes em sistemas de 32 bits e 1, 2, 4 ou 8 bytes em sistemas de 64 bits.
 
-O campo deslocamento<2> fornece o deslocamento do início da pilha do ponteiro até os dados do tamanho fornecido.
+O deslocamento<2> campo fornece o deslocamento do início da pilha do ponteiro para os dados do tamanho determinado.
 
-O índice de par de rotina de associação \_ \_ \_<campo 1> fornece ao índice o campo aGenericBindingRoutinePairs do descritor de stub para os ponteiros de função de rotina de **Associação** e **desassociação** para o identificador genérico.
+O campo> índice de par de rotina de associação<1 fornece o índice no campo \_ \_ \_ aGenericBindingRoutinePairs   do Descritor de Stub para os ponteiros de função de rotina de associação e desa associação para o indicador genérico.
 
 > [!Note]  
-> Uma descrição de identificador genérico no formato de tipo é a descrição somente do tipo de dados relacionado.
+> Uma descrição de identificador genérico no formato de tipo é a descrição apenas do tipo de dados relacionado.
 
  
 
@@ -92,45 +92,45 @@ Contexto
 FC_BIND_CONTEXT flags<1> offset<2> context_rundown_routine_index<1> param_num<1>
 ```
 
-Os sinalizadores<1> indicam como o identificador é passado e qual é o tipo. Os sinalizadores válidos são mostrados na tabela a seguir.
+Os sinalizadores<1> indicam como o identificador é passado e qual é o tipo. Sinalizadores válidos são mostrados na tabela a seguir.
 
 
 
 | Hex | Sinalizador                                   |
 |-----|----------------------------------------|
-| 80  | o identificador de \_ parâmetro \_ é \_ via \_ PTR            |
-| 40  | o \_ parâmetro Handle \_ está \_ em                  |
-| 20  | o \_ parâmetro Handle \_ está \_ fora                 |
-| 21  | o \_ parâmetro Handle \_ é \_ retornado              |
-| 08  | \_identificador de \_ contexto \_ estrito NDR           |
-| 04  | \_manipulador de contexto NDR \_ \_ sem \_ serialização    |
-| 02  | \_serialização de \_ identificador de contexto NDR \_        |
-| 01  | o \_ identificador de contexto NDR \_ \_ não pode \_ ser \_ nulo |
+| 80  | HANDLE \_ PARAM \_ É VIA \_ \_ PTR            |
+| 40  | HANDLE \_ PARAM \_ ESTÁ \_ EM                  |
+| 20  | HANDLE \_ PARAM \_ IS \_ OUT                 |
+| 21  | HANDLE \_ PARAM \_ IS \_ RETURN              |
+| 08  | NDR \_ STRICT \_ CONTEXT \_ HANDLE           |
+| 04  | NDR \_ CONTEXT \_ HANDLE \_ NO \_ SERIALIZE    |
+| 02  | SERIALIZAR \_ O ALÇA DE \_ CONTEXTO \_ NDR        |
+| 01  | O HANDLE \_ DE CONTEXTO \_ NDR NÃO PODE SER \_ \_ \_ NULO |
 
 
 
  
 
-os quatro primeiros sinalizadores sempre estão presentes, os últimos quatro foram adicionados no Windows 2000.
+Os quatro primeiros sinalizadores sempre estavam presentes, os quatro últimos foram adicionados Windows 2000.
 
-O campo deslocamento<2> fornece o deslocamento desde o início da pilha até o identificador de contexto.
+O deslocamento<2> campo fornece o deslocamento do início da pilha para o alça de contexto.
 
-O índice de rotina de encerramento de contexto \_ \_ \_<1> fornece um índice para o campo **apfnNdrRundownRoutines** do descritor de stub para a rotina de encerramento usada para esse identificador de contexto. O compilador sempre gera um índice. Para rotinas que não têm uma rotina de encerramento, esse é um índice para uma posição de tabela que contém NULL.
+O índice de rotina de resumo de contexto<1> fornece um índice no campo \_ \_ \_ **apfnNdrRundownRoutines** do Descritor de Stub para a rotina de rundown usada para esse indicador de contexto. O compilador sempre gera um índice. Para rotinas que não têm uma rotina de rundown, esse é um índice para uma posição de tabela que contém nulo.
 
-Para stubs internos **– Oi2**, o param \_ num<1> fornece a contagem ordinal, começando em zero, especificando qual identificador de contexto está no procedimento fornecido.
+Para stubs integrados em **–Oi2**, o param num<1> fornece a contagem ordinal, começando em zero, especificando qual alça de contexto ele está no procedimento \_ especificado.
 
-Para versões anteriores do interpretador, o param \_ num<1> fornece o número do parâmetro do identificador de contexto, começando em zero, em seu procedimento.
+Para versões anteriores do interpretador, o parâmetro num<1> fornece o número de parâmetro do alça de contexto, começando em zero, em \_ seu procedimento.
 
 > [!Note]  
-> Uma descrição de identificador de contexto na cadeia de caracteres de formato de tipo não terá o deslocamento<2> na descrição.
+> Uma descrição do identificador de contexto na cadeia de caracteres de formato de tipo não terá o deslocamento<2> na descrição.
 
  
 
-## <a name="the-new-oif-header"></a>O cabeçalho New – OIF
+## <a name="the-new-oif-header"></a>O novo -Oif header
 
-Conforme mencionado anteriormente, o cabeçalho [**– OIF**](/windows/desktop/Midl/-oi) se expande no cabeçalho **– Oi** . Para sua conveniência, todos os campos são mostrados aqui:
+Conforme mencionado anteriormente, o header [**–Oif**](/windows/desktop/Midl/-oi) se expande no **header –Oi.** Para sua conveniência, todos os campos são mostrados aqui:
 
-(O cabeçalho antigo)
+(O antigo header)
 
 ``` syntax
 handle_type<1> 
@@ -141,7 +141,7 @@ stack_size<2>
 [explicit_handle_description<>]
 ```
 
-(As extensões [**– OIF**](/windows/desktop/Midl/-oi) )
+(As [**extensões –Oif)**](/windows/desktop/Midl/-oi)
 
 ``` syntax
 constant_client_buffer_size<2>
@@ -150,11 +150,11 @@ INTERPRETER_OPT_FLAGS<1>
 number_of_params<1>
 ```
 
-O \_ \_ tamanho de buffer de cliente constante \_<2> fornece o tamanho do buffer de marshaling que poderia ter sido previamente computado pelo compilador. Isso pode ser apenas um tamanho parcial, pois o sinalizador ClientMustSize aciona o dimensionamento.
+O tamanho constante do buffer do cliente<2> fornece o tamanho do buffer de marshaling que poderia ter sido \_ \_ \_ pré-computado pelo compilador. Isso pode ser apenas um tamanho parcial, pois o sinalizador ClientMustSize dispara o tamanho.
 
-O \_ tamanho do buffer do servidor constante \_ \_<2> fornece o tamanho do buffer de marshaling como pré-compilado pelo compilador. Isso pode ser apenas um tamanho parcial, pois o sinalizador ServerMustSize aciona o dimensionamento.
+O tamanho constante do buffer do servidor<2> fornece o tamanho do buffer de marshaling conforme pré-compilado \_ \_ pelo \_ compilador. Isso pode ser apenas um tamanho parcial, pois o sinalizador ServerMustSize dispara o tamanho.
 
-Os sinalizadores de \_ consentimento do intérprete \_ são definidos em Ndrtypes. h:
+Os \_ SINALIZADORES DE OPT \_ DO INTERPRETADOR são definidos em Ndrtypes.h:
 
 ``` syntax
 typedef struct
@@ -170,15 +170,15 @@ typedef struct
   } INTERPRETER_OPT_FLAGS, *PINTERPRETER_OPT_FLAGS;
 ```
 
--   O bit ServerMustSize será definido se o servidor precisar executar uma passagem de dimensionamento de buffer.
--   O bit ClientMustSize será definido se o cliente precisar executar uma passagem de dimensionamento de buffer.
+-   O bit ServerMustSize será definido se o servidor precisar executar uma passagem de tamanho de buffer.
+-   O bit ClientMustSize será definido se o cliente precisar executar uma passagem de tamanho de buffer.
 -   O bit HasReturn será definido se o procedimento tiver um valor de retorno.
 -   O bit HasPipes será definido se o pacote de pipe precisar ser usado para dar suporte a um argumento de pipe.
 -   O bit HasAsyncUuid será definido se o procedimento for um procedimento DCOM assíncrono.
--   o bit HasExtensions indica que Windows 2000 e extensões posteriores são usadas.
+-   O bit HasExtensions indica que Windows 2000 e extensões posteriores são usadas.
 -   O bit HasAsyncHandle indica um procedimento RPC assíncrono.
 
-O HasAsyncHandle bit foi usado inicialmente para uma implementação de DCOM diferente do suporte assíncrono e, portanto, não pôde ser usado para o suporte assíncrono de estilo atual no DCOM. O bit HasAsyncUuid atualmente indica isso.
+O bit HasAsyncHandle foi inicialmente usado para uma implementação de DCOM diferente de suporte assíncrono e, portanto, não pôde ser usado para o suporte assíncrono de estilo atual no DCOM. O bit HasAsyncUuid atualmente indica isso.
 
  
 

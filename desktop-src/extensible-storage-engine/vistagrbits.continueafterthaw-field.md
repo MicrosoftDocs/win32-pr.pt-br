@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: campo VistaGrbits. ContinueAfterThaw'
-title: Campo VistaGrbits. ContinueAfterThaw (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: campo VistaGrbits.ContinueAfterThaw'
+title: Campo VistaGrbits.ContinueAfterThaw (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: ContinueAfterThaw field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaGrbits.ContinueAfterThaw
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistagrbits.continueafterthaw(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118978126"
 ---
-# <a name="vistagrbitscontinueafterthaw-field"></a>Campo VistaGrbits. ContinueAfterThaw
+# <a name="vistagrbitscontinueafterthaw-field"></a>Campo VistaGrbits.ContinueAfterThaw
 
 A sessão de instantâneo continua após JetOSSnapshotThaw e exigirá uma chamada de função JetOSSnapshotEnd.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,4 +61,4 @@ public const SnapshotPrepareGrbit ContinueAfterThaw
 
 [Membros do VistaGrbits](./vistagrbits-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

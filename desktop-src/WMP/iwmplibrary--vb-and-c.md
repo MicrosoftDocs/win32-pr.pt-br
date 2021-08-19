@@ -3,8 +3,8 @@ title: Interface IWMPLibrary (VB e C) (WMP. h)
 description: Representa uma biblioteca. A interface IWMPLibrary expõe as propriedades a seguir.
 ms.assetid: 956b2da1-5f01-48d6-8faa-e360c225afda
 keywords:
-- IWMPLibrary (VB e C) interface do Windows Media Player
-- IWMPLibrary (VB e C) interface do Windows Media Player, descrito
+- Windows Media Player de interface IWMPLibrary (VB e C)
+- Windows Media Player de interface IWMPLibrary (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f9749d3a2363c3863180639f249d7261ec1b9694
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6a418192e45363b6757d7360e779b8f8134677d8a321228d81fddd3d49501075
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054824"
 ---
 # <a name="iwmplibrary-vb-and-c-interface"></a>Interface IWMPLibrary (VB e C#)
 
@@ -91,7 +91,7 @@ Obtenha uma interface **IWMPLibrary** usando o método a seguir.
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> <dt>
 
 [**IWMPLibraryServices. getLibraryByType (VB e C#)**](wmplibiwmplibraryservices-iwmplibraryservices-getlibrarybytype--vb-and-c.md)

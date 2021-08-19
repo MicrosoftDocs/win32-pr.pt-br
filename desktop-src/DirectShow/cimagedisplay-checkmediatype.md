@@ -1,7 +1,7 @@
 ---
 description: O método CheckMediaType determina se um tipo de mídia proposto é compatível com o formato de exibição.
 ms.assetid: 567663cf-c79f-4549-9fa9-b16da957d2b1
-title: Método CImageDisplay. CheckMediaType (Winutil. h)
+title: Método CImageDisplay.CheckMediaType (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a8ebcdbe6bbfe6538a2ea166be0816f31954c7d2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6bad6a7242ba110ad3916d08070eef40a8fa1d5d658ea366732e14a1cd107d04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120087386"
 ---
-# <a name="cimagedisplaycheckmediatype-method"></a>Método CImageDisplay. CheckMediaType
+# <a name="cimagedisplaycheckmediatype-method"></a>Método CImageDisplay.CheckMediaType
 
 O `CheckMediaType` método determina se um tipo de mídia proposto é compatível com o formato de exibição.
 
@@ -45,19 +45,19 @@ HRESULT CheckMediaType(
 *pmtIn* 
 </dt> <dd>
 
-Ponteiro para um objeto [**CMediaType**](cmediatype.md) que contém o tipo de mídia.
+Ponteiro para um [**objeto CMediaType**](cmediatype.md) que contém o tipo de mídia.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
+Retorna um **valor HRESULT.** Os possíveis valores incluem os seguintes.
 
 
 
 | Código de retorno                                                                                  | Descrição                              |
 |----------------------------------------------------------------------------------------------|------------------------------------------|
-| <dl> <dt>**E \_ falha**</dt> </dl>       | Tipo de mídia inválido.<br/>           |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>       | Tipo de mídia inválido.<br/>           |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl> | Tipo de mídia inválido.<br/>           |
 | <dl> <dt>**S \_ OK**</dt> </dl>         | O tipo de mídia é compatível.<br/> |
 
@@ -71,8 +71,8 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

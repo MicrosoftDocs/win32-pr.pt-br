@@ -1,5 +1,5 @@
 ---
-description: Solicitação de informações do arquivo de origem de uma pilha de chamadas.
+description: Solicitação de informações de arquivo de origem de um callstack.
 MS-HAID: vspixengine.ISourceFileInfoRequest
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -26,11 +26,11 @@ ms.locfileid: "118985626"
 ---
 # <a name="span-idvspixengineisourcefileinforequestspanisourcefileinforequest-interface"></a><span id="vspixengine.isourcefileinforequest"></span>Interface ISourceFileInfoRequest
 
-Solicitação de informações do arquivo de origem de uma pilha de chamadas.
+Solicitação de informações de arquivo de origem de um callstack.
 
 ## <a name="members"></a>Membros
 
-A interface **ISourceFileInfoRequest** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **ISourceFileInfoRequest** também tem estes tipos de membros:
+A interface **ISourceFileInfoRequest** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **ISourceFileInfoRequest** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -38,13 +38,13 @@ A interface **ISourceFileInfoRequest** herda da interface [**IUnknown**](/window
 
 A interface **ISourceFileInfoRequest** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinforequest-requestasync-eventid-isourcefileinfocallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Uma solicitação assíncrona para obter os arquivos de origem associados à pilha de chamadas de um evento.</p></td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/isourcefileinforequest-requestasync-eventid-isourcefileinfocallback-ptr-dword-dword"><strong>RequestAsync</strong></a></td><td style="text-align: left;"><p>Uma solicitação assíncrona para obter os arquivos de origem associados ao callstack de um evento.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine.h</td></tr></tbody></table>
 
  
 

@@ -14,16 +14,16 @@ api_type:
 - DllExport
 api_location:
 - Shlwapi.dll
-ms.openlocfilehash: 8f76d516570725fe6da5e8a21ec5a29699276ee3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfd640aaf0bbc68e8798f62f41542d794db34808674c0bdb47587c7396ad7bc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169446"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119094191"
 ---
 # <a name="findresourcewrapw-function"></a>Função FindResourceWrapW
 
-\[O **FindResourceWrapW** está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Em vez disso, você deve usar [**FindResourceW**](/windows/win32/api/winbase/nf-winbase-findresourcea) .\]
+\[o **FindResourceWrapW** está disponível para uso no Windows XP. Ele pode não estar disponível em versões subsequentes. Em vez disso, você deve usar [**FindResourceW**](/windows/win32/api/winbase/nf-winbase-findresourcea) .\]
 
 Determina o local de um recurso com o tipo e o nome especificados no módulo especificado.
 
@@ -76,7 +76,7 @@ Um ponteiro para uma cadeia de caracteres que especifica o tipo de recurso. Para
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRSRC**
 
@@ -98,9 +98,9 @@ O **FindResourceWrapW** fornece a capacidade de usar cadeias de caracteres Unico
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Nenhum</dt> </dl>                               |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Nenhum</dt> </dl>                               |
 | DLL<br/>                      | <dl> <dt>Shlwapi.dll (versão 5,0 ou posterior)</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **FindResourceWrapW** (Unicode)<br/>                                                                    |
 

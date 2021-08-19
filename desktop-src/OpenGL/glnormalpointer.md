@@ -73,7 +73,7 @@ Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.*
 
 
 
-| Name                                                                                                  | Significado                                      |
+| Nome                                                                                                  | Significado                                      |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *type* não era um valor aceito.<br/> |
 | <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | *stride* ou *count* era negativo.<br/> |

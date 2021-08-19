@@ -1,7 +1,7 @@
 ---
-description: 'Gerado por uma fonte de mídia para solicitar uma nova taxa de reprodução. O aplicativo deve chamar IMFRateControl:: SetRate com a taxa solicitada. Uma fonte de mídia poderá gerar esse evento se não for possível continuar a reprodução na taxa atual.'
+description: Gerado por uma fonte de mídia para solicitar uma nova taxa de reprodução. O aplicativo deve chamar IMFRateControl::SetRate com a taxa solicitada. Uma fonte de mídia poderá agarr esse evento se não puder continuar a reprodução na taxa atual.
 ms.assetid: 705e5a79-836b-417b-a7ed-c733572f6905
-title: Evento MESourceRateChangeRequested (Mfobjects. h)
+title: Evento MESourceRateChangeRequested (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: f7d8a88225fd3a0a95c56d549a712b295ba562cc684c08fe4b762c0169e3637c
@@ -13,15 +13,15 @@ ms.locfileid: "118974125"
 ---
 # <a name="mesourceratechangerequested-event"></a>Evento MESourceRateChangeRequested
 
-Gerado por uma fonte de mídia para solicitar uma nova taxa de reprodução. O aplicativo deve chamar [**IMFRateControl:: SetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate) com a taxa solicitada. Uma fonte de mídia poderá gerar esse evento se não for possível continuar a reprodução na taxa atual.
+Gerado por uma fonte de mídia para solicitar uma nova taxa de reprodução. O aplicativo deve chamar [**IMFRateControl::SetRate**](/windows/desktop/api/mfidl/nf-mfidl-imfratecontrol-setrate) com a taxa solicitada. Uma fonte de mídia poderá agarr esse evento se não puder continuar a reprodução na taxa atual.
 
 ## <a name="event-values"></a>Valores de evento
 
-Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
+Os valores possíveis recuperados [**de IMFMediaEvent::GetValue**](/windows/desktop/api/mfobjects/nf-mfobjects-imfmediaevent-getvalue) incluem o seguinte.
 
 
 
-| VARTYPE           | Descrição                                             |
+| Vartype           | Descrição                                             |
 |-------------------|---------------------------------------------------------|
 | VT \_ R4<br/> | A nova taxa de reprodução solicitada.<br/> <br/> |
 
@@ -29,13 +29,13 @@ Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/des
 
 ## <a name="attributes"></a>Atributos
 
-Os atributos a seguir são definidos para este evento.
+Os atributos a seguir são definidos para esse evento.
 
 
 
 | Atributo                                                                    | Descrição                                                                       |
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [**o \_ evento MF \_ faz a \_ finação**](mf-event-do-thinning-attribute.md)<br/> | Especifica se a origem da mídia também solicita a fina.<br/> <br/> |
+| [**MF \_ EVENT \_ DO \_ THINNING**](mf-event-do-thinning-attribute.md)<br/> | Especifica se a fonte de mídia também solicita a afinação.<br/> <br/> |
 
 
 
@@ -45,9 +45,9 @@ Os atributos a seguir são definidos para este evento.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects.h (inclua Mfidl.h)</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Os atributos a seguir são definidos para este evento.
 
 <dl> <dt>
 
-[Eventos de Media Foundation](media-foundation-events.md)
+[Media Foundation eventos](media-foundation-events.md)
 </dt> </dl>
 
  

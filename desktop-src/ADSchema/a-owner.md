@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d416158fea3fd0e3dfbda1cd60b2543d3df16248
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f0ead422104e6abc310db14cc2d6d1fbe7e4f2d0508e7144ba4087dd1730793e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022464"
 ---
 # <a name="owner-attribute"></a>Atributo de proprietário
 
@@ -58,7 +58,7 @@ O nome distinto de um objeto que tem a propriedade de um objeto.
 | ID do link                | 44                                                                                        |
 | MAPI-Id                | \-                                                                                        |
 | System-Only            | Falso                                                                                     |
-| É de valor único       | True                                                                                      |
+| É de valor único       | Verdadeiro                                                                                      |
 | É indexado             | Falso                                                                                     |
 | No catálogo global      | Falso                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                              |
@@ -79,7 +79,7 @@ O nome distinto de um objeto que tem a propriedade de um objeto.
 | ID do link                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -100,7 +100,7 @@ O nome distinto de um objeto que tem a propriedade de um objeto.
 | ID do link                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -121,7 +121,7 @@ O nome distinto de um objeto que tem a propriedade de um objeto.
 | ID do link                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -142,7 +142,7 @@ O nome distinto de um objeto que tem a propriedade de um objeto.
 | ID do link                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -163,7 +163,7 @@ O nome distinto de um objeto que tem a propriedade de um objeto.
 | ID do link                | 44                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |

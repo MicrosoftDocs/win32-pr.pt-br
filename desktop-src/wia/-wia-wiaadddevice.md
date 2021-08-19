@@ -1,5 +1,5 @@
 ---
-description: A função WiaAddDevice invoca a interface do usuário do Assistente de Instalação do Scanner e da Câmera. É equivalente a executar &\# 0034;rundll32.execi.dll \_ AddDevice&\# 0034; no prompt de comando.
+description: A função WiaAddDevice invoca a interface do usuário do Assistente de Instalação do Scanner e da Câmera. É equivalente a executar &\# 0034;rundll32.exe \_ci.dll AddDevice&\# 0034; no prompt de comando.
 ms.assetid: 83a1e22c-d751-4c8e-8f39-ec987042c745
 title: Função WiaAddDevice (Wia.h)
 ms.topic: reference

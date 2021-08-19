@@ -6,12 +6,12 @@ keywords:
 - MCI_CLOSE comando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 824d156baa72ee404f29ae490d4d9816078f4d15
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 29f81ddaf42ef5509b55271159b8e36ac56584b92734a6b04e5b555041596530
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498076"
 ---
 # <a name="closing-a-device"></a>Fechando um dispositivo
 
@@ -20,13 +20,13 @@ O comando [**fechar**](close.md) ([**MCI \_ Close**](mci-close.md)) libera o ace
 Quando você fecha um dispositivo MCI externo que usa sua própria mídia em vez de arquivos (como áudio de CD), o driver deixa o dispositivo em seu modo atual de operação. Portanto, se você fechar um dispositivo de áudio de CD que está sendo executado, mesmo que o driver de dispositivo seja liberado da memória, o dispositivo de áudio de CD continuará a ser reproduzido até atingir o final de seu conteúdo.
 
 > [!Note]  
-> Fechar um aplicativo com dispositivos MCI abertos pode impedir que outros aplicativos usem esses dispositivos até que o Windows seja reiniciado.
+> fechar um aplicativo com dispositivos MCI abertos pode impedir que outros aplicativos usem esses dispositivos até que Windows seja reiniciado.
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

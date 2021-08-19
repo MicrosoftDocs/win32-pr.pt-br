@@ -25,7 +25,7 @@ Este tópico contém as seguintes seções:
 
 ## <a name="discovery-and-arbitration"></a>Descoberta e mediação
 
-Antes que uma imagem possa ser decodificada, é necessário encontrar um codec apropriado que possa decodificar esse formato de imagem. Na maioria dos sistemas, como os formatos de imagem com suporte são codificados, nenhum processo de descoberta é necessário. Como a plataforma WIC (Windows Imaging Component) é extensível, é necessário ser capaz de identificar o formato de uma imagem e corresponder a ele com um codec apropriado.
+Antes que uma imagem possa ser decodificada, é necessário encontrar um codec apropriado que possa decodificar esse formato de imagem. Na maioria dos sistemas, como os formatos de imagem com suporte são codificados, nenhum processo de descoberta é necessário. Como a plataforma Windows WIC (componente de imagens) é extensível, é necessário ser capaz de identificar o formato de uma imagem e corresponder a ele com um codec apropriado.
 
 Para dar suporte à descoberta em tempo de executar, cada formato de imagem deve ter um padrão de identificação que possa ser usado para identificar o decodificador apropriado para esse formato. (É altamente recomendável que, para novos formatos de arquivo, você use um GUID para o padrão de identificação, pois é garantido que ele seja exclusivo.) O padrão de identificação deve ser inserido em cada arquivo de imagem que esteja em conformidade com esse formato de imagem. Cada decodificador tem uma entrada do Registro que especifica o padrão de identificação ou os padrões dos formatos de imagem que ele pode decodificar. Quando um aplicativo precisa abrir uma imagem, ele solicita um decodificador do WIC. O WIC procura os decodificadores disponíveis no Registro e verifica cada entrada do Registro em busca de um padrão de identificação que corresponde ao padrão inserido no arquivo de imagem. Para obter mais informações sobre entradas do Registro do Decodificador, consulte Entradas do Registro [específicas do codificador](-wic-decoderregentries.md)
 
@@ -42,9 +42,9 @@ Depois que o decodificador apropriado tiver sido selecionado e instautado, o apl
 -   Notificações de progresso e suporte ao cancelamento
 -   Serviços de processamento brutos
 
-Os serviços de nível de contêiner incluem a recuperação da miniatura de nível superior (se há suporte), versão prévia, contextos de cores, paleta (se aplicável) e formato de contêiner, além de fornecer acesso aos quadros de imagem individuais dentro do contêiner. (Alguns contêineres contêm apenas um único quadro, enquanto outros, como TIFF (Formato de Arquivo de Imagem Marcada), podem conter vários quadros.) Esse conjunto de serviços também inclui o fornecimento de informações sobre o próprio decodificador e seus recursos em relação a um arquivo de imagem específico.
+Os serviços de nível de contêiner incluem a recuperação da miniatura de nível superior (se há suporte), versão prévia, contextos de cores, paleta (se aplicável) e formato de contêiner, bem como o fornecimento de acesso aos quadros de imagem individuais dentro do contêiner. (Alguns contêineres contêm apenas um único quadro, enquanto outros, como TIFF (Formato de Arquivo de Imagem Marcada), podem conter vários quadros.) Esse conjunto de serviços também inclui o fornecimento de informações sobre o próprio decodificador e seus recursos em relação a um arquivo de imagem específico.
 
-Quadros individuais têm suas próprias miniaturas e também podem ter seus próprios contextos de cor, paletas e outras propriedades, que são expostas no nível do quadro. No entanto, a operação mais importante executada no nível do quadro é a decodificação real dos bits de imagem para esse quadro.
+Quadros individuais têm suas próprias miniaturas e também podem ter seus próprios contextos de cores, paletas e outras propriedades, que são expostas no nível do quadro. No entanto, a operação mais importante executada no nível do quadro é a decodificação real dos bits de imagem para esse quadro.
 
 O WIC fornece leitores de metadados para os formatos de metadados mais comuns (IFD, EXIF, IPTC, XMP, APP0, APP1 e outros formatos) e também dá suporte à extensibilidade para formatos de metadados de terceiros. Isso libera o codec da responsabilidade de analisar metadados. No entanto, o codec é responsável por enumerar os blocos de metadados e solicitar um leitor de metadados para cada bloco. O WIC executa a descoberta para manipuladores de metadados da mesma maneira que faz para codecs, com base em um padrão no header de bloco que corresponde a um padrão na entrada do registro do manipulador de metadados. Para obter mais informações, consulte As Entradas do Registro [específicas do codificador](-wic-decoderregentries.md)
 
@@ -52,7 +52,7 @@ Os decodificadores não são necessários para dar suporte nativo a operações 
 
 As notificações de progresso e o suporte ao cancelamento permitem que um aplicativo solicite notificações de progresso para operações demoradas e também permita que o aplicativo dê ao usuário a oportunidade de cancelar uma operação que está demorando muito. Isso é importante porque, se um usuário não puder cancelar uma operação, ele poderá sentir que o processo foi suspenso e tentar cancelá-lo fechando o aplicativo.
 
-Essas interfaces são descritas em detalhes na seção sobre [Implementando um WIC-Enabled Decodificador](-wic-implementingwicdecoder.md).
+Essas interfaces são descritas em detalhes na seção sobre Como [implementar um WIC-Enabled decodificador](-wic-implementingwicdecoder.md).
 
 Os serviços de processamento bruto incluem o ajuste das configurações da câmera, como exposição, contraste e ajuste, ou alteração do espaço de cores antes de processar os bits brutos.
 
@@ -77,7 +77,7 @@ Essas interfaces são descritas em detalhes na seção sobre [Implementando um c
 
 Um codec do WIC é instautado para lidar com uma única imagem e geralmente tem um tempo de vida curto. Ele é criado quando uma imagem é carregada e é liberada quando a imagem é fechada. Um aplicativo pode usar um grande número de codecs simultaneamente com tempos de vida sobrepostos (pense em rolar por um diretório que contém centenas de imagens) e vários aplicativos podem estar fazendo isso ao mesmo tempo.
 
-Embora alguns codecs tenham um tempo de vida com escopo para o tempo de vida do processo em que eles estão, esse não é o caso com codecs WIC. O Windows Vista Galeria de Fotos, o Windows Explorer e o Visualizador de Fotos, bem como vários outros aplicativos, são construídos no WIC e usarão seu codec para exibir imagens e miniaturas. Se o tempo de vida do codec tiver como escopo o tempo de vida do processo, sempre que uma imagem ou miniatura for exibida no Windows Vista Explorer, o codec instaurou para decodificar essa imagem permaneceria na memória até a próxima vez que o usuário reiniciasse seu computador. Se o codec nunca for descarregado, seus recursos serão, na verdade, "vazados" porque não podem ser usados por nenhum outro componente no sistema.
+Embora alguns codecs tenham um tempo de vida com escopo para o tempo de vida do processo em que eles estão, esse não é o caso com codecs WIC. O Windows Vista Galeria de Fotos, Windows Explorer e Visualizador de Fotos, bem como vários outros aplicativos, são construídos no WIC e usarão seu codec para exibir imagens e miniaturas. Se o tempo de vida do codec tiver como escopo o tempo de vida do processo, sempre que uma imagem ou miniatura for exibida no Windows Vista Explorer, o codec instaurou para decodificar essa imagem permaneceria na memória até a próxima vez que o usuário reiniciasse seu computador. Se o codec nunca for descarregado, seus recursos serão, na verdade, "vazados" porque não podem ser usados por nenhum outro componente no sistema.
 
 ## <a name="how-to-wic-enabled-a-codec"></a>Como habilitar um Codec habilitado para WIC
 
@@ -97,19 +97,19 @@ Objetos dentro de um MTA (Multi-Threaded Apartment) podem ser chamados simultane
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Introdução (como escrever um CODEC de WIC-Enabled)](-wic-howtowriteacodec-intro.md)
+[Introdução (Como escrever uma WIC-Enabled CODEC)](-wic-howtowriteacodec-intro.md)
 </dt> <dt>
 
-[Implementando um decodificador de WIC-Enabled](-wic-implementingwicdecoder.md)
+[Implementando um WIC-Enabled decodificador](-wic-implementingwicdecoder.md)
 </dt> <dt>
 
-[Como escrever um CODEC de WIC-Enabled](-wic-howtowriteacodec.md)
+[Como escrever um codec WIC-Enabled código](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Windows Visão geral do componente de geração de imagens](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de imagens](-wic-about-windows-imaging-codec.md)
 </dt> <dt>
 
 [Visão geral dos metadados do WIC](-wic-about-metadata.md)
