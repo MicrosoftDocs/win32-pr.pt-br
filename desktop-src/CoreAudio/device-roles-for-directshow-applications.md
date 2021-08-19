@@ -1,32 +1,32 @@
 ---
-description: Funções de dispositivo para aplicativos do DirectShow
+description: funções de dispositivo para aplicativos DirectShow
 ms.assetid: 54f42bda-b4a0-465c-9ce6-9102d2908776
-title: Funções de dispositivo para aplicativos do DirectShow
+title: funções de dispositivo para aplicativos DirectShow
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df8b43ddd56870b65fc9ec1e3bb600e8e6b79528
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 56e22a86e5537f11b6b4153753841a2682b5ac77a043a3fa74538714a2540377
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104456884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957355"
 ---
-# <a name="device-roles-for-directshow-applications"></a>Funções de dispositivo para aplicativos do DirectShow
+# <a name="device-roles-for-directshow-applications"></a>funções de dispositivo para aplicativos DirectShow
 
 > [!Note]  
-> A [API MMDevice](mmdevice-api.md) dá suporte a funções de dispositivo. No entanto, a interface do usuário no Windows Vista não implementa o suporte para esse recurso. O suporte da interface do usuário para funções de dispositivo pode ser implementado em uma versão futura do Windows. Para obter mais informações, consulte [funções de dispositivo no Windows Vista](device-roles-in-windows-vista.md).
+> A [API MMDevice](mmdevice-api.md) dá suporte a funções de dispositivo. no entanto, a interface do usuário no Windows Vista não implementa o suporte para esse recurso. O suporte da interface do usuário para funções de dispositivo pode ser implementado em uma versão futura do Windows. para obter mais informações, consulte [funções de dispositivo no Windows Vista](device-roles-in-windows-vista.md).
 
  
 
-A API do DirectShow não fornece um meio para um aplicativo selecionar o [dispositivo de ponto de extremidade de áudio](audio-endpoint-devices.md) atribuído a uma [função de dispositivo](device-roles.md)específica. No entanto, no Windows Vista, as APIs de áudio principais podem ser usadas em conjunto com um aplicativo do DirectShow para habilitar a seleção de dispositivos com base na função do dispositivo. Com a ajuda das principais APIs de áudio, o aplicativo pode:
+a API DirectShow não fornece um meio para um aplicativo selecionar o dispositivo de [ponto de extremidade de áudio](audio-endpoint-devices.md) atribuído a uma [função de dispositivo](device-roles.md)específica. no entanto, no Windows Vista, as APIs de áudio principais podem ser usadas em conjunto com um aplicativo DirectShow para habilitar a seleção de dispositivos com base na função do dispositivo. Com a ajuda das principais APIs de áudio, o aplicativo pode:
 
 -   Identifique o dispositivo de ponto de extremidade de áudio que o usuário atribuiu a uma função de dispositivo específica.
--   Crie um filtro de renderização de áudio do DirectShow com uma interface [**IBaseFilter**](/windows/desktop/api/strmif/nn-strmif-ibasefilter) que encapsula o dispositivo de ponto de extremidade de áudio.
--   Crie um grafo do DirectShow que incorpore o filtro.
+-   crie um filtro de renderização de áudio DirectShow com uma interface [**IBaseFilter**](/windows/desktop/api/strmif/nn-strmif-ibasefilter) que encapsula o dispositivo de ponto de extremidade de áudio.
+-   crie um grafo DirectShow que incorpore o filtro.
 
-Para obter mais informações sobre o DirectShow e o [**IBaseFilter**](/windows/desktop/api/strmif/nn-strmif-ibasefilter), consulte a documentação do SDK do Windows.
+para obter mais informações sobre DirectShow e [**IBaseFilter**](/windows/desktop/api/strmif/nn-strmif-ibasefilter), consulte a documentação do SDK do Windows.
 
-O exemplo de código a seguir mostra como criar um filtro de renderização de áudio do DirectShow que encapsula o dispositivo de ponto de extremidade de renderização atribuído a uma função de dispositivo específica:
+o exemplo de código a seguir mostra como criar um DirectShow filtro de renderização de áudio que encapsula o dispositivo de ponto de extremidade de renderização atribuído a uma função de dispositivo específica:
 
 
 ```C++

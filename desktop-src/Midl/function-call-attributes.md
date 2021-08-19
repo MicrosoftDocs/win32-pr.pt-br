@@ -6,12 +6,12 @@ keywords:
 - MIDL, atributos, chamada de função IDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d4d53407abf464d7b201c49d9cb2b1d3f3625b9d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4a3800b62bb6b94aac330ecf0b06761d62227a4ed6100f2fabdde5b61cd952d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119895306"
 ---
 # <a name="function-call-attributes"></a>Atributos de chamada de função
 
@@ -26,18 +26,18 @@ Os programas podem usar esses atributos em funções individuais dentro da inter
 | [**difusor**](broadcast.md)   | A chamada de procedimento remoto deve ser enviada a todos os servidores na rede. O cliente aceita o primeiro retorno, as respostas subsequentes de outros servidores são descartadas.                                                                                    |
 | [**idempotente**](idempotent.md) | A chamada não altera o estado e retorna as mesmas informações cada vez que é chamada com os mesmos parâmetros de entrada.                                                                                                                                     |
 | [**retorno de chamada**](callback.md)     | Designa uma função que reside no aplicativo cliente, que o servidor pode chamar para obter informações do cliente.                                                                                                                             |
-| [**chamar \_ como**](call-as.md)      | Mapeia uma função não Remotable para uma chamada de procedimento remoto.                                                                                                                                                                                                   |
+| [**chamar \_ como**](call-as.md)      | Mapas uma função não remotable para uma chamada de procedimento remoto.                                                                                                                                                                                                   |
 | [**local**](local.md)           | Designa um procedimento local para o qual MIDL não gere código stub.                                                                                                                                                                                   |
 
 
 
- 
+ 
 
 Em interfaces que não são de [**objeto**](object.md) , você também pode aplicar o atributo de [**\_ identificador de contexto**](context-handle.md) a uma função para especificar características do valor de retorno.
 
- 
+ 
 
- 
+ 
 
 
 

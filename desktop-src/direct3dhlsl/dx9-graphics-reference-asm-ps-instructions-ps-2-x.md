@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 047067d26f9b85ef981a007059d9f2e87ae28ce3
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f3e1fcb16cace82118d153412ba5471876d4ebcc58c342466ff86db016189a28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104967202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119744666"
 ---
 # <a name="ps_2_x-instructions"></a>Instruções do PS \_ 2 \_ x
 
@@ -26,14 +26,14 @@ Há vários tipos de instruções de sombreador de pixel, como mostrado na tabel
 -   Instalação – um sombreador de pixel deve ter uma instrução de versão e deve ser a primeira instrução.
 -   Aritmética – essas instruções fornecem as operações matemáticas em um sombreador.
 -   Textura-essas instruções são usadas para carregar e obter amostras de dados de textura e modificar coordenadas de textura.
--   Controle de fluxo-essas instruções fornecem controle de fluxo estático e dinâmico para a execução de instruções.
+-   controle de Flow-essas instruções fornecem controle de fluxo estático e dinâmico para a execução de instruções.
 -   Novas-essas instruções são novas nesta versão.
 
 ## <a name="instruction-set"></a>Conjunto de instruções
 
 
 
-| Name                                                             | Descrição                                                                                      | Slots de instrução | Instalação | Aritmético | Textura | Controle de fluxo | Novo |
+| Nome                                                             | Descrição                                                                                      | Slots de instrução | Instalação | Aritmético | Textura | Controle de fluxo | Novo |
 |------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|-------------------|-------|------------|---------|--------------|-----|
 | [ABS-PS](abs---ps.md)                                         | Valor absoluto                                                                                   | 1                 |       | x          |         |              |     |
 | [Adicionar-PS](add---ps.md)                                         | Adicionar dois vetores                                                                                  | 1                 |       | x          |         |              |     |
@@ -53,58 +53,58 @@ Há vários tipos de instruções de sombreador de pixel, como mostrado na tabel
 | [dp2add-PS](dp2add---ps.md)                                   | produto 2D dot e adicionar                                                                           | 2                 |       | x          |         |              |     |
 | [DP3-PS](dp3---ps.md)                                         | produto 3D dot                                                                                   | 1                 |       | x          |         |              |     |
 | [DP4-PS](dp4---ps.md)                                         | produto do ponto de 4D                                                                                   | 1                 |       | x          |         |              |     |
-| [DSX-PS](dsx---ps.md)                                         | Taxa de alteração na direção de x                                                                | 2                 |       | x          |         |              | x   |
-| [DSY-PS](dsy---ps.md)                                         | Taxa de alteração na direção y                                                                | 2                 |       | x          |         |              | x   |
-| [else-PS](else---ps.md)                                       | Iniciar um bloco else                                                                              | 1                 |       |            |         | x            | x   |
-| [endif-PS](endif---ps.md)                                     | Terminar um if... bloco else                                                                           | 1                 |       |            |         | x            | x   |
-| [endrep-PS](endrep---ps.md)                                   | Fim de um bloco de repetição                                                                            | 2                 |       |            |         | x            | x   |
-| [exp-PS](exp---ps.md)                                         | Precisão total 2<sup>x</sup>                                                                     | 1                 |       | x          |         |              |     |
-| [FRC-PS](frc---ps.md)                                         | Componente fracionário                                                                             | 1                 |       | x          |         |              |     |
-| [se bool-PS](if-bool---ps.md)                                 | Iniciar um bloco If                                                                                | 3                 |       |            |         | x            | x   |
-| [Se \_ comp-PS](if-comp---ps.md)                                | Iniciar um bloco If com uma comparação                                                              | 3                 |       |            |         | x            | x   |
-| [se Pred-PS](if-pred---ps.md)                                 | Iniciar um bloco If com predicação                                                               | 3                 |       |            |         | x            | x   |
-| [rótulo-PS](label---ps.md)                                     | Label                                                                                            | 0                 |       |            |         | x            | x   |
-| [log-PS](log---ps.md)                                         | ₂ de log de precisão total (x)                                                                           | 1                 |       | x          |         |              |     |
-| [LRP-PS](lrp---ps.md)                                         | Interpolação linear                                                                               | 2                 |       | x          |         |              |     |
-| [M3X2-PS](m3x2---ps.md)                                       | 3x2 multiplicar                                                                                     | 2                 |       | x          |         |              |     |
-| [m3x3-PS](m3x3---ps.md)                                       | multiplicar a 3x3                                                                                     | 3                 |       | x          |         |              |     |
-| [M3x4-PS](m3x4---ps.md)                                       | 3x4 multiplicar                                                                                     | 4                 |       | x          |         |              |     |
-| [m4x3-PS](m4x3---ps.md)                                       | 4x3 multiplicar                                                                                     | 3                 |       | x          |         |              |     |
-| [m4x4-PS](m4x4---ps.md)                                       | 4x4 multiplicar                                                                                     | 4                 |       | x          |         |              |     |
-| [Mad-PS](mad---ps.md)                                         | Multiplicar e adicionar                                                                                 | 1                 |       | x          |         |              |     |
-| [máximo de PS](max---ps.md)                                         | Máximo                                                                                          | 1                 |       | x          |         |              |     |
-| [min-PS](min---ps.md)                                         | Mínimo                                                                                          | 1                 |       | x          |         |              |     |
-| [MOV-PS](mov---ps.md)                                         | Mover                                                                                             | 1                 |       | x          |         |              |     |
-| [Mul-PS](mul---ps.md)                                         | Multiplicar                                                                                         | 1                 |       | x          |         |              |     |
-| [Nop-PS](nop---ps.md)                                         | Nenhuma operação                                                                                     | 1                 |       | x          |         |              |     |
-| [NRM-PS](nrm---ps.md)                                         | Normaliza                                                                                        | 3                 |       | x          |         |              |     |
-| [pow-PS](pow---ps.md)                                         | x<sup>y</sup>                                                                                    | 3                 |       | x          |         |              |     |
-| [profissionais](ps---ps.md)                                                | Versão                                                                                          | 0                 | x     |            |         |              |     |
-| [RCP-PS](rcp---ps.md)                                         | Recíproco                                                                                       | 1                 |       | x          |         |              |     |
-| [Rep-PS](rep---ps.md)                                         | Repetir                                                                                           | 3                 |       |            |         | x            | x   |
-| [RET-PS](ret---ps.md)                                         | Fim de uma sub-rotina                                                                              | 1                 |       |            |         | x            | x   |
-| [RSQ-PS](rsq---ps.md)                                         | Raiz quadrada recíproca                                                                           | 1                 |       | x          |         |              |     |
-| [comp de setp \_](setp-comp---ps.md)                                 | Definir o registro de predicado                                                                       | 1                 |       |            |         | x            | x   |
-| [Sincos-PS](sincos---ps.md)                                   | Seno e cosseno                                                                                  | 8                 |       | x          |         |              |     |
-| [sub-PS](sub---ps.md)                                         | Subtrair                                                                                         | 1                 |       | x          |         |              |     |
-| [texkill-PS](texkill---ps.md)                                 | Renderizar Kill pixel                                                                                | Veja a observação 1        |       |            | x       |              |     |
-| [texld-PS \_ 2 \_ 0 e superior](texld---ps-2-0.md)                    | Amostra de uma textura                                                                                 | Confira a observação 2        |       |            | x       |              |     |
-| [texldb-PS](texldb---ps.md)                                   | Amostragem de textura com tendência de nível de detalhe do componente w-                                      | Veja a observação 3        |       |            | x       |              |     |
-| [texldd-PS](texldd---ps.md)                                   | Amostragem de textura com gradientes fornecidos pelo usuário                                                    | 3                 |       |            | x       |              | x   |
-| [texldp-PS](texldp---ps.md)                                   | Amostragem de textura com divisão projetada pelo componente w-                                           | Veja a observação 4        |       |            | x       |              |     |
+| [dsx – ps](dsx---ps.md)                                         | Taxa de alteração na direção x                                                                | 2                 |       | x          |         |              | x   |
+| [dsy - ps](dsy---ps.md)                                         | Taxa de alteração na direção y                                                                | 2                 |       | x          |         |              | x   |
+| [else - ps](else---ps.md)                                       | Iniciar um bloco else                                                                              | 1                 |       |            |         | x            | x   |
+| [endif - ps](endif---ps.md)                                     | Encerrar um se... bloco else                                                                           | 1                 |       |            |         | x            | x   |
+| [endrep – ps](endrep---ps.md)                                   | Fim de um bloco de repetição                                                                            | 2                 |       |            |         | x            | x   |
+| [exp - ps](exp---ps.md)                                         | Precisão completa 2<sup>x</sup>                                                                     | 1                 |       | x          |         |              |     |
+| [frc – ps](frc---ps.md)                                         | Componente fracionado                                                                             | 1                 |       | x          |         |              |     |
+| [se bool - ps](if-bool---ps.md)                                 | Iniciar um bloco if                                                                                | 3                 |       |            |         | x            | x   |
+| [if \_ comp - ps](if-comp---ps.md)                                | Iniciar um bloco if com uma comparação                                                              | 3                 |       |            |         | x            | x   |
+| [if pred – ps](if-pred---ps.md)                                 | Iniciar um bloco if com predication                                                               | 3                 |       |            |         | x            | x   |
+| [label - ps](label---ps.md)                                     | Rótulo                                                                                            | 0                 |       |            |         | x            | x   |
+| [log - ps](log---ps.md)                                         | Log de precisão completa(x)                                                                           | 1                 |       | x          |         |              |     |
+| [lrp – ps](lrp---ps.md)                                         | Interpolação linear                                                                               | 2                 |       | x          |         |              |     |
+| [m3x2 – ps](m3x2---ps.md)                                       | Multiplicação de 3x2                                                                                     | 2                 |       | x          |         |              |     |
+| [m3x3 – ps](m3x3---ps.md)                                       | Multiplicação de 3x3                                                                                     | 3                 |       | x          |         |              |     |
+| [m3x4 – ps](m3x4---ps.md)                                       | Multiplicação de 3x4                                                                                     | 4                 |       | x          |         |              |     |
+| [m4x3 – ps](m4x3---ps.md)                                       | Multiplicação de 4x3                                                                                     | 3                 |       | x          |         |              |     |
+| [m4x4 – ps](m4x4---ps.md)                                       | Multiplicação de 4x4                                                                                     | 4                 |       | x          |         |              |     |
+| [mad - ps](mad---ps.md)                                         | Multiplicar e adicionar                                                                                 | 1                 |       | x          |         |              |     |
+| [max - ps](max---ps.md)                                         | Máximo                                                                                          | 1                 |       | x          |         |              |     |
+| [min - ps](min---ps.md)                                         | Mínimo                                                                                          | 1                 |       | x          |         |              |     |
+| [mov - ps](mov---ps.md)                                         | Mover                                                                                             | 1                 |       | x          |         |              |     |
+| [mul - ps](mul---ps.md)                                         | Multiplicar                                                                                         | 1                 |       | x          |         |              |     |
+| [nop – ps](nop---ps.md)                                         | Nenhuma operação                                                                                     | 1                 |       | x          |         |              |     |
+| [nrm - ps](nrm---ps.md)                                         | Normalizar                                                                                        | 3                 |       | x          |         |              |     |
+| [pow - ps](pow---ps.md)                                         | x<sup>y</sup>                                                                                    | 3                 |       | x          |         |              |     |
+| [ps](ps---ps.md)                                                | Versão                                                                                          | 0                 | x     |            |         |              |     |
+| [rcp - ps](rcp---ps.md)                                         | Recíproca                                                                                       | 1                 |       | x          |         |              |     |
+| [rep - ps](rep---ps.md)                                         | Repetir                                                                                           | 3                 |       |            |         | x            | x   |
+| [ret – ps](ret---ps.md)                                         | Fim de uma sub-rotina                                                                              | 1                 |       |            |         | x            | x   |
+| [rsq - ps](rsq---ps.md)                                         | Raiz quadrada recíproca                                                                           | 1                 |       | x          |         |              |     |
+| [setp \_ comp](setp-comp---ps.md)                                 | Definir o registro de predicado                                                                       | 1                 |       |            |         | x            | x   |
+| [sincos – ps](sincos---ps.md)                                   | Seno e cosseno                                                                                  | 8                 |       | x          |         |              |     |
+| [sub - ps](sub---ps.md)                                         | Subtrair                                                                                         | 1                 |       | x          |         |              |     |
+| [texkill – ps](texkill---ps.md)                                 | Renderização de pixel de ressarção                                                                                | Consulte a observação 1        |       |            | x       |              |     |
+| [texld - ps \_ 2 \_ 0 e up](texld---ps-2-0.md)                    | Amostra de uma textura                                                                                 | Confira a observação 2        |       |            | x       |              |     |
+| [texldb – ps](texldb---ps.md)                                   | Amostragem de textura com desvio de nível de detalhe do componente w                                      | Consulte a observação 3        |       |            | x       |              |     |
+| [texldd – ps](texldd---ps.md)                                   | Amostragem de textura com gradientes fornecidos pelo usuário                                                    | 3                 |       |            | x       |              | x   |
+| [texldp – ps](texldp---ps.md)                                   | Amostragem de textura com divisão projetiva por componente w                                           | confira a Observação 4        |       |            | x       |              |     |
 
 
 
- 
+ 
 
 Observações:
 
-1.  Se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) for definido, slots = 2; caso contrário, Slots = 1.
-2.  Se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) for definido e a textura for um mapa de cubo, slots = 4; caso contrário, slot = 1.
-3.  Se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) for definido, slots = 6; caso contrário, Slots = 1.
-4.  Se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) não for definido, Slots = 1; caso contrário:
-    -   Se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) for definido e a textura for um mapa de cubo, slots = 4.
-    -   Se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) for definido e a textura não for um mapa de cubo, Slots = 3.
+1.  Se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) estiver definido, slots = 2; caso contrário, slots = 1.
+2.  Se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) estiver definido e a textura for um mapa de cubo, slots = 4; caso contrário, slot = 1.
+3.  Se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) estiver definido, slots = 6; caso contrário, slots = 1.
+4.  Se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) não estiver definido, slots = 1; caso contrário:
+    -   se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) estiver definido e a textura for um mapa de cubo, slots = 4.
+    -   se [**D3DD3DPSHADERCAPS2 \_ 0 \_ NOTEXINSTRUCTIONLIMIT**](/windows/desktop/api/d3d9caps/ns-d3d9caps-d3dpshadercaps2_0) estiver definido e a textura não for um mapa de cubo, slots = 3.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -113,6 +113,6 @@ Observações:
 [Instruções do sombreador de pixel](dx9-graphics-reference-asm-ps-instructions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -1,5 +1,5 @@
 ---
-description: No Gerenciador de autorização, uma operação é uma função ou um método de baixo nível de um aplicativo.
+description: No Gerenciador de Autorização, uma operação é uma função ou método de baixo nível de um aplicativo.
 ms.assetid: 6b35d25e-150c-4760-b358-fa517a00dd79
 title: Definindo operações no script
 ms.topic: article
@@ -18,9 +18,9 @@ ms.locfileid: "119994445"
 ---
 # <a name="defining-operations-in-script"></a>Definindo operações no script
 
-No Gerenciador de autorização, uma operação é uma função ou um método de baixo nível de um aplicativo. Essas operações são agrupadas como tarefas. Os usuários do aplicativo solicitam permissão para concluir tarefas. Uma operação é representada por um objeto [**IAzOperation**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) . Para obter mais informações sobre operações, consulte [operações e tarefas](operations-and-tasks.md).
+No Gerenciador de Autorização, uma operação é uma função ou método de baixo nível de um aplicativo. Essas operações são agrupadas como tarefas. Os usuários do aplicativo solicitam permissão para concluir tarefas. Uma operação é representada por um [**objeto IAzOperation.**](/windows/desktop/api/Azroles/nn-azroles-iazoperation) Para obter mais informações sobre operações, consulte [Operações e tarefas](operations-and-tasks.md).
 
-O exemplo a seguir mostra como definir operações em um repositório de política de autorização. O exemplo supõe que haja um repositório de política XML existente chamado MyStore.xml no diretório raiz da unidade C e que esse repositório contenha um aplicativo chamado despesas.
+O exemplo a seguir mostra como definir operações em um armazenamento de política de autorização. O exemplo presume que há um armazenamento de políticas XML existente chamado MyStore.xml no diretório raiz da unidade C e que esse armazenamento contém um aplicativo chamado Expense.
 
 
 ```VB

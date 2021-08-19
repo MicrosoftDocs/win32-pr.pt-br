@@ -6,22 +6,22 @@ keywords:
 - efeito de borda
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 49fb43ae8b3e9c4eb449a8231f8b4ffcacf7658b
-ms.sourcegitcommit: ee06501cc29132927ade9813e0888aaa4decc487
+ms.openlocfilehash: 5ce125a96730ee59f63b18cfd1a08abd2432af6f3fdc6b5f06cfc2e9272a7a3c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "104506314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119928976"
 ---
 # <a name="border-effect"></a>Efeito de borda
 
-Use o efeito de borda para estender uma imagem das bordas. Você pode usar esse efeito para repetir os pixels das bordas da imagem, encapsular os pixels da extremidade oposta da imagem ou espelhar os pixels na borda do bitmap para estender a região do bitmap.
+Use o efeito de borda para estender uma imagem das bordas. Você pode usar esse efeito para repetir os pixels das bordas da imagem, envolver os pixels da extremidade oposta da imagem ou espelhar os pixels na borda do bitmap para estender a região do bitmap.
 
 O CLSID para esse efeito é CLSID \_ D2D1Border.
 
 ## <a name="example-images"></a>Imagens de exemplo
 
-Os exemplos aqui mostram a saída do efeito de borda usando cada modo. O tamanho de saída é infinito, mas essas imagens de exemplo são cortadas para duas vezes o tamanho.
+Os exemplos aqui mostram a saída do efeito de borda usando cada modo. O tamanho da saída é infinito, mas essas imagens de exemplo são cortadas para o dobro do tamanho.
 
 ### <a name="mirror"></a>Espelho
 
@@ -30,7 +30,7 @@ Os exemplos aqui mostram a saída do efeito de borda usando cada modo. O tamanho
 | Antes                                                    |
 |-----------------------------------------------------------|
 | ![Captura de tela que mostra a imagem antes do efeito.](images/border-before.jpg) |
-| After (após)                                                     |
+| Depois                                                     |
 | ![Captura de tela que mostra a imagem após a transformação.](images/10-border.png)   |
 
 
@@ -43,9 +43,9 @@ Os exemplos aqui mostram a saída do efeito de borda usando cada modo. O tamanho
 
 | Antes                                                        |
 |---------------------------------------------------------------|
-| ![Captura de tela que mostra a imagem antes do efeito de um fixe.](images/border-before.jpg)     |
-| After (após)                                                         |
-| ![Captura de tela que mostra a imagem após a transformação de um fixe.](images/10-border-clamp.png) |
+| ![Captura de tela que mostra a imagem antes do efeito de um fixador.](images/border-before.jpg)     |
+| Depois                                                         |
+| ![Captura de tela que mostra a imagem após a transformação de um fixador.](images/10-border-clamp.png) |
 
 
 
@@ -57,9 +57,9 @@ Os exemplos aqui mostram a saída do efeito de borda usando cada modo. O tamanho
 
 | Antes                                                       |
 |--------------------------------------------------------------|
-| ![Captura de tela que mostra a imagem antes do efeito de um encapsulamento.](images/border-before.jpg)    |
-| After (após)                                                        |
-| ![Captura de tela que mostra a imagem após a transformação de um encapsulamento.](images/10-border-wrap.png) |
+| ![Captura de tela que mostra a imagem antes do efeito de um wrap.](images/border-before.jpg)    |
+| Depois                                                        |
+| ![Captura de tela que mostra a imagem após a transformação para um wrap.](images/10-border-wrap.png) |
 
 
 
@@ -81,14 +81,14 @@ m_d2dContext->EndDraw();
 
 
 
-## <a name="effect-properties"></a>Propriedades do efeito
+## <a name="effect-properties"></a>Propriedades de efeito
 
 
 
 | Nome de exibição e enumeração de índice                                  | Descrição                                                                                                                                                                                                                                                            |
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Modo de borda X<br/> D2D1 \_ Border \_ prop \_ modo de borda \_ \_ X<br/> | O modo de borda na direção X para o efeito. Você pode definir isso como fixe, wrap ou Mirror. Consulte [modos de borda](#edge-modes) para obter mais informações.<br/> O tipo é o modo de borda de borda D2D1 \_ \_ \_ .<br/> O valor padrão é D2D1 \_ borda do modo de borda \_ \_ \_ fixe.<br/> |
-| Modo de borda Y<br/> D2D1 \_ Border \_ prop \_ modo de borda \_ \_ Y<br/> | O modo de borda na direção Y para o efeito. Você pode definir isso como fixe, wrap ou Mirror. Consulte [modos de borda](#edge-modes) para obter mais informações.<br/> O tipo é o modo de borda de borda D2D1 \_ \_ \_ .<br/> O valor padrão é D2D1 \_ borda do modo de borda \_ \_ \_ fixe.<br/> |
+| Modo de borda X<br/> D2D1 \_ BORDER \_ PROP \_ EDGE \_ MODE \_ X<br/> | O modo de borda na direção X para o efeito. Você pode definir isso como fixação, quebra ou espelho. Consulte [Modos de borda para](#edge-modes) obter mais informações.<br/> O tipo é D2D1 \_ BORDER \_ EDGE \_ MODE.<br/> O valor padrão é D2D1 \_ BORDER \_ EDGE MODE \_ \_ FIX.<br/> |
+| Modo de borda Y<br/> D2D1 \_ BORDER \_ PROP \_ EDGE \_ MODE \_ Y<br/> | O modo de borda na direção Y para o efeito. Você pode definir isso como fixação, quebra ou espelho. Consulte [Modos de borda para](#edge-modes) obter mais informações.<br/> O tipo é D2D1 \_ BORDER \_ EDGE \_ MODE.<br/> O valor padrão é D2D1 \_ BORDER \_ EDGE MODE \_ \_ FIX.<br/> |
 
 
 
@@ -100,9 +100,9 @@ m_d2dContext->EndDraw();
 
 | Nome de exibição e enumeração de índice                            | Descrição                                          |
 |---------------------------------------------------------------|------------------------------------------------------|
-| Clamp<br/> Modo de borda de \_ borda d2d1 \_ \_ \_ fixe<br/>   | Repete os pixels das bordas da imagem.      |
-| Encapsular<br/> \_ \_ \_ Encapsulamento do modo \_ de borda de borda d2d1<br/>     | Usa pixels da borda final oposta da imagem. |
-| Espelho<br/> \_Espelho do \_ \_ modo \_ de borda de borda d2d1<br/> | Reflete pixels sobre a borda da imagem.         |
+| Clamp<br/> FIXE NO MODO DE BORDA D2D1 \_ \_ BORDER \_ \_ EDGE<br/>   | Repete os pixels das bordas da imagem.      |
+| Encapsular<br/> D2D1 \_ BORDER \_ EDGE \_ MODE \_ WRAP<br/>     | Usa pixels da borda de extremidade oposta da imagem. |
+| Espelho<br/> D2D1 \_ BORDER \_ EDGE \_ MODE \_ MIRROR<br/> | Reflete pixels sobre a borda da imagem.         |
 
 
 
@@ -110,7 +110,7 @@ m_d2dContext->EndDraw();
 
 ## <a name="output-bitmap"></a>Bitmap de saída
 
-O tamanho do bitmap de saída é infinito para todas as entradas, exceto uma imagem de entrada de tamanho 0. Se a altura ou a largura de uma imagem de entrada for 0, o tamanho de saída será 0.
+O tamanho do bitmap de saída é infinito para todas as entradas, exceto uma imagem de entrada de tamanho 0. Se a altura ou a largura de uma imagem de entrada for 0, o tamanho da saída será 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -118,10 +118,10 @@ O tamanho do bitmap de saída é infinito para todas as entradas, exceto uma ima
 
 | Requisito | Valor |
 |--------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| Servidor mínimo com suporte | Windows 8 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ \| aplicativos da Windows Store\] |
-| parâmetro                   | d2d1effects. h                                                                      |
-| Biblioteca                  | d2d1. lib, dxguid. lib                                                               |
+| Cliente mínimo com suporte | Windows 8 e Atualização de Plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Servidor mínimo com suporte | Windows 8 e Atualização de Plataforma para Windows 7 aplicativos da área de trabalho \[ \| Windows Store\] |
+| Cabeçalho                   | d2d1effects.h                                                                      |
+| Biblioteca                  | d2d1.lib, dxguid.lib                                                               |
 
 
 

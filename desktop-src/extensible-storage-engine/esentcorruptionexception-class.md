@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a6914c2bf133a1050e3e3800e5c113c6cac1a11f
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: f0ac3d1884f41602490af23e3d63a388cd4d28e56fe92d80055ad8aaf462e0ee
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104172427"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120020896"
 ---
 # <a name="esentcorruptionexception-class"></a>Classe EsentCorruptionException
 
@@ -38,7 +38,7 @@ Classe base para exceções de corrupção.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  
@@ -79,7 +79,7 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 ## <a name="derived-types"></a>Tipos derivados
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentDataException](./esentdataexception-class.md)  

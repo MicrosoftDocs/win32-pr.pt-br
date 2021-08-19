@@ -1,6 +1,6 @@
 ---
 title: Interface IVMVirtualPC (VPCCOMInterfaces. h)
-description: Define o objeto de aplicativo do Windows Virtual PC de nível superior. Todos os outros objetos da interface do Windows Virtual PC são recuperados por meio desse objeto.
+description: define o objeto de aplicativo Windows Virtual PC de nível superior. todos os outros objetos de interface do Virtual PC Windows são recuperados por meio desse objeto.
 ms.assetid: 519d3f1b-0a72-4c67-a2d9-124fda6c8b7a
 keywords:
 - Virtual PC de interface IVMVirtualPC
@@ -15,18 +15,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d674fd1cbbe6c51881d15f91f0ebfb20f4f6749
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 69dd5eec832e95b2b93ff0fb0bee026428a937fa277f86ff14ef672bc66e0dd6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120124646"
 ---
 # <a name="ivmvirtualpc-interface"></a>Interface IVMVirtualPC
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Define o objeto de aplicativo do Windows Virtual PC de nível superior. Todos os outros objetos da interface do Windows Virtual PC são recuperados por meio desse objeto.
+define o objeto de aplicativo Windows Virtual PC de nível superior. todos os outros objetos de interface do Virtual PC Windows são recuperados por meio desse objeto.
 
 O **IVMVirtualPC** pode notificar os clientes sobre eventos usando a interface de saída do [**IVMVirtualPCEvents**](ivmvirtualpcevents.md) .
 
@@ -86,15 +86,15 @@ A interface **IVMVirtualPC** tem essas propriedades.
 | [**MaximumParallelPortsPerVM**](ivmvirtualpc-maximumparallelportspervm.md)<br/>     | Somente leitura<br/>  | O número máximo de portas paralelas por máquina virtual.<br/>                                                                                  |
 | [**MaximumSerialPortsPerVM**](ivmvirtualpc-maximumserialportspervm.md)<br/>         | Somente leitura<br/>  | O número máximo de portas seriais por máquina virtual.<br/>                                                                                    |
 | [**MinimumMemoryPerVM**](ivmvirtualpc-minimummemorypervm.md)<br/>                   | Somente leitura<br/>  | A quantidade mínima permitida de memória física por máquina virtual, em megabytes.<br/>                                                       |
-| [**Nome**](ivmvirtualpc-name.md)<br/>                                               | Somente leitura<br/>  | O nome do aplicativo do Windows Virtual PC.<br/>                                                                                            |
-| [**SearchPaths**](ivmvirtualpc-searchpaths.md)<br/>                                 | Leitura/gravação<br/> | Os caminhos do sistema de arquivos que são usados para localizar arquivos associados ao PC virtual do Windows.<br/>                                                      |
+| [**Nome**](ivmvirtualpc-name.md)<br/>                                               | Somente leitura<br/>  | o nome do aplicativo de Windows Virtual PC.<br/>                                                                                            |
+| [**SearchPaths**](ivmvirtualpc-searchpaths.md)<br/>                                 | Leitura/gravação<br/> | os caminhos do sistema de arquivos que são usados para localizar arquivos associados a Windows Virtual PC.<br/>                                                      |
 | [**SuggestedMaximumMemoryPerVM**](ivmvirtualpc-suggestedmaximummemorypervm.md)<br/> | Somente leitura<br/>  | A quantidade máxima permitida de memória física por máquina virtual sugerida, em megabytes, para evitar condições de memória insuficiente no host.<br/> |
 | [**Tarefas**](ivmvirtualpc-tasks.md)<br/>                                             | Somente leitura<br/>  | Uma coleção de tarefas.<br/>                                                                                                                     |
-| [**UnconnectedNetworkAdapters**](ivmvirtualpc-unconnectednetworkadapters.md)<br/>   | Somente leitura<br/>  | Uma coleção enumerável de interfaces de rede desconectadas.<br/>                                                                                |
-| [**Atividade**](ivmvirtualpc-uptime.md)<br/>                                           | Somente leitura<br/>  | O número de segundos que o aplicativo do Windows Virtual PC está em execução.<br/>                                                                 |
+| [**UnconnectedNetworkAdapters**](ivmvirtualpc-unconnectednetworkadapters.md)<br/>   | Somente leitura<br/>  | Uma coleção enumerável de interfaces de rede não conectadas.<br/>                                                                                |
+| [**Uptime**](ivmvirtualpc-uptime.md)<br/>                                           | Somente leitura<br/>  | O número de segundos que o Windows aplicativo de computador virtual está em execução.<br/>                                                                 |
 | [**USBDeviceCollection**](ivmvirtualpc-usbdevicecollection.md)<br/>                 | Somente leitura<br/>  | Uma coleção enumerável de todos os dispositivos USB conectados ao host.<br/>                                                                         |
 | [**Versão**](ivmvirtualpc-version.md)<br/>                                         | Somente leitura<br/>  | A versão desta instância do Windows Virtual PC.<br/>                                                                                        |
-| [**Máquinas Virtuais**](ivmvirtualpc-virtualmachines.md)<br/>                         | Somente leitura<br/>  | Uma coleção enumerável de máquinas virtuais.<br/>                                                                                              |
+| [**VirtualMachines**](ivmvirtualpc-virtualmachines.md)<br/>                         | Somente leitura<br/>  | Uma coleção enumerável de máquinas virtuais.<br/>                                                                                              |
 | [**VirtualNetworks**](ivmvirtualpc-virtualnetworks.md)<br/>                         | Somente leitura<br/>  | Uma coleção enumerável de redes virtuais.<br/>                                                                                              |
 
 
@@ -107,12 +107,12 @@ A interface **IVMVirtualPC** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualPC é definido como 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualPC é definido como \_ 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 
 

@@ -1,17 +1,17 @@
 ---
 description: Especifica um nome amigável para a identificação do cliente.
 ms.assetid: 04DEFC2A-6870-4C22-B55D-5514C87C1908
-title: Propriedade MFNETSOURCE_PEERMANAGER (Mfidl. h)
+title: MFNETSOURCE_PEERMANAGER propriedade (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f91f4b244d82a990fb1afd46ffe5eb3799b3c6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9933059fa151ced5aa11bb91185c74ca5eb6507f264c622a65e2f112e0b52369
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119940226"
 ---
-# <a name="mfnetsource_peermanager-property"></a>\_Propriedade peermanager MFNETSOURCE
+# <a name="mfnetsource_peermanager-property"></a>Propriedade PEERMANAGER MFNETSOURCE \_
 
 Especifica um nome amigável para a identificação do cliente.
 
@@ -19,13 +19,13 @@ Especifica um nome amigável para a identificação do cliente.
 
 Tipo de dados
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Membro PROPVARIANT
 
 Cadeia de caracteres largos (**WCHAR** \* )
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
 **pwszVal**
 
@@ -37,9 +37,9 @@ LPWStr do VT \_
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ LPWStr do VT \_
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
 [Rede em Media Foundation](networking-in-media-foundation.md)

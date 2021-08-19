@@ -14,12 +14,12 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: 5d4f71d2cd465bfd2d1ff4c245154a300c431df2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7dc053b880c3ebaf4b94ae88a09c85f32f1dd5b8dc335756c8906c9a6f0fb4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104370750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119938616"
 ---
 # <a name="itabletcursorgetid-method"></a>Método ITabletCursor:: GetId
 
@@ -47,7 +47,7 @@ O identificador da caneta digitalizadora.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -72,7 +72,7 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 

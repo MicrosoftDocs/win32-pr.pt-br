@@ -1,17 +1,17 @@
 ---
-title: Valores de retorno (recursos de acessibilidade do Windows)
+title: Valores de retorno (Windows recursos de acessibilidade)
 description: Este tópico descreve os valores de retorno mais comuns e outros valores de retorno que você pode ver com menos frequência.
 ms.assetid: e6deca92-42da-41ab-bfdb-75cbce3022bb
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cd0f073c401682eb78d9fdf9270709a84ed77ae2
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 71595f7a21d932ee961f9fa5f2a9443cf4d63e38de42f3d5b8c89fa8e9f84e83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443987"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122056"
 ---
-# <a name="return-values-windows-accessibility-features"></a>Valores de retorno (recursos de acessibilidade do Windows)
+# <a name="return-values-windows-accessibility-features"></a>Valores de retorno (Windows recursos de acessibilidade)
 
 Este tópico descreve os valores de retorno mais comuns e outros valores de retorno que você pode ver com menos frequência.
 

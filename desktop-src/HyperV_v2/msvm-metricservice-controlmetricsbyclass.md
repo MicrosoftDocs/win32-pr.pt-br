@@ -1,7 +1,7 @@
 ---
 description: Controla as métricas por classe.
 ms.assetid: f848fdec-561b-4be0-b1e9-a59e15196d1d
-title: Método ControlMetricsByClass da classe Msvm_MetricService
+title: Método ControlMetricsByClass da classe Msvm_MetricService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4149da6327edf774afda20e64f34ae0958f7c3df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d522a2c66cf8b7127520fc3ec66b809c4e825cb759de116b3a3e820eb0ae676c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046526"
 ---
-# <a name="controlmetricsbyclass-method-of-the-msvm_metricservice-class"></a>Método ControlMetricsByClass da \_ classe MetricService Msvm
+# <a name="controlmetricsbyclass-method-of-the-msvm_metricservice-class"></a>Método ControlMetricsByClass da classe Msvm \_ MetricService
 
 Controla as métricas por classe.
 
@@ -41,24 +41,24 @@ uint32 ControlMetricsByClass(
 
 <dl> <dt>
 
-*Assunto* \[ no\]
+*Assunto* \[ Em\]
 </dt> <dd>
 
 Identifica a classe CIM para a qual as métricas serão controladas.
 
 </dd> <dt>
 
-*Definição* \[ do no\]
+*Definição* \[ Em\]
 </dt> <dd>
 
-Identifica um [**\_ BaseMetricDefinition CIM**](cim-basemetricdefinition.md) para o qual as métricas serão controladas.
+Identifica uma [**\_ BaseMetricDefinition cim**](cim-basemetricdefinition.md) para a qual as métricas serão controladas.
 
 </dd> <dt>
 
-*MetricCollectionEnabled* \[ no\]
+*MetricCollectionEnabled* \[ Em\]
 </dt> <dd>
 
-Indica a operação desejada a ser executada nas métricas.
+Indica a operação desejada a ser realizada nas métricas.
 
 <dt>
 
@@ -85,19 +85,19 @@ Indica a operação desejada a ser executada nas métricas.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor reservado** (32768.. 65535)
+**Fornecedor Reservado** (32768..65535)
 
 
 </dt> <dd></dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 
@@ -112,10 +112,10 @@ Esse método retorna um dos seguintes valores:
 **Falha** (2)
 </dt> <dt>
 
-**Método reservado** (..)
+**Método Reservado** (..)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -126,8 +126,8 @@ Esse método retorna um dos seguintes valores:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,7 +1,7 @@
 ---
-description: Ponteiro para uma lista de amostras de mídia disponíveis (gratuita).
+description: Ponteiro para uma lista de exemplos de mídia disponíveis (gratuitos).
 ms.assetid: 7736cf0a-48cf-4f33-8d03-c34a3d7cbddc
-title: 'Membro CBaseAllocator:: m_lFree (Amfilter. h)'
+title: Membro CBaseAllocator::m_lFree (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: c695f88165b3ecda55b498dfcc06b0d52860fd0f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 77d60a51903c2c7bde0d1a3f08f3448eceb8fb69cbec3fbf04de568d7e54ec1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120131446"
 ---
-# <a name="cbaseallocatorm_lfree-member"></a>Membro de CBaseAllocator:: m \_ lFree
+# <a name="cbaseallocatorm_lfree-member"></a>Membro CBaseAllocator::m \_ lFree
 
-Ponteiro para uma lista de amostras de mídia disponíveis (gratuita).
+Ponteiro para uma lista de exemplos de mídia disponíveis (gratuitos).
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ CSampleList m_lFree;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

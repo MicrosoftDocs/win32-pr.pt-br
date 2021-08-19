@@ -1,9 +1,9 @@
 ---
-title: Mensagem de EM_GETEDITSTYLEEX (RichEdit. h)
-description: Recupera os sinalizadores de estilo de edição estendida atuais.
+title: EM_GETEDITSTYLEEX mensagem (Richedit.h)
+description: Recupera os sinalizadores de estilo de edição estendidos atuais.
 ms.assetid: 3E81F7BB-404D-4465-982A-3CF6FD9359DA
 keywords:
-- controles de Windows de mensagem de EM_GETEDITSTYLEEX
+- EM_GETEDITSTYLEEX controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120049306"
 ---
-# <a name="em_geteditstyleex-message"></a>\_Mensagem em GETEDITSTYLEEX
+# <a name="em_geteditstyleex-message"></a>Mensagem EM \_ GETEDITSTYLEEX
 
-Recupera os sinalizadores de estilo de edição estendida atuais.
+Recupera os sinalizadores de estilo de edição estendidos atuais.
 
 
 ```C++
@@ -52,20 +52,20 @@ Não usado; deve ser zero.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna os sinalizadores de estilo de edição estendida, que podem incluir um ou mais dos valores a seguir.
+Retorna os sinalizadores de estilo de edição estendidos, que podem incluir um ou mais dos valores a seguir.
 
 
 
 | Código de retorno                                                                                                | Descrição                                                                                                                                                                                                                                                  |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**HANDLEFRIENDLYURL de SES \_ ex \_**</dt> </dl>  | Exibir links de nome amigável com a mesma cor de texto e sublinhado como links automáticos, desde que a formatação temporária não seja usada ou use a cor automática do texto (padrão: 0).<br/>                                                                       |
-| <dl> <dt>**multitoque de SES \_ ex \_**</dt> </dl>         | Habilite o suporte ao toque em rich edit. Isso inclui seleção, posicionamento de cursor e invocação de menu de contexto. Quando esse sinalizador não é definido, o toque é emulado por comandos do mouse, que não usam as especificidades do modo Touch em conta (padrão: 0). <br/>      |
-| <dl> <dt>**NOACETATESELECTION de SES \_ ex \_**</dt> </dl> | exibe o texto selecionado usando o texto clássico de seleção de Windows e cores de plano de fundo em vez da cor acetato de segundo plano (padrão: 0). <br/>                                                                                                               |
-| <dl> <dt>**SES \_ ex \_ nomath**</dt> </dl>             | Desabilite a inserção de zonas matemáticas (padrão: 1). Para habilitar a edição e a exibição de matemática, envie a mensagem em [**\_ SETEDITSTYLEEX**](em-seteditstyleex.md) com *wParam* definido como 0 e *lParam* definido como **ses \_ ex \_ nomath**. <br/>                              |
-| <dl> <dt>**SES \_ ex \_ notável**</dt> </dl>            | Desabilite a inserção de tabelas. A mensagem em [**\_ InsertTable**](em-inserttable.md) retorna e as tabelas de **\_ falha** e RTF são ignoradas (padrão: 0). <br/>                                                                                                  |
-| <dl> <dt>**USESINGLELINE de SES \_ ex \_**</dt> </dl>      | Habilite um controle de várias linhas para agir como um controle de linha única com a capacidade de rolar verticalmente quando a altura da linha única for maior que a altura da janela (padrão: 0). <br/>                                                                   |
-| <dl> <dt>**HIDETEMPFORMAT de SES \_**</dt> </dl>         | Oculte a formatação temporária que é criada quando [**ITextFont. Reset**](/windows/desktop/api/Tom/nf-tom-itextfont-reset) é chamado com **tomApplyTmp**. Por exemplo, essa formatação é usada por verificadores ortográficos para exibir um sublinhado ondulado sob possíveis palavras escritas incorretamente.<br/> |
-| <dl> <dt>**USEMOUSEWPARAM de SES \_ ex \_**</dt> </dl>     | Use *wParam* ao manipular a [**mensagem \_ MOUSEMOVE do WM**](/windows/desktop/inputdev/wm-mousemove) e não chame [**GetAsyncKeyState**](/windows/desktop/api/winuser/nf-winuser-getasynckeystate).<br/>                                                                                              |
+| <dl> <dt>**SES \_ EX \_ HANDLEFRIENDLYURL**</dt> </dl>  | Exibir links de nome amigável com a mesma cor de texto e sublinhado que links automáticos, desde que a formatação temporária não seja usada ou use a cor automática de texto (padrão: 0).<br/>                                                                       |
+| <dl> <dt>**SES \_ EX \_ MULTITOUCH**</dt> </dl>         | Habilita o suporte a toque no Rich Edit. Isso inclui seleção, posicionamento de adição de aro e invocação de menu de contexto. Quando esse sinalizador não está definido, o toque é emulado por comandos do mouse, que não levam em conta as especificações do modo de toque (padrão: 0). <br/>      |
+| <dl> <dt>**SES \_ EX \_ NOACETATESELECTION**</dt> </dl> | Exibe o texto selecionado usando o texto Windows de seleção clássica e as cores da tela de fundo em vez da cor do acetate da tela de fundo (padrão: 0). <br/>                                                                                                               |
+| <dl> <dt>**SES \_ EX \_ NOMATH**</dt> </dl>             | Desabilite a inserção de zonas matemáticas (padrão: 1). Para habilitar a edição e a exibição matemática, envie a mensagem [**EM \_ SETEDITSTYLEEX**](em-seteditstyleex.md) com *wParam* definido como 0 e *lParam definido* como **SES EX \_ \_ NOMATH**. <br/>                              |
+| <dl> <dt>**SES \_ EX \_ NOTÁVEL**</dt> </dl>            | Desabilite a inserção de tabelas. A [**mensagem EM \_ INSERTTABLE**](em-inserttable.md) retorna **as tabelas E \_ FAIL** e RTF são ignoradas (padrão: 0). <br/>                                                                                                  |
+| <dl> <dt>**SES \_ EX \_ USESINGLELINE**</dt> </dl>      | Habilita um controle multilinha a agir como um controle de linha única com a capacidade de rolar verticalmente quando a altura da linha única for maior que a altura da janela (padrão: 0). <br/>                                                                   |
+| <dl> <dt>**SES \_ HIDETEMPFORMAT**</dt> </dl>         | Ocultar formatação temporária criada quando [**ITextFont.Reset**](/windows/desktop/api/Tom/nf-tom-itextfont-reset) é chamado com **tomApplyTmp.** Por exemplo, essa formatação é usada por verificadores ort eletrônicos para exibir um sublinhado deslinhado em palavras possivelmente escritas incorretamente.<br/> |
+| <dl> <dt>**SES \_ EX \_ USEMOUSEWPARAM**</dt> </dl>     | Use *wParam ao* manipular a [**mensagem WM \_ MOUSEMOVE**](/windows/desktop/inputdev/wm-mousemove) e não chame [**GetAsyncKeyState**](/windows/desktop/api/winuser/nf-winuser-getasynckeystate).<br/>                                                                                              |
 
 
 
@@ -77,9 +77,9 @@ Retorna os sinalizadores de estilo de edição estendida, que podem incluir um o
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>RichEdit. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Richedit.h</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ Retorna os sinalizadores de estilo de edição estendida, que podem incluir um o
 
 <dl> <dt>
 
-[**em \_ SETEDITSTYLEEX**](em-seteditstyleex.md)
+[**EM \_ SETEDITSTYLEEX**](em-seteditstyleex.md)
 </dt> </dl>
 
  

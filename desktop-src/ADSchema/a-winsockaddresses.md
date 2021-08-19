@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1cba4a4595d24df42dc2a25f226ec63977fe1a8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 586db1e7ac94d5cbcee2acadb7b8dcc81658347f0204705635458fa139652cca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120065496"
 ---
 # <a name="winsock-addresses-attribute"></a>Winsock-Addresses atributo
 
@@ -36,7 +36,7 @@ Um endereço de serviço do Winsock.
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.142                                |
 | System-ID-GUID    | bf967a79-0de6-11d0-a285-00aa003049e2                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -60,7 +60,7 @@ Um endereço de serviço do Winsock.
 | System-Only            | Falso                                                    |
 | É de valor único       | Falso                                                    |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
+| No catálogo global      | Verdadeiro                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
@@ -81,7 +81,7 @@ Um endereço de serviço do Winsock.
 | System-Only            | Falso                                                    |
 | É de valor único       | Falso                                                    |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
+| No catálogo global      | Verdadeiro                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
@@ -102,7 +102,7 @@ Um endereço de serviço do Winsock.
 | System-Only            | Falso                                                    |
 | É de valor único       | Falso                                                    |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
+| No catálogo global      | Verdadeiro                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
@@ -121,10 +121,10 @@ Um endereço de serviço do Winsock.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | Falso                                                    |
+| Tem valor único       | Falso                                                    |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Verdadeiro                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -142,10 +142,10 @@ Um endereço de serviço do Winsock.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | Falso                                                    |
+| Tem valor único       | Falso                                                    |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Verdadeiro                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |
@@ -163,10 +163,10 @@ Um endereço de serviço do Winsock.
 | ID do link                | \-                                                       |
 | MAPI-Id                | \-                                                       |
 | System-Only            | Falso                                                    |
-| É de valor único       | Falso                                                    |
+| Tem valor único       | Falso                                                    |
 | É indexado             | Falso                                                    |
-| No catálogo global      | True                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Verdadeiro                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | \-                                                       |
 | Range-Upper            | \-                                                       |
 | Search-Flags           | 0x00000000                                               |

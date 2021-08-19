@@ -1,5 +1,5 @@
 ---
-description: O método estático da classe WMI SetTcpWindowSize é usado para definir o tamanho máximo da janela de recepção TCP oferecido pelo sistema.
+description: O método estático de classe WMI SetTcpWindowSize é usado para definir o tamanho máximo da Janela de Recebimento TCP oferecido pelo sistema.
 ms.assetid: c108fd9c-6de4-4f3e-9691-b0b5c1a3dc5f
 ms.tgt_platform: multiple
 title: Método SetTcpWindowSize da classe Win32_NetworkAdapterConfiguration
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: d4a77acdc81c06d1f78da8bbc0160bd0d21bcfd8
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 9bad1974233dade51f9c49d8508d3ad65f3dfc3f3a1bbb27a55bf4ea0828cc09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020424"
 ---
-# <a name="settcpwindowsize-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpWindowSize da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="settcpwindowsize-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpWindowSize da classe \_ NetworkAdapterConfiguration do Win32
 
-O método estático da [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpWindowSize** é usado para definir o tamanho máximo da janela de recepção TCP oferecido pelo sistema.
+O método estático de classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **SetTcpWindowSize** é usado para definir o tamanho máximo da Janela de Recebimento TCP oferecido pelo sistema.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ uint32 SetTcpWindowSize(
 
 <dl> <dt>
 
-*TcpWindowSize* \[ no\]
+*TcpWindowSize* \[ Em\]
 </dt> <dd>
 
-Tamanho máximo da janela de recepção TCP oferecido pelo sistema. O intervalo válido de valores em bytes é 0-65535.
+Tamanho máximo da janela de recebimento TCP oferecido pelo sistema. O intervalo válido de valores em bytes é de 0 a 65535.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -60,7 +60,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma rei
 
 0
 
-Conclusão bem-sucedida, nenhuma reinicialização necessária.
+Conclusão bem-sucedida, sem necessidade de reinicialização.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Conclusão bem-sucedida, reinicialização necessária.
 
 64
 
-Método sem suporte nesta plataforma.
+Não há suporte para o método nesta plataforma.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Máscara de sub-rede inválida.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -136,7 +136,7 @@ Endereço IP inválido.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
@@ -145,12 +145,12 @@ Endereço IP do gateway inválido.
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
 
-Ocorreu um erro ao acessar o registro para obter as informações solicitadas.
+Ocorreu um erro ao acessar o Registro para as informações solicitadas.
 
 </dd> <dt>
 
@@ -190,12 +190,12 @@ Arquivo inválido.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
 
-Caminho de sistema inválido.
+Caminho do sistema inválido.
 
 </dd> <dt>
 
@@ -235,21 +235,21 @@ Não é possível configurar o serviço DHCP.
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
-Não é possível renovar a concessão DHCP.
+Não é possível renovar a concessão de DHCP.
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
 
-Não é possível liberar a concessão DHCP.
+Não é possível liberar a concessão de DHCP.
 
 </dd> <dt>
 
@@ -258,7 +258,7 @@ Não é possível liberar a concessão DHCP.
 
 84
 
-O IP não está habilitado no adaptador.
+IP não habilitado no adaptador.
 
 </dd> <dt>
 
@@ -276,7 +276,7 @@ IPX não habilitado no adaptador.
 
 86
 
-Erro de limites de número de rede ou quadro.
+Erro de limites de quadro ou número de rede.
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -379,7 +379,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -393,7 +393,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -406,16 +406,16 @@ DHCP não habilitado no adaptador.
 
 ## <a name="remarks"></a>Comentários
 
-A janela de recepção especifica o número de bytes que um remetente pode transmitir sem receber uma confirmação. Em geral, as janelas de recebimento maiores melhoram o desempenho em redes de alto atraso e alta largura de banda. Para a eficiência, a janela de recebimento deve ser um múltiplo par do MSS (tamanho máximo de segmento) do TCP.
+A janela de recebimento especifica o número de bytes que um remetente pode transmitir sem receber uma confirmação. Em geral, as janelas de recebimento maiores melhoram o desempenho em relação a redes de alto atraso e alta largura de banda. Para eficiência, a janela de recebimento deve ser um múltiplo do MSS (Tamanho Máximo de Segmento) TCP.
 
 > [!Note]  
-> Windows Vista: esse método acessa a `"CurrentControlSet\\Services\\Tcpip\\Parameters|TcpWindowSize"` entrada do registro, que não é usada na implementação atual do sistema operacional.
+> Windows Vista: esse método acessa a entrada do Registro, que `"CurrentControlSet\\Services\\Tcpip\\Parameters|TcpWindowSize"` não é usada na implementação atual do sistema operacional.
 
  
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de [Modificar o tamanho da janela TCP para todos os adaptadores de rede](https://Gallery.TechNet.Microsoft.Com/74cf7be0-0044-4a88-85a3-9bc98490897b) do VBScript define o tamanho da janela TCP para todos os adaptadores de rede em um computador.
+O [exemplo Modificar o tamanho da janela TCP](https://Gallery.TechNet.Microsoft.Com/74cf7be0-0044-4a88-85a3-9bc98490897b) para todos os adaptadores de rede VBScript define o tamanho da janela TCP para todos os adaptadores de rede em um computador.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -425,10 +425,10 @@ O exemplo de [Modificar o tamanho da janela TCP para todos os adaptadores de red
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                    |
-| Fim do suporte do servidor<br/>    | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                    |
+| Fim do suporte ao servidor<br/>    | Windows Server 2008<br/>                                                          |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -440,13 +440,13 @@ O exemplo de [Modificar o tamanho da janela TCP para todos os adaptadores de red
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

@@ -4,12 +4,12 @@ ms.assetid: a21d0100-e020-4e74-b8e3-bb7071194828
 title: Propriedade MFPKEY_VIDEOSCALING (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 555cec22533b7817c509d5419391039b10c92576
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: da2dc069d70b167dd8da6cb308d70149aec1028f3aaf4e50b5c1cc8ab11104c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119887646"
 ---
 # <a name="mfpkey_videoscaling-property"></a>\_Propriedade MFPKEY VIDEOSCALING
 
@@ -51,9 +51,9 @@ Essa propriedade pode ser definida como um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

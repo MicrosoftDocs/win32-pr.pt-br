@@ -4,12 +4,12 @@ ms.assetid: 22ffdb77-9266-42e5-be41-fc7457141bba
 title: Propriedade MFPKEY_DELTAMVRANGEINDEX (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c72d923659e64c9a0dcab40811e31d7752924700
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b7a21ac1a0bdaf859c93bca800d72f5e9ed155919bb07a24f5287b2436e57f94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505735"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113336"
 ---
 # <a name="mfpkey_deltamvrangeindex-property"></a>\_Propriedade MFPKEY DELTAMVRANGEINDEX
 
@@ -52,9 +52,9 @@ Essa propriedade pode ser definida como um dos seguintes valores:
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

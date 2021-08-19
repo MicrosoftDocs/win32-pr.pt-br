@@ -8,12 +8,12 @@ keywords:
 - AD de objetos, configurando direitos de acesso em
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e9a965b646de1ee3eba40757386fd243839cb35b
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: cde06726b7333865fe2f4b87b87bec4383a3aeb1799ad6b8772142d5b9fd6eeb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104453901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024774"
 ---
 # <a name="setting-access-rights-on-the-entire-object"></a>Configurando direitos de acesso em todo o objeto
 
@@ -30,6 +30,6 @@ Para obter mais informações sobre como criar uma ACE, consulte [definindo dire
 
 Para obter mais informações e um exemplo de código que pode ser usado para definir uma ACE, consulte [código de exemplo para definir uma ACE em um objeto de diretório](example-code-for-setting-an-ace-on-a-directory-object.md).
 
- 
+ 
 
- 
+ 

@@ -1,43 +1,43 @@
 ---
-title: Alterações de versão do sistema operacional no Windows 8.1 e no Windows Server 2012 R2
-description: Alterações de versão do sistema operacional no Windows 8.1 e no Windows Server 2012 R2
+title: Alterações de versão do sistema operacional Windows 8.1 e Windows Server 2012 R2
+description: Alterações de versão do sistema operacional Windows 8.1 e Windows Server 2012 R2
 ms.assetid: 3040262A-85EB-4F26-BE34-D2BBD5886E9E
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0078ba918c675bbc8b9b9bbaf76660388f05bda9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 13e1fe0972a915d0f13ca3c3f8f52e5dd0559ad9c24e1afd2dd005f4a733373c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882686"
 ---
-# <a name="operating-system-version-changes-in-windows-81-and-windows-server-2012-r2"></a>Alterações de versão do sistema operacional no Windows 8.1 e no Windows Server 2012 R2
+# <a name="operating-system-version-changes-in-windows-81-and-windows-server-2012-r2"></a>Alterações de versão do sistema operacional Windows 8.1 e Windows Server 2012 R2
 
 ## <a name="platforms"></a>Plataformas
 
-**Clientes-** Windows 8.1
+**Clientes – Windows 8.1**
 
-**Servidores-** Windows Server 2012 R2
+**Servidores – Windows Server 2012** R2
 
 ## <a name="description"></a>Descrição
 
-Fizemos algumas alterações significativas em como as APIs GetVersion (ex) funcionam em Windows 8.1 devido a comportamentos indesejáveis do cliente, resultando da forma como as APIs GetVersion (ex) foram usadas no passado.
+Fizemos algumas alterações significativas em como as APIs GetVersion(Ex) funcionam no Windows 8.1 devido a comportamentos indesejáveis do cliente resultantes de como as APIs GetVersion(Ex) foram usadas no passado.
 
-Nas versões anteriores do Windows, chamar as APIs GetVersion (ex) retornaria a versão real do sistema operacional (SO), a menos que o processo tivesse sido mitigado por um Shim de compatibilidade de aplicativo para dar a ele uma versão diferente. Isso foi feito em uma base provisionada e foi relativamente incompleto em termos do número de processos que a Microsoft poderia corrigir razoavelmente em uma versão. Muitos aplicativos passam pelas rachaduras porque não obtiveram corrigido devido a verificações de versão mal projetadas.
+Nas versões anteriores do Windows, chamar as APIs GetVersion(Ex) retornaria a versão real do sistema operacional ,a menos que o processo tivesse sido mitigado por um shim de compatibilidade de aplicativo para dar a ela uma versão diferente. Isso foi feito em uma base temporária e estava relativamente incompleto em termos do número de processos que a Microsoft poderia razoavelmente fazer shim em uma versão. Muitos aplicativos passam pelas trincas porque não foram aparados devido a verificações de versão mal projetadas.
 
-O número um motivo para fazer uma verificação de versão é avisar o usuário de que o aplicativo precisa ser executado em uma versão mais recente do sistema operacional. No entanto, devido a verificações ruins, os aplicativos geralmente avisam que eles precisavam ser executados no Windows XP ou posterior, o que é claro que o sistema operacional mais recente é. Com mais frequência do que não, o sistema operacional mais recente executaria o aplicativo sem nenhum problema se não fosse para essas verificações.
+O principal motivo para fazer uma verificação de versão é avisar o usuário de que o aplicativo precisa ser executado em uma versão mais recente do sistema operacional. No entanto, devido a verificações incorretas, os aplicativos geralmente avisam incorretamente que precisam ser executados no Windows XP ou posterior, que é claro que é o sistema operacional mais recente. Com mais frequência do que não, o sistema operacional mais recente executaria o aplicativo sem problemas se não fosse por essas verificações.
 
 ## <a name="manifestation"></a>Manifestação
 
-No Windows 8.1, as APIs GetVersion (ex) foram preteridas. Isso significa que, embora você ainda possa chamar essas funções de API, se seu aplicativo não direcionar especificamente Windows 8.1, as funções retornarão a versão do Windows 8 (6,2).
+No Windows 8.1, as APIs GetVersion(Ex) foram preterida. Isso significa que, embora você ainda possa chamar essas funções de API, se seu aplicativo não for especificamente destinado Windows 8.1, as funções retornarão a versão Windows 8 (6.2).
 
 ## <a name="solution"></a>Solução
 
-### <a name="adding-an-app-manifest"></a>Adicionando um manifesto de aplicativo
+### <a name="adding-an-app-manifest"></a>Adicionando um manifesto do aplicativo
 
-Para que seu aplicativo seja direcionado Windows 8.1, você precisará incluir um [manifesto de aplicativo (executável)](/windows/compatibility/application-executable-manifest) para o executável do aplicativo. Em seguida, na [seção **&lt; compatibilidade &gt;**](../SbsCs/application-manifests.md#compatibility) do manifesto, você precisará adicionar um elemento **&lt; supportedOS &gt;** para cada versão do Windows que você deseja declarar para o suporte do seu aplicativo.
+Para que seu aplicativo seja Windows 8.1, você precisará incluir um manifesto do aplicativo [(executável)](/windows/compatibility/application-executable-manifest) para o executável do aplicativo. Em seguida, [ **&lt; &gt;**](../SbsCs/application-manifests.md#compatibility) na seção de compatibilidade do manifesto, você precisará adicionar um elemento **&lt; supportedOS &gt;** para cada versão Windows que você deseja declarar que seu aplicativo dá suporte.
 
-O exemplo a seguir mostra um arquivo de manifesto de aplicativo para um aplicativo que dá suporte a todas as versões do Windows do Windows Vista para Windows 8.1:
+O exemplo a seguir mostra um arquivo de manifesto do aplicativo para um aplicativo que dá suporte a todas as versões do Windows do Windows Vista para Windows 8.1:
 
 ```XML
 <!-- example.exe.manifest -->
@@ -67,13 +67,13 @@ O exemplo a seguir mostra um arquivo de manifesto de aplicativo para um aplicati
 
 A linha acima marcada `* ADD THIS LINE *` mostra como direcionar com precisão seu aplicativo para Windows 8.1.
 
-A declaração de suporte para Windows 8.1 em seu manifesto de aplicativo não terá nenhum efeito ao executar seu aplicativo em sistemas operacionais anteriores.
+Declarar o suporte para Windows 8.1 no manifesto do aplicativo não terá nenhum efeito ao executar seu aplicativo em sistemas operacionais anteriores.
 
-### <a name="using-versionhelpers-instead-of-getversionex"></a>Usando VersionHelpers em vez de GetVersion (ex)
+### <a name="using-versionhelpers-instead-of-getversionex"></a>Usando VersionHelpers em vez de GetVersion(Ex)
 
-Windows 8.1 introduz novas funções de API de substituição para GetVersion (ex), conhecidas como VersionHelpers. Eles são extremamente fáceis de usar; Tudo o que você precisa fazer é `#include <VersionHelpers.h>` . As funções embutidas disponíveis no arquivo de cabeçalho VersionHelpers. h permitem que seu código pergunte se o sistema operacional é uma determinada versão do Windows ou posterior.
+Windows 8.1 introduz novas funções de API de substituição para GetVersion(Ex), conhecidas como VersionHelpers. Eles são extremamente fáceis de usar; tudo o que você precisa fazer é `#include <VersionHelpers.h>` . As funções em linha disponíveis no arquivo de header VersionHelpers.h permitem que seu código pergunte se o sistema operacional é uma determinada versão do Windows ou posterior.
 
-**Exemplo** Por exemplo, se seu aplicativo exigir o Windows 8 ou posterior, use o teste a seguir:
+**Exemplo** Por exemplo, se o aplicativo exigir Windows 8 ou posterior, use o seguinte teste:
 
 ```cpp
 #include <VersionHelpers.h>
@@ -84,7 +84,7 @@ Windows 8.1 introduz novas funções de API de substituição para GetVersion (e
     }
 ```
 
-As funções de API do VersionHelper disponíveis são:
+As funções de API VersionHelper disponíveis são:
 
 ```c
 #define VERSIONHELPERAPI FORCEINLINE BOOL
@@ -102,10 +102,10 @@ VERSIONHELPERAPI IsWindows8Point1OrGreater();
 VERSIONHELPERAPI IsWindowsServer();
 ```
 
-Eles retornarão TRUE ou FALSE dependendo da pergunta que você está fazendo e você só precisa definir o sistema operacional de nível mínimo ao qual dá suporte.
+Eles retornarão TRUE ou FALSE dependendo da pergunta que você está fazendo e você só precisa definir o sistema operacional de nível mínimo ao qual você suporta.
 
 ## <a name="resources"></a>Recursos
 
--   [Download do kit de ferramentas de compatibilidade de aplicativos](https://www.microsoft.com/downloads/details.aspx?FamilyId=24DA89E9-B581-47B0-B45E-492DD6DA2971)
+-   [Download de compatibilidade Toolkit aplicativo](https://www.microsoft.com/downloads/details.aspx?FamilyId=24DA89E9-B581-47B0-B45E-492DD6DA2971)
 -   [Correções de compatibilidade conhecidas, modos de compatibilidade e mensagens AppHelp](/previous-versions/windows/it-pro/windows-7/cc765984(v=ws.10))
--   [APIs do VersionHelpers](../sysinfo/version-helper-apis.md)
+-   [VersionHelpers APIs](../sysinfo/version-helper-apis.md)

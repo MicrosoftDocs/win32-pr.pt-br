@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TBM_GETUNICODEFORMAT (commctrl. h)
-description: Mensagem de TBM_GETUNICODEFORMAT-recupera o sinalizador de formato de caractere Unicode para o controle.
+title: TBM_GETUNICODEFORMAT mensagem (Commctrl.h)
+description: TBM_GETUNICODEFORMAT mensagem - recupera o sinalizador de formato de caractere Unicode para o controle .
 ms.assetid: cecd7e55-f482-4381-bde8-a60b8c5173eb
 keywords:
-- Controles de TBM_GETUNICODEFORMAT de mensagens do Windows
+- TBM_GETUNICODEFORMAT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 82e7424a4e561ee8f8be79135309089fe4bb0bf9
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7e15f5b12a60b58958dad1364848120f391c91906bb6057727f3a4e22b8a7813
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108104084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120046166"
 ---
-# <a name="tbm_getunicodeformat-message"></a>\_Mensagem tbm GETUNICODEFORMAT
+# <a name="tbm_getunicodeformat-message"></a>Mensagem \_ TBM GETUNICODEFORMAT
 
-Recupera o sinalizador de formato de caractere Unicode para o controle.
+Recupera o sinalizador de formato de caractere Unicode para o controle .
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,11 +37,11 @@ Recupera o sinalizador de formato de caractere Unicode para o controle.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna o sinalizador de formato Unicode para o controle. Se esse valor for diferente de zero, o controle estará usando caracteres Unicode. Se esse valor for zero, o controle estará usando caracteres ANSI.
+Retorna o sinalizador de formato Unicode para o controle . Se esse valor for diferentes de zero, o controle está usando caracteres Unicode. Se esse valor for zero, o controle está usando caracteres ANSI.
 
 ## <a name="remarks"></a>Comentários
 
-Consulte os comentários para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) para uma discussão sobre esta mensagem.
+Consulte os comentários de [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat.md) para uma discussão sobre essa mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,13 +49,13 @@ Consulte os comentários para [**CCM \_ GETUNICODEFORMAT**](ccm-getunicodeformat
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

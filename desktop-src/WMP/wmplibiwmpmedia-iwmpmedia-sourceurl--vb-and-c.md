@@ -3,9 +3,9 @@ title: Propriedade IWMPMedia sourceURL
 description: A propriedade sourceURL Obtém a URL do item de mídia.
 ms.assetid: adaef82c-eeed-4cce-859b-c54b9c8fa085
 keywords:
-- Propriedade sourceURL Windows Media Player
-- Propriedade sourceURL Windows Media Player, interface IWMPMedia
-- Interface IWMPMedia Windows Media Player, Propriedade sourceURL
+- Windows Media Player da propriedade sourceURL
+- propriedade sourceURL Windows Media Player, interface IWMPMedia
+- Windows Media Player de interface IWMPMedia, propriedade sourceURL
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d9ad2cdb2c0a67f65f7b0cf722d1b613307806d7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f5427dadcbc2b9dccc4156ff1c9b25e641298a3c7cd069900fa932b6e0803c64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122596"
 ---
 # <a name="iwmpmediasourceurl-property"></a>Propriedade IWMPMedia:: sourceURL
 

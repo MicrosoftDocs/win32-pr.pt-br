@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7eea24875b0639f7f5b7968084a3fff2aa7cccec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf4271ce2ea1c146c1cbc96c9533f1c7e834126e4596c4792cc82ed2b3ad3d0a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120063596"
 ---
 # <a name="jet_columnidcompareto-method"></a>Método JET_COLUMNID. CompareTo
 
@@ -66,7 +66,7 @@ public int CompareTo(
     
     O columnid a ser comparado com a instância atual.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Int32](/dotnet/api/system.int32)  
 Um número assinado que indica as posições relativas dessa instância e o parâmetro de valor.  

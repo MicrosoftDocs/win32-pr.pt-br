@@ -17,10 +17,10 @@ A interface [**IX509PolicyServerUrl**](/windows/desktop/api/Certenroll/nn-certen
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Método getstringproperty**](/windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-getstringproperty)
+-   [**Método GetStringProperty**](/windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-getstringproperty)
 -   [**Método Initialize**](/windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-initialize)
 -   [**Método RemoveFromRegistry**](/windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-removefromregistry)
--   [**Método setstringproperty**](/windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-setstringproperty)
+-   [**Método SetStringProperty**](/windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-setstringproperty)
 -   [**Método UpdateRegistry**](/windows/desktop/api/Certenroll/nf-certenroll-ix509policyserverurl-updateregistry)
 
  

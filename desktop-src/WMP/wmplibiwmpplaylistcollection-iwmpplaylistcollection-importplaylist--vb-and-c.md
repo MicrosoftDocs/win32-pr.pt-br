@@ -3,9 +3,9 @@ title: Método IWMPPlaylistCollection importPlaylist
 description: O método importPlaylist adiciona uma lista de reprodução estática à biblioteca. | Método IWMPPlaylistCollection importPlaylist
 ms.assetid: 7a64e618-920d-419d-8769-612ab5dff49b
 keywords:
-- método importPlaylist Windows Media Player
+- Windows Media Player do método importPlaylist
 - método importPlaylist Windows Media Player, interface IWMPPlaylistCollection
-- Interface IWMPPlaylistCollection Windows Media Player, método importPlaylist
+- Windows Media Player de interface IWMPPlaylistCollection, método importPlaylist
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad3ca727155d6ae859123d427812d93ebaa0b05c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3ee4c231a045b39454908753dc197c95e26d85c711968f07ab27dbd859c29c6f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120122526"
 ---
 # <a name="iwmpplaylistcollectionimportplaylist-method"></a>Método IWMPPlaylistCollection:: importPlaylist
 
@@ -60,7 +60,7 @@ Uma interface **WMPLib. IWMPPlaylist** para a lista de reprodução que esse mé
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma interface **WMPLib. IWMPPlaylist** para a lista de reprodução adicionada.
 

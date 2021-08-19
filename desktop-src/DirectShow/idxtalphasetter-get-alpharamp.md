@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 335c227b0ac35ccd730d8ce7014b9a5c7ebc3213
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9768ed96f0b40e074fd44de04ca44a8cc17d9de7ce4b75af948975e26b5e3077
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118952735"
 ---
 # <a name="idxtalphasetterget_alpharamp-method"></a>Método IDxtAlphaSetter:: get \_ AlphaRamp
 
@@ -52,7 +52,7 @@ Recebe a rampa de alfa. Um valor negativo indica que nenhuma rampa de alfa está
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 
@@ -61,7 +61,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
 | Código de retorno                                                                               | Descrição                          |
 |-------------------------------------------------------------------------------------------|--------------------------------------|
 | <dl> <dt>**\_ponteiro E**</dt> </dl> | Argumento de ponteiro **nulo**<br/> |
-| <dl> <dt>**S \_ OK**</dt> </dl>      | Sucesso<br/>                   |
+| <dl> <dt>**S \_ OK**</dt> </dl>      | Êxito<br/>                   |
 
 
 
@@ -75,7 +75,7 @@ Retorna um valor **HRESULT** . Os possíveis valores incluem os seguintes.
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e56dd294c733d00721d549185759a6a6759b2938
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: adba0a1ad16995f322fb31214477e368853351c39912d87469aededf0b09e42d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123046"
 ---
 # <a name="sourceurl-attribute"></a>Atributo SourceURL
 
-O atributo **SourceURL** é o endereço do item.
+O **atributo SourceURL** é o endereço do item.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -34,9 +34,9 @@ O atributo **SourceURL** é o endereço do item.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente na biblioteca do.
+Esse atributo é armazenado somente na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -44,7 +44,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

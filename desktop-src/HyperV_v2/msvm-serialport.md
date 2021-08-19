@@ -1,7 +1,7 @@
 ---
 description: Representa uma porta serial associada ao controlador serial.
 ms.assetid: 856823A5-7481-453A-8476-1CDAB1D84123
-title: Classe Msvm_SerialPort
+title: Msvm_SerialPort classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -63,18 +63,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: bc9ff5e1ce4b0a750866a9957c0cffc4bc8501e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 438d7017cdd6e56aa0ecaef00030d7ff4d0d61a5dea3c217d64eddec9d3019aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950605"
 ---
-# <a name="msvm_serialport-class"></a>\_Classe SerialPort Msvm
+# <a name="msvm_serialport-class"></a>Classe Msvm \_ SerialPort
 
 Representa uma porta serial associada ao controlador serial.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -131,14 +131,14 @@ class Msvm_SerialPort : CIM_LogicalPort
 
 ## <a name="members"></a>Membros
 
-A **classe \_ SerialPort Msvm** tem estes tipos de membros:
+A **classe Msvm \_ SerialPort** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A **classe \_ SerialPort Msvm** tem esses métodos.
+A **classe Msvm \_ SerialPort** tem esses métodos.
 
 
 
@@ -149,8 +149,8 @@ A **classe \_ SerialPort Msvm** tem esses métodos.
 | **QuiesceDevice**                                                | Não há suporte para o método.<br/> |
 | [**RequestStateChange**](msvm-serialport-requeststatechange.md) | Solicita uma alteração de estado.<br/>      |
 | [**Redefinir**](msvm-serialport-reset.md)                           | Redefine o dispositivo virtual.<br/>    |
-| **Restaurarproperties**                                            | Não há suporte para o método.<br/> |
-| **Salvarproperties**                                               | Não há suporte para o método.<br/> |
+| **RestoreProperties**                                            | Não há suporte para o método.<br/> |
+| **SaveProperties**                                               | Não há suporte para o método.<br/> |
 | **SetPowerState**                                                | Não há suporte para o método.<br/> |
 
 
@@ -159,26 +159,26 @@ A **classe \_ SerialPort Msvm** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ SerialPort Msvm** tem essas propriedades.
+A **classe Msvm \_ SerialPort** tem essas propriedades.
 
 <dl> <dt>
 
 **AdditionalAvailability**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Qualquer disponibilidade e status adicionais do dispositivo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Qualquer disponibilidade e status adicionais do dispositivo. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 
 
 | Valor                                                                            | Significado                   |
 |----------------------------------------------------------------------------------|---------------------------|
-| <dl> <dt>152</dt> </dl> |                           |
+| <dl> <dt>{ 6 }</dt> </dl> |                           |
 | <dl> <dt>6</dt> </dl>     | Não Aplicável<br/> |
 
 
@@ -190,13 +190,13 @@ Qualquer disponibilidade e status adicionais do dispositivo. Essa propriedade é
 **Disponibilidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A disponibilidade e o status principais do dispositivo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+A disponibilidade e o status primários do dispositivo. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 
 
@@ -213,13 +213,13 @@ A disponibilidade e o status principais do dispositivo. Essa propriedade é herd
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica os valores possíveis para o parâmetro *requestedstate* do método **RequestStateChange** . Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), mas não é usada.
+Indica os valores possíveis para o *parâmetro RequestedState* do **método RequestStateChange.** Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), mas não é usada.
 
 </dd> <dt>
 
@@ -232,20 +232,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -255,19 +255,19 @@ Indica a capacidade da instrumentação de se comunicar com o elemento gerenciad
 <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span>**Não disponível** (1)
 </dt> <dt>
 
-<span id="Communication_OK"></span><span id="communication_ok"></span><span id="COMMUNICATION_OK"></span>**Comunicação Ok** (2)
+<span id="Communication_OK"></span><span id="communication_ok"></span><span id="COMMUNICATION_OK"></span>**Comunicação OK** (2)
 </dt> <dt>
 
 <span id="Lost_Communication"></span><span id="lost_communication"></span><span id="LOST_COMMUNICATION"></span>**Comunicação perdida** (3)
 </dt> <dt>
 
-<span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**Nenhum contato** (4)
+<span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**Sem contato** (4)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -281,7 +281,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome da classe ou subclasse usada na criação de uma instância. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O nome da classe ou subclasse usada na criação de uma instância. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
@@ -294,20 +294,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa a propriedade **PrimaryStatus com** detalhes de status adicionais. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -317,7 +317,7 @@ Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. U
 <span id="No_Additional_Information"></span><span id="no_additional_information"></span><span id="NO_ADDITIONAL_INFORMATION"></span>**Nenhuma informação adicional** (1)
 </dt> <dt>
 
-<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Sob estresse** (2)
+<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Estresse** (2)
 </dt> <dt>
 
 <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span>**Falha preditiva** (3)
@@ -326,18 +326,18 @@ Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. U
 <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Erro não recuperável** (4)
 </dt> <dt>
 
-<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidade de suporte com erro** (5)
+<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidade de suporte em erro** (5)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
 
-**DeviceID**
+**Deviceid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -346,7 +346,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é definida como "Microsoft:*GUID* \\ *Device-specific-data*", em que *os dados específicos do dispositivo* são opcionais.
+Essa propriedade é herdada de [**CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é definida como "Microsoft: dados específicos do dispositivo *GUID",* em que dados específicos do dispositivo \\ são opcionais. 
 
 </dd> <dt>
 
@@ -359,20 +359,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A configuração de inicialização ou padrão de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Configuração padrão ou de inicialização de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 
 
@@ -389,13 +389,13 @@ A configuração de inicialização ou padrão de um administrador para o estado
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O estado habilitado do elemento. Ele também pode indicar as transições entre esses Estados solicitados. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+O estado habilitado do elemento. Ele também pode indicar as transições entre esses estados solicitados. Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 
 
@@ -412,13 +412,13 @@ O estado habilitado do elemento. Ele também pode indicar as transições entre 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o erro relatado na propriedade **LastErrorCode** agora está apagado. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Indica se o erro relatado na propriedade **LastErrorCode** agora está limpo. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
@@ -431,46 +431,46 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que fornece mais informações sobre o erro registrado na propriedade **LastErrorCode** e informações sobre as ações corretivas que podem ser executadas. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Uma cadeia de caracteres que fornece mais informações sobre o erro registrado na propriedade **LastErrorCode** e informações sobre as ações corretivas que podem ser tomadas. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A integridade atual do elemento. Isso expressa a integridade desse elemento, mas não necessariamente o de seus subcomponentes. Os valores possíveis são 0 a 30, em que 5 significa que o elemento está totalmente íntegro e 30 significa que o elemento é completamente não funcional. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+A saúde atual do elemento. Isso expressa a saúde desse elemento, mas não necessariamente a de seus subcomponentes. Os valores possíveis são de 0 a 30, em que 5 significa que o elemento está totalmente íntegre e 30 significa que o elemento é completamente nãofuncional. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **IdentifyingDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma matriz de cadeias de caracteres de forma livre que fornece explicações e detalhes por trás das entradas na matriz de propriedades **OtherIdentifyingInfo** . Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é definida como **NULL**.
+Uma matriz de cadeias de caracteres de forma livre que fornecem explicações e detalhes por trás das entradas na matriz de propriedades **OtherIdentifyingInfo.** Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é definida como **Null.**
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -483,49 +483,49 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O último código de erro relatado pelo dispositivo lógico. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+O último código de erro relatado pelo dispositivo lógico. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **MaxQuiesceTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade foi substituída. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Essa propriedade foi substituída. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
-**MaxSpeed**
+**Maxspeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A largura de banda máxima da porta, em bits por segundo. Essa propriedade é herdada do [**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85)).
+A largura de banda máxima da porta, em bits por segundo. Essa propriedade é herdada de [**CIM \_ LogicalPort.**](/previous-versions//cc136869(v=vs.85))
 
 </dd> <dt>
 
@@ -538,20 +538,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é a mesma que a propriedade **ElementName** .
+O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada [**de CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é a mesma que a **propriedade ElementName.**
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da propriedade **enabledstate** . Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da **propriedade EnabledState.** Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -585,7 +585,7 @@ Fornece informações de status atuais para a condição operacional do elemento
 <span id="Migrating"></span><span id="migrating"></span><span id="MIGRATING"></span>**Migrando** (9)
 </dt> <dt>
 
-<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrating** (10)
+<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrando** (10)
 </dt> <dt>
 
 <span id="Immigrating"></span><span id="immigrating"></span><span id="IMMIGRATING"></span>**Immigrating** (11)
@@ -597,7 +597,7 @@ Fornece informações de status atuais para a condição operacional do elemento
 <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Desligando** (13)
 </dt> <dt>
 
-<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**Em teste** (14)
+<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**Em Teste** (14)
 </dt> <dt>
 
 <span id="Transitioning"></span><span id="transitioning"></span><span id="TRANSITIONING"></span>**Transição** (15)
@@ -606,10 +606,10 @@ Fornece informações de status atuais para a condição operacional do elemento
 <span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span>**Em serviço** (16)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -617,13 +617,13 @@ Fornece informações de status atuais para a condição operacional do elemento
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Os status atuais do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Os status atuais do objeto. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -636,20 +636,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o estado habilitado ou desabilitado do elemento quando a propriedade **enabledstate** é definida como 1 (outro). Essa propriedade deve ser definida como **NULL** quando **enabledstate** for qualquer valor diferente de 1. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Uma cadeia de caracteres que descreve o estado habilitado ou desabilitado do elemento quando a propriedade **EnabledState** é definida como 1 (Outro). Essa propriedade deve ser definida como **Null quando** **EnabledState** for qualquer valor diferente de 1. Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **OtherIdentifyingInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Quaisquer dados adicionais, além das informações de ID do dispositivo, que podem ser usadas para identificar um dispositivo lógico. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é definida como **NULL**.
+Quaisquer dados adicionais, além das informações de ID do dispositivo, que podem ser usados para identificar um dispositivo lógico. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é definida como **Null.**
 
 </dd> <dt>
 
@@ -662,20 +662,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de módulo, quando **PortType** é definido como 1 (outro). Essa propriedade é herdada do [**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85)).
+O tipo de módulo, quando **PortType** é definido como 1 (Outro). Essa propriedade é herdada de [**CIM \_ LogicalPort.**](/previous-versions//cc136869(v=vs.85))
 
 </dd> <dt>
 
-**PortType**
+**Porttype**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85)).
+Essa propriedade é herdada de [**CIM \_ LogicalPort.**](/previous-versions//cc136869(v=vs.85))
 
 
 
@@ -692,52 +692,52 @@ Essa propriedade é herdada do [**CIM \_ LogicalPort**](/previous-versions//cc13
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Os recursos de gerenciamento de energia do dispositivo. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Os recursos de gerenciamento de energia do dispositivo. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **PowerManagementSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o dispositivo pode ser gerenciado por energia. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Indica se o dispositivo pode ser gerenciado por energia. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **PowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número de horas consecutivas em que este dispositivo foi ligado desde seu último ciclo de energia. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+O número de horas consecutivas em que esse dispositivo foi ligado desde seu último ciclo de energia. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer o status de integridade de alto nível e detalhado do elemento e seus subcomponentes. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer status de saúde detalhado e de alto nível do elemento e seus subcomponentes. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -753,10 +753,10 @@ Fornece informações de status de alto nível. Essa propriedade deve ser usada 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>**Erro** (3)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -764,26 +764,26 @@ Fornece informações de status de alto nível. Essa propriedade deve ser usada 
 **RequestedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A largura de banda solicitada da porta, em bits por segundo. Essa propriedade é herdada do [**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85)).
+A largura de banda solicitada da porta, em bits por segundo. Essa propriedade é herdada de [**CIM \_ LogicalPort.**](/previous-versions//cc136869(v=vs.85))
 
 </dd> <dt>
 
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O último estado solicitado ou desejado para o elemento. O estado real do elemento é representado por **enabledstate**. Essa propriedade é fornecida para comparar os últimos Estados solicitados e atuais habilitados ou desabilitados. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+O último estado solicitado ou desejado para o elemento. O estado real do elemento é representado por **EnabledState.** Essa propriedade é fornecida para comparar os últimos estados habilitados ou desabilitados solicitados e atuais. Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 
 
@@ -800,13 +800,13 @@ O último estado solicitado ou desejado para o elemento. O estado real do elemen
 **Velocidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A largura de banda da porta, em bits por segundo. Essa propriedade é herdada do [**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85)).
+A largura de banda da porta, em bits por segundo. Essa propriedade é herdada de [**CIM \_ LogicalPort.**](/previous-versions//cc136869(v=vs.85))
 
 </dd> <dt>
 
@@ -819,33 +819,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O status atual do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), mas não é usada.
+O status atual do objeto. Essa propriedade é herdada [**de CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)mas não é usada.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeias de caracteres que descrevem os vários valores de matriz de **OperationalStatus** . Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Cadeias de caracteres que descrevem os **vários valores de matriz OperationalStatus.** Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O estado atual do dispositivo lógico. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+O estado atual do dispositivo lógico. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
@@ -858,11 +858,11 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome da classe de criação do sistema de escopo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O nome da classe de criação do sistema de scoping. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -871,65 +871,65 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O identificador exclusivo para a máquina virtual de escopo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O identificador exclusivo para a máquina virtual de definição de código. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data ou a hora em que o estado habilitado do elemento foi alterado pela última vez. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **NULL**.
+A data ou a hora em que o estado habilitado do elemento foi alterado pela última vez. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **TotalPowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número total de horas em que este dispositivo foi ligado. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+O número total de horas que esse dispositivo foi ligado. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), mas não é usada.
+Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), mas não é usada.
 
 </dd> <dt>
 
 **UsageRestriction**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Em algumas circunstâncias, uma porta lógica pode ser identificável como uma porta de front-end ou de back-end. Um exemplo dessa situação seria uma matriz de armazenamento que pode ter portas de back-end para se comunicar com unidades de disco e portas de front-end para se comunicar com os hosts. Se não houver nenhuma restrição sobre o uso da porta, o valor deverá ser definido como 4 (não restrito). Essa propriedade é herdada do [**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85)).
+Em algumas circunstâncias, uma porta lógica pode ser identificável como uma porta de front-end ou back-end. Um exemplo dessa situação seria uma matriz de armazenamento que pode ter portas de back-end para se comunicar com unidades de disco e portas de front-end para se comunicar com hosts. Se não houver nenhuma restrição sobre o uso da porta, o valor deverá ser definido como 4 (Não Restrito). Essa propriedade é herdada de [**CIM \_ LogicalPort.**](/previous-versions//cc136869(v=vs.85))
 
 
 
 | Valor                                                                        | Significado                   |
 |------------------------------------------------------------------------------|---------------------------|
-| <dl> <dt>4</dt> </dl> | Não restrito<br/> |
+| <dl> <dt>4</dt> </dl> | Não Restrito<br/> |
 
 
 
@@ -939,7 +939,7 @@ Em algumas circunstâncias, uma porta lógica pode ser identificável como uma p
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à **classe \_ SerialPort Msvm** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe Msvm \_ SerialPort** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -947,10 +947,10 @@ O acesso à **classe \_ SerialPort Msvm** pode ser restringido pela filtragem do
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -959,10 +959,10 @@ O acesso à **classe \_ SerialPort Msvm** pode ser restringido pela filtragem do
 
 <dl> <dt>
 
-[**\_LOGICALPORT CIM**](cim-logicalport.md)
+[**CIM \_ LogicalPort**](cim-logicalport.md)
 </dt> <dt>
 
-[**\_LOGICALPORT CIM**](/previous-versions//cc136869(v=vs.85))
+[**CIM \_ LogicalPort**](/previous-versions//cc136869(v=vs.85))
 </dt> <dt>
 
 [Classes de dispositivos seriais](serial-devices-classes.md)

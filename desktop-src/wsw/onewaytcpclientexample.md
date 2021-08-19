@@ -1,11 +1,11 @@
 ---
 title: OneWayTcpClientExample
-description: Este exemplo mostra um cliente TCP que envia uma mensagem unidirecional.
+description: Este exemplo mostra um cliente TCP que envia mensagens de uso único.
 ms.assetid: c5e930b5-da13-459c-8a83-eeeb120a79ed
 keywords:
-- OneWayTcpClientExample nativo – Web-Services
+- OneWayTcpClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: d1591c750af616eb616766b579f2e17a38e8df05edf6e32b2bf781967c09f7ab
@@ -17,13 +17,13 @@ ms.locfileid: "118192892"
 ---
 # <a name="onewaytcpclientexample"></a>OneWayTcpClientExample
 
-Este exemplo mostra um cliente TCP que envia uma mensagem unidirecional.
+Este exemplo mostra um cliente TCP que envia mensagens de uso único.
 
--   [OneWayTcpClient. cpp](#onewaytcpclientcpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [OneWayTcpClient.cpp](#onewaytcpclientcpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="onewaytcpclientcpp"></a>OneWayTcpClient. cpp
+## <a name="onewaytcpclientcpp"></a>OneWayTcpClient.cpp
 
 
 ```C++
@@ -250,7 +250,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 

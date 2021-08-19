@@ -1,7 +1,7 @@
 ---
-description: Indica o local de um repositório de certificados.
+description: Indica o local de um armazenamento de certificados.
 ms.assetid: b0c64e54-7139-4945-9802-6e6c479481e2
-title: Enumeração de CAPICOM_STORE_LOCATION (CAPICOM. h)
+title: CAPICOM_STORE_LOCATION enumeração (Capicom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Capicom.h
-ms.openlocfilehash: 24b2e786e2821c39c6ff67f5919dca2ac0c6bfe9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 15aa93b70840e13901f88c40c715024ec33a835be14b7453da99aecae079b487
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758280"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879006"
 ---
-# <a name="capicom_store_location-enumeration"></a>Enumeração do local de \_ armazenamento CApicom \_
+# <a name="capicom_store_location-enumeration"></a>Enumeração CAPICOM \_ STORE \_ LOCATION
 
-O tipo de enumeração do **\_ \_ local de armazenamento capicor** indica o local de um [*repositório de certificados*](../secgloss/c-gly.md).
+O **tipo de enumeração CAPICOM \_ STORE \_ LOCATION** indica o local de um armazenamento [*de certificados.*](../secgloss/c-gly.md)
 
 ## <a name="members"></a>Membros
 
@@ -30,20 +30,20 @@ O tipo de enumeração do **\_ \_ local de armazenamento capicor** indica o loca
 
 | Membro                                      | DESCRIÇÃO                                                                                                                                                                                                                                                                      | Valor |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-| **\_armazenamento de memória CApicom \_**                  | O repositório é um repositório de memória. As alterações no conteúdo da loja não são persistentes.<br/>                                                                                                                                                                              | 0     |
-| **CAPICOM do \_ \_ armazenamento do computador local \_**          | O repositório é um repositório do computador local. Os repositórios do computador local poderão ser armazenamentos de leitura/gravação somente se o usuário tiver permissões de leitura/gravação. Se o usuário tiver permissões de leitura/gravação e se o repositório for aberto como leitura/gravação, as alterações no conteúdo do repositório serão persistidas.<br/> | 1     |
-| **\_armazenamento de \_ usuário \_ atual do CAPICOM**           | O repositório é um armazenamento de usuário atual. Um armazenamento de usuário atual pode ser um repositório de leitura/gravação. Se for, as alterações no conteúdo do repositório serão persistidas.<br/>                                                                                                                      | 2     |
-| **armazenamento de usuários do CAPICOM \_ \_ do Active Directory \_ \_** | O repositório é um repositório Active Directory. Active Directory armazenamentos só podem ser abertos no modo somente leitura. Os certificados não podem ser adicionados ou removidos de repositórios Active Directory.<br/>                                                                                        | 3     |
-| **\_armazenamento de \_ usuário do cartão inteligente \_ CAPICOM \_**       | Os repositórios dão suporte a repositórios de certificados baseados em cartão inteligente. O repositório é o grupo de cartões inteligentes presentes. Introduzido no CAPICOM 2,0.<br/>                                                                                                                                         | 4     |
+| **ARMAZENAMENTO DE MEMÓRIA CAPICOM \_ \_**                  | O armazenamento é um armazenamento de memória. As alterações no conteúdo do armazenamento não são persistentes.<br/>                                                                                                                                                                              | 0     |
+| **ARMAZENAMENTO DE MÁQUINAS LOCAIS CAPICOM \_ \_ \_**          | O armazenamento é um armazenamento de máquinas local. Os armazenamentos de máquinas locais poderão ser armazenamentos de leitura/gravação somente se o usuário tiver permissões de leitura/gravação. Se o usuário tiver permissões de leitura/gravação e se o armazenamento for aberto para leitura/gravação, as alterações no conteúdo do armazenamento serão persistida.<br/> | 1     |
+| **ARMAZENAMENTO DE USUÁRIO ATUAL DO CAPICOM \_ \_ \_**           | O armazenamento é um armazenamento de usuário atual. Um armazenamento de usuário atual pode ser um armazenamento de leitura/gravação. Se for, as alterações no conteúdo do armazenamento serão persistida.<br/>                                                                                                                      | 2     |
+| **CAPICOM \_ ACTIVE \_ DIRECTORY \_ USER \_ STORE** | O armazenamento é um armazenamento do Active Directory. Os armazenamentos do Active Directory podem ser abertos somente no modo somente leitura. Os certificados não podem ser adicionados ou removidos dos armazenamentos do Active Directory.<br/>                                                                                        | 3     |
+| **CAPICOM \_ SMART \_ CARD \_ USER \_ STORE**       | Os armazenamentos são suportados por armazenamentos de certificados baseados em cartão inteligente. A loja é o grupo de cartões inteligentes atuais. Introduzido no CAPICOM 2.0.<br/>                                                                                                                                         | 4     |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O tipo de enumeração do **\_ \_ local de armazenamento CAPICOM** é usado pelos seguintes métodos:
+O **tipo de enumeração CAPICOM \_ STORE \_ LOCATION** é usado pelos seguintes métodos:
 
--   [**PrivateKey. Open**](privatekey-open.md)
--   [**Store. Open**](store-open.md)
+-   [**PrivateKey.Open**](privatekey-open.md)
+-   [**Store.Open**](store-open.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,8 +51,8 @@ O tipo de enumeração do **\_ \_ local de armazenamento CAPICOM** é usado pelo
 
 | Requisito | Valor |
 |----------------------------|--------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                |
-| parâmetro<br/>          | <dl> <dt>CAPICOM. h</dt> </dl> |
+| Redistribuível<br/> | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                |
+| Cabeçalho<br/>          | <dl> <dt>Capicom.h</dt> </dl> |
 
 
 

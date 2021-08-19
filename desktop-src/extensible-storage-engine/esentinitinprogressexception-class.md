@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: classe EsentInitInProgressException'
+description: 'Saiba mais sobre: Classe EsentInitInProgressException'
 title: Classe EsentInitInProgressException
 TOCTitle: EsentInitInProgressException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentInitInProgressException
@@ -24,28 +24,28 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b035465e575dd94f68b38cf72f8771c24add49d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ed57b146f679a0d697d19c48d7c81d4f4ed3aedef8a035b9b0f2d64fe504827e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105752549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064976"
 ---
 # <a name="esentinitinprogressexception-class"></a>Classe EsentInitInProgressException
 
-Classe base para exceções de JET_err.InitInProgress.
+Classe base para JET_err.Iniexceções tInProgress.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
-          Microsoft. ISAM. ESENT. Interop. EsentInitInProgressException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentInitInProgressException  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -71,6 +71,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentInitInProgressException](./esentinitinprogressexception-members.md)
+[Membros EsentInitInProgressException](./esentinitinprogressexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

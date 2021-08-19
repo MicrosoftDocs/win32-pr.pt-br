@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Msjter40.dll
-ms.openlocfilehash: 75cdf93b4c35a8c7b3dd77fca42c205d898f6e97
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8b0fa6eb0ac4bc29e5657d3e58d9be1c27188a0faf7c7d68281ceca239dea8e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118955775"
 ---
 # <a name="jeterrformattedmessage-function"></a>Função JetErrFormattedMessage
 
@@ -102,7 +102,7 @@ Um ponteiro para um ponteiro para o arquivo que explica o erro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for realizada com êxito, ela retornará **Jet \_ errSuccess**; caso contrário, ela retornará uma mensagem de erro formatada que indica o motivo específico da falha.
 

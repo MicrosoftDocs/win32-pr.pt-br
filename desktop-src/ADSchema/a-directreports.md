@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0ef5a555b7c1d48fdb337f2c876abf3f15ae8daa
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b60354fc07c5ea8fecada9150aea13308e10a92e1836bd37ea8d398e84f6d0f3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120049596"
 ---
 # <a name="reports-attribute"></a>Atributo de relatórios
 
@@ -36,7 +36,7 @@ Contém a lista de usuários que se reportam diretamente ao usuário. Os usuári
 | Frequência de atualização  | Sempre que os subordinados diretos de um usuário forem alterados. |
 | Attribute-Id      | 1.2.840.113556.1.2.436                          |
 | System-ID-GUID    | bf967a1c-0de6-11d0-a285-00aa003049e2            |
-| Sintaxe            | [**Objeto (DS-DN)**](s-object-ds-dn.md)         |
+| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md)         |
 
 
 
@@ -57,7 +57,7 @@ Contém a lista de usuários que se reportam diretamente ao usuário. Os usuári
 |------------------------|---------------------------------|
 | ID do link                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -78,7 +78,7 @@ Contém a lista de usuários que se reportam diretamente ao usuário. Os usuári
 |------------------------|---------------------------------|
 | ID do link                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
@@ -99,11 +99,11 @@ Contém a lista de usuários que se reportam diretamente ao usuário. Os usuári
 |------------------------|---------------------------------|
 | ID do link                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
+| System-Only            | Verdadeiro                            |
 | É de valor único       | Falso                           |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| NT-Security-Descriptor | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -120,11 +120,11 @@ Contém a lista de usuários que se reportam diretamente ao usuário. Os usuári
 |------------------------|---------------------------------|
 | ID do link                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -141,11 +141,11 @@ Contém a lista de usuários que se reportam diretamente ao usuário. Os usuári
 |------------------------|---------------------------------|
 | ID do link                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -162,11 +162,11 @@ Contém a lista de usuários que se reportam diretamente ao usuário. Os usuári
 |------------------------|---------------------------------|
 | ID do link                | 43                              |
 | MAPI-Id                | 0x800E                          |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

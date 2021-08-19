@@ -7,7 +7,7 @@ keywords:
 - Propriedade TransportSettings Serviços de Área de Trabalho Remota
 - Propriedade TransportSettings Serviços de Área de Trabalho Remota , interface IMsRdpClient5
 - Interface IMsRdpClient5 Serviços de Área de Trabalho Remota , propriedade TransportSettings
-- Propriedade TransportSettings Serviços de Área de Trabalho Remota , interface IMsRdpClient6
+- A propriedade TransportSettings Serviços de Área de Trabalho Remota , interface IMsRdpClient6
 - Interface IMsRdpClient6 Serviços de Área de Trabalho Remota , propriedade TransportSettings
 - Propriedade TransportSettings Serviços de Área de Trabalho Remota , interface IMsRdpClient7
 - Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , propriedade TransportSettings

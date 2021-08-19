@@ -1,7 +1,7 @@
 ---
-description: Função D3DXVec2Normalize (D3DX10Math. h) – retorna a versão normalizada de um vetor 2D.
+description: Função D3DXVec2Normalize (D3DX10Math.h) – retorna a versão normalizada de um vetor 2D.
 ms.assetid: fac4f269-2778-4500-af9e-23a0112543b0
-title: Função D3DXVec2Normalize (D3DX10Math. h)
+title: Função D3DXVec2Normalize (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119989926"
 ---
-# <a name="d3dxvec2normalize-function-d3dx10mathh"></a>Função D3DXVec2Normalize (D3DX10Math. h)
+# <a name="d3dxvec2normalize-function-d3dx10mathh"></a>Função D3DXVec2Normalize (D3DX10Math.h)
 
 Retorna a versão normalizada de um vetor 2D.
 
@@ -41,21 +41,21 @@ D3DXVECTOR2* D3DXVec2Normalize(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR2**](../direct3d9/d3dxvector2.md)\***
 
-Ponteiro para o [**D3DXVECTOR2**](d3d10-d3dxvector2.md) que é o resultado da operação.
+Ponteiro para [**o D3DXVECTOR2**](d3d10-d3dxvector2.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*VP* \[ no\]
+*pV* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](../direct3d9/d3dxvector2.md) \***
 
-Ponteiro para a estrutura de D3DXVECTOR2 de origem.
+Ponteiro para a estrutura D3DXVECTOR2 de origem.
 
 </dd> </dl>
 
@@ -67,7 +67,7 @@ Ponteiro para uma estrutura D3DXVECTOR2 que é a versão normalizada do vetor.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXVec2Normalize pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXVec2Normalize pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro p
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
 
 
 

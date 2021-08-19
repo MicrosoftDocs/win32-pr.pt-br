@@ -3,7 +3,7 @@ title: TBM_CLEARTICS mensagem (Commctrl.h)
 description: Remove as marcas de escala atuais de uma barra de faixa. Essa mensagem não remove as primeiras e as últimas marcas de escala, que são criadas automaticamente pela barra de faixa.
 ms.assetid: 2830497c-2cf0-4068-810c-c05d4e0abb8b
 keywords:
-- TBM_CLEARTICS controles de Windows mensagem
+- TBM_CLEARTICS controles Windows mensagem
 topic_type:
 - apiref
 api_name:

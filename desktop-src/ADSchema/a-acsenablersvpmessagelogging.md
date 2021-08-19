@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0537472a787d3689a259bfb79e9e4cd451c4aa1d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d4c9356e580400b6037feac4c90e5579da21d15ca9234c6f6df7a563932605c9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105771722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119929846"
 ---
 # <a name="acs-enable-rsvp-message-logging-attribute"></a>ACS-habilitar-RSVP-atributo de log de mensagem
 
@@ -58,7 +58,7 @@ True se o log RSVP estiver habilitado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -79,7 +79,7 @@ True se o log RSVP estiver habilitado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -100,7 +100,7 @@ True se o log RSVP estiver habilitado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -121,7 +121,7 @@ True se o log RSVP estiver habilitado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -142,7 +142,7 @@ True se o log RSVP estiver habilitado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -163,7 +163,7 @@ True se o log RSVP estiver habilitado.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

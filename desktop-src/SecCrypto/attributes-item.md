@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 208e36fd8d4d7e3effc2c0f59b7db921fed76d79
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 94f1ab0f9e2ef48892b27ddc51d3ac3fd1a61216d63bf4a81013e7565710a1a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119879826"
 ---
 # <a name="attributesitem-property"></a>Propriedade Attributes. Item
 
-\[O CAPICOM é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista, Windows XP. Em vez disso, use a [**classe CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) no namespace [**System. Security. Cryptography**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
+\[o capicom é um componente somente de 32 bits que está disponível para uso nos seguintes sistemas operacionais: Windows Server 2008, Windows Vista, Windows XP. Em vez disso, use a [**classe CryptographicAttributeObjectCollection**](/dotnet/api/system.security.cryptography.cryptographicattributeobjectcollection?view=dotnet-plat-ext-3.1&preserve-view=true) no namespace [**System. Security. Cryptography**](/dotnet/api/system.security.cryptography?view=dotnet-plat-ext-3.1&preserve-view=true) .\]
 
 A propriedade **Item** recupera o objeto de [**atributo**](attribute.md) que representa o atributo indexado. Essa é a propriedade padrão.
 
@@ -51,7 +51,7 @@ Um objeto de [**atributo**](attribute.md) que representa o atributo indexado.
 |----------------------------------|----------------------------------------------------------------------------------------|
 | Fim do suporte do cliente<br/> | Windows Vista<br/>                                                               |
 | Fim do suporte do servidor<br/> | Windows Server 2008<br/>                                                         |
-| Redistribuível<br/>       | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/>       | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>                   | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

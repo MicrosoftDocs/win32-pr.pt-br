@@ -3,7 +3,7 @@ title: MCI_CUE comando (mmsystem. h)
 description: O \_ comando de indicação MCI indicações de um dispositivo para que a reprodução ou a gravação comece com o atraso mínimo. Digital-Video, VCR e Wave-Audio Devices reconhecem este comando.
 ms.assetid: 22da4a84-a7af-42df-b950-8d1184fff9ba
 keywords:
-- Multimídia do Windows de comando MCI_CUE
+- MCI_CUE comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec8463c68f304fe216049568e0df518cbe1d0090
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 432c3fcd89a4841840559e44400716834df260b533d2cf40daa9da5e6a8fb6f6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105766375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119784596"
 ---
 # <a name="mci_cue-command"></a>\_Comando de indicação MCI
 

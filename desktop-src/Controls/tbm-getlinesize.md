@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TBM_GETLINESIZE (commctrl. h)
-description: Recupera o número de posições lógicas que o controle deslizante do TrackBar move em resposta à entrada do teclado das teclas de direção, como as chaves ou. As posições lógicas são os incrementos inteiros no intervalo de TrackBar de mínimo a máximo de posições do controle deslizante.
+title: TBM_GETLINESIZE mensagem (Commctrl.h)
+description: Recupera o número de posições lógicas que o controle deslizante da barra de faixa move em resposta à entrada do teclado das teclas de direção, como as teclas ou . As posições lógicas são os incrementos inteiros no intervalo da barra de faixa de posições mínimas para máximas do controle deslizante.
 ms.assetid: b596060a-5bac-4b31-82f3-ee4744a9779c
 keywords:
-- controles de Windows de mensagem de TBM_GETLINESIZE
+- TBM_GETLINESIZE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "120046556"
 ---
-# <a name="tbm_getlinesize-message"></a>TBM \_ GETlinhasize mensagem
+# <a name="tbm_getlinesize-message"></a>Mensagem \_ GETLINESIZE do TBM
 
-Recupera o número de posições lógicas que o controle deslizante do TrackBar move em resposta à entrada do teclado das teclas de direção, como as chaves ou. As posições lógicas são os incrementos inteiros no intervalo de TrackBar de mínimo a máximo de posições do controle deslizante.
+Recupera o número de posições lógicas que o controle deslizante da barra de faixa move em resposta à entrada do teclado das teclas de direção, como as teclas ou . As posições lógicas são os incrementos inteiros no intervalo da barra de faixa de posições mínimas para máximas do controle deslizante.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,13 +37,13 @@ Recupera o número de posições lógicas que o controle deslizante do TrackBar 
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 32 bits que especifica o tamanho da linha para o TrackBar.
+Retorna um valor de 32 bits que especifica o tamanho da linha para a barra de faixa.
 
 ## <a name="remarks"></a>Comentários
 
 A configuração padrão para o tamanho da linha é 1.
 
-O TrackBar também envia uma mensagem do [**WM \_ HSCROLL**](wm-hscroll.md) ou do [**WM \_ VSCROLL**](wm-vscroll.md) com os códigos de notificação da lista de TB \_ e TB \_ LINEDOWN para sua janela pai quando o usuário pressiona as teclas de direção.
+A barra de faixa também envia uma mensagem [**WM \_ HSCROLL**](wm-hscroll.md) ou [**WM \_ VSCROLL**](wm-vscroll.md) com os códigos de notificação TBTB e TB LINEDOWN para sua janela pai quando o usuário pressiona as teclas de \_ \_ seta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,9 +51,9 @@ O TrackBar também envia uma mensagem do [**WM \_ HSCROLL**](wm-hscroll.md) ou d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

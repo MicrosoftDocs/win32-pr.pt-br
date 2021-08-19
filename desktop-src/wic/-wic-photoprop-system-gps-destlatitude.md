@@ -4,12 +4,12 @@ ms.assetid: 05284291-977d-49b8-ad92-365f68384960
 title: Política de metadados de foto System. GPS. DestLatitude
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 192db0f8efc868e9457e86d283d9967e4692c95b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d57cce67b13235933816e244e17b5c761e1f0d230055eb82d683eb610579e5aa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105796398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119882346"
 ---
 # <a name="systemgpsdestlatitude-photo-metadata-policy"></a>Política de metadados de foto System. GPS. DestLatitude
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

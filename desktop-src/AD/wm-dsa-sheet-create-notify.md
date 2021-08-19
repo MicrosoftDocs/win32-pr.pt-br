@@ -1,10 +1,10 @@
 ---
 title: WM_DSA_SHEET_CREATE_NOTIFY mensagem
-description: Postado no snap-in do Active Directory MMC para criar uma folha de propriedades secundária.
+description: Postado no snap-in do MMC do Active Directory para criar uma folha de propriedades secundária.
 ms.assetid: 878878bf-fb78-4669-b282-1dd3349f35d5
 ms.tgt_platform: multiple
 keywords:
-- Mensagem de WM_DSA_SHEET_CREATE_NOTIFY Active Directory
+- WM_DSA_SHEET_CREATE_NOTIFY mensagem do Active Directory
 topic_type:
 - apiref
 api_name:
@@ -13,19 +13,19 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 77f08424e7b39449861ec654f1ff7891c6e9c60a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c51fc850504eb4455a41b881aed1109554d0482a8f889fafa2eaf7050488e450
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024184"
 ---
-# <a name="wm_dsa_sheet_create_notify-message"></a>\_Folha DSA do WM \_ \_ criar notificação de \_ mensagem
+# <a name="wm_dsa_sheet_create_notify-message"></a>Mensagem WM \_ DSA \_ SHEET \_ CREATE \_ NOTIFY
 
-A mensagem de **\_ \_ \_ notificação criar \_ notificar do WM DSA sheet** é postada no snap-in Active Directory MMC para criar uma folha de propriedades secundária.
+A **mensagem WM \_ DSA \_ SHEET CREATE \_ \_ NOTIFY** é postada no snap-in do MMC do Active Directory para criar uma folha de propriedades secundária.
 
 > [!Note]  
-> Esse valor de mensagem não está definido em um arquivo de cabeçalho publicado. Para usar esse valor de mensagem, defina-o no formato exato mostrado.
+> Esse valor da mensagem não está definido em um arquivo de header publicado. Para usar esse valor de mensagem, defina-o no formato exato mostrado.
 
  
 
@@ -45,17 +45,17 @@ LRESULT SendMessage(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
-O identificador de janela da janela de snap-in que processará essa mensagem. Esse identificador é obtido do membro **hwndHidden** da estrutura [**PROPSHEETCFG**](propsheetcfg.md) .
+O alça de janela da janela de snap-in que processará essa mensagem. Esse handle é obtido do membro **hwndHidden** da [**estrutura PROPSHEETCFG.**](propsheetcfg.md)
 
 </dd> <dt>
 
 *wParam* 
 </dt> <dd>
 
-Contém um ponteiro para uma estrutura de [**\_ \_ \_ informações da página DSA s**](dsa-sec-page-info.md) que define a folha de propriedades secundária a ser criada. O receptor da mensagem deve liberar essa memória com a função [**LocalFree**](/windows/desktop/api/winbase/nf-winbase-localfree) quando ela não for mais necessária.
+Contém um ponteiro para uma estrutura [**DSA \_ SEC \_ PAGE \_ INFO**](dsa-sec-page-info.md) que define a folha de propriedades secundária a ser criado. O receptor da mensagem deve liberar essa memória com a [**função LocalFree**](/windows/desktop/api/winbase/nf-winbase-localfree) quando ela não for mais necessária.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Não usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não usado.
 
@@ -88,10 +88,10 @@ Não usado.
 [**PROPSHEETCFG**](propsheetcfg.md)
 </dt> <dt>
 
-[**\_ \_ informações da página DSA SEC \_**](dsa-sec-page-info.md)
+[**INFORMAÇÕES DA PÁGINA DSA \_ SEC \_ \_**](dsa-sec-page-info.md)
 </dt> <dt>
 
-[**LocalFree**](/windows/desktop/api/winbase/nf-winbase-localfree)
+[**Localfree**](/windows/desktop/api/winbase/nf-winbase-localfree)
 </dt> </dl>
 
  

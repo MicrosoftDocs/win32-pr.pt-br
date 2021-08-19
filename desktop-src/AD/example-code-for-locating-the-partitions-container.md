@@ -4,22 +4,22 @@ description: Este tópico inclui exemplos de código que localizam o contêiner 
 ms.assetid: 7aa6ad5a-7baf-484a-9296-eafb61da5f4e
 ms.tgt_platform: multiple
 keywords:
-- Código de exemplo para localizar o AD de contêiner de partições
-- ANÚNCIO de partições de diretório de aplicativos, código de exemplo para localizar o contêiner de partições
+- Código de exemplo para localizar o AD do contêiner de partições
+- Application Directory Partitions AD , código de exemplo para localizar o contêiner de partições
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3f10156894a71a3308b58d125c16782497e5f29
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5757e638e046089d828ee1c681d04ec210986181cb74ec3b1253c05515eda2fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105754057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962297"
 ---
 # <a name="example-code-for-locating-the-partitions-container"></a>Código de exemplo para localizar o contêiner de partições
 
 Este tópico inclui exemplos de código que localizam o contêiner de partição.
 
-O exemplo de código C/C++ a seguir obtém o nome distinto do contêiner de partições pesquisando o contêiner de configuração para o objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) .
+O exemplo de código C/C++ a seguir obtém o nome diferenciado do contêiner Partições pesquisando o contêiner de configuração para o [**objeto crossRefContainer.**](/windows/desktop/ADSchema/c-crossrefcontainer)
 
 
 ```C++
@@ -150,7 +150,7 @@ HRESULT GetPartitionsDNSearch(LPWSTR *ppwszPartitionsDN)
 
 
 
-O exemplo de código a seguir Visual Basic Scripting Edition Obtém o nome distinto do contêiner de partições pesquisando o contêiner de configuração para o objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) .
+O exemplo Visual Basic código do Scripting Edition a seguir obtém o nome diferenciado do contêiner Partições pesquisando o contêiner de configuração para o [**objeto crossRefContainer.**](/windows/desktop/ADSchema/c-crossrefcontainer)
 
 
 ```VB
@@ -193,7 +193,7 @@ End Function
 
 
 
-O exemplo de código C/C++ a seguir obtém o nome distinto do contêiner de partições, criando manualmente o nome distinto.
+O exemplo de código C/C++ a seguir obtém o nome diferenciado do contêiner Partições criando manualmente o nome diferenciado.
 
 
 ```C++
@@ -262,7 +262,7 @@ HRESULT GetPartitionsDNManual(LPWSTR *ppwszPartitionsDN)
 
 
 
-O exemplo de código a seguir Visual Basic Obtém o nome distinto do contêiner de partições, criando manualmente o nome distinto.
+O exemplo Visual Basic código a seguir obtém o nome diferenciado do contêiner Partições criando manualmente o nome diferenciado.
 
 
 ```VB
@@ -283,7 +283,7 @@ End Function
 
 
 
-O exemplo de código C# a seguir obtém o nome distinto do contêiner de partições pesquisando o contêiner de configuração para o objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) . Este exemplo usa C# com System. DirectoryServices.
+O exemplo de código C# a seguir obtém o nome diferenciado do contêiner Partitions pesquisando o contêiner de configuração para o [**objeto crossRefContainer.**](/windows/desktop/ADSchema/c-crossrefcontainer) Este exemplo usa C# com System.DirectoryServices.
 
 
 ```CSharp
@@ -317,7 +317,7 @@ static string GetPartitionsDN()
 
 
 
-O exemplo de código .NET a seguir Visual Basic Obtém o nome distinto do contêiner de partição pesquisando o contêiner de configuração para o objeto [**crossRefContainer**](/windows/desktop/ADSchema/c-crossrefcontainer) . Este exemplo usa Visual Basic .NET com System. DirectoryServices.
+O exemplo Visual Basic código .NET a seguir obtém o nome diferenciado do contêiner De partição pesquisando o contêiner de configuração para o [**objeto crossRefContainer.**](/windows/desktop/ADSchema/c-crossrefcontainer) Este exemplo usa Visual Basic .NET com System.DirectoryServices.
 
 
 ```VB
@@ -352,6 +352,6 @@ End Function
 
 
 
- 
+ 
 
- 
+ 

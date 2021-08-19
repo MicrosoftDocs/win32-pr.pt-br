@@ -3,7 +3,7 @@ title: Mensagem de EM_SETSEL (WinUser. h)
 description: Seleciona um intervalo de caracteres em um controle de edição. Você pode enviar essa mensagem para um controle de edição ou um controle de edição rico.
 ms.assetid: 5cb7ff1e-18e8-49c8-8072-872cf32b18b0
 keywords:
-- Controles de EM_SETSEL de mensagens do Windows
+- controles de Windows de mensagem de EM_SETSEL
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4981fa179ae4bdd454ab0b0a6d7485185ed31d2c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 190d8a62b874d3449e0a9bf5d334a515000fb0436ba73753a8657936363071b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062886"
 ---
 # <a name="em_setsel-message"></a>\_Mensagem em SETSEL
 
@@ -43,7 +43,7 @@ A posição do caractere final da seleção.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -67,9 +67,9 @@ Se o controle de edição tiver o estilo [**es \_ NOHIDESEL**](edit-control-styl
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -4,10 +4,10 @@
     - name: Sobre o gerenciamento de memória
       href: about-memory-management.md
       items:
-        - name: Espaço de endereço virtual
+        - name: Espaço de Endereço Virtual
           href: virtual-address-space.md
           items:
-            - name: Espaço de endereço virtual e armazenamento físico
+            - name: Espaço de endereço virtual e dados físicos Armazenamento
               href: virtual-address-space-and-physical-storage.md
             - name: Conjunto de Trabalho
               href: working-set.md
@@ -23,7 +23,7 @@
               href: memory-limits-for-windows-releases.md
         - name: Pools de memória
           href: memory-pools.md
-        - name: Informações de desempenho da memória
+        - name: Informações de desempenho de memória
           href: memory-performance-information.md
         - name: Funções de memória virtual
           href: virtual-memory-functions.md
@@ -39,7 +39,7 @@
           items:
             - name: Heap de baixa fragmentação
               href: low-fragmentation-heap.md
-        - name: Mapeamento de arquivo
+        - name: Mapeamento de arquivos
           href: file-mapping.md
           items:
             - name: Criando um objeto de mapeamento de arquivo
@@ -48,52 +48,52 @@
               href: creating-a-file-view.md
             - name: Compartilhando arquivos e memória
               href: sharing-files-and-memory.md
-            - name: Leitura e gravação de uma exibição de arquivo
+            - name: Lendo e escrevendo de uma exibição de arquivo
               href: reading-and-writing-from-a-file-view.md
             - name: Fechando um objeto de mapeamento de arquivo
               href: closing-a-file-mapping-object.md
-            - name: Segurança de mapeamento de arquivo e direitos de acesso
+            - name: Segurança e direitos de acesso do mapeamento de arquivo
               href: file-mapping-security-and-access-rights.md
-        - name: Suporte a memória grande
+        - name: Suporte à memória grande
           href: large-memory-support.md
           items:
-            - name: 'Ajuste de 4 gigabytes: BCDEdit e Boot.ini'
+            - name: 'Ajuste de 4 gigabyte: BCDEdit e Boot.ini'
               href: 4-gigabyte-tuning.md
             - name: Extensão de endereço físico
               href: physical-address-extension.md
-            - name: Extensões de janelas de endereço
+            - name: Extensões de janela de endereço
               href: address-windowing-extensions.md
-            - name: Suporte a Large-Page
+            - name: Large-Page suporte
               href: large-page-support.md
         - name: Funções globais e locais
           href: global-and-local-functions.md
-        - name: Funções da biblioteca C padrão
+        - name: Funções de biblioteca C padrão
           href: standard-c-library-functions.md
         - name: Comparando métodos de alocação de memória
           href: comparing-memory-allocation-methods.md
     - name: Usando as funções de gerenciamento de memória
       href: using-the-memory-management-functions.md
       items:
-        - name: Reservando e confirmando memória
+        - name: Reservando e comando memória
           href: reserving-and-committing-memory.md
         - name: Criando páginas de proteção
           href: creating-guard-pages.md
         - name: Enumerando um heap
           href: enumerating-a-heap.md
-        - name: Obtendo heaps de processo
+        - name: Obter heaps de processo
           href: getting-process-heaps.md
-        - name: Usando mapeamento de arquivo
+        - name: Usando o mapeamento de arquivos
           href: using-file-mapping.md
           items:
             - name: Criando uma exibição dentro de um arquivo
               href: creating-a-view-within-a-file.md
-            - name: Criando a memória compartilhada nomeada
+            - name: Criando memória compartilhada nomeada
               href: creating-named-shared-memory.md
             - name: Criando um mapeamento de arquivo usando páginas grandes
               href: creating-a-file-mapping-using-large-pages.md
-            - name: Obtendo um nome de arquivo de um identificador de arquivo
+            - name: Obtendo um nome de arquivo de um alçamento de arquivo
               href: obtaining-a-file-name-from-a-file-handle.md
-        - name: Exemplo de AWE
+        - name: Exemplo do AWE
           href: awe-example.md
         - name: Alocando memória de um nó NUMA
           href: allocating-memory-from-a-numa-node.md
@@ -132,7 +132,7 @@
               href: /windows/desktop/api/MemoryApi/nf-memoryapi-createfilemappingfromapp
             - name: CreateFileMappingNuma
               href: /windows/desktop/api/WinBase/nf-winbase-createfilemappingnumaa
-            - name: CreateMemoryResourceNotification
+            - name: Creatememoryresourcenotification
               href: /windows/desktop/api/memoryapi/nf-memoryapi-creatememoryresourcenotification
             - name: DiscardVirtualMemory
               href: /windows/desktop/api/memoryapi/nf-memoryapi-discardvirtualmemory
@@ -162,19 +162,19 @@
               href: /windows/desktop/api/memoryapi/nf-memoryapi-getsystemfilecachesize
             - name: GetWriteWatch
               href: /windows/desktop/api/memoryapi/nf-memoryapi-getwritewatch
-            - name: GlobalAlloc
+            - name: Globalalloc
               href: /windows/desktop/api/WinBase/nf-winbase-globalalloc
             - name: GlobalDiscard
               href: /windows/desktop/api/WinBase/nf-winbase-globaldiscard
             - name: GlobalFlags
               href: /windows/desktop/api/WinBase/nf-winbase-globalflags
-            - name: GlobalFree
+            - name: Globalfree
               href: /windows/desktop/api/WinBase/nf-winbase-globalfree
             - name: GlobalHandle
               href: /windows/desktop/api/WinBase/nf-winbase-globalhandle
             - name: GlobalLock
               href: /windows/desktop/api/WinBase/nf-winbase-globallock
-            - name: GlobalMemoryStatus
+            - name: Globalmemorystatus
               href: /windows/desktop/api/WinBase/nf-winbase-globalmemorystatus
             - name: GlobalMemoryStatusEx
               href: /windows/desktop/api/sysinfoapi/nf-sysinfoapi-globalmemorystatusex
@@ -184,25 +184,25 @@
               href: /windows/desktop/api/WinBase/nf-winbase-globalsize
             - name: GlobalUnlock
               href: /windows/desktop/api/WinBase/nf-winbase-globalunlock
-            - name: HeapAlloc
+            - name: Heapalloc
               href: /windows/desktop/api/HeapApi/nf-heapapi-heapalloc
             - name: HeapCompact
               href: /windows/desktop/api/HeapApi/nf-heapapi-heapcompact
             - name: '{1&gt;{2&gt;HeapCreate&lt;2}&lt;1}'
               href: /windows/desktop/api/HeapApi/nf-heapapi-heapcreate
-            - name: HeapDestroy
+            - name: HeapDume
               href: /windows/desktop/api/HeapApi/nf-heapapi-heapdestroy
-            - name: HeapFree
+            - name: Heapfree
               href: /windows/desktop/api/HeapApi/nf-heapapi-heapfree
             - name: HeapLock
               href: /windows/desktop/api/HeapApi/nf-heapapi-heaplock
             - name: HeapQueryInformation
               href: /windows/desktop/api/HeapApi/nf-heapapi-heapqueryinformation
-            - name: HeapReAlloc
+            - name: Heaprealloc
               href: /windows/desktop/api/HeapApi/nf-heapapi-heaprealloc
             - name: HeapSetInformation
               href: /windows/desktop/api/HeapApi/nf-heapapi-heapsetinformation
-            - name: HeapSize
+            - name: Heapsize
               href: /windows/desktop/api/HeapApi/nf-heapapi-heapsize
             - name: HeapUnlock
               href: /windows/desktop/api/HeapApi/nf-heapapi-heapunlock

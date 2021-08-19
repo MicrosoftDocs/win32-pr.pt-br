@@ -13,15 +13,15 @@ ms.locfileid: "120052016"
 ---
 # <a name="device-removal-notification"></a>Notificação de remoção de dispositivo
 
-Se o usuário remover um dispositivo Plug and Play que o grafo estava usando, o Gerenciador de grafo de filtro posta um evento de [**\_ \_ perda de dispositivo EC**](ec-device-lost.md) . Se o dispositivo ficar disponível novamente, o Gerenciador de grafo de filtro publicará outro evento de **\_ \_ perda de dispositivo EC** . No entanto, o estado anterior do filtro de captura não é mais válido. O aplicativo deve recriar o grafo para usar o dispositivo.
+Se o usuário remover um dispositivo Plug and Play que o grafo estava usando, o gerenciador de grafo de filtro postará um evento [**EC \_ DEVICE \_ LOST.**](ec-device-lost.md) Se o dispositivo ficar disponível novamente, o gerenciador de grafo de filtro postará outro **evento EC \_ DEVICE \_ LOST.** No entanto, o estado anterior do filtro de captura não é mais válido. O aplicativo deve recriar o grafo para usar o dispositivo.
 
-DirectShow não envia nenhum evento quando um novo dispositivo é conectado. Para saber quando um novo dispositivo está disponível, o aplicativo pode monitorar \_ as mensagens da janela do WM DEVICECHANGE. Para obter mais informações, consulte "gerenciamento de dispositivo" na documentação do Platform SDK.
+DirectShow não envia nenhum evento quando um novo dispositivo está conectado. Para saber quando um novo dispositivo está disponível, o aplicativo pode monitorar mensagens de janela WM \_ DEVICECHANGE. Para obter mais informações, consulte "Gerenciamento de Dispositivos" na documentação do SDK da plataforma.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

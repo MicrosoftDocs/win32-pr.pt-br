@@ -1,7 +1,7 @@
 ---
 description: Associa um dispositivo de armazenamento ao controlador de armazenamento que possui o dispositivo.
 ms.assetid: 3DE05EDC-C54A-4C3C-9057-4418246037D5
-title: Classe Msvm_ControlledBy
+title: Msvm_ControlledBy classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -24,18 +24,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7986ffb842f7a1a104a0a8d846c1b6ee47a21523
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b08cf97c54363009e839ea78fe139c6c8a1bdd81cac07182d019d3d00857dee4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120130596"
 ---
-# <a name="msvm_controlledby-class"></a>\_Classe Msvm ControlledBy
+# <a name="msvm_controlledby-class"></a>Classe Msvm \_ ControlledBy
 
-Associa um dispositivo de armazenamento ao controlador de armazenamento que possui o dispositivo. Essa associação é usada com controladores IDE e de disquete.
+Associa um dispositivo de armazenamento ao controlador de armazenamento que possui o dispositivo. Essa associação é usada com controladores IDE e disquete.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -59,78 +59,78 @@ class Msvm_ControlledBy : CIM_ControlledBy
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ ControlledBy** tem estes tipos de membros:
+A **classe Msvm \_ ControlledBy** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ ControlledBy** tem essas propriedades.
+A **classe Msvm \_ ControlledBy** tem essas propriedades.
 
 <dl> <dt>
 
 **AccessMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A acessibilidade do dispositivo por meio do controlador Antecedent. Essa propriedade é herdada do [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)e é sempre definida como 2 (leitura/gravação).
+A acessibilidade do dispositivo por meio do controlador antecessor. Essa propriedade é herdada [**de CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)e é sempre definida como 2 (leitura/gravação).
 
 </dd> <dt>
 
 **AccessPriority**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A prioridade fornecida para acessar o dispositivo por meio desse controlador. O caminho de prioridade mais alta terá o menor valor. Essa propriedade é herdada do [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)e é sempre definida como 0.
+A prioridade dada aos acessos do dispositivo por meio desse controlador. O caminho de prioridade mais alta terá o valor mais baixo. Essa propriedade é herdada [**de CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)e é sempre definida como 0.
 
 </dd> <dt>
 
-**Accessstate**
+**AccessState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o controlador está ativando ou acessando ativamente o dispositivo. Essa propriedade é herdada do [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)e é sempre definida como 1 (ativa).
+Indica se o controlador está ativamente no comando ou acessando o dispositivo. Essa propriedade é herdada [**de CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)e é sempre definida como 1 (Ativa).
 
 </dd> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **\_ controlador CIM**](/windows/desktop/CIMWin32Prov/cim-controller)**
+Tipo de dados: **[ **Controlador CIM \_**](/windows/desktop/CIMWin32Prov/cim-controller)**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma referência ao controlador. Essa propriedade é herdada do [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby).
+Uma referência ao controlador. Essa propriedade é herdada de [**CIM \_ ControlledBy.**](/windows/desktop/CIMWin32Prov/cim-controlledby)
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **\_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)**
+Tipo de dados: **[ **Cim \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma referência ao dispositivo controlado. Essa propriedade é herdada do [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby).
+Uma referência ao dispositivo controlado. Essa propriedade é herdada de [**CIM \_ ControlledBy.**](/windows/desktop/CIMWin32Prov/cim-controlledby)
 
 </dd> <dt>
 
@@ -143,78 +143,78 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O endereço do dispositivo associado no contexto do controlador Antecedent. Essa propriedade é herdada do [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby).
+O endereço do dispositivo associado no contexto do controlador antecessor. Essa propriedade é herdada de [**CIM \_ ControlledBy.**](/windows/desktop/CIMWin32Prov/cim-controlledby)
 
 </dd> <dt>
 
 **NegotiatedDataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ DeviceConnection**](/windows/desktop/CIMWin32Prov/cim-deviceconnection)e é sempre definida como 0.
+Essa propriedade é herdada de [**\_ DeviceConnection cim**](/windows/desktop/CIMWin32Prov/cim-deviceconnection)e é sempre definida como 0.
 
 </dd> <dt>
 
 **NegotiatedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ DeviceConnection**](/windows/desktop/CIMWin32Prov/cim-deviceconnection)e é sempre definida como 0.
+Essa propriedade é herdada de [**\_ DeviceConnection cim**](/windows/desktop/CIMWin32Prov/cim-deviceconnection)e é sempre definida como 0.
 
 </dd> <dt>
 
 **NumberOfHardResets**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby), mas não é usada.
 
 </dd> <dt>
 
 **NumberOfSoftResets**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby), mas não é usada.
 
 </dd> <dt>
 
 **TimeOfDeviceReset**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby), mas não é usada.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe **Msvm \_ ControlledBy** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe Msvm \_ ControlledBy** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -222,10 +222,10 @@ O acesso à classe **Msvm \_ ControlledBy** pode ser restringido pela filtragem 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -234,13 +234,13 @@ O acesso à classe **Msvm \_ ControlledBy** pode ser restringido pela filtragem 
 
 <dl> <dt>
 
-[**\_CONTROLLEDBY CIM**](cim-controlledby.md)
+[**CIM \_ ControlledBy**](cim-controlledby.md)
 </dt> <dt>
 
-[**\_CONTROLLEDBY CIM**](/windows/desktop/CIMWin32Prov/cim-controlledby)
+[**CIM \_ ControlledBy**](/windows/desktop/CIMWin32Prov/cim-controlledby)
 </dt> <dt>
 
-[Classes de armazenamento](storage-classes.md)
+[Armazenamento Classes](storage-classes.md)
 </dt> </dl>
 
  

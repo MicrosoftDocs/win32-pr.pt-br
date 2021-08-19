@@ -4,12 +4,12 @@ ms.assetid: 9e269b18-e5b1-4801-b8e7-473750443c6d
 title: Interfaces de pacote do XPS OM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e1465f5d6782e29f9c37f899b59790302e21ebf1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6732531e3874046bbd174c363db24e304da95b9596b810014abb52a795e720c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119886136"
 ---
 # <a name="xps-om-package-interfaces"></a>Interfaces de pacote do XPS OM
 

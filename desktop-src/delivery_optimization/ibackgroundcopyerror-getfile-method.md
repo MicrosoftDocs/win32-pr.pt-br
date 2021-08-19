@@ -17,12 +17,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b84396797378c77a6f774b4c63a3966b0d601b7f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fbed5497bcebb3518c7f6a56646976cc01fbfebc501af4a08e861139311f4bc1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105795466"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120096706"
 ---
 # <a name="ibackgroundcopyerrorgetfile-method"></a>Método IBackgroundCopyError:: GetFile
 
@@ -50,7 +50,7 @@ Um ponteiro de interface [**IBackgroundCopyFile**](ibackgroundcopyfile.md) cujos
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna os valores de **HRESULT** a seguir.
 
@@ -71,9 +71,9 @@ Esse método retorna os valores de **HRESULT** a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>DeliveryOptimization. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Dosvc. lib</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>Dosvc.dll</dt> </dl>                |

@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: db32c13cec50c1b5d5308f6f7287339ee2de030d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f42e2c54d7c268bc90fb68b5d51c935b8be5fe0f99ad2c40ab3d8a3834604d8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119883406"
 ---
 # <a name="linelayouttype-complex-type"></a>Tipo complexo LineLayoutType
 
@@ -33,7 +33,7 @@ Define o tipo que contém informações sobre as linhas que são usadas em um de
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

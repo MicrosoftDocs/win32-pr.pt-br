@@ -3,7 +3,7 @@ title: Mensagem de TB_CUSTOMIZE (commctrl. h)
 description: Exibe a caixa de diálogo Personalizar barra de ferramentas.
 ms.assetid: 45249467-d585-4ffd-8bbe-e39739059c40
 keywords:
-- Controles de TB_CUSTOMIZE de mensagens do Windows
+- controles de Windows de mensagem de TB_CUSTOMIZE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dada0ef195e898b7a46487a2d775e46d6af854ed
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 765c4fe1cba535903ff1e60804ee6d4ec5743f5d3726212f9aca16742a40913b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105749069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957925"
 ---
 # <a name="tb_customize-message"></a>Mensagem de personalização de TB \_
 
@@ -43,7 +43,7 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -60,9 +60,9 @@ Sem valor de retorno.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

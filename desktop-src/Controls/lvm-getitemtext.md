@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETITEMTEXT (commctrl. h)
 description: Recupera o texto de um item de exibição de lista ou subitem. Você pode enviar essa mensagem explicitamente ou usando a \_ macro GetItemText do ListView.
 ms.assetid: 5711ed18-a766-4e7f-9e9d-b9203231b369
 keywords:
-- Controles de LVM_GETITEMTEXT de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETITEMTEXT
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c71eec6b9dab4c649b11da5b24568eea816774ef
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 32d5292f9814b3ef62667d44582eab44a2f18ac6c274682d180dd26f1b7cdd9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120062576"
 ---
 # <a name="lvm_getitemtext-message"></a>\_Mensagem GETITEMTEXT LVM
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se você enviar essa mensagem explicitamente, ela retornará o número de caracteres no membro **pszText** da estrutura [**LVITEM**](/windows/win32/api/commctrl/ns-commctrl-lvitema) .
 
@@ -61,9 +61,9 @@ Você também pode enviar essa mensagem chamando a macro [**ListView \_ GetItemT
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **LVM \_ GETITEMTEXTW** (Unicode) e **LVM \_ GETITEMTEXTA** (ANSI)<br/>           |
 
 

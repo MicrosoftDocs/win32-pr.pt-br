@@ -3,7 +3,7 @@ title: BOTÃO. cursor
 description: O atributo cursor especifica ou recupera o cursor que aparece quando o ponteiro do mouse passa sobre o botão.
 ms.assetid: 19bdbb23-00e2-45cf-b67d-9ada036b9c3b
 keywords:
-- BOTÃO. cursor Windows Media Player
+- Windows Media Player BUTTON. cursor
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2641491a5a73498da2c43fd74d4187b5594e177
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: aa98c91080bc6d108e8ab62f0de99758c4eb6ba4229a83f8ded8b22bb2ec9695
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120123786"
 ---
 # <a name="buttoncursor"></a>BOTÃO. cursor
 

@@ -4,12 +4,12 @@ ms.assetid: b1267478-329b-4e46-a2ed-1ec11d2e2e6d
 title: Enumerando dispositivos de captura de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57ccdbcf9df284cdccda09939d2d8a27174a2299
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 476c4b41e6f8913414200c7a811ba9625f2c4bc9cfea66875ec5f15b788bdc05
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120061616"
 ---
 # <a name="enumerating-video-capture-devices"></a>Enumerando dispositivos de captura de vídeo
 
@@ -17,15 +17,15 @@ Este tópico descreve como enumerar os dispositivos de captura de vídeo no sist
 
 Para enumerar os dispositivos de captura de vídeo no sistema, faça o seguinte:
 
-1.  Chame [**MFCreateAttributes**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) para criar um repositório de atributos. Essa função recebe um ponteiro [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
-2.  Chame [**IMFAttributes:: SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid) para definir o atributo de [ \_ tipo de origem do \_ atributo \_ \_ MF DEVSOURCE](mf-devsource-attribute-source-type.md) . Defina o valor do atributo como **MF \_ DEVSOURCE \_ atributo \_ Source \_ tipo \_ VIDCAP \_ GUID**.
-3.  Chame [**MFEnumDeviceSources**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources). Essa função recebe uma matriz de ponteiros [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) e o tamanho da matriz. Cada ponteiro representa um dispositivo de captura de vídeo distinto.
+1.  Chame [**MFCreateAttributes para**](/windows/desktop/api/mfapi/nf-mfapi-mfcreateattributes) criar um armazenamento de atributos. Essa função recebe um [**ponteiro IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
+2.  Chame [**IMFAttributes::SetGUID**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setguid) para definir o atributo [MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE \_ \_ TYPE.](mf-devsource-attribute-source-type.md) De definir o valor do atributo como **MF \_ DEVSOURCE \_ ATTRIBUTE SOURCE TYPE \_ \_ \_ VIDCAP \_ GUID**.
+3.  Chame [**MFEnumDeviceSources.**](/windows/desktop/api/mfidl/nf-mfidl-mfenumdevicesources) Essa função recebe uma matriz de [**ponteiros IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) e o tamanho da matriz. Cada ponteiro representa um dispositivo de captura de vídeo distinto.
 
 Para criar uma instância de um dispositivo de captura:
 
--   Chame [**IMFActivate:: activateobject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) para obter um ponteiro para a interface [**IMFMediaSource**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource) .
+-   Chame [**IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) para obter um ponteiro para a interface [**IMFMediaSource.**](/windows/desktop/api/mfidl/nn-mfidl-imfmediasource)
 
-O código a seguir mostra estas etapas:
+O código a seguir mostra essas etapas:
 
 
 ```C++
@@ -93,7 +93,7 @@ done:
 
 
 
-Depois de criar a origem de mídia, libere os ponteiros de interface e libere a memória para a matriz:
+Depois de criar a fonte de mídia, libere os ponteiros de interface e libere a memória para a matriz:
 
 
 ```C++

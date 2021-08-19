@@ -1,7 +1,7 @@
 ---
-description: Computa o produto de duas funções representadas usando SH (f e g).
+description: Calcula o produto de duas funções representadas usando SH (f e g).
 ms.assetid: 632400a4-2ac9-438d-85f7-869101f350c8
-title: Função D3DXSHMultiply2 (D3dx9math. h)
+title: Função D3DXSHMultiply2 (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,16 +17,16 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9math.h
-ms.openlocfilehash: f7b9adaf5caf7b4b2d35035fd5c2a916298b0c8c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 00219ed1c38105562591b63e6bef64b949b2ab4443aed68e0e6b9d64cb156cc7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105795453"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119849686"
 ---
-# <a name="d3dxshmultiply2-function-d3dx9mathh"></a>Função D3DXSHMultiply2 (D3dx9math. h)
+# <a name="d3dxshmultiply2-function-d3dx9mathh"></a>Função D3DXSHMultiply2 (D3dx9math.h)
 
-Computa o produto de duas funções representadas usando SH (f e g).
+Calcula o produto de duas funções representadas usando SH (f e g).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,44 +45,44 @@ FLOAT* D3DXSHMultiply2(
 
 <dl> <dt>
 
-*pout* \[ no\]
+*pOut* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-O ponteiro para a saída SH Ylm de função de base é armazenado em l \* l + m + l.
+Ponteiro para os coeficientes sh de saída – a função base Ylm é armazenada em \* l l + m+l.
 
 </dd> <dt>
 
-*PF* \[ no\]
+*pF* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Entrada SH coeffs para a primeira função.
+Coeffs sh de entrada para a primeira função.
 
 </dd> <dt>
 
-*PG* \[ no\]
+*pG* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Segundo conjunto de entrada SH coeffs.
+Segundo conjunto de coeffs SH de entrada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para SH coeficientes de saída.
+Ponteiro para coeficientes de saída sh.
 
 ## <a name="remarks"></a>Comentários
 
-A ordem é um número entre 2 e 6, inclusive. Dessa forma, essa página documenta várias funções: D3DXSHMultiply2, D3DXSHMultiply3,... D3DXSHMultiply6.
+A ordem é um número entre 2 e 6, inclusive. Portanto, essa página documenta várias funções: D3DXSHMultiply2, D3DXSHMultiply3, ... D3DXSHMultiply6.
 
-Computa o produto de duas funções representadas usando SH (f e g), em que *pout* \[ i \] = int (y i (s) f (s) \_ \* \* g (s)), em que y \_ i (s) é a função base i i, f (s) e g (s) são funções sh (Sum \_ i ( \_ s) \* c \_ i)). A ordem o determina os comprimentos das matrizes, em que sempre deve haver O ^ 2 coeficientes. Em geral, o produto de duas funções SH de Order O gera uma função SH da ordem 2 \* o-1, mas os resultados são truncados. Isso significa que o produto faz o mudo (f \* g = = g \* f), mas não associa (f \* (g \* h)! = (f \* g) \* h.
+Calcula o produto de duas funções representadas usando SH (f e g), em que *pOut* \[ i = \] int(y \_ \* i(s) f(s) g(s)), em que y i(s) é a função de base de SH \* \_ ith, f(s) e g(s) são funções SH (soma \_ i(y \_ i(s) \* c \_ i)). A ordem O determina os comprimentos das matrizes, em que sempre deve haver coeficientes O^2. Em geral, o produto de duas funções SH da ordem O gera uma função SH da ordem 2 O - 1, mas os resultados \* são truncados. Isso significa que o produto é commutado (f g == g f), mas não associa \* \* (f \* (g \* h) != (f \* g) \* h.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Computa o produto de duas funções representadas usando SH (f e g), em que *pou
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9math.h</dt> </dl> |
 
 
 

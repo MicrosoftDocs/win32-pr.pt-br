@@ -4,12 +4,12 @@ ms.assetid: 866a9706-0b0a-4675-af61-5f55a5a69014
 title: Propriedade MFNETSOURCE_DRMNET_LICENSE_REPRESENTATION (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 92af9a17779381aaed2d2226e17023ca40bc9c1a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2718ba8a13d8d0c00114449f1141be77db0d3f83930d3b3de2171719c3bdf2d0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647556"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120113546"
 ---
 # <a name="mfnetsource_drmnet_license_representation-property"></a>\_Propriedade de \_ representação de licença MFNETSOURCE DRMNET \_
 
@@ -43,9 +43,9 @@ Esta propriedade é somente para leitura. Para obter o valor da Propriedade do f
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 
