@@ -1,7 +1,7 @@
 ---
-description: O método getgroup recupera um grupo especificado.
+description: O método GetGroup recupera um grupo especificado.
 ms.assetid: 4ff651e5-a3aa-4da9-af23-a3a2bdbf7c5b
-title: 'Método IAMTimeline:: getgroup (QEdit. h)'
+title: Método IAMTimeline::GetGroup (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 1241a125698cf78c1138d9264ecd8c73ff78056c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 71bf4aa0dd5d6f338da43d71384ead024fe821d3a639b0021299f6f6deb14be8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685186"
 ---
-# <a name="iamtimelinegetgroup-method"></a>Método IAMTimeline:: getgroup
+# <a name="iamtimelinegetgroup-method"></a>Método IAMTimeline::GetGroup
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -46,35 +46,35 @@ HRESULT GetGroup(
 
 <dl> <dt>
 
-*ppGroup* \[ fora\]
+*ppGroup* \[ out\]
 </dt> <dd>
 
-Recebe um ponteiro para a interface [**IAMTimelineObj**](iamtimelineobj.md) do grupo.
+Recebe um ponteiro para a interface [**IAMTimelineObj do**](iamtimelineobj.md) grupo.
 
 </dd> <dt>
 
-*Qual o* 
+*WhichGroup* 
 </dt> <dd>
 
 Índice do grupo a ser recuperado, com base na ordem em que os grupos foram adicionados à linha do tempo. O primeiro grupo adicionado à linha do tempo tem um índice de 0.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Se o método for executado com sucesso, a interface **IAMTimelineObj** que ele retornar terá uma contagem de referência pendente. Certifique-se de liberar a interface quando terminar de usá-la.
+Se o método for bem-sucedido, a interface **IAMTimelineObj** retornada terá uma contagem de referência pendente. Certifique-se de liberar a interface quando terminar de usá-la.
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -84,8 +84,8 @@ Se o método for executado com sucesso, a interface **IAMTimelineObj** que ele r
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -93,7 +93,7 @@ Se o método for executado com sucesso, a interface **IAMTimelineObj** que ele r
 
 <dl> <dt>
 
-[**Interface IAMTimeline**](iamtimeline.md)
+[**IAMTimeline Interface**](iamtimeline.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

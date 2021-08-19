@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 27816ad95bbf3ef506f93d7fd4f4261709b1f476
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d2409c739e0d65315e512a4e9dd7027e4cc63f5b7ac36883ed766f215a7ec91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059174"
 ---
 # <a name="iconnectionbrokerrequestcheckstatus-method"></a>Método IConnectionBrokerRequest:: CheckStatus
 
@@ -50,7 +50,7 @@ O endereço de uma variável que recebe um valor da enumeração [**de \_ \_ sta
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -62,7 +62,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Cbclient. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Cbclient. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Cbclient. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Cbclient.dll</dt> </dl> |
 

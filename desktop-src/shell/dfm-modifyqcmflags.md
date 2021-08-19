@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: ff90cfb0e0297e7d3276f00f314fce865920663a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62ce86426b31abfb6dec67d7ee45b01a8bc47ba10c40ce9ed00051dd414a0ffd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826891"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119223586"
 ---
 # <a name="dfm_modifyqcmflags-message"></a>\_Mensagem DFM MODIFYQCMFLAGS
 
@@ -61,8 +61,8 @@ Sinalizadores que especificam como o menu de contexto pode ser alterado. Esse pa
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                             |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                             |
 | parâmetro<br/>                   | <dl> <dt>Shlobj. h</dt> </dl> |
 
 

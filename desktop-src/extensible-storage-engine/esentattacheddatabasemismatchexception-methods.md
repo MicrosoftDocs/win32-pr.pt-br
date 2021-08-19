@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentAttachedDatabaseMismatchException'
+description: 'Saiba mais sobre: Métodos EsentAttachedDatabaseMismatchException'
 title: 'Métodos EsentAttachedDatabaseMismatchException '
 TOCTitle: EsentAttachedDatabaseMismatchException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentAttachedDatabaseMismatchException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101064
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: b49ffbc1597b52207d82f68a4b5fbf41cf14cf0a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f6e5299c94851b7d7c3c8bc47d3aafd016932c0be0d7f574978a0690ae4fee9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042199"
 ---
 # <a name="esentattacheddatabasemismatchexception-methods"></a>Métodos EsentAttachedDatabaseMismatchException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentAttachedDatabaseMismatchException](./esentattacheddatabasemismatchexception-class.md) expõe os membros a seguir.
+O [tipo EsentAttachedDatabaseMismatchException](./esentattacheddatabasemismatchexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentAttachedDatabaseMismatchException](./esentattacheddatabasemismatche
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentAttachedDatabaseMismatchException](./esentattacheddatabasemismatche
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentAttachedDatabaseMismatchException](./esentattacheddatabasemismatchexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

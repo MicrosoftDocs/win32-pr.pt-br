@@ -4,12 +4,12 @@ ms.assetid: f0821b90-51d1-4e77-8aed-04337a3dd623
 title: Mapeamento de coordenadas no VMR
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c18b38249471e6e68e36f1b9051f51e920f62b31
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ad128e4d4e40fe3141f0b23edde1e06df8c5044e0a9877e2d9a2fcc3f293a9fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073782"
 ---
 # <a name="coordinate-mapping-in-the-vmr"></a>Mapeamento de coordenadas no VMR
 
@@ -39,7 +39,7 @@ O fator T (src) T (Flag) T (ar) é relativo à resolução de origem. No fator T
 
 <dl> <dt>
 
-[Usando o VMR para desenvolvedores de filtro do DirectShow](using-the-vmr-for-directshow-filter-developers.md)
+[usando o VMR para desenvolvedores de DirectShow filtro](using-the-vmr-for-directshow-filter-developers.md)
 </dt> </dl>
 
  

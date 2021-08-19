@@ -1,21 +1,21 @@
 ---
 title: Auditoria
-description: A WFP (plataforma de filtragem do Windows) fornece auditoria de eventos relacionados a firewall e IPsec.
+description: Windows A WFP (Plataforma de Filtragem) fornece auditoria de eventos relacionados ao firewall e ao IPsec.
 ms.assetid: 30ff9cf7-bf93-4979-bacd-d76e5dadbef6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cef1d4fee81afc366a987575935c1de8880092c
-ms.sourcegitcommit: db89157e3be911fdce2e543e99faa31fb2403bc8
+ms.openlocfilehash: 854841685bab015fc0b9a4bc985762df46a7f0c89eae3d38b4b63e081107b70b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "103917852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015404"
 ---
 # <a name="auditing"></a>Auditoria
 
-A WFP (plataforma de filtragem do Windows) fornece auditoria de eventos relacionados a firewall e IPsec. Esses eventos são armazenados no log de segurança do sistema.
+O Windows WFP (Plataforma de Filtragem de Dados) fornece auditoria de eventos relacionados ao firewall e ao IPsec. Esses eventos são armazenados no log de segurança do sistema.
 
-Os eventos auditados são os seguintes.
+Os eventos auditados são os a seguir.
 
 
 
@@ -34,102 +34,102 @@ Os eventos auditados são os seguintes.
 </thead>
 <tbody>
 <tr class="odd">
-<td>Alteração de política<br/> {6997984D-797A-11D9-BED3-505054503030}<br/></td>
-<td>Filtrando alteração de política da plataforma<br/> {0CCE9233-69AE-11D9-BED3-505054503030}<br/></td>
+<td>Alteração da Política<br/> {6997984D-797A-11D9-BED3-505054503030}<br/></td>
+<td>Filtragem de alteração de política de plataforma<br/> {0CCE9233-69AE-11D9-BED3-505054503030}<br/></td>
 <td><blockquote>
 [!Note]<br />
-Os números representam as IDs de evento, conforme exibido pelo Visualizador de Eventos (eventvwr.exe).
+Os números representam as IDs de evento, conforme exibido por Visualizador de Eventos (eventvwr.exe).
 </blockquote>
-<br/> Adição e remoção de objetos WFP:<br/>
+<br/> Adição e remoção do objeto WFP:<br/>
 <ul>
-<li>5440 balão persistente adicionado</li>
-<li>5441 tempo de inicialização ou filtro persistente adicionado</li>
-<li>5442 provedor persistente adicionado</li>
-<li>5443 contexto de provedor persistente adicionado</li>
-<li>5444 subcamada persistente adicionada</li>
-<li>texto explicativo de tempo de execução 5446 adicionado ou removido</li>
-<li>filtro de tempo de execução adicionado ou removido do 5447</li>
-<li>5448 provedor de tempo de execução adicionado ou removido</li>
-<li>o contexto do provedor de tempo de execução 5449 foi adicionado ou removido</li>
-<li>5450 subcamada em tempo de execução adicionada ou removida</li>
+<li>5440 Chamada persistente adicionada</li>
+<li>5441 Tempo de inicialização ou filtro persistente adicionado</li>
+<li>5442 Provedor persistente adicionado</li>
+<li>5443 Contexto de provedor persistente adicionado</li>
+<li>5444 Sub-camada persistente adicionada</li>
+<li>5446 Tempo de run-time adicionado ou removido</li>
+<li>5447 Filtro de tempo de run-time adicionado ou removido</li>
+<li>5448 Provedor de tempo de run-time adicionado ou removido</li>
+<li>5449 Contexto do provedor de tempo de run-time adicionado ou removido</li>
+<li>5450 Sub-camada de tempo de run-time adicionada ou removida</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Acesso a objetos<br/> {6997984A-797A-11D9-BED3-505054503030}<br/></td>
-<td>Remoção de pacote de plataforma de filtragem <br/> {0CCE9225-69AE-11D9-BED3-505054503030}<br/></td>
-<td>Pacotes removidos por WFP:<br/>
+<td>Filtrando a queda de pacotes da plataforma <br/> {0CCE9225-69AE-11D9-BED3-505054503030}<br/></td>
+<td>Pacotes descartados pelo WFP:<br/>
 <ul>
-<li>pacote 5152 Descartado</li>
-<li>pacote de 5153 vetado</li>
+<li>Pacote 5152 descartado</li>
+<li>5153 Pacote vetado</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Acesso a objetos<br/></td>
-<td>Conexão da plataforma de filtragem <br/> {0CCE9226-69AE-11D9-BED3-505054503030}<br/></td>
+<td>Filtragem de conexão de plataforma <br/> {0CCE9226-69AE-11D9-BED3-505054503030}<br/></td>
 <td>Conexões permitidas e bloqueadas:<br/>
 <ul>
-<li>5154 escuta permitida</li>
-<li>5155 escuta bloqueada</li>
-<li>5156 conexão permitida</li>
-<li>5157 conexão bloqueada</li>
-<li>5158 Associação permitida</li>
-<li>5159 Associação bloqueada</li>
+<li>5154 Escutar permitido</li>
+<li>5155 Escutar bloqueado</li>
+<li>5156 Conexão permitida</li>
+<li>5157 Conexão bloqueada</li>
+<li>5158 A vinculação permitida</li>
+<li>5159 Vinculação bloqueada</li>
 </ul>
 <blockquote>
 [!Note]<br />
-As conexões permitidas nem sempre auditam a ID do filtro associado. O Filterid para TCP será 0, a menos que um subconjunto dessas condições de filtragem seja usado: UserID, AppID, protocolo, porta remota.
+As conexões permitidas nem sempre auditam a ID do filtro associado. A FilterID para TCP será 0, a menos que um subconjunto dessas condições de filtragem seja usado: UserID, AppID, Protocol, Remote Port.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="even">
 <td>Acesso a objetos<br/></td>
-<td>Outros eventos de acesso de objeto<br/> {0CCE9227-69AE-11D9-BED3-505054503030}<br/></td>
+<td>Outros eventos de acesso a objetos<br/> {0CCE9227-69AE-11D9-BED3-505054503030}<br/></td>
 <td><blockquote>
 [!Note]<br />
-Essa subcategoria permite muitas auditorias. As auditorias específicas de WFP são listadas abaixo.
+Essa subcategoria permite muitas auditorias. As auditorias específicas do WFP estão listadas abaixo.
 </blockquote>
 <br/> Status de prevenção de negação de serviço:<br/>
 <ul>
-<li>modo de prevenção de DoS 5148 de WFP iniciado</li>
-<li>modo de prevenção de DoS 5149 de WFP interrompido</li>
+<li>5148 O modo de prevenção do DoS do WFP foi iniciado</li>
+<li>5149 Modo de prevenção do DoS WFP interrompido</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Logon/logoff<br/> {69979849-797A-11D9-BED3-505054503030}<br/></td>
-<td>Modo principal do IPsec<br/> {0CCE9218-69AE-11D9-BED3-505054503030}<br/></td>
-<td>Negociação de modo principal IKE e AuthIP:<br/>
+<td>Logon/Logoff<br/> {69979849-797A-11D9-BED3-505054503030}<br/></td>
+<td>Modo Principal do IPsec<br/> {0CCE9218-69AE-11D9-BED3-505054503030}<br/></td>
+<td>Negociação do modo principal IKE e AuthIP:<br/>
 <ul>
-<li>4650, associação de segurança 4651 estabelecida</li>
-<li>4652, falha na negociação de 4653</li>
+<li>4650, 4651 Associação de segurança estabelecida</li>
+<li>Falha na negociação 4652, 4653</li>
 <li>4655 Associação de segurança encerrada</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Logon/logoff<br/></td>
-<td>Modo rápido do IPsec <br/> {0CCE9219-69AE-11D9-BED3-505054503030}<br/></td>
-<td>Negociação de modo rápido IKE e AuthIP:<br/>
+<td>Logon/Logoff<br/></td>
+<td>Modo Rápido do IPsec <br/> {0CCE9219-69AE-11D9-BED3-505054503030}<br/></td>
+<td>Negociação do modo rápido IKE e AuthIP:<br/>
 <ul>
-<li>Associação de segurança 5451 estabelecida</li>
+<li>5451 Associação de segurança estabelecida</li>
 <li>5452 Associação de segurança encerrada</li>
-<li>4654 a negociação falhou</li>
+<li>Falha na negociação 4654</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Logon/logoff <br/></td>
-<td>Modo estendido do IPsec<br/> {0CCE921A-69AE-11D9-BED3-505054503030}<br/></td>
-<td>Negociação de modo estendido AuthIP:<br/>
+<td>Logon/Logoff <br/></td>
+<td>Modo Estendido IPsec<br/> {0CCE921A-69AE-11D9-BED3-505054503030}<br/></td>
+<td>Negociação do Modo Estendido do AuthIP:<br/>
 <ul>
-<li>4978 pacote de negociação inválido</li>
+<li>4978 Pacote de negociação inválido</li>
 <li>4979, 4980, 4981, 4982 Associação de segurança estabelecida</li>
-<li>4983, falha na negociação de 4984</li>
+<li>Falha na negociação 4983, 4984</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Sistema<br/> {69979848-797A-11D9-BED3-505054503030}<br/></td>
-<td>Driver IPsec<br/> {0CCE9213-69AE-11D9-BED3-505054503030}<br/></td>
-<td>Pacotes removidos pelo driver IPsec:<br/>
+<td>IPsec Driver<br/> {0CCE9213-69AE-11D9-BED3-505054503030}<br/></td>
+<td>Pacotes descartados pelo driver IPsec:<br/>
 <ul>
-<li>4963 pacote de texto não criptografado de entrada Descartado</li>
+<li>4963 Pacote de texto não limpo de entrada descartado</li>
 </ul></td>
 </tr>
 </tbody>
@@ -139,33 +139,33 @@ Essa subcategoria permite muitas auditorias. As auditorias específicas de WFP s
 
  
 
-Por padrão, a auditoria para WFP está desabilitada.
+Por padrão, a auditoria do WFP está desabilitada.
 
-A auditoria pode ser habilitada por categoria através do snap-in do Editor de Objeto de Política de Grupo MMC, do snap-in do MMC de diretiva de segurança local ou do comando auditpol.exe.
+A auditoria pode ser habilitada por categoria por meio do snap-in do MMC do Editor de Objeto de Política de Grupo, do snap-in do MMC da Política de Segurança Local ou do comando auditpol.exe.
 
-Por exemplo, para habilitar a auditoria de eventos de alteração de diretiva, você pode:
+Por exemplo, para habilitar a auditoria de eventos de Alteração de Política, você pode:
 
 -   Usar o Editor de Objeto de Política de Grupo
 
-    1.  Execute **gpedit. msc**.
-    2.  Expanda política de computador local.
-    3.  Expanda Configuração do computador.
+    1.  Execute **gpedit.msc**.
+    2.  Expanda Política de Computador Local.
+    3.  Expanda Configuração do Computador.
     4.  Expanda Configurações do Windows.
-    5.  Expanda Configurações de segurança.
-    6.  Expanda políticas locais.
-    7.  Clique em política de auditoria.
-    8.  Clique duas vezes em diretiva de auditoria alterar para iniciar a caixa de diálogo Propriedades.
-    9.  Verifique as caixas de seleção êxito e falha.
+    5.  Expanda Segurança Configurações.
+    6.  Expanda Políticas Locais.
+    7.  Clique em Política de Auditoria.
+    8.  Clique duas vezes em Alterar política de auditoria para iniciar a caixa de diálogo Propriedades.
+    9.  Marque as caixas de seleção Êxito e Falha.
 
 -   Usar a política de segurança local
 
-    1.  Execute **secpol. msc**.
-    2.  Expanda políticas locais.
-    3.  Clique em política de auditoria.
-    4.  Clique duas vezes em diretiva de auditoria alterar para iniciar a caixa de diálogo Propriedades.
-    5.  Verifique as caixas de seleção êxito e falha.
+    1.  Execute **secpol.msc**.
+    2.  Expanda Políticas Locais.
+    3.  Clique em Política de Auditoria.
+    4.  Clique duas vezes em Alterar política de auditoria para iniciar a caixa de diálogo Propriedades.
+    5.  Marque as caixas de seleção Êxito e Falha.
 
--   Usar o comando auditpol.exe
+-   Usar o auditpol.exe comando
 
     -   **Auditpol/set/Category: "alteração de política"/success: habilitar/Failure: habilitar**
 
@@ -185,7 +185,7 @@ Por exemplo, para habilitar a auditoria de filtragem de eventos de alteração d
 [Auditpol](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731451(v=ws.11))
 </dt> <dt>
 
-[Log de Eventos](/previous-versions/orphan-topics/ws.10/dd996684(v=ws.10))
+[Log de eventos](/previous-versions/orphan-topics/ws.10/dd996684(v=ws.10))
 </dt> <dt>
 
 [Política de Grupo](/windows/deployment/deploy-whats-new)

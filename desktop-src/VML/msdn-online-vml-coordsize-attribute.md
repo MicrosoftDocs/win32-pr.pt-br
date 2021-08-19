@@ -1,26 +1,26 @@
 ---
-title: Atributo CoordSize de VML
-description: Atributo CoordSize de VML
+title: Atributo CoordSize VML
+description: Atributo CoordSize VML
 ms.assetid: 4e7a7eca-7db2-4522-be8e-e817601625ed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a0e1fee484071c04c7184e0f200aed9b52aadf9
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bce9ce79507e789c38512e775100aa27eda25dc61d5f2af56f9a677daf04d238
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105788855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999186"
 ---
-# <a name="vml-coordsize-attribute"></a>Atributo CoordSize de VML
+# <a name="vml-coordsize-attribute"></a>Atributo CoordSize VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Especifica as unidades horizontais e verticais do retângulo que limita uma forma. Leitura/gravação. [IVgVector2D](msdn-online-vml-ivgvector2d-data-type.md).
+Especifica as unidades horizontais e verticais do retângulo que delimita uma forma. Leitura/gravação. [IVgVector2D.](msdn-online-vml-ivgvector2d-data-type.md)
 
 **Aplica-se a**
 
@@ -28,29 +28,29 @@ Especifica as unidades horizontais e verticais do retângulo que limita uma form
 
 **Sintaxe de marca**
 
-<v: *Element* coordsize = " *expressão* " >
+<v: *elemento* coordsize=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . coordsize = "*expressão*"
+*element* .coordsize="*expression*"
 
-*expressão* = de *elemento*. coordsize
+*expressão* = *elemento*.coordsize
 
 **Comentários**
 
-Se não for especificado, o tamanho da coordenada será o mesmo da caixa delimitadora da forma.
+Se não for especificado, o tamanho da coordenada será o mesmo que a caixa delimitada da forma.
 
-Observe que esse atributo é um vetor e que as unidades são relativas ao comprimento e à largura do retângulo delimitador.
+Observe que esse atributo é um vetor e que as unidades são relativas ao comprimento e à largura do retângulo delimitado.
 
-Observe também que o mapeamento entre **coordsize** e a caixa delimitadora pode se tornar anisotropic. Verifique se a **largura de coordsize** e a **altura de coordsize** são iguais à **largura** e **altura** do estilo se você não quiser distorcer a forma.
+Observe também que o mapeamento **entre coordsize** e a caixa delimitada pode se fazer aniso. Certifique-se **de** que a largura e a altura de  **coordsize coordsize** seja a mesma que a largura e a altura do estilo se você não quiser distorcer a forma. 
 
 No script, como esse é um vetor 2D, você pode acessar os valores x e y separadamente e também pode determinar o tipo de unidades esperado.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-A forma tem 100 pontos de altura alta e 100 pontos, mas cada unidade horizontal e vertical no espaço de coordenadas é 1/10 de um ponto.
+A forma tem 100 pontos de altura e 100 pontos de largura, mas cada unidade horizontal e vertical no espaço de coordenadas é de 1/10 de um ponto.
 
 
 ```HTML
@@ -64,8 +64,8 @@ A forma tem 100 pontos de altura alta e 100 pontos, mas cada unidade horizontal 
 
 
 
-[Exemplo do atributo CoordSize](/previous-versions/bb229665(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
+[Exemplo de atributo coordsize](/previous-versions/bb229665(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
 
- 
+ 
 
- 
+ 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 812a1995ec89f3827b7fcfd984edb2de164d0bd3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d2c2bb6bc23e04874221fa65486247b1ed0dfd28f208ca41329b8528e558b257
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022204"
 ---
 # <a name="sam-domain-updates-attribute"></a>Atributo SAM-Domain-updates
 
@@ -55,7 +55,7 @@ Contém um bitmask das operações SAM executadas no Active Directory.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -76,7 +76,7 @@ Contém um bitmask das operações SAM executadas no Active Directory.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
@@ -97,7 +97,7 @@ Contém um bitmask das operações SAM executadas no Active Directory.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | True                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
 | No catálogo global      | Falso                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |

@@ -1,10 +1,10 @@
 ---
-title: Classe MicrosoftDNS_Zone
-description: A \_ classe de zona MicrosoftDNS descreve uma zona DNS. Cada instância da classe de \_ zona MicrosoftDNS deve ser atribuída a exatamente um servidor DNS. As zonas podem ser associadas a várias instâncias do \_ domínio MicrosoftDNS ou \_ classes MicrosoftDNS ResourceRecord.
+title: MicrosoftDNS_Zone classe
+description: A classe Zona MicrosoftDNS \_ descreve uma Zona DNS. Cada instância da classe Zona MicrosoftDNS \_ deve ser atribuída a exatamente um servidor DNS. As zonas podem ser associadas a várias instâncias das classes \_ MicrosoftDNS Domain ou MicrosoftDNS \_ ResourceRecord.
 ms.assetid: 9c59fa61-cca5-4718-ad40-8d2c6ed5fc2d
 keywords:
-- MicrosoftDNS_Zone de classe de DNS
-- MicrosoftDNS_Zone de classe de DNS, descrita
+- dns MicrosoftDNS_Zone classe
+- MicrosoftDNS_Zone classe DNS , descrita
 topic_type:
 - apiref
 api_name:
@@ -52,14 +52,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b15119c7a5cdc1dba2998e17b5c69a4d0e15c6ca
-ms.sourcegitcommit: 03fb201e1ea36e353c335ff063ed993fb5993e61
+ms.openlocfilehash: a37b8c99fcd0fb70206758dd67dab8cfffe145ea2ef1aa75186b1268a7ff3b63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104009866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957175"
 ---
-# <a name="microsoftdns_zone-class"></a>\_Classe de zona MicrosoftDNS
+# <a name="microsoftdns_zone-class"></a>Classe Zona \_ MicrosoftDNS
 
 > [!NOTE]
 > Este artigo contém referências ao termo "servidor subordinado", um termo que a Microsoft não usa mais. Quando o termo for removido do software, também o removeremos deste artigo.
@@ -67,7 +67,7 @@ ms.locfileid: "104009866"
 > [!NOTE]
 > Este artigo contém referências ao termo servidor mestre, um termo que a Microsoft não usa mais. Quando o termo for removido do software, também o removeremos deste artigo.
 
-A classe de **\_ zona MicrosoftDNS** descreve uma zona DNS. Cada instância da classe **de \_ zona MicrosoftDNS** deve ser atribuída a exatamente um servidor DNS. As zonas podem ser associadas a várias instâncias [**do \_ domínio MicrosoftDNS**](microsoftdns-domain.md) ou classes [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md) .
+A **classe \_ Zona MicrosoftDNS** descreve uma Zona DNS. Cada instância da classe **Zona MicrosoftDNS \_** deve ser atribuída a exatamente um servidor DNS. As zonas podem ser associadas a várias instâncias das classes [**MicrosoftDNS \_ Domain**](microsoftdns-domain.md) ou [**MicrosoftDNS \_ ResourceRecord.**](microsoftdns-resourcerecord.md)
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -107,29 +107,29 @@ class MicrosoftDNS_Zone : MicrosoftDNS_Domain
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ zona MicrosoftDNS** tem estes tipos de membros:
+A **classe \_ Zona MicrosoftDNS** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe de **\_ zona MicrosoftDNS** tem esses métodos.
+A **classe \_ Zona MicrosoftDNS** tem esses métodos.
 
 
 
 | Método                   | Descrição                                                                                                                                                                                                |
 |:-------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **AgeAllRecords**        | Habilita a expiração para alguns ou todos os registros não NS e não SOA.<br/>                                                                                                                                       |
+| **AgeAllRecords**        | Habilita o tempo de vida para alguns ou todos os registros não NS e não SOA.<br/>                                                                                                                                       |
 | **ChangeZoneType**       | Altera os tipos de zona. <br/> Qualificadores: implementados<br/>                                                                                                                                         |
-| **Createzone**           | Cria uma nova zona. <br/> Qualificadores: nenhum.<br/>                                                                                                                                               |
-| **ForceRefresh**         | Força uma atualização do secundário do servidor DNS mestre. <br/> Qualificadores: implementados<br/>                                                                                               |
-| **Getdistinguiname** | Obtém o nome distinto do DS para a zona. <br/> Qualificadores: implementados<br/>                                                                                                                 |
-| **PauseZone**            | Pausa a zona. <br/> Qualificadores: implementados<br/>                                                                                                                                            |
-| **ReloadZone**           | Recarrega a zona. <br/> Qualificadores: implementados<br/>                                                                                                                                           |
-| **ResetSecondaries**     | Redefine a matriz de endereço IP secundário. <br/> Qualificadores: implementados<br/>                                                                                                                      |
-| **ResumeZone**           | Retoma a zona. <br/> Qualificadores: implementados<br/>                                                                                                                                           |
-| **UpdateFromDS**         | Força uma atualização da zona do serviço de diretório (DS). Para que esse método seja válido, o Zonetype deve ser 0. na verdade, a zona deve ser armazenada no DS. <br/> Qualificadores: implementados<br/> |
+| **CreateZone**           | Cria uma nova zona. <br/> Qualificadores: Nenhum.<br/>                                                                                                                                               |
+| **ForceRefresh**         | Força uma atualização do secundário do Servidor DNS Mestre. <br/> Qualificadores: implementados<br/>                                                                                               |
+| **GetDistinguishedName** | Obtém o nome diferenciado de DS para a zona. <br/> Qualificadores: implementados<br/>                                                                                                                 |
+| **PauseZone**            | Pausa a Zona. <br/> Qualificadores: implementados<br/>                                                                                                                                            |
+| **ReloadZone**           | Recarrega a Zona. <br/> Qualificadores: implementados<br/>                                                                                                                                           |
+| **ResetSecondaries**     | Redefine a matriz de endereços IP secundários. <br/> Qualificadores: implementados<br/>                                                                                                                      |
+| **ResumeZone**           | Retoma a Zona. <br/> Qualificadores: implementados<br/>                                                                                                                                           |
+| **UpdateFromDS**         | Força uma atualização da Zona do DS (Serviço de Diretório). Para que esse método seja válido, ZoneType deve ser 0, a zona deve ser realmente armazenada no DS. <br/> Qualificadores: implementados<br/> |
 | **WriteBackZone**        | Salva dados de zona em seu arquivo de zona. <br/> Qualificadores: implementados, estáticos<br/>                                                                                                                   |
 
 
@@ -138,63 +138,63 @@ A classe de **\_ zona MicrosoftDNS** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ zona MicrosoftDNS** tem essas propriedades.
+A **classe \_ Zona MicrosoftDNS** tem essas propriedades.
 
 <dl> <dt>
 
-**Estágios**
+**Envelhecimento**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica o comportamento de expiração e eliminação da zona. Zero indica que a limpeza está desabilitada. Quando a eliminação está desabilitada, os carimbos de data/hora dos registros na zona não são atualizados e os registros não estão sujeitos à eliminação. Quando definido como um, os registros estão sujeitos à eliminação e seus carimbos de data/hora são atualizados quando o servidor recebe a solicitação de atualização dinâmica para os registros. Para zonas integradas Active Directory, esse valor é definido como a propriedade *Defaultenvelhecimentostate* do servidor DNS onde a zona é criada. Para zonas primárias padrão, o valor padrão é zero.
+Especifica o comportamento de idade e limpeza da zona. Zero indica que a limpeza está desabilitada. Quando a limpeza é desabilitada, os tempos de registro na zona não são atualizados e os registros não são sujeitos à limpeza. Quando definido como um, os registros são sujeitos a desaloques e seus tempos de data/hora são atualizados quando o servidor recebe a solicitação de atualização dinâmica para os registros. Para zonas integradas ao Active Directory, esse valor é definido como a *propriedade DefaultAgingState* do Servidor DNS em que a zona é criada. Para zonas primárias padrão, o valor padrão é zero.
 
 </dd> <dt>
 
 **AllowUpdate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a zona aceita solicitações de atualização dinâmica.
+Indica se a Zona aceita solicitações de atualização dinâmicas.
 
 </dd> <dt>
 
-**Criado automaticamente**
+**AutoCreated**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a zona é criada.
+Indica se a Zona é automaticamentecriada.
 
 </dd> <dt>
 
 **AvailForScavengeTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica a hora em que o servidor pode tentar eliminar a zona. Mesmo que a zona esteja configurada para habilitar a eliminação, o servidor DNS não tentará recuperar essa zona até esse momento. Esse valor é definido como a hora atual mais o intervalo de atualização da zona sempre que a zona é carregada. Esse parâmetro é armazenado localmente e não é replicado para outras cópias da zona.
+Especifica a hora em que o servidor pode tentar limpar a zona. Mesmo que a zona seja configurada para habilitar a eliminação de problemas, o servidor DNS não tentará limpar essa zona até depois desse momento. Esse valor é definido como a hora atual mais o Intervalo de Atualização da zona sempre que a zona é carregada. Esse parâmetro é armazenado localmente e não é replicado para outras cópias da zona.
 
 </dd> <dt>
 
-**Arquivo**
+**Datafile**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -210,46 +210,46 @@ Indica o nome do arquivo de zona.
 **DisableWINSRecordReplication**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o registro WINS é replicado. Se definido como TRUE, a replicação do registro WINS será desabilitada.
+Indica se o registro WINS é replicado. Se definido como TRUE, a replicação de registro WINS será desabilitada.
 
 </dd> <dt>
 
 **DsIntegrated**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica se a zona é integrada ao DS.
+Especifica se a zona é integrada a DS.
 
 </dd> <dt>
 
-**ForwarderSlave**
+**Forwarder Ltda**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o DNS usa recursão ao resolver os nomes para a zona de encaminhamento especificada. Aplicável somente a zonas de encaminhamento condicionais.
+Indica se o DNS usa recursão ao resolver os nomes para a zona de encaminhamento especificada. Aplicável somente a zonas de encaminhamento condicional.
 
 </dd> <dt>
 
 **ForwarderTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -262,20 +262,20 @@ Indica o tempo, em segundos, que um servidor DNS que encaminha uma consulta para
 **LastSuccessfulSoaCheck**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Número de segundos desde o início de 1º de janeiro de 1970 GMT, desde a última verificação do número de série SOA da zona.
+Número de segundos desde o início de 1º de janeiro de 1970 GMT, desde que o número de série SOA da zona foi verificado pela última vez.
 
 </dd> <dt>
 
 **LastSuccessfulXfr**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -288,206 +288,206 @@ Número de segundos desde o início de 1º de janeiro de 1970 GMT, desde que a z
 **LocalMasterServers**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Endereços IP locais dos servidores DNS mestre para esta zona. Se definido, esses mestres ultrapassarão o MasterServers encontrado em Active Directory.
+Endereços IP locais dos servidores DNS mestres para essa zona. Se definidos, esses mestres superam os MasterServers encontrados no Active Directory.
 
 </dd> <dt>
 
-**MasterServers**
+**Masterservers**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Endereços IP dos servidores DNS mestre para esta zona.
+Endereços IP dos servidores DNS mestres para essa zona.
 
 </dd> <dt>
 
 **NoRefreshInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica o intervalo de tempo entre a última atualização do carimbo de data/hora de um registro e o primeiro momento em que o carimbo de data/hora pode ser atualizado.
+Especifica o intervalo de tempo entre a última atualização do timestamp de um registro e o momento mais antigo em que o timestamp pode ser atualizado.
 
 </dd> <dt>
 
 **Notificar**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a zona mestra notifica os secundários de quaisquer alterações em seu banco de dados RRs. Defina como 1 para notificar secundários.
+Indica se a Zona mestra notifica os secundários de quaisquer alterações em seu banco de dados RRs. De definido como 1 para notificar secundários.
 
 </dd> <dt>
 
 **NotifyServers**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Matriz de cadeias de caracteres que enumeram endereços IP de servidores DNS para serem notificados sobre alterações nessa zona.
+Matriz de cadeias de caracteres enumerando endereços IP de servidores DNS a serem notificados sobre alterações nessa zona.
 
 </dd> <dt>
 
 **Em pausa**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a zona está pausada.
+Indica se a Zona está em pausa.
 
 </dd> <dt>
 
 **Intervalo de atualização**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica o intervalo de atualização durante o qual os registros com carimbo de data/hora diferente devem ser atualizados para permanecer na zona. Os registros que não foram atualizados pela expiração do intervalo de atualização podem ser removidos pela próxima limpeza executada por um servidor. Esse valor nunca deve ser menor do que o período de atualização mais longo dos registros registrados na zona. Valores muito pequenos podem levar à remoção de registros DNS válidos. valores muito grandes prolongam o tempo de vida dos registros obsoletos. Esse valor é definido como a propriedade *DefaultRefreshInterval* do servidor DNS onde a zona é criada.
+Especifica o intervalo de atualização, durante o qual os registros com o timestamp não zero devem ser atualizados para permanecerem na zona. Os registros que não foram atualizados pela expiração do intervalo de atualização podem ser removidos pela próxima eliminação executada por um servidor. Esse valor nunca deve ser menor que o período de atualização mais longo dos registros registrados na zona. Valores muito pequenos podem levar à remoção de registros DNS válidos. valores muito grandes duram o tempo de vida de registros antigos. Esse valor é definido como a *propriedade DefaultRefreshInterval* do servidor DNS em que a zona é criada.
 
 </dd> <dt>
 
-**Ordem**
+**Reverter**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a zona é inversa (TRUE) ou Forward (FALSE).
+Indica se a Zona é inversa (TRUE) ou avançar (FALSE).
 
 </dd> <dt>
 
-**ScavengeServers**
+**DesemãoServidores**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Matriz de cadeias de caracteres que enumera a lista de endereços IP de servidores DNS que têm permissão para executar a eliminação de registros obsoletos dessa zona. Se a lista não for especificada, qualquer servidor DNS primário autoritativo para a zona poderá eliminar a zona quando outros pré-requisitos forem atendidos.
+Matriz de cadeias de caracteres que enumera a lista de endereços IP de servidores DNS que têm permissão para executar a eliminação de registros antigos dessa zona. Se a lista não for especificada, qualquer servidor DNS primário autoritativo para a zona poderá limpar a zona quando outros pré-requisitos são atendidos.
 
 </dd> <dt>
 
 **SecondaryServers**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Matriz de cadeias de caracteres que enumeram endereços IP de servidores DNS com permissão para receber essa zona por meio da replicação de zona.
+Matriz de cadeias de caracteres enumerando endereços IP de servidores DNS com permissão para receber essa zona por meio da replicação de zona.
 
 </dd> <dt>
 
 **SecureSecondaries**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a transferência de zona é permitida apenas para secundários designados. Os secundários designados são servidores DNS cujos endereços IP são listados em SecondariesIPAddressesArray.
+Indica se a transferência de zona tem permissão apenas para secundárias designadas. Os secundários designados são servidores DNS cujos endereços IP estão listados em SecondariesIPAddressesArray.
 
 </dd> <dt>
 
 **Desligamento**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a cópia da zona expirou. Se for TRUE, a zona expirará ou será desligada.
+Indica se a cópia da Zona expirou. Se TRUE, a Zona expirou ou será desligado.
 
 </dd> <dt>
 
 **UseNBStat**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Esse booliano indica se a zona usa a pesquisa inversa do NBStat.
+Esse booliana indica se a Zona usa a pesquisa inversa NBStat.
 
 </dd> <dt>
 
 **UseWins**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a zona usa a pesquisa WINS.
+Indica se a Zona usa a pesquisa WINS.
 
 </dd> <dt>
 
 **ZoneType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica o tipo da zona. Os valores válidos são:
+Indica o tipo da Zona. Os valores válidos são:
 
--   Integrado ao DS
+-   DS integrado
 -   Primária
 -   Secundário
 
-* * Windows Server 2003: * *
+**Windows Server 2003: **
 
 Valores adicionais:
 
 -   Cache
--   Gerenciador
+-   Esboço
 -   Encaminhador de
 
 </dd> </dl>

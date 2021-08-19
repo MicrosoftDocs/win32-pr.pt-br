@@ -4,12 +4,12 @@ ms.assetid: 19c15148-7258-44da-aed3-41def992afb3
 title: Constantes do Gerenciador de método de entrada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6b72e203222701f82823498c23549abe61830a87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1db8e8fb3c891540862a2ba6ec779c19b05bb8962805505d7f5ce870ee31f9ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147589"
 ---
 # <a name="input-method-manager-constants"></a>Constantes do Gerenciador de método de entrada
 

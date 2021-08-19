@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMVirtualPC HostInfo (VPCCOMInterfaces. h)
+title: Propriedade IvMVirtualPC HostInfo (VPCCOMInterfaces.h)
 description: Recupera informações sobre o computador físico.
 ms.assetid: 9efefea1-e608-48db-a91a-e3808b420fc2
 keywords:
-- Propriedade HostInfo Virtual PC
-- Propriedade HostInfo Virtual PC, interface IVMVirtualPC
-- IVMVirtualPC interface virtual PC, Propriedade HostInfo
+- Propriedade HostInfo Pc Virtual
+- Propriedade HostInfo Pc Virtual , interface IVMVirtualPC
+- INTERFACE IVMVirtualPC pc virtual , propriedade HostInfo
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 351da69a19fd691b037a607a57136576e3b64011
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2438c42f02b76c4e4bf7647ba4b1921cc99d04f3d1c99d6004a8323823a2dfd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056554"
 ---
-# <a name="ivmvirtualpchostinfo-property"></a>Propriedade IVMVirtualPC:: HostInfo
+# <a name="ivmvirtualpchostinfo-property"></a>Propriedade IVMVirtualPC::HostInfo
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera informações sobre o computador físico.
 
@@ -45,7 +45,7 @@ HRESULT get_HostInfo(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O objeto [**IVMHostInfo**](ivmhostinfo.md) que contém informações sobre o computador host.
+O [**objeto IVMHostInfo**](ivmhostinfo.md) que contém informações sobre o computador host.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -54,9 +54,9 @@ O objeto [**IVMHostInfo**](ivmhostinfo.md) que contém informações sobre o com
 | Nome/valor                                                                                                                                                                           | Significado                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                                              | A operação foi bem-sucedida.<br/>                                                        |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>                                | O parâmetro é **NULL**.<br/>                                                           |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl>                        | Ocorreu um erro inesperado.<br/>                                                    |
-| <dl> <dt>VM \_ E 0xA0040951 de \_ \_ virtualização de hardware \_ desabilitada</dt> <dt></dt> </dl> | O processador não oferece suporte a extensões de corre (virtualização acelerada por hardware).<br/> |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>                                | O parâmetro é **NULL.**<br/>                                                           |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl>                        | Ocorreu um erro inesperado.<br/>                                                    |
+| <dl> <dt>VM \_ VIRTUALIZAÇÃO \_ DE HARDWARE E \_ \_ DESABILITADA</dt> <dt>0XA0040951</dt> </dl> | O processador não dá suporte a extensões de HAV (Virtualização Acelerada de Hardware).<br/> |
 
 
 
@@ -66,12 +66,12 @@ O objeto [**IVMHostInfo**](ivmhostinfo.md) que contém informações sobre o com
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualPC é definido como 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualPC é definido como \_ 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Função Rect Type (D2d1helper. h)
+title: Função rect Type (D2d1helper.h)
 description: Cria uma estrutura de retângulo que armazena suas coordenadas usando o tipo de dados especificado.
 ms.assetid: b152efaf-0779-4024-b998-82a347abba71
 keywords:
-- Função de tipo Rect Direct2D
+- Função rect Type Direct2D
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2ed16ecd5a79c73ecb7341b9aa7f3378854dd4e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dfb9dd2703a843b9f09ba1404cd9acfddc25620ff2dc4a00566b4c1582847449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105749863"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075010"
 ---
-# <a name="recttype-function"></a><Type>Função Rect
+# <a name="recttype-function"></a>Função <Type> Rect
 
 Cria uma estrutura de retângulo que armazena suas coordenadas usando o tipo de dados especificado.
 
@@ -41,7 +41,7 @@ typename TypeTraits<Type>::Rect Rect(
 
 | Parâmetro | Descrição                                                                                                |
 |-----------|------------------------------------------------------------------------------------------------------------|
-| Type      | O tipo de dados usado para armazenar as dimensões do retângulo. Os valores possíveis são **float** e **UINT32**. |
+| Type      | O tipo de dados usado para armazenar as dimensões do retângulo. Os valores possíveis **são FLOAT** **e UINT32.** |
 
 
 
@@ -53,10 +53,10 @@ typename TypeTraits<Type>::Rect Rect(
 
 | Parâmetro | Descrição                                             |
 |-----------|---------------------------------------------------------|
-| esquerda      | A coordenada x do canto superior esquerdo do retângulo.  |
-| top       | A coordenada y do canto superior esquerdo do retângulo.  |
-| direita     | A coordenada x do canto inferior direito do retângulo. |
-| parte inferior    | A coordenada y do canto inferior direito do retângulo. |
+| esquerda      | A coordenada X do canto superior esquerdo do retângulo.  |
+| top       | A coordenada Y do canto superior esquerdo do retângulo.  |
+| direita     | A coordenada X do canto inferior direito do retângulo. |
+| parte inferior    | A coordenada Y do canto inferior direito do retângulo. |
 
 
 
@@ -72,11 +72,11 @@ Uma estrutura de retângulo que contém as coordenadas especificadas.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos UWP do Windows Vista \[ Desktop apps \|\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de aplicativos de desktop do Windows Server 2008 \[ \| UWP\]<br/> |
-| Número mínimo de telefone com suporte<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]<br/>                                                  |
-| parâmetro<br/>                   | <dl> <dt>D2d1helper. h</dt> </dl>                                                  |
-| Biblioteca<br/>                  | <dl> <dt>D2d1. lib</dt> </dl>                                                      |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e Atualização de Plataforma para Windows aplicativos \[ UWP da área de trabalho do Vista \|\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e Atualização de Plataforma para aplicativos \[ UWP do Windows Server 2008 \|\]<br/> |
+| Telefone mínimo com suporte<br/>  | Windows Phone 8.1 \[ Windows Phone Silverlight 8.1 e Windows runtime\]<br/>                                                  |
+| Cabeçalho<br/>                   | <dl> <dt>D2d1helper.h</dt> </dl>                                                  |
+| Biblioteca<br/>                  | <dl> <dt>D2d1.lib</dt> </dl>                                                      |
 | DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                                      |
 
 

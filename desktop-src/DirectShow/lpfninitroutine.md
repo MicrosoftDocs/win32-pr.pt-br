@@ -13,12 +13,12 @@ api_type:
 - UserDefined
 api_location:
 - Combase.h
-ms.openlocfilehash: 375660399180196e2434030ea7551733affc4062
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c07f22b9dc261fe9d7b073a1f1ab93aa49e482fb70c53288aeaf606e6be9aec9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685076"
 ---
 # <a name="lpfninitroutine-function-pointer"></a>Ponteiro de função LPFNInitRoutine
 
@@ -54,7 +54,7 @@ Ponteiro para o CLISD do objeto, especificado na variável de membro [**\_ ClsID
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse ponteiro de função não retorna um valor.
 
@@ -64,7 +64,7 @@ Esse ponteiro de função não retorna um valor.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Combase. h (incluir fluxos. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>combase. h (incluir Fluxos. h)</dt> </dl> |
 
 
 

@@ -6,18 +6,18 @@ keywords:
 - OpenGL no Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9984c079879c718903ed2176807e2f22f60bb752
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bdf74cf1acdda360c9e03eb900cd95208fe4240861f6b5a63fcef1a24a3b745f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105764640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118936836"
 ---
 # <a name="opengl-on-windows"></a>OpenGL no Windows
 
-A implementação da Microsoft do OpenGL no sistema operacional Microsoft Windows é uma implementação da interface de software gráfico OpenGL (3D) padrão do setor, com a qual os programadores criam imagens coloridas 3D e de alta qualidade ainda e animadas. Esta visão geral descreve a implementação do OpenGL do Windows.
+a implementação da microsoft do OpenGL no sistema operacional microsoft Windows é uma implementação da interface de software gráfico opengl (3d) padrão do setor, com a qual os programadores criam imagens coloridas 3d e de alta qualidade ainda e animadas. esta visão geral descreve a implementação de Windows do OpenGL.
 
-Para obter informações sobre OpenGL ES em execução no Windows, consulte [ângulo de MSOpenTech](https://github.com/MSOpenTech/angle/wiki).
+para obter informações sobre OpenGL ES em execução em Windows, consulte [ângulo de MSOpenTech](https://github.com/MSOpenTech/angle/wiki).
 
 -   [Guia de documentação](guide-to-documentation.md)
 -   [Componentes](components.md)
@@ -26,17 +26,17 @@ Para obter informações sobre OpenGL ES em execução no Windows, consulte [ân
 -   [Formatos de pixel](pixel-formats.md)
 -   [Buffers frontal, traseiro e outros](front--back--and-other-buffers.md)
 -   [Fontes e texto](fonts-and-text.md)
--   [Modos de cor OpenGL e gerenciamento de paleta do Windows](opengl-color-modes-and-windows-palette-management.md)
+-   [modos de cor OpenGL e gerenciamento de paleta de Windows](opengl-color-modes-and-windows-palette-management.md)
 -   [Sobreposição, underlay e planos principais](overlay--underlay--and-main-planes.md)
 -   [Compartilhando listas de exibição](sharing-display-lists.md)
 -   [Estendendo funções OpenGL](extending-opengl-functions.md)
 -   [GLX e WGL/Windows](glx-and-wgl-win32.md)
 -   [Usando OpenGL no Windows](using-opengl-on-windows-nt-2000-and-windows-95-98.md)
--   [Referência para extensões do Windows para OpenGL](reference-for-win-32-extensions-to-opengl.md)
+-   [referência para extensões de Windows para OpenGL](reference-for-win-32-extensions-to-opengl.md)
 
- 
+ 
 
- 
+ 
 
 
 

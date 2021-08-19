@@ -21,12 +21,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: adf0398a141596de677d7d1739e84ff7525da9a2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc8ab9fb355f2602d290c064f6636a13375ea92fdfbf0d6d47c1c6cf8d61e335
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086045"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023494"
 ---
 # <a name="iadsdnwithbinary-property-methods"></a>Métodos de propriedade IADsDNWithBinary
 
@@ -102,7 +102,7 @@ HRESULT put_DNString(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsDNWithBinary é definido como 7E99C0A2-F935-11D2-BA96-00C04FB6D0D1<br/>     |
 

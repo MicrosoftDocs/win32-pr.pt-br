@@ -1,7 +1,7 @@
 ---
-description: Enumeração D3DXMESH – sinalizadores usados para especificar opções de criação para uma malha.
+description: Enumeração D3DXMESH – sinalizadores usados para especificar as opções de criação para uma malha.
 ms.assetid: c94e19ab-8024-4a28-9d1a-6d57707c3a52
-title: Enumeração D3DXMESH (D3dx9mesh.h)
+title: Enumeração D3DXMESH (D3dx9mesh. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "118525263"
 ---
 # <a name="d3dxmesh-enumeration"></a>Enumeração D3DXMESH
 
-Sinalizadores usados para especificar opções de criação para uma malha.
+Sinalizadores usados para especificar as opções de criação para uma malha.
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,7 +60,7 @@ typedef enum D3DXMESH {
 
 <dl> <dt>
 
-<span id="D3DXMESH_32BIT"></span><span id="d3dxmesh_32bit"></span>**D3DXMESH \_ 32BIT**
+<span id="D3DXMESH_32BIT"></span><span id="d3dxmesh_32bit"></span>**D3DXMESH \_ 32 bits**
 </dt> <dd>
 
 A malha tem índices de 32 bits em vez de índices de 16 bits. Consulte Observações.
@@ -70,102 +70,102 @@ A malha tem índices de 32 bits em vez de índices de 16 bits. Consulte Observa�
 <span id="D3DXMESH_DONOTCLIP"></span><span id="d3dxmesh_donotclip"></span>**D3DXMESH \_ DONOTCLIP**
 </dt> <dd>
 
-Use o [**sinalizador de uso D3DUSAGE \_ DONOTCLIP**](d3dusage.md) para buffers de vértice e índice.
+Use o sinalizador de uso [**D3DUSAGE \_ DONOTCLIP**](d3dusage.md) para os buffers de vértice e de índice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_POINTS"></span><span id="d3dxmesh_points"></span>**PONTOS D3DXMESH \_**
+<span id="D3DXMESH_POINTS"></span><span id="d3dxmesh_points"></span>**Pontos de D3DXMESH \_**
 </dt> <dd>
 
-Use o [**sinalizador de uso D3DUSAGE \_ POINTS**](d3dusage.md) para buffers de vértice e índice.
+Use o sinalizador de uso de [**\_ pontos D3DUSAGE**](d3dusage.md) para os buffers de vértice e de índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_RTPATCHES"></span><span id="d3dxmesh_rtpatches"></span>**D3DXMESH \_ RTPATCHES**
 </dt> <dd>
 
-Use o [**sinalizador de uso D3DUSAGE \_ RTPATCHES**](d3dusage.md) para buffers de vértice e índice.
+Use o sinalizador de uso [**D3DUSAGE \_ RTPATCHES**](d3dusage.md) para os buffers de vértice e de índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_NPATCHES"></span><span id="d3dxmesh_npatches"></span>**D3DXMESH \_ NPATCHES**
 </dt> <dd>
 
-Especificar esse sinalizador faz com que o vértice e o buffer de índice da malha sejam criados com o sinalizador [**D3DUSAGE \_ NPATCHES.**](d3dusage.md) Isso será necessário se o objeto de malha for renderizado usando o aprimoramento de N patch usando o Direct3D.
+A especificação desse sinalizador faz com que o vértice e o buffer do índice da malha sejam criados com o sinalizador [**D3DUSAGE \_ NPATCHES**](d3dusage.md) . Isso será necessário se o objeto de malha for renderizado usando o aprimoramento de N-patch usando o Direct3D.
 
 </dd> <dt>
 
 <span id="D3DXMESH_VB_SYSTEMMEM"></span><span id="d3dxmesh_vb_systemmem"></span>**D3DXMESH \_ VB \_ SYSTEMMEM**
 </dt> <dd>
 
-Use o [**sinalizador de uso D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) para buffers de vértice.
+Use o sinalizador de uso [**D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) para os buffers de vértice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_VB_MANAGED"></span><span id="d3dxmesh_vb_managed"></span>**D3DXMESH \_ VB \_ GERENCIADO**
+<span id="D3DXMESH_VB_MANAGED"></span><span id="d3dxmesh_vb_managed"></span>**Gerenciado por D3DXMESH \_ VB \_**
 </dt> <dd>
 
-Use o sinalizador [**de uso GERENCIADO de D3DPOOL \_**](./d3dpool.md) para buffers de vértice.
+Use o sinalizador de uso [**\_ gerenciado D3DPOOL**](./d3dpool.md) para buffers de vértice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_VB_WRITEONLY"></span><span id="d3dxmesh_vb_writeonly"></span>**D3DXMESH \_ VB \_ WRITEONLY**
 </dt> <dd>
 
-Use o [**sinalizador de uso \_ WRITEONLY D3DUSAGE**](d3dusage.md) para buffers de vértice.
+Use o sinalizador de uso de [**\_ WRITEONLY D3DUSAGE**](d3dusage.md) para buffers de vértice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_VB_DYNAMIC"></span><span id="d3dxmesh_vb_dynamic"></span>**D3DXMESH \_ VB \_ DYNAMIC**
+<span id="D3DXMESH_VB_DYNAMIC"></span><span id="d3dxmesh_vb_dynamic"></span>**D3DXMESH \_ VB \_ Dynamic**
 </dt> <dd>
 
-Use o [**sinalizador de \_ uso DINÂMICO D3DUSAGE**](d3dusage.md) para buffers de vértice.
+Use o sinalizador de uso [**\_ dinâmico D3DUSAGE**](d3dusage.md) para buffers de vértice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_VB_SOFTWAREPROCESSING"></span><span id="d3dxmesh_vb_softwareprocessing"></span>**D3DXMESH \_ VB \_ SOFTWAREPROCESSING**
 </dt> <dd>
 
-Use o [**sinalizador de uso D3DUSAGE \_ SOFTWAREPROCESSING**](d3dusage.md) para buffers de vértice.
+Use o sinalizador de uso [**D3DUSAGE \_ SOFTWAREPROCESSING**](d3dusage.md) para os buffers de vértice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_SYSTEMMEM"></span><span id="d3dxmesh_ib_systemmem"></span>**D3DXMESH \_ IB \_ SYSTEMMEM**
 </dt> <dd>
 
-Use o [**sinalizador de uso D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) para buffers de índice.
+Use o sinalizador de uso [**D3DPOOL \_ SYSTEMMEM**](./d3dpool.md) para buffers de índice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_IB_MANAGED"></span><span id="d3dxmesh_ib_managed"></span>**D3DXMESH \_ IB \_ GERENCIADO**
+<span id="D3DXMESH_IB_MANAGED"></span><span id="d3dxmesh_ib_managed"></span>**D3DXMESH \_ IB \_ gerenciado**
 </dt> <dd>
 
-Use o sinalizador [**de uso gerenciado D3DPOOL \_**](./d3dpool.md) para buffers de índice.
+Use o sinalizador de uso [**\_ gerenciado D3DPOOL**](./d3dpool.md) para buffers de índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_WRITEONLY"></span><span id="d3dxmesh_ib_writeonly"></span>**D3DXMESH \_ IB \_ WRITEONLY**
 </dt> <dd>
 
-Use o [**sinalizador de uso \_ WRITEONLY D3DUSAGE**](d3dusage.md) para buffers de índice.
+Use o sinalizador de uso de [**\_ WRITEONLY D3DUSAGE**](d3dusage.md) para buffers de índice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_IB_DYNAMIC"></span><span id="d3dxmesh_ib_dynamic"></span>**D3DXMESH \_ IB \_ DYNAMIC**
+<span id="D3DXMESH_IB_DYNAMIC"></span><span id="d3dxmesh_ib_dynamic"></span>**D3DXMESH \_ IB \_ Dynamic**
 </dt> <dd>
 
-Use o [**sinalizador de \_ uso DINÂMICO D3DUSAGE**](d3dusage.md) para buffers de índice.
+Use o sinalizador de uso [**\_ dinâmico D3DUSAGE**](d3dusage.md) para buffers de índice.
 
 </dd> <dt>
 
 <span id="D3DXMESH_IB_SOFTWAREPROCESSING"></span><span id="d3dxmesh_ib_softwareprocessing"></span>**D3DXMESH \_ IB \_ SOFTWAREPROCESSING**
 </dt> <dd>
 
-Use o [**sinalizador de uso D3DUSAGE \_ SOFTWAREPROCESSING**](d3dusage.md) para buffers de índice.
+Use o sinalizador de uso [**D3DUSAGE \_ SOFTWAREPROCESSING**](d3dusage.md) para buffers de índice.
 
 </dd> <dt>
 
-<span id="D3DXMESH_VB_SHARE"></span><span id="d3dxmesh_vb_share"></span>**D3DXMESH \_ VB \_ SHARE**
+<span id="D3DXMESH_VB_SHARE"></span><span id="d3dxmesh_vb_share"></span>**\_Compartilhamento D3DXMESH VB \_**
 </dt> <dd>
 
 Força as malhas clonadas a compartilhar buffers de vértice.
@@ -175,48 +175,48 @@ Força as malhas clonadas a compartilhar buffers de vértice.
 <span id="D3DXMESH_USEHWONLY"></span><span id="d3dxmesh_usehwonly"></span>**D3DXMESH \_ USEHWONLY**
 </dt> <dd>
 
-Use somente processamento de hardware. Para dispositivos de modo misto, esse sinalizador fará com que o sistema use hardware (se tiver suporte em hardware) ou usará como padrão o processamento de software.
+Use somente o processamento de hardware. Para o dispositivo de modo misto, esse sinalizador fará com que o sistema Use hardware (se houver suporte no hardware) ou usará como padrão o processamento de software.
 
 </dd> <dt>
 
 <span id="D3DXMESH_SYSTEMMEM"></span><span id="d3dxmesh_systemmem"></span>**D3DXMESH \_ SYSTEMMEM**
 </dt> <dd>
 
-Equivalente a especificar SYSTEMMEM de VB do D3DXMESH e \_ \_ \_ SYSTEMMEM do IB do D3DXMESH. \_
+Equivalente a especificar D3DXMESH \_ VB \_ SYSTEMMEM e D3DXMESH \_ IB \_ SYSTEMMEM.
 
 </dd> <dt>
 
-<span id="D3DXMESH_MANAGED"></span><span id="d3dxmesh_managed"></span>**D3DXMESH \_ GERENCIADO**
+<span id="D3DXMESH_MANAGED"></span><span id="d3dxmesh_managed"></span>**\_Gerenciado D3DXMESH**
 </dt> <dd>
 
-Equivalente a especificar ODXMESH \_ VB MANAGED e \_ D3DXMESH \_ IB \_ MANAGED.
+Equivalente a especificar o D3DXMESH \_ VB \_ gerenciado e o D3DXMESH \_ IB \_ gerenciados.
 
 </dd> <dt>
 
-<span id="D3DXMESH_WRITEONLY"></span><span id="d3dxmesh_writeonly"></span>**D3DXMESH \_ WRITEONLY**
+<span id="D3DXMESH_WRITEONLY"></span><span id="d3dxmesh_writeonly"></span>**\_WRITEONLY D3DXMESH**
 </dt> <dd>
 
-Equivalente a especificar WRITEONLY de VB D3DXMESH e \_ \_ D3DXMESH \_ IB \_ WRITEONLY.
+Equivalente a especificar ambos D3DXMESH \_ VB \_ WRITEONLY e D3DXMESH \_ IB \_ WriteOnly.
 
 </dd> <dt>
 
-<span id="D3DXMESH_DYNAMIC"></span><span id="d3dxmesh_dynamic"></span>**D3DXMESH \_ DYNAMIC**
+<span id="D3DXMESH_DYNAMIC"></span><span id="d3dxmesh_dynamic"></span>**D3DXMESH \_ dinâmico**
 </dt> <dd>
 
-Equivalente a especificar d3DXMESH \_ VB \_ DYNAMIC e D3DXMESH \_ IB \_ DYNAMIC.
+Equivalente a especificar o D3DXMESH \_ VB \_ Dynamic e D3DXMESH \_ IB \_ Dynamic.
 
 </dd> <dt>
 
 <span id="D3DXMESH_SOFTWAREPROCESSING"></span><span id="d3dxmesh_softwareprocessing"></span>**D3DXMESH \_ SOFTWAREPROCESSING**
 </dt> <dd>
 
-Equivalente a especificar software \_ VB D3DXMESHPROCESSING e \_ D3DXMESH \_ IB \_ SOFTWAREPROCESSING.
+Equivalente a especificar D3DXMESH \_ VB \_ SOFTWAREPROCESSING e D3DXMESH \_ IB \_ SOFTWAREPROCESSING.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Uma malha de 32 bits (D3DXMESH 32BIT) pode, teoricamente, dar suporte \_ a (2^32)-1 faces e vértices. No entanto, alocar memória para uma malha grande em um sistema operacional de 32 bits não é prático.
+Uma malha de 32 bits (D3DXMESH \_ 32bit) pode teoricamente dar suporte a (2 ^ 32)-1 rostos e vértices. No entanto, a alocação de memória para uma malha grande em um sistema operacional de 32 bits não é prática.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -224,7 +224,7 @@ Uma malha de 32 bits (D3DXMESH 32BIT) pode, teoricamente, dar suporte \_ a (2^32
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9mesh.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9mesh. h</dt> </dl> |
 
 
 

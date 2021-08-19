@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7ce300375e5122a7b63266c0cd21cdddf34606b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e90dc83c47b37343c41489ca2d7b3288f727086e769e83104b57ca5b6de13b2a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644392"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681636"
 ---
 # <a name="registeredtask-object"></a>Objeto RegisteredTask
 
@@ -69,7 +69,7 @@ O objeto **RegisteredTask** tem essas propriedades.
 | [**NextRunTime**](registeredtask-nextruntime.md)<br/>               | Somente leitura<br/>  | Obtém a hora em que a tarefa registrada está próxima agendada para ser executada.<br/>               |
 | [**NumberOfMissedRuns**](registeredtask-numberofmissedruns.md)<br/> | Somente leitura<br/>  | Obtém o número de vezes que a tarefa registrada perdeu uma execução agendada.<br/>       |
 | [**Caminho**](registeredtask-path.md)<br/>                             | Somente leitura<br/>  | Obtém o caminho para onde a tarefa registrada é armazenada.<br/>                          |
-| [**Status**](registeredtask-state.md)<br/>                           | Somente leitura<br/>  | Obtém o estado operacional da tarefa registrada.<br/>                             |
+| [**Estado**](registeredtask-state.md)<br/>                           | Somente leitura<br/>  | Obtém o estado operacional da tarefa registrada.<br/>                             |
 | [**XML**](registeredtask-xml.md)<br/>                               | Somente leitura<br/>  | Obtém as informações de registro formatadas em XML para a tarefa registrada.<br/>       |
 
 
@@ -86,8 +86,8 @@ Para obter mais informações e código de exemplo para esse objeto de script, c
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 

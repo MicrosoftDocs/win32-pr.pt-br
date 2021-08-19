@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 56ac59b1f9e2bae1e5dda23cc05956584d321dae
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b5d97563716e4569daa89a0c6cb52516643c6ae6a44a6fac9861c8b1236eb4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119041464"
 ---
 # <a name="esentdatabaseinvalidpagesexception-constructor"></a>Construtor EsentDatabaseInvalidPagesException
 
 Inicializa uma nova instância da classe EsentDatabaseInvalidPagesException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentDatabaseInvalidPagesException()
 
 [Classe EsentDatabaseInvalidPagesException](./esentdatabaseinvalidpagesexception-class.md)
 
-[Membros do EsentDatabaseInvalidPagesException](./esentdatabaseinvalidpagesexception-members.md)
+[Membros EsentDatabaseInvalidPagesException](./esentdatabaseinvalidpagesexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

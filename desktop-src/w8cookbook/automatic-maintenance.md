@@ -1,17 +1,17 @@
 ---
-title: Manutenção automática (manual de compatibilidade para Windows)
-description: Manutenção automática
+title: Manutenção Automática (guia de compatibilidade para Windows)
+description: Manutenção Automática
 ms.assetid: D3B61105-D118-42A4-8F3D-ED92EFAF597F
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 320625fa0ac8e56368396a7f1be88def0ac3c526
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: d4a839191d84f3f20fcc598b42433c888b090b2b174dd6891c0b5b9fc72f0af5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "104454411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028864"
 ---
-# <a name="automatic-maintenance"></a>Manutenção automática
+# <a name="automatic-maintenance"></a>Manutenção Automática
 
 ## <a name="platforms"></a>Plataformas
 
@@ -21,61 +21,61 @@ ms.locfileid: "104454411"
 
 ## <a name="description"></a>Descrição
 
-O Windows depende da execução da caixa de entrada e da atividade de manutenção de terceiros para grande parte de seu valor agregado, incluindo Windows Update e desfragmentação automática de disco, bem como atualizações e verificações de antivírus. Além disso, as empresas frequentemente usam atividades de manutenção, como a verificação de NAP (proteção de acesso à rede), para ajudar a reforçar os padrões de segurança em todas as estações de trabalho empresariais.
+Windows depende da execução da atividade de manutenção de caixa de entrada e de terceiros para grande parte de seu valor agregado, incluindo atualização Windows e desfragmentação automática de disco, bem como verificações e atualizações antivírus. Além disso, as empresas frequentemente usam atividades de manutenção, como a verificação nap (proteção de acesso à rede) para ajudar a impor padrões de segurança em todas as estações de trabalho corporativas.
 
-A atividade de manutenção no Windows foi projetada para ser executada em segundo plano com interação limitada do usuário e impacto mínimo sobre desempenho e eficiência energética. No entanto, no Windows 7 e em versões anteriores, a eficiência de desempenho e energia ainda é afetada devido à programação não determinística e amplamente variada das várias atividades de manutenção no Windows. A capacidade de resposta aos usuários é reduzida quando a atividade de manutenção é executada enquanto os usuários estão usando o computador ativamente. Os aplicativos também solicitam que o usuário atualize seu software e execute a manutenção em segundo plano e direcione os usuários para várias experiências, incluindo a central de ações, o painel de controle, o Windows Update, o snap-in do MMC Agendador de Tarefas e controles de terceiros.
+A atividade de manutenção Windows é projetada para ser executado em segundo plano com interação limitada do usuário e impacto mínimo no desempenho e na eficiência de energia. No entanto, no Windows 7 e versões anteriores, o desempenho e a eficiência de energia ainda são afetados devido à agenda não determinística e amplamente variada das várias atividades de manutenção no Windows. A capacidade de resposta para os usuários é reduzida quando a atividade de manutenção é executado enquanto os usuários estão usando ativamente o computador. Os aplicativos também solicitam que o usuário atualize seu software e execute a manutenção em segundo plano e direciona os usuários para várias experiências, incluindo o Action Center, o Painel de Controle, Windows Update, o snap-in do MMC do Agendador de Tarefas e controles de terceiros.
 
-O objetivo da manutenção automática é combinar todas as atividades de manutenção em segundo plano no Windows e ajudar os desenvolvedores de terceiros a adicionar suas atividades de manutenção ao Windows sem afetar negativamente o desempenho e a eficiência energética. Além disso, a manutenção automática permite que os usuários e as empresas controlem o agendamento e a configuração da atividade de manutenção.
+O objetivo do Manutenção Automática é combinar todas as atividades de manutenção em segundo plano no Windows e ajudar os desenvolvedores de terceiros a adicionarem suas atividades de manutenção Windows sem afetar negativamente o desempenho e a eficiência de energia. Além disso, Manutenção Automática permite que os usuários, bem como as empresas, controlem o agendamento e a configuração da atividade de manutenção.
 
 **Principais problemas**
 
-A manutenção automática foi projetada para resolver esses problemas com a atividade de manutenção no Windows:
+Manutenção Automática é projetado para resolver esses problemas com a atividade de manutenção Windows:
 
--   Agendamento do prazo
+-   Agendamento de data limite
 -   Conflitos de utilização de recursos
--   Eficiência energética
+-   Eficiência de energia
 -   Transparência para o usuário
 
 ## <a name="functionality"></a>Funcionalidade
 
-A manutenção automática facilita a eficiência de ociosidade e permite que todas as atividades sejam executadas de maneira oportuna e priorizada. Ele também ajuda a habilitar a visibilidade unificada e controlar a atividade de manutenção e permite que desenvolvedores de terceiros adicionem sua atividade de manutenção ao Windows sem afetar negativamente o desempenho e a eficiência de energia. Para fazer isso, ele fornece um modo totalmente automático, modo iniciado pelo usuário, parada automática, prazos e notificações e controle corporativo. Cada um é descrito abaixo.
+Manutenção Automática facilita a eficiência ociosa e permite que todas as atividades sejam executados em tempo hábil e priorizado. Ele também ajuda a habilitar a visibilidade unificada e o controle sobre a atividade de manutenção e permite que desenvolvedores de terceiros adicionem suas atividades de manutenção Windows sem afetar negativamente o desempenho e a eficiência de energia. Para fazer isso, ele fornece um modo totalmente automático, modo iniciado pelo usuário, parada automática, prazos e notificação e controle corporativo. Eles são descritos abaixo.
 
 **Modo totalmente automático**
 
-Esse modo padrão permite o agendamento inteligente durante o tempo ocioso do PC e em horários agendados — a execução e a pausa automática da atividade de manutenção sem nenhuma intervenção do usuário. O usuário pode definir uma agenda semanal ou diária. Toda a atividade de manutenção é não interativa e é executada silenciosamente.
+Esse modo padrão permite o agendamento inteligente durante o tempo ocioso do computador e em horários agendados— a execução e a pausa automática da atividade de manutenção sem nenhuma intervenção do usuário. O usuário pode definir uma agenda semanal ou diária. Todas as atividades de manutenção não são interativas e são executadas silenciosamente.
 
-O computador é retomado automaticamente do modo de suspensão quando o sistema provavelmente não está em uso, respeitando a política de gerenciamento de energia, que, no caso de laptops, usa como padrão permitir a ativação somente se ela estiver em corrente ALTERNAda. Recursos completos do sistema com alta potência são usados para concluir a atividade de manutenção o mais rápido possível. Se o sistema tiver sido retomado da suspensão para manutenção automática, ele será solicitado a retornar ao estado de suspensão.
+O computador é retomado automaticamente do modo de suspensão quando o sistema provavelmente não está em uso, respeitando a política de Gerenciamento de Energia, que, no caso de laptops, assume como padrão permitir o a wake-up somente se ele estiver na energia ac. Recursos completos do sistema com alta potência são usados para concluir a atividade de manutenção o mais rápido possível. Se o sistema tiver sido retomado da sleep Manutenção Automática, será solicitado que ele retorne à sleep.
 
-Todas as interações de usuário necessárias relacionadas a atividades como a configuração são executadas fora da execução de manutenção automática.
+Todas as interações necessárias do usuário relacionadas a atividades como configuração são executadas fora da Manutenção Automática execução.
 
 **Modo iniciado pelo usuário**
 
-Se os usuários precisarem se preparar para a viagem, esperar ter energia na bateria por um tempo prolongado ou se desejar otimizar o desempenho e a capacidade de resposta, eles terão a opção de iniciar a manutenção automática sob demanda. Os usuários podem configurar atributos de manutenção automática, incluindo a agenda de execução automática. Eles podem exibir o status atual da execução de manutenção automática e podem interromper a manutenção automática, se necessário.
+Se os usuários precisam se preparar para a viagem, esperar estar na bateria por um tempo prolongado ou desejar otimizar o desempenho e a capacidade de resposta, eles têm a opção de iniciar Manutenção Automática sob demanda. Os usuários podem configurar Manutenção Automática, incluindo o agendamento de executar automaticamente. Eles podem exibir o status atual da Manutenção Automática execução e podem parar Manutenção Automática se necessário.
 
 **Parada automática**
 
-A manutenção automática automaticamente interrompe as atividades de manutenção em execução no momento se o usuário começar a interagir com o computador. A atividade de manutenção será retomada quando o sistema retornar ao status ocioso.
+Manutenção Automática para automaticamente as atividades de manutenção em execução no momento se o usuário começar a interagir com o computador. A atividade de manutenção será retomada quando o sistema retornar ao status ocioso.
 
 > [!Note]  
-> Todas as atividades na manutenção automática devem dar suporte à interrupção em 2 segundos ou menos. O usuário deve ser notificado de que a atividade foi interrompida.
+> Todas as atividades no Manutenção Automática devem dar suporte à interrupção em 2 segundos ou menos. O usuário deve ser notificado de que a atividade foi interrompida.
 
- 
+ 
 
-**Prazos e notificações**
+**Prazos e notificação**
 
-A atividade de manutenção crítica deve ser executada em uma janela de tempo predefinida. Se as tarefas críticas não puderem ser executadas dentro do horário designado, a manutenção automática iniciará automaticamente a execução na próxima oportunidade de ociosidade do sistema disponível. No entanto, se o estado da tarefa permanecer atrás do prazo, a manutenção automática notificará o usuário sobre a atividade e fornecerá uma opção para uma execução manual da manutenção automática. Todas as tarefas agendadas para manutenção serão executadas, embora as tarefas mais privantes tenham precedência. Essa atividade pode afetar o desempenho e a capacidade de resposta do sistema; Portanto, a manutenção automática notificará o usuário de que a atividade de manutenção crítica está em execução.
+A atividade de manutenção crítica deve ser executada dentro de uma janela de tempo definida previamente. Se as tarefas críticas não foram capazes de ser executadas no tempo designado, Manutenção Automática iniciará automaticamente a execução na próxima oportunidade ociosa do sistema disponível. No entanto, se o estado da tarefa permanecer atrás do prazo, Manutenção Automática notificará o usuário sobre a atividade e fornecerá uma opção para uma operação manual de Manutenção Automática. Todas as tarefas agendadas para manutenção serão executadas, embora as tarefas com mais falta tenham precedência. Essa atividade pode afetar a capacidade de resposta e o desempenho do sistema; portanto, Manutenção Automática notificará o usuário de que a atividade de manutenção crítica está em execução.
 
-**Controle corporativo**
+**Enterprise controle**
 
-Os profissionais de ti empresariais devem ser capazes de determinar quando a manutenção automática é executada em seus sistemas Windows, impor essa agenda via interfaces de gerenciamento padronizadas e recuperar dados de eventos sobre o status das tentativas de execução de manutenção automática. Além disso, os profissionais de ti devem ser capazes de invocar remotamente uma atividade de manutenção automática específica por meio de interfaces de gerenciamento padrão. Cada vez que a manutenção automática é executada, o relatório de status, incluindo notificações quando a manutenção automática não pôde ser executada porque o usuário pausou a atividade manualmente, é executado. Os profissionais de ti devem considerar a movimentação de scripts de logon para a manutenção automática para ajudar a tornar a experiência de logon do usuário mais rápida.
+Enterprise Os profissionais de TI devem ser capazes de determinar quando o Manutenção Automática é executado em seus sistemas Windows, impor essa agenda por meio de interfaces de gerenciamento padronizadas e recuperar dados de evento sobre o status de Manutenção Automática de execução. Além disso, os profissionais de TI devem ser capazes de invocar atividades específicas Manutenção Automática remotamente por meio de interfaces de gerenciamento padrão. Sempre que Manutenção Automática é executado, o relatório de status, incluindo notificações quando Manutenção Automática não pôde ser executado porque o usuário pausau manualmente a atividade, é executado. Os profissionais de TI devem considerar mover scripts de logon Manutenção Automática para ajudar a tornar a experiência de logon do usuário mais rápida.
 
-## <a name="creating-an-automatic-maintenance-task"></a>Criando uma tarefa de manutenção automática
+## <a name="creating-an-automatic-maintenance-task"></a>Criando uma tarefa Manutenção Automática tarefa
 
-Esta seção detalha como os desenvolvedores podem criar uma tarefa usando uma definição de tarefa em linguagem XML ou C. Tenha em mente que a atividade de manutenção não deve iniciar nenhuma interface do usuário que exija interação do usuário, pois a manutenção automática é completamente silenciosa e é executada quando o usuário não está presente. Na verdade, se o usuário interage com o computador durante a manutenção automática, todas as tarefas em andamento serão encerradas até o próximo período ocioso.
+Esta seção detalha como os desenvolvedores podem criar uma tarefa usando uma definição de tarefa na linguagem XML ou C. Tenha em mente que a atividade de manutenção não deve iniciar nenhuma interface do usuário que exija interação do usuário, pois Manutenção Automática é completamente silenciosa e é executado quando o usuário não está presente. Na verdade, se o usuário interagir com o computador durante Manutenção Automática, todas as tarefas em processo serão encerradas até o próximo período ocioso.
 
 **Usando XML**
 
-Agendador de Tarefas inclui uma ferramenta de linha de comando interna, schtasks.exe, que pode importar uma definição de tarefa em formato XML. O esquema para definição de tarefa está documentado em https://msdn.microsoft.com/library/aa383609(v=VS.85).aspx . Veja abaixo um exemplo de uma tarefa de manutenção automática definida em XML.
+Agendador de Tarefas inclui uma ferramenta de linha de comando schtasks.exe, que pode importar uma definição de tarefa no formato XML. O esquema para definição de tarefa está documentado em https://msdn.microsoft.com/library/aa383609(v=VS.85).aspx . Veja abaixo um exemplo de uma Manutenção Automática definida em XML.
 
 
 ```
@@ -123,13 +123,13 @@ Agendador de Tarefas inclui uma ferramenta de linha de comando interna, schtasks
 
 
 
-Para salvar a tarefa em um computador Windows, salve o XML acima como um arquivo de texto e use esta linha de comando:
+Para salvar a tarefa em um Windows, salve o XML acima como um arquivo de texto e use esta linha de comando:
 
 `Schtasks.exe /create /tn <task name> /xml <text file name>`
 
 **Usando C**
 
-Uma tarefa de manutenção automática também pode ser criada usando código C. Abaixo está um exemplo de código que pode ser usado para definir as configurações de manutenção automática de uma tarefa:
+Uma Manutenção Automática também pode ser criada usando o código C. Veja abaixo um exemplo de código que pode ser usado para definir as configurações de Manutenção Automática tarefa:
 
 
 ```
@@ -404,24 +404,24 @@ CleanUp:
 
 ## <a name="validating-tasks"></a>Validando tarefas
 
-Valide se a tarefa foi criada com êxito e é executada como parte da manutenção.
+Valide se a tarefa foi criada com êxito e é executado como parte da manutenção.
 
 **Validando a criação da tarefa**
 
-Use esta linha de comando para exportar a definição de tarefa para um arquivo e garantir que a definição da tarefa seja conforme o esperado:
+Use essa linha de comando para exportar a definição de tarefa para um arquivo e garantir que a definição da tarefa seja conforme o esperado:
 
 `Schtasks.exe /Query /tn<task name> /xml <text file name>`
 
 **Validando a execução da tarefa**
 
-Execute esta linha de comando para iniciar a tarefa e validar que a interface do usuário do Agendador de Tarefas (Taskschd. msc) mostra que a tarefa foi executada:
+Execute esta linha de comando para iniciar a tarefa e validar se a interface do usuário Agendador de Tarefas (taskschd.msc) mostra que a tarefa foi executada:
 
 `Schtasks.exe /Run /tn<task name>`
 
 ## <a name="resources"></a>Recursos
 
--   [Agenda de tarefas 2,0](/previous-versions/bb756979(v=msdn.10))
+-   [Agendamento de tarefas 2.0](/previous-versions/bb756979(v=msdn.10))
 
- 
+ 
 
- 
+ 

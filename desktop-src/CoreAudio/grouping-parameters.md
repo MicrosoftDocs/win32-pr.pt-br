@@ -4,12 +4,12 @@ ms.assetid: 088156f7-fb75-4fcf-b928-87e97b13bdab
 title: Parâmetros de agrupamento
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ecfb674d4349f351ce36fe1e236d1ecd3b265d8e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3083c3a7ad0971d6d3334303cf9eaf4c0313c4482825c3623a04a12ae046b665
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018364"
 ---
 # <a name="grouping-parameters"></a>Parâmetros de agrupamento
 
@@ -26,7 +26,7 @@ Os parâmetros de agrupamento ajudam a reduzir o número de controles de volume 
 
 Conforme explicado anteriormente, as APIs de áudio de nível superior normalmente atribuem seus fluxos à sessão padrão de processo específica (identificada pelo valor GUID de sessão GUID \_ NULL). Esse padrão permite que o SNDVOL exiba um controle de volume separado para cada processo de aplicativo cliente, que é frequentemente o comportamento desejado. Além disso, se várias instâncias do mesmo cliente forem executadas em processos separados, mas exigirem um único controle de volume compartilhado, os clientes poderão simplesmente atribuir seus fluxos à mesma sessão entre processos. Nenhum desses casos requer o uso de parâmetros de agrupamento. No entanto, um caso importante, como exemplificado pelo Microsoft Internet Explorer, requer o uso de parâmetros de agrupamento para atingir o comportamento desejado.
 
-O Internet Explorer permite que os usuários abram várias janelas de navegador e essas janelas podem não ser executadas no mesmo processo. Os usuários poderão ficar confusos se SNDVOL exibir um controle de volume separado para cada instância do aplicativo, todos com o mesmo rótulo, "Internet Explorer". Uma sessão de processo cruzado não é uma solução viável nesse caso – se várias instâncias do Internet Explorer forem executadas em processos diferentes, elas poderão não ser capazes de atribuir todos os fluxos de áudio a uma única sessão entre processos. O motivo é que as janelas do Internet Explorer podem estar executando instâncias do Windows Media Player ou outro plug-in de multimídia que usa uma API de áudio de nível superior para reproduzir seus fluxos de áudio. Essas APIs normalmente atribuem os fluxos em um processo a uma sessão padrão, específica ao processo. O Internet Explorer não tem controle sobre a atribuição desses fluxos a sessões.
+O Internet Explorer permite que os usuários abram várias janelas de navegador e essas janelas podem não ser executadas no mesmo processo. Os usuários poderão ficar confusos se SNDVOL exibir um controle de volume separado para cada instância do aplicativo, todos com o mesmo rótulo, "Internet Explorer". Uma sessão de processo cruzado não é uma solução viável nesse caso – se várias instâncias do Internet Explorer forem executadas em processos diferentes, elas poderão não ser capazes de atribuir todos os fluxos de áudio a uma única sessão entre processos. o motivo é que as janelas do Internet Explorer podem estar executando instâncias de Windows Media Player ou outro plug-in multimídia que usa uma API de áudio de nível superior para reproduzir seus fluxos de áudio. Essas APIs normalmente atribuem os fluxos em um processo a uma sessão padrão, específica ao processo. O Internet Explorer não tem controle sobre a atribuição desses fluxos a sessões.
 
 O WASAPI resolve esse problema habilitando cada instância do Internet Explorer a acessar os controles de sessão para sua sessão padrão, específica do processo e atribuir um parâmetro de agrupamento a essa sessão. Se todas as instâncias do Internet Explorer atribuirem o mesmo parâmetro de agrupamento a todas as suas sessões de áudio, o SNDVOL exibirá um único controle de volume para essas sessões.
 

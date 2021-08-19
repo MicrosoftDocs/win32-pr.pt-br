@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56e1b46a7b4a0c3439f78f38a5fb6cd5b865275c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 36942badfe975a28d5212e502ab28984fa745f4a7563c39ed1cebb7d1b5dbcef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077019"
 ---
 # <a name="mdm_remotefind_location01-class"></a>\_ \_ Classe LOCATION01 do MDM RemoteFind
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 A classe **MDM \_ RemoteFind \_ Location01** recupera as informações de local de um dispositivo específico.
 
@@ -61,7 +61,7 @@ A **classe \_ \_ Location01 do MDM RemoteFind** tem essas propriedades.
 
 <dl> <dt>
 
-[Correta](/windows/client-management/mdm/remotefind-csp#accuracy)
+[Precisão](/windows/client-management/mdm/remotefind-csp#accuracy)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **sint32**
@@ -165,7 +165,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                     |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                              |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |

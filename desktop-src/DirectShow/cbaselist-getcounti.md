@@ -1,7 +1,7 @@
 ---
-description: O método getcounteri recupera o número de itens na lista.
+description: O método GetCountI recupera o número de itens na lista.
 ms.assetid: 1c6f6a3b-8604-44e4-a5fc-b29fa6869173
-title: Método CBaseList. getcounteri (Wxlist. h)
+title: Método CBaseList.GetCountI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 72268112c2a9c7d530b786a867208971ec6f4311
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ffb460f287d959b5e1baed1dda78c2ce6b2b0053c453572e42a67012affc60dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016944"
 ---
-# <a name="cbaselistgetcounti-method"></a>Método CBaseList. getcounteri
+# <a name="cbaselistgetcounti-method"></a>Método CBaseList.GetCountI
 
 O `GetCountI` método recupera o número de itens na lista.
 
@@ -40,7 +40,7 @@ int GetCountI();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o número de itens na lista.
 
@@ -50,8 +50,8 @@ Retorna o número de itens na lista.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxlist.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

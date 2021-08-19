@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a4fcecbd1973c54e30c9bf1251bed174aa4a469f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6708ce38c826aae9ccb40d077972d267a20d5e22b4f67157000c4a62e92afa1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687506"
 ---
 # <a name="csource-class"></a>Classe CSource
 
@@ -30,7 +30,7 @@ ms.locfileid: "105768797"
 A classe **CSource** é uma classe base para implementar filtros de origem. Um filtro derivado de **CSource** contém um ou mais Pins de saída derivados da classe [**CSourceStream**](csourcestream.md) . Cada pino de saída cria um thread de trabalho que envia amostras de mídia por push downstream.
 
 > [!Note]  
-> A classe **CSource** foi projetada para dar suporte ao modelo de push para o fluxo de dados. Essa classe não é recomendada para a criação de filtros de leitor de arquivo. Os leitores de arquivo devem dar suporte ao modelo de pull, por meio da interface [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) . Para obter mais informações, consulte [fluxo de dados para os desenvolvedores de filtro](data-flow-for-filter-developers.md).
+> A classe **CSource** foi projetada para dar suporte ao modelo de push para o fluxo de dados. Essa classe não é recomendada para a criação de filtros de leitor de arquivo. Os leitores de arquivo devem dar suporte ao modelo de pull, por meio da interface [**IAsyncReader**](/windows/desktop/api/Strmif/nn-strmif-iasyncreader) . para obter mais informações, consulte [Data Flow para os desenvolvedores de filtro](data-flow-for-filter-developers.md).
 
  
 
@@ -86,7 +86,7 @@ CAutoLock lock(m_pFilter->pStateLock());
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Source. h (incluir fluxos. h)</dt> </dl>                                                                                    |
+| parâmetro<br/>  | <dl> <dt>Source. h (incluir Fluxos. h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

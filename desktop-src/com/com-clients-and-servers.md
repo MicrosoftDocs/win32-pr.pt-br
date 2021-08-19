@@ -4,12 +4,12 @@ description: Um aspecto crítico do COM é como os clientes e servidores interag
 ms.assetid: 5d1d8613-3087-443d-8547-a767c8ba4959
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d7c3e29e4a4a3e2fcefe1c3473350d3423a8c24
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 79d189b464c8e3a32ff378951067275ab29f5fbabc0b2777c2b2226d632a8bfb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048654"
 ---
 # <a name="com-clients-and-servers"></a>Clientes e servidores COM
 
@@ -19,18 +19,18 @@ Há dois tipos principais de servidores, *em processo* e *fora de processo*. Os 
 
 Agora, o modelo de programação COM e as construções foram estendidos para que os clientes e servidores COM possam trabalhar juntos na rede, não apenas dentro de um determinado computador. Isso permite que os aplicativos existentes interajam com novos aplicativos e entre si em redes com administração adequada e novos aplicativos possam ser escritos para tirar proveito dos recursos de rede.
 
-Os aplicativos cliente COM não precisam saber como os objetos de servidor são empacotados, se eles são empacotados como objetos em processo (em DLLs) ou como objetos locais ou remotos (em EXEs). O COM distribuído ainda permite que os objetos sejam empacotados como aplicativos de serviço, sincronizando COM com os avançados recursos administrativos e de integração do sistema do Windows.
+Os aplicativos cliente COM não precisam saber como os objetos de servidor são empacotados, se eles são empacotados como objetos em processo (em DLLs) ou como objetos locais ou remotos (em EXEs). O COM distribuído ainda permite que os objetos sejam empacotados como aplicativos de serviço, sincronizando COM com os recursos avançados de integração do sistema e administrativos do Windows.
 
 > [!Note]  
 > Ao longo desta documentação, o acrônimo COM é usado em preferência ao DCOM. Isso ocorre porque o DCOM não é separado; é apenas com uma transmissão mais longa. Nos casos em que o que está sendo descrito é especificamente uma operação remota, o termo *com distribuído* é usado.
 
- 
+ 
 
 O COM foi projetado para possibilitar a adição do suporte à transparência de local que se estende por uma rede. Ele permite que os aplicativos escritos para computadores únicos sejam executados em uma rede e fornece recursos que estendem esses recursos e que aumentam a segurança necessária em uma rede. (Para obter mais informações, consulte [segurança em com](security-in-com.md).)
 
 COM especifica um mecanismo pelo qual o código de classe pode ser usado por vários aplicativos diferentes.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
 -   [Obtendo um ponteiro para um objeto](getting-a-pointer-to-an-object.md)
 -   [Criando um objeto por meio de um objeto de classe](creating-an-object-through-a-class-object.md)
@@ -49,9 +49,9 @@ Para mais informações, consulte os seguintes tópicos:
 [Segurança em COM](security-in-com.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

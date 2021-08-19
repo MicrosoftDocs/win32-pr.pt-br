@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1399acd40f768fdb857d6a4a26e80a52d29111b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efa879cd3da0f5e8a4cc8cf1e9873390c94a94bae0eef3dd8d36c59c9e1680e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119253646"
 ---
-# <a name="getsummaryinformation-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método GetSummaryInformation da \_ classe VirtualSystemManagementService Msvm
+# <a name="getsummaryinformation-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método GetSummaryInformation da classe Msvm \_ VirtualSystemManagementService
 
 Retorna informações de resumo da máquina virtual.
 
@@ -41,21 +41,21 @@ uint32 GetSummaryInformation(
 
 <dl> <dt>
 
-*SettingData* \[ no\]
+*SettingData* \[ Em\]
 </dt> <dd>
 
-Tipo: **CIM \_ VirtualSystemSettingData \[ \]**
+Tipo: **CIM \_ \[ \] VirtualSystemSettingData**
 
-Uma matriz de [**instâncias \_ VirtualSystemSettingData do CIM**](/previous-versions//cc136954(v=vs.85)) que especificam as máquinas virtuais ou instantâneos para os quais as informações serão recuperadas. Se esse parâmetro for **nulo**, as informações para todas as máquinas virtuais serão recuperadas.
+Uma matriz de [**instâncias CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)) que especificam as máquinas virtuais ou instantâneos para os quais as informações devem ser recuperadas. Se esse parâmetro for **Nulo,** as informações de todas as máquinas virtuais são recuperadas.
 
 </dd> <dt>
 
-*RequestedInformation* \[ no\]
+*RequestedInformation* \[ Em\]
 </dt> <dd>
 
-Tipo: **UInt32 \[ \]**
+Tipo: **uint32 \[ \]**
 
-Uma matriz de valores de enumeração que correspondem às propriedades na classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) , que especificam os dados a serem recuperados para as máquinas virtuais e os instantâneos especificados na matriz *SettingData* .
+Uma matriz de valores de enumeração, que correspondem às propriedades na classe [**Msvm \_ SummaryInformation,**](msvm-summaryinformation.md) que especificam os dados a recuperar para as máquinas virtuais e instantâneos especificados na matriz *SettingData.*
 
 <dt>
 
@@ -66,7 +66,7 @@ Uma matriz de valores de enumeração que correspondem às propriedades na class
 
 </dt> <dd>
 
-Isso corresponde à propriedade **Name** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **Name** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ Isso corresponde à propriedade **Name** da classe [**Msvm \_ SummaryInformation
 
 </dt> <dd>
 
-Isso corresponde à propriedade **ElementName** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **ElementName** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -88,7 +88,7 @@ Isso corresponde à propriedade **ElementName** da classe [**Msvm \_ SummaryInfo
 
 </dt> <dd>
 
-Isso corresponde à propriedade **CreationTime** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **CreationTime** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ Isso corresponde à propriedade **CreationTime** da classe [**Msvm \_ SummaryInf
 
 </dt> <dd>
 
-Isso corresponde à propriedade **Notes** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **Notes** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -110,40 +110,40 @@ Isso corresponde à propriedade **Notes** da classe [**Msvm \_ SummaryInformatio
 
 </dt> <dd>
 
-Isso corresponde à propriedade **NumberOfProcessors** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **NumberOfProcessors** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
 <span id="Small_Thumbnail_Image__80x60_"></span><span id="small_thumbnail_image__80x60_"></span><span id="SMALL_THUMBNAIL_IMAGE__80X60_"></span>
 
-<span id="Small_Thumbnail_Image__80x60_"></span><span id="small_thumbnail_image__80x60_"></span><span id="SMALL_THUMBNAIL_IMAGE__80X60_"></span>**Pequena imagem em miniatura (80x60)** (5)
+<span id="Small_Thumbnail_Image__80x60_"></span><span id="small_thumbnail_image__80x60_"></span><span id="SMALL_THUMBNAIL_IMAGE__80X60_"></span>**Imagem em miniatura pequena (80x60)** (5)
 
 
 </dt> <dd>
 
-Isso corresponde à propriedade **ThumbnailImage** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) . Uma imagem em miniatura com as dimensões de 80 60 será recuperada.
+Isso corresponde à propriedade **ThumbnailImage** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md) Uma imagem em miniatura com as dimensões de 80 60 será recuperada.
 
 </dd> <dt>
 
 <span id="Medium_Thumbnail_Image__160x120_"></span><span id="medium_thumbnail_image__160x120_"></span><span id="MEDIUM_THUMBNAIL_IMAGE__160X120_"></span>
 
-<span id="Medium_Thumbnail_Image__160x120_"></span><span id="medium_thumbnail_image__160x120_"></span><span id="MEDIUM_THUMBNAIL_IMAGE__160X120_"></span>**Imagem de miniatura média (160x120)** (6)
+<span id="Medium_Thumbnail_Image__160x120_"></span><span id="medium_thumbnail_image__160x120_"></span><span id="MEDIUM_THUMBNAIL_IMAGE__160X120_"></span>**Imagem em miniatura média (160x120)** (6)
 
 
 </dt> <dd>
 
-Isso corresponde à propriedade **ThumbnailImage** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) . Uma imagem em miniatura com as dimensões de 160 120 será recuperada.
+Isso corresponde à propriedade **ThumbnailImage** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md) Uma imagem em miniatura com as dimensões 160 120 será recuperada.
 
 </dd> <dt>
 
 <span id="Large_Thumbnail_Image__320x240_"></span><span id="large_thumbnail_image__320x240_"></span><span id="LARGE_THUMBNAIL_IMAGE__320X240_"></span>
 
-<span id="Large_Thumbnail_Image__320x240_"></span><span id="large_thumbnail_image__320x240_"></span><span id="LARGE_THUMBNAIL_IMAGE__320X240_"></span>**Imagem em miniatura grande (320 x 240)** (7)
+<span id="Large_Thumbnail_Image__320x240_"></span><span id="large_thumbnail_image__320x240_"></span><span id="LARGE_THUMBNAIL_IMAGE__320X240_"></span>**Imagem em miniatura grande (320x240)** (7)
 
 
 </dt> <dd>
 
-Isso corresponde à propriedade **ThumbnailImage** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) . Uma imagem em miniatura com as dimensões de 320 240 será recuperada.
+Isso corresponde à propriedade **ThumbnailImage** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md) Uma imagem em miniatura com as dimensões 320 240 será recuperada.
 
 </dd> <dt>
 
@@ -154,7 +154,7 @@ Isso corresponde à propriedade **ThumbnailImage** da classe [**Msvm \_ SummaryI
 
 </dt> <dd>
 
-Isso corresponde à propriedade **AllocatedGPU** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **AllocatedGPU** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -173,7 +173,7 @@ Isso corresponde à propriedade **AllocatedGPU** da classe [**Msvm \_ SummaryInf
 </dt> <dd>
 
 > [!Note]  
-> Adicionado ao Windows 10 e ao Windows Server 2016.
+> Adicionado em Windows 10 e Windows Server 2016.
 
  
 
@@ -181,7 +181,7 @@ Isso corresponde à propriedade **AllocatedGPU** da classe [**Msvm \_ SummaryInf
 
 <span id="Shielded"></span><span id="shielded"></span><span id="SHIELDED"></span>
 
-<span id="Shielded"></span><span id="shielded"></span><span id="SHIELDED"></span>**Blindado** (11)
+<span id="Shielded"></span><span id="shielded"></span><span id="SHIELDED"></span>**Blindada** (11)
 
 
 </dt> <dd>
@@ -195,12 +195,12 @@ Isso corresponde à propriedade **AllocatedGPU** da classe [**Msvm \_ SummaryInf
 
 <span id="EnabledState"></span><span id="enabledstate"></span><span id="ENABLEDSTATE"></span>
 
-<span id="EnabledState"></span><span id="enabledstate"></span><span id="ENABLEDSTATE"></span>**Enabledstate** (100)
+<span id="EnabledState"></span><span id="enabledstate"></span><span id="ENABLEDSTATE"></span>**EnabledState** (100)
 
 
 </dt> <dd>
 
-Isso corresponde à propriedade **enabledstate** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **EnabledState** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -211,7 +211,7 @@ Isso corresponde à propriedade **enabledstate** da classe [**Msvm \_ SummaryInf
 
 </dt> <dd>
 
-Isso corresponde à propriedade **ProcessorLoad** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **ProcessorLoad** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -222,7 +222,7 @@ Isso corresponde à propriedade **ProcessorLoad** da classe [**Msvm \_ SummaryIn
 
 </dt> <dd>
 
-Isso corresponde à propriedade **ProcessorLoadHistory** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **ProcessorLoadHistory** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -233,7 +233,7 @@ Isso corresponde à propriedade **ProcessorLoadHistory** da classe [**Msvm \_ Su
 
 </dt> <dd>
 
-Isso corresponde à propriedade **MemoryUsage** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **MemoryUsage** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -244,7 +244,7 @@ Isso corresponde à propriedade **MemoryUsage** da classe [**Msvm \_ SummaryInfo
 
 </dt> <dd>
 
-Isso corresponde à propriedade **Heartbeat** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **Heartbeat** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -255,7 +255,7 @@ Isso corresponde à propriedade **Heartbeat** da classe [**Msvm \_ SummaryInform
 
 </dt> <dd>
 
-Isso corresponde à propriedade de **tempo de atividade** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **UpTime** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -266,7 +266,7 @@ Isso corresponde à propriedade de **tempo de atividade** da classe [**Msvm \_ S
 
 </dt> <dd>
 
-Isso corresponde à propriedade **GuestOperatingSystem** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **GuestOperatingSystem** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -277,7 +277,7 @@ Isso corresponde à propriedade **GuestOperatingSystem** da classe [**Msvm \_ Su
 
 </dt> <dd>
 
-Isso corresponde à propriedade **Snapshots** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **Snapshots** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -288,7 +288,7 @@ Isso corresponde à propriedade **Snapshots** da classe [**Msvm \_ SummaryInform
 
 </dt> <dd>
 
-Isso corresponde à propriedade **AsynchronousTasks** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **AsynchronousTasks** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -299,7 +299,7 @@ Isso corresponde à propriedade **AsynchronousTasks** da classe [**Msvm \_ Summa
 
 </dt> <dd>
 
-Isso corresponde à propriedade **HealthState** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **HealthState** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -310,7 +310,7 @@ Isso corresponde à propriedade **HealthState** da classe [**Msvm \_ SummaryInfo
 
 </dt> <dd>
 
-Isso corresponde à propriedade **OperationalStatus** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **OperationalStatus** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -321,7 +321,7 @@ Isso corresponde à propriedade **OperationalStatus** da classe [**Msvm \_ Summa
 
 </dt> <dd>
 
-Isso corresponde à propriedade **StatusDescriptions** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **StatusDescriptions** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -332,7 +332,7 @@ Isso corresponde à propriedade **StatusDescriptions** da classe [**Msvm \_ Summ
 
 </dt> <dd>
 
-Isso corresponde à propriedade **MemoryAvailable** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **MemoryAvailable** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -343,7 +343,7 @@ Isso corresponde à propriedade **MemoryAvailable** da classe [**Msvm \_ Summary
 
 </dt> <dd>
 
-Isso corresponde à propriedade **AvailableMemoryBuffer** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **AvailableMemoryBuffer** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -354,7 +354,7 @@ Isso corresponde à propriedade **AvailableMemoryBuffer** da classe [**Msvm \_ S
 
 </dt> <dd>
 
-Isso corresponde à propriedade **replicationmode** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **ReplicationMode** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -365,24 +365,24 @@ Isso corresponde à propriedade **replicationmode** da classe [**Msvm \_ Summary
 
 </dt> <dd>
 
-Isso corresponde à propriedade **replicationstate** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **ReplicationState** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
 <span id="Replication_HealthTest_Replica_System"></span><span id="replication_healthtest_replica_system"></span><span id="REPLICATION_HEALTHTEST_REPLICA_SYSTEM"></span>
 
-<span id="Replication_HealthTest_Replica_System"></span><span id="replication_healthtest_replica_system"></span><span id="REPLICATION_HEALTHTEST_REPLICA_SYSTEM"></span>**Sistema de réplica HealthTest de replicação** (116)
+<span id="Replication_HealthTest_Replica_System"></span><span id="replication_healthtest_replica_system"></span><span id="REPLICATION_HEALTHTEST_REPLICA_SYSTEM"></span>**Replication HealthTest Replica System** (116)
 
 
 </dt> <dd>
 
-Isso corresponde à propriedade **ReplicationHealth** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **ReplicationHealth** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
 <span id="Application_Health"></span><span id="application_health"></span><span id="APPLICATION_HEALTH"></span>
 
-<span id="Application_Health"></span><span id="application_health"></span><span id="APPLICATION_HEALTH"></span>**Integridade do aplicativo** (117)
+<span id="Application_Health"></span><span id="application_health"></span><span id="APPLICATION_HEALTH"></span>**Application Health** (117)
 
 
 </dt> <dd></dd> <dt>
@@ -394,7 +394,7 @@ Isso corresponde à propriedade **ReplicationHealth** da classe [**Msvm \_ Summa
 
 </dt> <dd>
 
-Isso corresponde à propriedade **replicationstate** da classe [**Msvm \_ ReplicationRelationship**](msvm-replicationrelationship.md) . Essa é a matriz para todos os valores de estado de replicação entre as relações primária e estendida. 0 o valor de índice é sempre para a relação primária e, se a replicação estendida estiver habilitada, ela será retornada no índice 1.
+Isso corresponde à propriedade **ReplicationState** da [**classe Msvm \_ ReplicationRelationship.**](msvm-replicationrelationship.md) Essa é a matriz para todos os valores de estado de replicação em relação primária e estendida. O valor de índice 0 é sempre para a relação primária e, se a replicação estendida estiver habilitada, ela será retornada no índice 1.
 
 </dd> <dt>
 
@@ -405,7 +405,7 @@ Isso corresponde à propriedade **replicationstate** da classe [**Msvm \_ Replic
 
 </dt> <dd>
 
-Isso corresponde à propriedade **ReplicationHealth** da classe [**Msvm \_ ReplicationRelationship**](msvm-replicationrelationship.md) . Essa é uma matriz para todos os valores de integridade de replicação entre as relações primária e estendida. 0 o valor de índice é sempre para a relação primária e, se a replicação estendida estiver habilitada, ela será retornada no índice 1.
+Isso corresponde à propriedade **ReplicationHealth** da [**classe Msvm \_ ReplicationRelationship.**](msvm-replicationrelationship.md) Essa é a matriz para todos os valores de saúde de replicação em relação primária e estendida. O valor de índice 0 é sempre para a relação primária e, se a replicação estendida estiver habilitada, ela será retornada no índice 1.
 
 </dd> <dt>
 
@@ -416,7 +416,7 @@ Isso corresponde à propriedade **ReplicationHealth** da classe [**Msvm \_ Repli
 
 </dt> <dd>
 
-Isso corresponde à propriedade **SwapFilesInUse** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **SwapFilesInUse** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -434,7 +434,7 @@ Isso corresponde à propriedade **SwapFilesInUse** da classe [**Msvm \_ SummaryI
 
 </dt> <dd>
 
-Isso corresponde à propriedade **Name** da classe [**Msvm \_ replicationprovider**](msvm-replicationprovider.md) .
+Isso corresponde à propriedade **Name** da [**classe Msvm \_ ReplicationProvider.**](msvm-replicationprovider.md)
 
 </dd> <dt>
 
@@ -452,7 +452,7 @@ Isso corresponde à propriedade **Name** da classe [**Msvm \_ replicationprovide
 
 </dt> <dd>
 
-Isso corresponde à propriedade **IntegrationServicesVersionState** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **IntegrationServicesVersionState** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -463,7 +463,7 @@ Isso corresponde à propriedade **IntegrationServicesVersionState** da classe [*
 
 </dt> <dd>
 
-Isso corresponde à propriedade **OtherEnabledState** da classe [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md) .
+Isso corresponde à propriedade **OtherEnabledState** da [**classe Msvm \_ SummaryInformation.**](msvm-summaryinformation.md)
 
 </dd> <dt>
 
@@ -474,23 +474,23 @@ Isso corresponde à propriedade **OtherEnabledState** da classe [**Msvm \_ Summa
 
 </dt> <dd></dd> </dl> </dd> <dt>
 
-*SummaryInformation* \[ fora\]
+*SummaryInformation* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **Msvm \_ SummaryInformationBase**](msvm-summaryinformationbase.md)\[\]**
 
-Uma matriz de instâncias do [**Msvm \_ SummaryInformationBase**](msvm-summaryinformationbase.md) que contém as informações solicitadas para as máquinas virtuais e/ou os instantâneos especificados na matriz *SettingData* . Essa matriz terá o mesmo número de elementos que a matriz *SettingData* . Cada uma dessas entradas conterá a propriedade **Name** , mesmo que essa propriedade não tenha sido solicitada. Se a máquina virtual ou o instantâneo não puder ser encontrado ou estiver indisponível, a propriedade **Name** da entrada de informações de resumo correspondente estará vazia.
+Uma matriz de [**instâncias Msvm \_ SummaryInformationBase**](msvm-summaryinformationbase.md) que contém as informações solicitadas para as máquinas virtuais e/ou instantâneos especificados na *matriz SettingData.* Essa matriz terá o mesmo número de elementos que a *matriz SettingData.* Cada uma dessas entradas conterá a **propriedade Name,** mesmo que essa propriedade não seja solicitada. Se a máquina virtual ou o instantâneo não puder ser encontrado ou não estiver disponível, a propriedade **Name** da entrada de informações de resumo correspondente estará vazia.
 
-As propriedades não especificadas no parâmetro *RequestedInformation* terão um valor **nulo** .
+As propriedades não especificadas no *parâmetro RequestedInformation* terão um **valor Nulo.**
 
 > [!Note]  
-> Tipo de dados atualizado do no Windows 10, versão 1703 de [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md).
+> tipo de dados atualizado do no Windows 10, versão 1703 de [**Msvm \_ SummaryInformation**](msvm-summaryinformation.md).
 
  
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UInt32**
 
@@ -663,8 +663,8 @@ public class GetSummaryInformationClassV2
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

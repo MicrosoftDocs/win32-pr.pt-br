@@ -4,18 +4,18 @@ ms.assetid: d092e9e5-c041-42f5-84c8-0af52bb5c810
 title: Implementando IWICBitmapSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c88e2f7dfd073405f9de8c82b2ce6d9592b241a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b7ffd73271e8e159eea825ed40c24347ec2af98f0edbfa9ecc0d5ac584df23b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965015"
 ---
 # <a name="implementing-iwicbitmapsource"></a>Implementando IWICBitmapSource
 
-## <a name="iwicbitmapsource"></a>IWICBitmapSource
+## <a name="iwicbitmapsource"></a>Iwicbitmapsource
 
-[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) é importante para trabalhar com imagens de uma perspectiva do aplicativo. Ele representa a abstração de nível mais alto para uma origem de imagem e todas as interfaces do Windows Imaging Component (WIC) que representam uma imagem, incluindo [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode), [**IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)e todas as interfaces de transformação ([**IWICBitmapScaler**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler), [**IWICBitmapClipper**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper), [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator)e [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)) são derivadas dela. Em qualquer momento específico, um objeto **IWICBitmapSource** pode ou não ser apoiado por um bitmap real na memória. Isso permite um processamento muito eficiente por um aplicativo, pois uma imagem pode ser tratada como uma abstração. As operações de transformação podem ser encadeadas em um pipeline de transformação sem consumir recursos de memória até que o aplicativo esteja pronto para renderizar ou imprimir a imagem e, nesse momento, ele invoca o método [**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypixels) na transformação final para obter um bitmap na memória da imagem com as transformações selecionadas aplicadas.
+[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) é importante para trabalhar com imagens de uma perspectiva de aplicativo. Ele representa a abstração de nível mais alto para uma fonte de imagem e todas as interfaces do WIC (Componente de Imagens do Windows) que representam uma imagem, incluindo [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode), [**IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)e todas as interfaces de transformação [**(IWICBitmapScaler,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler) [**IWICBitmapClipper,**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapclipper) [**IWICBitmapFlipRotator**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapfliprotator)e [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter)) são derivadas dela. A qualquer momento específico, um **objeto IWICBitmapSource** pode ou não ser apoiado por um bitmap real na memória. Isso permite um processamento muito eficiente por um aplicativo, pois uma imagem pode ser tratada como uma abstração. As operações de transformação podem ser encadeadas em um pipeline de transformação sem consumir recursos de memória até que o aplicativo esteja pronto para renderizar ou imprimir a imagem, momento em que ele invoca o método [**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypixels) na transformação final para obter um bitmap na memória da imagem com as transformação selecionadas aplicadas.
 
 ``` syntax
 interface IWICBitmapSource : IUnknown
@@ -33,7 +33,7 @@ interface IWICBitmapSource : IUnknown
 }
 ```
 
-De uma perspectiva de codec, os métodos [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) são implementados no objeto decodificador de quadro. Esses métodos são descritos em implementando IWICBitmapSource, juntamente com os outros métodos em [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode), que é derivado de **IWICBitmapSource**.
+De uma perspectiva codec, os métodos [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) são implementados no objeto de decodificador de quadro. Esses métodos são descritos em Implementando IWICBitmapSource, juntamente com os outros métodos em [**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode), que é derivado de **IWICBitmapSource**.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -42,28 +42,28 @@ De uma perspectiva de codec, os métodos [**IWICBitmapSource**](/windows/desktop
 **Referência**
 </dt> <dt>
 
-[**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
+[**Iwicbitmapdecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
 </dt> <dt>
 
-[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)
+[**Iwicbitmapsource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)
 </dt> <dt>
 
-[**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)
+[**Iwicbitmapframedecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Implementando IWICBitmapCodecProgressNotification (decodificador)](-wic-imp-iwicbitmapcodecprogressnotification-decoder.md)
+[Implementando IWICBitmapCodecProgressNotification (Decoder)](-wic-imp-iwicbitmapcodecprogressnotification-decoder.md)
 </dt> <dt>
 
 [Implementando IWICBitmapFrameDecode](-wic-imp-iwicbitmapframedecode.md)
 </dt> <dt>
 
-[Como escrever um CODEC de WIC-Enabled](-wic-howtowriteacodec.md)
+[Como escrever um codec WIC-Enabled código](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de imagens](-wic-about-windows-imaging-codec.md)
 </dt> </dl>
 
  

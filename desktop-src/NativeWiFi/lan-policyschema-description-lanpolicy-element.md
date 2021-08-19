@@ -1,7 +1,7 @@
 ---
 description: Contém a descrição de uma política de LAN com fio.
 ms.assetid: afd282cf-b6cc-4b32-9f3a-293c1a1a3ea0
-title: Elemento Description (LANPolicy)
+title: Elemento description (LANPolicy)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: bc3d94a97701ced93367794a8a43a5da0c316005
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2769fcf09bee8ee2aa7ed46c0ba191b96d1e01342bfa640e47cb7087e87df6a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119685226"
 ---
-# <a name="description-lanpolicy-element"></a>Elemento Description (LANPolicy)
+# <a name="description-lanpolicy-element"></a>Elemento description (LANPolicy)
 
-O elemento Description (LANPolicy) contém a descrição de uma política de LAN com fio.
+O elemento description (LANPolicy) contém a descrição de uma política de LAN com fio.
 
 ``` syntax
 <xs:element name="description"
@@ -29,7 +29,7 @@ O elemento Description (LANPolicy) contém a descrição de uma política de LAN
  />
 ```
 
-O elemento **Description** é definido pelo elemento [**LANPolicy**](lan-policyschema-lanpolicy-element.md) .
+O **elemento description** é definido pelo elemento [**LANPolicy.**](lan-policyschema-lanpolicy-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,8 +37,8 @@ O elemento **Description** é definido pelo elemento [**LANPolicy**](lan-policys
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

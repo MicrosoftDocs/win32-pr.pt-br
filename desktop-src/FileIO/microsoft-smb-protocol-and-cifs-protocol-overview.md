@@ -4,16 +4,16 @@ ms.assetid: 641017fa-3721-40aa-b13c-e26c8b61ce5c
 title: Visão geral de protocolo CIFS e protocolo Microsoft SMB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30326221694ce843733f6da7a6ad49c8dff336ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 09702c719d4e4c5225b35691d7e23980c90c959b7096d7995f3d60b3ef0b204b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920872"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951145"
 ---
 # <a name="microsoft-smb-protocol-and-cifs-protocol-overview"></a>Visão geral de protocolo CIFS e protocolo Microsoft SMB
 
-O protocolo SMB é um protocolo de compartilhamento de arquivos de rede e, conforme implementado no Microsoft Windows, é conhecido como protocolo SMB da Microsoft. O conjunto de pacotes de mensagens que define uma versão específica do protocolo é chamado de dialeto. O protocolo CIFS (Common Internet File System) é um dialeto de SMB. Tanto o SMB quanto o CIFS também estão disponíveis em VMS, em várias versões do UNIX e em outros sistemas operacionais.
+o protocolo smb é um protocolo de compartilhamento de arquivos de rede e, conforme implementado no microsoft Windows, é conhecido como protocolo smb da microsoft. O conjunto de pacotes de mensagens que define uma versão específica do protocolo é chamado de dialeto. O protocolo CIFS (Common Internet File System) é um dialeto de SMB. Tanto o SMB quanto o CIFS também estão disponíveis em VMS, em várias versões do UNIX e em outros sistemas operacionais.
 
 A referência técnica ao CIFS está disponível na Microsoft Corporation em [protocolo de acesso a arquivos CIFS (Common Internet File System)](/openspecs/windows_protocols/ms-cifs/d416ff7c-c536-406e-a951-4f04b2fd1d2b).
 
@@ -37,7 +37,7 @@ O protocolo SMB da Microsoft é uma implementação de cliente-servidor e consis
 -   Os pacotes de acesso a arquivos acessam e manipulam arquivos e diretórios no servidor remoto.
 -   Os pacotes de mensagem geral enviam dados para filas de impressão, processadores de mensagens e pipes nomeados e fornecem dados sobre o status das filas de impressão.
 
-Alguns pacotes de mensagens podem ser agrupados e enviados em uma transmissão para reduzir a latência de resposta e aumentar a largura de banda da rede. Isso é chamado de "envio em lote". A seção [cenário de intercâmbio de pacotes do protocolo Microsoft SMB](microsoft-smb-protocol-packet-exchange-scenario.md) descreve um exemplo de uma sessão do protocolo SMB da Microsoft que usa o envio em lote de pacotes.
+Alguns pacotes de mensagens podem ser agrupados e enviados em uma transmissão para reduzir a latência de resposta e aumentar a largura de banda da rede. Isso é chamado de "envio em lote". a seção [cenário de Exchange de pacote do protocolo smb da microsoft](microsoft-smb-protocol-packet-exchange-scenario.md) descreve um exemplo de uma sessão de protocolo smb da microsoft que usa o lote de pacotes.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -47,7 +47,7 @@ Alguns pacotes de mensagens podem ser agrupados e enviados em uma transmissão p
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Dialetos do protocolo SMB da Microsoft](microsoft-smb-protocol-dialects.md)<br/>                                 | Para estabelecer uma conexão entre um cliente e um servidor usando o protocolo SMB da Microsoft, primeiro você deve determinar o dialeto com o nível mais alto de funcionalidade que o cliente e o servidor dão suporte.<br/>                                                      |
 | [Autenticação do protocolo SMB da Microsoft](microsoft-smb-protocol-authentication.md)<br/>                     | O modelo de segurança usado no protocolo SMB da Microsoft é idêntico ao usado por outras variantes de SMB e consiste em dois níveis de usuário e compartilhamento de segurança. Um compartilhamento é um arquivo, diretório ou impressora que pode ser acessado pelos clientes do protocolo Microsoft SMB.<br/> |
-| [Cenário de intercâmbio de pacotes do protocolo SMB da Microsoft](microsoft-smb-protocol-packet-exchange-scenario.md)<br/> | Exemplo de um intercâmbio de pacotes do protocolo SMB da Microsoft entre um cliente e um servidor.<br/>                                                                                                                                                                               |
+| [cenário de Exchange de pacote do protocolo SMB da Microsoft](microsoft-smb-protocol-packet-exchange-scenario.md)<br/> | Exemplo de um intercâmbio de pacotes do protocolo SMB da Microsoft entre um cliente e um servidor.<br/>                                                                                                                                                                               |
 
 
 

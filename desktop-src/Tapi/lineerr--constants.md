@@ -1,17 +1,17 @@
 ---
 description: Veja a seguir uma lista de códigos de erro que a TAPI pode retornar ao invocar operações em linhas, endereços ou chamadas.
 ms.assetid: bdaf60d1-6ff2-4bd6-b246-8556d6cae644
-title: Constantes de LINEERR_ (TAPI. h)
+title: LINEERR_ constantes (Tapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ed7757377d26dbde832b7ef50f275b45e21760d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: de8e362e942f7819b0e15fcd7e8359c308e931868d57cc9da84acd62fe9e531d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119254626"
 ---
-# <a name="lineerr_-constants"></a>\_Constantes LINEERR
+# <a name="lineerr_-constants"></a>Constantes LINEERR \_
 
 Veja a seguir uma lista de códigos de erro que a TAPI pode retornar ao invocar operações em linhas, endereços ou chamadas. Para obter mais informações sobre como determinar quais desses códigos de erro uma função específica pode retornar, consulte as descrições de função individuais.
 
@@ -22,7 +22,7 @@ Veja a seguir uma lista de códigos de erro que a TAPI pode retornar ao invocar 
 
 
 
-O endereço especificado está impedido de ser discado na chamada especificada.
+O endereço especificado é impedido de ser discado na chamada especificada.
 
 
 </dt> </dl> </dd> <dt>
@@ -32,12 +32,12 @@ O endereço especificado está impedido de ser discado na chamada especificada.
 
 
 
-O endereço de chamada de destino tem bloqueio de chamada habilitado.
+O endereço de chamada de destino tem o bloqueio de chamada habilitado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_ALLOCATED"></span><span id="lineerr_allocated"></span>**LINEERR \_ alocada**
+<span id="LINEERR_ALLOCATED"></span><span id="lineerr_allocated"></span>**LINEERR \_ ALOCADO**
 </dt> <dd> <dl> <dt>
 
 
@@ -52,7 +52,7 @@ A linha não pode ser aberta devido a uma condição persistente, como a de uma 
 
 
 
-O identificador de dispositivo ou o identificador de dispositivo de linha especificado, como em um parâmetro *dwDeviceID* , é inválido ou está fora do intervalo.
+O identificador de dispositivo ou identificador de dispositivo de linha especificado, como em um *parâmetro dwDeviceID,* é inválido ou está fora do intervalo.
 
 
 </dt> </dl> </dd> <dt>
@@ -87,12 +87,12 @@ Todas as aparências de chamada no endereço especificado estão em uso no momen
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_COMPLETIONOVERRUN"></span><span id="lineerr_completionoverrun"></span>**LINEERR \_ COMPLETIONOVERRUN**
+<span id="LINEERR_COMPLETIONOVERRUN"></span><span id="lineerr_completionoverrun"></span>**CONCLUSÃO DO \_ LINEERROVERRUN**
 </dt> <dd> <dl> <dt>
 
 
 
-O número máximo de conclusões de chamadas pendentes foi excedido.
+O número máximo de preenchimentos de chamada pendentes foi excedido.
 
 
 </dt> </dl> </dd> <dt>
@@ -102,7 +102,7 @@ O número máximo de conclusões de chamadas pendentes foi excedido.
 
 
 
-O número máximo de partes de uma conferência foi atingido ou o número de partes solicitado não pode ser satisfeito.
+O número máximo de partes para uma conferência foi atingido ou o número solicitado de partes não pode ser atendido.
 
 
 </dt> </dl> </dd> <dt>
@@ -112,7 +112,7 @@ O número máximo de partes de uma conferência foi atingido ou o número de par
 
 
 
-O parâmetro endereço discável contém caracteres de controle de discagem não processados pelo provedor de serviços.
+O parâmetro de endereço discável contém caracteres de controle de discagem não processados pelo provedor de serviços.
 
 
 </dt> </dl> </dd> <dt>
@@ -122,7 +122,7 @@ O parâmetro endereço discável contém caracteres de controle de discagem não
 
 
 
-O parâmetro endereço discável contém caracteres de controle de discagem não processados pelo provedor de serviços.
+O parâmetro de endereço discável contém caracteres de controle de discagem não processados pelo provedor de serviços.
 
 
 </dt> </dl> </dd> <dt>
@@ -132,7 +132,7 @@ O parâmetro endereço discável contém caracteres de controle de discagem não
 
 
 
-O parâmetro endereço discável contém caracteres de controle de discagem não processados pelo provedor de serviços.
+O parâmetro de endereço discável contém caracteres de controle de discagem não processados pelo provedor de serviços.
 
 
 </dt> </dl> </dd> <dt>
@@ -142,7 +142,7 @@ O parâmetro endereço discável contém caracteres de controle de discagem não
 
 
 
-O parâmetro endereço discável contém caracteres de controle de discagem não processados pelo provedor de serviços.
+O parâmetro de endereço discável contém caracteres de controle de discagem não processados pelo provedor de serviços.
 
 
 </dt> </dl> </dd> <dt>
@@ -152,17 +152,17 @@ O parâmetro endereço discável contém caracteres de controle de discagem não
 
 
 
-Uso do modificador de discagem (:) Não tem suporte. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI do 2,0 ou posterior.
+Uso do modificador de discagem (:) Não há suporte para . Esse valor é exposto somente a aplicativos que negociam uma versão TAPI 2.0 ou posterior.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEERR_DISCONNECTED"></span><span id="lineerr_disconnected"></span>**LINEERR \_ desconectado**
+<span id="LINEERR_DISCONNECTED"></span><span id="lineerr_disconnected"></span>**LINEERR \_ DESCONECTADO**
 </dt> <dd> <dl> <dt>
 
 
 
-A chamada foi desconectada. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI do 2,2 ou posterior.
+A chamada foi desconectada. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI 2.2 ou posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -172,7 +172,7 @@ A chamada foi desconectada. Esse valor é exposto somente a aplicativos que nego
 
 
 
-O aplicativo solicitou uma versão TAPI ou um intervalo de versão que seja incompatível com o, ou que não tenha suporte do, a implementação da API de telefonia e o provedor de serviços correspondente.
+O aplicativo solicitou uma versão tapi ou um intervalo de versão incompatível com a implementação da API de Telefonia e o provedor de serviços correspondente.
 
 
 </dt> </dl> </dd> <dt>
@@ -182,7 +182,7 @@ O aplicativo solicitou uma versão TAPI ou um intervalo de versão que seja inco
 
 
 
-O aplicativo solicitou um intervalo de versão de extensão inválido ou não tem suporte do provedor de serviços correspondente.
+O aplicativo solicitou um intervalo de versão de extensão inválido ou que não pode ser suportado pelo provedor de serviços correspondente.
 
 
 </dt> </dl> </dd> <dt>
@@ -192,7 +192,7 @@ O aplicativo solicitou um intervalo de versão de extensão inválido ou não te
 
 
 
-O arquivo de Telephon.ini não pode ser lido ou compreendido corretamente pela TAPI devido a inconsistências internas ou problemas de formatação. Por exemplo, a \[ \] seção locais, \[ cartões \] ou \[ países \] do arquivo de Telephon.ini pode estar corrompida ou inconsistente.
+O Telephon.ini não pode ser lido ou compreendido corretamente pela TAPI devido a inconsistências internas ou problemas de formatação. Por exemplo, a \[ seção \] \[ \] Locais, Cartões ou \[ Países do arquivo Telephon.ini pode estar \] corrompida ou inconsistente.
 
 
 </dt> </dl> </dd> <dt>
@@ -202,7 +202,7 @@ O arquivo de Telephon.ini não pode ser lido ou compreendido corretamente pela T
 
 
 
-O dispositivo de linha está em uso e não pode ser configurado no momento, permitir que uma parte seja adicionada, permitir que uma chamada seja respondida, permitir que uma chamada seja colocada ou permitir que uma chamada seja transferida.
+O dispositivo de linha está em uso e não pode ser configurado no momento, permitir que uma parte seja adicionada, permitir que uma chamada seja respondida, permitir que uma chamada seja feita ou permitir que uma chamada seja transferida.
 
 
 </dt> </dl> </dd> <dt>
@@ -212,7 +212,7 @@ O dispositivo de linha está em uso e não pode ser configurado no momento, perm
 
 
 
-Um endereço especificado é inválido ou não é permitido. Se for inválido, o endereço contém caracteres ou dígitos inválidos ou o endereço de destino contém caracteres de controle de discagem (W, @, $ ou?) que não são suportados pelo provedor de serviços. Se não for permitido, o endereço especificado não será atribuído à linha especificada ou não será válido para o redirecionamento de endereço.
+Um endereço especificado é inválido ou não é permitido. Se for inválido, o endereço conterá caracteres ou dígitos inválidos ou o endereço de destino conterá caracteres de controle de discagem (W, @, $ou ?) que não são suportados pelo provedor de serviços. Se não for permitido, o endereço especificado não será atribuído à linha especificada ou não será válido para redirecionamento de endereço.
 
 
 </dt> </dl> </dd> <dt>
@@ -242,7 +242,7 @@ O modo de endereço especificado é inválido.
 
 
 
-O estado de endereço especificado contém um ou mais bits que não [**são \_ constantes LINEADDRESSSTATE**](lineaddressstate--constants.md).
+O estado de endereço especificado contém um ou mais bits que não são [**\_ constantes LINEADDRESSSTATE.**](lineaddressstate--constants.md)
 
 
 </dt> </dl> </dd> <dt>
@@ -252,7 +252,7 @@ O estado de endereço especificado contém um ou mais bits que não [**são \_ c
 
 
 
-O aplicativo referenciou um tipo de endereço que não é válido. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI do 3,0 ou posterior.
+O aplicativo fez referência a um tipo de endereço que não é válido. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI 3.0 ou posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -262,7 +262,7 @@ O aplicativo referenciou um tipo de endereço que não é válido. Esse valor é
 
 
 
-A atividade do agente especificada não é válida.
+A atividade de agente especificada não é válida.
 
 
 </dt> </dl> </dd> <dt>
@@ -272,7 +272,7 @@ A atividade do agente especificada não é válida.
 
 
 
-O aplicativo que invoca essa operação é o destino da entrega indireta. Ou seja, a TAPI determinou que o aplicativo de chamada também é o aplicativo de prioridade mais alta para o tipo de mídia fornecido. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI do 2,0 ou posterior.
+O aplicativo que invoca essa operação é o destino da entrega indireta. Ou seja, a TAPI determinou que o aplicativo de chamada também é o aplicativo de prioridade mais alta para o tipo de mídia determinado. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI 2.0 ou posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -282,7 +282,7 @@ O aplicativo que invoca essa operação é o destino da entrega indireta. Ou sej
 
 
 
-As informações do grupo de agentes especificadas não são válidas ou contêm erros. A ação solicitada não foi executada.
+As informações de grupo de agentes especificadas não são válidas ou contêm erros. A ação solicitada não foi executada.
 
 
 </dt> </dl> </dd> <dt>
@@ -292,7 +292,7 @@ As informações do grupo de agentes especificadas não são válidas ou contêm
 
 
 
-O aplicativo referenciou um grupo de agentes que não é válido. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI do 2,0 ou posterior.
+O aplicativo fez referência a um grupo de agentes que não é válido. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI 2.0 ou posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -302,7 +302,7 @@ O aplicativo referenciou um grupo de agentes que não é válido. Esse valor é 
 
 
 
-O identificador de agente especificado é inválido.
+O identificador do agente especificado é inválido.
 
 
 </dt> </dl> </dd> <dt>
@@ -312,7 +312,7 @@ O identificador de agente especificado é inválido.
 
 
 
-Foi usado um identificador de agente inválido. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI do 2,0 ou posterior.
+Um identificador de agente inválido foi usado. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI 2.0 ou posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -322,7 +322,7 @@ Foi usado um identificador de agente inválido. Esse valor é exposto somente a 
 
 
 
-O estado da sessão do agente é inválido. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI do 2,2 ou posterior.
+O estado da sessão do agente é inválido. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI 2.2 ou posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -342,7 +342,7 @@ O estado do agente especificado não é válido ou contém erros. Nenhuma altera
 
 
 
-O aplicativo referenciou um estado de agente que não é válido. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI do 2,0 ou posterior.
+O aplicativo fez referência a um estado de agente que não é válido. Esse valor é exposto somente a aplicativos que negociam uma versão TAPI 2.0 ou posterior.
 
 
 </dt> </dl> </dd> <dt>
@@ -352,7 +352,7 @@ O aplicativo referenciou um estado de agente que não é válido. Esse valor é 
 
 
 
-O identificador do aplicativo (como especificado por um parâmetro *hLineApp* ) ou o identificador de registro do aplicativo é inválido.
+O handle do aplicativo (como especificado por um parâmetro *hLineApp)* ou o alça de registro do aplicativo é inválido.
 
 
 </dt> </dl> </dd> <dt>
@@ -362,7 +362,7 @@ O identificador do aplicativo (como especificado por um parâmetro *hLineApp* ) 
 
 
 
-O nome do aplicativo especificado é inválido. Se um nome de aplicativo for especificado pelo aplicativo, supõe-se que a cadeia de caracteres não contém nenhum caractere não-reproduzido e terminada com zero.
+O nome do aplicativo especificado é inválido. Se um nome de aplicativo for especificado pelo aplicativo, supõe-se que a cadeia de caracteres não contenha nenhum caractere não exibivel e seja terminada em zero.
 
 
 </dt> </dl> </dd> <dt>
@@ -392,7 +392,7 @@ A conclusão especificada é inválida.
 
 
 
-O identificador de chamada especificado não é válido. Por exemplo, o identificador não é **nulo** , mas não pertence à linha especificada. Em alguns casos, o identificador do dispositivo de chamada especificado é inválido.
+O alça de chamada especificado não é válido. Por exemplo, o handle não é **NULL,** mas não pertence à linha determinada. Em alguns casos, o alça do dispositivo de chamada especificado é inválido.
 
 
 </dt> </dl> </dd> <dt>

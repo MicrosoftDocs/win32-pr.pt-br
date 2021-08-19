@@ -4,12 +4,12 @@ ms.assetid: b4f3542d-a0af-4742-851b-fd501c40a698
 title: Proxy System. Photo. ExposureBias
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 12364931430731c825c63bf29bea379924787fea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ef60b9baca2a7121d3a145e5b5834a21214aa0a939329b70a3e3ceb9e98c2dc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105800056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964815"
 ---
 # <a name="systemphotoexposurebias-proxy"></a>Proxy System. Photo. ExposureBias
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

@@ -1,5 +1,5 @@
 ---
-description: Permite que um cliente gerencie as configurações de cota de disco global de um volume NTFS. Esse objeto disponibiliza a funcionalidade essencial da interface DIDiskQuotaUser para scripts e aplicativos baseados Visual Basic Microsoft.
+description: Permite que um cliente gerencie as configurações de cota de disco global de um volume NTFS. esse objeto torna a funcionalidade essencial da interface DIDiskQuotaUser disponível para scripts e aplicativos baseados no Microsoft Visual Basic.
 title: Objeto DIDiskQuotaUser
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,33 +13,33 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 0cdf3293-3dcf-44e7-a80d-4eacf9d09fbf
-ms.openlocfilehash: b370056f40320561a38b1f77fbcf9a53ee35686a
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 65d8397ed07fc3ebab9fd4846b008f97c1b7e756366118314b978f94b64c8636
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032804"
 ---
 # <a name="didiskquotauser-object"></a>Objeto DIDiskQuotaUser
 
-Permite que um cliente gerencie as configurações de cota de disco global de um volume NTFS. Esse objeto disponibiliza a funcionalidade essencial da interface **DIDiskQuotaUser** para scripts e aplicativos baseados Visual Basic Microsoft.
+Permite que um cliente gerencie as configurações de cota de disco global de um volume NTFS. esse objeto torna a funcionalidade essencial da interface **DIDiskQuotaUser** disponível para scripts e aplicativos baseados no Microsoft Visual Basic.
 
 ## <a name="members"></a>Membros
 
-O **objeto DIDiskQuotaUser** tem estes tipos de membros:
+O objeto **DIDiskQuotaUser** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O **objeto DIDiskQuotaUser** tem esses métodos.
+O objeto **DIDiskQuotaUser** tem esses métodos.
 
 
 
 | Método                                           | Descrição                                             |
 |:-------------------------------------------------|:--------------------------------------------------------|
-| [**Invalidate**](didiskquotauser-invalidate.md) | Limpa as informações de usuário armazenadas em cache do objeto.<br/> |
+| [**Invalidate**](didiskquotauser-invalidate.md) | Limpa as informações de usuário em cache do objeto.<br/> |
 
 
 
@@ -47,7 +47,7 @@ O **objeto DIDiskQuotaUser** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-O **objeto DIDiskQuotaUser** tem essas propriedades.
+O objeto **DIDiskQuotaUser** tem essas propriedades.
 
 
 
@@ -58,7 +58,7 @@ O **objeto DIDiskQuotaUser** tem essas propriedades.
 | [**DisplayName**](didiskquotauser-displayname.md)<br/>                   | Somente leitura<br/>  | Obtém o nome de exibição do usuário.<br/>                                                             |
 | [**ID**](didiskquotauser-id.md)<br/>                                     | Somente leitura<br/>  | Obtém uma ID que identifica exclusivamente o usuário.<br/>                                             |
 | [**LogonName**](didiskquotauser-logonname.md)<br/>                       | Somente leitura<br/>  | Obtém o nome da conta de logon do usuário.<br/>                                                       |
-| [**QuotaLimit**](didiskquotauser-quotalimit.md)<br/>                     | Leitura/gravação<br/> | Define ou obtém o limite de cota [**atual do usuário.**](diskquotacontrol-object.md)<br/>           |
+| [**QuotaLimit**](didiskquotauser-quotalimit.md)<br/>                     | Leitura/gravação<br/> | Define ou Obtém o [**limite de cota**](diskquotacontrol-object.md)atual do usuário.<br/>           |
 | [**QuotaLimitText**](didiskquotauser-quotalimittext.md)<br/>             | Somente leitura<br/>  | Obtém o [**limite de cota**](diskquotacontrol-object.md) atual do usuário como uma cadeia de texto. <br/> |
 | [**QuotaThreshold**](didiskquotauser-quotathreshold.md)<br/>             | Leitura/gravação<br/> | Define ou Obtém o limite de aviso do usuário, em bytes.<br/>                                      |
 | [**QuotaThresholdText**](didiskquotauser-quotathresholdtext.md)<br/>     | Somente leitura<br/>  | Obtém o limite de aviso do usuário como uma cadeia de texto.<br/>                                       |
@@ -79,15 +79,15 @@ Cada usuário no volume que é gerenciado pelo objeto [**DiskQuotaControl**](dis
 
 ### <a name="enumerating-disk-quota-users"></a>Enumerando usuários de cota de disco
 
-Os objetos **DIDiskQuotaUser** para todos os usuários com uma cota no volume são expostos como uma coleção. O objeto [**DiskQuotaControl**](diskquotacontrol-object.md) exporta um método enumerador padrão que permite enumerar a coleção de objetos **DIDiskQuotaUser** . O procedimento a seguir ilustra como executar a enumeração com o Microsoft JScript (compatível com a especificação de linguagem ECMA 262). Você pode usar um procedimento semelhante com o Visual Basic ou o Microsoft Visual Basic Scripting Edition (VBScript).
+Os objetos **DIDiskQuotaUser** para todos os usuários com uma cota no volume são expostos como uma coleção. O objeto [**DiskQuotaControl**](diskquotacontrol-object.md) exporta um método enumerador padrão que permite enumerar a coleção de objetos **DIDiskQuotaUser** . o procedimento a seguir ilustra como executar a enumeração com o Microsoft JScript (compatível com a especificação de linguagem ECMA 262). você pode usar um procedimento semelhante com o Visual Basic ou o Microsoft Visual Basic scripting Edition (VBScript).
 
-1.  Crie um novo [**objeto DiskQuotaControl.**](diskquotacontrol-object.md)
-2.  Inicialize-o com [**Inicializar**](diskquotacontrol-initialize.md).
-3.  Crie um novo objeto **enumerador JScript.**
-4.  Use um loop **for** para enumerar os **objetos DIDiskQuotaUser.** Não é necessário definir um valor inicial. O método **moveNext** do objeto enumerador notifica o método **de item** para retornar o próximo **objeto DIDiskQuotaUser.** O **método atEnd** retorna **false** quando você chega ao final da lista.
-5.  Conforme necessário, use o objeto **DIDiskQuotaUser** retornado pelo método **de item** do enumerador para recuperar ou definir uma ou mais das propriedades de cota de disco do usuário associado.
+1.  Crie um novo objeto [**DiskQuotaControl**](diskquotacontrol-object.md) .
+2.  Inicialize-o com [**Initialize**](diskquotacontrol-initialize.md).
+3.  crie um novo objeto **enumerador** JScript.
+4.  Use um loop **for** para enumerar os objetos **DIDiskQuotaUser** . Não é necessário definir um valor inicial. O método **MoveNext** do objeto Enumerator notifica o método **Item** para retornar o próximo objeto **DIDiskQuotaUser** . O método **atend** retorna **false** quando você chega ao final da lista.
+5.  Conforme necessário, use o objeto **DIDiskQuotaUser** retornado pelo método **Item** do enumerador para recuperar ou definir uma ou mais propriedades de cota de disco do usuário associado.
 
-O fragmento de código a seguir ilustra como enumerar objetos **DIDiskQuotaUser** com JScript. O **argumento \_ Rótulo** de Volume passado para a **função EnumUsers** é um valor de cadeia de caracteres que contém um rótulo de volume como "C: \\ \\ ".
+O fragmento de código a seguir ilustra como enumerar objetos **DIDiskQuotaUser** com JScript. O argumento de **\_ rótulo de volume** que é passado para a função **EnumUsers** é um valor de cadeia de caracteres que contém um rótulo de volume, como "C: \\ \\ ".
 
 
 ```
@@ -122,7 +122,7 @@ function EnumUsers(Volume_Label)
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
 
 
 

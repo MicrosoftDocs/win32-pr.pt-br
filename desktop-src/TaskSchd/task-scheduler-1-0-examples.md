@@ -6,21 +6,21 @@ keywords:
 - Exemplos de Agendador de Tarefas Agendador de Tarefas, Agendador de Tarefas exemplos de 1,0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 746c8c44648359f269d61fd27fc57b1fd90932da
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0ea41bbe0679935cd964f61efd52e9fa5b57cc34aab73f3bb1dd09ea64a0f9c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059874"
 ---
 # <a name="task-scheduler-10-examples"></a>Exemplos de Agendador de Tarefas 1,0
 
 Os exemplos nesta seção usam a API introduzida no Agendador de Tarefas 1,0.
 
 > [!Note]  
-> Para um computador com Windows Server 2003, Windows XP ou Windows 2000 para criar, monitorar ou controlar tarefas em um computador com Windows Vista, determinadas operações devem ser concluídas no computador com Windows Vista. Para obter mais informações, consulte [Tarefas](tasks.md).
+> para um computador Windows Server 2003, Windows XP ou Windows 2000 para criar, monitorar ou controlar tarefas em um computador Windows vista, determinadas operações devem ser concluídas no computador do Windows vista. Para obter mais informações, consulte [Tarefas](tasks.md).
 
- 
+ 
 
 Os tópicos a seguir fornecem exemplos que mostram como usar as funções introduzidas no Agendador de Tarefas 1,0.
 
@@ -43,7 +43,7 @@ Os tópicos a seguir fornecem exemplos que mostram como usar as funções introd
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -52,9 +52,9 @@ Os tópicos a seguir fornecem exemplos que mostram como usar as funções introd
 [Usando o Agendador de Tarefas](using-the-task-scheduler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

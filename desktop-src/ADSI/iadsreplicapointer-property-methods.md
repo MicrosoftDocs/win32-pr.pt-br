@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADsReplicaPointer (IADs. h)
-description: O método Property da interface IADsReplicaPointer define a propriedade descrita na tabela a seguir. Para obter mais informações, consulte interface Property Methods.
+title: Métodos de propriedade IADsReplicaPointer (Iads.h)
+description: O método de propriedade da interface IADsReplicaPointer define a propriedade descrita na tabela a seguir. Para obter mais informações, consulte Métodos de propriedade de interface.
 ms.assetid: fc520ea4-b2c2-44c0-8bec-25f8d4a77074
 ms.tgt_platform: multiple
 keywords:
-- ADSI de métodos de propriedade IADsReplicaPointer
+- Métodos de propriedade IADsReplicaPointer ADSI
 topic_type:
 - apiref
 api_name:
@@ -39,7 +39,7 @@ ms.locfileid: "117839716"
 ---
 # <a name="iadsreplicapointer-property-methods"></a>Métodos de propriedade IADsReplicaPointer
 
-O método Property da interface [**IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer) define a propriedade descrita na tabela a seguir. Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).
+O método de propriedade da [**interface IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer) define a propriedade descrita na tabela a seguir. Para obter mais informações, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
@@ -52,10 +52,10 @@ O número de réplicas existentes.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -76,14 +76,14 @@ HRESULT put_Count(
 **ReplicaAddressHints**
 </dt> <dd> <dl>
 
-Um endereço de rede Sugerido como uma referência provável a um nó que leva ao servidor de nomes.
+Um endereço de rede sugerido como uma referência provável a um nó que leva ao servidor de nomes.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -108,10 +108,10 @@ Número de identificação da réplica.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -129,17 +129,17 @@ HRESULT put_ReplicaNumber(
 
 </dt> </dl> </dd> <dt>
 
-**Réplicatype**
+**ReplicaType**
 </dt> <dd> <dl>
 
-Tipo de réplica (Mestre, secundário ou somente leitura.)
+Tipo de réplica (mestre, secundário ou somente leitura.)
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -160,11 +160,11 @@ HRESULT put_ReplicaType(
 **ServerName**
 </dt> <dd> <dl>
 
-Nome do servidor de nomes que contém a réplica.
+Nome do servidor de nomes que mantém a réplica.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -195,7 +195,7 @@ HRESULT put_ServerName(
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsReplicaPointer é definido como F60FB803-4080-11D1-A3AC-00C04FB950DC<br/>   |
 
@@ -208,7 +208,7 @@ HRESULT put_ServerName(
 [**IADsReplicaPointer**](/windows/desktop/api/Iads/nn-iads-iadsreplicapointer)
 </dt> <dt>
 
-[**\_REPLICAPOINTER ADS**](/windows/win32/api/iads/ns-iads-ads_replicapointer)
+[**ADS \_ REPLICAPOINTER**](/windows/win32/api/iads/ns-iads-ads_replicapointer)
 </dt> </dl>
 
  

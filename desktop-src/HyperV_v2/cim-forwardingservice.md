@@ -1,7 +1,7 @@
 ---
-description: Representa um serviço de encaminhamento para tráfego de rede. O serviço processa os pontos de extremidade de protocolo recebidos, descartando-os ou enviando-os para outros pontos de extremidade de protocolo.
+description: Representa um serviço de encaminhamento para o tráfego de rede. O serviço processa pacotes recebidos pontos de extremidade de protocolo descartando-os ou enviando os pacotes para outros pontos de extremidade de protocolo.
 ms.assetid: 366ae2bf-a436-4ad2-b212-39958a7fbc43
-title: Classe CIM_ForwardingService
+title: CIM_ForwardingService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 12ebb33d6c63b637c9342bd7a869993019abb26b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 63dd03c6e458ee88ef73dea89d006d6d733dd147ed2d4ad7433901c18cbb25d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370577"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014654"
 ---
-# <a name="cim_forwardingservice-class"></a>\_Classe CIM ForwardingService
+# <a name="cim_forwardingservice-class"></a>Classe CIM \_ ForwardingService
 
-Representa um serviço de encaminhamento para tráfego de rede. O serviço processa os pontos de extremidade de protocolo recebidos, descartando-os ou enviando-os para outros pontos de extremidade de protocolo.
+Representa um serviço de encaminhamento para o tráfego de rede. O serviço processa pacotes recebidos pontos de extremidade de protocolo descartando-os ou enviando os pacotes para outros pontos de extremidade de protocolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,13 +39,13 @@ class CIM_ForwardingService : CIM_NetworkService
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ForwardingService** tem estes tipos de membros:
+A **classe CIM \_ ForwardingService** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ForwardingService** tem essas propriedades.
+A **classe CIM \_ ForwardingService** tem essas propriedades.
 
 <dl> <dt>
 
@@ -58,17 +58,17 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ForwardingService**.**ProtocolType**")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ ForwardingService**.**ProtocolType**")
 </dt> </dl>
 
-Define o tipo de protocolo a ser encaminhado quando o valor da propriedade **ProtocolType** é 1 (outro).
+Define o tipo de protocolo a ser encaminhado quando o valor da **propriedade ProtocolType** for 1 (Outro).
 
 </dd> <dt>
 
-**ProtocolType**
+**Protocoltype**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -90,7 +90,7 @@ O tipo de protocolo a ser encaminhado.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -160,7 +160,7 @@ O tipo de protocolo a ser encaminhado.
 
 <span id="VINES"></span><span id="vines"></span>
 
-**Vines** (11)
+**VINES** (11)
 
 
 </dt> <dd></dd> <dt>
@@ -181,7 +181,7 @@ O tipo de protocolo a ser encaminhado.
 
 <span id="Frame_Relay"></span><span id="frame_relay"></span><span id="FRAME_RELAY"></span>
 
-**Frame Relay** (14)
+**Retransmissão de** quadro (14)
 
 
 </dt> <dd></dd> <dt>
@@ -195,7 +195,7 @@ O tipo de protocolo a ser encaminhado.
 
 <span id="TokenRing"></span><span id="tokenring"></span><span id="TOKENRING"></span>
 
-**Tokenring** (16)
+**TokenRing** (16)
 
 
 </dt> <dd></dd> <dt>
@@ -209,7 +209,7 @@ O tipo de protocolo a ser encaminhado.
 
 <span id="Infiniband"></span><span id="infiniband"></span><span id="INFINIBAND"></span>
 
-**InfiniBand** (18)
+**Infiniband** (18)
 
 
 </dt> <dd></dd> <dt>
@@ -231,8 +231,8 @@ O tipo de protocolo a ser encaminhado.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -241,7 +241,7 @@ O tipo de protocolo a ser encaminhado.
 
 <dl> <dt>
 
-[**NetworkService do CIM \_**](cim-networkservice.md)
+[**Serviço de Rede CIM \_**](cim-networkservice.md)
 </dt> </dl>
 
  

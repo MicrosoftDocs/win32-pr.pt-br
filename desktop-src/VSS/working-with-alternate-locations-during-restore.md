@@ -4,12 +4,12 @@ ms.assetid: 2a9cfd99-5a2c-4c0c-98ff-11c745298cda
 title: Trabalhando com locais alternativos durante a restauração
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1338d76f98153ccb388e86e738b408c03dd253b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 907732c7b4b97668f1a317f9e03c3ea35bdec9618ff0e3e3c1a2f1e319eb19fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105800201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056144"
 ---
 # <a name="working-with-alternate-locations-during-restore"></a>Trabalhando com locais alternativos durante a restauração
 

@@ -3,7 +3,7 @@ title: Mensagem de UDM_SETUNICODEFORMAT (commctrl. h)
 description: UDM_SETUNICODEFORMAT mensagem – define o sinalizador de formato de caractere Unicode para o controle. Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de execução em vez de ter que recriar o controle.
 ms.assetid: abe882db-bf32-40b0-a1c0-3e89cdc93fe7
 keywords:
-- Controles de UDM_SETUNICODEFORMAT de mensagens do Windows
+- controles de Windows de mensagem de UDM_SETUNICODEFORMAT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09eeb63d5c06a5e64c354c950cd84fc451568d36
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7dd6d390c62475b63dccf20fdb80da1f1e8dafe19cdacab2f0b1ac2fe7bf1687
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957715"
 ---
 # <a name="udm_setunicodeformat-message"></a>\_Mensagem de SETUNICODEFORMAT UDM
 
@@ -53,13 +53,13 @@ Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

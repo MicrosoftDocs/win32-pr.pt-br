@@ -70,12 +70,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d7f566bf2a75b3ed4f503da245d7b6ce428dce5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 156396e61fca255f7aa4fd584aa10e9386b57c4b3e86f687fb39a922ed1f2fd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949885"
 ---
 # <a name="msvm_syntheticdisplaycontroller-class"></a>\_Classe Msvm SyntheticDisplayController
 
@@ -162,7 +162,7 @@ A classe **Msvm \_ SyntheticDisplayController** tem esses métodos.
 | **OnlineDevice**                                                                 | Não há suporte para o método.<br/> |
 | **QuiesceDevice**                                                                | Não há suporte para o método.<br/> |
 | [**RequestStateChange**](msvm-syntheticdisplaycontroller-requeststatechange.md) | Solicita uma alteração de estado.<br/>      |
-| [**Redefinir**](msvm-syntheticdisplaycontroller-reset.md)                           | Redefine o dispositivo virtual.<br/>    |
+| [**Definido**](msvm-syntheticdisplaycontroller-reset.md)                           | Redefine o dispositivo virtual.<br/>    |
 | **Restaurarproperties**                                                            | Não há suporte para o método.<br/> |
 | **Salvarproperties**                                                               | Não há suporte para o método.<br/> |
 | **SetPowerState**                                                                | Não há suporte para o método.<br/> |
@@ -365,7 +365,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é sempre definida como "Microsoft:*GUID*".
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e sempre é definida como "Microsoft:*GUID".*
 
 </dd> <dt>
 
@@ -378,20 +378,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "controlador de vídeo" por padrão.
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "Controlador de Exibição" por padrão.
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A configuração de inicialização ou padrão de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como 2 (habilitado).
+Configuração padrão ou de inicialização de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e sempre é definida como 2 (Habilitada).
 
 </dd> <dt>
 
@@ -404,20 +404,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Os Estados habilitado e desabilitado de um elemento. Ele também pode indicar as transições entre esses Estados solicitados. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como 2 (habilitado) ou 3 (desabilitado).
+Os estados habilitados e desabilitados de um elemento. Ele também pode indicar as transições entre esses estados solicitados. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e sempre é definida como 2 (Habilitado) ou 3 (Desabilitado).
 
 </dd> <dt>
 
 **ErrorCleared**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
@@ -430,46 +430,46 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A integridade atual do elemento. Esse atributo expressa a integridade desse elemento, mas não necessariamente o de seus subelementos. Os valores possíveis são 0 a 30, em que 5 significa que o elemento está totalmente íntegro e 30 significa que o elemento é completamente não funcional. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é sempre definida como 5 (OK).
+A saúde atual do elemento. Esse atributo expressa a saúde desse elemento, mas não necessariamente a de seus subelementos. Os valores possíveis são de 0 a 30, em que 5 significa que o elemento está totalmente íntegre e 30 significa que o elemento é completamente nãofuncional. Essa propriedade é herdada [**de CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é sempre definida como 5 (OK).
 
 </dd> <dt>
 
 **IdentifyingDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é sempre definida como **NULL**.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -482,62 +482,62 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **LastErrorCode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **MaxMemorySupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A quantidade máxima de memória com suporte, em bytes. Essa propriedade é herdada do [**CIM \_ DisplayController**](/previous-versions//cc136810(v=vs.85))e é sempre definida como 4.194.304 (0x400000).
+A quantidade máxima de memória com suporte, em bytes. Essa propriedade é herdada de [**\_ DisplayController**](/previous-versions//cc136810(v=vs.85))cim e é sempre definida como 4.194.304 (0x400000).
 
 </dd> <dt>
 
 **MaxNumberControlled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número máximo de entidades diretamente endereçáveis que são suportadas por este controlador. Um valor de 0 deve ser usado se o número for desconhecido ou ilimitado. O protocolo usado pelo controlador para acessar dispositivos controlados. Essa propriedade é herdada [**do \_ controlador CIM**](/windows/desktop/CIMWin32Prov/cim-controller)e é sempre definida como 1.
+O número máximo de entidades diretamente acessível com suporte por esse controlador. Um valor de 0 deverá ser usado se o número for desconhecido ou ilimitado. O protocolo usado pelo controlador para acessar dispositivos controlados. Essa propriedade é herdada do [**\_ Controlador CIM**](/windows/desktop/CIMWin32Prov/cim-controller)e sempre é definida como 1.
 
 </dd> <dt>
 
 **MaxQuiesceTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
@@ -550,33 +550,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é a mesma que a propriedade **ElementName** .
+O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada [**de CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é a mesma que a **propriedade ElementName.**
 
 </dd> <dt>
 
 **NumberOfVideoPages**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número de páginas de vídeo com suporte dadas as resoluções atuais e a memória disponível. Essa propriedade é herdada do [**CIM \_ DisplayController**](/previous-versions//cc136810(v=vs.85))e é sempre definida como 1024.
+O número de páginas de vídeo com suporte considerando as resoluções atuais e a memória disponível. Essa propriedade é herdada [**de \_ DisplayController cim**](/previous-versions//cc136810(v=vs.85))e é sempre definida como 1024.
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da propriedade **enabledstate** . Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da **propriedade EnabledState.** Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -610,7 +610,7 @@ Fornece informações de status atuais para a condição operacional do elemento
 <span id="Migrating"></span><span id="migrating"></span><span id="MIGRATING"></span>**Migrando** (9)
 </dt> <dt>
 
-<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrating** (10)
+<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrando** (10)
 </dt> <dt>
 
 <span id="Immigrating"></span><span id="immigrating"></span><span id="IMMIGRATING"></span>**Immigrating** (11)
@@ -622,7 +622,7 @@ Fornece informações de status atuais para a condição operacional do elemento
 <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span>**Desligando** (13)
 </dt> <dt>
 
-<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**Em teste** (14)
+<span id="In_Test"></span><span id="in_test"></span><span id="IN_TEST"></span>**Em Teste** (14)
 </dt> <dt>
 
 <span id="Transitioning"></span><span id="transitioning"></span><span id="TRANSITIONING"></span>**Transição** (15)
@@ -631,10 +631,10 @@ Fornece informações de status atuais para a condição operacional do elemento
 <span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span>**Em serviço** (16)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -642,13 +642,13 @@ Fornece informações de status atuais para a condição operacional do elemento
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Os status atuais do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento da matriz é sempre definido como 2 (OK).
+Os status atuais do objeto. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento de matriz é sempre definido como 2 (OK).
 
 </dd> <dt>
 
@@ -661,20 +661,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O estado habilitado ou desabilitado do elemento quando a propriedade **enabledstate** é definida como 1 (outro). Essa propriedade deve ser definida como **NULL** quando **enabledstate** for qualquer valor diferente de 1. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **NULL**.
+O estado habilitado ou desabilitado do elemento quando a **propriedade EnabledState** é definida como 1 (Outro). Essa propriedade deve ser definida como **Null quando** **EnabledState** for qualquer valor diferente de 1. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **OtherIdentifyingInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é sempre definida como **NULL**.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é sempre definida como **Null.**
 
 </dd> <dt>
 
@@ -687,7 +687,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o tipo de arquitetura de vídeo quando a propriedade **VideoArchitecture** é 1 ("other"). Essa propriedade é herdada do [**CIM \_ DisplayController**](/previous-versions//cc136810(v=vs.85)).
+Uma cadeia de caracteres que descreve o tipo de arquitetura de vídeo quando a **propriedade VideoArchitecture** é 1 ("Outros"). Essa propriedade é herdada de [**\_ DisplayController cim.**](/previous-versions//cc136810(v=vs.85))
 
 </dd> <dt>
 
@@ -700,59 +700,59 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de memória de vídeo quando a propriedade **VideoMemoryType** da instância é 1 (outra). Essa propriedade é herdada do [**CIM \_ DisplayController**](/previous-versions//cc136810(v=vs.85))e é sempre definida como **NULL**.
+O tipo de memória de vídeo quando a propriedade **VideoMemoryType** da instância é 1 (Outro). Essa propriedade é herdada [**de \_ DisplayController cim**](/previous-versions//cc136810(v=vs.85))e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **PowerManagementCapabilities**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **PowerManagementSupported**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **PowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer o status de integridade de alto nível e detalhado do elemento e seus subcomponentes. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer status de saúde detalhado e de alto nível do elemento e seus subcomponentes. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -768,10 +768,10 @@ Fornece informações de status de alto nível. Essa propriedade deve ser usada 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>**Erro** (3)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -785,33 +785,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que fornece mais informações relacionadas ao protocolo suportado pelo controlador. Essa propriedade é herdada [**do \_ controlador CIM**](/windows/desktop/CIMWin32Prov/cim-controller)e é sempre definida como "vídeo".
+Uma cadeia de caracteres que fornece mais informações relacionadas ao protocolo com suporte pelo controlador. Essa propriedade é herdada do [**\_ Controlador CIM**](/windows/desktop/CIMWin32Prov/cim-controller)e sempre é definida como "Vídeo".
 
 </dd> <dt>
 
-**ProtocolSupported**
+**Protocolo Compatível**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O protocolo usado pelo controlador para acessar dispositivos controlados. Essa propriedade é herdada [**do \_ controlador CIM**](/windows/desktop/CIMWin32Prov/cim-controller)e é sempre definida como 1 (outra).
+O protocolo usado pelo controlador para acessar dispositivos controlados. Essa propriedade é herdada do [**\_ Controlador CIM**](/windows/desktop/CIMWin32Prov/cim-controller)e sempre é definida como 1 (Outro).
 
 </dd> <dt>
 
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O último estado solicitado ou desejado para o elemento. O estado real do elemento é representado por **enabledstate**. Essa propriedade é fornecida para comparar os últimos Estados solicitados e atuais habilitados ou desabilitados. Uma determinada instância do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) pode não dar suporte A **RequestStateChange**. Se isso ocorrer, o valor 12 (não aplicável) será usado. Essa propriedade é herdada do **CIM \_ EnabledLogicalElement** e é definida como 2 (habilitado), 3 (desabilitado) ou 12 (não aplicável).
+O último estado solicitado ou desejado para o elemento. O estado real do elemento é representado por **EnabledState.** Essa propriedade é fornecida para comparar os últimos estados habilitados ou desabilitados solicitados e atuais. Uma instância específica do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)) pode não dar suporte **a RequestStateChange.** Se isso ocorrer, o valor 12 (Não Aplicável) será usado. Essa propriedade é herdada **de CIM \_ EnabledLogicalElement** e é definida como 2 (Habilitado), 3 (Desabilitado) ou 12 (Não Aplicável).
 
 </dd> <dt>
 
@@ -824,33 +824,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)mas não é usada.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeias de caracteres que descrevem os vários valores de matriz de **OperationalStatus** . Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento da matriz é sempre definido como "OK".
+Cadeias de caracteres que descrevem os **vários valores de matriz OperationalStatus.** Essa propriedade é herdada de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento de matriz é sempre definido como "OK".
 
 </dd> <dt>
 
 **StatusInfo**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
@@ -863,11 +863,11 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome da classe de criação do sistema de escopo. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é sempre definida como "Msvm \_ ComputerSystem".
+O nome da classe de criação do sistema de scoping. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)e é sempre definida como "Msvm \_ ComputerSystem".
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -876,79 +876,79 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O identificador exclusivo para a máquina virtual de escopo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O identificador exclusivo para a máquina virtual de definição de código. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **TimeOfLastReset**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A última vez em que a máquina virtual estava ligada. Essa propriedade é herdada [**do \_ controlador CIM**](/windows/desktop/CIMWin32Prov/cim-controller).
+A última vez que a máquina virtual foi ligado. Essa propriedade é herdada do [**Controlador CIM. \_**](/windows/desktop/CIMWin32Prov/cim-controller)
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data ou a hora em que o estado habilitado do elemento foi alterado pela última vez. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+A data ou a hora em que o estado habilitado do elemento foi alterado pela última vez. Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 </dd> <dt>
 
 **TotalPowerOnHours**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **NULL**.
+Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **VideoArchitecture**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica a arquitetura de vídeo do controlador de vídeo usada para gerar o sinal de vídeo. Normalmente, um processador de vídeo dedicado gera o sinal de vídeo de acordo com a arquitetura especificada. É um indicador da capacidade de resolução máxima do controlador de vídeo. Essa propriedade é herdada do [**CIM \_ DisplayController**](/previous-versions//cc136810(v=vs.85)).
+Especifica a arquitetura de vídeo do controlador de exibição usada para gerar o sinal de vídeo. Normalmente, um processador de vídeo dedicado gera o sinal de vídeo de acordo com a arquitetura especificada. É um indicador da capacidade máxima de resolução do controlador de exibição. Essa propriedade é herdada de [**\_ DisplayController cim**](/previous-versions//cc136810(v=vs.85)).
 
 <dl> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconhecido** (0)
 </dt> <dt>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 </dt> <dt>
 
 <span id="CGA"></span><span id="cga"></span>**CGA** (2)
@@ -984,10 +984,10 @@ Especifica a arquitetura de vídeo do controlador de vídeo usada para gerar o s
 <span id="PC-98"></span><span id="pc-98"></span>**PC-98** (160)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -995,13 +995,13 @@ Especifica a arquitetura de vídeo do controlador de vídeo usada para gerar o s
 **VideoMemoryType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de memória de vídeo. Essa propriedade é herdada do [**CIM \_ DisplayController**](/previous-versions//cc136810(v=vs.85))e é sempre definida como 2 (VRAM).
+O tipo de memória de vídeo. Essa propriedade é herdada de [**\_ DisplayController cim**](/previous-versions//cc136810(v=vs.85))e é sempre definida como 2 (VRAM).
 
 </dd> <dt>
 
@@ -1014,13 +1014,13 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o controlador/processador de vídeo. Essa propriedade é herdada do [**CIM \_ DisplayController**](/previous-versions//cc136810(v=vs.85))e é sempre definida como "processador de vídeo sintético".
+Uma cadeia de caracteres que descreve o processador/controlador de vídeo. Essa propriedade é herdada de [**\_ DisplayController cim**](/previous-versions//cc136810(v=vs.85))e é sempre definida como "Processador de Vídeo Sintético".
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe **Msvm \_ SyntheticDisplayController** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe \_ SyntheticDisplayController do Msvm** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1028,10 +1028,10 @@ O acesso à classe **Msvm \_ SyntheticDisplayController** pode ser restringido p
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -1040,10 +1040,10 @@ O acesso à classe **Msvm \_ SyntheticDisplayController** pode ser restringido p
 
 <dl> <dt>
 
-[**\_DISPLAYCONTROLLER CIM**](cim-displaycontroller.md)
+[**CIM \_ DisplayController**](cim-displaycontroller.md)
 </dt> <dt>
 
-[**\_DISPLAYCONTROLLER CIM**](/previous-versions//cc136810(v=vs.85))
+[**CIM \_ DisplayController**](/previous-versions//cc136810(v=vs.85))
 </dt> <dt>
 
 [Classes de vídeo](video-classes.md)

@@ -9,12 +9,12 @@ keywords:
 - Snap-in de usuários e computadores AD, adicionando colunas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd0765988a9ceed3e98966091ad94b868b96fd88
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: dcf6ef4743009086ae19148c42a8addc5974e4ac833cdad8eee675fdce76a5f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025864"
 ---
 # <a name="modifying-existing-user-interfaces"></a>Modificando as interfaces de usuário existentes
 
@@ -22,7 +22,7 @@ O painel de resultados do snap-in Active Directory usuários e computadores do M
 
 Para alterar a exibição, o usuário usa o menu suspenso **Exibir** e seleciona **Adicionar/remover colunas**. Na caixa de diálogo **Adicionar/remover colunas** , há uma lista de colunas que o usuário pode escolher para exibir no painel de resultados.
 
-O snap-in Active Directory usuários e computadores do MMC que está incluído no Windows Server 2003, Standard Edition, Windows Server 2003, Enterprise Edition e Windows Server 2003, Datacenter Edition, fornece a capacidade de modificar a lista de colunas que podem ser exibidas no painel de resultados do snap-in para um contêiner. Esse recurso só existe se o snap-in for direcionado a uma floresta com o esquema do Windows Server 2003.
+o snap-in Active Directory usuários e computadores do MMC que está incluído no Windows server 2003, Edição Standard, Windows server 2003, Edição Enterprise e Windows server 2003, datacenter Edition, fornece a capacidade de modificar a lista de colunas que podem ser exibidas no painel de resultados do snap-in para um contêiner. esse recurso só existe se o snap-in for direcionado a uma floresta com o esquema Windows Server 2003.
 
 Para adicionar uma coluna à lista, adicione um valor ao atributo **extraColumns** do especificador de exibição para o tipo de objeto ao qual o atributo está associado. O atributo **extraColumns** é um atributo de cadeia de caracteres com valores múltiplos, em que cada cadeia de caracteres está no formato a seguir.
 
@@ -49,7 +49,7 @@ A tabela a seguir lista o conteúdo desses valores.
 
 
 
- 
+ 
 
 Por exemplo, para adicionar uma coluna que exibirá o nome canônico de objetos em uma unidade organizacional, um valor para o atributo **canôniconame** será adicionado ao atributo **extraColumns** do objeto de **exibição OrganizationalUnit** no contêiner exibir especificadores. A cadeia de caracteres adicionada ao atributo **extraColumns** do objeto de **exibição OrganizationalUnit** será semelhante ao seguinte.
 
@@ -66,9 +66,9 @@ Para adicionar uma ou mais colunas à lista de colunas de um objeto específico,
 
 Para exibir uma coluna personalizada para todos os tipos de contêiner que não têm nenhuma coluna personalizada registrada, adicione um valor para a coluna ao atributo **extraColumns** do objeto de **exibição padrão** .
 
- 
+ 
 
- 
+ 
 
 
 

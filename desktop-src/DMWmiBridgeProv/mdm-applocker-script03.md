@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_AppLocker_Script03
-description: A \_ classe Script03 do MDM AppLocker \_ define as restrições de política para o processamento de arquivos dll.
+title: MDM_AppLocker_Script03 classe
+description: A classe MDM \_ AppLocker \_ Script03 define as restrições de política para processar arquivos DLL.
 ms.assetid: 61fada02-7245-4825-945c-b41e9eff8e74
 keywords:
-- Classe MDM_AppLocker_Script03
-- Classe MDM_AppLocker_Script03, descrita
+- MDM_AppLocker_Script03 classe
+- MDM_AppLocker_Script03 classe , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 402efedb1e15a0ea0df3dea654328de4ba0ddd86
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 681b70e98352bae70decf4d94dd78a2a08a1e180713056d37593c540896f2b86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077340"
 ---
-# <a name="mdm_applocker_script03-class"></a>\_ \_ Classe SCRIPT03 do MDM AppLocker
+# <a name="mdm_applocker_script03-class"></a>Classe MDM \_ AppLocker \_ Script03
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A **classe \_ \_ Script03 do MDM AppLocker** define as restrições de política para o processamento de arquivos dll.
+A **classe MDM \_ AppLocker \_ Script03** define as restrições de política para processar arquivos DLL.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -47,23 +47,23 @@ class MDM_AppLocker_Script03
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Script03 do MDM AppLocker** tem estes tipos de membros:
+A **classe MDM \_ AppLocker \_ Script03** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Script03 do MDM AppLocker** tem essas propriedades.
+A **classe MDM \_ AppLocker \_ Script03** tem essas propriedades.
 
 <dl> <dt>
 
-[**Imposiçãomode**](/windows/client-management/mdm/applocker-csp)
+[**EnforcementMode**](/windows/client-management/mdm/applocker-csp)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -84,7 +84,7 @@ Identifica o nome do nó pai.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -106,7 +106,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -117,10 +117,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

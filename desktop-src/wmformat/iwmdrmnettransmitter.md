@@ -1,6 +1,6 @@
 ---
 title: Interface IWMDRMNetTransmitter
-description: A interface IWMDRMNetTransmitter fornece métodos necessários para usar o DRM do Windows Media para dispositivos de rede como um transmissor. Para obter uma instância dessa interface, chame IWMDRMProvider CreateObject. Passe \_ IWMDRMNETTRANSMITTER IID como o parâmetro riid.
+description: a interface IWMDRMNetTransmitter fornece métodos necessários para usar Windows DRM de mídia para dispositivos de rede como um transmissor. Para obter uma instância dessa interface, chame IWMDRMProvider CreateObject. Passe \_ IWMDRMNETTRANSMITTER IID como o parâmetro riid.
 ms.assetid: e93db52a-8829-4d16-b839-824e34b3e582
 keywords:
 - Formato de mídia do Windows da interface IWMDRMNetTransmitter
@@ -14,16 +14,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a56db31bb7c03aa70aa136dcd07a8f41f1d9b84d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b7526ad349403abdb74f1e5684356af1b51b91f99b40e8e26a3b04932d4e5cf6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294266"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027554"
 ---
 # <a name="iwmdrmnettransmitter-interface"></a>Interface IWMDRMNetTransmitter
 
-A interface **IWMDRMNetTransmitter** fornece métodos necessários para usar o DRM do Windows Media para dispositivos de rede como um transmissor.
+a interface **IWMDRMNetTransmitter** fornece métodos necessários para usar Windows DRM de mídia para dispositivos de rede como um transmissor.
 
 Para obter uma instância dessa interface, chame [**IWMDRMProvider:: CreateObject**](iwmdrmprovider-createobject.md). Passe **\_ IWMDRMNetTransmitter IID** como o parâmetro *riid* .
 
@@ -43,7 +43,7 @@ A interface **IWMDRMNetTransmitter** tem esses métodos.
 |:------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | [**GetLeafLicenseResponse**](iwmdrmnettransmitter-getleaflicenseresponse.md) | Gera uma mensagem de resposta de licença de folha.<br/>                                                       |
 | [**GetRootLicenseResponse**](iwmdrmnettransmitter-getrootlicenseresponse.md) | Gera uma mensagem de resposta de licença raiz<br/>                                                        |
-| [**SetLicenseChallenge**](iwmdrmnettransmitter-setlicensechallenge.md)       | Processa um desafio de licença enviado por um Microsoft Windows Media DRM para dispositivos de rede receptor<br/> |
+| [**SetLicenseChallenge**](iwmdrmnettransmitter-setlicensechallenge.md)       | processa um desafio de licença enviado por um Microsoft Windows Media DRM para dispositivos de rede receptor<br/> |
 
 
 

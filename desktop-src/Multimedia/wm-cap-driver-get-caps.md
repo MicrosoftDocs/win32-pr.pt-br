@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_DRIVER_GET_CAPS (VFW. h)
 description: A \_ \_ mensagem obter Caps do driver do WM Cap \_ \_ retorna os recursos de hardware do driver de captura atualmente conectados a uma janela de captura. Você pode enviar essa mensagem explicitamente ou usando a macro capDriverGetCaps.
 ms.assetid: 898a800c-1109-47cd-bcc9-cb61d86a4a2e
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_DRIVER_GET_CAPS
+- mensagem de WM_CAP_DRIVER_GET_CAPS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 027e530be82c76afebc343ceebe4905daef9b126
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: aecc863234cddf64bece47896015fd01e97093d227951aef69363136e55cabe5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119687076"
 ---
 # <a name="wm_cap_driver_get_caps-message"></a>\_Mensagem de \_ obtenção do driver \_ \_ do WM Cap
 

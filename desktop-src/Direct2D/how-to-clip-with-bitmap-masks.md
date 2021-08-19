@@ -4,12 +4,12 @@ description: Mostra como recortar uma região com máscaras de bitmap.
 ms.assetid: d6ad53a6-5e84-49d0-ab2c-5d6ad9428f9c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2106f43a6845cd724204fbf3e5aa1ec2b866bf46
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 42829ab9a873be9adbeca7795dd87aed62a258ce5737db6e3f86612b4ffef43c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119259607"
 ---
 # <a name="how-to-use-a-bitmap-as-an-opacity-mask"></a>Como usar um bitmap como uma máscara de opacidade
 
@@ -109,9 +109,9 @@ Para obter mais informações sobre máscaras de opacidade, consulte a [visão g
 
 <dl> <dt>
 
-[Referência de Direct2D](reference.md)
+[Direct2D Referência](reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

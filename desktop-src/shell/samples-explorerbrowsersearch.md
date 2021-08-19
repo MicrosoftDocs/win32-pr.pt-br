@@ -1,5 +1,5 @@
 ---
-description: Demonstra como usar o controle de navegador do Windows Explorer para inserir o Windows Explorer em um aplicativo e como implementar a funcionalidade de pesquisa com uma pasta de pesquisa na memória.
+description: Demonstra como usar o controle Windows Explorer Browser para inserir o Windows Explorer em um aplicativo e como implementar a funcionalidade de pesquisa com uma pasta de pesquisa na memória.
 title: Exemplo de pesquisa do navegador do Explorer
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 3dd33b1625fda513632966ea7f663da9e8089c6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e4e0d8056e82fe38f627e6222af8589bb85aa2e83c1877db0a3d3e44edb5b8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032214"
 ---
 # <a name="explorer-browser-search-sample"></a>Exemplo de pesquisa do navegador do Explorer
 
-Demonstra como usar o controle de navegador do Windows Explorer para inserir o Windows Explorer em um aplicativo e como implementar a funcionalidade de pesquisa com uma pasta de pesquisa na memória.
+Demonstra como usar o controle Windows Explorer Browser para inserir o Windows Explorer em um aplicativo e como implementar a funcionalidade de pesquisa com uma pasta de pesquisa na memória.
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -40,7 +40,7 @@ Este tópico inclui as seções a seguir.
 
  
 
-Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exemplo.
+Para obter requisitos adicionais, consulte o arquivo Leiame incluído no exemplo.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 

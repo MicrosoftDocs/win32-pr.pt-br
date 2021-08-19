@@ -1,6 +1,6 @@
 ---
-title: 'Métodos TextureCubeArray:: TextureCubeArray GatherCmpAlpha'
-description: 'Exemplos e compara uma textura e retorna o componente alfa. | Métodos TextureCubeArray:: TextureCubeArray GatherCmpAlpha'
+title: Métodos TextureCubeArray::TextureCubeArray GatherCmpAlpha
+description: Amostras e compara uma textura e retorna o componente alfa. | Métodos TextureCubeArray::TextureCubeArray GatherCmpAlpha
 ms.assetid: 777A1361-844F-4675-8B1A-E1171A53812B
 keywords:
 - Métodos GatherCmpAlpha HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 29a8e9139c7f4b480ef022203fb2b45a108e5948
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: b184ab4111edc2b4e9cb4b87a7ce09d6f7e6c295265fdd9fb8285794e330110e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120022496"
 ---
-# <a name="texturecubearraygathercmpalpha-methods"></a>Métodos TextureCubeArray:: GatherCmpAlpha
+# <a name="texturecubearraygathercmpalpha-methods"></a>Métodos TextureCubeArray::GatherCmpAlpha
 
-Exemplos e compara uma textura e retorna o componente alfa.
+Amostras e compara uma textura e retorna o componente alfa.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,7 +29,7 @@ Exemplos e compara uma textura e retorna o componente alfa.
 
 | Método                                                                                      | Descrição                                                                                                      |
 |:--------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------|
-| [**GatherCmpAlpha (S, float, float, uint)**](tcubearray-gathercmpalpha-s-float-float-uint-.md) | Exemplos e compara uma textura e retorna o componente alfa junto com o status sobre a operação.<br/> |
+| [**GatherCmpAlpha(S, float, float,uint)**](tcubearray-gathercmpalpha-s-float-float-uint-.md) | Amostras e compara uma textura e retorna o componente alfa junto com o status sobre a operação.<br/> |
 
 
 

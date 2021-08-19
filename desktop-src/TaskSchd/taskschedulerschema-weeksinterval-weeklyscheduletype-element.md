@@ -1,9 +1,9 @@
 ---
 title: Elemento WeeksInterval (weeklyScheduleType)
-description: Especifica o intervalo entre as semanas no agendamento.
+description: Especifica o intervalo entre as semanas na agenda.
 ms.assetid: 6cbf1e7e-a695-4012-97fd-fe3360c362c4
 keywords:
-- Agendador de Tarefas do elemento WeeksInterval
+- Elemento WeeksInterval Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 747ca4b73ff18bdb3e29d8b909d72b8d2367d89b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c59e4f4b163e5e96418c84bf2925e45cf3a54da1bbb50e17ad9282409438ff3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059754"
 ---
 # <a name="weeksinterval-weeklyscheduletype-element"></a>Elemento WeeksInterval (weeklyScheduleType)
 
-Especifica o intervalo entre as semanas no agendamento.
+Especifica o intervalo entre as semanas na agenda.
 
 ``` syntax
 <xs:element name="WeeksInterval"
@@ -43,7 +43,7 @@ Especifica o intervalo entre as semanas no agendamento.
 </xs:element>
 ```
 
-O elemento é definido pelo tipo complexo [**weeklyScheduleType**](taskschedulerschema-weeklyscheduletype-complextype.md) .
+O elemento é definido pelo tipo complexo [**weeklyScheduleType.**](taskschedulerschema-weeklyscheduletype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -57,13 +57,13 @@ O elemento é definido pelo tipo complexo [**weeklyScheduleType**](taskscheduler
 
 ## <a name="remarks"></a>Comentários
 
-Para o desenvolvimento de scripts, o intervalo semanal é especificado usando a propriedade [**WeeklyTrigger. WeeksInterval**](weeklytrigger-weeksinterval.md) .
+Para o desenvolvimento de scripts, o intervalo semanal é especificado usando a [**propriedade WeeklyTrigger.WeeksInterval.**](weeklytrigger-weeksinterval.md)
 
-Para desenvolvimento em C++, o intervalo semanal é especificado usando a propriedade [**IWeeklyTrigger:: WeeksInterval**](/windows/desktop/api/taskschd/nf-taskschd-iweeklytrigger-get_weeksinterval) .
+Para o desenvolvimento em C++, o intervalo semanal é especificado usando a [**propriedade IWeeklyTrigger::WeeksInterval.**](/windows/desktop/api/taskschd/nf-taskschd-iweeklytrigger-get_weeksinterval)
 
 ## <a name="examples"></a>Exemplos
 
-O XML a seguir define um gatilho de calendário semanal que inicia uma tarefa de segunda-feira a sexta-feira (às 8:00) todas as semanas.
+O XML a seguir define um gatilho de calendário semanal que inicia uma tarefa de segunda a sexta-feira ( às 8h) toda semana.
 
 
 ```XML
@@ -91,8 +91,8 @@ O XML a seguir define um gatilho de calendário semanal que inicia uma tarefa de
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -100,7 +100,7 @@ O XML a seguir define um gatilho de calendário semanal que inicia uma tarefa de
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

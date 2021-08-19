@@ -4,12 +4,12 @@ ms.assetid: ae12afcf-12cc-4c84-9aba-de56fc39437b
 title: Criar uma coleções de fontes privadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 084e8a2d6f79f60e0719f04fbabb778b9483bd80
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df673273611ed329e933c84e6540ed984088202590dc1d1c644ccdedca2c80c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165468"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118977586"
 ---
 # <a name="creating-a-private-font-collection"></a>Criar uma coleções de fontes privadas
 
@@ -18,7 +18,7 @@ A classe [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplu
 Uma coleção de fontes privada pode incluir fontes do sistema instalado, bem como as fontes que não foram instaladas no computador. Para adicionar um arquivo de fonte a uma coleção de fontes privada, chame o método [**PrivateFontCollection:: AddFontFile**](/windows/win32/api/Gdiplusheaders/nf-gdiplusheaders-privatefontcollection-addfontfile) de um objeto [**PrivateFontCollection**](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-privatefontcollection) .
 
 > [!Note]  
-> Ao usar a API GDI+, você nunca deve permitir que seu aplicativo Baixe fontes arbitrárias de fontes não confiáveis. O sistema operacional requer privilégios elevados para garantir que todas as fontes instaladas sejam confiáveis.
+> ao usar a API de GDI+, você nunca deve permitir que seu aplicativo baixe fontes arbitrárias de fontes não confiáveis. O sistema operacional requer privilégios elevados para garantir que todas as fontes instaladas sejam confiáveis.
 
  
 
@@ -179,15 +179,15 @@ A ilustração a seguir mostra a saída do código anterior.
 
 ![captura de tela de uma janela que lista nove nomes de fonte, cada um deles demonstra a fonte nomeada](images/fontstext7.png)
 
-Arial. tff (que foi adicionado à coleção de fontes privadas no exemplo de código anterior) é o arquivo de fonte para o estilo Arial regular. No entanto, observe que a saída de programa mostra vários estilos disponíveis além de regular para família de fonte Arial. Isso ocorre porque o Windows GDI+ pode simular os estilos de negrito, itálico e negrito itálico do estilo regular. A GDI+ também pode produzir sublinhados e riscados a partir do estilo regular.
+Arial. tff (que foi adicionado à coleção de fontes privadas no exemplo de código anterior) é o arquivo de fonte para o estilo Arial regular. No entanto, observe que a saída de programa mostra vários estilos disponíveis além de regular para família de fonte Arial. isso ocorre porque Windows GDI+ pode simular os estilos de negrito, itálico e negrito itálico do estilo regular. GDI+ também pode produzir sublinhados e riscados a partir do estilo regular.
 
-Da mesma forma, o GDI+ pode simular o estilo negrito em itálico do estilo negrito ou itálico. A saída do programa mostra que o estilo negrito e itálico está disponível para a família Times, embora TimesBd.tff (Times New Roman, negrito) seja o único arquivo Times na coleção.
+da mesma forma, GDI+ pode simular o estilo em negrito itálico do estilo negrito ou itálico. A saída do programa mostra que o estilo negrito e itálico está disponível para a família Times, embora TimesBd.tff (Times New Roman, negrito) seja o único arquivo Times na coleção.
 
-Esta tabela especifica as fontes que não são do sistema que o GDI+ suporta.
+esta tabela especifica as fontes que não são do sistema que o GDI+ dá suporte.
 
 
 
-|                     | GDI | GDI+ no Windows 7 | GDI+ no Windows 8 | DirectWrite |
+|                     | GDI | GDI+ no Windows 7 | GDI+ em Windows 8 | DirectWrite |
 |---------------------|-----|-------------------|-------------------|-------------|
 | . FON                | sim | não                | não                | não          |
 | . FNT                | sim | não                | não                | não          |

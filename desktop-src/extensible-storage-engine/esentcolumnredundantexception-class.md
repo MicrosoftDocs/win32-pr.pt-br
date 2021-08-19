@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 18b2fdd850e26c5a435841110a4e1ac5c0c7c640
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f0e44ff02604fc040c3f1ab64ca042a825aa776585adf8b72faff31e93297f5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119116596"
 ---
 # <a name="esentcolumnredundantexception-class"></a>Classe EsentColumnRedundantException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. ColumnRedundant exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  

@@ -1,7 +1,7 @@
 ---
-description: O \_ método Put AutoShow define o sinalizador de estado de AutoApresentação.
+description: O método put \_ AutoShow define o sinalizador de estado AutoShow.
 ms.assetid: 857472b8-845b-46d3-8593-3fba9a9c8cdc
-title: Método de CBaseControlWindow.put_AutoShow (Ctlutil. h)
+title: CBaseControlWindow.put_AutoShow método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eda5c0c4055979537c5cc471053715e29a348f1a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a8e24686baa3cf1f2ad570394acd7a290ac374043b8564566dc1e89668d3f6fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017274"
 ---
-# <a name="cbasecontrolwindowput_autoshow-method"></a>Método de automostrar CBaseControlWindow. put \_
+# <a name="cbasecontrolwindowput_autoshow-method"></a>Método CBaseControlWindow.put \_ AutoShow
 
-O `put_AutoShow` método define o sinalizador de estado de AutoShow.
+O `put_AutoShow` método define o sinalizador de estado AutoShow.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,20 +42,20 @@ HRESULT put_AutoShow(
 
 <dl> <dt>
 
-*Mostrar automostrações* 
+*Autoshow* 
 </dt> <dd>
 
-Sinalizador booliano de automação (0 está desativado, 1 está ativado).
+Sinalizador booliana de automação (0 está desligado, 1 está on).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade simplifica o acesso de exibição da janela para aplicativos. Se isso for definido como 1 (ativado), a janela, que normalmente é ocultada após o filtro ser conectado, será exibida automaticamente quando o filtro for pausado ou executado. No entanto, a janela não deve ser ocultada quando o filtro é interrompido. Se for definido como 0 (off), a janela ficará visível somente quando o aplicativo chamar [**CBaseControlWindow::p UT \_ Visible**](cbasecontrolwindow-put-visible.md) ou [**CBaseControlWindow::p UT \_ WindowState**](cbasecontrolwindow-put-windowstate.md) com os parâmetros apropriados.
+Essa propriedade simplifica o acesso de exibição de janela para aplicativos. Se isso for definido como 1 (ativado), a janela, que normalmente fica oculta após o filtro ser conectado, será exibida automaticamente quando o filtro pausar ou for executado. No entanto, a janela não deve ser ocultada quando o filtro é interrompido. Se estiver definido como 0 (desligado), a janela será visível somente quando o aplicativo chamar [**CBaseControlWindow::p ut \_ Visible**](cbasecontrolwindow-put-visible.md) ou [**CBaseControlWindow::p ut \_ WindowState**](cbasecontrolwindow-put-windowstate.md) com os parâmetros apropriados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Essa propriedade simplifica o acesso de exibição da janela para aplicativos. S
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Método UpdateScanMethod da classe MDM_EnterpriseModernAppManagement_AppManagement01
-description: Método para iniciar a verificação de Windows Update. Consulte também UpdateScan.
+description: método para iniciar a verificação de Windows Update. Consulte também UpdateScan.
 ms.assetid: 61d17072-0fe5-4d5b-8e9e-fed536883ac9
 keywords:
 - Método UpdateScanMethod
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: af6cb5b744243b78f737ea44fbc27ef40708c6f6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 442c8720c36ac3730636a7889f4f7b663e77edc819c09af090a4430a48f3ca2e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105769022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119216386"
 ---
 # <a name="updatescanmethod-method-of-the-mdm_enterprisemodernappmanagement_appmanagement01-class"></a>Método UpdateScanMethod da \_ classe AppManagement01 do MDM EnterpriseModernAppManagement \_
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Método para iniciar a verificação de Windows Update. Consulte também [UpdateScan](/windows/client-management/mdm/enterprisemodernappmanagement-csp).
+método para iniciar a verificação de Windows Update. Consulte também [UpdateScan](/windows/client-management/mdm/enterprisemodernappmanagement-csp).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,7 +48,7 @@ Esse método não tem parâmetros.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
