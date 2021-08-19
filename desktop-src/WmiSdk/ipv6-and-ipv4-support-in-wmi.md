@@ -1,20 +1,20 @@
 ---
-description: O provedor de rotas IP WMI e as classes de rede fornecem dados para endereços IPv4. A partir do Windows Vista, o WMI também fornece suporte limitado para recursos de rede IPv6.
+description: O provedor de rotas IP WMI e as classes de rede fornecem dados para endereços IPv4. a partir do Windows Vista, o WMI também fornece suporte limitado para recursos de rede IPv6.
 ms.assetid: 8ab6287d-be3f-4fa2-a9f5-fa5e1aba66c8
 ms.tgt_platform: multiple
 title: Suporte a IPv6 e IPv4 no WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 107872b2a65ffe02f34245a39e0a803d2ac53a2f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cea400d6c896220dcde5c15d40481444a77ffb309eac8bfdc50cb06ab634c384
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118819294"
 ---
 # <a name="ipv6-and-ipv4-support-in-wmi"></a>Suporte a IPv6 e IPv4 no WMI
 
-O [provedor de rotas IP](/previous-versions/windows/desktop/wmiiprouteprov/ip-route-provider) WMI e as classes de rede fornecem dados para endereços IPv4. A partir do Windows Vista, o WMI também fornece suporte limitado para recursos de rede IPv6.
+O [provedor de rotas IP](/previous-versions/windows/desktop/wmiiprouteprov/ip-route-provider) WMI e as classes de rede fornecem dados para endereços IPv4. a partir do Windows Vista, o WMI também fornece suporte limitado para recursos de rede IPv6.
 
 ## <a name="wmi-ip-data"></a>Dados IP do WMI
 

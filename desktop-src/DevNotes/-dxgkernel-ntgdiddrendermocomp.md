@@ -1,7 +1,7 @@
 ---
-description: Informa ao driver quais macroblocks renderizar especificando as superfícies que contêm os macroblocks, os deslocamentos em cada superfície em que os macroblocks existem e o tamanho dos dados de macroblock a serem renderizados.
+description: Informa ao driver o que macroblocos renderizar especificando as superfícies que contêm o macroblocos, os deslocamentos em cada superfície em que o macroblocos existe e o tamanho dos dados de macrobloco a serem renderizados.
 ms.assetid: c49d9dfa-a3db-4572-a474-72c7d4e80940
-title: Função NtGdiDdRenderMoComp (Ntgdi.h)
+title: Função NtGdiDdRenderMoComp (Ntgdi. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,9 +25,9 @@ ms.locfileid: "117827967"
 ---
 # <a name="ntgdiddrendermocomp-function"></a>Função NtGdiDdRenderMoComp
 
-\[Essa função está sujeita a alterações com cada revisão do sistema operacional. Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação diretamente com drivers de exibição.\]
+\[Essa função está sujeita a alterações em cada revisão do sistema operacional. Em vez disso, use o Microsoft DirectDraw e o Microsoft Direct3DAPIs; essas APIs isolam os aplicativos dessas alterações do sistema operacional e ocultam muitas outras dificuldades envolvidas na interação direta com os drivers de vídeo.\]
 
-Informa ao driver quais macroblocks renderizar especificando as superfícies que contêm os macroblocks, os deslocamentos em cada superfície em que os macroblocks existem e o tamanho dos dados de macroblock a serem renderizados.
+Informa ao driver o que macroblocos renderizar especificando as superfícies que contêm o macroblocos, os deslocamentos em cada superfície em que o macroblocos existe e o tamanho dos dados de macrobloco a serem renderizados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,17 +45,17 @@ DWORD APIENTRY NtGdiDdRenderMoComp(
 
 <dl> <dt>
 
-*hMoComp* \[ Em\]
+*hMoComp* \[ no\]
 </dt> <dd>
 
-Lidar com uma [**estrutura DD \_ MOTIONCOMP \_ LOCAL**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncomp_local) que contém uma descrição da compensação de movimento que está sendo solicitada.
+Identificador para uma [**estrutura \_ \_ local MOTIONCOMP DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_motioncomp_local) que contém uma descrição da compensação de movimento que está sendo solicitada.
 
 </dd> <dt>
 
-*puRenderMoCompData* \[ in, out\]
+*puRenderMoCompData* \[ entrada, saída\]
 </dt> <dd>
 
-Ponteiro para uma [**estrutura \_ RENDERMOCOMPDATA DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) que contém as informações necessárias para renderizar um quadro.
+Ponteiro para uma [**estrutura \_ RENDERMOCOMPDATA do DD**](/windows/win32/api/ddrawint/ns-ddrawint-dd_rendermocompdata) que contém as informações necessárias para renderizar um quadro.
 
 </dd> </dl>
 
@@ -67,8 +67,8 @@ Ponteiro para uma [**estrutura \_ RENDERMOCOMPDATA DD**](/windows/win32/api/ddra
 
 | Código de retorno                                                                                              | Descrição                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**DRIVER DDHAL \_ \_ MANIPULADO**</dt> </dl>    | O driver realizou a operação e retornou um código de retorno válido para essa operação. Se esse código for DD \_ OK, DirectDraw ou Direct3D prosseguirá com a função . Caso contrário, DirectDraw ou Direct3D retornará o código de erro fornecido pelo driver e anulará a função.<br/>                                                                                 |
-| <dl> <dt>**DDHAL \_ DRIVER \_ NOTHANDLED**</dt> </dl> | O driver não tem nenhum comentário sobre a operação solicitada. Se o driver precisar ter implementado um retorno de chamada específico, DirectDraw ou Direct3D relata uma condição de erro. Caso contrário, DirectDraw ou Direct3D tratará a operação como se o retorno de chamada do driver não tivesse sido definido executando a implementação independente de dispositivo DirectDraw ou Direct3D.<br/> |
+| <dl> <dt>**\_Driver DDHAL \_ manipulado**</dt> </dl>    | O driver executou a operação e retornou um código de retorno válido para essa operação. Se esse código for DD \_ OK, o DirectDraw ou Direct3D continuará com a função. Caso contrário, o DirectDraw ou o Direct3D retorna o código de erro fornecido pelo driver e anula a função.<br/>                                                                                 |
+| <dl> <dt>**Driver DDHAL não \_ \_ manipulado**</dt> </dl> | O driver não tem nenhum comentário sobre a operação solicitada. Se for necessário que o driver implementou um retorno de chamada específico, o DirectDraw ou o Direct3D relatará uma condição de erro. Caso contrário, o DirectDraw ou o Direct3D tratará a operação como se o retorno de chamada do driver não tivesse sido definido pela execução da implementação do DirectDraw ou do Direct3D independente de dispositivo.<br/> |
 
 
 
@@ -76,7 +76,7 @@ Ponteiro para uma [**estrutura \_ RENDERMOCOMPDATA DD**](/windows/win32/api/ddra
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações, consulte O DDK (Kit de Desenvolvimento de Driver de Aceleração de Vídeo) do Microsoft DirectX.
+Para obter mais informações, consulte o Microsoft DirectX Video Acceleration Driver Development Kit (DDK).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -86,7 +86,7 @@ Para obter mais informações, consulte O DDK (Kit de Desenvolvimento de Driver 
 |-------------------------------------|------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                               |
-| Cabeçalho<br/>                   | <dl> <dt>Ntgdi.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ntgdi. h</dt> </dl> |
 
 
 

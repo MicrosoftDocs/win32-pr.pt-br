@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método CreateBitmapFromMemory.
+description: Função proxy para o método CreateBitmapFromMemory.
 ms.assetid: 5aa455d5-23e3-4738-b028-b84da0fb0c50
-title: Função IWICImagingFactory_CreateBitmapFromMemory_Proxy
+title: IWICImagingFactory_CreateBitmapFromMemory_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 79893952bb6dcdbab6c4a1cea4f57355831d31c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e7f5567f2ead2b68440e448a9a03f36fdedceb5d31ecfc579f7df956988dfc01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118033909"
 ---
-# <a name="iwicimagingfactory_createbitmapfrommemory_proxy-function"></a>\_Função de \_ proxy IWICImagingFactory CreateBitmapFromMemory
+# <a name="iwicimagingfactory_createbitmapfrommemory_proxy-function"></a>Função proxy IWICImagingFactory \_ CreateBitmapFromMemory \_
 
-Função de proxy para o método [**CreateBitmapFromMemory**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmapfrommemory) .
+Função proxy para o [**método CreateBitmapFromMemory.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmapfrommemory)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,32 +47,32 @@ HRESULT IWICImagingFactory_CreateBitmapFromMemory_Proxy(
 
 <dl> <dt>
 
-*pFactory* \[ no\]
+*pFactory* \[ Em\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_uiWidth * \[ in\]
+*uiWidth* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 A largura do novo bitmap.
 
 </dd> <dt>
 
-*uiHeight* \[ no\]
+*uiHeight* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
 A altura do novo bitmap.
 
 </dd> <dt>
 
-*PixelFormat* \[ no\]
+*pixelFormat* \[ Em\]
 </dt> <dd>
 
 Tipo: **REFWICPixelFormatGUID**
@@ -81,34 +81,34 @@ O formato de pixel do novo bitmap.
 
 </dd> <dt>
 
-*cbStride* \[ no\]
+*cbStride* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-O [*Stride*](/windows) dos dados de pixel fornecidos.
+O [*passo*](/windows) dos dados de pixel determinados.
 
 </dd> <dt>
 
-*cbBufferSize* \[ no\]
+*cbBufferSize* \[ Em\]
 </dt> <dd>
 
-Tipo: **uint**
+Tipo: **UINT**
 
-O tamanho de *pbBuffer*.
+O tamanho de *pbBuffer.*
 
 </dd> <dt>
 
-*pbBuffer* \[ no\]
+*pbBuffer* \[ Em\]
 </dt> <dd>
 
-Tipo: **byte \** _
+Tipo: **BYTE \***
 
 O buffer usado para criar o bitmap.
 
 </dd> <dt>
 
-_ppIBitmap * \[ out\]
+*ppIBitmap* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmap**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmap)\*\***
@@ -117,11 +117,11 @@ Um ponteiro que recebe um ponteiro para o novo bitmap.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -131,9 +131,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

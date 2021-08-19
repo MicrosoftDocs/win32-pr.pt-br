@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_LargeHighContrastImage
-description: Identifica a \_ Propriedade PKEY LargeHighContrastImage da interface do usuário \_ .
+description: Identifica a propriedade \_ PKEY \_ LargeHighContrastImage da interface do usuário.
 ms.assetid: a703f75a-5eb0-4075-a388-d0ab7398d424
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117850236"
 ---
-# <a name="ui_pkey_largehighcontrastimage"></a>\_LargeHighContrastImage PKEY \_ UI
+# <a name="ui_pkey_largehighcontrastimage"></a>PKEY \_ de interface do usuário \_ LargeHighContrastImage
 
-Identifica a \_ Propriedade PKEY LargeHighContrastImage da interface do usuário \_ .
+Identifica a propriedade \_ PKEY \_ LargeHighContrastImage da interface do usuário.
 
 ```
 propertyDescription
@@ -27,9 +27,9 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-A interface do usuário \_ PKEY \_ LargeHighContrastImage é usada por um aplicativo para consultar a imagem grande e de alto contraste associada a um controle da faixa de faixas.
+A PKEY de interface do usuário \_ LargeHighContrastImage é usada por um aplicativo para consultar a imagem grande e de alto contraste associada a um controle de faixa \_ de opções.
 
-O valor da propriedade é um objeto [**IUIImage**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage) .
+O valor da propriedade é um [**objeto IUIImage.**](/windows/desktop/api/uiribbon/nn-uiribbon-iuiimage)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -38,7 +38,7 @@ O valor da propriedade é um objeto [**IUIImage**](/windows/desktop/api/uiribbon
 [Propriedades do recurso](windowsribbon-reference-properties-resource.md)
 </dt> <dt>
 
-[Especificando recursos de imagem da faixa de uma](windowsribbon-imageformats.md)
+[Especificando recursos de imagem da faixa de opções](windowsribbon-imageformats.md)
 </dt> </dl>
 
  

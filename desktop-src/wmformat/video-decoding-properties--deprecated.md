@@ -1,9 +1,9 @@
 ---
-title: Propriedades de decodificação de vídeo (Camerauicontrol. h)
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Propriedades de decodificação de vídeo (Camerauicontrol. h)
+title: Propriedades de decodificação de vídeo (Camerauicontrol.h)
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Propriedades de decodificação de vídeo (Camerauicontrol.h)
 ms.assetid: fa72a593-bb16-40a8-a510-db8b000bfd95
 keywords:
-- Propriedades de decodificação de vídeo Windows Media Format
+- Formato de mídia das janelas propriedades de decodificação de vídeo
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0cbc12006fd1253418689dfdbebeaed5cab44d3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4566e5e125c74d12344658785f78acb800a006c20b9d3a478b93f0f6c4579fe1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117653399"
 ---
 # <a name="video-decoding-properties"></a>Propriedades de decodificação de vídeo
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
 ## <a name="requirements"></a>Requisitos
 
@@ -31,7 +31,7 @@ Para obter a documentação atual sobre os codecs de mídia do Windows e os proc
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Camerauicontrol. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Camerauicontrol.h</dt> </dl> |
 
 
 

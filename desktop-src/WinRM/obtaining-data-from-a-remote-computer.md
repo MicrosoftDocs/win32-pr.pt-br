@@ -1,6 +1,6 @@
 ---
 title: Obtendo dados de um computador remoto
-description: Você pode obter dados ou gerenciar recursos em computadores remotos, bem como no computador local. Conectar-se a um computador remoto em um script de Gerenciamento Remoto do Windows é muito semelhante a fazer uma conexão local.
+description: Você pode obter dados ou gerenciar recursos em computadores remotos, bem como no computador local. conectar-se a um computador remoto em um script de Gerenciamento Remoto do Windows é muito semelhante a fazer uma conexão local.
 ms.assetid: 578eee80-a6c1-4456-9683-14e0a3386248
 ms.tgt_platform: multiple
 ms.topic: article
@@ -10,20 +10,20 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 8cfc95a73dab4c9a0f19481b7ba41f3c40a3862d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: cf3531e19c0848691ededa0c3b6b2fad642de33c2a5f2d465ac899716970a512
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103823779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118823403"
 ---
 # <a name="obtaining-data-from-a-remote-computer"></a>Obtendo dados de um computador remoto
 
-Você pode obter dados ou gerenciar recursos em computadores remotos, bem como no computador local. Conectar-se a um computador remoto em um script de Gerenciamento Remoto do Windows é muito semelhante a fazer uma conexão local. Os dados da instância WMI estão disponíveis e, se o computador remoto tiver um hardware BMC que possa se comunicar usando o protocolo WS-Management, os dados da [IPMI (interface de gerenciamento de plataforma inteligente)](/previous-versions/windows/desktop/ipmiprv/ipmi-provider) também estarão disponíveis. Para obter mais informações, consulte [gerenciamento remoto do Windows e WMI](windows-remote-management-and-wmi.md) e [Gerenciamento de hardware remoto](remote-hardware-management.md).
+Você pode obter dados ou gerenciar recursos em computadores remotos, bem como no computador local. conectar-se a um computador remoto em um script de Gerenciamento Remoto do Windows é muito semelhante a fazer uma conexão local. Os dados da instância WMI estão disponíveis e, se o computador remoto tiver um hardware BMC que possa se comunicar usando o protocolo WS-Management, os dados da [IPMI (interface de gerenciamento de plataforma inteligente)](/previous-versions/windows/desktop/ipmiprv/ipmi-provider) também estarão disponíveis. para obter mais informações, consulte [Gerenciamento Remoto do Windows e WMI](windows-remote-management-and-wmi.md) e [gerenciamento de Hardware remoto](remote-hardware-management.md).
 
 Talvez seja necessário criar um objeto [**ConnectionOptions**](connectionoptions.md) para especificar informações sobre o tipo de autenticação solicitado para o logon.
 
-Se a conta no computador remoto tiver o mesmo nome de usuário e senha de logon, as únicas informações adicionais necessárias serão o transporte, o nome de domínio e o nome do computador. Devido ao [UAC (controle de conta de usuário)](https://support.microsoft.com/help/922708/how-to-use-user-account-control-uac-in-windows-vista), a conta remota deve ser uma conta de domínio e um membro do grupo de administradores do computador remoto. Se a conta for um membro do computador local do grupo Administradores, o UAC não permitirá o acesso ao serviço WinRM. Para acessar um serviço WinRM remoto em um grupo de trabalho, a filtragem do UAC para contas locais deve ser desabilitada criando a seguinte entrada do Registro DWORD e definindo seu valor como 1: **\[ HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows \\ CurrentVersion \\ Policies \\ System \] LocalAccountTokenFilterPolicy**.
+Se a conta no computador remoto tiver o mesmo nome de usuário e senha de logon, as únicas informações adicionais necessárias serão o transporte, o nome de domínio e o nome do computador. Devido ao [UAC (controle de conta de usuário)](https://support.microsoft.com/help/922708/how-to-use-user-account-control-uac-in-windows-vista), a conta remota deve ser uma conta de domínio e um membro do grupo de administradores do computador remoto. Se a conta for um membro do computador local do grupo Administradores, o UAC não permitirá o acesso ao serviço WinRM. para acessar um serviço WinRM remoto em um grupo de trabalho, a filtragem do UAC para contas locais deve ser desabilitada criando a seguinte entrada do registro DWORD e definindo seu valor como 1: **\[ HKEY \_ local \_ MACHINE \\ SOFTWARE \\ Microsoft \\ Windows \\ CurrentVersion \\ policies \\ System \] LocalAccountTokenFilterPolicy**.
 
 **Para se conectar a um computador remoto usando seu nome de usuário e senha de logon**
 
@@ -168,15 +168,15 @@ End Sub
 
 <dl> <dt>
 
-[Sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
+[sobre Gerenciamento Remoto do Windows](about-windows-remote-management.md)
 </dt> <dt>
 
-[Usando Gerenciamento Remoto do Windows](using-windows-remote-management.md)
+[usando Gerenciamento Remoto do Windows](using-windows-remote-management.md)
 </dt> <dt>
 
-[Referência de Gerenciamento Remoto do Windows](windows-remote-management-reference.md)
+[Windows Referência de gerenciamento remoto](windows-remote-management-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

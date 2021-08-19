@@ -15,8 +15,8 @@ ms.locfileid: "118414406"
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [Estilos estendidos do controle de exibição de árvore](tree-view-control-window-extended-styles.md)
--   [Estados do item de controle de exibição de árvore](tree-view-control-item-states.md)
+-   [Estilos estendidos de controle de exibição de árvore](tree-view-control-window-extended-styles.md)
+-   [Estados de item de controle de exibição de árvore](tree-view-control-item-states.md)
 -   [Estilos de janela de controle de exibição de árvore](tree-view-control-window-styles.md)
 
  

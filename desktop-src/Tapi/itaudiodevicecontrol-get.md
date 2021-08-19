@@ -1,21 +1,21 @@
 ---
 description: O método Get recupera o valor de uma determinada propriedade de dispositivo de áudio.
 ms.assetid: 34cb3f3e-be4a-49e0-bf7d-6915906e2368
-title: 'Método ITAudioDeviceControl:: Get (Ipmsp. h)'
+title: Método ITAudioDeviceControl::Get (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a4311dc18291fcfbbe533dbe17042e6ba19c1122
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d2877b48eab2ecab6259a034c9d74f4c32b9fae9233f5ceb0a0a409f43add014
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105779906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118865779"
 ---
-# <a name="itaudiodevicecontrolget-method"></a>Método ITAudioDeviceControl:: Get
+# <a name="itaudiodevicecontrolget-method"></a>Método ITAudioDeviceControl::Get
 
-\[ Esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[Esse método não está disponível para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **Get** recupera o valor de uma determinada [**propriedade de dispositivo de áudio**](audiodeviceproperty.md).
+O **método Get** recupera o valor de uma determinada propriedade de dispositivo de [**áudio**](audiodeviceproperty.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,28 +32,28 @@ HRESULT get_Call(
 
 <dl> <dt>
 
-*Propriedade* \[ no\]
+*Propriedade* \[ Em\]
 </dt> <dd>
 
-Membro da enumeração [**AudioDeviceProperty**](audiodeviceproperty.md) .
+Membro da [**enum AudioDeviceProperty.**](audiodeviceproperty.md)
 
 </dd> <dt>
 
-*plValue* \[ fora\]
+*plValue* \[ out\]
 </dt> <dd>
 
-Valor da *Propriedade* de entrada.
+Valor da propriedade de *entrada*.
 
 </dd> <dt>
 
-*plFlags* \[ fora\]
+*plFlags* \[ out\]
 </dt> <dd>
 
-Valor da enumeração [**TAPIControlFlags**](tapicontrolflags.md) indicando como o valor da *Propriedade* é controlado.
+Valor da [**enum TAPIControlFlags**](tapicontrolflags.md) que indica como o *valor property* é controlado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -74,9 +74,9 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                         |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versão do TAPI<br/> | Requer TAPI 3.1<br/>                                                         |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

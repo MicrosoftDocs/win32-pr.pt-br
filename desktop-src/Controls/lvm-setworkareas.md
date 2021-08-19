@@ -3,7 +3,7 @@ title: LVM_SETWORKAREAS mensagem (Commctrl.h)
 description: Define as áreas de trabalho em um controle de exibição de lista. Você pode enviar essa mensagem explicitamente ou usar a \_ macro ListView SetWorkAreas.
 ms.assetid: 87ac192d-f481-43ac-b8a5-c754cf33e487
 keywords:
-- LVM_SETWORKAREAS controles de Windows mensagem
+- LVM_SETWORKAREAS controles Windows mensagem
 topic_type:
 - apiref
 api_name:

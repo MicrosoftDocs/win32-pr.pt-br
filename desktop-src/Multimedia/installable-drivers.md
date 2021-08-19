@@ -17,7 +17,7 @@ ms.locfileid: "117803948"
 ---
 # <a name="installable-drivers"></a>Drivers instaláveis
 
-Este apêndice descreve o formato geral dos drivers instaláveis e define as funções de driver instaláveis que os aplicativos e as DLLs usam para abrir e gerenciar drivers instaláveis.
+Este apêndice descreve o formato geral de drivers instanciáveis e define as funções de driver instanciáveis que os aplicativos e DLLs usam para abrir e gerenciar drivers instanciáveis.
 
 -   [Sobre drivers instaláveis](about-installable-drivers.md)
 -   [Usando drivers instaláveis](using-installable-drivers.md)

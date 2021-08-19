@@ -3,9 +3,9 @@ title: Método IWMPCdromCollection getByDriveSpecifier
 description: O método getByDriveSpecifier retorna uma interface IWMPCdrom associada a uma letra de unidade específica.
 ms.assetid: 4a550eb1-a37e-43fd-9e08-801c4fd64e68
 keywords:
-- método getByDriveSpecifier Windows Media Player
+- Windows Media Player do método getByDriveSpecifier
 - método getByDriveSpecifier Windows Media Player, interface IWMPCdromCollection
-- Interface IWMPCdromCollection Windows Media Player, método getByDriveSpecifier
+- Windows Media Player de interface IWMPCdromCollection, método getByDriveSpecifier
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fe771fc893d4bf43b82dc825a2d33724926e8151
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9937694234fe7e46fe9b98d83357da19abf18f8d14e83794587f6f2050b0019b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116214"
 ---
 # <a name="iwmpcdromcollectiongetbydrivespecifier-method"></a>Método IWMPCdromCollection:: getByDriveSpecifier
 
@@ -60,7 +60,7 @@ Um **System. String** que é a letra da unidade seguida por um caractere de dois
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Uma interface **WMPLib. IWMPCdrom** .
 

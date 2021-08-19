@@ -15,7 +15,7 @@ ms.locfileid: "117880891"
 
 Esta seção descreve como usar o Microsoft Media Foundation para executar a captura de áudio e vídeo.
 
--   [Captura de áudio/vídeo Media Foundation](audio-video-capture-in-media-foundation.md)
+-   [Captura de áudio/vídeo no Media Foundation](audio-video-capture-in-media-foundation.md)
 -   Captura de vídeo
     -   [Enumerando dispositivos de captura de vídeo](enumerating-video-capture-devices.md)
     -   [Manipulando a perda de dispositivo de vídeo](handling-video-device-loss.md)

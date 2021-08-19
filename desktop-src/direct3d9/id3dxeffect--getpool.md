@@ -1,7 +1,7 @@
 ---
 description: Obtém um ponteiro para o pool de parâmetros compartilhados.
 ms.assetid: 1e999fd5-76ef-43fa-8a77-ae6f2821f46d
-title: 'Método ID3DXEffect:: getpool (D3DX9Effect. h)'
+title: Método ID3DXEffect::GetPool (D3DX9Effect.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118521222"
 ---
-# <a name="id3dxeffectgetpool-method"></a>Método ID3DXEffect:: getpool
+# <a name="id3dxeffectgetpool-method"></a>Método ID3DXEffect::GetPool
 
 Obtém um ponteiro para o pool de parâmetros compartilhados.
 
@@ -40,12 +40,12 @@ HRESULT GetPool(
 
 <dl> <dt>
 
-*ppPool* \[ fora\]
+*ppPool* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXEFFECTPOOL**](id3dxeffectpool.md)\***
 
-Ponteiro para um objeto [**ID3DXEffectPool**](id3dxeffectpool.md) .
+Ponteiro para um [**objeto ID3DXEffectPool.**](id3dxeffectpool.md)
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Esse método sempre retorna o valor S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Os pools contêm parâmetros compartilhados entre efeitos. Consulte [clonagem e compartilhamento (Direct3D 9)](cloning-and-sharing.md).
+Os pools contêm parâmetros compartilhados entre efeitos. Consulte [Clonagem e compartilhamento (Direct3D 9)](cloning-and-sharing.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Os pools contêm parâmetros compartilhados entre efeitos. Consulte [clonagem e 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Effect. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Effect.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
 
 
 

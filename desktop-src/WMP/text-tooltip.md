@@ -1,9 +1,9 @@
 ---
-title: TEXT. toolTip
-description: O atributo toolTip especifica ou recupera o texto da dica de ferramenta para o controle de texto.
+title: TEXT.toolTip
+description: O atributo toolTip especifica ou recupera o texto da Dica de Ferramenta para o controle de texto.
 ms.assetid: 3e275607-e7ff-4424-8310-c628ede22629
 keywords:
-- TEXT. toolTip Windows Media Player
+- Text.toolTip Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b064f2abefd07ec65a82069196b1012561699b62
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 726337ffb31b86d4eaa3a20a1d922fc622110b647fe9be747e8ae239c4548276
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118831814"
 ---
-# <a name="texttooltip"></a>TEXT. toolTip
+# <a name="texttooltip"></a>TEXT.toolTip
 
-O atributo **ToolTip** especifica ou recupera o texto da dica de ferramenta para o controle de texto.
+O **atributo toolTip** especifica ou recupera o texto da Dica de Ferramenta para o controle de texto.
 
 ``` syntax
         elementID.toolTip
@@ -29,15 +29,15 @@ O atributo **ToolTip** especifica ou recupera o texto da dica de ferramenta para
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Este atributo é uma **cadeia de caracteres** de leitura/gravação com um comprimento máximo de 1024 caracteres. Não tem nenhum valor padrão.
+Esse atributo é uma cadeia de **caracteres** de leitura/gravação com um comprimento máximo de 1024 caracteres. Não tem nenhum valor padrão.
 
 ## <a name="remarks"></a>Comentários
 
-Se esse atributo não for especificado e o texto no atributo de **valor** estiver truncado no controle de texto, ou se **WordWrap** for definido como true, a dica de ferramenta exibirá o texto completo do atributo **Value** .
+Se esse atributo não for especificado e  o texto no atributo value for truncado no controle Texto ou **wordWrap** estiver definido como true, a Dica de Ferramenta exibirá o texto completo do atributo **de** valor.
 
-Quando esse atributo é definido como "" (cadeia de caracteres vazia), nenhuma dica de ferramenta é exibida.
+Quando esse atributo é definido como "" (cadeia de caracteres vazia), nenhuma Dica de Ferramenta é exibida.
 
-Consulte o atributo [Value](text-value.md) para ver um exemplo ilustrando como os atributos do elemento **Text** são usados.
+Consulte o [atributo value](text-value.md) para um exemplo que ilustra como os atributos do **elemento TEXT** são usados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Consulte o atributo [Value](text-value.md) para ver um exemplo ilustrando como o
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -53,13 +53,13 @@ Consulte o atributo [Value](text-value.md) para ver um exemplo ilustrando como o
 
 <dl> <dt>
 
-[**Elemento de texto**](text-element.md)
+[**Elemento TEXT**](text-element.md)
 </dt> <dt>
 
-[**TEXT. Value**](text-value.md)
+[**TEXT.value**](text-value.md)
 </dt> <dt>
 
-[**TEXT. wordWrap**](text-wordwrap.md)
+[**TEXT.wordWrap**](text-wordwrap.md)
 </dt> </dl>
 
  

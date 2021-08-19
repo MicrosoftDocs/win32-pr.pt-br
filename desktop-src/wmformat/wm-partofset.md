@@ -1,9 +1,9 @@
 ---
 title: WM/PartOfSet
-description: O atributo WM/PartOfSet contém o número da parte e o número total de partes no conjunto ao qual o arquivo pertence. Os dois valores são separados por uma barra.
+description: O atributo WM/PartOfSet contém o número de peça e o número total de partes no conjunto ao qual o arquivo pertence. Os dois valores são separados por uma barra.
 ms.assetid: a7facc38-776b-40c5-a93a-71d0e2effa2d
 keywords:
-- Formato de mídia do Windows WM/PartOfSet
+- Formato de mídia do Windows do WM/PartOfSet
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "117844481"
 ---
 # <a name="wmpartofset"></a>WM/PartOfSet
 
-O **atributo WM/PartOfSet** contém o número da parte e o número total de partes no conjunto ao qual o arquivo pertence. Os dois valores são separados por uma barra.
+O atributo **WM/PartOfSet** contém o número de peça e o número total de partes no conjunto ao qual o arquivo pertence. Os dois valores são separados por uma barra.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMPartOfSet
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
+**Cadeia de caracteres do \_ tipo WMT \_**
 
 ## <a name="example"></a>Exemplo
 

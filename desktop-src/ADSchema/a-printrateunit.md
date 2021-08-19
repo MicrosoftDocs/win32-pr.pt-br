@@ -1,11 +1,11 @@
 ---
-title: Atributo de unidade de taxa de impressão
+title: Atributo Print-Rate-Unit
 description: Unidade de taxa de impressão fornecida pelo driver.
 ms.assetid: a7229f8b-4d7d-45f1-af5b-39a6f79b48a1
 ms.tgt_platform: multiple
 keywords:
-- Print-taxa-atributo de unidade esquema do AD
-- Esquema de AD do atributo printRateUnit
+- Esquema do AD do atributo Print-Rate-Unit
+- Esquema do AD do atributo printRateUnit
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc93ec89e4207037269733677a083bc2e965668f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 250485411ab3a963ff2403e264e1cff4ed331b57f8aff4966581e171a9b9bfd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118011738"
 ---
-# <a name="print-rate-unit-attribute"></a>Atributo de unidade de taxa de impressão
+# <a name="print-rate-unit-attribute"></a>Atributo Print-Rate-Unit
 
 Unidade de taxa de impressão fornecida pelo driver.
 
@@ -30,13 +30,13 @@ Unidade de taxa de impressão fornecida pelo driver.
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Unidade de taxa de impressão                             |
-| LDAP-Display-Name | printRateUnit                               |
+| Ldap-Display-Name | printRateUnit                               |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.286                      |
-| System-ID-GUID    | ba305f78-47e3-11d0-a1a6-00c04fd930c9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ba305f78-47e3-11d0-a1a6-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Unidade de taxa de impressão fornecida pelo driver.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Unidade de taxa de impressão fornecida pelo driver.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Verdadeiro                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Unidade de taxa de impressão fornecida pelo driver.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Verdadeiro                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Unidade de taxa de impressão fornecida pelo driver.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Verdadeiro                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Unidade de taxa de impressão fornecida pelo driver.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Verdadeiro                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Unidade de taxa de impressão fornecida pelo driver.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Verdadeiro                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 

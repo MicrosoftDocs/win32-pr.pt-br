@@ -1,21 +1,21 @@
 ---
-title: O objeto de solicitação
-description: O objeto de solicitação
+title: O objeto request
+description: O objeto request
 ms.assetid: d8b37164-6855-48c0-bcf8-a86c0f8b3a59
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a50d554a5799af9a434b456113d7c826d2a0aa2
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 1d2bc9ecf65403ca6dbb471c81a65b105bcc5b69701760a73f8fbc8a5684a9b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105763044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117882389"
 ---
-# <a name="the-request-object"></a>O objeto de solicitação
+# <a name="the-request-object"></a>O objeto request
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
-O servidor processa alguns métodos de forma assíncrona. Isso permite que o código do aplicativo continue enquanto o método está sendo concluído. Quando um aplicativo cliente chama um desses métodos, o controle cria e retorna um objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) para a solicitação. Você pode usar o objeto de **solicitação** para acompanhar o status do método atribuindo uma variável de objeto ao método. Em Visual Basic, primeiro declare uma variável de objeto:
+O servidor processa alguns métodos de forma assíncrona. Isso permite que o código do aplicativo continue enquanto o método está sendo concluído. Quando um aplicativo cliente chama um desses métodos, o controle cria e retorna um [**objeto Request**](/windows/desktop/lwef/the-request-object) para a solicitação. Você pode usar o **objeto Request** para acompanhar o status do método atribuindo uma variável de objeto ao método . No Visual Basic, primeiro declare uma variável de objeto:
 
 
 ```
@@ -33,7 +33,7 @@ No VBScript, você não inclui o tipo de variável em sua declaração:
 
 
 
-E use a instrução SET do Visual Basic para atribuir a variável à chamada do método:
+E use Visual Basic instrução Set do usuário para atribuir a variável à chamada de método:
 
 
 ```
@@ -42,9 +42,9 @@ E use a instrução SET do Visual Basic para atribuir a variável à chamada do 
 
 
 
-Isso adiciona uma referência ao objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) . O objeto de **solicitação** será destruído quando não houver mais referências a ele. Onde você declara o objeto de **solicitação** e como usá-lo determina seu tempo de vida. Se o objeto for declarado local para uma sub-rotina ou função, ele será destruído quando sair do escopo; ou seja, quando a sub-rotina ou a função termina. Se o objeto for declarado globalmente, ele não será destruído até que o programa seja encerrado ou um novo valor (ou um valor definido como "Empty") seja atribuído ao objeto.
+Isso adiciona uma referência ao [**objeto Request.**](/windows/desktop/lwef/the-request-object) O **objeto** Request será destruído quando não houver mais referências a ele. Onde você declara o **objeto Request** e como usá-lo determina seu tempo de vida. Se o objeto for declarado local para uma sub-rotina ou função, ele será destruído quando sair do escopo; ou seja, quando a sub-rotina ou a função termina. Se o objeto for declarado globalmente, ele não será destruído até que o programa seja encerrado ou um novo valor (ou um valor definido como "vazio") seja atribuído ao objeto.
 
-O objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) fornece várias propriedades que você pode consultar. Por exemplo, a propriedade [**status**](status-property.md) retorna o status atual da solicitação. Você pode usar essa propriedade para verificar o status da sua solicitação:
+O [**objeto Request**](/windows/desktop/lwef/the-request-object) fornece várias propriedades que você pode consultar. Por exemplo, a [**propriedade Status**](status-property.md) retorna o status atual da solicitação. Você pode usar essa propriedade para verificar o status da solicitação:
 
 
 ```
@@ -63,7 +63,7 @@ O objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) fornec
 
 
 
-A propriedade [**status**](status-property.md) retorna o status de um objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) como um valor inteiro longo.
+A [**propriedade Status**](status-property.md) retorna o status de um objeto [**Request**](/windows/desktop/lwef/the-request-object) como um valor inteiro Longo.
 
 
 
@@ -77,16 +77,16 @@ A propriedade [**status**](status-property.md) retorna o status de um objeto de 
 
 
 
- 
+ 
 
-O objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) também inclui um valor inteiro longo na propriedade [**Number**](https://www.bing.com/search?q=**Number**) que retorna o erro ou a causa do código de [**status**](status-property.md) . Se nenhum, esse valor será zero (0). A propriedade [**Description**](description-property.md) contém um valor de cadeia de caracteres que corresponde ao número do erro. Se a cadeia de caracteres não existir, a **Descrição** conterá "erro definido pelo aplicativo ou definido pelo objeto".
+O [**objeto Request**](/windows/desktop/lwef/the-request-object) também inclui um valor inteiro Longo na propriedade [**Number**](https://www.bing.com/search?q=**Number**) que retorna o erro ou a causa do [**código status.**](status-property.md) Se nenhum, esse valor será zero (0). A [**propriedade Description**](description-property.md) contém um valor de cadeia de caracteres que corresponde ao número de erro. Se a cadeia de caracteres não existir, **Description** conterá "Erro definido pelo aplicativo ou definido pelo objeto".
 
-Para obter os valores e o significado retornados pela propriedade [**Number**](https://www.bing.com/search?q=**Number**) , consulte [códigos de erro](microsoft-agent-error-codes.md).
+Para os valores e o significado retornados pela [**propriedade Number,**](https://www.bing.com/search?q=**Number**) consulte [Códigos de erro](microsoft-agent-error-codes.md).
 
-O servidor coloca as solicitações de animação na fila do caractere especificado. Isso permite que o servidor reproduza a animação em um thread separado, e o código do aplicativo pode continuar enquanto as animações são reproduzidas. Se você criar uma referência de objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) , o servidor o notificará automaticamente quando uma solicitação de animação for iniciada ou concluída por meio dos eventos [**RequestStart**](https://www.bing.com/search?q=**RequestStart**) e [**RequestComplete**](https://www.bing.com/search?q=**RequestComplete**) . Como os métodos que retornam objetos de **solicitação** são assíncronos e podem não ser concluídos durante o escopo da função de chamada, declare sua referência ao objeto de **solicitação** globalmente.
+O servidor coloca solicitações de animação na fila do caractere especificado. Isso permite que o servidor reproduza a animação em um thread separado e o código do aplicativo pode continuar durante a reprodução das animações. Se você criar [**uma**](/windows/desktop/lwef/the-request-object) referência de objeto Request, o servidor notifica automaticamente quando uma solicitação de animação é iniciada ou concluída por meio dos eventos [**RequestStart**](https://www.bing.com/search?q=**RequestStart**) e [**RequestComplete.**](https://www.bing.com/search?q=**RequestComplete**) Como os métodos que retornam **objetos Request** são assíncronos e podem não ser concluídos durante o escopo da função de chamada, declare sua referência ao **objeto Request** globalmente.
 
-Os métodos a seguir podem ser usados para retornar um objeto de [**solicitação**](/windows/desktop/lwef/the-request-object) : [**GestureAt**](gestureat-method.md), [**obter**](get-method.md), [**ocultar**](hide-method.md), [**interromper**](interrupt-method.md), [**carregar**](load-method.md), [**MoveTo**](moveto-method.md), [**reproduzir**](play-method.md), [**Mostrar**](show-method.md), [**falar**](speak-method.md)e [**aguardar**](https://www.bing.com/search?q=**Wait**).
+Os seguintes métodos podem ser usados para retornar [](get-method.md)um objeto [**Request:**](/windows/desktop/lwef/the-request-object) [**GestureAt**](gestureat-method.md), Get , [**Hide**](hide-method.md), [**Interrupt**](interrupt-method.md), [**Load**](load-method.md), [**MoveTo**](moveto-method.md), [**Play**](play-method.md), [**Show**](show-method.md), [**Speak**](speak-method.md)e [**Wait**](https://www.bing.com/search?q=**Wait**).
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
 title: API de implantação do pacote
-description: Saiba mais sobre a API de implantação de pacote, que pode ser usada para instalar, atualizar e desinstalar pacotes de aplicativos no sistema. Cada pacote de aplicativo contém os arquivos que constituem um aplicativo do Windows e um arquivo de manifesto que descreve o software para o Windows.
+description: Saiba mais sobre a API de implantação de pacote, que pode ser usada para instalar, atualizar e desinstalar pacotes de aplicativos no sistema. Cada pacote de aplicativos contém os arquivos que constituem um Windows aplicativo e um arquivo de manifesto que descreve o software a ser Windows.
 ms.assetid: E2D408E1-6048-4D15-8BF4-69FF6ACF7BD2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14a7559739d721781101fad804ebb040333c71c9
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b5bc1c9fc44487ff2244bee9b27d1ba26677468a2113536763b86e254a23f689
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105790579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118814052"
 ---
 # <a name="package-deployment-api"></a>API de implantação do pacote
 
-Saiba mais sobre a API de implantação de pacote, que pode ser usada para instalar, atualizar e desinstalar pacotes de aplicativos no sistema. Cada pacote de aplicativo contém os arquivos que constituem um aplicativo do Windows e um arquivo de manifesto que descreve o software para o Windows.
+Saiba mais sobre a API de implantação de pacote, que pode ser usada para instalar, atualizar e desinstalar pacotes de aplicativos no sistema. Cada pacote de aplicativos contém os arquivos que constituem um Windows aplicativo e um arquivo de manifesto que descreve o software a ser Windows.
 
 ## <a name="windows-runtime-reference"></a>Referência do Windows Runtime
 
@@ -26,19 +26,19 @@ Saiba mais sobre a API de implantação de pacote, que pode ser usada para insta
 **Amostras**
 </dt> <dt>
 
-[Adicionar exemplo de pacote de aplicativo (AddPackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerAddPackage)
+[Adicionar exemplo de pacote de aplicativos (AddPackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerAddPackage)
 </dt> <dt>
 
-[Enumerar exemplo de pacotes de aplicativos (FindPackages)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackages)
+[Exemplo de enumerar pacotes de aplicativos (FindPackages)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackages)
 </dt> <dt>
 
-[Enumerar pacotes de aplicativos por nome e exemplo de Publicador (FindPackagesByNameAndPublisher)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByNameAndPublisher)
+[Enumerar pacotes de aplicativos por nome e exemplo de editor (FindPackagesByNameAndPublisher)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByNameAndPublisher)
 </dt> <dt>
 
-[Exemplo de enumeração de pacotes de aplicativos por SID de usuário (FindPackagesByUserSecurityId)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByUserSecurityIda)
+[Enumerar pacotes de aplicativos por exemplo de SID do usuário (FindPackagesByUserSecurityId)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerFindPackagesByUserSecurityIda)
 </dt> <dt>
 
-[Remover exemplo de pacote de aplicativo (RemovePackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerRemovePackage)
+[Remover exemplo de pacote de aplicativos (RemovePackage)](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/PackageManagerRemovePackage)
 </dt> <dt>
 
 **Conceitos**
@@ -62,6 +62,6 @@ Saiba mais sobre a API de implantação de pacote, que pode ser usada para insta
 [API de consulta de pacote](functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

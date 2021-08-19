@@ -1,10 +1,10 @@
 ---
-title: Interface INapSystemHealthAgentBinding (NapSystemHealthAgent.h)
-description: Os SHAs usam para se comunicar com o NapAgent. | Interface INapSystemHealthAgentBinding (NapSystemHealthAgent.h)
+title: Interface INapSystemHealthAgentBinding (NapSystemHealthAgent. h)
+description: Os SHAs usam para se comunicar com o NapAgent. | Interface INapSystemHealthAgentBinding (NapSystemHealthAgent. h)
 ms.assetid: 9366f61f-086a-4f44-900e-9ec3165a35ba
 keywords:
-- INapSystemHealthAgentBinding interface NAP
-- NAP da interface INapSystemHealthAgentBinding, descrita
+- INapSystemHealthAgentBinding da interface NAP
+- INapSystemHealthAgentBinding interface NAP, descrita
 topic_type:
 - apiref
 api_name:
@@ -25,20 +25,20 @@ ms.locfileid: "117799181"
 # <a name="inapsystemhealthagentbinding-interface"></a>Interface INapSystemHealthAgentBinding
 
 > [!Note]  
-> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
+> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
 
  
 
 O **INapSystemHealthAgentBinding** fornece métodos que os SHAs usam para se comunicar com o NapAgent.
 
 > [!Note]  
-> [**INapSystemHealthAgentBinding2**](inapsystemhealthagentbinding2.md) herda todos os métodos dessa interface e deve ser usado em vez disso.
+> [**INapSystemHealthAgentBinding2**](inapsystemhealthagentbinding2.md) herda todos os métodos dessa interface e deve ser usado em seu lugar.
 
  
 
 ## <a name="members"></a>Membros
 
-A interface **INapSystemHealthAgentBinding** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **INapSystemHealthAgentBinding** também tem estes tipos de membros:
+A interface **INapSystemHealthAgentBinding** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **INapSystemHealthAgentBinding** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -52,9 +52,9 @@ A interface **INapSystemHealthAgentBinding** tem esses métodos.
 |:---------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
 | [**INapSystemHealthAgentBinding::FlushCache**](inapsystemhealthagentbinding-flushcache-method.md)                         | Chamado por um SHA para liberar seu cache SoH.<br/>                                                |
 | [**INapSystemHealthAgentBinding::GetSystemIsolationInfo**](inapsystemhealthagentbinding-getsystemisolationinfo-method.md) | Chamado por SHAs para determinar o estado de isolamento do sistema.<br/>                                 |
-| [**INapSystemHealthAgentBinding::Initialize**](inapsystemhealthagentbinding-initialize-method.md)                         | Inicializa o SHA e vincula o SHA ao serviço NapAgent. <br/>                         |
-| [**INapSystemHealthAgentBinding::NotifySoHChange**](inapsystemhealthagentbinding-notifysohchange-method.md)               | Chamado por SHAs quando seu SoH muda.<br/>                                                  |
-| [**INapSystemHealthAgentBinding::Uninitialize**](inapsystemhealthagentbinding-uninitialize-method.md)                     | Chamado por SHAs para fazer com que o NapAgent libere todas as suas referências a ponteiros SHA COM.<br/> |
+| [**INapSystemHealthAgentBinding:: Initialize**](inapsystemhealthagentbinding-initialize-method.md)                         | Inicializa o SHA e associa o SHA ao serviço NapAgent. <br/>                         |
+| [**INapSystemHealthAgentBinding::NotifySoHChange**](inapsystemhealthagentbinding-notifysohchange-method.md)               | Chamado por SHAs quando seu SoH é alterado.<br/>                                                  |
+| [**INapSystemHealthAgentBinding:: Uninitialize**](inapsystemhealthagentbinding-uninitialize-method.md)                     | Chamado por SHAs para fazer com que o NapAgent libere todas as suas referências aos ponteiros COM do SHA.<br/> |
 
 
 
@@ -62,7 +62,7 @@ A interface **INapSystemHealthAgentBinding** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-Todas as APIs nesta interface retornarão **RPC \_ E \_ DISCONNECTED** se o NapAgent for interrompido. Esse objeto será recuperado automaticamente e reabinado ao NapAgent, depois que ele for reiniciado.
+Todas as APIs nesta interface retornarão **RPC \_ E \_ desconectadas** se o NapAgent for interrompido. Este objeto será recuperado automaticamente e reassociado ao NapAgent, depois que ele for reiniciado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,10 +70,10 @@ Todas as APIs nesta interface retornarão **RPC \_ E \_ DISCONNECTED** se o NapA
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                      |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                |
-| Cabeçalho<br/>                   | <dl> <dt>NapSystemHealthAgent.h</dt> </dl>   |
-| Idl<br/>                      | <dl> <dt>NapSystemHealthAgent.idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                |
+| Cabeçalho<br/>                   | <dl> <dt>NapSystemHealthAgent. h</dt> </dl>   |
+| INSERI<br/>                      | <dl> <dt>NapSystemHealthAgent. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>               |
 
 
@@ -82,10 +82,10 @@ Todas as APIs nesta interface retornarão **RPC \_ E \_ DISCONNECTED** se o NapA
 
 <dl> <dt>
 
-[NAP Interfaces](nap-interfaces.md)
+[Interfaces NAP](nap-interfaces.md)
 </dt> <dt>
 
-[Referência nap](nap-reference.md)
+[Referência de NAP](nap-reference.md)
 </dt> </dl>
 
  

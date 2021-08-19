@@ -1,9 +1,9 @@
 ---
-title: Função Texture2DMSArray::GetSamplePosition
-description: Obtém a posição do exemplo especificado. | Função Texture2DMSArray::GetSamplePosition
+title: 'Função Texture2DMSArray:: GetSamplePosition'
+description: 'Obtém a posição do exemplo especificado. | Função Texture2DMSArray:: GetSamplePosition'
 ms.assetid: e04717be-58b0-4242-87dd-d769834ae1c2
 keywords:
-- Função GetSamplePosition HLSL
+- HLSL da função GetSamplePosition
 topic_type:
 - apiref
 api_name:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118508412"
 ---
-# <a name="texture2dmsarraygetsampleposition-function"></a>Função Texture2DMSArray::GetSamplePosition
+# <a name="texture2dmsarraygetsampleposition-function"></a>Função Texture2DMSArray:: GetSamplePosition
 
 Obtém a posição do exemplo especificado.
 
@@ -36,12 +36,12 @@ float2 GetSamplePosition(
 
 <dl> <dt>
 
-*sampleindex* \[ Em\]
+*sampleindex* \[ no\]
 </dt> <dd>
 
 Tipo: **[ **int**](/windows/desktop/WinProg/windows-data-types)**
 
-O índice baseado em zero de um local de exemplo.
+O índice de base zero de um local de exemplo.
 
 </dd> </dl>
 
@@ -57,7 +57,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

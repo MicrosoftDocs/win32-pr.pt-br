@@ -4,12 +4,12 @@ ms.assetid: 8cc14683-3dbb-404f-87af-09a5f5b90b19
 title: Controle MaskedEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee7568df9969ebabab6311e519d0a5a625feb8dd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 30a6490cf2eb05d001d00a1cd8b5b3d33520ea735ebe0d05f064d4053847b691
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117805101"
 ---
 # <a name="maskededit-control"></a>Controle MaskedEdit
 
@@ -61,7 +61,7 @@ Para alterar o valor de um atributo que está usando um evento, assine o control
 | [PropertyValue](propertyvalue-control-attribute.md)               |                                  | Valor atual da propriedade que é exibida ou alterada por este controle. Se o bit de atributo indireto não estiver definido, esse será o valor de PropertyName. Se o bit de atributo indireto estiver definido, esse será o valor de IndirectPropertyName. Se o atributo for alterado, o controle refletirá o novo valor.                                                                                                                                                                                                |
 | [Text](text-control-attribute.md)                                 |                                  | Para definir a fonte e o estilo da fonte de uma cadeia de texto, Prefixe a cadeia de caracteres exibidos com { \\ Style} ou {&Style}. Em que Style é um identificador listado na coluna Style da [tabela TextStyle](textstyle-table.md). Se nenhuma dessas opções estiver presente, mas a propriedade [**DefaultUIFont**](defaultuifont.md) for definida como um estilo de texto válido, essa fonte será usada. A cadeia de caracteres que especifica o modelo de mascaramento segue esse prefixo e usa a sintaxe descrita anteriormente neste tópico. |
 | [Visível](visible-control-attribute.md)                           | 0x00000000 0x00000001<br/> | Controle oculto. Controle visível.<br/> Inclua esse bit na palavra de bits da coluna atributos na tabela de [controle](control-table.md) para tornar o controle visível ou oculto quando ele for criado.<br/> Você também pode ocultar ou mostrar um controle usando a [tabela ControlCondition](controlcondition-table.md).<br/>                                                                                                                                                                 |
-| [Enabled](enabled-control-attribute.md)                           | 0x00000000 0x00000002<br/> | Controle em um estado desabilitado. Controle em um estado habilitado.<br/> Inclua esse bit na palavra de bits na coluna atributos da tabela de [controle](control-table.md) para habilitar o controle na criação.<br/> Você também pode habilitar ou desabilitar um controle usando a [tabela ControlCondition](controlcondition-table.md).<br/>                                                                                                                                                          |
+| [Habilitada](enabled-control-attribute.md)                           | 0x00000000 0x00000002<br/> | Controle em um estado desabilitado. Controle em um estado habilitado.<br/> Inclua esse bit na palavra de bits na coluna atributos da tabela de [controle](control-table.md) para habilitar o controle na criação.<br/> Você também pode habilitar ou desabilitar um controle usando a [tabela ControlCondition](controlcondition-table.md).<br/>                                                                                                                                                          |
 | [Submersa](sunken-control-attribute.md)                             | 0x00000000 0x00000004<br/> | Exibe o estilo visual padrão. Exibe o controle com uma aparência de baixo e 3-D.<br/> Inclua esses bits na palavra de bits na coluna atributos da tabela de [controle](control-table.md).<br/>                                                                                                                                                                                                                                                                                          |
 | [Indireto.](indirect-control-attribute.md)                         | 0x00000000 0x00000008<br/> | O controle exibe ou altera o valor da propriedade na coluna propriedade da [tabela de controle](control-table.md). O controle exibe ou altera o valor da propriedade que tem o identificador listado na coluna propriedade da [tabela de controle](control-table.md).<br/> Determina se a propriedade associada a esse controle é referenciada indiretamente.<br/>                                                                                                 |
 

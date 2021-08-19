@@ -1,9 +1,9 @@
 ---
-title: Elemento de tipos (MetadataType)
+title: Elemento types (MetadataType)
 description: Define uma lista de tipos XML.
 ms.assetid: 55eb553e-1744-4fbc-987d-f763e80f3560
 keywords:
-- Log de elementos de tipos
+- elemento types EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 34bdc9af1283b245ec166386eae4708689f3ec9c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9520a98fccc586a8596c3f2ae8e684453ef56a68eaa411395e7e291f2a17d68e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117936844"
 ---
-# <a name="types-metadatatype-element"></a>Elemento de tipos (MetadataType)
+# <a name="types-metadatatype-element"></a>Elemento types (MetadataType)
 
 Define uma lista de tipos XML.
 
@@ -30,7 +30,7 @@ Define uma lista de tipos XML.
  />
 ```
 
-O elemento **Types** é definido pelo tipo complexo [**MetadataType**](eventmanifestschema-metadatatype-complextype.md) .
+O **elemento types** é definido pelo tipo complexo [**MetadataType.**](eventmanifestschema-metadatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Types** é definido pelo tipo complexo [**MetadataType**](eventmani
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: A \_ Propriedade PKEY AudioEndpoint \_ FullRangeSpeakers especifica a máscara de configuração de canal para os alto-falantes de intervalo completo que estão conectados ao dispositivo de ponto de extremidade de áudio.
+description: A propriedade \_ PKEY AudioEndpoint FullRangeSpeakers especifica a máscara de configuração de canal para os alto-falantes de intervalo completo conectados ao dispositivo de ponto de \_ extremidade de áudio.
 ms.assetid: c0a54b3d-84dc-4771-8891-167ce00e2218
-title: PKEY_AudioEndpoint_FullRangeSpeakers (Mmdeviceapi. h)
+title: PKEY_AudioEndpoint_FullRangeSpeakers (Mmdeviceapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ad27e5623189ce3ba78707377837493c1ea8dccb248d02ddd3d8e2c64570bed6
@@ -13,24 +13,24 @@ ms.locfileid: "118406442"
 ---
 # <a name="pkey_audioendpoint_fullrangespeakers"></a>PKEY \_ AudioEndpoint \_ FullRangeSpeakers
 
-A propriedade **PKEY \_ AudioEndpoint \_ FullRangeSpeakers** especifica a máscara de configuração de canal para os alto-falantes de intervalo completo que estão conectados ao dispositivo de ponto de extremidade de áudio. A máscara indica a configuração física dos alto-falantes do intervalo completo e especifica a atribuição de canais a esses alto-falantes.
+A **propriedade \_ PKEY AudioEndpoint \_ FullRangeSpeakers** especifica a máscara de configuração de canal para os alto-falantes de intervalo completo conectados ao dispositivo de ponto de extremidade de áudio. A máscara indica a configuração física dos alto-falantes de intervalo completo e especifica a atribuição de canais a esses alto-falantes.
 
-O membro **VT** da estrutura **PROPVARIANT** é definido como VT \_ UI4.
+O **membro vt** da estrutura **PROPVARIANT** é definido como VT \_ UI4.
 
-O membro **uintVal** da estrutura **PROPVARIANT** contém uma máscara de configuração de canal que é convertida para o tipo **uint**.
+O **membro uintVal** da estrutura **PROPVARIANT** contém uma máscara de configuração de canal que é lançada para o **tipo UINT.**
 
-Um palestrante de intervalo completo é capaz de reproduzir sons em todo o intervalo de baixo a agudos. Normalmente, os alto-falantes maiores são um intervalo completo, mas os altifalantes menores são significativamente menos capazes de reproduzir sons graves. no Windows Vista, o mecanismo de áudio usa essa propriedade para gerenciar os níveis de baixo desempenho no fluxo de saída de áudio que é reproduzido pelo dispositivo de ponto de extremidade de áudio.
+Um locutor de intervalo completo é capaz de tocar sons em todo o intervalo, desde o sol até o treble. Normalmente, os alto-falantes maiores têm uma gama completa, mas os alto-falantes menores são significativamente menos capazes de tocar sons de ruídos. No Windows Vista, o mecanismo de áudio usa essa propriedade para gerenciar níveis de baixo no fluxo de saída de áudio que é tocada pelo dispositivo de ponto de extremidade de áudio.
 
-A máscara de configuração de canal para essa propriedade está no mesmo formato que a máscara de configuração de canal para a propriedade [**PKEY \_ AudioEndpoint \_ PhysicalSpeakers**](pkey-audioendpoint-physicalspeakers.md) . Para obter mais informações sobre máscaras de configuração de canal, consulte o seguinte:
+A máscara de configuração de canal para essa propriedade está no mesmo formato que a máscara de configuração de canal para a [**propriedade PKEY \_ AudioEndpoint \_ PhysicalSpeakers.**](pkey-audioendpoint-physicalspeakers.md) Para obter mais informações sobre máscaras de configuração de canal, consulte o seguinte:
 
--   a descrição da propriedade de \_ configuração do canal de áudio KSPROPERTY \_ \_ na documentação do Windows DDK.
--   a white paper intitulada "suporte de Driver de áudio para configurações de alto-falante de Home Theater" no site [tecnologias de dispositivo de áudio para Windows](https://www.microsoft.com/whdc/device/audio/default.mspx) .
+-   A descrição da propriedade KSPROPERTY AUDIO CHANNEL CONFIG na \_ \_ \_ documentação Windows DDK.
+-   O white paper intitulado "Suporte do driver de áudio para configurações do locutor do Home Speaker" no site tecnologias de dispositivo de áudio [para Windows.](https://www.microsoft.com/whdc/device/audio/default.mspx)
 
-O sistema Obtém a máscara de configuração de canal para a \_ Propriedade PKEY AudioEndpoint \_ FullRangeSpeakers do usuário. o usuário insere essas informações por meio do Windows painel de controle multimídia Mmsys.cpl. para obter mais informações sobre Mmsys.cpl, consulte a documentação do Windows DDK.
+O sistema obtém a máscara de configuração de canal para a propriedade \_ PKEY AudioEndpoint \_ FullRangeSpeakers do usuário. O usuário ins insira essas informações por meio do painel de controle Windows multimídia, Mmsys.cpl. Para obter mais informações sobre Mmsys.cpl, consulte a documentação Windows DDK.
 
-A máscara de configuração de canal para a \_ Propriedade PKEY AudioEndpoint \_ FullRangeSpeakers de um dispositivo de ponto de extremidade de áudio é um subconjunto da máscara de configuração de canal para a \_ Propriedade PKEY AudioEndpoint \_ PhysicalSpeakers do mesmo dispositivo.
+A máscara de configuração de canal para a propriedade PKEY AudioEndpoint FullRangeSpeakers de um dispositivo de ponto de extremidade de áudio é um subconjunto da máscara de configuração de canal para a propriedade \_ \_ PKEY \_ AudioEndpoint \_ PhysicalSpeakers do mesmo dispositivo.
 
-Por exemplo, se um dispositivo de ponto de extremidade de áudio direcionar um conjunto de alto-falantes de 5,1 surround, a máscara de configuração de canal para a \_ Propriedade PKEY AudioEndpoint \_ PHYSICALSPEAKERS será KSAUDIO de \_ alto-falante \_ 5POINT1. Essa máscara indica a presença de alto-falantes da esquerda, frontal direita, Front-Center, lateral esquerda e lateral direita — além de um subwoofer. Se os alto-falantes front-Left e front-Right forem grandes o suficiente para produzir sons graves, mas o front-Center e os alto-falantes laterais menores não forem, a máscara de configuração de canal para a \_ Propriedade PKEY AudioEndpoint \_ FULLRANGESPEAKERS será KSAUDIO \_ \_ , que indica apenas os alto-falantes front-Left e front-Right. As máscaras de configuração de canal KSAUDIO \_ \_ 5POINT1 de orador e KSAUDIO \_ \_ estéreo são definidas no arquivo de cabeçalho Ksmedia. h.
+Por exemplo, se um dispositivo de ponto de extremidade de áudio conduz um conjunto de alto-falantes de som surround 5.1, a máscara de configuração de canal para a propriedade PKEY \_ AudioEndpoint \_ PhysicalSpeakers é KSAUDIO \_ SPEAKER \_ 5POINT1. Essa máscara indica a presença de alto-falantes à esquerda, à direita, à direita, à frente, à esquerda e à direita, além de um subwoofer. Se os alto-falantes front-left e front-right são grandes o suficiente para produzir sons de bateria, mas os alto-falantes laterais e front-center menores não são, então a máscara de configuração de canal para a propriedade \_ \_ FullRangeSpeakers de AudioEndpoint PKEY é KSAUDIO SPEAKER STEREO, que indica apenas os \_ \_ alto-falantes front-left e front-right. As máscaras de configuração de canal KSAUDIO SPEAKER 5POINT1 e KSAUDIO SPEAKER ESTÉREO são definidas no arquivo de \_ \_ \_ \_ header Ksmedia.h.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,9 +38,9 @@ Por exemplo, se um dispositivo de ponto de extremidade de áudio direcionar um c
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mmdeviceapi.h</dt> </dl> |
 
 
 
@@ -51,10 +51,10 @@ Por exemplo, se um dispositivo de ponto de extremidade de áudio direcionar um c
 [**Propriedades do ponto de extremidade de áudio**](audio-endpoint-properties.md)
 </dt> <dt>
 
-[Propriedades de áudio de núcleo](core-audio-properties.md)
+[Propriedades de áudio principais](core-audio-properties.md)
 </dt> <dt>
 
-[**\_Propriedade PKEY AudioEndpoint \_ PhysicalSpeakers**](pkey-audioendpoint-physicalspeakers.md)
+[**Propriedade PKEY \_ AudioEndpoint \_ PhysicalSpeakers**](pkey-audioendpoint-physicalspeakers.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: Como processar a notificação de DTN_DATETIMECHANGE
-description: Este tópico demonstra como processar a notificação de alterações, feitas pelo usuário, para o controle do seletor de data e hora (DTP).
+title: Como processar a notificação DTN_DATETIMECHANGE dados
+description: Este tópico demonstra como processar a notificação de alterações, feitas pelo usuário, para o controle DTP (selador de data e hora).
 ms.assetid: AE029962-E9D3-47BC-A24F-312B54137F18
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117829917"
 ---
 # <a name="how-to-process-the-dtn_datetimechange-notification"></a>Como processar a notificação DTN \_ DATETIMECHANGE
 
-Este tópico demonstra como processar a notificação de alterações, feitas pelo usuário, para o controle do seletor de data e hora (DTP).
+Este tópico demonstra como processar a notificação de alterações, feitas pelo usuário, para o controle DTP (selador de data e hora).
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
@@ -24,16 +24,16 @@ Este tópico demonstra como processar a notificação de alterações, feitas pe
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Windows Programação de interface do usuário
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 
-Um controle DTP envia o código de notificação [DTN \_ DATETIMECHANGE](dtn-datetimechange.md) sempre que ocorre uma alteração. Por exemplo, essa notificação será gerada quando o usuário alterar um dos campos no controle ou, no caso em que o controle está definido como o estilo [**DTS \_ mynone**](date-and-time-picker-control-styles.md) , quando o usuário altera o estado da caixa de seleção do controle.
+Um controle DTP envia o código de notificação [DTN \_ DATETIMECHANGE](dtn-datetimechange.md) sempre que ocorre uma alteração. Por exemplo, essa notificação será gerada quando o usuário altera um dos campos no controle ou, no caso em que o controle é definido como o estilo [**DTS \_ SHOWNONE,**](date-and-time-picker-control-styles.md) quando o usuário altera o estado da caixa de seleção do controle.
 
-Seu aplicativo deve incluir código para processar \_ mensagens DTN DATETIMECHANGE enviadas pelo controle DTP.
+Seu aplicativo deve incluir código para processar mensagens DTN \_ DATETIMECHANGE que são enviadas pelo controle DTP.
 
-O exemplo de código C++ a seguir é uma função definida pelo aplicativo projetada para indicar o estado de um controle DTP que é definido para o estilo **DTS \_ All None** .
+O exemplo de código C++ a seguir é uma função definida pelo aplicativo projetada para indicar o estado de um controle DTP definido para o estilo **DTS \_ SHOWNONE.**
 
 
 
@@ -58,13 +58,13 @@ void WINAPI DoDateTimeChange(LPNMDATETIMECHANGE lpChange)
 
 <dl> <dt>
 
-[Usando controles de seletor de data e hora](using-date-and-time-picker.md)
+[Usando controles de selador de data e hora](using-date-and-time-picker.md)
 </dt> <dt>
 
-[Referência de controle do seletor de data e hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[Referência de controle do selador de data e hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
-[Seletor de data e hora](date-and-time-picker-control-reference.md)
+[Selador de data e hora](date-and-time-picker-control-reference.md)
 </dt> </dl>
 
  

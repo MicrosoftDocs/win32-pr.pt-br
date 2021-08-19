@@ -1,9 +1,9 @@
 ---
 title: WM/VideoClosedCaptioning
-description: O atributo WM/VideoClosedCaptioning indica se o conteúdo inclui legendas ocultas.
+description: O atributo WM/VideoClosedCaptioning indica se o conteúdo inclui legendas fechadas.
 ms.assetid: 50ce2faf-d510-4242-8e59-95a6d870bdba
 keywords:
-- Formato de mídia do Windows do WM/VideoClosedCaptioning
+- Formato de mídia do Windows WM/VideoClosedCaptioning
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "117844082"
 ---
 # <a name="wmvideoclosedcaptioning"></a>WM/VideoClosedCaptioning
 
-O atributo **WM/VideoClosedCaptioning** indica se o conteúdo inclui legendas ocultas.
+O **atributo WM/VideoClosedCaptioning** indica se o conteúdo inclui legendas fechadas.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMVideoClosedCaptioning
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**WMT \_ tipo \_ bool**
+**TIPO WMT \_ \_ BOOL**
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é usado para difundir televisão e outros conteúdos de vídeo.
+Esse atributo é usado para transmissão de tv e outros conteúdos de vídeo.
 
 ## <a name="see-also"></a>Confira também
 

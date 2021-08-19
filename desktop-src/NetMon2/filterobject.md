@@ -128,19 +128,19 @@ A tabela a seguir lista os sinalizadores de operador de membro de ação.
 | <span id="FILTERACTION_PLUS"></span><span id="filteraction_plus"></span><dl> <dt>**FILTERaction \_ mais**</dt> </dl>                                    | Adicionar operador (+).<br/>                                                                                                    |
 | <span id="FILTERACTION_MINUS"></span><span id="filteraction_minus"></span><dl> <dt>**FILTERaction \_ menos**</dt> </dl>                                 | Operador de subtração (-).<br/>                                                                                               |
 | <span id="FILTERACTION_AREBITSON"></span><span id="filteraction_arebitson"></span><dl> <dt>**FILTERaction \_ AREBITSON**</dt> </dl>                     | Indica uma operação bit-a-bit.<br/>                                                                                       |
-| <span id="FILTERACTION_AREBITSOFF"></span><span id="filteraction_arebitsoff"></span><dl> <dt>**FILTERaction \_ AREBITSOFF**</dt> </dl>                  | Indica uma operação sem bits<br/>                                                                                   |
-| <span id="FILTERACTION_PROTOCOLSEXIST"></span><span id="filteraction_protocolsexist"></span><dl> <dt>**FILTERaction \_ PROTOCOLSEXIST**</dt> </dl>      | Indica que os protocolos selecionados existem.<br/>                                                                         |
-| <span id="FILTERACTION_PROTOCOLEXIST"></span><span id="filteraction_protocolexist"></span><dl> <dt>**FILTERaction \_ PROTOCOLEXIST**</dt> </dl>         | Indica que o protocolo selecionado existe.<br/>                                                                         |
-| <span id="FILTERACTION_ARRAYEQUAL"></span><span id="filteraction_arrayequal"></span><dl> <dt>**FILTERaction \_ ARRAYEQUAL**</dt> </dl>                  | Indica que o conteúdo da matriz é igual. O sinalizador deve ser usado com uma estrutura de **\_ matriz filteraction** .<br/>             |
-| <span id="FILTERACTION_DEREFPROPERTY"></span><span id="filteraction_derefproperty"></span><dl> <dt>**FILTERaction \_ DEREFPROPERTY**</dt> </dl>         | Descreve uma correspondência de padrão em um deslocamento (em bytes) do protocolo.<br/>                                                |
-| <span id="FILTERACTION_OID_CONTAINS"></span><span id="filteraction_oid_contains"></span><dl> <dt>**\_OID filteraction \_ contém**</dt> </dl>           | Avalia uma subcadeia de caracteres dentro de um identificador de objeto. A ação deve ser usada com a estrutura **\_ OID de filteraction** .<br/> |
-| <span id="FILTERACTION_OID_BEGINS_WITH"></span><span id="filteraction_oid_begins_with"></span><dl> <dt>**o OID FILTERaction \_ \_ começa \_ com**</dt> </dl> | Avalia uma subcadeia de caracteres que inicia um identificador de objeto. O sinalizador deve ser usado com **\_ OID filteraction**.<br/>            |
-| <span id="FILTERACTION_OID_ENDS_WITH"></span><span id="filteraction_oid_ends_with"></span><dl> <dt>**\_OID de filteraction \_ termina \_ com**</dt> </dl>       | Avalia uma subcadeia de caracteres que termina um identificador de objeto. O sinalizador deve ser usado com **\_ OID filteraction**.<br/>              |
-| <span id="FILTERACTION_ADDR_VINES"></span><span id="filteraction_addr_vines"></span><dl> <dt>**Endereço de filtro de \_ \_ Vines**</dt> </dl>                 | Contém um endereço MAC de Vines.<br/>                                                                                        |
-| <span id="FILTERACTION_EXPRESSION"></span><span id="filteraction_expression"></span><dl> <dt>**expressão FILTERaction \_**</dt> </dl>                  | Contém uma expressão de ação.<br/>                                                                                       |
-| <span id="FILTERACTION_BOOL"></span><span id="filteraction_bool"></span><dl> <dt>**BOOL FILTERaction \_**</dt> </dl>                                    | Contém um tipo de dados **bool** .<br/>                                                                                       |
-| <span id="FILTER_DIRECTION_NEXT"></span><span id="filter_direction_next"></span><dl> <dt>**\_Avançar direção do filtro \_**</dt> </dl>                       | Controla a direção sequencial (próximo quadro) em um arquivo de captura.<br/>                                                    |
-| <span id="FILTER_DIRECTION_PREV"></span><span id="filter_direction_prev"></span><dl> <dt>**direção do filtro \_ \_ anterior**</dt> </dl>                       | Controla a direção sequencial (quadro anterior) em um arquivo de captura.<br/>                                                |
+| <span id="FILTERACTION_AREBITSOFF"></span><span id="filteraction_arebitsoff"></span><dl> <dt>**FILTERaction \_ AREBITSOFF**</dt> </dl>                  | Indica uma operação não bit a bit.<br/>                                                                                   |
+| <span id="FILTERACTION_PROTOCOLSEXIST"></span><span id="filteraction_protocolsexist"></span><dl> <dt>**FILTERACTION \_ PROTOCOLSEXIST**</dt> </dl>      | Indica que os protocolos selecionados existem.<br/>                                                                         |
+| <span id="FILTERACTION_PROTOCOLEXIST"></span><span id="filteraction_protocolexist"></span><dl> <dt>**FILTERACTION \_ PROTOCOLEXIST**</dt> </dl>         | Indica que o protocolo selecionado existe.<br/>                                                                         |
+| <span id="FILTERACTION_ARRAYEQUAL"></span><span id="filteraction_arrayequal"></span><dl> <dt>**FILTERACTION \_ ARRAYEQUAL**</dt> </dl>                  | Indica que o conteúdo da matriz é igual. O sinalizador deve ser usado com uma **estrutura FILTERACTION \_ ARRAY.**<br/>             |
+| <span id="FILTERACTION_DEREFPROPERTY"></span><span id="filteraction_derefproperty"></span><dl> <dt>**FILTERACTION \_ DEREFPROPERTY**</dt> </dl>         | Descreve uma combinação de padrões em um deslocamento (em bytes) do protocolo.<br/>                                                |
+| <span id="FILTERACTION_OID_CONTAINS"></span><span id="filteraction_oid_contains"></span><dl> <dt>**FILTERACTION \_ OID \_ CONTAINS**</dt> </dl>           | Avalia uma substring dentro de um identificador de objeto. A ação deve ser usada com a **estrutura \_ OID FILTERACTION.**<br/> |
+| <span id="FILTERACTION_OID_BEGINS_WITH"></span><span id="filteraction_oid_begins_with"></span><dl> <dt>**FILTERACTION \_ OID \_ COMEÇA \_ COM**</dt> </dl> | Avalia uma substring que inicia um identificador de objeto. O sinalizador deve ser usado com **FILTERACTION \_ OID**.<br/>            |
+| <span id="FILTERACTION_OID_ENDS_WITH"></span><span id="filteraction_oid_ends_with"></span><dl> <dt>**FILTERACTION \_ OID \_ TERMINA \_ COM**</dt> </dl>       | Avalia uma substring que encerra um identificador de objeto. O sinalizador deve ser usado com **FILTERACTION \_ OID**.<br/>              |
+| <span id="FILTERACTION_ADDR_VINES"></span><span id="filteraction_addr_vines"></span><dl> <dt>**VINES DO \_ ADDR FILTERACTION \_**</dt> </dl>                 | Contém um endereço MAC Vines.<br/>                                                                                        |
+| <span id="FILTERACTION_EXPRESSION"></span><span id="filteraction_expression"></span><dl> <dt>**EXPRESSÃO \_ FILTERACTION**</dt> </dl>                  | Contém uma expressão de ação.<br/>                                                                                       |
+| <span id="FILTERACTION_BOOL"></span><span id="filteraction_bool"></span><dl> <dt>**FILTERACTION \_ BOOL**</dt> </dl>                                    | Contém um **tipo de dados BOOL.**<br/>                                                                                       |
+| <span id="FILTER_DIRECTION_NEXT"></span><span id="filter_direction_next"></span><dl> <dt>**DIREÇÃO \_ DO FILTRO \_ PRÓXIMO**</dt> </dl>                       | Controla a direção sequencial (próximo quadro) dentro de um arquivo de captura.<br/>                                                    |
+| <span id="FILTER_DIRECTION_PREV"></span><span id="filter_direction_prev"></span><dl> <dt>**FILTER \_ DIRECTION \_ PREV**</dt> </dl>                       | Controla a direção sequencial (quadro anterior) em um arquivo de captura.<br/>                                                |
 
 
 
@@ -151,25 +151,25 @@ A tabela a seguir lista os sinalizadores de operador de membro de ação.
 **hProperty**
 </dt> <dd>
 
-Identificador para uma chave de propriedade.
+Lidar com uma chave de propriedade.
 
 </dd> <dt>
 
 **Valor**
 </dt> <dd>
 
-Valor de um objeto.
+Valor de um objeto .
 
 </dd> <dt>
 
 **hProtocol**
 </dt> <dd>
 
-Identificador para exibir o protocolo de filtro.
+Manipular para exibir o protocolo de filtro.
 
 </dd> <dt>
 
-**lpArray**
+**Lparray**
 </dt> <dd>
 
 Ponteiro para uma matriz.
@@ -179,35 +179,35 @@ Ponteiro para uma matriz.
 **lpProtocolTable**
 </dt> <dd>
 
-Ponteiro para uma lista de protocolos projetada para testar a existência de protocolo em um quadro.
+Ponteiro para uma lista de protocolos projetada para testar a existência do protocolo em um quadro.
 
 </dd> <dt>
 
-**lpAddress**
+**Lpaddress**
 </dt> <dd>
 
-Ponteiro para o endereço do tipo de kernel. Por exemplo, MAC ou IP.
+Ponteiro para o endereço do tipo kernel. Por exemplo, MAC ou IP.
 
 </dd> <dt>
 
 **lpLargeInt**
 </dt> <dd>
 
-**DWORD** duplo usado em um Windows NT ou Windows aplicativo 2000.
+DWORD **duplo** usado em um Windows NT ou Windows 2000.
 
 </dd> <dt>
 
 **lpTime**
 </dt> <dd>
 
-Um ponteiro para uma estrutura **SYSTEMTIME** .
+Um ponteiro para uma **estrutura SYSTEMTIME.**
 
 </dd> <dt>
 
 **lpOID**
 </dt> <dd>
 
-Um ponteiro para a estrutura de OID ( **\_ identificador de objeto** ).
+Um ponteiro para a estrutura OID **(OBJECT \_ IDENTIFIER).**
 
 </dd> <dt>
 
@@ -221,7 +221,7 @@ O número, em bytes, no quadro.
 **ByteOffset**
 </dt> <dd>
 
-O valor de byte de deslocamento da estrutura FILTERobject usada para comparar matrizes.
+O valor de byte de deslocamento da estrutura FILTEROBJECT usada para comparar matrizes.
 
 </dd> <dt>
 
@@ -240,7 +240,7 @@ Reservado.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
 
 
 

@@ -37,7 +37,7 @@ As duas tabelas a seguir descrevem as interfaces com suporte por esse SDK e most
 | [**IWMBandwidthSharing**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmbandwidthsharing)                 | Configura objetos de compartilhamento de largura de banda. Objetos de compartilhamento de largura de banda são criados por objetos de perfil para especificar fluxos que, independentemente de suas taxas de bits individuais, nunca usarão mais de uma determinada quantidade de largura de banda entre eles.                            |
 | [**IWMClientConnections**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmclientconnections)               | Recupera informações sobre clientes conectados a um objeto de sink de rede do writer.                                                                                                                                                                                    |
 | [**IWMClientConnections2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmclientconnections2)             | Recupera informações avançadas sobre clientes conectados a um objeto de sink de rede do writer.                                                                                                                                                                           |
-| [**IWMCodecAMVideoAccelerator**](/previous-versions/windows/desktop/api/wmdxva/nn-wmdxva-iwmcodecamvideoaccelerator)   | Exposto pelo DMO decodificador de [*mídia do Windows*](wmformat-glossary.md) e chamado pelo filtro de origem de um player de mídia para configurar as várias conexões necessárias para habilitar o DirectX VA para decodificação do conteúdo Windows Vídeo de Mídia. |
+| [**IWMCodecAMVideoAccelerator**](/previous-versions/windows/desktop/api/wmdxva/nn-wmdxva-iwmcodecamvideoaccelerator)   | Exposto pelo DMO decodificador de [*mídia do Windows*](wmformat-glossary.md) e chamado pelo filtro de origem de um player de mídia para configurar as várias conexões necessárias para habilitar o DirectX VA para decodificação de conteúdo Windows Vídeo de Mídia. |
 | [**IWMCodecInfo**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo)                               | Recupera os formatos disponíveis para os codecs de áudio com suporte carregados no sistema. Esses formatos são usados ao criar fluxos de áudio em perfis.                                                                                                              |
 | [**IWMCodecInfo2**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo2)                             | Fornece acesso aos nomes de codecs e descrições dos formatos com suporte de cada um.                                                                                                                                                                         |
 | [**IWMCodecInfo3**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmcodecinfo3)                             | Fornece acesso a propriedades codec e propriedades de formato de áudio. Também permite consultar codecs para suporte a recursos.                                                                                                                                            |
@@ -229,8 +229,8 @@ A tabela a seguir mostra a herança de cada interface e os objetos dos quais uma
 | [**IWMWriterPostView**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpostview)                     | **IUnknown**                    | [Objeto do gravador](writer-object.md)                                                                                                                                                                                             |
 | [**IWMWriterPostViewCallback**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpostviewcallback)     | **IUnknown**                    | Implementado pelo aplicativo                                                                                                                                                                                                 |
 | [**IWMWriterPreprocess**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpreprocess)                 | **IUnknown**                    | [Objeto do gravador](writer-object.md)                                                                                                                                                                                             |
-| [**IWMWriterPushSink**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpushsink)                     | **IWMWriterSink**               | [Objeto de coletor de push do gravador](writer-push-sink-object.md)                                                                                                                                                                         |
-| [**IWMWriterSink**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwritersink)                             | **IUnknown**                    | [Objeto de coletor de arquivo do gravador](writer-file-sink-object.md), objeto de [coletor de rede do gravador](writer-network-sink-object.md), objeto de coletor de [push do gravador](writer-push-sink-object.md)                                                   |
+| [**IWMWriterPushSink**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwriterpushsink)                     | **IWMWriterSink**               | [Objeto do sink push do writer](writer-push-sink-object.md)                                                                                                                                                                         |
+| [**IWMWriterSink**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmwritersink)                             | **IUnknown**                    | [Objeto Docador de Arquivo de Writer](writer-file-sink-object.md), Objeto do Sink de Rede do [Writer](writer-network-sink-object.md), Objeto do Sink de Push [do Writer](writer-push-sink-object.md)                                                   |
 
 
 
@@ -238,7 +238,7 @@ A tabela a seguir mostra a herança de cada interface e os objetos dos quais uma
 
 ## <a name="remarks"></a>Comentários
 
-O identificador de interface para cada uma das interfaces neste SDK é o nome da interface precedida por "IID \_ ". Por exemplo, o identificador para a interface **IWMReaderAdvanced** é \_ IWMReaderAdvanced IID. Para obter um ponteiro para a interface **IWMReaderAdvanced** de um objeto leitor, use o código a seguir, em que *pReader* é um ponteiro para uma interface **IWMReader** :
+O identificador de interface para cada uma das interfaces neste SDK é o nome da interface precedida por \_ "IID". Por exemplo, o identificador da interface **IWMReaderAdvanced** é IID \_ IWMReaderAdvanced. Para obter um ponteiro para a interface **IWMReaderAdvanced** de um objeto de leitor, use o código a seguir, em que *pReader* é um ponteiro para uma interface **IWMReader:**
 
 
 ```C++
@@ -254,7 +254,7 @@ hr = pReader->QueryInterface(IID_IWMReaderAdvanced,
 
 <dl> <dt>
 
-[**Objeto**](objects.md)
+[**Objetos**](objects.md)
 </dt> <dt>
 
 [**Referência de programação**](programming-reference.md)

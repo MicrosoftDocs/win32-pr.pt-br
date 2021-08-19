@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 40ed9aa466fcdbe8d935cb4bb7da442f3c15aded
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f573d8f89432312ddb4301877d6f6b460cc7875715809ba0fd4d6dee7b0f07bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813720"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118068971"
 ---
 # <a name="windows8param-class"></a>Classe Windows8Param
 
@@ -43,7 +43,7 @@ Parâmetros do sistema que foram introduzidos no Windows 8.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

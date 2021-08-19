@@ -1,6 +1,6 @@
 ---
-title: Configurando o Fluxos
-description: Configurando o Fluxos
+title: Configurando o image Fluxos
+description: Configurando o image Fluxos
 ms.assetid: 29325834-8766-47f4-8b33-b5fcbcc494c1
 keywords:
 - fluxos, configurando fluxos de imagem
@@ -15,7 +15,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117848961"
 ---
-# <a name="configuring-image-streams"></a>Configurando o Fluxos
+# <a name="configuring-image-streams"></a>Configurando o image Fluxos
 
 Os fluxos de imagem contêm imagens ainda no formato JPEG. Embora os fluxos de imagem sejam como fluxos de vídeo, pois eles levam imagens descompactados como entradas, eles exigem uma configuração ligeiramente diferente. Para configurar um fluxo de imagem, você deve definir os valores para os membros das estruturas de configuração de vídeo, conforme mostrado na tabela a seguir.
 

@@ -1,9 +1,9 @@
 ---
-title: Função D3DX_FLOAT4_to_R8G8B8A8_UNORM_SRGB
-description: Compacta o XMFLOAT4 fornecido de volta em um \_ formato dxgi \_ R8G8B8A8 \_ UNORM \_ sRGB.
+title: D3DX_FLOAT4_to_R8G8B8A8_UNORM_SRGB função
+description: Empacota o XMFLOAT4 determinado de volta em um FORMATO DXGI \_ \_ R8G8B8A8 \_ UNORM \_ SRGB.
 ms.assetid: 66580428-6f06-4e0c-bf89-01f03c7304ad
 keywords:
-- Função D3DX_FLOAT4_to_R8G8B8A8_UNORM_SRGB HLSL
+- D3DX_FLOAT4_to_R8G8B8A8_UNORM_SRGB função HLSL
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118516274"
 ---
-# <a name="d3dx_float4_to_r8g8b8a8_unorm_srgb-function"></a>D3DX \_ FLOAT4 \_ na \_ \_ função R8G8B8A8 UNORM \_ sRGB
+# <a name="d3dx_float4_to_r8g8b8a8_unorm_srgb-function"></a>Função SRGB D3DX \_ FLOAT4 \_ a \_ R8G8B8A8 \_ UNORM \_
 
-Compacta o XMFLOAT4 fornecido de volta em um \_ formato dxgi \_ R8G8B8A8 \_ UNORM \_ sRGB.
+Empacota o XMFLOAT4 determinado de volta em um FORMATO DXGI \_ \_ R8G8B8A8 \_ UNORM \_ SRGB.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ UINT D3DX_FLOAT4_to_R8G8B8A8_UNORM_SRGB(
 *unpackedInput* 
 </dt> <dd>
 
-Os dados do sombreador a serem empacotados.
+Os dados do sombreador a ser empacotado.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Os dados do sombreador embalado.
+Os dados de sombreador empacotados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Os dados do sombreador embalado.
 
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert. inl</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX \_ DXGIFormatConvert.inl</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Os dados do sombreador embalado.
 [Funções](format-conversion-functions.md)
 </dt> <dt>
 
-[Descompactando e empacotando o \_ formato dxgi para a edição de imagem In-Place](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
+[Desempacotar e empacotar formato DXGI \_ para In-Place edição de imagem](dx-graphics-hlsl-unpacking-packing-dxgi-format.md)
 </dt> </dl>
 
  

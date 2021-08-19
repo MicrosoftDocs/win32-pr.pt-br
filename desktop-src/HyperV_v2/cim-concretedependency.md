@@ -1,7 +1,7 @@
 ---
-description: Representa uma associação genérica na qual um elemento gerenciado depende de outro. CIM \_ ConcreteDependency subclasses \_ de dependência CIM para fornecer uma versão de classe concreta da \_ dependência CIM.
+description: Representa uma associação genérica na qual um elemento gerenciado depende de outro. Cim \_ ConcreteDependency subclasses CIM \_ Dependency para fornecer uma versão concreta de classe da \_ Dependência CIM.
 ms.assetid: c0e1527d-d350-410d-9b5f-c9d4dedf7393
-title: Classe CIM_ConcreteDependency
+title: CIM_ConcreteDependency classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 253f57b1fd29c3844f0e87d488974ced7bec98bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2c0e21ff96e33ddcaf1f5b06fe74f0bf223583dbb84f830dcf027235831da35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813272"
 ---
-# <a name="cim_concretedependency-class"></a>\_Classe CIM ConcreteDependency
+# <a name="cim_concretedependency-class"></a>Classe CIM \_ ConcreteDependency
 
-Representa uma associação genérica na qual um elemento gerenciado depende de outro. **CIM \_ ConcreteDependency** subclasses de [**\_ dependência CIM**](cim-dependency.md) para fornecer uma versão de classe concreta **da \_ dependência CIM**.
+Representa uma associação genérica na qual um elemento gerenciado depende de outro. **CIM \_ ConcreteDependency** subclasses [**CIM \_ Dependency**](cim-dependency.md) para fornecer uma versão de classe concreta da **\_ Dependência CIM**.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,42 +39,42 @@ class CIM_ConcreteDependency : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ConcreteDependency** tem estes tipos de membros:
+A **classe CIM \_ ConcreteDependency** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ConcreteDependency** tem essas propriedades.
+A **classe CIM \_ ConcreteDependency** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ managedelement**
+Tipo de dados: **\_ ManagedElement do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
 O objeto independente na associação.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ managedelement**
+Tipo de dados: **\_ ManagedElement do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
 O objeto dependente na associação.
@@ -89,8 +89,8 @@ O objeto dependente na associação.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ O objeto dependente na associação.
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

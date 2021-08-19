@@ -1,7 +1,7 @@
 ---
-description: Estatísticas de recursos coletadas pelo \_ RESOURCEMANAGER D3DDEVINFO ao usar o mecanismo de consulta assíncrona.
+description: Estatísticas de recursos coletadas pelo ResourceManager D3DDEVINFO ao usar o mecanismo de consulta \_ assíncrona.
 ms.assetid: f4d9c6db-4002-439c-9a88-485763badc82
-title: Estrutura D3DRESOURCESTATS (D3D9Types. h)
+title: Estrutura D3DRESOURCESTATS (D3D9Types.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: f6f549011b9750f69187c0e0cbf34ec94764c9ef
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: dc992c5b8246ce302cda8924b8521c923575c8914c83b35c8c1e789e4bc1c826
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105790381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118527468"
 ---
 # <a name="d3dresourcestats-structure"></a>Estrutura D3DRESOURCESTATS
 
-Estatísticas de recursos coletadas [**pelo \_ ResourceManager D3DDEVINFO**](d3ddevinfo-resourcemanager.md) ao usar o mecanismo de consulta assíncrona.
+Estatísticas de recursos coletadas pelo [**\_ ResourceManager D3DDEVINFO**](d3ddevinfo-resourcemanager.md) ao usar o mecanismo de consulta assíncrona.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,11 +52,11 @@ typedef struct D3DRESOURCESTATS {
 **bThrashing**
 </dt> <dd>
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Indica se ultrapaginação está ocorrendo.
+Indica se a reação está ocorrendo.
 
 </dd> <dt>
 
@@ -67,7 +67,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número aproximado de bytes baixados pelo Gerenciador de recursos.
+Número aproximado de bytes baixados pelo gerenciador de recursos.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Número de objetos removidos.
+Número de objetos despejados.
 
 </dd> <dt>
 
@@ -100,7 +100,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Prioridade do último objeto removido.
+Prioridade do último objeto desalojado.
 
 </dd> <dt>
 
@@ -126,7 +126,7 @@ Número de objetos definidos para o dispositivo, que já estão na memória de v
 
 </dd> <dt>
 
-**WorkingSet**
+**Workingset**
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -176,7 +176,7 @@ Número total de bytes de objetos gerenciados.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3D9Types. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3D9Types.h</dt> </dl> |
 
 
 
@@ -184,7 +184,7 @@ Número total de bytes de objetos gerenciados.
 
 <dl> <dt>
 
-[Estruturas do Direct3D](dx9-graphics-reference-d3d-structures.md)
+[Estruturas Direct3D](dx9-graphics-reference-d3d-structures.md)
 </dt> <dt>
 
 [Notificação assíncrona (Direct3D 9)](asynchronous-notification.md)

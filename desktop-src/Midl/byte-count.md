@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d82d34a60ea736d10c8ec5ee8a001370c6b64c6
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: ffd42e27be4768fc0817aa76bb366429e236b3a82c45d081a05485b8520a23a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104293296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807819"
 ---
 # <a name="byte_count-attribute"></a>atributo de contagem de bytes \_
 
@@ -40,7 +40,7 @@ Especifica zero ou mais atributos de função de ACF.
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Especifica o nome da função definida no arquivo IDL. O nome da função é obrigatório.
@@ -68,7 +68,7 @@ A **\[ \_ contagem \] de bytes** do atributo ACF representa uma extensão da Mic
 > [!Note]  
 > Não há mais suporte para o atributo **\[ contagem \] de bytes** na sintaxe NDR64 devido à dificuldade de estimar o tamanho necessário para todos os parâmetros de [**\[ saída \]**](out-idl.md) .
 
- 
+ 
 
 A memória referenciada pelo parâmetro Pointer é contígua e não é alocada ou liberada pelos stubs do cliente. Esse recurso do atributo **\[ \_ contagem \] de bytes** permite que você crie uma área de buffer persistente na memória do cliente que pode ser reutilizada durante mais de uma chamada para o procedimento remoto.
 
@@ -113,9 +113,9 @@ proc1([byte_count(length)] pMyStruct);
 [**o tamanho \_ é**](size-is.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

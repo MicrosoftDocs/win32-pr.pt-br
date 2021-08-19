@@ -78,46 +78,46 @@ Se você não tiver experiência com o uso de uma caneta, a melhor introdução 
 Ao experimentar o uso de uma caneta, você descobrirá que:
 
 -   **Controles pequenos são difíceis de usar.** O tamanho dos controles afeta muito sua capacidade de interagir com eficiência. Controles com 10 x 10 pixels funcionam razoavelmente para uma caneta, mas controles maiores são ainda mais confortável de usar. Por exemplo, [controles de rotação](ctrl-spin-controls.md) (15x11 pixels) são muito pequenos para usar com uma caneta facilmente.
--   **A mão é um fator.** Às vezes, sua mão aborda coisas com as que você talvez queira ver ou interagir. Por exemplo, para usuários da mão direita, os menus de contexto são difíceis de usar se aparecerem à direita do ponto de clique, portanto, é melhor se eles aparecerem à esquerda. Windows permite que os usuários indiquem suas destros no Tablet PC Configurações item do painel de controle.
--   **A localidade da tarefa ajuda.** Embora você possa mover o ponteiro em uma tela de 14 polegadas com um movimento de um mouse de 3 polegadas, usar uma caneta exige que você mova a sua mão o total de 14 polegadas. Mover repetidamente entre os destinos que estão muito distantes pode ser entediante, portanto, é muito melhor manter as interações de tarefas dentro do intervalo de uma mão sempre que possível. Menus de contexto são convenientes porque não exigem movimento à mão.
--   **A entrada e a seleção de texto são difíceis.** A entrada de texto demorada é especialmente difícil de usar uma caneta, portanto, os valores de texto padrão aceitáveis e de preenchimento automático podem realmente simplificar as tarefas. A seleção de texto também pode ser muito difícil, portanto, as tarefas são mais fáceis quando não exigem posicionamento preciso do cursor.
--   **Pequenos destinos próximos à borda da exibição podem ser muito difíceis de tocar.** Alguns dos chanfros de tela estão em uma região e algumas tecnologias de tela touch são menos sensíveis às bordas, tornando os controles próximos à borda mais difíceis de usar. Por exemplo, os botões minimizar, maximizar/restaurar e fechar na barra de título podem ser mais difíceis de usar quando uma janela é maximizada.
+-   **A mão é um fator.** Às vezes, sua mão aborda coisas com as que você talvez queira ver ou interagir. Por exemplo, para usuários de direita, os menus de contexto são difíceis de usar se aparecerem à direita do ponto de clique, portanto, será melhor se eles aparecerem à esquerda. Windows permite que os usuários indiquem suas mãos no item do painel de Configurações tablet.
+-   **A localidade da tarefa ajuda.** Embora você possa mover o ponteiro em uma tela de 14 polegadas com um movimento do mouse de 3 polegadas, usar uma caneta exige que você mova a mão por 14 polegadas inteiras. Mover-se repetidamente entre destinos distantes pode ser entediante, portanto, é muito melhor manter as interações de tarefas dentro do intervalo de uma mão mesmada sempre que possível. Os menus de contexto são convenientes porque não exigem movimentação da mão.
+-   **A entrada e a seleção de texto são difíceis.** A entrada de texto longa é especialmente difícil de usar uma caneta, portanto, o preenchimento automático e os valores de texto padrão aceitáveis podem realmente simplificar as tarefas. A seleção de texto também pode ser bastante difícil, portanto, as tarefas são mais fáceis quando não exigem um posicionamento preciso do cursor.
+-   **Destinos pequenos próximos à borda da exibição podem ser muito difíceis de tocar.** Algumas telas de exibição são protrutivas e algumas tecnologias touchscreen são menos sensíveis às bordas, tornando os controles próximos à borda mais difíceis de usar. Por exemplo, os botões Minimizar, Maximizar/Restaurar e Fechar na barra de título podem ser mais difíceis de usar quando uma janela é maximizada.
 
 ### <a name="control-location"></a>Local do controle
 
-A localidade da tarefa reduz movimentos de tela de repetição entediantes. Para minimizar os movimentos da mão, localize controles próximos de onde eles serão mais provavelmente usados.
+A localidade da tarefa reduz a repetição entediante de movimentos entre telas. Para minimizar os movimentos de mão, localize controles próximos de onde eles provavelmente serão usados.
 
 **Incorreto:**
 
 ![captura de tela da paleta de cores separada das ferramentas ](images/inter-pen-image3.png)
 
-neste exemplo do Windows XP, a paleta de cores está muito longe de onde é provável que seja usada.
+Neste exemplo do Windows XP, a paleta de cores está muito longe de onde é provável que ela seja usada.
 
-Considere que o local atual do usuário é o mais próximo que um destino pode ser, tornando-o trivial de adquirir. Portanto, os menus de contexto aproveitam totalmente a [lei de Fitts](inter-mouse.md), assim como as mini barras de ferramentas usadas pelo Microsoft Office.
+Considere que o local atual do usuário é o mais próximo que um destino pode ser, tornando trivial adquirir. Assim, os menus de contexto aproveitam ao máximo a Lei do [Fitts,](inter-mouse.md)assim como as minibaras de ferramentas usadas pelo Microsoft Office.
 
-![captura de tela de ponteiros próximos de menus ](images/inter-pen-image4.png)
+![captura de tela de ponteiros próximos a menus ](images/inter-pen-image4.png)
 
 O local do ponteiro atual é sempre o mais fácil de adquirir.
 
-Pequenos destinos próximos à borda de exibição podem ser difíceis de direcionar, portanto, evite colocar pequenos controles próximos às bordas da janela. Para garantir que os controles sejam fáceis de direcionar quando uma janela for maximizada, torne-as pelo menos 23x23 pixels (13x13 DLUs) ou coloque-as fora da borda da janela.
+Destinos pequenos próximos à borda de exibição podem ser difíceis de serem destinados, portanto, evite colocar controles pequenos próximos às bordas da janela. Para garantir que os controles sejam fáceis de direcionar quando uma janela é maximizada, faça-os pelo menos 23x23 pixels (DLUs 13x13) ou coloque-os fora da borda da janela.
 
 ### <a name="pen-interactions"></a>Interações com caneta
 
 **Gestos do sistema**
 
-Os gestos do sistema são definidos e manipulados pelo Windows. como resultado, todos os Windows programas têm acesso a eles. Esses gestos têm mensagens de comando equivalentes do mouse, do teclado e do aplicativo:
+Os gestos do sistema são definidos e tratados Windows. Como resultado, todos Windows programas têm acesso a eles. Esses gestos têm mensagens equivalentes de mouse, teclado e comando de aplicativo:
 
 
 
 | Gesto do sistema                                                           | Mensagem equivalente sintetizada                                              |
 |------------------------------------------------------------|-----------------------------------------------|
-| Focalizar (quando houver suporte)<br/>                          | Mouse em foco<br/>                        |
-| Toque (para baixo e para cima)<br/>                               | Clique com o botão esquerdo do mouse<br/>                   |
-| Toque duplo (para baixo e para cima duas vezes)<br/>                  | Clique com o botão esquerdo do mouse<br/>            |
-| Pressionar e manter pressionado (inoperante, pausar, verticalmente)<br/>                | Clique com o botão direito do mouse<br/>                  |
-| Arrastar (para baixo, mover, para cima)<br/>                           | Mouse à esquerda-arrastar<br/>                    |
-| Pressione, mantenha pressionado e arraste (para baixo, pause, mova, para cima)<br/>   | Arrastar com o botão direito do mouse<br/>                   |
-| Selecionar (inativo, mover sobre objetos selecionáveis, para cima)<br/> | Seleção do mouse<br/>                       |
+| Passar o mouse (quando há suporte)<br/>                          | Passar o mouse sobre o mouse<br/>                        |
+| Toque (para baixo e para cima)<br/>                               | Clique com o mouse com o botão esquerdo do mouse<br/>                   |
+| Toque duas vezes (para baixo e para cima duas vezes)<br/>                  | Clique duas vezes com o botão esquerdo do mouse<br/>            |
+| Pressione e mantenha pressionado (para baixo, pausar, para cima)<br/>                | Clique com o botão direito do mouse<br/>                  |
+| Arrastar (para baixo, mover, para cima)<br/>                           | Arrastar para a esquerda do mouse<br/>                    |
+| Pressione, segure e arraste (para baixo, pausar, mover, para cima)<br/>   | Arrastar o mouse para a direita<br/>                   |
+| Selecione (para baixo, mover objetos selecionáveis, para cima)<br/> | Selecionar o mouse<br/>                       |
 
 
 
@@ -127,30 +127,30 @@ Os gestos do sistema são definidos e manipulados pelo Windows. como resultado, 
 
 **Movimentos**
 
-Os movimentos são gestos simples que são aproximadamente o equivalente a atalhos de teclado. Os movimentos de navegação incluem arrastar para cima, arrastar para baixo, mover para trás e avançar. Os movimentos de edição incluem copiar, colar, desfazer e excluir. Para usar movimentos, seu programa só precisa responder aos comandos de teclas relacionadas.
+Os gestos são gestos simples que são aproximadamente equivalentes aos atalhos de teclado. Os movimento de navegação incluem arrastar para cima, arrastar para baixo, voltar e avançar. A edição de movimento inclui copiar, colar, desfazer e excluir. Para usar os movimento, seu programa só precisa responder aos comandos de teclas relacionados.
 
-![diagrama que mostra gestos de movimento e suas atribuições padrão no Windows 7.](images/inter-pen-image5.png)
+![Diagrama que mostra gestos de movimento e suas atribuições padrão Windows 7.](images/inter-pen-image5.png)
 
-os oito gestos de movimento e suas atribuições padrão no Windows 7. Os movimentos de navegação foram alterados para corresponder ao movimento panorâmico (onde o objeto se move com o gesto) em vez de rolar (onde o objeto se move na direção oposta do gesto).
+Os oito gestos de movimento e suas atribuições padrão Windows 7. Os movimentos de navegação foram alterados para corresponder ao panorâmico (em que o objeto se move com o gesto) em vez de rolar (em que o objeto se move na direção oposta do gesto).
 
-![Figura de gestos de movimento, como o gesto de movimentação ](images/inter-pen-image6.png)
+![figura de gestos de movimento, como o gesto de movimentação ](images/inter-pen-image6.png)
 
-os oito gestos de movimento e suas atribuições padrão no Windows Vista.
+Os oito gestos de movimento e suas atribuições padrão no Windows Vista.
 
-Os movimentos de navegação têm um mapeamento natural, portanto, são fáceis de aprender e de se lembrar. Os movimentos de edição são diagonais que exigem mais precisão e seus mapeamentos não são tão naturais (movimento para a lixeira para exclusão, movimento na direção da seta voltar para desfazer) e, portanto, eles não são habilitados por padrão. Todas as ações de movimento podem ser personalizadas usando o item do painel de controle caneta e dispositivos de entrada.
+Os movimento de navegação têm mapeamento natural, portanto, são fáceis de aprender e lembrar. Os movimento de edição são diagonais que exigem mais precisão e seus mapeamentos não são tão naturais (movimento em direção ao Lixeira a ser excluído, movimento na direção da seta para voltar para desfazer), portanto, eles não são habilitados por padrão. Todas as ações de movimento podem ser personalizadas usando o item do painel de controle Caneta e Dispositivos de Entrada.
 
 
 
 | Flick                                     | Mensagem equivalente sintetizada                                                            |
 |--------------------------------------|-------------------------------------------------------------|
-| Mover para a esquerda<br/>                | comando encaminhar (comando voltar para Windows Vista)<br/> |
-| Mover para a direita<br/>               | comando voltar (comando encaminhar para Windows Vista)<br/> |
-| Mover para cima<br/>                  | Rolagem do teclado para baixo<br/>                             |
-| Mover para baixo<br/>                | Rolagem do teclado para cima<br/>                               |
-| Mover para cima-diagonal para a esquerda<br/>    | Exclusão de teclado<br/>                                  |
-| Mover para baixo-diagonal esquerda<br/>  | Desfazer teclado<br/>                                    |
-| Mover para cima-diagonal direita<br/>   | Cópia do teclado<br/>                                    |
-| Mover para baixo-diagonal direita<br/> | Colar teclado<br/>                                   |
+| Movimento à esquerda<br/>                | Comando Encaminhar (comando Voltar para Windows Vista)<br/> |
+| Movimento à direita<br/>               | Comando Voltar (comando Encaminhar para Windows Vista)<br/> |
+| Movimento para cima<br/>                  | Rolagem do teclado para baixo<br/>                             |
+| Movimento para baixo<br/>                | Rolagem do teclado para cima<br/>                               |
+| Diagonal para cima e para a esquerda<br/>    | Exclusão de teclado<br/>                                  |
+| Diagonal para baixo e para baixo<br/>  | Desfazer teclado<br/>                                    |
+| Fazer movimento diagonal para cima e para a direita<br/>   | Cópia do teclado<br/>                                    |
+| Diagonal da direita para baixo<br/> | Colar teclado<br/>                                   |
 
 
 
@@ -158,27 +158,27 @@ Os movimentos de navegação têm um mapeamento natural, portanto, são fáceis 
 
 **Gestos de aplicativo**
 
-Os aplicativos também podem definir e lidar com outros gestos. O reconhecedor de gestos da Microsoft pode reconhecer mais de [40 gestos](../tablet/application-gestures-and-semantic-behavior.md). Para usar gestos de aplicativo, seu programa deve definir os gestos que ele reconhece e, em seguida, manipular os eventos resultantes.
+Os aplicativos também podem definir e manipular outros gestos. O Microsoft Gesture Recognizer pode reconhecer mais [de 40 gestos.](../tablet/application-gestures-and-semantic-behavior.md) Para usar gestos de aplicativo, seu programa deve definir os gestos que reconhece e, em seguida, manipular os eventos resultantes.
 
 **Capacidade de resposta e consistência**
 
-**A capacidade de resposta é essencial para a criação de experiências de caneta que se sentem diretas e envolventes.** Para se sentir direto, os gestos devem entrar em vigor imediatamente e os pontos de contato de um objeto devem permanecer sob a caneta suavemente ao longo do gesto. Qualquer retardo, resposta instável, perda de contato ou resultados imprecisos destrói a percepção da manipulação direta e também da qualidade.
+**A capacidade de resposta é essencial para criar experiências de caneta que se sintam diretas e envolvente.** Para se sentir direto, os gestos devem entrar em vigor imediatamente e os pontos de contato de um objeto devem permanecer na caneta sem problemas durante o gesto. Qualquer retardo, resposta mesiva, perda de contato ou resultados imprecisos destrói a percepção da manipulação direta e também da qualidade.
 
-**A consistência é essencial para a criação de experiências de caneta que se sentem naturais e intuitivas.** Depois que os usuários aprendem um gesto padrão, eles esperam que o gesto tenha o mesmo efeito em todos os programas aplicáveis. Para evitar confusão e frustração, nunca atribua significados não padrão a gestos padrão. Em vez disso, use gestos personalizados para interações exclusivas para seu programa.
+**A consistência é essencial para criar experiências de caneta que se sintam naturais e intuitivas.** Depois que os usuários aprendem um gesto padrão, eles esperam que esse gesto tenha o mesmo efeito em todos os programas aplicáveis. Para evitar confusão e frustração, nunca atribua significados não padrão a gestos padrão. Em vez disso, use gestos personalizados para interações exclusivas ao seu programa.
 
-**Editando a tinta e o texto**
+**Editando tinta e texto**
 
-A edição de tinta e texto está entre as interações mais desafiadoras ao usar uma caneta. O uso de controles restritos, valores padrão apropriados e preenchimento automático elimina ou reduz a necessidade de inserir texto. Mas se o seu programa envolver a edição de texto ou tinta, **você poderá tornar os usuários mais produtivos ao aplicar zoom automaticamente na interface do usuário de entrada até 150 por padrão quando uma caneta for usada.**
+Editar tinta e texto está entre as interações mais desafiadoras ao usar uma caneta. Usar controles restritos, valores padrão apropriados e preenchimento automático elimina ou reduz a necessidade de inserir texto. Mas se seu programa envolver a edição de texto ou tinta, você poderá tornar os usuários mais produtivos ampliando automaticamente a interface do usuário de entrada até **150%** por padrão quando uma caneta é usada.
 
-Por exemplo, um programa de email poderia exibir a interface do usuário em tamanho normal, mas aplicar zoom à interface do usuário de entrada para 150% para compor mensagens.
+Por exemplo, um programa de email pode exibir a interface do usuário em tamanho normal, mas ampliar a interface do usuário de entrada para 150% para compor mensagens.
 
-![captura de tela da mensagem do Outlook em fonte grande ](images/inter-pen-image7.png)
+![captura de tela da mensagem do Outlook em uma fonte grande ](images/inter-pen-image7.png)
 
-Neste exemplo, a interface do usuário de entrada é ampliada para 150 por cento.
+Neste exemplo, a interface do usuário de entrada é ampliada para 150%.
 
 **Se você fizer apenas quatro coisas...**
 
-1.  1. faça com que seus programas de Windows tenham uma boa experiência de caneta! Os usuários devem ser capazes de executar as tarefas mais importantes do seu programa com eficiência usando uma caneta (pelo menos as tarefas que não envolvem muita digitação ou manipulação de pixel detalhada).
+1.  1. Faça com que Windows programas de programação tenham uma boa experiência de caneta! Os usuários devem ser capazes de executar as tarefas mais importantes do programa com eficiência usando uma caneta (pelo menos essas tarefas que não envolvem muita digitação ou manipulação de pixel detalhada).
 2.  2. Considere adicionar suporte para escrever, desenhar e adicionar comentários diretamente usando tinta nos cenários mais relevantes.
 3.  3. Para criar uma experiência direta e envolvente, os gestos entram em vigor imediatamente, mantêm os pontos de contato sob a caneta do usuário suavemente ao longo do gesto e têm o efeito do mapa de gestos diretamente para o movimento do usuário.
 4.  4. Para criar uma experiência natural e intuitiva, dê suporte a gestos padrão apropriados e atribua a eles seus significados padrão. Use gestos personalizados para interações exclusivas para seu programa.

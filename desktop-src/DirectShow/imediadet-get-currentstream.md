@@ -1,7 +1,7 @@
 ---
-description: O método \_ get CurrentStream recupera o número de fluxo usado atualmente pelo detector de mídia.
+description: O \_ método Get CurrentStream recupera o número de fluxo usado atualmente pelo detector de mídia.
 ms.assetid: 0f590498-e639-4b6b-be1d-f1e4a36282cb
-title: Método IMediaDet::get_CurrentStream (Qedit.h)
+title: 'Método IMediaDet:: get_CurrentStream (QEdit. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117819102"
 ---
-# <a name="imediadetget_currentstream-method"></a>Método IMediaDet::get \_ CurrentStream
+# <a name="imediadetget_currentstream-method"></a>Método IMediaDet:: get \_ CurrentStream
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -45,26 +45,26 @@ HRESULT get_CurrentStream(
 
 <dl> <dt>
 
-*pVal* \[ out, retval\]
+*PVal* \[ out, retval\]
 </dt> <dd>
 
-Recebe o número de fluxo atual.
+Recebe o número do fluxo atual.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
+> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 
 <dl> <dt>
 
-[**IMediaDet Interface**](imediadet.md)
+[**Interface IMediaDet**](imediadet.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

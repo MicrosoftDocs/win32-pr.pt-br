@@ -3,7 +3,7 @@ title: TBN_DRAGOVER de notificação (Commctrl.h)
 description: Verificar se uma mensagem MARKBUTTON DE TB \_ deve ser enviada para um botão que está sendo arrastado. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 2bb5c52e-0c90-4662-8ffd-045ecc7ed7e5
 keywords:
-- TBN_DRAGOVER código de notificação Windows Controles
+- TBN_DRAGOVER de notificação Windows Controles
 topic_type:
 - apiref
 api_name:

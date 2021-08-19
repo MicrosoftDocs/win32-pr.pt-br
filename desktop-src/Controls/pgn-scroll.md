@@ -1,9 +1,9 @@
 ---
-title: PGN_SCROLL código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle de pager que a janela contida está prestes a ser rolada. Essa notificação é enviada na forma de uma mensagem de \_ notificação do WM.
+title: PGN_SCROLL de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de pager de que a janela contida está prestes a ser rolada. Essa notificação é enviada na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 3d40e75e-c445-4885-b807-8cfcb92cb2d9
 keywords:
-- PGN_SCROLL código de notificação Windows controles
+- PGN_SCROLL de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117830140"
 ---
-# <a name="pgn_scroll-notification-code"></a>\_Código de notificação de rolagem PGN
+# <a name="pgn_scroll-notification-code"></a>Código de \_ notificação DE ROLAGEM PGN
 
-Notifica uma janela pai do controle de pager que a janela contida está prestes a ser rolada. Essa notificação é enviada na forma de uma mensagem [**de \_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de pager de que a janela contida está prestes a ser rolada. Essa notificação é enviada na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,7 +41,7 @@ PGN_SCROLL
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMPGSCROLL**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgscroll) que contém e recebe informações sobre o código de notificação. O membro **iDir** dessa estrutura indica a direção da rolagem. Os membros **iXpos** e **iYpos** contêm a posição horizontal e vertical da janela contida antes da rolagem. O membro **iScroll** contém o valor delta de rolagem padrão. Você pode modificar esse membro para um valor de rolagem diferente, se desejar.
+Ponteiro para uma [**estrutura NMPGSCROLL**](/windows/desktop/api/Commctrl/ns-commctrl-nmpgscroll) que contém e recebe informações sobre o código de notificação. O **membro iDir** dessa estrutura indica a direção da rolagem. Os **membros iXpos** **e iYpos** contêm a posição horizontal e vertical da janela contida antes da rolagem. O **membro iScroll** contém a quantidade delta de rolagem padrão. Você pode modificar esse membro para um valor de rolagem diferente, se desejado.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ O valor de retorno é ignorado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

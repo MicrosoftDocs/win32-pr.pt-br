@@ -1,7 +1,7 @@
 ---
-description: A enumeração EXPERTSTATUSENUMERATION contém valores de status. Ele é usado pelo membro status da estrutura EXPERTSTATUS e pelo parâmetro Status em ExpertIndicateStatus.
+description: A enumeração EXPERTSTATUSENUMERATION contém valores de status. Ele é usado pelo membro de status da estrutura EXPERTSTATUS e o parâmetro status em ExpertIndicateStatus.
 ms.assetid: 217dce5a-3698-45a9-bb13-8379bcbdd762
-title: Enumeração EXPERTSTATUSENUMERATION (Netmon.h)
+title: Enumeração EXPERTSTATUSENUMERATION (Netmon. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "117795789"
 ---
 # <a name="expertstatusenumeration-enumeration"></a>Enumeração EXPERTSTATUSENUMERATION
 
-A **enumeração EXPERTSTATUSENUMERATION** contém valores de status. Ele é usado pelo membro **status** da estrutura [EXPERTSTATUS](expertstatus.md) e pelo parâmetro *Status* em [ExpertIndicateStatus](expertindicatestatus.md).
+A enumeração **EXPERTSTATUSENUMERATION** contém valores de status. Ele é usado pelo membro de **status** da estrutura [EXPERTSTATUS](expertstatus.md) e o parâmetro *status* em [ExpertIndicateStatus](expertindicatestatus.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -44,45 +44,45 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="EXPERTSTATUS_INACTIVE"></span><span id="expertstatus_inactive"></span>**EXPERTSTATUS \_ INACTIVE**
+<span id="EXPERTSTATUS_INACTIVE"></span><span id="expertstatus_inactive"></span>**EXPERTSTATUS \_ INativo**
 </dt> <dd>
 
 O especialista nunca começou.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_STARTING"></span><span id="expertstatus_starting"></span>**EXPERTSTATUS \_ STARTING**
+<span id="EXPERTSTATUS_STARTING"></span><span id="expertstatus_starting"></span>**EXPERTSTATUS \_ iniciando**
 </dt> <dd>
 
-O especialista está começando.
+O especialista está sendo iniciado.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_RUNNING"></span><span id="expertstatus_running"></span>**EXPERTSTATUS \_ EM EXECUÇÃO**
+<span id="EXPERTSTATUS_RUNNING"></span><span id="expertstatus_running"></span>**EXPERTSTATUS \_ em execução**
 </dt> <dd>
 
 O especialista está em execução normalmente.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_PROBLEM"></span><span id="expertstatus_problem"></span>**PROBLEMA DE \_ EXPERTSTATUS**
+<span id="EXPERTSTATUS_PROBLEM"></span><span id="expertstatus_problem"></span>**problema de EXPERTSTATUS \_**
 </dt> <dd>
 
-Um problema especificado em *SubStatus* interrompeu o especialista.
+Um problema especificado no *substatus* interrompeu o especialista.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_ABORTED"></span><span id="expertstatus_aborted"></span>**EXPERTSTATUS \_ ABORTED**
+<span id="EXPERTSTATUS_ABORTED"></span><span id="expertstatus_aborted"></span>**EXPERTSTATUS \_ anulado**
 </dt> <dd>
 
-Monitor de Rede interrompeu o especialista.
+Monitor de Rede parou o especialista.
 
 </dd> <dt>
 
-<span id="EXPERTSTATUS_DONE"></span><span id="expertstatus_done"></span>**EXPERTSTATUS \_ DONE**
+<span id="EXPERTSTATUS_DONE"></span><span id="expertstatus_done"></span>**EXPERTSTATUS \_ concluído**
 </dt> <dd>
 
-O especialista concluiu com êxito.
+O especialista foi concluído com êxito.
 
 </dd> </dl>
 
@@ -94,7 +94,7 @@ O especialista concluiu com êxito.
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método IDWriteLocalFontFileLoader GetFilePathLengthFromKey
+title: Método GetFilePathLengthFromKey de IDWriteLocalFontFileLoader
 description: Obtém o comprimento do caminho de arquivo absoluto da chave de referência do arquivo de fonte.
 ms.assetid: bdd84d75-5a7a-448a-a52c-0f5997ab07b9
 keywords:
 - Gravação direta do método GetFilePathLengthFromKey
 - Método GetFilePathLengthFromKey Direct Write, interface IDWriteLocalFontFileLoader
-- IDWriteLocalFontFileLoader interface de gravação direta, método GetFilePathLengthFromKey
+- IDWriteLocalFontFileLoader interface Direct Write , GetFilePathLengthFromKey method
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117816347"
 ---
-# <a name="idwritelocalfontfileloadergetfilepathlengthfromkey-method"></a>Método IDWriteLocalFontFileLoader:: GetFilePathLengthFromKey
+# <a name="idwritelocalfontfileloadergetfilepathlengthfromkey-method"></a>Método IDWriteLocalFontFileLoader::GetFilePathLengthFromKey
 
 Obtém o comprimento do caminho de arquivo absoluto da chave de referência do arquivo de fonte.
 
@@ -44,12 +44,12 @@ HRESULT GetFilePathLengthFromKey(
 
 <dl> <dt>
 
-*fontFileReferenceKey* \[ no\]
+*fontFileReferenceKey* \[ Em\]
 </dt> <dd>
 
-Tipo: **const void \***
+Tipo: **const \* void**
 
-Chave de referência do arquivo de fonte que identifica exclusivamente o arquivo de fonte local dentro do escopo do carregador de fonte que está sendo usado.
+Chave de referência de arquivo de fonte que identifica exclusivamente o arquivo de fonte local dentro do escopo do carregador de fonte que está sendo usado.
 
 </dd> <dt>
 
@@ -62,12 +62,12 @@ Tamanho da chave de referência do arquivo de fonte em bytes.
 
 </dd> <dt>
 
-*filePathLength* \[ fora\]
+*filePathLength* \[ out\]
 </dt> <dd>
 
 Tipo: **UINT32 \***
 
-Comprimento da cadeia de caracteres do caminho do arquivo, sem incluir o caractere **nulo** finalizado.
+Comprimento da cadeia de caracteres de caminho do arquivo, não incluindo o caractere **NULL** encerrado.
 
 </dd> </dl>
 
@@ -75,7 +75,7 @@ Comprimento da cadeia de caracteres do caminho do arquivo, sem incluir o caracte
 
 Tipo: **HRESULT**
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,7 +83,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| Biblioteca<br/> | <dl> <dt>Dwrite. lib</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Dwrite.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>Dwrite.dll</dt> </dl> |
 
 

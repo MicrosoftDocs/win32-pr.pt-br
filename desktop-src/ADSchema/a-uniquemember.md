@@ -1,10 +1,10 @@
 ---
-title: atributo uniqueMember
-description: O nome distinto para o membro de um grupo. Usado por groupOfUniqueNames.
+title: Atributo uniqueMember
+description: O nome diferenciado para o membro de um grupo. Usado por groupOfUniqueNames.
 ms.assetid: a299d2c9-bf45-435c-9868-b1ffdbaa96d2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo uniqueMember
+- UniqueMember attribute AD Schema
 topic_type:
 - apiref
 api_name:
@@ -20,22 +20,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117836479"
 ---
-# <a name="uniquemember-attribute"></a>atributo uniqueMember
+# <a name="uniquemember-attribute"></a>Atributo uniqueMember
 
-O nome distinto para o membro de um grupo. Usado por groupOfUniqueNames.
+O nome diferenciado para o membro de um grupo. Usado por groupOfUniqueNames.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
 | CN                | uniqueMember                            |
-| LDAP-Display-Name | uniqueMember                            |
+| Ldap-Display-Name | uniqueMember                            |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 2.5.4.50                                |
-| System-ID-GUID    | 8f888726-f80a-44d7-b1ee-cb9df21392c8    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 8f88726-f80a-44d7-b1ee-cb9df21392c8    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -56,10 +56,10 @@ O nome distinto para o membro de um grupo. Usado por groupOfUniqueNames.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | Falso                                                         |
+| Tem valor único       | Falso                                                         |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -77,10 +77,10 @@ O nome distinto para o membro de um grupo. Usado por groupOfUniqueNames.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | Falso                                                         |
+| Tem valor único       | Falso                                                         |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -98,10 +98,10 @@ O nome distinto para o membro de um grupo. Usado por groupOfUniqueNames.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| É de valor único       | Falso                                                         |
+| Tem valor único       | Falso                                                         |
 | É indexado             | Falso                                                         |
-| No catálogo global      | Falso                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
+| No Catálogo Global      | Falso                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -119,10 +119,10 @@ O nome distinto para o membro de um grupo. Usado por groupOfUniqueNames.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| Tem valor único       | Falso                                                         |
+| É de valor único       | Falso                                                         |
 | É indexado             | Falso                                                         |
-| No Catálogo Global      | Falso                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
+| No catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
@@ -140,10 +140,10 @@ O nome distinto para o membro de um grupo. Usado por groupOfUniqueNames.
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| Tem valor único       | Falso                                                         |
+| É de valor único       | Falso                                                         |
 | É indexado             | Falso                                                         |
-| No Catálogo Global      | Falso                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
+| No catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |

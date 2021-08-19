@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMLicenseManagement RestoreLicenses (wmdrmsdk. h)
-description: O método RestoreLicenses restaura licenças de um backup de licença que foi criado chamando o método BackupLicenses.
+title: Método IWMDRMLicenseManagement RestoreLicenses (Wmdrmsdk.h)
+description: O método RestoreLicenses restaura licenças de um backup de licença criado chamando o método BackupLicenses.
 ms.assetid: 83e4b748-0f69-4a9e-b531-047c9a2be1fe
 keywords:
-- Formato de mídia do Windows do método RestoreLicenses
-- Método RestoreLicenses Windows Media Format, interface IWMDRMLicenseManagement
-- Formato de mídia do Windows de interface IWMDRMLicenseManagement, método RestoreLicenses
+- Formato de mídia do windows do método RestoreLicenses
+- Formato de mídia do windows do método RestoreLicenses, interface IWMDRMLicenseManagement
+- Formato de mídia da interface IWMDRMLicenseManagement , método RestoreLicenses
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117846934"
 ---
-# <a name="iwmdrmlicensemanagementrestorelicenses-method"></a>Método IWMDRMLicenseManagement:: RestoreLicenses
+# <a name="iwmdrmlicensemanagementrestorelicenses-method"></a>Método IWMDRMLicenseManagement::RestoreLicenses
 
-O método **RestoreLicenses** restaura licenças de um backup de licença que foi criado chamando o método [**BackupLicenses**](iwmdrmlicensemanagement-backuplicenses.md) .
+O **método RestoreLicenses** restaura licenças de um backup de licença criado chamando o [**método BackupLicenses.**](iwmdrmlicensemanagement-backuplicenses.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,30 +45,30 @@ HRESULT RestoreLicenses(
 
 <dl> <dt>
 
-*bstrBackupDirectory* \[ no\]
+*bstrBackupDirectory* \[ Em\]
 </dt> <dd>
 
 Caminho UNC do local do qual as licenças serão restauradas.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
-Sinalizadores que especificam as opções de restauração a serem usadas. O único sinalizador com suporte no momento é o WMDRM \_ Restore \_ individual, que configura o método para executar individualização como parte da restauração, se necessário.
+Sinalizadores que especificam as opções de restauração a usar. O único sinalizador atualmente com suporte é WMDRM RESTORE INDIVIDUALIZE, que configura o método para executar a individualização como parte da \_ \_ restauração, se necessário.
 
 </dd> <dt>
 
-*ppunkCancelationCookie* \[ fora\]
+*ppunkCancelationCookie* \[ out\]
 </dt> <dd>
 
-Ponteiro que recebe um ponteiro para a interface **IUnknown** de um objeto que identifica essa chamada assíncrona. Esse ponteiro de interface pode ser usado para cancelar a chamada assíncrona chamando o método [**IWMDRMEventGenerator:: CancelAsyncOperation**](iwmdrmeventgenerator-cancelasyncoperation.md) .
+Ponteiro que recebe um ponteiro para a interface **IUnknown** de um objeto que identifica essa chamada assíncrona. Esse ponteiro de interface pode ser usado para cancelar a chamada assíncrona chamando o método [**IWMDRMEventGenerator::CancelAsyncOperation.**](iwmdrmeventgenerator-cancelasyncoperation.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
@@ -82,9 +82,9 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é executado de forma assíncrona. Ele retorna imediatamente depois de ser chamado e, em seguida, gera uma série de eventos **MEWMDRMLicenseRestoreProgress** seguidos por um evento **MEWMDRMLicenseRestoreCompleted** quando o processamento é concluído. O valor de cada um dos eventos **MEWMDRMLicenseRestoreProgress** obtidos chamando **IMFMediaEvent:: GetValue** é um ponteiro **IUnknown** . Você pode chamar o método **QueryInterface** da interface **IUnknown** recuperada para obter uma instância da interface [**IWMDRMLicenseBackupRestoreStatus**](iwmdrmlicensebackuprestorestatus.md) .
+Esse método é executado de forma assíncrona. Ele retorna imediatamente após ser chamado e gera uma série de eventos **MEWMDRMLicenseRestoreProgress** seguidos por um evento **MEWMDRMLicenseRestoreCompleted** quando o processamento é concluído. O valor de cada um dos **eventos MEWMDRMLicenseRestoreProgress obtidos** chamando **IMFMediaEvent::GetValue** é um ponteiro **IUnknown.** Você pode chamar o **método QueryInterface** da interface **IUnknown** recuperada para obter uma instância da interface [**IWMDRMLicenseBackupRestoreStatus.**](iwmdrmlicensebackuprestorestatus.md)
 
-para obter mais informações sobre como usar os métodos assíncronos das APIs estendidas do cliente DRM de mídia Windows, consulte [usando o modelo de evento Media Foundation](using-the-media-foundation-model.md).
+Para obter mais informações sobre como usar os métodos assíncronos das APIs estendidas do cliente drm de Windows mídia, consulte Usando o modelo de evento [Media Foundation .](using-the-media-foundation-model.md)
 
 O backup pode ser do computador local ou de um computador diferente.
 
@@ -94,8 +94,8 @@ O backup pode ser do computador local ou de um computador diferente.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -103,7 +103,7 @@ O backup pode ser do computador local ou de um computador diferente.
 
 <dl> <dt>
 
-[**Interface IWMDRMLicenseManagement**](iwmdrmlicensemanagement.md)
+[**IWMDRMLicenseManagement Interface**](iwmdrmlicensemanagement.md)
 </dt> </dl>
 
  

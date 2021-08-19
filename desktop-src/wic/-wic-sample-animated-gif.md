@@ -1,5 +1,5 @@
 ---
-description: Este exemplo demonstra a decodificação de vários quadros em um arquivo GIF, a leitura de metadados apropriados para cada quadro, a composição de quadros e a renderização da animação com Direct2D.
+description: Este exemplo demonstra a decodificação de vários quadros em um arquivo GIF, a leitura dos metadados apropriados para cada quadro, a composição de quadros e a renderização da animação com Direct2D.
 ms.assetid: d71c66b5-d37c-4c8a-bfd7-b97c69c3b8e9
 title: Exemplo de GIF animado do WIC
 ms.topic: article
@@ -12,30 +12,30 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118709594"
 ---
-# <a name="wic-animated-gif-sample"></a>Exemplo de GIF animado por WIC
+# <a name="wic-animated-gif-sample"></a>Exemplo de GIF animado do WIC
 
-Este exemplo demonstra a decodificação de vários quadros em um arquivo GIF, a leitura de metadados apropriados para cada quadro, a composição de quadros e a renderização da animação com Direct2D.
+Este exemplo demonstra a decodificação de vários quadros em um arquivo GIF, a leitura dos metadados apropriados para cada quadro, a composição de quadros e a renderização da animação com Direct2D.
 
 ## <a name="requirements"></a>Requisitos
 
-Este exemplo tem os seguintes requisitos.
+Este exemplo tem os requisitos a seguir.
 
 | Requisito | Valor |
 |-|-|
 | Cliente mínimo com suporte | Windows 7 |
-| SDK do Windows mínimo | [SDK (Software Development Kit) Windows](https://msdn.microsoft.com/windowsvista/bb980924.aspx) para Windows 7 |
+| SDK Windows mínimo | [Windows SDK (Software Development Kit)](https://msdn.microsoft.com/windowsvista/bb980924.aspx) para Windows 7 |
 
 ## <a name="downloading-the-sample"></a>Baixar o exemplo
 
-Este exemplo está disponível em [GIF animado por WIC](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic/wicanimatedgif).
+Este exemplo está disponível em [GIF animado do WIC.](https://github.com/microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic/wicanimatedgif)
 
 ## <a name="building-the-sample"></a>Compilando o exemplo
 
-### <a name="using-visual-studio-preferred-method"></a>usando Visual Studio (método preferencial)
+### <a name="using-visual-studio-preferred-method"></a>Usando Visual Studio (método preferencial)
 
 1. Abra o Windows Explorer e navegue para o diretório.
-2. Clique duas vezes no ícone do arquivo. sln (solução) para abrir o arquivo em Visual Studio.
-3. No menu **Compilar**, selecione **Compilar Solução**. O aplicativo será criado no \\ diretório de depuração ou de \\ lançamento padrão.
+2. Clique duas vezes no ícone do arquivo .sln (solução) para abrir o arquivo Visual Studio.
+3. No menu **Compilar**, selecione **Compilar Solução**. O aplicativo será criado no diretório \\ Padrão de Depuração \\ ou Versão.
 
 ### <a name="using-the-command-prompt"></a>Usando o prompt de comando
 
@@ -46,11 +46,11 @@ Para criar o exemplo usando um prompt de comando.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
-Depois que o aplicativo for iniciado, carregue um arquivo de imagem usando o comando **abrir** do menu **arquivo** . Há suporte para o redimensionamento de janela.
+Depois que o aplicativo for lançado, carregue um arquivo de imagem usando o **comando Abrir** **do** menu Arquivo. Há suporte para o resizing de janela.
 
 ## <a name="see-also"></a>Confira também
 
-[Codec do Microsoft Windows Imaging](-wic-lh.md)
+[Codec Windows de imagens da Microsoft](-wic-lh.md)
 
 [Guia de programação](-wic-programming-guide.md)
 
@@ -58,4 +58,4 @@ Depois que o aplicativo for iniciado, carregue um arquivo de imagem usando o com
 
 [Direct2D](../direct2d/direct2d-portal.md)
 
-[Amostras e exemplos de código](-wic-samples.md)
+[Exemplos e exemplos de código](-wic-samples.md)

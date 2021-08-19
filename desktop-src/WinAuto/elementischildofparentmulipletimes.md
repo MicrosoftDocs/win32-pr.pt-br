@@ -15,7 +15,7 @@ ms.locfileid: "118829545"
 
 ## <a name="text"></a>Texto
 
-AccParent do elemento é ( {0} ), mas o elemento original é um {1} período filho
+O accParent do elemento é ( {0} ), mas o elemento original é um tempo {1} filho
 
 ## <a name="type"></a>Tipo
 
@@ -23,9 +23,9 @@ Erro
 
 ## <a name="description"></a>Descrição
 
-Quando [**Get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent) é chamado no elemento de destino, ele relata ser filho do mesmo pai várias vezes.
+Quando [**get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent) é chamado no elemento de destino, ele relata ser um filho do mesmo pai várias vezes.
 
-Esse problema pode causar problemas de navegação para ferramentas automatizadas porque a passagem de elementos pode ser irregular e imprevisível.
+Esse problema pode causar problemas de navegação para ferramentas automatizadas porque a travessia de elementos pode ser imprevisível e imprevisível.
 
 ## <a name="possible-causes"></a>Possíveis causas
 
@@ -35,7 +35,7 @@ Uma implementação de MSAA incorreta ou inválida.
 
 <dl> <dt>
 
-[**IAccessible:: obter \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)
+[**IAccessible::get \_ accParent**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accparent)
 </dt> </dl>
 
  
