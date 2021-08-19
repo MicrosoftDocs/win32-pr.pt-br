@@ -1,23 +1,23 @@
 ---
 description: Sinalizadores usados pelo WICJpegScanHeader e WICJpegFrameHeader.
 ms.assetid: 6C0139F3-DA3E-4D7C-80D5-BC8C2D76C6A9
-title: Constantes IWICJpegFrameDecode (wincodec. h)
+title: Constantes IWICJpegFrameDecode (Wincodec.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e2473e055434b2e3d469bd76ec34413a1af8a2ba
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 318ea1f8a348d0bb2096e969ce1bb2a0de9ee3f4188ccb86f08e0491426e98ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117667066"
 ---
 # <a name="iwicjpegframedecode-constants"></a>Constantes IWICJpegFrameDecode
 
-Sinalizadores usados pelo [**WICJpegScanHeader**](/windows/desktop/api/wincodec/ns-wincodec-wicjpegscanheader) e [**WICJpegFrameHeader**](/windows/desktop/api/wincodec/ns-wincodec-wicjpegframeheader).
+Sinalizadores usados pelo [**WICJpegScanHeader**](/windows/desktop/api/wincodec/ns-wincodec-wicjpegscanheader) e [**WICJpegFrameHeader.**](/windows/desktop/api/wincodec/ns-wincodec-wicjpegframeheader)
 
 <dl> <dt>
 
-<span id="WIC_JPEG_MAX_COMPONENT_COUNT"></span><span id="wic_jpeg_max_component_count"></span>**\_ \_ contagem máxima de \_ componentes do WIC JPEG \_**
+<span id="WIC_JPEG_MAX_COMPONENT_COUNT"></span><span id="wic_jpeg_max_component_count"></span>**CONTAGEM MÁXIMA DE \_ \_ \_ COMPONENTES DO WIC JPEG \_**
 </dt> <dd> <dl> <dt>
 
 4
@@ -25,12 +25,12 @@ Sinalizadores usados pelo [**WICJpegScanHeader**](/windows/desktop/api/wincodec/
 
 
 
-O número máximo de componentes com suporte pelo WIC.
+O número máximo de componentes com suporte do WIC.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WIC_JPEG_MAX_TABLE_INDEX"></span><span id="wic_jpeg_max_table_index"></span>**\_índice de \_ \_ tabela máx \_ . do WIC JPEG**
+<span id="WIC_JPEG_MAX_TABLE_INDEX"></span><span id="wic_jpeg_max_table_index"></span>**WIC \_ JPEG \_ MAX \_ TABLE \_ INDEX**
 </dt> <dd> <dl> <dt>
 
 3
@@ -43,7 +43,7 @@ O número máximo de tabelas com suporte pelo WIC.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WIC_JPEG_SAMPLE_FACTORS_ONE"></span><span id="wic_jpeg_sample_factors_one"></span>**fatores de exemplo do WIC \_ JPEG \_ \_ \_ um**
+<span id="WIC_JPEG_SAMPLE_FACTORS_ONE"></span><span id="wic_jpeg_sample_factors_one"></span>**FATORES DE EXEMPLO JPEG DO WIC \_ \_ \_ \_ ONE**
 </dt> <dd> <dl> <dt>
 
 0x11
@@ -56,7 +56,7 @@ Fator de exemplo 1.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WIC_JPEG_SAMPLE_FACTORS_THREE_420"></span><span id="wic_jpeg_sample_factors_three_420"></span>**Fatores de exemplo do WIC \_ JPEG \_ \_ \_ três \_ 420**
+<span id="WIC_JPEG_SAMPLE_FACTORS_THREE_420"></span><span id="wic_jpeg_sample_factors_three_420"></span>**WIC \_ JPEG \_ SAMPLE \_ FACTORS THREE \_ \_ 420**
 </dt> <dd> <dl> <dt>
 
 0x111122
@@ -69,7 +69,7 @@ Fator de exemplo 4:2:0.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WIC_JPEG_SAMPLE_FACTORS_THREE_422"></span><span id="wic_jpeg_sample_factors_three_422"></span>**Fatores de exemplo do WIC \_ JPEG \_ \_ \_ três \_ 422**
+<span id="WIC_JPEG_SAMPLE_FACTORS_THREE_422"></span><span id="wic_jpeg_sample_factors_three_422"></span>**WIC \_ JPEG \_ SAMPLE \_ FACTORS THREE \_ \_ 422**
 </dt> <dd> <dl> <dt>
 
 0x111121
@@ -82,7 +82,7 @@ Fator de exemplo 4:2:2.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WIC_JPEG_SAMPLE_FACTORS_THREE_440"></span><span id="wic_jpeg_sample_factors_three_440"></span>**Fatores de exemplo do WIC \_ JPEG \_ \_ \_ três \_ 440**
+<span id="WIC_JPEG_SAMPLE_FACTORS_THREE_440"></span><span id="wic_jpeg_sample_factors_three_440"></span>**WIC \_ JPEG \_ SAMPLE \_ FACTORS THREE \_ \_ 440**
 </dt> <dd> <dl> <dt>
 
 0x111112
@@ -95,7 +95,7 @@ Fator de exemplo 4:4:0.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WIC_JPEG_SAMPLE_FACTORS_THREE_444"></span><span id="wic_jpeg_sample_factors_three_444"></span>**Fatores de exemplo do WIC \_ JPEG \_ \_ \_ três \_ 444**
+<span id="WIC_JPEG_SAMPLE_FACTORS_THREE_444"></span><span id="wic_jpeg_sample_factors_three_444"></span>**WIC \_ JPEG \_ SAMPLE \_ FACTORS THREE \_ \_ 444**
 </dt> <dd> <dl> <dt>
 
 0x111111
@@ -108,7 +108,7 @@ Fator de exemplo 4:4:4.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WIC_JPEG_QUANTIZATION_BASELINE_ONE"></span><span id="wic_jpeg_quantization_baseline_one"></span>**\_linha de \_ base de quantificação JPEG do WIC \_ \_ um**
+<span id="WIC_JPEG_QUANTIZATION_BASELINE_ONE"></span><span id="wic_jpeg_quantization_baseline_one"></span>**LINHA DE BASE DE QUANTIZAÇÃO JPEG DO WIC \_ \_ \_ \_ UM**
 </dt> <dd> <dl> <dt>
 
 0
@@ -116,12 +116,12 @@ Fator de exemplo 4:4:4.
 
 
 
-Os índices de quantificação usam a linha de base 1.
+Índices de quantização usam a linha de base 1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WIC_JPEG_QUANTIZATION_BASELINE_THREE"></span><span id="wic_jpeg_quantization_baseline_three"></span>**\_linha de \_ base de quantificação JPEG do WIC \_ \_ três**
+<span id="WIC_JPEG_QUANTIZATION_BASELINE_THREE"></span><span id="wic_jpeg_quantization_baseline_three"></span>**LINHA DE BASE DE QUANTIZAÇÃO JPEG DO WIC \_ \_ \_ \_ TRÊS**
 </dt> <dd> <dl> <dt>
 
 0x10100
@@ -129,12 +129,12 @@ Os índices de quantificação usam a linha de base 1.
 
 
 
-Os índices de quantificação usam a linha de base 3.
+Índices de quantização usam a linha de base 3.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WIC_JPEG_HUFFMAN_BASELINE_ONE"></span><span id="wic_jpeg_huffman_baseline_one"></span>**linha de base do WIC \_ JPEG \_ HUFFMAN \_ \_ One**
+<span id="WIC_JPEG_HUFFMAN_BASELINE_ONE"></span><span id="wic_jpeg_huffman_baseline_one"></span>**LINHA DE BASE 1 DO WIC \_ JPEG \_ JPEG \_ \_**
 </dt> <dd> <dl> <dt>
 
 0
@@ -142,12 +142,12 @@ Os índices de quantificação usam a linha de base 3.
 
 
 
-Os índices Huffman usam a linha de base 1.
+Os índices Demão usam a linha de base 1.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WIC_JPEG_HUFFMAN_BASELINE_THREE"></span><span id="wic_jpeg_huffman_baseline_three"></span>**\_linha de base de HUFFMAN JPEG do WIC \_ \_ \_ três**
+<span id="WIC_JPEG_HUFFMAN_BASELINE_THREE"></span><span id="wic_jpeg_huffman_baseline_three"></span>**LINHA DE BASE DO WIC \_ JPEG \_ JPEG JPEG \_ \_ TRÊS**
 </dt> <dd> <dl> <dt>
 
 0x111100
@@ -155,7 +155,7 @@ Os índices Huffman usam a linha de base 1.
 
 
 
-Os índices Huffman usam a linha de base 3.
+Os índices Demão usam a linha de base 3.
 
 
 </dt> </dl> </dd> </dl>
@@ -166,7 +166,7 @@ Os índices Huffman usam a linha de base 3.
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wincodec. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wincodec.h</dt> </dl> |
 
 
 

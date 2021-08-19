@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 39fd7b4d9d9bf7a595415e55de778a419d91051c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 83a784cadf470fa312a82e473f3934dbda1a2b6dce20d2ae34c7074c309398cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104084490"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117808230"
 ---
 # <a name="async_uuid-attribute"></a>\_atributo de UUID assíncrono
 
@@ -83,7 +83,7 @@ Especifica as instruções IDL que formam a definição da interface.
 
 ## <a name="remarks"></a>Comentários
 
-O uso desse atributo requer o Windows 2000 ou versões posteriores do Windows.
+o uso deste atributo requer Windows 2000 ou versões posteriores do Windows.
 
 Quando você aplica o atributo **\[ \_ UUID \] do Async** a uma interface com (ou seja, uma interface que tem o atributo [**\[ Object \]**](object.md) ), o compilador MIDL gera uma definição assíncrona da interface, além da versão síncrona tradicional. A interface assíncrona terá os mesmos nomes que a interface síncrona, mas com um prefixo "Async". O identificador de interface (IID) será o UUID especificado como um parâmetro para o atributo **\[ Async \_ UUID \]** .
 
@@ -139,6 +139,6 @@ interface IMyInterface : IUnknown
 [**Versão**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

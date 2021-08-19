@@ -21,7 +21,7 @@ ms.locfileid: "118431963"
 ---
 # <a name="when-using-peak-constrained-vbr-the-average-bit-rate-retrieved-from-the-dmo-is-larger-than-the-peak-bit-rate-how-is-that-possible"></a>Ao usar a VBR com restrição de pico, a taxa média de bits recuperada do DMO é maior que a taxa de bits de pico. Como isso é possível?
 
-Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. statusTextColor
+title: PLAYLIST.statusTextColor
 description: O atributo statusTextColor especifica ou recupera um valor que indica a cor do texto de status.
 ms.assetid: b88d52d6-db0b-4c57-8085-c997bf3648a6
 keywords:
-- Windows Media Player de PLAYLIST. statusTextColor
+- PLAYLIST.statusTextColor Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118335670"
 ---
-# <a name="playliststatustextcolor"></a>PLAYLIST. statusTextColor
+# <a name="playliststatustextcolor"></a>PLAYLIST.statusTextColor
 
-O atributo **statusTextColor** especifica ou recupera um valor que indica a cor do texto de status.
+O **atributo statusTextColor** especifica ou recupera um valor que indica a cor do texto de status.
 
 ``` syntax
         elementID.statusTextColor
@@ -29,7 +29,7 @@ O atributo **statusTextColor** especifica ou recupera um valor que indica a cor 
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que representa uma cor. O valor padrão é "None".
+Esse atributo é uma cadeia de caracteres de **leitura/gravação** que representa uma cor. O valor padrão é "none".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Esse atributo é uma **cadeia de caracteres** de leitura/gravação que represen
 
 <dl> <dt>
 
-[**Referência de cor**](color-reference.md)
+[**Referência de cores**](color-reference.md)
 </dt> <dt>
 
 [**Elemento PLAYLIST**](playlist-element.md)

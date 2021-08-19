@@ -1,7 +1,7 @@
 ---
-description: Classe TcpIp_Fail-essa classe é a classe de tipo de evento para eventos de falha de TCP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: TcpIp_Fail classe - essa classe é a classe de tipo de evento para eventos de falha TCP/IP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 1fe20b8c-b8f1-4db0-af78-1ebfc40b2bbd
-title: Classe TcpIp_Fail
+title: TcpIp_Fail classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117814526"
 ---
-# <a name="tcpip_fail-class"></a>Classe de falha de TcpIp \_
+# <a name="tcpip_fail-class"></a>Classe TcpIp \_ Fail
 
-Essa classe é a classe de tipo de evento para eventos de falha de TCP/IP.
+Essa classe é a classe de tipo de evento para eventos de falha TCP/IP.
 
 A sintaxe a seguir é simplificada do código MOF.
 
@@ -40,20 +40,20 @@ class TcpIp_Fail : TcpIp
 
 ## <a name="members"></a>Membros
 
-A classe **tcpip \_ Fail** tem estes tipos de membros:
+A **classe TcpIp \_ Fail** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **tcpip \_ Fail** tem essas propriedades.
+A **classe TcpIp \_ Fail** tem essas propriedades.
 
 <dl> <dt>
 
-**FailureCode**
+**Failurecode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -63,22 +63,22 @@ Motivo da falha. Pode ser um dos seguintes códigos:
 
 <dl> <dt>
 
-<span id="ERROR_INSUFFICIENT_RESOURCES"></span><span id="error_insufficient_resources"></span>**Erro \_ do \_Recursos INsuficientes** (1)
+<span id="ERROR_INSUFFICIENT_RESOURCES"></span><span id="error_insufficient_resources"></span>**ERRO \_ RECURSOS \_ INSUFICIENTES** (1)
 </dt> <dt>
 
-<span id="ERROR_TOO_MANY_ADDRESSES"></span><span id="error_too_many_addresses"></span>**Erro \_ do Excesso \_ de \_ endereços** (2)
+<span id="ERROR_TOO_MANY_ADDRESSES"></span><span id="error_too_many_addresses"></span>**ERRO \_ MUITOS \_ \_ ENDEREÇOS** (2)
 </dt> <dt>
 
-<span id="ERROR_ADDRESS_EXISTS"></span><span id="error_address_exists"></span>**Erro \_ do O endereço \_ existe** (3)
+<span id="ERROR_ADDRESS_EXISTS"></span><span id="error_address_exists"></span>**ERRO \_ ADDRESS \_ EXISTS** (3)
 </dt> <dt>
 
-<span id="ERROR_INVALID_ADDRESS"></span><span id="error_invalid_address"></span>**Erro \_ do \_Endereço inválido** (4)
+<span id="ERROR_INVALID_ADDRESS"></span><span id="error_invalid_address"></span>**ERRO \_ ENDEREÇO \_ INVÁLIDO** (4)
 </dt> <dt>
 
-<span id="ERROR_OTHER"></span><span id="error_other"></span>**Erro \_ do OUTRO** (5)
+<span id="ERROR_OTHER"></span><span id="error_other"></span>**ERRO \_ OTHER** (5)
 </dt> <dt>
 
-<span id="ERROR_TIMEWAIT_ADDRESS_EXIST"></span><span id="error_timewait_address_exist"></span>**Erro \_ do O endereço de espera \_ \_ existe** (6)
+<span id="ERROR_TIMEWAIT_ADDRESS_EXIST"></span><span id="error_timewait_address_exist"></span>**ERRO \_ ENDEREÇO TIMEWAIT \_ \_ EXIST** (6)
 </dt> </dl>
 
 </dd> <dt>
@@ -86,7 +86,7 @@ Motivo da falha. Pode ser um dos seguintes códigos:
 **Proto**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -98,8 +98,8 @@ Identifica o protocolo. Pode ser um dos seguintes valores:
 
 | Valor                                                                                                                                                                                                  | Significado                                                            |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <span id="AF_INET"></span><span id="af_inet"></span><dl> <dt>**AF \_ INET**</dt> <dt>2</dt> </dl>     | A família de endereços IPv4 (protocolo IP versão 4).<br/>  |
-| <span id="AF_INET6"></span><span id="af_inet6"></span><dl> <dt>**AF \_ INET6**</dt> <dt>23</dt> </dl> | A família de endereços IPv6 (protocolo IP versão 6).<br/> |
+| <span id="AF_INET"></span><span id="af_inet"></span><dl> <dt>**AF \_ INET**</dt> <dt>2</dt> </dl>     | A família de endereços protocolo IP versão 4 (IPv4).<br/>  |
+| <span id="AF_INET6"></span><span id="af_inet6"></span><dl> <dt>**AF \_ INET6**</dt> <dt>23</dt> </dl> | A família de endereços do protocolo IPv6 versão 6..<br/> |
 
 
 
@@ -113,8 +113,8 @@ Identifica o protocolo. Pode ser um dos seguintes valores:
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -122,7 +122,7 @@ Identifica o protocolo. Pode ser um dos seguintes valores:
 
 <dl> <dt>
 
-[**IP**](tcpip.md)
+[**Tcpip**](tcpip.md)
 </dt> </dl>
 
  

@@ -15,7 +15,7 @@ ms.locfileid: "118329621"
 
 Por padrão, no Windows Internet Explorer 7, o DEP/NX está desabilitado por motivos de compatibilidade. Vários complementos populares não são compatíveis com o DEP/NX e falham quando Windows Internet Explorer os carrega com o DEP/NX habilitado.
 
-Normalmente, esses complementos são construídos usando uma versão mais antiga da estrutura da ATL. A ATL 7.1 e versões anteriores não foram projetadas com o recurso de segurança de DEP. Felizmente, as novas versões dos service packs do Microsoft Windows têm novas APIs DEP/NX que permitem que você use o DEP/NX e mantenha a compatibilidade com versões mais antigas da ATL. Essas novas APIs permitem Internet Explorer o DEP/NX sem causar falha nos complementos que são construídos usando versões mais antigas da ATL.
+Normalmente, esses complementos são construídos usando uma versão mais antiga da estrutura da ATL. A ATL 7.1 e versões anteriores não foram projetadas com o recurso de segurança de DEP. Felizmente, as novas versões dos service packs do Microsoft Windows têm novas APIs DEP/NX que permitem que você use o DEP/NX e mantenha a compatibilidade com versões mais antigas da ATL. Essas novas APIs permitem que Internet Explorer optem por DEP/NX sem fazer com que complementos que são construídos usando versões mais antigas da ATL falhem.
 
 Quando um complemento não é compatível com DEP/NX e não usa uma ATL desatualizada, você pode usar uma opção de Política de Grupo para não usar o DEP/NX para Internet Explorer até que uma versão atualizada do controle desfeito seja implantada. Os administradores locais podem controlar o DEP/NX executando  o Internet Explorer como  administrador e limpando a opção Habilitar proteção de memória no painel Avançado de Opções **da Internet**.
 

@@ -1,10 +1,10 @@
 ---
-title: Estrutura de WMDRMNET_POLICY (wmdrmsdk. h)
-description: A \_ estrutura da política WMDRMNET contém a política a ser usada para operações do Windows Media DRM para dispositivos de rede.
+title: WMDRMNET_POLICY estrutura (Wmdrmsdk.h)
+description: A estrutura WMDRMNET POLICY contém a política a ser usada para Windows DRM de \_ Mídia para operações de Dispositivos de Rede.
 ms.assetid: 11eaaeb2-3470-4f58-ae1c-53ee0f60bdce
 keywords:
-- Formato de mídia do Windows de estrutura de WMDRMNET_POLICY
-- estruturar formato de mídia do Windows
+- WMDRMNET_POLICY formato de mídia do Windows da estrutura
+- formato de mídia de janelas de estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 574e37a8c5ee7f68291012b86cda3a89e25949ab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bf648ef5e300fa9fef1cf12fd4698f4ec196f62130bf75a02f263cd96931f0bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117653419"
 ---
-# <a name="wmdrmnet_policy-structure"></a>Estrutura de política do WMDRMNET \_
+# <a name="wmdrmnet_policy-structure"></a>Estrutura WMDRMNET \_ POLICY
 
-A estrutura da **\_ política WMDRMNET** contém a política a ser usada para operações do Windows Media DRM para dispositivos de rede.
+A **estrutura WMDRMNET \_ POLICY** contém a política a ser usada para Windows DRM de Mídia para operações de Dispositivos de Rede.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,20 +45,20 @@ typedef struct WMDRMNET_POLICY {
 **ePolicyType**
 </dt> <dd>
 
-Membro da enumeração [**de \_ \_ tipo de política WMDRMNET**](wmdrmnet-policy-type.md) que especifica o tipo de política.
+Membro da [**enumeração WMDRMNET \_ POLICY \_ TYPE**](wmdrmnet-policy-type.md) que especifica o tipo de política.
 
 </dd> <dt>
 
 **pbPolicy**
 </dt> <dd>
 
-Buffer que contém a política. O único tipo de política com suporte no momento é o **\_ tipo de política WMDRMNET \_ \_ TRANSCRYPTPLAY**. Este membro é um ponteiro para uma **estrutura \_ \_ TRANSCRYPTPLAY da política WMDRMNET** .
+Buffer que contém a política. O único tipo de política atualmente com suporte é **WMDRMNET \_ POLICY \_ TYPE \_ TRANSCRYPTPLAY**. Esse membro é um ponteiro para uma estrutura **WMDRMNET \_ POLICY \_ TRANSCRYPTPLAY.**
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é usada como um parâmetro para o método [**IWMDRMNetTransmitter:: GetLeafLicenseResponse**](iwmdrmnettransmitter-getleaflicenseresponse.md) .
+Essa estrutura é usada como um parâmetro para o [**método IWMDRMNetTransmitter::GetLeafLicenseResponse.**](iwmdrmnettransmitter-getleaflicenseresponse.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Essa estrutura é usada como um parâmetro para o método [**IWMDRMNetTransmitte
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 
@@ -77,16 +77,16 @@ Essa estrutura é usada como um parâmetro para o método [**IWMDRMNetTransmitte
 [**Estruturas**](drm-structures.md)
 </dt> <dt>
 
-[**\_ \_ requisitos globais da política de WMDRMNET \_**](wmdrmnet-policy-global-requirements.md)
+[**REQUISITOS GLOBAIS DA POLÍTICA WMDRMNET \_ \_ \_**](wmdrmnet-policy-global-requirements.md)
 </dt> <dt>
 
-[**\_ \_ ambiente mínimo da política de WMDRMNET \_**](wmdrmnet-policy-minimum-environment.md)
+[**AMBIENTE MÍNIMO DA POLÍTICA WMDRMNET \_ \_ \_**](wmdrmnet-policy-minimum-environment.md)
 </dt> <dt>
 
-[**política de WMDRMNET \_ \_ TRANSCRYPTPLAY**](wmdrmnet-policy-transcryptplay.md)
+[**WMDRMNET \_ POLICY \_ TRANSCRYPTPLAY**](wmdrmnet-policy-transcryptplay.md)
 </dt> <dt>
 
-[**\_tipo de política WMDRMNET \_**](wmdrmnet-policy-type.md)
+[**TIPO DE POLÍTICA WMDRMNET \_ \_**](wmdrmnet-policy-type.md)
 </dt> </dl>
 
  

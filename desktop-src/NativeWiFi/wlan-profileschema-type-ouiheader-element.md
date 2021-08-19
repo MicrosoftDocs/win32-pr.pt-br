@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 12637e5a70409166e5a31aa0fc98f4df1b9f6945
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 234b30883df463d7c336ce7d270e574d41a5cabe9924c327a35ff1a31ee65632
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797497"
 ---
 # <a name="type-ouiheader-element"></a>Elemento Type (OUIHeader)
 
 O elemento Type (OUIHeader) contém um hexBinary de 1 byte que é usado para diferenciar as NICs feitas pelo mesmo IHV.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.
+**Windows xp com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.
 
 ``` syntax
 <xs:element name="type">
@@ -47,8 +47,8 @@ O elemento é definido pelo elemento [**OUIHeader**](wlan-profileschema-ouiheade
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

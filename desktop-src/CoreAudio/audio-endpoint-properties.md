@@ -13,9 +13,9 @@ ms.locfileid: "117828497"
 ---
 # <a name="audio-endpoint-properties"></a>Propriedades do ponto de extremidade de áudio
 
-O arquivo de header Mmdeviceapi.h define várias propriedades de dispositivos de ponto de extremidade de [áudio](audio-endpoint-devices.md) no Windows Vista e posterior. O Windows de áudio define os valores dessas propriedades. Os clientes podem ler essas propriedades, mas não devem defini-las. Os valores de propriedade são armazenados **como estruturas PROPVARIANT.**
+O arquivo de header Mmdeviceapi.h define várias propriedades de dispositivos de [ponto](audio-endpoint-devices.md) de extremidade de áudio no Windows Vista e posterior. O Windows de áudio define os valores dessas propriedades. Os clientes podem ler essas propriedades, mas não devem defini-las. Os valores de propriedade são armazenados **como estruturas PROPVARIANT.**
 
-A maneira recomendada de ler as propriedades de um dispositivo de entrada de áudio é usar as APIs no [**Windows. Namespace Devices.Enumeration.**](/uwp/api/Windows.Devices.Enumeration) Essas APIs têm suporte para aplicativos Windows Store e aplicativos da área de trabalho. Para aplicativos da área de trabalho existentes que leem as propriedades do dispositivo usando a interface [**IMMDevice,**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) consulte [Propriedades do dispositivo](device-properties.md). **Não há suporte para IMMDevice** para aplicativos Windows Store.
+A maneira recomendada de ler as propriedades de um dispositivo de entrada de áudio é usar as APIs no [**Windows. Namespace Devices.Enumeration.**](/uwp/api/Windows.Devices.Enumeration) Essas APIs têm suporte para aplicativos Windows Store e aplicativos da área de trabalho. Para aplicativos da área de trabalho existentes que leem as propriedades do dispositivo usando a interface [**IMMDevice,**](/windows/desktop/api/Mmdeviceapi/nn-mmdeviceapi-immdevice) consulte [Propriedades do dispositivo](device-properties.md). **Não há suporte para IMMDevice** em aplicativos Windows Store.
 
 Para exemplos de código que mostram como acessar as propriedades de um dispositivo de ponto de extremidade de áudio, consulte os seguintes tópicos:
 

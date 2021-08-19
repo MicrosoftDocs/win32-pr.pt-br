@@ -4,12 +4,12 @@ ms.assetid: fe88ecc8-a0e3-4e4a-b821-c204b3c3ae8e
 title: System. GPS. DestBearingNumerator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d3e59ce662978f5ff3e3278aebed544523739a39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ddcf021d18e6346dbccb13cdb88ea9f3860c4077a04ce472bd5b8fe7cb28a69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118466621"
 ---
 # <a name="systemgpsdestbearingnumerator"></a>System. GPS. DestBearingNumerator
 

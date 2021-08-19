@@ -1,5 +1,5 @@
 ---
-description: Os requisitos de segurança no nível do C2 especificam que os administradores do sistema devem ser capazes de auditar eventos relacionados à segurança e que o acesso a esses dados de auditoria deve ser limitado a administradores autorizados.
+description: Os requisitos de segurança no nível C2 especificam que os administradores do sistema devem ser capazes de auditar eventos relacionados à segurança e que o acesso a esses dados de auditoria deve ser limitado a administradores autorizados.
 ms.assetid: 411001b1-94cd-465f-8558-c8aa119e4303
 title: Geração de auditoria
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117784692"
 ---
 # <a name="audit-generation"></a>Geração de auditoria
 
-Os requisitos de segurança no nível do C2 especificam que os administradores do sistema devem ser capazes de auditar eventos relacionados à segurança e que o acesso a esses dados de auditoria deve ser limitado a administradores autorizados. A API Windows fornece funções que permitem que um administrador monitore eventos relacionados à segurança.
+Os requisitos de segurança no nível C2 especificam que os administradores do sistema devem ser capazes de auditar eventos relacionados à segurança e que o acesso a esses dados de auditoria deve ser limitado a administradores autorizados. A API Windows fornece funções que permitem que um administrador monitore eventos relacionados à segurança.
 
 O descritor de segurança para um objeto seguro pode ter uma SACL [*(lista de controle de*](/windows/desktop/SecGloss/s-gly) acesso do sistema). Uma SACL contém [*ACEs*](/windows/desktop/SecGloss/a-gly) (entradas de controle de acesso) que especificam os tipos de tentativas de acesso que geram relatórios de auditoria. Cada ACE identifica um usuário confiável, um conjunto de direitos de acesso e um conjunto de sinalizadores que indicam se o sistema gera mensagens de auditoria para tentativas de acesso com falha, tentativas de acesso bem-sucedidas ou ambas.
 

@@ -1,5 +1,5 @@
 ---
-description: funções de DirectShow
+description: DirectShow funções
 ms.assetid: 5bf62e2a-7d5f-4feb-872a-54d102759824
 title: Funções (DirectShow)
 ms.topic: article
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118401242"
 ---
-# <a name="directshow-functions"></a>funções de DirectShow
+# <a name="directshow-functions"></a>DirectShow funções
 
 DirectShow fornece a função a seguir.
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: aad24e56d43f6fadd3da3f627b2399249a7ff8a6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6b9bc249921b3247f5df898c2810d735dc1a75c8e643e965b3fd249d9496f78
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812398"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117867921"
 ---
 # <a name="printer_info_3-structure"></a>Estrutura de informações da impressora \_ \_ 3
 

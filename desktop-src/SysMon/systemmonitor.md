@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 297f0e3e67134f911932aa7784396c244dc79f42
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 88b9489c2e966abdf3c329d952a76bd30de487cca99a3e00c8ff46431a163ec9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105762876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117954501"
 ---
 # <a name="systemmonitor-object"></a>Objeto SystemMonitor
 
@@ -64,13 +64,13 @@ O objeto **SystemMonitor** tem esses métodos.
 | [**BrowseCounters**](systemmonitor-browsecounters.md)       | Exibe a caixa de diálogo **Adicionar contador** .<br/>                                                                                                                      |
 | [**ClearData**](systemmonitor-cleardata.md)                 | Limpa todos os campos de dados no controle.<br/>                                                                                                                        |
 | [**CollectSample**](systemmonitor-collectsample.md)         | Obtém um valor para cada contador no objeto da coleção de **contadores** .<br/>                                                                                       |
-| [**CopiarObjeto**](systemmonitor-copy.md)                           | Copia as configurações de Propriedade do controle, a lista de contadores e os dados do contador para a área de transferência como um objeto HTML.<br/>                                                |
-| [**Exibirproperties**](systemmonitor-displayproperties.md) | Exibe a caixa de diálogo **Propriedades do grafo** .<br/>                                                                                                                 |
+| [**Copiar**](systemmonitor-copy.md)                           | Copia as configurações de Propriedade do controle, a lista de contadores e os dados do contador para a área de transferência como um objeto HTML.<br/>                                                |
+| [**Exibirproperties**](systemmonitor-displayproperties.md) | exibe a caixa de diálogo **propriedades de Graph** .<br/>                                                                                                                 |
 | [**GetLogViewRange**](systemmonitor-getlogviewrange.md)     | Recupera a data de início usada para recuperar valores de contadores dos arquivos de log.<br/>                                                                               |
 | [**LoadSettings**](systemmonitor-loadsettings.md)           | Adiciona os contadores no arquivo de modelo HTML ao monitor do sistema.<br/>                                                                                            |
-| [**Colar**](systemmonitor-paste.md)                         | Acrescenta a lista de contadores que foram copiados para a área de transferência para a coleção atual de contadores. <br/>                                                        |
+| [**Olar**](systemmonitor-paste.md)                         | Acrescenta a lista de contadores que foram copiados para a área de transferência para a coleção atual de contadores. <br/>                                                        |
 | [**Relog**](systemmonitor-relog.md)                         | Registra novamente os dados do contador em um novo arquivo. Você também pode usar esse método para especificar um novo tipo de arquivo e reduzir o número de amostras contidas no arquivo de log.<br/> |
-| [**Redefinir**](systemmonitor-reset.md)                         | Remove todos os objetos de [**comitem**](counteritem.md) do objeto da coleção **Counters** .<br/>                                                               |
+| [**Definido**](systemmonitor-reset.md)                         | Remove todos os objetos de [**comitem**](counteritem.md) do objeto da coleção **Counters** .<br/>                                                               |
 | [**SaveAs**](systemmonitor-saveas.md)                       | Salva os valores do contador no modo de exibição de gráfico em um arquivo de log.<br/>                                                                                                     |
 | [**ScaleToFit**](systemmonitor-scaletofit.md)               | Dimensionar valores do contador para caber no grafo.<br/>                                                                                                                     |
 | [**SetLogViewRange**](systemmonitor-setlogviewrange.md)     | Define a data de início usada para recuperar valores de contadores dos arquivos de log.<br/>                                                                                    |
@@ -99,7 +99,7 @@ O objeto **SystemMonitor** tem essas propriedades.
 | [**TipoDeExibição**](systemmonitor-displaytype.md)<br/>                             | Recupera ou define o tipo de grafo usado para grafar os dados do contador de desempenho.<br/>                                                                                                                                              |
 | [**EnableDigitGrouping**](systemmonitor-enabledigitgrouping.md)<br/>             | Recupera ou define um valor que determina se o SYSMON usa o agrupamento de dígitos ao exibir valores numéricos.<br/>                                                                                                                      |
 | [**EnableToolTips**](systemmonitor-enabletooltips.md)<br/>                       | Recupera ou define um valor que determina se uma dica de ferramenta é mostrada quando o mouse passa sobre um contador em uma das exibições de gráfico.<br/>                                                                                             |
-| [**Fonte**](systemmonitor-font.md)<br/>                                           | Recupera ou define a fonte usada no controle.<br/>                                                                                                                                                                              |
+| [**La**](systemmonitor-font.md)<br/>                                           | Recupera ou define a fonte usada no controle.<br/>                                                                                                                                                                              |
 | [**ForeColor**](systemmonitor-forecolor.md)<br/>                                 | Recupera ou define a cor do texto que aparece no controle.<br/>                                                                                                                                                         |
 | [**GraphTitle**](systemmonitor-graphtitle.md)<br/>                               | Recupera ou define o título do grafo.<br/>                                                                                                                                                                                    |
 | [**GridColor**](systemmonitor-gridcolor.md)<br/>                                 | Recupera ou define a cor das linhas de grade usadas no grafo.<br/>                                                                                                                                                             |

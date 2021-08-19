@@ -1,7 +1,7 @@
 ---
-description: Interrompe o modo de coletor Miracast, desativa a descoberta e cancela o registro do retorno de chamada.
+description: Interrompe o Miracast do usuário, desliga a capacidade de descoberta e des registra o retorno de chamada.
 ms.assetid: 38AE60CB-F601-4C03-A725-9B802341B84B
-title: Função WFDDisplaySinkStop (Wfdsink. h)
+title: Função WFDDisplaySinkStop (Wfdsink.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - wifidisplay.dll
-ms.openlocfilehash: d1ebaa9920ca7d38cff22cef6383b37065faa2ba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a5e2da91e29535c1e2fd9553a2b6ec2bb0008e61f33cd55ebcda2746b93eb657
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797925"
 ---
 # <a name="wfddisplaysinkstop-function"></a>Função WFDDisplaySinkStop
 
-Interrompe o modo de coletor Miracast, desativa a descoberta e cancela o registro do retorno de chamada. Seu aplicativo deve chamá-lo uma vez durante o desligamento.
+Interrompe o Miracast do usuário, desliga a capacidade de descoberta e des registra o retorno de chamada. Seu aplicativo deve chamar isso uma vez no desligamento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,11 +39,11 @@ Essa função não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será \_ êxito no erro.
+Se a função for bem-sucedida, o valor de retorno será ERROR \_ SUCCESS.
 
 ## <a name="remarks"></a>Comentários
 
-Espera-se que seu aplicativo tenha desbloqueado quaisquer retornos de chamada em andamento antes de chamar **WFDStopDisplaySink**.
+Espera-se que seu aplicativo desbloqueou todos os retornos de chamada em andamento antes de chamar **WFDStopDisplaySink.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,12 +51,12 @@ Espera-se que seu aplicativo tenha desbloqueado quaisquer retornos de chamada em
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                    |
-| Fim do suporte do cliente<br/>    | Windows 10<br/>                                                                      |
-| Fim do suporte do servidor<br/>    | Windows Server 2016<br/>                                                             |
-| parâmetro<br/>                   | <dl> <dt>Wfdsink. h</dt> </dl>       |
-| Biblioteca<br/>                  | <dl> <dt>Wifidisplay. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                    |
+| Fim do suporte ao cliente<br/>    | Windows 10<br/>                                                                      |
+| Fim do suporte ao servidor<br/>    | Windows Server 2016<br/>                                                             |
+| Cabeçalho<br/>                   | <dl> <dt>Wfdsink.h</dt> </dl>       |
+| Biblioteca<br/>                  | <dl> <dt>Wifidisplay.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wifidisplay.dll</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: MCI_GETDEVCAPS comando (mmsystem. h)
-description: O \_ comando MCI GETDEVCAPS recupera informações estáticas sobre um dispositivo.
+title: MCI_GETDEVCAPS comando (Mmsystem.h)
+description: O comando \_ MCI GETDEVCAPS recupera informações estáticas sobre um dispositivo.
 ms.assetid: a839006f-ea57-4595-9208-cfc465c95298
 keywords:
-- Multimídia do Windows de comando MCI_GETDEVCAPS
+- MCI_GETDEVCAPS comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85abb0354d36979741d0b292dd9def469cec0049
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7798f72405209f9834c3b67f84e57508c58ffc6153bce860b91f089005648905
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499796"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803947"
 ---
-# <a name="mci_getdevcaps-command"></a>\_Comando MCI GETDEVCAPS
+# <a name="mci_getdevcaps-command"></a>Comando \_ MCI GETDEVCAPS
 
-O \_ comando MCI GETDEVCAPS recupera informações estáticas sobre um dispositivo. Todos os dispositivos reconhecem este comando. Os parâmetros e sinalizadores disponíveis para este comando dependem do dispositivo selecionado. As informações são retornadas no membro **dwReturn** da estrutura identificada por *lpCapsParms*.
+O comando \_ MCI GETDEVCAPS recupera informações estáticas sobre um dispositivo. Todos os dispositivos reconhecem esse comando. Os parâmetros e sinalizadores disponíveis para esse comando dependem do dispositivo selecionado. As informações são retornadas no **membro dwReturn** da estrutura identificada por *lpCapsParms*.
 
-Para enviar esse comando, chame a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
+Para enviar esse comando, chame a [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
 
 
 ```C++
@@ -50,355 +50,355 @@ Identificador de dispositivo do dispositivo MCI que deve receber a mensagem de c
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Notificação de MCI, \_ espera de MCI ou, para dispositivos de vídeo digital e VCR, \_ teste MCI. Para obter informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI WAIT ou, para dispositivos de vídeo digital e \_ VCR, MCI \_ TEST. Para obter informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> <dt>
 
 <span id="lpCapsParms"></span><span id="lpcapsparms"></span><span id="LPCAPSPARMS"></span>*lpCapsParms*
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ \_ parâmetros MCI do GETDEVCAPS**](mci-getdevcaps-parms.md) .
+Ponteiro para uma [**estrutura \_ MCI GETDEVCAPS \_ PARMS.**](mci-getdevcaps-parms.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Os seguintes sinalizadores padrão adicionais e específicos de comando se aplicam a todos os dispositivos que dão suporte a \_ GETDEVCAPS MCI:
+Os seguintes sinalizadores padrão e específicos de comando adicionais se aplicam a todos os dispositivos que suportam MCI \_ GETDEVCAPS:
 
 <dl> <dt>
 
-<span id="MCI_GETDEVCAPS_COMPOUND_DEVICE"></span><span id="mci_getdevcaps_compound_device"></span>\_dispositivo de \_ composição MCI GETDEVCAPS \_
+<span id="MCI_GETDEVCAPS_COMPOUND_DEVICE"></span><span id="mci_getdevcaps_compound_device"></span>DISPOSITIVO \_ COMPOSTO MCI GETDEVCAPS \_ \_
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo usar o armazenamento de dados que deve ser aberto e fechado explicitamente; caso contrário, será definido como **false** .
+O **membro dwReturn** será definido como **TRUE se** o dispositivo usar o armazenamento de dados que deve ser aberto e fechado explicitamente; caso contrário, ele será **definido como FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_GETDEVCAPS_DEVICE_TYPE"></span><span id="mci_getdevcaps_device_type"></span>\_tipo de \_ dispositivo MCI GETDEVCAPS \_
+<span id="MCI_GETDEVCAPS_DEVICE_TYPE"></span><span id="mci_getdevcaps_device_type"></span>TIPO DE DISPOSITIVO \_ MCI GETDEVCAPS \_ \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como um dos valores listados em [tipos de dispositivo MCI](mci-device-types.md).
+O **membro dwReturn** é definido como um dos valores listados em Tipos de [Dispositivo MCI.](mci-device-types.md)
 
 </dd> <dt>
 
-<span id="MCI_GETDEVCAPS_HAS_AUDIO"></span><span id="mci_getdevcaps_has_audio"></span>o MCI \_ GETDEVCAPS \_ tem \_ áudio
+<span id="MCI_GETDEVCAPS_HAS_AUDIO"></span><span id="mci_getdevcaps_has_audio"></span>MCI \_ GETDEVCAPS \_ TEM \_ ÁUDIO
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo tiver a saída de áudio; caso contrário, será definido como **false** .
+O **membro dwReturn** será definido como **TRUE se** o dispositivo tiver saída de áudio; caso contrário, ele será **definido como FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_GETDEVCAPS_HAS_VIDEO"></span><span id="mci_getdevcaps_has_video"></span>MCI \_ GETDEVCAPS \_ tem \_ vídeo
+<span id="MCI_GETDEVCAPS_HAS_VIDEO"></span><span id="mci_getdevcaps_has_video"></span>MCI \_ GETDEVCAPS \_ TEM \_ VÍDEO
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo tiver saída de vídeo; caso contrário, será definido como **false** . Por exemplo, o membro é definido como **true** para dispositivos que dão suporte ao conjunto de comandos VIDEODISC.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo tiver saída de vídeo; caso contrário, ele será **definido como FALSE.** Por exemplo, o membro é definido como **TRUE para dispositivos** que são compatíveis com o conjunto de comandos videodisc.
 
 </dd> <dt>
 
-<span id="MCI_GETDEVCAPS_ITEM"></span><span id="mci_getdevcaps_item"></span>\_Item GETDEVCAPS \_ MCI
+<span id="MCI_GETDEVCAPS_ITEM"></span><span id="mci_getdevcaps_item"></span>MCI \_ GETDEVCAPS \_ ITEM
 </dt> <dd>
 
-Especifica que o membro **dwItem** da estrutura [**do \_ GETDEVCAPS \_ parms do MCI**](mci-getdevcaps-parms.md) contém uma das seguintes constantes:
+Especifica que o **membro dwItem** da estrutura [**MCI \_ GETDEVCAPS \_ PARMS**](mci-getdevcaps-parms.md) contém uma das seguintes constantes:
 
 </dd> <dt>
 
-<span id="MCI_GETDEVCAPS_CAN_EJECT"></span><span id="mci_getdevcaps_can_eject"></span>o MCI \_ GETDEVCAPS \_ pode \_ ejetar
+<span id="MCI_GETDEVCAPS_CAN_EJECT"></span><span id="mci_getdevcaps_can_eject"></span>MCI \_ GETDEVCAPS \_ PODE \_ EJETAR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder ejetar a mídia; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder ejetar a mídia; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_GETDEVCAPS_CAN_PLAY"></span><span id="mci_getdevcaps_can_play"></span>o MCI \_ GETDEVCAPS \_ pode \_ reproduzir
+<span id="MCI_GETDEVCAPS_CAN_PLAY"></span><span id="mci_getdevcaps_can_play"></span>MCI \_ GETDEVCAPS \_ PODE \_ REPRODUZIR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder reproduzir a mídia; caso contrário, ele será definido como **false**. Se um dispositivo especificar **true**, ele implica que o dispositivo dá suporte aos comandos MCI [ \_ Pause](mci-pause.md) e [MCI \_ Stop](mci-stop.md) , bem como ao comando de [ \_ reprodução MCI](mci-play.md) .
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder reproduzir a mídia; caso contrário, ele será definido como **FALSE.** Se um dispositivo especificar **TRUE**, isso implica que o dispositivo dá suporte aos comandos [MCI \_ PAUSE](mci-pause.md) e [MCI \_ STOP,](mci-stop.md) bem como ao [comando MCI \_ PLAY.](mci-play.md)
 
 </dd> <dt>
 
-<span id="MCI_GETDEVCAPS_CAN_RECORD"></span><span id="mci_getdevcaps_can_record"></span>o MCI \_ GETDEVCAPS \_ pode \_ gravar
+<span id="MCI_GETDEVCAPS_CAN_RECORD"></span><span id="mci_getdevcaps_can_record"></span>MCI \_ GETDEVCAPS \_ PODE \_ REGISTRAR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo der suporte à gravação; caso contrário, ele será definido como **false**. Se um dispositivo especificar **true**, ele implica que o dispositivo dá suporte aos \_ comandos MCI Pause e MCI \_ Stop, bem como ao comando de [ \_ registro MCI](mci-record.md) .
+O **membro dwReturn** será definido como **TRUE se** o dispositivo for compatível com a gravação; caso contrário, ele será definido como **FALSE.** Se um dispositivo especificar **TRUE**, isso implica que o dispositivo dá suporte aos comandos MCI PAUSE e MCI STOP, bem como \_ ao comando \_ [MCI \_ RECORD.](mci-record.md)
 
 </dd> <dt>
 
-<span id="MCI_GETDEVCAPS_CAN_SAVE"></span><span id="mci_getdevcaps_can_save"></span>o MCI \_ GETDEVCAPS \_ pode \_ salvar
+<span id="MCI_GETDEVCAPS_CAN_SAVE"></span><span id="mci_getdevcaps_can_save"></span>MCI \_ GETDEVCAPS \_ PODE \_ SALVAR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder salvar um arquivo; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE** se o dispositivo puder salvar um arquivo; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_GETDEVCAPS_USES_FILES"></span><span id="mci_getdevcaps_uses_files"></span>o MCI \_ GETDEVCAPS \_ usa \_ arquivos
+<span id="MCI_GETDEVCAPS_USES_FILES"></span><span id="mci_getdevcaps_uses_files"></span>MCI \_ GETDEVCAPS \_ USA \_ ARQUIVOS
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo exigir um nome de arquivo; caso contrário, será definido como **false** . Somente dispositivos compostos usam arquivos.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo exigir um nome de arquivo; caso contrário, ele será **definido como FALSE.** Somente dispositivos compostos usam arquivos.
 
 </dd> </dl>
 
-Os sinalizadores a seguir podem ser especificados no membro **dwItem** do [**MCI \_ GETDEVCAPS \_ parms**](mci-getdevcaps-parms.md) para o tipo de dispositivo **DigitalVideo** :
+Os seguintes sinalizadores podem ser especificados no membro **dwItem** do [**\_ MCI GETDEVCAPS \_ PARMS**](mci-getdevcaps-parms.md) para o tipo de dispositivo **digitalvideo:**
 
 <dl> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_CAN_FREEZE"></span><span id="mci_dgv_getdevcaps_can_freeze"></span>\_GETDEVCAPS MCI \_ DGV \_ pode \_ congelar
+<span id="MCI_DGV_GETDEVCAPS_CAN_FREEZE"></span><span id="mci_dgv_getdevcaps_can_freeze"></span>MCI \_ DGV \_ GETDEVCAPS \_ PODE \_ CONGELAR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder congelar quadros; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder congelar quadros; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_CAN_LOCK"></span><span id="mci_dgv_getdevcaps_can_lock"></span>\_GETDEVCAPS MCI \_ DGV \_ pode \_ Bloquear
+<span id="MCI_DGV_GETDEVCAPS_CAN_LOCK"></span><span id="mci_dgv_getdevcaps_can_lock"></span>MCI \_ DGV \_ GETDEVCAPS \_ PODE \_ BLOQUEAR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder ser bloqueado; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder bloquear; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_CAN_REVERSE"></span><span id="mci_dgv_getdevcaps_can_reverse"></span>\_GETDEVCAPS MCI \_ DGV \_ pode \_ reverter
+<span id="MCI_DGV_GETDEVCAPS_CAN_REVERSE"></span><span id="mci_dgv_getdevcaps_can_reverse"></span>MCI \_ DGV \_ GETDEVCAPS \_ PODE \_ REVERTER
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder reproduzir em ordem inversa; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder reproduzir em ordem inversa; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_CAN_STR_IN"></span><span id="mci_dgv_getdevcaps_can_str_in"></span>MCI \_ DGV \_ GETDEVCAPS \_ pode \_ Str \_
+<span id="MCI_DGV_GETDEVCAPS_CAN_STR_IN"></span><span id="mci_dgv_getdevcaps_can_str_in"></span>MCI \_ DGV \_ GETDEVCAPS \_ PODE \_ STR \_ EM
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder ampliar a entrada; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder ampliar a entrada; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_CAN_STRETCH"></span><span id="mci_dgv_getdevcaps_can_stretch"></span>\_GETDEVCAPS MCI \_ DGV \_ pode \_ alongar
+<span id="MCI_DGV_GETDEVCAPS_CAN_STRETCH"></span><span id="mci_dgv_getdevcaps_can_stretch"></span>MCI \_ DGV \_ GETDEVCAPS \_ PODE SE \_ ALONGAR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder alongar uma imagem; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder ampliar uma imagem; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_CAN_TEST"></span><span id="mci_dgv_getdevcaps_can_test"></span>\_GETDEVCAPS MCI \_ DGV \_ pode \_ testar
+<span id="MCI_DGV_GETDEVCAPS_CAN_TEST"></span><span id="mci_dgv_getdevcaps_can_test"></span>MCI \_ DGV \_ GETDEVCAPS \_ PODE \_ TESTAR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder executar testes; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder executar testes; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_HAS_STILL"></span><span id="mci_dgv_getdevcaps_has_still"></span>MCI \_ DGV \_ GETDEVCAPS \_ \_ ainda
+<span id="MCI_DGV_GETDEVCAPS_HAS_STILL"></span><span id="mci_dgv_getdevcaps_has_still"></span>MCI \_ DGV \_ GETDEVCAPS \_ AINDA \_ TEM
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder exibir imagens ainda; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder exibir imagens ainda; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_MAX_WINDOWS"></span><span id="mci_dgv_getdevcaps_max_windows"></span>MCI \_ DGV \_ GETDEVCAPS \_ Max \_ Windows
+<span id="MCI_DGV_GETDEVCAPS_MAX_WINDOWS"></span><span id="mci_dgv_getdevcaps_max_windows"></span>MCI \_ DGV \_ GETDEVCAPS \_ MAX \_ WINDOWS
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número máximo de janelas que o dispositivo pode manipular simultaneamente.
+O **membro dwReturn** é definido como o número máximo de janelas que o dispositivo pode manipular simultaneamente.
 
 </dd> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_MAXIMUM_RATE"></span><span id="mci_dgv_getdevcaps_maximum_rate"></span>\_ \_ taxa máxima de GETDEVCAPS DGV \_ MCI \_
+<span id="MCI_DGV_GETDEVCAPS_MAXIMUM_RATE"></span><span id="mci_dgv_getdevcaps_maximum_rate"></span>TAXA MÁXIMA \_ DE \_ GETDEVCAPS DE DGV \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como a taxa máxima de reprodução para o dispositivo, em quadros por segundo.
+O **membro dwReturn** é definido como a taxa de reprodução máxima para o dispositivo, em quadros por segundo.
 
 </dd> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_MINIMUM_RATE"></span><span id="mci_dgv_getdevcaps_minimum_rate"></span>\_ \_ taxa mínima de GETDEVCAPS DGV \_ MCI \_
+<span id="MCI_DGV_GETDEVCAPS_MINIMUM_RATE"></span><span id="mci_dgv_getdevcaps_minimum_rate"></span>MCI \_ DGV \_ GETDEVCAPS \_ TAXA \_ MÍNIMA
 </dt> <dd>
 
-O membro **dwReturn** é definido como a taxa de execução mínima para o dispositivo, em quadros por segundo.
+O **membro dwReturn** é definido como a taxa de reprodução mínima para o dispositivo, em quadros por segundo.
 
 </dd> <dt>
 
-<span id="MCI_DGV_GETDEVCAPS_PALETTES"></span><span id="mci_dgv_getdevcaps_palettes"></span>\_ \_ paletas MCI DGV GETDEVCAPS \_
+<span id="MCI_DGV_GETDEVCAPS_PALETTES"></span><span id="mci_dgv_getdevcaps_palettes"></span>PALETAS \_ \_ GETDEVCAPS MCI DGV \_
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder retornar um identificador de paleta; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder retornar um alça de paleta; caso contrário, ele será definido como **FALSE.**
 
 </dd> </dl>
 
-Os sinalizadores a seguir podem ser especificados no membro **dwItem** dos [**\_ \_ parâmetros MCI GETDEVCAPS**](mci-getdevcaps-parms.md) para o tipo de dispositivo **VCR** :
+Os seguintes sinalizadores podem ser especificados no **membro dwItem** do [**MCI \_ GETDEVCAPS \_ PARMS**](mci-getdevcaps-parms.md) para o **tipo de dispositivo vcr:**
 
 <dl> <dt>
 
-<span id="MCI_GETDEVCAPS_CLOCK_INCREMENT_RATE"></span><span id="mci_getdevcaps_clock_increment_rate"></span>\_taxa de \_ \_ incremento do relógio do GETDEVCAPS MCI \_
+<span id="MCI_GETDEVCAPS_CLOCK_INCREMENT_RATE"></span><span id="mci_getdevcaps_clock_increment_rate"></span>TAXA DE INCREMENTO DO RELÓGIO \_ MCI GETDEVCAPS \_ \_ \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número de incrementos por segundo.
+O **membro dwReturn** é definido como o número de incrementos por segundo.
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_CAN_DETECT_LENGTH"></span><span id="mci_vcr_getdevcaps_can_detect_length"></span>o \_ GETDEVCAPS do VCR MCI \_ \_ pode \_ detectar \_ comprimento
+<span id="MCI_VCR_GETDEVCAPS_CAN_DETECT_LENGTH"></span><span id="mci_vcr_getdevcaps_can_detect_length"></span>O \_ VCR \_ GETDEVCAPS DA MCI \_ PODE DETECTAR O \_ \_ COMPRIMENTO
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo for capaz de detectar o tamanho da mídia; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE** se o dispositivo for capaz de detectar o comprimento da mídia; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_CAN_FREEZE"></span><span id="mci_vcr_getdevcaps_can_freeze"></span>o \_ GETDEVCAPS do VCR MCI \_ \_ pode \_ congelar
+<span id="MCI_VCR_GETDEVCAPS_CAN_FREEZE"></span><span id="mci_vcr_getdevcaps_can_freeze"></span>O \_ VCR \_ GETDEVCAPS DA MCI \_ PODE \_ CONGELAR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo for capaz de congelar a imagem de saída; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo for capaz de congelar a imagem de saída; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_CAN_MONITOR_SOURCES"></span><span id="mci_vcr_getdevcaps_can_monitor_sources"></span>o \_ GETDEVCAPS do VCR MCI \_ \_ pode \_ monitorar \_ fontes
+<span id="MCI_VCR_GETDEVCAPS_CAN_MONITOR_SOURCES"></span><span id="mci_vcr_getdevcaps_can_monitor_sources"></span>O \_ VCR \_ GETDEVCAPS DA MCI \_ PODE MONITORAR \_ \_ FONTES
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo for capaz de monitorar fontes; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo for capaz de monitorar fontes; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_CAN_PREROLL"></span><span id="mci_vcr_getdevcaps_can_preroll"></span>o \_ GETDEVCAPS do VCR MCI \_ \_ pode ser \_ prevertido
+<span id="MCI_VCR_GETDEVCAPS_CAN_PREROLL"></span><span id="mci_vcr_getdevcaps_can_preroll"></span>O \_ VCR GETDEVCAPS DA MCI \_ PODE FAZER O \_ \_ PRÉ-ROLL
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder ser prevertido; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo for capaz de fazer o pré-roll; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_CAN_PREVIEW"></span><span id="mci_vcr_getdevcaps_can_preview"></span>o \_ GETDEVCAPS do VCR MCI \_ \_ pode ser \_ visualizado
+<span id="MCI_VCR_GETDEVCAPS_CAN_PREVIEW"></span><span id="mci_vcr_getdevcaps_can_preview"></span>O \_ VCR \_ GETDEVCAPS DA MCI \_ PODE SER \_ VISUALIZADO
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo for capaz de visualizações; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo for capaz de visualizações; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_CAN_REVERSE"></span><span id="mci_vcr_getdevcaps_can_reverse"></span>o \_ GETDEVCAPS do VCR MCI \_ \_ pode \_ reverter
+<span id="MCI_VCR_GETDEVCAPS_CAN_REVERSE"></span><span id="mci_vcr_getdevcaps_can_reverse"></span>O \_ VCR \_ GETDEVCAPS DA MCI \_ PODE \_ REVERTER
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo for capaz de reproduzir em ordem inversa; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo for capaz de tocar em ordem inversa; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_CAN_TEST"></span><span id="mci_vcr_getdevcaps_can_test"></span>o \_ GETDEVCAPS do VCR MCI \_ \_ pode \_ testar
+<span id="MCI_VCR_GETDEVCAPS_CAN_TEST"></span><span id="mci_vcr_getdevcaps_can_test"></span>O MCI \_ VCR \_ GETDEVCAPS \_ PODE \_ TESTAR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo for capaz de testar; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo for capaz de testar; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_HAS_CLOCK"></span><span id="mci_vcr_getdevcaps_has_clock"></span>o \_ GETDEVCAPS do VCR MCI \_ \_ tem \_ relógio
+<span id="MCI_VCR_GETDEVCAPS_HAS_CLOCK"></span><span id="mci_vcr_getdevcaps_has_clock"></span>MCI \_ VCR \_ GETDEVCAPS \_ TEM \_ RELÓGIO
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo der suporte a um relógio externo; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo for compatível com um relógio externo; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_HAS_TIMECODE"></span><span id="mci_vcr_getdevcaps_has_timecode"></span>o \_ GETDEVCAPS de videocassete do MCI \_ tem um \_ \_ código de meio
+<span id="MCI_VCR_GETDEVCAPS_HAS_TIMECODE"></span><span id="mci_vcr_getdevcaps_has_timecode"></span>O \_ VCR \_ GETDEVCAPS DA MCI \_ TEM O CÓDIGO DE \_ HORA
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo tiver a capacidade de código de paficação ou se esse recurso for desconhecido; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo tiver a funcionalidade de código de data/hora ou se essa funcionalidade for desconhecida; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_NUMBER_OF_MARKS"></span><span id="mci_vcr_getdevcaps_number_of_marks"></span>\_ \_ \_ número \_ de marcas do GETDEVCAPS do VCR MCI \_
+<span id="MCI_VCR_GETDEVCAPS_NUMBER_OF_MARKS"></span><span id="mci_vcr_getdevcaps_number_of_marks"></span>NÚMERO DE MARCAS \_ \_ GETDEVCAPS DO VCR \_ \_ DA MCI \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número de marcas (99).
+O **membro dwReturn** é definido como o número de marcas (99).
 
 </dd> <dt>
 
-<span id="MCI_VCR_GETDEVCAPS_SEEK_ACCURACY"></span><span id="mci_vcr_getdevcaps_seek_accuracy"></span>\_precisão de \_ busca do GETDEVCAPS VCR \_ MCI \_
+<span id="MCI_VCR_GETDEVCAPS_SEEK_ACCURACY"></span><span id="mci_vcr_getdevcaps_seek_accuracy"></span>PRECISÃO DA BUSCA \_ \_ DE GETDEVCAPS DO VCR \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwReturn** é definido como a precisão de busca do dispositivo.
+O **membro dwReturn** é definido como a precisão de busca do dispositivo.
 
 </dd> </dl>
 
-Os sinalizadores a seguir podem ser especificados no membro **dwItem** dos [**\_ \_ parâmetros MCI GETDEVCAPS**](mci-getdevcaps-parms.md) para o tipo de dispositivo de **sobreposição** :
+Os seguintes sinalizadores podem ser especificados no membro **dwItem** do [**\_ MCI GETDEVCAPS \_ PARMS**](mci-getdevcaps-parms.md) para o tipo **de** dispositivo de sobreposição:
 
 <dl> <dt>
 
-<span id="MCI_OVLY_GETDEVCAPS_CAN_FREEZE"></span><span id="mci_ovly_getdevcaps_can_freeze"></span>\_GETDEVCAPS MCI \_ OVLY \_ pode \_ congelar
+<span id="MCI_OVLY_GETDEVCAPS_CAN_FREEZE"></span><span id="mci_ovly_getdevcaps_can_freeze"></span>O MCI \_ OVLY \_ GETDEVCAPS \_ PODE \_ CONGELAR
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder congelar a imagem; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder congelar a imagem; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_OVLY_GETDEVCAPS_CAN_STRETCH"></span><span id="mci_ovly_getdevcaps_can_stretch"></span>\_GETDEVCAPS MCI \_ OVLY \_ pode \_ alongar
+<span id="MCI_OVLY_GETDEVCAPS_CAN_STRETCH"></span><span id="mci_ovly_getdevcaps_can_stretch"></span>O MCI \_ OVLY \_ GETDEVCAPS \_ PODE SER \_ ESTENDIDO
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o dispositivo puder alongar a imagem para preencher o quadro; caso contrário, ele será definido como **false**.
+O **membro dwReturn** será definido como **TRUE se** o dispositivo puder ampliar a imagem para preencher o quadro; caso contrário, ele será definido como **FALSE.**
 
 </dd> <dt>
 
-<span id="MCI_OVLY_GETDEVCAPS_MAX_WINDOWS"></span><span id="mci_ovly_getdevcaps_max_windows"></span>MCI \_ OVLY \_ GETDEVCAPS \_ Max \_ Windows
+<span id="MCI_OVLY_GETDEVCAPS_MAX_WINDOWS"></span><span id="mci_ovly_getdevcaps_max_windows"></span>MCI \_ OVLY \_ GETDEVCAPS \_ MAX \_ WINDOWS
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número máximo de janelas que o dispositivo pode manipular simultaneamente.
+O **membro dwReturn** é definido como o número máximo de janelas que o dispositivo pode manipular simultaneamente.
 
 </dd> </dl>
 
-Os sinalizadores a seguir podem ser especificados no membro **dwItem** do [**MCI \_ GETDEVCAPS \_ parms**](mci-getdevcaps-parms.md) para o tipo de dispositivo **VIDEODISC** :
+Os seguintes sinalizadores podem ser especificados no **membro dwItem** do [**MCI \_ GETDEVCAPS \_ PARMS**](mci-getdevcaps-parms.md) para o tipo de dispositivo **videodisc:**
 
 <dl> <dt>
 
-<span id="MCI_VD_GETDEVCAPS_CAN_REVERSE"></span><span id="mci_vd_getdevcaps_can_reverse"></span>o MCI de \_ VD \_ GETDEVCAPS \_ pode \_ reverter
+<span id="MCI_VD_GETDEVCAPS_CAN_REVERSE"></span><span id="mci_vd_getdevcaps_can_reverse"></span>MCI \_ VD \_ GETDEVCAPS \_ PODE \_ REVERTER
 </dt> <dd>
 
-O membro **dwReturn** será definido como **true** se o player do VIDEODISC puder reproduzir em ordem inversa; caso contrário, ele será definido como **false**. Alguns jogadores podem reproduzir discos CLV em discos inversos e CAV.
+O **membro dwReturn** será definido como **TRUE se** o player videodisc puder reproduzir ao contrário; caso contrário, ele será definido como **FALSE.** Alguns jogadores podem reproduzir discos CLV em ordem inversa, bem como discos DE VALOR.
 
 </dd> <dt>
 
-<span id="MCI_VD_GETDEVCAPS_CAV"></span><span id="mci_vd_getdevcaps_cav"></span>\_cav de VD \_ GETDEVCAPS \_ MCI
+<span id="MCI_VD_GETDEVCAPS_CAV"></span><span id="mci_vd_getdevcaps_cav"></span>MCI \_ VD \_ GETDEVCAPSLC \_
 </dt> <dd>
 
-Quando combinado com outros itens, especifica que as informações de retorno se aplicam ao formato CAV videodiscs. Esse será o padrão se nenhum VIDEODISC for inserido.
+Quando combinado com outros itens, especifica que as informações de retorno se aplica a videodiscs de formato DECOD. Esse será o padrão se nenhum videodisc for inserido.
 
 </dd> <dt>
 
-<span id="MCI_VD_GETDEVCAPS_CLV"></span><span id="mci_vd_getdevcaps_clv"></span>\_CLV de VD \_ GETDEVCAPS \_ MCI
+<span id="MCI_VD_GETDEVCAPS_CLV"></span><span id="mci_vd_getdevcaps_clv"></span>MCI \_ VD \_ GETDEVCAPS \_ CLV
 </dt> <dd>
 
-Quando combinado com outros itens, especifica que as informações de retorno se aplicam ao formato CLV videodiscs.
+Quando combinado com outros itens, especifica que as informações de retorno se aplica a videodiscs de formato CLV.
 
 </dd> <dt>
 
-<span id="MCI_VD_GETDEVCAPS_FAST_RATE"></span><span id="mci_vd_getdevcaps_fast_rate"></span>\_ \_ \_ taxa rápida de VD GETDEVCAPS do MCI \_
+<span id="MCI_VD_GETDEVCAPS_FAST_RATE"></span><span id="mci_vd_getdevcaps_fast_rate"></span>MCI \_ VD \_ GETDEVCAPS \_ FAST \_ TAXA
 </dt> <dd>
 
-O membro **dwReturn** é definido como a taxa de reprodução rápida padrão em quadros por segundo.
+O **membro dwReturn** é definido como a taxa de reprodução rápida padrão em quadros por segundo.
 
 </dd> <dt>
 
-<span id="MCI_VD_GETDEVCAPS_NORMAL_RATE"></span><span id="mci_vd_getdevcaps_normal_rate"></span>\_ \_ \_ taxa normal de VD GETDEVCAPS do MCI \_
+<span id="MCI_VD_GETDEVCAPS_NORMAL_RATE"></span><span id="mci_vd_getdevcaps_normal_rate"></span>TAXA \_ NORMAL DE \_ GETDEVCAPS \_ DA MCI VD \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como a taxa de reprodução normal em quadros por segundo.
+O **membro dwReturn** é definido como a taxa de reprodução normal em quadros por segundo.
 
 </dd> <dt>
 
-<span id="MCI_VD_GETDEVCAPS_SLOW_RATE"></span><span id="mci_vd_getdevcaps_slow_rate"></span>\_ \_ taxa lenta de GETDEVCAPS de VD do \_ MCI \_
+<span id="MCI_VD_GETDEVCAPS_SLOW_RATE"></span><span id="mci_vd_getdevcaps_slow_rate"></span>TAXA LENTA \_ DE \_ GETDEVCAPS \_ DA MCI VD \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como a taxa de reprodução lenta padrão em quadros por segundo.
+O **membro dwReturn** é definido como a taxa de reprodução lenta padrão em quadros por segundo.
 
 </dd> </dl>
 
-Os sinalizadores a seguir podem ser especificados no membro **dwItem** do [**MCI \_ GETDEVCAPS \_ parms**](mci-getdevcaps-parms.md) para o tipo de dispositivo **WaveAudio** :
+Os seguintes sinalizadores podem ser especificados no **membro dwItem** do [**MCI \_ GETDEVCAPS \_ PARMS**](mci-getdevcaps-parms.md) para o tipo de dispositivo **waveaudio:**
 
 <dl> <dt>
 
-<span id="MCI_WAVE_GETDEVCAPS_INPUT"></span><span id="mci_wave_getdevcaps_input"></span>\_ \_ entrada GETDEVCAPS do Wave MCI \_
+<span id="MCI_WAVE_GETDEVCAPS_INPUT"></span><span id="mci_wave_getdevcaps_input"></span>ENTRADA \_ \_ GETDEVCAPS DA MCI WAVE \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número total de dispositivos de entrada de onda (gravação).
+O **membro dwReturn** é definido como o número total de dispositivos de entrada de forma de onda (gravação).
 
 </dd> <dt>
 
-<span id="MCI_WAVE_GETDEVCAPS_OUTPUT"></span><span id="mci_wave_getdevcaps_output"></span>\_saída do \_ GETDEVCAPS \_ Wave MCI
+<span id="MCI_WAVE_GETDEVCAPS_OUTPUT"></span><span id="mci_wave_getdevcaps_output"></span>SAÍDA \_ \_ GETDEVCAPS DA MCI WAVE \_
 </dt> <dd>
 
-O membro **dwReturn** é definido como o número total de dispositivos de saída de onda (reprodução).
+O **membro dwReturn** é definido como o número total de dispositivos de saída de forma de onda (reprodução).
 
 </dd> </dl>
 
@@ -410,7 +410,7 @@ O membro **dwReturn** é definido como o número total de dispositivos de saída
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -418,7 +418,7 @@ O membro **dwReturn** é definido como o número total de dispositivos de saída
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Comandos MCI](mci-commands.md)

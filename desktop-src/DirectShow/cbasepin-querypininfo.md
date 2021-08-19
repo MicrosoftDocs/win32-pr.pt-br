@@ -1,7 +1,7 @@
 ---
-description: 'O método QueryPinInfo recupera informações sobre o PIN. Esse método implementa o método IPin:: QueryPinInfo.'
+description: O método QueryPinInfo recupera informações sobre o pino. Esse método implementa o método IPin::QueryPinInfo.
 ms.assetid: 9de41f61-9f03-4594-a320-2f7f0ed734fd
-title: Método CBasePin. QueryPinInfo (Amfilter. h)
+title: Método CBasePin.QueryPinInfo (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: f69977a15deb7d84b3370bb6e08c02a4e5129212
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 544039b1076848cb796f290ea98aa8aac359b26ebfb64f90a27d316a9d0cc34f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749257"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117823220"
 ---
-# <a name="cbasepinquerypininfo-method"></a>Método CBasePin. QueryPinInfo
+# <a name="cbasepinquerypininfo-method"></a>Método CBasePin.QueryPinInfo
 
-O `QueryPinInfo` método recupera informações sobre o PIN. Esse método implementa o método [**IPin:: QueryPinInfo**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo) .
+O `QueryPinInfo` método recupera informações sobre o pino. Esse método implementa o [**método IPin::QueryPinInfo.**](/windows/desktop/api/Strmif/nf-strmif-ipin-querypininfo)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,22 +42,22 @@ HRESULT QueryPinInfo(
 
 <dl> <dt>
 
-*pInfo* 
+*Pinfo* 
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ informações de PIN**](/windows/win32/api/strmif/ns-strmif-pin_info) que recebe as informações de PIN.
+Ponteiro para uma [**estrutura \_ PIN INFO**](/windows/win32/api/strmif/ns-strmif-pin_info) que recebe as informações de pin.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna S \_ OK ou o \_ ponteiro.
+Retorna S \_ OK ou E \_ POINTER.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método usa a variável de membro [**CBasePin:: m \_ pname**](cbasepin-m-pname.md) para o membro **achName** da estrutura de informações de PIN \_ .
+Esse método usa a [**variável de membro CBasePin::m \_ pName**](cbasepin-m-pname.md) para **o membro achName** da estrutura PIN \_ INFO.
 
-Quando o método retornar, se o membro **pFilter** da estrutura de \_ informações de PIN for não **nulo**, ele terá uma contagem de referência pendente. Certifique-se de liberar a interface quando terminar.
+Quando o método retorna, se o **membro pFilter** da estrutura PIN INFO for não \_ **NULL,** ele terá uma contagem de referência pendente. Certifique-se de liberar a interface quando terminar.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Quando o método retornar, se o membro **pFilter** da estrutura de \_ informaç�
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

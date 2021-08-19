@@ -4,7 +4,7 @@ description: O método importPlaylist adiciona uma playlist estática à bibliot
 ms.assetid: 0611ba42-fd8f-4fb9-9fbb-809a82775c2a
 keywords:
 - Método importPlaylist Windows Media Player
-- Método importPlaylist Windows Media Player classe , PlaylistCollection
+- Método importPlaylist Windows Media Player , classe PlaylistCollection
 - Classe PlaylistCollection Windows Media Player , método importPlaylist
 topic_type:
 - apiref

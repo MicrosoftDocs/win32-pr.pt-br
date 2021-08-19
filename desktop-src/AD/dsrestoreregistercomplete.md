@@ -85,7 +85,7 @@ Antes de reiniciar o controlador de domínio, chame essa função para fornecer 
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                               |
 | Fim do suporte do cliente<br/>    | Nenhum compatível<br/>                                                               |
 | Fim do suporte do servidor<br/>    | Nenhum compatível<br/>                                                               |
-| parâmetro<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>Ntdsbcli. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Ntdsbcli.dll</dt> </dl> |
 

@@ -1,7 +1,7 @@
 ---
-description: 'Membro CImageAllocator:: m_pFilter-a \_ variável de membro pFilter m é um ponteiro para o filtro proprietário.'
+description: Membro CImageAllocator::m_pFilter - A variável de membro m pFilter é um ponteiro \_ para o filtro de propriedade.
 ms.assetid: 57ba31bb-e047-4046-a58d-6ca39d6093f8
-title: 'Membro CImageAllocator:: m_pFilter (Winutil. h)'
+title: Membro CImageAllocator::m_pFilter (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118402663"
 ---
-# <a name="cimageallocatorm_pfilter-member"></a>Membro de CImageAllocator:: m \_ pFilter
+# <a name="cimageallocatorm_pfilter-member"></a>Membro CImageAllocator::m \_ pFilter
 
-A `m_pFilter` variável de membro é um ponteiro para o filtro proprietário.
+A `m_pFilter` variável de membro é um ponteiro para o filtro de propriedade.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ CBaseFilter *m_pFilter;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

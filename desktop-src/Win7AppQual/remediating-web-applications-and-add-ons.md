@@ -13,29 +13,29 @@ ms.locfileid: "118329611"
 ---
 # <a name="fixing-compatibility-issues-in-web-applications-and-add-ons"></a>Corrigindo problemas de compatibilidade em aplicativos Web e Add-Ons
 
-As seções a seguir descrevem como atualizar aplicativos Web e complementos para Windows Internet Explorer 8.
+as seções a seguir descrevem como atualizar aplicativos web e complementos para Windows o Internet Explorer 8.
 
 
 
 | Tópico                                                                                                                                   | Descrição                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [Corrigindo problemas de compatibilidade em aplicativos Web usando Modo de Exibição de Compatibilidade](remediating-web-applications-with-compatibility-view.md) | Descreve as etapas básicas de mitigação e como planejar a compatibilidade futura do aplicativo enquanto você está tratando quaisquer problemas agora. |
-| [Corrigindo ActiveX problemas de compatibilidade de instalação para usuários padrão](remediating-activex-installation-for-standard-users.md)          | Fornece sugestões para endereçamento ActiveX instalação.                                                                      |
-| [Renderização e alterações de layout](rendering-and-layout-changes.md)                                                                        | Descreve as alterações de renderização e layout em versões mais recentes do Windows Internet Explorer.                                         |
-| [Vetores da Versão](version-vectors.md)                                                                                                  | Descreve os vetores de versão para Internet Explorer versões.                                                                  |
-| [Cadeia de caracteres do agente do usuário](user-agent-string.md)                                                                                              | Descreve a cadeia de caracteres do agente do usuário para Internet Explorer.                                                                         |
-| [Proteção de DEP/NX](dep-nx-protection.md)                                                                                              | Descreve a DEP (Prevenção de Execução de Dados) ou Não Executar(NX).                                                                   |
-| [Compatibilidade](remediating-compatibility.md)                                                                                          | Descreve o DPE/NX no Windows Internet Explorer 7.                                                                               |
-| [Ajax](ajax.md)                                                                                                                        | Fornece considerações de compatibilidade para JavaScript e XML assíncronos (AJAX).                                              |
-| [Modo Protegido](protected-mode.md)                                                                                                    | Descreve considerações de compatibilidade com o modo protegido.                                                                    |
-| [JSON (JavaScript Object Notation)](javascript-object-notation--json-.md)                                                              | Descreve considerações de compatibilidade com JSON.                                                                              |
+| [Corrigindo problemas de compatibilidade em aplicativos Web usando o modo de exibição de compatibilidade](remediating-web-applications-with-compatibility-view.md) | Descreve as etapas básicas de mitigação e como planejar a compatibilidade de aplicativos futuras enquanto você está abordando problemas agora. |
+| [corrigindo ActiveX problemas de compatibilidade de instalação para usuários padrão](remediating-activex-installation-for-standard-users.md)          | fornece sugestões para endereçar ActiveX instalação.                                                                      |
+| [Alterações de layout e renderização](rendering-and-layout-changes.md)                                                                        | descreve a renderização e as alterações de layout em versões mais recentes do Windows Internet Explorer.                                         |
+| [Vetores da Versão](version-vectors.md)                                                                                                  | Descreve os vetores de versão para versões do Internet Explorer.                                                                  |
+| [Cadeia de caracteres do agente do usuário](user-agent-string.md)                                                                                              | Descreve a cadeia de caracteres do agente do usuário para o Internet Explorer.                                                                         |
+| [Proteção de DEP/NX](dep-nx-protection.md)                                                                                              | Descreve a prevenção de execução de dados (DEP) ou o não executar (NX).                                                                   |
+| [Compatibilidade](remediating-compatibility.md)                                                                                          | descreve o DPE/NX no Windows Internet Explorer 7.                                                                               |
+| [AJAX](ajax.md)                                                                                                                        | Fornece considerações de compatibilidade para JavaScript e XML assíncronos (AJAX).                                              |
+| [Modo protegido](protected-mode.md)                                                                                                    | Descreve considerações de compatibilidade com o modo protegido.                                                                    |
+| [JSON (JavaScript Object Notation)](javascript-object-notation--json-.md)                                                              | Descreve as considerações de compatibilidade com o JSON.                                                                              |
 
 
 
  
 
 > [!Note]  
-> A primeira seção descreve como usar Modo de Exibição de Compatibilidade. Modo de Exibição de Compatibilidade pode ajudá-lo a resolver problemas de compatibilidade se estiver migrando aplicativos Web para o Internet Explorer 8 ou se você simplesmente precisar de tempo para depurar seu aplicativo completamente enquanto se prepara para o suporte nativo do Internet Explorer 8.
+> A primeira seção descreve como usar o modo de exibição de compatibilidade. O modo de exibição de compatibilidade pode ajudá-lo a resolver problemas de compatibilidade se você estiver migrando aplicativos Web para o Internet Explorer 8 ou se simplesmente precisar de tempo para depurar seu aplicativo completamente ao se preparar para o suporte nativo do Internet Explorer 8.
 
  
 

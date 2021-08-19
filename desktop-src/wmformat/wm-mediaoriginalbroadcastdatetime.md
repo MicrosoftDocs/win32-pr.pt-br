@@ -3,7 +3,7 @@ title: WM/MediaOriginalBroadcastDateTime
 description: O atributo WM/MediaOriginalBroadcastDateTime contém a data e a hora em que o conteúdo foi transmitido.
 ms.assetid: facfdbc0-a0b9-4ec0-a285-932820b70e1c
 keywords:
-- Formato de mídia do Windows do WM/MediaOriginalBroadcastDateTime
+- Formato de mídia do Windows WM/MediaOriginalBroadcastDateTime
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118431660"
 ---
 # <a name="wmmediaoriginalbroadcastdatetime"></a>WM/MediaOriginalBroadcastDateTime
 
-O atributo **WM/MediaOriginalBroadcastDateTime** contém a data e a hora em que o conteúdo foi transmitido.
+O **atributo WM/MediaOriginalBroadcastDateTime** contém a data e a hora em que o conteúdo foi transmitido.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,11 +29,11 @@ g \_ wszWMMediaOriginalBroadcastDateTime
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é usado para difusão de televisão ou rádio.
+Esse atributo é usado para transmissão de tv ou rádio.
 
 ## <a name="see-also"></a>Confira também
 

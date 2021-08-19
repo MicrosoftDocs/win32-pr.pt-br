@@ -25,7 +25,7 @@ Uma DLL deve implementar as funções a seguir para que ela possa ser registrada
 
 Desses, os três primeiros são implementados por DirectShow. Se o modelo de fábrica fornece uma função de inicialização na variável de membro [**m \_ lpfnInit,**](cfactorytemplate-m-lpfninit.md) essa função é chamada de dentro da função de ponto de entrada DLL. Para obter mais informações sobre quando o sistema chama a função de ponto de entrada DLL, [*consulte DllMain*](/windows/desktop/Dlls/dllmain).
 
-Você deve implementar [**DllRegisterServer**](/windows/desktop/api/olectl/nf-olectl-dllregisterserver) e [**DllUnregisterServer,**](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver)mas DirectShow fornece uma função chamada [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) que faz o trabalho necessário. O componente pode simplesmente envolver essa função, conforme mostrado no exemplo a seguir:
+Você deve implementar [**DllRegisterServer**](/windows/desktop/api/olectl/nf-olectl-dllregisterserver) e [**DllUnregisterServer,**](/windows/desktop/api/olectl/nf-olectl-dllunregisterserver)mas o DirectShow fornece uma função chamada [**AMovieDllRegisterServer2**](amoviedllregisterserver2.md) que faz o trabalho necessário. O componente pode simplesmente envolver essa função, conforme mostrado no exemplo a seguir:
 
 
 ```C++
@@ -57,7 +57,7 @@ EXPORTS
 
 
 
-Você pode registrar a DLL usando o utilitário Regsvr32.exe.
+Você pode registrar a DLL usando o utilitário Regsvr32.exe aplicativo.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

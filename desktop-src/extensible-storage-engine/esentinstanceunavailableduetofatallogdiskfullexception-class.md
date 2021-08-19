@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: Classe EsentInstanceUnavailableDueToFatalLogDiskFullException'
+description: 'Saiba mais sobre: classe EsentInstanceUnavailableDueToFatalLogDiskFullException'
 title: Classe EsentInstanceUnavailableDueToFatalLogDiskFullException
 TOCTitle: EsentInstanceUnavailableDueToFatalLogDiskFullException class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableDueToFatalLogDiskFullException
@@ -33,20 +33,20 @@ ms.locfileid: "118494883"
 ---
 # <a name="esentinstanceunavailableduetofatallogdiskfullexception-class"></a>Classe EsentInstanceUnavailableDueToFatalLogDiskFullException
 
-Classe base para JET_err. Exceções InstanceUnavailableDueToFatalLogDiskFull.
+Classe base para JET_err. InstanceUnavailableDueToFatalLogDiskFull exceções.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   [System.Exception](/dotnet/api/system.exception)  
-    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
-      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft.Isam.Esent.Interop.EsentOperationException](./esentoperationexception-class.md)  
-          [Microsoft.Isam.Esent.Interop.EsentFatalException](./esentfatalexception-class.md)  
-            Microsoft.Isam.Esent.Interop.EsentInstanceUnavailableDueToFatalLogDiskFullException  
+    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
+      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  
+          [Microsoft. ISAM. ESENT. Interop. EsentFatalException](./esentfatalexception-class.md)  
+            Microsoft. ISAM. ESENT. Interop. EsentInstanceUnavailableDueToFatalLogDiskFullException  
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,6 +72,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstanceunavailableduetofatallogdiskfullexception-members.md)
+[Membros do EsentInstanceUnavailableDueToFatalLogDiskFullException](./esentinstanceunavailableduetofatallogdiskfullexception-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

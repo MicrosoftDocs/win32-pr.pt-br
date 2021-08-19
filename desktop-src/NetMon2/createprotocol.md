@@ -58,7 +58,7 @@ Uma [estrutura ENTRYPOINTS](entrypoints.md) que contém os pontos de entrada de 
 *cbEntryPoints* \[ Em\]
 </dt> <dd>
 
-O tamanho da estrutura **ENTRYPOINTS.** Monitor de Rede fornece uma macro ENTRYPOINTS SIZE que você pode \_ usar para especificar o tamanho da estrutura.
+O tamanho da estrutura **ENTRYPOINTS.** Monitor de Rede fornece uma macro ENTRYPOINTS \_ SIZE que você pode usar para especificar o tamanho da estrutura.
 
 </dd> </dl>
 

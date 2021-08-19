@@ -1,29 +1,29 @@
 ---
-description: Essa propriedade consulta o decodificador para a hora de início da alteração de taxa que foi enfileirada mais recentemente, independentemente de sua posição na fila de alteração de taxa.
+description: Essa propriedade consulta o decodificador para a hora de início da alteração de taxa que foi enfilada mais recentemente, independentemente de sua posição na fila de alteração de taxa.
 ms.assetid: 3c7006e7-48fd-4df8-b446-8ee2b024278b
-title: Propriedade AM_RATE_QueryLastRateSegPTS (DVDMedia. h)
+title: AM_RATE_QueryLastRateSegPTS propriedade (Dvdmedia.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 72c6e3e00985ba6e714bf48d349fd5af5c9593b9
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 34e7b54e618829d9768b4d08a0a76defcf2c91758be6b916b6e570b368191e89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910264"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824830"
 ---
-# <a name="am_rate_querylastratesegpts-property"></a>Propriedade de QueryLastRateSegPTS da \_ taxa de am \_
+# <a name="am_rate_querylastratesegpts-property"></a>Propriedade AM \_ RATE \_ QueryLastRateSegPTS
 
-Essa propriedade consulta o decodificador para a hora de início da alteração de taxa que foi enfileirada mais recentemente, independentemente de sua posição na fila de alteração de taxa.
+Essa propriedade consulta o decodificador para a hora de início da alteração de taxa que foi enfilada mais recentemente, independentemente de sua posição na fila de alteração de taxa.
 
-Esta propriedade é definida para a versão 1,1 deste conjunto de propriedades; consulte [**a \_ taxa de \_ UseRateVersion**](am-rate-userateversion-property.md).
+Essa propriedade é definida para a versão 1.1 deste conjunto de propriedades; consulte [**AM \_ RATE \_ UseRateVersion**](am-rate-userateversion-property.md).
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------|-------------------------------|
-| GUID do Conjunto de Propriedades | \_KSPROPSETID \_ TSRateChange |
-| ID da propriedade       | \_QueryLastRateSegPTS de taxa de am \_ |
-| Tipo de Dados         | **hora de referência \_**           |
+| GUID do Conjunto de Propriedades | AM \_ KSPROPSETID \_ TSRateChange |
+| ID da propriedade       | CONSULTA \_ RATE \_ AMLastRateSegPTS |
+| Tipo de Dados         | **TEMPO \_ DE REFERÊNCIA**           |
 
 
 
@@ -31,7 +31,7 @@ Esta propriedade é definida para a versão 1,1 deste conjunto de propriedades; 
 
 ## <a name="remarks"></a>Comentários
 
-O filtro de origem pode usar essa propriedade para sincronizar as alterações de taxa em vários fluxos de áudio e vídeo.
+O filtro de origem pode usar essa propriedade para sincronizar alterações de taxa em vários fluxos de áudio e vídeo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ O filtro de origem pode usar essa propriedade para sincronizar as alterações d
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DVDMedia. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dvdmedia.h</dt> </dl> |
 
 
 

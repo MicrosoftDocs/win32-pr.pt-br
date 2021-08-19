@@ -1,11 +1,11 @@
 ---
-title: Método Playlist.removeItem
-description: O método removeItem remove o item especificado da playlist.
+title: Método playlist. removeItem
+description: O método removeItem remove o item especificado da lista de reprodução.
 ms.assetid: 294ba4fb-967b-4a03-b0c5-6e9c15db3bff
 keywords:
-- Método removeItem Windows Media Player
-- método removeItem Windows Media Player , classe Playlist
-- Classe de playlist Windows Media Player , método removeItem
+- método removeItem Windows Media Player
+- método removeItem Windows Media Player, classe Playlist
+- classe Playlist Windows Media Player, método removeItem
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118336587"
 ---
-# <a name="playlistremoveitem-method"></a>Método Playlist.removeItem
+# <a name="playlistremoveitem-method"></a>Método playlist. removeItem
 
-O **método removeItem** remove o item especificado da playlist.
+O método **RemoveItem** remove o item especificado da lista de reprodução.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,10 +42,10 @@ Playlist.removeItem(
 
 <dl> <dt>
 
-*item* \[ Em\]
+*Item* \[ de no\]
 </dt> <dd>
 
-**Objeto de** mídia a ser removido.
+Objeto de **mídia** a ser removido.
 
 </dd> </dl>
 
@@ -55,9 +55,9 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Se o item removido for a faixa atualmente em reprodução (*Player*.**currentMedia**), a reprodução é interrompida e o próximo item na playlist se torna o atual. Se não houver nenhum próximo item, o item anterior será usado ou se não houver nenhum outro item, em seguida, *Player*. **currentMedia** é definido como **NULL.**
+Se o item removido for a faixa em execução no momento (*Player*.**currentMedia**), a reprodução é interrompida e o próximo item na playlist se torna o atual. Se não houver nenhum item seguinte, o item anterior será usado, ou se não houver outros itens, então o *Player*. **currentMedia** é definido como **NULL**.
 
-Para usar esse método, é necessário ter acesso completo à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
+Para usar esse método, é necessário ter acesso completo à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,7 +65,7 @@ Para usar esse método, é necessário ter acesso completo à biblioteca. Para o
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -74,22 +74,22 @@ Para usar esse método, é necessário ter acesso completo à biblioteca. Para o
 
 <dl> <dt>
 
-[**Player.currentMedia**](player-currentmedia.md)
+[**Player. currentMedia**](player-currentmedia.md)
 </dt> <dt>
 
-[**Objeto Playlist**](playlist-object.md)
+[**Objeto playlist**](playlist-object.md)
 </dt> <dt>
 
-[**Playlist.insertItem**](playlist-insertitem.md)
+[**Playlist. insertItem**](playlist-insertitem.md)
 </dt> <dt>
 
-[**Playlist.item**](playlist-item.md)
+[**Lista de reprodução. Item**](playlist-item.md)
 </dt> <dt>
 
-[**Configurações.mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Configurações.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

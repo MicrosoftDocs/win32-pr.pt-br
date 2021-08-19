@@ -1,17 +1,17 @@
 ---
 description: Especifica o número de passagens que o codificador usará para codificar o conteúdo.
 ms.assetid: 71a21976-ed92-4cd6-946c-fa6268895531
-title: Propriedade MFPKEY_PASSESUSED (Wmcodecdsp. h)
+title: MFPKEY_PASSESUSED propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6cb09949049db1910a419becec3423b0bb7c365
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94ab020c4b683dc87ced3ffda8665b6b0e62b65cf81001c23c00b39f64ba146b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873040"
 ---
-# <a name="mfpkey_passesused-property"></a>\_Propriedade MFPKEY PASSESUSED
+# <a name="mfpkey_passesused-property"></a>Propriedade MFPKEY \_ PASSESUSED
 
 Especifica o número de passagens que o codificador usará para codificar o conteúdo. Leitura/gravação.
 
@@ -21,7 +21,7 @@ g \_ wszWMVCPassesUsed
 
 ## <a name="data-type"></a>Tipo de Dados
 
-\_I4 VT
+VT \_ I4
 
 ## <a name="default-value"></a>Valor padrão
 
@@ -29,7 +29,7 @@ g \_ wszWMVCPassesUsed
 
 ## <a name="remarks"></a>Comentários
 
-Este valor não pode exceder o valor de [MFPKEY \_ PASSESRECOMMENDED](mfpkey-passesrecommendedproperty.md).
+Esse valor não pode exceder o valor [de MFPKEY \_ PASSESRECOMMENDED](mfpkey-passesrecommendedproperty.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ Este valor não pode exceder o valor de [MFPKEY \_ PASSESRECOMMENDED](mfpkey-pas
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -47,7 +47,7 @@ Este valor não pode exceder o valor de [MFPKEY \_ PASSESRECOMMENDED](mfpkey-pas
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

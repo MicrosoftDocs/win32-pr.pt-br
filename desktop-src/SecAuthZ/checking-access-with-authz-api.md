@@ -4,12 +4,12 @@ ms.assetid: dad0a102-08ed-4cd2-bef5-87bc48fc7fc2
 title: Verificando o acesso com a API AuthZ
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e129b690a7c1f701b5f669a8f0705c5a5e9a2eec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 876c3b5305e33969f63932fdc9e1e4f6767c95a64b11272283420a377b39f795
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117783092"
 ---
 # <a name="checking-access-with-authz-api"></a>Verificando o acesso com a API AuthZ
 
@@ -25,9 +25,9 @@ Se a DACL ( [*lista de controle de acesso discricionário*](/windows/desktop/Sec
 
 Uma função de retorno de chamada permite que um aplicativo defina a lógica de negócios a ser avaliada em tempo de execução. Quando a função [**AuthzAccessCheckCallback**](authzaccesscheckcallback.md) for chamada, a ACE de retorno de chamada que causou a chamada será passada para a função de retorno de chamada para avaliação. Se a lógica definida pelo aplicativo for avaliada como **verdadeira**, a ACE de retorno de chamada será incluída na verificação de acesso. Caso contrário, será ignorada.
 
-## <a name="caching-access-results"></a>Cache de resultados de acesso
+## <a name="caching-access-results"></a>Caching Resultados de acesso
 
-Os resultados de uma verificação de acesso podem ser armazenados em cache e usados em chamadas futuras para a função [**AuthzCachedAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck) . Para obter mais informações sobre o cache de verificações de acesso, incluindo um exemplo, consulte [Caching Access checks](caching-access-checks.md).
+Os resultados de uma verificação de acesso podem ser armazenados em cache e usados em chamadas futuras para a função [**AuthzCachedAccessCheck**](/windows/desktop/api/Authz/nf-authz-authzcachedaccesscheck) . para obter mais informações sobre o cache de verificações de acesso, incluindo um exemplo, consulte [Caching verificações de acesso](caching-access-checks.md).
 
 ## <a name="example"></a>Exemplo
 
@@ -118,7 +118,7 @@ BOOL CheckAccess(AUTHZ_CLIENT_CONTEXT_HANDLE hClientContext)
 [Adicionando SIDs a um contexto de cliente](adding-sids-to-a-client-context.md)
 </dt> <dt>
 
-[Cache de verificações de acesso](caching-access-checks.md)
+[Caching Verificações de acesso](caching-access-checks.md)
 </dt> <dt>
 
 [Inicializando um contexto de cliente](initializing-a-client-context.md)

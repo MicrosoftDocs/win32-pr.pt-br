@@ -1,6 +1,6 @@
 ---
 title: Status da função
-description: As funções de gerenciamento de rede retornam zero em caso de êxito; um código de retorno não zero indica um erro. Como as funções de gerenciamento de rede usam RPC, as definições de erro incluem códigos de erro RPC. Para obter mais informações, consulte Códigos de erro de gerenciamento de rede.
+description: As funções de gerenciamento de rede retornam zero em caso de êxito; um código de retorno diferente de zero indica um erro. Como as funções de gerenciamento de rede usam RPC, as definições de erro incluem códigos de erro RPC. Para obter mais informações, consulte códigos de erro de gerenciamento de rede.
 ms.assetid: 193ffba5-ff8f-48fb-839e-a162aae58a8f
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "117797342"
 ---
 # <a name="function-status"></a>Status da função
 
-As funções de gerenciamento de rede retornam zero em caso de êxito; um código de retorno não zero indica um erro. Como as funções de gerenciamento de rede usam RPC, as definições de erro incluem códigos de erro RPC. Para obter mais informações, consulte [Códigos de erro de gerenciamento de rede](network-management-error-codes.md).
+As funções de gerenciamento de rede retornam zero em caso de êxito; um código de retorno diferente de zero indica um erro. Como as funções de gerenciamento de rede usam RPC, as definições de erro incluem códigos de erro RPC. Para obter mais informações, consulte [códigos de erro de gerenciamento de rede](network-management-error-codes.md).
 
  
 

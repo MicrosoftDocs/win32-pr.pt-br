@@ -25,7 +25,7 @@ ms.locfileid: "117827649"
 -   [**GetFileSizeFromContext**](/windows/desktop/api/Filehc/nf-filehc-getfilesizefromcontext)
 -   [**InitializeCache**](/windows/desktop/api/Filehc/nf-filehc-initializecache)
 -   [**InsertFile**](/windows/desktop/api/Filehc/nf-filehc-insertfile)
--   [**Invalidaname**](/windows/desktop/api/Filehc/nf-filehc-invalidatename)
+-   [**InvalidateName**](/windows/desktop/api/Filehc/nf-filehc-invalidatename)
 -   [**ProduceDotStuffedContext**](/windows/desktop/api/Filehc/nf-filehc-producedotstuffedcontext)
 -   [**ReleaseNameCache**](/windows/desktop/api/Filehc/nf-filehc-releasenamecache)
 -   [**SetDotStuffState**](/windows/desktop/api/Filehc/nf-filehc-setdotstuffstate)

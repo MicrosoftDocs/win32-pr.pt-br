@@ -1,9 +1,9 @@
 ---
-title: Por que um decodificador DMO não aceita o formato de entrada que eu defini
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Por que um decodificador DMO não aceita o formato de entrada que eu defini
+title: por que um decodificador não DMO aceitar o formato de entrada que defini
+description: para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte Windows áudio de mídia e o Codec de vídeo e APIs do DSP. | por que um decodificador não DMO aceitar o formato de entrada que defini
 ms.assetid: 54cdc68c-bcad-43da-a584-3ab3a2ef5534
 keywords:
-- Por que um decodificador DMO não aceita o formato de entrada que defini o formato de mídia do Windows
+- por que um decodificador não DMO aceitar o formato de entrada que defini o formato de mídia do windows
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 085071059c2c0bb0bfc8b6ad4b4329b836d80663
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 9049ee9b1a258581999f9d0b12eef8b1eec2d0fd3747b783c9d9d583afc65fd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105760920"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118431953"
 ---
-# <a name="why-does-a-decoder-dmo-not-accept-the-input-format-that-i-set"></a>Por que um decodificador DMO não aceita o formato de entrada que eu defini?
+# <a name="why-does-a-decoder-dmo-not-accept-the-input-format-that-i-set"></a>por que um decodificador não DMO aceitar o formato de entrada que eu defini?
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+para obter a documentação atual sobre codecs de mídia Windows e processadores de sinal digitais, consulte [Windows áudio de mídia e o Codec de vídeo e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

@@ -4,12 +4,12 @@ ms.assetid: a9e5ad4d-61c6-43ed-a162-460683bcdb16
 title: Herança de ACE
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d6462ed9523c94090924981db252b938f2056cf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bd239801ea15dddb142c42d86e1aa44d0d644e5d217c50fc7c9cf9388747e45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785377"
 ---
 # <a name="ace-inheritance"></a>Herança de ACE
 
@@ -22,7 +22,7 @@ Essas regras foram aprimoradas com os seguintes recursos:
 -   Suporte para [propagação automática de ACEs herdáveis](automatic-propagation-of-inheritable-aces.md).
 -   Um sinalizador que diferencia as ACEs herdadas e as ACEs que foram aplicadas diretamente a um objeto.
 -   ACEs específicas de objeto que permitem especificar o tipo de objeto filho que pode herdar a ACE.
--   A capacidade de impedir que uma DACL ou SACL herde ACEs Configurando os bits SE protegidos por \_ DACL \_ ou se \_ protegidos por SACL \_ nos bits de controle [*do descritor de segurança*](/windows/desktop/SecGloss/s-gly) , exceto para ACE de atributo de recurso do sistema \_ \_ \_ e \_ \_ Ace ID de política no escopo do sistema \_ \_ .
+-   a capacidade de impedir que uma dacl ou SACL herde ACEs definindo o ES \_ dacl \_ protegido ou ES \_ bits protegidos por SACL \_ nos bits de controle [*do descritor de segurança*](/windows/desktop/SecGloss/s-gly) , exceto para ace de atributo de recurso do sistema \_ \_ \_ e \_ \_ ace ID de política no escopo do sistema \_ \_ .
 
  
 

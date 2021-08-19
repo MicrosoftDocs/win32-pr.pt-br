@@ -4,17 +4,17 @@ ms.assetid: c341538e-0b33-4173-a5ca-56b3f7305022
 title: Propriedade AspectRatio
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 874a0656f73ddbb987e8e7f1cc4631f85987a8ce
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: ce010e686d596426a8b96de5dc3a37d2469568e67a7ce7979c53b620708c476f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105759575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117824415"
 ---
 # <a name="aspectratio-property"></a>Propriedade AspectRatio
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

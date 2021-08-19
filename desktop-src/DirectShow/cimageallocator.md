@@ -1,7 +1,7 @@
 ---
-description: A classe CImageAllocator implementa um alocador que gerencia bitmaps independentes de dispositivo (DIBs) do GDI. Essa classe deriva da classe CBaseAllocator. Ele cria amostras de mídia que são implementadas usando a classe CImageSample.
+description: A classe CImageAllocator implementa um alocador que gerencia DIBs (bitmaps independentes de dispositivo) GDI. Essa classe deriva da classe CBaseAllocator. Ele cria exemplos de mídia que são implementados usando a classe CImageSample.
 ms.assetid: edda34a5-3916-4a41-9e2f-a19f12df0947
-title: Classe CImageAllocator (Winutil. h)
+title: Classe CImageAllocator (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,40 +16,40 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ea37dfe8cbbc7baf90e6065f0c54af1a60c3284b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 383b9c2ca992db66e7bf397e42dcb8aaaa4bdb66251ddfd67f4b5175d87058aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118402574"
 ---
 # <a name="cimageallocator-class"></a>Classe CImageAllocator
 
-![hierarquia de classe cimageallocator](images/wutil04.png)
+![Hierarquia de classes cimageallocator](images/wutil04.png)
 
-A `CImageAllocator` classe implementa um alocador que gerencia bitmaps (DIBs) independentes de dispositivo GDI. Essa classe deriva da classe [**CBaseAllocator**](cbaseallocator.md) . Ele cria amostras de mídia que são implementadas usando a classe [**CImageSample**](cimagesample.md) .
+A `CImageAllocator` classe implementa um alocador que gerencia DIBs (bitmaps independentes de dispositivo) GDI. Essa classe deriva da [**classe CBaseAllocator.**](cbaseallocator.md) Ele cria exemplos de mídia que são implementados usando a [**classe CImageSample.**](cimagesample.md)
 
-Um alocador é compartilhado por dois Pins conectados, mas sempre é de propriedade de um dos filtros na conexão. Um filtro que o usa `CImageAllocator` deve controlar se o alocador foi fornecido por si próprio ou por outro filtro. Se o alocador tiver sido fornecido por si só, o filtro proprietário poderá contar com o fato de que todas as amostras de mídia do alocador são objetos **CImageSample** . Portanto, ele pode usar o objeto **CImageSample** para obter informações sobre o DIB, que é armazenado em uma estrutura [**DIBDATA**](dibdata.md) .
+Um alocador é compartilhado por dois pinos conectados, mas sempre pertence a um dos filtros na conexão. Um filtro que usa deve controlar se o alocador foi fornecido por si mesmo `CImageAllocator` ou pelo outro filtro. Se o alocador foi fornecido por si só, o filtro de propriedade pode contar com o fato de que todos os exemplos de mídia do alocador são **objetos CImageSample.** Portanto, ele pode usar o **objeto CImageSample** para obter informações sobre o DIB, que é armazenado em uma [**estrutura DIBDATA.**](dibdata.md)
 
-O filtro proprietário deve chamar **NotifyMediaType** sempre que o tipo de mídia for alterado.
+O filtro de propriedade deve chamar **NotifyMediaType** sempre que o tipo de mídia mudar.
 
 
 
-| Variáveis de membro protegido                                     | Descrição                                                              |
+| Variáveis de membro protegidas                                     | Descrição                                                              |
 |----------------------------------------------------------------|--------------------------------------------------------------------------|
-| [**\_pFilter m**](cimageallocator-m-pfilter.md)                | Ponteiro para o filtro proprietário.                                            |
-| [**\_pMediaType m**](cimageallocator-m-pmediatype.md)          | Ponteiro para o tipo de mídia atual.                                       |
+| [**m \_ pFilter**](cimageallocator-m-pfilter.md)                | Ponteiro para o filtro de propriedade.                                            |
+| [**m \_ pMediaType**](cimageallocator-m-pmediatype.md)          | Ponteiro para o tipo de mídia atual.                                       |
 | Métodos Protegidos                                              | Descrição                                                              |
-| [**Alocação**](cimageallocator-alloc.md)                         | Aloca memória para os buffers.                                        |
-| [**CheckSizes**](cimageallocator-checksizes.md)               | Verifica as propriedades de alocador no tipo de mídia atual.              |
+| [**Alloc**](cimageallocator-alloc.md)                         | Aloca memória para os buffers.                                        |
+| [**CheckSizes**](cimageallocator-checksizes.md)               | Verifica as propriedades do alocador em relação ao tipo de mídia atual.              |
 | [**CreateDIB**](cimageallocator-createdib.md)                 | Cria um DIB.                                                           |
-| [**CreateImageSample**](cimageallocator-createimagesample.md) | Cria um exemplo de mídia. VirtuaisLUNs.                                         |
-| [**Gratuita**](cimageallocator-free.md)                           | Libera toda a memória do buffer.                                       |
+| [**CreateImageSample**](cimageallocator-createimagesample.md) | Cria um exemplo de mídia. Virtual.                                         |
+| [**Gratuito**](cimageallocator-free.md)                           | Libera toda a memória do buffer.                                       |
 | Métodos públicos                                                 | Descrição                                                              |
-| [**CImageAllocator**](cimageallocator-cimageallocator.md)     | Método de construtor.                                                      |
+| [**CImageAllocator**](cimageallocator-cimageallocator.md)     | Método do construtor.                                                      |
 | [**NotifyMediaType**](cimageallocator-notifymediatype.md)     | Informa o objeto do tipo de mídia atual.                            |
 | Métodos IMemAllocator                                          | Descrição                                                              |
-| [**SetProperties**](cimageallocator-setproperties.md)         | Especifica o número de buffers a serem alocados e o tamanho de cada buffer. |
+| [**SetProperties**](cimageallocator-setproperties.md)         | Especifica o número de buffers a alocar e o tamanho de cada buffer. |
 
 
 
@@ -61,8 +61,8 @@ O filtro proprietário deve chamar **NotifyMediaType** sempre que o tipo de míd
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

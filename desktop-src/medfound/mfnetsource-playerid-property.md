@@ -1,17 +1,17 @@
 ---
-description: O valor do campo &\# 0034; c-playerid&\# 0034; que a fonte de rede usa para o registro em log.
+description: O valor do campo &\# 0034;c-playerid&0034; que a fonte de rede usa para \# registro em log.
 ms.assetid: de52cc34-9b88-41ae-b8b8-ef5dff85892c
-title: Propriedade MFNETSOURCE_PLAYERID (Mfidl. h)
+title: MFNETSOURCE_PLAYERID propriedade (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d20754c93057ef3f000fc9c7201cda7ec287eec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e1fc9afc79dec48a3ee19b007d2d1e04c0ccc35ab9a2bdd04c6699cd1ff65fea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874610"
 ---
-# <a name="mfnetsource_playerid-property"></a>\_Propriedade MFNETSOURCE playerid
+# <a name="mfnetsource_playerid-property"></a>Propriedade PLAYERID MFNETSOURCE \_
 
 O valor do campo "c-playerid" que a fonte de rede usa para registro em log. Os aplicativos podem definir essa propriedade como qualquer valor de cadeia de caracteres.
 
@@ -19,13 +19,13 @@ O valor do campo "c-playerid" que a fonte de rede usa para registro em log. Os a
 
 Tipo de dados
 
-Tipo PROPVARIANT (VT)
+Tipo PROPVARIANT (vt)
 
 Membro PROPVARIANT
 
 Cadeia de caracteres largos (**WCHAR** \* )
 
-LPWStr do VT \_
+VT \_ LPWSTR
 
 **pwszVal**
 
@@ -33,9 +33,9 @@ LPWStr do VT \_
 
 ## <a name="remarks"></a>Comentários
 
-A constante **MFNETSOURCE \_ playerid** define o GUID para essa chave de propriedade. O identificador de propriedade (PID) é zero.
+A constante **MFNETSOURCE \_ PLAYERID** define o GUID para essa chave de propriedade. O PID (identificador de propriedade) é zero.
 
-Os aplicativos podem usar essa propriedade para configurar a origem da rede. Para definir a propriedade, passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma origem de mídia](configuring-a-media-source.md).
+Os aplicativos podem usar essa propriedade para configurar a origem da rede. Para definir a propriedade , passe um ponteiro **IPropertyStore** para o resolvedor de origem. Para obter mais informações, consulte [Configurando uma fonte de mídia](configuring-a-media-source.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Os aplicativos podem usar essa propriedade para configurar a origem da rede. Par
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -53,10 +53,10 @@ Os aplicativos podem usar essa propriedade para configurar a origem da rede. Par
 
 <dl> <dt>
 
-[Log de cliente](client-logging.md)
+[Registro em log do cliente](client-logging.md)
 </dt> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
 [Rede em Media Foundation](networking-in-media-foundation.md)

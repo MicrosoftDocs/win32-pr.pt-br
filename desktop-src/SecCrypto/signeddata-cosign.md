@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 1ab2a24a20fd65fad9622b775bedc59cfa28301a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ed4feb55420ebf9d3bc43496fe3004a4d1b55e1ae8add4e3d5b40ec2ac4ba4ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105770327"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117973886"
 ---
 # <a name="signeddatacosign-method"></a>Método SignedData. cosign
 
@@ -68,7 +68,7 @@ Um valor da enumeração [**do \_ \_ tipo de codificação capicor**](capicom-en
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna uma cadeia de caracteres que contém os dados codificados e assinados.
 
@@ -87,8 +87,8 @@ Os seguintes resultados se aplicam ao valor do parâmetro de *signatário* :
 
 -   Se o parâmetro de *signatário* não for **nulo**, esse método usará a chave privada apontada pelo certificado associado para criptografar a coassinatura. Se a chave privada apontada pelo certificado não estiver disponível, o método falhará.
 -   Se o parâmetro de *signatário* for **nulo** e houver exatamente um certificado no usuário atual \_ meu repositório que tenha acesso a uma chave privada, esse certificado será usado para criar a coassinatura.
--   Se o parâmetro de *signatário* for **nulo**, o valor da propriedade [**Settings. EnablePromptForCertificateUI**](settings-enablepromptforcertificateui.md) for true e houver mais de um certificado no usuário atual \_ My Store com uma chave privada disponível, será exibida uma caixa de diálogo que permite ao usuário selecionar qual certificado será usado.
--   Se o parâmetro de *signatário* for **nulo** e a propriedade [**Settings. EnablePromptForCertificateUI**](settings-enablepromptforcertificateui.md) for false, o método falhará.
+-   se o parâmetro de *signatário* for **nulo**, o [**Configurações.**](settings-enablepromptforcertificateui.md)O valor da propriedade EnablePromptForCertificateUI é true e há mais de um certificado no usuário atual \_ meu repositório com uma chave privada disponível, uma caixa de diálogo é exibida para permitir que o usuário selecione qual certificado será usado.
+-   se o parâmetro de *signatário* for **nulo** e o [**Configurações.**](settings-enablepromptforcertificateui.md)A propriedade EnablePromptForCertificateUI é false, o método falha.
 -   Se o parâmetro de *signatário* for **nulo** e não houver nenhum certificado no \_ usuário atual, meu repositório com uma chave privada disponível, o método falhará.
 
 ## <a name="requirements"></a>Requisitos
@@ -97,7 +97,7 @@ Os seguintes resultados se aplicam ao valor do parâmetro de *signatário* :
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

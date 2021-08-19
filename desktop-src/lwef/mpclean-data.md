@@ -1,10 +1,10 @@
 ---
-title: Estrutura de MPCLEAN_DATA (MpClient. h)
+title: MPCLEAN_DATA estrutura (MpClient.h)
 description: Dados de notificação passados para a função de retorno de chamada limpa.
 ms.assetid: 475A6525-5BD8-4B29-A684-53EE2758C790
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPCLEAN_DATA
-- Ponteiro de estrutura de PMPCLEAN_DATA recursos de ambiente herdados do Windows
+- MPCLEAN_DATA estrutura herdada Windows recursos de ambiente
+- PMPCLEAN_DATA de estrutura herdada Windows recursos de ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89f0c7e867918b6567279be7c41ce72e7e396576
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6ece20324fc06fb68a813b374a698b2e27264068c9051bb2a5fff328c7ad328d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644531"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118476334"
 ---
-# <a name="mpclean_data-structure"></a>\_Estrutura de dados MPCLEAN
+# <a name="mpclean_data-structure"></a>Estrutura MPCLEAN \_ DATA
 
 Dados de notificação passados para a função de retorno de chamada limpa.
 
@@ -44,47 +44,47 @@ typedef struct tagMPCLEAN_DATA {
 
 <dl> <dt>
 
-**Threatid**
+**ThreatID**
 </dt> <dd>
 
-Tipo: **\_ ID de MPTHREAT**
+Tipo: **\_ ID MPTHREAT**
 
 </dd> <dd>
 
-Identificador de ameaça para o **mpnotify \_ limpar \_ ameaça \_ Iniciar** / **mpnotify limpeza de ameaça \_ \_ \_ bem-sucedida** / **mpnotify eventos \_ \_ \_ com falha de limpeza de ameaça** . O bit superior é definido para identificar ameaças relacionadas ao antivírus.
+Identificador de ameaça para os eventos **MPNOTIFY \_ CLEAN \_ THREAT \_ START** / **MPNOTIFY \_ CLEAN THREAT \_ \_ SUCCEEDED** / **MPNOTIFY \_ CLEAN THREAT \_ \_ FAILED.** O bit superior é definido para identificar ameaças relacionadas ao antivírus.
 
 </dd> <dt>
 
-**Threataction**
+**ThreatAction**
 </dt> <dd>
 
-Tipo: **[ **\_ ação MPTHREAT**](mpthreat-action.md)**
+Tipo: **[ **MPTHREAT \_ ACTION**](mpthreat-action.md)**
 
 </dd> <dd>
 
-Ação de ameaça para o **mpnotify \_ limpar \_ ameaça \_ Iniciar** / **mpnotify limpeza de ameaça \_ \_ \_ bem-sucedida** / **mpnotify eventos \_ \_ \_ com falha de limpeza de ameaça** . Consulte [**a \_ ação MPTHREAT**](mpthreat-action.md).
+Ação de ameaça para os **eventos MPNOTIFY \_ CLEAN THREAT \_ \_ START** / **MPNOTIFY \_ CLEAN THREAT \_ \_ SUCCEEDED** / **MPNOTIFY \_ CLEAN THREAT \_ \_ FAILED.** Consulte [**MPTHREAT \_ ACTION**](mpthreat-action.md).
 
 </dd> <dt>
 
-**dwStatus**
+**Dwstatus**
 </dt> <dd>
 
 Tipo: **DWORD**
 
 </dd> <dd>
 
-Status ou ações adicionais associadas à ação executada. Essa é uma combinação de sinalizadores de bit [**do \_ sinalizador MPSTATUS**](mpstatus-flag.md).
+Status ou ações adicionais associadas à ação tomada. Essa é uma combinação de sinalizadores de bits do [**SINALIZADOR MPSTATUS \_**](mpstatus-flag.md).
 
 </dd> <dt>
 
 **ResourceInfo**
 </dt> <dd>
 
-Tipo: **\_ informações de PMPRESOURCE**
+Tipo: **PMPRESOURCE \_ INFO**
 
 </dd> <dd>
 
-Informações de recurso para a **mpnotify \_ limpeza de \_ ameaça \_ Iniciar** / **mpnotify limpeza de ameaça \_ \_ \_ bem-sucedida** / **mpnotify eventos \_ \_ \_ com falha de limpeza de ameaça** . Consulte [**MPRESOURCE \_ info**](mpresource-info.md).
+Informações de recurso para os **eventos MPNOTIFY \_ CLEAN THREAT \_ \_ START** / **MPNOTIFY \_ CLEAN THREAT \_ \_ SUCCEEDED** / **MPNOTIFY \_ CLEAN THREAT \_ \_ FAILED.** Consulte [**INFORMAÇÕES DO MPRESOURCE. \_**](mpresource-info.md)
 
 </dd> </dl>
 
@@ -94,9 +94,9 @@ Informações de recurso para a **mpnotify \_ limpeza de \_ ameaça \_ Iniciar**
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 
@@ -104,13 +104,13 @@ Informações de recurso para a **mpnotify \_ limpeza de \_ ameaça \_ Iniciar**
 
 <dl> <dt>
 
-[**informações de MPRESOURCE \_**](mpresource-info.md)
+[**INFORMAÇÕES DO MPRESOURCE \_**](mpresource-info.md)
 </dt> <dt>
 
-[**\_sinalizador MPSTATUS**](mpstatus-flag.md)
+[**SINALIZADOR \_ MPSTATUS**](mpstatus-flag.md)
 </dt> <dt>
 
-[**\_ação MPTHREAT**](mpthreat-action.md)
+[**AÇÃO \_ MPTHREAT**](mpthreat-action.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Função MpUpdateControl (MpClient. h)
-description: Permite o controle de uma operação de atualização de assinatura que foi iniciada de forma assíncrona via MpUpdateStart.
+title: Função MpUpdateControl (MpClient.h)
+description: Permite o controle de uma operação de atualização de assinatura iniciada de forma assíncrona por meio de MpUpdateStart.
 ms.assetid: 2780E472-6E8D-4839-88EE-46E3448C6BF5
 keywords:
-- Recursos do ambiente Windows herdado da função MpUpdateControl
+- Funcionalidade mpUpdateControl herdado Windows ambiente
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 91ea28c6ace349fd04fb9241d7eddbe7c1e5fbbe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 69926f26b470ba41226883bdb32fab13c5d776858595c256fe70e7f95e898c04
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118476268"
 ---
 # <a name="mpupdatecontrol-function"></a>Função MpUpdateControl
 
-Permite o controle de uma operação de atualização de assinatura que foi iniciada de forma assíncrona via [**MpUpdateStart**](mpupdatestart.md). Chamar essa função requer privilégio de administrador, pois permite o cancelamento de uma atualização de assinatura em todo o sistema.
+Permite o controle de uma operação de atualização de assinatura iniciada de forma assíncrona por meio [**de MpUpdateStart**](mpupdatestart.md). Chamar essa função requer privilégio de administrador, pois permite o cancelamento de uma atualização de assinatura em todo o sistema.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,16 +41,16 @@ HRESULT WINAPI MpUpdateControl(
 
 <dl> <dt>
 
-*hUpdateHandle* \[ no\]
+*hUpdateHandle* \[ Em\]
 </dt> <dd>
 
 Tipo: **MPHANDLE**
 
-Identificador para uma operação de atualização de assinatura assíncrona. Esse identificador é retornado pela função [**MpScanStart**](mpscanstart.md) .
+Lidar com uma operação de atualização de assinatura assíncrona. Esse handle é retornado pela [**função MpScanStart.**](mpscanstart.md)
 
 </dd> <dt>
 
-*UpdateControl* \[ no\]
+*UpdateControl* \[ Em\]
 </dt> <dd>
 
 Tipo: **MPCONTROL**
@@ -61,7 +61,7 @@ Especifica a opção de controle de atualização de assinatura. Ele deve ser o 
 
 | Valor                                                                                                                                                               | Significado                                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| <span id="MPCONTROL_ABORT"></span><span id="mpcontrol_abort"></span><dl> <dt>**\_anular MPCONTROL**</dt> </dl> | Anule a operação de atualização de assinatura.<br/> |
+| <span id="MPCONTROL_ABORT"></span><span id="mpcontrol_abort"></span><dl> <dt>**MPCONTROL \_ ABORT**</dt> </dl> | Anular a operação de atualização de assinatura.<br/> |
 
 
 
@@ -69,13 +69,13 @@ Especifica a opção de controle de atualização de assinatura. Ele deve ser o 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
-Se a função for bem sucedido, o valor de retorno será **S \_ OK**.
+Se a função for bem-sucedida, o valor de retorno **será S \_ OK.**
 
-Se a função falhar, o valor de retorno será um código **HRESULT** com falha. O chamador pode usar a função [**MpErrorMessageFormat**](mperrormessageformat.md) para obter uma descrição genérica da mensagem de erro.
+Se a função falhar, o valor de retorno será um código **HRESULT com** falha. O chamador pode usar a [**função MpErrorMessageFormat**](mperrormessageformat.md) para obter uma descrição genérica da mensagem de erro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,9 +83,9 @@ Se a função falhar, o valor de retorno será um código **HRESULT** com falha.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MpClient.dll</dt> </dl> |
 
 

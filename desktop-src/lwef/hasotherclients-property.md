@@ -4,16 +4,16 @@ description: Propriedade HasOtherClients
 ms.assetid: 5ecc6f42-786b-40a6-8800-9ad0d92edfb2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc3434cec191d2bec93d501847df064a8dbbf3e2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bf7bb91240ade815c00fb2e36adf1466dcb30ba4240be038342906be49e6ff2a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118479001"
 ---
 # <a name="hasotherclients-property"></a>Propriedade HasOtherClients
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna se o caractere especificado está sendo usado por outros aplicativos.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente* do. **Caracteres ("***characterid***"). HasOtherClients**
+*agente* do. **Caracteres ("**_characterid_*_"). HasOtherClients_*
 
 
 
@@ -38,7 +38,7 @@ Retorna se o caractere especificado está sendo usado por outros aplicativos.
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -46,9 +46,9 @@ Retorna se o caractere especificado está sendo usado por outros aplicativos.
 
 Você pode usar essa propriedade para determinar se seu aplicativo é o único ou o último cliente do caractere, quando mais de um aplicativo está compartilhando (carregado) o mesmo caractere.
 
- 
+ 
 
- 
+ 
 
 
 

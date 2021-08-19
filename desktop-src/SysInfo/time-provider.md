@@ -1,19 +1,19 @@
 ---
-description: O sistema operacional Microsoft Windows oferece suporte a uma variedade de dispositivos de hardware e protocolos de tempo de rede usando a arquitetura de provedor de tempo.
+description: o sistema operacional Microsoft Windows fornece suporte para uma variedade de dispositivos de hardware e protocolos de tempo de rede usando a arquitetura do provedor de tempo.
 ms.assetid: a7575373-eeda-4f2a-85e5-d1b50994e7ae
 title: Provedor de tempo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c844e2c4d0d49e87e978a47621338b167c4f5a23
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 67f2073e94bdf893793b4ae1df2974226aa197de4ff429be9ce8f2a2e4b5f597
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829520"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117957900"
 ---
 # <a name="time-provider"></a>Provedor de tempo
 
-O sistema operacional Microsoft Windows oferece suporte a uma variedade de dispositivos de hardware e protocolos de tempo de rede usando a arquitetura de *provedor de tempo* . Provedores de tempo de entrada recuperam carimbos de data/hora precisos do hardware ou da rede, e provedores de tempo de saída fornecem carimbos de data/hora para outros clientes na rede.
+o sistema operacional Microsoft Windows fornece suporte para uma variedade de dispositivos de hardware e protocolos de tempo de rede usando a arquitetura do *provedor de tempo* . Provedores de tempo de entrada recuperam carimbos de data/hora precisos do hardware ou da rede, e provedores de tempo de saída fornecem carimbos de data/hora para outros clientes na rede.
 
 Os provedores de tempo são gerenciados pelo *Gerenciador de provedores de tempo*. Ele é responsável por carregar, iniciar e parar provedores de tempo conforme orientado pelo Gerenciador de controle de serviços. Essa interface torna mais fácil escrever um provedor de tempo do que escrever um serviço completo.
 

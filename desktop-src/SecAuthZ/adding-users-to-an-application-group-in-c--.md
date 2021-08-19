@@ -1,23 +1,23 @@
 ---
-description: No Gerenciador de autorização, um grupo de aplicativos é um grupo de usuários e grupos de usuários. Um grupo de aplicativos pode conter outros grupos de aplicativos, para que os grupos de usuários possam ser aninhados.
+description: No Gerenciador de Autorização, um grupo de aplicativos é um grupo de usuários e grupos de usuários. Um grupo de aplicativos pode conter outros grupos de aplicativos para que os grupos de usuários possam ser aninhados.
 ms.assetid: b01883d6-eae6-4f3a-b269-90c22827f116
-title: Adicionando usuários a um grupo de aplicativos em C++
+title: Adicionando usuários a um grupo de aplicativos no C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7fa08ddd93ba1743a20e3eb14a5f62344741c90
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4f8031ceea265240cb9fbefc7236ad301b64f86f2306f7fd9a819b6d8e257a85
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117784891"
 ---
-# <a name="adding-users-to-an-application-group-in-c"></a>Adicionando usuários a um grupo de aplicativos em C++
+# <a name="adding-users-to-an-application-group-in-c"></a>Adicionando usuários a um grupo de aplicativos no C++
 
-No Gerenciador de autorização, um grupo de aplicativos é um grupo de usuários e grupos de usuários. Um grupo de aplicativos pode conter outros grupos de aplicativos, para que os grupos de usuários possam ser aninhados. Um grupo de aplicativos é representado por um objeto [**IAzApplicationGroup**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup) .
+No Gerenciador de Autorização, um grupo de aplicativos é um grupo de usuários e grupos de usuários. Um grupo de aplicativos pode conter outros grupos de aplicativos para que os grupos de usuários possam ser aninhados. Um grupo de aplicativos é representado por [**um objeto IAzApplicationGroup.**](/windows/desktop/api/Azroles/nn-azroles-iazapplicationgroup)
 
-Para permitir que os membros de um grupo de aplicativos executem uma tarefa ou um conjunto de tarefas, atribua esse grupo de aplicativos a uma função que contenha essas tarefas. As funções são representadas por objetos [**IAzRole**](/windows/desktop/api/Azroles/nn-azroles-iazrole) .
+Para permitir que os membros de um grupo de aplicativos executem uma tarefa ou um conjunto de tarefas, atribua esse grupo de aplicativos a uma função que contenha essas tarefas. As funções são representadas por [**objetos IAzRole.**](/windows/desktop/api/Azroles/nn-azroles-iazrole)
 
-O exemplo a seguir mostra como criar um grupo de aplicativos, adicionar um usuário como um membro do grupo de aplicativos e atribuir o grupo de aplicativos a uma função existente. O exemplo supõe que haja um repositório de política XML existente chamado MyStore.xml no diretório raiz da unidade C, que esse armazenamento contém um aplicativo denominado despesas e que esse aplicativo contém uma função de administrador de despesas.
+O exemplo a seguir mostra como criar um grupo de aplicativos, adicionar um usuário como membro do grupo de aplicativos e atribuir o grupo de aplicativos a uma função existente. O exemplo supõe que haja um armazenamento de políticas XML existente chamado MyStore.xml no diretório raiz da unidade C, que esse armazenamento contém um aplicativo chamado Expense e que esse aplicativo contém uma função chamada Administrador de Despesas.
 
 
 ```C++

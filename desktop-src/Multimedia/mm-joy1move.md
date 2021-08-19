@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MM_JOY1MOVE (mmsystem. h)
-description: A \_ mensagem mm JOY1MOVE notifica a janela que capturou o joystick JOYSTICKID1 de que a posição do joystick foi alterada.
+title: MM_JOY1MOVE mensagem (Mmsystem.h)
+description: A mensagem MM MM MM1MOVE notifica a janela que capturou \_ o captou o HASID1 de que a posição do botão foi alterada.
 ms.assetid: 317ac0b2-f873-413d-b071-47d840229643
 keywords:
-- Multimídia do Windows de mensagem MM_JOY1MOVE
+- MM_JOY1MOVE mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a78753bd55f6682b3ac3f1514356d93cb455d162
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d8c8a71bc91b541bc17017fc2673bb6c0ed7e84a2de44ff312954b8f9915dc57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105790026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802441"
 ---
-# <a name="mm_joy1move-message"></a>\_Mensagem mm JOY1MOVE
+# <a name="mm_joy1move-message"></a>Mensagem \_ MM MM MM1MOVE
 
-A mensagem **mm \_ JOY1MOVE** notifica a janela que CAPTUROU o joystick JOYSTICKID1 de que a posição do joystick foi alterada.
+A **mensagem MM MM \_ MM1MOVE** notifica a janela que capturou o captou o HASID1 de que a posição do botão foi alterada.
 
 
 ```C++
@@ -48,10 +48,10 @@ Identifica os botões que são pressionados. Pode ser um ou mais dos seguintes v
 
 | Requisito | Valor |
 |--------------|------------------------------------|
-| JOY \_ Button1 | O primeiro botão de joystick é pressionado.  |
-| JOY \_ Button1 | O segundo botão de joystick é pressionado. |
-| BUTTON3 de alegria \_ | O terceiro botão de joystick é pressionado.  |
-| BUTTON4 de alegria \_ | O quarto botão de joystick é pressionado. |
+| BOTÃO DE \_ BOTÃO1 | O primeiro botão de button é pressionado.  |
+| JOY \_ BUTTON2 | O segundo botão de button é pressionado. |
+| BOTÃO DE \_ BOTÃO3 | O terceiro botão de button é pressionado.  |
+| BOTÃO DE \_ BOTÃO4 | O quarto botão de button é pressionado. |
 
 
 
@@ -59,17 +59,17 @@ Identifica os botões que são pressionados. Pode ser um ou mais dos seguintes v
 
 </dd> <dt>
 
-<span id="xPos"></span><span id="xpos"></span><span id="XPOS"></span>*xPos*
+<span id="xPos"></span><span id="xpos"></span><span id="XPOS"></span>*Xpos*
 </dt> <dd>
 
-As coordenadas x do joystick em relação ao canto superior esquerdo da área do cliente.
+As coordenadas X do quadrante em relação ao canto superior esquerdo da área do cliente.
 
 </dd> <dt>
 
-<span id="yPos"></span><span id="ypos"></span><span id="YPOS"></span>*yPos*
+<span id="yPos"></span><span id="ypos"></span><span id="YPOS"></span>*Ypos*
 </dt> <dd>
 
-A coordenada y do joystick em relação ao canto superior esquerdo da área do cliente.
+A coordenada Y do quadrante em relação ao canto superior esquerdo da área do cliente.
 
 </dd> </dl>
 
@@ -81,7 +81,7 @@ A coordenada y do joystick em relação ao canto superior esquerdo da área do c
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -92,7 +92,7 @@ A coordenada y do joystick em relação ao canto superior esquerdo da área do c
 [Joysticks](joysticks.md)
 </dt> <dt>
 
-[Mensagens do joystick de multimídia](multimedia-joystick-messages.md)
+[Mensagens de Multimídia Dols](multimedia-joystick-messages.md)
 </dt> </dl>
 
  

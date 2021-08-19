@@ -4,12 +4,12 @@ ms.assetid: 11275b67-e49c-4406-b398-8c32b31d5f1e
 title: Verificação de erro (criptografia)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee08f31a028674ddb5dfe9835dea74a1a71bf711
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6ac024eb58e06c2c361a3856c1bf94e88b57517fc013011337745cf9c05c80df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117766117"
 ---
 # <a name="error-checking-cryptography"></a>Verificação de erro (criptografia)
 

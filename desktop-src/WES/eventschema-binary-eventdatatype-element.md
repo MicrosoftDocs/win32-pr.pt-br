@@ -1,9 +1,9 @@
 ---
-title: Elemento binary (EventDataType)
-description: Um blob de dados binários para eventos que são gravados usando o log de eventos.
+title: Elemento Binary (EventDataType)
+description: Um blob de dados binário para eventos que são gravados usando o Log de Eventos.
 ms.assetid: aec2557f-6d63-48e7-b4d7-584e99dfcce3
 keywords:
-- Elemento Binary EventLog
+- Elemento binário EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cdfd00e2d25f3178ab44081f76725b3189f1010b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 495310a46a314b944b29eeb2433b7c5581136c6923c5630d8f09486a95e47fdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120394"
 ---
-# <a name="binary-eventdatatype-element"></a>Elemento binary (EventDataType)
+# <a name="binary-eventdatatype-element"></a>Elemento Binary (EventDataType)
 
-Um blob de dados binários para eventos que são gravados usando o [log de eventos](/windows/desktop/EventLog/event-logging).
+Um blob de dados binário para eventos gravados usando o [Log de Eventos](/windows/desktop/EventLog/event-logging).
 
 ``` syntax
 <xs:element name="Binary"
@@ -30,7 +30,7 @@ Um blob de dados binários para eventos que são gravados usando o [log de event
  />
 ```
 
-O elemento **Binary** é definido pelo tipo complexo [**EventDataType**](eventschema-eventdatatype-complextype.md) .
+O **elemento Binary** é definido pelo tipo complexo [**EventDataType.**](eventschema-eventdatatype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **Binary** é definido pelo tipo complexo [**EventDataType**](eventsc
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
