@@ -1,5 +1,5 @@
 ---
-description: O catálogo COM+ armazena atributos de aplicativo COM+, atributos de classe e atributos no nível do computador. Ele garante a consistência entre esses atributos e fornece operações comuns sobre esses atributos.
+description: O catálogo COM+ armazena atributos de aplicativo COM+, atributos de classe e atributos de nível de computador. Ele garante a consistência entre esses atributos e fornece operações comuns sobre esses atributos.
 ms.assetid: 1838757c-aa8e-4678-8042-207498fb0bbc
 title: O catálogo COM+
 ms.topic: article
@@ -13,28 +13,28 @@ ms.locfileid: "118305263"
 ---
 # <a name="the-com-catalog"></a>O catálogo COM+
 
-O catálogo COM+ armazena atributos de aplicativo COM+, atributos de classe e atributos no nível do computador. Ele garante a consistência entre esses atributos e fornece operações comuns sobre esses atributos.
+O catálogo COM+ armazena atributos de aplicativo COM+, atributos de classe e atributos de nível de computador. Ele garante a consistência entre esses atributos e fornece operações comuns sobre esses atributos.
 
-O catálogo COM+ usa duas lojas diferentes, da seguinte maneira:
+O catálogo COM+ usa dois repositórios diferentes, da seguinte maneira:
 
--   O banco de dados de registro COM+
--   O Windows de dados (**HKEY \_ CLASSES \_ ROOT**)
+-   O banco de dados de registro do COM+
+-   o registro de Windows **( \_ classe HKEY CLASSES \_ raiz**)
 
-O catálogo apresenta uma exibição lógica unificada desses dois armazenamentos e os expõe por meio da Biblioteca de Administração COM+. Essa biblioteca fornece, por meio de uma linguagem de script, todas as funcionalidades da ferramenta administrativa dos Serviços de Componentes.
+O catálogo apresenta uma exibição lógica e unificada dessas duas lojas e as expõe por meio da biblioteca de administração do COM+. Essa biblioteca fornece, por meio de uma linguagem de script, toda a funcionalidade da ferramenta administrativa serviços de componentes.
 
-Para componentes COM existentes que não exigem novos serviços COM+, a busca ocorre no registro Windows existente. O catálogo COM+ também usa o registro Windows para a biblioteca de tipos e o registro de proxy/stub de interface.
+para componentes COM existentes que não exigem novos serviços COM+, a pesquisa ocorre no registro de Windows existente. o catálogo COM+ também usa o registro de Windows para o registro de biblioteca de tipos e proxy de interface/stub.
 
-## <a name="split-registration"></a>Dividir o registro
+## <a name="split-registration"></a>Dividir registro
 
-Para novos componentes que, na verdade, já são componentes COM existentes que são usados no ambiente de serviços (por exemplo, componentes do MTS), o aspecto COM básico do registro é armazenado no registro do Windows e novos serviços e atributos (por exemplo, componentes na fila) são armazenados no banco de dados de registro COM+. Isso é conhecido como um *registro dividido.*
+para novos componentes que realmente já são componentes COM que são usados no ambiente de serviços (por exemplo, componentes do MTS), o aspecto de COM básico do registro é armazenado no registro de Windows e novos serviços e atributos (por exemplo, componentes na fila) são armazenados no banco de dados de registro do COM+. Isso é conhecido como um *registro de divisão*.
 
-Cada atributo é armazenado em apenas um local: o registro Windows ou o banco de dados de registro COM+. Novos componentes COM são registrados exclusivamente no banco de dados de registro COM+, com alguma duplicação no registro Windows para que as ferramentas existentes possam usá-los.
+cada atributo é armazenado em apenas um local: o registro de Windows ou o banco de dados de registro do COM+. os novos componentes COM são registrados exclusivamente no banco de dados de registro do COM+, com alguma duplicação no registro de Windows para que as ferramentas existentes possam usá-los.
 
 ## <a name="transactional-updates-to-the-catalog"></a>Atualizações transacionais para o catálogo
 
-Algumas operações no catálogo são executadas de maneira transacional. Quando você invoca a Biblioteca de Administração COM+ de um componente transacional, as atualizações para o banco de dados de registro COM+ ocorrerão dentro do limite de transação do componente de chamada.
+Algumas operações no catálogo são executadas de forma transacional. Quando você invoca a biblioteca de administração COM+ de um componente transacional, as atualizações para o banco de dados de registro do COM+ ocorrerão dentro do limite de transação do componente de chamada.
 
-No entanto, não há garantia de que as atualizações que envolvem alterações em outros armazenamentos (como o sistema de arquivos e Windows registro) sejam totalmente transacionais. Uma transação anulada pode deixar esses armazenamentos em um estado inconsistente com as alterações feitas entre si ou no banco de dados de registro COM+.
+no entanto, as atualizações que envolvem alterações em outras lojas (como o sistema de arquivos e o registro de Windows) não têm garantia de serem totalmente transacionais. Uma transação anulada pode deixar esses repositórios em um estado inconsistente com as alterações feitas entre si ou com o banco de dados de registro do COM+.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

@@ -17,12 +17,12 @@ keywords:
 - MUX (multiplexador)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d475816d7090ee241a1508cc054b12742c4ab27
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 76f15e1c89e564ddd3b6c263b91242a3e4dc0382fd36f86554ec6bd0556191ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293941"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139391"
 ---
 # <a name="lists"></a>Listas
 
@@ -35,12 +35,12 @@ Os controles de lista fornecem Estados de seleção única ou seleção múltipl
 | Seleção única     | Restringe a seleção de controle para um item por vez. Ao contrário do controle Multiplexador, esse controle pode ser usado para controlar mais do que as linhas de origem de áudio. Por exemplo, você pode usar esse controle para selecionar um filtro de baixa passa de uma lista de filtros com suporte de um dispositivo de mixer. |
 | Multiplexador (MUX) | Restringe a seleção de linha a uma linha de origem por vez.                                                                                                                                                                                                                       |
 | Seleção múltipla   | Permite que o usuário Selecione vários itens de uma lista simultaneamente. Ao contrário do controle de mixer, o controle de seleção múltipla pode ser usado para controlar mais do que as linhas de origem de áudio.                                                                                                  |
-| Mixagem             | Permite que o usuário Selecione linhas de origem de uma lista simultaneamente.                                                                                                                                                                                                               |
+| Mixer             | Permite que o usuário Selecione linhas de origem de uma lista simultaneamente.                                                                                                                                                                                                               |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 

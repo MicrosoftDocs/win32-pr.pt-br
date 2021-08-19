@@ -86,7 +86,7 @@ Se a função falhar, o valor retornado será zero. Para obter informações de 
 
 Quando Windows Vista faz uma conexão com uma impressora, talvez seja necessário copiar arquivos de driver de impressora do servidor ao qual a impressora está anexada. Se o usuário não tiver permissão para copiar arquivos para o local apropriado, a função **AddPrinterConnection2** falhará e [**GetLastError**](/windows/desktop/api/errhandlingapi/nf-errhandlingapi-getlasterror) retornará ERROR \_ ACCESS \_ DENIED.
 
-Se os arquivos de driver de impressora devem ser copiados do servidor de impressão, mas não podem ser copiados silenciosamente devido às políticas de grupo que estão em vigor e PRINTER CONNECTION NO UI está definida em \_ \_ \_ *pConnectionInfo->dwFlags*, nenhuma caixa de diálogo será exibida e a chamada falhará.
+Se os arquivos do driver de impressora devem ser copiados do servidor de impressão, mas não podem ser copiados silenciosamente devido às políticas de grupo que estão em vigor e PRINTER CONNECTION NO UI está definida em \_ \_ \_ *pConnectionInfo->dwFlags*, nenhuma caixa de diálogo será exibida e a chamada falhará.
 
 Se o driver de impressora local puder ser usado para renderizar trabalhos de impressão para essa impressora e a versão do driver local não corresponder à versão do driver de impressora no servidor, defina PRINTER \_ CONNECTION \_ MISMATCH em *pConnectionInfo->dwFlags* e atribua o ponteiro a uma variável de cadeia de caracteres que contém o caminho para o driver de impressora local para *pConnectionInfo->pszDriverName*.
 

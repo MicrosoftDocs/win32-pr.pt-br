@@ -4,12 +4,12 @@ ms.assetid: a6bfba45-7a0c-4894-a0a6-ee468002175d
 title: D3D10_REQ
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff1d6bf4f72c4ef09eafba3ee50659e5e6ffc682
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 32e099c26706772bbb76ad6709759fa4712e22ea3bc9793b905a2050f25d0f75
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118100748"
 ---
 # <a name="d3d10_req"></a>\_Req d3d10
 

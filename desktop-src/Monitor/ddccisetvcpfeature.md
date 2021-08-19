@@ -1,9 +1,9 @@
 ---
 title: Função DDCCISetVCPFeature
-description: Define o valor de um código de VCP (painel de controle virtual) para um monitor.
+description: Define o valor de um código Painel de Controle VCP (Virtual Painel de Controle) para um monitor.
 ms.assetid: 1069588b-5f8a-49da-b857-6f0a0c737a11
 keywords:
-- Configuração do monitor de função DDCCISetVCPFeature
+- Configuração do monitor da função DDCCISetVCPFeature
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a72da2b2540c73e023a753a3fdb28507f8cbb40d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ecbfb6172ffd61dd7882895c0db15baddf28986493b202e2fd873135cee41d76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117806144"
 ---
 # <a name="ddccisetvcpfeature-function"></a>Função DDCCISetVCPFeature
 
 > [!IMPORTANT]
-> Essa função é usada pela API de configuração do monitor para acessar a funcionalidade no driver de vídeo. Os aplicativos não devem chamar essa função.
+> Essa função é usada pela API de configuração do monitor para acessar a funcionalidade no driver de exibição. Os aplicativos não devem chamar essa função.
 
  
 
-Define o valor de um código de VCP (painel de controle virtual) para um monitor.
+Define o valor de um código Painel de Controle VCP (Virtual Painel de Controle) para um monitor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,36 +47,36 @@ NTSTATUS WINAPI DDCCISetVCPFeature(
 
 <dl> <dt>
 
-*HMONITOR* \[ no\]
+*hMonitor* \[ Em\]
 </dt> <dd>
 
-Um identificador para um monitor físico.
+Um alça para um monitor físico.
 
 </dd> <dt>
 
-*dwVCPCode* \[ no\]
+*dwVCPCode* \[ Em\]
 </dt> <dd>
 
 O código VCP a ser definido.
 
 </dd> <dt>
 
-*dwNewValue* \[ no\]
+*dwNewValue* \[ Em\]
 </dt> <dd>
 
 O valor do código VCP.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método for bem-sucedido, ele retornará o **status \_ êxito**. Caso contrário, ele retorna um código de erro **NTSTATUS** .
+Se o método for bem-sucedido, ele **retornará STATUS \_ SUCCESS.** Caso contrário, retornará um **código de erro NTSTATUS.**
 
 ## <a name="remarks"></a>Comentários
 
-Os aplicativos devem chamar [**SetVCPFeature**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-setvcpfeature) em vez de chamar essa função.
+Os aplicativos [**devem chamar SetVCPFeature em**](/windows/desktop/api/LowLevelMonitorConfigurationAPI/nf-lowlevelmonitorconfigurationapi-setvcpfeature) vez de chamar essa função.
 
-Esta função não tem biblioteca de importação associada. Para chamar essa função, você deve usar as funções [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Gdi32.dll.
+Essa função não tem nenhuma biblioteca de importação associada. Para chamar essa função, você deve usar as [**funções LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Gdi32.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,8 +84,8 @@ Esta função não tem biblioteca de importação associada. Para chamar essa fu
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

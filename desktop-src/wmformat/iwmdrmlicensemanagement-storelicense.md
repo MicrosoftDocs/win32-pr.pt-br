@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fcfde6347e099ceb9fc168e1183cbd62c90f9b9c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c509fdbc89acfd2d31ad5ead7ce63cd7f3b501b304d82240475c845c013e03b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105798174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655044"
 ---
 # <a name="iwmdrmlicensemanagementstorelicense-method"></a>Método IWMDRMLicenseManagement:: StoreLicense
 
@@ -50,7 +50,7 @@ Cadeia de caracteres de resposta de licença a ser decodificada e adicionada ao 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

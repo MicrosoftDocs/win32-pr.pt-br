@@ -10,12 +10,12 @@ keywords:
 - tipo de divisão de sequência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6586a33fe4a5225fdcdca21e413104388d5831d3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 81b28bb7e32097b888cdd3dec739eaccfc2a37dfe14060168fb11f0a7ca3d00e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117801800"
 ---
 # <a name="retrieving-the-sequence-division-type"></a>Recuperando o tipo de divisão de sequência
 
@@ -35,13 +35,13 @@ Se o **comando \_ status do MCI** for bem-sucedido, o membro **dwReturn** da **e
 
 
 
- 
+ 
 
 Você deve saber o tipo de divisão de uma sequência para alterar ou consultar seu tempo. Você não pode alterar o tipo de divisão de uma sequência usando o sequenciador MCI.
 
- 
+ 
 
- 
+ 
 
 
 

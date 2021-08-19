@@ -15,14 +15,14 @@ ms.locfileid: "118319125"
 ---
 # <a name="h-wmi"></a>H (WMI)
 
-[A](gloss-a.md) B [C](gloss-c.md) [D](gloss-d.md) [E](gloss-e.md) [F](gloss-f.md) G H [i](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) [M](gloss-m.md) [N](gloss-n.md) [O](gloss-o.md) [P](gloss-p.md) [Q](gloss-q.md) [R](gloss-r.md) [S](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z
+[A](gloss-a.md) B [C](gloss-c.md) [D](gloss-d.md) [E](gloss-e.md) [F G](gloss-f.md) H [I](gloss-i.md) J [K](gloss-k.md) [L](gloss-l.md) [M](gloss-m.md) [N](gloss-n.md) [O](gloss-o.md) [P](gloss-p.md) [Q](gloss-q.md) [R](gloss-r.md) [S](gloss-s.md) [T](gloss-t.md) U V [W](gloss-w.md) X Y Z
 
 <dl> <dt>
 
 <span id="wmi.gloss_hosting_model"></span><span id="WMI.GLOSS_HOSTING_MODEL"></span>**modelo de hospedagem**
 </dt> <dd>
 
-Um valor de propriedade na instância [**\_ \_ Win32Provider**](--win32provider.md) que especifica o contexto de segurança no qual o provedor é executado.
+Um valor da propriedade na [**\_ \_ instância Win32Provider**](--win32provider.md) que especifica o contexto de segurança no qual o provedor é executado.
 
 </dd> </dl>
 

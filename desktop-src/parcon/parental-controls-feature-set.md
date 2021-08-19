@@ -13,13 +13,13 @@ ms.locfileid: "117869281"
 ---
 # <a name="parental-controls-feature-set"></a>Conjunto de recursos de controles dos pais
 
-As informações sobre o conjunto de recursos em Controles Dos Pais são organizadas da seguinte forma:
+As informações sobre o conjunto de recursos nos controles dos pais são organizadas da seguinte maneira:
 
--   [Controles dos pais Top-Level Interface do Usuário](parental-controls-top-level-user-interface.md)
--   [Controles dos pais Sistema de Relatório de Atividades](parental-controls-activity-reporting.md)
+-   [Controles dos pais Top-Level interface do usuário](parental-controls-top-level-user-interface.md)
+-   [Relatórios de atividade de controles dos pais](parental-controls-activity-reporting.md)
 -   [Controles dos pais In-Box restrições e interfaces do usuário](parental-controls-in-box-restrictions-and-user-interfaces.md)
--   [Visão geral da API de Controles dos Pais](parental-controls-api-overview.md)
--   [Visão geral dos recursos de extensibilidade de controles dos pais](parental-controls-extensibility-features-overview.md)
+-   [Visão geral da API de controles dos pais](parental-controls-api-overview.md)
+-   [Visão geral dos recursos de extensibilidade dos controles dos pais](parental-controls-extensibility-features-overview.md)
 
  
 

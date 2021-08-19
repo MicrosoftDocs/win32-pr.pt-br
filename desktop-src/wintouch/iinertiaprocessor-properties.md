@@ -3,18 +3,18 @@ title: Propriedades (IInertiaProcessor)
 description: Esta seção contém as propriedades da interface IInertiaProcessor.
 ms.assetid: 47fd1a49-8e14-4076-8ce6-f0c4917e8cf1
 keywords:
-- Windows Touch, interface IInertiaProcessor
-- Windows Touch, propriedades da interface
+- Windows Toque, interface IInertiaProcessor
+- Windows Toque, propriedades da interface
 - inércia, interface IInertiaProcessor
 - Interface IInertiaProcessor, propriedades
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ab3e1754c7b723b4be446e82fd0ba39fc67af5d
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 0d7825a97545c897f402144ce5113b79650b9eba31e19da7ceef1459ae6cdc13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118030120"
 ---
 # <a name="properties-iinertiaprocessor"></a>Propriedades (IInertiaProcessor)
 

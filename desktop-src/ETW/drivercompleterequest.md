@@ -15,12 +15,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 57cf49d0e37dc870c0eb46c31ef39e0d81689811
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ef20d7bf097c35e03e94ee9bb80e7fd74ad93d3f28830c66b155b3cacf400b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151627"
 ---
 # <a name="drivercompleterequest-class"></a>Classe DriverCompleteRequest
 
@@ -106,8 +106,8 @@ Identificador que identifica a solicitação de forma exclusiva. Use esse identi
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

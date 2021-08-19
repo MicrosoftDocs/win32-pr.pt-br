@@ -4,12 +4,12 @@ ms.assetid: 1be3ae8b-e083-4420-bc8a-7f49c4264cab
 title: Estruturas do Gerenciador de métodos de entrada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3209bc42e7c992eba5f419ea065ccbc9fce678b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6328ee9729a33a2785426772b40f9756f378db17ee8c7022ba04d2fd9f5287b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118145885"
 ---
 # <a name="input-method-manager-structures"></a>Estruturas do Gerenciador de métodos de entrada
 

@@ -1,5 +1,5 @@
 ---
-title: Constantes BFT (Ntdsbcli. h)
+title: Constantes BFT (Ntdsbcli.h)
 description: As constantes BFT são usadas como sinalizadores de bits para identificar diferentes tipos de arquivo em um Active Directory Domain Services backup.
 ms.assetid: 3658a657-d9e3-4fbf-9120-4b0205b81a36
 ms.tgt_platform: multiple
@@ -21,12 +21,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9607b5e61e5689d8895b39a11aa7e813fc7fcbe6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3b5e9275e01b8c33d308b55b2638d4eaf186b8f5265834acc27acd2f146f0d09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118024045"
 ---
 # <a name="bft-constants"></a>Constantes BFT
 
@@ -34,7 +34,7 @@ As constantes BFT são usadas como sinalizadores de bits para identificar difere
 
 <dl> <dt>
 
-<span id="BFT_LOG_DIRECTORY"></span><span id="bft_log_directory"></span>**\_diretório de log \_ do BFT**
+<span id="BFT_LOG_DIRECTORY"></span><span id="bft_log_directory"></span>**BFT \_ LOG \_ DIRECTORY**
 </dt> <dd> <dl> <dt>
 
 0x20
@@ -47,7 +47,7 @@ O arquivo pertence ao diretório de log.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_DATABASE_DIRECTORY"></span><span id="bft_database_directory"></span>**\_diretório de banco de dados BFT \_**
+<span id="BFT_DATABASE_DIRECTORY"></span><span id="bft_database_directory"></span>**BFT \_ DATABASE \_ DIRECTORY**
 </dt> <dd> <dl> <dt>
 
 0x40
@@ -60,7 +60,7 @@ O arquivo pertence ao diretório do banco de dados.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_DIRECTORY"></span><span id="bft_directory"></span>**\_diretório BFT**
+<span id="BFT_DIRECTORY"></span><span id="bft_directory"></span>**BFT \_ DIRECTORY**
 </dt> <dd> <dl> <dt>
 
 0x80
@@ -73,7 +73,7 @@ O caminho especificado é um diretório e não um nome de arquivo.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_LOG"></span><span id="bft_log"></span>**LOG do BFT \_**
+<span id="BFT_LOG"></span><span id="bft_log"></span>**BFT \_ LOG**
 </dt> <dd> <dl> <dt>
 
 0x21
@@ -86,7 +86,7 @@ Especifica um arquivo de log que pertence ao diretório de log.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_LOG_DIR"></span><span id="bft_log_dir"></span>**Dir. de log do BFT \_ \_**
+<span id="BFT_LOG_DIR"></span><span id="bft_log_dir"></span>**BFT \_ LOG \_ DIR**
 </dt> <dd> <dl> <dt>
 
 0x22
@@ -99,7 +99,7 @@ O arquivo é o caminho do diretório de log.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_CHECKPOINT_DIR"></span><span id="bft_checkpoint_dir"></span>**BFT de \_ ponto de verificação de \_ diretório**
+<span id="BFT_CHECKPOINT_DIR"></span><span id="bft_checkpoint_dir"></span>**DIR DO \_ PONTO DE VERIFICAÇÃO do BFT \_**
 </dt> <dd> <dl> <dt>
 
 0x23
@@ -112,7 +112,7 @@ O arquivo é o caminho do diretório de ponto de verificação.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_NTDS_DATABASE"></span><span id="bft_ntds_database"></span>**\_banco de \_ dados NTDS BFT**
+<span id="BFT_NTDS_DATABASE"></span><span id="bft_ntds_database"></span>**BFT \_ NTDS \_ DATABASE**
 </dt> <dd> <dl> <dt>
 
 0x44
@@ -125,7 +125,7 @@ O arquivo é um banco de dados de serviço de diretório que pertence ao diretó
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_PATCH_FILE"></span><span id="bft_patch_file"></span>**\_arquivo de patch do BFT \_**
+<span id="BFT_PATCH_FILE"></span><span id="bft_patch_file"></span>**BFT \_ PATCH \_ FILE**
 </dt> <dd> <dl> <dt>
 
 0x25
@@ -138,7 +138,7 @@ O arquivo é um arquivo de patch que pertence ao diretório de log.
 
 </dt> </dl> </dd> <dt>
 
-<span id="BFT_UNKNOWN"></span><span id="bft_unknown"></span>**BFT \_ desconhecido**
+<span id="BFT_UNKNOWN"></span><span id="bft_unknown"></span>**BFT \_ UNKNOWN**
 </dt> <dd> <dl> <dt>
 
 0x0F
@@ -146,7 +146,7 @@ O arquivo é um arquivo de patch que pertence ao diretório de log.
 
 
 
-O arquivo não pode ser reconhecido. O arquivo não coincide com os nomes de arquivo e tipos de arquivo conhecidos.
+O arquivo não pode ser reconhecido. O arquivo não coincide com os nomes de arquivo conhecidos e tipos de arquivo.
 
 
 </dt> </dl> </dd> </dl>
@@ -159,7 +159,7 @@ O arquivo não pode ser reconhecido. O arquivo não coincide com os nomes de arq
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Ntdsbcli. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Ntdsbcli.h</dt> </dl> |
 
 
 

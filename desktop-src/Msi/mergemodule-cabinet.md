@@ -13,7 +13,7 @@ ms.locfileid: "117804551"
 ---
 # <a name="mergemodulecabinet"></a>MergeModule.CABinet
 
-Cada arquivo entregue pelo módulo de mesclagem deve ser armazenado dentro de um arquivo de gabinete inserido como um fluxo no armazenamento estruturado do módulo de mesclagem. Em um módulo de mesclagem padrão, o nome desse gabinete é sempre: MergeModule.CABinet. Para obter mais informações, consulte [Gerando arquivos de gabinete MergeModule.CABinet](generating-mergemodule-cabinet-cabinet-files.md).
+Cada arquivo entregue pelo módulo de mesclagem deve ser armazenado dentro de um arquivo de gabinete inserido como um fluxo no armazenamento estruturado do módulo de mesclagem. Em um módulo de mesclagem padrão, o nome desse gabinete é sempre: MergeModule.CABinet. Para obter mais informações, consulte [Generating MergeModule.CABinet Cabinet Files](generating-mergemodule-cabinet-cabinet-files.md).
 
  
 

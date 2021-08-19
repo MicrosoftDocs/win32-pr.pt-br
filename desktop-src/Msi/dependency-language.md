@@ -1,7 +1,7 @@
 ---
-description: A propriedade de linguagem somente leitura retorna o LANGid do módulo necessário.
+description: A propriedade Language somente leitura retorna o LANGID do módulo necessário.
 ms.assetid: 9b0608d1-b6e8-4cf9-8119-3c2909156516
-title: Propriedade dependência. Language (Mergemod. h)
+title: Propriedade Dependency.Language (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118378866"
 ---
-# <a name="dependencylanguage-property"></a>Propriedade dependência. Language
+# <a name="dependencylanguage-property"></a>Propriedade Dependency.Language
 
-A propriedade de **linguagem** somente leitura retorna o **LangID** do módulo necessário.
+A propriedade **Language** somente leitura retorna **o LANGID** do módulo necessário.
 
 Esta propriedade é somente para leitura.
 
@@ -40,7 +40,7 @@ propVal = Dependency.Language
 
 ## <a name="c"></a>C++
 
-Consulte [**a \_ função obter linguagem (objeto de dependência)**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-get_language).
+Consulte [**get Language Function \_ (Objeto de Dependência).**](/windows/win32/api/mergemod/nf-mergemod-imsmdependency-get_language)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,8 +48,8 @@ Consulte [**a \_ função obter linguagem (objeto de dependência)**](/windows/w
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versão<br/> | Mergemod.dll 1,0 ou posterior<br/>                                                    |
-| Cabeçalho<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versão<br/> | Mergemod.dll 1.0 ou posterior<br/>                                                    |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

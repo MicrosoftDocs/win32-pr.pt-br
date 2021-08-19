@@ -1,7 +1,7 @@
 ---
-description: Especifica se o DSP de captura de voz executa o pré-processamento da matriz do microfone.
+description: Especifica se o DSP de Captura de Voz executa o pré-processamento da matriz de microfone.
 ms.assetid: 0f197165-e6e5-456b-9615-1edc8ada7bb5
-title: Propriedade MFPKEY_WMAAECMA_FEATR_MICARR_PREPROC (Wmcodecdsp. h)
+title: MFPKEY_WMAAECMA_FEATR_MICARR_PREPROC propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: ebbba5faeb1a1e70feb1ef6182d3ac2a397a52c4a56f27e767be93f4a3fff773
@@ -11,29 +11,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117873010"
 ---
-# <a name="mfpkey_wmaaecma_featr_micarr_preproc-property"></a>\_ \_ \_ \_ Propriedade preproc MICARR do MFPKEY WMAAECMA
+# <a name="mfpkey_wmaaecma_featr_micarr_preproc-property"></a>Propriedade \_ PREPROC MFPKEY WMAAECMA \_ \_ MICARR \_ MICARR
 
-Especifica se o DSP de captura de voz executa o pré-processamento da matriz do microfone.
+Especifica se o DSP de Captura de Voz executa o pré-processamento da matriz de microfone.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-BOOL do VT \_
+BOOL da VT \_
 
 ## <a name="default-value"></a>Valor padrão
 
-VARIANTE \_ true
+VARIANT \_ TRUE
 
 ## <a name="applies-to"></a>Aplica-se A
 
--   [DSP de captura de voz](voicecapturedmo.md)
+-   [DSP de Captura de Voz](voicecapturedmo.md)
 
 ## <a name="remarks"></a>Comentários
 
-O pré-processamento pode remover tons estacionários que interferem no processamento, como um tom com uma densidade fixa.
+O pré-processamento pode remover tons fixos que interferem no processamento, como um tom com um tom fixo.
 
 Essa propriedade pode ter os valores a seguir.
 
@@ -41,14 +41,14 @@ Essa propriedade pode ter os valores a seguir.
 
 | Valor          | Descrição            |
 |----------------|------------------------|
-| VARIANTE \_ falso | Desabilitar o pré-processamento. |
-| VARIANTE \_ true  | Habilite o pré-processamento.  |
+| VARIANT \_ FALSE | Desabilite o pré-processamento. |
+| VARIANT \_ TRUE  | Habilitar o pré-processamento.  |
 
 
 
  
 
-O valor padrão dessa propriedade é VARIANT \_ true (Enabled). Antes de definir essa propriedade, você deve definir a propriedade [ \_ modo de \_ recurso \_ MFPKEY WMAAECMA](mfpkey-wmaaecma-feature-modeproperty.md) como Variant \_ true.
+O valor padrão dessa propriedade é VARIANT \_ TRUE (habilitado). Antes de definir essa propriedade, você deve definir a [propriedade \_ MFPKEY WMAAECMA \_ FEATURE \_ MODE](mfpkey-wmaaecma-feature-modeproperty.md) como VARIANT \_ TRUE.
 
 O DSP usa essa propriedade somente quando o processamento da matriz de microfone está habilitado.
 
@@ -58,9 +58,9 @@ O DSP usa essa propriedade somente quando o processamento da matriz de microfone
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -68,10 +68,10 @@ O DSP usa essa propriedade somente quando o processamento da matriz de microfone
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> <dt>
 
-[DSP de captura de voz](voicecapturedmo.md)
+[DSP de Captura de Voz](voicecapturedmo.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-title: Atributo Font-Weight de VML
-description: Atributo Font-Weight de VML
+title: Atributo de Font-Weight VML
+description: Atributo de Font-Weight VML
 ms.assetid: d7b2b0c5-b5cf-4e7d-bbca-c554d12bf97e
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117754637"
 ---
-# <a name="vml-font-weight-attribute"></a>Atributo Font-Weight de VML
+# <a name="vml-font-weight-attribute"></a>Atributo de Font-Weight VML
 
-este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
@@ -24,17 +24,17 @@ Define a espessura das letras da fonte. Leitura/gravação. **Cadeia de caracter
 
 **Aplica-se a**
 
-[TextPath](msdn-online-vml-textpath-element.md)
+[Textpath](msdn-online-vml-textpath-element.md)
 
 **Sintaxe de marca**
 
-<v: *elemento* Style = "fonte-peso: *expressão* " >
+<v: *element* style="font-weight: *expression* ">
 
 **Sintaxe do script**
 
-*elemento* . Style. EspessuraDaFonte = "*expressão*"
+*expressão* element .style.fontweight=""
 
-*expressão* = de *elemento*. Style. EspessuraDaFonte
+*expressão* = *elemento*.style.fontweight
 
 **Comentários**
 
@@ -46,27 +46,27 @@ Os valores são os mesmos que os atributos de estilo HTML padrão. Os valores s�
 |---------|-----------------------------------------------------------------------------|
 | normal  | Normal. Padrão.                                                            |
 | negrito    | Negrito.                                                                       |
-| bolder  | Mais pesado do que o normal.                                                        |
-| lighter | Mais claro do que o normal.                                                        |
+| bolder  | Mais pesada do que o normal.                                                        |
+| lighter | Mais leve do que o normal.                                                        |
 | 100     | Pelo menos tão leve quanto o peso de 200.                                        |
-| 200     | Pelo menos, em negrito, como o peso de 100 e pelo menos tão leve quanto o peso de 300. |
-| 300     | Pelo menos, em negrito, como o peso de 200 e pelo menos tão leve quanto o peso de 400. |
+| 200     | Pelo menos tão negrito quanto o peso de 100 e pelo menos tão leve quanto o peso de 300. |
+| 300     | Pelo menos tão negrito quanto o peso de 200 e pelo menos tão leve quanto o peso 400. |
 | 400     | Normal.                                                                     |
-| 500     | Pelo menos, em negrito, como o peso de 400 e pelo menos tão leve quanto o peso de 600. |
-| 600     | Pelo menos, em negrito, como o peso de 500 e pelo menos tão leve quanto o peso de 700. |
+| 500     | Pelo menos tão negrito quanto o peso 400 e pelo menos tão leve quanto o peso de 600. |
+| 600     | Pelo menos tão negrito quanto o peso de 500 e pelo menos tão leve quanto o peso de 700. |
 | 700     | Negrito.                                                                       |
-| 800     | Pelo menos, em negrito, como o peso de 700 e pelo menos tão leve quanto o peso de 900. |
-| 900     | Pelo menos em negrito como o peso de 800.                                         |
+| 800     | Pelo menos tão negrito quanto o peso de 700 e pelo menos tão leve quanto o peso de 900. |
+| 900     | Pelo menos tão negrito quanto o peso 800.                                         |
 
 
 
  
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-A espessura da fonte é negrito.
+O peso da fonte está em negrito.
 
 
 ```HTML

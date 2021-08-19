@@ -1,9 +1,9 @@
 ---
 title: auto_handle atributo
-description: O atributo \ \_ identificador auto \ ACF direciona o stub para estabelecer automaticamente a associação para uma função que não tem um parâmetro de identificador de ligação explícito. Observe que esse atributo está obsoleto e não tem mais suporte.
+description: O atributo \ auto handle\ ACF direciona o stub para estabelecer automaticamente a associação para uma função que não tem um parâmetro de alça de associação \_ explícita. Observação Este atributo está obsoleto e não tem mais suporte.
 ms.assetid: a402b933-f69b-4dfe-b0c5-b034d65d4a84
 keywords:
-- auto_handle do atributo MIDL
+- auto_handle atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 01e9a4c91fac8553867536f4f5a8c3094e0f0ff9
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 1e1f42a2fb643a2ce643437aad73b13c6e55d3462e92f9ce52ba208c6dc5cb68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104453763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807879"
 ---
-# <a name="auto_handle-attribute"></a>\_manipular atributo automaticamente
+# <a name="auto_handle-attribute"></a>atributo \_ auto handle
 
-O atributo de ACF de **\[ \_ identificador \] automático** direciona o stub para estabelecer automaticamente a associação para uma função que não tem um parâmetro de identificador de ligação explícito.
+O **\[ atributo \_ \]** ACF de lidar automaticamente direciona o stub para estabelecer automaticamente a associação para uma função que não tem um parâmetro de alça de associação explícito.
 
 > [!Note]  
-> Este atributo está obsoleto e não tem mais suporte. O uso da opção [**/robust**](-robust.md) é recomendado.
+> Esse atributo está obsoleto e não tem mais suporte. É recomendável [**usar a opção /robust.**](-robust.md)
 
- 
+ 
 
 ``` syntax
 [ 
@@ -42,41 +42,41 @@ interface interface-name
 
 <dl> <dt>
 
-*interface-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
-Especifica zero ou mais atributos que se aplicam à interface como um todo, como [**código**](code.md) ou [**Nocode**](nocode.md). Separe os atributos de interface com vírgulas.
+Especifica zero ou mais atributos que se aplicam à interface como um todo, como [**código**](code.md) [**ou nocode.**](nocode.md) Atributos de interface separados com vírgulas.
 
 </dd> <dt>
 
-*nome da interface* 
+*interface-name* 
 </dt> <dd>
 
 Especifica o nome da interface.
 
 </dd> <dt>
 
-*interface-definição* 
+*interface-definition* 
 </dt> <dd>
 
-Especifica as instruções IDL que formam a definição da interface.
+Especifica instruções IDL que formam a definição da interface.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **\[ \_ identificador \] automático** é exibido no cabeçalho da interface do ACF. Ele também aparece no cabeçalho da interface do arquivo IDL quando você especifica a [**\_ configuração do/App**](-app-config.md)do compilador MIDL.
+O **\[ atributo \_ de \]** alça automática aparece no header da interface do ACF. Ele também aparece no header da interface do arquivo IDL quando você especifica a opção do compilador MIDL [**/configuração \_ do aplicativo**](-app-config.md).
 
-Quando o cliente chama uma função que usa associação automática e nenhuma associação a um servidor existe, o stub estabelece automaticamente a associação. A associação é reutilizada para chamadas subsequentes para outras funções na interface que usam associação automática. O programa de aplicativo cliente não precisa declarar ou executar nenhum processamento relacionado ao identificador de associação.
+Quando o cliente chama uma função que usa associação automática e nenhuma associação a um servidor existe, o stub estabelece automaticamente a associação. A associação é reutilizada para chamadas subsequentes para outras funções na interface que usam associação automática. O programa de aplicativo cliente não precisa declarar ou executar nenhum processamento relacionado ao alça de associação.
 
-Quando o ACF não estiver presente ou não incluir o atributo de [**\[ \_ identificador \] implícito**](implicit-handle.md) , o compilador MIDL usará o **\[ \_ \] identificador auto** e emitirá uma mensagem informativa. O compilador MIDL também usa o **\[ \_ identificador \] auto**, se necessário, para estabelecer a associação inicial para um [**\[ \_ identificador \] de contexto**](context-handle.md).
+Quando o ACF não está presente [**\[ \_ \]**](implicit-handle.md) ou não inclui o atributo de alça implícita, o compilador **\[ \_ \]** MIDL usa o manipular automaticamente e emite uma mensagem informacional. O compilador MIDL também usa **\[ o manipular \_ automaticamente \]**, se necessário, para estabelecer a associação inicial para um alça [**\[ de \_ contexto \]**](context-handle.md).
 
-O atributo de **\[ \_ identificador \] automático** só poderá ocorrer se o [**\[ \_ identificador \] implícito**](implicit-handle.md) ou o atributo de [**\[ \_ identificador \] explícito**](explicit-handle.md) não ocorrer. O atributo de **\[ \_ identificador \] automático** pode ocorrer no cabeçalho de interface ACF ou IDL no máximo uma vez.
+O **\[ atributo de \_ alça \]** automática só poderá ocorrer se o [**\[ atributo de alça \_ implícita \]**](implicit-handle.md) [**\[ ou de \_ \]**](explicit-handle.md) alça explícita não ocorrer. O **\[ atributo \_ de \]** alça automática pode ocorrer no header da interface ACF ou IDL no máximo uma vez.
 
 > [!Note]  
-> Você não poderá usar a associação automática (com o atributo **\[ \_ identificador \] automático** ou por padrão) se estiver processando dados por meio de pipes.
+> Você não poderá usar a associação automática (com o atributo **\[ de \_ alça \]** automática ou por padrão) se estiver processando dados por meio de pipes.
 
- 
+ 
 
 ## <a name="examples"></a>Exemplos
 
@@ -105,27 +105,27 @@ interface MyInterface
 [Arquivo de configuração de aplicativo (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**configuração do/App \_**](-app-config.md)
+[**/app \_ config**](-app-config.md)
 </dt> <dt>
 
-[**auto-completar**](code.md)
+[**Código**](code.md)
 </dt> <dt>
 
-[**\_identificador explícito**](explicit-handle.md)
+[**alça \_ explícita**](explicit-handle.md)
 </dt> <dt>
 
-[**identificador de contexto \_**](context-handle.md)
+[**alça de \_ contexto**](context-handle.md)
 </dt> <dt>
 
-[**\_identificador implícito**](implicit-handle.md)
+[**alça \_ implícita**](implicit-handle.md)
 </dt> <dt>
 
-[**Nocode**](nocode.md)
+[**nocode**](nocode.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

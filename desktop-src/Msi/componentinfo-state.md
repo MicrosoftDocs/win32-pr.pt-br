@@ -1,7 +1,7 @@
 ---
 description: O estado do componente.
 ms.assetid: 37890d43-012a-4344-81d9-aed54de0c75b
-title: Propriedade ComponentInfo. State
+title: Propriedade ComponentInfo.State
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b1e92a109f9809168651c457242205d501fddec8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7992890b71a8b17219b7f4ce2b2bcf5d1618491a1c3c5001e384642cb5a40876
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144643"
 ---
-# <a name="componentinfostate-property"></a>Propriedade ComponentInfo. State
+# <a name="componentinfostate-property"></a>Propriedade ComponentInfo.State
 
-O estado do componente. Essa propriedade chama a função [**MsiGetComponentPathEx**](/windows/desktop/api/Msi/nf-msi-msigetcomponentpathexa) .
+O estado do componente. Essa propriedade chama a [**função MsiGetComponentPathEx.**](/windows/desktop/api/Msi/nf-msi-msigetcomponentpathexa)
 
-**[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte. Essa propriedade está disponível a partir do Windows Installer 5,0.
+**[Windows Instalador 4.5 ou anterior:](not-supported-in-windows-installer-4-5.md)** Sem suporte. Essa propriedade está disponível a partir do Windows Installer 5.0.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,9 +36,9 @@ O estado do componente. Essa propriedade chama a função [**MsiGetComponentPath
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 ou posterior.<br/>                                         |
+| Versão<br/> | Windows Instalador 5.0 ou posterior.<br/>                                         |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |
-| IID<br/>     | IID \_ IComponentInfo é definido como 000C1099-0000-0000-C000-000000000046<br/>  |
+| IID<br/>     | IID IComponentInfo é definido como \_ 000C1099-0000-0000-C000-000000000046<br/>  |
 
 
 

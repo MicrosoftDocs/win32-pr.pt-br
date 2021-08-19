@@ -10,17 +10,17 @@ keywords:
 - Opacidade de DirectComposition
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 728496309f62aaa0027ca3751a6681384fb83c95
-ms.sourcegitcommit: 73417d55867c804274a55abe5ca71bcba7006119
+ms.openlocfilehash: f85a3a06fa0650e43f8f1a1be299021cafd233cc59937359dc78bc7b6d25bbb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "104366883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088810"
 ---
 # <a name="how-to-apply-effects"></a>Como aplicar efeitos
 
 > [!NOTE]
-> Para aplicativos no Windows 10, é recomendável usar APIs do Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> para aplicativos no Windows 10, é recomendável usar as APIs Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 Este tópico demonstra como usar o Microsoft DirectComposition para aplicar efeitos e transformações 3D a um Visual. O exemplo neste tópico altera a opacidade de um Visual e gira-o em um eixo vertical localizado no centro do Visual. Para saber mais sobre outros efeitos com suporte do DirectComposition, confira [efeitos](effects.md).
 
@@ -1028,6 +1028,6 @@ HRESULT DemoApp::MyCreateGDIRenderedDCompSurface(HBITMAP hBitmap,
 [Effect](effects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

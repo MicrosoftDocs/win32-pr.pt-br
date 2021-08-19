@@ -13,7 +13,7 @@ ms.locfileid: "117762422"
 ---
 # <a name="itattributelist-interface"></a>Interface ITAttributeList
 
-\[As interfaces e controles de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
+\[As interfaces e controles de Conferência de Telefonia IP de reunião não estão disponíveis para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
 A interface **ITAttributeList** fornece métodos para obter e definir atributos não interpretados. Em relação à posição das cadeias de caracteres de atributo em um pacote do protocolo SDP, consulte RFC 2327), os métodos supõem que todas as cadeias de caracteres de atributo existem logo antes que os atributos de mídia sejam especificados e depois de todos os atributos comuns. A interface **ITAttributeList** é criada chamando **QueryInterface** [**em ITDirectoryObject.**](/windows/desktop/api/Rend/nn-rend-itdirectoryobject)
 

@@ -3,19 +3,19 @@ title: O método OnCreate
 description: O método OnCreate
 ms.assetid: b23546b3-968f-41d8-ba07-3d694152c3ed
 keywords:
-- Plug-ins do Windows Media Player, método OnCreate
+- Windows Media Player plug-ins, método OnCreate
 - plug-ins, método OnCreate
 - plug-ins de interface do usuário, método OnCreate
 - Plug-ins de interface do usuário, método OnCreate
 - Método OnCreate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8d896ed9ebc6e9dc2bff9ff24ad23d50f7905c24
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ac52b1c58c6799f89d29fb1ee24c09767fee26729e760b2b454f1a359bd57596
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822315"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118118104"
 ---
 # <a name="the-oncreate-method"></a>O método OnCreate
 
@@ -38,7 +38,7 @@ LRESULT OnCreate(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 
 
 
-Esse método cria o botão de **pesquisa** e o associa com a \_ ID de comando de pesquisa da IDC, que é definida no início do arquivo:
+Esse método cria o **botão Pesquisar** e o associa à ID do comando SEARCH do IDC, que é definida no início \_ do arquivo:
 
 
 ```C++
@@ -48,7 +48,7 @@ Esse método cria o botão de **pesquisa** e o associa com a \_ ID de comando de
 
 
 
-Essa ID de comando é mapeada para o método onsearch na seção de mapa de mensagens descrita anteriormente.
+Essa ID de comando é mapeada para o método OnSearch na seção mapa de mensagens descrita anteriormente.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -57,9 +57,9 @@ Essa ID de comando é mapeada para o método onsearch na seção de mapa de mens
 [**Implementando CPluginWindow**](implementing-cpluginwindow.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

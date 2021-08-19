@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ad7fc7bb443302932b5d08e57be6a36bec19f729
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e23ddffb2405f882a5aa9c7d2ef18056ee4c75697b49a42c4c1036cc42fc444b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456291"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014467"
 ---
 # <a name="ms-ds-integer-attribute"></a>atributo ms-DS-Integer
 
@@ -120,15 +120,15 @@ Um atributo para armazenar um inteiro.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| É de valor único       | Falso                                                                                                                      |
+| Tem valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Um atributo para armazenar um inteiro.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| É de valor único       | Falso                                                                                                                      |
+| Tem valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No catálogo global      | Falso                                                                                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
+| No Catálogo Global      | Falso                                                                                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 

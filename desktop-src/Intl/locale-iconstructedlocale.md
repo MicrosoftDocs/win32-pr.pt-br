@@ -4,18 +4,18 @@ ms.assetid: 5557ee1e-09bf-0d0b-8e73-df32d9a406dd
 title: LOCALE_ICONSTRUCTEDLOCALE
 ms.topic: article
 ms.date: 09/01/2020
-ms.openlocfilehash: 120c206a14030a182378977c9e68fb7dcd77200d
-ms.sourcegitcommit: 4af3e9ec3142ba499d20ed8b174c2b219c5eacd2
+ms.openlocfilehash: 26d54ce55393f54d56f521231e257a8b0692758f8e6c830a890d81c8f82e8422
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105995141"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117809634"
 ---
 # <a name="locale_iconstructedlocale"></a>ICONSTRUCTEDLOCALE de localidade \_
 
 Identificador a ser solicitado se a localidade for uma localidade "construída". O uso desse LCTYPE não é recomendado.
 
-Isso identifica uma localidade para a qual o Windows não tem informações completas e tem de "construir" informações em tempo de execução. Normalmente, as informações fornecidas pelo LOCALE_ICONSTRUCTEDLOCALE são de uso limitado, pois o Windows fornecerá tantos dados quantos estiverem disponíveis para cada localidade. Portanto, o uso desse LCTYPE não é recomendado.
+isso identifica uma localidade para a qual Windows muitos não têm informações completas e tem de "construir" informações em tempo de execução. normalmente, as informações fornecidas pelo LOCALE_ICONSTRUCTEDLOCALE são de uso limitado, já que Windows fornecerá tantos dados quantos estiverem disponíveis para cada localidade. Portanto, o uso desse LCTYPE não é recomendado.
 
 
 | Valor | Significado                 |

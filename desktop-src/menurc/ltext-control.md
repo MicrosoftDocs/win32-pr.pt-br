@@ -3,7 +3,7 @@ title: Controle LTEXT
 description: Define um controle de texto alinhado à esquerda.
 ms.assetid: ef6d7d06-3614-4b54-8a23-684d7ef65115
 keywords:
-- Menus de controle do LTEXT e outros recursos
+- Menus de controle LTEXT e outros recursos
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.locfileid: "117870270"
 ---
 # <a name="ltext-control"></a>Controle LTEXT
 
-Define um controle de texto alinhado à esquerda. O controle é um retângulo simples que exibe o texto determinado alinhado à esquerda no retângulo. O texto é formatado antes de ser exibido. As palavras que ultrapassaram o final de uma linha são automaticamente encapsuladas no início da próxima linha. Palavras que são maiores que a largura do controle são truncadas.
+Define um controle de texto alinhado à esquerda. O controle é um retângulo simples que exibe o texto determinado alinhado à esquerda no retângulo. O texto é formatado antes de ser exibido. Palavras que se estenderiam após o final de uma linha são automaticamente empacotados para o início da próxima linha. Palavras com mais tempo que a largura do controle são truncadas.
 
-A instrução **LTEXT** , que pode ser usada somente em uma instrução [**DIALOGEX**](dialogex-resource.md) , define o texto, o identificador, as dimensões e os atributos do controle.
+A **instrução LTEXT,** que pode ser usada somente em uma instrução [**DIALOGEX,**](dialogex-resource.md) define o texto, o identificador, as dimensões e os atributos do controle.
 
 ``` syntax
 LTEXT text, id, x, y, width, height [, style [, extended-style]]
@@ -31,20 +31,20 @@ LTEXT text, id, x, y, width, height [, style [, extended-style]]
 
 <dl> <dt>
 
-<span id="style"></span><span id="STYLE"></span>*estilo*
+<span id="style"></span><span id="STYLE"></span>*Estilo*
 </dt> <dd>
 
-Estilos de controle. Esse valor pode ser qualquer combinação do estilo **de \_ botão de opção BS** e dos seguintes estilos: **SS \_ Left**, **WS \_ TabStop** e **WS \_ Group**.
+Estilos de controle. Esse valor pode ser qualquer combinação do estilo **\_ RADIOBUTTON BS** e os seguintes estilos: **SS \_ LEFT,** **\_ WS TABSTOP e** **WS \_ GROUP**.
 
 Se você não especificar um estilo, o estilo padrão será `SS_LEFT | WS_GROUP` .
 
 </dd> </dl>
 
-Para obter mais informações sobre a sintaxe geral de uma instrução de controle, consulte [parâmetros de controle comuns](common-control-parameters.md).
+Para obter mais informações sobre a sintaxe geral de uma instrução de controle, consulte [Common Control Parameters](common-control-parameters.md).
 
 ## <a name="examples"></a>Exemplos
 
-Este exemplo define um controle de texto alinhado à esquerda que é rotulado como nome de arquivo:
+Este exemplo define um controle de texto alinhado à esquerda rotulado como Nome do arquivo:
 
 ``` syntax
 LTEXT "Filename", 101, 10, 10, 100, 100
@@ -54,7 +54,7 @@ LTEXT "Filename", 101, 10, 10, 100, 100
 
 <dl> <dt>
 
-[**CONTROLO**](control-control.md)
+[**Controle**](control-control.md)
 </dt> <dt>
 
 [**CTEXT**](ctext-control.md)

@@ -1,19 +1,19 @@
 ---
-description: 'Funções e métodos da aquisição de imagens do Windows (WIA) podem retornar códigos de erro da seguinte lista: erro CodeMeaningCodeWIA \_ erro \_ BUSYThe dispositivo está ocupado.'
+description: 'Windows As funções e métodos de aquisição de imagem (WIA) podem retornar códigos de erro da seguinte lista: erro CodeMeaningCodeWIA \_ erro \_ BUSYThe dispositivo está ocupado.'
 ms.assetid: 3abbe92b-32b7-4820-b208-45c847243078
 title: Códigos de erro (WIA)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bd6025616d46a5973692bb3cafbcf88e18836ad0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e5c782ae449a52ae0ff2b64f124609a3142f1dd457d74bdb82333502ef1868ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117670269"
 ---
 # <a name="error-codes-wia"></a>Códigos de erro (WIA)
 
-As funções e métodos de aquisição de imagens do Windows (WIA) podem retornar códigos de erro da lista a seguir: 
+Windows As funções e métodos de aquisição de imagem (WIA) podem retornar códigos de erro da lista a seguir: 
 
 | Código do Erro                                      | Significado                                                                                                                                                                                                                             | Código       |
 |-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
@@ -28,8 +28,8 @@ As funções e métodos de aquisição de imagens do Windows (WIA) podem retorna
 | \_resposta de \_ \_ Driver inválido de erro \_ WIA           | A resposta do driver é inválida.                                                                                                                                                                                            | 0x8021000F |
 | \_item de erro WIA \_ \_ excluído                       | O dispositivo WIA foi excluído. Ele não está mais disponível.                                                                                                                                                                               | 0x80210009 |
 | \_lâmpada de erro WIA \_ \_ desativada                           | A lâmpada do verificador está desligada.                                                                                                                                                                                                          | 0x80210017 |
-| \_erro WIA \_ máximo \_ do \_ contador de endossador de impressora \_ | Um trabalho de verificação foi interrompido porque um item imprimível/endossador atingiu o valor máximo válido para o \_ \_ contador de endossador de impressora IPS WIA \_ \_ e foi redefinido como 0. Esse recurso está disponível com o Windows 8 e versões posteriores do Windows. | 0x80210021 |
-| \_ \_ vários \_ feeds de erro WIA                         | Ocorreu um erro de verificação devido a uma condição de feed de várias páginas. Esse recurso está disponível com o Windows 8 e versões posteriores do Windows.                                                                                            | 0x80210020 |
+| \_erro WIA \_ máximo \_ do \_ contador de endossador de impressora \_ | Um trabalho de verificação foi interrompido porque um item imprimível/endossador atingiu o valor máximo válido para o \_ \_ contador de endossador de impressora IPS WIA \_ \_ e foi redefinido como 0. esse recurso está disponível com Windows 8 e versões posteriores do Windows. | 0x80210021 |
+| \_ \_ vários \_ feeds de erro WIA                         | Ocorreu um erro de verificação devido a uma condição de feed de várias páginas. esse recurso está disponível com Windows 8 e versões posteriores do Windows.                                                                                            | 0x80210020 |
 | \_erro WIA \_ offline                             | O dispositivo está offline. Verifique se o dispositivo está ligado e conectado ao PC.                                                                                                                                                  | 0x80210005 |
 | o \_ documento de erro WIA \_ \_ está vazio                        | Não há documentos no alimentador de documentos.                                                                                                                                                                                      | 0x80210003 |
 | \_ \_ emperramento de papel WIA \_                          | O papel está emperrado no alimentador de documentos do scanner.                                                                                                                                                                                   | 0x80210002 |

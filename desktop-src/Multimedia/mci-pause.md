@@ -3,7 +3,7 @@ title: MCI_PAUSE comando (mmsystem. h)
 description: O \_ comando MCI PAUSE Pausa a ação atual. CD de áudio, digital-vídeo, MIDI Sequencer, VCR, VIDEODISC e formato de onda-os dispositivos de áudio reconhecem este comando.
 ms.assetid: c4d0b0a2-cd7b-4641-a318-eb4b4e88b70f
 keywords:
-- Multimídia do Windows de comando MCI_PAUSE
+- MCI_PAUSE comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b076397ca9ab770d6f9c23cc5b64853bdd2f07ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2c2318a10e7b03bf89d616bd6ff2373cdf785b0bb4015ab4b308ead57d7f9223
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803494"
 ---
 # <a name="mci_pause-command"></a>\_Comando MCI Pause
 

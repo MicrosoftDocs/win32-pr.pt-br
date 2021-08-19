@@ -1,6 +1,6 @@
 ---
-title: Guia do desenvolvedor de serviços de interface do usuário Acessibilidade Ativa
-description: Esta seção aborda os seguintes tópicos
+title: Guia do desenvolvedor Acessibilidade Ativa Interface do Usuário Services
+description: Esta seção discute os tópicos a seguir
 ms.assetid: 91738bc9-0e33-4959-8f8a-ac4645e8511a
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,14 +11,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118327036"
 ---
-# <a name="active-accessibility-user-interface-services-developers-guide"></a>Guia do desenvolvedor de serviços de interface do usuário Acessibilidade Ativa
+# <a name="active-accessibility-user-interface-services-developers-guide"></a>Guia do desenvolvedor Acessibilidade Ativa Interface do Usuário Services
 
-Esta seção aborda os seguintes tópicos:
+Esta seção discute os seguintes tópicos:
 
--   [APIs da interface do usuário](user-interface-apis.md)
--   [Chamando APIs de Acessibilidade Ativa](calling-active-accessibility-apis.md)
--   [Guia do desenvolvedor para clientes Acessibilidade Ativa](developer-s-guide-for-active-accessibility-clients.md)
--   [Guia do desenvolvedor para servidores de Acessibilidade Ativa](developer-s-guide-for-active-accessibility-servers.md)
+-   [APIs Interface do Usuário de Interface do Usuário](user-interface-apis.md)
+-   [Chamar APIs Acessibilidade Ativa dados](calling-active-accessibility-apis.md)
+-   [Guia do desenvolvedor para Acessibilidade Ativa clientes](developer-s-guide-for-active-accessibility-clients.md)
+-   [Guia do desenvolvedor para Acessibilidade Ativa servidores](developer-s-guide-for-active-accessibility-servers.md)
 
  
 

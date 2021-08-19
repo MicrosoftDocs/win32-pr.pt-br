@@ -6,12 +6,12 @@ keywords:
 - TS_ATTRID
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18ea3823a95c123fe9942f69a2a133fd94a8567a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2e1c40d56f1f8ff3deb59d0dd7664a197a672ade7b2d53beebd8e35ba5de7c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117950332"
 ---
 # <a name="ts_attrid"></a>\_ATTRID TS
 
@@ -36,10 +36,10 @@ Os GUIDs TSATTRID \_ Text \_ VERTICALWRITING e TSATTRID \_ Text \_ Orientation s
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                       |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                             |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                         |
-| parâmetro<br/>                   | <dl> <dt>Textstor. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                       |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                             |
+| Redistribuível<br/>          | TSF 1,0 em Windows 2000 Professional<br/>                                         |
+| Cabeçalho<br/>                   | <dl> <dt>Textstor. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Textstor. idl</dt> </dl> |
 
 

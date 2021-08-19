@@ -13,11 +13,11 @@ ms.locfileid: "117765125"
 ---
 # <a name="using-named-objects"></a>Usando objetos nomeados
 
-O exemplo a seguir ilustra o uso de [nomes de objeto](object-names.md) criando e abrindo um mutex nomeado.
+O exemplo a seguir ilustra o uso de nomes [de objeto](object-names.md) criando e abrindo um mutex nomeado.
 
 ## <a name="first-process"></a>Primeiro processo
 
-O primeiro processo usa a função [**CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa) para criar o objeto mutex. Observe que essa função é realizada com sucesso mesmo se houver um objeto existente com o mesmo nome.
+O primeiro processo usa a [**função CreateMutex**](/windows/win32/api/synchapi/nf-synchapi-createmutexa) para criar o objeto mutex. Observe que essa função terá êxito mesmo se houver um objeto existente com o mesmo nome.
 
 
 ```C++
@@ -54,9 +54,9 @@ int main(void)
 
 
 
-## <a name="second-process"></a>Segundo processo
+## <a name="second-process"></a>Segundo Processo
 
-O segundo processo usa a função [**OpenMutex**](/windows/win32/api/synchapi/nf-synchapi-openmutexw) para abrir um identificador para o mutex existente. Essa função falhará se um objeto mutex com o nome especificado não existir. O parâmetro Access solicita acesso completo ao objeto mutex, que é necessário para que o identificador seja usado em qualquer uma das funções Wait.
+O segundo processo usa a [**função OpenMutex**](/windows/win32/api/synchapi/nf-synchapi-openmutexw) para abrir um handle para o mutex existente. Essa função falhará se um objeto mutex com o nome especificado não existir. O parâmetro de acesso solicita acesso completo ao objeto mutex, que é necessário para que o identificador seja usado em qualquer uma das funções de espera.
 
 
 ```C++
@@ -93,7 +93,7 @@ int main(void)
 [Nomes de objeto](object-names.md)
 </dt> <dt>
 
-[Usando objetos mutex](using-mutex-objects.md)
+[Usando objetos Mutex](using-mutex-objects.md)
 </dt> </dl>
 
  
