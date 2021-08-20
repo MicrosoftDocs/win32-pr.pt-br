@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Construtor EsentIllegalOperationException'
-title: Construtor EsentIllegalOperationException
+description: 'Saiba mais sobre: Construtor EsentGalOperationException'
+title: Construtor Esent IlegalOperationException
 TOCTitle: 'EsentIllegalOperationException constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentIllegalOperationException.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentillegaloperationexception.esentillegaloperationexception(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e86c7032c18f1f546ac4990f74825631373ac1fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44ca78c3b0f706476bcfc2cfb53da143cff51e159e1563d8f3359933998b572c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105779572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118081337"
 ---
-# <a name="esentillegaloperationexception-constructor"></a>Construtor EsentIllegalOperationException
+# <a name="esentillegaloperationexception-constructor"></a>Construtor Esent IlegalOperationException
 
-Inicializa uma nova instância da classe EsentIllegalOperationException.
+Inicializa uma nova instância da classe EsentOperationException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,8 +56,8 @@ public EsentIllegalOperationException()
 
 #### <a name="reference"></a>Referência
 
-[Classe EsentIllegalOperationException](./esentillegaloperationexception-class.md)
+[Classe Esent IlegalOperationException](./esentillegaloperationexception-class.md)
 
-[Membros do EsentIllegalOperationException](./esentillegaloperationexception-members.md)
+[Membros de Esent IlegalOperationException](./esentillegaloperationexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

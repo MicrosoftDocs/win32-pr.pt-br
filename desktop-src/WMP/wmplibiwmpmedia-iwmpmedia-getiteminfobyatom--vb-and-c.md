@@ -3,9 +3,9 @@ title: Método IWMPMedia getItemInfoByAtom
 description: O método getItemInfoByAtom retorna o valor do atributo com o número de índice especificado.
 ms.assetid: d9a4b737-add1-4bbd-8e03-e58f45d65a62
 keywords:
-- método getItemInfoByAtom Windows Media Player
+- Windows Media Player do método getItemInfoByAtom
 - método getItemInfoByAtom Windows Media Player, interface IWMPMedia
-- Interface IWMPMedia Windows Media Player, método getItemInfoByAtom
+- Windows Media Player de interface IWMPMedia, método getItemInfoByAtom
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb37243960360120fbfe508a39db31e37728ac39
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 72a8820618b39418aa7be82faeef15a372e0e0f90c0db025e99c55be49d8c13e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750734"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118115685"
 ---
 # <a name="iwmpmediagetiteminfobyatom-method"></a>Método IWMPMedia:: getItemInfoByAtom
 
@@ -60,7 +60,7 @@ Um **System. Int32** que especifica o índice no qual o atributo solicitado resi
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um **System. String** que é o valor do atributo.
 

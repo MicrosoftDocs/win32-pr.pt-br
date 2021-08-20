@@ -8,12 +8,12 @@ keywords:
 - filtros de consulta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2e0a4e4a02312fcc9affb681407044ba0d8e18
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5241cb288051515c1198c9979ef7d1a71d18524b3b2f3504f2b9141b6fb8a24c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118020856"
 ---
 # <a name="creating-a-query-filter"></a>Criando um filtro de consulta
 
@@ -66,9 +66,9 @@ onde " &lt; Attribute &gt; " é o **lDAPDisplayName** do atributo a ser avaliado
 
 | Operador           | Descrição                         |
 |--------------------|-------------------------------------|
-| "="<br/>     | É igual a<br/>                   |
+| "="<br/>     | Igual a<br/>                   |
 | "~="<br/>    | Aproximadamente é igual a<br/>     |
-| "<="<br/> | Menor ou igual a<br/>    |
+| "<="<br/> | Menor que ou igual a<br/>    |
 | ">="<br/> | Maior ou igual a<br/> |
 
 

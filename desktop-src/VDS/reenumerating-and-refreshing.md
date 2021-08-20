@@ -4,16 +4,16 @@ ms.assetid: 67d34946-47df-43e2-8ca7-628d0671b869
 title: Reenumerando e atualizando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4a6302c817390ea2eb6bda3d5da0302c4bfefbc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42f19d28d44234b773988f3038666212caf447fb45dee39435b0d99169f92212
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118125916"
 ---
 # <a name="reenumerating-and-refreshing"></a>Reenumerando e atualizando
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 A operação de reenumeração descobre os dispositivos recentemente conectados e recentemente desconectados. A operação de atualização atualiza as informações de configuração dos dispositivos existentes.
 

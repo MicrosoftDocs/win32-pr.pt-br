@@ -4,12 +4,12 @@ ms.assetid: df2da2e6-ed5a-41a1-be30-844c0d6b409b
 title: WPD_COMMAND_MTP_EXT_END_DATA_TRANSFER comando (WpdMtpExtensions. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f13f451c477d5f0003bf34f485407157d527aa7f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dc064d1de151e8b3ebd54245249d8bf9ffa8ecbd41bbe61c36768add4329f092
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105812155"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118026762"
 ---
 # <a name="wpd_command_mtp_ext_end_data_transfer-command"></a>Comando \_ de \_ transferência de dados do MTP \_ ext \_ end \_ \_
 

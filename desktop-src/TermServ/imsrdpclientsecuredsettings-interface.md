@@ -1,6 +1,6 @@
 ---
 title: Interface IMsRdpClientSecuredSettings
-description: Inclui métodos para recuperar e definir as propriedades do Área de Trabalho Remota controle ActiveX que são restritos a zonas de segurança de URL específicas do Internet Explorer. | Interface IMsRdpClientSecuredSettings
+description: inclui métodos para recuperar e definir propriedades do controle de ActiveX de Área de Trabalho Remota que são restritos a zonas de segurança de URL específicas do Internet Explorer. | Interface IMsRdpClientSecuredSettings
 ms.assetid: 56d3193d-a0fb-468a-9fb3-c080db5500b7
 ms.tgt_platform: multiple
 keywords:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 396e6b58b2be0122076b5529b910423377417fa6
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 79a1b834d42c957998ad2a8eda5cd3790dd16f40dfd82a8e463bc34e510cd742
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105783339"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129786"
 ---
 # <a name="imsrdpclientsecuredsettings-interface"></a>Interface IMsRdpClientSecuredSettings
 
-Inclui métodos para recuperar e definir as propriedades do Área de Trabalho Remota controle ActiveX que são restritos a zonas de segurança de URL específicas do Internet Explorer.
+inclui métodos para recuperar e definir propriedades do controle de ActiveX de Área de Trabalho Remota que são restritos a zonas de segurança de URL específicas do Internet Explorer.
 
 ## <a name="members"></a>Membros
 
@@ -39,7 +39,7 @@ A interface **IMsRdpClientSecuredSettings** tem essas propriedades.
 
 
 
-| Propriedade                                                                                   | Tipo de acesso           | Description                                   |
+| Propriedade                                                                                   | Tipo de acesso           | Descrição                                   |
 |:-------------------------------------------------------------------------------------------|:----------------------|:----------------------------------------------|
 | [**AudioRedirectionMode**](imsrdpclientsecuredsettings-autoredirectionmode.md)<br/> | Leitura/gravação<br/> | As configurações de redirecionamento de áudio.<br/>    |
 | [**KeyboardHookMode**](imsrdpclientsecuredsettings-keyboardhookmode.md)<br/>        | Leitura/gravação<br/> | As configurações de redirecionamento de teclado.<br/> |

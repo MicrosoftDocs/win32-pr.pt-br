@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: ec62c2ecab6d8c90a9c9b7b2570bf5d76afd0589
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db0f87b7aec956a74a0c54871da4019c1ddd4f1bcd57fce3806218003fcb70bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750527"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162117"
 ---
 # <a name="ctl3dunsubclassctl-function"></a>Função Ctl3dUnsubclassCtl
 
@@ -46,7 +46,7 @@ Um identificador para a janela de controle.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se o controle tiver uma subclasse com êxito; caso contrário, retornará **false**.
 

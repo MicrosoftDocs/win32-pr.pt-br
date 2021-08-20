@@ -1,26 +1,26 @@
 ---
-title: Atributo AccentBar de VML
-description: Atributo AccentBar de VML
+title: Atributo AccentBar do VML
+description: Atributo AccentBar do VML
 ms.assetid: 83eefbce-b6e0-4800-a005-c61ce0994490
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 17a48a943451c271a397fba5413c03e62c39e337
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d510808e8a91b783c7ef206d1acb681ce56f07d07d69ac525345eeff9ce3491e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294449"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118125319"
 ---
-# <a name="vml-accentbar-attribute"></a>Atributo AccentBar de VML
+# <a name="vml-accentbar-attribute"></a>Atributo AccentBar do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se uma barra de ênfase será usada com o texto explicativo. Leitura/gravação. **VgTriState**.
+Determina se uma barra de acentos será usada com o destaque. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,14 +28,14 @@ Determina se uma barra de ênfase será usada com o texto explicativo. Leitura/g
 
 **Sintaxe de marca**
 
-<o: *Element* accentbar = " *expressão* " >
+<o: *element* accentbar=" *expressão* ">
 
 **Comentários**
 
-Se **for true**, o texto explicativo usará uma barra de ênfase. O valor padrão é **Falso**.
+Se **True**, o destaque usará uma barra de acentos. O valor padrão é **Falso**.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

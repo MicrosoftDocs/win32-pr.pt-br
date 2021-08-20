@@ -7,12 +7,12 @@ keywords:
 - Verificando um direito de acesso de controle em um anúncio de ACL de objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 10170bd496da14657356a2334015975da1cc02ff
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: e13c62a4b736625e30bc2de5314d4df3305265fa39e103d6f7ce85b0d77e9d4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104007355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118022982"
 ---
 # <a name="checking-a-control-access-right-in-an-objects-acl"></a>Verificando um direito de acesso de controle na ACL de um objeto
 
@@ -26,6 +26,6 @@ Use as seguintes etapas para verificar o acesso de um direito de acesso controla
 
 O código de exemplo no [código de exemplo para a verificação de um direito de acesso de controle na ACL de um objeto](example-code-for-checking-a-control-access-right-in-an-objectampaposs-acl.md) mostra, em detalhes, como fazer isso.
 
- 
+ 
 
- 
+ 

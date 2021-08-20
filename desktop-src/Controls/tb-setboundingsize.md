@@ -3,7 +3,7 @@ title: Mensagem de TB_SETBOUNDINGSIZE (commctrl. h)
 description: Define o tamanho delimitador para um controle de barra de ferramentas de várias colunas.
 ms.assetid: f406d9e3-1c40-4317-8cf1-51706f4c6adf
 keywords:
-- Controles de TB_SETBOUNDINGSIZE de mensagens do Windows
+- controles de Windows de mensagem de TB_SETBOUNDINGSIZE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 419595da16148f7382da5053d3187e9cce9e00a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7d409769e08e489d922dbdc2361779953555000dca784a6f7b977bbbcd3a5e65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824150"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167739"
 ---
 # <a name="tb_setboundingsize-message"></a>TB de \_ mensagem SETBOUNDINGSIZE
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura de [**tamanho**](/previous-versions//dd145106(v=vs.8
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno não é usado.
 
@@ -63,9 +63,9 @@ O tamanho de limite controla como os botões são organizados em colunas. Se o c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

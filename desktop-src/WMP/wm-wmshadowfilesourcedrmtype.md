@@ -1,5 +1,5 @@
 ---
-title: WM/WMShadowFileSourceDRMType (SDK do Windows Media Player)
+title: WM/WMShadowFileSourceDRMType (Windows Media Player SDK)
 description: O WM/WMShadowFileSourceDRMType é o sistema de gerenciamento de direitos digitais usado para proteger o arquivo contido no arquivo de sombra.
 ms.assetid: f670752d-0490-411e-b4f1-a8c782ad9fcc
 keywords:
@@ -12,22 +12,22 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b019b1e26e7a98f49a25de96dc8e8e45a6f7bd3d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5189a6dbd332b08f0fb8b949933d4b2b92561cd6b3151829f1a321e7f47261d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116569"
 ---
-# <a name="wmwmshadowfilesourcedrmtype-windows-media-player-sdk"></a>WM/WMShadowFileSourceDRMType (SDK do Windows Media Player)
+# <a name="wmwmshadowfilesourcedrmtype-windows-media-player-sdk"></a>WM/WMShadowFileSourceDRMType (Windows Media Player SDK)
 
-O **WM/WMShadowFileSourceDRMType** é o sistema de gerenciamento de direitos digitais usado para proteger o arquivo contido no arquivo de sombra.
+**O WM/WMShadowFileSourceDRMType** é o sistema de gerenciamento de direitos digitais usado para proteger o arquivo contido no arquivo de sombra.
 
 ## <a name="remarks"></a>Comentários
 
-Um arquivo de sombra pode ser um wrapper para um arquivo de origem. Esse atributo é uma cadeia de caracteres que identifica o tipo de DRM para o arquivo de origem.
+Um arquivo de sombra pode ser um wrapper para um arquivo de origem. Esse atributo é uma cadeia de caracteres que identifica o tipo DRM para o arquivo de origem.
 
-O arquivo de sombra é especificado usando o atributo [ShadowFilePath](shadowfilepath-attribute.md) .
+O arquivo de sombra é especificado usando o [atributo ShadowFilePath.](shadowfilepath-attribute.md)
 
 ## <a name="requirements"></a>Requisitos
 

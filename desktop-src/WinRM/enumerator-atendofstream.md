@@ -6,7 +6,7 @@ ms.tgt_platform: multiple
 keywords:
 - Gerenciamento Remoto do Windows da propriedade AtEndOfStream
 - Gerenciamento Remoto do Windows da propriedade AtEndOfStream, objeto Enumerator
-- Objeto Enumerator Gerenciamento Remoto do Windows, Propriedade AtEndOfStream
+- objeto Enumerator Gerenciamento Remoto do Windows, propriedade AtEndOfStream
 topic_type:
 - apiref
 api_name:
@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 023798f6c868e434218dd1a4dbdf1928bf4526a0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b1077837f82d650b57dfea0316ef15094b18749eefdb6957e62e6afd92cfe672
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113197"
 ---
 # <a name="enumeratoratendofstream-property"></a>Propriedade Enumerator. AtEndOfStream
 
@@ -115,7 +115,7 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |

@@ -4,21 +4,21 @@ description: Atributo do método VML
 ms.assetid: 42ab9d78-f004-4571-a566-03edd8341d19
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2f7440e1e793e7ad34860524f63a3bfc38456f1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 84d6b5ae67f94a2fc6e27451fb1a947c8341d1f77c08a721ca7946250cee3b7e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105789620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124759"
 ---
 # <a name="vml-method-attribute"></a>Atributo do método VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define o método usado para gerar um preenchimento gradual. Leitura/gravação. **VgSigmaType**.
 
@@ -51,7 +51,7 @@ Os valores são:
 
 
 
- 
+ 
 
 *Atributo padrão da VML*
 
@@ -72,6 +72,6 @@ A forma terá um preenchimento de gradiente linear vermelho.
 
 
 
- 
+ 
 
- 
+ 

@@ -1,19 +1,19 @@
 ---
 title: Registrando um retorno de chamada no Visual Basic
-description: Adicionar um retorno de chamada no Visual Basic é diferente do método usado no VBScript.
+description: adicionar um retorno de chamada no Visual Basic é diferente do método usado no VBScript.
 ms.assetid: 6aebb855-cf5b-4134-b7f6-3a8b404b7ae8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa754235458820a3c16eea73eec247aed90a103f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e7145a6c6ef80ede3ea2fdb1fd62a2661142fb6f0a85454389fe1c09c117e5b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084748"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118126219"
 ---
 # <a name="registering-a-callback-in-visual-basic"></a>Registrando um retorno de chamada no Visual Basic
 
-Adicionar um retorno de chamada no Visual Basic é diferente do método usado no VBScript. A função **GetRef** usada no VBScript é diferente da usada em Visual Basic. Portanto, um desenvolvedor deve criar um objeto [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que tenha a função de retorno de chamada como o método padrão. Este tópico fornece as informações necessárias para desenvolver Visual Basic aplicativos.
+adicionar um retorno de chamada no Visual Basic é diferente do método usado no VBScript. A função **GetRef** usada no VBScript é diferente da usada em Visual Basic. Portanto, um desenvolvedor deve criar um objeto [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) que tenha a função de retorno de chamada como o método padrão. este tópico fornece as informações necessárias para desenvolver Visual Basic aplicativos.
 
 **Para implementar esse retorno de chamada em um aplicativo**
 
@@ -88,8 +88,8 @@ No exemplo a seguir, o objeto [**IUPnPService**](/windows/desktop/api/Upnp/nn-up
 
 Os exemplos anteriores e o código de exemplo do ponto de controle usam algumas das seguintes bibliotecas de objetos:
 
-1.  TLBTypes. olb – essa biblioteca define alguns tipos de biblioteca e interfaces de tipo que são usados no código de exemplo. Ele define algumas das funções a serem usadas em Visual Basic, como [**LoadTypeLibEx**](/windows/win32/api/oleauto/nf-oleauto-loadtypelibex), que já estão disponíveis em C ou C++.
-2.  VboostTypes6. olb – essa biblioteca define alguns tipos base que são usados em TLBTypes. olb e FunctionDelegator. bas. Mais informações sobre o TLBTypes podem ser encontradas no livro *Advanced Visual Basic 6: Power Techniques for cotidiano Programs*, by Matthew Curland (Addison-Wesley, julho de 2000, ISBN: 0-201-70712-8). (Este livro pode não estar disponível em alguns idiomas e países.)
+1.  TLBTypes. olb – essa biblioteca define alguns tipos de biblioteca e interfaces de tipo que são usados no código de exemplo. ele define algumas das funções a serem usadas em Visual Basic, como [**LoadTypeLibEx**](/windows/win32/api/oleauto/nf-oleauto-loadtypelibex), que já estão disponíveis em C ou C++.
+2.  VboostTypes6. olb – essa biblioteca define alguns tipos base que são usados em TLBTypes. olb e FunctionDelegator. bas. mais informações sobre o TLBTypes podem ser encontradas no livro *Advanced Visual Basic 6: Power techniques for cotidiano programs*, by Matthew Curland (Addison-Wesley, julho de 2000, ISBN: 0-201-70712-8). (Este livro pode não estar disponível em alguns idiomas e países.)
 
 O código de exemplo do ponto de controle e as bibliotecas a seguir estão relacionados a esta seção e são necessários para implementar esse retorno de chamada. Eles podem ser encontrados com o código de exemplo do ponto de controle:
 
@@ -99,6 +99,6 @@ O código de exemplo do ponto de controle e as bibliotecas a seguir estão relac
 -   TLBTypes. olb
 -   FunctionDelegator. bas
 
- 
+ 
 
- 
+ 

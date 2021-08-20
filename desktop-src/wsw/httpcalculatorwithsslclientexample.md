@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithSslClientExample
-description: Este exemplo mostra como usar o proxy de serviço para se comunicar com um serviço de calculadora, com segurança de transporte SSL.
+description: Este exemplo mostra como usar o proxy de serviço para se falar com um serviço de calculadora, com segurança de transporte SSL.
 ms.assetid: cd0194d7-8ddd-4a0e-b4eb-fe7b3ef20e22
 keywords:
-- HttpCalculatorWithSslClientExample nativo – Web-Services
+- HttpCalculatorWithSslClientExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3cc3bbbbcf77407b7ced3424e9a18640538bb855
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4274a7024c50c7db3dcd25ef8d46e47bfeef7467b9251af32460808163346542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118025891"
 ---
 # <a name="httpcalculatorwithsslclientexample"></a>HttpCalculatorWithSslClientExample
 
-Este exemplo mostra como usar o proxy de serviço para se comunicar com um serviço de calculadora, com segurança de transporte SSL.
+Este exemplo mostra como usar o proxy de serviço para se falar com um serviço de calculadora, com segurança de transporte SSL.
 
--   [HttpCalculatorClientWithSsl. cpp](#httpcalculatorclientwithsslcpp)
--   [CalculatorService. WSDL](#calculatorservicewsdl)
+-   [HttpCalculatorClientWithSsl.cpp](#httpcalculatorclientwithsslcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpcalculatorclientwithsslcpp"></a>HttpCalculatorClientWithSsl. cpp
+## <a name="httpcalculatorclientwithsslcpp"></a>HttpCalculatorClientWithSsl.cpp
 
 
 ```C++
@@ -218,7 +218,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -341,9 +341,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

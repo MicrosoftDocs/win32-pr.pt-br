@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: c937d7d9233b1df063a7cf4a12e57e909145b8c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f330892da5844305d4d1f3ffa3aee0bf6e9ef50fb2a1cd951c332e2b17eb3b12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921365"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132925"
 ---
 # <a name="irtc-interface"></a>Interface IRTC
 
@@ -40,7 +40,7 @@ A interface **IRTC** tem esses métodos.
 | Método                                                              | Descrição                                                                                                                                             |
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Configurar**](irtc-configure.md)                                 | Define o gatilho, a correspondência de padrões e o tamanho do buffer da captura.<br/>                                                                             |
-| [**Connect**](irtc-connect.md)                                     | Conecta o NPP à rede.<br/>                                                                                                             |
+| [**Conectar**](irtc-connect.md)                                     | Conecta o NPP à rede.<br/>                                                                                                             |
 | [**Desconectar**](irtc-disconnect.md)                               | Desconecta o NPP da rede.<br/>                                                                                                        |
 | [**Getcontrolstate**](irtc-getcontrolstate.md)                     | Recupera o estado da [*captura*](c.md), que indica se a captura está em execução ou em pausa.<br/>                      |
 | [**GetConversationStatistics**](irtc-getconversationstatistics.md) | Recupera informações de [*sessão*](s.md) e de [*estação*](s.md) para a captura atual.<br/> |

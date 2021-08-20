@@ -3,7 +3,7 @@ title: LVN_ODCACHEHINT código de notificação (commctrl. h)
 description: Enviado por um controle de exibição de lista virtual quando o conteúdo de sua área de exibição foi alterado.
 ms.assetid: 2fac6a16-f65e-402f-9295-f2beb23db924
 keywords:
-- LVN_ODCACHEHINT de código de notificação controles do Windows
+- LVN_ODCACHEHINT código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 827ad81b6ebb66a4fbe5c1a3b283175818b99e98
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b3693291eeaef0879bdf861f392b89a1d0f2d5ec52f8a9c0d092b5495eb4565a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919239"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170173"
 ---
 # <a name="lvn_odcachehint-notification-code"></a>Código de notificação do LVN \_ ODCACHEHINT
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMLVCACHEHINT**](/windows/win32/api/commctrl/ns-c
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O aplicativo que recebe esse código de notificação deve retornar zero.
 
@@ -61,9 +61,9 @@ Observe que esse código de notificação nem sempre é uma representação exat
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

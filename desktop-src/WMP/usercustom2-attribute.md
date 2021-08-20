@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33649c62e87f9a970cdac1d62ba7f5e439609c20
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 14e4e7e2f5a1b6a31d58f241c948db1b57e565bf3f893e5f8f4ff005efbd1184
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118117311"
 ---
 # <a name="usercustom2-attribute"></a>Atributo UserCustom2
 
-O atributo **UserCustom2** é um texto definido pelo usuário.
+O **atributo UserCustom2** é um texto definido pelo usuário.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -33,9 +33,9 @@ O atributo **UserCustom2** é um texto definido pelo usuário.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente na biblioteca do.
+Esse atributo é armazenado somente na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior (o item de foto tem suporte apenas no Windows Media Player 10 ou posterior)<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior (o item de foto tem suporte apenas no Windows Media Player 10 ou posterior)<br/> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 66faeb73-16fb-4b7f-a4d5-a90ec2590d8c
 title: Criar figuras usando linhas, curvas e formas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c473dfececcaa86347dc02efdfd62131eb9a63d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cd2c0d2914eb1edb740d7a9bca6a8b521aed6a0443b6dcd1ee92c68326f748af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118067603"
 ---
 # <a name="creating-figures-from-lines-curves-and-shapes"></a>Criar figuras usando linhas, curvas e formas
 

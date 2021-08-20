@@ -1,7 +1,7 @@
 ---
-description: Retorna um valor booliano que indica se a chave privada é exportável.
+description: Retorna um valor booliana que indica se a chave privada é exportável.
 ms.assetid: 56e72747-126d-4bb4-ac10-ced0acef388b
-title: Método PrivateKey. IsExportable
+title: Método PrivateKey.IsExportable
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 6aef50091652bcc1294f7feaee44efe75174b6e3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4e4056690be8661628baa1723583489375b37cbb69d2fc9340e218ece87a314b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117978422"
 ---
-# <a name="privatekeyisexportable-method"></a>Método PrivateKey. IsExportable
+# <a name="privatekeyisexportable-method"></a>Método PrivateKey.IsExportable
 
-\[O método **IsExportable** está disponível para uso nos sistemas operacionais especificados na seção requisitos. Em vez disso, use a [**Propriedade X509Certificate2. PrivateKey**](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2.privatekey?view=netcore-3.1) no namespace [**System. Security. Cryptography. X509Certificates**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1) .\]
+\[O **método IsExportable** está disponível para uso nos sistemas operacionais especificados na seção Requisitos. Em vez disso, [**use a propriedade X509Certificate2.PrivateKey**](/dotnet/api/system.security.cryptography.x509certificates.x509certificate2.privatekey?view=netcore-3.1) no namespace [**System.Security.Cryptography.X509Certificates.**](/dotnet/api/system.security.cryptography.x509certificates.publickey.-ctor?view=netcore-3.1)\]
 
-O método **IsExportable** retorna um valor booliano que indica se a chave privada é exportável.
+O **método IsExportable** retorna um valor booliana que indica se a chave privada é exportável.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,13 +39,13 @@ PrivateKey.IsExportable()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se for true, a chave privada será marcada como exportável.
+Se true, a chave privada será marcada como exportável.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno desse método é dependente do CSP ( [*provedor de serviços de criptografia*](../secgloss/c-gly.md) ) usado. Esse método retornará um valor confiável se um Microsoft CSP for usado. Se o CSP não for um CSP da Microsoft, o valor de retorno não poderá ser confiável para ser preciso.
+O valor de retorno desse método depende do CSP (provedor de [*serviços*](../secgloss/c-gly.md) criptográficos) usado. Esse método retornará um valor confiável se um CSP da Microsoft for usado. Se o CSP não for um CSP da Microsoft, o valor de retorno não poderá ser confiável para ser preciso.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,7 +53,7 @@ O valor de retorno desse método é dependente do CSP ( [*provedor de serviços 
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | CAPICOM 2.0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 
@@ -62,7 +62,7 @@ O valor de retorno desse método é dependente do CSP ( [*provedor de serviços 
 
 <dl> <dt>
 
-[**PrivateKey**](privatekey.md)
+[**Privatekey**](privatekey.md)
 </dt> </dl>
 
  

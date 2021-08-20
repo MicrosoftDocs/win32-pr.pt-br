@@ -17,7 +17,7 @@ Nesse cenário, um usuário está tentando navegar até o www.msn.com usando o p
 
 Primeiro, você pode usar netsh para iniciar um rastreamento. Digitando cenário de início de rastreamento **netsh = InternetClient tracefile=msn.etl** inicia o rastreamento para todos os provedores habilitados no cenário InternetClient, salvando os resultados em um arquivo chamado msn.etl. Depois de usar um navegador da Web para tentar alcançar www.msn.com, digitar **netsh trace stop** termina e correlaciona o arquivo de rastreamento.
 
-Em seguida, você pode abrir o arquivo msn.etl Monitor de Rede. Os eventos são agrupados por ID de atividade no painel esquerdo. O uso do **filtro description.contains("msn")** mostrará apenas os eventos que incluem a cadeia de caracteres "msn" na descrição do protocolo.
+Em seguida, você pode abrir o arquivo msn.etl no Monitor de Rede. Os eventos são agrupados por ID de atividade no painel esquerdo. O uso do **filtro description.contains("msn")** mostrará apenas os eventos que incluem a cadeia de caracteres "msn" na descrição do protocolo.
 
 ![solução de problemas de conexões com a Internet usando o monitor de rede (1)](images/internetclient1.png)
 
@@ -29,7 +29,7 @@ A atividade normalizada associada no painel esquerdo é realçada, nesse caso, U
 
 ![solução de problemas de conexões com a Internet usando o monitor de rede (3)](images/internetclient3.png)
 
-Usando Monitor de Rede para exibir e filtrar as informações de rastreamento, o número de eventos a examinar foi reduzido de 1989 para 96.
+Usando o Monitor de Rede para exibir e filtrar as informações de rastreamento, o número de eventos a examinar foi reduzido de 1989 para 96.
 
  
 

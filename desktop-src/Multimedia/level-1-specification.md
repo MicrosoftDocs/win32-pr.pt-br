@@ -9,20 +9,20 @@ keywords:
 - Nível de MPC 1, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30741d8f2cc7e1944dd04cf9768fba182214a1c7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eec49264c75bb132224df94932ae044f9b4fe8876c064279fe8072d85d564ee6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139874"
 ---
 # <a name="level-1-specification"></a>Especificação de nível 1
 
 A especificação de nível 1 foi desenvolvida para incentivar a adoção de recursos básicos de multimídia em um nível mínimo de desempenho. Os componentes de multimídia mais comuns disponíveis para o Marketplace quando a especificação de nível 1 foi emitida incluíam várias unidades de CD-ROM (memória somente leitura) que forneciam dados em taxas de transferência sustentadas, variando de 90 a 150 quilobytes por segundo, placas de som de 8 bits e adaptadores de vídeo de 16 cores e 256-Color (SVGA).
 
- 
+ 
 
- 
+ 
 
 
 

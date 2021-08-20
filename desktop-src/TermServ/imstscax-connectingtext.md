@@ -64,12 +64,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 433da7d159f1fe5bf44114a0b76ed9b4d807046f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7342e47658e77d9fb29ef03ab1995e5263c78a8e31d2f020852e5fa10864a031
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369777"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129668"
 ---
 # <a name="imstscaxconnectingtext-property"></a>Propriedade IMsTscAx:: ConnectingText
 
@@ -110,7 +110,7 @@ A definição da propriedade **ConnectingText** é opcional. Se não estiver def
 
 Essa propriedade só poderá ser definida se o controle não estiver no estado conectado. Retornará **E \_ falhará** se for chamado quando o controle estiver conectado. Você pode verificar se o controle está conectado respondendo a eventos de conexão em [**IMsTscAxEvents**](imstscaxevents-interface.md) ou examinando a propriedade [**Connected**](imstscax-connected.md) .
 
-O método de propriedade **Get \_ ConnectingText** aloca a memória necessária para o buffer apontado pelo parâmetro *pConnectingText* . Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . Isso não é necessário para clientes de Visual Basic e de script.
+O método de propriedade **Get \_ ConnectingText** aloca a memória necessária para o buffer apontado pelo parâmetro *pConnectingText* . Chamar aplicativos C/C++ deve liberar a memória com uma chamada para a função [**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring) . isso não é necessário para clientes de Visual Basic e de script.
 
 Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
 

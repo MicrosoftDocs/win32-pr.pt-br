@@ -1,6 +1,6 @@
 ---
 title: Classe MDM_WindowsAdvancedThreatProtection_Configuration01
-description: A \_ classe MDM WindowsAdvancedThreatProtection \_ Configuration01 é usada para determinar a configuração dos pontos de extremidade do WDATP (proteção avançada contra ameaças) do Windows Defender.
+description: a \_ classe MDM WindowsAdvancedThreatProtection \_ Configuration01 é usada para determinar a configuração de pontos de extremidade de WDATP (proteção avançada contra ameaças) do Windows Defender.
 ms.assetid: b4b2ff02-3836-4044-b8fa-d3405f433d8c
 keywords:
 - Classe MDM_WindowsAdvancedThreatProtection_Configuration01
@@ -19,18 +19,18 @@ api_type:
 - DllExport
 api_location:
 - Mofs\DMWmiBridgeProv.dll
-ms.openlocfilehash: c6cd6689a66735790c381ac307a443c08464a379
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6bcf9cb641151b282bb1bfc594eb9762e00e11101d8f9fbd865b2712bab5f8a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118164212"
 ---
 # <a name="mdm_windowsadvancedthreatprotection_configuration01-class"></a>\_ \_ Classe CONFIGURATION01 do MDM WindowsAdvancedThreatProtection
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ WindowsAdvancedThreatProtection \_ Configuration01** é usada para determinar a configuração dos pontos de extremidade do WDATP (proteção avançada contra ameaças) do Windows Defender.
+a classe **MDM \_ WindowsAdvancedThreatProtection \_ Configuration01** é usada para determinar a configuração de pontos de extremidade de WDATP (proteção avançada contra ameaças) do Windows Defender.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -133,7 +133,7 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                            |
 | Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                                   |
 | MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |

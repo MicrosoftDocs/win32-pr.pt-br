@@ -21,7 +21,7 @@ O bit de ordem alta no **HRESULT** ou SCODE indica se o valor de retorno represe
 
 Os bits R, C, N e r são reservados.
 
-O campo de instalação indica o serviço do sistema responsável pelo erro. A Microsoft aloca novos códigos de instalação conforme eles se tornam necessários. A maioria dos valores SCODEs **e HRESULT** definiu o campo de instalação como \_ FACILITY ITF, indicando um erro de método de interface.
+O campo de instalação indica o serviço do sistema responsável pelo erro. A Microsoft aloca novos códigos de instalação conforme eles se tornam necessários. A maioria dos valores SCODEs **e HRESULT** configura o campo de instalação como \_ FACILITY ITF, indicando um erro de método de interface.
 
 Os campos comuns de instalação são descritos na tabela a seguir.
 

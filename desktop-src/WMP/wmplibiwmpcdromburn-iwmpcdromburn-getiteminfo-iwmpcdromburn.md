@@ -3,9 +3,9 @@ title: Método IWMPCdromBurn getItemInfo
 description: O método getItemInfo recupera o valor do atributo especificado para o CD.
 ms.assetid: 9ca54ec4-42be-40c1-931e-c3bfcbc2b370
 keywords:
-- método getItemInfo Windows Media Player
+- Windows Media Player do método getItemInfo
 - método getItemInfo Windows Media Player, interface IWMPCdromBurn
-- Interface IWMPCdromBurn Windows Media Player, método getItemInfo
+- Windows Media Player de interface IWMPCdromBurn, método getItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9030bd230b2e17bab6ad54dc762a78d2cb343d03
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c2cf1a91ad60826e19051a59617157110fbcd8d75eff325f94f9b3f84d759aa4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116224"
 ---
 # <a name="iwmpcdromburngetiteminfo-method"></a>Método IWMPCdromBurn:: getItemInfo
 
@@ -73,7 +73,7 @@ Um **System. String** que contém um dos valores a seguir.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um **System. String** que é o valor do atributo especificado.
 

@@ -9,12 +9,12 @@ keywords:
 - Nível 2 de MPC, armazenamento óptico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cb0c6cafe77b7a09af89b49d12d74ce718bbc39
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f7501dc69f1239f9768717317c4bad74c0c15c76a815170939b21b72d55e558e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139712"
 ---
 # <a name="level-2-optical-storage"></a>Armazenamento óptico de nível 2
 
@@ -30,9 +30,9 @@ O dispositivo de armazenamento óptico de desempenho mínimo é uma unidade de C
 
 A largura de banda de CPU recomendada deve ser alcançada usando um tamanho de bloco de leitura de pelo menos 16K e um tempo de avanço de não mais do que o tempo necessário para carregar um bloco de leitura de dados no buffer de CD-ROM.
 
- 
+ 
 
- 
+ 
 
 
 

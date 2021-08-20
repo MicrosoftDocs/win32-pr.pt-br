@@ -4,12 +4,12 @@ ms.assetid: 28416230-d0c2-4f6a-9908-45851a5664c5
 title: Arquivos executáveis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d2e552b4efea05faa6c8975f270966ab22d2a040
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83ef271b898f75beb19499f45e4d821ebb62fddfdb331133f9e5557086fae4ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105792501"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143016"
 ---
 # <a name="executable-files"></a>Arquivos executáveis
 

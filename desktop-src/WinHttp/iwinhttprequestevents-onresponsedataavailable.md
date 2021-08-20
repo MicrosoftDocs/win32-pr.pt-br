@@ -1,19 +1,19 @@
 ---
-description: Ocorre quando os dados estão disponíveis da resposta.
+description: Ocorre quando os dados estão disponíveis na resposta.
 ms.assetid: 62d02e3b-466a-4d3d-994b-0a1ae12049e1
-title: 'Evento IWinHttpRequestEvents:: OnResponseDataAvailable'
+title: Evento IWinHttpRequestEvents::OnResponseDataAvailable
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41cb2fbc680b1f6739a66bb68565188c8a5d78b4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12b55f87584164a47b47920caf961f02f0bd9cc6596c4c90f76f381027af545e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757346"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118114240"
 ---
-# <a name="iwinhttprequesteventsonresponsedataavailable-event"></a>Evento IWinHttpRequestEvents:: OnResponseDataAvailable
+# <a name="iwinhttprequesteventsonresponsedataavailable-event"></a>Evento IWinHttpRequestEvents::OnResponseDataAvailable
 
-O evento **OnResponseDataAvailable** ocorre quando os dados estão disponíveis da resposta.
+O **evento OnResponseDataAvailable** ocorre quando os dados estão disponíveis na resposta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -30,23 +30,23 @@ void OnResponseDataAvailable(
 
 <dl> <dt>
 
-*Dados* \[ do no\]
+*Dados* \[ Em\]
 </dt> <dd>
 
-Uma matriz de bytes baseada em zero que recebe os dados de resposta recebidos pelo Microsoft Windows HTTP Services (WinHTTP) até o ponto em que esse evento ocorre. Esta é uma **variante** do tipo VT da \_ matriz \| VT \_ UI1.
+Uma matriz de bytes baseada em zero que recebe os dados de resposta recebidos pelo Microsoft Windows HTTP Services (WinHTTP) até o ponto em que esse evento ocorre. Essa é uma **VARIANTE do** tipo VT \_ ARRAY \| VT \_ UI1.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Como os dados estão em bytes, eles devem ser convertidos em caracteres largos quando colocados em uma cadeia de caracteres de caractere largo (Unicode).
+Como os dados estão em bytes, eles devem ser convertidos em caracteres largos quando colocados em uma cadeia de caracteres largos (Unicode).
 
 > [!Note]  
-> Para o Windows XP e o Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHTTP.
+> Para Windows XP e Windows 2000, consulte [](winhttp-start-page.md) a seção Requisitos de tempo de executar da página inicial do WinHTTP.
 
  
 
@@ -56,10 +56,10 @@ Como os dados estão em bytes, eles devem ser convertidos em caracteres largos q
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>            |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>         |
-| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior no Windows XP e no Windows 2000.<br/> |
-| INSERI<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com aplicativos da área de trabalho SP3 \[\]<br/>            |
+| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com somente aplicativos da área de trabalho SP3 \[\]<br/>         |
+| Redistribuível<br/>          | WinHTTP 5.0 e Internet Explorer 5.01 ou posterior no Windows XP e Windows 2000.<br/> |
+| Idl<br/>                      | <dl> <dt>HttpRequest.idl</dt> </dl> |
 
 
 

@@ -4,9 +4,9 @@ description: Especifica o protocolo de área de trabalho remota usado entre o cl
 ms.assetid: DD607D54-CAEA-43EE-94EB-F983AEA0CC1E
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade ClientProtocolSpec
-- Propriedade ClientProtocolSpec Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade ClientProtocolSpec
+- Propriedade ClientProtocolSpec Serviços de Área de Trabalho Remota
+- A propriedade ClientProtocolSpec Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade ClientProtocolSpec
 topic_type:
 - apiref
 api_name:
@@ -19,18 +19,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 41e603f7587435b3701ec0511587286e1a38bcc0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc7e0cc7b45e457a2e0300e5e59ac1780a4ac4cd9ef023f10b6a73986a960574
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918134"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130127"
 ---
-# <a name="imsrdpclientadvancedsettings8clientprotocolspec-property"></a>Propriedade IMsRdpClientAdvancedSettings8:: ClientProtocolSpec
+# <a name="imsrdpclientadvancedsettings8clientprotocolspec-property"></a>Propriedade IMsRdpClientAdvancedSettings8::ClientProtocolSpec
 
 Especifica o protocolo de área de trabalho remota usado entre o cliente e o servidor.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -49,7 +49,7 @@ HRESULT get_ClientProtocolSpec(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um valor da enumeração [**ClientSpec**](clientspec.md) que especifica o protocolo de área de trabalho remota usado entre o cliente e o servidor.
+Um valor da [**enumeração ClientSpec**](clientspec.md) que especifica o protocolo de área de trabalho remota usado entre o cliente e o servidor.
 
 ## <a name="requirements"></a>Requisitos
 

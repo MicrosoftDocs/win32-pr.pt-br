@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 2a87491a02d3dea992f8dd767ad34cf83b2cbf40
-ms.sourcegitcommit: 80ee822f6ebcbcc8f60042e0d14a39ef6989c731
+ms.openlocfilehash: 37e84b9e5117732784267374ad9e6618e60d3b4020a6d23863b069b3b8233aa1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105755749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160997"
 ---
 # <a name="d1101-unknown-handle"></a>D1101: identificador desconhecido
 
@@ -42,7 +42,7 @@ O endereço da interface.
 
 ## <a name="possible-causes"></a>Possíveis causas
 
-Uso de recurso inválido. O recurso criado fora do Direct2D é usado com uma fábrica do Direct2D ou os recursos criados em uma fábrica foram usados com um recurso criado por outra fábrica.
+Uso de recurso inválido. o recurso criado fora do Direct2D é usado com uma fábrica de Direct2D, ou os recursos criados em uma fábrica foram usados com um recurso criado por outra fábrica.
 
  
 

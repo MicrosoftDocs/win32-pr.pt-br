@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 646681c82919452416c5711f944b08b647639850
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fa5cb525b29aee62a684ec6e16d0c5271f03ce4d52e7e49f0fb3ac26e1690d80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118070014"
 ---
 # <a name="vistagrbitsreplaymissingmapentrydb-field"></a>Campo VistaGrbits. ReplayMissingMapEntryDB
 

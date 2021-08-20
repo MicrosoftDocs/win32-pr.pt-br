@@ -1,12 +1,12 @@
 ---
-title: Método CancelPatch da Win32_RDMSVirtualDesktopCollection classe
-description: Cancela um trabalho de provisionamento de atualização de software para as máquinas virtuais em uma coleção de área de trabalho virtual.
+title: Método CancelPatch da classe Win32_RDMSVirtualDesktopCollection
+description: Cancela um trabalho de provisionamento de atualização de software para as máquinas virtuais em uma coleção de áreas de trabalho virtuais.
 ms.assetid: fb0d6831-5c69-4017-b725-1a5038ad69f5
 ms.tgt_platform: multiple
 keywords:
-- Método CancelPatch Serviços de Área de Trabalho Remota
-- Método CancelPatch Serviços de Área de Trabalho Remota classe , Win32_RDMSVirtualDesktopCollection classe
-- Win32_RDMSVirtualDesktopCollection classe Serviços de Área de Trabalho Remota , método CancelPatch
+- Serviços de Área de Trabalho Remota do método CancelPatch
+- Método CancelPatch Serviços de Área de Trabalho Remota, classe Win32_RDMSVirtualDesktopCollection
+- Classe Win32_RDMSVirtualDesktopCollection Serviços de Área de Trabalho Remota, método CancelPatch
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "118131325"
 ---
 # <a name="cancelpatch-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método CancelPatch da classe Win32 \_ RDMSVirtualDesktopCollection
 
-Cancela um trabalho de provisionamento de atualização de software para as máquinas virtuais em uma coleção de área de trabalho virtual.
+Cancela um trabalho de provisionamento de atualização de software para as máquinas virtuais em uma coleção de áreas de trabalho virtuais.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,8 +53,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\rdms CIMv2 \\ raiz<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
+| Namespace<br/>                | \\RDMs CIMv2 \\ raiz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -63,7 +63,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
 <dl> <dt>
 
-[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
+[**\_RDMSVirtualDesktopCollection Win32**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

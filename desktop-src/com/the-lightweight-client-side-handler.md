@@ -4,12 +4,12 @@ description: Os manipuladores leves do lado do cliente permitem criar manipulado
 ms.assetid: b712237c-55d7-4f52-9cf6-19c6e5fb3182
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5f1e8df5be24e8773a660a4d0208b27a2f585e32
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: a868b6152a13b79bc4475dca14810821065ddfe5c3590ed4e20687bc6d3614b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103641909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118103663"
 ---
 # <a name="the-lightweight-client-side-handler"></a>O manipulador de Client-Side leve
 
@@ -38,6 +38,6 @@ Os clientes de nível inferior podem não ter a capacidade de desempacotamento d
 [O manipulador OLE](the-ole-handler.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

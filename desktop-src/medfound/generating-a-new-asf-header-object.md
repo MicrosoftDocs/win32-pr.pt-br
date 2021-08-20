@@ -4,12 +4,12 @@ ms.assetid: cf73306d-156a-45c0-a3d6-ae48734f5709
 title: Gerando um novo objeto de cabeçalho ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f303be4eb3353a0e7ddf1dad0eff9956f68d7db5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1df567c1c530fa902b002c46ff18aa560cfa2b0b887ee6893a17dfe7a2904796
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118063623"
 ---
 # <a name="generating-a-new-asf-header-object"></a>Gerando um novo objeto de cabeçalho ASF
 
@@ -32,7 +32,7 @@ Para converter as informações contidas no objeto ContentInfo em um formato de 
 
 ### <a name="example"></a>Exemplo
 
-O código de exemplo a seguir mostra como criar um objeto ContentInfo e gerar um buffer de mídia para armazenar o novo objeto de cabeçalho. Para obter um exemplo completo que usa esse código, consulte [tutorial: copiando fluxos ASF de um arquivo para outro](tutorial--copying-asf-streams-from-one-file-to-another.md).
+O código de exemplo a seguir mostra como criar um objeto ContentInfo e gerar um buffer de mídia para armazenar o novo objeto de cabeçalho. para obter um exemplo completo que usa esse código, consulte [Tutorial: copiando Fluxos ASF de um arquivo para outro](tutorial--copying-asf-streams-from-one-file-to-another.md).
 
 
 ```C++

@@ -1,25 +1,25 @@
 ---
-title: Provedor WMI de DNS
-description: O provedor WMI de DNS permite que administradores e programadores configurem registros de recursos (RRs) do sistema de nomes de domínio (DNS) e servidores DNS usando Instrumentação de Gerenciamento do Windows (WMI).
+title: Provedor WMI DNS
+description: O Provedor WMI dns permite que os administradores e programadores configurem RRs (registros de recursos do DNS) e servidores Windows DNS usando a WMI (Instrumentação de Gerenciamento de Domínio).
 ms.assetid: 5388d589-b2d3-47e6-be53-f738188e3552
 keywords:
-- Sistema de nomes de domínio, provedor WMI
+- Sistema de Nomes de Domínio, provedor WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 566018f8c4168e66c24942a8861d937d217b8f0a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2a06ceb2093bb4fdf06ddbc4d06b50ed183f1e810dd8e8187887f07b1b63a426
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163708"
 ---
-# <a name="dns-wmi-provider"></a>Provedor WMI de DNS
+# <a name="dns-wmi-provider"></a>Provedor WMI DNS
 
-O provedor WMI de DNS permite que administradores e programadores configurem registros de recursos (RRs) do sistema de nomes de domínio (DNS) e servidores DNS usando Instrumentação de Gerenciamento do Windows (WMI).
+O Provedor WMI dns permite que os administradores e programadores configurem RRs (registros de recursos do DNS) e servidores Windows DNS usando a WMI (Instrumentação de Gerenciamento de Domínio).
 
- 
+ 
 
- 
+ 
 
 
 

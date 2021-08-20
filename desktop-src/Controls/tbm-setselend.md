@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TBM_SETSELEND (commctrl. h)
-description: Define a posição lógica final do intervalo de seleção atual em um TrackBar. Essa mensagem será ignorada se o TrackBar não tiver o \_ estilo ENABLESELRANGE TBS.
+title: TBM_SETSELEND mensagem (Commctrl.h)
+description: Define a posição lógica final do intervalo de seleção atual em uma barra de faixa. Essa mensagem será ignorada se a barra de faixas não tiver o estilo TBS \_ ENABLESELRANGE.
 ms.assetid: 1feec14c-1607-49d5-a147-af2443f82dc1
 keywords:
-- Controles de TBM_SETSELEND de mensagens do Windows
+- TBM_SETSELEND controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 146446df4daf8e8ac7c0f3499149ba0f46940880
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b9ee524bf6a519a7d0071e4149ed03191a9aec989e2deefe596cca1072dbd098
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118167061"
 ---
-# <a name="tbm_setselend-message"></a>\_Mensagem tbm SETSELEND
+# <a name="tbm_setselend-message"></a>Mensagem TBM \_ SETSELEND
 
-Define a posição lógica final do intervalo de seleção atual em um TrackBar. Essa mensagem será ignorada se o TrackBar não tiver o [**estilo \_ ENABLESELRANGE TBS**](trackbar-control-styles.md) .
+Define a posição lógica final do intervalo de seleção atual em uma barra de faixa. Essa mensagem será ignorada se a barra de faixas não tiver o [**estilo TBS \_ ENABLESELRANGE.**](trackbar-control-styles.md)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Define a posição lógica final do intervalo de seleção atual em um TrackBar.
 *wParam* 
 </dt> <dd>
 
-Sinalizador de redesenho. Se esse parâmetro for **true**, a mensagem redesenhará o TrackBar depois que o intervalo de seleção for definido. Se esse parâmetro for **false**, a mensagem definirá o intervalo de seleção, mas não redesenhará o TrackBar.
+Redesenhar sinalizador. Se esse parâmetro for **TRUE,** a mensagem redesenhará a barra de faixas depois que o intervalo de seleção for definido. Se esse parâmetro for **FALSE,** a mensagem define o intervalo de seleção, mas não redesenha a barra de faixas.
 
 </dd> <dt>
 
@@ -43,7 +43,7 @@ Posição lógica final do intervalo de seleção.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -53,9 +53,9 @@ Sem valor de retorno.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

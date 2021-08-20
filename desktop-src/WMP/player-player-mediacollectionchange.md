@@ -1,11 +1,11 @@
 ---
-title: Evento Player.MediaCollectionChange
-description: O evento MediaCollectionChange ocorre quando a coleção de mídias é mudada. | Evento Player.MediaCollectionChange
+title: Evento Player. MediaCollectionChange
+description: O evento MediaCollectionChange ocorre quando a coleção de mídia é alterada. | Evento Player. MediaCollectionChange
 ms.assetid: 1cc8f26d-ccd5-49ba-a2b3-0adfe9b51b11
 keywords:
-- Evento MediaCollectionChange Windows Media Player
-- Evento MediaCollectionChange Windows Media Player , classe Player
-- Classe player Windows Media Player evento , MediaCollectionChange
+- Windows Media Player de eventos MediaCollectionChange
+- Windows Media Player de eventos MediaCollectionChange, classe Player
+- classe de jogador Windows Media Player, evento MediaCollectionChange
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118338083"
 ---
-# <a name="playermediacollectionchange-event"></a>Evento Player.MediaCollectionChange
+# <a name="playermediacollectionchange-event"></a>Evento Player. MediaCollectionChange
 
-O **evento MediaCollectionChange** ocorre quando a coleção de mídias é mudada.
+O evento **MediaCollectionChange** ocorre quando a coleção de mídia é alterada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ Player.MediaCollectionChange()
 
 ## <a name="parameters"></a>Parâmetros
 
-Esse evento não tem parâmetros.
+Este evento não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
@@ -54,7 +54,7 @@ Esse evento não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -63,13 +63,13 @@ Esse evento não retorna um valor.
 
 <dl> <dt>
 
-[**Objeto MediaCollection**](mediacollection-object.md)
+[**Objeto mediacollection**](mediacollection-object.md)
 </dt> <dt>
 
-[**Objeto Player**](player-object.md)
+[**Objeto de jogador**](player-object.md)
 </dt> <dt>
 
-[**Player.mediaCollection**](player-mediacollection.md)
+[**Player. mediacollection**](player-mediacollection.md)
 </dt> </dl>
 
  
