@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 25f42481e1bb0df0966f09ee354421af6378969f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d4baee1e95a6c40e2983e92e914df921b9f91613ec0bebc1da9f74c54404b7f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918408"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117955031"
 ---
 # <a name="systemmonitorreadonly-property"></a>Propriedade SystemMonitor. ReadOnly
 

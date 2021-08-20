@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a6ba31dc2b7fb69c60eff75a6476e7f8934b2b3b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 08eb005eae8e1d2619fab22dbda6858cee2aaba5a4c7e92318af560b80660b0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117956584"
 ---
 # <a name="logfileitem-object"></a>Objeto LogFileItem
 
@@ -42,7 +42,7 @@ O objeto **LogFileItem** tem essas propriedades.
 
 | Propriedade                                    | Descrição                                    |
 |:--------------------------------------------|:-----------------------------------------------|
-| [**Multi-Path**](logfileitem-path.md)<br/> | Recupera o caminho do arquivo de log.<br/> |
+| [**Caminho**](logfileitem-path.md)<br/> | Recupera o caminho do arquivo de log.<br/> |
 
 
 
@@ -54,9 +54,9 @@ O objeto **LogFileItem** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Isysmon. h</dt> </dl>  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Isysmon. h</dt> </dl>  |
 | DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
 
 

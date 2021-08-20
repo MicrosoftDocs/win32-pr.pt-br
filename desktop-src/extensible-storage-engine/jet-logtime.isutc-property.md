@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0142ce9c79b2828fcb00b953f1e689d31ee571d9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c51f9d165bb389ff56bb162f2ae3377579181b31b2ba8d820d9470c1d93c3bff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118074374"
 ---
 # <a name="jet_logtimeisutc-property"></a>JET_LOGTIME. Propriedade IsUtc
 
 Obtém um valor que indica se o JET_LOGTIME está em UTC.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,14 +58,14 @@ public bool IsUtc { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_LOGTIME](./jet-logtime-structure2.md)
+[JET_LOGTIME estrutura](./jet-logtime-structure2.md)
 
-[Membros do JET_LOGTIME](./jet-logtime-members.md)
+[JET_LOGTIME membros](./jet-logtime-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

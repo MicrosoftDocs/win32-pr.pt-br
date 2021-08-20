@@ -1,29 +1,29 @@
 ---
-title: Criando arquivos ASF no DirectShow (Windows Media Format SDK 11)
-description: Saiba mais sobre como criar arquivos ASF no DirectShow usando o SDK Windows Media Format 11. ASF é um formato de contêiner que pode conter qualquer tipo de dados.
+title: Criando arquivos ASF no DirectShow (SDK Windows Media Format 11)
+description: Saiba mais sobre como criar arquivos ASF DirectShow usando o SDK Windows Media Format 11. ASF é um formato de contêiner que pode conter qualquer tipo de dados.
 ms.assetid: 8b7af340-934d-43a9-88e9-7bbb2d3a38e0
 keywords:
-- Windows Media Format SDK, criando arquivos ASF no DirectShow
-- Windows Media Format SDK, DirectShow
+- Windows SDK de Formato de Mídia, criando arquivos ASF DirectShow
+- Windows SDK de formato de mídia, DirectShow
 - ASF (Advanced Systems Format), DirectShow
 - ASF (formato de sistemas avançados), DirectShow
-- ASF (Advanced Systems Format), criando no DirectShow
-- ASF (Formato de Sistemas Avançados), criando no DirectShow
+- ASF (Advanced Systems Format), criando em DirectShow
+- ASF (Formato de Sistemas Avançados), criando em DirectShow
 - DirectShow, criando arquivos ASF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e06b6deb6dc9f07115f8143309d32dcf4a58a0f
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 257b62be20ddc2399d43aaac52b6b4ee949e6dfcf3e6e9b486b869d162429c54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655741"
 ---
-# <a name="creating-asf-files-in-directshow-windows-media-format-11-sdk"></a>Criando arquivos ASF no DirectShow (Windows Media Format SDK 11)
+# <a name="creating-asf-files-in-directshow-windows-media-format-11-sdk"></a>Criando arquivos ASF no DirectShow (SDK Windows Media Format 11)
 
-Você pode usar o DirectShow para criar arquivos ASF diretamente de fontes de captura, como gravações DV ou para transcodificar outros arquivos em Windows Media Format. Em qualquer cenário, os aplicativos criam grafos de filtro que incluem o filtro [Wm ASF Writer](wm-asf-writer-filter.md) como o renderdor.
+Você pode usar DirectShow para criar arquivos ASF diretamente de fontes de captura, como gravações DV ou para transcodificar outros arquivos Windows Formato de Mídia. Em qualquer cenário, os aplicativos criam grafos de filtro que incluem o filtro [Wm ASF Writer](wm-asf-writer-filter.md) como o renderdor.
 
-O Wm ASF Writer fornece um wrapper parcial para Windows Media Format SDK. Os aplicativos podem usar a interface [**IConfigAsfWriter**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85)) do filtro para passar um perfil do sistema (versões 4, 7 ou 8) ou usar o SDK do Windows Media Format diretamente para criar um perfil personalizado para passar para o filtro. Para adicionar metadados e outras informações de header, o aplicativo usa a interface [**IWMHeaderInfo,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) que pode ser obtida do filtro. Depois que o perfil e os metadados foram configurados, o aplicativo pode simplesmente executar o grafo de filtro. Internamente, o filtro usa o Windows Media Format SDK para gravar o arquivo. O filtro lida com todos os detalhes de sincronização de áudio e vídeo, que, de outra forma, seriam de responsabilidade do aplicativo.
+O Wm ASF Writer fornece um wrapper parcial para o SDK Windows Formato de Mídia. Os aplicativos podem usar a interface [**IConfigAsfWriter**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85)) do filtro para passar um perfil do sistema (versões 4, 7 ou 8) ou usar o SDK de Formato de Mídia do Windows diretamente para criar um perfil personalizado para passar para o filtro. Para adicionar metadados e outras informações de header, o aplicativo usa a interface [**IWMHeaderInfo,**](/previous-versions/windows/desktop/api/wmsdkidl/nn-wmsdkidl-iwmheaderinfo) que pode ser obtida do filtro. Depois que o perfil e os metadados foram configurados, o aplicativo pode simplesmente executar o grafo de filtro. Internamente, o filtro usa o Windows SDK de Formato de Mídia para gravar o arquivo. O filtro lida com todos os detalhes de sincronização de áudio e vídeo, que, de outra forma, seriam de responsabilidade do aplicativo.
 
 Esse processo é explicado mais detalhadamente nas seções a seguir.
 

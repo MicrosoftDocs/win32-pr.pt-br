@@ -1,34 +1,34 @@
 ---
-title: Convenção de trabalho BITS do Windows Media Player
-description: O Windows Media Player pode baixar e adicionar automaticamente itens de mídia digital à biblioteca se você usar Serviço de Transferência Inteligente em Segundo Plano (BITS).
+title: Windows Media Player Convenção de trabalho BITS
+description: Windows Media Player pode baixar e adicionar automaticamente itens de mídia digital à biblioteca se você usar Serviço de Transferência Inteligente em Segundo Plano (BITS).
 ms.assetid: 643faba7-9af2-4292-8d92-e321d7690a5b
 keywords:
-- Armazenamentos online do Windows Media Player, Serviço de Transferência Inteligente em Segundo Plano (BITS)
+- Windows Media Player lojas online, Serviço de Transferência Inteligente em Segundo Plano (BITS)
 - lojas online, Serviço de Transferência Inteligente em Segundo Plano (BITS)
 - tipo 2 lojas online, Serviço de Transferência Inteligente em Segundo Plano (BITS)
-- BITS
+- Serviço básico de transferência inteligente (BITS)
 - BITS (Serviço de Transferência Inteligente em Segundo Plano)
-- Lojas online do Windows Media Player, Convenção de trabalho BITS
+- Windows Media Player lojas online, convenção de trabalho BITS
 - lojas online, Convenção de trabalho BITS
 - tipo 2 lojas online, Convenção de trabalho BITS
 - Convenção de trabalho BITS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85278593ce151f46370ca491ccac8e1645f9bb70
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: afa62b3d5691abe6f91afde1cda4d83525159d2708cfde80d0ae3f23259003e4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104162375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117931227"
 ---
-# <a name="windows-media-player-bits-job-convention"></a>Convenção de trabalho BITS do Windows Media Player
+# <a name="windows-media-player-bits-job-convention"></a>Windows Media Player Convenção de trabalho BITS
 
-O Windows Media Player pode baixar e adicionar automaticamente itens de mídia digital à biblioteca se você usar [serviço de transferência inteligente em segundo plano (bits)](/windows/desktop/Bits/background-intelligent-transfer-service-portal). Para aproveitar esse recurso, você deve adicionar seu trabalho à fila de transferência de BITS e chamar **método ibackgroundcopyjob:: SetDescription**, fornecendo uma cadeia de caracteres de descrição que usa o formato correto.
+Windows Media Player pode baixar e adicionar automaticamente itens de mídia digital à biblioteca se você usar [Serviço de Transferência Inteligente em Segundo Plano (BITS)](/windows/desktop/Bits/background-intelligent-transfer-service-portal). Para aproveitar esse recurso, você deve adicionar seu trabalho à fila de transferência de BITS e chamar **método ibackgroundcopyjob:: SetDescription**, fornecendo uma cadeia de caracteres de descrição que usa o formato correto.
 
 > [!Note]  
 > Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
- 
+ 
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ O Windows Media Player pode baixar e adicionar automaticamente itens de mídia d
 <span id="serviceId"></span><span id="serviceid"></span><span id="SERVICEID"></span>*serviceId*
 </dt> <dd>
 
-Um valor de 32 bits gerado aleatoriamente que o Windows Media Player usa para identificar o serviço.
+um valor de 32 bits gerado aleatoriamente que Windows Media Player usa para identificar o serviço.
 
 </dd> <dt>
 
@@ -98,19 +98,19 @@ A classificação do conteúdo.
 
 ## <a name="remarks"></a>Comentários
 
-Quando o Windows Media Player 10 ou posterior usa BITS para baixar conteúdo, ele enumera os trabalhos na fila de transferência e inspeciona a cadeia de caracteres de descrição para cada trabalho. Se a cadeia de caracteres de descrição corresponder à Convenção esperada, o Windows Media Player baixará o conteúdo.
+quando o Windows Media Player 10 ou posterior usa BITS para baixar conteúdo, ele enumera os trabalhos na fila de transferência e inspeciona a cadeia de caracteres de descrição para cada trabalho. se a cadeia de caracteres de descrição corresponder à convenção esperada, Windows Media Player baixará o conteúdo.
 
 Você deve adicionar apenas um arquivo de mídia digital para download em cada trabalho do BITS.
 
-Depois de iniciar um trabalho do BITS usando essa convenção, você deve permitir que o Windows Media Player conclua o trabalho. O Windows Media Player também removerá o trabalho da fila BITS, moverá o arquivo baixado para o local em que a música copiada é salva e adicionará o arquivo baixado à biblioteca.
+depois de iniciar um trabalho do BITS usando essa convenção, você deve permitir que Windows Media Player conclua o trabalho. Windows Media Player também removerá o trabalho da fila BITS, moverá o arquivo baixado para o local em que a música copiada é salva e adicionará o arquivo baixado à biblioteca.
 
 O parâmetro *ServiceId* deve conter um valor de 32 bits diferente de zero. Recomendamos que você use a função [**CryptGenRandom**](/windows/desktop/api/wincrypt/nf-wincrypt-cryptgenrandom) para criar esse valor.
 
-O nome de arquivo que você especifica usando o parâmetro *LocalName* de **método ibackgroundcopyjob:: AddFile** deve ter uma extensão de nome de arquivo. WMA,. wmv,. mp3 ou. ASF.
+O nome de arquivo que você especifica usando o parâmetro *LocalName* de **método ibackgroundcopyjob:: AddFile** deve ter uma extensão de nome de arquivo. WMA,. wmv, .mp3 ou. ASF.
 
 Os parâmetros restantes são projetados para conter valores de metadados relacionados ao conteúdo. Você pode recuperar esses valores da página da Web da loja online usando **DownloadItem. getItemInfo**. Você pode recuperar a coleção de download correta chamando **DownloadManager. Getbaixecollection** e fornecendo *ServiceId* como o parâmetro *CollectionId* .
 
-O Windows Media Player inspeciona a fila BITS periodicamente enquanto o player está em execução. Para garantir que o Windows Media Player Verifique a fila BITS para trabalhos de download, você deve criar um valor na seguinte subchave do registro:
+Windows Media Player inspeciona a fila BITS periodicamente enquanto o Player está em execução. para garantir que Windows Media Player verifique a fila BITS para trabalhos de download, você deve criar um valor na seguinte subchave do registro:
 
 **HKEY \_ Current \_ user \\ software \\ Microsoft \\ MediaPlayer \\ Services**
 
@@ -120,13 +120,13 @@ O valor deve ser criado da seguinte maneira.
 
 | Nome                | Tipo      | Descrição                                                                                                                                                                                                          |
 |---------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **RefreshDownload** | **DWORD** | Especifica se o Windows Media Player deve inspecionar a fila BITS para trabalhos de download. Se o valor for zero, o Player não inspecionará a fila do BITS. O Player deve inspecionar a fila se o valor for diferente de zero. |
+| **RefreshDownload** | **DWORD** | especifica se Windows Media Player deve inspecionar a fila BITS para trabalhos de download. Se o valor for zero, o Player não inspecionará a fila do BITS. O Player deve inspecionar a fila se o valor for diferente de zero. |
 
 
 
- 
+ 
 
-Você pode usar a seguinte sintaxe alternativa para adicionar trabalhos do BITS que o Windows Media Player não conclui, mas para o qual ele simplesmente mostra informações de status:
+você pode usar a seguinte sintaxe alternativa para adicionar trabalhos do BITS que Windows Media Player não é concluído, mas para o qual ele simplesmente mostra informações de status:
 
 ``` syntax
 ::WMP_STATUS:1:serviceId:Provider:AlbumArtist:AlbumTitle:TrackNumber:Title:Duration:Rating
@@ -150,6 +150,6 @@ Ao usar a sintaxe anterior, você deve escrever o código para concluir o downlo
 [**Referência para lojas online do tipo 2**](reference-for-type-2-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -4,12 +4,12 @@ ms.assetid: 36d2a4b3-c160-4604-ae26-05f78e365d9a
 title: Aplicativo cliente Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66f90b4706ffc353975fc27327b7ddbd00081408
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4cbb9482fc4041d344449fe601a9deb199eb54fdaf8007d27dede9d0be8b4c52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117927034"
 ---
 # <a name="winsock-client-application"></a>Aplicativo cliente Winsock
 

@@ -4,12 +4,12 @@ description: Você pode usar as classes a seguir para configurar o controle do m
 ms.assetid: 85fd9380-2a86-4f2f-a006-463eba101726
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ebedc6eeb0200f564d948f71c5afefcc44dcbcb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ef7873e9353719b09f43f13b71fb84136d7d9653b90c82d2c3b1d8e8eb5ad8f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104498730"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117956486"
 ---
 # <a name="sysmon-classes"></a>Classes SYSMON
 
@@ -27,11 +27,11 @@ Você pode usar as classes a seguir para configurar o controle do monitor do sis
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

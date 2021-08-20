@@ -4,12 +4,12 @@ ms.assetid: 19dd2fce-b4a9-44fd-9572-897ee7943914
 title: O controle de registro de certificado instanciado em C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 868f89e0a285460c587a924e84a5ed21c202eb0c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 935d40c7b4fc041522a0710220addf89b523b3bc6301e7371e5f9bcd541725d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117972050"
 ---
 # <a name="the-certificate-enrollment-control-instantiated-in-c"></a>O controle de registro de certificado instanciado em C++
 

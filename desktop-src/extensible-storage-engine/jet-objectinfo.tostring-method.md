@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bb8c11956ad7ff80f061b8c30513b7292f4cf029
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d67f4a0c49c8abb3a0a0278ad7023baa0316fb7ecfb38714cdb1a935a321c196
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764185"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118074121"
 ---
 # <a name="jet_objectinfotostring-method"></a>JET_OBJECTINFO. Método ToString
 
@@ -54,7 +54,7 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. String](/dotnet/api/system.string)  
 Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_OBJECTINFO](./jet-objectinfo-class.md)atual.  

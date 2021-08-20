@@ -4,12 +4,12 @@ ms.assetid: 7c1a4d6e-9b9d-43c8-b094-3c98b9a68490
 title: Mensagens simplificadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1dbacaac4dd8ef32b7bab1ff4e57ad04aa1263c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0cc274ecf876aed079e879ea1a97c000c1ddeb4c37b11e868ef8fa198103cf5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090626"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117972617"
 ---
 # <a name="simplified-messages"></a>Mensagens simplificadas
 

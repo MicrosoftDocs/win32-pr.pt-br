@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedades de JET_OSSNAPID'
-title: Propriedades de JET_OSSNAPID
+description: 'Saiba mais sobre: JET_OSSNAPID propriedades'
+title: JET_OSSNAPID propriedades
 TOCTitle: JET_OSSNAPID properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_OSSNAPID
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_ossnapid_properties(v=EXCHG.10)
@@ -14,12 +14,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118073949"
 ---
-# <a name="jet_ossnapid-properties"></a>Propriedades de JET_OSSNAPID
+# <a name="jet_ossnapid-properties"></a>JET_OSSNAPID propriedades
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [JET_OSSNAPID](./jet-ossnapid-structure.md) expõe os membros a seguir.
+O [JET_OSSNAPID](./jet-ossnapid-structure.md) de dados expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -34,8 +34,8 @@ O tipo de [JET_OSSNAPID](./jet-ossnapid-structure.md) expõe os membros a seguir
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="hh566820(v=exchg.10).md">Apostar</a></td>
-<td>Obtém um JET_OSSNAPID nulo.</td>
+<td><a href="hh566820(v=exchg.10).md">Nil</a></td>
+<td>Obtém um valor nulo JET_OSSNAPID.</td>
 </tr>
 </tbody>
 </table>
@@ -47,6 +47,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_OSSNAPID](./jet-ossnapid-structure.md)
+[JET_OSSNAPID estrutura](./jet-ossnapid-structure.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

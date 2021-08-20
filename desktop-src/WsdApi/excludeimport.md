@@ -4,12 +4,12 @@ ms.assetid: 9a50ee38-fadf-4112-8430-cb5a07ae04ce
 title: elemento excludeImport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e14d79576151fbb3dc266621c3fa34816cea55e5
-ms.sourcegitcommit: b6fe9acffad983c14864b8fe0296f6025cb1f961
+ms.openlocfilehash: 11ffc6c6ae6b0005de187afef7e8cbe7d36ca45a13350de1d4b59d40744ae980
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "107995873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117920885"
 ---
 # <a name="excludeimport-element"></a>elemento excludeImport
 
@@ -45,7 +45,7 @@ Não há elementos filho.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------------------------|---------------|
 | Sistema mínimo com suporte<br/> | Windows Vista |
 | Pode estar vazio                        | Sim           |

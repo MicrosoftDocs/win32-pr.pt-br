@@ -1,22 +1,22 @@
 ---
-title: Funcionalidade móvel do Windows Media Player
-description: Funcionalidade móvel do Windows Media Player
+title: Windows Media Player Funcionalidade móvel
+description: Windows Media Player Funcionalidade móvel
 ms.assetid: a698210b-1188-4161-bdb4-aa7dac3f0cbf
 keywords:
-- Windows Media Player Mobile, capas
-- Capas móveis do Windows Media Player, ações disponíveis
-- Capas móveis do Windows Media Player, funções disponíveis
-- capas, Windows Media Player Mobile
+- Windows Media Player Dispositivos móveis, capas
+- Windows Media Player Capas móveis, ações disponíveis
+- Windows Media Player Capas móveis, funções disponíveis
+- capas, Windows Media Player dispositivos móveis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16d9aa0949bc648fff48fa72218e6a9689aeee58
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5f7d054238f5773a368fa2def3259cc748929ec7a6bcc0573901480b9ba1d267
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117931149"
 ---
-# <a name="windows-media-player-mobile-functionality"></a>Funcionalidade móvel do Windows Media Player
+# <a name="windows-media-player-mobile-functionality"></a>Windows Media Player Funcionalidade móvel
 
 As seguintes ações estão disponíveis para o usuário da sua capa:
 
@@ -33,18 +33,18 @@ As seções a seguir descrevem os tipos de elementos que você pode criar para h
 -   [Tipos de TrackBar](trackbar-types.md)
 -   [Tipos de exibição de texto](text-display-types.md)
 -   [A exibição do vídeo](the-video-display.md)
--   [Direção](orientation.md)
+-   [Orientation](orientation.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Capas móveis do Windows Media Player**](windows-media-player-mobile-skins.md)
+[**Windows Media Player Capas móveis**](windows-media-player-mobile-skins.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

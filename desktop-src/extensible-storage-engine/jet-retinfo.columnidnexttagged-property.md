@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_RETINFO. columnidNextTagged'
-title: Propriedade JET_RETINFO. columnidNextTagged
+description: 'Saiba mais sobre: JET_RETINFO.columnidNextTagged propriedade'
+title: JET_RETINFO.columnidNextTagged propriedade
 TOCTitle: 'columnidNextTagged property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_RETINFO.columnidNextTagged
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_retinfo.columnidnexttagged(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 64114b1e998d47a2610e414304e7837ecbb17fe0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8f6e00dd4d5013d2d03bc2ebbcf6791ab532879dc4ef04f358a2b8c01a5130a8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117893171"
 ---
-# <a name="jet_retinfocolumnidnexttagged-property"></a>Propriedade JET_RETINFO. columnidNextTagged
+# <a name="jet_retinfocolumnidnexttagged-property"></a>JET_RETINFO.columnidNextTagged propriedade
 
-Obtém o columnid da coluna com valor marcado, com vários valores ou esparsos, quando todas as colunas marcadas são recuperadas passando 0 como columnid para JetRetrieveColumn.
+Obtém a columnid da coluna marcada, com valor múltiplo ou esparso recuperada quando todas as colunas marcadas são recuperadas passando 0 como a columnid para JetRetrieveColumn.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_COLUMNID columnidNextTagged { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RETINFO](./jet-retinfo-class.md)
+[JET_RETINFO classe](./jet-retinfo-class.md)
 
-[Membros do JET_RETINFO](./jet-retinfo-members.md)
+[JET_RETINFO membros](./jet-retinfo-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -4,12 +4,12 @@ ms.assetid: 2ad176e9-30c6-411a-b3ed-bc6656c96768
 title: PROV_DSS_DH
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8905b18c8806dbd385577541eaed769158eb0aaf
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6cf4ce6fffe9884effe4d9ecfc753d85e769266c86bc96970e20508a1f553ae8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117976495"
 ---
 # <a name="prov_dss_dh"></a>o PROV \_ DSS \_ DH
 
@@ -23,7 +23,7 @@ Para obter descrições de cada um desses algoritmos, consulte o Glossário.
 
 | Finalidade      | Algoritmos compatíveis                                                                                                              |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Troca de chaves | [*FEITA*](../secgloss/d-gly.md)                                                                          |
+| Exchange de chave | [*FEITA*](../secgloss/d-gly.md)                                                                          |
 | Assinatura    | [*DSS*](../secgloss/d-gly.md)                                                                       |
 | Criptografia   | [*CYLINK \_ MEK*](../secgloss/c-gly.md)                                                 |
 | Hash      | [](../secgloss/m-gly.md)[*Sha* MD5](../secgloss/s-gly.md)<br/> |

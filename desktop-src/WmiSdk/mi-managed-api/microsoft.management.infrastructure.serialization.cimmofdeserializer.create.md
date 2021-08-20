@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: método CimMofDeserializer. Create ()'
+description: 'Saiba mais sobre: método CimMofDeserializer.Create ()'
 title: Método CimMofDeserializer.Create (Microsoft.Management.Infrastructure.Serialization)
 TOCTitle: CimMofDeserializer.Create method (Microsoft.Management.Infrastructure.Serialization)
 ms:assetid: M:Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer.Create
@@ -23,19 +23,19 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: da3ff3975b7d0516e2c89c160d6cd65bf86bea1f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a2b5d501791be30049cd2960f802783179ee3836a11fa08f8d1275fae6efbd11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170386"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117923612"
 ---
-# <a name="cimmofdeserializercreate-method-"></a>Método CimMofDeserializer. Create ()
+# <a name="cimmofdeserializercreate-method-"></a>Método CimMofDeserializer.Create ()
 
-Cria e inicializa um desserializador padrão.
+Cria e inicializa um deserializador padrão.
 
-**Namespace:**   [Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
-**Assembly:**  Microsoft. Management. Infrastructure (em Microsoft.Management.Infrastructure.dll)  
+**Namespace:**   [Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))  
+**Assembly:**  Microsoft.Management.Infrastructure (em Microsoft.Management.Infrastructure.dll)  
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,13 +56,13 @@ static member Create : unit -> CimMofDeserializer
 Public Shared Function Create As CimMofDeserializer
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [Microsoft. Management. Infrastructure. Serialization. CimMofDeserializer](microsoft.management.infrastructure.serialization.cimmofdeserializer.md)
+Tipo: [Microsoft.Management.Infrastructure.Serialization.CimMofDeserializer](microsoft.management.infrastructure.serialization.cimmofdeserializer.md)
 
-O objeto desserializador recém-criado.
+O objeto do desteializador recém-criado.
 
 ## <a name="see-also"></a>Confira também
 
 [Classe CimMofDeserializer](microsoft.management.infrastructure.serialization.cimmofdeserializer.md) 
- [Namespace Microsoft. Management. Infrastructure. Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))
+ [Namespace Microsoft.Management.Infrastructure.Serialization](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832966(v=vs.85))

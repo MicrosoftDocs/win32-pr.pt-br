@@ -1,6 +1,6 @@
 ---
 description: 'Saiba mais sobre: JET_COLUMNDEF métodos'
-title: JET_COLUMNDEF métodos
+title: JET_COLUMNDEF métodos de JET_COLUMNDEF
 TOCTitle: JET_COLUMNDEF methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_COLUMNDEF
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_columndef_methods(v=EXCHG.10)
@@ -14,7 +14,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118075984"
 ---
-# <a name="jet_columndef-methods"></a>JET_COLUMNDEF métodos
+# <a name="jet_columndef-methods"></a>JET_COLUMNDEF métodos de JET_COLUMNDEF
 
 Incluir membros protegidos  
 Incluir membros herdados  
