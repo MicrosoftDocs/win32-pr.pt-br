@@ -4,12 +4,12 @@ ms.assetid: afddbc0f-d82b-44c0-b5c8-955b8887ba91
 title: System. Message. CcAddress
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6d62d265a3e25f960f1ba9a70d958cb08b719e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84b088a7cfa0aaa2a3213a5f2d90e7e7be820e13a9ab8662289ff8acff0f4b32
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117683299"
 ---
 # <a name="systemmessageccaddress"></a>System. Message. CcAddress
 

@@ -1,7 +1,7 @@
 ---
-description: Representa uma associação na qual um \_ objeto LogicalElement do CIM representa um recurso alocado de um \_ objeto CIM ResourcePool.
+description: Representa uma associação na qual um objeto LogicalElement CIM representa \_ um recurso alocado de um objeto \_ ResourcePool cim.
 ms.assetid: 5e3c95c5-1cbb-40de-b285-0bf9b34a5ca8
-title: Classe CIM_ElementAllocatedFromPool
+title: CIM_ElementAllocatedFromPool classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5fc6d58f5ebf82013f38b39027e0cd02e0e3595a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa1eb526054c665366211ec4fe3a5abdb1a001bddc098fba2c867479f23b18a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812553"
 ---
-# <a name="cim_elementallocatedfrompool-class"></a>\_Classe CIM ElementAllocatedFromPool
+# <a name="cim_elementallocatedfrompool-class"></a>Classe \_ ElementAllocatedFromPool do CIM
 
-Representa uma associação na qual um [**objeto \_ LogicalElement do CIM**](cim-logicalelement.md) representa um recurso alocado de um objeto [**CIM \_ ResourcePool**](cim-resourcepool.md) .
+Representa uma associação na qual um objeto [**\_ LogicalElement CIM**](cim-logicalelement.md) representa um recurso alocado de um [**objeto \_ ResourcePool cim.**](cim-resourcepool.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,42 +39,42 @@ class CIM_ElementAllocatedFromPool : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ElementAllocatedFromPool** tem estes tipos de membros:
+A **classe \_ ElementAllocatedFromPool do CIM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ElementAllocatedFromPool** tem essas propriedades.
+A **classe \_ ElementAllocatedFromPool cim** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ ResourcePool**
+Tipo de dados: **\_ ResourcePool cim**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent"), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecessor"), [**Máx.**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 O pool de recursos.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ LogicalElement**
+Tipo de dados: **\_ LogicalElement cim**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
 O recurso alocado.
@@ -89,8 +89,8 @@ O recurso alocado.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ O recurso alocado.
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

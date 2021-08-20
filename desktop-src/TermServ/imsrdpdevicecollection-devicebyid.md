@@ -4,9 +4,9 @@ description: Recupera o dispositivo com o identificador especificado.
 ms.assetid: b64e83fa-5a94-4080-8efa-45cbfe5ceb88
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade DeviceById
-- Propriedade DeviceById Serviços de Área de Trabalho Remota, interface IMsRdpDeviceCollection
-- Serviços de Área de Trabalho Remota de interface IMsRdpDeviceCollection, Propriedade DeviceById
+- Propriedade DeviceById Serviços de Área de Trabalho Remota
+- A propriedade DeviceById Serviços de Área de Trabalho Remota , interface IMsRdpDeviceCollection
+- Interface IMsRdpDeviceCollection Serviços de Área de Trabalho Remota propriedade DeviceById
 topic_type:
 - apiref
 api_name:
@@ -18,14 +18,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 228e3c7cf03457ca740d4a415257008988215077
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74fd3fd67afebb4c853d5db71a429dc99f61d3bbc178e9ddd73b91284893108b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117940978"
 ---
-# <a name="imsrdpdevicecollectiondevicebyid-property"></a>IMsRdpDeviceCollection: Propriedade eviceById de:D
+# <a name="imsrdpdevicecollectiondevicebyid-property"></a>Propriedade IMsRdpDeviceCollection::D eviceById
 
 Recupera o dispositivo com o identificador especificado.
 
@@ -45,11 +45,11 @@ HRESULT get_DeviceById(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro de interface [**IMsRdpDevice**](imsrdpdevice.md) .
+Um ponteiro de interface [**IMsRdpDevice.**](imsrdpdevice.md)
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Se o método for bem sucedido, **S \_ OK** será retornado. Qualquer outro valor **HRESULT** indica que a chamada falhou.
+Se o método for bem-sucedido, **S \_ OK** será retornado. Qualquer outro **valor HRESULT** indica que a chamada falhou.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ Se o método for bem sucedido, **S \_ OK** será retornado. Qualquer outro valor
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                            |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>    |
-| IID<br/>                      | IID \_ IMsRdpDeviceCollection é definido como 56540617-D281-488c-8738-6a8fdf64a118<br/> |
+| IID<br/>                      | IID \_ IMsRdpDeviceCollection é definido como 56540617-d281-488c-8738-6a8fdf64a118<br/> |
 
 
 

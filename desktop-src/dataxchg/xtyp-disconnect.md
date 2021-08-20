@@ -1,9 +1,9 @@
 ---
 title: Transação de XTYP_DISCONNECT (ddeml. h)
-description: A função de retorno de chamada de troca dinâmica de dados (DDE) de um aplicativo, DdeCallback, recebe a \_ transação de desconexão de XTYP quando o parceiro do aplicativo em uma conversa usa a função DdeDisconnect para encerrar a conversa.
+description: a função de retorno de chamada de troca dinâmica de dados (DDE) de um aplicativo, DdeCallback, recebe a \_ transação de desconexão de XTYP quando o parceiro do aplicativo em uma conversa usa a função DdeDisconnect para encerrar a conversa.
 ms.assetid: 22a9ec63-8a74-4829-ad02-d07dd0e8fa9b
 keywords:
-- Troca de dados de transação XTYP_DISCONNECT
+- XTYP_DISCONNECT de dados de transação Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38e73bc0446989ac572a27f394e594924573711d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8763ba9eda7782bff21a9abdedc3c99672ad927bdd7944181391802f9378497
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914773"
 ---
 # <a name="xtyp_disconnect-transaction"></a>\_Transação de desconexão de XTYP
 
-A função de retorno de chamada de troca dinâmica de dados (DDE) de um aplicativo, [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recebe a transação de **\_ desconexão de XTYP** quando o parceiro do aplicativo em uma conversa usa a função [**DdeDisconnect**](/windows/desktop/api/Ddeml/nf-ddeml-ddedisconnect) para encerrar a conversa.
+a função de retorno de chamada de troca dinâmica de dados (DDE) de um aplicativo, [*DdeCallback*](/windows/win32/api/ddeml/nc-ddeml-pfncallback), recebe a transação de **\_ desconexão de XTYP** quando o parceiro do aplicativo em uma conversa usa a função [**DdeDisconnect**](/windows/desktop/api/Ddeml/nf-ddeml-ddedisconnect) para encerrar a conversa.
 
 
 ```C++

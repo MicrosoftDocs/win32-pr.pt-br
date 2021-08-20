@@ -4,12 +4,12 @@ ms.assetid: 4f3ef14a-7d67-45fe-9282-541221815d1f
 title: Elenco e conversão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90b8ab6ec3fccd8dc57d503de18ffe1e9e321377
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 0a9ca806caba09796acc4d0f966926edb9b6a37cf0ab2d40656e7d99f92d5b46
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118097121"
 ---
 # <a name="casting-and-conversion"></a>Elenco e conversão
 
@@ -139,7 +139,7 @@ em que value é um dos seguintes:
 |                      | m            | Medidores                         |
 |                      | km           | quilômetros                     |
 | Ângulo                | rad          | Radians                        |
-| Hora                 | ms           | Milissegundos                   |
+| Tempo                 | ms           | Milissegundos                   |
 |                      | seção          | Segundos                        |
 |                      | min          | minutos                        |
 |                      | h           | Horas                          |
@@ -153,16 +153,16 @@ em que value é um dos seguintes:
 |                      | m/s ²       | Metros por segundo ao quadrado      |
 |                      | m/hr ²        | Medidores por hora ao quadrado        |
 |                      | km/hr ²       | Quilômetros por hora ao quadrado    |
-| Velocidade angular     | Rad/s      | Radianos por segundo             |
-| Aceleração angular | Rad/s ²     | Radianos por segundo ao quadrado     |
-| Área                 | mm ²          | Milímetros ao quadrado            |
-|                      | cm ²          | Centímetros ao quadrado            |
-|                      | m²           | Metros ao quadrado                 |
-|                      | km²          | Quilômetros quadrados             |
-| Volume               | ³ mm          | Milímetros cúbico              |
-|                      | cm³          | Cúbico centímetros              |
-|                      | m³           | Medidores de cúbico                   |
-|                      | ³ km          | Quilômetros de cúbico               |
+| Angular Velocidade     | Rad/s      | Radianos por segundo             |
+| Angular Aceleração | Rad/s ²     | Radianos por segundo ao quadrado     |
+| Área                 | mm;          | Milímetros quadrados            |
+|                      | cm;          | Centímetros quadrados            |
+|                      | M ²           | Metros quadrados                 |
+|                      | Km ²          | Quilômetros quadrados             |
+| Volume               | mm;          | Milímetros em cubo              |
+|                      | Cm ³          | Centímetros em cubos              |
+|                      | M ³           | Medidores em cubos                   |
+|                      | km;          | Quilômetros em cubos               |
 
 
 

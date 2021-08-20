@@ -1,6 +1,6 @@
 ---
 title: HasImage
-description: O atributo HasImage é um atributo em nível de arquivo que especifica se o arquivo contém fluxos de imagem.
+description: O atributo HasImage é um atributo de nível de arquivo que especifica se o arquivo contém fluxos de imagem.
 ms.assetid: 3b67288f-4f04-47a4-91ca-c456107d9d7b
 keywords:
 - Formato de mídia do Windows HasImage
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d32337fbdaeaee792836cd0b4ee1e8fb3baf9c9
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c5e4a8fbdcc372fb68ce8659e56acddee8e58bd52777a5444aea368935169fcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655599"
 ---
 # <a name="hasimage"></a>HasImage
 
-O atributo **HasImage** é um atributo em nível de arquivo que especifica se o arquivo contém fluxos de imagem.
+O **atributo HasImage** é um atributo de nível de arquivo que especifica se o arquivo contém fluxos de imagem.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,13 +29,13 @@ g \_ wszWMHasImage
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**WMT \_ tipo \_ bool**
+**TIPO WMT \_ \_ BOOL**
 
 ## <a name="remarks"></a>Comentários
 
-Este é um atributo codificado.
+Esse é um atributo codificado.
 
-Este atributo não pode ser duplicado no nível do arquivo. Se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK do Windows Media Format.
+Esse atributo não pode ser duplicado no nível do arquivo. Se esse atributo for usado para um fluxo individual, ele será tratado como metadados personalizados e não transmitirá seu significado normal para os objetos do SDK Windows Formato de Mídia.
 
 ## <a name="see-also"></a>Confira também
 
@@ -44,9 +44,9 @@ Este atributo não pode ser duplicado no nível do arquivo. Se esse atributo for
 [**Lista de Atributos**](attribute-list.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

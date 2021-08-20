@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Métodos IWbemPropertyProvider
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a36fef6ce1a698eda99b85afd7eafd0a518f930
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a20a3b7ea80f2331d5db5b8ae0ed864472a67e600e341ba7af80928f0d459684
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105796287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117923774"
 ---
 # <a name="iwbempropertyprovider-methods"></a>Métodos IWbemPropertyProvider
 

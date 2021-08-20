@@ -1,6 +1,6 @@
 ---
-title: Funções do Gerenciador de Roteador (Transporte)
-description: Use as funções a seguir para administrar os gerenciadores de roteador. Essas funções também permitem que um desenvolvedor leia e escreva as informações globais para os gerenciadores de roteador e as informações globais para clientes de roteador (como protocolos de roteamento).
+title: Funções do Gerenciador de roteador (transporte)
+description: Use as funções a seguir para administrar os gerenciadores de roteador. Essas funções também permitem que um desenvolvedor Leia e grave as informações globais para os gerenciadores de roteadores e as informações globais para clientes de roteador (como protocolos de roteamento).
 ms.assetid: c1093241-604d-498d-a358-f8e8585b95cd
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117787616"
 ---
-# <a name="router-manager-transport-functions"></a>Funções do Gerenciador de Roteador (Transporte)
+# <a name="router-manager-transport-functions"></a>Funções do Gerenciador de roteador (transporte)
 
-Use as funções a seguir para administrar os gerenciadores de roteador. Essas funções também permitem que um desenvolvedor leia e escreva as informações globais para os gerenciadores de roteador e as informações globais para clientes de roteador (como protocolos de roteamento).
+Use as funções a seguir para administrar os gerenciadores de roteador. Essas funções também permitem que um desenvolvedor Leia e grave as informações globais para os gerenciadores de roteadores e as informações globais para clientes de roteador (como protocolos de roteamento).
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: 'Para o Windows 7, os dispositivos portáteis do Windows oferecem suporte aos seguintes atributos para formatos em um serviço de dispositivo. Esses atributos são retornados pelo método IPortableDeviceServiceCapabilities:: getformable.'
+description: Por Windows 7, Windows Dispositivos Portáteis dá suporte aos seguintes atributos para formatos em um serviço de dispositivo. Esses atributos são retornados pelo método IPortableDeviceServiceCapabilities::GetFormatAttributes.
 ms.assetid: 53282e01-54da-4adf-8a09-2086d6398275
-title: Atributos de formato (PortableDevice. h)
+title: Atributos de formato (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,24 +13,24 @@ api_type:
 - HeaderDef
 api_location:
 - PortableDevice.h
-ms.openlocfilehash: 559f731ec7d61007b05e4625ff67488b5ef482fd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d8144c8a290b6ab7e3d3b13b1f3ee53d377e015950fea6d7e1ebf6786fd9d854
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117652690"
 ---
 # <a name="format-attributes"></a>Atributos de formato
 
-Para o Windows 7, os dispositivos portáteis do Windows oferecem suporte aos seguintes atributos para formatos em um serviço de dispositivo. Esses atributos são retornados pelo método [**IPortableDeviceServiceCapabilities:: Getformable**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getformatattributes) .
+Por Windows 7, Windows Dispositivos Portáteis dá suporte aos seguintes atributos para formatos em um serviço de dispositivo. Esses atributos são retornados pelo [**método IPortableDeviceServiceCapabilities::GetFormatAttributes.**](/windows/desktop/api/PortableDeviceAPI/nf-portabledeviceapi-iportabledeviceservicecapabilities-getformatattributes)
 
 
 
 
 | **Atributo**                        | **VarType**    | **Descrição**                                                                                                           |
 |--------------------------------------|----------------|---------------------------------------------------------------------------------------------------------------------------|
-| **\_MIME de \_ atributo de formato WPD \_** | **LPWStr do VT \_** | O tipo MIME de formato.                                                                                                     |
-| **\_nome do \_ atributo de formato WPD \_**     | **LPWStr do VT \_** | Uma cadeia de caracteres que especifica o nome amigável do formato do script. Os caracteres válidos são alfanuméricos \[ a-zA-Z0-9 \] e ' \_ '. |
+| **ATRIBUTO DE FORMATO WPD \_ \_ \_ MIMETYPE** | **VT \_ LPWSTR** | O tipo MIME de formato.                                                                                                     |
+| **NOME DO ATRIBUTO DE FORMATO WPD \_ \_ \_**     | **VT \_ LPWSTR** | Uma cadeia de caracteres que especifica o nome amigável de script do formato. Os caracteres válidos são alfanuméricos \[ a-zA-Z0-9 \] e ' \_ '. |
 
 
 
@@ -42,7 +42,7 @@ Para o Windows 7, os dispositivos portáteis do Windows oferecem suporte aos seg
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

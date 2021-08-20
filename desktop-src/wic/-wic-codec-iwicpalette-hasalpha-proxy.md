@@ -1,7 +1,7 @@
 ---
-description: Função de proxy para o método HasAlpha.
+description: Função proxy para o método HasAlpha.
 ms.assetid: 8af9f588-ac22-40c4-8973-9636951cc9e6
-title: Função IWICPalette_HasAlpha_Proxy
+title: IWICPalette_HasAlpha_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 6f9398b2d570efb41048d88ddeeeb76d62f4ca37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fad77bf9ce10f685c8ad6592c06394f56edf9122bd6cae8e6c2bbb3cab636c5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922154"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118033410"
 ---
-# <a name="iwicpalette_hasalpha_proxy-function"></a>\_Função de \_ proxy IWICPalette HasAlpha
+# <a name="iwicpalette_hasalpha_proxy-function"></a>Função \_ proxy HasAlpha de IWICPalette \_
 
-Função de proxy para o método [**HasAlpha**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-hasalpha) .
+Função proxy para o [**método HasAlpha.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicpalette-hasalpha)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,29 +41,29 @@ HRESULT IWICPalette_HasAlpha_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
-Tipo: **[**IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) \** _
+Tipo: **[ **IWICPalette**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)\***
 
-Ponteiro para este objeto [_ *IWICPalette* *](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette) .
+Ponteiro para este [**objeto IWICPalette.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicpalette)
 
 </dd> <dt>
 
-*pfHasAlpha* \[ fora\]
+*pfHasAlpha* \[ out\]
 </dt> <dd>
 
-Tipo: **bool \** _
+Tipo: **BOOL \***
 
-Ponteiro que recebe `TRUE` se a paleta contém uma cor transparente; caso contrário, `FALSE` .
+Ponteiro que recebe se `TRUE` a paleta contiver uma cor transparente; caso contrário, `FALSE` .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -73,9 +73,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

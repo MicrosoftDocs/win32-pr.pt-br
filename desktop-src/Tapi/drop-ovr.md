@@ -4,12 +4,12 @@ ms.assetid: dc348bb2-d564-40f8-afe3-5473c5769fa4
 title: Remover
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a9bf3705d9b104b8816ce4b493ec6b188c5fe1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5821b9778ff59f0c515c7d7d00c1d3709cfdafdc36b6b0f113bceab312ff419b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920797"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117945599"
 ---
 # <a name="drop"></a>Remover
 

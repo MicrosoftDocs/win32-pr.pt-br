@@ -1,11 +1,11 @@
 ---
-title: Propriedade RegisteredTask. Enabled
-description: Para scripts, Obtém ou define um valor booliano que indica se a tarefa registrada está habilitada.
+title: Propriedade RegisteredTask.Enabled
+description: Para scripts, obtém ou define um valor booliana que indica se a tarefa registrada está habilitada.
 ms.assetid: ec8722a0-4055-4604-b506-a3c3f6e07954
 keywords:
-- Propriedade habilitada Agendador de Tarefas
-- Propriedade Enabled Agendador de Tarefas, objeto RegisteredTask
-- Objeto RegisteredTask Agendador de Tarefas, Propriedade Enabled
+- Propriedades habilitadas Agendador de Tarefas
+- Propriedade habilitada Agendador de Tarefas objeto , RegisteredTask
+- Objeto RegisteredTask Agendador de Tarefas propriedade , Habilitado
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 518ba354a1be11f301e84dcb7161e6e1b0e99ecb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 51f0b73ce0cebc35701484725496e6fe23b3284fe5a2ef7a3ae7faa8c400d731
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117943442"
 ---
-# <a name="registeredtaskenabled-property"></a>Propriedade RegisteredTask. Enabled
+# <a name="registeredtaskenabled-property"></a>Propriedade RegisteredTask.Enabled
 
-Para scripts, Obtém ou define um valor booliano que indica se a tarefa registrada está habilitada.
+Para scripts, obtém ou define um valor booliana que indica se a tarefa registrada está habilitada.
 
 ## <a name="syntax"></a>Syntax
 
@@ -38,7 +38,7 @@ RegisteredTask.Enabled As Boolean
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um valor booliano que indica se a tarefa registrada está habilitada.
+Um valor booliana que indica se a tarefa registrada está habilitada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,9 +46,9 @@ Um valor booliano que indica se a tarefa registrada está habilitada.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

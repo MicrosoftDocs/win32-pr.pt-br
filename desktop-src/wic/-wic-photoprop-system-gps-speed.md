@@ -1,23 +1,23 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. Speed.
+description: A política de metadados de foto para a propriedade System.GPS.Speed.
 ms.assetid: 278826c2-3057-4da2-8c86-0e44471ad7b0
-title: Política de metadados de foto System. GPS. Speed
+title: Política de metadados de foto System.GPS.Speed
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26d89f755114a73ab17388a1718d5ad0cbdf5a2a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a33150741b9194d3925184e0e736735e2321f3ce4e0388f0be8cb2d97604e84c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105763845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117667883"
 ---
-# <a name="systemgpsspeed-photo-metadata-policy"></a>Política de metadados de foto System. GPS. Speed
+# <a name="systemgpsspeed-photo-metadata-policy"></a>Política de metadados de foto System.GPS.Speed
 
-A política de metadados de foto para a propriedade [System. GPS. Speed](../properties/props-system-gps-speed.md) .
+A política de metadados de foto para a [propriedade System.GPS.Speed.](../properties/props-system-gps-speed.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
-\_Velocidade de GPS PKEY \_
+Velocidade do \_ GPS PKEY \_
 
 ### <a name="containers"></a>Contêineres
 
@@ -25,25 +25,25 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-R8 de VT \_
+VT \_ R8
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Esse valor é gerado de System. GPS. SpeedNumerator e System. GPS. SpeedDenominator. Ele não pode ser gravado diretamente. Os valores de esquemas diferentes são reconciliados.
+Esse valor é gerado de System.GPS.SpeedNumerator e System.GPS.SpeedDenominator. Ele não pode ser gravado diretamente. Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policy"></a>Política JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 13} |             |
+| 1     | /app1/ifd/gps/{ushort=13} |             |
 | 2     | /xmp/exif:GPSSpeed        |             |
 
 
@@ -56,7 +56,7 @@ Esse valor é gerado de System. GPS. SpeedNumerator e System. GPS. SpeedDenomina
 
 | Ordem | Caminho                      | Formato de disco |
 |-------|---------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 13} |             |
+| 1     | /app1/ifd/gps/{ushort=13} |             |
 | 2     | /xmp/exif:GPSSpeed        |             |
 
 
@@ -69,7 +69,7 @@ Esse valor é gerado de System. GPS. SpeedNumerator e System. GPS. SpeedDenomina
 
 | Ordem | Caminho                      |
 |-------|---------------------------|
-| 1     | /App1/IFD/GPS/{UShort = 13} |
+| 1     | /app1/ifd/gps/{ushort=13} |
 | 2     | /xmp/exif:gpsspeed        |
 
 
@@ -78,13 +78,13 @@ Esse valor é gerado de System. GPS. SpeedNumerator e System. GPS. SpeedDenomina
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                   | Formato de disco |
 |-------|------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 13}   |             |
+| 1     | /ifd/gps/{ushort=13}   |             |
 | 2     | /ifd/xmp/exif:GPSSpeed |             |
 
 
@@ -97,7 +97,7 @@ Esse valor é gerado de System. GPS. SpeedNumerator e System. GPS. SpeedDenomina
 
 | Ordem | Caminho                   | Formato de disco |
 |-------|------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 13}   |             |
+| 1     | /ifd/gps/{ushort=13}   |             |
 | 2     | /ifd/xmp/exif:GPSSpeed |             |
 
 
@@ -110,7 +110,7 @@ Esse valor é gerado de System. GPS. SpeedNumerator e System. GPS. SpeedDenomina
 
 | Ordem | Caminho                   |
 |-------|------------------------|
-| 1     | /IFD/GPS/{UShort = 13}   |
+| 1     | /ifd/gps/{ushort=13}   |
 | 2     | /ifd/xmp/exif:gpsspeed |
 
 
@@ -123,7 +123,7 @@ Esse valor é gerado de System. GPS. SpeedNumerator e System. GPS. SpeedDenomina
 
 <dl> <dt>
 
-[Sistema. GPS. Speed](../properties/props-system-gps-speed.md)
+[System.GPS.Speed](../properties/props-system-gps-speed.md)
 </dt> </dl>
 
  

@@ -7,12 +7,12 @@ keywords:
 - IPropertySetStorage Strctd STG, implementações, autônoma
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f9fd0afe31775b06b3a5f61f4c79939be976e98
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 58b4aec27afd0e02ffcb9886f13de2a17761c66eab106665fe4143ab42c86a35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117961275"
 ---
 # <a name="ipropertysetstorage-stand-alone-implementation"></a>Implementação IPropertySetStorage-autônoma
 
@@ -69,7 +69,7 @@ Cria um objeto que pode ser usado para enumerar estruturas [**STATPROPSETSTG**](
 > [!Note]  
 > O conjunto de propriedades DocumentSummaryInformation e UserDefined é exclusivo, pois ele pode ter duas seções de conjunto de propriedades em um único fluxo subjacente. Para obter mais informações, consulte [os conjuntos de propriedades DocumentSummaryInformation e UserDefined](the-documentsummaryinformation-and-userdefined-property-sets.md) .
 
- 
+ 
 
 </dd> </dl>
 
@@ -107,6 +107,6 @@ Cria um objeto que pode ser usado para enumerar estruturas [**STATPROPSETSTG**](
 [**Constantes STGM**](stgm-constants.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

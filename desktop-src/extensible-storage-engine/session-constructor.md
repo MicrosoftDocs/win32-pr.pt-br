@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 73d19d5ae1ba422969cd5b11f5b59ceb2811a89d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46c9fcd537bbd3f68685e918c00f6083f5334b8d216acef49ed470d722bd9399
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169773"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117702885"
 ---
 # <a name="session-constructor"></a>Construtor de sessão
 

@@ -1,5 +1,5 @@
 ---
-description: Entenda as práticas recomendadas para manipuladores de menu de atalho e vários verbos ao implementar um formato de arquivo personalizado no Shell do Windows.
+description: entenda as práticas recomendadas para manipuladores de menu de atalho e vários verbos ao implementar um formato de arquivo personalizado no Shell de Windows.
 title: Práticas recomendadas para manipuladores de menu de atalho e vários verbos
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,12 +9,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 14ec2e8915aa1df47ca21c6436ec963be3f590f5
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: cb44eaf0b3e1c63b9f900f398a218051710f857a7b628d454daa87679d557ef5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112396441"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117675500"
 ---
 # <a name="best-practices-for-shortcut-menu-handlers-and-multiple-verbs"></a>Práticas recomendadas para manipuladores de menu de atalho e vários verbos
 
@@ -55,7 +55,7 @@ A lista a seguir representa as práticas recomendadas para implementações de v
 
 Como o número de itens em um cenário de verbo de seleção múltipla pode ser grande, é importante que você considere as implicações de desempenho de suas implementações de verbo. Por exemplo, quando um usuário procura por " \* " sobre um escopo que inclui um grande número de itens e clica em **selecionar tudo** e clica com o botão direito do mouse, o verbo é apresentado com uma seleção que pode ter milhares de itens. Como resultado, os verbos devem considerar apenas o primeiro item na seleção e a contagem geral de itens. O primeiro item é definido como o item na parte superior da exibição ou o item em que o usuário clicou pela primeira vez.
 
-No Windows 7 e posterior, o número de itens passados para um verbo é limitado a 16 quando um menu de atalho é consultado. Em seguida, o verbo é recriado e reinicializado com a seleção completa quando esse verbo é invocado.
+no Windows 7 e posterior, o número de itens passados para um verbo é limitado a 16 quando um menu de atalho é consultado. Em seguida, o verbo é recriado e reinicializado com a seleção completa quando esse verbo é invocado.
 
 Isso é apropriado em alguns casos para considerar um pequeno número de itens fixos. Por exemplo, é apropriado para um verbo "diff" para considerar apenas os dois primeiros itens. Em geral, você não precisa testar todos os itens na seleção para ver se ele é um determinado tipo ou consultar cada item na seleção para suas propriedades. Observe o primeiro item e decida se é apropriado adicionar o verbo.
 

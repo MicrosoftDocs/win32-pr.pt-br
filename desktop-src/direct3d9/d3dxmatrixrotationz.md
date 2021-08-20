@@ -1,7 +1,7 @@
 ---
-description: Função D3DXMatrixRotationZ (D3dx9math. h) – compila uma matriz que gira em volta do eixo z.
+description: Função D3DXMatrixRotationZ (D3dx9math.h) – cria uma matriz que gira em torno do eixo z.
 ms.assetid: 73db43e6-3831-4867-8eda-80127b61e169
-title: Função D3DXMatrixRotationZ (D3dx9math. h)
+title: Função D3DXMatrixRotationZ (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0b109f71052657a5d9c32d9af5cb38b2cbcf1f0e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 34285c099504e8911ceb285b1fd2e5988a9b4695d13761482dff5df7b9e98bf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095508"
 ---
-# <a name="d3dxmatrixrotationz-function-d3dx9mathh"></a>Função D3DXMatrixRotationZ (D3dx9math. h)
+# <a name="d3dxmatrixrotationz-function-d3dx9mathh"></a>Função D3DXMatrixRotationZ (D3dx9math.h)
 
-Cria uma matriz que gira em volta do eixo z.
+Cria uma matriz que gira em torno do eixo z.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,19 +41,19 @@ D3DXMATRIX* D3DXMatrixRotationZ(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Ponteiro para a estrutura [**D3DXMATRIX**](d3dxmatrix.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXMATRIX**](d3dxmatrix.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*Ângulo* \[ no\]
+*Ângulo* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 Ângulo de rotação, em radianos. Os ângulos são medidos no sentido horário quando exibidos do eixo de rotação (lado positivo) em direção à origem.
 
@@ -63,11 +63,11 @@ Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 Tipo: **[ **D3DXMATRIX**](d3dxmatrix.md)\***
 
-Ponteiro para uma estrutura [**D3DXMATRIX**](d3dxmatrix.md) girado em volta do eixo z.
+Ponteiro para uma [**estrutura D3DXMATRIX**](d3dxmatrix.md) girada em torno do eixo z.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXMatrixRotationZ** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXMatrixRotationZ** pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,12 +75,12 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

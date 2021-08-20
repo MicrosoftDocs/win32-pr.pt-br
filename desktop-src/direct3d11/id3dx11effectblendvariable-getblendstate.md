@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48092b496fa8a38be7c9dd8aea67a26e8b56f4f6
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 925e6df2571806f71d5d324f825d53fab3bc481ec80c872954ebf18e89c223a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118099029"
 ---
 # <a name="id3dx11effectblendvariablegetblendstate-method"></a>Método ID3DX11EffectBlendVariable:: getblendstate
 
@@ -62,7 +62,7 @@ O endereço de um ponteiro para uma interface de estado de mesclagem (consulte [
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

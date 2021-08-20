@@ -1,9 +1,9 @@
 ---
-title: Métodos IDWriteGdiInterop1 GetFontSignature (Dwrite \_ 3. h)
+title: Métodos GetFontSignature IDWriteGdiInterop1 (Dwrite \_ 3.h)
 description: Recupera uma assinatura de fonte.
 ms.assetid: 83967afd-8309-74b7-da76-1caee04a4990
 keywords:
-- Gravação direta de métodos GetFontSignature
+- Métodos GetFontSignature Direct Write
 topic_type:
 - apiref
 api_location:
@@ -19,7 +19,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117816367"
 ---
-# <a name="idwritegdiinterop1getfontsignature-methods"></a>Métodos IDWriteGdiInterop1:: GetFontSignature
+# <a name="idwritegdiinterop1getfontsignature-methods"></a>Métodos IDWriteGdiInterop1::GetFontSignature
 
 Recupera uma assinatura de fonte.
 
@@ -29,8 +29,8 @@ Recupera uma assinatura de fonte.
 
 | Método                                                                                                 | Descrição                                                   |
 |:-------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|
-| [**GetFontSignature ( \* IDWriteFont, \* fontSignature)**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritegdiinterop1-getfontsignature(idwritefontface_fontsignature))       | Lê a assinatura de fonte da fonte especificada.<br/>      |
-| [**GetFontSignature ( \* IDWriteFontFace, \* fontSignature)**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritegdiinterop1-getfontsignature(idwritefontface_fontsignature)) | Lê a assinatura de fonte do tipo de fonte fornecido.<br/> |
+| [**GetFontSignature ( \* IDWriteFont, \* FONTSIGNATURE)**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritegdiinterop1-getfontsignature(idwritefontface_fontsignature))       | Lê a assinatura de fonte da fonte determinada.<br/>      |
+| [**GetFontSignature ( \* IDWriteFontFace, \* FONTSIGNATURE)**](/windows/win32/api/dwrite_3/nf-dwrite_3-idwritegdiinterop1-getfontsignature(idwritefontface_fontsignature)) | Lê a assinatura da fonte da face da fonte determinada.<br/> |
 
 
 
@@ -40,7 +40,7 @@ Recupera uma assinatura de fonte.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Dwrite \_ 3. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dwrite \_ 3.h</dt> </dl> |
 
 
 

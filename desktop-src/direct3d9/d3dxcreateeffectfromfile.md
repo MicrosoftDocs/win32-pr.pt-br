@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: d8b2afdd1e8008bc8e03efa670e5a4b37b6dc9f8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bf4b06ddf47f563ed6487cbc971650fb876054b07dbef8353901b4f61ff21b7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118096568"
 ---
 # <a name="d3dxcreateeffectfromfile-function"></a>Função D3DXCreateEffectFromFile
 
@@ -83,7 +83,7 @@ Ponteiro de interface opcional, [**ID3DXInclude**](id3dxinclude.md), a ser usado
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -142,7 +142,7 @@ A configuração do compilador também determina a versão da função. Se o Uni
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

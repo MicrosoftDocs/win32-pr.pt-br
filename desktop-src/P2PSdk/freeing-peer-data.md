@@ -4,12 +4,12 @@ ms.assetid: c7669404-2550-4f0d-908e-540d9a34008f
 title: Liberando dados de pares
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1addb0533d5d05e329e19bfe27a89f5616473a51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9492fec9a22da8252188a75d6d4cee73d2055d29f47e25fc7d55a26cc7909c70
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104011027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117794573"
 ---
 # <a name="freeing-peer-data"></a>Liberando dados de pares
 

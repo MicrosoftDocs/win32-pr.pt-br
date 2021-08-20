@@ -11,12 +11,12 @@ keywords:
 - Automação da interface do usuário, criação de aplicativo cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f353243c8c194e2d732efd1d68bc2894ca930285
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: add429d6fb73b66a5c05bd8dbfac09a9983cc3fc7d3c49fc75d14ed35f21006a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117928796"
 ---
 # <a name="ui-automation-client-programmers-guide"></a>Guia do programador do cliente de automação da interface do usuário
 
@@ -28,7 +28,7 @@ Esta seção contém informações sobre como criar aplicativos que usam a autom
 -   [Criando o objeto CUIAutomation](uiauto-creatingcuiautomation.md)
 -   [Obtendo elementos da automação interface do usuário](uiauto-obtainingelements.md)
 -   [Recuperando propriedades de elementos de automação da interface do usuário](uiauto-propertiesforclients.md)
--   [Cache de propriedades de automação da interface do usuário e padrões de controle](uiauto-cachingforclients.md)
+-   [Caching Propriedades de automação da interface do usuário e padrões de controle](uiauto-cachingforclients.md)
 -   [Inscrevendo-se em eventos de automação da interface do usuário](uiauto-eventsforclients.md)
 -   [Trabalhando com controles baseados em texto](uiauto-workingwithtextbasedcontrols.md)
 -   [Trabalhando com itens virtualizados](uiauto-workingwithvirtualizeditems.md)
@@ -51,6 +51,6 @@ Esta seção contém informações sobre como criar aplicativos que usam a autom
 [Automação da Interface do Usuário](entry-uiauto-win32.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

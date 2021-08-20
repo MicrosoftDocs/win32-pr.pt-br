@@ -4,24 +4,24 @@ ms.assetid: 09501d67-effb-41ce-a7b7-d2415acdf3ac
 title: Usando os controles de exibição de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bbb9c83485faebc873b3e92502122c5497b4bb1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 28b9a67b0928a1c9749bcd92766c50f573e4490b5076c4fa8f8c11b0b94198a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117871282"
 ---
 # <a name="using-the-video-display-controls"></a>Usando os controles de exibição de vídeo
 
-A interface [**IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol) controla como o processador de vídeo avançado (EVR) exibe vídeo dentro de uma janela de aplicativo. Essa interface pode ser usada tanto no DirectShow quanto no Media Foundation. Internamente, os controles de exibição de vídeo são fornecidos pelo apresentador padrão da EVR. Se você escrever um apresentador personalizado, poderá fornecer a mesma interface ou definir uma interface personalizada.
+A interface [**IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol) controla como o processador de vídeo avançado (EVR) exibe vídeo dentro de uma janela de aplicativo. essa interface pode ser usada em qualquer DirectShow ou Media Foundation. Internamente, os controles de exibição de vídeo são fornecidos pelo apresentador padrão da EVR. Se você escrever um apresentador personalizado, poderá fornecer a mesma interface ou definir uma interface personalizada.
 
-A maneira correta de obter um ponteiro para a interface [**IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol) depende se você está usando a versão do DIRECTSHOW do EVR ou a versão Media Foundation. Para o Media Foundation EVR, também depende se você está usando o EVR diretamente ou usando-o por meio da sessão de mídia (que é mais comum).
+a maneira correta de obter um ponteiro para a interface [**IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol) depende se você está usando a versão DirectShow do EVR ou a versão Media Foundation. Para o Media Foundation EVR, também depende se você está usando o EVR diretamente ou usando-o por meio da sessão de mídia (que é mais comum).
 
 Para obter um ponteiro para a interface [**IMFVideoDisplayControl**](/windows/desktop/api/evr/nn-evr-imfvideodisplaycontrol) , faça o seguinte:
 
 1.  Obtenha um ponteiro para a interface [**IMFGetService**](/windows/desktop/api/mfidl/nn-mfidl-imfgetservice) .
 
-    -   Se você estiver usando o filtro EVR do DirectShow, chame **QueryInterface** no filtro.
+    -   se você estiver usando o filtro DirectShow EVR, chame **QueryInterface** no filtro.
 
     -   Se você estiver usando o coletor de mídia do EVR diretamente, chame **QueryInterface** no coletor de mídia.
 
@@ -65,7 +65,7 @@ Durante a reprodução, o aplicativo deve responder a determinadas mensagens da 
 
 -   \_Tamanho do WM: Talvez seja necessário chamar [**SetVideoPosition**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setvideoposition) para redimensionar o retângulo de destino.
 
-Diferentemente do filtro de processador de mixagem de vídeo (VMR) no DirectShow, você não precisa notificar o EVR ao receber uma mensagem do WM \_ DISPLAYCHANGE.
+diferentemente do filtro de processador de mixagem de vídeo (VMR) no DirectShow, você não precisa notificar o EVR ao receber uma mensagem do WM \_ DISPLAYCHANGE.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

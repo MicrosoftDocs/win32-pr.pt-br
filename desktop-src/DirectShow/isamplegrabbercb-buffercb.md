@@ -1,7 +1,7 @@
 ---
 description: O método BufferCB é um método de retorno de chamada que recebe um ponteiro para o buffer de exemplo.
 ms.assetid: 9ee16dd6-8d05-4a9a-84c3-1b3bb95eaa04
-title: Método ISampleGrabberCB::BufferCB (Qedit.h)
+title: 'Método ISampleGrabberCB:: BufferCB (QEdit. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,14 +21,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117817586"
 ---
-# <a name="isamplegrabbercbbuffercb-method"></a>Método ISampleGrabberCB::BufferCB
+# <a name="isamplegrabbercbbuffercb-method"></a>Método ISampleGrabberCB:: BufferCB
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O **método BufferCB** é um método de retorno de chamada que recebe um ponteiro para o buffer de exemplo.
+O método **BufferCB** é um método de retorno de chamada que recebe um ponteiro para o buffer de exemplo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ HRESULT BufferCB(
 
 <dl> <dt>
 
-*SampleTime* 
+*Exemplo de* 
 </dt> <dd>
 
 Hora de início do exemplo, em segundos.
@@ -57,7 +57,7 @@ Hora de início do exemplo, em segundos.
 *pBuffer* 
 </dt> <dd>
 
-Ponteiro para um buffer que contém os dados de exemplo. O formato dos dados depende do tipo de mídia do pin de entrada do Grabber de exemplo. Para obter o tipo de mídia, chame [**ISampleGrabber::GetConnectedMediaType**](isamplegrabber-getconnectedmediatype.md).
+Ponteiro para um buffer que contém os dados de exemplo. O formato dos dados depende do tipo de mídia do pino de entrada do exemplo de apoio. Para obter o tipo de mídia, chame [**ISampleGrabber:: GetConnectedMediaType**](isamplegrabber-getconnectedmediatype.md).
 
 </dd> <dt>
 
@@ -70,26 +70,26 @@ Comprimento do buffer apontado por *pBuffer*, em bytes.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retornará S \_ OK se for bem-sucedido ou um **código de erro HRESULT** caso contrário.
+Retorna S \_ OK se tiver êxito ou um código de erro **HRESULT** .
 
 ## <a name="remarks"></a>Comentários
 
 Esse método de retorno de chamada recebe um ponteiro para os dados no exemplo de mídia mais recente.
 
 > [!Note]  
-> Esse método recebe um ponteiro para os dados de exemplo originais, não uma cópia. A documentação original incorretamente declarou que *pBuffer* contém uma cópia dos dados.
+> Esse método recebe um ponteiro para os dados de exemplo originais, não para uma cópia. A documentação original incorretamente afirmou que *pBuffer* contém uma cópia dos dados.
 
  
 
-Para configurar o retorno de chamada, chame [**ISampleGrabber::SetCallback**](isamplegrabber-setcallback.md).
+Para configurar o retorno de chamada, chame [**ISampleGrabber:: SetCallback**](isamplegrabber-setcallback.md).
 
 > [!Note]  
-> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
+> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -99,8 +99,8 @@ Para configurar o retorno de chamada, chame [**ISampleGrabber::SetCallback**](is
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 
 
@@ -111,7 +111,7 @@ Para configurar o retorno de chamada, chame [**ISampleGrabber::SetCallback**](is
 [Códigos de erro e êxito](error-and-success-codes.md)
 </dt> <dt>
 
-[**ISampleGrabberCB Interface**](isamplegrabbercb.md)
+[**Interface ISampleGrabberCB**](isamplegrabbercb.md)
 </dt> </dl>
 
  
