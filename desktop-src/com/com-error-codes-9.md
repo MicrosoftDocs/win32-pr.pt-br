@@ -1,6 +1,6 @@
 ---
-title: Códigos de erro COM (WPN, MBN, P2P, Bluetooth) (Winerror. h)
-description: A tabela a seguir fornece uma lista de códigos de erro usados por APIs baseadas em COM. | Códigos de erro COM (WPN, MBN, P2P, Bluetooth) (Winerror. h)
+title: Códigos de erro COM (WPN, MBN, P2P, Bluetooth) (Winerror.h)
+description: A tabela a seguir fornece uma lista de códigos de erro usados por APIs baseadas em COM. | Códigos de erro COM (WPN, MBN, P2P, Bluetooth) (Winerror.h)
 ms.assetid: 351E28F9-89E7-4F19-B72D-FFE12C95A6B3
 topic_type:
 - apiref
@@ -171,22 +171,22 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 20eb4273f4f0d11bb62cecf970f5958584b1c5e8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 09aa0596e2a4643333a6d925449669b0579b1acc295782da4be6ceaa50a13cba
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758716"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048554"
 ---
 # <a name="com-error-codes-wpn-mbn-p2p-bluetooth"></a>Códigos de erro COM (WPN, MBN, P2P, Bluetooth)
 
 A tabela a seguir fornece uma lista de códigos de erro usados por APIs baseadas em COM.
 
-Se você estiver tendo dificuldades com um aplicativo que está instalando ou em execução, entre em contato com o suporte ao cliente para o software que está exibindo a mensagem de erro. Para obter suporte para um produto da Microsoft, acesse [https://support.microsoft.com](https://support.microsoft.com) .
+Se você estiver tendo dificuldades com um aplicativo que está instalando ou em execução, entre em contato com o atendimento ao cliente para o software que está exibindo a mensagem de erro. Para obter suporte para um produto da Microsoft, acesse [https://support.microsoft.com](https://support.microsoft.com) .
 
 <dl> <dt>
 
-<span id="WPN_E_CHANNEL_CLOSED"></span><span id="wpn_e_channel_closed"></span>**WPN \_ E \_ canal \_ fechados**
+<span id="WPN_E_CHANNEL_CLOSED"></span><span id="wpn_e_channel_closed"></span>**CANAL WPN \_ E \_ \_ FECHADO**
 </dt> <dd> <dl> <dt>
 
 0x803E0100
@@ -199,7 +199,7 @@ O canal de notificação já foi fechado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_CHANNEL_REQUEST_NOT_COMPLETE"></span><span id="wpn_e_channel_request_not_complete"></span>**a \_ solicitação da WPN E do \_ canal não foi \_ \_ \_ concluída**
+<span id="WPN_E_CHANNEL_REQUEST_NOT_COMPLETE"></span><span id="wpn_e_channel_request_not_complete"></span>**SOLICITAÇÃO \_ DE CANAL WPN NÃO \_ \_ \_ \_ CONCLUÍDA**
 </dt> <dd> <dl> <dt>
 
 0x803E0101
@@ -212,7 +212,7 @@ A solicitação do canal de notificação não foi concluída com êxito.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_INVALID_APP"></span><span id="wpn_e_invalid_app"></span>**WPN \_ E \_ \_ aplicativo inválido**
+<span id="WPN_E_INVALID_APP"></span><span id="wpn_e_invalid_app"></span>**APLICATIVO WPN \_ E \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 0x803E0102
@@ -225,7 +225,7 @@ O identificador de aplicativo fornecido é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_OUTSTANDING_CHANNEL_REQUEST"></span><span id="wpn_e_outstanding_channel_request"></span>**solicitação de canal de WPN \_ E \_ pendente \_ \_**
+<span id="WPN_E_OUTSTANDING_CHANNEL_REQUEST"></span><span id="wpn_e_outstanding_channel_request"></span>**SOLICITAÇÃO \_ DE CANAL PENDENTE \_ \_ DE \_ WPN**
 </dt> <dd> <dl> <dt>
 
 0x803E0103
@@ -238,7 +238,7 @@ Uma solicitação de canal de notificação para o identificador de aplicativo f
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_DUPLICATE_CHANNEL"></span><span id="wpn_e_duplicate_channel"></span>**WPN \_ E \_ duplicar \_ canal**
+<span id="WPN_E_DUPLICATE_CHANNEL"></span><span id="wpn_e_duplicate_channel"></span>**WPN \_ E \_ CANAL \_ DUPLICADO**
 </dt> <dd> <dl> <dt>
 
 0x803E0104
@@ -246,12 +246,12 @@ Uma solicitação de canal de notificação para o identificador de aplicativo f
 
 
 
-O identificador de canal já está vinculado a outro ponto de extremidade de aplicativo.
+O identificador de canal já está vinculado a outro ponto de extremidade do aplicativo.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_PLATFORM_UNAVAILABLE"></span><span id="wpn_e_platform_unavailable"></span>**WPN \_ E \_ plataforma \_ não disponíveis**
+<span id="WPN_E_PLATFORM_UNAVAILABLE"></span><span id="wpn_e_platform_unavailable"></span>**PLATAFORMA WPN \_ E \_ \_ INDISPONÍVEL**
 </dt> <dd> <dl> <dt>
 
 0x803E0105
@@ -264,7 +264,7 @@ A plataforma de notificação não está disponível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_NOTIFICATION_POSTED"></span><span id="wpn_e_notification_posted"></span>**WPN \_ E \_ notificação \_ postada**
+<span id="WPN_E_NOTIFICATION_POSTED"></span><span id="wpn_e_notification_posted"></span>**NOTIFICAÇÃO \_ WPN E \_ \_ POSTADA**
 </dt> <dd> <dl> <dt>
 
 0x803E0106
@@ -277,7 +277,7 @@ A notificação já foi postada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_NOTIFICATION_HIDDEN"></span><span id="wpn_e_notification_hidden"></span>**WPN \_ E \_ notificação \_ oculta**
+<span id="WPN_E_NOTIFICATION_HIDDEN"></span><span id="wpn_e_notification_hidden"></span>**WPN \_ E \_ NOTIFICATION \_ HIDDEN**
 </dt> <dd> <dl> <dt>
 
 0x803E0107
@@ -290,7 +290,7 @@ A notificação já foi ocultada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_NOTIFICATION_NOT_POSTED"></span><span id="wpn_e_notification_not_posted"></span>**WPN \_ E \_ notificação \_ não \_ lançadas**
+<span id="WPN_E_NOTIFICATION_NOT_POSTED"></span><span id="wpn_e_notification_not_posted"></span>**NOTIFICAÇÃO DE WPN \_ E \_ NÃO \_ \_ POSTADA**
 </dt> <dd> <dl> <dt>
 
 0x803E0108
@@ -298,12 +298,12 @@ A notificação já foi ocultada.
 
 
 
-A notificação não poderá ser ocultada até ser exibida.
+A notificação não pode ser ocultada até que ela tenha sido mostrada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_CLOUD_DISABLED"></span><span id="wpn_e_cloud_disabled"></span>**WPN \_ E \_ nuvem \_ desabilitada**
+<span id="WPN_E_CLOUD_DISABLED"></span><span id="wpn_e_cloud_disabled"></span>**WPN \_ E \_ CLOUD \_ DISABLED**
 </dt> <dd> <dl> <dt>
 
 0x803E0109
@@ -311,12 +311,12 @@ A notificação não poderá ser ocultada até ser exibida.
 
 
 
-As notificações de nuvem foram desativadas.
+As notificações na nuvem foram desligadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_CLOUD_INCAPABLE"></span><span id="wpn_e_cloud_incapable"></span>**WPN \_ E \_ nuvem \_ incompatível**
+<span id="WPN_E_CLOUD_INCAPABLE"></span><span id="wpn_e_cloud_incapable"></span>**WPN \_ E CLOUD SEM \_ \_ CAPACIDADE**
 </dt> <dd> <dl> <dt>
 
 0x803E0110
@@ -324,12 +324,12 @@ As notificações de nuvem foram desativadas.
 
 
 
-O aplicativo não tem o recurso de notificação de nuvem.
+O aplicativo não tem a funcionalidade de notificação na nuvem.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_NOTIFICATION_DISABLED"></span><span id="wpn_e_notification_disabled"></span>**WPN \_ E \_ notificação \_ desabilitada**
+<span id="WPN_E_NOTIFICATION_DISABLED"></span><span id="wpn_e_notification_disabled"></span>**NOTIFICAÇÃO DO WPN \_ E \_ \_ DESABILITADA**
 </dt> <dd> <dl> <dt>
 
 0x803E0111
@@ -337,12 +337,12 @@ O aplicativo não tem o recurso de notificação de nuvem.
 
 
 
-As configurações impedem que a notificação seja entregue.
+Configurações impedir que a notificação seja entregue.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_NOTIFICATION_INCAPABLE"></span><span id="wpn_e_notification_incapable"></span>**WPN \_ E \_ \_ incompatibilidade de notificação**
+<span id="WPN_E_NOTIFICATION_INCAPABLE"></span><span id="wpn_e_notification_incapable"></span>**NOTIFICAÇÃO \_ WPN E \_ SEM \_ CAPACIDADE**
 </dt> <dd> <dl> <dt>
 
 0x803E0112
@@ -350,12 +350,12 @@ As configurações impedem que a notificação seja entregue.
 
 
 
-Os recursos do aplicativo impedem que a notificação seja entregue.
+As funcionalidades do aplicativo impedem que a notificação seja entregue.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_INTERNET_INCAPABLE"></span><span id="wpn_e_internet_incapable"></span>**WPN \_ E \_ Internet \_ incapaz**
+<span id="WPN_E_INTERNET_INCAPABLE"></span><span id="wpn_e_internet_incapable"></span>**WPN \_ E INTERNET SEM \_ \_ CAPACIDADE**
 </dt> <dd> <dl> <dt>
 
 0x803E0113
@@ -363,12 +363,12 @@ Os recursos do aplicativo impedem que a notificação seja entregue.
 
 
 
-O aplicativo não tem o recurso de acesso à Internet.
+O aplicativo não tem a funcionalidade de acesso à Internet.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_NOTIFICATION_TYPE_DISABLED"></span><span id="wpn_e_notification_type_disabled"></span>**WPN \_ E \_ tipo de notificação \_ \_ desabilitado**
+<span id="WPN_E_NOTIFICATION_TYPE_DISABLED"></span><span id="wpn_e_notification_type_disabled"></span>**TIPO DE NOTIFICAÇÃO WPN \_ E \_ \_ \_ DESABILITADO**
 </dt> <dd> <dl> <dt>
 
 0x803E0114
@@ -376,12 +376,12 @@ O aplicativo não tem o recurso de acesso à Internet.
 
 
 
-As configurações impedem que o tipo de notificação seja entregue.
+Configurações impedir que o tipo de notificação seja entregue.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_NOTIFICATION_SIZE"></span><span id="wpn_e_notification_size"></span>**WPN \_ E \_ tamanho da notificação \_**
+<span id="WPN_E_NOTIFICATION_SIZE"></span><span id="wpn_e_notification_size"></span>**TAMANHO DA \_ \_ NOTIFICAÇÃO DO WPN E \_**
 </dt> <dd> <dl> <dt>
 
 0x803E0115
@@ -394,7 +394,7 @@ O tamanho do conteúdo da notificação é muito grande.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_TAG_SIZE"></span><span id="wpn_e_tag_size"></span>**WPN \_ E \_ tamanho da marca \_**
+<span id="WPN_E_TAG_SIZE"></span><span id="wpn_e_tag_size"></span>**TAMANHO DA MARCA WPN \_ E \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x803E0116
@@ -407,7 +407,7 @@ O tamanho da marca de notificação é muito grande.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_ACCESS_DENIED"></span><span id="wpn_e_access_denied"></span>**WPN \_ E \_ acesso \_ negado**
+<span id="WPN_E_ACCESS_DENIED"></span><span id="wpn_e_access_denied"></span>**ACESSO AO WPN \_ E \_ \_ NEGADO**
 </dt> <dd> <dl> <dt>
 
 0x803E0117
@@ -415,12 +415,12 @@ O tamanho da marca de notificação é muito grande.
 
 
 
-A plataforma de notificação não tem o privilégio apropriado nos recursos.
+A plataforma de notificação não tem privilégios apropriados em recursos.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_DUPLICATE_REGISTRATION"></span><span id="wpn_e_duplicate_registration"></span>**WPN \_ E \_ registro duplicado \_**
+<span id="WPN_E_DUPLICATE_REGISTRATION"></span><span id="wpn_e_duplicate_registration"></span>**REGISTRO \_ DUPLICADO DE WPN E \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x803E0118
@@ -428,12 +428,12 @@ A plataforma de notificação não tem o privilégio apropriado nos recursos.
 
 
 
-O aplicativo da plataforma de notificação encontrado já está registrado.
+O aplicativo encontrado da plataforma de notificação já está registrado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_OUT_OF_SESSION"></span><span id="wpn_e_out_of_session"></span>**WPN \_ E \_ fora \_ da \_ sessão**
+<span id="WPN_E_OUT_OF_SESSION"></span><span id="wpn_e_out_of_session"></span>**WPN \_ E FORA DA \_ \_ \_ SESSÃO**
 </dt> <dd> <dl> <dt>
 
 0x803E0200
@@ -441,12 +441,12 @@ O aplicativo da plataforma de notificação encontrado já está registrado.
 
 
 
-A plataforma de notificação ficou sem sessões da camada de apresentação.
+A plataforma de notificação ficou sem sessões de camada de apresentação.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_POWER_SAVE"></span><span id="wpn_e_power_save"></span>**WPN \_ E economia de \_ energia \_**
+<span id="WPN_E_POWER_SAVE"></span><span id="wpn_e_power_save"></span>**WPN \_ E \_ POWER \_ SAVE**
 </dt> <dd> <dl> <dt>
 
 0x803E0201
@@ -459,7 +459,7 @@ A plataforma de notificação rejeita a solicitação de download de imagem devi
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_IMAGE_NOT_FOUND_IN_CACHE"></span><span id="wpn_e_image_not_found_in_cache"></span>**WPN \_ E \_ imagem \_ não \_ encontrada \_ no \_ cache**
+<span id="WPN_E_IMAGE_NOT_FOUND_IN_CACHE"></span><span id="wpn_e_image_not_found_in_cache"></span>**IMAGEM WPN \_ E NÃO ENCONTRADA NO \_ \_ \_ \_ \_ CACHE**
 </dt> <dd> <dl> <dt>
 
 0x803E0202
@@ -472,7 +472,7 @@ A plataforma de notificação não tem a imagem solicitada em seu cache.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_ALL_URL_NOT_COMPLETED"></span><span id="wpn_e_all_url_not_completed"></span>**a \_ URL WPN E \_ All \_ \_ não \_ foi concluída**
+<span id="WPN_E_ALL_URL_NOT_COMPLETED"></span><span id="wpn_e_all_url_not_completed"></span>**WPN \_ E TODAS AS \_ \_ \_ URLS NÃO \_ CONCLUÍDAS**
 </dt> <dd> <dl> <dt>
 
 0x803E0203
@@ -480,12 +480,12 @@ A plataforma de notificação não tem a imagem solicitada em seu cache.
 
 
 
-A plataforma de notificação não pode concluir toda a imagem solicitada.
+A plataforma de notificação não pode concluir todas as imagens solicitadas.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_INVALID_CLOUD_IMAGE"></span><span id="wpn_e_invalid_cloud_image"></span>**WPN \_ E \_ \_ imagem de nuvem inválida \_**
+<span id="WPN_E_INVALID_CLOUD_IMAGE"></span><span id="wpn_e_invalid_cloud_image"></span>**WPN \_ E IMAGEM DE \_ \_ \_ NUVEM INVÁLIDA**
 </dt> <dd> <dl> <dt>
 
 0x803E0204
@@ -498,7 +498,7 @@ Uma imagem de nuvem baixada da plataforma de notificação é inválida.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_NOTIFICATION_ID_MATCHED"></span><span id="wpn_e_notification_id_matched"></span>**WPN \_ E \_ ID de notificação \_ \_ correspondidas**
+<span id="WPN_E_NOTIFICATION_ID_MATCHED"></span><span id="wpn_e_notification_id_matched"></span>**\_ID DE NOTIFICAÇÃO DO WPN \_ \_ E \_ CORRESPONDER**
 </dt> <dd> <dl> <dt>
 
 0x803E0205
@@ -506,12 +506,12 @@ Uma imagem de nuvem baixada da plataforma de notificação é inválida.
 
 
 
-A ID de notificação fornecida como filtro é correspondida com o que a plataforma de notificação mantém.
+A ID de notificação fornecida como filtro é a mesma que a plataforma de notificação mantém.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_CALLBACK_ALREADY_REGISTERED"></span><span id="wpn_e_callback_already_registered"></span>**WPN \_ E \_ retorno de chamada \_ já \_ registrado**
+<span id="WPN_E_CALLBACK_ALREADY_REGISTERED"></span><span id="wpn_e_callback_already_registered"></span>**WPN \_ E RETORNO DE CHAMADA JÁ \_ \_ \_ REGISTRADO**
 </dt> <dd> <dl> <dt>
 
 0x803E0206
@@ -524,7 +524,7 @@ A interface de retorno de chamada de notificação já está registrada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_TOAST_NOTIFICATION_DROPPED"></span><span id="wpn_e_toast_notification_dropped"></span>**a \_ notificação da WPN E do \_ sistema foi \_ \_ descartada**
+<span id="WPN_E_TOAST_NOTIFICATION_DROPPED"></span><span id="wpn_e_toast_notification_dropped"></span>**NOTIFICAÇÃO \_ DO WPN E \_ TOAST \_ \_ DESCARTADO**
 </dt> <dd> <dl> <dt>
 
 0x803E0207
@@ -532,12 +532,12 @@ A interface de retorno de chamada de notificação já está registrada.
 
 
 
-A notificação do sistema foi descartada sem ser exibida ao usuário.
+A Notificação do Toast foi descartado sem ser exibida para o usuário.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="WPN_E_STORAGE_LOCKED"></span><span id="wpn_e_storage_locked"></span>**WPN \_ E \_ armazenamento \_ bloqueado**
+<span id="WPN_E_STORAGE_LOCKED"></span><span id="wpn_e_storage_locked"></span>**WPN \_ E \_ STORAGE \_ LOCKED**
 </dt> <dd> <dl> <dt>
 
 0x803E0208
@@ -550,7 +550,7 @@ A plataforma de notificação não tem os privilégios adequados para concluir a
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_CONTEXT_NOT_ACTIVATED"></span><span id="e_mbn_context_not_activated"></span>**o E o \_ \_ contexto MBN não estão \_ \_ ativados**
+<span id="E_MBN_CONTEXT_NOT_ACTIVATED"></span><span id="e_mbn_context_not_activated"></span>**CONTEXTO \_ DO E MBN NÃO \_ \_ \_ ATIVADO**
 </dt> <dd> <dl> <dt>
 
 0x80548201
@@ -563,7 +563,7 @@ O contexto não está ativado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_BAD_SIM"></span><span id="e_mbn_bad_sim"></span>**E \_ o \_ MBN \_ Sim insatisfatório**
+<span id="E_MBN_BAD_SIM"></span><span id="e_mbn_bad_sim"></span>**E \_ MBN \_ BAD \_ SIM**
 </dt> <dd> <dl> <dt>
 
 0x80548202
@@ -571,12 +571,12 @@ O contexto não está ativado.
 
 
 
-SIM inválido é inserido.
+O SIM ruim é inserido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_DATA_CLASS_NOT_AVAILABLE"></span><span id="e_mbn_data_class_not_available"></span>**E a \_ classe de dados do MBN \_ \_ \_ não \_ está disponível**
+<span id="E_MBN_DATA_CLASS_NOT_AVAILABLE"></span><span id="e_mbn_data_class_not_available"></span>**CLASSE \_ DE DADOS E MBN NÃO \_ \_ \_ \_ DISPONÍVEL**
 </dt> <dd> <dl> <dt>
 
 0x80548203
@@ -589,7 +589,7 @@ A classe de dados solicitada não está disponível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_INVALID_ACCESS_STRING"></span><span id="e_mbn_invalid_access_string"></span>**E \_ MBN \_ de \_ cadeia de caracteres de acesso inválida \_**
+<span id="E_MBN_INVALID_ACCESS_STRING"></span><span id="e_mbn_invalid_access_string"></span>**CADEIA \_ DE CARACTERES DE \_ ACESSO INVÁLIDA \_ DO E MBN \_**
 </dt> <dd> <dl> <dt>
 
 0x80548204
@@ -597,12 +597,12 @@ A classe de dados solicitada não está disponível.
 
 
 
-O APN (nome do ponto de acesso) ou a cadeia de caracteres de acesso está incorreto.
+O APN (nome do ponto de acesso) ou a cadeia de caracteres de acesso está incorreta.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_MAX_ACTIVATED_CONTEXTS"></span><span id="e_mbn_max_activated_contexts"></span>**\_ \_ \_ contextos de ativação máxima \_ do E do MBN**
+<span id="E_MBN_MAX_ACTIVATED_CONTEXTS"></span><span id="e_mbn_max_activated_contexts"></span>**\_CONTEXTOS \_ \_ \_ ATIVADOS DO E MBN MAX**
 </dt> <dd> <dl> <dt>
 
 0x80548205
@@ -610,12 +610,12 @@ O APN (nome do ponto de acesso) ou a cadeia de caracteres de acesso está incorr
 
 
 
-O número máximo de contextos ativados foi atingido.
+O máximo de contextos ativados foi atingido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_PACKET_SVC_DETACHED"></span><span id="e_mbn_packet_svc_detached"></span>**E \_ o \_ pacote \_ svc do MBN \_ desanexado**
+<span id="E_MBN_PACKET_SVC_DETACHED"></span><span id="e_mbn_packet_svc_detached"></span>**E \_ MBN \_ PACKET \_ SVC \_ DETACHED**
 </dt> <dd> <dl> <dt>
 
 0x80548206
@@ -623,12 +623,12 @@ O número máximo de contextos ativados foi atingido.
 
 
 
-O dispositivo está no estado de desanexação de pacotes.
+O dispositivo está no estado de desa ressarção de pacotes.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_PROVIDER_NOT_VISIBLE"></span><span id="e_mbn_provider_not_visible"></span>**o \_ provedor do E MBN \_ não está \_ \_ visível**
+<span id="E_MBN_PROVIDER_NOT_VISIBLE"></span><span id="e_mbn_provider_not_visible"></span>**PROVEDOR \_ E MBN \_ NÃO \_ \_ VISÍVEL**
 </dt> <dd> <dl> <dt>
 
 0x80548207
@@ -641,7 +641,7 @@ O provedor não está visível.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_RADIO_POWER_OFF"></span><span id="e_mbn_radio_power_off"></span>**desligamento da opção E do \_ MBN \_ \_ \_**
+<span id="E_MBN_RADIO_POWER_OFF"></span><span id="e_mbn_radio_power_off"></span>**E \_ MBN \_ RADIO \_ POWER \_ OFF**
 </dt> <dd> <dl> <dt>
 
 0x80548208
@@ -649,12 +649,12 @@ O provedor não está visível.
 
 
 
-O rádio está desligado.
+A rádio está desligada.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SERVICE_NOT_ACTIVATED"></span><span id="e_mbn_service_not_activated"></span>**o E o \_ \_ serviço MBN não estão \_ \_ ativados**
+<span id="E_MBN_SERVICE_NOT_ACTIVATED"></span><span id="e_mbn_service_not_activated"></span>**SERVIÇO \_ E MBN \_ NÃO \_ \_ ATIVADO**
 </dt> <dd> <dl> <dt>
 
 0x80548209
@@ -667,7 +667,7 @@ A assinatura do MBN não está ativada.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SIM_NOT_INSERTED"></span><span id="e_mbn_sim_not_inserted"></span>**E \_ MBN \_ Sim \_ não \_ inserido**
+<span id="E_MBN_SIM_NOT_INSERTED"></span><span id="e_mbn_sim_not_inserted"></span>**E \_ MBN \_ SIM NÃO \_ \_ INSERIDO**
 </dt> <dd> <dl> <dt>
 
 0x8054820A
@@ -675,12 +675,12 @@ A assinatura do MBN não está ativada.
 
 
 
-SIM não inserido.
+O SIM não é inserido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_VOICE_CALL_IN_PROGRESS"></span><span id="e_mbn_voice_call_in_progress"></span>**\_ \_ \_ chamada do E do MBN Voice \_ em \_ andamento**
+<span id="E_MBN_VOICE_CALL_IN_PROGRESS"></span><span id="e_mbn_voice_call_in_progress"></span>**CHAMADA \_ DE VOZ DO E MBN EM \_ \_ \_ \_ ANDAMENTO**
 </dt> <dd> <dl> <dt>
 
 0x8054820B
@@ -693,7 +693,7 @@ Chamada de voz em andamento.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_INVALID_CACHE"></span><span id="e_mbn_invalid_cache"></span>**E \_ MBN \_ \_ cache inválido**
+<span id="E_MBN_INVALID_CACHE"></span><span id="e_mbn_invalid_cache"></span>**CACHE \_ INVÁLIDO DO E MBN \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x8054820C
@@ -701,12 +701,12 @@ Chamada de voz em andamento.
 
 
 
-O cache do provedor visível é inválido.
+O cache visível do provedor é inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_NOT_REGISTERED"></span><span id="e_mbn_not_registered"></span>**E \_ MBN \_ não \_ registrado**
+<span id="E_MBN_NOT_REGISTERED"></span><span id="e_mbn_not_registered"></span>**E \_ MBN \_ NÃO \_ REGISTRADO**
 </dt> <dd> <dl> <dt>
 
 0x8054820D
@@ -719,7 +719,7 @@ O dispositivo não está registrado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_PROVIDERS_NOT_FOUND"></span><span id="e_mbn_providers_not_found"></span>**os \_ provedores do E MBN \_ \_ não \_ foram encontrados**
+<span id="E_MBN_PROVIDERS_NOT_FOUND"></span><span id="e_mbn_providers_not_found"></span>**PROVEDORES \_ E MBN \_ NÃO \_ \_ ENCONTRADOS**
 </dt> <dd> <dl> <dt>
 
 0x8054820E
@@ -732,7 +732,7 @@ Provedores não encontrados.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_PIN_NOT_SUPPORTED"></span><span id="e_mbn_pin_not_supported"></span>**\_ \_ \_ não \_ há suporte para PIN do E MBN**
+<span id="E_MBN_PIN_NOT_SUPPORTED"></span><span id="e_mbn_pin_not_supported"></span>**NÃO \_ HÁ SUPORTE PARA O PIN DO E MBN \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x8054820F
@@ -740,12 +740,12 @@ Provedores não encontrados.
 
 
 
-Não há suporte para o PIN.
+Não há suporte para pin.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_PIN_REQUIRED"></span><span id="e_mbn_pin_required"></span>**E \_ o \_ PIN do MBN \_ necessário**
+<span id="E_MBN_PIN_REQUIRED"></span><span id="e_mbn_pin_required"></span>**PIN \_ DO E MBN \_ \_ NECESSÁRIO**
 </dt> <dd> <dl> <dt>
 
 0x80548210
@@ -753,12 +753,12 @@ Não há suporte para o PIN.
 
 
 
-O PIN é necessário.
+É necessário fixar.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_PIN_DISABLED"></span><span id="e_mbn_pin_disabled"></span>**E \_ MBN \_ PIN \_ desabilitado**
+<span id="E_MBN_PIN_DISABLED"></span><span id="e_mbn_pin_disabled"></span>**E \_ PIN MBN \_ \_ DESABILITADO**
 </dt> <dd> <dl> <dt>
 
 0x80548211
@@ -771,7 +771,7 @@ O PIN está desabilitado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_FAILURE"></span><span id="e_mbn_failure"></span>**falha do E \_ MBN \_**
+<span id="E_MBN_FAILURE"></span><span id="e_mbn_failure"></span>**FALHA \_ DO E MBN \_**
 </dt> <dd> <dl> <dt>
 
 0x80548212
@@ -784,7 +784,7 @@ Falha genérica.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_INVALID_PROFILE"></span><span id="e_mbn_invalid_profile"></span>**E \_ MBN \_ \_ perfil inválido**
+<span id="E_MBN_INVALID_PROFILE"></span><span id="e_mbn_invalid_profile"></span>**PERFIL \_ INVÁLIDO DO E MBN \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80548218
@@ -797,7 +797,7 @@ O perfil é inválido.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_DEFAULT_PROFILE_EXIST"></span><span id="e_mbn_default_profile_exist"></span>**E \_ o \_ perfil padrão do MBN \_ \_ existe**
+<span id="E_MBN_DEFAULT_PROFILE_EXIST"></span><span id="e_mbn_default_profile_exist"></span>**E \_ MBN \_ DEFAULT \_ PROFILE \_ EXIST**
 </dt> <dd> <dl> <dt>
 
 0x80548219
@@ -810,7 +810,7 @@ O perfil padrão existe.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SMS_ENCODING_NOT_SUPPORTED"></span><span id="e_mbn_sms_encoding_not_supported"></span>**\_ \_ \_ \_ não \_ há suporte para codificação SMS do E MBN**
+<span id="E_MBN_SMS_ENCODING_NOT_SUPPORTED"></span><span id="e_mbn_sms_encoding_not_supported"></span>**NÃO HÁ SUPORTE \_ \_ PARA \_ CODIFICAÇÃO DE SMS \_ \_ DO E MBN**
 </dt> <dd> <dl> <dt>
 
 0x80548220
@@ -818,12 +818,12 @@ O perfil padrão existe.
 
 
 
-Não há suporte para codificação SMS.
+Não há suporte para codificação de SMS.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SMS_FILTER_NOT_SUPPORTED"></span><span id="e_mbn_sms_filter_not_supported"></span>**\_ \_ \_ \_ não \_ há suporte para o filtro de SMS do E MBN**
+<span id="E_MBN_SMS_FILTER_NOT_SUPPORTED"></span><span id="e_mbn_sms_filter_not_supported"></span>**NÃO HÁ SUPORTE PARA FILTRO DE SMS DO \_ E MBN \_ \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80548221
@@ -831,12 +831,12 @@ Não há suporte para codificação SMS.
 
 
 
-Não há suporte para o filtro de SMS.
+Não há suporte para filtro de SMS.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SMS_INVALID_MEMORY_INDEX"></span><span id="e_mbn_sms_invalid_memory_index"></span>**\_índice de \_ \_ memória inválido \_ \_ do E MBN SMS**
+<span id="E_MBN_SMS_INVALID_MEMORY_INDEX"></span><span id="e_mbn_sms_invalid_memory_index"></span>**E \_ MBN \_ SMS ÍNDICE DE \_ MEMÓRIA \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 0x80548222
@@ -849,7 +849,7 @@ O índice de memória SMS inválido é usado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SMS_LANG_NOT_SUPPORTED"></span><span id="e_mbn_sms_lang_not_supported"></span>**\_ \_ \_ \_ não \_ há suporte para o E o MBN SMS lang**
+<span id="E_MBN_SMS_LANG_NOT_SUPPORTED"></span><span id="e_mbn_sms_lang_not_supported"></span>**NÃO \_ HÁ SUPORTE PARA E MBN SMS \_ \_ LANG \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80548223
@@ -857,12 +857,12 @@ O índice de memória SMS inválido é usado.
 
 
 
-Não há suporte para o idioma do SMS.
+Não há suporte para a linguagem SMS.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SMS_MEMORY_FAILURE"></span><span id="e_mbn_sms_memory_failure"></span>**\_falha de \_ memória de SMS \_ \_ do E MBN**
+<span id="E_MBN_SMS_MEMORY_FAILURE"></span><span id="e_mbn_sms_memory_failure"></span>**FALHA \_ NA MEMÓRIA DE SMS \_ \_ DO E MBN \_**
 </dt> <dd> <dl> <dt>
 
 0x80548224
@@ -870,12 +870,12 @@ Não há suporte para o idioma do SMS.
 
 
 
-Ocorreu uma falha de memória SMS.
+Ocorreu uma falha de memória sms.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SMS_NETWORK_TIMEOUT"></span><span id="e_mbn_sms_network_timeout"></span>**\_ \_ \_ tempo limite de rede \_ do E/s do MBN**
+<span id="E_MBN_SMS_NETWORK_TIMEOUT"></span><span id="e_mbn_sms_network_timeout"></span>**E \_ MBN \_ SMS \_ NETWORK \_ TIMEOUT**
 </dt> <dd> <dl> <dt>
 
 0x80548225
@@ -883,12 +883,12 @@ Ocorreu uma falha de memória SMS.
 
 
 
-O tempo limite da rede SMS ocorreu.
+O tempo de vida da rede SMS ocorreu.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SMS_UNKNOWN_SMSC_ADDRESS"></span><span id="e_mbn_sms_unknown_smsc_address"></span>**E \_ MBN \_ SMS \_ desconhecido \_ \_ endereço SMSC**
+<span id="E_MBN_SMS_UNKNOWN_SMSC_ADDRESS"></span><span id="e_mbn_sms_unknown_smsc_address"></span>**ENDEREÇO \_ SMS DESCONHECIDO DO E MBN \_ SMS \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80548226
@@ -896,12 +896,12 @@ O tempo limite da rede SMS ocorreu.
 
 
 
-É usado um endereço SMSC desconhecido.
+O endereço SMSC desconhecido é usado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SMS_FORMAT_NOT_SUPPORTED"></span><span id="e_mbn_sms_format_not_supported"></span>**\_ \_ \_ \_ não \_ há suporte para o formato de SMS E MBN**
+<span id="E_MBN_SMS_FORMAT_NOT_SUPPORTED"></span><span id="e_mbn_sms_format_not_supported"></span>**NÃO HÁ SUPORTE PARA O FORMATO DE SMS DO \_ E MBN \_ \_ \_ \_**
 </dt> <dd> <dl> <dt>
 
 0x80548227
@@ -914,7 +914,7 @@ Não há suporte para o formato SMS.
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SMS_OPERATION_NOT_ALLOWED"></span><span id="e_mbn_sms_operation_not_allowed"></span>**operação do E do \_ MBN \_ SMS \_ \_ não \_ permitida**
+<span id="E_MBN_SMS_OPERATION_NOT_ALLOWED"></span><span id="e_mbn_sms_operation_not_allowed"></span>**OPERAÇÃO \_ DE SMS DO E MBN NÃO \_ \_ \_ \_ PERMITIDA**
 </dt> <dd> <dl> <dt>
 
 0x80548228
@@ -922,12 +922,12 @@ Não há suporte para o formato SMS.
 
 
 
-A operação SMS não é permitida.
+A operação de SMS não é permitida.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="E_MBN_SMS_MEMORY_FULL"></span><span id="e_mbn_sms_memory_full"></span>**memória completa do E do \_ MBN \_ SMS \_ \_**
+<span id="E_MBN_SMS_MEMORY_FULL"></span><span id="e_mbn_sms_memory_full"></span>**MEMÓRIA \_ DE SMS DO E MBN \_ \_ \_ CHEIA**
 </dt> <dd> <dl> <dt>
 
 0x80548229
@@ -940,7 +940,7 @@ A memória SMS do dispositivo está cheia.
 
 </dt> </dl> </dd> <dt>
 
-<span id="PEER_E_IPV6_NOT_INSTALLED"></span><span id="peer_e_ipv6_not_installed"></span>**PAR \_ E \_ IPv6 \_ não \_ instalados**
+<span id="PEER_E_IPV6_NOT_INSTALLED"></span><span id="peer_e_ipv6_not_installed"></span>**PEER \_ E \_ IPV6 \_ NÃO \_ INSTALADO**
 </dt> <dd> <dl> <dt>
 
 0x80630001
@@ -953,7 +953,7 @@ O protocolo IPv6 não está instalado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="PEER_E_NOT_INITIALIZED"></span><span id="peer_e_not_initialized"></span>**PAR \_ E \_ não \_ inicializado**
+<span id="PEER_E_NOT_INITIALIZED"></span><span id="peer_e_not_initialized"></span>**PAR \_ E \_ NÃO \_ INICIALIZADO**
 </dt> <dd> <dl> <dt>
 
 0x80630002
@@ -966,7 +966,7 @@ O componente não foi inicializado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="PEER_E_CANNOT_START_SERVICE"></span><span id="peer_e_cannot_start_service"></span>**PAR \_ E \_ não é possível \_ iniciar o \_ serviço**
+<span id="PEER_E_CANNOT_START_SERVICE"></span><span id="peer_e_cannot_start_service"></span>**O PEER \_ E NÃO PODE INICIAR O \_ \_ \_ SERVIÇO**
 </dt> <dd> <dl> <dt>
 
 0x80630003
@@ -974,12 +974,12 @@ O componente não foi inicializado.
 
 
 
-O serviço necessário a ser iniciado.
+O serviço necessário não pode ser iniciado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PEER_E_NOT_LICENSED"></span><span id="peer_e_not_licensed"></span>**PAR \_ E \_ não \_ licenciado**
+<span id="PEER_E_NOT_LICENSED"></span><span id="peer_e_not_licensed"></span>**PAR \_ E \_ NÃO \_ LICENCIADO**
 </dt> <dd> <dl> <dt>
 
 0x80630004
@@ -987,12 +987,12 @@ O serviço necessário a ser iniciado.
 
 
 
-O protocolo P2P não está licenciado para ser executado neste sistema operacional.
+O protocolo P2P não está licenciado para ser executado nesse sistema operacional.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PEER_E_INVALID_GRAPH"></span><span id="peer_e_invalid_graph"></span>**PAR \_ E \_ \_ grafo inválido**
+<span id="PEER_E_INVALID_GRAPH"></span><span id="peer_e_invalid_graph"></span>**GRAFO \_ PEER E \_ \_ INVÁLIDO**
 </dt> <dd> <dl> <dt>
 
 0x80630010
@@ -1000,12 +1000,12 @@ O protocolo P2P não está licenciado para ser executado neste sistema operacion
 
 
 
-O identificador do grafo é inválido.
+O alça do grafo é inválido.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PEER_E_DBNAME_CHANGED"></span><span id="peer_e_dbname_changed"></span>**PAR \_ E \_ dbname \_ alterado**
+<span id="PEER_E_DBNAME_CHANGED"></span><span id="peer_e_dbname_changed"></span>**PEER \_ E \_ DBNAME \_ ALTERADO**
 </dt> <dd> <dl> <dt>
 
 0x80630011
@@ -1013,12 +1013,12 @@ O identificador do grafo é inválido.
 
 
 
-O nome do banco de dados de gráfico foi alterado.
+O nome do banco de dados GRaphing foi alterado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="PEER_E_DUPLICATE_GRAPH"></span><span id="peer_e_duplicate_graph"></span>**PAR \_ E \_ grafo duplicados \_**
+<span id="PEER_E_DUPLICATE_GRAPH"></span><span id="peer_e_duplicate_graph"></span>**GRAFO \_ DUPLICADO DE PAR \_ \_ E**
 </dt> <dd> <dl> <dt>
 
 0x80630012

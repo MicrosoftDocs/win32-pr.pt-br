@@ -4,12 +4,12 @@ ms.assetid: df093aed-f427-41a1-b2be-f62118c3fb0f
 title: System. Contact. PrimaryAddressState
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 863b343aaaae2960edb0d5914e5263d2215d8da4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 69274210ceeb959ed5998f8128671eac31b2c60fdf1e44b045fe672f3ca2ccfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033684"
 ---
 # <a name="systemcontactprimaryaddressstate"></a>System. Contact. PrimaryAddressState
 

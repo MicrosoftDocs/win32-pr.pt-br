@@ -1,45 +1,45 @@
 ---
-description: O aplicativo de exemplo de blog de tinta demonstra como criar uma classe de UserControl gerenciada que tem capacidade de tinta e hospedar esse controle no Microsoft Internet Explorer.
+description: O aplicativo de exemplo Blog do Ink demonstra como criar uma classe UserControl gerenciada que tenha funcionalidade de inking e hospede esse controle no Microsoft Internet Explorer.
 ms.assetid: b6c3ad92-3ab1-4311-b318-13939e1a1a5a
-title: Exemplo da Web do blog de tinta
+title: Amostra da Web do blog do Ink
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c24f132d355a95c9cb8debebe074df3f976e3b5c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8796a05861d278015205b5ba0d3775e2e47af6a57ce1fee426c5c0c5011dacd3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032354"
 ---
-# <a name="ink-blog-web-sample"></a>Exemplo da Web do blog de tinta
+# <a name="ink-blog-web-sample"></a>Amostra da Web do blog do Ink
 
-O aplicativo de exemplo de blog de tinta demonstra como criar uma classe de [UserControl](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1) gerenciada que tem capacidade de tinta e hospedar esse controle no Microsoft Internet Explorer. O exemplo também demonstra uma técnica para enviar dados de tinta em uma rede usando HTTP e para manter a tinta em um servidor.
+O aplicativo de exemplo Blog do Ink demonstra como criar uma classe [UserControl](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1) gerenciada que tenha funcionalidade de inking e hospede esse controle no Microsoft Internet Explorer. O exemplo também demonstra uma técnica para enviar dados de tinta em uma rede usando HTTP e para persistir tinta em um servidor.
 
 > [!Note]  
-> Você deve ter o Microsoft Serviços de Informações da Internet (IIS) com o ASP.NET instalado para executar este exemplo. Verifique se o computador atende aos requisitos necessários para que os aplicativos ASP.NET sejam executados no computador.
+> Você deve ter Serviços de Informações da Internet da Microsoft (IIS) com ASP.NET instalado para executar este exemplo. Certifique-se de que seu computador atenda aos requisitos necessários ASP.NET aplicativos para executar em seu computador.
 
  
 
 > [!Note]  
-> Se você executar este exemplo em um computador sem Tablet PC com o Microsoft Windows XP Tablet PC Edition Development Kit 1,7 instalado, o recurso de reconhecimento de texto para o título da tinta não funcionará. Isso ocorre porque um computador não Tablet PC com o SDK do Tablet PC 1,7 instalado não tem reconhecedores. O restante do aplicativo é executado conforme descrito.
+> Se você executar este exemplo em um computador pc não Tablet com o Microsoft Windows XP Tablet PC Edition Development Kit 1.7 instalado o recurso de reconhecimento de texto para o título de tinta não funcionará. Isso ocorre porque um computador pc não Tablet com o SDK do Tablet PC 1.7 instalado não tem reconhecedores. O restante do aplicativo é desempenho conforme descrito.
 
  
 
 ## <a name="overview"></a>Visão geral
 
-O exemplo de blog de tinta cria um blog habilitado para tinta. InkBlogWeb é um aplicativo ASP.NET. A entrada de tinta é realizada por meio de um controle de usuário que é referenciado de uma página do ASP.NET.
+O exemplo de Blog do Ink cria um Weblog habilitado para tinta. InkBlogWeb é um ASP.NET aplicativo. A entrada de tinta é realizada por meio de um controle de usuário referenciado de uma página ASP.NET dados.
 
-O controle de usuário detecta se os componentes da plataforma Tablet PC estão instalados no computador cliente. Nesse caso, o controle de usuário apresenta o usuário com duas áreas habilitadas para tinta na página da Web: uma para inserir um título para a entrada do blog e outra para o corpo da entrada. Se os componentes da plataforma do Tablet PC não estiverem instalados, o usuário receberá um controle de caixa de texto padrão para o título e corpo da entrada.
+O controle de usuário detecta se os componentes da plataforma tablet PC estão instalados no computador cliente. Nesse caso, o controle de usuário apresenta ao usuário duas áreas habilitadas para tinta na página da Web: uma para inking de um título para a entrada do blog e outra para o corpo da entrada. Se os componentes da Plataforma de Tablet PC não estão instalados, o usuário recebe um controle de caixa de texto padrão para o título e o corpo da entrada.
 
-Quando o usuário termina de criar a entrada, ela clica em um botão, adiciona um blog e a postagem é enviada ao servidor Web para armazenamento. No servidor, o aplicativo salva o texto do título e a data de lançamento, bem como uma referência a um arquivo de Graphics Interchange Format (GIF). O arquivo GIF, também salvo no servidor, contém os dados de tinta do corpo em um arquivo GIF reforçada. Para obter mais informações sobre o formato GIF reforçada, consulte [armazenando tinta em HTML](storing-ink-in-html.md).
+Quando o usuário terminar de criar a entrada, ele clicará em um botão Adicionar Blog e a postagem será enviada ao servidor Web para armazenamento. No servidor, o aplicativo salva o texto do título e a data de postagem, bem como uma referência a um arquivo GRAPHICS INTERCHANGE FORMAT (GIF). O arquivo GIF, também salvo no servidor, contém os dados de tinta do corpo em um arquivo GIF forteizado. Para obter mais informações sobre o formato GIF forteizado, consulte [Armazenamento de tinta em HTML.](storing-ink-in-html.md)
 
-Há dois projetos na solução InkBlog: o projeto **InkBlogControls** e o projeto **InkBlogWeb** .
+Há dois projetos na solução InkBlog: o **projeto InkBlogControls** e o **projeto InkBlogWeb.**
 
-## <a name="inkblogcontrols-project"></a>Projeto InkBlogControls
+## <a name="inkblogcontrols-project"></a>InkBlogControls Project
 
-O projeto **InkBlogControls** é um projeto [UserControl](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1) que contém o código para o controle de usuário que permite a escrita à tinta na página da Web. O código para esse controle, o controle InkArea, está no arquivo InkArea. cs.
+O **projeto InkBlogControls** é um [projeto UserControl](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1) que contém o código para o controle de usuário que permite a tinta na página da Web. O código para esse controle, o controle InkArea, está no arquivo InkArea.cs.
 
-A `InkArea` classe herda da classe [UserControl](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1) . O construtor para o `InkArea` controle chama um método auxiliar, `CreateInkCollectionSurface` .
+A `InkArea` Classe herda da [classe UserControl.](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1) O construtor do controle `InkArea` chama um método auxiliar, `CreateInkCollectionSurface` .
 
 
 ```C++
@@ -66,7 +66,7 @@ public InkArea()
 
 
 
-O `CreateInkCollectionSurface` método determina se os componentes de tinta do Tablet PC estão disponíveis no cliente ao tentar criar uma instância da classe [InkCollector](/previous-versions/ms583683(v=vs.100)) . Se a chamada para o `CreateInkCollectionSurface` método for bem sucedido, o método retornará um objeto de [painel](/dotnet/api/system.windows.forms.panel?view=netcore-3.1) como o controle.
+O método determina se os componentes de inking do Tablet PC estão disponíveis no cliente ao tentar criar uma instância da `CreateInkCollectionSurface` [classe InkCollector.](/previous-versions/ms583683(v=vs.100)) Se a chamada para o `CreateInkCollectionSurface` método for bem-sucedida, o método retornará um [objeto Panel](/dotnet/api/system.windows.forms.panel?view=netcore-3.1) como o controle .
 
 
 ```C++
@@ -89,11 +89,11 @@ protected Control CreateInkCollectionSurface()
 
 
 
-Se o Construtor falhar porque os arquivos da plataforma de escrita à tinta não são encontrados, o `InputArea` controle é instanciado como um controle [TextBox](/dotnet/api/system.windows.forms.textbox?view=netcore-3.1) em vez de um controle [InkCollector](/previous-versions/ms583683(v=vs.100)) . Em seguida, o Construtor dimensiona o controle para o tamanho do controle de usuário pai e o adiciona à coleção de controles do pai.
+Se o construtor falhar porque os arquivos da plataforma de tinta não foram encontrados, o controle será instanado como um controle TextBox em vez de um `InputArea` [controle InkCollector.](/previous-versions/ms583683(v=vs.100)) [](/dotnet/api/system.windows.forms.textbox?view=netcore-3.1) Em seguida, o construtor tamanhou o controle para o tamanho do controle de usuário pai e o adiciona à coleção Controles pai.
 
-A classe de controle InkArea implementa três propriedades públicas interessantes: InkData, TextData e webhabilited.
+A classe de controle InkArea implementa três propriedades públicas interessantes: InkData, TextData e WebEnabled.
 
-A propriedade InkData é somente leitura e fornece acesso aos dados de tinta serializados, se o cliente oferecer suporte à entrada de tinta. Se o cliente não oferecer suporte à escrita à tinta, a propriedade InkData obterá uma cadeia de caracteres vazia. A propriedade InkData chama um método auxiliar, SerializeInkData, para determinar se o cliente dá suporte à escrita à tinta.
+A propriedade InkData é somente leitura e fornece acesso aos dados de tinta serializados, se o cliente dá suporte à tinta. Se o cliente não dá suporte à tinta, a propriedade InkData obtém uma cadeia de caracteres vazia. A propriedade InkData chama um método auxiliar, SerializeInkData, para determinar se o cliente dá suporte à tinta.
 
 
 ```C++
@@ -118,9 +118,9 @@ protected String SerializeInkData()
 
 
 
-No `SerializeInkData` método, a conversão em [InkCollector](/previous-versions/ms583683(v=vs.100)) é necessária ao obter o objeto de [tinta](/previous-versions/ms583670(v=vs.100)) , porque `inputArea` é declarado como um [controle](/dotnet/api/system.windows.forms.control?view=netcore-3.1). Se o objeto de tinta contiver traços, os dados de tinta serão salvos na `inkDataBytes` matriz de bytes como um gif (especificado usando o valor de enumeração [PersistenceFormat](/previous-versions/ms552503(v=vs.100)) ). Em seguida, o método converte a matriz de bytes em uma cadeia de caracteres codificada em Base64 e retorna essa cadeia de caracteres.
+No método `SerializeInkData` , a cast para [InkCollector](/previous-versions/ms583683(v=vs.100)) é necessária ao obter o objeto [Ink,](/previous-versions/ms583670(v=vs.100)) porque `inputArea` é declarado como um [Controle](/dotnet/api/system.windows.forms.control?view=netcore-3.1). Se o objeto Ink contiver traços, os dados de tinta serão salvos na matriz de byte como um GIF (especificado usando o valor de `inkDataBytes` enumeração [PersistenceFormat).](/previous-versions/ms552503(v=vs.100)) Em seguida, o método converte a matriz de byte em uma cadeia de caracteres codificada em Base64 e retorna essa cadeia de caracteres.
 
-Supondo que o cliente possa executar o reconhecimento, a `TextData` propriedade retorna o objeto [RecognitionResult](/previous-versions/ms552537(v=vs.100)) de passar os dados de tinta para um reconhecedor de manuscrito. Se o cliente não tiver reconhecimento de tinta, o conteúdo da caixa de texto será retornado, conforme mostrado no código a seguir.
+Supondo que o cliente possa executar o reconhecimento, a propriedade retorna o objeto RecognitionResult de passar os dados de tinta `TextData` para um reconhecedor de manuscrito. [](/previous-versions/ms552537(v=vs.100)) Se o cliente não estiver ciente de tinta, o conteúdo da caixa de texto será retornado, conforme mostrado no código a seguir.
 
 
 ```C++
@@ -142,7 +142,7 @@ public string TextData
 
 
 
-A `TextData` propriedade chama um método auxiliar, `RecognizeInkData` , mostrado no código a seguir, para executar o reconhecimento. Quando os mecanismos de reconhecimento estão presentes no sistema, o `RecognizeInkData` método retorna uma cadeia de caracteres contendo a propriedade [TopString](/previous-versions/ms572009(v=vs.100)) do objeto [RecognitionResult](/previous-versions/ms552537(v=vs.100)) . Caso contrário, ele retorna uma cadeia de caracteres vazia.
+A `TextData` propriedade chama um método auxiliar, , mostrado no código a `RecognizeInkData` seguir, para realizar o reconhecimento. Quando os mecanismos de reconhecimento estão presentes no sistema, o método retorna uma cadeia de caracteres que contém `RecognizeInkData` a [propriedade TopString](/previous-versions/ms572009(v=vs.100)) do objeto [RecognitionResult.](/previous-versions/ms552537(v=vs.100)) Caso contrário, ele retorna uma cadeia de caracteres vazia.
 
 
 ```C++
@@ -181,31 +181,31 @@ protected String RecognizeInkData()
 
 
 
-A `InkEnabled` propriedade é um valor booliano somente leitura que indica se há suporte para a escrita à tinta no computador cliente.
+A propriedade é um valor booliana somente leitura que indica se há suporte para a `InkEnabled` inking no computador cliente.
 
-Outro membro público importante da `InkArea` classe Control é o `DisposeResources` método. Esse método chama internamente o `Dispose` método para garantir que todos os recursos utilizados pelo controle de usuário sejam limpos. Qualquer aplicativo que usa o `InkArea` controle deve chamar o `DisposeResources` método quando ele for concluído usando o controle.
+Outro membro público importante da `InkArea` classe de controle é o método `DisposeResources` . Esse método chama internamente o método para garantir que todos os recursos aproveitados pelo `Dispose` controle de usuário sejam limpos. Qualquer aplicativo que usa o `InkArea` controle deve chamar o método quando terminar de usar o controle `DisposeResources` .
 
-## <a name="inkblogweb-project"></a>Projeto InkBlogWeb
+## <a name="inkblogweb-project"></a>InkBlogWeb Project
 
-O projeto InkBlogWeb é um projeto de implantação de instalação da Web que faz referência ao `InkArea` controle para fornecer a funcionalidade de Blogs. Para obter mais informações sobre projetos de implantação da instalação da Web, consulte [implantação de um projeto de instalação da Web](https://msdn.microsoft.com/library/k8kzx145(v=VS.71).aspx).
+O projeto InkBlogWeb é um projeto de implantação da Instalação da Web que faz referência ao controle para fornecer a `InkArea` funcionalidade de blog. Para obter mais informações sobre projetos de implantação da Instalação da Web, consulte [Implantação de uma instalação da Web Project](https://msdn.microsoft.com/library/k8kzx145(v=VS.71).aspx).
 
-Há dois arquivos. aspx que implementam o exemplo de blog: default. aspx e addblog. aspx. Default. aspx é a página padrão para o aplicativo InkBlogWeb. O arquivo code-behind para esta página é default. aspx. cs. Esta página fornece um link para a página que contém o novo formulário de entrada de blog e exibe as entradas de blog existentes. Esse processo é descrito posteriormente, após o exame a seguir da página novo formulário de entrada de blog, addblog. aspx.
+Há dois arquivos .aspx que implementam o exemplo de blogging: Default.aspx e AddBlog.aspx. Default.aspx é a página padrão para o aplicativo InkBlogWeb. O arquivo code-behind desta página é Default.aspx.cs. Esta página fornece um link para a página que contém o novo formulário de entrada do blog e exibe todas as entradas de blog existentes. Esse processo é descrito posteriormente, após o exame a seguir da nova página de formulário de entrada do blog, AddBlog.aspx.
 
-Addblog. aspx e seu arquivo code-behind, addblog. aspx. cs, contêm a lógica e o código da interface do usuário para criar novas entradas de blog. AddBlox. aspx faz referência a duas instâncias da classe de controle InkArea criada no projeto InkBlogControls usando o elemento HTML OBJECT, como mostrado no exemplo a seguir. Uma instância tem um `id` atributo de inkBlogTitle e a outra tem um atributo de ID de inkBlogBody.
+AddBlog.aspx e seu arquivo code-behind, AddBlog.aspx.cs, contêm a lógica e o código de interface do usuário para criar novas entradas de blog. AddBlox.aspx faz referência a duas instâncias da classe de controle InkArea criadas no projeto InkBlogControls usando o elemento HTML OBJECT, conforme mostrado no exemplo a seguir. Uma instância tem `id` um atributo de inkBlogTitle e a outra tem um atributo de ID de inkBlogBody.
 
 `<OBJECT id="inkBlogTitle" classid="InkBlogControls.dll#InkBlog.InkArea" width="400" height="48" VIEWASTEXT>``</OBJECT>``<br/>``<OBJECT id="inkBlogBody" classid="InkBlogControls.dll#InkBlog.InkArea" width="400" height="296" VIEWASTEXT>``</OBJECT>`
 
-O assembly InkBlogControls.dll deve estar presente no mesmo diretório que a página. aspx que faz referência a ele. O projeto de implantação da instalação da Web garante que esse é o caso, conforme evidenciado pela presença do item "saída primária do InkBlogControls" no projeto de implantação.
+O InkBlogControls.dll assembly deve estar presente no mesmo diretório que a página .aspx que está fazendo referência a ele. O projeto de implantação de Instalação da Web garante que esse seja o caso, conforme evidência da presença do item "Saída primária do InkBlogControls" no Project.
 
-O controle título tem apenas 48 pixels de altura para facilitar a entrada de uma única linha de tinta para o título. O controle corpo tem 296 pixels de altura para liberar espaço para entradas de blog maiores de várias linhas ou talvez desenhos.
+O controle de título tem apenas 48 pixels de altura para facilitar a entrada de uma única linha de tinta para o título. O controle de corpo tem 296 pixels de altura para dar espaço para entradas de blog maiores de várias linhas ou talvez desenhos.
 
-Os controles InkArea são conectados a uma função de script do lado do cliente, addblog, por meio de um manipulador de eventos onclick do elemento de botão HTML padrão.
+Os controles InkArea estão conectados a uma função de script do lado do cliente, AddBlog, por meio do manipulador de eventos onclick de um elemento HTML BUTTON padrão.
 
 `<button id="BUTTON1" type="button" onclick="AddBlog()">Add Blog</button>`
 
-Há também um formulário HTML na página que contém três elementos de entrada ocultos: BlogTitleText, BlogBodyText e BlogBodyInkData. Esse formulário é usado para postar os dados de entrada do blog de volta para o servidor. Addblog. aspx é o manipulador de postback definido para o formulário.
+Também há um formulário HTML na página que contém três elementos INPUT ocultos: BlogTitleText, BlogBodyText e BlogBodyInkData. Esse formulário é usado para postar os dados de entrada do blog de volta no servidor. AddBlog.aspx é o manipulador de post-back definido para o formulário.
 
-A função addblog-escrita no Microsoft JScript <entity type="reg"/> – extrai os dados do blog dos controles InkArea e posta os resultados no servidor.
+A função AddBlog escrita no Microsoft JScript extrai os dados do blog dos controles InkArea e posta os <entity type="reg"/> resultados no servidor.
 
 
 ```C++
@@ -224,7 +224,7 @@ function AddBlog()
 
 
 
-Quando os dados chegam ao servidor, o código em addblog. aspx. cs verifica o manipulador de \_ eventos de carregamento de página para ver se a Propriedade Form do objeto HttpRequest contém quaisquer dados. Nesse caso, ele cria um nome de arquivo com base na hora atual do sistema, coloca os dados do formulário em três variáveis de cadeia de caracteres e grava os dados em um arquivo HTML e um arquivo GIF que contém os dados de tinta, se presente, conforme mostrado no código a seguir.
+Quando os dados chegam ao servidor, o código em AddBlog.aspx.cs verifica o manipulador de eventos Page Load para ver se a propriedade Formulário do objeto \_ HttpRequest contém dados. Nesse caso, ele cria um nome de arquivo com base na hora atual do sistema, coloca os dados do formulário em três variáveis de cadeia de caracteres e grava os dados em um arquivo HTML e um arquivo GIF que contém os dados de tinta, se presentes, conforme mostrado no código a seguir.
 
 
 ```C++
@@ -253,38 +253,38 @@ Para obter mais detalhes sobre os métodos auxiliares, consulte o código-fonte 
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
-O SDK do Tablet PC 1,7 instala o exemplo da Web do blog de tinta por padrão. Para executar o exemplo, no Internet Explorer, navegue até https://localhost/TabletPCSDK\_WebSamples/InkBlogWeb/Default.aspx . Se você estiver executando o Windows Server 2003, substitua o nome do computador por "localhost".
+O SDK do Tablet PC 1.7 instala o exemplo da Web do Blog do Ink por padrão. Para executar o exemplo, em Internet Explorer, navegue até https://localhost/TabletPCSDK\_WebSamples/InkBlogWeb/Default.aspx . Se você estiver executando Windows Server 2003, substitua o nome do computador por "localhost".
 
 > [!Note]  
-> Os exemplos da Web compilados não são instalados pela opção de instalação padrão para o SDK. Você deve concluir uma instalação personalizada e selecionar a subopção "amostras da Web pré-compiladas" para instalá-las.
+> Os exemplos da Web compilados não são instalados pela opção de instalação padrão para o SDK. Você deve concluir uma instalação personalizada e selecionar a sub-opção "Exemplos da Web pré-compilados" para instalá-los.
 
  
 
-Você também pode executar o exemplo abrindo e compilando o projeto no Microsoft Visual Studio <entity type="reg"/> .net e, em seguida, implantando-o em um computador separado que executa o IIS.
+Você também pode executar o exemplo abrindo e criando o projeto no Microsoft Visual Studio .NET e, em seguida, implantando-o em um computador separado executando <entity type="reg"/> o IIS.
 
 ## <a name="troubleshooting-the-sample"></a>Solucionando problemas do exemplo
 
-Três áreas que podem causar dificuldades ao executar ou hospedar o exemplo são permissões e reconhecimento.
+Três áreas que podem causar dificuldade ao executar ou hospedar o exemplo são permissões e reconhecimento.
 
 ### <a name="permissions"></a>Permissões
 
-O exemplo requer permissões de gravação na pasta raiz virtual para a conta que está tentando criar uma nova entrada de blog. Por padrão, a versão compilada do exemplo fornecido no SDK do Tablet PC 1,7 tem as permissões corretas definidas para atender a esse requisito.
+O exemplo requer permissões de gravação na pasta raiz virtual para a conta que está tentando criar uma nova entrada de blog. Por padrão, a versão compilada do exemplo fornecida no SDK do Tablet PC 1.7 tem as permissões corretas definidas para atender a esse requisito.
 
-Se você criar e implantar o exemplo usando o projeto de implantação de instalação da Web fornecido, deverá conceder ao grupo% MACHINENAME% \\ usuários o acesso de gravação para a pasta do sistema de arquivos apontada pela raiz virtual InkBlogWeb (por exemplo, C: \\ Inetpub \\ wwwroot \\ InkBlogWeb). O grupo usuários inclui a conta anônima usada pelo IIS, permitindo assim que o aplicativo ASP.NET grave as novas entradas de blog no sistema de arquivos. Uma alternativa é remover o acesso anônimo à raiz virtual e forçar a autenticação.
+Se você criar e implantar o exemplo usando o projeto de implantação de Instalação da Web fornecido, deverá dar ao grupo %MACHINENAME% Usuários acesso de gravação à pasta do sistema de arquivos apontada pela raiz \\ virtual InkBlogWeb (por exemplo, C: \\ InetPub \\ WWWRoot \\ InkBlogWeb). O grupo Usuários inclui a conta Anônima usada pelo IIS, permitindo que o aplicativo ASP.NET escreva as novas entradas de blog no sistema de arquivos. Uma alternativa é remover o acesso anônimo à raiz virtual e forçar a autenticação.
 
 ### <a name="recognition"></a>Reconhecimento
 
-Os reconhecedores de manuscrito devem ser instalados para reconhecer a tinta no título do blog. Se você acessar o aplicativo InkBlog de um computador com um sistema operacional diferente do Windows XP Tablet PC Edition, mas com o SDK 1,7 do Tablet PC instalado, poderá escrever tinta nos controles InkArea, mas os mecanismos de reconhecimento não estarão presentes e nenhum título será exibido para suas entradas de blog. No entanto, o conteúdo de tinta no corpo ainda aparece.
+Os reconhecedores de manuscrito devem ser instalados para reconhecer a tinta no título do blog. Se você acessar o aplicativo InkBlog de um computador com um sistema operacional diferente do Windows XP Tablet PC Edition, mas com o SDK do Tablet PC 1.7 instalado, você poderá gravar em tinta nos controles InkArea, mas os mecanismos de reconhecimento não estarão presentes e nenhum título será exibido para suas entradas de blog. No entanto, o conteúdo de tinta no corpo ainda é exibido.
 
-### <a name="machine-configuration"></a>Configuração da máquina
+### <a name="machine-configuration"></a>Configuração do computador
 
-Se você instalou o ASP.NET e o .NET Framework em um computador e, em seguida, desinstala e reinstala o IIS, os mapas de script serão interrompidos e ASP.NET não funcionará. Se isso acontecer, você poderá reparar os mapas de script ASP.NET com a ferramenta de registro do IIS ASP.NET (ASPNET \_regiis.exe-i).
+Se você tiver instalado o ASP.NET e o .NET Framework em um computador e, em seguida, desinstalar e reinstalar o IIS, os mapas de script serão ASP.NET não funcionarão. Se isso acontecer, você poderá reparar os mapas ASP.NET script com ASP.NET ferramenta de Registro do IIS do ASP.NET (Aspnet \_regiis.exe -i).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Controles InkCollector](/previous-versions/ms583683(v=vs.100))
+[Inkcollector](/previous-versions/ms583683(v=vs.100))
 </dt> <dt>
 
 [Tinta na Web](ink-on-the-web.md)
@@ -293,7 +293,7 @@ Se você instalou o ASP.NET e o .NET Framework em um computador e, em seguida, d
 [Formatos de dados de tinta](ink-data-formats.md)
 </dt> <dt>
 
-[Classe System. Windows. Forms. UserControl](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1)
+[Sistema. Windows. Classe Forms.UserControl](/dotnet/api/system.windows.forms.usercontrol?view=netcore-3.1)
 </dt> </dl>
 
  

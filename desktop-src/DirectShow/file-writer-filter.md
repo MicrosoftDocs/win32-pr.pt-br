@@ -1,41 +1,41 @@
 ---
-description: Filtro de gravador de arquivo
+description: Filtro do File Writer
 ms.assetid: 2bfbea8a-679f-4656-9ff3-fdf34aa0eb26
-title: Filtro de gravador de arquivo
+title: Filtro do File Writer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e991536d505ee1bdfcaaaca5ce8660c4480decf6
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: a9f21009d8135cb42ec93c4f5727398dcdf3094ed4e5da666c325c959dbffc16
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119651366"
 ---
-# <a name="file-writer-filter"></a>Filtro de gravador de arquivo
+# <a name="file-writer-filter"></a>Filtro do File Writer
 
-O filtro de gravador de arquivo pode ser usado para gravar arquivos no disco, independentemente do formato. O filtro simplesmente grava em disco o que receber em seu pino de entrada, portanto, ele deve ser conectado ao upstream para um multiplexador que pode formatar o arquivo corretamente. Você pode criar um novo arquivo de saída com o gravador de arquivo ou especificar um arquivo existente; Se o arquivo já existir, ele será completamente substituído pelos novos dados.
+O filtro File Writer pode ser usado para gravar arquivos no disco, independentemente do formato. O filtro simplesmente grava no disco o que receber em seu pin de entrada, portanto, ele deve ser conectado upstream a um multiplexador que possa formatar o arquivo corretamente. Você pode criar um novo arquivo de saída com o File Writer ou especificar um arquivo existente; se o arquivo já existir, ele será completamente substituído com os novos dados.
 
-O filtro de gravador de arquivo usa os carimbos de data/hora do fluxo de entrada como deslocamentos de arquivo e fornece acesso aleatório ao arquivo. Ele dá suporte a **IStream** para permitir a leitura e gravação do cabeçalho do arquivo depois que o grafo é interrompido. Para melhorar o desempenho, ele também dá suporte a gravações sobrepostas sem buffer e manipula a negociação de buffer correspondente.
+O filtro de autor de arquivo usa os carimbos de data/hora do fluxo de entrada como deslocamentos de arquivo e fornece acesso aleatório ao arquivo. Ele dá **suporte a IStream** para permitir a leitura e a escrita do header do arquivo depois que o grafo é interrompido. Para melhorar o desempenho, ele também dá suporte a gravações sobrecodadas sem buffer e lida com a negociação de buffer correspondente.
 
 > [!Note]  
-> Para gravar arquivos ASF, use o filtro de [gravador ASF do WM](wm-asf-writer-filter.md) .
+> Para gravar arquivos ASF, use o filtro [Wm ASF Writer.](wm-asf-writer-filter.md)
 
  
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Filtrar interfaces                        | [**IAMFilterMiscFlags**](/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags), [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), [**IFileSinkFilter**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter), [**IFileSinkFilter2**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter2), **IPersistStream** |
-| Tipos de mídia de pino de entrada                    | \_Fluxo de MediaType, MEDIASUBTYPE \_ nulo                                                                                                                                                              |
-| Interfaces de pino de entrada                     | [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol), **IStream**                                                                                |
-| Tipos de mídia do pino de saída                   | Não aplicável                                                                                                                                                                                     |
-| Interfaces de pino de saída                    | Não aplicável                                                                                                                                                                                     |
-| CLSID do filtro                             | FileWriter do CLSID \_                                                                                                                                                                                  |
-| CLSID de página de propriedades                      | Nenhuma página de propriedades                                                                                                                                                                                   |
+| Interfaces de filtro                        | [**IAMFilterMiscFlags,**](/windows/desktop/api/Strmif/nn-strmif-iamfiltermiscflags) [**IBaseFilter,**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter) [**IFileSinkFilter,**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter) [**IFileSinkFilter2,**](/windows/desktop/api/Strmif/nn-strmif-ifilesinkfilter2) **IPersistStream** |
+| Tipos de mídia de pino de entrada                    | MEDIATYPE \_ Stream, MEDIASUBTYPE \_ NULL                                                                                                                                                              |
+| Interfaces de pino de entrada                     | [**IMemInputPin,**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin) [**IPin,**](/windows/desktop/api/Strmif/nn-strmif-ipin) [**IQualityControl,**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) **IStream**                                                                                |
+| Tipos de mídia de pino de saída                   | Não se aplica                                                                                                                                                                                     |
+| Interfaces de pino de saída                    | Não se aplica                                                                                                                                                                                     |
+| Filtrar CLSID                             | CLSID \_ FileWriter                                                                                                                                                                                  |
+| CLSID da página de propriedades                      | Nenhuma página de propriedades                                                                                                                                                                                   |
 | Executável                               | qcap.dll                                                                                                                                                                                           |
-| [Núcleo](merit.md)                       | MÉRITO \_ \_ não \_ use                                                                                                                                                                                |
-| [Categoria do filtro](filter-categories.md) | \_LEGACYAMFILTERCATEGORY CLSID                                                                                                                                                                      |
+| [Mérito](merit.md)                       | NÃO USE O NÃO \_ \_ USO \_ DE LIMITED                                                                                                                                                                                |
+| [Categoria de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                                                                                                                                                      |
 
 
 
@@ -45,7 +45,7 @@ O filtro de gravador de arquivo usa os carimbos de data/hora do fluxo de entrada
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

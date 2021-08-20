@@ -4,12 +4,12 @@ ms.assetid: 0bace0c5-9171-efd8-9a38-2c2b3452f73f
 title: 'Como: Usar retornos de chamadas de voz de origem'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c10005ed838a22ea0dfce59312d6f293c213c39
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fa19de67c8e02bfa4c283fac8677a7eae2325b074eef5d5f5c7db644b3f113a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119583766"
 ---
 # <a name="how-to-use-source-voice-callbacks"></a>Como: Usar retornos de chamadas de voz de origem
 

@@ -1,11 +1,11 @@
 ---
-title: atributo ms-WMI-int8ValidValues
-description: Os valores válidos para um objeto de parâmetro de inteiro do WMI 64-bit.
+title: Atributo ms-WMI-int8ValidValues
+description: Os valores válidos para um objeto de parâmetro inteiro de 64 bits WMI.
 ms.assetid: 89afa7ab-2fbc-4846-ae24-12a4f372f469
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-WMI-int8ValidValues
-- Esquema de AD do atributo msWMI-Int8ValidValues
+- Atributo AD MS-WMI-int8ValidValues
+- Atributo MsWMI-Int8ValidValues Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f90a58aa78636712ee6fa295787917569dfac35
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 758db289046c9a749abc015c279e0591dae461e0d442ebc35ef5af0162dafb9e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119507616"
 ---
-# <a name="ms-wmi-int8validvalues-attribute"></a>atributo ms-WMI-int8ValidValues
+# <a name="ms-wmi-int8validvalues-attribute"></a>Atributo ms-WMI-int8ValidValues
 
-Os valores válidos para um objeto de parâmetro de inteiro do WMI 64-bit.
+Os valores válidos para um objeto de parâmetro inteiro de 64 bits WMI.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-WMI-int8ValidValues               |
-| LDAP-Display-Name | msWMI-Int8ValidValues                |
+| CN                | ms-WMI-int8ValidValues               |
+| Ldap-Display-Name | msWMI-Int8ValidValues                |
 | Tamanho              | \-                                   |
-| Privilégio de atualização  | Administrador de Política de Grupo           |
+| Privilégio de atualização  | Política de Grupo administrador           |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1635              |
-| System-ID-GUID    | 103519a9-c002-441b-981a-b0b3e012c803 |
+| System-Id-Guid    | 103519a9-c002-441b-981a-b0b3e012c803 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -57,10 +57,10 @@ Os valores válidos para um objeto de parâmetro de inteiro do WMI 64-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -78,10 +78,10 @@ Os valores válidos para um objeto de parâmetro de inteiro do WMI 64-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -99,10 +99,10 @@ Os valores válidos para um objeto de parâmetro de inteiro do WMI 64-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -120,10 +120,10 @@ Os valores válidos para um objeto de parâmetro de inteiro do WMI 64-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -141,10 +141,10 @@ Os valores válidos para um objeto de parâmetro de inteiro do WMI 64-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Falso        |
+| Tem valor único       | Falso        |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

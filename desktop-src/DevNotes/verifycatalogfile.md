@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Setupapi.dll
-ms.openlocfilehash: 52083b23041f7f21aa51e326bc00d4cabc76eca7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eb4012a04b4da9e353a5d771f9b9e61d4bfba8b45ed6a7d5c65a81c197ff9be8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075740"
 ---
 # <a name="verifycatalogfile-function"></a>Função VerifyCatalogFile
 
-\[Essa função não tem suporte e não deve ser usada.\]
+\[Não há suporte para essa função e não deve ser usada.\]
 
 Verifica um único arquivo de catálogo.
 
@@ -48,17 +48,17 @@ O caminho totalmente qualificado do arquivo de catálogo a ser verificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, ela retornará **\_ êxito de erro**; caso contrário, retornará o erro de [**WinVerifyTrust**](/windows/win32/api/wintrust/nf-wintrust-winverifytrust).
+Se a função for bem-sucedida, ela retornará **ERROR \_ SUCCESS**; caso contrário, retornará o erro de [**WinVerifyTrust.**](/windows/win32/api/wintrust/nf-wintrust-winverifytrust)
 
-Se o catálogo for um catálogo assinado por Authenticode, essa função retornará um **erro de \_ \_ \_ Publicador de Authenticode confiável** se tiver sucesso; caso contrário, ele retornará um **erro de confiança de \_ Authenticode \_ \_ não \_ estabelecida**.
+Se o catálogo for um catálogo assinado por Authenticode, essa função retornará **ERROR \_ AUTHENTICODE \_ TRUSTED \_ PUBLISHER** se for bem-sucedido; caso contrário, retornará **ERROR \_ AUTHENTICODE \_ TRUST NOT \_ \_ ESTABLISHED**.
 
-Se a função não puder determinar se o Publicador é confiável, ele também poderá retornar **um \_ \_ erro de erro não identificado**.
+Se a função não puder determinar se o publicador é confiável, ela também poderá retornar **ERRO \_ NÃO IDENTIFICADO \_ ERRO.**
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
+Essa função não tem nenhuma biblioteca de importação ou arquivo de header associado; você deve chamá-lo usando [**as funções LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) [**e GetProcAddress.**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)
 
 ## <a name="requirements"></a>Requisitos
 

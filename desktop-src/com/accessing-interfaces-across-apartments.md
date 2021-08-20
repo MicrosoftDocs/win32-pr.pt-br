@@ -4,12 +4,12 @@ description: Acessando interfaces em Apartments
 ms.assetid: 4e0467b9-bbf1-410c-8aab-40450a7f963a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 626707daf721aee3b440bb79ba2d1e084d154a98
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e89e82fa29e768328e6c110349627d32e92ab010ce61fdf64141ad3ca7fe9a54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048914"
 ---
 # <a name="accessing-interfaces-across-apartments"></a>Acessando interfaces em Apartments
 
@@ -26,7 +26,7 @@ Um objeto ágil não reconhece a infraestrutura COM subjacente na qual ele é ex
 > [!Note]  
 > A tabela de interface global não é portátil entre os limites do processo ou da máquina, portanto, não pode ser usada no lugar do mecanismo de passagem de parâmetro normal.
 
- 
+ 
 
 Para obter informações sobre como criar e usar uma tabela de interface global, consulte os seguintes tópicos:
 
@@ -55,9 +55,9 @@ Para obter informações sobre como criar e usar uma tabela de interface global,
 [Apartments de thread único](single-threaded-apartments.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

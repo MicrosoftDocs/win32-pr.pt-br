@@ -1,44 +1,44 @@
 ---
-description: Este programa demonstra como copiar e colar a tinta em outro aplicativo. Ele também permite que o usuário Copie uma seleção de traços e cole o resultado no objeto de tinta existente.
+description: Este programa demonstra como copiar e colar tinta em outro aplicativo. Ele também permite que o usuário copie uma seleção de traços e copie o resultado no objeto de tinta existente.
 ms.assetid: a0c42f1c-543d-44f8-83d9-fe810de410ff
 title: Exemplo de área de transferência de tinta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 95c5da0bc0ba9a7e3a1b4e1a5c52784f10fb2023
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 73aa8acdf785321dc01706d4a4de50e0a2673a31250edbfa4316a27aecd0ce3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501628"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032324"
 ---
 # <a name="ink-clipboard-sample"></a>Exemplo de área de transferência de tinta
 
-Este programa demonstra como copiar e colar a tinta em outro aplicativo. Ele também permite que o usuário Copie uma seleção de traços e cole o resultado no objeto de tinta existente.
+Este programa demonstra como copiar e colar tinta em outro aplicativo. Ele também permite que o usuário copie uma seleção de traços e copie o resultado no objeto de tinta existente.
 
 Os seguintes modos de área de transferência estão disponíveis:
 
--   Formato serializado da tinta (ISF)
+-   Formato serializado de tinta (ISF)
 -   Metarquivo
 -   EMF (Metarquivo Avançado)
 -   Bitmap
--   Tinta do texto
--   Tinta do esboço
+-   Tinta de texto
+-   Esboço de tinta
 
-A tinta do texto e a tinta do esboço são dois tipos de controles de tinta usados como texto ou desenho, respectivamente. É possível colar ISF, tinta de texto e esboço de tinta em tinta existente.
+Tinta de texto e tinta de esboço são dois tipos de controles de tinta usados como texto ou desenho, respectivamente. É possível colar ISF, tinta de texto e esboço de tinta em tinta existente.
 
-Além da área de transferência, este exemplo também ilustra como selecionar traços com a ferramenta de laço. O usuário pode mover os traços selecionados e modificar seus atributos de desenho. Essa funcionalidade é um subconjunto da funcionalidade de seleção já fornecida pelo controle de sobreposição de tinta; Ele é implementado aqui para fins ilustrativos.
+Além da área de transferência, este exemplo também ilustra como selecionar traços com a ferramenta de laço. O usuário pode mover traços selecionados e modificar seus atributos de desenho. Essa funcionalidade é um subconjunto da funcionalidade de seleção já fornecida pelo controle de sobreposição de tinta; ele é implementado aqui para fins ilustrativos.
 
-Os recursos a seguir são usados neste exemplo:
+Os seguintes recursos são usados neste exemplo:
 
--   O objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) .
+-   O [objeto InkCollector.](/previous-versions/ms583683(v=vs.100))
 -   Suporte à área de transferência de tinta.
--   O uso do laço com o método [Microsoft. Ink. Ink. HitTest](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) .
+-   O uso do laço com o [método Microsoft.Ink.Ink.HitTest.](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90))
 
-Este exemplo demonstra o processamento de tinta, a cópia dessa tinta e a colagem da tinta em outro aplicativo, como o Microsoft Paint.
+Este exemplo demonstra como renderizar tinta, copiar essa tinta e colar a tinta em outro aplicativo, como Microsoft Paint.
 
-## <a name="collecting-ink-and-setting-up-the-form"></a>Coletando tinta e Configurando o formulário
+## <a name="collecting-ink-and-setting-up-the-form"></a>Coletando tinta e configurando o formulário
 
-Primeiro, faça referência às interfaces de automação do Tablet PC, que são instaladas com o <entity type="reg"/> SDK (Software Development Kit) do Microsoft Windows XP Tablet PC Edition.
+Primeiro, consulte as interfaces de Automação de Tablet PC, que são instaladas com o SDK (Software Development Kit) do Microsoft Windows <entity type="reg"/> XP Tablet Edition.
 
 
 ```C++
@@ -47,7 +47,7 @@ using Microsoft.Ink;
 
 
 
-Em seguida, o formulário declara algumas constantes e os campos que são observados posteriormente neste exemplo.
+Em seguida, o formulário declara algumas constantes e campos que serão notados posteriormente neste exemplo.
 
 
 ```C++
@@ -95,7 +95,7 @@ private Pen dotPen = null;
 
 
 
-Por fim, no manipulador de eventos [Load](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) do formulário, o formulário é inicializado, um objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) para o formulário é criado e o coletor de tinta está habilitado.
+Por fim, no [](/dotnet/api/system.windows.forms.form.load?view=netcore-3.1) manipulador de eventos Load do formulário, o formulário é inicializado, um objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) para o formulário é criado e o coletor de tinta está habilitado.
 
 
 ```C++
@@ -112,15 +112,15 @@ myInkCollector.Enabled = true;
 
 Os manipuladores de eventos do item de menu atualizam principalmente o estado do formulário.
 
-O comando limpar remove o retângulo de seleção e exclui os traços do objeto de [tinta](/previous-versions/ms583670(v=vs.100)) do coletor de tinta.
+O comando Clear remove o retângulo de seleção e exclui os traços do objeto Ink do coletor [de](/previous-versions/ms583670(v=vs.100)) tinta.
 
-O comando exit desabilita o coletor de tinta antes de sair do aplicativo.
+O comando Exit desabilita o coletor de tinta antes de sair do aplicativo.
 
-O menu Editar habilita os comandos Recortar e copiar com base no estado de seleção do formulário e habilita o comando colar com base no conteúdo da área de transferência, determinado usando o método [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) do objeto [Ink](/previous-versions/ms583670(v=vs.100)) .
+O menu Editar habilita os comandos Recortar e Copiar com base no estado de seleção do formulário e habilita o comando Colar com base no conteúdo da área de transferência, determinado pelo uso do método [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) do objeto [Ink.](/previous-versions/ms583670(v=vs.100))
 
-Os comandos Recortar e copiar usam um método auxiliar para copiar tinta para a área de transferência. O comando Recortar usa um método auxiliar para excluir os traços selecionados.
+Os comandos Recortar e Copiar usam um método auxiliar para copiar tinta para a área de transferência. O comando Cut usa um método auxiliar para excluir os traços selecionados.
 
-O comando Paste primeiro verifica o método [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) do objeto [Ink](/previous-versions/ms583670(v=vs.100)) para ver se o objeto na área de transferência pode ser colado. Em seguida, o comando Paste computa o canto superior esquerdo para a região de colagem, converte as coordenadas de pixels em espaço de tinta e cola os traços da área de transferência para o coletor de tinta. Por fim, a caixa de seleção é atualizada.
+O comando Colar primeiro verifica o método [CanPaste](/previous-versions/dotnet/netframework-3.5/ms571314(v=vs.90)) do objeto [Ink](/previous-versions/ms583670(v=vs.100)) para ver se o objeto na área de transferência pode ser colar. Em seguida, o comando Colar calcula o canto superior esquerdo da região de colar, converte as coordenadas de pixels em espaço de tinta e cole os traços da área de transferência para o coletor de tinta. Por fim, a caixa de seleção é atualizada.
 
 
 ```C++
@@ -151,13 +151,13 @@ if (myInkCollector.Ink.CanPaste())
 
 
 
-Os comandos SELECT e Ink atualizam o modo do aplicativo e os atributos de desenho padrão, desmarcam a seleção atual, atualizam o estado do menu e atualizam o formulário. Outros manipuladores dependem do estado do aplicativo para executar a função correta, a laço ou o layout da tinta. Além disso, o comando SELECT adiciona os manipuladores de eventos [NewPackets](/previous-versions/ms567621(v=vs.100)) e [Stroke](/previous-versions/ms567622(v=vs.100)) ao coletor de tinta e o comando Ink remove esses manipuladores de eventos do coletor de tinta.
+Os comandos Selecionar e Tinta atualizam o modo de aplicativo e os atributos de desenho padrão, limpam a seleção atual, atualizem o estado do menu e atualizem o formulário. Outros manipuladores dependem do estado do aplicativo para executar a função correta, sejassoando ou colocando tinta. Além disso, o comando Select adiciona os manipuladores de eventos [NewPackets](/previous-versions/ms567621(v=vs.100)) e [Stroke](/previous-versions/ms567622(v=vs.100)) ao coletor de tinta e o comando Ink remove esses manipuladores de eventos do coletor de tinta.
 
-Os formatos disponíveis na área de transferência quando os traços são copiados estão listados no menu Formatar e o usuário seleciona o formato para copiar a tinta dessa lista. Os tipos de formatos disponíveis incluem ISF (Ink serializado Format), Metafile, metarquivo avançado e bitmap. Os formatos de tinta de esboço e de tinta de texto são mutuamente exclusivos e contam com a tinta que está sendo copiada para a área de transferência como um objeto OLE.
+Os formatos disponíveis na Área de Transferência quando os traços são copiados são listados no menu Formatar e o usuário seleciona o formato para copiar a tinta dessa lista. Os tipos de formatos disponíveis incluem ISF (formato ISF), metarquivo, metarquivo aprimorado e bitmap. Os formatos de tinta de esboço e tinta de texto são mutuamente exclusivos e dependem da tinta sendo copiada para a área de transferência como um objeto OLE.
 
-O menu estilo permite que o usuário altere as propriedades de cor e largura da caneta e de quaisquer traços selecionados.
+O menu Estilo permite que o usuário altere as propriedades de cor e largura da caneta e quaisquer traços selecionados.
 
-Por exemplo, o comando vermelho define a propriedade [Color](/previous-versions/ms582103(v=vs.100)) da propriedade [DefaultDrawingAttributes](/previous-versions/ms571711(v=vs.100)) do coletor de tinta para a cor vermelha. Como a propriedade [DrawingAttributes](/previous-versions/ms581965(v=vs.100)) do objeto [cursor](/previous-versions/ms552104(v=vs.100)) não foi definida, qualquer nova tinta desenhada para o coletor de tinta é herdada para a cor de desenho padrão. Além disso, se qualquer traço estiver selecionado no momento, a propriedade de cor dos atributos de desenho de cada traço também será atualizada.
+Por exemplo, o comando Vermelho define a propriedade [Color](/previous-versions/ms582103(v=vs.100)) da propriedade [DefaultDrawingAttributes](/previous-versions/ms571711(v=vs.100)) do coletor de tinta para a cor vermelha. Como a [propriedade DrawingAttributes](/previous-versions/ms581965(v=vs.100)) do objeto [Cursor](/previous-versions/ms552104(v=vs.100)) não foi definida, qualquer nova tinta desenhada para o coletor de tinta herda para a cor de desenho padrão. Além disso, se algum traço estiver selecionado no momento, a propriedade Color de atributos de desenho de cada traço também será atualizada.
 
 
 ```C++
@@ -183,21 +183,21 @@ private void SetColor(Color newColor)
 
 ## <a name="handling-mouse-events"></a>Manipulando eventos do mouse
 
-O manipulador de eventos [MouseMove](/previous-versions/ms567617(v=vs.100)) verifica o modo do aplicativo. Se o modo for MoveInk e um botão do mouse estiver inativo, o manipulador moverá os traços usando o método move da coleção [Strokes](/previous-versions/ms552701(v=vs.100)) e atualizará a caixa de seleção. Caso contrário, o manipulador verifica para determinar se o retângulo de seleção contém o cursor, habilita a coleta de tinta de forma adequada e também define o cursor de acordo.
+O [manipulador de eventos MouseMove](/previous-versions/ms567617(v=vs.100)) verifica o modo do aplicativo. Se o modo for MoveInk e um botão do mouse estiver para baixo, o manipulador moverá os traços usando o método Move da coleção [Strokes](/previous-versions/ms552701(v=vs.100)) e atualizará a caixa de seleção. Caso contrário, o manipulador verifica se o retângulo de seleção contém o cursor, habilita a coleta de tinta de acordo e também define o cursor de acordo.
 
-O manipulador de eventos [MouseDown](/previous-versions/ms567616(v=vs.100)) verifica a configuração do cursor. Se o cursor for definido como [SizeAll](/dotnet/api/system.windows.forms.cursors.sizeall?view=netcore-3.1), o manipulador definirá o modo de aplicativo como MoveInk e registrará o local do cursor. Caso contrário, se houver uma seleção atual, desmarque-a.
+O [manipulador de eventos MouseDown](/previous-versions/ms567616(v=vs.100)) verifica a configuração do cursor. Se o cursor for definido como [SizeAll](/dotnet/api/system.windows.forms.cursors.sizeall?view=netcore-3.1), o manipulador definirá o modo de aplicativo como MoveInk e registra o local do cursor. Caso contrário, se houver uma seleção atual, limpe-a.
 
-O manipulador de eventos [MouseUp](/previous-versions/ms567618(v=vs.100)) verifica o modo do aplicativo. Se o modo for MoveInk, o manipulador definirá o modo de aplicativo com base no estado selecionado do comando SELECT.
+O [manipulador de eventos MouseUp](/previous-versions/ms567618(v=vs.100)) verifica o modo do aplicativo. Se o modo for MoveInk, o manipulador define o modo de aplicativo com base no estado selecionado do comando Select.
 
-O evento [NewPackets](/previous-versions/ms567621(v=vs.100)) é gerado no modo de seleção quando o coletor de tinta recebe novos dados de pacote. Se o aplicativo estiver no modo de seleção, será necessário interceptar os novos pacotes e usá-los para desenhar o laço de seleção.
+O [evento NewPackets](/previous-versions/ms567621(v=vs.100)) é gerado no modo de seleção quando o coletor de tinta recebe novos dados de pacote. Se o aplicativo estiver no modo de seleção, será necessário interceptar os novos pacotes e usá-los para desenhar o laço de seleção.
 
 A coordenada de cada pacote é convertida em pixels, restrita à área de desenho e adicionada à coleção de pontos do laço. Um método auxiliar é chamado para desenhar o laço no formulário.
 
 ## <a name="handling-a-new-stroke"></a>Manipulando um novo traço
 
-O evento [Stroke](/previous-versions/ms567622(v=vs.100)) é gerado no modo de seleção quando um novo traço é desenhado. Se o aplicativo estiver no modo de seleção, esse traço corresponderá ao laço e será necessário atualizar as informações dos traços selecionados.
+O [evento Stroke](/previous-versions/ms567622(v=vs.100)) é gerado no modo de seleção quando um novo traço é desenhado. Se o aplicativo estiver no modo de seleção, esse traço corresponderá ao laço e será necessário atualizar as informações dos traços selecionados.
 
-O manipulador cancela o evento de [traço](/previous-versions/ms567622(v=vs.100)) , verifica se há mais de dois pontos de laço, copia a coleção de pontos em uma matriz de objetos [Point](/dotnet/api/system.drawing.point?view=netcore-3.1) e converte as coordenadas dos pontos na matriz de pixels para o espaço de tinta. Em seguida, o manipulador usa o método [HitTest](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) do objeto [Ink](/previous-versions/ms583670(v=vs.100)) para obter os traços selecionados pelos pontos do laço e atualiza o estado de seleção do formulário. Por fim, o traço que disparou o evento é removido da coleção de traços selecionados, a coleção de pontos de laço é esvaziada e um método auxiliar desenha o retângulo de seleção.
+O manipulador cancela o evento [Stroke,](/previous-versions/ms567622(v=vs.100)) verifica se há mais de dois pontos desso, copia a coleção Points para uma matriz de objetos [Point](/dotnet/api/system.drawing.point?view=netcore-3.1) e converte as coordenadas dos pontos na matriz de pixels em espaço de tinta. Em seguida, o manipulador usa o método [HitTest](/previous-versions/dotnet/netframework-3.5/ms571330(v=vs.90)) do objeto [Ink](/previous-versions/ms583670(v=vs.100)) para obter os traços selecionados pelos pontos desso e atualiza o estado de seleção do formulário. Por fim, o traço que gerou o evento é removido da coleção de traços selecionados, a coleção de pontos desso é esvaziada e um método auxiliar desenha o retângulo de seleção.
 
 
 ```C++
@@ -243,7 +243,7 @@ SetSelection(hitStrokes);
 
 ## <a name="copying-ink-to-the-clipboard"></a>Copiando tinta para a área de transferência
 
-O método auxiliar CopyInkToClipboard cria um valor de [InkClipboardFormats](/previous-versions/ms583681(v=vs.100)) , verifica o estado do menu de formato para atualizar os formatos a serem colocados na área de transferência e usa o método [ClipboardCopy](/previous-versions/dotnet/netframework-3.5/ms571316(v=vs.90)) do objeto [Ink](/previous-versions/ms583670(v=vs.100)) para copiar os traços para a área de transferência.
+O método auxiliar CopyInkToClipboard cria um valor [InkClipboardFormats,](/previous-versions/ms583681(v=vs.100)) verifica o estado do menu Formatar para [](/previous-versions/ms583670(v=vs.100)) atualizar os formatos a colocar na área de transferência e usa o método [ClipboardCopy](/previous-versions/dotnet/netframework-3.5/ms571316(v=vs.90)) do objeto Ink para copiar os traços para a área de transferência.
 
 
 ```C++
@@ -272,14 +272,14 @@ else
 
 ## <a name="updating-a-selection"></a>Atualizando uma seleção
 
-O método auxiliar SetSelection atualiza o selectedStrokes arquivado e, se a coleção for **nula** ou **vazia**, o retângulo de seleção será definido como o retângulo vazio. Se a coleção [Strokes](/previous-versions/ms552701(v=vs.100)) selecionada não estiver vazia, o método setseleções executará as seguintes etapas:
+O método auxiliar SetSelection atualiza o selectedStrkes arquivado e, se a coleção for **NULL** ou **EMPTY,** o retângulo de seleção será definido como o retângulo vazio. Se a coleção [de Traços selecionada](/previous-versions/ms552701(v=vs.100)) não estiver vazia, o método SetSelection executará as seguintes etapas:
 
--   Determina o retângulo delimitador usando o método [GetBoundingBox](/previous-versions/dotnet/netframework-3.5/ms571376(v=vs.90)) da coleção Strokes
+-   Determina o retângulo delimitado usando o [método GetBoundingBox](/previous-versions/dotnet/netframework-3.5/ms571376(v=vs.90)) da coleção de traços
 -   Converte as coordenadas de retângulo do espaço de tinta em pixels
--   Replana o retângulo para fornecer algum espaço visual entre ele e os traços selecionados
--   Cria identificadores de seleção para a caixa de seleção atual
+-   Infla o retângulo para fornecer algum espaço visual entre ele e os traços selecionados
+-   Cria alças de seleção para a caixa de seleção atual
 
-Finalmente, o método setselecting define a visibilidade das alças de seleção e define a propriedade [redesenhar](/previous-versions/ms571706(v=vs.100)) do coletor de tinta como **false**, se os traços estiverem selecionados.
+Por fim, o método SetSelection define a visibilidade das alças de seleção e define a propriedade [AutoRedraw](/previous-versions/ms571706(v=vs.100)) do coletor de tinta como **FALSE,** se os traços forem selecionados.
 
 
 ```C++
@@ -360,13 +360,13 @@ Refresh();
 
 ## <a name="drawing-the-lasso"></a>Desenhando o laço
 
-O laço é desenhado como uma série de pontos abertos que seguem o caminho do traço do laço e uma linha de conector tracejada entre as duas extremidades. O evento [NewPackets](/previous-versions/ms567621(v=vs.100)) é gerado como o laço está sendo desenhado e o manipulador de eventos passa as informações de traço para o método DrawLasso.
+O laço é desenhado como uma série de pontos abertos que seguem o caminho do traço desso e uma linha de conector tracejada entre as duas extremidades. O [evento NewPackets](/previous-versions/ms567621(v=vs.100)) é gerado à medida que o laço está sendo desenhado e o manipulador de eventos passa as informações de traço para o método DrawLasso.
 
-O método auxiliar DrawLasso primeiro remove a linha do conector antigo e, em seguida, itera nos pontos no traço. Em seguida, DrawLasso calcula onde posicionar os pontos ao longo do traço e os desenha. Por fim, ele desenha uma nova linha de conector.
+O método auxiliar DrawLasso primeiro remove a linha antiga do conector e, em seguida, itera sobre os pontos no traço. Em seguida, DrawLasso calcula onde colocar os pontos ao longo do traço e os desenha. Por fim, ele desenha uma nova linha de conector.
 
 ## <a name="closing-the-form"></a>Fechando o formulário
 
-O método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) do formulário descarta o objeto [InkCollector](/previous-versions/ms583683(v=vs.100)) , myinkcollector.
+O método [Dispose do](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) formulário descarta o [objeto InkCollector,](/previous-versions/ms583683(v=vs.100)) myInkCollector.
 
  
 

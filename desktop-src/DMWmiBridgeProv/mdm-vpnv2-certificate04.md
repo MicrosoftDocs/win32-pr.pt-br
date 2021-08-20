@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_VPNv2_Certificate04
+title: MDM_VPNv2_Certificate04 classe
 description: Reservado para uso futuro.
 ms.assetid: 0fa831e0-918a-472f-88bf-7e40c4081417
 keywords:
-- Classe MDM_VPNv2_Certificate04
-- Classe MDM_VPNv2_Certificate04, descrita
+- MDM_VPNv2_Certificate04 classe
+- MDM_VPNv2_Certificate04 classe , descrita
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea88bd26e8dc9916e7e2db97b980065d7a8733ec
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1d383cc78ad0e123f801f8e79eb240de239652dae7b26f11acd4169dbe699705
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119527286"
 ---
-# <a name="mdm_vpnv2_certificate04-class"></a>\_ \_ Classe CERTIFICATE04 do MDM VPNv2
+# <a name="mdm_vpnv2_certificate04-class"></a>Classe MDM \_ VPNv2 \_ Certificate04
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 Reservado para uso futuro
 
@@ -47,23 +47,23 @@ class MDM_VPNv2_Certificate04
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Certificate04 de MDM VPNv2** tem estes tipos de membros:
+A **classe MDM \_ VPNv2 \_ Certificate04** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Certificate04 do MDM VPNv2** tem essas propriedades.
+A **classe MDM \_ VPNv2 \_ Certificate04** tem essas propriedades.
 
 <dl> <dt>
 
-[EKU](/windows/client-management/mdm/vpnv2-csp#vpnv2-profilename-nativeprofile-authentication-certificate-eku)
+[Eku](/windows/client-management/mdm/vpnv2-csp#vpnv2-profilename-nativeprofile-authentication-certificate-eku)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -80,7 +80,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "EAP"
+Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Eap"
 
 </dd> <dt>
 
@@ -90,12 +90,12 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "EAP"
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -117,10 +117,10 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 82582213-907c-4760-a849-e6cf5f6d60bc
 title: Uso de vírgulas e ponto e vírgula
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ba238d50ff5d0dace017f16b75547df6b016e14
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b44d20d4a8e99a75522fa3703d58d82f3bf4dfe130e530d18141b7f45e572717
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104088795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044054"
 ---
 # <a name="use-of-commas-and-semicolons"></a>Uso de vírgulas e ponto e vírgula
 
@@ -126,7 +126,7 @@ container aContainer {
 
 <dl> <dt>
 
-[Codificação de Texto](text-encoding.md)
+[Codificação de texto](text-encoding.md)
 </dt> </dl>
 
  

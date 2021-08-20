@@ -1,7 +1,7 @@
 ---
-description: Mensagem privada que define o estilo da janela como WS \_ ex mais \_ alta.
+description: Mensagem privada que define o estilo da janela como WS \_ EX \_ TOPMOST.
 ms.assetid: 4934400e-4ca5-4ace-b9b9-3889f4cf610e
-title: 'Membro CBaseWindow:: m_ShowStageTop (Winutil. h)'
+title: Membro CBaseWindow::m_ShowStageTop (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8ed0069c5c65f2bb1a113c899e2d90de0cabcd10
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dbd8943b297d6e33f3b86a62c7e67dd2039a6b99d316061be30a4c3016711c41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016514"
 ---
-# <a name="cbasewindowm_showstagetop-member"></a>Membro de CBaseWindow:: m \_ ShowStageTop
+# <a name="cbasewindowm_showstagetop-member"></a>Membro CBaseWindow::m \_ ShowStageTop
 
-Mensagem privada que define o estilo da janela como WS \_ ex mais \_ alta.
+Mensagem privada que define o estilo da janela como WS \_ EX \_ TOPMOST.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ UINT m_ShowStageTop;
 
 ## <a name="remarks"></a>Comentários
 
-Os renderizadores de vídeo devem enviar essa mensagem para a janela se mudarem para o modo de tela inteira.
+Os renderadores de vídeo deverão enviar essa mensagem para a janela se alternarem para o modo de tela inteira.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Os renderizadores de vídeo devem enviar essa mensagem para a janela se mudarem 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

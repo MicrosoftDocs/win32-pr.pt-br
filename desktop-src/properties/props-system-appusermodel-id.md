@@ -4,12 +4,12 @@ ms.assetid: 07858b3c-e601-40ec-a87a-d66612d5473a
 title: System.AppUserModel.ID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 82c636b2c946f1138f4a25c3129a7a3b44d31558
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6dd60b64598a620221ec2b610b10cbc05002f38aaf633e51e788b24797620cab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033734"
 ---
 # <a name="systemappusermodelid"></a>System.AppUserModel.ID
 
@@ -21,7 +21,7 @@ Para obter mais informações, consulte [IDs de modelo de usuário de aplicativo
 
 No momento em que a propriedade [System.AppUserModel.ID]() é definida, a barra de tarefas é notificada para atualizar suas informações na janela ou no atalho dado a este AppUserModelID.
 
-Outras propriedades de janela e de atalho podem ser usadas em conjunto com um AppUserModelID explícito para controlar ainda mais o agrupamento e a fixação associados a uma janela, o nome de exibição e o ícone usado para ele na barra de tarefas e o comando para iniciar um aplicativo fixado na barra de tarefas ou uma nova instância do aplicativo por meio da lista de atalhos desse aplicativo. Essas propriedades devem ser definidas antes da definição da propriedade [System.AppUserModel.ID]() . Para mais informações, consulte os seguintes tópicos:
+Outras propriedades de janela e de atalho podem ser usadas em conjunto com um AppUserModelID explícito para controlar ainda mais o agrupamento e a fixação associados a uma janela, o nome de exibição e o ícone usado para ele na barra de tarefas e o comando para iniciar um aplicativo fixado na barra de tarefas ou uma nova instância do aplicativo por meio da lista de atalhos desse aplicativo. Essas propriedades devem ser definidas antes da definição da propriedade [System.AppUserModel.ID]() . Para obter mais informações, consulte estes tópicos:
 
 -   [System. AppUserModel. PreventPinning](./props-system-appusermodel-preventpinning.md)
 -   [System. AppUserModel. RelaunchCommand](./props-system-appusermodel-relaunchcommand.md)

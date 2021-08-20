@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: af12b5d32acd77b40d90a24823a0956bcf665571
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 270bded6e6d126b513833c5ea97856fc2a4201a19d3915babd4330ac4757c753
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039464"
 ---
 # <a name="indexinfotostring-method"></a>Método IndexInfo. ToString
 
@@ -54,7 +54,7 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. String](/dotnet/api/system.string)  
 Uma [cadeia de caracteres](/dotnet/api/system.string) que representa o [IndexInfo](./indexinfo-class.md)atual.  

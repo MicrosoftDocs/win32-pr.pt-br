@@ -1,7 +1,7 @@
 ---
-description: O método IsUsingDefaultDestination determina se o renderdor está usando a janela de destino padrão.
+description: O método IsUsingDefaultDestination determina se o renderizador está usando a janela de destino padrão.
 ms.assetid: 0b956575-4cf0-4f1f-9223-bb1ec3ae8b10
-title: Método CBaseControlVideo.IsUsingDefaultDestination (Ctlutil.h)
+title: Método CBaseControlVideo. IsUsingDefaultDestination (Ctlutil. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118955215"
 ---
-# <a name="cbasecontrolvideoisusingdefaultdestination-method"></a>Método CBaseControlVideo.IsUsingDefaultDestination
+# <a name="cbasecontrolvideoisusingdefaultdestination-method"></a>Método CBaseControlVideo. IsUsingDefaultDestination
 
-O `IsUsingDefaultDestination` método determina se o renderador está usando a janela de destino padrão.
+O `IsUsingDefaultDestination` método determina se o renderizador está usando a janela de destino padrão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retornará S \_ OK se estiver usando o destino padrão; caso contrário, retornará S \_ FALSE.
+Retornará S \_ OK se estiver usando o destino padrão; caso contrário, retornará S \_ false.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retornará S \_ OK se estiver usando o destino padrão; caso contrário, retorna
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shldisp.h
-ms.openlocfilehash: d37966b13a182161c1a6248c93eabaf5dfa3597c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: baf180149419178b489f3ba00042c561268b36e7b7ed7b0e2afab54b68f78466
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032614"
 ---
 # <a name="folder-object"></a>Objeto de pasta
 
@@ -56,7 +56,7 @@ O objeto **Folder** tem essas propriedades.
 
 
 
-| Propriedade                                               | Tipo de acesso          | Description                                          |
+| Propriedade                                               | Tipo de acesso          | Descrição                                          |
 |:-------------------------------------------------------|:---------------------|:-----------------------------------------------------|
 | [**Aplicativo**](folder-application.md)<br/>   | Somente leitura<br/> | Contém o objeto de aplicativo da pasta.<br/> |
 | [**Pai**](folder-parent.md)<br/>             | Somente leitura<br/> | Não implementado.<br/>                          |
@@ -80,7 +80,7 @@ O objeto **Folder** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                 |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                 |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |

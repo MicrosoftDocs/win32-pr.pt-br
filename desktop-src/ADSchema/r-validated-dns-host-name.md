@@ -1,10 +1,10 @@
 ---
-title: As gravações validadas-DNS-Host-Name foram validadas
-description: Permissão de gravação validada para habilitar a configuração de um atributo de nome de host DNS que é compatível com o nome do computador e o nome de domínio.
+title: Gravações validadas validadas-DNS-Host-Name
+description: Permissão de gravação validada para habilitar a configuração de um atributo de nome de host DNS compatível com o nome do computador e o nome de domínio.
 ms.assetid: 666b4aa7-c7b0-4fb2-a22f-2f548b14ba05
 ms.tgt_platform: multiple
 keywords:
-- Validou-DNS-Host-Name validado gravar esquema do AD
+- Validated-DNS-Host-Name validado grava o esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8955da2b52e06e176a64d3cc3eafc6e299b8a725
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f926a44736fe9b5032fb89e1df3ede7663a93bc9e9ea124e9afe4c335900e42e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755463"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119580376"
 ---
-# <a name="validated-dns-host-name-validated-writes"></a>As gravações validadas-DNS-Host-Name foram validadas
+# <a name="validated-dns-host-name-validated-writes"></a>Gravações validadas validadas-DNS-Host-Name
 
-Permissão de gravação validada para habilitar a configuração de um atributo de nome de host DNS que é compatível com o nome do computador e o nome de domínio.
+Permissão de gravação validada para habilitar a configuração de um atributo de nome de host DNS compatível com o nome do computador e o nome de domínio.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Validado-DNS-nome-do-host              |
+| CN           | Validated-DNS-Host-Name              |
 | Display-Name | Gravação validada no nome de host DNS     |
-| GUID de direitos  | 72e39547-7b18-11d1-adef-00c04fd8d5cd |
+| RIGHTS-GUID  | 72e39547-7b18-11d1-adef-00c04fd8d5cd |
 
 
 
@@ -50,7 +50,7 @@ Permissão de gravação validada para habilitar a configuração de um atributo
 | Entrada | Valor |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computador**](c-computer.md)<br/> |
-| Localização-exibição-ID | 13                                        |
+| Localization-Display-ID | 13                                        |
 
 
 
@@ -61,7 +61,7 @@ Permissão de gravação validada para habilitar a configuração de um atributo
 | Entrada | Valor |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computador**](c-computer.md)<br/> |
-| Localização-exibição-ID | 13                                        |
+| Localization-Display-ID | 13                                        |
 
 
 
@@ -72,7 +72,7 @@ Permissão de gravação validada para habilitar a configuração de um atributo
 | Entrada | Valor |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computador**](c-computer.md)<br/> |
-| Localização-exibição-ID | 13                                        |
+| Localization-Display-ID | 13                                        |
 
 
 
@@ -83,7 +83,7 @@ Permissão de gravação validada para habilitar a configuração de um atributo
 | Entrada | Valor |
 |-------------------------|-------------------------------------------|
 | Applies-To              | [**Computador**](c-computer.md)<br/> |
-| Localização-exibição-ID | 13                                        |
+| Localization-Display-ID | 13                                        |
 
 
 
@@ -93,8 +93,8 @@ Permissão de gravação validada para habilitar a configuração de um atributo
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computador**](c-computer.md)<br/> [**Conta de serviço do MS-DS-Managed-Service**](c-msds-managedserviceaccount.md)<br/> |
-| Localização-exibição-ID | 13                                                                                                                         |
+| Applies-To              | [**Computador**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> |
+| Localization-Display-ID | 13                                                                                                                         |
 
 
 
@@ -104,8 +104,8 @@ Permissão de gravação validada para habilitar a configuração de um atributo
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Applies-To              | [**Computador**](c-computer.md)<br/> [**Conta de serviço do MS-DS-Managed-Service**](c-msds-managedserviceaccount.md)<br/> |
-| Localização-exibição-ID | 13                                                                                                                         |
+| Applies-To              | [**Computador**](c-computer.md)<br/> [**ms-DS-Managed-Service-Account**](c-msds-managedserviceaccount.md)<br/> |
+| Localization-Display-ID | 13                                                                                                                         |
 
 
 

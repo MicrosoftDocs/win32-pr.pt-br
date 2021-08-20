@@ -3,7 +3,7 @@ title: WM_CHARTOITEM mensagem (Winuser.h)
 description: Enviado por uma caixa de listagem com o estilo WANTKEYBOARDINPUT do LBS para seu proprietário em \_ resposta a uma mensagem WM \_ CHAR.
 ms.assetid: f941c00b-b836-4f1b-b8cf-8ac2b0704af3
 keywords:
-- WM_CHARTOITEM controles Windows mensagem
+- WM_CHARTOITEM controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -55,7 +55,7 @@ Lidar com a caixa de listagem.
 
 ## <a name="return-value"></a>Valor retornado
 
-O valor de retorno especifica a ação que o aplicativo realizou em resposta à mensagem. Um valor de retorno de -1 ou -2 indica que o aplicativo tratou de todos os aspectos da seleção do item e não requer mais nenhuma ação pela caixa de listagem. Um valor de retorno de 0 ou superior especifica o índice baseado em zero de um item na caixa de listagem e indica que a caixa de listagem deve executar a ação padrão para o controle de teclas no item especificado.
+O valor de retorno especifica a ação que o aplicativo realizou em resposta à mensagem. Um valor de retorno de -1 ou -2 indica que o aplicativo tratou de todos os aspectos da seleção do item e não requer mais nenhuma ação pela caixa de listagem. Um valor de retorno 0 ou superior especifica o índice baseado em zero de um item na caixa de listagem e indica que a caixa de listagem deve executar a ação padrão para o controle de teclas no item especificado.
 
 ## <a name="remarks"></a>Comentários
 

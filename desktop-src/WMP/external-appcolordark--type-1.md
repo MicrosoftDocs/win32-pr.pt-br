@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c5e44e3ae0c07dc491f9b0d72825f05d7aa1604
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 142d6138d603c11fa29dc4597c4db3b192a82bb190e798112c77415790355bfa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649786"
 ---
 # <a name="externalappcolordark-type-1"></a>External. appColorDark (tipo 1)
 
@@ -28,7 +28,7 @@ ms.locfileid: "105784199"
 
  
 
-A propriedade **appColorDark** recupera a cor sombreada escura atual da interface do usuário do Windows Media Player.
+a propriedade **appColorDark** recupera a cor sombreada escura atual da interface do usuário do Windows Media Player.
 
 ``` syntax
 window.external.appColorDark
@@ -41,7 +41,7 @@ Esta propriedade é uma **cadeia de caracteres** somente leitura.
 
 ## <a name="remarks"></a>Comentários
 
-Os usuários podem alterar a cor da interface do usuário do Windows Media Player. Você pode usar essa propriedade para personalizar a aparência da sua página da web hospedada para corresponder ao Player.
+os usuários podem alterar a cor da interface do usuário Windows Media Player. Você pode usar essa propriedade para personalizar a aparência da sua página da web hospedada para corresponder ao Player.
 
 ## <a name="requirements"></a>Requisitos
 

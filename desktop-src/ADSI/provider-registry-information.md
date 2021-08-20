@@ -1,5 +1,5 @@
 ---
-title: Informações do Registro do Provedor
+title: Informações de registro do provedor
 description: Este tópico mostra quais chaves e valores precisam ser definidos ao adicionar um provedor ADSI.
 ms.assetid: 87293b63-03ad-4be9-b327-313fdebac611
 ms.tgt_platform: multiple
@@ -12,7 +12,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117838862"
 ---
-# <a name="provider-registry-information"></a>Informações do Registro do Provedor
+# <a name="provider-registry-information"></a>Informações de registro do provedor
 
 O provedor é registrado com ADSI com as seguintes chaves e valores:
 
@@ -25,7 +25,7 @@ HKEY_LOCAL_MACHINE
                provider = <provider namespace>
 ```
 
-O provedor é registrado com Windows com as seguintes chaves e valores:
+o provedor é registrado com Windows com as seguintes chaves e valores:
 
 ```
 HKEY_CLASSES_ROOT
@@ -47,7 +47,7 @@ HKEY_CLASSES_ROOT
          Version = <provider version number>
 ```
 
-O namespace do provedor é registrado com Windows com as seguintes chaves e valores:
+o namespace do provedor é registrado com Windows com as seguintes chaves e valores:
 
 ```
 HKEY_CLASSES_ROOT
@@ -71,7 +71,7 @@ HKEY_CLASSES_ROOT
 
 Nos parágrafos anteriores, o *provedor* é o identificador do objeto de nível superior do provedor. O *namespace do provedor* é o identificador do objeto que implementa o namespace do provedor.
 
-Para um exemplo específico, consulte [Instalando o componente de provedor de exemplo](installing-the-example-provider-component.md).
+Para obter um exemplo específico, consulte [instalando o componente de provedor de exemplo](installing-the-example-provider-component.md).
 
  
 

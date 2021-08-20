@@ -1,11 +1,11 @@
 ---
 title: MSMQ-Sites atributo
-description: A lista de sites aos quais o computador pertence (uma matriz de objectGUIDs de sites, geralmente não mais de um GUID).
+description: A lista de sites aos qual o computador pertence (uma matriz de objectGUIDs dos sites, geralmente não mais de um GUID).
 ms.assetid: 0f6cfc3a-9edb-4291-a5df-06c0f1a6add8
 ms.tgt_platform: multiple
 keywords:
-- Esquema de MSMQ-Sites do atributo AD
-- Esquema de AD do atributo mSMQSites
+- MSMQ-Sites atributo AD Schema
+- Esquema do AD do atributo mSMQSites
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "118960385"
 ---
 # <a name="msmq-sites-attribute"></a>MSMQ-Sites atributo
 
-A lista de sites aos quais o computador pertence (uma matriz de objectGUIDs de sites, geralmente não mais de um GUID).
+A lista de sites aos qual o computador pertence (uma matriz de objectGUIDs dos sites, geralmente não mais de um GUID).
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | MSMQ-Sites                                            |
-| LDAP-Display-Name | mSMQSites                                             |
+| Ldap-Display-Name | mSMQSites                                             |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.927                                |
-| System-ID-GUID    | 9a0dc32a-c100-11d1-bbc5-0080c76670c0                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 9a0dc32a-c100-11d1-football5-0080c76670c0                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ A lista de sites aos quais o computador pertence (uma matriz de objectGUIDs de s
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Verdadeiro                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ A lista de sites aos quais o computador pertence (uma matriz de objectGUIDs de s
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Verdadeiro                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000010                                                   |
-| Classes usadas em        | [**Configuração do MSMQ**](c-msmqconfiguration.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configuration**](c-msmqconfiguration.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ A lista de sites aos quais o computador pertence (uma matriz de objectGUIDs de s
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Verdadeiro                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000000                                                   |

@@ -4,12 +4,12 @@ description: MkTypLib é um aplicativo de linha de comando que processa um arqui
 ms.assetid: 883d380d-1d73-439b-9f11-ee89fc62fdfd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: abc392351327124777c2d52d0bbe0653853dcb52
-ms.sourcegitcommit: 5f33645661bf8c825a7a2e73950b1f4ea0f1cd82
+ms.openlocfilehash: b712ed8220dd609dd3ba189bdac6b5ee11d2805f26ff5a1f146c20f17c1f8ab9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103641934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047934"
 ---
 # <a name="mktyplib-command-line-tool"></a>Ferramenta de Command-Line de MkTypLib
 
@@ -21,7 +21,7 @@ Para gerar uma biblioteca de tipos a partir de um arquivo ODL:
 
 -   No prompt de comando, execute o seguinte comando:
 
-    **mktyplibÂ * * * nome de arquivo*
+    * * mktyplibÂ * *_nome do arquivo_
 
     em que *filename* é o nome do arquivo ODL.
 
@@ -38,6 +38,6 @@ Como MkTypLib é um aplicativo obsoleto, ele não pode analisar arquivos IDL ou 
 [Convertendo para C++](translating-to-c--.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

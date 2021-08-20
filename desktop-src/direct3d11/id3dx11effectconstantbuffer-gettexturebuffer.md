@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d03000338c725e71096e57715a49a70b4347b358
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
-ms.translationtype: HT
+ms.openlocfilehash: 4ea492e15612e5d4a0533ac6b811a60097136560480216979d36306d18761de6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119046424"
 ---
 # <a name="id3dx11effectconstantbuffergettexturebuffer-method"></a>Método ID3DX11EffectConstantBuffer:: GetTextureBuffer
 
@@ -52,7 +52,7 @@ O endereço de um ponteiro para uma interface de exibição de recurso de sombre
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

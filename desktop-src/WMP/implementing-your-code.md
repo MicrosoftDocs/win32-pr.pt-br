@@ -3,7 +3,7 @@ title: Implementando seu código
 description: Implementando seu código
 ms.assetid: 875b27b3-10ee-498a-bbd1-f9ce69fda17e
 keywords:
-- Plug-ins do Windows Media Player, visualizações
+- plug-ins Windows Media Player, visualizações
 - plug-ins, visualizações
 - visualizações, implementando código
 - visualizações personalizadas, implementando código
@@ -11,12 +11,12 @@ keywords:
 - visualizações personalizadas, modificando código de exemplo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 716173d9f2c3d44bb3faabddaa8fe886b6582fba
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d1952ac3d7f38c423c82fb185be4ed7750b02d24155d7ff5ac38e70e238c8d38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105760062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508886"
 ---
 # <a name="implementing-your-code"></a>Implementando seu código
 
@@ -35,9 +35,9 @@ As seções a seguir fornecem detalhes sobre como modificar o código de exemplo
 [**Sobre visualizações personalizadas**](about-custom-visualizations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

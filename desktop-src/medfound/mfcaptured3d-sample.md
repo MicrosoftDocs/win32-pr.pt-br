@@ -1,5 +1,5 @@
 ---
-description: Mostra como visualizar o vídeo de uma câmera de vídeo usando o Direct3D para renderizar o vídeo.
+description: Mostra como visualizar o vídeo de uma câmera de vídeo, usando o Direct3D para renderizar o vídeo.
 ms.assetid: fe241201-f2b5-467c-9d6a-5fc147fa5e2a
 title: Exemplo de MFCaptureD3D
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "117874752"
 ---
 # <a name="mfcaptured3d-sample"></a>Exemplo de MFCaptureD3D
 
-Mostra como visualizar o vídeo de uma câmera de vídeo usando o Direct3D para renderizar o vídeo.
+Mostra como visualizar o vídeo de uma câmera de vídeo, usando o Direct3D para renderizar o vídeo.
 
 ## <a name="apis-demonstrated"></a>APIs demonstradas
 
@@ -37,7 +37,7 @@ Este exemplo demonstra as APIs a seguir.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Este exemplo está disponível no repositório [Windows github de exemplos clássicos.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureD3D)
+este exemplo está disponível no [repositório github de amostras clássicas do Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/MFCaptureD3D).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

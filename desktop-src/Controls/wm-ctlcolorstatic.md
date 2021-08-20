@@ -3,7 +3,7 @@ title: Mensagem de WM_CTLCOLORSTATIC (WinUser. h)
 description: Um controle estático, ou um controle de edição que é somente leitura ou desabilitado, envia a \_ mensagem do WM CTLCOLORSTATIC para sua janela pai quando o controle está prestes a ser desenhado.
 ms.assetid: a171a1e8-6845-4a8e-8394-44cea99d2b0d
 keywords:
-- Controles de WM_CTLCOLORSTATIC de mensagens do Windows
+- controles de Windows de mensagem de WM_CTLCOLORSTATIC
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 851879eeb65a00f95f8cb81cef1b6c23ece8028d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2df23b86539d07c9e1551d64f59e60e54df24ae2d48b316996542fb80c92ae8c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539926"
 ---
 # <a name="wm_ctlcolorstatic-message"></a>Mensagem do WM \_ CTLCOLORSTATIC
 
@@ -55,7 +55,7 @@ Identificador para o controle estático.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, o valor de retorno será um identificador para um pincel que o sistema usa para pintar o plano de fundo do controle estático.
 
@@ -101,9 +101,9 @@ O exemplo de C++ a seguir mostra como definir as cores de primeiro e segundo pla
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

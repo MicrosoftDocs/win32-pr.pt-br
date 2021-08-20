@@ -4,18 +4,18 @@ description: Os provedores devem definir todos os eventos que eles gravam. Para 
 ms.assetid: f282612c-cfa5-42fe-af8a-5b35c033abe2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a4c1da0e54d1e9fc328978ebe447c8e843b540c
-ms.sourcegitcommit: c2a1c4314550ea9bd202d28adfcc7bfe6180932f
+ms.openlocfilehash: c8b28dd6f9453a0b3272e6c9e7efcc40613319591174444d14abf55d6d9f385f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "104365788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056034"
 ---
 # <a name="defining-events"></a>Definindo eventos
 
 Os provedores devem definir todos os eventos que eles gravam. Para definir um evento, use o elemento **Event** .
 
-O atributo **Value** é o identificador de evento e deve ser exclusivo para os eventos que você definir. Se você definir os outros atributos dependerá de quem consumirá os eventos e de onde. Se os administradores estiverem consumindo seus eventos usando uma ferramenta como o Windows Visualizador de Eventos, você deverá definir o atributo de **canal** . Se o tipo de canal for admin, você também deverá especificar o atributo **Level** e defini-lo como um dos níveis definidos em Winmeta.xml (Win: Critical a Win: verbose).
+O atributo **Value** é o identificador de evento e deve ser exclusivo para os eventos que você definir. Se você definir os outros atributos dependerá de quem consumirá os eventos e de onde. se os administradores estiverem consumindo seus eventos usando uma ferramenta como Windows Visualizador de Eventos, você deverá definir o atributo de **canal** . Se o tipo de canal for admin, você também deverá especificar o atributo **Level** e defini-lo como um dos níveis definidos em Winmeta.xml (Win: Critical a Win: verbose).
 
 Se o evento contiver dados específicos de evento, você deverá definir o atributo de **modelo** como o identificador do modelo que define os dados específicos do evento. Os atributos **nível**, **palavras-chave**, **tarefa** e **opcode** são usados para agrupar ou segmentar eventos. Embora esses atributos sejam opcionais, você deve considerar a especificação de nível, tarefa, opcode e palavras-chave, para que os consumidores possam acessar facilmente somente os eventos de interesse. Os atributos **nível** e **palavras-chave** também podem ser usados por uma sessão de rastreamento ETW para limitar os eventos que são gravados no arquivo de log de rastreamento de eventos. O atributo **Keywords** contém uma lista delimitada por espaço de nomes de palavras-chave definidas no manifesto. Se várias palavras-chave forem especificadas, seus valores de máscara serão OR'ed juntos para criar o valor de palavra-chave que o evento usará.
 

@@ -1,7 +1,7 @@
 ---
-description: Consulta se o alocador usa amostras de mídia somente leitura.
+description: Consulta se o alocador usa exemplos de mídia somente leitura.
 ms.assetid: 2cb692da-f030-4265-afe4-b1608b51fd47
-title: Método CBaseInputPin. IsReadOnly (Amfilter. h)
+title: Método CBaseInputPin.IsReadOnly (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 93d1e7930631328a277ce7332f483ee264b2d525
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45a8fc563e9377f7308ad9ea702b16f48ea9723aa13902ef29d60e2da903ffda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017034"
 ---
-# <a name="cbaseinputpinisreadonly-method"></a>Método CBaseInputPin. IsReadOnly
+# <a name="cbaseinputpinisreadonly-method"></a>Método CBaseInputPin.IsReadOnly
 
-Consulta se o alocador usa amostras de mídia somente leitura.
+Consulta se o alocador usa exemplos de mídia somente leitura.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ BOOL IsReadOnly();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o valor da variável de membro [**CBaseInputPin:: m \_ bReadOnly**](cbaseinputpin-m-breadonly.md) .
+Retorna o valor da variável de membro [**CBaseInputPin::m \_ bReadOnly.**](cbaseinputpin-m-breadonly.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna o valor da variável de membro [**CBaseInputPin:: m \_ bReadOnly**](cbas
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

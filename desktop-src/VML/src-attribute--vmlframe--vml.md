@@ -1,24 +1,24 @@
 ---
-title: Atributo src (VMLFrame) (VML)
-description: Atributo src (VMLFrame) (VML)
+title: Atributo Src (VMLFrame)(VML)
+description: Atributo Src (VMLFrame)(VML)
 ms.assetid: 6ac7a3b5-3c1d-43a0-ab92-a03e3bd45733
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a9c3ec4849098c9469fba56f26d4c3dd514746
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a44f7761a55304eefc655d00ed58d84b7af8f7ce5daf86a3aaf462308b43c193
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057574"
 ---
-# <a name="src-attribute-vmlframevml"></a>Atributo src (VMLFrame) (VML)
+# <a name="src-attribute-vmlframevml"></a>Atributo Src (VMLFrame)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Define a fonte de dados para o quadro. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -28,19 +28,19 @@ Define a fonte de dados para o quadro. Leitura/gravação. **Cadeia de caractere
 
 **Sintaxe de marca**
 
-<v: *Element* src = " *expressão* " >
+<v: *elemento* src=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . src = "*expressão*"
+*expressão* element .src=""
 
-*expressão* = de *elemento*. src
+*expressão* = *elemento*.src
 
 **Comentários**
 
-O atributo **src** pode envolver as seguintes sintaxes:
+O **atributo Src** pode envolver as seguintes sintaxes:
 
--   URL para o arquivo externo. O arquivo deve ser um arquivo XML com o seguinte formato:
+-   URL para arquivo externo. O arquivo deve ser um arquivo XML com o seguinte formato:
     ```HTML
        <xml xmlns:v = "urn:schemas-microsoft-com:vml">
        .
@@ -51,32 +51,32 @@ O atributo **src** pode envolver as seguintes sintaxes:
 
     
 
--   Dentro do arquivo, você deve ter uma ou mais formas de VML com IDs válidas que podem ser referenciadas usando essa sintaxe:
+-   Dentro do arquivo, você deve ter uma ou mais formas VML com IDs válidas que podem ser referenciadas usando esta sintaxe:
     ```HTML
        filename#shapename
     ```
 
     
 
--   Na referência a seguir, os arquivos externos têm a extensão. VML, mas qualquer extensão pode ser usada:
+-   Na referência a seguir, os arquivos externos têm a extensão .vml, mas qualquer extensão pode ser usada:
     ```HTML
        external.vml#image01
     ```
 
     
 
--   Você pode fazer referência a uma forma dentro do mesmo arquivo usando a seguinte sintaxe:
+-   Você pode referenciar uma forma dentro do mesmo arquivo usando a seguinte sintaxe:
     ```HTML
        #shapename
     ```
 
     
 
-Se **clip** for **false**, a forma será dimensionada para caber no quadro. Se **for true**, qualquer parte da forma que estiver fora do quadro não será exibida.
+Se **Clip** for **False**, a forma será dimensionado para se ajustar ao quadro. Se **True**, todas as partes da forma que estão fora do quadro não serão exibidas.
 
-Observe que a [origem](origin-attribute--vmlframe--vml.md) e o [tamanho](size-attribute--vmlframe.md) não serão usados, a menos que o **clipe** seja **verdadeiro**.
+Observe que [a origem](origin-attribute--vmlframe--vml.md) [e o tamanho](size-attribute--vmlframe.md) não serão usados, a menos que Clip **seja** **True.**
 
-**Atributo padrão da VML**
+**Atributo padrão VML**
 
 **Exemplo**
 
@@ -93,6 +93,6 @@ A imagem definida no arquivo externo será recortada.
 
 
 
- 
+ 
 
- 
+ 

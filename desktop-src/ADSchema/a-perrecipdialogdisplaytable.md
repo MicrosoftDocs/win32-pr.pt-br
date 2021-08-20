@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 923584e765f1964a5bbbee01650844d358fda258
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 70588d52b62a10151eaa04acdea017e98ea20219ca2966da13f9f9eadc6a76de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756054"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022434"
 ---
 # <a name="per-recip-dialog-display-table-attribute"></a>Atributo de tabela de exibição por recip-Dialog-display
 
@@ -36,7 +36,7 @@ A tabela de exibição MAPI das opções por destinatário.
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.2.326                                |
 | System-ID-GUID    | 5fd424d4-1262-11d0-a060-00aa006c33ed                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -58,7 +58,7 @@ A tabela de exibição MAPI das opções por destinatário.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -79,7 +79,7 @@ A tabela de exibição MAPI das opções por destinatário.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -100,7 +100,7 @@ A tabela de exibição MAPI das opções por destinatário.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| É de valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
 | No catálogo global      | Falso                                                    |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
@@ -108,7 +108,7 @@ A tabela de exibição MAPI das opções por destinatário.
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ A tabela de exibição MAPI das opções por destinatário.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A tabela de exibição MAPI das opções por destinatário.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A tabela de exibição MAPI das opções por destinatário.
 | ID do link                | \-                                                       |
 | MAPI-Id                | 0x8109                                                   |
 | System-Only            | Falso                                                    |
-| É de valor único       | True                                                     |
+| Tem valor único       | Verdadeiro                                                     |
 | É indexado             | Falso                                                    |
-| No catálogo global      | Falso                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                             |
+| No Catálogo Global      | Falso                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                             |
 | Range-Lower            | 1                                                        |
 | Range-Upper            | 32768                                                    |
 | Search-Flags           | 0x00000000                                               |
 | System-Flags           | 0x00000000                                               |
-| Classes usadas em        | [**Endereço-modelo**](c-addresstemplate.md)<br/> |
+| Classes usadas em        | [**Modelo de endereço**](c-addresstemplate.md)<br/> |
 
 
 

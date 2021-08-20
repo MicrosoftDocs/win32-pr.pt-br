@@ -1,11 +1,11 @@
 ---
 title: Método external. playMedia
-description: Esta página documenta um recurso do SDK do Windows Media Player 9 Series e do SDK do Windows Media Player 10. Ele pode não estar disponível em versões subsequentes.
+description: esta página documenta um recurso do sdk do Windows Media Player 9 Series e do sdk do Windows Media Player 10. Ele pode não estar disponível em versões subsequentes.
 ms.assetid: 48071318-e853-4139-8fe4-17d1cdbef8f5
 keywords:
-- método playMedia Windows Media Player
+- Windows Media Player do método playMedia
 - método playMedia Windows Media Player, classe externa
-- Classe externa Windows Media Player, método playMedia
+- classe externa Windows Media Player, método playMedia
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2cf0330e7e68d8b4e3747c019e0841f872d279c9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 65c2a5d49da302a1cdf2b702408d02e8f5f2fc5f0da5eb7f392af75d0581b1fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648606"
 ---
 # <a name="externalplaymedia-method"></a>Método external. playMedia
 
-Esta página documenta um recurso do SDK do Windows Media Player 9 Series e do SDK do Windows Media Player 10. Ele pode não estar disponível em versões subsequentes.
+esta página documenta um recurso do sdk do Windows Media Player 9 Series e do sdk do Windows Media Player 10. Ele pode não estar disponível em versões subsequentes.
 
 > [!Note]  
 > Este tópico descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
@@ -56,7 +56,7 @@ External.playMedia(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

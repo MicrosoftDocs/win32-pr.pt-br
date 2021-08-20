@@ -50,7 +50,7 @@ Os sinalizadores usados para desabilitar a interface do usuário ou o backup aut
 
 | Valor                                                                                                                                                                                                                                         | Significado                                     |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| <span id="PSPGF_NONINTERACTIVE"></span><span id="pspgf_noninteractive"></span><dl> <dt>**PSPGF \_ Não 0X004**</dt> <dt></dt> </dl> | De definido para desabilitar a interface do usuário.<br/>   |
+| <span id="PSPGF_NONINTERACTIVE"></span><span id="pspgf_noninteractive"></span><dl> <dt>**PSPGF \_ NonINTERACTIVE**</dt> <dt>0x004</dt> </dl> | De definido para desabilitar a interface do usuário.<br/>   |
 | <span id="PSPGF_NO_BACKUP"></span><span id="pspgf_no_backup"></span><dl> <dt>**PSPGF \_ NENHUMA \_ 0X002**</dt> <dt></dt> </dl>               | De definido para desabilitar o backup automático.<br/> |
 
 

@@ -50,12 +50,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cf16d56eaff321d313e3a27eb6dd774ef67e13ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 527ed2338c07eb943e6e2a3ef1c6e5f4342f446f0b5eff6a67ff2e3c7035a456
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059014"
 ---
 # <a name="imsrdpclient2advancedsettings3-property"></a>Propriedade IMsRdpClient2:: AdvancedSettings3
 

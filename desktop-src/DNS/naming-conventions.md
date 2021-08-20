@@ -4,18 +4,18 @@ description: As convenções de nomenclatura compartilham uma meta comum para re
 ms.assetid: 1ec96d2d-bb5a-4938-88c2-4d2802a326cd
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a2091123ed2bf1022910231cd08cb0e6cccae51a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e9b378f9383f773cb24fb47c81cb92a066094a4ce528d7f3710212c6bb7cac0d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076580"
 ---
 # <a name="naming-conventions"></a>Convenções de nomenclatura
 
 As convenções de nomenclatura compartilham uma meta comum: para resolver inequivocamente um nome para um endereço de rede, geralmente um endereço IP. A diferença entre as convenções de nomenclatura está na abordagem distinta de cada Convenção para resolver nomes.
 
-As seguintes convenções de nomenclatura são usadas para identificar computadores em vários métodos de resolução de nomes de sistema, incluindo o método do Windows 2000:
+as seguintes convenções de nomenclatura são usadas para identificar computadores em vários métodos de resolução de nomes de sistema, incluindo o método Windows 2000:
 
 -   [Nome do computador](#computer-name)
 -   [Nome do host](#host-name)
@@ -24,11 +24,11 @@ As seguintes convenções de nomenclatura são usadas para identificar computado
 
 ## <a name="computer-name"></a>Nome do Computador
 
-No espaço de nome NetBIOS simples, um único nome resolve de forma inequívoca um nome de computador para um endereço de rede. Esse é o nome que as versões anteriores do Windows armazenaram nas listas navegador e navegador mestre, permitindo que redes Windows de mesmo nível procurem recursos em computadores com Windows em rede. Nesse cenário, o termo associado ao computador era nome do *computador*. O registro do nome do computador depende de difusões de rede (e de um navegador mestre, determinado pelas eleições ganhas por números de versão posteriores do Windows ou pelo uso do Windows NT ou uma combinação). Isso era útil para redes pequenas e baseadas em pares do Windows, mas redes em breve cresceram além do que o uso de difusões e listas simples de navegadores de arquivos simples podem ser atendidos.
+No espaço de nome NetBIOS simples, um único nome resolve de forma inequívoca um nome de computador para um endereço de rede. esse é o nome que as versões anteriores do Windows armazenadas nas listas navegador e navegador mestre, permitindo que redes Windows de mesmo nível procurem recursos em computadores Windows em rede. Nesse cenário, o termo associado ao computador era nome do *computador*. o registro do nome do computador depende de difusões de rede (e de um navegador mestre, determinado pelas eleições ganhas mais tarde Windows números de versão ou Windows NT uso ou uma combinação). isso era útil para redes de Windows pequenas e baseadas em pares, mas redes em breve cresceram além do que o uso de difusões e listas simples de navegadores de arquivos simples podem ser atendidos.
 
 ## <a name="host-name"></a>Nome de host
 
-Em seguida, vieram o Windows Internet Serviço de Nomenclatura (WINS), que permitia um repositório dinâmico e centralizado de nomes de computadores baseados em NetBIOS armazenados em servidores WINS. Esses repositórios podem atender a uma rede maior. Com esse desenvolvimento, as consultas de resolução de nomes podem ser direcionadas para um servidor WINS (em vez de serem transmitidas) e os conflitos poderiam ser centralizados centralmente. Com o WINS, o termo nome do computador foi retido, mas o termo *nome do host* também apareceu e foi usado de forma intercambiável com o nome do computador. No momento, o WINS era o resolvedor de nome padrão para plataformas Windows, mas o DNS estava ganhando a popularidade e proliferação de redes maiores e maiores.
+em seguida, vieram o Windows Internet Serviço de Nomenclatura (WINS), que habilitou um repositório dinâmico e centralizado de nomes de computadores baseados em NetBIOS armazenados em servidores WINS. Esses repositórios podem atender a uma rede maior. Com esse desenvolvimento, as consultas de resolução de nomes podem ser direcionadas para um servidor WINS (em vez de serem transmitidas) e os conflitos poderiam ser centralizados centralmente. Com o WINS, o termo nome do computador foi retido, mas o termo *nome do host* também apareceu e foi usado de forma intercambiável com o nome do computador. no momento, o WINS era o resolvedor de nome padrão para plataformas Windows, mas o DNS estava ganhando a popularidade e proliferação de redes maiores e maiores.
 
 As redes cresceram e o WINS tornou-se menos capaz de lidar com o crescente volume de nomes. A capacidade de redução do WINS para lidar com a carga de resolução de nomes não foi devido à capacidade de processamento necessária para a resolução, mas, em vez disso, o fato de gerar nomes exclusivos para muitos computadores se tornou uma sobrecarga de gerenciamento cada vez maior.
 
@@ -44,9 +44,9 @@ Em vez de impor novos nomes ou novas convenções de nomenclatura aos usuários 
 
 ![o RDN e a hierarquia de domínio DNS se combinam para criar um FQDN](images/fqdn.png)
 
- 
+ 
 
- 
+ 
 
 
 

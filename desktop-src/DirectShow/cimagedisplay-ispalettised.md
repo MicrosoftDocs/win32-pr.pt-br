@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 89be1aa4883e22c1b91f7b895cb9f965a5595980
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: efe9b317727889ded0451f1275df51233277ad9f80d59f505fd646acf4c57409
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539286"
 ---
 # <a name="cimagedisplayispalettised-method"></a>Método CImageDisplay. IsPalettised
 
@@ -40,7 +40,7 @@ BOOL IsPalettised();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se o formato for palettized ou **false** caso contrário.
 
@@ -50,7 +50,7 @@ Retornará **true** se o formato for palettized ou **false** caso contrário.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

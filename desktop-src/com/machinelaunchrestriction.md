@@ -6,12 +6,12 @@ keywords:
 - COM valor do registro MachineLaunchRestriction COM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14dfcfe5535871c6b5b0fe310c94b920c522f05a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4d5cd235e2dd81e596448f25adfd72ad0b16c13d2da3860eb56fb95f93ef53cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048054"
 ---
 # <a name="machinelaunchrestriction"></a>MachineLaunchRestriction
 
@@ -20,13 +20,13 @@ Define a política de restrição de todo o computador para inicialização e at
 > [!Caution]  
 > A alteração desse valor afetará todos os aplicativos de servidor COM e poderá impedi-lo de funcionar corretamente. Se houver aplicativos de servidor COM que tenham restrições menos rigorosas do que as restrições em todo o computador, reduzir as restrições de computador poderá expor esses aplicativos para acesso indesejado. Por outro lado, se você aumentar as restrições de todo o computador, alguns aplicativos de servidor COM podem não estar mais acessíveis chamando aplicativos.
 
- 
+ 
 
 ## <a name="registry-entry"></a>Entrada do Registro
 
 ```
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Ole
-   MachineLaunchRestriction = SECURITY_DESCRIPTOR
+   MachineLaunchRestriction = SECURITY_DESCRIPTOR
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -44,9 +44,9 @@ Por padrão, os administradores podem obter permissões locais e remotas de inic
 [Definindo a segurança para aplicativos COM](setting-security-for-com-applications.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

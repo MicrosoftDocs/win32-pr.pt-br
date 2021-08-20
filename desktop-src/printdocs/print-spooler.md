@@ -4,12 +4,12 @@ ms.assetid: 36ffb001-78e2-4fa0-8241-3891493ac02d
 title: Spooler de impressão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4dfcc6ea2e46c06b5e51032a4c43f46df7f07c04
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52bac19b44ebed5762abdb00b9ea044cf775a7a7ca8193c641709ad2c39436dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104505901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033924"
 ---
 # <a name="print-spooler"></a>Spooler de impressão
 
@@ -21,7 +21,7 @@ O spooler de impressão dá suporte aos seguintes tipos de dados:
 
 -   Metarquivo avançado (EMF).
 -   Texto ASCII.
--   Dados brutos, que incluem tipos de dados de impressora, como PostScript, PCL e tipos de dados personalizados.
+-   dados brutos, que incluem tipos de dados de impressora, como PostScript, PCL e tipos de dados personalizados.
 
 Os tipos de dados personalizados podem ser adicionados ao spooler instalando drivers de impressora e processadores de impressão adicionais. Um trabalho de impressão é um documento armazenado internamente e codificado usando um dos tipos de dados com suporte, e um trabalho de impressão pode conter uma ou mais páginas de saída. O trabalho de impressão pode consistir em várias formas; por exemplo, um trabalho pode consistir em um envelope e três páginas de papel A4. Um trabalho de impressão é definido (ou entre colchetes) pelas funções [**StartDoc**](/windows/desktop/api/Wingdi/nf-wingdi-startdoca) e [**EndDoc**](/windows/desktop/api/Wingdi/nf-wingdi-enddoc) .
 

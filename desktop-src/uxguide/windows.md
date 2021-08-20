@@ -1,22 +1,22 @@
 ---
 title: Windows (noções básicas de Design)
-description: As janelas são as principais \ 0034; telas \ 0034; ou superfícies de interface do usuário do seu aplicativo de área de trabalho, incluindo o próprio Windows e pop-ups, caixas de diálogo e assistentes principais. Siga estas diretrizes ao decidir qual superfície usar e a melhor maneira de usá-las.
+description: Windows são as principais \ 0034; canvass \ 0034; ou superfícies de interface do usuário do seu aplicativo de área de trabalho, incluindo o próprio Windows e pop-ups, caixas de diálogo e assistentes principais. Siga estas diretrizes ao decidir qual superfície usar e a melhor maneira de usá-las.
 ms.assetid: E1FA78DA-D580-4B0E-AB59-29F013278766
 ms.topic: article
 ms.date: 10/20/2020
-ms.openlocfilehash: 5b7bb58750635af25d49208992d5583c44520a04
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 0664a6671e477f2b12f25b928fb39be69ac698ceba876aae5d8b65774e006edb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "103930067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028954"
 ---
 # <a name="windows-design-basics"></a>Windows (noções básicas de Design)
 
 > [!NOTE]
-> Este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
+> este guia de design foi criado para o Windows 7 e não foi atualizado para versões mais recentes do Windows. Grande parte da orientação ainda se aplica em princípio, mas a apresentação e os exemplos não refletem nossas [diretrizes de design atuais](/windows/uwp/design/).
 
-As janelas são as principais "telas" ou as superfícies de interface do usuário do seu aplicativo de área de trabalho, incluindo o próprio Windows e pop-ups, caixas de diálogo e assistentes principais. Siga estas diretrizes ao decidir qual superfície usar e a melhor maneira de usá-las.
+Windows são as principais "telas" ou as superfícies de interface do usuário do seu aplicativo de desktop, incluindo o próprio Windows e pop-ups, caixas de diálogo e assistentes principais. Siga estas diretrizes ao decidir qual superfície usar e a melhor maneira de usá-las.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -48,14 +48,14 @@ As janelas são as principais "telas" ou as superfícies de interface do usuári
 </tr>
 <tr class="even">
 <td><a href="win-common-dlg.md">Caixas de diálogo comuns</a><br/></td>
-<td>Os diálogos comuns do Microsoft Windows consistem nas caixas de diálogo abrir arquivo, salvar arquivo, abrir pasta, localizar e substituir, imprimir, Configurar página, fonte e cor.<br/></td>
+<td>o Microsoft Windows caixas de diálogo comuns consiste nas caixas de diálogo abrir arquivo, salvar arquivo, abrir pasta, localizar e substituir, imprimir, configurar página, fonte e cor.<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="win-wizards.md">Assistentes</a><br/></td>
 <td>Apesar de o maravilhoso, o nome estranho, os assistentes não são, na verdade, uma forma especial de interface do usuário e têm apenas um determinado intervalo de utilitários. <br/></td>
 </tr>
 <tr class="even">
-<td><a href="win-property-win.md">Janelas de propriedades</a><br/></td>
+<td><a href="win-property-win.md">Windows de propriedade</a><br/></td>
 <td>A janela de propriedades é o nome coletivo para os seguintes tipos de interfaces de usuário (UIs):<br/>
 <ul>
 <li>Folha de propriedades: usada para <strong>Exibir e alterar as propriedades de um objeto ou de uma coleção de objetos em uma caixa de diálogo</strong>.</li>

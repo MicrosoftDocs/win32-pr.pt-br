@@ -1,7 +1,7 @@
 ---
-description: Sinalizador que especifica se uma nova paleta está sendo realizada. Em compilações de depuração, o valor é TRUE enquanto a paleta está sendo alterada e FALSE caso contrário. Essa variável não é usada em compilações de varejo.
+description: Sinalizador que especifica se uma nova paleta está sendo realizada. Em builds de depuração, o valor é TRUE enquanto a paleta está mudando e FALSE caso contrário. Essa variável não é usada em builds de varejo.
 ms.assetid: 3aba880d-fa22-4745-a2b3-6701c808c4e3
-title: 'Membro CBaseWindow:: m_bRealizing (Winutil. h)'
+title: Membro CBaseWindow::m_bRealizing (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118954585"
 ---
-# <a name="cbasewindowm_brealizing-member"></a>Membro de CBaseWindow:: m \_ bRealizing
+# <a name="cbasewindowm_brealizing-member"></a>Membro CBaseWindow::m \_ bRealizing
 
-Sinalizador que especifica se uma nova paleta está sendo realizada. Em compilações de depuração, o valor é **true** enquanto a paleta está sendo alterada e **false** caso contrário. Essa variável não é usada em compilações de varejo.
+Sinalizador que especifica se uma nova paleta está sendo realizada. Em builds de depuração, o valor é **TRUE** enquanto a paleta está mudando e **FALSE** caso contrário. Essa variável não é usada em builds de varejo.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ BYTE m_bRealizing;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

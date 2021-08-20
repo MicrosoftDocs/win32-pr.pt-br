@@ -3,9 +3,9 @@ title: Método external. NavigateTaskPaneURL
 description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | Método external. NavigateTaskPaneURL
 ms.assetid: c3a888c0-6589-4d21-9d47-37372d9069f4
 keywords:
-- Método NavigateTaskPaneURL Windows Media Player
-- Método NavigateTaskPaneURL Windows Media Player, classe externa
-- Classe externa Windows Media Player, método NavigateTaskPaneURL
+- Windows Media Player do método NavigateTaskPaneURL
+- método NavigateTaskPaneURL Windows Media Player, classe externa
+- classe externa Windows Media Player, método NavigateTaskPaneURL
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e70558c7616738f67d9dc1d6d29eca15e5c30d4
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: eebcf8d799452a9966355f644f00ac5c4aecc4c066374254e8e580431b756b92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649026"
 ---
 # <a name="externalnavigatetaskpaneurl-method"></a>Método external. NavigateTaskPaneURL
 
@@ -70,7 +70,7 @@ External.NavigateTaskPaneURL(
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

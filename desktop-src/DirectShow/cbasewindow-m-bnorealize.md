@@ -1,7 +1,7 @@
 ---
-description: Sinalizador que especifica se a janela deve reconhecer sua paleta. Se for TRUE, a janela não perceberá sua paleta. O valor padrão é FALSE.
+description: Sinalizador que especifica se a janela deve perceber sua paleta. Se TRUE, a janela não perceberá sua paleta. O valor padrão é FALSE.
 ms.assetid: 7039d41a-daea-4128-9e1c-3cbd0c05ce13
-title: 'Membro CBaseWindow:: m_bNoRealize (Winutil. h)'
+title: Membro CBaseWindow::m_bNoRealize (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e24368eb0da2ad16b66d7b06942c83f3e33937da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45dddb9d596929674adf03ba042d6464718c58c225ef33e568924ef526618e91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778509"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016564"
 ---
-# <a name="cbasewindowm_bnorealize-member"></a>Membro de CBaseWindow:: m \_ bNoRealize
+# <a name="cbasewindowm_bnorealize-member"></a>Membro CBaseWindow::m \_ bNoRealize
 
-Sinalizador que especifica se a janela deve reconhecer sua paleta. Se **for true**, a janela não perceberá sua paleta. O valor padrão é **false**.
+Sinalizador que especifica se a janela deve perceber sua paleta. Se **TRUE**, a janela não perceberá sua paleta. O valor padrão é **FALSE**.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ BYTE m_bNoRealize;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

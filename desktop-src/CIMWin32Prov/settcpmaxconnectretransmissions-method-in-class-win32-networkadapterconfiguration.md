@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 160d84c2a466bff34070a6dec4a34804d5a3a7fc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: de612b2ece1f186fef218d8642d8ce2e28154c159df1bb5203f0fe4692f6baab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020454"
 ---
 # <a name="settcpmaxconnectretransmissions-method-of-the-win32_networkadapterconfiguration-class"></a>Método SetTcpMaxConnectRetransmissions da classe Win32 \_ NetworkAdapterConfiguration
 
@@ -49,7 +49,7 @@ Número de tentativas que o TCP retransmitirá uma solicitação de conexão ant
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando nenhuma reinicialização é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e um número diferente se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
 
@@ -321,7 +321,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -418,8 +418,8 @@ A amostra [Modificar o máximo de retransmissões de conexões TCP permitidas](h
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista, Windows Vista<br/>                                                 |
-| Servidor mínimo com suporte<br/> | Windows Server 2008, Windows Server 2008<br/>                                     |
+| Cliente mínimo com suporte<br/> | Windows vista, Windows vista<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows servidor 2008, Windows server 2008<br/>                                     |
 | Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
 | MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7ab3d7e56473094b31c0d97d0e15c083ff61a21d
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8383756197e076bc309e9f05e02c9c495a084644faa24959e5a7de2ac61a1c47
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108094914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119538336"
 ---
 # <a name="ctransformoutputpincompleteconnect-method"></a>Método CTransformOutputPin. CompleteConnect
 
@@ -63,7 +63,7 @@ Esse método substitui o método [**CBaseOutputPin:: CompleteConnect**](cbaseout
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
+| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

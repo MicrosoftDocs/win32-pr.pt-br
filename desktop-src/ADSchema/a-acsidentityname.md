@@ -1,11 +1,11 @@
 ---
 title: Atributo ACS-Identity-Name
-description: Esse atributo contém o DN de um usuário ou UO e é a identidade de um usuário ou um grupo de usuários aos quais essa política de QoS se aplica.
+description: Esse atributo contém o DN de um usuário ou uma UO e é a identidade de um usuário ou um grupo de usuários ao qual essa política de QoS se aplica.
 ms.assetid: 00e6e2bd-aec8-426f-b89e-0661c15cfd46
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo ACS-Identity-Name
-- Esquema do AD do atributo aCSIdentityName
+- ACS-Identity-Name-esquema de atributo do AD
+- Esquema de AD do atributo aCSIdentityName
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "117838396"
 ---
 # <a name="acs-identity-name-attribute"></a>Atributo ACS-Identity-Name
 
-Esse atributo contém o DN de um usuário ou UO e é a identidade de um usuário ou um grupo de usuários aos quais essa política de QoS se aplica.
+Esse atributo contém o DN de um usuário ou uma UO e é a identidade de um usuário ou um grupo de usuários ao qual essa política de QoS se aplica.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | ACS-Identity-Name                           |
-| Ldap-Display-Name | aCSIdentityName                             |
+| LDAP-Display-Name | aCSIdentityName                             |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de domínio                        |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.784                      |
-| System-Id-Guid    | dab029b6-ddf7-11d1-90a5-00c04fd91ab1        |
-| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
+| System-ID-GUID    | dab029b6-ddf7-11d1-90a5-00c04fd91ab1        |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Esse atributo contém o DN de um usuário ou UO e é a identidade de um usuário
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Falso                                        |
+| É de valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Esse atributo contém o DN de um usuário ou UO e é a identidade de um usuário
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Falso                                        |
+| É de valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Esse atributo contém o DN de um usuário ou UO e é a identidade de um usuário
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Falso                                        |
+| É de valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Esse atributo contém o DN de um usuário ou UO e é a identidade de um usuário
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Falso                                        |
+| É de valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Esse atributo contém o DN de um usuário ou UO e é a identidade de um usuário
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Falso                                        |
+| É de valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Esse atributo contém o DN de um usuário ou UO e é a identidade de um usuário
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Falso                                        |
+| É de valor único       | Falso                                        |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> |
+| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> |
 
 
 

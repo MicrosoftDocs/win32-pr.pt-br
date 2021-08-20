@@ -1,6 +1,6 @@
 ---
-title: Publicação em um objeto de computador
-description: Normalmente, os serviços baseados em host criam SCPs sob o objeto de computador para o computador host. Os serviços baseados em host são serviços fortemente vinculados a um único computador host.
+title: Publicando em um objeto de computador
+description: Normalmente, os serviços baseados em host criam SCPs no objeto de computador para o computador host. Os serviços baseados em host são serviços intimamente vinculados a um único computador host.
 ms.assetid: ecd7d8bc-4714-408a-856c-7cab8360bf81
 ms.tgt_platform: multiple
 ms.topic: article
@@ -12,20 +12,20 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119025354"
 ---
-# <a name="publishing-under-a-computer-object"></a>Publicação em um objeto de computador
+# <a name="publishing-under-a-computer-object"></a>Publicando em um objeto de computador
 
-Normalmente, os serviços baseados em host criam SCPs sob o objeto de computador para o computador host. Os serviços baseados em host são serviços fortemente vinculados a um único computador host.
+Normalmente, os serviços baseados em host criam SCPs no objeto de computador para o computador host. Os serviços baseados em host são serviços intimamente vinculados a um único computador host.
 
 **Para criar SCPs em um objeto de computador**
 
-1.  Chame a função [**GetComputerObjectName**](/windows/desktop/api/secext/nf-secext-getcomputerobjectnamea) para obter o DN (nome distinto) no diretório do objeto de computador do computador local.
-2.  Use esse DN para associar ao objeto de computador e criar o SCP.
+1.  Chame a [**função GetComputerObjectName**](/windows/desktop/api/secext/nf-secext-getcomputerobjectnamea) para obter o nome diferenciado (DN) no diretório do objeto de computador do computador local.
+2.  Use esse DN para se vincular ao objeto de computador e criar o SCP.
 
-Para obter mais informações e um exemplo de código, consulte [como os clientes encontram e usam um ponto de conexão de serviço](how-clients-find-and-use-a-service-connection-point.md).
+Para obter mais informações e um exemplo de código, consulte [How Clients Find and Use a Service Connection Point](how-clients-find-and-use-a-service-connection-point.md).
 
-Lembre-se de que somente computadores membros do domínio têm objetos de computador válidos no diretório.
+Esteja ciente de que somente computadores membros do domínio têm objetos de computador válidos no diretório.
 
-Para obter o nome DNS ou NetBIOS do computador local, chame a função [**GetComputerNameEx devia**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getcomputernameexa) .
+Para obter o nome DNS ou NetBIOS do computador local, chame a [**função GetComputerNameEx.**](/windows/desktop/api/sysinfoapi/nf-sysinfoapi-getcomputernameexa)
 
  
 

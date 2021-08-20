@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - checkbmi.h
-ms.openlocfilehash: 7c3a3c9603f974458ed3012dc651815abd432645
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4463a1edb2002f64e983a38eb4a0ace5b5289b4d47ac43c8ea27bf165138ff95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119539536"
 ---
 # <a name="checkvideoinfotype-function"></a>Função CheckVideoInfoType
 
@@ -51,7 +51,7 @@ Ponteiro para a estrutura do [**\_ \_ tipo de mídia am**](/windows/win32/api/st
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores de **HRESULT** a seguir.
 

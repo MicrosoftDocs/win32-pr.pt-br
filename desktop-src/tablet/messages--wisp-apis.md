@@ -4,12 +4,12 @@ ms.assetid: 2bb86bc3-deab-4821-8ce7-44a7a0157927
 title: Mensagens usadas pelo WPF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6fb3e569798e3cec0e504b913499b9d8420345e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 916dc65bb1815a4eb10f28f93fa5d8ab88ffebd37863498c4a3e0a6709ae0c5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119031664"
 ---
 # <a name="messages-used-by-wpf"></a>Mensagens usadas pelo WPF
 
@@ -17,8 +17,8 @@ Essas mensagens são usadas pelo Windows Presentation Foundation para implementa
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Mensagem do WM \_ Tablet \_ adicionado**](wm-tablet-added.md)
--   [**\_ \_ Mensagem excluída do WM Tablet**](wm-tablet-deleted.md)
+-   [**Mensagem ADICIONADA \_ AO TABLET \_ WM**](wm-tablet-added.md)
+-   [**Mensagem \_ EXCLUÍDA DO WM TABLET \_**](wm-tablet-deleted.md)
 
  
 

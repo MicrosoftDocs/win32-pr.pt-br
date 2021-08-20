@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_GETRECT (commctrl. h)
-description: Recupera o retângulo delimitador para um botão de barra de ferramentas especificado.
+title: TB_GETRECT mensagem (Commctrl.h)
+description: Recupera o retângulo delimitador de um botão de barra de ferramentas especificado.
 ms.assetid: a93885eb-7eb7-4434-ad51-80fb30d3bfa1
 keywords:
-- Controles de TB_GETRECT de mensagens do Windows
+- TB_GETRECT controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 889d067eb282e3d834ba4dc0cf6711c0561d86e6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc9a2b12fd2331a8346addbb5702a7837c9c0b28108850d3a4fd0d8e35432fa5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078300"
 ---
-# <a name="tb_getrect-message"></a>Mensagem de TB \_ GETrect
+# <a name="tb_getrect-message"></a>Mensagem \_ GETRECT de TB
 
-Recupera o retângulo delimitador para um botão de barra de ferramentas especificado.
+Recupera o retângulo delimitador de um botão de barra de ferramentas especificado.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,17 +39,17 @@ Identificador de comando do botão.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) que receberá as informações de retângulo delimitador.
+Ponteiro para uma [**estrutura RECT**](/previous-versions//dd162897(v=vs.85)) que receberá as informações delimitadores do retângulo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Esta mensagem não recupera o retângulo delimitador para botões cujo estado é definido como o [**valor \_ oculto TBSTATE**](toolbar-button-states.md) .
+Essa mensagem não recupera o retângulo delimitador para botões cujo estado é definido como o [**valor HIDDEN DE TBSTATE. \_**](toolbar-button-states.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Esta mensagem não recupera o retângulo delimitador para botões cujo estado é
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Recupera o número de tablets anexados ao sistema.
 ms.assetid: b2027336-611b-4d17-8943-f16770effaf8
-title: 'Método ITabletManager:: GetTabletCount'
+title: Método ITabletManager::GetTabletCount
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - wisptis.exe
 - wisptis.exe.dll
-ms.openlocfilehash: fbdd485c44bc67b3ecaec5aa279d4bc20e18d167
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80d5585a96ebae60885e17dae5ebf1550128d6c5c8db5ae2a35c81c284c10977
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119031874"
 ---
-# <a name="itabletmanagergettabletcount-method"></a>Método ITabletManager:: GetTabletCount
+# <a name="itabletmanagergettabletcount-method"></a>Método ITabletManager::GetTabletCount
 
 Recupera o número de tablets anexados ao sistema.
 
@@ -40,14 +40,14 @@ HRESULT GetTabletCount(
 
 <dl> <dt>
 
-*pcTablets* \[ fora\]
+*pcTablets* \[ out\]
 </dt> <dd>
 
 O número de tablets anexados ao sistema.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -56,7 +56,7 @@ Esse método pode retornar um desses valores.
 | Código de retorno                                                                            | Descrição                               |
 |----------------------------------------------------------------------------------------|-------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>   | Êxito.<br/>                       |
-| <dl> <dt>**E \_ falha**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl> | Ocorreu um erro não especificado.<br/> |
 
 
 
@@ -68,7 +68,7 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                          |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Biblioteca<br/>                  | <dl> <dt>Wisptis.exe</dt> </dl> |
 
@@ -78,7 +78,7 @@ Esse método pode retornar um desses valores.
 
 <dl> <dt>
 
-[**Interface ITabletManager**](itabletmanager.md)
+[**ITabletManager Interface**](itabletmanager.md)
 </dt> </dl>
 
  

@@ -14,12 +14,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 8776c0b5e9ddf1653747b82e94040197e4c56f27
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbd5e96c7d00574848c43fe57695ba84e39dd2c0591483a65a1f56af94cca8a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068656"
 ---
 # <a name="cim_userdevice-class-hyper-v-management"></a>Classe CIM_UserDevice (gerenciamento do Hyper-V)
 

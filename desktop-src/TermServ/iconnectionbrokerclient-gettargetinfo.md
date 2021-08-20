@@ -1,12 +1,12 @@
 ---
-title: Método IConnectionBrokerClient GetTargetInfo (Cbclient. h)
-description: Solicita informações sobre o computador de destino onde a conexão deve ser redirecionada.
+title: Método GetTargetInfo IConnectionBrokerClient (Cbclient.h)
+description: Solicita informações sobre o computador de destino em que a conexão deve ser redirecionada.
 ms.assetid: 43970B06-8CBD-4204-94AE-090A63918A90
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método GetTargetInfo
-- Método GetTargetInfo Serviços de Área de Trabalho Remota, interface IConnectionBrokerClient
-- Serviços de Área de Trabalho Remota de interface IConnectionBrokerClient, método GetTargetInfo
+- Método GetTargetInfo Serviços de Área de Trabalho Remota
+- Método GetTargetInfo Serviços de Área de Trabalho Remota interface , IConnectionBrokerClient
+- Interface IConnectionBrokerClient Serviços de Área de Trabalho Remota , método GetTargetInfo
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 366bebf398c5c776e43d5cdee4b99e28e8c580fb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: df214f23c09b7439843f0d7e8947d40cc32b2bf30eece887c921aac34306fbdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119059184"
 ---
-# <a name="iconnectionbrokerclientgettargetinfo-method"></a>Método IConnectionBrokerClient:: GetTargetInfo
+# <a name="iconnectionbrokerclientgettargetinfo-method"></a>Método IConnectionBrokerClient::GetTargetInfo
 
-Solicita informações sobre o computador de destino onde a conexão deve ser redirecionada. Esse método é usado pelo redirecionador para obter informações de redirecionamento para a solicitação de conexão de entrada.
+Solicita informações sobre o computador de destino em que a conexão deve ser redirecionada. Esse método é usado pelo redirecionador para obter informações de redirecionamento para a solicitação de conexão de entrada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,38 +48,38 @@ HRESULT GetTargetInfo(
 
 <dl> <dt>
 
-*pConnectionInfo* \[ no\]
+*pConnectionInfo* \[ Em\]
 </dt> <dd>
 
-O endereço de uma estrutura de [**\_ \_ informações de conexão CB**](cb-connection-info.md) que contém informações sobre a solicitação de conexão de entrada.
+O endereço de uma estrutura [**CB \_ CONNECTION \_ INFO**](cb-connection-info.md) que contém informações sobre a solicitação de conexão de entrada.
 
 </dd> <dt>
 
-*Reservado* \[ para no\]
+*Reservado* \[ Em\]
 </dt> <dd>
 
 Esse parâmetro é reservado para uso futuro e deve ser zero.
 
 </dd> <dt>
 
-*hStatusEvent* \[ no\]
+*hStatusEvent* \[ Em\]
 </dt> <dd>
 
-O identificador de um evento que será definido sempre que houver uma atualização do andamento da solicitação. Você é responsável por criar e fechar esse evento.
+O handle de um evento que será definido sempre que houver uma atualização para o progresso da solicitação. Você é responsável por criar e fechar esse evento.
 
 </dd> <dt>
 
-*pTargetInfo* \[ fora\]
+*pTargetInfo* \[ out\]
 </dt> <dd>
 
-O endereço de uma estrutura de [**\_ \_ informações de destino CB**](cb-target-info.md) que recebe informações sobre o computador de destino em que a conexão de entrada deve ser redirecionada. Como esse é um método assíncrono, essa memória deve permanecer disponível até que a solicitação seja concluída. Para obter mais informações, consulte Comentários.
+O endereço de uma estrutura [**CB \_ TARGET \_ INFO**](cb-target-info.md) que recebe informações sobre o computador de destino no qual a conexão de entrada deve ser redirecionada. Como esse é um método assíncrono, essa memória deve permanecer disponível até que a solicitação seja concluída. Para obter mais informações, consulte Comentários.
 
 </dd> <dt>
 
-*pResult* \[ fora\]
+*pResult* \[ out\]
 </dt> <dd>
 
-O endereço de uma variável **DWORD** que recebe um código de resultado. Como esse é um método assíncrono, essa memória deve permanecer disponível até que a solicitação seja concluída. Para obter mais informações, consulte Comentários.
+O endereço de uma **variável DWORD** que recebe um código de resultado. Como esse é um método assíncrono, essa memória deve permanecer disponível até que a solicitação seja concluída. Para obter mais informações, consulte Comentários.
 
 Esse código de resultado será um dos valores a seguir.
 
@@ -95,7 +95,7 @@ Sucesso.
 0x0000400
 </dt> <dd>
 
-O computador de destino não foi encontrado.
+Não foi possível encontrar o computador de destino.
 
 </dd> <dt>
 
@@ -130,7 +130,7 @@ Erro ao redirecionar para o computador de destino.
 0x0000405
 </dt> <dd>
 
-Erro ao ativar a máquina virtual.
+Erro ao adoção da máquina virtual.
 
 </dd> <dt>
 
@@ -151,7 +151,7 @@ Erro ao localizar o endereço IP da máquina virtual.
 0x0000408
 </dt> <dd>
 
-O agente de sessão não pôde localizar nenhum computador disponível no pool.
+O agente de sessão não pôde encontrar nenhum computador disponível no pool.
 
 </dd> <dt>
 
@@ -169,22 +169,22 @@ O agente de sessão não pôde validar as configurações de conexão.
 
 </dd> </dl> </dd> <dt>
 
-*ppCbReq* \[ fora\]
+*ppCbReq* \[ out\]
 </dt> <dd>
 
-O endereço de um ponteiro de interface [**IConnectionBrokerRequest**](iconnectionbrokerrequest.md) que você usa para obter atualizações de status para uma operação assíncrona. Essa interface é usada em conjunto com o parâmetro *hStatusEvent* para aguardar e obter os resultados dessa operação assíncrona.
+O endereço de um ponteiro de interface [**IConnectionBrokerRequest**](iconnectionbrokerrequest.md) que você usa para obter atualizações de status para uma operação assíncrona. Essa interface é usada em conjunto com o *parâmetro hStatusEvent* para aguardar e obter os resultados dessa operação assíncrona.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **E \_ pendente** se a solicitação assíncrona for criada. Caso contrário, ele retorna um código de erro **HRESULT** .
+Retornará **\_ E PENDING** se a solicitação assíncrona for criada. Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é assíncrono. Os parâmetros *pTargetInfo* e *pResult* devem permanecer válidos até que o método [**IConnectionBrokerRequest:: CheckStatus**](iconnectionbrokerrequest-checkstatus.md) obtenha a **solicitação de status CB \_ \_ \_ concluída**.
+Esse método é assíncrono. Os *parâmetros pTargetInfo* e *pResult* devem permanecer válidos até que o método [**IConnectionBrokerRequest::CheckStatus**](iconnectionbrokerrequest-checkstatus.md) obtenha **CB STATUS REQUEST \_ \_ \_ COMPLETED.**
 
-Para obter mais informações sobre como usar esse método, consulte [como usar a API de cliente do agente de conexão de área de trabalho remota](use-the-remote-desktop-connection-broker-client-api.md).
+Para obter mais informações sobre como usar esse método, consulte [How to use the Conexão de Área de Trabalho Remota Broker client API](use-the-remote-desktop-connection-broker-client-api.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -194,8 +194,8 @@ Para obter mais informações sobre como usar esse método, consulte [como usar 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Cbclient. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Cbclient. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Cbclient.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Cbclient.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Cbclient.dll</dt> </dl> |
 
 

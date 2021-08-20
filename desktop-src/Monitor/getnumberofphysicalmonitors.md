@@ -1,9 +1,9 @@
 ---
 title: Função GetNumberOfPhysicalMonitors
-description: Obtém o número de monitores físicas associados a um dispositivo de vídeo.
+description: Obtém o número de monitores filos associados a um dispositivo de exibição.
 ms.assetid: 498404e7-867d-4971-bea1-16e9f8fd9838
 keywords:
-- Configuração do monitor de função GetNumberOfPhysicalMonitors
+- Configuração do Monitor da função GetNumberOfPhysicalMonitors
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09bec6abf296d807f80ab77cdc7ad8b4062fea9b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 673ef12d1e02d87e068784408824bb78dbbbad5dfd5c907ece58c3eb7673e957
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119534926"
 ---
 # <a name="getnumberofphysicalmonitors-function"></a>Função GetNumberOfPhysicalMonitors
 
 > [!IMPORTANT]
-> Essa função é usada pela API de configuração do monitor para acessar a funcionalidade no driver de vídeo. Os aplicativos não devem chamar essa função.
+> Essa função é usada pela API de configuração do monitor para acessar a funcionalidade no driver de exibição. Os aplicativos não devem chamar essa função.
 
  
 
-Obtém o número de monitores físicas associados a um dispositivo de vídeo.
+Obtém o número de monitores filos associados a um dispositivo de exibição.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,23 +46,23 @@ NTSTATUS WINAPI GetNumberOfPhysicalMonitors(
 
 <dl> <dt>
 
-*pstrDeviceName* \[ no\]
+*pstrDeviceName* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para uma estrutura de [**\_ cadeia de caracteres Unicode**](/windows/desktop/api/subauth/ns-subauth-unicode_string) que contém o nome do dispositivo de vídeo, conforme retornado pela função [**GetMonitorInfo**](/windows/desktop/api/winuser/nf-winuser-getmonitorinfoa) .
+Um ponteiro para uma [**estrutura \_ STRING UNICODE**](/windows/desktop/api/subauth/ns-subauth-unicode_string) que contém o nome do dispositivo de exibição, conforme retornado pela [**função GetMonitorInfo.**](/windows/desktop/api/winuser/nf-winuser-getmonitorinfoa)
 
 </dd> <dt>
 
-*pdwNumberOfPhysicalMonitors* \[ fora\]
+*pdwNumberOfPhysicalMonitors* \[ out\]
 </dt> <dd>
 
 Recebe o número de monitores físicos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método for bem-sucedido, ele retornará o **status \_ êxito**. Caso contrário, ele retorna um código de erro **NTSTATUS** .
+Se o método for bem-sucedido, ele **retornará STATUS \_ SUCCESS.** Caso contrário, retornará um **código de erro NTSTATUS.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -71,7 +71,7 @@ Em vez de usar essa função, os aplicativos devem chamar uma das seguintes fun�
 -   [**GetNumberOfPhysicalMonitorsFromHMONITOR**](/windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getnumberofphysicalmonitorsfromhmonitor)
 -   [**GetNumberOfPhysicalMonitorsFromIDirect3DDevice9**](/windows/desktop/api/PhysicalMonitorEnumerationAPI/nf-physicalmonitorenumerationapi-getnumberofphysicalmonitorsfromidirect3ddevice9)
 
-Esta função não tem biblioteca de importação associada. Para chamar essa função, você deve usar as funções [**LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Gdi32.dll.
+Essa função não tem nenhuma biblioteca de importação associada. Para chamar essa função, você deve usar as [**funções LoadLibrary**](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) para vincular dinamicamente a Gdi32.dll.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Esta função não tem biblioteca de importação associada. Para chamar essa fu
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Gdi32.dll</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 03854b38-4dba-480e-b931-34299d04c551
 title: Registrando para eventos de terminal conectável
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d42bf75cfd0d7e6bd4d8a2520335c374cce28c73
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c71993d597cbcba7c634068813eb14939539dc7e7d43cda0105e8cf9ee615a1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119060454"
 ---
 # <a name="registering-for-pluggable-terminal-events"></a>Registrando para eventos de terminal conectável
 

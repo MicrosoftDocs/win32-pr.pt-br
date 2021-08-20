@@ -1,6 +1,6 @@
 ---
 title: Funções (injeção de toque)
-description: Os tópicos nesta seção fornecem as especificações de referência para funções de injeção de toque.
+description: Os tópicos nesta seção fornecem as especificações de referência para funções de Injeção de Toque.
 ms.assetid: 8C2DF633-EACB-4B99-91D9-BCB7BE518A2E
 keywords:
 - interação do usuário
@@ -9,16 +9,16 @@ keywords:
 - touch
 ms.topic: article
 ms.date: 02/06/2020
-ms.openlocfilehash: d0b094c27f72d551d9bb7823521a5391a45120bc
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: e2ed92fc950d601cde863e96bc33577963d4df018140bbfcd13fed009d7003b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105794632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119611726"
 ---
 # <a name="touch-injection-functions"></a>Funções de injeção de toque
 
-Os tópicos nesta seção fornecem as especificações de referência para funções de [injeção de toque](touch-injection-portal.md) .
+Os tópicos nesta seção fornecem as especificações de referência para funções [de Injeção](touch-injection-portal.md) de Toque.
 
 ## <a name="in-this-section"></a>Nesta seção
 

@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-ManagedPasswordInterval
-description: Esse atributo é usado para recuperar o número de dias antes que uma senha gerenciada seja alterada automaticamente para um grupo MSA.
+title: Atributo ms-DS-ManagedPasswordInterval
+description: Esse atributo é usado para recuperar o número de dias antes que uma senha gerenciada seja alterada automaticamente para uma MSA de grupo.
 ms.assetid: 9473e29e-32d2-4461-b04f-a36a7e0ab412
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-ManagedPasswordInterval
-- atributo msDS-ManagedPasswordInterval do AD Schema
+- Atributo AD MS-DS-ManagedPasswordInterval
+- Esquema do AD do atributo msDS-ManagedPasswordInterval
 topic_type:
 - apiref
 api_name:
@@ -21,21 +21,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119552126"
 ---
-# <a name="ms-ds-managedpasswordinterval-attribute"></a>atributo ms-DS-ManagedPasswordInterval
+# <a name="ms-ds-managedpasswordinterval-attribute"></a>Atributo ms-DS-ManagedPasswordInterval
 
-Esse atributo é usado para recuperar o número de dias antes que uma senha gerenciada seja alterada automaticamente para um grupo MSA.
+Esse atributo é usado para recuperar o número de dias antes que uma senha gerenciada seja alterada automaticamente para uma MSA de grupo.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | ms-DS-ManagedPasswordInterval        |
-| LDAP-Display-Name | msDS-ManagedPasswordInterval         |
+| Ldap-Display-Name | msDS-ManagedPasswordInterval         |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2199              |
-| System-ID-GUID    | f8758ef7-ac76-8843-a2ee-a26b4dcaf409 |
+| System-Id-Guid    | f8758ef7-ac76-8843-a2ee-a26b4dcaf409 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -53,10 +53,10 @@ Esse atributo é usado para recuperar o número de dias antes que uma senha gere
 | ID do link                | \-                                                                                          |
 | MAPI-Id                | \-                                                                                          |
 | System-Only            | Verdadeiro                                                                                        |
-| É de valor único       | Verdadeiro                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                        |
 | É indexado             | Falso                                                                                       |
-| No catálogo global      | Falso                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                |
+| No Catálogo Global      | Falso                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                |
 | Range-Lower            | \-                                                                                          |
 | Range-Upper            | \-                                                                                          |
 | Search-Flags           | 0x00000000                                                                                  |

@@ -3,7 +3,7 @@ title: Atributo IsNetworkFeed
 description: O atributo IsNetworkFeed indica que a playlist é atualizada dinamicamente.
 ms.assetid: 4d5e4516-d49e-48f2-994b-e32a8e4ea42c
 keywords:
-- Atributo IsNetworkFeed Windows Media Player
+- Windows Media Player de atributo IsNetworkFeed
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b49128f7fec428da97a00693eba859d23d9d81c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fee59a007640563b3fe52f81c91ded129b898b720bd5f2ceaab9e38dcb2703ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760435"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119508796"
 ---
 # <a name="isnetworkfeed-attribute"></a>Atributo IsNetworkFeed
 

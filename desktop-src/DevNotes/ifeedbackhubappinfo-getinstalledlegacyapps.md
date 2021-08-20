@@ -1,7 +1,7 @@
 ---
-description: 'Método IFeedbackHubAppInfo:: GetInstalledLegacyApps-essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.'
+description: Método IFeedbackHubAppInfo::GetInstalledLegacyApps – essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja especialmente provisionado pela Microsoft, as chamadas a essas APIs falharão em runtime.
 ms.assetid: 84135D6F-8232-4CE5-AD38-D18823F0E174
-title: 'Método IFeedbackHubAppInfo:: GetInstalledLegacyApps'
+title: Método IFeedbackHubAppInfo::GetInstalledLegacyApps
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118955945"
 ---
-# <a name="ifeedbackhubappinfogetinstalledlegacyapps-method"></a>Método IFeedbackHubAppInfo:: GetInstalledLegacyApps
+# <a name="ifeedbackhubappinfogetinstalledlegacyapps-method"></a>Método IFeedbackHubAppInfo::GetInstalledLegacyApps
 
-Esta API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.
+Essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja especialmente provisionado pela Microsoft, as chamadas a essas APIs falharão em runtime.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,7 +41,7 @@ virtual void GetInstalledLegacyApps(
 *resultado* \[ out, opcional\]
 </dt> <dd>
 
-Esta API não está disponível para todos os aplicativos. A menos que seu aplicativo seja provisionado especialmente pela Microsoft, as chamadas para essas APIs falharão em tempo de execução.
+Essa API não está disponível para todos os aplicativos. A menos que seu aplicativo seja especialmente provisionado pela Microsoft, as chamadas a essas APIs falharão em runtime.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>          |
-| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>          |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/> |
 
 
 

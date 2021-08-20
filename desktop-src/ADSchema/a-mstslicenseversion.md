@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc5efe318157f55cad5a7cae23e6e9b189608acb
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 156efd0ea3f58cdab34afec5a848f98219cdd6afebb146801d0a3c874614e9d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919588"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022564"
 ---
 # <a name="ms-ts-licenseversion-attribute"></a>Atributo MS-TS-LicenseVersion
 
@@ -55,8 +55,8 @@ Versão da licença do Terminal Server.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
+| É de valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | \-           |
@@ -76,8 +76,8 @@ Versão da licença do Terminal Server.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
+| É de valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | \-           |
@@ -97,8 +97,8 @@ Versão da licença do Terminal Server.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
-| É indexado             | True         |
+| É de valor único       | Verdadeiro         |
+| É indexado             | Verdadeiro         |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
 | Range-Lower            | \-           |
