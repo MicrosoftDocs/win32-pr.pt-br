@@ -1,19 +1,19 @@
 ---
-description: A primeira etapa no uso dos serviços de aquisição de imagem do Windows (WIA) é obter um ponteiro de interface IWiaDevMgr (se você estiver programando para o Windows XP ou anterior) ou um ponteiro de interface IWiaDevMgr2 (se você estiver programando para o Windows Vista ou posterior).
+description: a primeira etapa no uso dos serviços WIA (Windows Image Acquisition) é obter um ponteiro de interface IWiaDevMgr (se você estiver programando para Windows XP ou anterior) ou um ponteiro de interface IWiaDevMgr2 (se você estiver programando para o Windows Vista ou posterior).
 ms.assetid: 8f20c64a-db79-4c3c-a544-685ed82143bb
 title: Criando um Gerenciador de Dispositivos WIA
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35e315939566eea6fe8a4acabeb5fd8afe247c30
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 779b171225062381d5b6951ed536b086fd46a27def108802e34fff82e3527991
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788964"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118035767"
 ---
 # <a name="creating-a-wia-device-manager"></a>Criando um Gerenciador de Dispositivos WIA
 
-A primeira etapa no uso dos serviços de aquisição de imagem do Windows (WIA) é obter um ponteiro de interface [**IWiaDevMgr**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadevmgr) (se você estiver programando para o Windows XP ou anterior) ou um ponteiro de interface [**IWiaDevMgr2**](-wia-iwiadevmgr2.md) (se você estiver programando para o Windows Vista ou posterior). Para fazer isso, chame [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) com os parâmetros apropriados. O aplicativo de exemplo WiaSSamp cria um Gerenciador de dispositivos dentro de uma função global implementada pelo seguinte código:
+a primeira etapa no uso dos serviços WIA (Windows Image Acquisition) é obter um ponteiro de interface [**IWiaDevMgr**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadevmgr) (se você estiver programando para Windows XP ou anterior) ou um ponteiro de interface [**IWiaDevMgr2**](-wia-iwiadevmgr2.md) (se você estiver programando para o Windows Vista ou posterior). Para fazer isso, chame [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) com os parâmetros apropriados. O aplicativo de exemplo WiaSSamp cria um Gerenciador de dispositivos dentro de uma função global implementada pelo seguinte código:
 
 
 ```

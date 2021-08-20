@@ -1,27 +1,27 @@
 ---
-description: Os exemplos a seguir demonstram o uso da API de compactação no modo de buffer.
+description: Os exemplos a seguir demonstram o uso da API de Compactação no modo de buffer.
 ms.assetid: 0A062E5D-E5FA-4098-B76E-E136FC74D853
-title: Usando a API de compactação no modo de buffer
+title: Usando a API de Compactação no modo de buffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 676a5bea1ea4fa673bbf9a8fc2caf9fe84d9bc1e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 79a63b8a7dabc7b61c85abb192f855f094a6e271a99997b9e98b849614d53527
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119048934"
 ---
-# <a name="using-the-compression-api-in-buffer-mode"></a>Usando a API de compactação no modo de buffer
+# <a name="using-the-compression-api-in-buffer-mode"></a>Usando a API de Compactação no modo de buffer
 
-Os exemplos a seguir demonstram o uso da API de compactação no modo de buffer. O modo de buffer foi desenvolvido para facilitar o uso e divide automaticamente o buffer de entrada em blocos de um tamanho apropriado para o algoritmo de compactação selecionado. O modo de buffer formata e armazena automaticamente o tamanho do buffer descompactado no buffer compactado onde ele está disponível para o descompactador. O tamanho do buffer compactado não é salvo automaticamente e o aplicativo precisa salvá-lo para descompactação. Não inclua o sinalizador **de \_ compactação comprimida** ao chamar [**createcompacter**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) ou [**CREATEDECOMPRESSOR**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor) se você quiser usar a API de compactação no modo de buffer.
+Os exemplos a seguir demonstram o uso da API de Compactação no modo de buffer. O modo de buffer foi desenvolvido para facilitar o uso e divide automaticamente o buffer de entrada em blocos de um tamanho apropriado para o algoritmo de compactação selecionado. O modo de buffer formatará e armazenará automaticamente o tamanho do buffer descompactado no buffer compactado em que ele está disponível para o descompactador. O tamanho do buffer compactado não é salvo automaticamente e o aplicativo precisa salvá-lo para descompactação. Não inclua o sinalizador **COMPRESS \_ RAW** ao chamar [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) ou [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor) se você quiser usar a API de Compactação no modo de buffer.
 
-O modo de buffer é recomendado para a maioria dos casos. Para obter mais informações sobre como usar o modo de bloco, consulte [usando a API de compactação no modo de bloco](using-the-compression-api-in-block-mode.md)
+O modo de buffer é recomendado para a maioria dos casos. Para obter mais informações sobre como usar o modo de bloco, consulte [Usando a API de Compactação no modo de bloco](using-the-compression-api-in-block-mode.md)
 
-Os aplicativos que usam o buffer ou o modo de bloco têm a opção de especificar uma rotina de alocação de memória personalizada ao chamar [**Createcompacter**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) ou [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). Consulte a seção [usando a API de compactação em modo de bloco](using-the-compression-api-in-block-mode.md) para obter um exemplo de uma rotina de alocação personalizada simples.
+Os aplicativos que usam o modo de buffer ou de bloco têm a opção de especificar uma rotina de alocação de memória personalizada ao chamar [**CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) ou [**CreateDecompressor**](/windows/desktop/api/compressapi/nf-compressapi-createdecompressor). Consulte a [seção Usando a API de Compactação](using-the-compression-api-in-block-mode.md) no modo de bloco para ver um exemplo de uma rotina de alocação personalizada simples.
 
-**Windows 8 e Windows Server 2012:** Para usar o código de exemplo a seguir, você deve estar executando o Windows 8 ou o Windows Server 2012 e ter "compressapi. h" e "cabinet.dll" e vincular ao "Cabinet. lib".
+**Windows 8 e Windows Server 2012:** Para usar o código de exemplo a seguir, você deve estar executando Windows 8 ou Windows Server 2012 e ter "compressapi.h" e "cabinet.dll" e vincular ao "Cabinet.lib".
 
-O trecho de código a seguir demonstra a compactação de arquivo com o algoritmo de compactação do XPRESS e a codificação Huffman usando a API de compactação no modo buffer. O aplicativo aceita um arquivo, compacta seu conteúdo e gera um arquivo compactado. Primeiro, o aplicativo chama [**Createcompactár**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) com o **\_ algoritmo compress \_ Xpress \_ Huff** para gerar um compressor. Em seguida, ele chama [**compress**](/windows/desktop/api/compressapi/nf-compressapi-compress), com *CompressedBufferSize* definido como 0, para consultar o tamanho necessário do buffer compactado. Ele aloca um buffer de saída para o valor *CompressedBufferSize* . O **aplicativo chama a compactação** uma segunda vez para executar a compactação real. Por fim, o aplicativo grava os dados compactados no arquivo de saída.
+O snippet de código a seguir demonstra a compactação de arquivo com o algoritmo de compactação XPRESS e a codificação Demão usando a API de Compactação no modo de buffer. O aplicativo aceita um arquivo, compacta seu conteúdo e gera um arquivo compactado. Primeiro, o aplicativo [**chama CreateCompressor**](/windows/desktop/api/compressapi/nf-compressapi-createcompressor) com **COMPRESS \_ ALGORITHM \_ XPRESS \_ TELEGRAM** para gerar um time. Em seguida, ele chama [**Compactar**](/windows/desktop/api/compressapi/nf-compressapi-compress), com *CompressedBufferSize* definido como 0, para consultar o tamanho necessário do buffer compactado. Ele aloca um buffer de saída para o *valor CompressedBufferSize.* O aplicativo chama **Compactar** uma segunda vez para executar a compactação real. Por fim, o aplicativo grava os dados compactados no arquivo de saída.
 
 
 ```C++
@@ -237,7 +237,7 @@ done:
 
 
 
-O trecho de código a seguir demonstra a descompactação de arquivo usando a API de compactação no modo de buffer.
+O snippet de código a seguir demonstra a descompactação de arquivo usando a API de Compactação no modo de buffer.
 
 
 ```C++

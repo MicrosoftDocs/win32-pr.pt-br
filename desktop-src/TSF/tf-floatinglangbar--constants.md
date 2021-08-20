@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c789e507b2cc56281dc61750d4fe0748bee8841
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 673a73babc04050092f41c92eb660ec0c61096aab735507947b9d31dabb7e4a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105758126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118874533"
 ---
 # <a name="tf_floatinglangbar_-constants"></a>TF \_ FLOATINGLANGBAR \_ \* constantes
 
@@ -47,8 +47,8 @@ Embora existam três constantes nesse grupo, a primária é TF \_ FLOATINGLANGBA
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                            |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                  |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>Ctfutb. h</dt> </dl>   |
+| Redistribuível<br/>          | TSF 1,0 em Windows 2000 Professional<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Ctfutb. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Ctfutb. idl</dt> </dl> |
 
 

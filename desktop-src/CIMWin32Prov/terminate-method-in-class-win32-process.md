@@ -1,8 +1,8 @@
 ---
-description: O encerramento&\# 32; O método de classe WMI encerra um processo e todos os seus threads.
+description: A lista&\# 32; O método de classe WMI encerra um processo e todos os seus threads.
 ms.assetid: 6c6b27d4-cf9b-42d7-9136-42641ea56ee8
 ms.tgt_platform: multiple
-title: Método Terminate da classe Win32_Process
+title: Método Terminate da classe Win32_Process dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 00300ca9656c3b732b9c294aeba9a6c626ac6e2e
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8f0b9671891b9f9c90e8a36e3fc0b58e92a513935d2923e3a2eed5134dcef777
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118009352"
 ---
-# <a name="terminate-method-of-the-win32_process-class"></a>Método Terminate da classe de \_ processo do Win32
+# <a name="terminate-method-of-the-win32_process-class"></a>Método Terminate da classe Win32 \_ Process
 
-O método **terminar** da [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) encerra um processo e todos os seus threads.
+O **método** [de classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) Terminate encerra um processo e todos os seus threads.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,16 +42,16 @@ uint32 Terminate(
 
 <dl> <dt>
 
-*Motivo* \[ no\]
+*Motivo* \[ Em\]
 </dt> <dd>
 
-Código de saída para o processo e para todos os threads terminados como resultado dessa chamada.
+Código de saída para o processo e para todos os threads encerrados como resultado dessa chamada.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) se o processo foi encerrado com êxito e qualquer outro número para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) se o processo foi encerrado com êxito e qualquer outro número para indicar um erro. Para obter códigos de erro adicionais, [**consulte Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -73,37 +73,37 @@ Retorna um valor de 0 (zero) se o processo foi encerrado com êxito e qualquer o
 **Parâmetro inválido** (21)
 </dt> <dt>
 
-**Outro** (22 4294967295)
+**Outros** (22 4294967295)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
 **Visão geral**
 
-Problemas de computador geralmente são devido a um processo que não está mais funcionando conforme o esperado. Por exemplo, o processo pode estar vazando memória ou pode ter parado de responder à entrada do usuário. Quando ocorrem problemas como esses, o processo deve ser encerrado. Embora isso possa parecer uma tarefa suficientemente simples, o encerramento de um processo pode ser complicado por vários fatores:
+Problemas de computador geralmente ocorrem devido a um processo que não está mais funcionando conforme o esperado. Por exemplo, o processo pode estar vazando memória ou pode ter parado de responder à entrada do usuário. Quando ocorrem problemas como esses, o processo deve ser encerrado. Embora isso possa parecer uma tarefa simples o suficiente, encerrar um processo pode ser complicado por vários fatores:
 
--   O processo pode estar suspenso e, portanto, não responde mais a comandos de menu ou teclado para fechar o aplicativo. Isso torna tudo menos impossível para o usuário típico ignorar o aplicativo e encerrar o processo.
--   O processo pode ser órfão. Por exemplo, um script pode criar uma instância do Word e, em seguida, sair sem destruir essa instância. Na verdade, o Word permanece em execução no computador, mesmo que nenhuma interface de usuário esteja visível. Como não há nenhuma interface do usuário, não há nenhum comando de menu ou de teclado disponível para encerrar o processo.
+-   O processo pode ser suspenso e, portanto, não responde mais aos comandos de menu ou teclado para fechar o aplicativo. Isso torna tudo impossível para o usuário típico descartar o aplicativo e encerrar o processo.
+-   O processo pode ficar órfão. Por exemplo, um script pode criar uma instância do Word e sair sem destruir essa instância. Na verdade, o Word permanece em execução no computador, mesmo que nenhuma interface do usuário seja visível. Como não há nenhuma interface do usuário, não há nenhum menu ou comandos de teclado disponíveis para encerrar o processo.
 -   Talvez você não saiba qual processo precisa ser encerrado. Por exemplo, talvez você queira encerrar todos os programas que estão excedendo uma quantidade especificada de memória.
--   Como o Gerenciador de tarefas permite que você finalize somente os processos que você criou, talvez não seja possível encerrar um processo, mesmo se você for um administrador no computador.
+-   Como Gerenciador de Tarefas permite que você encente apenas os processos criados, talvez você não consiga encerrar um processo, mesmo que seja um administrador no computador.
 
-Os scripts permitem superar todos esses obstáculos potenciais, fornecendo um controle administrativo considerável sobre os computadores. Por exemplo, se você suspeitar que os usuários estão jogando em jogos que foram proibidos em sua organização, poderá facilmente escrever um script para se conectar a cada computador, identificar se o jogo está em execução e encerrar imediatamente o processo.
+Os scripts permitem que você supere todos esses possíveis obstáculos, fornecendo um controle administrativo considerável sobre seus computadores. Por exemplo, se você suspeitar que os usuários estão fazendo jogos que foram proibidos em sua organização, poderá escrever facilmente um script para se conectar a cada computador, identificar se o jogo está em execução e encerrar imediatamente o processo.
 
 **Usando o método Terminate**
 
-Você pode encerrar um processo da:
+Você pode encerrar um processo:
 
--   Encerrando um processo que está sendo executado no momento. Por exemplo, talvez seja necessário encerrar um programa de diagnóstico em execução em um computador remoto. Se não houver nenhuma maneira de controlar o aplicativo remotamente, você poderá simplesmente encerrar o processo para esse aplicativo.
--   Impedir que um processo seja executado em primeiro lugar. Ao monitorar continuamente a criação de processos em um computador, você pode identificar e encerrar instantaneamente qualquer processo assim que ele for iniciado. Isso fornece um método para garantir que determinados aplicativos (como programas que baixem arquivos de mídia grandes pela Internet) nunca sejam executados em determinados computadores.
+-   Encerrando um processo que está em execução no momento. Por exemplo, talvez seja necessário encerrar um programa de diagnóstico em execução em um computador remoto. Se não houver nenhuma maneira de controlar o aplicativo remotamente, você poderá simplesmente encerrar o processo para esse aplicativo.
+-   Impedindo que um processo seja executado em primeiro lugar. Ao monitorar continuamente a criação do processo em um computador, você pode identificar e encerrar instantaneamente qualquer processo assim que ele é iniciado. Isso fornece um método para garantir que determinados aplicativos (como programas que baixam arquivos de mídia grandes pela Internet) nunca sejam executados em determinados computadores.
 
 > [!Note]  
-> Política de Grupo também pode ser usado para restringir os programas que são executados em um computador. No entanto, Política de Grupo pode restringir apenas os programas executados usando o menu iniciar ou o Windows Explorer; Ele não tem nenhum efeito em programas iniciados usando outros meios, como a linha de comando. Por outro lado, o WMI pode impedir que um processo seja executado, independentemente de como o processo foi iniciado.
+> Política de Grupo também pode ser usado para restringir os programas executados em um computador. No entanto, Política de Grupo pode restringir apenas os programas executados usando o menu Iniciar ou Windows Explorer; ele não tem nenhum efeito sobre programas iniciados usando outros meios, como a linha de comando. Por outro lado, o WMI pode impedir que um processo seja executado, independentemente de como o processo foi iniciado.
 
  
 
-**Finalizando um processo que você não possui**
+**Encerrando um processo que você não possui**
 
-Para encerrar um processo que não é de sua propriedade, habilite o privilégio **SeDebugPrivilege** . No VBScript, você pode habilitar esse privilégio com as seguintes linhas de código:
+Para encerrar um processo que você não possui, habilita o **privilégio SeDebugPrivilege.** No VBScript, você pode habilitar esse privilégio com as seguintes linhas de código:
 
 
 ```VB
@@ -113,11 +113,11 @@ objLoc.Security_.privileges.addasstring "sedebugprivilege", true
 
 
 
-Para obter mais informações sobre como habilitar esse privilégio em C++, consulte [Habilitando e desabilitando privilégios em c++](/windows/desktop/SecAuthZ/enabling-and-disabling-privileges-in-c--).
+Para obter mais informações sobre como habilenciar esse privilégio no C++, consulte Habilitando e [desabilitando privilégios no C++.](/windows/desktop/SecAuthZ/enabling-and-disabling-privileges-in-c--)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de [encerrar processo em execução em vários servidores](https://Gallery.TechNet.Microsoft.Com/698c2512-2bbd-40ee-b3bf-a9cebdad2faf) do PowerShell no TechNet Gallery encerra um processo em execução em um único ou vários computadores.
+O [exemplo de código](https://Gallery.TechNet.Microsoft.Com/698c2512-2bbd-40ee-b3bf-a9cebdad2faf) Encerrar o processo em execução em vários servidores do PowerShell na Galeria do TechNet encerra um processo em execução em um ou vários computadores.
 
 O exemplo de VBScript a seguir encerra o processo no qual o aplicativo Diagnose.exe está em execução no momento.
 
@@ -133,7 +133,7 @@ Next
 
 
 
-O exemplo de VBScript a seguir usa um consumidor de evento temporário para encerrar um processo assim que ele é iniciado.
+O exemplo de VBScript a seguir usa um consumidor de eventos temporários para encerrar um processo assim que ele é iniciado.
 
 
 ```VB
@@ -175,7 +175,7 @@ Next
 
 
 
-O código C++ a seguir encerra o processo de Notepad.exe no computador local. Especifique um identificador de processo ou (ID do processo) no código para encerrar o processo. Esse valor pode ser encontrado na propriedade Handle na classe [**\_ process do Win32**](win32-process.md) (a propriedade de chave para a classe). Ao especificar um valor para a propriedade Handle, você está fornecendo um caminho para a instância da classe que deseja encerrar. Para obter mais informações sobre como se conectar a um computador remoto, consulte [exemplo: obtendo dados WMI de um computador remoto](/windows/desktop/WmiSdk/example--getting-wmi-data-from-a-remote-computer).
+O código C++ a seguir encerra o Notepad.exe no computador local. Especifique um ou o process handle (ID do processo) no código para encerrar o processo. Esse valor pode ser encontrado na propriedade handle na classe [**Processo Win32 \_**](win32-process.md) (a propriedade de chave para a classe ). Ao especificar um valor para a propriedade Handle, você está fornecendo um caminho para a instância da classe que deseja encerrar. Para obter mais informações sobre como se conectar a um computador remoto, consulte [Exemplo: Obter dados WMI de um computador remoto.](/windows/desktop/WmiSdk/example--getting-wmi-data-from-a-remote-computer)
 
 
 ```C++
@@ -392,8 +392,8 @@ int main(int iArgCnt, char ** argv)
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -405,13 +405,13 @@ int main(int iArgCnt, char ** argv)
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Processo Win32**](win32-process.md)
+[**Processo \_ win32**](win32-process.md)
 </dt> <dt>
 
-[Tarefas do WMI: monitoramento de desempenho](/windows/desktop/WmiSdk/wmi-tasks--performance-monitoring)
+[Tarefas WMI: Monitoramento de desempenho](/windows/desktop/WmiSdk/wmi-tasks--performance-monitoring)
 </dt> <dt>
 
-[Tarefas do WMI: processos](/windows/desktop/WmiSdk/wmi-tasks--processes)
+[Tarefas WMI: processos](/windows/desktop/WmiSdk/wmi-tasks--processes)
 </dt> </dl>
 
  

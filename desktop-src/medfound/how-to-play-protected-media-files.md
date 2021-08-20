@@ -4,12 +4,12 @@ ms.assetid: 85d98f49-8af2-42ce-9b36-a025aee93f73
 title: Como reproduzir arquivos de mídia protegidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0f8f7af78881e43f2f7f85e8f333ab31b1bc2de
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: c20a2b525f8acc3a602bcaae2630726d01269881beec07ac214f4d0bd02ee1cd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105760633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119942336"
 ---
 # <a name="how-to-play-protected-media-files"></a>Como reproduzir arquivos de mídia protegidos
 
@@ -117,7 +117,7 @@ Se o método [**IsAutomaticSupported**](/windows/desktop/api/mfidl/nf-mfidl-imfc
 2.  Chame [**IMFContentEnabler:: GetEnableData**](/windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-getenabledata) para obter os dados http post.
 3.  Chame [**IMFContentEnabler:: MonitorEnable**](/windows/desktop/api/mfidl/nf-mfidl-imfcontentenabler-monitorenable). Esse método faz com que o habilitador de conteúdo monitore o progresso da ação de aquisição de direitos.
 
-4.  Envie os dados para a URL de aquisição de direitos usando uma ação HTTP POST. Você pode usar o controle do Internet Explorer ou as APIs do Windows Internet (WinINet).
+4.  Envie os dados para a URL de aquisição de direitos usando uma ação HTTP POST. você pode usar o controle do internet Explorer ou as APIs do Windows internet (WinINet).
 
 O código a seguir mostra as etapas 1 a 3. A etapa 4 depende dos requisitos específicos do seu aplicativo.
 

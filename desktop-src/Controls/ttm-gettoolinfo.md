@@ -3,7 +3,7 @@ title: Mensagem de TTM_GETTOOLINFO (commctrl. h)
 description: Recupera as informações que um controle ToolTip mantém sobre uma ferramenta.
 ms.assetid: b94d3b78-2437-4c60-ba46-b3f57cf9c876
 keywords:
-- Controles de TTM_GETTOOLINFO de mensagens do Windows
+- controles de Windows de mensagem de TTM_GETTOOLINFO
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cc0de37b97be3bec495c8777b2ddd1cc6fc1bd42
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 77f19243603ab5d2ba62d498a5595528e39b33658c7a8e4aa0638888806684ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166369"
 ---
 # <a name="ttm_gettoolinfo-message"></a>\_Mensagem TTM GETTOOLINFO
 
@@ -41,7 +41,7 @@ Ponteiro para uma estrutura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commct
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -95,9 +95,9 @@ HRESULT MyToolTipClass::OffsetTooltip(int xOffset, int yOffset)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TTM \_ GETTOOLINFOW** (Unicode) e **TTM \_ GETTOOLINFOA** (ANSI)<br/>           |
 
 

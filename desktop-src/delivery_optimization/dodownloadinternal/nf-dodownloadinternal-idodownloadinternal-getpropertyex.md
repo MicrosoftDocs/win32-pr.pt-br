@@ -14,12 +14,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 07/29/2019
-ms.openlocfilehash: 908f9b15df5c0c4a2769149419ff12d545201e5c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e812c82d1159651f7ad8567f0039555835f32911c9f5a8a92b6cedd3fb84dcec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118101668"
 ---
 # <a name="idodownloadinternalgetpropertyex-method"></a>Método IDODownloadInternal:: GetPropertyEx
 
@@ -61,6 +61,6 @@ Se a função for realizada com sucesso, ela retornará **S_OK**. Caso contrári
 
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Cliente mínimo com suporte** | Somente aplicativos do Windows 10, versão 1809 \[ Win32\] |
-| **Servidor mínimo com suporte** | Somente aplicativos do Windows Server, versão 1809 \[ Win32\] |
+| **Cliente mínimo com suporte** | Windows 10, versão 1809 \[ Somente aplicativos Win32\] |
+| **Servidor mínimo com suporte** | Windows Somente aplicativos Win32 do servidor versão 1809 \[\] |
 | **Cabeçalho** | DODownloadInternal. h |

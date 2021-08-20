@@ -1,10 +1,10 @@
 ---
-title: MSMQ-enviar para a direita estendida
-description: Permite enviar mensagens para a fila.
+title: msmq-Send estendido direito
+description: Permite o envio de mensagens para a fila.
 ms.assetid: 928c1aac-2153-409c-bfb4-e709a5bbca34
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-enviar esquema do AD estendido à direita
+- Esquema do AD estendido msmq-Send
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8634742d89e0f5f9b0a529dcddc138aa029dd935
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f77fe1a504fbb54c0feb1f52efe3400aa80c8d2eed16a243af9c053d3bafd4a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645607"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118174670"
 ---
-# <a name="msmq-send-extended-right"></a>MSMQ-enviar para a direita estendida
+# <a name="msmq-send-extended-right"></a>msmq-Send estendido direito
 
-Permite enviar mensagens para a fila.
+Permite o envio de mensagens para a fila.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | MSMQ-enviar                            |
+| CN           | msmq-Send                            |
 | Display-Name | Enviar Mensagem                         |
-| GUID de direitos  | 06bd3202-df3e-11d1-9c86-006008764d0e |
+| RIGHTS-GUID  | 06bd3202-df3e-11d1-9c86-006008764d0e |
 
 
 
@@ -50,7 +50,7 @@ Permite enviar mensagens para a fila.
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
 | Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> |
-| Localização-exibição-ID | 44                                           |
+| Localization-Display-ID | 44                                           |
 
 
 
@@ -60,8 +60,8 @@ Permite enviar mensagens para a fila.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------------------------------|
-| Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> [**Grupo MSMQ**](c-msmq-group.md)<br/> |
-| Localização-exibição-ID | 44                                                                                         |
+| Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> [**MSMQ-Group**](c-msmq-group.md)<br/> |
+| Localization-Display-ID | 44                                                                                         |
 
 
 
@@ -71,8 +71,8 @@ Permite enviar mensagens para a fila.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------------------------------|
-| Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> [**Grupo MSMQ**](c-msmq-group.md)<br/> |
-| Localização-exibição-ID | 44                                                                                         |
+| Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> [**MSMQ-Group**](c-msmq-group.md)<br/> |
+| Localization-Display-ID | 44                                                                                         |
 
 
 
@@ -82,8 +82,8 @@ Permite enviar mensagens para a fila.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------------------------------|
-| Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> [**Grupo MSMQ**](c-msmq-group.md)<br/> |
-| Localização-exibição-ID | 44                                                                                         |
+| Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> [**MSMQ-Group**](c-msmq-group.md)<br/> |
+| Localization-Display-ID | 44                                                                                         |
 
 
 
@@ -93,8 +93,8 @@ Permite enviar mensagens para a fila.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------------------------------|
-| Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> [**Grupo MSMQ**](c-msmq-group.md)<br/> |
-| Localização-exibição-ID | 44                                                                                         |
+| Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> [**MSMQ-Group**](c-msmq-group.md)<br/> |
+| Localization-Display-ID | 44                                                                                         |
 
 
 
@@ -104,8 +104,8 @@ Permite enviar mensagens para a fila.
 
 | Entrada | Valor |
 |-------------------------|--------------------------------------------------------------------------------------------|
-| Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> [**Grupo MSMQ**](c-msmq-group.md)<br/> |
-| Localização-exibição-ID | 44                                                                                         |
+| Applies-To              | [**Fila MSMQ**](c-msmqqueue.md)<br/> [**MSMQ-Group**](c-msmq-group.md)<br/> |
+| Localization-Display-ID | 44                                                                                         |
 
 
 

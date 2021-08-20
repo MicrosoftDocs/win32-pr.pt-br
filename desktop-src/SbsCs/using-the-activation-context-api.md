@@ -4,12 +4,12 @@ ms.assetid: 606147a8-435d-43d4-8fb5-79d2d1a8d870
 title: Usando a API de contexto de ativação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62b3aec5b7840e70e8fae93575e65c2f06668936
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d5c2f3d1c1a6b6202619b9e39df6ee4dc60b9134ebefa9cfe7dea4db9a344bd7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090201"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073296"
 ---
 # <a name="using-the-activation-context-api"></a>Usando a API de contexto de ativação
 
@@ -29,7 +29,7 @@ A API (interface de programação de aplicativo) pode ser usada para gerenciar o
     ReleaseActCtx (&ActCtx);  
     </dl>
 
-    No fragmento de código a seguir, a função de API ativa os contextos de ativação apropriados antes de chamar [**CallWindowProc**](/windows/win32/api/winuser/nf-winuser-callwindowproca). Quando **CallWindowProc** é chamado, ele usa esse contexto para passar uma mensagem para o Windows. Quando todas as operações de recurso forem concluídas, a função desativará o contexto.
+    No fragmento de código a seguir, a função de API ativa os contextos de ativação apropriados antes de chamar [**CallWindowProc**](/windows/win32/api/winuser/nf-winuser-callwindowproca). Quando **CallWindowProc** é chamado, ele usa esse contexto para passar uma mensagem para Windows. Quando todas as operações de recurso forem concluídas, a função desativará o contexto.
 
     <dl> ULONG \_ PTR ulpCookie;  
     MANIPULAR hActCtx;  

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c18be0a544ebcea2d2cecb40dcea3a08e4bd35b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f80a2ab7068ec754a89e384028f2d43989345e9801c4ededb800117d211b0f8f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085301"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118128453"
 ---
 # <a name="itssbresourcepluginstoreexacquiretargetlock-method"></a>Método ITsSbResourcePluginStoreEx:: AcquireTargetLock
 
@@ -66,7 +66,7 @@ Retorna um ponteiro para o contexto do bloqueio. Para liberar o bloqueio, forne�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -79,7 +79,7 @@ Depois que o bloqueio é adquirido, supõe-se que o thread de chamada tenha aces
 
  
 
-Esse método está disponível no Windows Server 2012 R2 com [KB3091411](https://support.microsoft.com/kb/3091411) instalado na interface [**ITsSbResourcePluginStoreEx**](itssbresourcepluginstoreex.md) .
+esse método está disponível no Windows Server 2012 R2 com [KB3091411](https://support.microsoft.com/kb/3091411) instalado na interface [**ITsSbResourcePluginStoreEx**](itssbresourcepluginstoreex.md) .
 
 ## <a name="requirements"></a>Requisitos
 

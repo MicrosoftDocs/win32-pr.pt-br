@@ -20,12 +20,12 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: 5772ca08a94c27e1ae0b110e05192004b9e4df2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9479f30dc8a17c8685a33ad2990313ee85f8434d05fbde549394f3d6a68e32ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050674"
 ---
 # <a name="cimmofdeserializerdeserializeclasses-method-byteuint32ienumerablecimclass-string-string-onclassneeded-getincludedfilecontent"></a>Método CimMofDeserializer. DeserializeClasses (byte \[ \] , UInt32, IEnumerable \<CimClass\> , String, String, OnClassNeeded, GetIncludedFileContent)
 
@@ -133,7 +133,7 @@ Public Function DeserializeClasses (
     
     Uma função de retorno de chamada usada para fornecer o conteúdo do buffer de arquivo de um arquivo especificado.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Collections. Generic. IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1?view=netframework-4.8)\<[CimClass](/previous-versions/windows/desktop/wmi_v2/mi-managed-api/hh832269(v=vs.85))\>
 

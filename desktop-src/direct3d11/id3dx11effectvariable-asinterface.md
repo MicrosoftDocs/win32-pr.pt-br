@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0134aceea3202e0965bf05b709d29279be2fc29
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 95fd7000e8529d04054ccaed84642e12d55417929789c569cc1f9893c2726f4e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103663968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119565646"
 ---
 # <a name="id3dx11effectvariableasinterface-method"></a>Método ID3DX11EffectVariable:: asinterface
 
@@ -41,7 +41,7 @@ ID3DX11EffectInterfaceVariable* AsInterface();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **ID3DX11EffectInterfaceVariable**](id3dx11effectinterfacevariable.md)\***
 

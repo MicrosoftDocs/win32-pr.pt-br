@@ -1,11 +1,11 @@
 ---
 title: UAS-Compat atributo
-description: Indica se o gerenciador da conta de segurança imporá tamanhos de dados para tornar o Active Directory compatível com o UAS (Sistema de Conta de Usuário) lanManager.
+description: Indica se o Gerenciador de contas de segurança impedirá tamanhos de dados para tornar Active Directory compatíveis com o UAS (sistema de conta de usuário) do LanManager.
 ms.assetid: 745e271e-28f4-4012-83a8-606d88de0221
 ms.tgt_platform: multiple
 keywords:
-- UAS-Compat atributo AD Schema
-- Esquema do AD do atributo uASCompat
+- Esquema de UAS-Compat do atributo AD
+- Esquema de AD do atributo uASCompat
 topic_type:
 - apiref
 api_name:
@@ -23,19 +23,19 @@ ms.locfileid: "118681535"
 ---
 # <a name="uas-compat-attribute"></a>UAS-Compat atributo
 
-Indica se o gerenciador da conta de segurança imporá tamanhos de dados para tornar o Active Directory compatível com o UAS (Sistema de Conta de Usuário) lanManager. Se esse valor for 0, nenhum limite será imposto. Se esse valor for 1, os limites a seguir serão aplicados.
+Indica se o Gerenciador de contas de segurança impedirá tamanhos de dados para tornar Active Directory compatíveis com o UAS (sistema de conta de usuário) do LanManager. Se esse valor for 0, nenhum limite será imposto. Se esse valor for 1, os limites a seguir serão impostos.
 
 
 
 | Valor                          | Comprimento                         |
 |--------------------------------|--------------------------------|
 | Senha<br/>            | 0 a 14 caracteres<br/>  |
-| Nome da Conta<br/>        | 0 a 20 caracteres<br/>  |
-| Nome de domínio<br/>         | 0 a 15 caracteres<br/>  |
-| Nome do Computador<br/>       | 0 a 15 caracteres<br/>  |
-| Comentários<br/>            | 0 a 48 caracteres<br/>  |
-| Diretório Base<br/>      | 0 a 256 caracteres<br/> |
-| Caminho do script<br/>         | 0 a 256 caracteres<br/> |
+| Nome da Conta<br/>        | de 0 a 20 caracteres<br/>  |
+| Nome de domínio<br/>         | de 0 a 15 caracteres<br/>  |
+| Nome do Computador<br/>       | de 0 a 15 caracteres<br/>  |
+| Comentários<br/>            | de 0 a 48 caracteres<br/>  |
+| Diretório Base<br/>      | de 0 a 256 caracteres<br/> |
+| Caminho do script<br/>         | de 0 a 256 caracteres<br/> |
 | Unidades de tempo por semana<br/> | 168 bits (21 bytes)<br/> |
 
 
@@ -47,13 +47,13 @@ Indica se o gerenciador da conta de segurança imporá tamanhos de dados para to
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | UAS-Compat                           |
-| Ldap-Display-Name | uASCompat                            |
+| LDAP-Display-Name | uASCompat                            |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | Executado por um administrador.       |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.155               |
-| System-Id-Guid    | bf967a61-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Enumeração**](s-enumeration.md) |
+| System-ID-GUID    | bf967a61-0de6-11d0-a285-00aa003049e2 |
+| Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
 
@@ -75,15 +75,15 @@ Indica se o gerenciador da conta de segurança imporá tamanhos de dados para to
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| Tem valor único       | True                                                  |
+| É de valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
-| No Catálogo Global      | Falso                                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                                          |
+| No catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -96,15 +96,15 @@ Indica se o gerenciador da conta de segurança imporá tamanhos de dados para to
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| Tem valor único       | True                                                  |
+| É de valor único       | True                                                  |
 | É indexado             | Falso                                                 |
-| No Catálogo Global      | Falso                                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                                          |
+| No catálogo global      | Falso                                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                          |
 | Range-Lower            | \-                                                    |
 | Range-Upper            | \-                                                    |
 | Search-Flags           | 0x00000000                                            |
 | System-Flags           | 0x00000010                                            |
-| Classes usadas em        | [**Sam-Domain-Base**](c-samdomainbase.md)<br/> |
+| Classes usadas em        | [**Sam-domínio-base**](c-samdomainbase.md)<br/> |
 
 
 
@@ -117,7 +117,7 @@ Indica se o gerenciador da conta de segurança imporá tamanhos de dados para to
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| Tem valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
 | No Catálogo Global      | Falso                                                 |
 | Descritor de segurança NT | O:BAG:BAD:S:                                          |
@@ -138,7 +138,7 @@ Indica se o gerenciador da conta de segurança imporá tamanhos de dados para to
 | ID do link                | \-                                                    |
 | MAPI-Id                | \-                                                    |
 | System-Only            | Falso                                                 |
-| Tem valor único       | True                                                  |
+| Tem valor único       | Verdadeiro                                                  |
 | É indexado             | Falso                                                 |
 | No Catálogo Global      | Falso                                                 |
 | Descritor de segurança NT | O:BAG:BAD:S:                                          |

@@ -10,18 +10,18 @@ keywords:
 - Automação da interface do usuário, exibição de conteúdo da árvore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c76bc9aa6568a3f4d63194d35ff0c7d8f59510c3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a9e1b8776f86931882acc85e2fb974ff5d1db0be266be94e391ce242ff2a497e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119570387"
 ---
 # <a name="ui-automation-tree-overview"></a>Visão geral da árvore de automação de interface do usuário
 
 Produtos de tecnologia assistencial e scripts de teste navegam pela árvore de automação da interface do usuário da Microsoft para reunir informações sobre a interface do usuário e seus elementos.
 
-Na árvore de automação da interface do usuário, há um elemento raiz que representa a janela da área de trabalho do Windows ("a área de trabalho") e cujos elementos filho representam janelas de aplicativo. Cada um desses elementos filho pode conter elementos que representam partes da interface do usuário, como menus, botões, barras de ferramentas e caixas de listagem. Esses elementos podem conter elementos, como itens de lista.
+na árvore de automação da interface do usuário, há um elemento raiz que representa a janela da área de trabalho Windows ("a área de trabalho") e cujos elementos filho representam janelas de aplicativo. Cada um desses elementos filho pode conter elementos que representam partes da interface do usuário, como menus, botões, barras de ferramentas e caixas de listagem. Esses elementos podem conter elementos, como itens de lista.
 
 A árvore de automação da interface do usuário não é uma estrutura fixa. Raramente é visto em sua totalidade porque pode conter milhares de elementos. Partes da árvore de automação da interface do usuário são criadas à medida que um cliente precisa delas, e a estrutura da árvore é alterada à medida que os elementos são adicionados, movidos ou removidos.
 
@@ -49,7 +49,7 @@ A automação da interface do usuário fornece três exibições padrão: modo d
 
 ### <a name="raw-view"></a>Exibição bruta
 
-A exibição bruta da árvore de automação da interface do usuário é a árvore completa de elementos de automação para os quais a área de trabalho é a raiz. A exibição bruta segue melhor a estrutura programática nativa de um aplicativo e é a exibição mais detalhada disponível. Também é a base na qual as outras exibições da árvore são criadas. Como essa exibição depende da estrutura subjacente da interface do usuário, a exibição bruta de um botão Windows Presentation Foundation (WPF) tem uma exibição bruta diferente de um botão do Microsoft Win32.
+A exibição bruta da árvore de automação da interface do usuário é a árvore completa de elementos de automação para os quais a área de trabalho é a raiz. A exibição bruta segue melhor a estrutura programática nativa de um aplicativo e é a exibição mais detalhada disponível. Também é a base na qual as outras exibições da árvore são criadas. como essa exibição depende da estrutura subjacente da interface do usuário, a exibição bruta de um botão Windows Presentation Foundation (WPF) tem uma exibição bruta diferente de um botão do Microsoft Win32.
 
 A exibição bruta é obtida pesquisando elementos sem especificar propriedades ou usando [**IUIAutomation:: RawViewWalker**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomation-get_rawviewwalker) para obter uma interface [**IUIAutomationTreeWalker**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationtreewalker) para navegar pela árvore.
 
@@ -99,9 +99,9 @@ As imagens a seguir mostram as diferenças entre a exibição de controle e a ex
 [Conceitos básicos de automação da interface do usuário](entry-uiautocore-overview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

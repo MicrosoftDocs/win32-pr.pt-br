@@ -1,13 +1,13 @@
 ---
-title: Outros exemplos de capa
-description: Outros exemplos de capa
+title: Outros exemplos de pele
+description: Outros exemplos de pele
 ms.assetid: 72eaa417-d7ce-4521-9289-17f392146ec9
 keywords:
-- criando capas, exemplos de código
-- Windows Media Player capas, exemplos de código
+- Criando capas, exemplos de código
+- capas de Windows Media Player, exemplos de código
 - capas, exemplos de código
-- criando capas, exemplos
-- Windows Media Player capas,exemplos
+- Criando capas, exemplos
+- aparências de Windows Media Player, exemplos
 - capas, exemplos
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,9 +18,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118338350"
 ---
-# <a name="other-skin-samples"></a>Outros exemplos de capa
+# <a name="other-skin-samples"></a>Outros exemplos de pele
 
-Para ver exemplos de capas  de trabalho completas, clique no botão Iniciar, aponte para Programas **e,** em seguida, Windows **Mídia**, em seguida, **Windows SDK** de Mídia e clique em Amostras do **SDK** do Player . Primeiro, você deve instalar o SDK Windows Media Player para usar os exemplos.
+para ver exemplos de capas de trabalho completas, clique no botão **iniciar** , aponte para **programas**, **Windows mídia** e, em seguida, **Windows sdk de mídia** e clique em exemplos do sdk do **Player**. você deve primeiro instalar o SDK do Windows Media Player para usar os exemplos.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

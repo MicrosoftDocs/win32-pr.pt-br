@@ -1,27 +1,27 @@
 ---
 title: Aplicativos de exemplo (infraestrutura de mesmo nível)
-description: Os aplicativos de exemplo a seguir estão incluídos no Windows XP peer SDK.
+description: os aplicativos de exemplo a seguir estão incluídos no SDK de pares do Windows XP.
 ms.assetid: 26c45360-f232-4e29-90b5-44ccacb5a9c3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c15e2bf3162151a4cbf18547fdfe482c7ea77fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3999012d8c5abd04e2e3e5b1c90aade37dc0ce514893a3bf9fb04b0141509eab
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921761"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119287806"
 ---
 # <a name="sample-applications-peer-infrastructure"></a>Aplicativos de exemplo (infraestrutura de mesmo nível)
 
-Os aplicativos de exemplo a seguir estão incluídos no Windows XP peer SDK. Os exemplos podem ajudá-lo quando você desenvolver seus próprios aplicativos de mesmo nível usando a infraestrutura de mesmo nível.
+os aplicativos de exemplo a seguir estão incluídos no SDK de pares do Windows XP. Os exemplos podem ajudá-lo quando você desenvolver seus próprios aplicativos de mesmo nível usando a infraestrutura de mesmo nível.
 
--   [Chat do grafo](#graph-chat)
+-   [Graph Com](#graph-chat)
 -   [Chat de grupo](#group-chat)
 -   [Navegador de grupo](#group-browser)
 
-## <a name="graph-chat"></a>Chat do grafo
+## <a name="graph-chat"></a>Graph Com
 
-O aplicativo de exemplo de chat do grafo é um aplicativo de chat simples que demonstra como usar as APIs de grafo de pares e o provedor de Namespace PNRP (Peer Name Resolution Protocol) com a API do Winsock 2. O aplicativo demonstra as seguintes tarefas:
+o aplicativo de exemplo Graph chat é um aplicativo de chat simples que demonstra como usar as APIs de grafo de pares e o provedor de Namespace PNRP (peer Name resolution Protocol) com a API do Winsock 2. O aplicativo demonstra as seguintes tarefas:
 
 -   Criando um grafo
 -   Conectando a um grafo existente

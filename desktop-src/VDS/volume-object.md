@@ -4,16 +4,16 @@ ms.assetid: 92013015-b0f5-4b92-937b-c2637f65810c
 title: Objeto de volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e47092a237e7b0e9441b08c410d95d0836dbdb7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87887dae233a47ef168546bb4d0bab93389ab72e0e0617b64ea0c80fbfab0e83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118125386"
 ---
 # <a name="volume-object"></a>Objeto de volume
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Um objeto de volume modela uma unidade de armazenamento lógico que é criada por um provedor de software e apresentada ao sistema de arquivos como um disco. Cada volume consiste em pelo menos um plex de volume, que é, por sua vez, composto de extensões de um ou mais discos.
 
@@ -29,7 +29,7 @@ O VDS dá suporte a cinco tipos de volume: simples, estendido, distribuído, esp
 
 ### <a name="volume-creation"></a>Criação de volume
 
-Os provedores de software básico e dinâmico dão suporte à criação de volume parcialmente direcionado; um chamador especifica somente os atributos que são de interesse específico e permite que o provedor escolha o restante. O VDS monta automaticamente um volume recém-criado, exceto nas plataformas Windows Server 2003, Enterprise Edition e Windows Server 2003, Datacenter Edition.
+Os provedores de software básico e dinâmico dão suporte à criação de volume parcialmente direcionado; um chamador especifica somente os atributos que são de interesse específico e permite que o provedor escolha o restante. o VDS monta automaticamente um volume recém-criado, exceto nas plataformas do Windows server 2003, Edição Enterprise e Windows server 2003, datacenter Edition.
 
 ### <a name="working-with-volumes"></a>Trabalhando com volumes
 
@@ -51,7 +51,7 @@ A tabela a seguir lista as interfaces, as enumerações e as estruturas relacion
 
  
 
-**\* Windows Server 2003:** não há suporte para essas interfaces até o Windows Vista.
+**\* Windows Server 2003:** não há suporte para essas interfaces até Windows Vista.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

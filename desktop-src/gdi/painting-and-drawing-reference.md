@@ -1,5 +1,5 @@
 ---
-description: 'Os elementos a seguir estão associados à pintura e ao desenho:'
+description: 'Os seguintes elementos estão associados à pintura e ao desenho:'
 ms.assetid: 6dd65dce-0736-411c-b35e-20e4c4eb834c
 title: Referência de pintura e desenho
 ms.topic: article
@@ -13,12 +13,12 @@ ms.locfileid: "118760016"
 ---
 # <a name="painting-and-drawing-reference"></a>Referência de pintura e desenho
 
-Os elementos a seguir estão associados à pintura e ao desenho:
+Os seguintes elementos estão associados à pintura e ao desenho:
 
 -   [Funções de pintura e desenho](painting-and-drawing-functions.md)
--   [Pintura e estruturas de desenho](painting-and-drawing-structures.md)
--   [Pintura e desenho de mensagens](painting-and-drawing-messages.md)
--   [Códigos de operação de varredura](raster-operation-codes.md)
+-   [Estruturas de pintura e desenho](painting-and-drawing-structures.md)
+-   [Pintar e desenhar mensagens](painting-and-drawing-messages.md)
+-   [Códigos de operação de raster](raster-operation-codes.md)
 
  
 

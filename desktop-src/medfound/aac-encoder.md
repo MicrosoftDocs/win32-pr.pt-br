@@ -1,33 +1,33 @@
 ---
-description: O codificador AAC Microsoft Media Foundation é uma transformação de Media Foundation que codifica o perfil de alta complexidade (AAC) de codificação de áudio avançado, conforme definido por ISO/IEC 13818-7 (MPEG-2 Audio parte 7).
+description: O codificador AAC do Microsoft Media Foundation é uma Transformação Media Foundation que codifica o perfil LC (Codificação de Áudio Avançado) de Baixa Complexidade (LC), conforme definido por ISO/IEC 13818-7 (MPEG-2 Audio Part 7) .
 ms.assetid: d88a8c32-c71f-4ddb-af8c-e2fb54c2322c
 title: Codificador AAC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec9730ffc17d7ac3d5e16d86ef5aa20a46b329cd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fb6867ad42645ffc2bbf2b853e215d3794053157a776e02eddf015b320e3215
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827208"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119943366"
 ---
 # <a name="aac-encoder"></a>Codificador AAC
 
-O codificador AAC Microsoft Media Foundation é uma [transformação de Media Foundation](media-foundation-transforms.md) que codifica o perfil de alta complexidade (AAC) de codificação de áudio avançado, conforme definido por ISO/IEC 13818-7 (MPEG-2 Audio parte 7).
+O codificador AAC do Microsoft Media Foundation é uma Transformação [Media Foundation](media-foundation-transforms.md) que codifica o perfil LC (Codificação de Áudio Avançado) de Baixa Complexidade (LC), conforme definido por ISO/IEC 13818-7 (MPEG-2 Audio Part 7) .
 
 O codificador AAC não dá suporte à codificação para outros perfis AAC, como Main, SSR ou LTP.
 
-## <a name="class-identifier"></a>Identificador de classe
+## <a name="class-identifier"></a>Identificador de Classe
 
-O CLSID (identificador de classe) do codificador AAC é **CLSID \_ AACMFTEncoder**, definido no arquivo de cabeçalho wmcodecdsp. h.
+O CLSID (identificador de classe) do codificador AAC é **CLSID \_ AACMFTEncoder**, definido no arquivo de header wmcodecdsp.h.
 
 ## <a name="media-types"></a>Tipos de mídia
 
-O codificador AAC dá suporte aos seguintes tipos de mídia. Você pode definir os tipos em qualquer tipo de entrada de ordem primeiro ou no tipo de saída primeiro.
+O codificador AAC dá suporte aos seguintes tipos de mídia. Você pode definir os tipos primeiro no tipo de entrada de ordem ou primeiro no tipo de saída.
 
 ### <a name="input-types"></a>Tipos de entrada
 
-Defina os seguintes atributos no tipo de mídia de entrada.
+De definir os atributos a seguir no tipo de mídia de entrada.
 
 
 
@@ -57,7 +57,7 @@ Defina os seguintes atributos no tipo de mídia de entrada.
 </tr>
 <tr class="odd">
 <td><a href="mf-mt-audio-bits-per-sample-attribute.md"><strong>MF_MT_AUDIO_BITS_PER_SAMPLE</strong></a></td>
-<td>Bits por amostra.</td>
+<td>Bits por exemplo.</td>
 <td>Deve ser 16.</td>
 </tr>
 <tr class="even">
@@ -72,10 +72,10 @@ Defina os seguintes atributos no tipo de mídia de entrada.
 <tr class="odd">
 <td><a href="mf-mt-audio-num-channels-attribute.md"><strong>MF_MT_AUDIO_NUM_CHANNELS</strong></a></td>
 <td>Número de canais.</td>
-<td>Deve ser 1 (mono) ou 2 (estéreo) ou 6 (5,1).
+<td>Deve ser 1 (mono) ou 2 (estéreo) ou 6 (5.1).
 <blockquote>
 [!Note]<br />
-O suporte para 6 canais de áudio foi introduzido com o Windows 10 e não está disponível para versões anteriores do Windows.
+O suporte para seis canais de áudio foi introduzido com Windows 10 e não está disponível para versões anteriores do Windows.
 </blockquote>
 <br/></td>
 </tr>
@@ -88,13 +88,13 @@ O suporte para 6 canais de áudio foi introduzido com o Windows 10 e não está 
 
 Depois que o tipo de entrada é definido, o codificador deriva os seguintes valores e os adiciona ao tipo de mídia:
 
--   [**áudio do MF \_ MT \_ média de \_ \_ bytes \_ por \_ segundo**](mf-mt-audio-avg-bytes-per-second-attribute.md)
--   [**\_alinhamento de \_ bloco de áudio MF MT \_ \_**](mf-mt-audio-block-alignment-attribute.md)
--   [**\_taxa de \_ \_ bits média de MF MT**](mf-mt-avg-bitrate-attribute.md)
+-   [**BYTES MF \_ MT \_ AUDIO \_ AVG \_ POR \_ \_ SEGUNDO**](mf-mt-audio-avg-bytes-per-second-attribute.md)
+-   [**ALINHAMENTO DO \_ BLOCO DE ÁUDIO MT \_ \_ \_ MT**](mf-mt-audio-block-alignment-attribute.md)
+-   [**MF \_ MT \_ AVG \_ BITRATE**](mf-mt-avg-bitrate-attribute.md)
 
 ### <a name="output-types"></a>Tipos de saída
 
-Defina os seguintes atributos no tipo de mídia de saída.
+De definir os atributos a seguir no tipo de mídia de saída.
 
 
 
@@ -124,7 +124,7 @@ Defina os seguintes atributos no tipo de mídia de saída.
 </tr>
 <tr class="odd">
 <td><a href="mf-mt-audio-bits-per-sample-attribute.md"><strong>MF_MT_AUDIO_BITS_PER_SAMPLE</strong></a></td>
-<td>Bits por amostra.</td>
+<td>Bits por exemplo.</td>
 <td>Deve ser 16.</td>
 </tr>
 <tr class="even">
@@ -147,16 +147,16 @@ Defina os seguintes atributos no tipo de mídia de saída.
 <li>20000</li>
 <li>24.000</li>
 </ul>
-O valor padrão para mono e estéreo é 12000 (96 kbps).<br/></td>
+O valor padrão para mono e estéreo é 12000 (96 Kbps).<br/></td>
 </tr>
 <tr class="odd">
 <td><a href="mf-mt-aac-payload-type.md">MF_MT_AAC_PAYLOAD_TYPE</a></td>
-<td>O tipo de carga AAC.</td>
-<td>Opcional. Se definido, o valor deve ser zero, indicando que o fluxo contém apenas elementos raw_data_block.<br/> Opcional. Se o atributo não for definido, o valor padrão será zero, indicando que o fluxo contém apenas elementos raw_data_block (AAC bruto). <br/> No Windows 7, se esse atributo for definido, o valor deverá ser zero.<br/> A partir do Windows 8, o valor pode ser 0 (AAC bruto) ou 1 (ADTS AAC). <br/></td>
+<td>O tipo de carga do AAC.</td>
+<td>Opcional. Se definido, o valor deverá ser zero, indicando que o fluxo contém raw_data_block elementos.<br/> Opcional. Se o atributo não estiver definido, o valor padrão será zero, indicando que o fluxo contém raw_data_block somente elementos (AAC bruto). <br/> No Windows 7, se esse atributo estiver definido, o valor deverá ser zero.<br/> A partir Windows 8, o valor pode ser 0 (AAC bruto) ou 1 (ADTS AAC). <br/></td>
 </tr>
 <tr class="even">
 <td><a href="mf-mt-aac-audio-profile-level-indication.md">MF_MT_AAC_AUDIO_PROFILE_LEVEL_INDICATION</a></td>
-<td>O perfil de áudio AAC e o nível.</td>
+<td>O nível e o perfil de áudio do AAC.</td>
 <td>Opcional. Os seguintes valores têm suporte:
 <ul>
 <li>0x29 (padrão)</li>
@@ -174,15 +174,15 @@ O valor padrão para mono e estéreo é 12000 (96 kbps).<br/></td>
 </tbody>
 </table>
 
-A tabela a seguir lista os valores que podem ser usados para o atributo MF_MT_AAC_PROFILE_LEVEL_INDICATION.
+A tabela a seguir lista os valores que podem ser usados para o atributo MF_MT_AAC_PROFILE_LEVEL_INDICATION dados.
 
-| Valor MF_MT_AAC_PROFILE_LEVEL_INDICATION | Perfil                           |
+| MF_MT_AAC_PROFILE_LEVEL_INDICATION valor | Perfil                           |
 |------------------------------------------|-----------------------------------|
-| 0x29                                     | L2 do perfil AAC                    | 
-| 0x2A                                     | L4 perfil AAC                    | 
-| 0x2B                                     | Perfil AAC L5                    | 
-| 0x2C                                     | L2 do perfil AAC de alta eficiência | 
-| 0x2E                                     | Perfil AAC de alta eficiência do v1 | 
+| 0x29                                     | Perfil do AAC L2                    | 
+| 0x2A                                     | Perfil AAC L4                    | 
+| 0x2B                                     | Perfil do AAC L5                    | 
+| 0x2C                                     | Perfil AAC de alta eficiência v1 L2 | 
+| 0x2E                                     | Perfil AAC de alta eficiência v1 L4 | 
 | 0x2F                                     | Perfil AAC de alta eficiência do v1 | 
 | 0x30                                     | L2 de perfil AAC de alta eficiência v2 | 
 | 0x31                                     | Perfil AAC L3 de alta eficiência | 
@@ -276,8 +276,8 @@ em que *nAudioSamplesPerChannel* é o número de exemplos de áudio PCM por cana
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                 |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                 |
 | DLL<br/>                      | <dl> <dt>Mfaacenc.dll</dt> </dl> |
 
 

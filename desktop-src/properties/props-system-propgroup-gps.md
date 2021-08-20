@@ -4,12 +4,12 @@ ms.assetid: bdc3d22c-d055-47f7-86ad-6e050608ad12
 title: System.PropGroup.GPS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3544f433ef83d64b65f1ad33a8d732ccf80b8181
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: a8a101c15bc819b1cbe834c387d3e44326eccb047d67569ae43818f29966996b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112404549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119945096"
 ---
 # <a name="systempropgroupgps"></a>System.PropGroup.GPS
 

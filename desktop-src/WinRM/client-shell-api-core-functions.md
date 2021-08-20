@@ -1,20 +1,20 @@
 ---
 title: Funções principais da API do shell do cliente
-description: A tabela a seguir fornece uma visão geral das funções básicas para a API do shell do cliente Gerenciamento Remoto do Windows (WinRM).
+description: a tabela a seguir fornece uma visão geral das funções básicas para a API do Shell do cliente Gerenciamento Remoto do Windows (WinRM).
 ms.assetid: cd0e6b55-03e8-4ebe-aea8-35d268cdb18c
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebfe3390b3808cd0abbe9d6bf4ea83ccb0a92338
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f36a081723af60acf08aa9b4123cc124c2635371bfb50053da457289343ceec5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113339"
 ---
 # <a name="client-shell-api-core-functions"></a>Funções principais da API do shell do cliente
 
-A tabela a seguir fornece uma visão geral das funções básicas para a API do shell do cliente Gerenciamento Remoto do Windows (WinRM).
+a tabela a seguir fornece uma visão geral das funções básicas para a API do Shell do cliente Gerenciamento Remoto do Windows (WinRM).
 
 
 
@@ -42,11 +42,11 @@ A tabela a seguir fornece uma visão geral das funções básicas para a API do 
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

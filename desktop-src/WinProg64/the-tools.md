@@ -1,30 +1,30 @@
 ---
 title: As ferramentas
-description: Este tópico descreve as ferramentas disponíveis para você usar o para tornar seu aplicativo 64-bit pronto. O Windows 10 está disponível para processadores baseados em x64 e ARM64.
+description: Este tópico descreve as ferramentas disponíveis para você usar o para tornar seu aplicativo 64-bit pronto. Windows 10 está disponível para processadores baseados em x64 e ARM64.
 ms.assetid: 457b7cc1-8517-4a36-9a0c-cf191ff3b374
 keywords:
-- Guia de programação do Windows de 64 bits – programação do Windows de 64 bits, ferramentas
-- ferramentas de programação de 64 bits do Windows
+- guia de programação de Windows de 64 bits 64-Windows programação, ferramentas
+- ferramentas de 64 bits Windows de programação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d87fb315200ae32eb1e1441ed330be49aa02d669
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f28084c445d664e130a9bb6dc5c087f8421cdaa5746845308258662739ee9084
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119569886"
 ---
 # <a name="the-tools"></a>As ferramentas
 
-Este tópico descreve as ferramentas disponíveis para você usar o para tornar seu aplicativo 64-bit pronto. O Windows 10 está disponível para processadores baseados em x64 e ARM64.
+Este tópico descreve as ferramentas disponíveis para você usar o para tornar seu aplicativo 64-bit pronto. Windows 10 está disponível para processadores baseados em x64 e ARM64.
 
 ## <a name="include-files"></a>Arquivos de inclusão
 
-Os elementos da API são praticamente idênticos entre as janelas de 32 e 64 bits. Os arquivos de cabeçalho do Windows foram modificados para que possam ser usados para o código de 32 e 64 bits. Os novos tipos de 64 bits e as macros são definidos em um novo arquivo de cabeçalho, Basetsd. h, que está no conjunto de arquivos de cabeçalho incluídos pelo Windows. h. O Basetsd. h inclui as novas definições de tipo de dados para ajudar a tornar independente o tamanho do Word do código-fonte.
+Os elementos da API são praticamente idênticos entre os Windows de 32 e 64 bits. os arquivos de cabeçalho Windows foram modificados para que possam ser usados para o código de 32 e 64 bits. os novos tipos de 64 bits e as macros são definidos em um novo arquivo de cabeçalho, Basetsd. h, que está no conjunto de arquivos de cabeçalho incluídos por Windows. h. O Basetsd. h inclui as novas definições de tipo de dados para ajudar a tornar independente o tamanho do Word do código-fonte.
 
 ## <a name="new-data-types"></a>Novos tipos de dados
 
-Os arquivos de cabeçalho do Windows contêm novos tipos de dados. Esses tipos são principalmente para compatibilidade de tipo com os tipos de dados de 32 bits. Os novos tipos fornecem exatamente a mesma digitação dos tipos existentes, enquanto ao mesmo tempo fornecem suporte para o Windows de 64 bits. Para obter mais informações, consulte [os novos tipos de dados](the-new-data-types.md) ou o arquivo de cabeçalho Basetsd. h.
+os arquivos de cabeçalho de Windows contêm novos tipos de dados. Esses tipos são principalmente para compatibilidade de tipo com os tipos de dados de 32 bits. Os novos tipos fornecem exatamente a mesma digitação dos tipos existentes, enquanto ao mesmo tempo fornecem suporte para o Windows de 64 bits. Para obter mais informações, consulte [os novos tipos de dados](the-new-data-types.md) ou o arquivo de cabeçalho Basetsd. h.
 
 ## <a name="predefined-macros"></a>Macros predefinidas
 
@@ -114,7 +114,7 @@ Há uma opção de aviso para ajudar a portar para o LLP64. A opção-Wp64-w3 ha
 
 ## <a name="64-bit-linker-and-libraries"></a>Bibliotecas e vinculadores de 64 bits
 
-Para compilar aplicativos, use o vinculador e as bibliotecas fornecidas pelo SDK do Windows. A maioria das bibliotecas de 32 bits tem uma versão de 64 bits correspondente, mas determinadas bibliotecas herdadas estão disponíveis somente em versões de 32 bits. O código que chama essas bibliotecas não será vinculado quando o aplicativo for compilado para o Windows de 64 bits.
+para compilar aplicativos, use o vinculador e as bibliotecas fornecidas pelo SDK do Windows. A maioria das bibliotecas de 32 bits tem uma versão de 64 bits correspondente, mas determinadas bibliotecas herdadas estão disponíveis somente em versões de 32 bits. O código que chama essas bibliotecas não será vinculado quando o aplicativo for compilado para o Windows de 64 bits.
 
  
 

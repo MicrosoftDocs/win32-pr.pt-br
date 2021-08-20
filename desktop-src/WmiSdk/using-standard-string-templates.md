@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Usando modelos de cadeia de caracteres padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ffc95f4b2b9b9f22e993d1de9cc8b35915918643
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c60a28730b890a5e922489a47b5b382b545cd6712d61cb976e96b549039ef7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049934"
 ---
 # <a name="using-standard-string-templates"></a>Usando modelos de cadeia de caracteres padrão
 
-Vários consumidores, como o consumidor de evento de script ativo ou o consumidor de evento de linha de comando, têm propriedades de cadeia de caracteres com o qualificador de **modelo** . Essas propriedades usam modelos de cadeia de caracteres padrão para construir uma cadeia de caracteres configurada em parte pela instância do consumidor e em parte por um evento. A estrutura de um modelo de cadeia de caracteres padrão é semelhante à especificação de variável de ambiente do Microsoft Windows.
+Vários consumidores, como o consumidor de evento de script ativo ou o consumidor de evento de linha de comando, têm propriedades de cadeia de caracteres com o qualificador de **modelo** . Essas propriedades usam modelos de cadeia de caracteres padrão para construir uma cadeia de caracteres configurada em parte pela instância do consumidor e em parte por um evento. a estrutura de um modelo de cadeia de caracteres padrão é semelhante à especificação de variável de ambiente do Microsoft Windows.
 
 A lista a seguir mostra alguns exemplos da linguagem do modelo:
 

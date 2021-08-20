@@ -10,12 +10,12 @@ api_name: ''
 api_type: ''
 api_location: ''
 ms.custom: contperf-fy21q3
-ms.openlocfilehash: c0876cda302d4c6215b640c210e880795273cd6c
-ms.sourcegitcommit: de72a1294df274b0a71dc0fdc42d757e5f6df0f3
+ms.openlocfilehash: 9f518102b7b3305103ed85231a791c542418a04c
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "104968273"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812892"
 ---
 # <a name="high-level-shader-language-hlsl"></a>HLSL (linguagem do sombreador de alto nível)
 
@@ -23,7 +23,7 @@ HLSL é a linguagem de sombreador de alto nível C como a que você usa com somb
 
 Por exemplo, você pode usar HLSL para escrever um [sombreador de vértice](../direct3d11/vertex-shader-stage.md)ou um [sombreador de pixel](../direct3d11/pixel-shader-stage.md)e usar esses sombreadores na implementação do renderizador em seu aplicativo [Direct3D](../direct3d12/directx-12-programming-guide.md) .
 
-Ou você pode usar HLSL para escrever um sombreador de computação, talvez para implementar uma simulação física. No entanto, se, por exemplo, você estiver inclinado a escrever seu próprio operador de convolução (para o processamento de imagens) como HLSL em um sombreador de computação, você obterá um melhor desempenho nesse cenário se usar o [Direct Machine Learning (DirectML)](../direct3d12/dml.md) em vez disso.
+Ou você pode usar HLSL para escrever um sombreador de computação, talvez para implementar uma simulação física. no entanto, se, por exemplo, você estiver inclinado a escrever seu próprio operador de convolução (para o processamento de imagens) como HLSL em um sombreador de computação, você obterá um melhor desempenho nesse cenário se usar o [Direct Machine Learning (DirectML)](/windows/ai/directml/dml) em vez disso.
 
 O HLSL foi criado (começando com o DirectX 9) para configurar o [pipeline](../direct3d11/overviews-direct3d-11-graphics-pipeline.md)3D programável. Você pode programar todo o pipeline com instruções de HLSL.
 

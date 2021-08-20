@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d26b6067352d4ca898cc1fc970524040d407bda1
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 62822789746cc9eb120d5102de12f8bc8174fa010db1bbdfff62119685390cd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104968654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118808119"
 ---
 # <a name="id3dx11effectgettechniquebyname-method"></a>Método ID3DX11Effect:: GetTechniqueByName
 
@@ -52,7 +52,7 @@ O nome da técnica.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **ID3DX11EffectTechnique**](id3dx11effecttechnique.md)\***
 

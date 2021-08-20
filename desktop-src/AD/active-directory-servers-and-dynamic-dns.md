@@ -7,12 +7,12 @@ keywords:
 - Active Directory de DNS dinâmico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 971987cb73b65e46b36eda4c713054ba2796e63b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9508bd571cf60d3801cc5708276ff9399494e354ee3559efd0a3ffa0b96836a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118025196"
 ---
 # <a name="active-directory-servers-and-dynamic-dns"></a>Servidores de Active Directory e DNS dinâmico
 
@@ -31,9 +31,9 @@ Quando um servidor de Active Directory é instalado, ele usa o DNS dinâmico par
 
 O DNS dinâmico é uma adição recente ao padrão de DNS. O DNS dinâmico define um protocolo para atualizar dinamicamente um servidor DNS com novos dados. Antes do DNS dinâmico, os administradores eram solicitados a configurar manualmente os registros armazenados por servidores DNS.
 
- 
+ 
 
- 
+ 
 
 
 

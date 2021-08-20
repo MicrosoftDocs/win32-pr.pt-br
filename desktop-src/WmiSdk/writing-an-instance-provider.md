@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Gravando um provedor de instância
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72bddfaa867624bd84cc975d32a8e7b747064d1d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fda61e7b6a05e409f36b8427700fa57c46e59d0f380b1b0b8b97b32a0998b679
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118106818"
 ---
 # <a name="writing-an-instance-provider"></a>Gravando um provedor de instância
 

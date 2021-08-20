@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 5d04c6640aa95bb8ba2cd881928a64f0968ec8bf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 990cbc06f67683018720386391f78c3ec0cce1f8c8bf9e56eab73fb106a99af0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144140"
 ---
 # <a name="configurableitemdefaultvalue-property"></a>Propriedade ConfigurableItem. DefaultValue
 
@@ -49,7 +49,7 @@ Consulte [**obter função \_ DefaultValue**](/windows/desktop/api/Mergemod/nf-m
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Mergemod.dll 2,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

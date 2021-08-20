@@ -4,12 +4,12 @@ ms.assetid: 9819d6bb-751b-4b47-aa2d-23d7f86c1d3d
 title: Propriedade AVAudioSampleRate (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 816ef69a91f24444aad1f15780b30a70572743d7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f7528b1920884666da15c154044ec15577ec93881b9aab3875f7ba5a0418cb7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159977"
 ---
 # <a name="avaudiosamplerate-property"></a>Propriedade AVAudioSampleRate
 
@@ -35,9 +35,9 @@ O conjunto de valores possíveis depende da implementação do decodificador e d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

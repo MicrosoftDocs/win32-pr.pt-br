@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 05a1427383a12c286ba37eee6f4ddfcd0b655350
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f7691d9d3daee5f0d7394307c59f2ca05aed940b545d6e46c8265a637006a21
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119782366"
 ---
 # <a name="esentoutofthreadsexception-class"></a>Classe EsentOutOfThreadsException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. OutOfThreads exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentOperationException](./esentoperationexception-class.md)  

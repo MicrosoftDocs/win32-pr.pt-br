@@ -13,12 +13,12 @@ keywords:
 - macro capDlgVideoCompression
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 046fbb6cedbf86fd4ad7262c7685b10a5ff7b003
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 93674b8ed4e6f6ff594013cc27825aea601cc005fc082ca8a8954b661c1f4317
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105758947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135554"
 ---
 # <a name="video-dialog-boxes"></a>Caixas de diálogo de vídeo
 
@@ -32,9 +32,9 @@ A caixa de diálogo exibição de vídeo controla a aparência do vídeo no moni
 
 A caixa de diálogo compactação de vídeo controla os atributos de compactação de vídeo post-Capture. Se a caixa de diálogo tiver suporte de um driver de captura de vídeo, você poderá exibi-lo e atualizá-lo usando a mensagem do [**WM \_ Cap \_ DLG \_ VIDEOCOMPRESSION**](wm-cap-dlg-videocompression.md) (ou a macro [**capDlgVideoCompression**](/windows/desktop/api/Vfw/nf-vfw-capdlgvideocompression) ).
 
- 
+ 
 
- 
+ 
 
 
 

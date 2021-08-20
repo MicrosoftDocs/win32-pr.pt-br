@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 817c2b23a6a770f9aafe4fb86e80327e1cea375c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ae8f80bde43a27c6d61676b394310133e73bdd29cdd695fadddcb3c621fc6448
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119298806"
 ---
 # <a name="ms-dfsr-deletedsizeinmb-attribute"></a>atributo ms-DFSR-DeletedSizeInMb
 

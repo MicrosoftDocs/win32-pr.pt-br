@@ -1,5 +1,5 @@
 ---
-description: As classes base do DirectShow fornecem funções auxiliares para lidar com a \_ estrutura do tipo de mídia am \_ .
+description: o DirectShow classes base fornece funções auxiliares para lidar com a \_ estrutura do tipo de mídia AM \_ .
 ms.assetid: 4dbea5b4-bf78-4253-be48-d81b77be6e77
 title: Funções de tipo de mídia (mtype. h)
 ms.topic: reference
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: a39fe9a9599a1d85c14a226106f5c8d7080b721f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef47b944d5d445f57779f99cb8517a773a7efba19ae3f2133f896fcba7b86548
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118153154"
 ---
 # <a name="media-type-functions"></a>Funções de tipo de mídia
 
-As classes base do DirectShow fornecem funções auxiliares para lidar com a estrutura do [**\_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+o DirectShow classes base fornece funções auxiliares para lidar com a estrutura do [**\_ \_ tipo de mídia AM**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
 
 A estrutura do **\_ \_ tipo de mídia am** contém um ponteiro (o membro **pbFormat** ) para outro bloco de memória, que é chamado de *bloco de formato*. Ao trabalhar com essa estrutura, portanto, você deve ter cuidado com a alocação de memória para evitar vazamentos de memória.
 
@@ -60,7 +60,7 @@ As seguintes funções liberam a memória:
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Mtype. h (incluir fluxos. h)</dt> </dl>                                                                                     |
+| parâmetro<br/>  | <dl> <dt>Mtype. h (incluir Fluxos. h)</dt> </dl>                                                                                     |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

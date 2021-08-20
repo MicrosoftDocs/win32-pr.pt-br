@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 4436be457adcca37ba40f15bbe0ecd6b0445fb2f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fa0ade829cff2359e074a4c2faf9942e94aa5e063f0cce841a5a0f0a84a5f3e6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143725"
 ---
 # <a name="configurableitem-object"></a>Objeto ConfigurableItem
 
@@ -41,7 +41,7 @@ O objeto **ConfigurableItem** tem essas propriedades.
 |:-----------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Atributos**](configurableitem-attributes.md)<br/>     | Retorna o valor no campo atributos do registro desse objeto na Tabela ModuleConfiguration.<br/>                            |
 | [**Contexto**](configurableitem-context.md)<br/>           | Retorna o valor no campo de contexto do registro desse objeto na Tabela ModuleConfiguration.<br/>                               |
-| [**DefaultValue**](configurableitem-defaultvalue.md)<br/> | Retorna o valor no campo DefaultValue do registro desse objeto na Tabela ModuleConfiguration.<br/>                          |
+| [**ValorPadrão**](configurableitem-defaultvalue.md)<br/> | Retorna o valor no campo DefaultValue do registro desse objeto na Tabela ModuleConfiguration.<br/>                          |
 | [**Descrição**](configurableitem-description.md)<br/>   | Retorna o valor no campo Descrição do registro desse objeto na Tabela ModuleConfiguration.<br/>                           |
 | [**DisplayName**](configurableitem-displayname.md)<br/>   | Retorna o valor no campo DisplayName do registro desse objeto na Tabela ModuleConfiguration.<br/>                           |
 | [**Formatar**](configurableitem-format.md)<br/>             | Retorna o valor no campo formato do registro desse objeto na Tabela ModuleConfiguration.<br/>                                |
@@ -77,7 +77,7 @@ IMsmConfigurableItem de interface **: IDispatch**
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
 | Versão<br/> | Mergemod.dll 2,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

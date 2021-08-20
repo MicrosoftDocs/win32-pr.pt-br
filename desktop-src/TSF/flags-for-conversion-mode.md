@@ -1,9 +1,9 @@
 ---
-title: Sinalizadores para o modo de conversão (Ctffunc. h)
-description: Os sinalizadores a seguir são usados como um valor da conversão de teclado do compartimento de GUID de \_ \_ \_ entrada \_ . Isso é equivalente a \_ valores de CMODE do IME para IMM32.
+title: Sinalizadores para o modo de conversão (Ctffunc.h)
+description: Os sinalizadores a seguir são usados como um valor de GUID \_ COMPARTMENT \_ KEYBOARD \_ INPUTMODE \_ CONVERSION. Isso é equivalente aos valores CMODE do IME \_ para IMM32.
 ms.assetid: 6e545af5-5fdb-49de-b24e-aaee82b51326
 keywords:
-- Sinalizadores para a estrutura de serviços de texto do modo de conversão
+- Sinalizadores para o modo de conversão Estrutura de Serviços de Texto
 topic_type:
 - apiref
 api_name:
@@ -14,48 +14,48 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 022712ff45f213992bf3d40bd0149959e4864faa
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 72c8c3a452e3115e66e4f0f6e75999cad9bce7e1eadf14b4cadd24fae640a327
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085703"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118879212"
 ---
 # <a name="flags-for-conversion-mode"></a>Sinalizadores para o modo de conversão
 
-Os sinalizadores a seguir são usados como um valor da [conversão de teclado do compartimento de GUID de \_ \_ \_ entrada \_ ](predefined-compartments.md). Isso é equivalente a valores de [ \_ CMODE do IME](../intl/ime-conversion-mode-values.md) para IMM32.
+Os sinalizadores a seguir são usados como um valor de [GUID \_ COMPARTMENT KEYBOARD \_ \_ INPUTMODE \_ CONVERSION.](predefined-compartments.md) Isso é equivalente aos [valores \_ CMODE do IME](../intl/ime-conversion-mode-values.md) para IMM32.
 
 
 
 | Sinalizador                             | Valor  | Descrição                                                     |
 |----------------------------------|--------|-----------------------------------------------------------------|
-| TF \_ CONversãomode \_ alfanumérico | 0x0000 | Defina como 1 se o modo alfanumérico.                                  |
-| TF \_ CONversãomode \_ nativo       | 0x0001 | Defina como 1 se o modo nativo; 0 se o modo alfanumérico.                |
-| TF \_ CONversãomode \_ katakana     | 0x0002 | Defina como 1 se modo KATAKANA; 0 se o modo HIRAGANA.                  |
-| TF \_ CONversãomode \_ FULLSHAPE    | 0x0008 | Defina como 1 se modo de forma completa; 0 se o modo de meia forma.              |
-| TF \_ CONversãomode \_ Roman        | 0x0010 | Defina como 1 para impedir o processamento de conversões por IME; 0 se não for. |
-| TF \_ CONversionmode \_ charCode     | 0x0020 | Defina como 1 se o modo de entrada de código de caractere; 0 se não for.                |
-| TF \_ CONversãomode \_ SOFTKEYBOARD | 0x0080 | Defina como 1 se o modo de teclado virtual; 0 se não for.                       |
-| TF \_ CONversãomode \_ noConversion | 0x0100 | Defina como 1 para impedir o processamento de conversões por IME; 0 se não for. |
-| TF \_ símbolo de CONversãomode \_       | 0x0400 | Defina como 1 se modo de conversão de símbolo; 0 se não for.                   |
-| TF \_ CONversãomode \_ corrigido        | 0x0800 | Defina como 1 se o modo de conversão fixa; 0 se não for.                    |
+| TF \_ CONVERSIONMODE \_ ALFANUMÉRICO | 0x0000 | Definido como 1 se o modo ALFANUMÉRICO.                                  |
+| TF \_ CONVERSIONMODE \_ NATIVE       | 0x0001 | Definido como 1 se o modo NATIVO; 0 se o modo ALFANUMÉRICO.                |
+| TF \_ CONVERSIONMODE \_ KATAKANA     | 0x0002 | Definido como 1 se o modo KATAKANA; 0 se o modo HIRAGANA.                  |
+| TF \_ CONVERSIONMODE \_ FULLSHAPE    | 0x0008 | Definido como 1 se o modo de forma completa; 0 se o modo de forma parcial.              |
+| TF \_ CONVERSIONMODE \_ ROMAN        | 0x0010 | Definido como 1 para impedir o processamento de conversões pelo IME; 0 se não. |
+| TF \_ CONVERSIONMODE \_ CHARCODE     | 0x0020 | Definido como 1 se o modo de entrada de código de caractere; 0 se não.                |
+| TF \_ CONVERSIONMODE \_ SOFTKEYBOARD | 0x0080 | Definido como 1 se o modo teclado suave; 0 se não.                       |
+| TF \_ CONVERSIONMODE \_ NOCONVERSION | 0x0100 | Definido como 1 para impedir o processamento de conversões pelo IME; 0 se não. |
+| SÍMBOLO DE \_ CONVERSÃO DE TFMODE \_       | 0x0400 | Definido como 1 se o modo de conversão SYMBOL; 0 se não.                   |
+| TF \_ CONVERSIONMODE \_ FIXO        | 0x0800 | Definido como 1 se o modo de conversão fixo; 0 se não.                    |
 
 
 
  
 
-Os valores a seguir são usados como um valor [de \_ compartimento de GUID \_ teclado \_ InputMode \_ ](predefined-compartments.md). Isso é equivalente a valores de [ \_ SMODE do IME](../intl/ime-composition-string-values.md) para IMM32.
+Os valores a seguir são usados como um valor de [GUID \_ COMPARTMENT KEYBOARD \_ \_ INPUTMODE \_ SENTENCE](predefined-compartments.md). Isso é equivalente aos [valores \_ SMODE do IME](../intl/ime-composition-string-values.md) para IMM32.
 
 
 
 | Sinalizador                            | Valor  | Descrição                                                                |
 |---------------------------------|--------|----------------------------------------------------------------------------|
-| TF \_ sentençamode \_ None          | 0x0000 | Nenhuma informação para frase.                                               |
-| TF \_ sentençamode \_ PLAURALCLAUSE | 0x0001 | O IME usa as informações de cláusula plural para executar o processamento de conversão. |
-| TF \_ sentençamode \_ SINGLECONVERT | 0x0002 | O IME executa o processamento de conversão no modo de caractere único.        |
-| TF \_ sentençamode \_ automático     | 0x0004 | O IME executa o processamento de conversão no modo automático.               |
-| TF \_ sentençamode \_ PHRASEPREDICT | 0x0008 | O IME usa informações de frase para prever o próximo caractere.             |
-| \_conversa TF sentençamode \_  | 0x0010 | O IME usa o modo de conversa. Isso é útil para aplicativos de chat.      |
+| TF \_ SENTENCEMODE \_ NONE          | 0x0000 | Nenhuma informação para frase.                                               |
+| TF \_ SENTENCEMODE \_ PLAURALCLAUSE | 0x0001 | O IME usa informações da cláusula plural para realizar o processamento de conversão. |
+| TF \_ SENTENCEMODE \_ SINGLECONVERT | 0x0002 | O IME executa o processamento de conversão no modo de caractere único.        |
+| TF \_ SENTENCEMODE \_ AUTOMATIC     | 0x0004 | O IME executa o processamento de conversão no modo automático.               |
+| FRASE \_ DE SENTENCEMODE \_ TFPREDICT | 0x0008 | O IME usa informações de frase para prever o próximo caractere.             |
+| CONVERSA TF \_ \_ SENTENCEMODE  | 0x0010 | O IME usa o modo de conversa. Isso é útil para aplicativos de chat.      |
 
 
 
@@ -69,9 +69,9 @@ Os valores a seguir são usados como um valor [de \_ compartimento de GUID \_ te
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Redistribuível<br/>          | TSF 1,0 onwindows NT 4.0, Windows 2000 ProfessionalandWindows MeWindows 98<br/>   |
-| parâmetro<br/>                   | <dl> <dt>Ctffunc. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>Ctffunc. idl</dt> </dl> |
+| Redistribuível<br/>          | TSF 1.0 onWindows NT 4.0,Windows 2000 ProfessionalandWindows MeWindows 98<br/>   |
+| Cabeçalho<br/>                   | <dl> <dt>Ctffunc.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Ctffunc.idl</dt> </dl> |
 
 
 

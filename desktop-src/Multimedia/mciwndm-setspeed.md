@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_SETSPEED (VFW. h)
-description: A \_ mensagem MCIWNDM SETSPEED define a velocidade de reprodução de um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndSetSpeed.
+title: MCIWNDM_SETSPEED mensagem (Vfw.h)
+description: A mensagem MCIWNDM \_ SETSPEED define a velocidade de reprodução de um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndSetSpeed.
 ms.assetid: 7658dd25-dc68-4bd1-b995-df06b509be16
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_SETSPEED
+- MCIWNDM_SETSPEED mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 282bb3a2e135b674605be55aaccaa455d30edbcc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6de0d78fef7723dab0ae2e2d3923f73f872e38dfd9c3e0f42443f7141f020336
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119782986"
 ---
-# <a name="mciwndm_setspeed-message"></a>Mensagem de MCIWNDM \_ SETspeed
+# <a name="mciwndm_setspeed-message"></a>Mensagem MCIWNDM \_ SETSPEED
 
-A mensagem **MCIWNDM \_ SETSPEED** define a velocidade de reprodução de um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndSetSpeed**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetspeed) .
+A **mensagem MCIWNDM \_ SETSPEED** define a velocidade de reprodução de um dispositivo MCI. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndSetSpeed.**](/windows/desktop/api/Vfw/nf-vfw-mciwndsetspeed)
 
 
 ```C++
@@ -38,7 +38,7 @@ lParam = (LPARAM) (UINT) iSpeed;
 
 <dl> <dt>
 
-<span id="iSpeed"></span><span id="ispeed"></span><span id="ISPEED"></span>*ispeedy*
+<span id="iSpeed"></span><span id="ispeed"></span><span id="ISPEED"></span>*iSpeed*
 </dt> <dd>
 
 Velocidade de reprodução. Especifique 1000 para velocidade normal, valores maiores para velocidades mais rápidas e valores menores para velocidades mais lentas.
@@ -47,7 +47,7 @@ Velocidade de reprodução. Especifique 1000 para velocidade normal, valores mai
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Retornará zero se for bem-sucedido ou um erro de outra forma.
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

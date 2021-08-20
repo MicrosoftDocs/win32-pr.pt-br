@@ -4,12 +4,12 @@ ms.assetid: a16af13d-3a38-42b5-900b-ff58a0c917b2
 title: Fogo, flares e explosões (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 708730bd8e5f198664bb20c11fa98243ac98f0d6
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: a4684f94932e7cc9db2560ae23b5be9a07af66727cf05967a5df82bb2e6b5158
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103645666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095047"
 ---
 # <a name="fire-flares-and-explosions-direct3d-9"></a>Fogo, flares e explosões (Direct3D 9)
 

@@ -1,23 +1,23 @@
 ---
-description: O Windows Installer funções, tabelas e propriedades listadas nesta página não têm suporte do Windows Installer&\# 160; 2.0 e versões anteriores.
+description: o Windows Installer funções, tabelas e propriedades listadas nesta página não têm suporte do Windows Installer&\# 160; 2.0 e versões anteriores.
 ms.assetid: 850b598a-338e-4f84-8336-01e962256a08
-title: Sem suporte no Windows Installer 2,0
+title: sem suporte no Windows Installer 2,0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 35ee09133af9ef611a93c2511d7b130b2175561b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d244dc962e65bb017dbd5fb56c7fda644b46524df7890ede7b71bf0bdf8ad66
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120074856"
 ---
-# <a name="not-supported-in-windows-installer-20"></a>Sem suporte no Windows Installer 2,0
+# <a name="not-supported-in-windows-installer-20"></a>sem suporte no Windows Installer 2,0
 
-O Windows Installer funções, tabelas e propriedades listadas nesta página não têm suporte do Windows Installer 2,0 e versões anteriores. A ausência de um recurso dessa lista não garante que o recurso tenha suporte. Consulte a documentação principal para determinar qual versão de Windows Installer é necessária para um recurso específico. Para obter informações sobre outras versões do Windows Installer, consulte [o que há de novo no Windows Installer](what-s-new-in-windows-installer.md).
+o Windows Installer funções, tabelas e propriedades listadas nesta página não têm suporte do Windows Installer 2,0 e versões anteriores. A ausência de um recurso dessa lista não garante que o recurso tenha suporte. consulte a documentação principal para determinar qual versão de Windows Installer é necessária para um recurso específico. para obter informações sobre outras versões do Windows Installer, consulte [o que há de novo no Windows Installer](what-s-new-in-windows-installer.md).
 
-O Windows Installer 2,0 pode ser executado no Microsoft Windows 2000, no Microsoft Windows XP ou no Windows Server 2003. Para obter uma lista de todas as versões do Windows Installer, consulte [versões lançadas do Windows Installer](released-versions-of-windows-installer.md).
+Windows o instalador 2,0 pode ser executado no microsoft Windows 2000, no microsoft Windows XP ou no Windows Server 2003. para obter uma lista de todas as versões do Windows Installer, consulte [versões lançadas do Windows Installer](released-versions-of-windows-installer.md).
 
-Os recursos a seguir não têm suporte no Windows Installer 2,0 e versões anteriores.
+os recursos a seguir não têm suporte no Windows Installer 2,0 e versões anteriores.
 
 [Funções do instalador](installer-functions.md)
 
@@ -43,7 +43,7 @@ Os recursos a seguir não têm suporte no Windows Installer 2,0 e versões anter
 -   [**MsiSourceListAddMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistaddmediadiska)
 -   [**MsiSourceListClearMediaDisk**](/windows/desktop/api/Msi/nf-msi-msisourcelistclearmediadiska)
 
-[Estruturas de Windows Installer](installer-structures.md)
+[Windows Estruturas do instalador](installer-structures.md)
 
 -   [**MSIPATCHSEQUENCEINFO**](/windows/win32/api/msi/ns-msi-msipatchsequenceinfoa)
 
@@ -133,30 +133,30 @@ Modos de log
 
     -   [**Installer. ProductsEx**](installer-productsex.md)
     -   [**Installer. ProductInfo**](installer-productinfo.md)
-    -   [**Installer. PatchesEx**](installer-patchesex.md)
+    -   [**Installer.PatchesEx**](installer-patchesex.md)
 
--   Métodos do [ **objeto instalador**](installer-object.md)
+-   Métodos do [ **objeto installer**](installer-object.md)
 
-    -   [**Installer. ApplyMultiplePatches**](installer-applymultiplepatches.md)
-    -   [**Installer. ApplyPatch**](installer-applypatch.md)
-    -   [**Installer. RemovePatches**](installer-removepatches.md)
-    -   [**Installer. ExtractPatchXMLData**](installer-extractpatchxmldata.md)
+    -   [**Installer.ApplyMultiplePatches**](installer-applymultiplepatches.md)
+    -   [**Installer.ApplyPatch**](installer-applypatch.md)
+    -   [**Installer.RemovePatches**](installer-removepatches.md)
+    -   [**Installer.ExtractPatchXMLData**](installer-extractpatchxmldata.md)
 
-Os recursos a seguir também não têm suporte no Windows Installer versão 2.0.2600. Windows Installer versão 2.0.2600 foi lançada com o Windows XP e o Windows 2000 Server. Os recursos estão disponíveis a partir do Windows Installer versão 2.0.3790 lançada com o Windows Server 2003. Para obter uma lista de todas as versões do Windows Installer, consulte [versões lançadas do Windows Installer](released-versions-of-windows-installer.md).
+Os recursos a seguir também não têm suporte no Windows Installer versão 2.0.2600. Windows O instalador versão 2.0.2600 foi lançado com Windows XP e Windows 2000 Server. Os recursos estão disponíveis a partir do Windows Installer versão 2.0.3790 lançado com o Windows Server 2003. Para ver uma lista de todas as Windows do Instalador, consulte Versões lançadas [do Windows Installer](released-versions-of-windows-installer.md).
 
 [Funções do instalador](installer-functions.md)
 
 -   [**MsiAdvertiseProductEx**](/windows/desktop/api/Msi/nf-msi-msiadvertiseproductexa)
-    -   instância de MSIADVERTISEOPTIONS \_
+    -   INSTÂNCIA MSIADVERTISEOPTIONS \_
 -   [**MsiApplyPatch**](/windows/desktop/api/Msi/nf-msi-msiapplypatcha)
 -   [**MsiGetProductInfo**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa)
 
-[Interface de automação](automation-interface.md)
+[Interface de Automação](automation-interface.md)
 
--   Métodos do [ **objeto instalador**](installer-object.md)
+-   Métodos do [ **objeto installer**](installer-object.md)
 
-    -   [**Installer. ApplyPatch**](installer-applypatch.md)
-    -   [**Installer. ProductInfo**](installer-productinfo.md)
+    -   [**Installer.ApplyPatch**](installer-applypatch.md)
+    -   [**Installer.ProductInfo**](installer-productinfo.md)
 
 [Propriedades](properties.md)
 
@@ -164,23 +164,23 @@ Os recursos a seguir também não têm suporte no Windows Installer versão 2.0.
 -   [**MSIINSTANCEGUID**](msiinstanceguid.md)
 -   [**MsiNTSuiteWebServer**](msintsuitewebserver.md)
 
-[Opções de execução de In-Script de ação personalizada](custom-action-in-script-execution-options.md)
+[Opções de execução In-Script ação personalizada](custom-action-in-script-execution-options.md)
 
 -   [**msidbCustomActionTypeTSAware**](custom-action-in-script-execution-options.md)
 
 [Códigos de Erro](error-codes.md)
 
--   [ERRO ao \_ instalar \_ remoto \_ proibido](error-codes.md)
+-   [ERRO \_ AO INSTALAR \_ \_ REMOTAMENTE PROIBIDO](error-codes.md)
 
-[Políticas do computador](machine-policies.md)
+[Políticas de computador](machine-policies.md)
 
 -   [DisableMSI](disablemsi.md)
--   [Política de TransformsSecure](transformssecure-policy.md)
+-   [TransformsSeure policy](transformssecure-policy.md)
 
 [Opções de linha de comando](command-line-options.md)
 
 -   [/c](command-line-options.md)
--   [opção](command-line-options.md)
+-   [/n](command-line-options.md)
 -   [/Lx](command-line-options.md)
 
 [Atributos de controle](control-attributes.md)
@@ -189,25 +189,25 @@ Os recursos a seguir também não têm suporte no Windows Installer versão 2.0.
 
 ## <a name="notes"></a>Observações
 
-As [Opções de Command-Line do instalador padrão](standard-installer-command-line-options.md) não são suportadas pelo Windows Installer 2,0. Em vez disso, use as [Opções de linha de comando](command-line-options.md)Windows Installer.
+Não há suporte para [Command-Line standard Installer](standard-installer-command-line-options.md) no Windows Installer 2.0. Em vez disso, use Windows opções de linha de comando [do instalador de dados.](command-line-options.md)
 
-Quando Windows Installer 2,0 instala um pacote de patch, ele ignora as informações nas tabelas [MsiPatchSequence](msipatchsequence-table.md) ou [MsiPatchMetaData](msipatchmetadata-table.md) . As versões posteriores do Windows Installer podem usar as informações nessas tabelas para melhorar o sequenciamento, a remoção e a otimização de patches. Para obter informações sobre a funcionalidade de aplicação de patch aprimorada no Windows Installer, consulte [aplicação de patches](patching.md).
+Quando Windows Installer 2.0 instala um pacote de patch, ele ignora informações nas tabelas [MsiPatchSequence](msipatchsequence-table.md) ou [MsiPatchMetadata.](msipatchmetadata-table.md) Versões posteriores do Windows Instalador podem usar as informações nessas tabelas para melhorar o sequenciamento, a remoção e a otimização de patch. Para obter informações sobre a funcionalidade de aprimorada de adoção Windows Instalador, consulte [Patching](patching.md).
 
-Windows Installer 2,0 não oferece suporte a [patches desinstaláveis](uninstallable-patches.md) e o único método para remover patches específicos de um aplicativo é desinstalar todo o aplicativo com patch e reinstalá-lo sem reaplicar os patches que estão sendo removidos.
+Windows O Instalador 2.0 não dá suporte a [Patches Desinstaláveis](uninstallable-patches.md) e o único método para remover patches específicos de um aplicativo é desinstalar todo o aplicativo com patch e reinstalar sem reaplicação de patches que estão sendo removidos.
 
-Windows Installer 2,0 não oferece suporte ao sequenciamento de patches e instala patches na ordem em que são fornecidos ao sistema ao [instalar vários patches](installing-multiple-patches.md).
+Windows O Instalador 2.0 não dá suporte ao sequenciamento de patch e instala patches na ordem em que eles são fornecidos ao sistema ao instalar [vários patches](installing-multiple-patches.md).
 
-Windows Installer 2,0 não oferece suporte ao uso de [aplicação de patch de UAC (controle de conta de usuário)](user-account-control--uac--patching.md) para habilitar patches assinados digitalmente que podem ser aplicados por usuários não administradores.
+Windows O Instalador 2.0 não dá suporte ao uso da Aplicação de Patch do [UAC (Controle](user-account-control--uac--patching.md) de Conta de Usuário) para habilitar patches assinados digitalmente que podem ser aplicados por usuários não administradores.
 
-Windows Installer 2,0 não oferece suporte à [otimização de patch](patch-optimization.md). A aplicação de patch pode levar muito mais tempo do que as versões mais recentes do Windows Installer que atualizam apenas os arquivos afetados pelo patch.
+Windows O Instalador 2.0 não dá suporte à [Otimização de Patch.](patch-optimization.md) A adoção de patch pode levar muito mais tempo do que com as versões Windows Instalador posteriores que atualiza apenas os arquivos afetados pelo patch.
 
-Windows Installer 2,0 não oferece suporte ao [uso de Windows Installer para inventariar produtos e patches](inventory-products-and-patches-.md).
+Windows O Instalador 2.0 não dá suporte ao [Uso Windows Instalador para Produtos de](inventory-products-and-patches-.md)Inventário e Patches .
 
-Windows Installer 2,0 não oferece suporte à recuperação e à modificação de informações da lista de origem para aplicativos Windows Installer e patches instalados no sistema para todos os usuários. As versões posteriores do Windows Installer permitem que os administradores gerenciem listas de origem e propriedades da lista de origem para fontes de rede, URL e mídia. As versões posteriores permitem que os administradores gerenciem listas de origem de um processo externo. Para obter mais informações, consulte [Gerenciando fontes de instalação](managing-installation-sources.md).
+Windows O Instalador 2.0 não dá suporte à recuperação e modificação das informações da lista de origem para aplicativos e patches do instalador do Windows instalados no sistema para todos os usuários. Versões posteriores do Windows Instalador permitem que os administradores gerenciem listas de origem e propriedades da lista de origem para fontes de rede, URL e mídia. Versões posteriores permitem que os administradores gerenciem listas de origem de um processo externo. Para obter mais informações, consulte [Gerenciando fontes de instalação](managing-installation-sources.md).
 
-Windows Installer 2,0 não oferece suporte à instalação de várias instâncias de produtos ou patches sem um pacote de instalação separado para cada instância. Versões mais recentes do Windows Installer podem instalar várias instâncias de um produto usando transformações de código do produto e um pacote. msi ou um patch. Para obter informações [, consulte Instalando várias instâncias de produtos e patches](installing-multiple-instances-of-products-and-patches.md).
+Windows O Instalador 2.0 não dá suporte à instalação de várias instâncias de produtos ou patches sem um pacote de instalação separado para cada instância. Posteriormente Windows versões do Instalador podem instalar várias instâncias de um produto usando as transformaçãos de código do produto e um .msi pacote ou um patch. Para obter [informações, consulte Instalando várias instâncias de produtos e patches](installing-multiple-instances-of-products-and-patches.md).
 
-A partir do Windows XP com Service Pack 2 (SP2), Windows Installer pode usar os protocolos HTTP, HTTPS e FILE. O instalador não dá suporte aos protocolos FTP e GOPHER.
+A partir do Windows XP com o SERVICE Pack 2 (SP2), o Windows Installer pode usar os protocolos HTTP, HTTPS e FILE. O instalador não dá suporte aos protocolos FTP e GOPHER.
 
  
 

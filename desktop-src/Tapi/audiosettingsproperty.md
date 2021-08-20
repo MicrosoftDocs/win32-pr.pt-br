@@ -1,21 +1,21 @@
 ---
-description: 'A enumeração AudioSettingsProperty é usada pelos métodos ITAudioSettings:: GetRange, ITAudioSettings:: Get e ITAudioSettings:: set para indicar a propriedade de configuração de áudio que está sendo endereçada.'
+description: A enum AudioSettingsProperty é usada pelos métodos ITAudioSettings::GetRange, ITAudioSettings::Get e ITAudioSettings::Set para indicar a propriedade de configuração de áudio que está sendo resolvida.
 ms.assetid: b91c8213-f102-4ebb-ad8a-e43709b3daad
-title: Enumeração AudioSettingsProperty (Ipmsp. h)
+title: Enumeração AudioSettingsProperty (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 759e3ca9d9559c35c64c117b9b84b1cee4a1fad1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3b15cfb5a0211f02ac333ba75e47b5e4cbd5c44865b4a18c2f19ea3a8769dde3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118871526"
 ---
 # <a name="audiosettingsproperty-enumeration"></a>Enumeração AudioSettingsProperty
 
-\[ Essa enumeração não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[Essa enumeração não está disponível para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-A enumeração **AudioSettingsProperty** é usada pelos métodos [**ITAudioSettings:: GetRange**](itaudiosettings-getrange.md), [**ITAudioSettings:: Get**](itaudiosettings-get.md)e [**ITAudioSettings:: Set**](itaudiosettings-set.md) para indicar a propriedade de configuração de áudio que está sendo endereçada.
+A enum **AudioSettingsProperty** é usada pelos métodos [**ITAudioSettings::GetRange**](itaudiosettings-getrange.md), [**ITAudioSettings::Get**](itaudiosettings-get.md)e [**ITAudioSettings::Set**](itaudiosettings-set.md) para indicar a propriedade de configuração de áudio que está sendo resolvida.
 
 ## <a name="syntax"></a>Syntax
 
@@ -33,7 +33,7 @@ A enumeração **AudioSettingsProperty** é usada pelos métodos [**ITAudioSetti
 <span id="AudioSettings_SignalLevel"></span><span id="audiosettings_signallevel"></span><span id="AUDIOSETTINGS_SIGNALLEVEL"></span>**AudioSettings \_ SignalLevel**
 </dt> <dd>
 
-Propriedade de configurações de sinal.
+Propriedade configurações de sinal.
 
 </dd> <dt>
 
@@ -44,45 +44,45 @@ Propriedade de limite de silêncio.
 
 </dd> <dt>
 
-<span id="AudioSettings_Volume"></span><span id="audiosettings_volume"></span><span id="AUDIOSETTINGS_VOLUME"></span>**\_Volume AudioSettings**
+<span id="AudioSettings_Volume"></span><span id="audiosettings_volume"></span><span id="AUDIOSETTINGS_VOLUME"></span>**Volume de AudioSettings \_**
 </dt> <dd>
 
-Propriedade de volume.
+Propriedade volume.
 
 </dd> <dt>
 
-<span id="AudioSettings_Balance"></span><span id="audiosettings_balance"></span><span id="AUDIOSETTINGS_BALANCE"></span>**Saldo de AudioSettings \_**
+<span id="AudioSettings_Balance"></span><span id="audiosettings_balance"></span><span id="AUDIOSETTINGS_BALANCE"></span>**Saldo de \_ AudioSettings**
 </dt> <dd>
 
-Propriedade Balance.
+Propriedade balancear.
 
 </dd> <dt>
 
-<span id="AudioSettings_Loudness"></span><span id="audiosettings_loudness"></span><span id="AUDIOSETTINGS_LOUDNESS"></span>**Intensidade de AudioSettings \_**
+<span id="AudioSettings_Loudness"></span><span id="audiosettings_loudness"></span><span id="AUDIOSETTINGS_LOUDNESS"></span>**Intensidade de \_ AudioSettings**
 </dt> <dd>
 
 Propriedade de intensidade.
 
 </dd> <dt>
 
-<span id="AudioSettings_Treble"></span><span id="audiosettings_treble"></span><span id="AUDIOSETTINGS_TREBLE"></span>**AudioSettings \_ agudos**
+<span id="AudioSettings_Treble"></span><span id="audiosettings_treble"></span><span id="AUDIOSETTINGS_TREBLE"></span>**AudioSettings \_ Treble**
 </dt> <dd>
 
-Propriedade agudos.
+Propriedade treble.
 
 </dd> <dt>
 
-<span id="AudioSettings_Bass"></span><span id="audiosettings_bass"></span><span id="AUDIOSETTINGS_BASS"></span>**AudioSettings \_ Bass**
+<span id="AudioSettings_Bass"></span><span id="audiosettings_bass"></span><span id="AUDIOSETTINGS_BASS"></span>**AudioSettings \_ Christopher**
 </dt> <dd>
 
-Propriedade Bass.
+Propriedade Deão.
 
 </dd> <dt>
 
-<span id="AudioSettings_Mono"></span><span id="audiosettings_mono"></span><span id="AUDIOSETTINGS_MONO"></span>**AudioSettings \_ mono**
+<span id="AudioSettings_Mono"></span><span id="audiosettings_mono"></span><span id="AUDIOSETTINGS_MONO"></span>**AudioSettings \_ Mono**
 </dt> <dd>
 
-Propriedade monaural.
+Propriedadeural.
 
 </dd> </dl>
 
@@ -92,8 +92,8 @@ Propriedade monaural.
 
 | Requisito | Valor |
 |-------------------------|------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                       |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 3.1<br/>                                                       |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp.h</dt> </dl> |
 
 
 
@@ -101,13 +101,13 @@ Propriedade monaural.
 
 <dl> <dt>
 
-[**ITAudioSettings:: GetRange**](itaudiosettings-getrange.md)
+[**ITAudioSettings::GetRange**](itaudiosettings-getrange.md)
 </dt> <dt>
 
-[**ITAudioSettings:: Get**](itaudiosettings-get.md)
+[**ITAudioSettings::Get**](itaudiosettings-get.md)
 </dt> <dt>
 
-[**ITAudioSettings:: Set**](itaudiosettings-set.md)
+[**ITAudioSettings::Set**](itaudiosettings-set.md)
 </dt> </dl>
 
  

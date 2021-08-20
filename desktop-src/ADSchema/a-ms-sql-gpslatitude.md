@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-GPSLatitude
-description: O atributo MS-SQL-GPSLatitude não está sendo usado no momento.
+description: O atributo MS-SQL-GPSLatitude não é usado no momento.
 ms.assetid: 08f17252-7d06-4491-aa39-d9de017158fa
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-GPSLatitude
-- Esquema de AD do atributo mS-SQL-GPSLatitude
+- Esquema do AD do atributo MS-SQL-GPSLatitude
+- Esquema do AD do atributo mS-SQL-GPSLatitude
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d41ae4010c2cce93d6128cae6d9a7055f234b20
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 965309cb004d62fce093ce5efdfdaa70c255cb2c2fc2179affd58ed96fec33af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919642"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119299796"
 ---
 # <a name="ms-sql-gpslatitude-attribute"></a>Atributo MS-SQL-GPSLatitude
 
-O atributo **MS-SQL-GPSLatitude** não está sendo usado no momento.
+O **atributo MS-SQL-GPSLatitude** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-GPSLatitude                          |
-| LDAP-Display-Name | mS-SQL-GPSLatitude                          |
+| Ldap-Display-Name | mS-SQL-GPSLatitude                          |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1385                     |
-| System-ID-GUID    | b222ba0e-ccee-11d2-9993-0000f87a57d4        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | b222ba0e-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ O atributo **MS-SQL-GPSLatitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | True                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -79,10 +79,10 @@ O atributo **MS-SQL-GPSLatitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | True                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -100,10 +100,10 @@ O atributo **MS-SQL-GPSLatitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | True                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
@@ -121,7 +121,7 @@ O atributo **MS-SQL-GPSLatitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -163,7 +163,7 @@ O atributo **MS-SQL-GPSLatitude** não está sendo usado no momento.
 | ID do link                | \-                                                        |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |

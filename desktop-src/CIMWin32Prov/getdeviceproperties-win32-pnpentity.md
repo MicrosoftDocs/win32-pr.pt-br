@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 6aa9f6cad17fe48617b5bf7d28ba19d6f5370834
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 855c3c0644d8c7b5c5300c8d12d5a6f98073a4511f8d0d65f4058da7fb9d0f24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010157"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120077506"
 ---
 # <a name="getdeviceproperties-method-of-the-win32_pnpentity-class"></a>Método deviceproperties da \_ classe Win32 PnPEntity
 
@@ -61,7 +61,7 @@ As propriedades solicitadas nos subtipos apropriados da classe abstrata [**Win32
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                             |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                          |
 | Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
 | MOF<br/>                      | <dl> <dt>Cimwin32. mof</dt> </dl> |

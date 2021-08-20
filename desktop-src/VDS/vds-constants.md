@@ -4,16 +4,16 @@ ms.assetid: a3a8b549-51bc-48eb-9215-04c7311e03a3
 title: Constantes do VDS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b9979cd4416b5305c61f6275612422b1f4cfe43a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0e9fa0c6196e1085de3a5433750b890e2ad3bc42f4a86022587f02157521eacf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787027"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118125689"
 ---
 # <a name="vds-constants"></a>Constantes do VDS
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 As constantes do VDS são categorizadas da seguinte maneira:
 

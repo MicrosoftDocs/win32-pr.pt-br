@@ -1,21 +1,21 @@
 ---
-title: Otimização de entrega (DO)
-description: A otimização de entrega é um cliente ponto a ponto gerenciado pela nuvem e um serviço de download que fornece atualizações para os dispositivos de rede de uma organização.
+title: Otimização de Entrega (DO)
+description: Otimização de Entrega é um cliente ponto a ponto gerenciado na nuvem e um serviço de download que fornece atualizações para os dispositivos em rede de uma organização.
 ms.assetid: c6b30f6f-61ed-4bdc-a747-34ac88fd9d69
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eca2639c3af46480ddbac3e4672534a2ea5cc1ba
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 105b619ab7b80ec4afc59e2faa872ca19965263a7e82571293553d6351eb0df2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084589"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118101948"
 ---
-# <a name="delivery-optimization-do"></a>Otimização de entrega (DO)
+# <a name="delivery-optimization-do"></a>Otimização de Entrega (DO)
 
-A otimização de entrega é um cliente ponto a ponto gerenciado pela nuvem e um serviço de download que fornece atualizações para os dispositivos de rede de uma organização. A otimização de entrega permite que os dispositivos baixem atualizações de fontes alternativas (como outros pares na rede), além dos servidores da Microsoft. A otimização de entrega combina bits parciais de dispositivos locais, com bits parciais de servidores da Microsoft para atualizar dispositivos no ambiente de rede. O resultado esperado é o uso reduzido da largura de banda e um processo de atualização mais rápido.
+Otimização de Entrega é um cliente ponto a ponto gerenciado na nuvem e um serviço de download que fornece atualizações para os dispositivos em rede de uma organização. Otimização de Entrega permite que os dispositivos baixem atualizações de fontes alternativas (como outros pares na rede), além dos servidores da Microsoft. Otimização de Entrega combina bits parciais de dispositivos locais, com bits parciais de servidores da Microsoft para atualizar dispositivos no ambiente de rede. O resultado esperado é o uso reduzido da largura de banda e um processo de atualização mais rápido.
 
-Consulte [Configurar a otimização de entrega para atualizações do Windows 10](/windows/deployment/update/waas-delivery-optimization) para obter mais informações.
+Confira [Configurar Otimização de Entrega para Windows 10 atualizações para](/windows/deployment/update/waas-delivery-optimization) obter mais informações.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -23,7 +23,7 @@ Consulte [Configurar a otimização de entrega para atualizações do Windows 10
 
 | Tópico                                       | Descrição                                                                             |
 |---------------------------------------------|-----------------------------------------------------------------------------------------|
-| [FAZER referência](do-reference.md)<br/> | Informações de referência para as interfaces de programação de otimização de entrega. <br/> |
+| [Referência do DO](do-reference.md)<br/> | Informações de referência para as interfaces Otimização de Entrega programação. <br/> |
 
 
 

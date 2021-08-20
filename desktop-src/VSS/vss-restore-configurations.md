@@ -1,5 +1,5 @@
 ---
-description: A restauração de arquivo em um sistema em execução pode ser problemática. É importante que a execução de aplicativos (autores) indique o que fazer quando surgirem dificuldades durante as restaurações, por exemplo, se o arquivo que está sendo restaurado estiver em uso no momento.
+description: A restauração de arquivos em um sistema em execução pode ser problemática. É importante que a execução de aplicativos (gravadores) indique o que fazer quando surgirem dificuldades durante restaurações, por exemplo, se o arquivo que está sendo restaurado estiver em uso no momento.
 ms.assetid: 2cb963a8-7077-4419-96d8-cba0fd011e4f
 title: Configurações de restauração do VSS
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "118344190"
 ---
 # <a name="vss-restore-configurations"></a>Configurações de restauração do VSS
 
-A restauração de arquivo em um sistema em execução pode ser problemática. É importante que a execução de aplicativos (autores) indique o que fazer quando surgirem dificuldades durante as restaurações, por exemplo, se o arquivo que está sendo restaurado estiver em uso no momento.
+A restauração de arquivos em um sistema em execução pode ser problemática. É importante que a execução de aplicativos (gravadores) indique o que fazer quando surgirem dificuldades durante restaurações, por exemplo, se o arquivo que está sendo restaurado estiver em uso no momento.
 
-No VSS, os autores têm duas maneiras complementares de gerenciar restaurações:[*métodos de restauração*](vssgloss-r.md) e [*destinos de restauração.*](vssgloss-r.md)
+No VSS, os gravadores têm duas maneiras complementares de gerenciar restaurações —[*métodos de restauração*](vssgloss-r.md) e [*destinos de restauração*](vssgloss-r.md).
 
-Além disso, os solicitantes podem optar por restaurar arquivos para locais não especificados anteriormente e notificar os autores (consulte [**IVssBackupComponents::AddNewTarget**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget)).
+Além disso, os solicitantes podem optar por restaurar os arquivos para os locais não especificados anteriormente e notificar os gravadores (consulte [**IVssBackupComponents:: AddNewTarget**](/windows/desktop/api/VsBackup/nf-vsbackup-ivssbackupcomponents-addnewtarget)).
 
-O método de restauração (também chamar o destino de restauração original) é especificado por um autor em um momento de backup e define uma definição de todo o autor do método a ser usado para restaurar todos os seus componentes no futuro. Todos os arquivos e componentes gerenciados por um autor compartilham o mesmo método de restauração.
+O método Restore (também chama o destino de restauração original) é especificado por um gravador em um horário de backup e define uma definição de todo o gravador do método a ser usado para restaurar todos os seus componentes no futuro. Todos os arquivos e componentes gerenciados por um gravador compartilham o mesmo método de restauração.
 
-Os destinos de restauração permitem que os autores alterem a maneira como os componentes específicos devem ser restaurados no momento da restauração. Ao contrário dos métodos de restauração, os destinos de restauração são definidos para um conjunto de componentes.
+Os destinos de restauração permitem que os gravadores alterem como os componentes específicos devem ser restaurados no momento da restauração. Ao contrário dos métodos de restauração, os destinos de restauração são definidos para um conjunto de componentes.
 
 Uma discussão detalhada sobre o uso de métodos de restauração e destinos de restauração é encontrada nos tópicos listados abaixo:
 
@@ -30,7 +30,7 @@ Uma discussão detalhada sobre o uso de métodos de restauração e destinos de 
 -   [Definindo destinos de restauração do VSS](setting-vss-restore-targets.md)
 -   [Definindo opções de restauração do VSS](setting-vss-restore-options.md)
 
-(Para obter informações sobre restaurações que não usam esses mecanismos, consulte [Restaurações sem participação do autor](restores-without-writer-participation.md).)
+(Para obter informações sobre restaurações que não usam esses mecanismos, consulte [restaurações sem participação no gravador](restores-without-writer-participation.md).)
 
  
 

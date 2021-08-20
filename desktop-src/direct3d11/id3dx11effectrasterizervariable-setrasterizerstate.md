@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectRasterizerVariable SetRasterizerState (D3dx11effect. h)
+title: Método ID3DX11EffectRasterizerVariable SetRasterizerState (D3dx11effect.h)
 description: Define o estado do rasterizador.
 ms.assetid: b2cd93fb-77bb-4a39-b686-7b8f683c9172
 keywords:
 - Método SetRasterizerState Direct3D 11
-- Método SetRasterizerState Direct3D 11, interface ID3DX11EffectRasterizerVariable
-- Interface ID3DX11EffectRasterizerVariable Direct3D 11, método SetRasterizerState
+- Método SetRasterizerState Direct3D 11 , interface ID3DX11EffectRasterizerVariable
+- ID3DX11EffectRasterizerVariable interface Direct3D 11 , método SetRasterizerState
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118534324"
 ---
-# <a name="id3dx11effectrasterizervariablesetrasterizerstate-method"></a>Método ID3DX11EffectRasterizerVariable:: SetRasterizerState
+# <a name="id3dx11effectrasterizervariablesetrasterizerstate-method"></a>Método ID3DX11EffectRasterizerVariable::SetRasterizerState
 
 Define o estado do rasterizador.
 
@@ -47,9 +47,9 @@ HRESULT SetRasterizerState(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
-Indexe em uma matriz de interfaces do rasterizador. Se houver apenas uma interface do rasterizador, use 0.
+Indexar em uma matriz de interfaces de rasterizador. Se houver apenas uma interface de rasterizador, use 0.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Indexe em uma matriz de interfaces do rasterizador. Se houver apenas uma interfa
 
 Tipo: **[ **ID3D11RasterizerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11rasterizerstate)\***
 
-Ponteiro para uma interface [**ID3D11RasterizerState**](/windows/desktop/api/D3D11/nn-d3d11-id3d11rasterizerstate) .
+Ponteiro para uma [**interface ID3D11RasterizerState.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11rasterizerstate)
 
 </dd> </dl>
 
@@ -66,12 +66,12 @@ Ponteiro para uma interface [**ID3D11RasterizerState**](/windows/desktop/api/D3D
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -81,8 +81,8 @@ Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-ref
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

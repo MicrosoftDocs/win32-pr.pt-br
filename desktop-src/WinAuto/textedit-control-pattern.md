@@ -1,58 +1,58 @@
 ---
-title: Padrão de controle editor
+title: Padrão de controle TextEdit
 description: Apresenta diretrizes e convenções para implementar ITextEditProvider, incluindo informações sobre propriedades e métodos.
 ms.assetid: AA9E04AC-1AC0-6434-ADEF-9FF82ADA7CD9
 keywords:
-- Automação da interface do usuário, implementando o padrão de controle editor
-- Automação da interface do usuário, padrão de controle editor
-- padrões de controle, editor
+- Automação da Interface do Usuário, implementando o padrão de controle TextEdit
+- Automação da Interface do Usuário, padrão de controle TextEdit
+- padrões de controle, TextEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bdf8512db4f676a263bf46bdbdfea7b6b7eaba11
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fc30701639301a49f23637067f5c8666f13b0276de4133e151b5e528af1f1ae1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118827796"
 ---
-# <a name="textedit-control-pattern"></a>Padrão de controle editor
+# <a name="textedit-control-pattern"></a>Padrão de controle TextEdit
 
-Apresenta diretrizes e convenções para implementar [**ITextEditProvider**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-itexteditprovider), incluindo informações sobre propriedades e métodos. O padrão de controle **Editor** é usado para acesso programático a um controle que modifica o texto, por exemplo, um controle que executa a correção automática ou habilita a composição de entrada.
+Apresenta diretrizes e convenções para implementar [**ITextEditProvider**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-itexteditprovider), incluindo informações sobre propriedades e métodos. O **padrão de controle TextEdit** é usado para acesso programático a um controle que modifica o texto, por exemplo, um controle que executa a correção automática ou habilita a composição de entrada.
 
 > [!Note]  
-> As notas de implementação neste tópico referem-se às APIs que vêm da TSF (Text Services Framework). Para obter mais informações sobre o TSF e a referência de API, consulte [estrutura de serviços de texto](/windows/desktop/TSF/text-services-framework).
+> As notas de implementação neste tópico referem-se a APIs que vêm Estrutura de Serviços de Texto (TSF). Para obter mais informações sobre o TSF e a referência de API, [consulte Estrutura de Serviços de Texto](/windows/desktop/TSF/text-services-framework).
 
  
 
 ## <a name="required-members-for-itexteditprovider"></a>Membros necessários para **ITextEditProvider**
 
-Essas propriedades e métodos são necessários para implementar a interface [**ITextEditProvider**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-itexteditprovider) .
+Essas propriedades e métodos são necessários para implementar a interface [**ITextEditProvider.**](/windows/desktop/api/uiautomationcore/nn-uiautomationcore-itexteditprovider)
 
 
 
 | Membros necessários                                                              | Tipo de membro | Observações                                                                                                                                                                                                                                                                                   |
 |-------------------------------------------------------------------------------|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GetActiveComposition**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itexteditprovider-getactivecomposition) | Método      | Retorna o intervalo da conversão atual (nenhum se não houver conversão). Retornar a composição ativa (no TSF, esse é o intervalo marcado por **\_ \_ composição de prop de GUID**). Por exemplo, com o IME (editor de método de entrada) do Microsoft Japanese, esse seria o texto sublinhado completo. |
-| [**GetConversionTarget**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itexteditprovider-getconversiontarget)   | Método      | Retorna o intervalo de destino da conversão atual (nenhum se nenhuma conversão). No TSF, esse é o intervalo de caracteres marcados como **TF \_ attr \_ target não \_ convertido** ou **TF \_ attr \_ target \_ convertido** da estrutura **TF \_ DisplayAttribute** .                                               |
+| [**GetActiveComposition**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itexteditprovider-getactivecomposition) | Método      | Retorna o intervalo da conversão atual (nenhum se não houver conversão). Retornar a composição ativa (no TSF, esse é o intervalo marcado por **GUID \_ PROP \_ COMPOSING**). Por exemplo, com o IME (Editor de Método de Entrada Japonês) da Microsoft, esse seria o texto sublinhado completo. |
+| [**GetConversionTarget**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-itexteditprovider-getconversiontarget)   | Método      | Retorna o intervalo de destino de conversão atual (nenhum se nenhuma conversão). No TSF, esse é o intervalo de caracteres marcados como **TF \_ ATTR \_ TARGET \_ NOTCONVERTED** ou **TF \_ ATTR \_ TARGET \_ CONVERTIDA** da estrutura **TF \_ DISPLAYATTRIBUTE.**                                               |
 
 
 
  
 
-Os eventos **TextEditTextChanged** e **ConversionTargetChanged** devem ser gerados por elementos de automação da interface do usuário da Microsoft que dão suporte ao padrão **Editor** .
+Os **eventos TextEditTextChanged** e **ConversionTargetChanged** devem ser gerados pelos elementos Automação da Interface do Usuário Microsoft que suportam o padrão **TextEdit.**
 
 ### <a name="textedittextchanged"></a>**TextEditTextChanged**
 
--   Use a função [**UiaRaiseTextEditTextChangedEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraisetextedittextchangedevent) para gerar o evento **TextEditTextChanged** .
--   A tabela a seguir lista os casos em que você deve gerar o evento e os parâmetros [**UiaRaiseTextEditTextChangedEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraisetextedittextchangedevent) a serem usados.
+-   Use a [**função UiaRaiseTextEditTextChangedEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraisetextedittextchangedevent) para auviar **o evento TextEditTextChanged.**
+-   A tabela a seguir lista os casos em que você deve auviar o evento e os parâmetros [**UiaRaiseTextEditTextChangedEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraisetextedittextchangedevent) a usar.
 
 
 
 | TextEditChangeType                                            | Carga do evento                                | Observações                                                                                                                                                                                                                                                                                                                                                                                        |
 |---------------------------------------------------------------|----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Matemática**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-texteditchangetype)          | Nova cadeia de caracteres corrigida                         | Gerado quando uma correção automática é feita pelo controle. Ou sempre que uma substituição é feita por meio de TSF e o intervalo tem um valor da **GUID \_ prop \_ TKB \_ alternativos** de **TKB \_ alterna a \_ correção automática \_ aplicada**.<br/>                                                                                                                                                                   |
-| [**Composição**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-texteditchangetype)          | A cadeia de caracteres atualizada                           | A carga deve incluir apenas os caracteres que foram alterados (não envie a cadeia de caracteres de composição inteira). Gerado sempre que uma substituição de composição é feita. No TSF, uma substituição de composição é definida como uma substituição que tem o sinalizador de **\_ \_ composição prop do GUID** definido. Os controles de edição que implementam o TSF podem monitorar essas alterações por meio da notificação **onendedit** .<br/>         |
-| [**CompositionFinalized**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-texteditchangetype) | A cadeia de caracteres de composição finalizada (consulte Observações) | No TSF, a cadeia de caracteres de conversão que está sendo finalizada é definida pelo sinalizador de **\_ \_ composição de props de GUID** que está sendo removido de uma composição. Os controles de edição que implementam o TSF devem determinar a cadeia de caracteres finalizada de **endcomposição** e gerar o evento quando **onendedit** é chamado.<br/> A cadeia de caracteres de composição finalizada poderá estar vazia se a composição tiver sido cancelada ou excluída.<br/> |
+| [**Autocorreção**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-texteditchangetype)          | Nova cadeia de caracteres corrigida                         | Gerado quando uma correção automática é feita pelo controle . Ou sempre que uma substituição for feita por meio do TSF e o intervalo tiver um **valor GUID \_ PROP \_ TKB \_ ALTERNATES** de **TKB \_ ALTERNATES \_ AUTOCORRECTION \_ APLICADO.**<br/>                                                                                                                                                                   |
+| [**Composição**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-texteditchangetype)          | A cadeia de caracteres atualizada                           | O payload só deve incluir os caracteres que foram alterados (não envie toda a cadeia de caracteres de composição). Gerado sempre que uma substituição de composição é feita. No TSF, uma substituição de composição é definida como uma substituição que tem o **sinalizador GUID \_ PROP \_ COMPOSING** definido. Editar controles que implementam o TSF pode monitorar essas alterações por meio da **notificação OnEndEdit.**<br/>         |
+| [**CompositionFinalized**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-texteditchangetype) | A cadeia de caracteres de composição finalizada (consulte Observações) | No TSF, a cadeia de caracteres de conversão que está sendo finalizada é definida pelo **sinalizador \_ GUID PROP \_ COMPOSING** que está sendo removido de uma composição. Os controles de edição que implementam o TSF devem determinar a cadeia de caracteres finalizada de **EndComposition** e acionar o evento **quando OnEndEdit** for chamado.<br/> A cadeia de caracteres de composição finalizada poderá estar vazia se a composição tiver sido cancelada ou excluída.<br/> |
 
 
 
@@ -60,16 +60,16 @@ Os eventos **TextEditTextChanged** e **ConversionTargetChanged** devem ser gerad
 
 ### <a name="conversiontargetchanged"></a>**ConversionTargetChanged**
 
--   **ConversionTargetChanged** ocorre quando o destino da conversão é alterado de um destino para outro.
--   Use a função [**UiaRaiseAutomationEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraiseautomationevent) para gerar o evento **ConversionTargetChanged** (passe o identificador de evento [**UIA \_ Editor \_ ConversionTargetChangedEventId**](https://www.bing.com/search?q=**UIA\_TextEdit\_ConversionTargetChangedEventId**) ).
+-   **ConversionTargetChanged ocorre** quando o destino de conversão muda de um destino para outro.
+-   Use a [**função UiaRaiseAutomationEvent**](/windows/desktop/api/UIAutomationCoreApi/nf-uiautomationcoreapi-uiaraiseautomationevent) para gerar o evento **ConversionTargetChanged** (passe o identificador de evento [**\_ UIA TextEdit \_ ConversionTargetChangedEventId).**](https://www.bing.com/search?q=**UIA\_TextEdit\_ConversionTargetChangedEventId**)
 -   **ConversionTargetChanged** não deve ser gerado quando o conteúdo do destino é alterado. Se a alteração de destino ocorrer simultaneamente com uma alteração de composição, o evento de alteração de destino deverá ser gerado depois que qualquer evento de composição já tiver sido gerado.
--   No TSF, o destino da conversão é definido pelo valor **TF \_ attr \_ target \_ convertido** sendo definido da estrutura **TF \_ DisplayAttribute** . As alterações podem ser monitoradas usando o **onendedit**.
+-   No TSF, o destino de conversão é definido pelo valor **TF \_ ATTR \_ TARGET \_ CONVERT** que está sendo definido da estrutura **TF \_ DISPLAYATTRIBUTE.** As alterações podem ser monitoradas **usando OnEndEdit**.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Tipos de controle e seus padrões de controle com suporte](uiauto-controlpatternmapping.md)

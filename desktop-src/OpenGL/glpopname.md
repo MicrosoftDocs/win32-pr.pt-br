@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 830c4937b30cca64de3063b42ad16dd3adc87c89
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fe30aa09d401fc8ef35a3671e02a898776af26111ae0f8e31cd1f6ad3bff70b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105760216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119290166"
 ---
 # <a name="glpopname-function"></a>função glPopName
 
@@ -38,7 +38,7 @@ void WINAPI glPopName(void);
 
 Essa função não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa função não retorna um valor.
 

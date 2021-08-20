@@ -4,12 +4,12 @@ ms.assetid: 1893d5f0-8703-41cf-854a-c6236553c06a
 title: System. GPS. DestLatitudeDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f03ea5ae0171e81bc9ff555ff3b52f9fd1674031
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cedafeed5c2f366e753d2aaa58860f0b91ae8fb561dd3e51550ab46a60595fd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118053185"
 ---
 # <a name="systemgpsdestlatitudedenominator"></a>System. GPS. DestLatitudeDenominator
 

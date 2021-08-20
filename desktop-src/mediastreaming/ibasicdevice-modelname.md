@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6e486b372b2108bc85153f416032ef6bfbe8a397
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: c23cc2ffd28757fb7b8b6045aba63016d8f24328e4a39ebc03e12d8311dff601
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105779511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118056958"
 ---
 # <a name="ibasicdevicemodelname-method"></a>Método IBasicDevice:: ModelName
 
@@ -48,7 +48,7 @@ Recebe um ponteiro para o nome do modelo do dispositivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
