@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cd1d00d4dc12b27c1c80b0e18bb095641a56e322
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 803e776bd635cd600bf664354dda8703d224dffcd63ea751919875a6ea69233d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644354"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047144"
 ---
 # <a name="bits_job_property_id-enumeration"></a>Enumeração de BITS_JOB_PROPERTY_ID
 
@@ -69,42 +69,42 @@ Essa propriedade usa o campo **CLsID** **BITS_JOB_PROPERTY_VALUE** s.
 <span id="BITS_JOB_PROPERTY_DYNAMIC_CONTENT"></span><span id="bits_job_property_dynamic_content"></span>**BITS_JOB_PROPERTY_DYNAMIC_CONTENT**
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 <span id="BITS_JOB_PROPERTY_HIGH_PERFORMANCE"></span><span id="bits_job_property_high_performance"></span>**BITS_JOB_PROPERTY_HIGH_PERFORMANCE**
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 <span id="BITS_JOB_PROPERTY_MAX_DOWNLOAD_SIZE"></span><span id="bits_job_property_max_download_size"></span>**BITS_JOB_PROPERTY_MAX_DOWNLOAD_SIZE**
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 <span id="BITS_JOB_PROPERTY_USE_STORED_CREDENTIALS"></span><span id="bits_job_property_use_stored_credentials"></span>**BITS_JOB_PROPERTY_USE_STORED_CREDENTIALS**
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 <span id="BITS_JOB_PROPERTY_MINIMUM_NOTIFICATION_INTERVAL_MS"></span><span id="bits_job_property_minimum_notification_interval_ms"></span>**BITS_JOB_PROPERTY_MINIMUM_NOTIFICATION_INTERVAL_MS**
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 <span id="BITS_JOB_PROPERTY_ON_DEMAND_MODE"></span><span id="bits_job_property_on_demand_mode"></span>**BITS_JOB_PROPERTY_ON_DEMAND_MODE**
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> </dl>
 
@@ -114,9 +114,9 @@ Não há suporte.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1709\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1709\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Deliveryoptimization. h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 02aaecb421454422516b2558275e88e2aafbf532
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3541e8c19d33484b0fc093e24225c719fb1459ae42a8bc8689ddf094bd30f1b7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645455"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552367"
 ---
 # <a name="ms-ds-failed-interactive-logon-count-at-last-successful-logon-attribute"></a>ms-DS-Failed-Interactive-login-Count-at-Last-com êxito-atributo de logon
 
@@ -54,8 +54,8 @@ O número total de logons interativos com falha até o último logon do C-A-D be
 |------------------------|-----------------------------------|
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| É de valor único       | True                              |
+| System-Only            | Verdadeiro                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -75,8 +75,8 @@ O número total de logons interativos com falha até o último logon do C-A-D be
 |------------------------|-----------------------------------|
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| É de valor único       | True                              |
+| System-Only            | Verdadeiro                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -96,8 +96,8 @@ O número total de logons interativos com falha até o último logon do C-A-D be
 |------------------------|-----------------------------------|
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
-| System-Only            | True                              |
-| É de valor único       | True                              |
+| System-Only            | Verdadeiro                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |

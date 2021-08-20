@@ -12,12 +12,12 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: 768459710a993dc284416c78209b37f9922249e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1fcab0dec0758cc60896d2fd033b09eb1c4184db78020f7aec69409306bb76b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105772671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119941346"
 ---
 # <a name="backgroundimagetype-complex-type"></a>Tipo complexo BackgroundImagetype
 
@@ -33,7 +33,7 @@ Define o tipo que contém informações sobre a imagem de plano de fundo usada p
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                     |
 
 

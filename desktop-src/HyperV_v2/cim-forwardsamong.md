@@ -1,7 +1,7 @@
 ---
 description: Representa uma associação na qual os pontos de extremidade de protocolo dependem de um serviço de encaminhamento para encaminhar dados.
 ms.assetid: b63dbd2c-2842-498a-a352-b7ab7f7c841a
-title: Classe CIM_ForwardsAmong
+title: CIM_ForwardsAmong classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2b584f6472d8fbe3eb738d87652b796d9bb617f5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aa6f3782407f57f999117b83918460adae307c962336386301592d3408e6490d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105768762"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014644"
 ---
-# <a name="cim_forwardsamong-class"></a>\_Classe CIM ForwardsAmong
+# <a name="cim_forwardsamong-class"></a>Classe CIM \_ ForwardsAmong
 
 Representa uma associação na qual os pontos de extremidade de protocolo dependem de um serviço de encaminhamento para encaminhar dados.
 
@@ -39,42 +39,42 @@ class CIM_ForwardsAmong : CIM_ServiceSAPDependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ ForwardsAmong** tem estes tipos de membros:
+A **classe CIM \_ ForwardsAmong** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ ForwardsAmong** tem essas propriedades.
+A **classe CIM \_ ForwardsAmong** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ ProtocolEndpoint**
+Tipo de dados: **Protocolo \_ CIMEndpoint**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
 Os pontos de extremidade de protocolo enviam e recebem os dados encaminhados.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ ForwardingService**
+Tipo de dados: **Cim \_ ForwardingService**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
 O serviço de encaminhamento que encaminha os dados.
@@ -89,8 +89,8 @@ O serviço de encaminhamento que encaminha os dados.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ O serviço de encaminhamento que encaminha os dados.
 
 <dl> <dt>
 
-[**\_SERVICESAPDEPENDENCY CIM**](cim-servicesapdependency.md)
+[**CIM \_ ServiceSAPDependency**](cim-servicesapdependency.md)
 </dt> </dl>
 
  

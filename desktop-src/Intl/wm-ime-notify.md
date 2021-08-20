@@ -4,12 +4,12 @@ ms.assetid: 20e064b8-2baf-4b4c-8341-36c3e4643eff
 title: Mensagem de WM_IME_NOTIFY (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca5ab1b2a1fd62d159ab4f216bf9b1bb6892ed69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a072ff41b5731662afa94e387ec48de7d14bc245906e581303fe976dcf455708
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105784109"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014214"
 ---
 # <a name="wm_ime_notify-message"></a>WM_IME_NOTIFY mensagem
 
@@ -68,7 +68,7 @@ Dados específicos do comando, com formato dependente do valor do parâmetro *wP
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno depende do comando enviado.
 
@@ -84,7 +84,7 @@ Um aplicativo processa essa mensagem se for responsável por gerenciar a janela 
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                                                                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                                                                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h); </dt> <dt>IMM. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h);</dt> <dt>Imm. h (incluir Windows. h)</dt> </dl> |
 
 
 

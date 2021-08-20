@@ -1,7 +1,7 @@
 ---
-description: Método de construtor. O Construtor bloqueia o objeto de seção crítica especificado.
+description: Método do construtor. O construtor bloqueia o objeto de seção crítico especificado.
 ms.assetid: 5a0d74f9-bb99-4922-9a92-2e7c1863421f
-title: Construtor CAutoLock. CAutoLock (Wxutil. h)
+title: Construtor CAutoLock.CAutoLock (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: fed29011d4fe581ed146f64800351a3f1053d957
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 11267b444df319e339bcf13b30f200868a0f62d67712ed147513c2f8bc7d000c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017564"
 ---
-# <a name="cautolockcautolock-constructor"></a>Construtor CAutoLock. CAutoLock
+# <a name="cautolockcautolock-constructor"></a>Construtor CAutoLock.CAutoLock
 
-Método de construtor. O Construtor bloqueia o objeto de seção crítica especificado.
+Método do construtor. O construtor bloqueia o objeto de seção crítico especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,10 +42,10 @@ CAutoLock(
 
 <dl> <dt>
 
-*plock* 
+*Plock* 
 </dt> <dd>
 
-Ponteiro para um objeto [**CCritSec**](ccritsec.md) , que contém um objeto de seção crítica.
+Ponteiro para um [**objeto CCritSec,**](ccritsec.md) que contém um objeto de seção crítico.
 
 </dd> </dl>
 
@@ -55,8 +55,8 @@ Ponteiro para um objeto [**CCritSec**](ccritsec.md) , que contém um objeto de s
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Capturando vídeo em um arquivo de mídia do Windows
+description: capturando vídeo em um arquivo de mídia Windows
 ms.assetid: cc23bfce-34b9-4976-8602-e0602c7da2af
-title: Capturando vídeo em um arquivo de mídia do Windows
+title: capturando vídeo em um arquivo de mídia Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a6442c1cf3751beac8d4eba751452d9573e9eede
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 3268d3a3df4a24c5836dba81f7ef4cf0b872907f09367d3212d27c38c0dd4414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104172484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158696"
 ---
-# <a name="capturing-video-to-a-windows-media-file"></a>Capturando vídeo em um arquivo de mídia do Windows
+# <a name="capturing-video-to-a-windows-media-file"></a>capturando vídeo em um arquivo de mídia Windows
 
-Para capturar vídeo e codificá-lo em um arquivo de vídeo do Windows Media (WMV), conecte o PIN de captura ao filtro de [gravador ASF do WM](wm-asf-writer-filter.md) , conforme mostrado no diagrama a seguir.
+para capturar vídeo e codificá-lo em um arquivo de vídeo de mídia Windows (WMV), conecte o pin de captura ao filtro de [gravador ASF do WM](wm-asf-writer-filter.md) , conforme mostrado no diagrama a seguir.
 
 ![Grafo de captura de mídia do Windows](images/vidcap03.png)
 
@@ -31,7 +31,7 @@ hr = pBuild->SetOutputFileName(
 
 
 
-O valor MEDIASUBTYPE \_ ASF informa ao construtor de grafo de captura para usar o filtro de gravador ASF do WM como o coletor de arquivos. O construtor de grafo de captura cria o filtro, adiciona-o ao grafo e chama [**IFileSinkFilter:: SetFileName**](/windows/desktop/api/Strmif/nf-strmif-ifilesinkfilter-setfilename) para definir o nome do arquivo de saída. Ele retorna um ponteiro para o filtro como um parâmetro de saída (
+o valor MEDIASUBTYPE \_ Asf informa ao construtor de Graph de captura para usar o filtro de gravador Asf do WM como o coletor de arquivos. o construtor de Graph de captura cria o filtro, adiciona-o ao grafo e chama [**IFileSinkFilter:: setfilename**](/windows/desktop/api/Strmif/nf-strmif-ifilesinkfilter-setfilename) para definir o nome do arquivo de saída. Ele retorna um ponteiro para o filtro como um parâmetro de saída (
 
 
 ```
@@ -42,7 +42,7 @@ pASFWriter
 
 no exemplo anterior).
 
-Use a interface [**IConfigAsfWriter**](/previous-versions/windows/desktop/api/Dshowasf/nn-dshowasf-iconfigasfwriter) no gravador ASF do WM para definir o perfil do Windows Media. Você deve fazer isso antes de conectar qualquer Pin no gravador ASF do WM.
+Use a interface [**IConfigAsfWriter**](/previous-versions/windows/desktop/api/Dshowasf/nn-dshowasf-iconfigasfwriter) no gravador ASF do WM para definir o perfil de mídia Windows. Você deve fazer isso antes de conectar qualquer Pin no gravador ASF do WM.
 
 
 ```C++
@@ -73,7 +73,7 @@ hr = pBuild->RenderStream(
 
 
 
-Cada PIN de entrada no filtro de gravador ASF do WM corresponde a um fluxo no perfil do Windows Media. Você deve conectar cada PIN para que o conteúdo do arquivo corresponda ao perfil.
+cada pin de entrada no filtro de gravador ASF do WM corresponde a um fluxo no perfil de mídia Windows. Você deve conectar cada PIN para que o conteúdo do arquivo corresponda ao perfil.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

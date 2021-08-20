@@ -1,7 +1,7 @@
 ---
 description: O método GetRequest aguarda a próxima solicitação de thread.
 ms.assetid: 2938374b-174f-4276-98a2-20a084bd9bbd
-title: Método CSourceStream. GetRequest (origem. h)
+title: Método CSourceStream.GetRequest (Source.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3f45e6f6cf269f7aca6741d8e1c150c7054b07f1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e28a8e57535a49903cd2a7b23fb0d0d179bf910b20225042c65b3bdcda620f51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748802"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073200"
 ---
-# <a name="csourcestreamgetrequest-method"></a>Método CSourceStream. GetRequest
+# <a name="csourcestreamgetrequest-method"></a>Método CSourceStream.GetRequest
 
 O `GetRequest` método aguarda a próxima solicitação de thread.
 
@@ -40,13 +40,13 @@ Command GetRequest();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna a próxima solicitação de thread.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método substitui o método [**CAMThread:: GetRequest**](camthread-getrequest.md) . O valor de retorno é convertido para o seguinte tipo enumerado:
+Esse método substitui o [**método CAMThread::GetRequest.**](camthread-getrequest.md) O valor de retorno é lançado para o seguinte tipo enumerado:
 
 
 ```C++
@@ -61,8 +61,8 @@ enum Command {CMD_INIT, CMD_PAUSE, CMD_RUN, CMD_STOP, CMD_EXIT};
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Source. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Source.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

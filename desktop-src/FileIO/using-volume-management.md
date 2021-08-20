@@ -4,12 +4,12 @@ ms.assetid: 2fefe12f-6dd3-4ca3-8c3a-1521d8fb2fef
 title: Usando o gerenciamento de volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eff5cbec7f81c037ae5eac40aff182eba7976782
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3652b833db6a98887418f5aacd0414099bc51c73bf51e1cee8b256658da0b524
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015044"
 ---
 # <a name="using-volume-management"></a>Usando o gerenciamento de volume
 

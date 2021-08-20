@@ -1,6 +1,6 @@
 ---
-title: Variáveis de estado de Pixel-Depth Implementation-Dependent
-description: Variáveis de estado de Pixel-Depth Implementation-Dependent
+title: Variáveis de Estado de Intensidade de Pixels Dependentes de Implementação
+description: Variáveis de Estado de Intensidade de Pixels Dependentes de Implementação
 ms.assetid: 3e1de9fe-dce5-437f-ae21-875958660da9
 keywords:
 - Implementation-Dependent Pixel-Depth variáveis de estado OpenGL
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbee3de10d0a4749aea88c238636040b023dc3fe
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 556e95ae587f44bf41fc1d6f3e9dd0e2fc1351c8dcef9171ffb5d6dba7de134d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909884"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119554086"
 ---
-# <a name="implementation-dependent-pixel-depth-state-variables"></a>Variáveis de estado de Pixel-Depth Implementation-Dependent
+# <a name="implementation-dependent-pixel-depth-state-variables"></a>Variáveis de Estado de Intensidade de Pixels Dependentes de Implementação
 
 <dl> <dt><span id="GL_RED_BITS"></span><span id="gl_red_bits"></span>\_bits GL vermelho \_</dt> <dd> 
 

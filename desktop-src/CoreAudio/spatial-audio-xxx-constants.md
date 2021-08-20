@@ -4,12 +4,12 @@ ms.assetid: F1A01BDB-0CC2-45ED-A423-8CC7F54D4E55
 title: Constantes de SPATIAL_AUDIO_XXX (SpatialAudioMetadata. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bd2c92b970f69cf84e0744f21a41932a8851efed
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db363260b21f47676c12aeb5eaf3c10149b571ed2771a4d9f907e98b0ba17aed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018244"
 ---
 # <a name="spatial_audio_xxx-constants"></a>\_Constantes de áudio espacial \_ xxx
 

@@ -1,31 +1,31 @@
 ---
-description: O Proteção de Recursos do Windows (WRP) impede a substituição de arquivos de sistema, pastas e chaves do registro essenciais instalados como parte do Windows Vista ou do Windows Server 2008.
+description: Windows a WRP (proteção de recurso) impede a substituição de arquivos de sistema, pastas e chaves do registro essenciais que são instalados como parte do Windows Vista ou Windows Server 2008.
 ms.assetid: 1cb67b4a-dc75-4bd7-b314-d695c10d5558
 title: Detectando substituição de recursos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 62dc1855b98ca5834ef9e13e2f48bf7cca492e94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e452b9fba0a8002e13d7fc309ff3c8a12ec114a6a33b1bd7d8d253d710ffa77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053206"
 ---
 # <a name="detecting-resource-replacement"></a>Detectando substituição de recursos
 
-O Proteção de Recursos do Windows (WRP) impede a substituição de arquivos de sistema, pastas e chaves do registro essenciais instalados como parte do Windows Vista ou do Windows Server 2008.
+Windows a WRP (proteção de recurso) impede a substituição de arquivos de sistema, pastas e chaves do registro essenciais que são instalados como parte do Windows Vista ou Windows Server 2008.
 
-A WRP protege arquivos, pastas e chaves do registro no Windows Vista ou no Windows Server 2008, detectando e impedindo tentativas de substituição de recursos protegidos. Essa proteção baseia-se em uma DACL (lista de controle de acesso discricional) do Windows e ACLs (listas de controle de acesso) definidas para recursos protegidos. Permissão para acesso completo para modificar recursos protegidos por WRP é restrita a TrustedInstaller. Os recursos protegidos por WRP só podem ser alterados usando os [mecanismos de substituição de recursos com suporte](supported-file-replacement-mechanisms.md) com o serviço instalador de módulos do Windows. Os aplicativos que tentam modificar um recurso protegido por WRP nunca alteram o recurso e podem receber uma mensagem de erro que indica que o acesso ao recurso foi negado.
+a WRP protege arquivos, pastas e chaves do registro no Windows Vista ou no Windows Server 2008, detectando e impedindo tentativas de substituição de recursos protegidos. essa proteção baseia-se em uma Windows DACL (lista de controle de acesso discricional) e acls (listas de controle de acesso) definidas para recursos protegidos. Permissão para acesso completo para modificar recursos protegidos por WRP é restrita a TrustedInstaller. os recursos protegidos por WRP só podem ser alterados usando os [mecanismos de substituição de recursos com suporte](supported-file-replacement-mechanisms.md) com o serviço instalador de módulos Windows. Os aplicativos que tentam modificar um recurso protegido por WRP nunca alteram o recurso e podem receber uma mensagem de erro que indica que o acesso ao recurso foi negado.
 
 Os aplicativos e instaladores podem usar as funções [**SfcIsFileProtected**](/windows/desktop/api/Sfc/nf-sfc-sfcisfileprotected) e [**SfcIsKeyProtected**](/windows/desktop/api/Sfc/nf-sfc-sfciskeyprotected) para determinar se um arquivo ou chave do registro está protegido.
 
 * * Windows Server 2003 e Windows XP: * *
 
-A WFP (proteção de arquivo do Windows) protege os arquivos do sistema detectando tentativas de substituição de arquivos protegidos do sistema. Essa proteção é disparada depois que a WFP recebe uma notificação de alteração de diretório para um arquivo em um diretório protegido. Quando a WFP recebe essa notificação, ela determina qual arquivo foi alterado. Se o arquivo estiver protegido, a WFP pesquisará a assinatura do arquivo em um arquivo de catálogo para determinar se o novo arquivo é a versão correta. Se a versão do arquivo não estiver correta, o sistema substituirá o arquivo pela versão correta da mídia de cache ou de distribuição, dependendo se o arquivo está localizado no cache. A WFP procura o arquivo correto na seguinte ordem:
+Windows A proteção de arquivo (WFP) protege os arquivos do sistema detectando tentativas de substituição de arquivos protegidos do sistema. Essa proteção é disparada depois que a WFP recebe uma notificação de alteração de diretório para um arquivo em um diretório protegido. Quando a WFP recebe essa notificação, ela determina qual arquivo foi alterado. Se o arquivo estiver protegido, a WFP pesquisará a assinatura do arquivo em um arquivo de catálogo para determinar se o novo arquivo é a versão correta. Se a versão do arquivo não estiver correta, o sistema substituirá o arquivo pela versão correta da mídia de cache ou de distribuição, dependendo se o arquivo está localizado no cache. A WFP procura o arquivo correto na seguinte ordem:
 
 1.  Pesquise o diretório de cache.
 2.  Pesquise o caminho de instalação de rede, se o sistema tiver sido instalado usando a instalação de rede.
-3.  Pesquise em um CD-ROM do Windows, se o sistema tiver sido instalado do CD-ROM.
+3.  pesquise em um cd-rom Windows, se o sistema tiver sido instalado do cd-rom.
 
 Se a WFP não conseguir localizar automaticamente o arquivo nos dois primeiros locais, ele exibirá a seguinte mensagem:
 

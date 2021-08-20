@@ -1,9 +1,9 @@
 ---
-title: NM_CUSTOMTEXT código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle sobre as operações de texto personalizado. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: NM_CUSTOMTEXT de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle sobre operações de texto personalizadas. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: b4bde648-3479-4fac-ad32-b34c7272c1fc
 keywords:
-- NM_CUSTOMTEXT de código de notificação controles do Windows
+- NM_CUSTOMTEXT código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9eebc4033a76d137e28a0c4170c5c613c7933562
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 512ccb6cd94ce680b9832c342696941d98c0e6543c319caeb89eb409de1fe73c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018865"
 ---
-# <a name="nm_customtext-notification-code"></a>\_Código de notificação nm CUSTOMTEXT
+# <a name="nm_customtext-notification-code"></a>Código de \_ notificação CUSTOMTEXT NM
 
-Notifica uma janela pai do controle sobre as operações de texto personalizado. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle sobre operações de texto personalizadas. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_CUSTOMTEXT
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMCUSTOMTEXT**](/windows/win32/api/commctrl/ns-commctrl-nmcustomtext) que contém informações adicionais sobre esta notificação.
+Um ponteiro para uma [**estrutura NMCUSTOMTEXT**](/windows/win32/api/commctrl/ns-commctrl-nmcustomtext) que contém informações adicionais sobre essa notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é ignorado pelo controle.
+O valor de retorno é ignorado pelo controle .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ O valor de retorno é ignorado pelo controle.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

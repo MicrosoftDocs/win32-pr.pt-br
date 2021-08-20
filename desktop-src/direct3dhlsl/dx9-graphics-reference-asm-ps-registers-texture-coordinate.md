@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 456ea0da6c1c23f51dbdba357f18de747b318e6a
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 42ef86bba7ca3c31f6158a6aee8d3228cd696fa500f4066b2ef7492558c307c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "104967140"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118090021"
 ---
 # <a name="texture-coordinate-register-hlsl-ps-reference"></a>Registro de coordenadas de textura (referência do HLSL PS)
 
@@ -28,7 +28,7 @@ Registro de entrada do sombreador de pixel contendo coordenadas de textura.
 
 
 
- 
+ 
 
 Um registro de coordenadas de textura contém dados de coordenadas de textura. Antes que um registro de coordenadas de textura seja usado, ele deve ser declarado por uma declaração de sombreador de pixel. Para obter detalhes sobre como declarar um registro de textura, consulte [DCL-(SM2, SM3-PS ASM)](dcl---ps.md).
 
@@ -49,9 +49,9 @@ Além disso, aqui estão algumas outras propriedades de registros de coordenadas
 [Register](dx9-graphics-reference-asm-ps-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
