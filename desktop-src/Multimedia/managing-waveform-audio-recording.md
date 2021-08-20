@@ -10,18 +10,18 @@ keywords:
 - função waveInAddBuffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 539f722a705d489064d38eccdf6d89e80ccb1518
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: d798cb1b6a8a22f4c695bced89dd669346ad2bb6452179df1d3278af8681aa49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138929"
 ---
 # <a name="managing-waveform-audio-recording"></a>Gerenciando a gravação de Waveform-Audio
 
 Depois de abrir um dispositivo de entrada de wave-áudio, você pode começar a gravar dados de formato de onda-áudio. Formato de onda-os dados de áudio são registrados em buffers fornecidos pelo aplicativo especificados por uma estrutura [**WAVEHDR**](/windows/win32/api/mmeapi/ns-mmeapi-wavehdr) . Esses blocos de dados devem ser preparados antes de serem usados; para obter mais informações, consulte [blocos de dados de áudio](audio-data-blocks.md).
 
-O Windows fornece as seguintes funções para gerenciar a gravação de formato wave-áudio.
+Windows fornece as seguintes funções para gerenciar a gravação de formato wave-áudio.
 
 
 
@@ -34,7 +34,7 @@ O Windows fornece as seguintes funções para gerenciar a gravação de formato 
 
 
 
- 
+ 
 
 Use a função [**waveInAddBuffer**](/windows/win32/api/mmeapi/nf-mmeapi-waveinaddbuffer) para enviar buffers para o driver de dispositivo. Como os buffers são preenchidos com dados gravados de Wave-Audio, o aplicativo é notificado com uma mensagem de janela, mensagem de retorno de chamada, mensagem de thread ou evento, dependendo do sinalizador especificado quando o dispositivo foi aberto.
 
@@ -49,6 +49,6 @@ Antes de fechar o dispositivo usando [**waveInClose**](/windows/win32/api/mmeapi
 [Gravando áudio de onda](recording-waveform-audio.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

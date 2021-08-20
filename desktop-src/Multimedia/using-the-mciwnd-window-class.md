@@ -10,12 +10,12 @@ keywords:
 - Janela MCIWnd, classe Window
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb89c386c3cf3d3d3885501981a1066430e31fb7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 8bb94841975e721b76bde7287709197c5457966ccb8def9f72dda426307b3732
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005132"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136124"
 ---
 # <a name="using-the-mciwnd-window-class"></a>Usando a classe de janela MCIWnd
 
@@ -31,9 +31,9 @@ Esta seção contém exemplos que demonstram como executar as seguintes tarefas:
 -   [Alongando uma imagem](stretching-an-image.md)
 -   [Alongando uma imagem e uma janela](stretching-an-image-and-window.md)
 
- 
+ 
 
- 
+ 
 
 
 

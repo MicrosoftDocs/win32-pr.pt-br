@@ -1,7 +1,7 @@
 ---
-description: O método getvendoridstring recupera o nome do fornecedor. Para os objetos do mecanismo de renderização que são fornecidos pelo DirectShow, a cadeia de caracteres do fornecedor é &\# 0034; Microsoft Corporation&\# 0034;.
+description: O método GetVendorString recupera o nome do fornecedor. Para os objetos de mecanismo de renderização fornecidos pelo DirectShow, a cadeia de caracteres do fornecedor é &\# 0034; Microsoft Corporation&\# 0034;.
 ms.assetid: d0a4c525-67dc-419a-b4d6-8cd51888fd8a
-title: 'Método IRenderEngine:: getvendor (QEdit. h)'
+title: Método IRenderEngine::GetVendorString (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: abf339b73fa058c6554965c16428774ad1fdd32c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 98930dae04fa996efca6ce5eb92069729f61ba9c15412bbb7f13aa9799dc3acb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154023"
 ---
-# <a name="irenderenginegetvendorstring-method"></a>Método IRenderEngine:: getvendor
+# <a name="irenderenginegetvendorstring-method"></a>Método IRenderEngine::GetVendorString
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `GetVendorString` método recupera o nome do fornecedor. Para os objetos do mecanismo de renderização que são fornecidos pelo DirectShow, a cadeia de caracteres do fornecedor é "Microsoft Corporation".
+O `GetVendorString` método recupera o nome do fornecedor. Para os objetos de mecanismo de renderização fornecidos pelo DirectShow, a cadeia de caracteres do fornecedor é "Microsoft Corporation".
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,25 +48,25 @@ HRESULT GetVendorString(
 *pVendorID* \[ out, retval\]
 </dt> <dd>
 
-Recebe um **BSTR** contendo a cadeia de caracteres do fornecedor.
+Recebe um **BSTR que** contém a cadeia de caracteres do fornecedor.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
 O método aloca memória para a cadeia de caracteres. O aplicativo deve chamar **SysFreeString** para liberar a memória.
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ O método aloca memória para a cadeia de caracteres. O aplicativo deve chamar *
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ O método aloca memória para a cadeia de caracteres. O aplicativo deve chamar *
 
 <dl> <dt>
 
-[**Interface IRenderEngine**](irenderengine.md)
+[**IRenderEngine Interface**](irenderengine.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

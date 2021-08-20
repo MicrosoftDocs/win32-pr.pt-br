@@ -6,12 +6,12 @@ keywords:
 - função mciSendCommand
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab8412c74153d5ddfb03a3aff895f9f2e0e73798
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f8e2f3a9cc3e711db0d26f28c9ac7e3fd0a8c94eec96117a732f8024372bf9de
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105778549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118141018"
 ---
 # <a name="handling-mci-errors"></a>Manipulando erros MCI
 
@@ -47,8 +47,8 @@ void showError(DWORD dwError)
 > [!Note]  
 > Para interpretar um valor de retorno de erro [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) , mascarar a palavra de ordem superior (a palavra de ordem inferior contém o código de erro). No entanto, se você passar o valor de retorno do erro para [**mciGetErrorString**](/previous-versions//dd757158(v=vs.85)), deverá passar todo o valor de doubleword.
 
- 
+ 
 
- 
+ 
 
- 
+ 

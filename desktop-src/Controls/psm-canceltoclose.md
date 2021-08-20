@@ -3,7 +3,7 @@ title: Mensagem de PSM_CANCELTOCLOSE (Prsht. h)
 description: Enviado por um aplicativo quando ele realizou alterações desde a notificação de aplicação de PSN mais recente \_ que não pode ser cancelada. Você pode enviar essa mensagem explicitamente ou usando a macro PropSheet \_ CancelToClose.
 ms.assetid: 0a4b6176-7ddb-469f-8ebf-a31e533a8690
 keywords:
-- Controles de PSM_CANCELTOCLOSE de mensagens do Windows
+- controles de Windows de mensagem de PSM_CANCELTOCLOSE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec1377801fddeeb52badee55869ace7e9c2277c4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 65c37c46e1232d8f99b8666e86058a13b840fbc975d94355d75ef40a810ee23c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086088"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169812"
 ---
 # <a name="psm_canceltoclose-message"></a>Mensagem de PSM \_ CANCELTOCLOSE
 
@@ -43,7 +43,7 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -70,9 +70,9 @@ Para a terceira opção, os aplicativos devem enviar uma mensagem de **PSM \_ CA
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
 
 
 

@@ -94,22 +94,22 @@ A classe **MsRdpClient10NotSafeForScripting** tem esses métodos.
 | [**OnLogonError**](imstscaxevents-onlogonerror.md)                                         | Chamado quando ocorre um erro de logon ou outro evento de logon.<br/>                                                                                                                                                                                                                             |
 | [**OnMouseInputModeChanged**](imstscaxevents-onmouseinputmodechanged.md)                   | Chamado quando o modo de entrada do mouse é alterado.<br/>                                                                                                                                                                                                                                      |
 | [**OnNetworkStatusChanged**](imstscaxevents-onnetworkstatuschanged.md)                     | Chamado quando o status da rede é alterado.<br/>                                                                                                                                                                                                                                        |
-| [**OnReceivedTSPublicKey**](imstscaxevents-onreceivedtspublickey.md)                       | Chamado durante a sequência de conexão quando o cliente recupera a chave pública do servidor. Esse evento só será chamado se a **propriedade NotifyTSPublicKey** for **VARIANT \_ TRUE.**<br/>                                                                                              |
+| [**OnReceivedTSPublicKey**](imstscaxevents-onreceivedtspublickey.md)                       | Chamado durante a sequência de conexão quando o cliente recupera a chave pública do servidor. Esse evento só será chamado se a propriedade **NotifyTSPublicKey** for **Variant \_ true**.<br/>                                                                                              |
 | [**OnRemoteDesktopSizeChange**](imstscaxevents-onremotedesktopsizechange.md)               | Chamado para indicar que o tamanho do controle de cliente na área de trabalho remota foi alterado em resposta a uma operação de controle de cliente.<br/>                                                                                                                                                |
-| [**OnRemoteProgramDisplayed**](imstscaxevents-onremoteprogramdisplayed.md)                 | Chamado quando um programa RemoteApp é exibido.<br/>                                                                                                                                                                                                                                      |
-| [**OnRemoteProgramResult**](imstscaxevents-onremoteprogramresult.md)                       | Chamado quando um programa RemoteApp retorna um resultado para o controle de cliente.<br/>                                                                                                                                                                                                            |
+| [**OnRemoteProgramDisplayed**](imstscaxevents-onremoteprogramdisplayed.md)                 | Chamado quando um programa do RemoteApp é exibido.<br/>                                                                                                                                                                                                                                      |
+| [**OnRemoteProgramResult**](imstscaxevents-onremoteprogramresult.md)                       | Chamado quando um programa do RemoteApp retorna um resultado para o controle de cliente.<br/>                                                                                                                                                                                                            |
 | [**OnRemoteWindowDisplayed**](imstscaxevents-onremotewindowdisplayed.md)                   | Chamado quando uma janela do RemoteApp é exibida.<br/>                                                                                                                                                                                                                                       |
-| [**OnRequestContainerMinimize**](imstscaxevents-onrequestcontainerminimize.md)             | Chamado quando o usuário pressiona o **botão Minimizar** na barra de conexão no modo de tela inteira. O acionamento desse evento é uma solicitação que o aplicativo de contêiner se minimiza.<br/>                                                                                              |
-| [**OnRequestGoFullScreen**](imstscaxevents-onrequestgofullscreen.md)                       | Chamado quando o cliente solicita alternar para o modo de tela inteira e o método [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) é chamado para definir a **propriedade ContainerHandledFullScreen** como um valor diferente de zero.<br/> |
-| [**OnRequestLeaveFullScreen**](imstscaxevents-onrequestleavefullscreen.md)                 | Chamado quando o cliente solicita para sair do modo de tela inteira e a propriedade [**IMsTscAdvancedSettings::p ut \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) foi definida como um valor diferente de zero.<br/>                                                   |
+| [**OnRequestContainerMinimize**](imstscaxevents-onrequestcontainerminimize.md)             | Chamado quando o usuário pressiona o botão **minimizar** na barra de conexão no modo de tela inteira. O acionamento desse evento é uma solicitação que o aplicativo de contêiner minimiza em si mesmo.<br/>                                                                                              |
+| [**OnRequestGoFullScreen**](imstscaxevents-onrequestgofullscreen.md)                       | Chamado quando o cliente solicita para alternar para o modo de tela inteira e o método [**IMsTscAdvancedSettings::p UT \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) é chamado para definir a propriedade **ContainerHandledFullScreen** como um valor diferente de zero.<br/> |
+| [**OnRequestLeaveFullScreen**](imstscaxevents-onrequestleavefullscreen.md)                 | Chamado quando o cliente solicita a saída do modo de tela inteira e a propriedade [**IMsTscAdvancedSettings::p UT \_ ContainerHandledFullScreen**](imstscadvancedsettings-containerhandledfullscreen.md) foi definida como um valor diferente de zero.<br/>                                                   |
 | [**OnServiceMessageReceived**](imstscaxevents-onservicemessagereceived.md)                 | Chamado quando o cliente recebe uma mensagem do sistema.<br/>                                                                                                                                                                                                                                  |
-| [**OnUserNameAcquired**](imstscaxevents-onusernameacquired.md)                             | Chamado quando o nome de usuário foi adquirido pelo controle .<br/>                                                                                                                                                                                                                        |
-| [**OnWarning**](imstscaxevents-onwarning.md)                                               | Chamado quando o controle do cliente encontra uma condição de erro que não é fatal.<br/>                                                                                                                                                                                                    |
+| [**OnUserNameAcquired**](imstscaxevents-onusernameacquired.md)                             | Chamado quando o nome de usuário foi adquirido pelo controle.<br/>                                                                                                                                                                                                                        |
+| [**OnWarning**](imstscaxevents-onwarning.md)                                               | Chamado quando o controle de cliente encontra uma condição de erro que não é fatal.<br/>                                                                                                                                                                                                    |
 | [**Reconectar**](imsrdpclient8-reconnect.md)                                                | Reconecta-se à sessão remota com a nova largura e altura da área de trabalho.<br/>                                                                                                                                                                                                            |
-| [**RequestClose**](imsrdpclient-requestclose.md)                                           | Solicita um desligamento normalmente do controle de cliente.<br/>                                                                                                                                                                                                                                |
-| [**Resetpassword**](imstscnonscriptable-resetpassword.md)                                  | Redefine todos os estados de senha no controle .<br/>                                                                                                                                                                                                                                         |
-| [**SendKeys**](imsrdpclientnonscriptable-sendkeys.md)                                      | Envia uma série de teclas de teclas para o controle . Os teclas de tecla estão no formulário de código de verificação, que são os dados de teclado das chaves físicas reais.<br/>                                                                                                                                       |
-| [**SendOnVirtualChannel**](imstscax-sendonvirtualchannel.md)                               | Envia dados para o servidor Host da Sessão RD por um canal virtual criado anteriormente usando o [**método IMsTscAx::CreateVirtualChannels.**](imstscax-createvirtualchannels.md)<br/>                                                                                         |
+| [**RequestClose**](imsrdpclient-requestclose.md)                                           | Solicita um desligamento normal do controle de cliente.<br/>                                                                                                                                                                                                                                |
+| [**ResetPassword**](imstscnonscriptable-resetpassword.md)                                  | Redefine todos os Estados de senha no controle.<br/>                                                                                                                                                                                                                                         |
+| [**SendKeys**](imsrdpclientnonscriptable-sendkeys.md)                                      | Envia uma série de pressionamentos de teclas para o controle. Os pressionamentos de tecla estão no formato de código de digitalização, que são os dados de teclado das chaves físicas reais.<br/>                                                                                                                                       |
+| [**SendOnVirtualChannel**](imstscax-sendonvirtualchannel.md)                               | Envia dados para o servidor de Host da Sessão RD por meio de um canal virtual que foi criado anteriormente usando o método [**IMsTscAx:: CreateVirtualChannels**](imstscax-createvirtualchannels.md) .<br/>                                                                                         |
 | [**SendRemoteAction**](imsrdpclient8-sendremoteaction.md)                                  | Faz com que uma ação seja executada na sessão remota.<br/>                                                                                                                                                                                                                            |
 | [**SetVirtualChannelOptions**](imsrdpclient-setvirtualchanneloptions.md)                   | Define as opções de canal virtual para o controle de cliente.<br/>                                                                                                                                                                                                                           |
 | [**SyncSessionDisplaySettings**](imsrdpclient9-syncsessiondisplaysettings.md)              | Sincroniza as configurações de exibição da sessão. <br/>                                                                                                                                                                                                                                            |
@@ -121,7 +121,7 @@ A classe **MsRdpClient10NotSafeForScripting** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A **classe MsRdpClient10NotSafeForScripting** tem essas propriedades.
+A classe **MsRdpClient10NotSafeForScripting** tem essas propriedades.
 
 
 
@@ -142,27 +142,27 @@ A **classe MsRdpClient10NotSafeForScripting** tem essas propriedades.
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscax-advancedsettings.md"><strong>AdvancedSettings</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Um ponteiro de interface <a href="imstscadvancedsettings-interface.md"><strong>IMsTscAdvancedSettings.</strong></a><br/></td>
+<td style="text-align: left;">Um ponteiro de interface <a href="imstscadvancedsettings-interface.md"><strong>IMsTscAdvancedSettings</strong></a> .<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient-advancedsettings2.md"><strong>AdvancedSettings2</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Ponteiro para a interface <a href="imsrdpclientadvancedsettings-interface.md"><strong>IMsRdpClientAdvancedSettings,</strong></a> usada para definir configurações avançadas para o controle do cliente.<br/></td>
+<td style="text-align: left;">Ponteiro para a interface <a href="imsrdpclientadvancedsettings-interface.md"><strong>IMsRdpClientAdvancedSettings</strong></a> , usado para definir configurações avançadas para o controle de cliente.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient2-advancedsettings3.md"><strong>AdvancedSettings3</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Ponteiro para a interface <a href="imsrdpclientadvancedsettings2.md"><strong>IMsRdpClientAdvancedSettings2,</strong></a> usada para definir configurações avançadas para o controle do cliente.<br/></td>
+<td style="text-align: left;">Ponteiro para a interface <a href="imsrdpclientadvancedsettings2.md"><strong>IMsRdpClientAdvancedSettings2</strong></a> , usado para definir configurações avançadas para o controle de cliente.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient3-advancedsettings4.md"><strong>AdvancedSettings4</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Ponteiro para a interface <a href="imsrdpclientadvancedsettings3.md"><strong>IMsRdpClientAdvancedSettings3,</strong></a> usada para definir configurações avançadas para o controle do cliente.<br/></td>
+<td style="text-align: left;">Ponteiro para a interface <a href="imsrdpclientadvancedsettings3.md"><strong>IMsRdpClientAdvancedSettings3</strong></a> , usado para definir configurações avançadas para o controle de cliente.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient4-advancedsettings5.md"><strong>AdvancedSettings5</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Um ponteiro de interface <a href="imsrdpclientadvancedsettings4.md"><strong>IMsRdpClientAdvancedSettings4.</strong></a><br/></td>
+<td style="text-align: left;">Um ponteiro de interface <a href="imsrdpclientadvancedsettings4.md"><strong>IMsRdpClientAdvancedSettings4</strong></a> .<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient5-advancedsettings6.md"><strong>AdvancedSettings6</strong></a><br/></td>
@@ -177,22 +177,22 @@ A **classe MsRdpClient10NotSafeForScripting** tem essas propriedades.
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient7-advancedsettings8.md"><strong>AdvancedSettings8</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Um objeto que dá suporte à interface <a href="imsrdpclientadvancedsettings7.md"><strong>IMsRdpClientAdvancedSettings7.</strong></a><br/></td>
+<td style="text-align: left;">Um objeto que dá suporte à interface <a href="imsrdpclientadvancedsettings7.md"><strong>IMsRdpClientAdvancedSettings7</strong></a> .<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient8-advancedsettings9.md"><strong>AdvancedSettings9</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Uma interface <a href="imsrdpclientadvancedsettings8.md"><strong>IMsRdpClientAdvancedSettings8</strong></a> que representa o objeto settings.<br/></td>
+<td style="text-align: left;">Uma interface <a href="imsrdpclientadvancedsettings8.md"><strong>IMsRdpClientAdvancedSettings8</strong></a> que representa o objeto de configurações.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable4-allowcredentialsaving.md"><strong>AllowCredentialSaving</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
-<td style="text-align: left;">Especifica se a caixa de diálogo credenciais exibe uma caixa de seleção para habilitar a economia de credenciais.<br/></td>
+<td style="text-align: left;">Especifica se a caixa de diálogo credenciais exibe uma caixa de seleção para habilitar o salvamento de credenciais.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable5-allowpromptingforcredentials.md"><strong>AllowPromptingForCredentials</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
-<td style="text-align: left;">Especifica se o controle Área de Trabalho Remota ActiveX pode solicitar credenciais ao usuário.<br/></td>
+<td style="text-align: left;">especifica se o controle de ActiveX de Área de Trabalho Remota pode solicitar credenciais ao usuário.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscnonscriptable-binarypassword.md"><strong>BinaryPassword</strong></a><br/></td>
@@ -212,10 +212,10 @@ A **classe MsRdpClient10NotSafeForScripting** tem essas propriedades.
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscnonscriptable-cleartextpassword.md"><strong>ClearTextPassword</strong></a><br/></td>
 <td style="text-align: left;">Somente gravação<br/></td>
-<td style="text-align: left;">A Área de Trabalho Remota ActiveX controle de senha, em formato de texto não criptografado.<br/></td>
+<td style="text-align: left;">o Área de Trabalho Remota ActiveX a senha de controle, em formato de texto sem formatação.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="imsrdpclient-colordepth.md"><strong>Colordepth</strong></a><br/></td>
+<td style="text-align: left;"><a href="imsrdpclient-colordepth.md"><strong>ColorDepth</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
 <td style="text-align: left;">Profundidade de cor do controle atual.<br/></td>
 </tr>
@@ -362,7 +362,7 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable4-publishercertificatechain.md"><strong>PublisherCertificateChain</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
-<td style="text-align: left;">Especifica a cadeia de certificados do editor. A cadeia é armazenada em uma variante do tipo VT_BYREF que contém um ponteiro para uma <a href="/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_context"><strong>CERT_CHAIN_CONTEXT</strong></a> estrutura.<br/></td>
+<td style="text-align: left;">Especifica a cadeia de certificados do editor. A cadeia é armazenada em uma variante do tipo VT_BYREF que contém um ponteiro para uma <a href="/windows/desktop/api/wincrypt/ns-wincrypt-cert_chain_context"><strong>estrutura CERT_CHAIN_CONTEXT</strong></a> dados.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-redirectdynamicdevices.md"><strong>RedirectDynamicDevices</strong></a><br/></td>
@@ -397,27 +397,27 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient7-remoteprogram2.md"><strong>RemoteProgram2</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Um objeto que dá suporte à interface <a href="itsremoteprogram2.md"><strong>ITSRemoteProgram2</strong></a> .<br/></td>
+<td style="text-align: left;">Um objeto que dá suporte à interface <a href="itsremoteprogram2.md"><strong>ITSRemoteProgram2.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient10-remoteprogram3.md"><strong>RemoteProgram3</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Um objeto que dá suporte à interface <a href="itsremoteprogram3.md"><strong>ITSRemoteProgram3</strong></a> .<br/></td>
+<td style="text-align: left;">Um objeto que dá suporte à interface <a href="itsremoteprogram3.md"><strong>ITSRemoteProgram3.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscax-securedsettings.md"><strong>SecuredSettings</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Um ponteiro de interface <a href="imstscsecuredsettings-interface.md"><strong>IMsTscSecuredSettings</strong></a> .<br/></td>
+<td style="text-align: left;">Um ponteiro de interface <a href="imstscsecuredsettings-interface.md"><strong>IMsTscSecuredSettings.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient-securedsettings2.md"><strong>SecuredSettings2</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Ponteiro para a interface <a href="imsrdpclientsecuredsettings-interface.md"><strong>IMsRdpClientSecuredSettings</strong></a> , usado para definir configurações protegidas para o controle de cliente.<br/></td>
+<td style="text-align: left;">Ponteiro para a interface <a href="imsrdpclientsecuredsettings-interface.md"><strong>IMsRdpClientSecuredSettings,</strong></a> usada para definir configurações protegidas para o controle do cliente.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient7-securedsettings3.md"><strong>SecuredSettings3</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Um objeto que dá suporte à interface <a href="imsrdpclientsecuredsettings2.md"><strong>IMsRdpClientSecuredSettings2</strong></a> .<br/></td>
+<td style="text-align: left;">Um objeto que dá suporte à interface <a href="imsrdpclientsecuredsettings2.md"><strong>IMsRdpClientSecuredSettings2.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imstscax-securedsettingsenabled.md"><strong>SecuredSettingsEnabled</strong></a><br/></td>
@@ -437,12 +437,12 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscax-startconnected.md"><strong>StartConnected</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
-<td style="text-align: left;">Indica se o controle irá estabelecer a conexão do Host da Sessão RD Server imediatamente após a inicialização.<br/></td>
+<td style="text-align: left;">Indica se o controle estabelecerá a conexão de Host da Sessão RD servidor imediatamente após a inicialização.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient5-transportsettings.md"><strong>TransportSettings</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">A configuração do gateway RD do cliente.<br/></td>
+<td style="text-align: left;">A configuração do Gateway de RD do cliente.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient6-transportsettings2.md"><strong>TransportSettings2</strong></a><br/></td>
@@ -452,12 +452,12 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclient7-transportsettings3.md"><strong>TransportSettings3</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Um objeto que dá suporte à interface <a href="imsrdpclienttransportsettings3.md"><strong>IMsRdpClientTransportSettings3</strong></a> .<br/></td>
+<td style="text-align: left;">Um objeto que dá suporte à interface <a href="imsrdpclienttransportsettings3.md"><strong>IMsRdpClientTransportSettings3.</strong></a><br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclient9-transportsettings4.md"><strong>TransportSettings4</strong></a><br/></td>
 <td style="text-align: left;">Somente leitura<br/></td>
-<td style="text-align: left;">Um objeto que dá suporte à interface <a href="imsrdpclienttransportsettings4.md"><strong>IMsRdpClientTransportSettings4</strong></a> .<br/></td>
+<td style="text-align: left;">Um objeto que dá suporte à interface <a href="imsrdpclienttransportsettings4.md"><strong>IMsRdpClientTransportSettings4.</strong></a><br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable4-trustedzonesite.md"><strong>TrustedZoneSite</strong></a><br/></td>
@@ -467,22 +467,22 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable2-uiparentwindowhandle.md"><strong>UIParentWindowHandle</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
-<td style="text-align: left;">O identificador de janela para ser a janela pai do controle. Isso permite que qualquer janela exibida pelo controle seja devidamente modal com relação a todas as janelas exibidas pelo aplicativo pai.<br/></td>
+<td style="text-align: left;">O alça de janela para ser a janela pai do controle. Isso permite que todas as janelas exibidas pelo controle sejam modais corretamente em relação a todas as janelas exibidas pelo aplicativo pai.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="imsrdpclientnonscriptable5-usemultimon.md"><strong>UseMultimon</strong></a><br/></td>
+<td style="text-align: left;"><a href="imsrdpclientnonscriptable5-usemultimon.md"><strong>UseMulndon</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
-<td style="text-align: left;">especifica se o controle de ActiveX de Área de Trabalho Remota deve usar vários monitores.<br/></td>
+<td style="text-align: left;">Especifica se o controle Área de Trabalho Remota ActiveX deve usar vários monitores.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdppreferredredirectioninfo-useredirectionservername.md"><strong>UseRedirectionServerName</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
-<td style="text-align: left;">Se deve ser usado o nome do servidor de redirecionamento.<br/></td>
+<td style="text-align: left;">Se o nome do servidor de redirecionamento deve ser usado.<br/></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="imstscax-username.md"><strong>Usu</strong></a><br/></td>
+<td style="text-align: left;"><a href="imstscax-username.md"><strong>Username</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
-<td style="text-align: left;">A credencial de logon do nome de usuário.<br/></td>
+<td style="text-align: left;">A credencial de logon de nome de usuário.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><a href="imstscax-version.md"><strong>Versão</strong></a><br/></td>
@@ -507,12 +507,12 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 <tr class="odd">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable4-warnaboutprinterredirection.md"><strong>WarnAboutPrinterRedirection</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
-<td style="text-align: left;">Especifica se a caixa de diálogo redirecionamento exibe uma mensagem sobre o redirecionamento de impressora antes de iniciar uma sessão.<br/></td>
+<td style="text-align: left;">Especifica se a caixa de diálogo de redirecionamento exibe uma mensagem sobre o redirecionamento de impressora antes de iniciar uma sessão.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><a href="imsrdpclientnonscriptable3-warnaboutsendingcredentials.md"><strong>WarnAboutSendingCredentials</strong></a><br/></td>
 <td style="text-align: left;">Leitura/gravação<br/></td>
-<td style="text-align: left;">Especifica se o aviso de segurança deve incluir um aviso sobre o envio de credenciais ao servidor remoto antes de iniciar uma sessão.<br/></td>
+<td style="text-align: left;">Especifica se o aviso de segurança deve incluir um aviso sobre como enviar credenciais para o servidor remoto antes de iniciar uma sessão.<br/></td>
 </tr>
 </tbody>
 </table>
@@ -527,7 +527,7 @@ Quando <a href="imsrdpclientnonscriptable3-enablecredsspsupport.md"><strong>Cred
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                           |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                           |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                        |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>                |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>                |

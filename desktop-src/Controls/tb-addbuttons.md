@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_ADDBUTTONS (commctrl. h)
+title: TB_ADDBUTTONS mensagem (Commctrl.h)
 description: Adiciona um ou mais botões a uma barra de ferramentas.
 ms.assetid: 65294dfc-b04b-475d-b38e-9d84c0fb000b
 keywords:
-- Controles de TB_ADDBUTTONS de mensagens do Windows
+- TB_ADDBUTTONS controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f954e9a133f78a9415358d1c7f61d68008cd3d6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4bd3a5a15ac1983d93ca161dae20876159e5f633cf580d485686d67889276747
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168519"
 ---
-# <a name="tb_addbuttons-message"></a>\_Mensagem de HIPERbotãos TB
+# <a name="tb_addbuttons-message"></a>Mensagem \_ ADDBUTTONS de TB
 
 Adiciona um ou mais botões a uma barra de ferramentas.
 
@@ -34,30 +34,30 @@ Adiciona um ou mais botões a uma barra de ferramentas.
 *wParam* 
 </dt> <dd>
 
-Número de botões a serem adicionados.
+Número de botões a adicionar.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma matriz de estruturas [**TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) que contêm informações sobre os botões a serem adicionados. Deve haver o mesmo número de elementos na matriz como botões especificados por *wParam*.
+Ponteiro para uma matriz de [**estruturas TBBUTTON**](/windows/desktop/api/Commctrl/ns-commctrl-tbbutton) que contêm informações sobre os botões a adicionar. Deve haver o mesmo número de elementos na matriz que os botões especificados por *wParam*.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Se a barra de ferramentas foi criada usando a função [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) , você deve enviar a mensagem [**TB \_ BUTTONSTRUCTSIZE**](tb-buttonstructsize.md) para a barra de ferramentas antes de enviar os **\_ botões addbotãors**.
+Se a barra de ferramentas tiver sido criada usando a função [**CreateWindowEx,**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) você deverá enviar a mensagem [**TB \_ BUTTONSTRUCTSIZE**](tb-buttonstructsize.md) para a barra de ferramentas antes de **enviar TB \_ ADDBUTTONS**.
 
-Consulte [**TB \_ SetImageList**](tb-setimagelist.md) para obter uma discussão sobre como atribuir bitmaps a botões da barra de ferramentas de uma ou mais listas de imagens.
+Consulte [**TB \_ SETIMAGELIST para**](tb-setimagelist.md) obter uma discussão sobre como atribuir bitmaps a botões de barra de ferramentas de uma ou mais listas de imagens.
 
 ## <a name="examples"></a>Exemplos
 
-O código de exemplo a seguir adiciona três botões a uma barra de ferramentas, usando o bitmap do sistema padrão para botões de exibição. A mensagem do [**\_ AddBitmap TB**](tb-addbitmap.md) retorna o índice da primeira imagem de botão na lista de imagens. As imagens individuais são identificadas por seus deslocamentos a partir desse valor.
+O código de exemplo a seguir adiciona três botões a uma barra de ferramentas, usando o bitmap do sistema padrão para botões de exibição. A [**mensagem \_ ADDBITMAP de TB**](tb-addbitmap.md) retorna o índice da primeira imagem de botão dentro da lista de imagens. Imagens individuais são identificadas por seus deslocamentos desse valor.
 
 
 ```C++
@@ -98,10 +98,10 @@ SendMessage(hWndToolbar, TB_ADDBUTTONS, numButtons, (LPARAM)tbButtonsAdd);
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
-| Nomes Unicode e ANSI<br/>   | **TB \_ ADDBUTTONSW** (Unicode) e **TB \_ AddButtons** (ANSI)<br/>               |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Nomes Unicode e ANSI<br/>   | **TB \_ ADDBUTTONSW** (Unicode) e **TB \_ ADDBUTTONSA** (ANSI)<br/>               |
 
 
 
@@ -109,7 +109,7 @@ SendMessage(hWndToolbar, TB_ADDBUTTONS, numButtons, (LPARAM)tbButtonsAdd);
 
 <dl> <dt>
 
-[**Valores de índice da imagem do botão padrão da barra de ferramentas**](toolbar-standard-button-image-index-values.md)
+[**Valores de índice de imagem de botão padrão da barra de ferramentas**](toolbar-standard-button-image-index-values.md)
 </dt> </dl>
 
  

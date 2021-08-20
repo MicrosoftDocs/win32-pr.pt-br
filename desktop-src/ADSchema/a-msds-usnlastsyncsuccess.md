@@ -1,11 +1,11 @@
 ---
-title: ms-DS-USN-Last-Sync-atributo Success
+title: Atributo ms-DS-USN-Last-Sync-Success
 description: O USN no qual ocorreu a última sincronização de replicação bem-sucedida.
 ms.assetid: 445cfa3c-a638-4b30-bb5d-15212c72acbb
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-USN-Last-Sync-esquema do AD do atributo Success
-- atributo msDS-USNLastSyncSuccess do AD Schema
+- Esquema do AD do atributo ms-DS-USN-Last-Sync-Success
+- MsDS-USNLastSyncSuccess atributo AD Schema
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e44ec040284117589b02d359ba7e2d47020aaca
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b4ab187b14a073304b967aec8c3ea54be9819b9f580a36285ef2bc18b129d9a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104370010"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014356"
 ---
-# <a name="ms-ds-usn-last-sync-success-attribute"></a>ms-DS-USN-Last-Sync-atributo Success
+# <a name="ms-ds-usn-last-sync-success-attribute"></a>Atributo ms-DS-USN-Last-Sync-Success
 
 O USN no qual ocorreu a última sincronização de replicação bem-sucedida.
 
@@ -29,13 +29,13 @@ O USN no qual ocorreu a última sincronização de replicação bem-sucedida.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-USN-Last-Sync-êxito          |
-| LDAP-Display-Name | msDS-USNLastSyncSuccess              |
+| CN                | ms-DS-USN-Last-Sync-Success          |
+| Ldap-Display-Name | msDS-USNLastSyncSuccess              |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2055              |
-| System-ID-GUID    | 31f7b8b6-c9f8-4f2d-a37b-58a823030331 |
+| System-Id-Guid    | 31f7b8b6-c9f8-4f2d-a37b-58a823030331 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -54,15 +54,15 @@ O USN no qual ocorreu a última sincronização de replicação bem-sucedida.
 | ID do link                | \-                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                               |
 | System-Only            | Falso                                                                                                                            |
-| É de valor único       | True                                                                                                                             |
+| Tem valor único       | True                                                                                                                             |
 | É indexado             | Falso                                                                                                                            |
-| No catálogo global      | Falso                                                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                     |
+| No Catálogo Global      | Falso                                                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                     |
 | Range-Lower            | \-                                                                                                                               |
 | Range-Upper            | \-                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                       |
 | System-Flags           | 0x00000019                                                                                                                       |
-| Classes usadas em        | [**Configuração**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> [**Domínio-DNS**](c-domaindns.md)<br/> |
+| Classes usadas em        | [**Configuração**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> [**DNS de domínio**](c-domaindns.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ O USN no qual ocorreu a última sincronização de replicação bem-sucedida.
 | ID do link                | \-                                                                                                                               |
 | MAPI-Id                | \-                                                                                                                               |
 | System-Only            | Falso                                                                                                                            |
-| É de valor único       | True                                                                                                                             |
+| Tem valor único       | True                                                                                                                             |
 | É indexado             | Falso                                                                                                                            |
-| No catálogo global      | Falso                                                                                                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                     |
+| No Catálogo Global      | Falso                                                                                                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                     |
 | Range-Lower            | \-                                                                                                                               |
 | Range-Upper            | \-                                                                                                                               |
 | Search-Flags           | 0x00000000                                                                                                                       |
 | System-Flags           | 0x00000019                                                                                                                       |
-| Classes usadas em        | [**Configuração**](c-configuration.md)<br/> [**DMD**](c-dmd.md)<br/> [**Domínio-DNS**](c-domaindns.md)<br/> |
+| Classes usadas em        | [**Configuração**](c-configuration.md)<br/> [**Dmd**](c-dmd.md)<br/> [**DNS de domínio**](c-domaindns.md)<br/> |
 
 
 

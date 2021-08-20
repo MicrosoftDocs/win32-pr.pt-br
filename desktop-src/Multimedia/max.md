@@ -1,9 +1,9 @@
 ---
-title: macro Max (Minwindef. h)
-description: A macro Max compara dois valores e retorna o maior. O tipo de dados pode ser qualquer tipo de dados numéricos, assinados ou não assinados. O tipo de dados dos argumentos e o valor de retorno são os mesmos.
+title: macro max (Minwindef.h)
+description: A macro max compara dois valores e retorna o maior. O tipo de dados pode ser qualquer tipo de dados numérico, assinado ou não assinado. O tipo de dados dos argumentos e o valor de retorno é o mesmo.
 ms.assetid: 224d2ef7-6764-49c0-9782-51bfadbfb77f
 keywords:
-- Multimídia máxima do Windows de macro
+- max macro Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b484f2505958aca04745c63ca63a0dd131a51ed9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc592fcc588c14ee04c1f595c5b5bc95c860b2ab0b761906886010db478d5f1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138642"
 ---
 # <a name="max-macro"></a>macro máx
 
-A macro **Max** compara dois valores e retorna o maior. O tipo de dados pode ser qualquer tipo de dados numéricos, assinados ou não assinados. O tipo de dados dos argumentos e o valor de retorno são os mesmos.
+A **macro** max compara dois valores e retorna o maior. O tipo de dados pode ser qualquer tipo de dados numérico, assinado ou não assinado. O tipo de dados dos argumentos e o valor de retorno é o mesmo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,13 +55,13 @@ Especifica o segundo de dois valores.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é o maior dos dois valores especificados.
 
 ## <a name="remarks"></a>Comentários
 
-A macro **Max** é definida da seguinte maneira:
+A **macro** max é definida da seguinte forma:
 
 
 ```C++
@@ -78,7 +78,7 @@ A macro **Max** é definida da seguinte maneira:
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Cabeçalho<br/>                   | <dl> <dt>Minwindef. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Minwindef.h</dt> </dl> |
 
 
 

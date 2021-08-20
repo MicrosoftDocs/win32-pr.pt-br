@@ -20,17 +20,17 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2c95e665b549fff82e0beaaca9682329217ebb0f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a96d2b55a09b47c86dc9f6563e939de596dabeee16b06acfbfc78906a6fb100a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105802098"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071988"
 ---
 # <a name="jetsetcurrentindex2-function"></a>Função JetSetCurrentIndex2
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetsetcurrentindex2-function"></a>Função JetSetCurrentIndex2
 
@@ -96,7 +96,7 @@ Um grupo de bits que contém as opções a serem usadas para esta chamada, que i
 
 ### <a name="return-value"></a>Valor Retornado
 
-Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. Para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
+Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos códigos de retorno a seguir. para obter mais informações sobre os possíveis erros do ESE, consulte [erros do mecanismo de Armazenamento extensível](./extensible-storage-engine-errors.md) e [parâmetros de tratamento de erros](./error-handling-parameters.md).
 
 <table>
 <colgroup>
@@ -125,13 +125,13 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <tr class="even">
 <td><p>JET_errInstanceUnavailable</p></td>
 <td><p>Não é possível concluir a operação porque a instância associada à sessão encontrou um erro fatal que exige que o acesso a todos os dados seja revogado para proteger a integridade desses dados.</p>
-<p>Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<p>esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidIndexId</p></td>
 <td><p>O conteúdo da ID de índice não era válido ou expirou e precisa ser atualizado. Isso pode ocorrer para <strong>JetSetCurrentIndex2</strong> quando:</p>
 <ul>
-<li><p>pIndexID- &gt; cbStruct não tem o tamanho esperado (Windows Server 2003 e versões posteriores).</p></li>
+<li><p>pindexid- &gt; cbStruct não tem o tamanho esperado (Windows Server 2003 e versões posteriores).</p></li>
 <li><p>O mecanismo foi desligado porque a ID do índice foi buscada.</p></li>
 <li><p>Todos os cursores que fazem referência à tabela que contém o índice correspondente à ID do índice foram fechados e o mecanismo removeu a definição do índice do cache do esquema.</p></li>
 <li><p>A ID de índice está sendo usada com um cursor aberto na tabela incorreta.</p></li>
@@ -153,7 +153,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 </tr>
 <tr class="odd">
 <td><p>JET_errInvalidParameter</p></td>
-<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. Isso pode ocorrer para <strong>JetSetCurrentIndex2</strong> quando <em>PINDEXID</em> não é nulo e pIndexID- &gt; cbStruct não tem o tamanho esperado (Windows XP e versões anteriores).</p></td>
+<td><p>Um dos parâmetros fornecidos continha um valor inesperado ou continha um valor que não fazia sentido quando combinado com o valor de outro parâmetro. isso pode ocorrer para <strong>JetSetCurrentIndex2</strong> quando <em>pindexid</em> não é nulo e pindexid- &gt; cbStruct não tem o tamanho esperado (Windows XP e versões anteriores).</p></td>
 </tr>
 <tr class="even">
 <td><p>JET_errNoCurrentRecord</p></td>
@@ -174,7 +174,7 @@ Essa função retorna o tipo de dados [JET_ERR](./jet-err.md) com um dos código
 <tr class="even">
 <td><p>JET_errSessionSharingViolation</p></td>
 <td><p>A mesma sessão não pode ser usada para mais de um thread ao mesmo tempo.</p>
-<p>Esse erro só será retornado pelo Windows XP e por versões posteriores.</p></td>
+<p>esse erro só será retornado pelo Windows XP e versões posteriores.</p></td>
 </tr>
 <tr class="odd">
 <td><p>JET_errTermInProgress</p></td>
@@ -202,19 +202,19 @@ Se a dica de ID de índice estiver obsoleta, a API simplesmente falhará. Não h
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Biblioteca</strong></p></td>
-<td><p>Use ESENT. lib.</p></td>
+<td><p>Use ESENT.lib.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DLL</strong></p></td>

@@ -3,7 +3,7 @@ title: Mensagem de MM_JOY2BUTTONDOWN (mmsystem. h)
 description: A \_ mensagem mm JOY2BUTTONDOWN notifica a janela que capturou o joystick JOYSTICKID2 de que um botão foi pressionado.
 ms.assetid: b4cd48ea-91ad-48e9-b0ae-58d8ee124171
 keywords:
-- Multimídia do Windows de mensagem MM_JOY2BUTTONDOWN
+- mensagem de MM_JOY2BUTTONDOWN Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f155fcdc21247e01fd5d730f3f7d4daaba705e65
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 02e9ad78e914fb74e51f8ebe7a47a65677ac06d27d53eb8f64739ba641f235b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137197"
 ---
 # <a name="mm_joy2buttondown-message"></a>\_Mensagem mm JOY2BUTTONDOWN
 

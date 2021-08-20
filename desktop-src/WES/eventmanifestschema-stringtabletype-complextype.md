@@ -3,7 +3,7 @@ title: Tipo complexo StringTableType
 description: Define uma lista de cadeias de caracteres localizadas que você pode referenciar em seu manifesto. | Tipo complexo StringTableType
 ms.assetid: 47a59ff7-aaf6-4200-805b-0a8b5f57f101
 keywords:
-- Tipo complexo StringTableType EventLog
+- Log de eventos do tipo complexo StringTableType
 topic_type:
 - apiref
 api_name:
@@ -62,7 +62,7 @@ Define uma lista de cadeias de caracteres localizadas que você pode referenciar
 
 | Elemento                                                              | Type | Descrição                            |
 |----------------------------------------------------------------------|------|----------------------------------------|
-| [**String**](eventmanifestschema-string-stringtabletype-element.md) |      | Define uma cadeia de caracteres localizada.<br/> |
+| [**string**](eventmanifestschema-string-stringtabletype-element.md) |      | Define uma cadeia de caracteres localizada.<br/> |
 
 
 
@@ -72,15 +72,15 @@ Define uma lista de cadeias de caracteres localizadas que você pode referenciar
 
 | Nome       | Tipo   | Descrição                                                                                                              |
 |------------|--------|--------------------------------------------------------------------------------------------------------------------------|
-| id         | string | Um identificador que identifica exclusivamente a cadeia de caracteres dentro da tabela de cadeia de caracteres. Por exemplo, "Printer.Connection".<br/> |
-| Stringtype | string | Não usado.<br/>                                                                                                     |
+| id         | string | Um identificador que identifica exclusivamente a cadeia de caracteres na tabela de cadeias de caracteres. Por exemplo, "Printer. Connection".<br/> |
+| StringType | string | Não usado.<br/>                                                                                                     |
 | value      | string | A cadeia de caracteres localizada.<br/>                                                                                         |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Você pode referenciar as cadeias de caracteres de qualquer tipo de manifesto que contenha o atributo de mensagem. Para referenciar uma cadeia de caracteres com um stringType de "string" e uma ID de "Printer.Connection", use $(string. Printer.Connection) como o valor do atributo de mensagem.
+Você pode fazer referência às cadeias de caracteres de qualquer tipo de manifesto que contenha o atributo Message. Para fazer referência a uma cadeia de caracteres com um StringType de "String" e uma ID de "Printer. Connection", use $ (String. Printer. Connection) como o valor do atributo Message.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,8 +88,8 @@ Você pode referenciar as cadeias de caracteres de qualquer tipo de manifesto qu
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

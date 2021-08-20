@@ -1,9 +1,9 @@
 ---
-title: comando de lista
+title: Comando list
 description: O comando list determina o número e os tipos de entradas de vídeo e áudio. Os dispositivos de vídeo digital e VCR reconhecem este comando.
 ms.assetid: b3fe3819-0b8a-4de5-9c79-03e1e089436f
 keywords:
-- comando de lista multimídia do Windows
+- comando de lista Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5d0a171c6768caf1b947a0d07cb46e5cccd28c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b8881c85d146ce869e41d234a72190901135d233f8e45d580d5f568c4ccc48da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139469"
 ---
-# <a name="list-command"></a>comando de lista
+# <a name="list-command"></a>Comando list
 
 O comando list determina o número e os tipos de entradas de vídeo e áudio. Os dispositivos de vídeo digital e VCR reconhecem este comando.
 

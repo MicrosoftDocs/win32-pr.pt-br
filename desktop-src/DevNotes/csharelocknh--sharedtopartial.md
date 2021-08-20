@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Rwnh.dll
-ms.openlocfilehash: a997c5a437063a4c55b74d837dc77fd506688158
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8f2cc895786655754a3fcf56c6efe745467c12328867b1dc021a257ba1519652
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162201"
 ---
 # <a name="csharelocknhsharedtopartial-method"></a>Método CShareLockNH:: SharedToPartial
 
@@ -37,7 +37,7 @@ BOOL SharedToPartial();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se o bloqueio parcial for obtido; caso contrário, retornará **false** e o bloqueio permanecerá no modo compartilhado.
 

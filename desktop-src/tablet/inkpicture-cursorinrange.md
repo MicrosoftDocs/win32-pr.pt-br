@@ -4,12 +4,12 @@ ms.assetid: e921e175-a2cf-45e6-bb81-dc82e384d3b1
 title: Evento InkPicture. CursorInRange (Msinkaut. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d05d703022e8d97df0d8d74a73e20af3d91b8531
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5d4a44b41e9eaffa4cb7a6939e1e6b8caf55cb7fbb8782d75cda490e4dc3d34a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108086574"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118042097"
 ---
 # <a name="inkpicturecursorinrange-event"></a>Evento InkPicture. CursorInRange
 
@@ -71,14 +71,14 @@ O evento **CursorInRange** é disparado mesmo quando estiver no modo de seleçã
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: de0bc74532296c5e0f23da9635bb26df299ae60b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 6314a18ecac01a306c72d5879d191c5a744c20171495a3d57192078202d129f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177178"
 ---
 # <a name="extra-columns-attribute"></a>Extra-Columns atributo
 
@@ -33,7 +33,7 @@ Este é um atributo com vários valores, cujo valor consiste em uma tupla de 5: 
 | LDAP-Display-Name | extraColumns                                                                                                                                                         |
 | Tamanho              | Cada valor seria o tamanho da cadeia de caracteres da tupla de 5. Por padrão, haverá 22 valores no objeto de exibição padrão no contêiner DisplaySpecifier. |
 | Privilégio de atualização  | Administrador de domínio                                                                                                                                                 |
-| Frequência de atualização  | Isso só será atualizado se um serviço como o Exchange estiver instalado.                                                                                                   |
+| Frequência de atualização  | isso só será atualizado se um serviço como Exchange estiver instalado.                                                                                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1687                                                                                                                                              |
 | System-ID-GUID    | d24e2846-1dd9-4bcf-99d7-a6227cc86da7                                                                                                                                 |
 | Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                                                                                                          |
@@ -120,10 +120,10 @@ Este é um atributo com vários valores, cujo valor consiste em uma tupla de 5: 
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |
@@ -141,10 +141,10 @@ Este é um atributo com vários valores, cujo valor consiste em uma tupla de 5: 
 | ID do link                | \-                                                         |
 | MAPI-Id                | \-                                                         |
 | System-Only            | Falso                                                      |
-| É de valor único       | Falso                                                      |
+| Tem valor único       | Falso                                                      |
 | É indexado             | Falso                                                      |
-| No catálogo global      | Falso                                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                               |
+| No Catálogo Global      | Falso                                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                                               |
 | Range-Lower            | \-                                                         |
 | Range-Upper            | \-                                                         |
 | Search-Flags           | 0x00000000                                                 |

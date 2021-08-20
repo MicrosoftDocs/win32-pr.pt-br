@@ -4,12 +4,12 @@ ms.assetid: ce6ad7c1-d4a1-4573-860e-f7859c588773
 title: Partições padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5115b6b2480958c78a53c264804eb1f292808545
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 968f5daa811202f80ae8d916142c8182b684006720068841ac5f9ae86123f72c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164163"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118102379"
 ---
 # <a name="default-partitions"></a>Partições padrão
 

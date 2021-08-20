@@ -1,9 +1,9 @@
 ---
-title: carregar comando
-description: O comando carregar carrega um arquivo em um formato específico do dispositivo. Dispositivos de vídeo digital e de sobreposição de vídeo reconhecem este comando.
+title: comando load
+description: O comando load carrega um arquivo em um formato específico do dispositivo. Os dispositivos de vídeo digital e sobreposição de vídeo reconhecem esse comando.
 ms.assetid: ae7bfe92-7957-4756-a408-e3ab60dd9aa4
 keywords:
-- carregar multimídia do Windows de comando
+- comando load Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b199a6d3aea8a2697217eb75176c24b2b0bc2e2a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4c66822de727ea45e93839c710dae19739cba8adaac8b571846c1fa23ef0083c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139351"
 ---
-# <a name="load-command"></a>carregar comando
+# <a name="load-command"></a>comando load
 
-O comando carregar carrega um arquivo em um formato específico do dispositivo. Dispositivos de vídeo digital e de sobreposição de vídeo reconhecem este comando.
+O comando load carrega um arquivo em um formato específico do dispositivo. Os dispositivos de vídeo digital e sobreposição de vídeo reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -49,20 +49,20 @@ Identificador de um dispositivo MCI. Esse identificador ou alias é atribuído q
 <span id="lpszFilePos"></span><span id="lpszfilepos"></span><span id="LPSZFILEPOS"></span>*lpszFilePos*
 </dt> <dd>
 
-Caminho e nome de arquivo a serem carregados. Para dispositivos de sobreposição de vídeo, isso também pode incluir um retângulo de destino para os dados. Para especificar um retângulo de destino, especifique "at" seguido por **X1 Y1 x2 y2**, em que **X1 Y1** especifica o canto superior esquerdo do retângulo e **x2 y2** especifique a largura e a altura. O retângulo é relativo à origem do buffer de vídeo.
+Caminho e nome do arquivo a ser carregado. Para dispositivos de sobreposição de vídeo, isso também pode incluir um retângulo de destino para os dados. Para especificar um retângulo de destino, especifique "at" seguido por **X1 Y1 X2 Y2 ,** em que **X1 Y1** especifica o canto superior esquerdo do retângulo e **X2 Y2** especifica a largura e a altura. O retângulo é relativo à origem do buffer de vídeo.
 
 </dd> <dt>
 
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "notificar" ou ambos. Para dispositivos de vídeo digital, "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify" ou ambos. Para dispositivos de vídeo digital, "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
@@ -91,7 +91,7 @@ load vidboard c:\vid\fish.vid notify
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

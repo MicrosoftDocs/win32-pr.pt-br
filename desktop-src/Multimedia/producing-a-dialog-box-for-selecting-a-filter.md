@@ -3,27 +3,27 @@ title: Produzindo uma caixa de diálogo para selecionar um filtro
 description: Produzindo uma caixa de diálogo para selecionar um filtro
 ms.assetid: 4cbb9276-6ce6-4cf4-a000-2b4f9ac42b31
 keywords:
-- Gerenciador de compactação de áudio (ACM), produzindo caixas de diálogo
-- ACM (Gerenciador de compactação de áudio), caixas de diálogo em produção
-- Exemplos do ACM, caixas de diálogo de produção
+- gerenciador de compactação de áudio (ACM), produzindo caixas de diálogo
+- ACM (gerenciador de compactação de áudio), produzindo caixas de diálogo
+- Exemplos do ACM, produzindo caixas de diálogo
 - produzindo caixas de diálogo
-- função acmFilterChoose
-- Gerenciador de compactação de áudio (ACM), selecionando filtros
-- ACM (Gerenciador de compactação de áudio), selecionando filtros
+- Função acmFilterChoose
+- gerenciador de compactação de áudio (ACM), selecionando filtros
+- ACM (gerenciador de compactação de áudio), selecionando filtros
 - Exemplos do ACM, selecionando filtros
 - selecionando filtros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 87225c1aebf2a06c738a1b48b03b94ed81bf6c2d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 70015f7e546337983725ae85c683acf5e9b75423e0de0734de4e1293480933ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105775688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136600"
 ---
 # <a name="producing-a-dialog-box-for-selecting-a-filter"></a>Produzindo uma caixa de diálogo para selecionar um filtro
 
-Um aplicativo pode permitir que os usuários selecionem uma operação de filtro arbitrária e apliquem-os aos dados de formato de onda-áudio. No exemplo a seguir, o aplicativo aloca um buffer para manter o filtro e, em seguida, usa a função [**acmFilterChoose**](/windows/desktop/api/Msacm/nf-msacm-acmfilterchoose) para selecionar o filtro. As funções neste exemplo devem ser chamadas com o filtro ou a marca de filtro apropriada.
+Um aplicativo pode permitir que os usuários selecionem uma operação de filtro arbitrária e apliquem-na a dados waveform-audio. No exemplo a seguir, o aplicativo aloca um buffer para manter o filtro e, em seguida, usa a [**função acmFilterChoose**](/windows/desktop/api/Msacm/nf-msacm-acmfilterchoose) para selecionar o filtro. As funções neste exemplo devem ser chamadas com a marca de filtro ou filtro apropriada.
 
 
 ```C++
@@ -74,9 +74,9 @@ return (mmr);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

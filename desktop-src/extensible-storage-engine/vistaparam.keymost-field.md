@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8ec88b9ae531b6f0b654b7751174c0739af7c8f1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ffac2364baae067a2b0505a42b1172f8de50bba6ecd1c73ea539f20c52d2fd83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118069906"
 ---
 # <a name="vistaparamkeymost-field"></a>Campo VistaParam. keymost
 

@@ -12,12 +12,12 @@ keywords:
 - B-spline racional não uniforme (NURBS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e0e56c06eea4e4a9a48f9062205277f8b999499
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af6990d2292399cb1ccaf00ba6ec42d680c5ace887b2495daf8640db2da30ac5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132405"
 ---
 # <a name="porting-nurbs-objects"></a>Portando objetos NURBS
 
@@ -33,7 +33,7 @@ O OpenGL trata a NURBS como objetos, semelhante ao modo como ele trata quadrics:
 
 
 
- 
+ 
 
 Ao portar o código NURBS do íris GL para OpenGL, tenha em mente os seguintes pontos:
 
@@ -43,9 +43,9 @@ Ao portar o código NURBS do íris GL para OpenGL, tenha em mente os seguintes p
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

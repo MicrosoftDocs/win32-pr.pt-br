@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: membros da sessão'
+description: 'Saiba mais sobre: Membros da sessão'
 title: 'Membros da sessão '
 TOCTitle: Session members
 ms:assetid: AllMembers.T:Microsoft.Isam.Esent.Interop.Session
@@ -21,7 +21,7 @@ Incluir membros herdados
 
 Uma classe que encapsula um JET_SESID em um objeto descartável.
 
-O tipo de [sessão](./session-class.md) expõe os membros a seguir.
+O [Tipo](./session-class.md) de sessão expõe os membros a seguir.
 
 ## <a name="constructors"></a>Construtores
 
@@ -37,7 +37,7 @@ O tipo de [sessão](./session-class.md) expõe os membros a seguir.
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351126(v=exchg.10).md">Sessão</a></td>
-<td>Inicializa uma nova instância da classe de sessão. Uma nova JET_SESSION é alocada a partir da instância especificada.</td>
+<td>Inicializa uma nova instância da classe Session. Um novo JET_SESSION é alocado da instância determinada.</td>
 </tr>
 </tbody>
 </table>
@@ -59,12 +59,12 @@ Parte superior
 <tr class="odd">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
 <td><a href="dn350578(v=exchg.10).md">HasResource</a></td>
-<td>Obtém um valor que indica se o recurso subjacente está alocado no momento. (Herdado de <a href="dn319890(v=exchg.10).md">EsentResource</a>.)</td>
+<td>Obtém um valor que indica se o recurso subjacente está alocado no momento. (Herdado <a href="dn319890(v=exchg.10).md">de EsentResource</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn351175(v=exchg.10).md">JetSesid</a></td>
-<td>Obtém o JET_SESID que esta sessão contém.</td>
+<td>Obtém a JET_SESID que essa sessão contém.</td>
 </tr>
 </tbody>
 </table>
@@ -86,17 +86,17 @@ Parte superior
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn350541(v=exchg.10).md">CheckObjectIsNotDisposed</a></td>
-<td>Gerar uma exceção se esse objeto tiver sido descartado. (Herdado de <a href="dn319890(v=exchg.10).md">EsentResource</a>.)</td>
+<td>Lançar uma exceção se esse objeto tiver sido descartado. (Herdado <a href="dn319890(v=exchg.10).md">de EsentResource</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="dn350553(v=exchg.10).md">Dispose ()</a></td>
-<td>Descartar este objeto, liberando o recurso ESENT subjacente. (Herdado de <a href="dn319890(v=exchg.10).md">EsentResource</a>.)</td>
+<td><a href="dn350553(v=exchg.10).md">Dispose()</a></td>
+<td>Descarte esse objeto, liberando o recurso Esent subjacente. (Herdado <a href="dn319890(v=exchg.10).md">de EsentResource</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350543(v=exchg.10).md">Dispose (booliano)</a></td>
-<td>Chamado por Dispose e o finalizador. (Herdado de <a href="dn319890(v=exchg.10).md">EsentResource</a>.)</td>
+<td><a href="dn350543(v=exchg.10).md">Dispose(Boolean)</a></td>
+<td>Chamado por Dispose e o finalizador. (Herdado <a href="dn319890(v=exchg.10).md">de EsentResource</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -111,7 +111,7 @@ Parte superior
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn350552(v=exchg.10).md">Finalizar</a></td>
-<td>Finaliza uma instância da classe EsentResource. (Herdado de <a href="dn319890(v=exchg.10).md">EsentResource</a>.)</td>
+<td>Finaliza uma instância da classe EsentResource. (Herdado <a href="dn319890(v=exchg.10).md">de EsentResource</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
@@ -120,33 +120,33 @@ Parte superior
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn351165(v=exchg.10).md">ReleaseResource</a></td>
-<td>Libere o JET_SESID subjacente. (Substitui <a href="dn350545(v=exchg.10).md">EsentResource. ReleaseResource ()</a>.)</td>
+<td>Liberar os dados subjacentes JET_SESID. (Substitui <a href="dn350545(v=exchg.10).md">EsentResource.ReleaseResource()</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn350576(v=exchg.10).md">ResourceWasAllocated</a></td>
-<td>Chamado por uma subclasse quando um recurso é alocado. (Herdado de <a href="dn319890(v=exchg.10).md">EsentResource</a>.)</td>
+<td>Chamado por uma subclasse quando um recurso é alocado. (Herdado <a href="dn319890(v=exchg.10).md">de EsentResource</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
 <td><a href="dn350577(v=exchg.10).md">ResourceWasReleased</a></td>
-<td>Chamado por uma subclasse quando um recurso é liberado. (Herdado de <a href="dn319890(v=exchg.10).md">EsentResource</a>.)</td>
+<td>Chamado por uma subclasse quando um recurso é liberado. (Herdado <a href="dn319890(v=exchg.10).md">de EsentResource</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn351129(v=exchg.10).md">ToString</a></td>
-<td>Retorna uma <a href="/dotnet/api/system.string">cadeia de caracteres</a> que representa a <a href="dn351164(v=exchg.10).md">sessão</a>atual. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>.)</td>
+<td>Retorna uma <a href="/dotnet/api/system.string">Cadeia de</a> Caracteres que representa a <a href="dn351164(v=exchg.10).md">sessão atual.</a> (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -167,8 +167,8 @@ Parte superior
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn350944.puboperator(exchg.10).gif" title="Operador público" alt="Public operator" /><img src="../images/dn292146.static(exchg.10).gif" title="Membro estático" alt="Static member" /></td>
-<td><a href="dn351178(v=exchg.10).md">Implícito (sessão para JET_SESID)</a></td>
-<td>Operador de conversão implícita de uma sessão para um JET_SESID. Isso permite que uma sessão seja usada com APIs que esperam um JET_SESID.</td>
+<td><a href="dn351178(v=exchg.10).md">Implicit(Session to JET_SESID)</a></td>
+<td>Operador de conversão implícita de uma Sessão em um JET_SESID. Isso permite que uma sessão seja usada com APIs que esperam um JET_SESID.</td>
 </tr>
 </tbody>
 </table>
@@ -182,4 +182,4 @@ Parte superior
 
 [Classe da sessão](./session-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

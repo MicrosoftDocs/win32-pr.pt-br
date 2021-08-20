@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f3bfb9f6c833900967525467202421cf94166405
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 4ae3abf23b19badb123f8eb49097c6b3e9d7ac6d26fc0132f34b84de5ac24c01
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105790507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086950"
 ---
 # <a name="baseeapparameters-complex-type---connection-properties"></a>Tipo complexo BaseEapParameters – Propriedades de conexão
 
@@ -45,7 +45,7 @@ O tipo complexo **BaseEapParameters** define o elemento de espaço reservado par
 
 
 
-| Elemento                                                                            | Type    | Description                                     |
+| Elemento                                                                            | Type    | Descrição                                     |
 |------------------------------------------------------------------------------------|---------|-------------------------------------------------|
 | [**Type**](baseeapconnectionpropertiesv1schema-type-baseeapparameters-element.md) | Número inteiro | Qualquer instância de esquema é permitida aqui.<br/> |
 
@@ -61,8 +61,8 @@ Em **BaseEapParameters** , o método pode definir os elementos constituintes. O 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

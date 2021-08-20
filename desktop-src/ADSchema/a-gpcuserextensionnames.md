@@ -1,11 +1,11 @@
 ---
-title: O atributo GPC-User-Extension-Names
-description: Usado pelo objeto Política de Grupo para as políticas de usuário.
+title: Atributo GPC-User-Extension-Names
+description: Usado pelo objeto Política de Grupo para políticas de usuário.
 ms.assetid: 3c6fa679-7597-4286-bd79-7a0030212810
 ms.tgt_platform: multiple
 keywords:
-- GPC-User-Extension-Names atributo AD Schema
-- Esquema de AD do atributo gPCUserExtensionNames
+- Esquema do AD do atributo GPC-User-Extension-Names
+- Atributo gPCUserExtensionNames Esquema do AD
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 12de39539af6ee523838f8081aa04a5d21b8a1d3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ed1f371cfb4d1fdacb300ef2de12c668029b2ced235ff47c318f0a9294056a0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176820"
 ---
-# <a name="gpc-user-extension-names-attribute"></a>O atributo GPC-User-Extension-Names
+# <a name="gpc-user-extension-names-attribute"></a>Atributo GPC-User-Extension-Names
 
-Usado pelo objeto Política de Grupo para as políticas de usuário.
+Usado pelo objeto Política de Grupo para políticas de usuário.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------|
 | CN                | GPC-User-Extension-Names                                                        |
-| LDAP-Display-Name | gPCUserExtensionNames                                                           |
-| Tamanho              | Depende do número de extensões do lado do cliente que têm uma política nesse GPO. |
-| Privilégio de atualização  | Administrador de política ou de domínio.                                                 |
-| Frequência de atualização  | Sempre que um GPO é atualizado por meio de GPE.                                      |
+| Ldap-Display-Name | gPCUserExtensionNames                                                           |
+| Tamanho              | Depende do número de extensões do lado do cliente que têm uma política neste GPO. |
+| Privilégio de atualização  | Administrador de política ou domínio.                                                 |
+| Frequência de atualização  | Sempre que um GPO é atualizado por meio do GPE.                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1349                                                         |
-| System-ID-GUID    | 42a75fc6-783f-11d2-9916-0000f87a57d4                                            |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                     |
+| System-Id-Guid    | 42a75fc6-783f-11d2-9916-0000f87a57d4                                            |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                     |
 
 
 
@@ -58,15 +58,15 @@ Usado pelo objeto Política de Grupo para as políticas de usuário.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | True                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Usado pelo objeto Política de Grupo para as políticas de usuário.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | True                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Usado pelo objeto Política de Grupo para as políticas de usuário.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | True                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Usado pelo objeto Política de Grupo para as políticas de usuário.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Usado pelo objeto Política de Grupo para as políticas de usuário.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | True                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Usado pelo objeto Política de Grupo para as políticas de usuário.
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**Grupo-política-contêiner**](c-grouppolicycontainer.md)<br/> |
+| Classes usadas em        | [**Group-Policy-Container**](c-grouppolicycontainer.md)<br/> |
 
 
 

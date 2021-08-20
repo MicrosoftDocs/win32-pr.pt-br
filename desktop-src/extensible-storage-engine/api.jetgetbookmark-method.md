@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetGetBookmark'
-title: Método API. JetGetBookmark
+description: 'Saiba mais sobre: Método Api.JetGetBookmark'
+title: Método Api.JetGetBookmark
 TOCTitle: 'JetGetBookmark method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetBookmark(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.Byte[],System.Int32,System.Int32@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetbookmark(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0eaac3c0c92fa9d6cfa1a5bca660791b81efe5ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d63bf41af250fcef6328433132fe64dcbdc862dcf8e35990c1ef1cbd02185e42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105772728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118085475"
 ---
-# <a name="apijetgetbookmark-method"></a>Método API. JetGetBookmark
+# <a name="apijetgetbookmark-method"></a>Método Api.JetGetBookmark
 
-Recupera o indicador para o registro que está associado à entrada de índice na posição atual de um cursor. Esse indicador pode então ser usado para reposicionar esse cursor de volta para o mesmo registro usando [JetGotoBookmark (JET_SESID, JET_TABLEID, \[ \] Int32)](./api.jetgotobookmark-method.md). O indicador não terá mais do que [BookmarkMost](./systemparameters.bookmarkmost-property.md) bytes. Consulte também [GetBookmark (JET_SESID, JET_TABLEID)](./api.getbookmark-method.md).
+Recupera o indicador do registro associado à entrada de índice na posição atual de um cursor. Esse indicador pode ser usado para reposicionar esse cursor de volta para o mesmo registro usando [JetGotoBookmark(JET_SESID, JET_TABLEID, \[ \] , Int32)](./api.jetgotobookmark-method.md). O indicador não será mais do que [BookmarkMost](./systemparameters.bookmarkmost-property.md) bytes. Consulte também [GetBookmark(JET_SESID, JET_TABLEID)](./api.getbookmark-method.md).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -71,35 +71,35 @@ public static void JetGetBookmark(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    O cursor do qual recuperar o indicador.
+    O cursor do onde recuperar o indicador.
 
 <!-- end list -->
 
   - indicador  
-    Escreva \[\]  
+    Tipo: \[\]  
     
     Buffer para conter o indicador.
 
 <!-- end list -->
 
   - bookmarkSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
-    Tamanho do buffer do indicador.
+    Tamanho do buffer de indicador.
 
 <!-- end list -->
 
   - actualBookmarkSize  
-    Tipo: [System. Int32](/dotnet/api/system.int32)  
+    Tipo: [System.Int32](/dotnet/api/system.int32)  
     
     Retorna o tamanho real do indicador.
 
@@ -111,4 +111,4 @@ public static void JetGetBookmark(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

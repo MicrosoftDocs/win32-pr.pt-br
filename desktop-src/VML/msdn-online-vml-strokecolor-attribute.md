@@ -1,26 +1,26 @@
 ---
-title: Atributo StrokeColor de VML
-description: Atributo StrokeColor de VML
+title: Atributo StrokeColor do VML
+description: Atributo StrokeColor do VML
 ms.assetid: e7224d77-f788-43c7-aa8e-d5fc318f9d4f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d379f41f3d2c1f03349beae8d0420a7c1a26429
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a419813c5bd9db4370320f9f181477013136c70265f4ba1d8572a38ae9e3c473
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124229"
 ---
-# <a name="vml-strokecolor-attribute"></a>Atributo StrokeColor de VML
+# <a name="vml-strokecolor-attribute"></a>Atributo StrokeColor do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define a cor do pincel que traça o caminho de uma forma. Leitura/gravação. [IVgColor](msdn-online-vml-ivgcolor.md).
+Define a cor do pincel que traçou o caminho de uma forma. Leitura/gravação. [IVgColor.](msdn-online-vml-ivgcolor.md)
 
 **Aplica-se a**
 
@@ -28,19 +28,19 @@ Define a cor do pincel que traça o caminho de uma forma. Leitura/gravação. [I
 
 **Sintaxe de marca**
 
-<v: *Element* strokecolor = " *expressão* " >
+<v: *elemento* strokecolor=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . strokecolor = "*expressão*"
+*expressão element* .strokecolor=""
 
-*expressão* = de *elemento*. strokecolor
+*expressão* = *elemento*.strokecolor
 
 **Comentários**
 
-O valor é duplicado do atributo **Color** do elemento [Stroke](msdn-online-vml-stroke-element.md) .
+O valor é duplicado do **atributo Color** do [elemento Stroke.](msdn-online-vml-stroke-element.md)
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
@@ -58,8 +58,8 @@ A cor do traço do retângulo é vermelha.
 
 
 
-[Exemplo do atributo StrokeColor](/previous-versions/bb264093(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
+[Exemplo de atributo StrokeColor](/previous-versions/bb264093(v=vs.85)). (Requer o Microsoft Internet Explorer 5 ou superior.)
 
- 
+ 
 
- 
+ 

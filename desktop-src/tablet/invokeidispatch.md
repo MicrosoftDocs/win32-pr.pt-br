@@ -14,18 +14,18 @@ api_type:
 api_location:
 - InkObj.dll
 - InkObj.dll.dll
-ms.openlocfilehash: e4989e3ec23a1ffa97ba317831143ecf0920ef9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9708ebc5675d918c959be132d16037ac4e128650280b8243dcfe5c48834b602b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105762326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118041866"
 ---
 # <a name="invokeidispatch-function"></a>Função InvokeIDispatch
 
 Invoca a funcionalidade auxiliar para a interface IDispatch.
 
-Esta função não se destina a ser usada pelo código do aplicativo.
+Essa função não se destina a ser usada pelo código do aplicativo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -52,30 +52,30 @@ A instância da interface IDispatch.
 
 </dd> <dt>
 
-*DISPID* 
+*Dispid* 
 </dt> <dd>
 
-O método, a propriedade ou o argumento a ser passado.
+O método, a propriedade ou o argumento a ser aprovado.
 
 </dd> <dt>
 
 *pDisp* 
 </dt> <dd>
 
-Os parâmetros a serem transmitidos.
+Os parâmetros a passar.
 
 </dd> <dt>
 
-*pVarResult* \[ fora\]
+*pVarResult* \[ out\]
 </dt> <dd>
 
 Uma estrutura que recebe os valores recuperados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método for bem sucedido, ele retornará S \_ OK. Se falhar, os códigos de retorno possíveis incluem, mas não se limitam a, os valores mostrados na tabela a seguir.
+Se o método for bem-sucedido, ele retornará S \_ OK. Se falhar, os possíveis códigos de retorno incluem, mas não estão limitados a, os valores mostrados na tabela a seguir.
 
 
 
@@ -93,7 +93,7 @@ Se o método for bem sucedido, ele retornará S \_ OK. Se falhar, os códigos de
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                         |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                         |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                             |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl> |
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed1304d7a8ba902b95a997800e0bc6ee54ad341f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ad61f030fa7461f1f33e13e1f5533c55b1633fc064a333732ee8f35e4cd368f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087002"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118011792"
 ---
 # <a name="print-media-ready-attribute"></a>Imprimir-atributo pronto para mídia
 
@@ -60,7 +60,7 @@ Uma lista de mídias disponíveis para uma impressora.
 | System-Only            | Falso                                          |
 | É de valor único       | Falso                                          |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -81,7 +81,7 @@ Uma lista de mídias disponíveis para uma impressora.
 | System-Only            | Falso                                          |
 | É de valor único       | Falso                                          |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -102,7 +102,7 @@ Uma lista de mídias disponíveis para uma impressora.
 | System-Only            | Falso                                          |
 | É de valor único       | Falso                                          |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -123,7 +123,7 @@ Uma lista de mídias disponíveis para uma impressora.
 | System-Only            | Falso                                          |
 | É de valor único       | Falso                                          |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -144,7 +144,7 @@ Uma lista de mídias disponíveis para uma impressora.
 | System-Only            | Falso                                          |
 | É de valor único       | Falso                                          |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
@@ -165,7 +165,7 @@ Uma lista de mídias disponíveis para uma impressora.
 | System-Only            | Falso                                          |
 | É de valor único       | Falso                                          |
 | É indexado             | Falso                                          |
-| No catálogo global      | True                                           |
+| No catálogo global      | Verdadeiro                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |

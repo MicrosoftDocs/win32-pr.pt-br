@@ -5,12 +5,12 @@ ms.assetid: 2e570727-7da0-4e17-bf5d-6fe0e6aef65b
 title: B (Glossário de segurança)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40aedaebddb86ddf9f32a9a3d86cf4cf4a613642
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: aeb1cd8f92005d379b075d809e434a041fbd99398d534fc5e0da484fd498fc7c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105796363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117970403"
 ---
 # <a name="b-security-glossary"></a>B (Glossário de segurança)
 

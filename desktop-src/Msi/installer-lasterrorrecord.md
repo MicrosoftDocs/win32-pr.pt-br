@@ -1,7 +1,7 @@
 ---
-description: O método LastErrorRecord do objeto do instalador retorna um objeto de registro que contém parâmetros de erro para o erro mais recente da função que produziu o registro de erro.
+description: O método LastErrorRecord do objeto Installer retorna um objeto Record que contém parâmetros de erro para o erro mais recente da função que produziu o registro de erro.
 ms.assetid: 48fe46bc-6c10-4bd5-89bc-013e650a44e6
-title: Método Installer. LastErrorRecord
+title: Método Installer.LastErrorRecord
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b368f30b04734b2d253a7d5f2aa64f0d61c930e0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bb9dad1962cace623a4a52991d3650451a0a6d5f660aad88e46c4fe393ce4e4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747763"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142105"
 ---
-# <a name="installerlasterrorrecord-method"></a>Método Installer. LastErrorRecord
+# <a name="installerlasterrorrecord-method"></a>Método Installer.LastErrorRecord
 
-O método **LastErrorRecord** do objeto do [**instalador**](installer-object.md) retorna um objeto de [**registro**](record-object.md) que contém parâmetros de erro para o erro mais recente da função que produziu o registro de erro.
+O **método LastErrorRecord** do objeto [**Installer**](installer-object.md) retorna um objeto [**Record**](record-object.md) que contém parâmetros de erro para o erro mais recente da função que produziu o registro de erro.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,29 +37,29 @@ Installer.LastErrorRecord()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O objeto de [**registro**](record-object.md) é redefinido após a execução dessa função de qualquer função que gera um registro de erro.
+O [**objeto**](record-object.md) Record é redefinido após a execução dessa função de qualquer função que gere um registro de erro.
 
 Somente as seguintes funções designadas geram um registro de erro:
 
--   [**Método OpenDatabase (objeto instalador)**](installer-opendatabase.md)
--   [**Compromisso**](database-commit.md)
--   [**AbrirModoDeExibição**](database-openview.md)
+-   [**Método OpenDatabase (Objeto do Instalador)**](installer-opendatabase.md)
+-   [**Commit**](database-commit.md)
+-   [**Openview**](database-openview.md)
 -   [**Importar**](database-import.md)
 -   [**Exportação**](database-export.md)
--   [**Mescle**](database-merge.md)
+-   [**Mesclagem**](database-merge.md)
 -   [**GenerateTransform**](database-generatetransform.md)
 -   [**ApplyTransform**](database-applytransform.md)
--   [**Executados**](view-execute.md)
+-   [**Executar**](view-execute.md)
 -   [**Modificar**](view-modify.md)
 -   [**SetStream**](record-setstream.md)
 -   [**SummaryInformation**](database-summaryinformation.md)
--   [**SourcePath**](session-sourcepath.md)
+-   [**Sourcepath**](session-sourcepath.md)
 -   [**TargetPath**](session-targetpath.md)
 -   [**ComponentCurrentState**](session-componentcurrentstate.md)
 -   [**ComponentRequestState**](session-componentrequeststate.md)
@@ -69,7 +69,7 @@ Somente as seguintes funções designadas geram um registro de erro:
 -   [**FeatureValidStates**](session-featurevalidstates.md)
 -   [**SetInstallLevel**](session-setinstalllevel.md)
 
-O exemplo a seguir no VBScript usa uma chamada para [**OpenDatabase**](installer-opendatabase.md) para mostrar como obter informações de erro estendidas de um dos métodos ou propriedades que dão suporte ao método **LastErrorRecord** . O exemplo constrói uma mensagem de erro quando o método **OpenDatabase** falha. O objeto **Err** é usado para determinar se um erro foi encontrado.
+O exemplo a seguir no VBScript usa uma chamada para [**OpenDatabase**](installer-opendatabase.md) para mostrar como obter informações de erro estendidas de um dos métodos ou propriedades que suportam o **método LastErrorRecord.** O exemplo constrói uma mensagem de erro quando **o método OpenDatabase** falha. O **objeto Err** é usado para determinar se um erro foi encontrado.
 
 
 ```VB
@@ -109,9 +109,9 @@ End If
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IInstaller é definido como 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
+| IID<br/>     | O IInstaller IID é definido como \_ 000C1090-0000-0000-C000-000000000046<br/>                                                                                                                                                                           |
 
 
 

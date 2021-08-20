@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 4f3c9290f98fb24d856561114bc654da0315c5a7
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 40f54dfc109ec2f7f4807d57052b9c4e1f99d5b629e8028be2931d9b42081f43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500741"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161567"
 ---
 # <a name="sdbfindfirstdwordindexedtag-function"></a>Função SdbFindFirstDWORDIndexedTag
 
-Localiza o primeiro registro **DWORD** no índice especificado que atende aos critérios especificados.
+Localiza o primeiro **registro DWORD** no índice especificado que atende aos critérios especificados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,44 +43,44 @@ TAGID WINAPI SdbFindFirstDWORDIndexedTag(
 
 <dl> <dt>
 
-*PDB* \[ no\]
+*pdb* \[ Em\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim.
+Um alça para o banco de dados shim.
 
 </dd> <dt>
 
-*tWhich* \[ no\]
+*tWhich* \[ Em\]
 </dt> <dd>
 
-O tipo do índice. Consulte a [**marca**](tag.md) para obter uma lista de valores.
+O tipo do índice. Consulte [**TAG**](tag.md) para ver uma lista de valores.
 
 </dd> <dt>
 
-*tKey* \[ no\]
+*tKey* \[ Em\]
 </dt> <dd>
 
 O tipo principal.
 
 </dd> <dt>
 
-*dwName* \[ no\]
+*dwName* \[ Em\]
 </dt> <dd>
 
 O nome dos dados a serem encontrados. Esse valor será convertido em uma chave.
 
 </dd> <dt>
 
-*pFindInfo* \[ fora\]
+*pFindInfo* \[ out\]
 </dt> <dd>
 
-Uma estrutura de [**\_ informações de localização**](find-info.md) que recebe o registro.
+Uma [**estrutura FIND \_ INFO**](find-info.md) que recebe o registro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O **TagId** da primeira correspondência ou **marca \_ NULL** se nenhuma correspondência for encontrada.
+O **TAGID** da primeira combinação ou **TAG \_ NULL** se nenhuma corresponder for encontrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,8 +88,8 @@ O **TagId** da primeira correspondência ou **marca \_ NULL** se nenhuma corresp
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

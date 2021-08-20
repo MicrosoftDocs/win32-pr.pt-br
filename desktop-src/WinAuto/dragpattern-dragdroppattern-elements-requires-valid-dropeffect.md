@@ -4,12 +4,12 @@ description: Os elementos DragPattern/DragDropPattern exigem DropEffect válidos
 ms.assetid: 508DD4F3-4878-4A9E-859D-06BBDA505708
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33acda19732e2ebd96182023fce9641012b50d6b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9cd95e1da2d3d05c7499f72c86d454da2832947cafd0150e8f62b2f3e8d56af2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634790"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118115674"
 ---
 # <a name="dragpatterndragdroppattern-elements-requires-valid-dropeffect"></a>Os elementos DragPattern/DragDropPattern exigem DropEffect válidos
 
@@ -32,9 +32,9 @@ Esse problema causa problemas para as pessoas que dependem de um leitor de tela.
 -   O elemento, ou seu pai, não criou [**DropEffect**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idragprovider-get_dropeffect) ou [**DropEffects**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-idragprovider-get_dropeffects) um nome ou rótulo atribuído incorretamente.
 -   Um desenvolvedor não está ciente de que os leitores de tela lêem DropEffect (s).
 
- 
+ 
 
- 
+ 
 
 
 

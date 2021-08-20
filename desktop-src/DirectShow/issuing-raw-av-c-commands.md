@@ -4,12 +4,12 @@ ms.assetid: 18081652-962f-4605-84b7-1fa60f61ad05
 title: Emitindo comandos AV/C brutos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf1cf1b25d45a0eb35ede7151941d0cd49d30db0
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 729cad0be3a55a3f95592e54e8f91b9074892a8d111da9ad996b4e00a136cbe1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118153783"
 ---
 # <a name="issuing-raw-avc-commands"></a>Emitindo comandos AV/C brutos
 
@@ -17,12 +17,12 @@ As interfaces [**IAMExtDevice**](/windows/desktop/api/Strmif/nn-strmif-iamextdev
 
 Você deve ter os seguintes pontos em mente ao usar esse recurso:
 
--   O comando é passado diretamente para o dispositivo, sem verificação de erro ou validação de parâmetro. Por esse motivo, você deve emitir comandos AV/C brutos somente quando as interfaces do DirectShow não implementam a funcionalidade de que você precisa.
+-   O comando é passado diretamente para o dispositivo, sem verificação de erro ou validação de parâmetro. por esse motivo, você deve emitir comandos AV/C brutos somente quando as interfaces de DirectShow não implementam a funcionalidade de que você precisa.
 -   Todos os comandos AV/C brutos são síncronos. O thread que emite os blocos de comando até que o comando retorne.
 -   Apenas um comando pode ser fornecido por vez. Enquanto o comando estiver sendo processado, o dispositivo rejeitará todos os comandos adicionais.
 -   O driver UVC não dá suporte a comandos brutos AV/C.
 
-Para enviar um comando AV/C, formate o comando como uma matriz de bytes. Em seguida, chame [**IAMExtTransport:: GetTransportBasicParameters**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-gettransportbasicparameters). Passe o sinalizador de \_ cmd de dev ext brutos Ed \_ \_ \_ , o tamanho da matriz e a matriz. Você deve converter o endereço da matriz em um tipo **LPOLESTR \** _, pois a finalidade original desse parâmetro era retornar um valor de cadeia de caracteres.
+Para enviar um comando AV/C, formate o comando como uma matriz de bytes. Em seguida, chame [**IAMExtTransport:: GetTransportBasicParameters**](/windows/desktop/api/Strmif/nf-strmif-iamexttransport-gettransportbasicparameters). Passe o sinalizador de \_ cmd de dev ext brutos Ed \_ \_ \_ , o tamanho da matriz e a matriz. Você deve converter o endereço da matriz em um tipo **LPOLESTR \*** , pois a finalidade original desse parâmetro era retornar um valor de cadeia de caracteres.
 
 
 ```C++
@@ -31,7 +31,7 @@ long cbCmd = sizeof(AvcCmd);
 hr = pTransport->GetTransportBasicParameters(
     ED_RAW_EXT_DEV_CMD, 
     &cbCmd,
-    (LPOLESTR_) AvcCmd);
+    (LPOLESTR*) AvcCmd);
 ```
 
 

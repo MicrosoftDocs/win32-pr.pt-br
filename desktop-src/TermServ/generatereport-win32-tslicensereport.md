@@ -1,6 +1,6 @@
 ---
 title: Método GenerateReport da classe Win32_TSLicenseReport (GPMgmt. h)
-description: O GenerateReport não está mais disponível para uso a partir do Windows Server 2012.
+description: O GenerateReport não está mais disponível para uso a partir de Windows Server 2012.
 ms.assetid: 2d3b16d6-52e8-491f-b6e5-419e9a21013b
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a5231c87d379decac8d4f6491042bff735c1ba2
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a619da8130187a4ab5d39de390315dd99b3ee7a171005a4cf66e7bb5677ae87c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130775"
 ---
 # <a name="generatereport-method-of-the-win32_tslicensereport-class"></a>Método GenerateReport da classe Win32 \_ TSLicenseReport
 
-\[O **GenerateReport** não está mais disponível para uso a partir do Windows Server 2012. Em vez disso, use [**GenerateReportEx**](generatereportex-win32-tslicensereport.md).\]
+\[O **GenerateReport** não está mais disponível para uso a partir de Windows Server 2012. Em vez disso, use [**GenerateReportEx**](generatereportex-win32-tslicensereport.md).\]
 
 Não há suporte para o método.
 
@@ -91,7 +91,7 @@ O nome do arquivo do relatório gerado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o **WBEM \_ E \_ não \_ tem suporte**.
 
@@ -103,7 +103,7 @@ Esse é um método estático.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -116,7 +116,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 | Fim do suporte do cliente<br/>    | Nenhum compatível<br/>                                                                 |
 | Fim do suporte do servidor<br/>    | Windows Server 2008 R2<br/>                                                         |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                    |
-| parâmetro<br/>                   | <dl> <dt>GPMgmt. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>GPMgmt. h</dt> </dl>       |
 | MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 

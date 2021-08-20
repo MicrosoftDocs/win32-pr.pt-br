@@ -1,7 +1,7 @@
 ---
-description: A propriedade DisplayName do objeto ConfigurableItem retorna o valor da coluna DisplayName da Tabela ModuleConfiguration.
+description: A propriedade DisplayName do objeto ConfigurableItem retorna o valor da coluna DisplayName da tabela ModuleConfiguration.
 ms.assetid: f2025bab-73b0-46d2-a276-0ad17fdd9783
-title: Propriedade ConfigurableItem. DisplayName (Mergemod. h)
+title: Propriedade ConfigurableItem.DisplayName (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 079138c978ee670b681186c5ee265a8002881b79
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5a9dba853ad875e5167b8ff642c2cf106ba600dcb4c951def5c249e8230d0365
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143972"
 ---
-# <a name="configurableitemdisplayname-property"></a>Propriedade ConfigurableItem. DisplayName
+# <a name="configurableitemdisplayname-property"></a>Propriedade ConfigurableItem.DisplayName
 
-A propriedade **DisplayName** do objeto [**ConfigurableItem**](configurableitem-object.md) retorna o valor da coluna DisplayName da [Tabela ModuleConfiguration](moduleconfiguration-table.md).
+A **propriedade DisplayName** do [**objeto ConfigurableItem**](configurableitem-object.md) retorna o valor da coluna DisplayName da [tabela ModuleConfiguration](moduleconfiguration-table.md).
 
 Esta propriedade é somente para leitura.
 
@@ -40,7 +40,7 @@ propVal = ConfigurableItem.DisplayName
 
 ## <a name="c"></a>C++
 
-Consulte [**obter função \_ DisplayName**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_displayname) .
+Confira [**obter a função \_ DisplayName.**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_displayname)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -48,8 +48,8 @@ Consulte [**obter função \_ DisplayName**](/windows/desktop/api/Mergemod/nf-me
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versão<br/> | Mergemod.dll 2,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versão<br/> | Mergemod.dll 2.0 ou posterior<br/>                                                    |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

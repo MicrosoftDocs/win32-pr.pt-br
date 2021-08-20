@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DS-Byte-Array
+title: atributo ms-DS-Byte-array
 description: Um atributo para armazenar dados binários.
 ms.assetid: 0053b11a-d55d-4d4e-998d-d9536c326f60
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo ms-DS-Byte-Array
-- Esquema do AD do atributo msDS-ByteArray
+- Esquema de AD do atributo ms-DS-Byte-array
+- atributo msDS-ByteArray do AD Schema
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118426719"
 ---
-# <a name="ms-ds-byte-array-attribute"></a>Atributo ms-DS-Byte-Array
+# <a name="ms-ds-byte-array-attribute"></a>atributo ms-DS-Byte-array
 
 Um atributo para armazenar dados binários.
 
@@ -29,14 +29,14 @@ Um atributo para armazenar dados binários.
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | ms-DS-Byte-Array                                      |
-| Ldap-Display-Name | msDS-ByteArray                                        |
+| CN                | Matriz ms-DS-byte                                      |
+| LDAP-Display-Name | msDS-ByteArray                                        |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1831                               |
-| System-Id-Guid    | f0d8972e-dd5b-40e5-a51d-044c7c17ece7                  |
-| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-ID-GUID    | f0d8972e-dd5b-40e5-a51d-044c7c17ece7                  |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -57,15 +57,15 @@ Um atributo para armazenar dados binários.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| Tem valor único       | Falso                                                                                                                      |
+| É de valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No Catálogo Global      | Falso                                                                                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
+| No catálogo global      | Falso                                                                                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Um atributo para armazenar dados binários.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| Tem valor único       | Falso                                                                                                                      |
+| É de valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No Catálogo Global      | Falso                                                                                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
+| No catálogo global      | Falso                                                                                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Um atributo para armazenar dados binários.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| Tem valor único       | Falso                                                                                                                      |
+| É de valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No Catálogo Global      | Falso                                                                                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
+| No catálogo global      | Falso                                                                                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Um atributo para armazenar dados binários.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| Tem valor único       | Falso                                                                                                                      |
+| É de valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No Catálogo Global      | Falso                                                                                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
+| No catálogo global      | Falso                                                                                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Um atributo para armazenar dados binários.
 | ID do link                | \-                                                                                                                         |
 | MAPI-Id                | \-                                                                                                                         |
 | System-Only            | Falso                                                                                                                      |
-| Tem valor único       | Falso                                                                                                                      |
+| É de valor único       | Falso                                                                                                                      |
 | É indexado             | Falso                                                                                                                      |
-| No Catálogo Global      | Falso                                                                                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                               |
+| No catálogo global      | Falso                                                                                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                               |
 | Range-Lower            | \-                                                                                                                         |
 | Range-Upper            | \-                                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                                 |
 | System-Flags           | 0x00000000                                                                                                                 |
-| Classes usadas em        | [**ms-DS-App-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
+| Classes usadas em        | [**ms-DS-app-Configuration**](c-msds-app-configuration.md)<br/> [**ms-DS-App-Data**](c-msds-appdata.md)<br/> |
 
 
 

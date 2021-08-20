@@ -4,22 +4,22 @@ ms.assetid: bde7cef8-f43e-4a11-8b77-fed5585d390a
 title: Implementando IMediaBuffer
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3425b3f612667a0b6577de385d59362bd8dafd0
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 5033fcf18812f2a31e175c05b0d4d8eeee18484d0cc20e640ae30f9390a68f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105810218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154114"
 ---
 # <a name="implementing-imediabuffer"></a>Implementando IMediaBuffer
 
-No modelo de streaming DMO padrão, os buffers são gerenciados por meio da interface [**IMediaBuffer**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediabuffer) . O cliente do DMO é responsável pela implementação de um objeto que expõe essa interface. A interface **IMediaBuffer** tem três métodos:
+No modelo de DMO streaming padrão, os buffers são gerenciados por meio da interface [**IMediaBuffer.**](/previous-versions/windows/desktop/api/Mediaobj/nn-mediaobj-imediabuffer) O cliente do DMO é responsável por implementar um objeto que expõe essa interface. A interface **IMediaBuffer** tem três métodos:
 
 -   **GetBufferAndLength** retorna o endereço do buffer (ou seja, o bloco real de memória que contém os dados) e o tamanho de quaisquer dados válidos no buffer.
 -   **GetMaxLength** retorna o tamanho do buffer.
 -   **SetLength** especifica o comprimento dos dados válidos no buffer.
 
-O processamento in-loco não requer a interface **IMediaBuffer** . O código a seguir mostra uma implementação mínima de **IMediaBuffer**:
+O processamento in-place não requer a interface **IMediaBuffer.** O código a seguir mostra uma implementação mínima **de IMediaBuffer:**
 
 
 ```C++

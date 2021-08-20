@@ -1,9 +1,9 @@
 ---
-title: Fábrica incorreta D1108
+title: Fábrica errada D1108
 ms.assetid: eb851118-0541-4c9a-a22d-b98f041852bb
 description: O recurso foi alocado pela fábrica 1 e usado com a fábrica 2.
 keywords:
-- D1108 de fábrica incorreta Direct2D
+- D1108 Erro de fábrica Direct2D
 topic_type:
 - apiref
 api_name:
@@ -13,22 +13,22 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 ms.custom: seodec18
-ms.openlocfilehash: 17c58c72a56af8c480a176259d9fbcb9df586942
-ms.sourcegitcommit: 80ee822f6ebcbcc8f60042e0d14a39ef6989c731
+ms.openlocfilehash: c9eeadfb38acd39e5861c5661e2f4117ef2a8ce415e3e21374f197763d4b315e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105748682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160987"
 ---
-# <a name="d1108-wrong-factory"></a>D1108: fábrica incorreta
+# <a name="d1108-wrong-factory"></a>D1108: Fábrica errada
 
-O recurso \[ *de recurso* \] foi alocado pela \[ *fábrica 1* de fábrica \] e usado com a fábrica de fábrica \[ *2* \] .
+O recurso \[ *de recurso* \] foi alocado pela fábrica \[ *1* \] e usado com a fábrica \[ *2.* \]
 
 ## <a name="placeholders"></a>Espaços reservados
 
 <dl> <dt>
 
-<span id="resource"></span><span id="RESOURCE"></span>*Kit*
+<span id="resource"></span><span id="RESOURCE"></span>*Recurso*
 </dt> <dd>
 
 O endereço da interface.
@@ -38,14 +38,14 @@ O endereço da interface.
 <span id="factory_1"></span><span id="FACTORY_1"></span>*fábrica 1*
 </dt> <dd>
 
-O endereço da fábrica que alocou o *recurso*.
+O endereço da fábrica que alocou *o recurso*.
 
 </dd> <dt>
 
 <span id="factory_2"></span><span id="FACTORY_2"></span>*fábrica 2*
 </dt> <dd>
 
-O endereço da fábrica com o qual o *recurso* foi usado.
+O endereço da fábrica com a qual *o recurso* foi usado.
 
 </dd> </dl> 
 
@@ -56,7 +56,7 @@ O endereço da fábrica com o qual o *recurso* foi usado.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir cria primeiro dois objetos [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) habilitados para depuração; em seguida, ele cria uma geometria da primeira fábrica e um pincel da segunda fábrica. Por fim, ele chama [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry), passando a geometria e o pincel.
+O exemplo a seguir primeiro cria dois objetos [**ID2D1Factory**](/windows/win32/api/d2d1/nn-d2d1-id2d1factory) habilitados para depuração; em seguida, ele cria uma geometria da primeira fábrica e um pincel da segunda fábrica. Por fim, ele chama [**FillGeometry**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-fillgeometry), passando a geometria e o pincel.
 
 
 ```C++
@@ -178,7 +178,7 @@ by factory [002ED698] and used with factory [002ED470].
 
 ## <a name="possible-causes"></a>Possíveis causas
 
-Uso de recurso inválido. Um recurso alocado por uma fábrica foi usado com outra fábrica.
+Uso inválido de recursos. Um recurso alocado por uma fábrica foi usado com outra fábrica.
 
  
 

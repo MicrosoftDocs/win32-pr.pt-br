@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: classe de tabela'
-title: Classe de tabela
+description: 'Saiba mais sobre: Classe table'
+title: Classe Table
 TOCTitle: Table class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Table
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.table(v=EXCHG.10)
@@ -24,27 +24,27 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1ea12d7bd59d946c7375150862cd8fa0c87ba6e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 84f7290ca7681d9ed25a2a76e80fd77685312dd6845eebdd3002c29e9f28859b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118070851"
 ---
-# <a name="table-class"></a>Classe de tabela
+# <a name="table-class"></a>Classe Table
 
 Uma classe que encapsula um JET_TABLEID em um objeto descartável. Isso abre uma tabela existente. Para criar uma tabela, use o método JetCreateTable.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. ESENT. Interop. EsentResource](./esentresource-class.md)  
-    Microsoft. ISAM. ESENT. Interop. Table  
+  [Microsoft.Isam.Esent.Interop.EsentResource](./esentresource-class.md)  
+    Microsoft.Isam.Esent.Interop.Table  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -68,4 +68,4 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 [Membros da tabela](./table-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

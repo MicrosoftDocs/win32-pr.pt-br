@@ -1,11 +1,11 @@
 ---
-title: Evento Player. MouseMove
-description: O evento MouseMove ocorre quando o ponteiro do mouse é movido. | Evento Player. MouseMove
+title: Evento Player.MouseMove
+description: O evento MouseMove ocorre quando o ponteiro do mouse é movido. | Evento Player.MouseMove
 ms.assetid: 026928a3-25a6-4e67-837a-df71c05e49ee
 keywords:
-- Windows Media Player de evento MouseMove
-- Windows Media Player de evento MouseMove, classe de jogador
-- classe Player Windows Media Player, evento MouseMove
+- Evento MouseMove Windows Media Player
+- Evento MouseMove Windows Media Player , classe Player
+- Classe player Windows Media Player evento , MouseMove
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118338092"
 ---
-# <a name="playermousemove-event"></a>Evento Player. MouseMove
+# <a name="playermousemove-event"></a>Evento Player.MouseMove
 
-O evento **MouseMove** ocorre quando o ponteiro do mouse é movido.
+O **evento MouseMove** ocorre quando o ponteiro do mouse é movido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,31 +45,31 @@ Player.MouseMove(
 
 <dl> <dt>
 
-*Nnovo* 
+*nButton* 
 </dt> <dd>
 
-**Número** (**int**) que especifica um campo de bits que corresponde ao botão esquerdo (bit 0), ao botão direito (bit 1) e ao botão do meio (bit 2). Esses bits correspondem aos valores 1, 2 e 4, respectivamente. Alguns, todos ou nenhum dos bits podem ser definidos, indicando que alguns, todos ou nenhum dos botões são pressionados.
+**Número** (**int**) especificando um campo de bits com bits correspondentes ao botão esquerdo (bit 0), botão direito (bit 1) e botão central (bit 2). Esses bits correspondem aos valores 1, 2 e 4, respectivamente. Alguns, todos ou nenhum dos bits podem ser definidos, indicando que alguns, todos ou nenhum dos botões são pressionados.
 
 </dd> <dt>
 
 *nShiftState* 
 </dt> <dd>
 
-**Número** (**int**) especificando um campo de bits com os menos significativos que correspondem à tecla Shift (bit 0), a tecla Ctrl (bit 1) e a tecla Alt (bit 2). Esses bits correspondem aos valores 1, 2 e 4, respectivamente. O argumento Shift indica o estado dessas chaves. Alguns, todos ou nenhum dos bits podem ser definidos, indicando que algumas, todas ou nenhuma das chaves são pressionadas.
+**Número** (**int**) especificando um campo de bits com os bits menos significativos correspondentes à tecla SHIFT (bit 0), à tecla CTRL (bit 1) e à tecla ALT (bit 2). Esses bits correspondem aos valores 1, 2 e 4, respectivamente. O argumento shift indica o estado dessas chaves. Alguns, todos ou nenhum dos bits podem ser definidos, indicando que algumas, todas ou nenhuma das chaves são pressionadas.
 
 </dd> <dt>
 
-*Efeito* 
+*Fx* 
 </dt> <dd>
 
-**Número** (**longo**) que especifica a coordenada x do ponteiro do mouse em relação ao canto superior esquerdo do controle.
+**Number** (**long**) especificando a coordenada x do ponteiro do mouse em relação ao canto superior esquerdo do controle.
 
 </dd> <dt>
 
-*SAR* 
+*Fy* 
 </dt> <dd>
 
-**Número** (**longo**) que especifica a coordenada y do ponteiro do mouse em relação ao canto superior esquerdo do controle.
+**Number** (**long**) especificando a coordenada y do ponteiro do mouse em relação ao canto superior esquerdo do controle.
 
 </dd> </dl>
 
@@ -79,7 +79,7 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-o valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo de JScript importado usando o nome de parâmetro fornecido. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
+O valor dos parâmetros de evento é especificado por Windows Media Player e pode ser acessado ou passado para um método em um arquivo JScript importado usando o nome do parâmetro especificado. Esse nome de parâmetro deve ser digitado exatamente como mostrado, incluindo a capitalização.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse evento.
 
@@ -89,7 +89,7 @@ o valor dos parâmetros de evento é especificado por Windows Media Player e pod
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/>                                 |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -98,7 +98,7 @@ o valor dos parâmetros de evento é especificado por Windows Media Player e pod
 
 <dl> <dt>
 
-[**Objeto de jogador**](player-object.md)
+[**Objeto Player**](player-object.md)
 </dt> </dl>
 
  

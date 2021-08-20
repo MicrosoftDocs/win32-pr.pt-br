@@ -1,27 +1,27 @@
 ---
 title: Lendo o descritor de segurança de um objeto
-description: O exemplo de código a seguir usa as interfaces IADs para enumerar as propriedades do descritor de segurança de um objeto de diretório, DACL e as ACEs da DACL.
+description: O exemplo de código a seguir usa as interfaces IADs para enumerar as propriedades do descritor de segurança, DACL e ACEs de um objeto de diretório da DACL.
 ms.assetid: a8d0a6aa-9fbd-4392-b28b-f2eadef3935c
 ms.tgt_platform: multiple
 keywords:
-- Lendo o anúncio de descritor de segurança de um objeto
-- Active Directory, código de exemplo Visual Basic, lendo o descritor de segurança de um objeto
+- Lendo o AD do Descritor de Segurança de um objeto
+- Active Directory, exemplo de código Visual Basic , lendo o descritor de segurança de um objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 68a232b559109ed45fad8060882768968156e4a7
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 9288f7e3bed71dc5bbeefdd3cf1a48cebd86efd293b74b46dbaf7a44e7389f6f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103823634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118184819"
 ---
 # <a name="reading-an-objects-security-descriptor"></a>Lendo o descritor de segurança de um objeto
 
-O exemplo de código a seguir usa as interfaces [**IADs**](/windows/desktop/api/iads/nn-iads-iads) para enumerar as propriedades do descritor de segurança de um objeto de diretório, DACL e as ACEs da DACL.
+O exemplo de código a seguir usa as [**interfaces IADs**](/windows/desktop/api/iads/nn-iads-iads) para enumerar as propriedades do descritor de segurança, DACL e ACEs de um objeto de diretório da DACL.
 
-O exemplo de código a seguir usa o método [**IADs. Get**](/windows/desktop/api/iads/nf-iads-iads-get) para recuperar a propriedade **nTSecurityDescriptor** do objeto de diretório. A versão C++ desse método retorna uma **variante** que contém um ponteiro [**IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch) . O exemplo de código, em seguida, chama **QueryInterface** nesse ponteiro de **IDispatch** para obter uma interface [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) para o descritor de segurança do objeto.
+O exemplo de código a seguir usa o [**método IADs.Get**](/windows/desktop/api/iads/nf-iads-iads-get) para recuperar a propriedade **nTSecurityDescriptor** do objeto de diretório. A versão C++ desse método retorna **uma VARIANT** que contém um [**ponteiro IDispatch.**](/windows/win32/api/oaidl/nn-oaidl-idispatch) O exemplo de código chama **QueryInterface** nesse ponteiro **IDispatch** para obter uma interface [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) para o descritor de segurança do objeto.
 
-Em seguida, o exemplo de código usa métodos [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) para recuperar dados do descritor de segurança. Lembre-se de que os dados, disponíveis por meio de **IADsSecurityDescriptor**, dependem dos direitos de acesso do chamador. As propriedades [**IADsSecurityDescriptor. DiscretionaryAcl**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) e **IADsSecurityDescriptor. Owner** falharão se o chamador não tiver acesso **de \_ controle de leitura** ao objeto. Da mesma forma, uma chamada para o método **Get \_ SystemAcl** falhará se o chamador não tiver o privilégio **\_ \_ nome de segurança se** estiver habilitado.
+Em seguida, o exemplo de código usa métodos [**IADsSecurityDescriptor**](/windows/desktop/api/iads/nn-iads-iadssecuritydescriptor) para recuperar dados do descritor de segurança. Esteja ciente de que os dados, disponíveis por **meio de IADsSecurityDescriptor**, dependem dos direitos de acesso do chamador. As [**propriedades IADsSecurityDescriptor.DiscretionaryAcl**](/windows/desktop/ADSI/iadssecuritydescriptor-property-methods) e **IADsSecurityDescriptor.Owner** falharão se o chamador não tiver **acesso READ \_ CONTROL** ao objeto. Da mesma forma, uma chamada para o método **\_ get SystemAcl** falhará se o chamador não tiver o privilégio **ES SECURITY \_ \_ NAME** habilitado.
 
 
 ```VB
@@ -454,6 +454,6 @@ return iReturn;
 
 
 
- 
+ 
 
- 
+ 
