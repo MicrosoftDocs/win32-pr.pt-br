@@ -1,19 +1,19 @@
 ---
-description: Força o processador de vídeo avançado (EVR) a chamar em lote para o método IDirect3D9Device::P reenviado.
+description: Força o EVR (Renderador de Vídeo Aprimorado) a chamadas em lote para o método IDirect3D9Device::P resent.
 ms.assetid: d7523000-baa0-4011-97e1-d1ffe7263d01
-title: Atributo EVRConfig_ForceBatching (UUIDs. h)
+title: EVRConfig_ForceBatching atributo (Uuids.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c6dff5d7a5e90377c8749519033b6a66ef7663a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b94c0cbaa486dfcf7c8fe5fda0dc3a1a232d3e6c3d7b9e79952c63281bb24958
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118063856"
 ---
-# <a name="evrconfig_forcebatching-attribute"></a>\_Atributo EVRConfig ForceBatching
+# <a name="evrconfig_forcebatching-attribute"></a>Atributo EVRConfig \_ ForceBatching
 
-Força o processador de vídeo avançado (EVR) a chamar em lote para o método [**IDirect3D9Device::P reenviado**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present) .
+Força o EVR (Renderador de Vídeo Aprimorado) a chamadas em lote para o [**método IDirect3D9Device::P resent.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-present)
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,17 +21,17 @@ Força o processador de vídeo avançado (EVR) a chamar em lote para o método [
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obter esse atributo, chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para definir esse atributo, chame [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo pode ser definido no coletor de mídia do EVR. Para definir o atributo, use **QueryInterface** para consultar o coletor de mídia do EVR para a interface [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
+Esse atributo pode ser definido no sink de mídia EVR. Para definir o atributo, use **QueryInterface** para consultar o sink de mídia EVR para a interface [**IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
-Definir esse atributo tem o mesmo efeito que definir o sinalizador **MFVideoRenderPrefs \_ FORCEBATCHING** no EVR. Consulte [**MFVideoRenderPrefs**](/windows/desktop/api/evr/ne-evr-mfvideorenderprefs) para obter uma descrição desse sinalizador.
+Definir esse atributo tem o mesmo efeito que definir o **sinalizador MFVideoRenderPrefs \_ ForceBatching** no EVR. Consulte [**MFVideoRenderPrefs**](/windows/desktop/api/evr/ne-evr-mfvideorenderprefs) para ver uma descrição desse sinalizador.
 
-A constante de GUID para esse atributo é exportada de strmiids. lib.
+A constante GUID para esse atributo é exportada de strmiids.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ A constante de GUID para esse atributo é exportada de strmiids. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>UUIDs. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Uuids.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ A constante de GUID para esse atributo é exportada de strmiids. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos EVR](enhanced-video-renderer-attributes.md)

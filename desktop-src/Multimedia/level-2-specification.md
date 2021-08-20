@@ -9,20 +9,20 @@ keywords:
 - Nível de MPC 2, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a5456c9ac8b1245c89f0a4831964f73dd3694ed9
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1641349849a03d130b599f78592d4907e8627169a78406cab858ae19918b04fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139702"
 ---
 # <a name="level-2-specification"></a>Especificação de nível 2
 
 A especificação de nível 2 foi desenvolvida para incentivar a adoção de recursos de multimídia aprimorados. Essa especificação baseia-se nos requisitos definidos na especificação de nível 1 e é um superconjunto dele. A especificação de nível 2 define a funcionalidade mínima do sistema para recursos de multimídia aprimorados. Não é uma recomendação para uma configuração do sistema.
 
- 
+ 
 
- 
+ 
 
 
 

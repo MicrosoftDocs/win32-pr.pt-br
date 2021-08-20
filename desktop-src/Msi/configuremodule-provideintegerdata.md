@@ -1,7 +1,7 @@
 ---
-description: O método ProvideIntegerData do objeto ConfigureModule é chamado por Mergemod.dll para recuperar dados inteiros da ferramenta de cliente.
+description: O método ProvideIntegerData do objeto ConfigureModule é chamado pelo Mergemod.dll para recuperar dados inteiros da ferramenta cliente.
 ms.assetid: 13d48301-bd63-432c-b663-85a840886dda
-title: Método ConfigureModule. ProvideIntegerData (Mergemod. h)
+title: Método ConfigureModule.ProvideIntegerData (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,22 +14,22 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 482e1010dea850506b159b129eb4dcef77829fca
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 96472a13902322d940dc7e756c3639f9befaf6764b3ede8521f27a885a50e8d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143685"
 ---
-# <a name="configuremoduleprovideintegerdata-method"></a>Método ConfigureModule. ProvideIntegerData
+# <a name="configuremoduleprovideintegerdata-method"></a>Método ConfigureModule.ProvideIntegerData
 
-O método **ProvideIntegerData** do [**objeto ConfigureModule**](configuremodule-object.md) é chamado por Mergemod.dll para recuperar dados inteiros da ferramenta de cliente.
+O **método ProvideIntegerData** do [**objeto ConfigureModule**](configuremodule-object.md) é chamado por Mergemod.dll para recuperar dados inteiros da ferramenta cliente.
 
-Mergemod.dll fornece o *nome* da entrada correspondente na [Tabela ModuleConfiguration](moduleconfiguration-table.md).
+Mergemod.dll fornece o *Nome* da entrada correspondente na [tabela ModuleConfiguration](moduleconfiguration-table.md).
 
-A ferramenta deve retornar S \_ OK e fornecer o inteiro de personalização apropriado em *ConfigData*.
+A ferramenta deve retornar S OK e fornecer o inteiro de \_ personalização apropriado em *ConfigData.*
 
-Se a ferramenta não fornecer dados de configuração para esse valor de *nome* , a função deverá retornar S \_ false. Nesse caso Mergemod.dll ignora o valor do argumento *ConfigData* e usa o valor padrão da Tabela ModuleConfiguration.
+Se a ferramenta não fornecer dados de configuração para esse *valor name,* a função deverá retornar S \_ FALSE. Nesse caso, Mergemod.dll ignora o valor do argumento *ConfigData* e usa o valor Padrão da tabela ModuleConfiguration.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -57,21 +57,21 @@ Nome do item para o qual os dados estão sendo recuperados.
 *ConfigData* 
 </dt> <dd>
 
-Ponteiro para texto de personalização.
+Ponteiro para o texto de personalização.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O cliente pode ser chamado não mais de uma vez para cada registro na [Tabela ModuleConfiguration](moduleconfiguration-table.md). Observe que Mergemod.dll nunca faz várias chamadas para o cliente para o mesmo valor de "nome". Se nenhum registro na tabela ModuleSubstitution usar a propriedade, uma entrada na Tabela ModuleConfiguration não fará chamadas para o cliente.
+O cliente pode ser chamado não mais de uma vez para cada registro na [tabela ModuleConfiguration](moduleconfiguration-table.md). Observe que Mergemod.dll faz várias chamadas ao cliente para o mesmo valor de "Nome". Se nenhum registro na tabela ModuleSubstitution usar a propriedade , uma entrada na tabela ModuleConfiguration não causará nenhuma chamada ao cliente.
 
 ### <a name="c"></a>C++
 
-Consulte a [**função ProvideIntegerData**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfiguremodule-provideintegerdata).
+Consulte [**a função ProvideIntegerData**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfiguremodule-provideintegerdata).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Consulte a [**função ProvideIntegerData**](/windows/desktop/api/Mergemod/nf-me
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versão<br/> | Mergemod.dll 2,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versão<br/> | Mergemod.dll 2.0 ou posterior<br/>                                                    |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

@@ -1,23 +1,23 @@
 ---
-description: As versões de idioma localizadas da tabela de erros e da tabela ActionText são fornecidas pelo SDK do Windows Installer. As versões do idioma francês dessas tabelas, Error. FRA e ActionTe. FRA, estão localizadas na pasta intl do SDK do Windows Installer.
+description: as versões de idioma localizadas da tabela de erros e da tabela ActionText são fornecidas pelo SDK do Windows Installer. as versões do idioma francês dessas tabelas, Error. fra e ActionTe. FRA, estão localizadas na pasta Intl do SDK do Windows Installer.
 ms.assetid: 8de687c8-c7da-497e-8a90-2404096ad100
 title: Importando tabelas de erro e ActionText localizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 15d48a68ca1053a1a1c66899a17802ac337c3ba2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bda0916f634d986874cd17f9871fa602277b180e1ba436e9d9786fb061f3ac4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142230"
 ---
 # <a name="importing-localized-error-and-actiontext-tables"></a>Importando tabelas de erro e ActionText localizadas
 
-As versões de idioma localizadas da tabela de [erros](error-table.md) e da [tabela ActionText](actiontext-table.md) são fornecidas pelo SDK do Windows Installer. As versões do idioma francês dessas tabelas, Error. FRA e ActionTe. FRA, estão localizadas na pasta intl do SDK do Windows Installer.
+as versões de idioma localizadas da tabela de [erros](error-table.md) e da [tabela ActionText](actiontext-table.md) são fornecidas pelo SDK do Windows Installer. as versões do idioma francês dessas tabelas, Error. fra e ActionTe. FRA, estão localizadas na pasta Intl do SDK do Windows Installer.
 
 Você pode usar o editor de tabela Orca ou o utilitário Msidb.exe fornecido com o SDK para importar as versões em francês dessas tabelas para o banco de dados.
 
-Um exemplo de como usar [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta) e o [**método de importação**](database-import.md) do objeto de banco de [**dados**](database-object.md) é fornecido no SDK do Windows Installer como o WiImport.vbs do utilitário. O trecho a seguir, Imp.vbs, também ilustra o uso do método de importação e é para uso com o Windows Script Host.
+um exemplo de como usar [**MsiDatabaseImport**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseimporta) e o [**método de importação**](database-import.md) do objeto de banco de [**dados**](database-object.md) é fornecido no SDK do Windows Installer como o WiImport.vbs do utilitário. o trecho a seguir, Imp.vbs, também ilustra o uso do método de importação e é para uso com Windows Host de Script.
 
 
 ```VB

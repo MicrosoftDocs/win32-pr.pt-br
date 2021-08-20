@@ -3,7 +3,7 @@ title: WMDRM_OUTPUT_PROTECTION_LEVELS estrutura (Wmdrmsdk.h)
 description: A estrutura NÍVEIS DE PROTEÇÃO DE SAÍDA WMDRM contém os níveis de proteções de saída \_ \_ \_ (OPLs) exigidos por uma licença para executar várias ações.
 ms.assetid: 6b284180-1033-4c57-b010-6d4ab4bc593a
 keywords:
-- WMDRM_OUTPUT_PROTECTION_LEVELS formato de mídia do Windows da estrutura
+- WMDRM_OUTPUT_PROTECTION_LEVELS formato de mídia windows da estrutura
 - formato de mídia de janelas de estrutura
 topic_type:
 - apiref

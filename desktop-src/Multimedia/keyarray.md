@@ -6,12 +6,12 @@ keywords:
 - MIDIPATCHSIZE DE KEYARRAY
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6e45e46417fb3b6653ecae605aa60f775c1d654
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 507c5f578b912a7b184f9f455bc4a730132b2316472d061532c48847c312302d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105770162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140036"
 ---
 # <a name="keyarray"></a>Keyarray
 
@@ -42,7 +42,7 @@ Cada elemento na matriz corresponde a um patch de percussão baseado em chave co
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
 | Versão<br/>                  | MIDI (interface digital de instrumento musical), tipos de MIDI<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
 
 
 

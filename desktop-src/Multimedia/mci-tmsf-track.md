@@ -3,7 +3,7 @@ title: Macro MCI_TMSF_TRACK (Mciapi. h)
 description: A \_ macro do controle MCI TMSF \_ recupera o componente trilhas de um parâmetro que contém informações de roteiros/minutos/segundos/quadros (TMSF) compactados.
 ms.assetid: 3455442c-5c66-47c7-b06b-1a2de0e2dfed
 keywords:
-- Multimídia MCI_TMSF_TRACK macro do Windows
+- macro de MCI_TMSF_TRACK Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3fa8512169d0e5b3d6892dd1bf615a220143e6d4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7090a2a9b652d7c989aadd70d8843ece04bf467bbbe353c22c3f76fee8a9712b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137947"
 ---
 # <a name="mci_tmsf_track-macro"></a>\_Macro de \_ controle MCI TMSF
 
@@ -47,7 +47,7 @@ Hora no formato TMSF.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o componente de trilhas das informações de TMSF especificadas.
 

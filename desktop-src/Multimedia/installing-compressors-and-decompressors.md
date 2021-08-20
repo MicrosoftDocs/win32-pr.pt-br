@@ -1,23 +1,23 @@
 ---
-title: Instalando os compactadores e os descompactadores
-description: Instalando os compactadores e os descompactadores
+title: Instalando os descompactores e os descompactores
+description: Instalando os descompactores e os descompactores
 ms.assetid: 8bcca000-c4c7-47e7-a4c0-5d0d1750176f
 keywords:
-- VCM (Gerenciador de compactação de vídeo), instalando os compactadores
-- VCM (Gerenciador de compactação de vídeo), instalando os compactadores
+- VCM (gerenciador de compactação de vídeo), instalando os vcms
+- VCM (gerenciador de compactação de vídeo), instalando os vcs
 - Função ICInstall
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c8c3421b3d7f59e7f6b16150fcd0d641deaef17
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a27a9bacc946a17bf4d70260cb077a7e3f17fe85760837cc7086144297f1f86c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140532"
 ---
-# <a name="installing-compressors-and-decompressors"></a>Instalando os compactadores e os descompactadores
+# <a name="installing-compressors-and-decompressors"></a>Instalando os descompactores e os descompactores
 
-O exemplo a seguir mostra como um aplicativo pode instalar uma função como um compactador ou descompactador usando a função [**ICInstall**](/windows/desktop/api/Vfw/nf-vfw-icinstall) .
+O exemplo a seguir mostra como um aplicativo pode instalar uma função como um descompactador ou um descompactador usando a [**função ICInstall.**](/windows/desktop/api/Vfw/nf-vfw-icinstall)
 
 
 ```C++
@@ -35,9 +35,9 @@ result = ICInstall ( ICTYPE_VIDEO, mmioFOURCC('s','a','m','p'),
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: O Windows Installer reduz o TCO (custo total de propriedade) de seus aplicativos, aumentando a capacidade de seus clientes de gerenciar e manter componentes de aplicativos durante a instalação e o tempo de execução.
+description: o Windows Installer reduz o TCO (custo total de propriedade) de seus aplicativos, aumentando a capacidade de seus clientes de gerenciar e manter componentes de aplicativos durante a instalação e o tempo de execução.
 ms.assetid: fbb139e3-c81b-44fc-9e92-bada0be02862
 title: Gerenciamento de componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aeff6c25556879429330170ec8190b1296576517
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a818e6ceab0ed793ded2bdd0034d9fe8355d16fbbea1d5c78d521f4682b7c373
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780521"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118144806"
 ---
 # <a name="component-management"></a>Gerenciamento de componentes
 
-O Windows Installer reduz o TCO (custo total de propriedade) de seus aplicativos, aumentando a capacidade de seus clientes de gerenciar e manter componentes de aplicativos durante a instalação e o tempo de execução. O banco de dados de instalação rastreia quais aplicativos exigem um componente específico, quais arquivos compõem cada componente, onde cada arquivo é instalado no sistema e onde as origens do componente estão localizadas. Isso permite que os desenvolvedores criem pacotes que fornecem os seguintes benefícios:
+o Windows Installer reduz o TCO (custo total de propriedade) de seus aplicativos, aumentando a capacidade de seus clientes de gerenciar e manter componentes de aplicativos durante a instalação e o tempo de execução. O banco de dados de instalação rastreia quais aplicativos exigem um componente específico, quais arquivos compõem cada componente, onde cada arquivo é instalado no sistema e onde as origens do componente estão localizadas. Isso permite que os desenvolvedores criem pacotes que fornecem os seguintes benefícios:
 
 -   Maior resiliência dos aplicativos. Use o instalador para detectar e reinstalar componentes danificados sem precisar executar a instalação novamente. O instalador verifica o caminho de um componente em tempo de execução. Isso libera aplicativos da dependência de caminhos de arquivo estáticos que normalmente são diferentes entre computadores e podem apontar para componentes ausentes. Para obter mais informações, consulte [resiliência](resiliency.md).
 -   Instalação sob demanda. Esse conjunto de recursos não é instalado durante a instalação, mas é especificado no banco de dados a ser instalado just-in-time para uso, se exigido pelo aplicativo no futuro. Os usuários não precisam executar a instalação novamente. Para obter mais informações, consulte [instalação sob demanda](installation-on-demand.md).
