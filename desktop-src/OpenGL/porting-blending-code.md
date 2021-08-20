@@ -10,12 +10,12 @@ keywords:
 - combinação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7956c675848f454b660126a7a17869295a827438
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 13548a2f08821e4f80bf63230077f9a39540ba9b8a37763e7935d211ef0dcdc0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105753120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119485906"
 ---
 # <a name="porting-blending-code"></a>Portando o código de mesclagem
 
@@ -32,7 +32,7 @@ A tabela a seguir lista as funções de mesclagem íris GL e suas funções Open
 
 
 
- 
+ 
 
 A função OpenGL **glBlendFunc** e a função **BLENDFUNCTION** do íris GL são quase idênticas. A tabela a seguir lista os fatores de combinação do íris GL e seus equivalentes em OpenGL.
 
@@ -54,13 +54,13 @@ A função OpenGL **glBlendFunc** e a função **BLENDFUNCTION** do íris GL sã
 
 
 
- 
+ 
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

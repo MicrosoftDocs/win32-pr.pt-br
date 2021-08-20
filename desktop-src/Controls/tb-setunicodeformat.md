@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_SETUNICODEFORMAT (commctrl. h)
-description: TB_SETUNICODEFORMAT mensagem – define o sinalizador de formato de caractere Unicode para o controle. Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de execução em vez de ter que recriar o controle.
+title: TB_SETUNICODEFORMAT mensagem (Commctrl.h)
+description: TB_SETUNICODEFORMAT mensagem - define o sinalizador de formato de caractere Unicode para o controle . Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de executar, em vez de precisar criar o controle.
 ms.assetid: d4eec78d-c25b-4b86-9449-64f091cd8501
 keywords:
-- controles de Windows de mensagem de TB_SETUNICODEFORMAT
+- TB_SETUNICODEFORMAT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118167429"
 ---
-# <a name="tb_setunicodeformat-message"></a>TB de \_ mensagem SETUNICODEFORMAT
+# <a name="tb_setunicodeformat-message"></a>Mensagem TB \_ SETUNICODEFORMAT
 
-Define o sinalizador de formato de caractere Unicode para o controle. Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de execução em vez de ter que recriar o controle.
+Define o sinalizador de formato de caractere Unicode para o controle . Essa mensagem permite que você altere o conjunto de caracteres usado pelo controle em tempo de executar, em vez de precisar criar o controle.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Define o sinalizador de formato de caractere Unicode para o controle. Essa mensa
 *wParam* 
 </dt> <dd>
 
-Determina o conjunto de caracteres que é usado pelo controle. Se esse valor for diferente de zero, o controle usará caracteres Unicode. Se esse valor for zero, o controle usará caracteres ANSI.
+Determina o conjunto de caracteres usado pelo controle . Se esse valor for diferentes de zero, o controle usará caracteres Unicode. Se esse valor for zero, o controle usará caracteres ANSI.
 
 </dd> <dt>
 
@@ -41,11 +41,11 @@ Determina o conjunto de caracteres que é usado pelo controle. Se esse valor for
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna o sinalizador de formato Unicode anterior para o controle.
+Retorna o sinalizador de formato Unicode anterior para o controle .
 
 ## <a name="remarks"></a>Comentários
 
-Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat.md) para uma discussão sobre esta mensagem.
+Consulte os comentários de [**CCM \_ SETUNICODEFORMAT para**](ccm-setunicodeformat.md) uma discussão sobre essa mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -63,7 +63,7 @@ Consulte os comentários para [**CCM \_ SETUNICODEFORMAT**](ccm-setunicodeformat
 
 <dl> <dt>
 
-[**TB de \_ GETUNICODEFORMAT**](tb-getunicodeformat.md)
+[**TB \_ GETUNICODEFORMAT**](tb-getunicodeformat.md)
 </dt> </dl>
 
  

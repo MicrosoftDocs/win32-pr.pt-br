@@ -1,20 +1,20 @@
 ---
 title: Servidores proxy e WinRM
-description: Gerenciamento Remoto do Windows (WinRM) usa HTTP e HTTPS para enviar mensagens entre os computadores cliente e servidor. Em geral, o cliente WinRM envia mensagens diretamente ao servidor WinRM. Os clientes WinRM também podem ser configurados para usar um servidor proxy.
+description: Windows O gerenciamento remoto (WinRM) usa HTTP e HTTPS para enviar mensagens entre os computadores cliente e servidor. Em geral, o cliente WinRM envia mensagens diretamente ao servidor WinRM. Os clientes WinRM também podem ser configurados para usar um servidor proxy.
 ms.assetid: f8137b3a-7704-4b21-a923-6e2692e18d90
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e07bbfebb4c8f0eb9e77a8942d54677b55c60006
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 663493f9c3e71e44be000f436ad4573f911652a8e142b77ffab41acbff250b60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118112934"
 ---
 # <a name="proxy-servers-and-winrm"></a>Servidores proxy e WinRM
 
-Gerenciamento Remoto do Windows (WinRM) usa HTTP e HTTPS para enviar mensagens entre os computadores cliente e servidor. Em geral, o cliente WinRM envia mensagens diretamente ao servidor WinRM. Os clientes WinRM também podem ser configurados para usar um servidor proxy.
+Windows O gerenciamento remoto (WinRM) usa HTTP e HTTPS para enviar mensagens entre os computadores cliente e servidor. Em geral, o cliente WinRM envia mensagens diretamente ao servidor WinRM. Os clientes WinRM também podem ser configurados para usar um servidor proxy.
 
 Para obter mais informações, consulte as seções a seguir:
 
@@ -36,7 +36,7 @@ Se o servidor proxy exigir autenticação, os clientes e servidores WinRM dever�
 > [!Note]  
 > A autenticação para o servidor proxy é independente da autenticação para o servidor de destino.
 
- 
+ 
 
 ### <a name="http-based-proxy-connections"></a>HTTP-Based conexões de proxy
 
@@ -74,10 +74,10 @@ O uso da criptografia atenua esses possíveis problemas de segurança.
 
 ## <a name="configuring-a-proxy-server-for-winrm-11-and-earlier"></a>Configurando um servidor proxy para o WinRM 1,1 e anterior
 
-Se um proxy for necessário para acessar o servidor WinRM, o cliente WinRM dependerá da configuração de proxy do WinHTTP (serviços HTTP do Windows). Por padrão, o WinHTTP não está configurado para usar um servidor proxy. A configuração de proxy WinHTTP pode ser alterada usando os utilitários de linha de comando [ProxyCfg.exe](/previous-versions/windows/desktop/ms761351(v=vs.85)) ou [netsh](/previous-versions/windows/it-pro/windows-server-2003/cc785383(v=ws.10)) .
+se um proxy for necessário para acessar o servidor winrm, o cliente winrm dependerá da configuração de proxy do Windows WinHTTP (serviços HTTP). Por padrão, o WinHTTP não está configurado para usar um servidor proxy. A configuração de proxy WinHTTP pode ser alterada usando os utilitários de linha de comando [ProxyCfg.exe](/previous-versions/windows/desktop/ms761351(v=vs.85)) ou [netsh](/previous-versions/windows/it-pro/windows-server-2003/cc785383(v=ws.10)) .
 
 **WinRM 1,1 e anterior:** O WinRM não usa as configurações de proxy do Internet Explorer.
 
- 
+ 
 
- 
+ 

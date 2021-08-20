@@ -1,12 +1,12 @@
 ---
 title: Método IMsTscAxEvents OnRemoteProgramResult
-description: Chamado quando um programa do RemoteApp retorna um resultado para o controle de cliente.
+description: Chamado quando um programa RemoteApp retorna um resultado para o controle de cliente.
 ms.assetid: 5bc9570f-14fb-4b6f-a7dd-c1bce3ef19e0
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método OnRemoteProgramResult
-- Método OnRemoteProgramResult Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método OnRemoteProgramResult
+- Método OnRemoteProgramResult Serviços de Área de Trabalho Remota
+- O método OnRemoteProgramResult Serviços de Área de Trabalho Remota , interface IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota método , OnRemoteProgramResult
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 880e4fb3f6453114415f5bcc07a0afb9c176a1bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 807fbd49cc6222925f34a7e7c007fef54cbc9a3db2566f024ebc0188e9c95113
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085767"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129658"
 ---
-# <a name="imstscaxeventsonremoteprogramresult-method"></a>Método IMsTscAxEvents:: OnRemoteProgramResult
+# <a name="imstscaxeventsonremoteprogramresult-method"></a>Método IMsTscAxEvents::OnRemoteProgramResult
 
-Chamado quando um programa do RemoteApp retorna um resultado para o controle de cliente.
+Chamado quando um programa RemoteApp retorna um resultado para o controle de cliente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,14 +45,14 @@ VOID OnRemoteProgramResult(
 
 <dl> <dt>
 
-*bstrRemoteProgram* \[ no\]
+*bstrRemoteProgram* \[ Em\]
 </dt> <dd>
 
 O nome do programa RemoteApp.
 
 </dd> <dt>
 
-*lError* \[ no\]
+*lError* \[ Em\]
 </dt> <dd>
 
 O resultado da tentativa de iniciar o programa RemoteApp.
@@ -66,7 +66,7 @@ O resultado da tentativa de iniciar o programa RemoteApp.
 
 </dt> <dd>
 
-O programa do RemoteApp foi iniciado com êxito.
+O programa RemoteApp foi lançado com êxito.
 
 </dd> <dt>
 
@@ -77,7 +77,7 @@ O programa do RemoteApp foi iniciado com êxito.
 
 </dt> <dd>
 
-A sessão remota está bloqueada e o programa RemoteApp não pode ser iniciado. O usuário deve inserir suas credenciais para desbloquear a sessão e, em seguida, iniciar o programa RemoteApp.
+A sessão remota está bloqueada e o programa RemoteApp não pode ser lançado. O usuário deve inserir suas credenciais para desbloquear a sessão e, em seguida, iniciar o programa RemoteApp.
 
 </dd> <dt>
 
@@ -99,7 +99,7 @@ O programa RemoteApp retornou um erro de protocolo.
 
 </dt> <dd>
 
-O programa RemoteApp não está na lista aprovada do servidor de Host da Sessão RD.
+O programa RemoteApp não está na lista aprovada do Host da Sessão RD servidor.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ O caminho de rede para o programa RemoteApp foi negado.
 
 </dt> <dd>
 
-O arquivo de programa do RemoteApp não foi encontrado.
+O arquivo do programa RemoteApp não foi encontrado.
 
 </dd> <dt>
 
@@ -143,24 +143,24 @@ Falha ao iniciar o programa RemoteApp.
 
 </dt> <dd>
 
-O programa RemoteApp não pode ser iniciado porque a sessão está exibindo a área de trabalho segura no momento.
+O programa RemoteApp não pode ser lançado porque a sessão está exibindo a área de trabalho segura no momento.
 
 </dd> </dl> </dd> <dt>
 
-*vbIsExecutable* \[ no\]
+*vbIsExecutable* \[ Em\]
 </dt> <dd>
 
-Indica se o programa RemoteApp foi iniciado diretamente, usando o nome do executável ou indiretamente, usando uma associação de arquivo.
+Indica se o programa RemoteApp foi lançado diretamente, usando o nome executável ou indiretamente, usando uma associação de arquivo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Implemente esse método em seu coletor de eventos para receber uma notificação de que um programa do RemoteApp retornou um resultado.
+Implemente esse método no seu sink de eventos para receber uma notificação de que um programa RemoteApp retornou um resultado.
 
 Esse método é chamado imediatamente depois que o controle ActiveX tenta iniciar o programa RemoteApp e o parâmetro *lError* indica o resultado da tentativa.
 
@@ -182,7 +182,7 @@ Esse método é chamado imediatamente depois que o controle ActiveX tenta inicia
 
 <dl> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> </dl>
 
  

@@ -1,19 +1,19 @@
 ---
-description: O log de segurança foi projetado para ser usado pelo sistema. No entanto, os usuários podem ler e limpar o log de segurança se tiverem recebido \_ o \_ privilégio nome de segurança se (o \# direito de usuário &0034; gerenciar a auditoria e o log de segurança&\# 0034; right). Para obter mais informações, consulte privilégios.
+description: O log de segurança foi projetado para ser usado pelo sistema. no entanto, os usuários podem ler e limpar o log de segurança se tiverem recebido o \_ privilégio de nome de segurança ES \_ (o \# direito de usuário &0034; gerenciar auditoria e log de segurança&\# 0034;. Para obter mais informações, consulte privilégios.
 ms.assetid: 861be39a-012e-473b-a2d3-2a8c7ba3adaa
 title: Segurança do log de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fb4e2dce7318efeb6f26917bca1d6812eb32a343
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b52f6c801b061290ebb4d6f47fe78efebc09e1b2d23dc4a598dc9f97c1b3a46d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151546"
 ---
 # <a name="event-logging-security"></a>Segurança do log de eventos
 
-O log de **segurança** foi projetado para ser usado pelo sistema. No entanto, os usuários podem ler e limpar o log de **segurança** se tiverem recebido o \_ privilégio nome de segurança se \_ (o direito de usuário "gerenciar auditoria e log de segurança"). Para obter mais informações, consulte [privilégios](/windows/desktop/SecAuthZ/privileges).
+O log de **segurança** foi projetado para ser usado pelo sistema. no entanto, os usuários podem ler e limpar o log de **segurança** se tiverem recebido o privilégio de ES \_ nome de segurança \_ (o direito de usuário "gerenciar auditoria e log de segurança"). Para obter mais informações, consulte [privilégios](/windows/desktop/SecAuthZ/privileges).
 
 Somente a autoridade de segurança local (Lsass.exe) tem permissão de gravação para o log de **segurança** . Nenhuma outra conta pode solicitar esse privilégio. Para gravar um evento no log de **segurança** , use a função [**AuthzReportSecurityEvent**](/windows/desktop/api/authz/nf-authz-authzreportsecurityevent) .
 
@@ -35,7 +35,7 @@ Use o valor do registro **imposto alfandegário** para configurar a segurança d
 
 **Windows XP/2000:** A tabela a seguir descreve os direitos de acesso concedidos para cada conta em cada log.
 
-| Registro             | Conta                 | Ler | Gravar | Limpar |
+| Log             | Conta                 | Ler | Gravar | Limpar |
 |-----------------|-------------------------|------|-------|-------|
 | **Aplicativo** | Administradores (sistema) | X    | X     | X     |
 |                 | Administradores (domínio) | X    | X     | X     |

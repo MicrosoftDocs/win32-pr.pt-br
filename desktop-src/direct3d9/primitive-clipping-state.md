@@ -1,27 +1,27 @@
 ---
-description: Os primitivos que ficam parcialmente dentro (ou completamente fora) da exibição frustum podem ser recortados para que apenas a parte visível do primitivo seja renderizada.
+description: Primitivos que ficam parcialmente dentro (ou completamente fora) da exibição podem ser recortados para que apenas a parte visível do primitivo seja renderizada.
 ms.assetid: 096683a4-2d8f-49d3-b1a0-832150907f11
 title: Estado de recorte primitivo (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e5a305118d8db5c71e0e3cfa97132052777be68
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 864d1083d7a94283ccf097de21dfbd8c7d1320d9876ceb3d7c33b6714bd169d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104370333"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118092771"
 ---
 # <a name="primitive-clipping-state-direct3d-9"></a>Estado de recorte primitivo (Direct3D 9)
 
-Os primitivos que ficam parcialmente dentro (ou completamente fora) da [exibição frustum](viewports-and-clipping.md) podem ser recortados para que apenas a parte visível do primitivo seja renderizada. O recorte reduz a quantidade de trabalho feita apenas para os primitivos ou partes de um primitivo que ficará visível.
+Primitivos que ficam parcialmente dentro (ou completamente fora) da exibição [podem](viewports-and-clipping.md) ser recortados para que apenas a parte visível do primitivo seja renderizada. O recorte reduz a quantidade de trabalho que é feita apenas para os primitivos ou partes de um primitivo que estarão visíveis.
 
-Para usar o pipeline para recorte, defina o \_ estado de renderização de recorte D3DRS como **true** (o valor padrão) para habilitar o recorte ou **false** para desabilitar o recorte de Direct3D.
+Para usar o pipeline para recorte, de definido o estado de renderização D3DRS CLIPPING como TRUE (o valor padrão) para habilitar o recorte ou como FALSE para desabilitar o \_ recorte direct3D.  
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Processar Estados](render-states.md)
+[Renderizar estados](render-states.md)
 </dt> </dl>
 
  

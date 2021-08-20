@@ -1,6 +1,6 @@
 ---
-title: Referência da Ajuda da Ferramenta
-description: As funções e estruturas a seguir estão associadas à biblioteca de ajuda da ferramenta.
+title: Referência da ajuda da ferramenta
+description: As seguintes funções e estruturas estão associadas à biblioteca de ajuda da ferramenta.
 ms.assetid: 850c1688-40e2-4762-9951-324f062b53ad
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,12 +11,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118348313"
 ---
-# <a name="tool-help-reference"></a>Referência da Ajuda da Ferramenta
+# <a name="tool-help-reference"></a>Referência da ajuda da ferramenta
 
-As funções e estruturas a seguir estão associadas à biblioteca de ajuda da ferramenta.
+As seguintes funções e estruturas estão associadas à biblioteca de ajuda da ferramenta.
 
--   [Funções de Ajuda da Ferramenta](tool-help-functions.md)
--   [Estruturas de Ajuda da Ferramenta](tool-help-structures.md)
+-   [Funções de ajuda da ferramenta](tool-help-functions.md)
+-   [Estruturas de ajuda da ferramenta](tool-help-structures.md)
 
  
 

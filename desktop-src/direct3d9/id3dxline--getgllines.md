@@ -1,7 +1,7 @@
 ---
 description: Obtém o modo de desenho de linha no estilo OpenGL.
 ms.assetid: 80b33c05-d081-45f3-83d8-71a3555cc8ef
-title: 'Método ID3DXLine:: GetGLLines (D3dx9core. h)'
+title: Método ID3DXLine::GetGLLines (D3dx9core.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119675236"
 ---
-# <a name="id3dxlinegetgllines-method"></a>Método ID3DXLine:: GetGLLines
+# <a name="id3dxlinegetgllines-method"></a>Método ID3DXLine::GetGLLines
 
 Obtém o modo de desenho de linha no estilo OpenGL.
 
@@ -40,9 +40,9 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **bool**](../winprog/windows-data-types.md)**
+Tipo: **[ **BOOL**](../winprog/windows-data-types.md)**
 
-Retornará **true** se as linhas do estilo OpenGL estiverem habilitadas e **false** se as linhas de estilo do Direct3D estiverem habilitadas.
+Retornará **TRUE** se as linhas no estilo OpenGL estão habilitadas e **FALSE** se as linhas no estilo Direct3D estão habilitadas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retornará **true** se as linhas do estilo OpenGL estiverem habilitadas e **fals
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9core. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9core.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

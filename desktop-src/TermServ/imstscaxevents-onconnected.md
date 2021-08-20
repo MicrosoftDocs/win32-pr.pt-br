@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d83a6a14f58a0704f0a3110532ad8cf8c0d7dc8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a9dfa60dee2c470e54c1900bc94aef5cdcb38835aa5e112f9ab5da0a9cce449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118853836"
 ---
 # <a name="imstscaxeventsonconnected-method"></a>Método IMsTscAxEvents:: onconnected
 
@@ -41,7 +41,7 @@ void OnConnected();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

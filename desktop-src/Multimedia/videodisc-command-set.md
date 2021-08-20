@@ -1,50 +1,50 @@
 ---
-title: Conjunto de comandos VIDEODISC
-description: Conjunto de comandos VIDEODISC
+title: Conjunto de comandos do Videodisc
+description: Conjunto de comandos do Videodisc
 ms.assetid: 44e3b052-5fb1-4cad-939e-41954800ab5d
 keywords:
-- conjunto de comandos VIDEODISC
+- conjunto de comandos do videodisc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: facea09cd84f55b2cf8acb2abf042e3232289573
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a5ca5212d1fe121f2d5f8f3bb57772780b4b694f7c3069ff48fb19cbdd21f6ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135564"
 ---
-# <a name="videodisc-command-set"></a>Conjunto de comandos VIDEODISC
+# <a name="videodisc-command-set"></a>Conjunto de comandos do Videodisc
 
-Os dispositivos VIDEODISC dão suporte ao seguinte conjunto de comandos.
+Os dispositivos Videodisc são compatíveis com o seguinte conjunto de comandos.
 
 
 
 | Formulário de cadeia de caracteres                      | Formulário de mensagem                              |
 |----------------------------------|-------------------------------------------|
-| [**interrupção**](break.md)           | [**interrupção de MCI \_**](mci-break.md)           |
-| [**recursos**](capability.md) | [**\_GETDEVCAPS MCI**](mci-getdevcaps.md) |
-| [**inclui**](close.md)           | [**fechamento de MCI \_**](mci-close.md)           |
-| [fuga](escape.md)             | [**\_escape MCI**](mci-escape.md)         |
-| [**detalhes**](info.md)             | [**informações do MCI \_**](mci-info.md)             |
-| [**abrir**](open.md)             | [**MCI \_ aberto**](mci-open.md)             |
-| [**temporariamente**](pause.md)           | [**pausa de MCI \_**](mci-pause.md)           |
-| [**reproduzir**](play.md)             | [**\_reprodução MCI**](mci-play.md)             |
-| [**Volte**](resume.md)         | [**retomar MCI \_**](mci-resume.md)         |
-| [**Procure**](seek.md)             | [**busca de MCI \_**](mci-seek.md)             |
-| [**Definição**](set.md)               | [**conjunto de MCI \_**](mci-set.md)               |
-| [**ativa**](spin.md)             | [**rotação do MCI \_**](mci-spin.md)             |
-| [**Estado**](status.md)         | [**STATUS do MCI \_**](mci-status.md)         |
-| [**etapa**](step.md)             | [**\_etapa MCI**](mci-step.md)             |
-| [**deixar**](stop.md)             | [**parada do MCI \_**](mci-stop.md)             |
-| [SysInfo](sysinfo.md)           | [**SysInfo do MCI \_**](mci-sysinfo.md)       |
+| [**Quebrar**](break.md)           | [**MCI \_ BREAK**](mci-break.md)           |
+| [**Capacidade**](capability.md) | [**MCI \_ GETDEVCAPS**](mci-getdevcaps.md) |
+| [**Perto**](close.md)           | [**MCI \_ CLOSE**](mci-close.md)           |
+| [Escapar](escape.md)             | [**ESCAPE \_ da MCI**](mci-escape.md)         |
+| [**informações**](info.md)             | [**INFORMAÇÕES \_ DA MCI**](mci-info.md)             |
+| [**Aberto**](open.md)             | [**MCI \_ OPEN**](mci-open.md)             |
+| [**Pausa**](pause.md)           | [**PAUSA DA \_ MCI**](mci-pause.md)           |
+| [**Jogar**](play.md)             | [**MCI \_ PLAY**](mci-play.md)             |
+| [**Currículo**](resume.md)         | [**MCI \_ RESUME**](mci-resume.md)         |
+| [**Procurar**](seek.md)             | [**MCI \_ SEEK**](mci-seek.md)             |
+| [**Definir**](set.md)               | [**MCI \_ SET**](mci-set.md)               |
+| [**Spin**](spin.md)             | [**ROTAÇÃO da MCI \_**](mci-spin.md)             |
+| [**Status**](status.md)         | [**STATUS DA MCI \_**](mci-status.md)         |
+| [**Passo**](step.md)             | [**ETAPA da \_ MCI**](mci-step.md)             |
+| [**Parar**](stop.md)             | [**MCI \_ STOP**](mci-stop.md)             |
+| [Sysinfo](sysinfo.md)           | [**MCI \_ SYSINFO**](mci-sysinfo.md)       |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Tipo simples de HexInt8Type
+title: Tipo simples HexInt8Type
 description: Define um tipo hexadecimal de 1 byte.
 ms.assetid: 390acf84-7b5c-45e7-83bd-9f3115099568
 keywords:
-- Log de eventos de tipo simples HexInt8Type
+- Tipo simples HexInt8Type EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: e68e56340ee535531fb6711dcf01a72d92665cbe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9d2d70b7258317f16ac4e134f011a85218fa1b63aa768136f68b1d21c901856e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455975"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118121002"
 ---
-# <a name="hexint8type-simple-type"></a>Tipo simples de HexInt8Type
+# <a name="hexint8type-simple-type"></a>Tipo simples HexInt8Type
 
 Define um tipo hexadecimal de 1 byte.
 
@@ -38,11 +38,11 @@ Define um tipo hexadecimal de 1 byte.
 
 ## <a name="patterns"></a>Padrões
 
-O tipo simples **HexInt8Type** é uma [cadeia de caracteres](/dotnet/api/system.string) que é restrita pelo seguinte padrão:
+O **tipo simples HexInt8Type** é [uma](/dotnet/api/system.string) cadeia de caracteres restrita pelo seguinte padrão:
 
 -   `0[xX][0-9A-Fa-f]{1,2}`
 
-    O valor pode conter de um a dois caracteres hexadecimais (por exemplo, 0xA ou 0xAC).
+    O valor pode conter de um a dois caracteres hexadecimais (por exemplo, 0xa ou 0xac).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ O tipo simples **HexInt8Type** é uma [cadeia de caracteres](/dotnet/api/system.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

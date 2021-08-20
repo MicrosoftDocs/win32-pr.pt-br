@@ -4,8 +4,8 @@ description: Política de auditoria para a política local.
 ms.assetid: bbe96a2a-5ad0-4160-894c-ff04b829b00a
 ms.tgt_platform: multiple
 keywords:
-- Auditing-Policy atributo AD Schema
-- auditingPolicy attribute AD Schema
+- Esquema de Auditing-Policy do atributo AD
+- Esquema de AD do atributo auditingPolicy
 topic_type:
 - apiref
 api_name:
@@ -30,13 +30,13 @@ Política de auditoria para a política local.
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Auditing-Policy                                       |
-| Ldap-Display-Name | auditingPolicy                                        |
+| LDAP-Display-Name | auditingPolicy                                        |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.202                                |
-| System-Id-Guid    | 6da8a4fe-0e52-11d0-a286-00aa003049e2                  |
-| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-ID-GUID    | 6da8a4fe-0e52-11d0-a286-00aa003049e2                  |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -58,15 +58,15 @@ Política de auditoria para a política local.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Verdadeiro                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Política de auditoria para a política local.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Verdadeiro                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Política de auditoria para a política local.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| Tem valor único       | Verdadeiro                                         |
+| É de valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No Catálogo Global      | Falso                                        |
-| Descritor de segurança NT | O:BAG:BAD:S:                                 |
+| No catálogo global      | Falso                                        |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Política de auditoria para a política local.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Verdadeiro                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Política de auditoria para a política local.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Verdadeiro                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Política de auditoria para a política local.
 | ID do link                | \-                                           |
 | MAPI-Id                | \-                                           |
 | System-Only            | Falso                                        |
-| É de valor único       | Verdadeiro                                         |
+| Tem valor único       | Verdadeiro                                         |
 | É indexado             | Falso                                        |
-| No catálogo global      | Falso                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                 |
+| No Catálogo Global      | Falso                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                 |
 | Range-Lower            | \-                                           |
 | Range-Upper            | \-                                           |
 | Search-Flags           | 0x00000000                                   |
 | System-Flags           | 0x00000010                                   |
-| Classes usadas em        | [**Sam-domínio**](c-samdomain.md)<br/> |
+| Classes usadas em        | [**Domínio Sam**](c-samdomain.md)<br/> |
 
 
 

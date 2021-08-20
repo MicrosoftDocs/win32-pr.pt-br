@@ -1,9 +1,9 @@
 ---
-title: 'Função RWTexture2DArray:: Load (int, uint)'
-description: 'Lê os dados de textura e retorna o status sobre a operação. | Função RWTexture2DArray:: Load (int, uint)'
+title: Função RWTexture2DArray::Load(int,uint)
+description: Lê dados de textura e retorna o status sobre a operação. | Função RWTexture2DArray::Load(int,uint)
 ms.assetid: 97D6E36A-1613-43BA-92C1-3034E0F344F0
 keywords:
-- Carregar função HLSL
+- Função de carregamento HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 969aa0a4efa62f7072c759a1f2188e4d210d8649
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
-ms.translationtype: HT
+ms.openlocfilehash: e68659bc8d8cbca9880774de7fc4f3463742ee4cfa6d76aac432fad8e348b680
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671996"
 ---
-# <a name="rwtexture2darrayloadintuint-function"></a>Função RWTexture2DArray:: Load (int, uint)
+# <a name="rwtexture2darrayloadintuint-function"></a>Função RWTexture2DArray::Load(int,uint)
 
-Lê os dados de textura e retorna o status sobre a operação.
+Lê dados de textura e retorna o status sobre a operação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ Lê os dados de textura e retorna o status sobre a operação.
 
 <dl> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
 Tipo: **int**
@@ -49,20 +49,20 @@ O local da textura.
 
 </dd> <dt>
 
-*Status* \[ do fora\]
+*Status* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O status da operação. Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features). Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.
+O status da operação. Você não pode acessar o status diretamente; Em vez disso, passe o status para a [**função intrínseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** retornará **TRUE** se todos os valores  da operação de **Exemplo,** **Coletar** ou Carregar correspondente acessarem blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Se algum valor tiver sido retirado de um tile não mapeado, **CheckAccessFullyMapped** retornará **FALSE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo:
 
-O tipo de retorno corresponde ao tipo na declaração para o objeto [**RWTexture2DArray**](sm5-object-rwtexture2darray.md) .
+O tipo de retorno corresponde ao tipo na declaração para o [**objeto RWTexture2DArray.**](sm5-object-rwtexture2darray.md)
 
 ## <a name="remarks"></a>Comentários
 
@@ -70,7 +70,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0ef483901a366fffb38ae8cae37cc987d6a228a1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2302fc27a76e6bfffb08fe75086b588ea361b192df2c94eba647006cbdd045ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759564"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954235"
 ---
 # <a name="coareftimeoperator-reference_time-method"></a>Método de tempo de referência de COARefTime. Operator \_
 
@@ -40,7 +40,7 @@ REFERENCE_TIME operator REFERENCE_TIME();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o tempo de referência em unidades de 100 a nanossegundos.
 
@@ -50,7 +50,7 @@ Retorna o tempo de referência em unidades de 100 a nanossegundos.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
+| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

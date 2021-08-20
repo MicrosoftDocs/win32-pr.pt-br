@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentBadRestoreTargetInstanceException'
+description: 'Saiba mais sobre: Métodos EsentBadRestoreTargetInstanceException'
 title: 'Métodos EsentBadRestoreTargetInstanceException '
 TOCTitle: EsentBadRestoreTargetInstanceException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentBadRestoreTargetInstanceException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101163
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 3d68f1e6ab5bd6fa04a7ad47097c550a438b5e98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f500fcba468fd528a5b56d5adfde9c364403abd93705fac8582e560cc151e0b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118082714"
 ---
 # <a name="esentbadrestoretargetinstanceexception-methods"></a>Métodos EsentBadRestoreTargetInstanceException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentBadRestoreTargetInstanceException](./esentbadrestoretargetinstanceexception-class.md) expõe os membros a seguir.
+O [tipo EsentBadRestoreTargetInstanceException](./esentbadrestoretargetinstanceexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentBadRestoreTargetInstanceException](./esentbadrestoretargetinstancee
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentBadRestoreTargetInstanceException](./esentbadrestoretargetinstancee
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -84,4 +84,4 @@ Parte superior
 
 [Classe EsentBadRestoreTargetInstanceException](./esentbadrestoretargetinstanceexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

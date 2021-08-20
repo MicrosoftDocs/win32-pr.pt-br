@@ -1,9 +1,9 @@
 ---
-title: Saturação (referência de HLSL)
-description: Coloca o valor especificado dentro do intervalo de 0 a 1.
+title: saturate (referência HLSL)
+description: Fixa o valor especificado dentro do intervalo de 0 a 1.
 ms.assetid: efe4dedd-732a-4643-8a57-61814434f6ff
 keywords:
-- saturar HLSL
+- HLSL saturado
 topic_type:
 - apiref
 api_name:
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 609443bdc1d0cff6a4c81c8eb26d86a30ea1e721
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2927ec88a1bda09ca741f0f59da0bb2a4af11694ae46e367c170bdb9ef5353b1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294077"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119673496"
 ---
-# <a name="saturate-hlsl-reference"></a>Saturação (referência de HLSL)
+# <a name="saturate-hlsl-reference"></a>saturate (referência HLSL)
 
-Coloca o valor especificado dentro do intervalo de 0 a 1.
+Fixa o valor especificado dentro do intervalo de 0 a 1.
 
 
 
-| saturação de *RET* (*x*) |
+| *saturação de ret(* *x*) |
 |---------------------|
 
 
@@ -39,7 +39,7 @@ Coloca o valor especificado dentro do intervalo de 0 a 1.
 
 | Item                                                   | Descrição                            |
 |--------------------------------------------------------|----------------------------------------|
-| <span id="x"></span><span id="X"></span>*w.x.y.*<br/> | \[no \] valor especificado.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[em \] O valor especificado.<br/> |
 
 
 
@@ -47,30 +47,30 @@ Coloca o valor especificado dentro do intervalo de 0 a 1.
 
 ## <a name="return-value"></a>Valor Retornado
 
-O parâmetro *x* , clamped dentro do intervalo de 0 a 1.
+O *parâmetro x,* fixado dentro do intervalo de 0 a 1.
 
 ## <a name="type-description"></a>Descrição do tipo
 
 
 
-| Name  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
+| Nome  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *RET* | igual ao *x* de entrada                                                                                              | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões como entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vetor** ou **matriz** | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *Ret* | mesmo que a entrada *x*                                                                                              | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões que a entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                       | Com suporte |
 |------------------------------------------------------------------------------------|-----------|
-| [Modelo do sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md) e modelos de sombreador superior | sim       |
 
 
 

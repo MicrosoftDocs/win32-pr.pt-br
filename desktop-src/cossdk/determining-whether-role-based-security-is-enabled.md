@@ -4,18 +4,18 @@ ms.assetid: b5e6ab7e-5a77-4c6f-9bec-02942bba389d
 title: Determinando se a segurança do Role-Based está habilitada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 90ccf6f95b9c8776a45c071f6d4ea3326eda035c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 895c2f3c5e77d0f3629644b7d7638c1b818900773469d7f2a5ac110bde76692e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089572"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118102232"
 ---
 # <a name="determining-whether-role-based-security-is-enabled"></a>Determinando se a segurança do Role-Based está habilitada
 
 Usando o método [**ISecurityCallContext:: IsSecurityEnabled**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-issecurityenabled) disponível no objeto de contexto de chamada de segurança, você pode determinar se a segurança está habilitada para o objeto atual. Você deve chamar **IsSecurityEnabled** antes de usar ISecurityCallContext::[**IsCallerInRole**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-iscallerinrole) para verificar a associação de função porque **IsCallerInRole** retornará true se a segurança não estiver habilitada.
 
-Os desenvolvedores do Microsoft Visual Basic chamam [**GetSecurityCallContext**](/windows/desktop/api/ComSvcs/nf-comsvcs-igetsecuritycallcontext-getsecuritycallcontext) para obter uma referência a um objeto [**SecurityCallContext**](securitycallcontext.md) e, em seguida, chamar [**IsSecurityEnabled**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-issecurityenabled), conforme mostrado no exemplo a seguir:
+os desenvolvedores do Microsoft Visual Basic chamam [**GetSecurityCallContext**](/windows/desktop/api/ComSvcs/nf-comsvcs-igetsecuritycallcontext-getsecuritycallcontext) para obter uma referência a um objeto [**SecurityCallContext**](securitycallcontext.md) e, em seguida, chamar [**IsSecurityEnabled**](/windows/desktop/api/ComSvcs/nf-comsvcs-isecuritycallcontext-issecurityenabled), conforme mostrado no exemplo a seguir:
 
 
 ```VB

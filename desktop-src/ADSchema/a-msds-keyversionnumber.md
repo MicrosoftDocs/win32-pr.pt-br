@@ -120,15 +120,15 @@ O número de versão do Kerberos da chave atual para esta conta. Este é um atri
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Verdadeiro                                                         |
-| É de valor único       | Verdadeiro                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000014                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ O número de versão do Kerberos da chave atual para esta conta. Este é um atri
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Verdadeiro                                                         |
-| É de valor único       | Verdadeiro                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000014                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 

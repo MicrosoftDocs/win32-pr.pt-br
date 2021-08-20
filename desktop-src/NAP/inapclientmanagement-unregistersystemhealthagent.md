@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bbff7af1c279090d12883d2a4e06ee9bcc364438
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ad43df1c7edeb2525ff5c8901278d082c4ba299ea78d56c67a4380f8a7bab019
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105789753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134504"
 ---
 # <a name="inapclientmanagementunregistersystemhealthagent-method"></a>Método INapClientManagement:: UnregisterSystemHealthAgent
 
@@ -54,7 +54,7 @@ Um [**SystemHealthEntityId**](nap-datatypes.md) que identifica o cancelamento do
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um código de status HRESULT, incluindo, mas não se limitando a um dos itens a seguir.
 
@@ -77,9 +77,9 @@ O método retorna um código de status HRESULT, incluindo, mas não se limitando
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                         |
-| parâmetro<br/>                   | <dl> <dt>NapManagement. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                         |
+| Cabeçalho<br/>                   | <dl> <dt>NapManagement. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapManagement. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>        |
 

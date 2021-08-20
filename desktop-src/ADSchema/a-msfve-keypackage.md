@@ -36,7 +36,7 @@ Contém a chave de criptografia BitLocker de um volume protegida pela senha de r
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1999                               |
 | System-Id-Guid    | 1fd55ea8-88a7-47dc-8129-0daa97186a54                  |
-| Sintaxe            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -55,7 +55,7 @@ Contém a chave de criptografia BitLocker de um volume protegida pela senha de r
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| Tem valor único       | True                                                                         |
+| Tem valor único       | Verdadeiro                                                                         |
 | É indexado             | Falso                                                                        |
 | No Catálogo Global      | Falso                                                                        |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
@@ -76,7 +76,7 @@ Contém a chave de criptografia BitLocker de um volume protegida pela senha de r
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| Tem valor único       | True                                                                         |
+| Tem valor único       | Verdadeiro                                                                         |
 | É indexado             | Falso                                                                        |
 | No Catálogo Global      | Falso                                                                        |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                                 |
@@ -97,7 +97,7 @@ Contém a chave de criptografia BitLocker de um volume protegida pela senha de r
 | ID do link                | \-                                                                           |
 | MAPI-Id                | \-                                                                           |
 | System-Only            | Falso                                                                        |
-| Tem valor único       | True                                                                         |
+| Tem valor único       | Verdadeiro                                                                         |
 | É indexado             | Falso                                                                        |
 | No Catálogo Global      | Falso                                                                        |
 | Descritor de segurança NT | O:BAG:BAD:S:                                                                 |

@@ -1,22 +1,22 @@
 ---
-description: O filtro de codificador AC-3 Microsoft codifica áudio PCM estéreo para um Dolby Digital fragmentado.
+description: O filtro codificador Microsoft AC-3 codifica áudio pcm estéreo em um bitstream do Dolby Digital.
 ms.assetid: 59d46ee2-d45f-4492-938d-39c55a7368e1
-title: Codificador AC-3 da Microsoft (Wmcodecdsp. h)
+title: Microsoft AC-3 Encoder (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 160b020e07bb3ba4e4dc5636b58dd0e66f581a6f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 35984975fc5a56b043f1b2ceda56505ee6fe74038034fb35deb09b6a5f6a0f41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118153164"
 ---
-# <a name="microsoft-ac-3-encoder"></a>Codificador AC-3 da Microsoft
+# <a name="microsoft-ac-3-encoder"></a>Codificador ac-3 da Microsoft
 
-O filtro de codificador AC-3 Microsoft codifica áudio PCM estéreo para um Dolby Digital fragmentado.
+O filtro codificador Microsoft AC-3 codifica áudio pcm estéreo em um bitstream do Dolby Digital.
 
 > [!Note]  
-> A implementação da tecnologia Dolby Digital da Microsoft é restrita em termos do programa de licenciamento do Dolby Digital para uso pelos aplicativos da Microsoft.
+> A implementação da Microsoft da tecnologia Dolby Digital é restrita nos termos do programa de licenciamento do Dolby Digital a ser usado pelos aplicativos da Microsoft.
 
  
 
@@ -29,41 +29,41 @@ O filtro de codificador AC-3 Microsoft codifica áudio PCM estéreo para um Dolb
 
 Informações de filtro
 
-Filtrar interfaces
+Interfaces de filtro
 
-[**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)<br/>
+[**Ibasefilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter)<br/>
 
 Tipos de mídia de pino de entrada
 
-**MediaType \_ Áudio**, **MEDIASUBTYPE \_ PCM**<br/> O tipo de entrada deve ser estéreo de 48-kHz, 16 bits por amostra.<br/>
+**MEDIATYPE \_ ÁUDIO**, **MEDIASUBTYPE \_ PCM**<br/> O tipo de entrada deve ser estéreo de 48 kHz, 16 bits por amostra.<br/>
 
 Interfaces de pino de entrada
 
-[**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)<br/> [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
+[**Imeminputpin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin)<br/> [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**Iqualitycontrol**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
 
-Tipos de mídia do pino de saída
+Tipos de mídia de pino de saída
 
-**MediaType \_ Áudio**, **MEDIASUBTYPE \_ Dolby \_ AC3**<br/> **MediaType \_ Stream**, **MEDIASUBTYPE \_ Dolby \_ AC3**<br/>
+**MEDIATYPE \_ Áudio,** **MEDIASUBTYPE \_ DOLBY \_ AC3**<br/> **MEDIATYPE \_ Stream**, **MEDIASUBTYPE \_ DOLBY \_ AC3**<br/>
 
 Interfaces de pino de saída
 
-[**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
+[**Imediaseeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking)<br/> [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin)<br/> [**Iqualitycontrol**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)<br/>
 
-CLSID do filtro
+Filtrar CLSID
 
-**CLSID \_ do CMSAC3Enc** (declarado em wmcodecdsp. h)
+**CLSID \_ CMSAC3Enc** (declarado em wmcodecdsp.h)
 
 Executável
 
 msac3enc.dll
 
-[Núcleo](merit.md)
+[Mérito](merit.md)
 
-**MÉRITO \_ \_ não \_ use**
+**NÃO USE O NÃO \_ \_ USO \_ DE LIMITED**
 
-[Categoria do filtro](filter-categories.md)
+[Categoria de filtro](filter-categories.md)
 
-**\_LEGACYAMFILTERCATEGORY CLSID**
+**CLSID \_ LegacyAmFilterCategory**
 
 
 
@@ -79,9 +79,9 @@ Esse filtro não está disponível para uso por aplicativos de terceiros.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Ultimate \[ Desktop apps\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Vista Home Premium, Windows Vista Ultimate, Windows 7 Home Premium, Windows 7 Professional, Windows 7 Enterprise, Windows 7 Aplicativos de área de trabalho \[ ultimate\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl>                                                                                       |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl>                                                                                       |
 
 
 
@@ -89,7 +89,7 @@ Esse filtro não está disponível para uso por aplicativos de terceiros.
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

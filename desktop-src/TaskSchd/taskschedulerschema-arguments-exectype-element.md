@@ -1,5 +1,5 @@
 ---
-title: Elemento Arguments (exectype)
+title: Elemento Arguments (execType)
 description: Especifica os argumentos associados à operação de linha de comando.
 ms.assetid: 37207c4f-941c-4cbf-9a81-5876b224a7c1
 keywords:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118132071"
 ---
-# <a name="arguments-exectype-element"></a>Elemento Arguments (exectype)
+# <a name="arguments-exectype-element"></a>Elemento Arguments (execType)
 
 Especifica os argumentos associados à operação de linha de comando.
 
@@ -30,7 +30,7 @@ Especifica os argumentos associados à operação de linha de comando.
  />
 ```
 
-O elemento **arguments** é definido pelo tipo complexo [**exectype**](taskschedulerschema-exectype-complextype.md) .
+O **elemento Arguments** é definido pelo [**tipo complexo execType.**](taskschedulerschema-exectype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -38,19 +38,19 @@ O elemento **arguments** é definido pelo tipo complexo [**exectype**](tasksched
 
 | Elemento                                                      | Derivado de                                                 | Descrição                                                            |
 |--------------------------------------------------------------|--------------------------------------------------------------|------------------------------------------------------------------------|
-| [**Exec**](taskschedulerschema-exec-actiongroup-element.md) | [**exectype**](taskschedulerschema-exectype-complextype.md) | Especifica uma ação que executa uma operação de linha de comando.<br/> |
+| [**Exec**](taskschedulerschema-exec-actiongroup-element.md) | [**execType**](taskschedulerschema-exectype-complextype.md) | Especifica uma ação que executa uma operação de linha de comando.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para desenvolvimento em C++, consulte a [**Propriedade Arguments de IExecAction**](/windows/desktop/api/taskschd/nf-taskschd-iexecaction-get_arguments).
+Para desenvolvimento em C++, consulte a [**propriedade Arguments de IExecAction**](/windows/desktop/api/taskschd/nf-taskschd-iexecaction-get_arguments).
 
-Para desenvolvimento de script, consulte [**execaction. Arguments**](execaction-arguments.md).
+Para desenvolvimento de scripts, [**consulte ExecAction.Arguments.**](execaction-arguments.md)
 
 ## <a name="examples"></a>Exemplos
 
-Para obter um exemplo completo do XML para uma tarefa que usa uma ação executável, consulte [exemplo de gatilho de tempo (XML)](time-trigger-example--xml-.md).
+Para ver um exemplo completo do XML para uma tarefa que usa uma ação executável, consulte Exemplo [de gatilho de tempo (XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,8 +58,8 @@ Para obter um exemplo completo do XML para uma tarefa que usa uma ação execut�
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -67,7 +67,7 @@ Para obter um exemplo completo do XML para uma tarefa que usa uma ação execut�
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

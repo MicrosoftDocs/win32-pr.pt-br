@@ -1,13 +1,13 @@
 ---
 title: Portando listas de exibição editadas
-description: Embora não seja possível editar listas de exibição OpenGL, você pode obter resultados semelhantes aninhando listas de exibição e, em seguida, destruindo e criando novas versões das sublistas.
+description: Embora não seja possível editar listas de exibição do OpenGL, você pode obter resultados semelhantes aninhando listas de exibição e, em seguida, destrói e cria novas versões das sublistas.
 ms.assetid: b7f7ffed-c3de-43d4-bff2-f244faa3a27a
 keywords:
-- Portabilidade do íris GL, listas de exibição
-- portando do íris GL, listas de exibição
-- portando para OpenGL do íris GL, listas de exibição
-- Portabilidade OpenGL do íris GL, listas de exibição
-- Exibir listas, portando do íris GL
+- Portação IRIS GL, listas de exibição
+- portando do IRIS GL, listas de exibição
+- portando para OpenGL do IRIS GL, listas de exibição
+- Portação openGL do IRIS GL, listas de exibição
+- listas de exibição, portando do IRIS GL
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: 13f1630b0560091482d47f85e038d908dcfab202ae772c4d35dc388324b46075
@@ -19,7 +19,7 @@ ms.locfileid: "119485576"
 ---
 # <a name="porting-edited-display-lists"></a>Portando listas de exibição editadas
 
-Embora não seja possível editar listas de exibição OpenGL, você pode obter resultados semelhantes aninhando listas de exibição e, em seguida, destruindo e criando novas versões das sublistas. Por exemplo:
+Embora não seja possível editar listas de exibição do OpenGL, você pode obter resultados semelhantes aninhando listas de exibição e, em seguida, destrói e cria novas versões das sublistas. Por exemplo:
 
 ``` syntax
 glNewList (1, GL_COMPILE); 

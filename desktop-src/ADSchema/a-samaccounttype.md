@@ -117,13 +117,13 @@ Os valores possíveis para esse atributo são os seguintes:
 | System-Only            | Falso                                                        |
 | É de valor único       | Verdadeiro                                                         |
 | É indexado             | Verdadeiro                                                         |
-| No Catálogo Global      | Verdadeiro                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
+| No catálogo global      | Verdadeiro                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
 
 
 
@@ -136,15 +136,15 @@ Os valores possíveis para esse atributo são os seguintes:
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| Tem valor único       | Verdadeiro                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Verdadeiro                                                         |
-| No Catálogo Global      | Verdadeiro                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
+| No catálogo global      | Verdadeiro                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
 
 
 
@@ -157,15 +157,15 @@ Os valores possíveis para esse atributo são os seguintes:
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| Tem valor único       | Verdadeiro                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Verdadeiro                                                         |
-| No Catálogo Global      | Verdadeiro                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
+| No catálogo global      | Verdadeiro                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
 
 
 
@@ -178,15 +178,15 @@ Os valores possíveis para esse atributo são os seguintes:
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| Tem valor único       | Verdadeiro                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Verdadeiro                                                         |
-| No Catálogo Global      | Verdadeiro                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
+| No catálogo global      | Verdadeiro                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
 
 
 

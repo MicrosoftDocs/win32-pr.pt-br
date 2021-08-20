@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: dfe3d4f7b823c42866f72aa928227c6a49c610c0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4b6b5fa703481b4d2cc1ff9406f3139016216af8824dd0e23dd647094098aa99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148585"
 ---
 # <a name="requeststatechange-method-of-the-msvm_dvddrive-class"></a>Método RequestStateChange da classe Msvm \_ DVDDrive
 
@@ -165,7 +165,7 @@ Esse método retorna um dos seguintes valores:
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

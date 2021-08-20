@@ -9,12 +9,12 @@ keywords:
 - Nível de MPC 1, requisitos de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 96a10ad4e31c9d7d3b2e2f5fdc0e3e5399f5ad48
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 407b8c5a31b9f745e6443f9ae3bb062201f0a17198020e7d89b8c02825819625
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118139904"
 ---
 # <a name="level-1-audio-requirements"></a>Requisitos de áudio de nível 1
 
@@ -24,9 +24,9 @@ O subsistema de áudio de um PC que satisfaça a especificação de nível 1 inc
 -   Um ADC (conversor analógico-to-digital) de 8 bits capaz de gravar arquivos de wave-áudio na taxa de amostragem de 11, 25 kHz por meio de uma fonte externa, como um microfone
 -   Recursos internos do sintetizador com quatro ou nove capacidade de multivoz, multitimbral e duas notas de percussive simultâneas
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMTask ErrorDescription (VPCCOMInterfaces. h)
-description: Recupera a descrição de erro localizada registrada para esta tarefa.
+title: Propriedade IvMTask ErrorDescription (VPCCOMInterfaces.h)
+description: Recupera a descrição de erro localizada registrada para essa tarefa.
 ms.assetid: 85728775-14b6-4031-9ccd-4c4f8c410705
 keywords:
-- Propriedade ErrorDescription Virtual PC
-- Propriedade ErrorDescription Virtual PC, interface IVMTask
-- IVMTask interface virtual PC, Propriedade ErrorDescription
+- Propriedade ErrorDescription Pc Virtual
+- Propriedade ErrorDescription Pc Virtual , interface IVMTask
+- INTERFACE IVMTask Pc Virtual , propriedade ErrorDescription
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118123331"
 ---
-# <a name="ivmtaskerrordescription-property"></a>Propriedade IVMTask:: ErrorDescription
+# <a name="ivmtaskerrordescription-property"></a>Propriedade IVMTask::ErrorDescription
 
-\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Recupera a descrição de erro localizada registrada para esta tarefa.
+Recupera a descrição de erro localizada registrada para essa tarefa.
 
 Esta propriedade é somente para leitura.
 
@@ -54,8 +54,8 @@ A descrição do erro.
 | Nome/valor                                                                                                                                                    | Significado                                      |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>     |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O valor do parâmetro é **NULL**.<br/>  |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/> |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O valor do parâmetro é **NULL.**<br/>  |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/> |
 
 
 
@@ -65,12 +65,12 @@ A descrição do erro.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMTask é definido como ab72b222-6e9c-48ae-aa54-85e3e635767c<br/>                    |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMTask é definido como \_ ab72b222-6e9c-48ae-aa54-85e3e635767c<br/>                    |
 
 
 

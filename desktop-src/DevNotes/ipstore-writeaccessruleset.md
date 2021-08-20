@@ -1,7 +1,7 @@
 ---
-description: Grava as regras de acesso para o tipo fornecido.
+description: Grava as regras de acesso para o tipo determinado.
 ms.assetid: d5cfd782-8d87-45ae-a574-0a294a30ca71
-title: 'Método IPStore:: WriteAccessRuleset (Pstore. h)'
+title: Método IPStore::WriteAccessRuleset (Pstore.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,13 +20,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118955895"
 ---
-# <a name="ipstorewriteaccessruleset-method"></a>Método IPStore:: WriteAccessRuleset
+# <a name="ipstorewriteaccessruleset-method"></a>Método IPStore::WriteAccessRuleset
 
-\[o Armazenamento protegido (pstore) está disponível para uso no Windows Server 2003 e no Windows XP. ele só está disponível para operações somente leitura no Windows Server 2008 e Windows Vista, mas pode estar indisponível nas versões subsequentes. A Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são altamente incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata) .\]
+\[O Armazenamento (Pstore) está disponível para uso no Windows Server 2003 e Windows XP. Ele só está disponível para operações somente leitura no Windows Server 2008 e Windows Vista, mas pode não estar disponível nas versões subsequentes. O Pstore usa uma implementação mais antiga da proteção de dados. Os desenvolvedores são incentivados a aproveitar a proteção de dados mais forte fornecida pelas funções [**CryptProtectData**](/windows/win32/api/dpapi/nf-dpapi-cryptprotectdata) e [**CryptUnprotectData.**](/windows/win32/api/dpapi/nf-dpapi-cryptunprotectdata)\]
 
 \[Este método não está implementado.\]
 
-Grava as regras de acesso para o tipo fornecido.
+Grava as regras de acesso para o tipo determinado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,42 +48,42 @@ HRESULT WriteAccessRuleset(
 
 <dl> <dt>
 
-*Chave* \[ no\]
+*Chave* \[ Em\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*pType* \[ no\]
+*pType* \[ Em\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*pSubtype* \[ no\]
+*pSubtype* \[ Em\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*pInfo* \[ no\]
+*pInfo* \[ Em\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*pRules* \[ no\]
+*pRules* \[ Em\]
 </dt> <dd>
 
 Reservado.
 
 </dd> <dt>
 
-*dwFlags* \[ no\]
+*dwFlags* \[ Em\]
 </dt> <dd>
 
 Reservado.
@@ -100,7 +100,7 @@ As chamadas para esse método sempre falharão.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Pstore. h</dt> </dl>    |
+| parâmetro<br/> | <dl> <dt>Pstore.h</dt> </dl>    |
 | DLL<br/>    | <dl> <dt>Pstorec.dll</dt> </dl> |
 
 

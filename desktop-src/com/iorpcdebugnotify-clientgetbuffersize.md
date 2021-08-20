@@ -3,9 +3,9 @@ title: Método IOrpcDebugNotify ClientGetBufferSize
 description: Recupera o tamanho do buffer RPC do depurador do lado do cliente.
 ms.assetid: 05475156-1508-4eb2-82a6-bb1701839fbd
 keywords:
-- Método COM de ClientGetBufferSize
-- Método ClientGetBufferSize COM, interface IOrpcDebugNotify
-- IOrpcDebugNotify interface COM, método ClientGetBufferSize
+- Método COM ClientGetBufferSize
+- Interface COM do método ClientGetBufferSize, IOrpcDebugNotify
+- IOrpcDebugNotify interface COM , método ClientGetBufferSize
 topic_type:
 - apiref
 api_name:
@@ -16,19 +16,19 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50bd925b9c518c78ca37aa8219a00965f398c415
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 038273dfd93264d483bacb314b78e33f3e8f16cef4f120be27bd48901ef5b060
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105786961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119859466"
 ---
-# <a name="iorpcdebugnotifyclientgetbuffersize-method"></a>Método IOrpcDebugNotify:: ClientGetBufferSize
+# <a name="iorpcdebugnotifyclientgetbuffersize-method"></a>Método IOrpcDebugNotify::ClientGetBufferSize
 
 Recupera o tamanho do buffer RPC do depurador do lado do cliente.
 
 > [!Note]  
-> Uma biblioteca de importação que contém a função **ClientGetBufferSize** não está incluída no SDK (Software Development Kit) do Microsoft Windows. Um aplicativo pode usar as funções [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) e [**GetModuleHandle**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) para recuperar um ponteiro de função para [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) de oleaut.dll e fornecer essa função por meio da interface [**IOrpcDebugNotify**](iorpcdebugnotify.md) .
+> Uma biblioteca de importação que **contém a função ClientGetBufferSize** não está incluída no SDK (Software Development Kit) do Microsoft Windows. Um aplicativo pode usar as funções [**GetProcAddress**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getprocaddress) e [**GetModuleHandle**](/windows/desktop/api/libloaderapi/nf-libloaderapi-getmodulehandlea) para recuperar um ponteiro de função para [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md) do oleaut.dll e fornecer essa função por meio da interface [**IOrpcDebugNotify.**](iorpcdebugnotify.md)
 
  
 
@@ -50,11 +50,11 @@ void ClientGetBufferSize(
 *lpOrpcDebugAll* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**ORPC \_ DBG \_ All**](orpc-dbg-all.md) que contém informações específicas de notificação que o sistema RPC com passa para o depurador.
+Um ponteiro para uma estrutura [**\_ DBG \_ ALL ORPC**](orpc-dbg-all.md) que contém informações específicas de notificação que o sistema RPC COM passa para o depurador.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -67,7 +67,7 @@ Esse método não retorna um valor.
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                     |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                           |
 | Cabeçalho<br/>                   | <dl> <dt>N/A</dt> </dl> |
-| INSERI<br/>                      | <dl> <dt>N/A</dt> </dl> |
+| Idl<br/>                      | <dl> <dt>N/A</dt> </dl> |
 
 
 
@@ -75,7 +75,7 @@ Esse método não retorna um valor.
 
 <dl> <dt>
 
-[**\_argumentos de inicialização ORPC \_**](orpc-init-args.md)
+[**ORPC \_ INIT \_ ARGS**](orpc-init-args.md)
 </dt> <dt>
 
 [**DllDebugObjectRPCHook**](dlldebugobjectrpchook.md)

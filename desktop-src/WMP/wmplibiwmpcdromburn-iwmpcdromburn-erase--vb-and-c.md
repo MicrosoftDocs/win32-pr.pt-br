@@ -4,8 +4,8 @@ description: O método Erase apaga o CD atual.
 ms.assetid: ed0fbd7e-61a6-445a-bca5-ed2969d5cadc
 keywords:
 - método Erase Windows Media Player
-- método Erase Windows Media Player, interface IWMPCdromBurn
-- Interface IWMPCdromBurn Windows Media Player, método Erase
+- método erase Windows Media Player, interface IWMPCdromBurn
+- Windows Media Player de interface IWMPCdromBurn, método erase
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f4e168142a6ee77081871bb7dbefa79de8031d71
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 356b7bcdd332198c40760860e69741e76e0e993b6b47b3c5a5ff207d3d55bc42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788657"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116329"
 ---
 # <a name="iwmpcdromburnerase-method"></a>Método IWMPCdromBurn:: Erase
 
@@ -49,7 +49,7 @@ Implements IWMPCdromBurn.erase
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

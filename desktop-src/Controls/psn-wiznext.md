@@ -3,7 +3,7 @@ title: PSN_WIZNEXT código de notificação (Prsht. h)
 description: Notifica uma página que o usuário clicou no botão Avançar em um assistente. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: ff5be154-f2d1-403d-8f22-8f6cacfb66b1
 keywords:
-- PSN_WIZNEXT de código de notificação controles do Windows
+- PSN_WIZNEXT código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 145591b725548ffc4175541fd37db8f285533590
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dead2de1e21631b2b8e13cb54e3ee45d5d3bc29f2234380c31ec134c3790eae7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105749074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169626"
 ---
 # <a name="psn_wiznext-notification-code"></a>Código de notificação do PSN \_ WIZNEXT
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**PSHNOTIFY**](/windows/desktop/api/Prsht/ns-prsht-
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorne 0 para permitir que o assistente vá para a próxima página. Retorne-1 para impedir que o assistente altere as páginas. Para exibir uma página específica, retorne seu identificador de recurso de caixa de diálogo. Se a caixa de diálogo tiver sido especificada com o sinalizador [**PSP \_ DLGINDIRECT**](/windows/desktop/api/Prsht/ns-prsht-propsheetpagea_v2) , essa notificação retornará o ponteiro para o modelo da caixa de diálogo.
 
@@ -100,9 +100,9 @@ Observe que essa técnica será necessária apenas se o assistente remover as p�
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
 
 
 

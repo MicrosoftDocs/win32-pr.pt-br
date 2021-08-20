@@ -1,9 +1,9 @@
 ---
-title: 'Função RWTexture3D:: Load (int)'
-description: 'Lê dados de textura. | Função RWTexture3D:: Load (int)'
+title: Função RWTexture3D::Load(int)
+description: Lê dados de textura. | Função RWTexture3D::Load(int)
 ms.assetid: 93C4FFFF-8695-4BAF-BAE4-A2704332E6A9
 keywords:
-- Carregar função HLSL
+- Função de carregamento HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 70f001cbea05f21a96bfbf1b5bdbf43a1d7da07d
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d233559739e86a1cf5a8cbdc9af18ea6c12550c5f6118d63b5382689cd80bba2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104298269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119671886"
 ---
-# <a name="rwtexture3dloadint-function"></a>Função RWTexture3D:: Load (int)
+# <a name="rwtexture3dloadint-function"></a>Função RWTexture3D::Load(int)
 
 Lê dados de textura.
 
@@ -39,7 +39,7 @@ Lê dados de textura.
 
 <dl> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
 Tipo: **int**
@@ -48,11 +48,11 @@ O local da textura.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo:
 
-O tipo de retorno corresponde ao tipo na declaração para o objeto [**RWTexture3D**](sm5-object-rwtexture3d.md) .
+O tipo de retorno corresponde ao tipo na declaração para o [**objeto RWTexture3D.**](sm5-object-rwtexture3d.md)
 
 ## <a name="remarks"></a>Comentários
 
@@ -60,7 +60,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

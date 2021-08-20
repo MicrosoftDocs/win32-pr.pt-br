@@ -4,16 +4,16 @@ ms.assetid: 6655bbae-07d3-416b-9e45-ddcbe3433f40
 title: Objeto do portal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 01328d8dccfe7a29c0686cde9b531df63d56e63e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b7004f648b11b16c8c6279a0a74bae775fa539d8f0a93fc83d7effccea68915
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813258"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119864516"
 ---
 # <a name="portal-object"></a>Objeto do portal
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Um objeto do portal modela um portal iSCSI que está contido em um subsistema iSCSI.
 

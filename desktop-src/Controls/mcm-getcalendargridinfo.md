@@ -3,7 +3,7 @@ title: Mensagem de MCM_GETCALENDARGRIDINFO (commctrl. h)
 description: Obtém informações sobre uma grade de calendário.
 ms.assetid: 6b385362-f963-4041-bc9f-d2b7a890c9b4
 keywords:
-- Controles de MCM_GETCALENDARGRIDINFO de mensagens do Windows
+- controles de Windows de mensagem de MCM_GETCALENDARGRIDINFO
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 506f6193ab32d059bb85fa4583441bfbe027f224
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 26365b940b17617b1f00b93697fc78fa759dd2599d3398ccb8d92725159a70cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170163"
 ---
 # <a name="mcm_getcalendargridinfo-message"></a>\_Mensagem MCM GETCALENDARGRIDINFO
 
@@ -43,7 +43,7 @@ Ponteiro para uma estrutura [**MCGRIDINFO**](/windows/win32/api/commctrl/ns-comm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 **True** se for bem-sucedido; caso contrário, **false**.
 
@@ -53,9 +53,9 @@ Ponteiro para uma estrutura [**MCGRIDINFO**](/windows/win32/api/commctrl/ns-comm
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

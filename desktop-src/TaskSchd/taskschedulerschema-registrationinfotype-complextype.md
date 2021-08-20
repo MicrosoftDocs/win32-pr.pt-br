@@ -1,9 +1,9 @@
 ---
 title: Tipo complexo registrationInfoType
-description: Define os elementos filho e as informações de sequenciamento para o elemento RegistrationInfo.
+description: Define os elementos filho e informações de sequenciamento para o elemento RegistrationInfo.
 ms.assetid: 855eb0a4-6037-4868-ae09-6c9f01d91545
 keywords:
-- Agendador de Tarefas tipo complexo registrationInfoType
+- tipo complexo registrationInfoType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118131656"
 ---
 # <a name="registrationinfotype-complex-type"></a>Tipo complexo registrationInfoType
 
-Define os elementos filho e as informações de sequenciamento para o elemento [**RegistrationInfo**](taskschedulerschema-registrationinfo-tasktype-element.md) .
+Define os elementos filho e informações de sequenciamento para o [**elemento RegistrationInfo.**](taskschedulerschema-registrationinfo-tasktype-element.md)
 
 ``` syntax
 <xs:complexType name="registrationInfoType">
@@ -70,11 +70,11 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 | Elemento                                                                                           | Type     | Descrição                                                                                                        |
 |---------------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------------------------------------|
 | [**Autor**](taskschedulerschema-author-registrationinfotype-element.md)                         | string   | Especifica o autor da tarefa.<br/>                                                                       |
-| [**Date**](taskschedulerschema-date-registrationinfotype-element.md)                             | dateTime | Especifica a data e a hora em que a tarefa é registrada.<br/>                                                |
+| [**Data**](taskschedulerschema-date-registrationinfotype-element.md)                             | dateTime | Especifica a data e a hora em que a tarefa é registrada.<br/>                                                |
 | [**Descrição**](taskschedulerschema-description-registrationinfotype-element.md)               | string   | Especifica a descrição da tarefa.<br/>                                                                  |
 | [**Documentação**](taskschedulerschema-documentation-registrationinfotype-element.md)           | string   | Especifica qualquer documentação adicional para a tarefa.<br/>                                                    |
 | [**SecurityDescriptor**](taskschedulerschema-securitydescriptor-registrationinfotype-element.md) | string   | Especifica o descritor de segurança da tarefa.<br/>                                                          |
-| [**Original**](taskschedulerschema-source-registrationinfotype-element.md)                         | string   | Especifica de onde a tarefa foi originada. Por exemplo, de um componente, serviço, aplicativo ou usuário.<br/> |
+| [**Fonte**](taskschedulerschema-source-registrationinfotype-element.md)                         | string   | Especifica de onde a tarefa foi originada. Por exemplo, de um componente, serviço, aplicativo ou usuário.<br/> |
 | [**URI**](taskschedulerschema-uri-registrationinfotype-element.md)                               | anyURI   | Especifica o URI da tarefa.<br/>                                                                          |
 | [**Versão**](taskschedulerschema-version-registrationinfotype-element.md)                       | string   | Especifica o número de versão da tarefa.<br/>                                                               |
 
@@ -86,8 +86,8 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -95,7 +95,7 @@ Define os elementos filho e as informações de sequenciamento para o elemento [
 
 <dl> <dt>
 
-[Tipos complexos de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
+[Agendador de Tarefas tipos complexos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

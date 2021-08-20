@@ -19,7 +19,7 @@ ms.locfileid: "119024144"
 ---
 # <a name="wmi-provider-reference-for-active-directory-domain-services"></a>Referência do provedor WMI para Active Directory Domain Services
 
-Os tópicos a seguir fornecem informações de referência para o provedor WMI para replicação no Active Directory Domain Services:
+Os tópicos a seguir fornecem informações de referência para o provedor WMI para replicação Active Directory Domain Services:
 
 -   [Classes](wmi-provider-classes-in-active-directory-domain-services.md)
 

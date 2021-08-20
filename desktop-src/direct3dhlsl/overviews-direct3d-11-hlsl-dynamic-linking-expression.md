@@ -1,6 +1,6 @@
 ---
-title: Restrições de uso da interface
-description: O hardware de GPU atual não dá suporte a informações de slot variável no runtime do sombreador. Como consequência, as referências de interface não podem ser modificadas em uma expressão condicional, como uma instrução if ou switch.
+title: Restrições de uso de interface
+description: O hardware de GPU atual não dá suporte a informações de slot variáveis no tempo de execução do sombreador. Como consequência, as referências de interface não podem ser modificadas em uma expressão condicional, como uma instrução If ou switch.
 ms.assetid: 95a505d8-3ec4-49b7-bb2b-f29a655e4225
 ms.topic: article
 ms.date: 05/31/2018
@@ -16,13 +16,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119672556"
 ---
-# <a name="interface-usage-restrictions"></a>Restrições de uso da interface
+# <a name="interface-usage-restrictions"></a>Restrições de uso de interface
 
-O hardware de GPU atual não dá suporte a informações de slot variável no runtime do sombreador. Como consequência, as referências de interface não podem ser modificadas em uma expressão condicional, como uma instrução if ou switch.
+O hardware de GPU atual não dá suporte a informações de slot variáveis no tempo de execução do sombreador. Como consequência, as referências de interface não podem ser modificadas em uma expressão condicional, como uma instrução If ou switch.
 
-O código de sombreador a seguir ilustra quando essa restrição ocorrerá e uma possível abordagem alternativa.
+O código do sombreador a seguir ilustra quando essa restrição ocorrerá e uma possível abordagem alternativa.
 
-Considerando as seguintes declarações de interface:
+Dadas as seguintes declarações de interface:
 
 
 ```
@@ -43,7 +43,7 @@ B arrayB[6];
 
 
 
-Considerando as seguintes declarações de classe:
+Dadas as seguintes declarações de classe:
 
 
 ```
@@ -78,7 +78,7 @@ class C4 : A, B
 
 
 
-Uma referência de interface não pode ser modificada dentro da expressão condicional (uma instrução if):
+Uma referência de interface não pode ser modificada dentro da expressão condicional (uma instrução If):
 
 
 ```
@@ -110,7 +110,7 @@ float main() : wicked
 
 
 
-Considerando a mesma interface e declarações de classe, você pode usar um índice para fornecer a mesma funcionalidade e evitar o registro de loop forçado.
+Dada a mesma interface e declarações de classe, você pode usar um índice para fornecer a mesma funcionalidade e evitar o loop forçado de desroll.
 
 
 ```

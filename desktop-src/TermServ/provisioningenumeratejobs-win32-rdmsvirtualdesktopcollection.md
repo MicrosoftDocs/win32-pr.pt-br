@@ -1,12 +1,12 @@
 ---
 title: Método ProvisioningEnumerateJobs da classe Win32_RDMSVirtualDesktopCollection
-description: Enumera trabalhos de provisionamento de área de trabalho virtual para esse serviço.
+description: Enumera os trabalhos de provisionamento de área de trabalho virtual para este serviço.
 ms.assetid: 4bd2b03f-ba8c-483e-af09-270424f9b1ed
 ms.tgt_platform: multiple
 keywords:
-- Método ProvisioningEnumerateJobs Serviços de Área de Trabalho Remota
-- Método ProvisioningEnumerateJobs Serviços de Área de Trabalho Remota , Win32_RDMSVirtualDesktopCollection classe
-- Win32_RDMSVirtualDesktopCollection classe Serviços de Área de Trabalho Remota , método ProvisioningEnumerateJobs
+- Serviços de Área de Trabalho Remota do método ProvisioningEnumerateJobs
+- Método ProvisioningEnumerateJobs Serviços de Área de Trabalho Remota, classe Win32_RDMSVirtualDesktopCollection
+- Classe Win32_RDMSVirtualDesktopCollection Serviços de Área de Trabalho Remota, método ProvisioningEnumerateJobs
 topic_type:
 - apiref
 api_name:
@@ -26,7 +26,7 @@ ms.locfileid: "118350218"
 ---
 # <a name="provisioningenumeratejobs-method-of-the-win32_rdmsvirtualdesktopcollection-class"></a>Método ProvisioningEnumerateJobs da classe Win32 \_ RDMSVirtualDesktopCollection
 
-Enumera trabalhos de provisionamento de área de trabalho virtual para esse serviço.
+Enumera os trabalhos de provisionamento de área de trabalho virtual para este serviço.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ uint32 ProvisioningEnumerateJobs(
 
 <dl> <dt>
 
-*JobType* \[ Em\]
+*JobType* \[ no\]
 </dt> <dd>
 
 Um inteiro que especifica o tipo de trabalho a ser enumerado.
@@ -68,17 +68,17 @@ Trabalhos concluídos
 
 </dd> </dl> </dd> <dt>
 
-*CollectionAlias* \[ Em\]
+*CollectionAlias* \[ no\]
 </dt> <dd>
 
-O alias da coleção de área de trabalho virtual a ser enumerada. O valor padrão para esse parâmetro é FALSE, que especifica que todos os trabalhos em execução devem ser enumerados.
+O alias da coleção de áreas de trabalho virtuais a ser enumerada. O valor padrão para esse parâmetro é FALSE, que especifica que todos os trabalhos em execução devem ser enumerados.
 
 </dd> <dt>
 
-*JobGuids* \[ out\]
+*JobGuids* \[ fora\]
 </dt> <dd>
 
-Uma matriz que contém os **GUIDs de** trabalhos de provisionamento a enumerar.
+Uma matriz que contém os **GUIDs** de trabalhos de provisionamento a serem enumerados.
 
 </dd> </dl>
 
@@ -94,8 +94,8 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                   |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                              |
-| Namespace<br/>                | \\rdms CIMv2 \\ raiz<br/>                                                                |
-| MOF<br/>                      | <dl> <dt>RDManagement.mof</dt> </dl> |
+| Namespace<br/>                | \\RDMs CIMv2 \\ raiz<br/>                                                                |
+| MOF<br/>                      | <dl> <dt>RDManagement. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>RDMS.dll</dt> </dl>         |
 
 
@@ -104,7 +104,7 @@ Retorna 0 em caso de êxito; caso contrário, retorna um código de erro WMI.
 
 <dl> <dt>
 
-[**Win32 \_ RDMSVirtualDesktopCollection**](win32-rdmsvirtualdesktopcollection.md)
+[**\_RDMSVirtualDesktopCollection Win32**](win32-rdmsvirtualdesktopcollection.md)
 </dt> </dl>
 
  

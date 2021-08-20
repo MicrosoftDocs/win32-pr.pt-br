@@ -3,13 +3,13 @@ title: Compilando um catálogo completo de arquivos TSV
 description: Compilando um catálogo completo de arquivos TSV
 ms.assetid: fba80b32-dc78-4c4a-a351-e8786f9a7131
 keywords:
-- Lojas online do Windows Media Player, compilando catálogos
+- Windows Media Player lojas online, compilando catálogos
 - lojas online, compilando catálogos
 - Digite 1 lojas online, compilando catálogos
-- Armazenamentos online do Windows Media Player, arquivos TSV
+- Windows Media Player lojas online, arquivos TSV
 - lojas online, arquivos TSV
 - tipo 1 lojas online, arquivos TSV
-- Armazenamentos online do Windows Media Player, catcomp.exe
+- Windows Media Player lojas online catcomp.exe
 - lojas online, catcomp.exe
 - Digite 1 lojas online, catcomp.exe
 - catcomp.exe
@@ -18,12 +18,12 @@ keywords:
 - Arquivos TSV (valores separados por tabulação)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b68af019a5e2302f52f615d5a1dba2180e27cfe5
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: f8c5bc0648c19c3c8a6f9ddb819d77e48235bcd684d4911bc8a324a109c49daf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105770513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119863796"
 ---
 # <a name="compiling-a-full-catalog-from-tsv-files"></a>Compilando um catálogo completo de arquivos TSV
 
@@ -77,9 +77,9 @@ Cada um dos arquivos a seguir deve estar presente, mas um arquivo vazio pode ser
 [radio.csv](radio-csv.md)
 
 > [!Note]  
-> Embora os nomes de arquivo devam ter extensões. csv, os arquivos não estão no formato CSV (valores separados por vírgula). Os arquivos devem estar no formato TSV (valores separados por tabulação).
+> Embora os nomes de arquivo devam ter extensões .csv, os arquivos não estão no formato CSV (valores separados por vírgula). Os arquivos devem estar no formato TSV (valores separados por tabulação).
 
- 
+ 
 
 Se a compilação for bem-sucedida, catcomp.exe criará três arquivos de saída.
 
@@ -88,16 +88,16 @@ Se a compilação for bem-sucedida, catcomp.exe criará três arquivos de saída
 | Nome do arquivo                   | Descrição                                                                                                                                                                         |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Catalog. wmdb                | Catálogo compilado não compactado.                                                                                                                                                      |
-| Catalog. wmdb. LZ             | Catálogo em formato compactado. Seu plug-in pode fornecer o local desse arquivo ao Windows Media Player em [IWMPContentPartner:: GetCatalogURL](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getcatalogurl). |
+| Catalog. wmdb. LZ             | Catálogo em formato compactado. seu plug-in pode dar ao local desse arquivo Windows Media Player em [IWMPContentPartner:: GetCatalogURL](/previous-versions/windows/desktop/api/contentpartner/nf-contentpartner-iwmpcontentpartner-getcatalogurl). |
 | \_words.txt exclusivos compilados \_ | Um arquivo de saída intermediário. Não usado pelo Windows Media Player.                                                                                                                      |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

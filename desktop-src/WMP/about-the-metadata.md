@@ -8,23 +8,23 @@ keywords:
 - metadados, atributos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a1c2e9782b52adc274a5b3dbaf16c48ed1a892e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 2dcccda2af46e60e4bb0733d17e35e1a50d1fe923e9775fa6b10d2c06e3a972a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291819"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119865356"
 ---
 # <a name="about-the-metadata"></a>Sobre os metadados
 
-O Windows Media Player 10 ou posterior tenta sincronizar os seguintes atributos de metadados.
+o Windows Media Player 10 ou posterior tenta sincronizar os atributos de metadados a seguir.
 
 
 
 | Atributo do Player | Constante global WMDM  | Descrição                                                                                                 | Versão necessária                  |
 |------------------|-----------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | AlbumArtist      | g \_ wszWMDMAlbumArtist | **Cadeia de caracteres** terminada em nulo que contém o nome do artista principal para o álbum.                         | Windows Media Player 11 ou posterior. |
-| Álbuns            | g \_ wszWMDMAlbumTitle  | **Cadeia de caracteres** terminada em nulo que contém o título do álbum no qual o conteúdo foi originalmente lançado.  | Windows Media Player 11 ou posterior. |
+| Álbum            | g \_ wszWMDMAlbumTitle  | **Cadeia de caracteres** terminada em nulo que contém o título do álbum no qual o conteúdo foi originalmente lançado.  | Windows Media Player 11 ou posterior. |
 | Autor           | g \_ wszWMDMAuthor      | **Cadeia de caracteres** terminada em nulo que contém o nome do artista de mídia ou ator associado ao conteúdo.    | Windows Media Player 11 ou posterior. |
 | BuyNow           | g \_ wszWMDMBuyNow      | **Booliano** que indica se o usuário optou por comprar o conteúdo.                                 | Windows Media Player 10 ou posterior. |
 | WM/gênero         | g \_ wszWMDMGenre       | **Cadeia de caracteres** terminada em nulo que contém o gênero do conteúdo.                                             | Windows Media Player 11 ou posterior. |
@@ -36,7 +36,7 @@ O Windows Media Player 10 ou posterior tenta sincronizar os seguintes atributos 
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -45,9 +45,9 @@ O Windows Media Player 10 ou posterior tenta sincronizar os seguintes atributos 
 [**Extensões de dispositivo para transferência de metadados acelerada**](device-extensions-for-accelerated-metadata-transfer.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

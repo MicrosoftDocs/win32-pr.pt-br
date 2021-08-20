@@ -4,12 +4,12 @@ ms.assetid: 0e7b66bd-bdb0-956d-2962-b33ae52b3016
 title: Funções de armazenamento de vetor da biblioteca DirectXMath
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 392429d9028aa0971a5b6ee6a90296c44c62066c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee06b3593b193c845b134816b23bfbf22abfa81ccd88708c4673f63890c2e4d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118087672"
 ---
 # <a name="directxmath-library-vector-store-functions"></a>Funções de armazenamento de vetor da biblioteca DirectXMath
 
@@ -67,18 +67,18 @@ A lista a seguir inclui as funções de armazenamento que atualmente fazem parte
 | [**XMStoreUByteN2**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreubyten2) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmubyten2). |
 | [**XMStoreUByteN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreubyten4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUBYTEN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmubyten4). |
 | [**XMStoreUDec4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreudec4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudec4). |
-| [**XMStoreUDecN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreudecn4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4). |
-| [**XMStoreUDecN4 \_ XR**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreudecn4_xr) | Armazena um intervalo estendido [**XMUDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4) em um [**XMVECTOR**](xmvector-data-type.md). |
-| [**XMStoreUInt2**](/windows/win32/api/directxmath/nf-directxmath-xmstoreuint2) | Armazena dados inteiros não assinados de um [**XMVECTOR**](xmvector-data-type.md) em uma estrutura **XMUINT2** . |
-| [**XMStoreUInt3**](/windows/win32/api/directxmath/nf-directxmath-xmstoreuint3) | Armazena dados inteiros não assinados de um [**XMVECTOR**](xmvector-data-type.md) em uma estrutura **XMUINT3** . |
-| [**XMStoreUInt4**](/windows/win32/api/directxmath/nf-directxmath-xmstoreuint4) | Armazena dados inteiros não assinados de um [**XMVECTOR**](xmvector-data-type.md) em uma estrutura **XMUINT4** . |
-| [**XMStoreUNibble4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreunibble4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUNIBBLE4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4). |
-| [**XMStoreUShort2**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreushort2) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUSHORT2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2). |
-| [**XMStoreUShort4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreushort4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUSHORT4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort4). |
-| [**XMStoreUShortN2**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreushortn2) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUSHORTN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2). |
-| [**XMStoreUShortN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreushortn4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUSHORTN4**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4). |
-| [**XMStoreXDec4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstorexdec4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMXDEC4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdec4). |
-| [**XMStoreXDecN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstorexdecn4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMXDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4). |
+| [**XMStoreUDecN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreudecn4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUDECN4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4) |
+| [**XMStoreUDecN4 \_ XR**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreudecn4_xr) | Armazena um intervalo estendido [**XMUDECN4**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmudecn4) em [**um XMVECTOR.**](xmvector-data-type.md) |
+| [**XMStoreUInt2**](/windows/win32/api/directxmath/nf-directxmath-xmstoreuint2) | Armazena dados inteiros não assinados de [**um XMVECTOR**](xmvector-data-type.md) em uma **estrutura XMUINT2.** |
+| [**XMStoreUInt3**](/windows/win32/api/directxmath/nf-directxmath-xmstoreuint3) | Armazena dados inteiros sem sinal de [**um XMVECTOR**](xmvector-data-type.md) em uma **estrutura XMUINT3.** |
+| [**XMStoreUInt4**](/windows/win32/api/directxmath/nf-directxmath-xmstoreuint4) | Armazena dados inteiros não assinados de [**um XMVECTOR**](xmvector-data-type.md) em uma **estrutura XMUINT4.** |
+| [**XMStoreUNibble4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreunibble4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUNIBBLE4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmunibble4) |
+| [**XMStoreUShort2**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreushort2) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUSHORT2.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort2) |
+| [**XMStoreUShort4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreushort4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em um [**XMUSHORT4.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushort4) |
+| [**XMStoreUShortN2**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreushortn2) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em [**um XMUSHORTN2.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn2) |
+| [**XMStoreUShortN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstoreushortn4) | Armazena um [**XMVECTOR**](xmvector-data-type.md) em [**um XMUSHORTN4.**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmushortn4) |
+| [**XMStoreXDec4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstorexdec4) | Armazena um [**XMVECTOR em**](xmvector-data-type.md) um [**XMXDEC4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdec4) |
+| [**XMStoreXDecN4**](/windows/win32/api/directxpackedvector/nf-directxpackedvector-xmstorexdecn4) | Armazena um [**XMVECTOR em**](xmvector-data-type.md) um [**XMXDECN4.**](/windows/win32/api/directxpackedvector/ns-directxpackedvector-xmxdecn4) |
 
 ## <a name="related-topics"></a>Tópicos relacionados
-[Funções de biblioteca DirectXMath](ovw-xnamath-reference-functions.md)
+[Funções da biblioteca DirectXMath](ovw-xnamath-reference-functions.md)

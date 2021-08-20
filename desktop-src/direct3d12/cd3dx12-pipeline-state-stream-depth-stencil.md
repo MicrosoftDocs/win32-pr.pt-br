@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb24779aeff950bd213ce18774f55493777df9c9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: e0b9cc7ba6b37858ae355d9470f321f991e8329f5fbf7aabd23b6f8bcfe7d8fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105757181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119858176"
 ---
 # <a name="cd3dx12_pipeline_state_stream_depth_stencil-structure"></a>\_Estrutura de \_ \_ estêncil de profundidade do fluxo de estado do \_ pipeline CD3DX12 \_
 
