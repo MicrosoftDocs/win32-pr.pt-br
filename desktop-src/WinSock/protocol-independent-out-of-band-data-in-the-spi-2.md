@@ -4,18 +4,18 @@ ms.assetid: 30f667cd-5be9-45f2-9d55-bff04834078f
 title: Dados de out-of-Band independentes de protocolo no SPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b53e5c7c5c8c8ad7a5985ec101dd157370c5f32f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a55e186e34e401e56017097271d5f036f2666bdc51f8bc27c6692be7e12874e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118993606"
 ---
 # <a name="protocol-independentout-of-band-data-in-the-spi"></a>Dados de out-of-Band independentes de protocolo no SPI
 
 Os dados fora de banda (OOB) são um canal de transmissão logicamente independente associado a um par de soquetes de fluxo conectados. Os dados OOB podem ser entregues ao usuário independentemente dos dados normais. A abstração define que os recursos de dados OOB devem dar suporte à entrega confiável de pelo menos um bloco de dados OOB de cada vez. Esse bloco de dados pode conter pelo menos um byte de dados, e pelo menos um bloco de dados OOB pode estar com entrega pendente para o usuário a qualquer momento. Para protocolos de comunicação que dão suporte à sinalização em banda (ou seja, TCP, em que os dados urgentes são entregues em sequência com os dados normais), o sistema normalmente extrai os dados OOB do fluxo de dados normal e os armazena separadamente (deixando uma lacuna no fluxo de dados normal). Isso permite que os usuários escolham entre receber os dados OOB em ordem e recebê-los fora de sequência sem precisar armazenar em buffer todos os dados intermediários. É possível inspecionar dados OOB.
 
-Um usuário pode determinar se há algum dado OOB aguardando para ser lido usando a função [**WSPIoctl**](/previous-versions/windows/hardware/network/ff566296(v=vs.85)) (SIOCATMARK). Para protocolos em que o conceito da posição do bloco de dados OOB dentro do fluxo de dados normal é significativo (ou seja, TCP), um provedor de serviços do Windows Sockets manterá um marcador conceitual que indica a posição do último byte de dados OOB dentro do fluxo de dados normal. Isso não é necessário para a implementação da funcionalidade **WSPIoctl** (SIOCATMARK) — a presença ou a ausência de dados OOB é tudo o que é necessário.
+Um usuário pode determinar se há algum dado OOB aguardando para ser lido usando a função [**WSPIoctl**](/previous-versions/windows/hardware/network/ff566296(v=vs.85)) (SIOCATMARK). para protocolos em que o conceito da posição do bloco de dados OOB dentro do fluxo de dados normal é significativo (ou seja, TCP), um provedor de serviços de Windows sockets manterá um marcador conceitual que indica a posição do último byte de dados OOB dentro do fluxo de dados normal. Isso não é necessário para a implementação da funcionalidade **WSPIoctl** (SIOCATMARK) — a presença ou a ausência de dados OOB é tudo o que é necessário.
 
 Para protocolos em que o conceito da posição do bloco de dados OOB dentro do fluxo de dados normal é significativo, um aplicativo pode preferir processar dados fora de banda embutidos, como parte do fluxo de dados normal. Isso é feito definindo a opção socket de modo que \_ OOBINLINE (consulte a seção [**WSPIoctl**](/previous-versions/windows/hardware/network/ff566296(v=vs.85))). Para outros protocolos em que os blocos de dados OOB são verdadeiramente independentes do fluxo de dados normal, a tentativa de definir \_ OOBINLINE resultará em um erro. Um aplicativo pode usar o comando SIOCATMARK WSPIoctl para determinar se há algum dado OOB Não lido antes da marca. Por exemplo, ele pode usar isso para ressincronizar com seu par, garantindo que todos os dados até a marca no fluxo de dados sejam descartados quando apropriado.
 

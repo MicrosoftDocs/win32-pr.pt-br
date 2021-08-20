@@ -1,7 +1,7 @@
 ---
-description: A política de metadados de foto para a propriedade System. GPS. AltitudeRef.
+description: A política de metadados de foto para a propriedade System.GPS.AltitudeRef.
 ms.assetid: abbb2441-25ca-484b-a744-620ff2794221
-title: Política de metadados de foto System. GPS. AltitudeRef
+title: Política de metadados de foto System.GPS.AltitudeRef
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: ca49213754f605dcf6df40dfa3ff00e2b7aeaf765008037c23da21e35ab9ddee
@@ -11,17 +11,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118710693"
 ---
-# <a name="systemgpsaltituderef-photo-metadata-policy"></a>Política de metadados de foto System. GPS. AltitudeRef
+# <a name="systemgpsaltituderef-photo-metadata-policy"></a>Política de metadados de foto System.GPS.AltitudeRef
 
-A política de metadados de foto para a propriedade [System. GPS. AltitudeRef](../properties/props-system-gps-altituderef.md) .
+A política de metadados de foto para a [propriedade System.GPS.AltitudeRef.](../properties/props-system-gps-altituderef.md)
 
-### <a name="pkey"></a>PKEY
+### <a name="pkey"></a>Pkey
 
 PKEY \_ GPS \_ AltitudeRef
 
 ### <a name="description"></a>Descrição
 
-Indica a altitude usada como a altitude de referência. Um valor de 0 indica que a altitude está acima do nível do mar. Um valor de 1 indica uma altitude abaixo do nível do Sea.
+Indica a altitude usada como a altitude de referência. Um valor de 0 indica que a altitude está acima do nível do mar. Um valor de 1 indica uma altitude abaixo do nível do mar.
 
 ### <a name="containers"></a>Contêineres
 
@@ -31,27 +31,27 @@ JPEG, TIFF
 
 Não
 
-### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
+### <a name="output-propvariant-type"></a>Tipo PROPVARIANT de saída
 
-\_UI1 VT
+VT \_ UI1
 
 ### <a name="input-type"></a>Tipo de entrada
 
-Minuciosa.
+Byte.
 
-### <a name="conflict-resolution-policy"></a>Política de resolução de conflito
+### <a name="conflict-resolution-policy"></a>Política de resolução de conflitos
 
-Os valores de esquemas diferentes são reconciliados.
+Valores de esquemas diferentes são reconciliados.
 
 ### <a name="jpeg-policies"></a>Políticas JPEG
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 5} | byte        |
+| 1     | /app1/ifd/gps/{ushort=5} | byte        |
 | 2     | /xmp/exif:GPSAltitudeRef | Unicode     |
 
 
@@ -64,7 +64,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     | Formato de disco |
 |-------|--------------------------|-------------|
-| 1     | /App1/IFD/GPS/{UShort = 5} | byte        |
+| 1     | /app1/ifd/gps/{ushort=5} | byte        |
 | 2     | /xmp/exif:GPSAltitudeRef | Unicode     |
 
 
@@ -77,7 +77,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                     |
 |-------|--------------------------|
-| 1     | /App1/IFD/GPS/{UShort = 5} |
+| 1     | /app1/ifd/gps/{ushort=5} |
 | 2     | /xmp/exif:gpsaltituderef |
 
 
@@ -86,13 +86,13 @@ Os valores de esquemas diferentes são reconciliados.
 
 ### <a name="tiff-policies"></a>Políticas TIFF
 
-### <a name="read-paths"></a>Caminhos de leitura
+### <a name="read-paths"></a>Ler caminhos
 
 
 
 | Ordem | Caminho                         | Formato de disco |
 |-------|------------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 5}          | byte        |
+| 1     | /ifd/gps/{ushort=5}          | byte        |
 | 2     | /ifd/xmp/exif:GPSAltitudeRef | Unicode     |
 
 
@@ -105,7 +105,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                         | Formato de disco |
 |-------|------------------------------|-------------|
-| 1     | /IFD/GPS/{UShort = 5}          | byte        |
+| 1     | /ifd/gps/{ushort=5}          | byte        |
 | 2     | /ifd/xmp/exif:GPSAltitudeRef | Unicode     |
 
 
@@ -118,7 +118,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 | Ordem | Caminho                         |
 |-------|------------------------------|
-| 1     | /IFD/GPS/{UShort = 5}          |
+| 1     | /ifd/gps/{ushort=5}          |
 | 2     | /ifd/xmp/exif:gpsaltituderef |
 
 
@@ -131,7 +131,7 @@ Os valores de esquemas diferentes são reconciliados.
 
 <dl> <dt>
 
-[System. GPS. AltitudeRef](../properties/props-system-gps-altituderef.md)
+[System.GPS.AltitudeRef](../properties/props-system-gps-altituderef.md)
 </dt> </dl>
 
  

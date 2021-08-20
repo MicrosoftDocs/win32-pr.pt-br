@@ -1,11 +1,11 @@
 ---
-title: atributo de recurso ms-DS-Enabled
+title: Atributo ms-DS-Enabled-Feature
 description: Recursos opcionais habilitados.
 ms.assetid: ede3a872-0a34-4d12-b5f0-ed13e32e8910
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo de recurso ms-DS-Enabled-
-- atributo msDS-EnabledFeature do AD Schema
+- Esquema do AD do atributo ms-DS-Enabled-Feature
+- Esquema do AD do atributo msDS-EnabledFeature
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35f23c7c354fc8e159b3b3fcd94bb7b38ffd8416
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f83df8ff49258e9a33852e288ecc9abefee9c063b1af4f1574a2a58ca2bb14b6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104009852"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119296146"
 ---
-# <a name="ms-ds-enabled-feature-attribute"></a>atributo de recurso ms-DS-Enabled
+# <a name="ms-ds-enabled-feature-attribute"></a>Atributo ms-DS-Enabled-Feature
 
 Recursos opcionais habilitados.
 
@@ -29,14 +29,14 @@ Recursos opcionais habilitados.
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-habilitado-recurso                   |
-| LDAP-Display-Name | msDS-EnabledFeature                     |
+| CN                | ms-DS-Enabled-Feature                   |
+| Ldap-Display-Name | msDS-EnabledFeature                     |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2061                 |
-| System-ID-GUID    | 5706aeaf-b940-4fb2-bcfc-5268683ad9fe    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 5706aeaf-b940-4fb2-bcfc-5268683ad9fe    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -54,15 +54,15 @@ Recursos opcionais habilitados.
 | ID do link                | 2168                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                  |
 | System-Only            | True                                                                                                                                                |
-| É de valor único       | Falso                                                                                                                                               |
+| Tem valor único       | Falso                                                                                                                                               |
 | É indexado             | Falso                                                                                                                                               |
-| No catálogo global      | True                                                                                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                        |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                          |
-| Classes usadas em        | [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> [**Domínio-DNS**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classes usadas em        | [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> [**DNS de domínio**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 
@@ -75,15 +75,15 @@ Recursos opcionais habilitados.
 | ID do link                | 2168                                                                                                                                                |
 | MAPI-Id                | \-                                                                                                                                                  |
 | System-Only            | True                                                                                                                                                |
-| É de valor único       | Falso                                                                                                                                               |
+| Tem valor único       | Falso                                                                                                                                               |
 | É indexado             | Falso                                                                                                                                               |
-| No catálogo global      | True                                                                                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                        |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                          |
 | System-Flags           | 0x00000010                                                                                                                                          |
-| Classes usadas em        | [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> [**Domínio-DNS**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
+| Classes usadas em        | [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> [**DNS de domínio**](c-domaindns.md)<br/> [**NTDS-DSA**](c-ntdsdsa.md)<br/> |
 
 
 

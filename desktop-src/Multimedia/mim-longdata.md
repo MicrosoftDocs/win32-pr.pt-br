@@ -1,9 +1,9 @@
 ---
 title: Mensagem de MIM_LONGDATA (mmsystem. h)
-description: A mensagem do MIM \_ LONGDATA é enviada para uma função de retorno de chamada de entrada de Midi quando um buffer exclusivo do sistema é preenchido com dados e está sendo retornado para o aplicativo.
+description: a MIM \_ mensagem LONGDATA é enviada para uma função de retorno de chamada de entrada de MIDI quando um buffer exclusivo do sistema é preenchido com dados e está sendo retornado para o aplicativo.
 ms.assetid: 3a11ed21-e7c5-4b78-9536-f0d862e26a02
 keywords:
-- Multimídia do Windows de mensagem MIM_LONGDATA
+- mensagem de MIM_LONGDATA Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bc5f83b1f0468540da18d0d8317dae42cbf33bc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 82605835ce8ac231346014215c854abfe9ae7a55fd81e81b8d6214fb8a230327
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137207"
 ---
-# <a name="mim_longdata-message"></a>Mensagem do MIM \_ LONGDATA
+# <a name="mim_longdata-message"></a>MIM \_ Mensagem LONGDATA
 
-A mensagem do **mim \_ LONGDATA** é enviada para uma função de retorno de chamada de entrada de Midi quando um buffer exclusivo do sistema é preenchido com dados e está sendo retornado para o aplicativo.
+a **MIM mensagem \_ LONGDATA** é enviada para uma função de retorno de chamada de entrada de MIDI quando um buffer exclusivo do sistema é preenchido com dados e está sendo retornado para o aplicativo.
 
 
 ```C++

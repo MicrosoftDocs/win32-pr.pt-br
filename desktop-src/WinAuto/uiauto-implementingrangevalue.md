@@ -15,12 +15,12 @@ keywords:
 - interfaces, IRangeValueProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf426069ad88ad272fd78c521a220ba7ccf72275
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ae87ca25fd1ada2f57ce77412fb589875792541fd2b5d31d6eb0aa86192dee36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105762932"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118114857"
 ---
 # <a name="rangevalue-control-pattern"></a>Padrão de controle RangeValue
 
@@ -53,13 +53,13 @@ As propriedades e os métodos a seguir são necessários para implementar a inte
 | [**Valor**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_value)             | Propriedade    | Nenhum  |
 | [**LargeChange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_largechange) | Propriedade    | Nenhum  |
 | [**SmallChange**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_smallchange) | Propriedade    | Nenhum  |
-| [**Maior**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum)         | Propriedade    | Nenhum  |
-| [**Máximo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum)         | Propriedade    | Nenhum  |
+| [**Máximo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_maximum)         | Propriedade    | Nenhum  |
+| [**Mínimo**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-get_minimum)         | Propriedade    | Nenhum  |
 | [**SetValue**](/windows/desktop/api/UIAutomationCore/nf-uiautomationcore-irangevalueprovider-setvalue)       | Método      | Nenhum  |
 
 
 
- 
+ 
 
 Este padrão de controle não tem eventos associados.
 
@@ -76,9 +76,9 @@ Este padrão de controle não tem eventos associados.
 [Visão geral da árvore de automação de interface do usuário](uiauto-treeoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

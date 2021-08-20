@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectVariable AsShaderResource (D3dx11effect. h)
+title: Método ID3DX11EffectVariable AsShaderResource (D3dx11effect.h)
 description: Obter uma variável de recurso de sombreador.
 ms.assetid: 02db94eb-980a-4677-af89-3006aef6faca
 keywords:
 - Método AsShaderResource Direct3D 11
-- Método AsShaderResource Direct3D 11, interface ID3DX11EffectVariable
-- Interface ID3DX11EffectVariable Direct3D 11, método AsShaderResource
+- Método AsShaderResource Direct3D 11 , interface ID3DX11EffectVariable
+- ID3DX11EffectVariable interface Direct3D 11 , método AsShaderResource
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118531379"
 ---
-# <a name="id3dx11effectvariableasshaderresource-method"></a>Método ID3DX11EffectVariable:: AsShaderResource
+# <a name="id3dx11effectvariableasshaderresource-method"></a>Método ID3DX11EffectVariable::AsShaderResource
 
 Obter uma variável de recurso de sombreador.
 
@@ -45,16 +45,16 @@ Esse método não tem parâmetros.
 
 Tipo: **[ **ID3DX11EffectShaderResourceVariable**](id3dx11effectshaderresourcevariable.md)\***
 
-Um ponteiro para uma variável de recurso de sombreador. Consulte [**ID3DX11EffectShaderResourceVariable**](id3dx11effectshaderresourcevariable.md).
+Um ponteiro para uma variável sombreador-recurso. Consulte [**ID3DX11EffectShaderResourceVariable.**](id3dx11effectshaderresourcevariable.md)
 
 ## <a name="remarks"></a>Comentários
 
-AsShaderResource retorna uma versão da variável de efeito que foi especializada para uma variável de recurso de sombreador. De forma semelhante a uma conversão, essa especialização retornará um objeto inválido se a variável de efeito não contiver dados de recurso de sombreador.
+AsShaderResource retorna uma versão da variável de efeito que foi especializada para uma variável de sombreador-recurso. Semelhante a uma cast, essa especialização retornará um objeto inválido se a variável de efeito não contém dados de recurso de sombreador.
 
-Os aplicativos podem testar a validade do objeto retornado chamando [**IsValid**](id3dx11effectvariable-isvalid.md).
+Os aplicativos podem testar a validade do objeto retornado chamando [**IsValid.**](id3dx11effectvariable-isvalid.md)
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -64,8 +64,8 @@ Os aplicativos podem testar a validade do objeto retornado chamando [**IsValid**
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

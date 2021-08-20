@@ -3,9 +3,9 @@ title: Propriedade de reparação de IWMPErrorItem
 description: Reservado para uso futuro. | Propriedade de reparação de IWMPErrorItem
 ms.assetid: 6aa2878a-2947-4afe-b8cd-ed79a65b3d8f
 keywords:
-- Propriedade de reparação Windows Media Player
-- Propriedade de reparação Windows Media Player, interface IWMPErrorItem
-- Interface IWMPErrorItem Windows Media Player, Propriedade remediate
+- Windows Media Player da propriedade de reparação
+- Windows Media Player de propriedade de reparação, interface IWMPErrorItem
+- Windows Media Player de interface IWMPErrorItem, propriedade remediate
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd7d913d06ef51ac668a7e4d3c4bf692836fbc7c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5f184b17582e00be96dbd2e4e7a4f8a0af3acf800a0e76adebf3925acf4ac3c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118115809"
 ---
 # <a name="iwmperroritemremedy-property"></a>Propriedade IWMPErrorItem:: remediate
 

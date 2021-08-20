@@ -1,9 +1,9 @@
 ---
 title: Objeto PlaylistArray
-description: O objeto PlaylistArray fornece uma maneira de acessar playlists por número de índice.
+description: O objeto PlaylistArray fornece uma maneira de acessar as listas de reprodução por número de índice.
 ms.assetid: 8a29f36c-9c7c-4bc7-9adb-b34cc4231d81
 keywords:
-- Objeto PlaylistArray Windows Media Player
+- Windows Media Player de objeto PlaylistArray
 topic_type:
 - apiref
 api_name:
@@ -22,45 +22,45 @@ ms.locfileid: "118334981"
 ---
 # <a name="playlistarray-object"></a>Objeto PlaylistArray
 
-O **objeto PlaylistArray** fornece uma maneira de acessar playlists por número de índice.
+O objeto **PlaylistArray** fornece uma maneira de acessar as listas de reprodução por número de índice.
 
-O **objeto PlaylistArray** dá suporte à propriedade a seguir.
+O objeto **PlaylistArray** dá suporte à propriedade a seguir.
 
 
 
 | Propriedade                         | Descrição                                              |
 |----------------------------------|----------------------------------------------------------|
-| [contagem](playlistarray-count.md) | Recupera o número de playlists na matriz de playlists. |
+| [contagem](playlistarray-count.md) | Recupera o número de listas de reprodução na matriz de playlist. |
 
 
 
  
 
-O **objeto PlaylistArray** dá suporte ao método a seguir.
+O objeto **PlaylistArray** dá suporte ao método a seguir.
 
 
 
 | Método                         | Descrição                                                              |
 |--------------------------------|--------------------------------------------------------------------------|
-| [item](playlistarray-item.md) | Recupera o objeto [Playlist](playlist-object.md) no índice determinado. |
+| [item](playlistarray-item.md) | Recupera o objeto [playlist](playlist-object.md) no índice fornecido. |
 
 
 
  
 
-O **objeto PlaylistArray** é acessado por meio dos métodos a seguir.
+O objeto **PlaylistArray** é acessado por meio dos métodos a seguir.
 
 
 
 | Objeto                                              | Método                                                                                 |
 |-----------------------------------------------------|----------------------------------------------------------------------------------------|
-| [PlaylistCollection](playlistcollection-object.md) | [getAll](playlistcollection-getall.md), [getByName](playlistcollection-getbyname.md) |
+| [Playlistcollection](playlistcollection-object.md) | [getAll](playlistcollection-getall.md), [getByName](playlistcollection-getbyname.md) |
 
 
 
  
 
-Para fins de ilustração, *player*. *playlistCollection*. **getAll** é usado nas seções de sintaxe de referência.
+Para fins de ilustração, *Player*. *playlistcollection*. **getAll** é usado nas seções de sintaxe de referência.
 
 ## <a name="see-also"></a>Confira também
 

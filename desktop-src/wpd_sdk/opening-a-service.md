@@ -4,12 +4,12 @@ ms.assetid: 722d657d-332a-40df-ac30-bc2050deda74
 title: Abrindo um serviço
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8b273b8709a4d750085f14075d605f88ed0faa6
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 578dfee696fd17b0e360d6e344844670ca92ac6b48152242492a458a9a279f56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110423916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119806716"
 ---
 # <a name="opening-a-service"></a>Abrindo um serviço
 
@@ -79,9 +79,9 @@ Depois que o aplicativo recupera o identificador PnP para o serviço, ele pode c
 
 No aplicativo de exemplo, esse método é chamado dentro de **ChooseDeviceService** no módulo do inenumeration. cpp.
 
-O [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) dá suporte a dois CLSIDs para **CoCreateInstance**. **CLSID \_ PortableDeviceService** retorna um ponteiro **IPortableDeviceService** que não agrega o marshaler de thread livre; **CLSID \_ PortableDeviceServiceFTM** é um novo CLSID que retorna um ponteiro **IPortableDeviceService** que agrega o marshaler de thread livre. Caso contrário, ambos os ponteiros darão suporte à mesma funcionalidade.
+O [**IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice) dá suporte a dois CLSIDs para **CoCreateInstance**. **CLSID \_ do PortableDeviceService** retorna um ponteiro **IPortableDeviceService** que não agrega o marshaler de thread livre; **CLSID \_ do PortableDeviceServiceFTM** é um novo CLSID que retorna um ponteiro **IPortableDeviceService** que agrega o marshaler de thread livre. Os dois ponteiros também dão suporte à mesma funcionalidade.
 
-Os aplicativos que agem em Single Threaded Apartments devem usar **CLSID \_ PortableDeviceServiceFTM,** pois isso elimina a sobrecarga do marshaling de ponteiro de interface. **CLSID \_ PortableDeviceService** ainda tem suporte para aplicativos herdados.
+Aplicativos que residem em Apartments de thread único devem usar **CLSID \_ PortableDeviceServiceFTM** , pois isso elimina a sobrecarga do marshaling do ponteiro de interface. **CLSID \_ do O PortableDeviceService** ainda tem suporte para aplicativos herdados.
 
 
 ```C++
@@ -120,13 +120,13 @@ if (SUCCEEDED(hr))
 
 <dl> <dt>
 
-[**IPortableDeviceService Interface**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)
+[**Interface IPortableDeviceService**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservice)
 </dt> <dt>
 
-[**IPortableDeviceValues Interface**](iportabledevicevalues.md)
+[**Interface IPortableDeviceValues**](iportabledevicevalues.md)
 </dt> <dt>
 
-[**IPortableDeviceServiceManager Interface**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
+[**Interface IPortableDeviceServiceManager**](/windows/desktop/api/PortableDeviceAPI/nn-portabledeviceapi-iportabledeviceservicemanager)
 </dt> <dt>
 
 [WpdServicesApiSample](wpdapisample-sample-service-application.md)

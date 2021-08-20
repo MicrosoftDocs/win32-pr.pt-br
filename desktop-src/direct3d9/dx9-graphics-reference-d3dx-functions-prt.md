@@ -1,19 +1,19 @@
 ---
-description: 'O D3DX fornece as seguintes funções de PRT (transferência de radiante) precomputadas:'
+description: 'O D3DX fornece as seguintes funções prt (transferência de radiance pré-comutada) :'
 ms.assetid: d642f33f-b4dd-475f-9797-3680fef81d98
-title: Funções de transferência radiante preputadas
+title: Funções de transferência de Radiance pré-comutadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6389dae18deb5dd4c4c6c69ceaf6c701ddbc376f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 97ab949cac2dba581379c6062c14e4ad0506e184f4088ab21c3fb80216a820c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456472"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119607346"
 ---
-# <a name="precomputed-radiance-transfer-functions"></a>Funções de transferência radiante preputadas
+# <a name="precomputed-radiance-transfer-functions"></a>Funções de transferência de Radiance pré-comutadas
 
-O D3DX fornece as seguintes funções de PRT (transferência de radiante) precomputadas:
+O D3DX fornece as seguintes funções prt (transferência de radiance pré-comutada) :
 
 -   [**D3DXCreatePRTBuffer**](d3dxcreateprtbuffer.md)
 -   [**D3DXCreatePRTBufferTex**](d3dxcreateprtbuffertex.md)
@@ -27,9 +27,9 @@ O D3DX fornece as seguintes funções de PRT (transferência de radiante) precom
 -   [**D3DXSHPRTCompSplitMeshSC**](d3dxshprtcompsplitmeshsc.md)
 -   [**D3DXSHPRTCompSuperCluster**](d3dxshprtcompsupercluster.md)
 
-Para obter mais informações sobre como usar o PRT, consulte [transferência de radiante de computação (Direct3D 9)](precomputed-radiance-transfer.md).
+Para obter mais informações sobre como usar PRT, consulte Transferência de Radiance pré-comutada [(Direct3D 9)](precomputed-radiance-transfer.md).
 
-As funções [D3DXSHxxx](dx9-graphics-reference-d3dx-functions-math.md) também são usadas para operações de PRT esféricos (SH).
+As [funções D3DXSHxxx](dx9-graphics-reference-d3dx-functions-math.md) também são usadas para operações sh (spherical) prt.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

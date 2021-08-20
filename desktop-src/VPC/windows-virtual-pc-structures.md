@@ -1,28 +1,28 @@
 ---
-title: Estruturas do Windows Virtual PC
-description: As estruturas a seguir têm suporte no Windows Virtual PC.
+title: Windows Estruturas do Virtual PC
+description: as estruturas a seguir têm suporte pelo Windows Virtual PC.
 ms.assetid: EF89F64F-CF20-4523-BF6F-61DA404BFB49
 keywords:
-- PC Virtual PC do Windows, estruturas
+- Windows Virtual PC Virtual PC, estruturas
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 112a45eb68d50e399cec83450eb2d3569874114c
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a3be3e6ca0fa93a2f13e781697a811da5724ff3a60abf7e52cb395491a8684bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998286"
 ---
-# <a name="windows-virtual-pc-structures"></a>Estruturas do Windows Virtual PC
+# <a name="windows-virtual-pc-structures"></a>Windows Estruturas do Virtual PC
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-As seguintes estruturas têm suporte no Windows Virtual PC:
+as seguintes estruturas são suportadas pelo Windows Virtual PC:
 
 ## <a name="in-this-section"></a>Nesta seção
 
 -   [**GUESTOSVERSIONINFOEX**](guestosversioninfoex.md)
 
- 
+ 
 
- 
+ 

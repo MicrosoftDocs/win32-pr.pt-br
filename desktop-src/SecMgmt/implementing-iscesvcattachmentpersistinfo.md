@@ -1,19 +1,19 @@
 ---
-description: As extensões de snap-in de anexos devem implementar a interface ISceSvcAttachmentPersistInfo.
+description: As extensões de snap-in de anexo devem implementar a interface ISceSvcAttachmentPersistInfo.
 ms.assetid: fadd2e06-d27c-4938-ad0e-ae7beab25931
 title: Implementando ISceSvcAttachmentPersistInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 941c86b1974b215c4353739f0514cb32bd6f239a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: edaf4f31007225e95914f42d27297347799f53fe3ca2735cac38c6c0d881cebf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117969322"
 ---
 # <a name="implementing-iscesvcattachmentpersistinfo"></a>Implementando ISceSvcAttachmentPersistInfo
 
-As extensões de snap-in de anexos devem implementar a interface [**ISceSvcAttachmentPersistInfo**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentpersistinfo) . Os snap-ins de configuração de segurança consultam essa interface periodicamente, como ao salvar a configuração ou fechar o snap-in. Isso permite que a extensão do snap-in salve as modificações que o usuário pode ter feito no banco de dados de inspeção ou na configuração associada.
+As extensões de snap-in de anexo devem implementar a interface [**ISceSvcAttachmentPersistInfo.**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentpersistinfo) Os snap-ins de Configuração de Segurança consultam essa interface periodicamente, como ao salvar a configuração ou fechar o snap-in. Isso permite que a extensão de snap-in salve as modificações que o usuário pode ter feito no banco de dados de inspeção ou na configuração associada.
 
 O exemplo a seguir mostra uma maneira de implementar [**ISceSvcAttachmentPersistInfo**](/windows/desktop/api/Scesvc/nn-scesvc-iscesvcattachmentpersistinfo).
 

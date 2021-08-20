@@ -4,12 +4,12 @@ description: Esta seção descreve o comportamento de rasterizador com blocos n�
 ms.assetid: 3477A621-7051-4585-AB58-523EE64CDC5C
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 54230321f4286b92a3444e3f74167ee7b8711c3f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 16612e8538ec57178ed053ae1a6333c11fcaa6e4454b387408f3d99c6004eb47
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104988516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119608506"
 ---
 # <a name="rasterizer-behavior-with-non-mapped-tiles"></a>Comportamento de rasterizador com blocos não mapeados
 
@@ -40,9 +40,9 @@ Leituras de RTVs retornam 0 em blocos ausentes e gravações são ignoradas. Ess
 [Acesso ao pipeline para recursos lado a lado](pipeline-access-to-tiled-resources.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

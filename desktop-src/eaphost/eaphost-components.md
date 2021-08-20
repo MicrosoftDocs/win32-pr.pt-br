@@ -4,12 +4,12 @@ description: Saiba mais sobre os três componentes da autenticação do EAPHost.
 ms.assetid: f875c3f8-d2fb-461e-b356-e1b2ccaf9981
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2ede2fc6a705ec77fe982778239a92c7ffb10ef9
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: e9aa86f09473b14df6dbcc8bbc667dc4a1cc1badf9e0b6dd67ac95f8d11f2bae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104454351"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086410"
 ---
 # <a name="components-of-eaphost"></a>Componentes do EAPHost
 
@@ -27,11 +27,11 @@ As APIs suplicantes são chamadas diretamente de um aplicativo que deseja autent
 
 Se você estiver criando um aplicativo que usará o EAPHost para autenticação, consulte a referência da [API suplicante do EAPHost](eap-host-supplicant-api-reference.md).
 
-Se você estiver criando um novo método de autenticação EAP a ser gerenciado pelo EAPHost, consulte a referência da [API do método par do EAPHost](eap-host-peer-method-api-reference.md) e as [APIs do método de autenticador EAPHost](eaphost-authenticator-method-apis.md). Observe que você estará criando implementações dessas APIs expostas em uma nova DLL que o EAPHost carrega, em vez de chamá-las diretamente.
+se você estiver criando um novo método de autenticação EAP a ser gerenciado pelo EAPHost, consulte a referência da [API do método par do eaphost](eap-host-peer-method-api-reference.md) e as [APIs do método de Authenticator do eaphost](eaphost-authenticator-method-apis.md). Observe que você estará criando implementações dessas APIs expostas em uma nova DLL que o EAPHost carrega, em vez de chamá-las diretamente.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -41,7 +41,7 @@ ResourceLocator.MustUnderstandOptions As boolean
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Indica, quando **True**, que o [](ws-management-protocol.md) serviço que implementa o protocolo WS-Management deverá retornar um erro se ele não for capaz de processar a opção.
+Indica, quando **True**, que o [](ws-management-protocol.md) serviço que implementa o protocolo WS-Management deve retornar um erro se não for capaz de processar a opção.
 
 ## <a name="remarks"></a>Comentários
 

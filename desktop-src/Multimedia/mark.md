@@ -1,9 +1,9 @@
 ---
-title: comando de marca
-description: O comando Mark controla a gravação e o apagamento de marcas na fita de vídeo. Os dispositivos VCR reconhecem este comando.
+title: comando mark
+description: O comando de marca controla a gravação e a apagamento de marcas na casa. Os dispositivos VCR reconhecem esse comando.
 ms.assetid: d5f7a546-dc46-459c-b5dc-0651bca842cb
 keywords:
-- comando marcar multimídia do Windows
+- marcar comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 570968af05424597a7fe2b59e86e0364694e0e1f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0f59f56a6d542120d088d764d1b301329a7f0b167f25952587a9e743878643e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105758749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138747"
 ---
-# <a name="mark-command"></a>comando de marca
+# <a name="mark-command"></a>comando mark
 
-O comando Mark controla a gravação e o apagamento de marcas na fita de vídeo. Os dispositivos VCR reconhecem este comando.
+O comando de marca controla a gravação e a apagamento de marcas na casa. Os dispositivos VCR reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -55,8 +55,8 @@ Um dos sinalizadores a seguir.
 
 | Valor | Significado                                                                                                                                |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------|
-| erase | Apaga uma marca na posição atual, se houver uma. Para apagar uma marca, primeiro busque para a marca e, em seguida, emite o comando marcar "apagar". |
-| gravação | Grava uma marca na posição atual. O VCR pode precisar estar no modo de gravação ou de registro para que esse comando seja executado com sucesso.                    |
+| erase | Apaga uma marca na posição atual, se houver uma. Para apagar uma marca, primeiro procure a marca e, em seguida, emisse o comando de marca "apagar". |
+| gravação | Grava uma marca na posição atual. O VCR pode precisar estar no modo de reprodução ou registro para que esse comando seja bem-sucedido.                    |
 
 
 
@@ -67,17 +67,17 @@ Um dos sinalizadores a seguir.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "Notify" ou "Test". Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify" ou "test". Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-As marcas são sinais especiais gravados no conteúdo que podem ser detectados pelo VCR durante pesquisas de alta velocidade. As marcas são específicas do VCR.
+Marcas são sinais especiais gravados no conteúdo que podem ser detectados pelo VCR durante pesquisas de alta velocidade. As marcas são específicas do VCR.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -94,7 +94,7 @@ As marcas são sinais especiais gravados no conteúdo que podem ser detectados p
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)

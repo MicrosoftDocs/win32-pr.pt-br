@@ -120,15 +120,15 @@ Tempo, em milissegundos, depois que um domínio for detectado como inacessível 
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Verdadeiro                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**ms-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Tempo, em milissegundos, depois que um domínio for detectado como inacessível 
 | ID do link                | \-                                                                 |
 | MAPI-Id                | \-                                                                 |
 | System-Only            | Falso                                                              |
-| É de valor único       | Verdadeiro                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | Falso                                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Falso                                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | \-                                                                 |
 | Range-Upper            | \-                                                                 |
 | Search-Flags           | 0x00000000                                                         |
 | System-Flags           | 0x00000010                                                         |
-| Classes usadas em        | [**ms-DS-AZ-admin-Manager**](c-msds-azadminmanager.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Admin-Manager**](c-msds-azadminmanager.md)<br/> |
 
 
 

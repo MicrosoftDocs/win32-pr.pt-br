@@ -1,6 +1,6 @@
 ---
 title: Método RemoveTSCGroup da classe Win32_TSLicenseServer
-description: O RemoveTSCGroup não está mais disponível para uso a partir do Windows Server 2012.
+description: O RemoveTSCGroup não está mais disponível para uso a partir de Windows Server 2012.
 ms.assetid: e5e3eca9-4990-4322-b41d-c6b6b3356272
 ms.tgt_platform: multiple
 keywords:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 26ca693e7e98ca811ce52292fb26622b7f2174cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ebcd3c0eacb54a14675d2794f1c42f8e7a18cd9ea78c7f6369ef883cc3d9fad3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499780"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118127501"
 ---
 # <a name="removetscgroup-method-of-the-win32_tslicenseserver-class"></a>Método RemoveTSCGroup da classe Win32 \_ TSLicenseServer
 
-\[O **RemoveTSCGroup** não está mais disponível para uso a partir do Windows Server 2012.\]
+\[O **RemoveTSCGroup** não está mais disponível para uso a partir de Windows Server 2012.\]
 
 Não há suporte para o método.
 
@@ -45,7 +45,7 @@ uint32 RemoveTSCGroup();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o **WBEM \_ E \_ não \_ tem suporte**.
 
@@ -55,7 +55,7 @@ Retorna o **WBEM \_ E \_ não \_ tem suporte**.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 

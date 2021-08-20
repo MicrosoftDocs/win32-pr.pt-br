@@ -3,7 +3,7 @@ title: Atributos de playlist de CD
 description: Atributos de playlist de CD
 ms.assetid: 3f447fa8-2d09-49c3-8efd-6bf048429a6b
 keywords:
-- Windows Media Player,atributos de playlist de CD
+- Windows Media Player, atributos de playlist de CD
 - Windows Media Player Dispositivos móveis, atributos de playlist de CD
 - Windows Media Player de objeto, atributos de playlist de CD
 - modelo de objeto, atributos de playlist de CD

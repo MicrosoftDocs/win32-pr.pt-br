@@ -1,7 +1,7 @@
 ---
-description: Função IWICBitmapFrameEncode_Commit_Proxy function-proxy para o método Commit.
+description: IWICBitmapFrameEncode_Commit_Proxy função - função proxy para o método Commit.
 ms.assetid: 605801e5-00f8-4e4f-87d3-ad34d3568ee5
-title: Função IWICBitmapFrameEncode_Commit_Proxy
+title: IWICBitmapFrameEncode_Commit_Proxy função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118711919"
 ---
-# <a name="iwicbitmapframeencode_commit_proxy-function"></a>Função de proxy de \_ confirmação de IWICBitmapFrameEncode \_
+# <a name="iwicbitmapframeencode_commit_proxy-function"></a>Função proxy de commit IWICBitmapFrameEncode \_ \_
 
-Função de proxy para o método [**Commit**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-commit) .
+Função proxy para o [**método Commit.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-commit)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,12 +40,12 @@ HRESULT IWICBitmapFrameEncode_Commit_Proxy(
 
 <dl> <dt>
 
-*Isso \_ PTR* \[\]
+*ESTE \_ PTR* \[ em\]
 </dt> <dd>
 
 Tipo: **[ **IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)\***
 
-Ponteiro para este objeto [**IWICBitmapFrameEncode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode) .
+Ponteiro para este [**objeto IWICBitmapFrameEncode.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode)
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ Ponteiro para este objeto [**IWICBitmapFrameEncode**](/windows/desktop/api/Winco
 
 Tipo: **HRESULT**
 
-Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se essa função for bem-sucedida, ela retornará **S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
@@ -63,9 +63,9 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
-| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, Windows aplicativos da área de trabalho do Vista \[\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                                                                             |
+| DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec.lib</dt> </dl> |
 
 
 

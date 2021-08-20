@@ -4,12 +4,12 @@ description: Este tópico descreve as situações em que você pode receber um e
 ms.assetid: 408bfa47-fda0-4a25-89c1-da41d967ad61
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e54d3bd9e39dae9c5de9ad1644e5955bd5fb90d2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 4d36a29c688966526d5431e1fe2f643e39b378779d122d22f38dea2089a5191c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822833"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118115137"
 ---
 # <a name="receiving-errors-for-iaccessible-interface-pointers"></a>Recebendo erros para ponteiros de interface IAccessible
 
@@ -33,9 +33,9 @@ Essa situação se aplica às seguintes funções e métodos:
 -   [**IAccessible:: obter \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)
 -   [**IAccessible:: obter \_ accSelection**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accselection)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,63 +1,63 @@
 ---
-description: Use o CertMgr para exibir certificados, CRLs e CTLs de um arquivo ou de um repositório de certificados, para copiar certificados em um repositório de certificados, para excluir certificados de um repositório de certificados e para salvar certificados em arquivos.
+description: Use o CertMgr para exibir certificados, CRLs e CTLs de um arquivo ou um armazenamento de certificados, para copiar certificados em um armazenamento de certificados, para excluir certificados de um armazenamento de certificados e salvar certificados em arquivos.
 ms.assetid: cc2424bf-e7ea-4484-9934-3aba02b63492
 title: Usando CertMgr
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ef7e22862184f87e1f070a4683d313cb1457e7d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c0e62135937e0e14bcdb97ee9d51d37d174de80078939ef1e0c762461923f53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105753389"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117971537"
 ---
 # <a name="using-certmgr"></a>Usando CertMgr
 
-O [certmgr](certmgr.md) pode ser usado para exibir [*certificados*](../secgloss/c-gly.md), [*listas de certificados revogados*](../secgloss/c-gly.md) (CRLs) e listas de [*certificados confiáveis*](../secgloss/c-gly.md) (CTLs) de um arquivo ou de um repositório de certificados, para copiar certificados em um [*repositório de certificados*](../secgloss/c-gly.md), para excluir certificados de um repositório de certificados e para salvar certificados em arquivos.
+[O CertMgr](certmgr.md) pode ser usado para exibir [*certificados,*](../secgloss/c-gly.md)CRLs [*(listas*](../secgloss/c-gly.md) de certificados revogados) e CTLs [*(listas*](../secgloss/c-gly.md) de confiança de certificado) de um arquivo ou um armazenamento de certificados, para copiar certificados em um armazenamento de certificados, [](../secgloss/c-gly.md)para excluir certificados de um armazenamento de certificados e salvar certificados em arquivos.
 
-Quando [certmgr](certmgr.md) é usado sem opções, um assistente de certmgr é exibido para orientar o usuário durante a operação.
+Quando [o CertMgr](certmgr.md) é usado sem opções, um assistente certMgr é exibido para orientar o usuário durante a operação.
 
 O arquivo deve ser um dos seguintes tipos:
 
--   Um arquivo de certificado, CRL ou CTL codificado (pode ser codificado em base-64)
--   Um \# arquivo PKCS 7
+-   Um arquivo de certificado, CRL ou CTL codificado (pode ser codificado em base 64)
+-   Um arquivo PKCS \# 7
 -   Um arquivo SPC
 -   Um documento assinado
--   Um StoreFile serializado
+-   Um storeFile serializado
 
-Os exemplos a seguir usam comandos [certmgr](certmgr.md) para executar tarefas comuns de certificado.
+Os exemplos a seguir usam [comandos CertMgr](certmgr.md) para executar tarefas comuns de certificado.
 
--   Exiba os certificados, as CRLs e as CTLs de *MyFile. ext*.
+-   Ex veja os certificados, as CRLs e as CTLs *de MyFile.ext.*
 
-    **certmgr** *MyFile. ext*
+    **certmgr** *MyFile.ext*
 
--   Exiba os certificados, as CRLs e as CTLs do meu repositório do sistema.
+-   Exibir os certificados, as CRLs e as CTLs do meu armazenamento do sistema.
 
-    **Certmgr-s My**
+    **certmgr -s my**
 
--   Copie todos os certificados, CRLs e CTLs em um arquivo chamado *MyFile. ext* para um novo arquivo, chamado *newfile. ext*.
+-   Copie todos os certificados, CRLs e CTLs em um arquivo chamado *MyFile.ext* para um novo arquivo, *chamado NewFile.ext.*
 
-    **certmgr-Add-All-c** *MyFile. ext* *newfile. ext*
+    **certmgr -add -all -c** *MyFile.ext* *NewFile.ext*
 
--   Copie todos os certificados, CRLs e CTLs do meu repositório do sistema para um arquivo chamado *NewMyFile. ext*.
+-   Copie todos os certificados, CRLs e CTLs do armazenamento do sistema MY para um arquivo *chamado NewMyFile.ext.*
 
-    **certmgr-adicionar-tudo-c-s My** *NewMyFile. ext*
+    **certmgr -add -all -c -s my** *NewMyFile.ext*
 
--   Copie um certificado com o nome comum *MyCert* no meu armazenamento do sistema para um arquivo chamado *NewCert. cer*.
+-   Copie um certificado com o nome comum *MyCert* no armazenamento do sistema MY para um arquivo *chamado NewCert.cer.*
 
-    **certmgr-Add-c-n** *MyCert* **-s minha** *NewCert. cer*
+    **certmgr -add -c -n** *MyCert* **-s my** *NewCert.cer*
 
--   Exclua todos os certificados do meu repositório do sistema.
+-   Exclua todos os certificados do meu armazenamento do sistema.
 
-    **Certmgr-del-All-c-s meu**
+    **certmgr -del -all -c -s my**
 
--   Exclua todas as CTLs do meu repositório do sistema e salve o repositório resultante em um arquivo chamado *NewStore. Str*.
+-   Exclua todas as CTLs do repositório do sistema MY e salve o repositório resultante em um arquivo *chamado NewStore.str*.
 
-    **certmgr-del-All-CTL-s My** *NewStore. Str*
+    **certmgr -del -all -ctl -s my** *NewStore.str*
 
--   Salve, em um arquivo chamado *NewCert. cer*, um certificado que é um certificado codificado [*X. 509*](../secgloss/x-gly.md) , que tem o nome comum *MyCert* e que está localizado no repositório de certificados raiz.
+-   Salve, em um arquivo chamado *NewCert.cer*, um certificado que é um certificado codificado em [*X.509,*](../secgloss/x-gly.md) que tem o nome comum *MyCert* e que está localizado no armazenamento de certificados raiz.
 
-    **certmgr-Put-c-n** *MyCert* **-s raiz** *NewCert. cer*
+    **certmgr -put -c -n** *MyCert* **-s root** *NewCert.cer*
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

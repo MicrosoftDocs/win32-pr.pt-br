@@ -3,9 +3,9 @@ title: Propriedade IResultsViewer EnumSelectedItems
 description: Essa função retorna uma lista dos itens selecionados na exibição (pode ser NULL).
 ms.assetid: ae987fb0-e8db-4b94-9d2e-582fbab46ac6
 keywords:
-- Propriedade EnumSelectedItems Herdados Windows Recursos de Ambiente
-- Propriedade EnumSelectedItems Herdada Windows recursos de ambiente, interface IResultsViewer
-- Interface IResultsViewer Recursos Windows ambiente herdados, propriedade EnumSelectedItems
+- recursos de ambiente herdado Windows da propriedade EnumSelectedItems
+- propriedade EnumSelectedItems recursos de ambiente herdados Windows, interface IResultsViewer
+- recursos de ambiente Windows da interface IResultsViewer herdada, propriedade EnumSelectedItems
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118754312"
 ---
-# <a name="iresultsviewerenumselecteditems-property"></a>Propriedade IResultsViewer::EnumSelectedItems
+# <a name="iresultsviewerenumselecteditems-property"></a>Propriedade IResultsViewer:: EnumSelectedItems
 
 Esta propriedade não é implementada.
 

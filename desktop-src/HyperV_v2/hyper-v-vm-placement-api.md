@@ -21,7 +21,7 @@ A API de posicionamento da VM (máquina virtual) do Hyper-V contém as informaç
 
 | Tópico                                                                    | Descrição                                                                                                                                                |
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Msvm \_ CompatibilityVector**](msvm-compatibilityvector.md)<br/> | Faz referência às informações de compatibilidade de uma VM (máquina virtual) (quando executado em um sistema de computadores VM) ou um host (quando executado em um sistema de computador host).<br/> |
+| [**Msvm \_ CompatibilityVector**](msvm-compatibilityvector.md)<br/> | Faz referência às informações de compatibilidade para uma VM (máquina virtual) (quando executado em um sistema de computador VM) ou um host (quando executado em um sistema de computador host).<br/> |
 
 
 

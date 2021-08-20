@@ -1,12 +1,12 @@
 ---
-title: Método GenerateReportEx da Win32_TSLicenseReport classe
+title: Método GenerateReportEx da classe Win32_TSLicenseReport
 description: Gera um relatório de uso de licença atual para licenças por usuário e por dispositivo.
 ms.assetid: c454e0c5-ca1c-41c7-86b2-1e52c414aeb5
 ms.tgt_platform: multiple
 keywords:
-- Método GenerateReportEx Serviços de Área de Trabalho Remota
-- Método GenerateReportEx Serviços de Área de Trabalho Remota , Win32_TSLicenseReport classe
-- Win32_TSLicenseReport classe Serviços de Área de Trabalho Remota , método GenerateReportEx
+- Serviços de Área de Trabalho Remota do método GenerateReportEx
+- Método GenerateReportEx Serviços de Área de Trabalho Remota, classe Win32_TSLicenseReport
+- Classe Win32_TSLicenseReport Serviços de Área de Trabalho Remota, método GenerateReportEx
 topic_type:
 - apiref
 api_name:
@@ -43,7 +43,7 @@ uint32 GenerateReportEx(
 
 <dl> <dt>
 
-*FileName* \[ out\]
+*Nome do arquivo* \[ fora\]
 </dt> <dd>
 
 O nome do arquivo do relatório gerado.
@@ -52,7 +52,7 @@ O nome do arquivo do relatório gerado.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md).
+Se o método tiver sucesso, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para obter uma lista de códigos de erro, consulte [serviços de área de trabalho remota códigos de erro do provedor WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Comentários
 
@@ -60,7 +60,7 @@ Esse é um método estático.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -71,7 +71,7 @@ arquivos Managed Object Format (MOF) contêm as definições para classes WMI (I
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                            |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -80,7 +80,7 @@ arquivos Managed Object Format (MOF) contêm as definições para classes WMI (I
 
 <dl> <dt>
 
-[**Win32 \_ TSLicenseReport**](win32-tslicensereport.md)
+[**\_TSLicenseReport Win32**](win32-tslicensereport.md)
 </dt> </dl>
 
  

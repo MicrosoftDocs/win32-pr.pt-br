@@ -1,19 +1,19 @@
 ---
 title: Arbitragem de filtro
-description: A arbitragem de filtro é a lógica incorporada à WFP (Windows Filtering Platform) usada para determinar como os filtros interagem entre si ao tomar decisões de filtragem de tráfego de rede.
+description: a arbitragem de filtro é a lógica incorporada à WFP (plataforma de filtragem de Windows) usada para determinar como os filtros interagem entre si ao tomar decisões de filtragem de tráfego de rede.
 ms.assetid: d097f307-113e-4dc3-ad59-ddfb85061583
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9fd7df778d1c24b7480de3321e7a1ec126d8e642
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 7640e94440cf040d9ca51b6c639dc66e3e8a767024d6dbcd01b9c0cd2b87a24b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103641026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151180"
 ---
 # <a name="filter-arbitration"></a>Arbitragem de filtro
 
-A arbitragem de filtro é a lógica incorporada à WFP (Windows Filtering Platform) usada para determinar como os filtros interagem entre si ao tomar decisões de filtragem de tráfego de rede.
+a arbitragem de filtro é a lógica incorporada à WFP (plataforma de filtragem de Windows) usada para determinar como os filtros interagem entre si ao tomar decisões de filtragem de tráfego de rede.
 
 ## <a name="filter-arbitration-behaviors"></a>Filtrar comportamentos de arbitragem
 
@@ -113,14 +113,14 @@ Quando um **veto** é emitido, é uma indicação de conflito na configuração.
 
      
 
-O comportamento de mitigação descrito acima garante que um filtro de "permissão rígida" não seja substituído silenciosamente por um filtro de "bloqueio" e cubra o cenário em que uma porta de administração remota não tem permissão para ser bloqueada pelo firewall. Para substituir silenciosamente os filtros de "permissão rígida", um firewall precisa adicionar seus filtros em uma subcamada de prioridade mais alta.
+O comportamento de mitigação descrito acima garante que um filtro "Hard Permit" não seja substituído silenciosamente por um filtro "Bloquear" e abrange o cenário em que uma porta de administração remota não tem permissão para ser bloqueada pelo firewall. Para substituir silenciosamente os filtros "Hard Permit", um firewall precisa adicionar seus filtros em uma sub-camada de prioridade mais alta.
 
 > [!Note]  
-> Como não há arbitragem de camada cruzada, o tráfego permitido com "permissão rígida" ainda pode ser bloqueado em outra camada. É responsabilidade do autor da política garantir que o tráfego seja permitido em cada camada, se necessário.
+> Como não há nenhuma mediação entre camadas, o tráfego permitido com "Hard Permit" ainda pode ser bloqueado em outra camada. É responsabilidade do autor da política garantir que o tráfego seja permitido em cada camada, se necessário.
 
  
 
-Aplicativos de usuário solicitando que as portas sejam abertas adicione filtros substituíveis a uma subcamada de baixa prioridade. O firewall pode assinar o filtro adicionar eventos de notificação e adicionar um filtro de correspondência após a validação de usuário (ou política).
+Os aplicativos de usuário que solicitam que as portas sejam abertas adicionam filtros que podem ser substituídos a uma subcamada de baixa prioridade. O firewall pode assinar o filtro adicionar eventos de notificação e adicionar um filtro correspondente após a validação do usuário (ou da política).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

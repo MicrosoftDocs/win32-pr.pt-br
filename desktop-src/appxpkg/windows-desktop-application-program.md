@@ -1,6 +1,6 @@
 ---
 title: Programa de aplicativo da área de trabalho do Windows
-description: você pode obter dados de telemetria e relatórios de análise detalhados que permitem ver como seus Windows aplicativos de área de trabalho estão fazendo por meio do novo programa de aplicativo de área de trabalho do Windows.
+description: Você pode obter dados de telemetria detalhados e relatórios de análise que permitem ver como seus aplicativos da área de trabalho Windows estão fazendo por meio do novo programa de aplicativos Windows Desktop.
 ms.assetid: F1ED72A5-E1CD-4924-A81B-ED6FAF5E2AA3
 ms.topic: article
 ms.date: 11/02/2018
@@ -13,63 +13,63 @@ ms.locfileid: "118105708"
 ---
 # <a name="windows-desktop-application-program"></a>Programa de aplicativo da área de trabalho do Windows
 
-você pode obter dados de telemetria e relatórios de análise detalhados que permitem ver como seus Windows aplicativos de área de trabalho estão fazendo por meio do novo programa de aplicativo de área de trabalho do Windows.
+Você pode obter dados de telemetria detalhados e relatórios de análise que permitem ver como seus aplicativos da área de trabalho Windows estão fazendo por meio do novo programa de aplicativos Windows Desktop.
 
-não há encargos para acessar esses dados, tudo o que você precisa fazer é [inscrever-se](https://login.microsoftonline.com/common/oauth2/authorize?client_id=4990cffe-04e8-4e8b-808a-1175604b879f&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3deJsPaLaK4fU55nKvN21CjU6FsdJ0aPGfhsjGAZ0HR9bE6rgwHHX4izvRt_w-0VUlIF0ClCya4cVY6Uv4qTAqDrH8LTwFpjFGWVW2BAIJmAAuxBLZGTPS_DYy0wwgvTh1orWTCMvBdlOu_kF8vwNe4mjtk9JRMvYaETyspKrJi-s5Z2K7lKIPqnlFkwSU-aoot-3NxTeQ0wu6_RJ1nf_kLFatEkVAqokDSYTKkpv7zF6gA3YYriMFoC9_f2uxuXpI-STckg&nonce=637177463062493881.YjhiOTZjYTMtOTVhZS00OGM1LWI4MDItNWE5MThjMjA1ZjZmMTAyZDRiMGQtMDJhNC00ZDJmLWFkM2QtM2FjZDJkNjcxYWQy&redirect_uri=https%3a%2f%2fpartner.microsoft.com%2faad%2fauthPostGateway&resource=797f4846-ba00-4fd7-ba43-dac1f8f63013&mkt=en-US) e aceitar o [Windows contrato de programa de aplicativo de área de trabalho](https://go.microsoft.com/fwlink/?linkid=853677)e, em seguida, carregar um arquivo assinado usando o mesmo certificado usado para assinar os arquivos executáveis do aplicativo.
+Não há nenhum custo para acessar esses dados. Tudo o que você precisa fazer é inscrever-se e aceitar o Contrato de Programa de Aplicativo da Área de Trabalho do [Windows](https://go.microsoft.com/fwlink/?linkid=853677)e, em seguida, carregar um arquivo assinado usando o mesmo certificado usado para assinar os arquivos executáveis do aplicativo. [](https://login.microsoftonline.com/common/oauth2/authorize?client_id=4990cffe-04e8-4e8b-808a-1175604b879f&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3deJsPaLaK4fU55nKvN21CjU6FsdJ0aPGfhsjGAZ0HR9bE6rgwHHX4izvRt_w-0VUlIF0ClCya4cVY6Uv4qTAqDrH8LTwFpjFGWVW2BAIJmAAuxBLZGTPS_DYy0wwgvTh1orWTCMvBdlOu_kF8vwNe4mjtk9JRMvYaETyspKrJi-s5Z2K7lKIPqnlFkwSU-aoot-3NxTeQ0wu6_RJ1nf_kLFatEkVAqokDSYTKkpv7zF6gA3YYriMFoC9_f2uxuXpI-STckg&nonce=637177463062493881.YjhiOTZjYTMtOTVhZS00OGM1LWI4MDItNWE5MThjMjA1ZjZmMTAyZDRiMGQtMDJhNC00ZDJmLWFkM2QtM2FjZDJkNjcxYWQy&redirect_uri=https%3a%2f%2fpartner.microsoft.com%2faad%2fauthPostGateway&resource=797f4846-ba00-4fd7-ba43-dac1f8f63013&mkt=en-US)
 
-## <a name="join-the-windows-desktop-application-program"></a>participe do programa de aplicativo de área de trabalho Windows
+## <a name="join-the-windows-desktop-application-program"></a>Ingressar no programa Windows Desktop Application
 
-**Se sua empresa já tiver uma conta do Partner Center**: entre na sua conta do Partner Center (usando o conta Microsoft associado ao proprietário da conta) e navegue até a página **programas** (em **configurações da conta** ou selecionando **tudo** no menu de navegação à esquerda). em **Windows programa de aplicativo de área de trabalho**, clique em **Introdução** para ingressar no programa sem custo adicional. se você tiver um locatário do Azure AD associado à sua conta do Partner Center, os usuários que você adicionou poderão acessar o programa de aplicativo de área de trabalho Windows. Em breve, nós lhe permitimos que você defina um acesso mais granular para esse programa.
+Se sua empresa já tiver uma conta do Partner Center: entre em sua conta do Partner Center (usando o conta Microsoft associado ao proprietário  da conta)  e navegue até **a** página Programas (em Configurações da conta ou selecionando Tudo no menu de navegação à esquerda).  Em **Windows Aplicativo da Área** de Trabalho , clique **Introdução** para ingressar no programa sem custo adicional. Se você tiver um locatário do Azure AD associado à sua conta do Partner Center, os usuários que você adicionou poderão acessar o programa Windows Desktop Application. Em breve, permitiremos definir acesso mais granular para esse programa.
 
 > [!Tip]  
-> Se sua empresa tiver uma conta do Partner Center, mas você não tiver acesso a ela, peça ao administrador para adicioná-lo [como um usuário](/windows/uwp/publish/add-users-groups-and-azure-ad-applications). observe que apenas o proprietário da conta pode ingressar no programa de aplicativo de área de trabalho Windows.
+> Se sua empresa tiver uma Partner Center, mas você não tiver acesso a ela, peça ao administrador para adicioná-lo [como um usuário.](/windows/uwp/publish/add-users-groups-and-azure-ad-applications) Observe que somente o proprietário da conta pode ingressar no Windows Aplicativo da Área de Trabalho.
 
  
 
-**se sua empresa não tiver uma conta do Partner Center**: você poderá [se inscrever para o programa de aplicativo de área de trabalho Windows diretamente](https://login.microsoftonline.com/common/oauth2/authorize?client_id=4990cffe-04e8-4e8b-808a-1175604b879f&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dWc5R_wIKVD0EbOy2UUxS0_0GQJnIAbD-eisMn7Gb4cJL18fRdelvbtj5_R0zoGlsebcnAxIvwKS5kx4Ma4mLMbU4l9ULsE9ajiZU4wtchLJXyJGsPCjCBUNV7TY1SzwXAI-LepSoXkqa8xSywVb7JZ3Xed-Lcw-kwEShFOwt0SdSdc1nNevHbPOhotOeFQcqbo0HESVYXk6pZORJ_OYimG99onp_zSTyludOvvaTd9GYKUgX9exCU5IHReP7MzJDHOgqTg&nonce=637177463071243612.NDU4MjE2ZTMtNmVkMi00YWNiLWEzZGEtMjYyNDRkODI0M2FmOTM3MmE1NzgtMzQ1OC00M2ZkLWJhMDktYzI4YTNhNzdiYTk0&redirect_uri=https%3a%2f%2fpartner.microsoft.com%2faad%2fauthPostGateway&resource=797f4846-ba00-4fd7-ba43-dac1f8f63013&mkt=en-US) , sem nenhum custo. Em breve, forneceremos a opção de [associar um locatário do Azure ad à sua conta](/windows/uwp/publish/add-users-groups-and-azure-ad-applications) para que outras pessoas em sua empresa também possam entrar.
+**Se sua empresa não tiver uma** conta Partner Center : você pode se inscrever no programa de aplicativos da área de trabalho [do Windows](https://login.microsoftonline.com/common/oauth2/authorize?client_id=4990cffe-04e8-4e8b-808a-1175604b879f&response_mode=form_post&response_type=code+id_token&scope=openid+profile&state=OpenIdConnect.AuthenticationProperties%3dWc5R_wIKVD0EbOy2UUxS0_0GQJnIAbD-eisMn7Gb4cJL18fRdelvbtj5_R0zoGlsebcnAxIvwKS5kx4Ma4mLMbU4l9ULsE9ajiZU4wtchLJXyJGsPCjCBUNV7TY1SzwXAI-LepSoXkqa8xSywVb7JZ3Xed-Lcw-kwEShFOwt0SdSdc1nNevHbPOhotOeFQcqbo0HESVYXk6pZORJ_OYimG99onp_zSTyludOvvaTd9GYKUgX9exCU5IHReP7MzJDHOgqTg&nonce=637177463071243612.NDU4MjE2ZTMtNmVkMi00YWNiLWEzZGEtMjYyNDRkODI0M2FmOTM3MmE1NzgtMzQ1OC00M2ZkLWJhMDktYzI4YTNhNzdiYTk0&redirect_uri=https%3a%2f%2fpartner.microsoft.com%2faad%2fauthPostGateway&resource=797f4846-ba00-4fd7-ba43-dac1f8f63013&mkt=en-US) diretamente sem custo. Em breve, forneceremos a opção de associar um locatário do [Azure AD](/windows/uwp/publish/add-users-groups-and-azure-ad-applications) à sua conta para que outras pessoas em sua empresa também possam entrar.
 
-## <a name="add-your-desktop-applications"></a>Adicionar seus aplicativos de área de trabalho
+## <a name="add-your-desktop-applications"></a>Adicionar seus aplicativos da área de trabalho
 
-depois de ingressar no programa, você precisará adicionar seus Windows aplicativos de área de trabalho ao seu painel para que possamos começar a mostrar seus relatórios de análise.
+Depois de ingressar no programa, você precisará adicionar seus aplicativos Windows desktop ao painel para que possamos começar a mostrar seus relatórios de análise.
 
-Usamos a assinatura de código para estabelecer a identidade da sua empresa e recuperar a análise para aplicativos que você publica.
+Usamos a assinatura de código para estabelecer a identidade da sua empresa e recuperar análises para aplicativos que você publica.
 
-Forneceremos um arquivo e solicitaremos que você o assine com os mesmos certificados de assinatura de código não revogados válidos e não expirados que você usa para assinar seus aplicativos de área de trabalho. Depois disso, você carregará esse arquivo assinado em seu painel. Isso nos permite saber que todos os aplicativos da área de trabalho assinados com o mesmo certificado pertencem à sua conta. Não usamos suas informações de certificado para nenhuma outra finalidade.
+Forneceremos um arquivo e solicitaremos que você o assine com os mesmos certificados de assinatura de código válidos, não expirados e não revogados que você usa para assinar seus aplicativos da área de trabalho. Depois disso, você carregará esse arquivo assinado no painel. Isso nos permite saber que todos os aplicativos da área de trabalho assinados com o mesmo certificado pertencem à sua conta. Não usamos suas informações de certificado para nenhuma outra finalidade.
 
 > [!Important]  
-> Você não precisa repetir esse processo se você liberar um novo aplicativo de área de trabalho. Depois de carregar o arquivo assinado, nós identificaremos automaticamente todos os novos aplicativos assinados com o mesmo certificado e recuperaremos automaticamente a análise para esses produtos. Você também não precisa distribuir o arquivo fornecido em seus aplicativos ou enviar qualquer tipo de mapeamento para seus produtos
+> Você não precisará repetir esse processo se lançar um novo aplicativo da área de trabalho. Depois de carregar o arquivo assinado, identificaremos automaticamente todos os novos aplicativos assinados com o mesmo certificado e recuperaremos automaticamente a análise para esses produtos. Você também não precisa distribuir o arquivo fornecido em seus aplicativos nem enviar nenhum tipo de mapeamento para seus produtos
 
  
 
-**Para adicionar um ou mais aplicativos de área de trabalho**
+**Para adicionar um ou mais aplicativos da área de trabalho**
 
-1.  No painel, selecione **adicionar aplicativos de área de trabalho**.
-2.  Na página seguinte, baixe o arquivo que pode ser assinado selecionando **baixar o arquivo** e salve o arquivo em seu computador.
-3.  Assine o arquivo que você acabou de baixar usando o mesmo certificado de assinatura de código que você usa para autenticar seus aplicativos de área de trabalho. você pode usar SignTool.exe (disponível em Microsoft Visual Studio e como parte do [SDK do Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk)) para assinar esse arquivo. Mais detalhes sobre esse processo estão descritos abaixo.
-4.  Upload o arquivo que você acabou de assinar, arrastando-o para o campo (ou clique para procurar seus arquivos).
+1.  No painel, selecione Adicionar **aplicativos da área de trabalho**.
+2.  Na próxima página, baixe o arquivo que pode ser baixado **selecionando Baixar** o arquivo e salve o arquivo no computador.
+3.  Assine o arquivo que você acabou de baixar usando o mesmo certificado de assinatura de código que você usa para autenticar seus aplicativos da área de trabalho. Você pode usar SignTool.exe (disponível no Microsoft Visual Studio e como parte do [SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk)do Windows ) para assinar esse arquivo. Mais detalhes sobre esse processo são descritos abaixo.
+4.  Upload arquivo que você acabou de assinar arrastando-o para o campo (ou clique para procurar seus arquivos).
 5.  Selecione **Enviar** para concluir o processo.
 
-![etapas para adicionar aplicativos de área de trabalho](images/uploadcert.png)
+![etapas para adicionar aplicativos da área de trabalho](images/uploadcert.png)
 
-Se você usar mais de um certificado de assinatura de código, poderá repetir as etapas acima para cada um de seus certificados. Você pode baixar, assinar e carregar um arquivo para cada certificado atual que você usa para assinar seus aplicativos. No entanto, você só pode usar um certificado por arquivo baixado.
+Se você usar mais de um certificado de assinatura de código, poderá repetir as etapas acima para cada um dos seus certificados. Você pode baixar, assinar e carregar um arquivo para cada certificado atual que você usa para assinar seus aplicativos. No entanto, você só pode usar um certificado por arquivo baixado.
 
-depois de concluir essas etapas, identificaremos quais Windows aplicativos de área de trabalho são assinados com o mesmo certificado que você usou para assinar o arquivo. Na maioria dos casos, começaremos a mostrar os relatórios analíticos dentro de 48 horas, embora possa levar um pouco mais tempo.
+Depois de concluir essas etapas, identificaremos quais Windows da área de trabalho são assinados com o mesmo certificado que você usou para assinar nosso arquivo. Na maioria dos casos, vamos começar a mostrar relatórios de análise dentro de 48 horas, embora ocasionalmente possa demorar um pouco mais.
 
-## <a name="use-signtoolexe-to-sign-the-downloaded-file"></a>Usar signtool.exe para assinar o arquivo baixado
+## <a name="use-signtoolexe-to-sign-the-downloaded-file"></a>Use signtool.exe para assinar o arquivo baixado
 
-a Microsoft fornece uma ferramenta para assinar arquivos, SignTool.exe, com Visual Studio e no [SDK do Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk). Você pode usar essa ferramenta para executar e verificar o processo de assinatura de código. Mais informações sobre o SignTool.exe estão disponíveis [aqui](/dotnet/framework/tools/signtool-exe).
+A Microsoft fornece uma ferramenta para assinar arquivos, SignTool.exe, com Visual Studio e no [SDK Windows .](https://developer.microsoft.com/windows/downloads/windows-10-sdk) Você pode usar essa ferramenta para executar e verificar o processo de assinatura de código. Mais informações sobre SignTool.exe estão disponíveis [aqui.](/dotnet/framework/tools/signtool-exe)
 
-Aqui estão duas das maneiras mais comuns de usar essa ferramenta para assinar o arquivo que pode ser assinado.
+Aqui estão duas das maneiras mais comuns de usar essa ferramenta para assinar o arquivo que pode ser usado.
 
--   se você tiver acesso ao certificado de assinatura de código como um arquivo de [Exchange de informações pessoais (PFX)](/windows-hardware/drivers/install/personal-information-exchange---pfx--files) :
+-   Se você tiver acesso ao certificado de assinatura de código como um [arquivo PFX (Informações Exchange](/windows-hardware/drivers/install/personal-information-exchange---pfx--files) Pessoal) :
 
     ``` syntax
     signtool sign /f MyCert.pfx /p MyCertPassword /v SignableFile.bin
     ```
 
-    ![Captura de tela que mostra uma janela de prompt de comando mostrando o comando ' Signtool sinal/f MyCert. pfx/p MyCertPassword/v SignableFile. bin '.](images/signtool2.png)
+    ![Captura de tela que mostra uma janela do prompt de comando mostrando o comando 'signtool sign /f MyCert.pfx /p MyCertPassword /v SignableFile.bin'.](images/signtool2.png)
 
--   Se o certificado de assinatura de código estiver disponível em seu repositório de certificados local:
+-   Se o certificado de assinatura de código estiver disponível no seu armazenamento de certificados local:
 
     ``` syntax
     Signtool sign /v /s MY /n CertSubjectName SignableFile.bin
@@ -83,57 +83,57 @@ Depois de assinar o arquivo, você pode verificar se ele foi assinado com êxito
 signtool verify /a SignableFile.bin
 ```
 
-## <a name="viewing-your-analytic-data"></a>Exibindo seus dados analíticos
+## <a name="viewing-your-analytic-data"></a>Exibindo seus dados de análise
 
-Depois que os arquivos assinados tiverem sido carregados e identificarmos seus aplicativos de desktop, seu painel mostrará uma visão geral de seus aplicativos, juntamente com as principais métricas.
+Depois que os arquivos assinados foram carregados e identificamos seus aplicativos da área de trabalho, seu painel mostrará uma visão geral dos aplicativos junto com as principais métricas.
 
-Nossos dados de telemetria mostrarão informações de integridade, como falhas para cada aplicativo associado ao seu certificado. Seu painel mostrará uma visão geral de seus aplicativos, juntamente com as métricas-chave. Você pode selecionar qualquer aplicativo para exibir seu relatório de [integridade](#health-report), [instalar relatório](#installs-report)e [Bloquear relatório](#application-blocks-report) no painel. você também pode [recuperar dados analíticos programaticamente usando a API de análise de Microsoft Store](#retrieve-analytic-data-using-the-microsoft-store-analytics-api).
+Nossos dados de telemetria mostrarão informações de saúde, como falhas para cada aplicativo associado ao seu certificado. Seu painel mostrará uma visão geral de seus aplicativos junto com as principais métricas. Você pode selecionar qualquer aplicativo para exibir seu [relatório de saúde,](#health-report)o relatório Instala e [o relatório Blocos](#application-blocks-report) no painel. [](#installs-report) Você também pode [recuperar dados analíticos programaticamente usando a API Microsoft Store analytics.](#retrieve-analytic-data-using-the-microsoft-store-analytics-api)
 
 > [!Note]  
-> Se detectarmos que os metadados de um aplicativo foram atualizados para usar um novo nome, começaremos a relatar novos dados com o novo nome. Os dados históricos associados ao nome antigo serão preservados por 30 dias.
+> Se detectarmos que os metadados de um aplicativo foram atualizados para usar um novo nome, vamos começar a relatar novos dados com o novo nome. Os dados históricos associados ao nome antigo serão preservados por 30 dias.
 > 
 > A análise não estará disponível para um aplicativo até que ele tenha sido instalado em pelo menos 100 dispositivos.
 
 
 ### <a name="health-report"></a>Relatório de integridade
 
-O relatório de **integridade** permite que você obtenha dados relacionados ao desempenho e à qualidade do seu aplicativo, incluindo falhas e eventos sem resposta. Onde for aplicável, você pode exibir rastreamentos de pilha e/ou arquivos CAB para depuração adicional.
+O **relatório** de Saúde permite que você receba dados relacionados ao desempenho e à qualidade do seu aplicativo, incluindo falhas e eventos sem resposta. Onde for aplicável, você pode exibir rastreamentos de pilha e/ou arquivos CAB para depuração adicional.
 
-![relatório de integridade-programa de aplicativos para área de trabalho do Windows](images/health.png)
+![relatório de saúde – programa de aplicativos da área de trabalho do Windows](images/health.png)
 
-Você pode filtrar os dados de várias maneiras, permitindo:
+Você pode filtrar os dados de várias maneiras, permitindo que você:
 
--   Exibir um resumo de todos os tipos de falha, classificados por número de ocorrências
--   Faça uma busca detalhada em uma falha específica e baixe os rastreamentos de pilha para depurar o problema mais rapidamente
+-   Exibir um resumo de todos os tipos de falha, classificar por número de acertos
+-   Fazer drill down em uma falha específica e baixar rastreamentos de pilha para depurar o problema mais rapidamente
 -   Comparar uma nova versão do seu aplicativo com as versões anteriores
--   Exibir dados de integridade em agregação ou por região, permitindo isolar problemas específicos de uma região
--   Compare o desempenho de seus aplicativos de desktop em Windows versões ou em uma versão específica, como a versão mais recente do Windows 10
--   Exibir informações de integridade para um arquivo executável específico incluído em seu aplicativo
+-   Exibir dados de saúde em agregação ou por região, permitindo isolar problemas específicos de uma região
+-   Compare o desempenho de seus aplicativos da área de trabalho Windows versões ou em uma versão específica, como a versão Windows 10 versão mais recente
+-   Exibir informações de saúde para um arquivo executável específico incluído em seu aplicativo
 
-selecione **Upload símbolos** na parte superior da tabela **falhas** para carregar um arquivo de .zip que contém os [arquivos de símbolo](/windows-hardware/drivers/debugger/symbols-and-symbol-files)do aplicativo. Esses arquivos de símbolos serão indexados e usados para produzir rastreamentos de pilha mais precisos. Os tipos de arquivo de símbolo dentro do .zip devem ser. pdb, .dll ou .exe. Depois de carregar com êxito o arquivo de .zip, você verá menos **! Valores desconhecidos** para novas falhas na lista de falhas do aplicativo em aproximadamente 5 dias.
+Selecione **Upload símbolos** na parte superior  da tabela Falhas para carregar um arquivo .zip que contém os arquivos de símbolo [do aplicativo.](/windows-hardware/drivers/debugger/symbols-and-symbol-files) Esses arquivos de símbolo serão indexados e usados para produzir rastreamentos de pilha mais precisos. Os tipos de arquivo de .zip devem ser .pdb, .dll ou .exe. Depois de carregar com êxito o arquivo .zip, você deverá ver menos **! Valores** desconhecidos para novas falhas na lista de falhas do aplicativo em aproximadamente 5 dias.
 
 ### <a name="installs-report"></a>Relatório de instalações
 
-O relatório de **instalações** permite ver quantos dispositivos um aplicativo foi instalado em um determinado dia e o número médio de dispositivos em que cada versão do aplicativo foi instalada nos últimos 30 dias.
+O relatório Instala permite que você veja em quantos dispositivos um aplicativo foi instalado em um determinado dia e o número médio de **dispositivos** em que cada versão do aplicativo foi instalada nos últimos 30 dias.
 
-Você pode filtrar os dados de várias maneiras, permitindo:
+Você pode filtrar os dados de várias maneiras, permitindo que você:
 
--   Exibir um resumo de suas instalações, classificadas por popularidade
+-   Exibir um resumo de suas instalações, classificar por popularidade
 -   Comparar uma nova versão do seu aplicativo com as versões anteriores
 -   Exibir dados de instalação em agregação ou por região
--   Compare o desempenho de seus aplicativos de desktop em Windows versões ou em uma versão específica, como a versão mais recente do Windows 10 ou Windows insider versões rápidas e lentas
+-   Compare o desempenho de seus aplicativos da área de trabalho Windows versões ou em uma versão específica, como as versões mais recentes Windows 10 ou Windows Participante do Programa Windows Insider - Modo Rápido e versões lentas
 
-### <a name="application-blocks-report"></a>Relatório de blocos de aplicativo
+### <a name="application-blocks-report"></a>Relatório de blocos de aplicativos
 
-o relatório **blocos de aplicativos** permite que você veja informações sobre Windows 10 dispositivos nos quais seu aplicativo está afetando Windows 10 atualizações. Você pode ver quantos dispositivos são afetados em um determinado dia, juntamente com o número médio de dispositivos nos últimos 30 dias.
+O **relatório Blocos** de aplicativos permite que você veja informações Windows 10 dispositivos nos quais seu aplicativo está afetando Windows 10 atualizações. Você pode ver quantos dispositivos são afetados em um determinado dia, juntamente com o número médio de dispositivos nos últimos 30 dias.
 
-Os tipos de blocos de atualização incluídos são os seguintes: 
+Os tipos de blocos de atualização incluídos são os seguinte: 
 
 <table>
 <tr><th>Categoria</th><th>Problema</th><th>Descrição</th><th>Diretrizes fornecidas aos usuários</th></tr>
-<tr><td>Potencial SEDIMENT</td><td>Bloqueará a atualização</td><td>O aplicativo não funcionará na nova versão de lançamento do sistema operacional. A ação do usuário é necessária durante a instalação para prosseguir com a atualização.</td><td>Remova o aplicativo antes de atualizar e verifique com o desenvolvedor uma versão compatível do aplicativo.</td></tr>
-<tr><td>SEDIMENT temporário</td><td>Pode bloquear a atualização. É necessário testar o aplicativo.</td><td>A Microsoft está investigando problemas de atualização relacionados a este aplicativo. A atualização não será distribuída para os usuários que podem ser afetados.</td><td>Remova o aplicativo antes de atualizar e verifique com o desenvolvedor uma versão compatível do aplicativo.</td></tr>
-<tr><td>Notificação de tempo de execução</td><td>Pode não funcionar corretamente na nova versão de lançamento do sistema operacional, mas não bloqueará a atualização</td><td>O aplicativo não impedirá a atualização, mas foram detectados problemas que podem impedi-lo de funcionar corretamente na nova versão de lançamento do sistema operacional.</td><td>Nenhuma ação é necessária para que a atualização Continue, mas certifique-se de testar o aplicativo na nova versão de lançamento do sistema operacional e verifique com o desenvolvedor uma versão compatível, se necessário.</td></tr>
+<tr><td>Possíveis 10000</td><td>Bloqueará a atualização</td><td>O aplicativo não funcionará na nova versão de versão do sistema operacional. A ação do usuário é necessária durante a instalação para continuar com a atualização.</td><td>Remova o aplicativo antes de atualizar e verifique com o desenvolvedor se há uma versão compatível do aplicativo.</td></tr>
+<tr><td>Temporária</td><td>Pode bloquear a atualização. É necessário testar o aplicativo.</td><td>A Microsoft está investigando problemas de atualização relacionados a esse aplicativo. A atualização não será roll out para usuários que podem ser afetados.</td><td>Remova o aplicativo antes de atualizar e verifique com o desenvolvedor se há uma versão compatível do aplicativo.</td></tr>
+<tr><td>Notificação de runtime</td><td>Pode não funcionar corretamente na nova versão de versão do sistema operacional, mas não bloqueará a atualização</td><td>O aplicativo não impedirá a atualização, mas foram detectados problemas que podem impedi-lo de funcionar corretamente na nova versão de lançamento do sistema operacional.</td><td>Nenhuma ação é necessária para que a atualização Continue, mas certifique-se de testar o aplicativo na nova versão de lançamento do sistema operacional e verifique com o desenvolvedor uma versão compatível, se necessário.</td></tr>
 </table>
 
 ### <a name="retrieve-analytic-data-using-the-microsoft-store-analytics-api"></a>recuperar dados analíticos usando a API de análise de Microsoft Store

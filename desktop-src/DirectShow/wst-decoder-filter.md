@@ -1,43 +1,43 @@
 ---
-description: Filtro de decodificador de WST
+description: Filtro de decodificador WST
 ms.assetid: 2d33ae3f-565d-4e69-8fb0-117ff582a4d0
-title: Filtro de decodificador de WST
+title: Filtro de decodificador WST
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7eb6804f82e5d15aa324feb163261544969e3c45
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: d61da0540c683e8c4646074715b0518717b4e1958beea5b8ca2ae41fb4629790
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119290766"
 ---
-# <a name="wst-decoder-filter"></a>Filtro de decodificador de WST
+# <a name="wst-decoder-filter"></a>Filtro de decodificador WST
 
-Este componente foi removido do Windows Vista e de sistemas operacionais posteriores. Ele está disponível para uso nos sistemas operacionais Windows XP e Windows Server 2003.
+Esse componente foi removido do Windows Vista e sistemas operacionais posteriores. Ele está disponível para uso nos sistemas operacionais Windows XP e Windows Server 2003.
 
 > [!Note]  
-> A partir do Windows Vista, o DirectShow não fornece um filtro para decodificar o teletexto padrão do mundo (WST).
+> Começando no Windows Vista, DirectShow fornece um filtro para decodificar o WST (World Standard Teletext).
 
  
 
-O decodificador de WST é um filtro de modo kernel que aceita dados de teletextos padrão do mundo decodificados do [codec de WST](wst-codec-filter.md) e entrega os bitmaps para o pino 2 no [mixer de sobreposição](overlay-mixer-filter.md) usando fontes fornecidas pela Microsoft. Somente os idiomas da Europa Ocidental têm suporte no momento; no momento, não há fontes Unicode fornecidas.
+O Decodificador WST é um filtro de modo kernel que aceita dados Decodificados do World Standard Teletext do [](overlay-mixer-filter.md) [Codec do WST](wst-codec-filter.md) e fornece os bitmaps para Fixar 2 no Mixer sobreposição usando fontes fornecidas pela Microsoft. Somente idiomas da Europa Ocidental têm suporte no momento; Nenhuma fonte Unicode é fornecida no momento.
 
-Esse filtro pode ser adicionado ao grafo automaticamente chamando [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream), usando o pino de saída do codec de WST.
+Esse filtro pode ser adicionado ao grafo automaticamente chamando [**ICaptureGraphBuilder2::RenderStream,**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream)usando o pino de saída do Codec do WST.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|---------------------------------------------------------------|
-| Filtrar interfaces                        | ISpecifyPropertyPages, [ **IAMWstDecoder**](/previous-versions/windows/desktop/api/Iwstdec/nn-iwstdec-iamwstdecoder) |
-| Tipos de mídia de pino de entrada                    | MEDIATYPE \_ VBI, \_ TELEtext MEDIASUBTYPE                        |
-| Interfaces de pino de entrada                     | [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)                                          |
-| Tipos de mídia do pino de saída                   | Vídeo de MEDIATYPE \_                                              |
-| Interfaces de pino de saída                    | [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)                                          |
-| CLSID do filtro                             | \_WSTDECODER CLSID                                             |
-| CLSID de página de propriedades                      | \_WSTDECODERPROPERTYPAGE CLSID                                 |
+| Interfaces de filtro                        | ISpecifyPropertyPages, [ **IAMWstDecoder**](/previous-versions/windows/desktop/api/Iwstdec/nn-iwstdec-iamwstdecoder) |
+| Tipos de mídia de pino de entrada                    | MEDIATYPE \_ VBI, MEDIASUBTYPE \_ TELETEXT                        |
+| Interfaces de pino de entrada                     | [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin)                                          |
+| Tipos de mídia de pino de saída                   | Vídeo \_ MEDIATYPE                                              |
+| Interfaces de pino de saída                    | [**Ipin**](/windows/desktop/api/Strmif/nn-strmif-ipin)                                          |
+| Filtrar CLSID                             | CLSID \_ WSTDecoder                                             |
+| CLSID da página de propriedades                      | CLSID \_ WstDecoderPropertyPage                                 |
 | Executável                               | Wstdecod.DLL                                                  |
-| [Núcleo](merit.md)                       | MÉRITO \_ normal                                                 |
-| [Categoria do filtro](filter-categories.md) | \_LEGACYAMFILTERCATEGORY CLSID                                 |
+| [Mérito](merit.md)                       | NORMAL DE SEMPRE \_                                                 |
+| [Categoria de filtro](filter-categories.md) | CLSID \_ LegacyAmFilterCategory                                 |
 
 
 
@@ -47,10 +47,10 @@ Esse filtro pode ser adicionado ao grafo automaticamente chamando [**ICaptureGra
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> <dt>
 
-[Exibindo teletexto do mundo Standard](viewing-world-standard-teletext.md)
+[Exibindo o World Standard Teletext](viewing-world-standard-teletext.md)
 </dt> </dl>
 
  

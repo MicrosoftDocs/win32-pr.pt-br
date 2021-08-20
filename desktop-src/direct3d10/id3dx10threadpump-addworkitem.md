@@ -1,7 +1,7 @@
 ---
-description: Adicione um item de trabalho à bomba do thread.
+description: Adicione um item de trabalho à bomba de thread.
 ms.assetid: f07789dc-a3d5-4bad-9768-527e701271b8
-title: 'Método ID3DX10ThreadPump:: AddWorkItem (D3DX10. h)'
+title: Método ID3DX10ThreadPump::AddWorkItem (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: aaf5286ca6cf7b61b0027b176d9a9261bd0beaa8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 43602019018a9751453eb93f4ffb9b1c29eada6caf120a6721522982c3355dfc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105810792"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119609316"
 ---
-# <a name="id3dx10threadpumpaddworkitem-method"></a>Método ID3DX10ThreadPump:: AddWorkItem
+# <a name="id3dx10threadpumpaddworkitem-method"></a>Método ID3DX10ThreadPump::AddWorkItem
 
-Adicione um item de trabalho à bomba do thread.
+Adicione um item de trabalho à bomba de thread.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,16 +43,16 @@ HRESULT AddWorkItem(
 
 <dl> <dt>
 
-*pDataLoader* \[ no\]
+*pDataLoader* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10DataLoader**](id3dx10dataloader.md)\***
 
-O carregador que será usado pela bomba de thread quando um item de trabalho exigir que os dados sejam carregados.
+O carregador que a bomba de thread usará quando um item de trabalho exigir que os dados sejam carregados.
 
 </dd> <dt>
 
-*pDataProcessor* \[ no\]
+*pDataProcessor* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10DataProcessor**](id3dx10dataprocessor.md)\***
@@ -61,29 +61,29 @@ O processador que a bomba de thread usará quando um item de trabalho exigir que
 
 </dd> <dt>
 
-*pHResult* \[ no\]
+*pHResult* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)\***
 
-Um ponteiro para o valor de retorno. Pode ser **NULL**.
+Um ponteiro para o valor de retorno. Pode ser **NULL.**
 
 </dd> <dt>
 
-*ppDeviceObject* \[ fora\]
+*ppDeviceObject* \[ out\]
 </dt> <dd>
 
-Tipo: **void \* \***
+Tipo: **\* \* void**
 
-O dispositivo que usa o objeto.
+O dispositivo que usa o objeto .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,8 +91,8 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -103,7 +103,7 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 [ID3DX10ThreadPump](id3dx10threadpump.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

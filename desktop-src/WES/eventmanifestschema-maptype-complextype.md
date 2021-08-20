@@ -1,9 +1,9 @@
 ---
 title: Tipo complexo MapType
-description: Define uma lista de pares de nome/valor.
+description: Define uma lista de pares nome/valor.
 ms.assetid: 208ae219-8f79-4049-b946-a57b33c97b1b
 keywords:
-- Log de eventos do tipo complexo MapType
+- Tipo complexo MapType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4daf6cfe677ab5585ac580e19c868f1bba17de45
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 162676ab5d017c8fa6d6d280a07d1e4500e77cc79e0eacf25e23d5f20c0b3326
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644372"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120914"
 ---
 # <a name="maptype-complex-type"></a>Tipo complexo MapType
 
-Define uma lista de pares de nome/valor.
+Define uma lista de pares nome/valor.
 
 ``` syntax
 <xs:complexType name="MapType">
@@ -45,18 +45,18 @@ Define uma lista de pares de nome/valor.
 
 | Elemento                                                          | Type                                                                 | Descrição                                                                              |
 |------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [**bitMap**](eventmanifestschema-bitmap-maptype-element.md)     | [**BitMaptype**](eventmanifestschema-bitmaptype-complextype.md)     | Define uma lista de pares de nome/valor que mapeia valores de bits e valores de cadeia de caracteres.<br/>     |
-| [**valueMap**](eventmanifestschema-valuemap-maptype-element.md) | [**ValueMapType**](eventmanifestschema-valuemaptype-complextype.md) | Define uma lista de pares de nome/valor que mapeia valores inteiros e valores de cadeia de caracteres.<br/> |
+| [**Bitmap**](eventmanifestschema-bitmap-maptype-element.md)     | [**BitMapType**](eventmanifestschema-bitmaptype-complextype.md)     | Define uma lista de pares nome/valor que mapeiam valores de bit e valores de cadeia de caracteres.<br/>     |
+| [**Valuemap**](eventmanifestschema-valuemap-maptype-element.md) | [**ValueMapType**](eventmanifestschema-valuemaptype-complextype.md) | Define uma lista de pares nome/valor que mapeiam valores inteiros e valores de cadeia de caracteres.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Normalmente, você cria mapas para fornecer valores de cadeia de caracteres enumerados para dados de eventos.
+Normalmente, você cria mapas para fornecer valores de cadeia de caracteres enumerados para dados de evento.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra como especificar um mapa de valor e bitmap.
+O exemplo a seguir mostra como especificar um mapa de valor e um bitmap.
 
 
 ```XML
@@ -81,8 +81,8 @@ O exemplo a seguir mostra como especificar um mapa de valor e bitmap.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

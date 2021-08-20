@@ -1,26 +1,26 @@
 ---
 title: Propriedade IMsRdpClientAdvancedSettings BitmapVirtualCache16BppSize
-description: Especifica o tamanho, em megabytes, do arquivo de cache de bitmap persistente a ser usado para as configurações de cor alta de 15 e 16 bits por pixel.
+description: Especifica o tamanho, em megabytes, do arquivo de cache de bitmap persistente a ser usado para as configurações de alta cores de 15 e 16 bits por pixel.
 ms.assetid: f2558c88-d60f-4be3-9941-8e0e18bbb778
 ms.tgt_platform: multiple
 keywords:
-- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota
-- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
-- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache16BppSize
-- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
-- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache16BppSize
-- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
-- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache16BppSize
-- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
-- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache16BppSize
-- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
-- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache16BppSize
-- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
-- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache16BppSize
-- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
-- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache16BppSize
-- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
-- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade BitmapVirtualCache16BppSize
+- Serviços de Área de Trabalho Remota da propriedade BitmapVirtualCache16BppSize
+- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade BitmapVirtualCache16BppSize
+- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade BitmapVirtualCache16BppSize
+- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade BitmapVirtualCache16BppSize
+- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade BitmapVirtualCache16BppSize
+- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade BitmapVirtualCache16BppSize
+- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade BitmapVirtualCache16BppSize
+- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade BitmapVirtualCache16BppSize
+- Propriedade BitmapVirtualCache16BppSize Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade BitmapVirtualCache16BppSize
 topic_type:
 - apiref
 api_name:
@@ -61,11 +61,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118353408"
 ---
-# <a name="imsrdpclientadvancedsettingsbitmapvirtualcache16bppsize-property"></a>Propriedade IMsRdpClientAdvancedSettings::BitmapVirtualCache16BppSize
+# <a name="imsrdpclientadvancedsettingsbitmapvirtualcache16bppsize-property"></a>Propriedade IMsRdpClientAdvancedSettings:: BitmapVirtualCache16BppSize
 
-Especifica o tamanho, em megabytes, do arquivo de cache de bitmap persistente a ser usado para as configurações de cor alta de 15 e 16 bits por pixel.
+Especifica o tamanho, em megabytes, do arquivo de cache de bitmap persistente a ser usado para as configurações de alta cores de 15 e 16 bits por pixel.
 
-Essa propriedade é leitura/gravação.
+Esta propriedade é de leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -92,9 +92,9 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-As propriedades relacionadas incluem as propriedades **BitmapVirtualCacheSize** e **BitmapVirtualCache24BppSize.**
+As propriedades relacionadas incluem as propriedades **BitmapVirtualCacheSize** e **BitmapVirtualCache24BppSize** .
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,7 +106,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                  |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings é definido como 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings é definido como 3c65b4ab-12B3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
@@ -135,7 +135,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
+[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> </dl>
 
  

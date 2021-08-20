@@ -3,13 +3,13 @@ title: Criando licenças localmente
 description: Criando licenças localmente
 ms.assetid: 151dd231-26a9-4203-84e1-446a07c1e07a
 keywords:
-- Windows SDK de Formato de Mídia, criando licenças localmente
-- Windows SDK de Formato de Mídia, licenças
+- Windows SDK do formato de mídia, criando licenças localmente
+- Windows SDK do formato de mídia, licenças
 - DRM (gerenciamento de direitos digitais), criando licenças localmente
 - DRM (gerenciamento de direitos digitais), criando licenças localmente
 - DRM (gerenciamento de direitos digitais), licenças
 - DRM (gerenciamento de direitos digitais), licenças
-- APIs Estendidas do Cliente DRM, criando licenças localmente
+- APIs estendidas do cliente DRM, criando licenças localmente
 - APIs estendidas do cliente, criando licenças localmente
 - licenças, criando licenças localmente
 ms.topic: article
@@ -23,18 +23,18 @@ ms.locfileid: "118433902"
 ---
 # <a name="creating-licenses-locally"></a>Criando licenças localmente
 
-Em determinadas circunstâncias, como durante a [Importação de DRM,](drm-import.md)você pode criar suas próprias licenças. Windows As licenças de DRM de mídia podem ser escritas de algumas maneiras diferentes, mas para fazer sua própria licença, você deve usar o esquema binário XMR (Extensible Media Rights). Para obter mais informações, consulte [Criando uma licença XMR.](building-an-xmr-license.md)
+Em determinadas circunstâncias, como durante a [importação de DRM](drm-import.md), você pode criar suas próprias licenças. Windows As licenças DRM de mídia podem ser escritas de algumas maneiras diferentes, mas para fazer sua própria licença, você deve usar o esquema binário XMR (direitos de mídia extensível). Para obter mais informações, consulte [criando uma licença do XMR](building-an-xmr-license.md).
 
-Ao criar uma licença, você pode adicioná-la ao armazenamento de licenças local chamando o método [**IWMDRMLicenseManagement::StoreLicense.**](iwmdrmlicensemanagement-storelicense.md)
+Ao criar uma licença, você pode adicioná-la ao repositório de licenças local chamando o método [**IWMDRMLicenseManagement:: StoreLicense**](iwmdrmlicensemanagement-storelicense.md) .
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Adquirir licenças**](acquiring-licenses.md)
+[**Adquirindo licenças**](acquiring-licenses.md)
 </dt> <dt>
 
-[**Criando uma licença XMR**](building-an-xmr-license.md)
+[**Criando uma licença do XMR**](building-an-xmr-license.md)
 </dt> </dl>
 
  

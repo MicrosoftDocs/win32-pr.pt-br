@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f42b5dcf5d42bf1ee41c748b918ce46117c9b6d6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8efd2957606e5d042cca71aedd08891bfe784e0f1e4bc46a01714d5d27eed4e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118082046"
 ---
 # <a name="esentexistinglogfileisnotcontiguousexception-constructor"></a>Construtor EsentExistingLogFileIsNotContiguousException
 
 Inicializa uma nova instância da classe EsentExistingLogFileIsNotContiguousException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentExistingLogFileIsNotContiguousException()
 
 [Classe EsentExistingLogFileIsNotContiguousException](./esentexistinglogfileisnotcontiguousexception-class.md)
 
-[Membros do EsentExistingLogFileIsNotContiguousException](./esentexistinglogfileisnotcontiguousexception-members.md)
+[Membros EsentExistingLogFileIsNotContiguousException](./esentexistinglogfileisnotcontiguousexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

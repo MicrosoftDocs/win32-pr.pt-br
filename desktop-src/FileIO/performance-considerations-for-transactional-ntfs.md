@@ -4,12 +4,12 @@ ms.assetid: 847939ff-5322-4023-8ef7-9d845e80d65c
 title: Considerações de desempenho para NTFS Transacional
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a71f7e100e1ddd8524932a4a259a12092bddcb6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f32729725ecc6ba59808eabe1fa12a5b798c9413c52d1591bd22b498e6a5856d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922375"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117996710"
 ---
 # <a name="performance-considerations-for-transactional-ntfs"></a>Considerações de desempenho para NTFS Transacional
 
@@ -33,7 +33,7 @@ As conclusões de resumo sobre o desempenho que podem ser desenhadas da lista an
 -   O custo de desempenho do TxF para transações que envolvem substituições de arquivo pode ser significativo.
 -   O custo de desempenho do TxF para transações que envolvem apenas operações de metadados pode ser relativamente baixo, desde que sejam usadas transações grandes. Uma transação grande é quando há muitos registros de desfazer para cada registro de confirmação.
 
-## <a name="recommendations-for-best-performance"></a>Recomendações para melhor desempenho
+## <a name="recommendations-for-best-performance"></a>Recomendações Para obter o melhor desempenho
 
 Amortizar a sobrecarga de TxF em transações maiores. Por exemplo, se você tiver *N* conjuntos de alterações para fazer onde cada alteração tem *M* etapas e tiver a opção de fazer isso como *N* transações de *m* etapas cada ou fazer tudo como uma única transação com *M* \* *N* etapas, a última opção seria mais eficiente.
 

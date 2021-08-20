@@ -1,59 +1,59 @@
 ---
-title: Estruturas da API do servidor HTTP versão 1,0
-description: Estruturas da API do servidor HTTP versão 1,0
+title: Estruturas da API do Servidor HTTP versão 1.0
+description: Estruturas da API do Servidor HTTP versão 1.0
 ms.assetid: e38f7a05-f966-4853-be3b-5cdbf224719e
 keywords:
-- Estruturas de API do servidor HTTP
-- HTTP de estruturas, API de servidor HTTP
+- Estruturas da API do Servidor HTTP
+- Estruturas HTTP, API do Servidor HTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67cdd426bbe9329e089352999acf5c0f79b6f94f
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: e0bae846a4ee67312e428afe59c6215cda85050a70988ff6cb5e3e6c9ffa4067
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118150319"
 ---
-# <a name="http-server-api-version-10-structures"></a>Estruturas da API do servidor HTTP versão 1,0
+# <a name="http-server-api-version-10-structures"></a>Estruturas da API do Servidor HTTP versão 1.0
 
-A API do servidor HTTP fornece as seguintes estruturas:
+A API do Servidor HTTP fornece as seguintes estruturas:
 
--   [**versão do HTTPAPI \_**](/windows/desktop/api/Http/ns-http-httpapi_version)
--   [**\_intervalo de bytes http \_**](/windows/desktop/api/Http/ns-http-http_byte_range)
--   [**\_política de cache http \_**](/windows/desktop/api/Http/ns-http-http_cache_policy)
--   [**\_URL cooked \_ http**](/windows/desktop/api/Http/ns-http-http_cooked_url)
--   [**\_parte de dados http \_**](/windows/desktop/api/Http/ns-http-http_data_chunk)
--   [**\_cabeçalho conhecido \_ http**](/windows/desktop/api/Http/ns-http-http_known_header)
--   [**\_solicitação http**](/previous-versions/windows/desktop/legacy/aa364545(v=vs.85))
--   [**\_cabeçalhos de solicitação HTTP \_**](/windows/desktop/api/Http/ns-http-http_request_headers)
--   [**\_resposta http**](http-response.md)
--   [**\_cabeçalhos de resposta http \_**](/windows/desktop/api/Http/ns-http-http_response_headers)
--   [**\_parâmetro de \_ \_ escuta IP \_ de configuração de serviço http \_**](/windows/desktop/api/Http/ns-http-http_service_config_ip_listen_param)
--   [**\_consulta de \_ escuta de IP de configuração de serviço http \_ \_ \_**](/windows/desktop/api/Http/ns-http-http_service_config_ip_listen_query)
--   [**\_ \_ chave SSL de configuração do serviço http \_ \_**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_key)
--   [**\_ \_ parâmetro SSL de configuração do serviço http \_ \_**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_param)
--   [**\_ \_ consulta SSL de configuração do serviço http \_ \_**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_query)
--   [**\_conjunto de \_ SSL de configuração do serviço http \_ \_**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_set)
--   [**\_ \_ \_ \_ chave SNI SSL de configuração de serviço http \_**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_sni_key)
--   [**\_consulta do serviço http \_ config \_ SSL \_ SNI \_**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_sni_query)
--   [**\_conjunto de \_ \_ SNI SSL \_ de configuração de serviço http \_**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_sni_set)
--   [**\_chave de \_ URLACL de configuração do serviço http \_ \_**](/windows/desktop/api/Http/ns-http-http_service_config_urlacl_key)
--   [**\_parâmetro de configuração do serviço http \_ \_ URLACL \_**](/windows/desktop/api/Http/ns-http-http_service_config_urlacl_param)
--   [**\_consulta de configuração do serviço http \_ \_ URLACL \_**](/windows/desktop/api/Http/ns-http-http_service_config_urlacl_query)
--   [**\_conjunto de \_ URLACL de configuração de serviço http \_ \_**](/windows/desktop/api/Http/ns-http-http_service_config_urlacl_set)
--   [**\_informações de \_ certificado de cliente SSL \_ http \_**](/windows/desktop/api/Http/ns-http-http_ssl_client_cert_info)
--   [**informações de HTTP \_ SSL \_**](/windows/desktop/api/Http/ns-http-http_ssl_info)
--   [**\_endereço de transporte http \_**](/windows/desktop/api/Http/ns-http-http_transport_address)
--   [**\_cabeçalho http desconhecido \_**](/windows/desktop/api/Http/ns-http-http_unknown_header)
--   [**versão de HTTP \_**](/windows/desktop/api/Http/ns-http-http_version)
+-   [**VERSÃO \_ HTTPAPI**](/windows/desktop/api/Http/ns-http-httpapi_version)
+-   [**INTERVALO \_ DE BYTE \_ HTTP**](/windows/desktop/api/Http/ns-http-http_byte_range)
+-   [**POLÍTICA \_ DE CACHE \_ HTTP**](/windows/desktop/api/Http/ns-http-http_cache_policy)
+-   [**\_URL DO HTTP COOKED \_**](/windows/desktop/api/Http/ns-http-http_cooked_url)
+-   [**PARTE DE DADOS HTTP \_ \_**](/windows/desktop/api/Http/ns-http-http_data_chunk)
+-   [**CABEÇALHO \_ HTTP \_ CONHECIDO**](/windows/desktop/api/Http/ns-http-http_known_header)
+-   [**SOLICITAÇÃO \_ HTTP**](/previous-versions/windows/desktop/legacy/aa364545(v=vs.85))
+-   [**CABEÇALHOS \_ DE \_ SOLICITAÇÃO HTTP**](/windows/desktop/api/Http/ns-http-http_request_headers)
+-   [**RESPOSTA \_ HTTP**](http-response.md)
+-   [**CABEÇALHOS \_ DE RESPOSTA HTTP \_**](/windows/desktop/api/Http/ns-http-http_response_headers)
+-   [**HTTP \_ SERVICE \_ CONFIG \_ IP \_ LISTEN \_ PARAM**](/windows/desktop/api/Http/ns-http-http_service_config_ip_listen_param)
+-   [**CONSULTA DE ESCUTA DE IP DE \_ \_ \_ \_ CONFIGURAÇÃO DE SERVIÇO \_ HTTP**](/windows/desktop/api/Http/ns-http-http_service_config_ip_listen_query)
+-   [**CHAVE \_ \_ \_ SSL DE CONFIGURAÇÃO DE \_ SERVIÇO HTTP**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_key)
+-   [**PARAM \_ \_ SSL DE \_ CONFIGURAÇÃO DE SERVIÇO \_ HTTP**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_param)
+-   [**CONSULTA \_ \_ \_ SSL DE CONFIGURAÇÃO DE \_ SERVIÇO HTTP**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_query)
+-   [**HTTP \_ SERVICE \_ CONFIG \_ SSL \_ SET**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_set)
+-   [**CHAVE \_ \_ \_ SSL SSL DE CONFIGURAÇÃO DE \_ \_ SERVIÇO HTTP**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_sni_key)
+-   [**CONSULTA \_ \_ \_ SSL \_ SSL DE CONFIGURAÇÃO DE SERVIÇO HTTP \_**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_sni_query)
+-   [**HTTP \_ SERVICE \_ CONFIG \_ SSL \_ SNI \_ SET**](/windows/desktop/api/Http/ns-http-http_service_config_ssl_sni_set)
+-   [**CHAVE \_ \_ \_ URLACL DE CONFIGURAÇÃO DE \_ SERVIÇO HTTP**](/windows/desktop/api/Http/ns-http-http_service_config_urlacl_key)
+-   [**\_ \_ URLACL \_ PARAM DE CONFIGURAÇÃO DE SERVIÇO \_ HTTP**](/windows/desktop/api/Http/ns-http-http_service_config_urlacl_param)
+-   [**CONSULTA \_ \_ \_ URLACL DE CONFIGURAÇÃO DE SERVIÇO \_ HTTP**](/windows/desktop/api/Http/ns-http-http_service_config_urlacl_query)
+-   [**\_ \_ URLACL SET DE \_ CONFIGURAÇÃO DE SERVIÇO \_ HTTP**](/windows/desktop/api/Http/ns-http-http_service_config_urlacl_set)
+-   [**INFORMAÇÕES \_ DE CERTIFICADO DO CLIENTE HTTP SSL \_ \_ \_**](/windows/desktop/api/Http/ns-http-http_ssl_client_cert_info)
+-   [**INFORMAÇÕES \_ DE SSL \_ HTTP**](/windows/desktop/api/Http/ns-http-http_ssl_info)
+-   [**ENDEREÇO \_ DE TRANSPORTE \_ HTTP**](/windows/desktop/api/Http/ns-http-http_transport_address)
+-   [**CABEÇALHO \_ HTTP \_ DESCONHECIDO**](/windows/desktop/api/Http/ns-http-http_unknown_header)
+-   [**VERSÃO \_ HTTP**](/windows/desktop/api/Http/ns-http-http_version)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Funções da API do servidor HTTP versão 1,0](http-server-api-version-1-0-functions.md)
+[Funções da API do Servidor HTTP versão 1.0](http-server-api-version-1-0-functions.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

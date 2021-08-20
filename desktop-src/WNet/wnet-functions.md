@@ -13,7 +13,7 @@ ms.locfileid: "118330781"
 ---
 # <a name="wnet-functions"></a>Funções WNet
 
-Windows As funções de rede fornecem informações e utilitários para gerenciar recursos de rede. As Windows funções de rede podem ser agrupadas da seguinte forma:
+Windows As funções de rede fornecem informações e utilitários para gerenciar recursos de rede. as funções de rede Windows podem ser agrupadas da seguinte maneira:
 
 -   [Funções de conexão](#connection-functions)
 -   [Funções de enumeração](#enumeration-functions)
@@ -22,47 +22,47 @@ Windows As funções de rede fornecem informações e utilitários para gerencia
 
 ## <a name="connection-functions"></a>Funções de conexão
 
-Chame as seguintes funções de conexão WNet para conectar um dispositivo local a um recurso de rede e cancelar conexões de rede.
+Chame as seguintes funções de conexão WNet para conectar um dispositivo local a um recurso de rede e para cancelar conexões de rede.
 
 
 
 | Função                                                                     | Descrição                                                                                                                                                                                                                    |
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**MultinetGetConnectionPerformance**](/windows/win32/api/winnetwk/nf-winnetwk-multinetgetconnectionperformancea) | Retorna informações sobre o desempenho esperado de uma conexão com um recurso de rede.                                                                                                                                      |
+| [**MultinetGetConnectionPerformance**](/windows/win32/api/winnetwk/nf-winnetwk-multinetgetconnectionperformancea) | Retorna informações sobre o desempenho esperado de uma conexão a um recurso de rede.                                                                                                                                      |
 | [**WNetAddConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnectiona)                               | Conecta um dispositivo local a um recurso de rede. (Fornecido para compatibilidade com versões de 16 bits do Windows.)                                                                                                                   |
 | [**WNetAddConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection2a)                             | Conecta um dispositivo local a um recurso de rede.                                                                                                                                                                                 |
-| [**WNetAddConnection3**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection3a)                             | Conecta um dispositivo local a um recurso de rede. Essa função inclui mais um parâmetro do que a **função WNetAddConnection2,** um handle para uma janela que o provedor de rede pode usar como uma janela de proprietário para caixas de diálogo. |
+| [**WNetAddConnection3**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection3a)                             | Conecta um dispositivo local a um recurso de rede. Essa função inclui mais um parâmetro do que a função **WNetAddConnection2** , um identificador para uma janela que o provedor de rede pode usar como uma janela de proprietário para caixas de diálogo. |
 | [**WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona)                         | Cancela uma conexão de rede. (Fornecido para compatibilidade com versões de 16 bits do Windows.)                                                                                                                                    |
 | [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a)                       | Cancela uma conexão de rede, fornecendo a capacidade de atualizar o perfil do usuário com informações sobre conexões persistentes.                                                                                                  |
 | [**WNetConnectionDialog**](/windows/win32/api/winnetwk/nf-winnetwk-wnetconnectiondialog)                         | Inicia uma caixa de diálogo de navegação geral para se conectar aos recursos de rede.                                                                                                                                                      |
-| [**WNetConnectionDialog1**](/windows/win32/api/winnetwk/nf-winnetwk-wnetconnectiondialog1a)                       | Inicia uma caixa de diálogo de navegação geral para se conectar aos recursos de rede usando uma [**estrutura CONNECTDLGSTRUCT.**](/windows/win32/api/winnetwk/ns-winnetwk-connectdlgstructa)                                                                                  |
-| [**WNetDisconnectDialog**](/windows/win32/api/winnetwk/nf-winnetwk-wnetdisconnectdialog)                         | Inicia uma caixa de diálogo de navegação geral para se desconectar dos recursos de rede.                                                                                                                                                 |
-| [**WNetDisconnectDialog1**](/windows/win32/api/winnetwk/nf-winnetwk-wnetdisconnectdialog1a)                       | Inicia uma caixa de diálogo de navegação geral para se desconectar dos recursos de rede usando uma [**estrutura DISCDLGSTRUCT.**](/windows/win32/api/winnetwk/ns-winnetwk-discdlgstructa)                                                                                   |
+| [**WNetConnectionDialog1**](/windows/win32/api/winnetwk/nf-winnetwk-wnetconnectiondialog1a)                       | Inicia uma caixa de diálogo de navegação geral para se conectar a recursos de rede, usando uma estrutura [**CONNECTDLGSTRUCT**](/windows/win32/api/winnetwk/ns-winnetwk-connectdlgstructa) .                                                                                  |
+| [**WNetDisconnectDialog**](/windows/win32/api/winnetwk/nf-winnetwk-wnetdisconnectdialog)                         | Inicia uma caixa de diálogo de navegação geral para desconectar de recursos de rede.                                                                                                                                                 |
+| [**WNetDisconnectDialog1**](/windows/win32/api/winnetwk/nf-winnetwk-wnetdisconnectdialog1a)                       | Inicia uma caixa de diálogo de navegação geral para desconectar-se de recursos de rede, usando uma estrutura [**DISCDLGSTRUCT**](/windows/win32/api/winnetwk/ns-winnetwk-discdlgstructa) .                                                                                   |
 | [**WNetGetConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetconnectiona)                               | Recupera o nome do recurso de rede associado a um dispositivo local.                                                                                                                                                     |
-| [**WNetGetUniversalName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetuniversalnamea)                         | Quando um caminho baseado em unidade é dado para um recurso de rede, retorna uma forma mais universal do nome.                                                                                                                               |
+| [**WNetGetUniversalName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetuniversalnamea)                         | Quando um caminho baseado em unidade é fornecido para um recurso de rede, o retorna uma forma mais universal do nome.                                                                                                                               |
 | [**WNetRestoreConnectionW**](/windows/win32/api/winnetwk/nf-winnetwk-wnetrestoreconnectionw)                     | Restaura a conexão com um recurso de rede, solicitando ao usuário, se necessário, um nome e uma senha.                                                                                                                      |
-| [**WNetUseConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetuseconnectiona)                               | Conecta um dispositivo local a um recurso de rede; seleciona automaticamente um dispositivo local não usuário para redirecionar para o recurso de rede.                                                                                               |
+| [**WNetUseConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetuseconnectiona)                               | Conecta um dispositivo local a um recurso de rede; seleciona automaticamente um dispositivo local não utilizado para redirecionar para o recurso de rede.                                                                                               |
 
 
 
  
 
 > [!Note]  
-> As [**funções WNetAddConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnectiona) e [**WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona) têm suporte para compatibilidade com Windows para grupos de trabalho. No entanto, novos aplicativos devem usar [**WNetAddConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection2a) ou [**WNetAddConnection3**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection3a)e [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a).
+> as funções [**WNetAddConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnectiona) e [**WNetCancelConnection**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnectiona) têm suporte para compatibilidade com Windows para workgroups. No entanto, novos aplicativos devem usar [**WNetAddConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection2a) ou [**WNetAddConnection3**](/windows/win32/api/winnetwk/nf-winnetwk-wnetaddconnection3a)e [**WNetCancelConnection2**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcancelconnection2a).
 
  
 
 ## <a name="enumeration-functions"></a>Funções de enumeração
 
-Chame as funções WNet a seguir para enumerar recursos de rede.
+Chame as seguintes funções WNet para enumerar recursos de rede.
 
 
 
 | Função                                     | Descrição                                                                             |
 |----------------------------------------------|-----------------------------------------------------------------------------------------|
-| [**WNetCloseEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcloseenum)       | Encerra uma enumeração de recurso de rede.                                                    |
-| [**Wnetenumresource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea) | Continua uma enumeração de recursos de rede iniciada pela **função WNetOpenEnum.** |
-| [**Wnetopenenum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma)         | Inicia uma enumeração de recursos de rede.                                             |
+| [**WNetCloseEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetcloseenum)       | Encerra uma enumeração de recursos de rede.                                                    |
+| [**WNetEnumResource**](/windows/win32/api/winnetwk/nf-winnetwk-wnetenumresourcea) | Continua uma enumeração de recursos de rede iniciados pela função **WnetOpenEnum** . |
+| [**WNetOpenEnum**](/windows/win32/api/winnetwk/nf-winnetwk-wnetopenenuma)         | Inicia uma enumeração de recursos de rede.                                             |
 
 
 
@@ -70,13 +70,13 @@ Chame as funções WNet a seguir para enumerar recursos de rede.
 
 ## <a name="information-functions"></a>Funções informativas
 
-Chame as funções informativas e de utilitário WNet a seguir para recuperar o provedor de rede e outras informações.
+Chame as seguintes funções de utilitário e informações do WNet para recuperar o provedor de rede e outras informações.
 
 
 
 | Função                                                         | Descrição                                                                                         |
 |------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [**WNetGetLastError**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetlasterrora)                     | Retorna o código de erro mais recente definido por uma função WNet, o relatado por um provedor de rede.  |
+| [**WNetGetLastError**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetlasterrora)                     | Retorna o código de erro mais recente definido por uma função WNet, aquele relatado por um provedor de rede.  |
 | [**WNetGetNetworkInformation**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetnetworkinformationa)   | Retorna informações estendidas sobre um provedor de rede específico.                                     |
 | [**WNetGetProviderName**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetprovidernamea)               | Retorna o nome do provedor para um tipo específico de rede.                                           |
 | [**WNetGetResourceInformation**](/windows/win32/api/winnetwk/nf-winnetwk-wnetgetresourceinformationa) | Retorna o provedor de rede que possui um recurso e obtém informações sobre o tipo de recurso. |
@@ -88,7 +88,7 @@ Chame as funções informativas e de utilitário WNet a seguir para recuperar o 
 
 ## <a name="user-functions"></a>Funções de usuário
 
-Chame a função WNet a seguir para recuperar o nome do usuário associado a um dispositivo local.
+Chame a seguinte função WNet para recuperar o nome do usuário associado a um dispositivo local.
 
 
 

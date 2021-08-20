@@ -1,6 +1,6 @@
 ---
-title: Constantes de TF_ (msctf. h)
-description: As chamadas de função de Atom do TSF usam essas constantes para gerenciar processos de entrada de thread.
+title: TF_ constantes (Msctf.h)
+description: Chamadas de função atom TSF usam essas constantes para gerenciar processos de entrada de thread.
 ms.assetid: 37af6ed6-bd01-4b05-8c80-e9756f417db8
 topic_type:
 - apiref
@@ -13,23 +13,23 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c1b47e897bd8c5bf6b8c146c24749726bc4fb7ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5b9ce47ce229bb3f17ed02c363bebce4e3bf2640367d537febb3c428d3259104
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918943"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118874513"
 ---
-# <a name="tf_-constants"></a>TF \_ \* constantes
+# <a name="tf_-constants"></a>Constantes TF \_ \*
 
-As chamadas de função de Atom do TSF usam essas constantes para gerenciar processos de entrada de thread.
+Chamadas de função atom TSF usam essas constantes para gerenciar processos de entrada de thread.
 
 
 
 | Constante/valor                                                                                                                                                                                                                                                                       | Descrição                                                                                          |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------|
-| <span id="TF_PROCESS_ATOM"></span><span id="tf_process_atom"></span><dl> <dt>**TF \_ texto \_ Atom de processo**</dt> <dt>( \_ Atom CTF de \_ processo \_ \_ )</dt> </dl>                               | Usado para notificar funções Atom que um processo de entrada de thread iniciou.<br/>                  |
-| <span id="TF_ENABLE_PROCESS_ATOM"></span><span id="tf_enable_process_atom"></span><dl> <dt>**TF \_ HABILITAR o texto do \_ processo \_ Atom**</dt> <dt>( \_ CTF \_ habilitar o Atom do \_ processo \_ \_ )</dt> </dl> | Usado para notificar o TSF, por meio de funções Atom, que um processo de entrada de thread foi habilitado.<br/> |
+| <span id="TF_PROCESS_ATOM"></span><span id="tf_process_atom"></span><dl> <dt>**TF \_ PROCESS \_ ATOM**</dt> <dt>TEXT( \_ CTF PROCESS ATOM \_ \_ \_ )</dt> </dl>                               | Usado para notificar funções atom de que um processo de entrada de thread foi iniciado.<br/>                  |
+| <span id="TF_ENABLE_PROCESS_ATOM"></span><span id="tf_enable_process_atom"></span><dl> <dt>**TF \_ ENABLE \_ PROCESS \_ ATOM**</dt> <dt>TEXT( \_ CTF ENABLE PROCESS ATOM \_ \_ \_ \_ )</dt> </dl> | Usado para notificar o TSF, por meio de funções atom, de que um processo de entrada de thread foi habilitado.<br/> |
 
 
 
@@ -41,9 +41,9 @@ As chamadas de função de Atom do TSF usam essas constantes para gerenciar proc
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                      |
-| parâmetro<br/>                   | <dl> <dt>Msctf. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>Msctf. idl</dt> </dl> |
+| Redistribuível<br/>          | TSF 1.0 no Windows 2000 Professional<br/>                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Msctf.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msctf.idl</dt> </dl> |
 
 
 

@@ -1,55 +1,55 @@
 ---
-title: Parâmetros de criação de recursos por lado
-description: Há algumas restrições sobre o tipo de recursos do Direct3D que você pode criar com o sinalizador diD3D11 de \_ recursos diversos do recurso \_ \_ . Esta seção fornece os parâmetros válidos para a criação de recursos em ladrilho.
+title: Parâmetros de criação de recursos lado a lado
+description: Há algumas restrições no tipo de recursos direct3D que você pode criar com o sinalizador D3D11 \_ RESOURCE \_ MISC \_ TILED. Esta seção fornece os parâmetros válidos para criar recursos lado a lado.
 ms.assetid: 19A0EA7F-888D-4102-A5D2-F3B54775EDE8
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b912325371c59bd46a6cc4245289b2fe5d32a924
-ms.sourcegitcommit: 4dcafeb002cbee4f6028b32a956ec22cb95cbc44
+ms.openlocfilehash: f9668c21060cbb8f39884204780ce689b3e67196aef0bdcfef891836768f04af
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "103638845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119279836"
 ---
-# <a name="tiled-resource-creation-parameters"></a>Parâmetros de criação de recursos por lado
+# <a name="tiled-resource-creation-parameters"></a>Parâmetros de criação de recursos lado a lado
 
-Há algumas restrições sobre o tipo de recursos do Direct3D que você pode criar com o sinalizador [**diD3D11 de \_ recursos \_ diversos \_ do recurso**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag) . Esta seção fornece os parâmetros válidos para a criação de recursos em ladrilho.
+Há algumas restrições no tipo de recursos direct3D que você pode criar com o sinalizador [**D3D11 \_ RESOURCE \_ MISC \_ TILED.**](/windows/desktop/api/D3D11/ne-d3d11-d3d11_resource_misc_flag) Esta seção fornece os parâmetros válidos para criar recursos lado a lado.
 
 <dl> <dt>
 
 <span id="Supported_Resource_Type"></span><span id="supported_resource_type"></span><span id="SUPPORTED_RESOURCE_TYPE"></span>**Tipo de recurso com suporte**
 </dt> <dd>
 
-\[Matriz Texture2D \] (incluindo \[ matriz TextureCube \] , que é uma variante da \[ matriz Texture2D \] ) ou buffer.
+Matriz Texture2D \[ \] (incluindo TextureCube \[ \] Array, que é uma variante da Matriz Texture2D \[ ) ou \] buffer.
 
-**Sem suporte:** Texture1D \[ array \] ou Texture3D, mas o Texture3D pode ter suporte no futuro.
+**SEM suporte:** Texture1D \[ Array \] ou Texture3D, mas Texture3D pode ter suporte no futuro.
 
 </dd> <dt>
 
 <span id="Supported_Resource_Usage"></span><span id="supported_resource_usage"></span><span id="SUPPORTED_RESOURCE_USAGE"></span>**Uso de recursos com suporte**
 </dt> <dd>
 
-Padrão de uso de D3D11 \_ \_ .
+D3D11 \_ USAGE \_ DEFAULT.
 
-**Sem suporte:** Uso \_ \_ dinâmico de D3D11, \_ preparo de uso de D3D11 \_ ou \_ uso \_ inalterável de D3D11.
-
-</dd> <dt>
-
-<span id="Supported_Resource_Misc_Flags"></span><span id="supported_resource_misc_flags"></span><span id="SUPPORTED_RESOURCE_MISC_FLAGS"></span>**Sinalizadores diversos de recurso com suporte**
-</dt> <dd>
-
-\_Recurso D3D11 \_ misc. \_ lado a lado (por definição), \_ misc \_ TEXTURECUBE, \_ DRAWINDIRECT \_ args, \_ buffer \_ permite \_ \_ exibições brutas, \_ buffer \_ estruturado, \_ Resource \_ fixe ou \_ gerar \_ MIPS.
-
-**Sem suporte:** \_ COMPARTILHAMENTO compartilhado \_ , \_ KEYEDMUTEX compartilhado \_ , \_ compatível com GDI, \_ \_ NTHANDLE compartilhados, \_ \_ conteúdo restrito, \_ restringir \_ \_ recurso compartilhado, \_ restringir \_ \_ \_ Driver de recurso compartilhado, \_ protegido ou \_ pool de blocos \_ .
+**SEM suporte:** D3D11 \_ USO \_ DINÂMICO, D3D11 PREPARAÇÃO DE USO \_ ou USO \_ D3D11 \_ \_ IMUTÁVEL.
 
 </dd> <dt>
 
-<span id="Supported_Bind_Flags"></span><span id="supported_bind_flags"></span><span id="SUPPORTED_BIND_FLAGS"></span>**Sinalizadores de associação com suporte**
+<span id="Supported_Resource_Misc_Flags"></span><span id="supported_resource_misc_flags"></span><span id="SUPPORTED_RESOURCE_MISC_FLAGS"></span>**Sinalizadores de misc de recursos com suporte**
 </dt> <dd>
 
-\_Recurso D3D11 BIND \_ Shader \_ , \_ destino de renderização \_ , \_ \_ estêncil de profundidade ou \_ acesso não ordenado \_ .
+D3D11 \_ RESOURCE \_ \_ MISC TILED (por definição), \_ MISC \_ TEXTURECUBE, \_ DRAWINDIRECT ARGS, BUFFER ALLOW RAW \_ \_ \_ \_ \_ VIEWS, BUFFER \_ \_ STRUCTURED, RESOURCE FIX ou GENERATE \_ \_ \_ \_ MIPS.
 
-**Sem suporte:** \_ Buffer de constantes \_ , o \_ buffer de vértice \_ \[ Observe que a associação de um buffer de ladrilhos como SRV/UAV/RTV ainda é ok \] , \_ \_ buffer de índice, \_ \_ saída de fluxo, \_ \_ decodificador de associação ou \_ \_ codificador de vídeo de ligação \_ .
+**SEM suporte:** \_ SHARED, \_ SHARED \_ KEYEDMUTEX, \_ GDI \_ COMPATIBLE, SHARED \_ \_ NTHANDLE, NTHANDLE, RESTRICTED CONTENT, RESTRICT SHARED \_ \_ \_ \_ \_ RESOURCE, RESTRICT SHARED RESOURCE \_ \_ DRIVER, GUARDED ou \_ \_ \_ \_ TILE \_ POOL.
+
+</dd> <dt>
+
+<span id="Supported_Bind_Flags"></span><span id="supported_bind_flags"></span><span id="SUPPORTED_BIND_FLAGS"></span>**Sinalizadores de vinculação com suporte**
+</dt> <dd>
+
+RECURSO DE SOMBREADOR DE VINCULAÇÃO D3D11, \_ \_ DESTINO DE \_ \_ \_ RENDERIZAÇÃO, \_ ESTÊNCIL DE PROFUNDIDADE OU ACESSO NÃO \_ \_ \_ ORGANIZADO.
+
+**SEM suporte:** \_ BUFFER CONSTANTE, BUFFER DE VÉRTICE observe que a associação de um Buffer lado a lado como \_ \_ um \_ \[ SRV/UAV/RTV ainda é ok , BUFFER DE ÍNDICE, SAÍDA DE \] \_ \_ \_ \_ FLUXO, BIND \_ DECODER ou BIND VIDEO \_ \_ \_ \_ ENCODER.
 
 </dd> <dt>
 
@@ -60,17 +60,17 @@ Todos os formatos que devem estar disponíveis para determinada configuração, 
 
 </dd> <dt>
 
-<span id="Supported_SampleDesc__Multisample_count__quality_"></span><span id="supported_sampledesc__multisample_count__quality_"></span><span id="SUPPORTED_SAMPLEDESC__MULTISAMPLE_COUNT__QUALITY_"></span>**SampleDesc com suporte (contagem de multiamostras, qualidade)**
+<span id="Supported_SampleDesc__Multisample_count__quality_"></span><span id="supported_sampledesc__multisample_count__quality_"></span><span id="SUPPORTED_SAMPLEDESC__MULTISAMPLE_COUNT__QUALITY_"></span>**SampleDesc com suporte (contagem de várias amostras, qualidade)**
 </dt> <dd>
 
 Tudo o que seria suportado para a configuração fornecida, independentemente dela ser lado a lado, com algumas exceções.
 
 </dd> <dt>
 
-<span id="Supported_Width_Height_MipLevels_ArraySize"></span><span id="supported_width_height_miplevels_arraysize"></span><span id="SUPPORTED_WIDTH_HEIGHT_MIPLEVELS_ARRAYSIZE"></span>**Largura/altura/MipLevels/matrizes com suporte**
+<span id="Supported_Width_Height_MipLevels_ArraySize"></span><span id="supported_width_height_miplevels_arraysize"></span><span id="SUPPORTED_WIDTH_HEIGHT_MIPLEVELS_ARRAYSIZE"></span>**Largura/altura/MipLevels/ArraySize com suporte**
 </dt> <dd>
 
-Extensões completas com suporte do Direct3D 11. Os recursos em ladrilho não têm a restrição sobre o tamanho total da memória imposta em recursos que não são de lado do ladrilho. Os recursos em ladrilhos são restritos pelos limites gerais de espaço de endereço virtual. Para obter informações, consulte [espaço de endereço disponível para recursos em ladrilho](address-space-available-for-tiled-resources.md).
+Extensão completa com suporte do Direct3D 11. Os recursos lado a lado não têm a restrição de tamanho total de memória imposta a recursos não lado a lado. Os recursos lado a lado são restritos apenas pelos limites gerais de espaço de endereço virtual. Para obter informações, consulte [Espaço de endereço disponível para recursos lado a lado.](address-space-available-for-tiled-resources.md)
 
 </dd> </dl>
 
@@ -80,12 +80,12 @@ O conteúdo inicial da memória do pool de bloco é indefinido.
 
 <dl> <dt>
 
-[Criando recursos em ladrilhos](creating-tiled-resources.md)
+[Criando recursos lado a lado](creating-tiled-resources.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

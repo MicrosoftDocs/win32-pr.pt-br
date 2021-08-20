@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST.disabledItemColor
+title: PLAYLIST. disabledItemColor
 description: O atributo disabledItemColor especifica ou recupera a cor de uma faixa de CD desabilitada ou de conteúdo online quando offline.
 ms.assetid: a6e3af4b-2492-43fe-b508-393632512971
 keywords:
-- PLAYLIST.disabledItemColor Windows Media Player
+- Windows Media Player de PLAYLIST. disabledItemColor
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118336779"
 ---
-# <a name="playlistdisableditemcolor"></a>PLAYLIST.disabledItemColor
+# <a name="playlistdisableditemcolor"></a>PLAYLIST. disabledItemColor
 
-O **atributo disabledItemColor** especifica ou recupera a cor de uma faixa de CD desabilitada ou de conteúdo online quando offline.
+O atributo **disabledItemColor** especifica ou recupera a cor de uma faixa de CD desabilitada ou de conteúdo online quando offline.
 
 ``` syntax
         elementID.disabledItemColor
@@ -29,7 +29,7 @@ O **atributo disabledItemColor** especifica ou recupera a cor de uma faixa de CD
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém qualquer valor de cor Internet Explorer Microsoft. Ele tem um valor padrão de "graytext".
+Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém qualquer valor de cor do Microsoft Internet Explorer. Ele tem um valor padrão de "GrayText".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,7 +37,7 @@ Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
 
 
 
@@ -45,7 +45,7 @@ Esse atributo é uma cadeia de **caracteres** de leitura/gravação que contém 
 
 <dl> <dt>
 
-[**Referência de cores**](color-reference.md)
+[**Referência de cor**](color-reference.md)
 </dt> <dt>
 
 [**Elemento PLAYLIST**](playlist-element.md)

@@ -1,10 +1,10 @@
 ---
-title: Estrutura de WINBIO_EXTENDED_STORAGE_INFO (WinBio \_ Types. h)
-description: Contém informações sobre as capacidades e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica.
+title: WINBIO_EXTENDED_STORAGE_INFO estrutura (Tipos \_ winbio.h)
+description: Contém informações sobre os recursos e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica.
 ms.assetid: 7A648610-E947-4967-A9AF-C8A9C0B81D92
 keywords:
-- API de Windows Biometric Framework de estrutura de WINBIO_EXTENDED_STORAGE_INFO
-- Ponteiro de estrutura de PWINBIO_EXTENDED_STORAGE_INFO Windows Biometric Framework API
+- WINBIO_EXTENDED_STORAGE_INFO estrutura Windows API do Biometric Framework
+- PWINBIO_EXTENDED_STORAGE_INFO de estrutura Windows API do Biometric Framework
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8ac2559717a2040cfb617e85e0a51495be1b5987
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3e8a9f133baf77a77d3db33001e996accc9574f86ad708037900a5db7c0c5e8b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118910377"
 ---
-# <a name="winbio_extended_storage_info-structure"></a>\_Estrutura de \_ informações de armazenamento ESTENDIdo WINBIO \_
+# <a name="winbio_extended_storage_info-structure"></a>Estrutura DE \_ INFORMAÇÕES DE ARMAZENAMENTO ESTENDIDO \_ \_ WINBIO
 
-Contém informações sobre as capacidades e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica.
+Contém informações sobre os recursos e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -67,14 +67,14 @@ Os recursos genéricos do componente de armazenamento que está conectado a uma 
 **Fator**
 </dt> <dd>
 
-O tipo de unidade biométrica para o qual essa estrutura contém informações sobre recursos e requisitos de registro do adaptador de armazenamento. Por exemplo, se o valor do membro **factor** for **WINBIO \_ tipo \_ impressão digital**, a estrutura de **\_ \_ \_ informações de armazenamento estendida WINBIO** se aplicará a um leitor de impressão digital e conterá as informações relevantes na estrutura **específico. FINGERPRINT** .
+O tipo de unidade biométrica para a qual essa estrutura contém informações sobre os recursos e os requisitos de registro do adaptador de armazenamento. Por exemplo, se o  valor do membro Factor for WINBIO TYPE FINGERPRINT , a estrutura **WINBIO \_ EXTENDED \_ STORAGE \_** **\_ \_ INFO** se aplicará a um leitor de impressão digital e conterá as informações relevantes na estrutura **Specifc.Fingerprint.**
 
 </dd> <dt>
 
-**Específicas**
+**Específico**
 </dt> <dd>
 
-Informações sobre as capacidades e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica relacionada a um fator biométrico específico.
+Informações sobre os recursos e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica relacionada a um fator biométrico específico.
 
 <dl> <dt>
 
@@ -88,7 +88,7 @@ Reservado. Deve ser zero.
 **FacialFeatures**
 </dt> <dd>
 
-Informações sobre as capacidades e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica relacionada aos recursos faciais.
+Informações sobre os recursos e requisitos de registro do adaptador de armazenamento para uma unidade biométrica relacionada a recursos faciais.
 
 <dl> <dt>
 
@@ -102,21 +102,21 @@ Os recursos de reconhecimento facial do componente de armazenamento que está co
 **Fingerprint**
 </dt> <dd>
 
-Informações sobre as capacidades e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica relacionada a padrões de impressão digital.
+Informações sobre os recursos e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica relacionada a padrões de impressão digital.
 
 <dl> <dt>
 
 **Funcionalidades**
 </dt> <dd>
 
-Os recursos de reconhecimento de impressão digital do componente de armazenamento que está conectado a uma unidade biométrica específica
+Os recursos de reconhecimento de impressão digital do componente de armazenamento conectado a uma unidade biométrica específica
 
 </dd> </dl> </dd> <dt>
 
-**Íris**
+**Iris**
 </dt> <dd>
 
-Informações sobre as capacidades e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica relacionada a padrões de íris.
+Informações sobre os recursos e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica relacionada aos padrões de íris.
 
 <dl> <dt>
 
@@ -130,14 +130,14 @@ Os recursos de reconhecimento de íris do componente de armazenamento que está 
 **Voz**
 </dt> <dd>
 
-Informações sobre as capacidades e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica relacionada a padrões de voz.
+Informações sobre os recursos e os requisitos de registro do adaptador de armazenamento para uma unidade biométrica relacionada aos padrões de voz.
 
 <dl> <dt>
 
 **Funcionalidades**
 </dt> <dd>
 
-Os recursos de reconhecimento de voz do componente de armazenamento que está conectado a uma unidade biométrica específica
+Os recursos de reconhecimento de voz do componente de armazenamento conectado a uma unidade biométrica específica
 
 </dd> </dl> </dd> </dl> </dd> </dl>
 
@@ -147,9 +147,9 @@ Os recursos de reconhecimento de voz do componente de armazenamento que está co
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinBio \_ Types. h (inclui WinBio. h para aplicativos cliente ou WinBio \_ Adapters. h para adaptadores)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                                                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2016 somente aplicativos da área de trabalho\]<br/>                                                                                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winbio \_ types.h (inclua Winbio.h para aplicativos cliente ou \_ adaptadores Winbio.h para adaptadores)</dt> </dl> |
 
 
 
@@ -157,10 +157,10 @@ Os recursos de reconhecimento de voz do componente de armazenamento que está co
 
 <dl> <dt>
 
-[**\_Constantes de tipo BIOMÉTRICO WINBIO \_**](winbio-biometric-type-constants.md)
+[**Constantes \_ DE TIPO \_ BIOMÉTRICO WINBIO**](winbio-biometric-type-constants.md)
 </dt> <dt>
 
-[**\_Constantes de recurso WINBIO**](winbio-capability-constants.md)
+[**Constantes \_ WINBIO CAPABILITY**](winbio-capability-constants.md)
 </dt> </dl>
 
  

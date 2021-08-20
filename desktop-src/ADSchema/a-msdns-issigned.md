@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DNS-Is-Signed
-description: Um atributo usado para definir se a zona DNS está assinada ou não.
+title: atributo ms-DNS-is-signed
+description: Um atributo usado para definir se a zona DNS é assinada ou não.
 ms.assetid: 488661fd-1a3b-4b63-9ec6-d402f4318c59
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo ms-DNS-Is-Signed
-- Esquema do AD do atributo msDNS-IsSigned
+- Esquema de AD do atributo ms-DNS-is-signed
+- msDN-esquema de AD assinado de atributos
 topic_type:
 - apiref
 api_name:
@@ -21,21 +21,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118427080"
 ---
-# <a name="ms-dns-is-signed-attribute"></a>Atributo ms-DNS-Is-Signed
+# <a name="ms-dns-is-signed-attribute"></a>atributo ms-DNS-is-signed
 
-Um atributo usado para definir se a zona DNS está assinada ou não.
+Um atributo usado para definir se a zona DNS é assinada ou não.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DNS-Is-Signed                     |
-| Ldap-Display-Name | msDNS-IsSigned                       |
+| CN                | MS-DNS-é assinado                     |
+| LDAP-Display-Name | msDN-IsSigned                       |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2130              |
-| System-Id-Guid    | aa12854c-d8fc-4d5e-91ca-368b8d829bee |
+| System-ID-GUID    | aa12854c-d8fc-4d5e-91ca-368b8d829bee |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -53,10 +53,10 @@ Um atributo usado para definir se a zona DNS está assinada ou não.
 | ID do link                | \-                                       |
 | MAPI-Id                | \-                                       |
 | System-Only            | Falso                                    |
-| Tem valor único       | Verdadeiro                                     |
+| É de valor único       | Verdadeiro                                     |
 | É indexado             | Falso                                    |
-| No Catálogo Global      | Falso                                    |
-| Descritor de segurança NT | O:BAG:BAD:S:                             |
+| No catálogo global      | Falso                                    |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                             |
 | Range-Lower            | \-                                       |
 | Range-Upper            | \-                                       |
 | Search-Flags           | 0x00000008                               |

@@ -1,8 +1,8 @@
 ---
-description: Descompacta o arquivo de paginação lógica (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método uncompact.
+description: Descompacta o arquivo de paging lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método Uncompress.
 ms.assetid: d4cfa42e-7f05-4d12-b629-14195fc04e77
 ms.tgt_platform: multiple
-title: Método UncompressEx da classe Win32_PageFile
+title: Método UncompressEx da Win32_PageFile classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 158efe4d2390762433d66d170b774838c9e534d3
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: c815ad99a7bccf1ebbd4f6c74b8f9d7f15d1e8baebfdbb64822ac77467c7aa31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118009325"
 ---
-# <a name="uncompressex-method-of-the-win32_pagefile-class"></a>Método UncompressEx da classe de \_ arquivo de paginação Win32
+# <a name="uncompressex-method-of-the-win32_pagefile-class"></a>Método UncompressEx da classe PageFile win32 \_
 
-O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **UncompressEx** descompacta o arquivo de paginação lógica (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do método [**uncompact**](uncompress-method-in-class-win32-directory.md) .
+O método de classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **UncompressEx** descompacta o arquivo de paging lógico (ou diretório) especificado no caminho do objeto. Esse método é uma versão estendida do [**método Uncompress.**](uncompress-method-in-class-win32-directory.md)
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,35 +44,35 @@ uint32 UncompressEx(
 
 <dl> <dt>
 
-*StopFileName* \[ fora\]
+*StopFileName* \[ out\]
 </dt> <dd>
 
-Nome do arquivo ou diretório em que o método **UncompressEx** falhou. Esse parâmetro será **NULL** se o método tiver sucesso.
+Nome do arquivo ou diretório em que o **método UncompressEx** falhou. Esse parâmetro será **nulo se** o método for bem-sucedido.
 
 </dd> <dt>
 
-*StartFileName* \[ em, opcional\]
+*StartFileName* \[ in, opcional\]
 </dt> <dd>
 
-Nomeia o arquivo ou diretório filho a ser usado como ponto de partida para **UncompressEx**. O parâmetro *StartFileName* normalmente é o parâmetro *StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada do método anterior. Se esse parâmetro for **nulo**, a operação será executada no arquivo ou diretório especificado na chamada de ExecMethod.
+Nomeia o arquivo ou diretório filho a ser usado como um ponto de partida para **UncompressEx.** O *parâmetro StartFileName* normalmente é o parâmetro *StopFileName* que especifica o arquivo ou diretório no qual ocorreu um erro da chamada de método anterior. Se esse parâmetro for **NULL,** a operação será executada no arquivo ou diretório especificado na chamada ExecMethod.
 
 </dd> <dt>
 
-*Recursivo* \[ em, opcional\]
+*Recursivo* \[ in, opcional\]
 </dt> <dd>
 
-Se **for true**, a alteração de propriedade será aplicada recursivamente aos arquivos e diretórios dentro do diretório especificado pela instância de [**\_ LogicalFile do CIM**](cim-logicalfile.md) .
+Se **true**, a alteração de propriedade será aplicada recursivamente aos arquivos e diretórios dentro do diretório especificado pela [**instância de \_ LogicalFile cim.**](cim-logicalfile.md)
 
 > [!Note]  
-> Para instâncias de arquivo, o parâmetro *recursivo* é ignorado.
+> Para instâncias de arquivo, o *parâmetro Recursive* é ignorado.
 
  
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) se o arquivo tiver sido descompactado com êxito e qualquer outro número para indicar um erro.
+Retornará um valor de 0 (zero) se o arquivo tiver sido descompactado com êxito e qualquer outro número para indicar um erro.
 
 <dl> <dt>
 
@@ -86,7 +86,7 @@ A solicitação foi bem-sucedida.
 **2**
 </dt> <dd>
 
-Acesso negado.
+O acesso foi negado.
 
 </dd> <dt>
 
@@ -121,7 +121,7 @@ O sistema de arquivos não é NTFS.
 **12**
 </dt> <dd>
 
-A plataforma não é o Windows.
+A plataforma não é Windows.
 
 </dd> <dt>
 
@@ -149,7 +149,7 @@ Houve uma violação de compartilhamento.
 **16**
 </dt> <dd>
 
-O arquivo de inicialização especificado não era válido.
+O arquivo inicial especificado não era válido.
 
 </dd> <dt>
 
@@ -160,7 +160,7 @@ Um privilégio necessário para a operação não é mantido.
 
 </dd> <dt>
 
-**Abril**
+**21**
 </dt> <dd>
 
 Um parâmetro especificado não é válido.
@@ -175,8 +175,8 @@ Um parâmetro especificado não é válido.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -188,7 +188,7 @@ Um parâmetro especificado não é válido.
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_Arquivo de paginação Win32**](win32-pagefile.md)
+[**Win32 \_ PageFile**](win32-pagefile.md)
 </dt> </dl>
 
  

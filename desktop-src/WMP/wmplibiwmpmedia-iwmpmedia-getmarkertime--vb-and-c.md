@@ -1,11 +1,11 @@
 ---
-title: Método getmarcadortime IWMPMedia
-description: O método getmarcadortime retorna a hora do marcador no índice especificado.
+title: Método getMarkerTime do IWMPMedia
+description: O método getMarkerTime retorna a hora do marcador no índice especificado.
 ms.assetid: 1c617e3a-0978-479c-a636-b655082232c1
 keywords:
-- método getmarcadortime Windows Media Player
-- método getmarcadortime Windows Media Player, interface IWMPMedia
-- Interface IWMPMedia do Windows Media Player, método getmarcadortime
+- Método getMarkerTime Windows Media Player
+- Método getMarkerTime Windows Media Player , interface IWMPMedia
+- Interface IWMPMedia Windows Media Player , método getMarkerTime
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df171977adeee3b597cab1f40469af1d975425c9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 293ad08137df1b87f47f614781d92be2b7c310fa7282cc234b38e1f3e0e63586
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755383"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118115684"
 ---
-# <a name="iwmpmediagetmarkertime-method"></a>Método IWMPMedia:: getmarcadortime
+# <a name="iwmpmediagetmarkertime-method"></a>Método IWMPMedia::getMarkerTime
 
-O método **Getmarcadortime** retorna a hora do marcador no índice especificado.
+O **método getMarkerTime** retorna a hora do marcador no índice especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,30 +53,30 @@ Implements IWMPMedia.getMarkerTime
 
 <dl> <dt>
 
-*MarkerNum* \[ no\]
+*MarkerNum* \[ Em\]
 </dt> <dd>
 
-Um **System. Int32** que é o índice de marcador.
+Um **System.Int32 que** é o índice de marcador.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um **sistema. Double** que é a hora do marcador.
+Um **System.Double** que é o tempo do marcador.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método retornará **NULL** se o marcador especificado não existir.
+Esse método **retornará NULL** se o marcador especificado não existir.
 
 Alguns itens de mídia não contêm marcadores. Use **markerCount** para descobrir quantos marcadores estão no item de mídia atual.
 
 Os números de índice de marcador começam em 1.
 
-Antes de chamar esse método, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Antes de chamar esse método, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir usa **Getmarcadortime** para preencher uma caixa de texto de várias linhas com o local de cada marcador. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo de código a seguir **usa getMarkerTime** para preencher uma caixa de texto de várias linhas com o local de cada marcador. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -141,7 +141,7 @@ End If
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -154,7 +154,7 @@ End If
 [**Interface IWMPMedia (VB e C#)**](iwmpmedia--vb-and-c.md)
 </dt> <dt>
 
-[**IWMPMedia. markerCount (VB e C#)**](wmplibiwmpmedia-iwmpmedia-markercount--vb-and-c.md)
+[**IWMPMedia.markerCount (VB e C#)**](wmplibiwmpmedia-iwmpmedia-markercount--vb-and-c.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: campo VistaColtyp. UnsignedShort'
-title: Campo VistaColtyp. UnsignedShort (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: campo VistaColtyp.UnsignedShort'
+title: Campo VistaColtyp.UnsignedShort (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: UnsignedShort field
 ms:assetid: F:Microsoft.Isam.Esent.Interop.Vista.VistaColtyp.UnsignedShort
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.vistacoltyp.unsignedshort(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 1f2a3343f7b4fd7241fe1677bb8c377d66e65930
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7a8b103973ed22cc0e3e65e0c520d27305f1c79269320e6cc2137df57f0c61c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118070277"
 ---
-# <a name="vistacoltypunsignedshort-field"></a>Campo VistaColtyp. UnsignedShort
+# <a name="vistacoltypunsignedshort-field"></a>Campo VistaColtyp.UnsignedShort
 
-Número de 16 bits sem sinal.
+Número de 16 bits sem assinatura.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -61,4 +61,4 @@ public const JET_coltyp UnsignedShort
 
 [Membros do VistaColtyp](./vistacoltyp-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)
