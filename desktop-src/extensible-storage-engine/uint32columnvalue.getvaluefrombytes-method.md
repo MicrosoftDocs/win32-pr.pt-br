@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0210452b297cbba669572c8428d175270b13511f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fdc4ada75a0d3eb2254b5a5511125697869e25fd93db8a1c151005ca78935ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091675"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978316"
 ---
 # <a name="uint32columnvaluegetvaluefrombytes-method"></a>Método UInt32ColumnValue. GetValueFromBytes
 
@@ -69,7 +69,7 @@ protected override void GetValueFromBytes(
 
 #### <a name="parameters"></a>Parâmetros
 
-  - value  
+  - valor  
     Escreva \[\]  
     
     Uma matriz de bytes.

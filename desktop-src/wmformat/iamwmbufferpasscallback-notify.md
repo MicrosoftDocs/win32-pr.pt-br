@@ -1,11 +1,11 @@
 ---
-title: Método notify IAMWMBufferPassCallback
-description: O método Notify é chamado pelo pin para cada buffer que é entregue durante o streaming.
+title: Método Notify IAMWMBufferPassCallback
+description: O método Notify é chamado pelo PIN para cada buffer que é entregue durante o streaming.
 ms.assetid: 3f252754-c784-4ffd-bcfc-fab73fa02b9a
 keywords:
-- Formato de mídia do windows do método Notify
-- Notificar formato de mídia do windows do método , interface IAMWMBufferPassCallback
-- Formato de mídia da interface IAMWMBufferPassCallback , método Notify
+- Método Notify Windows Media Format
+- Método Notify Windows Media Format, interface IAMWMBufferPassCallback
+- IAMWMBufferPassCallback interface formato Windows Media, método Notify
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117847531"
 ---
-# <a name="iamwmbufferpasscallbacknotify-method"></a>Método IAMWMBufferPassCallback::Notify
+# <a name="iamwmbufferpasscallbacknotify-method"></a>Método IAMWMBufferPassCallback:: Notify
 
-O **método Notify** é chamado pelo pin para cada buffer que é entregue durante o streaming.
+O método **Notify** é chamado pelo PIN para cada buffer que é entregue durante o streaming.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,28 +44,28 @@ HRESULT Notify(
 
 <dl> <dt>
 
-*pNSSBuffer3* \[ Em\]
+*pNSSBuffer3* \[ no\]
 </dt> <dd>
 
-Ponteiro para a interface [**INSSBuffer3 exposta**](/previous-versions/windows/desktop/api/wmsbuffer/nn-wmsbuffer-inssbuffer3) no exemplo de mídia.
+Ponteiro para a interface [**INSSBuffer3**](/previous-versions/windows/desktop/api/wmsbuffer/nn-wmsbuffer-inssbuffer3) exposta no exemplo de mídia.
 
 </dd> <dt>
 
-*pPin* \[ Em\]
+*pPin* \[ no\]
 </dt> <dd>
 
-Ponteiro para o pino associado ao fluxo de mídia ao que o exemplo pertence.
+Ponteiro para o PIN associado ao fluxo de mídia ao qual o exemplo pertence.
 
 </dd> <dt>
 
-*prtStart* \[ Em\]
+*prtStart* \[ no\]
 </dt> <dd>
 
 Hora de início do exemplo.
 
 </dd> <dt>
 
-*prtEnd* \[ Em\]
+*prtEnd* \[ no\]
 </dt> <dd>
 
 Hora de término do exemplo.
@@ -74,11 +74,11 @@ Hora de término do exemplo.
 
 ## <a name="return-value"></a>Valor retornado
 
-Nenhum valor de retorno específico é especificado. O pino de chamada ignora o **HRESULT.**
+Nenhum valor de retorno específico foi especificado. O PIN de chamada ignora o **HRESULT**.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método permite que um aplicativo examine e atue em informações no buffer de mídia antes que o conteúdo do buffer seja processado. O aplicativo é responsável por conhecer o tipo de mídia no pino. Essas informações podem ser obtidas primeiro obtendo as informações de fluxo do perfil e, em seguida, chamando o método [**IConfigAsfWriter2::StreamNumFromPin**](iconfigasfwriter2-streamnumfrompin.md) para determinar qual pino está associado a cada fluxo.
+Esse método permite que um aplicativo examine e atue em informações no buffer de mídia antes que o conteúdo do buffer seja processado. O aplicativo é responsável por saber o tipo de mídia no PIN. Essas informações podem ser obtidas primeiro obtendo as informações de fluxo do perfil e, em seguida, chamando o método [**IConfigAsfWriter2:: StreamNumFromPin**](iconfigasfwriter2-streamnumfrompin.md) para determinar qual PIN está associado a cada fluxo.
 
 ## <a name="see-also"></a>Confira também
 
@@ -87,10 +87,10 @@ Esse método permite que um aplicativo examine e atue em informações no buffer
 [**DirectShow Referência de QASF**](directshow-qasf-reference.md)
 </dt> <dt>
 
-[**IAMWMBufferPassCallback Interface**](/previous-versions/windows/desktop/api/dshowasf/nn-dshowasf-iamwmbufferpasscallback)
+[**Interface IAMWMBufferPassCallback**](/previous-versions/windows/desktop/api/dshowasf/nn-dshowasf-iamwmbufferpasscallback)
 </dt> <dt>
 
-[**INSSBuffer3 Interface**](/previous-versions/windows/desktop/api/wmsbuffer/nn-wmsbuffer-inssbuffer3)
+[**Interface INSSBuffer3**](/previous-versions/windows/desktop/api/wmsbuffer/nn-wmsbuffer-inssbuffer3)
 </dt> </dl>
 
  

@@ -4,16 +4,16 @@ ms.assetid: 0f809c71-a3bd-4c62-8086-9651ea1a3400
 title: Objetos auxiliares
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ac5193003abd10d9fa2c311b250272d9ad5847a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98464c31548309b50e21b2b8e3e20a867efe7ca647d7a9879efd0ef346e6a147
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999476"
 ---
 # <a name="helper-objects"></a>Objetos auxiliares
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 O VDS fornece dois objetos auxiliares: o objeto de enumeração e o objeto Async. Este tópico descreve cada um desses objetos e fornece links para exemplos de como os chamadores funcionam com cada um deles.
 

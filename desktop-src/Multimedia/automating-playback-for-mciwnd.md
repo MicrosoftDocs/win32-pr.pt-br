@@ -6,12 +6,12 @@ keywords:
 - Macro MCIWndCreate
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b9224cfa4f5a93488f226d1aefa83201b8b0637
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 27328367e58ffa21a2f83abe8ecab9d9a4259e6fb61b7b0a36d3104adaea5d9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292723"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065596"
 ---
 # <a name="automating-playback-for-mciwnd"></a>Automatizando a reprodução para MCIWnd
 
@@ -79,9 +79,9 @@ VOID LoadNGoMCIWnd(HWND hwnd, LPSTR lpstr)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

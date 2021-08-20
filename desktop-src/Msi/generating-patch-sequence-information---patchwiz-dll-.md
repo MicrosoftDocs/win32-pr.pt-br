@@ -1,23 +1,23 @@
 ---
-description: A versão do PATCHWIZ.DLL lançada com Windows Installer&\# 160; 3.0 pode gerar automaticamente informações de sequenciamento de patch e adicionar à tabela MsiPatchSequence um novo patch.
+description: a versão do PATCHWIZ.DLL lançada com Windows Installer&\# 160; 3.0 pode gerar automaticamente informações de sequenciamento de patch e adicionar à tabela MsiPatchSequence um novo patch.
 ms.assetid: 03e7eea6-1a37-4c86-a9da-109fbaf20728
 title: Gerando informações de sequência de patch (PATCHWIZ.DLL)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff82166f33266a58cd3ef299b2546b04a94ebb14
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 03094d9df26f4565db5b3a31c9a27c58a0bb45dac8aac93b2fefce34104d58c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118947017"
 ---
 # <a name="generating-patch-sequence-information-patchwizdll"></a>Gerando informações de sequência de patch (PATCHWIZ.DLL)
 
-A versão do [PATCHWIZ.DLL](patchwiz-dll.md) lançada com Windows Installer 3,0 pode gerar automaticamente informações de sequenciamento de patch e adicionar à [tabela MsiPatchSequence](msipatchsequence-table.md) um novo patch.
+a versão do [PATCHWIZ.DLL](patchwiz-dll.md) lançada com Windows Installer 3,0 pode gerar automaticamente informações de sequenciamento de patch e adicionar à [tabela MsiPatchSequence](msipatchsequence-table.md) um novo patch.
 
 Defina a propriedade de geração de dados de sequência \_ \_ \_ desabilitada como 1 (uma) na [tabela Propriedades](properties-table-patchwiz-dll-.md) do arquivo. PCP para evitar a geração automática de informações de sequenciamento de patch. Se essa propriedade estiver ausente, as informações serão geradas e adicionadas automaticamente.
 
-Quando o [PATCHWIZ.DLL](patchwiz-dll.md) liberado com Windows Installer 3,0 é usado para gerar automaticamente as informações de sequenciamento de patch, ocorre o seguinte:
+quando o [PATCHWIZ.DLL](patchwiz-dll.md) liberado com Windows Installer 3,0 é usado para gerar automaticamente as informações de sequenciamento de patch, ocorre o seguinte:
 
 -   Uma nova linha é adicionada à [tabela MsiPatchSequence](msipatchsequence-table.md) para cada código de produto de uma imagem de destino listada na [tabela TargetImages](targetimages-table-patchwiz-dll-.md).
 -   Os valores adicionados à coluna PatchFamily nas novas linhas correspondem aos códigos de produto de destino das imagens de destino listadas na [tabela TargetImages](targetimages-table-patchwiz-dll-.md).

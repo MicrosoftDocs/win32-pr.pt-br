@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e82b9525dd6de316087db8fdfd55181118d3adc6
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 8c6b7a1e70804bc3c9c277f3d46ac6a8ad20fc0f98b370f93fe9fd09b0b1bb99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103823702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013854"
 ---
 # <a name="ignore-attribute"></a>ignorar atributo
 
@@ -99,7 +99,7 @@ typedef struct _DBL_LINK_NODE_TYPE
 [Atributos de matriz e de Sized-Pointer](array-and-sized-pointer-attributes.md)
 </dt> <dt>
 
-[**Storage**](arrays-1.md)
+[**matrizes**](arrays-1.md)
 </dt> <dt>
 
 [Matrizes e ponteiros](/windows/desktop/Rpc/arrays-and-pointers)
@@ -120,6 +120,6 @@ typedef struct _DBL_LINK_NODE_TYPE
 [**diferente**](unique.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

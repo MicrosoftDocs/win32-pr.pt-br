@@ -1,5 +1,5 @@
 ---
-description: Representa um trabalho de operação de armazenamento criado pelo serviço de gerenciamento de imagens Microsoft Hyper-V.
+description: representa um trabalho de operação de armazenamento criado pelo serviço de gerenciamento de imagens Microsoft Hyper-V.
 ms.assetid: a1517c1f-7fb6-4203-a5ec-2ecdfcbc4e8c
 title: Classe Msvm_StorageJob
 ms.topic: reference
@@ -58,16 +58,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 3014cb9a8201d7baceaf39bb760b17c33844abeb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 740f5ab4df3e26c408aa94c607073f497c1458fa66a67958736945887dffd1ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118950125"
 ---
 # <a name="msvm_storagejob-class"></a>\_Classe Msvm StorageJob
 
-Representa um trabalho de operação de armazenamento criado pelo serviço de gerenciamento de imagens Microsoft Hyper-V.
+representa um trabalho de operação de armazenamento criado pelo serviço de gerenciamento de imagens Microsoft Hyper-V.
 
 A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
 
@@ -348,7 +348,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -361,50 +361,50 @@ Tipo de dados: **UINT32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O código **HRESULT** que descreve o status de conclusão da operação assíncrona.
+O **código HRESULT** que descreve o status de conclusão da operação assíncrona.
 
 </dd> <dt>
 
 **JobRunTimes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número de vezes que o trabalho deve ser executado. Um valor de 1 indica que o trabalho não é recorrente, enquanto qualquer valor diferente de zero indica um limite para o número de vezes que o trabalho será recorrente. Zero indica que não há nenhum limite para o número de vezes que o trabalho pode ser processado, mas será encerrado após o tempo de espera ter sido atingido **ou o trabalho** será encerrado manualmente. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O número de vezes que o trabalho deve ser executado. Um valor de 1 indica que o trabalho não é recorrente, enquanto qualquer valor não zero indica um limite para o número de vezes que o trabalho será recurso. Zero indica que não há limite para o número de vezes que o trabalho pode ser processado, mas ele será encerrado depois que **UntilTime** for atingido ou o trabalho seja encerrado manualmente. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **JobState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O estado operacional de um trabalho. Ele também pode indicar transições entre esses Estados, por exemplo, 6 (desligando) e 3 (iniciando). Essa propriedade é herdada do [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+O estado operacional de um trabalho. Ele também pode indicar transições entre esses estados, por exemplo, 6 (Desligando) e 3 (Iniciando). Essa propriedade é herdada de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 
 
 | Valor                                                                                                                                                                                                                                                                     | Significado                                                                                                                                                                                                                                            |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="New"></span><span id="new"></span><span id="NEW"></span><dl> <dt>**Novo**</dt> <dt>2</dt> </dl>                                                               | O trabalho nunca foi iniciado.<br/>                                                                                                                                                                                                         |
-| <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dl> <dt>**Iniciando**</dt> em <dt>3</dt> </dl>                                           | O trabalho está mudando dos Estados "novo", "suspenso" ou "serviço" para o estado "em execução".<br/>                                                                                                                                            |
+| <span id="Starting"></span><span id="starting"></span><span id="STARTING"></span><dl> <dt>**Começando**</dt> <dt>em 3</dt> </dl>                                           | O trabalho está mudando dos estados "Novo", "Suspenso" ou "Serviço" para o estado "Em execução".<br/>                                                                                                                                            |
 | <span id="Running"></span><span id="running"></span><span id="RUNNING"></span><dl> <dt>**Executando**</dt> <dt>4</dt> </dl>                                               | O trabalho está em execução.<br/>                                                                                                                                                                                                                     |
 | <span id="Suspended"></span><span id="suspended"></span><span id="SUSPENDED"></span><dl> <dt>**Suspenso**</dt> <dt>5</dt> </dl>                                       | O trabalho é interrompido, mas pode ser reiniciado de maneira direta.<br/>                                                                                                                                                                       |
-| <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Desligando**</dt> <dt>6</dt> </dl>                       | O trabalho está mudando para um estado "concluído", "encerrado" ou "eliminado".<br/>                                                                                                                                                                    |
-| <span id="Completed"></span><span id="completed"></span><span id="COMPLETED"></span><dl> <dt>**Concluído**</dt> em <dt>7</dt> </dl>                                       | O trabalho foi concluído normalmente.<br/>                                                                                                                                                                                                         |
-| <span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span><dl> <dt>**Terminada**</dt> em <dt>8</dt> </dl>                                   | O trabalho foi interrompido por uma solicitação de alteração de estado "Terminate". O trabalho e todos os seus processos subjacentes são encerrados e podem ser reiniciados apenas como um novo trabalho. O requisito de que o trabalho seja reiniciado somente como um novo trabalho é específico do trabalho.<br/> |
-| <span id="Killed"></span><span id="killed"></span><span id="KILLED"></span><dl> <dt>**Encerrado**</dt> <dt>9</dt> </dl>                                                   | O trabalho foi interrompido por uma solicitação de alteração de estado "Kill". Os processos subjacentes ainda podem estar em execução, e uma limpeza pode ser necessária para liberar recursos.<br/>                                                                            |
-| <span id="Exception"></span><span id="exception"></span><span id="EXCEPTION"></span><dl> <dt>**Exceção**</dt> <dt>10</dt> </dl>                                      | O trabalho está em um estado anormal que pode indicar uma condição de erro. O status real do trabalho pode estar disponível por meio de objetos específicos do trabalho.<br/>                                                                           |
-| <span id="Service"></span><span id="service"></span><span id="SERVICE"></span><dl> <dt>**Serviço**</dt> <dt>11</dt> </dl>                                              | O trabalho está em um estado específico do fornecedor que dá suporte à descoberta de problemas ou à resolução, ou ambos.<br/>                                                                                                                                          |
-| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF reservado**</dt> <dt>12 32767</dt> </dl>                | Reservado.<br/>                                                                                                                                                                                                                               |
-| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Fornecedor reservado**</dt> <dt>32768 65535</dt> </dl> | Reservado.<br/>                                                                                                                                                                                                                               |
+| <span id="Shutting_Down"></span><span id="shutting_down"></span><span id="SHUTTING_DOWN"></span><dl> <dt>**Desligando 6**</dt> <dt></dt> </dl>                       | O trabalho está mudando para um estado "Concluído", "Encerrado" ou "Encerrado".<br/>                                                                                                                                                                    |
+| <span id="Completed"></span><span id="completed"></span><span id="COMPLETED"></span><dl> <dt>**Concluído**</dt> <dt>7</dt> </dl>                                       | O trabalho foi concluído normalmente.<br/>                                                                                                                                                                                                         |
+| <span id="Terminated"></span><span id="terminated"></span><span id="TERMINATED"></span><dl> <dt>**Encerrado 8**</dt> <dt></dt> </dl>                                   | O trabalho foi interrompido por uma solicitação de alteração de estado "Encerrar". O trabalho e todos os seus processos subjacentes são encerrados e podem ser reiniciados apenas como um novo trabalho. O requisito de que o trabalho seja reiniciado apenas como um novo trabalho é específico do trabalho.<br/> |
+| <span id="Killed"></span><span id="killed"></span><span id="KILLED"></span><dl> <dt>**9**</dt> <dt>mortos</dt> </dl>                                                   | O trabalho foi interrompido por uma solicitação de alteração de estado "Kill". Os processos subjacentes ainda podem estar em execução e uma limpeza pode ser necessária para liberar recursos.<br/>                                                                            |
+| <span id="Exception"></span><span id="exception"></span><span id="EXCEPTION"></span><dl> <dt>**Exceção**</dt> <dt>10</dt> </dl>                                      | O trabalho está em um estado anormal que pode ser um indicativo de uma condição de erro. O status real do trabalho pode estar disponível por meio de objetos específicos do trabalho.<br/>                                                                           |
+| <span id="Service"></span><span id="service"></span><span id="SERVICE"></span><dl> <dt>**Serviço**</dt> <dt>11</dt> </dl>                                              | O trabalho está em um estado específico do fornecedor que dá suporte à descoberta de problemas, à resolução ou a ambos.<br/>                                                                                                                                          |
+| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF Reservado**</dt> <dt>12 32767</dt> </dl>                | Reservado.<br/>                                                                                                                                                                                                                               |
+| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Fornecedor Reservado**</dt> <dt>32768 65535</dt> </dl> | Reservado.<br/>                                                                                                                                                                                                                               |
 
 
 
@@ -421,20 +421,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que representa o status do trabalho. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Uma cadeia de caracteres que representa o status do trabalho. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **JobType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de operação assíncrona que está sendo rastreada por esta instância de **Msvm \_ StorageJob**.
+O tipo de operação assíncrona que está sendo rastreada por esta instância do **Msvm \_ StorageJob.**
 
 <dt>
 
@@ -463,7 +463,7 @@ Criando uma imagem de VHD (disco rígido virtual).
 
 </dt> <dd>
 
-Criando uma imagem de disquete virtual (VFD).
+Criando uma VFD (imagem de disquete virtual).
 
 </dd> <dt>
 
@@ -491,12 +491,12 @@ Expandindo o tamanho de uma imagem VHD.
 
 <span id="Merging"></span><span id="merging"></span><span id="MERGING"></span>
 
-<span id="Merging"></span><span id="merging"></span><span id="MERGING"></span>**Mesclagem** (5)
+<span id="Merging"></span><span id="merging"></span><span id="MERGING"></span>**Mesclando** (5)
 
 
 </dt> <dd>
 
-Mesclar várias imagens VHD em uma única imagem.
+Mesclando várias imagens VHD em uma única imagem.
 
 </dd> <dt>
 
@@ -513,12 +513,12 @@ Convertendo o tipo de uma imagem de disco rígido virtual.
 
 <span id="Loopback_Mount"></span><span id="loopback_mount"></span><span id="LOOPBACK_MOUNT"></span>
 
-<span id="Loopback_Mount"></span><span id="loopback_mount"></span><span id="LOOPBACK_MOUNT"></span>**Montagem de auto-retorno** (7)
+<span id="Loopback_Mount"></span><span id="loopback_mount"></span><span id="LOOPBACK_MOUNT"></span>**Montagem de loopback** (7)
 
 
 </dt> <dd>
 
-Montando o disco rígido virtual na partição pai
+Montar o disco rígido virtual na partição pai
 
 </dd> <dt>
 
@@ -535,7 +535,7 @@ Montar o VHD no sistema operacional de gerenciamento.
 
 <span id="Validate_VHD_Image"></span><span id="validate_vhd_image"></span><span id="VALIDATE_VHD_IMAGE"></span>
 
-<span id="Validate_VHD_Image"></span><span id="validate_vhd_image"></span><span id="VALIDATE_VHD_IMAGE"></span>**Validar imagem do VHD** (9)
+<span id="Validate_VHD_Image"></span><span id="validate_vhd_image"></span><span id="VALIDATE_VHD_IMAGE"></span>**Validar imagem VHD** (9)
 
 
 </dt> <dd></dd> </dl>
@@ -545,20 +545,20 @@ Montar o VHD no sistema operacional de gerenciamento.
 **LocalOrUtcTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se as horas representadas nas propriedades **RunStartInterval** e **UntilTime** representam horários locais ou horários UTC. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Indica se os horários representados nas propriedades **RunStartInterval** e **UntilTime** representam horários locais ou horários UTC. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 <dl> <dt>
 
 <span id="Local_Time"></span><span id="local_time"></span><span id="LOCAL_TIME"></span>**Hora local** (1)
 </dt> <dt>
 
-<span id="UTC_Time_"></span><span id="utc_time_"></span><span id="UTC_TIME_"></span>**Hora UTC** (2)
+<span id="UTC_Time_"></span><span id="utc_time_"></span><span id="UTC_TIME_"></span>**Hora UTC** (2 )
 </dt> </dl>
 
 </dd> <dt>
@@ -572,7 +572,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -585,33 +585,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O usuário que é notificado após a conclusão ou falha do trabalho. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O usuário que é notificado após a conclusão ou falha do trabalho. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da propriedade **enabledstate** . Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da **propriedade EnabledState.** Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Os status atuais do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Os status atuais do objeto. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -624,7 +624,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve a ação de recuperação quando a propriedade **recoveryaction** da instância é 1 (outra). Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Uma cadeia de caracteres que descreve a ação de recuperação quando a **propriedade RecoveryAction** da instância é 1 (Outro). Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -637,7 +637,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O usuário que enviou o trabalho. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O usuário que enviou o trabalho. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -657,74 +657,74 @@ Em caso de falha da operação assíncrona, essa propriedade contém o caminho d
 **PercentComplete**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **MinValue** (0), **MaxValue** (100), **unidades** ("percent")
+Qualificadores: **MinValue** ( 0 ), **MaxValue** ( 100 ), **Units** ( "Percent" )
 </dt> </dl>
 
-A porcentagem de conclusão do trabalho. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O percentual de conclusão do trabalho. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer o status de integridade de alto nível e detalhado do elemento e seus subcomponentes. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer status de saúde detalhado e de alto nível do elemento e seus subcomponentes. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **Prioridade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A importância da execução de um trabalho. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+A importância da execução de um trabalho. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
-**Recuperação de**
+**RecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descreve a ação de recuperação a ser executada para um trabalho que não foi executado com êxito. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Descreve a ação de recuperação a ser tomada para um trabalho que não foi executado com êxito. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 <dl> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconhecido** (0)
 </dt> <dt>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 </dt> <dt>
 
-<span id="Do_Not_Continue"></span><span id="do_not_continue"></span><span id="DO_NOT_CONTINUE"></span>Não **continuar** (2)
+<span id="Do_Not_Continue"></span><span id="do_not_continue"></span><span id="DO_NOT_CONTINUE"></span>**Não continuar** (2)
 </dt> <dt>
 
 <span id="Continue_With_Next_Job"></span><span id="continue_with_next_job"></span><span id="CONTINUE_WITH_NEXT_JOB"></span>**Continuar com o próximo trabalho** (3)
 </dt> <dt>
 
-<span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>**Executar trabalho novamente** (4)
+<span id="Re-run_Job"></span><span id="re-run_job"></span><span id="RE-RUN_JOB"></span>**Executar trabalho de novo** (4)
 </dt> <dt>
 
-<span id="Run_Recovery_Job_"></span><span id="run_recovery_job_"></span><span id="RUN_RECOVERY_JOB_"></span>**Executar trabalho de recuperação** (5)
+<span id="Run_Recovery_Job_"></span><span id="run_recovery_job_"></span><span id="RUN_RECOVERY_JOB_"></span>**Executar trabalho de recuperação** (5 )
 </dt> </dl>
 
 </dd> <dt>
@@ -738,18 +738,18 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **MinValue** (-31), **MaxValue** (31)
+Qualificadores: **MinValue** ( -31 ), **MaxValue** ( 31 )
 </dt> </dl>
 
-O dia do mês em que o trabalho deve ser processado. Há diferentes interpretações para essa propriedade, dependendo do valor de **RunDayOfWeek**.
+O dia do mês em que o trabalho deve ser processado. Há interpretações diferentes para essa propriedade, dependendo do valor de **RunDayOfWeek**.
 
-Quando **RunDayOfWeek** é 0 e **RunDay** é positivo, **RunDay** define o dia do mês em que o trabalho é processado. Por exemplo, se **RunDayOfWeek** for 0 e **RunDay** for 12, o trabalho será processado nos <sup>12 dias do</sup> mês.
+Quando **RunDayOfWeek** é 0 e RunDay é positivo, **o RunDay** define o dia do mês em que o trabalho é processado.  Por exemplo, se **RunDayOfWeek** for 0 e **RunDay** for 12, o trabalho será processado no dia 12 <sup></sup> do mês.
 
-Quando **RunDayOfWeek** é 0 e **RunDay** é negativo, **RunDay** define o número de dias antes do último dia do mês em que o trabalho é processado.  1 indica o último dia do mês, 2 indica um dia antes do último dia do mês e assim por diante. Por exemplo, se **RunDayOfWeek** for 0 e **RunDay** for 1, o trabalho será processado no último dia do mês.
+Quando **RunDayOfWeek** é 0 e RunDay é negativo, **o RunDay** define o número de dias antes do último dia do mês em que o trabalho é processado.   1 indica o último dia do mês, 2 indica um dia antes do último dia do mês e assim por diante. Por exemplo, se **RunDayOfWeek** for 0 e **RunDay** for 1, o trabalho será processado no último dia do mês.
 
-Quando **RunDayOfWeek** não for 0, **RunDayOfWeek** será o dia da semana em que o trabalho será processado, em relação a **RunDay**. Por exemplo, se **RunDay** for 15 e **RunDayOfWeek** for 7 (+ sábado), o trabalho será processado no primeiro sábado, em ou <sup>após 15 dias</sup> do mês. Se **RunDay** for 20 e **RunDayOfWeek** for 7 (sábado), o trabalho será processado no primeiro sábado, em ou antes <sup>dos 20 dias</sup> do mês. Se **RunDay** for 1 e **RunDayOfWeek** for 1 (domingo), o trabalho será processado no último domingo do mês.
+Quando **RunDayOfWeek** não é 0, **RunDayOfWeek** é o dia da semana em que o trabalho será processado, em relação ao **RunDay.** Por exemplo, se **RunDay** for 15 e **RunDayOfWeek** for 7 (+Sábado), o trabalho será processado no primeiro sábado no dia ou após o 15º dia do mês.<sup></sup> Se **RunDay** for 20 e **RunDayOfWeek** for 7 ( sábado), o trabalho será processado no primeiro sábado no dia ou antes do dia 20 <sup></sup> do mês. Se **RunDay** for 1 e **RunDayOfWeek** for 1 ( domingo), o trabalho será processado no último domingo do mês.
 
-Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 </dd> <dt>
 
@@ -762,29 +762,29 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um inteiro positivo ou negativo usado em conjunto com **RunDay** para indicar o dia da semana ou mês em que o trabalho é processado. Consulte a descrição da propriedade **RunDay** para obter mais informações. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+Um inteiro positivo ou negativo usado em conjunto com **o RunDay** para indicar o dia da semana ou mês em que o trabalho é processado. Consulte a descrição da **propriedade RunDay** para obter mais informações. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 <dl> <dt>
 
-<span id="-Saturday"></span><span id="-saturday"></span><span id="-SATURDAY"></span>**-Sábado** (7)
+<span id="-Saturday"></span><span id="-saturday"></span><span id="-SATURDAY"></span>**-Saturday** ( 7)
 </dt> <dt>
 
-<span id="-Friday"></span><span id="-friday"></span><span id="-FRIDAY"></span>**-Sexta** (6)
+<span id="-Friday"></span><span id="-friday"></span><span id="-FRIDAY"></span>**-Friday** ( 6)
 </dt> <dt>
 
-<span id="-Thursday"></span><span id="-thursday"></span><span id="-THURSDAY"></span>**-Quinta** (5)
+<span id="-Thursday"></span><span id="-thursday"></span><span id="-THURSDAY"></span>**-Thursday** ( 5)
 </dt> <dt>
 
-<span id="-Wednesday"></span><span id="-wednesday"></span><span id="-WEDNESDAY"></span>**-Quarta** (4)
+<span id="-Wednesday"></span><span id="-wednesday"></span><span id="-WEDNESDAY"></span>**-Wednesday** ( 4)
 </dt> <dt>
 
-<span id="-Tuesday"></span><span id="-tuesday"></span><span id="-TUESDAY"></span>**-Terça-feira** (3)
+<span id="-Tuesday"></span><span id="-tuesday"></span><span id="-TUESDAY"></span>**-Tuesday** ( 3)
 </dt> <dt>
 
-<span id="-Monday"></span><span id="-monday"></span><span id="-MONDAY"></span>**-Segunda** (2)
+<span id="-Monday"></span><span id="-monday"></span><span id="-MONDAY"></span>**-Monday** ( 2)
 </dt> <dt>
 
-<span id="-Sunday"></span><span id="-sunday"></span><span id="-SUNDAY"></span>**-Domingo** (1)
+<span id="-Sunday"></span><span id="-sunday"></span><span id="-SUNDAY"></span>**-Sunday** ( 1)
 </dt> <dt>
 
 <span id="ExactDayOfMonth"></span><span id="exactdayofmonth"></span><span id="EXACTDAYOFMONTH"></span>**ExactDayOfMonth** (0)
@@ -793,7 +793,7 @@ Um inteiro positivo ou negativo usado em conjunto com **RunDay** para indicar o 
 <span id="Sunday"></span><span id="sunday"></span><span id="SUNDAY"></span>**Domingo** (1)
 </dt> <dt>
 
-<span id="Monday"></span><span id="monday"></span><span id="MONDAY"></span>**Segunda** (2)
+<span id="Monday"></span><span id="monday"></span><span id="MONDAY"></span>**Segunda-feira** (2)
 </dt> <dt>
 
 <span id="Tuesday"></span><span id="tuesday"></span><span id="TUESDAY"></span>**Terça-feira** (3)
@@ -808,7 +808,7 @@ Um inteiro positivo ou negativo usado em conjunto com **RunDay** para indicar o 
 <span id="Friday"></span><span id="friday"></span><span id="FRIDAY"></span>**Sexta-feira** (6)
 </dt> <dt>
 
-<span id="Saturday_"></span><span id="saturday_"></span><span id="SATURDAY_"></span>**Sábado** (7)
+<span id="Saturday_"></span><span id="saturday_"></span><span id="SATURDAY_"></span>**Sábado** (7 )
 </dt> </dl>
 
 </dd> <dt>
@@ -822,7 +822,7 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O mês durante o qual o trabalho deve ser processado. Essa propriedade é herdada [**do \_ trabalho CIM**](/windows/desktop/CIMWin32Prov/cim-job).
+O mês durante o qual o trabalho deve ser processado. Essa propriedade é herdada do [**Trabalho CIM. \_**](/windows/desktop/CIMWin32Prov/cim-job)
 
 <dl> <dt>
 
@@ -991,8 +991,8 @@ O acesso à classe **Msvm \_ StorageJob** pode ser restringido pela filtragem do
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
@@ -1009,7 +1009,7 @@ O acesso à classe **Msvm \_ StorageJob** pode ser restringido pela filtragem do
 [**\_CONCRETEJOB CIM**](/previous-versions//cc136808(v=vs.85))
 </dt> <dt>
 
-[Classes de armazenamento](storage-classes.md)
+[Armazenamento Classe](storage-classes.md)
 </dt> </dl>
 
  

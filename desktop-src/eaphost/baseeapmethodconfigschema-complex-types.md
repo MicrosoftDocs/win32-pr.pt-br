@@ -18,7 +18,7 @@ ms.locfileid: "118498698"
 ---
 # <a name="baseeapmethodconfig-schema-complex-types"></a>Tipos complexos de esquema baseeapmethodconfig
 
-O [esquema baseeapmethodconfig](baseeapmethodconfigschema-schema.md) define o tipo complexo a seguir.
+O esquema [baseeapmethodconfig](baseeapmethodconfigschema-schema.md) define o tipo complexo a seguir.
 
 -   [**BaseEapMethodConfig**](baseeapmethodconfigschema-baseeapmethodconfig-complextype.md)
 

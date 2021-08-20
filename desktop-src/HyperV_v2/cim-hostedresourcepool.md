@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: dbb6d523b533d6e8b2f5bc1e21de93962cfd860f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7029e3eaebc879d5b635ffe70cd8f6d7888ff580247d992f6794f20c35db7045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766906"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119014574"
 ---
 # <a name="cim_hostedresourcepool-class"></a>\_Classe CIM HostedResourcePool
 

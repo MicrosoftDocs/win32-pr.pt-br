@@ -4,12 +4,12 @@ ms.assetid: de3242f4-bce3-4139-9cb4-85eb33f375b1
 title: Identificador HRECOALT (recapitular. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4416b96730d97f0bf17d6e0bd10f3fd56cce4860
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d9ab2f3dfd4df34254ef74e238592223fb4defe1af013fcc829dd8d18705e9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967561"
 ---
 # <a name="hrecoalt-handle"></a>Identificador de HRECOALT
 
@@ -41,9 +41,9 @@ Essas funções são obsoletas e não precisam ser implementadas por reconhecedo
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                        |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                        |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
-| parâmetro<br/>                   | <dl> <dt>Recapitular. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Recapitular. h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Windowscodecs.dll
 - Wincodec.lib
-ms.openlocfilehash: 15c515bb17641e2e7b70b79552fe3bacf1f1c3fd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9d2b67314ce3499f9cd3730159f7e267bd2b1890e678140d2688659620e501d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118965205"
 ---
 # <a name="iwicimagingfactory_createdecoderfromfilehandle_proxy-function"></a>\_Função de \_ proxy IWICImagingFactory CreateDecoderFromFileHandle
 
@@ -47,11 +47,11 @@ HRESULT IWICImagingFactory_CreateDecoderFromFileHandle_Proxy(
 *pFactory* \[ no\]
 </dt> <dd>
 
-Tipo: **[**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) \** _
+Tipo: **[ **IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory)\***
 
 </dd> <dt>
 
-_hFile * \[ in\]
+*hFile* \[ no\]
 </dt> <dd>
 
 Tipo: **ULONG \_ PTR**
@@ -63,13 +63,13 @@ O identificador de arquivo do qual criar o decodificador.
 *pguidVendor* \[ no\]
 </dt> <dd>
 
-Tipo: **const GUID \** _
+Tipo: **GUID \* const**
 
 O GUID do fornecedor para o decodificador.
 
 </dd> <dt>
 
-_metadataOptions * \[ in\]
+*metadataoptions* \[ no\]
 </dt> <dd>
 
 Tipo: **[ **WICDecodeOptions**](/windows/desktop/api/Wincodec/ne-wincodec-wicdecodeoptions)**
@@ -87,7 +87,7 @@ Um ponteiro que recebe um ponteiro para um novo [**IWICBitmapDecoder**](/windows
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -101,8 +101,8 @@ Se essa função for bem sucedido, ela retornará **S \_ OK**. Caso contrário, 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP com SP2, \[ somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                                                                             |
+| Cliente mínimo com suporte<br/> | Windows XP com SP2, somente aplicativos do Windows Vista \[ desktop\]<br/>                                                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                                                                             |
 | DLL<br/>                      | <dl> <dt>Windowscodecs.dll; </dt> <dt>Wincodec. lib</dt> </dl> |
 
 

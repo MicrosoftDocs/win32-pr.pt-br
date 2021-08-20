@@ -1,26 +1,26 @@
 ---
-title: Atributo de cores da VML
-description: Atributo de cores da VML
+title: Atributo Cores do VML
+description: Atributo Cores do VML
 ms.assetid: 466ed1d7-8861-44db-bd96-a2fd119b12f4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d68c5df5b2dc97c19441d6abaf6cd6c03d949c55
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a699b0ab8da898dd82fa4e1bf4823c0f9fdd443eb8275e25dbfaac6d2f039a6b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104499103"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118999276"
 ---
-# <a name="vml-colors-attribute"></a>Atributo de cores da VML
+# <a name="vml-colors-attribute"></a>Atributo Cores do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define várias cores para um preenchimento gradual. Leitura/gravação. **IVgGradientColorArray**.
+Define várias cores para um preenchimento de gradiente. Leitura/gravação. **IVgGradientColorArray.**
 
 **Aplica-se a**
 
@@ -28,23 +28,23 @@ Define várias cores para um preenchimento gradual. Leitura/gravação. **IVgGra
 
 **Sintaxe de marca**
 
-<v: *Element* Colors = " *expression* " >
+<v: *element* colors=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . Colors = "*expression*"
+*elemento* .colors="*expression*"
 
-*expressão* = de *elemento*. Colors
+*expressão* = *elemento*.colors
 
 **Comentários**
 
-Usado para definir uma matriz que consiste em valores emparelhados de percentuais ([VgFraction](msdn-online-vml-vgfraction-data-type.md)) e Color ([VgColor](msdn-online-vml-ivgcolor.md)). A matriz cria um preenchimento combinado usando cada ponto na matriz, começando em 0% (definido por **cor**) e terminando em 100% (definido por **Color2**). As cores intermediárias ao longo do caminho podem ser definidas atribuindo um valor de cor a uma porcentagem. O par de porcentagem e de cores não é separado por uma vírgula, mas os pares são separados uns dos outros por vírgulas.
+Usado para definir uma matriz que consiste em valores emparelhados de percentuais ([VgAção](msdn-online-vml-vgfraction-data-type.md)) e cor ([VgColor](msdn-online-vml-ivgcolor.md)). A matriz cria um preenchimento misto usando cada ponto na matriz, começando em 0% (definido por Cor **)** e terminando em 100% (definido por **Color2**). As cores intermediárias ao longo do caminho podem ser definidas atribuindo um valor de cor a um percentual. A porcentagem e o par de cores não são separados por uma vírgula, mas os pares são separados uns dos outros por vírgulas.
 
-Atributo padrão da VML
+Atributo padrão VML
 
 **Exemplo**
 
-A forma tem um preenchimento gradual que consiste em quatro cores, começando com vermelho, mesclando para amarelo, em seguida, verde e finallyblue.
+A forma tem um preenchimento de gradiente que consiste em quatro cores, começando com vermelho, combinando com amarelo, em seguida, verde e finalmenteblue.
 
 
 ```HTML
@@ -60,6 +60,6 @@ A forma tem um preenchimento gradual que consiste em quatro cores, começando co
 
 
 
- 
+ 
 
- 
+ 

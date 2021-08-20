@@ -23,7 +23,7 @@ ms.locfileid: "118733666"
 ---
 # <a name="mrmcreateresourceindexerfrompreviousprifile-function"></a>Função MrmCreateResourceIndexerFromPreviousPriFile
 
-\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, quanto às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 Cria um indexador de recursos de um arquivo PRI criado com uma chamada anterior para [**MrmCreateResourceFile**](mrmcreateresourcefile.md). Para obter mais informações e passo a passo baseado em cenário de como usar essas APIs, consulte [APIs de PRI (indexação](/windows/uwp/app-resources/pri-apis-custom-build-systems)de recursos de pacote) e sistemas de build personalizados .
 
@@ -105,7 +105,7 @@ S \_ OK se a função tiver êxito, caso contrário, algum outro valor. Use as m
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 10, versão 1803 somente \[ aplicativos da área de trabalho\]<br/>                                       |
 | Servidor mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do servidor\]<br/>                                                 |
-| parâmetro<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>MrmResourceIndexer.h</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>Mrmsupport.lib</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Mrmsupport.dll</dt> </dl>       |
 

@@ -1,7 +1,7 @@
 ---
-description: A abstração de um ponto de conexão ou porta de um dispositivo.
+description: A abstração de uma porta ou ponto de conexão de um dispositivo.
 ms.assetid: ee725c64-587b-4e5f-9b1c-7a58902b0631
-title: Classe CIM_LogicalPort
+title: CIM_LogicalPort classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,16 +19,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: eeed69e9669048377340cb0ca21e7a2e89f4baff
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5f226b2fe162047c724b6bd2795a3c2c8a5800347c0c1af1ffdaf97855f0893a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812023"
 ---
-# <a name="cim_logicalport-class"></a>\_Classe CIM LogicalPort
+# <a name="cim_logicalport-class"></a>Classe CIM \_ LogicalPort
 
-A abstração de um ponto de conexão ou porta de um dispositivo.
+A abstração de uma porta ou ponto de conexão de um dispositivo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,26 +47,26 @@ class CIM_LogicalPort : CIM_LogicalDevice
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ LogicalPort** tem estes tipos de membros:
+A **classe \_ LogicalPort CIM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ LogicalPort** tem essas propriedades.
+A **classe \_ LogicalPort CIM** tem essas propriedades.
 
 <dl> <dt>
 
-**MaxSpeed**
+**Maxspeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits por segundo"), **PUnit** ("bit/segundo")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bits por Segundo"), **PUnit** ("bit/segundo")
 </dt> </dl>
 
 A largura de banda máxima da porta, em bits por segundo.
@@ -85,14 +85,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalPort**.**PortType**")
 </dt> </dl>
 
-Descreve o tipo de módulo, quando **PortType** é definido como **Other** ("1").
+Descreve o tipo de módulo, quando **PortType** é definido como **Outro** ("1").
 
 </dd> <dt>
 
-**PortType**
+**Porttype**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -114,7 +114,7 @@ O tipo de porta.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -128,14 +128,14 @@ O tipo de porta.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (3.. 15999)
+**DMTF Reservado** (3..15999)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Vendor_Reserved"></span><span id="vendor_reserved"></span><span id="VENDOR_RESERVED"></span>
 
-**Fornecedor reservado** (16000.. 65535)
+**Fornecedor Reservado** (16000..65535)
 
 
 </dt> <dd></dd> </dl>
@@ -145,29 +145,29 @@ O tipo de porta.
 **RequestedSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits por segundo"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalPort**.**Speed**"), **PUnit** (" bit/segundo ")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bits por Segundo"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("**CIM \_ LogicalPort**.**Velocidade**"), **PUnit** ("bit/segundo")
 </dt> </dl>
 
-A largura de banda solicitada da porta, em bits por segundo. A largura de banda real é relatada na propriedade **Speed** .
+A largura de banda solicitada da porta, em bits por segundo. A largura de banda real é relatada na **propriedade Velocidade.**
 
 </dd> <dt>
 
 **Velocidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("bits por segundo"), **PUnit** ("bit/segundo")
+Qualificadores: [**Unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("Bits por Segundo"), **PUnit** ("bit/segundo")
 </dt> </dl>
 
 A largura de banda da porta, em bits por segundo.
@@ -177,13 +177,13 @@ A largura de banda da porta, em bits por segundo.
 **UsageRestriction**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a porta está restrita a ser uma porta de front-end ou de back-end.
+Indica se a porta está restrita a ser uma porta de front-end ou back-end.
 
 <dt>
 
@@ -225,8 +225,8 @@ Indica se a porta está restrita a ser uma porta de front-end ou de back-end.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -235,7 +235,7 @@ Indica se a porta está restrita a ser uma porta de front-end ou de back-end.
 
 <dl> <dt>
 
-[**\_LOGICALDEVICE CIM**](cim-logicaldevice.md)
+[**CIM \_ LogicalDevice**](cim-logicaldevice.md)
 </dt> </dl>
 
  

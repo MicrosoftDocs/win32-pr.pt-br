@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: Enumeração SeekGrbit'
+description: 'Saiba mais sobre: enumeração SeekGrbit'
 title: Enumeração SeekGrbit
 TOCTitle: SeekGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.SeekGrbit
@@ -49,8 +49,8 @@ Opções para JetSeek.
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -86,27 +86,27 @@ public enum SeekGrbit
 <tr class="even">
 <td></td>
 <td>SeekLT</td>
-<td>O cursor será posicionado na entrada de índice mais próxima do final do índice que for menor que uma entrada de índice que corresponde exatamente aos critérios de pesquisa.</td>
+<td>O cursor será posicionado na entrada de índice mais próxima ao final do índice que é menor que uma entrada de índice que corresponderia exatamente aos critérios de pesquisa.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SeekLE</td>
-<td>O cursor será posicionado na entrada de índice mais próxima do final do índice que for menor ou igual a uma entrada de índice que corresponde exatamente aos critérios de pesquisa.</td>
+<td>O cursor será posicionado na entrada de índice mais próxima ao final do índice que é menor ou igual a uma entrada de índice que corresponderia exatamente aos critérios de pesquisa.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>SeekGE</td>
-<td>O cursor será posicionado na entrada de índice mais próxima do início do índice que seja maior ou igual a uma entrada de índice que corresponde exatamente aos critérios de pesquisa.</td>
+<td>O cursor será posicionado na entrada de índice mais próxima do início do índice que é maior ou igual a uma entrada de índice que corresponderia exatamente aos critérios de pesquisa.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>SeekGT</td>
-<td>O cursor será posicionado na entrada de índice mais próxima do início do índice que é maior que uma entrada de índice que corresponde exatamente aos critérios de pesquisa.</td>
+<td>O cursor será posicionado na entrada de índice mais próxima ao início do índice maior que uma entrada de índice que corresponderia exatamente aos critérios de pesquisa.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>SetIndexRange</td>
-<td>Um intervalo de índice será automaticamente configurado para todas as chaves que correspondem exatamente à chave de pesquisa.</td>
+<td>Um intervalo de índice será configurado automaticamente para todas as chaves que corresponderem exatamente à chave de pesquisa.</td>
 </tr>
 </tbody>
 </table>
@@ -116,4 +116,4 @@ public enum SeekGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

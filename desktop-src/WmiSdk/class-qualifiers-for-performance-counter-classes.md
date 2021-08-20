@@ -1,5 +1,5 @@
 ---
-description: Especifique as informações sobre o objeto de desempenho para o qual a classe do contador de desempenho WMI está mapeada.
+description: Especifique informações sobre o objeto de desempenho para o qual a classe de contador de desempenho WMI é mapeada.
 ms.assetid: 7b8b7f00-95d8-4c1e-8638-157d0f4c7c32
 ms.tgt_platform: multiple
 title: Qualificadores de classe para classes de contador de desempenho
@@ -10,43 +10,43 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e4910af88ce7f96fda1b5f9b7ecd7a33479fc130
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5b8168dcc0523c629202ac4d5c4a0ea51ecc8bd68d5ac4498fb38059b940fd83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118820080"
 ---
 # <a name="class-qualifiers-for-performance-counter-classes"></a>Qualificadores de classe para classes de contador de desempenho
 
-Os qualificadores de classe especificam informações sobre o objeto de desempenho para o qual a [classe do contador de desempenho](/windows/desktop/CIMWin32Prov/performance-counter-classes) WMI é mapeada. Para obter mais informações, consulte [monitorando dados de desempenho](monitoring-performance-data.md).
+Qualificadores de classe especificam informações sobre o objeto de desempenho para o qual a classe de contador de desempenho [WMI](/windows/desktop/CIMWin32Prov/performance-counter-classes) é mapeada. Para obter mais informações, consulte [Monitorando dados de desempenho.](monitoring-performance-data.md)
 
 -   [Qualificadores para PerformanceClasses brutos e formatados](#qualifiers-for-raw-and-formatted-performanceclasses)
--   [Qualificadores para classes de desempenho brutos](#)
+-   [Qualificadores para classes de desempenho brutas](#)
 -   [Qualificadores para classes de desempenho formatadas](#)
 -   [Tópicos relacionados](#related-topics)
 
 
-O contador de desempenho – qualificadores específicos são automaticamente anexados pelo provedor "WbemPerfClass" às classes e propriedades do [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) na raiz \\ CIMv2.
+Qualificadores específicos do contador de desempenho são anexados automaticamente pelo provedor "WbemPerfClass" às classes e propriedades [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) no \\ CIMv2 raiz.
 
-Essas informações se aplicam a todas as instâncias da classe. Alguns qualificadores com valores **boolianos** que são sempre **falsos** podem não estar presentes em classes específicas.
+Essas informações se aplica a todas as instâncias da classe . Alguns qualificadores com **valores boolianas** que são sempre **False** podem não estar presentes em classes específicas.
 
 ## <a name="qualifiers-for-raw-and-formatted-performanceclasses"></a>Qualificadores para PerformanceClasses brutos e formatados
 
-Os qualificadores a seguir se aplicam a todas as classes derivadas de [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) e [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata).
+Os qualificadores a seguir se aplicam a todas as classes derivadas de [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) e [**Win32 \_ PerfFormattedData.**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata)
 
 <dl> <dt>
 
-<span id="Cooked"></span><span id="cooked"></span><span id="COOKED"></span>**Cooked**
+<span id="Cooked"></span><span id="cooked"></span><span id="COOKED"></span>**Cozido**
 </dt> <dd>
 
 **booleano**
 
-Indica se a classe contém dados cooked.
+Indica se a classe contém dados preparados.
 
 </dd> <dt>
 
-<span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>**DisplayName**
+<span id="DisplayName"></span><span id="displayname"></span><span id="DISPLAYNAME"></span>**Displayname**
 </dt> <dd>
 
 **cadeia de caracteres**
@@ -69,7 +69,7 @@ Não fornece dados detalhados. Sempre contém o valor de 100.
 
 **booleano**
 
-Sempre definido como **true** porque as instâncias são sempre dinâmicas.
+Sempre definido como **True porque** as instâncias são sempre dinâmicas.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Sempre definido como **true** porque as instâncias são sempre dinâmicas.
 
 **booleano**
 
-Indica se a classe é proveniente de uma biblioteca de desempenho herdada. Sempre definido como **true**.
+Indica se a classe vem de uma biblioteca de desempenho herdada. Sempre definido como **True.**
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Os índices não são mais válidos. Esse qualificador é sempre zero.
 
 **booleano**
 
-Indica que a classe é uma classe de alto desempenho. Sempre definido como **true**.
+Indica que a classe é uma classe de alto desempenho. Sempre definido como **True.**
 
 </dd> <dt>
 
@@ -105,7 +105,7 @@ Indica que a classe é uma classe de alto desempenho. Sempre definido como **tru
 
 **sint32**
 
-Identificador de localidade. O valor é sempre 1033 (inglês americano).
+Identificador de localidade. O valor é sempre 1033 (inglês dos EUA).
 
 </dd> <dt>
 
@@ -118,7 +118,7 @@ Os índices não são mais válidos. Esse qualificador é sempre zero.
 
 </dd> <dt>
 
-<span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>**Operador**
+<span id="Provider"></span><span id="provider"></span><span id="PROVIDER"></span>**Provedor**
 </dt> <dd>
 
 **cadeia de caracteres**
@@ -127,36 +127,36 @@ Nome do provedor de instância. O valor é "WbemPerfV2".
 
 </dd> <dt>
 
-<span id="RegistryKey"></span><span id="registrykey"></span><span id="REGISTRYKEY"></span>**RegistryKey**
+<span id="RegistryKey"></span><span id="registrykey"></span><span id="REGISTRYKEY"></span>**Registrykey**
 </dt> <dd>
 
 **cadeia de caracteres**
 
-Nome do driver na chave **HKEY \_ local de \_ \\ \\ Serviços CurrentControlSet** , sob a qual a chave de desempenho pode ser localizada. Esse nome também é o nome do serviço que fornece o contador de desempenho.
+Nome do driver na chave **HKEY \_ LOCAL MACHINE \_ \\ CurrentControlSet \\ Services,** na qual a chave de desempenho pode ser localizada. Esse nome também é o nome do serviço que fornece o contador de desempenho.
 
 </dd> <dt>
 
-<span id="Singleton"></span><span id="singleton"></span><span id="SINGLETON"></span>**Único**
+<span id="Singleton"></span><span id="singleton"></span><span id="SINGLETON"></span>**Singleton**
 </dt> <dd>
 
 **booleano**
 
-Se **for true**, indicará que existe apenas uma única instância da classe.
+Se **True**, indicará que apenas uma única instância da classe existe.
 
 </dd> </dl>
 
-## <a name="qualifiers-for-raw-performance-classes"></a>Qualificadores para classes de desempenho brutos
+## <a name="qualifiers-for-raw-performance-classes"></a>Qualificadores para classes de desempenho brutas
 
-Os qualificadores a seguir se aplicam a todas as classes derivadas do [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata).
+Os qualificadores a seguir se aplicam a todas as classes derivadas de [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata).
 
 <dl> <dt>
 
-<span id="Costly"></span><span id="costly"></span><span id="COSTLY"></span>**Dispendiosa**
+<span id="Costly"></span><span id="costly"></span><span id="COSTLY"></span>**Caro**
 </dt> <dd>
 
 **booleano**
 
-Indica se a obtenção de instâncias dessa classe é uma operação dispendiosa. Sempre definido como **true** para classes com " \_ dispendioso" acrescentado ao final do nome da classe.
+Indica se a obtenção de instâncias dessa classe é uma operação cara. Sempre defina **como True** para classes com \_ "Cara" anexada ao final do nome da classe.
 
 </dd> <dt>
 
@@ -174,26 +174,26 @@ Não fornece dados detalhados. Sempre contém o valor de 100.
 
 **booleano**
 
-O valor é sempre **false**.
+O valor é sempre **False.**
 
 </dd> </dl>
 
 ## <a name="qualifiers-for-formatted-performance-classes"></a>Qualificadores para classes de desempenho formatadas
 
-Os qualificadores a seguir se aplicam a todas as classes derivadas do [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata).
+Os qualificadores a seguir se aplicam a todas as classes derivadas de [**Win32 \_ PerfFormattedData.**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata)
 
 <dl> <dt>
 
-<span id="AutoCook"></span><span id="autocook"></span><span id="AUTOCOOK"></span>**Autocookie**
+<span id="AutoCook"></span><span id="autocook"></span><span id="AUTOCOOK"></span>**AutoCook**
 </dt> <dd>
 
 **int32**
 
-Indica que os valores nas instâncias de classe são calculados automaticamente a partir da classe de dados brutos correspondente. O valor é sempre 1.
+Indica que os valores nas instâncias de classe são calculados automaticamente da classe de dados bruta correspondente. O valor é sempre 1.
 
 </dd> <dt>
 
-<span id="AutoCook_RawClass"></span><span id="autocook_rawclass"></span><span id="AUTOCOOK_RAWCLASS"></span>**RawClass de autocookie \_**
+<span id="AutoCook_RawClass"></span><span id="autocook_rawclass"></span><span id="AUTOCOOK_RAWCLASS"></span>**AutoCook \_ RawClass**
 </dt> <dd>
 
 **cadeia de caracteres**
@@ -215,10 +215,10 @@ Nome da classe bruta a ser usada para cálculo para a classe formatada. Esse qua
 [Classes de contador de desempenho](/windows/desktop/CIMWin32Prov/performance-counter-classes)
 </dt> <dt>
 
-[Acessando classes de desempenho de WMI pré-instalado](accessing-wmi-preinstalled-performance-classes.md)
+[Acessando classes de desempenho pré-instaladas do WMI](accessing-wmi-preinstalled-performance-classes.md)
 </dt> <dt>
 
-[Tarefas do WMI: monitoramento de desempenho](wmi-tasks--performance-monitoring.md)
+[Tarefas WMI: Monitoramento de desempenho](wmi-tasks--performance-monitoring.md)
 </dt> </dl>
 
  

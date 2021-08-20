@@ -4,8 +4,8 @@ description: Esse atributo contém uma lista de IDs de categoria de componente q
 ms.assetid: f0580e59-a7be-43c7-be41-38039b868157
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Required-Categories do atributo AD
-- Esquema de AD do atributo requiredCategories
+- Required-Categories atributo AD Schema
+- esquema do AD do atributo requiredCategories
 topic_type:
 - apiref
 api_name:
@@ -30,13 +30,13 @@ Esse atributo contém uma lista de IDs de categoria de componente que um objeto 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | Required-Categories                                   |
-| LDAP-Display-Name | requiredCategories                                    |
+| Ldap-Display-Name | requiredCategories                                    |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | \-                                                    |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.321                                |
-| System-ID-GUID    | 7d6c0e93-7e20-11d0-afd6-00c04fd930c9                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 7d6c0e93-7e20-11d0-afd6-00c04fd930c9                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -58,10 +58,10 @@ Esse atributo contém uma lista de IDs de categoria de componente que um objeto 
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Verdadeiro                                                         |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -79,10 +79,10 @@ Esse atributo contém uma lista de IDs de categoria de componente que um objeto 
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Verdadeiro                                                         |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |
@@ -100,10 +100,10 @@ Esse atributo contém uma lista de IDs de categoria de componente que um objeto 
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Verdadeiro                                                         |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | 16                                                           |
 | Range-Upper            | 16                                                           |
 | Search-Flags           | 0x00000001                                                   |

@@ -1,6 +1,6 @@
 ---
 title: C (RPC)
-description: Palavras que começam com C no Glossário de RPC (chamada de procedimento remoto).
+description: Palavras que começam com C no glossário RPC (Chamada de Procedimento Remoto).
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: da1ee843-c33e-42a1-bcaf-6cdb4834e70b
 ms.topic: article
@@ -14,46 +14,46 @@ ms.locfileid: "118932280"
 ---
 # <a name="c-rpc"></a>C (RPC)
 
-[A](a-glos.md) [B](b-glos.md) C [D](d-glos.md) [E](e-glos.md) [F](f-glos.md) G H [i](i-glos.md) J K [L](l-glos.md) [M](m-glos.md) [N](n-glos.md) [O](o-glos.md) [P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z
+[A](a-glos.md) [B](b-glos.md) C [D](d-glos.md) [E](e-glos.md) F [G](f-glos.md) H [I](i-glos.md) J K [L](l-glos.md) [M](m-glos.md) [N](n-glos.md) [O](o-glos.md) [P](p-glos.md) [Q](q.md) [R](r-glos.md) [S](s-glos.md) [T](t-glos.md) [U](u-glos.md) [V](v-glos.md) [W](w-glos.md) X Y Z
 
 <dl> <dt>
 
-<span id="_rpc_cds_glos"></span><span id="_RPC_CDS_GLOS"></span>**Serviço de diretório de células (CDS)**
+<span id="_rpc_cds_glos"></span><span id="_RPC_CDS_GLOS"></span>**CDS (Serviço de Diretório de Célula)**
 </dt> <dd>
 
-Nome-provedor de serviços para o ambiente de computação distribuída da Open Software Foundation.
+Provedor de serviço de nome para o Ambiente de Computação Distribuída da Open Software Foundation.
 
 </dd> <dt>
 
-<span id="_rpc_client_stub_glos"></span><span id="_RPC_CLIENT_STUB_GLOS"></span>**stub do cliente**
+<span id="_rpc_client_stub_glos"></span><span id="_RPC_CLIENT_STUB_GLOS"></span>**stub de cliente**
 </dt> <dd>
 
-Código-fonte do C-Language gerado pelo MIDL. Ele contém todas as funções necessárias para que o aplicativo cliente faça chamadas de procedimento remotas usando o modelo de uma chamada de função tradicional em um aplicativo autônomo. O stub do cliente é responsável por realizar marshaling de parâmetros de entrada e desempacotamento de parâmetros de saída. Consulte também [*stub de servidor*](s-glos.md), [*stub de proxy*](p-glos.md).
+Código-fonte da linguagem C gerado por MIDL. Ele contém todas as funções necessárias para o aplicativo cliente fazer chamadas de procedimento remoto usando o modelo de uma chamada de função tradicional em um aplicativo autônomo. O stub do cliente é responsável por marshaling de parâmetros de entrada e desmarque parâmetros de saída. Consulte também [*stub do servidor,*](s-glos.md) [*stub de proxy.*](p-glos.md)
 
 </dd> <dt>
 
-<span id="_rpc_conformant_array_glos"></span><span id="_RPC_CONFORMANT_ARRAY_GLOS"></span>**matriz de conformidade**
+<span id="_rpc_conformant_array_glos"></span><span id="_RPC_CONFORMANT_ARRAY_GLOS"></span>**matriz compatível**
 </dt> <dd>
 
-Matriz cujo tamanho é determinado em tempo de execução por outro parâmetro, campo de estrutura ou expressão.
+Matriz cujo tamanho é determinado em tempo de executar por outro parâmetro, campo de estrutura ou expressão.
 
 </dd> <dt>
 
 <span id="_rpc_connection_oriented_glos"></span><span id="_RPC_CONNECTION_ORIENTED_GLOS"></span>**orientado a conexão**
 </dt> <dd>
 
-Protocolo de comunicação ou transporte que fornece um circuito virtual por meio do qual os pacotes de dados são recebidos na mesma ordem em que foram transmitidos. Se a conexão entre os computadores falhar, o aplicativo será notificado. [*TCP*](t-glos.md) e [*SPX*](s-glos.md) são exemplos de protocolos orientados a conexões. Consulte também [*Datagram*](d-glos.md).
+Protocolo de comunicação ou transporte que fornece um circuito virtual por meio do qual os pacotes de dados são recebidos na mesma ordem em que foram transmitidos. Se a conexão entre computadores falhar, o aplicativo será notificado. [*TCP*](t-glos.md) e [*SPX*](s-glos.md) são exemplos de protocolos orientados a conexão. Consulte também [*datagram*](d-glos.md).
 
 </dd> <dt>
 
-<span id="_rpc_connectionless_glos"></span><span id="_RPC_CONNECTIONLESS_GLOS"></span>**sem-conexão**
+<span id="_rpc_connectionless_glos"></span><span id="_RPC_CONNECTIONLESS_GLOS"></span>**Connectionless**
 </dt> <dd>
 
-Consulte [*datagrama*](d-glos.md).
+Consulte [*datagram*](d-glos.md).
 
 </dd> <dt>
 
-<span id="_rpc_context_rundown_glos"></span><span id="_RPC_CONTEXT_RUNDOWN_GLOS"></span>**encerramento do contexto**
+<span id="_rpc_context_rundown_glos"></span><span id="_RPC_CONTEXT_RUNDOWN_GLOS"></span>**context rundown**
 </dt> <dd>
 
 Notificação de servidor que resulta de um encerramento inesperado da associação entre aplicativos cliente e servidor.

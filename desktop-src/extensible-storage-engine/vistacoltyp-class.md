@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: cffe000bc50b1185dc09da44d823edd999954194
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6146282421cb786ae7e460fa77069ba826f422f862fc44fb90be69c2b7403583
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837158"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978146"
 ---
 # <a name="vistacoltyp-class"></a>Classe VistaColtyp
 
@@ -43,7 +43,7 @@ Tipos de coluna que foram adicionados à versão vista do ESENT.
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

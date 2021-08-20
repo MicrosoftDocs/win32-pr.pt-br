@@ -3,7 +3,7 @@ title: Elemento Connection (Connections)
 description: Define cada definição de configuração e a associa a um nome. O elemento Connection é opcional.
 ms.assetid: 913263ab-0e0e-4213-947b-7bca9ba0697e
 keywords:
-- Elemento Connection EAPHost
+- Elemento connection EAPHost
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118498366"
 ---
 # <a name="connection-connections-element"></a>Elemento Connection (Connections)
 
-O elemento **Connection (Connections)** define cada definição de configuração e a associa a um nome. O elemento **Connection** é opcional.
+O **elemento Connection (Connections)** define cada definição de configuração e a associa a um nome. O **elemento Connection** é opcional.
 
 ``` syntax
 <xs:element name="Connection">
@@ -41,7 +41,7 @@ O elemento **Connection (Connections)** define cada definição de configuraçã
 </xs:element>
 ```
 
-O elemento **Connection** é definido pelo elemento [**Connections**](eapconnectionpropertiesv1schema-connections-element.md) .
+O **elemento Connection** é definido pelo elemento [**Connections.**](eapconnectionpropertiesv1schema-connections-element.md)
 
 ## <a name="child-elements"></a>Elementos filho
 
@@ -49,7 +49,7 @@ O elemento **Connection** é definido pelo elemento [**Connections**](eapconnect
 
 | Elemento                                                                 | Type   | Descrição                                                                                                             |
 |-------------------------------------------------------------------------|--------|-------------------------------------------------------------------------------------------------------------------------|
-| [**EAP**](baseeapconnectionpropertiesv1schema-eap-element.md)          |        | Identifica o elemento de configuração EAP.<br/>                                                                    |
+| [**Eap**](baseeapconnectionpropertiesv1schema-eap-element.md)          |        | Identifica o elemento de configuração de EAP.<br/>                                                                    |
 | [**Nome**](eapconnectionpropertiesv1schema-name-connection-element.md) | string | Captura o nome da conexão que está sendo definida, auxiliando na identificação de várias conexões. <br/> |
 
 
@@ -60,8 +60,8 @@ O elemento **Connection** é definido pelo elemento [**Connections**](eapconnect
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -4,16 +4,16 @@ ms.assetid: 384f0732-e0c5-4b1f-b590-195e0acf90e1
 title: Implementando uma barra de busca
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acd3f2440c011267c792c79c8bc3550926c5767f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 15e86dc52f92a4800639a5dbb1659f70fbe1cfaca7cbc2f0d022df889f970ea5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500590"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015544"
 ---
 # <a name="implementing-a-seek-bar"></a>Implementando uma barra de busca
 
-Esta seção descreve como implementar uma barra de busca para um aplicativo de player de mídia. A barra de busca é implementada como um controle TrackBar. Para obter uma visão geral de como procurar no DirectShow, consulte [buscando o grafo de filtro](seeking-the-filter-graph.md).
+Esta seção descreve como implementar uma barra de busca para um aplicativo de player de mídia. A barra de busca é implementada como um controle TrackBar. para obter uma visão geral de como procurar em DirectShow, consulte [buscando o filtro Graph](seeking-the-filter-graph.md).
 
 Quando o aplicativo for iniciado, inicialize o TrackBar:
 
@@ -33,7 +33,7 @@ void InitSlider(HWND hwnd)
 
 O TrackBar será desabilitado até que o usuário abra um arquivo de mídia. O intervalo TrackBar é definido de 0 a 100. Durante a reprodução do arquivo, o aplicativo calculará a posição de reprodução como uma porcentagem da duração do arquivo e atualizará o TrackBar de acordo. Por exemplo, a posição TrackBar "50" sempre corresponde ao meio do arquivo.
 
-Quando o usuário abre um arquivo, cria um grafo de reprodução de arquivo usando o **RenderFile**. O código para isso é mostrado em [como reproduzir um arquivo](how-to-play-a-file.md). Em seguida, consulte o Gerenciador do grafo de filtro para a interface **IMediaSeeking** e armazene o ponteiro de interface:
+Quando o usuário abre um arquivo, cria um grafo de reprodução de arquivo usando o **RenderFile**. O código para isso é mostrado em [como reproduzir um arquivo](how-to-play-a-file.md). em seguida, consulte o filtro Graph Manager para a interface **IMediaSeeking** e armazene o ponteiro de interface:
 
 
 ```C++
@@ -65,7 +65,7 @@ if (bCanSeek)
 
 O \_ sinalizador am buscando \_ CanSeekAbsolute verifica se o arquivo de origem é pesquisável e se o \_ sinalizador am buscando \_ CanGetDuration verifica se a duração do arquivo pode ser determinada com antecedência. Se ambos os recursos tiverem suporte, o aplicativo habilitará o TrackBar e recuperará a duração do arquivo.
 
-Se o grafo for pesquisável, o aplicativo usará um temporizador para atualizar a posição TrackBar durante a reprodução. Ao executar o gráfico de filtro para executar o arquivo, inicie o evento de timer chamando uma das funções de temporizador do Windows, como **SetTimer**. Para obter mais informações sobre temporizadores, consulte o tópico "timers" no Platform SDK.
+Se o grafo for pesquisável, o aplicativo usará um temporizador para atualizar a posição TrackBar durante a reprodução. ao executar o gráfico de filtro para executar o arquivo, inicie o evento de timer chamando uma das funções de temporizador Windows, como **settimer**. Para obter mais informações sobre temporizadores, consulte o tópico "timers" no Platform SDK.
 
 
 ```C++

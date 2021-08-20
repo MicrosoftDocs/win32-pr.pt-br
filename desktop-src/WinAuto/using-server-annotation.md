@@ -4,12 +4,12 @@ description: Este tópico fornece informações sobre como usar a anotação de 
 ms.assetid: eeeebddc-2752-4d8f-b4fa-38ce156acc08
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb545cd4dd016901d69f67d5ab5cab15dda08875
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 65b2955d49431b502c8587484208321bc1ab1bc0c8201fabf466b60b68f548a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105807204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118823888"
 ---
 # <a name="using-server-annotation"></a>Usando a anotação do servidor
 

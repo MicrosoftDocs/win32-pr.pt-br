@@ -1,7 +1,7 @@
 ---
 description: Inicializa uma cor com os valores vermelho, verde e azul fornecidos.
 ms.assetid: 832a4a78-c166-4e45-a907-57730da1c2c8
-title: D3DCOLOR_XRGB macro (D3d9types.h)
+title: Macro D3DCOLOR_XRGB (D3d9types. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118527596"
 ---
-# <a name="d3dcolor_xrgb-macro"></a>Macro D3DCOLOR \_ XRGB
+# <a name="d3dcolor_xrgb-macro"></a>\_Macro D3DCOLOR XRGB
 
 Inicializa uma cor com os valores vermelho, verde e azul fornecidos.
 
@@ -48,7 +48,7 @@ Componente vermelho da cor. Esse valor deve estar no intervalo de 0 a 255.
 
 </dd> <dt>
 
-*G* 
+*m* 
 </dt> <dd>
 
 Componente verde da cor. Esse valor deve estar no intervalo de 0 a 255.
@@ -64,7 +64,7 @@ Componente azul da cor. Esse valor deve estar no intervalo de 0 a 255.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna o [**valor D3DCOLOR**](d3dcolor.md) que corresponde aos valores RGB fornecidos.
+Retorna o valor de [**D3DCOLOR**](d3dcolor.md) que corresponde aos valores RGB fornecidos.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,7 +72,7 @@ Retorna o [**valor D3DCOLOR**](d3dcolor.md) que corresponde aos valores RGB forn
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3d9types.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3d9types. h</dt> </dl> |
 
 
 
@@ -83,10 +83,10 @@ Retorna o [**valor D3DCOLOR**](d3dcolor.md) que corresponde aos valores RGB forn
 [Macros](dx9-graphics-reference-d3d-macros.md)
 </dt> <dt>
 
-[**D3DCOLOR \_ ARGB**](d3dcolor-argb.md)
+[**\_ARGB D3DCOLOR**](d3dcolor-argb.md)
 </dt> <dt>
 
-[**D3DCOLOR \_ RGBA**](d3dcolor-rgba.md)
+[**\_RGBA D3DCOLOR**](d3dcolor-rgba.md)
 </dt> </dl>
 
  

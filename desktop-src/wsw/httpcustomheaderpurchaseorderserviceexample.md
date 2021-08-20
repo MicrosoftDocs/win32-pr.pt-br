@@ -1,11 +1,11 @@
 ---
 title: HttpCustomHeaderPurchaseOrderServiceExample
-description: Revise um exemplo Windows API de Serviços Web (WWSAPI) C++ de um serviço de ordem de compra em cabeçalhos personalizados HTTP.
+description: examine um exemplo de Windows WWSAPI (API de serviços Web) C++ de um serviço de ordem de compra sobre cabeçalhos personalizados HTTP.
 ms.assetid: 7a86e0be-6e52-4ad2-bca4-0162a8030cdc
 keywords:
-- HttpCustomHeaderPurchaseOrderServiceExample Native-Web-Services
+- HttpCustomHeaderPurchaseOrderServiceExample nativo – Web-Services
 - WWSAPI
-- Wws
+- WWS
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: b2d5e492b333a27d9625e5d5375ea2ef2e199ac331db69eee86424bf8ce8f9b0
@@ -19,12 +19,12 @@ ms.locfileid: "118963305"
 
 Este exemplo mostra como usar o host de serviço para hospedar um serviço PurchaseOrder por HTTP.
 
--   [HttpCustomHeaderService.cpp](#httpcustomheaderservicecpp)
--   [PurchaseOrder.wsdl](#purchaseorderwsdl)
--   [OrderSessionHeader.xsd](#ordersessionheaderxsd)
+-   [HttpCustomHeaderService. cpp](#httpcustomheaderservicecpp)
+-   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [OrderSessionHeader. xsd](#ordersessionheaderxsd)
 -   [Makefile](#makefile)
 
-## <a name="httpcustomheaderservicecpp"></a>HttpCustomHeaderService.cpp
+## <a name="httpcustomheaderservicecpp"></a>HttpCustomHeaderService. cpp
 
 
 ```C++
@@ -385,7 +385,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
+## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
 
 ``` syntax
 <wsdl:definitions 
@@ -496,7 +496,7 @@ Exit:
 </wsdl:definitions>
 ```
 
-## <a name="ordersessionheaderxsd"></a>OrderSessionHeader.xsd
+## <a name="ordersessionheaderxsd"></a>OrderSessionHeader. xsd
 
 ``` syntax
 <?xml version="1.0" encoding="utf-8"?>

@@ -4,12 +4,12 @@ ms.assetid: d57aa21c-68c3-40a2-a0b0-a266d9f12056
 title: Proxy System. GPS. DOP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ccb57427104a7e8312b9c8b89bf89793d32b4cb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3e6ad1fc598d9eba135515ebc0826037cf0d4e97e5597a89ec46a7c1d17fec33
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787643"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118964845"
 ---
 # <a name="systemgpsdop-proxy"></a>Proxy System. GPS. DOP
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

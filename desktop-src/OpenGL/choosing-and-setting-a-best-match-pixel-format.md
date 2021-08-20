@@ -1,31 +1,31 @@
 ---
-title: Escolhendo e definindo um formato de pixel Best-Match
+title: Escolhendo e definindo um formato Best-Match pixel
 description: Este tópico explica o procedimento para corresponder um contexto de dispositivo a um formato de pixel.
 ms.assetid: 7b974fb5-e34d-4781-858c-572c4e7754bc
 keywords:
-- OpenGL no Windows, pixels
-- formato de pixel de melhor correspondência OpenGL
+- OpenGL em Windows,pixels
+- melhor combinação de formato de pixel OpenGL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 143800a9c43d8c8a7779bb5e6cd119c6737f8129
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 258364e18ff38cb67edd1315f261a55a91f58fe940b026e1fcb7b63ed2e12eac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105784170"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063296"
 ---
-# <a name="choosing-and-setting-a-best-match-pixel-format"></a>Escolhendo e definindo um formato de pixel Best-Match
+# <a name="choosing-and-setting-a-best-match-pixel-format"></a>Escolhendo e definindo um formato Best-Match pixel
 
 Este tópico explica o procedimento para corresponder um contexto de dispositivo a um formato de pixel.
 
-**Para obter a melhor correspondência de um contexto de dispositivo para um formato de pixel**
+**Para obter a melhor combinação de um contexto de dispositivo com um formato de pixel**
 
-1.  Especifique o formato de pixel desejado em uma estrutura [**PIXELFORMATDESCRIPTOR**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor) .
-2.  Chame [**ChoosePixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat).
+1.  Especifique o formato de pixel desejado em uma [**estrutura PIXELFORMATDESCRIPTOR.**](/windows/win32/api/wingdi/ns-wingdi-pixelformatdescriptor)
+2.  Chame [**ChoosePixelFormat.**](/windows/desktop/api/wingdi/nf-wingdi-choosepixelformat)
 
-    A função **ChoosePixelFormat** retorna um índice de formato de pixel, que você pode passar para [**SetPixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-setpixelformat) para definir a melhor correspondência de formato de pixel como o formato de pixel atual do contexto do dispositivo.
+    A **função ChoosePixelFormat** retorna um índice de formato de pixel, que você pode passar para [**SetPixelFormat**](/windows/desktop/api/wingdi/nf-wingdi-setpixelformat) para definir a melhor combinação de formato de pixel como o formato de pixel atual do contexto do dispositivo.
 
-O exemplo de código a seguir mostra como realizar as etapas acima.
+O exemplo de código a seguir mostra como executar as etapas acima.
 
 
 ```C++
@@ -61,9 +61,9 @@ SetPixelFormat(hdc, iPixelFormat, &pfd);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

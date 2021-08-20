@@ -1,5 +1,5 @@
 ---
-description: Exibe a caixa de diálogo Executar para o usuário. Esse método tem o mesmo efeito que clicar no menu iniciar e selecionar executar.
+description: Exibe a caixa de diálogo Executar para o usuário. esse método tem o mesmo efeito que clicar no menu Iniciar e selecionar executar.
 ms.assetid: bb984777-e09f-41e6-8359-51c5291654f7
 title: Método Shell. FileRun (shldisp. h)
 ms.topic: reference
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: ebccf11ea21fdd4ceba2563a6110c1eb2494947b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a4e67e6b3182a9eccde301b0ebb51c7cd679d7b67b6f787c10d814f242431bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968595"
 ---
 # <a name="shellfilerun-method"></a>Método Shell. FileRun
 
@@ -45,7 +45,7 @@ Shell.FileRun()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -57,9 +57,9 @@ Esse método não retorna um valor.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra **FileRun** em uso. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir mostra **FileRun** em uso. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -115,7 +115,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

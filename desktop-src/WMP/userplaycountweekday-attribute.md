@@ -1,6 +1,6 @@
 ---
 title: Atributo UserPlaycountWeekday
-description: O atributo UserPlaycountWeekday é o número de vezes que o item foi reproduzido em uma segunda-feira, terça-feira, quarta-feira ou sexta-feira.
+description: O atributo UserPlaycountWeekday é o número de vezes que o item foi tocado em uma segunda-feira, terça-feira, quarta-feira, quinta-feira ou sexta-feira.
 ms.assetid: bab55c4f-391e-4087-b99b-e1f57b88e024
 keywords:
 - Atributo UserPlaycountWeekday Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c0be6750a2001e34b20b470108ec20aa602ba37c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 928e558827367c8a2784bf036269958fc32134bf3ab9bef08c03c6756eea706e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105772968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118830922"
 ---
 # <a name="userplaycountweekday-attribute"></a>Atributo UserPlaycountWeekday
 
-O atributo **UserPlaycountWeekday** é o número de vezes que o item foi reproduzido em uma segunda-feira, terça-feira, quarta-feira ou sexta-feira.
+O **atributo UserPlaycountWeekday** é o número de vezes que o item foi tocado em uma segunda-feira, terça-feira, quarta-feira, quinta-feira ou sexta-feira.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -32,9 +32,9 @@ O atributo **UserPlaycountWeekday** é o número de vezes que o item foi reprodu
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente na biblioteca do.
+Esse atributo é armazenado somente na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,7 +42,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método GetConstantBuffer ID3DX11EffectConstantBuffer (D3dx11effect.h)
-description: Obter um buffer constante.
+title: Método ID3DX11EffectConstantBuffer GetConstantBuffer (D3dx11effect. h)
+description: Obtenha um buffer constante.
 ms.assetid: 857b3dc2-41ae-4a52-904a-9ca8f0afeb9e
 keywords:
 - Método GetConstantBuffer Direct3D 11
-- Método GetConstantBuffer Direct3D 11 , interface ID3DX11EffectConstantBuffer
-- ID3DX11EffectConstantBuffer interface Direct3D 11 , método GetConstantBuffer
+- Método GetConstantBuffer Direct3D 11, interface ID3DX11EffectConstantBuffer
+- Interface ID3DX11EffectConstantBuffer Direct3D 11, método GetConstantBuffer
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119046414"
 ---
-# <a name="id3dx11effectconstantbuffergetconstantbuffer-method"></a>Método ID3DX11EffectConstantBuffer::GetConstantBuffer
+# <a name="id3dx11effectconstantbuffergetconstantbuffer-method"></a>Método ID3DX11EffectConstantBuffer:: GetConstantBuffer
 
-Obter um buffer constante.
+Obtenha um buffer constante.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,7 +48,7 @@ HRESULT GetConstantBuffer(
 
 Tipo: **[ **ID3D11Buffer**](/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer)\*\***
 
-O endereço de um ponteiro para uma interface de buffer constante. Consulte [**ID3D11Buffer.**](/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer)
+O endereço de um ponteiro para uma interface de buffer constante. Consulte [**ID3D11Buffer**](/windows/desktop/api/D3D11/nn-d3d11-id3d11buffer).
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ O endereço de um ponteiro para uma interface de buffer constante. Consulte [**I
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-reference-returnvalues.md)
+Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
 
  
 
@@ -71,8 +71,8 @@ Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-ref
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

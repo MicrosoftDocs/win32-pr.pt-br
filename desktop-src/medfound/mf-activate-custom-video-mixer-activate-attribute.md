@@ -1,34 +1,34 @@
 ---
-description: Especifica um objeto de ativação que cria um mixer de vídeo personalizado para o coletor de mídia EVR (processador de vídeo avançado).
+description: Especifica um objeto de ativação que cria um mixer de vídeo personalizado para o sink de mídia EVR (renderador de vídeo) aprimorado.
 ms.assetid: 60484f87-7588-4b52-93aa-ef8fad66d971
-title: Atributo MF_ACTIVATE_CUSTOM_VIDEO_MIXER_ACTIVATE (Mfidl. h)
+title: MF_ACTIVATE_CUSTOM_VIDEO_MIXER_ACTIVATE atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d6268f3630b013235f3d365e0b8ab0578c9dd3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1966efe66efaba56c0206a9f6fac59aba30a1aea9d47100c4ce19a30af96a863
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117877293"
 ---
-# <a name="mf_activate_custom_video_mixer_activate-attribute"></a>MF \_ Ativar \_ o \_ mixer de vídeo personalizado \_ \_ Ativar atributo
+# <a name="mf_activate_custom_video_mixer_activate-attribute"></a>Atributo ACTIVATE \_ \_ CUSTOM VIDEO MIXER \_ \_ \_ ACTIVATE do MF
 
-Especifica um objeto de ativação que cria um mixer de vídeo personalizado para o coletor de mídia EVR (processador de vídeo avançado).
+Especifica um objeto de ativação que cria um mixer de vídeo personalizado para o sink de mídia EVR (renderador de vídeo) aprimorado.
 
 ## <a name="data-type"></a>Tipo de dados
 
-**IUnknown \** _
+**IUnknown\***
 
 ## <a name="remarks"></a>Comentários
 
-Se você estiver criando o EVR por meio de um objeto de ativação, poderá usar esse atributo para definir um mixer de vídeo personalizado no EVR. Use este atributo da seguinte maneira:
+Se você estiver criando o EVR por meio de um objeto de ativação, poderá usar esse atributo para definir um mixer de vídeo personalizado no EVR. Use esse atributo da seguinte forma:
 
-1.  Chame a função [_ *MFCreateVideoRendererActivate* *](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) para criar um objeto de ativação para o EVR. A função retorna um ponteiro para a interface [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) .
-2.  Defina esse atributo no ponteiro [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) chamando [**IMFAttributes:: setunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown). O valor do atributo é um ponteiro para um objeto de ativação implementado pelo chamador. O objeto de ativação do chamador deve expor a interface **IMFActivate** .
+1.  Chame a [**função MFCreateVideoRendererActivate**](/windows/desktop/api/mfidl/nf-mfidl-mfcreatevideorendereractivate) para criar um objeto de ativação para o EVR. A função retorna um ponteiro para a interface [**IMFActivate.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)
+2.  De definir esse atributo no [**ponteiro IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate) chamando [**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown). O valor do atributo é um ponteiro para um objeto de ativação implementado pelo chamador. O objeto de ativação do chamador deve expor a interface **IMFActivate.**
 
-Se você definir esse atributo, o EVR chamará [**IMFActivate:: activateobject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) para criar o mixer de vídeo personalizado. O mixer de vídeo deve expor a interface [**IMFTransform**](/windows/desktop/api/mftransform/nn-mftransform-imftransform) .
+Se você definir esse atributo, o EVR [**chamará IMFActivate::ActivateObject**](/windows/desktop/api/mfobjects/nf-mfobjects-imfactivate-activateobject) para criar o mixer de vídeo personalizado. O mixer de vídeo deve expor a interface [**IMFTransform.**](/windows/desktop/api/mftransform/nn-mftransform-imftransform)
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -36,9 +36,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -46,16 +46,16 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos avançados de processador de vídeo](enhanced-video-renderer-attributes.md)
+[Atributos de renderização de vídeo aprimorados](enhanced-video-renderer-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: getunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
+[**IMFAttributes::GetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getunknown)
 </dt> <dt>
 
-[**IMFAttributes:: setunknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
+[**IMFAttributes::SetUnknown**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setunknown)
 </dt> <dt>
 
 [**IMFActivate**](/windows/desktop/api/mfobjects/nn-mfobjects-imfactivate)

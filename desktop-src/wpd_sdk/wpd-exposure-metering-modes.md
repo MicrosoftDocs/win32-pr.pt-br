@@ -1,7 +1,7 @@
 ---
-description: O \_ tipo de enumeração de modos de medição de exposição WPD \_ \_ descreve o modo de medição a ser usado ao estimar a exposição da captura de imagem ainda por um dispositivo.
+description: O tipo de enumeração WPD EXPOSURE METERING MODES descreve o modo de medição a ser usado ao estimar a exposição para captura de imagem ainda \_ \_ por um \_ dispositivo.
 ms.assetid: 5e92013c-600d-4128-ab59-1cfa8953db67
-title: Enumeração de WPD_EXPOSURE_METERING_MODES (PortableDevice. h)
+title: WPD_EXPOSURE_METERING_MODES enumeração (PortableDevice.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117842276"
 ---
-# <a name="wpd_exposure_metering_modes-enumeration"></a>\_Enumeração de \_ modos de medição de exposição WPD \_
+# <a name="wpd_exposure_metering_modes-enumeration"></a>Enumeração DOS MODOS DE MEDIÇÃO DE EXPOSIÇÃO \_ \_ \_ WPD
 
-O tipo de enumeração de **\_ modos de \_ medição \_ de exposição WPD** descreve o modo de medição a ser usado ao estimar a exposição da captura de imagem ainda por um dispositivo.
+O **tipo de enumeração WPD \_ EXPOSURE \_ METERING \_ MODES** descreve o modo de medição a ser usado ao estimar a exposição para captura de imagem ainda por um dispositivo.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,44 +43,44 @@ typedef enum WPD_EXPOSURE_METERING_MODES {
 
 <dl> <dt>
 
-<span id="WPD_EXPOSURE_METERING_MODE_UNDEFINED"></span><span id="wpd_exposure_metering_mode_undefined"></span>**\_modo de medição de exposição WPD \_ \_ \_ indefinido**
+<span id="WPD_EXPOSURE_METERING_MODE_UNDEFINED"></span><span id="wpd_exposure_metering_mode_undefined"></span>**MODO DE \_ \_ MEDIÇÃO DE EXPOSIÇÃO \_ WPD \_ INDEFINIDO**
 </dt> <dd>
 
 O modo de medição é indefinido.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_METERING_MODE_AVERAGE"></span><span id="wpd_exposure_metering_mode_average"></span>**\_média do \_ modo de medição de exposição WPD \_ \_**
+<span id="WPD_EXPOSURE_METERING_MODE_AVERAGE"></span><span id="wpd_exposure_metering_mode_average"></span>**MÉDIA DO MODO DE \_ \_ MEDIÇÃO DE \_ EXPOSIÇÃO WPD \_**
 </dt> <dd>
 
-Use a exposição em média na imagem completa.
+Use a exposição média em toda a imagem.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_METERING_MODE_CENTER_WEIGHTED_AVERAGE"></span><span id="wpd_exposure_metering_mode_center_weighted_average"></span>**\_ \_ \_ \_ \_ média ponderada do modo de medição de exposição do \_ WPD**
+<span id="WPD_EXPOSURE_METERING_MODE_CENTER_WEIGHTED_AVERAGE"></span><span id="wpd_exposure_metering_mode_center_weighted_average"></span>**MÉDIA PONDERADA DO MODO DE \_ \_ MEDIÇÃO DE \_ \_ \_ EXPOSIÇÃO WPD \_**
 </dt> <dd>
 
-Use uma exposição média, com o centro da imagem, dado mais peso.
+Use uma exposição média, com o centro da imagem dado mais peso.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_METERING_MODE_MULTI_SPOT"></span><span id="wpd_exposure_metering_mode_multi_spot"></span>**\_ \_ \_ \_ vários pontos do modo de medição de exposição WPD \_**
+<span id="WPD_EXPOSURE_METERING_MODE_MULTI_SPOT"></span><span id="wpd_exposure_metering_mode_multi_spot"></span>**MODO DE MEDIÇÃO DE EXPOSIÇÃO WPD \_ \_ MULTI \_ \_ \_ SPOT**
 </dt> <dd>
 
 Use uma técnica de média de vários pontos.
 
 </dd> <dt>
 
-<span id="WPD_EXPOSURE_METERING_MODE_CENTER_SPOT"></span><span id="wpd_exposure_metering_mode_center_spot"></span>**\_ \_ \_ ponto central do modo de medição de \_ exposição WPD \_**
+<span id="WPD_EXPOSURE_METERING_MODE_CENTER_SPOT"></span><span id="wpd_exposure_metering_mode_center_spot"></span>**PONTO CENTRAL DO MODO DE MEDIÇÃO DE EXPOSIÇÃO \_ \_ \_ \_ WPD \_**
 </dt> <dd>
 
-Use uma técnica de média de pontos centrais.
+Use uma técnica de média de ponto central.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Indica o modo de medição do dispositivo. Essa enumeração é usada pela propriedade [de \_ \_ modo de \_ \_ medição \_ de exposição de imagem WPD](still-image-properties.md) .
+Indica o modo de medição do dispositivo. Essa enumeração é usada pela [propriedade WPD \_ STILL IMAGE \_ EXPOSURE \_ \_ METERING \_ MODE.](still-image-properties.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,7 +88,7 @@ Indica o modo de medição do dispositivo. Essa enumeração é usada pela propr
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>PortableDevice. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>PortableDevice.h</dt> </dl> |
 
 
 

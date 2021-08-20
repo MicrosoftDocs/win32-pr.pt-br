@@ -1,23 +1,23 @@
 ---
-description: Msitran.exe usa MsiDatabaseGenerateTransform, MsiCreateTransformSummaryInfo e MsiDatabaseApplyTransform para gerar ou aplicar um arquivo de transformação. Essa ferramenta só está disponível nos componentes SDK do Windows para desenvolvedores de Windows Installer.
+description: Msitran.exe usa MsiDatabaseGenerateTransform, MsiCreateTransformSummaryInfo e MsiDatabaseApplyTransform para gerar ou aplicar um arquivo de transformação. essa ferramenta só está disponível nos componentes SDK do Windows para desenvolvedores de Windows Installer.
 ms.assetid: cfc7b907-78d7-4a78-bab4-ede9012d5a36
 title: Msitran.exe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a69936155fb3880f43e0f7563bc6aabd59f53703
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e09803623024bb593897411a5e852aa953335c31fd88f9e2e1922b89b53e9abf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105759211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118944264"
 ---
 # <a name="msitranexe"></a>Msitran.exe
 
 Msitran.exe usa [**MsiDatabaseGenerateTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegeneratetransforma), [**MsiCreateTransformSummaryInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msicreatetransformsummaryinfoa)e [**MsiDatabaseApplyTransform**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabaseapplytransforma) para gerar ou aplicar um arquivo de transformação.
 
-Essa ferramenta só está disponível nos [componentes SDK do Windows para desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
+essa ferramenta só está disponível nos [componentes SDK do Windows para desenvolvedores de Windows Installer](platform-sdk-components-for-windows-installer-developers.md).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 Use a sintaxe a seguir para gerar uma transformação.
 
@@ -86,7 +86,7 @@ As condições de validação a seguir podem ser usadas para indicar quando uma 
 
 <dl> <dt>
 
-[Ferramentas de desenvolvimento Windows Installer](windows-installer-development-tools.md)
+[Windows Ferramentas de desenvolvimento do instalador](windows-installer-development-tools.md)
 </dt> <dt>
 
 [Transformações de banco de dados](database-transforms.md)

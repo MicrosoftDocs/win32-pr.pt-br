@@ -1,7 +1,7 @@
 ---
-description: Estabelece um &\# 0034; parte do&\# 0034; relação entre um sistema e qualquer elemento do sistema gerenciado do qual ele é composto.
+description: Estabelece uma &\# 0034;parte do&0034; relação entre um sistema e qualquer elemento do sistema gerenciado do qual ele \# é composto.
 ms.assetid: 6BF72E36-9B6C-4853-A553-DDAF65991C86
-title: Classe Msvm_SystemComponent
+title: Msvm_SystemComponent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ee150793143b549c90d280eef287ee6a5afb66b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 538deaff8e0edf3d1467c4447a3d25ced18987e4f81bc8d14a056848313c8526
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118949678"
 ---
-# <a name="msvm_systemcomponent-class"></a>\_Classe Msvm Systemcomponent
+# <a name="msvm_systemcomponent-class"></a>Classe SystemComponent Msvm \_
 
-Estabelece uma relação "parte de" entre um sistema e qualquer elemento do sistema gerenciado do qual ele é composto.
+Estabelece uma relação de "parte de" entre um sistema e qualquer elemento do sistema gerenciado do qual ele é composto.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,39 +41,39 @@ class Msvm_SystemComponent : CIM_SystemComponent
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ Systemcomponent** tem estes tipos de membros:
+A **classe \_ SystemComponent do Msvm** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ Systemcomponent** tem essas propriedades.
+A **classe \_ SystemComponent do Msvm** tem essas propriedades.
 
 <dl> <dt>
 
-**GroupComponent**
+**Groupcomponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **\_ sistema CIM**](/windows/desktop/CIMWin32Prov/cim-system)**
+Tipo de dados: **[ **Sistema CIM \_**](/windows/desktop/CIMWin32Prov/cim-system)**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O elemento pai na associação. Essa propriedade é herdada do [**CIM \_ Systemcomponent**](/windows/desktop/CIMWin32Prov/cim-systemcomponent).
+O elemento pai na associação. Essa propriedade é herdada de [**Cim \_ SystemComponent.**](/windows/desktop/CIMWin32Prov/cim-systemcomponent)
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)**
+Tipo de dados: **[ **Cim \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O elemento filho na associação. Essa propriedade é herdada do [**CIM \_ Systemcomponent**](/windows/desktop/CIMWin32Prov/cim-systemcomponent).
+O elemento filho na associação. Essa propriedade é herdada de [**Cim \_ SystemComponent.**](/windows/desktop/CIMWin32Prov/cim-systemcomponent)
 
 </dd> </dl>
 
@@ -83,10 +83,10 @@ O elemento filho na associação. Essa propriedade é herdada do [**CIM \_ Syste
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                                 |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                                 |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

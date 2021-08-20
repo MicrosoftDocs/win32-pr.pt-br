@@ -1,21 +1,21 @@
 ---
-description: Descreve como os pontos de nova análise permitem o comportamento do sistema de arquivos que faz parte do comportamento que a maioria dos desenvolvedores do Windows espera.
+description: descreve como os pontos de nova análise permitem o comportamento do sistema de arquivos que faz parte do comportamento que mais Windows os desenvolvedores esperam.
 ms.assetid: 1aaebda9-0013-4282-9ae1-7c829e171942
 title: Pontos de nova análise e operações de arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be1132197cd689157cd9f219afa5bfc1474b587c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31d18b42c2bc51617e185c2d8f13fde15952ad83d2c2c635d312d589677ee8e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015174"
 ---
 # <a name="reparse-points-and-file-operations"></a>Pontos de nova análise e operações de arquivo
 
-Os *pontos de nova análise* habilitam o comportamento do sistema de arquivos que faz parte do comportamento em que a maioria dos desenvolvedores do Windows pode estar acostumado, portanto, estar ciente desses comportamentos ao escrever aplicativos que manipulam arquivos é vital para aplicativos robustos e confiáveis destinados a acessar sistemas de arquivos que dão suporte a pontos de nova análise. A extensão dessas considerações dependerá da implementação específica e do comportamento do filtro do sistema de arquivos associado de um determinado ponto de nova análise, que pode ser definido pelo usuário. Para obter mais informações, consulte [pontos de nova análise](reparse-points.md).
+os *pontos de nova análise* habilitam o comportamento do sistema de arquivos que faz parte do comportamento que mais Windows desenvolvedores podem estar acostumados, portanto, estar ciente desses comportamentos ao escrever aplicativos que manipulam arquivos é vital para aplicativos robustos e confiáveis destinados a acessar sistemas de arquivos que dão suporte a pontos de nova análise. A extensão dessas considerações dependerá da implementação específica e do comportamento do filtro do sistema de arquivos associado de um determinado ponto de nova análise, que pode ser definido pelo usuário. Para obter mais informações, consulte [pontos de nova análise](reparse-points.md).
 
-Considere os exemplos a seguir sobre as implementações de ponto de nova análise de NTFS, que incluem pastas montadas, arquivos vinculados e o servidor de armazenamento remoto da Microsoft:
+considere os exemplos a seguir sobre as implementações de ponto de nova análise de NTFS, que incluem pastas montadas, arquivos vinculados e o servidor de Armazenamento remoto da Microsoft:
 
 -   Os aplicativos de backup que usam [fluxos de arquivos](file-streams.md) devem especificar **\_ \_ dados de nova análise de backup** na estrutura de [**\_ \_ ID de fluxo do Win32**](/windows/desktop/api/winbase/ns-winbase-win32_stream_id) ao fazer backup de arquivos com pontos de nova análise.
 -   Os aplicativos que usam a função [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) devem especificar o sinalizador do **sinalizador de arquivo \_ \_ abrir \_ \_ ponto de nova análise** ao abrir o arquivo se ele for um ponto de nova análise. Para obter mais informações, consulte [criando e abrindo arquivos](creating-and-opening-files.md).

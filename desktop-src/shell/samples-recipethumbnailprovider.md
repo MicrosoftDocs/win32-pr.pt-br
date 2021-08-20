@@ -1,5 +1,5 @@
 ---
-description: Demonstra como criar um manipulador de miniaturas por tipo de arquivo e estende o Windows Explorer.
+description: demonstra como criar um manipulador de miniaturas por tipo de arquivo e estende Windows Explorer.
 title: Exemplo de provedor de miniatura de receitas
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 76ab53464b6303728e301fb240e499829c5f70ee
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52d31f65a4e400a7f0170be5bc7794a58e565f9da44285f8b718a5ad46d6b472
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922160"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118968775"
 ---
 # <a name="recipe-thumbnail-provider-sample"></a>Exemplo de provedor de miniatura de receitas
 
-Demonstra como criar um manipulador de miniaturas por tipo de arquivo e estende o Windows Explorer.
+demonstra como criar um manipulador de miniaturas por tipo de arquivo e estende Windows Explorer.
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)

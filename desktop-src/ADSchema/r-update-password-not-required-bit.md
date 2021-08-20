@@ -1,10 +1,10 @@
 ---
-title: Atualização-senha-não-necessária-bit estendido à direita
-description: Direito de acesso de controle estendido que permite que um usuário habilite ou desabilite o \ 0034; senha não necessária \ 0034; configuração para objetos de usuário.
+title: Direito estendido Update-Password-Not-Required-Bit
+description: Direito de acesso de controle estendido que permite que um usuário habilita ou desabilite \ 0034;senha não necessária \ 0034; configuração para objetos de usuário.
 ms.assetid: f633098d-f0af-43e0-b7bd-5cf53045f86e
 ms.tgt_platform: multiple
 keywords:
-- Update-password-não-obrigatório-bit-o esquema do AD estendido à direita
+- Esquema estendido do AD Update-Password-Not-Required-Bit
 topic_type:
 - apiref
 api_name:
@@ -20,17 +20,17 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117835922"
 ---
-# <a name="update-password-not-required-bit-extended-right"></a>Atualização-senha-não-necessária-bit estendido à direita
+# <a name="update-password-not-required-bit-extended-right"></a>Direito estendido Update-Password-Not-Required-Bit
 
-Direito de acesso de controle estendido que permite que um usuário habilite ou desabilite a configuração "senha não necessária" para objetos de usuário.
+Direito de acesso de controle estendido que permite que um usuário habilita ou desabilite a configuração "senha não necessária" para objetos de usuário.
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Atualização-senha-não-necessária-bit     |
-| Display-Name | Atualizar a senha não é um bit necessário     |
-| GUID de direitos  | 280f369c-67c7-438e-ae98-1d46f3c6f541 |
+| CN           | Update-Password-Not-Required-Bit     |
+| Display-Name | Atualizar senha não necessária bit     |
+| RIGHTS-GUID  | 280f369c-67c7-438e-ae98-1d46f3c6f541 |
 
 
 
@@ -48,8 +48,8 @@ Direito de acesso de controle estendido que permite que um usuário habilite ou 
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 68                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 68                                           |
 
 
 
@@ -59,8 +59,8 @@ Direito de acesso de controle estendido que permite que um usuário habilite ou 
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 68                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 68                                           |
 
 
 
@@ -70,8 +70,8 @@ Direito de acesso de controle estendido que permite que um usuário habilite ou 
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 68                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 68                                           |
 
 
 
@@ -81,8 +81,8 @@ Direito de acesso de controle estendido que permite que um usuário habilite ou 
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 68                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 68                                           |
 
 
 
@@ -92,8 +92,8 @@ Direito de acesso de controle estendido que permite que um usuário habilite ou 
 
 | Entrada | Valor |
 |-------------------------|----------------------------------------------|
-| Applies-To              | [**Domínio-DNS**](c-domaindns.md)<br/> |
-| Localização-exibição-ID | 68                                           |
+| Applies-To              | [**DNS de domínio**](c-domaindns.md)<br/> |
+| Localization-Display-ID | 68                                           |
 
 
 

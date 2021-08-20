@@ -6,12 +6,12 @@ keywords:
 - Linguagem IDL da Microsoft MIDL, tarefas, gerando uma biblioteca de tipos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 85f6e8f7ea6f65bc503c08872c9199ff3d5fd828
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: f8d9084631dc30eb1cff7f61f6f3f090f95bb92cff357b3902cb0959f2c4142f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105752061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013844"
 ---
 # <a name="generating-a-type-library-with-midl"></a>Gerando uma biblioteca de tipos com MIDL
 
@@ -20,7 +20,7 @@ O elemento de nível superior da sintaxe ODL é a instrução de biblioteca (blo
 > [!Note]  
 > A ferramenta de Mktyplib.exe está obsoleta. Em vez disso, use o compilador MIDL.
 
- 
+ 
 
 Você pode aplicar atributos ODL a elementos que são definidos dentro ou fora do bloco de biblioteca. Esses atributos não têm efeito fora do bloco de biblioteca, a menos que o elemento ao qual eles são aplicados seja referenciado dentro do bloco de biblioteca. As instruções dentro do bloco de biblioteca podem fazer referência a um elemento externo usando-o como um tipo base, herdando dele ou referenciando-o em uma linha, conforme mostrado:
 
@@ -39,6 +39,6 @@ Se um elemento definido fora do bloco de biblioteca for referenciado dentro do b
 
 Para obter mais informações sobre a sintaxe geral de um arquivo ODL, consulte [sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax).
 
- 
+ 
 
- 
+ 
