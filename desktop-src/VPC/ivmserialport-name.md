@@ -1,11 +1,11 @@
 ---
-title: Propriedade nome do IVMSerialPort (VPCCOMInterfaces. h)
+title: Propriedade IVMSerialPort Name (VPCCOMInterfaces.h)
 description: Nome da porta serial.
 ms.assetid: 4d3fe008-f089-4a1b-9c90-2e0b3ded58fa
 keywords:
-- Propriedade do nome Virtual PC
-- Propriedade de nome Virtual PC, interface IVMSerialPort
-- IVMSerialPort interface virtual PC, Propriedade Name
+- Propriedade Name Pc Virtual
+- Propriedade name Pc Virtual , interface IVMSerialPort
+- INTERFACE IVMSerialPort pc virtual , propriedade Name
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 540540e2af91647b9c77735a1c601ed62aecdbdc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1862d2fbbecc4cf1efee7b83eb34a1a776f9e3bcc7a1d4949ecb3e5d483dec04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119510357"
 ---
-# <a name="ivmserialportname-property"></a>Propriedade IVMSerialPort:: Name
+# <a name="ivmserialportname-property"></a>Propriedade IVMSerialPort::Name
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera o nome da porta serial.
 
@@ -45,7 +45,7 @@ HRESULT get_Name(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O nome da porta serial. Por exemplo, "COM1" para **vmSerialPort \_ HostPort**, "C: \\SerialPort.txt" para **vmSerialPort \_ textfile** ou " \\ \\ *nome_do_servidor* \\ pipe pipeName \\ " para **vmSerialPort \_ NamedPipe**.
+O nome da porta serial. Por exemplo, "COM1" para **vmSerialPort \_ HostPort**, "C:SerialPort.txt" para \\ **vmSerialPort \_ TextFile** ou " \\ \\ *servername* \\ \\ *pipename pipename*" para **vmSerialPort \_ NamedPipe**.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -54,9 +54,9 @@ O nome da porta serial. Por exemplo, "COM1" para **vmSerialPort \_ HostPort**, "
 | Nome/valor                                                                                                                                                    | Significado                                                             |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>                            |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>                               |
-| <dl> <dt>VM \_ E 0xA0040207 de \_ VM \_ desconhecido</dt> <dt></dt> </dl> | A configuração desta máquina virtual não é válida.<br/> |
-| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado.<br/>                        |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>                               |
+| <dl> <dt>VM \_ E \_ VM \_ UNKNOWN</dt> <dt>0xA0040207</dt> </dl> | A configuração dessa máquina virtual não é válida.<br/> |
+| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado.<br/>                        |
 
 
 
@@ -66,12 +66,12 @@ O nome da porta serial. Por exemplo, "COM1" para **vmSerialPort \_ HostPort**, "
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMSerialPort é definido como 2ce4460d-1d3f-4458-bf8b-44084b816815<br/>              |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMSerialPort é definido como \_ 2ce4460d-1d3f-4458-bf8b-44084b816815<br/>              |
 
 
 

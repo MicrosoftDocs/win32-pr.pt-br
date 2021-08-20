@@ -3,7 +3,7 @@ title: Mensagem de CBEM_SETITEM (commctrl. h)
 description: Define os atributos de um item em um controle ComboBoxEx.
 ms.assetid: 752df8ea-fd5e-47fa-b729-d019bdde0904
 keywords:
-- Controles de CBEM_SETITEM de mensagens do Windows
+- controles de Windows de mensagem de CBEM_SETITEM
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50ae19287e3e30810b1d8c558be9b6153a86ab6b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7b1010c090283a47404ee93ef5f3bc1cf2d5ffe71a646d6d734cb443152bdd64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119527926"
 ---
 # <a name="cbem_setitem-message"></a>\_Mensagem CBEM SETITEM
 
@@ -41,7 +41,7 @@ Um ponteiro para uma estrutura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -51,9 +51,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **CBEM \_ SETITEMW** (Unicode) e **CBEM \_ setitema** (ANSI)<br/>                 |
 
 

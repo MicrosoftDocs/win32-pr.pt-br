@@ -4,24 +4,24 @@ description: DirectWrite de renderização
 ms.assetid: e8099fac-b5d7-4fb1-b06d-a6e85da0d1dc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cc7012bc4861a8befc9beb97c945dc0b03b4e761
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fa640b8963c427b9eaf1d17fd3e4691115a3965d477c5076deb1f5eb05a569db
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119070586"
 ---
 # <a name="rendering-directwrite"></a>DirectWrite de renderização
 
 ## <a name="rendering-options"></a>Opções de renderização
 
-O texto com formatação descrita por apenas um objeto [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) pode ser renderizado com [Direct2D](../direct2d/direct2d-portal.md). no entanto, há mais algumas opções para renderizar um objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) .
+o texto com formatação descrita por apenas um objeto [**IDWriteTextFormat**](/windows/win32/api/dwrite/nn-dwrite-idwritetextformat) pode ser renderizado com [Direct2D](../direct2d/direct2d-portal.md), no entanto, há mais algumas opções para renderizar um objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) .
 
 A cadeia de caracteres descrita por um objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) pode ser renderizada usando os métodos abaixo.
 
-## <a name="1-render-using-direct2d"></a>1. Render usando Direct2D
+## <a name="1-render-using-direct2d"></a>1. renderizar usando Direct2D
 
-Para renderizar um objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) usando Direct2D, use o método [**ID2D1RenderTarget::D rawtextlayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) , conforme mostrado no código a seguir.
+para renderizar um objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) usando Direct2D, use o método [**ID2D1RenderTarget::D rawtextlayout**](/windows/win32/api/d2d1/nf-d2d1-id2d1rendertarget-drawtextlayout) , conforme mostrado no código a seguir.
 
 
 ```C++
@@ -35,7 +35,7 @@ pRT_->DrawTextLayout(
 
 
 
-Para obter uma visão mais detalhada do desenho de um objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) usando [Direct2D](../direct2d/direct2d-portal.md), consulte [introdução com DirectWrite](getting-started-with-directwrite.md).
+para obter uma visão mais detalhada do desenho de um objeto [**IDWriteTextLayout**](/windows/win32/api/dwrite/nn-dwrite-idwritetextlayout) usando [Direct2D](../direct2d/direct2d-portal.md), consulte [Introdução com DirectWrite](getting-started-with-directwrite.md).
 
 ## <a name="2-render-using-a-custom-text-renderer"></a>2. renderizar usando um processador de texto personalizado.
 
@@ -57,7 +57,7 @@ hr = pTextLayout_->Draw(
 
 O método [**RAW IDWriteTextLayout::D**](/windows/win32/api/dwrite/nf-dwrite-idwritetextlayout-draw) chama os métodos do retorno de chamada do processador personalizado fornecido por você. Os métodos [**DrawGlyphRun**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawglyphrun), [**DrawUnderline**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawunderline), [**DrawInlineObject**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawinlineobject)e [**DrawStrikethrough**](/windows/win32/api/dwrite/nf-dwrite-idwritetextrenderer-drawstrikethrough) executam as funções de desenho.
 
-[**IDWriteTextRenderer**](/windows/win32/api/dwrite/nn-dwrite-idwritetextrenderer) declara métodos para desenhar uma execução de glifo, sublinhado, tachado e objetos embutidos. Cabe ao aplicativo implementar esses métodos. A criação de um renderizador de texto personalizado permite que o aplicativo aplique efeitos adicionais ao renderizar texto, como um preenchimento ou uma estrutura de tópicos personalizada. Um renderizador de texto personalizado de exemplo está incluído no [exemplo de Olá, mundo DirectWrite](/samples/browse/?redirectedfrom=MSDN-samples).
+[**IDWriteTextRenderer**](/windows/win32/api/dwrite/nn-dwrite-idwritetextrenderer) declara métodos para desenhar uma execução de glifo, sublinhado, tachado e objetos embutidos. Cabe ao aplicativo implementar esses métodos. A criação de um renderizador de texto personalizado permite que o aplicativo aplique efeitos adicionais ao renderizar texto, como um preenchimento ou uma estrutura de tópicos personalizada. um renderizador de texto personalizado de exemplo está incluído no [exemplo de Olá, Mundo de DirectWrite](/samples/browse/?redirectedfrom=MSDN-samples).
 
 ## <a name="3-render-cleartype-to-a-gdi-surface"></a>3. renderizar ClearType para uma superfície GDI.
 
@@ -79,9 +79,9 @@ memoryHdc = g_pBitmapRenderTarget->GetMemoryDC();
 Depois que o desenho for executado, o controlador de domínio de memória do objeto [**IDWriteBitmapRenderTarget**](/windows/win32/api/dwrite/nn-dwrite-idwritebitmaprendertarget) deverá ser copiado para a superfície GDI de destino.
 
 > [!Note]  
-> Você também tem a opção de transferir o bitmap para outro tipo de superfície, como uma superfície GDI+.
+> você também tem a opção de transferir o bitmap para outro tipo de superfície, como uma superfície de GDI+.
 
- 
+ 
 
 
 ```C++
@@ -101,13 +101,13 @@ BitBlt(
 > [!Note]  
 > Seu aplicativo tem a responsabilidade de renderizar tudo na janela no final. Isso inclui texto e elementos gráficos. Há uma penalidade de desempenho para isso. Além disso, o processamento para um controlador de domínio de memória não é acelerado por hardware GDI.
 
- 
+ 
 
 Para obter uma visão geral mais detalhada de interoperação com GDI, consulte [interoperação com GDI](interoperating-with-gdi.md).
 
 ## <a name="4-render-grayscale-text-transparently-to-a-gdi-surface-windows-8-and-later"></a>4. renderizar texto em escala de cinza de forma transparente para uma superfície GDI. (Windows 8 e posterior)
 
-A partir do Windows 8, você pode renderizar o texto em escala de cinza de forma transparente para uma superfície GDI para melhorar o desempenho. Para fazer isso, você precisa:
+a partir do Windows 8, você pode renderizar o texto em escala de cinza de forma transparente para uma superfície GDI para melhorar o desempenho. Para fazer isso, você precisa:
 
 1.  Limpe o DC de memória para transparente.
 2.  Renderizar o texto para o HDC de memória usando anti-aliasing em escala de cinza ( \_ \_ escala de cinza do modo AntiAlias de texto DWRITE \_ \_ ).
@@ -159,6 +159,6 @@ AlphaBlend(
 [Interoperação com GDI](interoperating-with-gdi.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

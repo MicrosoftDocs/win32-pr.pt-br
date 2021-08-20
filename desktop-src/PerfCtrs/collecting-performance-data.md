@@ -4,12 +4,12 @@ ms.assetid: 2534d387-a280-4716-9a9d-3e42f40e2f92
 title: Coletando dados de desempenho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e99bd2c0e22553245e87d3844694051c88c57895
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79f65280190e67e27783ea7e7387eac0e348aad1a53ad016df3010ae0bfd2ea9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296753"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061234"
 ---
 # <a name="collecting-performance-data"></a>Coletando dados de desempenho
 
@@ -51,9 +51,9 @@ A tabela a seguir mostra como isso pode ocorrer se um processo for encerrado enq
 |----------|----------------------|--------------------------------|------------------------------------------|
 | Exemplo 1 | 0                    | 0                              | 0                                        |
 | Exemplo 2 | 20                   | 10                             | 500                                      |
-| Exemplo 3 | 40                   | 20                             | 1,000                                    |
+| Exemplo 3 | 40                   | 20                             | 1.000                                    |
 | Exemplo 4 | 60                   | 1.500 (do slot anterior 2) | Não aplicável. Coletado agora no slot 1. |
-| Exemplo 5 | 80                   | 2\.000                          | Não aplicável. Coletado agora no slot 1. |
+| Exemplo 5 | 80                   | 2.000                          | Não aplicável. Coletado agora no slot 1. |
 
 
 

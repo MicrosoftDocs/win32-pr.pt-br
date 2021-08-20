@@ -4,12 +4,12 @@ ms.assetid: E18E8D79-3985-40B8-A4C5-A73A21E5C527
 title: Bloquear clonagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b33aa1c1eee693b6ed4b502aedc6da6176ece3e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a7d94afdb9b630f501de4baee0b690715f42d057a157f31b142c231e0a03f9f1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506179"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119582646"
 ---
 # <a name="block-cloning"></a>Bloquear clonagem
 
@@ -19,13 +19,13 @@ Um sistema de arquivos gerencia os mapeamentos de [clusters e extensões](cluste
 
 Uma operação de clonagem de bloco não interrompe o isolamento fornecido entre os arquivos. Após a conclusão de um clone de bloco, as gravações no arquivo de origem não aparecem no destino ou vice-versa.
 
-A clonagem de bloco está disponível apenas no tipo de [sistema de arquivos ReFS](/windows/desktop/w8cookbook/resilient-file-system--refs-) a partir do Windows Server 2016.
+A clonagem de bloco está disponível apenas no tipo de [sistema de arquivos ReFS](/windows/desktop/w8cookbook/resilient-file-system--refs-) que começa com Windows Server 2016.
 
 ## <a name="block-cloning-on-refs"></a>Bloquear clonagem em ReFS
 
-O ReFS no Windows Server 2016 implementa a clonagem de bloco ao remapear clusters lógicos (ou seja, locais físicos em um volume) da região de origem para a região de destino. Em seguida, ele usa um mecanismo de alocação na gravação para garantir o isolamento entre essas regiões. As regiões de origem e de destino podem estar nos mesmos arquivos, ou diferentes.
+ReFS em Windows Server 2016 implementa a clonagem de bloco ao remapear clusters lógicos (ou seja, locais físicos em um volume) da região de origem para a região de destino. Em seguida, ele usa um mecanismo de alocação na gravação para garantir o isolamento entre essas regiões. As regiões de origem e de destino podem estar nos mesmos arquivos, ou diferentes.
 
-Essa implementação requer que os deslocamentos de arquivo inicial e final sejam alinhados aos limites do cluster. No ReFS no Windows Server 2016, os clusters têm 4 KB de tamanho por padrão, mas, opcionalmente, podem ser definidos como 64 KB. O tamanho do cluster é um conjunto de parâmetros em todo o volume no momento do formato.
+Essa implementação requer que os deslocamentos de arquivo inicial e final sejam alinhados aos limites do cluster. em ReFS no Windows Server 2016, os clusters têm 4 kb de tamanho por padrão, mas, opcionalmente, podem ser definidos como 64 kb. O tamanho do cluster é um conjunto de parâmetros em todo o volume no momento do formato.
 
 ## <a name="restrictions-and-remarks"></a>Restrições e comentários
 
@@ -34,10 +34,10 @@ Essa implementação requer que os deslocamentos de arquivo inicial e final seja
 -   A região de destino não deve ultrapassar o fim do arquivo. Se o aplicativo quiser estender o destino com dados clonados, ele deverá primeiro chamar [**SetEndOfFile**](/windows/desktop/api/FileAPI/nf-fileapi-setendoffile).
 -   Se as regiões de origem e de destino estiverem no mesmo arquivo, elas não deverão se sobrepor. (O aplicativo pode continuar dividindo a operação bloquear clonagem em vários clones de bloco que não se sobrepõem mais.)
 -   Os arquivos de origem e de destino devem estar no mesmo volume do ReFS.
--   Os arquivos de origem e destino devem ter a mesma configuração de [**fluxos de integridade**](file-attribute-constants.md) (ou seja, os fluxos de integridade devem ser habilitados em ambos os arquivos ou desabilitados em ambos os arquivos).
+-   os arquivos de origem e destino devem ter a mesma [**integridade Fluxos**](file-attribute-constants.md) configuração (ou seja, a integridade Fluxos deve ser habilitada em ambos os arquivos ou desabilitada em ambos os arquivos).
 -   Se o arquivo de origem for esparso, o arquivo de destino também deverá ser esparso.
 -   A operação bloquear clonagem interromperá bloqueios oportunistas compartilhados (também conhecidos como [bloqueios oportunistas de nível 2](types-of-opportunistic-locks.md)).
--   O volume ReFS deve ter sido formatado com o Windows Server 2016 e, se o clustering de failover do Windows estiver em uso, o nível funcional de clustering deverá ter sido o Windows Server 2016 ou posterior no formato de hora.
+-   o volume ReFS deve ter sido formatado com Windows Server 2016 e, se Windows clustering de Failover estiver em uso, o nível funcional de clustering deverá ter sido Windows Server 2016 ou posterior no formato de hora.
 
 ## <a name="example"></a>Exemplo
 

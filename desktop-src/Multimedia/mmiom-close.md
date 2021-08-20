@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MMIOM_CLOSE (mmsystem. h)
-description: A \_ mensagem de fechamento MMIOM é enviada a um procedimento de e/s pela função mmioClose para solicitar que um arquivo seja fechado.
+title: MMIOM_CLOSE mensagem (Mmsystem.h)
+description: A mensagem CLOSE MMIOM é enviada a um procedimento de E/S pela função mmioClose para solicitar \_ que um arquivo seja fechado.
 ms.assetid: 9d0dad5b-fd0a-4948-a4cf-9d138e353c76
 keywords:
-- mensagem de MMIOM_CLOSE Windows multimídia
+- MMIOM_CLOSE mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119065386"
 ---
-# <a name="mmiom_close-message"></a>MMIOM \_ fechar mensagem
+# <a name="mmiom_close-message"></a>Mensagem CLOSE do MMIOM \_
 
-A mensagem de **\_ fechamento MMIOM** é enviada a um procedimento de e/s pela função [**mmioClose**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioclose) para solicitar que um arquivo seja fechado.
+A **mensagem \_ CLOSE MMIOM** é enviada a um procedimento de E/S pela [**função mmioClose**](/windows/win32/api/mmiscapi/nf-mmiscapi-mmioclose) para solicitar que um arquivo seja fechado.
 
 
 ```C++
@@ -41,13 +41,13 @@ lParam2 = reserved
 <span id="lCloseFlags"></span><span id="lcloseflags"></span><span id="LCLOSEFLAGS"></span>*lCloseFlags*
 </dt> <dd>
 
-Sinalizadores contidos no parâmetro **wFlags** de **mmioClose**.
+Sinalizadores contidos no **parâmetro wFlags****de mmioClose**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se o arquivo for fechado com êxito ou se um erro for diferente.
+Retornará zero se o arquivo for fechado com êxito ou se um erro for o contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Retornará zero se o arquivo for fechado com êxito ou se um erro for diferente.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 

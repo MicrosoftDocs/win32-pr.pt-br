@@ -3,7 +3,7 @@ title: Variáveis de Estado Dependentes de Implementação
 description: Variáveis de Estado Dependentes de Implementação
 ms.assetid: 6778b50c-a6ac-4106-9dd6-3a123c257687
 keywords:
-- Variáveis de estado do Implementation-Dependent OpenGL
+- Implementation-Dependent openGL de variáveis de estado
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "119061454"
 ---
 # <a name="implementation-dependent-state-variables"></a>Variáveis de Estado Dependentes de Implementação
 
-<dl> <dt><span id="GL_MAX_LIGHTS"></span><span id="gl_max_lights"></span>\_luzes máximas GL \_</dt> <dd> 
+<dl> <dt><span id="GL_MAX_LIGHTS"></span><span id="gl_max_lights"></span>GL \_ MAX \_ LIGHTS</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------|
@@ -34,7 +34,7 @@ ms.locfileid: "119061454"
 
  
 
-</dd> <dt><span id="GL_MAX_CLIP_PLANES"></span><span id="gl_max_clip_planes"></span>\_máximo de \_ recortes do GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_CLIP_PLANES"></span><span id="gl_max_clip_planes"></span>PLANOS DE CLIPE GL \_ MAX \_ \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
@@ -47,11 +47,11 @@ ms.locfileid: "119061454"
 
  
 
-</dd> <dt><span id="GL_MAX_MODELVIEW_STACK_DEPTH"></span><span id="gl_max_modelview_stack_depth"></span>\_profundidade máxima \_ de \_ pilha de MODELVIEW \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_MAX_MODELVIEW_STACK_DEPTH"></span><span id="gl_max_modelview_stack_depth"></span>GL \_ MAX \_ MODELVIEW \_ STACK \_ DEPTH</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Profundidade máxima da pilha modelview-matriz                                             |
+| Descrição:     | Profundidade máxima da pilha modelview-matrix                                             |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 32                                                                               |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -60,11 +60,11 @@ ms.locfileid: "119061454"
 
  
 
-</dd> <dt><span id="GL_MAX_PROJECTION_STACK_DEPTH"></span><span id="gl_max_projection_stack_depth"></span>\_profundidade máxima \_ da \_ pilha de projeção GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_PROJECTION_STACK_DEPTH"></span><span id="gl_max_projection_stack_depth"></span>PROFUNDIDADE DA \_ PILHA \_ DE PROJEÇÃO \_ GL MAX \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Profundidade máxima da pilha de matrizes                                            |
+| Descrição:     | Profundidade máxima da pilha da matriz de projeção                                            |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 2                                                                                |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -73,7 +73,7 @@ ms.locfileid: "119061454"
 
  
 
-</dd> <dt><span id="GL_MAX_TEXTURE_STACK_DEPTH"></span><span id="gl_max_texture_stack_depth"></span>\_profundidade máxima \_ da \_ pilha de textura \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_MAX_TEXTURE_STACK_DEPTH"></span><span id="gl_max_texture_stack_depth"></span>PROFUNDIDADE DA \_ PILHA DE TEXTURA GL MAX \_ \_ \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
@@ -86,7 +86,7 @@ ms.locfileid: "119061454"
 
  
 
-</dd> <dt><span id="GL_SUBPIXEL_BITS"></span><span id="gl_subpixel_bits"></span>\_bits de SUBPIXEL GL \_</dt> <dd> 
+</dd> <dt><span id="GL_SUBPIXEL_BITS"></span><span id="gl_subpixel_bits"></span>GL \_ SUBPIXEL \_ BITS</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
@@ -99,11 +99,11 @@ ms.locfileid: "119061454"
 
  
 
-</dd> <dt><span id="GL_MAX_TEXTURE_SIZE"></span><span id="gl_max_texture_size"></span>\_tamanho máximo de \_ textura \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_MAX_TEXTURE_SIZE"></span><span id="gl_max_texture_size"></span>TAMANHO \_ MÁXIMO \_ DA TEXTURA GL \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Altura ou largura máxima de uma imagem de textura (sem bordas)                     |
+| Descrição:     | Altura máxima ou largura de uma imagem de textura (sem bordas)                     |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 64                                                                               |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -112,11 +112,11 @@ ms.locfileid: "119061454"
 
  
 
-</dd> <dt><span id="GL_MAX_PIXEL_MAP_TABLE"></span><span id="gl_max_pixel_map_table"></span>\_tabela do \_ mapa de pixels máx \_ . gl \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_PIXEL_MAP_TABLE"></span><span id="gl_max_pixel_map_table"></span>TABELA DE \_ \_ MAPA DE PIXELS \_ GL MAX \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Tamanho máximo de uma tabela de tradução de **glPixelMap**                               |
+| Descrição:     | Tamanho máximo de uma **tabela de tradução glPixelMap**                               |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 32                                                                               |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -125,11 +125,11 @@ ms.locfileid: "119061454"
 
  
 
-</dd> <dt><span id="GL_MAX_NAME_STACK_DEPTH"></span><span id="gl_max_name_stack_depth"></span>\_profundidade máxima \_ da \_ pilha de nome \_ GL</dt> <dd> 
+</dd> <dt><span id="GL_MAX_NAME_STACK_DEPTH"></span><span id="gl_max_name_stack_depth"></span>PROFUNDIDADE DA \_ PILHA \_ DE NOMES \_ DE \_ GL MAX</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Máximo de seleção-profundidade da pilha de nome                                               |
+| Descrição:     | Profundidade máxima da pilha de nomes de seleção                                               |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 64                                                                               |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
@@ -138,11 +138,11 @@ ms.locfileid: "119061454"
 
  
 
-</dd> <dt><span id="GL_MAX_LIST_NESTING"></span><span id="gl_max_list_nesting"></span>\_ \_ aninhamento máximo de lista do GL \_</dt> <dd> 
+</dd> <dt><span id="GL_MAX_LIST_NESTING"></span><span id="gl_max_list_nesting"></span>\_ANINHAMENTO DE LISTA GL MAX \_ \_</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|----------------------------------------------------------------------------------|
-| Descrição:     | Aninhamento máximo de chamada de lista de exibição                                                |
+| Descrição:     | Aninhamento máximo de chamada da lista de exibição                                                |
 | Grupo de atributos: |                                                                                  |
 | Valor inicial:   | 64                                                                               |
 | Comando Get:     | [**glGetIntegerv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |

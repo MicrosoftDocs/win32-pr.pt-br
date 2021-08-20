@@ -3,7 +3,7 @@ title: Mensagem de CBEM_GETITEM (commctrl. h)
 description: Obtém informações de item para um determinado item ComboBoxEx.
 ms.assetid: 2df07ae8-fa84-487c-a4a7-90244dfdb40e
 keywords:
-- Controles de CBEM_GETITEM de mensagens do Windows
+- controles de Windows de mensagem de CBEM_GETITEM
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 940bbf7aea8ec93dd0f808937d959477c964df96
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dcf4dadf72a9f1fab679599c01c8fd0c6ca3541f2f77a5e8c52a740828966034
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528056"
 ---
 # <a name="cbem_getitem-message"></a>\_Mensagem CBEM GETITEM
 
@@ -41,7 +41,7 @@ Um ponteiro para uma estrutura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -57,9 +57,9 @@ Se o \_ sinalizador de texto CBEIF for definido no membro **Mask** da estrutura 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **CBEM \_ GETITEMW** (Unicode) e **CBEM \_ getitema** (ANSI)<br/>                 |
 
 

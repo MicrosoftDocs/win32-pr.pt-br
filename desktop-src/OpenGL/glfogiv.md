@@ -97,7 +97,7 @@ A **função glFogiv** atribui o valor ou os valores em *parâmetros params* ao 
 
 O blend combina uma cor de cinza com a cor pós-texto de cada fragmento de pixel rasterizado usando um fator de *mesclagem f*. O *fator f* é calculado de uma das três maneiras, dependendo do modo de modo de espera. Deixe *z* ser a distância nas coordenadas de olho da origem para o fragmento que está sendo destruído. A equação para o brilho \_ LINEAR GL é:
 
-![Equação mostrando o valor do fator de mesclagem GL_LINEAR modo de métrica como uma função de distância.](images/fog01.png)
+![Equação mostrando o valor do fator de mesclagem no GL_LINEAR modo de métrica como uma função de distância.](images/fog01.png)
 
 A equação para GL \_ EXP é:
 
@@ -105,7 +105,7 @@ A equação para GL \_ EXP é:
 
 A equação para GL \_ EXP2 é:
 
-![Equação mostrando o valor do fator de mesclagem no GL_EXP2 modo de métrica.](images/fog03.png)
+![Equação mostrando o valor do fator de mesclagem GL_EXP2 modo de métrica.](images/fog03.png)
 
 Independentemente do modo de ressarpetivo, *f* é fixado ao intervalo \[ 0,1 \] depois de computado. Em seguida, se OpenGL estiver no modo de cor RGBA, a cor do fragmento *C*<sub>r</sub> será substituída por
 

@@ -1,11 +1,11 @@
 ---
-title: Método IWMDRMDevice2 GetPartialSyncList
-description: O método GetPartialSyncList Obtém uma lista de sincronização parcial.
+title: Método GetPartialSyncList IWMDRMDevice2
+description: O método GetPartialSyncList obtém uma lista de sincronização parcial.
 ms.assetid: 4ee8e9d7-d5d1-4614-b7a1-1dcb7f07b161
 keywords:
-- Método GetPartialSyncList Windows Media Gerenciador de Dispositivos
-- Método GetPartialSyncList Windows Media Gerenciador de Dispositivos, interface IWMDRMDevice2
-- Interface IWMDRMDevice2 Windows Media Gerenciador de Dispositivos, método GetPartialSyncList
+- Método GetPartialSyncList windows Media Gerenciador de Dispositivos
+- Método GetPartialSyncList windows Media Gerenciador de Dispositivos , interface IWMDRMDevice2
+- Interface IWMDRMDevice2 windows Media Gerenciador de Dispositivos , método GetPartialSyncList
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c68c9c9a0bc47dcbea25158bb1f25db6cd084075
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c0bcff91d41ce77003219336431433ee511ff144dfcb8be7880526994689a929
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055654"
 ---
-# <a name="iwmdrmdevice2getpartialsynclist-method"></a>Método IWMDRMDevice2:: GetPartialSyncList
+# <a name="iwmdrmdevice2getpartialsynclist-method"></a>Método IWMDRMDevice2::GetPartialSyncList
 
-O método **GetPartialSyncList** Obtém uma lista de sincronização parcial.
+O **método GetPartialSyncList** obtém uma lista de sincronização parcial.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,71 +50,71 @@ HRESULT GetPartialSyncList(
 
 <dl> <dt>
 
-*cMinCountThreshold* \[ no\]
+*cMinCountThreshold* \[ Em\]
 </dt> <dd>
 
-Limite de contagem mínima.
+Limite mínimo de contagem.
 
 </dd> <dt>
 
-*cMinHoursThreshold* \[ no\]
+*cMinHoursThreshold* \[ Em\]
 </dt> <dd>
 
 Limite mínimo de horas.
 
 </dd> <dt>
 
-*dwStartingIndex* \[ no\]
+*dwStartingIndex* \[ Em\]
 </dt> <dd>
 
 Posição inicial para indexação.
 
 </dd> <dt>
 
-*cItems* \[ no\]
+*cItems* \[ Em\]
 </dt> <dd>
 
 Contagem de itens a serem indexados.
 
 </dd> <dt>
 
-*ppbSyncList* \[ fora\]
+*ppbSyncList* \[ out\]
 </dt> <dd>
 
-Lista de sincronização de licenças recuperada.
+Lista de sincronização de licença recuperada.
 
 </dd> <dt>
 
-*pcbSyncList* \[ fora\]
+*pcbSyncList* \[ out\]
 </dt> <dd>
 
 Tamanho da lista de sincronização de licenças, em bytes.
 
 </dd> <dt>
 
-*pdwNextStartingIndex* \[ fora\]
+*pdwNextStartingIndex* \[ out\]
 </dt> <dd>
 
-Próxima posição de início para indexação.
+Próxima posição inicial para indexação.
 
 </dd> <dt>
 
-*pcItemsProcessed* \[ fora\]
+*pcItemsProcessed* \[ out\]
 </dt> <dd>
 
 Contagem de itens que estão sendo processados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Todos os métodos de interface no Windows Media Gerenciador de Dispositivos podem retornar qualquer uma das seguintes classes de códigos de erro:
+O método retorna um **HRESULT.** Todos os métodos de interface no Windows Media Gerenciador de Dispositivos podem retornar qualquer uma das seguintes classes de códigos de erro:
 
--   Códigos de erro padrão COM
--   Códigos de erro do Windows convertidos em valores HRESULT
--   Códigos de erro do Windows Media Gerenciador de Dispositivos
+-   Códigos de erro COM padrão
+-   Windows códigos de erro convertidos em valores HRESULT
+-   Windows Códigos Gerenciador de Dispositivos de erro de mídia
 
-Para obter uma lista extensa de possíveis códigos de erro, consulte [códigos de erro](error-codes.md).
+Para uma lista extensiva de possíveis códigos de erro, consulte [Códigos de erro](error-codes.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -122,8 +122,8 @@ Para obter uma lista extensa de possíveis códigos de erro, consulte [códigos 
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>WMDDRMSP. idl</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>Mssachlp. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>WMDDRMSP.idl</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>Mssachlp.lib</dt> </dl> |
 
 
 
@@ -131,10 +131,10 @@ Para obter uma lista extensa de possíveis códigos de erro, consulte [códigos 
 
 <dl> <dt>
 
-[**IWMDRMDevice:: getsynclist**](iwmdrmdevice-getsynclist.md)
+[**IWMDRMDevice::GetSyncList**](iwmdrmdevice-getsynclist.md)
 </dt> <dt>
 
-[**Interface IWMDRMDevice2**](iwmdrmdevice2.md)
+[**IWMDRMDevice2 Interface**](iwmdrmdevice2.md)
 </dt> </dl>
 
  

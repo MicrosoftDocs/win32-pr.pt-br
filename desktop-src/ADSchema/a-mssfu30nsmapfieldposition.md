@@ -1,11 +1,11 @@
 ---
-title: msSFU-30-NSMAP-campo-atributo de posição
-description: Contém a posição do campo que é usada para extrair a chave de um mapa não padrão.
+title: Atributo msSFU-30-NSMAP-Field-Position
+description: Contém a posição do campo usada para extrair a chave de um mapa não padrão.
 ms.assetid: 7ff5e744-8397-4ed7-8b30-26bd9a15c346
 ms.tgt_platform: multiple
 keywords:
-- msSFU-30-NSMAP-Field-position atributo AD Schema
-- Esquema de AD do atributo msSFU30NSMAPFieldPosition
+- Esquema AD do atributo msSFU-30-NSMAP-Field-Position
+- Esquema do AD do atributo msSFU30NSMAPFieldPosition
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c26d691a9fdccf82125bc4d29f156c1c5ead5dbc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 40551adb7452120da1e85177a5b1fd82a8a01ce65a9f9e5ee2b2cf35d6493c94
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645537"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119581896"
 ---
-# <a name="mssfu-30-nsmap-field-position-attribute"></a>msSFU-30-NSMAP-campo-atributo de posição
+# <a name="mssfu-30-nsmap-field-position-attribute"></a>Atributo msSFU-30-NSMAP-Field-Position
 
-Contém a posição do campo que é usada para extrair a chave de um mapa não padrão.
+Contém a posição do campo usada para extrair a chave de um mapa não padrão.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | msSFU-30-NSMAP-campo-posição        |
-| LDAP-Display-Name | msSFU30NSMAPFieldPosition            |
+| CN                | msSFU-30-NSMAP-Field-Position        |
+| Ldap-Display-Name | msSFU30NSMAPFieldPosition            |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.18.1.345          |
-| System-ID-GUID    | 585c9d5e-f599-4f07-9cf9-4373af4b89d3 |
-| Syntax            | [**Cadeia de caracteres (IA5)**](s-string-ia5.md)  |
+| System-Id-Guid    | 585c9d5e-f599-4f07-9cf9-4373af4b89d3 |
+| Syntax            | [**String(IA5)**](s-string-ia5.md)  |
 
 
 
@@ -56,15 +56,15 @@ Contém a posição do campo que é usada para extrair a chave de um mapa não p
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Classes usadas em        | [**msSFU-30-NIS-MAP-config**](c-mssfu30nismapconfig.md)<br/> |
+| Classes usadas em        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contém a posição do campo que é usada para extrair a chave de um mapa não p
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Classes usadas em        | [**msSFU-30-NIS-MAP-config**](c-mssfu30nismapconfig.md)<br/> |
+| Classes usadas em        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contém a posição do campo que é usada para extrair a chave de um mapa não p
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| Tem valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
-| No catálogo global      | Falso                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |
+| No Catálogo Global      | Falso                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                        |
 | Range-Lower            | \-                                                                  |
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000000                                                          |
-| Classes usadas em        | [**msSFU-30-NIS-MAP-config**](c-mssfu30nismapconfig.md)<br/> |
+| Classes usadas em        | [**msSFU-30-NIS-Map-Config**](c-mssfu30nismapconfig.md)<br/> |
 
 
 
@@ -119,7 +119,7 @@ Contém a posição do campo que é usada para extrair a chave de um mapa não p
 | ID do link                | \-                                                                  |
 | MAPI-Id                | \-                                                                  |
 | System-Only            | Falso                                                               |
-| É de valor único       | True                                                                |
+| É de valor único       | Verdadeiro                                                                |
 | É indexado             | Falso                                                               |
 | No catálogo global      | Falso                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                        |

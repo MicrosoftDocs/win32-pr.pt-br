@@ -65,7 +65,7 @@ Esse método não retorna um valor.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Nem todos os métodos são implementados para todas as pastas. Por exemplo, o [**método ParseName**](folder-parsename.md) não é implementado para a pasta Painel de Controle (CSIDL \_ CONTROLS). Se você tentar chamar um método não simplificado, um erro 0x800A01BD (decimal 445) será gerado.
+> Nem todos os métodos são implementados para todas as pastas. Por exemplo, o [**método ParseName**](folder-parsename.md) não é implementado para a pasta Painel de Controle (CSIDL \_ CONTROLS). Se você tentar chamar um método não simplificado, um erro de 0x800A01BD (decimal 445) será gerado.
 
  
 
@@ -146,7 +146,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

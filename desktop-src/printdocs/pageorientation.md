@@ -4,12 +4,12 @@ ms.assetid: 52f02fc1-56fb-404d-8939-df3a4b21570d
 title: Pageorientation
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6f0af08fcd29f34bb55bd16b1eac50487e96ffb
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: 4ece08b4a9500b72cab3bf36f4c40b6379532cf8b89d483b09a4b067ff1737ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034104"
 ---
 # <a name="pageorientation"></a>Pageorientation
 
@@ -41,7 +41,7 @@ Descreve a orientação da folha de mídia física.
 | Nome | Valor |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                                                                                      |
-| Prefixo de definição de scoping <br/> | Página<br/>                                                                                                                                                                                         |
+| Prefixo de definição de scoping <br/> | ?<br/>                                                                                                                                                                                         |
 | Observações <br/>          | Se um Dispositivo de Impressora puder dar suporte apenas a uma direção paisagem e essa direção for chamada de "Paisagem Inversa", a orientação da página ainda será considerada "Paisagem".<br/> |
 
 
@@ -83,7 +83,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 ## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:PageOrientation">

@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 69b4021ea176dc4350dce63012f6b1df15f13167
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a50533b9cf6f8688fc1fb01536e49551fb17b9245831798da24e0c31d75fc821
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105808336"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119623216"
 ---
 # <a name="esentbackupabortbyserverexception-constructor"></a>Construtor EsentBackupAbortByServerException
 
 Inicializa uma nova instância da classe EsentBackupAbortByServerException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentBackupAbortByServerException()
 
 [Classe EsentBackupAbortByServerException](./esentbackupabortbyserverexception-class.md)
 
-[Membros do EsentBackupAbortByServerException](./esentbackupabortbyserverexception-members.md)
+[Membros EsentBackupAbortByServerException](./esentbackupabortbyserverexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

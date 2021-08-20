@@ -1,10 +1,10 @@
 ---
 title: Objeto RunningTaskCollection
-description: Objeto de script que fornece uma coleção que é usada para controlar tarefas em execução.
+description: Objeto de script que fornece uma coleção usada para controlar tarefas em execução.
 ms.assetid: b137fcf3-634c-4ac6-908d-357f54da3025
 keywords:
-- Agendador de Tarefas de objeto RunningTaskCollection
-- Agendador de Tarefas de objeto RunningTaskCollection, descrito
+- Objeto RunningTaskCollection Agendador de Tarefas
+- Objeto RunningTaskCollection Agendador de Tarefas , descrito
 topic_type:
 - apiref
 api_name:
@@ -24,17 +24,17 @@ ms.locfileid: "119059964"
 ---
 # <a name="runningtaskcollection-object"></a>Objeto RunningTaskCollection
 
-Objeto de script que fornece uma coleção que é usada para controlar tarefas em execução.
+Objeto de script que fornece uma coleção usada para controlar tarefas em execução.
 
 ## <a name="members"></a>Membros
 
-O objeto **RunningTaskCollection** tem estes tipos de membros:
+O **objeto RunningTaskCollection** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **RunningTaskCollection** tem essas propriedades.
+O **objeto RunningTaskCollection** tem essas propriedades.
 
 
 
@@ -53,9 +53,9 @@ O objeto **RunningTaskCollection** tem essas propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 
@@ -64,7 +64,7 @@ O objeto **RunningTaskCollection** tem essas propriedades.
 
 <dl> <dt>
 
-[Objetos Agendador de Tarefas](task-scheduler-objects.md)
+[Agendador de Tarefas objetos](task-scheduler-objects.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)
@@ -73,10 +73,10 @@ O objeto **RunningTaskCollection** tem essas propriedades.
 [**RunningTask**](runningtask.md)
 </dt> <dt>
 
-[**TaskService. GetRunningTasks**](taskservice-getrunningtasks.md)
+[**TaskService.GetRunningTasks**](taskservice-getrunningtasks.md)
 </dt> <dt>
 
-[**RegisteredTask. GetInstances**](registeredtask-getinstances.md)
+[**RegisteredTask.GetInstances**](registeredtask-getinstances.md)
 </dt> </dl>
 
  

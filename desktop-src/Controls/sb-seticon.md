@@ -1,9 +1,9 @@
 ---
-title: Mensagem de SB_SETICON (commctrl. h)
+title: SB_SETICON mensagem (Commctrl.h)
 description: Define o ícone de uma parte em uma barra de status.
 ms.assetid: d8528cd1-54d2-44ba-b0d6-29111f75616a
 keywords:
-- Controles de SB_SETICON de mensagens do Windows
+- SB_SETICON controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f720c414238eb89cf98bf0556ebabffefceae4b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d0e08b1c3b0ce1a453ca9050c20552a14169a594c8091708339b4a436f1fb1a3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824620"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540066"
 ---
-# <a name="sb_seticon-message"></a>\_Mensagem de SETICON SB
+# <a name="sb_seticon-message"></a>Mensagem \_ SB SETICON
 
 Define o ícone de uma parte em uma barra de status.
 
@@ -32,24 +32,24 @@ Define o ícone de uma parte em uma barra de status.
 *wParam* 
 </dt> <dd>
 
-O índice de base zero da parte que receberá o ícone. Se esse parâmetro for-1, a barra de status será considerada uma barra de status simples.
+Índice baseado em zero da parte que receberá o ícone. Se esse parâmetro for -1, a barra de status será assumida como uma barra de status simples.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Identificador para o ícone a ser definido. Se esse valor for **nulo**, o ícone será removido da parte.
+Lidar com o ícone a ser definido. Se esse valor for **NULL,** o ícone será removido da parte.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-A barra de status não destruirá o ícone. É responsabilidade do aplicativo de chamada manter o controle e destruir os ícones.
+A barra de status não destruirá o ícone. É responsabilidade do aplicativo de chamada manter o controle e destruir todos os ícones.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ A barra de status não destruirá o ícone. É responsabilidade do aplicativo de
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

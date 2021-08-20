@@ -1,5 +1,5 @@
 ---
-description: Indica um erro de arquitetura de verificação de máquina (MCA) inválido. Um erro de MCA inválido identifica um formato de erro que não está de acordo com as especificações do Windows. Essa classe está disponível somente em sistemas Windows de 64 bits.
+description: Indica um erro de arquitetura de verificação de máquina (MCA) inválido. um erro de MCA inválido identifica um formato de erro que não está de acordo com as especificações de Windows. essa classe está disponível somente em sistemas Windows de 64 bits.
 ms.assetid: 476ea558-2e0e-480f-b4ba-8d73fdef3308
 title: Classe MSMCAEvent_InvalidError
 ms.topic: reference
@@ -23,16 +23,16 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: abd12cfa7280a1b2f6a718b47b17d4ddf121cc25
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a42ee7dfcc9864cdd4ca90ba7d66903407352e92224e5ded7a16ace4e053d37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763984"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118821970"
 ---
 # <a name="msmcaevent_invaliderror-class"></a>\_Classe MSMCAEvent InvalidError
 
-A classe **MSMCAEvent \_ InvalidError** indica um erro de arquitetura de verificação de máquina (MCA) inválido. Um erro de MCA inválido identifica um formato de erro que não está de acordo com as especificações do Windows. Essa classe está disponível somente em sistemas Windows de 64 bits.
+A classe **MSMCAEvent \_ InvalidError** indica um erro de arquitetura de verificação de máquina (MCA) inválido. um erro de MCA inválido identifica um formato de erro que não está de acordo com as especificações de Windows. essa classe está disponível somente em sistemas Windows de 64 bits.
 
 A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
@@ -120,7 +120,7 @@ Nível de severidade do erro relatado.
 
 | Valor                                                                                                | Significado                |
 |------------------------------------------------------------------------------------------------------|------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperado<br/> |
+| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperável<br/> |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Fatais<br/>       |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Corrigível<br/> |
 
@@ -168,7 +168,7 @@ Tipo de dados: matriz **uint8**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Matriz de bytes que contém o registro de erro bruto conforme apresentado ao Windows pela camada de abstração do sistema (SAL). O número de elementos na matriz é especificado pela propriedade **size** .
+matriz de bytes que contém o registro de erro bruto, conforme apresentado a Windows pela camada de abstração do sistema (SAL). O número de elementos na matriz é especificado pela propriedade **size** .
 
 </dd> <dt>
 
@@ -209,7 +209,7 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tipo de mensagem de log de eventos. Essas mensagens correspondem aos códigos de mensagem de log de eventos usados para inserir mensagens de log de eventos pelo provedor de consumidor do log de eventos do Windows quando ele recebe um dos eventos.
+Tipo de mensagem de log de eventos. essas mensagens correspondem aos códigos de mensagem de log de eventos usados para inserir mensagens de log de eventos pelo provedor de consumidor Windows log de eventos quando ele recebe um dos eventos.
 
 </dd> </dl>
 

@@ -1,10 +1,10 @@
 ---
-title: Telefone-escritório-outro atributo
+title: Telefone-Office-outro atributo
 description: Uma lista de números de telefone alternativos do escritório.
 ms.assetid: 4688b9c1-d888-41af-a20e-50a9e82952a6
 ms.tgt_platform: multiple
 keywords:
-- Telefone-escritório-outro esquema do AD de atributos
+- Telefone-Office-outro esquema de AD do atributo
 - Esquema de AD do atributo otherTelephone
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e60fa680ea0181d38cbe5703464dff81e4e2ab49
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ccd4e297c56fd01cfe2864cc71728f1d1a16cac618e925848854c6cc0a07b1e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119648096"
 ---
-# <a name="phone-office-other-attribute"></a>Telefone-escritório-outro atributo
+# <a name="phone-office-other-attribute"></a>Telefone-Office-outro atributo
 
 Uma lista de números de telefone alternativos do escritório.
 
@@ -29,7 +29,7 @@ Uma lista de números de telefone alternativos do escritório.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------|
-| CN                | Telefone-escritório-outro                                                              |
+| CN                | Telefone-Office-outro                                                              |
 | LDAP-Display-Name | otherTelephone                                                                  |
 | Tamanho              | \-                                                                              |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                          |

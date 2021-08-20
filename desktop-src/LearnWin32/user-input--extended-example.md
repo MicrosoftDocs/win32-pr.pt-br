@@ -53,7 +53,7 @@ As reellipses são armazenadas em um contêiner de lista **STL:**
 
 
 > [!Note]  
-> **shared \_ ptr** é uma classe de ponteiro inteligente que foi adicionada ao C++ em TR1 e formalizada em C++0x. Visual Studio 2010 adiciona suporte para **\_ pt** r compartilhado e outros recursos do C++0x. Para obter mais informações, consulte [Explorando novos recursos C++ e MFC no Visual Studio 2010](/archive/msdn-magazine/2010/april/visual-c-exploring-new-c-and-mfc-features-in-visual-studio-2010) na *MSDN Magazine*. (Esse recurso pode não estar disponível em alguns idiomas e países.)
+> **shared \_ ptr** é uma classe de ponteiro inteligente que foi adicionada ao C++ em TR1 e formalizada em C++0x. Visual Studio 2010 adiciona suporte para **\_ pt** r compartilhado e outros recursos do C++0x. Para obter mais informações, consulte [Explorando novos recursos do C++ e do MFC no Visual Studio 2010](/archive/msdn-magazine/2010/april/visual-c-exploring-new-c-and-mfc-features-in-visual-studio-2010) na *MSDN Magazine.* (Esse recurso pode não estar disponível em alguns idiomas e países.)
 
  
 

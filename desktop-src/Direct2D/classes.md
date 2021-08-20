@@ -1,19 +1,19 @@
 ---
-title: Classes auxiliares Direct2D
+title: Direct2D classes auxiliares
 description: O namespace D2D1 define as classes a seguir.
 ms.assetid: c80d8394-49f3-4450-9116-3eb01640305f
 keywords:
 - Namespace D2D1, classes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71527ad35bdec7e2ea69be16839a5f0e5a1780fd
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 2b13f3fddcd1939de335dce47d26637780183894fcaa53d16bb0e01aa3ba1dcd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075570"
 ---
-# <a name="direct2d-helper-classes"></a>Classes auxiliares Direct2D
+# <a name="direct2d-helper-classes"></a>Direct2D classes auxiliares
 
 O namespace D2D1 define as classes a seguir.
 

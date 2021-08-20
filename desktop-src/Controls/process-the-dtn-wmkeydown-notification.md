@@ -1,39 +1,39 @@
 ---
-title: Como processar a notificação de DTN_WMKEYDOWN
-description: Este tópico demonstra como processar uma notificação DTN \_ WMKEYDOWN. Manipular esse código de notificação permite que o proprietário do controle forneça respostas específicas para pressionamentos de teclas dentro dos campos de retorno de chamada do controle.
+title: Como processar a notificação DTN_WMKEYDOWN dados
+description: Este tópico demonstra como processar uma notificação \_ WMKEYDOWN de DTN. Lidar com esse código de notificação permite que o proprietário do controle forneça respostas específicas a teclas nos campos de retorno de chamada do controle.
 ms.assetid: CD521C62-CF52-4FFF-A598-E5EBA34471FB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cec97ffc5853743c357081b974d155ee0e0977d1
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: fbef0804afb388f9cadad60b04bf93ce4730ef255476f0c7f216edfd24846a19
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103824075"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540346"
 ---
-# <a name="how-to-process-the-dtn_wmkeydown-notification"></a>Como processar a notificação DTN \_ WMKEYDOWN
+# <a name="how-to-process-the-dtn_wmkeydown-notification"></a>Como processar a notificação wmkeydown de DTN \_
 
-Este tópico demonstra como processar uma notificação [DTN \_ WMKEYDOWN](dtn-wmkeydown.md) . Manipular esse código de notificação permite que o proprietário do controle forneça respostas específicas para pressionamentos de teclas dentro dos campos de retorno de chamada do controle.
+Este tópico demonstra como processar uma notificação [ \_ WMKEYDOWN de DTN.](dtn-wmkeydown.md) Lidar com esse código de notificação permite que o proprietário do controle forneça respostas específicas a teclas nos campos de retorno de chamada do controle.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 
-Os controles do seletor de data e hora (DTP) enviam a mensagem [DTN \_ WMKEYDOWN](dtn-wmkeydown.md) para relatar que o usuário digitou entrada em um campo de retorno de chamada. Se você quiser emular as mesmas respostas de teclado com suporte para campos DTP padrão ou fornecer respostas personalizadas, seu aplicativo deverá incluir o código para lidar com essa notificação.
+Os controles DTP (selador de data e hora) enviam a mensagem [ \_ WMKEYDOWN do DTN](dtn-wmkeydown.md) para relatar que o usuário digitou a entrada em um campo de retorno de chamada. Se você quiser emular as mesmas respostas de teclado com suporte para campos DTP padrão ou fornecer respostas personalizadas, seu aplicativo deverá incluir código para lidar com essa notificação.
 
-O exemplo de código C++ a seguir é uma função definida pelo aplicativo que processa a notificação [DTN \_ WMKEYDOWN](dtn-wmkeydown.md) .
+O exemplo de código C++ a seguir é uma função definida pelo aplicativo que processa a notificação [ \_ WMKEYDOWN do DTN.](dtn-wmkeydown.md)
 
-**Aviso de segurança:** O uso incorreto do **lstrcmp** pode comprometer a segurança do seu aplicativo. Por exemplo, antes de chamar **lstrcmp** no exemplo de código a seguir, você deve verificar se as duas cadeias de caracteres são terminadas em nulo. Você deve examinar as [considerações de segurança: controles do Microsoft Windows](sec-comctls.md) antes de continuar.
+**Aviso de segurança:** Usar **lstrcmp** incorretamente pode comprometer a segurança do seu aplicativo. Por exemplo, antes de chamar **lstrcmp** no exemplo de código a seguir, você deve garantir que as duas cadeias de caracteres sejam terminadas em nulo. Você deve revisar [considerações de segurança: Controles Windows Microsoft antes](sec-comctls.md) de continuar.
 
 
 
@@ -67,13 +67,13 @@ void WINAPI DoWMKeydown(
 
 <dl> <dt>
 
-[Usando controles de seletor de data e hora](using-date-and-time-picker.md)
+[Usando controles de selador de data e hora](using-date-and-time-picker.md)
 </dt> <dt>
 
-[Referência de controle do seletor de data e hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[Referência de controle do selador de data e hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
-[Seletor de data e hora](date-and-time-picker-control-reference.md)
+[Selador de data e hora](date-and-time-picker-control-reference.md)
 </dt> </dl>
 
  

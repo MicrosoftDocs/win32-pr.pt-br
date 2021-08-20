@@ -1,7 +1,7 @@
 ---
-description: O método setsyncize notifica a classe base do relógio de referência atual.
+description: O método SetSyncSource notifica a classe base do relógio de referência atual.
 ms.assetid: 056385ac-682c-456e-9a5f-86490bd6e05f
-title: Método CBaseStreamControl. setsyncize (Strmctl. h)
+title: Método CBaseStreamControl.SetSyncSource (Strmctl.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 60832d1bf7ceca59089875f10579d52cf2cfec4e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b2b7fa5a4f627b33bbca1665e3d1ff2c5bc347cfa0e35adec37e0afffa81f198
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118954775"
 ---
-# <a name="cbasestreamcontrolsetsyncsource-method"></a>Método CBaseStreamControl. setsyncize
+# <a name="cbasestreamcontrolsetsyncsource-method"></a>Método CBaseStreamControl.SetSyncSource
 
 O `SetSyncSource` método notifica a classe base do relógio de referência atual.
 
@@ -49,13 +49,13 @@ Ponteiro para a interface [**IReferenceClock**](/windows/desktop/api/Strmif/nn-s
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Chame esse método de dentro do método [**IMediaFilter:: Setsincronizate**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-setsyncsource) do filtro. A classe **CBaseStreamControl** usa a interface **IReferenceClock** para garantir que ela não descarte amostras muito rapidamente.
+Chame esse método de dentro do método [**IMediaFilter::SetSyncSource do**](/windows/desktop/api/Strmif/nf-strmif-imediafilter-setsyncsource) filtro. A **classe CBaseStreamControl** usa a interface **IReferenceClock** para garantir que ela não descarte amostras muito rapidamente.
 
 ## <a name="examples"></a>Exemplos
 
@@ -78,8 +78,8 @@ STDMETHODIMP CMyFilter::SetSyncSource(IReferenceClock *pClock)
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Strmctl. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Strmctl.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - Scsi.h
-ms.openlocfilehash: b5eacf9bee8c2cebf93b27c97a88c691852a3841
-ms.sourcegitcommit: 7b8f6151ebe247536304866459b2973276271d4d
+ms.openlocfilehash: 2f6b3bd9fd4353e396bc7fe4ff7273e598704d1348062fec1c2f64aed9380686
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "105748684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075949"
 ---
 # <a name="sense_data-structure"></a>Estrutura de dados de detecção \_
 
@@ -218,9 +218,9 @@ Para obter mais informações sobre o formato de dados de detecção, consulte [
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>SCSI. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>SCSI. h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 8169b74f-13e0-4f6b-81e2-1824d932ee50
 title: Instâncias de propriedade importantes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4691b73b1206ee092c171b213a3815925b7f53c6
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: df644c44bc1c9c0c0b4c5bf457bdb253f5b91969c55dd26833c0e05dc66cc558
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409119"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119100547"
 ---
 # <a name="important-property-instances"></a>Instâncias de propriedade importantes
 

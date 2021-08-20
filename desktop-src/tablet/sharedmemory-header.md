@@ -1,7 +1,7 @@
 ---
-description: Armazena informações sobre seções de memória compartilhada.
+description: Armazena informações sobre as seções de memória compartilhada.
 ms.assetid: 73a650ee-110c-43f2-a5e2-783d52fd29ee
-title: SHAREDMEMORY_HEADER estrutura
+title: Estrutura de SHAREDMEMORY_HEADER
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118966795"
 ---
-# <a name="sharedmemory_header-structure"></a>Estrutura DE HEADER SHAREDMEMORY \_
+# <a name="sharedmemory_header-structure"></a>\_Estrutura de cabeçalho SHAREDMEMORY
 
-Armazena informações sobre seções de memória compartilhada.
+Armazena informações sobre as seções de memória compartilhada.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,56 +51,56 @@ typedef struct _SHAREDMEMORY_HEADER {
 **cbTotal**
 </dt> <dd>
 
-O tamanho, em bytes, dos dados referenciados por essa estrutura de header.
+O tamanho, em bytes, dos dados referenciados por essa estrutura de cabeçalho.
 
 </dd> <dt>
 
 **cbOffsetSns**
 </dt> <dd>
 
-O tamanho, em bytes, de que os números de série são deslocamentos da estrutura do header.
+O tamanho, em bytes, que os números de série são deslocados da estrutura de cabeçalho.
 
 </dd> <dt>
 
 **idxEvent**
 </dt> <dd>
 
-O índice de evento. Esse valor é incrementado com eventos sucessivos.
+O índice de eventos. Esse valor é incrementado com eventos sucessivos.
 
 </dd> <dt>
 
 **dwEvent**
 </dt> <dd>
 
-O evento associado a este header.
+O evento associado a este cabeçalho.
 
 </dd> <dt>
 
-**Cid**
+**CID**
 </dt> <dd>
 
-O identificador de cursor referenciado pelo header de memória compartilhada.
+O identificador de cursor referenciado pelo cabeçalho da memória compartilhada.
 
 </dd> <dt>
 
 **sn**
 </dt> <dd>
 
-O número de série para o header de memória compartilhada.
+O número de série do cabeçalho da memória compartilhada.
 
 </dd> <dt>
 
 **sysEvt**
 </dt> <dd>
 
-O evento do sistema, ES \_ \* , associado a esse título. Consulte a seção de comentários para obter mais informações.
+o evento do sistema, prefixado ES \_ \* , associado a esse cabeçalho. Consulte a seção de comentários para obter mais informações.
 
 </dd> <dt>
 
 **sysEvtData**
 </dt> <dd>
 
-A [**estrutura SYSTEM EVENT \_ \_ DATA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) associada ao evento do sistema.
+A estrutura de [**\_ \_ dados de evento do sistema**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data) associada ao evento do sistema.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Um sinalizador que indica se os números de série estão presentes na seção d
 
 ## <a name="remarks"></a>Comentários
 
-Os valores a seguir são definidos para **o membro sysEvt.**
+Os valores a seguir são definidos para o membro **sysEvt** .
 
 
 ```C++
@@ -150,7 +150,7 @@ Os valores a seguir são definidos para **o membro sysEvt.**
 
 <dl> <dt>
 
-[**DADOS DE \_ EVENTO DO \_ SISTEMA**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data)
+[**\_dados de evento do sistema \_**](/windows/win32/api/tpcshrd/ns-tpcshrd-system_event_data)
 </dt> </dl>
 
  

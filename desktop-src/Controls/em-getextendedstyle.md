@@ -3,7 +3,7 @@ title: Mensagem de EM_GETEXTENDEDSTYLE (commctrl. h)
 description: Recupera o estilo estendido para um controle de edição. Envie essa mensagem explicitamente ou usando a macro ' Editar \_ Extended '.
 ms.assetid: 557f796e-c9d1-4ea1-b8a6-44ae0bed5ffc
 keywords:
-- Controles de EM_GETEXTENDEDSTYLE de mensagens do Windows
+- controles de Windows de mensagem de EM_GETEXTENDEDSTYLE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: 37dc117bccd57b51098a7ca8c19e8b178037bef8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 77aa5827cc256c040d34ca24574dfa0b12816accaff9e5c0e92b4400195cae2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455548"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019664"
 ---
 # <a name="em_getextendedstyle-message-commctrlh"></a>Mensagem de EM_GETEXTENDEDSTYLE (commctrl. h)
 
@@ -35,7 +35,7 @@ Recupera o estilo estendido para um controle de exibição de árvore. Envie ess
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o valor do estilo estendido. Para obter mais informações sobre estilos, consulte [Editar estilos estendidos de controle](edit-control-window-extended-styles.md).
 
@@ -49,9 +49,9 @@ Os estilos estendidos para um controle de edição não têm nada a ver com os e
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1809\]<br/>                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2019\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1809 \[ somente aplicativos da área de trabalho\]<br/>                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2019\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

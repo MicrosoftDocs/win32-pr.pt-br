@@ -4,12 +4,12 @@ ms.assetid: 45a1edcd-9ea3-4ea2-b830-15df304e4566
 title: Subtipos de fluxo (DShow. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c76c1a9f7ebf4c4903c82335a728b9863cb57dc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: bc75335ecc749e73bb019ec44a95477d66bb5eaef1d3f02e874d15e7138e3ed3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072370"
 ---
 # <a name="stream-subtypes"></a>Subtipos de fluxo
 

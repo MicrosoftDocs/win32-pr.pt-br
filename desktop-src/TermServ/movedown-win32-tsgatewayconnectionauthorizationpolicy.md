@@ -26,7 +26,7 @@ ms.locfileid: "119058734"
 ---
 # <a name="movedown-method-of-the-win32_tsgatewayconnectionauthorizationpolicy-class"></a>Método MoveDown da classe \_ Win32 TSGatewayConnectionAuthorizationPolicy
 
-Move a política Área de Trabalho Remota política de autorização de conexão (RD CAP) uma posição para baixo na ordem em que os CAPs de Área de Trabalho De Área de Trabalho Trabalho São avaliados. Esse método incrementa a **propriedade Order** do RD CAP atual e diminui a propriedade **Order** do RD CAP que seguiu a RD CAP.
+Move a atual Área de Trabalho Remota política de autorização de conexão (RD CAP) uma posição para baixo na ordem em que os CAPs de área de trabalho de área de trabalho são avaliados. Esse método incrementa a **propriedade Order** do RD CAP atual e diminui a propriedade **Order** do RD CAP que seguiu a RD CAP.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI.](terminal-services-wmi-provider-error-codes.md)
+Se o método for bem-sucedido, ele retornará zero. Se o método não for bem-sucedido, ele retornará um valor diferente de zero. Para ver uma lista de códigos de erro, consulte Serviços de Área de Trabalho Remota códigos de erro do provedor [WMI](terminal-services-wmi-provider-error-codes.md).
 
 ## <a name="remarks"></a>Comentários
 

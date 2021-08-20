@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_RECSIZE. cbLongValueOverhead'
-title: Propriedade JET_RECSIZE. cbLongValueOverhead (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: JET_RECSIZE.cbLongValueOverhead'
+title: JET_RECSIZE.cbLongValueOverhead (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'cbLongValueOverhead property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.cbLongValueOverhead
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.cblongvalueoverhead(v=EXCHG.10)
@@ -33,12 +33,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119038784"
 ---
-# <a name="jet_recsizecblongvalueoverhead-property"></a>Propriedade JET_RECSIZE. cbLongValueOverhead
+# <a name="jet_recsizecblongvalueoverhead-property"></a>JET_RECSIZE.cbLongValueOverhead
 
 Obtém a sobrecarga dos dados de valor longo.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public long cbLongValueOverhead { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int64](/dotnet/api/system.int64)  
+Tipo: [System.Int64](/dotnet/api/system.int64)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE estrutura](./jet-recsize-structure2.md)
 
-[Membros do JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membros](./jet-recsize-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

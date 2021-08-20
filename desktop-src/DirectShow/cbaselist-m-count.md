@@ -1,7 +1,7 @@
 ---
 description: Número de itens na lista.
 ms.assetid: 61ef047d-c7c7-4ec3-8853-7e2e6311fa36
-title: 'Membro CBaseList:: m_Count (Wxlist. h)'
+title: Membro CBaseList::m_Count (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 346ab62e868bbe4574903a5974bc64b9b4a63007
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54129fd4bb42f0388a875032b83933ffa59ba9ec0fc741952248c87259f20acf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787426"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119652506"
 ---
-# <a name="cbaselistm_count-member"></a>Membro de contagem CBaseList:: m \_
+# <a name="cbaselistm_count-member"></a>Membro de contagem CBaseList::m \_
 
 Número de itens na lista.
 
@@ -42,8 +42,8 @@ long m_Count;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxlist.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

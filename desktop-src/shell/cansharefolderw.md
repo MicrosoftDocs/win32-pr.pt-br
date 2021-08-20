@@ -1,5 +1,5 @@
 ---
-description: Usado para determinar se a opção compartilhar esta pasta deve ser mostrada na exibição da Web.
+description: Usado para determinar se a opção Compartilhar esta pasta deve ser mostrada na exibição da Web.
 title: Função CanShareFolderW
 ms.topic: reference
 ms.date: 05/31/2018
@@ -23,9 +23,9 @@ ms.locfileid: "119032864"
 ---
 # <a name="cansharefolderw-function"></a>Função CanShareFolderW
 
-\[essa função está disponível por meio do Windows XP com Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou indisponível nas versões subsequentes do Windows.\]
+\[Essa função está disponível por meio Windows XP com Service Pack 2 (SP2) e Windows Server 2003. Ele pode ser alterado ou não disponível nas versões subsequentes do Windows.\]
 
-Usado para determinar se a opção **compartilhar esta pasta** deve ser mostrada na exibição da Web.
+Usado para determinar se a opção **Compartilhar esta pasta deve ser** mostrada na exibição da Web.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,12 +42,12 @@ STDAPI CanShareFolderW(
 
 <dl> <dt>
 
-*pszPath* \[ no\]
+*pszPath* \[ Em\]
 </dt> <dd>
 
 Tipo: **LPCWSTR**
 
-Um ponteiro para uma cadeia de caracteres que especifica o caminho da pasta a ser testada.
+Um ponteiro para uma cadeia de caracteres que especifica o caminho da pasta a ser testado.
 
 </dd> </dl>
 
@@ -59,10 +59,10 @@ Os valores de retorno incluem o seguinte.
 
 
 
-| Código/valor de retorno                                                                        | Descrição                                                                           |
+| Valor/código de retorno                                                                        | Descrição                                                                           |
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>     | O caminho apontado por *pszPath* especifica uma pasta que pode ser compartilhada.<br/>    |
-| <dl> <dt>**\_falso**</dt> </dl>  | O caminho apontado por *pszPath* especifica uma pasta que não pode ser compartilhada.<br/> |
+| <dl> <dt>**S \_ FALSE**</dt> </dl>  | O caminho apontado por *pszPath* especifica uma pasta que não pode ser compartilhada.<br/> |
 | <dl> <dt>Erro HRESULT</dt> </dl> | Ocorreu um erro.<br/>                                                     |
 
 
@@ -71,7 +71,7 @@ Os valores de retorno incluem o seguinte.
 
 ## <a name="remarks"></a>Comentários
 
-Esta função não tem nenhum arquivo. lib associado. Você deve usar [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para usá-lo.
+Essa função não tem nenhum arquivo .lib associado. Você deve usar [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) para usá-lo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Esta função não tem nenhum arquivo. lib associado. Você deve usar [**LoadLib
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Ntshrui.dll</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **CanShareFolderW** (Unicode)<br/>                                               |
 

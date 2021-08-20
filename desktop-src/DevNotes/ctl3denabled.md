@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Ctl3d32.dll
-ms.openlocfilehash: d0eecec5650ecc00b69c0745e58a3e1d0f931a00
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d8a234736631517a0e77f5ab23f07688e3d80aa4c8b74a3b2ee51351beece90
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119654586"
 ---
 # <a name="ctl3denabled-function"></a>Função Ctl3dEnabled
 
@@ -43,7 +43,7 @@ Retornará **true** se os controles puderem usar efeitos 3D; caso contrário, re
 
 ## <a name="remarks"></a>Comentários
 
-No Windows 4,0 ou posterior, **Ctl3dEnabled** e [**Ctl3dRegister**](ctl3dregister.md) retornam **false**.
+no Windows 4,0 ou posterior, **Ctl3dEnabled** e [**Ctl3dRegister**](ctl3dregister.md) retornam **FALSE**.
 
 Esta função não tem biblioteca de importação ou arquivo de cabeçalho associado; Você deve chamá-lo usando as funções [**LoadLibrary**](/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) e [**GetProcAddress**](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) .
 

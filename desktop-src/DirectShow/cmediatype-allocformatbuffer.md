@@ -1,7 +1,7 @@
 ---
 description: O método AllocFormatBuffer aloca memória para o bloco de formato.
 ms.assetid: 5ff716c7-f9cf-4b1c-9d3a-62ab955c1392
-title: Método CMediaType. AllocFormatBuffer (mtype. h)
+title: Método CMediaType.AllocFormatBuffer (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: d6a9314fd06734adcc367b7be34dc8d6d1b9d996
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c53e739237f2d61a6c59c7fac96e1b97e6343fa6dd209bcf72700cefab7d599
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119073980"
 ---
-# <a name="cmediatypeallocformatbuffer-method"></a>Método CMediaType. AllocFormatBuffer
+# <a name="cmediatypeallocformatbuffer-method"></a>Método CMediaType.AllocFormatBuffer
 
 O `AllocFormatBuffer` método aloca memória para o bloco de formato.
 
@@ -49,15 +49,15 @@ Tamanho necessário para o bloco de formato, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um ponteiro para o novo bloco se for bem-sucedido. Caso contrário, retornará **NULL**.
+Retorna um ponteiro para o novo bloco se for bem-sucedido. Caso contrário, **retornará NULL.**
 
 ## <a name="remarks"></a>Comentários
 
-Se o método alocar um novo bloco de formato com êxito, ele liberará o bloco de formato existente. Se a alocação falhar, o método deixará o bloco de formato existente.
+Se o método alocar com êxito um novo bloco de formato, ele liberará o bloco de formato existente. Se a alocação falhar, o método deixará o bloco de formato existente.
 
-O método atualiza os membros **cbFormat** e **pbFormat** da estrutura **do \_ \_ tipo de mídia am** .
+O método atualiza os **membros cbFormat** e **pbFormat** da estrutura **AM MEDIA \_ \_ TYPE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ O método atualiza os membros **cbFormat** e **pbFormat** da estrutura **do \_ \
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Mtype. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Mtype.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: Evento KeyPress do objeto AxWindowsMediaPlayer
 description: O evento KeyPress ocorre quando uma tecla é pressionada e liberada. | Evento KeyPress do objeto AxWindowsMediaPlayer
 ms.assetid: 73ecd6f9-1b58-4e28-ad1b-2d930a235e1d
 keywords:
-- Evento KeyPress do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento KeyPress do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4a01e84b8f765d024c753d08211f3bb84e7f011
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 45b8022feacda910b28d68636c1abdcb2f6c1c9d3c2e799f762f25f5060b2b82
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105800165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119618786"
 ---
 # <a name="keypress-event-of-the-axwindowsmediaplayer-object"></a>Evento KeyPress do objeto AxWindowsMediaPlayer
 
@@ -41,13 +41,13 @@ Private Sub player_KeyPressEvent(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ KeyPressEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ KeyPressEvent**, que contém a seguinte propriedade relacionada a este evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ KeyPressEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ KeyPressEvent**, que contém a propriedade a seguir relacionada a esse evento.
 
 
 
 | Propriedade      | Descrição                                                                        |
 |---------------|------------------------------------------------------------------------------------|
-| **nKeyAscii** | System. Int16Specifies o código ANSI numérico padrão para o caractere.<br/> |
+| **nKeyAscii** | System.Int16 Especifica o código ANSI numérico padrão para o caractere.<br/> |
 
 
 
@@ -55,7 +55,7 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 
 ## <a name="remarks"></a>Comentários
 
-Esse evento ocorre quando o pressionamento de tecla resulta em qualquer caractere de teclado imprimível, a tecla CTRL combinada com um caractere do alfabeto padrão ou um de alguns caracteres especiais e a tecla ENTER ou Backspace.
+Esse evento ocorre quando o toque de tecla resulta em qualquer caractere de teclado imprimível, a tecla CTRL combinada com um caractere do alfabeto padrão ou um de alguns caracteres especiais e a tecla ENTER ou BACKSPACE.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,7 +63,7 @@ Esse evento ocorre quando o pressionamento de tecla resulta em qualquer caracter
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

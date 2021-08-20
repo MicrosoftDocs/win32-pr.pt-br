@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 63833382d5dcbd764c0139e74ef072c34b2c10ee
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 770ea34a4f77f150ef865da58051f1775fa773b14b39c5398dc67881d3dc4a26
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105764740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119621046"
 ---
 # <a name="imsrdpclientnonscriptable5remotemonitorcount-property"></a>Propriedade IMsRdpClientNonScriptable5:: RemoteMonitorCount
 

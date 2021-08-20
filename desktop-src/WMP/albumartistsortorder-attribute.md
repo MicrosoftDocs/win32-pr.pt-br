@@ -1,6 +1,6 @@
 ---
 title: Atributo AlbumArtistSortOrder
-description: O atributo AlbumArtistSortOrder é o valor a ser usado para classificar a coluna de artista do álbum na biblioteca.
+description: O atributo AlbumArtistSortOrder é o valor a ser usado para classificar a coluna Álbum de Música na biblioteca.
 ms.assetid: 5235728b-8d1c-4631-8125-c23648566841
 keywords:
 - Atributo AlbumArtistSortOrder Windows Media Player
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3bec4e67313ded718784051fb09762febd34d59
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0d3c4e4a1520cd9c7e4a1404203ccd0a15dfbffce8937fe74f477876b3e34f09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055394"
 ---
 # <a name="albumartistsortorder-attribute"></a>Atributo AlbumArtistSortOrder
 
-O atributo **AlbumArtistSortOrder** é o valor a ser usado para classificar a coluna de **artista do álbum** na biblioteca.
+O **atributo AlbumArtistSortOrder** é o valor a ser usado para classificar a coluna **Álbum de** Música na biblioteca.
 
 ## <a name="applies-to"></a>Aplica-se A
 
@@ -29,9 +29,9 @@ O atributo **AlbumArtistSortOrder** é o valor a ser usado para classificar a co
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado somente na biblioteca do.
+Esse atributo é armazenado somente na biblioteca.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,7 +39,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------|
-| Versão<br/> | Somente Windows Media Player 9 Series<br/> |
+| Versão<br/> | Windows Media Player série 9<br/> |
 
 
 

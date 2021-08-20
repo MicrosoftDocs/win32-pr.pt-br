@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Firewall_FirewallRules02_01
-description: A \_ classe FirewallRules02 01 do firewall do MDM \_ \_ é usada para definir as configurações do Windows Defender firewall.
+title: MDM_Firewall_FirewallRules02_01 classe
+description: A classe Firewall do Firewall do MDMRules02 01 é usada para \_ \_ definir as \_ configurações Windows Defender Firewall.
 ms.assetid: b09cbd98-152e-486c-acb5-4e1d83e5f8e2
 keywords:
-- Classe MDM_Firewall_FirewallRules02_01
-- Classe MDM_Firewall_FirewallRules02_01, descrita
+- MDM_Firewall_FirewallRules02_01 classe
+- MDM_Firewall_FirewallRules02_01 classe, descrita
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,18 +20,18 @@ api_type:
 - DllExport
 api_location:
 - DMWmiBridgeProv.dll
-ms.openlocfilehash: 494be18ece91e7a1776780542f988b80cb822e42
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d6a0f1c4337f64b93ca043e9f7d4d744516b37f9e5b13a471aec56bae4602feb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077230"
 ---
-# <a name="mdm_firewall_firewallrules02_01-class"></a>\_ \_ Classe FirewallRules02 01 do firewall \_ do MDM
+# <a name="mdm_firewall_firewallrules02_01-class"></a>Classe Firewall \_ \_ firewallRules02 \_ 01 do MDM
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A \_ classe FirewallRules02 01 do firewall do MDM \_ \_ é usada para definir as configurações do Windows Defender firewall.
+A classe Firewall do Firewall do MDMRules02 01 é usada para \_ \_ definir as \_ configurações Windows Defender Firewall.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -64,13 +64,13 @@ class MDM_Firewall_FirewallRules02_01
 
 ## <a name="members"></a>Membros
 
-A classe do **MDM \_ Firewall \_ FirewallRules02 \_ 01** tem estes tipos de membros:
+A **classe Firewall \_ \_ firewallRules02 \_ 01 do MDM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ FirewallRules02 \_ 01 do MDM firewall** tem essas propriedades.
+A **classe Firewall \_ \_ firewallRules02 \_ 01 do MDM** tem essas propriedades.
 
 <dl> <dt>
 
@@ -80,7 +80,7 @@ A **classe \_ \_ FirewallRules02 \_ 01 do MDM firewall** tem essas propriedades.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -91,7 +91,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -99,21 +99,21 @@ Tipo de acesso: leitura/gravação
 [EdgeTraversal](/windows/client-management/mdm/firewall-csp#edgetraversal)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-[Enabled](/windows/client-management/mdm/firewall-csp#enabled)
+[Habilitada](/windows/client-management/mdm/firewall-csp#enabled)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -124,7 +124,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 TBD
@@ -137,7 +137,7 @@ TBD
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 TBD
@@ -158,13 +158,13 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 </dd> <dt>
 
-[InterfaceType](/windows/client-management/mdm/firewall-csp#interfacetypes)
+[Interfacetypes](/windows/client-management/mdm/firewall-csp#interfacetypes)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -175,7 +175,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -186,7 +186,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -197,7 +197,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -208,12 +208,12 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -233,7 +233,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -244,7 +244,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -255,7 +255,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -266,7 +266,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -277,7 +277,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -288,10 +288,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                     |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                     |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                              |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                              |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl>  |
 
 
