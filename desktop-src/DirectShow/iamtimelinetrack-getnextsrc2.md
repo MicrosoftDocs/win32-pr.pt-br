@@ -1,7 +1,7 @@
 ---
-description: 'O método GetNextSrc2 pesquisa o roteiro para a próxima fonte que aparece na hora especificada ou posteriormente. Esse método é equivalente a IAMTimelineTrack:: GetNextSrc, mas usa um valor de REFTIME.'
+description: O método GetNextSrc2 pesquisa a faixa para a próxima fonte que aparece na hora especificada ou posterior. Esse método é equivalente a IAMTimelineTrack::GetNextSrc, mas obtém um valor REFTIME.
 ms.assetid: f3f7b000-ec73-4ae9-802b-a9bc6f1840b3
-title: 'Método IAMTimelineTrack:: GetNextSrc2 (QEdit. h)'
+title: Método IAMTimelineTrack::GetNextSrc2 (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: c934cfd6c4f58c5fca59e78e120fee89af3f73a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ca9b18ba6ddd56771ac738f0ff831e4ea284d995fb28582a578386321e7ef856
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105784022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154817"
 ---
-# <a name="iamtimelinetrackgetnextsrc2-method"></a>Método IAMTimelineTrack:: GetNextSrc2
+# <a name="iamtimelinetrackgetnextsrc2-method"></a>Método IAMTimelineTrack::GetNextSrc2
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `GetNextSrc2` método pesquisa a próxima fonte que aparece na hora especificada ou posteriormente. Esse método é equivalente a [**IAMTimelineTrack:: GetNextSrc**](iamtimelinetrack-getnextsrc.md), mas usa um valor de [**REFTIME**](reftime.md) .
+O `GetNextSrc2` método pesquisa a faixa para a próxima origem que aparece na hora especificada ou posterior. Esse método é equivalente a [**IAMTimelineTrack::GetNextSrc,**](iamtimelinetrack-getnextsrc.md)mas obtém um [**valor REFTIME.**](reftime.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,33 +46,33 @@ HRESULT GetNextSrc2(
 
 <dl> <dt>
 
-*ppSrc* \[ fora\]
+*ppSrc* \[ out\]
 </dt> <dd>
 
 Recebe um ponteiro para a interface [**IAMTimelineObj**](iamtimelineobj.md) do objeto de origem.
 
 </dd> <dt>
 
-*Aquecimento* 
+*Pinagem* 
 </dt> <dd>
 
-Na entrada, contém a hora de início da pesquisa, em segundos. Se o método recuperar uma origem, ele definirá o valor para a hora de parada da origem. Se o método não recuperar uma origem, o valor se tornará inválido e o aplicativo não deverá usá-la.
+Na entrada, contém a hora de início da pesquisa, em segundos. Se o método recuperar uma origem, ele define o valor para a hora de parada da origem. Se o método não recuperar uma origem, o valor se tornará inválido e o aplicativo não deverá usá-lo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará S \_ OK se o método recuperar uma origem, ou S \_ false caso contrário.
+Retornará S \_ OK se o método recuperar uma origem ou S FALSE caso \_ contrário.
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -82,8 +82,8 @@ Retornará S \_ OK se o método recuperar uma origem, ou S \_ false caso contrá
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Retornará S \_ OK se o método recuperar uma origem, ou S \_ false caso contrá
 
 <dl> <dt>
 
-[**Interface IAMTimelineTrack**](iamtimelinetrack.md)
+[**IAMTimelineTrack Interface**](iamtimelinetrack.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

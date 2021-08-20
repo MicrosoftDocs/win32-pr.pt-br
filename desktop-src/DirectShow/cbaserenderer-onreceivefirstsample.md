@@ -1,7 +1,7 @@
 ---
-description: O método OnReceiveFirstSample é chamado quando o filtro recebe um exemplo enquanto está em pausa.
+description: O método OnReceiveFirstSample é chamado quando o filtro recebe uma amostra enquanto está em pausa.
 ms.assetid: 5bd481bf-a62d-4d3c-b875-b94298d12730
-title: Método CBaseRenderer. OnReceiveFirstSample (Renbase. h)
+title: Método CBaseRenderer.OnReceiveFirstSample (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 2368b0e2abda3bcdd08872d730f8b9902dad43ac
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 882a356f47aa146ec8ba1b06d7af43235c8213334c0d82d0a241c590654bf2a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118157696"
 ---
-# <a name="cbaserendereronreceivefirstsample-method"></a>Método CBaseRenderer. OnReceiveFirstSample
+# <a name="cbaserendereronreceivefirstsample-method"></a>Método CBaseRenderer.OnReceiveFirstSample
 
 O `OnReceiveFirstSample` método é chamado quando o filtro recebe um exemplo enquanto está em pausa.
 
@@ -45,19 +45,19 @@ virtual void OnReceiveFirstSample(
 *pMediaSample* 
 </dt> <dd>
 
-Ponteiro para a interface [**IMediaSample**](/windows/desktop/api/Strmif/nn-strmif-imediasample) do exemplo.
+Ponteiro para a interface [**IMediaSample do**](/windows/desktop/api/Strmif/nn-strmif-imediasample) exemplo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-O método [**CBaseRenderer:: Receive**](cbaserenderer-receive.md) chama esse método. Ele não faz nada na classe base, mas a classe derivada pode substituí-la. Esse método destina-se principalmente a renderizadores de vídeo. Quando um processador de vídeo é pausado, ele normalmente exibe a primeira amostra como uma imagem ainda.
+O [**método CBaseRenderer::Receive**](cbaserenderer-receive.md) chama esse método. Ele não faz nada na classe base, mas a classe derivada pode substituí-la. Esse método destina-se principalmente a renderadores de vídeo. Quando um renderador de vídeo é pausado, ele normalmente exibe o primeiro exemplo como uma imagem ainda.
 
-Procurar o grafo enquanto estiver em pausa também faz com que esse método seja chamado.
+Buscar o grafo enquanto está em pausa também faz com que esse método seja chamado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Procurar o grafo enquanto estiver em pausa também faz com que esse método seja
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

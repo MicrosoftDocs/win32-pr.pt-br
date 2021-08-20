@@ -1,11 +1,11 @@
 ---
-title: Atributo RID-Available-Pool
-description: O espaço do qual os Pools RID são alocados.
+title: RID-disponível-atributo de pool
+description: O espaço do qual os pools RID são alocados.
 ms.assetid: abb6218f-def2-4a38-964f-3f0ee6c6f917
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo RID-Available-Pool
-- Esquema do AD do atributo rIDAvailablePool
+- RID-disponível-esquema de AD do atributo de pool
+- Esquema de AD do atributo rIDAvailablePool
 topic_type:
 - apiref
 api_name:
@@ -21,21 +21,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118423582"
 ---
-# <a name="rid-available-pool-attribute"></a>Atributo RID-Available-Pool
+# <a name="rid-available-pool-attribute"></a>RID-disponível-atributo de pool
 
-O espaço do qual os Pools RID são alocados.
+O espaço do qual os pools RID são alocados.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | RID-Available-Pool                   |
-| Ldap-Display-Name | rIDAvailablePool                     |
+| CN                | RID-disponível-pool                   |
+| LDAP-Display-Name | rIDAvailablePool                     |
 | Tamanho              | 8 bytes                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.     |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.370               |
-| System-Id-Guid    | 6617188-8f3c-11d0-afda-00c04fd930c9 |
+| System-ID-GUID    | 66171888-8f3c-11d0-afda-00c04fd930c9 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -58,15 +58,15 @@ O espaço do qual os Pools RID são alocados.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| Tem valor único       | Verdadeiro                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No Catálogo Global      | Falso                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                   |
+| No catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Classes usadas em        | [**Gerenciador de RID**](c-ridmanager.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O espaço do qual os Pools RID são alocados.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| Tem valor único       | Verdadeiro                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No Catálogo Global      | Falso                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                   |
+| No catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Classes usadas em        | [**Gerenciador de RID**](c-ridmanager.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O espaço do qual os Pools RID são alocados.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| Tem valor único       | Verdadeiro                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No Catálogo Global      | Falso                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                   |
+| No catálogo global      | Falso                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Classes usadas em        | [**Gerenciador de RID**](c-ridmanager.md)<br/> |
 
 
 

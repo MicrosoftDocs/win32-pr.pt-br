@@ -35,12 +35,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 67402dd88211ae46c081c0b9e85e7a12b5379bb8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 36dd8a6b673ccdde6ff283d5b0ae58eb38540aeed12cc3ff095a2df2fe8a0b52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113879"
 ---
 # <a name="gopher-type-values"></a>Valores de tipo Gopher
 
@@ -336,7 +336,7 @@ Servidor TN3270.
 
 </dt> </dl> </dd> <dt>
 
-<span id="GOPHER_TYPE_UNIX_UUENCODED"></span><span id="gopher_type_unix_uuencoded"></span>**tipo de GOPHER \_ \_ Unix \_ UUEncoded**
+<span id="GOPHER_TYPE_UNIX_UUENCODED"></span><span id="gopher_type_unix_uuencoded"></span>**\_tipo GOPHER \_ UNIX \_ uuencoded**
 </dt> <dd> <dl> <dt>
 
 0x00000040
@@ -365,7 +365,7 @@ O tipo de item é desconhecido.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. para implementações de servidor ou serviços, use [o Microsoft Windows HTTP services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
 
  
 
@@ -379,7 +379,7 @@ O tipo de item é desconhecido.
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                |
 | Fim do suporte do servidor<br/>    | Windows Server 2003 R2<br/>                                                    |
-| parâmetro<br/>                   | <dl> <dt>WinInet. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WinInet. h</dt> </dl> |
 
 
 

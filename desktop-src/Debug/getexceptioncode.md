@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 3b87b77ddb2d2e2af3a22e30d1204cf178ee6981
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5c1badd5317b5a12eb97ed6418873b5c576f520f4a8106361abb1a6f7c95921e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756223"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162657"
 ---
 # <a name="getexceptioncode-macro"></a>Macro GetExceptionCode
 
@@ -41,7 +41,7 @@ DWORD GetExceptionCode(void);
 
 Esta macro não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno identifica o tipo de exceção. A tabela a seguir identifica os códigos de exceção que podem ocorrer devido a erros comuns de programação. Esses valores são definidos em WinBase. h e WinNT. h.
 
@@ -99,8 +99,8 @@ Para obter um exemplo, consulte [usando um manipulador de exceção](using-an-ex
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 

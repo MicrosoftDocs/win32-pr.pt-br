@@ -1,21 +1,21 @@
 ---
-description: Obtenha informações sobre o parâmetro JobErrorSheetSource. Este tópico não é atual. Para obter as informações mais atuais, consulte a especificação do esquema de impressão.
+description: Obter informações sobre o parâmetro JobErrorSheetSource. Este tópico não é atual. Para obter as informações mais atuais, consulte a Especificação de Esquema de Impressão.
 ms.assetid: 6de13ed8-bf15-4e2c-b42a-ea8178a6b5f9
 title: JobErrorSheetSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 656d71422c46800d6155c1dea1e221f9c6dfe021
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: b63ab692dac2ab74e571ce39ba91148c5b8c808144a7b1cce61f28c0e4ea049d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034124"
 ---
 # <a name="joberrorsheetsource"></a>JobErrorSheetSource
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Especifica a origem de uma planilha de erros personalizada.
+Especifica a origem de uma folha de erros personalizada.
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo da estrutura](#structure-content)
@@ -27,8 +27,8 @@ Especifica a origem de uma planilha de erros personalizada.
 | Nome | Valor |
 |----------------------------|--------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                    |
-| Prefixo de escopo <br/> | Documento<br/>                        |
-| Observações <br/>          | Vinculado ao elemento JobErrorSheet<br/> |
+| Prefixo de definição de scoping <br/> | Documento<br/>                        |
+| Observações <br/>          | Elemento Linked to JobErrorSheet<br/> |
 
 
 
@@ -72,9 +72,9 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 | Tipo de dados<br/>     | string<br/>  | xs:string<br/>       |
 | DefaultValue<br/> | string<br/>  | não definido<br/>       |
 | MaxLength<br/>    | Número inteiro<br/> | não definido<br/>       |
-| MinLength<br/>    | integer<br/> | 1<br/>               |
-| Obrigatório<br/>    | string<br/>  | PSK: condicional<br/> |
-| UnitType<br/>     | string<br/>  | characters<br/>      |
+| Minlength<br/>    | integer<br/> | 1<br/>               |
+| Obrigatório<br/>    | string<br/>  | psk:Conditional<br/> |
+| Unittype<br/>     | string<br/>  | characters<br/>      |
 
 
 

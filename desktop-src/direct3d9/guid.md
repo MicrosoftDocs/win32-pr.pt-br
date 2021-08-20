@@ -4,12 +4,12 @@ ms.assetid: dbfdd307-310f-4c80-b4aa-f16a81a9a372
 title: GUID (DirectX 9)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e83e45d6e993153cf293a2ad55080c74f2e6049d
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 57869992cc080be77cde5f065a895698c7983989f6268df09e0aa2714930f059
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104500395"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094713"
 ---
 # <a name="guid-directx-9"></a>GUID (DirectX 9)
 
@@ -26,12 +26,12 @@ template Guid
 } 
 ```
 
-Onde os parâmetros formam o formato de armazenamento binário para um GUID:
+Em que os parâmetros juntos formam o formato de armazenamento binário para um GUID:
 
--   valor de dados inteiros sem sinal de data1-32-bit
--   o valor de dados inteiros sem sinal de data2 de 16 bits
--   data3-valor de dados inteiros sem sinal de 16 bits
--   data4-uma matriz de caracteres não assinados
+-   data1 – valor de dados inteiro sem sinal de 32 bits
+-   data2 – valor de dados inteiro sem sinal de 16 bits
+-   data3 – valor de dados inteiro sem sinal de 16 bits
+-   data4 – uma matriz de caracteres não assinados
 
 ## <a name="see-also"></a>Confira também
 

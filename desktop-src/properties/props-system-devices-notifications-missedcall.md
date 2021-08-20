@@ -1,17 +1,17 @@
 ---
 description: Notificação de chamada perdida do dispositivo.
 ms.assetid: 4d583dea-edcf-4f1b-81e2-f2a57ce3d503
-title: System. Devices. Notifications. MissedCall
+title: System.Devices.Notifications.MissedCall
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9b474cd8efdeaeb582d22560f458ebe2c2737eac
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3134f6caf40a75def70a3d13b45e3dcea47f7eb5729201b94193c4c4f4790503
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119845496"
 ---
-# <a name="systemdevicesnotificationsmissedcall"></a>System. Devices. Notifications. MissedCall
+# <a name="systemdevicesnotificationsmissedcall"></a>System.Devices.Notifications.MissedCall
 
 Notificação de chamada perdida do dispositivo.
 
@@ -63,13 +63,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -78,19 +78,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -105,7 +105,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -4,12 +4,12 @@ ms.assetid: 29280a02-1c26-4b54-8468-707dd96dea1d
 title: Iluminação difusa (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f51e45093786348aaa115ec38c420acec471f718
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 9906742b47b959336fd882748388a2f10776b6adb06eb98bc23effb6576793be
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675748"
 ---
 # <a name="diffuse-lighting-direct3d-9"></a>Iluminação difusa (Direct3D 9)
 
@@ -21,7 +21,7 @@ Iluminação difusa = soma \[ C<sub>d</sub> \* L<sub>d</sub> \* (N<sup>.</sup> L
 
 
 
-| Parâmetro       | Valor padrão | Tipo          | Description                                                                                                   |
+| Parâmetro       | Valor padrão | Tipo          | Descrição                                                                                                   |
 |-----------------|---------------|---------------|---------------------------------------------------------------------------------------------------------------|
 | Sum             | N/D           | N/D           | Referência de cada componente difuso da luz.                                                                  |
 | C<sub>d</sub>   | (0,0,0,0)     | D3DCOLORVALUE | Cor difusa.                                                                                                |

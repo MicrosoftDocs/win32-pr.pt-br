@@ -1,12 +1,12 @@
 ---
-title: Método EnvironmentVariables da Win32_TSExpandEnvironmentVariables classe
-description: Expande variáveis de ambiente definidas pelo sistema. | Método EnvironmentVariables da Win32_TSExpandEnvironmentVariables classe
+title: Método EnvironmentVariables da classe Win32_TSExpandEnvironmentVariables
+description: Expande variáveis de ambiente definidas pelo sistema. | Método EnvironmentVariables da classe Win32_TSExpandEnvironmentVariables
 ms.assetid: eff0dcdf-ef98-4730-9b0c-4f44250a607b
 ms.tgt_platform: multiple
 keywords:
-- Método EnvironmentVariables Serviços de Área de Trabalho Remota
-- Método EnvironmentVariables Serviços de Área de Trabalho Remota , Win32_TSExpandEnvironmentVariables classe
-- Win32_TSExpandEnvironmentVariables classe Serviços de Área de Trabalho Remota , método EnvironmentVariables
+- Serviços de Área de Trabalho Remota do método EnvironmentVariables
+- Método EnvironmentVariables Serviços de Área de Trabalho Remota, classe Win32_TSExpandEnvironmentVariables
+- Classe Win32_TSExpandEnvironmentVariables Serviços de Área de Trabalho Remota, método EnvironmentVariables
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118353888"
 ---
-# <a name="environmentvariables-method-of-the-win32_tsexpandenvironmentvariables-class"></a>Método EnvironmentVariables da classe \_ Win32 TSExpandEnvironmentVariables
+# <a name="environmentvariables-method-of-the-win32_tsexpandenvironmentvariables-class"></a>Método EnvironmentVariables da classe Win32 \_ TSExpandEnvironmentVariables
 
 Expande variáveis de ambiente definidas pelo sistema.
 
@@ -44,14 +44,14 @@ uint32 EnvironmentVariables(
 
 <dl> <dt>
 
-*OriginalString* \[ Em\]
+*OriginalString* \[ no\]
 </dt> <dd>
 
-Uma cadeia de caracteres que contém as variáveis de ambiente a expandir.
+Uma cadeia de caracteres que contém as variáveis de ambiente a serem expandidas.
 
 </dd> <dt>
 
-*ExpandedString* \[ out\]
+*Expandedstring* \[ fora\]
 </dt> <dd>
 
 Uma cadeia de caracteres com as variáveis de ambiente expandidas.
@@ -62,7 +62,7 @@ Uma cadeia de caracteres com as variáveis de ambiente expandidas.
 
 Você deve ser um membro do grupo Administradores para chamar esse método.
 
-arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -72,8 +72,8 @@ arquivos Managed Object Format (MOF) contêm as definições para classes WMI (I
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
-| MOF<br/>                      | <dl> <dt>Tsallow.mof</dt> </dl>  |
+| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
+| MOF<br/>                      | <dl> <dt>Tsallow. mof</dt> </dl>  |
 | DLL<br/>                      | <dl> <dt>TsPubWmi.dll</dt> </dl> |
 
 
@@ -82,7 +82,7 @@ arquivos Managed Object Format (MOF) contêm as definições para classes WMI (I
 
 <dl> <dt>
 
-[**Win32 \_ TSExpandEnvironmentVariables**](win32-tsexpandenvironmentvariables.md)
+[**\_TSExpandEnvironmentVariables Win32**](win32-tsexpandenvironmentvariables.md)
 </dt> </dl>
 
  

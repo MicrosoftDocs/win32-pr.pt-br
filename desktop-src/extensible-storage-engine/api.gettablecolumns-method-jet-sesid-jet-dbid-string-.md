@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. GetTableColumns (JET_SESID, JET_DBID, Cadeia de caracteres)'
-title: Método API. GetTableColumns (JET_SESID, JET_DBID, String)
+description: 'Saiba mais sobre: Método Api.GetTableColumns (JET_SESID, JET_DBID, Cadeia de Caracteres)'
+title: Método Api.GetTableColumns (JET_SESID, JET_DBID, Cadeia de Caracteres)
 TOCTitle: GetTableColumns method (JET_SESID, JET_DBID, String)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.GetTableColumns(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,System.String)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.gettablecolumns(v=EXCHG.10)
@@ -20,19 +20,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 68a05ee3d0887f4396df0b2ba3159737791c413d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c2e04518ab4565e4b53ffa247f65b9f7ea26b944c129d9d20b6fa7f202de752
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501233"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118085485"
 ---
-# <a name="apigettablecolumns-method-jet_sesid-jet_dbid-string"></a>Método API. GetTableColumns (JET_SESID, JET_DBID, String)
+# <a name="apigettablecolumns-method-jet_sesid-jet_dbid-string"></a>Método Api.GetTableColumns (JET_SESID, JET_DBID, Cadeia de Caracteres)
 
-Itera sobre todas as colunas na tabela, retornando informações sobre cada uma delas.
+Itera em todas as colunas na tabela, retornando informações sobre cada uma delas.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,27 +64,27 @@ public static IEnumerable<ColumnInfo> GetTableColumns(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     O banco de dados que contém a tabela.
 
 <!-- end list -->
 
   - tablename  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     O nome da tabela.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Collections. Generic. IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<[ColumnInfo](./columninfo-class.md)\>  
+Tipo: [System.Collections.Generic.IEnumerable](/dotnet/api/system.collections.generic.ienumerable-1)\<[ColumnInfo](./columninfo-class.md)\>  
 Um iterador sobre ColumnInfo para cada coluna na tabela.  
 
 ## <a name="see-also"></a>Confira também
@@ -95,6 +95,6 @@ Um iterador sobre ColumnInfo para cada coluna na tabela.
 
 [Membros da API](./api-members.md)
 
-[Sobrecarga de GetTableColumns](./api.gettablecolumns-method.md)
+[Sobrecarga GetTableColumns](./api.gettablecolumns-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

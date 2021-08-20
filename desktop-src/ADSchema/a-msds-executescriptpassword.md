@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DS-ExecuteScriptPassword
-description: Usado durante a renomeção de domínio. Esse valor não pode ser gravado nem lido usando LDAP.
+title: atributo ms-DS-ExecuteScriptPassword
+description: Usado durante a renomeação do domínio. Esse valor não pode ser gravado ou lido usando o LDAP.
 ms.assetid: 381c3676-0a11-4e53-8093-f04dbf156250
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo ms-DS-ExecuteScriptPassword
-- Esquema do AD do atributo msDS-ExecuteScriptPassword
+- Esquema de AD do atributo ms-DS-ExecuteScriptPassword
+- atributo msDS-ExecuteScriptPassword do AD Schema
 topic_type:
 - apiref
 api_name:
@@ -21,29 +21,29 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118426749"
 ---
-# <a name="ms-ds-executescriptpassword-attribute"></a>Atributo ms-DS-ExecuteScriptPassword
+# <a name="ms-ds-executescriptpassword-attribute"></a>atributo ms-DS-ExecuteScriptPassword
 
-Usado durante a renomeção de domínio. Esse valor não pode ser gravado nem lido usando LDAP.
+Usado durante a renomeação do domínio. Esse valor não pode ser gravado ou lido usando o LDAP.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | ms-DS-ExecuteScriptPassword                           |
-| Ldap-Display-Name | msDS-ExecuteScriptPassword                            |
+| LDAP-Display-Name | msDS-ExecuteScriptPassword                            |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                      |
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1783                               |
-| System-Id-Guid    | 9d054a5a-d187-46c1-9d85-42dfc44a56dd                  |
-| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
+| System-ID-GUID    | 9d054a5a-d187-46c1-9d85-42dfc44a56dd                  |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
 ## <a name="implementations"></a>Implementações
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**Adam**](#adam)
+-   [**ADAM**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ Usado durante a renomeção de domínio. Esse valor não pode ser gravado nem li
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Verdadeiro                                                          |
-| Tem valor único       | Verdadeiro                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No Catálogo Global      | Falso                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
+| No catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 64                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000011                                                    |
-| Classes usadas em        | [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> |
+| Classes usadas em        | [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> |
 
 
 
-## <a name="adam"></a>Adam
+## <a name="adam"></a>ADAM
 
 
 
@@ -79,15 +79,15 @@ Usado durante a renomeção de domínio. Esse valor não pode ser gravado nem li
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Verdadeiro                                                          |
-| Tem valor único       | Verdadeiro                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No Catálogo Global      | Falso                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
+| No catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 64                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000011                                                    |
-| Classes usadas em        | [**Cross-Ref-Container**](c-crossrefcontainer.md)<br/> |
+| Classes usadas em        | [**Entre referências-contêiner**](c-crossrefcontainer.md)<br/> |
 
 
 
@@ -100,10 +100,10 @@ Usado durante a renomeção de domínio. Esse valor não pode ser gravado nem li
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Verdadeiro                                                          |
-| Tem valor único       | Verdadeiro                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No Catálogo Global      | Falso                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
+| No catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
 | Range-Lower            | 0                                                             |
 | Range-Upper            | 64                                                            |
 | Search-Flags           | 0x00000000                                                    |

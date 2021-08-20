@@ -3,7 +3,7 @@ title: Mensagem de TB_MOVEBUTTON (commctrl. h)
 description: Move um botão de um índice para outro.
 ms.assetid: 030aedc5-2de5-4751-90b2-63794322f503
 keywords:
-- Controles de TB_MOVEBUTTON de mensagens do Windows
+- controles de Windows de mensagem de TB_MOVEBUTTON
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8dac4cd303e895998b12e710910432ba2c38b230
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 857592f852b21d656be2a4ad5b59f691db9ac391f66960b98a70db138ea69f2b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086011"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168036"
 ---
 # <a name="tb_movebutton-message"></a>TB de \_ mensagem MOVEBUTTON
 
@@ -43,7 +43,7 @@ Move um botão de um índice para outro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -53,9 +53,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

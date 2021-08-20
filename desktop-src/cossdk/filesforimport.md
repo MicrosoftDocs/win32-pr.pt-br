@@ -23,27 +23,27 @@ ms.locfileid: "118307323"
 
 Recupera informações para aplicativos que são importados.
 
-Essa coleção dá suporte [**aos métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
+Esta coleção dá suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
 
 ## <a name="members"></a>Membros
 
-A **coleção FilesForImport** herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
+A coleção **FilesForImport** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
 Você pode navegar desta coleção para qualquer uma das seguintes coleções:
 
 -   [**ErrorInfo**](errorinfo.md)
--   [**Propertyinfo**](propertyinfo.md)
+-   [**PropertyInfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 Você pode navegar até essa coleção das seguintes coleções:
 
--   [**Raiz**](root.md)
+-   [**Básica**](root.md)
 
 ## <a name="properties"></a>Propriedades
 
-As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
+As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
 
 -   [ApplicationFileName](#applicationfilename)
 -   [ApplicationName](#applicationname)
@@ -53,7 +53,7 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 -   [IsProxy](#isproxy)
 -   [IsService](#isservice)
 -   [PartitionDescription](#partitiondescription)
--   [Partitionid](#partitionid)
+-   [PartitionID](#partitionid)
 -   [PartitionName](#partitionname)
 
 ### <a name="applicationfilename"></a>ApplicationFileName
@@ -110,7 +110,7 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O nome do arquivo DLL ou EXE que contém o aplicativo. Essa propriedade é retornada quando [**o método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key ou [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto dessa coleção. |
+| Descrição    | O nome do arquivo DLL ou EXE que contém o aplicativo. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) ou [**nome**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
 | Access         | ReadOnly                                                                                                                                                                                                                              |
 | Type           | String                                                                                                                                                                                                                                |
 | Padrão        | ""                                                                                                                                                                                                                                    |
@@ -126,7 +126,7 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
 | Entrada | Valor |
 |----------------|--------------------------------------------------|
-| Descrição    | Indica se o aplicativo tem usuários. |
+| Descrição    | Indica se o aplicativo tem algum usuário. |
 | Access         | ReadOnly                                         |
 | Tipo           | Bool                                             |
 | Padrão        | Falso                                            |
@@ -184,7 +184,7 @@ As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](coma
 
  
 
-### <a name="partitionid"></a>PartitionID
+### <a name="partitionid"></a>Partitionid
 
 
 

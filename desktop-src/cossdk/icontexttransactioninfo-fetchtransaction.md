@@ -1,7 +1,7 @@
 ---
-description: Recupera a transação ou o proxy de transação que está associado ao contexto atual, se houver.
+description: Recupera a transação ou o proxy de transação associado ao contexto atual, se for o caso.
 ms.assetid: 2f85f395-3ec5-4c5a-a6db-c902cb8f8486
-title: 'Método IContextTransactionInfo:: FetchTransaction'
+title: Método IContextTransactionInfo::FetchTransaction
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 0e753974f93539f051465f13a1ea92d7e0e3bfa1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6d673483118feb02ec2f1172640b9972d883505f48bc1fd8d8803844b963b02b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089312"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119991056"
 ---
-# <a name="icontexttransactioninfofetchtransaction-method"></a>Método IContextTransactionInfo:: FetchTransaction
+# <a name="icontexttransactioninfofetchtransaction-method"></a>Método IContextTransactionInfo::FetchTransaction
 
-Recupera a transação ou o proxy de transação que está associado ao contexto atual, se houver.
+Recupera a transação ou o proxy de transação associado ao contexto atual, se for o caso.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,16 +38,16 @@ HRESULT FetchTransaction(
 
 <dl> <dt>
 
-*punk* \[ out, retval\]
+*pUnk* \[ out, retval\]
 </dt> <dd>
 
-A transação ou o proxy de transação que está associado ao contexto atual; caso contrário, **NULL**.
+O proxy de transação ou transação associado ao contexto atual; caso contrário, **NULL.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método pode retornar os valores de retorno padrão E \_ INVALIDARG, e \_ OUTOFMEMORY, e \_ inesperado, e S \_ OK.
+Esse método pode retornar os valores de retorno padrão E \_ INVALIDARG, E \_ OUTOFMEMORY, E \_ UNEXPECTED e S \_ OK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,8 +55,8 @@ Esse método pode retornar os valores de retorno padrão E \_ INVALIDARG, e \_ O
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/>          |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com aplicativos da área de trabalho SP1 \[\]<br/> |
 
 
 

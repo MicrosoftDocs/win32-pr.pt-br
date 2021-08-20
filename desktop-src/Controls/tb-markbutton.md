@@ -3,7 +3,7 @@ title: Mensagem de TB_MARKBUTTON (commctrl. h)
 description: Define o estado de realce de um determinado botão em um controle ToolBar.
 ms.assetid: cba0e2d2-40a7-4e20-a1ef-d5f5444c96d9
 keywords:
-- Controles de TB_MARKBUTTON de mensagens do Windows
+- controles de Windows de mensagem de TB_MARKBUTTON
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9d42983f5fb0ef6e62716cefa2fa8db4fca87fa4
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1af7ba20ed9ce3d1b289c0c28db8fc40c476dd99f4ffb1af1af28692c44cab1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168017"
 ---
 # <a name="tb_markbutton-message"></a>TB de \_ mensagem MARKBUTTON
 
@@ -45,7 +45,7 @@ O [**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85)) deve
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -55,9 +55,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

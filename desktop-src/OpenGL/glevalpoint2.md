@@ -1,9 +1,9 @@
 ---
-title: função glEvalPoint2 (GL. h)
-description: As funções glEvalPoint1 e glEvalPoint2 geram e avaliam um único ponto em uma malha. | função glEvalPoint2 (GL. h)
+title: Função glEvalPoint2 (Gl.h)
+description: As funções glEvalPoint1 e glEvalPoint2 geram e avaliam um único ponto em uma malha. | Função glEvalPoint2 (Gl.h)
 ms.assetid: babae9c7-84a8-4a7e-b6f9-97c4e8bd42fe
 keywords:
-- função glEvalPoint2 OpenGL
+- Função glEvalPoint2 OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5fafe728249f988462b0929873bbb195fed1e7c9
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6f0c188ec5f3e8171b8035e58b235bc0c5942e221d6d85a6dd4e5a8ff1786c80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105779972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119675556"
 ---
-# <a name="glevalpoint2-function"></a>função glEvalPoint2
+# <a name="glevalpoint2-function"></a>Função glEvalPoint2
 
-As funções [**glEvalPoint1**](glevalpoint.md) e **glEvalPoint2** geram e avaliam um único ponto em uma malha.
+As [**funções glEvalPoint1**](glevalpoint.md) **e glEvalPoint2** geram e avaliam um único ponto em uma malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,14 +44,14 @@ void glEvalPoint2(
 *i* 
 </dt> <dd>
 
-O valor inteiro para a variável de domínio de grade *i*.
+O valor inteiro da variável de domínio de grade *i*.
 
 </dd> <dt>
 
-*j* 
+*J* 
 </dt> <dd>
 
-O valor inteiro para a variável de domínio de grade *j* .
+O valor inteiro da variável de domínio de *grade j.*
 
 </dd> </dl>
 
@@ -61,37 +61,37 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-As funções [**glMapGrid**](glmapgrid-functions.md) e [**glEvalMesh**](glevalmesh-functions.md) são usadas em conjunto para gerar e avaliar com eficiência uma série de valores de domínio de mapa com espaçamento uniforme. Você pode usar **glEvalPoint** para avaliar um único ponto de grade no mesmo gridspace que é percorrido pelo **glEvalMesh**. Chamar [**glEvalPoint1**](glevalpoint.md) é equivalente a chamar
+As [**funções glMapGrid**](glmapgrid-functions.md) e [**glEvalMesh**](glevalmesh-functions.md) são usadas em tandem para gerar e avaliar com eficiência uma série de valores de domínio de mapa com espalismo de maneira eficiente. Você pode usar **glEvalPoint para** avaliar um único ponto de grade no mesmo espaço de grade que é percorrido por **glEvalMesh.** Chamar [**glEvalPoint1**](glevalpoint.md) é equivalente a chamar
 
-**glEvalCoord1** (*i* ?*u*  + *u* 1);
+**glEvalCoord1** (*i* ?*u*  + *u* 1 );
 
 onde
 
-? *u* = (*u* 2 *u* 1)/*n*
+? *u* = (*u* 2 *u* 1 )/*n*
 
-e *n*, *u* 1 e *u* 2 são os argumentos para a função **glMapGrid1** mais recente. O requisito numérico absoluto é que, se *eu*  =  *n*, o valor calculado de (*i* ?*u* + U1) é exatamente *u* 2.
+e *n*, *u* 1 e *u* 2 são os argumentos para a função **glMapGrid1 mais** recente. O único requisito numérico absoluto é que, se *i*  =  *n*, o valor calculado de (*i* ?*u* + u1 ) é exatamente *u* 2 .
 
-No caso bidimensional, **glEvalPoint2**, Let
+No caso bidimensional, **glEvalPoint2**, vamos
 
-? *u* = (*u* 2 *u* 1)/*n*
+? *u* = (*u* 2 *u* 1 )/*n*
 
-? *v* = (*v* 2 *v* 1)/*m*
+? *v* = (*v* 2 *v* 1 )/*m*
 
-onde *n*, *u* 1, *u* 2, *m*, *v* 1 e *v* 2 são os argumentos para a função **glMapGrid2** mais recente. Em seguida, a função **glEvalPoint2** é equivalente a chamar
+em *que n*, *u* 1 , *u* 2 , *m*, *v* 1 e *v* 2 são os argumentos para a função **glMapGrid2 mais** recente. Em **seguida, a função glEvalPoint2** é equivalente a chamar
 
-**glEvalCoord2** (*i* ?*u*  +  *u* 1, *j* ?*v*  +  *v* 1);
+**glEvalCoord2** (*i* ?*u*  +  *u* 1 , *j* ?*v*  +  *v* 1 );
 
-Os únicos requisitos numéricos absolutos são que, se *eu* = *n*, o valor calculado de (*i* ?*u*  +  *u* 1) é exatamente U2 e, se *j*  =  *m*, o valor calculado de (*j* ?*v*  +  *v* 1) é exatamente *v* 2.
+Os únicos requisitos numéricos absolutos são que, se *i* = *n*, o valor calculado de (*i* ?*u*  +  *u* 1 ) é exatamente u2 e, se *j*  =  *m*, o valor computado de (*j* ?*v*  +  *v* 1 ) é exatamente *v* 2.
 
-As funções a seguir recuperam informações relacionadas a [**glEvalPoint1**](glevalpoint.md) e **glEvalPoint2**:
+As funções a seguir recuperam informações relacionadas [**a glEvalPoint1**](glevalpoint.md) e **glEvalPoint2:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ MAP1 \_ grade \_ Domain
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ MAP1 \_ GRID \_ DOMAIN
 
-**glGet** com o argumento GL \_ map2 \_ grade \_ Domain
+**glGet** com o argumento GL \_ MAP2 \_ GRID \_ DOMAIN
 
-**glGet** com os segmentos de grade Argument GL \_ MAP1 \_ \_
+**glGet** com o argumento GL \_ MAP1 \_ GRID \_ SEGMENTS
 
-**glGet** com os segmentos de grade Argument GL \_ map2 \_ \_
+**glGet** com o argumento GL \_ MAP2 \_ GRID \_ SEGMENTS
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,8 +101,8 @@ As funções a seguir recuperam informações relacionadas a [**glEvalPoint1**](
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

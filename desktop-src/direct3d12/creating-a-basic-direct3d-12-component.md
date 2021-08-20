@@ -6,23 +6,23 @@ ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
 ms.custom: project-verbatim
-ms.openlocfilehash: d0c7ead9ce67ee23a0668304a006d6cd67fb3d67
-ms.sourcegitcommit: af120ad5c30da2fc5eb717ca2a1c4c45878efd71
+ms.openlocfilehash: c5195401ff34cef7125372e3bd01c192dad232ef7f7d5db69119d807cb2d8419
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104758856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118807641"
 ---
 # <a name="creating-a-basic-direct3d-12-component"></a>Criando um componente básico do Direct3D 12
 
 > [!NOTE]
-> Consulte o repositório [DirectX-Graphics-Samples](https://github.com/Microsoft/DirectX-Graphics-Samples) para exemplos de gráficos do DirectX 12 que demonstram como criar aplicativos com uso intensivo de gráficos para o Windows 10.
+> Consulte o repositório [DirectX-Graphics-Samples](https://github.com/Microsoft/DirectX-Graphics-Samples) para exemplos de gráficos do DirectX 12 que demonstram como criar aplicativos com uso intensivo de gráficos para Windows 10.
 
 Este tópico descreve o fluxo de chamadas para criar um componente básico do Direct3D 12.
 
 -   [Fluxo de código para um aplicativo simples](#code-flow-for-a-simple-app)
     -   [Inicializar](#initialize)
-    -   [Atualizar](#update)
+    -   [Atualização](#update)
     -   [Render](#render)
     -   [Destruir](#destroy)
 -   [Exemplo de código para um aplicativo simples](#code-example-for-a-simple-app)
@@ -46,7 +46,7 @@ O loop mais externo de um programa do D3D 12 segue um processo gráfico muito pa
 
 -   [Inicializar](#initialize)
 -   **Pete**
-    -   [Atualizar](#update)
+    -   [Atualização](#update)
     -   [Render](#render)
 -   [Destruir](#destroy)
 
@@ -742,10 +742,10 @@ void D3D12HelloTriangle::OnDestroy()
 
 <dl> <dt>
 
-[Entendendo o Direct3D 12](directx-12-getting-started.md)
+[Introdução ao Direct3D 12](directx-12-getting-started.md)
 </dt> <dt>
 
-[Exemplos de trabalho](working-samples.md)
+[Exemplos de trabalhos](working-samples.md)
 </dt> </dl>
 
  

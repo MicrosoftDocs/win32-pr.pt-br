@@ -1,7 +1,7 @@
 ---
-description: Representa o ponto de extremidade de VLAN de uma porta de comutador.
+description: Representa o ponto de extremidade da VLAN de uma porta switch.
 ms.assetid: 82F2EC39-0C9C-4A9D-A6C4-1543A62A341D
-title: Classe Msvm_VLANEndpoint
+title: Msvm_VLANEndpoint classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -49,18 +49,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5606e18fd1327f17feaac07570e5bf8c0c8eb59d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: beeecdebe03a443c1da95a75598bc83b9c7e2f0952cd85ceaad1866e2200ef7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146229"
 ---
-# <a name="msvm_vlanendpoint-class"></a>\_Classe Msvm VLANEndpoint
+# <a name="msvm_vlanendpoint-class"></a>Classe Msvm \_ VLANEndpoint
 
-Representa o ponto de extremidade de VLAN de uma porta de comutador. A configuração desse ponto de extremidade mudará a maneira como a porta do comutador envia pacotes de VLAN por meio do comutador.
+Representa o ponto de extremidade da VLAN de uma porta switch. A configuração desse ponto de extremidade mudará a maneira como a porta switch envia pacotes VLAN por meio da opção .
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -109,14 +109,14 @@ class Msvm_VLANEndpoint : CIM_VLANEndpoint
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ VLANEndpoint** tem estes tipos de membros:
+A **classe Msvm \_ VLANEndpoint** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **Msvm \_ VLANEndpoint** tem esses métodos.
+A **classe Msvm \_ VLANEndpoint** tem esses métodos.
 
 
 
@@ -130,22 +130,22 @@ A classe **Msvm \_ VLANEndpoint** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ VLANEndpoint** tem essas propriedades.
+A **classe Msvm \_ VLANEndpoint** tem essas propriedades.
 
 <dl> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica os valores possíveis para o parâmetro *requestedstate* do método [**RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usado para iniciar uma alteração de estado. Os valores listados serão um subconjunto dos valores contidos na propriedade **RequestedStatesSupported** da instância associada do **CIM \_ EnabledLogicalElementCapabilities**, em que os valores selecionados são uma função do estado atual do [**\_ EnabledLogicalElement do CIM**](/previous-versions//cc136818(v=vs.85)). Essa propriedade pode ser não **nula** se uma implementação for capaz de anunciar o conjunto de valores possíveis como uma função do estado atual. Essa propriedade será **nula** se uma implementação não puder determinar o conjunto de valores possíveis como uma função do estado atual.
+Indica os valores possíveis para o *parâmetro RequestedState* do [**método RequestStateChange**](/previous-versions/windows/desktop/iscsitarg/requeststatechange-cim-enabledlogicalelement) usado para iniciar uma alteração de estado. Os valores listados serão um subconjunto dos valores contidos na propriedade **RequestedStatesSupported** da instância associada de **CIM \_ EnabledLogicalElementCapabilities**, em que os valores selecionados são uma função do estado atual do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)). Essa propriedade poderá ser não nula **se** uma implementação puder anunciar o conjunto de valores possíveis como uma função do estado atual. Essa propriedade será **Null se** uma implementação não puder determinar o conjunto de valores possíveis como uma função do estado atual.
 
-Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)).
+Essa propriedade é herdada de [**CIM \_ EnabledLogicalElement.**](/previous-versions//cc136818(v=vs.85))
 
 <dl> <dt>
 
@@ -164,10 +164,10 @@ Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-vers
 <span id="Test"></span><span id="test"></span><span id="TEST"></span>**Teste** (7)
 </dt> <dt>
 
-<span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>**Defer** (8)
+<span id="Defer"></span><span id="defer"></span><span id="DEFER"></span>**Adiar** (8)
 </dt> <dt>
 
-<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Desativar** (9)
+<span id="Quiesce"></span><span id="quiesce"></span><span id="QUIESCE"></span>**Quiesce** (9)
 </dt> <dt>
 
 <span id="Reboot"></span><span id="reboot"></span><span id="REBOOT"></span>**Reinicializar** (10)
@@ -176,7 +176,7 @@ Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-vers
 <span id="Reset"></span><span id="reset"></span><span id="RESET"></span>**Redefinir** (11)
 </dt> <dt>
 
-<span id="DMTF_Reserved_"></span><span id="dmtf_reserved_"></span><span id="DMTF_RESERVED_"></span>**DMTF reservado** (.. )
+<span id="DMTF_Reserved_"></span><span id="dmtf_reserved_"></span><span id="DMTF_RESERVED_"></span>**DMTF Reservado** (.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -190,20 +190,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "ponto de extremidade de VLAN".
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Ponto de Extremidade VLAN".
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -216,7 +216,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome da classe ou da subclasse usada na criação de uma instância. Essa propriedade é herdada do [**CIM \_ ServiceAccessPoint**](/windows/desktop/CIMWin32Prov/cim-serviceaccesspoint)e é sempre definida como "Msvm \_ VLANEndpoint".
+O nome da classe ou da subclasse usada na criação de uma instância. Essa propriedade é herdada [**de Cim \_ ServiceAccessPoint**](/windows/desktop/CIMWin32Prov/cim-serviceaccesspoint)e sempre é definida como "Msvm \_ VLANEndpoint".
 
 </dd> <dt>
 
@@ -229,34 +229,34 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "Microsoft VLAN Endpoint".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Ponto de Extremidade da VLAN da Microsoft".
 
 </dd> <dt>
 
 **DesiredEndpointMode**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: somente gravação
 </dt> </dl>
 
-O modo de VLAN desejado que é solicitado para uso. O modo atual é fornecido pela propriedade **OperationalEndpointMode** . Essa propriedade é herdada do [**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint).
+O modo de VLAN desejado que é solicitado para uso. O modo atual é dado pela **propriedade OperationalEndpointMode.** Essa propriedade é herdada de [**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint).
 
 
 
 | Valor                                                                                                                                                                                                                                                                     | Significado                                                                                                                                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF reservado**</dt> <dt>0</dt> </dl>                       |                                                                                                                                                                                                                                                                                  |
+| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF Reservado**</dt> <dt>0</dt> </dl>                       |                                                                                                                                                                                                                                                                                  |
 | <span id="Other"></span><span id="other"></span><span id="OTHER"></span><dl> <dt>**Outros**</dt> <dt>1</dt> </dl>                                                       |                                                                                                                                                                                                                                                                                  |
-| <span id="Access"></span><span id="access"></span><span id="ACCESS"></span><dl> <dt>**Acesso**</dt> <dt>2</dt> </dl>                                                   | Coloca a porta do ponto de extremidade/comutador em modo de não entroncamento permanente e negocia para converter o link em um link de não tronco. O ponto de extremidade se torna uma interface de não tronco.<br/>                                                                                                     |
-| <span id="Dynamic_Auto"></span><span id="dynamic_auto"></span><span id="DYNAMIC_AUTO"></span><dl> <dt>**Auto 3 dinâmicos**</dt> <dt></dt> </dl>                           | Torna o ponto de extremidade capaz de converter o link para um link de tronco. O ponto de extremidade se tornará uma interface de tronco se a interface vizinha estiver definida para o modo trunk ou desejável.<br/>                                                                                                   |
-| <span id="Dynamic_Desirable"></span><span id="dynamic_desirable"></span><span id="DYNAMIC_DESIRABLE"></span><dl> <dt>**Dinâmicos desejáveis**</dt> <dt>4</dt> </dl>       | Torna o ponto de extremidade uma tentativa ativa de converter o link para um link de tronco. O ponto de extremidade se tornará uma interface de tronco se a interface vizinha estiver definida para o modo Trunk, desejável ou auto. O modo padrão de porta de comutador para todas as interfaces Ethernet é dinâmico, desejável.<br/> |
-| <span id="Trunk"></span><span id="trunk"></span><span id="TRUNK"></span><dl> <dt>**Tronco**</dt> <dt>5</dt> </dl>                                                       | Coloca o ponto de extremidade no modo de entroncamento permanente e negocia para converter o link em um link de tronco. O ponto de extremidade se torna uma interface de tronco, mesmo se a interface vizinha não for uma interface de tronco.<br/>                                                               |
-| <span id="Dot1Q_Tunnel"></span><span id="dot1q_tunnel"></span><span id="DOT1Q_TUNNEL"></span><dl> <dt>**Túnel Dot1Q**</dt> <dt>6</dt> </dl>                           | Configura a interface como um ponto de extremidade/porta de túnel (sem tronco) a ser conectado em um link assimétrico com uma porta de tronco 802.1 Q. o túnel 802.1 q é usado para manter a integridade da VLAN do cliente em uma rede do provedor de serviços.<br/>                                     |
-| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF reservado**</dt> <dt>7 32767</dt> </dl>                 |                                                                                                                                                                                                                                                                                  |
-| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Fornecedor reservado**</dt> <dt>32768 65535</dt> </dl> |                                                                                                                                                                                                                                                                                  |
+| <span id="Access"></span><span id="access"></span><span id="ACCESS"></span><dl> <dt>**Acesso**</dt> <dt>2</dt> </dl>                                                   | Coloca a porta de ponto de extremidade/com opção no modo permanente sem interrupção e negocia para converter o link em um link não seguro. O ponto de extremidade se torna uma interface nãotrunk.<br/>                                                                                                     |
+| <span id="Dynamic_Auto"></span><span id="dynamic_auto"></span><span id="DYNAMIC_AUTO"></span><dl> <dt>**Dynamic Auto**</dt> <dt>3</dt> </dl>                           | Torna o ponto de extremidade capaz de converter o link em um link do tronco. O ponto de extremidade se tornará uma interface de tronco se a interface vizinho estiver definida como tronco ou modo desejável.<br/>                                                                                                   |
+| <span id="Dynamic_Desirable"></span><span id="dynamic_desirable"></span><span id="DYNAMIC_DESIRABLE"></span><dl> <dt>**Dinâmico Desejável**</dt> <dt>4</dt> </dl>       | Faz com que o ponto de extremidade tente converter ativamente o link em um link do tronco. O ponto de extremidade se tornará uma interface de tronco se a interface vizinho estiver definida como tronco, desejável ou modo automático. O modo de porta de opção padrão para todas as interfaces Ethernet é dinâmico desejável.<br/> |
+| <span id="Trunk"></span><span id="trunk"></span><span id="TRUNK"></span><dl> <dt>**Tronco**</dt> <dt>5</dt> </dl>                                                       | Coloca o ponto de extremidade no modo de tronco permanente e negocia para converter o link em um link de tronco. O ponto de extremidade se torna uma interface de tronco mesmo que a interface de vizinho não seja uma interface de tronco.<br/>                                                               |
+| <span id="Dot1Q_Tunnel"></span><span id="dot1q_tunnel"></span><span id="DOT1Q_TUNNEL"></span><dl> <dt>**Dot1Q Tunnel**</dt> <dt>6</dt> </dl>                           | Configura a interface como um ponto de extremidade/porta de túnel (sem interrupção) a ser conectada em um link assimétrico com uma porta tronco de 802,1Q. O túnel 802.1Q é usado para manter a integridade da VLAN do cliente em uma rede do provedor de serviços.<br/>                                     |
+| <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF Reservado**</dt> <dt>7 32767</dt> </dl>                 |                                                                                                                                                                                                                                                                                  |
+| <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Fornecedor Reservado**</dt> <dt>32768 65535</dt> </dl> |                                                                                                                                                                                                                                                                                  |
 
 
 
@@ -267,26 +267,26 @@ O modo de VLAN desejado que é solicitado para uso. O modo atual é fornecido pe
 **DesiredVLANTrunkEncapsulation**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de encapsulamento de VLAN que é solicitado para uso. O encapsulamento em uso no momento é fornecido pela propriedade **OperationalVLANTrunkEncapsulation** . Essa propriedade só é aplicável quando o ponto de extremidade está operando em um modo de entroncamento (consulte a propriedade **OperationalEndpointMode** para obter detalhes adicionais). Essa propriedade é 2 (não aplicável) (ou seja, o ponto de extremidade nunca será colocado em um modo de Entroncamento), um tipo específico (802.1 Q ou Cisco ISL) ou 5 (Negotiate) (ou seja, o resultado da negociação entre essa interface e seu vizinho). O valor 5 (Negotiate) não será permitido se o ponto de extremidade não oferecer suporte à negociação. Esse recurso é dependente de hardware e fornecedor. Essa propriedade é herdada do [**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint).
+O tipo de encapsulamento de VLAN solicitado para uso. O encapsulamento atualmente em uso é dado pela propriedade **OperationalVLANTrunkEncapsulation.** Essa propriedade só é aplicável quando o ponto de extremidade está operando em um modo de tronco (consulte a propriedade **OperationalEndpointMode** para obter detalhes adicionais). Essa propriedade é 2 (Não Aplicável) (ou seja, o ponto de extremidade nunca será colocado em um modo de tronco), um tipo específico (802,1Q ou Cisco ISL) ou 5 (Negotiate) (ou seja, o resultado da negociação entre essa interface e seu vizinho). O valor 5 (Negotiate) não é permitido se o ponto de extremidade não dá suporte à negociação. Essa funcionalidade depende do hardware e do fornecedor. Essa propriedade é herdada de [**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint).
 
 <dl> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (0)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (0)
 </dt> <dt>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 </dt> <dt>
 
 <span id="Not_Applicable"></span><span id="not_applicable"></span><span id="NOT_APPLICABLE"></span>**Não aplicável** (2)
 </dt> <dt>
 
-<span id="802.1Q"></span><span id="802.1q"></span>**802.1 q** (3)
+<span id="802.1Q"></span><span id="802.1q"></span>**802.1Q** (3)
 </dt> <dt>
 
 <span id="Cisco_ISL"></span><span id="cisco_isl"></span><span id="CISCO_ISL"></span>**Cisco ISL** (4)
@@ -484,7 +484,7 @@ O modo de configuração para o ponto de extremidade de VLAN. Essa propriedade �
 | <span id="Dynamic_Auto"></span><span id="dynamic_auto"></span><span id="DYNAMIC_AUTO"></span><dl> <dt>**Auto 3 dinâmicos**</dt> <dt></dt> </dl>                           | Torna o ponto de extremidade capaz de converter o link para um link de tronco. O ponto de extremidade se tornará uma interface de tronco se a interface vizinha estiver definida para o modo trunk ou desejável.<br/>                                                                                      |
 | <span id="Dynamic_Desirable"></span><span id="dynamic_desirable"></span><span id="DYNAMIC_DESIRABLE"></span><dl> <dt>**Dinâmicos desejáveis**</dt> <dt>4</dt> </dl>       | Torna o ponto de extremidade uma tentativa ativa de converter o link para um link de tronco. O ponto de extremidade se tornará uma interface de tronco se a interface vizinha estiver definida para o modo Trunk, desejável ou auto. Esse é o modo padrão de porta de comutador para todas as interfaces Ethernet.<br/> |
 | <span id="Trunk"></span><span id="trunk"></span><span id="TRUNK"></span><dl> <dt>**Tronco**</dt> <dt>5</dt> </dl>                                                       | Coloca o ponto de extremidade no modo de entroncamento permanente e negocia para converter o link em um link de tronco. O ponto de extremidade se torna uma interface de tronco, mesmo se a interface vizinha não for uma interface de tronco.<br/>                                                  |
-| <span id="Dot1Q_Tunnel"></span><span id="dot1q_tunnel"></span><span id="DOT1Q_TUNNEL"></span><dl> <dt>**Túnel Dot1Q**</dt> <dt>6</dt> </dl>                           | Configura a interface como um ponto de extremidade/porta de túnel (sem tronco) a ser conectado em um link assimétrico com uma porta de tronco 802.1 Q. o túnel 802.1 q é usado para manter a integridade da VLAN do cliente em uma rede do provedor de serviços.<br/>                        |
+| <span id="Dot1Q_Tunnel"></span><span id="dot1q_tunnel"></span><span id="DOT1Q_TUNNEL"></span><dl> <dt>**Dot1Q Tunnel**</dt> <dt>6</dt> </dl>                           | Configura a interface como um ponto de extremidade/porta de túnel (sem tronco) a ser conectado em um link assimétrico com uma porta de tronco 802.1 Q. o túnel 802.1 q é usado para manter a integridade da VLAN do cliente em uma rede do provedor de serviços.<br/>                        |
 | <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span><dl> <dt>**DMTF reservado**</dt> <dt>7 32767</dt> </dl>                 |                                                                                                                                                                                                                                                                     |
 | <span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span><dl> <dt> **Fornecedor reservado**</dt> <dt>32768 65535</dt> </dl> |                                                                                                                                                                                                                                                                     |
 
@@ -503,45 +503,45 @@ Tipo de dados: a matriz **UInt16**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Os status atuais do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento da matriz é sempre definido como 2 (OK).
+Os status atuais do objeto. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento de matriz é sempre definido como 2 (OK).
 
 </dd> <dt>
 
 **OperationalVLANTrunkEncapsulation**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de encapsulamento de VLAN em uso em um ponto de extremidade/porta de tronco. Essa propriedade é 2 (não aplicável) (ou seja, o ponto de extremidade não está operando no modo de Entroncamento), um tipo específico (3-802.1 Q ou 4-Cisco ISL), 5 (Negotiate) (ou seja, os pontos de extremidade estão negociando o tipo de encapsulamento). Essa propriedade só é aplicável quando o ponto de extremidade está operando em um modo de entroncamento (consulte a propriedade **OperationalEndpointMode** para obter detalhes adicionais). Essa propriedade é herdada do [**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint).
+O tipo de encapsulamento de VLAN em uso em um ponto de extremidade/porta do tronco. Essa propriedade é 2 (Não Aplicável) (ou seja, o ponto de extremidade não está operando no modo de tronco), um tipo específico (3 - 802.1Q ou 4 - Cisco ISL), 5 (Negotiate) (ou seja, os pontos de extremidade estão negociando o tipo de encapsulamento). Essa propriedade só é aplicável quando o ponto de extremidade está operando em um modo de tronco (consulte a propriedade **OperationalEndpointMode** para obter detalhes adicionais). Essa propriedade é herdada de [**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint).
 
 <dl> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>**Desconhecido** (0)
 </dt> <dt>
 
-<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outro** (1)
+<span id="Other"></span><span id="other"></span><span id="OTHER"></span>**Outros** (1)
 </dt> <dt>
 
 <span id="Not_Applicable"></span><span id="not_applicable"></span><span id="NOT_APPLICABLE"></span>**Não aplicável** (2)
 </dt> <dt>
 
-<span id="802.1Q"></span><span id="802.1q"></span>**802.1 q** (3)
+<span id="802.1Q"></span><span id="802.1q"></span>**802.1Q** (3)
 </dt> <dt>
 
 <span id="Cisco_ISL"></span><span id="cisco_isl"></span><span id="CISCO_ISL"></span>**Cisco ISL** (4)
 </dt> <dt>
 
-<span id="Negotiating"></span><span id="negotiating"></span><span id="NEGOTIATING"></span>**Negociando** (5)
+<span id="Negotiating"></span><span id="negotiating"></span><span id="NEGOTIATING"></span>**Negociação** (5)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (6 32767)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (6 32767)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (32768 65535)
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (32768 65535)
 </dt> </dl>
 
 </dd> <dt>
@@ -555,7 +555,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o estado habilitado ou desabilitado do elemento quando a propriedade **enabledstate** é definida como 1 ("other"). Essa propriedade deve ser definida como **NULL** quando **enabledstate** for qualquer valor diferente de 1. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **NULL**.
+Uma cadeia de caracteres que descreve o estado habilitado ou desabilitado do elemento quando a propriedade **EnabledState** é definida como 1 ("Outro"). Essa propriedade deve ser definida como **Null quando** **EnabledState** for qualquer valor diferente de 1. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **Null.**
 
 </dd> <dt>
 
@@ -568,7 +568,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de modelo de ponto de extremidade de VLAN com suporte por esse ponto de extremidade de VLAN, quando o valor da propriedade **OperationalEndpointMode** é definido como 1 (outro). Essa propriedade deve ser definida como **NULL** quando a propriedade **OperationalEndpointMode** é qualquer valor diferente de 1. Essa propriedade é herdada do [**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint).
+O tipo de modelo de ponto de extremidade VLAN com suporte por esse ponto de extremidade VLAN, quando o valor da propriedade **OperationalEndpointMode** é definido como 1 (Outro). Essa propriedade deve ser definida como **Null quando** a **propriedade OperationalEndpointMode** for qualquer valor diferente de 1. Essa propriedade é herdada de [**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint).
 
 </dd> <dt>
 
@@ -581,7 +581,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de encapsulamento de VLAN com suporte por esse ponto de extremidade de VLAN, quando o valor da propriedade **OperationalVLANTrunkEncapsulation** é definido como 1 (outro). Essa propriedade deve ser definida como **NULL** quando a propriedade de encapsulamento desejada for qualquer valor diferente de 1. Essa propriedade é herdada do [**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint).
+O tipo de encapsulamento de VLAN que é suportado por esse ponto de extremidade de VLAN, quando o valor da propriedade **OperationalVLANTrunkEncapsulation** é definido como 1 (Outro). Essa propriedade deve ser definida como **Null quando** a propriedade de encapsulamento desejada for qualquer valor diferente de 1. Essa propriedade é herdada de [**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint).
 
 </dd> <dt>
 
@@ -594,59 +594,59 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tipo de ponto de extremidade de protocolo quando a propriedade **Type** dessa classe (ou de qualquer uma de suas subclasses) é definida como 1 (outro). Essa propriedade é herdada do [**CIM \_ ProtocolEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint)e é sempre definida como "virtual Ethernet".
+O tipo de ponto de extremidade de protocolo quando a propriedade **Type** dessa classe (ou qualquer uma de suas subclasses) é definida como 1 (Outro). Essa propriedade é herdada do [**Protocolo \_ CIMEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint)e sempre é definida como "Ethernet Virtual".
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer informações de status de integridade detalhadas e de alto nível para o elemento e seus subcomponentes. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer informações de status de saúde detalhadas e de alto nível para o elemento e seus subcomponentes. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **ProtocolIFType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A [MIB ifType da IANA](https://www.iana.org/assignments/ianaiftype-mib). Essa propriedade é herdada do [**CIM \_ ProtocolEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint)e é sempre definida como 1 (outra).
+O [IANA ifType MIB.](https://www.iana.org/assignments/ianaiftype-mib) Essa propriedade é herdada de [**Cim \_ ProtocolEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint)e é sempre definida como 1 (Outro).
 
 </dd> <dt>
 
-**ProtocolType**
+**Protocoltype**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada de [**CIM \_ ProtocolEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint) e não é usada.
+Essa propriedade é herdada de [**Cim \_ ProtocolEndpoint**](/previous-versions/windows/desktop/iscsitarg/cim-protocolendpoint) e não é usada.
 
 </dd> <dt>
 
 **RequestedState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O último estado solicitado ou desejado para o serviço de gerenciamento. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como 12 (não aplicável).
+O último estado solicitado ou desejado para o serviço de gerenciamento. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e sempre é definida como 12 (não aplicável).
 
 
 
@@ -669,60 +669,60 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descreve o status do elemento. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Descreve o status do elemento. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
-PROBLEMAS
+"OK"
 
-Ao
+"Erro"
 
-Degradado
+"Degradado"
 
-Conhecidos
+"Desconhecido"
 
-"Falha de Pred"
+"Pred Fail"
 
-Comece
+"Iniciando"
 
-Impedir
+"Parando"
 
-Serviço
+"Serviço"
 
-Analisa
+"Stressed"
 
-"Não recuperar"
+"NonRecover"
 
 "Sem contato"
 
-"Perda de comunicação"
+"Comunicação Perdida"
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeias de caracteres que descrevem os vários valores de matriz de **OperationalStatus** . Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento da matriz é sempre definido como "OK".
+Cadeias de caracteres que descrevem os **vários valores de matriz OperationalStatus.** Essa propriedade é herdada de [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e cada elemento de matriz é sempre definido como "OK".
 
 </dd> <dt>
 
 **SupportedEndpointModes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado")
 </dt> </dl>
 
-Os modos de ponto de extremidade com suporte nesta porta.
+Os modos de ponto de extremidade com suporte por essa porta.
 
 </dd> <dt>
 
@@ -735,11 +735,11 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome da classe de criação do sistema de escopo. Essa propriedade é herdada do [**CIM \_ ServiceAccessPoint**](/windows/desktop/CIMWin32Prov/cim-serviceaccesspoint)e é sempre definida como "Msvm \_ comutador virtual"
+O nome da classe de criação do sistema de scoping. Essa propriedade é herdada [**do Serviço \_ CIMAccessPoint**](/windows/desktop/CIMWin32Prov/cim-serviceaccesspoint)e sempre é definida como "Msvm \_ VirtualSwitch"
 
 </dd> <dt>
 
-**SystemName**
+**Systemname**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -748,43 +748,43 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O nome do sistema do sistema de escopo. Essa propriedade é herdada do [**CIM \_ ServiceAccessPoint**](/windows/desktop/CIMWin32Prov/cim-serviceaccesspoint).
+O nome do sistema de scoping. Essa propriedade é herdada de [**Cim \_ ServiceAccessPoint**](/windows/desktop/CIMWin32Prov/cim-serviceaccesspoint).
 
 </dd> <dt>
 
 **TimeOfLastStateChange**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora em que o estado habilitado do elemento foi alterado pela última vez. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), mas não é suportada.
+A data e a hora em que o estado habilitado do elemento foi alterado pela última vez. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), mas não tem suporte.
 
 </dd> <dt>
 
 **TransitioningToState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), mas não é usada.
+Indica o estado de destino para o qual a instância está em transição. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85)), mas não é usada.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe **Msvm \_ VLANEndpoint** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe Msvm \_ VLANEndpoint** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="examples"></a>Exemplos
 
-Consulte [consultando objetos de rede](querying-networking-objects.md).
+Consulte [Consultando objetos de rede](querying-networking-objects.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -792,10 +792,10 @@ Consulte [consultando objetos de rede](querying-networking-objects.md).
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -804,10 +804,10 @@ Consulte [consultando objetos de rede](querying-networking-objects.md).
 
 <dl> <dt>
 
-[**\_VLANENDPOINT CIM**](cim-vlanendpoint.md)
+[**CIM \_ VLANEndpoint**](cim-vlanendpoint.md)
 </dt> <dt>
 
-[**\_VLANENDPOINT CIM**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint)
+[**CIM \_ VLANEndpoint**](/previous-versions/windows/desktop/clushyperv/cim-vlanendpoint)
 </dt> </dl>
 
  

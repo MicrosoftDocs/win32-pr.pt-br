@@ -4,12 +4,12 @@ description: A chave do registro TlsServerAcceptAllPurposeCert determina se os c
 ms.assetid: F0881397-5D8C-4C8F-8EB5-6D59454C55B7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1c6561418d8d9cb06fb9618e6b93189cbd28e408
-ms.sourcegitcommit: c20a43b333f03175ac23823c55f3204bfe8cd243
+ms.openlocfilehash: 804185773a948299aed3d8b8e2f581d8d8355d112720b66e860bd1f00b7fc3d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "105749183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118085748"
 ---
 # <a name="tlsserveracceptallpurposecert"></a>TlsServerAcceptAllPurposeCert
 
@@ -19,7 +19,7 @@ A chave do registro TlsServerAcceptAllPurposeCert determina se os certificados d
 
 ```
 HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Rasman\PPP\EAP\13
-   TlsServerAcceptAllPurposeCert = value
+   TlsServerAcceptAllPurposeCert = value
 ```
 
 ## <a name="remarks"></a>Comentários
@@ -35,7 +35,7 @@ Esse é um valor de **reg \_ DWORD** .
 
 
 
- 
+ 
 
 Se esse valor de registro não estiver presente, o servidor e o cliente aceitarão os certificados de todas as finalidades enviadas pela outra entidade para autenticação EAP-TLS.
 
@@ -43,12 +43,12 @@ Se esse valor de registro não estiver presente, o servidor e o cliente aceitar�
 
 <dl> <dt>
 
-[Configurações do registro EAPHost](eaphost-registry-settings.md)
+[Configurações de registro do EAPHost](eaphost-registry-settings.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

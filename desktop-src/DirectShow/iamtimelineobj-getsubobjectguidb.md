@@ -1,7 +1,7 @@
 ---
-description: 'O método GetSubObjectGUIDB recupera o GUID do subobjeto associado a este objeto Timeline. Esse método é equivalente a IAMTimelineObj:: GetSubObjectGUID, mas recebe um valor BSTR.'
+description: O método GetSubObjectGUIDB recupera o GUID do subobjeto associado a esse objeto de linha do tempo. Esse método é equivalente a IAMTimelineObj::GetSubObjectGUID, mas recebe um valor BSTR.
 ms.assetid: 693cafda-78c8-4ba4-90d7-23fedcd1fc52
-title: 'Método IAMTimelineObj:: GetSubObjectGUIDB (QEdit. h)'
+title: Método IAMTimelineObj::GetSubObjectGUIDB (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 903c6638eececd635af2facd964adabe26f0c106
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 79cf7c6a0b3f162f3f3baee2a46cfc0c2c2b61271b19e57549c73b4faa0594bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758681"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118155377"
 ---
-# <a name="iamtimelineobjgetsubobjectguidb-method"></a>Método IAMTimelineObj:: GetSubObjectGUIDB
+# <a name="iamtimelineobjgetsubobjectguidb-method"></a>Método IAMTimelineObj::GetSubObjectGUIDB
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `GetSubObjectGUIDB` método recupera o GUID do subobjeto associado a este objeto Timeline. Esse método é equivalente a [**IAMTimelineObj:: GetSubObjectGUID**](iamtimelineobj-getsubobjectguid.md), mas recebe um valor **BSTR** .
+O `GetSubObjectGUIDB` método recupera o GUID do subobjeto associado a este objeto de linha do tempo. Esse método é equivalente a [**IAMTimelineObj::GetSubObjectGUID**](iamtimelineobj-getsubobjectguid.md), mas recebe um **valor BSTR.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,28 +45,28 @@ HRESULT GetSubObjectGUIDB(
 
 <dl> <dt>
 
-*PVal* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
 Recebe uma cadeia de caracteres que representa o GUID do subobjeto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
 O método aloca memória para a cadeia de caracteres. O aplicativo deve chamar **SysFreeString** para liberar a memória.
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -76,8 +76,8 @@ O método aloca memória para a cadeia de caracteres. O aplicativo deve chamar *
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -85,7 +85,7 @@ O método aloca memória para a cadeia de caracteres. O aplicativo deve chamar *
 
 <dl> <dt>
 
-[**Interface IAMTimelineObj**](iamtimelineobj.md)
+[**IAMTimelineObj Interface**](iamtimelineobj.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

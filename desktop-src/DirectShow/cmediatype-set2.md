@@ -1,7 +1,7 @@
 ---
-description: O método set define o tipo de mídia de outro tipo de mídia.
+description: O método Set define o tipo de mídia de outro tipo de mídia.
 ms.assetid: b3cf65c2-48db-4ee0-9a74-c1652f017eed
-title: Método CMediaType. Set (mtype. h)-parâmetro mtype [REF]
+title: Método CMediaType.Set (Mtype.h) – parâmetro mtype [ref]
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e8fd9145ee33dbe4b589b34833836466efa62ada
-ms.sourcegitcommit: 4d4a6e9ad5de37e467cd3164276771b71e1f113f
+ms.openlocfilehash: 350e88cefa7c0f5f6946218d220fcad4a118cf53e203a68eeb9f75c0d0eace1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "106389084"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156059"
 ---
-# <a name="cmediatypeset-method-mtypeh"></a>Método CMediaType. Set (mtype. h)
+# <a name="cmediatypeset-method-mtypeh"></a>Método CMediaType.Set (Mtype.h)
 
 O `Set` método define o tipo de mídia de outro tipo de mídia.
 
@@ -42,20 +42,20 @@ HRESULT Set(
 
 <dl> <dt>
 
-*mtype* \[ referência\]
+*mtype* \[ Ref\]
 </dt> <dd>
 
-Referência a uma estrutura de [**\_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) .
+Referência a uma [**estrutura AM \_ MEDIA \_ TYPE.**](/windows/win32/api/strmif/ns-strmif-am_media_type)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK ou E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método copia todo o tipo de mídia de *mtype*.
+Esse método copia todo o tipo de mídia do *mtype*.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Esse método copia todo o tipo de mídia de *mtype*.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Mtype. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Mtype.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

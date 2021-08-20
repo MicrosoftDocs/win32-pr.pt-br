@@ -1,18 +1,18 @@
 ---
-title: Limites de assinatura raiz
+title: Limites de assinaturas raiz
 description: A assinatura raiz é a principal imobiliária e há limites e custos rígidos a serem considerados.
 ms.assetid: 01121D3A-1926-4246-9C20-5E11F2E0B092
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 25986da72cfcad7b714031e063341e1832d6ae68
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7686c1d67d3c069167d6a1054bfe1bc0532f6e4f35304ccac985eeb5db530837
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "74104025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118806656"
 ---
-# <a name="root-signature-limits"></a>Limites de assinatura raiz
+# <a name="root-signature-limits"></a>Limites de assinaturas raiz
 
 A assinatura raiz é a principal imobiliária e há limites e custos rígidos a serem considerados.
 
@@ -62,9 +62,9 @@ Os exemplos estáticos podem ser escritos como parte da assinatura raiz em sombr
 [Assinaturas raiz](root-signatures.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

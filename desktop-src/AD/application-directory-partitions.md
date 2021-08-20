@@ -1,6 +1,6 @@
 ---
 title: Partições de diretório de aplicativos
-description: No Windows Server 2003, Active Directory Domain Services dá suporte a partições de diretório de aplicativos.
+description: no Windows Server 2003, Active Directory Domain Services suporte a partições de diretório de aplicativos.
 ms.assetid: 55c47803-c1ee-4888-bb19-103374ec9719
 ms.tgt_platform: multiple
 keywords:
@@ -8,16 +8,16 @@ keywords:
 - AD de partições de diretório de aplicativo, usando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63a8e035231aa24569b6fad6d5a7e0e62eaa5a30
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 5d90532c813dde406fae3104b56ab2e68065145cf893b145f6148f39e6c1007e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104007363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118024247"
 ---
 # <a name="application-directory-partitions"></a>Partições de diretório de aplicativos
 
-No Windows Server 2003, Active Directory Domain Services dá suporte a partições de diretório de aplicativos. Uma partição de diretório de aplicativo pode conter uma hierarquia de qualquer tipo de objeto, exceto entidades de segurança, e pode ser configurada para replicar para qualquer conjunto de controladores de domínio na floresta. Ao contrário de uma partição de domínio, uma partição de diretório de aplicativo não precisa ser replicada para todos os controladores de domínio em um domínio e a partição pode ser replicada para controladores de domínio em domínios diferentes da floresta. Para obter mais informações sobre partições de diretório de aplicativos, consulte [sobre partições de diretório de aplicativo](about-application-directory-partitions.md).
+no Windows Server 2003, Active Directory Domain Services suporte a partições de diretório de aplicativos. Uma partição de diretório de aplicativo pode conter uma hierarquia de qualquer tipo de objeto, exceto entidades de segurança, e pode ser configurada para replicar para qualquer conjunto de controladores de domínio na floresta. Ao contrário de uma partição de domínio, uma partição de diretório de aplicativo não precisa ser replicada para todos os controladores de domínio em um domínio e a partição pode ser replicada para controladores de domínio em domínios diferentes da floresta. Para obter mais informações sobre partições de diretório de aplicativos, consulte [sobre partições de diretório de aplicativo](about-application-directory-partitions.md).
 
 Uma partição de diretório de aplicativo pode ser criada. modificado e excluído usando as operações padrão ADSI, LDAP e [System. DirectoryServices](/dotnet/api/system.directoryservices) . O contexto de segurança necessário para criar e modificar uma partição de diretório de aplicativo é o mesmo que para criar uma partição de domínio.
 
@@ -33,6 +33,6 @@ Os tópicos a seguir descrevem como trabalhar com partições de diretório de a
 -   [Enumerando réplicas de uma partição de diretório de aplicativo](enumerating-replicas-of-an-application-directory-partition.md)
 -   [Modificando configuração de partição de diretório de aplicativo](modifying-application-directory-partition-configuration.md)
 
- 
+ 
 
- 
+ 

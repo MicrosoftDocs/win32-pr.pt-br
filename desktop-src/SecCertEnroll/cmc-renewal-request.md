@@ -4,12 +4,12 @@ ms.assetid: 45b8e5f1-93e0-4216-945a-221a22acfd68
 title: Solicitação de renovação de CMC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 824d266d1ef52b02f88f3bada1b62d942840ab6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4b25886d0ec998934a070e98c85ef43e52982b111bc70ea44bb88da09ce53568
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119670326"
 ---
 # <a name="cmc-renewal-request"></a>Solicitação de renovação de CMC
 

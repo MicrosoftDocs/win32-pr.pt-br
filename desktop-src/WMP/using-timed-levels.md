@@ -15,12 +15,12 @@ keywords:
 - visualizações personalizadas, variável timeStamp
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f2d9a23818d57305b3b205ea2e17b6dda2884e2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1e6ce4d675fa37a519952f1b31d3c52cd93005a82eef977b7bd7d77623f1e508
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116933"
 ---
 # <a name="using-timed-levels"></a>Usando níveis de tempo
 
@@ -30,7 +30,7 @@ A estrutura **TimedLevel** é composta de matrizes 2 2-dimensional, um valor de 
 
 A matriz Frequency é uma matriz bidimensional. A primeira dimensão de cada matriz corresponde ao canal de áudio estéreo (esquerda ou direita) e a segunda corresponde aos níveis de frequência (em bytes) do instantâneo, onde o espectro de áudio é dividido em regiões de 1024.
 
-Você pode obter os dados da matriz de frequência fornecidos pelo Windows Media Player da seguinte maneira:
+você pode obter os dados da matriz de frequência fornecidos pelo Windows Media Player da seguinte maneira:
 
 
 ```C++
@@ -48,7 +48,7 @@ Se o sinal for não estéreo, a segunda matriz conterá uma cópia do sinal mono
 
 A matriz de formato de onda também é uma matriz bidimensional. A primeira dimensão da matriz corresponde ao canal (esquerda ou direita) e a segunda corresponde aos níveis de energia (em bytes) do instantâneo, onde a energia de áudio é dividida em 1024 segmentos de tempo contíguos.
 
-Você pode obter os dados da matriz de forma de onda do Windows Media Player da seguinte maneira:
+você pode obter os dados da matriz de forma de onda de Windows Media Player da seguinte maneira:
 
 
 ```C++
@@ -65,7 +65,7 @@ Se o sinal for não estéreo, a segunda matriz conterá uma cópia do sinal mono
 
 ## <a name="state"></a>Estado
 
-A variável de estado reflete o estado de reprodução de áudio do Windows Media Player. Os valores de enumeração do Playerstate são
+A variável de estado reflete o estado de reprodução de áudio de Windows Media Player. Os valores de enumeração do Playerstate são
 
 
 ```C++
@@ -92,9 +92,9 @@ Você pode usar essa variável para cronometrar suas animações. Se os instant�
 [**Implementando renderização**](implementing-render.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

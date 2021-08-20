@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_RDCentralPublishedRemoteApplication
-description: Descreve um aplicativo publicado em outro computador, para uso remoto por meio dos serviços de terminal.
+title: Win32_RDCentralPublishedRemoteApplication classe
+description: Descreve um aplicativo publicado em outro computador, para uso remoto por meio dos Serviços de Terminal.
 ms.assetid: 8605bd1e-e825-4fd9-b14f-9d3bdac489f1
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_RDCentralPublishedRemoteApplication Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_RDCentralPublishedRemoteApplication classe, descrita
+- Win32_RDCentralPublishedRemoteApplication classe Serviços de Área de Trabalho Remota
+- Win32_RDCentralPublishedRemoteApplication classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -33,16 +33,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd837f62d8d0787d992e8eed7316ed1ef3f199ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f9a871d02eb66a8d9de080b92b961090a7a52280613a8b9239a0736ba3945e35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118849981"
 ---
-# <a name="win32_rdcentralpublishedremoteapplication-class"></a>\_Classe Win32 RDCentralPublishedRemoteApplication
+# <a name="win32_rdcentralpublishedremoteapplication-class"></a>Classe Win32 \_ RDCentralPublishedRemoteApplication
 
-Descreve um aplicativo publicado em outro computador, para uso remoto por meio dos serviços de terminal.
+Descreve um aplicativo publicado em outro computador, para uso remoto por meio dos Serviços de Terminal.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -74,13 +74,13 @@ class Win32_RDCentralPublishedRemoteApplication : CIM_LogicalElement
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ RDCentralPublishedRemoteApplication** tem estes tipos de membros:
+A **classe Win32 \_ RDCentralPublishedRemoteApplication** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ RDCentralPublishedRemoteApplication** tem essas propriedades.
+A **classe Win32 \_ RDCentralPublishedRemoteApplication** tem essas propriedades.
 
 <dl> <dt>
 
@@ -90,7 +90,7 @@ A classe **Win32 \_ RDCentralPublishedRemoteApplication** tem essas propriedades
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
@@ -106,10 +106,10 @@ Alias do aplicativo.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-AppID é usado para fixação nos clientes.
+AppID é usado para fixar nos clientes.
 
 </dd> <dt>
 
@@ -122,25 +122,25 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
-Breve descrição (cadeia de caracteres de uma linha) do objeto.
+Descrição curta (cadeia de caracteres de uma linha) do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **CommandLineSetting**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-Se argumentos de linha de comando são necessários para este aplicativo.
+Se os argumentos de linha de comando são necessários para este aplicativo.
 
 <dt>
 
@@ -182,17 +182,17 @@ Tipo de acesso: Somente leitura
 
 Descrição do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **Pastas**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Lista das pastas em que esse recurso deve ser exibido.
@@ -202,10 +202,10 @@ Lista das pastas em que esse recurso deve ser exibido.
 **IconContents**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz **uint8**
+Tipo de dados: **matriz uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
@@ -218,18 +218,18 @@ Conteúdo do ícone correspondente ao aplicativo.
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 ")
+Qualificadores: [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5")
 </dt> </dl>
 
 A data em que o objeto foi instalado. A falta de um valor não indica que o objeto não está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -244,7 +244,7 @@ Tipo de acesso: Somente leitura
 
 O nome do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -254,7 +254,7 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Caminho para o aplicativo
@@ -267,7 +267,7 @@ Caminho para o aplicativo
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
@@ -296,7 +296,7 @@ Conteúdo do arquivo RDP correspondente ao aplicativo.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Argumentos de linha de comando necessários para este aplicativo.
@@ -309,26 +309,26 @@ Argumentos de linha de comando necessários para este aplicativo.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: [ **opcional**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Descritor de segurança que controla o acesso ao aplicativo, no formato SDDL. A cadeia de caracteres vazia implica permitir todo o acesso.
+Descritor de segurança controlando o acesso ao aplicativo, no formato SDDL. Cadeia de caracteres vazia implica permitir todo o acesso.
 
 </dd> <dt>
 
 **ShowInPortal**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
-**true** se este aplicativo deve ser mostrado no TS acesso via Web; caso contrário, **false**.
+**true** se esse aplicativo deve ser mostrado no TS Acesso via Web; caso contrário, **false.**
 
 </dd> <dt>
 
@@ -341,12 +341,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10)
 </dt> </dl>
 
-Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "Service", pode ser aplicado durante o espelhamento de espelho de um disco, recarregar uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante o espelhamento de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 <dt>
 
@@ -414,7 +414,7 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsyst
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 Caminho virtual para o aplicativo.
@@ -429,8 +429,8 @@ Caminho virtual para o aplicativo.
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                           |
-| Namespace<br/>                | \\TerminalServices da cimv2 raiz \\<br/>                                                 |
-| MOF<br/>                      | <dl> <dt>Tscpub. mof</dt> </dl>    |
+| Namespace<br/>                | Raiz \\ cimv2 \\ TerminalServices<br/>                                                 |
+| MOF<br/>                      | <dl> <dt>Tscpub.mof</dt> </dl>    |
 | DLL<br/>                      | <dl> <dt>TscPubWmi.dll</dt> </dl> |
 
 

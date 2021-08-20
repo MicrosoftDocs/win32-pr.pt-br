@@ -4,12 +4,12 @@ ms.assetid: 0c251a45-1414-4855-a6f5-86ebdfab2693
 title: Arquivos de mensagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb20d5919c75f06bfd7b6db9b47216566ab6ac8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 44de0c91a098ab1b916a73d99a02d0d31a8b5b7690936322166e65baef4bd13c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951405"
 ---
 # <a name="message-files"></a>Arquivos de mensagem
 

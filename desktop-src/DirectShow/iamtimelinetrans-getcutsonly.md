@@ -1,7 +1,7 @@
 ---
-description: O método GetCutsOnly determina se a transição é renderizada como um recorte. Nesse caso, a transição ocorre instantaneamente no ponto de recorte.
+description: O método GetCutsOnly determina se a transição é renderizada como um corte. Nesse caso, a transição ocorre instantaneamente no ponto de corte.
 ms.assetid: d7959816-1152-4bc4-b3f8-bed69b450530
-title: 'Método IAMTimelineTrans:: GetCutsOnly (QEdit. h)'
+title: Método IAMTimelineTrans::GetCutsOnly (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: d3bbec55ddfe77c053135054fde9b64efce516a3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7007db4699dc3f1772ad727c2e40daa15946d07d564b92b5b1517899ff6e1f20
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105782841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154780"
 ---
-# <a name="iamtimelinetransgetcutsonly-method"></a>Método IAMTimelineTrans:: GetCutsOnly
+# <a name="iamtimelinetransgetcutsonly-method"></a>Método IAMTimelineTrans::GetCutsOnly
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `GetCutsOnly` método determina se a transição é renderizada como um recorte. Nesse caso, a transição ocorre instantaneamente no ponto de recorte.
+O `GetCutsOnly` método determina se a transição é renderizada como um corte. Nesse caso, a transição ocorre instantaneamente no ponto de corte.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,26 +45,26 @@ HRESULT GetCutsOnly(
 
 <dl> <dt>
 
-*pVal* 
+*Pval* 
 </dt> <dd>
 
-Recebe um valor booliano que especifica se a transição é renderizada como um recorte. Se for **true**, a transição será uma recorte instantânea. Se **for false**, a transição ocorrerá durante sua duração normal.
+Recebe um valor booliana que especifica se a transição é renderizada como um corte. Se **TRUE**, a transição será um corte instantâneo. Se **FALSE**, a transição ocorrerá durante sua duração normal.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 <dl> <dt>
 
-[**Interface IAMTimelineTrans**](iamtimelinetrans.md)
+[**IAMTimelineTrans Interface**](iamtimelinetrans.md)
 </dt> <dt>
 
 [**IAMTimelineTrans::SetCutsOnly**](iamtimelinetrans-setcutsonly.md)

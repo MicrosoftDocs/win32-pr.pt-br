@@ -1,7 +1,7 @@
 ---
-description: Cria um novo relacionamento de replicação para uma máquina virtual. Quando um cliente chama esse método para uma máquina virtual de réplica, ele estende a relação de replicação para o provedor especificado.
+description: Cria uma nova relação de replicação para uma máquina virtual. Quando um cliente chama esse método para uma máquina virtual de réplica, ele estende a relação de replicação para o provedor especificado.
 ms.assetid: 44d3b5aa-46c2-4fe9-9a1d-6ee699d3640d
-title: Método CreateReplicationRelationship da classe Msvm_ReplicationService
+title: Método CreateReplicationRelationship da classe Msvm_ReplicationService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: c44628aef9aa278170a1292a74621419bb6256b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9b61c2339a426314d5c62fe5481b51ba3960c2650ccbdc40b9b9ebd4761cfc4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118150079"
 ---
-# <a name="createreplicationrelationship-method-of-the-msvm_replicationservice-class"></a>Método CreateReplicationRelationship da \_ classe ReplicationService Msvm
+# <a name="createreplicationrelationship-method-of-the-msvm_replicationservice-class"></a>Método CreateReplicationRelationship da classe Msvm \_ ReplicationService
 
-Cria um novo relacionamento de replicação para uma máquina virtual. Quando um cliente chama esse método para uma máquina virtual de réplica, ele estende a relação de replicação para o provedor especificado.
+Cria uma nova relação de replicação para uma máquina virtual. Quando um cliente chama esse método para uma máquina virtual de réplica, ele estende a relação de replicação para o provedor especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,28 +41,28 @@ uint32 CreateReplicationRelationship(
 
 <dl> <dt>
 
-*ComputerSystem* \[ no\]
+*ComputerSystem* \[ Em\]
 </dt> <dd>
 
-Uma referência a uma instância de [**\_ sistema**](/windows/desktop/CIMWin32Prov/cim-computersystem) de computador CIM que representa a máquina virtual para a qual a replicação deve ser habilitada.
+Uma referência a uma [**instância \_ do ComputerSystem cim**](/windows/desktop/CIMWin32Prov/cim-computersystem) que representa a máquina virtual para a qual a replicação deve ser habilitada.
 
 </dd> <dt>
 
-*ReplicationSettingData* \[ no\]
+*ReplicationSettingData* \[ Em\]
 </dt> <dd>
 
 Uma representação de cadeia de caracteres de uma instância da classe [**Msvm \_ ReplicationSettingData**](msvm-replicationsettingdata.md) que define as configurações de replicação para a nova relação de replicação a ser criada para a máquina virtual.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -71,7 +71,7 @@ Esse método retorna um dos valores a seguir.
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -83,16 +83,16 @@ Esse método retorna um dos valores a seguir.
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em uso** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -101,10 +101,10 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> <dt>
 
 **Arquivo não encontrado** (32779)
@@ -112,32 +112,32 @@ O **sistema não está disponível** (32777)
 
 ## <a name="remarks"></a>Comentários
 
-**CreateReplicationRelationship** usa uma FRSD (instância [**\_ ReplicationSettingData Msvm**](msvm-replicationsettingdata.md) ) como entrada. O FRSD associado para a máquina virtual como o provedor host-to-host é a opção padrão. O FRSD de entrada é validado para configurações válidas para cada propriedade para o provedor padrão. Esta tabela resume as diferenças de validação em relação ao provedor externo.
+**CreateReplicationRelationship** aceita uma [**instância Msvm \_ ReplicationSettingData**](msvm-replicationsettingdata.md) (FRSD) como entrada. O FRSD associado para a máquina virtual como provedor de host para host é a opção padrão. O FRSD de entrada é validado para configurações válidas para cada propriedade para o provedor padrão. Esta tabela resume as diferenças de validação em relação ao provedor externo.
 
 
 
 | Propriedade                                             | Provedores externos                                 |
 |------------------------------------------------------|----------------------------------------------------|
-| Replicationprovider                                  | Mesmo que o provedor padrão                           |
+| ReplicationProvider                                  | O mesmo que o provedor padrão                           |
 | AuthenticationType                                   | Ignored                                            |
-| CertificateThumbPrint                                | Ignored                                            |
+| Certificatethumbprint                                | Ignored                                            |
 | RootCertificateThumbPrint (RO)                       | Ignored                                            |
-| CompressionEnabled                                   | Mesmo que o provedor padrão                           |
-| BypassProxyServer                                    | Mesmo que o provedor padrão                           |
-| RecoveryConnectionPoint                              | Ignorado \* (pode alterar se o provedor tiver requisito) |
+| Compressionenabled                                   | O mesmo que o provedor padrão                           |
+| BypassProxyServer                                    | O mesmo que o provedor padrão                           |
+| RecoveryConnectionPoint                              | Ignorado \* (pode mudar se o provedor tiver requisitos) |
 | RecoveryHostSystem (RO)                              | Ignored                                            |
-| PrimaryConnectionPoint (RO)                          | Mesmo que o provedor padrão                           |
-| PrimaryHostSystem (RO)                               | Mesmo que o provedor padrão                           |
-| RecoveryServerPortNumber                             | Ignorado \* (pode alterar se o provedor tiver requisito) |
+| PrimaryConnectionPoint (RO)                          | O mesmo que o provedor padrão                           |
+| PrimaryHostSystem (RO)                               | O mesmo que o provedor padrão                           |
+| RecoveryServerPortNumber                             | Ignorado \* (pode mudar se o provedor tiver requisitos) |
 | ReplicateHostKvpItems                                | Ignored                                            |
-| ApplicationConsistentSnapshotInterval                | Mesmo que o provedor padrão                           |
-| RecoveryHistory                                      | Mesmo que o provedor padrão                           |
-| IncludedDisks\[\]                                    | Mesmo que o provedor padrão                           |
-| AutoResynchronizeEnabled                             | Mesmo que o provedor padrão                           |
-| AutoResynchronizeIntervalStart                       | Mesmo que o provedor padrão                           |
-| AutoResynchronizeIntervalEnd                         | Mesmo que o provedor padrão                           |
-| EnableWriteOrderPreservationAcrossDisks (preterido) | Mesmo que o provedor padrão                           |
-| ReplicationInterval                                  | Mesmo que o provedor padrão                           |
+| ApplicationConsistentSnapshotInterval                | O mesmo que o provedor padrão                           |
+| RecoveryHistory                                      | O mesmo que o provedor padrão                           |
+| IncludedDisks\[\]                                    | O mesmo que o provedor padrão                           |
+| AutoResynchronizeEnabled                             | O mesmo que o provedor padrão                           |
+| AutoResynchronizeIntervalStart                       | O mesmo que o provedor padrão                           |
+| AutoResynchronizeIntervalEnd                         | O mesmo que o provedor padrão                           |
+| EnableWriteOrderPreservationAcrossDisks (preterido) | O mesmo que o provedor padrão                           |
+| ReplicationInterval                                  | O mesmo que o provedor padrão                           |
 
 
 
@@ -149,10 +149,10 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

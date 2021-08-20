@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-TSLS-Property01
-description: Propriedade 01 do servidor do terminal de espaço reservado.
+description: Espaço reservado para Propriedade do Terminal Server 01.
 ms.assetid: 640cb7b8-fc50-4b1d-acec-4b58910a9212
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo MS-TSLS-Property01
-- Esquema do AD do atributo msTSLSProperty01
+- Esquema de AD do atributo MS-TSLS-Property01
+- Esquema de AD do atributo msTSLSProperty01
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "118424444"
 ---
 # <a name="ms-tsls-property01-attribute"></a>Atributo MS-TSLS-Property01
 
-Propriedade 01 do servidor do terminal de espaço reservado.
+Espaço reservado para Propriedade do Terminal Server 01.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-TSLS-Property01                          |
-| Ldap-Display-Name | msTSLSProperty01                            |
+| LDAP-Display-Name | msTSLSProperty01                            |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.2009                     |
-| System-Id-Guid    | 87e53590-971d-4a52-955b-4794d15a84ae        |
-| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
+| System-ID-GUID    | 87e53590-971d-4a52-955b-4794d15a84ae        |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -55,10 +55,10 @@ Propriedade 01 do servidor do terminal de espaço reservado.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| Tem valor único       | Falso                             |
+| É de valor único       | Falso                             |
 | É indexado             | Verdadeiro                              |
-| No Catálogo Global      | Falso                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                      |
+| No catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000001                        |
@@ -76,10 +76,10 @@ Propriedade 01 do servidor do terminal de espaço reservado.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| Tem valor único       | Falso                             |
+| É de valor único       | Falso                             |
 | É indexado             | Verdadeiro                              |
-| No Catálogo Global      | Falso                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                      |
+| No catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000001                        |
@@ -97,10 +97,10 @@ Propriedade 01 do servidor do terminal de espaço reservado.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| Tem valor único       | Falso                             |
+| É de valor único       | Falso                             |
 | É indexado             | Verdadeiro                              |
-| No Catálogo Global      | Falso                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                      |
+| No catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | 0                                 |
 | Range-Upper            | 32767                             |
 | Search-Flags           | 0x00000001                        |

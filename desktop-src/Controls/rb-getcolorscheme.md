@@ -3,7 +3,7 @@ title: Mensagem de RB_GETCOLORSCHEME (commctrl. h)
 description: Recupera as informações do esquema de cores do controle rebar.
 ms.assetid: 01f81c4b-bbc9-43ae-a1f5-1e289c6fa278
 keywords:
-- Controles de RB_GETCOLORSCHEME de mensagens do Windows
+- controles de Windows de mensagem de RB_GETCOLORSCHEME
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a3d154fd14b93127aa22148f2882f70018225cb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b918b46d1077c0074584be2d609d486097cc2e40f7a5c62a03db914fce58e320
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118169616"
 ---
 # <a name="rb_getcolorscheme-message"></a>\_Mensagem GETCOLORSCHEME RB
 
@@ -39,7 +39,7 @@ Ponteiro para uma estrutura [**ColorScheme**](/windows/win32/api/commctrl/ns-com
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -49,9 +49,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

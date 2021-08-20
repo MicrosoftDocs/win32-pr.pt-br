@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 93f12242fef86e5eab81bb702b783eb1f4c1915c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 641ebb361d14fa8abb0c8199cf113cfd85a2e6700e262447c1302f3f1b66231a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151402"
 ---
 # <a name="perfinfo-class"></a>Classe PerfInfo
 
@@ -36,29 +36,29 @@ class PerfInfo : MSNT_SystemTrace
 
 ## <a name="members"></a>Membros
 
-A classe **PerfInfo** não define nenhum membro.
+A **classe PerfInfo** não define nenhum membro.
 
 ## <a name="remarks"></a>Comentários
 
-Para habilitar eventos de DPC (chamada de procedimento deferida) em uma sessão de log do kernel NT, especifique o sinalizador de DPC do sinalizador de rastreamento de eventos no membro **EnableFlags** de uma [](/windows/win32/api/evntrace/nf-evntrace-starttracea) estrutura de [**Propriedades de \_ rastreamento \_ de eventos**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) ao chamar a função StartTrace. **\_ \_ \_** Você também pode especificar um ou mais dos seguintes sinalizadores:
+Para habilitar eventos DPC (chamada de procedimento adiado) em uma sessão de log do Kernel NT, especifique o sinalizador **\_ \_ \_ DPC DO** SINALIZADOR DE RASTREAMENTO DE EVENTOS no membro **EnableFlags** de uma estrutura [**EVENT TRACE \_ \_ PROPERTIES**](/windows/win32/api/evntrace/ns-evntrace-event_trace_properties) ao chamar a [**função StartTrace.**](/windows/win32/api/evntrace/nf-evntrace-starttracea) Você também pode especificar um ou mais dos seguintes sinalizadores:
 
--   **\_interrupção do \_ sinalizador de rastreamento de eventos \_**
--   **\_perfil do \_ sinalizador de rastreamento de eventos \_**
--   **sinalizador de rastreamento de eventos \_ \_ \_ SYSTEMCALL**
+-   **INTERRUPÇÃO \_ DO SINALIZADOR DE RASTREAMENTO DE \_ \_ EVENTO**
+-   **PERFIL DO \_ SINALIZADOR DE RASTREAMENTO DE \_ \_ EVENTOS**
+-   **SYSTEMCALL \_ DO SINALIZADOR DE RASTREAMENTO DE \_ \_ EVENTOS**
 
-Os consumidores de rastreamento de eventos podem implementar processamento especial para eventos DPC chamando a função [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) e especificando [**PerfInfoGuid**](nt-kernel-logger-constants.md) como o parâmetro *pGuid* . Use os tipos de evento a seguir para identificar o evento real ao consumir eventos.
+Os consumidores de rastreamento de eventos podem implementar o processamento especial para eventos DPC chamando a função [**SetTraceCallback**](/windows/win32/api/evntrace/nf-evntrace-settracecallback) e especificando [**PerfInfoGuid**](nt-kernel-logger-constants.md) como o *parâmetro pGuid.* Use os seguintes tipos de evento para identificar o evento real ao consumir eventos.
 
 
 
 | Tipo de evento           | Descrição                                                                                                          |
 |----------------------|----------------------------------------------------------------------------------------------------------------------|
-| Valor do tipo de evento, 46 | Exemplo de evento de perfil. A classe MOF [**SampledProfile**](sampledprofile.md) define os dados do evento para esse evento. |
-| Valor do tipo de evento, 51 | Evento de entrada de chamada do sistema. A classe MOF [**SysCallEnter**](syscallenter.md) define os dados do evento para esse evento.   |
-| Valor do tipo de evento, 52 | Evento de saída de chamada do sistema. A classe MOF [**SysCallExit**](syscallexit.md) define os dados do evento para esse evento.      |
-| Valor do tipo de evento, 66 | Evento de DPC threaded. A classe do MOF [**DPC**](dpc.md) define os dados do evento para esse evento.                          |
-| Valor do tipo de evento, 67 | Evento da rotina de serviço de interrupção (ISR). A classe do MOF do [**ISR**](isr.md) define os dados do evento para esse evento.       |
-| Valor do tipo de evento, 68 | Evento DPC. A classe do MOF [**DPC**](dpc.md) define os dados do evento para esse evento.                                   |
-| Valor do tipo de evento, 69 | Evento de timer de DPC. A classe do MOF [**DPC**](dpc.md) define os dados do evento para esse evento.                             |
+| Valor do tipo de evento, 46 | Evento de perfil de exemplo. A [**classe MOF SampledProfile**](sampledprofile.md) define os dados de evento para esse evento. |
+| Valor do tipo de evento, 51 | Evento de entrada de chamada do sistema. A [**classe MOF SysCallEnter**](syscallenter.md) define os dados de evento para esse evento.   |
+| Valor do tipo de evento, 52 | Evento de saída de chamada do sistema. A [**classe MOF SysCallExit**](syscallexit.md) define os dados de evento para esse evento.      |
+| Valor do tipo de evento, 66 | Evento DPC threaded. A [**classe MOF DPC**](dpc.md) define os dados de evento para esse evento.                          |
+| Valor do tipo de evento, 67 | Evento ISR (rotina de serviço de interrupção). A [**classe ISR**](isr.md) MOF define os dados de evento para esse evento.       |
+| Valor do tipo de evento, 68 | Evento DPC. A [**classe MOF DPC**](dpc.md) define os dados de evento para esse evento.                                   |
+| Valor do tipo de evento, 69 | Evento de temporizador DPC. A [**classe MOF DPC**](dpc.md) define os dados de evento para esse evento.                             |
 
 
 
@@ -70,8 +70,8 @@ Os consumidores de rastreamento de eventos podem implementar processamento espec
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
