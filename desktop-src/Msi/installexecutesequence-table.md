@@ -4,12 +4,12 @@ ms.assetid: 995d4159-bfc9-48b2-8328-3ae8251d785d
 title: Tabela InstallExecuteSequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d7d110debacab19739c3da69abf3948d11bb7aa6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d48fb83bd8f3c947feb81ab95df490572ba1ee68d423957759a95c323005070
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142153"
 ---
 # <a name="installexecutesequence-table"></a>Tabela InstallExecuteSequence
 
@@ -25,9 +25,9 @@ A tabela InstallExecuteSequence tem as colunas a seguir.
 
 | Coluna    | Tipo                         | Chave | Nullable |
 |-----------|------------------------------|-----|----------|
-| Ação    | [Identificador](identifier.md) | S   | N        |
-| Condição | [Condição](condition.md)   | N   | S        |
-| Sequência  | [Inteiro](integer.md)       | N   | S        |
+| Ação    | [Identificador](identifier.md) | Y   | N        |
+| Condição | [Condição](condition.md)   | N   | Y        |
+| Sequência  | [Inteiro](integer.md)       | N   | Y        |
 
 
 

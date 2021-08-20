@@ -4,12 +4,12 @@ ms.assetid: 84650abf-235e-4792-a67d-2f0f08b85a32
 title: Mensagem de PHONE_CLOSE (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d9a7641b437a10098806fc7ad52aa64200ca015
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: db25a4c3c87aec35c5249a29a95c6799a49bceda55438e6dcf0e2f10582e1851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118862565"
 ---
 # <a name="phone_close-message"></a>Mensagem de fechamento do telefone \_
 
@@ -61,7 +61,7 @@ Não utilizado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -78,7 +78,7 @@ Um dispositivo de telefone aberto também pode ser fechado à força após o usu
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

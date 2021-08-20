@@ -3,9 +3,9 @@ title: Propriedade de nome IWMPPlaylist
 description: A propriedade Name Obtém ou define o nome da lista de reprodução.
 ms.assetid: abf25a49-5e07-43e6-ab45-6bc09c952c45
 keywords:
-- Propriedade de nome Windows Media Player
-- Propriedade Name Windows Media Player, interface IWMPPlaylist
-- Interface IWMPPlaylist Windows Media Player, Propriedade Name
+- Windows Media Player de propriedade de nome
+- propriedade name Windows Media Player, interface IWMPPlaylist
+- Windows Media Player de interface IWMPPlaylist, propriedade name
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c36075362105370cc7177157d47aede0b3376049
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 64dd1702c5964e09f92c088d071b9c8de977d93c0d03f68da72d26e132017744
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811667"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053454"
 ---
 # <a name="iwmpplaylistname-property"></a>Propriedade IWMPPlaylist:: Name
 

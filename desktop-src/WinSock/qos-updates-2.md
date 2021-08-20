@@ -1,5 +1,5 @@
 ---
-description: Informações sobre onde encontrar detalhes de implementação de QoS (qualidade de serviço).
+description: Informações sobre onde encontrar detalhes de implementação de QoS (Qualidade de Serviço).
 ms.assetid: aaac8a91-2769-408c-8f58-de0519e38d5b
 title: Atualizações de QoS
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119996826"
 ---
 # <a name="qos-updates"></a>Atualizações de QoS
 
-os detalhes de implementação de qos (qualidade de serviço) são fornecidos em uma seção de qos separada e dedicada no SDK (Software Development Kit) do Microsoft Windows. consulte a seção [qualidade de serviço](/previous-versions/windows/desktop/qos/qos-start-page) da SDK do Windows para obter informações sobre atualizações de QoS.
+Os detalhes de implementação de QoS (Qualidade de Serviço) são fornecidos em uma seção de QoS separada e dedicada no SDK (Software Development Kit) do Microsoft Windows. Consulte a [seção Qualidade de Serviço](/previous-versions/windows/desktop/qos/qos-start-page) do SDK do Windows para obter informações sobre atualizações de QoS.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -22,7 +22,7 @@ os detalhes de implementação de qos (qualidade de serviço) são fornecidos em
 [Quality of Service (QoS)](/previous-versions/windows/desktop/qos/qos-start-page)
 </dt> <dt>
 
-[qualidade de serviço no SPI do Windows sockets 2](quality-of-service-in-the-windows-sockets-2-spi-2.md)
+[Qualidade de serviço na SPI Windows Soquetes 2](quality-of-service-in-the-windows-sockets-2-spi-2.md)
 </dt> </dl>
 
  

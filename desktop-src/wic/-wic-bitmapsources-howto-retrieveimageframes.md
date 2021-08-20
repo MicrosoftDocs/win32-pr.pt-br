@@ -4,12 +4,12 @@ ms.assetid: e4f69608-7bf1-4d54-b586-b749526700c9
 title: Como recuperar os quadros de uma imagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeeb19e0a0ac69f75673df0736fd0bd4987b3423
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dc9fb9802071115f62da78a10798e5e76aa83052270d40108e7c590acb8b2f46
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119841436"
 ---
 # <a name="how-to-retrieve-the-frames-from-an-image"></a>Como recuperar os quadros de uma imagem
 
@@ -17,7 +17,7 @@ Este tópico demonstra como decodificar uma imagem de vários quadros e recupera
 
 Para recuperar os quadros de uma imagem
 
-1.  Crie um [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para criar objetos do Windows Imaging Component (WIC).
+1.  crie um [**IWICImagingFactory**](/windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory) para criar objetos do Windows (componente de geração de imagens).
 
     ```C++
     // Create WIC factory

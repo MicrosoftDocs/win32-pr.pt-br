@@ -24,26 +24,26 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 54d6c21fe623e7ee7544098c7487523f2c5f86e7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bb42fd6aae84bea83202efbe6badceaa1d66694fb77bd1fda73500460cca9f52
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921231"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119968816"
 ---
 # <a name="floatcolumnvalue-class"></a>Classe FloatColumnValue
 
-Um valor de coluna [única](/dotnet/api/system.single) .
+Um [valor de](/dotnet/api/system.single) coluna única.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [Microsoft. ISAM. ESENT. Interop. Columnvalue](./columnvalue-class.md)  
-    [Microsoft. ISAM. ESENT. Interop. ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Single](/dotnet/api/system.single)\>  
-      Microsoft. ISAM. ESENT. Interop. FloatColumnValue  
+  [Microsoft.Isam.Esent.Interop.ColumnValue](./columnvalue-class.md)  
+    [Microsoft.Isam.Esent.Interop.ColumnValueOfStruct](./columnvalueofstruct-t-class.md)\<[Single](/dotnet/api/system.single)\>  
+      Microsoft.Isam.Esent.Interop.FloatColumnValue  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -67,6 +67,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do FloatColumnValue](./floatcolumnvalue-members.md)
+[Membros FloatColumnValue](./floatcolumnvalue-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

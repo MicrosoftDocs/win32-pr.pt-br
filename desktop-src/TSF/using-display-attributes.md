@@ -3,18 +3,18 @@ title: Usando atributos de exibição
 description: Veja como usar atributos de exibição. Estrutura de Serviços de Texto (TSF) permite que um serviço de texto forneça atributos de exibição para texto.
 ms.assetid: b0f6e8e8-586a-4b51-a498-fb22bd36161f
 keywords:
-- Estrutura de Serviços de Texto (TSF), atributos de exibição
+- Estrutura de Serviços de Texto (TSF), exibir atributos
 - TSF (Estrutura de Serviços de Texto), atributos de exibição
 - Aplicativos habilitados para TSF, atributos de exibição
 - atributos de exibição
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c3c576064ab22571b5a7822f5e6ff143add55d03
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d38eee650e85195290d116be2bdb88a0665c9fc1651d874dd9c5469d08799e50
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118873428"
 ---
 # <a name="using-display-attributes"></a>Usando atributos de exibição
 

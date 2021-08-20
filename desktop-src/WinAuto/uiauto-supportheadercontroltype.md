@@ -21,12 +21,12 @@ keywords:
 - tipos de controle, cabeçalho
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c38ee0a00749888c624b627db247f2d01d24ff1c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 472a0d7185fa3c2b2dc1dc7593afd106008890bb
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363935"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122482502"
 ---
 # <a name="header-control-type"></a>Tipo de controle de cabeçalho
 
@@ -50,33 +50,15 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Exibição de controle</th>
-<th>Exibição de conteúdo</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li>parâmetro
-<ul>
-<li>HeaderItem (1 ou mais)</li>
-</ul></li>
-</ul></td>
-<td>(Não aplicável)</td>
-</tr>
-</tbody>
-</table>
+
+| Exibição de controle | Exibição de conteúdo | 
+|--------------|--------------|
+| <ul><li>Cabeçalho<ul><li>HeaderItem (1 ou mais)</li></ul></li></ul> | (Não aplicável) | 
 
 
 
- 
+
+ 
 
 Controles de cabeçalho sempre têm um ou mais filhos na exibição de controle da árvore de automação da interface do usuário.
 
@@ -104,7 +86,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-control-patterns"></a>Padrões de controle necessários
 
@@ -118,7 +100,7 @@ A tabela a seguir lista os padrões de controle de automação da interface do u
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
@@ -136,7 +118,7 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -151,9 +133,9 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 [Visão geral de automação da interface do usuário](uiauto-uiautomationoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

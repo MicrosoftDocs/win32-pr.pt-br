@@ -4,20 +4,20 @@ description: Como uma interface de software para hardware de gráficos, o OpenGL
 ms.assetid: ddd7c8d0-f1d1-4d16-bd0c-99cee3d733c5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02bec69473f937d4dfff9c496d291e8070ffadef
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 90287c76c7c0ccc4355dd35d4edc119191a55e318d8a7275cfa2ee683162dba4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454297"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119486316"
 ---
 # <a name="opengl"></a>OpenGL
 
 ## <a name="purpose"></a>Finalidade
 
-Como uma interface de software para hardware de gráficos, o OpenGL renderiza objetos multidimensionais em um framebuffer. A implementação da Microsoft do OpenGL para o sistema operacional Windows é um software gráfico padrão da indústria com o qual os programadores podem criar imagens de cores tridimensionais e de alta qualidade ainda e animadas. A versão do OpenGL descrita nesta seção é 1,1.
+Como uma interface de software para hardware de gráficos, o OpenGL renderiza objetos multidimensionais em um framebuffer. a implementação da Microsoft do OpenGL para o sistema operacional Windows é um software de gráficos padrão da indústria com o qual os programadores podem criar imagens de cores tridimensionais e de alta qualidade ainda e animadas. A versão do OpenGL descrita nesta seção é 1,1.
 
-Para obter informações sobre OpenGL ES em execução no Windows, consulte [Angle for Windows Store](https://github.com/microsoft/angle/wiki).
+para obter informações sobre OpenGL ES em execução no Windows, consulte [ângulo para Windows Store](https://github.com/microsoft/angle/wiki).
 
 ## <a name="where-applicable"></a>Quando aplicável
 
@@ -25,7 +25,7 @@ O OpenGL foi criado para compatibilidade entre hardware e sistemas operacionais.
 
 ## <a name="developer-audience"></a>Público de desenvolvedores
 
-Projetado para ser usado por programadores C/C++, o OpenGL requer familiaridade com a interface gráfica do usuário do Windows, bem como a arquitetura controlada por mensagem.
+projetado para ser usado por programadores C/C++, o OpenGL requer familiaridade com a interface gráfica do usuário Windows, bem como a arquitetura controlada por mensagem.
 
 ## <a name="run-time-requirements"></a>Requisitos de tempo de execução
 
@@ -55,16 +55,16 @@ Para obter mais informações sobre quais sistemas operacionais são necessário
 [Imagem ainda](/previous-versions/windows/desktop/legacy/cc836557(v=vs.85))
 </dt> <dt>
 
-[WCS (sistema de cores do Windows)](/previous-versions//dd372446(v=vs.85))
+[Windows Sistema de cores (WCS)](/previous-versions//dd372446(v=vs.85))
 </dt> <dt>
 
 [GDI do Windows](/windows/desktop/gdi/windows-gdi)
 </dt> <dt>
 
-[Aquisição de imagem do Windows](../wia/-wia-startpage.md)
+[Windows Aquisição de imagem](../wia/-wia-startpage.md)
 </dt> <dt>
 
-[Multimídia do Windows](/windows/desktop/Multimedia/windows-multimedia-start-page)
+[Windows Média](/windows/desktop/Multimedia/windows-multimedia-start-page)
 </dt> <dt>
 
 [API do Windows](/previous-versions//cc433218(v=vs.85))

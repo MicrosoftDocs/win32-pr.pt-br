@@ -1,19 +1,19 @@
 ---
-description: O número máximo de quadros que o codificador H. 264 leva para responder a um comando.
+description: O número máximo de quadros que o codificador H.264 leva para responder a um comando.
 ms.assetid: C856B2B0-4A06-436D-B589-B01DA86DB53D
-title: Atributo MF_MT_H264_MAX_CODEC_CONFIG_DELAY (Mfapi. h)
+title: MF_MT_H264_MAX_CODEC_CONFIG_DELAY atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a835d5b5a37be0c722f313aaf4fe8ed8aa55f00
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: efc3610f9fce8201e3381b9684e3ea5b76578d8a22f751821dd16b0d9742ffff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754859"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035194"
 ---
-# <a name="mf_mt_h264_max_codec_config_delay-attribute"></a>\_Atributo de atraso de configuração de codec MF MT \_ H264 \_ Max \_ \_ \_
+# <a name="mf_mt_h264_max_codec_config_delay-attribute"></a>Atributo \_ MF MT \_ H264 \_ MAX \_ CODEC \_ CONFIG \_ DELAY
 
-O número máximo de quadros que o codificador H. 264 leva para responder a um comando.
+O número máximo de quadros que o codificador H.264 leva para responder a um comando.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,9 +21,9 @@ O número máximo de quadros que o codificador H. 264 leva para responder a um c
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obter esse atributo, chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para definir esse atributo, chame [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="applies-to"></a>Aplica-se a
 
@@ -31,9 +31,9 @@ Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/deskt
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo se aplica aos tipos de mídia para os fluxos H. 264 transmitidos por USB. O valor corresponde ao campo **bMaxCodecConfigDelay** no descritor de formato de vídeo UVC 1,2 H. 264.
+Esse atributo se aplica a tipos de mídia para fluxos H.264 transmitidos por USB. O valor corresponde ao **campo bMaxCodecConfigDelay** no descritor de formato de vídeo UVC 1.2 H.264.
 
-Esse atributo também é usado com [codificadores de câmera H. 264 UVC 1,5](camera-encoder-h264-uvc-1-5.md).
+Esse atributo também é usado com codificadores de câmera [UVC 1.5 H.264](camera-encoder-h264-uvc-1-5.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,9 +41,9 @@ Esse atributo também é usado com [codificadores de câmera H. 264 UVC 1,5](cam
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -51,7 +51,7 @@ Esse atributo também é usado com [codificadores de câmera H. 264 UVC 1,5](cam
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos de tipo de mídia](media-type-attributes.md)

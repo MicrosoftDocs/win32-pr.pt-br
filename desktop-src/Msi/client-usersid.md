@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: 81f9cdd07f4d787d86c487f427de6964af1438e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e542907919462e1952ff4418bd2a15b29b18fd13ee12739509736fabfd71f445
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118145615"
 ---
 # <a name="clientusersid-property"></a>Propriedade Client. UserId
 
 O SID do usuário para o componente. Essa propriedade chama a função [**MsiEnumClientsEx**](/windows/desktop/api/Msi/nf-msi-msienumclientsexa) .
 
-**[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte. Essa propriedade está disponível a partir do Windows Installer 5,0.
+**[Windows Installer 4,5 ou anterior](not-supported-in-windows-installer-4-5.md):** Sem suporte. essa propriedade está disponível a partir do Windows Installer 5,0.
 
 ## <a name="syntax"></a>Syntax
 
@@ -36,7 +36,7 @@ O SID do usuário para o componente. Essa propriedade chama a função [**MsiEnu
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 ou posterior.<br/>                                         |
+| Versão<br/> | Windows Instalador 5,0 ou posterior.<br/>                                         |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl> |
 | IID<br/>     | IID \_ IClient é definido como 000C1098-0000-0000-C000-000000000046<br/>         |
 

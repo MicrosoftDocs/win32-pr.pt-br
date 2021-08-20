@@ -3,7 +3,7 @@ title: Referência de e/s de arquivo de multimídia
 description: Referência de e/s de arquivo de multimídia
 ms.assetid: 1f24432e-7407-4b97-80ab-0a0c40c09253
 keywords:
-- Multimídia do Windows, referência de e/s de arquivo
+- Windows multimídia, referência de e/s de arquivo
 - multimídia, referência de e/s de arquivo
 - entrada de multimídia, referência de e/s de arquivo
 - referência de e/s de arquivo de multimídia
@@ -15,12 +15,12 @@ keywords:
 - referência de e/s de arquivo, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a0f833b7fb6677e064c19897e276d3961038cfc
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 06d61b06c16b12a9276adc0d858a3170dae2f7d636cc63a9ac6cc032a65c978c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103640479"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136897"
 ---
 # <a name="multimedia-file-io-reference"></a>Referência de e/s de arquivo de multimídia
 
@@ -73,6 +73,6 @@ Esta seção descreve as funções, macros, mensagens e estruturas associadas à
 [E/s de arquivo multimídia](multimedia-file-i-o.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

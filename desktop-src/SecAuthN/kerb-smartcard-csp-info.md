@@ -1,7 +1,7 @@
 ---
-description: Contém informações sobre um provedor de serviços de criptografia (CSP) de cartão inteligente.
+description: Contém informações sobre um CSP (provedor de serviços criptográficos) de cartão inteligente.
 ms.assetid: b3e6722a-25dd-4137-b224-4082e846ddec
-title: Estrutura de KERB_SMARTCARD_CSP_INFO
+title: KERB_SMARTCARD_CSP_INFO estrutura
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,18 +12,18 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 03b1a8084e291dde5a4f1f2017e4e97f57640bca
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 190c3e770a50acb7363fb10c469a7400831bc7b512d2b8158d687c83403b6df9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105752827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120127336"
 ---
-# <a name="kerb_smartcard_csp_info-structure"></a>\_Estrutura de \_ informações do CSP do KERB SmartCard \_
+# <a name="kerb_smartcard_csp_info-structure"></a>Estrutura DE INFORMAÇÕES do CSP do KERB \_ SMARTCARD \_ \_
 
-A estrutura de **\_ informações do \_ CSP \_ do KERB SmartCard** contém informações sobre um CSP ( [*provedor de serviços de criptografia*](../secgloss/c-gly.md) ) de cartão inteligente.
+A **estrutura KERB \_ SMARTCARD \_ CSP \_ INFO** contém informações sobre um CSP (provedor de [*serviços criptográficos) de cartão*](../secgloss/c-gly.md) inteligente.
 
-Essa estrutura não é declarada em um cabeçalho público.
+Essa estrutura não é declarada em um header público.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,7 +55,7 @@ typedef struct _KERB_SMARTCARD_CSP_INFO {
 **dwCspInfoLen**
 </dt> <dd>
 
-O tamanho, em bytes, dessa estrutura, incluindo os dados anexados.
+O tamanho, em bytes, dessa estrutura, incluindo todos os dados anexados.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ O tipo de mensagem que está sendo passada. Esse membro deve ser definido como 1
 
 </dd> <dt>
 
-**ContextInformation**
+**Contextinformation**
 </dt> <dd>
 
 Reservado.
@@ -87,17 +87,17 @@ Reservado.
 
 </dd> <dt>
 
-**KeySpec**
+**Keyspec**
 </dt> <dd>
 
-A chave privada a ser usada do contêiner de chave especificado no buffer **bBuffer**. A chave pode ser um dos seguintes valores, definidos em WinCrypt. h.
+A chave privada a ser usada do contêiner de chave especificado no buffer **bBuffer.** A chave pode ser um dos valores a seguir, definidos em WinCrypt.h.
 
 
 
 | Valor                                                                                                                                                                                                                   | Significado                                   |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| <span id="AT_KEYEXCHANGE"></span><span id="at_keyexchange"></span><dl> <dt>**Às \_ TROCA**</dt> de <dt>key1</dt> </dl> | A chave é uma chave de troca de chaves.<br/> |
-| <span id="AT_SIGNATURE"></span><span id="at_signature"></span><dl> <dt>**Às \_ ASSINATURA**</dt> <dt>2</dt> </dl>       | A chave é uma chave de assinatura.<br/>    |
+| <span id="AT_KEYEXCHANGE"></span><span id="at_keyexchange"></span><dl> <dt>**AT \_ KEYEXCHANGE**</dt> <dt>1</dt> </dl> | A chave é uma chave de troca de chaves.<br/> |
+| <span id="AT_SIGNATURE"></span><span id="at_signature"></span><dl> <dt>**AT \_ ASSINATURA**</dt> <dt>2</dt> </dl>       | A chave é uma chave de assinatura.<br/>    |
 
 
 
@@ -108,7 +108,7 @@ A chave privada a ser usada do contêiner de chave especificado no buffer **bBuf
 **nCardNameOffset**
 </dt> <dd>
 
-O número de caracteres no buffer **bBuffer** que precede o nome do cartão inteligente nesse buffer.
+O número de caracteres no buffer **bBuffer** que precedem o nome do cartão inteligente nesse buffer.
 
 > [!IMPORTANT]
 > Se o nome do cartão inteligente não for fornecido, o buffer deverá conter uma cadeia de caracteres vazia.
@@ -120,7 +120,7 @@ O número de caracteres no buffer **bBuffer** que precede o nome do cartão inte
 **nReaderNameOffset**
 </dt> <dd>
 
-O número de caracteres no buffer **bBuffer** que precede o nome do leitor de cartão inteligente nesse buffer.
+O número de caracteres no buffer **bBuffer** que precedem o nome do leitor de cartão inteligente nesse buffer.
 
 > [!IMPORTANT]
 > Se o nome do leitor de cartão inteligente não for fornecido, o buffer deverá conter uma cadeia de caracteres vazia.
@@ -132,23 +132,23 @@ O número de caracteres no buffer **bBuffer** que precede o nome do leitor de ca
 **nContainerNameOffset**
 </dt> <dd>
 
-O número de caracteres no buffer **bBuffer** que precede o nome do contêiner de chave nesse buffer. Esta cadeia de caracteres não pode ficar vazia.
+O número de caracteres no buffer **bBuffer** que precedem o nome do contêiner de chave nesse buffer. Essa cadeia de caracteres não pode estar vazia.
 
 </dd> <dt>
 
 **nCSPNameOffset**
 </dt> <dd>
 
-O número de caracteres no buffer **bBuffer** que precede o nome do CSP nesse buffer.
+O número de caracteres no buffer **bBuffer** que precedem o nome do CSP nesse buffer.
 
 </dd> <dt>
 
 **bBuffer**
 </dt> <dd>
 
-Uma matriz de caracteres inicializada com um comprimento de `sizeof(DWORD)` . Esse buffer contém os nomes referenciados pelos membros **nCardNameOffset**, **nReaderNameOffset**, **nContainerNameOffset** e **nCSPNameOffset** , bem como quaisquer dados adicionais fornecidos pelo CSP.
+Uma matriz de caracteres inicializados com um comprimento de `sizeof(DWORD)` . Esse buffer contém os nomes chamados pelos membros **nCardNameOffset**, **nReaderNameOffset**, **nContainerNameOffset** e **nCSPNameOffset,** bem como quaisquer dados adicionais fornecidos pelo CSP.
 
-Os nomes que não são fornecidos devem ser representados nesse buffer por cadeias de caracteres vazias.
+Todos os nomes que não são fornecidos devem ser representados nesse buffer por cadeias de caracteres vazias.
 
 </dd> </dl>
 
@@ -162,8 +162,8 @@ Quando essa estrutura é serializada, os membros da estrutura devem ser alinhado
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -171,7 +171,7 @@ Quando essa estrutura é serializada, os membros da estrutura devem ser alinhado
 
 <dl> <dt>
 
-[**\_logon do certificado KERB \_**](/windows/desktop/api/Ntsecapi/ns-ntsecapi-kerb_certificate_logon)
+[**LOGON DO \_ \_ CERTIFICADO KERB**](/windows/desktop/api/Ntsecapi/ns-ntsecapi-kerb_certificate_logon)
 </dt> </dl>
 
  

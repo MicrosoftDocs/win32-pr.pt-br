@@ -1,7 +1,7 @@
 ---
-description: A propriedade Format do objeto ConfigurableItem retorna o valor da coluna Format da Tabela ModuleConfiguration.
+description: A propriedade Format do objeto ConfigurableItem retorna o valor da coluna Formato da tabela ModuleConfiguration.
 ms.assetid: e75ed650-7309-4e24-9c35-82ebf27d011b
-title: Propriedade ConfigurableItem. Format (Mergemod. h)
+title: Propriedade ConfigurableItem.Format (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 20db09126e9b10aac5c31a3748c4f1606f3f3bab
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ee8770029c8465d1e1a60349010847ff38fdac928bb61cd02b0e5a2b034538c8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747778"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118143993"
 ---
-# <a name="configurableitemformat-property"></a>Propriedade ConfigurableItem. Format
+# <a name="configurableitemformat-property"></a>Propriedade ConfigurableItem.Format
 
-A propriedade **Format** do objeto [**ConfigurableItem**](configurableitem-object.md) retorna o valor da coluna Format da [Tabela ModuleConfiguration](moduleconfiguration-table.md).
+A **propriedade Format** do objeto [**ConfigurableItem**](configurableitem-object.md) retorna o valor da coluna Formato da tabela [ModuleConfiguration](moduleconfiguration-table.md).
 
 Esta propriedade é somente para leitura.
 
@@ -40,7 +40,7 @@ propVal = ConfigurableItem.Format
 
 ## <a name="remarks"></a>Comentários
 
-Esta propriedade só pode ter os valores a seguir.
+Essa propriedade só pode ter os valores a seguir.
 
 
 
@@ -57,7 +57,7 @@ Esta propriedade só pode ter os valores a seguir.
 
 ### <a name="c"></a>C++
 
-Consulte [**obter \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_format) função de formato.
+Consulte [**obter \_ a função**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurableitem-get_format) Format.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -65,8 +65,8 @@ Consulte [**obter \_**](/windows/desktop/api/Mergemod/nf-mergemod-imsmconfigurab
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versão<br/> | Mergemod.dll 2,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versão<br/> | Mergemod.dll 2.0 ou posterior<br/>                                                    |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

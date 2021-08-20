@@ -1,11 +1,11 @@
 ---
-title: Método IWMPMediaCollection getByName
+title: Método getByName IWMPMediaCollection
 description: O método getByName retorna uma interface IWMPPlaylist que fornece acesso a itens de mídia com o nome especificado.
 ms.assetid: 137e938c-eb9f-4a87-8962-880e71a11ca2
 keywords:
-- método getByName Windows Media Player
-- método getByName Windows Media Player, interface IWMPMediaCollection
-- Interface IWMPMediaCollection Windows Media Player, método getByName
+- Método getByName Windows Media Player
+- Método getByName Windows Media Player , interface IWMPMediaCollection
+- Interface IWMPMediaCollection Windows Media Player método , getByName
 topic_type:
 - apiref
 api_name:
@@ -16,14 +16,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 64c68e2a5359eadf9c6212571ed948c103c01bdf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8c2e9eba2f4aa55e650a7e69572cc884fa237eb72869a0bbd882a42b546634c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053584"
 ---
-# <a name="iwmpmediacollectiongetbyname-method"></a>Método IWMPMediaCollection:: getByName
+# <a name="iwmpmediacollectiongetbyname-method"></a>Método IWMPMediaCollection::getByName
 
 O `getByName` método retorna uma interface **IWMPPlaylist** que fornece acesso a itens de mídia com o nome especificado.
 
@@ -53,26 +53,26 @@ Implements IWMPMediaCollection.getByName
 
 <dl> <dt>
 
-*bstrname* \[ no\]
+*bstrName* \[ Em\]
 </dt> <dd>
 
-O **System. String** que é o nome especificado.
+O **System.String** que é o nome especificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Uma interface **WMPLib. IWMPPlaylist** para os itens de mídia recuperados.
+Uma interface **WMPLib.IWMPPlaylist** para os itens de mídia recuperados.
 
 ## <a name="remarks"></a>Comentários
 
-Antes de chamar esse método, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Antes de chamar esse método, você deve ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
-Há duas maneiras de se recuperar uma interface **IWMPMediaCollection** , e o comportamento do `getByName` método depende de quais dessas duas maneiras você usa. Se você recuperar a interface chamando [AxWindowsMediaPlayer. mediacollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), o `getByName` método retornará todos os itens de mídia na biblioteca. No entanto, se você recuperar a interface chamando [IWMPLibrary. mediacollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), o `getByName` método retornará apenas os itens de áudio na biblioteca que têm o atributo e o valor especificados.
+Há duas maneiras de recuperar uma interface **IWMPMediaCollection** e o comportamento do método depende de qual dessas duas maneiras `getByName` você usa. Se você recuperar a interface chamando [AxWindowsMediaPlayer.mediaCollection](axwmplib-axwindowsmediaplayer-mediacollection--vb-and-c.md), o método retornará todos os itens `getByName` de mídia na biblioteca. No entanto, se você recuperar a interface chamando [IWMPLibrary.mediaCollection](wmplibiwmplibrary-iwmplibrary-mediacollection--vb-and-c.md), o método retornará apenas os itens de áudio na biblioteca que têm o atributo e o valor `getByName` especificados.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa `getByName` para recuperar três itens da biblioteca. Cada item é acrescentado à playlist atual. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+O exemplo a seguir `getByName` usa para recuperar três itens da biblioteca. Cada item é então anexado à playlist atual. O **objeto AxWMPLib.AxWindowsMediaPlayer** é representado pela variável chamada player.
 
 
 ```CSharp
@@ -133,7 +133,7 @@ player.currentPlaylist.appendItem(three.Item(0))
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

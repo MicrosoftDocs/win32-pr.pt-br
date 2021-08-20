@@ -1,6 +1,6 @@
 ---
 title: Tornando os jogos de vídeo acessíveis justificativas de negócios e considerações de design
-description: Este artigo destina-se a desenvolvedores de conteúdo de jogos e produtores que desejam acessar o mercado da comunidade de acessibilidade adicionando recursos básicos de acessibilidade para ajudar as pessoas com deficiências ou deficiências.
+description: Este artigo é para desenvolvedores de conteúdo de jogos e produtores que querem alcançar o mercado da comunidade de acessibilidade adicionando recursos básicos de acessibilidade para ajudar pessoas com deficiências ou deficiências.
 ms.assetid: 95580b75-fb8e-b8a9-2137-40d6c60ae35d
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,103 +13,103 @@ ms.locfileid: "120051207"
 ---
 # <a name="making-video-games-accessible-business-justifications-and-design-considerations"></a>Tornando os jogos de vídeo acessíveis: justificativas de negócios e considerações de design
 
-Os editores e desenvolvedores de jogos adoram se concentrar em recursos que terão seus títulos observados pela comunidade de jogos principal, como gráficos e áudio. Mas há outro público, ansiosos para participar desses jogos também. Esses jogadores vêm da comunidade de acessibilidade uma comunidade de pessoas com deficiências, bem como aquelas que se preocupam com seus Welfare.
+Editores e desenvolvedores de jogos gostam de se concentrar em recursos que receberão seus títulos observados pela comunidade de jogos base, como elementos gráficos e áudio. Mas há outro público-alvo, ansioso para participar desses jogos também. Esses jogadores vêm da comunidade de acessibilidade, uma comunidade de pessoas com deficiências, bem como aqueles que se importam com seus direitos.
 
-Este artigo destina-se a desenvolvedores de conteúdo de jogos e produtores que desejam acessar o mercado da comunidade de acessibilidade adicionando recursos básicos de acessibilidade para ajudar as pessoas com deficiências ou deficiências. Os tópicos a seguir serão discutidos:
+Este artigo é para desenvolvedores de conteúdo de jogos e produtores que querem alcançar o mercado da comunidade de acessibilidade adicionando recursos básicos de acessibilidade para ajudar pessoas com deficiências ou deficiências. Os tópicos a seguir serão discutidos:
 
--   [O que é acessibilidade?](#what-is-accessibility)
+-   [O que é Acessibilidade?](#what-is-accessibility)
 -   [Por que a acessibilidade é importante?](#why-is-accessibility-important)
 -   [O estado da acessibilidade no setor de jogos](#the-state-of-accessibility-in-the-games-industry)
 -   [A necessidade de jogos acessíveis](#the-need-for-accessible-games)
 -   [Deficiências visuais](#visual-impairments)
--   [Deficiências de auditoria](#auditory-impairments)
+-   [Deficiências auditivas](#auditory-impairments)
 -   [Deficiências de mobilidade](#mobility-impairments)
--   [Deficiências de vozes](#vocal-impairments)
+-   [Deficiências de voz](#vocal-impairments)
 -   [Conclusão](#conclusion)
 -   [Mais recursos](#more-resources)
 
 ## <a name="what-is-accessibility"></a>O que é acessibilidade?
 
-Muitas vezes, quando as pessoas acham de acessibilidade, elas consideram coisas como rampas de rodas e legendas codificadas na televisão. Isso ocorre porque esses tipos de recursos de acessibilidade se destacam e são usados por aqueles com deficiências óbvias. No entanto, os recursos de acessibilidade não são projetados apenas para aqueles com deficiências mais graves. Entre os usuários de computador dos EUA que vão de 18 a 64 anos, 57% (74,2 milhões) provavelmente se beneficiarão do uso de tecnologia acessível devido a deficiências e deficiências que podem afetar o uso do computador. ("[O mercado para tecnologia acessível: a ampla gama de habilidades e seu impacto no uso do computador](https://www.microsoft.com/enable/research/phase1.aspx)", Microsoft Corporation) Ser capaz de ativar o volume de um Payphone permite que pessoas com perda leve de audição o usem. Um trilho de mão em um vôo de escadas permite que uma pessoa com deficiência de mobilidade possa subir-los com mais facilidade.
+Muitas vezes, quando as pessoas pensam em acessibilidade, elas pensam em coisas como rampas de brinquedo e legendas fechadas na tv. Isso porque esses tipos de recursos de acessibilidade se destacam e são usados por aqueles com deficiências óbvias. No entanto, os recursos de acessibilidade não são projetados apenas para aqueles com as deficiências mais graves. Entre os usuários de computador dos EUA que variam de 18 a 64 anos, 57% (74,2 milhões) provavelmente se beneficiarão do uso de tecnologia acessível devido a deficiências e deficiências que podem afetar o uso do computador. ("[The Market for Accessible Technology: The Wide Range of Abilities and Its Impact on Computer Use](https://www.microsoft.com/enable/research/phase1.aspx)," Microsoft Corporation) A capacidade de aumentar o volume de um telefone pago permite que pessoas com perda auditiva com deficiência auditiva as usem. Um trilho de mão em um voo de voos permite que uma pessoa com deficiências de mobilidade os esvaia mais facilmente.
 
-Às vezes, os recursos normais de um produto acabam sendo recursos que podem ajudar as pessoas com deficiências. Por exemplo, alguém com um deficiência visual pode usar as configurações de contraste em uma televisão para facilitar a visualização da tela. Uma pessoa com a doença de Parkinson pode usar uma discagem de toque para tornar mais fácil fazer uma chamada telefônica.
+Às vezes, os recursos regulares de um produto acabam sendo recursos que podem ajudar pessoas com deficiências. Por exemplo, alguém com deficiência visual pode usar as configurações de contraste em uma tv para facilitar a visualização da tela. Uma pessoa com a doença de Ltda pode usar uma discagem de toque para facilitar a chamada telefônica.
 
-Os recursos de acessibilidade geralmente tendem a servir um dos cinco tipos de deficiência:
+Os recursos de acessibilidade geralmente tendem a atender a um dos cinco tipos de deficiências:
 
--   Visão Visual, incapacidade de distinguir cores, visão borrada e assim por diante.
--   Audição-difícil de audição, deficiência auditiva.
--   A fala-deficiências de fala, diferenças de linguagem.
--   Deficiências de mobilidade, ARM, perna e mão.
--   cognitiva-Learning deficiências e desafios de raciocínio, incluindo dislexia.
+-   Visão – deficiência visual, incapacidade de distinguir cores, Visão desfocado e assim por diante.
+-   Auditiva – deficiência auditiva, deficiência auditiva.
+-   Fala – deficiências de fala, diferenças de idioma.
+-   Mobilidade – deficiências de pulso, do braço, da mão e da mão.
+-   Cognitivos – Learning desafios de raciocínio e deficiências, incluindo dislexia.
 
-No contexto de videogames, adicionar acessibilidade significa tornar um título utilizável para alguém com uma dessas deficiências.
+No contexto de jogos de vídeo, adicionar acessibilidade significa tornar um título acessível a alguém com uma dessas deficiências.
 
 ## <a name="why-is-accessibility-important"></a>Por que a acessibilidade é importante?
 
-Há motivos sociais e financeiros por que os desenvolvedores de jogos devem pensar em tornar seus produtos acessíveis.
+Há motivos sociais e financeiros pelos quais os desenvolvedores de jogos devem pensar em tornar seus produtos acessíveis.
 
-Para crianças e jovens adultos que têm deficiências que variam de leves a graves, os jogos de vídeo podem oferecer vários benefícios. Os pesquisadores da Universidade da Jesuit University descobertos recentemente que desempenham jogos esportivos ou combatem jogos ajuda a atrapalhar os filhos e jovens de adultos de crônicos dor (o diário de Edmonton, Fev 13 2006). Além disso, os jogos de vídeo foram comprovados para ajudar os filhos voltados a cirurgia com mais eficiência e com menos efeitos colaterais do que Tranquilizers (a imprensa associada, 19 de dezembro de 2004). Os jogos estão sendo usados até tratamento de câncer; o exercício, de importância vital para a recuperação após o Chemotherapy, foi incentivado pelo uso de jogos como c (revolução dança) quando os filhos se recusarem a participar de outras formas de atividade física.
+Para crianças e adultos que têm deficiências que variam de gravidade a grave, os jogos de vídeo podem oferecer uma série de benefícios. Pesquisadores da Wheeling Science University descobriram recentemente que jogar jogos de esportes ou jogos de jogos de guerra ajuda a desviar as crianças e os adultos que sofrem de doença (The Ed street Journal, 13 de fevereiro de 2006). Além disso, os jogos de vídeo foram comprovados para ajudar as crianças a enfrentarem a saúde com mais eficiência e com menos efeitos colaterais do que os auxiliares (The Associated Press, 19 de dezembro de 2004). Os jogos estão sendo usados até mesmo para tratamento de câncer; O exercício, vitalmente importante para a recuperação após a responsabilidade, foi incentivado por meio do uso de jogos como o Rock Rock Revolution(c) quando as crianças se recusam a participar de outras formas de atividade física.
 
-Além disso, permitir que as pessoas com deficiências (especialmente filhos) participem de atividades que a maioria dos indivíduos Desfrute e tome para conceder pode ajudar a reduzir o problema emocional e a sensação de ser um estranho.
+Além disso, permitir que pessoas com deficiências (especialmente filhos) participem de atividades que a maioria das pessoas gosta e aproveita para concedido pode ajudar a reduzir a dor emocional e a sensação de ser um artista.
 
-Os motivos sociais não são os únicos motivos pelos quais os desenvolvedores de jogos devem introduzir recursos de acessibilidade em seus títulos. Os recursos de acessibilidade podem aumentar as vendas, incentivando as pessoas com deficiências a comprar um título acessível. Vendas maiores também podem vir de jogadores que desejam dar suporte a uma empresa que dá suporte à comunidade de acessibilidade. E, finalmente, o P.R. positivo da mídia, bem como de acessibilidade, os grupos de advocacy fornecem propaganda gratuita.
+Os motivos sociais não são os únicos motivos pelos quais os desenvolvedores de jogos devem introduzir recursos de acessibilidade em seus títulos. Os recursos de acessibilidade podem aumentar as vendas incentivando pessoas com deficiências a comprar um título acessível. O aumento das vendas também pode vir de jogadores que querem dar suporte a uma empresa que dá suporte à comunidade de acessibilidade. E, por fim, o P.R positivo. da mídia, bem como grupos de consultoria de acessibilidade, fornece publicidade gratuita.
 
-A demanda por acessibilidade continuará crescendo à medida que a população de jogos for interrompida. À medida que as pessoas crescem, os deficientes leves podem se tornar mais graves. Além disso, é provável que as pessoas desenvolvam novas dificuldades e deficiências que a idade. A adição de recursos básicos de acessibilidade a títulos pode ajudar editores e desenvolvedores a receber receita desses clientes.
+A demanda por acessibilidade continuará crescendo conforme a população de jogos idades. À medida que as pessoas ficam mais antigas, as deficiências de deficiência podem se tornar mais graves. Além disso, é provável que as pessoas desenvolvam novas dificuldades e deficiências à medida que idadem. Adicionar recursos básicos de acessibilidade a títulos pode ajudar editores e desenvolvedores a continuar a gerar receita desses clientes.
 
 ## <a name="the-state-of-accessibility-in-the-games-industry"></a>O estado da acessibilidade no setor de jogos
 
-Para a maior parte do setor de jogos, a acessibilidade em jogos de vídeo é uma prioridade baixa. Um motivo é que, devido à falta de conscientização entre os desenvolvedores sobre problemas de acessibilidade, os desenvolvedores que não estão desabilitados podem não estar cientes das maneiras que podem tornar um título mais acessível a pessoas com deficiências ou deficiências.
+Para a maioria do setor de jogos, a acessibilidade em jogos de vídeo é uma baixa prioridade. Um motivo é devido à falta de reconhecimento entre desenvolvedores sobre problemas de acessibilidade– os desenvolvedores que não estão desabilitados podem não estar cientes das maneiras como eles podem tornar um título mais acessível a pessoas com deficiências ou deficiências.
 
-Outro motivo é que os desenvolvedores têm quantidades limitadas de tempo e recursos. As análises de custo-benefício costumam concluir que os problemas de acessibilidade não valem a atenção e o investimento do setor de jogos devido a suposições como:
+Outro motivo é que os desenvolvedores têm quantidades limitadas de tempo e recursos. As análises de custo-benefício geralmente concluem que os problemas de acessibilidade não vale a atenção e o investimento do setor de jogos devido a suposições como:
 
--   O custo da implementação de recursos de acessibilidade não vale a pena retornar.
--   Não há um público de longa distância para que o desenvolvimento da acessibilidade valha a pena.
+-   O custo da implementação de recursos de acessibilidade não vale o retorno.
+-   Não há um público-alvo amplo o suficiente para fazer o desenvolvimento de acessibilidade valer a pena.
 
-Essas suposições são defeituosas. Tornar os jogos acessíveis vale o investimento.
+Essas suposições são incorretas. Tornar os jogos acessíveis vale a pena o investimento.
 
 ## <a name="the-need-for-accessible-games"></a>A necessidade de jogos acessíveis
 
-Em 2003, a Microsoft Corporation contratou a Forrester Research, Inc., para conduzir um estudo abrangente para medir o mercado atual e potencial de tecnologia acessível no Estados Unidos e entender como a tecnologia acessível está sendo usada hoje. O estudo determinou que 57% dos usuários do computador provavelmente se beneficiarão do uso da tecnologia acessível. E a demanda futura por acessibilidade é projetada apenas para crescer ("[tecnologia acessível em computação: examinando a conscientização, o uso e o potencial futuro](https://www.microsoft.com/enable/research/phase2.aspx)" Microsoft Corporation).
+Em 2003, a Microsoft Corporation comissionou a Forrester Research, Inc., para realizar um estudo abrangente para medir o mercado atual e potencial de tecnologia acessível no Estados Unidos e entender como a tecnologia acessível está sendo usada atualmente. O estudo determinou que 57% dos usuários de computador provavelmente ou muito provavelmente se beneficiarão do uso de tecnologia acessível. E a demanda futura por acessibilidade só é projetada para crescer (" Tecnologia acessível na computação: examinando o[reconhecimento,](https://www.microsoft.com/enable/research/phase2.aspx)o uso e o potencial futuro", Microsoft Corporation).
 
-**Figura 1. Crescimento previsto em número de usuários de tecnologia acessível de 2003 para 2010**
+**Figura 1. Crescimento previsto no número de usuários de tecnologia acessível de 2003 a 2010**
 
-![crescimento previsto em número de usuários de tecnologia acessível de 2003 para 2010](images/accessibility-growth.gif)
+![crescimento previsto no número de usuários de tecnologia acessíveis de 2003 a 2010](images/accessibility-growth.gif)
 
-O estudo também determinou que o uso de recursos de acessibilidade não foi restrito a pessoas com deficiências. Entre usuários de computador que usam utilitários e opções de acessibilidade internas:
+O estudo também determinou que o uso de recursos de acessibilidade não era restrito a pessoas com deficiências. Entre usuários de computador que usam utilitários e opções de acessibilidade internas:
 
--   32% não têm deficiência ou incapacidade.
--   68% têm deficiências leves ou graves.
+-   32% não têm deficiência ou deficiência.
+-   68% têm deficiência ou deficiência grave ou grave.
 
-A observação empírica sugere que isso não é apenas uma tendência limitada aos PCs. Os recursos de acessibilidade geralmente são usados por pessoas sem qualquer deficiência apenas para melhorar sua experiência com o jogo. Por exemplo, um jogador poderia estar compensando uma deficiência temporária (como um Thumb dividido), problemas ambientais (como ruído de fundo) ou outros fatores de situação.
+A observação empírica sugere que essa não é apenas uma tendência limitada a PCs. Os recursos de acessibilidade geralmente são usados por pessoas sem deficiências apenas para melhorar sua experiência de jogo. Por exemplo, um jogador pode estar compensando por uma deficiência temporária (como um polegar quebrado), problemas ambientais (como ruído de fundo) ou outros fatores de situação.
 
-Devido ao potencial aumento no uso da tecnologia de acessibilidade, é crucial treinar o gerenciamento, designers, desenvolvedores e testadores. Muitas empresas estão procurando maneiras de se expandir em novos mercados fora do perfil demográfico 18-32 masculino. Embora os editores mullm sobre como convencer pequenas Suzy a jogar jogos ou a avó e a Grandpa para pegar um controlador, há um mercado composto por pessoas que querem que o tentava Jogue jogos de mainstream que ficam despercebidos. A receita potencial a ser Obtida de uma quantidade relativamente pequena de esforço que fornece recursos de acessibilidade básicos em um título é muito tangível.
+Dado o possível aumento no uso da tecnologia de acessibilidade, é crucial instruir o gerenciamento, os designers, os desenvolvedores e os testadores. Muitas empresas estão procurando maneiras de expandir para novos mercados fora da população de 18 a 32 anos. Embora os editores ressumentem sobre como convencer o pequeno Savão a jogar jogos ou a Mãe e o Irmão para escolher um controlador, há um mercado composto por pessoas que querem jogar jogos populares que estão passando despercebidas. A receita potencial a ser obtida com uma quantidade relativamente pequena de esforço que fornece recursos básicos de acessibilidade em um título é muito tangível.
 
-A inclusão de recursos básicos de acessibilidade em um título pode aumentar as vendas por meio de um "efeito do Domino", por exemplo, atingindo os jogadores que normalmente não poderiam executar o título ou teriam sua experiência significativamente reduzida. Atingindo esses jogos, você também alcança a comunidade de acessibilidade (que é conhecida por um compartilhamento rápido de informações sobre produtos acessíveis e seu apoio leal de empresas que promovem a acessibilidade). Por extensão, as empresas que tomam uma função ativa nesta comunidade se beneficiam da exposição positiva de mídia.
+A inclusão de recursos básicos de acessibilidade em um título pode aumentar as vendas por meio de um "efeito domino", por exemplo, alcançando jogadores que normalmente não conseguem jogar o título ou teriam sua experiência significativamente diminuída. Ao alcançar esses jogadores, você também alcança a comunidade de acessibilidade (que é conhecida por um compartilhamento rápido de informações sobre produtos acessíveis e seu suporte abrangente de empresas que promovem a acessibilidade). Por extensão, as empresas que desempenham uma função ativa nessa comunidade se beneficiam da exposição positiva da mídia.
 
-Ao não incluir recursos de acessibilidade, você corre o risco de possíveis boycotts e processos judiciais – e a perda resultante de vendas. Muitos varejistas e companhias aéreas foram forem processadoss por falta de acessibilidade e, no setor de tecnologia, a comunidade de cegos boycotted Internet Explorer 4 por sua falta de acessibilidade.
+Ao não incluir recursos de acessibilidade, você corre o risco de possíveis perdas e perdas e a perda de vendas. Muitos varejistas e linhas aéreas foram alvo de problemas por falta de acessibilidade e, no setor de tecnologia, a comunidade de cegos Internet Explorer 4 por sua falta de acessibilidade.
 
-Veja abaixo diferentes categorias de deficiências. Cada categoria inclui algumas sugestões relativamente fáceis de implementar que podem tornar um título acessível a um público mais amplo.
+Abaixo estão diferentes categorias de deficiências. Cada categoria inclui algumas sugestões relativamente fáceis de implementar que podem tornar um título acessível a um público maior.
 
 ## <a name="visual-impairments"></a>Deficiências visuais
 
-*"Minha apresentação foi seguida por uma sessão de perguntas e respostas, e um momento notável ocorreu quando um dos funcionários fez uma pergunta sobre acessibilidade em \[ nossos \] jogos... Esse pessoal de 28 anos de idade é um ávido que costumava jogar \[ nosso jogo \] com um grande círculo de amigos. No entanto, como ele é cego de cores, era difícil para ele dizer aos bons profissionais da má equipe e o jogo finalmente se tornou muito frustrante. Quando a nova versão... surgiu e \[ não \] corrigimos o problema, ele e seus amigos decidiram comprar o jogo de um concorrente em vez disso. "um executivo de setor anônimo*
+*"Minha apresentação foi seguida por uma sessão de pergunta e resposta animada e um momento notável ocorreu quando um dos funcionários fez uma pergunta sobre acessibilidade em \[ \] nossos jogos... esse funcionário de 28 anos é um jogador ávido que costumava jogar nosso jogo com um \[ \] grande círculo de amigos. Como ele não tem cor, no entanto, foi difícil para ele dizer aos bons amigos da mulher ruim e o jogo finalmente se tornou muito frustrante. Quando a nova versão... saiu e não corrigimos o problema, ele e seus amigos decidiram comprar um jogo de concorrentes em vez \[ \] disso." Um executivo anônimo do setor*
 
-O termo "emparelhamento Visual" geralmente traz a mente que alguém é totalmente cego. No entanto, é surpreendente saber que 8,7% da população masculina é afetada por algum nível de cegueira ("[como as pessoas herdam colorblindness? Com que frequência?](https://www.webexhibits.org/causesofcolor/2C.mdl), "WebExhibits.org). Outro 1,2% dos indivíduos são afetados por formas mais severas de deficiência visual ("[informações de deficiências: folha de fatos](https://nichcy.org/disability/specific/visualimpairment)de deficiência visual," centro de disseminação nacional para crianças com deficiências). Isso significa que quase um de cada dez jogos potenciais têm problemas afetando seus eyesight que podem afetar sua experiência com jogos.
+O termo "deficiência visual" geralmente traz em mente alguém completamente cego. No entanto, é surpreendente saber que 8,7% da população humana é afetada por algum nível de falta de cor (" Como as pessoas herdam[colorblindness? Com que frequência?](https://www.webexhibits.org/causesofcolor/2C.mdl)," WebExhibits.org). Outros 1,2% dos indivíduos são afetados por formas mais graves de deficiência visual (" Informações de[deficiências visuais:](https://nichcy.org/disability/specific/visualimpairment)Folha de fatos de deficiências visuais", Centro nacional de saúde para crianças com deficiências). Isso significa que quase um em cada dez jogadores potenciais tem problemas que afetam sua visão que pode afetar sua experiência de jogo.
 
-Para ajudá-lo a entender problemas de deficiência visual, imagine que:
+Para ajudá-lo a entender os problemas de deficiência visual, imagine que:
 
 
 
-| Você é um jogador      | E você está neste cenário                                                                                                                                                                         |
+| Você é um jogador      | E você está nesse cenário                                                                                                                                                                         |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Com visão normal   | É claro e ensolarado para que você não possa ver objetos escuros na tela. <br/> Você tem um conjunto de televisão antigo para não ver objetos pequenos e texto devido à baixa qualidade da imagem. <br/> |
-| Com visão inemparelhada | Algum texto de jogo é tão pequeno que não é possível lê-lo. <br/> Você tem cores cegas para não saber qual botão pressionar quando o jogo diz que você pressiona o botão vermelho. <br/>                   |
+| Com visão normal   | Ele é brilhante e brilhante para que você não possa ver objetos escuros na tela. <br/> Você tem um conjunto de tv antigo para que não possa ver objetos pequenos e texto devido à baixa qualidade da imagem. <br/> |
+| Com visão prejudicada | Algum texto do jogo é tão pequeno que você não pode lê-lo. <br/> Você fica com a cor e não sabe qual botão pressionar quando o jogo lhe diz para pressionar o botão vermelho. <br/>                   |
 
 
 
  
 
-Com algumas etapas e recursos simples, você pode resolver esses problemas e melhorar a experiência de jogos para os dois jogadores com visão normal e jogos com deficiência visual.
+Com algumas etapas e recursos simples, você pode resolver esses problemas e melhorar a experiência de jogos para jogadores com visão normal e jogadores com deficiência visual.
 
 1.  Testar títulos em tvs preto e branco. Observe todas as instâncias em que itens, jogadores, objetivos e comandos não podem ser diferenciados e ajustar sua paleta de cores de acordo.
 2.  Dê aos jogadores uma opção para aumentar o tamanho do texto na tela. Forneça também a capacidade de alterar a taxa de rolagem do texto. É importante lembrar que a experiência de console é de 10 pés, não a experiência de jogos de 2 pés com a que muitos desenvolvedores de computadores estão acostumados. Mesmo para jogadores sem problemas de visão, interface do usuário e texto pequenos podem ser difíceis de ler a longas distâncias.

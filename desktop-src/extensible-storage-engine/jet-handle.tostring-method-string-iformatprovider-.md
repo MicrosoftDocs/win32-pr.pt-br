@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c2891e33712027c3387e2d45ff73111e7bf54126
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2f807f13bedb879377449cd494cd245b3ad1073488597190866a190b3253f9cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039164"
 ---
 # <a name="jet_handletostring-method-string-iformatprovider"></a>JET_HANDLE. Método ToString (String, IFormatProvider)
 
@@ -73,7 +73,7 @@ public string ToString(
     
     O [IFormatProvider](/dotnet/api/system.iformatprovider) a ser usado para formatar o valor. -ou-NULL para obter as informações de formato numérico da configuração de localidade atual do sistema operacional.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. String](/dotnet/api/system.string)  
 Uma [cadeia de caracteres](/dotnet/api/system.string) que contém o valor da instância atual no formato especificado.  

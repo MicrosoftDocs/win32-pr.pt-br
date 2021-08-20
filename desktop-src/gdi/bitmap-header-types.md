@@ -4,12 +4,12 @@ ms.assetid: 6df4655a-f707-4893-b6e6-f7e4d7f67b4e
 title: Tipos de cabeçalho de bitmap
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5910b0fb5be1166e807db1f3362186a206abc2b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c88839947845cc45633cbc07b7c36aec727318c91910bfc277680b1946080531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966406"
 ---
 # <a name="bitmap-header-types"></a>Tipos de cabeçalho de bitmap
 
@@ -26,7 +26,7 @@ A estrutura [**BITMAPV5HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv5h
 
 Os formatos [**BITMAPCOREHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapcoreheader) e [**BITMAPV4HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv4header) foram substituídos pelos formatos [**BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)) e [**BITMAPV5HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv5header) , respectivamente. Os formatos **BITMAPCOREHEADER** e **BITMAPV4HEADER** são apresentados para fins de integridade e compatibilidade com versões anteriores.
 
-O formato de um DIB é o seguinte (para obter mais informações, consulte [bitmap Storage](bitmap-storage.md) ):
+o formato de um DIB é o seguinte (para obter mais informações, consulte [Bitmap Armazenamento](bitmap-storage.md) ):
 
 -   uma estrutura [**BITMAPFILEHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapfileheader)
 -   uma estrutura [**BITMAPCOREHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapcoreheader), uma [**BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)), uma [**BITMAPV4HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv4header)ou uma [**BITMAPV5HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv5header) .

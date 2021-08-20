@@ -4,12 +4,12 @@ description: Uma caixa de grupo é um retângulo que circunda um conjunto de con
 ms.assetid: c6cd81a1-76c0-41c5-bb7f-4796ea7e3114
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a105242aabd49d87241a2a49bdaca5c19edd350b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f06675a1ffa88e83bc3c5e36f5d8410682e797169b83e98aa1680b0f0c50d28b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636592"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119860316"
 ---
 # <a name="group-box-msaa-ui-element-reference"></a>Caixa de grupo (referência de elemento de interface do usuário do MSAA)
 

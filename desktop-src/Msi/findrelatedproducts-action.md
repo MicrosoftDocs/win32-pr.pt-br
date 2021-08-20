@@ -4,12 +4,12 @@ ms.assetid: 7efcb767-9bdf-43a4-83b8-61b6fc84adf6
 title: Ação FindRelatedProducts
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a87973631e51315df17a156bc8c57aa9facd84f3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8201a2e86f9dec09931b17cd4dd594c45e4bf78de32ba438b8824a6f540563fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142875"
 ---
 # <a name="findrelatedproducts-action"></a>Ação FindRelatedProducts
 
@@ -27,7 +27,7 @@ Esta ação consulta a tabela a seguir:
 
 A ação FindRelatedProducts usa a propriedade [**UpgradeCode**](upgradecode.md) e as informações de versão e idioma criadas na tabela de atualização para detectar os produtos instalados afetados pela atualização pendente. Ele acrescenta o código do produto dos produtos detectados à propriedade na coluna Actionproperty da Atualizaçãotable.
 
-O FindRelatedProducts reconhece apenas os produtos existentes que foram instalados usando o Windows Installer com um. msi que define uma propriedade [**UpgradeCode**](upgradecode.md) , uma propriedade [**ProductVersion**](productversion.md) e um valor para a propriedade [**ProductLanguage**](productlanguage.md) que é um dos idiomas listados na propriedade [**Summary do modelo**](template-summary.md) .
+o FindRelatedProducts reconhece apenas os produtos existentes que foram instalados usando o Windows Installer com um .msi que define uma propriedade [**UpgradeCode**](upgradecode.md) , uma propriedade [**ProductVersion**](productversion.md) e um valor para a propriedade [**ProductLanguage**](productlanguage.md) que é um dos idiomas listados na propriedade [**Summary do modelo**](template-summary.md) .
 
 Observe que FindRelatedProducts usa o idioma retornado por [**MsiGetProductInfo**](/windows/desktop/api/Msi/nf-msi-msigetproductinfoa). Para que o FindRelatedProducts funcione corretamente, o autor do pacote deve ter certeza de que a propriedade [**ProductLanguage**](productlanguage.md) na [tabela de propriedades](property-table.md) está definida como um idioma que também está listado na propriedade [**Summary do modelo**](template-summary.md) . Consulte [preparando um aplicativo para atualizações importantes futuras](preparing-an-application-for-future-major-upgrades.md).
 

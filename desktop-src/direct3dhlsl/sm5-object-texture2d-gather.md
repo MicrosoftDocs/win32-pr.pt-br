@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2D:: gather (S, float, int)'
-description: 'Retorna os quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear. | Função Texture2D:: gather (S, float, int)'
+title: Função Texture2D::Gather(S,float,int)
+description: Retorna os quatro valores de texel que seriam usados em uma operação de filtragem bi-linear. | Função Texture2D::Gather(S,float,int)
 ms.assetid: 5d196c1c-8cc9-4add-9d33-654294314ee2
 keywords:
-- Coletar HLSL da função
+- Função Gather HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4d0a58be0580572441f91a3b3f637601d70cd9c8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 263c3672f55e2f461d9a6c160a60b8222ddeda32ec239b846680d30af0f7fedc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103663909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119853276"
 ---
-# <a name="texture2dgathersfloatint-function"></a>Função Texture2D:: gather (S, float, int)
+# <a name="texture2dgathersfloatint-function"></a>Função Texture2D::Gather(S,float,int)
 
-Retorna os quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear.
+Retorna os quatro valores de texel que seriam usados em uma operação de filtragem bi-linear.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,31 +41,31 @@ TemplateType Gather(
 *s* \[ em\]
 </dt> <dd>
 
-Tipo: **amostra**
+Tipo: **sampler**
 
 O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*local* \[ do no\]
+*local* \[ Em\]
 </dt> <dd>
 
 Tipo: **float2**
 
-As coordenadas de exemplo (u, v).
+As coordenadas de exemplo (u,v).
 
 </dd> <dt>
 
-*deslocamento* \[ no\]
+*deslocamento* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 O deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **TemplateType**
 
@@ -73,13 +73,13 @@ Um valor de quatro componentes cujo tipo é o mesmo que o tipo de modelo.
 
 ## <a name="remarks"></a>Comentários
 
-Os exemplos de textura podem ser usados para interpolação bilinear.
+As amostras de textura podem ser usadas para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
@@ -91,7 +91,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 <dl> <dt>
 
-[Reunir métodos](texture2d-gather.md)
+[Coletar métodos](texture2d-gather.md)
 </dt> <dt>
 
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)

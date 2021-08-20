@@ -1,33 +1,33 @@
 ---
-description: Esta seção contém o código completo para o tutorial de reprodução de áudio/vídeo no DirectShow.
+description: Esta seção contém o código completo para o tutorial Reprodução de áudio/vídeo DirectShow.
 ms.assetid: a96474d9-8258-4c5d-b339-48fe167bd615
-title: Exemplo de reprodução do DirectShow
+title: DirectShow Exemplo de reprodução
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 523117facf1917233372b672af3a48ebc8e8101e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: d8f5a33d0692a47578f957e1a376a09d98fb6a36c7029134452968b253cd46a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104009976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119966366"
 ---
-# <a name="directshow-playback-example"></a>Exemplo de reprodução do DirectShow
+# <a name="directshow-playback-example"></a>DirectShow Exemplo de reprodução
 
-Esta seção contém o código completo para o tutorial de [reprodução de áudio/vídeo no DirectShow](audio-video-playback-in-directshow.md).
+Esta seção contém o código completo para o tutorial [Reprodução de áudio/vídeo no DirectShow](audio-video-playback-in-directshow.md).
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [reprodução. h](playback-h.md)
--   [vídeo. h](video-h.md)
--   [Main. cpp](main-cpp.md)
--   [reprodução. cpp](playback-cpp.md)
--   [Video. cpp](video-cpp.md)
+-   [playback.h](playback-h.md)
+-   [video.h](video-h.md)
+-   [main.cpp](main-cpp.md)
+-   [playback.cpp](playback-cpp.md)
+-   [video.cpp](video-cpp.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Reprodução de áudio/vídeo no DirectShow](audio-video-playback-in-directshow.md)
+[Reprodução de áudio/vídeo DirectShow](audio-video-playback-in-directshow.md)
 </dt> </dl>
 
  

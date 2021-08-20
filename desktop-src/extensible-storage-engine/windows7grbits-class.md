@@ -1,6 +1,6 @@
 ---
 description: 'Saiba mais sobre: classe Windows7Grbits'
-title: Classe Windows7Grbits (Microsoft. ISAM. ESENT. Interop. windows7)
+title: Classe Windows7Grbits (Microsoft.Isam.Esent.Interop.Windows7)
 TOCTitle: Windows7Grbits class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows7.windows7grbits(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 900943a30295631dafcb49a5fe866e3728c22a11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3725ef2ea1c3a2c84bb5d087527b0370fff6385e0638e764f1180ff756712130
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119967156"
 ---
 # <a name="windows7grbits-class"></a>Classe Windows7Grbits
 
-Grbits que foram adicionados à versão do Windows 7 do ESENT.
+Grbits que foram adicionados à versão Windows 7 do ESENT.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  Microsoft. ISAM. ESENT. Interop. Windows7. Windows7Grbits  
+  Microsoft.Isam.Esent.Interop.Windows7.Windows7Grbits  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -66,4 +66,4 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 [Membros do Windows7Grbits](./windows7grbits-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows7](./microsoft.isam.esent.interop.windows7-namespace.md)

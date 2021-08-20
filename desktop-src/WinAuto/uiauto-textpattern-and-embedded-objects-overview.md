@@ -17,18 +17,18 @@ keywords:
 - expondo objetos inseridos
 ms.topic: article
 ms.date: 08/31/2019
-ms.openlocfilehash: 8e9e0a8b9f70677778238908f8faf04e21ed9619
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 2cb5a571d61353d2c8458b42fb65eac19eab0fb228f1e157539470075e392b8d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111443317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119899301"
 ---
 # <a name="how-ui-automation-exposes-embedded-objects"></a>Como a automação da interface do usuário expõe objetos inseridos
 
 Este tópico descreve como a automação da interface do usuário da Microsoft usa os padrões de controle Text e TextRange para expor objetos inseridos (elementos filho/descendentes) em um documento de texto ou contêiner.
 
-Para a automação da interface do usuário, um objeto incorporado é qualquer elemento que tenha limites não textuais, como uma imagem, um hiperlink, uma tabela ou um tipo de documento (planilha do Microsoft Excel, arquivo de mídia do Microsoft Windows e assim por diante).
+para automação da interface do usuário, um objeto incorporado é qualquer elemento que tenha limites não textuais, como uma imagem, um hiperlink, uma tabela ou um tipo de documento (Microsoft Excel planilha, arquivo de mídia do Microsoft Windows e assim por diante).
 
 > [!NOTE]
 > Isso difere da definição de OLE de Component Object Model (COM) (consulte [objetos inseridos](../com/embedded-objects.md)), em que um elemento é criado em um aplicativo e inserido ou vinculado em outro aplicativo. Se o objeto pode ser editado em seu aplicativo original é irrelevante no contexto da automação da interface do usuário.
@@ -59,7 +59,7 @@ A tabela a seguir lista exemplos de elementos de contêiner e não contêiner.
 - DataGrid
 - Documento
 - Editar
-- Grupo
+- Agrupar
 - Cabeçalho
 - HeaderItem
 - Lista
@@ -106,8 +106,8 @@ A tabela a seguir lista alguns exemplos de objetos incorporados compatíveis e n
 
 | Objetos  | Objetos incorporados compatíveis | Objetos inseridos não compatíveis |
 | --- | --- | --- |
-| Objetos inseridos não TextPattern | Botão no Microsoft Edge<br>Tabela de dados no Microsoft Edge | Botão no RichTextBlock na estrutura XAML da Microsoft<br>Imagens com texto alt no Microsoft Edge<br>ListView com ListItems em RichTextBlock na estrutura XAML da Microsoft |
-| Objetos inseridos por TextPattern | Controle de entrada do tipo "texto" no Microsoft Edge<br>Tabela em um documento do Word | Elemento TextBox em um documento do Microsoft Word |
+| Objetos inseridos não TextPattern | Botão no Microsoft Edge<br>Tabela de dados no Microsoft Edge | Botão no RichTextBlock na estrutura XAML da Microsoft<br>Imagens com texto alt em Microsoft Edge<br>ListView com ListItems em RichTextBlock na estrutura XAML da Microsoft |
+| Objetos inseridos por TextPattern | Controle de entrada do tipo "texto" em Microsoft Edge<br>Tabela em um documento do Word | elemento TextBox em um documento Microsoft Word |
 
 ## <a name="exposing-embedded-objects"></a>Expondo objetos inseridos
 
@@ -149,147 +149,147 @@ Um objeto [ITextProvider](/windows/win32/api/uiautomationcore/nn-uiautomationcor
 - Em geral, `<br \>` é tratado como uma palavra individual, de modo que não ultrapasse um limite de linha.
 - Uma exceção à regra anterior é onde uma unidade de texto do Word contém objetos completos dentro dele mesmo. Por exemplo, `<p>Hello <a href="#">link</a> here.</p>` , que inclui contêineres embutidos, tem as palavras "Olá", "link" e "aqui". Em que "link" tem um objeto TextPattern como o elemento delimitador e um objeto de link como seu filho.
 - No caso de unidades de caracteres, o objeto é o elemento delimitador (unidades de texto como esta não devem ter filhos).
-- Os objetos de anotação não devem ser representados como um objeto inserido. Por exemplo, a presença de outros especificadores author em um documento coautor.
-- Objetos inseridos ocupam pelo menos uma posição de cursor, anotação são apenas metadados.
+- Os objetos de anotação não devem ser representados como um objeto inserido. Por exemplo, a presença de outros especificadores de autor em um documento coautoria.
+- Os objetos inseridos ocupam pelo menos uma posição de cursor, a anotação é apenas metadados.
 - Cada limite de objeto (início e término) é representado por uma quebra de formato no intervalo de documentos TextPattern.
-- Para HTML, cada marca html não necessariamente resulta em um Automação da Interface do Usuário objeto. Por exemplo, o conteúdo dentro de marcas de ênfase não precisa ser representado como elemento, mas sim um fluxo de texto em que UIA_IsItalicAttributeId <em></em> retorna TRUE.
-- O ponto de extremidade inicial é inclusivo e é o ponto de extremidade preferencial, enquanto o ponto de extremidade é exclusivo. Isso é útil para quando o intervalo é degenere e os pontos de extremidade Start e End pertencem à mesma posição para esse intervalo.
+- Para HTML, cada marca HTML não resulta necessariamente em um objeto de automação da interface do usuário. Por exemplo, o conteúdo nas <em></em> marcas de ênfase não precisa ser representado como um elemento, mas sim um fluxo de texto em que UIA_IsItalicAttributeId retorna true.
+- O ponto de extremidade inicial é inclusivo e é o ponto de extremidade preferencial, enquanto o ponto de extremidade final é exclusivo. Isso é útil quando o intervalo é degenerado e os pontos de extremidade inicial e final pertencem à mesma posição para esse intervalo.
 
 ## <a name="comparing-embedded-objects"></a>Comparando objetos inseridos
 
-Objetos TextPattern aninhados que estão em uma relação filho semelhante e compartilham o mesmo armazenamento de texto de back-back são chamados de comparáveis. Nesse caso, os intervalos de qualquer um dos objetos TextPattern podem ser comparados usando [ITextRangeProvider::Compare](/windows/win32/api/uiautomationcore/nf-uiautomationcore-itextrangeprovider-compare) e [ITextRangeProvider::CompareEndpoints](/windows/win32/api/uiautomationcore/nf-uiautomationcore-itextrangeprovider-compareendpoints). Ambos resultam em um valor numérico válido especificando sua posição relativa.
+Objetos TextPattern aninhados que estão em uma relação filho semelhante e compartilham o mesmo armazenamento de texto de backup são chamados comparáveis. Nesse caso, os intervalos de um dos objetos TextPattern podem ser comparados usando [ITextRangeProvider:: Compare](/windows/win32/api/uiautomationcore/nf-uiautomationcore-itextrangeprovider-compare) e [ITextRangeProvider:: CompareEndpoints](/windows/win32/api/uiautomationcore/nf-uiautomationcore-itextrangeprovider-compareendpoints). Ambos resultam em um valor numérico válido especificando sua posição relativa.
 
-Um objeto não TextPattern inserido em um objeto TextPattern será comparável ao TextPattern se o objeto tiver um intervalo válido no TextPattern ([ITextProvider::RangeFromChild](/windows/win32/api/uiautomationcore/nf-uiautomationcore-itextprovider-rangefromchild)) e o conteúdo por trás do intervalo de texto não estiver vazio e não for um caractere de substituição.
+Um objeto não TextPattern inserido em um objeto TextPattern é comparável a TextPattern se o objeto tiver um intervalo válido em TextPattern ([ITextProvider:: RangeFromChild](/windows/win32/api/uiautomationcore/nf-uiautomationcore-itextprovider-rangefromchild)) e o conteúdo por trás do intervalo de texto não estiver vazio e não for um caractere de substituição.
 
-## <a name="embedded-textpattern-objects-and-the-document-textunit"></a>Objetos TextPattern inseridos e o Document TextUnit
+## <a name="embedded-textpattern-objects-and-the-document-textunit"></a>Objetos TextPattern inseridos e a unidade TextDocument
 
-Para objetos TextPattern inseridos, a [unidade de](/windows/win32/api/uiautomationcore/ne-uiautomationcore-textunit) Documento reconhece apenas o conteúdo contido nesse elemento.
+Para objetos TextPattern inseridos, a unidade de [documento](/windows/win32/api/uiautomationcore/ne-uiautomationcore-textunit) reconhece apenas o conteúdo contido nesse elemento.
 
-### <a name="word-textpattern-element-hierarchy"></a>Hierarquia de elementos TextPattern do Word
+### <a name="word-textpattern-element-hierarchy"></a>Hierarquia de elementos de TextPattern do Word
 
-- O elemento document implementa TextPattern e [Document](/windows/win32/api/uiautomationcore/ne-uiautomationcore-textunit) retorna todo o intervalo de documentos do Word.
-- Páginas individuais do documento implementam TextPattern e [Document](/windows/win32/api/uiautomationcore/ne-uiautomationcore-textunit) retorna o conteúdo dessas páginas individuais (embora as páginas compartilhem o mesmo armazenamento de texto com todo o documento TextPattern).
+- O elemento Document implementa TextPattern e [Document](/windows/win32/api/uiautomationcore/ne-uiautomationcore-textunit) retorna o intervalo inteiro do documento do Word.
+- As páginas individuais do documento implementam TextPattern e [Document](/windows/win32/api/uiautomationcore/ne-uiautomationcore-textunit) retorna o conteúdo dessas páginas individuais (mesmo que as páginas compartilhem o mesmo armazenamento de texto com o documento inteiro de TextPattern).
 
-### <a name="webpage-and-text-input-controls-in-edge"></a>Controles de entrada de texto e página da Web no Edge
+### <a name="webpage-and-text-input-controls-in-edge"></a>Página da Web e controles de entrada de texto no Edge
 
-- O elemento do Painel da página da Web principal implementa TextPattern e expõe todo o conteúdo da página da Web.
-- Os controles de entrada de texto individuais são suportados por TextPattern, em que um intervalo de documentos representa o texto contido em cada campo de entrada (embora compartilhem o mesmo armazenamento de texto com toda a página da Web).
+- O elemento do painel principal da página da Web implementa TextPattern e expõe todo o conteúdo da página da Web.
+- Os controles de entrada de texto individuais dão suporte a TextPattern, em que um intervalo de documentos representa o texto contido em cada campo de entrada (mesmo que eles compartilhem o mesmo armazenamento de texto com a página da Web inteira).
 
 ## <a name="common-scenarios"></a>Cenários comuns
 
-Esta seção apresenta exemplos de cenários comuns que envolvem objetos inseridos: hiperlinks, imagens e tabelas. Nos exemplos a seguir, a chave esquerda ({) representa o ponto de extremidade Inicial do intervalo de texto e a chave direita (}) representa o ponto de extremidade final.
+Esta seção apresenta exemplos de cenários comuns que envolvem objetos incorporados: hiperlinks, imagens e tabelas. Nos exemplos a seguir, a chave esquerda ({) representa o ponto de extremidade inicial do intervalo de texto e a chave direita (}) representa o ponto de extremidade final.
 
-### <a name="hyperlink-example-1-a-text-range-that-contains-an-embedded-text-hyperlink"></a>Exemplo de Hiperlink 1: um intervalo de texto que contém um hiperlink de texto inserido
+### <a name="hyperlink-example-1-a-text-range-that-contains-an-embedded-text-hyperlink"></a>Exemplo de hiperlink 1: um intervalo de texto que contém um hiperlink de texto inserido
 
 O intervalo de texto a seguir contém um hiperlink de texto inserido.
 
-  {A URL https://www.microsoft.com é inserida no texto}.
+  {A URL https://www.microsoft.com é inserida em texto}.
 
-Chamar os métodos [**IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext), [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement), [**GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren)e [**IUIAutomationTextPattern::RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) resulta nos comportamentos descritos na tabela a seguir.
+Chamar os métodos [**IUIAutomationTextRange:: gettext**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext), [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement), [**GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren)e [**IUIAutomationTextPattern:: RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) resulta nos comportamentos descritos na tabela a seguir.
 
 | Método chamado                                                                                                                                                                                                                                                     | Resultado                                                                                                                                                   |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext)                                                                                                                                                                                  | Retorna a cadeia de caracteres "A URL https://www.microsoft.com está inserida no texto".                                                                               |
-| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)                                                                                                                                                          | Retorna o elemento Automação da Interface do Usuário interno que inclui o intervalo de texto, nesse caso, o elemento de automação que representa o próprio provedor de texto. |
-| [**IUIAutomationTextRange::GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren)                                                                                                                                                                          | Retorna um Automação da Interface do Usuário que representa o controle de hiperlink.                                                                                      |
-| [**IUIAutomationTextPattern::RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild), em que o elemento Automação da Interface do Usuário foi retornado pelo método [**IUIAutomationTextRange::GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren) anterior. | Retorna o intervalo que representa " https://www.microsoft.com ".                                                                                            |
-### <a name="hyperlink-example-2-a-text-range-that-partially-spans-an-embedded-text-hyperlink"></a>Exemplo de Hiperlink 2: um intervalo de texto que abrange parcialmente um hiperlink de texto inserido
+| [**IUIAutomationTextRange:: gettext**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext)                                                                                                                                                                                  | Retorna a cadeia de caracteres "a URL https://www.microsoft.com é inserida em texto".                                                                               |
+| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)                                                                                                                                                          | Retorna o elemento de automação da interface do usuário mais interno que inclui o intervalo de texto, nesse caso, o elemento Automation que representa o próprio provedor de texto. |
+| [**IUIAutomationTextRange:: GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren)                                                                                                                                                                          | Retorna um elemento de automação da interface do usuário que representa o controle de hiperlink.                                                                                      |
+| [**IUIAutomationTextPattern:: RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild), onde o elemento de automação da interface do usuário foi retornado pelo método [**IUIAutomationTextRange:: GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren) anterior. | Retorna o intervalo que representa " https://www.microsoft.com ".                                                                                            |
+### <a name="hyperlink-example-2-a-text-range-that-partially-spans-an-embedded-text-hyperlink"></a>Exemplo de hiperlink 2: um intervalo de texto que abrange parcialmente um hiperlink de texto inserido
 
 O intervalo de texto a seguir abrange parcialmente um hiperlink de texto inserido.
 
-  A URL https://{www} está inserida no texto.
+  A URL de https://{www} está inserida no texto.
 
-Chamar os métodos [**IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext), [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)e [**GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren) resulta nos comportamentos descritos na tabela a seguir.
+Chamar os métodos [**IUIAutomationTextRange:: gettext**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext), [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)e [**GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren) resulta nos comportamentos descritos na tabela a seguir.
 
 | Método chamado                                                                                            | Resultado                                                                                                         |
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [**IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext)                         | Retorna a cadeia de caracteres "www".                                                                                      |
-| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) | Retorna o elemento Automação da Interface do Usuário interno que inclui o intervalo de texto; nesse caso, o controle de hiperlink. |
-| [**IUIAutomationTextRange::GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren)                 | Retorna **NULL** porque o intervalo de texto não abrange toda a cadeia de caracteres de URL.                                   |
+| [**IUIAutomationTextRange:: gettext**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext)                         | Retorna a cadeia de caracteres "www".                                                                                      |
+| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) | Retorna o elemento de automação de interface do usuário mais interno que inclui o intervalo de texto; Nesse caso, o controle HyperLink. |
+| [**IUIAutomationTextRange:: GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren)                 | Retorna **NULL** porque o intervalo de texto não abrange toda a cadeia de caracteres da URL.                                   |
 
-### <a name="hyperlink-example-3-a-text-range-that-partially-spans-the-content-of-a-text-container"></a>Exemplo de Hiperlink 3: um intervalo de texto que abrange parcialmente o conteúdo de um contêiner de texto
+### <a name="hyperlink-example-3-a-text-range-that-partially-spans-the-content-of-a-text-container"></a>Exemplo de hiperlink 3: um intervalo de texto que abrange parcialmente o conteúdo de um contêiner de texto
 
 O intervalo de texto a seguir abrange parcialmente o conteúdo de um contêiner de texto. O contêiner de texto tem um hiperlink de texto inserido que não faz parte do intervalo de texto.
 
-  {A URL} https://www.microsoft.com é inserido em texto.
+  {A URL} https://www.microsoft.com é inserido no texto.
 
-Chamar [**os métodos IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext), [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)e [**Move**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-move) resulta nos comportamentos descritos na tabela a seguir.
+Chamar os métodos [**IUIAutomationTextRange:: gettext**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext), [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)e [**move**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-move) resulta nos comportamentos descritos na tabela a seguir.
 
 | Método chamado                                                                                            | Resultado                                                                                                                                                                                                                            |
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext)                         | Retorna a cadeia de caracteres "A URL".                                                                                                                                                                                                     |
-| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) | Retorna o elemento Automação da Interface do Usuário interno que inclui o intervalo de texto, nesse caso, o elemento que representa o próprio provedor de texto.                                                                                     |
-| [**IUIAutomationTextRange::Move**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-move)                               | Move o intervalo de texto para "https://" porque o texto do hiperlink é feito de palavras individuais. Nesse caso, o hiperlink não é tratado como um único objeto.<br/> A URL {http} é inserida no texto.<br/> |
+| [**IUIAutomationTextRange:: gettext**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext)                         | Retorna a cadeia de caracteres "a URL".                                                                                                                                                                                                     |
+| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) | Retorna o elemento de automação de interface do usuário mais interno que inclui o intervalo de texto, nesse caso, o elemento que representa o próprio provedor de texto.                                                                                     |
+| [**IUIAutomationTextRange:: mover**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-move)                               | Move o intervalo de texto span para "https://" porque o texto do hiperlink é composto por palavras individuais. Nesse caso, o hiperlink não é tratado como um único objeto.<br/> A URL {http} está inserida no texto.<br/> |
 
 ### <a name="image-example-1-a-text-range-that-contains-an-embedded-image"></a>Exemplo de imagem 1: um intervalo de texto que contém uma imagem inserida
 
-O intervalo de texto a seguir contém uma imagem inserida de um avião.
+O intervalo de texto a seguir contém uma imagem inserida de um vaivém.
 
- {A imagem ![ilustração de uma lança](images/shuttle.jpg) é inserido em texto}.
+ {A imagem ![ilustração de um vaivém](images/shuttle.jpg) é inserido em texto}.
 
-Chamar os métodos [**IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext), [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement), [**GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren)e [**IUIAutomationTextPattern::RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) resulta nos comportamentos descritos na tabela a seguir.
+Chamar os métodos [**IUIAutomationTextRange:: gettext**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext), [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement), [**GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren)e [**IUIAutomationTextPattern:: RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) resulta nos comportamentos descritos na tabela a seguir.
 
 | Método chamado                                                                                                                                                                                                                                                    | Resultado                                                                                                                                        |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext)                                                                                                                                                                                 | Retorna a cadeia de caracteres "A imagem está inserida no texto". Qualquer texto ALT associado à imagem não está incluído no fluxo de texto.                |
-| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)                                                                                                                                                         | Retorna o elemento Automação da Interface do Usuário interno que inclui o intervalo de texto, nesse caso, o elemento que representa o próprio provedor de texto. |
-| [**IUIAutomationTextRange::GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren)                                                                                                                                                                         | Retorna um Automação da Interface do Usuário que representa o controle de imagem.                                                                               |
-| [**IUIAutomationTextPattern::RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) em que o elemento Automação da Interface do Usuário foi retornado pelo método [**IUIAutomationTextRange::GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren) anterior. | Retorna o intervalo degeneres.                                                                                                                 |
+| [**IUIAutomationTextRange:: gettext**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext)                                                                                                                                                                                 | Retorna a cadeia de caracteres "a imagem é inserida em texto". Qualquer texto ALT associado à imagem não é incluído no fluxo de texto.                |
+| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)                                                                                                                                                         | Retorna o elemento de automação de interface do usuário mais interno que inclui o intervalo de texto, nesse caso, o elemento que representa o próprio provedor de texto. |
+| [**IUIAutomationTextRange:: GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren)                                                                                                                                                                         | Retorna um elemento de automação de interface do usuário que representa o controle de imagem.                                                                               |
+| [**IUIAutomationTextPattern:: RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) em que o elemento de automação da interface do usuário foi retornado pelo método [**IUIAutomationTextRange:: GetChildren**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getchildren) anterior. | Retorna o intervalo de degeneração.                                                                                                                 |
 
 ### <a name="image-example-2-a-text-range-that-partially-spans-the-content-of-a-text-container"></a>Exemplo de imagem 2: um intervalo de texto que abrange parcialmente o conteúdo de um contêiner de texto
 
 O intervalo de texto a seguir abrange parcialmente o conteúdo de um contêiner de texto. O contêiner de texto tem uma imagem inserida que não faz parte do intervalo de texto.
 
- {A imagem} ![ilustração de uma lança](images/shuttle.jpg) é inserido em texto.
+ {A imagem} ![ilustração de um vaivém](images/shuttle.jpg) é inserido no texto.
 
-Chamar [**os métodos IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext), [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)e [**Move**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-move) resulta nos comportamentos descritos na tabela a seguir.
+Chamar os métodos [**IUIAutomationTextRange:: gettext**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext), [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)e [**move**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-move) resulta nos comportamentos descritos na tabela a seguir.
 
 | Método chamado                                                                                                          | Resultado                                                                                                                                                                                                                                                                          |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IUIAutomationTextRange::GetText**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext)                                       | Retorna a cadeia de caracteres "A imagem".                                                                                                                                                                                                                                                 |
-| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)               | Retorna o elemento Automação da Interface do Usuário interno que inclui o intervalo de texto, nesse caso, o elemento que representa o próprio provedor de texto.                                                                                                                                   |
-| [**IUIAutomationTextRange::Move**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-move) com parâmetros de (**TextUnit \_ Word**, 2). | Move o intervalo de texto para "é ". Como somente objetos inseridos baseados em texto são considerados parte do fluxo de texto, a imagem neste exemplo não afeta [**IUIAutomationTextRange::Move**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-move) ou seu valor de retorno, nesse caso, 2. |
+| [**IUIAutomationTextRange:: gettext**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-gettext)                                       | Retorna a cadeia de caracteres "a imagem".                                                                                                                                                                                                                                                 |
+| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement)               | Retorna o elemento de automação de interface do usuário mais interno que inclui o intervalo de texto, nesse caso, o elemento que representa o próprio provedor de texto.                                                                                                                                   |
+| [**IUIAutomationTextRange:: move**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-move) com parâmetros de (**TextUnit \_ Word**, 2). | Move o intervalo de intervalos de texto para "is". Como apenas objetos inseridos com base em texto são considerados parte do fluxo de texto, a imagem neste exemplo não afeta [**IUIAutomationTextRange:: move**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-move) ou seu valor de retorno, nesse caso, 2. |
 
 ### <a name="table"></a>Tabela
 
-### <a name="table-example-1-gets-the-text-container-from-the-content-of-a-cell"></a>Exemplo de tabela 1: obtém o contêiner de texto do conteúdo de uma célula
+### <a name="table-example-1-gets-the-text-container-from-the-content-of-a-cell"></a>Exemplo de tabela 1: Obtém o contêiner de texto do conteúdo de uma célula
 
 A tabela a seguir obtém o contêiner de texto do conteúdo de uma célula.
 
 | Célula com imagem                                            | Célula com texto |
 |------------------------------------------------------------|----------------|
-| ![ilustração de um vaivém](images/shuttle.jpg)           | X              |
-| ![ilustração de espaço e de um teleescopo](images/space.jpg) | Y              |
-| ![ilustração de um vigiados](images/microscope.jpg)     | Z              |
+| ![ilustração de uma lança](images/shuttle.jpg)           | X              |
+| ![ilustração do espaço e de um livro](images/space.jpg) | Y              |
+| ![ilustração de um livro](images/microscope.jpg)     | Z              |
 
-Chamar os métodos [**IUIAutomationGridPattern:: GetItem**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem), [**IUIAutomationTextPattern:: RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild)e [**IUIAutomationTextRange:: GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) resulta nos comportamentos descritos na tabela a seguir.
+Chamar os métodos [**IUIAutomationGridPattern::GetItem**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem), [**IUIAutomationTextPattern::RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild)e [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) resulta nos comportamentos descritos na tabela a seguir.
 
 | Método chamado                                                                                                                                                                                                                       | Resultado                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**IUIAutomationGridPattern:: GetItem**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem) com parâmetros (0, 0).                                                                                                                        | Retorna o elemento de automação da interface do usuário que representa o conteúdo da célula da tabela, nesse caso, o elemento é um controle de texto.                                                               |
-| [**iuiautomationtextpattern::rangefromchild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild)                                                                                                                                  | Retorna o intervalo da imagem ![ilustração de um vaivém](images/shuttle.jpg).                                                                                                            |
-| [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) para o objeto retornado pelo método [**IUIAutomationTextPattern:: RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) anterior. | Retorna o elemento de automação da interface do usuário que representa a célula da tabela. Nesse caso, o elemento é um controle de texto que dá suporte ao padrão de controle [TableItem](uiauto-implementingtableitem.md) . |
-| [**IUIAutomationTextRange:: GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) para o objeto retornado pelo método **GetEnclosingElement** anterior.                                                    | Retorna o elemento de automação da interface do usuário que representa a tabela.                                                                                                                                   |
-| [**IUIAutomationTextRange:: GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) para o objeto retornado pelo método **GetEnclosingElement** anterior.                                                    | Retorna o elemento de automação da interface do usuário que representa o próprio provedor de texto.                                                                                                                 |
+| [**IUIAutomationGridPattern::GetItem**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem) com parâmetros (0, 0).                                                                                                                        | Retorna o Automação da Interface do Usuário que representa o conteúdo da célula da tabela, nesse caso, o elemento é um controle de texto.                                                               |
+| [**iuiautomationtextpattern::rangefromchild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild)                                                                                                                                  | retorna o intervalo da imagem ![ilustração de uma lança](images/shuttle.jpg).                                                                                                            |
+| [**GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) para o objeto retornado pelo método [**IUIAutomationTextPattern::RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) anterior. | Retorna o Automação da Interface do Usuário que representa a célula da tabela. Nesse caso, o elemento é um controle de texto que dá suporte ao padrão de controle [TableItem.](uiauto-implementingtableitem.md) |
+| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) para o objeto retornado pelo **método GetEnclosingElement** anterior.                                                    | Retorna o Automação da Interface do Usuário que representa a tabela.                                                                                                                                   |
+| [**IUIAutomationTextRange::GetEnclosingElement**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextrange-getenclosingelement) para o objeto retornado pelo **método GetEnclosingElement** anterior.                                                    | Retorna o Automação da Interface do Usuário que representa o próprio provedor de texto.                                                                                                                 |
 
-### <a name="table-example-2-gets-the-text-content-of-a-cell"></a>Exemplo de tabela 2: Obtém o conteúdo de texto de uma célula
+### <a name="table-example-2-gets-the-text-content-of-a-cell"></a>Exemplo de tabela 2: obtém o conteúdo de texto de uma célula
 
-A tabela no exemplo anterior Obtém o conteúdo de texto de uma célula.
+A tabela no exemplo anterior obtém o conteúdo de texto de uma célula.
 
-Chamar os métodos [**IUIAutomationGridPattern:: GetItem**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem) e [**IUIAutomationTextPattern:: RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) resulta nos comportamentos descritos na tabela a seguir.
+Chamar os métodos [**IUIAutomationGridPattern::GetItem**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem) e [**IUIAutomationTextPattern::RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) resulta nos comportamentos descritos na tabela a seguir.
 
 | Método chamado                                                                                                                                                                                                                                                          | Resultado                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| [**IUIAutomationGridPattern:: GetItem**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem) com parâmetros (1, 1).                                                                                                                                                            | Retorna o elemento de automação da interface do usuário que representa o conteúdo da célula da tabela. Nesse caso, o elemento é um controle de texto. |
-| [**IUIAutomationTextPattern:: RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) em que o elemento de automação da interface do usuário é o objeto retornado pelo método [**IUIAutomationGridPattern:: GetItem**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem) anterior. | Retorna "Y".                                                                                                               |
+| [**IUIAutomationGridPattern::GetItem**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem) com parâmetros (1,1).                                                                                                                                                            | Retorna o Automação da Interface do Usuário que representa o conteúdo da célula da tabela. Nesse caso, o elemento é um controle de texto. |
+| [**IUIAutomationTextPattern::RangeFromChild**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationtextpattern-rangefromchild) em que o elemento Automação da Interface do Usuário é o objeto retornado pelo método [**IUIAutomationGridPattern::GetItem**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationgridpattern-getitem) anterior. | Retorna "Y".                                                                                                               |
 
-Ao mover um documento por [**\_ linha TextUnit**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-textunit), se o intervalo de texto entrar em uma tabela inserida, cada linha de texto em uma célula deverá ser tratada como uma linha.
+Ao passar por um documento por [**Linha TextUnit \_**](/windows/desktop/api/UIAutomationCore/ne-uiautomationcore-textunit), se o intervalo de texto entrar em uma tabela inserida, cada linha de texto em uma célula deverá ser tratada como uma linha.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 ### <a name="conceptual"></a>Conceitual
 
 - [Sobre os padrões de controle Text e TextRange](uiauto-about-text-and-textrange-patterns.md)
-- [Atributos de texto de automação da interface do usuário](uiauto-textattributes.md)
+- [Automação da Interface do Usuário de texto](uiauto-textattributes.md)
 - [Visão Geral de Padrões de Controle de Automação de Interface de Usuário](uiauto-controlpatternsoverview.md)
-- [Suporte à automação da interface do usuário para conteúdo textual](uiauto-ui-automation-textpattern-overview.md)
+- [Automação da Interface do Usuário suporte para conteúdo textual](uiauto-ui-automation-textpattern-overview.md)

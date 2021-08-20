@@ -28,7 +28,7 @@ ms.locfileid: "119284586"
 A **dependência \_ Cim AssociatedBattery** associa uma bateria a um dispositivo lógico. Use essa associação para modelar baterias individuais que comem uma fonte de alimentação ininterrupta (UPS).
 
 > [!IMPORTANT]
-> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
+> As classes CIM (Distributed Management Task Force) do DMTF (Distributed Management Task Force) modelo CIM são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
