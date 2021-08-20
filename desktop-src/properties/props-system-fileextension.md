@@ -4,12 +4,12 @@ ms.assetid: b72c695e-bdbd-471d-b902-9e30a62facd4
 title: System. FileExtension
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bf8792a3965c394a1944985515df527e41e3a159
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fe9e989e88a1ff5eb5b525f5cb1904584aeb58a5700123651a256e040b6d2ac1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105755706"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118053256"
 ---
 # <a name="systemfileextension"></a>System. FileExtension
 

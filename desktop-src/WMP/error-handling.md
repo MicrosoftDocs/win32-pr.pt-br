@@ -1,35 +1,35 @@
 ---
-title: Tratamento de erro (SDK do Windows Media Player)
+title: Tratamento de erros (Windows Media Player SDK)
 description: Tratamento de erros
 ms.assetid: f0567c77-a855-4b93-9fb7-a36cde63859f
 keywords:
-- Windows Media Player, tratamento de erros
-- Modelo de objeto do Windows Media Player, tratamento de erros
+- Windows Media Player, tratamento de erro
+- Windows Media Player de objeto, tratamento de erro
 - modelo de objeto, tratamento de erro
-- Controle ActiveX do Windows Media Player, tratamento de erros
-- Controle ActiveX, tratamento de erros
-- Controle ActiveX móvel do Windows Media Player, tratamento de erros
-- Windows Media Player Mobile, tratamento de erros
-- Guia de migração, tratamento de erros
+- Windows Media Player ActiveX controle, tratamento de erro
+- ActiveX controle, tratamento de erros
+- Windows Media Player Controle ActiveX dispositivo móvel, tratamento de erros
+- Windows Media Player Dispositivo móvel, tratamento de erros
+- guia de migração, tratamento de erros
 - tratamento de erro no modelo de objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8f3b96e04d24009ee4b7e5819fdb26dfd6effd63
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 378d5f41b9b2c664345ee9c94964545c8ff9504c98c4e29244818a28ff398ca0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104085036"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117935103"
 ---
-# <a name="error-handling-windows-media-player-sdk"></a>Tratamento de erro (SDK do Windows Media Player)
+# <a name="error-handling-windows-media-player-sdk"></a>Tratamento de erros (Windows Media Player SDK)
 
-O controle ActiveX do Windows Media Player 6,4 Fornece tratamento de erros padrão exibindo mensagens de erro em caixas de diálogo e na barra de status. Você também pode fornecer tratamento de erros personalizado processando erros em seu script. O tratamento de erros é controlado por eventos, o que significa que você recebe uma notificação para cada erro e deve decidir como lidar com cada evento de erro quando ele ocorre. Para obter mais informações sobre como tratar erros usando o modelo de objeto da versão 6,4, consulte a seção tratamento de erros do guia do modelo de objeto da versão 6,4 do Player, que faz parte do SDK do Windows Media Player.
+O Windows Media Player controle ActiveX 6.4 fornece tratamento de erro padrão exibindo mensagens de erro nas caixas de diálogo e na barra de status. Você também pode fornecer tratamento de erro personalizado processando erros em seu script. O tratamento de erros é orientado a eventos, o que significa que você recebe uma notificação para cada erro e deve decidir como lidar com cada evento de erro quando ele ocorre. Para obter mais informações sobre como lidar com erros usando o modelo de objeto versão 6.4, consulte a seção Tratamento de erros do Guia do Modelo de Objeto do Player versão 6.4, que faz parte do SDK do Windows Media Player.
 
-O modelo de objeto do Windows Media Player 7 ou posterior fornece o objeto **Error** e o objeto **ErrorItem** para lidar com erros. Esses dois objetos funcionam em conjunto para fornecer a você um mecanismo de tratamento de erros que oferece controle completo e flexível do processo de tratamento de erros. O objeto **Error** fornece acesso a uma coleção de objetos **ErrorItem** ; cada objeto **ErrorItem** fornece detalhes sobre uma mensagem de erro individual.
+O Windows Media Player modelo de objeto 7 ou posterior fornece o **objeto Error** e o **objeto ErrorItem** para tratar erros. Esses dois objetos funcionam em conjunto para fornecer um mecanismo de tratamento de erros que fornece controle completo e flexível do processo de tratamento de erros. O **objeto Error** fornece acesso a uma coleção de objetos **ErrorItem;** cada **objeto ErrorItem** fornece detalhes sobre uma mensagem de erro individual.
 
-Quando ocorre um erro, as informações de erro são postadas em uma fila de erros. A fila é uma coleção de objetos **ErrorItem** . À medida que cada erro é adicionado à fila, ele é associado a um número de índice (começando com zero) que pode ser usado para identificar o objeto **ErrorItem** específico. O *erro*. a propriedade **errorCount** recupera o número de erros na fila de erros. Como os números de índice são baseados em zero, o erro mais recente Postado na fila sempre terá um valor de índice igual a *erro*. **errorCount** menos um.
+Quando ocorre um erro, as informações de erro são postadas em uma fila de erros. A fila é uma coleção de **objetos ErrorItem.** À medida que cada erro é adicionado à fila, ele é associado a um número de índice (começando com zero) que pode ser usado para identificar o objeto **ErrorItem** específico. O *Erro*. **A propriedade errorCount** recupera o número de erros na fila de erros. Como os números de índice são baseados em zero, o erro mais recente postado na fila sempre terá um valor de índice igual ao *Erro*. **errorCount** menos um.
 
-Você pode criar um manipulador de eventos de erro para o Windows Media Player usando o script. O exemplo de JScript a seguir mostra como recuperar o item de erro mais recente da fila de erros e exibir o código de erro e a descrição do erro usando o modelo de objeto do Windows Media Player 7 ou posterior. O objeto de **jogador** foi criado com ID = "WMP9".
+Você pode criar um manipulador de eventos de erro para Windows Media Player usando script. O exemplo JScript a seguir mostra como recuperar o item de erro mais recente da fila de erros e exibir o código de erro e a descrição do erro usando o modelo de objeto Windows Media Player 7 ou posterior. O **objeto** Player foi criado com ID = "WMP9".
 
 
 ```C++
@@ -61,9 +61,9 @@ alert(msg);
 
 
 
-O objeto de **erro** tem dois métodos adicionais que você pode usar. O *erro*. o método **clearErrorQueue** permite remover todos os erros da fila de erros e redefinir o número de índice para zero. Você tem controle total sobre esse processo; Você pode manter os erros na fila pelo tempo que precisar que estejam disponíveis e, em seguida, esvaziar a fila quando terminar de lidar com os erros.
+O **objeto Error** tem dois métodos adicionais que você pode usar. O *Erro*. **O método clearErrorQueue** permite remover todos os erros da fila de erros e redefinir o número do índice para zero. Você tem controle total sobre esse processo; você pode manter os erros na fila enquanto precisar que eles sejam disponibilizados e, em seguida, esvazie a fila quando terminar de tratar os erros.
 
-O *erro*. o método **WebHelp** fornece uma maneira de exibir as informações de erro mais recentes para o usuário usando a Internet. Quando chamado, esse método transfere todas as informações relevantes sobre o primeiro erro na fila (aquela com índice zero) para a ajuda da Web do Microsoft Windows Media Player, que exibe informações adicionais sobre o erro na janela atual do navegador.
+O *Erro*. **O método webHelp** fornece uma maneira de exibir as informações de erro mais atuais para o usuário usando a Internet. Quando chamado, esse método transfere todas as informações relevantes sobre o primeiro erro na fila (aquele com índice zero) para a Ajuda da Web do Microsoft Windows Media Player, que exibe mais informações sobre o erro na janela atual do navegador.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -75,7 +75,7 @@ O *erro*. o método **WebHelp** fornece uma maneira de exibir as informações d
 [**Objeto ErrorItem**](erroritem-object.md)
 </dt> <dt>
 
-[**Guia de migração do modelo de objeto**](object-model-migration-guide.md)
+[**Guia de migração de modelo de objeto**](object-model-migration-guide.md)
 </dt> </dl>
 
  

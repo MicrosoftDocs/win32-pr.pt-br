@@ -1,5 +1,5 @@
 ---
-description: O objeto de algoritmo expõe as propriedades a seguir.
+description: O objeto Algorithm expõe as propriedades a seguir.
 ms.assetid: 83A44BE2-C1CC-41A8-B234-0AEF892B694F
 title: Propriedades do algoritmo
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "117773671"
 ---
 # <a name="algorithm-properties"></a>Propriedades do algoritmo
 
-O objeto de [**algoritmo**](algorithm.md) expõe as propriedades a seguir.
+O [**objeto Algorithm**](algorithm.md) expõe as propriedades a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 

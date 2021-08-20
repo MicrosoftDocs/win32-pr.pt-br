@@ -1,11 +1,11 @@
 ---
-title: Método Aconselhetime IReferenceClock
-description: O método Aconselhetime solicita uma notificação assíncrona que um tempo decorreu.
+title: Método IReferenceClock AdviseTime
+description: O método AdviseTime solicita uma notificação assíncrona de que um tempo decorrido.
 ms.assetid: 8f3f8713-b53c-4110-ac7a-724bbc49368e
 keywords:
-- Método aconselhetime Windows Media Format
-- Método aconselhetime Windows Media Format, interface IReferenceClock
-- Formato de mídia do Windows da interface IReferenceClock, método Aconselhetime
+- Formato de mídia do windows do método AdviseTime
+- Formato de mídia do windows do método AdviseTime, interface IReferenceClock
+- Formato de mídia da interface IReferenceClock, método AdviseTime
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 3fa91338b4bff8f925f00e7159a36089e0de0aa8
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 0b648c1c1305503f049b3c02669d1fa3c49be428d31c0cd292801b3541a25cc6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105772732"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655363"
 ---
-# <a name="ireferenceclockadvisetime-method"></a>Método IReferenceClock:: AdviseTime
+# <a name="ireferenceclockadvisetime-method"></a>Método IReferenceClock::AdviseTime
 
-O método **aconselhetime** solicita uma notificação assíncrona que um tempo decorreu.
+O **método AdviseTime** solicita uma notificação assíncrona de que um tempo decorrido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,45 +44,45 @@ HRESULT AdviseTime(
 
 <dl> <dt>
 
-*rtBaseTime* \[ no\]
+*rtBaseTime* \[ Em\]
 </dt> <dd>
 
-Tempo de referência base, em unidades de 100 a nanossegundos.
+Tempo de referência base, em unidades de 100 nanossegundos.
 
 </dd> <dt>
 
-*rtStreamTime* \[ no\]
+*rtStreamTime* \[ Em\]
 </dt> <dd>
 
-Tempo de deslocamento de fluxo, em unidades de 100 a nanossegundos.
+Tempo de deslocamento de fluxo, em unidades de 100 nanossegundos.
 
 </dd> <dt>
 
-*hEvent* \[ no\]
+*hEvent* \[ Em\]
 </dt> <dd>
 
-Identificador para um evento, criado pelo chamador. Esse evento será sinalizado quando o tempo especificado for decorrido.
+Manipular para um evento, criado pelo chamador. Esse evento será sinalizado quando o tempo especificado ocorrer.
 
 </dd> <dt>
 
-*pdwAdviseCookie* \[ fora\]
+*pdwAdviseCookie* \[ out\]
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um identificador para a solicitação. Isso é usado para identificar essa chamada para o **aconselhetime** no futuro, por exemplo, para cancelar a solicitação.
+Ponteiro para uma variável que recebe um identificador para a solicitação. Isso é usado para identificar essa chamada para **AdviseTime** no futuro, por exemplo, para cancelar a solicitação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                               | Descrição                                             |
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>      | O método foi bem-sucedido.<br/>                        |
-| <dl> <dt>**\_ponteiro E**</dt> </dl> | O parâmetro *pdwAdviseCookie* é **nulo**.<br/> |
-| <dl> <dt>**E \_ falha**</dt> </dl>    | Falha não especificada.<br/>                         |
+| <dl> <dt>**PONTEIRO \_ E**</dt> </dl> | O *parâmetro pdwAdviseCookie* é **NULL.**<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>    | Falha não especificada.<br/>                         |
 
 
 
@@ -92,7 +92,7 @@ O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limita�
 
 <dl> <dt>
 
-[**Interface IReferenceClock**](ireferenceclock.md)
+[**IReferenceClock Interface**](ireferenceclock.md)
 </dt> </dl>
 
  

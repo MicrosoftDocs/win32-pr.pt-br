@@ -5,12 +5,12 @@ ms.assetid: 399F5E91-B017-4F5E-9037-DC055407D96F
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2dad0da9f84d68fc1acbf53332d1cae4075f0faa
-ms.sourcegitcommit: 91110c16e4713ed82d7fb80562d3ddf40b5d76b2
+ms.openlocfilehash: c17645dd55a145a54bed2652624e90e76ab6763a94ca624ed604cca1a7570112
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107492277"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117912194"
 ---
 # <a name="specifying-root-signatures-in-hlsl"></a>Como especificar assinaturas raiz no HLSL
 
@@ -301,7 +301,7 @@ Para gerenciar assinaturas raiz criadas pelo HLSL, a tabela a seguir fornece alg
 
 A funcionalidade disponível por meio do FXC também está disponível programaticamente usando a função [**D3DCompile**](/windows/desktop/direct3dhlsl/d3dcompile) . Essa chamada compila um sombreador com uma assinatura raiz ou uma assinatura raiz autônoma (definindo o \_ destino rootsig 1 \_ 0). [**D3DGetBlobPart**](/windows/desktop/direct3dhlsl/d3dgetblobpart) e [**D3DSetBlobPart**](/windows/desktop/direct3dhlsl/d3dsetblobpart) podem extrair e anexar assinaturas raiz a um blob existente.  \_ \_ A assinatura raiz do blob do D3D \_ é usada para especificar o tipo de parte do blob de assinatura raiz. [**D3DStripShader**](/windows/desktop/direct3dhlsl/d3dstripshader) remove a assinatura raiz (usando o \_ sinalizador de \_ assinatura raiz da faixa D3DCOMPILER \_ ) do blob.
 
-## <a name="notes"></a>Anotações
+## <a name="notes"></a>Observações
 
 > [!Note]  
 > Enquanto a compilação offline de sombreadores é altamente recomendável, se os sombreadores precisarem ser compilados em tempo de execução, consulte os comentários para [**D3DCompile2**](/windows/desktop/direct3dhlsl/d3dcompile2).

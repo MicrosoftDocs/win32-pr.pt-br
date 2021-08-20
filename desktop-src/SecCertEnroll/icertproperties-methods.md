@@ -20,7 +20,7 @@ A interface [**ICertProperties**](/windows/desktop/api/CertEnroll/nn-certenroll-
 -   [**Adicionar método**](/windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-add)
 -   [**Método Clear**](/windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-clear)
 -   [**Método InitializeFromCertificate**](/windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-initializefromcertificate)
--   [**Método Remove**](/windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-remove)
+-   [**Remover método**](/windows/desktop/api/CertEnroll/nf-certenroll-icertproperties-remove)
 
  
 

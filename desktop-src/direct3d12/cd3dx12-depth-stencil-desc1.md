@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 976c05ec4f3ca85ccfcebb6a13dbe408ba05c64e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 19e14002fe5245e28679a59b7ed94ab2869c008781875fa4714bd6bd33cc4705
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105747451"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117913009"
 ---
 # <a name="cd3dx12_depth_stencil_desc1-structure"></a>\_ \_ Estrutura DESC1 de estêncil de profundidade de CD3DX12 \_
 

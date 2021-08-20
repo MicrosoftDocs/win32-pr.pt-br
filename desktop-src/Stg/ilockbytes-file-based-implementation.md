@@ -6,12 +6,12 @@ keywords:
 - ILockBytes Strctd STG, implementações, com base em arquivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93dfe09ab0157d2d24d81b7bb2798e984d3848f4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0f3dcfd11562f6a023d1f77af44b51ff7016cb61afdb16f2e4d72f81114fc132
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363747"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117961805"
 ---
 # <a name="ilockbytes---file-based-implementation"></a>ILockBytes-implementação de File-Based
 
@@ -89,9 +89,9 @@ A implementação de [**IStorage:: stat**](/windows/desktop/api/Objidl/nf-objidl
 [**IStream**](/windows/desktop/api/Objidl/nn-objidl-istream)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

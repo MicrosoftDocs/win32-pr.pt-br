@@ -4,12 +4,12 @@ ms.assetid: 456e1a19-7e9b-40c8-9295-42bb8f740f58
 title: Enfileirando uma seção INF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e5566931131885cf6f300b5a6386639bbd564e1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4c419f23fe48057eec382c83b4da5e219114c186a9b7bc07c04fc5d7088b17e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506102"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117964953"
 ---
 # <a name="queuing-an-inf-section"></a>Enfileirando uma seção INF
 

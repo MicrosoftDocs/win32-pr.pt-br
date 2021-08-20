@@ -10,12 +10,12 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: e6ec49f808f6c6dea74d3c8c2ac4408bc5d1a26e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9ef488a715532372592606f31dcfe1925a93dc29de78a54c869db83c21433c08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118049859"
 ---
 # <a name="shell-glossary"></a>Glossário do Shell
 
@@ -23,17 +23,17 @@ ms.locfileid: "104296728"
 
 <dl> <dt>
 
-**associação**
+**Associação**
 </dt> <dd>
 
-Um mapeamento de uma extensão de nome de arquivo (por exemplo,. mp3) ou protocolo (por exemplo, http) para um identificador programático (ProgID). Esse mapeamento é armazenado no registro como uma configuração por usuário com um fallback por computador. Os aplicativos que participam do sistema de programas padrão definem o mapeamento de associação para a extensão de nome de arquivo ou protocolo para apontarem para as chaves ProgID que eles possuem.
+Um mapeamento de uma extensão de nome de arquivo (por exemplo, .mp3) ou protocolo (por exemplo, http) para um identificador programático (ProgID). Esse mapeamento é armazenado no registro como uma configuração por usuário com um fallback por computador. Os aplicativos que participam do sistema de programas padrão definem o mapeamento de associação para a extensão de nome de arquivo ou protocolo para apontarem para as chaves ProgID que eles possuem.
 
 </dd> <dt>
 
 **matriz de associação**
 </dt> <dd>
 
-Uma lista ordenada de locais de registro usados para armazenar informações sobre um tipo de item, incluindo manipuladores, verbos e outros atributos, como o ícone e o nome de exibição do tipo. Por exemplo, um arquivo. jpg tem a seguinte matriz de associação em um sistema Windows padrão: "HKCR \\ jpgfile", "HKCR \\ SystemFileAssociations \\ . jpg", "a \\ \\ imagem de SystemFileAssociations de HKCR", "HKCR \\ \* ", "HKCR \\ AllFileSystemObjects".
+Uma lista ordenada de locais de registro usados para armazenar informações sobre um tipo de item, incluindo manipuladores, verbos e outros atributos, como o ícone e o nome de exibição do tipo. por exemplo, um arquivo .jpg tem a seguinte matriz de associação em um sistema de Windows padrão: "hkcr \\ jpgfile", "hkcr \\ SystemFileAssociations \\.jpg", "hkcr \\ SystemFileAssociations \\ image", "hkcr \\ \* ", "hkcr \\ AllFileSystemObjects".
 
 </dd> </dl>
 
@@ -69,7 +69,7 @@ Um nome com neutralidade de idioma que pode ser usado programaticamente para se 
 **contêiner**
 </dt> <dd>
 
-Um tipo de item de shell que pode conter outros itens. Os itens em um contêiner são expostos ao namespace do shell usando uma fonte de dados do Shell. Os exemplos incluem pastas, unidades, servidores de rede e arquivos compactados com uma extensão de nome de arquivo. zip. Consulte também: fonte de dados do Shell, pasta, item de Shell.
+Um tipo de item de shell que pode conter outros itens. Os itens em um contêiner são expostos ao namespace do shell usando uma fonte de dados do Shell. Os exemplos incluem pastas, unidades, servidores de rede e arquivos compactados com uma extensão de nome de arquivo .zip. Consulte também: fonte de dados do Shell, pasta, item de Shell.
 
 </dd> <dt>
 
@@ -83,14 +83,14 @@ Texto e propriedades associados a um item de shell ou a uma fonte de conteúdo q
 **fonte de conteúdo**
 </dt> <dd>
 
-Um item que pode ser acessado pelo indexador. As fontes de conteúdo são endereçáveis por uma URL e são fornecidas ao indexador por um manipulador de protocolo. Os exemplos incluem: arquivos e pastas do sistema de arquivos, itens e pastas do Microsoft Outlook, registros de banco de dados e itens armazenados do Microsoft SharePoint. Uma fonte de conteúdo pode ser exposta como itens de shell implementando uma fonte de dados do Shell. Consulte também: conteúdo, item de Shell.
+Um item que pode ser acessado pelo indexador. As fontes de conteúdo são endereçáveis por uma URL e são fornecidas ao indexador por um manipulador de protocolo. os exemplos incluem: arquivos e pastas do sistema de arquivos, microsoft Outlook itens e pastas, registros de banco de dados e itens armazenados do microsoft SharePoint. Uma fonte de conteúdo pode ser exposta como itens de shell implementando uma fonte de dados do Shell. Consulte também: conteúdo, item de Shell.
 
 </dd> <dt>
 
 **content view (exibição de conteúdo)**
 </dt> <dd>
 
-Uma exibição no Windows Explorer (oferecida no Windows 7 e posterior) que exibe o conteúdo mais relevante para cada item da lista com base em sua associação de tipo ou extensão de nome de arquivo. A exibição de conteúdo usa uma lógica de redimensionamento que descarta Propriedades quando o tamanho da janela diminui para garantir que as propriedades mais críticas ainda tenham espaço para serem legíveis. Consulte também: padrão de layout, tipo, associação de tipo.
+uma exibição no Windows Explorer (oferecida no Windows 7 e posterior) que exibe o conteúdo mais relevante para cada item da lista com base em sua associação de tipo ou extensão de nome de arquivo. A exibição de conteúdo usa uma lógica de redimensionamento que descarta Propriedades quando o tamanho da janela diminui para garantir que as propriedades mais críticas ainda tenham espaço para serem legíveis. Consulte também: padrão de layout, tipo, associação de tipo.
 
 </dd> <dt>
 
@@ -136,14 +136,14 @@ Esse termo às vezes é usado para significar o armazenamento de dados ou a font
 **armazenamento de dados**
 </dt> <dd>
 
-Um repositório de dados. Um armazenamento de dados pode ser exposto ao modelo de programação do shell como um contêiner usando uma fonte de dados do Shell. Os itens em um armazenamento de dados podem ser indexados pelo sistema de pesquisa do Windows usando um manipulador de protocolo.
+Um repositório de dados. Um armazenamento de dados pode ser exposto ao modelo de programação do shell como um contêiner usando uma fonte de dados do Shell. os itens em um armazenamento de dados podem ser indexados pelo sistema de pesquisa Windows usando um manipulador de protocolo.
 
 </dd> <dt>
 
 **composição de área de trabalho**
 </dt> <dd>
 
-Um recurso do Windows Vista que permite que janelas individuais sejam desenhadas para superfícies fora da tela na memória de vídeo em vez de serem desenhadas diretamente para o dispositivo de vídeo primário.
+um recurso Windows Vista que permite que janelas individuais sejam desenhadas para superfícies fora da tela na memória de vídeo em vez de serem desenhadas diretamente para o dispositivo de vídeo primário.
 
 </dd> <dt>
 
@@ -182,7 +182,7 @@ Um verbo que depende do estado de um item de shell ou do sistema; a aparência d
 **Comando do Explorer**
 </dt> <dd>
 
-Um objeto que pode ser apresentado como um botão próximo à parte superior da janela do Windows Explorer que fornece funcionalidade para itens e contêineres nessa janela. Uma fonte de dados do Shell fornece os objetos de comando do Windows Explorer para um item de contêiner específico. Os comandos às vezes são usados como verbos.
+um objeto que pode ser apresentado como um botão próximo à parte superior da janela Windows Explorer que fornece funcionalidade para itens e contêineres nessa janela. uma fonte de dados do Shell fornece os objetos de comando do Windows Explorer para um item de contêiner específico. Os comandos às vezes são usados como verbos.
 
 </dd> </dl>
 
@@ -221,7 +221,7 @@ O indicador principal de um tipo de arquivo para itens do sistema de arquivos, �
 **tipo de arquivo**
 </dt> <dd>
 
-Um valor de extensão de nome de arquivo específico, como ". htm" ou ". jpg", que define uma classe de arquivos que são do mesmo tipo e têm um conjunto comum de associações. Consulte também: tipo, associação de tipo de arquivo.
+Um valor de extensão de nome de arquivo específico, como ".htm" ou ".jpg", que define uma classe de arquivos que são do mesmo tipo e têm um conjunto comum de associações. Consulte também: tipo, associação de tipo de arquivo.
 
 </dd> <dt>
 
@@ -235,7 +235,7 @@ Para uma extensão de nome de arquivo específica, os elementos da matriz de ass
 **personalização de tipo de arquivo**
 </dt> <dd>
 
-Uma associação que habilita o Shell a personalizar como o Shell trata um tipo de arquivo. As personalizações de tipo de arquivo incluem: especificar o aplicativo usado para abrir o arquivo quando clicado duas vezes, adicionando comandos ao menu de atalho para um tipo de arquivo, especificando um ícone personalizado, especificando um tipo de conteúdo MIME para associar a um tipo de arquivo, especificando um tipo percebido e especificando um ou mais aplicativos associados por tipo de arquivo com a caixa de diálogo abrir com. Consulte também: Percebidotype.
+Uma associação que habilita o Shell a personalizar como o Shell trata um tipo de arquivo. As personalizações de tipo de arquivo incluem: especificar o aplicativo usado para abrir o arquivo quando clicado duas vezes, adicionar comandos ao menu de atalho para um tipo de arquivo, especificar um ícone personalizado, especificar um tipo de conteúdo MIME para associar a um tipo de arquivo, especificar um tipo percebido e especificar um ou mais aplicativos associados por tipo de arquivo com a caixa de diálogo Abrir com. Consulte também: PerceivedType.
 
 </dd> <dt>
 
@@ -246,7 +246,7 @@ Um manipulador registrado para um tipo de arquivo. Consulte também: manipulador
 
 </dd> <dt>
 
-**pasta**
+**Pasta**
 </dt> <dd>
 
 Consulte a definição para: contêiner.
@@ -264,10 +264,10 @@ Um PIDL que descreve exclusivamente um objeto relativo à pasta da área de trab
 
 <dl> <dt>
 
-**cliques**
+**handler**
 </dt> <dd>
 
-Um objeto COM que fornece funcionalidade para um item de Shell. A maioria das fontes de dados de shell oferece um sistema extensível para ligar manipuladores a itens. Por exemplo, a pasta sistema de arquivos usa o sistema de associação para pesquisar os manipuladores de um determinado tipo de arquivo. Consulte também: Associação de arquivo, tipo de arquivo, personalização de tipo de arquivo.
+Um objeto COM que fornece funcionalidade para um item do Shell. A maioria das fontes de dados do Shell oferece um sistema extensível para manipuladores de associação a itens. Por exemplo, a pasta do sistema de arquivos usa o sistema de associação para procurar os manipuladores de um tipo de arquivo específico. Confira também: associação de arquivo, tipo de arquivo, personalização de tipo de arquivo.
 
 </dd> </dl>
 
@@ -275,38 +275,38 @@ Um objeto COM que fornece funcionalidade para um item de Shell. A maioria das fo
 
 <dl> <dt>
 
-**manipulador de ícone**
+**manipulador de ícones**
 </dt> <dd>
 
-Um manipulador que fornece as informações necessárias para gerar e armazenar em cache um ícone para um item. O armazenamento de dados do sistema de arquivos dá suporte ao carregamento de um manipulador de ícones para um item com base no tipo de arquivo, permitindo que esse manipulador forneça um ícone que é usado para todas as instâncias desse tipo de arquivo.
+Um manipulador que fornece as informações necessárias para gerar e armazenar em cache um ícone para um item. O armazenamento de dados do sistema de arquivos dá suporte ao carregamento de um manipulador de ícones para um item com base no tipo de arquivo, permitindo que esse manipulador forneça um ícone usado para todas as instâncias desse tipo de arquivo.
 
 </dd> <dt>
 
-**manipulador InfoTip**
+**manipulador infotip**
 </dt> <dd>
 
-Um manipulador que fornece texto pop-up quando o usuário passa o ponteiro do mouse sobre um objeto da interface do usuário.
+Um manipulador que fornece texto pop-up quando o usuário passar o ponteiro do mouse sobre um objeto de interface do usuário.
 
 </dd> <dt>
 
 **item**
 </dt> <dd>
 
-Consulte a definição de: item de Shell.
+Consulte a definição de: item shell.
 
 </dd> <dt>
 
-**classe de item**
+**Classe de item**
 </dt> <dd>
 
-Consulte definição para: tipo de arquivo.
+Consulte a definição de: tipo de arquivo.
 
 </dd> <dt>
 
 **lista de identificadores de item**
 </dt> <dd>
 
-Sequência de uma ou mais estruturas SHITEMID que define exclusivamente um objeto em relação a algum objeto raiz.
+Sequência de uma ou mais estruturas DEMID QUE definem exclusivamente um objeto em relação a algum objeto raiz.
 
 </dd> </dl>
 
@@ -317,7 +317,7 @@ Sequência de uma ou mais estruturas SHITEMID que define exclusivamente um objet
 **Tipo**
 </dt> <dd>
 
-Uma propriedade que fornece um nome de tipo amigável e pode ser associada a uma lista de propriedades e um padrão de layout. O tipo foi introduzido no Windows Vista para expressar uma noção mais amigável do tipo de arquivo para o usuário final e foi definido como uma propriedade de cadeia de caracteres com vários valores (valores de cadeia de caracteres canônicos), assim, você pode ter um valor de tipo de "áudio; vídeo" ou "vincular; documento". Alguns nomes de tipos amigáveis do usuário já estão associados a propriedades e padrões de layout. Por exemplo, itens associados ao tipo. imagem e itens associados a Kind.Document exibem propriedades diferentes mesmo quando estão na mesma exibição. Cada tipo de item pode ser associado a um dos quatro padrões de layout exclusivos que definem o número de propriedades exibidas para cada item e seu layout. Consulte também: espécie de associação, exibição de conteúdo, padrão de layout.
+Uma propriedade que fornece um Nome de tipo amigável e pode ser associada a uma lista de propriedades e um padrão de layout. O tipo foi introduzido no Windows Vista para expressar uma noção mais amigável do tipo de arquivo para o usuário final e foi definido como uma propriedade de cadeia de caracteres de vários valores (valores de cadeia de caracteres canônicas), portanto, você pode ter um valor kind "audio;video" ou "link;document". Alguns nomes de tipo amigáveis já estão associados a propriedades e padrões de layout. Por exemplo, itens associados a Kind.Picture e itens associados Kind.Document exibem propriedades diferentes mesmo quando estão na mesma exibição. Cada tipo de item pode ser associado a um dos quatro padrões de layout exclusivos que definem o número de propriedades exibidas para cada item e seu layout. Confira também: Associação de tipo, exibição de conteúdo, padrão de layout.
 
 </dd> </dl>
 
@@ -328,7 +328,7 @@ Uma propriedade que fornece um nome de tipo amigável e pode ser associada a uma
 **padrão de layout**
 </dt> <dd>
 
-Uma das várias disposições para exibir propriedades. No Windows 7 e posterior, ao registrar um novo tipo de arquivo, você pode usar a exibição de conteúdo para registrar uma lista de propriedades personalizadas e um padrão de layout para o tipo de arquivo. Você pode escolher entre quatro padrões de layout diferentes: alfa (para resultados de pesquisa de documentos que contêm trechos de código), beta (para resultados de pesquisa de email com trechos de código), gama (semelhante a alfa, mas com um layout de duas linhas em vez de quatro) e Delta (para mostrar muitas propriedades mais curtas, como com música e imagens). Consulte também: exibição de conteúdo, tipo, associação de tipo.
+Uma das várias disposição para exibir propriedades. No Windows 7 e posterior, ao registrar um novo tipo de arquivo, você pode usar a exibição de conteúdo para registrar uma lista de propriedades personalizada e um padrão de layout para o tipo de arquivo. Você pode escolher entre quatro padrões de layout diferentes: Alfa (para resultados de pesquisa de documentos que contêm snippets de código), Beta (para resultados de pesquisa de email com snippets de código), Gama (semelhante a Alfa, mas com um layout de duas linhas em vez de quatro) e Delta (para mostrar muitas propriedades mais curtas, como com música e imagens). Confira também: exibição de conteúdo, Tipo, Associação de tipo.
 
 </dd> </dl>
 
@@ -339,7 +339,7 @@ Uma das várias disposições para exibir propriedades. No Windows 7 e posterior
 **manipulador de metadados**
 </dt> <dd>
 
-Esse termo às vezes é usado para significar o manipulador de propriedades. Consulte a definição de: manipulador de propriedade.
+Às vezes, esse termo é usado para significar o manipulador de propriedades. Consulte definição para: manipulador de propriedades.
 
 </dd> </dl>
 
@@ -347,10 +347,10 @@ Esse termo às vezes é usado para significar o manipulador de propriedades. Con
 
 <dl> <dt>
 
-**extensão do namespace**
+**extensão de namespace**
 </dt> <dd>
 
-Consulte a definição de: fonte de dados do Shell.
+Consulte a definição de: Fonte de dados do Shell.
 
 </dd> </dl>
 
@@ -358,7 +358,7 @@ Consulte a definição de: fonte de dados do Shell.
 
 <dl> <dt>
 
-**Banco de dados de vinculação e incorporação de objetos (OLE DB)**
+**banco de dados de vinculação e incorporação de objeto (OLE DB)**
 </dt> <dd>
 
 Um conjunto padrão de interfaces que fornece acesso heterogêneo a fontes diferentes de informações localizadas em qualquer lugar, como sistemas de arquivos, pastas de email e bancos de dados.
@@ -368,7 +368,7 @@ Um conjunto padrão de interfaces que fornece acesso heterogêneo a fontes difer
 **OLE DB**
 </dt> <dd>
 
-Consulte definição para: vinculação de objetos e banco de dados de incorporação.
+Consulte definição para: banco de dados de vinculação e incorporação de objeto.
 
 </dd> </dl>
 
@@ -379,49 +379,49 @@ Consulte definição para: vinculação de objetos e banco de dados de incorpora
 **PerceivedType**
 </dt> <dd>
 
-Uma categoria ampla de tipos de formato de arquivo. O percebidatype foi introduzido no Windows XP e dá suporte a um conjunto limitado de tipos de arquivo conhecidos (exemplos incluem imagem, texto, áudio e tipos de arquivo compactados). Tipos de arquivo, geralmente tipos de arquivo públicos, também podem ter um tipo percebido. Por exemplo, o arquivo de imagem Types. bmp,. png,. jpg e. gif também são do tipo percebido, Image. Na camada de programação, Percebidotype é expresso como um inteiro. Como há código que usa tipo e Percebidotype, os proprietários de formato de arquivo devem registrar ambos. Por exemplo, "reproduzir tudo" depende de Percebidotype. Consulte também: tipo de arquivo.
+Uma ampla categoria de tipos de formato de arquivo. O PerceivedType foi introduzido no Windows XP e dá suporte a um conjunto limitado de tipos de arquivo conhecidos (exemplos incluem tipos de arquivo de imagem, texto, áudio e compactado). Tipos de arquivo, geralmente tipos de arquivo públicos, também podem ter um tipo percebido. Por exemplo, os tipos de arquivo de imagem .bmp, .png, .jpg e .gif também são do tipo percebido, imagem. Na camada de programação, PerceivedType é expresso como um inteiro. Como há código que usa Kind e PerceivedType, os proprietários de formato de arquivo devem registrar ambos. Por exemplo, "reproduzir tudo" depende de PerceivedType. Consulte também: tipo de arquivo.
 
 </dd> <dt>
 
-**Gerenciador de visualização**
+**manipulador de visualização**
 </dt> <dd>
 
-Um manipulador que produz rapidamente uma exibição simplificada e somente leitura do item de Shell a ser exibido no painel de visualização do Windows Explorer.
+Um manipulador que produz rapidamente uma exibição simplificada e somente leitura do item shell a ser exibido no painel de visualização Windows Explorer.
 
 </dd> <dt>
 
 **manipulador de propriedades**
 </dt> <dd>
 
-Um manipulador que traduz dados armazenados em um arquivo em um esquema estruturado que é reconhecido pelo e pode ser acessado pelo Windows Explorer, pelo Windows Search e por outros aplicativos. Esses sistemas podem interagir com o manipulador de propriedades para gravar e ler propriedades de e para o arquivo. Os dados traduzidos incluem exibição de detalhes, infotips, painel de detalhes, páginas de propriedades e assim por diante. Cada manipulador de propriedade é associado a um tipo de arquivo específico, identificado pela extensão de nome de arquivo. Consulte também: sistema de propriedades.
+Um manipulador que converte dados armazenados em um arquivo em um esquema estruturado que é reconhecido pelo e pode ser acessado por Windows Explorer, Windows Search e outros aplicativos. Esses sistemas podem interagir com o manipulador de propriedades para gravar e ler propriedades de e para o arquivo. Os dados traduzidos incluem exibição de detalhes, infotips, painel de detalhes, páginas de propriedades e assim por diante. Cada manipulador de propriedades é associado a um tipo de arquivo específico, identificado pela extensão de nome de arquivo. Confira também: sistema de propriedades.
 
 </dd> <dt>
 
-**manipulador de folhas de propriedades**
+**manipulador de folha de propriedades**
 </dt> <dd>
 
-Um manipulador que é usado para criar folhas de propriedades personalizadas com imagens e controles da interface do usuário que permitem a interação personalizada com um tipo de arquivo.
+Um manipulador usado para criar folhas de propriedades personalizadas com imagens e controles de interface do usuário que permitem a interação personalizada com um tipo de arquivo.
 
 </dd> <dt>
 
 **sistema de propriedades**
 </dt> <dd>
 
-Um sistema de leitura/gravação extensível de definições de dados que usa propriedades implementadas como pares de nome-valor. Consulte também: manipulador de propriedades, item de Shell.
+Um sistema extensível de leitura/gravação de definições de dados que usa propriedades implementadas como pares nome-valor. Consulte também: manipulador de propriedades, item shell.
 
 </dd> <dt>
 
 **valor da propriedade**
 </dt> <dd>
 
-Um valor associado a um nome de propriedade para um item de Shell. Por exemplo, "autor", "tamanho" e "data de uso" são propriedades. Os valores de propriedade são expressos como uma estrutura PROPVARIANT.
+Um valor associado a um nome de propriedade para um item shell. Por exemplo, "Autor", "Tamanho" e "Data Tomada" são propriedades. Os valores de propriedade são expressos como uma estrutura PROPVARIANT.
 
 </dd> <dt>
 
 **manipulador de protocolo**
 </dt> <dd>
 
-Um manipulador que acessa fontes de conteúdo e fornece um objeto IUrlAccessor para um protocolo e uma URL especificados. Os manipuladores de protocolo estendem a funcionalidade de pesquisa do Windows e podem fornecer notificações de alteração aos indexadores. Manipuladores de protocolo diferentes são necessários para indexar tipos específicos de armazenamentos de dados. Para fornecer uma experiência de usuário razoável, você também deve fornecer uma fonte de dados do Shell para o armazenamento de dados, além de implementar seu manipulador de protocolo. O manipulador de protocolo expõe os itens no armazenamento de dados para o indexador, enquanto a fonte de dados do Shell expõe os itens no armazenamento de dados para o Shell.
+Um manipulador que acessa fontes de conteúdo e fornece um objeto IUrlAccessor para um protocolo e uma URL especificados. Os manipuladores de protocolo Windows funcionalidade de Pesquisa e podem fornecer notificações de alteração para indexadores. Manipuladores de protocolo diferentes são necessários para indexar tipos específicos de armazenamentos de dados. Para fornecer uma experiência de usuário razoável, você também deve fornecer uma fonte de dados do Shell para o armazenamento de dados, além de implementar o manipulador de protocolo. O manipulador de protocolo expõe os itens no armazenamento de dados para o indexador, enquanto a fonte de dados do Shell expõe os itens no armazenamento de dados para o Shell.
 
 </dd> </dl>
 
@@ -432,7 +432,7 @@ Um manipulador que acessa fontes de conteúdo e fornece um objeto IUrlAccessor p
 **PIDL relativo**
 </dt> <dd>
 
-Um PIDL que é relativo a algum objeto raiz no namespace do shell que não seja a pasta da área de trabalho. Normalmente, essa é a pasta pai do item.
+Um PIDL relativo a algum objeto raiz no namespace do shell diferente da pasta da área de trabalho. Normalmente, essa é a pasta pai do item.
 
 </dd> </dl>
 
@@ -443,21 +443,21 @@ Um PIDL que é relativo a algum objeto raiz no namespace do shell que não seja 
 **Fonte de dados do Shell**
 </dt> <dd>
 
-Um componente que é usado para estender o namespace do Shell e expor itens em um armazenamento de dados. No passado, a fonte de dados do Shell era chamada de extensão de namespace do Shell. Consulte também: contêiner, manipulador, item de Shell.
+Um componente usado para estender o namespace do Shell e expor itens em um armazenamento de dados. No passado, a fonte de dados do Shell era conhecida como extensão de namespace do Shell. Consulte também: contêiner, manipulador, item shell.
 
 </dd> <dt>
 
 **Extensão do shell**
 </dt> <dd>
 
-Esse termo às vezes é usado para significar o manipulador de tipo de arquivo. Consulte a definição para: manipulador de tipo de arquivo.
+Às vezes, esse termo é usado para significar manipulador de tipo de arquivo. Consulte definição para: manipulador de tipo de arquivo.
 
 </dd> <dt>
 
-**Manipulador de extensão de Shell**
+**Manipulador de extensão do Shell**
 </dt> <dd>
 
-Esse termo às vezes é usado para significar o manipulador de tipo de arquivo. Consulte a definição para: manipulador de tipo de arquivo.
+Às vezes, esse termo é usado para significar manipulador de tipo de arquivo. Consulte a definição para: manipulador de tipo de arquivo.
 
 </dd> <dt>
 
@@ -471,7 +471,7 @@ Esse termo às vezes é usado para significar o manipulador de tipo de arquivo. 
 **Item do Shell**
 </dt> <dd>
 
-Uma única parte do conteúdo. Alguns itens de shell são fontes de conteúdo e outros não. Uma pasta é uma fonte de conteúdo, por exemplo, mas um arquivo. jpg não é. Manipuladores de tipo de arquivo expõem itens de Shell. Em alguns contextos, "item" é usado para distinguir contêineres de não contidos. Consulte também: contêiner, fonte de conteúdo, manipulador de tipo de arquivo.
+Uma única parte do conteúdo. Alguns itens de shell são fontes de conteúdo e outros não. Uma pasta é uma fonte de conteúdo, por exemplo, mas um arquivo de .jpg não é. Manipuladores de tipo de arquivo expõem itens de Shell. Em alguns contextos, "item" é usado para distinguir contêineres de não contidos. Consulte também: contêiner, fonte de conteúdo, manipulador de tipo de arquivo.
 
 </dd> <dt>
 

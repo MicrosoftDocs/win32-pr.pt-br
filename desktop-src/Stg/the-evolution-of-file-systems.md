@@ -4,12 +4,12 @@ description: Antes que os computadores tenham sido desenvolvidos para funcionar 
 ms.assetid: 46d497b5-c325-4395-8512-1ed4b88441de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7dc34dc699488b5952d52dfd13f49ea63aaa85aa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 35a619328da91e2d1387690b005984fa62c7b1439183b53188b11ffc4ba0565d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105769175"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117959577"
 ---
 # <a name="the-evolution-of-file-systems"></a>A evolução dos sistemas de arquivos
 
@@ -25,9 +25,9 @@ No entanto, em um mundo de objetos de componente, o armazenamento de dados em um
 
 A solução fornecida pelo COM é implementar um segundo nível de indireção: um sistema de arquivos em um arquivo. O armazenamento de arquivos simples requer que uma sequência contígua grande de bytes no disco seja manipulada por meio de um único identificador de arquivo com um único ponteiro de busca. Por outro lado, o armazenamento estruturado COM define como tratar uma única entidade do sistema de arquivos como uma coleção estruturada de dois tipos de objetos — armazenamentos e fluxos — que atuam como diretórios e arquivos.
 
- 
+ 
 
- 
+ 
 
 
 

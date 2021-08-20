@@ -3,8 +3,8 @@ title: Enumeração de MP_REMOVAL_REASON (MpClient. h)
 description: Motivo da remoção da assinatura FastPath.
 ms.assetid: A09B4903-E53C-4DA1-BD0B-6DE0124FCAB3
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MP_REMOVAL_REASON
-- PMP_REMOVAL_REASON recursos de ambiente herdados do ponteiro de enumeração do Windows
+- recursos do ambiente de Windows herdado de enumeração de MP_REMOVAL_REASON
+- Windows recursos de ambiente herdados do ponteiro de enumeração PMP_REMOVAL_REASON
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 03ce70f46bd95d4183343990b40594326ed5d3b5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6bf4e0ad95ba67a1335ec6915d400b7a8ca219c37bb302036af0a5dca2cf7479
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117883756"
 ---
 # <a name="mp_removal_reason-enumeration"></a>Enumeração do motivo da \_ remoção de MP \_
 
@@ -70,9 +70,9 @@ Automático.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

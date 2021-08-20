@@ -3,9 +3,9 @@ title: Método IWMPDVD topMenu
 description: O método topMenu para a reprodução e exibe o menu superior (ou raiz) do título atual.
 ms.assetid: d6eb6311-167d-4cc1-b445-4e3d3e111e43
 keywords:
-- método topMenu Windows Media Player
+- Windows Media Player do método topMenu
 - método topMenu Windows Media Player, interface IWMPDVD
-- Interface IWMPDVD Windows Media Player, método topMenu
+- Windows Media Player de interface IWMPDVD, método topMenu
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d59bf126a026626cc7f1ba87ea9d0eb94bd1a91
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 97f9cc1dcd528b93e9959f63a387747e510f7dd57b403ad70e41768d77006337
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117930208"
 ---
 # <a name="iwmpdvdtopmenu-method"></a>Método IWMPDVD:: topMenu
 
@@ -49,7 +49,7 @@ Implements IWMPDVD.topMenu
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

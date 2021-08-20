@@ -4,12 +4,12 @@ ms.assetid: 12b504c0-3320-4653-885f-164bbc1df370
 title: System. GPS. DestBearingDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cf66b04c9a1b1ab3c9e6cb3f59a4aeaa808e384d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7ad9c89e36aa4aeafb0e04fc8aaf83bc897bd4db30ebd41a1d7c6c35f7d8cf8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105793341"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118053195"
 ---
 # <a name="systemgpsdestbearingdenominator"></a>System. GPS. DestBearingDenominator
 

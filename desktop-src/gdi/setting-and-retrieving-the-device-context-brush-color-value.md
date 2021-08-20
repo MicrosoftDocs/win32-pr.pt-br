@@ -4,12 +4,12 @@ ms.assetid: a1ef6c25-0d00-4175-8679-001ba165bd6d
 title: Configurando e recuperando o valor de cor do pincel de contexto do dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e0bfc918f5882baa46208d27973e14b9446909e
-ms.sourcegitcommit: 8f0a1d212dd154e8d94ab4c0e4ced053fa16823a
+ms.openlocfilehash: a3d2f99f80305336af74a775b6f090c678ab60dcc6fed6fe29e62d03aea98001
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112010629"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117698195"
 ---
 # <a name="setting-and-retrieving-the-device-context-brush-color-value"></a>Configurando e recuperando o valor de cor do pincel de contexto do dispositivo
 

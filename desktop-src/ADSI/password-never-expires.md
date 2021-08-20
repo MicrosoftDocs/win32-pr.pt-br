@@ -1,11 +1,11 @@
 ---
 title: A senha nunca expira (provedor LDAP)
-description: Para habilitar a opção a senha nunca expirar usando o provedor LDAP, defina o sinalizador de passwd da UF do ADS não \_ \_ \_ expirar \_ no atributo UserAccountControl do usuário.
+description: Para habilitar a opção password never expires usando o provedor LDAP, de definir o sinalizador ADS UF DONT EXPIRE PASSWD no atributo \_ \_ \_ \_ userAccountControl do usuário.
 ms.assetid: b8d7e7fe-c846-45c4-9c5f-770530453836
 ms.tgt_platform: multiple
 keywords:
-- A senha nunca expira em ADSI, provedor LDAP
-- ADSI do provedor LDAP, exemplos de gerenciamento de usuário, senha nunca expira
+- A senha nunca expira ADSI, provedor LDAP
+- ADSI do provedor LDAP, exemplos de gerenciamento de usuário, Senha Nunca Expira
 ms.topic: article
 ms.date: 05/31/2018
 ms.openlocfilehash: dfa48145fa2b78c7685cdf52ab58b1e681df48c7d10a80f0ac7462fa7d4cb868
@@ -17,7 +17,7 @@ ms.locfileid: "117838926"
 ---
 # <a name="password-never-expires-ldap-provider"></a>A senha nunca expira (provedor LDAP)
 
-Para habilitar a opção a senha nunca expirar usando o provedor LDAP, defina o sinalizador de [**passwd da UF do ADS não \_ \_ \_ expirar \_**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) no atributo [**userAccountControl**](/windows/desktop/ADSchema/a-useraccountcontrol) do usuário.
+Para habilitar a opção password never expires usando o provedor LDAP, de definir o sinalizador [**\_ ADS UF \_ DONT EXPIRE \_ \_ PASSWD**](/windows/win32/api/iads/ne-iads-ads_user_flag_enum) no atributo [**userAccountControl**](/windows/desktop/ADSchema/a-useraccountcontrol) do usuário.
 
 
 ```VB

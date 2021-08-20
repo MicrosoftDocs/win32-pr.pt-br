@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_SETBUTTONINFO (commctrl. h)
+title: TB_SETBUTTONINFO mensagem (Commctrl.h)
 description: Define as informações de um botão existente em uma barra de ferramentas.
 ms.assetid: ac9b88b9-d0d0-4669-a342-708924d97c8b
 keywords:
-- controles de Windows de mensagem de TB_SETBUTTONINFO
+- TB_SETBUTTONINFO controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117829620"
 ---
-# <a name="tb_setbuttoninfo-message"></a>TB de \_ mensagem SETBUTTONINFO
+# <a name="tb_setbuttoninfo-message"></a>Mensagem \_ TB SETBUTTONINFO
 
 Define as informações de um botão existente em uma barra de ferramentas.
 
@@ -41,17 +41,17 @@ Identificador de botão.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**TBBUTTONINFO**](/windows/desktop/api/Commctrl/ns-commctrl-tbbuttoninfoa) que contém as informações do novo botão. Os membros **cbSize** e **dwMask** desta estrutura devem ser preenchidos antes do envio desta mensagem.
+Ponteiro para uma [**estrutura TBBUTTONINFO**](/windows/desktop/api/Commctrl/ns-commctrl-tbbuttoninfoa) que contém as novas informações de botão. Os **membros cbSize** **e dwMask** dessa estrutura devem ser preenchidos antes de enviar essa mensagem.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Normalmente, o texto é atribuído a botões quando eles são adicionados a uma barra de ferramentas especificando o índice de uma cadeia de caracteres no pool de cadeias da barra de ferramentas. Se você usar um **\_ SETBUTTONINFO TB** para atribuir um novo texto a um botão, ele substituirá permanentemente o texto do pool de cadeias de caracteres. Você pode alterar o texto chamando **TB \_ SETBUTTONINFO** novamente, mas não é possível reatribuir a cadeia de caracteres do pool de cadeias de caracteres.
+O texto é normalmente atribuído aos botões quando eles são adicionados a uma barra de ferramentas especificando o índice de uma cadeia de caracteres no pool de cadeias de caracteres da barra de ferramentas. Se você usar um **TB \_ SETBUTTONINFO** para atribuir um novo texto a um botão, ele substituirá permanentemente o texto do pool de cadeias de caracteres. Você pode alterar o texto chamando **TB \_ SETBUTTONINFO** novamente, mas não pode reatribuir a cadeia de caracteres do pool de cadeias de caracteres.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ Normalmente, o texto é atribuído a botões quando eles são adicionados a uma 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TB \_ SETBUTTONINFOW** (Unicode) e **TB \_ SETBUTTONINFOA** (ANSI)<br/>         |
 
 
@@ -73,19 +73,19 @@ Normalmente, o texto é atribuído a botões quando eles são adicionados a uma 
 **Referência**
 </dt> <dt>
 
-[**hiperbotãos de TB \_**](tb-addbuttons.md)
+[**\_ADDBUTTONS DE TB**](tb-addbuttons.md)
 </dt> <dt>
 
-[**TB de \_ GETBUTTONINFO**](tb-getbuttoninfo.md)
+[**TB \_ GETBUTTONINFO**](tb-getbuttoninfo.md)
 </dt> <dt>
 
-[**TB de \_ GETBUTTONTEXT**](tb-getbuttontext.md)
+[**TB \_ GETBUTTONTEXT**](tb-getbuttontext.md)
 </dt> <dt>
 
-[**TB \_ GETstring**](tb-getstring.md)
+[**TB \_ GETSTRING**](tb-getstring.md)
 </dt> <dt>
 
-[**TB de \_ INSERTBUTTON**](tb-insertbutton.md)
+[**TB \_ INSERTBUTTON**](tb-insertbutton.md)
 </dt> </dl>
 
  

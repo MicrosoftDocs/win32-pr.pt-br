@@ -3,18 +3,18 @@ title: genre.csv
 description: genre.csv
 ms.assetid: e05517f4-a69b-4db7-943d-3490253b92f3
 keywords:
-- Armazenamentos online do Windows Media Player, genre.csv
+- Windows Media Player lojas online genre.csv
 - lojas online, genre.csv
 - Digite 1 lojas online, genre.csv
 - genre.csv
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a077cadccc0b2da318e60ca2e0636d96319e5b0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 39a6260b5e8187d0e9bdc3fd8dafeeb580671c93634b9554eb6ee48951e30975
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117934551"
 ---
 # <a name="genrecsv"></a>genre.csv
 

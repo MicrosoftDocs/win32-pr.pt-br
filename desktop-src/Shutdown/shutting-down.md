@@ -4,12 +4,12 @@ ms.assetid: acadf58f-3f68-4fa1-bdcf-8f85c8479263
 title: Desligando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e436dd9e3b115112e63b0440b4d51de4c7f9f619
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 59c91309172bc1c057cf2226331f0a4d34a10ec39e57c4b32390e024ecf9b127
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105753708"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117963543"
 ---
 # <a name="shutting-down"></a>Desligando
 
