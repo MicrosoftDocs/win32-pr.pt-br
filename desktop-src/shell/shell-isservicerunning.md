@@ -1,7 +1,7 @@
 ---
-description: Método Shell. IsServiceRunning – retorna um valor que indica se um serviço específico está em execução.
+description: Método Shell.IsServiceRunning – retorna um valor que indica se um serviço específico está em execução.
 ms.assetid: FDC41C2D-7462-458f-BBE6-D97260C26B6C
-title: Método Shell. IsServiceRunning (shldisp. h)
+title: Método Shell.IsServiceRunning (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 01af900bb7930ec7b6dde0b0700c83f211733dc3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 97935e986a0b192e6d6c84c317dc3da711469a035baa8225ac3116229baf9593
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108083710"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117676850"
 ---
-# <a name="shellisservicerunning-method"></a>Método Shell. IsServiceRunning
+# <a name="shellisservicerunning-method"></a>Método Shell.IsServiceRunning
 
 Retorna um valor que indica se um serviço específico está em execução.
 
@@ -49,12 +49,12 @@ Shell.IsServiceRunning( _
 
 <dl> <dt>
 
-*sServiceName* \[ no\]
+*sServiceName* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Uma **cadeia de caracteres** que contém o nome do serviço.
+Uma **Cadeia de** caracteres que contém o nome do serviço.
 
 </dd> </dl>
 
@@ -62,25 +62,25 @@ Uma **cadeia de caracteres** que contém o nome do serviço.
 
 ### <a name="jscript"></a>JScript
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-Retornará **true** se o serviço especificado por *sServiceName* estiver em execução; caso contrário, **false**.
+Retornará **true** se o serviço especificado por *sServiceName estiver* em execução; caso contrário, **false.**
 
 ### <a name="vb"></a>VB
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-Retornará **true** se o serviço especificado por *sServiceName* estiver em execução; caso contrário, **false**.
+Retornará **true** se o serviço especificado por *sServiceName estiver* em execução; caso contrário, **false.**
 
 ## <a name="remarks"></a>Comentários
 
-Este método não está disponível atualmente no Microsoft Visual Basic.
+Esse método não está disponível atualmente no Microsoft Visual Basic.
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso de **IsServiceRunning** para determinar se o serviço de temas está em execução para um aplicativo. O uso é mostrado para JScript e VBScript.
+Os exemplos a seguir mostram o uso **de IsServiceRunning** para determinar se o serviço Temas está em execução para um aplicativo. O uso é mostrado para JScript e VBScript.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -95,7 +95,7 @@ function fnIsServiceRunningJ()
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -119,11 +119,11 @@ end function
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

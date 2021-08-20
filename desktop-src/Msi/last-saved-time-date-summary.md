@@ -1,21 +1,21 @@
 ---
-description: A última propriedade de Resumo de data/hora salvas transmite a última vez em que este pacote de instalação, transformação ou pacote de patch foi modified.Initially, um autor deve definir o valor da última propriedade de Resumo de hora/data salva como NULL para indicar que nenhuma alteração foi feita no pacote. Um autor deve atualizar a última propriedade de Resumo de hora/data salva para a data/hora atual do sistema sempre que um banco de dados de instalação, transformação ou pacote de patch modificado é salvo.
+description: A propriedade Resumo da Última Hora/Data Salva transmite a última vez em que esse pacote de instalação, transformação ou pacote de patch foi modified.Initially, um autor deve definir o valor da propriedade Resumo da Data/Hora Da Última Salva como Nulo para indicar que nenhuma alteração ainda foi feita no pacote. Em seguida, um autor deve atualizar a propriedade Resumo da Data/Hora Da Última Salva para a data/hora do sistema atual sempre que um banco de dados de instalação modificado, transformação ou pacote de patch for salvo.
 ms.assetid: be3957fa-463a-4eb2-8b9d-93a16e95a8cf
-title: Última propriedade de Resumo de data/hora salva
+title: Propriedade Resumo da Hora/Data da Última Salva
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bfe2300640434a52a78575221dc69e0f7263883
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 83ee32a6c8eb92a159eec39db04e06f28b2918b4f02b1b957f14022d1890563d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105792498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117805560"
 ---
-# <a name="last-saved-timedate-summary-property"></a>Última propriedade de Resumo de data/hora salva
+# <a name="last-saved-timedate-summary-property"></a>Propriedade Resumo da Hora/Data da Última Salva
 
-A **última propriedade de Resumo de data/hora salvas** transmite a última vez em que este pacote de instalação, transformação ou pacote de patch foi modificado.
+A **propriedade Resumo da Hora/Data da** Última Salva transmite a última vez em que este pacote de instalação, transformação ou pacote de patch foi modificado.
 
-Inicialmente, um autor deve definir o valor da última propriedade de **Resumo de hora/data salva** como NULL para indicar que nenhuma alteração foi feita no pacote. Um autor deve atualizar a última propriedade de **Resumo de hora/data salva** para a data/hora atual do sistema sempre que um banco de dados de instalação, transformação ou pacote de patch modificado é salvo.
+Inicialmente, um autor deve definir o valor da propriedade Resumo da **Data/Hora** Da Última Salva como Nulo para indicar que nenhuma alteração foi feita no pacote. Em seguida, um autor deve atualizar a propriedade Resumo da **Data/Hora** Da Última Salva para a data/hora do sistema atual sempre que um banco de dados de instalação modificado, transformação ou pacote de patch for salvo.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -23,7 +23,7 @@ Inicialmente, um autor deve definir o valor da última propriedade de **Resumo d
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 
 
 
@@ -31,7 +31,7 @@ Inicialmente, um autor deve definir o valor da última propriedade de **Resumo d
 
 <dl> <dt>
 
-[Descrições de propriedades de resumo](summary-property-descriptions.md)
+[Descrições da propriedade Summary](summary-property-descriptions.md)
 </dt> </dl>
 
  

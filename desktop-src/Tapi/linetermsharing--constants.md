@@ -4,12 +4,12 @@ ms.assetid: 50a52a50-4d94-4068-9ea4-bea862400036
 title: Constantes de LINETERMSHARING_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a2587621b6362195a610339ba5620b32f1d4f761
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0465899b8875545d70419f0892b57f10b8c1dce16256890f8b384817d6094108
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117944843"
 ---
 # <a name="linetermsharing_-constants"></a>\_Constantes LINETERMSHARING
 
@@ -60,7 +60,7 @@ Essas constantes descrevem as classes de fluxo de controle e de informações qu
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

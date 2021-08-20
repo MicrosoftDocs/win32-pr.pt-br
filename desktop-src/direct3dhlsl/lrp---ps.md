@@ -1,6 +1,6 @@
 ---
-title: LRP-PS
-description: Interpola linearmente entre o segundo e o terceiro registros de origem por uma proporção especificada no primeiro registro de origem. | LRP-PS
+title: lrp – ps
+description: Interpola linearmente entre os registros de segunda e terceira fonte por uma proporção especificada no primeiro registro de origem. | lrp – ps
 ms.assetid: b360f28e-cb2a-4403-a020-180524df6549
 ms.topic: reference
 ms.date: 05/31/2018
@@ -9,22 +9,22 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: aec1ac23cc6c86f768d435e4c8169117c1bbe899
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 716cbdd5492f768885b8dd91dca5a17f72c4ba50897274c2d6e11f340f563394
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104012056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117906866"
 ---
-# <a name="lrp---ps"></a>LRP-PS
+# <a name="lrp---ps"></a>lrp – ps
 
-Interpola linearmente entre o segundo e o terceiro registros de origem por uma proporção especificada no primeiro registro de origem.
+Interpola linearmente entre os registros de segunda e terceira fonte por uma proporção especificada no primeiro registro de origem.
 
 ## <a name="syntax"></a>Syntax
 
 
 
-| LRP DST, src0, src1, src2 |
+| lrp dst, src0, src1, src2 |
 |---------------------------|
 
 
@@ -33,7 +33,7 @@ Interpola linearmente entre o segundo e o terceiro registros de origem por uma p
 
 onde
 
--   DST é o registro de destino.
+-   dst é o registro de destino.
 -   src0 é um registro de origem.
 -   src1 é um registro de origem.
 -   src2 é um registro de origem.
@@ -42,9 +42,9 @@ onde
 
 
 
-| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ SW | 3 \_ 0 | 3 \_ SW |
+| Versões do sombreador de pixel | 1\_1 | 1\_2 | 1 \_ 3 | 1\_4 | 2 \_ 0 | 2 \_ x | 2 \_ sw | 3 \_ 0 | 3 \_ sw |
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
-| lrp                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
+| Lrp                   | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 
 
 

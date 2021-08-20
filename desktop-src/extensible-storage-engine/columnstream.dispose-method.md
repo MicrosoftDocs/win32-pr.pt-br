@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 4763c04293ba78a7a8900414e2297a9c7a2a52c9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b8b4f12e707887b2e6b7f80771616e733cf5b4bb9c1ee471b540d8c85a706978
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297323"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117901987"
 ---
 # <a name="columnstreamdispose-method"></a>Método ColumnStream. Dispose
 

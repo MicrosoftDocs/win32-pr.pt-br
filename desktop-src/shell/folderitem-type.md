@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 12c3ffe3b32a6d2b2f3021312905839bc5cc1744
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f270197ce57ba02823acd9f30e05ece5d45216c799512f0a22b8a14bba7eb9fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117679524"
 ---
 # <a name="folderitemtype-property"></a>Propriedade FolderItem. Type
 
@@ -41,9 +41,9 @@ Uma variável do tipo [**BSTR**](/previous-versions/windows/desktop/automat/bstr
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa o **tipo** para recuperar o tipo do item. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir usa o **tipo** para recuperar o tipo do item. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -149,7 +149,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

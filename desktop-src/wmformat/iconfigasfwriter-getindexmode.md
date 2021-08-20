@@ -1,11 +1,11 @@
 ---
-title: Método getindexmode de IConfigAsfWriter
-description: O método getindexmode recupera o modo de índice temporal atual.
+title: Método GetIndexMode IConfigAsfWriter
+description: O método GetIndexMode recupera o modo de índice temporal atual.
 ms.assetid: beb874ea-d0d5-4323-a817-47984911da4c
 keywords:
-- Método getindexmode formato de mídia do Windows
-- Método getindexmode formato de mídia do Windows, interface IConfigAsfWriter
-- IConfigAsfWriter interface formato Windows Media, método getindexmode
+- Formato de mídia do windows do método GetIndexMode
+- Método GetIndexMode windows Formato de Mídia, interface IConfigAsfWriter
+- Formato de mídia da interface IConfigAsfWriter , método GetIndexMode
 topic_type:
 - apiref
 api_name:
@@ -15,23 +15,23 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bb701f591579d3113e79b0b9b74167ac8de3d75f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a95eb0e037bbebf62b710317b6e4b9b1224f9d2429712ffaec88dd1703a1c667
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366269"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117655457"
 ---
-# <a name="iconfigasfwritergetindexmode-method"></a>Método IConfigAsfWriter:: getindexmode
+# <a name="iconfigasfwritergetindexmode-method"></a>Método IConfigAsfWriter::GetIndexMode
 
-O método **Getindexmode** recupera o modo de índice temporal atual.
+O **método GetIndexMode** recupera o modo de índice temporal atual.
 
 ## <a name="syntax"></a>Sintaxe
 
 
 ```C++
 HRESULT GetIndexMode(
-  [out] BOOL *pbIndexFile
+  [out] BOOL *pbIndexFile
 );
 ```
 
@@ -41,28 +41,28 @@ HRESULT GetIndexMode(
 
 <dl> <dt>
 
-*pbIndexFile* \[ fora\]
+*pbIndexFile* \[ out\]
 </dt> <dd>
 
-Ponteiro para uma variável do tipo **bool** que recebe a configuração do modo de índice temporal. Um valor **true** indica que o gravador ASF do WM está configurado para gravar arquivos indexados de temporal.
+Ponteiro para uma variável do tipo **BOOL** que recebe a configuração de modo de índice temporal. Um valor **TRUE** indica que o Wm ASF Writer está configurado para gravar arquivos indexados temporalmente.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o método for bem sucedido, ele retornará S \_ OK. Se falhar, ele retornará um código de erro **HRESULT** .
+Se o método for bem-sucedido, ele retornará S \_ OK. Se falhar, ele retornará um código **de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Use esse método para determinar se o [gravador ASF do WM](wm-asf-writer-filter.md) está configurado atualmente para gravar arquivos ASF indexados de forma temporal. Para obter mais informações sobre arquivos indexados de forma temporal e estruturados em quadros, consulte os comentários para [**IConfigAsfWriter:: Setindexmode**](iconfigasfwriter-setindexmode.md).
+Use esse método para determinar se o [Wm ASF Writer](wm-asf-writer-filter.md) está configurado atualmente para gravar arquivos ASF indexados temporalmente. Para obter mais informações sobre arquivos indexados temporalmente e indexados por quadro, consulte Os Comentários de [**IConfigAsfWriter::SetIndexMode**](iconfigasfwriter-setindexmode.md).
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Interface IConfigAsfWriter**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85))
+[**IConfigAsfWriter Interface**](/previous-versions/windows/desktop/legacy/dd743205(v=vs.85))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4d065926b0769e15284cbe705783be012d82554b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 931d2592c02b59a38068aa0fe9205d6be7cd1b9a504782f4407144101d09d4ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366042"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117905766"
 ---
 # <a name="rwbyteaddressbuffer"></a>RWByteAddressBuffer
 
@@ -38,7 +38,7 @@ Um buffer de leitura/gravação que indexa em bytes.
 | [**InterlockedMin**](sm5-object-rwbyteaddressbuffer-interlockedmin.md)                         | Localize o mínimo, atomicamente.           |
 | [**Interbloqueador**](sm5-object-rwbyteaddressbuffer-interlockedor.md)                           | ORs, atomicamente.                    |
 | [**InterlockedXor**](sm5-object-rwbyteaddressbuffer-interlockedxor.md)                         | XOR, atomicamente.                   |
-| [**Carregamento**](rwbyteaddressbuffer-load.md)                                                        | Obtém um valor.                     |
+| [**Carregar**](rwbyteaddressbuffer-load.md)                                                        | Obtém um valor.                     |
 | [**Load2**](rwbyteaddressbuffer-load2.md)                                                      | Obtém dois valores.                    |
 | [**Load3**](rwbyteaddressbuffer-load3.md)                                                      | Obtém três valores.                  |
 | [**Load4**](rwbyteaddressbuffer-load4.md)                                                      | Obtém quatro valores.                   |
@@ -77,7 +77,7 @@ Este objeto tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

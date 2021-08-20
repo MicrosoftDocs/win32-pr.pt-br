@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADso (IADs. h)
-description: Os métodos de propriedade da interface IADso obtêm ou definem as propriedades descritas na tabela a seguir. Para obter mais informações, consulte interface Property Methods.
+title: Métodos de propriedade IADsO (Iads.h)
+description: Os métodos de propriedade da interface IADsO obterão ou definirão as propriedades descritas na tabela a seguir. Para obter mais informações, consulte Métodos de propriedade de interface.
 ms.assetid: d4bc1d29-98de-462d-b59c-2bc2641c25a0
 ms.tgt_platform: multiple
 keywords:
-- ADSI dos métodos de propriedade IADso
+- ADSI (métodos de propriedade IADsO)
 topic_type:
 - apiref
 api_name:
@@ -33,16 +33,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 09840cf62d6883eb4f5ca326998b697a34698c90
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 87166d06575ff7bb81e0fb5eab19ed5e4e7812444f90c0d3fd3d8c64062c2028
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118017322"
 ---
-# <a name="iadso-property-methods"></a>Métodos de propriedade IADso
+# <a name="iadso-property-methods"></a>Métodos de propriedade IADsO
 
-Os métodos de propriedade da interface [**iadso**](/windows/desktop/api/Iads/nn-iads-iadso) obtêm ou definem as propriedades descritas na tabela a seguir. Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).
+Os métodos de propriedade da interface [**IADsO**](/windows/desktop/api/Iads/nn-iads-iadso) obterão ou definirão as propriedades descritas na tabela a seguir. Para obter mais informações, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
@@ -55,7 +55,7 @@ A descrição da organização.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -79,11 +79,11 @@ HRESULT put_Description(
 **FaxNumber**
 </dt> <dd> <dl>
 
-O número de faxes (fax) da organização.
+O número de facsimile (fax) da organização.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -111,7 +111,7 @@ O nome do local em que a organização está localizada.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -139,7 +139,7 @@ O endereço postal da organização.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -167,10 +167,10 @@ Uma matriz de nomes ADsPath de outros objetos ADSI que podem ser relevantes para
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -188,14 +188,14 @@ HRESULT put_SeeAlso(
 
 </dt> </dl> </dd> <dt>
 
-**TelephoneNumber**
+**Telephonenumber**
 </dt> <dd> <dl>
 
 O número de telefone da organização.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -220,7 +220,7 @@ HRESULT put_TelephoneNumber(
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir exibe a descrição de uma determinada organização. Ele assume que o serviço de diretório subjacente dá suporte ao agrupamento de objetos de diretório por organização.
+O exemplo de código a seguir exibe a descrição de uma determinada organização. Ele pressupõe que o serviço de diretório subjacente dá suporte ao grupo de objetos de diretório por organização.
 
 
 ```VB
@@ -259,9 +259,9 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | IID \_ iadso é definido como A1CD2DC6-EFFE-11CF-8ABC-00C04FD8D503<br/>                |
+| IID<br/>                      | IID IADsO é definido como \_ A1CD2DC6-EFFE-11CF-8ABC-00C04FD8D503<br/>                |
 
 
 
@@ -269,10 +269,10 @@ Cleanup:
 
 <dl> <dt>
 
-[**IADso**](/windows/desktop/api/Iads/nn-iads-iadso)
+[**IADsO**](/windows/desktop/api/Iads/nn-iads-iadso)
 </dt> <dt>
 
-[Métodos de propriedade de interface](interface-property-methods.md)
+[Métodos de propriedade interface](interface-property-methods.md)
 </dt> </dl>
 
  

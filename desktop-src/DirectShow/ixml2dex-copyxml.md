@@ -1,7 +1,7 @@
 ---
-description: 'Método IXml2Dex:: CopyXML-não implementado.'
+description: Método IXml2Dex::CopyXML – Não implementado.
 ms.assetid: be412d17-6210-4b50-a2b9-9b51c722cb7c
-title: 'Método IXml2Dex:: CopyXML'
+title: Método IXml2Dex::CopyXML
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,14 +12,14 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 61e46cb86f32ede3906a22566f455f1a8c55ecb5
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a08f9cd10c451647a5d4556788073eee54f801b929ba732c421d00aa00e4dcea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108088974"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117817014"
 ---
-# <a name="ixml2dexcopyxml-method"></a>Método IXml2Dex:: CopyXML
+# <a name="ixml2dexcopyxml-method"></a>Método IXml2Dex::CopyXML
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -68,25 +68,25 @@ Reservado.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Interface IXml2Dex**](ixml2dex.md)
+[**IXml2Dex Interface**](ixml2dex.md)
 </dt> </dl>
 
  

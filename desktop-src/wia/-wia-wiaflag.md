@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 api_location:
 - wiadef.h
-ms.openlocfilehash: c906f22e168ca29aadd2e9450fac6225c8b91c17
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfff3ccab0f8aa73c2ae6e34086c3abc909a4b4d8b9222bf4d6d8a86e0a36c57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117668959"
 ---
 # <a name="wiaflag"></a>WiaFlag
 
@@ -42,9 +42,9 @@ Sinalizadores usados pelos métodos [**IWiaDevMgr:: GetImageDlg**](/windows/desk
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Wiadef. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Wiadef. h</dt> </dl> |
 
 
 

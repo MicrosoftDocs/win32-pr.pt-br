@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - search.h
-ms.openlocfilehash: 4056357de5e3e479124e8f9a91d9b3d906300709
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7e26a0cde3defe987c05ba2066b6643e74239494cbb9d674577905217a63f76
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117862740"
 ---
 # <a name="iwordsinkendaltphrase-method"></a>Método IWordSink:: EndAltPhrase
 
@@ -37,7 +37,7 @@ HRESULT EndAltPhrase();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 

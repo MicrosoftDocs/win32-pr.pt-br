@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 3ec2b1137e7959a646c2943ab1aa7a5c3428d3c0
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5f99dbbbdae5054d3cab7bc7cbc6fdc08dcf357ef706270cf6a0ee127d13e1e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109934"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117652720"
 ---
 # <a name="iportabledevicekeycollectionremoveat-method"></a>Método IPortableDeviceKeyCollection:: RemoveAt
 
@@ -77,7 +77,7 @@ Você deve especificar um índice com base em zero.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

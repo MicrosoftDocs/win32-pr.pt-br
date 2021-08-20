@@ -1,9 +1,9 @@
 ---
-title: 'Função RWByteAddressBuffer:: Load3 (UINT)'
-description: 'Obtém três valores. | Função RWByteAddressBuffer:: Load3 (UINT)'
+title: Função RWByteAddressBuffer::Load3(uint)
+description: Obtém três valores. | Função RWByteAddressBuffer::Load3(uint)
 ms.assetid: cf8c4c5d-4748-43d7-896e-33ed07c94b9e
 keywords:
-- HLSL da função Load3
+- Função Load3 HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: d6658b4929f09aa7296a284de1fdbf39c7c4f038
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: fee675dfe8707c5a67073355bcffbe4924d05780dea487125f4b5b00c2019801
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117905756"
 ---
-# <a name="rwbyteaddressbufferload3uint-function"></a>Função RWByteAddressBuffer:: Load3 (UINT)
+# <a name="rwbyteaddressbufferload3uint-function"></a>Função RWByteAddressBuffer::Load3(uint)
 
 Obtém três valores.
 
@@ -36,7 +36,7 @@ uint3 Load3(
 
 <dl> <dt>
 
-*endereço* \[ no\]
+*endereço* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -45,7 +45,7 @@ O endereço de entrada em bytes, que deve ser um múltiplo de 4.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **uint3**
 
@@ -57,7 +57,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

@@ -1,19 +1,19 @@
 ---
-description: A linguagem de consulta do Microsoft Windows Search dá suporte a seis predicados de pesquisa de texto não completo. Os predicados descritos nesta seção estão listados na tabela a seguir.
+description: a linguagem de consulta do Microsoft Windows search dá suporte a seis predicados de pesquisa de texto não completo. Os predicados descritos nesta seção estão listados na tabela a seguir.
 ms.assetid: 74aa6dbc-5c0d-433e-96d9-a8db63907342
 title: Predicados de texto não completo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d41076ebc61aa56ed547f13f717ac40bed35959
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2915120106e98fd031571b1b974bb09957c9fa02790c050e81374e7717b269d5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105762364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117680507"
 ---
 # <a name="non-full-text-predicates"></a>Predicados de texto não completo
 
-A linguagem de consulta do Microsoft Windows Search dá suporte a seis predicados de pesquisa de texto não completo. Os predicados descritos nesta seção estão listados na tabela a seguir.
+a linguagem de consulta do Microsoft Windows search dá suporte a seis predicados de pesquisa de texto não completo. Os predicados descritos nesta seção estão listados na tabela a seguir.
 
 
 
@@ -31,7 +31,7 @@ A linguagem de consulta do Microsoft Windows Search dá suporte a seis predicado
  
 
 > [!IMPORTANT]
-> As consultas de pesquisa que usam o predicado **NULL** podem exigir que o Windows Search Verifique todo o catálogo, o que pode retardar o desempenho da consulta.
+> as consultas de pesquisa que usam o predicado **NULL** podem exigir que Windows pesquisa verifique todo o catálogo, o que pode retardar o desempenho da consulta.
 
  
 

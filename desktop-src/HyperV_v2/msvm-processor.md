@@ -71,18 +71,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 14ed1e2bbb9e15f89376234da8981faffb1a6809
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22bb6e1a61689172e20ee510b1894e467704ee9bd620fc4a6fca86b0703f4942
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828594"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117811000"
 ---
-# <a name="msvm_processor-class"></a>\_Classe de processador Msvm
+# <a name="msvm_processor-class"></a>Classe processador \_ Msvm
 
 Representa o processador virtual em uma máquina virtual.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -147,14 +147,14 @@ class Msvm_Processor : CIM_Processor
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ processador Msvm** tem estes tipos de membros:
+A **classe processador \_ Msvm** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe de **\_ processador Msvm** tem esses métodos.
+A **classe processador \_ Msvm** tem esses métodos.
 
 
 
@@ -165,8 +165,8 @@ A classe de **\_ processador Msvm** tem esses métodos.
 | **QuiesceDevice**                                               | Não há suporte para o método.<br/> |
 | [**RequestStateChange**](msvm-processor-requeststatechange.md) | Solicita uma alteração de estado.<br/>      |
 | [**Redefinir**](msvm-processor-reset.md)                           | Redefine o dispositivo virtual.<br/>    |
-| **Restaurarproperties**                                           | Não há suporte para o método.<br/> |
-| **Salvarproperties**                                              | Não há suporte para o método.<br/> |
+| **RestoreProperties**                                           | Não há suporte para o método.<br/> |
+| **SaveProperties**                                              | Não há suporte para o método.<br/> |
 | **SetPowerState**                                               | Não há suporte para o método.<br/> |
 
 
@@ -175,59 +175,59 @@ A classe de **\_ processador Msvm** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ processador Msvm** tem essas propriedades.
+A **classe processador \_ Msvm** tem essas propriedades.
 
 <dl> <dt>
 
 **AdditionalAvailability**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Qualquer disponibilidade e status adicionais do dispositivo, além do especificado na propriedade de **disponibilidade** . A propriedade de **disponibilidade** denota o status primário e a disponibilidade do dispositivo. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+Qualquer disponibilidade e status adicionais do dispositivo, além do especificado na **propriedade** Disponibilidade. A **propriedade** Disponibilidade indica o status primário e a disponibilidade do dispositivo. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **AddressWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A largura do endereço do processador, em bits. Essa propriedade é herdada [**do \_ processador CIM**](/windows/desktop/CIMWin32Prov/cim-processor)e o valor é 32 ou 64, dependendo das características da máquina virtual.
+A largura do endereço do processador, em bits. Essa propriedade é herdada do Processador [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-processor)e o valor é 32 ou 64, dependendo das características da máquina virtual.
 
 </dd> <dt>
 
 **Disponibilidade**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A disponibilidade e o status principais do dispositivo. Essa propriedade é herdada [**do \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
+A disponibilidade e o status primários do dispositivo. Essa propriedade é herdada [**de CIM \_ LogicalDevice**](/windows/desktop/CIMWin32Prov/cim-logicaldevice), mas não é usada.
 
 </dd> <dt>
 
 **AvailableRequestedStates**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica os valores possíveis para o parâmetro *requestedstate* do método **RequestStateChange** . Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **NULL**.
+Indica os valores possíveis para o *parâmetro RequestedState* do **método RequestStateChange.** Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como **Null.**
 
 </dd> <dt>
 
@@ -240,23 +240,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (64)
+Qualificadores: **MaxLen** (64)
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **CommunicationStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Indica a capacidade da instrumentação de se comunicar com o elemento gerenciado subjacente. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -266,19 +266,19 @@ Indica a capacidade da instrumentação de se comunicar com o elemento gerenciad
 <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span>**Não disponível** (1)
 </dt> <dt>
 
-<span id="Communication_OK"></span><span id="communication_ok"></span><span id="COMMUNICATION_OK"></span>**Comunicação Ok** (2)
+<span id="Communication_OK"></span><span id="communication_ok"></span><span id="COMMUNICATION_OK"></span>**Comunicação OK** (2)
 </dt> <dt>
 
 <span id="Lost_Communication"></span><span id="lost_communication"></span><span id="LOST_COMMUNICATION"></span>**Comunicação perdida** (3)
 </dt> <dt>
 
-<span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**Nenhum contato** (4)
+<span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**Sem contato** (4)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -286,13 +286,13 @@ Indica a capacidade da instrumentação de se comunicar com o elemento gerenciad
 **CPUStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O status atual do processador. Essa propriedade é herdada [**do \_ processador CIM**](/windows/desktop/CIMWin32Prov/cim-processor).
+O status atual do processador. Essa propriedade é herdada do [**processador CIM. \_**](/windows/desktop/CIMWin32Prov/cim-processor)
 
 </dd> <dt>
 
@@ -305,36 +305,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (256)
+Qualificadores: **MaxLen** (256)
 </dt> </dl>
 
-O nome da classe ou subclasse usada na criação de uma instância. Quando usado com outras propriedades de chave da classe, essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente. Essa propriedade é herdada [**de \_ LogicalDevice CIM**](/windows/desktop/CIMWin32Prov/cim-logicaldevice).
+O nome da classe ou subclasse usada na criação de uma instância. Quando usada com outras propriedades de chave da classe , essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente. Essa propriedade é herdada de [**CIM \_ LogicalDevice.**](/windows/desktop/CIMWin32Prov/cim-logicaldevice)
 
 </dd> <dt>
 
 **CurrentClockSpeed**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A velocidade máxima do processador físico, levando em conta a capacidade para o processador virtual. Essa propriedade é herdada [**do \_ processador CIM**](/windows/desktop/CIMWin32Prov/cim-processor).
+A velocidade máxima do processador físico, levando em conta a capacidade do processador virtual. Essa propriedade é herdada do [**processador CIM. \_**](/windows/desktop/CIMWin32Prov/cim-processor)
 
 </dd> <dt>
 
 **DataWidth**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A largura dos dados do processador, em bits. Essa propriedade é herdada [**do \_ processador CIM**](/windows/desktop/CIMWin32Prov/cim-processor)e o valor é 32 ou 64, dependendo das características da máquina virtual.
+A largura dos dados do processador, em bits. Essa propriedade é herdada do Processador [**CIM \_**](/windows/desktop/CIMWin32Prov/cim-processor)e o valor é 32 ou 64, dependendo das características da máquina virtual.
 
 </dd> <dt>
 
@@ -347,7 +347,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -1014,8 +1014,8 @@ O acesso à classe de **\_ processador Msvm** pode ser restringido pela filtrage
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

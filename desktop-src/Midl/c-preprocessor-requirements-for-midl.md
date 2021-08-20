@@ -7,12 +7,12 @@ keywords:
 - C-pré-processador MIDL, requisitos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b49c4e0c086a52eda2705d72cf2a2ff22c759290
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 38ed109c9febe4ead697e2c773f4e45d9af78abdf20bed99400a011ef12294b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916499"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807690"
 ---
 # <a name="c-preprocessor-requirements-for-midl"></a>Requisitos de pré-processador do C para MIDL
 
@@ -29,7 +29,7 @@ midl /cpp_cmd preprocessor_name filename
 <span id="preprocessor_name"></span><span id="PREPROCESSOR_NAME"></span>*nome do pré-processador \_*
 </dt> <dd>
 
-Especifica o nome do pré-processador a ser usado pelo MIDL. Pode ser especificado com um caminho para o binário. A extensão. exe é opcional.
+Especifica o nome do pré-processador a ser usado pelo MIDL. Pode ser especificado com um caminho para o binário. A extensão de .exe é opcional.
 
 </dd> <dt>
 
@@ -66,9 +66,9 @@ MIDL aceita apenas a diretiva de pré-processador de linha. Portanto, se a opç�
 
 Para obter mais informações, consulte [lidando com as \# definições em arquivos IDL](dealing-with-defines-in-idl-files-2.md).
 
- 
+ 
 
- 
+ 
 
 
 

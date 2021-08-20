@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: af08ca38ba5acd747d8fb3053e9df1f93adae626
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d280e30225527b7b64d3f42c460efc50924ae3aa972821b40af51157c638699
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812722"
 ---
 # <a name="cim_diskettedrive-class-hyper-v-management"></a>Classe CIM_DisketteDrive (gerenciamento do Hyper-V)
 

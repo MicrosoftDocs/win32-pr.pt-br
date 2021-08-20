@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6aad6d60c50ee0050cf418018dd6db1c7a33efc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ab1205f0d9f59e027db75d2df580917392c445e812425c714b1688ce784a68ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117952573"
 ---
 # <a name="isoftkbdgetsoftkeyboardtypemode-method"></a>Método ISoftKbd:: GetSoftKeyboardTypeMode
 
@@ -49,7 +49,7 @@ Ponteiro para um buffer no qual esse método recupera o modo de tipo. Os valores
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -72,8 +72,8 @@ Esse método pode retornar um desses valores.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
+| Redistribuível<br/>          | TSF 1,0 em Windows 2000 Professional<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
 | INSERI<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 

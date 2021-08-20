@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d03c8cabb15a5103fe214331e9b537b143e48399
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 51d91a380d108c0fb14b6c55977fa6c6966f8d13704e961743d90ae3c569e47b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118015196"
 ---
 # <a name="ms-dns-keymaster-zones-attribute"></a>atributo ms-DNS-KeyMaster-Zones
 
@@ -61,7 +61,7 @@ Uma lista de zonas integradas Active Directory para as quais o servidor DNS é o
 | Range-Upper            | \-                                                                  |
 | Search-Flags           | 0x00000000                                                          |
 | System-Flags           | 0x00000010                                                          |
-| Classes usadas em        | [**MS-DNS-Server-Settings**](c-msdns-serversettings.md)<br/> |
+| Classes usadas em        | [**ms-DNS-Server-Configurações**](c-msdns-serversettings.md)<br/> |
 
 
 

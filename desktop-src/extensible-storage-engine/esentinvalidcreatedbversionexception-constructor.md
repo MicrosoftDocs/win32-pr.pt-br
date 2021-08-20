@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 374bb6153c7146293f3a0dec7654587de9e5eff1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 50c93a29b42f62fe6d9cfbf79429c2f7c2f3399bd05e3825ceba88721b387c45
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117900917"
 ---
 # <a name="esentinvalidcreatedbversionexception-constructor"></a>Construtor EsentInvalidCreateDbVersionException
 
 Inicializa uma nova instância da classe EsentInvalidCreateDbVersionException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInvalidCreateDbVersionException()
 
 [Classe EsentInvalidCreateDbVersionException](./esentinvalidcreatedbversionexception-class.md)
 
-[Membros do EsentInvalidCreateDbVersionException](./esentinvalidcreatedbversionexception-members.md)
+[Membros EsentInvalidCreateDbVersionException](./esentinvalidcreatedbversionexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

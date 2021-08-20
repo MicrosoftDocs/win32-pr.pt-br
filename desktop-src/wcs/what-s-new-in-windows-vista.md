@@ -1,40 +1,40 @@
 ---
 title: Novidades no Windows Vista
-description: A versão 1,0 do ICM (Image Color Management) foi fornecida no Microsoft Windows 95 e fornece recursos básicos de gerenciamento de cores em contextos de dispositivo do Windows.
+description: a versão 1,0 do gerenciamento de cores de imagem (ICM) foi fornecida no Microsoft Windows 95 e fornece recursos básicos de gerenciamento de cores em Windows contextos de dispositivo.
 ms.assetid: 3079f84c-0d6c-4f87-a041-de86f5f7d99b
 keywords:
-- WCS (sistema de cores do Windows), Windows Vista
-- WCS (sistema de cores do Windows), Windows Vista
+- Windows sistema de cores (WCS), Windows Vista
+- WCS (Windows sistema de cores), Windows Vista
 - gerenciamento de cores de imagem, Windows Vista
 - gerenciamento de cores, Windows Vista
 - cores, Windows Vista
-- WCS (sistema de cores do Windows), sistemas operacionais
-- WCS (sistema de cores do Windows), sistemas operacionais
+- Windows Sistema de cores (WCS), sistemas operacionais
+- WCS (Windows sistema de cores), sistemas operacionais
 - gerenciamento de cores de imagem, sistemas operacionais
 - gerenciamento de cores, sistemas operacionais
 - cores, sistemas operacionais
 - ICM (Gerenciamento de cores de imagem)
 - ICM (gerenciamento de cores de imagem)
-- Gerenciamento de cores do Windows Vista
+- Windows Gerenciamento de cores do vista
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b889dd0ba3b044f0d0f158bd2364f5c3216ec39
-ms.sourcegitcommit: 3f366316c02c411c4c5e14620a699f6f30608634
+ms.openlocfilehash: a3f6c3313a1b7ca78f0f4d3436d7bb2017b0fa794291b4bd765651aa0321166d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "105814619"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117670732"
 ---
 # <a name="whats-new-in-windows-vista"></a>Novidades no Windows Vista
 
-A versão 1,0 do ICM (Image Color Management) foi fornecida no Microsoft Windows 95 e fornece recursos básicos de gerenciamento de cores em contextos de dispositivo do Windows.
+a versão 1,0 do gerenciamento de cores de imagem (ICM) foi fornecida no Microsoft Windows 95 e fornece recursos básicos de gerenciamento de cores em Windows contextos de dispositivo.
 
-O ICM versão 2,0 foi fornecido no Windows 98, no Windows Millennium Edition, no Windows 2000 e no WindowsXP e incluía uma variedade de novas funções que implementaram o gerenciamento de cores fora dos contextos de dispositivo. Essas novas funções foram adequadas para requisitos de gerenciamento de cores mais exigentes e forneciam mais controle sobre o processo de gerenciamento de cores.
+ICM versão 2,0 foi entregue em Windows 98, Windows Millennium Edition, Windows 2000 e WindowsXP e incluía uma variedade de novas funções que implementaram o gerenciamento de cores fora dos contextos de dispositivo. Essas novas funções foram adequadas para requisitos de gerenciamento de cores mais exigentes e forneciam mais controle sobre o processo de gerenciamento de cores.
 
-Com o lançamento do Windows Vista, o ICM 2,0 agora está incluído no WCS (sistema de cores do Windows) 1,0, que adiciona mais funcionalidade. A tabela a seguir lista as novas interfaces de programação de aplicativo (API) que acompanham o Windows Vista.
+com o lançamento do Windows Vista, o ICM 2,0 agora está incluído no WCS (Windows Color System) 1,0, que adiciona mais funcionalidade. a tabela a seguir lista as novas interfaces de programação de aplicativo (API) que acompanham o Windows Vista.
 
-## <a name="new-api-shipping-in-windows-vista"></a>Novo envio de API no Windows Vista
+## <a name="new-api-shipping-in-windows-vista"></a>novo envio de API no Windows Vista
 
 
 
@@ -42,7 +42,7 @@ Enumerações
 
 Nome da API
 
-parâmetro
+Cabeçalho
 
 Biblioteca
 
@@ -80,7 +80,7 @@ Funções
 
 Nome da API
 
-parâmetro
+Cabeçalho
 
 Biblioteca
 
@@ -184,7 +184,7 @@ Interfaces e suas funções
 
 Nome da API
 
-parâmetro
+Cabeçalho
 
 Biblioteca
 
@@ -288,7 +288,7 @@ Estruturas
 
 Nome da API
 
-parâmetro
+Cabeçalho
 
 Biblioteca
 

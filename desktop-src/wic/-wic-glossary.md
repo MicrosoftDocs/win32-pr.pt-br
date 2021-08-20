@@ -2,17 +2,17 @@
 description: Define os termos que são usados no WIC.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: b066757a-8841-4976-b20b-989ebba5eb3b
-title: Glossário do componente de imagem do Windows
+title: Windows Glossário do componente de imagens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee6812024571727c8f769df88f8233119eed13ed
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c851b4a0be5d5f90a5ff0cc030d68cc1010a0259c316811a7ca1c3b92c383b7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105783698"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117668187"
 ---
-# <a name="windows-imaging-component-glossary"></a>Glossário do componente de imagem do Windows
+# <a name="windows-imaging-component-glossary"></a>Windows Glossário do componente de imagens
 
 ## <a name="b"></a>B
 
@@ -21,14 +21,14 @@ ms.locfileid: "105783698"
 **profundidade de bits**
 </dt> <dd>
 
-O número de valores de cor que podem ser atribuídos a um único pixel em uma imagem. A profundidade de cor pode variar de 1 bit (preto e branco) a 32 bits (mais de 16,7 milhões cores). Consulte também: profundidade de cor
+O número de valores de cor que podem ser atribuídos a um único pixel em uma imagem. A profundidade da cor pode variar de 1 bit (preto e branco) a 32 bits (mais de 16,7 milhões de cores). Confira também: Profundidade da cor
 
 </dd> <dt>
 
-**bits por pixel (BPP)**
+**bits por pixel (bpp)**
 </dt> <dd>
 
-O número de bits que representam o valor de cor de cada pixel em uma imagem digitalizada. Consulte também: BPP
+O número de bits que representam o valor de cor de cada pixel em uma imagem digitalizada. Consulte também:BPP
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Um objeto IWICBitmapClipper.
 
 </dd> <dt>
 
-**codec**
+**Codec**
 </dt> <dd>
 
 Um filtro que compacta (codifica) ou descompacta (decodifica) um fluxo de dados.
@@ -53,21 +53,21 @@ Um filtro que compacta (codifica) ou descompacta (decodifica) um fluxo de dados.
 **contexto de cor**
 </dt> <dd>
 
-Uma abstração para um perfil de cor. O perfil pode ser carregado de um arquivo (por ex. "sRGB Color Space Profile. icm") ou de um buffer de memória obtido pela leitura. As informações de contexto de cor são definidas pela interface IWICColorContext para o WIC e são recuperadas com o método GetColorContext.
+Uma abstração para um perfil de cor. O perfil pode ser carregado de um arquivo (ou seja, "sRGB Color Space Profile.icm") ou de um buffer de memória obtido pela leitura. As informações de contexto de cor são definidas pela interface IWICColorContext para WIC e são recuperadas com o método GetColorContext.
 
 </dd> <dt>
 
-**transformação de cor**
+**transformação de cores**
 </dt> <dd>
 
-Mapear cores do contexto de cor de origem para o contexto de cor de destino em um determinado formato de pixel de saída.
+Mapeando cores do contexto de cor de origem para o contexto de cor de destino em um determinado formato de pixel de saída.
 
 </dd> <dt>
 
-**Modelo de cores CYMK**
+**Modelo de cor CYMK**
 </dt> <dd>
 
-O espaço de cores multidimensional que consiste nas intensidades ciano, magenta, amarelo e preto que compõem uma determinada cor.
+Espaço de cores multidimensional que consiste nas intensidades ciano, magenta, amarelo e preto que comem uma determinada cor.
 
 </dd> </dl>
 
@@ -75,10 +75,10 @@ O espaço de cores multidimensional que consiste nas intensidades ciano, magenta
 
 <dl> <dt>
 
-**decodificador**
+**Decodificador**
 </dt> <dd>
 
-Consulte outro termo: codec
+Consulte Outro Termo: codec
 
 </dd> </dl>
 
@@ -86,10 +86,10 @@ Consulte outro termo: codec
 
 <dl> <dt>
 
-**fita**
+**Codificador**
 </dt> <dd>
 
-Consulte outro termo: codec
+Consulte Outro Termo: codec
 
 </dd> </dl>
 
@@ -97,17 +97,17 @@ Consulte outro termo: codec
 
 <dl> <dt>
 
-**Compact**
+**Lossless**
 </dt> <dd>
 
 Um tipo de compactação que garante que os dados originais possam ser recuperados exatamente, sem perda na qualidade da imagem.
 
 </dd> <dt>
 
-**com perdas**
+**Lossy**
 </dt> <dd>
 
-Um processo para compactação de dados em que as informações consideradas desnecessárias é removido e não pode ser recuperado após a descompactação. Normalmente usado com áudio e dados visuais em que uma pequena degradação da qualidade é aceitável.
+Um processo para compactar dados em que as informações consideradas desnecessárias são removidas e não podem ser recuperadas após a descompactação. Normalmente usado com dados visuais e de áudio em que uma pequena degradação da qualidade é aceitável.
 
 </dd> </dl>
 
@@ -115,10 +115,10 @@ Um processo para compactação de dados em que as informações consideradas des
 
 <dl> <dt>
 
-**apartamento multithread (MTA)**
+**MTA (multithreaded apartment)**
 </dt> <dd>
 
-Uma forma de multithreading com suporte do COM (Component Object Model). Em um modelo de apartamento multi-threaded, todos os threads no processo que foram inicializados como de thread livre residem em um único apartamento.
+Uma forma de multithreading que tem suporte Component Object Model (COM). Em um modelo de apartment multithreaded, todos os threads no processo que foram inicializados como thread livre residem em um único apartment.
 
 </dd> </dl>
 
@@ -129,7 +129,7 @@ Uma forma de multithreading com suporte do COM (Component Object Model). Em um m
 **formato de pixel nativo**
 </dt> <dd>
 
-Um dos formatos de pixel fornecidos pelo WIC, no qual o layout de memória de cada pixel em um bitmap é descrito.
+Um dos formatos de pixel fornecidos pelo WIC, em que o layout de memória de cada pixel em um bitmap é descrito.
 
 </dd> </dl>
 
@@ -137,31 +137,31 @@ Um dos formatos de pixel fornecidos pelo WIC, no qual o layout de memória de ca
 
 <dl> <dt>
 
-**Palette**
+**Paleta**
 </dt> <dd>
 
-Conjunto de cores usado por um objeto ou aplicativo.
+Conjunto de cores usadas por um objeto ou aplicativo.
 
 </dd> <dt>
 
 **política de metadados de foto**
 </dt> <dd>
 
-A política do Windows para leitura, gravação e remoção de metadados de imagem.
+A política do Windows para ler, escrever e remover metadados de imagem.
 
 </dd> <dt>
 
 **formato de pixel**
 </dt> <dd>
 
-Tamanho e organização de componentes de cor de pixel na memória. Ele é especificado pelo número total de bits usados por pixel e pelo número de bits usados para armazenar os componentes vermelho, verde, azul e alfa da cor. Por exemplo, o formato de pixel RGB24 usa 24 bits para armazenar uma cor de pixel, com oito bits cada para vermelho, verde e azul. O formato de pixel ARGB32 usa 32 bits, com 24 bits de informações de cores e 8 bits de informações de canal alfa.
+Tamanho e disposição de componentes de cor de pixel na memória. Ele é especificado pelo número total de bits usados por pixel e pelo número de bits usados para armazenar os componentes vermelho, verde, azul e alfa da cor. Por exemplo, o formato de pixel RGB24 usa 24 bits para armazenar uma cor de pixel, com oito bits cada para vermelho, verde e azul. O formato de pixel ARGB32 usa 32 bits, com 24 bits de informações de cor e 8 bits de informações de canal alfa.
 
 </dd> <dt>
 
 **decodificação progressiva**
 </dt> <dd>
 
-O processo de decodificação de imagens que foram codificadas com informações sobre os diferentes níveis de decodificação.
+O processo de decodificação de imagens codificadas com informações sobre os diferentes níveis de decodificação.
 
 </dd> </dl>
 
@@ -169,10 +169,10 @@ O processo de decodificação de imagens que foram codificadas com informações
 
 <dl> <dt>
 
-**fluxo**
+**Fluxo**
 </dt> <dd>
 
-Refere-se a uma interface COM de IStream que pode ser usada para ler ou gravar dados em arquivos, memória ou locais de rede em sequência.
+Refere-se a uma interface COM IStream que pode ser usada para ler ou gravar dados sequencialmente em arquivos, memória ou locais de rede.
 
 </dd> </dl>
 
@@ -180,10 +180,10 @@ Refere-se a uma interface COM de IStream que pode ser usada para ler ou gravar d
 
 <dl> <dt>
 
-**curva de Tom**
+**curva de tom**
 </dt> <dd>
 
-Um grafo usado em fotos digitais que exibe o intervalo de tons da imagem.
+Um grafo usado na fotografia digital que exibe o intervalo tonal da imagem.
 
 </dd> </dl>
 
@@ -194,7 +194,7 @@ Um grafo usado em fotos digitais que exibe o intervalo de tons da imagem.
 **Windows Imaging Component (WIC)**
 </dt> <dd>
 
-Uma plataforma extensível que fornece uma API de nível baixo para imagens digitais.
+Uma plataforma extensível que fornece API de baixo nível para imagens digitais.
 
 </dd> </dl>
 

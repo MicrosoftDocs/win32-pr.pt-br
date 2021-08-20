@@ -4,12 +4,12 @@ ms.assetid: 35D49432-E734-4EE7-AE17-1FE92764D19F
 title: System. LibraryLocationsCount
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 27f11659ae7a4a83d6afe5fe035ac2d30b178c12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7fd7b80ca0e70ff02e0aab3474b531cde44621a6caa11f2830e6e8f0142bacd2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117865786"
 ---
 # <a name="systemlibrarylocationscount"></a>System. LibraryLocationsCount
 

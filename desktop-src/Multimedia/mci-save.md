@@ -3,7 +3,7 @@ title: MCI_SAVE comando (mmsystem. h)
 description: O comando de salvamento do MCI \_ salva o arquivo atual.
 ms.assetid: 286e6f31-cb93-443b-8191-8c363b366eae
 keywords:
-- Multimídia do Windows de comando MCI_SAVE
+- MCI_SAVE comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a241c0379731e870940cd676c33ae192efc5d297
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cd34603e6563e5f76995a8380b88f37424dd9cbd3da024ad491d184dc33aa2cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803420"
 ---
 # <a name="mci_save-command"></a>Comando de salvamento do MCI \_
 

@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 056a9bd6bea78ef5093f6654b9935eb90e3759ec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e892755b3c9bec0d955ddc786b818eac8d04e865acb710d1d5064c7f4102e77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837228"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117677218"
 ---
 # <a name="sfvm_getselectedobjects-message"></a>\_Mensagem SFVM GETSELECTEDOBJECTS
 
@@ -42,7 +42,7 @@ SFVM_GETSELECTEDOBJECTS
 *ppidl* \[ fora\]
 </dt> <dd>O endereço de uma matriz de PIDLs dos objetos selecionados no momento.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o número de itens na matriz.
 

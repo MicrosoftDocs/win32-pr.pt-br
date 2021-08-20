@@ -4,12 +4,12 @@ description: Cada comando tem uma prioridade associada a ele.
 ms.assetid: 63f6ba9d-0b87-403b-916b-aa8550f98a11
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 06512f0748aa88f6b32de3291e2ed1c262212ba2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 221702ee9dcebb8da454637f53cc29de1607d03088e24eb4a9a250d4e3ce2512
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105756344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117954434"
 ---
 # <a name="command-scheduling"></a>Agendamento de comandos
 
@@ -29,9 +29,9 @@ Comandos que não são mencionados nesta documentação são processados substit
 
 Quando um contexto é encerrado, todos os recursos físicos e virtuais associados a ele são limpos para que não consumam mais recursos do sistema.
 
- 
+ 
 
- 
+ 
 
 
 

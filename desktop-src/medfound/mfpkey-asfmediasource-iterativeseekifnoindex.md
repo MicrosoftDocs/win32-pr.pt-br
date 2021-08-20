@@ -4,12 +4,12 @@ ms.assetid: 0dd6f202-cdbc-4a28-8907-5530a0a2141b
 title: Propriedade MFPKEY_ASFMediaSource_IterativeSeekIfNoIndex (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 10cdc22f0b4f5490c7691cc40166cf929a16ba64
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: fb56a9b063d2bf30a0f6e48f25becb61d585751439f103ca26aa06d1d3c69727
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103663805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117874100"
 ---
 # <a name="mfpkey_asfmediasource_iterativeseekifnoindex-property"></a>\_Propriedade MFPKEY ASFMediaSource \_ IterativeSeekIfNoIndex
 
@@ -50,9 +50,9 @@ Essas propriedades definem o número máximo de iterações e a tolerância, res
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/>                                  |
-| Servidor mínimo com suporte<br/> | \[Aplicativos UWP para aplicativos da área de trabalho do Windows Server 2008 R2 \|\]<br/>                     |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/>                                  |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos de aplicativos de área de trabalho do servidor 2008 R2 \[ \| UWP\]<br/>                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

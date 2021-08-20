@@ -4,12 +4,12 @@ ms.assetid: 65ca9e71-9a0f-495f-b78c-3b1a8d66ee33
 title: Lendo propriedades do dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 235ba701ed3356e09070709f3c99f2826c69c8c5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bf102fb2ade1a13b648e13f56f7f999dd35c41f721ac20d72914219c98311505
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117669256"
 ---
 # <a name="reading-device-properties"></a>Lendo propriedades do dispositivo
 
@@ -17,7 +17,7 @@ Os aplicativos usam a interface [**IWiaPropertyStorage**](/windows/desktop/api/w
 
 As propriedades do dispositivo incluem informações sobre um dispositivo que descrevem os recursos e as configurações do dispositivo. Para obter uma lista dessas propriedades, consulte [Propriedades do dispositivo](-wia-device-properties.md).
 
-Entre as propriedades do dispositivo que são lidas usando [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) é a ID do dispositivo, que é usada para criar um dispositivo de aquisição de imagem do Windows (WIA). Para obter mais informações, consulte [**IWiaDevMgr:: CreateDevice**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-createdevice) (ou [**IWiaDevMgr2:: CreateDevice**](-wia-iwiadevmgr2-createdevice.md)).
+entre as propriedades do dispositivo que são lidas usando [**IWiaPropertyStorage**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiapropertystorage) é a ID do dispositivo, que é usada para criar um dispositivo de aquisição de imagem Windows (WIA). Para obter mais informações, consulte [**IWiaDevMgr:: CreateDevice**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-createdevice) (ou [**IWiaDevMgr2:: CreateDevice**](-wia-iwiadevmgr2-createdevice.md)).
 
 O exemplo a seguir lê a ID do dispositivo, o nome do dispositivo e a descrição do dispositivo da matriz de propriedades do dispositivo e imprime essas propriedades no console do.
 

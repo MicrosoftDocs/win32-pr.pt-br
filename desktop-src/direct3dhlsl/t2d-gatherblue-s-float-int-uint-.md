@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2D:: GatherBlue (S, float, int, uint)'
-description: 'Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco. | Função Texture2D:: GatherBlue (S, float, int, uint)'
+title: Função Texture2D::GatherBlue(S,float,int,uint)
+description: Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças. | Função Texture2D::GatherBlue(S,float,int,uint)
 ms.assetid: 9E2A57C3-4EC4-4414-B16A-64AF759F04E9
 keywords:
-- HLSL da função GatherBlue
+- Função GatherBlue HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 68eb7676cdb74eaff1087baa7879d41d098b4ace
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 77e67c30203678c12466959b9f1f2a23d550199d33a49b40b24e7f5f73ddc449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117904529"
 ---
-# <a name="texture2dgatherbluesfloatintuint-function"></a>Função Texture2D:: GatherBlue (S, float, int, uint)
+# <a name="texture2dgatherbluesfloatintuint-function"></a>Função Texture2D::GatherBlue(S,float,int,uint)
 
-Retorna os componentes azuis dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco.
+Retorna os componentes azuis dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,22 +45,22 @@ TemplateType GatherBlue(
 *S* \[ em\]
 </dt> <dd>
 
-Tipo: **samplestate**
+Tipo: **SamplerState**
 
 O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
 Tipo: **float**
 
-As coordenadas de exemplo (u, v).
+As coordenadas de exemplo (u,v).
 
 </dd> <dt>
 
-*Deslocamento* \[ no\]
+*Deslocamento* \[ Em\]
 </dt> <dd>
 
 Tipo: **int**
@@ -69,16 +69,16 @@ O deslocamento aplicado às coordenadas de textura antes da amostragem.
 
 </dd> <dt>
 
-*Status* \[ do fora\]
+*Status* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O status da operação. Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features). Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.
+O status da operação. Você não pode acessar o status diretamente; Em vez disso, passe o status para a [**função intrínseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** retornará **TRUE** se todos os valores  da operação de **Exemplo,** **Coletar** ou Carregar correspondente acessarem blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Se algum valor tiver sido retirado de um tile não mapeado, **CheckAccessFullyMapped** retornará **FALSE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **TemplateType**
 
@@ -86,13 +86,13 @@ Um valor de quatro componentes cujo tipo é o mesmo que o tipo de modelo.
 
 ## <a name="remarks"></a>Comentários
 
-Os exemplos de textura podem ser usados para interpolação bilinear.
+As amostras de textura podem ser usadas para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

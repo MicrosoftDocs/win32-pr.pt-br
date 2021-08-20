@@ -4,12 +4,12 @@ description: As funções modais do usuário de gerenciamento de rede obtêm e d
 ms.assetid: e655b9f6-2808-4bd4-998c-c8a2e980920b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c65595f78a412196b9fd54030ec1ac1f1fb8ae59
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: addea3c76d79cbcdb0e359424be154893d2c436c1f6d45157ecf50e748fc9417
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103917611"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117796792"
 ---
 # <a name="user-modal-functions"></a>Funções modais do usuário
 
@@ -26,7 +26,7 @@ As funções modais do usuário são listadas a seguir.
 
 
 
- 
+ 
 
 As funções **NetUserModalsGet** e **NetUserModalsSet** examinam e modificam as configurações de janela restrita, que são parâmetros globais que afetam cada conta no banco de dados de segurança (por exemplo, o comprimento mínimo permitido da senha). Todas as configurações de janela restrita podem ser alteradas chamando **NetUserModalsSet**. A maioria das modalidades também pode ser alterada usando o comando **net accounts** . As funções modais do usuário de gerenciamento de rede não exigem que o servidor tenha segurança em nível de usuário.
 
@@ -49,6 +49,6 @@ Os níveis de informações a seguir são válidos somente para [**NetUserModals
 
 Se você estiver programando para Active Directory, poderá chamar determinados métodos de interface do Active Directory Service (ADSI) para obter a mesma funcionalidade que pode obter ao chamar as funções modais do usuário de gerenciamento de rede. Para obter mais informações, consulte [**IADsDomain**](/windows/desktop/api/iads/nn-iads-iadsdomain).
 
- 
+ 
 
- 
+ 

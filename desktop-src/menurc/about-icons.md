@@ -20,12 +20,12 @@ keywords:
 - duplicando ícones
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4bda00540d613b6d0efd4a080251ebd6407560ed
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: a05a56f049999ab4c5a00953db552e4977cc26366af669141d15fa1fc53c4cac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104294016"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117870743"
 ---
 # <a name="about-icons"></a>Sobre ícones
 
@@ -89,7 +89,7 @@ O *ícone grande do sistema* é usado principalmente por aplicativos, mas també
 
 As funções [**CreateIcon**](/windows/desktop/api/Winuser/nf-winuser-createicon), [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuser-createiconfromresourceex), [**CreateIconIndirect**](/windows/desktop/api/Winuser/nf-winuser-createiconindirect)e [**SHGetFileInfo**](/windows/win32/api/shellapi/nf-shellapi-shgetfileinfoa) podem ser usadas para trabalhar com ícones em tamanhos diferentes do sistema grande.
 
-O *ícone pequeno do Shell* é usado no Windows Explorer e nas caixas de diálogo comuns. Atualmente, esse padrão é o tamanho pequeno do sistema.
+o *ícone pequeno do shell* é usado no Windows Explorer e nas caixas de diálogo comuns. Atualmente, esse padrão é o tamanho pequeno do sistema.
 
 ### <a name="to-retrieve-the-size-of-the-shell-small-icon"></a>Para recuperar o tamanho do ícone pequeno do Shell
 
@@ -109,7 +109,7 @@ O ícone grande do Shell é usado na área de trabalho.
 1.  Use a função [**SHGetFileInfo**](/windows/win32/api/shellapi/nf-shellapi-shgetfileinfoa) com **SHGFI \_ SHELLICONSIZE** para recuperar um identificador para a lista de imagens do sistema.
 2.  Em seguida, chame a função [**ImageList \_ geticonize**](/windows/win32/api/commctrl/nf-commctrl-imagelist_geticonsize) para obter o tamanho do ícone.
 
-O menu iniciar usa ícones pequenos do Shell ou ícones grandes do Shell, dependendo se a caixa de seleção **usar ícones grandes** está marcada.
+o menu Iniciar usa ícones pequenos do shell ou ícones grandes do shell, dependendo se a caixa de seleção **usar ícones grandes** está marcada.
 
 Seu aplicativo deve fornecer grupos de imagens de ícone nos seguintes tamanhos:
 
@@ -135,7 +135,7 @@ A função [**CreateIconFromResourceEx**](/windows/desktop/api/Winuser/nf-winuse
 
 Você pode recuperar a imagem para um ícone usando a função [**GetIconInfo**](/windows/desktop/api/Winuser/nf-winuser-geticoninfo) e pode desenhá-la usando a função [**DrawIconEx**](/windows/desktop/api/Winuser/nf-winuser-drawiconex) . Para desenhar a imagem padrão para um ícone, especifique o sinalizador de **\_ compatibilidade de di** na chamada para **DrawIconEx**. Se você não especificar o sinalizador **\_ compatível com di** , **DrawIconEx** desenhará o ícone usando a imagem especificada pelo usuário.
 
-Quando o sistema exibe um ícone, ele deve extrair a imagem de ícone apropriada do arquivo. exe ou. dll. O sistema usa as seguintes etapas para selecionar a imagem do ícone:
+Quando o sistema exibe um ícone, ele deve extrair a imagem de ícone apropriada do arquivo .exe ou .dll. O sistema usa as seguintes etapas para selecionar a imagem do ícone:
 
 1.  Selecione o recurso de **\_ \_ ícone de grupo RT** . Se houver mais de um recurso, o sistema usará o primeiro recurso listado no recurso cript.
 2.  Selecione a imagem **de \_ ícone de RT** apropriada do recurso de **\_ \_ ícone de grupo RT** . Se houver mais de uma imagem, o sistema usará os seguintes critérios para escolher uma imagem:
@@ -146,7 +146,7 @@ Quando o sistema exibe um ícone, ele deve extrair a imagem de ícone apropriada
 > [!Note]  
 > O sistema trata todas as profundidades de cor de 8 ou mais bpp como iguais. Portanto, não há nenhuma vantagem de incluir uma imagem de 16 a 256 cores e uma imagem de dezesseis cores de 16x16 no mesmo recurso – o sistema simplesmente escolherá a primeira que encontrar. Quando a exibição estiver no modo de 8-bpp, o sistema escolherá um ícone de 16 cores em um ícone de cor de 256 e exibirá todos os ícones usando a paleta padrão do sistema.
 
- 
+ 
 
 Para exibir um ícone animado, use um controle estático, conforme mostrado no fragmento de código a seguir.
 
@@ -168,10 +168,10 @@ A função [**CopyIcon**](/windows/desktop/api/Winuser/nf-winuser-copyicon) copi
 
 A função [**CopyImage**](/windows/desktop/api/Winuser/nf-winuser-copyimage) cria um novo ícone com base no ícone de origem especificado. O novo ícone pode ser maior ou menor do que o ícone de origem.
 
-Para obter informações sobre como adicionar, remover ou substituir recursos de ícone em arquivos executáveis (. exe), consulte [recursos](resources.md).
+Para obter informações sobre como adicionar, remover ou substituir os recursos de ícone em arquivos executáveis (.exe), consulte [recursos](resources.md).
 
 A função [**DuplicateIcon**](/windows/desktop/api/Shellapi/nf-shellapi-duplicateicon) faz uma cópia real do ícone.
 
- 
+ 
 
- 
+ 

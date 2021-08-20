@@ -1,7 +1,7 @@
 ---
-description: Preterido. Recupera a chave no registro que corresponde a essa identidade de usuário.
+description: Preterido. Recupera a chave no Registro que corresponde a essa identidade de usuário.
 ms.assetid: eecf8b73-e86a-4274-8d9c-c601153f81db
-title: 'Método IUserIdentity:: OpenIdentityRegKey (Msident. h)'
+title: Método IUserIdentity::OpenIdentityRegKey (Msident.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - COM
 api_location:
 - Msident.dll
-ms.openlocfilehash: f1d67918f4a9802e63682e0663994c1ea6a06200
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89b80162b558222e1dc3e8caf518042ac90700ae7f7bde82b1b235111c9bdb43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117678430"
 ---
-# <a name="iuseridentityopenidentityregkey-method"></a>Método IUserIdentity:: OpenIdentityRegKey
+# <a name="iuseridentityopenidentityregkey-method"></a>Método IUserIdentity::OpenIdentityRegKey
 
-\[O método **IUserIdentity:: OpenIdentityRegKey** está disponível para uso no Windows 2000. No Windows XP, essa funcionalidade foi substituída por [contas de usuário com troca rápida de usuário e área de trabalho remota](fastuserswitching.md)e pode ser alterada ou indisponível nas versões subsequentes.\]
+\[O **método IUserIdentity::OpenIdentityRegKey** está disponível para uso no Windows 2000. No Windows XP, essa funcionalidade foi superada por Contas de Usuário com a Troca Rápida de Usuários [e](fastuserswitching.md)Área de Trabalho Remota e pode ser alterada ou não disponível nas versões subsequentes.\]
 
-Preterido. Recupera a chave no registro que corresponde a essa identidade de usuário.
+Preterido. Recupera a chave no Registro que corresponde a essa identidade de usuário.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,36 +42,36 @@ HRESULT OpenIdentityRegKey(
 
 <dl> <dt>
 
-*dwDesiredAccess* \[ no\]
+*dwDesiredAccess* \[ Em\]
 </dt> <dd>
 
 Tipo: **DWORD**
 
-Um valor que descreve o nível de acesso solicitado da chave do registro.
+Um valor que descreve o nível de acesso solicitado da chave do Registro.
 
 </dd> <dt>
 
-*phKey* \[ fora\]
+*phKey* \[ out\]
 </dt> <dd>
 
-Tipo: **HKEY \** _
+Tipo: **HKEY \***
 
-Um ponteiro que recebe a chave do registro.
+Um ponteiro que recebe a chave do Registro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: _ *HRESULT**
+Tipo: **HRESULT**
 
-O resultado da solicitação do registro. Se for bem-sucedido, retornará **S \_ OK**. Caso contrário, ele retornará um dos seguintes códigos de erro.
+O resultado da solicitação do Registro. Se for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, retornará um dos códigos de erro a seguir.
 
 
 
-| Código de retorno                                                                                            | Description                                                        |
+| Código de retorno                                                                                            | Descrição                                                        |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**\_identidade E \_ não \_ encontrada**</dt> </dl> | Essa identidade não tem uma chave de registro associada.<br/> |
-| <dl> <dt>**E \_ falha**</dt> </dl>                 | A chave do registro não pôde ser acessada.<br/>             |
+| <dl> <dt>**IDENTIDADE \_ E \_ NÃO \_ ENCONTRADA**</dt> </dl> | Essa identidade não tem uma chave do Registro associada.<br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                 | A chave do Registro não pôde ser acessada.<br/>             |
 
 
 
@@ -79,7 +79,7 @@ O resultado da solicitação do registro. Se for bem-sucedido, retornará **S \_
 
 ## <a name="remarks"></a>Comentários
 
-O parâmetro *dwDesiredAccess* é um descritor de segurança de acesso do registro padrão que descreve o acesso que você deseja obter à chave do registro. Para obter mais informações sobre a segurança do registro, incluindo uma lista de valores aceitáveis para esse parâmetro, consulte [segurança da chave do registro e direitos de acesso](../sysinfo/registry-key-security-and-access-rights.md).
+O *parâmetro dwDesiredAccess* é um descritor de segurança de acesso do Registro padrão que descreve o acesso que você deseja obter à chave do Registro. Para obter mais informações sobre a segurança do Registro, incluindo uma lista de valores aceitáveis para esse parâmetro, consulte Direitos de acesso e segurança de chave [do Registro.](../sysinfo/registry-key-security-and-access-rights.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,8 +89,8 @@ O parâmetro *dwDesiredAccess* é um descritor de segurança de acesso do regist
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Cabeçalho<br/>                   | <dl> <dt>Msident. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>Msident. idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msident.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>Msident.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Msident.dll</dt> </dl> |
 
 

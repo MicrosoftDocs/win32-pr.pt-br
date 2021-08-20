@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 431d08b77d13540bb48621a6d5ec76f4c775f796
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6c5bd278605217b723035e53091d22b8b6f69dd0457b6cf5c12f2ad895699d1a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989200"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117905253"
 ---
 # <a name="texture2darraygatherredsfloatint-function"></a>Função Texture2DArray:: GatherRed (S, float, int)
 
@@ -65,7 +65,7 @@ Um deslocamento que é aplicado à coordenada de textura antes da amostragem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **TemplateType**
 
@@ -79,7 +79,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

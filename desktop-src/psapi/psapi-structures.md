@@ -4,12 +4,12 @@ description: A seguir estão as estruturas PSAPI
 ms.assetid: 08e53ebf-f694-46ad-b8b7-3dc179ab80ff
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 07b552482c3d7c0228c37d68b3b566e8d00fcf90
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3309672ee1692041240c0c785bf3384fede964ede8f14c726c7f84695ce88419
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004946"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117680811"
 ---
 # <a name="psapi-structures"></a>Estruturas PSAPI
 
@@ -34,9 +34,9 @@ A seguir estão as estruturas PSAPI:
 [Referência de PSAPI](psapi-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

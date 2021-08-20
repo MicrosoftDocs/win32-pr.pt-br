@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 2150b726e6dcdfdeb150de48c78a7a0b2f2ee3e2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a16df73591c2be47853e247526c3d3ad6c587585d9a99a12c11715c8f0948a1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827169"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117669658"
 ---
 # <a name="iwiaitem2-interface"></a>Interface IWiaItem2
 
-A interface **IWiaItem2** fornece aplicativos com a mesma funcionalidade que a interface [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) (a capacidade de consultar dispositivos para descobrir seus recursos, acessar interfaces de transferência de dados e propriedades de item e controlar o dispositivo). Ele também fornece ao aplicativo a capacidade de criar e usar dinamicamente filtros de processamento de imagens que podem vir como extensões dos drivers de dispositivo do WIA (Windows Image Acquisition) 2,0 fornecidos no Windows Vista.
+A interface **IWiaItem2** fornece aplicativos com a mesma funcionalidade que a interface [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) (a capacidade de consultar dispositivos para descobrir seus recursos, acessar interfaces de transferência de dados e propriedades de item e controlar o dispositivo). ele também fornece ao aplicativo a capacidade de criar e usar dinamicamente filtros de processamento de imagem que podem ser fornecidos como extensões dos drivers de dispositivo WIA (Windows image Acquisition) 2,0 fornecidos no Windows Vista.
 
 ## <a name="members"></a>Membros
 
@@ -43,7 +43,7 @@ A interface **IWiaItem2** tem esses métodos.
 | [**DeleteItem**](-wia-iwiaitem2-deleteitem.md)                         | Remove o objeto **IWiaItem2** atual da árvore de objetos do dispositivo. <br/>                                                                                                                          |
 | [**DeviceCommand**](-wia-iwiaitem2-devicecommand.md)                   | Emite um comando para um dispositivo de hardware WIA 2,0. <br/>                                                                                                                                                   |
 | [**DeviceDlg**](-wia-iwiaitem2-devicedlg.md)                           | Exibe uma caixa de diálogo para o usuário se preparar para a aquisição de imagem. <br/>                                                                                                                              |
-| [**DPS**](-wia-iwiaitem2-diagnostic.md)                         | Não há suporte no momento.<br/>                                                                                                                                                                          |
+| [**Diagnostic**](-wia-iwiaitem2-diagnostic.md)                         | Não há suporte no momento.<br/>                                                                                                                                                                          |
 | [**EnumChildItems**](-wia-iwiaitem2-enumchilditems.md)                 | Cria um objeto enumerador e passa de volta um ponteiro para sua interface [**IEnumWiaItem2**](-wia-ienumwiaitem2.md) para pastas com itens na árvore **IWiaItem2** de um dispositivo WIA 2,0. <br/>        |
 | [**EnumDeviceCapabilities**](-wia-iwiaitem2-enumdevicecapabilities.md) | Cria um enumerador que é usado para verificar os comandos e eventos aos quais um dispositivo WIA 2,0 dá suporte. <br/>                                                                                               |
 | [**EnumRegisterEventInfo**](-wia-iwiaitem2-enumregistereventinfo.md)   | O método [**IWiaItem2:: EnumRegisterEventInfo**](-wia-iwiaitem2-enumregistereventinfo.md) cria um enumerador usado para obter informações sobre eventos para os quais um aplicativo é registrado.<br/> |
@@ -61,7 +61,7 @@ A interface **IWiaItem2** tem esses métodos.
 
 ## <a name="remarks"></a>Comentários
 
-A árvore de itens do WIA 2,0 que um aplicativo pode ver é separada da árvore que é criada e mantida por uma minidriver WIA 2,0. Quando um minidriver cria uma árvore de itens, o serviço WIA 2,0 usa essa árvore de itens WIA 2,0 como um guia para criar cópias idênticas que podem ser exibidas por aplicativos de geração de imagens. Os itens na árvore copiada são chamados de itens de aplicativo. Os itens na árvore criados por um minidriver são chamados de itens de driver. No Windows Vista, as árvores de itens WIA 2,0 são criadas de objetos **IWiaItem2** , cada um dos quais implementa a interface **IWiaItem2** ).
+A árvore de itens do WIA 2,0 que um aplicativo pode ver é separada da árvore que é criada e mantida por uma minidriver WIA 2,0. Quando um minidriver cria uma árvore de itens, o serviço WIA 2,0 usa essa árvore de itens WIA 2,0 como um guia para criar cópias idênticas que podem ser exibidas por aplicativos de geração de imagens. Os itens na árvore copiada são chamados de itens de aplicativo. Os itens na árvore criados por um minidriver são chamados de itens de driver. no Windows Vista, as árvores de itens WIA 2,0 são criadas de objetos **IWiaItem2** , cada um dos quais implementa a interface **IWiaItem2** ).
 
 A interface **IWiaItem2** , como todas as interfaces de Component Object Model (com), herda os métodos de interface [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) .
 
@@ -83,9 +83,9 @@ A interface **IWiaItem2** , como todas as interfaces de Component Object Model (
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 
 

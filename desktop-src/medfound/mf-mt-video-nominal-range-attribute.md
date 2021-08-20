@@ -1,7 +1,7 @@
 ---
 description: Especifica o intervalo nominal das informações de cor em um tipo de mídia de vídeo.
 ms.assetid: 7b2b809e-aae4-401c-816a-626fb88f5f87
-title: MF_MT_VIDEO_NOMINAL_RANGE atributo (Mfapi.h)
+title: Atributo MF_MT_VIDEO_NOMINAL_RANGE (Mfapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 7b294ea3c63f845b51c9636f78ee78f04135e17929ae6e64d92ab85720f3c7e0
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117876716"
 ---
-# <a name="mf_mt_video_nominal_range-attribute"></a>Atributo MF \_ MT \_ VIDEO NOMINAL \_ \_ RANGE
+# <a name="mf_mt_video_nominal_range-attribute"></a>\_Atributo de \_ \_ intervalo nominal de vídeo MF MT \_
 
 Especifica o intervalo nominal das informações de cor em um tipo de mídia de vídeo.
 
@@ -21,17 +21,17 @@ Especifica o intervalo nominal das informações de cor em um tipo de mídia de 
 
 ## <a name="remarks"></a>Comentários
 
-O valor desse atributo é um membro da [**enumeração MFNominalRange.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfnominalrange)
+O valor desse atributo é um membro da enumeração [**MFNominalRange**](/windows/desktop/api/mfobjects/ne-mfobjects-mfnominalrange) .
 
-A constante GUID para esse atributo é exportada de mfuuid.lib.
+A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
-**Codificadores H.264/AVC:**
+**Codificadores H. 264/AVC:**
 
-No tipo de mídia de saída, MF MT VIDEO NOMINAL RANGE pode ser definido com \_ \_ \_ \_ **MFNominalRange \_ 0 \_ 255** e **MFNominalRange \_ 16 \_ 235**.
+No tipo de mídia de saída, \_ o \_ intervalo nominal de vídeo MF MT \_ \_ pode ser definido com **MFNominalRange \_ 0 \_ 255** e **MFNominalRange \_ 16 \_ 235**.
 
-O codificador H.264/AVC deve tratar **MFNominalRange \_ Unknown** como **MFNominalRange \_ 16 \_ 235**.
+O codificador H. 264/AVC deve tratar **MFNominalRange \_ desconhecido** como **MFNominalRange \_ 16 \_ 235**.
 
-O codificador H.264/AVC deverá rejeitar um tipo de mídia de saída quando MF MT VIDEO NOMINAL RANGE for definido como \_ \_ \_ \_ **MFNominalRange \_ 48 \_ 208**, **MFNominalRange \_ 64 \_ 127** ou quaisquer outros valores não definidos [**em MFNominalRange.**](/windows/desktop/api/mfobjects/ne-mfobjects-mfnominalrange)
+O codificador H. 264/AVC deve rejeitar um tipo de mídia de saída quando o \_ \_ intervalo nominal de vídeo MF MT \_ \_ é definido como **MFNominalRange \_ 48 \_ 208**, **MFNominalRange \_ 64 \_ 127** ou quaisquer outros valores não definidos em [**MFNominalRange**](/windows/desktop/api/mfobjects/ne-mfobjects-mfnominalrange).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ O codificador H.264/AVC deverá rejeitar um tipo de mídia de saída quando MF M
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Aplicativos \| UWP de aplicativos da área de trabalho do Vista\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP do Server 2008 Desktop \|\]<br/>                        |
-| Cabeçalho<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos de aplicativos UWP do vista desktop \|\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows \[Aplicativos da área de trabalho do servidor 2008 \| aplicativo UWP\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
 
 
 
@@ -49,13 +49,13 @@ O codificador H.264/AVC deverá rejeitar um tipo de mídia de saída quando MF M
 
 <dl> <dt>
 
-[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

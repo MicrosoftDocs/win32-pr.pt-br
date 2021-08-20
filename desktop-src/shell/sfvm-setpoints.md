@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1df501f162fb19335fcf1672299a74135672db22
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b994eb7eabe28d20f8f5708dee0cde60be5ae2658d4d83a3691dca3a98a8af4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104172071"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118048273"
 ---
 # <a name="sfvm_setpoints-message"></a>Mensagem de SFVM \_ SETpoints
 
@@ -42,7 +42,7 @@ SFVM_SETPOINTS
 *pdtobj* \[ no\]
 </dt> <dd>Um ponteiro para um <a href="/windows/desktop/api/objidl/nn-objidl-idataobject">**IDataObject**</a> dos comandos **copiar** e **recortar** .</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sempre retorna zero.
 

@@ -14,12 +14,12 @@ keywords:
 - função waveOutOpen
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a147bd86b3c8045456ef9961039f645fd4023f13
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 973c0fa6dd3c5b3c6b310320d30890029151d4cdb93d6dd8806cd547a2fd9529
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117801240"
 ---
 # <a name="using-a-window-or-thread-to-process-driver-messages"></a>Usando uma janela ou thread para processar mensagens do driver
 
@@ -29,6 +29,6 @@ Da mesma forma, para usar um retorno de chamada de thread, especifique o thread 
 
 As mensagens enviadas para a janela ou retorno de chamada de thread são específicas para o tipo de dispositivo de áudio usado. Para obter mais informações sobre essas mensagens, consulte [reproduzindo arquivos de Waveform-Audio](playing-waveform-audio-files.md).
 
- 
+ 
 
- 
+ 

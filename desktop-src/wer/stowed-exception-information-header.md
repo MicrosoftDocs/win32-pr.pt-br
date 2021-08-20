@@ -1,10 +1,10 @@
 ---
-title: Estrutura de STOWED_EXCEPTION_INFORMATION_HEADER
+title: STOWED_EXCEPTION_INFORMATION_HEADER estrutura
 description: Contém informações que identificam a estrutura pai.
 ms.assetid: 0BC1FDAA-C750-4DEC-AF6A-B2CB3240B67C
 keywords:
-- Estrutura de STOWED_EXCEPTION_INFORMATION_HEADER Relatório de Erros do Windows
-- Ponteiro de estrutura de PSTOWED_EXCEPTION_INFORMATION_HEADER Relatório de Erros do Windows
+- STOWED_EXCEPTION_INFORMATION_HEADER estrutura Relatório de Erros do Windows
+- PSTOWED_EXCEPTION_INFORMATION_HEADER ponteiro de estrutura Relatório de Erros do Windows
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 101bb1fb1555c829622a42c17fdfb01488c57636
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 30bc77cadd9e69dda64470434ffbc29947c219d5d358d2e3c47be122663cfe35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009676"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117670722"
 ---
-# <a name="stowed_exception_information_header-structure"></a>Estrutura de \_ \_ cabeçalho de informações de exceção dedevida \_
+# <a name="stowed_exception_information_header-structure"></a>Estrutura DE HEADER \_ DE \_ INFORMAÇÕES DE EXCEÇÃO \_ DE STOWED
 
 Contém informações que identificam a estrutura pai.
 
@@ -53,7 +53,7 @@ Tamanho, em bytes, da estrutura pai.
 
 </dd> <dt>
 
-**Signature**
+**Assinatura**
 </dt> <dd>
 
 Tipo: **[ **ULONG**](/windows/desktop/WinProg/windows-data-types)**
@@ -66,8 +66,8 @@ Um valor de 32 bits que especifica a assinatura da estrutura pai.
 
 | Valor                                                                                                                                                                                                                                                                                                            | Significado                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="STOWED_EXCEPTION_INFORMATION_V1_SIGNATURE"></span><span id="stowed_exception_information_v1_signature"></span><dl> Em <dt>**DEdevido \_ \_Informações de \_ exceção \_ assinatura v1**</dt> <dt>' SE01 '</dt> </dl> | Esse valor indica que o pai é uma estrutura de informações de exceção de nível **\_ \_ \_ v1** .<br/>                                        |
-| <span id="STOWED_EXCEPTION_INFORMATION_V2_SIGNATURE"></span><span id="stowed_exception_information_v2_signature"></span><dl> Em <dt>**DEdevido \_ \_ \_ \_ Assinatura de informações de exceção v2**</dt> <dt>' SE02 '</dt> </dl> | Esse valor indica que o pai é uma estrutura de [**\_ \_ informações de \_ exceção dedevida**](stowed-exception-information-v2.md) .<br/> |
+| <span id="STOWED_EXCEPTION_INFORMATION_V1_SIGNATURE"></span><span id="stowed_exception_information_v1_signature"></span><dl> <dt>**STOWED \_ INFORMAÇÕES \_ DE \_ EXCEÇÃO \_ V1 ASSINATURA**</dt> <dt>'SE01'</dt> </dl> | Esse valor indica que o pai é uma estrutura **STOWED \_ EXCEPTION \_ INFORMATION \_ V1.**<br/>                                        |
+| <span id="STOWED_EXCEPTION_INFORMATION_V2_SIGNATURE"></span><span id="stowed_exception_information_v2_signature"></span><dl> <dt>**STOWED \_ INFORMAÇÕES \_ DE \_ EXCEÇÃO \_ ASSINATURA V2**</dt> <dt>'SE02'</dt> </dl> | Esse valor indica que o pai é uma estrutura [**STOWED \_ EXCEPTION \_ INFORMATION \_ V2.**](stowed-exception-information-v2.md)<br/> |
 
 
 
@@ -77,9 +77,9 @@ Um valor de 32 bits que especifica a assinatura da estrutura pai.
 
 ## <a name="remarks"></a>Comentários
 
-Em [**DEdevido \_ \_As informações \_ de exceção v2**](stowed-exception-information-v2.md) e o **cabeçalho de \_ \_ informações \_ de exceção dedevida** não são definidas atualmente em um cabeçalho disponível publicamente, portanto, você precisa defini-las no código-fonte antes de usá-las.
+[**STOWED \_ AS \_ INFORMAÇÕES \_ DE EXCEÇÃO V2**](stowed-exception-information-v2.md) e O HEADER DE INFORMAÇÕES DE EXCEÇÃO STOWED atualmente não estão definidos em um **\_ \_ \_ header** que está disponível publicamente, portanto, você precisa defini-las em seu código-fonte antes de usá-las.
 
-A estrutura de informações de exceção devidada **\_ \_ \_ v1** é idêntica a essa estrutura, exceto que ela não contém os membros **NestedExceptionType** e **aninhaexception** .
+A **estrutura STOWED \_ EXCEPTION INFORMATION \_ \_ V1** é idêntica a essa estrutura, exceto que ela não contém os membros **NestedExceptionType** e **NestedException.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,9 +87,9 @@ A estrutura de informações de exceção devidada **\_ \_ \_ v1** é idêntica 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Nenhuma</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Nenhum</dt> </dl> |
 
 
 
@@ -97,7 +97,7 @@ A estrutura de informações de exceção devidada **\_ \_ \_ v1** é idêntica 
 
 <dl> <dt>
 
-[**Informações de exceção dedevidas \_ \_ \_ v2**](stowed-exception-information-v2.md)
+[**INFORMAÇÕES DE \_ EXCEÇÃO \_ FORNECIDAS \_ V2**](stowed-exception-information-v2.md)
 </dt> </dl>
 
  

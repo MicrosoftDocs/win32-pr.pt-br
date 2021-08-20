@@ -1,19 +1,19 @@
 ---
-description: Enviado quando o usuário remove um arquivo na janela de um aplicativo que se registrou como um destinatário dos arquivos soltos.
+description: Enviado quando o usuário descarta um arquivo na janela de um aplicativo que se registrou como um destinatário de arquivos descartados.
 ms.assetid: 07dc2df7-4699-4e9c-b1a5-4ce877116268
-title: Mensagem de WM_DROPFILES (WinUser. h)
+title: WM_DROPFILES mensagem (Winuser.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cb8362bfa746eaab519cdfc34d2cdf7757105fb6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5c36043997b4d462b5d453952f690cc8569218c398796b6a42b10709053b0d5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967879"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118046477"
 ---
-# <a name="wm_dropfiles-message"></a>Mensagem do WM \_ DropFiles
+# <a name="wm_dropfiles-message"></a>Mensagem WM \_ DROPFILES
 
-Enviado quando o usuário remove um arquivo na janela de um aplicativo que se registrou como um destinatário dos arquivos soltos.
+Enviado quando o usuário descarta um arquivo na janela de um aplicativo que se registrou como um destinatário de arquivos descartados.
 
 
 ```C++
@@ -34,7 +34,7 @@ PostMessage(
 *hDrop* 
 </dt> <dd>
 
-Um identificador para uma estrutura interna que descreve os arquivos descartados. Passe esse identificador [**DragFinish**](/windows/desktop/api/Shellapi/nf-shellapi-dragfinish), [**DragQueryFile**](/windows/desktop/api/Shellapi/nf-shellapi-dragqueryfilea)ou [**DragQueryPoint**](/windows/desktop/api/Shellapi/nf-shellapi-dragquerypoint) para recuperar informações sobre os arquivos ignorados.
+Um handle para uma estrutura interna que descreve os arquivos descartados. Passe esse handle [**DragFinish,**](/windows/desktop/api/Shellapi/nf-shellapi-dragfinish) [**DragQueryFile**](/windows/desktop/api/Shellapi/nf-shellapi-dragqueryfilea)ou [**DragQueryPoint**](/windows/desktop/api/Shellapi/nf-shellapi-dragquerypoint) para recuperar informações sobre os arquivos descartados.
 
 </dd> <dt>
 
@@ -45,13 +45,13 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um aplicativo deve retornar zero se ele processar essa mensagem.
+Um aplicativo deverá retornar zero se ele processa essa mensagem.
 
 ## <a name="remarks"></a>Comentários
 
-O identificador HDROP é declarado em shellapi. h. Você deve incluir esse cabeçalho em sua compilação para usar o **WM \_ DropFiles**. Para obter mais informações sobre como usar o recurso de arrastar e soltar para transferir dados do Shell, consulte [transferindo dados do shell usando o recurso de arrastar e soltar ou a área de transferência](dragdrop.md).
+O alça HDROP é declarado em Shellapi.h. Você deve incluir esse header em seu build para usar **WM \_ DROPFILES**. Para mais discussão sobre como usar o tipo "arrastar e soltar" para transferir dados do Shell, consulte Transferindo dados do Shell usando o tipo "arrastar e soltar" ou ["Área de Transferência".](dragdrop.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -59,9 +59,9 @@ O identificador HDROP é declarado em shellapi. h. Você deve incluir esse cabe�
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                          |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h</dt> </dl> |
 
 
 
@@ -72,7 +72,7 @@ O identificador HDROP é declarado em shellapi. h. Você deve incluir esse cabe�
 [**PostMessage**](/windows/win32/api/winuser/nf-winuser-postmessagea)
 </dt> <dt>
 
-[**DragAcceptFiles**](/windows/desktop/api/Shellapi/nf-shellapi-dragacceptfiles)
+[**Dragacceptfiles**](/windows/desktop/api/Shellapi/nf-shellapi-dragacceptfiles)
 </dt> </dl>
 
  

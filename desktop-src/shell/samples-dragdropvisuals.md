@@ -1,5 +1,5 @@
 ---
-description: Demonstra como usar os serviços arrastar e soltar do Shell para obter os recursos de apresentação que o Shell arrastar e soltar dá suporte para destinos e fontes.
+description: Demonstra como usar os serviços do shell do "arrastar e soltar" para obter os recursos de apresentação compatíveis com o shell do "arrastar e soltar" para destinos e fontes.
 title: Exemplo de elementos visuais do tipo "arrastar e soltar"
 ms.topic: article
 ms.date: 05/31/2018
@@ -9,20 +9,20 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: ffbfc8932bb289497497e4f74a90ab673511799d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8fc7f80ee47ed943642898ed276762adc3a5580b5fee0f6fce03b4fa06da3022
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829381"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117677853"
 ---
 # <a name="drag-and-drop-visuals-sample"></a>Exemplo de elementos visuais do tipo "arrastar e soltar"
 
-Demonstra como usar os serviços arrastar e soltar do Shell para obter os recursos de apresentação que o Shell arrastar e soltar dá suporte para destinos e fontes.
+Demonstra como usar os serviços do shell do "arrastar e soltar" para obter os recursos de apresentação compatíveis com o shell do "arrastar e soltar" para destinos e fontes.
 
 Este tópico inclui as seções a seguir.
 
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
@@ -40,7 +40,7 @@ Este tópico inclui as seções a seguir.
 
  
 
-Para obter requisitos adicionais, consulte o arquivo Leiame incluído com o exemplo.
+Para obter requisitos adicionais, consulte o arquivo Leiame incluído no exemplo.
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 

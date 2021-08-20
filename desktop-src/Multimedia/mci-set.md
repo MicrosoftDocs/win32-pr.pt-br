@@ -1,9 +1,9 @@
 ---
-title: MCI_SET comando (mmsystem. h)
-description: O \_ comando set do MCI define as informações do dispositivo. CD de áudio, Digital-Video, MIDI Sequencer, VCR, VIDEODISC, vídeo-Overlay e Wave-Audio Devices reconhecem esse comando.
+title: MCI_SET comando (Mmsystem.h)
+description: O comando MCI \_ SET define as informações do dispositivo. Os dispositivos cd audio, digital-video, MIDI sequencer, VCR, videodisc, video-overlay e waveform-audio reconhecem esse comando.
 ms.assetid: c527f9d6-2119-4274-98b7-dc892e9b70f9
 keywords:
-- Multimídia do Windows de comando MCI_SET
+- MCI_SET comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e1da0da94c0d970b607a29548c773fa9302d26d
-ms.sourcegitcommit: 8276af9231bdbf5a7334299f0d13fc8ff069a065
+ms.openlocfilehash: 7f5affb6ce41c5c321b24353ece8f0946dc668194ac59cee95e579178a8b03df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "105766374"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803381"
 ---
-# <a name="mci_set-command"></a>Comando de definição do MCI \_
+# <a name="mci_set-command"></a>Comando MCI \_ SET
 
 > [!NOTE]
-> Comunicação sem tendência a Microsoft dá suporte a um ambiente diversificado e de inclusão.  Neste documento, há referências à palavra ' escravo '. O [Guia de estilo da Microsoft para Bias-Free Communications](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) reconhece isso como uma palavra de exclusão.  Essa palavra-chave é usada, pois é atualmente a palavra usada nos comandos. Para fins de consistência, este documento contém esta palavra. Quando esta palavra for alterada nos comandos, corrigiremos este documento para estar em alinhamento.
+> Comunicação sem preconceitos A Microsoft dá suporte a um ambiente diversificado e inclusões.  Neste documento, há referências à palavra 'slave'. O Guia de Estilo da Microsoft [para Bias-Free Comunicações](https://github.com/MicrosoftDocs/microsoft-style-guide/blob/master/styleguide/bias-free-communication.md) reconhece isso como uma palavra de exclusão.  Esse texto é usado, pois é atualmente o texto usado dentro dos comandos. Para consistência, este documento contém essa palavra. Quando essa palavra for alterada nos comandos, corrigiremos este documento para estar em alinhamento.
 
-O \_ comando set do MCI define as informações do dispositivo. CD de áudio, Digital-Video, MIDI Sequencer, VCR, VIDEODISC, vídeo-Overlay e Wave-Audio Devices reconhecem esse comando.
+O comando MCI \_ SET define as informações do dispositivo. Os dispositivos cd audio, digital-video, MIDI sequencer, VCR, videodisc, video-overlay e waveform-audio reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
+Para enviar esse comando, chame a [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) com os parâmetros a seguir.
 
 
 ```C++
@@ -53,160 +53,160 @@ Identificador de dispositivo do dispositivo MCI que deve receber a mensagem de c
 
 </dd> <dt>
 
-<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*dwFlags*
+<span id="dwFlags"></span><span id="dwflags"></span><span id="DWFLAGS"></span>*Dwflags*
 </dt> <dd>
 
-\_Notificação de MCI, \_ espera de MCI ou, para dispositivos de vídeo digital e VCR, \_ teste MCI. Para obter informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+MCI \_ NOTIFY, MCI WAIT ou, para dispositivos de vídeo digital e \_ VCR, MCI \_ TEST. Para obter informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> <dt>
 
 <span id="lpSet"></span><span id="lpset"></span><span id="LPSET"></span>*lpSet*
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ \_ parâmetros do MCI Set**](mci-set-parms.md) . (Dispositivos com conjuntos de comandos estendidos podem substituir essa estrutura por uma estrutura específica do dispositivo.)
+Ponteiro para uma [**estrutura MCI \_ SET \_ PARMS.**](mci-set-parms.md) (Dispositivos com conjuntos de comandos estendidos podem substituir essa estrutura por uma estrutura específica do dispositivo.)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Os seguintes sinalizadores adicionais se aplicam a todos os dispositivos que dão suporte ao conjunto de MCI \_ :
+Os seguintes sinalizadores adicionais se aplicam a todos os dispositivos que suportam MCI \_ SET:
 
 <dl> <dt>
 
-<span id="MCI_SET_AUDIO"></span><span id="mci_set_audio"></span>\_áudio definido por MCI \_
+<span id="MCI_SET_AUDIO"></span><span id="mci_set_audio"></span>MCI \_ SET \_ AUDIO
 </dt> <dd>
 
-Um número de canal de áudio é incluído no membro dwAudio da estrutura identificada por *lpSet*. Esse sinalizador deve ser usado com o MCI \_ definido \_ como ativado ou MCI \_ definido como \_ off. Use uma das seguintes constantes para indicar o número do canal:
+Um número de canal de áudio é incluído no membro dwAudio da estrutura identificada por *lpSet*. Esse sinalizador deve ser usado com MCI \_ SET \_ ON ou MCI SET \_ \_ OFF. Use uma das seguintes constantes para indicar o número do canal:
 
 </dd> <dt>
 
-<span id="MCI_SET_AUDIO_ALL"></span><span id="mci_set_audio_all"></span>o MCI \_ definir \_ áudio \_ tudo
+<span id="MCI_SET_AUDIO_ALL"></span><span id="mci_set_audio_all"></span>MCI \_ SET \_ AUDIO \_ ALL
 </dt> <dd>
 
 Todos os canais de áudio.
 
 </dd> <dt>
 
-<span id="MCI_SET_AUDIO_LEFT"></span><span id="mci_set_audio_left"></span>MCI \_ definir \_ áudio \_ restante
+<span id="MCI_SET_AUDIO_LEFT"></span><span id="mci_set_audio_left"></span>MCI \_ SET \_ AUDIO \_ LEFT
 </dt> <dd>
 
 Canal esquerdo.
 
 </dd> <dt>
 
-<span id="MCI_SET_AUDIO_RIGHT"></span><span id="mci_set_audio_right"></span>MCI \_ definir \_ áudio \_ à direita
+<span id="MCI_SET_AUDIO_RIGHT"></span><span id="mci_set_audio_right"></span>MCI \_ SET \_ AUDIO \_ RIGHT
 </dt> <dd>
 
 Canal direito.
 
 </dd> <dt>
 
-<span id="MCI_SET_DOOR_CLOSED"></span><span id="mci_set_door_closed"></span>porta do conjunto do MCI \_ \_ \_ fechada
+<span id="MCI_SET_DOOR_CLOSED"></span><span id="mci_set_door_closed"></span>PORTA DO CONJUNTO DE MCI \_ \_ \_ FECHADA
 </dt> <dd>
 
-Fecha a cobertura de mídia (se houver).
+Fecha a cobertura de mídia (se há).
 
 </dd> <dt>
 
-<span id="MCI_SET_DOOR_OPEN"></span><span id="mci_set_door_open"></span>porta do conjunto do MCI \_ \_ \_ aberta
+<span id="MCI_SET_DOOR_OPEN"></span><span id="mci_set_door_open"></span>MCI \_ SET \_ DOOR \_ OPEN
 </dt> <dd>
 
-Abre a tampa de mídia (se houver).
+Abre a cobertura de mídia (se for o caso).
 
 </dd> <dt>
 
-<span id="MCI_SET_OFF"></span><span id="mci_set_off"></span>conjunto de MCI \_ \_ desativado
+<span id="MCI_SET_OFF"></span><span id="mci_set_off"></span>MCI \_ SET \_ OFF
 </dt> <dd>
 
-Desabilita o vídeo ou o canal de áudio especificado.
+Desabilita o canal de áudio ou vídeo especificado.
 
 </dd> <dt>
 
-<span id="MCI_SET_ON"></span><span id="mci_set_on"></span>MCI \_ definido \_ em
+<span id="MCI_SET_ON"></span><span id="mci_set_on"></span>MCI \_ SET \_ ON
 </dt> <dd>
 
-Habilita o vídeo ou o canal de áudio especificado.
+Habilita o canal de áudio ou vídeo especificado.
 
 </dd> <dt>
 
-<span id="MCI_SET_TIME_FORMAT"></span><span id="mci_set_time_format"></span>\_formato de \_ hora \_ definido do MCI
+<span id="MCI_SET_TIME_FORMAT"></span><span id="mci_set_time_format"></span>FORMATO DE HORA \_ \_ DO CONJUNTO DE MCI \_
 </dt> <dd>
 
-Um parâmetro de formato de hora é incluído no membro **dwTimeFormat** da estrutura identificada por *lpSet*. Os sinalizadores a seguir são usados com este sinalizador:
+Um parâmetro de formato de hora é incluído no **membro dwTimeFormat** da estrutura identificada por *lpSet*. Os sinalizadores a seguir são usados com este sinalizador:
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_BYTES"></span><span id="mci_format_bytes"></span>\_bytes de formato MCI \_
+<span id="MCI_FORMAT_BYTES"></span><span id="mci_format_bytes"></span>BYTES DE FORMATO \_ MCI \_
 </dt> <dd>
 
-Em um formato de dados PCM (modulação de código de pulso), o altera a descrição do membro de tempo para bytes para entrada ou saída. Reconhecido pelo tipo de dispositivo **WaveAudio** .
+Em um formato de dados PCM (Pulse Code Modulartion), altera a descrição do membro de tempo para bytes para entrada ou saída. Reconhecido pelo tipo **de dispositivo waveaudio.**
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_FRAMES"></span><span id="mci_format_frames"></span>\_quadros de formato MCI \_
+<span id="MCI_FORMAT_FRAMES"></span><span id="mci_format_frames"></span>QUADROS DE FORMATO MCI \_ \_
 </dt> <dd>
 
-Os comandos subsequentes usarão quadros. Reconhecido pelos tipos de dispositivo **DigitalVideo**, **VCR** e **VIDEODISC** .
+Os comandos subsequentes usarão quadros. Reconhecido pelos tipos **de dispositivo digitalvideo,** **vcr** e **videodisc.**
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_HMS"></span><span id="mci_format_hms"></span>\_formato MCI \_ HMS
+<span id="MCI_FORMAT_HMS"></span><span id="mci_format_hms"></span>FORMATO MCI \_ \_ HMS
 </dt> <dd>
 
-Altera o formato de hora para horas, minutos e segundos. Reconhecido pelos tipos de dispositivo **VCR** e **VIDEODISC** .
+Altera o formato de hora para horas, minutos e segundos. Reconhecido pelos tipos **de dispositivo vcr** **e videodisc.**
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_MILLISECONDS"></span><span id="mci_format_milliseconds"></span>\_milissegundos do formato MCI \_
+<span id="MCI_FORMAT_MILLISECONDS"></span><span id="mci_format_milliseconds"></span>FORMATO MCI \_ \_ MILISSEGUNDOS
 </dt> <dd>
 
 Altera o formato de hora para milissegundos. Reconhecido por todos os tipos de dispositivo.
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_MSF"></span><span id="mci_format_msf"></span>\_formato MCI \_ MSF
+<span id="MCI_FORMAT_MSF"></span><span id="mci_format_msf"></span>\_MSF DE \_ FORMATO MCI
 </dt> <dd>
 
-Altera o formato de hora para minutos, segundos e quadros. Reconhecido pelos tipos de dispositivo **cdaudio** e **VCR** .
+Altera o formato de hora para minutos, segundos e quadros. Reconhecido pelos tipos **de dispositivo cdaudio** **e vcr.**
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_SAMPLES"></span><span id="mci_format_samples"></span>\_exemplos de formato MCI \_
+<span id="MCI_FORMAT_SAMPLES"></span><span id="mci_format_samples"></span>EXEMPLOS DE FORMATO MCI \_ \_
 </dt> <dd>
 
-Altera o formato de hora para exemplos de entrada ou saída. Reconhecido pelo tipo de dispositivo **WaveAudio** .
+Altera o formato de hora para exemplos de entrada ou saída. Reconhecido pelo tipo **de dispositivo waveaudio.**
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_SMPTE_24__MCI_FORMAT_SMPTE_25__and_MCI_FORMAT_SMPTE_30"></span><span id="mci_format_smpte_24__mci_format_smpte_25__and_mci_format_smpte_30"></span><span id="MCI_FORMAT_SMPTE_24__MCI_FORMAT_SMPTE_25__AND_MCI_FORMAT_SMPTE_30"></span>\_Formato MCI \_ SMPTE \_ 24, \_ formato MCI \_ SMPTE \_ 25 e formato MCI \_ \_ SMPTE \_ 30
+<span id="MCI_FORMAT_SMPTE_24__MCI_FORMAT_SMPTE_25__and_MCI_FORMAT_SMPTE_30"></span><span id="mci_format_smpte_24__mci_format_smpte_25__and_mci_format_smpte_30"></span><span id="MCI_FORMAT_SMPTE_24__MCI_FORMAT_SMPTE_25__AND_MCI_FORMAT_SMPTE_30"></span>FORMATO MCI \_ \_ SMPTE \_ 24, FORMATO MCI \_ \_ SMPTE \_ 25 e FORMATO \_ \_ MCI SMPTE \_ 30
 </dt> <dd>
 
-Define o formato de hora como 24, 25 e 30 quadros SMPTE (sociedade de imagem de movimento e engenheiros de televisão), respectivamente. Reconhecido pelos tipos de dispositivo **Sequencer** e **VCR** .
+Define o formato de hora como 24, 25 e 30 quadros SMPTE (Society of Motion Picture and Tv Engineers), respectivamente. Reconhecido pelos tipos **de dispositivo sequencer** **e vcr.**
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_SMPTE_30DROP"></span><span id="mci_format_smpte_30drop"></span>\_Formato MCI \_ SMPTE \_ 30DROP
+<span id="MCI_FORMAT_SMPTE_30DROP"></span><span id="mci_format_smpte_30drop"></span>MCI \_ FORMAT \_ SMPTE \_ 30DROP
 </dt> <dd>
 
-Define o formato de hora para 30 quadros de distribuição SMPTE. Reconhecido pelos tipos de dispositivo **Sequencer** e **VCR** .
+Define o formato de hora como 30 SMPTE de quadro-soltar. Reconhecido pelos tipos **de dispositivo sequencer** **e vcr.**
 
 </dd> <dt>
 
-<span id="MCI_FORMAT_TMSF"></span><span id="mci_format_tmsf"></span>\_formato MCI \_ TMSF
+<span id="MCI_FORMAT_TMSF"></span><span id="mci_format_tmsf"></span>TMSF DE \_ \_ FORMATO MCI
 </dt> <dd>
 
-Altera o formato de hora para faixas, minutos, segundos e quadros. (O MCI usa números de faixa contínuos.) Reconhecido pelos tipos de dispositivo **cdaudio** e **VCR** .
+Altera o formato de hora para faixas, minutos, segundos e quadros. (A MCI usa números de faixa contínua.) Reconhecido pelos tipos **de dispositivo cdaudio** **e vcr.**
 
 </dd> <dt>
 
-<span id="MCI_SET_VIDEO"></span><span id="mci_set_video"></span>\_vídeo de conjunto de MCI \_
+<span id="MCI_SET_VIDEO"></span><span id="mci_set_video"></span>VÍDEO DO MCI \_ SET \_
 </dt> <dd>
 
-Define ou desativa o sinal de vídeo. Esse sinalizador deve ser usado com o MCI \_ definido \_ como ativado ou MCI \_ definido como \_ off. Dispositivos que não têm vídeo de retorno MCIERR \_ função sem suporte \_ .
+Define o sinal de vídeo como on ou off. Esse sinalizador deve ser usado com MCI \_ SET \_ ON ou MCI SET \_ \_ OFF. Dispositivos que não têm vídeo retornam a FUNÇÃO SEM \_ SUPORTE DO MCIERR. \_
 
 </dd> <dt>
 
@@ -216,18 +216,18 @@ Define ou desativa o sinal de vídeo. Esse sinalizador deve ser usado com o MCI 
 
 </dt> <dd></dd> </dl>
 
-Os seguintes sinalizadores adicionais são usados com o tipo de dispositivo **DigitalVideo** :
+Os seguintes sinalizadores adicionais são usados com o **tipo de dispositivo digitalvideo:**
 
 <dl> <dt>
 
-<span id="MCI_DGV_SET_FILEFORMAT"></span><span id="mci_dgv_set_fileformat"></span>DGV do MCI \_ \_ definir \_ FileFormat
+<span id="MCI_DGV_SET_FILEFORMAT"></span><span id="mci_dgv_set_fileformat"></span>MCI \_ DGV \_ SET \_ FILEFORMAT
 </dt> <dd>
 
-Um parâmetro de formato de arquivo é incluído no membro **dwFileFormat** da estrutura identificada por *lpSet*. Para dispositivos de vídeo digital, o formato de arquivo é usado para salvar ou capturar comandos. Se omitido, isso pode padronizar para um formato definido por driver de dispositivo. Se o formato de arquivo especificado estiver em conflito com o algoritmo e a qualidade selecionados no momento, eles serão alterados para os padrões para o formato de arquivo. As seguintes constantes de formato de arquivo são definidas:
+Um parâmetro de formato de arquivo é incluído no **membro dwFileFormat** da estrutura identificada por *lpSet*. Para dispositivos de vídeo digital, o formato de arquivo é usado para salvar ou capturar comandos. Se omitido, isso pode ser padrão para um formato definido pelo driver de dispositivo. Se o formato de arquivo especificado entrar em conflito com o algoritmo e a qualidade selecionados no momento, eles serão alterados para os padrões do formato de arquivo. As seguintes constantes de formato de arquivo são definidas:
 
 </dd> <dt>
 
-<span id="MCI_DGV_FF_AVI"></span><span id="mci_dgv_ff_avi"></span>MCI \_ DGV \_ FF \_ avi
+<span id="MCI_DGV_FF_AVI"></span><span id="mci_dgv_ff_avi"></span>MCI \_ DGV \_ FF \_ AVI
 </dt> <dd>
 
 Formato AVI.
@@ -241,7 +241,7 @@ Formato AVSS.
 
 </dd> <dt>
 
-<span id="MCI_DGV_FF_DIB"></span><span id="mci_dgv_ff_dib"></span>MCI \_ DGV \_ FF \_ DIB
+<span id="MCI_DGV_FF_DIB"></span><span id="mci_dgv_ff_dib"></span>\_DGV \_ FF \_ DIB da MCI
 </dt> <dd>
 
 Formato DIB.
@@ -269,10 +269,10 @@ Formato MPEG.
 
 </dd> <dt>
 
-<span id="MCI_DGV_FF_RDIB"></span><span id="mci_dgv_ff_rdib"></span>MCI \_ DGV \_ FF \_ RDIB
+<span id="MCI_DGV_FF_RDIB"></span><span id="mci_dgv_ff_rdib"></span>MCI \_ DGV \_ FF \_ SSEB
 </dt> <dd>
 
-Formato de DIB RLE.
+Formato DIB RLE.
 
 </dd> <dt>
 
@@ -544,205 +544,205 @@ Ativa a ativação.
 <span id="MCI_VCR_SET_PREROLL_DURATION"></span><span id="mci_vcr_set_preroll_duration"></span>\_duração da \_ preversão do conjunto de VCR MCI \_ \_
 </dt> <dd>
 
-O membro **dwPrerollDuration** da estrutura identificada por *lpSet* contém o comprimento da fita de vídeo, no formato de hora atual, necessário para estabilizar a saída do VCR.
+O **membro dwPrerollDuration** da estrutura identificada por *lpSet* contém o comprimento da fita, no formato de hora atual, necessário para estabilizar a saída do VCR.
 
 </dd> <dt>
 
-<span id="MCI_VCR_SET_RECORD_FORMAT"></span><span id="mci_vcr_set_record_format"></span>\_formato de \_ registro do conjunto de VCR MCI \_ \_
+<span id="MCI_VCR_SET_RECORD_FORMAT"></span><span id="mci_vcr_set_record_format"></span>FORMATO DE REGISTRO \_ DO CONJUNTO DE VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwRecordFormat** da estrutura identificada por *lpSet* contém uma constante que descreve a velocidade do registro, que deve ser uma das seguintes:
+O **membro dwRecordFormat** da estrutura identificada por *lpSet* contém uma constante que descreve a velocidade do registro, que deve ser uma das seguintes:
 
 </dd> <dt>
 
-<span id="MCI_VCR_FORMAT_EP"></span><span id="mci_vcr_format_ep"></span>\_EP de \_ formato \_ VCR MCI
+<span id="MCI_VCR_FORMAT_EP"></span><span id="mci_vcr_format_ep"></span>EP DE \_ FORMATO VCR \_ DA MCI \_
 </dt> <dd>
 
 Registros em velocidade lenta.
 
 </dd> <dt>
 
-<span id="MCI_VCR_FORMAT_LP"></span><span id="mci_vcr_format_lp"></span>\_formato de videocassete MCI \_ \_ LP
+<span id="MCI_VCR_FORMAT_LP"></span><span id="mci_vcr_format_lp"></span>LP DE \_ FORMATO VCR \_ da MCI \_
 </dt> <dd>
 
-Registros em velocidade média-lenta.
+Registros em velocidade média e lenta.
 
 </dd> <dt>
 
-<span id="MCI_VCR_FORMAT_SP"></span><span id="mci_vcr_format_sp"></span>\_SP de \_ formato \_ VCR MCI
+<span id="MCI_VCR_FORMAT_SP"></span><span id="mci_vcr_format_sp"></span>FORMATO DE VCR DA MCI \_ \_ \_ SP
 </dt> <dd>
 
-Registros na velocidade padrão.
+Registros em velocidade padrão.
 
 </dd> <dt>
 
-<span id="MCI_VCR_SET_SPEED"></span><span id="mci_vcr_set_speed"></span>\_velocidade do \_ conjunto de VCR MCI \_
+<span id="MCI_VCR_SET_SPEED"></span><span id="mci_vcr_set_speed"></span>VELOCIDADE DO CONJUNTO \_ DE VCR \_ DA MCI \_
 </dt> <dd>
 
-O membro **dwSpeed** da estrutura identificada por *lpSet* contém a nova configuração de velocidade, em que 1000 é velocidade normal, 2000 é de velocidade dupla e 500 é meia velocidade e assim por diante.
+O **membro dwSpeed** da estrutura identificada por *lpSet* contém a nova configuração de velocidade, em que 1000 é a velocidade normal, 2000 é velocidade dupla e 500 é a metade da velocidade e assim por diante.
 
 </dd> <dt>
 
-<span id="MCI_VCR_SET_TAPE_LENGTH"></span><span id="mci_vcr_set_tape_length"></span>\_tamanho da \_ fita do conjunto de VCR MCI \_ \_
+<span id="MCI_VCR_SET_TAPE_LENGTH"></span><span id="mci_vcr_set_tape_length"></span>COMPRIMENTO DA FITA DO CONJUNTO \_ DE VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwTapeLength** da estrutura identificada por *lpSet* contém o novo comprimento da fita, desde que o comprimento da fita não seja detectável.
+O **membro dwTapeLength** da estrutura identificada por *lpSet* contém o novo comprimento da fita, desde que o comprimento da fita não seja detectável.
 
 </dd> <dt>
 
-<span id="MCI_VCR_SET_TIME_MODE"></span><span id="mci_vcr_set_time_mode"></span>\_modo de \_ \_ tempo definido de VCR \_ do MCI
+<span id="MCI_VCR_SET_TIME_MODE"></span><span id="mci_vcr_set_time_mode"></span>MODO DE TEMPO \_ DEFINIDO PELO VCR \_ \_ DA \_ MCI
 </dt> <dd>
 
-O membro **dwTimeMode** da estrutura identificada por *lpSet* contém uma constante que indica o novo modo de tempo posicional. As seguintes constantes são válidas:
+O **membro dwTimeMode** da estrutura identificada por *lpSet* contém uma constante que indica o novo modo de tempo posicional. As seguintes constantes são válidas:
 
 </dd> <dt>
 
-<span id="MCI_VCR_TIME_COUNTER"></span><span id="mci_vcr_time_counter"></span>\_contador de \_ tempo de VCR MCI \_
+<span id="MCI_VCR_TIME_COUNTER"></span><span id="mci_vcr_time_counter"></span>CONTADOR DE TEMPO \_ DO VCR \_ da MCI \_
 </dt> <dd>
 
 Força o dispositivo a usar o contador exclusivamente.
 
 </dd> <dt>
 
-<span id="MCI_VCR_TIME_DETECT"></span><span id="mci_vcr_time_detect"></span>\_detecção de \_ tempo de VCR MCI \_
+<span id="MCI_VCR_TIME_DETECT"></span><span id="mci_vcr_time_detect"></span>DETECÇÃO DE TEMPO \_ DO VCR \_ da MCI \_
 </dt> <dd>
 
-Cada vez que uma nova fita de vídeo é inserida no dispositivo ou o modo é alterado de não pronto para pronto, o dispositivo deve tentar determinar se há um código de tempo disponível na fita de vídeo. Se o código de indisponibilidade estiver disponível, use o código de sob todos os comandos subsequentes que especificam posições. Caso contrário, use o contador.
+Sempre que um novo ataque for inserido no dispositivo ou o modo mudar de não pronto para pronto, o dispositivo deverá tentar determinar se há um código de hora disponível no local. Se o código de hora estiver disponível, use o código de data/hora em todos os comandos subsequentes que especifiquem posições. Caso contrário, use o contador .
 
 </dd> <dt>
 
-<span id="MCI_VCR_TIME_TIMECODE"></span><span id="mci_vcr_time_timecode"></span>tempo de vida de \_ hora do VCR MCI \_ \_
+<span id="MCI_VCR_TIME_TIMECODE"></span><span id="mci_vcr_time_timecode"></span>MCI \_ VCR \_ TIME \_ TIMECODE
 </dt> <dd>
 
-Força o dispositivo a usar o código de Code exclusivamente.
+Força o dispositivo a usar o código de hora exclusivamente.
 
 </dd> <dt>
 
-<span id="MCI_VCR_SET_TRACKING"></span><span id="mci_vcr_set_tracking"></span>\_controle de \_ conjunto de VCR MCI \_
+<span id="MCI_VCR_SET_TRACKING"></span><span id="mci_vcr_set_tracking"></span>ACOMPANHAMENTO DE CONJUNTO \_ DE VCR \_ DA MCI \_
 </dt> <dd>
 
-Ajusta a velocidade do transporte de fita do VCR com um ajuste fino e deve ser usado com um dos seguintes sinalizadores:
+Ajusta a velocidade do transporte em fita VCR com um ajuste fino e deve ser usado com um dos seguintes sinalizadores:
 
 </dd> <dt>
 
-<span id="MCI_VCR_PLUS"></span><span id="mci_vcr_plus"></span>\_VCR MCI \_ Plus
+<span id="MCI_VCR_PLUS"></span><span id="mci_vcr_plus"></span>VCR \_ PLUS da MCI \_
 </dt> <dd>
 
 Aumenta a velocidade de transporte de fita.
 
 </dd> <dt>
 
-<span id="MCI_VCR_MINUS"></span><span id="mci_vcr_minus"></span>subtração de \_ VCR MCI \_
+<span id="MCI_VCR_MINUS"></span><span id="mci_vcr_minus"></span>MCI \_ VCR \_ MINUS
 </dt> <dd>
 
 Diminui a velocidade de transporte de fita.
 
 </dd> <dt>
 
-<span id="MCI_VCR_RESET"></span><span id="mci_vcr_reset"></span>redefinição de \_ VCR MCI \_
+<span id="MCI_VCR_RESET"></span><span id="mci_vcr_reset"></span>REDEFINIÇÃO DE VCR da MCI \_ \_
 </dt> <dd>
 
-Retorna o ajuste de controle para zero.
+Retorna o ajuste de acompanhamento para zero.
 
 </dd> </dl>
 
-Para dispositivos VCR, o parâmetro *lpSet* aponta para uma estrutura de [**conjunto de \_ \_ \_ parâmetros do VCR MCI**](mci-vcr-set-parms.md) .
+Para dispositivos VCR, o *parâmetro lpSet* aponta para uma [**estrutura MCI \_ VCR SET \_ \_ PARMS.**](mci-vcr-set-parms.md)
 
-O seguinte sinalizador adicional é usado com o tipo de dispositivo **VIDEODISC** :
+O sinalizador adicional a seguir é usado com o **tipo de dispositivo videodisc:**
 
 <dl> <dt>
 
-<span id="MCI_VD_FORMAT_TRACK"></span><span id="mci_vd_format_track"></span>\_faixa de \_ formato de VD do MCI \_
+<span id="MCI_VD_FORMAT_TRACK"></span><span id="mci_vd_format_track"></span>FAIXA DE \_ FORMATO VD \_ da MCI \_
 </dt> <dd>
 
-Altera o formato de hora para faixas. O MCI usa números de faixa contínuos.
+Altera o formato de hora para faixas. A MCI usa números de faixa contínua.
 
 </dd> </dl>
 
-Os seguintes sinalizadores adicionais são usados com o tipo de dispositivo **WaveAudio** :
+Os seguintes sinalizadores adicionais são usados com o **tipo de dispositivo waveaudio:**
 
 <dl> <dt>
 
-<span id="MCI_WAVE_INPUT"></span><span id="mci_wave_input"></span>\_entrada de onda MCI \_
+<span id="MCI_WAVE_INPUT"></span><span id="mci_wave_input"></span>ENTRADA DE ONDA MCI \_ \_
 </dt> <dd>
 
-Define a entrada usada para gravar no membro **wInput** da estrutura identificada por *lpSet*.
+Define a entrada usada para gravação para **o membro wInput** da estrutura identificada por *lpSet*.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_OUTPUT"></span><span id="mci_wave_output"></span>\_saída de onda MCI \_
+<span id="MCI_WAVE_OUTPUT"></span><span id="mci_wave_output"></span>SAÍDA DE ONDA DA MCI \_ \_
 </dt> <dd>
 
-Define a saída usada para reproduzir o membro **wOutput** da estrutura identificada por *lpSet*.
+Define a saída usada para reprodução para o **membro wOutput** da estrutura identificada por *lpSet*.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_SET_ANYINPUT"></span><span id="mci_wave_set_anyinput"></span>ANYINPUT de onda do MCI \_ \_ set \_
+<span id="MCI_WAVE_SET_ANYINPUT"></span><span id="mci_wave_set_anyinput"></span>MCI \_ WAVE \_ SET \_ ANYINPUT
 </dt> <dd>
 
 Qualquer entrada de onda compatível com o formato atual pode ser usada para gravação.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_SET_ANYOUTPUT"></span><span id="mci_wave_set_anyoutput"></span>ANYOUTPUT de onda do MCI \_ \_ set \_
+<span id="MCI_WAVE_SET_ANYOUTPUT"></span><span id="mci_wave_set_anyoutput"></span>MCI \_ WAVE \_ SET \_ ANYOUTPUT
 </dt> <dd>
 
-Qualquer saída de Wave compatível com o formato atual pode ser usada para reprodução.
+Qualquer saída de onda compatível com o formato atual pode ser usada para reprodução.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_SET_AVGBYTESPERSEC"></span><span id="mci_wave_set_avgbytespersec"></span>AVGBYTESPERSEC de onda do MCI \_ \_ set \_
+<span id="MCI_WAVE_SET_AVGBYTESPERSEC"></span><span id="mci_wave_set_avgbytespersec"></span>MCI \_ WAVE \_ SET \_ AVGBYTESPERSEC
 </dt> <dd>
 
-Define os bytes por segundo usados para reproduzir, gravar e salvar no membro **nAvgBytesPerSec** da estrutura identificada por *lpSet*.
+Define os bytes por segundo usados para reprodução, gravação e gravação no **membro nAvgBytesPerSec** da estrutura identificada por *lpSet*.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_SET_BITSPERSAMPLE"></span><span id="mci_wave_set_bitspersample"></span>BITSPERSAMPLE de onda do MCI \_ \_ set \_
+<span id="MCI_WAVE_SET_BITSPERSAMPLE"></span><span id="mci_wave_set_bitspersample"></span>MCI \_ WAVE \_ SET \_ BITSPERSAMPLE
 </dt> <dd>
 
-Define os bits por exemplo usado para reproduzir, gravar e salvar no membro **nBitsPerSample** do formato de dados PCM identificado por *lpSet*.
+Define os bits por exemplo usados para reprodução, gravação e gravação no **membro nBitsPerSample** do formato de dados PCM identificado por *lpSet*.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_SET_BLOCKALIGN"></span><span id="mci_wave_set_blockalign"></span>BLOCKALIGN de onda do MCI \_ \_ set \_
+<span id="MCI_WAVE_SET_BLOCKALIGN"></span><span id="mci_wave_set_blockalign"></span>MCI \_ WAVE \_ SET \_ BLOCKALIGN
 </dt> <dd>
 
-Define o alinhamento de bloco usado para reproduzir, gravar e salvar no membro **nBlockAlign** da estrutura identificada por *lpSet*.
+Define o alinhamento de bloco usado para reprodução, gravação e gravação no **membro nBlockAlign** da estrutura identificada por *lpSet*.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_SET_CHANNELS"></span><span id="mci_wave_set_channels"></span>\_canais de \_ conjunto de ondas MCI \_
+<span id="MCI_WAVE_SET_CHANNELS"></span><span id="mci_wave_set_channels"></span>CANAIS DO CONJUNTO \_ DE \_ ONDA DA \_ MCI
 </dt> <dd>
 
 O número de canais é indicado no membro **nChannels** da estrutura identificada por *lpSet*.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_SET_FORMATTAG"></span><span id="mci_wave_set_formattag"></span>FORMATTAG de onda do MCI \_ \_ set \_
+<span id="MCI_WAVE_SET_FORMATTAG"></span><span id="mci_wave_set_formattag"></span>FORMATTAG DO CONJUNTO \_ \_ DE ONDA \_ DA MCI
 </dt> <dd>
 
-Define o tipo de formato usado para reproduzir, gravar e salvar no membro **wFormatTag** da estrutura identificada por *lpSet*. Especificar \_ o formato Wave \_ PCM altera o formato para PCM.
+Define o tipo de formato usado para reprodução, gravação e gravação no **membro wFormatTag** da estrutura identificada por *lpSet*. Especificar o PCM WAVE \_ FORMAT altera o formato para \_ PCM.
 
 </dd> <dt>
 
-<span id="MCI_WAVE_SET_SAMPLESPERSEC"></span><span id="mci_wave_set_samplespersec"></span>SAMPLESPERSEC de onda do MCI \_ \_ set \_
+<span id="MCI_WAVE_SET_SAMPLESPERSEC"></span><span id="mci_wave_set_samplespersec"></span>MCI \_ WAVE \_ SET \_ SAMPLESPERSEC
 </dt> <dd>
 
-Define os exemplos por segundo usados para reproduzir, gravar e salvar no membro **nSamplesPerSec** da estrutura identificada por *lpSet*.
+Define os exemplos por segundo usados para reprodução, gravação e gravação no **membro nSamplesPerSec** da estrutura identificada por *lpSet*.
 
 </dd> </dl>
 
-Para dispositivos de formato de onda-áudio, o parâmetro *lpSet* aponta para uma estrutura [**MCI do \_ tipo Wave \_ set \_ parms**](mci-wave-set-parms.md) .
+Para dispositivos waveform-audio, o *parâmetro lpSet* aponta para uma [**estrutura MCI WAVE SET \_ \_ \_ PARMS.**](mci-wave-set-parms.md)
 
-Várias propriedades dos dados de formato de onda-áudio são definidas quando o arquivo para armazenar os dados é criado. Essas propriedades descrevem como os dados são estruturados dentro do arquivo e não podem ser alterados após o início da gravação. A lista de sinalizadores a seguir identifica essas propriedades:
+Várias propriedades de dados waveform-audio são definidas quando o arquivo para armazenar os dados é criado. Essas propriedades descrevem como os dados são estruturados dentro do arquivo e não podem ser alterados depois que a gravação é iniciada. A lista de sinalizadores a seguir identifica estas propriedades:
 
--   AVGBYTESPERSEC de onda do MCI \_ \_ set \_
--   BITSPERSAMPLE de onda do MCI \_ \_ set \_
--   BLOCKALIGN de onda do MCI \_ \_ set \_
--   \_canais de \_ conjunto de ondas MCI \_
--   FORMATTAG de onda do MCI \_ \_ set \_
--   SAMPLESPERSEC de onda do MCI \_ \_ set \_
+-   MCI \_ WAVE \_ SET \_ AVGBYTESPERSEC
+-   MCI \_ WAVE \_ SET \_ BITSPERSAMPLE
+-   MCI \_ WAVE \_ SET \_ BLOCKALIGN
+-   CANAIS DO CONJUNTO \_ DE \_ ONDA DA \_ MCI
+-   FORMATTAG DO CONJUNTO \_ \_ DE ONDA \_ DA MCI
+-   MCI \_ WAVE \_ SET \_ SAMPLESPERSEC
 
 ## <a name="requirements"></a>Requisitos
 
@@ -752,7 +752,7 @@ Várias propriedades dos dados de formato de onda-áudio são definidas quando o
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -760,7 +760,7 @@ Várias propriedades dos dados de formato de onda-áudio são definidas quando o
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Comandos MCI](mci-commands.md)

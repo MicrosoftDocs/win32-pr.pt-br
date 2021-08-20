@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - d3d9types.h
-ms.openlocfilehash: 1c4500d27577883f46d00580dcc7e306b4008cf3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d1fed28e4ff36fbd7798870d7fcdfff4d3a90d77d4d43b859ae2f6f754af4e2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370534"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117880145"
 ---
 # <a name="d3dauthenticatedchannel_queryevictionencryptionguid_input-structure"></a>Estrutura de entrada do D3DAUTHENTICATEDCHANNEL \_ QUERYEVICTIONENCRYPTIONGUID \_
 
@@ -62,9 +62,9 @@ O índice do GUID de criptografia.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>D3d9types. h</dt> </dl> |
 
 
 

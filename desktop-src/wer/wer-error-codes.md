@@ -1,6 +1,6 @@
 ---
 title: Códigos de erro do WER (Werapi. h)
-description: A tabela a seguir fornece uma lista de códigos de erro personalizados usados pelo Relatório de Erros do Windows.
+description: a tabela a seguir fornece uma lista de códigos de erro personalizados usados pelo Relatório de Erros do Windows.
 ms.assetid: c409b222-5e02-4b48-b39a-f2e29d199944
 topic_type:
 - apiref
@@ -17,16 +17,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cc4c37d21a38679f1ea36151eb14d21a6c43af0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fcd648d0749901ecaae033f2d5c906ba02ef23183e325054d831dac0f73d999
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105781309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117670644"
 ---
 # <a name="wer-error-codes"></a>Códigos de erro do WER
 
-A tabela a seguir fornece uma lista de códigos de erro personalizados usados pelo Relatório de Erros do Windows.
+a tabela a seguir fornece uma lista de códigos de erro personalizados usados pelo Relatório de Erros do Windows.
 
 
 
@@ -47,9 +47,9 @@ A tabela a seguir fornece uma lista de códigos de erro personalizados usados pe
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Werapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Werapi. h</dt> </dl> |
 
 
 

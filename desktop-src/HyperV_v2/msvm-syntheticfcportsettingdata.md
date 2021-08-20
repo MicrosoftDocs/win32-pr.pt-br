@@ -1,7 +1,7 @@
 ---
-description: Representa o estado configurado de uma porta de Fibre Channel sintética.
+description: Representa o estado configurado de uma porta Fibre Channel sintética.
 ms.assetid: 5d47dd80-de34-4ae4-a300-c16da1cd4974
-title: Classe Msvm_SyntheticFcPortSettingData
+title: Msvm_SyntheticFcPortSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -42,18 +42,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: bdd0342f5429f5314f5c744a3a760101dbaa043b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a31d8e927373bab0d7bcbc18156e2a6551b32db6393480fb12de4236631040d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810855"
 ---
-# <a name="msvm_syntheticfcportsettingdata-class"></a>\_Classe Msvm SyntheticFcPortSettingData
+# <a name="msvm_syntheticfcportsettingdata-class"></a>Classe Msvm \_ SyntheticFcPortSettingData
 
-Representa o estado configurado de uma porta de Fibre Channel sintética.
+Representa o estado configurado de uma porta Fibre Channel sintética.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -95,13 +95,13 @@ class Msvm_SyntheticFcPortSettingData : CIM_ResourceAllocationSettingData
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ SyntheticFcPortSettingData** tem estes tipos de membros:
+A **classe Msvm \_ SyntheticFcPortSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ SyntheticFcPortSettingData** tem essas propriedades.
+A **classe Msvm \_ SyntheticFcPortSettingData** tem essas propriedades.
 
 <dl> <dt>
 
@@ -114,7 +114,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O endereço do recurso. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+O endereço do recurso. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Descreve o endereço deste recurso no contexto do pai. As propriedades **pai** e **AddressOnParent** são usadas para descrever a relação do controlador, bem como a ordem dos dispositivos em um controlador. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Descreve o endereço desse recurso no contexto do pai. As **propriedades Parent** e **AddressOnParent** são usadas para descrever a relação do controlador, bem como a ordenação de dispositivos em um controlador. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -140,33 +140,33 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A unidade de alocação usada pelas propriedades **Reservation** e **Limit** . Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+A unidade de alocação usada pelas **propriedades Reserva** **e** Limite. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
 **AutomaticAllocation**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o recurso será alocado automaticamente. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Indica se o recurso será alocado automaticamente. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
 **AutomaticDeallocation**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se o recurso será desalocado automaticamente. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Indica se o recurso será desaloqueado automaticamente. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -179,49 +179,49 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (64)
+Qualificadores: **MaxLen** (64)
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **ChapEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica que essa porta foi configurada com um segredo compartilhado usando DH-CHAP, que permite que o Fibre Channel Fabric autentique que essa máquina virtual pode usar legitimamente os WWNs (World Wide Names) atribuídos a essa porta.
+Indica que essa porta foi configurada com um segredo compartilhado usando DH-CHAP, que permite que a malha Fibre Channel autententidade de que essa máquina virtual pode usar de forma legítima os nomes de todo o mundo atribuídos a essa porta.
 
 </dd> <dt>
 
 **Conexão**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O dispositivo ao qual esse recurso está conectado. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+O dispositivo ao qual esse recurso está conectado. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
 **ConsumerVisibility**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A visibilidade do consumidor para o recurso alocado. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+A visibilidade do consumidor para o recurso alocado. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -234,7 +234,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -247,22 +247,22 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada do [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)). A alteração dessa propriedade irá alterar o nome do elemento do derivado do dispositivo lógico associado.
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85)) Alterar essa propriedade alterará o nome do elemento do derivado de dispositivo lógico associado.
 
-Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifyResourceSettings**](modifyresourcesettings-msvm-virtualsystemmanagementservice.md) da [**classe Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
 </dd> <dt>
 
 **HostResource**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Somente um recurso de host pode ser atribuído a cada dispositivo na máquina virtual, de modo que somente o primeiro elemento dessa matriz pode ser definido. Para dispositivos que dão suporte a esse recurso, defina o primeiro elemento da matriz **HostResource** para conter uma referência ao recurso de host subjacente a ser atribuído. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Somente um recurso de host pode ser atribuído a cada dispositivo na máquina virtual, portanto, somente o primeiro elemento dessa matriz pode ser definido. Para dispositivos que suportam esse recurso, de definido o primeiro elemento da matriz **HostResource** para conter uma referência ao recurso de host subjacente a ser atribuído. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -275,36 +275,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada do [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
 
 </dd> <dt>
 
 **Limite**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt64**
+Tipo de dados: **uint64**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A quantidade máxima de recursos de host correspondentes que podem ser consumidos pela máquina virtual. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+A quantidade máxima de recursos de host correspondentes que podem ser consumidos pela máquina virtual. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
 **MappingBehavior**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica como esse recurso é mapeado para recursos subjacentes. Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
+Especifica como esse recurso é mapeados para recursos subjacentes. Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata).
 
 </dd> <dt>
 
@@ -317,7 +317,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o tipo de recurso quando um valor bem definido não está disponível e [**ResourceType**](msvm-processorsettingdata.md) tem o valor 1 (outro). Essa propriedade é herdada do [**CIM \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata), mas não é usada.
+Uma cadeia de caracteres que descreve o tipo de recurso quando um valor bem definido não está disponível e [**ResourceType**](msvm-processorsettingdata.md) tem o valor 1(Outro). Essa propriedade é herdada de [**Cim \_ ResourceAllocationSettingData**](/previous-versions/windows/desktop/clushyperv/cim-resourceallocationsettingdata), mas não é usada.
 
 </dd> <dt>
 
@@ -509,8 +509,8 @@ Um inteiro que define o peso relativo para cada processador de máquina virtual.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

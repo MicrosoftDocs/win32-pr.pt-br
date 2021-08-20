@@ -4,12 +4,12 @@ description: O RC não oferece suporte às diretivas pragma com suporte pelo com
 ms.assetid: c7a944c0-a3d4-4568-a9ac-c338f0eaa427
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab0c92136ba5e00d5b821d35ea05a337e7d6abe7
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 35559aaadeaa6c3b769cd6ffe7a3848f44a5e165c6a25bca17f0239cafbd8f92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007525"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117870135"
 ---
 # <a name="pragma-directives"></a>Diretivas pragma
 
@@ -29,6 +29,6 @@ Não há suporte para esse pragma em um arquivo de recurso incluído (. rc). Por
 
 Para obter uma lista de valores para CodePageNum, consulte [identificadores de página de código](../intl/code-page-identifiers.md).
 
- 
+ 
 
- 
+ 

@@ -13,12 +13,12 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: fcf23352-6603-4b17-9c3b-b353cca1c003
-ms.openlocfilehash: ca68d2e46ce74593b66aac6f995b88ddcb79796b
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 4cdb724e9a1b2bd77803f6fe104515057e69f532f62ea05d273f0178dd90e61b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047472"
 ---
 # <a name="shelluihelperissubscribed-method"></a>Método ShellUIHelper.IsSubscribed
 
@@ -48,7 +48,7 @@ Um **valor string** que especifica a URL.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **booliana \***
 
@@ -58,7 +58,7 @@ Tipo: **booliana \***
 
 O exemplo a seguir mostra o uso adequado desse método para JScript inserido em HTML e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -114,7 +114,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, somente aplicativos da área de trabalho do Windows XP \[\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows somente aplicativos da \[ área de trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Exdisp.h</dt> </dl>                            |
 | DLL<br/>                      | <dl> <dt>Shell32.dll (versão 4.71 ou posterior)</dt> </dl> |

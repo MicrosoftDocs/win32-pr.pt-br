@@ -34,19 +34,19 @@ api_name:
 targetos: Windows
 req.typenames: ''
 req.redist: ''
-ms.openlocfilehash: 0dfc3342f3eca5622c25d2df7319cd2323f516ff
-ms.sourcegitcommit: 1f6a1bfc1c4bb2641bc3ba44beb1f2727c94681b
+ms.openlocfilehash: a071246fadaa971b88e894dff8cb307a38d26b959d8f431972cc4be476344c9d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "104967156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118047169"
 ---
 # <a name="shgetfolderpathex-function"></a>Função SHGetFolderPathEx
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 \[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente.
-A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
 Recupera o caminho completo de uma pasta conhecida identificada pelo [KNOWNFOLDERID](/windows/desktop/shell/knownfolderid)da pasta.
 Isso estende o [SHGetKnownFolderPath](/windows/desktop/api/shlobj_core/nf-shlobj_core-shgetknownfolderpath) permitindo que você defina o tamanho inicial do buffer de cadeia de caracteres.

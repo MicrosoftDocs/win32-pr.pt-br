@@ -1,9 +1,9 @@
 ---
-title: Estrutura de MCI_SYSINFO_PARMS (Mciapi. h)
-description: A estrutura de parâmetros do sysinfo do MCI \_ \_ contém informações para o comando do sysinfo do MCI \_ .
+title: MCI_SYSINFO_PARMS (Mciapi.h)
+description: A estrutura \_ MCI SYSINFO \_ PARMS contém informações para o comando \_ SYSINFO da MCI.
 ms.assetid: 433649ed-7c00-440d-84f3-164949e01cc4
 keywords:
-- Multimídia do Windows da estrutura de MCI_SYSINFO_PARMS
+- MCI_SYSINFO_PARMS estrutura Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf143bb0d895dc03df38bbb0a657467d506eac77
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 708d37f4d011997352a95b80dc80b8b9afd28730feeeb0e285a07d68c8c8eed5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105760818"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117803126"
 ---
-# <a name="mci_sysinfo_parms-structure"></a>Estrutura de parâmetros do \_ sysinfo do MCI \_
+# <a name="mci_sysinfo_parms-structure"></a>Estrutura \_ PARMS MCI SYSINFO \_
 
-A estrutura de **\_ \_ parâmetros do sysinfo do MCI** contém informações para o comando do [**\_ sysinfo do MCI**](mci-sysinfo.md) .
+A **estrutura \_ MCI SYSINFO \_ PARMS** contém informações para o [**comando \_ SYSINFO da MCI.**](mci-sysinfo.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,17 +44,17 @@ typedef struct {
 
 <dl> <dt>
 
-**dwCallback**
+**Dwcallback**
 </dt> <dd>
 
-A palavra de ordem inferior Especifica um identificador de janela usado para o \_ sinalizador de notificação MCI.
+A palavra de ordem baixa especifica um alça de janela usado para o sinalizador NOTIFY da \_ MCI.
 
 </dd> <dt>
 
 **lpstrReturn**
 </dt> <dd>
 
-Ponteiro para um buffer fornecido pelo usuário para a cadeia de caracteres de retorno. Ele também é usado para retornar um valor **DWORD** quando o sinalizador de quantidade do sysinfo do MCI \_ \_ é usado.
+Ponteiro para um buffer fornecido pelo usuário para a cadeia de caracteres de retorno. Ele também é usado para retornar um **valor DWORD** quando o sinalizador \_ QUANTITY da MCI SYSINFO \_ é usado.
 
 </dd> <dt>
 
@@ -68,20 +68,20 @@ Tamanho, em bytes, do buffer de retorno.
 **dwNumber**
 </dt> <dd>
 
-Número que indica a posição do dispositivo na tabela do dispositivo MCI ou na lista de dispositivos abertos se o \_ sinalizador de abertura do sysinfo do MCI \_ estiver definido.
+Número que indica a posição do dispositivo na tabela do dispositivo MCI ou na lista de dispositivos abertos se o sinalizador OPEN \_ SYSINFO da MCI \_ estiver definido.
 
 </dd> <dt>
 
 **wDeviceType**
 </dt> <dd>
 
-Tipo de dispositivo. Esse membro pode ser um dos valores listados em [tipos de dispositivo MCI](mci-device-types.md).
+Tipo de dispositivo. Esse membro pode ser um dos valores listados em [Tipos de Dispositivo MCI.](mci-device-types.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
+Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -91,7 +91,7 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 |-------------------------------------|-------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                          |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                |
-| Cabeçalho<br/>                   | <dl> <dt>Mciapi. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mciapi.h</dt> </dl> |
 
 
 
@@ -99,13 +99,13 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estruturas MCI**](mci-structures.md)
 </dt> <dt>
 
-[**SysInfo do MCI \_**](mci-sysinfo.md)
+[**MCI \_ SYSINFO**](mci-sysinfo.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

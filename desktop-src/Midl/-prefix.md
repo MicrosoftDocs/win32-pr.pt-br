@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 79885a57f257fe2648a27fd67a014421b2c1c13a
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 366417b66838a6c55a207effbf6e8e5913cd2206b5288cf1790343789330b9ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104498899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117808814"
 ---
 # <a name="prefix-switch"></a>comutador/prefix
 
@@ -125,9 +125,9 @@ Em todos os casos, o cliente, o servidor e os prefixos de comutador substituirã
 [Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

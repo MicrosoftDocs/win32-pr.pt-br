@@ -11,12 +11,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 68e3645c3e634c4e9cd886600977882dcc3e2018
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 81e8e415813e9b5c6f1c79012e1ef22884546a879a3ddd353b42245621ca2146
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117908280"
 ---
 # <a name="ps_1_1__ps_1_2__ps_1_3__ps_1_4-registers"></a>ps \_ 1 \_ 1 \_ \_ ps \_ 1 \_ 2 \_ \_ ps \_ 1 \_ 3 \_ \_ ps \_ 1 \_ 4 Registros
 
@@ -38,7 +38,7 @@ Registra os dados de espera para uso pelo sombreador de pixel. Os registros são
 | c\#  | Registro constante  | 8        | 8    | 8    | 8            |
 | R\#  | Registro temporário | 2        | 2    | 2    | 6            |
 | T\#  | Registro de textura   | 4        | 4    | 4    | 6            |
-| V\#  | Registro de cores     | 2        | 2    | 2    | 2 na fase 2 |
+| v\#  | Registro de cores     | 2        | 2    | 2    | 2 na fase 2 |
 
 
 
@@ -51,7 +51,7 @@ Registra os dados de espera para uso pelo sombreador de pixel. Os registros são
 
 -   Registros de textura
 
-    Para o sombreador de pixel versão \_ 1 1 a 1 3, os registros de textura contêm dados de textura \_ ou coordenadas de textura. Os dados de textura são carregados em um registro de textura quando uma textura é amostrada. A amostragem de textura usa coordenadas de textura para procurar ou amostrar um valor de cor nas coordenadas especificadas (u,v,w,q) ao levar em conta os atributos de estado do estágio de textura. Os dados de coordenadas de textura são interpolados dos dados de coordenadas de textura de vértice e estão associados a um estágio de textura específico. Há uma associação padrão de um para um entre o número do estágio de textura e a ordem de declaração da coordenada de textura. Por padrão, o primeiro conjunto de coordenadas de textura definido no formato de vértice é associado ao estágio de textura 0.
+    Para o sombreador de pixel versão \_ 1 1 a 1 3, os registros de textura contêm dados de textura \_ ou coordenadas de textura. Os dados de textura são carregados em um registro de textura quando uma textura é amostrada. A amostragem de textura usa coordenadas de textura para procurar ou amostrar um valor de cor nas coordenadas especificadas (u,v,w,q) ao levar em conta os atributos de estado do estágio de textura. Os dados da coordenada de textura são interpolados dos dados de coordenadas de textura de vértice e estão associados a um estágio de textura específico. Há uma associação padrão de um para um entre o número do estágio de textura e a ordem de declaração da coordenada de textura. Por padrão, o primeiro conjunto de coordenadas de textura definido no formato de vértice é associado ao estágio de textura 0.
 
     Para essas versões do sombreador de pixel, os registros de textura se comportam como registros temporários quando usados por instruções aritméticas.
 
@@ -78,13 +78,13 @@ O limite de porta de leitura especifica o número de registros diferentes de cad
 | c\#  | Registro constante  | 2        | 2    | 2    | 2            |
 | R\#  | Registro temporário | 2        | 2    | 2    | 3            |
 | T\#  | Registro de textura   | 2        | 3    | 3    | 1            |
-| V\#  | Registro de cores     | 2        | 2    | 2    | 2 na fase 2 |
+| v\#  | Registro de cores     | 2        | 2    | 2    | 2 na fase 2 |
 
 
 
  
 
-Por exemplo, os registros de cores para quase todas as versões têm um limite de porta de leitura de duas. Isso significa que uma única instrução pode usar um máximo de dois registros de cores diferentes (v0 e v1, por exemplo) como registros de origem. Este exemplo mostra dois registros de cores sendo usados na mesma instrução:
+Por exemplo, os registros de cor para quase todas as versões têm um limite de porta de leitura de duas. Isso significa que uma única instrução pode usar um máximo de dois registros de cores diferentes (v0 e v1, por exemplo) como registros de origem. Este exemplo mostra dois registros de cores sendo usados na mesma instrução:
 
 
 ```
@@ -95,7 +95,7 @@ mad r0, v1, c2, v0
 
 ## <a name="read-only-readwrite"></a>Somente leitura, leitura/gravação
 
-Os tipos de registro são identificados de acordo com a funcionalidade RO (somente leitura) ou a funcionalidade de leitura/gravação (RW) na tabela a seguir. Os registros somente leitura podem ser usados apenas como registros de origem em uma instrução; eles nunca podem ser usados como um registro de destino.
+Os tipos de registro são identificados de acordo com a funcionalidade ro (somente leitura) ou a funcionalidade de leitura/gravação (RW) na tabela a seguir. Os registros somente leitura podem ser usados apenas como registros de origem em uma instrução; eles nunca podem ser usados como um registro de destino.
 
 
 
@@ -105,7 +105,7 @@ Os tipos de registro são identificados de acordo com a funcionalidade RO (somen
 | c\#  | Registro constante  | RO       | RO   | RO   | RO                 |
 | R\#  | Registro temporário | RW       | RW   | RW   | RW                 |
 | T\#  | Registro de textura   | RW       | RW   | RW   | Consulte a observação a seguir |
-| V\#  | Registro de cores     | RO       | RO   | RO   | RO                 |
+| v\#  | Registro de cores     | RO       | RO   | RO   | RO                 |
 
 
 
@@ -130,7 +130,7 @@ O intervalo é o valor de dados de registro máximo e mínimo. Os intervalos var
 | c\#  | Registro constante  | -1 a +1                                            | Todas as versões |
 | R\#  | Registro temporário | \- PixelShader1xMaxValue para + PixelShader1xMaxValue | Todas as versões |
 | T\#  | Registro de textura   | \- MaxTextureRepeat para + MaxTextureRepeat           | Todas as versões |
-| V\#  | Registro de cores     | 0 a 1                                              | Todas as versões |
+| v\#  | Registro de cores     | 0 a 1                                              | Todas as versões |
 
 
 

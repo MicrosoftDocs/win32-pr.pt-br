@@ -4,12 +4,12 @@ description: Saiba mais sobre as propriedades do usuário do SDK. Veja um exempl
 ms.assetid: e8a9656d-48e7-4580-a84d-2b829e7a692f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0c8dab154e1ef6c736849720856a23fdfe2e7b3
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: e4cd3d8ac46e7859b03dc3a979d53418023c601161c3bf5b9119e58c0b612c4c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104084967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117903732"
 ---
 # <a name="sdk-user-properties"></a>Propriedades do usuário do SDK
 
@@ -36,15 +36,15 @@ Este exemplo é uma instância do esquema nativo do [eaphostusercredentials](eap
 
 <dl> <dt>
 
-[Propriedades do Usuário](user-profiles.md)
+[Propriedades do usuário](user-profiles.md)
 </dt> <dt>
 
 [EAPHost e esquema herdado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

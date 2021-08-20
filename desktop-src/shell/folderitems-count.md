@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: a2bde6d938bde675c52c93f09916a70ba0e21f9a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7b9eab74f2905ae0d8ba9d0bc1eb59098d385e2f63e145b5cc32f4b8a7911805
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108089604"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117679480"
 ---
 # <a name="folderitemscount-property"></a>Propriedade FolderItems. Count
 
@@ -41,9 +41,9 @@ Um **inteiro** que contém um valor para a propriedade **Count** .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **Count** para recuperar a contagem de itens na pasta do Windows. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+o exemplo a seguir usa **Count** para recuperar a contagem de itens na pasta Windows. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -147,7 +147,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

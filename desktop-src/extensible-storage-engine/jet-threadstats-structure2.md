@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: estrutura de JET_THREADSTATS'
-title: Estrutura de JET_THREADSTATS (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: JET_THREADSTATS estrutura'
+title: JET_THREADSTATS (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: JET_THREADSTATS structure
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.JET_THREADSTATS
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_threadstats(v=EXCHG.10)
@@ -24,21 +24,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 764a9276543fbb7a5b1aa2762cc8ed1877c45ded
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b77628bece94d4021ec437ee678a3463bcb8b64158e28286c060ee45b7ce182f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761585"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118073220"
 ---
-# <a name="jet_threadstats-structure"></a>Estrutura de JET_THREADSTATS
+# <a name="jet_threadstats-structure"></a>JET_THREADSTATS estrutura
 
-Contém estatísticas cumulativas no trabalho executado pelo mecanismo de banco de dados no thread atual. Essas informações são retornadas por meio de JetGetThreadStats.
+Contém estatísticas cumulativas sobre o trabalho executado pelo mecanismo de banco de dados no thread atual. Essas informações são retornadas por meio de JetGetThreadStats.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -62,6 +62,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do JET_THREADSTATS](./jet-threadstats-members.md)
+[JET_THREADSTATS membros](./jet-threadstats-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

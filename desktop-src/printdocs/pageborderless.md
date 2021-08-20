@@ -4,12 +4,12 @@ ms.assetid: c5e75f57-7426-41fa-88f4-789153fcd0c5
 title: Pageborderless
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 66a0ff13edc1f4e5b36f55229559bb06ed17150b
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: a6165c6bfc27a18ef997be51feca31538851ba04636f4e419f5b50db95ce0872
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117868265"
 ---
 # <a name="pageborderless"></a>Pageborderless
 
@@ -28,7 +28,7 @@ Descreve quando o conteúdo da imagem deve ser impresso nas bordas físicas da m
 | Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
-| Prefixo de definição de scoping <br/> | Página<br/>    |
+| Prefixo de definição de scoping <br/> | ?<br/>    |
 | Observações <br/>          | Nenhum<br/>    |
 
 
@@ -69,7 +69,7 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 ## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML XML (public linguagem XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:PageBorderless">

@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_PAL_AUTOCREATE (VFW. h)
 description: A \_ mensagem de \_ criação automática de PAL Cap do WM \_ solicita que os quadros de vídeo de exemplo do driver de captura e criem automaticamente uma nova paleta. Você pode enviar essa mensagem explicitamente ou usando a macro capPaletteAuto.
 ms.assetid: b94d245d-adf4-4fe0-b053-87109ef5fd2f
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_PAL_AUTOCREATE
+- mensagem de WM_CAP_PAL_AUTOCREATE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ba70de46167121aa9a83959c6d9e202039f65cd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a18d805ef394388de2265845f4e21bebb98d94391b851a60ed38d46e9872fecc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754631"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800636"
 ---
 # <a name="wm_cap_pal_autocreate-message"></a>Mensagem de criação de email do WM \_ Cap \_ PAL \_
 

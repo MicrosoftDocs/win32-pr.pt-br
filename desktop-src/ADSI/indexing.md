@@ -1,6 +1,6 @@
 ---
 title: Indexação
-description: Quando possível, pesquise atributos indexados ou pelo menos um atributo indexado. Como em geral com bancos de dados, pesquisar em um atributo indexado permite que o servidor calcule o conjunto de resultados com mais eficiência.
+description: Quando possível, pesquise atributos indexados ou pelo menos um atributo indexado. Como em geral, com bancos de dados, a pesquisa em um atributo indexado permite que o servidor Calcule com mais eficiência o conjunto de resultados.
 ms.assetid: 5b74edf2-6c4a-47ce-90aa-94cff8ffecf7
 ms.tgt_platform: multiple
 ms.topic: article
@@ -14,7 +14,7 @@ ms.locfileid: "117839736"
 ---
 # <a name="indexing"></a>Indexação
 
-Quando possível, pesquise atributos indexados ou pelo menos um atributo indexado. Como em geral com bancos de dados, pesquisar em um atributo indexado permite que o servidor calcule o conjunto de resultados com mais eficiência.
+Quando possível, pesquise atributos indexados ou pelo menos um atributo indexado. Como em geral, com bancos de dados, a pesquisa em um atributo indexado permite que o servidor Calcule com mais eficiência o conjunto de resultados.
 
  
 
