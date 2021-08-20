@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_SINGLE_FRAME_CLOSE (VFW. h)
 description: A mensagem de fechamento do quadro do WM \_ Cap \_ \_ \_ fecha o arquivo de captura aberto \_ pela \_ mensagem de abertura de quadro único do WM Cap \_ \_ . Você pode enviar essa mensagem explicitamente ou usando a macro capCaptureSingleFrameClose.
 ms.assetid: fde5f34b-0781-49a2-a509-64192a1d9ec0
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_SINGLE_FRAME_CLOSE
+- mensagem de WM_CAP_SINGLE_FRAME_CLOSE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e35523476dde1c74c4a20447d7c46d5eafc5e529
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6f304fd0c62818562e53c6129a15b266db6f1ac000de64fb779e5cdb3e437d43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134960"
 ---
 # <a name="wm_cap_single_frame_close-message"></a>\_Mensagem de \_ \_ fechamento do quadro único \_ do WM Cap
 

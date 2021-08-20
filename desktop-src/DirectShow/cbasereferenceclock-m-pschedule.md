@@ -1,7 +1,7 @@
 ---
-description: Ponteiro para um objeto CAMSchedule que manipula tarefas de agendamento para o relógio.
+description: Ponteiro para um objeto CAMSchedule que lida com tarefas de agendamento para o relógio.
 ms.assetid: 6af7437f-313c-4a1e-a412-f82d3486264f
-title: 'Membro CBaseReferenceClock:: m_pSchedule (Refclock. h)'
+title: Membro CBaseReferenceClock::m_pSchedule (Refclock.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 9b71b13d1d6a7678dba61cf30315d09e074669fd
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 99a04cf89d012fb9ae01ee1a48ce46c36ebf8b6731072a7a858863b7372e736e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158084"
 ---
-# <a name="cbasereferenceclockm_pschedule-member"></a>Membro de CBaseReferenceClock:: m \_ pSchedule
+# <a name="cbasereferenceclockm_pschedule-member"></a>Membro CBaseReferenceClock::m \_ pSchedule
 
-Ponteiro para um objeto [**CAMSchedule**](camschedule.md) que manipula tarefas de agendamento para o relógio.
+Ponteiro para um [**objeto CAMSchedule**](camschedule.md) que lida com tarefas de agendamento para o relógio.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ CAMSchedule *m_pSchedule;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Refclock. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Refclock.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

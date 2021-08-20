@@ -1,7 +1,7 @@
 ---
-description: Representa a configuração de um adaptador de rede dentro do sistema operacional convidado.
+description: Representa a configuração de um adaptador de rede no sistema operacional convidado.
 ms.assetid: 154d4a0f-0c57-496a-a351-6caa74011544
-title: Classe Msvm_GuestNetworkAdapterConfiguration
+title: Msvm_GuestNetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,18 +21,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: ce5738bca4563aa77678cac2b7e33f5c4d5323e4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0c208a14a8db57303b3ccc857ca15a5d7f88369b7093b9931c0c9cb80012230d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090671"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147971"
 ---
-# <a name="msvm_guestnetworkadapterconfiguration-class"></a>\_Classe Msvm GuestNetworkAdapterConfiguration
+# <a name="msvm_guestnetworkadapterconfiguration-class"></a>Classe Msvm \_ GuestNetworkAdapterConfiguration
 
-Representa a configuração de um adaptador de rede dentro do sistema operacional convidado.
+Representa a configuração de um adaptador de rede no sistema operacional convidado.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,36 +53,36 @@ class Msvm_GuestNetworkAdapterConfiguration
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ GuestNetworkAdapterConfiguration** tem estes tipos de membros:
+A **classe Msvm \_ GuestNetworkAdapterConfiguration** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ GuestNetworkAdapterConfiguration** tem essas propriedades.
+A **classe Msvm \_ GuestNetworkAdapterConfiguration** tem essas propriedades.
 
 <dl> <dt>
 
-**Defaultgateways**
+**DefaultGateways**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado")
 </dt> </dl>
 
-Uma matriz de cadeias de caracteres que contém os gateways IP padrão configurados no adaptador de rede no sistema operacional convidado. O número máximo de gateways IP padrão que podem ser configurados em um único adaptador de rede é cinco.
+Uma matriz de cadeias de caracteres que contém os gateways IP padrão configurados no adaptador de rede no sistema operacional convidado. O número máximo de gateways ip padrão que podem ser configurados em um único adaptador de rede é cinco.
 
 </dd> <dt>
 
 **DHCPEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -95,13 +95,13 @@ Especifica se o DHCP está habilitado no adaptador de rede dentro do sistema ope
 **DNSServers**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado")
 </dt> </dl>
 
 Uma matriz de cadeias de caracteres que contêm os servidores DNS configurados no adaptador de rede no sistema operacional convidado.
@@ -117,23 +117,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificadores: [ **Chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-O identificador exclusivo deste objeto.
+O identificador exclusivo para este objeto.
 
 </dd> <dt>
 
 **IPAddresses**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado")
 </dt> </dl>
 
 Uma matriz de cadeias de caracteres que contêm os endereços IP configurados no adaptador de rede no sistema operacional convidado.
@@ -143,13 +143,13 @@ Uma matriz de cadeias de caracteres que contêm os endereços IP configurados no
 **IPAddressOrigins**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UINT16**
+Tipo de dados: **matriz UINT16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado")
 </dt> </dl>
 
 A origem dos endereços IP configurados no adaptador de rede no sistema operacional convidado.
@@ -165,7 +165,7 @@ A origem dos endereços IP configurados no adaptador de rede no sistema operacio
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -182,13 +182,13 @@ A origem dos endereços IP configurados no adaptador de rede no sistema operacio
 **ProtocolIFType**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identifica os protocolos IP aos quais as configurações especificadas por essa instância se aplicam.
+Identifica os protocolos IP aos que as configurações especificadas por essa instância se aplicam.
 
 <dt>
 
@@ -201,7 +201,7 @@ Identifica os protocolos IP aos quais as configurações especificadas por essa 
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -222,7 +222,7 @@ Identifica os protocolos IP aos quais as configurações especificadas por essa 
 
 <span id="IPv4_v6"></span><span id="ipv4_v6"></span><span id="IPV4_V6"></span>
 
-**IPv4/V6** (4098)
+**IPv4/v6** (4098)
 
 
 </dt> <dd></dd> </dl>
@@ -232,16 +232,16 @@ Identifica os protocolos IP aos quais as configurações especificadas por essa 
 **Sub-redes**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Qualificadores: [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado")
 </dt> </dl>
 
-Uma matriz de cadeias de caracteres que contêm as sub-redes configuradas no adaptador de rede dentro do sistema operacional convidado. Cada elemento nessa matriz se aplica ao elemento correspondente na matriz **ipaddresss** .
+Uma matriz de cadeias de caracteres que contêm as sub-redes configuradas no adaptador de rede no sistema operacional convidado. Cada elemento nessa matriz se aplica ao elemento correspondente na **matriz IPAddresses.**
 
 </dd> </dl>
 
@@ -251,10 +251,10 @@ Uma matriz de cadeias de caracteres que contêm as sub-redes configuradas no ada
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

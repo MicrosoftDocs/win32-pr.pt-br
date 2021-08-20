@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2D:: GatherRed (S, float, int)'
-description: 'Para quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, o retorna uma comparação de seu componente vermelho em relação a um valor de comparação. | Função Texture2D:: GatherRed (S, float, int)'
+title: Função Texture2D::GatherRed(S,float,int)
+description: Para quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, retorna uma comparação de seu componente vermelho em relação a um valor de comparação. | Função Texture2D::GatherRed(S,float,int)
 ms.assetid: 6d2d1556-d52f-4625-93ca-34da399f9a8b
 keywords:
-- HLSL da função GatherRed
+- Função GatherRed HLSL
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118508635"
 ---
-# <a name="texture2dgatherredsfloatint-function"></a>Função Texture2D:: GatherRed (S, float, int)
+# <a name="texture2dgatherredsfloatint-function"></a>Função Texture2D::GatherRed(S,float,int)
 
-Para quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, o retorna uma comparação de seu componente vermelho em relação a um valor de comparação.
+Para quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, retorna uma comparação de seu componente vermelho em relação a um valor de comparação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,25 +41,25 @@ TemplateType GatherRed(
 *s* \[ em\]
 </dt> <dd>
 
-Tipo: **amostra**
+Tipo: **sampler**
 
 O índice de amostra baseado em zero.
 
 </dd> <dt>
 
-*local* \[ do no\]
+*local* \[ Em\]
 </dt> <dd>
 
 Tipo: **float2**
 
-As coordenadas de exemplo (u, v).
+As coordenadas de exemplo (u,v).
 
 </dd> <dt>
 
-*deslocamento* \[ no\]
+*deslocamento* \[ Em\]
 </dt> <dd>
 
-Tipo: **Int2**
+Tipo: **int2**
 
 Um deslocamento que é aplicado à coordenada de textura antes da amostragem.
 
@@ -73,13 +73,13 @@ Um valor de quatro componentes cujo tipo é o mesmo que o tipo de modelo.
 
 ## <a name="remarks"></a>Comentários
 
-Os exemplos de textura podem ser usados para interpolação bilinear.
+As amostras de textura podem ser usadas para interpolação bilinear.
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 
