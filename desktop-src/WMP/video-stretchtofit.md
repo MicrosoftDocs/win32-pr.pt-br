@@ -1,9 +1,9 @@
 ---
-title: VÍDEO. stretchToFit
-description: O atributo stretchToFit especifica um valor que indica se o vídeo será alongado para a largura e a altura definidas para o controle de vídeo.
+title: VIDEO.stretchToFit
+description: O atributo stretchToFit especifica um valor que indica se o vídeo será estendido até a largura e a altura definidas para o controle Vídeo.
 ms.assetid: 257f5f01-a447-4637-aa73-e5800b263ba5
 keywords:
-- VÍDEO. stretchToFit Windows Media Player
+- VIDEO.stretchToFit Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c67f172e12b366ad5fda9ea112453786fd2784da
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 014625b61a19f5df2d1b835c6db9ad8c89dd76d20147eabb4bb739385af9cd67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105764116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117931702"
 ---
-# <a name="videostretchtofit"></a>VÍDEO. stretchToFit
+# <a name="videostretchtofit"></a>VIDEO.stretchToFit
 
-O atributo **stretchToFit** especifica um valor que indica se o vídeo será alongado para a largura e a altura definidas para o controle de vídeo.
+O **atributo stretchToFit** especifica um valor que indica se o vídeo será estendido até a largura e a altura definidas para o controle Vídeo.
 
 ``` syntax
         elementID.stretchToFit
@@ -29,14 +29,14 @@ O atributo **stretchToFit** especifica um valor que indica se o vídeo será alo
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                                             |
 |-------|---------------------------------------------------------|
-| true  | O vídeo será alongado para se ajustar ao controle.              |
-| false | Padrão. O vídeo não será alongado para se ajustar ao controle. |
+| true  | O vídeo será estendido para se ajustar ao controle.              |
+| false | Padrão. O vídeo não será estendido para se ajustar ao controle. |
 
 
 
@@ -52,7 +52,7 @@ Se nenhuma largura ou altura for especificada, esse atributo será ignorado.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 

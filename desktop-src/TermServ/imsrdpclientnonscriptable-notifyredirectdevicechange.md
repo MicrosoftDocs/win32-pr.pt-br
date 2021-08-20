@@ -1,6 +1,6 @@
 ---
 title: Método IMsRdpClientNonScriptable NotifyRedirectDeviceChange
-description: Notifica o módulo de redirecionamento de dispositivo do Área de Trabalho Remota controle ActiveX que ocorreu uma alteração de dispositivo no sistema. Esse método passa \_ notificações do WM DEVICECHANGE para o controle.
+description: notifica o módulo de redirecionamento de dispositivo do Área de Trabalho Remota ActiveX controle de que uma alteração de dispositivo ocorreu no sistema. Esse método passa \_ notificações do WM DEVICECHANGE para o controle.
 ms.assetid: 36323831-06e0-4e47-8a6c-06367119298f
 ms.tgt_platform: multiple
 keywords:
@@ -29,16 +29,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7357fcb5e31eeeb0de5791425b8d9fada4365ab8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 37986a218f672f5ace6d81b6496b958547e70a95f8ddea91bf6a130eb05b1ed6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130073"
 ---
 # <a name="imsrdpclientnonscriptablenotifyredirectdevicechange-method"></a>Método IMsRdpClientNonScriptable:: NotifyRedirectDeviceChange
 
-Notifica o módulo de redirecionamento de dispositivo do Área de Trabalho Remota controle ActiveX que ocorreu uma alteração de dispositivo no sistema. Esse método passa notificações do [**WM \_ DEVICECHANGE**](/windows/desktop/DevIO/wm-devicechange) para o controle.
+notifica o módulo de redirecionamento de dispositivo do Área de Trabalho Remota ActiveX controle de que uma alteração de dispositivo ocorreu no sistema. Esse método passa notificações do [**WM \_ DEVICECHANGE**](/windows/desktop/DevIO/wm-devicechange) para o controle.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -202,7 +202,7 @@ Ponteiro para uma estrutura que contém dados específicos do evento. Seu format
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar **S \_ OK** se for bem-sucedido.
 

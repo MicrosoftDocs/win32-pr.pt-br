@@ -4,16 +4,16 @@ description: Evento DblClick
 ms.assetid: 81ed5396-a2dc-49fe-820f-61ca0935fe85
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 20b900b8a8b79345c50749a4355deeb05fdc1220
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: f48e5b4574f8378930001e1cea3916d12904fcc317b3b00ff14c436fb4912574
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292459"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117693770"
 ---
 # <a name="dblclick-event"></a>Evento DblClick
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -40,7 +40,7 @@ Ocorre quando o usuário clica duas vezes em um caractere.
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -48,9 +48,9 @@ Ocorre quando o usuário clica duas vezes em um caractere.
 
 Esse evento é enviado somente para o cliente de entrada-ativo de um caractere. Quando o usuário clica duas vezes em um caractere ou em seu ícone da barra de tarefas sem entrada – cliente ativo, o servidor envia o evento para o último cliente de entrada-ativo. Se o caractere estiver visível ([visível](visible-property.md)  =  **true**), ele também definirá o cliente ativo como o cliente de entrada-ativo atual, enviando o evento [**ActivateInput**](activateinput-event.md) para esse cliente e, em seguida, enviando o evento **DblClick** . Se o caractere estiver oculto (Visible = **false**) e o usuário clicar duas vezes no ícone da barra de tarefas do caractere usando o botão 1, ele também mostrará automaticamente o caractere.
 
- 
+ 
 
- 
+ 
 
 
 

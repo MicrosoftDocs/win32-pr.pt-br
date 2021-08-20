@@ -4,19 +4,19 @@ ms.assetid: 1c985558-d25d-4f51-978a-58c05943dab9
 title: Processador de vídeo aprimorado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ab0881da0827e6cc757a0ea855bcb51864dd98e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d86d9c483d6c96cc76983263cdc2cc0a9a3dddc3a73d0ddb05f32ee24c9be0f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118063921"
 ---
 # <a name="enhanced-video-renderer"></a>Processador de vídeo aprimorado
 
 O processador de vídeo avançado (EVR) é um componente que exibe o vídeo no monitor do usuário. Existem duas versões do EVR:
 
 -   O coletor de mídia do EVR, para aplicativos Media Foundation.
--   O filtro EVR, para aplicativos do DirectShow.
+-   o filtro EVR, para aplicativos DirectShow.
 
 Ambas as versões usam os mesmos objetos internos para renderizar vídeo e compartilham muitas das mesmas interfaces.
 
@@ -43,8 +43,8 @@ O EVR dá suporte às seguintes interfaces. Algumas dessas interfaces são imple
 
 | Interface                                                    | Descrição                                                                                       |
 |--------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [**IEVRFilterConfig**](/windows/desktop/api/evr/nn-evr-ievrfilterconfig)                 | Define o número de Pins de entrada no filtro EVR (somente DirectShow).                                |
-| [**IEVRFilterConfigEx**](/windows/desktop/api/evr/nn-evr-ievrfilterconfigex)             | Configura o filtro EVR (somente DirectShow).                                                      |
+| [**IEVRFilterConfig**](/windows/desktop/api/evr/nn-evr-ievrfilterconfig)                 | define o número de pins de entrada no filtro EVR (somente DirectShow).                                |
+| [**IEVRFilterConfigEx**](/windows/desktop/api/evr/nn-evr-ievrfilterconfigex)             | configura o filtro EVR (somente DirectShow).                                                      |
 | [**IEVRTrustedVideoPlugin**](/windows/desktop/api/evr/nn-evr-ievrtrustedvideoplugin)     | Permite que um plug-in EVR processe vídeo protegido.                                                 |
 | [**IMFDesiredSample**](/windows/desktop/api/evr/nn-evr-imfdesiredsample)                 | Permite que o apresentador EVR solicite um quadro específico do mixer.                             |
 | [**IMFQualityAdvise**](/windows/desktop/api/mfidl/nn-mfidl-imfqualityadvise)                 | Permite que o Gerenciador de qualidade ajuste a qualidade do vídeo EVR.                                      |
@@ -54,7 +54,7 @@ O EVR dá suporte às seguintes interfaces. Algumas dessas interfaces são imple
 | [**IMFVideoMixerBitmap**](/windows/desktop/api/evr9/nn-evr9-imfvideomixerbitmap)           | Alfa-combina uma imagem de bitmap estática com o vídeo.                                                |
 | [**IMFVideoMixerControl**](/windows/desktop/api/evr/nn-evr-imfvideomixercontrol)         | Controla como o processador de vídeo aprimorado (EVR) combina os subfluxos de vídeo.                            |
 | [**IMFVideoMixerControl2**](/windows/desktop/api/evr/nn-evr-imfvideomixercontrol2)       | Controla as preferências de desentrelaçamento de vídeo.                                                     |
-| [**IMFVideoPositionMapper**](/windows/desktop/api/evr/nn-evr-imfvideopositionmapper)     | Mapeia uma posição em um fluxo de vídeo de entrada para a posição correspondente em um fluxo de vídeo de saída. |
+| [**IMFVideoPositionMapper**](/windows/desktop/api/evr/nn-evr-imfvideopositionmapper)     | Mapas uma posição em um fluxo de vídeo de entrada para a posição correspondente em um fluxo de vídeo de saída. |
 | [**IMFVideoPresenter**](/windows/desktop/api/evr/nn-evr-imfvideopresenter)               | Exposto pelo apresentador EVR.                                                                     |
 | [**IMFVideoProcessor**](/windows/desktop/api/evr9/nn-evr9-imfvideoprocessor)               | Controla o processamento de vídeo, incluindo ajuste, filtros de ruído e filtros detalhados.               |
 | [**IMFVideoRenderer**](/windows/desktop/api/evr/nn-evr-imfvideorenderer)                 | Define um mixer ou apresentador no EVR.                                                             |
@@ -70,10 +70,10 @@ O EVR dá suporte às seguintes interfaces. Algumas dessas interfaces são imple
 
 | Tópico                                                                    | Descrição                                                                           |
 |--------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [Usando o filtro EVR do DirectShow](using-the-directshow-evr-filter.md)   | Como usar o EVR em um aplicativo do DirectShow.                                       |
+| [usando o filtro de EVR de DirectShow](using-the-directshow-evr-filter.md)   | como usar o EVR em um aplicativo DirectShow.                                       |
 | [Usando o coletor de mídia do EVR](using-the-evr-media-sink.md)                 | Como usar o EVR em um aplicativo Media Foundation.                                 |
 | [Usando os controles de exibição de vídeo](using-the-video-display-controls.md) | Como controlar a maneira como o EVR exibe vídeo dentro da janela do aplicativo. |
-| [Usando os controles do mixer de vídeo](using-the-video-mixer-controls.md)     | Como controlar a maneira como o mixer EVR Opera.                               |
+| [usando os controles de Mixer de vídeo](using-the-video-mixer-controls.md)     | Como controlar a maneira como o mixer EVR Opera.                               |
 | [Negociação de tipo de mídia EVR](evr-media-type-negotiation.md)             | Descreve como o EVR determina quais formatos de vídeo ele pode aceitar como entrada.          |
 | [Mixers personalizados](custom-mixers.md)                                       | Como escrever um mixer personalizado para o EVR.                                              |
 | [Como escrever um apresentador EVR](how-to-write-an-evr-presenter.md)       | Como escrever um apresentador personalizado para o EVR.                                          |

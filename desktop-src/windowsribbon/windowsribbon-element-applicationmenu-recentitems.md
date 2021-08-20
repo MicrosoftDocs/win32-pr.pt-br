@@ -3,7 +3,7 @@ title: Propriedade ApplicationMenu. RecentItems
 description: Representa um contêiner para o controle itens recentes no menu do aplicativo.
 ms.assetid: 26ed38b6-17de-423f-a113-ccbaf3780a91
 keywords:
-- Faixa de ApplicationMenu de propriedades do Windows. RecentItems
+- propriedade ApplicationMenu. RecentItems Windows Ribbon
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 473ab6436eabd7fcbbbfb533a8ae4afc07098c81
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 415c7d05c29bf44a13d60062c1623cc18d9ba081550afaec8b98a7c6e23a1cb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117656491"
 ---
 # <a name="applicationmenurecentitems-property"></a>Propriedade ApplicationMenu. RecentItems
 
@@ -127,8 +127,8 @@ O exemplo a seguir mostra a declaração de controles **ApplicationMenu. RecentI
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

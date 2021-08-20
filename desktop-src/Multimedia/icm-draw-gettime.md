@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_DRAW_GETTIME (VFW. h)
-description: A \_ mensagem ICM Draw \_ getTime solicita um driver de renderização que controla o tempo dos quadros de desenho para retornar o valor atual de seu relógio interno. Você pode enviar essa mensagem explicitamente ou usando a macro ICDrawGetTime.
+description: a ICM \_ \_ mensagem gettime de desenho solicita um driver de renderização que controla o tempo de quadros de desenho para retornar o valor atual de seu relógio interno. Você pode enviar essa mensagem explicitamente ou usando a macro ICDrawGetTime.
 ms.assetid: 77f0a322-c0bc-4cfe-a3d0-7633cf8d682a
 keywords:
-- Multimídia do Windows de mensagem ICM_DRAW_GETTIME
+- mensagem de ICM_DRAW_GETTIME Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f756a76408d01cb72ee1762f14bb8a5eab19e475
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2ecf151b0c22b4de96421b4c11239ce147a21b6d60808b1d84506f3bad699954
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117987366"
 ---
-# <a name="icm_draw_gettime-message"></a>\_ \_ Mensagem getTime do ICM Draw
+# <a name="icm_draw_gettime-message"></a>ICM \_ DESENHAR \_ mensagem GETtime
 
-A mensagem **ICM \_ draw \_ getTime** solicita um driver de renderização que controla o tempo dos quadros de desenho para retornar o valor atual de seu relógio interno. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDrawGetTime**](/windows/desktop/api/Vfw/nf-vfw-icdrawgettime) .
+a **ICM \_ mensagem \_ gettime de desenho** solicita um driver de renderização que controla o tempo de quadros de desenho para retornar o valor atual de seu relógio interno. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDrawGetTime**](/windows/desktop/api/Vfw/nf-vfw-icdrawgettime) .
 
 
 ```C++

@@ -1,6 +1,6 @@
 ---
 title: UI_PKEY_RepresentativeString
-description: Identifica a propriedade \_ PKEY \_ RepresentativeString da interface do usuário.
+description: Identifica a \_ Propriedade PKEY Representation da interface do usuário \_ .
 ms.assetid: 7f30fef9-fba9-4e04-b791-028d5f863e53
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117850179"
 ---
-# <a name="ui_pkey_representativestring"></a>PKEY da \_ interface do \_ usuário RepresentativeString
+# <a name="ui_pkey_representativestring"></a>Representativos PKEY da interface do usuário \_ \_
 
-Identifica a propriedade \_ PKEY \_ RepresentativeString da interface do usuário.
+Identifica a \_ Propriedade PKEY Representation da interface do usuário \_ .
 
 ```
 propertyDescription
@@ -27,10 +27,10 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-A PKEY RepresentativeString da interface do usuário é usada por um aplicativo para consultar o comprimento do campo de edição \_ \_ para um controle [Spinner.](windowsribbon-controls-spinner.md)
+A interface do usuário \_ PKEY \_ Representation é usada por um aplicativo para consultar o comprimento do campo de edição para um controle [Spinner](windowsribbon-controls-spinner.md) .
 
 > [!Note]  
-> O valor de \_ PKEY RepresentativeString da interface do usuário é usado pela estrutura para calcular a largura do \_ controle [Spinner](windowsribbon-controls-spinner.md) e nunca é exibido.
+> O valor da interface do usuário \_ PKEY \_ representations é usado pela estrutura para calcular a largura do controle [Spinner](windowsribbon-controls-spinner.md) e nunca é exibido.
 
  
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 58cfb5343bd4de471dc73cb0fa5a57729dde5b7a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a3f3512b779a8cb7b28fe34fab9597fd9e605a23651a41dc4c06420728279115
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117706542"
 ---
 # <a name="esentversionstoreoutofmemoryandcleanuptimedoutexception-class"></a>Classe EsentVersionStoreOutOfMemoryAndCleanupTimedOutException
 
@@ -38,7 +38,7 @@ Classe base para JET_err. VersionStoreOutOfMemoryAndCleanupTimedOut exceções.
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
+  [System.Exception](/dotnet/api/system.exception)  
     [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
       [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
         [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  

@@ -1,48 +1,48 @@
 ---
-description: SymStore (symstore.exe) é uma ferramenta para a criação de armazenamentos de símbolo. Ele está incluído no pacote de ferramentas de depuração para Windows.
+description: SymStore (symstore.exe) é uma ferramenta para criar repositórios de símbolos. Ele está incluído nas Ferramentas de Depuração para Windows pacote.
 ms.assetid: fe8a96e9-e780-4e96-98ef-c5128515ee6c
 title: Usando SymStore
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3a87b5c527717d78adb9202fd1eddd54d1f44c02
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 314eb87ace50e3a9a4fa234cd96300433ee384fa6ab8525159784374b2e85e1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089209"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118004793"
 ---
 # <a name="using-symstore"></a>Usando SymStore
 
-SymStore (symstore.exe) é uma ferramenta para a criação de armazenamentos de símbolo. Ele está incluído no pacote de [ferramentas de depuração para Windows](https://www.microsoft.com/?ref=go) .
+SymStore (symstore.exe) é uma ferramenta para criar repositórios de símbolos. Ele está incluído nas Ferramentas [de Depuração para Windows](https://www.microsoft.com/?ref=go) pacote.
 
-O SymStore armazena símbolos em um formato que permite ao depurador pesquisar os símbolos com base no carimbo de data/hora e no tamanho da imagem (para um arquivo. dbg ou executável), ou assinatura e idade (para um arquivo. pdb). A vantagem do armazenamento de símbolos sobre o formato de armazenamento de símbolo tradicional é que todos os símbolos podem ser armazenados ou referenciados no mesmo servidor e recuperados pelo depurador sem qualquer conhecimento prévio de qual produto contém o símbolo correspondente.
+O SymStore armazena símbolos em um formato que permite que o depurador procure os símbolos com base no carimbo de data/hora e no tamanho da imagem (para um arquivo .dbg ou executável) ou assinatura e idade (para um arquivo .pdb). A vantagem do armazenamento de símbolos sobre o formato de armazenamento de símbolos tradicional é que todos os símbolos podem ser armazenados ou referenciados no mesmo servidor e recuperados pelo depurador sem nenhum conhecimento prévio de qual produto contém o símbolo correspondente.
 
-Observe que várias versões de arquivos de símbolo. PDB (por exemplo, versões públicas e privadas) não podem ser armazenadas no mesmo servidor, pois cada uma delas contém a mesma assinatura e idade.
+Observe que várias versões de arquivos de símbolo .pdb (por exemplo, versões públicas e privadas) não podem ser armazenadas no mesmo servidor, pois cada uma delas contém a mesma assinatura e idade.
 
-## <a name="symstore-transactions"></a>Transações de SymStore
+## <a name="symstore-transactions"></a>Transações SymStore
 
-Cada chamada para SymStore é registrada como uma transação. Há dois tipos de transações: Adicionar e excluir.
+Cada chamada para SymStore é registrada como uma transação. Há dois tipos de transações: adicionar e excluir.
 
-Quando o armazenamento de símbolo é criado, um diretório, chamado "000admin", é criado sob a raiz do servidor. O diretório 000admin contém um arquivo para cada transação, bem como os arquivos de log Server.txt e History.txt. O arquivo de Server.txt contém uma lista de todas as transações que estão atualmente no servidor. O arquivo de History.txt contém um histórico cronológico de todas as transações.
+Quando o armazenamento de símbolos é criado, um diretório, chamado "000admin", é criado na raiz do servidor. O diretório 000admin contém um arquivo para cada transação, bem como os arquivos de log Server.txt e History.txt. O Server.txt arquivo contém uma lista de todas as transações que estão atualmente no servidor. O History.txt arquivo contém um histórico cronológica de todas as transações.
 
-Cada vez que o SymStore armazena ou remove arquivos de símbolo, um novo número de transação é criado. Em seguida, um arquivo, cujo nome é esse número de transação, é criado em 000admin. Esse arquivo contém uma lista de todos os arquivos ou ponteiros que foram adicionados ao repositório de símbolos durante essa transação. Se uma transação for excluída, o SymStore lerá seu arquivo de transação para determinar quais arquivos e ponteiros devem ser excluídos.
+Sempre que SymStore armazena ou remove arquivos de símbolo, um novo número de transação é criado. Em seguida, um arquivo, cujo nome é esse número de transação, é criado em 000admin. Esse arquivo contém uma lista de todos os arquivos ou ponteiros que foram adicionados ao armazenamento de símbolos durante essa transação. Se uma transação for excluída, o SymStore lerá seu arquivo de transação para determinar quais arquivos e ponteiros ele deve excluir.
 
-As opções **Adicionar** e **del** especificam se uma transação Adicionar ou excluir deve ser executada. Incluir a opção **/p** com uma operação de adição especifica que um ponteiro deve ser adicionado; omitir a opção **/p** especifica que o arquivo de símbolo real deve ser adicionado.
+As **opções add** e **del** especificam se uma transação adicionar ou excluir deve ser executada. Incluir a **opção /p** com uma operação add especifica que um ponteiro deve ser adicionado; Omitir **a opção /p** especifica que o arquivo de símbolo real deve ser adicionado.
 
-Também é possível criar o armazenamento de símbolo em dois estágios separados. No primeiro estágio, você usa SymStore com a opção **/x** para criar um arquivo de índice. No segundo estágio, você usa SymStore com a opção **/y** para criar o armazenamento real de arquivos ou ponteiros a partir das informações no arquivo de índice.
+Também é possível criar o armazenamento de símbolos em dois estágios separados. No primeiro estágio, você usa SymStore com a **opção /x** para criar um arquivo de índice. No segundo estágio, você usa SymStore com a opção **/y** para criar o repositório real de arquivos ou ponteiros com as informações no arquivo de índice.
 
-Isso pode ser uma técnica útil por vários motivos. Por exemplo, isso permite que o armazenamento de símbolos seja recriado facilmente se o armazenamento estiver de alguma forma perdida, desde que o arquivo de índice ainda exista. Ou talvez o computador que contém os arquivos de símbolo tenha uma conexão de rede lenta com o computador no qual o armazenamento de símbolo será criado. Nesse caso, você pode criar o arquivo de índice no mesmo computador que os arquivos de símbolo, transferir o arquivo de índice para o segundo computador e, em seguida, criar o armazenamento no segundo computador.
+Essa pode ser uma técnica útil por vários motivos. Por exemplo, isso permite que o armazenamento de símbolos seja recriado facilmente se o armazenamento for de alguma forma perdido, desde que o arquivo de índice ainda exista. Ou talvez o computador que contém os arquivos de símbolo tenha uma conexão de rede lenta com o computador no qual o armazenamento de símbolos será criado. Nesse caso, você pode criar o arquivo de índice no mesmo computador que os arquivos de símbolo, transferir o arquivo de índice para o segundo computador e, em seguida, criar o armazenamento no segundo computador.
 
-Para obter uma lista completa de todos os parâmetros de SymStore, consulte [Opções de Command-Line de SymStore](symstore-command-line-options.md).
+Para ver uma lista completa de todos os parâmetros SymStore, consulte [SymStore Command-Line Opções](symstore-command-line-options.md).
 
 > [!Note]  
-> SymStore não oferece suporte a transações simultâneas de vários usuários. É recomendável que um usuário seja designado como "administrador" do repositório de símbolos e seja responsável por todas as transações de **adição** e de **del** .
+> O SymStore não dá suporte a transações simultâneas de vários usuários. É recomendável que um usuário seja designado como "administrador" do armazenamento de símbolos e seja responsável por todas as **transações add** e **del.**
 
  
 
 ## <a name="transaction-examples"></a>Exemplos de transação
 
-Aqui estão dois exemplos de SymStore que adicionam ponteiros de símbolo para a compilação 3790 do Windows Server 2003 a \\ \\ SampleDir \\ symsrv:
+Aqui estão dois exemplos de SymStore adicionando ponteiros de símbolo para o build 3790 do Windows Server 2003 para \\ \\ sampledir \\ symsrv:
 
 ``` syntax
 symstore add /r /p /f \\BuildServer\BuildShare\3790free\symbols\*.*
@@ -53,14 +53,14 @@ symstore add /r /p /f \\BuildServer\BuildShare\3790Chk\symbols\*.*
    /c "Sample add"
 ```
 
-No exemplo a seguir, SymStore adiciona os arquivos de símbolo reais para um projeto de aplicativo em \\ \\ compartimentos do largeapp do \\ AppServer \\ a \\ \\ TestDir \\ symsrv:
+No exemplo a seguir, SymStore adiciona os arquivos de símbolo reais para um projeto de aplicativo em compartimentos de servidor de aplicativos de aplicativos grandes \\ \\ \\ \\ para \\ \\ testdir \\ symsrv:
 
 ``` syntax
 symstore add /r /f \\largeapp\appserver\bins\*.* /s \\testdir\symsrv 
    /t "Large Application" /v "Build 432" /c "Sample add"
 ```
 
-Aqui está um exemplo de como um arquivo de índice é usado. Primeiro, o SymStore cria um arquivo de índice baseado na coleção de arquivos de símbolo em \\ \\ compartimentos do largeapp do \\ AppServer \\ \\ . Nesse caso, o arquivo de índice é colocado em um terceiro computador, \\ \\ hubserver \\ hubshare. Você usa a opção **/g** para especificar que o prefixo do arquivo " \\ \\ largeapp \\ AppServer" pode ser alterado no futuro:
+Aqui está um exemplo de como um arquivo de índice é usado. Primeiro, SymStore cria um arquivo de índice com base na coleção de arquivos de símbolo em \\ \\ \\ compartimentos de servidor de \\ aplicativos de aplicativos de grande \\ porte. Nesse caso, o arquivo de índice é colocado em um terceiro computador, \\ \\ hubserver \\ hubshare. Você usa a **opção /g** para especificar que o prefixo de arquivo " \\ \\ largeapp \\ appserver" pode mudar no futuro:
 
 ``` syntax
 symstore add /r /p /g \\largeapp\appserver /f 
@@ -68,7 +68,7 @@ symstore add /r /p /g \\largeapp\appserver /f
    /x \\hubserver\hubshare\myindex.txt
 ```
 
-Agora suponha que você mova todos os arquivos de símbolo do computador \\ \\ largeapp \\ AppServer e coloque-os em \\ \\ myarchive \\ AppServer. Em seguida, você pode criar o próprio armazenamento de símbolo no arquivo de índice \\ \\ hubserver \\ hubshare \\myindex.txt da seguinte maneira:
+Agora suponha que você mova todos os arquivos de símbolo do servidor de aplicativos do computador grandeaplicativo de aplicativos e \\ \\ \\ coloque-os no servidor de \\ \\ aplicativo \\ myarchive. Em seguida, você pode criar o próprio armazenamento de símbolos do hub de arquivo de \\ \\ índiceservidor \\ hubshare \\myindex.txt da seguinte forma:
 
 ``` syntax
 symstore add /y \\hubserver\hubshare\myindex.txt 
@@ -76,7 +76,7 @@ symstore add /y \\hubserver\hubshare\myindex.txt
    /t "Large Application" /v "Build 432" /c "Sample Add from Index"
 ```
 
-Por fim, aqui está um exemplo de SymStore excluindo um arquivo adicionado por uma transação anterior. Consulte a seção a seguir para obter uma explicação de como determinar a ID da transação (nesse caso, 0000000096).
+Por fim, aqui está um exemplo de SymStore excluindo um arquivo adicionado por uma transação anterior. Consulte a seção a seguir para ver uma explicação de como determinar a ID da transação (nesse caso, 0000000096).
 
 ``` syntax
 symstore del /i 0000000096 /s \\sampledir\symsrv
@@ -86,34 +86,34 @@ symstore del /i 0000000096 /s \\sampledir\symsrv
 
 SymStore pode ser usado com arquivos compactados de duas maneiras diferentes.
 
-1.  Use SymStore com a opção **/p** para armazenar ponteiros para os arquivos de símbolo. Após a conclusão do SymStore, compacte os arquivos aos quais os ponteiros se referem.
-2.  Use SymStore com a opção **/x** para criar um arquivo de índice. Após a conclusão do SymStore, compacte os arquivos listados no arquivo de índice. Em seguida, use SymStore com a opção **/y** (e, se desejar, a opção **/p** ) para armazenar os arquivos ou ponteiros para os arquivos no repositório de símbolos. (O SymStore não precisará descompactar os arquivos para executar esta operação.)
+1.  Use SymStore com a **opção /p** para armazenar ponteiros para os arquivos de símbolo. Depois que SymStore terminar, compactar os arquivos aos que os ponteiros se referem.
+2.  Use SymStore com a **opção /x** para criar um arquivo de índice. Depois que SymStore terminar, compactar os arquivos listados no arquivo de índice. Em seguida, use SymStore com a opção **/y** (e, se desejar, a opção **/p)** para armazenar os arquivos ou ponteiros para os arquivos no repositório de símbolos. (O SymStore não precisará descompactar os arquivos para executar essa operação.)
 
-O servidor de símbolos será responsável por descompactar os arquivos quando forem necessários.
+O servidor de símbolos será responsável por descompactar os arquivos quando eles são necessários.
 
-Se você estiver usando o SymSrv como seu servidor de símbolos, qualquer compactação deverá ser feita usando a ferramenta compress.exe que é distribuída com o SDK (Software Development Kit) do Microsoft Windows. Arquivos compactados devem ter um sublinhado como o último caractere em suas extensões de arquivo (por exemplo, Module1. PD \_ ou Module2. db \_ ). Para obter detalhes, consulte [usando symsrv](using-symsrv.md).
+Se você estiver usando SymSrv como seu servidor de símbolos, qualquer compactação deverá ser feita usando a ferramenta compress.exe que é distribuída com o SDK (Software Development Kit) do Microsoft Windows. Arquivos compactados devem ter um sublinhado como o último caractere em suas extensões de arquivo (por exemplo, module1.pd \_ ou module2.db \_ ). Para obter detalhes, [consulte Usando SymSrv](using-symsrv.md).
 
-## <a name="the-servertxt-and-historytxt-files"></a>Os arquivos de server.txt e history.txt
+## <a name="the-servertxt-and-historytxt-files"></a>Os server.txt e history.txt arquivos
 
-Quando uma transação é adicionada, vários itens de informações são adicionados a server.txt e history.txt para a funcionalidade de pesquisa futura. Veja a seguir um exemplo de uma linha em server.txt e history.txt para uma transação de adição:
+Quando uma transação é adicionada, vários itens de informações são adicionados server.txt e history.txt capacidade de busca futura. Veja a seguir um exemplo de uma linha em server.txt e history.txt para uma transação de adoção:
 
 ``` syntax
 0000000096,add,ptr,10/09/99,00:08:32,Windows XP,x86 fre 1.156c-RTM-2,Added from \\mybuilds\symbols,
 ```
 
-Esta é uma linha separada por vírgulas. Os campos são definidos da seguinte maneira.
+Essa é uma linha separada por vírgulas. Os campos são definidos da seguinte forma.
 
 
 
 | Campo      | Descrição                                                                         |
 |------------|-------------------------------------------------------------------------------------|
-| 0000000096 | Número da ID da transação, conforme criado por SymStore.                                      |
-| add        | Tipo de transação. Esse campo pode ser **Add** ou **del**.                   |
-| ptr        | Se os arquivos ou ponteiros foram adicionados. Esse campo pode ser um **arquivo** ou um **PTR**. |
+| 0000000096 | Número da ID da transação, conforme criado pelo SymStore.                                      |
+| adicionar        | Tipo de transação. Esse campo pode ser **add** ou **del.**                   |
+| ptr        | Se arquivos ou ponteiros foram adicionados. Esse campo pode ser **file ou** **ptr**. |
 | 10/09/99   | Data em que a transação ocorreu.                                                     |
 | 00:08:32   | Hora em que a transação foi iniciada.                                                      |
 | Windows XP | Produto.                                                                            |
-| fre x86    | Versão (opcional).                                                                 |
+| x86 fre    | Versão (opcional).                                                                 |
 | Adicionado de | Comentário (opcional)                                                                  |
 | Não usado     | (Reservado para uso posterior.)                                                           |
 
@@ -132,31 +132,31 @@ certcrpt.dbg\352bf04911000,\\mybuilds\symbols\sp4\dll\certcrpt.dbg
 certenc.dbg\352bf2f7f000,\\mybuilds\symbols\sp4\dll\certenc.dbg
 ```
 
-Se você usar uma transação **del** para desfazer as transações de **adição** originais, essas linhas serão removidas do server.txt e a linha a seguir será adicionada ao history.txt:
+Se você usar uma **transação del** para desfazer as transações de a adicionar **originais,** essas linhas serão removidas do server.txt e a seguinte linha será adicionada history.txt:
 
 ``` syntax
 0000000105,del,0000000096
 ```
 
-Os campos para a transação de exclusão são definidos da seguinte maneira.
+Os campos para a transação de exclusão são definidos da seguinte forma.
 
 
 
 | Campo      | Descrição                                                       |
 |------------|-------------------------------------------------------------------|
-| 0000000105 | Número da ID da transação, conforme criado por SymStore.                    |
-| del        | Tipo de transação. Esse campo pode ser **Add** ou **del**. |
-| 0000000096 | Transação excluída.                                     |
+| 0000000105 | Número da ID da transação, conforme criado pelo SymStore.                    |
+| del        | Tipo de transação. Esse campo pode ser **add** ou **del.** |
+| 0000000096 | Transação que foi excluída.                                     |
 
 
 
  
 
-## <a name="symbol-storage-format"></a>Formato de armazenamento de símbolo
+## <a name="symbol-storage-format"></a>Formato de Armazenamento símbolo
 
-O SymStore usa o próprio sistema de arquivos como um banco de dados. Ele cria uma árvore grande de diretórios, com nomes de diretório baseados em coisas como carimbos de data/hora de arquivo de símbolo, assinaturas, idade e outros dados.
+O SymStore usa o próprio sistema de arquivos como um banco de dados. Ele cria uma grande árvore de diretórios, com nomes de diretório com base em coisas como carimbos de data/hora do arquivo de símbolo, assinaturas, idade e outros dados.
 
-Por exemplo, depois que vários arquivos ACPI. dbg diferentes tiverem sido adicionados ao servidor, os diretórios poderão ter esta aparência:
+Por exemplo, depois que vários arquivos acpi.dbg diferentes foram adicionados ao servidor, os diretórios podem ter esta aparência:
 
 ``` syntax
 Directory of \\mybuilds\symsrv\acpi.dbg
@@ -174,7 +174,7 @@ Directory of \\mybuilds\symsrv\acpi.dbg
 10/06/1999  05:46p      <DIR>          37fa7f01620a0
 ```
 
-Neste exemplo, o caminho de pesquisa para o arquivo de símbolo ACPI. dbg pode ser semelhante a este: \\ \\ mycompilations \\ symsrv \\ ACPI. dbg \\ 37cdb03962040.
+Neste exemplo, o caminho de busca para o arquivo de símbolo acpi.dbg pode ser parecido com este: \\ \\ mybuilds \\ symsrv \\ acpi.dbg \\ 37cdb03962040.
 
 Três arquivos podem existir dentro do diretório de pesquisa:
 

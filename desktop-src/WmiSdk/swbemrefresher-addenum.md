@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: cffa406a3a45869038f5e6fed12b23b6b84fde27
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 82b6ba19bf309db53a0c175a0e5e46498e3fb47c8a2bc6c443662b9dff16067d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103663789"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117921793"
 ---
 # <a name="swbemrefresheraddenum-method"></a>Método SWbemRefresher. AddEnum
 
@@ -75,7 +75,7 @@ Normalmente, isso é indefinido. Caso contrário, esse é um objeto [**SWbemName
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a chamada for bem-sucedida, um objeto [**SWbemRefreshableItem**](swbemrefreshableitem.md) que contém um enumerador para todas as instâncias da classe especificada será retornado.
 
@@ -87,7 +87,7 @@ Se a chamada for bem-sucedida, um objeto [**SWbemRefreshableItem**](swbemrefresh
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMREFRESHER CLSID<br/>                                                        |

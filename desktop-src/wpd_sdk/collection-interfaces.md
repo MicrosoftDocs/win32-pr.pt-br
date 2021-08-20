@@ -13,16 +13,16 @@ ms.locfileid: "117843390"
 ---
 # <a name="collection-interfaces"></a>Interfaces de coleção
 
-As interfaces a seguir são usadas para manter grupos de valores de vários tipos, incluindo valores de **PROPERTYKEY** , valores de **GUID** ou outras interfaces de coleção. Essas interfaces são usadas por aplicativos cliente e drivers para armazenar dados para parâmetros de método.
+As interfaces a seguir são usadas para manter grupos de valores de vários tipos, incluindo valores **PROPERTYKEY,** **valores GUID** ou outras interfaces de coleção. Essas interfaces são usadas por aplicativos cliente e drivers para manter dados para parâmetros de método.
 
 
 
 | Interface                                                                            | Descrição                                                            |
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md)                 | Mantém uma coleção de valores **PROPERTYKEY** .                          |
-| [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Mantém uma coleção de valores **PROPVARIANT** do mesmo VarType.      |
-| [**IPortableDeviceValues**](iportabledevicevalues.md)                               | Mantém uma coleção de pares de **PROPERTYKEY** / **PROPVARIANT** .           |
-| [**IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md)           | Mantém uma coleção de interfaces **IPortableDeviceValues** com base em zero. |
+| [**IPortableDeviceKeyCollection**](iportabledevicekeycollection.md)                 | Contém uma coleção de **valores PROPERTYKEY.**                          |
+| [**IPortableDevicePropVariantCollection**](iportabledevicepropvariantcollection.md) | Contém uma coleção de **valores PROPVARIANT** do mesmo VARTYPE.      |
+| [**IPortableDeviceValues**](iportabledevicevalues.md)                               | Contém uma coleção de **pares PROPERTYKEY** / **PROPVARIANT.**           |
+| [**IPortableDeviceValuesCollection**](iportabledevicevaluescollection.md)           | Contém uma coleção de interfaces **IPortableDeviceValues** baseadas em zero. |
 
 
 

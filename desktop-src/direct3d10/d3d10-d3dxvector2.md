@@ -1,7 +1,7 @@
 ---
-description: Estrutura D3DXVECTOR2 (D3DX10Math. h) – descreve um vetor de dois componentes, incluindo sobrecargas de operador e conversões de tipo.
+description: Estrutura D3DXVECTOR2 (D3DX10Math.h) – descreve um vetor de dois componentes, incluindo sobrecargas de operador e casts de tipo.
 ms.assetid: 5b7b4847-b994-48c6-ae3c-e48ee1716ddd
-title: Estrutura D3DXVECTOR2 (D3DX10Math. h)
+title: Estrutura D3DXVECTOR2 (D3DX10Math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Math.h
-ms.openlocfilehash: 972238650fa23e8b7aa435cd91b36f2caf8a4d9b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 608c23d4b6c6cb0d9865a5eacf9674064085791e363914bd8acb1339235e48b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108102845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914572"
 ---
-# <a name="d3dxvector2-structure-d3dx10mathh"></a>Estrutura D3DXVECTOR2 (D3DX10Math. h)
+# <a name="d3dxvector2-structure-d3dx10mathh"></a>Estrutura D3DXVECTOR2 (D3DX10Math.h)
 
-Descreve um vetor de dois componentes, incluindo sobrecargas de operador e conversões de tipo.
+Descreve um vetor de dois componentes, incluindo sobrecargas de operador e casts de tipo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,7 +43,7 @@ typedef struct D3DXVECTOR2 {
 **x**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -54,7 +54,7 @@ O componente x.
 **y**
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
@@ -64,7 +64,7 @@ O componente y.
 
 ## <a name="remarks"></a>Comentários
 
-O **D3DXVECTOR2** tem as seguintes extensões C++.
+**D3DXVECTOR2** tem as seguintes extensões C++.
 
 ### <a name="d3dxvector2-extensions"></a>Extensões D3DXVECTOR2
 
@@ -120,11 +120,11 @@ public:
 
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3DX10Math.h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

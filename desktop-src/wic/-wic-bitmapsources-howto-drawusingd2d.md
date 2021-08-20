@@ -4,20 +4,20 @@ ms.assetid: 11d38c9a-775d-41f7-a193-37b702b29a96
 title: Como desenhar um BitmapSource usando Direct2D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f6dfdddb7cd6f7ab7341eb3c13a9fe40b797f09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d6636bb1d0b0294e7d496ffd8839c645ad046bb256001b2abd1744714eb4c48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105816032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117668696"
 ---
 # <a name="how-to-draw-a-bitmapsource-using-direct2d"></a>Como desenhar um BitmapSource usando Direct2D
 
-Este tópico demonstra o processo para desenhar um [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) usando Direct2D.
+Este tópico demonstra o processo para desenhar [**um IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource) usando Direct2D.
 
-Para desenhar uma fonte de bitmap usando Direct2D
+Para desenhar uma origem de bitmap usando Direct2D
 
-1.  Decodifique uma imagem de origem e obtenha uma fonte de bitmap. Neste exemplo, um [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) é usado para decodificar a imagem e o primeiro quadro de imagem é recuperado.
+1.  Decodificar uma imagem de origem e obter uma origem de bitmap. Neste exemplo, um [**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder) é usado para decodificar a imagem e o primeiro quadro de imagem é recuperado.
 
     ```C++
        // Create a decoder
@@ -42,11 +42,11 @@ Para desenhar uma fonte de bitmap usando Direct2D
 
     
 
-    Para obter tipos adicionais de fontes de bitmap a serem desenhadas, consulte a [visão geral de fontes de bitmap](-wic-bitmapsources.md).
+    Para obter tipos adicionais de fontes de bitmap a desenhar, consulte Visão [geral das fontes de bitmap.](-wic-bitmapsources.md)
 
 2.  Converta a origem do bitmap em um formato de pixel 32bppPBGRA.
 
-    Antes que Direct2D possa usar uma imagem, ela deve ser convertida no formato de pixel 32bppPBGRA. Para converter o formato de imagem, use o método [**Createformaconverter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createformatconverter) para criar um objeto [**IWICFormatConverter**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) . Depois de criado, use o método [**Initialize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicformatconverter-initialize) para executar a conversão.
+    Antes Direct2D pode usar uma imagem, ela deve ser convertida no formato de pixel 32bppPBGRA. Para converter o formato de imagem, use o [**método CreateFormatConverter**](/windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createformatconverter) para criar [**um objeto IWICFormatConverter.**](/windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter) Depois de criado, use o [**método Initialize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicformatconverter-initialize) para executar a conversão.
 
     ```C++
        // Format convert the frame to 32bppPBGRA
@@ -71,7 +71,7 @@ Para desenhar uma fonte de bitmap usando Direct2D
 
     
 
-3.  Crie um objeto [ID2D1RenderTarget](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) para renderização em um identificador de janela.
+3.  Crie um [objeto ID2D1RenderTarget](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget) para renderização em um identificador de janela.
 
     ```C++
        // Create a D2D render target properties
@@ -94,9 +94,9 @@ Para desenhar uma fonte de bitmap usando Direct2D
 
     
 
-    Para obter mais informações sobre destinos de renderização, consulte a [visão geral dos destinos de renderização](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)do Direct2D.
+    Para obter mais informações sobre destinos de renderização, consulte a Visão geral Direct2D [destinos de renderização.](/windows/win32/api/d2d1/nn-d2d1-id2d1rendertarget)
 
-4.  Crie um objeto [ID2D1Bitmap](../direct2d/render-targets-overview.md) usando o método [ID2D1RenderTarget:: CreateBitmapFromWicBitmap](../direct2d/id2d1rendertarget-createbitmapfromwicbitmap.md) .
+4.  Crie um [objeto ID2D1Bitmap](../direct2d/render-targets-overview.md) usando o [método ID2D1RenderTarget::CreateBitmapFromWicBitmap.](../direct2d/id2d1rendertarget-createbitmapfromwicbitmap.md)
 
     ```C++
         // D2DBitmap may have been released due to device loss. 
@@ -109,7 +109,7 @@ Para desenhar uma fonte de bitmap usando Direct2D
 
     
 
-5.  Desenhe o [ID2D1Bitmap](../direct2d/render-targets-overview.md) usando D2D [ID2D1RenderTarget::D método rawbitmap](../direct2d/id2d1rendertarget-drawbitmap.md) .
+5.  Desenhe [o ID2D1Bitmap](../direct2d/render-targets-overview.md) usando o método D2D [ID2D1RenderTarget::D rawBitmap.](../direct2d/id2d1rendertarget-drawbitmap.md)
 
     ```C++
         // Draws an image and scales it to the current window size
@@ -121,7 +121,7 @@ Para desenhar uma fonte de bitmap usando Direct2D
 
     
 
-O código foi omitido neste exemplo. Para obter o código completo, consulte o [Visualizador de imagem do WIC usando o exemplo Direct2D](-wic-sample-d2d-viewer.md).
+O código foi omitido neste exemplo. Para ver o código completo, consulte [Visualizador de Imagens do WIC usando Direct2D exemplo.](-wic-sample-d2d-viewer.md)
 
 ## <a name="see-also"></a>Consulte Também
 

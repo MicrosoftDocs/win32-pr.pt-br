@@ -3,9 +3,9 @@ title: Para configurar o indexador
 description: Para configurar o indexador
 ms.assetid: 0e28e8dd-1586-45e6-8a08-5245d465d068
 keywords:
-- Windows SDK do formato de mídia, configurando indexadores
+- Windows SDK de Formato de Mídia, configurando indexadores
 - ASF (Advanced Systems Format), configurando indexadores
-- ASF (formato de sistemas avançados), configurando indexadores
+- ASF (Formato de Sistemas Avançados), configurando indexadores
 - índices, configurando indexadores
 ms.topic: article
 ms.date: 05/31/2018
@@ -20,9 +20,9 @@ ms.locfileid: "117845621"
 
 Você pode configurar o indexador antes de usá-lo para indexar um arquivo ASF. Cada fluxo no arquivo pode ser configurado separadamente ou você pode definir a mesma configuração para todos os fluxos.
 
-Se você estiver configurando vários fluxos para indexação em um arquivo, deverá configurá-los todos e, em seguida, iniciar a indexação. Se você configurar e indexar um fluxo e, em seguida, configurar outro fluxo no mesmo arquivo, iniciar o indexador novamente excluirá o primeiro índice. Isso é para estar em conformidade com o formato de arquivo ASF.
+Se você estiver configurando vários motores para indexação em um arquivo, deverá configurá-los todos e, em seguida, começar a indexação. Se você configurar e indexar um fluxo e, em seguida, configurar outro fluxo no mesmo arquivo, iniciar o indexador novamente excluirá o primeiro índice. Isso é para estar em conformidade com o formato de arquivo ASF.
 
-O código a seguir mostra como configurar o indexador. O código pressupõe que o arquivo a ser indexado tem dois fluxos: o primeiro é um fluxo de áudio que não precisa ser indexado e o segundo é um fluxo de vídeo. Esse código mostra apenas como configurar o indexador. Para indexar um arquivo, você deve seguir as etapas apresentadas em [para indexar um arquivo ASF](to-index-an-asf-file.md).
+O código a seguir mostra como configurar o indexador. O código pressupo que o arquivo a ser indexado tem dois fluxos: o primeiro é um fluxo de áudio que não precisa ser indexado e o segundo é um fluxo de vídeo. Esse código mostra apenas como configurar o indexador. Para indexar um arquivo, você deve seguir as etapas apresentadas em [Para indexar um arquivo ASF](to-index-an-asf-file.md).
 
 
 ```C++
@@ -65,7 +65,7 @@ pMyIndexer = NULL;
 
 
 > [!Note]  
-> O tipo de índice padrão é WMT \_ ele \_ mais próximo do ponto de \_ limpeza \_ . Embora você possa definir o tipo de índice para outros valores, isso diminuirá o desempenho de busca.
+> O tipo de índice padrão é WMT \_ IT \_ NEAREST \_ CLEAN \_ POINT. Embora você possa definir o tipo de índice para outros valores, isso prejudicará o desempenho da busca.
 
  
 
@@ -73,7 +73,7 @@ pMyIndexer = NULL;
 
 <dl> <dt>
 
-[**IWMIndexer2:: configurar**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer2-configure)
+[**IWMIndexer2::Configure**](/previous-versions/windows/desktop/api/Wmsdkidl/nf-wmsdkidl-iwmindexer2-configure)
 </dt> <dt>
 
 [**Para indexar um arquivo ASF**](to-index-an-asf-file.md)

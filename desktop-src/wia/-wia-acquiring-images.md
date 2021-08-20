@@ -1,25 +1,25 @@
 ---
-description: Depois que uma imagem tiver sido selecionada, um aplicativo usará a interface IWiaDataTransfer (para aplicativos executados no Windows XP ou anterior) ou a interface IWiaTransfer (para aplicativos executados no Windows Vista ou posterior) para transferir dados de imagem de dispositivos de geração de imagens. Consulte transferência de dados de imagem no WIA 1,0 ou transferência de dados de imagem no WIA 2,0 para obter detalhes.
+description: depois que uma imagem é selecionada, um aplicativo usa a interface IWiaDataTransfer (para aplicativos executados no Windows XP ou anterior) ou a interface IWiaTransfer (para aplicativos executados no Windows Vista ou posterior) para transferir dados de imagem de dispositivos de geração de imagens. Consulte transferência de dados de imagem no WIA 1,0 ou transferência de dados de imagem no WIA 2,0 para obter detalhes.
 ms.assetid: cf76e526-d63b-4ee5-ba3c-871f2051a82c
 title: Adquirindo imagens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d062cb370327311ad0c7d4f883344c05bb776f6a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c324e1b43ef9efc04a959035b9d3e510f6596b649d4a88ab88509683f674cd4e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813359"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117670401"
 ---
 # <a name="acquiring-images"></a>Adquirindo imagens
 
-Depois que uma imagem tiver sido selecionada, um aplicativo usará a interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) (para aplicativos executados no Windows XP ou anterior) ou a interface [**IWiaTransfer**](-wia-iwiatransfer.md) (para aplicativos executados no Windows Vista ou posterior) para transferir dados de imagem de dispositivos de geração de imagens. Consulte [transferência de dados de imagem no wia 1,0](-wia-transferring-image-data.md) ou [transferência de dados de imagem no WIA 2,0](-wia-transferring-image-data-in-wia2.md) para obter detalhes.
+depois que uma imagem é selecionada, um aplicativo usa a interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) (para aplicativos executados no Windows XP ou anterior) ou a interface [**IWiaTransfer**](-wia-iwiatransfer.md) (para aplicativos executados no Windows Vista ou posterior) para transferir dados de imagem de dispositivos de geração de imagens. Consulte [transferência de dados de imagem no wia 1,0](-wia-transferring-image-data.md) ou [transferência de dados de imagem no WIA 2,0](-wia-transferring-image-data-in-wia2.md) para obter detalhes.
 
-Depois que um dispositivo tiver sido selecionado, um aplicativo usará o método [**IWiaItem::D evicedlg**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-devicedlg) da interface [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) ou [**IWiaItem2**](-wia-iwiaitem2.md) do dispositivo (o item raiz) para selecionar uma imagem de um dispositivo de aquisição de imagem do Windows (WIA) especificado. O método [**IWiaDevMgr:: GetImageDlg**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-getimagedlg) exibe uma caixa de diálogo que permite que um usuário selecione uma imagem de um dispositivo especificado e transfere a imagem para um nome de arquivo selecionado pelo usuário. Ele também permite que o usuário especifique um dispositivo, se necessário. Para obter mais informações, consulte [selecionando um dispositivo](-wia-selecting-a-device.md)
+depois que um dispositivo tiver sido selecionado, um aplicativo usará o método [**IWiaItem::D evicedlg**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiaitem-devicedlg) da interface [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) ou [**IWiaItem2**](-wia-iwiaitem2.md) do dispositivo (o item raiz) para selecionar uma imagem de um dispositivo WIA (Windows image Acquisition) especificado. O método [**IWiaDevMgr:: GetImageDlg**](/windows/desktop/api/wia_xp/nf-wia_xp-iwiadevmgr-getimagedlg) exibe uma caixa de diálogo que permite que um usuário selecione uma imagem de um dispositivo especificado e transfere a imagem para um nome de arquivo selecionado pelo usuário. Ele também permite que o usuário especifique um dispositivo, se necessário. Para obter mais informações, consulte [selecionando um dispositivo](-wia-selecting-a-device.md)
 
 Observe que não é necessário que um usuário selecione uma imagem usando o método acima. Um aplicativo pode obter um ponteiro para um item de imagem diretamente da árvore de itens de um dispositivo. Para obter instruções, consulte [navegando em uma árvore de itens](-wia-navigating-an-item-tree.md).
 
-Depois que o item WIA que representa a imagem desejada tiver sido selecionado, um aplicativo em execução no Windows XP ou anterior consultará a interface [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) desse item para um ponteiro para sua interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) . Um aplicativo em execução no Windows Vista ou posterior consulta a interface [**IWiaItem2**](-wia-iwiaitem2.md) para um ponteiro para sua interface [**IWiaTransfer**](-wia-iwiatransfer.md) .
+depois que o item WIA que representa a imagem desejada tiver sido selecionado, um aplicativo em execução no Windows XP ou anterior consultará a interface [**IWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiaitem) desse item para um ponteiro para sua interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) . um aplicativo em execução no Windows Vista ou posterior consulta a interface [**IWiaItem2**](-wia-iwiaitem2.md) para um ponteiro para sua interface [**IWiaTransfer**](-wia-iwiatransfer.md) .
 
 O aplicativo pode então usar os métodos da interface [**IWiaDataTransfer**](/windows/desktop/api/wia_xp/nn-wia_xp-iwiadatatransfer) (ou [**IWiaTransfer**](-wia-iwiatransfer.md)) para transferir os dados da imagem para o aplicativo.
 

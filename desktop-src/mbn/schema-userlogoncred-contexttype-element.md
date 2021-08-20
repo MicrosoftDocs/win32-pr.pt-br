@@ -11,12 +11,12 @@ api_name:
 - UserLogonCred
 api_type:
 - Schema
-ms.openlocfilehash: d3dc0c22d6242ee894545bd61f839574afd06141
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7c069a7e1dbe42c4e896ab07b7b18a1c03a06f31fa4b680f668c30721ce7bb55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118065853"
 ---
 # <a name="userlogoncred-contexttype-element"></a>Elemento UserLogonCred (contextType)
 
@@ -61,7 +61,7 @@ O elemento **UserLogonCred** é definido pelo tipo complexo [**ContextType**](sc
 | Elemento                                                               | Type                                           | Descrição                                                 |
 |-----------------------------------------------------------------------|------------------------------------------------|-------------------------------------------------------------|
 | [**IgnorePassword**](schema-ignorepassword-userlogoncred-element.md) | booleano                                        | Como lidar com senhas ao atualizar perfis.<br/> |
-| [**Senha**](schema-password-userlogoncred-element.md)             | string                                         | Senha do usuário.<br/>                                   |
+| [**La**](schema-password-userlogoncred-element.md)             | string                                         | Senha do usuário.<br/>                                   |
 | [**Usu**](schema-username-userlogoncred-element.md)             | [**nometype**](schema-nametype-simpletype.md) | Nome de usuário.<br/>                                       |
 
 
@@ -72,7 +72,7 @@ O elemento **UserLogonCred** é definido pelo tipo complexo [**ContextType**](sc
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

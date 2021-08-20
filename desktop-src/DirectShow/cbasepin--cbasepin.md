@@ -1,7 +1,7 @@
 ---
-description: Destruidor CBasePin.~CBasePin – método destruidor.
+description: CBasePin. ~ CBasePin destruidor-método Destruitor.
 ms.assetid: b903bec6-e944-48bb-aa0c-7072a843a9cd
-title: Destruidor CBasePin.~CBasePin (Amfilter.h)
+title: CBasePin. ~ CBasePin Destruitor (Amfilter. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117823365"
 ---
-# <a name="cbasepincbasepin-destructor"></a>Destruidor CBasePin.~CBasePin
+# <a name="cbasepincbasepin-destructor"></a>Destruidor CBasePin. ~ CBasePin
 
 Método destruidor.
 
@@ -42,8 +42,8 @@ Método destruidor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 
 

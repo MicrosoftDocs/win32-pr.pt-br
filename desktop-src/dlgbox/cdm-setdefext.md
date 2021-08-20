@@ -1,9 +1,9 @@
 ---
-title: CDM_SETDEFEXT mensagem (Commdlg.h)
-description: Define a extensão de nome de arquivo padrão para uma caixa de diálogo Abrir ou Salvar como no estilo Explorer.
+title: Mensagem de CDM_SETDEFEXT (Commdlg. h)
+description: Define a extensão de nome de arquivo padrão para uma caixa de diálogo abrir ou salvar como no estilo do Explorer.
 ms.assetid: bd4999f1-0a7e-4b7f-a0ba-a7c2a7f196c6
 keywords:
-- CDM_SETDEFEXT caixa de diálogo de mensagem
+- Caixas de diálogo de CDM_SETDEFEXT mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b0b1169a2777d5a5f82925366c6723af741706d
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 6b6049f31c65b5e957a8de391d9105b0cce7554f433eb5a372432c59d6181863
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550111"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721341"
 ---
-# <a name="cdm_setdefext-message"></a>Mensagem \_ SETDEFEXT do CDM
+# <a name="cdm_setdefext-message"></a>\_Mensagem CDM SETDEFEXT
 
-\[Começando com o Windows Vista, as **caixas** de **diálogo** Abrir e Salvar como comuns foram superadas pela caixa de diálogo Item [Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
+\[a partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de Item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
 
-Define a extensão de nome de arquivo padrão para uma caixa de diálogo **Abrir** ou **Salvar como** no estilo Explorer. A caixa de diálogo deve ter sido criada com o **sinalizador OFN \_ EXPLORER;** caso contrário, a mensagem falhará.
+Define a extensão de nome de arquivo padrão para uma caixa de diálogo **abrir** ou **salvar como** no estilo do Explorer. A caixa de diálogo deve ter sido criada com o sinalizador **OFN \_ Explorer** ; caso contrário, a mensagem falhará.
 
 
 ```C++
@@ -54,9 +54,9 @@ Um ponteiro para a nova extensão de nome de arquivo. Não deve incluir o ponto 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Essa mensagem não tem nenhum valor de retorno.
+Esta mensagem não tem nenhum valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
@@ -74,7 +74,7 @@ void CommDlg_OpenSave_SetDefExt(hwnd, lparam)
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (inclua Windows.h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
 
 
 
@@ -85,18 +85,18 @@ void CommDlg_OpenSave_SetDefExt(hwnd, lparam)
 **Referência**
 </dt> <dt>
 
-[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[**Getsavefilename**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
-[**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
+[**DA OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Conceitual**
+**Conceitua**
 </dt> <dt>
 
-[Biblioteca de caixas de diálogo comuns](common-dialog-box-library.md)
+[Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
 </dt> </dl>
 

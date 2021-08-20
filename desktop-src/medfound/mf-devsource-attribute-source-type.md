@@ -4,12 +4,12 @@ ms.assetid: c6c05267-1c93-48e2-b463-b5a1514f1b7b
 title: Atributo MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3445c74b1a77472bad564f6988f9ae2f4696fef7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1160242b32ce6b6b902d1575cba4d275388a38b980d69a0bad0a528f377085d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118060680"
 ---
 # <a name="mf_devsource_attribute_source_type-attribute"></a>\_Atributo de \_ tipo de fonte de atributo MF DEVSOURCE \_ \_
 
@@ -56,9 +56,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

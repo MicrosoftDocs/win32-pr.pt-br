@@ -1,5 +1,5 @@
 ---
-description: A propriedade CurrentSubpictureStream define ou recupera o fluxo de subimagem atual.
+description: A propriedade CurrentSubpictureStream define ou recupera o fluxo de subtípico atual.
 ms.assetid: 66473c87-ddfe-4555-89ad-90e210a75694
 title: Propriedade CurrentSubpictureStream
 ms.topic: reference
@@ -14,11 +14,11 @@ ms.locfileid: "117821941"
 # <a name="currentsubpicturestream-property"></a>Propriedade CurrentSubpictureStream
 
 > [!Note]  
-> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 
-A `CurrentSubpictureStream` propriedade define ou recupera o fluxo de subimagem atual.
+A `CurrentSubpictureStream` propriedade define ou recupera o fluxo de subtípico atual.
 
 ``` syntax
 [ iSPStream = ] MSWebDVD.CurrentSubpictureStream
@@ -36,22 +36,22 @@ Os valores possíveis dessa propriedade são:
 
 | Valor   | Descrição              |
 |---------|--------------------------|
-| 0 a 31 | O fluxo de subimagem    |
-| 63      | Fluxo de baixa taxa de bits sem áudio |
+| 0 a 31 | O fluxo de subtípico    |
+| 63      | Fluxo de taxa de bits baixa em mudo |
 
 
 
  
 
-Esta propriedade é de leitura/gravação sem valor padrão. Antes de definir um novo fluxo de subimagem, chame [**IsSubpictureStreamEnabled**](issubpicturestreamenabled-method.md) para verificar se o fluxo está disponível.
+Essa propriedade é de leitura/gravação sem valor padrão. Antes de definir um novo fluxo de subpicture, chame [**IsSubpictureStreamEnabled**](issubpicturestreamenabled-method.md) para verificar se o fluxo está disponível.
 
-Definir essa propriedade faz com que a propriedade [**subpictureize**](subpictureon-property.md) seja alternada para **true**.
+Definir essa propriedade faz com que a [**propriedade SubpictureOn**](subpictureon-property.md) alterne para **True.**
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**Subimagem**](subpictureon-property.md)
+[**SubpictureOn**](subpictureon-property.md)
 </dt> <dt>
 
 [**SubpictureStreamsAvailable**](subpicturestreamsavailable-property.md)

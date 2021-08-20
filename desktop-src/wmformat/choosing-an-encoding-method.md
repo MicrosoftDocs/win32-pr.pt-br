@@ -11,16 +11,16 @@ keywords:
 - codecs, selecionando métodos de codificação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f54c5bd099e5aaf8b3a735594c8b87a335fc2594
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a87a780798885e86b515a8d111797af304a58f13c962ecab7f7862dfb1790411
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105763475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117656126"
 ---
 # <a name="choosing-an-encoding-method"></a>Escolhendo um método de codificação
 
-Alguns codecs, como o codec do Windows Media Video 9, dão suporte a vários métodos de codificação. O método de codificação que você escolher para um fluxo dependerá de como o fluxo será entregue. A tabela a seguir descreve quando usar os vários métodos de codificação.
+alguns codecs, como o codec Windows Media Video 9, dão suporte a vários métodos de codificação. O método de codificação que você escolher para um fluxo dependerá de como o fluxo será entregue. A tabela a seguir descreve quando usar os vários métodos de codificação.
 
 
 
@@ -34,26 +34,26 @@ Alguns codecs, como o codec do Windows Media Video 9, dão suporte a vários mé
 
 
 
- 
+ 
 
-A tabela a seguir lista os métodos de codificação que são suportados pelos codecs fornecidos com o Windows Media Format SDK.
+a tabela a seguir lista os métodos de codificação que são suportados pelos codecs fornecidos com o SDK do formato de mídia Windows.
 
 
 
 | Codec                                  | CBR | 2-passar CBR | BITS | 2-passar VBR |
 |----------------------------------------|-----|------------|-----|------------|
-| Vídeo do Windows Media 9                  | X   | X          | X   | X          |
-| Windows Media Audio 9 e posterior        | X   | X          | X   | X          |
-| Tela do Windows Media Video 9           | X   |            | X   |            |
-| Voz do Windows Media Audio 9            | X   |            |     |            |
-| Windows Media Audio Professional       | X   | X          | X   | X          |
-| Windows Media Audio sem perdas           |     |            | X   |            |
-| Imagem do Windows Media Video 9 e posterior  | X   |            | X   |            |
-| Perfil avançado do Windows Media Video 9 | X   | X          | X   | X          |
+| Windows Vídeo de mídia 9                  | X   | X          | X   | X          |
+| Windows Áudio de mídia 9 e posterior        | X   | X          | X   | X          |
+| Windows Tela de vídeo de mídia 9           | X   |            | X   |            |
+| Windows Voz de áudio de mídia 9            | X   |            |     |            |
+| Windows Professional de áudio de mídia       | X   | X          | X   | X          |
+| Windows Mídia sem perdas de áudio           |     |            | X   |            |
+| Windows Imagem de vídeo de mídia 9 e posterior  | X   |            | X   |            |
+| Windows Perfil avançado de vídeo de mídia 9 | X   | X          | X   | X          |
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -71,9 +71,9 @@ A tabela a seguir lista os métodos de codificação que são suportados pelos c
 [**Codificação de taxa de bits variável (VBR)**](variable-bit-rate--vbr--encoding.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -38,12 +38,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a223a288b8ad2d2e976be3bb9f2f524f78b9a8fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7bd59f610b2ff1423b82539c61eff3d9d770a03d6f8291a1bae53b372fff318f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811035"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117890664"
 ---
 # <a name="retrievecolumngrbit-enumeration"></a>Enumeração RetrieveColumnGrbit
 
@@ -51,8 +51,8 @@ Opções para JetRetrieveColumn.
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -98,22 +98,22 @@ public enum RetrieveColumnGrbit
 <tr class="even">
 <td></td>
 <td>RetrieveFromPrimaryBookmark</td>
-<td>Essa opção é usada para recuperar valores de coluna do indicador de índice e pode ser diferente do valor de índice quando uma coluna aparece no índice primário e no índice atual. Essa opção não deverá ser especificada se o índice atual for o índice clusterizado ou primário. Esse bit não poderá ser definido se RetrieveFromIndex também for definido.</td>
+<td>Essa opção é usada para recuperar valores de coluna do indicador de índice e pode ser diferente do valor do índice quando uma coluna aparece no índice primário e no índice atual. Essa opção não deve ser especificada se o índice atual for o índice cluster ou primário. Esse bit não poderá ser definido se RetrieveFromIndex também estiver definido.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RetrieveTag</td>
-<td>Essa opção é usada para recuperar o número de sequência de um valor de coluna com valores múltiplos em JET_RETINFO. itagSequence. A recuperação do número de sequência pode ser uma operação dispendiosa e só deve ser feita se necessário.</td>
+<td>Essa opção é usada para recuperar o número de sequência de um valor de coluna com vários valores em JET_RETINFO.itagSequence. A recuperação do número de sequência pode ser uma operação cara e só deve ser feita se necessário.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RetrieveNull</td>
-<td>Essa opção é usada para recuperar valores nulos de coluna de vários valores. Se essa opção não for especificada, os valores nulos da coluna com valores múltiplos serão automaticamente ignorados.</td>
+<td>Essa opção é usada para recuperar valores NULL de coluna com vários valores. Se essa opção não for especificada, os valores NULL da coluna com valores múltiplos serão ignorados automaticamente.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RetrieveIgnoreDefault</td>
-<td>Essa opção afeta apenas as colunas com valores múltiplos e faz com que um valor nulo seja retornado quando o número de sequência solicitado é 1 e não há valores definidos para a coluna no registro.</td>
+<td>Essa opção afeta apenas colunas com vários valores e faz com que um valor NULL seja retornado quando o número de sequência solicitado for 1 e não houver valores definidos para a coluna no registro.</td>
 </tr>
 </tbody>
 </table>
@@ -123,4 +123,4 @@ public enum RetrieveColumnGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

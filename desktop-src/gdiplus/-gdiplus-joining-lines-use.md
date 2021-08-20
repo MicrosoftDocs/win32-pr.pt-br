@@ -13,9 +13,9 @@ ms.locfileid: "118066970"
 ---
 # <a name="joining-lines"></a>Unindo linhas
 
-Uma junção de linha é a área comum que é formada por duas linhas cujas extremidades se encontram ou se sobrepõem. Windows GDI+ fornece quatro estilos de junção de linha: miter, bevel, round e miter recortado. O estilo de junção de linha é uma propriedade da [**classe Caneta.**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) Quando você especifica um estilo de junção de linha para uma caneta e, em seguida, usa essa caneta para desenhar um caminho, o estilo de junção especificado é aplicado a todas as linhas conectadas no caminho.
+Uma junção de linha é a área comum que é formada por duas linhas cujas extremidades se encontram ou se sobrepõem. Windows GDI+ fornece quatro estilos de junção de linha: mitre, bisel, round e mitre recortados. O estilo de junção de linha é uma propriedade da classe [**Pen**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) . Quando você especifica um estilo de junção de linha para uma caneta e, em seguida, usa essa caneta para desenhar um caminho, o estilo de junção especificado é aplicado a todas as linhas conectadas no caminho.
 
-Você pode especificar o estilo de junção de linha usando o [**método Pen::SetLineJoin**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setlinejoin) da [**classe Pen.**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) O exemplo a seguir demonstra uma junção de linha em bevel entre uma linha horizontal e uma linha vertical:
+Você pode especificar o estilo de junção de linha usando o método [**Pen:: SetLineJoin**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setlinejoin) da classe [**Pen**](/windows/desktop/api/gdipluspen/nl-gdipluspen-pen) . O exemplo a seguir demonstra uma junção de linha chanfrada entre uma linha horizontal e uma linha vertical:
 
 
 ```
@@ -32,11 +32,11 @@ graphics.DrawPath(&penJoin, &path);
 
 
 
-A ilustração a seguir mostra a junção de linha em beveled resultante.
+A ilustração a seguir mostra a junção de linha chanfrada resultante.
 
-![ilustração que mostra duas linhas se encontrando em um ângulo direito, com uma junção em bevelled](images/pens5.png)
+![ilustração que mostra duas linhas que atendem a um ângulo direito, com uma junção bevelled](images/pens5.png)
 
-No exemplo anterior, o valor (**LineJoinBevel**) passado para o método [**Pen::SetLineJoin**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setlinejoin) é um elemento da [**enumeração LineJoin.**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-linejoin)
+No exemplo anterior, o valor (**LineJoinBevel**) passado para o método [**Pen:: SetLineJoin**](/windows/desktop/api/Gdipluspen/nf-gdipluspen-pen-setlinejoin) é um elemento da enumeração [**LineJoin**](/windows/desktop/api/Gdiplusenums/ne-gdiplusenums-linejoin) .
 
  
 

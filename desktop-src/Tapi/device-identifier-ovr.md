@@ -4,12 +4,12 @@ ms.assetid: c7ca72a6-97fa-441f-92ce-a4c77a53765c
 title: Identificador do dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7aeb9c88820ecfe26d3ecd971489d709a34af10f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19078b7d2774fb2b71d951fade9c7a560a597a188ac4d87982ee2a6f2bfc9416
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117945994"
 ---
 # <a name="device-identifier"></a>Identificador do dispositivo
 

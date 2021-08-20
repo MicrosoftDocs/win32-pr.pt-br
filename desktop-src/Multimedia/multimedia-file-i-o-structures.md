@@ -1,30 +1,30 @@
 ---
-title: Estruturas de e/s de arquivo multimídia
-description: Estruturas de e/s de arquivo multimídia
+title: Estruturas de E/S de arquivo multimídia
+description: Estruturas de E/S de arquivo multimídia
 ms.assetid: 1429d874-554a-4476-997b-51803ef7cd98
 keywords:
-- Multimídia do Windows, estruturas de e/s de arquivo
-- multimídia, estruturas de e/s de arquivo
-- entrada de multimídia, estruturas de e/s de arquivo
-- e/s de arquivo multimídia, estruturas
-- e/s de arquivo, estruturas
-- entrada e saída (e/s), estruturas
-- E/s (entrada e saída), estruturas
-- referência para e/s de arquivo de multimídia, estruturas
-- referência de e/s de arquivo de multimídia, estruturas
-- referência de e/s de arquivo, estruturas
+- Windows multimídia, estruturas de E/S de arquivo
+- multimídia, estruturas de E/S de arquivo
+- entrada multimídia, estruturas de E/S de arquivo
+- E/S de arquivo multimídia, estruturas
+- E/S de arquivo, estruturas
+- entrada e saída (E/S), estruturas
+- E/S (entrada e saída), estruturas
+- referência para E/S de arquivo multimídia, estruturas
+- referência de E/S de arquivo multimídia, estruturas
+- referência de E/S de arquivo, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee8b1e9c7a14bced5a18fe58e51dbb8cc9aa6693
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9d5c54486f6f2161d3cdb69b32e336c8991d4788c579a9b79f778bda6caf1703
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104366003"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117985506"
 ---
-# <a name="multimedia-file-io-structures"></a>Estruturas de e/s de arquivo multimídia
+# <a name="multimedia-file-io-structures"></a>Estruturas de E/S de arquivo multimídia
 
-As estruturas a seguir são usadas com e/s de arquivo de multimídia.
+As estruturas a seguir são usadas com E/S de arquivo multimídia.
 
 -   [**MMCKINFO**](/windows/win32/api/mmiscapi/ns-mmiscapi-mmckinfo)
 -   [**MMIOINFO**](/previous-versions//dd757322(v=vs.85))
@@ -33,9 +33,9 @@ As estruturas a seguir são usadas com e/s de arquivo de multimídia.
 
 <dl> <dt>
 
-[Referência de e/s de arquivo de multimídia](multimedia-file-i-o-reference.md)
+[Referência de E/S de arquivo multimídia](multimedia-file-i-o-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

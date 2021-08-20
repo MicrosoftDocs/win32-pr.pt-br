@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: e48f1d357645a9f50a85da4aba79d72baba4e4bb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9f18066c9ff55699fa58f887cf9b3cdedf8f7ba3cd9324667abb556de5634552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105754318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117982320"
 ---
 # <a name="getframestoredlength-function"></a>Função GetFrameStoredLength
 
@@ -46,7 +46,7 @@ Identificador para o quadro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será o comprimento do quadro como armazenado.
 

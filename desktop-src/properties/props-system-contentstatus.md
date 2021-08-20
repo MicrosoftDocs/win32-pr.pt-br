@@ -4,12 +4,12 @@ ms.assetid: 054cef58-bba4-44be-86e9-68419089612d
 title: System. ContentStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 611567d1014343188ca95209fa54b188f316ef4e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bf6ea8acd7a567922eb13190b8753a1bf66f26fd22a2aa8e6169474f64feb322
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108101164"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117684467"
 ---
 # <a name="systemcontentstatus"></a>System. ContentStatus
 

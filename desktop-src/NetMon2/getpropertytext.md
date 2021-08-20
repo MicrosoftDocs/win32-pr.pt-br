@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 10dbabf32840d2ae5f965687a6261b8bec27a1a1
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0b92bf854dd4a3e678a4eb5524bd47412f012da87a007e960498d11d4bff91ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117982050"
 ---
 # <a name="getpropertytext-function"></a>Função GetPropertyText
 
@@ -70,7 +70,7 @@ Tamanho do buffer de cadeia de texto.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será um ponteiro para o texto da propriedade.
 

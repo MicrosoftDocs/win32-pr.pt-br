@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método Windows8Api. JetBeginTransaction3'
-title: Método Windows8Api. JetBeginTransaction3 (Microsoft. ISAM. ESENT. Interop. Windows8)
+description: 'Saiba mais sobre: Método Windows8Api.JetBeginTransaction3'
+title: Método Windows8Api.JetBeginTransaction3 (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'JetBeginTransaction3 method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Windows8.Windows8Api.JetBeginTransaction3(Microsoft.Isam.Esent.Interop.JET_SESID,System.Int64,Microsoft.Isam.Esent.Interop.BeginTransactionGrbit)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.windows8api.jetbegintransaction3(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 7605cdb44c66d929e6663caaad9e40d3c98737b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ca6b9222b98b74f5f2e136987e1b6e1cd7e9786b6e44a455d91aab4ce31ef1c6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118069423"
 ---
-# <a name="windows8apijetbegintransaction3-method"></a>Método Windows8Api. JetBeginTransaction3
+# <a name="windows8apijetbegintransaction3-method"></a>Método Windows8Api.JetBeginTransaction3
 
-Faz com que uma sessão Insira uma transação ou crie um novo ponto de salvamento em uma transação existente.
+Faz com que uma sessão insira uma transação ou crie um novo ponto de salvar em uma transação existente.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -65,21 +65,21 @@ public static void JetBeginTransaction3(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
-    A sessão para a qual iniciar a transação.
+    A sessão para a que iniciar a transação.
 
 <!-- end list -->
 
-  - usertransactid  
-    Tipo: [System. Int64](/dotnet/api/system.int64)  
+  - userTransactionId  
+    Tipo: [System.Int64](/dotnet/api/system.int64)  
     
     Um identificador opcional fornecido pelo usuário para identificar a transação.
 
 <!-- end list -->
 
   - grbit  
-    Tipo: [Microsoft. ISAM. ESENT. Interop. BeginTransactionGrbit](./begintransactiongrbit-enumeration.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.BeginTransactionGrbit](./begintransactiongrbit-enumeration.md)  
     
     Opções de transação.
 
@@ -95,4 +95,4 @@ Introduzido no Windows 8.
 
 [Membros do Windows8Api](./windows8api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

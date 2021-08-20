@@ -1,7 +1,7 @@
 ---
-description: Representa uma associação entre um ponto de acesso de serviço (SAP) e um dispositivo lógico que o implementa.
+description: Representa uma associação entre um SAP (ponto de acesso de serviço) e um dispositivo lógico que o implementa.
 ms.assetid: 40c8111a-d439-4c0f-805e-9c10d7182eb4
-title: Classe CIM_DeviceSAPImplementation (gerenciamento do Hyper-V)
+title: CIM_DeviceSAPImplementation classe (gerenciamento do Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: e32676077cccd5c7e17fa551e904079f457b8d01
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d801f0ce1ecc6b30ff9ae5481047cbacf9fa3e20f2713a4cf39b723c5fa904ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812813"
 ---
-# <a name="cim_devicesapimplementation-class-hyper-v-management"></a>Classe CIM_DeviceSAPImplementation (gerenciamento do Hyper-V)
+# <a name="cim_devicesapimplementation-class-hyper-v-management"></a>CIM_DeviceSAPImplementation classe (gerenciamento do Hyper-V)
 
-Representa uma associação entre um ponto de acesso de serviço (SAP) e um dispositivo lógico que o implementa.
+Representa uma associação entre um SAP (ponto de acesso de serviço) e um dispositivo lógico que o implementa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,42 +39,42 @@ class CIM_DeviceSAPImplementation : CIM_Dependency
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ DeviceSAPImplementation** tem estes tipos de membros:
+A **classe CIM \_ DeviceSAPImplementation** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ DeviceSAPImplementation** tem essas propriedades.
+A **classe CIM \_ DeviceSAPImplementation** tem essas propriedades.
 
 <dl> <dt>
 
-**Antecedent**
+**Antecedente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados **: \_ LogicalDevice CIM**
+Tipo de dados: **Cim \_ LogicalDevice**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("Antecedent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("antecessor")
 </dt> </dl>
 
 O dispositivo lógico.
 
 </dd> <dt>
 
-**Depende**
+**Dependente**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ ServiceAccessPoint**
+Tipo de dados: **\_ Serviço CIMAccessPoint**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("dependente")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Dependente")
 </dt> </dl>
 
 O SAP implementado pelo dispositivo lógico.
@@ -89,8 +89,8 @@ O SAP implementado pelo dispositivo lógico.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -99,7 +99,7 @@ O SAP implementado pelo dispositivo lógico.
 
 <dl> <dt>
 
-[**\_Dependência CIM**](cim-dependency.md)
+[**Dependência cim \_**](cim-dependency.md)
 </dt> </dl>
 
  

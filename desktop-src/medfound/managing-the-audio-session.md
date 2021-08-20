@@ -31,7 +31,7 @@ O MFPlay fornece os métodos a seguir para controlar o volume de áudio durante 
 
  
 
-Para entender o comportamento desses métodos, você deve conhecer alguma terminologia da API de Sessão de Áudio Windows (WASAPI), que implementa a funcionalidade de áudio de baixo nível usada pelo MFPlay.
+Para entender o comportamento desses métodos, você deve conhecer alguma terminologia da API de Sessão de Áudio (WASAPI) do Windows, que implementa a funcionalidade de áudio de baixo nível usada pelo MFPlay.
 
 No WASAPI, cada fluxo de áudio pertence a exatamente uma sessão *de* áudio , que é um grupo de fluxos de áudio relacionados. Normalmente, um aplicativo mantém uma única sessão de áudio, embora os aplicativos possam criar mais de uma sessão. O Sndvol (programa de controle de volume do sistema) exibe um controle de volume para cada sessão de áudio. Por meio do Sndvol, um usuário pode ajustar o volume de uma sessão de áudio de fora do aplicativo. A imagem a seguir ilustra esse processo.
 

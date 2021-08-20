@@ -38,7 +38,7 @@ O **tipo de \_ enumeração CAPICOM ATTRIBUTE** define o tipo de atributo associ
 
 ## <a name="remarks"></a>Comentários
 
-O **tipo de \_ enumeração CAPICOM ATTRIBUTE** é usado pela propriedade [**Attribute.Name.**](attribute-name.md)
+O **tipo de \_ enumeração ATTRIBUTE CAPICOM** é usado pela propriedade [**Attribute.Name.**](attribute-name.md)
 
 ## <a name="requirements"></a>Requisitos
 

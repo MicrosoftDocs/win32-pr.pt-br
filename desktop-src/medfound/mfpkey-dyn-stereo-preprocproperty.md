@@ -1,7 +1,7 @@
 ---
-description: Especifica se o codificador executa o processamento de imagem estéreo.
+description: Especifica se o codificador executa o processamento de imagens estéreo.
 ms.assetid: d1c787ee-787b-4efa-8d96-5cb4ffff0ed2
-title: MFPKEY_DYN_STEREO_PREPROC propriedade (Wmcodecdsp.h)
+title: Propriedade MFPKEY_DYN_STEREO_PREPROC (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: 98cf644dbef028bb8bbc0208b5cabb48d5138372f259e451de4902ec0a2057ed
@@ -11,21 +11,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117873513"
 ---
-# <a name="mfpkey_dyn_stereo_preproc-property"></a>Propriedade MFPKEY \_ DYN \_ \_ ESTÉREO PREPROC
+# <a name="mfpkey_dyn_stereo_preproc-property"></a>\_Propriedade de \_ pré-processador de estéreo MFPKEY dyn \_
 
-Especifica se o codificador executa o processamento de imagem estéreo. Leitura/gravação.
+Especifica se o codificador executa o processamento de imagens estéreo. Leitura/gravação.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
+Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**BOOL da VT \_**
+**BOOL do VT \_**
 
 ## <a name="default-value"></a>Valor padrão
 
-**VARIANT \_ TRUE**
+**VARIANTE \_ true**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -34,7 +34,7 @@ Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-p
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows Vista ou Windows 7<br/>                                                   |
-| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 
@@ -42,7 +42,7 @@ Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-p
 
 <dl> <dt>
 
-[Media Foundation propriedades](media-foundation-properties.md)
+[Propriedades de Media Foundation](media-foundation-properties.md)
 </dt> </dl>
 
  

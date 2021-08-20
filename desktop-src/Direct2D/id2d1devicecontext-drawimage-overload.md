@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 0ee1fb78b51a7bfb46d50215f8b74825021009c0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e8aab424ab7442087491344614fc671d5cd1a05329c028036212a782a5d2d329
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118002955"
 ---
 # <a name="id2d1devicecontextdrawimage-methods"></a>ID2D1DeviceContext: métodos de rawImage de:D
 

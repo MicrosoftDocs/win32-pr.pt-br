@@ -4,12 +4,12 @@ ms.assetid: 6c181252-25ef-4f6c-b4b4-777a2779832f
 title: System. Sync. status
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45678a1bfe60f4713b51ea5acd7a0107b16a25eb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 12d9e3e51c0dc9c835d5001d38b6dd7bd1c88edaa54719d3d0f855056ad0d162
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117681800"
 ---
 # <a name="systemsyncstatus"></a>System. Sync. status
 

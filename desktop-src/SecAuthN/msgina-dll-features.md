@@ -1,5 +1,5 @@
 ---
-description: Se você estiver escrevendo um LTD para substituir o MSGina.dll (DLL) standard da Microsoft, talvez você queira fornecer algumas ou todas as funcionalidades PADRÃO DOIS.
+description: Se você estiver escrevendo um LTD para substituir a DLL standard do UNIFORM da Microsoft (MSGina.dll), talvez você queira fornecer algumas ou todas as funcionalidades PADRÃO DOIS.
 ms.assetid: cd2ce7b7-6167-4451-9f6e-881676a2145c
 title: MSGina.dll recursos
 ms.topic: article
@@ -26,7 +26,7 @@ Os valores de chave do Registro controlam a disponibilidade ou o comportamento d
 
 -   **Caixa de diálogo Notificação Legal**
 
-    Em alguns lugares, é legal que qualquer pessoa que tenha acesso a uma estação de trabalho faça logoff e comece a trabalhar, a menos que haja um aviso indicando que o sistema é somente para usuários autorizados. Além disso, muitos usuários querem mensagens específicas da empresa exibidas antes do logon normal. O PADRÃO DEIS usa dois valores de chave do Registro winlogon para permitir que um sistema ex display informações antes do logon. Se um dos valores de chave estiver presente e contiver uma cadeia de caracteres não nula, uma caixa de diálogo Aviso Legal será exibida antes da tela de boas-vindas. Esses nomes de valor de chave são mostrados na tabela a seguir.
+    Em alguns locais, é legal que qualquer pessoa que tenha acesso a uma estação de trabalho faça logoff e comece a trabalhar, a menos que haja um aviso indicando que o sistema é somente para usuários autorizados. Além disso, muitos usuários querem mensagens específicas da empresa exibidas antes do logon normal. O PADRÃO DEIS usa dois valores de chave do Registro winlogon para permitir que um sistema ex display informações antes do logon. Se um dos valores de chave estiver presente e contiver uma cadeia de caracteres não nula, uma caixa de diálogo Aviso Legal será exibida antes da tela de boas-vindas. Esses nomes de valor de chave são mostrados na tabela a seguir.
 
     
 
@@ -62,7 +62,7 @@ Os valores de chave do Registro controlam a disponibilidade ou o comportamento d
 
      
 
-    Se o valor da chave **AutoAdminLogon** estiver presente e contiver um, e o valor da chave **AutoLogonCount** não estiver presente, um logon automático ocorrerá sempre que o usuário atual for desligado ou o sistema for reiniciado. A conta que está sendo registrada é especificada usando os valores de chave **DefaultUserName** **e DefaultDomainName.** A senha da conta pode ser especificada de duas maneiras. Para computadores que executam um dos sistemas operacionais Windows Server 2003 ou Windows XP, a senha deve ser armazenada como um segredo usando a função [**LsaStorePrivateData.**](/windows/win32/api/ntsecapi/nf-ntsecapi-lsastoreprivatedata) Para obter detalhes, consulte [Protegendo a senha de logon automático](protecting-the-automatic-logon-password.md). A outra maneira de armazenar a senha é em texto não criptografado na **entrada DefaultPassword** da chave Winlogon; para fins de segurança, essa técnica deve ser evitada. Se você armazenar a senha usando a **função LsaStorePrivateData,** não forneça uma **entrada DefaultPassword** na chave Winlogon.
+    Se o valor da chave **AutoAdminLogon** estiver presente e contiver um e o valor da chave **AutoLogonCount** não estiver presente, um logon automático ocorrerá sempre que o usuário atual for desligado ou o sistema for reiniciado. A conta que está sendo registrada é especificada usando os valores de chave **DefaultUserName** **e DefaultDomainName.** A senha da conta pode ser especificada de duas maneiras. Para computadores que executam um dos sistemas operacionais Windows Server 2003 ou Windows XP, a senha deve ser armazenada como um segredo usando a função [**LsaStorePrivateData.**](/windows/win32/api/ntsecapi/nf-ntsecapi-lsastoreprivatedata) Para obter detalhes, consulte [Protegendo a senha de logon automático](protecting-the-automatic-logon-password.md). A outra maneira de armazenar a senha é em texto não criptografado na **entrada DefaultPassword** da chave Winlogon; para fins de segurança, essa técnica deve ser evitada. Se você armazenar a senha usando a **função LsaStorePrivateData,** não forneça uma **entrada DefaultPassword** na chave Winlogon.
 
     Se o valor da chave **AutoAdminLogon** estiver presente e contiver um e se o valor da chave **AutoLogonCount** estiver presente e não for zero, **AutoLogonCount** determinará o número de logons automáticos que ocorrem. Sempre que o sistema for reiniciado, o valor de **AutoLogonCount** será decrementado em um até atingir zero. Quando **AutoLogonCount** atingir zero, nenhuma conta será registrada automaticamente, o valor da chave **AutoLogonCount** e o valor da chave **DefaultPassword,** se usados, serão excluídos do Registro e **AutoAdminLogon** será definido como zero.
 
@@ -84,9 +84,9 @@ Os valores de chave do Registro controlam a disponibilidade ou o comportamento d
 
 -   **AtivaçãoUserinit.exe dados**
 
-    Userinit.exe é um aplicativo que é executado pelo MSGina.dll quando o usuário fez logo on. Ele é executado no contexto do usuário recém-conectado [*e*](../secgloss/c-gly.md) na área de trabalho do aplicativo. Sua finalidade é configurar o ambiente do usuário, incluindo restaurar usos de rede, estabelecer configurações de perfil, como fontes e cores de tela, e executar scripts de logon. Depois de concluir essas tarefas, Userinit.exe executa os programas de shell de usuário. Os programas de shell herdam o ambiente que Userinit.exe configura. Os programas de shell específicos Userinit.exe executados são armazenados no valor da chave do **Shell** na chave do Registro do Winlogon.
+    Userinit.exe é um aplicativo que é executado pelo MSGina.dll quando o usuário fez logo on. Ele é executado no contexto do usuário recém-conectado [*e*](../secgloss/c-gly.md) na área de trabalho do aplicativo. Sua finalidade é configurar o ambiente do usuário, incluindo a restauração de usos de rede, o estabelecimento de configurações de perfil, como fontes e cores da tela, e a execução de scripts de logon. Depois de concluir essas tarefas, Userinit.exe executa os programas de shell de usuário. Os programas de shell herdam o ambiente que Userinit.exe configura. Os programas de shell específicos Userinit.exe executados são armazenados no valor da chave do **Shell** na chave do Registro do Winlogon.
 
-    O valor da chave do **Shell** pode conter uma lista separada por vírgulas de programas a serem executados. Windows O Explorer é o programa de shell padrão e será executado se o valor da chave do **Shell** for nulo ou não estiver presente. Por padrão, o Windows Explorer é listado.
+    O valor da chave do **Shell** pode conter uma lista separada por vírgulas de programas a serem executados. Windows O Explorer é o programa de shell padrão e será executado se o valor da chave do **Shell** for nulo ou não estiver presente. Por padrão, o Windows Explorer está listado.
 
 -   **Opções de segurança de logon**
 

@@ -4,12 +4,12 @@ ms.assetid: 4a886124-54f1-4cd1-a22b-552e8c8d556f
 title: Atributo MF_DEVSOURCE_ATTRIBUTE_SOURCE_TYPE_VIDCAP_HW_SOURCE (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e816e668267a23e67e7450b81a32cde454315bfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 399a486c5637cb617aec0570daa673db5b07874747f8ee9caae359f94087b5a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748680"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118060720"
 ---
 # <a name="mf_devsource_attribute_source_type_vidcap_hw_source-attribute"></a>\_Tipo de origem de atributo MF DEVSOURCE, atributo de \_ \_ \_ \_ \_ origem HW VIDCAP \_
 
@@ -27,7 +27,7 @@ Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/deskt
 
 ## <a name="remarks"></a>Comentários
 
-Se o valor for **true**, a origem da captura será um dispositivo de hardware. Se o valor for **false**, ele será um dispositivo de software. O valor padrão é **false**.
+Se o valor for **true**, a origem da captura será um dispositivo de hardware. Se o valor for **false**, ele será um dispositivo de software. O valor padrão é **FALSE**.
 
 Esse atributo é definido nos objetos de ativação retornados pelas seguintes funções:
 
@@ -44,9 +44,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

@@ -1,7 +1,7 @@
 ---
-description: ID3DXMATRIXStack::P método USH (D3DX10. h) – adiciona uma matriz à pilha.
+description: Método ID3DXMATRIXStack::P (D3DX10.h) – adiciona uma matriz à pilha.
 ms.assetid: 8660047f-64bc-4b34-8270-3087412db942
-title: 'ID3DXMATRIXStack: método USH de:P (D3DX10. h)'
+title: Método ID3DXMATRIXStack::P (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 9c248fdaed8235c383388a52172021921e2c78d8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d8c9054274666b41e70fa060d10a28309be929a19ee5c363ff4afeb76b25e1ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108107905"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914232"
 ---
-# <a name="id3dxmatrixstackpush-method-d3dx10h"></a>ID3DXMATRIXStack: método USH de:P (D3DX10. h)
+# <a name="id3dxmatrixstackpush-method-d3dx10h"></a>Método ID3DXMATRIXStack::P (D3DX10.h)
 
 Adiciona uma matriz à pilha.
 
@@ -42,11 +42,11 @@ Esse método não tem parâmetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
+Se o método for bem-sucedido, o valor de retorno será D3D \_ OK. Se o método falhar, o valor de retorno poderá ser D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método incrementa a contagem de itens na pilha em 1, duplicando a matriz atual. A pilha aumentará dinamicamente à medida que mais itens forem adicionados.
+Esse método incrementa a contagem de itens na pilha em 1, duplicando a matriz atual. A pilha aumentará dinamicamente conforme mais itens são adicionados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,19 +54,19 @@ Esse método incrementa a contagem de itens na pilha em 1, duplicando a matriz a
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [ID3DXMatrixStack](d3d10-id3dxmatrixstack.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

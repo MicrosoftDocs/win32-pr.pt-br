@@ -11,12 +11,12 @@ keywords:
 - fluxos, recuperando amostras
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7fd641dc08387606d1fdf04602e46cb9e9cbc2b
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: b1bb3bef3ca39c25b973a317466330d201c73018bb8ec98370081a98d6d4c402
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "104084350"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117653918"
 ---
 # <a name="to-retrieve-stream-samples-with-the-synchronous-reader"></a>Para recuperar exemplos de fluxo com o leitor síncrono
 
@@ -39,9 +39,9 @@ Você pode verificar se um fluxo está selecionado para entrega de exemplo chama
 [**Lendo arquivos com o leitor síncrono**](reading-files-with-the-synchronous-reader.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

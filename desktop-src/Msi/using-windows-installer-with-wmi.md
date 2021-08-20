@@ -1,5 +1,5 @@
 ---
-description: O provedor Windows Instalador do Windows permite que Windows Instrumentação de Gerenciamento (WMI) acesse as informações coletadas Windows aplicativos do Instalador.
+description: O Windows do Instalador do Windows permite que Windows WMI (Instrumentação de Gerenciamento) acesse as informações coletadas Windows aplicativos do Instalador.
 ms.assetid: ffe7b6eb-b6f5-4070-9f83-91a1e76764c6
 title: Usando Windows instalador com WMI
 ms.topic: article
@@ -13,11 +13,11 @@ ms.locfileid: "117804068"
 ---
 # <a name="using-windows-installer-with-wmi"></a>Usando Windows instalador com WMI
 
-O provedor Windows Instalador do Windows permite que Windows Instrumentação de Gerenciamento (WMI) acesse as informações coletadas Windows aplicativos do Instalador.
+O Windows do Instalador do Windows permite que Windows WMI (Instrumentação de Gerenciamento) acesse as informações coletadas Windows aplicativos do Instalador.
 
-O [provedor Windows instalador do](/previous-versions/windows/desktop/msiprov/windows-installer-provider) Windows é um componente Windows opcional. A instalação opcional do provedor Windows Installer garante a compatibilidade com compatibilidade, mas não indica a disponibilidade futura do provedor. Para obter mais informações sobre a disponibilidade do provedor Windows Instalador do Windows, consulte Disponibilidade do sistema operacional de componentes [WMI](../wmisdk/operating-system-availability-of-wmi-components.md) na documentação do [WMI (Instrumentação](../wmisdk/wmi-start-page.md) de Gerenciamento Windows).
+O [Windows instalador de dados](/previous-versions/windows/desktop/msiprov/windows-installer-provider) é um componente Windows opcional. A instalação opcional do provedor Windows Instalador do Windows garante a compatibilidade com compatibilidade com backward, mas não indica a disponibilidade futura do provedor. Para obter mais informações sobre a disponibilidade do provedor Windows Instalador do Windows, consulte Disponibilidade do sistema operacional de componentes [WMI](../wmisdk/operating-system-availability-of-wmi-components.md) na documentação do [WMI (Instrumentação](../wmisdk/wmi-start-page.md) de Gerenciamento Windows).
 
-Para ver a descrição atual deste provedor WMI, consulte [Windows instalador](/previous-versions/windows/desktop/msiprov/windows-installer-provider) na documentação principal do [WMI (Instrumentação de](../wmisdk/wmi-start-page.md) Gerenciamento de Windows). Para ver uma lista de classes WMI com suporte do Windows, consulte [Classes de aplicativos instalados](/previous-versions//aa390887(v=vs.85)).
+Para ver a descrição atual desse provedor WMI, consulte [Windows Instalador](/previous-versions/windows/desktop/msiprov/windows-installer-provider) na documentação principal [do WMI (Instrumentação de](../wmisdk/wmi-start-page.md) Gerenciamento de Windows). Para ver uma lista de classes WMI com suporte do Windows, consulte [Classes de aplicativos instalados](/previous-versions//aa390887(v=vs.85)).
 
  
 

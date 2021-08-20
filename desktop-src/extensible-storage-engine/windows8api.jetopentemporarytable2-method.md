@@ -25,12 +25,12 @@ api_location:
 - Microsoft.Isam.Esent.Interop.dll
 - esent.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: eb01792608ec542918f4bd8ff6ec06ef27091bb1
-ms.sourcegitcommit: 63c93e0ad0b48d60b11008767196718feb475cb0
+ms.openlocfilehash: ffa5f09f3c2357f5a8b93a94681e5f9a1a5d11b3d0f55503458d6b58a15d2f05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113691725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118069366"
 ---
 # <a name="windows8apijetopentemporarytable2-method"></a>Método Windows8Api. JetOpenTemporaryTable2
 
@@ -78,7 +78,7 @@ public static void JetOpenTemporaryTable2(
 
 Use [JetOpenTemporaryTable (JET_SESID, JET_OPENTEMPORARYTABLE)](./vistaapi.jetopentemporarytable-method.md) para versões anteriores do ESENT.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 

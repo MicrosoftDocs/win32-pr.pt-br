@@ -1,11 +1,11 @@
 ---
-title: atributo ms-WMI-intMin
-description: O valor mínimo para um objeto de parâmetro de inteiro do WMI 32-bit.
+title: Atributo ms-WMI-intMin
+description: O valor mínimo para um objeto de parâmetro inteiro de 32 bits WMI.
 ms.assetid: 55f0f7ad-33d8-48e2-9924-49897085b078
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-WMI-intMin
-- Esquema de AD do atributo msWMI-IntMin
+- Esquema do AD do atributo ms-WMI-intMin
+- Esquema do AD do atributo msWMI-IntMin
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 69920496485e1b774bbef430466cd44529c57aa1
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 677117d851bcf6128390be509286dad1ae2de419f1271081246b68c05ab42500
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087024"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117837370"
 ---
-# <a name="ms-wmi-intmin-attribute"></a>atributo ms-WMI-intMin
+# <a name="ms-wmi-intmin-attribute"></a>Atributo ms-WMI-intMin
 
-O valor mínimo para um objeto de parâmetro de inteiro do WMI 32-bit.
+O valor mínimo para um objeto de parâmetro inteiro de 32 bits WMI.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-WMI-intMin                        |
-| LDAP-Display-Name | msWMI-IntMin                         |
+| CN                | ms-WMI-intMin                        |
+| Ldap-Display-Name | msWMI-IntMin                         |
 | Tamanho              | 4 bytes                              |
-| Privilégio de atualização  | Administrador de Política de Grupo           |
+| Privilégio de atualização  | Política de Grupo administrador           |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1630              |
-| System-ID-GUID    | 68c2e3ba-9837-4c70-98e0-f0c33695d023 |
+| System-Id-Guid    | 68c2e3ba-9837-4c70-98e0-f0c33695d023 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -57,10 +57,10 @@ O valor mínimo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -78,10 +78,10 @@ O valor mínimo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -99,10 +99,10 @@ O valor mínimo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -120,10 +120,10 @@ O valor mínimo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -141,10 +141,10 @@ O valor mínimo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | True         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

@@ -4,12 +4,12 @@ description: Referência de DPI alto
 ms.assetid: 07A2D45E-721C-4DA8-82A5-38B2FB94BC6D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9c6a9302541683dbf97c06194285f9e8cfcf3c0
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: c1d8a0cbc9d5360a5ed7a28d4b4a5e18b6e4f4a2a352ef85031eecbe6af8c780
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113118411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118067566"
 ---
 # <a name="high-dpi-reference"></a>Referência de DPI alto
 

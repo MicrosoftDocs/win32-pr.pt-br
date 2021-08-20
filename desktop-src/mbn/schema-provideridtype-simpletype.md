@@ -11,12 +11,12 @@ api_name:
 - providerIdType
 api_type:
 - Schema
-ms.openlocfilehash: ec3c952395be048d18305172e64618fa26313f46
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 545629755174d74170c54e6ce85eabe9a82f13709cf83e3029d05949cb8aadcb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118065890"
 ---
 # <a name="provideridtype-simple-type"></a>Tipo simples de providerIdType
 
@@ -46,7 +46,7 @@ O tipo simples **providerIdType** é um token que é restrito pelo seguinte padr
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

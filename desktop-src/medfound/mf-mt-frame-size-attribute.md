@@ -1,17 +1,17 @@
 ---
 description: Largura e altura de um quadro de vídeo, em pixels.
 ms.assetid: 9f10a972-406f-47ef-b71c-86ed771c9a9a
-title: Atributo MF_MT_FRAME_SIZE (Mfapi. h)
+title: MF_MT_FRAME_SIZE atributo (Mfapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d3d6278cdbd4c279c498839cb183b3331fe1efc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d0801e9fb074521c7ca22a0feb21d84687ad0d00aad8156e16733786523f6e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118060177"
 ---
-# <a name="mf_mt_frame_size-attribute"></a>\_Atributo de \_ tamanho de quadro MF MT \_
+# <a name="mf_mt_frame_size-attribute"></a>Atributo \_ MF MT \_ FRAME \_ SIZE
 
 Largura e altura de um quadro de vídeo, em pixels.
 
@@ -21,11 +21,11 @@ Largura e altura de um quadro de vídeo, em pixels.
 
 ## <a name="remarks"></a>Comentários
 
-Os bits superiores de 32 contêm a largura e os bits de 32 inferiores contêm a altura.
+Os 32 bits superiores contêm a largura e os 32 bits inferiores contêm a altura.
 
-Para definir esse atributo, use a função [**MFSetAttributeSize**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributesize) . Para obter esse atributo, use a função [**MFGetAttributeSize**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributesize) .
+Para definir esse atributo, use a [**função MFSetAttributeSize.**](/windows/desktop/api/mfapi/nf-mfapi-mfsetattributesize) Para obter esse atributo, use a [**função MFGetAttributeSize.**](/windows/desktop/api/mfapi/nf-mfapi-mfgetattributesize)
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="examples"></a>Exemplos
 
@@ -52,9 +52,9 @@ inline HRESULT GetFrameSize(IMFMediaType *pType, UINT32 *pWidth, UINT32 *pHeight
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                              |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                        |
-| parâmetro<br/>                   | <dl> <dt>Mfapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos \| UWP de aplicativos da área de trabalho do Vista\]<br/>                              |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP do Server 2008 Desktop \|\]<br/>                        |
+| Cabeçalho<br/>                   | <dl> <dt>Mfapi.h</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ inline HRESULT GetFrameSize(IMFMediaType *pType, UINT32 *pWidth, UINT32 *pHeight
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [**IMFMediaType**](/windows/desktop/api/mfobjects/nn-mfobjects-imfmediatype)

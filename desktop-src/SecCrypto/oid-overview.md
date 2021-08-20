@@ -4,12 +4,12 @@ ms.assetid: 95e992fe-af30-4b4e-b20d-cfe5318d0a38
 title: Visão geral de OID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9cc371d18bd144ac68c7bc95d7b3ef71140b2e1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 85251fa2f7084a2c0a4f691216592edaba79109af4c7651de54764a802642c90
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103829313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117979891"
 ---
 # <a name="oid-overview"></a>Visão geral de OID
 

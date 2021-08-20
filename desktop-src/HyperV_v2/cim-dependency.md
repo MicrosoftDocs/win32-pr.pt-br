@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4e85f59b190e0024fc34489315fa2fae1c0d6b34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d6ea83e02243d5185e82bdebf77a206737a569980deb390e8ffd60c3dfa4b7b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764693"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813093"
 ---
 # <a name="cim_dependency-class-hyper-v-management"></a>Classe CIM_Dependency (gerenciamento do Hyper-V)
 

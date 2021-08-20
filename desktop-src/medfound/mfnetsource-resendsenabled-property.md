@@ -4,12 +4,12 @@ ms.assetid: 7956536d-9f3d-4875-8006-17e2cd577b61
 title: Propriedade MFNETSOURCE_RESENDSENABLED (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c2646a9ef3e23fbcc9b3dff205f87d268115177
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 46cf865926ce47cfe945fddf7e4e04ed32828a7f95647cf66caea1eb3d008246
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117690631"
 ---
 # <a name="mfnetsource_resendsenabled-property"></a>\_Propriedade MFNETSOURCE RESENDSENABLED
 
@@ -45,9 +45,9 @@ O valor padrão dessa propriedade é **true**.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 
 

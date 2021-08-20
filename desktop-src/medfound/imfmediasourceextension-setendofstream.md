@@ -1,7 +1,7 @@
 ---
-description: Indica que o fim do fluxo de mídia foi atingido.
+description: Indique que o final do fluxo de mídia foi atingido.
 ms.assetid: 6d6bffcc-aa3c-4825-9268-00dcd2a347e6
-title: 'Método IMFMediaSourceExtension:: SetEndOfStream'
+title: Método IMFMediaSourceExtension::SetEndOfStream
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - mfmediaengine.h
-ms.openlocfilehash: 9018d76ce13bf441ea98134eb751f9e472f6bca8
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 29937a939dd8d087e1a70224950ddd8d14eea8989127dc9f33c2747468db4b5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105793700"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118062965"
 ---
-# <a name="imfmediasourceextensionsetendofstream-method"></a>Método IMFMediaSourceExtension:: SetEndOfStream
+# <a name="imfmediasourceextensionsetendofstream-method"></a>Método IMFMediaSourceExtension::SetEndOfStream
 
-Indica que o fim do fluxo de mídia foi atingido.
+Indique que o final do fluxo de mídia foi atingido.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,16 +39,16 @@ HRESULT SetEndOfStream(
 
 <dl> <dt>
 
-*erro* \[ do no\]
+*erro* \[ Em\]
 </dt> <dd>
 
 Usado para passar informações de erro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,9 +56,9 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                                      |
-| INSERI<br/>                      | <dl> <dt>Mfmediaengine. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8.1 somente aplicativos da área de trabalho\]<br/>                                                 |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 Somente \[ aplicativos da área de trabalho R2\]<br/>                                      |
+| Idl<br/>                      | <dl> <dt>Mfmediaengine.idl</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 [**IMFMediaSourceExtension**](/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediasourceextension)
 </dt> <dt>
 
-[**erro do MF \_ MSE \_**](mf-mse-error.md)
+[**ERRO \_ MF MSE \_**](mf-mse-error.md)
 </dt> </dl>
 
  

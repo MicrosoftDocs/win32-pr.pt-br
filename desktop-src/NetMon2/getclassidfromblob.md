@@ -1,7 +1,7 @@
 ---
 description: A função GetClassIDFromBlob recupera um valor de identificador de classe nomeado de um BLOB.
 ms.assetid: fef29a42-ccd3-4655-958c-d150e5bcd0d7
-title: Função GetClassIDFromBlob (Netmon. h)
+title: Função GetClassIDFromBlob (Netmon.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Npptools.dll
-ms.openlocfilehash: 70122422c47a986058322ca8d17082093e02a4b6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c580d03ea3c2b2b1670f37d470d8075407dc507d9d738df236548ee758371697
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117795725"
 ---
 # <a name="getclassidfromblob-function"></a>Função GetClassIDFromBlob
 
-A função **GetClassIDFromBlob** recupera um valor de identificador de classe nomeado de um blob.
+A **função GetClassIDFromBlob** recupera um valor de identificador de classe nomeado de um BLOB.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,44 +43,44 @@ DWORD GetClassIDFromBlob(
 
 <dl> <dt>
 
-*hBlob* \[ no\]
+*hBlob* \[ Em\]
 </dt> <dd>
 
-Identificador para um BLOB.
+Lidar com um BLOB.
 
 </dd> <dt>
 
-*pOwnerName* \[ no\]
+*pOwnerName* \[ Em\]
 </dt> <dd>
 
 Ponteiro para o nome do proprietário do BLOB.
 
 </dd> <dt>
 
-*pCategoryName* \[ no\]
+*pCategoryName* \[ Em\]
 </dt> <dd>
 
-Ponteiro para o nome da categoria de BLOB.
+Ponteiro para o nome da categoria BLOB.
 
 </dd> <dt>
 
-*pTagName* \[ no\]
+*pTagName* \[ Em\]
 </dt> <dd>
 
-Ponteiro para o nome da marca de BLOB.
+Ponteiro para o nome da marca BLOB.
 
 </dd> <dt>
 
-*pCLSID* \[ fora\]
+*pClsID* \[ out\]
 </dt> <dd>
 
-Ponteiro para o identificador de classe de BLOB.
+Ponteiro para o identificador de classe BLOB.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se a função for bem-sucedida, o valor de retorno será NMERR com \_ êxito.
+Se a função for bem-sucedida, o valor de retorno será NMERR \_ SUCCESS.
 
 Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que descreve o erro.
 
@@ -92,8 +92,8 @@ Se a função não for bem-sucedida, o valor de retorno será um valor NMERR que
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>Netmon. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Npptools. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Netmon.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Npptools.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Npptools.dll</dt> </dl> |
 
 

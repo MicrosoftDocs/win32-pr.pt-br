@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 89c6fe6de98a6889446707baeb55e2645e94f1d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9492685e413c3b440b77d4197d2318526ea274fa001bf9dba702a54d0da7e2dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789388"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117897100"
 ---
 # <a name="esentslvpagesnotdeletedexception-constructor"></a>Construtor EsentSLVPagesNotDeletedException
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,6 +56,6 @@ public EsentSLVPagesNotDeletedException()
 
 [Classe EsentSLVPagesNotDeletedException](./esentslvpagesnotdeletedexception-class.md)
 
-[Membros do EsentSLVPagesNotDeletedException](./esentslvpagesnotdeletedexception-members.md)
+[Membros EsentSLVPagesNotDeletedException](./esentslvpagesnotdeletedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

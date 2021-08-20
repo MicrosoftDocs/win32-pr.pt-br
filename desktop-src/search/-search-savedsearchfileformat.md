@@ -27,7 +27,7 @@ No Windows Vista e posterior, os usuários podem salvar pesquisas como uma Pasta
 
 ## <a name="overview-of-saved-searches"></a>Visão geral das pesquisas salvas
 
-Os usuários podem salvar uma consulta de pesquisa como uma Pasta de Pesquisa, uma pasta virtual exibida Windows Explorer na pasta Pesquisas. Abrir uma Pasta de Pesquisa executa a pesquisa salva e exibe os resultados atualizados. O arquivo de pesquisa salvo armazena a consulta em um formato Windows Search pode agir, especificando o que pesquisar, onde pesquisar e como apresentar os resultados.
+Os usuários podem salvar uma consulta de pesquisa como uma Pasta de Pesquisa, uma pasta virtual exibida no Windows Explorer na pasta Pesquisas. Abrir uma Pasta de Pesquisa executa a pesquisa salva e exibe os resultados atualizados. O arquivo de pesquisa salvo armazena a consulta em um formato Windows Search pode agir, especificando o que pesquisar, onde pesquisar e como apresentar os resultados.
 
 A pesquisa salva é gerada de um arquivo XML ( \* .search-ms) na pasta %userprofile% \\ Searches. Os dados são divididos em três elementos primários no arquivo XML:
 

@@ -1,37 +1,37 @@
 ---
-title: Usar o DRED com para diagnosticar falhas de GPU
+title: Usar o DRED para diagnosticar falhas de GPU
 description: O dispositivo removeu dados estendidos (DRED com) é um conjunto crescente de recursos de diagnóstico projetados para ajudá-lo a identificar a causa de erros inesperados de remoção do dispositivo.
 ms.custom: 19H1
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 04/19/2019
-ms.openlocfilehash: bbc754239210899e804d41a294e8c9f47967fb25
-ms.sourcegitcommit: 780d4b1601c45658ef0b799b80d13f45a53d808d
+ms.openlocfilehash: ecb18b81107123564e265e49fad61c004b17938f732b373311743bf64bd92fab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "104548235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118097640"
 ---
-# <a name="use-dred-to-diagnose-gpu-faults"></a>Usar o DRED com para diagnosticar falhas de GPU
+# <a name="use-dred-to-diagnose-gpu-faults"></a>Usar o DRED para diagnosticar falhas de GPU
 DRED com significa dados estendidos removidos do dispositivo. DRED com é um conjunto em evolução de recursos de diagnóstico projetados para ajudá-lo a identificar a causa de erros inesperados de remoção de dispositivo. Em hardware que dá suporte aos recursos necessários (conforme definido abaixo), o DRED com fornece trilhas automáticas, bem como o relatório de falhas de página da GPU.
 
 ## <a name="auto-breadcrumbs"></a>Trilhas automáticas
 Para definir a cena para as trilhas automáticas, vamos primeiro mencionar a variedade manual. Ao prever a eventualidade de uma [TdR (detecção de tempo limite e recuperação)](/windows-hardware/drivers/display/timeout-detection-and-recovery), você pode usar o [método ID3D12GraphicsCommandList2:: WriteBufferImmediate](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist2-writebufferimmediate) para posicionar as *trilhas* no fluxo de comando da GPU, a fim de acompanhar o progresso da GPU.
 
-Essa é uma abordagem razoável se você quiser criar uma implementação personalizada e de baixa sobrecarga. Mas pode não ter alguma versatilidade de uma solução padronizada, como extensões do depurador ou relatórios via [relatório de erros do Windows (WER)](/windows/desktop/wer/windows-error-reporting) (também conhecido como Watson).
+Essa é uma abordagem razoável se você quiser criar uma implementação personalizada e de baixa sobrecarga. mas pode não ter alguma versatilidade de uma solução padronizada, como extensões do depurador ou relatórios via [Relatório de Erros do Windows (WER)](/windows/desktop/wer/windows-error-reporting) (também conhecido como Watson).
 
 Portanto, as trilhas automáticas do DRED com chamam **WriteBufferImmediate** para posicionar os contadores de progresso no fluxo do comando da GPU. DRED com insere um breadcrumb após cada *op de renderização*, &mdash; o que significa todas as operações que resultam em trabalho de GPU (por exemplo, **empate**, **expedição**, **cópia**, **resolução** e outros). Se o dispositivo for removido no meio de uma carga de trabalho de GPU, o valor de trilha de DRED com será essencialmente uma coleção de operações de renderização concluídas antes do erro.
 
 O buffer de anéis do histórico de navegação estrutural retém até operações 64KiB em uma determinada lista de comandos. Se houver mais de 65536 operações em uma lista de comandos, somente as últimas operações de 64KiB serão armazenadas &mdash; substituindo primeiro as operações mais antigas. No entanto, o valor do contador de navegação estrutural continua a contagem até `UINT_MAX` . Portanto, LastOpIndex = (BreadcrumbCount-1) %65536.
 
-O DRED com 1,0 foi disponibilizado pela primeira vez no Windows 10, versão 1809 (atualização do Windows 10 de outubro de 2018) e trilhas de controle automáticos rudimentares são expostas. No entanto, não havia nenhuma API para ela, e a única maneira de habilitar o Dred com 1,0 era usar o **Hub de comentários** para capturar uma reprodução de TDR (reprodução) para **aplicativos & jogos** de \> **desempenho e compatibilidade do jogo**. A principal finalidade do DRED com 1,0 foi ajudar a gerar falhas do jogo por meio de comentários do cliente.
+o dred com 1,0 foi disponibilizado pela primeira vez em Windows 10, versão 1809 (Atualização de outubro de 2018 para o Windows 10), e ele expôs trilhas de autoria. No entanto, não havia nenhuma API para ela, e a única maneira de habilitar o Dred com 1,0 era usar o **Hub de comentários** para capturar uma reprodução de TDR (reprodução) para **aplicativos & jogos** de \> **desempenho e compatibilidade do jogo**. A principal finalidade do DRED com 1,0 foi ajudar a gerar falhas do jogo por meio de comentários do cliente.
 ### <a name="caveats"></a>Advertências
 - Como uma GPU é muito pipeline, não há garantia de que o contador de navegação estrutural indica a operação exata que falhou. Na verdade, em alguns dispositivos de renderização adiados baseados em bloco, é possível que o contador de navegação estrutural seja um recurso completo ou uma barreira de UAV (exibição de acesso não ordenado) por trás do andamento real da GPU.
 - Um driver de vídeo pode reordenar comandos, buscar previamente a memória do recurso antes de executar um comando ou liberar a memória armazenada em cache bem após a conclusão de um comando. Qualquer um deles pode produzir um erro de GPU. Nesses casos, os contadores de Breadcrumbs automáticos podem ser menos úteis ou enganosos.
 ### <a name="performance"></a>Desempenho
 Embora as trilhas automáticas sejam projetadas para serem de baixa sobrecarga, elas não são gratuitas. As medições de empírica mostram 2-5% de perda de desempenho em um mecanismo típico de jogos de gráficos AAA Direct3D 12. Por esse motivo, as trilhas automáticas estão desativadas por padrão.
 ### <a name="hardware-requirements"></a>Requisitos de hardware
-Como os valores do contador de navegação estrutural devem ser preservados após a remoção do dispositivo, o recurso que contém as trilhas deve existir na memória do sistema e deve persistir no caso de remoção do dispositivo. Isso significa que o driver de vídeo precisa dar suporte a [**D3D12_FEATURE_EXISTING_HEAPS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_feature). Felizmente, esse é o caso para a maioria dos drivers de exibição do Direct3D 12 no Windows 10, versão 1903.
+Como os valores do contador de navegação estrutural devem ser preservados após a remoção do dispositivo, o recurso que contém as trilhas deve existir na memória do sistema e deve persistir no caso de remoção do dispositivo. Isso significa que o driver de vídeo precisa dar suporte a [**D3D12_FEATURE_EXISTING_HEAPS**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_feature). felizmente, esse é o caso para a maioria dos drivers de exibição do Direct3D 12 em Windows 10, versão 1903.
 ## <a name="gpu-page-fault-reporting"></a>Relatório de falhas de página de GPU
 Um recurso novo para DRED com 1,1 é o relatório de falhas de página de GPU DRED com. Uma falha de página de GPU geralmente ocorre em uma dessas condições.
 
@@ -93,4 +93,4 @@ Os depuradores têm acesso aos dados do DRED com por meio do **d3d12!** Exporta�
 ## <a name="dred-telemetry"></a>Telemetria DRED com
 Seu aplicativo pode usar as APIs DRED com para controlar os recursos do DRED com e coletar telemetria para ajudar a analisar problemas. Isso lhe dá uma rede muito mais ampla para capturar as TDRs de difícil reprodução.
 
-A partir do Windows 10, versão 1903, todos os eventos removidos do dispositivo no modo de usuário são relatados para [relatório de erros do Windows (WER)](/windows/desktop/wer/windows-error-reporting), também conhecido como Watson. Se uma combinação específica de aplicativo, GPU e driver de vídeo gerar um número suficiente de eventos removidos do dispositivo, será possível que o DRED com seja temporariamente habilitado para clientes que iniciam o mesmo aplicativo em uma configuração semelhante.
+a partir do Windows 10, a versão 1903, todos os eventos removidos do dispositivo no modo de usuário são relatados para [Relatório de Erros do Windows (WER)](/windows/desktop/wer/windows-error-reporting), também conhecido como Watson. Se uma combinação específica de aplicativo, GPU e driver de vídeo gerar um número suficiente de eventos removidos do dispositivo, será possível que o DRED com seja temporariamente habilitado para clientes que iniciam o mesmo aplicativo em uma configuração semelhante.

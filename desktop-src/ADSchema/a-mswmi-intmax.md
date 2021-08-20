@@ -1,11 +1,11 @@
 ---
-title: atributo ms-WMI-intMax
-description: O valor máximo para um objeto de parâmetro de inteiro do WMI 32-bit.
+title: Atributo ms-WMI-intMax
+description: O valor máximo para um objeto de parâmetro inteiro de 32 bits WMI.
 ms.assetid: d1ac3efc-fce3-42d2-98ec-ca0f7e6fcb4e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-WMI-intMax
-- Esquema de AD do atributo msWMI-IntMax
+- Esquema do AD do atributo ms-WMI-intMax
+- Esquema do AD do atributo msWMI-IntMax
 topic_type:
 - apiref
 api_name:
@@ -21,21 +21,21 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117837549"
 ---
-# <a name="ms-wmi-intmax-attribute"></a>atributo ms-WMI-intMax
+# <a name="ms-wmi-intmax-attribute"></a>Atributo ms-WMI-intMax
 
-O valor máximo para um objeto de parâmetro de inteiro do WMI 32-bit.
+O valor máximo para um objeto de parâmetro inteiro de 32 bits WMI.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-WMI-intMax                        |
-| LDAP-Display-Name | msWMI-IntMax                         |
+| CN                | ms-WMI-intMax                        |
+| Ldap-Display-Name | msWMI-IntMax                         |
 | Tamanho              | 4 bytes                              |
-| Privilégio de atualização  | Administrador de Política de Grupo           |
+| Privilégio de atualização  | Política de Grupo administrador           |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1629              |
-| System-ID-GUID    | fb920c2c-f294-4426-8ac1-d24b42aa2bce |
+| System-Id-Guid    | fb920c2c-f294-4426-8ac1-d24b42aa2bce |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -57,10 +57,10 @@ O valor máximo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Verdadeiro         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -78,10 +78,10 @@ O valor máximo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Verdadeiro         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -99,10 +99,10 @@ O valor máximo para um objeto de parâmetro de inteiro do WMI 32-bit.
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
 | System-Only            | Falso        |
-| É de valor único       | Verdadeiro         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |

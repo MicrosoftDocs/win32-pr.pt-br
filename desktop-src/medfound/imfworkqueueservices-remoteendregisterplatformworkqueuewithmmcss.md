@@ -1,7 +1,7 @@
 ---
-description: 'Versão remota do método IMFWorkQueueServices:: EndRegisterPlatformWorkQueueWithMMCSS.'
+description: Versão remota do método IMFWorkQueueServices::EndRegisterPlatformWorkQueueWithMMCSS.
 ms.assetid: cb15129e-a3ad-4351-a7d6-dd4b883437bd
-title: RemoteEndRegisterPlatformWorkQueueWithMMCSS (Mfobjects. h)
+title: RemoteEndRegisterPlatformWorkQueueWithMMCSS (Mfobjects.h)
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: a14414d9fe6d093ee797d8c9e4879bd54cf89b3dbfc60b526ae8556f78ecc34e
@@ -13,7 +13,7 @@ ms.locfileid: "117878293"
 ---
 # <a name="remoteendregisterplatformworkqueuewithmmcss"></a>RemoteEndRegisterPlatformWorkQueueWithMMCSS
 
-Versão remota do método [**IMFWorkQueueServices:: EndRegisterPlatformWorkQueueWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-endregisterplatformworkqueuewithmmcss) .
+Versão remota do [**método IMFWorkQueueServices::EndRegisterPlatformWorkQueueWithMMCSS.**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-endregisterplatformworkqueuewithmmcss)
 
 ``` syntax
 [call_as(EndRegisterPlatformWorkQueueWithMMCSS)]
@@ -25,7 +25,7 @@ HRESULT RemoteEndRegisterPlatformWorkQueueWithMMCSS(
 
 ## <a name="remarks"></a>Comentários
 
-Os aplicativos não podem chamar esse método diretamente e os objetos não implementam esse método. O método não aparece no vtable para a interface. Se [**EndRegisterPlatformWorkQueueWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-endregisterplatformworkqueuewithmmcss) for chamado entre limites de processo, a dll Media Foundation proxy/stub converterá a chamada em uma chamada para o método remoto e a converterá de volta.
+Os aplicativos não podem chamar esse método diretamente e os objetos não implementam esse método. O método não aparece na vtable para a interface . Se [**EndRegisterPlatformWorkQueueWithMMCSS**](/windows/desktop/api/mfidl/nf-mfidl-imfworkqueueservices-endregisterplatformworkqueuewithmmcss) for chamado entre limites de processo, a DLL de proxy/stub do Media Foundation converterá a chamada em uma chamada para o método remoto e a converterá de volta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -33,10 +33,10 @@ Os aplicativos não podem chamar esse método diretamente e os objetos não impl
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>Mfuuid. lib</dt> </dl>                    |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects.h (inclua Mfidl.h)</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>Mfuuid.lib</dt> </dl>                    |
 
 
 
