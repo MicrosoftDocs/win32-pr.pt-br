@@ -1,6 +1,6 @@
 ---
 title: Atributo de taxa de bits
-description: O atributo de taxa de bits é a taxa de bit do item, em bits por segundo.
+description: O atributo Taxa de bits é a taxa de bits do item, em bits por segundo.
 ms.assetid: 19117ca7-fad3-469e-8208-c0b899e13919
 keywords:
 - Atributo de taxa de bits Windows Media Player
@@ -12,32 +12,32 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9869ffdf9df85fdfb019d6a088fabfb0cb05c2b3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 12b767dc6b67d7b27e87f3321f2c923c8edb8a0f13a75b345c81d1380b4ef9a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120104"
 ---
 # <a name="bitrate-attribute"></a>Atributo de taxa de bits
 
-O **atributo de taxa de** bits é a taxa de bit do item, em bits por segundo.
+O **atributo Taxa de** bits é a taxa de bits do item, em bits por segundo.
 
 ## <a name="applies-to"></a>Aplica-se A
 
 -   [Itens de áudio](audio-item-attributes.md)
--   [Arquivos de mídia do Windows comumente usados](commonly-used-windows-media-file-attributes.md)
+-   [Arquivos de mídia Windows comumente usados](commonly-used-windows-media-file-attributes.md)
 -   [Outros itens](other-item-attributes.md)
 -   [Itens de rádio](radio-item-attributes.md)
 -   [Itens de vídeo](video-item-attributes.md)
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado tanto na biblioteca quanto no arquivo de mídia digital.
+Esse atributo é armazenado na biblioteca e no arquivo de mídia digital.
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMBitrate.
+A Windows constante do SDK de Formato de Mídia para esse atributo é g \_ wszWMBitrate.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

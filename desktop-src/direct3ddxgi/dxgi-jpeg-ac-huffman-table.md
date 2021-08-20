@@ -1,7 +1,7 @@
 ---
-description: Descreve uma tabela JPEG AC jpeg.
+description: Descreve uma tabela de Huffman de AC JPEG.
 ms.assetid: E1923FFA-E7E5-4158-9793-3E7F5A6EA7FA
-title: DXGI_JPEG_AC_HUFFMAN_TABLE estrutura (Dxgitype.h)
+title: Estrutura de DXGI_JPEG_AC_HUFFMAN_TABLE (Dxgitype. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118518369"
 ---
-# <a name="dxgi_jpeg_ac_huffman_table-structure"></a>Estrutura TABLE DO AC \_ \_ JPEG \_ DE \_ DXGI
+# <a name="dxgi_jpeg_ac_huffman_table-structure"></a>Estrutura de tabela do DXGI \_ JPEG \_ AC- \_ HUFFMAN \_
 
-Descreve uma tabela JPEG AC jpeg.
+Descreve uma tabela de Huffman de AC JPEG.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,7 +50,7 @@ O número de códigos para cada comprimento de código.
 **CodeValues**
 </dt> <dd>
 
-Os valores de código do Gatesman, em ordem de aumentar o comprimento do código.
+Os valores do código Huffman, em ordem de aumento do tamanho do código.
 
 </dd> </dl>
 
@@ -60,7 +60,7 @@ Os valores de código do Gatesman, em ordem de aumentar o comprimento do código
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Dxgitype.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dxgitype. h</dt> </dl> |
 
 
 

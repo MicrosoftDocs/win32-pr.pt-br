@@ -1,9 +1,9 @@
 ---
-title: WM/Codec
-description: O atributo WM/Codec contém o nome do codec usado para codificar o conteúdo.
+title: WM/codec
+description: O atributo WM/codec contém o nome do codec usado para codificar o conteúdo.
 ms.assetid: 07e7828c-5a8d-4f68-84c0-acf37916a32c
 keywords:
-- Formato de mídia do Windows WM/Codec
+- Formato de mídia do WM/codec do Windows
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117844488"
 ---
-# <a name="wmcodec"></a>WM/Codec
+# <a name="wmcodec"></a>WM/codec
 
-O **atributo WM/Codec** contém o nome do codec usado para codificar o conteúdo.
+O atributo **WM/codec** contém o nome do codec usado para codificar o conteúdo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMCodec
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
+**Cadeia de caracteres do \_ tipo WMT \_**
 
 ## <a name="see-also"></a>Confira também
 

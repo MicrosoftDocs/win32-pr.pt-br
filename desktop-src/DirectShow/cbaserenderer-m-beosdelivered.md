@@ -1,7 +1,7 @@
 ---
-description: Sinalizador que indica se o filtro postou o evento de conclusão do EC \_ .
+description: Sinalizador que indica se o filtro postou o evento EC \_ COMPLETE.
 ms.assetid: db739f08-cd12-4b9d-91f2-970db3d823c4
-title: 'Membro CBaseRenderer:: m_bEOSDelivered (Renbase. h)'
+title: Membro CBaseRenderer::m_bEOSDelivered (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: eff219f560c6570845002f2a7e27bf47da93e1e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5df1599c4a81a27094ed251e81538e11de852dd13b15a9d3e27385e0d274919e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754551"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118403185"
 ---
-# <a name="cbaserendererm_beosdelivered-member"></a>Membro de CBaseRenderer:: m \_ bEOSDelivered
+# <a name="cbaserendererm_beosdelivered-member"></a>Membro CBaseRenderer::m \_ bEOSDelivered
 
-Sinalizador que indica se o filtro postou o evento de conclusão do EC \_ .
+Sinalizador que indica se o filtro postou o evento EC \_ COMPLETE.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ BOOL m_bEOSDelivered;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -12,18 +12,18 @@ api_name:
 api_type:
 - Schema
 api_location: ''
-ms.openlocfilehash: a31feb123e31489c751b7844e06d5c344278778e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5293a6e69c1384922572764674cbadd9980702c49f8945518ff9b0c56beee2d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787049"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797916"
 ---
 # <a name="ouiheader-ihv-element"></a>Elemento OUIHeader (IHV)
 
 O elemento OUIHeader (IHV) identifica o IHV.
 
-**Windows XP com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.
+**Windows xp com SP3 e API de LAN sem fio para Windows XP com SP2:** Não há suporte para este elemento.
 
 ``` syntax
 <xs:element name="OUIHeader">
@@ -81,8 +81,8 @@ O elemento é definido pelo elemento [**IHV**](wlan-profileschema-ihv-wlanprofil
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

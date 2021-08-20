@@ -1,7 +1,7 @@
 ---
-description: Avalia uma expressão e exibe uma mensagem de diagnóstico se a expressão for falsa. Ignorado em compilações de varejo.
+description: Avalia uma expressão e exibe uma mensagem de diagnóstico se a expressão for FALSE. Ignorado em builds de varejo.
 ms.assetid: 8c3815bb-3164-4066-a947-974e791af5cd
-title: Macro ASSERT (Wxdebug. h)
+title: Macro ASSERT (Wxdebug.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,7 +22,7 @@ ms.locfileid: "117824425"
 ---
 # <a name="assert-macro"></a>Macro ASSERT
 
-Avalia uma expressão e exibe uma mensagem de diagnóstico se a expressão for **falsa**. Ignorado em compilações de varejo.
+Avalia uma expressão e exibe uma mensagem de diagnóstico se a expressão for **FALSE.** Ignorado em builds de varejo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,7 +39,7 @@ void ASSERT(
 
 <dl> <dt>
 
-*condicional* 
+*Cond* 
 </dt> <dd>
 
 Expressão para avaliar.
@@ -52,7 +52,7 @@ Essa macro não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Em compilações de depuração, se a expressão for **false**, essa macro exibirá uma caixa de mensagem com o texto da expressão, o nome do arquivo de origem e o número da linha. O usuário pode ignorar a asserção, inserir o depurador ou sair do aplicativo.
+Em builds de depuração, se a expressão for **FALSE**, essa macro exibirá uma caixa de mensagem com o texto da expressão, o nome do arquivo de origem e o número de linha. O usuário pode ignorar a asserção, inserir o depurador ou sair do aplicativo.
 
 ## <a name="examples"></a>Exemplos
 
@@ -69,7 +69,7 @@ ASSERT(rtStartTime <= rtEndTime);
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wxdebug. h (incluir Fluxos. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wxdebug.h (incluir Fluxos.h)</dt> </dl> |
 
 
 
@@ -77,7 +77,7 @@ ASSERT(rtStartTime <= rtEndTime);
 
 <dl> <dt>
 
-[Macros Assert e Breakpoint](assert-and-breakpoint-macros.md)
+[Macros assert e breakpoint](assert-and-breakpoint-macros.md)
 </dt> </dl>
 
  

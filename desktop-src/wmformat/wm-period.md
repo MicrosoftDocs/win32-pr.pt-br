@@ -1,9 +1,9 @@
 ---
-title: WM/Período
-description: O atributo WM/Period contém o período do conteúdo.
+title: WM/período
+description: O atributo WM/period contém o período do conteúdo.
 ms.assetid: 16c9d862-8d38-40cc-ae04-178cdea1f750
 keywords:
-- Formato de mídia do Windows WM/Período
+- Formato de mídia do Windows do WM/period
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117844426"
 ---
-# <a name="wmperiod"></a>WM/Período
+# <a name="wmperiod"></a>WM/período
 
-O **atributo WM/Period** contém o período do conteúdo.
+O atributo **WM/period** contém o período do conteúdo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMPeriod
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
+**Cadeia de caracteres do \_ tipo WMT \_**
 
 ## <a name="example"></a>Exemplo
 

@@ -1,7 +1,7 @@
 ---
-description: Links para documentação para os métodos e propriedades do wrapper de interoperabilidade do IAzApplicationGroup.
+description: Links para a documentação dos métodos e propriedades de wrapper de interoperabilidade IAzApplicationGroup.
 ms.assetid: 84fb73b1-84e5-4835-b040-f558b92242ef
-title: Interface Microsoft. Interop. Security. AzRoles. IAzApplicationGroup
+title: Interface Microsoft.Interop.Security.AzRoles.IAzApplicationGroup
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -99,49 +99,49 @@ api_type:
 - COM
 api_location:
 - Microsoft.Interop.Security.Azroles.dll
-ms.openlocfilehash: a21b28a2380ad1bcb88eea81fa3247ee7d44e4e5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 54b2daa49ed9f9da82bdb2740e44621380e53c46272f201c10fddd96f23feefd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105754130"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913172"
 ---
-# <a name="microsoftinteropsecurityazrolesiazapplicationgroup-interface"></a>Interface Microsoft. Interop. Security. AzRoles. IAzApplicationGroup
+# <a name="microsoftinteropsecurityazrolesiazapplicationgroup-interface"></a>Interface Microsoft.Interop.Security.AzRoles.IAzApplicationGroup
 
-Os métodos e as propriedades do wrapper de interoperabilidade **Microsoft. Interop. Security. Azroles. IAzApplicationGroup** são documentados na versão com do método ou da propriedade. Um link para a documentação COM correlacionada segue cada nome de membro.
+Os métodos e propriedades de wrapper de interoperabilidade **Microsoft.Interop.Security.Azroles.IAzApplicationGroup** são documentados na versão COM do método ou propriedade. Um link para a documentação COM de correlação segue cada nome de membro.
 
 ## <a name="members"></a>Membros
 
-A interface **Microsoft. Interop. Security. AzRoles. IAzApplicationGroup** tem estes tipos de membros:
+A interface **Microsoft.Interop.Security.AzRoles.IAzApplicationGroup** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A interface **Microsoft. Interop. Security. AzRoles. IAzApplicationGroup** tem esses métodos.
+A interface **Microsoft.Interop.Security.AzRoles.IAzApplicationGroup** tem esses métodos.
 
 
 
 | Método                                                                         | Descrição                                                                                            |
 |:-------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. AddAppMember**        | [**IAzApplicationGroup::AddAppMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addappmember)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. AddAppNonMember**     | [**IAzApplicationGroup::AddAppNonMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addappnonmember)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. AddMember**           | [**IAzApplicationGroup:: AddMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addmember)<br/>                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. addmembername**       | [**IAzApplicationGroup:: addmembername**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addmembername)<br/>             |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. AddNonMember**        | [**IAzApplicationGroup::AddNonMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addnonmember)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. AddNonMemberName**    | [**IAzApplicationGroup::AddNonMemberName**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addnonmembername)<br/>       |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. AddPropertyItem**     | [**IAzApplicationGroup::AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addpropertyitem)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. DeleteAppMember**     | [**IAzApplicationGroup::D eleteAppMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deleteappmember)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. DeleteAppNonMember**  | [**IAzApplicationGroup::D eleteAppNonMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deleteappnonmember)<br/>   |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. DeleteMember**        | [**IAzApplicationGroup::D eleteMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletemember)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. DeleteMemberName**    | [**IAzApplicationGroup::D eleteMemberName**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletemembername)<br/>       |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. DeleteNonMember**     | [**IAzApplicationGroup::D eleteNonMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletenonmember)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. DeleteNonMemberName** | [**IAzApplicationGroup::D eleteNonMemberName**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletenonmembername)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. DeletePropertyItem**  | [**IAzApplicationGroup::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletepropertyitem)<br/>   |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. GetProperty**         | [**IAzApplicationGroup:: GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-getproperty)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. SetProperty**         | [**IAzApplicationGroup:: SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-setproperty)<br/>                 |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. Submit**              | [**IAzApplicationGroup:: enviar**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-submit)<br/>                           |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AddAppMember**        | [**IAzApplicationGroup::AddAppMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addappmember)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AddAppNonMember**     | [**IAzApplicationGroup::AddAppNonMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addappnonmember)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AddMember**           | [**IAzApplicationGroup::AddMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addmember)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AddMemberName**       | [**IAzApplicationGroup::AddMemberName**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addmembername)<br/>             |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AddNonMember**        | [**IAzApplicationGroup::AddNonMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addnonmember)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AddNonMemberName**    | [**IAzApplicationGroup::AddNonMemberName**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addnonmembername)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AddPropertyItem**     | [**IAzApplicationGroup::AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-addpropertyitem)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.DeleteAppMember**     | [**IAzApplicationGroup::D eleteAppMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deleteappmember)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.DeleteAppNonMember**  | [**IAzApplicationGroup::D eleteAppNonMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deleteappnonmember)<br/>   |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.DeleteMember**        | [**IAzApplicationGroup::D eleteMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletemember)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.DeleteMemberName**    | [**IAzApplicationGroup::D eleteMemberName**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletemembername)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.DeleteNonMember**     | [**IAzApplicationGroup::D eleteNonMember**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletenonmember)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.DeleteNonMemberName** | [**IAzApplicationGroup::D eleteNonMemberName**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletenonmembername)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.DeletePropertyItem**  | [**IAzApplicationGroup::D eletePropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-deletepropertyitem)<br/>   |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.GetProperty**         | [**IAzApplicationGroup::GetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-getproperty)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.SetProperty**         | [**IAzApplicationGroup::SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-setproperty)<br/>                 |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Submit**              | [**IAzApplicationGroup::Submit**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-submit)<br/>                           |
 
 
 
@@ -149,23 +149,23 @@ A interface **Microsoft. Interop. Security. AzRoles. IAzApplicationGroup** tem e
 
 ### <a name="properties"></a>Propriedades
 
-A interface **Microsoft. Interop. Security. AzRoles. IAzApplicationGroup** tem essas propriedades.
+A interface **Microsoft.Interop.Security.AzRoles.IAzApplicationGroup** tem essas propriedades.
 
 
 
-| Propriedade                                                                             | Tipo de acesso           | Descrição                                                                                             |
+| Propriedade                                                                             | Tipo de acesso           | Description                                                                                             |
 |:-------------------------------------------------------------------------------------|:----------------------|:--------------------------------------------------------------------------------------------------------|
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. AppMembers**<br/>     | Somente leitura<br/>  | [**Propriedade AppMembers de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appmembers)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. AppNonMembers**<br/>  | Somente leitura<br/>  | [**Propriedade AppNonMembers de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appnonmembers)<br/>   |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. Description**<br/>    | Leitura/gravação<br/> | [**Propriedade de descrição de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_description)<br/>       |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. LdapQuery**<br/>      | Leitura/gravação<br/> | [**Propriedade LdapQuery de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery)<br/>           |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. Members**<br/>        | Somente leitura<br/>  | [**Propriedade Members de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members)<br/>               |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. MemberName**<br/>    | Somente leitura<br/>  | [**Propriedade MemberName de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_membersname)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AppMembers**<br/>     | Somente leitura<br/>  | [**Propriedade AppMembers de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appmembers)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.AppNonMembers**<br/>  | Somente leitura<br/>  | [**Propriedade AppNonMembers de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_appnonmembers)<br/>   |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Description**<br/>    | Leitura/gravação<br/> | [**Propriedade Description de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_description)<br/>       |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.LdapQuery**<br/>      | Leitura/gravação<br/> | [**Propriedade LdapQuery de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_ldapquery)<br/>           |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Members**<br/>        | Somente leitura<br/>  | [**Propriedade Members de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_members)<br/>               |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.MembersName**<br/>    | Somente leitura<br/>  | [**Propriedade MembersName de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_membersname)<br/>       |
 | **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Name**<br/>           | Leitura/gravação<br/> | [**Propriedade Name de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_name)<br/>                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. nonmembers**<br/>     | Somente leitura<br/>  | [**Propriedade nonmembers de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers)<br/>         |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. nonmembername**<br/> | Somente leitura<br/>  | [**Propriedade não MemberName de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembersname)<br/> |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. Type**<br/>           | Leitura/gravação<br/> | [**Propriedade Type de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_type)<br/>                     |
-| **Microsoft. Interop. Security. Azroles. IAzApplicationGroup. Writable**<br/>       | Somente leitura<br/>  | [**Propriedade gravável de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_writable)<br/>             |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.NonMembers**<br/>     | Somente leitura<br/>  | [**Propriedade NonMembers de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembers)<br/>         |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.NonMembersName**<br/> | Somente leitura<br/>  | [**Propriedade NonMembersName de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_nonmembersname)<br/> |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Type**<br/>           | Leitura/gravação<br/> | [**Propriedade Type de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_type)<br/>                     |
+| **Microsoft.Interop.Security.Azroles.IAzApplicationGroup.Writable**<br/>       | Somente leitura<br/>  | [**Propriedade writable de IAzApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplicationgroup-get_writable)<br/>             |
 
 
 

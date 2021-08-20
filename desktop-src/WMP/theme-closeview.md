@@ -1,9 +1,9 @@
 ---
-title: THEME. closeView
-description: O método closeView fecha um modo de exibição aberto.
+title: THEME.closeView
+description: O método closeView fecha uma VIEW aberta.
 ms.assetid: 37b56a7d-8031-4055-95ad-0510105e1c1f
 keywords:
-- THEME. closeView Windows Media Player
+- THEME.closeView Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b39083979809fc2e747c54569db8d03298a951c6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e66a0c56ab2f5fc3d5d6a27d996d8b3f3cf7834c61e62113a40af3c42aeb4d59
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117932541"
 ---
-# <a name="themecloseview"></a>THEME. closeView
+# <a name="themecloseview"></a>THEME.closeView
 
-O método **closeView** fecha um **modo de exibição** aberto.
+O **método closeView** fecha um **VIEW aberto.**
 
 ``` syntax
         theme.closeView(theView)
@@ -32,10 +32,10 @@ O método **closeView** fecha um **modo de exibição** aberto.
 
 <dl> <dt>
 
-<span id="theView"></span><span id="theview"></span><span id="THEVIEW"></span>*Exibição*
+<span id="theView"></span><span id="theview"></span><span id="THEVIEW"></span>*theView*
 </dt> <dd>
 
-Uma **cadeia de caracteres** que especifica a **ID** da **exibição** a ser fechada.
+Uma **Cadeia de** caracteres que especifica a **ID** do **VIEW a** ser fechado.
 
 </dd> </dl>
 
@@ -66,7 +66,7 @@ Esse método não retorna um valor.
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -77,7 +77,7 @@ Esse método não retorna um valor.
 [**Elemento THEME**](theme-element.md)
 </dt> <dt>
 
-[**THEME. openView**](theme-openview.md)
+[**THEME.openView**](theme-openview.md)
 </dt> </dl>
 
  

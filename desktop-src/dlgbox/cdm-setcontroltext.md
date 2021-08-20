@@ -1,9 +1,9 @@
 ---
-title: Mensagem de CDM_SETCONTROLTEXT (Commdlg. h)
-description: Define o texto para o controle especificado em uma caixa de diálogo abrir ou salvar como no estilo do Explorer.
+title: CDM_SETCONTROLTEXT mensagem (Commdlg.h)
+description: Define o texto para o controle especificado em uma caixa de diálogo Abrir ou Salvar como no estilo Explorer.
 ms.assetid: ff0e50b7-a14d-40d1-8576-f93a612f3aa3
 keywords:
-- Caixas de diálogo de CDM_SETCONTROLTEXT mensagem
+- CDM_SETCONTROLTEXT caixa de diálogo de mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 89c82a9144717224871caecf44da352a4e01cac2
-ms.sourcegitcommit: f848119a8faa29b27585f4df53f6e50ee9666684
+ms.openlocfilehash: 75071d465d01be024a97047a134c080226f252a1bd1ffcd41dbecd4f0d469cff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110550121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117721321"
 ---
-# <a name="cdm_setcontroltext-message"></a>\_Mensagem CDM SETCONTROLTEXT
+# <a name="cdm_setcontroltext-message"></a>Mensagem \_ SETCONTROLTEXT do CDM
 
-\[A partir do Windows Vista, as caixas de diálogo **abrir** e **salvar como** comuns foram substituídas pela [caixa de diálogo de item comum](../shell/common-file-dialog.md). Recomendamos que você use a API de caixa de diálogo de item comum em vez dessas caixas de diálogo da biblioteca de caixas de diálogo comuns.\]
+\[Começando com Windows Vista,  as  caixas de diálogo Abrir e Salvar como comuns foram superadas pela caixa [de diálogo Item Comum](../shell/common-file-dialog.md). Recomendamos que você use a API de Diálogo de Item Comum em vez dessas caixas de diálogo da Biblioteca de Caixas de Diálogo Comuns.\]
 
-Define o texto para o controle especificado em uma caixa de diálogo **abrir** ou **salvar como** no estilo do Explorer. A caixa de diálogo deve ter sido criada com o sinalizador **OFN \_ Explorer** ; caso contrário, a mensagem falhará.
+Define o texto para o controle especificado  em uma caixa de diálogo Abrir ou Salvar **como** no estilo Explorer. A caixa de diálogo deve ter sido criada com o **sinalizador OFN \_ EXPLORER;** caso contrário, a mensagem falhará.
 
 
 ```C++
@@ -43,18 +43,18 @@ Define o texto para o controle especificado em uma caixa de diálogo **abrir** o
 *wParam* 
 </dt> <dd>
 
-O identificador do controle para o qual o texto deve ser definido.
+O identificador do controle para cujo texto deve ser definido.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-O novo texto do controle.
+O novo texto para o controle.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
@@ -74,7 +74,7 @@ void CommDlg_OpenSave_SetControlText(hwnd, wparam, lparam)
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -85,18 +85,18 @@ void CommDlg_OpenSave_SetControlText(hwnd, wparam, lparam)
 **Referência**
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[**Getsavefilename**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
-[**DA OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
+[**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
+[Biblioteca de caixas de diálogo comuns](common-dialog-box-library.md)
 </dt> </dl>
 

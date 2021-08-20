@@ -4,12 +4,12 @@ ms.assetid: f9789f1d-35bf-40d6-9724-d5a160a0d06d
 title: Tabela de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a59cd8bf864aa890891873ed92a39225c6eebdf
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 29939553e64fb6558aa6480fb69b7beab208a4ccb3e2c9ce55c4d8fcbfc18cc9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104297900"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117805091"
 ---
 # <a name="media-table"></a>Tabela de mídia
 
@@ -21,12 +21,12 @@ A tabela de mídia contém as colunas mostradas na tabela a seguir.
 
 | Coluna       | Tipo                     | Chave | Nullable |
 |--------------|--------------------------|-----|----------|
-| DiskId       | [Inteiro](integer.md)   | S   | N        |
+| DiskId       | [Inteiro](integer.md)   | Y   | N        |
 | LastSequence | [Inteiro](integer.md)   | N   | N        |
-| DiskPrompt   | [Text](text.md)         | N   | S        |
-| Gabinete      | [Gabinete](cabinet.md)   | N   | S        |
-| VolumeLabel  | [Text](text.md)         | N   | S        |
-| Fonte       | [Propriedade](property.md) | N   | S        |
+| DiskPrompt   | [Text](text.md)         | N   | Y        |
+| Gabinete      | [Gabinete](cabinet.md)   | N   | Y        |
+| VolumeLabel  | [Text](text.md)         | N   | Y        |
+| Fonte       | [Propriedade](property.md) | N   | Y        |
 
 
 
@@ -46,7 +46,7 @@ Determina a ordem de classificação da tabela. Esse número deve ser igual ou m
 <span id="LastSequence"></span><span id="lastsequence"></span><span id="LASTSEQUENCE"></span>LastSequence
 </dt> <dd>
 
-Número de sequência do arquivo para o último arquivo desta mídia. Os números na coluna LastSequence especificam quais dos arquivos na tabela de [arquivos](file-table.md) são encontrados em um determinado disco de origem. Cada disco de origem contém todos os arquivos com números de sequência (conforme mostrado na coluna sequência da tabela de arquivos) menor ou igual ao valor na coluna LastSequence e maior que o valor de LastSequence do disco anterior (ou maior que 0, para a primeira entrada na tabela de mídia). Esse número deve ser não negativo; o limite máximo é de 32767 arquivos. Para obter mais informações sobre como criar um pacote de Windows Installer com mais arquivos, consulte [criando um pacote grande](authoring-a-large-package.md).
+Número de sequência do arquivo para o último arquivo desta mídia. Os números na coluna LastSequence especificam quais dos arquivos na tabela de [arquivos](file-table.md) são encontrados em um determinado disco de origem. Cada disco de origem contém todos os arquivos com números de sequência (conforme mostrado na coluna sequência da tabela de arquivos) menor ou igual ao valor na coluna LastSequence e maior que o valor de LastSequence do disco anterior (ou maior que 0, para a primeira entrada na tabela de mídia). Esse número deve ser não negativo; o limite máximo é de 32767 arquivos. para obter mais informações sobre como criar um pacote de Windows Installer com mais arquivos, consulte [criando um pacote grande](authoring-a-large-package.md).
 
 </dd> <dt>
 
@@ -60,7 +60,7 @@ O nome do disco, que geralmente é o texto visível impresso no disco. Esse text
 <span id="Cabinet"></span><span id="cabinet"></span><span id="CABINET"></span>Gabinete
 </dt> <dd>
 
-O nome do gabinete se alguns ou todos os arquivos armazenados na mídia forem compactados em um arquivo de gabinete. Se nenhum gabinete for usado, essa coluna deverá ficar em branco. O nome do gabinete deve usar a sintaxe do tipo de dados de [gabinete](cabinet.md) . Windows Installer sempre requer uma origem válida para reparar arquivos incluídos em arquivos de gabinete inseridos. Quando Windows Installer instala um pacote que contém um arquivo de gabinete inserido, uma cópia do arquivo de gabinete pode ser salva pelo sistema. Esta cópia não pode ser usada para reparar o arquivo de gabinete. Para conservar o espaço em disco, use arquivos de gabinete externo em vez de arquivos de gabinete inseridos.
+O nome do gabinete se alguns ou todos os arquivos armazenados na mídia forem compactados em um arquivo de gabinete. Se nenhum gabinete for usado, essa coluna deverá ficar em branco. O nome do gabinete deve usar a sintaxe do tipo de dados de [gabinete](cabinet.md) . Windows O instalador sempre requer uma origem válida para reparar arquivos incluídos em arquivos de gabinete inseridos. quando Windows Installer instala um pacote que contém um arquivo de gabinete inserido, uma cópia do arquivo de gabinete pode ser salva pelo sistema. Esta cópia não pode ser usada para reparar o arquivo de gabinete. Para conservar o espaço em disco, use arquivos de gabinete externo em vez de arquivos de gabinete inseridos.
 
 </dd> <dt>
 
@@ -84,7 +84,7 @@ Se o nome do gabinete for precedido por um sinal numérico ( \# ), os arquivos q
 
 Para obter mais informações sobre como adicionar gabinetes às tabelas de arquivos e tabelas de mídia, consulte [usando gabinetes e fontes compactadas](using-cabinets-and-compressed-sources.md).
 
-Windows Installer requer que o arquivo. msi esteja no primeiro disco de mídia removível (CD, DVD ou disquete) usado para a instalação do produto.
+Windows O instalador requer que o arquivo de .msi esteja no primeiro disco de mídia removível (CD, DVD ou disquete) usado para a instalação do produto.
 
 **Determinando o Sourcemode**
 

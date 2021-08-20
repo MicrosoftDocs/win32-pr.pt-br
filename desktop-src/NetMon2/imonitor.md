@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Netmon.h
-ms.openlocfilehash: 1b6ba91860905010fd14a46cd4608eaee3da80fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16199568473315fb61e53428d01c72032f3efff6ea0591bfd72ca2475f854fb5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133097"
 ---
 # <a name="imonitor-interface"></a>Interface IMonitor
 
@@ -41,7 +41,7 @@ A interface **iMonitor** tem esses métodos.
 | [**Configurar doconfigure**](imonitor-doconfigure.md)   | Atualiza a configuração do monitor.<br/>                                                                           |
 | [**Doinitialize**](imonitor-doinitialize.md) | Inicializa um monitor.<br/>                                                                                   |
 | [**Nos quadros**](imonitor-onframes.md)         | Indica o status de um evento de quadro.<br/>                                                                   |
-| [**Star**](imonitor-onstart.md)           | Indica que o monitor foi configurado com êxito e que a captura de dados está prestes a começar.<br/> |
+| [**OnStart**](imonitor-onstart.md)           | Indica que o monitor foi configurado com êxito e que a captura de dados está prestes a começar.<br/> |
 | [**OnStatus**](imonitor-onstatus.md)         | Indica um evento de status NPP.<br/>                                                                           |
 | [**OnStop**](imonitor-onstop.md)             | Indica a conclusão da captura de dados.<br/>                                                                       |
 

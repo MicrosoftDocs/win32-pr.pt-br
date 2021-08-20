@@ -3,7 +3,7 @@ title: Código de notificação de NM_SETCURSOR (exibição em árvore) (commctr
 description: Notifica uma janela pai do controle de exibição de árvore que o controle está definindo o cursor em resposta a uma mensagem do WM \_ SetCursor. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 2b2f2e90-edef-484d-b67a-12983a1cde29
 keywords:
-- Código de notificação de NM_SETCURSOR (exibição de árvore) controles do Windows
+- código de notificação de NM_SETCURSOR (exibição em árvore) Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b40b733e32c72abc9620e0fd18a6ef554aee9214
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b7791ff62fa9ed097052ebd38dae0000d7165519133527044e9716bb7e39c655
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118410453"
 ---
 # <a name="nm_setcursor-tree-view-notification-code"></a>\_Código de notificação do nm SetCursor (modo de exibição de árvore)
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**NMMOUSE**](/windows/win32/api/commctrl/ns-commctr
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornar zero para habilitar o controle para definir o cursor ou diferente de zero para impedir que o controle defina o cursor.
 
@@ -55,9 +55,9 @@ Retornar zero para habilitar o controle para definir o cursor ou diferente de ze
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

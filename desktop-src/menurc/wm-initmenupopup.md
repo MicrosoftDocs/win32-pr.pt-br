@@ -1,9 +1,9 @@
 ---
-title: WM_INITMENUPOPUP mensagem (Winuser.h)
-description: WM_INITMENUPOPUP mensagem – enviada quando um menu suspenso ou submenu está prestes a se tornar ativo. Isso permite que um aplicativo modifique o menu antes de ser exibido, sem alterar o menu inteiro.
+title: Mensagem de WM_INITMENUPOPUP (WinUser. h)
+description: WM_INITMENUPOPUP mensagem enviada quando um menu suspenso ou submenu está prestes a ficar ativo. Isso permite que um aplicativo modifique o menu antes que ele seja exibido, sem alterar o menu inteiro.
 ms.assetid: 08ae1a78-5e68-488c-9b77-ee42044ca3ab
 keywords:
-- WM_INITMENUPOPUP menus de mensagem e outros recursos
+- WM_INITMENUPOPUP menus de mensagens e outros recursos
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117869595"
 ---
-# <a name="wm_initmenupopup-message"></a>Mensagem WM \_ INITMENUPOPUP
+# <a name="wm_initmenupopup-message"></a>Mensagem do WM \_ INITMENUPOPUP
 
-Enviado quando um menu suspenso ou submenu está prestes a se tornar ativo. Isso permite que um aplicativo modifique o menu antes de ser exibido, sem alterar o menu inteiro.
+Enviado quando um menu suspenso ou submenu está prestes a ficar ativo. Isso permite que um aplicativo modifique o menu antes que ele seja exibido, sem alterar o menu inteiro.
 
 
 ```C++
@@ -39,22 +39,22 @@ Enviado quando um menu suspenso ou submenu está prestes a se tornar ativo. Isso
 *wParam* 
 </dt> <dd>
 
-Um alça para o menu suspenso ou submenu.
+Um identificador para o menu suspenso ou submenu.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-A palavra de ordem baixa especifica a posição relativa baseada em zero do item de menu que abre o menu suspenso ou o submenu.
+A palavra de ordem inferior Especifica a posição relativa de base zero do item de menu que abre o menu suspenso ou o submenu.
 
-A palavra de ordem alta indica se o menu suspenso é o menu da janela. Se o menu for o menu da janela, esse parâmetro será **TRUE;** caso contrário, será **FALSE.**
+A palavra de ordem superior indica se o menu suspenso é o menu janela. Se o menu for o menu janela, esse parâmetro será **true**; caso contrário, será **false**.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se um aplicativo processa essa mensagem, ele deve retornar zero.
+Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,7 +64,7 @@ Se um aplicativo processa essa mensagem, ele deve retornar zero.
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 
@@ -75,16 +75,16 @@ Se um aplicativo processa essa mensagem, ele deve retornar zero.
 **Referência**
 </dt> <dt>
 
-[**Hiword**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
+[**HIWORD**](/previous-versions/windows/desktop/legacy/ms632657(v=vs.85))
 </dt> <dt>
 
-[**Loword**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
+[**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85))
 </dt> <dt>
 
-[**WM \_ INITMENU**](wm-initmenu.md)
+[**INITMENU do WM \_**](wm-initmenu.md)
 </dt> <dt>
 
-**Conceitual**
+**Conceitua**
 </dt> <dt>
 
 [Aceleradores de teclado](keyboard-accelerators.md)

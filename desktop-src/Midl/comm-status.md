@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd4952d03a80dbbffb135043d024b0c0eb18966f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 719f66d6849a21d67d9349a9e9fd728defb4a0663e4436701d06f20209f4d5b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118384688"
 ---
 # <a name="comm_status-attribute"></a>atributo de status de comunicação \_
 
@@ -45,7 +45,7 @@ Especifica zero ou mais atributos de função de ACF, como **\[ \_ status \] de 
 
 </dd> <dt>
 
-*nome da função* 
+*Nome da função* 
 </dt> <dd>
 
 Especifica o nome da função, conforme definido no arquivo IDL.
@@ -95,9 +95,9 @@ Quando o **\[ \_ status \] de comunicação** é usado como um atributo de parâ
 [**fora**](out-idl.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

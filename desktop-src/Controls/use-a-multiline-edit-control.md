@@ -1,6 +1,6 @@
 ---
-title: Como criar um controle de edição multilinha
-description: Este tópico demonstra como implementar um processador de palavras simples adicionando um controle de edição multilinha à área do cliente de uma janela.
+title: Como criar um controle de edição de várias linhas
+description: Este tópico demonstra como implementar um processador de texto simples adicionando um controle de edição de várias linhas à área do cliente de uma janela.
 ms.assetid: B955CC42-F89F-48EB-A19A-ADA6E5273EF6
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117829067"
 ---
-# <a name="how-to-create-a-multiline-edit-control"></a>Como criar um controle de edição multilinha
+# <a name="how-to-create-a-multiline-edit-control"></a>Como criar um controle de edição de várias linhas
 
-Este tópico demonstra como implementar um processador de palavras simples adicionando um controle de edição multilinha à área do cliente de uma janela. Usando o controle de edição multilinha, o usuário pode selecionar editar comandos em um menu. Esses comandos permitem que o usuário execute operações de edição simples, como desfazer uma ação anterior, recortar ou copiar seleções para a área de transferência, colar texto da área de transferência e excluir a seleção atual.
+Este tópico demonstra como implementar um processador de texto simples adicionando um controle de edição de várias linhas à área do cliente de uma janela. Usando o controle de edição de várias linhas, o usuário pode selecionar editar comandos em um menu. Esses comandos permitem que o usuário execute operações de edição simples, como desfazer uma ação anterior, recortar ou copiar seleções na área de transferência, colar texto da área de transferência e excluir a seleção atual.
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
@@ -24,19 +24,19 @@ Este tópico demonstra como implementar um processador de palavras simples adici
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Windows Interface do Usuário programação
+-   Windows Programação de interface do usuário
 
 ## <a name="instructions"></a>Instruções
 
 
-Seu aplicativo deve incluir código para criar uma instância do e inicializar um controle de edição multilinha e, em seguida, processar comandos de edição do usuário.
+Seu aplicativo deve incluir o código para criar uma instância do e inicializar um controle de edição de várias linhas e, em seguida, processar os comandos de edição do usuário.
 
-O exemplo de código C++ a seguir implementa grande parte da funcionalidade de um processador de palavras simples adicionando um controle de edição multilinha à área de cliente de uma janela. O sistema executa automaticamente operações de wordwrap para o controle de edição e também lida com o processamento para a barra de rolagem vertical (criada especificando [**ES \_ AUTOVSCROLL**](edit-control-styles.md) na chamada para a [**função CreateWindow).**](/windows/desktop/api/winuser/nf-winuser-createwindowa)
+O exemplo de código C++ a seguir implementa grande parte da funcionalidade de um processador de texto simples, adicionando um controle de edição de várias linhas à área do cliente de uma janela. O sistema executa automaticamente as operações de WordWrap para o controle de edição e também manipula o processamento da barra de rolagem vertical (criada especificando-se [**es \_ AUTOVSCROLL**](edit-control-styles.md) na chamada para a função [**CreateWindow**](/windows/desktop/api/winuser/nf-winuser-createwindowa) ).
 
-Os comandos de edição do usuário são enviados para o processo de janela por meio [**de mensagens de \_ notificação DE COMANDO**](/windows/desktop/menurc/wm-command) WM.
+Os comandos de edição de usuário são enviados para o processo de janela por meio de mensagens de notificação de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) .
 
 > [!Note]  
-> Se a janela incluir a faixa Windows faixa de opções, o tamanho do controle de edição deverá ser ajustado para acomodar a altura da Faixa de Opções. Para obter mais informações, consulte [Windows Ribbon Framework](/windows/desktop/windowsribbon/-uiplat-windowsribbon-entry).
+> se a janela incluir a faixa de Windows, o tamanho do controle de edição deverá ser ajustado para acomodar a altura da faixa de faixas. para obter mais informações, consulte [Windows estrutura da faixa](/windows/desktop/windowsribbon/-uiplat-windowsribbon-entry)de visualização.
 
  
 
@@ -160,16 +160,16 @@ LRESULT CALLBACK MainWndProc(HWND hwnd,      // window handle
 
 <dl> <dt>
 
-[Sobre editar controles](about-edit-controls.md)
+[Sobre os controles de edição](about-edit-controls.md)
 </dt> <dt>
 
 [Editar referência de controle](bumper-edit-control-edit-control-reference.md)
 </dt> <dt>
 
-[Usando editar controles](/windows/desktop/Controls/using-edit-controls)
+[Usando controles de edição](/windows/desktop/Controls/using-edit-controls)
 </dt> <dt>
 
-[Editar Controle](edit-controls.md)
+[Controle de edição](edit-controls.md)
 </dt> </dl>
 
  

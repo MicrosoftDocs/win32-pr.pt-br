@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentResource'
-title: Propriedades de EsentResource
+description: 'Saiba mais sobre: propriedades EsentResource'
+title: Propriedades EsentResource
 TOCTitle: EsentResource properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentResource
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentresource_properties(v=EXCHG.10)
 ms:contentKeyID: 55102625
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 7e37c88844512f8e4728cdde1e1b0b5d87de4489
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7ac2cd39bfc086cf56dad0ee880ccf865cff25793d0346a66868aae67d14ee55
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117897842"
 ---
-# <a name="esentresource-properties"></a>Propriedades de EsentResource
+# <a name="esentresource-properties"></a>Propriedades EsentResource
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentResource](./esentresource-class.md) expõe os membros a seguir.
+O [tipo EsentResource](./esentresource-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -49,4 +49,4 @@ Parte superior
 
 [Classe EsentResource](./esentresource-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

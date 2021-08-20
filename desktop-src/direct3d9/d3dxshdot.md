@@ -1,7 +1,7 @@
 ---
-description: Função D3DXSHDot (D3dx9math. h) – computa o produto dot de dois vetores de harmônica esférica (SH).
+description: Função D3DXSHDot (D3dx9math.h) – calcula o produto de ponto de dois vetores sh (ataque esférico).
 ms.assetid: 71b7480d-ddac-4b02-bca7-d9318823d03e
-title: Função D3DXSHDot (D3dx9math. h)
+title: Função D3DXSHDot (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 87f88c7c7b80871a68084607cb99621199dfcc0a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: d9c852bd93f839d371aa86886cd06769f79fe635986566ed592f8f5313ee8084
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108093924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117731176"
 ---
-# <a name="d3dxshdot-function-d3dx9mathh"></a>Função D3DXSHDot (D3dx9math. h)
+# <a name="d3dxshdot-function-d3dx9mathh"></a>Função D3DXSHDot (D3dx9math.h)
 
-Computa o produto de ponto de dois vetores de harmônica esférica (SH).
+Calcula o produto de ponto de dois vetores de SH (ataque esférico).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,45 +42,45 @@ FLOAT D3DXSHDot(
 
 <dl> <dt>
 
-*Ordem* \[ no\]
+*Ordem* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordem da avaliação harmônica esférica (SH). Deve estar no intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusive. A avaliação gera coeficientes do Order ². O grau da avaliação é a ordem 1.
+Ordem da avaliação de SH (avaliação esférica). Deve estar no intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusive. A avaliação gera coeficientes orderâmicos. O grau da avaliação é Order - 1.
 
 </dd> <dt>
 
-*PA* \[ no\]
+*pA* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Aponta para o primeiro vetor SH.
+Ponteiro para o primeiro vetor SH.
 
 </dd> <dt>
 
-*PB* \[ no\]
+*pB* \[ Em\]
 </dt> <dd>
 
-Tipo: **const [**float**](../winprog/windows-data-types.md) \***
+Tipo: **const [**FLOAT**](../winprog/windows-data-types.md) \***
 
-Aponta para o segundo vetor SH.
+Ponteiro para o segundo vetor SH.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
-SH coeficientes de saída.
+Coeficientes de saída sh.
 
 ## <a name="remarks"></a>Comentários
 
-Cada coeficiente da função base Ylm é armazenado no local da memória l ² + m + l, em que:
+Cada coeficiente da função de base Ylm é armazenado no local de memória lá + m + l, em que:
 
 -   l é o grau da função base.
--   m é o índice de função base para o valor l fornecido e varia de-l a l, inclusive.
+-   m é o índice de função base para o valor l e intervalos de -l a l, inclusive.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,19 +88,19 @@ Cada coeficiente da função base Ylm é armazenado no local da memória l ² + 
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [Funções matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferência radiante de computação (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferência de Radiance pré-comutada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

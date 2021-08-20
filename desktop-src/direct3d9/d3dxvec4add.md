@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 62747cec15c4a9916dfb42572006cbb9fc908b3e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 75b25101044f3934006739f2454dd792eb5bc29d6ae6df5b9fd6b10e54c427a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105752161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095276"
 ---
 # <a name="d3dxvec4add-function"></a>Função D3DXVec4Add
 
@@ -69,7 +69,7 @@ Ponteiro para uma estrutura de [**D3DXVECTOR4**](d3dxvector4.md) de origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 

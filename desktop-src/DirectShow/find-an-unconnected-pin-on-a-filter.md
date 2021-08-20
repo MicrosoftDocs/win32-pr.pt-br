@@ -1,23 +1,23 @@
 ---
-description: Este tópico descreve como localizar um PIN não conectado em um filtro. Encontrar um PIN não conectado é útil quando você está conectando filtros.
+description: Este tópico descreve como encontrar um pino não conectado em um filtro. Encontrar um pino não conectado é útil quando você está conectando filtros.
 ms.assetid: d0a906a8-bae4-43b3-8b02-ee5b97c9323d
-title: Localizar um PIN não conectado em um filtro
+title: Encontrar um pino não conectado em um filtro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ee47b811c027161b70769cb04063d0e8214934a
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 7a76100622f0398c58eb10f2dda041ba074f4610efbd1c649d48199ea2c676eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104009877"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401750"
 ---
-# <a name="find-an-unconnected-pin-on-a-filter"></a>Localizar um PIN não conectado em um filtro
+# <a name="find-an-unconnected-pin-on-a-filter"></a>Encontrar um pino não conectado em um filtro
 
-Este tópico descreve como localizar um PIN não conectado em um filtro. Encontrar um PIN não conectado é útil quando você está conectando filtros.
+Este tópico descreve como encontrar um pino não conectado em um filtro. Encontrar um pino não conectado é útil quando você está conectando filtros.
 
-Em um cenário típico de construção de grafo do DirectShow, você precisa de um PIN não conectado que corresponda a uma direção de PIN específica (entrada ou saída). Por exemplo, ao conectar dois filtros, você conecta um pino de saída de um filtro a um PIN de entrada do outro filtro. Ambos os Pins devem ser desconectados antes de você conectá-los.
+Em um cenário DirectShow de criação de grafo típico, você precisa de um pino desconectado que corresponde a uma direção de pino específica (entrada ou saída). Por exemplo, quando você conecta dois filtros, conecta um pino de saída de um filtro a um pino de entrada do outro filtro. Ambos os pinos devem ser desconectados antes de conectá-los.
 
-Primeiro, precisamos de uma função que teste se um PIN está conectado a outro PIN. Essa função chama o método [**IPin:: ConnectedTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) para testar se o PIN está conectado a outro PIN.
+Primeiro, precisamos de uma função que teste se um pino está conectado a outro pino. Essa função chama o [**método IPin::ConnectedTo**](/windows/desktop/api/Strmif/nf-strmif-ipin-connectedto) para testar se o pino está conectado a outro pino.
 
 
 ```C++
@@ -48,11 +48,11 @@ HRESULT IsPinConnected(IPin *pPin, BOOL *pResult)
 
 
 > [!Note]  
-> Este exemplo usa a função [SafeRelease](/windows/desktop/medfound/saferelease) para liberar ponteiros de interface.
+> Este exemplo usa a [função SafeRelease](/windows/desktop/medfound/saferelease) para liberar ponteiros de interface.
 
  
 
-Em seguida, precisamos de uma função que teste se um PIN corresponde a uma direção de PIN especificada. Essa função chama o método [**IPin:: QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) para obter a direção do PIN.
+Em seguida, precisamos de uma função que teste se um pino corresponde a uma direção de pino especificada. Essa função chama o [**método IPin::QueryDirection**](/windows/desktop/api/Strmif/nf-strmif-ipin-querydirection) para obter a direção do pino.
 
 
 ```C++
@@ -71,7 +71,7 @@ HRESULT IsPinDirection(IPin *pPin, PIN_DIRECTION dir, BOOL *pResult)
 
 
 
-A próxima função corresponde a um PIN por ambos os critérios (direção do PIN e status da conexão).
+A próxima função corresponde a um pino por ambos os critérios (direção do pino e status da conexão).
 
 
 ```C++
@@ -102,7 +102,7 @@ HRESULT MatchPin(IPin *pPin, PIN_DIRECTION direction, BOOL bShouldBeConnected, B
 
 
 
-Por fim, a função a seguir usa a interface [**IEnumPins**](/windows/desktop/api/Strmif/nn-strmif-ienumpins) para executar um loop pelos Pins no filtro. O chamador especifica a direção do PIN desejado. Para cada PIN, a função chama `MatchPin` para testar se o PIN é uma correspondência. Se a direção corresponder e o PIN não estiver conectado, a função retornará um ponteiro para o PIN correspondente no parâmetro *ppPin* .
+Por fim, a função a seguir usa a interface [**IEnumPins**](/windows/desktop/api/Strmif/nn-strmif-ienumpins) para fazer um loop pelos pinos no filtro. O chamador especifica a direção do pino desejado. Para cada pino, a função chama `MatchPin` para testar se o pino é uma combinação. Se a direção corresponder e o pino estiver desconectado, a função retornará um ponteiro para o pino correspondente no *parâmetro ppPin.*
 
 
 ```C++
@@ -149,16 +149,16 @@ done:
 
 
 
-Para obter um exemplo de como essa função pode ser usada, consulte [conectar dois filtros](connect-two-filters.md).
+Para ver um exemplo de como essa função pode ser usada, [consulte Conexão Dois Filtros](connect-two-filters.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Enumerando Pins](enumerating-pins.md)
+[Enumerando pinos](enumerating-pins.md)
 </dt> <dt>
 
-[Técnicas de Graph-Building geral](general-graph-building-techniques.md)
+[Técnicas Graph-Building geral](general-graph-building-techniques.md)
 </dt> <dt>
 
 [**ICaptureGraphBuilder2::FindPin**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-findpin)

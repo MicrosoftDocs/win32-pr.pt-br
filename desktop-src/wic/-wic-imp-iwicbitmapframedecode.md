@@ -4,18 +4,18 @@ ms.assetid: 7dc626ad-1158-4b67-8ca7-47b4cf88e278
 title: Implementando IWICBitmapFrameDecode
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 394b5858ec5eee37ef1c7f52b766806c4a0c1a92
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d4b49e3636f5d81202b1060d868ecb40bb99d095dd9f26b6afd0d40c5f5fd0d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118205760"
 ---
 # <a name="implementing-iwicbitmapframedecode"></a>Implementando IWICBitmapFrameDecode
 
-## <a name="iwicbitmapframedecode"></a>IWICBitmapFrameDecode
+## <a name="iwicbitmapframedecode"></a>Iwicbitmapframedecode
 
-[**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) é a interface de nível de quadro que fornece acesso aos bits de imagem reais. Você implementa essa interface em sua classe de decodificação de nível de quadro. Como ele é derivado de [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource), sua implementação de **IWICBitmapFrameDecode** incluirá uma implementação dos métodos **IWICBitmapSource** . Os métodos adicionais em **IWICBitmapFrameDecode** fornecem acesso à miniatura de nível de quadro, qualquer contextos de cor para a imagem e o leitor de consulta de metadados para o quadro.
+[**IWICBitmapFrameDecode é**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode) a interface no nível do quadro que fornece acesso aos bits de imagem reais. Você implementa essa interface em sua classe de decodificação no nível do quadro. Como ele é derivado de [**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource), sua implementação de **IWICBitmapFrameDecode** incluirá uma implementação dos métodos **IWICBitmapSource.** Os métodos adicionais em **IWICBitmapFrameDecode** fornecem acesso à miniatura no nível do quadro, a qualquer contexto de cor para a imagem e ao leitor de consulta de metadados para o quadro.
 
 ``` syntax
 interface IWICBitmapFrameDecode : IWICBitmapSource
@@ -42,25 +42,25 @@ HRESULT CopyPalette ( IWICPalette *pIPalette );
 -   [GetThumbnail](#getthumbnail)
 -   [GetColorContexts](#getcolorcontexts)
 -   [GetMetadataQueryReader](#getmetadataqueryreader)
--   [GetSize, GetPixelFormat e Resolution](#getsize-getpixelformat-and-getresolution)
--   [CopyPixels](#copypixels)
+-   [GetSize, GetPixelFormat e GetResolution](#getsize-getpixelformat-and-getresolution)
+-   [Copypixels](#copypixels)
 -   [CopyPalette](#copypalette)
 
 ### <a name="getthumbnail"></a>GetThumbnail
 
-[**GetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getthumbnail) retorna a miniatura do quadro atual. Por motivos de desempenho, as miniaturas são geralmente codificadas em um formato JPEG. Assim como acontece com a visualização do decodificador, não é necessário ou recomendado fornecer seu próprio decodificador de JPEG para miniaturas. Em vez disso, você deve delegar ao decodificador de JPEG fornecido pelo Windows Imaging Component (WIC).
+[**GetThumbnail**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getthumbnail) retorna a miniatura do quadro atual. Por motivos de desempenho, as miniaturas são codificadas com mais comum em um formato JPEG. Assim como com a Versão Prévia no decodificador, não é necessário ou recomendado fornecer seu próprio decodificador JPEG para miniaturas. Em vez disso, você deve delegar ao decodificador JPEG fornecido Windows WIC (Componente de Imagens de Imagem).
 
-Para obter mais informações sobre miniaturas, consulte o método [SetThumbnail](-wic-imp-iwicbitmapframeencode.md) sobre [implementação de IWICBitmapFrameEncode](-wic-imp-iwicbitmapframeencode.md).
+Para obter mais informações sobre miniaturas, consulte o [método SetThumbnail](-wic-imp-iwicbitmapframeencode.md) em [Implementando IWICBitmapFrameEncode](-wic-imp-iwicbitmapframeencode.md).
 
 ### <a name="getcolorcontexts"></a>GetColorContexts
 
-[**GetColorContexts**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getcolorcontexts) retorna os contextos de cor válidos (também conhecidos como perfis de cor) associados à imagem neste quadro. Na maioria dos casos, isso só será um, mas pode haver casos em que há dois ou, raramente, mais. O chamador passará um ou mais objetos [**IWICColorContext**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext) , definindo o parâmetro *conta* para indicar quantos eles estão passando. Esse método popula os objetos **IWICColorContext** com os dados de contexto de cor reais para os perfis de cor associados à imagem. Defina o parâmetro *pcActualCount* como o número real de contextos de cor associados à imagem, mesmo que isso seja maior que o número que você pode retornar. (No caso em que mais contextos de cor estão disponíveis do que o número de objetos **IWICColorContext** passados pelo chamador, isso informa ao chamador que há um ou mais outros disponíveis.)
+[**GetColorContexts**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getcolorcontexts) retorna os contextos de cor válidos (também conhecidos como perfis de cor) associados à imagem nesse quadro. Na maioria dos casos, isso será apenas um, mas pode haver casos em que há dois ou, raramente, mais. O chamador passará um ou mais objetos [**IWICColorContext,**](/windows/desktop/api/Wincodec/nn-wincodec-iwiccolorcontext) definindo o parâmetro *cCount* para indicar quantos eles estão passando. Esse método popula os objetos **IWICColorContext** com os dados de contexto de cor reais para os perfis de cor associados à imagem. De definir *o parâmetro pcActualCount* para o número real de contextos de cor associados à imagem, mesmo que isso seja maior que o número que você pode retornar. (No caso em que mais contextos de cor estão disponíveis do que o número de objetos **IWICColorContext** passados pelo chamador, isso informa ao chamador que há um ou mais outros disponíveis.)
 
 ### <a name="getmetadataqueryreader"></a>GetMetadataQueryReader
 
-[**GetMetadataQueryReader**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getmetadataqueryreader) retorna um [**IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) que pode ser usado por um aplicativo para recuperar metadados do quadro da imagem. Essa interface é implementada por um manipulador de metadados e permite que um aplicativo consulte Propriedades de metadados específicas que pertencem a um formato de metadados específico. Para obter mais informações, consulte [implementando o IWICMetadataBlockReader](-wic-imp-iwicmetadatablockreader.md).
+[**GetMetadataQueryReader**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getmetadataqueryreader) retorna [**um IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader) que um aplicativo pode usar para recuperar metadados do quadro de imagem. Essa interface é implementada por um manipulador de metadados e permite que um aplicativo consulte propriedades de metadados específicas que pertencem a um formato de metadados específico. Para obter mais informações, [consulte Implementando IWICMetadataBlockReader](-wic-imp-iwicmetadatablockreader.md).
 
-Para criar uma instância de um [**IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader), chame [**CreateQueryReaderFromBlockReader**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwiccomponentfactory-createqueryreaderfromblockreader) no [**IWICComponentFactory**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory).
+Para iniciá-lo em [**um IWICMetadataQueryReader**](/windows/desktop/api/Wincodec/nn-wincodec-iwicmetadataqueryreader), chame [**CreateQueryReaderFromBlockReader**](/windows/desktop/api/Wincodecsdk/nf-wincodecsdk-iwiccomponentfactory-createqueryreaderfromblockreader) no [**IWICComponentFactory.**](/windows/desktop/api/Wincodecsdk/nn-wincodecsdk-iwiccomponentfactory)
 
 
 ```C++
@@ -74,17 +74,17 @@ hr = m_pComponentFactory->CreateQueryReaderFromBlockReader(
 
 
 
-### <a name="getsize-getpixelformat-and-getresolution"></a>GetSize, GetPixelFormat e Resolution
+### <a name="getsize-getpixelformat-and-getresolution"></a>GetSize, GetPixelFormat e GetResolution
 
-[**GetSize**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getsize), [**GetPixelFormat**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getpixelformat)e [**Resolution**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getresolution) são auto-explicativos e retornam as propriedades solicitadas da imagem.
+[**GetSize,**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getsize) [**GetPixelFormat**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getpixelformat)e [**GetResolution**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getresolution) são autoexplicativos e retornam as propriedades solicitadas da imagem.
 
-### <a name="copypixels"></a>CopyPixels
+### <a name="copypixels"></a>Copypixels
 
-[**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypixels) é o método chamado por um aplicativo quando ele deseja criar um bitmap na memória que pode ser renderizado para a exibição ou impressora. Esse é o método que faz a decodificação real dos bits de imagem. Os parâmetros são um retângulo, que representa a região de interesse na imagem de origem a ser copiada na memória; o stride, que especifica o número de bytes em uma linha de digitalização; o tamanho do buffer na memória que foi alocado pelo aplicativo; e um ponteiro para o buffer no qual os bits de imagem solicitados devem ser copiados. (Para evitar que estouros de buffer em potencial introduzam vulnerabilidades de segurança, certifique-se de copiar apenas a quantidade de dados de imagem no buffer que o parâmetro *cbBufferSize* especifica.)
+[**CopyPixels**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypixels) é o método que um aplicativo chama quando deseja criar um bitmap na memória que pode ser renderizado para a exibição ou impressora. Esse é o método que faz a decodificação real dos bits de imagem. Os parâmetros são um retângulo, que representa a região de interesse na imagem de origem a ser copiada na memória; o stride, que especifica o número de bytes em uma linha de verificação; o tamanho do buffer na memória que foi alocado pelo aplicativo; e um ponteiro para o buffer no qual os bits de imagem solicitados devem ser copiados. (Para impedir que possíveis estouros de buffer introduzam vulnerabilidades de segurança, copie apenas a quantidade de dados de imagem no buffer que o parâmetro *cbBufferSize* especificar.)
 
 ### <a name="copypalette"></a>CopyPalette
 
-Somente os codecs que têm formatos de pixel indexados devem implementar o método [**CopyPalette**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypalette) . Se uma imagem usar um formato indexado, use esse método para retornar a paleta de cores usadas na imagem. Se o seu codec não tiver um formato indexado, retornará WINCODEC \_ Err \_ PALETTEUNAVAILABLE.
+Somente codecs que têm formatos de pixel indexados devem implementar o [**método CopyPalette.**](/windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypalette) Se uma imagem usar um formato indexado, use esse método para retornar a paleta de cores usada na imagem. Se o codec não tiver um formato indexado, retorne WINCODEC \_ ERR \_ PALETTEUNAVAILABLE.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -93,28 +93,28 @@ Somente os codecs que têm formatos de pixel indexados devem implementar o méto
 **Referência**
 </dt> <dt>
 
-[**IWICBitmapSource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)
+[**Iwicbitmapsource**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource)
 </dt> <dt>
 
-[**IWICBitmapDecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
+[**Iwicbitmapdecoder**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder)
 </dt> <dt>
 
-[**IWICBitmapFrameDecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)
+[**Iwicbitmapframedecode**](/windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Implementando IWICBitmapSource](-wic-imp-iwicbitmapsource.md)
 </dt> <dt>
 
-[Implementando o IWICMetadataBlockReader](-wic-imp-iwicmetadatablockreader.md)
+[Implementando IWICMetadataBlockReader](-wic-imp-iwicmetadatablockreader.md)
 </dt> <dt>
 
-[Como escrever um CODEC de WIC-Enabled](-wic-howtowriteacodec.md)
+[Como escrever um codec WIC-Enabled código](-wic-howtowriteacodec.md)
 </dt> <dt>
 
-[Visão geral do Windows Imaging Component](-wic-about-windows-imaging-codec.md)
+[Windows Visão geral do componente de imagens](-wic-about-windows-imaging-codec.md)
 </dt> </dl>
 
  

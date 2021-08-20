@@ -4,12 +4,12 @@ ms.assetid: C969D653-9FEE-45B6-8DB1-4D778C836E9D
 title: Métodos IAzApplication
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7fc8ffd17addcd2b8da01b4999a7c88f78dab8b7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a18e75e8f95571039fcbfc9c653af29b2e99c4abcb7ee8e364d99193cde430ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118913492"
 ---
 # <a name="iazapplication-methods"></a>Métodos IAzApplication
 
@@ -24,10 +24,10 @@ A interface [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazappl
 -   [**Método AddPolicyReader**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyreader)
 -   [**Método AddPolicyReaderName**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpolicyreadername)
 -   [**Método AddPropertyItem**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-addpropertyitem)
--   [**Método createapplication**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createapplicationgroup)
+-   [**Método CreateApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createapplicationgroup)
 -   [**Método CreateOperation**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createoperation)
 -   [**Método CreateRole**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createrole)
--   [**Método createscope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createscope)
+-   [**Método CreateScope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createscope)
 -   [**Método CreateTask**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-createtask)
 -   [**Método DeleteApplicationGroup**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deleteapplicationgroup)
 -   [**Método DeleteDelegatedPolicyUser**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-deletedelegatedpolicyuser)
@@ -51,7 +51,7 @@ A interface [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazappl
 -   [**Método OpenScope**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-openscope)
 -   [**Método OpenTask**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-opentask)
 -   [**Método SetProperty**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-setproperty)
--   [**Método de envio**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-submit)
+-   [**Método Submit**](/windows/desktop/api/Azroles/nf-azroles-iazapplication-submit)
 
  
 

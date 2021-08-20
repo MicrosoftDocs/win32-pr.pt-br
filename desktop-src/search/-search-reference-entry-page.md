@@ -16,8 +16,8 @@ ms.locfileid: "117863699"
 
 Essa referência consiste nas seguintes seções:
 
--   [Windows Pesquisar interfaces](-search-interfaces-entry-page.md)
--   [Windows Pesquisar estruturas](-search-structures-entry-page.md)
+-   [Windows Interfaces de pesquisa](-search-interfaces-entry-page.md)
+-   [Windows Estruturas de pesquisa](-search-structures-entry-page.md)
 -   [Windows Pesquisar constantes e enumerações](-search-constants-and-enumerations-entry-page.md)
 -   [Mapeamentos de propriedade](-search-3x-wds-propertymappings.md)
 -   [Formato de arquivo de pesquisa salvo](-search-savedsearchfileformat.md)
@@ -29,7 +29,7 @@ Essa referência consiste nas seguintes seções:
 [Visão geral do Windows Search](-search-3x-wds-overview.md)
 </dt> <dt>
 
-[Windows Pesquisar guia do desenvolvedor](-search-developers-guide-entry-page.md)
+[Windows Guia do desenvolvedor de pesquisa](-search-developers-guide-entry-page.md)
 </dt> <dt>
 
 [Windows Exemplos de código de pesquisa](-search-samples-ovw.md)
@@ -41,7 +41,7 @@ Essa referência consiste nas seguintes seções:
 [Tecnologias de pesquisa relacionadas](-search-3x-wds-sampleentry.md)
 </dt> <dt>
 
-[Windows Pesquisar Glossário](search-glossary.md)
+[Windows Glossário de pesquisa](search-glossary.md)
 </dt> </dl>
 
  

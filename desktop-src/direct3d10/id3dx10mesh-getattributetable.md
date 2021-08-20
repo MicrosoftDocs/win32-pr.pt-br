@@ -1,7 +1,7 @@
 ---
-description: 'Método ID3DX10Mesh:: getattributetable – recupera uma tabela de atributos para uma malha ou o número de entradas armazenadas em uma tabela de atributos para uma malha.'
+description: Método ID3DX10Mesh::GetAttributeTable – recupera uma tabela de atributos para uma malha ou o número de entradas armazenadas em uma tabela de atributo para uma malha.
 ms.assetid: cee49eba-c113-49f5-a702-c366401f1f2d
-title: 'Método ID3DX10Mesh:: getattributetable (D3DX10. h)'
+title: Método ID3DX10Mesh::GetAttributeTable (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118540286"
 ---
-# <a name="id3dx10meshgetattributetable-method"></a>Método ID3DX10Mesh:: getattributetable
+# <a name="id3dx10meshgetattributetable-method"></a>Método ID3DX10Mesh::GetAttributeTable
 
-Recupera uma tabela de atributos para uma malha ou o número de entradas armazenadas em uma tabela de atributos para uma malha.
+Recupera uma tabela de atributo para uma malha ou o número de entradas armazenadas em uma tabela de atributo para uma malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ HRESULT GetAttributeTable(
 
 <dl> <dt>
 
-*pAttribTable* \[ no\]
+*pAttribTable* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **\_ \_ intervalo de atributos D3DX10**](d3dx10-attribute-range.md)\***
+Tipo: **[ **INTERVALO DE ATRIBUTOS \_ \_ D3DX10**](d3dx10-attribute-range.md)\***
 
-Ponteiro para uma matriz de \_ estruturas de intervalo de atributos D3DX10 \_ , representando as entradas na tabela de atributos da malha. Especifique **NULL** para recuperar o valor de pAttribTableSize.
+Ponteiro para uma matriz de estruturas D3DX10 ATTRIBUTE RANGE, representando as entradas na tabela \_ \_ de atributos da malha. **Especifique NULL** para recuperar o valor de pAttribTableSize.
 
 </dd> <dt>
 
-*pAttribTableSize* \[ no\]
+*pAttribTableSize* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)\***
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para o número de entradas armazenadas em pAttribTable ou um valor a ser preenchido com o número de entradas armazenadas na tabela de atributos para a malha.
+Ponteiro para o número de entradas armazenadas em pAttribTable ou um valor a ser preenchido com o número de entradas armazenadas na tabela de atributos da malha.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Ponteiro para o número de entradas armazenadas em pAttribTable ou um valor a se
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
-Uma tabela de atributos é usada para identificar áreas da malha que precisam ser desenhadas com texturas diferentes, Estados de renderização, materiais e assim por diante. Além disso, o aplicativo pode usar a tabela de atributos para ocultar partes de uma malha não desenhando um determinado identificador de atributo ao desenhar o quadro.
+Uma tabela de atributos é usada para identificar áreas da malha que precisam ser desenhadas com texturas diferentes, estados de renderização, materiais e assim por diante. Além disso, o aplicativo pode usar a tabela de atributos para ocultar partes de uma malha, não desenhando um determinado identificador de atributo ao desenhar o quadro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Uma tabela de atributos é usada para identificar áreas da malha que precisam s
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ Uma tabela de atributos é usada para identificar áreas da malha que precisam s
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

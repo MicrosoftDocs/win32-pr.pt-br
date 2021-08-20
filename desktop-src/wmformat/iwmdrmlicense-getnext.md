@@ -1,11 +1,11 @@
 ---
-title: Método GetNext IWMDRMLicense (wmdrmsdk. h)
+title: Método GetNext IWMDRMLicense (Wmdrmsdk.h)
 description: O método GetNext carrega as informações sobre o próximo item na lista.
 ms.assetid: 5ef91751-2883-4a8e-9908-7a6dfe6d2af3
 keywords:
-- Formato do Windows Media do método GetNext
-- Método GetNext Windows Media Format, interface IWMDRMLicense
-- IWMDRMLicense interface formato Windows Media, método GetNext
+- Formato de mídia do windows do método GetNext
+- Formato de mídia do windows do método GetNext, interface IWMDRMLicense
+- Formato de mídia da interface IWMDRMLicense , método GetNext
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117847133"
 ---
-# <a name="iwmdrmlicensegetnext-method"></a>Método IWMDRMLicense:: GetNext
+# <a name="iwmdrmlicensegetnext-method"></a>Método IWMDRMLicense::GetNext
 
-O método **GetNext** carrega as informações sobre o próximo item na lista.
+O **método GetNext** carrega as informações sobre o próximo item na lista.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,14 +43,14 @@ Esse método não tem parâmetros.
 
 ## <a name="return-value"></a>Valor retornado
 
-O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
+O método retorna um **HRESULT.** Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 
 
 
 | Código de retorno                                                                                                | Descrição                                              |
 |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| <dl> <dt>**RIV do NS \_ E \_ DRM \_ \_ muito \_ pequeno**</dt> </dl> | Uma lista de revogação de conteúdo atualizada é necessária.<br/> |
-| <dl> <dt>**ERRO \_ não há \_ mais \_ itens**</dt> </dl>      | Não há mais itens na lista.<br/>          |
+| <dl> <dt>**NS \_ E \_ DRM \_ RIV MUITO \_ \_ PEQUENO**</dt> </dl> | Uma lista de revogação de conteúdo atualizada é necessária.<br/> |
+| <dl> <dt>**ERRO \_ NÃO HÁ MAIS \_ \_ ITENS**</dt> </dl>      | Não há mais itens na lista.<br/>          |
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | O método foi bem-sucedido.<br/>                         |
 
 
@@ -67,8 +67,8 @@ Os métodos da interface [**IWMDRMLicense**](iwmdrmlicense.md) fornecem dados so
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wmdrmsdk. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>Wmdrmsdk. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wmdrmsdk.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>Wmdrmsdk.lib</dt> </dl> |
 
 
 
@@ -76,7 +76,7 @@ Os métodos da interface [**IWMDRMLicense**](iwmdrmlicense.md) fornecem dados so
 
 <dl> <dt>
 
-[**Interface IWMDRMLicense**](iwmdrmlicense.md)
+[**IWMDRMLicense Interface**](iwmdrmlicense.md)
 </dt> </dl>
 
  

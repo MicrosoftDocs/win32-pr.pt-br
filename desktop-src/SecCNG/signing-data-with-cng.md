@@ -1,41 +1,41 @@
 ---
-description: A assinatura de dados não protege os dados. Apenas para verificar a integridade dos dados.
+description: A assinatura de dados não protege os dados. Ele só verifica a integridade dos dados.
 ms.assetid: 8f0ace5a-c8f9-4a45-8500-041a9f22637d
 title: Assinando dados com CNG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 658dd1c9a833cfb15b708a7f85013e3d9cacac9d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 64a05f6cf655421422945d375c9d54ec2b74ae24efe1640c0dc9f6efe9a3e45c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118907147"
 ---
 # <a name="signing-data-with-cng"></a>Assinando dados com CNG
 
-A assinatura de dados não protege os dados. Apenas para verificar a integridade dos dados. O remetente armazena em hash que os dados e sinais (criptografa) o hash usando uma chave privada. O destinatário pretendido executa a verificação criando um hash dos dados recebidos, descriptografando a assinatura para obter o hash original e comparando os dois hashes.
+A assinatura de dados não protege os dados. Ele só verifica a integridade dos dados. O remetente hashes que os dados e assinam (criptografam) o hash usando uma chave privada. O destinatário pretendido executa a verificação criando um hash dos dados recebidos, descriptografando a assinatura para obter o hash original e comparando os dois hashes.
 
-Quando os dados são assinados, o remetente cria um valor de [*hash*](/windows/desktop/SecGloss/h-gly) e assina (criptografa) o hash usando uma chave privada. Essa assinatura é então anexada aos dados e enviada em uma mensagem para um destinatário. O algoritmo de hash que foi usado para criar a assinatura deve ser conhecido com antecedência pelo destinatário ou identificado na mensagem. A forma como isso é feito é o protocolo de mensagem.
+Quando os dados são assinados, o remetente cria um [*valor de hash*](/windows/desktop/SecGloss/h-gly) e assina (criptografa) o hash usando uma chave privada. Essa assinatura é anexada aos dados e enviada em uma mensagem a um destinatário. O algoritmo de hash usado para criar a assinatura deve ser conhecido com antecedência pelo destinatário ou identificado na mensagem. A maneira como isso é feito é de acordo com o protocolo de mensagem.
 
-Para verificar a assinatura, o destinatário extrai os dados e a assinatura da mensagem. Em seguida, o destinatário cria outro valor de hash a partir dos dados, descriptografa o hash assinado usando a chave pública do remetente e compara os dois valores de hash. Se os valores forem idênticos, a assinatura foi verificada e os dados serão considerados inalterados.
+Para verificar a assinatura, o destinatário extrai os dados e a assinatura da mensagem. Em seguida, o destinatário cria outro valor de hash com base nos dados, descriptografa o hash assinado usando a chave pública do remetente e compara os dois valores de hash. Se os valores são idênticos, a assinatura foi verificada e os dados são considerados inalterados.
 
 **Para criar uma assinatura usando CNG**
 
-1.  Crie um valor de hash para os dados usando as funções de hash CNG. Para obter mais informações sobre como criar um hash, consulte [criando um hash com a CNG](creating-a-hash-with-cng.md).
-2.  Crie uma chave assimétrica para assinar o hash. Você pode criar uma chave persistente com as [funções de armazenamento de chave CNG](cng-key-storage-functions.md) ou uma chave efêmera com as [funções primitivas de criptografia CNG](cng-cryptographic-primitive-functions.md).
-3.  Use a função [**NCryptSignHash**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsignhash) ou [**BCryptSignHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsignhash) para assinar (criptografar) o valor de hash. Essa função assina o valor de hash usando a chave assimétrica.
-4.  Combine os dados e a assinatura em uma mensagem que pode ser enviada para o destinatário pretendido.
+1.  Crie um valor de hash para os dados usando as funções de hash CNG. Para obter mais informações sobre como criar um hash, consulte [Criando um hash com CNG](creating-a-hash-with-cng.md).
+2.  Crie uma chave assimétrica para assinar o hash. Você pode criar uma chave persistente com o [CNG Key Armazenamento Functions](cng-key-storage-functions.md) ou uma chave efêmera com as funções [primitivas criptográficas CNG](cng-cryptographic-primitive-functions.md).
+3.  Use a [**função NCryptSignHash**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptsignhash) ou [**BCryptSignHash**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptsignhash) para assinar (criptografar) o valor de hash. Essa função assina o valor de hash usando a chave assimétrica.
+4.  Combine os dados e a assinatura em uma mensagem que pode ser enviada ao destinatário pretendido.
 
 **Para verificar uma assinatura usando CNG**
 
 1.  Extraia os dados e a assinatura da mensagem.
 2.  Crie um valor de hash para os dados usando as funções de hash CNG. O algoritmo de hash usado deve ser o mesmo algoritmo usado para assinar o hash.
-3.  Obtenha a parte pública do par de chaves assimétricas que foi usada para assinar o hash. A forma como você obtém essa chave depende de como a chave foi criada e persistida. Se a chave tiver sido criada ou carregada com as [funções de armazenamento de chaves CNG](cng-key-storage-functions.md), você usará a função [**NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) para carregar a chave persistente. Se a chave for uma chave efêmera, ela precisará ter sido salva em um BLOB de chave. Você precisa passar esse BLOB de chave para a função [**BCryptImportKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkeypair) ou [**NCryptImportKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptimportkey) .
-4.  Passe o novo valor de hash, a assinatura e o identificador de chave para a função [**NCryptVerifySignature**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptverifysignature) ou [**BCryptVerifySignature**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptverifysignature) . Essas funções executam a verificação usando a chave pública para descriptografar a assinatura e comparar o hash descriptografado com o hash calculado na etapa 2. A função **BCryptVerifySignature** retornará o **status \_ Success** se a assinatura corresponder à assinatura de hash ou de **status \_ \_ inválida** se a assinatura não corresponder ao hash. A função **NCryptVerifySignature** retornará o **status \_ Success** se a assinatura corresponder ao hash ou **à \_ \_ assinatura incorreta do nte** se a assinatura não corresponder ao hash.
+3.  Obtenha a parte pública do par de chaves assimétricas que foi usado para assinar o hash. A maneira como você obtém essa chave depende de como a chave foi criada e persistida. Se a chave tiver sido criada ou carregada com a chave [CNG Armazenamento Functions](cng-key-storage-functions.md), você usará a [**função NCryptOpenKey**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptopenkey) para carregar a chave persistente. Se a chave for uma chave efêmera, ela terá que ter sido salva em um BLOB de chaves. Você precisa passar esse BLOB de chave para a [**função BCryptImportKeyPair**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptimportkeypair) ou [**NCryptImportKey.**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptimportkey)
+4.  Passe o novo valor de hash, a assinatura e o alça de chave para a [**função NCryptVerifySignature**](/windows/desktop/api/Ncrypt/nf-ncrypt-ncryptverifysignature) ou [**BCryptVerifySignature.**](/windows/desktop/api/Bcrypt/nf-bcrypt-bcryptverifysignature) Essas funções executam a verificação usando a chave pública para descriptografar a assinatura e comparar o hash descriptografado com o hash computado na etapa 2. A **função BCryptVerifySignature** retornará **STATUS \_ SUCCESS** se a assinatura corresponder ao hash ou **STATUS INVALID \_ \_ SIGNATURE** se a assinatura não corresponder ao hash. A **função NCryptVerifySignature** retornará **STATUS \_ SUCCESS** se a assinatura corresponder ao hash ou **NTE BAD \_ \_ SIGNATURE** se a assinatura não corresponder ao hash.
 
 ## <a name="signing-and-verifying-data-example"></a>Exemplo de assinatura e verificação de dados
 
-O exemplo a seguir mostra como usar as APIs primitivas de criptografia para assinar dados com uma chave persistente e verificar a assinatura com uma chave efêmera.
+O exemplo a seguir mostra como usar as APIs primitivas criptográficas para assinar dados com uma chave persistente e verificar a assinatura com uma chave efêmera.
 
 
 ```C++

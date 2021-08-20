@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedade SystemParameters. ColumnsKeyMost'
-title: Propriedade SystemParameters. ColumnsKeyMost
+description: 'Saiba mais sobre: propriedade SystemParameters.ColumnsKeyMost'
+title: Propriedade SystemParameters.ColumnsKeyMost
 TOCTitle: 'ColumnsKeyMost property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.SystemParameters.ColumnsKeyMost
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.systemparameters.columnskeymost(v=EXCHG.10)
@@ -25,21 +25,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 3ca856e8f5a01f265a234f07b8868440594fc678
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 034aede7e21a51c1c8e9743afa425f540e4d61df737894aeb83053d6ceb8e5dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761273"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118485305"
 ---
-# <a name="systemparameterscolumnskeymost-property"></a>Propriedade SystemParameters. ColumnsKeyMost
+# <a name="systemparameterscolumnskeymost-property"></a>Propriedade SystemParameters.ColumnsKeyMost
 
-Obtém o número máximo de componentes em uma chave de classificação ou de índice.
+Obtém o número máximo de componentes em uma chave de classificação ou índice.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -57,7 +57,7 @@ public static int ColumnsKeyMost { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
@@ -67,4 +67,4 @@ Tipo: [System. Int32](/dotnet/api/system.int32)
 
 [Membros do SystemParameters](./systemparameters-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

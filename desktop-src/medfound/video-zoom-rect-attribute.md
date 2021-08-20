@@ -1,19 +1,19 @@
 ---
-description: Especifica o retângulo de origem para o mixer de vídeo do processador de vídeo avançado (EVR). O retângulo de origem é a parte do quadro de vídeo que o mixer blits para a superfície de destino.
+description: Especifica o retângulo de origem para o mixer de vídeo do EVR (Renderização de Vídeo Aprimorado). O retângulo de origem é a parte do quadro de vídeo que o mixer blitsa para a superfície de destino.
 ms.assetid: 4364ff87-816e-4b64-b5e9-c53dd6c9bb33
-title: Atributo VIDEO_ZOOM_RECT (EVR. h)
+title: VIDEO_ZOOM_RECT atributo (Evr.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dda4efca5beab844baf3b3f53074d6b3012e8621
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c2e6ce19c808545d400f53b9c0091cdbcc20c8efbc13372ae5386e419d244143
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105759017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118737141"
 ---
-# <a name="video_zoom_rect-attribute"></a>\_Atributo Rect de zoom de vídeo \_
+# <a name="video_zoom_rect-attribute"></a>Atributo VIDEO \_ ZOOM \_ RECT
 
-Especifica o retângulo de origem para o mixer de vídeo do [processador de vídeo avançado](enhanced-video-renderer.md) (EVR). O retângulo de origem é a parte do quadro de vídeo que o mixer blits para a superfície de destino.
+Especifica o retângulo de origem para o mixer de vídeo do EVR [(Renderização](enhanced-video-renderer.md) de Vídeo Aprimorado). O retângulo de origem é a parte do quadro de vídeo que o mixer blitsa para a superfície de destino.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,18 +21,18 @@ Matriz de bytes
 
 ## <a name="remarks"></a>Comentários
 
-O valor desse atributo é uma estrutura [**MFVideoNormalizedRect**](/windows/desktop/api/evr/ns-evr-mfvideonormalizedrect) .
+O valor desse atributo é uma [**estrutura MFVideoNormalizedRect.**](/windows/desktop/api/evr/ns-evr-mfvideonormalizedrect)
 
-O retângulo de origem é definido em relação a um sistema de coordenadas normalizado, no qual todo o quadro de vídeo ocupa um retângulo com coordenadas {0, 0, 1, 1}. O retângulo de origem deve caber no quadro de vídeo; as coordenadas do retângulo de origem têm um intervalo de (0... 1).
+O retângulo de origem é definido em relação a um sistema de coordenadas normalizado, no qual todo o quadro de vídeo ocupa um retângulo com coordenadas {0, 0, 1, 1}. O retângulo de origem deve caber no quadro de vídeo; as coordenadas do retângulo de origem têm um intervalo de (0...1).
 
 O apresentador EVR padrão define esse atributo no mixer. Para definir o atributo, faça o seguinte:
 
-1.  Chame [**IMFTransform:: GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) no mixer para obter o repositório de atributos do mixer.
-2.  Chame [**IMFAttributes:: setBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob) para definir o atributo de **\_ \_ retângulo de zoom de vídeo** no mixer. O valor é uma estrutura [**MFVideoNormalizedRect**](/windows/desktop/api/evr/ns-evr-mfvideonormalizedrect) .
+1.  Chame [**IMFTransform::GetAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getattributes) no mixer para obter o armazenamento de atributos do mixer.
+2.  Chame [**IMFAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob) para definir o atributo **VIDEO ZOOM \_ \_ RECT** no mixer. O valor é uma [**estrutura MFVideoNormalizedRect.**](/windows/desktop/api/evr/ns-evr-mfvideonormalizedrect)
 
-Em um apresentador personalizado do EVR, você pode usar esse atributo para implementar o método [**IMFVideoDisplayControl:: SetVideoPosition**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setvideoposition) . Para obter mais informações, consulte [retângulos de origem e de destino](how-to-write-an-evr-presenter.md).
+Em um apresentador de EVR personalizado, você pode usar esse atributo para implementar o método [**IMFVideoDisplayControl::SetVideoPosition.**](/windows/desktop/api/evr/nf-evr-imfvideodisplaycontrol-setvideoposition) Para obter mais informações, consulte [Retângulos de origem e destino.](how-to-write-an-evr-presenter.md)
 
-A constante de GUID para esse atributo é exportada de strmiids. lib.
+A constante GUID para esse atributo é exportada de strmiids.lib.
 
 ## <a name="examples"></a>Exemplos
 
@@ -67,9 +67,9 @@ HRESULT SetMixerSourceRect(IMFTransform *pMixer, const MFVideoNormalizedRect& nr
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                             |
-| parâmetro<br/>                   | <dl> <dt>EVR. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                   |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                             |
+| parâmetro<br/>                   | <dl> <dt>Evr.h</dt> </dl> |
 
 
 
@@ -77,19 +77,19 @@ HRESULT SetMixerSourceRect(IMFTransform *pMixer, const MFVideoNormalizedRect& nr
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[Atributos avançados de processador de vídeo](enhanced-video-renderer-attributes.md)
+[Atributos de renderização de vídeo aprimorados](enhanced-video-renderer-attributes.md)
 </dt> <dt>
 
-[Como escrever um apresentador EVR](how-to-write-an-evr-presenter.md)
+[Como escrever um apresentador de EVR](how-to-write-an-evr-presenter.md)
 </dt> <dt>
 
-[**IMFAttributes:: getBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
+[**IMFAttributes::GetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getblob)
 </dt> <dt>
 
-[**IMFAttributes:: setBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
+[**IMFAttributes::SetBlob**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setblob)
 </dt> </dl>
 
  

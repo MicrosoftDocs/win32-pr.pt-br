@@ -1,19 +1,19 @@
 ---
-description: A propriedade PIDTemplate contém a cadeia de caracteres usada como modelo para a propriedade PIDKEY. Para a sintaxe usada no modelo, consulte o tipo de controle MaskedEdit. A ação ValidateProductID usa esse valor para validar a ID do produto.
+description: A propriedade PIDTemplate contém a cadeia de caracteres usada como um modelo para a propriedade PIDKEY. Para a sintaxe usada no modelo, consulte o tipo de controle MaskedEdit. A Ação ValidateProductID usa esse valor para validar a ID do Produto.
 ms.assetid: 17790b20-bee7-43ac-acc9-9fce8249b81a
 title: Propriedade PIDTemplate
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7e15938a34d32d22bb7b7ee8fbf701f126b806bf
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2c50550bab7dc32208828d1d0445f99f8f36ccd354cbf9d2ea7e4bff5235462a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118377357"
 ---
 # <a name="pidtemplate-property"></a>Propriedade PIDTemplate
 
-A propriedade **PIDTemplate** contém a cadeia de caracteres usada como modelo para a propriedade [**PIDKEY**](pidkey.md) . Para a sintaxe usada no modelo, consulte o tipo de controle [MaskedEdit](maskededit-control.md) . A [ação ValidateProductID](validateproductid-action.md) usa esse valor para validar a ID do produto.
+A **propriedade PIDTemplate** contém a cadeia de caracteres usada como um modelo para a [**propriedade PIDKEY.**](pidkey.md) Para a sintaxe usada no modelo, consulte o [tipo de controle MaskedEdit.](maskededit-control.md) [A Ação ValidateProductID](validateproductid-action.md) usa esse valor para validar a ID do Produto.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ A propriedade **PIDTemplate** contém a cadeia de caracteres usada como modelo p
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
 
 
 

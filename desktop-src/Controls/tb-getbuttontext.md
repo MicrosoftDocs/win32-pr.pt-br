@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_GETBUTTONTEXT (commctrl. h)
+title: TB_GETBUTTONTEXT mensagem (Commctrl.h)
 description: Recupera o texto de exibição de um botão em uma barra de ferramentas.
 ms.assetid: 16dd7181-a404-4056-b084-05f49f5a4b14
 keywords:
-- controles de Windows de mensagem de TB_GETBUTTONTEXT
+- TB_GETBUTTONTEXT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117829762"
 ---
-# <a name="tb_getbuttontext-message"></a>TB de \_ mensagem GETBUTTONTEXT
+# <a name="tb_getbuttontext-message"></a>Mensagem \_ GETBUTTONTEXT de TB
 
 Recupera o texto de exibição de um botão em uma barra de ferramentas.
 
@@ -47,13 +47,13 @@ Ponteiro para um buffer que recebe o texto do botão.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna o comprimento, em caracteres, da cadeia de caracteres apontada por *lParam*. O comprimento não inclui o caractere nulo de terminação. Se não for bem-sucedida, o valor de retorno será-1.
+Retorna o comprimento, em caracteres, da cadeia de caracteres apontada por *lParam*. O comprimento não inclui o caractere nulo de terminação. Se for malsucedido, o valor de retorno será -1.
 
 ## <a name="remarks"></a>Comentários
 
-**Aviso de segurança:** Usar essa mensagem incorretamente pode comprometer a segurança do seu programa. Essa mensagem não fornece uma maneira de saber o tamanho do buffer. Se você usar essa mensagem, primeiro chame a mensagem transmitindo **NULL** no *lParam*; isso retorna o número de caracteres, excluindo **NULL** que são necessários. Em seguida, chame a mensagem uma segunda vez para recuperar a cadeia de caracteres. você deve examinar as [considerações de segurança: controles do Microsoft Windows](sec-comctls.md) antes de continuar.
+**Aviso de segurança:** Usar essa mensagem incorretamente pode comprometer a segurança do programa. Essa mensagem não fornece uma maneira de saber o tamanho do buffer. Se você usar essa mensagem, primeiro chame a mensagem passando **NULL** no *lParam*, isso retornará o número de caracteres, exceto **NULL** que são necessários. Em seguida, chame a mensagem uma segunda vez para recuperar a cadeia de caracteres. Você deve revisar as [Considerações sobre segurança: Controles Windows Microsoft antes](sec-comctls.md) de continuar.
 
-A cadeia de caracteres retornada corresponde ao texto que é exibido no momento pelo botão.
+A cadeia de caracteres retornada corresponde ao texto exibido no momento pelo botão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ A cadeia de caracteres retornada corresponde ao texto que é exibido no momento 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TB \_ GETBUTTONTEXTW** (Unicode) e **TB \_ GETBUTTONTEXTA** (ANSI)<br/>         |
 
 
@@ -75,13 +75,13 @@ A cadeia de caracteres retornada corresponde ao texto que é exibido no momento 
 **Referência**
 </dt> <dt>
 
-[**TB de \_ GETBUTTONINFO**](tb-getbuttoninfo.md)
+[**TB \_ GETBUTTONINFO**](tb-getbuttoninfo.md)
 </dt> <dt>
 
-[**TB \_ GETstring**](tb-getstring.md)
+[**TB \_ GETSTRING**](tb-getstring.md)
 </dt> <dt>
 
-[**TB de \_ SETBUTTONINFO**](tb-setbuttoninfo.md)
+[**TB \_ SETBUTTONINFO**](tb-setbuttoninfo.md)
 </dt> </dl>
 
  

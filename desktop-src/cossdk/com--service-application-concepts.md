@@ -15,7 +15,7 @@ ms.locfileid: "118548762"
 
 Você pode usar a ferramenta administrativa serviços de componentes para configurar um aplicativo de servidor COM+ como um aplicativo de serviço. A execução de um aplicativo de servidor COM+ como serviço oferece as seguintes vantagens:
 
--   Se o aplicativo sempre precisar estar em execução, os Serviços de Componentes poderão, opcionalmente, fazer com que o servidor seja iniciado automaticamente e também pode reiniciar o servidor se ele esgotar. Por exemplo, se um computador que executa componentes de ouvinte de Componentes Em Fila for reinicializado, os ouvintes de Componentes En en fila poderão ser iniciados automaticamente se eles estão configurados como um serviço.
+-   Se o aplicativo sempre precisar estar em execução, os Serviços de Componentes poderão, opcionalmente, fazer com que o servidor seja iniciado automaticamente e também pode reiniciar o servidor se ele esgotar. Por exemplo, se um computador que executa componentes de ouvinte de Componentes Na Fila for reinicializado, os ouvintes de Componentes En en fila poderão ser iniciados automaticamente se eles estão configurados como um serviço.
 -   Se o aplicativo precisar executar operações privilegiadas, o aplicativo poderá ser executado como a conta do sistema local. Somente os serviços NT têm permissão para executar com esse nível de segurança. O aplicativo será compatível com o Windows Serviço de cluster, que gerencia serviços durante o failover do sistema.
 -   Se outros serviços precisam ser marcados como dependentes, os Serviços de Componentes fornece essa opção. Por exemplo, se seu aplicativo usar a funcionalidade fornecida por outro serviço, o serviço marcado como dependente será iniciado antes do início do aplicativo.
 

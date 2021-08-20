@@ -1,8 +1,8 @@
 ---
-title: opção/cstruct_out
-description: A opção/cstruct_out modifica a definição de C de uma interface COM que retorna estruturas para corresponder à ABI que um implementador do C++ forneceria.
+title: /cstruct_out switch
+description: A opção /cstruct_out modifica a definição C de uma interface COM que retorna estruturas para corresponder à ABI que um implementador C++ forneceria.
 keywords:
-- /cstruct_out MIDL do comutador
+- /cstruct_out com opção MIDL
 topic_type:
 - apiref
 api_name:
@@ -11,37 +11,37 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 12/10/2020
-ms.openlocfilehash: 535e1630046b424493e2211c29248c18bf1ed798
-ms.sourcegitcommit: 9cf1ed65dfbea1ba118b63d0656f30c3685d8520
+ms.openlocfilehash: 212f79eaad18ba49d12a49e9a831d2b2b5365a87cb9a36c558879adf76e8bb98
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118385803"
 ---
-# <a name="cstruct_out-switch"></a>\_opção/cstruct out
+# <a name="cstruct_out-switch"></a>/cstruct \_ out switch
 
-Essa opção modifica a definição de C de uma interface COM que retorna estruturas para corresponder à ABI que um implementador do C++ forneceria.
+Essa opção modifica a definição C de uma interface COM que retorna estruturas para corresponder à ABI que um implementador C++ forneceria.
 
 ``` syntax
 midl /cstruct_out
 ```
 
-## <a name="switch-options"></a>Opções de comutação
+## <a name="switch-options"></a>Opções de opção
 
 Essa opção não tem parâmetros.
 
 ## <a name="remarks"></a>Comentários
 
-Algumas definições de interface (especialmente as contidas em `d3d12.idl` ) contêm `__stdcall` métodos que retornam estruturas. O C e C++ ABIs da MSVC diferem na forma como implementam essas funções:
+Algumas definições de interface (notadamente aquelas em `d3d12.idl` ) contêm `__stdcall` métodos que retornam estruturas. Os ABIs C e C++ MSVC diferem em como implementam essas funções:
 
-* O C os trata como funções simples que usam um `this` ponteiro oculto como o primeiro parâmetro. O corparador aplica uma pequena otimização de struct que permite que structs menores que 8 bytes (ou maiores se todos os valores sejam de ponto flutuante) sejam retornados em registros. Somente estruturas maiores são promovidas para usar um parâmetro oculto e um valor de retorno alocado pelo chamador.
-* O C++ os trata como funções membro. O compilador *sempre* faz isso inserindo um parâmetro oculto (um ponteiro para um valor de retorno alocado pelo chamador) como o segundo parâmetro, após o `this` ponteiro. Ele também retorna o mesmo ponteiro como seu valor de retorno.
+* C os trata como funções simples que levam um ponteiro `this` oculto como o primeiro parâmetro. O complier aplica uma pequena otimização de struct que permite que structs menores que 8 bytes (ou maiores se todos os valores são ponto flutuante) sejam retornados em registros. Somente estruturas maiores são promovidas para usar um parâmetro oculto e um valor de retorno alocado pelo chamador.
+* O C++ os trata como funções de membro. O *compilador sempre* faz isso inserindo um parâmetro oculto (um ponteiro para um valor de retorno alocado pelo chamador) como o segundo parâmetro, após o `this` ponteiro. Ele também retorna o mesmo ponteiro que seu valor de retorno.
 
-Essa opção força a definição C de interfaces no cabeçalho resultante para assumir que o implementador estava usando C++ e que o código C deveria usar explicitamente a ABI do C++. Isso implica que a função inclui um parâmetro oculto para o ponteiro de valor de retorno e retorna esse ponteiro em vez da estrutura diretamente.
+Essa opção força a definição C de interfaces no header resultante a assumir que o implementador estava usando C++, e que o código C deve usar explicitamente a ABI do C++. Isso implica que a função inclui um parâmetro oculto para o ponteiro de valor de retorno e retorna esse ponteiro em vez da estrutura diretamente.
 
 ## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[Sintaxe de linha de comando MIDL geral](general-midl-command-line-syntax.md)
+[Sintaxe geral da linha de comando MIDL](general-midl-command-line-syntax.md)
 </dt> </dl>

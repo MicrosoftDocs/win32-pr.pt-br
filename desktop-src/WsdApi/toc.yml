@@ -1,13 +1,13 @@
 - name: Serviços Web em dispositivos
   href: wsd-portal.md
   items:
-    - name: Sobre os serviços Web em dispositivos
+    - name: Sobre serviços Web em dispositivos
       href: about-web-services-for-devices.md
       items:
-        - name: Padrões de mensagem de troca de metadados e descoberta
+        - name: Padrões de mensagem de descoberta e Exchange metadados
           href: discovery-and-metadata-exchange-message-patterns.md
           items:
-            - name: Mensagem de saudação
+            - name: Mensagem olá
               href: hello-message.md
             - name: Mensagem de investigação
               href: probe-message.md
@@ -17,24 +17,24 @@
               href: resolve-message.md
             - name: Mensagem ResolveMatches
               href: resolvematches-message.md
-            - name: Get (troca de metadados) solicitação e mensagem HTTP
+            - name: Solicitação e mensagem HTTP Get (metadados Exchange)
               href: get--metadata-exchange--http-request-and-message.md
-            - name: Mensagem de GetResponse (troca de metadados)
+            - name: Mensagem GetResponse (metadados Exchange)
               href: getresponse--metadata-exchange--message.md
-            - name: Adeus mensagem
+            - name: Mensagem de adeus
               href: bye-message.md
-        - name: Conformidade de especificação do WSDAPI
+        - name: Conformidade da especificação WSDAPI
           href: wsdapi-specification-compliance.md
           items:
-            - name: Conformidade de especificação do DPWS
+            - name: Conformidade da especificação do DPWS
               href: dpws-specification-compliance.md
-            - name: Conformidade de especificação de WS-Discovery
+            - name: conformidade WS-Discovery especificação do WS-Discovery
               href: ws-discovery-specification-compliance.md
-            - name: Conformidade de especificação de WS-MetadataExchange e WS-Transfer
+            - name: WS-MetadataExchange e conformidade WS-Transfer especificação
               href: ws-metadataexchange-and-ws-transfer-specification-compliance.md
-            - name: Funcionalidade adicional de WS-Discovery
+            - name: Funcionalidade WS-Discovery adicional
               href: additional-ws-discovery-functionality.md
-        - name: Regras de validação do XAddr
+        - name: Regras de validação XAddr
           href: xaddr-validation-rules.md
         - name: Regras de validação do AppSequence
           href: appsequence-validation-rules.md
@@ -43,13 +43,13 @@
     - name: Usando serviços Web em dispositivos
       href: using-web-services-on-devices.md
       items:
-        - name: Desenvolvimento de aplicativos WSD no Windows
+        - name: Desenvolvimento de aplicativos do WSD Windows
           href: wsd-application-development-on-windows.md
           items:
             - name: Ferramentas de desenvolvimento do WSDAPI
               href: wsdapi-development-tools.md
               items:
-                - name: Serviços Web no gerador de código de dispositivos
+                - name: Gerador de código de serviços Web em dispositivos
                   href: web-services-for-devices-code-generator.md
                   items:
                     - name: Sobre o WsdCodeGen
@@ -63,37 +63,37 @@
                   href: debugging-tools.md
             - name: Exemplos de WSDAPI
               href: wsdapi-samples.md
-        - name: Desenvolvimento de dispositivo WSD
+        - name: Desenvolvimento de dispositivos WSD
           href: wsd-device-development.md
           items:
-            - name: Recomendações de implementação de dispositivo WSD
+            - name: Implementação de dispositivo WSD Recomendações
               href: wsd-device-implementation-recommendations.md
               items:
-                - name: Implementando um dispositivo WSD de hospedagem múltipla
+                - name: Implementando um dispositivo WSD multi-homed
                   href: implementing-a-multi-homed-wsd-device.md
                 - name: Expedindo mensagens SOAP
                   href: dispatching-soap-messages.md
-                - name: Usando endereços de link local IPv6
+                - name: Usando endereços locais de link IPv6
                   href: using-ipv6-link-local-addresses.md
                 - name: Usando endereços lógicos e físicos
                   href: using-logical-and-physical-addresses.md
-        - name: Guia de solução de problemas de WSDAPI
+        - name: Guia de solução de problemas do WSDAPI
           href: wsdapi-troubleshooting-guide.md
           items:
-            - name: Introdução com a solução de problemas de WSDAPI
+            - name: Ponto de Partida solução de problemas do WSDAPI
               href: getting-started-with-wsdapi-troubleshooting.md
               items:
                 - name: Solução de problemas de aplicativos WSDAPI usando a descoberta direcionada
                   href: troubleshooting-applications-using-directed-discovery.md
-                - name: Solucionando problemas de clientes de descoberta de função
+                - name: Solucionando problemas de clientes de descoberta de funções
                   href: troubleshooting-function-discovery-clients.md
-                - name: Solução de problemas de pessoas ao meu redor/reuniões ao meu redor
+                - name: Solução de Pessoas ao meu Redor/reuniões perto de mim
                   href: troubleshooting-people-near-me-meetings-near-me.md
-                - name: Solução de problemas do assistente para adicionar impressora
+                - name: Solução de problemas do Assistente para Adicionar Impressora
                   href: troubleshooting-the-add-printer-wizard.md
-                - name: Solucionando problemas do Gerenciador de rede
+                - name: Solução de problemas de Gerenciador de Rede
                   href: troubleshooting-the-network-explorer.md
-                - name: Solução de problemas do assistente do projetor
+                - name: Solução de problemas do Assistente de Projetor
                   href: troubleshooting-the-projector-wizard.md
                 - name: Solução de problemas de outros aplicativos WSDAPI
                   href: troubleshooting-wsdapi-applications.md
@@ -102,25 +102,25 @@
               items:
                 - name: Capturando logs do WinHTTP
                   href: capturing-winhttp-logs.md
-                - name: Baixando os filtros de DPWS e de exemplo do Netmon
+                - name: Baixando o Netmon e exemplos de filtros DPWS
                   href: downloading-netmon-and-sample-dpws-filters.md
                 - name: Habilitando o rastreamento WSDAPI
                   href: enabling-wsdapi-tracing.md
-                - name: Inspecionando as configurações de firewall e adaptador
+                - name: Inspecionando adaptador e firewall Configurações
                   href: inspecting-adapter-and-firewall-settings.md
                 - name: Inspecionando rastreamentos de rede para aplicativos usando a descoberta direcionada
                   href: inspecting-network-traces-for-applications-using-directed-discovery.md
-                - name: Inspecionando rastreamentos de rede para troca de metadados HTTP
+                - name: Inspecionando rastreamentos de rede para metadados HTTP Exchange
                   href: inspecting-network-traces-for-http-metadata-exchange.md
-                - name: Inspecionando rastreamentos de rede para UDP WS-Discovery
+                - name: Inspecionando rastreamentos de rede para WS-Discovery
                   href: inspecting-network-traces-for-udp-ws-discovery.md
-                - name: Usando um host genérico e um cliente para a troca de metadados HTTP
+                - name: Usando um host genérico e um cliente para metadados HTTP Exchange
                   href: using-a-generic-host-and-client-for-http-metadata-exchange.md
                 - name: Usando um host genérico e um cliente para UDP WS-Discovery
                   href: using-a-generic-host-and-client-for-udp-ws-discovery.md
-                - name: Usando o log do WinHTTP para verificar o tráfego de obtenção
+                - name: Usando o registro em log do WinHTTP para verificar o tráfego
                   href: using-winhttp-logging-to-verify-get-traffic.md
-                - name: Usando o cliente de depuração WSD para verificar o tráfego multicast
+                - name: Usando o cliente de depuração do WSD para verificar o tráfego multicast
                   href: using-wsddebug-client-to-verify-multicast-traffic.md
     - name: Referência de serviços Web em dispositivos
       href: web-services-for-devices-reference.md
@@ -138,14 +138,14 @@
               href: /windows/win32/api/Wsdtypes/ne-wsdtypes-wsdeventtype
             - name: WSDUdpMessageType
               href: /windows/win32/api/Wsdbase/ne-wsdbase-wsdudpmessagetype
-        - name: Serviços Web em funções de dispositivos
+        - name: Funções de Serviços Web em Dispositivos
           href: web-services-for-devices-functions.md
           items:
             - name: PWSD_SOAP_MESSAGE_HANDLER
               href: /windows/desktop/api/wsdtypes/nc-wsdtypes-pwsd_soap_message_handler
             - name: WSD_STUB_FUNCTION
               href: /windows/desktop/api/wsdtypes/nc-wsdtypes-wsd_stub_function
-            - name: WSDAllocateLinkedMemory
+            - name: Wsdallocatelinkedmemory
               href: /windows/desktop/api/WsdUtil/nf-wsdutil-wsdallocatelinkedmemory
             - name: WSDAttachLinkedMemory
               href: /windows/desktop/api/WsdUtil/nf-wsdutil-wsdattachlinkedmemory
@@ -181,7 +181,7 @@
               href: /windows/desktop/api/Wsdbase/nf-wsdbase-wsdcreateudpmessageparameters
             - name: WSDDetachLinkedMemory
               href: /windows/desktop/api/WsdUtil/nf-wsdutil-wsddetachlinkedmemory
-            - name: WSDFreeLinkedMemory
+            - name: Wsdfreelinkedmemory
               href: /windows/desktop/api/WsdUtil/nf-wsdutil-wsdfreelinkedmemory
             - name: WSDGenerateFault
               href: /windows/desktop/api/WsdUtil/nf-wsdutil-wsdgeneratefault
@@ -212,10 +212,10 @@
         - name: Serviços Web em interfaces de dispositivos
           href: web-services-for-devices-interfaces.md
           items:
-            - name: IWSDAddress
+            - name: Iwsdaddress
               href: /windows/desktop/api/Wsdbase/nn-wsdbase-iwsdaddress
               items:
-                - name: Método de desserialização
+                - name: Método Deserialize
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdaddress-deserialize
                 - name: Serializar método
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdaddress-serialize
@@ -436,7 +436,7 @@
                   href: /windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoverypublisher-matchresolve
                 - name: Método MatchResolveEx
                   href: /windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoverypublisher-matchresolveex
-                - name: Método de publicação
+                - name: Método Publish
                   href: /windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoverypublisher-publish
                 - name: Método PublishEx
                   href: /windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoverypublisher-publishex
@@ -446,7 +446,7 @@
                   href: /windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoverypublisher-registerscopematchingrule
                 - name: Método SetAddressFamily
                   href: /windows/desktop/api/wsddisco/nf-wsddisco-iwsdiscoverypublisher-setaddressfamily
-                - name: Cancelar publicação do método
+                - name: Método UnPublish
                   href: /windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoverypublisher-unpublish
                 - name: Método UnRegisterNotificationSink
                   href: /windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoverypublisher-unregisternotificationsink
@@ -459,12 +459,12 @@
                   href: /windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoverypublishernotify-probehandler
                 - name: Método ResolveHandler
                   href: /windows/desktop/api/WsdDisco/nf-wsddisco-iwsdiscoverypublishernotify-resolvehandler
-            - name: IWSDMessageParameters
+            - name: Iwsdmessageparameters
               href: /windows/desktop/api/Wsdbase/nn-wsdbase-iwsdmessageparameters
               items:
                 - name: Método GetLocalAddress
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdmessageparameters-getlocaladdress
-                - name: Método getlowparameters
+                - name: Método GetLowerParameters
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdmessageparameters-getlowerparameters
                 - name: Método GetRemoteAddress
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdmessageparameters-getremoteaddress
@@ -500,7 +500,7 @@
                   href: /windows/desktop/api/wsdhost/nf-wsdhost-iwsdservicemessaging-faultrequest
                 - name: Método SendResponse
                   href: /windows/desktop/api/wsdhost/nf-wsdhost-iwsdservicemessaging-sendresponse
-            - name: IWSDServiceProxy
+            - name: Iwsdserviceproxy
               href: /windows/desktop/api/WsdClient/nn-wsdclient-iwsdserviceproxy
               items:
                 - name: Método BeginGetMetadata
@@ -547,7 +547,7 @@
             - name: IWSDSignatureProperty
               href: /windows/desktop/api/Wsdbase/nn-wsdbase-iwsdsignatureproperty
               items:
-                - name: Método getkeyinfo
+                - name: Método GetKeyInfo
                   href: /previous-versions/windows/desktop/legacy/dd379728(v=vs.85)
                 - name: Método GetSignature
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdsignatureproperty-getsignature
@@ -580,21 +580,21 @@
             - name: IWSDUdpAddress
               href: /windows/desktop/api/Wsdbase/nn-wsdbase-iwsdudpaddress
               items:
-                - name: Método getalias
+                - name: Método GetAlias
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdudpaddress-getalias
-                - name: Método getexclusive
+                - name: Método GetExclusive
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdudpaddress-getexclusive
-                - name: Método getmessagetype
+                - name: Método GetMessageType
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdudpaddress-getmessagetype
                 - name: Método GetSockaddr
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdudpaddress-getsockaddr
                 - name: Método GetTTL
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdudpaddress-getttl
-                - name: Método setalias
+                - name: Método SetAlias
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdudpaddress-setalias
-                - name: Método setexclusive
+                - name: Método SetExclusive
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdudpaddress-setexclusive
-                - name: Método setmessagetype
+                - name: Método SetMessageType
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdudpaddress-setmessagetype
                 - name: Método SetSockaddr
                   href: /windows/desktop/api/Wsdbase/nf-wsdbase-iwsdudpaddress-setsockaddr
@@ -614,9 +614,9 @@
                   href: /windows/desktop/api/WsdXml/nf-wsdxml-iwsdxmlcontext-addnamespace
                 - name: Método AddNameToNamespace
                   href: /windows/desktop/api/WsdXml/nf-wsdxml-iwsdxmlcontext-addnametonamespace
-                - name: Método setnamespaces
+                - name: Método SetNamespaces
                   href: /windows/desktop/api/WsdXml/nf-wsdxml-iwsdxmlcontext-setnamespaces
-                - name: Método settipations
+                - name: Método SetTypes
                   href: /windows/desktop/api/WsdXml/nf-wsdxml-iwsdxmlcontext-settypes
         - name: Serviços Web em estruturas de dispositivos
           href: web-services-for-devices-structures.md
@@ -651,7 +651,7 @@
               href: /windows/win32/api/WsdXml/ns-wsdxml-wsd_datetime
             - name: WSD_DURATION
               href: /windows/win32/api/WsdXml/ns-wsdxml-wsd_duration
-            - name: WSD_ENDPOINT_REFERENCE
+            - name: Wsd_endpoint_reference
               href: /windows/win32/api/Wsdtypes/ns-wsdtypes-wsd_endpoint_reference
             - name: WSD_ENDPOINT_REFERENCE_LIST
               href: /windows/win32/api/WsdTypes/ns-wsdtypes-wsd_endpoint_reference_list
@@ -749,9 +749,9 @@
               href: /windows/win32/api/WsdXmldom/ns-wsdxmldom-wsdxml_attribute
             - name: WSDXML_ELEMENT_LIST
               href: /windows/win32/api/WsdXmldom/ns-wsdxmldom-wsdxml_element_list
-            - name: WSDXML_ELEMENT
+            - name: Wsdxml_element
               href: /windows/win32/api/WsdXmldom/ns-wsdxmldom-wsdxml_element
-            - name: WSDXML_NAME
+            - name: Wsdxml_name
               href: /windows/win32/api/WsdXmldom/ns-wsdxmldom-wsdxml_name
             - name: WSDXML_NAMESPACE
               href: /windows/win32/api/WsdXmldom/ns-wsdxmldom-wsdxml_namespace
@@ -768,12 +768,12 @@
           items:
             - name: Sintaxe de linha de comando WsdCodeGen
               href: wsdcodegen-command-line-syntax.md
-            - name: Referência de XML do arquivo de configuração WsdCodeGen
+            - name: Referência XML do arquivo de configuração WsdCodeGen
               href: wsdcodegen-configuration-file-xml-reference.md
               items:
                 - name: async
                   href: async.md
-                - name: autoestático
+                - name: autoStatic
                   href: autostatic.md
                 - name: Codinome
                   href: codename.md
@@ -795,7 +795,7 @@
                   href: excludeimport.md
                 - name: faultInfo
                   href: faultinfo.md
-                - name: arquivo
+                - name: file
                   href: file.md
                 - name: functionDeclarations
                   href: functiondeclarations.md
@@ -805,7 +805,7 @@
                   href: hostbuilderdeclaration.md
                 - name: hostBuilderImplementation
                   href: hostbuilderimplementation.md
-                - name: hospedado
+                - name: Hospedado
                   href: hosted.md
                 - name: hostedService
                   href: hostedservice.md
@@ -827,7 +827,7 @@
                   href: layernumber.md
                 - name: layerPrefix
                   href: layerprefix.md
-                - name: literalInclude
+                - name: literalIncluir
                   href: literalinclude.md
                 - name: local
                   href: location.md
@@ -839,7 +839,7 @@
                   href: manufacturer.md
                 - name: manufacturerLS
                   href: manufacturerls.md
-                - name: manufacturerURL
+                - name: Manufacturerurl
                   href: manufacturerurl.md
                 - name: messageStructureDefinitions
                   href: messagestructuredefinitions.md

@@ -1,6 +1,6 @@
 ---
-title: Memória. CPP
-description: No componente do provedor de exemplo, um exemplo de código que mostra a alocação de memória e a liberação está na Memory. cpp. As rotinas com suporte são listadas na tabela a seguir.
+title: Memória. Cpp
+description: No componente do provedor de exemplo, um exemplo de código mostrando a alocação e a liberação de memória está em memory.cpp. As rotinas com suporte são listadas na tabela a seguir.
 ms.assetid: dc5b3559-02fc-45e8-bbd0-482e4e3a7f8a
 ms.tgt_platform: multiple
 ms.topic: article
@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117839486"
 ---
-# <a name="memorycpp"></a>Memória. CPP
+# <a name="memorycpp"></a>Memória. Cpp
 
-No componente do provedor de exemplo, um exemplo de código que mostra a alocação de memória e a liberação está na Memory. cpp. As rotinas com suporte são listadas na tabela a seguir.
+No componente do provedor de exemplo, um exemplo de código mostrando a alocação e a liberação de memória está em memory.cpp. As rotinas com suporte são listadas na tabela a seguir.
 
 
 
@@ -22,11 +22,11 @@ No componente do provedor de exemplo, um exemplo de código que mostra a alocaç
 |---------------------|-----------------------------------------------------------------------|
 | **AllocProvMem**    | Alocar memória especificada.                                            |
 | **FreeProvMem**     | Memória livre indicada.                                                |
-| **ReallocProvMem**  | Aloque memória contígua.                                           |
-| **AllocProvStr**    | Aloque uma cadeia de caracteres LPWSTR.                                            |
+| **ReallocProvMem**  | Alocar memória contígua.                                           |
+| **AllocProvStr**    | Alocar uma cadeia de caracteres LPWSTR.                                            |
 | **FreeProvStr**     | Cadeia de caracteres gratuita se ainda não tiver sido liberada.                                     |
-| **ReallocProvStr**  | Aloque memória contígua.                                           |
-| **ProvAllocString** | Verifica a cadeia de caracteres e o primeiro parâmetro. Se OK, executará a alocação. |
+| **ReallocProvStr**  | Alocar memória contígua.                                           |
+| **ProvAllocString** | Verifica a cadeia de caracteres e o primeiro parâmetro. Se ESTIVER OK, executará a alocação. |
 
 
 

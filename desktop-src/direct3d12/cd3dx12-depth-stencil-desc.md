@@ -1,9 +1,9 @@
 ---
-title: Estrutura de CD3DX12_DEPTH_STENCIL_DESC (D3dx12. h)
-description: Uma estrutura auxiliar para habilitar a inicialização fácil de uma \_ estrutura desc de estêncil de profundidade de D3D12 \_ \_ .
+title: CD3DX12_DEPTH_STENCIL_DESC estrutura (D3dx12.h)
+description: Uma estrutura auxiliar para habilitar a inicialização fácil de uma estrutura D3D12 \_ DEPTH \_ STENCIL \_ DESC.
 ms.assetid: D3DB04C3-4564-45A4-830A-E63B8D308B33
 keywords:
-- Estrutura de CD3DX12_DEPTH_STENCIL_DESC
+- CD3DX12_DEPTH_STENCIL_DESC estrutura
 topic_type:
 - apiref
 api_name:
@@ -22,9 +22,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118531102"
 ---
-# <a name="cd3dx12_depth_stencil_desc-structure"></a>\_ \_ Estrutura desc de estêncil de profundidade de CD3DX12 \_
+# <a name="cd3dx12_depth_stencil_desc-structure"></a>Estrutura CD3DX12 \_ DEPTH \_ STENCIL \_ DESC
 
-Uma estrutura auxiliar para habilitar a inicialização fácil de uma estrutura [**desc de estêncil de profundidade de D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc) .
+Uma estrutura auxiliar para habilitar a inicialização fácil de uma [**estrutura D3D12 \_ DEPTH \_ STENCIL \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,24 +46,24 @@ struct CD3DX12_DEPTH_STENCIL_DESC  : public D3D12_DEPTH_STENCIL_DESC{
 
 <dl> <dt>
 
-**\_ \_ Estêncil de profundidade \_ de CD3DX12 DESC ()**
+**CD3DX12 \_ DEPTH \_ STENCIL \_ DESC()**
 </dt> <dd>
 
-Cria uma nova instância, não inicializada, de um \_ estêncil de profundidade D3DX12 \_ \_ desc.
+Cria uma nova instância, não reinicializada, de um D3DX12 \_ DEPTH \_ STENCIL \_ DESC.
 
 </dd> <dt>
 
-**\_ \_ estêncil de profundidade de CD3DX12 explícito \_ DESC (const D3D12 \_ Depth \_ estêncil \_ desc& o)**
+**EXPLICIT CD3DX12 \_ DEPTH \_ STENCIL \_ DESC(const D3D12 \_ DEPTH \_ STENCIL \_ DESC& o)**
 </dt> <dd>
 
-Cria uma nova instância de um estêncil de profundidade de D3DX12 \_ \_ \_ DESC, inicializada com o conteúdo de outra estrutura [**desc de estêncil de profundidade de D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc) .
+Cria uma nova instância de um D3DX12 DEPTH STENCIL DESC, inicializado com o conteúdo de outra estrutura \_ \_ \_ [**D3D12 \_ DEPTH \_ STENCIL \_ DESC.**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)
 
 </dd> <dt>
 
-**\_ \_ estêncil de profundidade de CD3DX12 explícito \_ DESC ( \_ padrão CD3DX12)**
+**EXPLICIT CD3DX12 \_ DEPTH \_ STENCIL \_ DESC(CD3DX12 \_ DEFAULT)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ estêncil de profundidade D3DX12 \_ \_ DESC, inicializada com parâmetros padrão.
+Cria uma nova instância de um D3DX12 \_ DEPTH \_ STENCIL \_ DESC, inicializado com parâmetros padrão.
 
 ``` syntax
         DepthEnable = TRUE;  
@@ -80,49 +80,49 @@ Cria uma nova instância de um \_ estêncil de profundidade D3DX12 \_ \_ DESC, i
 
 </dd> <dt>
 
-**\_ \_ estêncil de profundidade de CD3DX12 explícito \_ DESC (bool depthEnable, D3D12 \_ profundidade \_ Write \_ Mask depthWriteMask, D3D12 \_ Comparison \_ Func DEPTHFUNC, bool STENCILENABLE, UINT8 StencilReadMask, UINT8 stencilWriteMask, D3D12 \_ estêncil \_ op FrontStencilFailOp, D3D12 \_ stencil \_ op frontStencilDepthFailOp, D3D12 \_ estêncil op \_ frontStencilPassOp, D3D12 \_ Comparison Func frontStencilFunc, D3D12 \_ \_ estêncil op backStencilFailOp \_ , D3D12 \_ stencil \_ \_ \_ \_ \_ op backStencilDepthFailOp, D3D12 estêncil op backStencilPassOp, D3D12 Comparison Func backStencilFunc)**
+**EXPLICIT CD3DX12 \_ \_ DEPTH \_ STENCIL DESC(BOOL depthEnable, D3D12 \_ DEPTH WRITE MASK \_ \_ depthWriteMask, D3D12 \_ COMPARISON \_ FUNC depthFunc, BOOL stencilEnable, UINT8 stencilReadMask, UINT8 stencilWriteMask, D3D12 \_ STENCIL \_ OP frontStencilFailOp, D3D12 \_ STENCIL \_ OP frontStencilDepthFailOp, \_ D3D12 \_ STENCIL OP frontStencilPassOp, D3D12 \_ COMPARISON \_ FUNC frontStencilFunc, D3D12 \_ STENCIL \_ OP backStencilFailOp, D3D12 \_ STENCIL \_ OP backStencilDepthFailOp, D3D12 \_ STENCIL \_ OP backStencilPassOp, D3D12 \_ COMPARISON \_ FUNC backStencilFunc)**
 </dt> <dd>
 
-Cria uma nova instância de um \_ estêncil de profundidade D3DX12 \_ \_ DESC, inicializando os seguintes parâmetros:
+Cria uma nova instância de um D3DX12 \_ DEPTH \_ STENCIL \_ DESC, inicializando os seguintes parâmetros:
 
-DepthEnable BOOL
+Profundidade BOOLEnable
 
-[**D3D12 \_ \_ \_ Máscara de gravação de profundidade**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_depth_write_mask) depthWriteMask
+[**D3D12 \_ Profundidade \_ DA \_ MÁSCARA DE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_depth_write_mask) GRAVAÇÃO DE PROFUNDIDADEWriteMask
 
-[**D3D12 \_ COMPARAÇÃO de \_ Func**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) depthFunc
+[**D3D12 \_ COMPARISON \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) depthFunc
 
-StencilEnable BOOL
+Estêncil BooLEnable
 
-UINT8 stencilReadMask
+StencilReadMask UINT8
 
-UINT8 stencilWriteMask
+StencilWriteMask UINT8
 
-[**D3D12 \_ FrontStencilFailOp \_ op de estêncil**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op)
+[**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) frontStencilFailOp
 
-[**D3D12 \_ FrontStencilDepthFailOp \_ op de estêncil**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op)
+[**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) frontStencilDepthFailOp
 
-[**D3D12 \_ FrontStencilPassOp \_ op de estêncil**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op)
+[**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) frontStencilPassOp
 
-[**D3D12 \_ COMPARAÇÃO de \_ Func**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) frontStencilFunc
+[**D3D12 \_ COMPARISON \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) frontStencilFunc
 
-[**D3D12 \_ BackStencilFailOp \_ op de estêncil**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op)
+[**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) backStencilFailOp
 
-[**D3D12 \_ BackStencilDepthFailOp \_ op de estêncil**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op)
+[**D3D12 \_ STENCIL \_ OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op) backStencilDepthFailOp
 
-[**D3D12 \_ BackStencilPassOp \_ op de estêncil**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op)
+[**D3D12 \_ BackStencilPassOp do \_ STENCIL OP**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_stencil_op)
 
-[**D3D12 \_ COMPARAÇÃO de \_ Func**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) backStencilFunc
+[**D3D12 \_ COMPARISON \_ FUNC**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_comparison_func) backStencilFunc
 
 </dd> <dt>
 
-**~ \_ \_ Estêncil de profundidade \_ de CD3DX12 DESC ()**
+**~CD3DX12 \_ DEPTH \_ STENCIL \_ DESC()**
 </dt> <dd>
 
-Destrói uma instância de um estêncil de \_ profundidade \_ CD3DX12 \_ desc.
+Destrói uma instância de um CD3DX12 \_ DEPTH \_ STENCIL \_ DESC.
 
 </dd> <dt>
 
-**\_const D3D12 de profundidade \_ de estêncil const \_& () constante**
+**operator const D3D12 \_ DEPTH \_ STENCIL \_ DESC&() const**
 </dt> <dd>
 
 Define o & operador de passagem por referência para o tipo de estrutura pai.
@@ -135,7 +135,7 @@ Define o & operador de passagem por referência para o tipo de estrutura pai.
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 
@@ -143,7 +143,7 @@ Define o & operador de passagem por referência para o tipo de estrutura pai.
 
 <dl> <dt>
 
-[**Desc. de estêncil de profundidade de D3D12 \_ \_ \_**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)
+[**D3D12 \_ \_ DESC DE ESTÊNCIL \_ DE PROFUNDIDADE**](/windows/desktop/api/d3d12/ns-d3d12-d3d12_depth_stencil_desc)
 </dt> <dt>
 
 [Estruturas auxiliares do D3D12](helper-structures-for-d3d12.md)

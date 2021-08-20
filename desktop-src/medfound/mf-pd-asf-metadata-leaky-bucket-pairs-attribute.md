@@ -4,12 +4,12 @@ ms.assetid: e45d055f-d404-47e9-b3c8-ac743b290138
 title: Atributo MF_PD_ASF_METADATA_LEAKY_BUCKET_PAIRS (Wmcontainer. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7426d15a806a8c61c9a2ea1fdfb0565372c5f48f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9444292ad437551622e1f418a6f21198ecd8341f01e4e5bda0a2047f847cfd37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105802095"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118740744"
 ---
 # <a name="mf_pd_asf_metadata_leaky_bucket_pairs-attribute"></a>\_Atributo de \_ \_ pares de \_ buckets de vazamento de metadados \_ do MF PD ASF \_
 
@@ -46,7 +46,7 @@ typedef struct _WMLeakyBucketPair {
 Para cada taxa de bits, o membro **msBufferWindow** indica a quantidade de conteúdo armazenada em buffer antes do início da reprodução, em milissegundos. O tamanho do buffer em bytes é igual a **msBufferWinow** x **dwBitrate** /8000.
 
 > [!Note]  
-> Esse atributo corresponde ao atributo **ASFLeakyBucketPairs** no SDK do Windows Media Format.
+> esse atributo corresponde ao atributo **ASFLeakyBucketPairs** no SDK do formato de mídia Windows.
 
  
 
@@ -56,8 +56,8 @@ Para cada taxa de bits, o membro **msBufferWindow** indica a quantidade de conte
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
 | parâmetro<br/>                   | <dl> <dt>Wmcontainer. h</dt> </dl> |
 
 

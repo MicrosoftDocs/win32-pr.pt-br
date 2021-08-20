@@ -1,19 +1,19 @@
 ---
-title: Funções de administração do servidor RAS
-description: Para o Windows NT 4,0, use as funções a seguir para implementar a funcionalidade de administração do servidor RAS. O Windows 95 não fornece suporte ao servidor RAS.
+title: Funções de administração de servidor RAS
+description: Por Windows NT 4.0, use as funções a seguir para implementar a funcionalidade de administração de servidor RAS. Windows 95 não oferece suporte ao servidor RAS.
 ms.assetid: 44c000d7-2bb6-4fd8-ac5f-9d3850d857a0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6433db88e0919465569facdb663ee89d8b0969e2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a296c89bff5b5a09903e1c3213acb330fd458865104bdc67f7bc7b37889776a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117789371"
 ---
-# <a name="ras-server-administration-functions"></a>Funções de administração do servidor RAS
+# <a name="ras-server-administration-functions"></a>Funções de administração de servidor RAS
 
-Para o Windows NT 4,0, use as funções a seguir para implementar a funcionalidade de administração do servidor RAS. O Windows 95 não fornece suporte ao servidor RAS. Para o Windows 2000, Windows Server 2003 e sistemas operacionais posteriores, use a [referência de administração do serviço de acesso remoto](remote-access-service-administration-reference.md).
+Por Windows NT 4.0, use as funções a seguir para implementar a funcionalidade de administração de servidor RAS. Windows 95 não oferece suporte ao servidor RAS. Para Windows 2000, Windows Server 2003 e sistemas operacionais posteriores, use a Referência de Administração do Serviço de Acesso [Remoto](remote-access-service-administration-reference.md).
 
 -   [**RasAdminFreeBuffer**](rasadminfreebuffer.md)
 -   [**RasAdminGetErrorString**](rasadmingeterrorstring.md)
@@ -25,12 +25,12 @@ Para o Windows NT 4,0, use as funções a seguir para implementar a funcionalida
 -   [**RasAdminServerGetInfo**](rasadminservergetinfo.md)
 -   [**RasAdminUserGetInfo**](rasadminusergetinfo.md)
 -   [**RasAdminUserSetInfo**](rasadminusersetinfo.md)
--   [Funções DLL de administração de RAS](ras-administration-dll-functions.md)
--   [Funções DLL de segurança RAS](ras-security-dll-functions.md)
+-   [Funções de DLL de administração ras](ras-administration-dll-functions.md)
+-   [Funções de DLL de segurança ras](ras-security-dll-functions.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 384950ca1f00d0115135cf9ae36a2883ec5470e7
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: d1671641a5088535777cb78bf3773f4c1e56e1c3d35e70d345a39df2dad7bd83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173008"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118526188"
 ---
 # <a name="d3dxcreatetorus-function"></a>Função D3DXCreateTorus
 
@@ -109,7 +109,7 @@ Endereço de um ponteiro para uma interface [**ID3DXBuffer**](id3dxbuffer.md) . 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

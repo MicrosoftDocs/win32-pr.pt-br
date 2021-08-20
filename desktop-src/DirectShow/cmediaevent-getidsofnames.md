@@ -1,7 +1,7 @@
 ---
-description: 'Mapeia uma única função de membro e um conjunto opcional de parâmetros para um conjunto correspondente de identificadores de expedição de inteiro, que podem ser usados nas chamadas subsequentes para a função de membro CMediaEvent:: Invoke.'
+description: Mapas uma única função de membro e um conjunto opcional de parâmetros para um conjunto correspondente de identificadores de expedição de inteiros, que podem ser usados em chamadas subsequentes para a função membro CMediaEvent::Invoke.
 ms.assetid: 04e607e6-0b68-4371-aacf-01af308a56a3
-title: Método CMediaEvent. GetIDsOfNames (Ctlutil. h)
+title: Método CMediaEvent.GetIDsOfNames (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 191fa85264e4e7e22aa67f409db20cebd68f4319
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a638861bc6a01a615355f0fad05cddc00f31d3e659fc60c0be0246eb108583f0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757318"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118401869"
 ---
-# <a name="cmediaeventgetidsofnames-method"></a>Método CMediaEvent. GetIDsOfNames
+# <a name="cmediaeventgetidsofnames-method"></a>Método CMediaEvent.GetIDsOfNames
 
-Mapeia uma única função de membro e um conjunto opcional de parâmetros para um conjunto correspondente de identificadores de expedição de inteiro, que podem ser usados nas chamadas subsequentes para a função de membro [**CMediaEvent:: Invoke**](cmediaevent-invoke.md) .
+Mapas uma única função de membro e um conjunto opcional de parâmetros para um conjunto correspondente de identificadores de expedição de inteiros, que podem ser usados em chamadas subsequentes para a função membro [**CMediaEvent::Invoke.**](cmediaevent-invoke.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,18 +49,18 @@ HRESULT GetIDsOfNames(
 *riid* 
 </dt> <dd>
 
-Identificador de referência. Reservado para uso futuro. Deve ser **NULL**.
+Identificador de referência. Reservado para uso futuro. Deve ser **NULL.**
 
 </dd> <dt>
 
 *rgszNames* 
 </dt> <dd>
 
-Endereço de um ponteiro para uma matriz de nomes passada para ser mapeada.
+Endereço de um ponteiro para uma matriz de nomes passada a ser mapeada.
 
 </dd> <dt>
 
-*cNames* 
+*Cnames* 
 </dt> <dd>
 
 Contagem dos nomes a serem mapeados.
@@ -77,11 +77,11 @@ Contexto de localidade no qual interpretar os nomes.
 *rgdispid* 
 </dt> <dd>
 
-Ponteiro para uma matriz alocada pelo chamador, cada elemento que contém uma ID correspondente a um dos nomes passados na matriz *rgszNames* . O primeiro elemento representa o nome do membro; os elementos subsequentes representam cada um dos parâmetros do membro.
+Ponteiro para uma matriz alocada pelo chamador, cada elemento do qual contém uma ID correspondente a um dos nomes passados na *matriz rgszNames.* O primeiro elemento representa o nome do membro; os elementos subsequentes representam cada um dos parâmetros do membro.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores a seguir.
 
@@ -89,8 +89,8 @@ Retorna um dos valores a seguir.
 
 | Código de retorno                                                                                            | Descrição                                                                                                                                          |
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_E/ \_ ou \_ CLSID desconhecido**</dt> </dl> | O CLSID não foi reconhecido.<br/>                                                                                                             |
-| <dl> <dt>**Não receber \_ E não \_ conhecido**</dt> </dl>    | Um ou mais dos nomes não eram conhecidos. Os DISPIDs retornados contêm DISPID \_ desconhecido para cada entrada que corresponde a um nome desconhecido.<br/> |
+| <dl> <dt>**DISP \_ E \_ UNKNOWN \_ CLSID**</dt> </dl> | O CLSID não foi reconhecido.<br/>                                                                                                             |
+| <dl> <dt>**DISP \_ E \_ UNKNOWNNAME**</dt> </dl>    | Um ou mais nomes não eram conhecidos. Os DISPIDs retornados contêm DISPID \_ UNKNOWN para cada entrada que corresponde a um nome desconhecido.<br/> |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>          | Sem memória.<br/>                                                                                                                            |
 | <dl> <dt>**S \_ OK**</dt> </dl>                   | Êxito.<br/>                                                                                                                                  |
 
@@ -104,8 +104,8 @@ Retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

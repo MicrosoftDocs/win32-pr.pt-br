@@ -4,12 +4,12 @@ ms.assetid: c1c8de78-8a40-4c6d-89fb-9bdd9247787b
 title: Sistema. PropList. não Personal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99eb456345b9711e4c150e5fa1051389268d05b2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 58dcc36528d21627e26e3454424900302637c40b41a329d539f10cc1beb58e92
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118465370"
 ---
 # <a name="systemproplistnonpersonal"></a>Sistema. PropList. não Personal
 

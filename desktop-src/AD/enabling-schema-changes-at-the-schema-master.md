@@ -1,31 +1,31 @@
 ---
 title: Habilitando alterações de esquema no mestre de esquema
-description: Por padrão, a modificação de esquema está desabilitada em todos os controladores de domínio do Windows 2000.
+description: por padrão, a modificação de esquema é desabilitada em todos os controladores de domínio Windows 2000.
 ms.assetid: 08806a9e-283c-48d9-9557-bcb9719fc13c
 ms.tgt_platform: multiple
 keywords:
 - Habilitando alterações de esquema no AD mestre de esquema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4840c9928011179ce303c83f4d00ef598f38eb64
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 251716adaae4dab153b749b4db361bf7adca9b6aca2a800cec1b9d73943c595b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118191380"
 ---
 # <a name="enabling-schema-changes-at-the-schema-master"></a>Habilitando alterações de esquema no mestre de esquema
 
-Por padrão, a modificação de esquema está desabilitada em todos os controladores de domínio do Windows 2000. A capacidade de atualizar o esquema é controlada pelo seguinte valor do registro no controlador de domínio do mestre de esquema:
+por padrão, a modificação de esquema é desabilitada em todos os controladores de domínio Windows 2000. A capacidade de atualizar o esquema é controlada pelo seguinte valor do registro no controlador de domínio do mestre de esquema:
 
 ```
 HKEY_LOCAL_MACHINE
-   System
-      CurrentControlSet
-         Services
-            NTDS
-               Parameters
-                  Schema Update Allowed
+   System
+      CurrentControlSet
+         Services
+            NTDS
+               Parameters
+                  Schema Update Allowed
 ```
 
 Esse valor de registro é um valor de **reg \_ DWORD** . Se esse valor não estiver presente ou contiver zero (0), a modificação de esquema será desabilitada. Se esse valor estiver presente e contiver um valor diferente de zero, a modificação de esquema será habilitada.
@@ -191,9 +191,9 @@ HRESULT EnableSchemaUpdate(
 
 
 
- 
+ 
 
- 
+ 
 
 
 

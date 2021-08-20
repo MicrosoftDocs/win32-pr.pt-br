@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 965df8ac9c8d1f4db972edfabcdfa8a9f7454692
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 14639de0661c6952593adf86a7d9956e3fc8fcf671ea1c0cb4f4298d5f64c4b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118490420"
 ---
 # <a name="esentstopwatchstartnew-method"></a>Método EsentStopwatch. StartNew
 
@@ -53,7 +53,7 @@ returnValue = EsentStopwatch.StartNew()
 public static EsentStopwatch StartNew()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [Microsoft. ISAM. ESENT. Interop. EsentStopwatch](./esentstopwatch-class.md)  
 Um novo, executando EsentStopwatch.  

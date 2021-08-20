@@ -4,12 +4,12 @@ ms.assetid: c7976de9-65f4-4552-8f8c-e7a32ef4821d
 title: Ação de excluirservices
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c5fc22bbb0c11cd546f1ffbb9f3ad98e06efae3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bd00b9d077239402817bdf40dc10ee1de9bdbff4b52998742434933c3e9dd8a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118379112"
 ---
 # <a name="deleteservices-action"></a>Ação de excluirservices
 

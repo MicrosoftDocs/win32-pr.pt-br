@@ -1,11 +1,11 @@
 ---
-title: Método isDeleted IWMPPlaylistCollection
-description: O método isDeleted retorna um valor que indica se a playlist especificada está na pasta itens excluídos.
+title: Método IsDeleted IWMPPlaylistCollection
+description: O método IsDeleted retorna um valor que indica se a playlist especificada está na pasta itens excluídos.
 ms.assetid: 02bc4b9f-6149-4fe2-8417-6484b22f2d74
 keywords:
-- Método isDeleted Windows Media Player
-- método isDeleted Windows Media Player interface , IWMPPlaylistCollection
-- Interface IWMPPlaylistCollection Windows Media Player , método isDeleted
+- método IsDeleted Windows Media Player
+- método isdeleted Windows Media Player, interface IWMPPlaylistCollection
+- Windows Media Player de interface IWMPPlaylistCollection, método isdeleted
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118568473"
 ---
-# <a name="iwmpplaylistcollectionisdeleted-method"></a>Método IWMPPlaylistCollection::isDeleted
+# <a name="iwmpplaylistcollectionisdeleted-method"></a>Método IWMPPlaylistCollection:: IsDeleted
 
-O **método isDeleted** retorna um valor que indica se a playlist especificada está na pasta itens excluídos.
+O método **IsDeleted** retorna um valor que indica se a playlist especificada está na pasta itens excluídos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,16 +53,16 @@ Implements IWMPPlaylistCollection.isDeleted
 
 <dl> <dt>
 
-*pItem* \[ Em\]
+*pItem* \[ no\]
 </dt> <dd>
 
-Uma interface **WMPLib.IWMPPlaylist** para a playlist consultada.
+Uma interface **WMPLib. IWMPPlaylist** para a lista de reprodução consultada.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Um **System.Boolean** que especifica se a playlist foi excluída.
+Um **System. Boolean** que especifica se a playlist foi excluída.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -70,7 +70,7 @@ Um **System.Boolean** que especifica se a playlist foi excluída.
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player série 9 ou posterior.<br/>                                                                     |
+| Versão<br/>   | Windows Media Player 9 Series ou posterior.<br/>                                                                     |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

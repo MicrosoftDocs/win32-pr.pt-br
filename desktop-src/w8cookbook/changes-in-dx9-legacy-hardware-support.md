@@ -1,17 +1,17 @@
 ---
-title: Alterações no suporte de hardware herdado DX9
-description: Alterações no suporte de hardware herdado DX9
+title: Alterações no suporte a hardware herdado DX9
+description: Alterações no suporte a hardware herdado DX9
 ms.assetid: 25C7DFC7-58F4-4F6D-8D26-6DBA92424A0B
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc1ae5c4b15a2019450cc5b209f34561d8ec672d
-ms.sourcegitcommit: ea4baf9953a78d2d6bd530b680601e39f3884541
+ms.openlocfilehash: 6bfd0b8bbb05161ffe14ff57cc5db97fe88a22bf6e64a495e2b43dd8240def82
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "105813447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118211802"
 ---
-# <a name="changes-in-dx9-legacy-hardware-support"></a>Alterações no suporte de hardware herdado DX9
+# <a name="changes-in-dx9-legacy-hardware-support"></a>Alterações no suporte a hardware herdado DX9
 
 ## <a name="platform"></a>Plataforma
 
@@ -20,34 +20,34 @@ ms.locfileid: "105813447"
 
 ## <a name="description"></a>Descrição
 
-A Intel e a AMD/ATI não suportam mais suas partes gráficas DX9 e não estarão Atualizando Drivers para esses dispositivos para o Windows 8. Além disso, esses dispositivos não são abordados na caixa para o Windows 8. Os últimos drivers para esses dispositivos estão disponíveis no WU e nos sites do OEM/IHV; muitas datas do vista e muitos desses drivers de versão final apresentam problemas no Windows 8. Além disso, o nVidia afirmou recentemente que eles não oferecerão suporte às suas peças de DX9 (vista e mais antigas) móveis (Notebook) para o Windows 8. Eles continuam a dar suporte às suas partes de desktop DX9.
+Intel e AMD/ATI não são mais compatíveis com suas partes gráficas DX9 e não atualizarão drivers para esses dispositivos para Windows 8. Além disso, esses dispositivos não são abordados na caixa de Windows 8. Os últimos drivers para esses dispositivos são aqueles disponíveis no WU e nos sites do OEM/IHV; muitos datas do Vista e muitos desses drivers de versão final apresentam problemas Windows 8. Além disso, a nVidia declarou recentemente que não dará suporte às partes móveis (notebook) DX9 (Vista e mais antigas) para Windows 8. Eles continuam a dar suporte às partes DX9 da área de trabalho.
 
-Todas essas combinações de driver/parte estão na lista de fallback de software do Internet Explorer 9. Isso significa que, para fins de desempenho ou estabilidade, o Internet Explorer 9 usa a renderização de software nesses dispositivos. Essa é uma boa indicação de que a experiência com aplicativos da Windows Store não será satisfatória nesses drivers e partes.
+Todas essas combinações de driver/parte estão na lista Internet Explorer fallback de software 9. Isso significa que, por motivos de desempenho ou estabilidade, Internet Explorer 9 usa a renderização de software nesses dispositivos. Essa é uma boa indicação de que a experiência com aplicativos Windows Store não será satisfatória nesses drivers e partes.
 
 ## <a name="manifestation"></a>Manifestação
 
-Como não há nenhum suporte na caixa para esses dispositivos, muitos usuários com essas partes serão executados no driver de vídeo básico da Microsoft. Trata-se de uma GPU de software WDDM 1,2 baseada em distorção e é, na verdade, mais rápida do que algumas das partes desta classe, por exemplo, a série GMA500 da Intel. Ele dá suporte ao Aero-Glass e ao DWM e pode executar aplicativos da Windows Store.
+Como não há suporte in-box para esses dispositivos, muitos usuários com essas partes acabarão sendo executados no Microsoft Basic Display Driver. Essa é uma GPU de software WDDM 1.2 baseada em WARP e é, na verdade, mais rápida do que algumas das partes nesta classe, por exemplo, a série Intel GMA500). Ele dá suporte a aero-glass e DWM e pode executar aplicativos Windows Store.
 
 No entanto, ele tem algumas limitações importantes:
 
 -   Ele não dá suporte a vários monitores ou projeção
--   Ele não dá suporte à suspensão, embora ofereça suporte à hibernação
--   Geralmente, não permitirá a alteração da resolução da tela
+-   Ele não dá suporte a sleep, embora ele dá suporte à hibernação
+-   Geralmente, ele não permitirá alterar a resolução da tela
 
 ## <a name="mitigation"></a>Atenuação
 
-Se, após o teste, você descobrir que a experiência do usuário não é aceitável, poderá optar por definir os requisitos de hardware para seus produtos que excluem essas partes mais antigas do DX9 Intel e AMD. Você também pode optar por alertar seus clientes de que eles podem ter uma experiência inaceitável nessas partes.
+Se, após o teste, você descobrir que a experiência do usuário não é aceitável, poderá optar por definir requisitos de hardware para seus produtos que excluam essas partes DX9 Intel e AMD mais antigas. Você também pode optar por alertar seus clientes de que eles podem ter uma experiência inaceitável nessas partes.
 
 ## <a name="tests"></a>Testes
 
 Avalie o desempenho e a experiência nesses dispositivos:
 
--   Qual é a experiência como na versão final do driver disponível?
--   Qual é a experiência como no MSBDD?
+-   Como é a experiência na versão final do driver disponível?
+-   Como é a experiência no MSBDD?
 
- 
+ 
 
- 
+ 
 
 
 

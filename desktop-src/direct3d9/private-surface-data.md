@@ -17,19 +17,19 @@ Você pode armazenar qualquer tipo de dados específicos do aplicativo com uma s
 
 Uma superfície pode ter mais de um buffer de dados privado. Cada buffer é identificado por um GUID que você fornece ao anexar os dados à superfície.
 
-Para armazenar dados de superfície privada, use SetPrivateData, passando um ponteiro para o buffer de origem, o tamanho dos dados e um GUID definido pelo aplicativo para os dados. Opcionalmente, os dados de origem podem existir na forma de um objeto COM; Nesse caso, você passa um ponteiro para o ponteiro de interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) do objeto e define o sinalizador D3DSPD \_ IUNKNOWNPOINTER.
+Para armazenar dados de superfície privada, use SetPrivateData, passando um ponteiro para o buffer de origem, o tamanho dos dados e um GUID definido pelo aplicativo para os dados. Opcionalmente, os dados de origem podem existir na forma de um objeto COM; nesse caso, você passa um ponteiro para o ponteiro da interface [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) do objeto e definiu o sinalizador \_ IUNKNOWNPOINTER do D3DSPD.
 
-SetPrivateData aloca um buffer interno para os dados e copia-o. Em seguida, você pode liberar com segurança o objeto ou o buffer de origem. O buffer interno ou a referência de interface é liberada quando FreePrivateData é chamado. Isso ocorre automaticamente quando a superfície é liberada.
+SetPrivateData aloca um buffer interno para os dados e o copia. Em seguida, você pode liberar com segurança o buffer ou o objeto de origem. A referência interna de buffer ou interface é liberada quando FreePrivateData é chamado. Isso ocorre automaticamente quando a superfície é liberada.
 
-Para recuperar dados privados para uma superfície, você deve alocar um buffer do tamanho correto e, em seguida, chamar o método GetPrivateData, passando o GUID que foi atribuído aos dados. Você é responsável por liberar qualquer memória dinâmica usada para esse buffer. Se os dados forem um objeto COM, esse método recuperará o ponteiro [**IUnknown**](/windows/win32/api/unknwn/nn-unknwn-iunknown) .
+Para recuperar dados privados para uma superfície, você deve alocar um buffer do tamanho correto e, em seguida, chamar o método GetPrivateData, passando o GUID que foi atribuído aos dados. Você é responsável por liberar qualquer memória dinâmica usada para esse buffer. Se os dados são um objeto COM, esse método recupera o [**ponteiro IUnknown.**](/windows/win32/api/unknwn/nn-unknwn-iunknown)
 
-Se você não souber o tamanho de um buffer a ser alocado, primeiro chame GetPrivateData com zero em pSizeOfData. Se o método falhar com D3DERR \_ MOREDATA, ele retornará o número necessário de bytes para o buffer.
+Se você não sabe o tamanho de um buffer a ser alocado, primeiro chame GetPrivateData com zero em pSizeOfData. Se o método falhar com D3DERR \_ MOREDATA, ele retornará o número necessário de bytes para o buffer.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Superfícies de Direct3D](direct3d-surfaces.md)
+[Superfícies Direct3D](direct3d-surfaces.md)
 </dt> </dl>
 
  

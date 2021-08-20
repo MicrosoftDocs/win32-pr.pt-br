@@ -1,7 +1,7 @@
 ---
-description: Ocorre quando as informações de nome de um objeto DIDiskQuotaUser são resolvidas.
+description: Ocorre quando as informações de nome de um objeto DIDiskQuotaUser foram resolvidas.
 ms.assetid: df32cb17-ad90-4535-a36b-60c5b4e9999f
-title: Função onusernamechanged (Dskquota. h)
+title: Função OnUserNameChanged (Dskquota.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 98906f281c6c93a64754c1aa5cecfc6624599c40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02e4227e06d9c9303a5fe9b799afff6e452843bbb7c0dac096b39f925e568d25
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104296936"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118459889"
 ---
-# <a name="onusernamechanged-function"></a>Função onusernamechanged
+# <a name="onusernamechanged-function"></a>Função OnUserNameChanged
 
-Ocorre quando as informações de nome de um objeto [**DIDiskQuotaUser**](didiskquotauser-object.md) são resolvidas.
+Ocorre quando as informações de nome de [**um objeto DIDiskQuotaUser**](didiskquotauser-object.md) foram resolvidas.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -31,7 +31,7 @@ Ocorre quando as informações de nome de um objeto [**DIDiskQuotaUser**](didisk
 *oUser* 
 </dt> <dd>
 
-O **objeto** que é avaliado para o objeto [**DIDiskQuotaUser**](didiskquotauser-object.md) associado ao usuário cujo nome foi resolvido.
+O **Objeto** que é avaliada para o [**objeto DIDiskQuotaUser**](didiskquotauser-object.md) associado ao usuário cujo nome foi resolvido.
 
 </dd> </dl>
 
@@ -41,7 +41,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Quando um cliente [**enumera os usuários**](didiskquotauser-object.md)ou chama o método [**adduser**](diskquotacontrol-adduser.md) ou [**FindUser**](diskquotacontrol-finduser.md) , o nome de usuário deve ser resolvido para o Sid (ID de segurança) associado. Como esse procedimento pode ser demorado, um cliente pode ter a resolução de nomes feita de forma assíncrona em um thread em segundo plano. Quando o nome de um usuário é resolvido, o objeto [**DiskQuotaControl**](diskquotacontrol-object.md) notifica seu cliente acionando o evento **onnomedeusuáriochanged** . Um objeto **DIDiskQuotaUser** associado ao usuário é passado como um parâmetro. Esse objeto permite que o cliente modifique as configurações de cota do usuário.
+Quando um cliente [**enumera usuários**](didiskquotauser-object.md)ou chama o [**método AddUser**](diskquotacontrol-adduser.md) ou [**FindUser,**](diskquotacontrol-finduser.md) o nome de usuário deve ser resolvido para a SID (ID de segurança) associada. Como esse procedimento pode ser demorado, um cliente pode ter a resolução de nomes feita de forma assíncrona em um thread em segundo plano. Quando o nome de um usuário é resolvido, o objeto [**DiskQuotaControl**](diskquotacontrol-object.md) notifica seu cliente disparando o **evento OnUserNameChanged.** Um **objeto DIDiskQuotaUser** associado ao usuário é passado como um parâmetro. Esse objeto permite que o cliente modifique as configurações de cota do usuário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,8 +51,8 @@ Quando um cliente [**enumera os usuários**](didiskquotauser-object.md)ou chama 
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Dskquota. h</dt> </dl>                         |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Dskquota.h</dt> </dl>                         |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

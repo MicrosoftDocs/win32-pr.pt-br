@@ -1,7 +1,7 @@
 ---
-description: CBasePropertyPage. ~ CBasePropertyPage destruidor-método Destruitor.
+description: Destruidor CBasePropertyPage.~CBasePropertyPage – método destruidor.
 ms.assetid: 9a8e18b7-7582-4a91-8114-6f96481284c1
-title: CBasePropertyPage. ~ CBasePropertyPage Destruitor (cProp. h)
+title: Destruidor CBasePropertyPage.~CBasePropertyPage (Cprop.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117823221"
 ---
-# <a name="cbasepropertypagecbasepropertypage-destructor"></a>Destruidor CBasePropertyPage. ~ CBasePropertyPage
+# <a name="cbasepropertypagecbasepropertypage-destructor"></a>Destruidor CBasePropertyPage.~CBasePropertyPage
 
 Método destruidor.
 
@@ -42,8 +42,8 @@ Método destruidor.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Cprop. h (incluir Fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Cprop.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

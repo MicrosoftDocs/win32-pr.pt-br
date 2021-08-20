@@ -4,16 +4,16 @@ description: Suporte à entrada de fala
 ms.assetid: 4702b941-fcc9-4d00-aba2-eca624b6d417
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8ecb6f2ddfbbe10f8b892ce922cd466eca96890
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: fd777f5dca0df91a4660249b0cdda380f2f20c37ba5c1c38a04264bb871ab3bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105748304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118746247"
 ---
 # <a name="speech-input-support"></a>Suporte à entrada de fala
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 Além de dar suporte à interação entre mouse e teclado, o Microsoft Agent inclui suporte direto para entrada de fala. Como o suporte do Microsoft Agent para entrada de fala é baseado no Microsoft SAPI (fala, interface de programação de aplicativo), você pode usar o Microsoft Agent com mecanismos de controle e comando de reconhecimento de fala que incluem o suporte a SAPI-required. Para obter mais informações sobre os requisitos do mecanismo de fala, consulte [requisitos de suporte do mecanismo de fala](requirements-for-speech-recognition-engines.md).
 
@@ -35,6 +35,6 @@ O servidor também notifica seu aplicativo cliente quando ele corresponde à ent
 
 Se o usuário desabilitar a entrada de fala em opções avançadas de caracteres, a tecla de escuta também será desabilitada. Da mesma forma, a tentativa de chamar o método [**Listen**](listen-method.md) quando a entrada de fala está desabilitada causará falha no método.
 
- 
+ 
 
- 
+ 

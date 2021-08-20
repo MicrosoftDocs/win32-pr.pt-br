@@ -20,12 +20,12 @@ ms.locfileid: "118561092"
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [Windows Tipos de dados base de runtime](base-data-types.md)
+-   [Windows Tipos de dados base de tempo de execução](base-data-types.md)
 -   [**HSTRING**](hstring.md)
--   [**HSTRING \_ BUFFER**](hstring-buffer.md)
--   [**RETORNO DE CHAMADA \_ PINSPECT HSTRING \_**](/windows/win32/api/winstring/nc-winstring-pinspect_hstring_callback)
--   [*RETORNO DE CHAMADA DE MEMÓRIA PINSPECT \_ \_*](/windows/win32/api/roerrorapi/nc-roerrorapi-pinspect_memory_callback)
--   [**COOKIE DE \_ REGISTRO RO \_**](ro-registration-cookie.md)
+-   [**\_buffer HSTRING**](hstring-buffer.md)
+-   [**\_retorno de \_ chamada PINSPECT HSTRING**](/windows/win32/api/winstring/nc-winstring-pinspect_hstring_callback)
+-   [*retorno de chamada de \_ memória PINSPECT \_*](/windows/win32/api/roerrorapi/nc-roerrorapi-pinspect_memory_callback)
+-   [**\_cookie de registro ro \_**](ro-registration-cookie.md)
 
  
 

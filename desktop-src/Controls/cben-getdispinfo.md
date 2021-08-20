@@ -1,9 +1,9 @@
 ---
-title: CBEN_GETDISPINFO código de notificação (commctrl. h)
-description: Enviado para recuperar informações de exibição sobre um item de retorno de chamada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: CBEN_GETDISPINFO de notificação (Commctrl.h)
+description: Enviado para recuperar informações de exibição sobre um item de retorno de chamada. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: a181be28-0001-4953-8e59-77aff2dc40be
 keywords:
-- CBEN_GETDISPINFO de código de notificação controles do Windows
+- CBEN_GETDISPINFO de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c3121d15b1482bdedf19a814a42e3309265909f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 896d282426c11f40fe949c73f44eb963a399c5c210e839198527f9bc903e2fdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118413689"
 ---
-# <a name="cben_getdispinfo-notification-code"></a>Código de notificação do CBEN \_ GETDISPINFO
+# <a name="cben_getdispinfo-notification-code"></a>Código de \_ notificação CBEN GETDISPINFO
 
-Enviado para recuperar informações de exibição sobre um item de retorno de chamada. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Enviado para recuperar informações de exibição sobre um item de retorno de chamada. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,19 +43,19 @@ CBEN_GETDISPINFO
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-commctrl-nmcomboboxexa) que contém informações sobre o código de notificação.
+Um ponteiro para uma [**estrutura NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-commctrl-nmcomboboxexa) que contém informações sobre o código de notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O aplicativo que processa esse código de notificação deve retornar zero.
+O aplicativo que está processando esse código de notificação deve retornar zero.
 
 ## <a name="remarks"></a>Comentários
 
-A estrutura [**NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-commctrl-nmcomboboxexa) contém uma estrutura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) . O membro **Mask** especifica as informações que estão sendo solicitadas pelo controle.
+A [**estrutura NMCOMBOBOXEX**](/windows/desktop/api/Commctrl/ns-commctrl-nmcomboboxexa) contém uma [**estrutura COMBOBOXEXITEM.**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) O **membro** mask especifica as informações que estão sendo solicitadas pelo controle .
 
-Preencha os membros apropriados da estrutura para retornar as informações solicitadas ao controle. Se o manipulador de mensagens definir o membro **Mask** da estrutura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) para CBEIF \_ di \_ SETITEM, o controle armazenará as informações e não a solicitará novamente.
+Preencha os membros apropriados da estrutura para retornar as informações solicitadas ao controle. Se o manipulador  de mensagens definir o membro de máscara da estrutura [**COMBOBOXEXITEM**](/windows/win32/api/commctrl/ns-commctrl-comboboxexitema) como CBEIF \_ DI SETITEM, o controle armazenará as informações e não as solicitará \_ novamente.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,9 +63,9 @@ Preencha os membros apropriados da estrutura para retornar as informações soli
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **CBEN \_ GETDISPINFOW** (Unicode) e **CBEN \_ GETDISPINFOA** (ANSI)<br/>         |
 
 

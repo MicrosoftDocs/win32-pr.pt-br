@@ -1,34 +1,34 @@
 ---
-description: Você pode usar um bitmap para capturar uma imagem e pode armazenar a imagem capturada na memória, exibi-la em um local diferente na janela do aplicativo ou exibi-la em outra janela.
+description: Você pode usar um bitmap para capturar uma imagem e armazenar a imagem capturada na memória, exibi-la em um local diferente na janela do aplicativo ou exibi-la em outra janela.
 ms.assetid: 672fc2e4-c35c-4d5d-98fa-85f2ad56d9b0
 title: Captura de uma imagem
 ms.topic: article
 ms.date: 12/03/2020
 ms.custom: contperf-fy21q2
-ms.openlocfilehash: b6029ec18a39ea034ca22e4c3d6c2d1e659635cc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7516c125bd2f6953dcd91bbefee19d9ebe68c3fbbaf6ad2c029abb41d7b01542
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117888109"
 ---
 # <a name="capturing-an-image"></a>Captura de uma imagem
 
-Você pode usar um bitmap para capturar uma imagem e pode armazenar a imagem capturada na memória, exibi-la em um local diferente na janela do aplicativo ou exibi-la em outra janela.
+Você pode usar um bitmap para capturar uma imagem e armazenar a imagem capturada na memória, exibi-la em um local diferente na janela do aplicativo ou exibi-la em outra janela.
 
-Em alguns casos, talvez você queira que seu aplicativo Capture imagens e armazene-as apenas temporariamente. Por exemplo, quando você dimensiona ou aplica zoom em uma imagem criada em um aplicativo de desenho, o aplicativo deve salvar temporariamente a exibição normal da imagem e exibir a exibição com zoom. Posteriormente, quando o usuário selecionar o modo de exibição normal, o aplicativo deverá substituir a imagem com zoom por uma cópia do modo de exibição normal que ele salvou temporariamente.
+Em alguns casos, talvez você queira que seu aplicativo capture imagens e armazene-as apenas temporariamente. Por exemplo, quando você dimensiona ou amplia uma imagem criada em um aplicativo de desenho, o aplicativo deve salvar temporariamente a exibição normal da imagem e exibir a exibição ampliada. Posteriormente, quando o usuário selecionar a exibição normal, o aplicativo deverá substituir a imagem ampliada por uma cópia da exibição normal que ela salvou temporariamente.
 
-Para armazenar uma imagem temporariamente, seu aplicativo deve chamar [**CreateCompatibleDC**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatibledc) para criar um controlador de domínio compatível com o controlador de domínio da janela atual. Depois de criar um controlador de domínio compatível, você cria um bitmap com as dimensões apropriadas chamando a função [**CreateCompatibleBitmap**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatiblebitmap) e, em seguida, seleciona-a nesse contexto de dispositivo chamando a função [**SelectObject**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject) .
+Para armazenar uma imagem temporariamente, seu aplicativo deve chamar [**CreateCompatibleDC**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatibledc) para criar um CONTROLADOR de rede que seja compatível com o DC da janela atual. Depois de criar um DC compatível, crie um bitmap com as dimensões apropriadas chamando a função [**CreateCompatibleBitmap**](/windows/desktop/api/Wingdi/nf-wingdi-createcompatiblebitmap) e, em seguida, selecione-o nesse contexto de dispositivo chamando a [**função SelectObject.**](/windows/desktop/api/Wingdi/nf-wingdi-selectobject)
 
-Depois que o contexto do dispositivo compatível for criado e o bitmap apropriado tiver sido selecionado, você poderá capturar a imagem. A função [**BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) captura imagens. Essa função executa uma transferência de bloco de bits ou seja, ela copia dados de um bitmap de origem em um bitmap de destino. No entanto, os dois argumentos para essa função não são identificadores de bitmap. Em vez disso, **BitBlt** recebe identificadores que identificam dois contextos de dispositivo e copia os dados de bitmap de um bitmap selecionado no controlador de domínio de origem para um bitmap selecionado no controlador de domínio de destino. Nesse caso, o DC de destino é o DC compatível, portanto, quando **BitBlt** conclui a transferência, a imagem foi armazenada na memória. Para reexibir a imagem, chame **BitBlt** uma segunda vez, ESPECIFICANDO o controlador de domínio compatível como o DC de origem e um DC de janela (ou impressora) como o controlador de domínio de destino.
+Depois que o contexto do dispositivo compatível for criado e o bitmap apropriado tiver sido selecionado nele, você poderá capturar a imagem. A [**função BitBlt**](/windows/desktop/api/Wingdi/nf-wingdi-bitblt) captura imagens. Essa função executa uma transferência de bloco de bits, ou seja, copia dados de um bitmap de origem em um bitmap de destino. No entanto, os dois argumentos para essa função não são alças de bitmap. Em vez disso, o **BitBlt** recebe identificadoras que identificam dois contextos de dispositivo e copia os dados de bitmap de um bitmap selecionado para o DC de origem em um bitmap selecionado no DC de destino. Nesse caso, o DC de destino é o DC compatível, portanto, quando **o BitBlt** conclui a transferência, a imagem é armazenada na memória. Para repetir a imagem, chame **BitBlt** uma segunda vez, especificando o DC compatível como o DC de origem e um DC de janela (ou impressora) como o DC de destino.
 
 ## <a name="code-example"></a>Exemplo de código
 
-Esta seção contém um exemplo de código que captura uma imagem de toda a área de trabalho, dimensiona-a para o tamanho da janela atual e salva-a em um arquivo (bem como exibi-la na área do cliente).
+Esta seção contém um exemplo de código que captura uma imagem de toda a área de trabalho, dimensiona-a para o tamanho da janela atual e, em seguida, salva-a em um arquivo (bem como exibi-la na área de cliente).
 
-Para testar o exemplo de código, comece criando um novo projeto no Visual Studio com base no modelo de projeto de **aplicativo da área de trabalho do Windows** . É importante nomear o novo projeto `GDI_CapturingAnImage` para que a listagem de código abaixo seja compilada (por exemplo, inclui `GDI_CapturingAnImage.h` , que existirá no seu novo projeto se você o nomear como sugerido).
+Para experimentar o exemplo de código, comece criando um novo projeto no Visual Studio com base no modelo de projeto **Windows Aplicativo** da Área de Trabalho. É importante nomear o novo projeto para que a listagem de código abaixo seja compilada (por exemplo, ela inclui , que existirá em seu novo projeto se você nomeá-lo como `GDI_CapturingAnImage` `GDI_CapturingAnImage.h` sugerido).
 
-Abra o `GDI_CapturingAnImage.cpp` arquivo de código-fonte em seu novo projeto e substitua seu conteúdo pela listagem abaixo. Em seguida, compile e execute. Cada vez que redimensionar a janela, você verá a captura de tela capturada exibida na área cliente.
+Abra o `GDI_CapturingAnImage.cpp` arquivo de código-fonte em seu novo projeto e substitua seu conteúdo pela listagem abaixo. Em seguida, compile e execute. Sempre que você reessar a janela, verá a captura de tela capturada exibida na área do cliente.
 
 ```cpp
 // GDI_CapturingAnImage.cpp : Defines the entry point for the application.

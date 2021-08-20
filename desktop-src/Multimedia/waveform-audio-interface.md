@@ -9,12 +9,12 @@ keywords:
 - Wave-interface de áudio, sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 51c2108539a13f9c603198662039cec0bf1abd37
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0657381f061238d974ab7dde5fc934c2c3438a0116712b54801be0a9351f2d00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117800808"
 ---
 # <a name="waveform-audio-interface"></a>Interface Waveform-Audio
 
@@ -24,9 +24,9 @@ Os tópicos a seguir descrevem a interface de Wave-Audio, que é usada por aplic
 -   [Executando Waveform-Audio arquivos](playing-waveform-audio-files.md)
 -   [Gravando áudio de onda](recording-waveform-audio.md)
 
- 
+ 
 
- 
+ 
 
 
 
