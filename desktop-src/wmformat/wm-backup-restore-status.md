@@ -1,10 +1,10 @@
 ---
-title: Estrutura de WM_BACKUP_RESTORE_STATUS (wmdrmsdk. h)
-description: A estrutura de status de restauração de backup do WM \_ \_ \_ contém informações sobre uma operação de backup ou restauração de licença pendente.
+title: WM_BACKUP_RESTORE_STATUS estrutura (Wmdrmsdk.h)
+description: A estrutura WM BACKUP RESTORE STATUS contém informações sobre uma operação de backup ou restauração de \_ \_ licença \_ pendente.
 ms.assetid: 74e94bc6-376b-4848-a9f9-11c9cb4005f2
 keywords:
-- Formato de mídia do Windows de estrutura de WM_BACKUP_RESTORE_STATUS
-- estruturar formato de mídia do Windows
+- WM_BACKUP_RESTORE_STATUS formato de mídia do Windows
+- formato de mídia de janelas de estrutura
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 476cd4ddab42ec9f8f44ff51b492bd3913824cf7
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a7f7d67cc67d6d983cf412a0bea82d26ad748da87ba770373554a15826c983ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811639"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118028311"
 ---
-# <a name="wm_backup_restore_status-structure"></a>\_Estrutura de \_ status de restauração de backup do WM \_
+# <a name="wm_backup_restore_status-structure"></a>Estrutura WM \_ BACKUP \_ RESTORE \_ STATUS
 
-A estrutura de status de restauração de backup do WM contém informações sobre uma operação de backup ou restauração de licença pendente. **\_ \_ \_**
+A **estrutura WM BACKUP RESTORE \_ \_ \_ STATUS** contém informações sobre uma operação de backup ou restauração de licença pendente.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ typedef struct WM_BACKUP_RESTORE_STATUS {
 **eStatus**
 </dt> <dd>
 
-Membro da enumeração [**de \_ status Msdrm**](msdrm-status.md) especificando o status.
+Membro da [**enumeração \_ STATUS do MSDRM**](msdrm-status.md) especificando o status.
 
 </dd> <dt>
 
@@ -58,7 +58,7 @@ Cadeia de caracteres que contém o erro.
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é recebida quando você chama o método [**IWMDRMLicenseBackupRestoreStatus:: GetStatus**](iwmdrmlicensebackuprestorestatus-getstatus.md) . Ele contém o status da operação pendente de backup ou restauração no momento da chamada.
+Essa estrutura é recebida quando você chama o [**método IWMDRMLicenseBackupRestoreStatus::GetStatus.**](iwmdrmlicensebackuprestorestatus-getstatus.md) Ele contém o status da operação de backup ou restauração pendente no momento da chamada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Essa estrutura é recebida quando você chama o método [**IWMDRMLicenseBackupRe
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmdrmsdk. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Wmdrmsdk.h</dt> </dl> |
 
 
 

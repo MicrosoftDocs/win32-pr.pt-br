@@ -1,6 +1,6 @@
 ---
 title: Método IConfigAsfWriter ConfigureFilterUsingProfileId
-description: O método ConfigureFilterUsingProfileId configura o filtro para gravar um arquivo ASF com um índice de identificador de perfil (ID) da lista de perfis do sistema. (Somente para perfis do Windows Media Format 4,0.).
+description: O método ConfigureFilterUsingProfileId configura o filtro para gravar um arquivo ASF com um índice de identificador de perfil (ID) da lista de perfis do sistema. (somente para perfis do formato de mídia Windows 4,0.).
 ms.assetid: b0375785-83db-4540-aca9-7ba0bb81c1ef
 keywords:
 - Formato de mídia do Windows do método ConfigureFilterUsingProfileId
@@ -15,16 +15,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0226195d7657667e3947b55546b321edafa7befc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6321d259a213426df7e4490c3fc8a793e583a6fcdf58ec795a9f88e43645377f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105793827"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118028480"
 ---
 # <a name="iconfigasfwriterconfigurefilterusingprofileid-method"></a>Método IConfigAsfWriter:: ConfigureFilterUsingProfileId
 
-O método **ConfigureFilterUsingProfileId** configura o filtro para gravar um arquivo ASF com um índice de identificador de perfil (ID) da lista de perfis do sistema. (Somente para perfis do Windows Media Format 4,0.)
+O método **ConfigureFilterUsingProfileId** configura o filtro para gravar um arquivo ASF com um índice de identificador de perfil (ID) da lista de perfis do sistema. (somente para perfis do formato de mídia Windows 4,0.)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,11 +44,11 @@ HRESULT ConfigureFilterUsingProfileId(
 *dwProfileId* \[ no\]
 </dt> <dd>
 
-ID do perfil, conforme definido na versão 4,0 do SDK do Windows Media Format.
+ID do perfil, conforme definido na versão 4,0 do SDK do formato de mídia Windows.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores de **HRESULT** a seguir.
 
@@ -66,7 +66,7 @@ Retorna um dos valores de **HRESULT** a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Este método agora é obsoleto porque ele pressupõe os perfis do SDK do Windows Media Format versão 4,0. Para configurar o filtro para a versão 7,0 e perfis posteriores, use [**IConfigAsfWriter:: ConfigureFilterUsingProfile**](iconfigasfwriter-configurefilterusingprofile.md) ou [**IConfigAsfWriter:: ConfigureFilterUsingProfileGuid**](iconfigasfwriter-configurefilterusingprofileguid.md).
+este método agora é obsoleto porque ele pressupõe a versão 4,0 Windows perfis do SDK do formato de mídia. Para configurar o filtro para a versão 7,0 e perfis posteriores, use [**IConfigAsfWriter:: ConfigureFilterUsingProfile**](iconfigasfwriter-configurefilterusingprofile.md) ou [**IConfigAsfWriter:: ConfigureFilterUsingProfileGuid**](iconfigasfwriter-configurefilterusingprofileguid.md).
 
 ## <a name="see-also"></a>Confira também
 

@@ -4,12 +4,12 @@ ms.assetid: ca97c55e-90d1-410c-b41d-c49673c10388
 title: Tarefas do serviço de dispositivo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b9474161531e8b201c61d7fb790d8405a0934ce
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fd3d272af813a2ddd2854b46b59be013bdaea9df979770af7c7647f5935306e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105815557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118027312"
 ---
 # <a name="device-service-tasks"></a>Tarefas do serviço de dispositivo
 
@@ -33,7 +33,7 @@ Essas operações são descritas nas seções a seguir e são demonstradas no ap
 
 <dl> <dt>
 
-[Suporte no Windows 7 e vista](support-in-windows-vista.md)
+[suporte no Windows 7 e no Vista](support-in-windows-vista.md)
 </dt> </dl>
 
  

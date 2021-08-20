@@ -178,13 +178,13 @@ Os arquivos que são referenciados na [**estrutura \_ informações \_ sobre o d
 [**Informações do DRIVER \_ \_ 2**](driver-info-2.md)
 </dt> <dt>
 
-[**INFORMAÇÕES \_ DO DRIVER \_ 3**](driver-info-3.md)
+[**Informações do DRIVER \_ \_ 3**](driver-info-3.md)
 </dt> <dt>
 
-[**INFORMAÇÕES \_ DO DRIVER \_ 4**](driver-info-4.md)
+[**Informações do DRIVER \_ \_ 4**](driver-info-4.md)
 </dt> <dt>
 
-[**INFORMAÇÕES \_ DO DRIVER \_ 6**](driver-info-6.md)
+[**Informações do DRIVER \_ \_ 6**](driver-info-6.md)
 </dt> <dt>
 
 [**DeletePrinterDriverEx**](deleteprinterdriverex.md)

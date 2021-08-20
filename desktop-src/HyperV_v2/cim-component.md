@@ -1,7 +1,7 @@
 ---
 description: Representa uma associação genérica entre um elemento gerenciado pai e um elemento gerenciado filho em que o filho representa um componente ou parte do pai.
 ms.assetid: b5cef452-2d00-483c-8e70-f804f1e3536b
-title: Classe CIM_Component (gerenciamento do Hyper-V)
+title: CIM_Component classe (gerenciamento do Hyper-V)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,14 +15,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 56ff83a4da51ba18205a8d8ab5e6e57ea1a7794b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 321ea373f61806f06eee6b20250f089fea73c8e47fd36da850b2b4d1a8b80d96
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117995708"
 ---
-# <a name="cim_component-class-hyper-v-management"></a>Classe CIM_Component (gerenciamento do Hyper-V)
+# <a name="cim_component-class-hyper-v-management"></a>CIM_Component classe (gerenciamento do Hyper-V)
 
 Representa uma associação genérica entre um elemento gerenciado pai e um elemento gerenciado filho em que o filho representa um componente ou parte do pai.
 
@@ -39,26 +39,26 @@ class CIM_Component
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ componente CIM** tem estes tipos de membros:
+A **classe \_ Componente CIM** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe de **\_ componente CIM** tem essas propriedades.
+A **classe \_ Componente CIM** tem essas propriedades.
 
 <dl> <dt>
 
-**GroupComponent**
+**Groupcomponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ managedelement**
+Tipo de dados: **\_ ManagedElement do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**agregação**](/windows/desktop/WmiSdk/standard-qualifiers)
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Agregação**](/windows/desktop/WmiSdk/standard-qualifiers)
 </dt> </dl>
 
 O elemento pai na associação.
@@ -68,13 +68,13 @@ O elemento pai na associação.
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ managedelement**
+Tipo de dados: **\_ ManagedElement do CIM**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
+Qualificadores: [ **Chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
 O elemento filho na associação.
@@ -89,8 +89,8 @@ O elemento filho na associação.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8<br/>                                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

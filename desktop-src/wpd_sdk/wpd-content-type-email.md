@@ -4,12 +4,12 @@ ms.assetid: 96f81477-5ec9-49c1-987a-348a92a7e638
 title: WPD_CONTENT_TYPE_EMAIL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0cb274fdd4b4e9bd3e4d02d20afeda1ef871143
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 07d56626012bf246a443a578eaad2fb6c2e98cdb19cd76583d1d4c552e5c395d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118026468"
 ---
 # <a name="wpd_content_type_email"></a>\_email de \_ tipo de conteúdo WPD \_
 

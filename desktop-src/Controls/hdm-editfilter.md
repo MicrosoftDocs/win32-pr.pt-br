@@ -3,7 +3,7 @@ title: Mensagem de HDM_EDITFILTER (commctrl. h)
 description: Move o foco de entrada para a caixa de edição quando um botão de filtro tem o foco.
 ms.assetid: 580f7872-4056-4d7d-8e69-274b4b4b5545
 keywords:
-- Controles de HDM_EDITFILTER de mensagens do Windows
+- controles de Windows de mensagem de HDM_EDITFILTER
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 733c79bf747d3b55aa8dd38eb8fad8fdc83601e1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8636c17bfa9043891e5037df79be9c72c1ddc8f3aa2b4d13520f4289205b5099
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118006156"
 ---
 # <a name="hdm_editfilter-message"></a>\_Mensagem HDM EDITFILTER
 
@@ -54,7 +54,7 @@ Um sinalizador que especifica como tratar as alterações de edição do usuári
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um número inteiro. O **LRESULT** é convertido em um inteiro que indica **true**(1) ou **false**(0).
 
@@ -64,9 +64,9 @@ Retorna um número inteiro. O **LRESULT** é convertido em um inteiro que indica
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 
