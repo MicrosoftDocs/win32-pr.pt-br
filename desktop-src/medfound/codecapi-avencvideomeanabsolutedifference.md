@@ -4,12 +4,12 @@ ms.assetid: 61C0F431-FBF5-4B17-8F3A-0F6AD2BA33B7
 title: Propriedade CODECAPI_AVEncVideoMeanAbsoluteDifference (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f58a7bc0da9fce88c0b8137d800d527d4717801c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8eb0d2e515187961b020ef4896f4e6669d378dbed2ca4ddb487cf271db684591
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118064747"
 ---
 # <a name="codecapi_avencvideomeanabsolutedifference-property"></a>\_Propriedade CODECAPI AVEncVideoMeanAbsoluteDifference
 
@@ -37,9 +37,9 @@ O valor padrão deve ser 0.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8.1 \[ apenas aplicativos de área de trabalho\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012 R2\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8.1 \[ somente aplicativos da área de trabalho\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[Somente aplicativos da área de trabalho R2\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

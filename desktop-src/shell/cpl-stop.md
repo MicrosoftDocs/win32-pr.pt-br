@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 78f8926d85b35b8cf5e55188c6cd76b014b3c4c8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ec854894a6b6f0a0a66c48aa21f277176d030a38128059413c2f022563c8aa6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967347"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118050823"
 ---
 # <a name="cpl_stop-message"></a>CPL \_ mensagem de parada
 
@@ -42,7 +42,7 @@ O valor que o aplicativo do painel de controle carregou no membro **lpData** da 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função [**CPlApplet**](/windows/win32/api/cpl/nc-cpl-applet_proc) processar essa mensagem com êxito, ela deverá retornar zero.
 
@@ -56,7 +56,7 @@ Em resposta a essa mensagem, um aplicativo do painel de controle deve executar a
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                      |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                      |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
 | Cabeçalho<br/>                   | <dl> <dt>CPL. h</dt> </dl> |
 

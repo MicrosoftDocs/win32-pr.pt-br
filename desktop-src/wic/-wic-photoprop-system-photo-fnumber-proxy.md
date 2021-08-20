@@ -4,12 +4,12 @@ ms.assetid: dadd506f-016d-45b0-abc3-724e3723b243
 title: Proxy System. Photo. FNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0df6f5a3f0854c6cb2084384057a6676b006b1ea
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 94390b57f8ce20398178950b0be56ff23b737523712b2e2aaa25aa35f43267cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814180"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117667353"
 ---
 # <a name="systemphotofnumber-proxy"></a>Proxy System. Photo. FNumber
 
@@ -25,7 +25,7 @@ JPEG, TIFF
 
 ### <a name="read-only"></a>Somente leitura
 
-Yes
+Sim
 
 ### <a name="output-propvariant-type"></a>Tipo de PROPVARIANT de saída
 

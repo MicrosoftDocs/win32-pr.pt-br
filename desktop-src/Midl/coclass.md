@@ -1,6 +1,6 @@
 ---
 title: atributo coclass
-description: A instrução coclass fornece uma lista das interfaces com suporte para um objeto de componente.
+description: A instrução coclass fornece uma listagem das interfaces com suporte para um objeto de componente.
 ms.assetid: 2c636327-ad18-4087-b495-d1aa84a07f48
 keywords:
 - atributo de coclasse MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ba95b38675869637c679a2409a82fb812709ec8
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: cbd64ed5565797444b58ea71c0b7daf6c083c4810b0876a8b990a7dd281a84c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365949"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117807302"
 ---
 # <a name="coclass-attribute"></a>atributo coclass
 
-A instrução **coclass** fornece uma lista das interfaces com suporte para um objeto de componente.
+A **instrução coclass** fornece uma listagem das interfaces com suporte para um objeto de componente.
 
 ``` syntax
 [
@@ -43,31 +43,31 @@ coclass classname
 
 <dl> <dt>
 
-*Categoria-atributo-lista* 
+*coclass-attribute-list* 
 </dt> <dd>
 
-O **\[** atributo [**UUID**](uuid.md) **\]** é necessário em uma **coclass**. Esse é o mesmo **\[ UUID \]** registrado como um CLSID no banco de dados de registro do sistema. Os **\[** atributos [**HelpString**](helpstring.md) **\]** , **\[** [**IdentificaçãoDoContextoDaAjuda**](helpcontext.md) **\]** , **\[** [**licenciado**](licensed.md) **\]** , **\[** [**versão**](version.md) **\]** , **\[** [**controle**](control.md) **\]** , **\[** [**oculto**](hidden.md) **\]** e **\[** [**appobject**](appobject.md) **\]** são aceitos, mas não obrigatórios, antes de uma definição de **coclasse** .
+O **\[** [**atributo uuid**](uuid.md) **\]** é necessário em uma **coclasse**. Esse é o mesmo **\[ uuid registrado \]** como um CLSID no banco de dados de registro do sistema. Os **\[** [**atributos helpstring**](helpstring.md), helpcontext , licenciado, versão , controle , oculto e appobject são aceitos, mas não necessários, antes de uma **\]** **\[** [](helpcontext.md) **\]** **\[** [](licensed.md) **\]** **\[** [](version.md) **\]** **\[** [](control.md) **\]** **\[** [](hidden.md) **\]** **\[** [](appobject.md) **\]** **definição de coclasse.**
 
 </dd> <dt>
 
-*ClassName* 
+*Classname* 
 </dt> <dd>
 
 Nome pelo qual o objeto comum é conhecido na biblioteca de tipos.
 
 </dd> <dt>
 
-*atributos de interface* 
+*interface-attributes* 
 </dt> <dd>
 
-Atributos opcionais para a interface ou Dispinterface. Os **\[** atributos de [**origem**](source.md) **\]** , **\[** [**padrão**](default.md) **\]** e **\[** [**restritos**](restricted.md) **\]** são aceitos em uma interface ou dispinterface dentro de uma **coclass**.
+Atributos opcionais para a interface ou dispinterface. Os atributos de origem , padrão e restritos são **\[** [](source.md) **\]** **\[** [](default.md) **\]** **\[** [](restricted.md) **\]** aceitos em uma interface ou dispinterface dentro de uma **coclasse**.
 
 </dd> <dt>
 
-*InterfaceName* 
+*Interfacename* 
 </dt> <dd>
 
-Uma interface declarada com a palavra-chave [**interface**](interface.md) ou uma dispinterface declarada com a palavra-chave [**dispinterface**](dispinterface.md) .
+Uma interface declarada com a palavra-chave [**interface**](interface.md) ou uma dispinterface declarada com a [**palavra-chave dispinterface.**](dispinterface.md)
 
 </dd> </dl>
 
@@ -107,10 +107,10 @@ coclass mycoclass
 [**appobject**](appobject.md)
 </dt> <dt>
 
-[**controlo**](control.md)
+[**Controle**](control.md)
 </dt> <dt>
 
-[**os**](default.md)
+[**Padrão**](default.md)
 </dt> <dt>
 
 [**dispinterface**](dispinterface.md)
@@ -128,33 +128,33 @@ coclass mycoclass
 [**helpcontext**](helpcontext.md)
 </dt> <dt>
 
-[**oculto**](hidden.md)
+[**Escondidos**](hidden.md)
 </dt> <dt>
 
-[**interface**](interface.md)
+[**Interface**](interface.md)
 </dt> <dt>
 
 [**licensed**](licensed.md)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**Restricted**](restricted.md)
+[**Restrito**](restricted.md)
 </dt> <dt>
 
-[**original**](source.md)
+[**Fonte**](source.md)
 </dt> <dt>
 
-[TYPEFLAGS](/windows/win32/api/oaidl/ne-oaidl-typeflags)
+[Typeflags](/windows/win32/api/oaidl/ne-oaidl-typeflags)
 </dt> <dt>
 
-[**personalizado**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> <dt>
 
 [**Versão**](version.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

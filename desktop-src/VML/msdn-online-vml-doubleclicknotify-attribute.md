@@ -4,21 +4,21 @@ description: Atributo DoubleClickNotify de VML
 ms.assetid: 003a87f5-29c1-484e-ac15-2e4cb8e854ad
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 16be329952cfff23957f961fb6d29198ad173898
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9945f4391890f33d3569d1c1aed39a8ec5bbe4b0be29258da1cca4b7caf895da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294093"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124826"
 ---
 # <a name="vml-doubleclicknotify-attribute"></a>Atributo DoubleClickNotify de VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Envia uma mensagem de evento quando uma forma é clicada duas vezes. Leitura/gravação. **VgTriState**.
 
@@ -34,7 +34,7 @@ Envia uma mensagem de evento quando uma forma é clicada duas vezes. Leitura/gra
 
 O valor padrão é **false**, indicando que o evento não será acionado.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo de extensões*
 
 **Exemplo**
 
@@ -49,6 +49,6 @@ A forma disparará um evento de clique duplo quando clicado duas vezes.
 
 
 
- 
+ 
 
- 
+ 

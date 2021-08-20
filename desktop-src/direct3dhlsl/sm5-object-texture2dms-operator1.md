@@ -1,9 +1,9 @@
 ---
-title: 'Função Texture2DMS:: Operator'
+title: Função Texture2DMS::Operator
 description: Recupera um valor do recurso no local fornecido no índice de exemplo 0.
 ms.assetid: 80380D3F-1E71-4C43-A17B-F94F6E5215B1
 keywords:
-- Função Operator HLSL
+- Função de operador HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6ae7976e6871dc2547ed5c372e1551e5bf0ca148
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 67b10ee5c6a089fa78b75dab10dd90cae8fe2f417172df1936e4c1c4104a2b53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104967252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117905233"
 ---
-# <a name="texture2dmsoperator--function"></a>Função Texture2DMS:: Operator
+# <a name="texture2dmsoperator--function"></a>Função Texture2DMS::Operator
 
 Recupera um valor do recurso no local fornecido no índice de exemplo 0.
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ no\]
+*pos* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint2**
@@ -45,7 +45,7 @@ A posição do índice. Contém as coordenadas (x, y).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **R**
 
@@ -53,13 +53,13 @@ Uma variável de recurso somente leitura.
 
 ## <a name="remarks"></a>Comentários
 
-Para selecionar um exemplo específico, consulte o [**exemplo. \[Operador \] . \[ \]**](sm5-object-texture2dms-sampleoperatorindex.md)
+Para selecionar um exemplo específico, consulte [**exemplo. \[ \] Operador \[ \]**](sm5-object-texture2dms-sampleoperatorindex.md).
 
 Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

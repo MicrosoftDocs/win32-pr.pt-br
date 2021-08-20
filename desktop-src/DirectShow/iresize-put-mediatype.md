@@ -1,7 +1,7 @@
 ---
-description: O \_ método Put MediaType define o tipo de mídia de saída no filtro redimensionador.
+description: O método \_ put MediaType define o tipo de mídia de saída no filtro do resizer.
 ms.assetid: e213179e-cc88-4365-aaa0-51d4b9c97476
-title: 'IResize: método de ut_MediaType de:p (QEdit. h)'
+title: Método IResize::p ut_MediaType (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,21 +14,21 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: aedaced5033c229131f548e298217e3c77ff70c8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6c26878af6f091efd3c3f321cb073ce51a8e6236d4bafa326ab99f85f39e1a91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117818197"
 ---
-# <a name="iresizeput_mediatype-method"></a>Método IResize::p UT \_ MediaType
+# <a name="iresizeput_mediatype-method"></a>Método MediaType IResize::p ut \_
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `put_MediaType` método define o tipo de mídia de saída no filtro de redimensionador.
+O `put_MediaType` método define o tipo de mídia de saída no filtro do resizer.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,30 +45,30 @@ HRESULT put_MediaType(
 
 <dl> <dt>
 
-*PGTO* \[ no\]
+*pmt* \[ Em\]
 </dt> <dd>
 
-Ponteiro para uma estrutura de [**\_ \_ tipo de mídia am**](/windows/win32/api/strmif/ns-strmif-am_media_type) que contém o tipo de mídia.
+Ponteiro para uma [**estrutura AM \_ MEDIA \_ TYPE**](/windows/win32/api/strmif/ns-strmif-am_media_type) que contém o tipo de mídia.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-O DES chama esse método antes de conectar o PIN de saída do filtro. Use o tipo de mídia como o tipo de mídia do pino de saída. Retorne esse tipo de mídia no método [**CTransformFilter:: GetMediaType**](ctransformfilter-getmediatype.md) e marque agsint deste tipo no método [**CTransformFilter:: CheckTransform**](ctransformfilter-checktransform.md) . O DES nunca chama esse método depois que o pino de saída é conectado.
+O DES chama esse método antes de conectar o pino de saída do filtro. Use o tipo de mídia como o tipo de mídia do pino de saída. Retorne esse tipo de mídia no método [**CTransformFilter::GetMediaType**](ctransformfilter-getmediatype.md) e verifique agsint esse tipo no [**método CTransformFilter::CheckTransform.**](ctransformfilter-checktransform.md) O DES nunca chama esse método depois que o pino de saída é conectado.
 
-Atualmente, o DES sempre define o tipo de mídia de saída como um formato RGB descompactado com um bloco de formato **VIDEOINFOHEADER** (tipo de formato igual a VIDEOINFO de formato \_ ). O subtipo pode ser MEDIASUBTYPE \_ ARGB32, que indica o RGB de 32 bits com um canal alfa.
+Atualmente, o DES sempre define o tipo de mídia de saída para um formato RGB descompactado com um bloco de formato **VIDEOINFOHEADER** (o tipo de formato é igual a FORMAT \_ VideoInfo). O subtipo pode ser MEDIASUBTYPE ARGB32, que indica RGB de \_ 32 bits com um canal alfa.
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -78,9 +78,9 @@ Atualmente, o DES sempre define o tipo de mídia de saída como um formato RGB d
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versão<br/> | DirectX 9,0 ou posterior<br/>                                                         |
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| Versão<br/> | DirectX 9.0 ou posterior<br/>                                                         |
+| Cabeçalho<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -91,7 +91,7 @@ Atualmente, o DES sempre define o tipo de mídia de saída como um formato RGB d
 [Códigos de erro e êxito](error-and-success-codes.md)
 </dt> <dt>
 
-[**Interface IResize**](iresize.md)
+[**IResize Interface**](iresize.md)
 </dt> </dl>
 
  

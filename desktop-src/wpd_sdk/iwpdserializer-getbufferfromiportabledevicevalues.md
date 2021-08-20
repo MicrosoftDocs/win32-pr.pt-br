@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: 44f4e9e7011e6a4766183307e81ef7e783da899f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 10a483331d15c09de8398d11e940453d8f239e2207fdefb82d86fd4bb1460daf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105798267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117843009"
 ---
 # <a name="iwpdserializergetbufferfromiportabledevicevalues-method"></a>Método IWpdSerializer:: GetBufferFromIPortableDeviceValues
 
@@ -52,7 +52,7 @@ Ponteiro para uma interface [**IPortableDeviceValues**](iportabledevicevalues.md
 *ppBuffer* \[ fora\]
 </dt> <dd>
 
-Ponteiro para um **byte \* *_ que contém os dados serializados. Os dispositivos portáteis do Windows alocam essa memória; o chamador deve liberá-lo chamando _* CoTaskMemFree**.
+Ponteiro para um **byte \* *_ que contém os dados serializados. Windows Os dispositivos portáteis alocam essa memória; o chamador deve liberá-lo chamando _* CoTaskMemFree**.
 
 </dd> <dt>
 
@@ -63,7 +63,7 @@ Ponteiro para um **DWORD** que especifica o tamanho do buffer alocado, em bytes.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

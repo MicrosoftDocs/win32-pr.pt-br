@@ -4,12 +4,12 @@ ms.assetid: a77700e3-8217-460e-bec9-1041d03eec41
 title: Função de solicitante no VSS backups incrementais e diferenciais
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 718a5a0b22d9cc1cfa31404b3a0ac71a3a07731f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 637d4bf97b97d484080c85a2345599a05e4bbd89f88a0c1786b5bda911a83331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105783664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118122001"
 ---
 # <a name="requester-role-in-vss-incremental-and-differential-backups"></a>Função de solicitante no VSS backups incrementais e diferenciais
 

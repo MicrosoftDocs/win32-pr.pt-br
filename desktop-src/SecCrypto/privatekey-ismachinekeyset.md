@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: 2a42e3f932b8294d9671b7901437151d9fbbe5a8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e7fda91354ef1f381bb9e695c82931648f400708744afbc218c6a99238376d86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788106"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117978172"
 ---
 # <a name="privatekeyismachinekeyset-method"></a>Método PrivateKey. ismachinekeyset
 
@@ -39,7 +39,7 @@ PrivateKey.IsMachineKeyset()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se for true, a chave privada pertencerá a um conjunto de chaves de computador.
 
@@ -53,7 +53,7 @@ O valor de retorno desse método é dependente do CSP ( [*provedor de serviços 
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

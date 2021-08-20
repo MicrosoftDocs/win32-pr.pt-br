@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMVirtualNetwork Name (VPCCOMInterfaces.h)
+title: Propriedade nome do IVMVirtualNetwork (VPCCOMInterfaces. h)
 description: Nome exclusivo da instância de rede virtual.
 ms.assetid: dd4807dc-abae-4bdb-ba27-597cf1337834
 keywords:
-- Propriedade Name Pc Virtual
-- Propriedade name Pc Virtual , interface IVMVirtualNetwork
-- IVMVirtualNetwork interface Virtual PC , propriedade Name
+- Propriedade do nome Virtual PC
+- Propriedade de nome Virtual PC, interface IVMVirtualNetwork
+- IVMVirtualNetwork interface virtual PC, Propriedade Name
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118122636"
 ---
-# <a name="ivmvirtualnetworkname-property"></a>Propriedade IVMVirtualNetwork::Name
+# <a name="ivmvirtualnetworkname-property"></a>Propriedade IVMVirtualNetwork:: Name
 
-\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Recupera o nome exclusivo da instância de rede virtual.
 
@@ -54,14 +54,14 @@ O nome da rede virtual.
 | Nome/valor                                                                                                                                                    | Significado                                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                       | A operação foi bem-sucedida.<br/>                                                |
-| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>         | O parâmetro é **NULL.**<br/>                                                   |
-| <dl> <dt>DISP \_ E \_ EXCEPTION</dt> <dt>0x80020009</dt> </dl> | Ocorreu um erro inesperado ou a instância de rede virtual é desconhecida.<br/> |
+| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>         | O parâmetro é **NULL**.<br/>                                                   |
+| <dl> <dt>DISP \_ E \_ </dt> <dt>0x80020009</dt> de exceção </dl> | Ocorreu um erro inesperado ou a instância da rede virtual é desconhecida.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Nomes de rede virtual não fazem maiúsculas de minúsculas, por exemplo, "MyNetwork" e "mynetwork" referem-se à mesma rede virtual.
+Os nomes de rede virtual não diferenciam maiúsculas de minúsculas, por exemplo, "mynetwork" e "mynetwork" referem-se à mesma rede virtual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -69,11 +69,11 @@ Nomes de rede virtual não fazem maiúsculas de minúsculas, por exemplo, "MyNet
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
 | IID<br/>                      | IID \_ IVMVirtualNetwork é definido como 431cb7a1-2469-4563-b94e-38b987adca63<br/>          |
 
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: b38cc9a030bc27a30a66624f1faeca080104e7fa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: fd8d536b347a8fa073c145385b8b067b7603084b470a8f4206d4780276d6eb7f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778674"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117977821"
 ---
 # <a name="privatekeyprovidertype-property"></a>Propriedade PrivateKey. ProviderType
 
@@ -26,7 +26,7 @@ ms.locfileid: "105778674"
 
 A propriedade **ProviderType** recupera um valor da enumeração [**de \_ \_ tipo CAPICOM Prov**](capicom-prov-type.md) que especifica o tipo de provedor.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```VB
@@ -47,7 +47,7 @@ Um valor da enumeração [**de \_ \_ tipo CAPICOM Prov**](capicom-prov-type.md) 
 | <span id="CAPICOM_PROV_RSA_SIG"></span><span id="capicom_prov_rsa_sig"></span><dl> <dt>**CAPICOM \_ Prov \_ RSA \_ SIG**</dt> </dl>                    | O subconjunto do CSP RSA que dá suporte apenas a funções e algoritmos necessários para hashes e assinaturas digitais.<br/>                                                                                                                                                                                                                                                                                                                                     |
 | <span id="CAPICOM_PROV_DSS"></span><span id="capicom_prov_dss"></span><dl> <dt>**capicore \_ Prov \_ DSS**</dt> </dl>                                 | O CSP DSS ( [*padrão de assinatura digital*](../secgloss/d-gly.md) ). Esse tipo de provedor dá suporte apenas a hashes e assinaturas digitais. O DSS usa o DSA ( [*algoritmo de assinatura digital*](../secgloss/d-gly.md) ).<br/>                                                                                     |
 | <span id="CAPICOM_PROV_FORTEZZA"></span><span id="capicom_prov_fortezza"></span><dl> <dt>**capicor \_ Prov \_ Fortezza**</dt> </dl>                  | O CSP que contém os protocolos criptográficos e os algoritmos de Propriedade do [*Instituto Nacional de normas e tecnologia*](../secgloss/n-gly.md) (NIST).<br/>                                                                                                                                                                          |
-| <span id="CAPICOM_PROV_MS_EXCHANGE"></span><span id="capicom_prov_ms_exchange"></span><dl> <dt>**CAPICOM do \_ \_ Microsoft Prov MS \_ Exchange**</dt> </dl>        | O CSP projetado para as necessidades criptográficas do aplicativo de email do Microsoft Exchange e de outros aplicativos compatíveis com o Microsoft mail.<br/>                                                                                                                                                                                                                                                                                                              |
+| <span id="CAPICOM_PROV_MS_EXCHANGE"></span><span id="capicom_prov_ms_exchange"></span><dl> <dt>**CAPICOM do \_ \_ Microsoft Prov MS \_ Exchange**</dt> </dl>        | o CSP projetado para as necessidades criptográficas do aplicativo microsoft Exchange mail e de outros aplicativos compatíveis com o Microsoft mail.<br/>                                                                                                                                                                                                                                                                                                              |
 | <span id="CAPICOM_PROV_SSL"></span><span id="capicom_prov_ssl"></span><dl> <dt>**capicore \_ Prov \_ SSL**</dt> </dl>                                 | O CSP que dá suporte ao protocolo [*protocolo SSL*](../secgloss/s-gly.md) (SSL).<br/>                                                                                                                                                                                                                                                                                  |
 | <span id="CAPICOM_PROV_RSA_SCHANNEL"></span><span id="capicom_prov_rsa_schannel"></span><dl> <dt>**capicore \_ Prov \_ RSA \_ Schannel**</dt> </dl>     | O CSP que dá suporte aos protocolos RSA e [*Schannel*](../secgloss/s-gly.md) .<br/>                                                                                                                                                                                                                                                                                                                                    |
 | <span id="CAPICOM_PROV_DSS_DH"></span><span id="capicom_prov_dss_dh"></span><dl> <dt>**CAPICOM de \_ \_ DH Prov DSS \_**</dt> </dl>                       | O CSP que dá suporte aos protocolos de [*padrão de assinatura digital*](../secgloss/d-gly.md) (DSS) e [*Diffie-Hellman*](../secgloss/d-gly.md) .<br/>                                                                                                                                                           |
@@ -72,7 +72,7 @@ Um valor da enumeração [**de \_ \_ tipo CAPICOM Prov**](capicom-prov-type.md) 
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

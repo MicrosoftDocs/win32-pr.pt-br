@@ -4,16 +4,16 @@ description: Saiba mais sobre a Propriedade width do objeto Characters, que reto
 ms.assetid: ebada4cc-dbe6-4540-be1f-1f61e176765b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e17f11412774fcf34e887a2f00479ab7d96369de
-ms.sourcegitcommit: 91530c19d26ba4c57a6af1f37b57f211f580464e
+ms.openlocfilehash: 7a566f0077fbbd9335853dbd9d8e8c1bbdff1a79f33914f0c4b4865092bd3506
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112395122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118066754"
 ---
 # <a name="width-property-characters-object"></a>Propriedade Width (objeto Characters)
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 

@@ -4,12 +4,12 @@ ms.assetid: da3e2bbc-7c9f-4a15-8842-c1bb00662cd2
 title: Resolvendo uma topologia com TopoEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8397e380b19a6f45736c06e859d2a80456aad079
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 511ceef8ea333ece43ebdb8adab555178f1976a20b60b354b017159011635e88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164890"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118058241"
 ---
 # <a name="resolving-a-topology-with-topoedit"></a>Resolvendo uma topologia com TopoEdit
 

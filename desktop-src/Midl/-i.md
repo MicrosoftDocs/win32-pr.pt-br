@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 49ee48ad1e66caf5ed8facbf09ebf2c517c8c895
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 40fa167ea2ef95074d201ff460eb8eece79e43442a35985921c97455f086b46d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117992333"
 ---
 # <a name="i-switch"></a>Opção/i
 
@@ -44,7 +44,7 @@ Mais de um diretório pode aparecer com cada opção **/i** e mais de uma opçã
 
 A configuração da opção **/i** também é passada pelo compilador MIDL para o pré-processador c do compilador c. Quando a [**opção \_ /cpp cmd**](-cpp-cmd.md) está presente e a opção de [**/cpp \_ opt**](-cpp-opt.md) não é, o compilador MIDL concatena a cadeia de caracteres especificada pela opção **\_ cmd/cpp** com as opções **/i**, [**/d**](-d.md)e [**/U**](-u.md) e usa essa cadeia de caracteres concatenada para invocar o pré-processador C para cada arquivo de origem IDL e ACF. A opção de compilador de MIDL **/i** não é passada para o pré-processador quando o parâmetro de compilador MIDL switch/ **/cpp \_ opt** é especificado. **\_**
 
-Em ambientes de sistema operacional da Microsoft (Windows de 64 bits, Windows de 32 bits, Windows de 16 bits e MS-DOS), os diretórios são pesquisados na seguinte sequência:
+em ambientes de sistema operacional da Microsoft (64 bits Windows, 32 bits Windows, Windows de 16 bits e MS-DOS), os diretórios são pesquisados na seguinte sequência:
 
 1.  Diretório atual
 2.  Diretórios especificados pela opção **/i** (na ordem em que seguem a opção)
@@ -77,9 +77,9 @@ Quando nenhum diretório é especificado com a opção **/i** , a opção de [**
 [**/. de \_ \_ Idir def**](-no-def-idir.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

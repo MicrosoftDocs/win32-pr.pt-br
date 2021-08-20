@@ -1,19 +1,19 @@
 ---
-description: No Windows Vista e no Windows Server 2008 e posterior, o desenvolvedor de um gravador ou aplicativo VSS pode optar por excluir determinados arquivos das cópias de sombra.
+description: no Windows Vista e no Windows Server 2008 e posterior, o desenvolvedor de um gravador ou aplicativo VSS pode optar por excluir determinados arquivos das cópias de sombra.
 ms.assetid: 4fe1ae94-7b2f-421a-9009-3a7e88822458
 title: Excluindo arquivos de cópias de sombra
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 52546c8ddc6da62433dc610f2bf4fc2c46c5e53f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c39acf8c92d44bcf8786a880b6ae5eb6a88786809f5af1609dee1b342cd2fb65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171809"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118122099"
 ---
 # <a name="excluding-files-from-shadow-copies"></a>Excluindo arquivos de cópias de sombra
 
-No Windows Vista e no Windows Server 2008 e posterior, o desenvolvedor de um gravador ou aplicativo VSS pode optar por excluir determinados arquivos das cópias de sombra.
+no Windows Vista e no Windows Server 2008 e posterior, o desenvolvedor de um gravador ou aplicativo VSS pode optar por excluir determinados arquivos das cópias de sombra.
 
 O impacto no desempenho e a área de armazenamento de cópia de sombra (também chamada de "área de comparação") o uso de um arquivo em uma cópia de sombra estão diretamente relacionados à quantidade de alterações no conteúdo do arquivo depois que a cópia de sombra é criada. Além disso, a exclusão de arquivos de cópias de sombra pode retardar a criação da cópia de sombra.
 
@@ -64,13 +64,13 @@ Para tornar o caminho recursivo, acrescente "/s" ao final. Por exemplo:
 
 A variável $UserProfile $ faz com que a cadeia de caracteres do caminho seja aplicada a todos os perfis de usuário no computador. Os perfis de usuário são enumerados examinando a seguinte chave do registro:
 
-**HKEY \_ local \_ Machine \\ software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ createfilelist**
+**HKEY \_ LOCAL \_ MACHINE \\ Software \\ Microsoft \\ Windows NT \\ CurrentVersion \\ outfilelist**
 
 A variável $AllVolumes $ faz com que a cadeia de caracteres do caminho seja aplicada a todas as cópias de sombra no computador. Por exemplo, suponha que o caminho seja "$AllVolumes $ \\ TemporaryFiles \\ \* . \* /s ", e o computador tem três volumes: C:, D: e E:. Se C: e E: contiver o caminho " \\ TemporaryFiles \\ " e o volume D: contiver apenas o caminho d: \\ Data \\ , a árvore de diretórios C: \\ TemporaryFiles \\ será excluída das cópias de sombra de C:, e a árvore de diretórios e: \\ TemporaryFiles \\ será excluída das cópias de sombra de E:.
 
 Os administradores podem desabilitar a expansão da variável $UserProfile $ usando a seguinte chave do registro:
 
-**HKEY \_ local \_ Machine \\ System \\ CurrentControlSet \\ Services \\ configurações de VSS \\**
+**HKEY \_ LOCAL \_ MACHINE \\ System \\ CurrentControlSet \\ Services \\ Vss \\ Configurações**
 
 Nessa chave do registro, especifique DisableUserProfileExpansion para o nome do valor, REG \_ DWORD para o tipo de valor e um valor diferente de zero para os dados do valor.
 

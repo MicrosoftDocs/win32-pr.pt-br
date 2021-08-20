@@ -1,21 +1,21 @@
 ---
-title: Referência de armazenamento estruturado
-description: Esta seção fornece material de referência para os elementos de programação do armazenamento estruturado.
+title: Referência Armazenamento estruturada
+description: Esta seção fornece material de referência para os elementos de programação do Structured Armazenamento.
 ms.assetid: ecdc8e7c-8d7e-484b-bec8-200fec49fb2d
 keywords:
-- Strctd de armazenamento estruturado STG, referência
+- Estruturada Armazenamento Stg Strctd , referência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 329d18712f4da9a821ed6929a43eb68c2549bf48
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0447d6ae04633be706edfa298d821988d812c363ea8a28d79776a3d0c01a37b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635740"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117959781"
 ---
-# <a name="structured-storage-reference"></a>Referência de armazenamento estruturado
+# <a name="structured-storage-reference"></a>Referência Armazenamento estruturada
 
-Esta seção fornece material de referência para os elementos de programação do armazenamento estruturado.
+Esta seção fornece material de referência para os elementos de programação do Structured Armazenamento.
 
 -   [Interfaces](interfaces.md)
 -   [Funções](functions.md)
@@ -24,9 +24,9 @@ Esta seção fornece material de referência para os elementos de programação 
 -   [Constantes](constants.md)
 -   [Amostras](samples.md)
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 013215af3f5005e68b396312d0ef13fa974d8a32
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 86cb3ee7c9d62d943a369dd18cb4471e0682c1c1d0f5e6193a6f34b8c0451203
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967927"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117859848"
 ---
 # <a name="folderitemverbsitem-method"></a>Método FolderItemVerbs. Item
 
@@ -48,7 +48,7 @@ O índice com base em zero do item a ser recuperado. Esse valor deve ser menor q
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **IDispatch**](/windows/win32/api/oaidl/nn-oaidl-idispatch)\*\***
 
@@ -56,9 +56,9 @@ Objeto que recebe o objeto [**FolderItemVerb**](folderitemverb.md) .
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir usa **Item** para recuperar os primeiros verbos na coleção disponível para a pasta do painel de controle e exibe seu nome. O uso adequado é mostrado para JScript, VBScript e Visual Basic.
+O exemplo a seguir usa **Item** para recuperar os primeiros verbos na coleção disponível para a pasta do painel de controle e exibe seu nome. o uso adequado é mostrado para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -176,7 +176,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                           |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                         |

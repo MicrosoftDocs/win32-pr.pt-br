@@ -1,21 +1,21 @@
 ---
-description: O exemplo a seguir usa as funções auxiliares de API de versão para determinar a versão do sistema operacional atual, se for uma versão de servidor ou cliente e, em seguida, exibir essas informações para o console.
+description: O exemplo a seguir usa as funções auxiliares da API de versão para determinar a versão do sistema operacional atual, se for uma versão de Servidor ou Cliente e, em seguida, exibe essas informações no console.
 ms.assetid: ae851aef-27d5-4eb7-aeb2-ccdfbf040e5a
-title: Obtendo a versão do sistema
+title: Obter a versão do sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae0fa259378b81f9255846694927ee2b68e6f38f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5eb9cfd0c1a4cfe1ee0789cb609bf22319bdd019bf3310bf439dabf907bfd138
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837485"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117958521"
 ---
-# <a name="getting-the-system-version"></a>Obtendo a versão do sistema
+# <a name="getting-the-system-version"></a>Obter a versão do sistema
 
-O exemplo a seguir usa as [funções auxiliares de API de versão](version-helper-apis.md) para determinar a versão do sistema operacional atual, se for uma versão de servidor ou cliente e, em seguida, exibir essas informações para o console. Se o modo de compatibilidade estiver em vigor, o exemplo exibirá o sistema operacional selecionado para [compatibilidade de aplicativos](/previous-versions/bb757005(v=msdn.10)).
+O exemplo a seguir usa as funções auxiliares da [API](version-helper-apis.md) de versão para determinar a versão do sistema operacional atual, se for uma versão de Servidor ou Cliente e, em seguida, exibe essas informações no console. Se o modo de compatibilidade estiver em vigor, o exemplo exibirá o sistema operacional selecionado para [compatibilidade do aplicativo.](/previous-versions/bb757005(v=msdn.10))
 
-Depender de informações de versão não é a melhor maneira de testar um recurso. Em vez disso, consulte a documentação do recurso de interesse. Para obter mais informações sobre técnicas comuns de detecção de recursos, consulte [versão do sistema operacional](operating-system-version.md).
+Depender de informações de versão não é a melhor maneira de testar um recurso. Em vez disso, consulte a documentação do recurso de interesse. Para obter mais informações sobre técnicas comuns para detecção de recursos, consulte [Versão do sistema operacional](operating-system-version.md).
 
 
 ```C++

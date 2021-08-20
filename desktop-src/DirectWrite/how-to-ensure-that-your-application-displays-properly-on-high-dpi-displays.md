@@ -4,26 +4,26 @@ description: Descreve como garantir que seu aplicativo crie uma janela que é ex
 ms.assetid: d174a337-c98e-46c7-86d2-c208900882d1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71166d312fe666644c683fe2ece7dd3ced59f765
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 0ae009cd8d22985dc61b7210b10a9f09267139ded8792ba0aade4aa34d842636
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112406419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117816533"
 ---
 # <a name="how-to-ensure-that-your-application-displays-properly-on-high-dpi-displays"></a>Como garantir que seu aplicativo seja exibido corretamente em monitores de alto DPI
 
-Embora [DirectWrite](direct-write-portal.md) atenda a muitos problemas de alto dpi, há duas etapas que você deve seguir para garantir que seu aplicativo funcione corretamente em monitores de alto dpi:
+embora [DirectWrite](direct-write-portal.md) atenda a muitos problemas de dpi alto para você, há duas etapas que devem ser seguidas para garantir que seu aplicativo funcione corretamente em monitores de alto DPI:
 
--   [Etapa 1: usar o DPI do sistema ao criar o Windows](#step-1-use-the-system-dpi-when-creating-windows)
+-   [Etapa 1: usar o DPI do sistema ao criar Windows](#step-1-use-the-system-dpi-when-creating-windows)
     -   [Direct2D](#direct2d)
     -   [GRÁFICA](#gdi)
 -   [Etapa 2: declarar que o aplicativo reconhece DPI](#step-2-declare-that-the-application-is-dpi-aware)
 -   [Tópicos relacionados](#related-topics)
 
-## <a name="step-1-use-the-system-dpi-when-creating-windows"></a>Etapa 1: usar o DPI do sistema ao criar o Windows
+## <a name="step-1-use-the-system-dpi-when-creating-windows"></a>Etapa 1: usar o DPI do sistema ao criar Windows
 
-Isso pode ser feito usando o [Direct2D](../direct2d/direct2d-portal.md) ou o [GDI](../gdi/windows-gdi.md).
+isso pode ser feito usando [Direct2D](../direct2d/direct2d-portal.md) ou usando [GDI](../gdi/windows-gdi.md).
 
 ### <a name="direct2d"></a>Direct2D
 
@@ -70,7 +70,7 @@ O código a seguir usa o método [**GetDesktopDpi**](/windows/win32/api/d2d1/nf-
 
 ### <a name="gdi"></a>GDI
 
-O [GDI](interoperating-with-gdi.md) fornece a função [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) para recuperar informações do dispositivo. Você pode recuperar informações de DPI passando os valores de índice *LOGPIXELSX* e *LOGPIXELSY* . A fórmula para determinar o tamanho horizontal e vertical de uma janela é a mesma do exemplo [Direct2D](../direct2d/direct2d-portal.md) acima.
+O [GDI](interoperating-with-gdi.md) fornece a função [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) para recuperar informações do dispositivo. Você pode recuperar informações de DPI passando os valores de índice *LOGPIXELSX* e *LOGPIXELSY* . a fórmula para determinar o tamanho horizontal e vertical de uma janela é a mesma do exemplo a [Direct2D](../direct2d/direct2d-portal.md) acima.
 
 O código a seguir usa a função [**GetDeviceCaps**](/windows/win32/api/wingdi/nf-wingdi-getdevicecaps) para criar uma janela 640 x 480, dimensionada para o DPI do sistema.
 
@@ -102,7 +102,7 @@ hWnd = CreateWindow(
 
 ## <a name="step-2-declare-that-the-application-is-dpi-aware"></a>Etapa 2: declarar que o aplicativo está DPI-Aware
 
-Quando um aplicativo se declara para ser compatível com DPI, é uma instrução que especifica que o aplicativo se comporta bem em configurações de DPI até 200 DPI. No Windows Vista e no Windows 7, quando a virtualização de DPI está habilitada, os aplicativos que não têm reconhecimento de DPI são dimensionados e os aplicativos recebem dados virtualizados das APIs do sistema, como a função [**GetSystemMetric**](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) . Para declarar que seu aplicativo reconhece DPI, conclua as etapas a seguir.
+Quando um aplicativo se declara para ser compatível com DPI, é uma instrução que especifica que o aplicativo se comporta bem em configurações de DPI até 200 DPI. no Windows Vista e Windows 7, quando a virtualização de DPI está habilitada, os aplicativos que não reconhecem dpi são dimensionados e os aplicativos recebem dados virtualizados das APIs do sistema, como a função [**GetSystemMetric**](/windows/win32/api/winuser/nf-winuser-getsystemmetrics) . Para declarar que seu aplicativo reconhece DPI, conclua as etapas a seguir.
 
 1.  Crie um arquivo chamado DeclareDPIAware. manifest.
 2.  Copie o seguinte XML para o arquivo e salve-o:
@@ -132,7 +132,7 @@ Quando um aplicativo se declara para ser compatível com DPI, é uma instrução
 
 <dl> <dt>
 
-[Direct2D e alto DPI](../direct2d/direct2d-and-high-dpi.md)
+[Direct2D e DPI alto](../direct2d/direct2d-and-high-dpi.md)
 </dt> </dl>
 
  

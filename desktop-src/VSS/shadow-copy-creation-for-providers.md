@@ -4,12 +4,12 @@ ms.assetid: d5042945-ba81-40d0-b204-1f08d153a788
 title: Criação de cópia de sombra para provedores
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91cc7306e7a13ef8e96ab032016a922411a70f95
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 953f9b5556b8cf0a35117d8df6756fdd52bdf033d390f0b08a7e018d1eaf5410
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118121839"
 ---
 # <a name="shadow-copy-creation-for-providers"></a>Criação de cópia de sombra para provedores
 
@@ -73,7 +73,7 @@ Esse suporte ao kernel do VSS para um ponto no tempo comum é distribuído entre
 Os provedores devem concluir todo o trabalho de tempo crítico antes de retornar de [**EndPrepareSnapshots**](/windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-endpreparesnapshots).
 
 -   [**CommitSnapshots**](/windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-commitsnapshots) deve ser retornado em segundos. A fase **CommitSnapshots** está localizada na janela liberar e manter. O suporte ao kernel do VSS cancelará a liberação e a suspensão que está mantendo a e/s se a versão subsequente não for recebida em até 10 segundos e o VSS falhará no processo de criação da cópia de sombra. Outras atividades ocorrerão no sistema, portanto, um provedor não deve contar com 10 segundos inteiros. O provedor não deve chamar as APIs do Win32 durante a confirmação, pois muitas resultarão em gravações e bloqueios inesperados. Se o provedor levar mais de alguns segundos para concluir a chamada, haverá uma alta probabilidade de que isso falhará.
--   A sequência completa de [**PreCommitSnapshots**](/windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-precommitsnapshots) para o retorno de [**PostCommitSnapshots**](/windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-postcommitsnapshots) mapeia para a janela entre os gravadores que recebem os eventos Freeze e descongelar. O padrão do gravador para esta janela é de 60 segundos, mas um gravador pode substituir esse valor por um tempo limite menor. Por exemplo, o gravador do Microsoft Exchange Server altera o tempo limite para 20 segundos. Os provedores não devem passar mais de um segundo ou dois nesse método.
+-   A sequência completa de [**PreCommitSnapshots**](/windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-precommitsnapshots) para o retorno de [**PostCommitSnapshots**](/windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-postcommitsnapshots) mapeia para a janela entre os gravadores que recebem os eventos Freeze e descongelar. O padrão do gravador para esta janela é de 60 segundos, mas um gravador pode substituir esse valor por um tempo limite menor. por exemplo, o gravador de Microsoft Exchange Server altera o tempo limite para 20 segundos. Os provedores não devem passar mais de um segundo ou dois nesse método.
 
 Durante a [**CommitSnapshots**](/windows/desktop/api/VsProv/nf-vsprov-ivssprovidercreatesnapshotset-commitsnapshots) , o provedor deve evitar qualquer e/s de arquivo que não seja de paginação; Essa e/s tem uma probabilidade muito alta de deadlocks. Em particular, o provedor não deve gravar de forma síncrona nenhum log de depuração ou de rastreamento.
 

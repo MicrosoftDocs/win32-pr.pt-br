@@ -4,12 +4,12 @@ description: Há várias maneiras de definir a segurança de todo o processo.
 ms.assetid: 596ba257-cbde-4243-aa29-78749304867a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: acc483bc6f52963eadc12891e657db1cbe51fb10
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1462cf8ba8922320c1fd3b8ef302166e23a78f516a6e98f22bc6c3968336be79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105768220"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117917945"
 ---
 # <a name="setting-process-wide-security"></a>Definindo Process-Wide segurança
 
@@ -31,9 +31,9 @@ Para obter mais informações sobre essas técnicas, consulte os seguintes tópi
 [Definindo a segurança para aplicativos COM](setting-security-for-com-applications.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

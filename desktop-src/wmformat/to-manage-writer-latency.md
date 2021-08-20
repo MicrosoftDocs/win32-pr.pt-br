@@ -11,12 +11,12 @@ keywords:
 - latência
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3260be03344f1bf13252007b10614746ceda3e96
-ms.sourcegitcommit: 48d1c892045445bcbd0f22bafa2fd3861ffaa6e7
+ms.openlocfilehash: c0adb18814cc8153ae81ed9517834d62345f18b61f51de6aacd38e9028699331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "105767705"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845476"
 ---
 # <a name="to-manage-writer-latency"></a>Para gerenciar a latência do gravador
 
@@ -33,9 +33,9 @@ O próximo fator, e um sobre o qual você geralmente tem controle, é a ordem em
 [**Gravando arquivos ASF**](writing-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

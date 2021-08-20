@@ -1,30 +1,30 @@
 ---
-title: Convertendo texdef
-description: O exemplo de código a seguir é uma definição de textura do íris GL
+title: Traduzindo o texdef
+description: O exemplo de código a seguir é uma definição de textura IRIS GL
 ms.assetid: bb2d257d-ee74-4a65-b364-c7a97bccaa78
 keywords:
-- Portabilidade do íris GL, textura
-- portando do íris GL, textura
-- portando para OpenGL do íris GL, textura
-- Portabilidade OpenGL do íris GL, textura
+- Portação IRIS GL, textura
+- portando de IRIS GL, textura
+- portando para OpenGL de IRIS GL, textura
+- Portação openGL de IRIS GL, textura
 - textura
-- Portabilidade do íris GL, texdef
-- portando do íris GL, texdef
-- portando para OpenGL do íris GL, texdef
-- Portabilidade OpenGL do íris GL, texdef
+- Portação IRIS GL, texdef
+- portando de IRIS GL, texdef
+- portando para OpenGL de IRIS GL, texdef
+- Portação openGL de IRIS GL, texdef
 - texdef
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 479af06bcfd3a50daf56fb0629e4c32f24750081
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 92955b2b49d6960afc661d467da42a4ebcd7aff6caaf7c0bd386093968413f18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117980548"
 ---
-# <a name="translating-texdef"></a>Convertendo texdef
+# <a name="translating-texdef"></a>Traduzindo o texdef
 
-O exemplo de código a seguir é uma definição de textura do íris GL:
+O exemplo de código a seguir é uma definição de textura IRIS GL:
 
 
 ```C++
@@ -39,11 +39,11 @@ textdef2d(1, 1, 6, 6, granite_texture, 7, texprops);
 
 
 
-No exemplo anterior, **texdef** especifica o filtro de \_ ponto TX como a ampliação e o filtro de minimização, e TX \_ REPEAT como o mecanismo de encapsulamento. Ele também especifica a imagem de textura **: \_ textura de granito**.
+No exemplo anterior, **o texdef** especifica o filtro TX POINT como a ampliação e o filtro de minimização e TX REPEAT como o \_ mecanismo de \_ empacotamento. Ele também especifica a imagem de textura: **textura de \_ granito.**
 
-No OpenGL, [**glTexImage**](glteximage1d.md) especifica a imagem e [glTexParameter](gltexparameter-functions.md) define a propriedade. Para converter as definições de textura do íris GL, substitua a função **textdef** por **glTexImage** e uma ou mais chamadas para **glTexParameter**.
+No OpenGL, [**glTexImage**](glteximage1d.md) especifica a imagem e [glTexParameter define](gltexparameter-functions.md) a propriedade . Para converter definições de textura IRIS GL, substitua a função **textdef** por **glTexImage** e uma ou mais chamadas para **glTexParameter.**
 
-O código do íris GL anterior tem esta aparência quando traduzido para OpenGL:
+O código IRIS GL anterior tem esta aparência quando convertido em OpenGL:
 
 
 ```C++
@@ -58,33 +58,33 @@ glTexImage1D( GL_TEXTURE_1D, 0, 1, 6, 0, GL_RGB, GL_UNSIGNED_SHORT, granite_text
 
 
 
-A tabela a seguir lista os parâmetros de textura do íris GL e seus parâmetros OpenGL equivalentes.
+A tabela a seguir lista os parâmetros de textura IRIS GL e seus parâmetros OpenGL equivalentes.
 
 
 
-| Parâmetro de textura do íris GL | Parâmetro de textura OpenGL                                  |
+| Parâmetro de textura IRIS GL | Parâmetro de textura OpenGL                                  |
 |---------------------------|-----------------------------------------------------------|
-| MINFILTER de TX \_             | \_filtro de \_ mínimo de textura GL \_                                  |
-| MAGFILTER de TX \_             | \_ \_ filtro mag de textura GL \_                                  |
-| TX \_ encapsulado, \_ S Wrap de TX \_     | \_S de \_ encapsulamento de textura GL \_                                      |
-| TX \_ Wrap, \_ encapsulamento TX \_ T     | \_cor da \_ \_ borda da \_ textura TGL de \_ codificação \_ de textura GL<br/> |
+| TX \_ MINFILTER             | FILTRO MIN \_ \_ DE TEXTURA \_ GL                                  |
+| TX \_ MAGFILTER             | FILTRO GL \_ TEXTURE \_ MAG \_                                  |
+| TX \_ WRAP, TX \_ WRAP \_ S     | GL \_ TEXTURE \_ WRAP \_ S                                      |
+| TX \_ WRAP, TX \_ WRAP \_ T     | COR \_ DA BORDA DA TEXTURA GL TEXTURE WRAP \_ \_ TGL \_ \_ \_<br/> |
 
 
 
  
 
-A tabela a seguir lista os possíveis valores dos parâmetros de textura do íris GL e seus parâmetros OpenGL equivalentes.
+A tabela a seguir lista os valores possíveis dos parâmetros de textura IRIS GL e seus parâmetros OpenGL equivalentes.
 
 
 
-| Parâmetro de textura do íris GL | Parâmetro de textura OpenGL     |
+| Parâmetro de textura IRIS GL | Parâmetro de textura OpenGL     |
 |---------------------------|------------------------------|
-| ponto de TX \_                 | GL \_ mais próximo                  |
-| TX \_ BIlinear              | GL \_ linear                   |
-| \_ponto de MIPMAP de TX \_         | GL \_ mais próximo \_ MIPMAP \_ mais próximo |
-| \_MIPMAP TX \_ bilinear      | GL \_ linear \_ MIPMAP \_ mais próximo  |
-| MIPMAP de TX \_ \_ linear        | GL \_ mais próximo \_ MIPMAP \_ linear  |
-| TX \_ TRIlinear             | GL \_ linear \_ MIPMAP \_ linear   |
+| TX \_ POINT                 | GL \_ MAIS PRÓXIMO                  |
+| TX \_ BILINEAR              | GL \_ LINEAR                   |
+| TX \_ MIPMAP \_ POINT         | GL \_ MAIS PRÓXIMO DE \_ MIPMAP \_ |
+| TX \_ MIPMAP \_ BILINEAR      | GL \_ LINEAR \_ MIPMAP \_ MAIS PRÓXIMO  |
+| TX \_ MIPMAP \_ LINEAR        | GL \_ NEAREST \_ MIPMAP \_ LINEAR  |
+| TX \_ TRILINEAR             | GL \_ LINEAR \_ MIPMAP \_ LINEAR   |
 
 
 

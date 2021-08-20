@@ -1,9 +1,9 @@
 ---
-title: Estrutura de MCI_VCR_SET_PARMS (VCR. h)
-description: A \_ estrutura do VCR do conjunto de videocassetes do MCI \_ \_ contém parâmetros para o \_ comando set do MCI para gravadores de vídeo-fita.
+title: MCI_VCR_SET_PARMS estrutura (Vcr.h)
+description: A estrutura MCI VCR SET PARMS contém parâmetros para o \_ \_ comando \_ MCI SET para gravadores de gravação de \_ vídeo.
 ms.assetid: f55515f5-14f6-47e4-8be2-4524975fc950
 keywords:
-- Multimídia do Windows da estrutura de MCI_VCR_SET_PARMS
+- MCI_VCR_SET_PARMS estrutura Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0066adf80446843fe5a3e1e3defbb2109484cbb6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 9fe32f93500ae4c294bad372868e9f7818c672824611bcbc29c3315eb75a9742
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117802981"
 ---
-# <a name="mci_vcr_set_parms-structure"></a>\_Estrutura de \_ parâmetros de conjunto de VCR MCI \_
+# <a name="mci_vcr_set_parms-structure"></a>Estrutura MCI \_ VCR \_ SET \_ PARMS
 
-A estrutura do **\_ VCR do \_ conjunto \_ de videocassetes do MCI** contém parâmetros para o comando [**\_ set do MCI**](mci-set.md) para gravadores de vídeo-fita.
+A **estrutura MCI \_ VCR SET \_ \_ PARMS** contém parâmetros para o [**comando MCI \_ SET**](mci-set.md) para gravadores de gravação de vídeo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,10 +54,10 @@ typedef struct tagMCI_VCR_SET_PARMS {
 
 <dl> <dt>
 
-**dwCallback**
+**Dwcallback**
 </dt> <dd>
 
-A palavra de ordem inferior Especifica um identificador de janela usado para o \_ sinalizador de notificação MCI.
+A palavra de ordem baixa especifica um alça de janela usado para o sinalizador NOTIFY da \_ MCI.
 
 </dd> <dt>
 
@@ -78,7 +78,7 @@ Não usado.
 **dwTimeMode**
 </dt> <dd>
 
-Constante que especifica a fonte de tempo usada pelo dispositivo. A origem de temporização é um código de tempo registrado em fita de vídeo ou os contadores no dispositivo que detectam a movimentação da fita.
+Constante que especifica a origem de tempo usada pelo dispositivo. A origem de tempo é um código-hora registrado na fita ou os contadores no dispositivo que sentem movimento de movimento de movimento.
 
 </dd> <dt>
 
@@ -96,7 +96,7 @@ Formato de um novo valor de hora do contador.
 
 </dd> <dt>
 
-**dwIndex**
+**Dwindex**
 </dt> <dd>
 
 Conteúdo da exibição na tela.
@@ -113,14 +113,14 @@ Ajuste de velocidade usado ao acompanhar a taxa de reprodução de VCR.
 **dwSpeed**
 </dt> <dd>
 
-Velocidade de reprodução usada pelo dispositivo como um inteiro. A velocidade de reprodução normal é 1000, a velocidade dupla é 2000 e a meia velocidade é 500.
+Velocidade de reprodução usada pelo dispositivo como um inteiro. A velocidade de reprodução normal é 1000, a velocidade dupla é 2000 e a metade da velocidade é de 500.
 
 </dd> <dt>
 
 **dwLength**
 </dt> <dd>
 
-Tamanho da fita quando o comprimento não puder ser detectado pelo dispositivo.
+Comprimento da casa quando o comprimento não é detectável pelo dispositivo.
 
 </dd> <dt>
 
@@ -141,27 +141,27 @@ Nova hora do relógio.
 **dwPauseTimeout**
 </dt> <dd>
 
-Novo valor de tempo limite para o comando de pausa.
+Novo valor de tempo-máximo para o comando pause.
 
 </dd> <dt>
 
 **dwPrerollDuration**
 </dt> <dd>
 
-Tamanho da fita de vídeo necessário para estabilizar a saída do VCR.
+Comprimento da fita necessário para estabilizar a saída do VCR.
 
 </dd> <dt>
 
 **dwPostrollDuration**
 </dt> <dd>
 
-Tamanho da fita de vídeo necessário para [**\_ finalizar**](mci-stop.md) o transporte de videocassete quando um comando Stop MCI ou [**MCI \_ Pause**](mci-pause.md) é emitido.
+Comprimento da fita necessário para interromper o transporte do VCR quando um [**comando MCI \_ STOP**](mci-stop.md) ou [**MCI \_ PAUSE**](mci-pause.md) é emitido.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da função [**mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
+Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspondentes no parâmetro *fdwCommand* da [**função mciSendCommand**](/previous-versions//dd757160(v=vs.85)) para validar os membros.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -171,7 +171,7 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VCR. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vcr.h</dt> </dl> |
 
 
 
@@ -179,19 +179,19 @@ Ao atribuir dados aos membros dessa estrutura, defina os sinalizadores correspon
 
 <dl> <dt>
 
-[**MCI**](mci.md)
+[**Mci**](mci.md)
 </dt> <dt>
 
 [**Estruturas MCI**](mci-structures.md)
 </dt> <dt>
 
-[**pausa de MCI \_**](mci-pause.md)
+[**PAUSA DA \_ MCI**](mci-pause.md)
 </dt> <dt>
 
-[**conjunto de MCI \_**](mci-set.md)
+[**MCI \_ SET**](mci-set.md)
 </dt> <dt>
 
-[**parada do MCI \_**](mci-stop.md)
+[**MCI \_ STOP**](mci-stop.md)
 </dt> <dt>
 
 [**mciSendCommand**](/previous-versions//dd757160(v=vs.85))

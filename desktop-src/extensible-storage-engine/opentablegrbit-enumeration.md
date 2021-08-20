@@ -72,12 +72,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: dfb2d75fc17e37dc669acf1fd84f38c957d467f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9bffed6ad4213f5c825a70308987fc971f9ed4f2a544902853d484a18c24d59b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105767803"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071860"
 ---
 # <a name="opentablegrbit-enumeration"></a>Enumeração OpenTableGrbit
 

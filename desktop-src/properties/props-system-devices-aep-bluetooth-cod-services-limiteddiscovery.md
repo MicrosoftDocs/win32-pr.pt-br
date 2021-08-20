@@ -1,19 +1,19 @@
 ---
-description: Classe Bluetooth de descoberta limitada de serviço de dispositivo.
+description: Bluetooth classe de descoberta limitada do serviço de dispositivo.
 ms.assetid: 6972462b-cbda-4d5a-9d49-b0ec0d84d295
-title: System. Devices. AEP. Bluetooth. Cod. Services. LimitedDiscovery
+title: System.Devices.Aep. Bluetooth. Cod.Services.LimitedDiscovery
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f5cbfa774881bd7c7ed67479cad5ac28bf5a5b66
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b26d72e06c186d971707dc5d9983ee8f351c5cfcef1d7682f81831c8b28214a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118054649"
 ---
-# <a name="systemdevicesaepbluetoothcodserviceslimiteddiscovery"></a>System. Devices. AEP. Bluetooth. Cod. Services. LimitedDiscovery
+# <a name="systemdevicesaepbluetoothcodserviceslimiteddiscovery"></a>System.Devices.Aep. Bluetooth. Cod.Services.LimitedDiscovery
 
-Classe Bluetooth de descoberta limitada de serviço de dispositivo.
+Bluetooth classe de descoberta limitada do serviço de dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511
 
@@ -33,13 +33,13 @@ propertyDescription
 
 ## <a name="remarks"></a>Comentários
 
-Os valores de PKEY são definidos em Propkey. h.
+Os valores PKEY são definidos em Propkey.h.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[propertyDescription](./propdesc-schema-propertydescription.md)
+[Propertydescription](./propdesc-schema-propertydescription.md)
 </dt> <dt>
 
 [searchInfo](./propdesc-schema-searchinfo.md)
@@ -48,19 +48,19 @@ Os valores de PKEY são definidos em Propkey. h.
 [labelInfo](./propdesc-schema-labelinfo.md)
 </dt> <dt>
 
-[typeInfo](./propdesc-schema-typeinfo.md)
+[Typeinfo](./propdesc-schema-typeinfo.md)
 </dt> <dt>
 
 [displayInfo](./propdesc-schema-displayinfo.md)
 </dt> <dt>
 
-[stringFormat](./propdesc-schema-stringformat.md)
+[Stringformat](./propdesc-schema-stringformat.md)
 </dt> <dt>
 
 [booleanFormat](./propdesc-schema-booleanformat.md)
 </dt> <dt>
 
-[numberFormat](./propdesc-schema-numberformat.md)
+[Numberformat](./propdesc-schema-numberformat.md)
 </dt> <dt>
 
 [dateTimeFormat](./propdesc-schema-datetimeformat.md)
@@ -75,7 +75,7 @@ Os valores de PKEY são definidos em Propkey. h.
 [editControl](./propdesc-schema-editcontrol.md)
 </dt> <dt>
 
-[filterControl](./propdesc-schema-filtercontrol.md)
+[Filtercontrol](./propdesc-schema-filtercontrol.md)
 </dt> <dt>
 
 [queryControl](./propdesc-schema-querycontrol.md)

@@ -3,7 +3,7 @@ title: Elemento SplitButton
 description: Representa um controle de botão de divisão padrão.
 ms.assetid: dece1100-ed04-49a3-a16d-3c5d5e7a2225
 keywords:
-- Faixa de das janelas do elemento SplitButton
+- elemento SplitButton Windows faixa de uma
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cf03d85dd0402548d02f107dafb209b68c13bb72
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 53445bc3f57f8a861800f9edcd95d8af2ecfbd54f4055cf8787695dab1f25cb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111444397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117850766"
 ---
 # <a name="splitbutton-element"></a>Elemento SplitButton
 
@@ -211,7 +211,7 @@ Esta seção de código mostra as declarações de controle **SplitButton** .
 
 ## <a name="element-information"></a>Informações do elemento
 
-- **Sistema mínimo com suporte**: Windows 7 
+- **sistema mínimo com suporte**: Windows 7 
 - **Pode estar vazio**: não
 
 

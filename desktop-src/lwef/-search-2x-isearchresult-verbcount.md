@@ -1,11 +1,11 @@
 ---
-title: Método ISearchResult VerbCount
-description: Reservado. | Método ISearchResult VerbCount
+title: Método VerbCount ISearchResult
+description: Reservado. | Método VerbCount ISearchResult
 ms.assetid: 2d561bdb-a044-4313-aad2-2534097565e2
 keywords:
-- Recursos do ambiente Windows herdado do método VerbCount
-- Método VerbCount de recursos de ambiente do Windows herdados, interface ISearchResult
-- Recursos do ambiente Windows herdado da interface ISearchResult, método VerbCount
+- Recursos de ambiente herdado Windows método VerbCount
+- Método VerbCount Herdado Windows recursos de ambiente, interface ISearchResult
+- Interface ISearchResult Herdado Windows recursos de ambiente, método VerbCount
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 76973a06377870aed1fe276eb57756a930d50e72
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 0572969d1cb7efb1d38a2a01fab3a8da093bbc87f915774c84fe67087b60fa30
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105785056"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117694444"
 ---
-# <a name="isearchresultverbcount-method"></a>Método ISearchResult:: VerbCount
+# <a name="isearchresultverbcount-method"></a>Método ISearchResult::VerbCount
 
 Este método não está implementado.
 

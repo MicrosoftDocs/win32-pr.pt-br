@@ -4,12 +4,12 @@ ms.assetid: 21957d84-f6ca-4f45-9e1b-24dfd21d9616
 title: Mensagens do dispositivo TSPI line
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0cc771ea92e9e14e4decd124c79b6845e33c113e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97a7bd85c520fbe69972ba009973c3e92ddb0f4bf50c495b724294502cc495e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105784076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117944334"
 ---
 # <a name="tspi-line-device-messages"></a>Mensagens do dispositivo TSPI line
 

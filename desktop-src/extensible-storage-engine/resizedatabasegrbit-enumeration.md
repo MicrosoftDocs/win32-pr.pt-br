@@ -1,6 +1,6 @@
 ---
 description: 'Saiba mais sobre: Enumeração ResizeDatabaseGrbit'
-title: Enumeração ResizeDatabaseGrbit (Microsoft. ISAM. ESENT. Interop. Windows8)
+title: Enumeração ResizeDatabaseGrbit (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: ResizeDatabaseGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.ResizeDatabaseGrbit
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.resizedatabasegrbit(v=EXCHG.10)
@@ -28,21 +28,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 51d703f96882136e2b88f1a2df37609573c725e0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 045f1a3fcb6167958d83ddc18c84a78ba7dbd0bd2d9d9b5a13d0785ab8076f42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105800061"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118071715"
 ---
 # <a name="resizedatabasegrbit-enumeration"></a>Enumeração ResizeDatabaseGrbit
 
-Opções para [JetResizeDatabase (JET_SESID, JET_DBID, Int32, Int32, ResizeDatabaseGrbit)](./windows8api.jetresizedatabase-method.md).
+Opções para [JetResizeDatabase(JET_SESID, JET_DBID, Int32, Int32, ResizeDatabaseGrbit)](./windows8api.jetresizedatabase-method.md).
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -78,7 +78,7 @@ public enum ResizeDatabaseGrbit
 <tr class="even">
 <td></td>
 <td>OnlyGrow</td>
-<td>Aumentar apenas o banco de dados. Se a chamada de redimensionamento reduzir o banco de dados, não faça nada.</td>
+<td>Só aumentar o banco de dados. Se a chamada de redução reduzir o banco de dados, não faça nada.</td>
 </tr>
 </tbody>
 </table>
@@ -88,4 +88,4 @@ public enum ResizeDatabaseGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop. windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

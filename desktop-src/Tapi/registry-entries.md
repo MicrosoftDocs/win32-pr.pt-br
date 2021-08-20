@@ -4,18 +4,18 @@ ms.assetid: 0ab2896e-3634-47f7-b1f4-e7d1ffcb3592
 title: Entradas do registro (API de telefonia)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 035126f614e526f3b1557f5323d52b3bf6b2b12c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afd6e4e4d91b65e3ef886fd4d2d44b571f4ac4696697aef8b8d8b2715e273e18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117761163"
 ---
 # <a name="registry-entries-telephony-api"></a>Entradas do registro (API de telefonia)
 
 Os terminais conectáveis são classificados em superclasses de terminal. Cada superclasse de terminal tem uma entrada no registro sob a seguinte chave:
 
-**HKEY \_ \_Computador local** \\ **software** \\  \\  \\  \\  \\ **terminalmanager** de telefonia do Microsoft Windows CurrentVersion
+**HKEY \_ \_computador LOCAL** \\ **SOFTWARE** de \\ **telefonia Microsoft** \\ **Windows** \\ **CurrentVersion** \\  \\ **terminalmanager**
 
 Abaixo da chave de superclasse de terminal estão entradas para cada terminal conectável na superclasse do terminal.
 

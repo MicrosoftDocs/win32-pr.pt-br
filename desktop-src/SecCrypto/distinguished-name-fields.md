@@ -4,12 +4,12 @@ ms.assetid: f0cc0e1b-370e-4548-97fe-8f6a4005540b
 title: Campos de nome distinto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 28a03495d19608e29aa60f09954c96a10f6c3cde
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 10465a481c1efbaa9637979bb5bb82880451fbe43800b968a4c9fefc5fbc4a3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104505871"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117767261"
 ---
 # <a name="distinguished-name-fields"></a>Campos de nome distinto
 
@@ -28,7 +28,7 @@ Veja a seguir algumas diretrizes para a conclusão de campos de DN em uma solici
 | Unidade organizacional | O campo de unidade organizacional pode ser usado para diferenciar as diferentes divisões em uma organização, por exemplo "unidade de segurança da Internet" ou "recursos humanos". Esse campo também é recomendado para especificar um valor de DBA (fazendo negócios como...).                                                                                           |
 | Localidade            | O campo local indica a cidade em que a organização reside. Se a organização tiver uma posição local apenas, em virtude de ter uma licença de negócios registrada com o administrador da cidade para a cidade de Cambridge no estado de Massachusetts, o campo de localidade deverá conter Cambridge.                                                                |
 | Estado ou Província   | O campo Estado ou província especifica onde a organização está localizada fisicamente. Se sua organização for incorporada em Delaware, mas tiver um DBA (fazendo negócios como...) na Califórnia, use a Califórnia. O campo Estado ou província não deve ser um campo Abreviado. Por exemplo, "CA" não é um nome de estado válido. "Califórnia" é o nome do estado adequado. |
-| País/Região      | O padrão de esquema de nomenclatura [*X. 500*](../secgloss/x-gly.md) requer um código de país/região de 2 caracteres. O código de país/região para o Estados Unidos é US; o código de país/região do Canadá é CA.                                                                                                                          |
+| País/região      | O padrão de esquema de nomenclatura [*X. 500*](../secgloss/x-gly.md) requer um código de país/região de 2 caracteres. O código de país/região para o Estados Unidos é US; o código de país/região do Canadá é CA.                                                                                                                          |
 
 
 

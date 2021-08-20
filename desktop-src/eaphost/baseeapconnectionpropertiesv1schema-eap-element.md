@@ -1,9 +1,9 @@
 ---
-title: Elemento EAP (Propriedades de conexão)
-description: Saiba mais sobre o elemento EAP. Esse elemento captura o tipo de método selecionado e a configuração específica do método. | Elemento EAP (Propriedades de conexão)
+title: Elemento Eap (propriedades de conexão)
+description: Saiba mais sobre o elemento Eap. Esse elemento captura o tipo de método selecionado e a configuração específica do método. | Elemento Eap (propriedades de conexão)
 ms.assetid: 4e9f3869-257e-4b03-93f6-2eec94eaacee
 keywords:
-- Elemento EAP EAPHost
+- Elemento Eap EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c39812d00ecf9a1183eb81fc03b09b146d751f0e
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 7750bdb9a5f3c2d6c187b0f765eeb9d7ad88c015403719c16d0b683637b10027
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105790506"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086940"
 ---
-# <a name="eap-element-connection-properties"></a>Elemento EAP (Propriedades de conexão)
+# <a name="eap-element-connection-properties"></a>Elemento Eap (propriedades de conexão)
 
-O elemento **EAP** captura o tipo de método selecionado e a configuração específica do método.
+O **elemento Eap** captura o tipo de método selecionado e a configuração específica do método.
 
 ``` syntax
 <xs:element name="Eap
@@ -35,7 +35,7 @@ O elemento **EAP** captura o tipo de método selecionado e a configuração espe
 
 ## <a name="remarks"></a>Comentários
 
-O método pode definir os elementos constituintes dentro do elemento **EAP** . O método também executa a validação de esquema nos elementos no **EAP**.
+O método pode definir os elementos constituintes dentro do **elemento Eap.** O método também executa a validação de esquema nos elementos no **Eap**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,8 +43,8 @@ O método pode definir os elementos constituintes dentro do elemento **EAP** . O
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

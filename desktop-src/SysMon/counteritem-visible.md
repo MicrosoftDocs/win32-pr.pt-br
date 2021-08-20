@@ -1,11 +1,11 @@
 ---
-title: Propriedade MyItem. Visible
-description: Recupera ou define um valor que indica se o contador está grafado.
+title: Propriedade CounterItem.Visible
+description: Recupera ou define um valor que indica se o contador é grafado.
 ms.assetid: a1f7b5cb-9c85-44e0-8216-72a226cb3a23
 keywords:
 - Propriedade visível SysMon
-- Propriedade visível SysMon, objeto de coitem
-- Objeto monoitem SysMon, propriedade Visible
+- Propriedade visível SysMon, objeto CounterItem
+- Objeto CounterItem SysMon, propriedade Visible
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: db702f0c6dca5c2ebfc98c746724173b893de4b7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 31f97f9cc9b60004aac26b413e15ef63b0631209db208ee2100d33fca5f5bcae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105756532"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117956911"
 ---
-# <a name="counteritemvisible-property"></a>Propriedade MyItem. Visible
+# <a name="counteritemvisible-property"></a>Propriedade CounterItem.Visible
 
-Recupera ou define um valor que indica se o contador está grafado.
+Recupera ou define um valor que indica se o contador é grafado.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -48,9 +48,9 @@ True se o contador for grafado; caso contrário, false.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| DLL<br/>                      | <dl> <dt>Sysmon. ocx</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| DLL<br/>                      | <dl> <dt>Sysmon.ocx</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ True se o contador for grafado; caso contrário, false.
 
 <dl> <dt>
 
-[**Item**](counteritem.md)
+[**CounterItem**](counteritem.md)
 </dt> </dl>
 
  

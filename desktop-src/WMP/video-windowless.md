@@ -3,7 +3,7 @@ title: VÍDEO. sem janela
 description: O atributo sem janela especifica ou recupera um valor que indica se o controle de vídeo será em janelas ou sem janela; ou seja, se todo o retângulo do controle estará visível sempre ou puder ser recortado.
 ms.assetid: d59e6baf-374b-48f6-b99f-35a83af7feb6
 keywords:
-- VÍDEO. Windows Media Player sem janela
+- Windows Media Player de vídeo. sem janela
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a3a17d905d2ba8c11254476337d656890469b2b6
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c98aefde5aab9837f220ccb7df254e6a592e0d5e9d41de43291b2ab73e287321
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117931736"
 ---
 # <a name="videowindowless"></a>VÍDEO. sem janela
 

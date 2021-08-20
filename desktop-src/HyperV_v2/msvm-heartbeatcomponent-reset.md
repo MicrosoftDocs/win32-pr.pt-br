@@ -1,7 +1,7 @@
 ---
-description: Método Reset da classe Msvm_HeartbeatComponent – solicita uma redefinição.
+description: Método reset da classe Msvm_HeartbeatComponent - Solicita uma redefinição.
 ms.assetid: 60dacd80-72f9-456f-9378-6cdc7b5cc964
-title: Método Reset da classe Msvm_HeartbeatComponent
+title: Método reset da classe Msvm_HeartbeatComponent dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: f2657d890d66b18c212db7ca08164809a27dda54
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e4db0b01f88f1b6e794aa4a2247ea5b9688502ecfc5b376bd1b1bf73efcfea3d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108111794"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117811770"
 ---
-# <a name="reset-method-of-the-msvm_heartbeatcomponent-class"></a>Método Reset da classe Msvm \_ HeartbeatComponent
+# <a name="reset-method-of-the-msvm_heartbeatcomponent-class"></a>Método reset da classe Msvm \_ HeartbeatComponent
 
 Solicita uma redefinição.
 
@@ -57,13 +57,13 @@ Esse método retorna um dos seguintes valores:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

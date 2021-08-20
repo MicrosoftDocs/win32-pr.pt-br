@@ -1,7 +1,7 @@
 ---
-description: Aloque espaço para mais Bones.
+description: Alocar espaço para mais detalhes.
 ms.assetid: f2acd338-f2c2-4340-a673-f36940cf31d9
-title: 'Método ID3DX10SkinInfo:: addbones (D3DX10. h)'
+title: Método ID3DX10SkinInfo::AddBones (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - D3DX10.lib
 - D3DX10.dll
-ms.openlocfilehash: 4bf9667bd25dd717c4da96c2150e7bd7c45964f8
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 52dbbaf0acbe2115c5a1b8751875116847c754179de2bbf3bec80cc257661068
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104298637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117914302"
 ---
-# <a name="id3dx10skininfoaddbones-method"></a>Método ID3DX10SkinInfo:: addbones
+# <a name="id3dx10skininfoaddbones-method"></a>Método ID3DX10SkinInfo::AddBones
 
-Aloque espaço para mais Bones.
+Alocar espaço para mais detalhes.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,20 +40,20 @@ HRESULT AddBones(
 
 <dl> <dt>
 
-*Contagem* \[ de no\]
+*Contagem* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-O número de Bones a serem adicionados.
+O número de pontos a adicionar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se esse método for bem sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser: E \_ OUTOFMEMORY.
+Se esse método for bem-sucedido, o valor de retorno será S \_ OK. Se o método falhar, o valor de retorno poderá ser: E \_ OUTOFMEMORY.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ Se esse método for bem sucedido, o valor de retorno será S \_ OK. Se o método
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ Se esse método for bem sucedido, o valor de retorno será S \_ OK. Se o método
 [ID3DX10SkinInfo](id3dx10skininfo.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

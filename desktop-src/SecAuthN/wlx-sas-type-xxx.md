@@ -4,21 +4,21 @@ ms.assetid: c0a1269b-f9d4-49e1-89ca-526fef148134
 title: WLX_SAS_TYPE_XXX (Winwlx. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0a75c7d7a71855700c4c8c233db3cfc18e06b9d7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 568308d064b576f036d18aaa2d150cb1c6b7f0a2d89ee60d9410fcad123351d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749683"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117785706"
 ---
 # <a name="wlx_sas_type_xxx"></a>WLX \_ SAS \_ Type \_ xxx
 
-\[A \_ constante do tipo WLX SAS \_ \_ xxx não está mais disponível para uso a partir do Windows Server 2008 e do Windows Vista.\]
+\[a \_ constante do tipo WLX SAS \_ \_ XXX não está mais disponível para uso a partir do Windows Server 2008 e Windows Vista.\]
 
 Os **valores \_ \_ \_ xxx do tipo SAS do WLX** definem um tipo SAS específico.
 
 > [!Note]  
-> As DLLs GINAs são ignoradas no Windows Vista.
+> as DLLs ginas são ignoradas no Windows Vista.
 
  
 
@@ -44,11 +44,11 @@ Todos os valores de zero a 127 são reservados para tipos definidos pela Microso
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                               |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                      |
-| parâmetro<br/>                   | <dl> <dt>Winwlx. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winwlx. h</dt> </dl> |
 
 
 

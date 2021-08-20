@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ca7e2be41262578b2c4224ebcc97050b8e27bcec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ab8a6593bd154b3d7fb2fa9ba7bba0f0ba637a3d287092d159cb5430cfa478bb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760484"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118074111"
 ---
 # <a name="jet_objectlistcolumnidflags-property"></a>Propriedade JET_OBJECTLIST. columnidflags
 
@@ -40,7 +40,7 @@ Obtém o columnid da coluna na tabela temporária que armazena os sinalizadores 
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

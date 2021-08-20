@@ -13,12 +13,12 @@ keywords:
 - perfis, configurando a taxa de bits baseada em qualidade
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d0b7a6ecb83c7242f82f5626a086c8aba23881f
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 34b1181d722909478b29e1ffbe5f5b53cb919d80e3922e055eecdf34c334a382
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "103917064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117845630"
 ---
 # <a name="to-configure-quality-based-vbr"></a>Para configurar Quality-Based VBR
 
@@ -46,12 +46,12 @@ Para configurar um fluxo em um perfil a ser codificado com a VBR com base em qua
 
 <dl> <dt>
 
-[**Configurando fluxos de VBR**](configuring-vbr-streams.md)
+[**configurando Fluxos de VBR**](configuring-vbr-streams.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

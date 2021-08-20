@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d570cb381c00f727c2fd5a8ff81a1931f558bf24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f17294c4ce98cfcab88f579fa44da1f2281dc9ee7b6fcc6c6ac679c90f14e9b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117708456"
 ---
 # <a name="esentmultivaluedduplicateexception-constructor"></a>Construtor EsentMultiValuedDuplicateException
 

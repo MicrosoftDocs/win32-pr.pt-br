@@ -4,12 +4,12 @@ ms.assetid: d4a408de-4201-4cd4-a270-ba96889232b6
 title: Outros exemplos de código C estendidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d960cf61f44b791f085cc5608ffbe98f32d4b746
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3ae1119aab98f31165a564c2eca64c84a5f7497b29a3c997462138074155f0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922114"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117979019"
 ---
 # <a name="other-extended-c-code-examples"></a>Outros exemplos de código C estendidos
 

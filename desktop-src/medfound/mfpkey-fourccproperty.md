@@ -4,12 +4,12 @@ ms.assetid: c03da576-cb58-4686-af6f-9575520c759c
 title: Propriedade MFPKEY_FOURCC (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cbe852ad0d7113717428bdd832b8f327f8d0b6e8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c51fb6999fd3ef95e9f9fb80ff3fdf5a9a92c8971dbe1da694b5ac52d3be687
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117873459"
 ---
 # <a name="mfpkey_fourcc-property"></a>\_Propriedade FOURCC MFPKEY
 
@@ -38,9 +38,9 @@ Você deve usar [**IWMCodecProps:: GetCodecProp**](/windows/desktop/api/wmcodecd
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

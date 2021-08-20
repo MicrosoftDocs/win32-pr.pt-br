@@ -1,26 +1,26 @@
 ---
-title: Atributo ArrowOK de VML
-description: Atributo ArrowOK de VML
+title: Atributo ArrowOK do VML
+description: Atributo ArrowOK do VML
 ms.assetid: 19b23544-4a72-4273-b48a-6aee39addcf6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8807b802370f81ddd084df8a171f95e8496c7ff0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: ac95b8fa7068f55246263e6622527a8ecec17d3351c284a0810cd77b085784aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366242"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124965"
 ---
-# <a name="vml-arrowok-attribute"></a>Atributo ArrowOK de VML
+# <a name="vml-arrowok-attribute"></a>Atributo ArrowOK do VML
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se as pontas de seta serão exibidas. Leitura/gravação. **VgTriState**.
+Determina se as setas serão exibidas. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,19 +28,19 @@ Determina se as pontas de seta serão exibidas. Leitura/gravação. **VgTriState
 
 **Sintaxe de marca**
 
-<v: *Element* arrowok = " *expressão* " >
+<v: *elemento* arrowok=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . arrowok = "*expressão*"
+*elemento* .arrowok="*expression*"
 
-*expressão* = de *elemento*. arrowok
+*expressão* = *elemento*.arrowok
 
 **Comentários**
 
-Se **for false**, o caminho não terá pontas de seta. O padrão é **False**. Esse atributo substitui todos os outros atributos de ponta de seta no elemento pai ou **Stroke** .
+Se **False**, o caminho não terá setas. O padrão é **False**. Esse atributo substitui todos os outros atributos de ponta de seta no elemento pai **ou Traço.**
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
@@ -59,6 +59,6 @@ O caminho não terá uma ponta de seta.
 
 
 
- 
+ 
 
- 
+ 

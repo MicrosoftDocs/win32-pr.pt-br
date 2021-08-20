@@ -11,16 +11,16 @@ api_name:
 - Context
 api_type:
 - Schema
-ms.openlocfilehash: dac98101dade85fbbaa63275933885241ef206fc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d5e5d6db0a2d2c2e207a61a7d20d9a084416954b54c98f6429e3916b526e663
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781090"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118066140"
 ---
 # <a name="context-mbnprofile-element"></a>Elemento Context (MBNProfile)
 
-O elemento **Context (MBNProfile)** especifica os parâmetros necessários para configurar uma conexão de dados.
+O **elemento Context (MBNProfile)** especifica os parâmetros necessários para configurar uma conexão de dados.
 
 O elemento pode ter os seguintes elementos filho.
 
@@ -37,7 +37,7 @@ Esse elemento pode ter um máximo de uma ocorrência.
  />
 ```
 
-O elemento **Context** é definido pelo elemento [**MBNProfile**](schema-mbnprofile-element.md) .
+O **elemento** Context é definido pelo [**elemento MBNProfile.**](schema-mbnprofile-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ O elemento **Context** é definido pelo elemento [**MBNProfile**](schema-mbnprof
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho \| UWP\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 
