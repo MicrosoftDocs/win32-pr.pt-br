@@ -4,12 +4,12 @@ ms.assetid: 0B4D3F62-04AF-4D0A-8374-B77500140AC8
 title: Propriedades de PrivateKey
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 331230f78d5f28d847e85306b9426f4550262a1b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b51e4a49a4be4c009045db27230931231743210f6ff0b766f5eacd98028b0a10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105780465"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117977902"
 ---
 # <a name="privatekey-properties"></a>Propriedades de PrivateKey
 

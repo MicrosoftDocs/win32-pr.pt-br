@@ -11,12 +11,12 @@ keywords:
 - executar loop de Wave-sons de áudio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5373e703c7a02068094e312dee18690a797b330e
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: cf97321a72ab566bf622e725700dbf336ddba6d92b9b8e6df9150357492656f8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104365841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136114"
 ---
 # <a name="using-playsound-to-loop-sounds"></a>Usando o PlaySound para repetir sons
 
@@ -38,6 +38,6 @@ PlaySound(NULL, NULL, 0);
 
 
 
- 
+ 
 
- 
+ 

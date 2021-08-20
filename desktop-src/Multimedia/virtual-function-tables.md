@@ -4,12 +4,12 @@ description: Tabelas de funções virtuais
 ms.assetid: 1b7c6da6-3156-46fe-a9ca-0c1717fe28b5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a784a027f7e1120d8e7092aa5dd6c0f5c0e958b3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 31b403debddeecbbfe099224943ac6cdf0a1875dff9c19ea08a96e9cb029875a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105751415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135493"
 ---
 # <a name="virtual-function-tables"></a>Tabelas de funções virtuais
 
@@ -33,9 +33,9 @@ pStream->Read(parameters)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

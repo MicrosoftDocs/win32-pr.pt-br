@@ -1,26 +1,26 @@
 ---
-title: Atributo VML MSO-Wrap-urbano-Top
-description: Atributo VML MSO-Wrap-urbano-Top
+title: Atributo VML MSO-Wrap-Distance-Top
+description: Atributo VML MSO-Wrap-Distance-Top
 ms.assetid: 20444d16-fa84-4685-911c-288150c2674b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5a16898733ead7bf3728d8f520888c8a05ef5fe6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 856082665ab1b46b9d9294bffdd2821e2fb5db4b6e066effef5dd2f081185f38
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105807165"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118124286"
 ---
-# <a name="vml-mso-wrap-distance-top-attribute"></a>Atributo VML MSO-Wrap-urbano-Top
+# <a name="vml-mso-wrap-distance-top-attribute"></a>Atributo VML MSO-Wrap-Distance-Top
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Define a distância da forma superior ao texto que é quebrado em seu lugar. Leitura/gravação. **Cadeia de caracteres**.
+Define a distância da parte superior da forma para o texto que a envolve. Leitura/gravação. **Cadeia de caracteres**.
 
 **Aplica-se a**
 
@@ -28,17 +28,17 @@ Define a distância da forma superior ao texto que é quebrado em seu lugar. Lei
 
 **Sintaxe de marca**
 
-<v: *Element* Style = "Die-Wrap-urbano-Top: *expression* " >
+<v: *element* style="mso-wrap-distance-top: *expressão* ">
 
 **Comentários**
 
-Observe que esse atributo é diferente do atributo de **margem** CSS. **Margin** altera a origem da forma para incluir as áreas de margem, mas a distância de ajuste em Microsoft Office não altera a origem da forma.
+Observe que esse atributo é diferente do atributo **Margem** CSS. **A** margem altera a origem da forma para incluir as áreas de margem, mas a distância de quebra Microsoft Office não altera a origem da forma.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
 **Exemplo**
 
-A forma tem uma distância de ajuste superior de 10 pontos.
+A forma tem uma distância de wrap superior de 10 pontos.
 
 
 ```HTML
@@ -52,6 +52,6 @@ A forma tem uma distância de ajuste superior de 10 pontos.
 
 
 
- 
+ 
 
- 
+ 

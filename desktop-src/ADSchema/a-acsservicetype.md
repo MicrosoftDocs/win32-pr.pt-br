@@ -108,7 +108,7 @@ O tipo de serviço do ACS. Carga controlada ou largura de banda garantida.
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> [**Limites de recursos do ACS**](c-acsresourcelimits.md)<br/> |
+| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> [**ACS-limites de recursos**](c-acsresourcelimits.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O tipo de serviço do ACS. Carga controlada ou largura de banda garantida.
 | ID do link                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| Tem valor único       | Verdadeiro                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                       |
 | É indexado             | Falso                                                                                                      |
-| No Catálogo Global      | Falso                                                                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                               |
+| No catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> [**Limites de recursos do ACS**](c-acsresourcelimits.md)<br/> |
+| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> [**ACS-limites de recursos**](c-acsresourcelimits.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O tipo de serviço do ACS. Carga controlada ou largura de banda garantida.
 | ID do link                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| Tem valor único       | Verdadeiro                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                       |
 | É indexado             | Falso                                                                                                      |
-| No Catálogo Global      | Falso                                                                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                               |
+| No catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> [**Limites de recursos do ACS**](c-acsresourcelimits.md)<br/> |
+| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> [**ACS-limites de recursos**](c-acsresourcelimits.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O tipo de serviço do ACS. Carga controlada ou largura de banda garantida.
 | ID do link                | \-                                                                                                         |
 | MAPI-Id                | \-                                                                                                         |
 | System-Only            | Falso                                                                                                      |
-| Tem valor único       | Verdadeiro                                                                                                       |
+| É de valor único       | Verdadeiro                                                                                                       |
 | É indexado             | Falso                                                                                                      |
-| No Catálogo Global      | Falso                                                                                                      |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                                                               |
+| No catálogo global      | Falso                                                                                                      |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                               |
 | Range-Lower            | \-                                                                                                         |
 | Range-Upper            | \-                                                                                                         |
 | Search-Flags           | 0x00000000                                                                                                 |
 | System-Flags           | 0x00000010                                                                                                 |
-| Classes usadas em        | [**ACS-Policy**](c-acspolicy.md)<br/> [**Limites de recursos do ACS**](c-acsresourcelimits.md)<br/> |
+| Classes usadas em        | [**ACS-política**](c-acspolicy.md)<br/> [**ACS-limites de recursos**](c-acsresourcelimits.md)<br/> |
 
 
 

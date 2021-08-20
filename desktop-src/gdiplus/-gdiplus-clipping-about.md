@@ -1,5 +1,5 @@
 ---
-description: O recorte envolve restringir o desenho a uma determinada região. A ilustração a seguir mostra a cadeia de caracteres &\# 0034; Hello&\# 0034; recortado para uma região em forma de coração.
+description: O recorte envolve restringir o desenho a uma determinada região. A ilustração a seguir mostra a cadeia de caracteres &\# 0034; Olá&\# 0034; recortado em uma região em formato de coração.
 ms.assetid: 58cc052d-31af-4410-81b9-defbad08a1dc
 title: Recorte (GDI+)
 ms.topic: article
@@ -13,15 +13,15 @@ ms.locfileid: "118067630"
 ---
 # <a name="clipping-gdi"></a>Recorte (GDI+)
 
-O recorte envolve restringir o desenho a uma determinada região. A ilustração a seguir mostra a cadeia de caracteres "Hello" recortada em uma região em forma de coração.
+O recorte envolve restringir o desenho a uma determinada região. A ilustração a seguir mostra a cadeia de caracteres "Olá" recortada para uma região em formato de coração.
 
-![ilustração mostrando partes da cadeia de caracteres "hello" dentro de um coração vermelho](images/aboutgdip02-art30.png)
+![ilustração mostrando partes da cadeia de caracteres "Olá" em um coração vermelho](images/aboutgdip02-art30.png)
 
-As regiões podem ser construídas de caminhos e os caminhos podem conter os contornos de cadeias de caracteres, para que você possa usar o texto descrito para recorte. A ilustração a seguir mostra um conjunto de re elipses concêntricas recortados no interior de uma cadeia de caracteres de texto.
+As regiões podem ser construídas a partir de caminhos, e os caminhos podem conter os contornos das cadeias de caracteres, para que você possa usar texto com contorno para recorte. A ilustração a seguir mostra um conjunto de elipses concêntricas recortados para o interior de uma cadeia de caracteres de texto.
 
-![ilustração mostrando a cadeia de caracteres "hello" preenchida por um padrão de círculos concêntricos](images/aboutgdip02-art31.png)
+![ilustração mostrando a cadeia de caracteres "Olá" preenchida por um padrão de círculos concêntricos](images/aboutgdip02-art31.png)
 
-Para desenhar com recorte, crie um objeto [**Graphics,**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) chame seu método [SetClip](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setclip(inconstregion_incombinemode)) e, em seguida, chame os métodos de desenho do mesmo **objeto Graphics.** O exemplo a seguir desenha uma linha que é recortada para uma região retangular.
+Para desenhar com recorte, crie um objeto de [**gráfico**](/windows/win32/api/gdiplusgraphics/nl-gdiplusgraphics-graphics) , chame seu método [SetClip](/windows/win32/api/gdiplusgraphics/nf-gdiplusgraphics-graphics-setclip(inconstregion_incombinemode)) e, em seguida, chame os métodos de desenho desse mesmo objeto **gráfico** . O exemplo a seguir desenha uma linha recortada em uma região retangular.
 
 
 ```

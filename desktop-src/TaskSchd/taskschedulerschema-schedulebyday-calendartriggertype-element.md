@@ -1,10 +1,10 @@
 ---
 title: Elemento ScheduleByDay (calendarTriggerType)
-description: Especifica uma agenda diária.
+description: Especifica um agendamento diário.
 ms.assetid: 5a6097ce-a855-4b08-84c5-71f06343805e
 keywords:
-- gatilho diário Agendador de Tarefas elemento , XML
-- Elemento ScheduleByDay Agendador de Tarefas
+- gatilho diário Agendador de Tarefas, elemento XML
+- Agendador de Tarefas do elemento ScheduleByDay
 topic_type:
 - apiref
 api_name:
@@ -23,7 +23,7 @@ ms.locfileid: "118131578"
 ---
 # <a name="schedulebyday-calendartriggertype-element"></a>Elemento ScheduleByDay (calendarTriggerType)
 
-Especifica uma agenda diária. Por exemplo, a tarefa começa às 8h todos os dias, todos os dias, a cada três dias e assim por diante.
+Especifica um agendamento diário. Por exemplo, a tarefa começa às 8:00, todos os dias, a cada dia, a cada terceiro dia e assim por diante.
 
 ``` syntax
 <xs:element name="ScheduleByDay"
@@ -31,7 +31,7 @@ Especifica uma agenda diária. Por exemplo, a tarefa começa às 8h todos os dia
  />
 ```
 
-O **elemento ScheduleByDay** é definido pelo tipo complexo [**calendarTriggerType.**](taskschedulerschema-calendartriggertype-complextype.md)
+O elemento **ScheduleByDay** é definido pelo tipo complexo [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) .
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -39,7 +39,7 @@ O **elemento ScheduleByDay** é definido pelo tipo complexo [**calendarTriggerTy
 
 | Elemento                                                                             | Derivado de                                                                       | Descrição                                                                                |
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Especifica um gatilho diário, semanal, mensal ou um gatilho DOW (dia da semana).<br/> |
+| [**CalendarTrigger**](taskschedulerschema-calendartrigger-triggergroup-element.md) | [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md) | Especifica um gatilho diário, semanal, mensal ou um dia da semana (DOW) mensal.<br/> |
 
 
 
@@ -49,19 +49,19 @@ O **elemento ScheduleByDay** é definido pelo tipo complexo [**calendarTriggerTy
 
 | Elemento                                                                            | Type             | Descrição                                                         |
 |------------------------------------------------------------------------------------|------------------|---------------------------------------------------------------------|
-| [**DaysInterval**](taskschedulerschema-daysinterval-dailyscheduletype-element.md) | **unsignedByte** | Especifica o intervalo entre os dias na agenda.<br/> |
+| [**DaysInterval**](taskschedulerschema-daysinterval-dailyscheduletype-element.md) | **unsignedByte** | Especifica o intervalo entre os dias no agendamento.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O elemento filho listado anteriormente é definido pelos tipos de elemento complexo [**dailyScheduleType.**](taskschedulerschema-dailyscheduletype-complextype.md)
+O elemento filho listado anteriormente é definido pelos tipos de elementos complexos [**dailyScheduleType**](taskschedulerschema-dailyscheduletype-complextype.md) .
 
-A hora do dia em que a tarefa é iniciada é definida pelo [**elemento StartBoundary.**](taskschedulerschema-startboundary-triggerbasetype-element.md)
+A hora do dia em que a tarefa é iniciada é definida pelo elemento [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md) .
 
-Para o desenvolvimento de scripts, um gatilho diário é especificado usando o [**objeto DailyTrigger.**](weeklytrigger.md)
+Para o desenvolvimento de scripts, um gatilho diário é especificado usando o objeto [**DailyTrigger**](weeklytrigger.md) .
 
-Para o desenvolvimento em C++, um gatilho diário é especificado usando a interface [**IDailyTrigger.**](/windows/desktop/api/taskschd/nn-taskschd-idailytrigger)
+Para desenvolvimento em C++, um gatilho diário é especificado usando a interface [**IDailyTrigger**](/windows/desktop/api/taskschd/nn-taskschd-idailytrigger) .
 
 ## <a name="examples"></a>Exemplos
 
@@ -80,7 +80,7 @@ O XML a seguir define um gatilho de calendário diário que inicia a tarefa todo
 
 
 
-Para ver um exemplo completo do XML para uma tarefa que especifica uma agenda diária, consulte Exemplo de gatilho diário [(XML)](daily-trigger-example--xml-.md).
+Para obter um exemplo completo do XML para uma tarefa que especifica um agendamento diário, consulte [exemplo de gatilho diário (XML)](daily-trigger-example--xml-.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -88,8 +88,8 @@ Para ver um exemplo completo do XML para uma tarefa que especifica uma agenda di
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 
@@ -97,7 +97,7 @@ Para ver um exemplo completo do XML para uma tarefa que especifica uma agenda di
 
 <dl> <dt>
 
-[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
+[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

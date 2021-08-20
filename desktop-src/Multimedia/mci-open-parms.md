@@ -3,7 +3,7 @@ title: Estrutura de MCI_OPEN_PARMS (Mciapi. h)
 description: A \_ estrutura MCI Open \_ parms contém informações para o \_ comando MCI Open.
 ms.assetid: d22cefeb-3d49-47cf-a946-f73c77ae43fd
 keywords:
-- Multimídia do Windows da estrutura de MCI_OPEN_PARMS
+- estrutura de MCI_OPEN_PARMS Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 658f97a9b2677347c9818265c1f05c2115c95fdd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f80d01f41db904cea583f83aa446e718d1067e99e4d8bac3a3c6791ef5696f83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138301"
 ---
 # <a name="mci_open_parms-structure"></a>\_Estrutura de parâmetros abertos do MCI \_
 

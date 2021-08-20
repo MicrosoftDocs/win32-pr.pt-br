@@ -1,7 +1,7 @@
 ---
 description: Reduz o IAnalysisRegion para representar uma área vazia.
 ms.assetid: 647a90ee-a5fe-4019-92bb-76b84207d86e
-title: 'Método IAnalysisRegion:: MakeEmpty (IACom. h)'
+title: Método IAnalysisRegion::MakeEmpty (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 76ca10d98ad6c240ebcd61b7bf83934fefd838b0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a7a5cbd07dae7fb590fe6e8e08a6a178f3d77c2231110654fe2c74f4a4cfc17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118045151"
 ---
-# <a name="ianalysisregionmakeempty-method"></a>Método IAnalysisRegion:: MakeEmpty
+# <a name="ianalysisregionmakeempty-method"></a>Método IAnalysisRegion::MakeEmpty
 
-Reduz o [**IAnalysisRegion**](ianalysisregion.md) para representar uma área vazia.
+Reduz o [**IAnalysisRegion para**](ianalysisregion.md) representar uma área vazia.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -37,9 +37,9 @@ HRESULT MakeEmpty();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,9 +47,9 @@ Para obter uma descrição dos valores de retorno, consulte [classes e interface
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 
@@ -61,13 +61,13 @@ Para obter uma descrição dos valores de retorno, consulte [classes e interface
 [**IAnalysisRegion**](ianalysisregion.md)
 </dt> <dt>
 
-[**Método IAnalysisRegion:: IsEmpty**](ianalysisregion-isempty.md)
+[**Método IAnalysisRegion::IsEmpty**](ianalysisregion-isempty.md)
 </dt> <dt>
 
-[**Método IAnalysisRegion:: isFinite**](ianalysisregion-isinfinite.md)
+[**Método IAnalysisRegion::IsInfinite**](ianalysisregion-isinfinite.md)
 </dt> <dt>
 
-[**Método IAnalysisRegion:: MakeInfinite**](ianalysisregion-makeinfinite.md)
+[**Método IAnalysisRegion::MakeInfinite**](ianalysisregion-makeinfinite.md)
 </dt> <dt>
 
 [Referência de análise de tinta](ink-analysis-reference.md)

@@ -4,12 +4,12 @@ description: A Microsoft fornece acesso à funcionalidade NDF por meio de uma AP
 ms.assetid: db06b9a9-a64a-43ff-9b77-95230208cfd6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ca74a8a80f7babca75182625ec71dc1ec47cbc7
-ms.sourcegitcommit: c9c66a09eeb9e46311879a5181342e89964c1dd8
+ms.openlocfilehash: d85d1386971207330579f5395989e14c4b2315dc578f5bb3509695b99d6e215a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "104365817"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133222"
 ---
 # <a name="using-ndf-functionality"></a>Usando a funcionalidade NDF
 
@@ -34,13 +34,13 @@ Uma sessão de diagnóstico NDF requer um incidente específico para diagnostica
 
 Há duas maneiras de iniciar a funcionalidade de diagnóstico e reparo.
 
--   Usando a interface do usuário do Windows (recomendado)
+-   usando a Interface do usuário do Windows (recomendado)
 
-    Ao executar na interface do usuário padrão do Windows, você pode simplesmente chamar a função [**NdfExecuteDiagnosis**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfexecutediagnosis) . O assistente do NDF será iniciado e ajudará o usuário a identificar (e se possível, e resolver) o problema. A função retornará após a conclusão desse processo. A interface do usuário é opcionalmente modal para seu aplicativo.
+    ao executar na interface do usuário do Windows padrão, você pode simplesmente chamar a função [**NdfExecuteDiagnosis**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfexecutediagnosis) . O assistente do NDF será iniciado e ajudará o usuário a identificar (e se possível, e resolver) o problema. A função retornará após a conclusão desse processo. A interface do usuário é opcionalmente modal para seu aplicativo.
 
--   Usando uma interface do usuário personalizada (somente Windows 7 e posterior)
+-   usando uma Interface do usuário personalizada (somente Windows 7 e posteriores)
 
-    Funções diferentes estão disponíveis para uso em cenários em que nenhuma interface do usuário está sendo mostrada, ou onde a experiência padrão do Windows não está sendo usada (como o Media Center, aplicativos inseridos e o prompt de comando). Essa opção ignora a funcionalidade de experiência do usuário fornecida no assistente do NDF, que inclui a limitação dos resultados a causas raiz totalmente suportadas, bem como a heurística para apresentar os reparos para o usuário na ordem recomendada. Ao usar essas funções, você mesmo deve fornecer qualquer funcionalidade desse tipo. Você também deve se certificar de liberar a memória usada pelos resultados do diagnóstico.
+    funções diferentes estão disponíveis para uso em cenários em que nenhuma interface do usuário está sendo mostrada, ou onde a experiência de Windows padrão não está sendo usada (como o Media Center, aplicativos inseridos e o prompt de comando). Essa opção ignora a funcionalidade de experiência do usuário fornecida no assistente do NDF, que inclui a limitação dos resultados a causas raiz totalmente suportadas, bem como a heurística para apresentar os reparos para o usuário na ordem recomendada. Ao usar essas funções, você mesmo deve fornecer qualquer funcionalidade desse tipo. Você também deve se certificar de liberar a memória usada pelos resultados do diagnóstico.
 
     Para iniciar o diagnóstico, chame a função [**NdfDiagnoseIncident**](/windows/desktop/api/Ndfapi/nf-ndfapi-ndfdiagnoseincident) . Todos os problemas encontrados serão retornados ao aplicativo como uma coleção de estruturas [**RootCauseInfo**](/windows/win32/api/ndattrib/ns-ndattrib-rootcauseinfo) descrevendo as causas raiz identificadas e os possíveis reparos.
 

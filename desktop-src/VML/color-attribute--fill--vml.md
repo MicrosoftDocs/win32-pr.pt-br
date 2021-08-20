@@ -1,24 +1,24 @@
 ---
-title: Atributo Color (Fill) (VML)
-description: Atributo Color (Fill) (VML)
+title: Atributo Color (Preenchimento)(VML)
+description: Atributo Color (Preenchimento)(VML)
 ms.assetid: 38e75bf5-4da9-4c58-af86-3554d03a6b7b
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8480b3a013add36533a82b31338fba301e8353db
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 47ec72cab0562ae675ca2e22992369a7c0ad6534207cd2a6f6141f56c64e2f74
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454091"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118125376"
 ---
-# <a name="color-attribute-fillvml"></a>Atributo Color (Fill) (VML)
+# <a name="color-attribute-fillvml"></a>Atributo Color (Preenchimento)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Define a cor de um preenchimento. Leitura/gravação. **VgColor**.
 
@@ -28,19 +28,19 @@ Define a cor de um preenchimento. Leitura/gravação. **VgColor**.
 
 **Sintaxe de marca**
 
-<v: *Element* Color = " *expressão* " >
+<v: *element* color=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . Color = "*expressão*"
+*elemento* .color="*expression*"
 
-*expressão* = de *elemento*. Color
+*expressão* = *elemento*.color
 
 **Comentários**
 
-Substitui o atributo **FillColor** de uma forma. O valor padrão é **branco**.
+Substitui o **atributo FillColor** de uma forma. O valor padrão é **Branco.**
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
@@ -59,6 +59,6 @@ A cor de preenchimento da forma é verde.
 
 
 
- 
+ 
 
- 
+ 

@@ -8,12 +8,12 @@ keywords:
 - AD de objetos, configurando direitos de acesso em um objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bcf54de381dab2af1dab4ea44654fb0a5682f06
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 7b6d0983246b0f7a39225d11ef5d919b3b26230699209e86812ad68928d072e5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104453902"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118183425"
 ---
 # <a name="setting-access-rights-on-an-object"></a>Configurando direitos de acesso em um objeto
 
@@ -30,9 +30,9 @@ Use o seguinte processo geral para criar uma ACE para um direito de acesso e def
 5.  Defina as propriedades da ACE usando os métodos [**IADsAccessControlEntry**](/windows/desktop/api/iads/nn-iads-iadsaccesscontrolentry) :
 
     1.  Use [**IADsAccessControlEntry::p UT \_ Trustee**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) para definir o Trustee ao qual essa Ace se aplica. O objeto de confiança é um usuário, grupo ou outra entidade de segurança. Seu aplicativo deve usar o valor da propriedade apropriada do objeto de usuário ou grupo de objetos de confiança aos quais você deseja aplicar a ACE. O Trustee é especificado como um **BSTR** e pode assumir os seguintes formatos:
-        -   Conta de domínio (o nome de logon usado em uma versão anterior do Windows NT) no formato " <domain> \\ <user account> ", em que " &lt; domínio &gt; " é o nome do domínio do Windows NT que contém o usuário e " &lt; conta de usuário &gt; " é a propriedade **sAMAccountName** do usuário especificado. Por exemplo: "fabrikam \\ jeffsmith".
-        -   Entidade de segurança bem conhecida que representa identidades especiais definidas pelo sistema de segurança do Windows NT, como todos, sistema local, principal usuário autenticado, proprietário criador e assim por diante. Os objetos que representam as entidades de segurança conhecidas são armazenados no contêiner de entidades de segurança bem conhecidas sob o contêiner de configuração. Por exemplo, logon anônimo.
-        -   Grupo interno que representa os grupos de usuários internos definidos pelo sistema de segurança do Windows NT. Ele tem o formato "BUILTIN \\ <group name> " onde " &lt; nome &gt; do grupo" é o nome do grupo de usuários interno. Os objetos que representam os grupos internos são armazenados no contêiner interno abaixo do contêiner de domínio. Por exemplo, " \\ Administradores internos".
+        -   conta de domínio (o nome de logon usado em uma versão anterior do Windows NT) no formato " <domain> \\ <user account> ", em que " &lt; domínio &gt; " é o nome do domínio Windows NT que contém o usuário e " &lt; conta de usuário &gt; " é a propriedade **sAMAccountName** do usuário especificado. Por exemplo: "fabrikam \\ jeffsmith".
+        -   entidade de segurança bem conhecida que representa identidades especiais definidas pelo sistema de segurança Windows NT, como todos, sistema local, principal usuário autenticado, proprietário criador e assim por diante. Os objetos que representam as entidades de segurança conhecidas são armazenados no contêiner de entidades de segurança bem conhecidas sob o contêiner de configuração. Por exemplo, logon anônimo.
+        -   grupo interno que representa os grupos de usuários internos definidos pelo sistema de segurança Windows NT. Ele tem o formato "BUILTIN \\ <group name> " onde " &lt; nome &gt; do grupo" é o nome do grupo de usuários interno. Os objetos que representam os grupos internos são armazenados no contêiner interno abaixo do contêiner de domínio. Por exemplo, " \\ Administradores internos".
         -   SID (formato de cadeia de caracteres) do usuário especificado, que é a propriedade **ObjectID** do usuário especificado. Você pode converter para formulário de cadeia de caracteres usando a função [**ConvertSidToStringSid**](/windows/desktop/api/sddl/nf-sddl-convertsidtostringsida) na API de segurança do Win32. Por exemplo: "S-1-5-32-548".
     2.  Use a propriedade [**IADsAccessControlEntry. AccessMask**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) para definir a máscara que especifica o direito de acesso. A enumeração de [**\_ \_ enumeração de direitos de ADS**](/windows/win32/api/iads/ne-iads-ads_rights_enum) especifica os direitos de acesso que podem ser definidos em um objeto de diretório.
     3.  Use a propriedade [**IADsAccessControlEntry. AceType**](/windows/desktop/ADSI/iadsaccesscontrolentry-property-methods) para especificar se deseja permitir ou negar os direitos de acesso definidos por **AccessMask**. Para direitos padrão, pode ser **ADS \_ ACETYPE \_ acesso \_ permitido** ou **anúncios \_ ACETYPE \_ acesso \_ negado**. Para direitos específicos do objeto (direitos que se aplicam a uma parte específica de um objeto ou a um tipo específico de objeto), use o **\_ \_ \_ \_ objeto permitido pelo ADS ACETYPE Access** ou o **\_ \_ \_ \_ objeto acesso negado do ADS ACETYPE**. A enumeração de [**\_ \_ Enumeração ADS ACETYPE**](/windows/win32/api/iads/ne-iads-ads_acetype_enum) especifica os tipos de acesso que você pode definir em uma ACE.
@@ -47,6 +47,6 @@ Use o seguinte processo geral para criar uma ACE para um direito de acesso e def
 9.  Use o método [**IADs. put**](/windows/desktop/api/iads/nf-iads-iads-put) para gravar o descritor de segurança na propriedade **nTSecurityDescriptor** do objeto no cache de propriedades.
 10. Use o método [**IADs. setinfo**](/windows/desktop/api/iads/nf-iads-iads-setinfo) para atualizar a propriedade no objeto no diretório.
 
- 
+ 
 
- 
+ 

@@ -1,7 +1,7 @@
 ---
-description: 'Método IRTC:: Connect – o método Connect conecta o NPP à rede usando uma NIC especificada e fornece informações de configuração para a conexão.'
+description: 'método IRTC:: Conexão-o método Conexão conecta o NPP à rede usando uma NIC especificada e fornece informações de configuração para a conexão.'
 ms.assetid: d017c2a3-a832-4084-b21b-0cca428c5360
-title: 'Método IRTC:: Connect (Netmon. h)'
+title: 'método IRTC:: Conexão (Netmon. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: ba62f3341b18ddfdbf09af4eec701322d901ab79
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: da7ff72414a1702a1849f76f658f0fbf85116b9b831e800148d5a6165da7ac17
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132895"
 ---
-# <a name="irtcconnect-method"></a>Método IRTC:: Connect
+# <a name="irtcconnect-method"></a>método IRTC:: Conexão
 
-O método **Connect** conecta o NPP à rede usando uma NIC especificada e fornece informações de configuração para a conexão.
+o método **Conexão** conecta o NPP à rede usando uma NIC especificada e fornece informações de configuração para a conexão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -91,7 +91,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 |---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**NMERR \_ já \_ conectado**</dt> </dl>            | Esta instância do objeto COM NPP já está conectada à rede.<br/>                                                                                                                                                                                                          |
 | <dl> <dt>**\_erro de \_ conversão de blob NMERR \_**</dt> </dl>       | O BLOB de configuração está corrompido. Esse erro é gerado pela chamada **IRTC:: Configure** .<br/>                                                                                                                                                                                       |
-| <dl> <dt>**a \_ entrada de blob NMERR não \_ \_ \_ \_ existe**</dt> </dl> | O BLOB de entrada especificado pelo parâmetro *hInputBlob* não tem uma entrada necessária para executar esta operação. Esse erro pode ser gerado pela chamada **IRTC:: Connect** ou **IRTC:: Configure** . Examine o BLOB de erro retornado por *hErrorBlob* para determinar qual entrada não foi encontrada.<br/> |
+| <dl> <dt>**a \_ entrada de blob NMERR não \_ \_ \_ \_ existe**</dt> </dl> | O BLOB de entrada especificado pelo parâmetro *hInputBlob* não tem uma entrada necessária para executar esta operação. esse erro pode ser gerado pela chamada **IRTC:: Conexão** ou **IRTC:: Configure** . Examine o BLOB de erro retornado por *hErrorBlob* para determinar qual entrada não foi encontrada.<br/> |
 | <dl> <dt>**\_blob NMERR \_ não \_ inicializado**</dt> </dl>        | A função **createBlob** não foi chamada. Esse erro é gerado pela chamada **IRTC:: Configure** .<br/>                                                                                                                                                                         |
 | <dl> <dt>**\_cadeia de blob NMERR \_ \_ inválida**</dt> </dl>         | A cadeia de caracteres não é terminada em nulo. Esse erro é gerado pela chamada **IRTC:: Configure** .<br/>                                                                                                                                                                                       |
 | <dl> <dt>**NMERR \_ \_ gatilho ilegal**</dt> </dl>              | A parte do gatilho do BLOB de entrada está corrompida. Esse erro é gerado pela chamada **IRTC:: Configure** .<br/>                                                                                                                                                                        |
@@ -106,7 +106,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 
 ## <a name="remarks"></a>Comentários
 
-Quando o método **Connect** é chamado, o NPP chama automaticamente o método **IRTC:: Configure** usando o blob fornecido pelo *hInputBlob*. Observe que todos os códigos de erro retornados pela chamada para **IRTC:: Configure** são passados de volta e retornados pela chamada **IRTC:: Connect** .
+quando o método **Conexão** é chamado, o NPP chama automaticamente o método **IRTC:: Configure** usando o BLOB fornecido pelo *hInputBlob*. observe que todos os códigos de erro retornados pela chamada para **IRTC:: Configure** são passados de volta e retornados pela chamada **IRTC:: Conexão** .
 
 Esse método deve ser chamado antes que você possa iniciar a captura de quadros. Observe que quando você se conecta à rede usando esse método, você deve continuar a usar a interface **IRTC** para capturar quadros.
 
@@ -139,7 +139,7 @@ O BLOB de erro retornado em *hErrorBlob* contém informações de erro que o des
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

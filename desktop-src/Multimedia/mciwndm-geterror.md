@@ -3,7 +3,7 @@ title: Mensagem de MCIWNDM_GETERROR (VFW. h)
 description: A \_ mensagem GETerror MCIWNDM recupera o último erro MCI encontrado. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndGetError.
 ms.assetid: f110a9b3-5b05-4bf0-85d1-b49ce7396222
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_GETERROR
+- mensagem de MCIWNDM_GETERROR Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c2977bb079351824b48da21f4ba3cc2dc5afe7e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b748aec6cf686ecf47baf8deae621514e620971f5e1da667f8e4f0aae708ab80
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137717"
 ---
 # <a name="mciwndm_geterror-message"></a>\_Mensagem GETerror MCIWNDM
 

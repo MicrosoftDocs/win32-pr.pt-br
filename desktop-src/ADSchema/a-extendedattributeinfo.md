@@ -1,11 +1,11 @@
 ---
-title: Atributo Extended-Attribute-info
+title: Atributo-Atributo-Info Estendido
 description: Uma propriedade com valores múltiplos que contém cadeias de caracteres que representam informações adicionais para cada atributo.
 ms.assetid: 38f87907-a328-473f-bc9c-f3573bc05af5
 ms.tgt_platform: multiple
 keywords:
-- Atributo do AD de atributos de atributo estendido-info
-- Esquema de AD do atributo extendedAttributeInfo
+- Esquema do AD do atributo Extended-Attribute-Info
+- Esquema do AD do atributo extendedAttributeInfo
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ac2c5e1498716dfbac2a1c539f7c9a5bfb48fb41
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: bef680f92c2a9dba0efa02458648c6ec623ff0835e177c2926b678c6a743d510
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104369963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177306"
 ---
-# <a name="extended-attribute-info-attribute"></a>Atributo Extended-Attribute-info
+# <a name="extended-attribute-info-attribute"></a>Atributo-Atributo-Info Estendido
 
 Uma propriedade com valores múltiplos que contém cadeias de caracteres que representam informações adicionais para cada atributo.
 
@@ -29,14 +29,14 @@ Uma propriedade com valores múltiplos que contém cadeias de caracteres que rep
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Extended-Attribute-info                     |
-| LDAP-Display-Name | extendedAttributeInfo                       |
+| CN                | Extended-Attribute-Info                     |
+| Ldap-Display-Name | extendedAttributeInfo                       |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.909                      |
-| System-ID-GUID    | 9a7ad947-ca53-11d1-bbd0-0080c76670c0        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 9a7ad947-ca53-11d1-bbd0-0080c76670c0        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -44,7 +44,7 @@ Uma propriedade com valores múltiplos que contém cadeias de caracteres que rep
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,16 +58,16 @@ Uma propriedade com valores múltiplos que contém cadeias de caracteres que rep
 |------------------------|---------------------------------------------|
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| É de valor único       | Falso                                       |
+| System-Only            | Verdadeiro                                        |
+| Tem valor único       | Falso                                       |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -79,20 +79,20 @@ Uma propriedade com valores múltiplos que contém cadeias de caracteres que rep
 |------------------------|---------------------------------------------|
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| É de valor único       | Falso                                       |
+| System-Only            | Verdadeiro                                        |
+| Tem valor único       | Falso                                       |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,16 +100,16 @@ Uma propriedade com valores múltiplos que contém cadeias de caracteres que rep
 |------------------------|---------------------------------------------|
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| É de valor único       | Falso                                       |
+| System-Only            | Verdadeiro                                        |
+| Tem valor único       | Falso                                       |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -121,16 +121,16 @@ Uma propriedade com valores múltiplos que contém cadeias de caracteres que rep
 |------------------------|---------------------------------------------|
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| É de valor único       | Falso                                       |
+| System-Only            | Verdadeiro                                        |
+| Tem valor único       | Falso                                       |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -142,16 +142,16 @@ Uma propriedade com valores múltiplos que contém cadeias de caracteres que rep
 |------------------------|---------------------------------------------|
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| É de valor único       | Falso                                       |
+| System-Only            | Verdadeiro                                        |
+| Tem valor único       | Falso                                       |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -163,16 +163,16 @@ Uma propriedade com valores múltiplos que contém cadeias de caracteres que rep
 |------------------------|---------------------------------------------|
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| É de valor único       | Falso                                       |
+| System-Only            | Verdadeiro                                        |
+| Tem valor único       | Falso                                       |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 
@@ -184,16 +184,16 @@ Uma propriedade com valores múltiplos que contém cadeias de caracteres que rep
 |------------------------|---------------------------------------------|
 | ID do link                | \-                                          |
 | MAPI-Id                | \-                                          |
-| System-Only            | True                                        |
-| É de valor único       | Falso                                       |
+| System-Only            | Verdadeiro                                        |
+| Tem valor único       | Falso                                       |
 | É indexado             | Falso                                       |
-| No catálogo global      | Falso                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                |
+| No Catálogo Global      | Falso                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                |
 | Range-Lower            | \-                                          |
 | Range-Upper            | \-                                          |
 | Search-Flags           | 0x00000000                                  |
 | System-Flags           | 0x08000014                                  |
-| Classes usadas em        | [**Subesquema**](c-subschema.md)<br/> |
+| Classes usadas em        | [**SubSchema**](c-subschema.md)<br/> |
 
 
 

@@ -3,7 +3,7 @@ title: MCI_SETTUNER comando (mmsystem. h)
 description: O \_ comando de SETAJUSTE MCI define o canal atual no sintonizador. Os dispositivos VCR reconhecem este comando.
 ms.assetid: d9f4d6b8-ba73-40ec-a2f9-76adab0fd6f4
 keywords:
-- Multimídia do Windows de comando MCI_SETTUNER
+- MCI_SETTUNER comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5774a927e1f41cf5d3bf42d6e93e532e0c2961a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dc0e4d812a89c8b7ca5a8e65b322e19dcb4f7d4e7e2ef8c49745ebb16e22af65
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009745"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138102"
 ---
 # <a name="mci_settuner-command"></a>Comando do MCI \_ SETajuster
 

@@ -18,7 +18,7 @@ ms.locfileid: "118321666"
 O rastreamento winsock é um recurso de solução de problemas que pode ser habilitado em binários de varejo para rastrear determinados Windows eventos de soquete com sobrecarga mínima. A meta de adicionar o rastreamento de varejo ao Windows Sockets é permitir melhores funcionalidades de diagnóstico para desenvolvedores e suporte a produtos. O rastreamento de eventos de rede Winsock dá suporte a operações de soquete de rastreamento para aplicativos IPv4 e IPv6. O rastreamento de alterações do catálogo Winsock dá suporte a alterações de rastreamento feitas no catálogo winsock por LSPs (provedores de serviços em camadas). O rastreamento winsock tem suporte no Windows Vista e posterior.
 
 > [!Note]  
-> Provedores de serviços em camadas foram preterido. Começando com Windows 8 e Windows Server 2012, use [Windows Filtering Platform](../fwp/windows-filtering-platform-start-page.md).
+> Provedores de serviços em camadas foram preterido. Começando com Windows 8 e Windows Server 2012, use [Windows De filtragem.](../fwp/windows-filtering-platform-start-page.md)
 
  
 

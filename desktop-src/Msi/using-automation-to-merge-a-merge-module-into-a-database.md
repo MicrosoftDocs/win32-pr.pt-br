@@ -1,23 +1,23 @@
 ---
-description: Os módulos de mesclagem fornecem um método padrão para fornecer componentes de Windows Installer compartilhados e configurar a lógica para aplicativos.
+description: os módulos de mesclagem fornecem um método padrão para fornecer componentes de Windows Installer compartilhados e configurar a lógica para aplicativos.
 ms.assetid: 63ced106-12e3-4483-8bfe-22c54fe7a204
 title: Usando a automação para mesclar um módulo de mesclagem em um banco de dados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f3e28b8cfc1716cdbb296fd0a1410787ae55bb62
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 513a765670df44396c34537721eb6f75ed98796dd31ddefd5d26387e2a6b5d0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118141325"
 ---
 # <a name="using-automation-to-merge-a-merge-module-into-a-database"></a>Usando a automação para mesclar um módulo de mesclagem em um banco de dados
 
-Os [módulos de mesclagem](merge-modules.md) fornecem um método padrão para fornecer [*componentes*](c-gly.md)de Windows Installer compartilhados e configurar a lógica para aplicativos.
+os [módulos de mesclagem](merge-modules.md) fornecem um método padrão para fornecer [*componentes*](c-gly.md)de Windows Installer compartilhados e configurar a lógica para aplicativos.
 
 Os módulos de mesclagem devem ser mesclados em um pacote de instalação usando uma ferramenta de mesclagem. A prática recomendada é obter uma ferramenta de mesclagem distribuída livremente ou comprar uma das ferramentas de mesclagem que estão disponíveis de fornecedores de software independentes, por exemplo, você pode usar [Mergemod.dll](merge-module-automation.md).
 
-O procedimento a seguir mostra como mesclar um módulo de mesclagem em um banco de dados Windows Installer usando a [automação do módulo de mesclagem](merge-module-automation.md).
+o procedimento a seguir mostra como mesclar um módulo de mesclagem em um banco de dados Windows Installer usando a [automação do módulo de mesclagem](merge-module-automation.md).
 
 **Para mesclar um módulo em um banco de dados**
 
@@ -25,7 +25,7 @@ O procedimento a seguir mostra como mesclar um módulo de mesclagem em um banco 
 
     Essa etapa será necessária somente se você precisar criar um arquivo de log ou acrescentar um arquivo de log existente para o processo de mesclagem.
 
-2.  Abra o banco de dados de instalação [. msi](windows-installer-file-extensions.md) usando o método [**OpenDatabase**](merge-opendatabase.md) do [**objeto Merge**](merge-object.md).
+2.  Abra o banco de dados de instalação do [.msi](windows-installer-file-extensions.md) usando o método [**OpenDatabase**](merge-opendatabase.md) do [**objeto Merge**](merge-object.md).
 
     Essa etapa é necessária.
 
@@ -41,7 +41,7 @@ O procedimento a seguir mostra como mesclar um módulo de mesclagem em um banco 
 
     Essa etapa é necessária.
 
-    O método [**Merge**](merge-object.md) ou o método [**MergeEx**](merge-mergeex.md) só pode ser chamado uma vez para mesclar uma combinação específica de arquivos [. msi](windows-installer-file-extensions.md) e. msm.
+    O método [**Merge**](merge-object.md) ou o método [**MergeEx**](merge-mergeex.md) só pode ser chamado uma vez para mesclar uma combinação específica de [.msi](windows-installer-file-extensions.md) e arquivos. msm.
 
     > [!Note]  
     > O método [**MergeEx**](merge-mergeex.md) só está disponível no [Mergemod.dll versão 2,0](merge-module-automation.md) ou posterior, e somente ao usar a interface [**IMsmMerge2**](/windows/desktop/api/Mergemod/nn-mergemod-imsmmerge2) .
@@ -54,20 +54,20 @@ O procedimento a seguir mostra como mesclar um módulo de mesclagem em um banco 
 
     A recuperação não é destrutiva e várias instâncias da coleção de erros podem ser recuperadas com a leitura repetida da propriedade [**Errors**](merge-errors.md) .
 
-6.  Associe os componentes do módulo de mesclagem aos recursos usando o método [**Connect**](merge-connect.md) .
+6.  associe os componentes do módulo de mesclagem aos recursos usando o método [**Conexão**](merge-connect.md) .
 
     Esta etapa só será necessária se você tiver recursos existentes e quiser adicionar recursos para mesclar no banco de dados de instalação.
 
     Um recurso deve existir antes de você chamar esse método. Para obter mais informações, consulte [conectando um módulo de mesclagem a vários recursos](connecting-a-merge-module-to-multiple-features.md).
 
 7.  Se necessário, extraia os arquivos de origem do módulo seguindo um ou mais destes procedimentos:
-    -   Use [**ExtractFiles**](merge-extractfiles.md) ou [**ExtractFilesEx**](merge-extractfilesex.md) para extrair arquivos de um arquivo. cab inserido e, em seguida, copiar para um diretório especificado.
+    -   Use [**ExtractFiles**](merge-extractfiles.md) ou [**ExtractFilesEx**](merge-extractfilesex.md) para extrair arquivos de um arquivo de .cab inserido e, em seguida, copiar para um diretório especificado.
         > [!Note]  
         > O [**ExtractFilesEx**](merge-extractfilesex.md) requer [Mergemod.dll versão 2,0](merge-module-automation.md) ou posterior.
 
          
 
-    -   Use [**ExtractCAB**](merge-extractcab.md) para extrair arquivos de um arquivo. cab inserido e, em seguida, salvar em um arquivo especificado.
+    -   Use [**ExtractCAB**](merge-extractcab.md) para extrair arquivos de um arquivo de .cab inserido e, em seguida, salve em um arquivo especificado.
     -   Use [**CreateSourceImage**](merge-createsourceimage.md) para extrair arquivos de um módulo e, em seguida, após a mesclagem, copie para uma imagem de origem no disco.
         > [!Note]  
         > [**CreateSourceImage**](merge-createsourceimage.md) só está disponível no [Mergemod.dll versão 2,0](merge-module-automation.md) ou posterior.

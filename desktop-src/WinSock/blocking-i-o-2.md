@@ -1,5 +1,5 @@
 ---
-description: A forma mais simples de E/S no Windows Sockets 2 está bloqueando a E/S.
+description: a forma mais simples de e/s no Windows sockets 2 é o bloqueio de e/s.
 ms.assetid: 8ed7e5a8-c577-4b61-9c49-8fd065d84af4
 title: Bloqueando entrada/saída
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "118322610"
 ---
 # <a name="blocking-inputoutput"></a>Bloqueando entrada/saída
 
-A forma mais simples de E/S no Windows Sockets 2 está bloqueando a E/S. Conforme mencionado em [Modos e Sinalizadores de](socket-attribute-flags-and-modes-2.md)Atributo de Soquete, os soquetes são criados no modo de bloqueio por padrão. Qualquer operação de E/S com um soquete de bloqueio não retornará até que a operação tenha sido totalmente concluída. Portanto, qualquer thread só pode executar uma operação de E/S por vez. Por exemplo, se um thread emite uma operação de recebimento e nenhum dado está disponível no momento, o thread será bloqueado até que os dados se torne disponíveis e seja colocado no buffer do thread. Embora isso seja simples, não é necessariamente a maneira mais eficiente de fazer E/S (consulte [Pseudo Blocking e True Blocking](pseudo-vs--true-blocking-2.md) para obter mais informações).
+a forma mais simples de e/s no Windows sockets 2 é o bloqueio de e/s. Conforme mencionado nos [sinalizadores e modos de atributo de soquete](socket-attribute-flags-and-modes-2.md), os soquetes são criados no modo de bloqueio por padrão. Qualquer operação de e/s com um soquete de bloqueio não retornará até que a operação seja totalmente concluída. Assim, qualquer thread só pode executar uma operação de e/s por vez. Por exemplo, se um thread emitir uma operação de recebimento e nenhum dado estiver disponível no momento, o thread será bloqueado até que os dados se tornem disponíveis e sejam colocados no buffer do thread. Embora isso seja simples, não é necessariamente a maneira mais eficiente de executar e/s (Confira [pseudo-bloqueio e bloqueio real](pseudo-vs--true-blocking-2.md) para obter mais informações).
 
  
 

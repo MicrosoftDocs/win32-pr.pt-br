@@ -4,12 +4,12 @@ ms.assetid: ebb6192b-f34e-4218-a1e8-308708ae5935
 title: PROV_RSA_SIG
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9bf20127aed19ede744cce27d5a0d5da2fa3b7a2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8e662e85054ed65809081f2f8ea14b8be788b94447bf086f641616303c9e7b91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105788104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117976262"
 ---
 # <a name="prov_rsa_sig"></a>PROV \_ RSA \_ SIG
 
@@ -23,7 +23,7 @@ Para obter descrições de cada um desses algoritmos, consulte o Glossário.
 
 | Finalidade      | Algoritmos compatíveis                                                                                                              |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Troca de chaves | Nenhum                                                                                                                              |
+| Exchange de chave | Nenhum                                                                                                                              |
 | Assinatura    | [*RSA*](../secgloss/r-gly.md)                                                                       |
 | Criptografia   | Nenhum                                                                                                                              |
 | Hash      | [](../secgloss/m-gly.md)[*Sha* MD5](../secgloss/s-gly.md)<br/> |

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bc8ed4b5fe5a97d60b764341f21f25628c3c3434
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1e22deffb8f144e8f7176bd78fb18978228a26251be5591df61a322e5da17d3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085894"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134558"
 ---
 # <a name="inapclientmanagementregisterenforcementclient-method"></a>Método INapClientManagement:: RegisterEnforcementClient
 
@@ -54,7 +54,7 @@ Um ponteiro para uma estrutura de dados [**NapComponentRegistrationInfo**](/wind
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um código de status HRESULT, incluindo, mas não se limitando a um dos itens a seguir.
 
@@ -77,9 +77,9 @@ O método retorna um código de status HRESULT, incluindo, mas não se limitando
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                               |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                         |
-| parâmetro<br/>                   | <dl> <dt>NapManagement. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                               |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                         |
+| Cabeçalho<br/>                   | <dl> <dt>NapManagement. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapManagement. idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qagent.dll</dt> </dl>        |
 

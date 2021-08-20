@@ -3,7 +3,7 @@ title: Mensagens de e/s de arquivo multimídia
 description: Mensagens de e/s de arquivo multimídia
 ms.assetid: 05c7cd42-6e48-45a5-9e6d-9470ab3d432e
 keywords:
-- Multimídia do Windows, mensagens de e/s de arquivo
+- Windows multimídia, mensagens de e/s de arquivo
 - multimídia, mensagens de e/s de arquivo
 - entrada de multimídia, mensagens de e/s de arquivo
 - mensagens de e/s de arquivo multimídia
@@ -15,12 +15,12 @@ keywords:
 - referência de e/s de arquivo, mensagens
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 006ba55a7ff3282abe18b0f4a363f2a58e9590df
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1aa543d976acf953512d800f2a5b183a7b1e73acd799920b6a72b48531d04161
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136988"
 ---
 # <a name="multimedia-file-io-messages"></a>Mensagens de e/s de arquivo multimídia
 
@@ -41,9 +41,9 @@ As mensagens a seguir são usadas com e/s de arquivo de multimídia.
 [Referência de e/s de arquivo de multimídia](multimedia-file-i-o-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

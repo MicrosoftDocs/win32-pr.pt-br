@@ -3,7 +3,7 @@ title: Macro MCI_MAKE_TMSF (Mciapi. h)
 description: O MCI \_ Make \_ TMSF macro cria um valor de tempo no formato de faixas/minutos/segundos/quadros (TMSF) fornecidos a partir de determinados valores de faixas, minutos, segundos e quadros.
 ms.assetid: ff2d6938-0ff7-46d5-92be-42b4b6f35524
 keywords:
-- Multimídia MCI_MAKE_TMSF macro do Windows
+- macro de MCI_MAKE_TMSF Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f06cd6a400f742b49dc29063e8473465ad7e32dc
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ec038e0eb1e46c46162c9a2139f03881689db5fe1ee5993a8e135e5d92d67984
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105770161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138399"
 ---
 # <a name="mci_make_tmsf-macro"></a>\_Macro Make \_ TMSF do MCI
 
@@ -43,14 +43,14 @@ DWORD MCI_MAKE_TMSF(
 
 <dl> <dt>
 
-*faixas* 
+*controla* 
 </dt> <dd>
 
 Número de faixas.
 
 </dd> <dt>
 
-*alguns* 
+*minutos* 
 </dt> <dd>
 
 Número de minutos.
@@ -71,7 +71,7 @@ Número de quadros.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o tempo no formato TMSF empacotado.
 

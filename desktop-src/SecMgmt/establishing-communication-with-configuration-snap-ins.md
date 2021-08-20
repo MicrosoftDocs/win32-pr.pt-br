@@ -4,12 +4,12 @@ ms.assetid: 68a0e5a7-938f-45b7-90a3-8f35e5e6bbfb
 title: Estabelecendo a comunicação com snap-ins de configuração
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72fe9bcb80687fa50120d20594a81ea40b21c292
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cf186936f0b0ad21dc871a91e78dd0bbead04a0683450992e5e3b7dd7c516abc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117969394"
 ---
 # <a name="establishing-communication-with-configuration-snap-ins"></a>Estabelecendo a comunicação com snap-ins de configuração
 

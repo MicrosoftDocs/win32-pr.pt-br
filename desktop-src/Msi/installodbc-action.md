@@ -4,16 +4,16 @@ ms.assetid: fbcf1fdc-5aef-4431-93fe-3ed02748b5ff
 title: Ação InstallODBC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5ac9becd2a528646805f4201cfb415a6bc61bd8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a371aed67ec412c46946d7df7fd4775f0a0d4e20d91cbb60d69f894371f203ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105812918"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118142149"
 ---
 # <a name="installodbc-action"></a>Ação InstallODBC
 
-A ação InstallODBC instala os drivers, os tradutores e as fontes de dados na tabela [ODBCDriver](odbcdriver-table.md), na tabela [ODBCTranslator](odbctranslator-table.md)e na [tabela ODBCDataSource](odbcdatasource-table.md). Se um driver ou tradutor já existir, a ação InstallODBC fará as chamadas SQL necessárias para a instalação.
+A ação InstallODBC instala os drivers, os tradutores e as fontes de dados na tabela [ODBCDriver](odbcdriver-table.md), na tabela [ODBCTranslator](odbctranslator-table.md)e na [tabela ODBCDataSource](odbcdatasource-table.md). se um driver ou tradutor já existir, a ação InstallODBC fará SQL chamadas necessárias para a instalação.
 
 ## <a name="sequence-restrictions"></a>Restrições de sequência
 
@@ -80,7 +80,7 @@ Para renomear o componente, defina uma propriedade chamada ODBCDriverManager com
 
 <dl> <dt>
 
-[Exemplos de Windows Installer](windows-installer-examples.md)
+[Windows Exemplos de instalador](windows-installer-examples.md)
 </dt> </dl>
 
  

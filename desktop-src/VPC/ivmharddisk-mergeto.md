@@ -1,11 +1,11 @@
 ---
-title: Método Mergeto IVMHardDisk (VPCCOMInterfaces. h)
+title: Método IVMHardDisk MergeTo (VPCCOMInterfaces.h)
 description: Mescla um disco rígido virtual diferencial com todos os seus pais.
 ms.assetid: 3c63f892-7c05-4ed6-a59a-914a921ec391
 keywords:
-- PC virtual do método Mergeto
-- Método Mergeto Virtual PC, interface IVMHardDisk
-- IVMHardDisk interface virtual PC, método Mergeto
+- Pc Virtual do método MergeTo
+- Pc Virtual do método MergeTo, interface IVMHardDisk
+- INTERFACE IVMHardDisk pc virtual , método MergeTo
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 13d0db44388c8ee021fa8cc8c8fdbfe2c434833f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 19f54c3e7cfcd328adcea355e90ff60d92590fb694915a3e682a6240b656e655
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085651"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118123706"
 ---
-# <a name="ivmharddiskmergeto-method"></a>Método IVMHardDisk:: Mergeto
+# <a name="ivmharddiskmergeto-method"></a>Método IVMHardDisk::MergeTo
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Mescla um disco rígido virtual diferencial com todos os seus pais (até e incluindo o disco rígido virtual pai raiz) em um novo arquivo de disco rígido.
 
@@ -46,50 +46,50 @@ HRESULT MergeTo(
 
 <dl> <dt>
 
-*newDiskImagePath* \[ no\]
+*newDiskImagePath* \[ Em\]
 </dt> <dd>
 
 O caminho para a nova imagem de disco de destino em que as imagens de disco selecionadas serão mescladas.
 
 </dd> <dt>
 
-*newDiskImageType* \[ no\]
+*newDiskImageType* \[ Em\]
 </dt> <dd>
 
-O tipo de imagem do novo disco de destino. Os tipos de imagem permitidos para a nova imagem de disco de destino são **vmDiskType \_ Dynamic** e **vmDiskType \_ FixedSize**. Para obter mais informações, consulte [**VMHardDiskType**](vmharddisktype.md).
+O tipo de nova imagem de disco de destino. Os tipos de imagem permitidos para a nova imagem de disco de destino **são vmDiskType \_ Dynamic** **e vmDiskType \_ FixedSize**. Para obter mais informações, [**consulte VMHardDiskType**](vmharddisktype.md).
 
 </dd> <dt>
 
 *mergeTask* \[ out, retval\]
 </dt> <dd>
 
-Um objeto [**IVMTask**](ivmtask.md) que é usado para acompanhar a conclusão do processo de mesclagem.
+Um [**objeto IVMTask**](ivmtask.md) usado para acompanhar a conclusão do processo de mesclamento.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
 
 
-| Código/valor de retorno                                                                                                                                                                              | Descrição                                                                                                                                                                                                                                                                                                   |
+| Valor/código de retorno                                                                                                                                                                              | Descrição                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> <dt>0</dt> </dl>                                                    | A operação foi bem-sucedida.<br/>                                                                                                                                                                                                                                                                      |
-| <dl> <dt>**E \_**</dt> <dt>0X80004003</dt> de ponteiro </dl>                                      | Um parâmetro é **nulo**.<br/>                                                                                                                                                                                                                                                                           |
-| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>                                   | O parâmetro *newDiskImagePath* está vazio.<br/>                                                                                                                                                                                                                                                         |
-| <dl> <dt>**HRESULT \_ Do \_ Win32 (arquivo de erro \_ \_ não \_ encontrado)**</dt> <dt>0x80070002</dt> </dl>   | O sistema não pode localizar o arquivo especificado pelo parâmetro *newDiskImagePath* .<br/>                                                                                                                                                                                                                     |
-| <dl> <dt>**HRESULT \_ Do \_ Win32 (caminho de erro \_ \_ não \_ encontrado)**</dt> <dt>0x80070003</dt> </dl>   | O sistema não pode localizar o caminho especificado pelo parâmetro *newDiskImagePath* .<br/>                                                                                                                                                                                                                     |
-| <dl> <dt>**HRESULT \_ DO \_ Win32 ( \_ \_ nome inválido do erro)**</dt> <dt>0x8007007b</dt> </dl>      | O parâmetro *newDiskImagePath* contém um caractere inválido (um dos seguintes: " \* ? <>/ \| ": ").<br/>                                                                                                                                                                                         |
-| <dl> <dt>**HRESULT \_ Do \_ Win32 ( \_ nome de \_ caminho inadequado de erro)**</dt> <dt>0x800700a1</dt> </dl>      | O parâmetro *newDiskImagePath* especifica um caminho relativo ou vazio. Um caminho absoluto é necessário.<br/>                                                                                                                                                                                                |
-| <dl> <dt>**HRESULT \_ Do \_ Win32 (estouro de buffer de erro \_ \_ )**</dt> <dt>0x8007006f</dt> </dl>   | O caminho especificado pelo parâmetro *newDiskImagePath* é muito longo. O caminho deve ter menos de 260 caracteres.<br/>                                                                                                                                                                                     |
-| <dl> <dt>**HRESULT \_ Do \_ Win32 (violação de erro de \_ compartilhamento \_ )**</dt> <dt>0x80070020</dt> </dl> | O disco rígido virtual referenciado por este objeto está em uso ou o pai deste disco rígido virtual está em uso.<br/>                                                                                                                                                                                |
-| <dl> <dt>**VM \_ E \_ \_ tipo de \_ imagem \_ HD incorreto**</dt> <dt>0xA004067B</dt> </dl>                   | Esse erro é causado porque a imagem do disco rígido virtual referenciada por este objeto [**IVMHardDisk**](ivmharddisk.md) não é uma imagem de disco diferencial ou porque o parâmetro *newDiskImageType* não é um dos valores aceitos, **vmDiskType \_ Dynamic** ou **vmDiskType \_ FixedSize**.<br/> |
-| <dl> <dt>**HRESULT \_ DO \_ Win32 (o erro \_ já \_ existe)**</dt> <dt>0x800700b7</dt> </dl>    | O arquivo referenciado pelo parâmetro *newDiskImagePath* já existe.<br/>                                                                                                                                                                                                                            |
-| <dl> <dt>**HRESULT \_ DO \_ Win32 (disco de erro \_ \_ cheio)**</dt> <dt>0x80070070</dt> </dl>         | O volume do host não tem espaço suficiente para mesclar este disco rígido virtual.<br/>                                                                                                                                                                                                                        |
-| <dl> <dt>**VM \_ E \_ \_ caminho pai \_ não \_ encontrado**</dt> <dt>0xA0040677</dt> </dl>                 | O pai do disco rígido virtual referenciado por este objeto não existe.<br/>                                                                                                                                                                                                                      |
-| <dl> <dt>**VM \_ \_Aplicativo E \_ desligamento \_**</dt> do <dt>0xA0040209</dt> </dl>                      | A imagem do disco rígido virtual não pode ser mesclada porque o aplicativo está sendo desligado.<br/>                                                                                                                                                                                                             |
-| <dl> <dt>**DISP \_ E \_**</dt> <dt>0x80020009</dt> de exceção </dl>                              | Ocorreu um erro inesperado.<br/>                                                                                                                                                                                                                                                                  |
+| <dl> <dt>**E \_ PONTEIRO**</dt> <dt>0x80004003</dt> </dl>                                      | Um parâmetro é **NULL.**<br/>                                                                                                                                                                                                                                                                           |
+| <dl> <dt>**E \_ INVALIDARG**</dt> <dt>0x80000003</dt> </dl>                                   | O *novo parâmetroDiskImagePath* está vazio.<br/>                                                                                                                                                                                                                                                         |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ FILE NOT \_ \_ FOUND)**</dt> <dt>0X80070002</dt> </dl>   | O sistema não pode encontrar o arquivo especificado pelo *novo parâmetroDiskImagePath.*<br/>                                                                                                                                                                                                                     |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ PATH NOT \_ \_ FOUND)**</dt> <dt>0X80070003</dt> </dl>   | O sistema não pode encontrar o caminho especificado pelo *parâmetro newDiskImagePath.*<br/>                                                                                                                                                                                                                     |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ INVALID \_ NAME)**</dt> <dt>0X8007007B</dt> </dl>      | O *novo parâmetroDiskImagePath* contém um caractere inválido (um dos seguintes: " \* ?<>/ \| ":").<br/>                                                                                                                                                                                         |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ \_ BAD PATHNAME)**</dt> <dt>0x800700a1</dt> </dl>      | O *parâmetro newDiskImagePath* especifica um caminho vazio ou relativo. Um caminho absoluto é necessário.<br/>                                                                                                                                                                                                |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ BUFFER \_ OVERFLOW)**</dt> <dt>0X8007006F</dt> </dl>   | O caminho especificado pelo novo *parâmetroDiskImagePath* é muito longo. O caminho deve ter menos de 260 caracteres.<br/>                                                                                                                                                                                     |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ SHARING \_ VIOLATION)**</dt> <dt>0X80070020</dt> </dl> | O disco rígido virtual referenciado por esse objeto está em uso ou o pai desse disco rígido virtual está em uso.<br/>                                                                                                                                                                                |
+| <dl> <dt>**VM \_ E \_ TIPO DE IMAGEM HD ERRADO \_ \_ \_ 0XA004067B**</dt> <dt></dt> </dl>                   | Esse erro é causado porque a imagem de disco rígido virtual referenciada por este objeto [**IVMHardDisk**](ivmharddisk.md) não é uma imagem de disco diferencial ou porque o parâmetro *newDiskImageType* não é um dos valores aceitos, **vmDiskType \_ Dynamic** ou **vmDiskType \_ FixedSize**.<br/> |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ \_ ALREADY EXISTS)**</dt> <dt>0X800700B7</dt> </dl>    | O arquivo referenciado pelo *novo parâmetroDiskImagePath* já existe.<br/>                                                                                                                                                                                                                            |
+| <dl> <dt>**HRESULT \_ FROM \_ WIN32(ERROR \_ DISK \_ FULL)**</dt> <dt>0X80070070</dt> </dl>         | O volume do host não tem espaço suficiente para mesclar esse disco rígido virtual.<br/>                                                                                                                                                                                                                        |
+| <dl> <dt>**VM \_ E \_ CAMINHO PAI NÃO ENCONTRADO \_ \_ \_ 0XA0040677**</dt> <dt></dt> </dl>                 | O pai do disco rígido virtual referenciado por esse objeto não existe.<br/>                                                                                                                                                                                                                      |
+| <dl> <dt>**VM \_ E \_ O APLICATIVO ESTÁ \_ \_ DESLIGANDO**</dt> <dt>0XA0040209</dt> </dl>                      | A imagem do disco rígido virtual não pode ser mesclada porque o aplicativo está sendo desligado.<br/>                                                                                                                                                                                                             |
+| <dl> <dt>**DISP \_ E \_ EXCEPTION**</dt> <dt>0x80020009</dt> </dl>                              | Ocorreu um erro inesperado.<br/>                                                                                                                                                                                                                                                                  |
 
 
 
@@ -101,12 +101,12 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMHardDisk é definido como ffa14ae6-48f5-42a4-8a22-186f2e5c7db0<br/>                |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMHardDisk é definido como \_ ffa14ae6-48f5-42a4-8a22-186f2e5c7db0<br/>                |
 
 
 

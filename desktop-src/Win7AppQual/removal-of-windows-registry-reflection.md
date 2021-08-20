@@ -1,22 +1,22 @@
 ---
-description: Remoção da reflexão do registro do Windows
+description: remoção da reflexão de Windows do registro
 ms.assetid: 4b42d44d-cde8-4d96-96c5-24b7ab7e4cec
-title: Remoção da reflexão do registro do Windows
+title: remoção da reflexão de Windows do registro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eeab0109cbbac988c89d6add91fa899cea9169ad
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4a9fcd31686754f9bf2d92994bec4a53b39edaf5d94b34f464e1dfdbf1179c0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108116254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118328975"
 ---
-# <a name="removal-of-windows-registry-reflection"></a>Remoção da reflexão do registro do Windows
+# <a name="removal-of-windows-registry-reflection"></a>remoção da reflexão de Windows do registro
 
 ## <a name="platform"></a>Plataforma
 
-**Clientes** -Windows 7  
-**Servidores** -Windows Server 2008 R2  
+**clientes** -Windows 7  
+**servidores** -Windows Server 2008 R2  
 
 
 
@@ -37,9 +37,9 @@ ms.locfileid: "108116254"
 
 ## <a name="description"></a>Descrição
 
-O processo de reflexão do registro copia chaves e valores do registro entre duas exibições do registro para mantê-las em sincronia. Nas instalações anteriores de 64 bits do Windows, o processo refletiu um subconjunto das chaves do registro redirecionadas entre as exibições de 32 bits e 64 bits. No entanto, a implementação disso causou algumas inconsistências no estado do registro. (Para obter detalhes sobre a reflexão do registro, consulte o artigo correspondente do MSDN na seção *links para outros recursos* abaixo.)
+O processo de reflexão do registro copia chaves e valores do registro entre duas exibições do registro para mantê-las em sincronia. nas instalações anteriores de 64 bits do Windows, o processo refletiu um subconjunto das chaves do registro redirecionadas entre as exibições de 32 bits e 64 bits. No entanto, a implementação disso causou algumas inconsistências no estado do registro. (Para obter detalhes sobre a reflexão do registro, consulte o artigo correspondente do MSDN na seção *links para outros recursos* abaixo.)
 
-A partir do Windows 7, removemos completamente a reflexão do registro e mesclamos as chaves que costumava ser refletidas:
+a partir do Windows 7, removemos completamente a reflexão do registro e mesclamos as chaves que costumava ser refletidas:
 
 -   HKEY \_ local \_ Machine \\ software \\ classes
 -   HKEY \_ local \_ Machine \\ software \\ Microsoft \\ com3
@@ -66,7 +66,7 @@ Eles são usados para manter os dados que não devem ser compartilhados entre ap
 
 As chaves CLSID e de interface da lista acima não são mais refletidas enquanto ainda são redirecionadas. Embora esse seja o comportamento desejado na maioria dos casos, é possível que os aplicativos possam assumir uma dependência do comportamento refletido no vista.
 
-As funções que permitem que os aplicativos controlem a reflexão (RegDisableReflectionKey e RegEnableReflectionKey) são não Ops no Windows 7.
+as funções que permitem que os aplicativos controlem a reflexão (RegDisableReflectionKey e RegEnableReflectionKey) são não ops no Windows 7.
 
 ## <a name="mitigation-of-impact"></a>Mitigação do impacto
 

@@ -3,24 +3,24 @@ title: Usando a estrutura WAVEFORMATEX
 description: Usando a estrutura WAVEFORMATEX
 ms.assetid: 9b668e1e-cb5f-4065-802b-23974925eacf
 keywords:
-- áudio de onda, estrutura WAVEFORMATEX
+- áudio waveform, estrutura WAVEFORMATEX
 - áudio auxiliar, estrutura WAVEFORMATEX
 - Estrutura WAVEFORMATEX
 - Dados de áudio do PCM
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1534cf660c2f2423dc526c3d29f8eca06878fc0c
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 4a3831d9760580f294573a4bc1bec3aef1d42cf345b2d714a897b22940a89a0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104454007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118136050"
 ---
 # <a name="using-the-waveformatex-structure"></a>Usando a estrutura WAVEFORMATEX
 
-Para dados de áudio PCM em não mais do que dois canais e com exemplos de 8 ou 16 bits, use a estrutura [**WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) para especificar o formato de dados.
+Para dados de áudio PCM em não mais de dois canais e com exemplos de 8 ou 16 bits, use a estrutura [**WAVEFORMATEX**](/windows/win32/api/mmeapi/ns-mmeapi-waveformatex) para especificar o formato de dados.
 
-O exemplo a seguir mostra como configurar uma estrutura **WAVEFORMATEX** para 11, 25 kilohertz (kHz) de 8 bits mono e para o estéreo de 44,1 kHz de 16 bits. Depois de configurar o **WAVEFORMATEX**, o exemplo chama a função IsFormatSupported para verificar se o dispositivo de saída do PCM Wave dá suporte ao formato. O código-fonte para IsFormatSupported é mostrado em um exemplo na [determinação do suporte a formato não padrão](determining-nonstandard-format-support.md).
+O exemplo a seguir mostra como configurar uma estrutura **WAVEFORMATEX** para 11,025 quilohertz (kHz) mono de 8 bits e para estéreo de 44,1 kHz de 16 bits. Depois de configurar **WAVEFORMATEX**, o exemplo chama a função IsFormatSupported para verificar se o dispositivo de saída de forma de onda PCM dá suporte ao formato . O código-fonte para IsFormatSupported é mostrado em um exemplo em Determinando o [suporte ao formato não padrão.](determining-nonstandard-format-support.md)
 
 
 ```C++
@@ -83,6 +83,6 @@ else
 
 
 
- 
+ 
 
- 
+ 

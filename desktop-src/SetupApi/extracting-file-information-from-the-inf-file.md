@@ -4,12 +4,12 @@ ms.assetid: 3ef2768b-8c73-4258-937c-77a40963ffe4
 title: Extraindo informações de arquivo do arquivo INF
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: be4b404f44ca7d1d92fe0ce8eab08b73012ff144
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8265391ad26edebe8f8f93b4012801d4c87bfd4e82c2cd03b66bba3d7784fcad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827329"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117965699"
 ---
 # <a name="extracting-file-information-from-the-inf-file"></a>Extraindo informações de arquivo do arquivo INF
 

@@ -1,27 +1,27 @@
 ---
-description: Esta seção contém mensagens que pertencem ao controle InkEdit.
+description: Esta seção contém Mensagens que pertencem ao Controle InkEdit.
 ms.assetid: eb1f912a-8aae-4774-b699-ca3f448760c6
 title: Mensagens InkEdit
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e91ce703928648ae1ac1f3d5d53c69bc806ea9b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbb9688ad85f258d8f0bb36852de9d1274f3a27b965b18b31b8af89818837ff2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118042263"
 ---
 # <a name="inkedit-messages"></a>Mensagens InkEdit
 
-Esta seção contém mensagens que pertencem ao controle InkEdit.
+Esta seção contém Mensagens que pertencem ao Controle InkEdit.
 
 
 
-| Mensagem de notificação de eventos                                   | Descrição                                                                                            |
+| Mensagem de notificação de evento                                   | Descrição                                                                                            |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [IECN \_ traço](inkedit-messages--win32-only-.md)            | Essa mensagem é enviada por meio de uma \_ mensagem de notificação do WM quando um traço é concluído (somente Win32).<br/>  |
-| [gesto de IECN \_](inkedit-messages--win32-only-.md)           | Essa mensagem é enviada por meio de uma \_ mensagem de notificação do WM quando um gesto é concluído (somente Win32).<br/> |
-| [IECN \_ RECOGNITIONRESULT](inkedit-messages--win32-only-.md) | Essa mensagem é enviada por meio de uma \_ mensagem de notificação do WM quando ocorre reconhecimento (somente Win32).<br/>     |
+| [TRAÇO \_ IECN](inkedit-messages--win32-only-.md)            | Essa mensagem é enviada por meio de uma mensagem WM \_ NOTIFY quando um traço é concluído (somente Win32).<br/>  |
+| [GESTO \_ IECN](inkedit-messages--win32-only-.md)           | Essa mensagem é enviada por meio de uma mensagem WM \_ NOTIFY quando um gesto é concluído (somente Win32).<br/> |
+| [RECONHECIMENTO DE \_ IECNRESULT](inkedit-messages--win32-only-.md) | Essa mensagem é enviada por meio de uma mensagem WM \_ NOTIFY quando ocorre o reconhecimento (somente Win32).<br/>     |
 
 
 

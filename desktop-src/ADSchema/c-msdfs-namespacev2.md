@@ -1,11 +1,11 @@
 ---
-title: classe MS-DFS-namespace-v2
+title: Classe ms-DFS-Namespace-v2
 description: Namespace do DFS.
 ms.assetid: 1b5a8067-1aa9-4aaf-a0d4-9d55c772560c
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD da classe MS-DFS-namespace-v2
-- Esquema de AD da classe msDFS-Namespacev2
+- Esquema do AD da classe ms-DFS-Namespace-v2
+- Esquema do AD da classe msDFS-Namespacev2
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4226a642a3e13713d6540adbabe11fa045a3f7b3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 384406f72db8c0ae0d951c24f633ce939d382a84d9631e5bb8bdc0db4564900b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176128"
 ---
-# <a name="ms-dfs-namespace-v2-class"></a>classe MS-DFS-namespace-v2
+# <a name="ms-dfs-namespace-v2-class"></a>Classe ms-DFS-Namespace-v2
 
 Namespace do DFS.
 
@@ -29,11 +29,11 @@ Namespace do DFS.
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DFS-namespace-v2                  |
-| LDAP-Display-Name | msDFS-Namespacev2                    |
+| CN                | ms-DFS-Namespace-v2                  |
+| Ldap-Display-Name | msDFS-Namespacev2                    |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
-| Schema-ID-GUID    | 21cb8628-f3c3-4bbf-bff6-060b2d8f299a |
+| Schema-Id-Guid    | 21cb8628-f3c3-4bbf-bff6-060b2d8f299a |
 
 
 
@@ -53,110 +53,110 @@ Namespace do DFS.
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
-| Categoria de objeto-padrão     | \-                                                                                           |
+| Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.258                                                                       |
-| Padrão-ocultando valor        | 1                                                                                            |
-| RDN-ATT-ID                  | [**Nome comum**](a-cn.md)<br/>                                                       |
+| Valor ocultado padrão        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclasse de                 | [**Início**](c-top.md)<br/>                                                              |
-| Superiores possíveis          | [**MS-DFS-namespace-Anchor**](c-msdfs-namespaceanchor.md)                                   |
+| Possíveis superiores          | [**ms-DFS-Namespace-Anchor**](c-msdfs-namespaceanchor.md)                                   |
 | Classes Auxiliares           | \-                                                                                           |
-| NT-Security-Descriptor      | O:BAG: INADEQUADO: S:                                                                                 |
-| Descritor de segurança padrão | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; AU |
+| Descritor de segurança NT      | O:BAG:BAD:S:                                                                                 |
+| Descritor de segurança padrão | D:(A;; RPWPCRCCDCLCLORCWOWDSDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2008-attributes"></a>Atributos do Windows Server 2008
+## <a name="windows-server-2008-attributes"></a>Windows Atributos do Server 2008
 
-Essa classe contém os seguintes atributos para o Windows Server 2008:
+Essa classe contém os seguintes atributos para Windows Server 2008:
 
 
 
 | Atributo                                                                      | Obrigatório | Derivado de                    |
 |--------------------------------------------------------------------------------|-----------|---------------------------------|
 | [**Descrição do administrador**](a-admindescription.md)                                | Falso     | [**Início**](c-top.md)<br/> |
-| [**Administração – nome de exibição**](a-admindisplayname.md)                               | Falso     | [**Início**](c-top.md)<br/> |
+| [**Admin-Display-Name**](a-admindisplayname.md)                               | Falso     | [**Início**](c-top.md)<br/> |
 | [**Atributos permitidos**](a-allowedattributes.md)                              | Falso     | [**Início**](c-top.md)<br/> |
-| [**Permitido-atributos-efetivos**](a-allowedattributeseffective.md)           | Falso     | [**Início**](c-top.md)<br/> |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)           | Falso     | [**Início**](c-top.md)<br/> |
 | [**Classes filho permitidas**](a-allowedchildclasses.md)                         | Falso     | [**Início**](c-top.md)<br/> |
-| [**Permitido-filho-classes-efetivas**](a-allowedchildclasseseffective.md)      | Falso     | [**Início**](c-top.md)<br/> |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)      | Falso     | [**Início**](c-top.md)<br/> |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                  | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**Nome comum**](a-cn.md)                                                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**Criação-carimbo de data/hora**](a-createtimestamp.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
+| [**Common-Name**](a-cn.md)                                                    | Falso     | [**Início**](c-top.md)<br/> |
+| [**Criar carimbo de data/hora**](a-createtimestamp.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                           | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
-| [**Nome de exibição-imprimível**](a-displaynameprintable.md)                       | Falso     | [**Início**](c-top.md)<br/> |
-| [**DSA-assinatura**](a-dsasignature.md)                                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**DS-Core-propagação-data**](a-dscorepropagationdata.md)                    | Falso     | [**Início**](c-top.md)<br/> |
+| [**Nome de exibição imprimível**](a-displaynameprintable.md)                       | Falso     | [**Início**](c-top.md)<br/> |
+| [**Assinatura DSA**](a-dsasignature.md)                                        | Falso     | [**Início**](c-top.md)<br/> |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                    | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome da extensão**](a-extensionname.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**Flags**](a-flags.md)                                                       | Falso     | [**Início**](c-top.md)<br/> |
-| [**De entrada**](a-fromentry.md)                                              | Falso     | [**Início**](c-top.md)<br/> |
-| [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)                  | Falso     | [**Início**](c-top.md)<br/> |
-| [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**FSMO-função-proprietário**](a-fsmoroleowner.md)                                     | Falso     | [**Início**](c-top.md)<br/> |
-| [**Tipo de instância**](a-instancetype.md)                                        | True      | [**Início**](c-top.md)<br/> |
-| [**É-crítico-System-Object**](a-iscriticalsystemobject.md)                  | Falso     | [**Início**](c-top.md)<br/> |
-| [**É excluído**](a-isdeleted.md)                                              | Falso     | [**Início**](c-top.md)<br/> |
-| [**Is-member-of-DL**](a-memberof.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
-| [**É com proprietário de privilégio**](a-isprivilegeholder.md)                             | Falso     | [**Início**](c-top.md)<br/> |
-| [**Último-pai conhecido**](a-lastknownparent.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
+| [**Sinalizadores**](a-flags.md)                                                       | Falso     | [**Início**](c-top.md)<br/> |
+| [**Entrada de entrada**](a-fromentry.md)                                              | Falso     | [**Início**](c-top.md)<br/> |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)                  | Falso     | [**Início**](c-top.md)<br/> |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                      | Falso     | [**Início**](c-top.md)<br/> |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                     | Falso     | [**Início**](c-top.md)<br/> |
+| [**Tipo de instância**](a-instancetype.md)                                        | Verdadeiro      | [**Início**](c-top.md)<br/> |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                  | Falso     | [**Início**](c-top.md)<br/> |
+| [**Is-Deleted**](a-isdeleted.md)                                              | Falso     | [**Início**](c-top.md)<br/> |
+| [**Is-Member-of-DL**](a-memberof.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
+| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                             | Falso     | [**Início**](c-top.md)<br/> |
+| [**Último pai conhecido**](a-lastknownparent.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
 | [**Objetos gerenciados**](a-managedobjects.md)                                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**Mestre por**](a-masteredby.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
-| [**Modificar-carimbo de data/hora**](a-modifytimestamp.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
-| [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**MS-COM-userlink**](a-mscom-userlink.md)                                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**MS-DFS-comment-v2**](a-msdfs-commentv2.md)                                 | Falso     | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-Generation-GUID-v2**](a-msdfs-generationguidv2.md)                  | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-Last-Modified-v2**](a-msdfs-lastmodifiedv2.md)                      | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-namespace-Identity-GUID-v2**](a-msdfs-namespaceidentityguidv2.md)   | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-Properties-v2**](a-msdfs-propertiesv2.md)                           | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)            | Falso     | [**Início**](c-top.md)<br/> |
-| [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                | Falso     | [**Início**](c-top.md)<br/> |
-| [**MS-DFS-Schema-principal-Version**](a-msdfs-schemamajorversion.md)              | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-Schema – minor-version**](a-msdfs-schemaminorversion.md)              | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-Target-List-v2**](a-msdfs-targetlistv2.md)                          | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-TTL-v2**](a-msdfs-ttlv2.md)                                         | True      | **MS-DFS-namespace-v2**         |
-| [**ms-DS-aprox-immed-subordinados**](a-msds-approx-immed-subordinates.md)    | Falso     | [**Início**](c-top.md)<br/> |
+| [**Mastered-By**](a-masteredby.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
+| [**Modificar carimbo de data/hora**](a-modifytimestamp.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                    | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-COM-UserLink**](a-mscom-userlink.md)                                    | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DFS-Comment-v2**](a-msdfs-commentv2.md)                                 | Falso     | **ms-DFS-Namespace-v2**         |
+| [**ms-DFS-Generation-GUID-v2**](a-msdfs-generationguidv2.md)                  | Verdadeiro      | **ms-DFS-Namespace-v2**         |
+| [**ms-DFS-Last-Modified-v2**](a-msdfs-lastmodifiedv2.md)                      | True      | **ms-DFS-Namespace-v2**         |
+| [**ms-DFS-Namespace-Identity-GUID-v2**](a-msdfs-namespaceidentityguidv2.md)   | True      | **ms-DFS-Namespace-v2**         |
+| [**ms-DFS-Properties-v2**](a-msdfs-propertiesv2.md)                           | True      | **ms-DFS-Namespace-v2**         |
+| [**ms-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)            | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DFS-Schema-Major-Version**](a-msdfs-schemamajorversion.md)              | Verdadeiro      | **ms-DFS-Namespace-v2**         |
+| [**ms-DFS-Schema-Minor-Version**](a-msdfs-schemaminorversion.md)              | True      | **ms-DFS-Namespace-v2**         |
+| [**ms-DFS-Target-List-v2**](a-msdfs-targetlistv2.md)                          | True      | **ms-DFS-Namespace-v2**         |
+| [**ms-DFS-Ttl-v2**](a-msdfs-ttlv2.md)                                         | True      | **ms-DFS-Namespace-v2**         |
+| [**ms-DS-Approx-Immed-Subordinates**](a-msds-approx-immed-subordinates.md)    | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md) | Falso     | [**Início**](c-top.md)<br/> |
-| [**MS-DS-Consistency-filho-Count**](a-ms-ds-consistencychildcount.md)         | Falso     | [**Início**](c-top.md)<br/> |
+| [**MS-DS-Consistency-Child-Count**](a-ms-ds-consistencychildcount.md)         | Falso     | [**Início**](c-top.md)<br/> |
 | [**MS-DS-Consistency-Guid**](a-ms-ds-consistencyguid.md)                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-is-domain-for**](a-msds-isdomainfor.md)                              | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-is-full-Replica-for**](a-msds-isfullreplicafor.md)                   | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-is-partial-Replica-for**](a-msds-ispartialreplicafor.md)             | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-KrbTgt-link-BL**](a-msds-krbtgtlinkbl.md)                            | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-Masterd-by**](a-msds-masteredby.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-Members-for-AZ-role-BL**](a-msds-membersforazrolebl.md)              | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-NC-repl-cursores**](a-msds-ncreplcursors.md)                          | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-NC-repl-Neighbors-Bounds**](a-msds-ncreplinboundneighbors.md)       | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-NC-repl-Bound-Neighbors**](a-msds-ncreploutboundneighbors.md)     | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Is-Domain-For**](a-msds-isdomainfor.md)                              | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Is-Full-Replica-for**](a-msds-isfullreplicafor.md)                   | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Is-Partial-Replica-for**](a-msds-ispartialreplicafor.md)             | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-KrbTgt-Link-BL**](a-msds-krbtgtlinkbl.md)                            | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Mastered-By**](a-msds-masteredby.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Members-For-Az-Role-BL**](a-msds-membersforazrolebl.md)              | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Cursors**](a-msds-ncreplcursors.md)                          | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Inbound-Neighbors**](a-msds-ncreplinboundneighbors.md)       | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-NC-Repl-Outbound-Neighbors**](a-msds-ncreploutboundneighbors.md)     | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-NC-RO-Replica-Locations-BL**](a-msds-nc-ro-replica-locations-bl.md)  | Falso     | [**Início**](c-top.md)<br/> |
 | [**Tipo ms-DS-NC**](a-msds-nctype.md)                                         | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-non-members-BL**](a-msds-nonmembersbl.md)                            | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Non-Members-BL**](a-msds-nonmembersbl.md)                            | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-Object-Reference-BL**](a-msds-objectreferencebl.md)                  | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-role-BL**](a-msds-operationsforazrolebl.md)        | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-Operations-for-AZ-Task-BL**](a-msds-operationsforaztaskbl.md)        | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-principal-Name**](a-msds-principalname.md)                           | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-PSO-aplicado**](a-msds-psoapplied.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-repl-Attribute-meta-data**](a-msds-replattributemetadata.md)         | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-repl-Value-meta-data**](a-msds-replvaluemetadata.md)                 | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-revelados-DSAs**](a-msds-revealeddsas.md)                             | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-revelado-List-BL**](a-msds-revealedlistbl.md)                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-role-BL**](a-msds-tasksforazrolebl.md)                  | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                  | Falso     | [**Início**](c-top.md)<br/> |
-| [**Ms-Exch-Owner-BL**](a-ownerbl.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
-| [**msSFU-30-POSIX-membro de**](a-mssfu30posixmemberof.md)                     | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Role-BL**](a-msds-operationsforazrolebl.md)        | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Operations-For-Az-Task-BL**](a-msds-operationsforaztaskbl.md)        | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Principal-Name**](a-msds-principalname.md)                           | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-PSO-Applied**](a-msds-psoapplied.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Repl-Attribute-Meta-Data**](a-msds-replattributemetadata.md)         | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Repl-Value-Meta-Data**](a-msds-replvaluemetadata.md)                 | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Revealed-DSAs**](a-msds-revealeddsas.md)                             | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Revealed-List-BL**](a-msds-revealedlistbl.md)                        | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Role-BL**](a-msds-tasksforazrolebl.md)                  | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-Tasks-For-Az-Task-BL**](a-msds-tasksforaztaskbl.md)                  | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-Exch-Owner-BL**](a-ownerbl.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
+| [**msSFU-30-Posix-Member-Of**](a-mssfu30posixmemberof.md)                     | Falso     | [**Início**](c-top.md)<br/> |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
-| [**Não Security-Member-BL**](a-nonsecuritymemberbl.md)                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                       | True      | [**Início**](c-top.md)<br/> |
-| [**Obj-dist-Name**](a-distinguishedname.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
-| [**Objeto-categoria**](a-objectcategory.md)                                    | True      | [**Início**](c-top.md)<br/> |
+| [**Non-Security-Member-BL**](a-nonsecuritymemberbl.md)                        | Falso     | [**Início**](c-top.md)<br/> |
+| [**Descritor de segurança NT**](a-ntsecuritydescriptor.md)                       | Verdadeiro      | [**Início**](c-top.md)<br/> |
+| [**Obj-Dist-Name**](a-distinguishedname.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
+| [**Categoria de objeto**](a-objectcategory.md)                                    | True      | [**Início**](c-top.md)<br/> |
 | [**Classe de objeto**](a-objectclass.md)                                          | True      | [**Início**](c-top.md)<br/> |
-| [**GUID do objeto**](a-objectguid.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
+| [**Guid de objeto**](a-objectguid.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
 | [**Versão do objeto**](a-objectversion.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**Outros objetos bem conhecidos**](a-otherwellknownobjects.md)                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**Parcial-atributo-exclusão-lista**](a-partialattributedeletionlist.md)      | Falso     | [**Início**](c-top.md)<br/> |
-| [**Conjunto de atributos parciais**](a-partialattributeset.md)                         | Falso     | [**Início**](c-top.md)<br/> |
+| [**Outros objetos conhecidos**](a-otherwellknownobjects.md)                    | Falso     | [**Início**](c-top.md)<br/> |
+| [**Partial-Attribute-Deletion-List**](a-partialattributedeletionlist.md)      | Falso     | [**Início**](c-top.md)<br/> |
+| [**Conjunto de atributos parcial**](a-partialattributeset.md)                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Possíveis-inferiores**](a-possibleinferiors.md)                              | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome-do-objeto-proxy**](a-proxiedobjectname.md)                             | Falso     | [**Início**](c-top.md)<br/> |
 | [**Endereços de proxy**](a-proxyaddresses.md)                                    | Falso     | [**Início**](c-top.md)<br/> |
@@ -201,53 +201,53 @@ Essa classe contém os seguintes atributos para o Windows Server 2008:
 |-----------------------------|----------------------------------------------------------------------------------------------|
 | System-Only                 | Falso                                                                                        |
 | Object-Category             | 1                                                                                            |
-| Categoria de objeto-padrão     | \-                                                                                           |
+| Default-Object-Category     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.258                                                                       |
-| Padrão-ocultando valor        | 1                                                                                            |
-| RDN-ATT-ID                  | [**Nome comum**](a-cn.md)<br/>                                                       |
+| Valor ocultado padrão        | 1                                                                                            |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclasse de                 | [**Início**](c-top.md)<br/>                                                              |
-| Superiores possíveis          | [**MS-DFS-namespace-Anchor**](c-msdfs-namespaceanchor.md)                                   |
+| Possíveis superiores          | [**ms-DFS-Namespace-Anchor**](c-msdfs-namespaceanchor.md)                                   |
 | Classes Auxiliares           | \-                                                                                           |
-| NT-Security-Descriptor      | O:BAG: INADEQUADO: S:                                                                                 |
-| Descritor de segurança padrão | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; AU |
+| Descritor de segurança NT      | O:BAG:BAD:S:                                                                                 |
+| Descritor de segurança padrão | D:(A;; RPWPCRCCDCLCLORCWOWDSDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2008-r2-attributes"></a>Atributos do Windows Server 2008 R2
+## <a name="windows-server-2008-r2-attributes"></a>Windows Atributos do Server 2008 R2
 
-Essa classe contém os seguintes atributos para o Windows Server 2008 R2:
+Essa classe contém os seguintes atributos para Windows Server 2008 R2:
 
 
 
 | Atributo                                                                        | Obrigatório | Derivado de                    |
 |----------------------------------------------------------------------------------|-----------|---------------------------------|
 | [**Descrição do administrador**](a-admindescription.md)                                  | Falso     | [**Início**](c-top.md)<br/> |
-| [**Administração – nome de exibição**](a-admindisplayname.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
+| [**Admin-Display-Name**](a-admindisplayname.md)                                 | Falso     | [**Início**](c-top.md)<br/> |
 | [**Atributos permitidos**](a-allowedattributes.md)                                | Falso     | [**Início**](c-top.md)<br/> |
-| [**Permitido-atributos-efetivos**](a-allowedattributeseffective.md)             | Falso     | [**Início**](c-top.md)<br/> |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)             | Falso     | [**Início**](c-top.md)<br/> |
 | [**Classes filho permitidas**](a-allowedchildclasses.md)                           | Falso     | [**Início**](c-top.md)<br/> |
-| [**Permitido-filho-classes-efetivas**](a-allowedchildclasseseffective.md)        | Falso     | [**Início**](c-top.md)<br/> |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)        | Falso     | [**Início**](c-top.md)<br/> |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                    | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**Nome comum**](a-cn.md)                                                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**Criação-carimbo de data/hora**](a-createtimestamp.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
+| [**Common-Name**](a-cn.md)                                                      | Falso     | [**Início**](c-top.md)<br/> |
+| [**Criar carimbo de data/hora**](a-createtimestamp.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                             | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
-| [**Nome de exibição-imprimível**](a-displaynameprintable.md)                         | Falso     | [**Início**](c-top.md)<br/> |
-| [**DSA-assinatura**](a-dsasignature.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
-| [**DS-Core-propagação-data**](a-dscorepropagationdata.md)                      | Falso     | [**Início**](c-top.md)<br/> |
+| [**Nome de exibição imprimível**](a-displaynameprintable.md)                         | Falso     | [**Início**](c-top.md)<br/> |
+| [**Assinatura DSA**](a-dsasignature.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                      | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome da extensão**](a-extensionname.md)                                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**Flags**](a-flags.md)                                                         | Falso     | [**Início**](c-top.md)<br/> |
-| [**De entrada**](a-fromentry.md)                                                | Falso     | [**Início**](c-top.md)<br/> |
-| [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**FSMO-função-proprietário**](a-fsmoroleowner.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
-| [**Tipo de instância**](a-instancetype.md)                                          | True      | [**Início**](c-top.md)<br/> |
-| [**É-crítico-System-Object**](a-iscriticalsystemobject.md)                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**É excluído**](a-isdeleted.md)                                                | Falso     | [**Início**](c-top.md)<br/> |
-| [**Is-member-of-DL**](a-memberof.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
-| [**É com proprietário de privilégio**](a-isprivilegeholder.md)                               | Falso     | [**Início**](c-top.md)<br/> |
+| [**Sinalizadores**](a-flags.md)                                                         | Falso     | [**Início**](c-top.md)<br/> |
+| [**Entrada de entrada**](a-fromentry.md)                                                | Falso     | [**Início**](c-top.md)<br/> |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)                    | Falso     | [**Início**](c-top.md)<br/> |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                        | Falso     | [**Início**](c-top.md)<br/> |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
+| [**Tipo de instância**](a-instancetype.md)                                          | Verdadeiro      | [**Início**](c-top.md)<br/> |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                    | Falso     | [**Início**](c-top.md)<br/> |
+| [**Is-Deleted**](a-isdeleted.md)                                                | Falso     | [**Início**](c-top.md)<br/> |
+| [**Is-Member-of-DL**](a-memberof.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
+| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                               | Falso     | [**Início**](c-top.md)<br/> |
 | [**É reciclado**](a-isrecycled.md)                                              | Falso     | [**Início**](c-top.md)<br/> |
 | [**Último-pai conhecido**](a-lastknownparent.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
 | [**Objetos gerenciados**](a-managedobjects.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
@@ -256,16 +256,16 @@ Essa classe contém os seguintes atributos para o Windows Server 2008 R2:
 | [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                      | Falso     | [**Início**](c-top.md)<br/> |
 | [**MS-COM-userlink**](a-mscom-userlink.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
 | [**MS-DFS-comment-v2**](a-msdfs-commentv2.md)                                   | Falso     | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-Generation-GUID-v2**](a-msdfs-generationguidv2.md)                    | True      | **MS-DFS-namespace-v2**         |
+| [**MS-DFS-Generation-GUID-v2**](a-msdfs-generationguidv2.md)                    | Verdadeiro      | **MS-DFS-namespace-v2**         |
 | [**MS-DFS-Last-Modified-v2**](a-msdfs-lastmodifiedv2.md)                        | True      | **MS-DFS-namespace-v2**         |
 | [**MS-DFS-namespace-Identity-GUID-v2**](a-msdfs-namespaceidentityguidv2.md)     | True      | **MS-DFS-namespace-v2**         |
 | [**MS-DFS-Properties-v2**](a-msdfs-propertiesv2.md)                             | True      | **MS-DFS-namespace-v2**         |
 | [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)              | Falso     | [**Início**](c-top.md)<br/> |
 | [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                  | Falso     | [**Início**](c-top.md)<br/> |
-| [**MS-DFS-Schema-principal-Version**](a-msdfs-schemamajorversion.md)                | True      | **MS-DFS-namespace-v2**         |
+| [**MS-DFS-Schema-principal-Version**](a-msdfs-schemamajorversion.md)                | Verdadeiro      | **MS-DFS-namespace-v2**         |
 | [**MS-DFS-Schema – minor-version**](a-msdfs-schemaminorversion.md)                | True      | **MS-DFS-namespace-v2**         |
 | [**MS-DFS-Target-List-v2**](a-msdfs-targetlistv2.md)                            | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-TTL-v2**](a-msdfs-ttlv2.md)                                           | True      | **MS-DFS-namespace-v2**         |
+| [**MS-DFS-TTL-v2**](a-msdfs-ttlv2.md)                                           | Verdadeiro      | **MS-DFS-namespace-v2**         |
 | [**ms-DS-aprox-immed-subordinados**](a-msds-approx-immed-subordinates.md)      | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md)   | Falso     | [**Início**](c-top.md)<br/> |
 | [**MS-DS-Consistency-filho-Count**](a-ms-ds-consistencychildcount.md)           | Falso     | [**Início**](c-top.md)<br/> |
@@ -359,68 +359,68 @@ Essa classe contém os seguintes atributos para o Windows Server 2008 R2:
 | Categoria de objeto-padrão     | \-                                                                                           |
 | Governs-Id                  | 1.2.840.113556.1.5.258                                                                       |
 | Padrão-ocultando valor        | 1                                                                                            |
-| RDN-ATT-ID                  | [**Nome comum**](a-cn.md)<br/>                                                       |
+| Rdn-Att-Id                  | [**Common-Name**](a-cn.md)<br/>                                                       |
 | Subclasse de                 | [**Início**](c-top.md)<br/>                                                              |
-| Superiores possíveis          | [**MS-DFS-namespace-Anchor**](c-msdfs-namespaceanchor.md)                                   |
+| Possíveis superiores          | [**ms-DFS-Namespace-Anchor**](c-msdfs-namespaceanchor.md)                                   |
 | Classes Auxiliares           | \-                                                                                           |
-| NT-Security-Descriptor      | O:BAG: INADEQUADO: S:                                                                                 |
-| Descritor de segurança padrão | D: (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;;D A) (A;; RPWPCRCCDCLCLORCWOWDSDDTSW;;; SY) (A;; RPLCLORC;;; AU |
+| Descritor de segurança NT      | O:BAG:BAD:S:                                                                                 |
+| Descritor de segurança padrão | D:(A;; RPWPCRCCDCLCLORCWOWDSDTSW;;;D A)(A;; RPWPCRCCDCLCLORCWOWDSDTSW;;; SY)(A;; RPLCLORC;;; AU) |
 | System-Flags                | 0x00000010                                                                                   |
 
 
 
-## <a name="windows-server-2012-attributes"></a>Atributos do Windows Server 2012
+## <a name="windows-server-2012-attributes"></a>Windows Server 2012 Atributos
 
-Essa classe contém os seguintes atributos para o Windows Server 2012:
+Essa classe contém os seguintes atributos para Windows Server 2012:
 
 
 
 | Atributo                                                                                    | Obrigatório | Derivado de                    |
 |----------------------------------------------------------------------------------------------|-----------|---------------------------------|
 | [**Descrição do administrador**](a-admindescription.md)                                              | Falso     | [**Início**](c-top.md)<br/> |
-| [**Administração – nome de exibição**](a-admindisplayname.md)                                             | Falso     | [**Início**](c-top.md)<br/> |
+| [**Admin-Display-Name**](a-admindisplayname.md)                                             | Falso     | [**Início**](c-top.md)<br/> |
 | [**Atributos permitidos**](a-allowedattributes.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
-| [**Permitido-atributos-efetivos**](a-allowedattributeseffective.md)                         | Falso     | [**Início**](c-top.md)<br/> |
+| [**Allowed-Attributes-Effective**](a-allowedattributeseffective.md)                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Classes filho permitidas**](a-allowedchildclasses.md)                                       | Falso     | [**Início**](c-top.md)<br/> |
-| [**Permitido-filho-classes-efetivas**](a-allowedchildclasseseffective.md)                    | Falso     | [**Início**](c-top.md)<br/> |
+| [**Allowed-Child-Classes-Effective**](a-allowedchildclasseseffective.md)                    | Falso     | [**Início**](c-top.md)<br/> |
 | [**Bridgehead-Server-List-BL**](a-bridgeheadserverlistbl.md)                                | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome canônico**](a-canonicalname.md)                                                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**Nome comum**](a-cn.md)                                                                  | Falso     | [**Início**](c-top.md)<br/> |
-| [**Criação-carimbo de data/hora**](a-createtimestamp.md)                                               | Falso     | [**Início**](c-top.md)<br/> |
+| [**Common-Name**](a-cn.md)                                                                  | Falso     | [**Início**](c-top.md)<br/> |
+| [**Criar carimbo de data/hora**](a-createtimestamp.md)                                               | Falso     | [**Início**](c-top.md)<br/> |
 | [**Descrição**](a-description.md)                                                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome de exibição**](a-displayname.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**Nome de exibição-imprimível**](a-displaynameprintable.md)                                     | Falso     | [**Início**](c-top.md)<br/> |
-| [**DSA-assinatura**](a-dsasignature.md)                                                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**DS-Core-propagação-data**](a-dscorepropagationdata.md)                                  | Falso     | [**Início**](c-top.md)<br/> |
+| [**Nome de exibição imprimível**](a-displaynameprintable.md)                                     | Falso     | [**Início**](c-top.md)<br/> |
+| [**Assinatura DSA**](a-dsasignature.md)                                                      | Falso     | [**Início**](c-top.md)<br/> |
+| [**DS-Core-Propagation-Data**](a-dscorepropagationdata.md)                                  | Falso     | [**Início**](c-top.md)<br/> |
 | [**Nome da extensão**](a-extensionname.md)                                                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**Flags**](a-flags.md)                                                                     | Falso     | [**Início**](c-top.md)<br/> |
-| [**De entrada**](a-fromentry.md)                                                            | Falso     | [**Início**](c-top.md)<br/> |
-| [**FRS-Computer-Reference-BL**](a-frscomputerreferencebl.md)                                | Falso     | [**Início**](c-top.md)<br/> |
-| [**FRS-member-Reference-BL**](a-frsmemberreferencebl.md)                                    | Falso     | [**Início**](c-top.md)<br/> |
-| [**FSMO-função-proprietário**](a-fsmoroleowner.md)                                                   | Falso     | [**Início**](c-top.md)<br/> |
-| [**Tipo de instância**](a-instancetype.md)                                                      | True      | [**Início**](c-top.md)<br/> |
-| [**É-crítico-System-Object**](a-iscriticalsystemobject.md)                                | Falso     | [**Início**](c-top.md)<br/> |
-| [**É excluído**](a-isdeleted.md)                                                            | Falso     | [**Início**](c-top.md)<br/> |
-| [**Is-member-of-DL**](a-memberof.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |
-| [**É com proprietário de privilégio**](a-isprivilegeholder.md)                                           | Falso     | [**Início**](c-top.md)<br/> |
-| [**É reciclado**](a-isrecycled.md)                                                          | Falso     | [**Início**](c-top.md)<br/> |
-| [**Último-pai conhecido**](a-lastknownparent.md)                                               | Falso     | [**Início**](c-top.md)<br/> |
+| [**Sinalizadores**](a-flags.md)                                                                     | Falso     | [**Início**](c-top.md)<br/> |
+| [**Entrada de entrada**](a-fromentry.md)                                                            | Falso     | [**Início**](c-top.md)<br/> |
+| [**Frs-Computer-Reference-BL**](a-frscomputerreferencebl.md)                                | Falso     | [**Início**](c-top.md)<br/> |
+| [**FRS-Member-Reference-BL**](a-frsmemberreferencebl.md)                                    | Falso     | [**Início**](c-top.md)<br/> |
+| [**FSMO-Role-Owner**](a-fsmoroleowner.md)                                                   | Falso     | [**Início**](c-top.md)<br/> |
+| [**Tipo de instância**](a-instancetype.md)                                                      | Verdadeiro      | [**Início**](c-top.md)<br/> |
+| [**Is-Critical-System-Object**](a-iscriticalsystemobject.md)                                | Falso     | [**Início**](c-top.md)<br/> |
+| [**Is-Deleted**](a-isdeleted.md)                                                            | Falso     | [**Início**](c-top.md)<br/> |
+| [**Is-Member-of-DL**](a-memberof.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |
+| [**Is-Privilege-Holder**](a-isprivilegeholder.md)                                           | Falso     | [**Início**](c-top.md)<br/> |
+| [**Is-Recycled**](a-isrecycled.md)                                                          | Falso     | [**Início**](c-top.md)<br/> |
+| [**Último pai conhecido**](a-lastknownparent.md)                                               | Falso     | [**Início**](c-top.md)<br/> |
 | [**Objetos gerenciados**](a-managedobjects.md)                                                  | Falso     | [**Início**](c-top.md)<br/> |
 | [**Mestre por**](a-masteredby.md)                                                          | Falso     | [**Início**](c-top.md)<br/> |
 | [**Modificar-carimbo de data/hora**](a-modifytimestamp.md)                                               | Falso     | [**Início**](c-top.md)<br/> |
 | [**MS-COM-PartitionSetLink**](a-mscom-partitionsetlink.md)                                  | Falso     | [**Início**](c-top.md)<br/> |
 | [**MS-COM-userlink**](a-mscom-userlink.md)                                                  | Falso     | [**Início**](c-top.md)<br/> |
 | [**MS-DFS-comment-v2**](a-msdfs-commentv2.md)                                               | Falso     | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-Generation-GUID-v2**](a-msdfs-generationguidv2.md)                                | True      | **MS-DFS-namespace-v2**         |
+| [**MS-DFS-Generation-GUID-v2**](a-msdfs-generationguidv2.md)                                | Verdadeiro      | **MS-DFS-namespace-v2**         |
 | [**MS-DFS-Last-Modified-v2**](a-msdfs-lastmodifiedv2.md)                                    | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-namespace-Identity-GUID-v2**](a-msdfs-namespaceidentityguidv2.md)                 | True      | **MS-DFS-namespace-v2**         |
+| [**MS-DFS-namespace-Identity-GUID-v2**](a-msdfs-namespaceidentityguidv2.md)                 | Verdadeiro      | **MS-DFS-namespace-v2**         |
 | [**MS-DFS-Properties-v2**](a-msdfs-propertiesv2.md)                                         | True      | **MS-DFS-namespace-v2**         |
 | [**MS-DFSR-ComputerReferenceBL**](a-msdfsr-computerreferencebl.md)                          | Falso     | [**Início**](c-top.md)<br/> |
 | [**MS-DFSR-MemberReferenceBL**](a-msdfsr-memberreferencebl.md)                              | Falso     | [**Início**](c-top.md)<br/> |
-| [**MS-DFS-Schema-principal-Version**](a-msdfs-schemamajorversion.md)                            | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-Schema – minor-version**](a-msdfs-schemaminorversion.md)                            | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-Target-List-v2**](a-msdfs-targetlistv2.md)                                        | True      | **MS-DFS-namespace-v2**         |
-| [**MS-DFS-TTL-v2**](a-msdfs-ttlv2.md)                                                       | True      | **MS-DFS-namespace-v2**         |
+| [**MS-DFS-Schema-principal-Version**](a-msdfs-schemamajorversion.md)                            | Verdadeiro      | **MS-DFS-namespace-v2**         |
+| [**MS-DFS-Schema – minor-version**](a-msdfs-schemaminorversion.md)                            | Verdadeiro      | **MS-DFS-namespace-v2**         |
+| [**MS-DFS-Target-List-v2**](a-msdfs-targetlistv2.md)                                        | Verdadeiro      | **MS-DFS-namespace-v2**         |
+| [**MS-DFS-TTL-v2**](a-msdfs-ttlv2.md)                                                       | Verdadeiro      | **MS-DFS-namespace-v2**         |
 | [**ms-DS-aprox-immed-subordinados**](a-msds-approx-immed-subordinates.md)                  | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-AuthenticatedTo-Accountlist**](a-msds-authenticatedtoaccountlist.md)               | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-Claim-shares-possíveis-Values-with-BL**](a-msds-claimsharespossiblevalueswithbl.md) | Falso     | [**Início**](c-top.md)<br/> |
@@ -457,14 +457,14 @@ Essa classe contém os seguintes atributos para o Windows Server 2012:
 | [**ms-DS-revelado-List-BL**](a-msds-revealedlistbl.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-Tasks-for-AZ-role-BL**](a-msds-tasksforazrolebl.md)                                | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-Tasks-for-AZ-Task-BL**](a-msds-tasksforaztaskbl.md)                                | Falso     | [**Início**](c-top.md)<br/> |
-| [**ms-DS-TDO-egresso-BL**](a-msds-tdoegressbl.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
+| [**ms-DS-TDO-Egress-BL**](a-msds-tdoegressbl.md)                                            | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-TDO-ingress-BL**](a-msds-tdoingressbl.md)                                          | Falso     | [**Início**](c-top.md)<br/> |
 | [**ms-DS-Value-Type-Reference-BL**](a-msds-valuetypereferencebl.md)                         | Falso     | [**Início**](c-top.md)<br/> |
 | [**Ms-Exch-Owner-BL**](a-ownerbl.md)                                                        | Falso     | [**Início**](c-top.md)<br/> |
 | [**msSFU-30-POSIX-membro de**](a-mssfu30posixmemberof.md)                                   | Falso     | [**Início**](c-top.md)<br/> |
 | [**netboot-SCP-BL**](a-netbootscpbl.md)                                                     | Falso     | [**Início**](c-top.md)<br/> |
 | [**Não Security-Member-BL**](a-nonsecuritymemberbl.md)                                      | Falso     | [**Início**](c-top.md)<br/> |
-| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | True      | [**Início**](c-top.md)<br/> |
+| [**NT-Security-Descriptor**](a-ntsecuritydescriptor.md)                                     | Verdadeiro      | [**Início**](c-top.md)<br/> |
 | [**Obj-dist-Name**](a-distinguishedname.md)                                                 | Falso     | [**Início**](c-top.md)<br/> |
 | [**Objeto-categoria**](a-objectcategory.md)                                                  | True      | [**Início**](c-top.md)<br/> |
 | [**Classe de objeto**](a-objectclass.md)                                                        | True      | [**Início**](c-top.md)<br/> |

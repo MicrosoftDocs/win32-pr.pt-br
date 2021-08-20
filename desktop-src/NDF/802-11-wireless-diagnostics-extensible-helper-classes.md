@@ -4,12 +4,12 @@ description: A infraestrutura interna de diagnóstico sem fio tem dois pontos de
 ms.assetid: b54f836d-4fae-4e71-bf7b-af5a6e9e615c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bde49561c68044157c9d518571b8241c49dcf25
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: a3b7ac72cb42b12a96e5c57db0897a13d49d76370126e119ac2f5ed457d55c9f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104498992"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133441"
 ---
 # <a name="80211-wireless-diagnostics-extensible-helper-classes"></a>802,11 classes auxiliares extensíveis de diagnóstico sem fio
 
@@ -22,12 +22,12 @@ A infraestrutura interna de diagnóstico sem fio tem dois pontos de extensão.
 
 
 
- 
+ 
 
 > [!Note]  
 > Uma classe auxiliar de terceiros deve se registrar com ambas as classes auxiliares pai para garantir que a classe de terceiros seja chamada. Para obter mais informações sobre o registro, consulte [registrando extensões de classe auxiliar NDF](registering-ndf-helper-class-extensions.md).
 
- 
+ 
 
 ## <a name="rnwf-extensible-helper-class"></a>Classe auxiliar extensível RNWF
 
@@ -62,7 +62,7 @@ Os dois atributos de chave fornecidos pela classe auxiliar RNWF são o GUID da i
 > [!Note]  
 > **WDIAG \_ A \_ segurança do sinalizador de ID da WLAN do IHV \_ \_ \_ \_ habilitada** é o único valor de **dwFlags** possível.
 
- 
+ 
 
 O atributo correspondente para a classe auxiliar de terceiros deve ser igual à ID de serviço do seu módulo de software correspondente. Esse também é o mesmo nome que a terceira parte deve ser registrada no registro. O diagnóstico sem fio consultará a ID do serviço durante a sessão sem fio em que o problema ocorreu. As informações serão retornadas para NDF, que determinará se a classe auxiliar de terceiros está presente e registrada e, em seguida, a chama.
 
@@ -76,7 +76,7 @@ A tabela a seguir lista os atributos correspondentes para a classe auxiliar exte
 
 
 
- 
+ 
 
 ## <a name="l2security-extensible-helper-class"></a>Classe auxiliar extensível L2Security
 
@@ -111,7 +111,7 @@ Os dois atributos de chave fornecidos pela classe auxiliar de segurança de cama
 > [!Note]  
 > **WDIAG \_ A \_ segurança do sinalizador de ID da WLAN do IHV \_ \_ \_ \_ habilitada** é o único valor de **dwFlags** possível.
 
- 
+ 
 
 O atributo correspondente para a classe auxiliar de terceiros deve ser igual à ID de serviço do seu módulo de software correspondente. Esse também é o mesmo nome que a terceira parte deve ser registrada no registro. O diagnóstico sem fio consultará a ID do serviço durante a sessão sem fio em que o problema ocorreu. As informações serão retornadas para NDF, que determinará se a classe auxiliar de terceiros está presente e registrada e, em seguida, a chama.
 
@@ -125,7 +125,7 @@ A tabela a seguir lista os atributos correspondentes para a classe auxiliar exte
 
 
 
- 
+ 
 
 ## <a name="matching-attributes"></a>Atributos correspondentes
 
@@ -148,7 +148,7 @@ Esse valor deve ser uma cadeia de caracteres com todas as letras maiúsculas. Po
 802,11 classes auxiliares de diagnóstico sem fio atualmente diagnosticam problemas sem fio nas áreas a seguir.
 
 -   Quaisquer problemas de conectividade de 802,11, incluindo a associação de 802,11, a autenticação 802,11, as configurações de segurança 802,11 relacionadas aos padrões do 802,11 & protocolos com suporte nativo no sistema operacional e problemas de desempenho.
--   Problemas de segurança de camada 2 com relação às configurações de 802.1 x e quaisquer problemas relacionados à autenticação de camada 2 usando métodos com suporte nativo no Windows Vista e no Windows Server 2008.
+-   problemas de segurança de camada 2 com relação a configurações 802.1 x e quaisquer problemas relacionados à autenticação de camada 2 usando métodos com suporte nativo no Windows Vista e no Windows Server 2008.
 -   Incompatibilidades de configuração nas configurações de perfil entre o cliente e o ponto de acesso ou a infraestrutura de rede e serviços.
 
 as classes auxiliares de diagnóstico sem fio 802,11 atualmente não diagnosticam problemas sem fio nas áreas a seguir.
@@ -161,9 +161,9 @@ as classes auxiliares de diagnóstico sem fio 802,11 atualmente não diagnostica
 
 Além disso, 802,11 o diagnóstico sem fio não analisa casos [**highutilization dos**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-highutilization) . Os problemas de desempenho sem fio identificados serão analisados e relatados como casos [**LowHealth**](/windows/desktop/api/ndhelper/nf-ndhelper-inetdiaghelper-lowhealth) .
 
- 
+ 
 
- 
+ 
 
 
 

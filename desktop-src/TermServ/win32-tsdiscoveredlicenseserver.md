@@ -21,12 +21,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d633031df533068f2cf5da65f2f6820a93c78513
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8ea5698083f0a639b0cd955126418f5024906d4f140dc22c54aacf1460f24c0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455849"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118126984"
 ---
 # <a name="win32_tsdiscoveredlicenseserver-class"></a>\_Classe Win32 TSDiscoveredLicenseServer
 
@@ -142,7 +142,7 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Indica se a conta que está sendo usada para executar o script ou o arquivo. exe que está usando a classe **Win32 \_ TSDiscoveredLicenseServer** tem acesso de administrador ao servidor de licença.
+Indica se a conta que está sendo usada para executar o script ou .exe arquivo que está usando a classe **Win32 \_ TSDiscoveredLicenseServer** tem acesso de administrador ao servidor de licença.
 
 <dt>
 
@@ -284,7 +284,7 @@ Nome do servidor de licença de Área de Trabalho Remota descoberto.
 
 ## <a name="remarks"></a>Comentários
 
-Para se conectar ao \\ \\ \\ namespace TerminalServices de cimv2 raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação **da \_ \_ privacidade do \_ PCT no \_ nível \_ do autenticação RPC C**. Para chamadas de script e de Visual Basic, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "PktPrivacy", com um valor de 6. O exemplo a seguir Visual Basic Scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
+Para se conectar ao \\ \\ \\ namespace TerminalServices de cimv2 raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação **da \_ \_ privacidade do \_ PCT no \_ nível \_ do autenticação RPC C**. para chamadas de script e de Visual Basic, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de 6. o exemplo a seguir Visual Basic scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
 
 
 ```VB
@@ -295,7 +295,7 @@ Set objServices = GetObject( _
 
 
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
 
 ## <a name="requirements"></a>Requisitos
 

@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab7d3f6b87ba5e483b466e6746f0f63d039cb205
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e343b037e4f77b4c1e342ffa78278854b11d714e09e9e57188d83fc9f93a180
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105758602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134484"
 ---
 # <a name="inapcomponentconfigisuisupported-method"></a>Método INapComponentConfig:: IsUISupported
 
@@ -54,7 +54,7 @@ Um ponteiro para um BOOL que é definido como **true** se o componente dá supor
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos seguintes códigos de erro com base no resultado dessa operação.
 
@@ -81,8 +81,8 @@ A interface do usuário personalizada de um componente deve ser iniciada usando 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
 
 

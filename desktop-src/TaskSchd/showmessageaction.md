@@ -15,16 +15,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ef1e500f0492ad010e88719a467fda38f85e184c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2daec97e66c160cc9da1369e44970f5d9e9ee7c5dcbbcea14cee1e4847a9df0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132356"
 ---
 # <a name="showmessageaction-object"></a>Objeto exmessageaction
 
-\[Não há mais suporte para este objeto. Você pode usar o IExecAction com a função script do Windows [**MsgBox**](/previous-versions/sfw6660x(v=vs.80)) para mostrar uma mensagem na sessão do usuário.\]
+\[Não há mais suporte para este objeto. você pode usar o IExecAction com a função de Windows script [**MsgBox**](/previous-versions/sfw6660x(v=vs.80)) para mostrar uma mensagem na sessão do usuário.\]
 
 Para scripts, representa uma ação que mostra uma caixa de mensagem quando uma tarefa é ativada.
 
@@ -67,8 +67,8 @@ Para obter mais informações e código de exemplo para esse objeto de script, c
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                    |
 | Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                    |
 | Fim do suporte do servidor<br/>    | Windows Server 2008 R2<br/>                                                       |
 | Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |

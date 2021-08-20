@@ -10,12 +10,12 @@ keywords:
 - macro capCaptureSetSetup
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 990868502226a5c76867261d06e0dd538e165f93
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b50eb26170c8b1594d288cec903ef0c05867a24db2d5a89a6ad60f66eef4fd0e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105783263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135584"
 ---
 # <a name="video-capture-settings"></a>Configurações de captura de vídeo
 
@@ -31,9 +31,9 @@ A estrutura [**CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) cont�
 
 Você pode recuperar as configurações de captura atuais na estrutura [**CAPTUREPARMS**](/windows/win32/api/vfw/ns-vfw-captureparms) enviando a mensagem [**de \_ \_ configuração de \_ sequência \_ Get da Cap do WM**](wm-cap-get-sequence-setup.md) (ou a macro [**capCaptureGetSetup**](/windows/desktop/api/Vfw/nf-vfw-capcapturegetsetup) ) para uma janela de captura. Você pode definir uma ou mais configurações de captura atuais atualizando os membros apropriados da estrutura **CAPTUREPARMS** e, em seguida, enviando a mensagem de [**configuração da sequência do WM \_ Cap \_ set \_ Sequence \_**](wm-cap-set-sequence-setup.md) (ou a macro [**capCaptureSetSetup**](/windows/desktop/api/Vfw/nf-vfw-capcapturesetsetup) ) e **CAPTUREPARMS** para uma janela de captura.
 
- 
+ 
 
- 
+ 
 
 
 
