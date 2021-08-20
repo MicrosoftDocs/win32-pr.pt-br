@@ -16,12 +16,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 046de6ad1e09874351b37d58f7277126e39e990a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b662e4f44ad6391eb383d708fc75daf946a66bf567a996cf94cda4dd0a20e3ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089454"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118007668"
 ---
 # <a name="win32_subdirectory-class"></a>\_Classe de subdiretório Win32
 

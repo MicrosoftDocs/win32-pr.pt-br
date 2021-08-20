@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 14d9060aa1bb923e407fc20026a3308981cd20f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee68e506f1a1c885cded32e562a73d683b20f9723ecafa592f0453edaecb30a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011493"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117704644"
 ---
 # <a name="jet_indexlistcolumnidcoltyp-property"></a>Propriedade JET_INDEXLIST. columnidcoltyp
 
@@ -40,7 +40,7 @@ Obtém o columnid da coluna na tabela temporária que armazena o tipo de coluna 
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

@@ -1,6 +1,6 @@
 ---
-title: Métodos IDCompositionRectangleClip SetTopLeftRadiusY (DCOMP. h)
-description: Altera ou anima o valor da propriedade TopLeftRadiusY deste clipe. A propriedade TopLeftRadiusY especifica o raio y da elipse que arredonda o canto superior esquerdo do clipe.
+title: Métodos IDCompositionRectangleClip SetTopLeftRadiusY (Dcomp.h)
+description: Altera ou anima o valor da propriedade TopLeftRadiusY deste clipe. A propriedade TopLeftRadiusY especifica o raio y da elipse que reboca o canto superior esquerdo do clipe.
 ms.assetid: D188BCD0-00F2-406D-BF69-33E8E37C8E6B
 keywords:
 - Métodos SetTopLeftRadiusY DirectComposition
@@ -12,16 +12,16 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 210bc07a8dba2f74584f5b92b92b8dc7effe6d4f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 720cc2b4c0e4f4fc80c7f5d458f24986dccfc7c793181e3ffc43a1f778f1ca68
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761309"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088729"
 ---
-# <a name="idcompositionrectangleclipsettopleftradiusy-methods"></a>Métodos IDCompositionRectangleClip:: SetTopLeftRadiusY
+# <a name="idcompositionrectangleclipsettopleftradiusy-methods"></a>Métodos IDCompositionRectangleClip::SetTopLeftRadiusY
 
-Altera ou anima o valor da propriedade TopLeftRadiusY deste clipe. A propriedade TopLeftRadiusY especifica o raio y da elipse que arredonda o canto superior esquerdo do clipe.
+Altera ou anima o valor da propriedade TopLeftRadiusY deste clipe. A propriedade TopLeftRadiusY especifica o raio y da elipse que reboca o canto superior esquerdo do clipe.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,8 +29,8 @@ Altera ou anima o valor da propriedade TopLeftRadiusY deste clipe. A propriedade
 
 | Método                                                                                                                     | Descrição                                                                |
 |:---------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------|
-| [**SetTopLeftRadiusY (float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-settopleftradiusy(idcompositionanimation))                                     | Altera o valor da propriedade TopLeftRadiusY deste clipe.<br/>  |
-| [**SetTopLeftRadiusY (IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-settopleftradiusy(idcompositionanimation)) | Anima o valor da propriedade TopLeftRadiusY deste clipe.<br/> |
+| [**SetTopLeftRadiusY(float)**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-settopleftradiusy(idcompositionanimation))                                     | Altera o valor da propriedade TopLeftRadiusY deste clipe.<br/>  |
+| [**SetTopLeftRadiusY(IDCompositionAnimation \* )**](/windows/win32/api/dcomp/nf-dcomp-idcompositionrectangleclip-settopleftradiusy(idcompositionanimation)) | Anima o valor da propriedade TopLeftRadiusY deste clipe.<br/> |
 
 
 
@@ -40,10 +40,10 @@ Altera ou anima o valor da propriedade TopLeftRadiusY deste clipe. A propriedade
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>DCOMP. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2012 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>Dcomp.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Dcomp.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
 

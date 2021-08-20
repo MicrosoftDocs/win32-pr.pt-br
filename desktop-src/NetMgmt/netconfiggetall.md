@@ -1,6 +1,6 @@
 ---
 title: NetConfigGetAll
-description: A função NetConfigGetAll está obsoleta. Ele é incluído para compatibilidade com versões de 16 bits do Windows. Outros aplicativos devem usar o registro.
+description: A função NetConfigGetAll está obsoleta. Ele está incluído para compatibilidade com versões de 16 bits do Windows. Outros aplicativos devem usar o Registro.
 ms.assetid: 1819f3d0-5e85-454b-947a-ae5e3db30987
 keywords:
 - NetConfigGetAll
@@ -14,17 +14,17 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: dc7b499f082f8d7234d96ed3325cc9408de4b53e
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: fec4c37257d5d2940223bee2988fcbe196ecfe1bbeae3d5077e00eb6870bcf1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105770147"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117983653"
 ---
 # <a name="netconfiggetall"></a>NetConfigGetAll
 
-A função **NetConfigGetAll** está obsoleta. Ele é incluído para compatibilidade com versões de 16 bits do Windows. Outros aplicativos devem usar o [registro](/windows/desktop/SysInfo/registry).
+A **função NetConfigGetAll** está obsoleta. Ele está incluído para compatibilidade com versões de 16 bits do Windows. Outros aplicativos devem usar [o Registro](/windows/desktop/SysInfo/registry).
 
- 
+ 
 
- 
+ 

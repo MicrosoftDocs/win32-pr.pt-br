@@ -1,17 +1,17 @@
 ---
 description: Define o nível de proteção para um mecanismo de proteção de saída.
 ms.assetid: f4e63bf5-0749-4054-9f86-7fd88f2881ad
-title: OPM_SET_PROTECTION_LEVEL (Opmapi. h)
+title: OPM_SET_PROTECTION_LEVEL (Opmapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17a80fb674c9347dafc3bcf1a62dc4bc909f0471
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 83203f68d0a55af3be2d407aab9831576544910e37f938b6539cb16d40d9b26b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105791357"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118058703"
 ---
-# <a name="opm_set_protection_level"></a>OPM \_ definir \_ nível de proteção \_
+# <a name="opm_set_protection_level"></a>OPM \_ SET \_ PROTECTION \_ LEVEL
 
 Define o nível de proteção para um mecanismo de proteção de saída.
 
@@ -19,8 +19,8 @@ Define o nível de proteção para um mecanismo de proteção de saída.
 
 | Requisito | Valor |
 |--------------|-----------------------------------------------------------------------------------------------------|
-| GUID de comando | OPM \_ definir \_ nível de proteção \_                                                                         |
-| Dados de entrada   | Uma estrutura de [**parâmetros de nível de proteção dos OPMS \_ definidos \_ \_ \_**](/windows/desktop/api/opmapi/ns-opmapi-opm_set_protection_level_parameters) |
+| GUID de comando | OPM \_ SET \_ PROTECTION \_ LEVEL                                                                         |
+| Dados de entrada   | Uma [**estrutura OPM \_ SET PROTECTION \_ LEVEL \_ \_ PARAMETERS**](/windows/desktop/api/opmapi/ns-opmapi-opm_set_protection_level_parameters) |
 
 
 
@@ -36,9 +36,9 @@ Alguns conectores podem dar suporte a vários mecanismos de proteção. Com esse
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Opmapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Opmapi.h</dt> </dl> |
 
 
 
@@ -46,10 +46,10 @@ Alguns conectores podem dar suporte a vários mecanismos de proteção. Com esse
 
 <dl> <dt>
 
-[**IOPMVideoOutput:: Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure)
+[**IOPMVideoOutput::Configure**](/windows/desktop/api/opmapi/nf-opmapi-iopmvideooutput-configure)
 </dt> <dt>
 
-[Comandos OPM](opm-commands.md)
+[Comandos do OPM](opm-commands.md)
 </dt> </dl>
 
  

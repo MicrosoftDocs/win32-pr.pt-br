@@ -3,7 +3,7 @@ title: VIDEO. toolTip
 description: O atributo toolTip especifica ou recupera o texto da dica de ferramenta para a janela de vídeo.
 ms.assetid: 84e382b4-01b2-4be7-9768-7773a3f1300f
 keywords:
-- VIDEO. toolTip Windows Media Player
+- Windows Media Player de VIDEO. toolTip
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b73fcb6bee42b36d38bb651ef7e46dd3081ae7a5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c7e2b2a6b05956fbe276ba6c35939af6efc229e236ddc66e10722b874d7aa0bc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105772954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117931689"
 ---
 # <a name="videotooltip"></a>VIDEO. toolTip
 

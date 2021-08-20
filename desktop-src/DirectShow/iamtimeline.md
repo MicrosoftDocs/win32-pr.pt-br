@@ -1,5 +1,5 @@
 ---
-description: A interface IAMTimeline fornece métodos para manipular a linha do tempo, o objeto central no Microsoft DirectShow Editing Services (DES).
+description: a interface IAMTimeline fornece métodos para manipular a linha do tempo, o objeto central no Microsoft DirectShow Editing Services (DES).
 ms.assetid: 6750efa0-946c-4ad3-b0df-de55872b94c3
 title: Interface IAMTimeline (QEdit. h)
 ms.topic: reference
@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: fc4374a198232625b87448004b667ccd8ce0183b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9065b99fd3f11ab642f06159968c7a9d492c24316bfab4f4baf28fc04952eda7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117999421"
 ---
 # <a name="iamtimeline-interface"></a>Interface IAMTimeline
 
@@ -28,7 +28,7 @@ ms.locfileid: "105758685"
 
  
 
-A `IAMTimeline` interface fornece métodos para manipular a linha do tempo, o objeto central no [Microsoft DirectShow Editing Services](directshow-editing-services.md) (des). Uma linha do tempo é uma coleção de elementos ordenados por tempo, como clipes de vídeo, clipes de áudio, efeitos e transições entre clipes. O mecanismo de renderização usa a linha do tempo para criar um gráfico de filtro, a partir do qual o aplicativo pode gerar a saída renderizada.
+a `IAMTimeline` interface fornece métodos para manipular a linha do tempo, o objeto central no [Microsoft DirectShow Editing Services](directshow-editing-services.md) (DES). Uma linha do tempo é uma coleção de elementos ordenados por tempo, como clipes de vídeo, clipes de áudio, efeitos e transições entre clipes. O mecanismo de renderização usa a linha do tempo para criar um gráfico de filtro, a partir do qual o aplicativo pode gerar a saída renderizada.
 
 `IAMTimeline` executa três serviços básicos. Ele
 
@@ -64,14 +64,14 @@ A interface **IAMTimeline** tem esses métodos.
 | [**GetDefaultFPS**](iamtimeline-getdefaultfps.md)                 | Recupera a taxa de quadros de saída padrão, em quadros por segundo.<br/>                                                         |
 | [**GetDefaultTransition**](iamtimeline-getdefaulttransition.md)   | Recupera a transição padrão.<br/>                                                                                      |
 | [**GetDefaultTransitionB**](iamtimeline-getdefaulttransitionb.md) | Recupera a transição padrão como um valor de **BSTR** .<br/>                                                                  |
-| [**GetDirtyRange**](iamtimeline-getdirtyrange.md)                 | Não há suporte.<br/>                                                                                                         |
+| [**GetDirtyRange**](iamtimeline-getdirtyrange.md)                 | Sem suporte.<br/>                                                                                                         |
 | [**GetDuration**](iamtimeline-getduration.md)                     | Recupera a duração da linha do tempo.<br/>                                                                                       |
 | [**GetDuration2**](iamtimeline-getduration2.md)                   | Recupera a duração da linha do tempo como um **duplo**.<br/>                                                                       |
 | [**Getgroup**](iamtimeline-getgroup.md)                           | Recupera um grupo especificado.<br/>                                                                                           |
 | [**GetGroupCount**](iamtimeline-getgroupcount.md)                 | Recupera o número de grupos contidos na linha do tempo.<br/>                                                     |
-| [**Getinsertmode**](iamtimeline-getinsertmode.md)                 | Não há suporte.<br/>                                                                                                         |
-| [**IsDirty**](iamtimeline-isdirty.md)                             | Não há suporte.<br/>                                                                                                         |
-| [**RemGroupFromList**](iamtimeline-remgroupfromlist.md)           | Não há suporte.<br/>                                                                                                         |
+| [**Getinsertmode**](iamtimeline-getinsertmode.md)                 | Sem suporte.<br/>                                                                                                         |
+| [**IsDirty**](iamtimeline-isdirty.md)                             | Sem suporte.<br/>                                                                                                         |
+| [**RemGroupFromList**](iamtimeline-remgroupfromlist.md)           | Sem suporte.<br/>                                                                                                         |
 | [**SetDefaultEffect**](iamtimeline-setdefaulteffect.md)           | Define o efeito padrão.<br/>                                                                                               |
 | [**SetDefaultEffectB**](iamtimeline-setdefaulteffectb.md)         | Define o efeito padrão como um valor **BSTR** .<br/>                                                                           |
 | [**SetDefaultFPS**](iamtimeline-setdefaultfps.md)                 | Define a taxa de quadros de saída padrão, em quadros por segundo.<br/>                                                              |
@@ -94,7 +94,7 @@ A interface **IAMTimeline** tem esses métodos.
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

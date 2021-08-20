@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5540e969f4de28ed213d06ba7cd27d027f33e13
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: b60550a6e7325883927aba5ca63908106f4742b5c6b17ff61305288ae237d02f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104162302"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117848455"
 ---
 # <a name="drm_licensestate_playback"></a>\_Reprodução de licensestate DRM \_
 
@@ -42,6 +42,6 @@ Esta é uma propriedade somente leitura que é recuperada usando [**IWMDRMReader
 [**Propriedades de DRM**](drm-properties.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

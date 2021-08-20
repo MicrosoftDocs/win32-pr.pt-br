@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_INDEXLIST. columnidcolumnid'
-title: Propriedade JET_INDEXLIST. columnidcolumnid
+description: 'Saiba mais sobre: JET_INDEXLIST.columnidcolumnid'
+title: JET_INDEXLIST propriedade .columnidcolumnid
 TOCTitle: 'columnidcolumnid property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_INDEXLIST.columnidcolumnid
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_indexlist.columnidcolumnid(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 53d31fa7e981fce92de8c0c89c77d69acd8fa996
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a1290cec2c959bb59d3eaa9603b4b48de3e27ab139756be7168c45dbae4a1ede
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105747658"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118074894"
 ---
-# <a name="jet_indexlistcolumnidcolumnid-property"></a>Propriedade JET_INDEXLIST. columnidcolumnid
+# <a name="jet_indexlistcolumnidcolumnid-property"></a>JET_INDEXLIST propriedade .columnidcolumnid
 
-Obtém o columnid da coluna na tabela temporária que armazena o columnid da coluna que está sendo indexada. A coluna é do tipo [Long](./jet-coltyp-enumeration.md).
+Obtém a columnid da coluna na tabela temporária que armazena a columnid da coluna que está sendo indexada. A coluna é do tipo [Long.](./jet-coltyp-enumeration.md)
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public JET_COLUMNID columnidcolumnid { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_INDEXLIST](./jet-indexlist-class.md)
+[JET_INDEXLIST classe](./jet-indexlist-class.md)
 
-[Membros do JET_INDEXLIST](./jet-indexlist-members.md)
+[JET_INDEXLIST membros](./jet-indexlist-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

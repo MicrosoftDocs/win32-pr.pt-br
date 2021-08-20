@@ -4,12 +4,12 @@ ms.assetid: bb7db7c9-c39f-4bf4-9412-42525c4f2ea3
 title: Evento MERendererEvent (Mfobjects. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c52e15bfbe97743e8af10a79cf3ef1d94626a877
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d9fc70505033b9d88cd9593d2efa9f3c591f69f5e25bd968b06686c4c6ac911d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165043"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118061851"
 ---
 # <a name="merendererevent-event"></a>Evento MERendererEvent
 
@@ -41,9 +41,9 @@ Os parâmetros de evento original (*EventParam1* e *EventParam2* no método **IM
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
 
 
 

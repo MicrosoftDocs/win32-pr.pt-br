@@ -1,7 +1,7 @@
 ---
-description: O método CloseModule do objeto de mesclagem fecha o módulo de mesclagem Windows Installer aberto no momento.
+description: O método CloseModule do objeto Merge fecha o módulo de mesclagem Windows instalador aberto no momento.
 ms.assetid: a11f72cf-4c4e-4650-95f9-549169452622
-title: Método Merge. CloseModule (Mergemod. h)
+title: Método Merge.CloseModule (Mergemod.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - Mergemod.dll
-ms.openlocfilehash: 8688ae06cedca1e3b75290f7831f7d3539e3ec21
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 83f0238a1e65a6c3551b7fea5262fe91d74705287aba0714dfbb4b3cc3a37976
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780952"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117805047"
 ---
-# <a name="mergeclosemodule-method"></a>Método Merge. CloseModule
+# <a name="mergeclosemodule-method"></a>Método Merge.CloseModule
 
-O método **CloseModule** do objeto de [**mesclagem**](merge-object.md) fecha o módulo de mesclagem Windows Installer aberto no momento.
+O **método CloseModule** do objeto [**Merge**](merge-object.md) fecha o módulo de mesclagem Windows Instalador aberto no momento.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,17 +38,17 @@ Merge.CloseModule()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Fechar um módulo de mesclagem não afetará nenhum erro que não tenha sido recuperado.
+Fechar um módulo de mesclagem não afetará erros que não foram recuperados.
 
 ### <a name="c"></a>C++
 
-Consulte a função [**CloseModule**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closemodule) .
+Consulte [**Função CloseModule.**](/windows/win32/api/mergemod/nf-mergemod-imsmmerge-closemodule)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -56,8 +56,8 @@ Consulte a função [**CloseModule**](/windows/win32/api/mergemod/nf-mergemod-im
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| Versão<br/> | Mergemod.dll 1,0 ou posterior<br/>                                                    |
-| parâmetro<br/>  | <dl> <dt>Mergemod. h</dt> </dl>   |
+| Versão<br/> | Mergemod.dll 1.0 ou posterior<br/>                                                    |
+| Cabeçalho<br/>  | <dl> <dt>Mergemod.h</dt> </dl>   |
 | DLL<br/>     | <dl> <dt>Mergemod.dll</dt> </dl> |
 
 

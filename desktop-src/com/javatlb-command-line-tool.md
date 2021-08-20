@@ -4,12 +4,12 @@ description: Ferramenta de Command-Line de JavaTLB
 ms.assetid: b46d7bcc-ccd9-4242-9b19-f398d2cb8f91
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e7a0214648f7ad86613d6b35e3084021e2be24aa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e0ade0a20a1c41310422c08310f2d0534914993d79909f51990c48aa04df0a5f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117918620"
 ---
 # <a name="javatlb-command-line-tool"></a>Ferramenta de Command-Line de JavaTLB
 
@@ -21,18 +21,18 @@ Para gerar arquivos de classe Java para um único objeto COM, a partir do prompt
 
  *nome de arquivo* javatlb
 
-em que *filename* é o nome do arquivo que contém a biblioteca de tipos. Esse arquivo pode ter qualquer uma das seguintes extensões de nome de arquivo:. tlb,. olb,. ocx,. dll ou. exe.
+em que *filename* é o nome do arquivo que contém a biblioteca de tipos. Esse arquivo pode ter qualquer uma das seguintes extensões de nome de arquivo:. tlb,. olb,. ocx, .dll ou .exe.
 
 Para gerar arquivos de classe Java para vários objetos COM, a partir do prompt de comando, execute:
 
-**javatlb @ * * * textfile*
+**javatlb @**_textfile_
 
 em que *textfile* é o nome de um arquivo de texto que contém uma lista dos arquivos que contêm as bibliotecas de tipos do objeto com.
 
 > [!Note]  
 > No Visual J++ 6,0, a ferramenta de linha de comando JavaTLB é substituída pela [ferramenta Jactivex](jactivex-command-line-tool.md). Para obter mais informações, consulte a documentação do Visual J++ 6,0.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -41,9 +41,9 @@ em que *textfile* é o nome de um arquivo de texto que contém uma lista dos arq
 [Convertendo para Java](translating-to-java.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

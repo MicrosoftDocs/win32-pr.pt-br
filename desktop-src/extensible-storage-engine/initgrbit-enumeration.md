@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: Enumeração InitGrbit'
+description: 'Saiba mais sobre: enumeração InitGrbit'
 title: Enumeração InitGrbit
 TOCTitle: InitGrbit enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.InitGrbit
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e4278279aa38b4d560a63bf9f69915f81666d8d8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bfd6cbc194e6a48c0c1d7d6fc7332e2bcd71160e6828e2800ca183ec46e57782
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502142"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118077034"
 ---
 # <a name="initgrbit-enumeration"></a>Enumeração InitGrbit
 
-Opções para [JetInit2 (JET_INSTANCE, InitGrbit)](./api.jetinit2-method.md).
+Opções para [JetInit2(JET_INSTANCE, InitGrbit)](./api.jetinit2-method.md).
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -81,6 +81,6 @@ public enum InitGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
 
 [ReplayIgnoreLostLogs](./windows7grbits.replayignorelostlogs-field.md)

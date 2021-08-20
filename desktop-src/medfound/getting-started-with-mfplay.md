@@ -256,15 +256,15 @@ Se o arquivo de origem contiver um fluxo de vídeo selecionado para reprodução
 
 ## <a name="managing-video-playback"></a>Gerenciando a reprodução de vídeo
 
-Quando o MFPlay reproduz um arquivo de vídeo, ele desenha o vídeo na janela que você especificou na [**função MFPCreateMediaPlayer.**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer) Isso ocorre em um thread separado de Propriedade do pipeline de reprodução de Microsoft Media Foundation. Para a maior parte, seu aplicativo não precisa gerenciar esse processo. No entanto, há duas situações em que o aplicativo deve notificar o MFPlay para atualizar o vídeo.
+Quando o MFPlay reproduz um arquivo de vídeo, ele desenha o vídeo na janela que você especificou na [**função MFPCreateMediaPlayer.**](/windows/desktop/api/mfplay/nf-mfplay-mfpcreatemediaplayer) Isso ocorre em um thread separado pertencente ao pipeline Microsoft Media Foundation reprodução. Na maior parte do tempo, seu aplicativo não precisa gerenciar esse processo. No entanto, há duas situações em que o aplicativo deve notificar o MFPlay para atualizar o vídeo.
 
--   Se a reprodução for pausada ou interrompida, MFPlay deverá ser notificado sempre que a janela de vídeo do aplicativo receber uma mensagem de pintura do WM \_ . Isso permite que o MFPlay repinte a janela.
--   Se a janela for redimensionada, MFPlay deverá ser notificado para que possa dimensionar o vídeo para corresponder ao novo tamanho da janela.
+-   Se a reprodução for pausada ou interrompida, o MFPlay deverá ser notificado sempre que a janela de vídeo do aplicativo receber uma mensagem WM \_ PAINT. Isso permite que o MFPlay repaint a janela.
+-   Se a janela for re dimensionada, o MFPlay deverá ser notificado para que possa dimensionar o vídeo para corresponder ao novo tamanho da janela.
 
-O método [**IMFPMediaPlayer:: UpdateVideo**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-updatevideo) lida com ambos os casos. Chame esse método dentro dos \_ manipuladores de mensagens de tamanho do WM Paint e \_ do WM para a janela de vídeo.
+O [**método IMFPMediaPlayer::UpdateVideo**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-updatevideo) trata ambos os casos. Chame esse método dentro dos manipuladores de mensagens WM PAINT e \_ WM SIZE para a janela de \_ vídeo.
 
 > [!IMPORTANT]
-> Chame a função **BEGINPAINT** GDI antes de chamar [**UpdateVideo**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-updatevideo).
+> Chame a função **BeginPaint da** GDI antes de [**chamar UpdateVideo.**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-updatevideo)
 
  
 
@@ -301,18 +301,18 @@ void OnPaint(HWND hwnd)
 
 
 
-A menos que você especifique o contrário, o MFPlay mostra o vídeo na taxa de proporção correta, usando formato Letterbox, se necessário. Se você não quiser preservar a taxa de proporção, chame [**IMFPMediaPlayer:: SetAspectRatioMode**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setaspectratiomode) com o sinalizador **MFVideoARMode \_ None** . Isso fará com que o MFPlay alongue o vídeo para preencher o retângulo inteiro, sem formato letterbox. Normalmente, você deve usar a configuração padrão e deixar MFPlay Letterbox o vídeo. A cor padrão do Letterbox é preta, mas você pode alterá-la chamando [**IMFPMediaPlayer:: setbordercolor**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setbordercolor).
+A menos que você especifique o contrário, o MFPlay mostrará o vídeo na taxa de proporção correta, usando letterboxing, se necessário. Se você não quiser preservar a taxa de proporção, chame [**IMFPMediaPlayer::SetAspectRatioMode**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setaspectratiomode) com o sinalizador **MFVideoARMode \_ None.** Isso fará com que o MFPlay alonge o vídeo para preencher todo o retângulo, sem nenhuma caixa de texto. Normalmente, você deve usar a configuração padrão e permitir que o MFPlay faça a caixa de texto do vídeo. A cor da caixa de texto padrão é preta, mas você pode alterar isso chamando [**IMFPMediaPlayer::SetBorderColor.**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-setbordercolor)
 
 ## <a name="limitations-of-mfplay"></a>Limitações do MFPlay
 
 A versão atual do MFPlay tem as seguintes limitações:
 
--   MFPlay não oferece suporte a conteúdo protegido por DRM.
--   Por padrão, o MFPlay não dá suporte a protocolos de streaming de rede. Para obter mais informações, consulte [**IMFPMediaPlayer:: CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl).
--   MFPlay não oferece suporte a listas de reprodução do lado do servidor (SSPLs) ou outros tipos de origem que reproduzem mais de um segmento. Em termos técnicos, MFPlay interrompe a reprodução após a primeira apresentação e ignora todos os eventos [MENewPresentation](menewpresentation.md) da origem da mídia.
--   MFPlay não dá suporte a transições diretas entre as fontes de mídia.
--   MFPlay não dá suporte à combinação de vários fluxos de vídeo.
--   Somente os formatos de mídia com suporte nativo no Media Foundation são suportados pelo MFPlay. (Isso inclui componentes de Media Foundation de terceiros que podem ser instalados no sistema.)
+-   O MFPlay não dá suporte a conteúdo protegido por DRM.
+-   Por padrão, o MFPlay não dá suporte a protocolos de streaming de rede. Para obter mais informações, [**consulte IMFPMediaPlayer::CreateMediaItemFromURL**](/windows/desktop/api/mfplay/nf-mfplay-imfpmediaplayer-createmediaitemfromurl).
+-   O MFPlay não dá suporte a SSPLs (playlists do lado do servidor) ou outros tipos de origem que reproduzem mais de um segmento. Em termos técnicos, o MFPlay interrompe a reprodução após a primeira apresentação e ignora todos os eventos [MENewPresentation](menewpresentation.md) da fonte de mídia.
+-   O MFPlay não dá suporte a transições perfeitas entre fontes de mídia.
+-   O MFPlay não dá suporte à combinação de vários fluxos de vídeo.
+-   Somente formatos de mídia com suporte nativo no Media Foundation têm suporte no MFPlay. (Isso inclui componentes de Media Foundation de terceiros que podem ser instalados no sistema.)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

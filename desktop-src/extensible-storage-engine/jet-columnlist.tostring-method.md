@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0e61b4b816e3605a3850d2d6a2a13c52e2eaa421
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2a481a18c117ca31b25026e5ec275796c09fe36bca8b1ee2d4c092e6844240b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164774"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118075569"
 ---
 # <a name="jet_columnlisttostring-method"></a>JET_COLUMNLIST. Método ToString
 
-Retorna uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_COLUMNLIST](./jet-columnlist-class.md)atual.
+Retorna uma [Cadeia de](/dotnet/api/system.string) caracteres que representa o [valor JET_COLUMNLIST](./jet-columnlist-class.md).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,17 +54,17 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_COLUMNLIST](./jet-columnlist-class.md)atual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Uma [Cadeia de](/dotnet/api/system.string) caracteres que representa o valor [JET_COLUMNLIST](./jet-columnlist-class.md).  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_COLUMNLIST](./jet-columnlist-class.md)
+[JET_COLUMNLIST classe](./jet-columnlist-class.md)
 
-[Membros do JET_COLUMNLIST](./jet-columnlist-members.md)
+[JET_COLUMNLIST membros](./jet-columnlist-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a8af7aef94dd9453af690f0c5d83b1e978d3b058
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79c0438491cb62d56584106d78f7639439d93d105fb635eeba0271759247f595
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117839756"
 ---
 # <a name="iadsprintqueueoperations-property-methods"></a>Métodos de propriedade IADsPrintQueueOperations
 
@@ -240,7 +240,7 @@ HRESULT put_Name(
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir Visual Basic verifica se uma impressora está emperrada.
+o exemplo de código a seguir Visual Basic verifica se uma impressora está emperrada.
 
 
 ```VB
@@ -279,7 +279,7 @@ hr = pqo->Release();
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                    |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                              |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>           |
+| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>           |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl>     |
 | IID<br/>                      | IID \_ IADsPrintQueueOperations é definido como 124BE5C0-156E-11CF-A986-00AA006BC149<br/> |
 

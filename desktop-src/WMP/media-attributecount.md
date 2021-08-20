@@ -1,9 +1,9 @@
 ---
-title: Media. attributeCount
+title: Media.attributeCount
 description: A propriedade attributeCount recupera o número de atributos que podem ser consultados e/ou definidos para o item de mídia.
 ms.assetid: d2a5286f-dde1-48b5-b486-6cee1be463f9
 keywords:
-- Media. attributeCount Windows Media Player
+- Media.attributeCount Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,36 +14,36 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df4979f670cdd6a79b1b309bc3eceff5a2798223
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 28d02e120570140aa7c39a4acc7ce0eb096fffd7bccfc51a6c82d53a7ab5f3bd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105763305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117934337"
 ---
-# <a name="mediaattributecount"></a>Media. attributeCount
+# <a name="mediaattributecount"></a>Media.attributeCount
 
-A propriedade **attributeCount** recupera o número de atributos que podem ser consultados e/ou definidos para o item de mídia.
+A **propriedade attributeCount** recupera o número de atributos que podem ser consultados e/ou definidos para o item de mídia.
 
 ## <a name="syntax"></a>Syntax
 
-*Player*. *currentMedia*. **attributeCount**
+*player*. *currentMedia*. **attributeCount**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um **número** somente leitura (**Long**).
+Essa propriedade é um Número somente **leitura** (**long**).
 
 ## <a name="remarks"></a>Comentários
 
-Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Para recuperar o valor dessa propriedade, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
-Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a [referência de atributo](attribute-reference.md)do Windows Media Player.
+Para obter informações sobre os atributos com suporte do Windows Media Player, consulte a Referência de Windows Media Player [atributo .](attribute-reference.md)
 
-**Windows Media Player 10 Mobile:** Os atributos de um item de mídia estão disponíveis somente durante a reprodução, a menos que sejam recuperados do item por meio da coleção de mídia.
+**Windows Media Player 10 Mobile:** Os atributos de um item de mídia estão disponíveis somente durante a reprodução, a menos que sejam recuperados do item por meio da coleção de mídias.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de JScript a seguir usa *mídia*. **attributeCount** para determinar o número de atributos disponíveis no item de mídia atual. O código usa esse valor para imprimir uma lista de nomes e valores de atributos em uma área de texto HTML, chamada mytext. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir usa *Mídia*. **attributeCount** para determinar o número de atributos disponíveis no item de mídia atual. O código usa esse valor para imprimir uma lista de nomes e valores de atributo em uma área de texto HTML, chamada myText. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -75,7 +75,7 @@ for(var i = 0; i < cm.attributeCount; i++){
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -87,16 +87,16 @@ for(var i = 0; i < cm.attributeCount; i++){
 [**Objeto de mídia**](media-object.md)
 </dt> <dt>
 
-[**Media. GetAttributeName**](media-getattributename.md)
+[**Media.getAttributeName**](media-getattributename.md)
 </dt> <dt>
 
-[**Media. getItemInfo**](media-getiteminfo.md)
+[**Media.getItemInfo**](media-getiteminfo.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

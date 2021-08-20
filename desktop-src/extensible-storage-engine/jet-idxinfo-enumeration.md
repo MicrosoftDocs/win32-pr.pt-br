@@ -48,12 +48,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e1f2cb50537ed492a428c82fd9a6f6541c5fad2b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4447e5e1d7a839b27246121145e820a016eba19f4a4e7c88e487c26782bfc607
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105798195"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118075201"
 ---
 # <a name="jet_idxinfo-enumeration"></a>Enumeração de JET_IdxInfo
 
@@ -144,7 +144,7 @@ public enum JET_IdxInfo
 <tr class="even">
 <td></td>
 <td>Mais</td>
-<td>Introduzido no Windows Vista. Retorna um UShort com o valor de cbKeyMost com o qual o índice foi criado.</td>
+<td>introduzido no Windows Vista. Retorna um UShort com o valor de cbKeyMost com o qual o índice foi criado.</td>
 </tr>
 </tbody>
 </table>

@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETFOOTERITEMRECT (commctrl. h)
 description: Obtém as coordenadas de um rodapé para um item especificado em um controle de exibição de lista. Envie essa mensagem explicitamente ou usando a \_ macro GetFooterItemRect do ListView.
 ms.assetid: 4a6055d3-1cc1-4c3d-a5f6-006617ff3bce
 keywords:
-- Controles de LVM_GETFOOTERITEMRECT de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETFOOTERITEMRECT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 142cb92806fa1d58faa0414c10c41bd2815d5b6b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f5df635c18de3dec7cad128fe23ceeea2829b273984c561f5f289e2f0533b0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104163579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117830667"
 ---
 # <a name="lvm_getfooteritemrect-message"></a>\_Mensagem GETFOOTERITEMRECT LVM
 
@@ -43,7 +43,7 @@ Um ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
@@ -53,9 +53,9 @@ Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

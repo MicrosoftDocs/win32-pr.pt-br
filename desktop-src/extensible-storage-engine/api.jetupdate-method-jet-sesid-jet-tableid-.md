@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f1875353e8a5b4a23302a5f008af2cfa42a89b11
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93c72788dcc44e9f9482b853d0a023e15015cf9aec688ed6b4b9f9fbc1221a89
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117902507"
 ---
 # <a name="apijetupdate-method-jet_sesid-jet_tableid"></a>Método API. JetUpdate (JET_SESID, JET_TABLEID)
 

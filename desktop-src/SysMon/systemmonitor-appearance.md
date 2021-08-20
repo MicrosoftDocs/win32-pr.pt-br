@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9200c66f83a47f15421480967e8ea1ae9509b13e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c606ed69bca635fe0f261f64ed4439305dcdfb542edd4c0095e62eaa97266147
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105756121"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117956199"
 ---
 # <a name="systemmonitorappearance-property"></a>Propriedade SystemMonitor. Appearance
 
@@ -61,7 +61,7 @@ Você pode definir essa propriedade como um dos valores a seguir.
 
 | Tipo de exceção               | Condição                                    |
 |------------------------------|----------------------------------------------|
-| **System. ArgumentException** | O valor de aparência especificado não é válido. |
+| **System.ArgumentException** | O valor de aparência especificado não é válido. |
 
 
 

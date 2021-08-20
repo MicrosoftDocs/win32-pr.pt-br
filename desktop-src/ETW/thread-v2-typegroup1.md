@@ -1,7 +1,7 @@
 ---
-description: Classe Thread_V2_TypeGroup1-essa classe é a classe de tipo de evento para eventos de início e término de thread. A sintaxe a seguir é simplificada do código MOF.
+description: Thread_V2_TypeGroup1 classe - essa classe é a classe de tipo de evento para eventos de início e término de thread. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: c24b4bc9-2a05-444c-be41-b4dfd0511b93
-title: Classe Thread_V2_TypeGroup1
+title: Thread_V2_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -22,14 +22,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 24ac4655fc374c40eb530828229a319f9ee1375e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 15b24c827d99386206b778675f93fbe1a507cf0ec849caa066e0a438f413d101
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117814007"
 ---
-# <a name="thread_v2_typegroup1-class"></a>\_ \_ Classe TypeGroup1 do thread v2
+# <a name="thread_v2_typegroup1-class"></a>Classe \_ \_ TypeGroup1 do Thread V2
 
 Essa classe é a classe de tipo de evento para eventos de início e término de thread.
 
@@ -56,26 +56,26 @@ class Thread_V2_TypeGroup1 : Thread_V2
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ TypeGroup1 do thread v2** tem estes tipos de membros:
+A **classe \_ \_ TypeGroup1 do Thread V2** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ TypeGroup1 do thread v2** tem essas propriedades.
+A **classe \_ \_ TypeGroup1 do Thread V2** tem essas propriedades.
 
 <dl> <dt>
 
 ProcessId
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), formato ("x")
+Qualificadores: WmiDataId(1), Format("x")
 </dt> </dl>
 
 Identificador de processo do thread envolvido no evento.
@@ -85,13 +85,13 @@ Identificador de processo do thread envolvido no evento.
 StackBase
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3), ponteiro
+Qualificadores: WmiDataId(3), Pointer
 </dt> </dl>
 
 Endereço base da pilha do thread.
@@ -101,13 +101,13 @@ Endereço base da pilha do thread.
 StackLimit
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4), ponteiro
+Qualificadores: WmiDataId(4), Pointer
 </dt> </dl>
 
 Limite da pilha do thread.
@@ -117,13 +117,13 @@ Limite da pilha do thread.
 StartAddr
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (7), ponteiro
+Qualificadores: WmiDataId(7), Pointer
 </dt> </dl>
 
 Endereço de memória no qual o rastreamento é iniciado.
@@ -133,13 +133,13 @@ Endereço de memória no qual o rastreamento é iniciado.
 SubProcessTag
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (10), formato ("x")
+Qualificadores: WmiDataId(10), Format("x")
 </dt> </dl>
 
 Identifica o serviço se o thread pertence a um serviço; caso contrário, zero.
@@ -149,29 +149,29 @@ Identifica o serviço se o thread pertence a um serviço; caso contrário, zero.
 TebBase
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (9), ponteiro
+Qualificadores: WmiDataId(9), Pointer
 </dt> </dl>
 
-Endereço base do bloco do ambiente de thread.
+Endereço base do bloco de ambiente de thread.
 
 </dd> <dt>
 
 TThreadId
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2), formato ("x")
+Qualificadores: WmiDataId(2), Format("x")
 </dt> </dl>
 
 Identificador de thread do thread envolvido no evento.
@@ -181,48 +181,48 @@ Identificador de thread do thread envolvido no evento.
 UserStackBase
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5), ponteiro
+Qualificadores: WmiDataId(5), Pointer
 </dt> </dl>
 
-Endereço base da pilha do modo de usuário do thread.
+Endereço base da pilha de modo de usuário do thread.
 
 </dd> <dt>
 
 UserStackLimit
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (6), ponteiro
+Qualificadores: WmiDataId(6), Pointer
 </dt> </dl>
 
-Limite da pilha do modo de usuário do thread.
+Limite da pilha de modo de usuário do thread.
 
 </dd> <dt>
 
 Win32StartAddr
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (8), ponteiro
+Qualificadores: WmiDataId(8), Pointer
 </dt> </dl>
 
-Endereço inicial da função a ser executada por este thread.
+Endereço inicial da função a ser executada por esse thread.
 
 </dd> </dl>
 
@@ -236,19 +236,19 @@ Os tipos de evento DCStart e DCEnd enumeram os threads que estão sendo executad
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [**Thread**](thread.md)
 </dt> <dt>
 
-[**Thread \_ v2**](thread-v2.md)
+[**Thread \_ V2**](thread-v2.md)
 </dt> </dl>
 
  

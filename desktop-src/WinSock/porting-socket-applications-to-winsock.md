@@ -1,54 +1,54 @@
 ---
-description: Esta seção descreve as considerações de portabilidade do Winsock.
+description: Esta seção descreve as considerações de portação do Winsock.
 ms.assetid: 41c0c98e-3990-4600-ab9f-fa87edbea402
 title: Portando aplicativos de soquete para Winsock
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0e2b3480d5572405d33b3a3532892a48633caa5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 97b545c679d9ceb13e3173550dd04b4724309d078b2e8e39fb20419921ba941f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811728"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118111864"
 ---
 # <a name="porting-socket-applications-to-winsock"></a>Portando aplicativos de soquete para Winsock
 
-Esta seção descreve as considerações de portabilidade do Winsock.
+Esta seção descreve as considerações de portação do Winsock.
 
-Há um número limitado de instâncias em que o Windows Sockets diverteu da adesão estrita às convenções de Berkeley, geralmente devido a dificuldades de implementação no ambiente do Microsoft Windows.
+Há um número limitado de instâncias em que Windows Sockets desviou da adesão estrita às convenções de Berkeley, geralmente devido a dificuldades de implementação no ambiente microsoft Windows.
 
-Quando um desvio das convenções de Berkeley ocorre no Windows Sockets, o desvio é especificamente indicado e claramente anotado. Por exemplo, se uma função for específica para o Windows Sockets, esse desvio será especificado com uma frase na descrição da função semelhante à seguinte:
+Quando ocorre um desvio das convenções de Berkeley Windows soquetes, o desvio é especificamente e claramente notado. Por exemplo, se uma função for específica Windows Soquetes, esse desvio será especificado com uma frase na descrição da função semelhante à seguinte:
 
-A função **\[ Function- \] Name** é uma extensão específica da Microsoft para a API do Windows Sockets 2.
+A **\[ função \] function-name** é uma extensão específica da Microsoft para a API Windows Sockets 2.
 
-Esta seção fornece informações sobre portabilidade de aplicativos de soquete UNIX do Berkeley (BSD) para Winsock:
+Esta seção fornece informações sobre como portar aplicativos de soquete de UNIX Berkeley (BSD) para o Winsock:
 
--   [Tipo de dados Socket](socket-data-type-2.md)
--   [Macros Select, FD \_ set e FD \_ xxx](select-and-fd---2.md)
--   [Códigos de erro-errno, h \_ errno e WSAGetLastError](error-codes-errno-h-errno-and-wsagetlasterror-2.md)
+-   [Tipo de dados de soquete](socket-data-type-2.md)
+-   [Macros Select, FD \_ SET e FD \_ XXX](select-and-fd---2.md)
+-   [Códigos de erro – errno, h \_ errno e WSAGetLastError](error-codes-errno-h-errno-and-wsagetlasterror-2.md)
 -   [Ponteiros](pointers-2.md)
 -   [Funções renomeadas](renamed-functions-2.md)
 -   [Número máximo de soquetes com suporte](maximum-number-of-sockets-supported-2.md)
 -   [Incluir arquivos](include-files-2.md)
 -   [Valores de retorno em falha de função](return-values-on-function-failure-2.md)
 -   [Soquetes brutos](service-provided-raw-sockets-2.md)
--   [Ordenação de bytes](byte-ordering-2.md)
--   [Rotinas de conversão de Byte-Order estendidas](extended-byte-order-conversion-routines-2.md)
+-   [Ordenação de byte](byte-ordering-2.md)
+-   [Rotinas Byte-Order conversão estendidas](extended-byte-order-conversion-routines-2.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Manipulando erros do Winsock](handling-winsock-errors.md)
+[Tratamento de erros winsock](handling-winsock-errors.md)
 </dt> <dt>
 
 [Portando aplicativos de soquete para Winsock](porting-socket-applications-to-winsock.md)
 </dt> <dt>
 
-[Códigos de erro do Windows Sockets](windows-sockets-error-codes-2.md)
+[Windows Códigos de erro de soquetes](windows-sockets-error-codes-2.md)
 </dt> <dt>
 
-[Considerações sobre programação do Winsock](winsock-programming-considerations.md)
+[Considerações sobre programação winsock](winsock-programming-considerations.md)
 </dt> </dl>
 
  

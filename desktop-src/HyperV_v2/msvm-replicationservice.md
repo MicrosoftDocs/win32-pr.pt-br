@@ -41,12 +41,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 86e9140e2fe9b047c57c762be2e0fba048511993
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6aac8ad1bd0037badae36f94df038bf849f5302fa4deb677744c7d5ff846d2ac
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117810973"
 ---
 # <a name="msvm_replicationservice-class"></a>\_Classe Msvm ReplicationService
 
@@ -107,24 +107,24 @@ A classe **Msvm \_ ReplicationService** tem esses métodos.
 | Método                                                                                                 | Descrição                                                                                                                                                                                                                                                                                   |
 |:-------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AddAuthorizationEntry**](addauthorizationentry-msvm-replicationservice.md)                         | Adiciona uma entrada de autorização a um servidor.<br/>                                                                                                                                                                                                                                           |
-| [**ChangeReplicationModeToPrimary**](changereplicationmodetoprimary-msvm-replicationservice.md)       | Altera a relação de replicação estendida para a relação primária de uma máquina virtual de réplica. A máquina virtual de réplica deve estar em um estado de failover confirmado.<br/> **Windows 8.1:** Não há suporte para este método até Windows 8.1 e Windows Server 2012 R2.<br/> |
+| [**ChangeReplicationModeToPrimary**](changereplicationmodetoprimary-msvm-replicationservice.md)       | Altera a relação de replicação estendida para a relação primária de uma máquina virtual de réplica. A máquina virtual de réplica deve estar em um estado de failover confirmado.<br/> **Windows 8.1:** esse método não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/> |
 | [**CommitFailover**](commitfailover-msvm-replicationservice.md)                                       | Confirma o instantâneo de recuperação que o método [**InitiateFailover**](initiatefailover-msvm-replicationservice.md) usou para um failover.<br/>                                                                                                                                        |
 | [**CreateReplicationRelationship**](createreplicationrelationship-msvm-replicationservice.md)         | Cria um novo relacionamento de replicação para uma máquina virtual.<br/>                                                                                                                                                                                                                      |
 | [**GetReplicationStatistics**](getreplicationstatistics-msvm-replicationservice.md)                   | Recupera estatísticas de replicação para uma máquina virtual.<br/>                                                                                                                                                                                                                            |
-| [**GetReplicationStatisticsEx**](getreplicationstatisticsex-msvm-replicationservice.md)               | Recupera as estatísticas de replicação associadas ao relacionamento de replicação especificado da máquina virtual.<br/> **Windows 8.1:** Não há suporte para este método até Windows 8.1 e Windows Server 2012 R2.<br/>                                                    |
+| [**GetReplicationStatisticsEx**](getreplicationstatisticsex-msvm-replicationservice.md)               | Recupera as estatísticas de replicação associadas ao relacionamento de replicação especificado da máquina virtual.<br/> **Windows 8.1:** esse método não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/>                                                    |
 | [**GetSystemCertificates**](getsystemcertificates-msvm-replicationservice.md)                         | Recupera os certificados do sistema em um sistema host.<br/>                                                                                                                                                                                                                                |
 | [**ImportInitialReplica**](importinitialreplica-msvm-replicationservice.md)                           | Importa a replicação inicial para uma máquina virtual.<br/>                                                                                                                                                                                                                             |
-| [**InitiateFailback**](initiatefailback-msvm-replicationservice.md)                                   | Inicia o failback para uma máquina virtual de recuperação. Ou seja, define o failover para a máquina virtual para um aplicativo ou uma imagem consistente de falha.<br/> **Windows 8.1:** Não há suporte para este método até Windows 8.1 e Windows Server 2012 R2.<br/>                              |
+| [**InitiateFailback**](initiatefailback-msvm-replicationservice.md)                                   | Inicia o failback para uma máquina virtual de recuperação. Ou seja, define o failover para a máquina virtual para um aplicativo ou uma imagem consistente de falha.<br/> **Windows 8.1:** esse método não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/>                              |
 | [**InitiateFailover**](initiatefailover-msvm-replicationservice.md)                                   | Inicia um failover para uma máquina virtual para um aplicativo ou uma imagem de ponto de replicação padrão.<br/>                                                                                                                                                                                  |
 | [**ModifyAuthorizationEntry**](modifyauthorizationentry-msvm-replicationservice.md)                   | Modifica uma entrada de autorização em um servidor.<br/>                                                                                                                                                                                                                                       |
 | [**ModifyReplicationSettings**](modifyreplicationsettings-msvm-replicationservice.md)                 | Modifica as configurações de replicação para uma máquina virtual.<br/>                                                                                                                                                                                                                           |
 | [**ModifyServiceSettings**](modifyservicesettings-msvm-replicationservice.md)                         | Modifica as configurações para o serviço de réplica do Hyper-V.<br/>                                                                                                                                                                                                                             |
 | [**RemoveAuthorizationEntry**](removeauthorizationentry-msvm-replicationservice.md)                   | Remove a entrada de autorização de um servidor.<br/>                                                                                                                                                                                                                                     |
 | [**RemoveReplicationRelationship**](removereplicationrelationship-msvm-replicationservice.md)         | Remove um relacionamento de replicação de máquina virtual.<br/>                                                                                                                                                                                                                                |
-| [**RemoveReplicationRelationshipEx**](removereplicationrelationshipex-msvm-replicationservice.md)     | Remove a relação de replicação da máquina virtual especificada. Para uma máquina virtual de réplica, a replicação primária não poderá ser removida se a replicação estendida estiver habilitada.<br/> **Windows 8.1:** Não há suporte para este método até Windows 8.1 e Windows Server 2012 R2.<br/>     |
+| [**RemoveReplicationRelationshipEx**](removereplicationrelationshipex-msvm-replicationservice.md)     | Remove a relação de replicação da máquina virtual especificada. Para uma máquina virtual de réplica, a replicação primária não poderá ser removida se a replicação estendida estiver habilitada.<br/> **Windows 8.1:** esse método não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/>     |
 | [**RequestStateChange**](msvm-replicationservice-requeststatechange.md)                               | Solicita uma alteração de estado.<br/>                                                                                                                                                                                                                                                           |
 | [**ResetReplicationStatistics**](resetreplicationstatistics-msvm-replicationservice.md)               | Redefine as estatísticas de replicação para uma máquina virtual.<br/>                                                                                                                                                                                                                           |
-| [**ResetReplicationStatisticsEx**](resetreplicationstatisticsex-msvm-replicationservice.md)           | Redefine as estatísticas de replicação que estão associadas à relação de replicação especificada de uma máquina virtual.<br/> **Windows 8.1:** Não há suporte para este método até Windows 8.1 e Windows Server 2012 R2.<br/>                                                         |
+| [**ResetReplicationStatisticsEx**](resetreplicationstatisticsex-msvm-replicationservice.md)           | Redefine as estatísticas de replicação que estão associadas à relação de replicação especificada de uma máquina virtual.<br/> **Windows 8.1:** esse método não tem suporte até Windows 8.1 e Windows Server 2012 R2.<br/>                                                         |
 | [**Sincronizar novamente**](resynchronize-msvm-replicationservice.md)                                         | Executa uma operação de ressincronização na máquina virtual especificada.<br/>                                                                                                                                                                                                           |
 | [**ReverseReplicationRelationship**](reversereplicationrelationship-msvm-replicationservice.md)       | Replica uma máquina virtual com failover de volta para o servidor primário.<br/>                                                                                                                                                                                                               |
 | [**RevertFailover**](revertfailover-msvm-replicationservice.md)                                       | Reverte o failover atual de uma máquina virtual descartando o disco de failover atual.<br/>                                                                                                                                                                                        |
@@ -191,19 +191,19 @@ Indica a capacidade da instrumentação de se comunicar com o elemento gerenciad
 <span id="Not_Available"></span><span id="not_available"></span><span id="NOT_AVAILABLE"></span>**Não disponível** (1)
 </dt> <dt>
 
-<span id="Communication_OK"></span><span id="communication_ok"></span><span id="COMMUNICATION_OK"></span>**Comunicação Ok** (2)
+<span id="Communication_OK"></span><span id="communication_ok"></span><span id="COMMUNICATION_OK"></span>**Comunicação OK** (2)
 </dt> <dt>
 
 <span id="Lost_Communication"></span><span id="lost_communication"></span><span id="LOST_COMMUNICATION"></span>**Comunicação perdida** (3)
 </dt> <dt>
 
-<span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**Nenhum contato** (4)
+<span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>**Sem contato** (4)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -217,10 +217,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-O nome da classe ou subclasse usada na criação de uma instância. Essa propriedade é herdada [**do \_ serviço CIM**](/windows/desktop/CIMWin32Prov/cim-service)e é sempre definida como "Msvm \_ ReplicationService".
+O nome da classe ou subclasse usada na criação de uma instância. Essa propriedade é herdada do [**\_ Serviço CIM**](/windows/desktop/CIMWin32Prov/cim-service)e sempre é definida como "Msvm \_ ReplicationService".
 
 </dd> <dt>
 
@@ -233,20 +233,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "serviço de replicação".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Serviço de Replicação".
 
 </dd> <dt>
 
 **DetailedStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Complementa a propriedade **PrimaryStatus com** detalhes de status adicionais. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -256,7 +256,7 @@ Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. U
 <span id="No_Additional_Information"></span><span id="no_additional_information"></span><span id="NO_ADDITIONAL_INFORMATION"></span>**Nenhuma informação adicional** (1)
 </dt> <dt>
 
-<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Sob estresse** (2)
+<span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>**Estresse** (2)
 </dt> <dt>
 
 <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span>**Falha preditiva** (3)
@@ -265,13 +265,13 @@ Complementa a propriedade **PrimaryStatus** com detalhes de status adicionais. U
 <span id="Non-Recoverable_Error"></span><span id="non-recoverable_error"></span><span id="NON-RECOVERABLE_ERROR"></span>**Erro não recuperável** (4)
 </dt> <dt>
 
-<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidade de suporte com erro** (5)
+<span id="Supporting_Entity_in_Error"></span><span id="supporting_entity_in_error"></span><span id="SUPPORTING_ENTITY_IN_ERROR"></span>**Entidade de suporte em erro** (5)
 </dt> <dt>
 
-<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF reservado** (..)
+<span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>**DMTF Reservado** (..)
 </dt> <dt>
 
-<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor reservado** (0x8000.. )
+<span id="Vendor_Reserved_"></span><span id="vendor_reserved_"></span><span id="VENDOR_RESERVED_"></span>**Fornecedor Reservado** (0x8000.. )
 </dt> </dl>
 
 </dd> <dt>
@@ -285,20 +285,20 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **EnabledDefault**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A configuração de inicialização ou padrão de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como 2 (habilitado).
+Configuração padrão ou de inicialização de um administrador para o estado habilitado de um elemento. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e sempre é definida como 2 (Habilitada).
 
 
 
@@ -315,13 +315,13 @@ A configuração de inicialização ou padrão de um administrador para o estado
 **EnabledState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Os Estados habilitado e desabilitado de um elemento. Ele também pode indicar as transições entre esses Estados solicitados. Essa propriedade é herdada do [**CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e é sempre definida como 2 (habilitado).
+Os estados habilitados e desabilitados de um elemento. Ele também pode indicar as transições entre esses estados solicitados. Essa propriedade é herdada [**de CIM \_ EnabledLogicalElement**](/previous-versions//cc136818(v=vs.85))e sempre é definida como 2 (Habilitada).
 
 
 
@@ -338,19 +338,19 @@ Os Estados habilitado e desabilitado de um elemento. Ele também pode indicar as
 **HealthState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A integridade atual do elemento. Esse atributo expressa a integridade desse elemento, mas não necessariamente o de seus subcomponentes. Os valores possíveis são 0 a 30, em que 5 significa que o elemento está totalmente íntegro e 30 significa que o elemento é completamente não funcional. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é sempre definida como 5 (OK).
+A saúde atual do elemento. Esse atributo expressa a saúde desse elemento, mas não necessariamente a de seus subcomponentes. Os valores possíveis são de 0 a 30, em que 5 significa que o elemento está totalmente íntegre e 30 significa que o elemento é completamente nãofuncional. Essa propriedade é herdada [**de CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é sempre definida como 5 (OK).
 
 
 
 | Valor                                                                        | Significado                                 |
 |------------------------------------------------------------------------------|-----------------------------------------|
-| <dl> <dt>5</dt> </dl> | O status de integridade é normal.<br/> |
+| <dl> <dt>5</dt> </dl> | O status de saúde é normal.<br/> |
 
 
 
@@ -361,13 +361,13 @@ A integridade atual do elemento. Esse atributo expressa a integridade desse elem
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+A data e a hora em que a configuração da máquina virtual foi criada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -380,10 +380,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como **NULL**.
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como **Null.**
 
 </dd> <dt>
 
@@ -396,23 +396,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**, **maxlen** (256)
+Qualificadores: **Key**, **MaxLen** ( 256 )
 </dt> </dl>
 
-O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e é sempre definida como "replicasvc".
+O rótulo pelo qual o objeto é conhecido. Essa propriedade é herdada [**de CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)e sempre é definida como "replicasvc".
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da propriedade **enabledstate** . Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da **propriedade EnabledState.** Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 <dl> <dt>
 
@@ -446,7 +446,7 @@ Fornece informações de status atuais para a condição operacional do elemento
 <span id="Migrating"></span><span id="migrating"></span><span id="MIGRATING"></span>**Migrando** (9)
 </dt> <dt>
 
-<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrating** (10)
+<span id="Emigrating"></span><span id="emigrating"></span><span id="EMIGRATING"></span>**Emigrando** (10)
 </dt> <dt>
 
 <span id="Immigrating"></span><span id="immigrating"></span><span id="IMMIGRATING"></span>**Immigrating** (11)
@@ -719,8 +719,8 @@ Indica o estado de destino para o qual a instância está em transição. Essa p
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

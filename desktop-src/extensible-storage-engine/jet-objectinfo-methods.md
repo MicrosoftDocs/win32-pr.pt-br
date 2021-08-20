@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: métodos de JET_OBJECTINFO'
-title: Métodos de JET_OBJECTINFO
+description: 'Saiba mais sobre: JET_OBJECTINFO métodos'
+title: JET_OBJECTINFO métodos de JET_OBJECTINFO
 TOCTitle: JET_OBJECTINFO methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.JET_OBJECTINFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_objectinfo_methods(v=EXCHG.10)
 ms:contentKeyID: 55103761
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: a43c15b99fc6d90b37b3a9cc64e6c68da55623c3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5531e209f12b882b242bab17527d4b8c77ea35549f0c8d6167ff81eb08b515a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117893981"
 ---
-# <a name="jet_objectinfo-methods"></a>Métodos de JET_OBJECTINFO
+# <a name="jet_objectinfo-methods"></a>JET_OBJECTINFO métodos de JET_OBJECTINFO
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [JET_OBJECTINFO](./jet-objectinfo-class.md) expõe os membros a seguir.
+O [JET_OBJECTINFO](./jet-objectinfo-class.md) tipo expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -49,18 +49,18 @@ O tipo de [JET_OBJECTINFO](./jet-objectinfo-class.md) expõe os membros a seguir
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.object.gettype#System_Object_GetType">Gettype</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
 <td><a href="dn335198(v=exchg.10).md">ToString</a></td>
-<td>Retorna uma <a href="/dotnet/api/system.string">cadeia de caracteres</a> que representa a <a href="dn335219(v=exchg.10).md">JET_OBJECTINFO</a>atual. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object. ToString ()</a>.)</td>
+<td>Retorna uma <a href="/dotnet/api/system.string">Cadeia de</a> caracteres que representa o <a href="dn335219(v=exchg.10).md">valor JET_OBJECTINFO</a>. (Substitui <a href="/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>.)</td>
 </tr>
 </tbody>
 </table>
@@ -72,6 +72,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_OBJECTINFO](./jet-objectinfo-class.md)
+[JET_OBJECTINFO classe](./jet-objectinfo-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

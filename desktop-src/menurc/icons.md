@@ -9,12 +9,12 @@ keywords:
 - RT_GROUP_ICON recurso
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 22c96e740c23bb61cfdaa6cfbcbf6d0ce7538586
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: c166157d5d1e20757daa6dc429a5fe2f57fc4363ddb704ba714333c2c6f87f91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104369161"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117687660"
 ---
 # <a name="icons-menus-and-other-resources"></a>Ícones (menus e outros recursos)
 
@@ -57,7 +57,7 @@ Um *ícone* é uma imagem que consiste em uma imagem de bitmap combinada com uma
 | [**ExtractIconEx**](/windows/desktop/api/Shellapi/nf-shellapi-extracticonexa)                             | Cria uma matriz de identificadores para ícones grandes ou pequenos extraídos do arquivo executável especificado, DLL ou arquivo de ícone. <br/>                                                                                      |
 | [**GetIconInfo**](/windows/desktop/api/Winuser/nf-winuser-geticoninfo)                                 | Recupera informações sobre o ícone ou cursor especificado. <br/>                                                                                                                                                 |
 | [**GetIconInfoEx**](/windows/desktop/api/Winuser/nf-winuser-geticoninfoexa)                             | Recupera informações sobre o ícone ou cursor especificado. [**GetIconInfoEx**](/windows/desktop/api/Winuser/nf-winuser-geticoninfoexa) estende [**GetIconInfo**](/windows/desktop/api/Winuser/nf-winuser-geticoninfo) usando a estrutura [**ICONINFOEX**](/windows/desktop/api/Winuser/ns-winuser-iconinfoexa) mais recente.<br/> |
-| [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona)                                       | Carrega o recurso de ícone especificado do arquivo executável (. exe) associado a uma instância do aplicativo.<br/>                                                                                                 |
+| [**LoadIcon**](/windows/desktop/api/Winuser/nf-winuser-loadicona)                                       | Carrega o recurso de ícone especificado do arquivo executável (.exe) associado a uma instância do aplicativo.<br/>                                                                                                 |
 | [**LookupIconIdFromDirectory**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectory)     | Pesquisa dados de ícone ou cursor para o ícone ou cursor que melhor se adapta ao dispositivo de vídeo atual.<br/>                                                                                                     |
 | [**LookupIconIdFromDirectoryEx**](/windows/desktop/api/Winuser/nf-winuser-lookupiconidfromdirectoryex) | Pesquisa dados de ícone ou cursor para o ícone ou cursor que melhor se adapta ao dispositivo de vídeo atual. <br/>                                                                                                    |
 | [**PrivateExtractIcons**](/windows/desktop/api/Winuser/nf-winuser-privateextracticonsa)                 | Cria uma matriz de identificadores para ícones que são extraídos de um arquivo especificado.<br/>                                                                                                                             |

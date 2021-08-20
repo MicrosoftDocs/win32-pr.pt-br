@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_TABLECREATE. cIndexes'
-title: Propriedade JET_TABLECREATE. cIndexes
+description: 'Saiba mais sobre: JET_TABLECREATE.cIndexes'
+title: propriedade JET_TABLECREATE.cIndexes
 TOCTitle: 'cIndexes property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_TABLECREATE.cIndexes
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_tablecreate.cindexes(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 438d6f095b96c341d95dba584eff78b8ba73eb28
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4bd17953c6b6a58413389a214ecc9847f70757fd8ab3fe51ec8b24bb04961789
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105781248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117892506"
 ---
-# <a name="jet_tablecreatecindexes-property"></a>Propriedade JET_TABLECREATE. cIndexes
+# <a name="jet_tablecreatecindexes-property"></a>propriedade JET_TABLECREATE.cIndexes
 
-Obtém ou define o número de índices a serem criados.
+Obtém ou define o número de índices a criar.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -62,14 +62,14 @@ public int cIndexes { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_TABLECREATE](./jet-tablecreate-class.md)
+[JET_TABLECREATE classe](./jet-tablecreate-class.md)
 
-[Membros do JET_TABLECREATE](./jet-tablecreate-members.md)
+[JET_TABLECREATE membros](./jet-tablecreate-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

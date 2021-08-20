@@ -4,12 +4,12 @@ description: Descreve o mecanismo EAPHost que permite que terceiros escrevam mó
 ms.assetid: d17a99cb-4a43-4719-984e-b742c9518f52
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc50cda8d32cc26dd81af5733345deebb579c792
-ms.sourcegitcommit: 773fa6257ead6c74154ad3cf46d21e49adc900aa
+ms.openlocfilehash: b98deca674b74a33151a73f65620cf038a12c6e8f3fedd0816567a26aa4fcd86
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "104084977"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117719953"
 ---
 # <a name="implementing-the-eaphost-leap-mechanism"></a>Implementando o mecanismo LEAP do EAPHost
 
@@ -42,11 +42,11 @@ O processo de autenticação LEAP difere do processo de autenticação normal do
         > [!Note]  
         > Cada solicitação de EAP tem um campo de tipo para indicar o que está sendo solicitado. Assim como ocorre com o pacote de solicitação, cada pacote de resposta EAP contém um campo tipo, que corresponde ao campo tipo da solicitação. Os exemplos incluem solicitação de identidade e pacotes de solicitação de desafio.
 
-         
+         
 
 -   No caso de falha com o EAPHost, a nova autenticação pode ser tentada abrindo outra sessão com o EAPHost e fornecendo a mesma identidade ou uma nova identidade.
 
-### <a name="leap-authenticator-method-implementation"></a>Implementação do método de autenticador LEAP
+### <a name="leap-authenticator-method-implementation"></a>implementação do método LEAP Authenticator
 
 Ao desenvolver um método de autenticador LEAP, verifique o seguinte:
 
@@ -72,9 +72,9 @@ Ao desenvolver um método de par bissexto, verifique o seguinte
 [Usando o EAPHost](using-eap-host.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

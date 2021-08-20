@@ -1,7 +1,7 @@
 ---
-description: Classe UdpIp_V0_TypeGroup1-essa classe é a classe de tipo de evento para eventos UDP/IP. A sintaxe a seguir é simplificada do código MOF.
+description: UdpIp_V0_TypeGroup1 classe - essa classe é a classe de tipo de evento para eventos UDP/IP. A sintaxe a seguir é simplificada do código MOF.
 ms.assetid: 834a761a-089b-4b93-9a6a-a1edf752b582
-title: Classe UdpIp_V0_TypeGroup1
+title: UdpIp_V0_TypeGroup1 classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -19,14 +19,14 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 78243a49e4504fd9e132407feebe98d9b48f7bdd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8061009fcf419bd7b5ab04eda0b056a8ccee1ad3f3b990a0846058599f34fbde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105494"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117813758"
 ---
-# <a name="udpip_v0_typegroup1-class"></a>\_Classe UdpIp V0 \_ TypeGroup1
+# <a name="udpip_v0_typegroup1-class"></a>Classe TypeGroup1 UdpIp \_ V0 \_
 
 Essa classe é a classe de tipo de evento para eventos UDP/IP.
 
@@ -50,33 +50,33 @@ class UdpIp_V0_TypeGroup1 : UdpIp_V0
 
 ## <a name="members"></a>Membros
 
-A classe **UdpIp \_ V0 \_ TypeGroup1** tem estes tipos de membros:
+A **classe \_ \_ TypeGroup1 UdpIp V0** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **UdpIp \_ V0 \_ TypeGroup1** tem essas propriedades.
+A **classe \_ \_ TypeGroup1 UdpIp V0** tem essas propriedades.
 
 <dl> <dt>
 
 contexto
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (1), ponteiro
+Qualificadores: WmiDataId(1), ponteiro
 </dt> </dl>
 
-Identificador de processo para o objeto de endereço que fez ou recebeu a solicitação.
+Identificador de processo para o Objeto de Endereço que fez ou recebeu a solicitação.
 
 </dd> <dt>
 
-daddr
+paidr
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **objeto**
@@ -85,14 +85,14 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (5), extensão ("IPAddr")
+Qualificadores: WmiDataId(5), Extension("IPAddr")
 </dt> </dl>
 
 Endereço IP de destino.
 
 </dd> <dt>
 
-dport
+Dport
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **objeto**
@@ -101,7 +101,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (6), extensão ("porta")
+Qualificadores: WmiDataId(6), Extension("Port")
 </dt> </dl>
 
 Número da porta de destino.
@@ -111,13 +111,13 @@ Número da porta de destino.
 dsize
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (7)
+Qualificadores: WmiDataId(7)
 </dt> </dl>
 
 Tamanho do pacote de destino.
@@ -133,7 +133,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (2), extensão ("IPAddr")
+Qualificadores: WmiDataId(2), Extension("IPAddr")
 </dt> </dl>
 
 Endereço IP de origem.
@@ -143,20 +143,20 @@ Endereço IP de origem.
 tamanho
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (4)
+Qualificadores: WmiDataId(4)
 </dt> </dl>
 
 Tamanho do pacote de origem.
 
 </dd> <dt>
 
-esporte
+Esporte
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **objeto**
@@ -165,7 +165,7 @@ Tipo de dados: **objeto**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId (3), extensão ("porta")
+Qualificadores: WmiDataId(3), Extension("Port")
 </dt> </dl>
 
 Número da porta de origem.
@@ -178,12 +178,12 @@ Número da porta de origem.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

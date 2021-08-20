@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - All
-ms.openlocfilehash: d471db22a9f15a38ab693ae72332e5e1893b5c55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 720443358cfce776dfe02630ea25ea994ad0ef552a9d89627b2f136e990e0194
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105810810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118109984"
 ---
 # <a name="getsd-method-of-the-__systemsecurity-class"></a>Método obtido da \_ \_ classe SystemSecurity
 
@@ -51,9 +51,9 @@ Descritor de segurança em formato de matriz de bytes binários.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um **HRESULT** que indica o status da chamada do método. A lista a seguir lista os valores de retorno que são de significância a serem **obtidas**. Para aplicativos de script e Visual Basic, o resultado pode ser obtido de [Parameters. ReturnValue](parsing-outparameters-objects.md). Para obter mais informações, consulte [construindo objetos de inparâmetros e analisando objetos de Parameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
+Esse método retorna um **HRESULT** que indica o status da chamada do método. A lista a seguir lista os valores de retorno que são de significância a serem **obtidas**. para aplicativos de script e Visual Basic, o resultado pode ser obtido de [parameters. ReturnValue](parsing-outparameters-objects.md). Para obter mais informações, consulte [construindo objetos de inparâmetros e analisando objetos de Parameters](constructing-inparameters-objects-and-parsing-outparameters-objects.md).
 
 <dl> <dt>
 

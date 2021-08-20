@@ -4,12 +4,12 @@ ms.assetid: 92FC1BCE-81E1-4828-8C6B-66527276196A
 title: Propriedades de NoticeNumbers
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 216cf4a96ea5d467c9561cfdbb049aebaacb6d69
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7d81afb4981ec8a6ee3116d18e48ca1d9bb5d90c25527de377e9489e0090b323
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117980160"
 ---
 # <a name="noticenumbers-properties"></a>Propriedades de NoticeNumbers
 

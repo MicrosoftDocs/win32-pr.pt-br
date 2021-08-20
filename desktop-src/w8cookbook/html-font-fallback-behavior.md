@@ -4,24 +4,24 @@ description: Comportamento de fallback de fontes HTML
 ms.assetid: 5BDFBD58-0B34-4A58-BFAF-B8BB1DD569DB
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8fc7da95c46190fd348dda72edc8283ee6438b00
-ms.sourcegitcommit: 80bac5863880f1bd4c1c3e06db27c5d8fb5232b4
+ms.openlocfilehash: 1eabc2c009657adc9b77775c550244c4bbe6a5a3b8b262c8ce915cab4f9e5756
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "105773012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117672044"
 ---
 # <a name="html-font-fallback-behavior"></a>Comportamento de fallback de fontes HTML
 
 ## <a name="platform"></a>Plataforma
 
 Clientes-* * Windows 8.1  
-**Servidores-** Windows Server 2012 R2  
+**servidores-** Windows Server 2012 R2  
 
 
 ## <a name="description"></a>Descrição
 
-A Microsoft está atualizando a lógica para fontes de interface do usuário para vários idiomas em aplicativos da Windows Store usando HTML. Em vez de usar uma única fonte para todos os idiomas, a fonte da interface do usuário agora será determinada de acordo com a linguagem. Por exemplo, as fontes de interface do usuário para japonês agora serão a interface do usuário do Meiryo em aplicativos que usam HTML.
+a Microsoft está atualizando a lógica das fontes da interface do usuário para vários idiomas em aplicativos da Windows Store usando HTML. Em vez de usar uma única fonte para todos os idiomas, a fonte da interface do usuário agora será determinada de acordo com a linguagem. Por exemplo, as fontes de interface do usuário para japonês agora serão a interface do usuário do Meiryo em aplicativos que usam HTML.
 
 ## <a name="manifestation"></a>Manifestação
 
@@ -78,7 +78,7 @@ Os aplicativos afetados podem mitigar esse comportamento especificando uma deter
 | Rúnica              | Segoe UI Symbol       |
 | Sora Sompeng       | Nirmala UI            |
 | Sinhala            | Nirmala UI            |
-| Siríaco             | Estrangelo Edessa     |
+| Siríaco             | Estrangelo Erangelo     |
 | Tai Le             | Microsoft Tai Le      |
 | Tai Lue Novo        | Microsoft New Tai Lue |
 | Tâmil              | Nirmala UI            |
@@ -92,11 +92,11 @@ Os aplicativos afetados podem mitigar esse comportamento especificando uma deter
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

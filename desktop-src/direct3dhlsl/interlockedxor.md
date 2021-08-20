@@ -1,9 +1,9 @@
 ---
-title: Função InterlockedXor (referência de HLSL)
-description: Executa um XOR atômico garantido.
+title: Função InterlockedXor (referência HLSL)
+description: Executa um xor atômico garantido.
 ms.assetid: 844ca31f-d051-4713-b9e1-dd6712ad36ca
 keywords:
-- HLSL da função InterlockedXor
+- Função InterlockedXor HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: b8ecaf0aa78a3bd2c1d79d10bea1e97299605398
-ms.sourcegitcommit: 12e9b14501d51641b690ee0cf764e2b91eb9a140
+ms.openlocfilehash: b8d71a1fbcfe05ef18ad36d34891adfd05c218247510fa6662846aa6209e41a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "103639094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117906991"
 ---
-# <a name="interlockedxor-function-hlsl-reference"></a>Função InterlockedXor (referência de HLSL)
+# <a name="interlockedxor-function-hlsl-reference"></a>Função InterlockedXor (referência HLSL)
 
-Executa um XOR atômico garantido.
+Executa um xor atômico garantido.
 
 ## <a name="syntax"></a>Sintaxe
 
 ``` syntax
 void InterlockedXor(
-  in  R dest,
-  in  T value,
-  out T original_value
+  in  R dest,
+  in  T value,
+  out T original_value
 );
 ```
 
@@ -38,7 +38,7 @@ void InterlockedXor(
 
 <dl> <dt>
 
-*dest* \[ no\]
+*dest* \[ Em\]
 </dt> <dd>
 
 Tipo: **R**
@@ -47,7 +47,7 @@ O endereço de destino.
 
 </dd> <dt>
 
-*valor* \[ do no\]
+*value* \[ Em\]
 </dt> <dd>
 
 Tipo: **T**
@@ -56,7 +56,7 @@ O valor de entrada.
 
 </dd> <dt>
 
-*\_ valor original* \[\]
+*valor \_ original* \[ out\]
 </dt> <dd>
 
 Tipo: **T**
@@ -71,33 +71,33 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esta operação só pode ser executada em recursos tipados int ou uint e variáveis de memória compartilhada. Há dois usos possíveis para essa função. A primeira é quando R é um tipo de variável de memória compartilhada. Nesse caso, a função executa um XOR atômico de valor para o registro de memória compartilhada referenciado pelo dest. O segundo cenário é quando R é um tipo de variável de recurso. Nesse cenário, a função executa um valor XORof atômico para o local do recurso referenciado pelo dest. A função sobrecarregada tem uma variável de saída adicional que será definida com o valor original de dest. Essa operação sobrecarregada só está disponível quando o R é legível e gravável.
+Essa operação só pode ser executada em recursos digitados int ou uint e variáveis de memória compartilhada. Há dois usos possíveis para essa função. A primeira é quando R é um tipo de variável de memória compartilhada. Nesse caso, a função executa um XOR atômico de valor para o registro de memória compartilhada referenciado por dest. O segundo cenário é quando R é um tipo de variável de recurso. Nesse cenário, a função executa um valor XORof atômico para o local do recurso referenciado por dest. A função sobrecarregada tem uma variável de saída adicional que será definida como o valor original de dest. Essa operação sobrecarregada só está disponível quando o R é acessível e pode ser escrito.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
 
 
 
- 
+ 
 
 Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |  x     |  x   | x      |  x       | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -109,9 +109,9 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

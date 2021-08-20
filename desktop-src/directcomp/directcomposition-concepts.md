@@ -4,17 +4,17 @@ description: Esta seção fornece uma visão geral conceitual do DirectCompositi
 ms.assetid: 7839C264-C15F-4E89-82B6-2963A5C61CEC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bea823d2edd27b2c725cefdd73cd053e94124d7f
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: 87328fc3d47925282c6302e143a05d332d5e432275f095cd4c4c87239064736d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "104006324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118088901"
 ---
 # <a name="directcomposition-concepts"></a>Conceitos de DirectComposition
 
 > [!NOTE]
-> Para aplicativos no Windows 10, é recomendável usar APIs do Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
+> para aplicativos no Windows 10, é recomendável usar as APIs Windows. UI. composição em vez de DirectComposition. Para obter mais informações, consulte [modernizar seu aplicativo de área de trabalho usando a camada Visual](/windows/uwp/composition/visual-layer-in-desktop-apps).
 
 Esta seção fornece uma visão geral conceitual do DirectComposition.
 
@@ -30,7 +30,7 @@ Esta seção fornece uma visão geral conceitual do DirectComposition.
 | [Transformações](transforms.md)<br/>                                   | Este tópico discute o suporte do DirectComposition para transformações de afinidade (linear) bidimensionais e descreve os tipos de transformações com suporte do DirectComposition. <br/> |
 | [Effect](effects.md)<br/>                                         | Este tópico discute os conceitos básicos dos efeitos de DirectComposition e descreve os tipos de efeitos aos quais o DirectComposition dá suporte. <br/>                                          |
 | [Animação](animation.md)<br/>                                     | Este tópico discute os conceitos básicos da animação do DirectComposition. <br/>                                                                                                            |
-| [Recorte](clipping.md)<br/>                                       | Este tópico descreve o suporte do DirectComposition para visuais de recorte.<br/>                                                                                                        |
+| [Recortando](clipping.md)<br/>                                       | Este tópico descreve o suporte do DirectComposition para visuais de recorte.<br/>                                                                                                        |
 | [Arquitetura e componentes](architecture-and-components.md)<br/> | Este tópico descreve os componentes que compõem o DirectComposition.<br/>                                                                                                         |
 
 

@@ -4,12 +4,12 @@ ms.assetid: ee49ab53-0a8f-4eab-8f16-2d7481abb5dd
 title: Pool de aplicativos COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3da077ba21762ddd67d829a76af88a562794938d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 5dfd7f25b061a9bc4169daf54b3427a6475f62317a79f46544e34e4c8fec5d9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104500864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117917446"
 ---
 # <a name="com-application-pooling"></a>Pool de aplicativos COM+
 

@@ -4,12 +4,12 @@ description: Um grupo global contém contas de usuário de um domínio que são 
 ms.assetid: 2199258d-bde9-4fdb-b9c1-147616420fbe
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7696755cd5f5cbe75de11d386cb238fa3bd5d35d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 17f57a36f0fbe3835df3661bfe56138f56a9a3d69bf3a2d5716ee298fab9ef4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117797332"
 ---
 # <a name="group-functions"></a>Funções de grupo
 
@@ -33,7 +33,7 @@ As funções do grupo de gerenciamento de rede controlam grupos globais. As fun�
 
 
 
- 
+ 
 
 Ao chamar a função [**NetGroupAdd**](/windows/desktop/api/Lmaccess/nf-lmaccess-netgroupadd) para criar um grupo global, você deve fornecer um nome de grupo. Inicialmente, um novo grupo não tem nenhum membro.
 
@@ -58,6 +58,6 @@ Para obter mais informações, consulte funções de [grupo local](local-group-f
 
 Se estiver programando para Active Directory, você poderá chamar determinados métodos ADSI (interface do serviço de Active Directory) para obter a mesma funcionalidade que pode obter ao chamar as funções do grupo de gerenciamento de rede. Para obter mais informações, consulte [**IADs**](/windows/desktop/api/iads/nn-iads-iadsgroup).
 
- 
+ 
 
- 
+ 

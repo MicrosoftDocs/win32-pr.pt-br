@@ -1,19 +1,19 @@
 ---
-description: Especifica o vídeo do limitar.
+description: Especifica o vídeo de restrição.
 ms.assetid: 2C976D71-DBEA-4669-AFA7-167207D45273
-title: Atributo MFPROTECTION_CONSTRICTVIDEO (Mfidl. h)
+title: MFPROTECTION_CONSTRICTVIDEO atributo (Mfidl.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c8b35c09859875e060c890af8ffddef8ec34bfd
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8b23eab8234ffa6fbf8b67c9e80765c7faebcd1b7b3e710fe20167bcd9baf918
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661828"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117872490"
 ---
-# <a name="mfprotection_constrictvideo-attribute"></a>\_Atributo MFPROTECTION CONSTRICTVIDEO
+# <a name="mfprotection_constrictvideo-attribute"></a>Atributo MFPROTECTION \_ CONSTRICTVIDEO
 
-Especifica o vídeo do limitar.
+Especifica o vídeo de restrição.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -25,9 +25,9 @@ Especifica o vídeo do limitar.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Mfidl.h</dt> </dl> |
 
 
 
@@ -35,7 +35,7 @@ Especifica o vídeo do limitar.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Recupera informações de erro estendidas referentes a métodos que lidam com vários objetos, como Populate e SaveChanges no objeto COMAdminCatalogCollection, e métodos para instalar, importar ou exportar aplicativos ou componentes no objeto COMAdminCatalog.
+description: Recupera informações de erro estendidas sobre métodos que lidam com vários objetos, como Populate e SaveChanges no objeto COMAdminCatalogCollection e métodos para instalar, importar ou exportar aplicativos ou componentes no objeto COMAdminCatalog.
 ms.assetid: cf612fc4-55dd-4706-8c41-2654ca922b9a
 title: Coleção ErrorInfo
 ms.topic: reference
@@ -12,42 +12,42 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: ebcb4b89eee51b475869cfc62676feda10e53084
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 739d281f11e5ef241a9e6e0fd46699d80f5f3f3bb3de6199f014f5450f3a27da
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117916514"
 ---
 # <a name="errorinfo-collection"></a>Coleção ErrorInfo
 
-Recupera informações de erro estendidas referentes a métodos que lidam com vários objetos, como [**populate**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) e [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) no objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) , e métodos para instalar, importar ou exportar aplicativos ou componentes no objeto [**COMAdminCatalog**](comadmincatalog.md) .
+Recupera informações de erro estendidas sobre métodos que lidam com vários objetos, como [**Populate**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-populate) e [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) no objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) e métodos para instalar, importar ou exportar aplicativos ou componentes no objeto [**COMAdminCatalog.**](comadmincatalog.md)
 
-Use o método [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) em um [**COMAdminCatalogCollection**](comadmincatalogcollection.md) para acessar a coleção **errorInfo** associada à coleção original que tem um erro.
+Use o [**método GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) em [**um COMAdminCatalogCollection**](comadmincatalogcollection.md) para acessar a coleção **ErrorInfo** associada à coleção original que tem um erro.
 
-Você deve chamar [**GetCollection**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) em **errorInfo** imediatamente após ocorrer um erro; caso contrário, as informações de erro serão perdidas.
+Você deve chamar [**GetCollection em**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-getcollection) **ErrorInfo** imediatamente após ocorrer um erro; caso contrário, as informações de erro são perdidas.
 
-Esta coleção não dá suporte aos métodos [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) .
+Essa coleção não dá suporte aos [**métodos Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) e [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do [**objeto COMAdminCatalogCollection.**](comadmincatalogcollection.md)
 
 ## <a name="members"></a>Membros
 
-A coleção **errorInfo** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A **coleção ErrorInfo** herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
 Você pode navegar desta coleção para qualquer uma das seguintes coleções:
 
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
-Você pode navegar até essa coleção de cada coleção, exceto **errorInfo**, [**InprocServers**](inprocservers.md), [**PropertyInfo**](propertyinfo.md), [**RelatedCollectionInfo**](relatedcollectioninfo.md), [**root**](root.md)e [**WOWInprocServers**](wowinprocservers.md).
+Você pode navegar até essa coleção de cada coleção, exceto **para ErrorInfo,** [**InprocServers,**](inprocservers.md) [**PropertyInfo,**](propertyinfo.md) [**RelatedCollectionInfo,**](relatedcollectioninfo.md) [**Root**](root.md)e [**WOWInprocServers.**](wowinprocservers.md)
 
 ## <a name="properties"></a>Propriedades
 
-As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
+As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
 
 -   [ErrorCode](#errorcode)
--   [MajorRef](#majorref)
+-   [Majorref](#majorref)
 -   [MinorRef](#minorref)
 -   [Nome](#name)
 
@@ -67,13 +67,13 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="majorref"></a>MajorRef
+### <a name="majorref"></a>Majorref
 
 
 
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O valor da propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) do objeto que tem um erro. Por exemplo, se uma chamada [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) para uma coleção falhar em um objeto específico na coleção, o valor da propriedade de **chave** desse objeto será relatado como o valor de MajorRef. Use essa propriedade para examinar o item que não pôde ser atualizado ou para localizar o componente ou DLL que não é instalado. |
+| Descrição    | O [**valor**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) da propriedade Key para o objeto que tem um erro. Por exemplo, se uma chamada [**SaveChanges**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-savechanges) para uma coleção falhar em um objeto específico na coleção, o valor da propriedade **Key** desse objeto será relatado como o valor MajorRef. Use essa propriedade para ver o item que falha ao atualizar ou para encontrar o componente ou DLL que falha ao instalar. |
 | Access         | ReadOnly                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Type           | String                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Padrão        | Nenhum                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -105,7 +105,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | O nome do objeto ou arquivo que tem um erro. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) ou [**nome**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
+| Descrição    | O nome do objeto ou arquivo que tem um erro. Essa propriedade é retornada quando [**o método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key ou [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto dessa coleção. |
 | Access         | ReadOnly                                                                                                                                                                                                                 |
 | Type           | String                                                                                                                                                                                                                   |
 | Padrão        | Nenhum                                                                                                                                                                                                                     |

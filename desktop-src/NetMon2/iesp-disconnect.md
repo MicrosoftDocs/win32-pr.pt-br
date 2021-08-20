@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: d0a07748781a567c889e879e2e99462d8cfb876a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: a14ea098c27d4a16a74c03928b924eb77ee0eee8fa1a674d29fd8c3bd71aefdf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108110754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117981220"
 ---
 # <a name="iespdisconnect-method"></a>Método IESP::D isconnect
 
@@ -50,7 +50,7 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**captura de NMERR \_**</dt> </dl>      | O NPP está capturando dados. Não é possível desconectar da rede enquanto a captura de dados está em andamento.<br/> |
 | <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl> | O NPP não está conectado à rede.<br/>                                                             |
-| <dl> <dt>**NMERR \_ não \_ ESP**</dt> </dl>       | O NPP está conectado à rede, mas não com o método [IESP:: Connect](iesp-connect.md) .<br/>       |
+| <dl> <dt>**NMERR \_ não \_ ESP**</dt> </dl>       | o NPP está conectado à rede, mas não com o método [IESP:: Conexão](iesp-connect.md) .<br/>       |
 
 
 
@@ -73,14 +73,14 @@ Este método não pode ser chamado quando o NPP está capturando dados. Você de
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP:: conectar](iesp-connect.md)
+[IESP:: Conexão](iesp-connect.md)
 </dt> <dt>
 
 [IESP:: Stop](iesp-stop.md)

@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101097
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: ed791ec0e3886a8e428c694dca8ac3cf52fa08e5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 896e72c17e4ac3a604f511f60da0b02704edd1bc3d383413701b6e2b472ab8d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104171412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117715626"
 ---
 # <a name="esentbadpatchpageexception-methods"></a>Métodos EsentBadPatchPageException 
 

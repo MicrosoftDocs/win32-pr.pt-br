@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: 498892fc2cc5ada2e177b8fb3f70f40a1ef10dfe
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ba50756c515c363b4a574867ed8bcf71bf249a883022664cc31ecd15391eadc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920690"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117981976"
 ---
 # <a name="getprotocolfromtable-function"></a>Função GetProtocolFromTable
 
@@ -62,7 +62,7 @@ Se disponível na tabela entrega, os dados da instância para o próximo protoco
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será um identificador de protocolo.
 

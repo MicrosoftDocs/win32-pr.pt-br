@@ -2,7 +2,7 @@
 description: Executa uma consulta para receber eventos.
 ms.assetid: 0b0e8313-4ffd-4d4a-8965-d2c6743e7573
 ms.tgt_platform: multiple
-title: SWbemServices.Exemétodo cNotificationQueryAsync (Wbemdisp. h)
+title: SWbemServices.Exemétodo cNotificationQueryAsync (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,22 +16,22 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 8e2ecddf290d83583b3108620b8b4bb23be7c957
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0f6c02be1be258f84afcbc941dafdaae6b492f995c25d9718ddbf719c347ae27
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105791579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118108030"
 ---
 # <a name="swbemservicesexecnotificationqueryasync-method"></a>SWbemServices.Exemétodo cNotificationQueryAsync
 
-O método **ExecNotificationQueryAsync** do objeto [**SWbemServices**](swbemservices.md) executa uma consulta para receber eventos. Essa chamada retorna imediatamente e os resultados e o status são retornados para o chamador por meio de eventos entregues ao coletor especificado em *objWbemSink*.
+O **método ExecNotificationQueryAsync** do objeto [**SWbemServices**](swbemservices.md) executa uma consulta para receber eventos. Essa chamada retorna imediatamente e os resultados e o status são retornados ao chamador por meio de eventos entregues ao sink especificado em *objWbemSink.*
 
-Os eventos que são especificados na consulta podem ser eventos intrínsecos Instrumentação de gerenciamento do Windows (WMI), como [**\_ \_ InstanceCreationEvent**](--instancecreationevent.md)ou eventos extrínsecos, como [**Win32 \_ IP4RouteTableEvent**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4routetableevent) ou [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent). Para obter mais informações, consulte [determinando o tipo de evento a ser recebido](determining-the-type-of-event-to-receive.md).
+Os eventos especificados na consulta podem ser eventos intrínsecos Windows WMI (Instrumentação de Gerenciamento), como [**\_ \_ InstanceCreationEvent**](--instancecreationevent.md)ou eventos extrínsecos, como [**Win32 \_ IP4RouteTableEvent**](/previous-versions/windows/desktop/wmiiprouteprov/win32-ip4routetableevent) ou [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent). Para obter mais informações, [consulte Determinando o tipo de evento a ser recebido.](determining-the-type-of-event-to-receive.md)
 
-O método é chamado no modo assíncrono. Para obter mais informações, consulte [chamando um método](calling-a-method.md).
+O método é chamado no modo assíncrono. Para obter mais informações, consulte [Chamando um método](calling-a-method.md).
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,25 +56,25 @@ SWbemServices.ExecNotificationQueryAsync( _
 *objWbemSink* 
 </dt> <dd>
 
-Obrigatórios. Coletor de objeto que recebe a notificação de eventos de forma assíncrona. Crie um objeto [**SWbemSink**](swbemsink.md) para receber os objetos.
+Obrigatórios. O sink do objeto que recebe a notificação de eventos de forma assíncrona. Crie um [**objeto SWbemSink**](swbemsink.md) para receber os objetos.
 
 </dd> <dt>
 
 *strQuery* 
 </dt> <dd>
 
-Obrigatórios. Cadeia de caracteres que contém o texto da consulta relacionada ao evento. Este parâmetro não pode ficar em branco. Para obter mais informações sobre como criar cadeias de caracteres de consulta do WMI, consulte [consultando com WQL](querying-with-wql.md) e a referência [WQL](wql-sql-for-wmi.md) .
+Obrigatórios. Cadeia de caracteres que contém o texto da consulta relacionada ao evento. Esse parâmetro não pode estar em branco. Para obter mais informações sobre como criar cadeias de caracteres de consulta WMI, consulte Consultando com [WQL](querying-with-wql.md) e a [referência WQL.](wql-sql-for-wmi.md)
 
 </dd> <dt>
 
-*strQueryLanguage* \[ adicional\]
+*strQueryLanguage* \[ Opcional\]
 </dt> <dd>
 
 Cadeia de caracteres que contém a linguagem de consulta a ser usada. Se especificado, esse valor deve ser "WQL".
 
 </dd> <dt>
 
-*iFlags* \[ adicional\]
+*iFlags* \[ Opcional\]
 </dt> <dd>
 
 Inteiro que determina o comportamento da consulta. Esse parâmetro pode ser definido com os valores a seguir.
@@ -83,86 +83,86 @@ Inteiro que determina o comportamento da consulta. Esse parâmetro pode ser defi
 
 <span id="wbemFlagSendStatus"></span><span id="wbemflagsendstatus"></span><span id="WBEMFLAGSENDSTATUS"></span>
 
-<span id="wbemFlagSendStatus"></span><span id="wbemflagsendstatus"></span><span id="WBEMFLAGSENDSTATUS"></span>wbemFlagSendStatus * * * * (128 (0x80))
+<span id="wbemFlagSendStatus"></span><span id="wbemflagsendstatus"></span><span id="WBEMFLAGSENDSTATUS"></span>wbemFlagSendStatus*** (128 (0x80))
 
 
 </dt> <dd>
 
-Faz com que chamadas assíncronas enviem atualizações de status para o manipulador de eventos [**OnProgress**](swbemsink-onprogress.md) para o coletor de objetos.
+Faz com que chamadas assíncronas enviem atualizações de status para o manipulador de eventos [**OnProgress**](swbemsink-onprogress.md) para o sink do objeto.
 
 </dd> <dt>
 
 <span id="wbemFlagDontSendStatus"></span><span id="wbemflagdontsendstatus"></span><span id="WBEMFLAGDONTSENDSTATUS"></span>
 
-<span id="wbemFlagDontSendStatus"></span><span id="wbemflagdontsendstatus"></span><span id="WBEMFLAGDONTSENDSTATUS"></span>wbemFlagDontSendStatus * * * * (0 (0x0))
+<span id="wbemFlagDontSendStatus"></span><span id="wbemflagdontsendstatus"></span><span id="WBEMFLAGDONTSENDSTATUS"></span>wbemFlagDontSendStatus*** (0 (0x0))
 
 
 </dt> <dd>
 
-Impede que chamadas assíncronas enviem atualizações de status para o manipulador de eventos [**OnProgress**](swbemsink-onprogress.md) para o coletor de objetos.
+Impede que chamadas assíncronas enviem atualizações de status para o manipulador de eventos [**OnProgress**](swbemsink-onprogress.md) para o sink do objeto.
 
 </dd> </dl> </dd> <dt>
 
-*objwbemNamedValueSet* \[ adicional\]
+*objwbemNamedValueSet* \[ Opcional\]
 </dt> <dd>
 
-Normalmente, isso é indefinido. Caso contrário, esse é um objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) cujos elementos representam as informações de contexto que podem ser usadas pelo provedor que presta a solicitação. Um provedor que dá suporte ou exige essas informações deve documentar os nomes de valor reconhecidos, o tipo de dados do valor, os valores permitidos e a semântica.
+Normalmente, isso é indefinido. Caso contrário, esse é [**um objeto SWbemNamedValueSet**](swbemnamedvalueset.md) cujos elementos representam as informações de contexto que podem ser usadas pelo provedor que serviços a solicitação. Um provedor que dá suporte ou requer essas informações deve documentar os nomes de valor reconhecidos, o tipo de dados do valor, os valores permitidos e a semântica.
 
 </dd> <dt>
 
-*objWbemAsyncContext* \[ adicional\]
+*objWbemAsyncContext* \[ Opcional\]
 </dt> <dd>
 
-Esse é um objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) que retorna ao coletor de objeto para identificar a origem da chamada assíncrona original. Use esse parâmetro para fazer várias chamadas assíncronas usando o mesmo coletor de objeto. Para usar esse parâmetro, crie um objeto **SWbemNamedValueSet** e use o método [**SWbemNamedValueSet. Add**](swbemnamedvalueset-add.md) para adicionar um valor que identifica a chamada assíncrona que você está fazendo. O objeto **SWbemNamedValueSet** é retornado para o coletor de objeto e a origem da chamada pode ser extraída usando o método [**SWbemNamedValueSet. Item**](swbemnamedvalueset-item.md) . Para obter mais informações, consulte [chamando um método](calling-a-method.md).
+Este é um [**objeto SWbemNamedValueSet**](swbemnamedvalueset.md) que retorna ao sink do objeto para identificar a origem da chamada assíncrona original. Use esse parâmetro para fazer várias chamadas assíncronas usando o mesmo sink de objeto. Para usar esse parâmetro, crie um objeto **SWbemNamedValueSet** e use o método [**SWbemNamedValueSet.Add**](swbemnamedvalueset-add.md) para adicionar um valor que identifica a chamada assíncrona que você está fazendo. O **objeto SWbemNamedValueSet** é retornado ao sink do objeto e a origem da chamada pode ser extraída usando o [**método SWbemNamedValueSet.Item.**](swbemnamedvalueset-item.md) Para obter mais informações, consulte [Chamando um método](calling-a-method.md).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método não retorna um valor. Se for bem-sucedido, o coletor receberá um evento [**OnObjectReady**](swbemsink-onobjectready.md) por instância. Após a última instância, o coletor de objeto recebe um evento [**OnCompleted**](swbemsink-oncompleted.md) .
+Esse método não retorna um valor. Se for bem-sucedido, o sink receberá um [**evento OnObjectReady**](swbemsink-onobjectready.md) por instância. Após a última instância, o sink do objeto recebe [**um evento OnCompleted.**](swbemsink-oncompleted.md)
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Após a conclusão do método **ExecNotificationQueryAsync** , o objeto [Err](/previous-versions//sbf5ze0e(v=vs.85)) pode conter um dos códigos de erro identificados na lista a seguir.
+Após a conclusão do **método ExecNotificationQueryAsync,** o [objeto Err](/previous-versions//sbf5ze0e(v=vs.85)) pode conter um dos códigos de erro identificados na lista a seguir.
 
 <dl> <dt>
 
-**wbemErrAccessDenied** -2147749891 (0x80041003)
+**wbemErrAccessDenied** – 2147749891 (0x80041003)
 </dt> <dd>
 
 O usuário atual não está autorizado a exibir o conjunto de resultados.
 
 </dd> <dt>
 
-**wbemErrFailed** -2147749889 (0x80041001)
+**wbemErrFailed** – 2147749889 (0x80041001)
 </dt> <dd>
 
 Erro não especificado.
 
 </dd> <dt>
 
-**wbemErrInvalidParameter** -2147749896 (0x80041008)
+**wbemErrInvalidParameter** – 2147749896 (0x80041008)
 </dt> <dd>
 
-Parâmetro inválido especificado.
+O parâmetro inválido é especificado.
 
 </dd> <dt>
 
-**wbemErrInvalidQuery** -2147749911 (0x80041017)
+**wbemErrInvalidQuery** – 2147749911 (0x80041017)
 </dt> <dd>
 
-Sintaxe de consulta inválida.
+A sintaxe de consulta não é válida.
 
 </dd> <dt>
 
-**wbemErrInvalidQueryType** -2147749912 (0x80041018)
+**wbemErrInvalidQueryType** – 2147749912 (0x80041018)
 </dt> <dd>
 
 Não há suporte para a linguagem de consulta solicitada.
 
 </dd> <dt>
 
-**wbemErrOutOfMemory** -2147749894 (0x80041006)
+**wbemErrOutOfMemory** – 2147749894 (0x80041006)
 </dt> <dd>
 
 Não há memória suficiente para concluir a operação.
@@ -171,19 +171,19 @@ Não há memória suficiente para concluir a operação.
 
 ## <a name="remarks"></a>Comentários
 
-O método **ExecNotificationQueryAsync** retorna objetos de tipo de evento que geram eventos futuros. Os objetos de evento que **ExecNotificationQueryAsync** solicitações podem ser intrínsecos (por exemplo, [**\_ \_ InstanceCreationEvent**](--instancecreationevent.md)) ou extrínsecos (por exemplo, eventos de [**RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent) ou SNMP). Para obter mais informações, consulte [determinando o tipo de evento a ser recebido](determining-the-type-of-event-to-receive.md).
+O **método ExecNotificationQueryAsync** retorna objetos de tipo de evento que eventos futuros geram. Os objetos de evento que **ExecNotificationQueryAsync** solicita podem ser intrínsecos (por exemplo, [**\_ \_ InstanceCreationEvent**](--instancecreationevent.md)) ou extrínsecos (por exemplo, [**eventos RegistryKeyChangeEvent**](/previous-versions/windows/desktop/regprov/registrykeychangeevent) ou SNMP). Para obter mais informações, [consulte Determinando o tipo de evento a ser recebido.](determining-the-type-of-event-to-receive.md)
 
-A chamada para **ExecNotificationQueryAsync** retorna imediatamente. Os objetos e status solicitados são retornados ao chamador por meio de retornos de chamada entregues ao coletor especificado em *objWbemSink*. Para processar cada objeto quando ele for retornado, crie um *objWbemSink*. Sub-rotina de evento [**OnObjectReady**](swbemsink-onobjectready.md) . Depois que todos os objetos forem retornados, execute o processamento final para implementar o *objWbemSink*. Evento [**OnCompleted**](swbemsink-oncompleted.md) .
+A chamada para **ExecNotificationQueryAsync** retorna imediatamente. Os objetos e o status solicitados são retornados ao chamador por meio de retornos de chamada entregues ao sink especificado em *objWbemSink.* Para processar cada objeto quando ele for retornado, crie *um objWbemSink.* Sub-rotina de evento [**OnObjectReady.**](swbemsink-onobjectready.md) Depois que todos os objetos são retornados, execute o processamento final para implementar *o objWbemSink.* [**Evento OnCompleted.**](swbemsink-oncompleted.md)
 
-Um retorno de chamada assíncrono permite que um usuário não autenticado forneça dados para o coletor. Isso representa riscos de segurança para seus scripts e aplicativos. Para eliminar os riscos, consulte [definindo a segurança em uma chamada assíncrona](setting-security-on-an-asynchronous-call.md).
+Um retorno de chamada assíncrono permite que um usuário não autenticado forneça dados para o sink. Isso representa riscos de segurança para seus scripts e aplicativos. Para eliminar os riscos, consulte [Definindo a segurança em uma chamada assíncrona](setting-security-on-an-asynchronous-call.md).
 
-Há limites para o número de palavras-chave **and** e **or** que podem ser usadas em consultas WQL. Grandes números de palavras-chave WQL usadas em uma consulta complexa podem fazer com que o WMI retorne o código de erro de **\_ \_ \_ violação E de cota** de Asan valor de **HRESULT** . O limite de palavras-chave WQL depende da complexidade da consulta.
+Há limites para o número de palavras-chave **AND** e **OR** que podem ser usadas em consultas WQL. Um grande número de palavras-chave WQL usadas em uma consulta complexa pode fazer com que o WMI retorne o código de erro **WBEM \_ E \_ QUOTA \_ VIOLATION** como um **valor HRESULT.** O limite de palavras-chave WQL depende de quão complexa a consulta é.
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código VBScript a seguir mostra um script que está aguardando uma notificação de evento WMI que indica que um processo foi encerrado. Ele está aguardando um evento intrínseco do WMI, uma instância da classe de evento [**\_ \_ InstanceDeletionEvent**](--instancedeletionevent.md). O **\_ \_ InstanceDeletionEvent** deve representar a exclusão de uma instância do [**\_ processo Win32**](/windows/desktop/CIMWin32Prov/win32-process). Para obter mais informações sobre eventos intrínsecos do WMI, consulte [determinando o tipo de evento a ser recebido](determining-the-type-of-event-to-receive.md).
+O exemplo de código VBScript a seguir mostra um script que está aguardando uma notificação de evento WMI que indica que um processo foi encerrado. Ele está aguardando um evento intrínseco WMI, uma instância da classe de evento [**\_ \_ InstanceDeletionEvent**](--instancedeletionevent.md). O **\_ \_ InstanceDeletionEvent** deve representar a exclusão de uma instância do [**Processo win32. \_**](/windows/desktop/CIMWin32Prov/win32-process) Para obter mais informações sobre eventos intrínsecos do WMI, consulte [Determinando o tipo de evento a ser recebido.](determining-the-type-of-event-to-receive.md)
 
-O script a seguir é executado indefinidamente até que o computador seja reinicializado, o WMI é interrompido ou o script é interrompido. Para interromper o script manualmente, use o Gerenciador de tarefas para interromper o processo. Para interrompê-lo programaticamente, use o método [**Terminate**](/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process) na classe de processo do Win32 \_ .
+O script a seguir é executado indefinidamente até que o computador seja reinicializado, o WMI seja interrompido ou o script seja interrompido. Para interromper o script manualmente, use Gerenciador de Tarefas para interromper o processo. Para interromper programaticamente, use o [**método Terminate**](/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process) na classe Processo Win32. \_
 
 
 ```VB
@@ -219,11 +219,11 @@ End Sub
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMSERVICES CLSID<br/>                                                         |
-| IID<br/>                      | ISWbemServices de IID \_<br/>                                                          |
+| CLSID<br/>                    | CLSID \_ SWbemServices<br/>                                                         |
+| IID<br/>                      | IID \_ ISWbemServices<br/>                                                          |
 
 
 
@@ -240,7 +240,7 @@ End Sub
 [**SWbemServices.ExecQueryAsync**](swbemservices-execqueryasync.md)
 </dt> <dt>
 
-[Registrando para eventos de registro do sistema](registering-for-system-registry-events.md)
+[Registrando-se para eventos do Registro do Sistema](registering-for-system-registry-events.md)
 </dt> <dt>
 
 [Determinando o tipo de evento a ser recebido](determining-the-type-of-event-to-receive.md)

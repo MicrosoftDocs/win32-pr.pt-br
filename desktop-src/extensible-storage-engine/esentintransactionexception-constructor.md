@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 359894eed10898b975c0ca9f4d4350bf4a3fc26c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 24a94aea69b8b00ce7f289470fbc0216f3015d6597e7e7fc1aaf8d0912b4ca1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921823"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117709712"
 ---
 # <a name="esentintransactionexception-constructor"></a>Construtor EsentInTransactionException
 
 Inicializa uma nova instância da classe EsentInTransactionException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentInTransactionException()
 
 [Classe EsentInTransactionException](./esentintransactionexception-class.md)
 
-[Membros do EsentInTransactionException](./esentintransactionexception-members.md)
+[Membros EsentInTransactionException](./esentintransactionexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

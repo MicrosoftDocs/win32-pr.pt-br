@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ba382552d700ddddee02cdc1343936e6bcf6837
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 8d467d60444588001a115f9b1ad3667f35fc9edab69a64402f42b4885d70a86d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105749550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117912955"
 ---
 # <a name="cd3dx12_pipeline_state_stream_input_layout-structure"></a>\_Estrutura de \_ \_ layout de entrada de fluxo de estado de \_ pipeline CD3DX12 \_
 

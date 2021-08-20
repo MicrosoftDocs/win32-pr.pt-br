@@ -1,19 +1,19 @@
 ---
-description: Indica o número de buffers descompactados que o coletor de mídia do EVR (processador de vídeo avançado) exige para desentrelaçamento.
+description: Indica o número de buffers descompactados que o sink de mídia EVR (renderização de vídeo aprimorado) requer para desintercalar.
 ms.assetid: b62bff64-153f-4028-a546-250419dc4152
-title: Atributo MF_SA_REQUIRED_SAMPLE_COUNT (Mftransform. h)
+title: MF_SA_REQUIRED_SAMPLE_COUNT atributo (Mftransform.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fbe7d47370cd4877a0f9722d443bc6bb3f7bdeb2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2db64ae093228cc50695fed3ac5e39a8c44987b54d72d6e1295ccae2b6a95f42
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118059407"
 ---
-# <a name="mf_sa_required_sample_count-attribute"></a>\_Atributo de \_ \_ contagem de amostra necessário \_ do MF SA
+# <a name="mf_sa_required_sample_count-attribute"></a>Atributo MF \_ SA \_ REQUIRED \_ SAMPLE \_ COUNT
 
-Indica o número de buffers descompactados que o coletor de mídia do EVR (processador de vídeo avançado) exige para desentrelaçamento.
+Indica o número de buffers descompactados que o sink de mídia EVR (renderização de vídeo aprimorado) requer para desintercalar.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -23,13 +23,13 @@ Indica o número de buffers descompactados que o coletor de mídia do EVR (proce
 
 Esse é um atributo de nível de fluxo. Para obter o atributo do EVR, faça o seguinte:
 
-1.  Chame [**IMFMediaSink:: GetStreamSinkByIndex**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getstreamsinkbyindex) para obter o coletor de fluxo.
-2.  Consulte o coletor de fluxo para a interface [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
-3.  Chamar [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+1.  Chame [**IMFMediaSink::GetStreamSinkByIndex para**](/windows/desktop/api/mfidl/nf-mfidl-imfmediasink-getstreamsinkbyindex) obter o sink de fluxo.
+2.  Consulte o sink de fluxo para a interface [**IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
+3.  Chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Internamente, o mixer fornece esse atributo para o EVR. Para obter o atributo do mixer, chame [**IMFTransform:: GetInputStreamAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputstreamattributes).
+Internamente, o mixer fornece esse atributo para o EVR. Para obter o atributo do mixer, chame [**IMFTransform::GetInputStreamAttributes**](/windows/desktop/api/mftransform/nf-mftransform-imftransform-getinputstreamattributes).
 
-A constante de GUID para esse atributo é exportada de mfuuid. lib.
+A constante GUID para esse atributo é exportada de mfuuid.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -37,9 +37,9 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos \| UWP do Windows Vista desktop\]<br/>                                    |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2008 \[ Desktop aplicativos \| UWP\]<br/>                              |
-| parâmetro<br/>                   | <dl> <dt>Mftransform. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Aplicativos \| UWP de aplicativos da área de trabalho do Vista\]<br/>                                    |
+| Servidor mínimo com suporte<br/> | Windows Aplicativos \[ UWP do Server 2008 Desktop \|\]<br/>                              |
+| Cabeçalho<br/>                   | <dl> <dt>Mftransform.h</dt> </dl> |
 
 
 
@@ -47,16 +47,16 @@ A constante de GUID para esse atributo é exportada de mfuuid. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
-[**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
+[**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32)
 </dt> <dt>
 
-[**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
+[**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32)
 </dt> <dt>
 
-[Atributos de Media Foundation](media-foundation-attributes.md)
+[Media Foundation atributos](media-foundation-attributes.md)
 </dt> </dl>
 
  
