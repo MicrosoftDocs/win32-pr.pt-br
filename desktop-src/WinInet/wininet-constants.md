@@ -1,36 +1,36 @@
 ---
-title: Constantes do WinINet
-description: A seguir estão as constantes do WinINet.
+title: Constantes WinINet
+description: A seguir estão as Constantes WinINet.
 ms.assetid: 37506cb2-f45d-4a2b-8afb-548f62e863bc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed9b5ee6893223956313a7fffa5367c0e552f83b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 585028f3027417de96c4aad704a0f7f6cc60353e30ffc0c2ba953daa75390432
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119570146"
 ---
-# <a name="wininet-constants"></a>Constantes do WinINet
+# <a name="wininet-constants"></a>Constantes WinINet
 
-A seguir estão as constantes do WinINet.
+A seguir estão as Constantes WinINet.
 
 -   [Sinalizadores de API](api-flags.md)
--   [Constantes do grupo de cache](cache-group-constants.md)
+-   [Constantes do Grupo de Cache](cache-group-constants.md)
 -   [Mensagens de erro](wininet-errors.md)
--   [Valores de tipo Gopher](gopher-type-values.md)
+-   [Valores de tipo gopher](gopher-type-values.md)
     > [!Note]  
-    > Somente Windows XP e Windows Server 2003 R2 e versões anteriores.
+    > Windows XP e Windows Server 2003 R2 e anteriores apenas.
 
-     
+     
 
 -   [Códigos de status HTTP](http-status-codes.md)
 -   [Sinalizadores de opção](option-flags.md)
 -   [Sinalizadores de informações de consulta](query-info-flags.md)
 
- 
+ 
 
- 
+ 
 
 
 

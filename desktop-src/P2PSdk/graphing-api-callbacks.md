@@ -4,12 +4,12 @@ ms.assetid: a8e083ab-b5e3-4186-99fb-cbb536e9d529
 title: Retornos de chamada da API de gráfico
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c11f4f559307e457822cd0e7ce18ef4b44119697
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0604c03ce768372e4f6fa81abfe69184ef45f49f41a2907d652b77b97902b6f9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104011026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119776246"
 ---
 # <a name="graphing-api-callbacks"></a>Retornos de chamada da API de gráfico
 

@@ -24,12 +24,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6ea4b005e1b37ea1b5212e2637467b8a4d62bd94
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f226c3d3a933df14b7ee1a6b13c374784a963dc5c45be76d7ef8cbf55fe0621d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103837358"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038964"
 ---
 # <a name="jet_indexidgethashcode-method"></a>JET_INDEXID. Método GetHashCode
 
@@ -54,7 +54,7 @@ returnValue = instance.GetHashCode()
 public override int GetHashCode()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Int32](/dotnet/api/system.int32)  
 O código hash para essa instância.  

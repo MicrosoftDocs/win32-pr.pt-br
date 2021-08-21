@@ -4,16 +4,16 @@ ms.assetid: 4da2046c-00fd-46a8-805f-503729cfa531
 title: Conferência de telefonia IP de reunião
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4d1cbfc3a1e07fdc245af0ae6b93277c90083a75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6c1486f2ca730f1efb0391fdea5a3ad22bec65385a31bce9bf233f0f230b7ee5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169477"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773566"
 ---
 # <a name="rendezvous-ip-telephony-conferencing"></a>Conferência de telefonia IP de reunião
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[os controles e as interfaces de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 Os controles de reunião TAPI 3 permitem que um programador crie aplicativos que podem criar e descobrir conferências de IP de multicast de multimídia.
 

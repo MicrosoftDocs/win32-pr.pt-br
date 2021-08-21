@@ -4,16 +4,16 @@ ms.assetid: 4a65edb9-77de-42d9-85a1-1e3c41706417
 title: 'Método ITConferenceBlob:: SetConferenceBlob (Sdpblb. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47779807e5bde6a070b4600aec903309c7679dc8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 391a20ade99d3e35da9d4f76eaab13b6ba65b07b5693321c6c3b2bb63f53c2d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769416"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118865420"
 ---
 # <a name="itconferenceblobsetconferenceblob-method"></a>Método ITConferenceBlob:: SetConferenceBlob
 
-\[ Os controles e as interfaces da conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e nas versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[os controles e as interfaces de conferência de telefonia IP de reunião não estão disponíveis para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
 O método **SetConferenceBlob** confirma as alterações no blob de conferência. Para inicializar o blob de conferência pela primeira vez, use o método [**init**](itconferenceblob-init.md) em vez disso.
 
@@ -47,7 +47,7 @@ Ponteiro para um **BSTR** que contém o blob de conferência.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -76,7 +76,7 @@ O aplicativo deve usar [**SysAllocString**](/windows/win32/api/oleauto/nf-oleaut
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
+| Cabeçalho<br/>       | <dl> <dt>Sdpblb. h</dt> </dl>   |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Sdpblb.dll</dt> </dl> |
 

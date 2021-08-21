@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1d2dfc5ce874a7c4ce5b205c9b92436040aa60a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: dfd2f750e5279e5dff57477d9c68e0868366603f4975297a6ef04404f4ce0414
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454845"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118878910"
 ---
 # <a name="gxfpf_-constants"></a>\_ \* Constantes GXFPF
 
@@ -45,8 +45,8 @@ Os parâmetros *dwFlags* dos métodos [ITextStoreACP:: GetACPFromPoint](/windows
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                         |
-| parâmetro<br/>                   | <dl> <dt>Textstor. h</dt> </dl>   |
+| Redistribuível<br/>          | TSF 1,0 em Windows 2000 Professional<br/>                                         |
+| Cabeçalho<br/>                   | <dl> <dt>Textstor. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Textstor. idl</dt> </dl> |
 
 

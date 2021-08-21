@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9877300a2135b7082677193696cd2d11811ab3dc
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: dbf010482472077a876fcb8bf06fddd0d57ffa32e2ea1203c0401e56fd69b5d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089167"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081000"
 ---
 # <a name="changestartmode-method-of-the-win32_baseservice-class"></a>Método ChangeStartMode da classe Win32 \_ BaseService
 
@@ -45,7 +45,7 @@ uint32 ChangeStartMode(
 *StartMode* \[ no\]
 </dt> <dd>
 
-Modo de início do serviço base do Windows. O padrão é "Automatic".
+modo de início do serviço base de Windows. O padrão é "Automatic".
 
 <dt>
 
@@ -104,7 +104,7 @@ O serviço está desabilitado.
 
 </dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores listados na lista a seguir ou qualquer outro valor para indicar um erro.
 
@@ -350,8 +350,8 @@ O serviço está pausado atualmente no sistema.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -363,7 +363,7 @@ O serviço está pausado atualmente no sistema.
 [Classes do sistema operacional](/previous-versions//aa392727(v=vs.85))
 </dt> <dt>
 
-[**\_BaseService Win32**](win32-baseservice.md)
+[**Win32 \_ BaseService**](win32-baseservice.md)
 </dt> </dl>
 
  

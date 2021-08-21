@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Construtor EsentMemoryException (String, JET_err)'
-title: Construtor EsentMemoryException (String, JET_err)
+description: 'Saiba mais sobre: Construtor EsentMemoryException (cadeia de caracteres, JET_err)'
+title: Construtor EsentMemoryException (cadeia de caracteres, JET_err)
 TOCTitle: EsentMemoryException constructor (String, JET_err)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.EsentMemoryException.#ctor(System.String,Microsoft.Isam.Esent.Interop.JET_err)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentmemoryexception.esentmemoryexception(v=EXCHG.10)
@@ -27,12 +27,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119040744"
 ---
-# <a name="esentmemoryexception-constructor-string-jet_err"></a>Construtor EsentMemoryException (String, JET_err)
+# <a name="esentmemoryexception-constructor-string-jet_err"></a>Construtor EsentMemoryException (cadeia de caracteres, JET_err)
 
 Inicializa uma nova instância da classe EsentMemoryException.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -60,14 +60,14 @@ protected EsentMemoryException(
 #### <a name="parameters"></a>Parâmetros
 
   - descrição  
-    Tipo: [System.String](/dotnet/api/system.string)  
+    Tipo: [System. String](/dotnet/api/system.string)  
     
     A descrição do erro.
 
 <!-- end list -->
 
-  - Err  
-    Tipo: [Microsoft.Isam.Esent.Interop.JET_err](./jet-err-enumeration.md)  
+  - erra  
+    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_err](./jet-err-enumeration.md)  
     
     O código de erro da exceção.
 
@@ -77,8 +77,8 @@ protected EsentMemoryException(
 
 [Classe EsentMemoryException](./esentmemoryexception-class.md)
 
-[Membros EsentMemoryException](./esentmemoryexception-members.md)
+[Membros do EsentMemoryException](./esentmemoryexception-members.md)
 
-[Sobrecarga EsentMemoryException](./esentmemoryexception-constructor.md)
+[Sobrecarga de EsentMemoryException](./esentmemoryexception-constructor.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

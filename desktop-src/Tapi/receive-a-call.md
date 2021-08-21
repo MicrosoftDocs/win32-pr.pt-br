@@ -13,14 +13,14 @@ ms.locfileid: "119060464"
 ---
 # <a name="receive-a-call"></a>Receber uma chamada
 
-O exemplo de código a seguir demonstra o tratamento de novas notificações de chamada, como localizar ou criar terminais apropriados para renderizar a mídia. Este exemplo é uma parte da instrução switch que um aplicativo deve implementar para manipulação de eventos. O próprio código pode estar contido na implementação de [**ITTAPIEventNotification::Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)ou o método Event pode postar uma mensagem em um thread de trabalho que contém a opção . 
+O exemplo de código a seguir demonstra o tratamento de novas notificações de chamada, como localizar ou criar terminais apropriados para renderizar a mídia. Este exemplo é uma parte da instrução switch que um aplicativo deve implementar para manipulação de eventos. O próprio código pode estar contido na implementação de [**ITTAPIEventNotification:: Event**](/windows/desktop/api/Tapi3if/nf-tapi3if-ittapieventnotification-event)ou o método de **evento** pode postar uma mensagem em um thread de trabalho que contém a opção.
 
-Antes de usar este exemplo de código, você deve executar as operações em [Inicializar TAPI,](initialize-tapi.md)Selecionar um [Endereço](select-an-address.md)e [Registrar Eventos](register-events.md).
+Antes de usar este exemplo de código, você deve executar as operações em [inicializar TAPI](initialize-tapi.md), [selecionar um endereço](select-an-address.md)e [registrar eventos](register-events.md).
 
-Além disso, você deve executar as operações ilustradas em Selecionar um Terminal após [a](select-a-terminal.md) recuperação dos ponteiros de interface [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) e [**ITAddress.**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddress)
+Além disso, você deve executar as operações ilustradas em [selecionar um terminal](select-a-terminal.md) seguindo a recuperação dos ponteiros de interface [**ITBasicCallControl**](/windows/desktop/api/tapi3if/nn-tapi3if-itbasiccallcontrol) e [**ITAddress**](/windows/desktop/api/tapi3if/nn-tapi3if-itaddress) .
 
 > [!Note]  
-> Este exemplo não tem a verificação de erro e as versões apropriadas para o código de produção.
+> Este exemplo não tem a verificação de erros e as versões apropriadas para o código de produção.
 
  
 

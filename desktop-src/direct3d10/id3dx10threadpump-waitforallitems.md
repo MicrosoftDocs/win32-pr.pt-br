@@ -1,7 +1,7 @@
 ---
-description: Aguarde até que todos os itens de trabalho na bomba de threads terminem.
+description: Aguarde até que todos os itens de trabalho na bomba de thread sejam concluídos.
 ms.assetid: d81c57d6-475c-444b-82c0-87b29ce0cbb4
-title: Método ID3DX10ThreadPump::WaitForAllItems (D3DX10.h)
+title: 'Método ID3DX10ThreadPump:: WaitForAllItems (D3DX10. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119046884"
 ---
-# <a name="id3dx10threadpumpwaitforallitems-method"></a>Método ID3DX10ThreadPump::WaitForAllItems
+# <a name="id3dx10threadpumpwaitforallitems-method"></a>Método ID3DX10ThreadPump:: WaitForAllItems
 
-Aguarde até que todos os itens de trabalho na bomba de threads terminem.
+Aguarde até que todos os itens de trabalho na bomba de thread sejam concluídos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,7 +42,7 @@ Esse método não tem parâmetros.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
+O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
 
 
 
@@ -62,7 +62,7 @@ O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3
 [ID3DX10ThreadPump](id3dx10threadpump.md)
 </dt> <dt>
 
-[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
+[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

@@ -1,9 +1,9 @@
 ---
-title: Elemento events (ProviderType)
+title: Elemento Events (ProviderType)
 description: Contém uma lista dos eventos que o provedor define.
 ms.assetid: e6d0b70d-cd44-41f6-820b-b2f39577b282
 keywords:
-- elemento events EventLog
+- evento EventLog do elemento Events
 topic_type:
 - apiref
 api_name:
@@ -20,7 +20,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119055974"
 ---
-# <a name="events-providertype-element"></a>Elemento events (ProviderType)
+# <a name="events-providertype-element"></a>Elemento Events (ProviderType)
 
 Contém uma lista dos eventos que o provedor define.
 
@@ -30,7 +30,7 @@ Contém uma lista dos eventos que o provedor define.
  />
 ```
 
-O **elemento** events é definido pelo [**tipo complexo ProviderType.**](eventmanifestschema-providertype-complextype.md)
+O elemento **Events** é definido pelo tipo complexo [**ProviderType**](eventmanifestschema-providertype-complextype.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O **elemento** events é definido pelo [**tipo complexo ProviderType.**](eventma
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ O **elemento** events é definido pelo [**tipo complexo ProviderType.**](eventma
 **Elemento pai**
 </dt> <dt>
 
-[**provider (EventsType)**](eventmanifestschema-provider-eventstype-element.md)
+[**provedor (EventType)**](eventmanifestschema-provider-eventstype-element.md)
 </dt> </dl>
 
  

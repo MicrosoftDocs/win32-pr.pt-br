@@ -1,9 +1,9 @@
 ---
-title: Mensagem de RB_SETWINDOWTHEME (commctrl. h)
-description: Define o estilo visual de um controle rebar.
+title: RB_SETWINDOWTHEME mensagem (Commctrl.h)
+description: Define o estilo visual de um controle de barra de rebar.
 ms.assetid: 5b32b354-3e25-4d02-9334-cc57acf41a73
 keywords:
-- controles de Windows de mensagem de RB_SETWINDOWTHEME
+- RB_SETWINDOWTHEME controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119078541"
 ---
-# <a name="rb_setwindowtheme-message"></a>\_Mensagem SETWINDOWTHEME RB
+# <a name="rb_setwindowtheme-message"></a>Mensagem RB \_ SETWINDOWTHEME
 
-Define o estilo visual de um controle rebar.
+Define o estilo visual de um controle de barra de rebar.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,7 +35,7 @@ Define o estilo visual de um controle rebar.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma cadeia de caracteres Unicode que contém o estilo visual rebar a ser definido.
+Ponteiro para uma cadeia de caracteres Unicode que contém o estilo visual de barra de rebar a ser definido.
 
 </dd> </dl>
 
@@ -46,7 +46,7 @@ O valor de retorno não é usado.
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6,0. Para obter mais informações sobre manifestos, consulte [habilitando estilos visuais](cookbook-overview.md).
+> Para usar essa mensagem, você deve fornecer um manifesto especificando Comclt32.dll versão 6.0. Para obter mais informações sobre manifestos, consulte [Habilitando estilos visuais.](cookbook-overview.md)
 
  
 
@@ -56,9 +56,9 @@ O valor de retorno não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

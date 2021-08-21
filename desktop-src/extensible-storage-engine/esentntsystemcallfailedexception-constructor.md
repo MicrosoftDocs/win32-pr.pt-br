@@ -35,8 +35,8 @@ ms.locfileid: "119040340"
 
 Inicializa uma nova instância da classe EsentNTSystemCallFailedException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentNTSystemCallFailedException()
 
 [Classe EsentNTSystemCallFailedException](./esentntsystemcallfailedexception-class.md)
 
-[Membros do EsentNTSystemCallFailedException](./esentntsystemcallfailedexception-members.md)
+[Membros EsentNTSystemCallFailedException](./esentntsystemcallfailedexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

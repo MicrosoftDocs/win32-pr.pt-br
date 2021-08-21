@@ -1,6 +1,6 @@
 ---
-title: Glossário do WMFormat
-description: Para localizar um termo no Glossário, clique na letra do alfabeto que é a primeira letra do termo que você deseja pesquisar. Você também pode ler os termos do glossário dentro do texto da ajuda clicando nos links de termo do glossário sublinhado.
+title: Glossário WMFormat
+description: Para encontrar um termo no glossário, clique na letra do alfabeto que é a primeira letra no termo que você deseja procurar. Você também pode ler os termos do glossário dentro do texto da Ajuda clicando nos links de termo do glossário sublinhado.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 7142163b-ee2c-43e3-9c17-3e039abbeeaf
 ms.topic: article
@@ -12,18 +12,18 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119083770"
 ---
-# <a name="wmformat-glossary"></a>Glossário do WMFormat
+# <a name="wmformat-glossary"></a>Glossário WMFormat
 
-Para localizar um termo no Glossário, clique na letra do alfabeto que é a primeira letra do termo que você deseja pesquisar.
+Para encontrar um termo no glossário, clique na letra do alfabeto que é a primeira letra no termo que você deseja procurar.
 
-Você também pode ler os termos do glossário dentro do texto da ajuda clicando nos links de termo do glossário sublinhado. Depois de clicar em um link do glossário, o termo e a definição do glossário aparecerão em uma janela pop-up. Para fechar a janela, clique em qualquer lugar na tela.
+Você também pode ler os termos do glossário dentro do texto da Ajuda clicando nos links de termo do glossário sublinhado. Depois de clicar em um link de glossário, o termo e a definição do glossário aparecem em uma janela pop-up. Para fechar a janela, clique em qualquer lugar na tela.
 
 <dl> <dt>
 
 <span id="wmformat.bandwidth"></span><span id="WMFORMAT.BANDWIDTH"></span>**largura de banda**
 </dt> <dd>
 
-A capacidade de transferência de dados de um meio de transmissão.
+A capacidade de transferência de dados de uma mídia de transmissão.
 
 </dd> <dt>
 
@@ -37,56 +37,56 @@ O número de bits transferidos por unidade de tempo, normalmente expressos em bi
 <span id="wmformat.broadband"></span><span id="WMFORMAT.BROADBAND"></span>**banda larga**
 </dt> <dd>
 
-Um meio de transmissão projetado para transferências de dados de alta velocidade por longas distâncias. Os serviços de modem a cabo e a DSL são exemplos de redes de banda larga.
+Um meio de transmissão projetado para transferências de dados de alta velocidade em distâncias longas. Serviços de modem de cabo e DSL são exemplos de redes de banda larga.
 
 </dd> <dt>
 
-<span id="wmformat.cleanpoint"></span><span id="WMFORMAT.CLEANPOINT"></span>**cleanpoint**
+<span id="wmformat.cleanpoint"></span><span id="WMFORMAT.CLEANPOINT"></span>**ponto de limpeza**
 </dt> <dd>
 
-Um exemplo compactado que não depende de nenhum outro exemplo de descompactação. Só é válido buscar um cleanpoint.
+Um exemplo compactado que não depende de nenhuma outra amostra para descompactação. Só é válido buscar um ponto de limpeza.
 
 </dd> <dt>
 
-<span id="wmformat.clear_content"></span><span id="WMFORMAT.CLEAR_CONTENT"></span>**Limpar conteúdo**
+<span id="wmformat.clear_content"></span><span id="WMFORMAT.CLEAR_CONTENT"></span>**limpar conteúdo**
 </dt> <dd>
 
-um arquivo de mídia Windows que não está criptografado.
+Um Windows de mídia que não está criptografado.
 
 </dd> <dt>
 
-<span id="wmformat.codec"></span><span id="WMFORMAT.CODEC"></span>**codec** do
+<span id="wmformat.codec"></span><span id="WMFORMAT.CODEC"></span>**codec**
 </dt> <dd>
 
-Uma abreviação de compressor/descompactador. Software ou hardware usado para compactar e descompactar mídia digital.
+Uma abreviação deitor/descompactador. Software ou hardware usado para compactar e descompactar mídia digital.
 
 </dd> <dt>
 
-<span id="wmformat.content"></span><span id="WMFORMAT.CONTENT"></span>**conteúdo** do
+<span id="wmformat.content"></span><span id="WMFORMAT.CONTENT"></span>**conteúdo**
 </dt> <dd>
 
-Áudio, vídeo, imagens, texto ou qualquer outra informação contida em um fluxo ou arquivo de mídia digital.
+Áudio, vídeo, imagens, texto ou qualquer outra informação contida em um arquivo ou fluxo de mídia digital.
 
 </dd> <dt>
 
-<span id="wmformat.content_header"></span><span id="WMFORMAT.CONTENT_HEADER"></span>**cabeçalho do conteúdo**
+<span id="wmformat.content_header"></span><span id="WMFORMAT.CONTENT_HEADER"></span>**header de conteúdo**
 </dt> <dd>
 
-parte da estrutura de arquivos de um arquivo de mídia Windows que contém informações necessárias para que um computador cliente descompacte e processe os dados de conteúdo. Em um arquivo empacotado, existe um cabeçalho de conteúdo adicional e contém a ID de chave, a ID de conteúdo e a URL de aquisição de licença. Esse cabeçalho de conteúdo também pode incluir um número de versão de individualização e atributos definidos pelo provedor de conteúdo.
+Parte da estrutura de arquivo de um arquivo Windows Media que contém as informações necessárias para um computador cliente descompactar e renderizar os dados de conteúdo. Em um arquivo empacotado, existe um título de conteúdo adicional e contém a ID da chave, a ID de conteúdo e a URL de aquisição de licença. Esse título de conteúdo também pode incluir um número de versão de individualização e atributos necessários definidos pelo provedor de conteúdo.
 
 </dd> <dt>
 
 <span id="wmformat.content_owner"></span><span id="WMFORMAT.CONTENT_OWNER"></span>**proprietário do conteúdo**
 </dt> <dd>
 
-a pessoa ou organização que cria Windows arquivos de mídia, por exemplo, um rótulo de registro, um estúdio de filmes ou um artista.
+A pessoa ou organização que cria Windows De mídia, por exemplo, um rótulo de registro, um estúdio de filme ou um artista.
 
 </dd> <dt>
 
-<span id="wmformat.cookie"></span><span id="WMFORMAT.COOKIE"></span>**Cookie**
+<span id="wmformat.cookie"></span><span id="WMFORMAT.COOKIE"></span>**cookie**
 </dt> <dd>
 
-Um arquivo de dados pequeno que é armazenado no computador local de um usuário e que contém informações sobre o usuário pertinente a um site, como as preferências do usuário.
+Um pequeno arquivo de dados armazenado no computador local de um usuário e que contém informações sobre o usuário pertinentes a um site, como preferências do usuário.
 
 </dd> <dt>
 
@@ -100,84 +100,84 @@ Um grupo de configurações, definido por um usuário final, para configurar a s
 <span id="wmformat.decrypt"></span><span id="WMFORMAT.DECRYPT"></span>**descriptografar**
 </dt> <dd>
 
-Para converter o conteúdo criptografado de volta em seu formato original.
+Para converter conteúdo criptografado de volta em seu formulário original.
 
 </dd> <dt>
 
-<span id="wmformat.deinterlace"></span><span id="WMFORMAT.DEINTERLACE"></span>**desentrelaçar**
+<span id="wmformat.deinterlace"></span><span id="WMFORMAT.DEINTERLACE"></span>**deinteria**
 </dt> <dd>
 
 Para combinar os campos entrelaçados em um quadro de vídeo para que, durante a reprodução, as linhas do quadro de vídeo sejam pintadas sequencialmente.
 
 </dd> <dt>
 
-<span id="wmformat.delta_frame"></span><span id="WMFORMAT.DELTA_FRAME"></span>**quadro Delta**
+<span id="wmformat.delta_frame"></span><span id="WMFORMAT.DELTA_FRAME"></span>**quadro delta**
 </dt> <dd>
 
 Um quadro de vídeo que contém apenas as alterações do quadro anterior. Por outro lado, um quadro-chave contém todos os dados necessários para construir esse quadro.
 
 </dd> <dt>
 
-<span id="wmformat.digital_rights_management__drm_"></span><span id="WMFORMAT.DIGITAL_RIGHTS_MANAGEMENT__DRM_"></span>**DRM (gerenciamento de direitos digitais)**
+<span id="wmformat.digital_rights_management__drm_"></span><span id="WMFORMAT.DIGITAL_RIGHTS_MANAGEMENT__DRM_"></span>**DRM (gerenciamento** de direitos digitais)
 </dt> <dd>
 
-Qualquer tecnologia usada para proteger os interesses dos proprietários de serviços e conteúdo digital (como os proprietários de direitos autorais). Normalmente, os destinatários autorizados ou os usuários devem adquirir uma licença para usar o conteúdo.
+Qualquer tecnologia usada para proteger os interesses dos proprietários de conteúdo digital e serviços (como proprietários de direitos autorais). Normalmente, os usuários ou destinatários autorizados devem adquirir uma licença para usar o conteúdo.
 
 </dd> <dt>
 
-<span id="wmformat.digital_rights_management__drm__component"></span><span id="WMFORMAT.DIGITAL_RIGHTS_MANAGEMENT__DRM__COMPONENT"></span>**componente DRM (gerenciamento de direitos digitais)**
+<span id="wmformat.digital_rights_management__drm__component"></span><span id="WMFORMAT.DIGITAL_RIGHTS_MANAGEMENT__DRM__COMPONENT"></span>**componente drm (gerenciamento de direitos digitais)**
 </dt> <dd>
 
-O componente de um player que lida com todas as funções do gerenciamento de direitos digitais, como descriptografar arquivos empacotados ou iniciar a aquisição de licenças.
+O componente de um player que lida com todas as funções do gerenciamento de direitos digitais, como descriptografar arquivos empacotados ou iniciar a aquisição de licença.
 
 </dd> <dt>
 
-<span id="wmformat.directx_media_object__dmo_"></span><span id="WMFORMAT.DIRECTX_MEDIA_OBJECT__DMO_"></span>**Objeto de mídia DirectX (DMO)**
+<span id="wmformat.directx_media_object__dmo_"></span><span id="WMFORMAT.DIRECTX_MEDIA_OBJECT__DMO_"></span>**DirectX Media Object (DMO)**
 </dt> <dd>
 
-Um objeto COM que processa fluxos de dados de multimídia de buffers alocados pelo cliente.
+Um objeto COM que processa fluxos de dados multimídia de buffers alocados pelo cliente.
 
 </dd> <dt>
 
 <span id="wmformat.dmo"></span><span id="WMFORMAT.DMO"></span>**DMO**
 </dt> <dd>
 
-Consulte a definição de: [ *objeto de mídia DirectX (DMO)*](/windows)
+Consulte a definição de: [ *DirectX Media Object (DMO)*](/windows)
 
 </dd> <dt>
 
 <span id="wmformat.drm"></span><span id="WMFORMAT.DRM"></span>**DRM**
 </dt> <dd>
 
-Consulte a definição para: [ *DRM (gerenciamento de direitos digitais)*](/windows)
+Consulte a definição de: [ *DRM (gerenciamento de direitos digitais)*](/windows)
 
 </dd> <dt>
 
 <span id="wmformat.encode"></span><span id="WMFORMAT.ENCODE"></span>**codificar**
 </dt> <dd>
 
-Para converter o conteúdo de áudio e vídeo em um formato digital especificado, geralmente envolvendo tecnologia de compactação ou tecnologia de criptografia.
+Para converter conteúdo de áudio e vídeo em um formato digital especificado, geralmente envolvendo tecnologia de compactação ou tecnologia de criptografia.
 
 </dd> <dt>
 
 <span id="wmformat.encrypt"></span><span id="WMFORMAT.ENCRYPT"></span>**criptografar**
 </dt> <dd>
 
-Para disfarçar o conteúdo de forma programática para ocultar sua substância.
+Para desalocar programaticamente o conteúdo para ocultar sua essência.
 
 </dd> <dt>
 
 <span id="wmformat.frame"></span><span id="WMFORMAT.FRAME"></span>**quadro**
 </dt> <dd>
 
-Uma das muitas imagens sequenciais que compõem vídeo.
+Uma das muitas imagens sequenciais que comem o vídeo.
 
 </dd> <dt>
 
 <span id="wmformat.frame_rate"></span><span id="WMFORMAT.FRAME_RATE"></span>**taxa de quadros**
 </dt> <dd>
 
-O número de quadros de vídeo exibidos por segundo. Taxas de quadros mais altas geralmente produzem movimento mais suave na imagem.
+O número de quadros de vídeo exibidos por segundo. Taxas de quadros mais altas geralmente produzem um movimento mais suave na imagem.
 
 </dd> <dt>
 
@@ -188,28 +188,28 @@ Um padrão para adicionar metadados a arquivos MP3.
 
 </dd> <dt>
 
-<span id="wmformat.index"></span><span id="WMFORMAT.INDEX"></span>**índice** do
+<span id="wmformat.index"></span><span id="WMFORMAT.INDEX"></span>**índice**
 </dt> <dd>
 
-um marcador produzido pelo SDK (Software Development Kit) Windows Media Format para habilitar a busca em um arquivo de vídeo.
+Um marcador produzido pelo SDK (Kit de Desenvolvimento de Software) Windows Media Format para habilitar a busca em um arquivo de vídeo.
 
 </dd> <dt>
 
 <span id="wmformat.individualization"></span><span id="WMFORMAT.INDIVIDUALIZATION"></span>**individualização**
 </dt> <dd>
 
-O processo de tornar exclusivo o componente DRM (gerenciamento de direitos digitais) no player do consumidor. Esse processo aumenta a segurança, dificultando a corrupção de mais de um player por vez. Esse processo também é conhecido como obter uma atualização de segurança.
+O processo de tornar o componente DRM (gerenciamento de direitos digitais) exclusivo no player do consumidor. Esse processo aumenta a segurança, dificultando a corrupção de mais de um jogador por vez. Esse processo também é conhecido como obtenção de uma atualização de segurança.
 
 </dd> <dt>
 
-<span id="wmformat.interlace"></span><span id="WMFORMAT.INTERLACE"></span>**entrelaçamento**
+<span id="wmformat.interlace"></span><span id="WMFORMAT.INTERLACE"></span>**intercalar**
 </dt> <dd>
 
-Para exibir um quadro de vídeo em dois campos. Um campo contém as linhas pares do quadro, o outro campo contém as linhas ímpares. Durante a reprodução, as linhas em um campo são exibidas primeiro e, em seguida, as linhas no segundo campo são exibidas.
+Para exibir um quadro de vídeo em dois campos. Um campo contém as linhas even do quadro, o outro campo contém as linhas ímpares. Durante a reprodução, as linhas em um campo são exibidas primeiro e, em seguida, as linhas no segundo campo são exibidas.
 
 </dd> <dt>
 
-<span id="wmformat.inverse_telecine"></span><span id="WMFORMAT.INVERSE_TELECINE"></span>**inverso**
+<span id="wmformat.inverse_telecine"></span><span id="WMFORMAT.INVERSE_TELECINE"></span>**teletração inversa**
 </dt> <dd>
 
 O processo que remove os quadros que foram adicionados quando o filme de 24 fps foi convertido em vídeo de 30 fps.
@@ -219,7 +219,7 @@ O processo que remove os quadros que foram adicionados quando o filme de 24 fps 
 <span id="wmformat.key"></span><span id="WMFORMAT.KEY"></span>**chave**
 </dt> <dd>
 
-um dado que é necessário para desbloquear um arquivo de mídia de Windows empacotado. Essa chave é incluída em uma licença separada.
+Uma parte dos dados necessários para desbloquear um arquivo Windows Mídia empacotado. Essa chave está incluída em uma licença separada.
 
 </dd> <dt>
 
@@ -233,35 +233,35 @@ Um quadro de vídeo que contém todos os dados necessários para construir uma i
 <span id="wmformat.key_id"></span><span id="WMFORMAT.KEY_ID"></span>**ID da chave**
 </dt> <dd>
 
-um valor que identifica a chave para um arquivo de mídia Windows protegido.
+Um valor que identifica a chave para um arquivo Windows Mídia protegido.
 
 </dd> <dt>
 
-<span id="wmformat.license"></span><span id="WMFORMAT.LICENSE"></span>**licença** do
+<span id="wmformat.license"></span><span id="WMFORMAT.LICENSE"></span>**licença**
 </dt> <dd>
 
-Dados anexados a conteúdo protegido que descreve como o conteúdo pode ser usado.
+Dados anexados ao conteúdo protegido que descrevem como o conteúdo pode ser usado.
 
 </dd> <dt>
 
 <span id="wmformat.license_acquisition"></span><span id="WMFORMAT.LICENSE_ACQUISITION"></span>**aquisição de licença**
 </dt> <dd>
 
-o processo de obtenção de uma licença para reproduzir um arquivo de mídia de Windows empacotado. o player tenta obter uma licença de uma URL de aquisição de licença, que é especificada no arquivo de mídia Windows.
+O processo de obtenção de uma licença para reproduzir um arquivo Windows Mídia empacotado. O player tenta obter uma licença de uma URL de aquisição de licença, que é especificada no arquivo Windows Mídia.
 
 </dd> <dt>
 
-<span id="wmformat.license_management_service"></span><span id="WMFORMAT.LICENSE_MANAGEMENT_SERVICE"></span>**Serviço de gerenciamento de licenças**
+<span id="wmformat.license_management_service"></span><span id="WMFORMAT.LICENSE_MANAGEMENT_SERVICE"></span>**Serviço de Gerenciamento de Licenças**
 </dt> <dd>
 
-o serviço da Microsoft que executa o processo de gerenciamento de licenças no Windows Software Development Kit (SDK) do Media rights Manager.
+O serviço Microsoft que executa o processo de gerenciamento de licenças no SDK (Kit de Desenvolvimento de Software) Windows Media Rights Manager.
 
 </dd> <dt>
 
 <span id="wmformat.license_revocation"></span><span id="WMFORMAT.LICENSE_REVOCATION"></span>**revogação de licença**
 </dt> <dd>
 
-O processo de remover licenças do computador de um usuário.
+O processo de remoção de licenças do computador de um usuário.
 
 </dd> <dt>
 
@@ -275,7 +275,7 @@ Uma confirmação assinada de um computador cliente para um servidor de licencia
 <span id="wmformat.license_revocation_challenge"></span><span id="WMFORMAT.LICENSE_REVOCATION_CHALLENGE"></span>**desafio de revogação de licença**
 </dt> <dd>
 
-Uma solicitação de um computador cliente a um servidor de licenciamento para revogação de licenças.
+Uma solicitação de um computador cliente para um servidor de licenciamento para revogação de licença.
 
 </dd> <dt>
 
@@ -289,11 +289,11 @@ Uma resposta a um desafio de revogação de licença que indica quais licenças 
 <span id="wmformat.licensing_server"></span><span id="WMFORMAT.LICENSING_SERVER"></span>**servidor de licenciamento**
 </dt> <dd>
 
-um computador que executa Windows serviço de licença de mídia e emite licenças.
+Um computador que executa o Windows de Licença de Mídia e emite licenças.
 
 </dd> <dt>
 
-<span id="wmformat.marker"></span><span id="WMFORMAT.MARKER"></span>**marcador** de
+<span id="wmformat.marker"></span><span id="WMFORMAT.MARKER"></span>**marcador**
 </dt> <dd>
 
 uma cadeia de texto que está associada a uma hora designada em Windows conteúdo baseado em mídia. Marcadores geralmente denotam pontos convenientes para começar a reprodução, como o início de uma nova cena.

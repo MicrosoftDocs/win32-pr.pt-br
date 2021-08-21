@@ -1,11 +1,11 @@
 ---
-title: Método ISoftKbd DestroySoftKeyboardWindow (Softkbdc. h)
-description: O método ISoftKbd DestroySoftKeyboardWindow destrói uma janela de teclado flexível.
+title: Método ISoftKbd DestroySoftKeyboardWindow (Softkbdc.h)
+description: O método ISoftKbd DestroySoftKeyboardWindow destrói uma janela de teclado suave.
 ms.assetid: 44030934-7b4a-46c1-95ea-709fc9004e43
 keywords:
-- Estrutura de serviços de texto do método DestroySoftKeyboardWindow
-- Método DestroySoftKeyboardWindow de estrutura de serviços de texto, interface ISoftKbd
-- Estrutura de serviços de texto da interface ISoftKbd, método DestroySoftKeyboardWindow
+- Método DestroySoftKeyboardWindow Estrutura de Serviços de Texto
+- Método DestroySoftKeyboardWindow Estrutura de Serviços de Texto , interface ISoftKbd
+- Interface ISoftKbd Estrutura de Serviços de Texto , método DestroySoftKeyboardWindow
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: fb0c460912e8b891503771425fc72484fcc471ff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f4e08a07c76f8b89809782f14d31e677417dbe18f20d6a817f3b1f234a01d12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761826"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118877894"
 ---
-# <a name="isoftkbddestroysoftkeyboardwindow-method"></a>ISoftKbd: método estroySoftKeyboardWindow de:D
+# <a name="isoftkbddestroysoftkeyboardwindow-method"></a>Método ISoftKbd::D çãoSoftKeyboardWindow
 
-O método **ISoftKbd::D estroysoftkeyboardwindow** destrói uma janela de teclado flexível.
+O **método ISoftKbd::D ySoftKeyboardWindow** destrói uma janela de teclado suave.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ HRESULT DestroySoftKeyboardWindow();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -56,7 +56,7 @@ Esse método pode retornar um desses valores.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método remove uma janela de teclado flexível criada anteriormente com uma chamada para [**ISoftKbd:: CreateSoftKeyboardWindow**](isoftkbd-createsoftkeyboardwindow.md).
+Esse método remove uma janela de teclado suave criada anteriormente com uma chamada para [**ISoftKbd::CreateSoftKeyboardWindow**](isoftkbd-createsoftkeyboardwindow.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +66,9 @@ Esse método remove uma janela de teclado flexível criada anteriormente com uma
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Softkbdc. h</dt> </dl>  |
-| INSERI<br/>                      | <dl> <dt>Softkbd. idl</dt> </dl> |
+| Redistribuível<br/>          | TSF 1.0 no Windows 2000 Professional<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Softkbdc.h</dt> </dl>  |
+| Idl<br/>                      | <dl> <dt>Softkbd.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Softkbd.dll</dt> </dl> |
 
 

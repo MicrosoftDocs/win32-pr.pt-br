@@ -1,7 +1,7 @@
 ---
-description: O \_ método Get MessageDrain recupera a mensagem atual drenagem.
+description: O método \_ get MessageDrain recupera o dreno de mensagens atual.
 ms.assetid: d679e7f7-4628-479b-b722-843cdd91ffe6
-title: Método de CBaseControlWindow.get_MessageDrain (Ctlutil. h)
+title: CBaseControlWindow.get_MessageDrain método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119017394"
 ---
-# <a name="cbasecontrolwindowget_messagedrain-method"></a>CBaseControlWindow. obter \_ método MessageDrain
+# <a name="cbasecontrolwindowget_messagedrain-method"></a>Método CBaseControlWindow.get \_ MessageDbase
 
-O `get_MessageDrain` método recupera a mensagem de drenagem atual.
+O `get_MessageDrain` método recupera o dreno de mensagens atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,20 +42,20 @@ HRESULT get_MessageDrain(
 
 <dl> <dt>
 
-*Desperdício* 
+*Dreno* 
 </dt> <dd>
 
-Ponteiro para a janela atual recebendo mensagens da janela.
+Ponteiro para a janela atual que recebe mensagens da janela.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-As mensagens enviadas para o filtro de processador de vídeo podem ser postadas em outra janela. A janela registrada para receber essas mensagens (usando a função de membro **CBaseControlWindow:: get \_ MessageDrain** ) é a mensagem atual drenagem.
+As mensagens enviadas ao filtro do renderador de vídeo podem ser postadas em outra janela. A janela registrada para receber essas mensagens (usando a função membro **CBaseControlWindow::get \_ MessageDbase)** é o dreno de mensagens atual.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ As mensagens enviadas para o filtro de processador de vídeo podem ser postadas 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Funções DirectComposition
-description: Esta seção descreve as funções fornecidas pelo Microsoft DirectComposition \ 32; API.
+description: Esta seção descreve as funções fornecidas pelo Microsoft DirectComposition \ 32; Api.
 ms.assetid: 750FDFD5-ADD5-43B3-A596-ECDB82C2EF73
 ms.topic: reference
 ms.date: 05/31/2018
@@ -21,12 +21,12 @@ Esta seção descreve as funções fornecidas pela API do Microsoft DirectCompos
 
 | Tópico                                                                                       | Descrição                                                                                                                                          |
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**DCompositionAttachMouseDragToHwnd**](/windows/desktop/api/dcomp/nf-dcomp-dcompositionattachmousedragtohwnd)<br/>   | Cria uma interação/InputSink para rotear o botão do mouse para baixo e quaisquer eventos move e up subsequentes para o HWND fornecido.<br/>                      |
-| [**DCompositionAttachMouseWheelToHwnd**](/windows/desktop/api/dcomp/nf-dcomp-dcompositionattachmousewheeltohwnd)<br/> | Cria uma interação/InputSink para rotear mensagens de roda do mouse para o HWND fornecido. <br/>                                                        |
+| [**DCompositionAttachMouseDragToHwnd**](/windows/desktop/api/dcomp/nf-dcomp-dcompositionattachmousedragtohwnd)<br/>   | Cria um Interaction/InputSink para rotear o botão do mouse para baixo e quaisquer eventos subsequentes de movimentação e para cima para o HWND determinado.<br/>                      |
+| [**DCompositionAttachMouseWheelToHwnd**](/windows/desktop/api/dcomp/nf-dcomp-dcompositionattachmousewheeltohwnd)<br/> | Cria uma Interação/InputSink para rotear mensagens da roda do mouse para o HWND determinado. <br/>                                                        |
 | [**DCompositionCreateDevice**](/windows/desktop/api/Dcomp/nf-dcomp-dcompositioncreatedevice)<br/>                     | Cria um novo objeto de dispositivo que pode ser usado para criar outros objetos DirectComposition.<br/>                                                   |
 | [**DCompositionCreateDevice2**](/windows/desktop/api/Dcomp/nf-dcomp-dcompositioncreatedevice2)<br/>                   | Cria um novo objeto de dispositivo que pode ser usado para criar outros objetos DirectComposition.<br/>                                                   |
 | [**DCompositionCreateDevice3**](/windows/desktop/api/dcomp/nf-dcomp-dcompositioncreatedevice3)<br/>                   | Cria um novo objeto de dispositivo DirectComposition, que pode ser usado para criar outros objetos DirectComposition.<br/>                               |
-| [**DCompositionCreateSurfaceHandle**](/windows/desktop/api/Dcomp/nf-dcomp-dcompositioncreatesurfacehandle)<br/>       | Cria um novo objeto de superfície de composição que pode ser associado a uma cadeia de permuta do Microsoft DirectX ou ao buffer de permuta e associado a um Visual.<br/> |
+| [**DCompositionCreateSurfaceHandle**](/windows/desktop/api/Dcomp/nf-dcomp-dcompositioncreatesurfacehandle)<br/>       | Cria um novo objeto de superfície de composição que pode ser associado a uma cadeia de permuta do Microsoft DirectX ou buffer de permuta e associado a um visual.<br/> |
 | [**DCompositionGetFrameStatistics**](/previous-versions/windows/desktop/legacy/mt589902(v=vs.85))<br/>         | Recupera informações de estatísticas de composição.<br/>                                                                                             |
 
 
@@ -37,7 +37,7 @@ Esta seção descreve as funções fornecidas pela API do Microsoft DirectCompos
 
 <dl> <dt>
 
-[Referência de DirectComposition](reference.md)
+[Referência do DirectComposition](reference.md)
 </dt> </dl>
 
  

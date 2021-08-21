@@ -150,12 +150,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6689776fe1ce9102ed4bb8ad97252be41901a0ac
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4cd41380e2c8ca58f5ce530f4c3024eb43522b474f128c3a296aaf5b4d84937f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105749122"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082370"
 ---
 # <a name="iadsuser-property-methods"></a>Métodos de propriedade IADsUser
 
@@ -769,14 +769,14 @@ HRESULT put_LastName(
 **LoginHours**
 </dt> <dd> <dl>
 
-Períodos de tempo para cada dia da semana durante o qual os logons são permitidos para o usuário. Representado como uma tabela de valores Boolianos para a semana, cada um indicando se esse slot de tempo é um tempo de logon válido. Lembre-se de que a representação é específica do provedor e do diretório.
+Períodos de tempo para cada dia da semana durante os quais os logons são permitidos para o usuário. Representado como uma tabela de valores booliano para a semana, cada um indicando se esse slot de tempo é uma hora de logon válida. Esteja ciente de que a representação é específica do provedor e do diretório.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -801,7 +801,7 @@ O caminho do script de logon.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -825,14 +825,14 @@ HRESULT put_LoginScript(
 **LoginWorkstations**
 </dt> <dd> <dl>
 
-Endereços ou nomes de estações de trabalho, do tipo de dados **BSTR** , do qual o usuário pode fazer logon.
+Endereços ou nomes de estações de trabalho, do **tipo de dados BSTR,** do qual o usuário pode fazer logon.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -857,7 +857,7 @@ O gerente do usuário.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -885,10 +885,10 @@ O número de sessões de logon simultâneas permitidas.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -913,10 +913,10 @@ A quantidade máxima de espaço em disco, em quilobytes, que o usuário pode usa
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -937,11 +937,11 @@ HRESULT put_MaxStorage(
 **NamePrefix**
 </dt> <dd> <dl>
 
-Prefixo de nome do usuário, por exemplo, "MS." ou "está".
+Prefixo de nome do usuário, por exemplo "Ms." ou "Hon".
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -965,11 +965,11 @@ HRESULT put_NamePrefix(
 **NameSuffix**
 </dt> <dd> <dl>
 
-Sufixo de nome do usuário, por exemplo, "Jr." ou "III".
+Sufixo de nome do usuário, por exemplo "Jr." ou "III".
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -993,14 +993,14 @@ HRESULT put_NameSuffix(
 **OfficeLocations**
 </dt> <dd> <dl>
 
-Local do escritório como uma matriz **BSTR** para o usuário. Por Active Directory, essa propriedade é de valor único e a matriz tem um elemento.
+Office local como uma **matriz BSTR** para o usuário. Para o Active Directory, essa propriedade tem valor único e a matriz tem um elemento.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -1018,14 +1018,14 @@ HRESULT put_OfficeLocations(
 
 </dt> </dl> </dd> <dt>
 
-**Outro**
+**OtherName**
 </dt> <dd> <dl>
 
 Um nome adicional, por exemplo, o nome do meio, para o usuário.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -1053,10 +1053,10 @@ A data e a hora em que a senha expira.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Data**
+Tipo de dados de script: **DATE**
 </dt> <dt>
 
 
@@ -1084,7 +1084,7 @@ A última vez em que a senha foi alterada.
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Tipo de dados de script: **Data**
+Tipo de dados de script: **DATE**
 </dt> <dt>
 
 
@@ -1106,10 +1106,10 @@ O comprimento mínimo da senha.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -1134,10 +1134,10 @@ Um sinalizador que indica se a senha é necessária.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **booliano**
+Tipo de dados de script: **booliana**
 </dt> <dt>
 
 
@@ -1158,14 +1158,14 @@ HRESULT put_PasswordRequired(
 **Imagem**
 </dt> <dd> <dl>
 
-Uma matriz Octetstring de bytes que armazena uma imagem.
+Uma matriz OctetString de bytes que armazena uma imagem.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -1186,14 +1186,14 @@ HRESULT put_Picture(
 **PostalAddresses**
 </dt> <dd> <dl>
 
-Endereço postal como uma matriz **BSTR** . Essa propriedade tem vários valores para conter mais de endereços do usuário. O formato interno de um PostalAddress deve estar em conformidade com o CCITT F. 401 como referenciado em X. 521-1993, que define um PostalAddress como seis elementos de 30 bytes cada, segurando um endereço (opcionalmente) caixa Post Office, cidade ou localidade, estado ou província, CEP e país/região.
+Endereço postal como uma **matriz BSTR.** Essa propriedade tem vários valores para conter mais de endereços do usuário. O formato interno de um PostalAddress deve estar em conformidade com CCITT F.401, conforme referenciado em X.521-1993, que define um PostalAddress como seis elementos de 30 bytes cada, mantendo um endereço de rua, (opcionalmente) Post Office Box, cidade ou localidade, estado ou província, CEP e País/Região.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -1211,17 +1211,17 @@ HRESULT put_PostalAddresses(
 
 </dt> </dl> </dd> <dt>
 
-**PostalCodes**
+**CepCodes**
 </dt> <dd> <dl>
 
-Códigos postais como uma matriz **BSTR** . Os códigos postais são vinculados à matriz **PostalAddresses** . No Active Directory, no entanto, essa propriedade é de valor único e a matriz tem um único elemento.
+Códigos postais como uma **matriz BSTR.** Os códigos postais são vinculados positicamente à **matriz PostalAddresses.** No Active Directory, no entanto, essa propriedade tem valor único e a matriz tem um único elemento.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -1246,7 +1246,7 @@ O caminho para o perfil do usuário.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -1270,14 +1270,14 @@ HRESULT put_Profile(
 **RequireUniquePassword**
 </dt> <dd> <dl>
 
-Um sinalizador que indica se uma nova senha deve ser diferente daquelas conhecidas por meio de um histórico de senha.
+Um sinalizador que indica se uma nova senha deve ser diferente daquelas conhecidas por meio de um histórico de senhas.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **booliano**
+Tipo de dados de script: **booliana**
 </dt> <dt>
 
 
@@ -1302,10 +1302,10 @@ Uma matriz de ADsPaths de outros objetos relacionados ao usuário.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -1326,14 +1326,14 @@ HRESULT put_SeeAlso(
 **TelephoneHome**
 </dt> <dd> <dl>
 
-Uma matriz de números de telefone residencial do usuário. Em Active Directory, essa propriedade é de valor único e a matriz tem um elemento.
+Uma matriz de números de telefone página principal do usuário. No Active Directory, essa propriedade tem valor único e a matriz tem um elemento .
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -1354,14 +1354,14 @@ HRESULT put_TelephoneHome(
 **TelephoneMobile**
 </dt> <dd> <dl>
 
-Uma matriz de números de telefone celular do usuário. Em Active Directory essa propriedade é de valor único e a matriz tem apenas um elemento.
+Uma matriz de números de telefone celular do usuário. No Active Directory, essa propriedade tem valor único e a matriz tem apenas um elemento.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **Variant**
+Tipo de dados de script: **VARIANT**
 </dt> <dt>
 
 
@@ -1379,14 +1379,14 @@ HRESULT put_TelephoneMobile(
 
 </dt> </dl> </dd> <dt>
 
-**TelephoneNumber**
+**Telephonenumber**
 </dt> <dd> <dl>
 
-Uma matriz de, normalmente relacionada a trabalho, números de telefone associados ao usuário. Em Active Directory essa propriedade é de valor único e a matriz é de um único elemento.
+Uma matriz de números de telefone, geralmente relacionados ao trabalho, associados ao usuário. No Active Directory, essa propriedade tem valor único e a matriz é de um único elemento.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **Variant**
@@ -1521,7 +1521,7 @@ IADsUser *GetUserObject(LPWSTR uPath)
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsUser é definido como 3E37E320-17E2-11CF-ABC4-02608C9E7553<br/>             |
 

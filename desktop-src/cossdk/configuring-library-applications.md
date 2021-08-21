@@ -13,23 +13,23 @@ ms.locfileid: "119047494"
 ---
 # <a name="configuring-library-applications"></a>Configurando aplicativos de biblioteca
 
-Como os aplicativos de biblioteca COM+ são executados no processo do cliente, os elementos configuráveis para aplicativos de biblioteca são consideravelmente diferentes dos aplicativos de servidor. Você não pode configurar nenhum aspecto do aplicativo determinado pelo processo de hospedagem.
+Como os aplicativos de biblioteca COM+ são executados no processo do cliente, os elementos configuráveis para aplicativos de biblioteca são consideravelmente diferentes dos aplicativos de servidor. Você não pode configurar qualquer aspecto do aplicativo que é determinado pelo processo de hospedagem.
 
-No nível do aplicativo, várias configurações são limitadas ou não estão disponíveis para aplicativos de biblioteca. Essas restrições são descritas na tabela a seguir:
+No nível do aplicativo, várias configurações são limitadas ou não disponíveis para aplicativos de biblioteca. Essas restrições são descritas na tabela a seguir:
 
 
 
 | Atributo                                       | Descrição                                                                                                                                                                                                                                   |
 |-------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nível de segurança<br/>                       | Você deve escolher verificações de acesso no nível do componente. O aplicativo de biblioteca não pode influenciar as verificações de acesso no nível do processo. Consulte [Configurando um nível de segurança para verificações de acesso](setting-a-security-level-for-access-checks.md).<br/>             |
-| Habilitando ou desabilitando a autenticação<br/> | Você pode indicar se o aplicativo de biblioteca participará da autenticação executada pelo processo de host. Consulte [Habilitando a autenticação para um aplicativo de biblioteca.](enabling-authentication-for-a-library-application.md)<br/> |
+| Nível de segurança<br/>                       | Você deve escolher as verificações de acesso no nível do componente. O aplicativo de biblioteca não pode influenciar as verificações de acesso no nível do processo. Consulte [definindo um nível de segurança para verificações de acesso](setting-a-security-level-for-access-checks.md).<br/>             |
+| Habilitando ou desabilitando a autenticação<br/> | Você pode indicar se o aplicativo de biblioteca participará da autenticação executada pelo processo de host. Consulte [habilitando a autenticação para um aplicativo de biblioteca](enabling-authentication-for-a-library-application.md).<br/> |
 | Nível de representação<br/>                  | Indisponível. A configuração do processo de host é usada. <br/>                                                                                                                                                                             |
-| Identidade de segurança<br/>                    | Indisponível. O aplicativo é executado sob a identidade do processo de host.<br/>                                                                                                                                                          |
-| Desligamento do processo do servidor<br/>              | Indisponível.<br/>                                                                                                                                                                                                                       |
+| Identidade de segurança<br/>                    | Indisponível. O aplicativo é executado sob a identidade do processo do host.<br/>                                                                                                                                                          |
+| Desligamento de processo do servidor<br/>              | Indisponível.<br/>                                                                                                                                                                                                                       |
 | Habilitar suporte a 3 GB<br/>                  | Indisponível.<br/>                                                                                                                                                                                                                       |
 | Iniciar no depurador<br/>                   | Indisponível.<br/>                                                                                                                                                                                                                       |
 | Habilitar CRM<br/>                           | Indisponível.<br/>                                                                                                                                                                                                                       |
-| Enfileiramento<br/>                              | Indisponível.<br/>                                                                                                                                                                                                                       |
+| Serviço<br/>                              | Indisponível.<br/>                                                                                                                                                                                                                       |
 
 
 

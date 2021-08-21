@@ -26,7 +26,7 @@ A interface do usuário de conexão do sistema operacional exibirá esse ícone 
 
 Ao passar o XML para criar o perfil no método [**CreateConnectionProfile**](/windows/desktop/api/mbnapi/nf-mbnapi-imbnconnectionprofilemanager-createconnectionprofile) da interface [**IMbnConnectionProfileManager,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofilemanager) esse caminho deve apontar para o local de origem do arquivo de ícone. Após a criação bem-sucedida do objeto [**IMbnConnectionProfile,**](/windows/desktop/api/mbnapi/nn-mbnapi-imbnconnectionprofile) o serviço de Banda Larga Móvel copiará o arquivo de ícone em seu armazenamento interno e o caminho do perfil será modificado para refletir isso.
 
-O arquivo de ícone deve estar no .bmp com dimensão de 32x32 pixels.
+O arquivo de ícone deve estar .bmp formato com dimensão de 32x32 pixels.
 
 Esse elemento é uma cadeia de caracteres de comprimento de até 1024 caracteres, contendo um caminho de arquivo absoluto.
 

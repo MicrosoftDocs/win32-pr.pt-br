@@ -1,11 +1,11 @@
 ---
-title: MSMQ-atributo de serviço de roteamento
-description: Indica se este servidor fornece serviços de roteamento.
+title: Atributo MSMQ-Routing-Service
+description: Indica se esse servidor fornece serviços de roteamento.
 ms.assetid: 9adf0f97-5719-4366-8be2-3d0c48b0aa24
 ms.tgt_platform: multiple
 keywords:
-- MSMQ-Routing-Service atributo AD Schema
-- Esquema de AD do atributo mSMQRoutingService
+- Esquema do AD do atributo MSMQ-Routing-Service
+- Esquema do AD do atributo mSMQRoutingService
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: da8ae965e19e119788c07bdb2ffe452d29ad7d99
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b1be635e17254acd6d5e5510fa7c5c4c527f93f0356fac1f045085c677855b63
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081780"
 ---
-# <a name="msmq-routing-service-attribute"></a>MSMQ-atributo de serviço de roteamento
+# <a name="msmq-routing-service-attribute"></a>Atributo MSMQ-Routing-Service
 
-Indica se este servidor fornece serviços de roteamento.
+Indica se esse servidor fornece serviços de roteamento.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MSMQ-serviço de roteamento                 |
-| LDAP-Display-Name | mSMQRoutingService                   |
+| CN                | MSMQ-Routing-Service                 |
+| Ldap-Display-Name | mSMQRoutingService                   |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1237              |
-| System-ID-GUID    | 2df90d81-009f-11d2-aa4c-00c04fd7d83a |
+| System-Id-Guid    | 2df90d81-009f-11d2-aa4c-00c04fd7d83a |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -58,15 +58,15 @@ Indica se este servidor fornece serviços de roteamento.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Indica se este servidor fornece serviços de roteamento.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Indica se este servidor fornece serviços de roteamento.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Indica se este servidor fornece serviços de roteamento.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Indica se este servidor fornece serviços de roteamento.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Indica se este servidor fornece serviços de roteamento.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 

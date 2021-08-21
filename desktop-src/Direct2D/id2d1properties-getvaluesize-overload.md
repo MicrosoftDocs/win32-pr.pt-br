@@ -1,9 +1,9 @@
 ---
-title: Métodos GetValueSize de ID2D1Propriedades
+title: Métodos GetValues ID2D1Properties
 description: Obtém o tamanho do valor da propriedade em bytes, usando o índice de propriedade.
 ms.assetid: 62D47611-1AF7-45F3-BB7B-20BF478811BE
 keywords:
-- Métodos de sobrecarga GetValueSize Direct2D
+- Métodos de métodos Overload GetValues Direct2D
 topic_type:
 - apiref
 api_type:
@@ -19,7 +19,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119075260"
 ---
-# <a name="id2d1propertiesgetvaluesize-methods"></a>Métodos ID2D1Properties::GetValueSize
+# <a name="id2d1propertiesgetvaluesize-methods"></a>Métodos ID2D1Properties:: GetValues
 
 Obtém o tamanho do valor da propriedade em bytes, usando o índice de propriedade.
 
@@ -29,8 +29,8 @@ Obtém o tamanho do valor da propriedade em bytes, usando o índice de proprieda
 
 | Método                                                       | Descrição                                                                                                     |
 |:-------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------|
-| [**GetValueSize(U)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(u))     | Obtém o tamanho do valor da propriedade em bytes, usando o índice de propriedade. Essa é uma sobrecarga de modelo.<br/> |
-| [**GetValueSize(UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(uint32)) | Obtém o tamanho do valor da propriedade em bytes, usando o índice de propriedade.<br/>                              |
+| [**GetValues (U)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(u))     | Obtém o tamanho do valor da propriedade em bytes, usando o índice de propriedade. Essa é uma sobrecarga de modelo.<br/> |
+| [**GetValues (UINT32)**](/windows/win32/api/d2d1_1/nf-d2d1_1-id2d1properties-getvaluesize(uint32)) | Obtém o tamanho do valor da propriedade em bytes, usando o índice de propriedade.<br/>                              |
 
 
 
@@ -38,7 +38,7 @@ Obtém o tamanho do valor da propriedade em bytes, usando o índice de proprieda
 
 <dl> <dt>
 
-[**ID2D1Propriedades**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1properties)
+[**ID2D1Properties**](/windows/win32/api/d2d1_1/nn-d2d1_1-id2d1properties)
 </dt> </dl>
 
  

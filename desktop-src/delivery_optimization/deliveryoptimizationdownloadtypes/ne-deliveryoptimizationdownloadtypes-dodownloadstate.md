@@ -25,7 +25,7 @@ ms.locfileid: "119047134"
 
 A enumeração **Dodownloadstate** especifica a ID do estado de download atual, que faz parte da estrutura de **DO_DOWNLOAD_STATUS** .
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ```cpp
 typedef enum _DODownloadState

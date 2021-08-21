@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectMatrixVariable SetMatrixArray (D3dx11effect.h)
-description: Definir uma matriz de matrizes de ponto flutuante.
+title: Método ID3DX11EffectMatrixVariable SetMatrixArray (D3dx11effect. h)
+description: Defina uma matriz de matrizes de ponto flutuante.
 ms.assetid: c90d621c-7500-49c3-ab40-2d0630fc4bec
 keywords:
 - Método SetMatrixArray Direct3D 11
-- Método SetMatrixArray Direct3D 11 , interface ID3DX11EffectMatrixVariable
-- ID3DX11EffectMatrixVariable interface Direct3D 11 , método SetMatrixArray
+- Método SetMatrixArray Direct3D 11, interface ID3DX11EffectMatrixVariable
+- Interface ID3DX11EffectMatrixVariable Direct3D 11, método SetMatrixArray
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119046084"
 ---
-# <a name="id3dx11effectmatrixvariablesetmatrixarray-method"></a>Método ID3DX11EffectMatrixVariable::SetMatrixArray
+# <a name="id3dx11effectmatrixvariablesetmatrixarray-method"></a>Método ID3DX11EffectMatrixVariable:: SetMatrixArray
 
-Definir uma matriz de matrizes de ponto flutuante.
+Defina uma matriz de matrizes de ponto flutuante.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,10 +45,10 @@ HRESULT SetMatrixArray(
 
 <dl> <dt>
 
-*Pdata* 
+*pData* 
 </dt> <dd>
 
-Tipo: **\* float**
+Tipo: **float \***
 
 Um ponteiro para a primeira matriz.
 
@@ -57,18 +57,18 @@ Um ponteiro para a primeira matriz.
 *Deslocamento* 
 </dt> <dd>
 
-Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
 
-O número de elementos de matriz a ignorar desde o início da matriz.
+O número de elementos de matriz a serem ignorados do início da matriz.
 
 </dd> <dt>
 
 *Count* 
 </dt> <dd>
 
-Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
 
-O número de elementos a definir.
+O número de elementos a serem definidos.
 
 </dd> </dl>
 
@@ -76,12 +76,12 @@ O número de elementos a definir.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-reference-returnvalues.md)
+Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
 
  
 
@@ -91,8 +91,8 @@ Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-ref
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

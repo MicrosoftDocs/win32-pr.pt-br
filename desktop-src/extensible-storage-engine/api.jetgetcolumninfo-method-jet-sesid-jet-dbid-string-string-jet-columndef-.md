@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetGetColumnInfo (JET_SESID, JET_DBID, String, String JET_COLUMNDEF)'
-title: Método API. JetGetColumnInfo (JET_SESID, JET_DBID, String, String JET_COLUMNDEF)
+description: 'Saiba mais sobre: Método Api.JetGetColumnInfo (JET_SESID, JET_DBID, cadeia de caracteres, cadeia de caracteres, JET_COLUMNDEF)'
+title: Método Api.JetGetColumnInfo (JET_SESID, JET_DBID, cadeia de caracteres, cadeia de caracteres, JET_COLUMNDEF)
 TOCTitle: JetGetColumnInfo method (JET_SESID, JET_DBID, String, String, JET_COLUMNDEF)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetGetColumnInfo(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_DBID,System.String,System.String,Microsoft.Isam.Esent.Interop.JET_COLUMNDEF@)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetgetcolumninfo(v=EXCHG.10)
@@ -27,12 +27,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119042634"
 ---
-# <a name="apijetgetcolumninfo-method-jet_sesid-jet_dbid-string-string-jet_columndef"></a>Método API. JetGetColumnInfo (JET_SESID, JET_DBID, String, String JET_COLUMNDEF)
+# <a name="apijetgetcolumninfo-method-jet_sesid-jet_dbid-string-string-jet_columndef"></a>Método Api.JetGetColumnInfo (JET_SESID, JET_DBID, cadeia de caracteres, cadeia de caracteres, JET_COLUMNDEF)
 
 Recupera informações sobre uma coluna de tabela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -67,35 +67,35 @@ public static void JetGetColumnInfo(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
   - dbid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_DBID](./jet-dbid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_DBID](./jet-dbid-structure.md)  
     
     O banco de dados que contém a tabela.
 
 <!-- end list -->
 
   - tablename  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     O nome da tabela que contém a coluna.
 
 <!-- end list -->
 
   - columnName  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
     O nome da coluna.
 
 <!-- end list -->
 
   - columndef  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNDEF](./jet-columndef-class.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNDEF](./jet-columndef-class.md)  
     
     Preenchido com informações sobre a coluna.
 
@@ -107,6 +107,6 @@ public static void JetGetColumnInfo(
 
 [Membros da API](./api-members.md)
 
-[Sobrecarga de JetGetColumnInfo](./api.jetgetcolumninfo-method.md)
+[Sobrecarga jetGetColumnInfo](./api.jetgetcolumninfo-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

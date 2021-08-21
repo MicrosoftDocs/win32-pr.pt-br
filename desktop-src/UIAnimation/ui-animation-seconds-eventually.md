@@ -1,6 +1,6 @@
 ---
-title: UI_ANIMATION_SECONDS_EVENTUALLY (UIAnimation. h)
-description: indica que Windows animação pode atrasar o início agendado de um storyboard para o máximo de tempo necessário para evitar conflitos de agendamento.
+title: UI_ANIMATION_SECONDS_EVENTUALLY (UIAnimation.h)
+description: Indica que Windows animação pode atrasar o início agendado de um storyboard pelo tempo necessário para evitar conflitos de agendamento.
 ms.assetid: 9971A612-69D7-49AB-8865-B8F29C4CD4C8
 topic_type:
 - apiref
@@ -19,15 +19,15 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119058154"
 ---
-# <a name="ui_animation_seconds_eventually"></a>segundos de animação da interface do usuário \_ \_ \_ eventualmente
+# <a name="ui_animation_seconds_eventually"></a>ANIMAÇÃO DA \_ INTERFACE DO USUÁRIO POR \_ \_ FIM
 
-indica que Windows animação pode atrasar o início agendado de um storyboard para o máximo de tempo necessário para evitar conflitos de agendamento.
+Indica que Windows animação pode atrasar o início agendado de um storyboard pelo tempo necessário para evitar conflitos de agendamento.
 
 
 
 | Constante/valor                                                                                                                                                                                                                                                                  | Descrição                       |
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------|
-| <span id="UI_ANIMATION_SECONDS_EVENTUALLY"></span><span id="ui_animation_seconds_eventually"></span><dl> <dt>**Interface do usuário \_ Segundos de animação \_ \_ eventualmente**</dt> <dt>-1,0</dt> </dl> | \_segundos de animação da interface do usuário \_<br/> |
+| <span id="UI_ANIMATION_SECONDS_EVENTUALLY"></span><span id="ui_animation_seconds_eventually"></span><dl> <dt>**Interface do usuário \_ SEGUNDOS \_ DE \_ ANIMAÇÃO EVENTUALMENTE**</dt> <dt>-1,0</dt> </dl> | SEGUNDOS DE \_ ANIMAÇÃO DA INTERFACE DO \_ USUÁRIO<br/> |
 
 
 
@@ -37,10 +37,10 @@ indica que Windows animação pode atrasar o início agendado de um storyboard p
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 8, Windows 7 e atualização de plataforma para aplicativos de área de trabalho do Windows 7 \[ somente\]<br/>    |
+| Cliente mínimo com suporte<br/> | Windows 8, Windows 7 e Atualização de plataforma para Windows 7 aplicativos da \[ área de trabalho\]<br/>    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                  |
-| Cabeçalho<br/>                   | <dl> <dt>UIAnimation. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>UIAnimation. idl</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>UIAnimation.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UIAnimation.idl</dt> </dl> |
 
 
 

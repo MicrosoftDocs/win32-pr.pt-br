@@ -1,6 +1,6 @@
 ---
-title: Estruturas raytracing HLSL (Direct3D 12)
-description: As estruturas HLSL a seguir dão suporte ao pipeline do Direct3D 12 raytracing.
+title: Raytracing HLSL structures (Direct3D 12)
+description: As estruturas HLSL a seguir são suportadas pelo pipeline de raytracing do Direct3D 12.
 ms.assetid: ''
 ms.localizationpriority: low
 ms.topic: article
@@ -12,9 +12,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119045544"
 ---
-# <a name="raytracing-hlsl-structures-direct3d-12"></a>Estruturas raytracing HLSL (Direct3D 12)
+# <a name="raytracing-hlsl-structures-direct3d-12"></a>Raytracing HLSL structures (Direct3D 12)
 
-As estruturas HLSL a seguir dão suporte ao pipeline do Direct3D 12 raytracing.
+As estruturas HLSL a seguir são suportadas pelo pipeline de raytracing do Direct3D 12.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -22,10 +22,10 @@ As estruturas HLSL a seguir dão suporte ao pipeline do Direct3D 12 raytracing.
 
 | Tópico                                                                                                       | Descrição                                                                                                                                                                                                                                                                                             |
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Estrutura do parâmetro de chamada**](call-parameter-structure.md)<br/>                              | Uma estrutura definida pelo usuário fornecida como um argumento Inout para uma chamada CallShader e como um parâmetro Inout para o sombreador callable.<br/>                                                                                                                                                                                                                                              |
-| [**Estrutura de atributos de interseção**](intersection-attributes.md)<br/>                              | Uma estrutura definida pelo usuário que é fornecida como um argumento Inout em uma chamada [**TraceRay**](traceray-function.md) e como um parâmetro Inout nos tipos de sombreador que podem acessar a carga Ray.<br/>                                                                                                                                                                                                                                              |
-| [**Estrutura do conteúdo do raio**](ray-payload.md)<br/>                              | Uma estrutura definida pelo usuário que é fornecida como um argumento Inout em uma chamada [**TraceRay**](traceray-function.md) e como um parâmetro Inout nos tipos de sombreador que podem acessar a carga Ray.<br/>                                                                                                                                                                                                                                              |
-| [**Estrutura RayDesc**](raydesc.md)<br/>                              | Sinalizadores passados para a função [**TraceRay**](traceray-function.md) para substituir transparência, remoção e comportamento de início.<br/>                                                                                                                                                                                                                                              |
+| [**Estrutura do parâmetro de chamada**](call-parameter-structure.md)<br/>                              | Uma estrutura definida pelo usuário fornecida como um argumento de saída para uma chamada CallShader e como um parâmetro inout para o sombreador que pode ser chamado.<br/>                                                                                                                                                                                                                                              |
+| [**Estrutura de atributos de interseção**](intersection-attributes.md)<br/>                              | Uma estrutura definida pelo usuário fornecida como um argumento de entrada em uma chamada [**TraceRay**](traceray-function.md) e como um parâmetro de entrada nos tipos de sombreador que podem acessar a carga de raio.<br/>                                                                                                                                                                                                                                              |
+| [**Estrutura do conteúdo do raio**](ray-payload.md)<br/>                              | Uma estrutura definida pelo usuário fornecida como um argumento de entrada em uma chamada [**TraceRay**](traceray-function.md) e como um parâmetro de entrada nos tipos de sombreador que podem acessar a carga de raio.<br/>                                                                                                                                                                                                                                              |
+| [**Estrutura RayDesc**](raydesc.md)<br/>                              | Sinalizadores passados para [**a função TraceRay**](traceray-function.md) para substituir o comportamento de transparência, rebaixamento e início.<br/>                                                                                                                                                                                                                                              |
 
 
 

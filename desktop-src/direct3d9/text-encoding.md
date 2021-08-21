@@ -1,5 +1,5 @@
 ---
-description: O formato de arquivo DirectX. x não é específico de nenhum aplicativo. Ele usa modelos que não dependem de como o arquivo é usado. Isso permite que o formato de arquivo. x seja usado por qualquer aplicativo cliente.
+description: O formato de arquivo .x do DirectX não é específico para nenhum aplicativo. Ele usa modelos que não dependem de como o arquivo é usado. Isso permite que o formato de arquivo .x seja usado por qualquer aplicativo cliente.
 ms.assetid: fe74f65a-ed9f-4669-82fd-ccd9181df517
 title: Codificação de Texto
 ms.topic: article
@@ -13,20 +13,20 @@ ms.locfileid: "119044194"
 ---
 # <a name="text-encoding"></a>Codificação de Texto
 
-O formato de arquivo DirectX. x não é específico de nenhum aplicativo. Ele usa modelos que não dependem de como o arquivo é usado. Isso permite que o formato de arquivo. x seja usado por qualquer aplicativo cliente.
+O formato de arquivo .x do DirectX não é específico para nenhum aplicativo. Ele usa modelos que não dependem de como o arquivo é usado. Isso permite que o formato de arquivo .x seja usado por qualquer aplicativo cliente.
 
-As seções a seguir lidam com o conteúdo e a sintaxe do formato de arquivo, que usa a extensão. x no SDK do DirectX.
+As seções a seguir lidam com o conteúdo e a sintaxe do formato de arquivo, que usa a extensão .x no SDK do DirectX.
 
 -   [Dados](dx9-graphics-reference-x-file-textencoding-data.md)
--   [Palavras reservadas, cabeçalho e comentários](reserved-words--header--and-comments.md)
+-   [Palavras reservadas, um header e comentários](reserved-words--header--and-comments.md)
 -   [Modelos](dx9-graphics-reference-x-file-textencoding-templates.md)
--   [Uso de vírgulas e ponto e vírgula](use-of-commas-and-semicolons.md)
+-   [Uso de vírgulas e ponto e vírgulas](use-of-commas-and-semicolons.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[X referência de formato de arquivo](dx9-graphics-reference-x-file-format.md)
+[Referência de formato de arquivo X](dx9-graphics-reference-x-file-format.md)
 </dt> </dl>
 
  

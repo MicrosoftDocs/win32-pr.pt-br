@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c86ddf66affd4c6688ca331152a5d0c5af073a63
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 98dcf686bf3f15af8ba2129a0bd0cdbb9c01133b9fc6d4531155a065c07a44fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919542"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081290"
 ---
 # <a name="valid-accesses-attribute"></a>Valid-Accesses atributo
 
@@ -59,7 +59,7 @@ O tipo de acesso permitido com um direito estendido.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -80,7 +80,7 @@ O tipo de acesso permitido com um direito estendido.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -101,7 +101,7 @@ O tipo de acesso permitido com um direito estendido.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -122,15 +122,15 @@ O tipo de acesso permitido com um direito estendido.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**Controle-acesso-à direita**](c-controlaccessright.md)<br/> |
+| Classes usadas em        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ O tipo de acesso permitido com um direito estendido.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**Controle-acesso-à direita**](c-controlaccessright.md)<br/> |
+| Classes usadas em        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ O tipo de acesso permitido com um direito estendido.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**Controle-acesso-à direita**](c-controlaccessright.md)<br/> |
+| Classes usadas em        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ O tipo de acesso permitido com um direito estendido.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**Controle-acesso-à direita**](c-controlaccessright.md)<br/> |
+| Classes usadas em        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 

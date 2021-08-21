@@ -19,8 +19,8 @@ ms.locfileid: "119033724"
 
 | Tópico                                                                                                                      | Descrição                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [System. LayoutPattern. ContentViewModeForBrowse](./props-system-layoutpattern-contentviewmodeforbrowse.md)<br/> | Identifica o padrão de layout que o modo de exibição de conteúdo deve aplicar para esse item no contexto de navegação.<br/>  |
-| [System. LayoutPattern. ContentViewModeForSearch](./props-system-layoutpattern-contentviewmodeforsearch.md)<br/> | Identifica o padrão de layout que o modo de exibição de conteúdo deve aplicar para esse item no contexto de pesquisa.<br/> |
+| [System.LayoutPattern.ContentViewModeForBrowse](./props-system-layoutpattern-contentviewmodeforbrowse.md)<br/> | Identifica o padrão de layout que o modo de exibição de conteúdo deve aplicar a esse item no contexto de navegação.<br/>  |
+| [System.LayoutPattern.ContentViewModeForSearch](./props-system-layoutpattern-contentviewmodeforsearch.md)<br/> | Identifica o padrão de layout que o modo de exibição de conteúdo deve aplicar a esse item no contexto de pesquisa.<br/> |
 
 
 

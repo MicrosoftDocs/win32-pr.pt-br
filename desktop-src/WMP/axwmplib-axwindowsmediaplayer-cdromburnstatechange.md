@@ -1,9 +1,9 @@
 ---
-title: Evento CdromBurnStateChange do objeto AxWindowsMediaPlayer
-description: O evento CdromBurnStateChange ocorre quando uma operação de gravação de CD muda de estado.
+title: Evento CdromStateChange do objeto AxWindowsMediaPlayer
+description: O evento CdromStateChange ocorre quando uma operação de gravação de CD altera o estado.
 ms.assetid: fec8a8e5-e282-454e-9713-fd9bb131df6a
 keywords:
-- Evento CdromBurnStateChange do objeto AxWindowsMediaPlayer Windows Media Player
+- Evento CdromStateChange do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119055034"
 ---
-# <a name="cdromburnstatechange-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromBurnStateChange do objeto AxWindowsMediaPlayer
+# <a name="cdromburnstatechange-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromStateChange do objeto AxWindowsMediaPlayer
 
-O evento CdromBurnStateChange ocorre quando uma operação de gravação de CD muda de estado.
+O evento CdromStateChange ocorre quando uma operação de gravação de CD altera o estado.
 
 ``` syntax
 [C#]
@@ -41,14 +41,14 @@ Private Sub player_CdromBurnStateChange(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromBurnStateChangeEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromBurnStateChangeEvent**, que contém as propriedades a seguir relacionadas a esse evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromStateChangeEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromStateChangeEvent**, que contém as propriedades a seguir relacionadas a esse evento.
 
 
 
 | Propriedade   | Descrição                                                                                               |
 |------------|-----------------------------------------------------------------------------------------------------------|
-| pCdromBurn | A interface WMPLib. IWMPCdromBurnThe que representa a operação de gravação que gerou o erro.<br/> |
-| wmpbs      | Valor de enumeração WMPLib. WMPBurnStateThe que indica o novo estado.<br/>                         |
+| pCdrom Ltda | WMPLib.IWMPCdromRomThe interface que representa a operação de gravação que gerou o erro.<br/> |
+| wmpbs      | WMPLib.WMPStateO valor de enumeração que indica o novo estado.<br/>                         |
 
 
 
@@ -73,10 +73,10 @@ O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ 
 [**Objeto AxWindowsMediaPlayer (VB e C#)**](axwindowsmediaplayer-object--vb-and-c.md)
 </dt> <dt>
 
-[**Interface IWMPCdromBurn (VB e C#)**](iwmpcdromburn--vb-and-c.md)
+[**Interface IWMPCdrom Ltda (VB e C#)**](iwmpcdromburn--vb-and-c.md)
 </dt> <dt>
 
-[**WMPBurnState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnstate)
+[**WMPState**](/previous-versions/windows/desktop/api/wmp/ne-wmp-wmpburnstate)
 </dt> </dl>
 
  

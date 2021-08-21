@@ -1,10 +1,10 @@
 ---
-title: Método PauseZone da classe MicrosoftDNS_Zone dados
+title: Método PauseZone da classe MicrosoftDNS_Zone
 description: O método PauseZone pausa a Zona DNS.
 ms.assetid: dcca318d-b6fc-4efa-a33f-f9dea1831395
 keywords:
 - Método PauseZone DNS
-- Método DNS pauseZone, MicrosoftDNS_Zone classe
+- Classe DNS do método PauseZone, MicrosoftDNS_Zone dados
 - MicrosoftDNS_Zone classe DNS , método PauseZone
 topic_type:
 - apiref

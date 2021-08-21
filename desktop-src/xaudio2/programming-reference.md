@@ -4,12 +4,12 @@ description: Esta seção contém tópicos de referência para a API (interface 
 ms.assetid: f2f7c54d-85eb-a3c6-7333-d5adf16d95d9
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8cf1c481f7d45efc7dc979e546b147617246d657
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 76a540cfb464d130ad25f4227ff1fa4724d204e3b76395a5f4ea3e0ac8337b4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506183"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082900"
 ---
 # <a name="xaudio2-reference"></a>Referência de XAudio2
 
