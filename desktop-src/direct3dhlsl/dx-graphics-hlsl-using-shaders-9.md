@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 6455b47d24c1c83683ce8b85c48990bb32e221ae
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a1ef04c14682aa6e763222fd0c8db0e2eedf33abf747da97a16b2b1621e1c42a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104988653"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119740"
 ---
 # <a name="using-shaders-in-direct3d-9"></a>Usando sombreadores no Direct3D 9
 
@@ -85,7 +85,7 @@ Um sombreador é renderizado definindo o sombreador atual no dispositivo, inicia
 
 ## <a name="debugging-shaders"></a>Depurando sombreadores
 
-A extensão do DirectX para Microsoft Visual Studio .NET fornece um depurador HLSL totalmente integrado no ambiente de desenvolvimento integrado (IDE) do Visual Studio .NET. Para se preparar para a depuração de sombreador, você deve instalar as ferramentas corretas em seu computador (consulte [sombreadores de depuração no Visual Studio (Direct3D 9)](dx-graphics-hlsl-debug-visual-studio.md)).
+a extensão do DirectX para Microsoft Visual Studio .net fornece um depurador HLSL totalmente integrado dentro do ambiente de desenvolvimento integrado (IDE) do Visual Studio .net. para se preparar para a depuração de sombreador, você deve instalar as ferramentas certas em seu computador (consulte [depurando sombreadores no Visual Studio (Direct3D 9)](dx-graphics-hlsl-debug-visual-studio.md)).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -94,6 +94,6 @@ A extensão do DirectX para Microsoft Visual Studio .NET fornece um depurador HL
 [Guia de programação para HLSL](dx-graphics-hlsl-pguide.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

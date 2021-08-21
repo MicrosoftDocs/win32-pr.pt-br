@@ -4,16 +4,16 @@ ms.assetid: 03229b86-f59b-4946-8816-fa153af57630
 title: Controles de tinta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1206c5e77c12c31a80dcfbca0bebf317a28e0e6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 54f07a26d30746f99b291053276de20ef78c5ce4b4f0c7a14afce6633684b7b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501627"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032334"
 ---
 # <a name="ink-controls"></a>Controles de tinta
 
-A plataforma do Tablet PC fornece dois controles, [InkEdit](inkedit-control.md) e [InkPicture](inkpicture-control.md), que permitem adicionar facilmente a tinta e o reconhecimento de manuscrito aos aplicativos do Tablet PC. O controle InkEdit tem versões [gerenciadas](/previous-versions/ms835842(v=msdn.10)), [ActiveX](inkedit-control-reference.md) e Win32, enquanto a InkPicture tem apenas as versões gerenciadas e [ActiveX](inkpicture-control-reference.md) do [InkPicture](/previous-versions/ms583740(v=vs.100)) .
+A plataforma do Tablet PC fornece dois controles, [InkEdit](inkedit-control.md) e [InkPicture](inkpicture-control.md), que permitem adicionar facilmente a tinta e o reconhecimento de manuscrito aos aplicativos do Tablet PC. o controle InkEdit tem as versões [gerenciadas](/previous-versions/ms835842(v=msdn.10)), [ActiveX](inkedit-control-reference.md) e Win32, enquanto [a inkpicture tem](/previous-versions/ms583740(v=vs.100)) apenas as versões gerenciadas e [ActiveX](inkpicture-control-reference.md) .
 
 A principal diferença entre os controles é a forma como os dados são salvos. O controle [InkEdit](inkedit-control.md) salva a tinta como texto por padrão, enquanto a [InkPicture](inkpicture-control.md) salva a tinta como tinta.
 
@@ -43,7 +43,7 @@ Em código gerenciado, para evitar um vazamento de memória, você deve chamar e
 
 As seções a seguir descrevem os controles de tinta e o uso de controles de tinta em aplicativos:
 
--   [Adicionando controles de tinta a um projeto](adding-ink-controls-to-a-project.md)
+-   [Adicionando controles de tinta a um Project](adding-ink-controls-to-a-project.md)
 -   [Controle InkEdit](inkedit-control.md)
 -   [Controle InkPicture](inkpicture-control.md)
 

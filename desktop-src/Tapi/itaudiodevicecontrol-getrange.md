@@ -1,21 +1,21 @@
 ---
 description: O método GetRange recupera o intervalo de valores válidos para uma determinada propriedade de dispositivo de áudio.
 ms.assetid: df8985f4-8153-4f32-a90c-a5eb7c76b3c7
-title: 'Método ITAudioDeviceControl:: GetRange (Ipmsp. h)'
+title: Método ITAudioDeviceControl::GetRange (Ipmsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4cbf5bf36d4ec754440e1612f2e228c495d165c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 87779131dea5bb01a1575074e4f019dbfa2a62addebf5b91a7eee6e9cc041710
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811929"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003443"
 ---
-# <a name="itaudiodevicecontrolgetrange-method"></a>Método ITAudioDeviceControl:: GetRange
+# <a name="itaudiodevicecontrolgetrange-method"></a>Método ITAudioDeviceControl::GetRange
 
-\[ Esse método não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[Esse método não está disponível para uso no Windows Vista, Windows Server 2008 e versões subsequentes do sistema operacional. A API do Cliente RTC fornece funcionalidade semelhante.\]
 
-O método **GetRange** recupera o intervalo de valores válidos para uma determinada [**propriedade de dispositivo de áudio**](audiodeviceproperty.md).
+O **método GetRange** recupera o intervalo de valores válidos para uma determinada propriedade [**de dispositivo de áudio**](audiodeviceproperty.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -32,49 +32,49 @@ HRESULT get_Terminal(
 
 <dl> <dt>
 
-*Propriedade* \[ no\]
+*Propriedade* \[ Em\]
 </dt> <dd>
 
-Membro da enumeração [**AudioDeviceProperty**](audiodeviceproperty.md) .
+Membro da [**enum AudioDeviceProperty.**](audiodeviceproperty.md)
 
 </dd> <dt>
 
-*plMin* \[ fora\]
+*plMin* \[ out\]
 </dt> <dd>
 
 Valor mínimo válido para a propriedade de entrada.
 
 </dd> <dt>
 
-*plMax* \[ fora\]
+*plMax* \[ out\]
 </dt> <dd>
 
 Valor máximo válido para a propriedade de entrada.
 
 </dd> <dt>
 
-*plSteppingDelta* \[ fora\]
+*plSteppingDelta* \[ out\]
 </dt> <dd>
 
-Incremento pelo qual o valor da propriedade pode ser aumentado ou diminuído.
+Incremente pelo qual o valor da propriedade pode ser aumentado ou reduzido.
 
 </dd> <dt>
 
-*plDefault* \[ fora\]
+*plDefault* \[ out\]
 </dt> <dd>
 
-Valor padrão para o parâmetro *Property* .
+Valor padrão para o *parâmetro* Property.
 
 </dd> <dt>
 
-*plFlags* \[ fora\]
+*plFlags* \[ out\]
 </dt> <dd>
 
-Valor da enumeração [**TAPIControlFlags**](tapicontrolflags.md) indicando como o valor da *Propriedade* é controlado.
+Valor da [**enum TAPIControlFlags**](tapicontrolflags.md) que indica como o *valor property* é controlado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -95,9 +95,9 @@ Esse método pode retornar um desses valores.
 
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,1<br/>                                                         |
-| parâmetro<br/>       | <dl> <dt>Ipmsp. h</dt> </dl>   |
-| Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>  |
+| Versão do TAPI<br/> | Requer TAPI 3.1<br/>                                                         |
+| Cabeçalho<br/>       | <dl> <dt>Ipmsp.h</dt> </dl>   |
+| Biblioteca<br/>      | <dl> <dt>Uuid.lib</dt> </dl>  |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl> |
 
 

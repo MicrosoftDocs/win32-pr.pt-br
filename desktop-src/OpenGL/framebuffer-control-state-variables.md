@@ -1,6 +1,6 @@
 ---
-title: Variáveis de estado de controle framebuffer
-description: Variáveis de estado de controle framebuffer
+title: Variáveis de Estado de Controle Framebuffer
+description: Variáveis de Estado de Controle Framebuffer
 ms.assetid: ab57e07d-a694-45e7-a3b3-2e856111b87d
 keywords:
 - Variáveis de estado de controle framebuffer OpenGL
@@ -12,14 +12,14 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 998414271956de44710e9ef456722d7499adb862
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 276019f790e5f4750e446cf4ae2d035e0178d0e79130100a5a5e1954cbdcb73a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107910074"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119061905"
 ---
-# <a name="framebuffer-control-state-variables"></a>Variáveis de estado de controle framebuffer
+# <a name="framebuffer-control-state-variables"></a>Variáveis de Estado de Controle Framebuffer
 
 <dl> <dt><span id="GL_DRAW_BUFFER"></span><span id="gl_draw_buffer"></span>\_buffer de desenho GL \_</dt> <dd> 
 
@@ -138,12 +138,12 @@ ms.locfileid: "107910074"
 
  
 
-</dd> <dt><span id="GL_ACCUM_CLEAR_VALUE"></span><span id="gl_accum_clear_value"></span>valor de limpeza do GL \_ Accum \_ \_</dt> <dd> 
+</dd> <dt><span id="GL_ACCUM_CLEAR_VALUE"></span><span id="gl_accum_clear_value"></span>VALOR \_ CLARO DE GL \_ \_ ACCUM</dt> <dd> 
 
 | Propriedade | Valor |
 |------------------|--------------------------------------------------------------------------------|
-| Descrição:     | Acumulação-valor de limpeza do buffer                                                |
-| Grupo de atributos: | Accum-buffer                                                                   |
+| Descrição:     | Valor desem buffer de acúmulo                                                |
+| Grupo de atributos: | accum-buffer                                                                   |
 | Valor inicial:   | 0                                                                              |
 | Comando Get:     | [**glGetFloatv**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) |
 

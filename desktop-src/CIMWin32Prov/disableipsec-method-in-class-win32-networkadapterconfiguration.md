@@ -1,8 +1,8 @@
 ---
-description: O método de classe WMI DisableIPSec é usado para desabilitar o IPsec (Internet Protocol Security) neste adaptador de rede habilitado para TCP/IP.
+description: O método de classe WMI DisableIPSec é usado para desabilitar a IPsec (Segurança de Protocolo de Internet) neste adaptador de rede habilitado para TCP/IP.
 ms.assetid: 6fff2721-1ee2-42b4-bbf9-fd36b97318e3
 ms.tgt_platform: multiple
-title: Método DisableIPSec da classe Win32_NetworkAdapterConfiguration
+title: Método DisableIPSec da Win32_NetworkAdapterConfiguration classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,18 +14,18 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 9b2a17bbfa0f10c08edb581b4a4bf51173facfea
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 61fc210f02891755c04d170a4b329b1aa9e27c343bf2e2b6e973016ee84c530b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020494"
 ---
-# <a name="disableipsec-method-of-the-win32_networkadapterconfiguration-class"></a>Método DisableIPSec da classe Win32 \_ NetworkAdapterConfiguration
+# <a name="disableipsec-method-of-the-win32_networkadapterconfiguration-class"></a>Método DisableIPSec da classe \_ NetworkAdapterConfiguration do Win32
 
-O método de [classe WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DisableIPSec** é usado para desabilitar o IPsec (Internet Protocol Security) neste adaptador de rede habilitado para TCP/IP.
+O método de classe [WMI](/windows/desktop/WmiSdk/retrieving-a-class) **DisableIPSec** é usado para desabilitar a IPsec (Segurança de Protocolo de Internet) neste adaptador de rede habilitado para TCP/IP.
 
-Este tópico usa a sintaxe formato MOF (MOF). Para obter mais informações sobre como usar esse método, consulte [chamando um método](/windows/desktop/WmiSdk/calling-a-method).
+Este tópico usa sintaxe Managed Object Format (MOF). Para obter mais informações sobre como usar esse método, consulte [Chamando um método](/windows/desktop/WmiSdk/calling-a-method).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ uint32 DisableIPSec();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando uma reinicialização não é necessária, 1 (uma) para uma conclusão bem-sucedida quando uma reinicialização é necessária e qualquer outro número se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**WMI Error Constants**](/windows/desktop/WmiSdk/wmi-error-constants) or [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando uma reinicialização não é necessária, 1 (um) para uma conclusão bem-sucedida quando uma reinicialização é necessária e qualquer outro número se houver um erro. Para obter mais informações sobre códigos de erro, consulte [**Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -51,7 +51,7 @@ Retorna um valor de 0 (zero) para uma conclusão bem-sucedida quando uma reinici
 
 0
 
-Conclusão bem-sucedida, nenhuma reinicialização necessária.
+Conclusão bem-sucedida, sem necessidade de reinicialização.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Conclusão bem-sucedida, reinicialização necessária.
 
 64
 
-Método sem suporte nesta plataforma.
+Não há suporte para o método nesta plataforma.
 
 </dd> <dt>
 
@@ -91,7 +91,7 @@ Máscara de sub-rede inválida.
 
 </dd> <dt>
 
-**Ocorreu um erro ao processar uma instância que foi retornada**
+**Ocorreu um erro ao processar uma Instância que foi retornada**
 </dt> <dd>
 
 67
@@ -127,7 +127,7 @@ Endereço IP inválido.
 
 </dd> <dt>
 
-**Endereço IP de gateway inválido**
+**Endereço IP do gateway inválido**
 </dt> <dd>
 
 71
@@ -136,12 +136,12 @@ Endereço IP do gateway inválido.
 
 </dd> <dt>
 
-**Ocorreu um erro ao acessar o registro para as informações solicitadas**
+**Ocorreu um erro ao acessar o Registro para as informações solicitadas**
 </dt> <dd>
 
 72
 
-Ocorreu um erro ao acessar o registro para obter as informações solicitadas.
+Ocorreu um erro ao acessar o Registro para as informações solicitadas.
 
 </dd> <dt>
 
@@ -181,12 +181,12 @@ Arquivo inválido.
 
 </dd> <dt>
 
-**Caminho de sistema inválido**
+**Caminho do sistema inválido**
 </dt> <dd>
 
 77
 
-Caminho de sistema inválido.
+Caminho do sistema inválido.
 
 </dd> <dt>
 
@@ -226,21 +226,21 @@ Não é possível configurar o serviço DHCP.
 
 </dd> <dt>
 
-**Não é possível renovar a concessão DHCP**
+**Não é possível renovar a concessão de DHCP**
 </dt> <dd>
 
 82
 
-Não é possível renovar a concessão DHCP.
+Não é possível renovar a concessão de DHCP.
 
 </dd> <dt>
 
-**Não é possível liberar a concessão DHCP**
+**Não é possível liberar a concessão de DHCP**
 </dt> <dd>
 
 83
 
-Não é possível liberar a concessão DHCP.
+Não é possível liberar a concessão de DHCP.
 
 </dd> <dt>
 
@@ -249,7 +249,7 @@ Não é possível liberar a concessão DHCP.
 
 84
 
-O IP não está habilitado no adaptador.
+IP não habilitado no adaptador.
 
 </dd> <dt>
 
@@ -267,7 +267,7 @@ IPX não habilitado no adaptador.
 
 86
 
-Erro de limites de número de rede ou quadro.
+Erro de limites de quadro ou número de rede.
 
 </dd> <dt>
 
@@ -312,7 +312,7 @@ Parâmetro fora dos limites.
 
 91
 
-Acesso negado.
+Acesso negado
 
 </dd> <dt>
 
@@ -370,7 +370,7 @@ Interface não configurável.
 
 </dd> <dt>
 
-**Nem todas as concessões DHCP puderam ser liberadas/renovadas**
+**Nem todas as concessões DHCP podem ser liberadas/renovadas**
 </dt> <dd>
 
 98
@@ -384,7 +384,7 @@ Nem todas as concessões DHCP podem ser liberadas ou renovadas.
 
 100
 
-DHCP não habilitado no adaptador.
+O DHCP não está habilitado no adaptador.
 
 </dd> <dt>
 
@@ -426,8 +426,8 @@ Next
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -439,13 +439,13 @@ Next
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)
 </dt> <dt>
 
-[**\_NetworkAdapterConfiguration Win32**](win32-networkadapterconfiguration.md)
+[**Win32 \_ NetworkAdapterConfiguration**](win32-networkadapterconfiguration.md)
 </dt> <dt>
 
-[Tarefas do WMI: rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
+[Tarefas WMI: Rede](/windows/desktop/WmiSdk/wmi-tasks--networking)
 </dt> <dt>
 
-[Tarefas do WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
+[Tarefas WMI: contas e domínios](/windows/desktop/WmiSdk/wmi-tasks--accounts-and-domains)
 </dt> <dt>
 
 [Suporte a IPv6 e IPv4 no WMI](/windows/desktop/WmiSdk/ipv6-and-ipv4-support-in-wmi)

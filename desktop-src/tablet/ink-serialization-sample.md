@@ -1,33 +1,33 @@
 ---
-description: Este exemplo demonstra como serializar e desserializar tinta em vários formatos.
+description: Este exemplo demonstra como serializar e des serializar tinta em vários formatos.
 ms.assetid: 468d9c2a-0b3c-4a44-a049-3f3b78e952ba
-title: Amostra de serialização de tinta
+title: Exemplo de serialização de tinta
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e898f91db17efcb7579c067e7db5c422da8213a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 80e71eed5c91bf4fa1524cc52af163516ced0c7362d0d20b8ecf52ac1a08ccd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501401"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032264"
 ---
-# <a name="ink-serialization-sample"></a>Amostra de serialização de tinta
+# <a name="ink-serialization-sample"></a>Exemplo de serialização de tinta
 
-Este exemplo demonstra como serializar e desserializar tinta em vários formatos. O aplicativo representa um formulário com campos para inserir nome, sobrenome e assinatura. O usuário pode salvar esses dados como ISF (formato serializado de tinta pura), linguagem XML (XML) usando ISF codificado na base64 ou HTML, que faz referência à tinta em uma imagem GIF (Graphics Interchange Format) codificada em base64. O aplicativo também permite que o usuário abra arquivos que foram salvos como XML e formatos ISF. O formato ISF usa propriedades estendidas para armazenar o nome e o sobrenome, enquanto os formatos XML e HTML armazenam essas informações em atributos personalizados.
+Este exemplo demonstra como serializar e des serializar tinta em vários formatos. O aplicativo representa um formulário com campos para inserir o nome, o sobrenome e a assinatura. O usuário pode salvar esses dados como ISF (formato serializado de tinta pura), linguagem XML (XML) usando ISF codificado em base64 ou HTML, que faz referência à tinta em uma imagem GIF (Graphics Interchange Format) codificada em base64. O aplicativo também permite que o usuário abra arquivos que foram salvos como formatos XML e ISF. O formato ISF usa propriedades estendidas para armazenar o nome e sobrenome, enquanto os formatos XML e HTML armazenam essas informações em atributos personalizados.
 
-Este exemplo não dá suporte ao carregamento do formato HTML porque o HTML não é adequado para armazenar dados estruturados. Como os dados são separados em nome, assinatura e assim por diante, é necessário um formato que preserve essa separação, como XML ou outro tipo de formato de banco de dados.
+Este exemplo não dá suporte ao carregamento do formato HTML, pois o HTML não é adequado para armazenar dados estruturados. Como os dados são separados em nome, assinatura e assim por diante, um formato que preserva essa separação, como XML ou outro tipo de formato de banco de dados, é necessário.
 
-O HTML é muito útil em um ambiente no qual a formatação é importante, como em um documento de processamento de texto. O HTML que é salvo por este exemplo usa GIFs reforçada. Esses GIFs têm ISF incorporados neles, o que preserva a fidelidade total da tinta. Um aplicativo de processamento de texto pode salvar um documento que contém vários tipos de dados, como imagens, tabelas, texto formatado e tinta persistente em um formato HTML. Esse HTML seria renderizado em navegadores que não reconhecem tinta. No entanto, quando carregado em um aplicativo habilitado para tinta, a fidelidade total da tinta original está disponível e pode ser renderizada, editada ou usada para reconhecimento.
+HTML é muito útil em um ambiente no qual a formatação é importante, como em um documento de processamento de palavras. O HTML salvo por este exemplo usa GIFs forteizados. Esses GIFs têm ISF inserido neles, o que preserva a fidelidade total da tinta. Um aplicativo de processamento de palavras pode salvar um documento que contém vários tipos de dados, como imagens, tabelas, texto formatado e tinta persistentes em um formato HTML. Esse HTML renderizaria em navegadores que não reconhecem tinta. No entanto, quando carregado em um aplicativo habilitado para tinta, a fidelidade total da tinta original está disponível e pode ser renderizada, editada ou usada para reconhecimento.
 
-Os recursos a seguir são usados neste exemplo:
+Os seguintes recursos são usados neste exemplo:
 
--   O método [Load](/previous-versions/ms569609(v=vs.100)) do objeto [Ink](/previous-versions/aa515768(v=msdn.10))
--   O método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) do objeto [Ink](/previous-versions/aa515768(v=msdn.10))
--   A propriedade [ExtendedProperties](/previous-versions/ms582214(v=vs.100)) do objeto de [tinta](/previous-versions/aa515768(v=msdn.10))
+-   O [método Load](/previous-versions/aa515768(v=msdn.10)) do [objeto](/previous-versions/ms569609(v=vs.100)) Ink
+-   O [método Save](/previous-versions/aa515768(v=msdn.10)) do [objeto](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) Ink
+-   A [propriedade](/previous-versions/aa515768(v=msdn.10)) [ExtendedProperties](/previous-versions/ms582214(v=vs.100)) do objeto Ink
 
 ## <a name="collecting-ink"></a>Coletando tinta
 
-Primeiro, faça referência à API do Tablet PC, que é instalada com o SDK (Software Development Kit) do Windows Vista e do Windows XP Tablet PC Edition.
+Primeiro, consulte a API do Tablet PC, que é instalada com o SDK (Software Development Kit) do Windows Vista e Windows XP Tablet PC Edition.
 
 
 ```C++
@@ -36,7 +36,7 @@ using Microsoft.Ink;
 
 
 
-O construtor cria e habilita um [InkCollector](/previous-versions/ms836493(v=msdn.10)), `ic` , para o formulário.
+O construtor cria e habilita um [InkCollector](/previous-versions/ms836493(v=msdn.10)) `ic` , , para o formulário.
 
 
 ```C++
@@ -48,11 +48,11 @@ ic.Enabled = true;
 
 ## <a name="saving-a-file"></a>Salvando um arquivo
 
-O `SaveAsMenu_Click` método manipula a caixa de diálogo Salvar como, cria um fluxo de arquivo no qual salvar os dados de tinta e chama o método salvar que corresponde à opção do usuário.
+O método trata a caixa de diálogo Salvar como, cria um fluxo de arquivos no qual salvar os dados de tinta e chama o método save que corresponde à escolha `SaveAsMenu_Click` do usuário.
 
 ## <a name="saving-to-an-isf-file"></a>Salvando em um arquivo ISF
 
-No `SaveISF` método, os valores de First e Last Name são adicionados à propriedade [ExtendedProperties](/previous-versions/ms582214(v=vs.100)) da propriedade [Ink](/previous-versions/ms836505(v=msdn.10)) do objeto [InkCollector](/previous-versions/ms836493(v=msdn.10)) , antes que a tinta seja serializada e gravada no arquivo. Depois que a tinta for serializada, os valores de nome e sobrenome serão removidos da Propriedade ExtendedProperties do objeto de [tinta](/previous-versions/aa515768(v=msdn.10)) .
+No método , os valores de nome e sobrenome são adicionados à propriedade `SaveISF` [ExtendedProperties](/previous-versions/ms582214(v=vs.100)) da propriedade Ink do objeto [InkCollector,](/previous-versions/ms836493(v=msdn.10)) antes que a tinta seja serializada e gravado no arquivo. [](/previous-versions/ms836505(v=msdn.10)) Depois que a tinta for serializada, os valores [](/previous-versions/aa515768(v=msdn.10)) de nome e sobrenome serão removidos da propriedade ExtendedProperties do objeto Ink.
 
 
 ```C++
@@ -98,7 +98,7 @@ s.Write(isf,0,isf.Length);
 
 ## <a name="saving-to-an-xml-file"></a>Salvando em um arquivo XML
 
-No `SaveXML` método, um objeto [XmlTextWriter](/dotnet/api/system.xml.xmltextwriter?view=netcore-3.1) é usado para criar e gravar em um documento XML. Usando o método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) do objeto [Ink](/previous-versions/aa515768(v=msdn.10)) , a tinta é primeiro convertida em uma matriz de bytes de formato serializado de tinta codificada em Base64 e, em seguida, a matriz de bytes é convertida em uma cadeia de caracteres a ser gravada no arquivo XML. Os dados de texto do formulário também são gravados no arquivo XML.
+No método `SaveXML` , um objeto [XmlTextWriter](/dotnet/api/system.xml.xmltextwriter?view=netcore-3.1) é usado para criar e gravar em um documento XML. Usando o método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) do objeto [Ink,](/previous-versions/aa515768(v=msdn.10)) a tinta é convertida primeiro em uma matriz de byte formato ISF codificada em base64 e, em seguida, a matriz de byte é convertida em uma cadeia de caracteres a ser escrita no arquivo XML. Os dados de texto do formulário também são gravados no arquivo XML.
 
 
 ```C++
@@ -123,7 +123,7 @@ xwriter.WriteElementString("LastName",LastNameBox.Text);
 
 ## <a name="saving-to-an-html-file"></a>Salvando em um arquivo HTML
 
-O método SaveHTML usa a caixa delimitadora da coleção [strokess](/previous-versions/ms827799(v=msdn.10)) para testar a presença de uma assinatura. Se a assinatura existir, ela será convertida no formato GIF reforçada usando o método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) do objeto Ink e gravada em um arquivo. Em seguida, o GIF é referenciado no arquivo HTML.
+O método SaveHTML usa a caixa delimitada da coleção [Strokes](/previous-versions/ms827799(v=msdn.10)) para testar a presença de uma assinatura. Se a assinatura existir, ela será convertida no formato GIF com base no método [Save](/previous-versions/dotnet/netframework-3.5/ms571335(v=vs.90)) do objeto de tinta e gravado em um arquivo. O GIF é referenciado no arquivo HTML.
 
 
 ```C++
@@ -155,11 +155,11 @@ else
 
 ## <a name="loading-a-file"></a>Carregando um arquivo
 
-O `OpenMenu_Click` método manipula a caixa de diálogo abrir, abre o arquivo e chama o método de carregamento que corresponde à escolha do usuário.
+O método trata a caixa de diálogo Abrir, abre o arquivo e chama o método de carregamento que corresponde à `OpenMenu_Click` escolha do usuário.
 
 ## <a name="loading-an-isf-file"></a>Carregando um arquivo ISF
 
-O `LoadISF` método lê o arquivo criado anteriormente e converte a matriz de bytes em tinta com o método [Load](/previous-versions/ms569609(v=vs.100)) do objeto [Ink](/previous-versions/aa515768(v=msdn.10)) . O coletor de tinta está temporariamente desabilitado para atribuir o objeto de tinta a ele. `LoadISF`Em seguida, o método verifica a propriedade [ExtendedProperties](/previous-versions/ms582214(v=vs.100)) do objeto Ink para as cadeias de caracteres First e Last Name.
+O método lê o arquivo criado anteriormente e converte a matriz byte em tinta com o método Load do `LoadISF` [objeto Ink.](/previous-versions/ms569609(v=vs.100)) [](/previous-versions/aa515768(v=msdn.10)) O coletor de tinta está temporariamente desabilitado para atribuir o objeto Ink a ele. Em `LoadISF` seguida, o método verifica a propriedade [ExtendedProperties](/previous-versions/ms582214(v=vs.100)) do objeto Ink para as cadeias de caracteres de nome e sobrenome.
 
 
 ```C++
@@ -214,7 +214,7 @@ else
 
 ## <a name="loading-an-xml-file"></a>Carregando um arquivo XML
 
-O `LoadXML` método carrega um arquivo XML criado anteriormente, recupera dados do nó de tinta e converte os dados no nó para tinta usando o método [Load](/previous-versions/ms569609(v=vs.100)) do objeto [Ink](/previous-versions/aa515768(v=msdn.10)) . O [InkCollector](/previous-versions/ms836493(v=msdn.10)) está temporariamente desabilitado para atribuir o objeto de tinta a ele. A caixa assinatura é invalidada e as informações de nome e sobrenome são recuperadas do documento XML.
+O método carrega um arquivo XML criado anteriormente, recupera dados do nó Ink e converte os dados no nó em tinta usando o método Load do `LoadXML` [objeto Ink.](/previous-versions/ms569609(v=vs.100)) [](/previous-versions/aa515768(v=msdn.10)) O [InkCollector está](/previous-versions/ms836493(v=msdn.10)) temporariamente desabilitado para atribuir o objeto Ink a ele. A caixa de assinatura é invalidada e as informações de nome e sobrenome são recuperadas do documento XML.
 
 
 ```C++
@@ -271,7 +271,7 @@ else
 
 ## <a name="closing-the-form"></a>Fechando o formulário
 
-O método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) do formulário descarta o objeto [InkCollector](/previous-versions/ms836493(v=msdn.10)) .
+O método [Dispose](/dotnet/api/system.windows.forms.form.dispose?view=netcore-3.1) do formulário descarta o [objeto InkCollector.](/previous-versions/ms836493(v=msdn.10))
 
  
 

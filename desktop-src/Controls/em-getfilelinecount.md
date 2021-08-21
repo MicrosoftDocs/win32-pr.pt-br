@@ -3,7 +3,7 @@ title: Mensagem de EM_GETFILELINECOUNT (CommCtrl. h)
 description: Obtém o número de linhas em um controle de edição de várias linhas, independentemente de como as linhas são exibidas na tela.
 ms.assetid: 9fe63c10-7395-4f98-a672-14960a70d14f
 keywords:
-- Controles de EM_GETFILELINECOUNT de mensagens do Windows
+- controles de Windows de mensagem de EM_GETFILELINECOUNT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 10/19/2018
-ms.openlocfilehash: bf48b3abeb10b98bf0c22a7dd2ef93c73a2a59c6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 28539af32212a699e12d2cf1d1787fa2e7aaa224f374eb6a63717279fcad16b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085940"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019674"
 ---
 # <a name="em_getfilelinecount-message-commctrlh"></a>Mensagem de EM_GETFILELINECOUNT (CommCtrl. h)
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é um inteiro que especifica o número total de linhas de texto no controle de edição de várias linhas, independentemente de como as linhas são exibidas na tela. Se o controle não tiver texto, o valor de retorno será 1. O valor de retorno nunca será menor que 1.
 
@@ -59,9 +59,9 @@ A quebra automática de linha não altera o número de linhas que essa mensagem 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 10, 1809\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2019\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, 1809 \[ aplicativos de área de trabalho apenas\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2019\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>CommCtrl. h</dt> </dl> |
 
 
 

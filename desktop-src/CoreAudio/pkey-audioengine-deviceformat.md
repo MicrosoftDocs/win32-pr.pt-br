@@ -4,12 +4,12 @@ ms.assetid: eb3c734f-0bb8-47cc-a01f-99569f472cde
 title: PKEY_AudioEngine_DeviceFormat (Mmdeviceapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6ebb80fefd59fbc4067ce4a075d27b88de3d96c1
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 13245d23095c25173a894a7a4c7cc11b2cdc534f6ae7198508b725d0fd1cf0b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646500"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119018324"
 ---
 # <a name="pkey_audioengine_deviceformat"></a>PKEY \_ AudioEngine \_ DeviceFormat
 
@@ -17,7 +17,7 @@ A propriedade **PKEY \_ AudioEngine \_ DeviceFormat** especifica o formato de di
 
 O membro **VT** da estrutura **PROPVARIANT** é definido como blob VT \_ .
 
-O membro de **blob** da estrutura **PROPVARIANT** é uma estrutura do tipo **blob** que contém dois membros. Member **BLOB. cbSize** é um **DWORD** que especifica o número de bytes na descrição do formato. Member **BLOB. pBlobData** aponta para uma estrutura **WAVEFORMATEX** que contém a descrição do formato. Para obter mais informações sobre **blob**, consulte a documentação do SDK do Windows. Para obter mais informações sobre o **WAVEFORMATEX**, consulte a documentação do Windows DDK.
+O membro de **blob** da estrutura **PROPVARIANT** é uma estrutura do tipo **blob** que contém dois membros. Member **BLOB. cbSize** é um **DWORD** que especifica o número de bytes na descrição do formato. Member **BLOB. pBlobData** aponta para uma estrutura **WAVEFORMATEX** que contém a descrição do formato. para obter mais informações sobre **BLOB**, consulte a documentação do SDK do Windows. para obter mais informações sobre o **WAVEFORMATEX**, consulte a documentação do Windows DDK.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,9 +25,9 @@ O membro de **blob** da estrutura **PROPVARIANT** é uma estrutura do tipo **blo
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mmdeviceapi. h</dt> </dl> |
 
 
 

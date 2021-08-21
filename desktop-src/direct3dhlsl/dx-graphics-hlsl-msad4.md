@@ -1,6 +1,6 @@
 ---
 title: msad4
-description: Compara um valor de referência de 4 bytes e um valor de origem de 8 bytes e acumula um vetor de quatro somas. Cada soma corresponde à soma mascarada de diferenças absolutas de um alinhamento de byte diferente entre o valor de referência e o valor de origem.
+description: Compara um valor de referência de 4 byte e um valor de origem de 8 byte e acumula um vetor de 4 somas. Cada soma corresponde à soma mascarada de diferenças absolutas de um alinhamento de byte diferente entre o valor de referência e o valor de origem.
 ms.assetid: 6497F9AE-4524-44C2-A1C6-2A4ACB30FA9C
 keywords:
 - msad4 HLSL
@@ -13,20 +13,20 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 552db3afd07677777b47e939d659c0f6e333e496
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be09292cad1181c9bac84a4ecb5346b01b0a58c73e2e545d7386658ac54a1f11
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104967254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119120110"
 ---
 # <a name="msad4"></a>msad4
 
-Compara um valor de referência de 4 bytes e um valor de origem de 8 bytes e acumula um vetor de quatro somas. Cada soma corresponde à soma mascarada de diferenças absolutas de um alinhamento de byte diferente entre o valor de referência e o valor de origem.
+Compara um valor de referência de 4 byte e um valor de origem de 8 byte e acumula um vetor de 4 somas. Cada soma corresponde à soma mascarada de diferenças absolutas de um alinhamento de byte diferente entre o valor de referência e o valor de origem.
 
 
 
-| uint4 Result = msad4 (referência uint, fonte uint2, uint4 Accum); |
+| uint4 result = msad4(uint reference, uint2 source, uint4 accum); |
 |------------------------------------------------------------------|
 
 
@@ -37,46 +37,46 @@ Compara um valor de referência de 4 bytes e um valor de origem de 8 bytes e acu
 
 <dl> <dt>
 
-<span id="reference"></span><span id="REFERENCE"></span>*referência*
+<span id="reference"></span><span id="REFERENCE"></span>*Referência*
 </dt> <dd>
 
-\[na \] matriz de referência de 4 bytes em um valor **uint** .
+\[em \] A matriz de referência de 4 bytes em um valor **uint.**
 
 </dd> <dt>
 
-<span id="source"></span><span id="SOURCE"></span>*original*
+<span id="source"></span><span id="SOURCE"></span>*Fonte*
 </dt> <dd>
 
-\[na \] matriz de origem de 8 bytes em dois valores de **uint2** .
+\[em \] A matriz de origem de 8 bytes em dois valores **uint2.**
 
 </dd> <dt>
 
-<span id="accum"></span><span id="ACCUM"></span>*Accum*
+<span id="accum"></span><span id="ACCUM"></span>*accum*
 </dt> <dd>
 
-\[em \] um vetor de quatro valores. **msad4** adiciona esse vetor à soma mascarada de diferenças absolutas dos diferentes alinhamentos de byte entre o valor de referência e o valor de origem.
+\[em \] Um vetor de 4 valores. **msad4** adiciona esse vetor à soma mascarada de diferenças absolutas dos diferentes alinhamentos de byte entre o valor de referência e o valor de origem.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Um vetor de quatro somas. Cada soma corresponde à soma mascarada de diferenças absolutas de diferentes alinhamentos de bytes entre o valor de referência e o valor de origem. **msad4** não inclui uma diferença na soma se essa diferença for mascarada (ou seja, o byte de referência é 0).
+Um vetor de 4 somas. Cada soma corresponde à soma mascarada de diferenças absolutas de alinhamentos de byte diferentes entre o valor de referência e o valor de origem. **msad4** não incluirá uma diferença na soma se essa diferença for mascarada (ou seja, o byte de referência é 0).
 
 ## <a name="remarks"></a>Comentários
 
-Para usar o **msad4** intrínseco no código do sombreador, chame o método [**ID3D11Device:: CheckFeatureSupport**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-checkfeaturesupport) com [**\_ \_ \_ as opções D3D11 Feature D3D11**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_feature) para verificar se o dispositivo Direct3D dá suporte à opção de recurso [**SAD4ShaderInstructions**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options) . O **msad4** intrínseco requer um driver de vídeo WDDM 1,2 e todos os drivers de exibição do WDDM 1,2 devem dar suporte a **msad4**. Se seu aplicativo cria um dispositivo de renderização com [nível de recurso](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) 11,0 ou 11,1 e o destino de compilação é o modelo de sombreador 5 ou posterior, o código-fonte HLSL pode usar o intrínseco **msad4** .
+Para usar o intrínseco **msad4** no código do sombreador, chame o método [**ID3D11Device::CheckFeatureSupport**](/windows/desktop/api/d3d11/nf-d3d11-id3d11device-checkfeaturesupport) com [**D3D11 \_ FEATURE \_ D3D11 \_ OPTIONS**](/windows/desktop/api/d3d11/ne-d3d11-d3d11_feature) para verificar se o dispositivo Direct3D dá suporte à opção de recurso [**SAD4ShaderInstructions.**](/windows/desktop/api/d3d11/ns-d3d11-d3d11_feature_data_d3d11_options) O intrínseco **msad4** requer um driver de exibição WDDM 1.2 e todos os drivers de exibição do WDDM 1.2 devem dar suporte a **msad4**. Se seu aplicativo criar um dispositivo de renderização com o nível [de](/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro) recurso 11.0 ou 11.1 e o destino da compilação for o modelo de sombreador 5 ou posterior, o código-fonte HLSL poderá usar o intrínseco **msad4.**
 
-Os valores de retorno só são precisos até 65535. Se você chamar o **msad4** intrínseco com entradas que podem resultar em valores de retorno maiores que 65535, **msad4** produzirá resultados indefinidos.
+Os valores de retorno são precisos apenas até 65535. Se você chamar o intrínseco **msad4** com entradas que podem resultar em valores de retorno maiores que 65535, **msad4** produzirá resultados indefinido.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                | Com suporte |
 |-------------------------------------------------------------|-----------|
-| [Modelo do sombreador 5 ou posterior](d3d11-graphics-reference-sm5.md) | sim       |
+| [Modelo de sombreador 5 ou posterior](d3d11-graphics-reference-sm5.md) | sim       |
 
 
 
@@ -84,7 +84,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 ## <a name="examples"></a>Exemplos
 
-Aqui está um exemplo de cálculo de resultado para **msad4**:
+Aqui está um exemplo de cálculo de resultado **para msad4:**
 
 
 ```
@@ -126,8 +126,8 @@ buf_accum[DTid.x] = accum;
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 8 \| UWP\]<br/>           |
-| Servidor mínimo com suporte<br/> | Aplicativos do Windows Server 2012 \[ Desktop aplicativos \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 aplicativos UWP de aplicativos da área \| de trabalho\]<br/>           |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 aplicativos UWP de aplicativos da área \| de trabalho\]<br/> |
 
 
 

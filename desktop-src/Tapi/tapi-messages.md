@@ -4,12 +4,12 @@ ms.assetid: d302819e-c522-470a-be5e-52625c9223a4
 title: Mensagens TAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 58307a0230b76c6ad98c57f4590098f0dcf6b236
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3dd0a73a5ed845901d3cbe937a366a357c149541e8973a423310345dc241b92d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105789447"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002724"
 ---
 # <a name="tapi-messages"></a>Mensagens TAPI
 
@@ -33,7 +33,7 @@ Esta seção contém as informações de referência para as seguintes mensagens
 -   [Mensagens do Call Center](call-center-messages.md)
 -   [Mensagens de erro formatadas](formatted-error-messages.md)
 -   [Mensagens do dispositivo de linha](line-device-messages.md)
--   [Mensagens do dispositivo de telefone](phone-device-messages.md)
+-   [Telefone Mensagens do dispositivo](phone-device-messages.md)
 
  
 

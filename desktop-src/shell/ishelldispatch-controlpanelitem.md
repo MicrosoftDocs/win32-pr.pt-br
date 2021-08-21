@@ -13,19 +13,19 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 9A9B6B3F-FBBC-4e76-8018-8858B6392276
-ms.openlocfilehash: 1a1c024b316472be00f119485326b704a4fe8dd0
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 89ea8431df7e8cac09a041bd9a16c805633cd3ec82a2cc506cb30fcf0f0cd39b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842837"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032254"
 ---
 # <a name="ishelldispatchcontrolpanelitem-method"></a>Método IShellDispatch.ControlPanelItem
 
 Executa o aplicativo Painel de Controle especificado. Se o aplicativo já estiver aberto, ele ativará a instância em execução.
 
 > [!Note]  
-> A partir do Windows Vista, a maioria Painel de Controle aplicativos são itens do Shell e não podem ser abertos com essa função. Para abrir esses Painel de Controle aplicativos, passe o nome canônico para control.exe. Por exemplo:
+> A partir Windows Vista, a maioria Painel de Controle aplicativos são itens do Shell e não podem ser abertos com essa função. Para abrir esses Painel de Controle aplicativos, passe o nome canônico para control.exe. Por exemplo:
 >
 > ``` syntax
 > control.exe /name Microsoft.Personalization
@@ -67,7 +67,7 @@ O Painel de Controle nome do arquivo do aplicativo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -83,9 +83,9 @@ Esse método é implementado e acessado por meio do [**método Shell.ControlPane
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir usam [**ControlPanelItem**](shell-controlpanelitem.md) para executar o Painel de Controle **do** Propriedades de Vídeo item. O uso é mostrado para JScript, VBScript e Visual Basic.
+Os exemplos a seguir [**usam ControlPanelItem**](shell-controlpanelitem.md) para executar o Painel de Controle **do** Propriedades de Vídeo item. O uso é mostrado para JScript, VBScript e Visual Basic.
 
-Jscript:
+JScript:
 
 
 ```JScript
@@ -141,7 +141,7 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, somente aplicativos da área de trabalho do Windows XP \[\]<br/>                                         |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                         |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                           |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                           |
 | Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                         |

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de LVM_GETTOOLTIPS (commctrl. h)
-description: Recupera o controle ToolTip que o controle List-View usa para exibir dicas de ferramenta. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetToolTips do ListView.
+title: LVM_GETTOOLTIPS mensagem (Commctrl.h)
+description: Recupera o controle de dica de ferramenta que o controle de exibição de lista usa para exibir dicas de ferramenta. Você pode enviar essa mensagem explicitamente ou usar a \_ macro ListView GetToolTips.
 ms.assetid: a3522c64-9498-40b8-9062-c112b7c8cacc
 keywords:
-- Controles de LVM_GETTOOLTIPS de mensagens do Windows
+- LVM_GETTOOLTIPS controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6f409c85ed6157e8cfc837e5efa3a68488aec504
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a6ca4340a8c57c6551d3c46f9324e4b66250f383c9412a3772df3114f105c5f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019284"
 ---
-# <a name="lvm_gettooltips-message"></a>Mensagem do LVM \_ GETtooltips
+# <a name="lvm_gettooltips-message"></a>Mensagem GETTOOLTIPS do LVM \_
 
-Recupera o controle ToolTip que o controle List-View usa para exibir dicas de ferramenta. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ GetToolTips do ListView**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gettooltips) .
+Recupera o controle de dica de ferramenta que o controle de exibição de lista usa para exibir dicas de ferramenta. Você pode enviar essa mensagem explicitamente ou usar a macro [**\_ ListView GetToolTips.**](/windows/desktop/api/Commctrl/nf-commctrl-listview_gettooltips)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Recupera o controle ToolTip que o controle List-View usa para exibir dicas de fe
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o identificador do controle ToolTip.
+Retorna o alça do controle de dica de ferramenta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna o identificador do controle ToolTip.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 
@@ -55,7 +55,7 @@ Retorna o identificador do controle ToolTip.
 
 <dl> <dt>
 
-[**autotooltips do LVM \_**](lvm-settooltips.md)
+[**LVM \_ SETTOOLTIPS**](lvm-settooltips.md)
 </dt> </dl>
 
  

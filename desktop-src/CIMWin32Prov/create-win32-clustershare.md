@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7cbf7c42b8523bcd12b19e9b474ecc50bd031939
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: edaafa00f792cf01b4166d525171cf15b7f781c8c0c943c17377b3bd9b3401dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089621"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119020584"
 ---
 # <a name="create-method-of-the-win32_clustershare-class"></a>Método Create da classe Win32 \_ ClusterShare
 
@@ -45,7 +45,7 @@ static uint32 Create(
 *Caminho* \[ do no\]
 </dt> <dd>
 
-Caminho local do compartilhamento do Windows.
+caminho Local do compartilhamento de Windows.
 
 Exemplo, "C: \\ arquivos de programas".
 
@@ -54,7 +54,7 @@ Exemplo, "C: \\ arquivos de programas".
 *Nome* \[ do no\]
 </dt> <dd>
 
-O alias para um caminho configurado como um compartilhamento em um sistema de computador executando o Windows.
+O alias para um caminho configurado como um compartilhamento em um sistema de computador que executa o Windows.
 
 Exemplo, "público".
 

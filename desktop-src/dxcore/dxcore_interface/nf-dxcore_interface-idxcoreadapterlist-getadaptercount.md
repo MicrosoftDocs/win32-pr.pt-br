@@ -4,18 +4,18 @@ description: Recupera o número de adaptadores em um objeto de lista do adaptado
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 067e7046d53bdd63f3c8db0c856cf5664a09f426
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 952120a039e4060a45f5e6e1de607fd68b50fcd7d7cd88ce5a98474f8f2dcfdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104162402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118985116"
 ---
 # <a name="idxcoreadapterlistgetadaptercount-method"></a>Método IDXCoreAdapterList:: GetAdapterCount
 
 Recupera o número de adaptadores em um objeto de lista do adaptador DXCore. Para obter diretrizes de programação e exemplos de código, consulte [usando DXCore para enumerar adaptadores](../dxcore-enum-adapters.md).
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ```cpp
 virtual uint32_t STDMETHODCALLTYPE GetAdapterCount() = 0;

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de PSM_INDEXTOPAGE (Prsht. h)
-description: Obtém o índice de uma página de folha de propriedades e retorna seu identificador HPROPSHEETPAGE. Você pode enviar essa mensagem explicitamente ou usar a \_ macro PropSheet IndexToPage.
+title: PSM_INDEXTOPAGE mensagem (Prsht.h)
+description: Pega o índice de uma página de folha de propriedades e retorna seu alça HPROPSHEETPAGE. Você pode enviar essa mensagem explicitamente ou usar a macro \_ PropSheet IndexToPage.
 ms.assetid: b14b35ad-bae0-4461-a90f-e2bc5e2ccfc2
 keywords:
-- Controles de PSM_INDEXTOPAGE de mensagens do Windows
+- PSM_INDEXTOPAGE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38f7a5658dbd92f4208e084f1df47a4dc3582156
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1f5cfe971ebdb85f444b20e66fcfaf77f87448f71b3a677bea104a5068daac9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078830"
 ---
-# <a name="psm_indextopage-message"></a>Mensagem de PSM \_ INDEXTOPAGE
+# <a name="psm_indextopage-message"></a>Mensagem PSM \_ INDEXTOPAGE
 
-Obtém o índice de uma página de folha de propriedades e retorna seu identificador HPROPSHEETPAGE. Você pode enviar essa mensagem explicitamente ou usar a macro [**PropSheet \_ IndexToPage**](/windows/desktop/api/Prsht/nf-prsht-propsheet_indextopage) .
+Pega o índice de uma página de folha de propriedades e retorna seu alça HPROPSHEETPAGE. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ PropSheet IndexToPage.**](/windows/desktop/api/Prsht/nf-prsht-propsheet_indextopage)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Obtém o índice de uma página de folha de propriedades e retorna seu identific
 *wParam* 
 </dt> <dd>
 
-Índice de base zero da página.
+Índice baseado em zero da página.
 
 </dd> <dt>
 
@@ -43,9 +43,9 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o identificador HPROPSHEETPAGE da página da folha de propriedades especificada por *wParam* , se bem-sucedida. Caso contrário, retornará zero.
+Retorna o alça HPROPSHEETPAGE da página de folha de propriedades especificada por *wParam* se for bem-sucedida. Caso contrário, retornará zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ Retorna o identificador HPROPSHEETPAGE da página da folha de propriedades espec
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>Prsht. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>Prsht.h</dt> </dl> |
 
 
 

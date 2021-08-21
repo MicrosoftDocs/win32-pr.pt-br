@@ -4,12 +4,12 @@ ms.assetid: 67a3b587-dd5b-4ccf-ab69-2137604706b8
 title: Constantes de LINECALLFEATURE2_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 977e71f722fba34da6b2ecbd6a3e914c34a0aae5
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 55b1ef95c5427c70455466fdc4e44424a8d7bc92f768698bd3356f28256b4dbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105767744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003134"
 ---
 # <a name="linecallfeature2_-constants"></a>\_Constantes LINECALLFEATURE2
 
@@ -139,7 +139,7 @@ Se esse bit estiver ativado, o recurso "Parque não direcionado" poderá ser inv
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

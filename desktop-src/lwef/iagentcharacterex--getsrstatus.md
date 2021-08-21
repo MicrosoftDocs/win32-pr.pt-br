@@ -4,16 +4,16 @@ description: IAgentCharacterEx GetSRStatus
 ms.assetid: ccb34108-8078-421a-a883-731b51fae179
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4396e325f5afba161046f2a001cebb29033d709b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 82f9f888fcea9069ff31ccef6b2c1ef5a0148fbb34ba21d03ee881c52056f10b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005332"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119105534"
 ---
 # <a name="iagentcharacterexgetsrstatus"></a>IAgentCharacterEx::GetSRStatus
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetSRStatus(

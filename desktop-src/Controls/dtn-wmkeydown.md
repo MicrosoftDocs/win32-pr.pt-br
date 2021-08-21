@@ -3,7 +3,7 @@ title: DTN_WMKEYDOWN código de notificação (commctrl. h)
 description: Enviado por um controle do seletor de data e hora (DTP) quando o usuário digita em um campo de retorno de chamada. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: e67e222d-28a1-4d30-ae64-8ec9a62fa321
 keywords:
-- DTN_WMKEYDOWN de código de notificação controles do Windows
+- DTN_WMKEYDOWN código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce2e7d0761308805746278d2f542f5e9458b56d5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0eaf822cc5eb8d1d8bdeca6b0853766774105af07cda77f55743d60d0fb12cdd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085254"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019974"
 ---
 # <a name="dtn_wmkeydown-notification-code"></a>Código de notificação do DTN \_ WMKEYDOWN
 
@@ -47,7 +47,7 @@ Um ponteiro para uma estrutura [**NMDATETIMEWMKEYDOWN**](/windows/win32/api/comm
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O proprietário do controle deve retornar zero.
 
@@ -61,9 +61,9 @@ Manipular esse código de notificação permite que o proprietário do controle 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **DTN \_ WMKEYDOWNW** (Unicode) e **DTN \_ WMKEYDOWNA** (ANSI)<br/>               |
 
 

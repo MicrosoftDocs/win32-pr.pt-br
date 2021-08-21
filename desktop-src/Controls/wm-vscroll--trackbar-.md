@@ -3,7 +3,7 @@ title: Código de notificação WM_VSCROLL (TrackBar) (WinUser. h)
 description: A mensagem do WM \_ VSCROLL é enviada ao proprietário de um controle TrackBar vertical quando o controle deslizante muda de posição. Uma janela recebe essa mensagem por meio de sua função WindowProc.
 ms.assetid: E491E210-9605-4ABB-A667-471830DA7C2B
 keywords:
-- TrackBar (código de notificação de WM_VSCROLL) controles do Windows
+- WM_VSCROLL (Trackbar) código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d1e13b07fab3335bf99469cd43ed1caa10373a97
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0dabd6c3c50588c4a9052b0829473352940f0027a1c12d0f3bbc6334e5f13b08
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077650"
 ---
 # <a name="wm_vscroll-trackbar-notification-code"></a>\_Código de notificação do WM VSCROLL (TrackBar)
 
@@ -75,7 +75,7 @@ O identificador para o controle TrackBar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar zero.
 
@@ -91,9 +91,9 @@ Observe que a mensagem do **WM \_ VSCROLL** transporta apenas 16 bits de dados d
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MM_MOM_OPEN (mmsystem. h)
-description: A \_ mensagem de abertura do MOM mm \_ é enviada para uma janela quando um dispositivo de saída de Midi é aberto.
+title: MM_MOM_OPEN mensagem (Mmsystem.h)
+description: A mensagem MM \_ MOM OPEN é enviada para uma janela quando um dispositivo de saída \_ MIDI é aberto.
 ms.assetid: 1374a07c-02fa-4b43-82df-cbd96302aec5
 keywords:
-- Multimídia do Windows de mensagem MM_MOM_OPEN
+- MM_MOM_OPEN mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2f676dccf532290ab2153b888c20fad7b19d98d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 842eaeeb6e18e6623f8c88d8f5c65527db36ee8370c48a4cb26edca55f6d5f5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454600"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119065486"
 ---
-# <a name="mm_mom_open-message"></a>Mensagem de abertura do \_ Mom mm \_
+# <a name="mm_mom_open-message"></a>Mensagem MM \_ MOM \_ OPEN
 
-A mensagem de **\_ \_ abertura do MOM mm** é enviada para uma janela quando um dispositivo de saída de Midi é aberto.
+A **mensagem MM MOM \_ \_ OPEN** é enviada para uma janela quando um dispositivo de saída MIDI é aberto.
 
 
 ```C++
@@ -41,14 +41,14 @@ lParam = reserved
 <span id="hOutput"></span><span id="houtput"></span><span id="HOUTPUT"></span>*hOutput*
 </dt> <dd>
 
-Identificador para o dispositivo de saída de MIDI.
+Manipular para o dispositivo de saída MIDI.
 
 </dd> <dt>
 
-<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*lParam*
+<span id="lParam"></span><span id="lparam"></span><span id="LPARAM"></span>*Lparam*
 </dt> <dd>
 
-Reservado Não use.
+Reservado; não use.
 
 </dd> </dl>
 
@@ -64,7 +64,7 @@ Essa mensagem não retorna um valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                      |
-| Cabeçalho<br/>                   | <dl> <dt>Mmsystem. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Mmsystem.h (incluir Windows.h)</dt> </dl> |
 
 
 
