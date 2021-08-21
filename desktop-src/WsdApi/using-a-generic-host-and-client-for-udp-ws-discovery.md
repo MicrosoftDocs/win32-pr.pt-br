@@ -4,12 +4,12 @@ ms.assetid: e82ce911-b2a7-4a57-a2f0-9aca6b74478f
 title: Usando um host genérico e um cliente para UDP WS-Discovery
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d3289f5205e4e417fe8162b401be6c608432cfa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae6af77529116e21848e22812e04322273e08f1f0cf4d107787b4039b2442b19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991486"
 ---
 # <a name="using-a-generic-host-and-client-for-udp-ws-discovery"></a>Usando um host genérico e um cliente para UDP WS-Discovery
 
@@ -19,11 +19,11 @@ Se o host ou o cliente for um aplicativo em execução em um computador, o host 
 
 **Para usar um host genérico e um cliente para solucionar problemas de descoberta de WS-Discovery**
 
-1.  Abra una janela de prompt de comando.
+1.  Abra uma janela de prompt de comando.
 2.  Execute o seguinte comando: **WSDDebug \_host.exe/Mode Metadata/Start**
 
     > [!Note]  
-    > Uma caixa de diálogo **alerta de segurança do Windows** pode ser exibida. Nesse caso, clique em **desbloquear** para permitir que o host de depuração WSD seja executado.
+    > uma caixa de diálogo **Segurança do Windows alerta** pode ser exibida. Nesse caso, clique em **desbloquear** para permitir que o host de depuração WSD seja executado.
 
      
 
@@ -38,7 +38,7 @@ Se o host ou o cliente for um aplicativo em execução em um computador, o host 
 
 3.  Execute o seguinte comando: **WSDDebug \_client.exe/Mode Metadata/Hello off/resolve** *<id>* . Substitua *<id>* pela ID do dispositivo identificada na etapa 2.
     > [!Note]  
-    > Uma caixa de diálogo **alerta de segurança do Windows** pode ser exibida. Nesse caso, clique em **desbloquear** para permitir que o cliente de depuração WSD seja executado.
+    > uma caixa de diálogo **Segurança do Windows alerta** pode ser exibida. Nesse caso, clique em **desbloquear** para permitir que o cliente de depuração WSD seja executado.
 
      
 
@@ -74,7 +74,7 @@ Anote o endereço de referência do ponto de extremidade (EPR). Esse endereço d
 Se a ID do dispositivo não corresponder ao endereço EPR, a falha do aplicativo provavelmente estará relacionada ao sistema operacional ou ao ambiente de rede. A falha pode ter uma ou mais das seguintes causas:
 
 -   O aplicativo está sendo executado no contexto de segurança incorreto. Verifique se o aplicativo está usando as credenciais corretas e se o cliente e o host têm permissão suficiente para acessar a rede.
--   A configuração do firewall está incorreta. Siga as instruções em [inspecionando as configurações de adaptador e firewall](inspecting-adapter-and-firewall-settings.md) para verificar se as configurações do firewall do Windows estão corretas e se não há outras regras descartando os pacotes. O cliente e o host também podem ser copiados em um computador "original" (um com uma instalação padrão do sistema operacional que nunca tenha sido unida a um domínio) para tentar reproduzir a falha.
+-   A configuração do firewall está incorreta. siga as instruções em [inspecionando adaptador e Firewall Configurações](inspecting-adapter-and-firewall-settings.md) para verificar se as configurações de firewall do Windows estão corretas e se não há outras regras descartando os pacotes. O cliente e o host também podem ser copiados em um computador "original" (um com uma instalação padrão do sistema operacional que nunca tenha sido unida a um domínio) para tentar reproduzir a falha.
 -   Uma política IPSec está bloqueando o aplicativo. Copie o cliente e o host em um computador que não esteja sujeito a diretivas IPSec e tente reproduzir a falha.
 
 ## <a name="related-topics"></a>Tópicos relacionados

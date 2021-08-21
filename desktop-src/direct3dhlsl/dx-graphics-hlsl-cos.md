@@ -3,7 +3,7 @@ title: cos
 description: Retorna o cosseno do valor especificado.
 ms.assetid: 96c15702-98be-45bc-9abc-60ccc3c217b6
 keywords:
-- HLSL de cos
+- cos HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4f5c0f4f071d47102c673301a397bfe3ecf178e4
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
-ms.translationtype: HT
+ms.openlocfilehash: a2a38547b08289f7fb91a3509c5581abff7ecad951b53edff695b5e0b4266e73
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366659"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043824"
 ---
 # <a name="cos"></a>cos
 
@@ -26,7 +26,7 @@ Retorna o cosseno do valor especificado.
 
 
 
-| *RET* cos (*x*) |
+| *ret* cos(*x*) |
 |----------------|
 
 
@@ -39,7 +39,7 @@ Retorna o cosseno do valor especificado.
 
 | Item                                                   | Descrição                                        |
 |--------------------------------------------------------|----------------------------------------------------|
-| <span id="x"></span><span id="X"></span>*w.x.y.*<br/> | \[no \] valor especificado, em radianos.<br/> |
+| <span id="x"></span><span id="X"></span>*X*<br/> | \[em \] O valor especificado, em radianos.<br/> |
 
 
 
@@ -47,30 +47,30 @@ Retorna o cosseno do valor especificado.
 
 ## <a name="return-value"></a>Valor Retornado
 
-O cosseno do parâmetro *x* .
+O cosseno do *parâmetro x.*
 
 ## <a name="type-description"></a>Descrição do tipo
 
 
 
-| Name  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
+| Nome  | [**Tipo de modelo**](dx-graphics-hlsl-intrinsic-functions.md)                                                  | [**Tipo de componente**](dx-graphics-hlsl-intrinsic-functions.md) | Tamanho                           |
 |-------|----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|--------------------------------|
-| *x*   | [**escalar**](dx-graphics-hlsl-intrinsic-functions.md), **vetor** ou **matriz** | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
-| *RET* | igual ao *x* de entrada                                                                                              | [**barra**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões como entrada *x* |
+| *x*   | [**escalar,**](dx-graphics-hlsl-intrinsic-functions.md) **vetor** ou **matriz** | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | any                            |
+| *Ret* | mesmo que a entrada *x*                                                                                              | [**Flutuar**](/windows/desktop/WinProg/windows-data-types)                        | mesmas dimensões que a entrada *x* |
 
 
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
-Essa função tem suporte nos seguintes modelos de sombreador.
+Essa função tem suporte nos modelos de sombreador a seguir.
 
 
 
 | Modelo de Sombreador                                                                       | Com suporte |
 |------------------------------------------------------------------------------------|-----------|
-| [Modelo do sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador mais altos | sim       |
+| [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) e modelos de sombreador superior | sim       |
 | [Modelo de sombreador 1 (DirectX HLSL)](dx-graphics-hlsl-sm1.md)                          | vs \_ 1 \_ 1  |
 
 

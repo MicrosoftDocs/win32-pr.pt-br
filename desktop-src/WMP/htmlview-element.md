@@ -3,7 +3,7 @@ title: Elemento HTMLView
 description: Observação Esta seção descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online. O elemento HTMLView especifica a URL base de uma página da Web HTMLView.
 ms.assetid: 741db1ed-9452-4cae-9185-15668abe06b3
 keywords:
-- Elemento HTMLView do Windows Media Player
+- Windows Media Player do elemento HTMLView
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f11a60e41b7f78be3440e16a7d2b3934f75e8ee3
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 703668427757df19675734e1503296a8a7144517801d0e8fdc0fadb25a16b0a0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105800129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054884"
 ---
 # <a name="htmlview-element"></a>Elemento HTMLView
 
@@ -42,7 +42,7 @@ O elemento **HtmlView** especifica a URL base de uma página da Web HtmlView.
 <span id="BaseURL__required_"></span><span id="baseurl__required_"></span><span id="BASEURL__REQUIRED_"></span>**BaseURL** (obrigatório)
 </dt> <dd>
 
-URL base para a página da Web do HTMLView que o Windows Media Player exibe.
+URL Base para a página da web HTMLView que Windows Media Player exibe.
 
 </dd> </dl>
 
@@ -61,7 +61,7 @@ URL base para a página da Web do HTMLView que o Windows Media Player exibe.
 
 ## <a name="remarks"></a>Comentários
 
-Você pode usar esse elemento para integrar o recurso HTMLView com sua loja online. Se o domínio da URL especificado pelo repositório online atual corresponder ao da página da Web do HTMLView, a opção de **executar agora** acontece sem intervenção do usuário e o conteúdo de HtmlView é exibido. Caso contrário, o Windows Media Player solicita ao usuário permissão para mostrar o conteúdo do HTMLView.
+Você pode usar esse elemento para integrar o recurso HTMLView com sua loja online. Se o domínio da URL especificado pelo repositório online atual corresponder ao da página da Web do HTMLView, a opção de **executar agora** acontece sem intervenção do usuário e o conteúdo de HtmlView é exibido. caso contrário, Windows Media Player solicita ao usuário permissão para mostrar o conteúdo do HTMLView.
 
 Por exemplo, se a URL para a página da Web HTMLView for https://www.proseware.com/html/HTMLView.htm e a URL para o atributo **BaseURL** for especificada como https://www.proseware.com , a página da Web HtmlView será exibida sem avisar o usuário.
 

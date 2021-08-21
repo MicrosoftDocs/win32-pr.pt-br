@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be75d3703e00350c2db937e73080fadd6364550d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eae3980c8e3f1db56130fdf27ab54b42d0cf8a4d8084400c4f34e07448323ddd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105800038"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118873919"
 ---
 # <a name="ts_ch_-constants"></a>\_Constantes TS ch \_ \*
 
@@ -41,8 +41,8 @@ As \_ constantes TS ch \_ \* são usadas internamente pelo TSF para indicar que 
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                         |
-| parâmetro<br/>                   | <dl> <dt>Textstor. h</dt> </dl>   |
+| Redistribuível<br/>          | TSF 1,0 em Windows 2000 Professional<br/>                                         |
+| Cabeçalho<br/>                   | <dl> <dt>Textstor. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Textstor. idl</dt> </dl> |
 
 

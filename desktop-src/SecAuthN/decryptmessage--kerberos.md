@@ -4,12 +4,12 @@ ms.assetid: 9e699f7c-f738-4702-bdef-fb2c276c38fc
 title: Função DecryptMessage (Kerberos)
 ms.topic: reference
 ms.date: 07/25/2019
-ms.openlocfilehash: b32968ea83ca0403a5d8dd1579c4e03f30776c19
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 62add8d4b33f356aeae5bbbf8fa16b19a0b5e419e0ab6c0a6847a3ed087ce726
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090759"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119008534"
 ---
 # <a name="decryptmessage-kerberos-function"></a>Função DecryptMessage (Kerberos)
 
@@ -56,7 +56,7 @@ Esse parâmetro pode ser o sinalizador a seguir.
 > [!NOTE]
 > KERB_WRAP_NO_ENCRYPT tem o mesmo valor e o mesmo significado.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função verificar que a mensagem foi recebida na sequência correta, a função retornará s \_ E \_ OK.
 
@@ -79,9 +79,9 @@ Para obter informações sobre a interoperação com o GSSAPI, consulte [interop
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------|
-| Cliente mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows XP\]          |
-| Servidor mínimo com suporte | \[Somente aplicativos da área de trabalho do Windows Server 2003\] |
-| parâmetro                   | SSPI. h (incluir Security. h)               |
+| Cliente mínimo com suporte | Windows \[Somente aplicativos da área de trabalho XP\]          |
+| Servidor mínimo com suporte | Windows \[Somente aplicativos da área de trabalho do servidor 2003\] |
+| Cabeçalho                   | SSPI. h (incluir Security. h)               |
 | Biblioteca                  | Secur32. lib                               |
 | DLL                      | Secur32.dll                               |
 

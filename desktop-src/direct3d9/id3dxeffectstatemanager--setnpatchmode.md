@@ -14,12 +14,12 @@ api_type:
 api_location:
 - D3dx9.lib
 - D3dx9.dll
-ms.openlocfilehash: 9b8725a0482b6945b04013df43d34a502f25b7b9
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 220d0541e6779ab1a3d4f3e189175abd7da82b1c8b7f378522d0c9df11896e88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044424"
 ---
 # <a name="id3dxeffectstatemanagersetnpatchmode-method"></a>Método ID3DXEffectStateManager:: SetNPatchMode
 
@@ -49,7 +49,7 @@ Quebre a superfície nesse número de subdivisãos. Isso é o mesmo que o númer
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

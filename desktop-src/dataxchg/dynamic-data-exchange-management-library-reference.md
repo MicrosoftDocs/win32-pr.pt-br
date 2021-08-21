@@ -1,23 +1,23 @@
 ---
-title: Referência da biblioteca de gerenciamento do troca dinâmica de dados
-description: . | Referência da biblioteca de gerenciamento do troca dinâmica de dados
+title: Referência Dados Dinâmicos Exchange biblioteca de gerenciamento do Dados Dinâmicos Exchange
+description: . | Referência Dados Dinâmicos Exchange biblioteca de gerenciamento do Dados Dinâmicos Exchange
 ms.assetid: bc9fc6ba-cf10-435b-ac0c-6253342f99fe
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5ed1febf9d85f902247375e412d30952ad419d8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c0ced4a9354875d3cf33eeecc04c2c65cc6a7a301bd384d60664248a9f6c16fa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105793692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118991306"
 ---
-# <a name="dynamic-data-exchange-management-library-reference"></a>Referência da biblioteca de gerenciamento do troca dinâmica de dados
+# <a name="dynamic-data-exchange-management-library-reference"></a>Referência Dados Dinâmicos Exchange biblioteca de gerenciamento do Dados Dinâmicos Exchange
 
 ## <a name="in-this-section"></a>Nesta seção
 
 -   [Funções DDEML](dynamic-data-exchange-management-library-functions.md)
--   [Transações de DDEML](dynamic-data-exchange-management-library-transactions.md)
--   [Estruturas de DDEML](dynamic-data-exchange-management-library-structures.md)
+-   [Transações DDEML](dynamic-data-exchange-management-library-transactions.md)
+-   [Estruturas DDEML](dynamic-data-exchange-management-library-structures.md)
 
  
 

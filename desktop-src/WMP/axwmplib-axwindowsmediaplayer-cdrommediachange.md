@@ -3,7 +3,7 @@ title: Evento CdromMediaChange do objeto AxWindowsMediaPlayer
 description: O evento CdromMediaChange ocorre quando um CD ou DVD é inserido ou ejetado de uma unidade de CD ou DVD. | Evento CdromMediaChange do objeto AxWindowsMediaPlayer
 ms.assetid: 0a6378c1-59e4-4be3-8764-d5c4ab478b6c
 keywords:
-- Evento CdromMediaChange do objeto AxWindowsMediaPlayer do Windows Media Player
+- Evento CdromMediaChange do objeto AxWindowsMediaPlayer Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Assembly
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 35385541f6bc91b6935f148fd8ae28df6a415f3d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 55dac05b3ca8a8675bfae431d3f2e8ffbb38db8701a2501fa80d282cd3c976ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788191"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054994"
 ---
 # <a name="cdrommediachange-event-of-the-axwindowsmediaplayer-object"></a>Evento CdromMediaChange do objeto AxWindowsMediaPlayer
 
-O evento **CdromMediaChange** ocorre quando um CD ou DVD é inserido ou ejetado de uma unidade de CD ou DVD.
+O **evento CdromMediaChange** ocorre quando um CD ou DVD é inserido ou ejetado de uma unidade de CD ou DVD.
 
 ``` syntax
 [C#]
@@ -41,13 +41,13 @@ Private Sub player_CdromMediaChange(
 
 ## <a name="event-data"></a>Dados de evento
 
-O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromMediaChangeEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromMediaChangeEvent**, que contém a seguinte propriedade relacionada a este evento.
+O manipulador associado a esse evento é do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromMediaChangeEventHandler**. Esse manipulador recebe um argumento do tipo **AxWMPLib. \_ WMPOCXEvents \_ CdromMediaChangeEvent**, que contém a propriedade a seguir relacionada a esse evento.
 
 
 
 | Propriedade | Descrição                                                        |
 |----------|--------------------------------------------------------------------|
-| CdromNum | System. Int32Specifies o índice da unidade de CD ou DVD.<br/> |
+| CdromNum | System.Int32 Especifica o índice da unidade de CD ou DVD.<br/> |
 
 
 
@@ -63,7 +63,7 @@ O índice da unidade de CD corresponde ao índice de uma interface IWMPCdrom ace
 
 | Requisito | Valor |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                          |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                          |
 | Namespace<br/> | **AxWMPLib**<br/>                                                                                                    |
 | Assembly<br/>  | <dl> <dt>AxInterop.WMPLib.dll (AxInterop.WMPLib.dll.dll)</dt> </dl> |
 

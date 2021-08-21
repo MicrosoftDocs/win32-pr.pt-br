@@ -1,20 +1,20 @@
 ---
-title: O que há de novo no Windows Vista para serviços de terminal
-description: O Windows Vista apresenta os seguintes novos elementos de programação para serviços de terminal.
+title: o que há de novo no Windows Vista para serviços de Terminal
+description: Windows O Vista apresenta os novos elementos de programação a seguir para serviços de terminal.
 ms.assetid: f5c0311e-ae54-4871-acac-ed5dcbe353d7
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 39dae6d3041c42eea7cd94fc76ab2d2771348379
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 7665b651973d63988634c0c68ed169538d35ecd639365f1a2180dcd3951e891d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105768540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118850222"
 ---
-# <a name="whats-new-in-windows-vista-for-terminal-services"></a>O que há de novo no Windows Vista para serviços de terminal
+# <a name="whats-new-in-windows-vista-for-terminal-services"></a>o que há de novo no Windows Vista para serviços de Terminal
 
-O Windows Vista apresenta os seguintes novos elementos de programação para serviços de terminal.
+Windows O Vista apresenta os novos elementos de programação a seguir para serviços de terminal.
 
 -   [**IMsRdpClient5**](imsrdpclient5.md)
 -   [**IMsRdpClientAdvancedSettings5**](imsrdpclientadvancedsettings5.md)

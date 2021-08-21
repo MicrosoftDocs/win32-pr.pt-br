@@ -1,31 +1,31 @@
 ---
-description: O exemplo a seguir cria e duplica um hash de algum texto. Em seguida, ele adiciona texto adicional ao hash original e ao texto diferente para a duplicata.
+description: O exemplo a seguir cria e duplica um hash de algum texto. Em seguida, ele adiciona texto adicional ao hash original e texto diferente à duplicata.
 ms.assetid: 7aa7c9a1-471b-4b40-9967-b1da946c83a5
-title: 'Programa de exemplo C: duplicando um hash'
+title: 'Exemplo de programa C: duplicando um hash'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a418f1e5e615d8c4b4c0e8a0af3061b9b6f860e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 19684dfd452ea887d9106453de1a8e996992042d25fb920b0f10e718cfec4ab3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754603"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119007794"
 ---
-# <a name="example-c-program-duplicating-a-hash"></a>Programa de exemplo C: duplicando um hash
+# <a name="example-c-program-duplicating-a-hash"></a>Exemplo de programa C: duplicando um hash
 
-O exemplo a seguir cria e duplica um [*hash*](../secgloss/h-gly.md) de algum texto. Em seguida, ele adiciona texto adicional ao hash original e ao texto diferente para a duplicata.
+O exemplo a seguir cria e duplica um [*hash*](../secgloss/h-gly.md) de algum texto. Em seguida, ele adiciona texto adicional ao hash original e texto diferente à duplicata.
 
-Este exemplo usa as seguintes funções de CryptoAPI:
+Este exemplo usa as seguintes funções CryptoAPI:
 
--   [**CryptAcquireContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
--   [**CryptCreateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash)
--   [**CryptHashData**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)
+-   [**Cryptacquirecontext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptacquirecontexta)
+-   [**Cryptcreatehash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptcreatehash)
+-   [**Crypthashdata**](/windows/desktop/api/Wincrypt/nf-wincrypt-crypthashdata)
 -   [**CryptDuplicateHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptduplicatehash)
--   [**CryptGetHashParam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam)
--   [**CryptDestroyHash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroyhash)
+-   [**Cryptgethashparam**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptgethashparam)
+-   [**Cryptdestroyhash**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptdestroyhash)
 -   [**CryptReleaseContext**](/windows/desktop/api/Wincrypt/nf-wincrypt-cryptreleasecontext)
 
-Este exemplo usa a função [**MyHandleError**](myhandleerror.md). O código para essa função está incluído no final do exemplo. O código para essa e outras funções auxiliares também está listado em [funções uso geral](general-purpose-functions.md).
+Este exemplo usa a [**função MyHandleError**](myhandleerror.md). O código para essa função é incluído no final do exemplo. O código para essa e outras funções auxiliares também é listado [em Uso Geral Functions](general-purpose-functions.md).
 
 
 ```C++

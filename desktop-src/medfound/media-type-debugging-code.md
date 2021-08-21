@@ -1,17 +1,17 @@
 ---
 description: Você pode usar o código a seguir para exibir o conteúdo de um tipo de mídia durante a depuração.
 ms.assetid: 1132c936-c3a7-4d98-bc90-957c170d307a
-title: Código de depuração do tipo de mídia
+title: Código de depuração de tipo de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 849c1e5f135d290df3aafa3b4aab43555d8e45fd
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 58818513c8cc6329802eedc235e37365579569251c3241f4c96141944c3925cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105790502"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974185"
 ---
-# <a name="media-type-debugging-code"></a>Código de depuração do tipo de mídia
+# <a name="media-type-debugging-code"></a>Código de depuração de tipo de mídia
 
 Você pode usar o código a seguir para exibir o conteúdo de um tipo de mídia durante a depuração.
 

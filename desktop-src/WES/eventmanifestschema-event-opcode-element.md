@@ -1,9 +1,9 @@
 ---
-title: Elemento Event (opcode)
+title: Elemento event (opcode)
 description: Define um evento para um opcode específico da tarefa.
 ms.assetid: 7ca8fff2-ef1a-45c4-b082-e4745330bf0b
 keywords:
-- evento EventLog do elemento Event
+- elemento event EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 25f7a7f3a92c07895529d6dad59df22a7389735d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 987bf0b8b84e574a83211e90dffcd1f636920b1ced0c34b9d1d239515d16cdd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105781480"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055994"
 ---
-# <a name="event-opcode-element"></a>Elemento Event (opcode)
+# <a name="event-opcode-element"></a>Elemento event (opcode)
 
-\[A partir do compilador de mensagens fornecido com a versão do Windows 7 do SDK do Windows, esse elemento não estará mais disponível.\]
+\[Começando com o compilador de mensagem que é Windows versão 7 do SDK do Windows, esse elemento não está mais disponível.\]
 
 Define um evento para um opcode específico da tarefa.
 
@@ -32,7 +32,7 @@ Define um evento para um opcode específico da tarefa.
  />
 ```
 
-O elemento **Event** é definido pelo elemento [**opcode**](eventmanifestschema-opcode-taskeventdefinitiontype-element.md) .
+O **elemento** event é definido pelo [**elemento opcode.**](eventmanifestschema-opcode-taskeventdefinitiontype-element.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -40,8 +40,8 @@ O elemento **Event** é definido pelo elemento [**opcode**](eventmanifestschema-
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

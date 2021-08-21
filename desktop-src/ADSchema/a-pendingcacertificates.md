@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1990d336c8cfb8efa0eefd1bfd9c1ccf3f8fa93f
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f95dbcb06a510c60a23448d250248923479eda274988d0657d1904a9810c8f93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645417"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022424"
 ---
 # <a name="pending-ca-certificates-attribute"></a>Atributo Pending-CA-Certificates
 
@@ -58,7 +58,7 @@ Os certificados que estão prestes a se tornarão efetivos para esta autoridade 
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -79,7 +79,7 @@ Os certificados que estão prestes a se tornarão efetivos para esta autoridade 
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -100,7 +100,7 @@ Os certificados que estão prestes a se tornarão efetivos para esta autoridade 
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -121,7 +121,7 @@ Os certificados que estão prestes a se tornarão efetivos para esta autoridade 
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -142,7 +142,7 @@ Os certificados que estão prestes a se tornarão efetivos para esta autoridade 
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |
@@ -163,7 +163,7 @@ Os certificados que estão prestes a se tornarão efetivos para esta autoridade 
 | ID do link                | \-                                                                     |
 | MAPI-Id                | \-                                                                     |
 | System-Only            | Falso                                                                  |
-| É de valor único       | True                                                                   |
+| É de valor único       | Verdadeiro                                                                   |
 | É indexado             | Falso                                                                  |
 | No catálogo global      | Falso                                                                  |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                           |

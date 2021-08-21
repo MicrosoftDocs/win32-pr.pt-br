@@ -4,12 +4,12 @@ description: Define o estado do item especificado no adaptador.
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 06/20/2019
-ms.openlocfilehash: 8cbeacdb8c6020441b5dd74a9f9233a6c112b4f6
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: c80ca670be26ffdcefa5e89cee079d2225d204ee97e99e41f69686300a46230b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105790432"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042904"
 ---
 # <a name="idxcoreadaptersetstate-method"></a>Método IDXCoreAdapter:: SetState
 

@@ -1,19 +1,19 @@
 ---
-description: Especifica o nível máximo de volume desejado de conteúdo de áudio de saída.
+description: Especifica o nível máximo de volume desejado do conteúdo de áudio de saída.
 ms.assetid: 231b7296-ca80-4918-bae6-674b976db24c
-title: Propriedade MFPKEY_WMADRC_PEAKTARGET (Wmcodecdsp. h)
+title: MFPKEY_WMADRC_PEAKTARGET propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c40fa68e2b580c5d3e8550d6e46c9f6b9fe4bfc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 79f54d15978bb3f6a34c015886d2aeb2a8ec48a0069669e81ea40bbd79353902
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807222"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973225"
 ---
-# <a name="mfpkey_wmadrc_peaktarget-property"></a>\_Propriedade MFPKEY WMADRC \_ PEAKTARGET
+# <a name="mfpkey_wmadrc_peaktarget-property"></a>Propriedade MFPKEY \_ WMADRC \_ PEAKTARGET
 
-Especifica o nível máximo de volume desejado de conteúdo de áudio de saída.
+Especifica o nível máximo de volume desejado do conteúdo de áudio de saída.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
@@ -21,7 +21,7 @@ g \_ wszWMADRCPeakTarget
 
 ## <a name="data-type"></a>Tipo de Dados
 
-\_I4 VT
+VT \_ I4
 
 ## <a name="default-value"></a>Valor padrão
 
@@ -29,13 +29,13 @@ Consulte Observações.
 
 ## <a name="remarks"></a>Comentários
 
-Você pode definir esse valor no decodificador para a finalidade do controle de intervalo dinâmico, mas terá efeito somente se a propriedade [MFPKEY \_ WMADEC \_ DRCMODE](mfpkey-wmadec-drcmodeproperty.md) for definida.
+Você pode definir esse valor no decodificador para fins de controle de intervalo dinâmico, mas ele terá um efeito somente se a propriedade [ \_ \_ DRCMODE MFPKEY WCODEC](mfpkey-wmadec-drcmodeproperty.md) estiver definida.
 
-Se você solicitar o controle de intervalo dinâmico do decodificador quando essa propriedade não for definida, o codec calculará um valor padrão.
+Se você solicitar o controle de intervalo dinâmico do decodificador quando essa propriedade não estiver definida, o codec calculará um valor padrão.
 
-Use as propriedades [MFPKEY \_ WMADRC \_ AVGREF](mfpkey-wmadrc-avgrefproperty.md) e [MFPKEY \_ WMADRC \_ PEAKREF](mfpkey-wmadrc-peakrefproperty.md) para calcular os valores apropriados para essa propriedade.
+Use as [propriedades MFPKEY \_ WMADRC \_ AVGREF](mfpkey-wmadrc-avgrefproperty.md) e [MFPKEY \_ WMADRC \_ PEAKREF](mfpkey-wmadrc-peakrefproperty.md) para calcular os valores apropriados para essa propriedade.
 
-Para obter mais informações sobre o controle de intervalo dinâmico, consulte o artigo da Web [recursos de codec do Windows Media Audio Professional](/previous-versions/ms867218(v=msdn.10)).
+Para obter mais informações sobre o controle de intervalo dinâmico, consulte o artigo da [Web Windows De áudio de Professional recursos do Codec](/previous-versions/ms867218(v=msdn.10)).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,9 +43,9 @@ Para obter mais informações sobre o controle de intervalo dinâmico, consulte 
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -53,7 +53,7 @@ Para obter mais informações sobre o controle de intervalo dinâmico, consulte 
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

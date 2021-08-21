@@ -4,16 +4,16 @@ ms.assetid: b9a552df-dc27-4c3d-ab71-c80ae0f2a67d
 title: Modelos de confiança
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 67c3aae037143df3ca0f2b49d89ed7294a78f550
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57b2cda07c96aeb2ba383fe6851c49db88baddf9470e298d88f6420da14061c5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104011013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118903523"
 ---
 # <a name="trust-models"></a>Modelos de confiança
 
-Como o número de organizações que implementam a PKI (infraestrutura de chave pública) aumenta e o número de usuários finais e computadores nessas organizações aumenta, os problemas logísticas associados à certificação de identidades e o estabelecimento de confiança também aumentam. Dois modelos de confiança principais, hierarquias de certificado e certificação cruzada, evoluíram para ajudar a resolver esses problemas. Inerentes a ambos os modelos é o conceito de uma cadeia de certificados. Para mais informações, consulte os seguintes tópicos:
+Como o número de organizações que implementam a PKI (infraestrutura de chave pública) aumenta e o número de usuários finais e computadores nessas organizações aumenta, os problemas logísticas associados à certificação de identidades e o estabelecimento de confiança também aumentam. Dois modelos de confiança principais, hierarquias de certificado e certificação cruzada, evoluíram para ajudar a resolver esses problemas. Inerentes a ambos os modelos é o conceito de uma cadeia de certificados. Para obter mais informações, consulte estes tópicos:
 
 -   [Hierarquia de certificados](about-certificate-hierarchy.md)
 -   [Certificação cruzada](about-cross-certification.md)

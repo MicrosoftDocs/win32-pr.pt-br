@@ -1,41 +1,41 @@
 ---
-title: Gerenciador de threads
-description: O Gerenciador de threads é o componente base do Gerenciador do TSF.
+title: Gerenciador de Threads
+description: O gerenciador de threads é o componente base do gerenciador do TSF.
 ms.assetid: fd43b4c3-80bb-4118-a880-bdea07022c95
 keywords:
-- TSF (estrutura de serviços de texto), Gerenciador de thread
-- TSF (estrutura de serviços de texto), Gerenciador de threads
-- serviços de texto, Gerenciador de threads
-- Aplicativos habilitados para TSF, Gerenciador de threads
-- Gerenciador de threads
-- Gerenciador de TSF
+- Estrutura de Serviços de Texto (TSF), gerenciador de threads
+- TSF (Estrutura de Serviços de Texto), gerenciador de threads
+- serviços de texto, gerenciador de threads
+- Aplicativos habilitados para TSF, gerenciador de threads
+- gerenciador de threads
+- Gerenciador do TSF
 - notificações de eventos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b29596c5c39267181c6a2c301aede3f15ca7297
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 55452ee6102232023c9d544e2207693df962dc6c2d83b23c95b0a119402da884
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104007795"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118874037"
 ---
-# <a name="thread-manager"></a>Gerenciador de threads
+# <a name="thread-manager"></a>Gerenciador de Threads
 
-O Gerenciador de threads é o componente base do Gerenciador do TSF. O Gerenciador de threads executa tarefas comuns relacionadas aos aplicativos e aos serviços de texto (clientes). Essas tarefas incluem, entre outros, a ativação e a desativação de serviços de texto do TSF, a criação de gerenciadores de documentos e a manutenção da relação apropriada entre os documentos e o foco de entrada. O Gerenciador de threads é definido pela interface [ITfThreadMgr](/windows/desktop/api/Msctf/nn-msctf-itfthreadmgr) .
+O gerenciador de threads é o componente base do gerenciador do TSF. O gerenciador de threads executa tarefas comuns relacionadas a aplicativos e serviços de texto (clientes). Essas tarefas incluem, mas não se limitam à ativação e desativação de serviços de texto TSF, a criação de gerenciadores de documentos e a manutenção da relação adequada entre documentos e o foco de entrada. O gerenciador de threads é definido pela interface [ITfThreadMgr.](/windows/desktop/api/Msctf/nn-msctf-itfthreadmgr)
 
-A maioria das interfaces e dos objetos fornecidos pelo Gerenciador de TSF pode ser obtida usando os métodos fornecidos pela interface do Gerenciador de threads.
+A maioria das interfaces e objetos fornecidos pelo gerenciador de TSF pode ser obtida usando os métodos fornecidos pela interface do gerenciador de threads.
 
 ## <a name="applications"></a>Aplicativos
 
-Um aplicativo cria um objeto do Gerenciador de threads chamando [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) com CLSID \_ TFThreadMgr.
+Um aplicativo cria um objeto de gerenciador de thread chamando [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) com CLSID \_ TFThreadMgr.
 
-## <a name="text-services"></a>Serviços de texto
+## <a name="text-services"></a>Serviços de Texto
 
-Um serviço de texto Obtém um objeto do Gerenciador de threads no método Text Service [ITfTextInputProcessor:: Activate](/windows/desktop/api/Msctf/nf-msctf-itftextinputprocessor-activate) .
+Um serviço de texto obtém um objeto de gerenciador de threads no método [ITfTextInputProcessor::Activate do](/windows/desktop/api/Msctf/nf-msctf-itftextinputprocessor-activate) serviço de texto.
 
 ## <a name="event-notifications"></a>Notificações de eventos
 
-O Gerenciador de threads também fornece notificação de eventos aos clientes. No TSF, as notificações de eventos são fornecidas por meio de um coletor de eventos, que é um objeto COM. Para receber notificações do Gerenciador de threads, um cliente implementa um objeto [ITfThreadMgrEventSink](/windows/desktop/api/Msctf/nn-msctf-itfthreadmgreventsink) e instala o coletor de eventos. O coletor de eventos é instalado consultando o Gerenciador de thread para \_ ITfSource de IID e chamando [ITfSource:: ADVISESINK](/windows/desktop/api/Msctf/nf-msctf-itfsource-advisesink) com IID \_ ITfThreadMgrEventSink.
+O gerenciador de threads também fornece notificação de eventos para clientes. No TSF, as notificações de eventos são fornecidas por meio de um sink de evento, que é um objeto COM. Para receber notificações do gerenciador de threads, um cliente implementa um objeto [ITfThreadMgrEventSink](/windows/desktop/api/Msctf/nn-msctf-itfthreadmgreventsink) e instala o sink do evento. O sink de eventos é instalado consultando o gerenciador de threads para \_ IID ITfSource e chamando [ITfSource::AdviseSink](/windows/desktop/api/Msctf/nf-msctf-itfsource-advisesink) com \_ IID ITfThreadMgrEventSink.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -44,18 +44,18 @@ O Gerenciador de threads também fornece notificação de eventos aos clientes. 
 [ITfThreadMgr](/windows/desktop/api/Msctf/nn-msctf-itfthreadmgr)
 </dt> <dt>
 
-[CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
+[Cocreateinstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance)
 </dt> <dt>
 
-[ITfTextInputProcessor:: ativar](/windows/desktop/api/Msctf/nf-msctf-itftextinputprocessor-activate)
+[ITfTextInputProcessor::Activate](/windows/desktop/api/Msctf/nf-msctf-itftextinputprocessor-activate)
 </dt> <dt>
 
 [ITfThreadMgrEventSink](/windows/desktop/api/Msctf/nn-msctf-itfthreadmgreventsink)
 </dt> <dt>
 
-[ITfSource:: AdviseSink](/windows/desktop/api/Msctf/nf-msctf-itfsource-advisesink)
+[ITfSource::AdviseSink](/windows/desktop/api/Msctf/nf-msctf-itfsource-advisesink)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

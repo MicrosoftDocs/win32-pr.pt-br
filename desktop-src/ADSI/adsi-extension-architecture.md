@@ -7,12 +7,12 @@ keywords:
 - ADSI de extensões, arquitetura de extensão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 377409f4b9ac36d72d6885e89860b9e6e680b103
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 239a2562054f062464fc924a0f67c31ea3d9fab696fd23e532eab78e1dc66d0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103641846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023856"
 ---
 # <a name="adsi-extension-architecture"></a>Arquitetura de extensão ADSI
 
@@ -42,8 +42,8 @@ A figura a seguir mostra a arquitetura do modelo de extensão ADSI.
 A ADSI dá suporte a dois níveis de extensão:
 
 -   Suporte de ligação antecipada. Esse é o primeiro nível de extensão. Uma extensão deve dar suporte ao registro e implementar novas interfaces. Os consumidores de extensão devem usar ferramentas ou hosts de script que dão suporte à associação inicial, por exemplo, Visual C++ Visual Basic.
--   Suporte à ligação tardia. Isso acontece quando uma extensão atende a todos os requisitos de associação antecipada e implementa uma interface adicional, [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension). Implementadores de extensão podem usar qualquer ferramenta que opere como um controlador de automação, como o Windows Script Host, Active Server páginas ou HTML com VBScript.
+-   Suporte à ligação tardia. Isso acontece quando uma extensão atende a todos os requisitos de associação antecipada e implementa uma interface adicional, [**IADsExtension**](/windows/desktop/api/Iads/nn-iads-iadsextension). os implementadores de extensão podem usar qualquer ferramenta que opere como um controlador de automação, como o Host de Script Windows, Active Server páginas ou HTML com o VBScript.
 
- 
+ 
 
- 
+ 

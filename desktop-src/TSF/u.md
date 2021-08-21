@@ -5,12 +5,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: e2782eb3-85fb-45bf-baa1-8415e35d751c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 76dbedd6969f08e5fffd870377ff1dfecdd54426
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 6dd0b1d2a98375556d492461165b7c6c39cf40d1797e83d3705b29caf37e5886
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104008664"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118873533"
 ---
 # <a name="u-text-services-framework"></a>U (estrutura de serviços de texto)
 

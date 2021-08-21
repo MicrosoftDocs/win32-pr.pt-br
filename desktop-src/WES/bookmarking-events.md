@@ -1,59 +1,59 @@
 ---
-title: Eventos de indicador
+title: Eventos de indicadores
 description: Um indicador identifica um evento em um canal ou arquivo de log.
 ms.assetid: e7eeafc3-deb9-4cdc-9763-f784db7333be
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 64d7fb4aef883a51084420c5a2d78e4f0ff25dac
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: d4ebc6c8f48bff25989fedf056e87a7eabe4d420b2e923d056ef24116b24a33f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105763757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056134"
 ---
-# <a name="bookmarking-events"></a>Eventos de indicador
+# <a name="bookmarking-events"></a>Eventos de indicadores
 
-Um indicador identifica um evento em um canal ou arquivo de log. Você pode usar um indicador ao consultar ou assinar eventos para começar a ler eventos desse evento marcado. Normalmente, você cria um indicador do último evento no conjunto de resultados (supondo que você tenha enumerado todos os eventos no conjunto de resultados).
+Um indicador identifica um evento em um canal ou arquivo de log. Você pode usar um indicador ao consultar ou assinar eventos para começar a ler eventos desse evento com indicador. Normalmente, você cria um indicador do último evento no conjunto de resultados (supondo que você enumerou todos os eventos no conjunto de resultados).
 
-O procedimento a seguir descreve como criar um indicador a partir de um evento.
+O procedimento a seguir descreve como criar um indicador de um evento.
 
-**Para criar um indicador a partir de um evento**
+**Para criar um indicador de um evento**
 
-1.  Chame a função [**EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) para criar um indicador. Passe **NULL** para o argumento.
-2.  Chame a função [**EvtUpdateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtupdatebookmark) para atualizar o indicador com o evento. Passe o identificador para o evento como o argumento.
-3.  Chame a função [**EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para criar uma cadeia de caracteres XML que representa o indicador. Passe EvtRenderBookmark como o sinalizador de renderização.
-4.  Persistir a cadeia de caracteres XML para uso posterior (por exemplo, você pode persistir a cadeia de caracteres XML em um arquivo ou no registro).
+1.  Chame a [**função EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) para criar um indicador. Passe **NULL** para o argumento .
+2.  Chame a [**função EvtUpdateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtupdatebookmark) para atualizar o indicador com o evento . Passe o handle para o evento como o argumento .
+3.  Chame a [**função EvtRender**](/windows/desktop/api/WinEvt/nf-winevt-evtrender) para criar uma cadeia de caracteres XML que representa o indicador. Passe EvtRenderBookmark como o sinalizador de renderização.
+4.  Persista a cadeia de caracteres XML para uso posterior (por exemplo, você pode persistir a cadeia de caracteres XML em um arquivo ou no Registro).
 
-O procedimento a seguir descreve como criar um indicador usando uma cadeia de caracteres de marcador XML que foi persistida no procedimento anterior.
+O procedimento a seguir descreve como criar um indicador usando uma cadeia de caracteres de indicador XML que foi persistida no procedimento anterior.
 
-**Para criar um indicador usando uma cadeia de caracteres de marcador XML**
+**Para criar um indicador usando uma cadeia de caracteres de indicador XML**
 
-1.  Obtenha a cadeia de caracteres XML que representa o indicador que você manteve anteriormente.
-2.  Chame a função [**EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) para criar um indicador. Passe a cadeia de caracteres XML para o argumento.
+1.  Obter a cadeia de caracteres XML que representa o indicador que você persistia anteriormente.
+2.  Chame a [**função EvtCreateBookmark**](/windows/desktop/api/WinEvt/nf-winevt-evtcreatebookmark) para criar um indicador. Passe a cadeia de caracteres XML para o argumento .
 
 O procedimento a seguir descreve como usar um indicador em uma consulta.
 
 **Para usar um indicador em uma consulta**
 
-1.  Chame a função [**EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) para obter eventos que correspondam à sua consulta.
-2.  Chame a função [**EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek) para buscar o evento de indicador. Passe o identificador para o indicador e o sinalizador EvtSeekRelativeToBookmark.
-3.  Chame a função [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) em um loop para enumerar os eventos que começam após o evento de indicador (dependendo do deslocamento especificado em [**EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek)).
+1.  Chame a [**função EvtQuery**](/windows/desktop/api/WinEvt/nf-winevt-evtquery) para obter eventos que corresponderem à sua consulta.
+2.  Chame a [**função EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek) para buscar o evento com indicador. Passe o manipulador para o indicador e o sinalizador EvtSeekRelativeToBookmark.
+3.  Chame a [**função EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) em um loop para enumerar os eventos que começam após o evento com indicador (dependendo do deslocamento especificado em [**EvtSeek**](/windows/desktop/api/WinEvt/nf-winevt-evtseek)).
 
-Para obter um exemplo, consulte [usando um indicador em uma consulta](#using-a-bookmark-in-a-query).
+Para ver um exemplo, [consulte Usando um indicador em uma consulta](#using-a-bookmark-in-a-query).
 
 O procedimento a seguir descreve como usar um indicador em uma assinatura.
 
 **Para usar um indicador em uma assinatura**
 
-1.  Chame a função [**EvtSubscribe**](/windows/desktop/api/WinEvt/nf-winevt-evtsubscribe) para assinar eventos que correspondem à sua consulta. Passe o identificador para o indicador e o sinalizador EvtSubscribeStartAfterBookmark.
-2.  Se você tiver implementado a função de [**\_ retorno de \_ chamada EVT Subscribe**](/windows/win32/api/winevt/nc-winevt-evt_subscribe_callback) , seu retorno de chamada receberá eventos que começam após o evento de indicador.
-3.  Se você não implementou o retorno de chamada, chame a função [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) em um loop para enumerar os eventos que começam após o evento de indicador.
+1.  Chame a [**função EvtSubscribe**](/windows/desktop/api/WinEvt/nf-winevt-evtsubscribe) para assinar eventos que corresponderem à sua consulta. Passe o indicador para o indicador e o sinalizador EvtSubscribeStartAfterBookmark.
+2.  Se você implementou a [**função EVT \_ SUBSCRIBE \_ CALLBACK,**](/windows/win32/api/winevt/nc-winevt-evt_subscribe_callback) o retorno de chamada receberá eventos que começam após o evento de indicador.
+3.  Se você não implementou o retorno de chamada, chame a função [**EvtNext**](/windows/desktop/api/WinEvt/nf-winevt-evtnext) em um loop para enumerar os eventos que começam após o evento com indicador.
 
-Para obter um exemplo, consulte [usando um indicador em uma assinatura](#using-a-bookmark-in-a-subscription).
+Para ver um exemplo, [consulte Usando um indicador em uma assinatura](#using-a-bookmark-in-a-subscription).
 
 ## <a name="using-a-bookmark-in-a-query"></a>Usando um indicador em uma consulta
 
-O exemplo a seguir mostra como usar um indicador em uma consulta. O exemplo expande o exemplo em [consulta de eventos](querying-for-events.md).
+O exemplo a seguir mostra como usar um indicador em uma consulta. O exemplo se expande no exemplo em [Consultando eventos](querying-for-events.md).
 
 
 ```C++
@@ -461,6 +461,6 @@ cleanup:
 
 
 
- 
+ 
 
- 
+ 

@@ -4,16 +4,16 @@ ms.assetid: c292f145-f385-4f18-8f98-e414d86860e2
 title: Top-Down x Bottom-Up DIBs
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e719bea5923aeccc4a0a92b5f73a253e13d2e12
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: adff1d525423ef8590a3656a5e63f7541be180e2dcc5c70307f93298eb9ce991
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756948"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118951555"
 ---
 # <a name="top-down-vs-bottom-up-dibs"></a>Top-Down x Bottom-Up DIBs
 
-Se você for novo na programação de gráficos, poderá esperar que um bitmap seja organizado na memória para que a linha superior da imagem apareça no início do buffer, seguida pela próxima linha e assim por diante. No entanto, isso não é necessariamente o caso. No Windows, os bitmaps independentes de dispositivo (DIBs) podem ser colocados na memória em duas orientações diferentes, de baixo para cima e de cima para baixo.
+Se você for novo na programação de gráficos, poderá esperar que um bitmap seja organizado na memória para que a linha superior da imagem apareça no início do buffer, seguida pela próxima linha e assim por diante. No entanto, isso não é necessariamente o caso. no Windows, os bitmaps independentes de dispositivo (DIBs) podem ser colocados na memória em duas orientações diferentes, de baixo para cima e de cima para baixo.
 
 Em um DIB de baixo para cima, o buffer de imagem começa com a linha inferior de pixels, seguida pela próxima linha e assim por diante. A linha superior da imagem é a última linha no buffer. Portanto, o primeiro byte na memória é o pixel inferior esquerdo da imagem. No GDI, todos os DIBs são de baixo para cima. O diagrama a seguir mostra o layout físico de um DIB de baixo para cima.
 

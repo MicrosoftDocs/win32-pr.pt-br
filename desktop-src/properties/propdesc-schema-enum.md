@@ -4,18 +4,18 @@ ms.assetid: c8cc040e-fcce-43a0-98c1-db2b2c616ac3
 title: enum
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b615697e669f8d02e0530a1763309cfe74113467
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1336a690fe7ac1e19a8606912a4f7d538d3842ab6a490d17b89f90f64bbfbc13
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105781000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118970975"
 ---
 # <a name="enum"></a>enum
 
 Usado para atribuir texto enumerado a valores discretos. Qualquer número desses elementos pode existir em um [enumeratedList](./propdesc-schema-enumeratedlist.md). Por meio de programação, eles são representados como objetos IPropertyEnumType, cujo método [**IPropertyEnumType:: Getenumtype**](/windows/win32/api/propsys/nf-propsys-ipropertyenumtype-getenumtype) retorna um animal \_ discreto.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```
@@ -53,7 +53,7 @@ Usado para atribuir texto enumerado a valores discretos. Qualquer número desses
 | Atributo | Descrição                                                                                                                                                                                                          |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | value     | Público. Obrigatórios. O valor discreto (cadeia de caracteres ou número) ao qual será atribuído o texto enumerado.                                                                                                                           |
-| text      | Público. Obrigatórios. O texto usado para exibir o valor enumerado. A sintaxe permite uma cadeia de caracteres de exibição direta ou uma referência de cadeia de caracteres de exibição indireta; Use a cadeia de caracteres de exibição indireta para que ela possa ser localizada. |
+| texto      | Público. Obrigatórios. O texto usado para exibir o valor enumerado. A sintaxe permite uma cadeia de caracteres de exibição direta ou uma referência de cadeia de caracteres de exibição indireta; Use a cadeia de caracteres de exibição indireta para que ela possa ser localizada. |
 | mnemônico | **Windows 7 e posterior.** Público. Opcional. Uma lista de valores mnemônicos que podem ser usados para fazer referência à propriedade em consultas de pesquisa. A lista é delimitada com o \| caractere ' '.                                     |
 
 

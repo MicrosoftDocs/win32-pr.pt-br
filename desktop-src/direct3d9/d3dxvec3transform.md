@@ -1,7 +1,7 @@
 ---
-description: Função D3DXVec3Transform (D3dx9math. h) – transforma o vetor (x, y, z, 1) por uma determinada matriz.
+description: Função D3DXVec3Transform (D3dx9math.h) – transforma o vetor (x, y, z, 1) por uma determinada matriz.
 ms.assetid: 5b290c4c-22f1-4086-8e5e-f995757ef193
-title: Função D3DXVec3Transform (D3dx9math. h)
+title: Função D3DXVec3Transform (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119044494"
 ---
-# <a name="d3dxvec3transform-function-d3dx9mathh"></a>Função D3DXVec3Transform (D3dx9math. h)
+# <a name="d3dxvec3transform-function-d3dx9mathh"></a>Função D3DXVec3Transform (D3dx9math.h)
 
 Transforma o vetor (x, y, z, 1) por uma determinada matriz.
 
@@ -42,30 +42,30 @@ D3DXVECTOR4* D3DXVec3Transform(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Ponteiro para a estrutura [**D3DXVECTOR4**](d3dxvector4.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXVECTOR4**](d3dxvector4.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*VP* \[ no\]
+*pV* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para a estrutura de [**D3DXVECTOR3**](d3dxvector3.md) de origem.
+Ponteiro para a estrutura [**D3DXVECTOR3 de**](d3dxvector3.md) origem.
 
 </dd> <dt>
 
-*PM* \[ no\]
+*pM* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXMATRIX**](d3dxmatrix.md) \***
 
-Ponteiro para a estrutura de [**D3DXMATRIX**](d3dxmatrix.md) de origem.
+Ponteiro para a estrutura [**D3DXMATRIX de origem.**](d3dxmatrix.md)
 
 </dd> </dl>
 
@@ -73,13 +73,13 @@ Ponteiro para a estrutura de [**D3DXMATRIX**](d3dxmatrix.md) de origem.
 
 Tipo: **[ **D3DXVECTOR4**](d3dxvector4.md)\***
 
-Ponteiro para uma estrutura [**D3DXVECTOR4**](d3dxvector4.md) que é o vetor transformado.
+Ponteiro para uma [**estrutura D3DXVECTOR4**](d3dxvector4.md) que é o vetor transformado.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função transforma o vetor, *VP* (x, y, z, 1), pela matriz *PM*.
+Essa função transforma o vetor, *pV* (x, y, z, 1), pela *matriz pM*.
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXVec3Transform** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXVec3Transform** pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -87,8 +87,8 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedade Columnvalue. erro'
-title: Propriedade columnvalue. Error
+description: 'Saiba mais sobre: propriedade ColumnValue.Error'
+title: Propriedade ColumnValue.Error
 TOCTitle: 'Error property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnValue.Error
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnvalue.error(v=EXCHG.10)
@@ -26,21 +26,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 8ff03f39b1721aed9cb3793119e721184836ee74
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8ffbbb66992ecff218b7fdbd7577e2ffbd9f63694ae41967ebc8240f84ebe3f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782686"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042354"
 ---
-# <a name="columnvalueerror-property"></a>Propriedade columnvalue. Error
+# <a name="columnvalueerror-property"></a>Propriedade ColumnValue.Error
 
-Obtém o aviso gerado pela recuperação ou definição desta coluna.
+Obtém o aviso gerado recuperando ou configurando essa coluna.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration
@@ -60,14 +60,14 @@ public JET_wrn Error { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_wrn](./jet-wrn-enumeration.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_wrn](./jet-wrn-enumeration.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe columnvalue](./columnvalue-class.md)
+[Classe ColumnValue](./columnvalue-class.md)
 
-[Membros de columnvalue](./columnvalue-members.md)
+[Membros ColumnValue](./columnvalue-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,27 +1,27 @@
 ---
-description: Ao executar um backup ou restauração do VSS, o estado do sistema do Windows é definido como sendo uma coleção de vários elementos principais do sistema operacional e seus arquivos. Esses elementos devem ser sempre tratados como uma unidade por operações de backup e restauração.
+description: ao executar um backup ou restauração do VSS, o estado do sistema Windows é definido como sendo uma coleção de vários elementos principais do sistema operacional e seus arquivos. Esses elementos devem ser sempre tratados como uma unidade por operações de backup e restauração.
 ms.assetid: 48721358-8450-462f-8f99-23e207311041
 title: Fazendo backup e restaurando o estado do sistema
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed61c3ccad51ebd8cd632fab292160c795741c9b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e3b027fa0d1a01f3d4f735494d34d4f2da2d07a0e0d82ecfd189f7a9c7c8537c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661892"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056394"
 ---
 # <a name="backing-up-and-restoring-system-state"></a>Fazendo backup e restaurando o estado do sistema
 
 > [!Note]  
-> Este tópico aplica-se ao Windows Vista, Windows Server 2008 e posterior. Para obter informações sobre o Windows Server 2003, consulte [fazendo backup e restaurando o estado do sistema no Windows server 2003 R2 e no Windows server 2003 SP1](backing-up-and-restoring-system-state-under-vss.md)
+> este tópico aplica-se ao Windows Vista, Windows Server 2008 e posterior. para obter informações sobre o Windows Server 2003, consulte [fazendo backup e restaurando o estado do sistema no Windows server 2003 R2 e no Windows server 2003 SP1](backing-up-and-restoring-system-state-under-vss.md)
 
  
 
-Ao executar um backup ou restauração do VSS, o estado do sistema do Windows é definido como sendo uma coleção de vários elementos principais do sistema operacional e seus arquivos. Esses elementos devem ser sempre tratados como uma unidade por operações de backup e restauração.
+ao executar um backup ou restauração do VSS, o estado do sistema Windows é definido como sendo uma coleção de vários elementos principais do sistema operacional e seus arquivos. Esses elementos devem ser sempre tratados como uma unidade por operações de backup e restauração.
 
 > [!Note]  
-> A Microsoft não fornece suporte técnico de desenvolvedor ou profissional de ti para implementar restaurações de estado do sistema online no Windows (todas as versões).
+> a Microsoft não fornece suporte técnico de desenvolvedor ou profissional de ti para implementar restaurações de estado do sistema online em Windows (todas as versões).
 
  
 
@@ -39,21 +39,21 @@ Todos os componentes relatados por um gravador de estado do sistema VSS fazem pa
 Os programas de backup também devem definir a chave do registro **LastRestoreId** . Para obter mais informações, consulte [chaves e valores do registro para backup e restauração](../backup/registry-keys-for-backup-and-restore.md).
 
 > [!Note]  
-> No Windows Vista, no Windows Server 2008 e posterior, os nomes e locais de alguns arquivos do sistema foram alterados da seguinte maneira.
+> no Windows Vista, Windows Server 2008 e posterior, os nomes e locais de alguns arquivos do sistema foram alterados da seguinte maneira.
 
  
 
 ## <a name="system-state"></a>Estado do Sistema
 
-Para o Windows Server 2012 e posterior, além dos arquivos relatados pelos vários gravadores do estado do sistema VSS, somente os seguintes arquivos de licenciamento precisam ser incluídos explicitamente, e os seguintes arquivos DRM precisam ser excluídos explicitamente.
+para Windows Server 2012 e posterior, além dos arquivos relatados pelos vários gravadores do estado do sistema VSS, somente os seguintes arquivos de licenciamento precisam ser incluídos explicitamente, e os seguintes arquivos DRM precisam ser excluídos explicitamente.
 
-## <a name="windows-media-digital-rights-management-files"></a>Arquivos de Rights Management digital do Windows Media
+## <a name="windows-media-digital-rights-management-files"></a>Windows Arquivos de Rights Management digital de mídia
 
-No Windows Server 2008 e posterior, os seguintes arquivos, incluindo todos os subdiretórios no caminho a seguir, são excluídos do estado do sistema e não devem ser submetidos a backup:
+no Windows Server 2008 e posterior, os seguintes arquivos, incluindo todos os subdiretórios no caminho a seguir, são excluídos do estado do sistema e não devem ser submetidos a backup:
 
 -   % ProgramData% \\ Microsoft \\ Windows \\ DRM\\
 
-Isso substitui as informações na seção Rights Management digital do Windows Media do [trabalho com sistema de arquivos e recursos de segurança](working-with-file-system-and-security-features.md).
+isso substitui as informações na seção Rights Management Digital Windows Media de [trabalhar com recursos de segurança e sistema de arquivos](working-with-file-system-and-security-features.md).
 
 ## <a name="performance-counter-configuration-files"></a>Arquivos de configuração do contador de desempenho
 
@@ -75,16 +75,16 @@ Esses arquivos são modificados apenas durante a instalação do aplicativo e de
 ## <a name="iis-configuration-files"></a>Arquivos de configuração do IIS
 
 > [!Note]  
-> No Windows Vista com Service Pack 1 (SP1) e posterior, você não deve fazer backup desses arquivos. Em vez disso, use o gravador de configuração do IIS in-box. Para obter mais informações sobre esse gravador, consulte [gravadores VSS in-box](in-box-vss-writers.md).
+> no Windows Vista com Service Pack 1 (SP1) e posterior, você não deve fazer backup desses arquivos. Em vez disso, use o gravador de configuração do IIS in-box. Para obter mais informações sobre esse gravador, consulte [gravadores VSS in-box](in-box-vss-writers.md).
 
  
 
 Os arquivos de configuração relevantes do IIS e seus locais são listados abaixo:
 
 -   O arquivo de machine.config do .NET FX está localizado no diretório da versão do Framework.
--   O arquivo de web.config raiz ASP.NET está localizado no diretório da versão do Framework.
+-   o arquivo de web.config raiz ASP.NET está localizado no diretório da versão do framework.
     > [!Note]  
-    > Os arquivos de configuração para .NET FX e ASP.NET estão no diretório da versão do Framework. Se várias versões do Framework estiverem instaladas no computador, esse diretório conterá um arquivo de configuração para cada versão instalada.
+    > os arquivos de configuração para o .net FX e o ASP.NET estão no diretório da versão do framework. Se várias versões do Framework estiverem instaladas no computador, esse diretório conterá um arquivo de configuração para cada versão instalada.
 
      
 

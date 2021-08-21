@@ -4,12 +4,12 @@ ms.assetid: 1fa6ea9f-fd30-4fa2-a0e6-1647273bcc35
 title: Atributo MF_MP2DLNA_STATISTICS (Mfmp2dlna. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a51620c1ca093a422a5e4657edcfbfaa66ae6cd3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 47a80bf0682cf6e46845a968122bf512a6e9cff15df8fb8e0312e1c63c8dab0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104502390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118973615"
 ---
 # <a name="mf_mp2dlna_statistics-attribute"></a>\_Atributo de \_ estatísticas MF MP2DLNA
 
@@ -35,9 +35,9 @@ A definição desse atributo no coletor de mídia DLNA não tem efeito.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Mfmp2dlna. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Mfmp2dlna. h</dt> </dl> |
 
 
 

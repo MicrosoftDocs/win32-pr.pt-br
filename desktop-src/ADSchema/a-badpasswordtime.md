@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 47df09d0ff2d82a9180c43721aa09e5363884e24
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2130e9bf09b70ee96c934027dc8369b8fdb73139396bc1aa1f9f7edffb4d7b7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022764"
 ---
 # <a name="bad-password-time-attribute"></a>Atributo de tempo de senha inválido
 
@@ -59,7 +59,7 @@ A última data e hora em que uma tentativa de fazer logon nesta conta foi feita 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -80,7 +80,7 @@ A última data e hora em que uma tentativa de fazer logon nesta conta foi feita 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -100,8 +100,8 @@ A última data e hora em que uma tentativa de fazer logon nesta conta foi feita 
 |------------------------|-------------------------------------------------------------------|
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
-| System-Only            | True                                                              |
-| É de valor único       | True                                                              |
+| System-Only            | Verdadeiro                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
 | No catálogo global      | Falso                                                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
@@ -109,7 +109,7 @@ A última data e hora em que uma tentativa de fazer logon nesta conta foi feita 
 | Range-Upper            | \-                                                                |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000011                                                        |
-| Classes usadas em        | [**ms-DS-Vinculed-Object**](c-msds-bindableobject.md)<br/> |
+| Classes usadas em        | [**ms-DS-Bindable-Object**](c-msds-bindableobject.md)<br/> |
 
 
 
@@ -122,10 +122,10 @@ A última data e hora em que uma tentativa de fazer logon nesta conta foi feita 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -143,10 +143,10 @@ A última data e hora em que uma tentativa de fazer logon nesta conta foi feita 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -164,10 +164,10 @@ A última data e hora em que uma tentativa de fazer logon nesta conta foi feita 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -185,10 +185,10 @@ A última data e hora em que uma tentativa de fazer logon nesta conta foi feita 
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -199,9 +199,9 @@ A última data e hora em que uma tentativa de fazer logon nesta conta foi feita 
 
 ## <a name="remarks"></a>Comentários
 
-A parte superior desse inteiro grande corresponde ao membro **dwHighDateTime** da estrutura [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) e a parte inferior corresponde ao membro **dwLowDateTime** da estrutura **FILETIME** .
+A parte alta desse inteiro grande corresponde ao membro **dwHighDateTime** da estrutura [**FILETIME**](/windows/desktop/api/minwinbase/ns-minwinbase-filetime) e a parte baixa corresponde ao **membro dwLowDateTime** da estrutura **FILETIME.**
 
-Esse atributo não é replicado e é mantido separadamente em cada controlador de domínio no domínio. Para obter um valor preciso para o último tempo de senha incorreto do usuário no domínio, cada controlador de domínio no domínio deve ser consultado. O maior valor obtido representa o verdadeiro tempo de senha inválida.
+Esse atributo não é replicado e é mantido separadamente em cada controlador de domínio no domínio. Para obter um valor preciso para a hora da última senha incorreta do usuário no domínio, cada controlador de domínio no domínio deve ser consultado. O maior valor obtido representa a hora de senha incorreta verdadeira.
 
  
 

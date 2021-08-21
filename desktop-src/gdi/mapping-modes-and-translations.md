@@ -4,12 +4,12 @@ ms.assetid: 02bc45d1-2921-48bc-a066-2314765b6531
 title: Modos de mapeamento e traduções
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 219bfe2f587ef9bc66f53d6f08404a0448180512
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 242ba699a8ec7289495cbcdff33e940460b20bcabffa373d5c792b1aee0fe9d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118760137"
 ---
 # <a name="mapping-modes-and-translations"></a>Modos de mapeamento e traduções
 
@@ -17,7 +17,7 @@ Os modos de mapeamento são descritos na tabela a seguir.
 
 
 
-| Modo de mapeamento    | Description                                                                                                                                                                                                                                                                                                                |
+| Modo de mapeamento    | Descrição                                                                                                                                                                                                                                                                                                                |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | \_ANISOTROPIC mm | Cada unidade no espaço de página é mapeada para uma unidade especificada pelo aplicativo no espaço do dispositivo. O eixo pode ou não ser dimensionado igualmente (por exemplo, um círculo desenhado no espaço de mundo pode parecer ser uma elipse quando representado em um determinado dispositivo). A orientação do eixo também é especificada pelo aplicativo.                  |
 | \_HIENGLISH mm   | Cada unidade no espaço de página é mapeada para 0, 1 polegadas no espaço do dispositivo. O valor de x aumenta da esquerda para a direita. O valor de y aumenta de baixo para cima.                                                                                                                                                                 |

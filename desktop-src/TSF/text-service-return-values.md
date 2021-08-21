@@ -12,12 +12,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5caef1370f6504647a5649b9a6c585441811e72
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0759c57dcf8ef2179888ab651eca08591bb48dfe49467ac3ebf6be2c9ccf8001
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369473"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118875036"
 ---
 # <a name="text-service-return-values"></a>Valores de retorno do serviço de texto
 
@@ -41,8 +41,8 @@ Um serviço de texto produz um valor de retorno de 0x *HHHH* 0600. A tabela a se
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                             |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
-| Redistribuível<br/>          | TSF 1,0 no Windows 2000 Professional<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>Ctffunc. h</dt> </dl>   |
+| Redistribuível<br/>          | TSF 1,0 em Windows 2000 Professional<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Ctffunc. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Ctffunc. idl</dt> </dl> |
 
 

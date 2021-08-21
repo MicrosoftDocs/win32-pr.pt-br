@@ -1,20 +1,20 @@
 ---
-description: Instrumentação de Gerenciamento do Windows (WMI) pode criar o coletor para receber retornos de chamada assíncronos para um aplicativo cliente em um processo separado.
+description: Windows A instrumentação de gerenciamento (WMI) pode criar o coletor para receber retornos de chamada assíncronos para um aplicativo cliente em um processo separado.
 ms.assetid: 3d3111ac-7d83-48d6-94e4-36cb46a506fa
 ms.tgt_platform: multiple
 title: Reduzindo a segurança de um coletor em um processo separado
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63aec8bcb451d254961acae8278cb45cb4454f37
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bea1898503c57edc40b2eec147d251127fac8467bd1128656aed873d08366696
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105807199"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118818394"
 ---
 # <a name="lowering-the-security-for-a-sink-in-a-separate-process"></a>Reduzindo a segurança de um coletor em um processo separado
 
-Instrumentação de Gerenciamento do Windows (WMI) pode criar o coletor para receber retornos de chamada assíncronos para um aplicativo cliente em um processo separado. O processo separado é Unsecapp.exe. Use a interface [**IWbemUnsecuredApartment**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemunsecuredapartment) . **IWbemUnsecuredApartment** permite que você controle se Unsecapp.exe autentica retornos de chamada para o coletor. Para obter mais informações, consulte [definindo a segurança em uma chamada assíncrona](setting-security-on-an-asynchronous-call.md).
+Windows A instrumentação de gerenciamento (WMI) pode criar o coletor para receber retornos de chamada assíncronos para um aplicativo cliente em um processo separado. O processo separado é Unsecapp.exe. Use a interface [**IWbemUnsecuredApartment**](/windows/desktop/api/Wbemcli/nn-wbemcli-iwbemunsecuredapartment) . **IWbemUnsecuredApartment** permite que você controle se Unsecapp.exe autentica retornos de chamada para o coletor. Para obter mais informações, consulte [definindo a segurança em uma chamada assíncrona](setting-security-on-an-asynchronous-call.md).
 
 Você pode reduzir a segurança nesse processo e o WMI pode acessar o coletor sem restrição. Para ajudar com essa técnica, o WMI fornece o Unsecapp.exe processo para funcionar como o processo separado. Você pode hospedar Unsecapp.exe com uma chamada para a interface [**IUnsecuredApartment**](/windows/desktop/api/Wbemcli/nn-wbemcli-iunsecuredapartment) .
 

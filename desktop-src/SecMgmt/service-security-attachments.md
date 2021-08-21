@@ -4,18 +4,18 @@ ms.assetid: c6558789-84eb-4998-a2c1-725d8a64d255
 title: Anexos de segurança de serviço
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f47cdd0ca3799615125900a3ae6b0b78c26f4abc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f63641eb2057b805b9a442a580ca5cfc859a49c915f862c9ac378af57f78feb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118893508"
 ---
 # <a name="service-security-attachments"></a>Anexos de segurança de serviço
 
 O conjunto de ferramentas de configuração de segurança da Microsoft é um conjunto do MMC (console de gerenciamento Microsoft) que simplifica a configuração e a análise da segurança do sistema. Alguns serviços, no entanto, têm necessidades de configuração especializadas que vão além das configurações de segurança fornecidas pelo conjunto de ferramentas padrão. Para lidar com essas necessidades, você pode estender a funcionalidade do conjunto de ferramentas escrevendo um anexo que manipula as tarefas de segurança específicas do serviço.
 
-Por exemplo, o spooler é um serviço do Windows NT que define objetos privados, que precisam ser protegidos, por exemplo, impressoras. Essa funcionalidade não é tratada pelo conjunto de ferramentas padrão e, portanto, requer um anexo para lidar com a configuração e a análise de objetos de impressora. A configuração de parâmetros de segurança geral, como a política de invocação de serviço, ainda é manipulada pelo conjunto de ferramentas de configuração de segurança.
+por exemplo, o spooler é um serviço Windows NT que define objetos privados, que precisam ser protegidos, por exemplo, impressoras. Essa funcionalidade não é tratada pelo conjunto de ferramentas padrão e, portanto, requer um anexo para lidar com a configuração e a análise de objetos de impressora. A configuração de parâmetros de segurança geral, como a política de invocação de serviço, ainda é manipulada pelo conjunto de ferramentas de configuração de segurança.
 
 Os anexos do serviço de segurança estendem a funcionalidade da ferramenta configuração de segurança definida para dar suporte a configurações específicas do serviço.
 

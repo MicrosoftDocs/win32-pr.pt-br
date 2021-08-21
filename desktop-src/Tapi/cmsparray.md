@@ -4,12 +4,12 @@ ms.assetid: 9b30885c-01a4-4aea-a1c3-5d7966e4697f
 title: CMSPArray
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a6c14d4bdc0b57a295efa5bcc2adfd79d23d31d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3682105bee8b39235c36865b6349d9519f16d42ff97844815a85f438f9983eb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921830"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118869118"
 ---
 # <a name="cmsparray"></a>CMSPArray
 

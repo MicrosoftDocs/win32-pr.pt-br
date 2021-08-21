@@ -15,12 +15,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: fdd39309774a61c4fd115ff09e16428101439a0b
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 89057195c23aa917c7338a8abb740817bb6af7896261cf1d31bcb37d5d5d5ab8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172788"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118972495"
 ---
 # <a name="basicdeviceremove_connectionstatuschanged-method"></a>Método BasicDevice. Remove \_ ConnectionStatusChanged
 
@@ -48,7 +48,7 @@ Uma referência a um token obtido do método [**Add \_ ConnectionStatusChanged**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

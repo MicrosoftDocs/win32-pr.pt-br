@@ -6,19 +6,19 @@ keywords:
 - Protocolo SNMP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dc48963e11e66e22258d9985320979b1c74b8b54
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5f71d4467f8e8b3a185f461e77efb18c6dd5969d782cbb1cf0674a942870f91d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008319"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119009044"
 ---
 # <a name="simple-network-management-protocol-snmp"></a>Protocolo SNMP
 
-\[O SNMP está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. Em vez disso, use [gerenciamento remoto do Windows](/windows/desktop/WinRM/portal), que é a implementação da Microsoft do WS-Man.\]
+\[O SNMP está disponível para uso nos sistemas operacionais especificados na seção requisitos. Ele poderá ser alterado ou ficar indisponível em versões subsequentes. em vez disso, use [Gerenciamento Remoto do Windows](/windows/desktop/WinRM/portal), que é a implementação da Microsoft do WS-Man.\]
 
 O Simple Network Management Protocol (SNMP) é o protocolo padrão da Internet para troca de informações de gerenciamento entre aplicativos de console de gerenciamento, como HP OpenView, Novell NMS, IBM NetView ou Sun Net Manager, e entidades gerenciadas. As entidades gerenciadas podem incluir hosts, roteadores, pontes e hubs.
 
- 
+ 
 
- 
+ 
