@@ -9,12 +9,12 @@ keywords:
 - AD do esquema, consultando objetos de esquema de categoria 1 ou 2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c67b57821cbebc80b3b6e93d158bbb8af8f7103
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 7f934ba0401c7d782706e1e853819ba935c1315a267c668614878ec41045f63b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104293888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025344"
 ---
 # <a name="querying-for-category-1-or-2-schema-objects"></a>Consultando objetos de esquema de categoria 1 ou 2
 
@@ -48,6 +48,6 @@ A cadeia de consulta a seguir procura atributos da categoria 2 (objetos **attrib
 
 Lembre-se de que essa consulta também retorna objetos **attributeSchema** que não têm uma propriedade **systemFlags** e, portanto, implicitamente não têm o sinalizador especificado definido.
 
- 
+ 
 
- 
+ 

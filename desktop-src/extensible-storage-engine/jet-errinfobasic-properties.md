@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de JET_ERRINFOBASIC'
-title: Propriedades de JET_ERRINFOBASIC (Microsoft. ISAM. ESENT. Interop. Windows8)
+description: 'Saiba mais sobre: JET_ERRINFOBASIC propriedades'
+title: JET_ERRINFOBASIC propriedades (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_ERRINFOBASIC properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errinfobasic_properties(v=EXCHG.10)
 ms:contentKeyID: 55104303
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 10e22b582ac26146eae6a7a29b5207a76b17d551
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a8c1fbc417ce5c876216aab886a815c7df2a5c389106418afda6bc19772a322b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104551807"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119039284"
 ---
-# <a name="jet_errinfobasic-properties"></a>Propriedades de JET_ERRINFOBASIC
+# <a name="jet_errinfobasic-properties"></a>JET_ERRINFOBASIC propriedades
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expõe os membros a seguir.
+O [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) tipo expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,7 +40,7 @@ O tipo de [JET_ERRINFOBASIC](./jet-errinfobasic-class.md) expõe os membros a se
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn335344(v=exchg.10).md">errValue</a></td>
-<td>Obtém ou define o valor de erro para o nível de informações solicitado.</td>
+<td>Obtém ou define o valor do erro para o nível de informações solicitado.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -67,6 +67,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_ERRINFOBASIC](./jet-errinfobasic-class.md)
+[JET_ERRINFOBASIC classe](./jet-errinfobasic-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

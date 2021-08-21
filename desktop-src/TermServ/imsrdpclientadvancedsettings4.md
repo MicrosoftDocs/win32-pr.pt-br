@@ -4,8 +4,8 @@ description: Gerencia configurações avançadas do cliente. Deriva da interface
 ms.assetid: cb1785d6-1f94-4423-bdda-0e3e4e9b8641
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota da interface IMsRdpClientAdvancedSettings4, descrita
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , descrita
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7d840206a139e3c3272551eab6a187a7b18416e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2aaf0e09131264440fc1efaaad3291e110ea718312b042b232837cdff4722494
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369581"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118855304"
 ---
 # <a name="imsrdpclientadvancedsettings4-interface"></a>Interface IMsRdpClientAdvancedSettings4
 
-Gerencia configurações avançadas do cliente. Deriva da interface [**IMsRdpClientAdvancedSettings3**](imsrdpclientadvancedsettings3.md) . Essa interface inclui métodos para recuperar e definir propriedades avançadas (opcionais) para o controle ActiveX Área de Trabalho Remota.
+Gerencia configurações avançadas do cliente. Deriva da interface [**IMsRdpClientAdvancedSettings3.**](imsrdpclientadvancedsettings3.md) Essa interface inclui métodos para recuperar e definir propriedades avançadas (opcionais) para o Área de Trabalho Remota ActiveX controle.
 
-Para obter uma instância dessa interface, use a propriedade [**IMsTscAx:: AdvancedSettings**](imstscax-advancedsettings.md) para obter um ponteiro de interface [**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md) . Em seguida, chame [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no ponteiro **IMsTscAdvancedSettings** e passe **\_ IMsRdpClientAdvancedSettings4 de IID** para **QueryInterface**.
+Para obter uma instância dessa interface, use a propriedade [**IMsTscAx::AdvancedSettings**](imstscax-advancedsettings.md) para obter um ponteiro de interface [**IMsTscAdvancedSettings.**](imstscadvancedsettings-interface.md) Em seguida, chame [**QueryInterface**](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q)) no ponteiro **IMsTscAdvancedSettings** e passe **\_ IMs IIDRdpClientAdvancedSettings4** para **QueryInterface**.
 
 ## <a name="members"></a>Membros
 
@@ -43,7 +43,7 @@ A interface **IMsRdpClientAdvancedSettings4** tem essas propriedades.
 
 | Propriedade                                                                                    | Tipo de acesso           | Descrição                                                              |
 |:--------------------------------------------------------------------------------------------|:----------------------|:-------------------------------------------------------------------------|
-| [**AuthenticationLevel**](imsrdpclientadvancedsettings4-authenticationlevel.md)<br/> | Leitura/gravação<br/> | Especifica o nível de autenticação a ser usado para a conexão.<br/> |
+| [**Authenticationlevel**](imsrdpclientadvancedsettings4-authenticationlevel.md)<br/> | Leitura/gravação<br/> | Especifica o nível de autenticação a ser usado para a conexão.<br/> |
 
 
 
@@ -57,7 +57,7 @@ Essa interface foi estendida pelas seguintes interfaces, com cada nova interface
 -   [**IMsRdpClientAdvancedSettings6**](imsrdpclientadvancedsettings6.md)
 -   [**IMsRdpClientAdvancedSettings7**](imsrdpclientadvancedsettings7.md)
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -83,13 +83,13 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings2**](imsrdpclientadvancedsettings2.md)
 </dt> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> <dt>
 
-[**IMsTscAdvancedSettings**](imstscadvancedsettings-interface.md)
+[**Imstscadvancedsettings**](imstscadvancedsettings-interface.md)
 </dt> <dt>
 
-[Referência de Conexão Web de Área de Trabalho Remota](remote-desktop-web-connection-reference.md)
+[Conexão Web de Área de Trabalho Remota referência](remote-desktop-web-connection-reference.md)
 </dt> </dl>
 
  

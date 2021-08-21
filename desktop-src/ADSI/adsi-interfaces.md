@@ -9,12 +9,12 @@ keywords:
 - ADSI de interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2930292defa99301fb74f37c933a9af24b73f1fd
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c75463a2b9ce70013482d2abee4f21ff786e7914cff0fefe691c562c4f39edb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363663"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023814"
 ---
 # <a name="adsi-interfaces"></a>Interfaces ADSI
 
@@ -31,9 +31,9 @@ A ADSI (Active Directory Service Interfaces) dá suporte a um conjunto avançado
 -   [Utilitário](utility-interfaces.md). Essas interfaces fornecem funções auxiliares avançadas para o gerenciamento de objetos ADSI.
 -   [Tipo de dados](data-type-interfaces.md). Essas interfaces fornecem métodos para acessar tipos de dados ADSI.
 
- 
+ 
 
- 
+ 
 
 
 

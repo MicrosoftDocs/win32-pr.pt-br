@@ -4,12 +4,12 @@ ms.assetid: e345df2f-1b68-41be-ac2d-b771136ee831
 title: Sobre controles de chamada e de mídia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae65d1a10d004cb16e0ba8753c27665cb7a30ff3
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: c5405dce096c1f2e4a9eeffa4625ad0aa557b141ea4f6004f6c4283a97cc04d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "103837662"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118872947"
 ---
 # <a name="about-call-and-media-controls"></a>Sobre controles de chamada e de mídia
 
@@ -26,7 +26,7 @@ O diagrama a seguir ilustra como esses objetos interagem.
 -   Abstrai a funcionalidade de chamada e de mídia para permitir que protocolos de comunicação diferentes e aparentemente incompatíveis exponham uma interface comum aos aplicativos.
 -   Com base no Component Object Model (COM), para que os aplicativos possam ser escritos em praticamente qualquer linguagem. Se você precisar de informações adicionais sobre COM, consulte o SDK (Software Development Kit) da plataforma.
 -   Controle de chamada fornecido por TSPs (provedores de serviços de telefonia), que implementam mecanismos específicos de transporte.
--   Controle de mídia fornecido pelos provedores de serviços de mídia (MSPs). O MSPs atual usa o DirectShow. O DirectShow é um sistema modular de componentes conectáveis chamados filtros, organizados em uma configuração chamada de grafo de filtro. O Gerenciador de gráfico de filtro supervisiona a conexão desses filtros e controla o fluxo de dados do fluxo. Se você precisar de informações adicionais sobre o DirectShow, consulte o SDK da plataforma.
+-   Controle de mídia fornecido pelos provedores de serviços de mídia (MSPs). MSPs atual use DirectShow. DirectShow é um sistema modular de componentes conectáveis chamados filtros, organizados em uma configuração chamada de grafo de filtro. O Gerenciador de gráfico de filtro supervisiona a conexão desses filtros e controla o fluxo de dados do fluxo. se você precisar de informações adicionais sobre DirectShow, consulte o SDK da plataforma.
 
  
 

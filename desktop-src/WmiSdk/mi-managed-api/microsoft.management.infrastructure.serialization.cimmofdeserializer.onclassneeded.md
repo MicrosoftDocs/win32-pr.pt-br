@@ -27,12 +27,12 @@ topic_type:
 - apiref
 product_family_name: VS
 ms.topic: reference
-ms.openlocfilehash: 50e107c09eccde03446278516a1f125f4ad86022
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd7dd361483b951783ccb47f7295589611bbb5cce98dab5b13e96613a479c054
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105794014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118818332"
 ---
 # <a name="cimmofdeserializeronclassneeded-delegate-string-string-string"></a>CimMofDeserializer. OnClassNeeded delegate (String, String, String)
 

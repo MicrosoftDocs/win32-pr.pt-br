@@ -4,12 +4,12 @@ ms.assetid: a0e150bd-3ff8-4b9c-b1ea-b3852a47fee3
 title: System. Photo. SharpnessText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: cb95a9e4596c282eb122dfaeb749f3f5426e4416
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 214e298cd1d7f585b7f9a11bc5ca55c0e2012b60a2e922ed0cb00c6cc84ff60a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828126"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033274"
 ---
 # <a name="systemphotosharpnesstext"></a>System. Photo. SharpnessText
 

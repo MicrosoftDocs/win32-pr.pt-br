@@ -1,17 +1,17 @@
 ---
-description: Evento InkCollector. TabletRemoved – ocorre quando um IInkTablet é removido do sistema.
+description: Evento InkCollector.TabletRemoved – ocorre quando um IInkTablet é removido do sistema.
 ms.assetid: 659a9809-fe35-4d34-aa95-af353998c350
-title: Evento InkCollector. TabletRemoved (Msinkaut. h)
+title: Evento InkCollector.TabletRemoved (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df76c27b1a0d47e456f69a789d17ef6343706284
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c4d3c319a4e67a22c81a74c6b5acceba7bd6f19188042fc68ebe4c7c7c8314e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119773516"
 ---
-# <a name="inkcollectortabletremoved-event"></a>Evento InkCollector. TabletRemoved
+# <a name="inkcollectortabletremoved-event"></a>Evento InkCollector.TabletRemoved
 
 Ocorre quando um [**IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) é removido do sistema.
 
@@ -30,10 +30,10 @@ void TabletRemoved(
 
 <dl> <dt>
 
-*TabletId* \[ no\]
+*TabletId* \[ Em\]
 </dt> <dd>
 
-O valor longo que foi usado como a ID do objeto [**IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) que foi removido.
+O valor longo que foi usado como a ID do [**objeto IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet) que foi removido.
 
 </dd> </dl>
 
@@ -43,7 +43,7 @@ Esse evento não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método de evento é definido nas \_ \_ interfaces somente de expedição IInkCollectorEvents, IInkOverlayEvents e \_ IInkPictureEvents (dispinterfaces) com uma ID de ICETabletRemoved de DISPID \_ .
+Esse método de evento é definido nas interfaces somente expedição \_ IInkCollectorEvents, \_ IInkOverlayEvents \_ e IInkPictureEvents (dispinterfaces) com uma ID de DISPID \_ ICETabletRemoved.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -51,21 +51,21 @@ Esse método de evento é definido nas \_ \_ interfaces somente de expedição I
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut.h (também requer Msinkaut \_ i.c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkObj.dll</dt> </dl>                               |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [**Classe InkCollector**](inkcollector-class.md)
 </dt> <dt>
 
-[**Interface IInkTablet**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet)
+[**IInkTablet Interface**](/windows/desktop/api/msinkaut/nn-msinkaut-iinktablet)
 </dt> </dl>
 
  

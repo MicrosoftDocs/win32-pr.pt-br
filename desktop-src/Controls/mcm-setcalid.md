@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCM_SETCALID (commctrl. h)
-description: Define a ID do calendário para o controle de calendário fornecido. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ SetCALID.
+title: MCM_SETCALID mensagem (Commctrl.h)
+description: Define a ID do calendário para o controle de calendário determinado. Você pode enviar essa mensagem explicitamente ou usando a \_ macro MonthCal SetCALID.
 ms.assetid: 4b9d06f5-0784-4a17-b401-982206d4be67
 keywords:
-- Controles de MCM_SETCALID de mensagens do Windows
+- MCM_SETCALID controles Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a661a685062fe737a1927c3a6ab455e8499c6ca9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b40e7f4577382aa0e003165e38e4557b8dc234592f747a579e5a071ce2440a37
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009001"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119575576"
 ---
-# <a name="mcm_setcalid-message"></a>\_Mensagem MCM SETCALID
+# <a name="mcm_setcalid-message"></a>Mensagem MCM \_ SETCALID
 
-Define a ID do calendário para o controle de calendário fornecido. Você pode enviar essa mensagem explicitamente ou usando a macro [**calendário mensal \_ SetCALID**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalid) .
+Define a ID do calendário para o controle de calendário determinado. Você pode enviar essa mensagem explicitamente ou usando a macro [**\_ MonthCal SetCALID.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcalid)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -32,7 +32,7 @@ Define a ID do calendário para o controle de calendário fornecido. Você pode 
 *wParam* 
 </dt> <dd>
 
-A ID do calendário. Uma das constantes de [identificadores de calendário](/windows/desktop/Intl/calendar-identifiers) .
+A ID do calendário. Uma das [constantes de Identificadores de](/windows/desktop/Intl/calendar-identifiers) Calendário.
 
 </dd> <dt>
 
@@ -43,7 +43,7 @@ Deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não utilizado.
 
@@ -53,9 +53,9 @@ Não utilizado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

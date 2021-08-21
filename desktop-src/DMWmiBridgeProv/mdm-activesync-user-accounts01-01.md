@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_ActiveSync_User_Accounts01_01
-description: A \_ \_ classe Accounts01 01 do usuário do MDM ActiveSync \_ \_ define todas as contas do ActiveSync disponíveis.
+title: MDM_ActiveSync_User_Accounts01_01 classe
+description: A classe MDM \_ ActiveSync \_ User \_ Accounts01 \_ 01 define todas as contas ActiveSync disponíveis.
 ms.assetid: bcd1fdcb-675a-4833-9d3c-0509e68f7b00
 keywords:
-- Classe MDM_ActiveSync_User_Accounts01_01
-- Classe MDM_ActiveSync_User_Accounts01_01, descrita
+- MDM_ActiveSync_User_Accounts01_01 classe
+- MDM_ActiveSync_User_Accounts01_01, descrita
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119077400"
 ---
-# <a name="mdm_activesync_user_accounts01_01-class"></a>\_ \_ \_ Classe Accounts01 01 do \_ usuário do MDM ActiveSync
+# <a name="mdm_activesync_user_accounts01_01-class"></a>Classe MDM \_ ActiveSync \_ User \_ Accounts01 \_ 01
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A **classe \_ \_ \_ Accounts01 \_ 01 do usuário do MDM ActiveSync** define todas as contas do ActiveSync disponíveis.
+A **classe MDM \_ ActiveSync \_ User \_ Accounts01 \_ 01** define todas as contas ActiveSync disponíveis.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -53,13 +53,13 @@ class MDM_ActiveSync_User_Accounts01_01
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ \_ Accounts01 \_ 01 do usuário do MDM ActiveSync** tem estes tipos de membros:
+A **classe MDM \_ ActiveSync \_ User \_ Accounts01 \_ 01** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ ActiveSync \_ user \_ Accounts01 \_ 01** tem essas propriedades.
+A **classe MDM \_ ActiveSync \_ User \_ Accounts01 \_ 01** tem essas propriedades.
 
 <dl> <dt>
 
@@ -69,7 +69,7 @@ A classe **MDM \_ ActiveSync \_ user \_ Accounts01 \_ 01** tem essas propriedade
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -80,7 +80,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -91,7 +91,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -102,7 +102,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -113,7 +113,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -134,7 +134,7 @@ Identifica o nome do nó pai.
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -156,7 +156,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -167,7 +167,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -178,7 +178,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -189,10 +189,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

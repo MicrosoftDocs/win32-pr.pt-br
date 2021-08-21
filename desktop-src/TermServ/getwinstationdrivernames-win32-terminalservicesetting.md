@@ -1,5 +1,5 @@
 ---
-title: Método GetWinstationDriverNames da classe Win32_TerminalServiceSetting
+title: Método GetWinstationDriverNames da classe Win32_TerminalServiceSetting dados
 description: Recupera uma lista de nomes de driver do Winstation.
 ms.assetid: 578c2a07-17e7-4bd6-b520-942cd48ee40f
 ms.tgt_platform: multiple

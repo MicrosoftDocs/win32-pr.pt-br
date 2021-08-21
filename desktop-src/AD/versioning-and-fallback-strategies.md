@@ -7,12 +7,12 @@ keywords:
 - ANÚNCIO de estratégias de controle de versão e fallback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 45f6383ad06e73457e18dddfac53295a0c16389c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b55226efcd72cec4f6dbe65447a945733dac88a56b976661bcf24564c9b366ee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822249"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119024404"
 ---
 # <a name="versioning-and-fallback-strategies"></a>Estratégias de controle de versão e fallback
 
@@ -20,9 +20,9 @@ Quando um aplicativo detecta uma atualização parcial usando uma das técnicas 
 
 As implementações devem tomar cuidado para evitar consequências indesejadas. Uma versão anterior dos objetos deve ser usada somente quando uma atualização parcial é detectada ou os novos objetos ainda não estão "efetivos". Fazer fallback porque algo no aplicativo "não funciona" pode burlar a intenção de um administrador. Por exemplo, dois computadores que antes podiam se comunicar podem não conseguir fazê-lo devido a uma alteração na diretiva de protocolo IPsec. Se isso for intencional por parte do administrador, os sistemas afetados não devem retornar à política que permitia a comunicação, pois isso seria uma violação de segurança.
 
- 
+ 
 
- 
+ 
 
 
 

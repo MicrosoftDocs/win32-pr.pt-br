@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: aa36895afc34c2604cdeb60366b08aff6a1aafb6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c9fa88a3ca5b89f1fdb8a0694e4ae9cdcca54e9b400db75a5df9bfb057b3c43f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119530"
 ---
 # <a name="vertex-shaders"></a>Sombreadores de vértice
 
@@ -43,9 +43,9 @@ Para ver os recursos mais recentes introduzidos no sombreador modelo 3, consulte
 [Referência do sombreador ASM](dx9-graphics-reference-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

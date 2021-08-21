@@ -1347,7 +1347,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1358,7 +1358,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1369,7 +1369,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1380,7 +1380,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1391,7 +1391,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1402,7 +1402,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1413,7 +1413,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1424,7 +1424,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1435,7 +1435,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1446,7 +1446,7 @@ IntranetZoneInitializeAndScriptActiveXControlsNotMarkedSafe
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1457,7 +1457,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1468,7 +1468,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1479,7 +1479,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1490,7 +1490,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1501,7 +1501,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1512,7 +1512,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1523,7 +1523,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1534,7 +1534,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1545,7 +1545,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1556,7 +1556,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1567,7 +1567,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1578,7 +1578,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1589,7 +1589,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1600,7 +1600,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1611,7 +1611,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1622,7 +1622,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1633,7 +1633,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1644,7 +1644,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1655,7 +1655,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1666,7 +1666,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1677,7 +1677,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1688,7 +1688,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1699,7 +1699,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1710,7 +1710,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1721,7 +1721,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1732,7 +1732,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1743,7 +1743,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1754,7 +1754,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1765,7 +1765,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1776,7 +1776,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1787,7 +1787,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1798,7 +1798,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1809,7 +1809,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1820,7 +1820,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1831,7 +1831,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1842,7 +1842,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1853,7 +1853,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1864,7 +1864,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1875,7 +1875,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1886,7 +1886,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1897,7 +1897,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1908,7 +1908,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1919,7 +1919,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1930,7 +1930,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1941,7 +1941,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1952,7 +1952,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1963,7 +1963,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1974,7 +1974,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1985,7 +1985,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -1996,7 +1996,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2007,7 +2007,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2018,7 +2018,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2029,7 +2029,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2040,7 +2040,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2051,7 +2051,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2062,7 +2062,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2073,7 +2073,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2084,7 +2084,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2095,7 +2095,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2106,7 +2106,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2117,7 +2117,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2128,7 +2128,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2139,7 +2139,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2150,7 +2150,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2161,7 +2161,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2172,7 +2172,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2183,7 +2183,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2194,7 +2194,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2205,7 +2205,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2216,7 +2216,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2227,7 +2227,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2238,7 +2238,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2249,7 +2249,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2260,7 +2260,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2271,7 +2271,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2282,7 +2282,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2293,12 +2293,12 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**Parentid**
+**ParentID**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -2318,7 +2318,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2329,7 +2329,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2340,7 +2340,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2351,7 +2351,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2362,7 +2362,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2373,7 +2373,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2384,7 +2384,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2395,7 +2395,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2406,7 +2406,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2417,7 +2417,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2428,7 +2428,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -2439,7 +2439,7 @@ Tipo de acesso: Leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: Leitura/gravação
+Tipo de acesso: leitura/gravação
 </dt> </dl>
 
 </dd> <dt>

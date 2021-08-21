@@ -4,12 +4,12 @@ ms.assetid: 736715f4-c610-42cc-9fbb-c2b579da69e5
 title: Evento InkEdit. Gesture (Inked. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a61f4fce033672fde8cc4d74dced727fe60b7f97
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3a718106f4485682a1b6267f942ec3ef0f5a9fb670449e1f6023d86a5b03af56
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170082"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032074"
 ---
 # <a name="inkeditgesture-event"></a>Evento InkEdit. Gesture
 
@@ -63,7 +63,7 @@ Se a coleção [InkStrokes](/previous-versions/windows/desktop/legacy/ms703293(v
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse evento for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -108,9 +108,9 @@ Para alterar a ação padrão para um gesto:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Inked. h (também requer Inked \_ i. c)</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>InkEd.dll</dt> </dl>                          |
 
 

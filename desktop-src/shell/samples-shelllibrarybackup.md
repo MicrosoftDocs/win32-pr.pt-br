@@ -9,26 +9,26 @@ api_type: ''
 api_location: ''
 topic_type:
 - kbArticle
-ms.openlocfilehash: 7e1b4746d2e559b567adb4cbd2305ea474b03129
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29c7399fb4bda82ffce234379d51c4cd7ceb17a281f82f3e13db8b45c6b0a449
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968202"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032184"
 ---
 # <a name="shell-library-backup-sample"></a>Exemplo de backup da biblioteca de shell
 
-Demonstra como enumerar bibliotecas como contêineres. As bibliotecas são o novo paradigma de armazenamento para arquivos de usuário e são introduzidas no Windows 7.
+Demonstra como enumerar bibliotecas como contêineres. as bibliotecas são o novo paradigma de armazenamento para arquivos de usuário e são introduzidas no Windows 7.
 
 Este tópico inclui as seções a seguir.
 
 -   [Descrição](#description)
--   [Requisitos](#requirements)
+-   [Requirements](#requirements)
 -   [Baixando o exemplo](#downloading-the-sample)
 -   [Compilando o exemplo](#building-the-sample)
 -   [Executando o exemplo](#running-the-sample)
 
-## <a name="description"></a>Description
+## <a name="description"></a>Descrição
 
 Este exemplo é um aplicativo de backup fictício que mostra como escolher bibliotecas por meio da caixa de diálogo arquivo comum. Ele também demonstra como fazer backup de bibliotecas usando o Shell namespace Walker.
 

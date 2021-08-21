@@ -11,12 +11,12 @@ api_name:
 - SharedPropertyGroup
 api_type:
 - COM
-ms.openlocfilehash: a3fff14043d67b96db99334c7bec1afee2577f7a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a6080dd59b26a989fff9a34bb5e5ce2623c6d620f9aa25cd8b84422ea4c725e2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118812570"
 ---
 # <a name="sharedpropertygroup-class"></a>Classe SharedPropertyGroup
 
@@ -46,7 +46,7 @@ Use essa classe para acessar os métodos de [**ISharedPropertyGroup**](/windows/
 
 Você pode criar um objeto **SharedPropertyGroup** usando o método [**CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroupmanager-createpropertygroup) do [**ISharedPropertyGroupManager**](/windows/desktop/api/ComSvcs/nn-comsvcs-isharedpropertygroupmanager).
 
-Para usar essa classe do Microsoft Visual Basic, adicione uma referência à biblioteca de tipos de serviços COM+. Um objeto SharedPropertyGroup é criado chamando o método [**CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroupmanager-createpropertygroup) do objeto [**SharedPropertyGroupManager**](sharedpropertygroupmanager.md) .
+para usar essa classe do Microsoft Visual Basic, adicione uma referência à biblioteca de tipos de serviços COM+. Um objeto SharedPropertyGroup é criado chamando o método [**CreateProperty**](/windows/desktop/api/ComSvcs/nf-comsvcs-isharedpropertygroupmanager-createpropertygroup) do objeto [**SharedPropertyGroupManager**](sharedpropertygroupmanager.md) .
 
 ## <a name="requirements"></a>Requisitos
 

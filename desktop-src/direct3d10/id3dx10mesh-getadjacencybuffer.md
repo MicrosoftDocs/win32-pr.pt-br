@@ -1,7 +1,7 @@
 ---
-description: Acesse o buffer de adjacência da malha.
+description: Acesse o buffer de adjacency da malha.
 ms.assetid: 42b13f14-4edf-4b56-9198-60a548855542
-title: 'Método ID3DX10Mesh:: GetAdjacencyBuffer (D3DX10. h)'
+title: Método ID3DX10Mesh::GetAdjacencyBuffer (D3DX10.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119046934"
 ---
-# <a name="id3dx10meshgetadjacencybuffer-method"></a>Método ID3DX10Mesh:: GetAdjacencyBuffer
+# <a name="id3dx10meshgetadjacencybuffer-method"></a>Método ID3DX10Mesh::GetAdjacencyBuffer
 
-Acesse o buffer de adjacência da malha.
+Acesse o buffer de adjacency da malha.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,12 +40,12 @@ HRESULT GetAdjacencyBuffer(
 
 <dl> <dt>
 
-*ppAdjacency* \[ fora\]
+*ppAdjacency* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **ID3DX10MeshBuffer**](id3dx10meshbuffer.md)\*\***
 
-O buffer de adjacência. Consulte [**ID3DX10MeshBuffer**](id3dx10meshbuffer.md).
+O buffer de adjacency. Consulte [**ID3DX10MeshBuffer.**](id3dx10meshbuffer.md)
 
 </dd> </dl>
 
@@ -53,7 +53,7 @@ O buffer de adjacência. Consulte [**ID3DX10MeshBuffer**](id3dx10meshbuffer.md).
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-O valor de retorno é um dos valores listados nos [códigos de retorno do Direct3D 10](d3d10-graphics-reference-returnvalues.md).
+O valor de retorno é um dos valores listados em Códigos de Retorno [do Direct3D 10.](d3d10-graphics-reference-returnvalues.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX10.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl> |
 
 
 
@@ -73,7 +73,7 @@ O valor de retorno é um dos valores listados nos [códigos de retorno do Direct
 [ID3DX10Mesh](id3dx10mesh.md)
 </dt> <dt>
 
-[Interfaces D3DX](d3d10-graphics-reference-d3dx10-interfaces.md)
+[D3DX Interfaces](d3d10-graphics-reference-d3dx10-interfaces.md)
 </dt> </dl>
 
  

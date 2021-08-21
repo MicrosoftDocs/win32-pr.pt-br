@@ -4,12 +4,12 @@ ms.assetid: 5d897acb-11a2-4099-b024-768333b31568
 title: Movendo componentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9e8273698b5ac8a5b580307b6b46b765ae3d2c08
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 23540250629c382ca0c56b0acb581ca03aa112f09b9d00cc2e3523e9febfa5d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104456996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118813128"
 ---
 # <a name="moving-components"></a>Movendo componentes
 

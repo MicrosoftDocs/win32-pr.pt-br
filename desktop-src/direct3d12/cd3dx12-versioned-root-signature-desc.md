@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 695b60fef5aba124ce4e6f2ff729fdb9362c7b2c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 4b35c546dcfe5ed7c181dae3a9ae8baaa70aa05369ccb15e4cbd123ae92d75b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812244"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118808526"
 ---
 # <a name="cd3dx12_versioned_root_signature_desc-structure"></a>\_ \_ \_ Estrutura desc de assinatura raiz CD3DX12 com controle de versão \_
 

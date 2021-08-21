@@ -4,12 +4,12 @@ description: Quando um recurso é criado com o \_ sinalizador de \_ lado diverso
 ms.assetid: 1DBE23B2-A1E6-4491-9B74-4E92508A68FC
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1537113d6685e39cab94445c8d3f16d406638820
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5d4a31d2e8cd4457281c047db514dd2450d3bf70d85be7e4933cb7e5f5e026a5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104988655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045614"
 ---
 # <a name="mappings-are-into-a-tile-pool"></a>Mapeamentos estão em um pool de blocos
 

@@ -1,42 +1,42 @@
 ---
 title: Obtendo um identificador de objeto da Microsoft
-description: Para estender o esquema de Active Directory com êxito, você pode obter um OID raiz de um script.
+description: Para estender o esquema do Active Directory com êxito, você pode obter um OID raiz de um script.
 ms.assetid: 9ed2dd0a-620d-4856-a8a1-2d2a4468fd4c
 ms.tgt_platform: multiple
 keywords:
 - Obtendo um identificador de objeto da Microsoft
 ms.topic: article
 ms.date: 02/19/2021
-ms.openlocfilehash: 3daa03798afe8e887e8a33a2fde6bd04ddb5b7cb
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: 6eceb154d6f8a11b2322e4ad573b5db7d390db8d9d22cdcdedbe1b3423bb3cda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "104506326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025544"
 ---
 # <a name="obtaining-an-object-identifier-from-microsoft"></a>Obtendo um identificador de objeto da Microsoft
 
-Para estender o esquema de Active Directory com êxito, você pode obter um OID raiz de um script mostrado abaixo. Os OIDs gerados a partir do script são exclusivos; Eles são mapeados a partir de um GUID exclusivo. Leia as práticas recomendadas com cuidado, pois os OIDs mal tratados podem resultar em perda de dados.
+Para estender o esquema do Active Directory com êxito, você pode obter um OID raiz de um script mostrado abaixo. Os OIDs gerados a partir do script são exclusivos; eles são mapeados de um GUID exclusivo. Leia as práticas recomendadas cuidadosamente, pois os OIDs mal tratados podem resultar em perda de dados.
 
 > [!Note]  
-> Para obter instruções sobre como obter uma ID de link da Microsoft, visite o tópico [atributos vinculados](linked-attributes.md) .
+> Para obter instruções sobre como obter uma ID de link da Microsoft, visite o [tópico Atributos vinculados.](linked-attributes.md)
 
  
 
 ## <a name="after-you-have-obtained-a-base-oid"></a>Depois de obter um OID base
 
-Quando você tiver um OID base, tenha cuidado ao decidir como os OIDs devem ser divididos em categorias, pois esses OIDs estão contidos na tabela de prefixo e fazem parte dos dados de replicação de DC. É recomendável que não mais do que duas categorias de OID sejam criadas.
+Depois de ter um OID base, tenha cuidado ao decidir como os OIDs devem ser divididos em categorias, pois esses OIDs estão contidos na tabela de prefixo e fazem parte dos dados de replicação do DC. É recomendável que não mais de duas categorias OID sejam criadas.
 
-Você pode criar OIDs subsequentes para novas classes e atributos de esquema acrescentando dígitos à OID na forma de OID. X, em que X pode ser qualquer número que você escolher. Uma extensão de esquema comum geralmente usa a seguinte estrutura:
+Você pode criar OIDs subsequentes para novas classes e atributos de esquema, adicionando dígitos ao OID na forma de OID. X, em que X pode ser qualquer número que você escolher. Uma extensão de esquema comum geralmente usa a seguinte estrutura:
 
-Se o OID base atribuído for 1.2.840.113556.1.8000.999999, você poderá criar categorias da seguinte maneira.
+Se o OID base atribuído for 1.2.840.113556.1.8000.999999, você poderá criar categorias da seguinte forma.
 
 
 
-| Valor base de OID                            | Descrição                                                                                                                                                                                        |
+| Valor base do OID                            | Descrição                                                                                                                                                                                        |
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.2.840.113556.1.8000.999999.1<br/> | Classes de aplicativo<br/> A primeira classe teria o OID 1.2.840.113556.1.8000.999999.1.1, a segunda classe teria a OID 1.2.840.113556.1.8000.999999.1.2, e assim por diante.<br/>    |
-| 1.2.840.113556.1.8000.999999.2<br/> | Atributos do aplicativo<br/> O OID do primeiro atributo seria 1.2.840.113556.1.8000.999999.2.1, o OID do segundo atributo seria 1.2.840.113556.1.8000.999999.2.2 e assim por diante.<br/> |
+| 1.2.840.113556.1.8000.999999.1<br/> | Classes de aplicativo<br/> A primeira classe teria o OID 1.2.840.113556.1.8000.999999.1.1, a segunda classe teria o OID 1.2.840.113556.1.8000.9999999.1.2 e assim por diante.<br/>    |
+| 1.2.840.113556.1.8000.999999.2<br/> | Atributos de aplicativo<br/> O OID do primeiro atributo seria 1.2.840.113556.1.8000.999999.2.1, o OID do segundo atributo seria 1.2.840.113556.1.8000.999999.2.2 e assim por diante.<br/> |
 
 ## <a name="script"></a>Script
 

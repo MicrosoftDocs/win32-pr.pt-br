@@ -1,7 +1,7 @@
 ---
-description: O método StartStreaming é chamado quando o filtro alterna para o estado pausado.
+description: O método StartStreaming é chamado quando o filtro muda para o estado em pausa.
 ms.assetid: 1e3bbca7-b5b1-41fd-8f70-b7ef39c9491b
-title: Método CTransformFilter. StartStreaming (Transfrm. h)
+title: Método CTransformFilter.StartStreaming (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 50df2db2aada7f96744af5e553f474818594d399
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6d4a0c6e0e047819c208c8e592b971f013f9ed40d456a5b73ad64ea9153ddeaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748617"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953425"
 ---
-# <a name="ctransformfilterstartstreaming-method"></a>Método CTransformFilter. StartStreaming
+# <a name="ctransformfilterstartstreaming-method"></a>Método CTransformFilter.StartStreaming
 
-O `StartStreaming` método é chamado quando o filtro alterna para o estado pausado.
+O `StartStreaming` método é chamado quando o filtro muda para o estado em pausa.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ virtual HRESULT StartStreaming();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna S \_ OK.
 
@@ -54,8 +54,8 @@ Esse método não faz nada na classe base, mas a classe derivada pode substituí
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

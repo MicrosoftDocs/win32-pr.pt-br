@@ -1,9 +1,9 @@
 ---
-title: Estrutura de CD3DX12_DEFAULT (D3dx12. h)
-description: Passa \_ o padrão D3D12 para um construtor para cada estrutura auxiliar. Essa estrutura é simplesmente usada como um mecanismo para definir parâmetros padrão em outras estruturas auxiliares.
+title: CD3DX12_DEFAULT (D3dx12.h)
+description: Passa D3D12 \_ DEFAULT para um construtor para cada estrutura auxiliar. Essa estrutura é simplesmente usada como um mecanismo para definir parâmetros padrão em outras estruturas auxiliares.
 ms.assetid: AD41FD7B-9172-400E-9292-374FFAEDE145
 keywords:
-- Estrutura de CD3DX12_DEFAULT
+- CD3DX12_DEFAULT estrutura
 topic_type:
 - apiref
 api_name:
@@ -22,22 +22,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118531283"
 ---
-# <a name="cd3dx12_default-structure"></a>\_Estrutura padrão CD3DX12
+# <a name="cd3dx12_default-structure"></a>Estrutura CD3DX12 \_ DEFAULT
 
-Passa \_ o padrão D3D12 para um construtor para cada estrutura auxiliar. Essa estrutura é simplesmente usada como um mecanismo para definir parâmetros padrão em outras estruturas auxiliares.
+Passa D3D12 \_ DEFAULT para um construtor para cada estrutura auxiliar. Essa estrutura é simplesmente usada como um mecanismo para definir parâmetros padrão em outras estruturas auxiliares.
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura é declarada da seguinte maneira:
+Este struct é declarado da seguinte forma:
 
 ``` syntax
 struct CD3DX12_DEFAULT {};
 extern const DECLSPEC_SELECTANY CD3DX12_DEFAULT D3D12_DEFAULT;
 ```
 
-Passa \_ o padrão D3D12 para um construtor para cada struct auxiliar. Por exemplo, o Construtor a seguir é declarado em d3dx12. h:
+Passa D3D12 \_ DEFAULT para um construtor para cada struct auxiliar. Por exemplo, o construtor a seguir é declarado em d3dx12.h:
 
-\_ \_ Identificador do descritor de CPU CD3DX12 \_ ( \_ padrão CD3DX12) {PTR = 0;}
+CD3DX12 \_ CPU \_ DESCRIPTOR \_ HANDLE(CD3DX12 \_ DEFAULT) { ptr = 0; }
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Passa \_ o padrão D3D12 para um construtor para cada struct auxiliar. Por exemp
 
 | Requisito | Valor |
 |-------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx12. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx12.h</dt> </dl> |
 
 
 

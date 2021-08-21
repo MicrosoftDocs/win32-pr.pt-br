@@ -5,12 +5,12 @@ ms.assetid: d910f954-6516-47d1-be3b-37fe557f4f43
 title: D (API de telefonia)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7de939d2f2c31fbfa2ae305bd47a93c3c3832b5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8350b84bb40d652585c7c357b9dbb590876d3ceb7010350b3244f86e3b35da4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788070"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118867378"
 ---
 # <a name="d-telephony-api"></a>D (API de telefonia)
 

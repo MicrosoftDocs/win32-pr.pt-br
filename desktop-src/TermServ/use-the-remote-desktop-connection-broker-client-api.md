@@ -5,12 +5,12 @@ ms.assetid: 05C2D6CA-C9C5-4783-B196-6A02918046EF
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c931245870cfb72aed54e5aaff24e12d03ddf9e7
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0c7230a51915d0416a5c52ad8ce8fee2985f768b4466a8bcd28834744084c0a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294410"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118850884"
 ---
 # <a name="how-to-use-the-remote-desktop-connection-broker-client-api"></a>Como usar a API de cliente do agente de Conexão de Área de Trabalho Remota
 
@@ -41,6 +41,6 @@ Quando o provedor de protocolo receber uma solicitação de conexão de entrada,
 9.  Libere a interface [**IConnectionBrokerRequest**](iconnectionbrokerrequest.md) .
 10. Feche o identificador de evento *hStatusEvent* ou você pode reutilizá-lo para solicitações de conexão subsequentes.
 
- 
+ 
 
- 
+ 

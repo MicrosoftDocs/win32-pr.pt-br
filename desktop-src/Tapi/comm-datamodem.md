@@ -4,12 +4,12 @@ ms.assetid: 6bc314c6-30ec-4318-856a-3ab2fa6aadfb
 title: comm/datamodeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 89210bcf14931e3905f71cdbb8678f5519cc4c3d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ee6bfa18aaa174fd6b3c6bef6a79160845341e15374b6a4dcc72da1795a4bd67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105767768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118868084"
 ---
 # <a name="commdatamodem"></a>comm/datamodeto
 

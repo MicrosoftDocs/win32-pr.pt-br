@@ -3,8 +3,8 @@ title: Descrever a cor
 description: A cor pode ser descrita em termos de componentes.
 ms.assetid: 441d4f8d-57ef-4ecb-90b4-9d7d0e804ea2
 keywords:
-- WCS (sistema de cores do Windows), componentes de cores
-- WCS (sistema de cores do Windows), componentes de cores
+- Windows Sistema de cores (WCS), componentes de cores
+- WCS (Windows sistema de cores), componentes de cores
 - gerenciamento de cores de imagem, componentes de cores
 - gerenciamento de cores, componentes de cores
 - cores, componentes
@@ -18,12 +18,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1137f2c75091dd62ac8f8a9e8d0a371146e621ee
-ms.sourcegitcommit: 38954f8f0d70f44bff4a943784f468ebd7ef691a
+ms.openlocfilehash: ebad23d619c4fbe0c03f9e4278b734fd6fbd8e6f43feb68e1337354d36619ac3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "105808406"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028774"
 ---
 # <a name="describing-color"></a>Descrever a cor
 

@@ -1,7 +1,7 @@
 ---
-title: O dispositivo D1113 precisa do sinalizador BGRA
+title: O dispositivo D1113 precisa de um sinalizador BGRA
 ms.assetid: 246e188f-e23b-4230-869d-a888dc320133
-description: O dispositivo Direct3D não foi criado com o SUPORTE BGRA CREATE \_ \_ DEVICE \_ E, portanto, não é compatível \_ com Direct2D.
+description: O dispositivo Direct3D não foi criado com o D3D10 \_ Create \_ Device \_ BGRA \_ support e, portanto, não é compatível com Direct2D.
 keywords:
 - O dispositivo D1113 precisa do sinalizador BGRA Direct2D
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119075550"
 ---
-# <a name="d1113-device-needs-bgra-flag"></a>D1113: o dispositivo precisa do sinalizador BGRA
+# <a name="d1113-device-needs-bgra-flag"></a>D1113: o dispositivo precisa de um sinalizador BGRA
 
-O dispositivo Direct3D não foi criado com o SUPORTE BGRA CREATE \_ \_ DEVICE \_ E, portanto, não é compatível \_ com Direct2D.
+O dispositivo Direct3D não foi criado com o D3D10 \_ Create \_ Device \_ BGRA \_ support e, portanto, não é compatível com Direct2D.
 
 
 
@@ -36,7 +36,7 @@ O dispositivo Direct3D não foi criado com o SUPORTE BGRA CREATE \_ \_ DEVICE \_
 
 ## <a name="possible-causes"></a>Possíveis causas
 
-O dispositivo Direct3D não foi criado com SUPORTE \_ BGRA CREATE \_ DEVICE D3D10. \_ \_
+O dispositivo Direct3D não foi criado com o D3D10 \_ Create \_ Device \_ BGRA \_ support.
 
  
 
