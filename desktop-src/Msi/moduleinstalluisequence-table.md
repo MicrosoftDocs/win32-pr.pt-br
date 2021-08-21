@@ -4,12 +4,12 @@ ms.assetid: a125aecc-57d9-4c8e-873e-d5315eaafa56
 title: Tabela ModuleInstallUISequence
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ca6771daa0b95acbc23e2d60eddda5420e417db
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8bb8f2868fbad03439758cd45a79a71febb5e2a9b0b863c2ee9ea0597f5b112f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105748584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118945360"
 ---
 # <a name="moduleinstalluisequence-table"></a>Tabela ModuleInstallUISequence
 
@@ -21,11 +21,11 @@ A tabela ModuleInstallUISequence tem as colunas a seguir.
 
 | Coluna     | Tipo                         | Chave | Nullable |
 |------------|------------------------------|-----|----------|
-| Ação     | [Identificador](identifier.md) | S   | N        |
-| Sequência   | [Inteiro](integer.md)       |     | S        |
-| Baseaction | [Identificador](identifier.md) |     | S        |
-| After (após)      | [Inteiro](integer.md)       |     | S        |
-| Condição  | [Condição](condition.md)   |     | S        |
+| Ação     | [Identificador](identifier.md) | Y   | N        |
+| Sequência   | [Inteiro](integer.md)       |     | Y        |
+| Baseaction | [Identificador](identifier.md) |     | Y        |
+| Depois      | [Inteiro](integer.md)       |     | Y        |
+| Condição  | [Condição](condition.md)   |     | Y        |
 
 
 
@@ -49,14 +49,14 @@ Se uma [ação padrão](standard-actions.md) for usada na coluna ação de uma t
 
 O número de sequência de uma ação padrão. Se uma ação ou caixa de diálogo personalizada for inserida na coluna ação dessa linha, esse campo deverá ser definido como nulo.
 
-Ao usar [ações padrão](standard-actions.md) em tabelas de sequências do módulo de mesclagem, o valor na coluna sequência deve ser o número de sequência de ação recomendado. Se o número de sequência no módulo de mesclagem for diferente daquele para a mesma ação na tabela de sequência de arquivos. msi, a ferramenta de mesclagem usará o número de sequência do arquivo. msi. Consulte as sequências sugeridas em [usando uma tabela de sequência](using-a-sequence-table.md) para os números de sequência recomendados de ações padrão.
+Ao usar [ações padrão](standard-actions.md) em tabelas de sequências do módulo de mesclagem, o valor na coluna sequência deve ser o número de sequência de ação recomendado. Se o número de sequência no módulo de mesclagem for diferente daquele para a mesma ação na tabela de sequência de arquivos .msi, a ferramenta de mesclagem usará o número de sequência do arquivo de .msi. Consulte as sequências sugeridas em [usando uma tabela de sequência](using-a-sequence-table.md) para os números de sequência recomendados de ações padrão.
 
 </dd> <dt>
 
 <span id="BaseAction"></span><span id="baseaction"></span><span id="BASEACTION"></span>Baseaction
 </dt> <dd>
 
-A coluna Baseaction pode conter uma ação padrão, uma ação personalizada especificada na tabela de ação personalizada do módulo de mesclagem ou uma caixa de diálogo especificada na tabela de diálogo do módulo. A coluna Baseaction é uma chave na coluna ação desta tabela. Ele não pode ser uma chave estrangeira em outra tabela ou tabela de mesclagem no arquivo. msi. Isso significa que cada ação padrão, ação personalizada ou caixa de diálogo listada na coluna Baseaction também deve ser listada na coluna ação de outro registro nesta tabela.
+A coluna Baseaction pode conter uma ação padrão, uma ação personalizada especificada na tabela de ação personalizada do módulo de mesclagem ou uma caixa de diálogo especificada na tabela de diálogo do módulo. A coluna Baseaction é uma chave na coluna ação desta tabela. Ele não pode ser uma chave estrangeira em outra tabela ou tabela de mesclagem no arquivo de .msi. Isso significa que cada ação padrão, ação personalizada ou caixa de diálogo listada na coluna Baseaction também deve ser listada na coluna ação de outro registro nesta tabela.
 
 </dd> <dt>
 

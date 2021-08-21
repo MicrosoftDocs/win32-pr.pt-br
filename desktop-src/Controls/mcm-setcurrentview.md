@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCM_SETCURRENTVIEW (commctrl. h)
-description: Define a exibição atual do calendário. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ SetCurrentView.
+title: MCM_SETCURRENTVIEW mensagem (Commctrl.h)
+description: Define a exibição atual do calendário. Você pode enviar essa mensagem explicitamente ou usando a macro MonthCal \_ SetCurrentView.
 ms.assetid: 26ccbb80-0dba-4241-a2eb-b79000fc3618
 keywords:
-- Controles de MCM_SETCURRENTVIEW de mensagens do Windows
+- MCM_SETCURRENTVIEW controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d383c984932c19805f452cb39841c2edf36809b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 33cf7206fb7e778c0ab7d28ee8947b9327e8cc98bd8ae8c9063213814676a77e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919085"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119019034"
 ---
-# <a name="mcm_setcurrentview-message"></a>\_Mensagem MCM SETCURRENTVIEW
+# <a name="mcm_setcurrentview-message"></a>Mensagem MCM \_ SETCURRENTVIEW
 
-Define a exibição atual do calendário. Você pode enviar essa mensagem explicitamente ou usando a macro [**calendário mensal \_ SetCurrentView**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcurrentview) .
+Define a exibição atual do calendário. Você pode enviar essa mensagem explicitamente ou usando a macro [**MonthCal \_ SetCurrentView.**](/windows/desktop/api/Commctrl/nf-commctrl-monthcal_setcurrentview)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -45,10 +45,10 @@ Nova exibição. Uma das constantes a seguir.
 
 | Valor                                                                                                                                                      | Significado                  |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| <span id="MCMV_MONTH"></span><span id="mcmv_month"></span><dl> <dt>**MCMV \_ mês**</dt> </dl>       | Exibição mensal.<br/> |
-| <span id="MCMV_YEAR"></span><span id="mcmv_year"></span><dl> <dt>**MCMV \_ ano**</dt> </dl>          | Exibição anual.<br/>  |
-| <span id="MCMV_DECADE"></span><span id="mcmv_decade"></span><dl> <dt>**década de MCMV \_**</dt> </dl>    | Exibição da década.<br/>  |
-| <span id="MCMV_CENTURY"></span><span id="mcmv_century"></span><dl> <dt>**\_século MCMV**</dt> </dl> | Exibição do século.<br/> |
+| <span id="MCMV_MONTH"></span><span id="mcmv_month"></span><dl> <dt>**MCMV \_ MONTH**</dt> </dl>       | Exibição mensal.<br/> |
+| <span id="MCMV_YEAR"></span><span id="mcmv_year"></span><dl> <dt>**MCMV \_ YEAR**</dt> </dl>          | Exibição anual.<br/>  |
+| <span id="MCMV_DECADE"></span><span id="mcmv_decade"></span><dl> <dt>**MCMV \_ DECADE**</dt> </dl>    | Exibição de década.<br/>  |
+| <span id="MCMV_CENTURY"></span><span id="mcmv_century"></span><dl> <dt>**MCMV \_ CENTURY**</dt> </dl> | Exibição de século.<br/> |
 
 
 
@@ -56,9 +56,9 @@ Nova exibição. Uma das constantes a seguir.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará zero se for bem-sucedido ou nenhum outro.
+Retornará diferente de zero se for bem-sucedido ou zero caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,9 +66,9 @@ Retornará zero se for bem-sucedido ou nenhum outro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

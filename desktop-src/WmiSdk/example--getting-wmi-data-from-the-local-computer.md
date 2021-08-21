@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: 'Exemplo: obtendo dados WMI do computador local'
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 840cd4ada941bdfd8ba7fca9b8ca9393c0b5eb55
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71036d95996926ce9e5a0200587a15abb8dc992c82999aa65c54be50d0e1691b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050904"
 ---
 # <a name="example-getting-wmi-data-from-the-local-computer"></a>Exemplo: obtendo dados WMI do computador local
 

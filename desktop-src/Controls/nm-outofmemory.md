@@ -1,9 +1,9 @@
 ---
-title: NM_OUTOFMEMORY código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle que o controle não pôde concluir uma operação porque não havia memória suficiente disponível. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: NM_OUTOFMEMORY de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de que o controle não pôde concluir uma operação porque não havia memória suficiente disponível. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: d7d80515-ae6c-4817-a698-d486a9d86c4a
 keywords:
-- NM_OUTOFMEMORY de código de notificação controles do Windows
+- NM_OUTOFMEMORY código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f1321f88360d168b13d16b36f984d9b797dc094
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c8a2efdd0048006b86d97964dc953d2dbd7c4ecb2687b3c0fb67a5effc63fea0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104008928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118958105"
 ---
-# <a name="nm_outofmemory-notification-code"></a>\_Código de notificação de OUTOFMEMORY nm
+# <a name="nm_outofmemory-notification-code"></a>Código de \_ notificação OUTOFMEMORY NM
 
-Notifica uma janela pai do controle que o controle não pôde concluir uma operação porque não havia memória suficiente disponível. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de que o controle não pôde concluir uma operação porque não havia memória suficiente disponível. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_OUTOFMEMORY
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.
+Um ponteiro para uma [**estrutura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre essa notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O valor de retorno é ignorado pelo controle.
+O valor de retorno é ignorado pelo controle .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ O valor de retorno é ignorado pelo controle.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

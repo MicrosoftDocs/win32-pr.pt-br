@@ -4,12 +4,12 @@ ms.assetid: 43a71003-4b83-4d0c-b4b3-a75bb15f9d65
 title: System. Photo. ShutterSpeedDenominator
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30f394b7dc075629e1cff0124cc3598020d62148
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 29a850fae55669bcc77429c805faebb9c82c4f671614c4d563e4267b3399eb8e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105807143"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033284"
 ---
 # <a name="systemphotoshutterspeeddenominator"></a>System. Photo. ShutterSpeedDenominator
 

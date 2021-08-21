@@ -1,6 +1,6 @@
 ---
 title: Interfaces WIA
-description: Esta seção contém informações de referência sobre as interfaces usadas com a API wia (aquisição de imagem Windows)API.
+description: esta seção contém informações de referência sobre as interfaces usadas com a API de aquisição de imagem de Windows (WIA).
 ms.assetid: 0b496d6b-486a-42d3-a0e5-8e9e52e27608
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,13 +13,13 @@ ms.locfileid: "118965794"
 ---
 # <a name="wia-interfaces"></a>Interfaces WIA
 
-Esta seção contém informações de referência sobre as interfaces usadas com a API wia (aquisição de imagem Windows)API. As seguintes interfaces são apresentadas:
+esta seção contém informações de referência sobre as interfaces usadas com a API de aquisição de imagem de Windows (WIA). As seguintes interfaces são apresentadas:
 
 ## <a name="interfaces"></a>Interfaces
 
--   [**IEnumWIA \_ DEV \_ CAPS**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_caps)
--   [**IEnumWIA \_ DEV \_ INFO**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)
--   [**INFORMAÇÕES DE FORMATO IEnumWIA \_ \_**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_format_info)
+-   [**IEnumWIA \_ dev \_ Caps**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_caps)
+-   [**\_Informações de desenvolvimento do IEnumWIA \_**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_dev_info)
+-   [**\_Informações do formato IEnumWIA \_**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwia_format_info)
 -   [**IEnumWiaItem**](/windows/desktop/api/wia_xp/nn-wia_xp-ienumwiaitem)
 -   [**IEnumWiaItem2**](-wia-ienumwiaitem2.md)
 -   [**IScanProfile**](-wia-iscanprofile.md)

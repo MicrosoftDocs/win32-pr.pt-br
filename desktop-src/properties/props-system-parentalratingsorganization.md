@@ -4,12 +4,12 @@ ms.assetid: a8aac7cb-ec9c-41cb-a802-50a4008568af
 title: System. ParentalRatingsOrganization
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3022141902bd53211d6276cfb2deb6c937da4868
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 701d7cd2e8d58bca8815548114f4c9acc22663e0699dd622c7386334b5b8eb43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091571"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033454"
 ---
 # <a name="systemparentalratingsorganization"></a>System. ParentalRatingsOrganization
 

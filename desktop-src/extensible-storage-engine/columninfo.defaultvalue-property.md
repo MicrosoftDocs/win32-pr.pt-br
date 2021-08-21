@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: ColumnInfo. DefaultValue'
-title: Propriedade ColumnInfo. DefaultValue
+description: 'Saiba mais sobre: propriedade ColumnInfo.DefaultValue'
+title: Propriedade ColumnInfo.DefaultValue
 TOCTitle: 'DefaultValue property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnInfo.DefaultValue
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columninfo.defaultvalue(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d1e2fdb9a2acc10c24720c7adfdb640e7da7b019
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 74ba20fbeae81dcaaa7c52a14021450348734e3da09dfd337e50ff8ea4a47682
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119042404"
 ---
-# <a name="columninfodefaultvalue-property"></a>Propriedade ColumnInfo. DefaultValue
+# <a name="columninfodefaultvalue-property"></a>Propriedade ColumnInfo.DefaultValue
 
 Obtém o valor padrão da coluna.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,7 +58,7 @@ public IList<byte> DefaultValue { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Collections. Generic. IList](/dotnet/api/system.collections.generic.ilist-1)\<[Byte](/dotnet/api/system.byte)\>  
+Tipo: [System.Collections.Generic.IList](/dotnet/api/system.collections.generic.ilist-1)\<[Byte](/dotnet/api/system.byte)\>  
 
 ## <a name="see-also"></a>Confira também
 
@@ -66,6 +66,6 @@ Tipo: [System. Collections. Generic. IList](/dotnet/api/system.collections.gener
 
 [Classe ColumnInfo](./columninfo-class.md)
 
-[Membros do ColumnInfo](./columninfo-members.md)
+[Membros columnInfo](./columninfo-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

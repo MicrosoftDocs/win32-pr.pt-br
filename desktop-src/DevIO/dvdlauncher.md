@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - StorProp.dll
-ms.openlocfilehash: ef49be579052e5a9fd493f5bf246a2efbd217c34
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a52ac620e5ec9aa3d9060d35921fcfd9c5bcc6e73cebf71ef336ceb54fc0806e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089442"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118956905"
 ---
 # <a name="dvdlauncher-function"></a>Função DvdLauncher
 
@@ -54,7 +54,7 @@ A letra da unidade.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem sucedido e as regiões corresponderem, o valor de retorno será diferente de zero. Caso contrário, o valor de retorno será zero.
 

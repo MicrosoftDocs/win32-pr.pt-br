@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3D9Types.h
-ms.openlocfilehash: 85401573956d29386b5ddabbd48711a7be140463
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: 843dff64de7ad4b97b2719f469bb8fb13813f06b8045d7de1b9f5ec4215a76ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129965"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118989236"
 ---
 # <a name="d3dadapter_identifier9-structure"></a>\_Estrutura D3DADAPTER IDENTIFIER9
 
@@ -181,7 +181,7 @@ Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Usado para determinar o nível de validação do WHQL (Windows Hardware Quality Labs) para este driver e par de dispositivos. O DWORD é uma estrutura de data empacotada que define a data da versão do teste WHQL mais recente passado pelo driver. É legal executar < e > operações nesse valor. O seguinte ilustra o formato de data.
+usado para determinar o nível de validação do WHQL (Hardware Quality Labs) do Windows para este driver e par de dispositivos. O DWORD é uma estrutura de data empacotada que define a data da versão do teste WHQL mais recente passado pelo driver. É legal executar < e > operações nesse valor. O seguinte ilustra o formato de data.
 
 
 
@@ -210,7 +210,7 @@ Os valores a seguir também são usados.
 
 Diferenças entre o Direct3D 9 e o Direct3D 9Ex:
 
-Para o Direct3D9Ex em execução no Windows Vista, no Windows Server 2008, no Windows 7 e no Windows Server 2008 R2 (ou mais no sistema operacional atual), [**IDirect3D9:: GetAdapterIdentifier**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-getadapteridentifier) retorna 1 para o nível de WHQL sem verificar o status do driver.
+para Direct3D9Ex em execução no Windows Vista, Windows server 2008, Windows 7 e Windows Server 2008 R2 (ou mais sistema operacional atual), [**IDirect3D9:: GetAdapterIdentifier**](/windows/win32/api/d3d9/nf-d3d9-idirect3d9-getadapteridentifier) retorna 1 para o nível de WHQL sem verificar o status do driver.
 
 </dd> </dl>
 

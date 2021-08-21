@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ea38cd17aabbfd8660ae27506110eea6cf9e9784
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 48ca95eb1f3370305d9544830001d6ead5d41316959bbb81ad7d1780fa667236
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104500048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119022404"
 ---
 # <a name="preferredlanguage-attribute"></a>atributo preferredLanguage
 
@@ -56,7 +56,7 @@ A linguagem de escrita ou falada preferida para uma pessoa.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| É de valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
@@ -77,7 +77,7 @@ A linguagem de escrita ou falada preferida para uma pessoa.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| É de valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
@@ -98,7 +98,7 @@ A linguagem de escrita ou falada preferida para uma pessoa.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| É de valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
@@ -119,7 +119,7 @@ A linguagem de escrita ou falada preferida para uma pessoa.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| É de valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |
@@ -140,7 +140,7 @@ A linguagem de escrita ou falada preferida para uma pessoa.
 | ID do link                | \-                                                                                    |
 | MAPI-Id                | \-                                                                                    |
 | System-Only            | Falso                                                                                 |
-| É de valor único       | True                                                                                  |
+| É de valor único       | Verdadeiro                                                                                  |
 | É indexado             | Falso                                                                                 |
 | No catálogo global      | Falso                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                          |

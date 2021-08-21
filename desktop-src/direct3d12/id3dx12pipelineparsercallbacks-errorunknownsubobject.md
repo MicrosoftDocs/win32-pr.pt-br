@@ -17,12 +17,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e294e3face085c5298f3cc624d7c0ef70dcf865
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 7129969cb87bdf12a4c5eb60428aad755fa99b81cd2a6944a35f51f387af4ceb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105812317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118807503"
 ---
 # <a name="id3dx12pipelineparsercallbackserrorunknownsubobject-method"></a>Método ID3DX12PipelineParserCallbacks:: ErrorUnknownSubobject
 
@@ -54,7 +54,7 @@ O tipo de subobjeto não reconhecido do subobjeto tentado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não retorna nada.
 

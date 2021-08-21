@@ -3,7 +3,7 @@ title: Mensagem de WM_DRAWITEM (WinUser. h)
 description: Enviado para a janela pai de um botão, caixa de combinação, caixa de listagem ou menu de desenho de proprietário quando um aspecto visual do botão, caixa de combinação, caixa de listagem ou menu foi alterado.
 ms.assetid: e54bae5e-10d6-43b0-a766-1b270c8873a9
 keywords:
-- Controles de WM_DRAWITEM de mensagens do Windows
+- controles de Windows de mensagem de WM_DRAWITEM
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d5bd6465a560a0590ed9f5b483afae4c0d72d637
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f5d4b2addfa2de5f8c76ded636ca29a96fb3af7e0ab4157d25ac26a78c462c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644615"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957515"
 ---
 # <a name="wm_drawitem-message"></a>Mensagem do WM \_ DRAWITEM
 
@@ -55,7 +55,7 @@ Ponteiro para uma estrutura [**DRAWITEMSTRUCT**](/windows/win32/api/winuser/ns-w
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar **true**.
 
@@ -73,9 +73,9 @@ Antes de retornar do processamento dessa mensagem, um aplicativo deve garantir q
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

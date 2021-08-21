@@ -8,12 +8,12 @@ keywords:
 - ADSI de consultas, escopo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dac51fc261cb418db0018acd996c248766896a25
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 45a31ebe378502dd9b4ddda6dce83e3547dab580360a8d1ec07516d1e3347cf0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634864"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119023244"
 ---
 # <a name="scope-of-query"></a>Escopo da consulta
 
@@ -37,9 +37,9 @@ Uma pesquisa de nível único é restrita aos filhos imediatos de um objeto base
 
 Uma pesquisa de subárvore, também conhecida como uma pesquisa profunda, inclui todos os objetos abaixo do objeto base, excluindo o próprio objeto base. Essa pesquisa pode gerar referências a outros servidores. Essa pesquisa tem o maior escopo e pode retornar um grande conjunto de resultados. Se possível, pesquise pelo menos um atributo indexado e defina as configurações de referências (para obter mais informações, consulte [desempenho e manipulação de grandes conjuntos de resultados](performance-and-handling-large-result-sets.md)) para corresponder aos seus requisitos de pesquisa. Também é recomendável que os resultados de uma pesquisa de subárvore sejam executados de forma assíncrona e paginada para reduzir a sobrecarga do servidor e a eficácia da rede. Uma pesquisa de subárvore normalmente é usada para pesquisar objetos para um determinado escopo. Por exemplo, pesquise todos os usuários com contas que irão expirar em 30 dias ou menos.
 
- 
+ 
 
- 
+ 
 
 
 

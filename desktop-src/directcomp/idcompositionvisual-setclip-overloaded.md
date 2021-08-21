@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: e421c916d305b95029bb6ffd8328346b4ea36918
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1cc1d0f24c30e6ec11ecaa40b0317109eddaf432ee311a5b9545f34f7afa8582
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645127"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119043054"
 ---
 # <a name="idcompositionvisualsetclip-methods"></a>Métodos IDCompositionVisual:: SetClip
 
@@ -40,9 +40,9 @@ Define a propriedade Clip deste visual como a região retangular ou o objeto de 
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | \[apenas aplicativos de área de trabalho Windows 8\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2012\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>DCOMP. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 
@@ -52,7 +52,7 @@ Define a propriedade Clip deste visual como a região retangular ou o objeto de 
 
 <dl> <dt>
 
-[Recorte](clipping.md)
+[Recortando](clipping.md)
 </dt> <dt>
 
 [**IDCompositionVisual**](/windows/win32/api/dcomp/nn-dcomp-idcompositionvisual)

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - Ndisnpp.dll
 - Rmtnpp.dll
-ms.openlocfilehash: 486c7aedc7092e0dd0f9f68cc1ea2ccad08d9438
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3727bbabe9c56620b313d70ed529b5ac5f43bed620e98e49a3f6c3564fd1ba3f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119063956"
 ---
 # <a name="iesppause-method"></a>IESP: método ause de:P
 
@@ -59,8 +59,8 @@ Se o método não for bem-sucedido, o valor de retorno será um dos seguintes c�
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**captura de NMERR \_ \_ pausada**</dt> </dl> | A captura já está em pausa.<br/>                                                                                     |
 | <dl> <dt>**NMERR \_ não \_ capturando**</dt> </dl>  | O NPP não está capturando dados. Chame [IESP:: Start](iesp-start.md) para iniciar a captura.<br/>                            |
-| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>  | O NPP não está conectado à rede. Chame [IESP:: Connect](iesp-connect.md) para conectar o NPP à rede.<br/> |
-| <dl> <dt>**NMERR \_ não \_ ESP**</dt> </dl>        | O NPP está conectado à rede, mas não com o método [IESP:: Connect](iesp-connect.md) .<br/>                     |
+| <dl> <dt>**NMERR \_ não \_ conectado**</dt> </dl>  | O NPP não está conectado à rede. chame [IESP:: Conexão](iesp-connect.md) para conectar o NPP à rede.<br/> |
+| <dl> <dt>**NMERR \_ não \_ ESP**</dt> </dl>        | o NPP está conectado à rede, mas não com o método [IESP:: Conexão](iesp-connect.md) .<br/>                     |
 
 
 
@@ -87,14 +87,14 @@ Para reiniciar a captura, chame [IESP:: resume](iesp-resume.md). Para interrompe
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [IESP](iesp.md)
 </dt> <dt>
 
-[IESP:: conectar](iesp-connect.md)
+[IESP:: Conexão](iesp-connect.md)
 </dt> <dt>
 
 [IESP:: retomar](iesp-resume.md)

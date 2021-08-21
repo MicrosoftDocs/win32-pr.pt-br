@@ -1,20 +1,20 @@
 ---
-description: Compartilhando dados entre fluxos
+description: compartilhando dados entre Fluxos
 ms.assetid: e18eecf8-9475-420a-9a60-4b1b5f8fd43a
-title: Compartilhando dados entre fluxos
+title: compartilhando dados entre Fluxos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee0b2f53fe1952bbc16711f7c7e39c3182ba94a7
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: f4137d56a9d90f524ee2e5c67b6a4d726d9478e824513d0fe7879c95ce094af1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456688"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119072560"
 ---
-# <a name="sharing-data-between-streams"></a>Compartilhando dados entre fluxos
+# <a name="sharing-data-between-streams"></a>compartilhando dados entre Fluxos
 
 > [!Note]  
-> Essas APIs são preteridas. Os aplicativos devem usar o filtro de [**apoio de exemplo**](sample-grabber-filter.md) ou implementar um filtro personalizado para obter dados de um grafo de filtro do DirectShow.
+> Essas APIs são preteridas. os aplicativos devem usar o filtro de [**apoio de exemplo**](sample-grabber-filter.md) ou implementar um filtro personalizado para obter dados de um DirectShow gráfico de filtro.
 
  
 

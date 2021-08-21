@@ -3,9 +3,9 @@ title: Lendo metadados na reprodução
 description: Lendo metadados na reprodução
 ms.assetid: 48d37a9e-5e22-4298-abc4-b69998906dcb
 keywords:
-- SDK do Windows Media Format, lendo metadados
-- SDK do Windows Media Format, leitores assíncronos
-- SDK do Windows Media Format, leitores síncronos
+- Windows Media Format SDK, lendo metadados
+- Windows SDK do formato de mídia, leitores assíncronos
+- Windows SDK do formato de mídia, leitores síncronos
 - ASF (Advanced Systems Format), lendo metadados
 - ASF (formato de sistemas avançados), lendo metadados
 - ASF (Advanced Systems Format), leitores assíncronos
@@ -17,12 +17,12 @@ keywords:
 - metadados, lendo na reprodução
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 42a2515dd62092d02a45b0261fe2b501e0833a31
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: f62100da8c2f27e626e27ae6686e08f7217867ec2775f69292aac495d218fcb8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "104007230"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119027344"
 ---
 # <a name="reading-metadata-at-playback"></a>Lendo metadados na reprodução
 
@@ -37,9 +37,9 @@ Para obter mais informações sobre como acessar metadados, consulte [trabalhand
 [**Lendo arquivos ASF**](reading-asf-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

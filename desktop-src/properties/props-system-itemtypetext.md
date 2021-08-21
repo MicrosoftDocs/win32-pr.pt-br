@@ -4,12 +4,12 @@ ms.assetid: 5d4c86da-6317-4a34-88d6-caf794aaa165
 title: System. ItemTypeText
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 699a953392054cb2344c5f3b3d652e64a9a2c1f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f145aa2491f3352c4691be95c0e8ae16a75e8e0880732904e983fbf02c167dbd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119553746"
 ---
 # <a name="systemitemtypetext"></a>System. ItemTypeText
 
@@ -37,7 +37,7 @@ Os valores de PKEY são definidos em Propkey. h.
 
 Se [System. ItemType](./props-system-itemtype.md) for VT \_ vazio, o valor dessa propriedade também será um VT \_ vazio. Se o item for um arquivo, o valor dessa propriedade será o mesmo que se você passasse o valor System. ItemType do arquivo para [**PSFormatForDisplay**](/windows/win32/api/propsys/nf-propsys-psformatfordisplay).
 
-Essa propriedade não deve ser confundida com [System. Kind](./props-system-kind.md), que é um nome de tipo amigável de alto nível. Por exemplo, para um arquivo de documento. doc, as várias propriedades são como mostrado aqui:
+Essa propriedade não deve ser confundida com [System. Kind](./props-system-kind.md), que é um nome de tipo amigável de alto nível. Por exemplo, para um arquivo de documento .doc, as várias propriedades são como mostrado aqui:
 
 
 
@@ -45,7 +45,7 @@ Essa propriedade não deve ser confundida com [System. Kind](./props-system-kind
 |--------------------------------------------------------|-------------------------|
 | [Sistema. Kind](./props-system-kind.md)                 | Documento                |
 | [System. ItemType](./props-system-itemtype.md)         | .doc                    |
-| [System. ItemTypeText]() | Documento do Microsoft Word |
+| [System. ItemTypeText]() | Microsoft Word Document |
 
 
 
@@ -58,10 +58,10 @@ Valores de exemplo:
 | Caminho                                   | ItemTypeText            |
 |----------------------------------------|-------------------------|
 | c: \\ barra de mydir \\ \\hello.txt              | Arquivo de texto               |
-| \\\\mydir de compartilhamento de servidor \\ \\ \\goodnews.doc | Documento do Microsoft Word |
+| \\\\mydir de compartilhamento de servidor \\ \\ \\goodnews.doc | Microsoft Word Document |
 | \\\\\\pasta de compartilhamento do servidor \\              | Pasta de arquivos             |
 | c: \\ mydir \\ MyFolder                    | Pasta de arquivos             |
-| /Mailbox conta/caixa de entrada/' re: Olá! '    | Mensagem de email do Outlook  |
+| /Mailbox conta/caixa de entrada/' re: Olá! '    | Outlook Mensagem de email  |
 
 
 

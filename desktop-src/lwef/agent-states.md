@@ -4,83 +4,83 @@ description: Estados do agente
 ms.assetid: 8c3c5b12-81af-4ba5-b834-9f0a7ff5d075
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c371b1a2126129c03f16ce7fc7c2f95cca955a2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fbfb927cbe9ad703e733caa827df7c5a63bac67b93d49edbb8f59884c89b6ee7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976796"
 ---
 # <a name="agent-states"></a>Estados do agente
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
-Os serviços de animação do Microsoft Agent executam automaticamente determinadas animações para você. Por exemplo, quando você usa comandos [**MoveTo**](moveto-method.md) ou [**GestureAt**](gestureat-method.md) , os serviços de animação desempenham uma animação apropriada. Da mesma forma, após o tempo limite ocioso, os serviços executam animações automaticamente. Para dar suporte a esses Estados, você pode definir animações apropriadas e, em seguida, atribuí-las aos Estados. Você ainda pode reproduzir qualquer animação que definir diretamente usando o método [**Play**](play-method.md) , mesmo se você atribuí-lo a um estado.
+Os serviços de animação do Microsoft Agent reproduzem automaticamente determinadas animações para você. Por exemplo, quando você usa comandos [**MoveTo**](moveto-method.md) ou [**GestureAt,**](gestureat-method.md) os serviços de animação reproduzem uma animação apropriada. Da mesma forma, após o tempo de ociosidade, os serviços reproduzem animações automaticamente. Para dar suporte a esses estados, você pode definir animações apropriadas e atribuí-las aos estados. Você ainda pode reproduzir qualquer animação que definir diretamente usando o [**método Play,**](play-method.md) mesmo se atribuí-lo a um estado.
 
-Você pode atribuir várias animações ao mesmo estado e os serviços de animação escolherão aleatoriamente uma das suas animações. Isso permite que seu caractere exiba uma variedade muito mais natural em seu comportamento.
+Você pode atribuir várias animações ao mesmo estado e os serviços de animação escolherão aleatoriamente uma de suas animações. Isso permite que seu caractere extiver uma variedade muito mais natural em seu comportamento.
 
-Embora as animações que você atribui a Estados possam incluir quadros de ramificação, evite fazer loops de animações (animações que ramificam para sempre). Caso contrário, você precisará usar o método [**Stop**](play-method.md) antes de poder reproduzir outra animação.
+Embora as animações que você atribui aos estados possam incluir quadros de ramificação, evite fazer loop de animações (animações que se ramificam para sempre). Caso contrário, você terá que usar o [**método Stop**](play-method.md) antes de reproduzir outra animação.
 
-É importante definir e atribuir pelo menos uma animação para cada Estado que ocorre para o caractere. Se você não fornecer essas animações e atribuições de estado, talvez seu caractere não pareça se comportar adequadamente ao usuário. No entanto, se um estado não ocorrer para um caractere específico, você não precisará atribuir uma animação a esse estado. Por exemplo, se o aplicativo host nunca chamar o método [**MoveTo**](moveto-method.md) , você poderá ignorar a criação e a atribuição de animações de estado de **movimentação** .
+É importante definir e atribuir pelo menos uma animação para cada estado que ocorre para o caractere. Se você não fornecer essas animações e atribuições de estado, seu caractere poderá não parecer se comportar adequadamente para o usuário. No entanto, se um estado não ocorrer para um caractere específico, você não precisará atribuir uma animação a esse estado. Por exemplo, se o aplicativo host nunca chamar o [**método MoveTo,**](moveto-method.md) você poderá ignorar a criação e a atribuição de **Animações** de estado de movimentação.
 
 
 
 | Estado              | Exemplo de uso                                                                         |
 |--------------------|----------------------------------------------------------------------------------------|
-| **GesturingDown**  | Quando o método de animação [**GestureAt**](gestureat-method.md) é processado.          |
-| **GesturingLeft**  | Quando o método de animação [**GestureAt**](gestureat-method.md) é processado.          |
-| **GesturingRight** | Quando o método de animação [**GestureAt**](gestureat-method.md) é processado.          |
-| **GesturingUp**    | Quando o método de animação [**GestureAt**](gestureat-method.md) é processado.          |
+| **GesturingDown**  | Quando o [**método de animação GestureAt**](gestureat-method.md) é processado.          |
+| **GesturingLeft**  | Quando o [**método de animação GestureAt**](gestureat-method.md) é processado.          |
+| **GesturingRight** | Quando o [**método de animação GestureAt**](gestureat-method.md) é processado.          |
+| **GesturingUp**    | Quando o [**método de animação GestureAt**](gestureat-method.md) é processado.          |
 | **Audição**        | Quando o início da entrada falada é detectado.                                        |
-| **Ocultar**         | Quando o usuário ou o aplicativo oculta o caractere.                                  |
-| **IdlingLevel1**   | Quando o caractere começa o estado **deixar** .                                        |
-| **IdlingLevel2**   | Quando o caractere começa o segundo estado de nível **deixar** .                           |
-| **IdlingLevel3**   | Quando o caractere inicia o estado de nível de **deixar** final.                            |
-| **Detecta**      | Quando o caractere começa a escutar (o usuário primeiro pressiona a tecla de acesso de entrada de fala). |
-| **MovingDown**     | Quando o método de animação [**MoveTo**](moveto-method.md) é processado.                |
-| **MovingLeft**     | Quando o método de animação [**MoveTo**](moveto-method.md) é processado.                |
-| **MovingRight**    | Quando o método de animação [**MoveTo**](moveto-method.md) é processado.                |
-| **MovingUp**       | Quando o método de animação [**MoveTo**](moveto-method.md) é processado.                |
+| **Escondendo**         | Quando o usuário ou o aplicativo oculta o caractere.                                  |
+| **IdlingLevel1**   | Quando o caractere inicia o **estado de Idling.**                                        |
+| **IdlingLevel2**   | Quando o caractere inicia o segundo **estado de nível de Idling.**                           |
+| **IdlingLevel3**   | Quando o caractere inicia o estado final **do nível de Idling.**                            |
+| **Ouvir**      | Quando o caractere começa a escutar (o usuário pressiona pela primeira vez a tecla de tecla de entrada de fala). |
+| **MovingDown**     | Quando o [**método de animação MoveTo**](moveto-method.md) é processado.                |
+| **MovingLeft**     | Quando o [**método de animação MoveTo**](moveto-method.md) é processado.                |
+| **MovingRight**    | Quando o [**método de animação MoveTo**](moveto-method.md) é processado.                |
+| **MovingUp**       | Quando o [**método de animação MoveTo**](moveto-method.md) é processado.                |
 | **Mostrando**        | Quando o usuário ou o aplicativo mostra o caractere.                                  |
-| **Língua**       | Quando o método de animação de [**fala**](speak-method.md) é processado.                  |
+| **Falando**       | Quando o [**método de**](speak-method.md) animação Speak é processado.                  |
 
 
 
  
 
-### <a name="the-hearing-and-listening-states"></a>Os Estados de audição e de escuta
+### <a name="the-hearing-and-listening-states"></a>Os estados auditivos e de escuta
 
-A animação que você atribui ao estado de **escuta** é reproduzida quando o usuário pressiona a tecla de acesso Push a Talk para entrada de fala. Crie e atribua uma breve animação que torne a aparência do caractere cuidadosa. Da mesma forma, defina sua animação de **retorno** para ter uma duração curta para que o caractere reproduza sua animação de estado de **audição** quando o usuário fala. Uma animação de estado **audição** também deve ser breve e projetada para permitir que o usuário saiba que o caractere está ouvindo ativamente o que o usuário diz. As inclinações de cabeçalho ou outros pequenos gestos são apropriados. Para fornecer variabilidade natural, forneça várias animações de estado **auditivas** .
+A animação que você atribui ao **estado** De escuta é reproduzindo quando o usuário pressiona a tecla de tecla quente push-to-talk para entrada de fala. Crie e atribua uma animação curta que faça com que o caractere pareça insuntente. Da mesma forma, defina sua **animação** Return para  ter uma duração curta para que o caractere reproduza sua animação de estado auditivo quando o usuário fala. Uma **animação** de estado auditivo também deve ser breve e projetada para permitir que o usuário saiba que o caractere está escutando ativamente o que o usuário diz. Inclinações de cabeça ou outros gestos pequenos são apropriados. Para fornecer variabilidade natural, forneça várias **animações de** estado auditivo.
 
-### <a name="the-gesturing-states"></a>Os Estados gesturing
+### <a name="the-gesturing-states"></a>Os estados de gestação
 
-Você precisa criar e atribuir animações de estado **gesturing** somente se planeja usar o método [**GestureAt**](gestureat-method.md) . Animações de estado **gesturing** são executadas quando o Microsoft Agent processa uma chamada para o método **GestureAt** . Se você definir sobreposições de boca para suas animações de estado **gesturing** , o caractere poderá falar como gestos de ti.
+Você precisará criar e atribuir **animações de estado de gestação** somente se planeja usar o [**método GestureAt.**](gestureat-method.md) **Animações de** estado de gestão são reproduzidas quando o Microsoft Agent processa uma chamada para o **método GestureAt.** Se você definir sobreposições de boca para suas animações de estado de **Gestação,** o caractere poderá falar conforme ele faz gestos.
 
-Os serviços de animação determinam o local do caractere e sua relação com o local das coordenadas especificadas no método e executam uma animação apropriada. A direção do gesturing é sempre em relação ao caractere; por exemplo, **GestureRight** deve ser um gesto para o direito do caractere.
+Os serviços de animação determinam o local do caractere e sua relação com o local das coordenadas especificadas no método e reproduzem uma animação apropriada. A direção de gestação é sempre em relação ao caractere; por exemplo, **GestureRight** deve ser um gesto à direita do caractere.
 
-### <a name="the-showing-and-hiding-states"></a>Os Estados mostrando e ocultando
+### <a name="the-showing-and-hiding-states"></a>Os estados de exibição e ocultação
 
-Os Estados **mostrando** e **ocultação** desempenham as animações atribuídas quando o usuário ou o aplicativo host solicita a exibição ou ocultação do caractere. Esses Estados também definem adequadamente o estado **visível** do quadro de caracteres. Ao definir animações para esses Estados, tenha em mente que um caractere pode aparecer ou ser departe em qualquer local da tela. Como o usuário pode mostrar ou ocultar qualquer caractere, sempre há suporte para pelo menos uma animação para esses Estados.
+Os **estados Mostrando** e **Ocultando** reproduzem as animações atribuídas quando o usuário ou o aplicativo host solicita para mostrar ou ocultar o caractere. Esses estados também configuram adequadamente o estado Visível **do quadro de** caracteres. Ao definir animações para esses estados, tenha em mente que um caractere pode aparecer ou sair em qualquer local da tela. Como o usuário pode mostrar ou ocultar qualquer caractere, sempre dá suporte a pelo menos uma animação para esses estados.
 
-As animações que você atribui ao estado de **exibição** normalmente terminam com um quadro que contém a imagem de posição neutra do caractere. Por outro lado, **ocultar** animações de estado normalmente começa com a posição neutra. **Mostrar** e **ocultar** animações de estado pode incluir um quadro vazio no início ou no final, respectivamente, para fornecer uma transição do estado atual do caractere.
+Animações que você atribui ao **estado** Mostrando normalmente terminam com um quadro que contém a imagem de posição neutra do caractere. Por outro lado, **Ocultar** animações de estado normalmente começa com a posição neutra. **Exibir** e **ocultar** animações de estado pode incluir um quadro vazio no início ou no fim, respectivamente, para fornecer uma transição do estado atual do caractere.
 
-### <a name="the-idling-states"></a>Os Estados deixar
+### <a name="the-idling-states"></a>Os estados de Idling
 
-Os Estados **deixar** são progressivos. Os serviços de animação começam a usar as atribuições de nível 1 para o primeiro período ocioso e usam as animações de nível 2 para a segunda. Depois disso, o ciclo de ociosidade progride para as animações de nível 3 atribuídas e permanece nesse estado até ser cancelado, como quando uma nova solicitação de animação é iniciada.
+Os **estados de Idling** são progressivos. Os serviços de animação começam a usar as atribuições de Nível 1 para o primeiro período ocioso e usam as animações de Nível 2 para o segundo. Depois disso, o ciclo ocioso progride para as animações atribuídas ao Nível 3 e permanece nesse estado até ser cancelado, como quando uma nova solicitação de animação é iniciada.
 
-Crie animações para os Estados **deixar** para comunicar o estado do caractere, mas sem distrair o usuário. As animações devem refletir adequadamente a capacidade de resposta do caractere de maneiras sutis, mas claras. Por exemplo, glancing ou piscando são boas animações para atribuir ao estado **IdlingLevel1** . A leitura de animações funciona bem para o estado **IdlingLevel2** . Suspender ou ouvir música com fones de ouvido são bons exemplos de animações para atribuir ao estado **IdlingLevel3** . As animações que incluem muitos ou grandes movimentos não são adequadas para animações ociosas porque desenham a atenção do usuário. Como as animações de estado **deixar** são reproduzidas com frequência, forneça várias animações de estado **deixar** , especialmente para os Estados **IdlingLevel1** e **IdlingLevel2** .
+Projete animações para os **estados de Idling** comunicarem o estado do caractere, mas não para desviar o usuário. As animações devem refletir adequadamente a capacidade de resposta do caractere de maneiras sutis, mas claras. Por exemplo, olhar ao redor ou piscar são boas animações para atribuir ao **estado IdlingLevel1.** A leitura de animações funciona bem para o **estado IdlingLevel2.** Adormecendo ou escutando música com fones de ouvido são bons exemplos de animações a atribuir ao **estado IdlingLevel3.** Animações que incluem muitos ou grandes movimentos não são adequadas para animações ociosas porque chamam a atenção do usuário. Como as animações de estado de **Idling** são tocadas com frequência, forneça várias animações de estado de **Idling,** especialmente para os estados **IdlingLevel1** e **IdlingLevel2.**
 
-Observe que um aplicativo pode desativar o processamento de ociosidade automático para um caractere e gerenciar o próprio estado de **deixar** do caractere. Os Estados **deixar** do agente são projetados para ajudá-lo a evitar qualquer situação em que o caractere não tenha animação para reproduzir. Uma imagem de caractere que não é alterada após um breve período de tempo é como um aplicativo que exibe um ponteiro de espera por um longo tempo, o que se reduz da sensação de believability e interatividade. Manter a ilusão não leva muito: às vezes, apenas uma intermitência animada, uma respire visível ou uma mudança de corpo.
+Observe que um aplicativo pode desativar o processamento ocioso automático de um caractere e gerenciar o próprio estado **de Idling do** caractere. Os estados **de Idling do** Agente foram projetados para ajudá-lo a evitar qualquer situação em que o caractere não tenha animação para reproduzir. Uma imagem de caractere que não muda após um breve período de tempo é como um aplicativo exibindo um ponteiro de espera por um longo tempo, o que diminui a noção de inatividade e interatividade. Manter a ilusão não leva muito tempo: às vezes, apenas um piscar animado, um rosto visível ou uma mudança no corpo.
 
 ### <a name="the-speaking-state"></a>O estado de fala
 
-Os serviços de animação usam o estado de **fala** quando uma animação de fala não pode ser encontrada para a animação atual. Atribua uma animação de fala simples a esse estado. Por exemplo, você pode usar um único quadro que consiste na posição neutra do caractere com sobreposições de boca.
+Os serviços de animação usam **o estado De** fala quando uma animação de fala não pode ser encontrada para a animação atual. Atribua uma animação de fala simples a esse estado. Por exemplo, você pode usar um único quadro que consiste na posição neutra do caractere com sobreposições de boca.
 
-### <a name="the-moving-states"></a>Os Estados de movimentação
+### <a name="the-moving-states"></a>Os estados de movimentação
 
-Os Estados de **movimentação** são executados quando um aplicativo chama o método [**MoveTo**](moveto-method.md) . Os serviços de animação determinam qual animação deve ser reproduzida com base no local atual do caractere e nas coordenadas especificadas. A direção do movimento é baseada na posição do caractere. Portanto, a animação que você atribui à animação **MovingLeft** deve ser baseada na esquerda do caractere. Se você não usar o método **MoveTo** , poderá ignorar a criação e a atribuição de uma animação.
+Os **estados De** movimentação são reproduzidas quando um aplicativo chama o método [**MoveTo.**](moveto-method.md) Os serviços de animação determinam qual animação reproduzir com base no local atual do caractere e nas coordenadas especificadas. A direção de movimento é baseada na posição do caractere. Portanto, a animação que você atribui à **animação MovingLeft** deve ser baseada na esquerda do caractere. Se você não usar o método **MoveTo,** poderá ignorar a criação e a atribuição de uma animação.
 
-**Mover** animações de Estado deve animar o caractere em sua posição de movimentação. O último quadro dessa animação é exibido, pois o quadro do caractere é movido na tela. Não há suporte para animar o caractere enquanto seu quadro se move.
+**Mover** animações de estado deve animar o caractere para sua posição móvel. O último quadro dessa animação é exibido à medida que o quadro do caractere é movido na tela. Não há suporte para animar o caractere enquanto seu quadro se move.
 
 ### <a name="standard-animation-set"></a>Conjunto de animações padrão
 
@@ -137,7 +137,7 @@ A tabela a seguir lista as animações incluídas no conjunto de animações pad
 | **Lendo**                      | Quando o caractere lê algo, mas não pode aceitar entrada.                                              | As leituras de caractere de um pedaço de papel. Observação: essa animação faz um loop para alguns quadros intermediários que ocorrem depois que o caractere se move para uma posição apropriada.<br/>                                           |
 | **RestPose**                     | Quando o caractere se fala de sua posição neutra.                                                     | O caractere representa uma postura relaxada, mas cuidadosa.                                                                                                                                                                   |
 | 1º **triste**<sup>, 2</sup>            | Quando o caractere está desapontado com a opção do usuário.                                               | Caracteres tristes ou parecem desapontados.                                                                                                                                                                                |
-| **Pesquisa**                       | Quando o caractere procura algo.                                                                   | O caractere embaralha na gaveta do arquivo ou em outro contêiner procurando por algo.                                                                                                                                       |
+| **Pesquisar**                       | Quando o caractere procura algo.                                                                   | O caractere embaralha na gaveta do arquivo ou em outro contêiner procurando por algo.                                                                                                                                       |
 | **Procurar**                    | Quando o caractere está procurando informações especificadas pelo usuário.                                              | O caractere embaralha na gaveta do arquivo ou em outro contêiner procurando por algo. Observação: essa animação faz um loop para alguns quadros intermediários que ocorrem depois que o caractere se move para uma posição apropriada.<br/> |
 | **Mostrar**                         | Quando o caractere é iniciado ou retorna depois de ser Summoned.                                            | O caractere é exibido em uma assoprar de fumaça, passa ou percorre a tela.                                                                                                                                                    |
 | **StartListening**<sup>1, 2</sup> | Quando o caractere está ouvindo.                                                                         | O caractere é colocado em Ear.                                                                                                                                                                                            |

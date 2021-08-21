@@ -16,12 +16,12 @@ api_type:
 ms.topic: reference
 ms.date: 01/18/2018
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 52e405685534c0dbae7c8c205dc5e114a3dbe68b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cdca86cb374eded0eabcc1d623d2218a6dc1f4cd5613a18e16b4ec9ab93156b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118811247"
 ---
 # <a name="ideliveryoptimizationjob2getproperty-method"></a>Método IDeliveryOptimizationJob2:: GetProperty
 
@@ -54,22 +54,22 @@ O valor da propriedade resultante, armazenado em um tipo VARIANT.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna os valores de HRESULT a seguir.
 
 | Código de retorno                  | Descrição          |
 |------------------------------|----------------------|
-| **S_OK**                     | Sucesso              |
+| **S_OK**                     | Êxito              |
 | **DO_E_UNKNOWN_PROPERTY_ID** | ID de propriedade desconhecida. |
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Valor |
 |---------------------------|----------------------------------------------------------------------------------|
-| Cliente mínimo com suporte  | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]                                   |
-| Servidor mínimo com suporte  | Windows Server, \[ somente aplicativos da área de trabalho da versão 1709\]                               |
-| parâmetro                    | Deliveryoptimization. h                                                           |
+| Cliente mínimo com suporte  | Windows 10, \[ somente aplicativos da área de trabalho da versão 1803\]                                   |
+| Servidor mínimo com suporte  | Windows Servidor, versão 1709 \[ aplicativos da área de trabalho\]                               |
+| Cabeçalho                    | Deliveryoptimization. h                                                           |
 | INSERI                       | DeliveryOptimization. idl                                                         |
 | Biblioteca                   | Dosvc. lib                                                                        |
 | DLL                       | Dosvc.dll                                                                        |

@@ -1,9 +1,9 @@
 ---
-title: Enumeração VMDriveBusType (VPCCOMInterfaces. h)
+title: Enumeração VMDriveBusType (VPCCOMInterfaces.h)
 description: Especifica o tipo de barramento.
 ms.assetid: 7e0926f3-8218-49c9-8d3a-27214c111a77
 keywords:
-- VMDriveBusType de enumeração Virtual PC
+- Pc Virtual de enumeração VMDriveBusType
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c53b8da4b9c7a6943f083eec62a144dcfb5bd68
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ee106c42267397f8dae66b1ed431b5d6fa3c1047b7ace6fd9a44bd81960be2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056414"
 ---
 # <a name="vmdrivebustype-enumeration"></a>Enumeração VMDriveBusType
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Especifica o tipo de barramento.
 
@@ -51,14 +51,14 @@ Nenhum tipo de barramento.
 
 </dd> <dt>
 
-<span id="vmDriveBusType_IDE"></span><span id="vmdrivebustype_ide"></span><span id="VMDRIVEBUSTYPE_IDE"></span>**vmDriveBusType \_ IDE**
+<span id="vmDriveBusType_IDE"></span><span id="vmdrivebustype_ide"></span><span id="VMDRIVEBUSTYPE_IDE"></span>**VmDriveBusType \_ IDE**
 </dt> <dd>
 
 Tipo de barramento IDE.
 
 </dd> <dt>
 
-<span id="vmDriveBusType_SCSI"></span><span id="vmdrivebustype_scsi"></span><span id="VMDRIVEBUSTYPE_SCSI"></span>**vmDriveBusType \_ SCSI**
+<span id="vmDriveBusType_SCSI"></span><span id="vmdrivebustype_scsi"></span><span id="VMDRIVEBUSTYPE_SCSI"></span>**VmDriveBusType \_ SCSI**
 </dt> <dd>
 
 Tipo de barramento SCSI.
@@ -71,11 +71,11 @@ Tipo de barramento SCSI.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 

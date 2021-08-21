@@ -4,16 +4,16 @@ ms.assetid: e5892e96-b6ad-447a-9627-b44fc6f1b27a
 title: Objeto de grupo do portal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c915e76debac959a1dc7684d87c9770033b4aa34
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9e1021d74a3c8a6a612372db56952be1dabe5380e8e4a49b1b83c5ae2fe54754
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057954"
 ---
 # <a name="portal-group-object"></a>Objeto de grupo do portal
 
-\[A partir do Windows 8 e do Windows Server 2012, a interface com do [serviço de disco virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de armazenamento do Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
+\[a partir do Windows 8 e Windows Server 2012, a interface COM do [serviço de disco Virtual](virtual-disk-service-portal.md) é substituída pela [API de gerenciamento de Armazenamento Windows](/previous-versions/windows/desktop/stormgmt/windows-storage-management-api-portal).\]
 
 Um objeto de grupo de portais modela um grupo de portal iSCSI que está contido em um destino iSCSI.
 

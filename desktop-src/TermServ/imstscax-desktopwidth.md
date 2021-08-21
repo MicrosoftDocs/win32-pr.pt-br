@@ -64,12 +64,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16cd1391c6aeb27d9ec0f87317b06e9084337fbb
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ca982303208bb2badecf210c9590f627a7b3b57c5acd9ecd7f8fee0bbb70ec93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119058834"
 ---
 # <a name="imstscaxdesktopwidth-property"></a>IMsTscAx: Propriedade esktopWidth de:D
 
@@ -102,7 +102,7 @@ Retornar **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-A definição da propriedade **DesktopWidth** é opcional, mas deve ser definida antes de chamar o método [**Connect**](imstscax-connect.md) . Se uma largura de área de trabalho não for especificada ou for definida como zero, a largura da área de trabalho será definida com a largura do controle. Os valores mínimo e máximo dependem da versão do sistema operacional do cliente de Área de Trabalho Remota.
+a definição da propriedade **DesktopWidth** é opcional, mas deve ser definida antes de chamar o método [**Conexão**](imstscax-connect.md) . Se uma largura de área de trabalho não for especificada ou for definida como zero, a largura da área de trabalho será definida com a largura do controle. Os valores mínimo e máximo dependem da versão do sistema operacional do cliente de Área de Trabalho Remota.
 
 <dl> <dt>
 

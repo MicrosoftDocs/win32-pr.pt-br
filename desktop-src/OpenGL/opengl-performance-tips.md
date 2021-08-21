@@ -7,12 +7,12 @@ keywords:
 - OpenGL, práticas recomendadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7e5b6fa33f8d6841d0fd47d1a655ef99facc84e
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0fe91602d4a30767ed1e66e62d33445bf37152ede2cf9f8450e056f577cb3045
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118936826"
 ---
 # <a name="opengl-performance-tips"></a>Dicas de desempenho do OpenGL
 
@@ -40,9 +40,9 @@ Essas práticas de programação otimizam o desempenho do seu aplicativo:
 -   Evite fazer alterações no modo redundante, como definir a cor com o mesmo valor entre cada vértice de um polígono com sombreamento simples.
 -   Ao desenhar ou copiar imagens, desabilite as operações de rasterização e por fragmento para otimizar os recursos. O OpenGL pode aplicar texturas a imagens de pixel.
 
- 
+ 
 
- 
+ 
 
 
 

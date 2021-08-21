@@ -12,18 +12,18 @@ keywords:
 - tipos de controle, AppBar
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 151aecc0f5f97878e10b59b091c4c59ec98cb26d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 7067e73d9f38ba62893d6ba2746f8f84c846daf1a90f63b6e72bd09337f47a1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118826441"
 ---
 # <a name="appbar-control-type"></a>Tipo de controle AppBar
 
 Este tópico fornece informações sobre o suporte de automação da interface do usuário da Microsoft para o tipo de controle **AppBar** .
 
-Uma barra de aplicativo é um elemento de interface do usuário que apresenta navegação, comandos e ferramentas para ele. Para aplicativos da Windows Store, as barras de aplicativos para aplicativos podem ser exibidas pressionando-se a tecla Windows + Z.
+Uma barra de aplicativo é um elemento de interface do usuário que apresenta navegação, comandos e ferramentas para ele. para aplicativos da Windows Store, as barras de aplicativos para aplicativos podem ser exibidas pressionando Windows tecla + Z.
 
 As seções a seguir definem a estrutura de árvore de automação da interface do usuário, propriedades, padrões de controle e eventos necessários para o tipo de controle **AppBar** .
 
@@ -62,7 +62,7 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 </ul></li>
 </ul></td>
 <td><ul>
-<li>Não aplicável
+<li>Não se aplica
 <ul>
 <li>Botão (0 ou muitos)</li>
 <li>Outros controles (0 ou muitos)</li>
@@ -74,7 +74,7 @@ A tabela a seguir descreve um controle típico e a exibição de conteúdo da á
 
 
 
- 
+ 
 
 ## <a name="relevant-properties"></a>Propriedades relevantes
 
@@ -97,7 +97,7 @@ A tabela a seguir lista as propriedades de automação da interface do usuário 
 
 
 
- 
+ 
 
 ## <a name="required-events"></a>Eventos necessários
 
@@ -115,7 +115,7 @@ A tabela a seguir lista os eventos de automação da interface do usuário aos q
 
 
 
- 
+ 
 
 ## <a name="relevant-events"></a>Eventos relevantes
 
@@ -131,7 +131,7 @@ A tabela a seguir lista os eventos de automação da interface do usuário que s
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -155,6 +155,6 @@ A tabela a seguir lista os eventos de automação da interface do usuário que s
 [**Objeto WinJS. UI. AppBar**](/previous-versions/windows/apps/br229670(v=win.10))
 </dt> </dl>
 
- 
+ 
 
- 
+ 

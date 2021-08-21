@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: f08dc8d80a9d62a0cb837e4d4d1fd5e60e025c5f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 57be54abcf6d58da331334dc5af8c7ea8902da35c33b8d4897990b733a8067a9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922848"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038974"
 ---
 # <a name="jet_indexidinequality-operator"></a>JET_INDEXID. Operador de desigualdade
 
-Determina se duas instâncias especificadas do JET_INDEXID não são iguais.
+Determina se duas instâncias especificadas do JET_INDEXID são iguais.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,29 +64,29 @@ public static bool operator !=(
 
 #### <a name="parameters"></a>Parâmetros
 
-  - lhs  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
     
     A primeira instância a ser comparada.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_INDEXID](./jet-indexid-structure2.md)  
     
     A segunda instância a ser comparada.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True se as duas instâncias não forem iguais.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True se as duas instâncias não são iguais.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_INDEXID](./jet-indexid-structure2.md)
+[JET_INDEXID estrutura](./jet-indexid-structure2.md)
 
-[Membros do JET_INDEXID](./jet-indexid-members.md)
+[JET_INDEXID membros](./jet-indexid-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

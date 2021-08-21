@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: classe de JET_INDEX_RANGE'
-title: Classe JET_INDEX_RANGE (Microsoft. ISAM. ESENT. Interop. Windows8)
+description: 'Saiba mais sobre: JET_INDEX_RANGE classe'
+title: JET_INDEX_RANGE classe (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: JET_INDEX_RANGE class
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_index_range(v=EXCHG.10)
@@ -24,24 +24,24 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 09f281e4061a993188e249ca4b341485e81be2ef
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e7fcc53a5387a7be4456c3d77d32210657053a52f8efb87e5ef0ed457ee12d3a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663032"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118980256"
 ---
-# <a name="jet_index_range-class"></a>Classe JET_INDEX_RANGE
+# <a name="jet_index_range-class"></a>JET_INDEX_RANGE classe
 
-Contém a definição para [JetPrereadIndexRanges (JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md).
+Contém a [definição para JetPrereadIndexRanges(JET_SESID, JET_TABLEID, \[ \] , Int32, Int32, Int32, \[ \] , PrereadIndexRangesGrbit)](./windows8api.jetprereadindexranges-method.md).
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
   Microsoft.Isam.Esent.Interop.Windows8.JET_INDEX_RANGE  
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -64,6 +64,6 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do JET_INDEX_RANGE](./jet-index-range-members.md)
+[JET_INDEX_RANGE membros](./jet-index-range-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

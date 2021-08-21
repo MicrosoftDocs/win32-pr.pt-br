@@ -4,12 +4,12 @@ description: Finaliza uma instrução de loop.
 ms.assetid: 0BEFADF4-036E-4FDA-9681-10965D6BA9FC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 655fa6addd19a6ce9f6f6b20a2677ef43cb8b751
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 3c266ea3dc4a4b1feba1264c20f31eb85e910ad6d69e63a42832ee9bb88082c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365178"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119119500"
 ---
 # <a name="endloop-sm4---asm"></a>ENDLOOP (sm4-ASM)
 
@@ -22,7 +22,7 @@ Finaliza uma instrução de loop.
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -50,7 +50,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
- 
+ 
 
 ## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
@@ -69,7 +69,7 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -78,9 +78,9 @@ Essa função tem suporte nos seguintes modelos de sombreador.
 [Assembly do Shader Model 4 (DirectX HLSL)](dx-graphics-hlsl-sm4-asm.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f3747c4a1cfb939e6f56f71f49b170b5f48012b0
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f8e2b186f1197a0762521505877e7d5fbadc84b86a8ec158816857a062fa51d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753634"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119021664"
 ---
 # <a name="msmq-receive-journal-extended-right"></a>MSMQ-recebimento-diário estendido à direita
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d3a59b8b0eba80dd832b3967b5e626642684f0c1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c1cd7aaf2035251c503d85683f9aa9e9fe7b7f6285084a97133f0573ba41d79c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118848413"
 ---
 # <a name="isdbreachable-method-of-the-win32_sessionbrokerserviceproperties-class"></a>Método IsDbReachable da classe Win32 \_ SessionBrokerServiceProperties
 
@@ -57,7 +57,7 @@ A cadeia de conexão para o banco de dados.
 
 Cadeia de conexão secundária para o banco de dados central.
 
-**Windows server 2012 R2 e Windows server 2012:** Esse parâmetro não está disponível antes do Windows Server 2016.
+**Windows Server 2012 R2 e Windows Server 2012:** Esse parâmetro não está disponível antes de Windows Server 2016.
 
 </dd> <dt>
 
@@ -66,7 +66,7 @@ Cadeia de conexão secundária para o banco de dados central.
 
 Nome do agente ativo.
 
-**Windows server 2012 R2 e Windows server 2012:** Esse parâmetro não está disponível antes do Windows Server 2016.
+**Windows Server 2012 R2 e Windows Server 2012:** Esse parâmetro não está disponível antes de Windows Server 2016.
 
 </dd> </dl>
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 029128133e8e5003d2b3b1905ea597eb04ce7179
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 03ba91db79119515d70bc52e170307f4a2433a6680975d953a876d210b089797
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105748326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119552316"
 ---
 # <a name="ms-ds-managedpasswordid-attribute"></a>atributo ms-DS-ManagedPasswordId
 
@@ -52,8 +52,8 @@ Esse atributo construído contém o identificador de chave para os dados de senh
 |------------------------|---------------------------------------------------------------------------------------------|
 | ID do link                | \-                                                                                          |
 | MAPI-Id                | \-                                                                                          |
-| System-Only            | True                                                                                        |
-| É de valor único       | True                                                                                        |
+| System-Only            | Verdadeiro                                                                                        |
+| É de valor único       | Verdadeiro                                                                                        |
 | É indexado             | Falso                                                                                       |
 | No catálogo global      | Falso                                                                                       |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                |

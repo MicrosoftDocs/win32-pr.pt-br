@@ -1,11 +1,11 @@
 ---
-title: Propriedade IVMVirtualPC MaximumNetworkAdaptersPerVM (VPCCOMInterfaces. h)
-description: Número máximo de interfaces de rede por máquina virtual.
+title: Propriedade MaximumNetworkAdaptersPerVM de IVMVirtualPC (VPCCOMInterfaces.h)
+description: Número máximo de interfaces de redes por máquina virtual.
 ms.assetid: 92da4958-5a67-422e-a6bd-68cabf1835ab
 keywords:
-- Propriedade MaximumNetworkAdaptersPerVM Virtual PC
-- Propriedade MaximumNetworkAdaptersPerVM Virtual PC, interface IVMVirtualPC
-- IVMVirtualPC interface virtual PC, Propriedade MaximumNetworkAdaptersPerVM
+- Propriedade MaximumNetworkAdaptersPerVM Pc Virtual
+- Propriedade MaximumNetworkAdaptersPerVM pc virtual, interface IVMVirtualPC
+- INTERFACE IVMVirtualPC Pc Virtual , propriedade MaximumNetworkAdaptersPerVM
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0797775038440c566fa7a3397b05632af839a341
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4d71098da6f5f25013d4a5312c37a990d5c77da5a0bfdedd8f3888ae4b752acd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085120"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118842772"
 ---
-# <a name="ivmvirtualpcmaximumnetworkadapterspervm-property"></a>Propriedade IVMVirtualPC:: MaximumNetworkAdaptersPerVM
+# <a name="ivmvirtualpcmaximumnetworkadapterspervm-property"></a>Propriedade IVMVirtualPC::MaximumNetworkAdaptersPerVM
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-Recupera o número máximo de interfaces de rede por máquina virtual.
+Recupera o número máximo de interfaces de redes por máquina virtual.
 
 Esta propriedade é somente para leitura.
 
@@ -54,8 +54,8 @@ O número máximo de interfaces de rede por máquina virtual.
 | Nome/valor                                                                                                                                                                           | Significado                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | <dl> <dt>S \_ OK</dt> <dt>0</dt> </dl>                                              | A operação foi bem-sucedida.<br/>                                                        |
-| <dl> <dt>E \_ </dt> <dt>0X80004003</dt> de ponteiro </dl>                                | O parâmetro é **NULL**.<br/>                                                           |
-| <dl> <dt>VM \_ E 0xA0040951 de \_ \_ virtualização de hardware \_ desabilitada</dt> <dt></dt> </dl> | O processador não oferece suporte a extensões de corre (virtualização acelerada por hardware).<br/> |
+| <dl> <dt>E \_ PONTEIRO</dt> <dt>0x80004003</dt> </dl>                                | O parâmetro é **NULL.**<br/>                                                           |
+| <dl> <dt>VM \_ VIRTUALIZAÇÃO \_ DE HARDWARE E \_ \_ DESABILITADA</dt> <dt>0XA0040951</dt> </dl> | O processador não dá suporte a extensões de HAV (Virtualização Acelerada de Hardware).<br/> |
 
 
 
@@ -65,12 +65,12 @@ O número máximo de interfaces de rede por máquina virtual.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
-| IID<br/>                      | IID \_ IVMVirtualPC é definido como 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
+| IID<br/>                      | IID IVMVirtualPC é definido como \_ 236ba0d9-a24a-4292-a132-27c1421dfd01<br/>               |
 
 
 

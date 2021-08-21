@@ -1,6 +1,6 @@
 ---
 description: 'Saiba mais sobre: JET_RECSIZE. Operador de igualdade'
-title: JET_RECSIZE. Operador de igualdade (Microsoft. ISAM. ESENT. Interop. vista)
+title: JET_RECSIZE. Operador de igualdade (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: 'Equality operator '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE.op_Equality(Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE,Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.jet_recsize.op_equality(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2f95ee6975a71e40d702b1f68c47ad6831881ffa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c7b0c34f94d0c59f30283cca3315466ed75ad489719a5d883f7597dd3614fb7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089896"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038744"
 ---
 # <a name="jet_recsizeequality-operator"></a>JET_RECSIZE. Operador de igualdade
 
-Determina se duas instâncias especificadas do JET_RECSIZE são iguais.
+Determina se duas instâncias especificadas de JET_RECSIZE são iguais.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -64,29 +64,29 @@ public static bool operator ==(
 
 #### <a name="parameters"></a>Parâmetros
 
-  - lhs  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.vista.JET_RECSIZE](./jet-recsize-structure2.md)  
+  - Lhs  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE](./jet-recsize-structure2.md)  
     
     A primeira instância a ser comparada.
 
 <!-- end list -->
 
   - rhs  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.vista.JET_RECSIZE](./jet-recsize-structure2.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.Vista.JET_RECSIZE](./jet-recsize-structure2.md)  
     
     A segunda instância a ser comparada.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. Boolean](/dotnet/api/system.boolean)  
-True se as duas instâncias forem iguais.  
+Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+True se as duas instâncias são iguais.  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Estrutura de JET_RECSIZE](./jet-recsize-structure2.md)
+[JET_RECSIZE estrutura](./jet-recsize-structure2.md)
 
-[Membros do JET_RECSIZE](./jet-recsize-members.md)
+[JET_RECSIZE membros](./jet-recsize-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

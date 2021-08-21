@@ -16,12 +16,12 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 78176a6966f379240b5b7edd1ef5b73d7fa75b3f
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 91d20477f83ec79c6ae6095e81810c98454f9c26521eda995c919867b3e3ac12
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953805"
 ---
 # <a name="cseekingpassthruinit-method"></a>Método t CSeekingPassThru.Ini
 
@@ -57,7 +57,7 @@ Ponteiro para a interface [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um dos valores **HRESULT** mostrados na tabela a seguir.
 
@@ -83,7 +83,7 @@ Se o valor de *bSupportRendering* for **true**, esse método criará uma instân
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Seekpt. h (incluir fluxos. h)</dt> </dl>                                                                                    |
+| parâmetro<br/>  | <dl> <dt>Seekpt. h (incluir Fluxos. h)</dt> </dl>                                                                                    |
 | Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
 
 

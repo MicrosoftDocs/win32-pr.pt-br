@@ -1,9 +1,9 @@
 ---
-title: PLAYLIST. dropDownImage
-description: O atributo dropDownImage especifica ou recupera o nome da imagem usada para o botão de lista suspensa que é exibido na borda direita da lista suspensa.
+title: PLAYLIST.dropDownImage
+description: O atributo dropDownImage especifica ou recupera o nome da imagem usada para o botão de lista suspenso exibido na borda direita da lista suspenso.
 ms.assetid: 92454a8a-1688-4b5d-887d-6847f4232d87
 keywords:
-- PLAYLIST. dropDownImage Windows Media Player
+- PLAYLIST.dropDownImage Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f583fb0cb7b10bd56c19a3863649ac750f5b254a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: b3173462cc7b055639a685917b87f1560adf5eabc8d0d7678788fa6a6c72129d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765758"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054204"
 ---
-# <a name="playlistdropdownimage"></a>PLAYLIST. dropDownImage
+# <a name="playlistdropdownimage"></a>PLAYLIST.dropDownImage
 
-O atributo **dropDownImage** especifica ou recupera o nome da imagem usada para o botão de lista suspensa que é exibido na borda direita da lista suspensa.
+O **atributo dropDownImage** especifica ou recupera o nome da imagem usada para o botão de lista suspenso exibido na borda direita da lista suspenso.
 
 ``` syntax
         elementID.dropDownImage
@@ -29,11 +29,11 @@ O atributo **dropDownImage** especifica ou recupera o nome da imagem usada para 
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é uma **cadeia de caracteres** de leitura/gravação que contém o nome de um arquivo de imagem. Não tem nenhum valor padrão.
+Esse atributo é uma cadeia de caracteres **de** leitura/gravação que contém o nome de um arquivo de imagem. Não tem nenhum valor padrão.
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo oferece suporte a arquivos PNG, JPG, BMP e GIF. Se a imagem for um arquivo BMP de 8 bits, seus valores de matiz e de saturação poderão ser alterados dinamicamente usando os atributos **hueShift** e **saturação** .
+Esse atributo dá suporte a arquivos PNG, JPG, BMP e GIF. Se a imagem for um arquivo BMP de 8 bits, seus valores de matiz e saturação poderão ser alterados dinamicamente usando os atributos **hueShift** **e saturação.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,7 +41,7 @@ Esse atributo oferece suporte a arquivos PNG, JPG, BMP e GIF. Se a imagem for um
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 
@@ -52,13 +52,13 @@ Esse atributo oferece suporte a arquivos PNG, JPG, BMP e GIF. Se a imagem for um
 [**Elemento PLAYLIST**](playlist-element.md)
 </dt> <dt>
 
-[**PLAYLIST. dropDownBackgroundImage**](playlist-dropdownbackgroundimage.md)
+[**PLAYLIST.dropDownBackgroundImage**](playlist-dropdownbackgroundimage.md)
 </dt> <dt>
 
-[**PLAYLIST. hueShift**](playlist-hueshift.md)
+[**PLAYLIST.hueShift**](playlist-hueshift.md)
 </dt> <dt>
 
-[**PLAYLIST. saturação**](playlist-saturation.md)
+[**PLAYLIST.saturação**](playlist-saturation.md)
 </dt> </dl>
 
  

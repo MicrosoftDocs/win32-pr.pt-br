@@ -3,7 +3,7 @@ title: Mensagem de UDM_SETRANGE32 (commctrl. h)
 description: Define o intervalo de 32 bits de um controle acima-abaixo.
 ms.assetid: 6167db8f-a823-44d3-a515-888b6d1a39c2
 keywords:
-- Controles de UDM_SETRANGE32 de mensagens do Windows
+- controles de Windows de mensagem de UDM_SETRANGE32
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 80de7c9583a10abe7c62ec5a074dcfa91a59cc7c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f5d98a55f503ebc194a00a65ff207aaed4a3a20d614b6416b4f6049e342df4f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499536"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118957725"
 ---
 # <a name="udm_setrange32-message"></a>\_Mensagem de SETRANGE32 UDM
 
@@ -43,7 +43,7 @@ Valor inteiro assinado que representa o novo limite superior do intervalo de con
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor retornado para esta mensagem não é usado.
 
@@ -53,9 +53,9 @@ O valor retornado para esta mensagem não é usado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

@@ -4,18 +4,18 @@ ms.assetid: 3a4b925a-4fb4-4189-a571-8083454fed0e
 title: Escolhendo um codec de vídeo (Microsoft Media Foundation)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9186c7e7e60f5822ec2e50e3e5c7e16e96b91839
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b560666ddeebb88fc3bb720cbc9f1be26308e7ecd8a4ad872fbb1f0991826fe2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164216"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035364"
 ---
 # <a name="choosing-a-video-codec-microsoft-media-foundation"></a>Escolhendo um codec de vídeo (Microsoft Media Foundation)
 
-O codificador do Windows Media Video 9 dá suporte a três categorias de saída codificada: perfil principal, perfil avançado e imagem. A categoria de perfil principal fornece compactação de vídeo geral para conteúdo de vídeo complexo, como filmes ou vídeos de música. Os recursos do perfil principal fornecem uma ampla gama de configurações de codificação. Você pode usar o perfil principal para criar vídeo com taxas de bits muito baixas para entrega em dispositivos portáteis ou, na outra extremidade do espectro, você pode usá-lo para criar vídeo de alta definição para cinema digital.
+O codificador Windows Media Video 9 dá suporte a três categorias de saída codificada: Perfil Principal, Perfil Avançado e Imagem. A categoria Perfil Principal fornece compactação geral de vídeo para conteúdo de vídeo complexo, como filmes ou vídeos de música. Os recursos do Perfil Principal fornecem uma ampla variedade de configurações de codificação. Você pode usar o Perfil Principal para criar vídeo com taxas de bits muito baixas para entrega em dispositivos portáteis ou, na outra extremidade do espectro, você pode usá-lo para criar vídeo de alta definição para o ambiente digital.
 
-A ênfase dos algoritmos de codificação no perfil principal é o conteúdo de vídeo dinâmico, mas eles são adequados para outros conteúdos de vídeo também. O perfil principal deve ser sua categoria padrão para conteúdo de vídeo. Para atender a necessidades específicas, você pode usar a categoria de perfil avançado, a categoria de imagem ou um codificador separado chamado de codificador de tela do Windows Media Video 9. A tabela a seguir lista as quatro opções.
+A ênfase dos algoritmos de codificação no Perfil Principal está no conteúdo de vídeo dinâmico, mas eles também são adequados para outros conteúdos de vídeo. O Perfil Principal deve ser sua categoria padrão para conteúdo de vídeo. Para atender às necessidades específicas, você pode usar a categoria Perfil Avançado, a categoria Imagem ou um codificador separado chamado codificador de tela Windows Media Video 9. A tabela a seguir lista as quatro opções.
 
 
 
@@ -29,22 +29,22 @@ A ênfase dos algoritmos de codificação no perfil principal é o conteúdo de 
 <tbody>
 <tr class="odd">
 <td>Codificação de vídeo de uso geral</td>
-<td><a href="windowsmediavideo9encoder.md">Codificador do Windows Media Video 9</a><dl> Perfil Principal<br />
+<td><a href="windowsmediavideo9encoder.md">Windows Codificador de Vídeo de Mídia 9</a><dl> Perfil Principal<br />
 </dl></td>
 </tr>
 <tr class="even">
-<td>Codificando vídeo de alta definição ou vídeo que está de acordo com o padrão SMPTE do perfil avançado VC-1</td>
-<td><a href="windowsmediavideo9encoder.md">Codificador do Windows Media Video 9</a><dl> Perfil avançado<br />
+<td>Vídeo ou vídeo de alta definição de codificação que está em conformidade com o padrão SMPTE de Perfil Avançado vc-1</td>
+<td><a href="windowsmediavideo9encoder.md">Windows Codificador de Vídeo de Mídia 9</a><dl> Perfil Avançado<br />
 </dl></td>
 </tr>
 <tr class="odd">
-<td>Convertendo imagens de bitmap em vídeo dinâmico</td>
-<td><a href="windowsmediavideo9encoder.md">Codificador do Windows Media Video 9</a><dl> Imagem<br />
+<td>Convertendo imagens bitmapped em vídeo dinâmico</td>
+<td><a href="windowsmediavideo9encoder.md">Windows Codificador de Vídeo de Mídia 9</a><dl> Imagem<br />
 </dl></td>
 </tr>
 <tr class="even">
 <td>Codificação de vídeo de aplicativo de computador (captura de tela) ou outro vídeo altamente estático</td>
-<td><a href="windowsmediavideo9screenencoder.md"><strong>Codificador de tela do Windows Media Video 9</strong></a></td>
+<td><a href="windowsmediavideo9screenencoder.md"><strong>Windows Codificador de tela do Vídeo de Mídia 9</strong></a></td>
 </tr>
 </tbody>
 </table>

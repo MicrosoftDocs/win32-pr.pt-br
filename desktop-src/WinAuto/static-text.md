@@ -4,12 +4,12 @@ description: Os controles de texto estáticos fornecem uma maneira conveniente d
 ms.assetid: 2c4b29bc-54e6-4c96-93a3-1fcb96d68269
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f35581a9b305f28782d8faeac81105afb0d5147
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: da892a102caa8a1af1729bdb4fc2258f461828adf1f7622e8ff5abf8a2a0bc18
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052484"
 ---
 # <a name="static-text-msaa-ui-element-reference"></a>Texto estático (referência de elemento de interface do usuário do MSAA)
 
