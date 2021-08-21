@@ -4,11 +4,11 @@ description: Essa propriedade não é usada. | Propriedade IMsRdpClientAdvancedS
 ms.assetid: a027d8d7-994f-4b24-8c46-18651c8e200b
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade RedirectDirectX
-- Propriedade RedirectDirectX Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade RedirectDirectX
-- Propriedade RedirectDirectX Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade RedirectDirectX
+- Propriedade RedirectDirectX Serviços de Área de Trabalho Remota
+- A propriedade RedirectDirectX Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade RedirectDirectX
+- A propriedade RedirectDirectX Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade RedirectDirectX
 topic_type:
 - apiref
 api_name:
@@ -24,20 +24,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 68f7da3ecea0c5a5a77a45b48ff24038a5517dc1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 4fb3b9db5badb8fb313d95cf04dc65681ff3f380dc1381e8b052ed7f2dee5c02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103837805"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130171"
 ---
-# <a name="imsrdpclientadvancedsettings7redirectdirectx-property"></a>Propriedade IMsRdpClientAdvancedSettings7:: RedirectDirectX
+# <a name="imsrdpclientadvancedsettings7redirectdirectx-property"></a>Propriedade IMsRdpClientAdvancedSettings7::RedirectDirectX
 
 Essa propriedade não é usada.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -58,7 +58,7 @@ Essa propriedade não é usada.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Essa propriedade não é usada. O método setter sempre retorna **S \_ false** e o método getter sempre retorna **E \_ NOTIMPL**.
+Essa propriedade não é usada. O método setter sempre retorna **S \_ FALSE** e o método getter sempre retorna **E \_ NOTIMPL.**
 
 ## <a name="requirements"></a>Requisitos
 

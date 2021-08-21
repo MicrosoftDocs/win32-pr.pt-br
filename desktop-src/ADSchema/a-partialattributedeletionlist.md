@@ -122,10 +122,10 @@ Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Verdadeiro                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -143,10 +143,10 @@ Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Verdadeiro                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -164,10 +164,10 @@ Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Verdadeiro                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -185,10 +185,10 @@ Rastreia o estado de replicação interno de réplicas parciais (ou seja, em GCs
 | ID do link                | \-                              |
 | MAPI-Id                | \-                              |
 | System-Only            | Verdadeiro                            |
-| É de valor único       | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Verdadeiro                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Verdadeiro                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

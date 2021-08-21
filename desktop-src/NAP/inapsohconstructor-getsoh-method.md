@@ -1,11 +1,11 @@
 ---
-title: Método INapSoHConstructor GetSoH (NapProtocol. h)
+title: Método GetSoHConstructor INapSoH (NapProtocol.h)
 description: Recupera o pacote SoHRequest ou SoHResponse construído.
 ms.assetid: 402c72fd-9e23-453a-8c95-57615295e056
 keywords:
-- Método GetSoH NAP
+- NAP do método GetSoH
 - Método GetSoH NAP, interface INapSoHConstructor
-- INapSoHConstructor interface NAP, método GetSoH
+- Interface INapSoHConstructor NAP, método GetSoH
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 066257aadf0ed14816efec06936d4b070087159f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d3d411d57ae77a1e5bf8c04ca0d9d980a9c33e9fcf15eb05f157ddeda98711c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085492"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133819"
 ---
-# <a name="inapsohconstructorgetsoh-method"></a>Método INapSoHConstructor:: GetSoH
+# <a name="inapsohconstructorgetsoh-method"></a>Método INapSoHConstructor::GetSoH
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método **INapSoHConstructor:: GetSoH** recupera o pacote SoHRequest ou SoHResponse construído.
+O **método INapSoHConstructor::GetSoH** recupera o pacote SoHRequest ou SoHResponse construído.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,16 +47,16 @@ HRESULT GetSoH(
 
 <dl> <dt>
 
-*soh* \[ fora\]
+*soh* \[ out\]
 </dt> <dd>
 
-Um ponteiro para um ponteiro para o pacote [**SoHRequest**](/windows/win32/api/naptypes/ns-naptypes-soh) ou **SoHResponse** construído.
+Um ponteiro para um ponteiro para o pacote [**SoHRequest ou**](/windows/win32/api/naptypes/ns-naptypes-soh) **SoHResponse** construído.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Outros códigos de erro específicos de COM também podem ser retornados.
+Outros códigos de erro específicos do COM também podem ser retornados.
 
 
 
@@ -64,7 +64,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>           | Operação concluída com êxito.<br/>                                   |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl> | Erro de permissões, acesso negado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | O limite de recursos do sistema não pôde executar a operação.<br/> |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>  | Limite de recursos do sistema, não foi possível executar a operação.<br/> |
 
 
 
@@ -76,10 +76,10 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 
 

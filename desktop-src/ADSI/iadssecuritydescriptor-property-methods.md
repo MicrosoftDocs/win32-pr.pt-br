@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADsSecurityDescriptor (IADs. h)
-description: Os métodos de propriedade da interface IADsSecurityDescriptor obtêm ou definem as propriedades descritas na tabela a seguir. Para obter mais informações, consulte interface Property Methods.
+title: Métodos de propriedade IADsSecurityDescriptor (Iads.h)
+description: Os métodos de propriedade da interface IADsSecurityDescriptor obterão ou definirão as propriedades descritas na tabela a seguir. Para obter mais informações, consulte Métodos de propriedade de interface.
 ms.assetid: e0c50740-de98-4913-b3df-6fd53263bcc8
 ms.tgt_platform: multiple
 keywords:
-- ADSI de métodos de propriedade IADsSecurityDescriptor
+- Métodos de propriedade IADsSecurityDescriptor ADSI
 topic_type:
 - apiref
 api_name:
@@ -54,7 +54,7 @@ ms.locfileid: "118427622"
 ---
 # <a name="iadssecuritydescriptor-property-methods"></a>Métodos de propriedade IADsSecurityDescriptor
 
-Os métodos de propriedade da interface [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) obtêm ou definem as propriedades descritas na tabela a seguir. Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).
+Os métodos de propriedade da interface [**IADsSecurityDescriptor**](/windows/desktop/api/Iads/nn-iads-iadssecuritydescriptor) obterão ou definirão as propriedades descritas na tabela a seguir. Para obter mais informações, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
@@ -63,14 +63,14 @@ Os métodos de propriedade da interface [**IADsSecurityDescriptor**](/windows/de
 **Controle**
 </dt> <dd> <dl>
 
-Sinalizadores que qualificam o significado do descritor de segurança. Os valores são obtidos da estrutura [**de \_ \_ controle do descritor de segurança**](/windows/desktop/SecAuthZ/security-descriptor-control) do Win32.
+Sinalizadores que qualificam o significado do descritor de segurança. Os valores são retirados da estrutura [**CONTROLE \_ DO DESCRITOR DE SEGURANÇA \_ do**](/windows/desktop/SecAuthZ/security-descriptor-control) Win32.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -91,14 +91,14 @@ HRESULT put_Control(
 **DaclDefaulted**
 </dt> <dd> <dl>
 
-Um sinalizador do tipo BOOL que indica se a DACL é derivada de um mecanismo padrão, em vez de ser fornecida explicitamente pelo provedor original do descritor de segurança. Por exemplo, se o criador de um objeto não especificar uma DACL, o objeto receberá a DACL padrão do token de acesso do criador. Esse sinalizador pode afetar como o sistema trata a DACL, em relação à herança de ACE. o sistema ignorará esse sinalizador se o sinalizador de ES \_ DACL \_ presente não estiver definido.
+Um sinalizador do tipo BOOL que indica se a DACL é derivada de um mecanismo padrão, em vez de ser fornecida explicitamente pelo provedor original do descritor de segurança. Por exemplo, se o criador de um objeto não especificar uma DACL, o objeto receberá a DACL padrão do token de acesso do criador. Esse sinalizador pode afetar como o sistema trata a DACL em relação à herança ACE. O sistema ignorará esse sinalizador se o sinalizador ES \_ DACL \_ PRESENT não estiver definido.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados Scripting: **Variant \_ bool**
+Tipo de dados de script: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -116,14 +116,14 @@ HRESULT put_DaclDefaulted(
 
 </dt> </dl> </dd> <dt>
 
-**DiscretionaryAcl**
+**Discretionaryacl**
 </dt> <dd> <dl>
 
-DACL (lista de controle de acesso discricionário) que especifica os tipos de acesso concedidos ao objeto para usuários e grupos especificados. Para obter mais informações sobre DACLs, consulte [DACLs nulas e DACLs vazias](/windows/desktop/AD/null-dacls-and-empty-dacls).
+DACL (lista de controle de acesso discricionário) que especifica os tipos de acesso concedidos ao objeto para usuários e grupos especificados. Para obter mais informações sobre DACLs, consulte [DACLs nulos e DACLs vazios.](/windows/desktop/AD/null-dacls-and-empty-dacls)
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **IDispatch**
@@ -151,7 +151,7 @@ Grupo ao qual a ID de segurança do proprietário pertence.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -179,10 +179,10 @@ Um sinalizador do tipo BOOL que indica se os dados do grupo são derivados de um
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados Scripting: **Variant \_ bool**
+Tipo de dados de script: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -207,7 +207,7 @@ Proprietário do objeto.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -231,14 +231,14 @@ HRESULT put_Owner(
 **OwnerDefaulted**
 </dt> <dd> <dl>
 
-Um sinalizador do tipo BOOL que indica que os dados do proprietário são derivados de um mecanismo padrão, em vez de serem explicitamente fornecidos pelo provedor original do descritor de segurança.
+Um sinalizador do tipo BOOL que indica que os dados do proprietário são derivados de um mecanismo padrão, em vez de serem fornecidos explicitamente pelo provedor original do descritor de segurança.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados Scripting: **Variant \_ bool**
+Tipo de dados de script: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -259,14 +259,14 @@ HRESULT put_OwnerDefaulted(
 **Revisão**
 </dt> <dd> <dl>
 
-Nível de revisão do descritor de segurança. Esse valor é obtido da estrutura de [**\_ \_ informações de revisão da ACL**](/windows/desktop/api/winnt/ns-winnt-acl_revision_information) do Win32. Todas as ACEs em uma ACL devem estar no mesmo nível de revisão.
+Nível de revisão do descritor de segurança. Esse valor é retirado da estrutura DE INFORMAÇÕES DE REVISÃO da [**ACL \_ \_**](/windows/desktop/api/winnt/ns-winnt-acl_revision_information) do Win32. Todas as ACEs em uma ACL devem estar no mesmo nível de revisão.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados de script: **longo**
+Tipo de dados de script: **LONG**
 </dt> <dt>
 
 
@@ -287,14 +287,14 @@ HRESULT put_Revision(
 **SaclDefaulted**
 </dt> <dd> <dl>
 
-Um sinalizador do tipo BOOL que indica que a SACL é derivada de um mecanismo padrão, em vez de ser explicitamente fornecido pelo provedor original do descritor de segurança. Esse sinalizador pode afetar como o sistema manipula a SACL, com relação à herança de ACE. o sistema ignora esse sinalizador se o sinalizador de ES \_ SACL \_ presente não estiver definido.
+Um sinalizador do tipo BOOL que indica que a SACL é derivada de um mecanismo padrão, em vez de ser fornecida explicitamente pelo provedor original do descritor de segurança. Esse sinalizador pode afetar como o sistema lida com a SACL, em relação à herança ACE. O sistema ignorará esse sinalizador se o sinalizador ES \_ SACL \_ PRESENT não estiver definido.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Tipo de dados Scripting: **Variant \_ bool**
+Tipo de dados de script: **VARIANT \_ BOOL**
 </dt> <dt>
 
 
@@ -312,14 +312,14 @@ HRESULT put_SaclDefaulted(
 
 </dt> </dl> </dd> <dt>
 
-**SystemAcl**
+**Systemacl**
 </dt> <dd> <dl>
 
-Acesso do sistema – lista de controle usada para gerar registros de auditoria para o objeto.
+Lista de controle de acesso do sistema usada para gerar registros de auditoria para o objeto .
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **IDispatch**
@@ -385,7 +385,7 @@ Cleanup:
 |-------------------------------------|-------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                            |
-| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>         |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>         |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl>   |
 | IID<br/>                      | IID \_ IADsSecurityDescriptor é definido como B8C787CA-9BDD-11D0-852C-00C04FD8D503<br/> |
 

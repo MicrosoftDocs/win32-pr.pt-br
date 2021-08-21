@@ -1,11 +1,11 @@
 ---
-title: MS-PKI-atributo de tamanho mínimo de chave
+title: Atributo ms-PKI-Minimal-Key-Size
 description: Indica o tamanho mínimo da chave privada.
 ms.assetid: e38fbab5-14db-40d1-80c4-c14477c6f0da
 ms.tgt_platform: multiple
 keywords:
-- MS-PKI-esquema do atributo de tamanho mínimo-de-chave
-- msPKI-esquema de AD de atributos de tamanho mínimo-chave
+- Esquema do AD do atributo ms-PKI-Minimal-Key-Size
+- Esquema do AD do atributo msPKI-Minimal-Key-Size
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4eb1a3f168393bb203f7c590ba52924670d3dab2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 768755cbeb85358c207b680198020b5b6c9d8c3038c02633fc0dbf86a685312a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086903"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118013350"
 ---
-# <a name="ms-pki-minimal-key-size-attribute"></a>MS-PKI-atributo de tamanho mínimo de chave
+# <a name="ms-pki-minimal-key-size-attribute"></a>Atributo ms-PKI-Minimal-Key-Size
 
 Indica o tamanho mínimo da chave privada.
 
@@ -29,13 +29,13 @@ Indica o tamanho mínimo da chave privada.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-tamanho mínimo-chave                                                                           |
-| LDAP-Display-Name | msPKI-tamanho mínimo da chave                                                                            |
+| CN                | ms-PKI-Minimal-Key-Size                                                                           |
+| Ldap-Display-Name | msPKI-Minimal-Key-Size                                                                            |
 | Tamanho              | 4 bytes                                                                                           |
 | Privilégio de atualização  | Administrador de domínio                                                                              |
-| Frequência de atualização  | Quando o modelo de certificado (MS-PKI-Certificate-template) é editado, criado ou clonado. |
+| Frequência de atualização  | Quando o objeto de modelo de certificado (ms-PKI-Certificate-Template) é editado, criado ou clonado. |
 | Attribute-Id      | 1.2.840.113556.1.4.1433                                                                           |
-| System-ID-GUID    | e96a63f5-417f-46d3-be52-db7703c503df                                                              |
+| System-Id-Guid    | e96a63f5-417f-46d3-be52-db7703c503df                                                              |
 | Syntax            | [**Enumeração**](s-enumeration.md)                                                              |
 
 
@@ -57,15 +57,15 @@ Indica o tamanho mínimo da chave privada.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | True                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Indica o tamanho mínimo da chave privada.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | True                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Indica o tamanho mínimo da chave privada.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | True                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Indica o tamanho mínimo da chave privada.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | True                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Indica o tamanho mínimo da chave privada.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | True                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 

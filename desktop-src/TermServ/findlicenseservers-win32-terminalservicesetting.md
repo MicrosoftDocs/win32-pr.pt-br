@@ -1,12 +1,12 @@
 ---
 title: Método FindLicenseServers da classe Win32_TerminalServiceSetting
-description: Enumera todos os servidores de licença Área de Trabalho Remota e o método de descoberta.
+description: Enumera todos os servidores de Área de Trabalho Remota licença e o método de descoberta.
 ms.assetid: 0de2ee6f-6c56-4293-84da-131b433c6a9d
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método FindLicenseServers
-- Método FindLicenseServers Serviços de Área de Trabalho Remota, classe Win32_TerminalServiceSetting
-- Classe Win32_TerminalServiceSetting Serviços de Área de Trabalho Remota, método FindLicenseServers
+- Método FindLicenseServers Serviços de Área de Trabalho Remota
+- Método FindLicenseServers Serviços de Área de Trabalho Remota , Win32_TerminalServiceSetting classe
+- Win32_TerminalServiceSetting classe Serviços de Área de Trabalho Remota método , FindLicenseServers
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b83376876009a691fed233cf723f04dcc3bc3c8e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 98af0d63c736e5bc82dd13d2abc94786634d7b92ba2c9a4628ae8ffd32a18b16
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919046"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118130785"
 ---
 # <a name="findlicenseservers-method-of-the-win32_terminalservicesetting-class"></a>Método FindLicenseServers da classe Win32 \_ TerminalServiceSetting
 
-Enumera todos os servidores de licença Área de Trabalho Remota e o método de descoberta.
+Enumera todos os servidores de Área de Trabalho Remota licença e o método de descoberta.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,23 +44,23 @@ uint32 FindLicenseServers(
 
 <dl> <dt>
 
-*LicenseServersList* \[ fora\]
+*LicenseServersList* \[ out\]
 </dt> <dd>
 
-A lista de [**objetos \_ TSDiscoveredLicenseServer do Win32**](win32-tsdiscoveredlicenseserver.md) . Cada objeto na lista de saída tem o nome do servidor de licença Área de Trabalho Remota e o método de descoberta.
+A lista de [**objetos \_ Win32 TSDiscoveredLicenseServer.**](win32-tsdiscoveredlicenseserver.md) Cada objeto na lista de saída tem o nome do servidor Área de Trabalho Remota licença e o método de descoberta.
 
 </dd> <dt>
 
-*Contagem* \[ de fora\]
+*Contagem* \[ out\]
 </dt> <dd>
 
-O número total de servidores de licença de Área de Trabalho Remota descobertos na lista de saída.
+O número total de servidores Área de Trabalho Remota licenças descobertas na lista de saída.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Para se conectar ao \\ \\ \\ namespace TerminalServices de cimv2 raiz, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação **da \_ \_ privacidade do \_ PCT no \_ nível \_ do autenticação RPC C**. Para chamadas de script e de Visual Basic, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "PktPrivacy", com um valor de 6. O exemplo a seguir Visual Basic Scripting Edition (VBScript) mostra como se conectar a um computador remoto com privacidade de pacote.
+Para se conectar ao \\ \\ namespace raiz CIMV2 \\ TerminalServices, o nível de autenticação deve incluir a privacidade do pacote. Para chamadas C/C++, esse é um nível de autenticação de **RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY**. Para Visual Basic e script de chamadas, esse é um nível de autenticação de **WbemAuthenticationLevelPktPrivacy** ou "pktPrivacy", com um valor de 6. O exemplo Visual Basic VBScript (Scripting Edition) a seguir mostra como se conectar a um computador remoto com privacidade de pacote.
 
 
 ```VB
@@ -71,7 +71,7 @@ Set objServices = GetObject( _
 
 
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -81,8 +81,8 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | \\TerminalServices da CIMv2 raiz \\<br/>                                                |
-| MOF<br/>                      | <dl> <dt>TSCfgWmi. mof</dt> </dl> |
+| Namespace<br/>                | \\CiMv2 \\ TerminalServices raiz<br/>                                                |
+| MOF<br/>                      | <dl> <dt>TSCfgWmi.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TSCfgWmi.dll</dt> </dl> |
 
 
@@ -91,7 +91,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 
 <dl> <dt>
 
-[**\_TerminalServiceSetting Win32**](win32-terminalservicesetting.md)
+[**Win32 \_ TerminalServiceSetting**](win32-terminalservicesetting.md)
 </dt> </dl>
 
  

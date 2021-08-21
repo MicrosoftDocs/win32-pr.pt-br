@@ -1,7 +1,7 @@
 ---
 description: Desabilita uma GPU física para virtualização.
 ms.assetid: 280a3c25-7b8f-4113-bf35-171d15f4aea7
-title: Método DisableGPUForVirtualization da classe Msvm_Synthetic3DService
+title: Método DisableGPUForVirtualization da classe Msvm_Synthetic3DService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 2634a3196e0c59368002151426e6f1407a13db8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f156ee160f9ae158c36b1c7a237f746d6577906cc5e254a183308d5bec122a0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296176"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118150032"
 ---
-# <a name="disablegpuforvirtualization-method-of-the-msvm_synthetic3dservice-class"></a>Método DisableGPUForVirtualization da \_ classe Synthetic3DService Msvm
+# <a name="disablegpuforvirtualization-method-of-the-msvm_synthetic3dservice-class"></a>Método DisableGPUForVirtualization da classe Msvm \_ Synthetic3DService
 
 Desabilita uma GPU física para virtualização.
 
@@ -40,21 +40,21 @@ uint32 DisableGPUForVirtualization(
 
 <dl> <dt>
 
-*PhysicalGPU* \[ no\]
+*PhysicalGPU* \[ Em\]
 </dt> <dd>
 
-Uma referência a uma instância da classe [**Msvm \_ Physical3dGraphicsProcessor**](msvm-physical3dgraphicsprocessor.md) que representa a GPU física a ser desabilitada.
+Uma referência a uma instância da [**classe Msvm \_ Physical3dGraphicsProcessor**](msvm-physical3dgraphicsprocessor.md) que representa a GPU física a ser desabilitada.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -72,10 +72,10 @@ Esse método retorna um dos valores a seguir.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,9 +1,9 @@
 ---
-title: TB_SETCOLORSCHEME mensagem (Commctrl.h)
-description: Define as informações do esquema de cores para o controle da barra de ferramentas.
+title: Mensagem de TB_SETCOLORSCHEME (commctrl. h)
+description: Define as informações do esquema de cores para o controle ToolBar.
 ms.assetid: 96cf6464-b760-46af-910f-984e41dbfca5
 keywords:
-- TB_SETCOLORSCHEME controles Windows mensagem
+- controles de Windows de mensagem de TB_SETCOLORSCHEME
 topic_type:
 - apiref
 api_name:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118167496"
 ---
-# <a name="tb_setcolorscheme-message"></a>Mensagem TB \_ SETCOLORSCHEME
+# <a name="tb_setcolorscheme-message"></a>TB de \_ mensagem SETCOLORSCHEME
 
-Define as informações do esquema de cores para o controle da barra de ferramentas.
+Define as informações do esquema de cores para o controle ToolBar.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,19 +35,19 @@ Define as informações do esquema de cores para o controle da barra de ferramen
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma [**estrutura COLORSCHEME**](/windows/win32/api/commctrl/ns-commctrl-colorscheme) que contém as informações do esquema de cores.
+Ponteiro para uma estrutura [**ColorScheme**](/windows/win32/api/commctrl/ns-commctrl-colorscheme) que contém as informações do esquema de cores.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-O valor de retorno para essa mensagem não é usado.
+O valor retornado para esta mensagem não é usado.
 
 ## <a name="remarks"></a>Comentários
 
-O controle de barra de ferramentas usa as informações de esquema de cores ao desenhar os elementos 3D no controle .
+O controle Toolbar usa as informações do esquema de cores ao desenhar os elementos 3-D no controle.
 
-Quando os estilos visuais estão habilitados, essa mensagem não tem nenhum efeito.
+Quando os estilos visuais são habilitados, essa mensagem não tem nenhum efeito.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ Quando os estilos visuais estão habilitados, essa mensagem não tem nenhum efei
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
-| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Quando os estilos visuais estão habilitados, essa mensagem não tem nenhum efei
 
 <dl> <dt>
 
-[**TB \_ GETCOLORSCHEME**](tb-getcolorscheme.md)
+[**TB de \_ GETCOLORSCHEME**](tb-getcolorscheme.md)
 </dt> </dl>
 
  

@@ -1,5 +1,5 @@
 ---
-description: Uma difusão geral através da Internet é obtida definindo os campos SA \_ netnum e SA \_ nodenum para os binários (1).
+description: Uma difusão geral pela Internet é feita definindo os campos sa netnum e sa nodenum como \_ \_ binários (1).
 ms.assetid: a56f3059-d6e5-42eb-8ba2-16071fffafa5
 title: Difusão de todas as rotas
 ms.topic: article
@@ -13,9 +13,9 @@ ms.locfileid: "118322713"
 ---
 # <a name="all-routes-broadcast"></a>Difusão de todas as rotas
 
-Uma difusão geral através da Internet é obtida definindo os campos **SA \_ netnum** e **SA \_ nodenum** para os binários (1). O provedor de serviços Converte essa solicitação em um pacote de tipo 20, que os roteadores IPX reconhecem e encaminham. O pacote visita todas as sub-redes e pode ser duplicado várias vezes. Os receptores devem lidar com várias cópias duplicadas do datagrama.
+Uma difusão geral pela Internet é feita definindo os campos **sa \_ netnum** e **sa \_ nodenum** como binários (1). O provedor de serviços converte essa solicitação em um pacote de tipo 20, que os roteadores IPX reconhecem e encaminham. O pacote visita todas as sub-redes e pode ser duplicado várias vezes. Os receptores devem manipular várias cópias duplicadas do datagrama.
 
-O uso desse tipo de difusão não é popular entre os administradores de rede, portanto, seu uso deve ser extremamente limitado. Muitos roteadores desativam esse tipo de difusão, deixando partes da sub-rede invisíveis para o pacote.
+O uso desse tipo de difusão não é popular entre os administradores de rede, portanto, seu uso deve ser extremamente limitado. Muitos roteadores desabilitam esse tipo de difusão, deixando partes da sub-rede invisíveis para o pacote.
 
  
 

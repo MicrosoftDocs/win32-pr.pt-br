@@ -1,5 +1,5 @@
 ---
-description: 'Saiba mais sobre: métodos EsentIllegalOperationException'
+description: 'Saiba mais sobre: Métodos EsentOperationException'
 title: 'Métodos EsentIllegalOperationException '
 TOCTitle: EsentIllegalOperationException methods
 ms:assetid: Methods.T:Microsoft.Isam.Esent.Interop.EsentIllegalOperationException
@@ -7,19 +7,19 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101793
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 802863334e09d056ed0d7599613dbd9208385c91
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cbffdd4bb2e75610bf54bb4b025094c6ae6decde21643be1ddcdd6b590ba9760
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090733"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118081327"
 ---
 # <a name="esentillegaloperationexception-methods"></a>Métodos EsentIllegalOperationException 
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentIllegalOperationException](./esentillegaloperationexception-class.md) expõe os membros a seguir.
+O [tipo EsentOperationException](./esentillegaloperationexception-class.md) expõe os membros a seguir.
 
 ## <a name="methods"></a>Métodos
 
@@ -44,7 +44,7 @@ O tipo [EsentIllegalOperationException](./esentillegaloperationexception-class.m
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">GetBaseException</a></td>
+<td><a href="/dotnet/api/system.exception.getbaseexception#System_Exception_GetBaseException">Getbaseexception</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
@@ -59,12 +59,12 @@ O tipo [EsentIllegalOperationException](./esentillegaloperationexception-class.m
 </tr>
 <tr class="even">
 <td><img src="../images/dn292146.pubmethod(exchg.10).gif" title="Método público" alt="Public method" /></td>
-<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">GetType</a></td>
+<td><a href="/dotnet/api/system.exception.gettype#System_Exception_GetType">Gettype</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">MemberwiseClone</a></td>
+<td><a href="/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Memberwiseclone</a></td>
 <td>(Herdado do <a href="/dotnet/api/system.object">objeto</a>.)</td>
 </tr>
 <tr class="even">
@@ -82,6 +82,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe EsentIllegalOperationException](./esentillegaloperationexception-class.md)
+[Classe Esent IlegalOperationException](./esentillegaloperationexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

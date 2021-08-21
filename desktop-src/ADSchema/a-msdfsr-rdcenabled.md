@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DFSR-RdcEnabled
-description: Contém o valor que especifica se a RDC está habilitada ou desabilitada.
+title: Atributo ms-DFSR-RdcEnabled
+description: Contém o valor que especifica se o RDC está habilitado ou desabilitado.
 ms.assetid: 05a4257c-cc8b-4ddf-ae5f-4d3b456a2bae
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DFSR-RdcEnabled
-- Esquema de AD do atributo msDFSR-RdcEnabled
+- Esquema do AD do atributo ms-DFSR-RdcEnabled
+- Esquema do AD do atributo msDFSR-RdcEnabled
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 83c5951cee2dab4af716a3673cf400144ab9ed54
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 44ae383d4f46be022a2ce3a86d0a607b25d11e333311c82b881d2e637bc4cf72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086947"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118015456"
 ---
-# <a name="ms-dfsr-rdcenabled-attribute"></a>atributo ms-DFSR-RdcEnabled
+# <a name="ms-dfsr-rdcenabled-attribute"></a>Atributo ms-DFSR-RdcEnabled
 
-Contém o valor que especifica se a RDC está habilitada ou desabilitada.
+Contém o valor que especifica se o RDC está habilitado ou desabilitado.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | MS-DFSR-RdcEnabled                   |
-| LDAP-Display-Name | msDFSR-RdcEnabled                    |
+| CN                | ms-DFSR-RdcEnabled                   |
+| Ldap-Display-Name | msDFSR-RdcEnabled                    |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.6.13.3.19           |
-| System-ID-GUID    | e3b44e05-f4a7-4078-a730-f48670a743f8 |
+| System-Id-Guid    | e3b44e05-f4a7-4078-a730-f48670a743f8 |
 | Syntax            | [**Boolean**](s-boolean.md)         |
 
 
@@ -56,15 +56,15 @@ Contém o valor que especifica se a RDC está habilitada ou desabilitada.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | True                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Classes usadas em        | [**MS-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 
@@ -77,15 +77,15 @@ Contém o valor que especifica se a RDC está habilitada ou desabilitada.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | True                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Classes usadas em        | [**MS-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 
@@ -98,15 +98,15 @@ Contém o valor que especifica se a RDC está habilitada ou desabilitada.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| Tem valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
 | System-Flags           | 0x00000000                                                   |
-| Classes usadas em        | [**MS-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
+| Classes usadas em        | [**ms-DFSR-Connection**](c-msdfsr-connection.md)<br/> |
 
 
 
@@ -119,7 +119,7 @@ Contém o valor que especifica se a RDC está habilitada ou desabilitada.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | True                                                         |
+| É de valor único       | Verdadeiro                                                         |
 | É indexado             | Falso                                                        |
 | No catálogo global      | Falso                                                        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |

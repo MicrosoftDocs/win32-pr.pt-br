@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, UInt64)'
-title: Método API. SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, UInt64)
+description: 'Saiba mais sobre: Método Api.SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, UInt64)'
+title: Método Api.SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, UInt64)
 TOCTitle: SetColumn method (JET_SESID, JET_TABLEID, JET_COLUMNID, UInt64)
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.SetColumn(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,Microsoft.Isam.Esent.Interop.JET_COLUMNID,System.UInt64)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.setcolumn(v=EXCHG.10)
@@ -20,21 +20,21 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 2e43711f40c723e84476bd8d2aa79f3761f87b9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 610373256b295ae3a60b874f5e494b76972c0ce2ce01223a19aae2809cd02028
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781433"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118084395"
 ---
-# <a name="apisetcolumn-method-jet_sesid-jet_tableid-jet_columnid-uint64"></a>Método API. SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, UInt64)
+# <a name="apisetcolumn-method-jet_sesid-jet_tableid-jet_columnid-uint64"></a>Método Api.SetColumn (JET_SESID, JET_TABLEID, JET_COLUMNID, UInt64)
 
-Modifica um valor de coluna única em um registro modificado a ser inserido ou para atualizar o registro atual.
+Modifica um único valor de coluna em um registro modificado a ser inserido ou para atualizar o registro atual.
 
 Esta API não está em conformidade com CLS. 
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -68,28 +68,28 @@ public static void SetColumn(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
     O cursor a ser atualizado. Uma atualização deve ser preparada.
 
 <!-- end list -->
 
   - columnid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_COLUMNID](./jet-columnid-structure.md)  
     
-    O columnid a ser definido.
+    A columnid a ser definida.
 
 <!-- end list -->
 
   - data  
-    Tipo: [System. UInt64](/dotnet/api/system.uint64)  
+    Tipo: [System.UInt64](/dotnet/api/system.uint64)  
     
     Os dados a serem definidos.
 
@@ -101,6 +101,6 @@ public static void SetColumn(
 
 [Membros da API](./api-members.md)
 
-[Sobrecarga de SetColumn](./api.setcolumn-method.md)
+[Sobrecarga setColumn](./api.setcolumn-method.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

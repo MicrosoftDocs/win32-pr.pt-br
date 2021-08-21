@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Propriedade Columnvalue. Length'
-title: Propriedade columnvalue. Length
+description: 'Saiba mais sobre: propriedade ColumnValue.Length'
+title: Propriedade ColumnValue.Length
 TOCTitle: 'Length property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.ColumnValue.Length
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.columnvalue.length(v=EXCHG.10)
@@ -25,19 +25,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: c64e2b8e7b25be5b33d64591e16b982604e2fee6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93ff15d348b2d47f76c680547d6e7939ebbd2c5faeaa240d9d18b1c3f523b93f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105786262"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118083659"
 ---
-# <a name="columnvaluelength-property"></a>Propriedade columnvalue. Length
+# <a name="columnvaluelength-property"></a>Propriedade ColumnValue.Length
 
-Obtém o comprimento de byte de um valor de coluna, que será zero se a coluna for nula, caso contrário, ela corresponderá ao tamanho de colunas de tamanho fixo e representará o comprimento de byte de valor real para colunas de tamanho variável (ou seja, binary e String). Para cadeias de caracteres, o comprimento é determinado na suposição de dois bytes por caractere.
+Obtém o comprimento de byte de um valor de coluna, que é zero se a coluna for nula; caso contrário, corresponde ao Tamanho das colunas de tamanho fixo e representa o comprimento real do byte do valor para colunas de tamanho variável (ou seja, binário e cadeia de caracteres). Para cadeias de caracteres, o comprimento é determinado na suposição de dois bytes por caractere.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,14 +58,14 @@ public abstract int Length { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System. Int32](/dotnet/api/system.int32)  
+Tipo: [System.Int32](/dotnet/api/system.int32)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe columnvalue](./columnvalue-class.md)
+[Classe ColumnValue](./columnvalue-class.md)
 
-[Membros de columnvalue](./columnvalue-members.md)
+[Membros ColumnValue](./columnvalue-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

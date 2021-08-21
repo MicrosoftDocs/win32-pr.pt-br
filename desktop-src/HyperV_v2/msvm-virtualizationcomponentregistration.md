@@ -1,5 +1,5 @@
 ---
-description: Representa o registro de um serviço na plataforma Microsoft Hyper-V.
+description: representa o registro de um serviço na plataforma Microsoft Hyper-V.
 ms.assetid: 706557C2-49D6-453F-9DC0-2C655888EEBE
 title: Classe Msvm_VirtualizationComponentRegistration
 ms.topic: reference
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7e9704dcade0474a10ca60383280941ec2e3591b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7acd111ab95f59146763e874d40c4efb411313938c94b1a4527aa1e2d08490c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789798"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146550"
 ---
 # <a name="msvm_virtualizationcomponentregistration-class"></a>\_Classe Msvm VirtualizationComponentRegistration
 
-Representa o registro de um serviço na plataforma Microsoft Hyper-V.
+representa o registro de um serviço na plataforma Microsoft Hyper-V.
 
 A sintaxe a seguir é simplificada formato MOF código (MOF).
 
@@ -86,8 +86,8 @@ O acesso à classe **Msvm \_ VirtualizationComponentRegistration** pode ser rest
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Fim do suporte do cliente<br/>    | Windows 8.1<br/>                                                                                  |
 | Fim do suporte do servidor<br/>    | Windows Server 2012 R2<br/>                                                                       |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |

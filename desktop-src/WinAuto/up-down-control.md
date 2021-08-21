@@ -4,12 +4,12 @@ description: Um controle de cima para baixo, também conhecido como controle de 
 ms.assetid: 45e56c0f-4ac6-4731-b9a6-be4613bf40ae
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fd2d28acc4c14a89ec73f5994ed0af47202145a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 52b9475d8bbca24d2bf536a4eb9a9decf078297e788a37aa4d8560029a67e50e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105771507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118114621"
 ---
 # <a name="up-down-control-msaa-ui-element-reference"></a>Controle de Up-Down (referência de elemento de interface do usuário do MSAA)
 

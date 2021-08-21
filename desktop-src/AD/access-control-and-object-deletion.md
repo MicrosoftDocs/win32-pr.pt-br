@@ -7,12 +7,12 @@ keywords:
 - Controle de acesso e AD de exclusão de objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1bddcd2b563e144743689f2a26c17bd417db14ee
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 6dda8f5eb241515e9428322ea01c6586b6870e7133e96a1cd7b4fcbb32f6f0c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103640368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118025631"
 ---
 # <a name="access-control-and-object-deletion"></a>Exclusão de controle de acesso e objeto
 
@@ -28,8 +28,8 @@ Para executar uma operação de exclusão de árvore, por exemplo, usando o mét
 > [!WARNING]
 > Se os usuários tiverem \_ o ADS direito \_ \_ de excluir acesso à árvore do DS \_ para um objeto, isso lhes dará a capacidade de excluir uma subárvore inteira, incluindo todos os objetos filho. Por esse motivo, você pode considerar a revogação da permissão de acesso "Excluir Subárvore" para todos os usuários em um contêiner pai.
 
- 
+ 
 
- 
+ 
 
- 
+ 

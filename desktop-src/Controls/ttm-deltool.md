@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TTM_DELTOOL (commctrl. h)
-description: Remove uma ferramenta de um controle ToolTip.
+title: TTM_DELTOOL mensagem (Commctrl.h)
+description: Remove uma ferramenta de um controle de dica de ferramenta.
 ms.assetid: 433b6f1c-3e9f-4e3a-9834-d447a3f9e6a5
 keywords:
-- Controles de TTM_DELTOOL de mensagens do Windows
+- TTM_DELTOOL controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d943259c5496757c0f15ca4127d0a5e6a4237fbe
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ea54eefd2b9cc84b3aabe5dd600c5fcc32c7468cae01d1819b5fda7b631aeabd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105754801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166379"
 ---
-# <a name="ttm_deltool-message"></a>\_Mensagem TTM DELTOOL
+# <a name="ttm_deltool-message"></a>Mensagem TTM \_ DELTOOL
 
-Remove uma ferramenta de um controle ToolTip.
+Remove uma ferramenta de um controle de dica de ferramenta.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -37,11 +37,11 @@ Remove uma ferramenta de um controle ToolTip.
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**TOOLINFO**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) . Os membros de **HWND** e **UID** identificam a ferramenta a ser removida e o membro **cbSize** deve especificar o tamanho da estrutura. Todos os outros membros são ignorados.
+Ponteiro para uma [**estrutura TOOLINFO.**](/windows/win32/api/commctrl/ns-commctrl-tttoolinfoa) Os **membros hwnd** e **uId** identificam a ferramenta a ser removido e o membro **cbSize** deve especificar o tamanho da estrutura. Todos os outros membros são ignorados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -51,9 +51,9 @@ Sem valor de retorno.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TTM \_ DELTOOLW** (Unicode) e **TTM \_ DELTOOLA** (ANSI)<br/>                   |
 
 
@@ -65,13 +65,13 @@ Sem valor de retorno.
 **Referência**
 </dt> <dt>
 
-[**addferramenta TTM \_**](ttm-addtool.md)
+[**TTM \_ ADDTOOL**](ttm-addtool.md)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Sobre os controles de dica de ferramenta](tooltip-controls.md)
+[Sobre controles de dica de ferramenta](tooltip-controls.md)
 </dt> </dl>
 
  

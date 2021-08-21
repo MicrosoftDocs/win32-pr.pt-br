@@ -4,12 +4,12 @@ description: Branch baseado em lógico ou resultado.
 ms.assetid: 9F4CF9E0-4D9D-4300-B432-432C560F34BB
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 653c84be0d30a036bf93d852268e44bcca08bbcb
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 86d4e538ef675240d9cb9ccb2d0ac1d2efe33a40503edf9fd6b8c1499a623d07
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104988554"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118089849"
 ---
 # <a name="if-sm4---asm"></a>If (sm4-ASM)
 
@@ -57,7 +57,7 @@ O exemplo a seguir mostra como usar essa instrução.
 
 -   Os operandos de origem (se quatro vetores de componente) devem usar um seletor de componente único.
 -   O registro de 32 bits fornecido pelo *src0* é testado em um nível de bit. Se qualquer bit for diferente de zero, **se \_ z** será true. Se todos os bits forem zero, **se \_ NZ** será true.
--   Os blocos de controle de fluxo podem aninhar até 64 de profundidade por sub-rotina (e principal). O compilador HLSL não gerará sub-rotinas que excedam esse limite. O comportamento das instruções de fluxo de controle além de 64 níveis de profundidade (por sub-rotina) é indefinido.
+-   Flow blocos de controle podem ser aninhados até 64 de profundidade por sub-rotina (e principal). O compilador HLSL não gerará sub-rotinas que excedam esse limite. O comportamento das instruções de fluxo de controle além de 64 níveis de profundidade (por sub-rotina) é indefinido.
 
 Essa instrução se aplica aos seguintes estágios de sombreador:
 

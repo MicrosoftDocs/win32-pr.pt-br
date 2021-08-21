@@ -18,23 +18,23 @@ api_type:
 api_location:
 - ESENT.DLL
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: bab2fa3d9faa7f81abea278e3d9fcf4a4022c24c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 55fc5a204ce321f0be5073f2c4c9ab2a80a11a822b3bf23c87441770c3a1857b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118073014"
 ---
 # <a name="jetbeginexternalbackupinstance-function"></a>Função JetBeginExternalBackupInstance
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jetbeginexternalbackupinstance-function"></a>Função JetBeginExternalBackupInstance
 
 A função **JetBeginExternalBackupInstance** inicia um backup externo enquanto o mecanismo e o banco de dados estão online e ativos.
 
-**Windows XP: o JetBeginExternalBackupInstance** é introduzido no Windows XP.
+**Windows xp: o JetBeginExternalBackupInstance** é introduzido no Windows XP.
 
 ```cpp
     JET_ERR JET_API JetBeginExternalBackupInstance(
@@ -49,9 +49,9 @@ A função **JetBeginExternalBackupInstance** inicia um backup externo enquanto 
 
 A instância do banco de dados a ser usada para esta chamada.
 
-Para o Windows 2000, a variante de API que aceita esse parâmetro não está disponível porque há suporte para apenas uma instância. O uso dessa instância global é implícito nesse caso.
+para Windows 2000, a variante de API que aceita esse parâmetro não está disponível porque há suporte para apenas uma instância. O uso dessa instância global é implícito nesse caso.
 
-Para o Windows XP e versões posteriores, a variante de API que não aceita esse parâmetro só pode ser chamada quando o mecanismo está no modo herdado (modo de compatibilidade do Windows 2000), em que apenas uma instância tem suporte. Caso contrário, a operação falhará com JET_errRunningInMultiInstanceMode.
+para Windows XP e versões posteriores, a variante de API que não aceita esse parâmetro só pode ser chamada quando o mecanismo está no modo herdado (modo de compatibilidade Windows 2000) em que há suporte para apenas uma instância. Caso contrário, a operação falhará com JET_errRunningInMultiInstanceMode.
 
 *grbit*
 
@@ -79,7 +79,7 @@ Um grupo de bits que especifica zero ou mais das opções a seguir.
 </tr>
 <tr class="odd">
 <td><p>JET_bitBackupSnapshot</p></td>
-<td><p>Reservado para uso futuro. Definido para o Windows XP.</p></td>
+<td><p>Reservado para uso futuro. definido para Windows XP.</p></td>
 </tr>
 </tbody>
 </table>
@@ -87,7 +87,7 @@ Um grupo de bits que especifica zero ou mais das opções a seguir.
 
 ### <a name="return-value"></a>Valor Retornado
 
-O sistema pode gerar códigos de êxito ou de falha como resultado de uma chamada para essa função. Para obter uma lista completa de erros para essa API, consulte [códigos de erro do mecanismo de armazenamento extensível](./extensible-storage-engine-error-codes.md).
+O sistema pode gerar códigos de êxito ou de falha como resultado de uma chamada para essa função. para obter uma lista completa de erros para essa API, consulte [códigos de erro do mecanismo de Armazenamento extensível](./extensible-storage-engine-error-codes.md).
 
 Consulte [JetBeginExternalBackup](./jetbeginexternalbackup-function.md).
 
@@ -109,11 +109,11 @@ O backup será difuso, pois o backup será consistente para um único ponto no h
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>requer o Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>requer o Windows server 2008, Windows server 2003 ou Windows servidor 2000.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>

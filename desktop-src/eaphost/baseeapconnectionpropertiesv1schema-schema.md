@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: e8011e0a4993f0a8d929c6eca7dea39a3e1d8d46
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: 8cec4b56e73aac256e97bff01fa3bce3d1b9582f4e656d223583c2ceeddb4c36
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "104366731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086828"
 ---
 # <a name="baseeapconnectionpropertiesv1-schema"></a>Esquema baseeapconnectionpropertiesv1
 
@@ -30,9 +30,9 @@ O esquema baseeapconnectionpropertiesv1 define elementos de esquema de configura
 [EAPHost e esquema herdado](eaphost-schemas.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

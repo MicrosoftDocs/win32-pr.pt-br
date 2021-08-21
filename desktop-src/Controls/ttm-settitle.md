@@ -3,7 +3,7 @@ title: Mensagem de TTM_SETTITLE (commctrl. h)
 description: Adiciona um ícone padrão e uma cadeia de título a uma dica de ferramenta.
 ms.assetid: e745a592-eef7-4e0d-8939-a48b52c4ab9f
 keywords:
-- Controles de TTM_SETTITLE de mensagens do Windows
+- controles de Windows de mensagem de TTM_SETTITLE
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d7972a9d40347995e9d641e7fc8706f9ad4c58bd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e0e159ce522ea27361f93beaa96da06959fba6f92fedf5981dfd049ddc7f36cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166349"
 ---
 # <a name="ttm_settitle-message"></a>Mensagem do TTM \_ SETtitle
 
@@ -34,7 +34,7 @@ Adiciona um ícone padrão e uma cadeia de título a uma dica de ferramenta.
 *wParam* 
 </dt> <dd>
 
-Defina *wParam* como um dos valores a seguir para especificar o ícone a ser exibido. A partir do Windows XP SP2 e posterior, esse parâmetro também pode conter um valor de **HICON** . Um valor maior que TTI \_ é considerado um **HICON**.
+Defina *wParam* como um dos valores a seguir para especificar o ícone a ser exibido. a partir do Windows XP SP2 e posterior, esse parâmetro também pode conter um valor **HICON** . Um valor maior que TTI \_ é considerado um **HICON**.
 
 
 
@@ -61,7 +61,7 @@ Ponteiro para a cadeia de caracteres de título. Você deve atribuir um valor a 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se for bem-sucedido, **false** se não.
 
@@ -93,9 +93,9 @@ DestroyIcon(hIcon);
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TTM \_ SETTITLEW** (Unicode) e **TTM \_ settítuloa** (ANSI)<br/>                 |
 
 

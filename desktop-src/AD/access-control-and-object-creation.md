@@ -7,12 +7,12 @@ keywords:
 - Controle de acesso e AD de criação de objeto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 71ac54c1fe71a1821d3a02db383ca95606ae360d
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 11b99251cd9c9c93177e0b6cfc362c7003078c870e809b48c9aba351e620e1a3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104084423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118025719"
 ---
 # <a name="access-control-and-object-creation"></a>Controle de acesso e criação de objeto
 
@@ -22,6 +22,6 @@ Quando você usa o método [**IADsContainer:: Create**](/windows/desktop/api/iad
 
 Para obter mais informações sobre o controle de acesso e a criação de objetos, consulte [como descritores de segurança são definidos em novos objetos de diretório](how-security-descriptors-are-set-on-new-directory-objects.md).
 
- 
+ 
 
- 
+ 

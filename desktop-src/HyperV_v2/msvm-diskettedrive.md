@@ -80,12 +80,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 1dbc9e21626e2f5e8269fb3a398dd48a6ea442e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4428d3f1de37b704312753223825f04c1ad251bdc5775ae68a2d7e291b2cfe0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103662540"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148605"
 ---
 # <a name="msvm_diskettedrive-class"></a>\_Classe Msvm DisketteDrive
 
@@ -183,7 +183,7 @@ A classe **Msvm \_ DisketteDrive** tem esses métodos.
 | **OnlineDevice**                                                    | Não há suporte para o método.<br/> |
 | **QuiesceDevice**                                                   | Não há suporte para o método.<br/> |
 | [**RequestStateChange**](msvm-diskettedrive-requeststatechange.md) | Solicita uma alteração de estado.<br/>      |
-| [**Redefinir**](msvm-diskettedrive-reset.md)                           | Redefine o dispositivo virtual.<br/>    |
+| [**Definido**](msvm-diskettedrive-reset.md)                           | Redefine o dispositivo virtual.<br/>    |
 | **Restaurarproperties**                                               | Não há suporte para o método.<br/> |
 | **Salvarproperties**                                                  | Não há suporte para o método.<br/> |
 | **SetPowerState**                                                   | Não há suporte para o método.<br/> |
@@ -1049,7 +1049,7 @@ O tempo, em milissegundos, de ser capaz de ler ou gravar uma mídia em seu ' Unl
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à classe **Msvm \_ DisketteDrive** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à classe **Msvm \_ DisketteDrive** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -1057,10 +1057,10 @@ O acesso à classe **Msvm \_ DisketteDrive** pode ser restringido pela filtragem
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -1069,13 +1069,13 @@ O acesso à classe **Msvm \_ DisketteDrive** pode ser restringido pela filtragem
 
 <dl> <dt>
 
-[**\_DISKETTEDRIVE CIM**](cim-diskettedrive.md)
+[**CIM \_ DisketteDrive**](cim-diskettedrive.md)
 </dt> <dt>
 
-[**\_DISKETTEDRIVE CIM**](/windows/desktop/CIMWin32Prov/cim-diskettedrive)
+[**CIM \_ DisketteDrive**](/windows/desktop/CIMWin32Prov/cim-diskettedrive)
 </dt> <dt>
 
-[Classes de armazenamento](storage-classes.md)
+[Armazenamento Classes](storage-classes.md)
 </dt> </dl>
 
  

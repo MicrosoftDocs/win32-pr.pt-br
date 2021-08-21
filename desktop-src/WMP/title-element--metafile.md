@@ -1,9 +1,9 @@
 ---
-title: Elemento TITLE (metarquivo)
-description: O elemento TITLE define uma cadeia de texto especificando o título de um elemento ASX ou de entrada.
+title: Elemento TITLE (metafile)
+description: O elemento TITLE define uma cadeia de caracteres de texto que especifica o título para um elemento ASX ou ENTRY.
 ms.assetid: d7ad7f00-fcf2-456d-a106-98bf0a258b81
 keywords:
-- Elemento de título (metarquivo) Windows Media Player
+- Elemento TITLE (metafile) Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: bdb58edbb3ffd99e8be557fdb05a7e51298fda14
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 085bec9a9937c8dbd02fad6df785f4bce7afea90a74117e745f09cb5135633d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118117716"
 ---
-# <a name="title-element-metafile"></a>Elemento TITLE (metarquivo)
+# <a name="title-element-metafile"></a>Elemento TITLE (metafile)
 
-O elemento **title** define uma cadeia de texto especificando o título de um elemento **ASX** ou de **entrada** .
+O **elemento TITLE** define uma cadeia de caracteres de texto que especifica o título para um elemento **ASX** **ou ENTRY.**
 
 ``` syntax
 <TITLE>
@@ -40,7 +40,7 @@ Esse elemento não tem atributos.
 
 | Hierarquia       | Elementos           |
 |-----------------|--------------------|
-| Elementos pai | **ASX**, **entrada** |
+| Elementos pai | **ASX**, **ENTRY** |
 | Elementos filho  | Nenhum               |
 
 
@@ -49,13 +49,13 @@ Esse elemento não tem atributos.
 
 ## <a name="remarks"></a>Comentários
 
-Esse elemento define uma cadeia de texto que especifica o título de um elemento **ASX** ou de **entrada** . O título é exibido na caixa de diálogo painel de exibição e **Propriedades** .
+Esse elemento define uma cadeia de caracteres de texto que especifica o título de um **elemento ASX** **ou ENTRY.** O título é exibido no painel de exibição e na **caixa de diálogo** Propriedades.
 
-Quando esse elemento aparece dentro de um elemento **ASX** , o texto é exibido como **Mostrar** informações. Quando esse elemento aparece dentro de um elemento de **entrada** , o texto é exibido como informações de **clipe** .
+Quando esse elemento aparece em um **elemento ASX,** o texto é exibido como **Mostrar** informações. Quando esse elemento aparece dentro de **um elemento ENTRY,** o texto é exibido como Informações **de** clipe.
 
-Se um elemento **moreinfo** também for usado com o elemento associado (pai), será o texto do título no qual o usuário clica para acessar a URL definida no elemento **moreinfo** .
+Se um **elemento MOREINFO** também for usado com o elemento associado (pai), será o texto do título que o usuário clica para acessar a URL definida no **elemento MOREINFO.**
 
-Cada elemento de **entrada** e **ASX** pai deve conter no máximo um elemento de **título** filho. Vários elementos **title** após o primeiro serão ignorados e não serão exibidos.
+Cada elemento **PAI ASX** e **ENTRY** deve conter no máximo um elemento **TITLE** filho. Vários **elementos TITLE** após o primeiro serão ignorados e não serão exibidos.
 
 ## <a name="examples"></a>Exemplos
 
@@ -86,10 +86,10 @@ Cada elemento de **entrada** e **ASX** pai deve conter no máximo um elemento de
 
 <dl> <dt>
 
-[**Referência de elementos de metarquivo do Windows Media**](windows-media-metafile-elements-reference.md)
+[**Windows Referência de elementos de metadados de mídia**](windows-media-metafile-elements-reference.md)
 </dt> <dt>
 
-[**Referência do metarquivo do Windows Media**](windows-media-metafile-reference.md)
+[**Windows Referência de metadados de mídia**](windows-media-metafile-reference.md)
 </dt> </dl>
 
  

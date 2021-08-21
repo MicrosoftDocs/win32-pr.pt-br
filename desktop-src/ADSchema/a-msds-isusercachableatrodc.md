@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-is-User-armazenável-at-RODC
-description: Para um RODC (controlador de domínio Read-Only), identifica se os segredos do usuário especificado podem ser armazenados em cache.
+title: Atributo ms-DS-Is-User-Cachable-At-Rodc
+description: Para um Read-Only RODC (Controlador de Domínio), identifica se os segredos do usuário especificado podem ser armazenados em cache.
 ms.assetid: 1118d0a9-2219-478a-82b0-8ea4bbeae47d
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-is-User-armazenável-at-RODC atributo AD Schema
-- atributo msDS-IsUserCachableAtRodc do AD Schema
+- Esquema do AD do atributo ms-DS-Is-User-Cachable-At-Rodc
+- Esquema do AD do atributo msDS-IsUserCachableAtRodc
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5699208cebe4c49321186813a64611f79ec52f4b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d0c218656e8c300fe4045e4e889dc6c7aa55df3d2a2e767627e6c97aa3596ae5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645563"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118014427"
 ---
-# <a name="ms-ds-is-user-cachable-at-rodc-attribute"></a>atributo ms-DS-is-User-armazenável-at-RODC
+# <a name="ms-ds-is-user-cachable-at-rodc-attribute"></a>Atributo ms-DS-Is-User-Cachable-At-Rodc
 
-Para um RODC (controlador de domínio Read-Only), identifica se os segredos do usuário especificado podem ser armazenados em cache.
+Para um Read-Only RODC (Controlador de Domínio), identifica se os segredos do usuário especificado podem ser armazenados em cache.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-is-User-armazenável-at-RODC       |
-| LDAP-Display-Name | msDS-IsUserCachableAtRodc            |
+| CN                | ms-DS-Is-User-Cachable-At-Rodc       |
+| Ldap-Display-Name | msDS-IsUserCachableAtRodc            |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2025              |
-| System-ID-GUID    | fe01245a-341f-4556-951f-48c033a89050 |
+| System-Id-Guid    | fe01245a-341f-4556-951f-48c033a89050 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -55,10 +55,10 @@ Para um RODC (controlador de domínio Read-Only), identifica se os segredos do u
 | ID do link                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
 | System-Only            | Falso                                                                                                                    |
-| É de valor único       | True                                                                                                                     |
+| Tem valor único       | True                                                                                                                     |
 | É indexado             | Falso                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
@@ -76,10 +76,10 @@ Para um RODC (controlador de domínio Read-Only), identifica se os segredos do u
 | ID do link                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
 | System-Only            | Falso                                                                                                                    |
-| É de valor único       | True                                                                                                                     |
+| Tem valor único       | True                                                                                                                     |
 | É indexado             | Falso                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |
@@ -97,10 +97,10 @@ Para um RODC (controlador de domínio Read-Only), identifica se os segredos do u
 | ID do link                | \-                                                                                                                       |
 | MAPI-Id                | \-                                                                                                                       |
 | System-Only            | Falso                                                                                                                    |
-| É de valor único       | True                                                                                                                     |
+| Tem valor único       | True                                                                                                                     |
 | É indexado             | Falso                                                                                                                    |
-| No catálogo global      | Falso                                                                                                                    |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                             |
+| No Catálogo Global      | Falso                                                                                                                    |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                             |
 | Range-Lower            | \-                                                                                                                       |
 | Range-Upper            | \-                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                               |

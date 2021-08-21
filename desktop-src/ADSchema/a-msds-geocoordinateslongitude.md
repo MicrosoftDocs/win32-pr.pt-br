@@ -1,11 +1,11 @@
 ---
-title: ms-DS-geocoordinations-atributo de longitude
-description: Coordenadas geográficas para serviços de localização, especificamente, longitude (em subgraus) do escritório ou da sala de conferência.
+title: Atributo ms-DS-GeoCoordinates-Longitude
+description: Coordenadas geográficas para serviços de localização, especificamente, longitude (em microdegrees) do escritório ou da sala de conferência.
 ms.assetid: e2ac1833-9a5f-42fb-b338-e26937419f69
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-GeoCoordinates-esquema de AD de atributos de longitude
-- atributo msDS-GeoCoordinatesLongitude do AD Schema
+- Esquema do AD do atributo ms-DS-GeoCoordinates-Longitude
+- Esquema do AD do atributo msDS-GeoCoordinatesLongitude
 topic_type:
 - apiref
 api_name:
@@ -14,28 +14,28 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 036ff3b4088413f8641028c9c76e708a9a47c2ea
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 455b03e0f9122ab49353f5fff3dcd5e91cb70c4191ca11c83534456b8bd79891
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825369"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118426700"
 ---
-# <a name="ms-ds-geocoordinates-longitude-attribute"></a>ms-DS-geocoordinations-atributo de longitude
+# <a name="ms-ds-geocoordinates-longitude-attribute"></a>Atributo ms-DS-GeoCoordinates-Longitude
 
-Coordenadas geográficas para serviços de localização, especificamente, longitude (em subgraus) do escritório ou da sala de conferência.
+Coordenadas geográficas para serviços de localização, especificamente, longitude (em microdegrees) do escritório ou da sala de conferência.
 
 
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-geocoordinations-longitude       |
-| LDAP-Display-Name | msDS-GeoCoordinatesLongitude         |
+| CN                | ms-DS-GeoCoordinates-Longitude       |
+| Ldap-Display-Name | msDS-GeoCoordinatesLongitude         |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.2185              |
-| System-ID-GUID    | 94c42110-bae4-4cea-8577-af813af5da25 |
+| System-Id-Guid    | 94c42110-bae4-4cea-8577-af813af5da25 |
 | Syntax            | [**Intervalo**](s-interval.md)       |
 
 
@@ -53,15 +53,15 @@ Coordenadas geográficas para serviços de localização, especificamente, longi
 | ID do link                | \-                                                   |
 | MAPI-Id                | \-                                                   |
 | System-Only            | Falso                                                |
-| É de valor único       | True                                                 |
-| É indexado             | True                                                 |
-| No catálogo global      | Falso                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                         |
+| Tem valor único       | Verdadeiro                                                 |
+| É indexado             | Verdadeiro                                                 |
+| No Catálogo Global      | Falso                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                         |
 | Range-Lower            | \-                                                   |
 | Range-Upper            | \-                                                   |
 | Search-Flags           | 0x00000001                                           |
 | System-Flags           | 0x00000000                                           |
-| Classes usadas em        | [**Destinatário de email**](c-mailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário do email**](c-mailrecipient.md)<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TB_SAVERESTORE (commctrl. h)
-description: Envie esta mensagem para iniciar o salvamento ou a restauração de um estado da barra de ferramentas.
+title: TB_SAVERESTORE mensagem (Commctrl.h)
+description: Envie esta mensagem para iniciar a salvação ou a restauração de um estado da barra de ferramentas.
 ms.assetid: 59f51d07-cd08-4d6f-9d19-614064ba6f20
 keywords:
-- Controles de TB_SAVERESTORE de mensagens do Windows
+- TB_SAVERESTORE controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5e87e4ddbed87e81a88c8711c9931dcf95cf9e59
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 94d04c16fda40bf66736431a684398eddf313529c669cc6db9ec49fbaad4f6f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118168016"
 ---
-# <a name="tb_saverestore-message"></a>TB de \_ mensagem SAVERESTORE
+# <a name="tb_saverestore-message"></a>Mensagem \_ SAVERESTORE de TB
 
-Envie esta mensagem para iniciar o salvamento ou a restauração de um estado da barra de ferramentas.
+Envie esta mensagem para iniciar a salvação ou a restauração de um estado da barra de ferramentas.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -34,26 +34,26 @@ Envie esta mensagem para iniciar o salvamento ou a restauração de um estado da
 *wParam* 
 </dt> <dd>
 
-Sinalizador de salvar ou restaurar. Se esse parâmetro for **true**, as informações serão salvas. Se for **false**, as informações serão restauradas.
+Salvar ou restaurar sinalizador. Se esse parâmetro for **TRUE,** as informações são salvas. Se for **FALSE,** as informações são restauradas.
 
 </dd> <dt>
 
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**TBSAVEPARAMS**](/windows/win32/api/commctrl/ns-commctrl-tbsaveparamsa) que especifica a chave do registro, a subchave e o nome do valor das informações de estado da barra de ferramentas.
+Ponteiro para uma [**estrutura TBSAVEPARAMS**](/windows/win32/api/commctrl/ns-commctrl-tbsaveparamsa) que especifica a chave do Registro, a subkey e o nome do valor para as informações de estado da barra de ferramentas.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-Para a versão 4,72 e anterior, para usar essa mensagem para salvar ou restaurar uma barra de ferramentas, a janela pai do controle Toolbar deve implementar um manipulador para o código de notificação [tbn \_ GETBUTTONINFO](tbn-getbuttoninfo.md) . A barra de ferramentas emite essa notificação para recuperar informações sobre cada botão conforme ele é restaurado.
+Para a versão 4.72 e anteriores, para usar essa mensagem para salvar ou restaurar uma barra de ferramentas, a janela pai do controle de barra de ferramentas deve implementar um manipulador para o código de notificação [ \_ TBN GETBUTTONINFO.](tbn-getbuttoninfo.md) A barra de ferramentas emite essa notificação para recuperar informações sobre cada botão conforme ele é restaurado.
 
-A versão 5,80 inclui uma nova opção salvar/restaurar. No início do processo e, como cada botão é salvo ou restaurado, seu aplicativo receberá uma notificação [tbn \_ Save](tbn-save.md) ou [tbn \_ Restore](tbn-restore.md) . Para usar essa opção, você deve implementar manipuladores de notificação para fornecer ao shell as informações de bitmap e estado necessárias para salvar ou restaurar com êxito o estado da barra de ferramentas.
+A versão 5.80 inclui uma nova opção de salvar/restaurar. No início do processo e conforme cada botão é salvo ou restaurado, seu aplicativo receberá uma notificação [TBN \_ SAVE](tbn-save.md) ou [TBN \_ RESTORE.](tbn-restore.md) Para usar essa opção, você deve implementar manipuladores de notificação para fornecer ao Shell as informações de bitmap e estado necessárias para salvar ou restaurar com êxito o estado da barra de ferramentas.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,9 +61,9 @@ A versão 5,80 inclui uma nova opção salvar/restaurar. No início do processo 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **TB \_ SAVERESTOREW** (Unicode) e **TB \_ SAVERESTOREA** (ANSI)<br/>             |
 
 

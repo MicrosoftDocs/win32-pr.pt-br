@@ -1,5 +1,5 @@
 ---
-title: Usando retângulos (SDK do Windows Media Player)
+title: usando retângulos (Windows Media Player SDK)
 description: Usando retângulos
 ms.assetid: b3fc16b4-dc93-43c0-a97d-5234e36437c8
 keywords:
@@ -10,16 +10,16 @@ keywords:
 - Processar função, retângulos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b48f16888d8e71c052d216a838683f2b7127e75
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: 79dd46928ccf8f8a0a465fa71fbb6b1bc1b4f48cbdb5c37b4b93ffd21c78c6b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "105791475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118117290"
 ---
-# <a name="using-rectangles-windows-media-player-sdk"></a>Usando retângulos (SDK do Windows Media Player)
+# <a name="using-rectangles-windows-media-player-sdk"></a>usando retângulos (Windows Media Player SDK)
 
-Os retângulos são usados para especificar áreas retangulares no Microsoft Windows. Você pode criar vários retângulos em sua janela, mas o Windows Media Player fornece os valores de um retângulo por meio da função [IWMPEffects:: render](/previous-versions/windows/desktop/api/effects/nf-effects-iwmpeffects-render) . Se o seu plug-in renderizar usando uma janela, o retângulo será a área do cliente da janela. Isso é chamado de retângulo PRC e define o retângulo pelo qual o Windows Media Player exibirá sua visualização. Use isso frequentemente para ter certeza de que você não desenha além das extensões do retângulo fornecido pelo Windows Media Player.
+Os retângulos são usados para especificar áreas retangulares no Microsoft Windows. você pode criar vários retângulos em sua janela, mas Windows Media Player fornece os valores de um retângulo por meio da função [IWMPEffects:: Render](/previous-versions/windows/desktop/api/effects/nf-effects-iwmpeffects-render) . Se o seu plug-in renderizar usando uma janela, o retângulo será a área do cliente da janela. isso é chamado de retângulo prc e define o retângulo para o qual Windows Media Player exibirá sua visualização. Use isso frequentemente para ter certeza de que você não desenha além das extensões do retângulo fornecido pelo Windows Media Player.
 
 Um retângulo tem quatro valores que o definem. Elas são esquerda, superior, direita e inferior. O canto superior esquerdo do retângulo é definido pela esquerda e na parte superior, e o canto inferior direito do retângulo é definido pela parte inferior e direita.
 

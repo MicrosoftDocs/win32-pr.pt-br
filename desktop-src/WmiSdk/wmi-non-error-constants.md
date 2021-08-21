@@ -5,12 +5,12 @@ ms.tgt_platform: multiple
 title: Constantes de não erro do WMI (WbemCli. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0880c9fda00f03c1fa8b174242bfc84ed9d75ad8
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 651013d89577e1f8c336dd1b070cdb0c8476fe73206c681371c0ad84bfa99fa2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165322"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118107017"
 ---
 # <a name="wmi-non-error-constants"></a>Constantes de não erro do WMI
 
@@ -23,7 +23,7 @@ Se uma operação não resultar em um erro, o WMI retornará um dos códigos a s
 
  
 
-Em C++, você pode chamar [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) e especificar **C: \\ Windows \\ System32 \\ WBEM \\wmiutils.dll** como o módulo de mensagem.
+em C++, você pode chamar [**FormatMessage**](/windows/desktop/api/winbase/nf-winbase-formatmessage) e especificar **C: \\ Windows \\ System32 \\ wbem \\wmiutils.dll** como o módulo de mensagem.
 
 <dl> <dt>
 
@@ -217,7 +217,7 @@ Reservado para uso futuro.
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                         |
-| parâmetro<br/>                   | <dl> <dt>WbemCli. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>WbemCli. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WbemCli. idl</dt> </dl> |
 
 

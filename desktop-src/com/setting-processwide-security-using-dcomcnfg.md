@@ -34,7 +34,7 @@ Para habilitar a segurança de um aplicativo, você deve definir um nível de au
 
 **Para definir o nível de autenticação de um aplicativo**
 
-1.  Na página **de** propriedades Aplicativos Dcomcnfg.exe, selecione o aplicativo e clique no **botão** Propriedades (ou clique duas vezes no aplicativo selecionado).
+1.  Na página **de** propriedades Aplicativos Dcomcnfg.exe, selecione o  aplicativo e clique no botão Propriedades (ou clique duas vezes no aplicativo selecionado).
 
 2.  Na página **Geral,** selecione um nível de autenticação diferente **de (Nenhum)** na caixa **de listagem Nível** de Autenticação.
 
@@ -46,7 +46,7 @@ O local definido para seu aplicativo determina o computador no qual o aplicativo
 
 **Para definir o local de um aplicativo**
 
-1.  Com Dcomcnfg.exe em execução, selecione  o aplicativo na  página Aplicativos e escolha o botão Propriedades (ou clique duas vezes no aplicativo selecionado).
+1.  Com Dcomcnfg.exe em execução, selecione o  aplicativo na  página Aplicativos e escolha o botão Propriedades (ou clique duas vezes no aplicativo selecionado).
 
 2.  Na página **Local,** marque uma ou mais caixas de seleção que correspondem aos locais em que você deseja que o aplicativo seja executado. Se você marcar mais de uma caixa de seleção, o COM usará o primeiro que se aplicar. Se Dcomcnfg.exe estiver sendo executado no computador servidor, sempre selecione Executar **Aplicativo neste computador.**
 
@@ -58,7 +58,7 @@ Com Dcomcnfg.exe, você pode definir permissões de lançamento para controlar a
 
 **Para definir permissões de lançamento para um aplicativo**
 
-1.  Com Dcomcnfg.exe em execução, selecione  o aplicativo na  página Aplicativos e escolha o botão Propriedades (ou clique duas vezes no aplicativo selecionado).
+1.  Com Dcomcnfg.exe em execução, selecione o  aplicativo na  página Aplicativos e escolha o botão Propriedades (ou clique duas vezes no aplicativo selecionado).
 
 2.  Na página **Propriedade** de segurança, selecione o botão de opção Usar permissões de lançamento **personalizadas** e escolha o **botão Editar** na mesma área.
 
@@ -82,7 +82,7 @@ O processo de definição de permissões de acesso para um aplicativo é semelha
 
 **Para definir permissões de acesso para um aplicativo**
 
-1.  Com Dcomcnfg.exe em execução, selecione  o aplicativo na  página Aplicativos e escolha o botão Propriedades (ou clique duas vezes no aplicativo selecionado).
+1.  Com Dcomcnfg.exe em execução, selecione o  aplicativo na  página Aplicativos e escolha o botão Propriedades (ou clique duas vezes no aplicativo selecionado).
 
 2.  Na página **Propriedade** de segurança, selecione o botão de opção Usar permissões **de acesso personalizadas** e escolha o **botão Editar** na mesma área.
 
@@ -102,7 +102,7 @@ A identidade de um aplicativo é a conta usada para executar o aplicativo. A ide
 
 **Para definir a identidade de um aplicativo**
 
-1.  Com Dcomcnfg.exe em execução, selecione  o aplicativo na  página Aplicativos e escolha o botão Propriedades (ou clique duas vezes no aplicativo selecionado).
+1.  Com Dcomcnfg.exe em execução, selecione o  aplicativo na  página Aplicativos e escolha o botão Propriedades (ou clique duas vezes no aplicativo selecionado).
 
 2.  Na página **de propriedades** Identidade, selecione o botão de opção para a identidade que você deseja. Se você escolher **Este Usuário**, deverá digitar o nome de usuário, a senha e a senha confirmada.
 
@@ -124,13 +124,13 @@ Você procuraria o banco de dados de usuário Dcomcnfg.exe quando precisar encon
 
 ## <a name="dcomcnfgexe-and-64-bit-applications"></a>Dcomcnfg.exe aplicativos de 64 bits e de 64 bits
 
-Em sistemas operacionais x64 do Windows XP para o Windows Server 2008, a versão de 64 bits do DCOMCNFG.EXE não configura corretamente aplicativos DCOM de 32 bits para ativação remota. Esse comportamento faz com que os componentes que devem ser ativados remotamente em vez disso sejam ativados localmente. Esse comportamento não ocorre no Windows 7 e Windows Server 2008 R2 e versões superiores.
+em sistemas operacionais x64 do Windows XP para o Windows Server 2008, a versão de 64 bits do DCOMCNFG.EXE não configura corretamente os aplicativos DCOM de 32 bits para ativação remota. Esse comportamento faz com que os componentes que devem ser ativados remotamente sejam ativados localmente. esse comportamento não ocorre no Windows 7 e no Windows Server 2008 R2 e em versões posteriores.
 
-A solução alternativa é usar a versão de 32 bits do DCOMCNFG. Execute a versão de 32 bits do mmc.exe e carregue a versão de 32 bits do snap-in dos Serviços de Componentes usando a linha de comando a seguir.
+A solução alternativa é usar a versão de 32 bits do DCOMCNFG. Execute a versão de 32 bits do mmc.exe e carregue a versão de 32 bits do snap-in Serviços de componentes usando a linha de comando a seguir.
 
-C: \\ WINDOWS \\ SysWOW64>**mmc comexp.msc /32**
+C: \\ Windows \\ SysWOW64>**MMC comexp. msc/32**
 
-A versão de 32 bits dos Serviços de Componentes registra corretamente aplicativos DCOM de 32 bits para ativação remota.
+A versão de 32 bits dos serviços de componentes registra corretamente aplicativos DCOM de 32 bits para ativação remota.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

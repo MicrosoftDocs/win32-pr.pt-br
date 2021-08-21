@@ -8,12 +8,12 @@ keywords:
 - ANÚNCIO de segurança, delegação
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26be1f9350c664d289832874994e2b3ba2e696c0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5e1f48b851aa17abb9f9823e0b4cf32e845786b29d31e45daa4c9965ce60aef8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118019783"
 ---
 # <a name="delegation"></a>Delegação
 
@@ -25,9 +25,9 @@ Uma ACE pode conceder direitos administrativos específicos para os objetos em u
 
 Agora, o usuário 1 pode criar novos usuários e grupos em contabilidade corporativa e definir as senhas em usuários existentes, mas o usuário 1 não pode criar nenhuma outra classe de objeto e não pode afetar os usuários em nenhum outro contêiner, a menos que, é claro, o usuário 1 receba esse acesso por ACEs nos outros contêineres.
 
- 
+ 
 
- 
+ 
 
 
 

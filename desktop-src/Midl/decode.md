@@ -1,9 +1,9 @@
 ---
-title: atributo de decodificação
-description: O atributo \ decodificar \ ACF especifica que um procedimento ou um tipo precisa de suporte de desserialização.
+title: atributo decode
+description: O atributo \ decode\ ACF especifica que um procedimento ou um tipo precisa de suporte à des serialização.
 ms.assetid: 78cd855f-6731-4ef8-9097-e8da5a9b3bdc
 keywords:
-- atributo de decodificação MIDL
+- decodificar atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118384715"
 ---
-# <a name="decode-attribute"></a>atributo de decodificação
+# <a name="decode-attribute"></a>atributo decode
 
-O atributo **\[ decodificar \]** ACF especifica que um procedimento ou um tipo precisa de suporte de desserialização.
+O **\[ atributo \]** ACF decodificar especifica que um procedimento ou um tipo precisa de suporte à des serialização.
 
 ``` syntax
 [ 
@@ -42,49 +42,49 @@ typedef [decode [ , type-attribute-list] ] type-name;
 
 <dl> <dt>
 
-*interface-atributo-lista* 
+*interface-attribute-list* 
 </dt> <dd>
 
 Especifica outros atributos que se aplicam à interface como um todo.
 
 </dd> <dt>
 
-*nome da interface* 
+*interface-name* 
 </dt> <dd>
 
 Especifica o nome da interface.
 
 </dd> <dt>
 
-*interface-definição* 
+*interface-definition* 
 </dt> <dd>
 
-Especifica as instruções IDL que formam a definição da interface.
+Especifica instruções IDL que formam a definição da interface.
 
 </dd> <dt>
 
-*lista de atributos de op* 
+*op-attribute-list* 
 </dt> <dd>
 
-Especifica outros atributos operacionais que se aplicam ao procedimento, como **\[** [**Encode**](encode.md) **\]** .
+Especifica outros atributos operacionais que se aplicam ao procedimento, como **\[** [**codificar**](encode.md) **\]** .
 
 </dd> <dt>
 
-*proc-nome* 
+*proc-name* 
 </dt> <dd>
 
 Especifica o nome do procedimento.
 
 </dd> <dt>
 
-*lista de atributos de tipo* 
+*type-attribute-list* 
 </dt> <dd>
 
 Especifica outros atributos, como **\[** [**codificar**](encode.md) **\]** e **\[** [**alocar**](allocate.md) **\]** .
 
 </dd> <dt>
 
-*nome do tipo* 
+*type-name* 
 </dt> <dd>
 
 Especifica um tipo definido no arquivo IDL.
@@ -93,11 +93,11 @@ Especifica um tipo definido no arquivo IDL.
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **\[ decodificar \]** faz com que o compilador MIDL gere código que um aplicativo pode usar para recuperar dados serializados de um buffer. O **\[** [](encode.md) **\]** atributo codificar fornece suporte de serialização, gerando o código para serializar dados em um buffer.
+O **\[ atributo \] de decodificar** faz com que o compilador MIDL gere código que um aplicativo pode usar para recuperar dados serializados de um buffer. O **\[** [**atributo de**](encode.md) **\]** codificação dá suporte à serialização, gerando o código para serializar dados em um buffer.
 
-Use os **\[** atributos de [**codificação**](encode.md) **\]** e **\[ decodificação \]** em um ACF para gerar código de SERIALIZAÇÃO para procedimentos ou tipos definidos no arquivo IDL de uma interface. Quando usado como um atributo de interface, **\[ decodificar \]** aplica-se a todos os tipos e procedimentos definidos no arquivo IDL. Quando usado como um atributo de tipo, **\[ decodificar \]** aplica-se somente ao tipo especificado. Quando usado como um atributo operacional, **\[ decodificar \]** aplica-se somente a esse procedimento.
+Use os **\[** [**atributos de**](encode.md) **\]** **\[ \]** codificação e decodificar em um ACF para gerar código de serialização para procedimentos ou tipos definidos no arquivo IDL de uma interface. Quando usado como um atributo de interface, **\[ a \] decodificar** se aplica a todos os tipos e procedimentos definidos no arquivo IDL. Quando usado como um atributo de tipo, **\[ a \] decodificar** aplica-se somente ao tipo especificado. Quando usado como um atributo operacional, **\[ a decodificar \]** aplica-se somente a esse procedimento.
 
-Para obter mais informações sobre como usar esse suporte de serialização, consulte [serialização de serviços](/windows/desktop/Rpc/serialization-services) e **\[** [**codificação**](encode.md) **\]** .
+Para obter mais informações sobre como usar esse suporte de serialização, consulte [Serviços de Serialização e](/windows/desktop/Rpc/serialization-services) **\[** [**codificar**](encode.md) **\]** .
 
 ## <a name="see-also"></a>Confira também
 
@@ -106,10 +106,10 @@ Para obter mais informações sobre como usar esse suporte de serialização, co
 [Arquivo de configuração de aplicativo (ACF)](application-configuration-file-acf-.md)
 </dt> <dt>
 
-[**aloca**](allocate.md)
+[**Alocar**](allocate.md)
 </dt> <dt>
 
-[**codificado**](encode.md)
+[**Codificar**](encode.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 259c9addbb3ee41c7b12cd7ea77eb8393b69daaf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 32bf887c7f37c7eadc50cd0a0d49a00c887e6f8adf4c0f3cca81bb748ec63b31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009210"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118023323"
 ---
 # <a name="cfstr_dspropertypageinfo"></a>CFSTR \_ DSPROPERTYPAGEINFO
 
@@ -45,7 +45,7 @@ O formato de área de transferência **CFSTR \_ DSPROPERTYPAGEINFO** fornece um 
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>DSClient. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>DSClient. h</dt> </dl> |
 
 
 

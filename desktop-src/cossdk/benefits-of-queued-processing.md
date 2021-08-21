@@ -13,27 +13,27 @@ ms.locfileid: "118308776"
 ---
 # <a name="benefits-of-queued-processing"></a>Benefícios do processamento em fila
 
-Ao projetar novos aplicativos, os desenvolvedores devem considerar as implicações dos componentes de codificação para processamento em tempo real (síncrono) versus processamento em fila (assíncrono). A escolha depende dos requisitos do aplicativo específico, conforme determinado pela lógica de negócios subjacente. Como uma diretriz, o processamento em fila oferece as seguintes vantagens em relação ao processamento em tempo real:
+Ao projetar novos aplicativos, os desenvolvedores devem considerar as implicações dos componentes de codificação para processamento em tempo real (síncrono) versus processamento enxuado (assíncrono). A escolha depende dos requisitos do aplicativo específico, conforme determinado pela lógica de negócios subjacente. Como diretriz, o processamento na fila oferece as seguintes vantagens em relação ao processamento em tempo real:
 
 -   Dependência reduzida da disponibilidade do componente
--   Tempos de vida de componente mais curtos
+-   Tempo de vida do componente mais curto
 -   Produtividade ininterrupta ao usar aplicativos desconectados
 -   Confiabilidade da mensagem
 -   Agendamento de servidor eficiente
 
 ## <a name="component-availability"></a>Disponibilidade do componente
 
-Em um aplicativo de processamento em tempo real, se apenas um componente da transação não estiver disponível — talvez devido a problemas de sobrecarga ou de rede do servidor — todo o processo é bloqueado e não pode ser concluído. Por outro lado, um aplicativo que usa o serviço de componentes na fila COM+ separa a transação em atividades que devem ser concluídas agora e aquelas que podem ser concluídas posteriormente. Por exemplo, as mensagens podem ser enfileiradas para processamento posterior, para que o componente solicitante seja gratuito para outras tarefas.
+Em um aplicativo de processamento em tempo real, se apenas um componente da transação não estiver disponível , talvez devido à sobrecarga do servidor ou problemas de rede, todo o processo será bloqueado e não poderá ser concluído. Por outro lado, um aplicativo que usa o serviço de componentes em fila COM+ separa a transação em atividades que devem ser concluídas agora e aquelas que podem ser concluídas posteriormente. Por exemplo, as mensagens podem ser en fila para processamento posterior para que o componente solicitante seja livre para outras tarefas.
 
-## <a name="component-lifetimes"></a>Tempos de vida do componente
+## <a name="component-lifetimes"></a>Tempo de vida do componente
 
-Um aplicativo que usa o serviço de componentes na fila permite que o componente do servidor opere independentemente do cliente. Como resultado, os componentes do servidor podem ser concluídos mais rapidamente. Em um sistema em tempo real, o componente de servidor existe desde o momento em que é criado até que o objeto seja finalmente liberado. O servidor aguarda que o cliente faça chamadas de método e que os resultados sejam retornados, o que nega o ciclo rápido de objetos de servidor e limita a escalabilidade do servidor.
+Um aplicativo que usa o serviço de componentes na fila permite que o componente de servidor opere independentemente do cliente. Como resultado, os componentes do servidor podem ser concluídos mais rapidamente. Em um sistema em tempo real, o componente de servidor existe desde o momento em que ele é criado até que o objeto seja finalmente liberado. O servidor aguarda que o cliente faça chamadas de método e que os resultados sejam retornados, o que nega o ciclo rápido de objetos de servidor e limita a escalabilidade do servidor.
 
 ## <a name="disconnected-applications"></a>Aplicativos desconectados
 
-O uso crescente de laptops, notebooks e computadores Palm criou uma necessidade de aplicativos que se desconectam ocasionalmente clientes ou usuários móveis. Em um sistema enfileirado, esses usuários podem continuar a trabalhar em um cenário desconectado ou quando não estiverem conectados ao servidor, e poderão se conectar posteriormente aos bancos de dados ou servidores para processar suas solicitações. Por exemplo, um vendedor pode receber pedidos de clientes e, posteriormente, conectar-se ao departamento de remessa para processar esses pedidos.
+O uso cada vez maior de laptops, notebooks e computadores de mão de trabalho criou uma necessidade de aplicativos que a serviço ocasionalmente desconectaram clientes ou usuários móveis. Em um sistema na fila, esses usuários podem continuar a trabalhar em um cenário desconectado ou quando não estão conectados ao servidor e podem se conectar posteriormente aos bancos de dados ou servidores para processar suas solicitações. Por exemplo, um vendedor pode receber pedidos de clientes e, posteriormente, conectar-se ao departamento de remessa para processar esses pedidos.
 
-Se você tiver um componente que pode ser executado conectado ou desconectado, as mensagens estão viajando em uma direção e raramente há necessidade de alternar para frente e para trás. Por exemplo, no cenário de ordem demorada, o componente de envio recebe a mensagem e a processa. Ele pode gerar outro componente para cobrança ou auditoria. O cliente é confirmado antes de o servidor ser iniciado. A mensagem não é enviada até que o aplicativo seja confirmado.
+Se você tiver um componente que pode ser executado conectado ou desconectado, as mensagens estão viajando em uma direção e raramente há a necessidade de alternar para frente e para trás. Por exemplo, no cenário de tomada de pedido, o componente de remessa recebe a mensagem e a processa. Ele pode gerar outro componente para cobrança ou auditoria. O cliente faz commits antes de o servidor ser iniciado. A mensagem não é enviada até que o aplicativo seja commit.
 
 A ilustração a seguir mostra o fluxo de informações em um cenário desconectado.
 
@@ -41,11 +41,11 @@ A ilustração a seguir mostra o fluxo de informações em um cenário desconect
 
 ## <a name="message-reliability"></a>Confiabilidade da mensagem
 
-O serviço de enfileiramento de mensagens é uma ferramenta poderosa que usa técnicas de banco de dados para ajudar a proteger o dado de maneira robusta. No caso de uma falha de servidor, o enfileiramento de mensagens garante que as transações sejam revertidas para que as mensagens não sejam perdidas e os dados não estejam corrompidos.
+O En fila de mensagens é uma ferramenta poderosa que usa técnicas de banco de dados para ajudar a proteger os dados de maneira robusta. No caso de uma falha do servidor, o En enrosamento de mensagens garante que as transações sejam regredidas para que as mensagens não sejam perdidas e os dados não sejam corrompidos.
 
 ## <a name="server-scheduling"></a>Agendamento de servidor
 
-Um aplicativo que usa componentes enfileirados é adequado para a execução de componentes com mudança de tempo, o que adia o trabalho não crítico para um período de fora de pico. Esse é o mesmo conceito útil que foi aplicado ao processamento de modo de lote tradicional. Solicitações semelhantes podem ser adiadas para execução contígua pelo servidor em vez de exigir que o servidor reaja imediatamente a uma ampla variedade de solicitações.
+Um aplicativo que usa componentes na fila é adequado para a execução de componentes com deslocamento de tempo, o que adia o trabalho não crítico para um período fora do pico. Esse é o mesmo conceito útil que foi aplicado ao processamento de modo de lote tradicional. Solicitações semelhantes podem ser adiadas para execução contígua pelo servidor em vez de exigir que o servidor reaja imediatamente a uma ampla variedade de solicitações.
 
  
 

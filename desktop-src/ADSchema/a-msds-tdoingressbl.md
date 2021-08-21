@@ -1,11 +1,11 @@
 ---
-title: ms-DS-TDO-atributo de entrada-BL
-description: Link de regras de entrada do backlink para o TDO no objeto.
+title: Atributo ms-DS-TDO-Ingress-BL
+description: Link de backlink para regras de entrada TDO no objeto .
 ms.assetid: 27ca02fe-5803-49e6-acc7-2a6946e72c5f
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo ms-DS-TDO-ingress-BL
-- atributo msDS-TDOIngressBL do AD Schema
+- Esquema do AD do atributo ms-DS-TDO-Ingress-BL
+- Esquema do AD do atributo msDS-TDOIngressBL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c0fe74a1df1193d27e257dd44037c07e71cf357
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 65ac91f48915b30ef1214c0b140262f5b3acd7f7a8ade7b2ed92bcc3ba1cb048
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118425758"
 ---
-# <a name="ms-ds-tdo-ingress-bl-attribute"></a>ms-DS-TDO-atributo de entrada-BL
+# <a name="ms-ds-tdo-ingress-bl-attribute"></a>Atributo ms-DS-TDO-Ingress-BL
 
-Link de regras de entrada do backlink para o TDO no objeto.
+Link de backlink para regras de entrada TDO no objeto .
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | ms-DS-TDO-ingress-BL                    |
-| LDAP-Display-Name | msDS-TDOIngressBL                       |
+| CN                | ms-DS-TDO-Ingress-BL                    |
+| Ldap-Display-Name | msDS-TDOIngressBL                       |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.2193                 |
-| System-ID-GUID    | 5a5661a1-97c6-544b-8056-e430fe7bc554    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | 5a5661a1-97c6-544b-8056-e430fe7bc554    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -52,11 +52,11 @@ Link de regras de entrada do backlink para o TDO no objeto.
 |------------------------|---------------------------------|
 | ID do link                | 2191                            |
 | MAPI-Id                | \-                              |
-| System-Only            | True                            |
-| É de valor único       | Falso                           |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
