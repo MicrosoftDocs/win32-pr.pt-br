@@ -3,7 +3,7 @@ title: Mensagem de TDM_SET_BUTTON_ELEVATION_REQUIRED_STATE (commctrl. h)
 description: Especifica se um determinado botão de diálogo de tarefa ou link de comando deve ter um ícone de escudo de UAC (controle de conta de usuário); ou seja, se a ação invocada pelo botão requer elevação.
 ms.assetid: c4321fdb-3ea9-49bf-b53d-eb73d5b11084
 keywords:
-- Controles de TDM_SET_BUTTON_ELEVATION_REQUIRED_STATE de mensagens do Windows
+- controles de Windows de mensagem de TDM_SET_BUTTON_ELEVATION_REQUIRED_STATE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7ef5f8479e88a3b63cbd5fab6a5686913864fd9c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2c69998da085a74b144179a0a4244c787cd3a871d63eca1e5df9c4e555b1a7e5
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086320"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104616"
 ---
 # <a name="tdm_set_button_elevation_required_state-message"></a>\_Mensagem de \_ \_ \_ estado necessário de elevação do botão \_ de TDM Set
 
@@ -43,7 +43,7 @@ Defina como 0 para designar que a ação invocada pelo botão não requer eleva�
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é ignorado.
 
@@ -53,9 +53,9 @@ O valor de retorno é ignorado.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

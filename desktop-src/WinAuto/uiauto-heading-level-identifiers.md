@@ -1,6 +1,6 @@
 ---
-title: Identificadores de nível de título (UIAutomationClient. h)
-description: Indica o nível de título de um elemento de automação da interface do usuário da Microsoft.
+title: Identificadores de nível de título (UIAutomationClient.h)
+description: Indica o nível de título de um elemento microsoft Automação da Interface do Usuário.
 ms.assetid: D77D70DA-0EEE-438F-B467-159E0A8BF2B3
 topic_type:
 - apiref
@@ -21,22 +21,22 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b24c214e66e26bf957f8c0a8012246f86499d6f1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6af1b4bd4d6e22e37303b7bb3eaa6e7d65b27598f25ae96b0977be9d7ee8227a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761384"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861256"
 ---
 # <a name="heading-level-identifiers"></a>Identificadores de nível de título
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Indica o nível de título de um elemento de automação da interface do usuário da Microsoft.
+Indica o nível de título de um elemento microsoft Automação da Interface do Usuário.
 
 <dl> <dt>
 
-<span id="HeadingLevel_None"></span><span id="headinglevel_none"></span><span id="HEADINGLEVEL_NONE"></span>**HeadingLevel \_ nenhum**
+<span id="HeadingLevel_None"></span><span id="headinglevel_none"></span><span id="HEADINGLEVEL_NONE"></span>**HeadingLevel \_ None**
 </dt> <dd> <dl> <dt>
 
 80050
@@ -161,7 +161,7 @@ Nível de título 8.
 
 
 
-Título nível 9.
+Nível de título 9.
 
 
 </dt> </dl> </dd> </dl>
@@ -172,9 +172,9 @@ Título nível 9.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1803\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server\]<br/>                                                 |
-| parâmetro<br/>                   | <dl> <dt>UIAutomationClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1803 somente \[ aplicativos da área de trabalho\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do servidor\]<br/>                                                 |
+| Cabeçalho<br/>                   | <dl> <dt>UIAutomationClient.h</dt> </dl> |
 
 
 

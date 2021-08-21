@@ -1,21 +1,21 @@
 ---
-description: Saiba mais sobre o elemento PageScaling. Este elemento descreve as características de dimensionamento da saída.
+description: Saiba mais sobre o elemento PageScaling. Esse elemento descreve as características de dimensionamento da saída.
 ms.assetid: cf35bb37-bf67-4e86-bfef-9838606982a5
-title: PageScaling
+title: Pagescaling
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 795332f38da331a9f16b614154bf0a9270e613de
-ms.sourcegitcommit: b32433cc0394159c7263809ae67615ab5792d40d
+ms.openlocfilehash: c4cf1a122f71148570cf69fc17455c8ca5c917ee4f441d1bc16be1922705eb81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113119031"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119948126"
 ---
-# <a name="pagescaling"></a>PageScaling
+# <a name="pagescaling"></a>Pagescaling
 
-Este tópico não é atual. Para obter as informações mais atuais, consulte a [especificação do esquema de impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
+Este tópico não é atual. Para obter as informações mais atuais, consulte a [Especificação de Esquema de Impressão](https://download.microsoft.com/download/D/E/C/DECA6E6B-3E81-48E7-B7EF-6D92A547D03C/print-schema-spec-2-0.zip).
 
-Descreve as características de dimensionamento da saída. Determinadas opções desse recurso exigem que o consumidor possa determinar as características das "dimensões de conteúdo do aplicativo". Na ausência da capacidade de determinar essas características, o consumidor deve padronizar a opção de identidade. Essas características são:
+Descreve as características de dimensionamento da saída. Determinadas opções desse recurso exigem que o consumidor possa determinar as características das "dimensões de conteúdo do aplicativo". Na ausência da capacidade de determinar essas características, o consumidor deve usar como padrão a opção de identidade. Essas características são:
 
 
 
@@ -23,7 +23,7 @@ Descreve as características de dimensionamento da saída. Determinadas opções
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tamanho da mídia do aplicativo   | As dimensões da mídia definida pelo layout do aplicativo. O tamanho da mídia do aplicativo pode ou não corresponder a um PageMediaSize com suporte do consumidor.<br/>                                                                          |
 | Tamanho do conteúdo do aplicativo | As dimensões da mídia definida pelo layout do aplicativo. O tamanho da mídia do aplicativo pode ou não corresponder a um PageMediaSize com suporte do consumidor.<br/>                                                                          |
-| Tamanho da sangria do aplicativo   | O deslocamento e a extensão da área de sangria do aplicativo, uma caixa de estouro usada pelo aplicativo para registro e layout, em relação ao tamanho da mídia do aplicativo. A área de sangria será excelente ou igual ao tamanho da mídia do aplicativo.<br/> |
+| Tamanho do Tamanho do Tamanho de Ressarção   | O deslocamento e a extensão da área de vazamento do aplicativo, uma caixa de estouro usada pelo aplicativo para registro e layout, em relação ao tamanho da mídia do aplicativo. A área de ressadação será grande ou igual ao tamanho da mídia do aplicativo.<br/> |
 
 
 
@@ -31,7 +31,7 @@ Descreve as características de dimensionamento da saída. Determinadas opções
 
 -   [Informações do elemento](#element-information)
 -   [Conteúdo estrutural](#structural-content)
--   [Conteúdo de linguagem XML (XML)](#extensible-markup-language-xml-content)
+-   [linguagem XML conteúdo (XML)](#extensible-markup-language-xml-content)
 
 ## <a name="element-information"></a>Informações do elemento
 
@@ -40,8 +40,8 @@ Descreve as características de dimensionamento da saída. Determinadas opções
 | Nome | Valor |
 |----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tipo de elemento <br/>   | Recurso<br/>                                                                                                                                                                                    |
-| Prefixo de escopo <br/> | ?<br/>                                                                                                                                                                                       |
-| Observações <br/>          | Superior, inferior, esquerda e direita são relativos ao PageImageableSize. As coordenadas são relativas a PageImageableSize, em que a origem de é relativa à origem do PageImageableSize.<br/> |
+| Prefixo de definição de scoping <br/> | ?<br/>                                                                                                                                                                                       |
+| Observações <br/>          | Top, Bottom, Left e Right são relativos ao PageImageableSize. As coordenadas são relativas a PageImageableSize, em que a origem de é relativa à origem de PageImageableSize.<br/> |
 
 
 
@@ -115,16 +115,16 @@ A tabela a seguir descreve as características das variáveis definidas na estru
 
 | Nome                               | Tipo de dados         | Unidade                  | Valores com suporte                                                                                                                                                                      | Resumo                                                                      |
 |------------------------------------|-------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| \_OptionName\_<br/>          | string<br/> | characters<br/> | Nome totalmente qualificado válido, conforme definido pelos [namespaces em XML](https://www.w3.org/TR/1999/REC-xml-names-19990114/). Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                           |
-| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma opção que, quando selecionada, desabilita esse recurso.<br/> |
+| \_Optionname\_<br/>          | string<br/> | characters<br/> | Nome totalmente qualificado válido, conforme definido [por Namespaces em XML.](https://www.w3.org/TR/1999/REC-xml-names-19990114/) Se nenhum namespace for especificado, o namespace padrão será assumido.<br/> | O nome da opção.<br/>                                           |
+| \_IdentityOptionValue\_<br/> | string<br/> | n/d<br/>        | True, False.<br/>                                                                                                                                                               | Define uma Opção que, quando selecionada, desabilitará esse recurso.<br/> |
 
 
 
  
 
-## <a name="extensible-markup-language-xml-content"></a>Conteúdo de linguagem XML (XML)
+## <a name="extensible-markup-language-xml-content"></a>linguagem XML conteúdo (XML)
 
-As palavras-chave do esquema de impressão pública são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace. O conteúdo do linguagem XML público (XML) para essa palavra-chave é definido abaixo:
+As palavras-chave public Print Schema são definidas no https://schemas.microsoft.com/windows/2003/08/printing/printschemakeywords namespace . O conteúdo linguagem XML xml público para essa palavra-chave está definido abaixo:
 
 ``` syntax
 <psf:Feature name="psk:PageScaling">

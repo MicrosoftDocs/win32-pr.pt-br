@@ -1,11 +1,11 @@
 ---
-title: Método Modify da classe MicrosoftDNS_AFSDBType
-description: O método Modify atualiza um registro de recurso do servidor de banco de dados Andrew File System (AFSDB).
+title: Modificar o método da classe MicrosoftDNS_AFSDBType classe
+description: O método Modify atualiza um Registro de Recurso do AFSDB (Servidor de Banco de Dados do Sistema de Arquivos) Andrew.
 ms.assetid: 9b98a3cf-cc2b-4497-921b-eaca4d13d6a1
 keywords:
 - Modificar o método DNS
 - Modificar o método DNS, MicrosoftDNS_AFSDBType classe
-- MicrosoftDNS_AFSDBType classe de DNS, método Modify
+- MicrosoftDNS_AFSDBType classe DNS, método Modify
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4752910ab9e8117bfdaf27f93d32be3377158ba5
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 385b80d853c3b610971803c0b1d80a81b7b7c2335186fe4585e63f60c3e3cca3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753558"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120104056"
 ---
-# <a name="modify-method-of-the-microsoftdns_afsdbtype-class"></a>Método Modify da classe MicrosoftDNS \_ AFSDBType
+# <a name="modify-method-of-the-microsoftdns_afsdbtype-class"></a>Modificar o método da classe AfSDBType do MicrosoftDNS \_
 
-O método **Modify** atualiza um registro de recurso do servidor de banco de dados Andrew File System (AFSDB).
+O **método Modify** atualiza um Registro de Recurso do AFSDB (Servidor de Banco de Dados do Sistema de Arquivos) Andrew.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,24 +45,24 @@ void Modify(
 
 <dl> <dt>
 
-*TTL* \[ em, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
-Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de DNS.
+Tempo, em segundos, em que o RR pode ser armazenado em cache por um resolvedor de DNS.
 
 </dd> <dt>
 
-*Subtipo* \[ em, opcional\]
+*Subtipo* \[ in, opcional\]
 </dt> <dd>
 
-Subtipo do servidor host AFS. Para o subtipo 1 (valor = 1), o host tem um servidor de local de volume AFS versão 3,0 para a célula AFS nomeada. No caso do subtipo 2 (valor = 2), o host tem um servidor de nomes autenticado que contém o nó do diretório raiz da célula para a célula de DCE/NCA nomeada.
+Subtipo do servidor AFS host. Para o subtipo 1 (value=1), o host tem um Servidor de Localização de Volume afS versão 3.0 para a célula afS nomeada. No caso do subtipo 2 (value=2), o host tem um servidor de nomes autenticado que mantém o nó de diretório raiz da célula para a célula DCE/NCA nomeada.
 
 </dd> <dt>
 
-*Nome do Server* \[ em, opcional\]
+*ServerName* \[ in, opcional\]
 </dt> <dd>
 
-FQDN que especifica um host que tem um servidor para a célula AFS especificada no nome do proprietário.
+FQDN especificando um host que tem um servidor para a célula AFS especificada no nome do proprietário.
 
 </dd> <dt>
 
@@ -73,13 +73,13 @@ Referência ao objeto modificado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Qualquer parâmetro não especificado permanece inalterado no registro modificado.
+Qualquer parâmetro não especificado é deixado inalterado no registro modificado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -90,7 +90,7 @@ Qualquer parâmetro não especificado permanece inalterado no registro modificad
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -101,7 +101,7 @@ Qualquer parâmetro não especificado permanece inalterado no registro modificad
 [**MicrosoftDNS \_ AFSDBType**](microsoftdns-afsdbtype.md)
 </dt> <dt>
 
-[**Método CreateInstanceFromPropertyData da \_ classe AFSDBType MicrosoftDNS**](microsoftdns-afsdbtype-createinstancefrompropertydata.md)
+[**Método CreateInstanceFromPropertyData da classe AfSDBType do MicrosoftDNS \_**](microsoftdns-afsdbtype-createinstancefrompropertydata.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)

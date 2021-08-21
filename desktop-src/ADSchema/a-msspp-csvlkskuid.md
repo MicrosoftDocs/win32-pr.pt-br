@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c3c77f9b29747d715252882f75384afbfa01172
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: d40a082dd790cf84852a1d5cbb0d27c5ceb2fba3f9fd52b50c3bf744fc2d123f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749328"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119802718"
 ---
 # <a name="ms-spp-csvlk-sku-id-attribute"></a>atributo ms-SPP-CSVLK-SKU-ID
 
@@ -36,7 +36,7 @@ ID de SKU da chave de produto CSVLK usada para criar o objeto de ativação
 | Frequência de atualização  | \-                                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.2081                               |
 | System-ID-GUID    | 9684f739-7b78-476d-8d74-31ad7692eef4                  |
-| Sintaxe            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
 
 
 
@@ -53,7 +53,7 @@ ID de SKU da chave de produto CSVLK usada para criar o objeto de ativação
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |

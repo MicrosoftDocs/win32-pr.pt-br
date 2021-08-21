@@ -47,4 +47,4 @@ O XInput 9.1.0 tem essas desvantagens em relação a outras versões do XInput:
 
 Algumas versões anteriores do XInput foram fornecidas como DLLs redistribuíveis no SDK do DirectX. A primeira versão redistribuível do XInput, XInput 1.1, enviada na versão de abril de 2006 do SDK do DirectX. A última versão a ser disponibilizada no SDK do DirectX foi o XInput 1.3, disponível na versão de junho de 2010 do SDK do DirectX herdado. *O SDK do DirectX não está mais disponível nos Downloads da Microsoft.*
 
-Você pode usar o XInput 1.3 para aplicativos que suportam versões de nível inferior do Windows e exigem a funcionalidade não fornecida pelo XInput 9.1.0 (ou seja, relatórios de subtipo corretos, suporte a áudio, suporte explícito a relatórios de bateria e assim por diante).
+Você pode usar o XInput 1.3 para aplicativos que suportam versões de nível inferior do Windows e exigem funcionalidade não fornecida pelo XInput 9.1.0 (ou seja, relatórios de subtipo corretos, suporte a áudio, suporte explícito a relatórios de bateria e assim por diante).

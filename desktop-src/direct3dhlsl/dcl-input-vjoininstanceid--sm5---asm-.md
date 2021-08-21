@@ -1,23 +1,23 @@
 ---
-title: dcl_input vJoinInstanceID (SM5-ASM)
-description: Declare a ID da instância em uma fase de junção do sombreador envoltória.
+title: dcl_input vJoinInstanceID (sm5 – asm)
+description: Declare a ID da instância em uma fase de junção do sombreador de chassi.
 ms.assetid: 2EABB24A-7ED7-460D-A2AD-D2C40DCCB2DC
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5bae9351fc7183aa37cd660c265aab803f4661e9
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 499da42f6f0b63c6a5315a16cf0d4f1615fdbd9dc99f224c374189c6f73d185e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "103916888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789866"
 ---
-# <a name="dcl_input-vjoininstanceid-sm5---asm"></a>\_vJoinInstanceID de entrada DCL (SM5-ASM)
+# <a name="dcl_input-vjoininstanceid-sm5---asm"></a>dcl \_ input vJoinInstanceID (sm5 - asm)
 
-Declare a ID da instância em uma fase de junção do sombreador envoltória.
+Declare a ID da instância em uma fase de junção do sombreador de chassi.
 
 
 
-| \_vJoinInstanceID de entrada DCL |
+| dcl \_ input vJoinInstanceID |
 |----------------------------|
 
 
@@ -36,11 +36,11 @@ Declare a ID da instância em uma fase de junção do sombreador envoltória.
 
 ## <a name="remarks"></a>Comentários
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        | X    |        |          |       |         |
 
@@ -48,7 +48,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
 Essa instrução tem suporte nos seguintes modelos de sombreador:
 
@@ -57,7 +57,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | não        |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | não        |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -71,7 +71,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 
 <dl> <dt>
 
-[Assembly do Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly do modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

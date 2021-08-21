@@ -3,19 +3,19 @@ title: Origem da imagem enviada por push
 description: Origem da imagem enviada por push
 ms.assetid: 6cc290d8-2c15-4789-970d-9a3663a64d08
 keywords:
-- Aparências móveis do Windows Media Player, origem da imagem do botão
+- Windows Media Player Aparência móvel, origem da imagem do botão
 - aparência, origem da imagem do botão
 - referência para capas, botões
 - botões em capas, origem da imagem
 - origem da imagem para capas, botões
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 021c77a305e0f6981823c8a1e471862554c32e08
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0b336f19900b53a4ae9fff39ce76af9fe52daac4de9e94fb09dcf7b0561f1dde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119861836"
 ---
 # <a name="pushed-image-source"></a>Origem da imagem enviada por push
 
@@ -50,9 +50,9 @@ Se você fizer isso, nenhum dos botões poderá exibir uma imagem enviada por pu
 [**Botões**](buttons.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

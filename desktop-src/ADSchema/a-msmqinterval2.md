@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 531753a15d9d1f4a3155e087b7a10a12551ba42d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 85f3368e604992afa2727539660370c890e375a4e128118850a9f94a4bea5b7d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803295"
 ---
 # <a name="msmq-interval2-attribute"></a>MSMQ-Interval2 atributo
 
@@ -58,7 +58,7 @@ No modo misto do MSMQ, o tempo de replicação padrão entre sites.
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
 | No catálogo global      | Falso                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
@@ -66,7 +66,7 @@ No modo misto do MSMQ, o tempo de replicação padrão entre sites.
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -79,7 +79,7 @@ No modo misto do MSMQ, o tempo de replicação padrão entre sites.
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
 | No catálogo global      | Falso                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
@@ -87,7 +87,7 @@ No modo misto do MSMQ, o tempo de replicação padrão entre sites.
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -100,7 +100,7 @@ No modo misto do MSMQ, o tempo de replicação padrão entre sites.
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| É de valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
 | No catálogo global      | Falso                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
@@ -108,7 +108,7 @@ No modo misto do MSMQ, o tempo de replicação padrão entre sites.
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise Configurações**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ No modo misto do MSMQ, o tempo de replicação padrão entre sites.
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise-Configurações**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ No modo misto do MSMQ, o tempo de replicação padrão entre sites.
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise-Configurações**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ No modo misto do MSMQ, o tempo de replicação padrão entre sites.
 | ID do link                | \-                                                                                                        |
 | MAPI-Id                | \-                                                                                                        |
 | System-Only            | Falso                                                                                                     |
-| É de valor único       | True                                                                                                      |
+| Tem valor único       | Verdadeiro                                                                                                      |
 | É indexado             | Falso                                                                                                     |
-| No catálogo global      | Falso                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                              |
+| No Catálogo Global      | Falso                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                              |
 | Range-Lower            | \-                                                                                                        |
 | Range-Upper            | \-                                                                                                        |
 | Search-Flags           | 0x00000000                                                                                                |
 | System-Flags           | 0x00000010                                                                                                |
-| Classes usadas em        | [**MSMQ-Enterprise-Settings**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
+| Classes usadas em        | [**MSMQ-Enterprise-Configurações**](c-msmqenterprisesettings.md)<br/> [**Site**](c-site.md)<br/> |
 
 
 

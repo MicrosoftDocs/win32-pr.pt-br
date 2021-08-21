@@ -1,9 +1,9 @@
 ---
-title: função glTexSubImage2D (GL. h)
-description: A função glTexSubImage2D especifica uma parte de uma imagem de textura unidimensional existente. Você não pode definir uma nova textura com glTexSubImage2D.
+title: Função glTexSubImage2D (Gl.h)
+description: A função glTexSubImage2D especifica uma parte de uma imagem de textura unidimensional existente. Não é possível definir uma nova textura com glTexSubImage2D.
 ms.assetid: 2b6cb663-8e1d-4270-b8ba-5a8b43a2ece7
 keywords:
-- função glTexSubImage2D OpenGL
+- Função GlTexSubImage2D OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a7a0a59ae9e6724386cb2f7891a14e4bf9d4c1a6
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c568afbe63ab01bd2866f180f968ea80101fec2ff22062707f4929d662ea47ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105755573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519696"
 ---
-# <a name="gltexsubimage2d-function"></a>função glTexSubImage2D
+# <a name="gltexsubimage2d-function"></a>Função glTexSubImage2D
 
-A função **glTexSubImage2D** especifica uma parte de uma imagem de textura unidimensional existente. Você não pode definir uma nova textura com **glTexSubImage2D**.
+A **função glTexSubImage2D** especifica uma parte de uma imagem de textura unidimensional existente. Não é possível definir uma nova textura com **glTexSubImage2D.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,28 +51,28 @@ void WINAPI glTexSubImage2D(
 *destino* 
 </dt> <dd>
 
-A textura de destino. Deve ser GL de \_ textura \_ 2D.
+A textura de destino. Deve ser GL \_ TEXTURE \_ 2D.
 
 </dd> <dt>
 
 *level* 
 </dt> <dd>
 
-O número de nível de detalhe. Nível 0 é a imagem base. O nível *n* é a imagem de redução *n* º mipmap.
+O número de nível de detalhes. Nível 0 é a imagem base. O *nível n* é a n *imagem* de redução de mipmap.
 
 </dd> <dt>
 
 *xoffset* 
 </dt> <dd>
 
-Um deslocamento de Texel na direção *x* dentro da matriz de textura.
+Um deslocamento de texel na direção *x* dentro da matriz de textura.
 
 </dd> <dt>
 
 *yoffset* 
 </dt> <dd>
 
-Um deslocamento de Texel na direção *y* dentro da matriz de textura.
+Um deslocamento de texel na direção *y* dentro da matriz de textura.
 
 </dd> <dt>
 
@@ -99,15 +99,15 @@ O formato dos dados de pixel. Ele pode assumir um dos seguintes valores simbóli
 
 | Valor                                                                                                                                                                         | Significado                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="GL_COLOR_INDEX"></span><span id="gl_color_index"></span><dl> <dt>**\_índice de cores GL \_**</dt> </dl>             | Cada elemento é um único valor, um índice de cores. Ele é convertido em formato de ponto fixo (com um número não especificado de 0 bits à direita do ponto binário), deslocado para a esquerda ou para a direita, dependendo do valor e do sinal de \_ mudança de índice GL \_ e adicionado ao \_ deslocamento de índice GL \_ (consulte [**glPixelTransfer**](glpixeltransfer.md)). O índice resultante é convertido em um conjunto de componentes de cor usando o \_ mapa de pixel GL \_ \_ i \_ para \_ R, o GL \_ pixel \_ map \_ i \_ para \_ G, GL \_ pixel \_ map \_ i \_ para \_ B e GL \_ pixel \_ MAP i \_ \_ para \_ tabelas e clamped para o intervalo \[ 0, 1 \] .<br/> |
-| <span id="GL_RED"></span><span id="gl_red"></span><dl> <dt>**GL \_ vermelho**</dt> </dl>                                      | Cada elemento é um único componente vermelho. Ele é convertido em formato de ponto flutuante e montado em um elemento RGBA anexando 0,0 para verde e azul e 1,0 para alfa. Em seguida, cada componente é multiplicado pela escala de c de fator de escala GL \_ \_ com assinatura, adicionado à diferença de c de tendência assinada \_ \_ e clamped ao intervalo de \[ 0, 1 \] (consulte **glPixelTransfer**).<br/>                                                                                                                                                                                                |
-| <span id="GL_GREEN"></span><span id="gl_green"></span><dl> <dt>**GL \_ verde**</dt> </dl>                                | Cada elemento é um único componente verde. Ele é convertido em formato de ponto flutuante e montado em um elemento RGBA anexando 0,0 para vermelho e azul e 1,0 para alfa. Em seguida, cada componente é multiplicado pela escala de c de fator de escala GL \_ \_ com assinatura, adicionado à diferença de c de tendência assinada \_ \_ e clamped ao intervalo de \[ 0, 1 \] (consulte [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                                         |
-| <span id="GL_BLUE"></span><span id="gl_blue"></span><dl> <dt>**\_azul GL**</dt> </dl>                                   | Cada elemento é um único componente azul. Ele é convertido em formato de ponto flutuante e montado em um elemento RGBA anexando 0,0 para vermelho e verde e 1,0 para alfa. Em seguida, cada componente é multiplicado pela escala de c de fator de escala GL \_ \_ com assinatura, adicionado à diferença de c de tendência assinada \_ \_ e clamped ao intervalo de \[ 0, 1 \] (consulte **glPixelTransfer**).<br/>                                                                                                                                                                                                |
-| <span id="GL_ALPHA"></span><span id="gl_alpha"></span><dl> <dt>**GL \_ alfa**</dt> </dl>                                | Cada elemento é um único componente alfa. Ele é convertido em formato de ponto flutuante e montado em um elemento RGBA anexando 0,0 para vermelho, verde e azul. Em seguida, cada componente é multiplicado pela escala de c de fator de escala GL \_ \_ com assinatura, adicionado à diferença de c de tendência assinada \_ \_ e clamped ao intervalo de \[ 0, 1 \] (consulte [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                                                    |
-| <span id="GL_RGB"></span><span id="gl_rgb"></span><dl> <dt>**GL em \_ RGB**</dt> </dl>                                      | Cada elemento é um triplo RGB. Ele é convertido em formato de ponto flutuante e montado em um elemento RGBA anexando 1,0 para alfa. Em seguida, cada componente é multiplicado pela escala de c de fator de escala GL \_ \_ com assinatura, adicionado à diferença de c de tendência assinada \_ \_ e clamped ao intervalo de \[ 0, 1 \] (consulte **glPixelTransfer**).<br/>                                                                                                                                                                                                                                     |
-| <span id="GL_RGBA"></span><span id="gl_rgba"></span><dl> <dt>**Se \_ RGBA**</dt> </dl>                                   | Cada elemento é um elemento RGBA completo. Ele é convertido em ponto flutuante. Em seguida, cada componente é multiplicado pela escala de c de fator de escala GL \_ \_ com assinatura, adicionado à diferença de c de tendência assinada \_ \_ e clamped ao intervalo de \[ 0, 1 \] (consulte **glPixelTransfer**).<br/>                                                                                                                                                                                                                                                                                                |
-| <span id="GL_LUMINANCE"></span><span id="gl_luminance"></span><dl> <dt>**\_luminância GL**</dt> </dl>                    | Cada elemento é um único valor de luminância. Ele é convertido em formato de ponto flutuante e, em seguida, montado em um elemento RGBA replicando o valor de luminância três vezes para vermelho, verde e azul e anexando 1,0 para alfa. Em seguida, cada componente é multiplicado pela escala de c de fator de escala GL \_ \_ com assinatura, adicionado à diferença de c de tendência assinada \_ \_ e clamped ao intervalo de \[ 0, 1 \] (consulte [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                   |
-| <span id="GL_LUMINANCE_ALPHA"></span><span id="gl_luminance_alpha"></span><dl> <dt>**luminância do GL \_ \_ alfa**</dt> </dl> | Cada elemento é um par de luminância/alfa. Ele é convertido em formato de ponto flutuante e, em seguida, montado em um elemento RGBA replicando o valor de luminância três vezes para vermelho, verde e azul. Em seguida, cada componente é multiplicado pela escala de c de fator de escala GL \_ \_ com assinatura, adicionado à diferença de c de tendência assinada \_ \_ e clamped ao intervalo de \[ 0, 1 \] (consulte **glPixelTransfer**).<br/>                                                                                                                                                                         |
+| <span id="GL_COLOR_INDEX"></span><span id="gl_color_index"></span><dl> <dt>**GL \_ COLOR \_ INDEX**</dt> </dl>             | Cada elemento é um único valor, um índice de cores. Ele é convertido em formato de ponto fixo (com um número não especificado de 0 bits à direita do ponto binário), deslocado para a esquerda ou para a direita, dependendo do valor e do sinal de GL INDEX SHIFT e adicionado a \_ \_ GL INDEX OFFSET \_ \_ (consulte [**glPixelTransfer**](glpixeltransfer.md)). O índice resultante é convertido em um conjunto de componentes de cores usando o GL PIXEL MAP I TO R, GL PIXEL MAP I TO G, GL PIXEL MAP I TO B e GL PIXEL MAP I para tabelas A e fixados no intervalo \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ \[ 0,1 \] .<br/> |
+| <span id="GL_RED"></span><span id="gl_red"></span><dl> <dt>**GL \_ RED**</dt> </dl>                                      | Cada elemento é um único componente vermelho. Ele é convertido em formato de ponto flutuante e montado em um elemento RGBA anexando 0,0 para verde e azul e 1,0 para alfa. Cada componente é multiplicado pelo fator de escala assinado GL c SCALE, adicionado ao desvio assinado GL c BIAS e fixado ao intervalo \_ \_ \_ \_ \[ 0,1 \] (consulte **glPixelTransfer**).<br/>                                                                                                                                                                                                |
+| <span id="GL_GREEN"></span><span id="gl_green"></span><dl> <dt>**GL \_ GREEN**</dt> </dl>                                | Cada elemento é um único componente verde. Ele é convertido em formato de ponto flutuante e montado em um elemento RGBA anexando 0,0 para vermelho e azul e 1,0 para alfa. Cada componente é multiplicado pelo fator de escala assinado GL c SCALE, adicionado ao desvio assinado GL c BIAS e fixado ao intervalo \_ \_ \_ \_ \[ 0,1 \] (consulte [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                                         |
+| <span id="GL_BLUE"></span><span id="gl_blue"></span><dl> <dt>**GL \_ BLUE**</dt> </dl>                                   | Cada elemento é um único componente azul. Ele é convertido em formato de ponto flutuante e montado em um elemento RGBA anexando 0,0 para vermelho e verde e 1,0 para alfa. Cada componente é multiplicado pelo fator de escala assinado GL c SCALE, adicionado ao desvio assinado GL c BIAS e fixado ao intervalo \_ \_ \_ \_ \[ 0,1 \] (consulte **glPixelTransfer**).<br/>                                                                                                                                                                                                |
+| <span id="GL_ALPHA"></span><span id="gl_alpha"></span><dl> <dt>**GL \_ ALPHA**</dt> </dl>                                | Cada elemento é um único componente alfa. Ele é convertido em formato de ponto flutuante e montado em um elemento RGBA anexando 0,0 para vermelho, verde e azul. Cada componente é multiplicado pelo fator de escala assinado GL c SCALE, adicionado ao desvio assinado GL c BIAS e fixado ao intervalo \_ \_ \_ \_ \[ 0,1 \] (consulte [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                                                                                    |
+| <span id="GL_RGB"></span><span id="gl_rgb"></span><dl> <dt>**GL \_ RGB**</dt> </dl>                                      | Cada elemento é um triplo RGB. Ele é convertido em formato de ponto flutuante e montado em um elemento RGBA anexando 1.0 para alfa. Cada componente é multiplicado pelo fator de escala assinado GL c SCALE, adicionado ao desvio assinado GL c BIAS e fixado ao intervalo \_ \_ \_ \_ \[ 0,1 \] (consulte **glPixelTransfer**).<br/>                                                                                                                                                                                                                                     |
+| <span id="GL_RGBA"></span><span id="gl_rgba"></span><dl> <dt>**GL \_ RGBA**</dt> </dl>                                   | Cada elemento é um elemento RGBA completo. Ele é convertido em ponto flutuante. Cada componente é multiplicado pelo fator de escala assinado GL c SCALE, adicionado ao desvio assinado GL c BIAS e fixado ao intervalo \_ \_ \_ \_ \[ 0,1 \] (consulte **glPixelTransfer**).<br/>                                                                                                                                                                                                                                                                                                |
+| <span id="GL_LUMINANCE"></span><span id="gl_luminance"></span><dl> <dt>**GL \_ LUMINANCE**</dt> </dl>                    | Cada elemento é um único valor de luminância. Ele é convertido em formato de ponto flutuante e, em seguida, montado em um elemento RGBA replicando o valor de luminância três vezes para vermelho, verde e azul e anexando 1,0 para alfa. Cada componente é multiplicado pelo fator de escala assinado GL c SCALE, adicionado ao desvio assinado GL c BIAS e fixado ao intervalo \_ \_ \_ \_ \[ 0,1 \] (consulte [**glPixelTransfer**](glpixeltransfer.md)).<br/>                                                                                                                   |
+| <span id="GL_LUMINANCE_ALPHA"></span><span id="gl_luminance_alpha"></span><dl> <dt>**GL \_ LUMINANCE \_ ALPHA**</dt> </dl> | Cada elemento é um par de luminância/alfa. Ele é convertido em formato de ponto flutuante e, em seguida, montado em um elemento RGBA replicando o valor de luminância três vezes para vermelho, verde e azul. Cada componente é multiplicado pelo fator de escala assinado GL c SCALE, adicionado ao desvio assinado GL c BIAS e fixado ao intervalo \_ \_ \_ \_ \[ 0,1 \] (consulte **glPixelTransfer**).<br/>                                                                                                                                                                         |
 
 
 
@@ -118,14 +118,14 @@ O formato dos dados de pixel. Ele pode assumir um dos seguintes valores simbóli
 *tipo* 
 </dt> <dd>
 
-O tipo de dados dos dados de pixel. Os seguintes valores simbólicos são aceitos: GL \_ não assinado \_ byte, GL byte, renomear \_ \_ bitmap, GL \_ não assinado \_ curto, GL \_ curto, GL \_ não assinado \_ int, GL \_ int e GL \_ float.
+O tipo de dados dos dados de pixel. Os seguintes valores simbólicos são aceitos: GL \_ \_ \_ UNSIGNED BYTE, GL BYTE, \_ GL BITMAP, GL \_ UNSIGNED \_ SHORT, GL \_ SHORT, GL \_ UNSIGNED \_ INT, GL \_ INT e GL \_ FLOAT.
 
 </dd> <dt>
 
 *pixels* 
 </dt> <dd>
 
-Um ponteiro para os dados da imagem na memória.
+Um ponteiro para os dados de imagem na memória.
 
 </dd> </dl>
 
@@ -135,28 +135,28 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**](glgeterror.md) .
+Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *destino* não era GL de \_ textura \_ 2D.<br/>                                                                                                                                                                                                                                                                                                                                                                 |
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *formato* não era uma constante aceita.<br/>                                                                                                                                                                                                                                                                                                                                                            |
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *tipo* não era uma constante aceita.<br/>                                                                                                                                                                                                                                                                                                                                                              |
-| <dl> <dt>**GL \_ inválido de \_ enumeração**</dt> </dl>      | o *tipo* was \_ bitmap GL e *Format* não era um índice de \_ cores GL \_ .<br/>                                                                                                                                                                                                                                                                                                                                      |
-| <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | o *nível* era menor que zero ou maior que log2 *Max*, em que *Max* era o valor RETORNADO de \_ tamanho de textura Max GL \_ \_ .<br/>                                                                                                                                                                                                                                                                              |
-| <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | *xoffset* era menor que-*b*; ou *xoffset*  +  *Width* era maior que *w*  -  *b*; ou *yoffset* era menor que-*b*; ou *yoffset*  +  *Height* era maior que *h*  -  *b*, em que *w* é a \_ largura de textura GL \_ , *h* é a altura de \_ textura GL \_ e *b* é a largura da \_ borda de textura GL \_ da imagem de textura que está sendo modificada. <br/> Observe que *w* e *h* incluem duas vezes a largura da borda.<br/> |
-| <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | a *largura* era menor que *b*, onde *b* é a largura da borda da matriz de textura.<br/>                                                                                                                                                                                                                                                                                                                |
-| <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | a *borda* não era zero ou 1.<br/>                                                                                                                                                                                                                                                                                                                                                                       |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A matriz de textura não foi definida por uma operação **glTexImage2D** anterior.<br/>                                                                                                                                                                                                                                                                                                                       |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/>                                                                                                                                                                                                                                                                        |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *target* não era GL \_ TEXTURE \_ 2D.<br/>                                                                                                                                                                                                                                                                                                                                                                 |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *format* não era uma constante aceita.<br/>                                                                                                                                                                                                                                                                                                                                                            |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *type* não era uma constante aceita.<br/>                                                                                                                                                                                                                                                                                                                                                              |
+| <dl> <dt>**GL \_ INVALID \_ ENUM**</dt> </dl>      | *O tipo* era GL \_ BITMAP *e o formato* não era GL \_ COLOR \_ INDEX.<br/>                                                                                                                                                                                                                                                                                                                                      |
+| <dl> <dt>**VALOR INVÁLIDO DE GL \_ \_**</dt> </dl>     | *level* era menor que zero ou maior que log2 *max*, em que *max* era o valor retornado de GL \_ MAX TEXTURE \_ \_ SIZE.<br/>                                                                                                                                                                                                                                                                              |
+| <dl> <dt>**VALOR INVÁLIDO DE GL \_ \_**</dt> </dl>     | *xoffset* era menor que -*b*; ou a largura *xoffset* era maior que w b ; ou  +     -   *yoffset* era menor que - b ; ou a altura do *yoffset*  +     -    \_ \_  \_ \_  era \_ \_ maior que h b , em que w é a LARGURA DE TEXTURA GL, h é a ALTURA DA TEXTURA GL e b é a largura da BORDA DE TEXTURA GL da imagem de textura que está sendo modificada. <br/> Observe que *w* e *h incluem* duas vezes a largura da borda.<br/> |
+| <dl> <dt>**VALOR INVÁLIDO DE GL \_ \_**</dt> </dl>     | *width* era menor que *b*, em *que b* é a largura da borda da matriz de textura.<br/>                                                                                                                                                                                                                                                                                                                |
+| <dl> <dt>**VALOR INVÁLIDO DE GL \_ \_**</dt> </dl>     | *border* não era zero ou 1.<br/>                                                                                                                                                                                                                                                                                                                                                                       |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A matriz de textura não foi definida por uma **operação glTexImage2D** anterior.<br/>                                                                                                                                                                                                                                                                                                                       |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/>                                                                                                                                                                                                                                                                        |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O texturing bidimensional para um primitivo é habilitado usando [**glEnable**](glenable.md) e **glDisable** com o argumento GL \_ Texture \_ 2D. Durante a texturing, parte de uma imagem de textura especificada é mapeada em cada primitiva habilitada. Use a função **glTexSubImage2D** para especificar uma subimagem contígua de uma imagem de textura bidimensional existente para texturing.
+A texturagem bidimensional para um primitivo é habilitada usando [**glEnable**](glenable.md) e **glDisable** com o argumento GL \_ TEXTURE \_ 2D. Durante a texturagem, parte de uma imagem de textura especificada é mapeada em cada primitivo habilitado. Use a função **glTexSubImage2D** para especificar uma subimagem contígua de uma imagem de textura bidimensional existente para texturing.
 
 O texels referenciado por *pixels* substitui uma região da matriz de textura existente por índices *x* de *xoffset* e *xoffset* +*(largura* 1) índices inclusivos e *y* de *yoffset* e *yoffset* + (*altura* 1), inclusive. Essa região não pode incluir nenhum texels fora do intervalo da matriz de textura especificada originalmente.
 

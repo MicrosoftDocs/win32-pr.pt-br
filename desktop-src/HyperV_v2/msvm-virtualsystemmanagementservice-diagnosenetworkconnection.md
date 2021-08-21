@@ -1,5 +1,5 @@
 ---
-description: Diagnostica a conectividade de rede de uma VM em um ambiente de virtualização de rede do Windows.
+description: Diagnostica a conectividade de rede de uma VM em um ambiente Windows virtualização de rede.
 ms.assetid: c18f48bf-1f57-4a23-a495-462afad42750
 title: Método DiagnoseNetworkConnection da classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 70760f771e3908265a4ac70ebc1cbdf957d652c7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9c82f72a9c2a2b16ad991940fcb378c41e75fdf31e9e6f8b74f23f9d115cab93
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105770211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119681125"
 ---
-# <a name="diagnosenetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método DiagnoseNetworkConnection da \_ classe VirtualSystemManagementService Msvm
+# <a name="diagnosenetworkconnection-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método DiagnoseNetworkConnection da classe Msvm \_ VirtualSystemManagementService
 
-Diagnostica a conectividade de rede de uma VM em um ambiente de virtualização de rede do Windows.
+Diagnostica a conectividade de rede de uma VM em um ambiente Windows virtualização de rede.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,37 +42,37 @@ uint32 DiagnoseNetworkConnection(
 
 <dl> <dt>
 
-*TargetNetworkAdapter* \[ no\]
+*TargetNetworkAdapter* \[ Em\]
 </dt> <dd>
 
 Referência a um [**Msvm \_ EthernetPortAllocationSettingData**](msvm-ethernetportallocationsettingdata.md) que descreve o adaptador de rede de destino.
 
 </dd> <dt>
 
-*DiagnosticSettings* \[ no\]
+*DiagnosticSettings* \[ Em\]
 </dt> <dd>
 
-As configurações de diagnóstico a serem usadas.
+As configurações de diagnóstico a ser usadas.
 
 </dd> <dt>
 
-*DiagnosticInformation* \[ fora\]
+*DiagnosticInformation* \[ out\]
 </dt> <dd>
 
-Em caso de sucesso, retorna as informações de diagnóstico.
+Em caso de êxito, retorna as informações de diagnóstico.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for executada de forma assíncrona, esse método retornará 4096, e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob**](/previous-versions//cc136808(v=vs.85)).
+Se a operação for executada de forma assíncrona, esse método retornará 4096 e esse parâmetro conterá uma referência a um objeto derivado de [**CIM \_ ConcreteJob.**](/previous-versions//cc136808(v=vs.85))
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna 0 ou 4096 em caso de êxito; caso contrário, retornará um erro.
+Retorna um 0 ou 4096 em caso de êxito; caso contrário, retornará um erro.
 
 <dl> <dt>
 
@@ -85,22 +85,22 @@ Retorna 0 ou 4096 em caso de êxito; caso contrário, retornará um erro.
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -109,10 +109,10 @@ Retorna 0 ou 4096 em caso de êxito; caso contrário, retornará um erro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1703 somente \[ aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

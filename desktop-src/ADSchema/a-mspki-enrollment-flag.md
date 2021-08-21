@@ -1,11 +1,11 @@
 ---
-title: atributo ms-PKI-Enroll-Flag
+title: Atributo ms-PKI-Enrollment-Flag
 description: Contém os sinalizadores relacionados ao registro.
 ms.assetid: e854acb1-75f4-4379-b404-8fa096419ee6
 ms.tgt_platform: multiple
 keywords:
-- MS-PKI-registro-Flag atributo AD Schema
-- msPKI-registro-sinalizador de atributo AD Schema
+- Esquema do AD do atributo ms-PKI-Enrollment-Flag
+- Esquema do AD do atributo msPKI-Enrollment-Flag
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2df092e28633bd5825c422e306bf7a65982b32a8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f13f25d3c9e2d34979715f0b225ca399b1cf11193a2dc9107b9370b2ea44b5d3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803116"
 ---
-# <a name="ms-pki-enrollment-flag-attribute"></a>atributo ms-PKI-Enroll-Flag
+# <a name="ms-pki-enrollment-flag-attribute"></a>Atributo ms-PKI-Enrollment-Flag
 
 Contém os sinalizadores relacionados ao registro.
 
@@ -29,13 +29,13 @@ Contém os sinalizadores relacionados ao registro.
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------------------------------------------------------------|
-| CN                | MS-PKI-Enrollment-Flag                                                                            |
-| LDAP-Display-Name | msPKI-sinalizador de registro                                                                             |
+| CN                | ms-PKI-Enrollment-Flag                                                                            |
+| Ldap-Display-Name | msPKI-Enrollment-Flag                                                                             |
 | Tamanho              | 4 bytes                                                                                           |
 | Privilégio de atualização  | Administrador de domínio                                                                              |
-| Frequência de atualização  | Quando o modelo de certificado (MS-PKI-Certificate-template) é editado, criado ou clonado. |
+| Frequência de atualização  | Quando o objeto de modelo de certificado (ms-PKI-Certificate-Template) é editado, criado ou clonado. |
 | Attribute-Id      | 1.2.840.113556.1.4.1430                                                                           |
-| System-ID-GUID    | d15ef7d8-f226-46db-ae79-b34e560bd12c                                                              |
+| System-Id-Guid    | d15ef7d8-f226-46db-ae79-b34e560bd12c                                                              |
 | Syntax            | [**Enumeração**](s-enumeration.md)                                                              |
 
 
@@ -57,15 +57,15 @@ Contém os sinalizadores relacionados ao registro.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Contém os sinalizadores relacionados ao registro.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Contém os sinalizadores relacionados ao registro.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| Tem valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
-| No catálogo global      | Falso                                                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
+| No Catálogo Global      | Falso                                                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                            |
 | Range-Lower            | \-                                                                      |
 | Range-Upper            | \-                                                                      |
 | Search-Flags           | 0x00000000                                                              |
 | System-Flags           | 0x00000010                                                              |
-| Classes usadas em        | [**PKI-certificado-modelo**](c-pkicertificatetemplate.md)<br/> |
+| Classes usadas em        | [**PKI-Certificate-Template**](c-pkicertificatetemplate.md)<br/> |
 
 
 
@@ -120,7 +120,7 @@ Contém os sinalizadores relacionados ao registro.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |
@@ -141,7 +141,7 @@ Contém os sinalizadores relacionados ao registro.
 | ID do link                | \-                                                                      |
 | MAPI-Id                | \-                                                                      |
 | System-Only            | Falso                                                                   |
-| É de valor único       | True                                                                    |
+| É de valor único       | Verdadeiro                                                                    |
 | É indexado             | Falso                                                                   |
 | No catálogo global      | Falso                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                            |

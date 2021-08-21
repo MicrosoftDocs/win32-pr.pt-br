@@ -1,11 +1,11 @@
 ---
-title: Método INapSoHProcessor FindNextAttribute (NapProtocol. h)
+title: Método FindNextAttribute de INapSoHProcessor (NapProtocol.h)
 description: Localiza o local (índice) do próximo atributo do tipo indicado por SoHAttributeType.
 ms.assetid: 0ff94a32-ece8-4a89-9ee9-93c5e14dfb6c
 keywords:
-- Método FindNextAttribute NAP
-- Método FindNextAttribute NAP, interface INapSoHProcessor
-- INapSoHProcessor interface NAP, método FindNextAttribute
+- Nap do método FindNextAttribute
+- FindNextAttribute method NAP , interface INapSoHProcessor
+- INapSoHProcessor interface NAP , método FindNextAttribute
 topic_type:
 - apiref
 api_name:
@@ -16,21 +16,21 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e1a270e36f8254ed5dbfcd9776cf013f9d10d4a1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4425707487994904d1bd2a622cd1ab66f286469c93e80a8eb01e71c0319426ea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644330"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118939573"
 ---
-# <a name="inapsohprocessorfindnextattribute-method"></a>Método INapSoHProcessor:: FindNextAttribute
+# <a name="inapsohprocessorfindnextattribute-method"></a>Método INapSoHProcessor::FindNextAttribute
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-O método **INapSoHProcessor:: FindNextAttribute** localiza o local (índice) do próximo atributo do tipo indicado por *SoHAttributeType*.
+O **método INapSoHProcessor::FindNextAttribute** localiza o local (índice) do próximo atributo do tipo indicado por *SoHAttributeType*.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,44 +49,44 @@ HRESULT FindNextAttribute(
 
 <dl> <dt>
 
-*fromLocation* \[ no\]
+*fromLocation* \[ Em\]
 </dt> <dd>
 
-O local inicial (índice) no pacote da declaração de integridade (SoH) para iniciar a pesquisa de atributo. Esse valor deve estar no intervalo de 0 a (**numAttrib** -1) em que **numAttrib** é recuperado usando [**INapSoHProcessor:: GetNumberOfAttributes**](inapsohprocessor-getnumberofattributes-method.md).
+O local inicial (índice) no pacote SoH (Instrução de Saúde) para iniciar a pesquisa de atributo. Esse valor deve estar no intervalo de 0 a (**numAttrib** - 1) em que **numAttrib** é recuperado usando [**INapSoHProcessor::GetNumberOfAttributes**](inapsohprocessor-getnumberofattributes-method.md).
 
 > [!Note]  
-> O pacote SoH usa índices de atributos baseados em 0.
+> O pacote SoH usa índices de atributo baseados em 0.
 
  
 
 </dd> <dt>
 
-*tipo* \[ de no\]
+*tipo* \[ Em\]
 </dt> <dd>
 
-Uma estrutura [**SoHAttributeType**](sohattributetype-enum.md) que contém o tipo de atributo a ser localizado.
+Uma [**estrutura SoHAttributeType**](sohattributetype-enum.md) que contém o tipo de atributo a ser localizado.
 
 </dd> <dt>
 
-*attributeLocation* \[ fora\]
+*attributeLocation* \[ out\]
 </dt> <dd>
 
-Um ponteiro que contém o local (índice) no pacote SoH do primeiro atributo do tipo *SoHAttributeType* do índice *fromLocation*.
+Um ponteiro que contém o local (índice) no pacote SoH do primeiro atributo do tipo *SoHAttributeType* do *índice fromLocation*.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Outros códigos de erro específicos de COM também podem ser retornados.
+Outros códigos de erro específicos do COM também podem ser retornados.
 
 
 
 | Código de retorno                                                                                            | Descrição                                                        |
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| <dl> <dt>**S \_ OK**</dt> </dl>                  | Operação bem-sucedida.<br/>                                    |
+| <dl> <dt>**S \_ OK**</dt> </dl>                  | Êxito na operação.<br/>                                    |
 | <dl> <dt>**E \_ ACCESSDENIED**</dt> </dl>        | Erro de permissões, acesso negado.<br/>                       |
-| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | O limite de recursos do sistema não pôde executar a operação.<br/> |
-| <dl> <dt>**arquivo de erro \_ \_ não \_ encontrado**</dt> </dl> | Atributo não encontrado.<br/>                                    |
+| <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl>         | Limite de recursos do sistema, não foi possível executar a operação.<br/> |
+| <dl> <dt>**ARQUIVO \_ DE ERRO NÃO \_ \_ ENCONTRADO**</dt> </dl> | Atributo não encontrado.<br/>                                    |
 
 
 
@@ -94,7 +94,7 @@ Outros códigos de erro específicos de COM também podem ser retornados.
 
 ## <a name="remarks"></a>Comentários
 
-O método **FindNextAttribute** procura atributos do tipo *SoHAttributeType* a partir do índice especificado por *fromLocation* e superior até que uma correspondência seja encontrada. Se nenhuma correspondência for encontrada, **o \_ arquivo de erro \_ não \_ encontrado** será retornado.
+O **método FindNextAttribute** procura atributos do tipo *SoHAttributeType* do índice especificado por *fromLocation* e superior até que uma combinação seja encontrada. Se nenhuma corresponder for encontrada, **ERROR \_ FILE NOT \_ \_ FOUND** será retornado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,10 +102,10 @@ O método **FindNextAttribute** procura atributos do tipo *SoHAttributeType* a p
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                       |
-| parâmetro<br/>                   | <dl> <dt>NapProtocol. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>NapProtocol. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                       |
+| Cabeçalho<br/>                   | <dl> <dt>NapProtocol.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>NapProtocol.idl</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl>       |
 
 

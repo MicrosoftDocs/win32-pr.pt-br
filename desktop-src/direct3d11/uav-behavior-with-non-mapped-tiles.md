@@ -4,12 +4,12 @@ description: O comportamento das leituras e gravações de modo de exibição de
 ms.assetid: 26C40D1F-983B-4E5B-99F3-FD4E47BE1D7D
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9a9909f8faecd3345761ae26e60835c77aae9ab3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ed676403e5eb1fdc838ac080b8be530b5004e6734fedc5674664f4d75304ee37
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916025"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119857656"
 ---
 # <a name="uav-behavior-with-non-mapped-tiles"></a>Comportamento de UAV com blocos não mapeados
 
@@ -26,9 +26,9 @@ As operações de sombreador que tentam gravar em um bloco não mapeado fazem co
 [Acesso ao pipeline para recursos lado a lado](pipeline-access-to-tiled-resources.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

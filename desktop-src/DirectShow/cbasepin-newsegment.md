@@ -1,7 +1,7 @@
 ---
-description: 'O método NewSegment notifica o PIN de que amostras de mídia recebidas após essa chamada são agrupadas como um segmento. Implementa o método IPin:: NewSegment.'
+description: O método NewSegment notifica o pin de que os exemplos de mídia recebidos após essa chamada são agrupados como um segmento. Implementa o método IPin::NewSegment.
 ms.assetid: e334d5a7-0398-496c-882c-bf73e6545867
-title: Método CBasePin. NewSegment (Amfilter. h)
+title: Método CBasePin.NewSegment (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119384546"
 ---
-# <a name="cbasepinnewsegment-method"></a>Método CBasePin. NewSegment
+# <a name="cbasepinnewsegment-method"></a>Método CBasePin.NewSegment
 
-O `NewSegment` método notifica o PIN de que as amostras de mídia recebidas após essa chamada são agrupadas como um segmento. Implementa o método [**IPin:: NewSegment**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment) .
+O `NewSegment` método notifica o pin de que os exemplos de mídia recebidos após essa chamada são agrupados como um segmento. Implementa o [**método IPin::NewSegment.**](/windows/desktop/api/Strmif/nf-strmif-ipin-newsegment)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,24 +44,24 @@ HRESULT NewSegment(
 
 <dl> <dt>
 
-*tStart* 
+*Tstart* 
 </dt> <dd>
 
-Iniciando a posição de mídia do segmento, em unidades de 100 a nanossegundos.
+Posição de mídia inicial do segmento, em unidades de 100 nanossegundos.
 
 </dd> <dt>
 
 *tStop* 
 </dt> <dd>
 
-Terminar a posição de mídia do segmento, em unidades de 100 a nanossegundos.
+Posição de mídia final do segmento, em unidades de 100 nanossegundos.
 
 </dd> <dt>
 
 *dRate* 
 </dt> <dd>
 
-Taxa na qual esse segmento deve ser processado, como uma porcentagem da taxa original.
+Taxa na qual esse segmento deve ser processado, como um percentual da taxa original.
 
 </dd> </dl>
 
@@ -71,7 +71,7 @@ Retorna S \_ OK.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método define as variáveis de membro [**CBasePin:: m \_ tStart**](cbasepin-m-tstart.md), [**CBasePin:: m \_ tStop**](cbasepin-m-tstop.md)e [**CBasePin:: m \_ drate**](cbasepin-m-drate.md) . Na classe derivada, substitua esse método para passar o downstream de notificação.
+Esse método define as variáveis de membro [**CBasePin::m \_ tStart**](cbasepin-m-tstart.md), [**CBasePin::m \_ tStop**](cbasepin-m-tstop.md)e [**CBasePin::m \_ dRate.**](cbasepin-m-drate.md) Na classe derivada, substitua esse método para passar a notificação downstream.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Esse método define as variáveis de membro [**CBasePin:: m \_ tStart**](cbasepi
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir Fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

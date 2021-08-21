@@ -1,32 +1,32 @@
 ---
-description: MSYUV é um codec de conversor de espaço de cores YUV a RGB.
+description: MSYUV é um codec de conversor de espaço de cor YUV para RGB.
 ms.assetid: 77b00937-ac63-4b23-b546-c0896b3c57ba
-title: Codec de conversor de espaço de cores MSYUV
+title: Codec do Conversor de Espaço em Cores MSYUV
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 838e7cd749042b2fb97adaf0b2b4cd0378a81c07
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 189ff787ee5b28311dd0357c245c7a6ca251d207f2448fc08a88fb856d7c2fce
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120075736"
 ---
-# <a name="msyuv-color-space-converter-codec"></a>Codec de conversor de espaço de cores MSYUV
+# <a name="msyuv-color-space-converter-codec"></a>Codec do Conversor de Espaço em Cores MSYUV
 
-MSYUV é um codec de conversor de espaço de cores YUV a RGB. Ele permite a reprodução de dados de origem de vídeo em formatos YUV em clientes cujo adaptador de vídeo não pode ser usado para conversões de YUV para RGB no hardware. O codec participa de gráficos de filtro por meio do filtro de wrapper do [descompactador AVI](avi-decompressor-filter.md) .
+MSYUV é um codec de conversor de espaço de cor YUV para RGB. Ele permite a reprodução de dados de origem de vídeo em formatos YUV em clientes cujo adaptador de exibição de vídeo não pode ser usado para conversões YUV para RGB em hardware. O codec participa de grafos de filtro por meio do [filtro wrapper do descompactador AVI.](avi-decompressor-filter.md)
 
-Câmeras de conferência digital com interfaces USB ou 1394 podem produzir dados de imagem em vários formatos YUV. Se o hardware de vídeo não oferecer suporte à conversão de YUV para RGB integrada ou se o recurso de conversão de hardware não puder ser usado por algum outro motivo, os dados de imagem YUV deverão ser convertidos para o formato RGB antes de serem enviados para o processador de vídeo.
+Câmeras de conferência digital com interfaces 1394 ou USB podem produzir dados de imagem em vários formatos YUV. Se o hardware de exibição não dá suporte à conversão DE YUV para RGB na placa ou se o recurso de conversão de hardware não puder ser usado por algum outro motivo, os dados da imagem YUV deverão ser convertidos no formato RGB antes de serem enviados para o Renderdor de Vídeo.
 
-Devido ao requisito do [processador de vídeo](video-renderer-filter.md)para um tipo de entrada RGB no momento da conexão, esse filtro pode ser inserido em um grafo upstream do processador de vídeo durante a criação automática de grafo. Especificamente, se o construtor de gráficos detectar um formato YUV no tipo de mídia do pino de saída do filtro upstream, o construtor de grafo irá inserir o descompactador AVI, que carregará o codec MSYUV e o configurará inicialmente para executar a conversão em RGB. Depois que o grafo passa pela primeira vez para um estado de execução ou pausado, o filtro de processamento de vídeo pode detectar se o adaptador de vídeo pode executar a conversão em hardware. Se puder, o descompactador AVI será notificado e reconfigurará o MSYUV para operar no "modo de passagem", o que faz com que o codec ignore a conversão e copie os dados de imagem YUV diretamente em uma superfície de sobreposição do DirectDraw na memória de vídeo.
+Devido ao requisito do [Renderador](video-renderer-filter.md)de Vídeo para um tipo de entrada RGB no momento da conexão, esse filtro pode ser inserido em um upstream de grafo do Renderador de Vídeo durante a criação automática de grafo. Especificamente, se o construtor Graph detectar um formato YUV no tipo de mídia do pin de saída do filtro upstream, o Construtor do Graph inserirá o Descompactador AVI, que carregará o codec MSYUV e o configurará inicialmente para executar a conversão em RGB. Depois que o grafo faz a primeira transição para um estado de execução ou pausado, o filtro do Renderador de Vídeo pode detectar se o adaptador de exibição de vídeo pode executar a conversão em hardware. Se puder, o Descompactador AVI será notificado e reconfigurará o MSYUV para operar no "modo de passagem", o que faz com que o codec ignore a conversão e copie os dados da imagem YUV diretamente para uma superfície de sobreposição do DirectDraw na memória de vídeo.
 
-Como os renderizadores de mixagem de vídeo (VMR-7 e VMR-9) nunca usam GDI, eles não exigem um tipo RGB no momento da conexão e o conversor de espaço de cor MSYUV nunca é inserido antes do VMR em um grafo.
+Como os Renderadores de Combinação de Vídeo (VMR-7 e VMR-9) nunca usam GDI, eles não exigem um tipo RGB no momento da conexão e o Conversor de Espaço de Cor MSYUV nunca é inserido antes da VMR em um grafo.
 
-MSYUV converte os formatos YUV empacotados em RGB, conforme mostrado na lista a seguir:
+O MSYUV converte formatos YUV empacotados em RGB, conforme mostrado na lista a seguir:
 
 -   Formatos de entrada: UYVY, YUY2, YVYU
 -   Formatos de saída: RGB 8, RGB 16, RGB 24, RGB 32
 
-O codec do conversor de espaço de cores MSYUV é um codec de VCM (Gerenciador de compactação de vídeo). Ele é usado no DirectShow por meio do filtro de [descompactação AVI](avi-decompressor-filter.md) . Para um conversor de cores de uso mais geral, use o [**DSP do conversor de cores**](../medfound/colorconverter.md).
+O Codec do Conversor de Espaço em Cores MSYUV é um codec do VCM (Gerenciador de Compactação de Vídeo). Ele é usado em DirectShow por meio do [filtro de descompactador AVI.](avi-decompressor-filter.md) Para um conversor de cores de uso mais geral, use o [**DSP do Conversor de Cores.**](../medfound/colorconverter.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -42,7 +42,7 @@ O codec do conversor de espaço de cores MSYUV é um codec de VCM (Gerenciador d
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filtros](directshow-filters.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ description: A entrada de serviço de nome consiste em três seções distintas.
 ms.assetid: 3059a9a9-174d-4d04-8565-e4558f17f465
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: efc3855f586582b013bc47b11eb058ae461014f4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b2d7982cef018ec91435c647000031ae42a25e2e2bb315a20623ac75e610197e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105758724"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073556"
 ---
 # <a name="an-overview-of-the-name-service-entry"></a>Uma visão geral da entrada de serviço de nome
 
@@ -19,9 +19,9 @@ Ao chamar [**RpcNsBindingExport**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpcnsbi
 
 O cliente chama [**RpcNsBindingLookupBegin**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpcnsbindinglookupbegina) (ou [**RpcNsBindingImportBegin**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpcnsbindingimportbegina)) para pesquisar um identificador de associação apropriado. O nome da entrada, o identificador de interface e um UUID de objeto são extraídos. Elas restringem as entradas das quais os identificadores de associação são retornados. Se uma entrada corresponder aos critérios de pesquisa, todos os identificadores de associação nessa entrada serão retornados de [**RpcNsBindingImportNext**](/windows/desktop/api/Rpcnsi/nf-rpcnsi-rpcnsbindingimportnext).
 
- 
+ 
 
- 
+ 
 
 
 

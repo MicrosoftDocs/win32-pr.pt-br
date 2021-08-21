@@ -4,12 +4,12 @@ ms.assetid: 86b827ed-e707-4627-9488-78eafb444d32
 title: Tabela TypeLib
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0aa8949df75162ffb7107b633ab766d276c4b42
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 862bc37e325f8c615e8158cfa431c927841f6b33c403c804726cea8fee6f0469
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105747317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499996"
 ---
 # <a name="typelib-table"></a>Tabela TypeLib
 
@@ -21,14 +21,14 @@ A tabela TypeLib tem as colunas a seguir.
 
 | Coluna      | Tipo                               | Chave | Nullable |
 |-------------|------------------------------------|-----|----------|
-| LibID       | [GUID](guid.md)                   | S   | N        |
-| Idioma    | [Inteiro](integer.md)             | S   | N        |
-| Componente\_ | [Identificador](identifier.md)       | S   | N        |
-| Versão     | [DoubleInteger](doubleinteger.md) | N   | S        |
-| Descrição | [Text](text.md)                   | N   | S        |
-| Diretório\_ | [Identificador](identifier.md)       | N   | S        |
+| LibID       | [GUID](guid.md)                   | Y   | N        |
+| Idioma    | [Inteiro](integer.md)             | Y   | N        |
+| Componente\_ | [Identificador](identifier.md)       | Y   | N        |
+| Versão     | [DoubleInteger](doubleinteger.md) | N   | Y        |
+| Descrição | [Text](text.md)                   | N   | Y        |
+| Diretório\_ | [Identificador](identifier.md)       | N   | Y        |
 | Recurso\_   | [Identificador](identifier.md)       | N   | N        |
-| Custo        | [DoubleInteger](doubleinteger.md) | N   | S        |
+| Custo        | [DoubleInteger](doubleinteger.md) | N   | Y        |
 
 
 

@@ -4,12 +4,12 @@ description: A atualização in-loco geralmente é mais eficiente do que atualiz
 ms.assetid: d4b0b14e-957a-43d5-bacc-8eee4512e2ab
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77d76d2af5d60172b890eefa1041a08d47a5221b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5dfcfdc7abd355cd70bb1295af6ce8b4fb4749dfed6c55af4d1fd06ca8257170
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005677"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073696"
 ---
 # <a name="updating-routes-in-place-using-rtmupdateandunlockroute"></a>Atualizando rotas no local usando RtmUpdateAndUnlockRoute
 
@@ -17,9 +17,9 @@ A atualização in-loco geralmente é mais eficiente do que atualizar a tabela d
 
 Para obter um exemplo de código que mostra como usar essas funções, consulte [atualizar uma rota no local usando RtmUpdateAndUnlockRoute](update-a-route-in-place-using-rtmupdateandunlockroute.md).
 
- 
+ 
 
- 
+ 
 
 
 

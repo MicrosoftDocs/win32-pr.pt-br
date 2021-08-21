@@ -4,12 +4,12 @@ ms.assetid: 77674a45-7133-4518-af47-a9d58392b80b
 title: Constantes de LINEINITIALIZEEXOPTION_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86543c367877d74562cc0af13261881b7df19982
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e92a1df7c4ea88cad126dcf5b542dbbdc33704814518dbc79cdf5d6bff5da402
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120073036"
 ---
 # <a name="lineinitializeexoption_-constants"></a>\_Constantes LINEINITIALIZEEXOPTION
 
@@ -68,7 +68,7 @@ Consulte [**lineInitializeEx**](/windows/desktop/api/Tapi/nf-tapi-lineinitialize
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 56a211c5951ac589d00c4b8c92c031c80b2d1415
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2fa08d1eb3cbb8086149192e6ecd5fa3880f01e6cfa1800468d2825c243b211e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750997"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119803304"
 ---
 # <a name="ms-frs-hub-member-attribute"></a>MS-FRS-Hub-atributo de membro
 
@@ -57,7 +57,7 @@ O atributo **MS-FRS-Hub-member** é usado para registrar as configurações de t
 | ID do link                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -78,7 +78,7 @@ O atributo **MS-FRS-Hub-member** é usado para registrar as configurações de t
 | ID do link                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -99,7 +99,7 @@ O atributo **MS-FRS-Hub-member** é usado para registrar as configurações de t
 | ID do link                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| É de valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
 | No catálogo global      | Falso                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
@@ -107,7 +107,7 @@ O atributo **MS-FRS-Hub-member** é usado para registrar as configurações de t
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ O atributo **MS-FRS-Hub-member** é usado para registrar as configurações de t
 | ID do link                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
@@ -141,21 +141,21 @@ O atributo **MS-FRS-Hub-member** é usado para registrar as configurações de t
 | ID do link                | 1046                                                      |
 | MAPI-Id                | \-                                                        |
 | System-Only            | Falso                                                     |
-| É de valor único       | True                                                      |
+| Tem valor único       | Verdadeiro                                                      |
 | É indexado             | Falso                                                     |
-| No catálogo global      | Falso                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                              |
+| No Catálogo Global      | Falso                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                              |
 | Range-Lower            | \-                                                        |
 | Range-Upper            | \-                                                        |
 | Search-Flags           | 0x00000000                                                |
 | System-Flags           | 0x00000000                                                |
-| Classes usadas em        | [**NTFRS-conjunto de réplicas**](c-ntfrsreplicaset.md)<br/> |
+| Classes usadas em        | [**NTFRS-Replica-Set**](c-ntfrsreplicaset.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Este é o nome distinto totalmente qualificado de um objeto [**de membro NTFRS**](c-ntfrsmember.md) . O nome distinto está no formato "CN = *<computerGuid>* , CN = *<Dfs Link Name>* , CN = *<Dfs Root name>* , CN = volumes DFS, CN = serviço de replicação de arquivo, CN = System, DC =..."
+Esse é o nome diferenciado totalmente qualificado de um [**objeto NTFRS-Member.**](c-ntfrsmember.md) O nome diferenciado está no formato "CN= *<computerGuid>* , CN= *<Dfs Link Name>* , CN= , *<Dfs Root name>* CN=DFS Volumes, CN=File Replication Service,CN=System, DC=..."
 
  
 

@@ -1,7 +1,7 @@
 ---
-description: O método GetOwner Recupera um ponteiro para a interface IUnknown do componente proprietário. Para um componente agregado, o proprietário é o componente externo. Caso contrário, o componente pertence a si mesmo.
+description: O método GetOwner recupera um ponteiro para a interface IUnknown do componente proprietário. Para um componente agregado, o proprietário é o componente externo. Caso contrário, o componente é proprietário de si mesmo.
 ms.assetid: 7d8af9d1-52c0-4f2b-9d05-6ddff85ab508
-title: Método CUnknown. getproprietário (combase. h)
+title: Método CUnknown.GetOwner (Combase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: e3cb1cd1d5b183857b6d75db79ee0fcdc6cb2d30
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: c741a6820d414d7a00ad0a9fef768d982f2335c9cb9d8417e42376ea243cc58b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120076036"
 ---
-# <a name="cunknowngetowner-method"></a>Método CUnknown. GetOwner
+# <a name="cunknowngetowner-method"></a>Método CUnknown.GetOwner
 
-O `GetOwner` método recupera um ponteiro para a interface **IUnknown** do componente proprietário. Para um componente agregado, o proprietário é o componente externo. Caso contrário, o componente pertence a si mesmo.
+O `GetOwner` método recupera um ponteiro para a interface **IUnknown** do componente de propriedade. Para um componente agregado, o proprietário é o componente externo. Caso contrário, o componente é proprietário de si mesmo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,9 +40,9 @@ LPUNKNOWN GetOwner();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um ponteiro para a interface **IUnknown** de controle.
+Retorna um ponteiro para a interface **IUnknown de** controle.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retorna um ponteiro para a interface **IUnknown** de controle.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Combase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Combase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 
