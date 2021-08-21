@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_EnterpriseDataProtection_Settings01
-description: a \_ classe MDM EnterpriseDataProtection \_ Settings01 é usada para configurar as configurações específicas de WIP (proteção de informações de Windows) (anteriormente conhecida como Enterprise proteção de dados).
+title: MDM_EnterpriseDataProtection_Settings01 classe
+description: A classe MDM \_ EnterpriseDataProtection Settings01 é usada para definir configurações específicas da WIP (Proteção de Informações Windows) (anteriormente conhecidas \_ como proteção Enterprise dados).
 ms.assetid: 7537f548-85fb-46b4-ab94-c9dcf2bf1447
 keywords:
-- Classe MDM_EnterpriseDataProtection_Settings01
-- Classe MDM_EnterpriseDataProtection_Settings01, descrita
+- MDM_EnterpriseDataProtection_Settings01 classe
+- MDM_EnterpriseDataProtection_Settings01 classe , descrita
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118165829"
 ---
-# <a name="mdm_enterprisedataprotection_settings01-class"></a>\_ \_ Classe SETTINGS01 do MDM EnterpriseDataProtection
+# <a name="mdm_enterprisedataprotection_settings01-class"></a>Classe MDM \_ EnterpriseDataProtection \_ Settings01
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-a classe **MDM \_ EnterpriseDataProtection \_ Settings01** é usada para configurar as configurações específicas de WIP (proteção de informações de Windows) (anteriormente conhecida como Enterprise proteção de dados). Para obter mais informações sobre WIP, consulte [proteger seus dados corporativos usando a EDP (proteção de dados empresariais)](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip).
+A **classe MDM \_ EnterpriseDataProtection \_ Settings01** é usada para definir configurações específicas da WIP (Proteção de Informações Windows) (anteriormente conhecidas como proteção Enterprise dados). Para obter mais informações sobre a WIP, consulte [Proteger seus dados corporativos usando a EDP (proteção de dados corporativos).](/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -54,13 +54,13 @@ class MDM_EnterpriseDataProtection_Settings01
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Settings01 de MDM EnterpriseDataProtection** tem estes tipos de membros:
+A **classe MDM \_ EnterpriseDataProtection \_ Settings01** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Settings01 do MDM EnterpriseDataProtection** tem essas propriedades.
+A **classe MDM \_ EnterpriseDataProtection \_ Settings01** tem essas propriedades.
 
 <dl> <dt>
 
@@ -70,7 +70,7 @@ A **classe \_ \_ Settings01 do MDM EnterpriseDataProtection** tem essas propried
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -81,7 +81,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -92,10 +92,10 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: **octetstring**
+Qualificadores: **Octetstring**
 </dt> </dl>
 
 </dd> <dt>
@@ -106,7 +106,7 @@ Qualificadores: **octetstring**
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -117,7 +117,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -128,7 +128,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -145,11 +145,11 @@ Tipo de acesso: Somente leitura
 Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 </dt> </dl>
 
-Identifica o nome do nó pai. para essa classe, a cadeia de caracteres é "Configurações".
+Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Configurações".
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -171,7 +171,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -182,7 +182,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -193,7 +193,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -204,11 +204,11 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                          |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                          |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                            |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                                   |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1. mof</dt> </dl>      |
-| DLL<br/>                      | <dl> <dt>\\DMWmiBridgeProv.dllMOFs</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                                   |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv1.mof</dt> </dl>      |
+| DLL<br/>                      | <dl> <dt>Mofs \\DMWmiBridgeProv.dll</dt> </dl> |
 
 
 

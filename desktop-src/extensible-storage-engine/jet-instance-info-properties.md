@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de JET_INSTANCE_INFO'
-title: Propriedades de JET_INSTANCE_INFO
+description: 'Saiba mais sobre: JET_INSTANCE_INFO propriedades'
+title: JET_INSTANCE_INFO propriedades
 TOCTitle: JET_INSTANCE_INFO properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.JET_INSTANCE_INFO
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_instance_info_properties(v=EXCHG.10)
 ms:contentKeyID: 55103698
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 9b125d1e0d1237219ef173fbbc58f42988b107ad
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93a2e2ede9f8f0709bbf7cc7114b1542d1d6aa4245cd111d774b98b5b5231b51
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828645"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118074735"
 ---
-# <a name="jet_instance_info-properties"></a>Propriedades de JET_INSTANCE_INFO
+# <a name="jet_instance_info-properties"></a>JET_INSTANCE_INFO propriedades
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo de [JET_INSTANCE_INFO](./jet-instance-info-class.md) expõe os membros a seguir.
+O [JET_INSTANCE_INFO](./jet-instance-info-class.md) tipo expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -35,12 +35,12 @@ O tipo de [JET_INSTANCE_INFO](./jet-instance-info-class.md) expõe os membros a 
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn335189(v=exchg.10).md">cDatabases</a></td>
-<td>Obtém o número de bancos de dados que estão anexados à instância de Database.</td>
+<td>Obtém o número de bancos de dados anexados à instância do banco de dados.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn335190(v=exchg.10).md">hInstanceId</a></td>
-<td>Obtém a JET_INSTANCE da instância fornecida.</td>
+<td>Obtém a JET_INSTANCE da instância determinada.</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
@@ -50,7 +50,7 @@ O tipo de [JET_INSTANCE_INFO](./jet-instance-info-class.md) expõe os membros a 
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn335194(v=exchg.10).md">szInstanceName</a></td>
-<td>Obtém o nome da instância do banco de dados. Esse valor pode ser nulo se a instância não tiver um nome.</td>
+<td>Obtém o nome da instância do banco de dados. Esse valor poderá ser nulo se a instância não tiver um nome.</td>
 </tr>
 </tbody>
 </table>
@@ -62,6 +62,6 @@ Parte superior
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_INSTANCE_INFO](./jet-instance-info-class.md)
+[JET_INSTANCE_INFO classe](./jet-instance-info-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

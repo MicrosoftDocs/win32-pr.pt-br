@@ -1,6 +1,6 @@
 ---
 title: Funções de retorno de chamada do DirectDraw
-description: Esta seção contém informações sobre as seguintes funções de retorno de chamada usadas com o DirectDraw
+description: Esta seção contém informações sobre as seguintes funções de retorno de chamada usadas com DirectDraw
 ms.assetid: BAFABF0D-B803-4F7C-8807-4FBA5B5AC743
 ms.topic: article
 ms.date: 05/31/2018
@@ -13,7 +13,7 @@ ms.locfileid: "118504626"
 ---
 # <a name="directdraw-callback-functions"></a>Funções de retorno de chamada do DirectDraw
 
-Esta seção contém informações sobre as seguintes funções de retorno de chamada usadas com o DirectDraw:
+Esta seção contém informações sobre as seguintes funções de retorno de chamada usadas com DirectDraw:
 
 -   [*DDEnumCallback*](/windows/desktop/api/Ddraw/nc-ddraw-lpddenumcallbacka)
 -   [*DDEnumCallbackEx*](/windows/desktop/api/Ddraw/nc-ddraw-lpddenumcallbackexa)

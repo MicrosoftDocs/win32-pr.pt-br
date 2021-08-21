@@ -18,12 +18,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0262472e37a8ff3e5b9bb153d2e94f4e52029b14
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 078934c8f19085bf233df78501798a8416ceadf7ba6a0b663cb14b8a8c46b223
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103644793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118129327"
 ---
 # <a name="irdvtaskpluginpluginname-property"></a>IRDVTaskPlugin: Propriedade luginName de:P
 
@@ -54,7 +54,7 @@ O nome de exibição do agente de tarefa.
 |-------------------------------------|---------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 7 Enterprise<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>Tspubplugincom. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Tspubplugincom. h</dt> </dl> |
 
 
 

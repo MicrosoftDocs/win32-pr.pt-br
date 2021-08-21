@@ -23,12 +23,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 94fb9e50344cfbdde4be67815b80e4074ab1a878
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 7121d56d2acf0890a75bccdaf397f184c8780f1f1d3152d3ce2ea4db7781ecaf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151365"
 ---
 # <a name="systemconfig_v0_video-class"></a>\_Classe de \_ vídeo SystemConfig V0
 
@@ -148,7 +148,7 @@ Nome do chip do conversor digital para analógico (DAC) do adaptador.
 
 </dd> <dt>
 
-**deviceId**
+**DeviceId**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: matriz **char16**
@@ -164,7 +164,7 @@ Endereço ou outras informações de identificação para nomear exclusivamente 
 
 </dd> <dt>
 
-**Tamanho da memória**
+**MemorySize**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **UInt32**
@@ -266,11 +266,11 @@ Número atual de pixels verticais.
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

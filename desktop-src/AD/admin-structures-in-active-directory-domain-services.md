@@ -7,12 +7,12 @@ keywords:
 - Estruturas de administração de Active Directory Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4885c4f7f9cca078d71acf1cf6132cf3aeae528b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a914e408db5aafc90fd7752456b121b741552cd01c540314a6f7713f3a81ebb3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453481"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118024703"
 ---
 # <a name="admin-structures-in-active-directory-domain-services"></a>Estruturas de administrador no Active Directory Domain Services
 
@@ -20,9 +20,9 @@ As estruturas a seguir são usadas com os snap-ins de Active Directory Domain Se
 
 -   [**\_NEWOBJ DSA \_ DISPINFO**](/windows/desktop/api/DSAdmin/ns-dsadmin-dsa_newobj_dispinfo)
 
- 
+ 
 
- 
+ 
 
 
 

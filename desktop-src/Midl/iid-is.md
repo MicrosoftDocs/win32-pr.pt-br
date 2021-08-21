@@ -1,9 +1,9 @@
 ---
 title: Atributo iid_is
-description: O atributo \ IID \_ é \ pointer especifica o IID da interface com apontada por um ponteiro de interface.
+description: O atributo \ iid \_ is\ ponteiro especifica a IID da interface COM apontada por um ponteiro de interface.
 ms.assetid: 7fb5eb87-15d8-4717-b79a-e8a81f2f7293
 keywords:
-- iid_is do atributo MIDL
+- iid_is atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118383863"
 ---
-# <a name="iid_is-attribute"></a>IID \_ é atributo
+# <a name="iid_is-attribute"></a>iid \_ é atributo
 
-O **\[ IID \_ é \]** um atributo de ponteiro especifica o IID da interface com apontada por um ponteiro de interface.
+O **\[ atributo \_ \] iid is** pointer especifica a IID da interface COM apontada por um ponteiro de interface.
 
 ``` syntax
 [ iid_is(limited-expression) ]
@@ -34,15 +34,15 @@ O **\[ IID \_ é \]** um atributo de ponteiro especifica o IID da interface com 
 *expressão limitada* 
 </dt> <dd>
 
-Especifica uma expressão de linguagem C. O compilador MIDL oferece suporte a expressões condicionais, expressões lógicas, expressões relacionais e expressões aritméticas. MIDL não permite invocações de função em expressões e não permite operadores de incremento e decréscimo.
+Especifica uma expressão da linguagem C. O compilador MIDL dá suporte a expressões condicionais, expressões lógicas, expressões relacionais e expressões aritméticas. MIDL não permite invocações de função em expressões e não permite operadores de incremento e decremento.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Você pode usar o **\[ IID \_ \]** em listas de atributos para parâmetros de função e para membros de estrutura ou União. Os stubs usam o IID para determinar como realizar marshaling do ponteiro de interface. Isso é útil para um ponteiro de interface que é digitado como um parâmetro de classe base.
+Você pode usar **\[ iid \_ está em listas \]** de atributos para parâmetros de função e para membros de estrutura ou união. Os stubs usam o IID para determinar como fazer marshal do ponteiro da interface. Isso é útil para um ponteiro de interface que é digitado como um parâmetro de classe base.
 
-Os arquivos que usam o **\[ IID \_ é \]** o atributo devem ser compilados com o compilador MIDL no modo padrão, que não está usando a opção [**/OSF**](-osf.md)
+Os arquivos que usam o **\[ atributo iid \_ is \]** devem ser compilados com o compilador MIDL no modo padrão, que não está usando a opção [**/osf.**](-osf.md)
 
 ## <a name="examples"></a>Exemplos
 
@@ -56,10 +56,10 @@ HRESULT    CreateInstance(
 
 <dl> <dt>
 
-[**objeto**](object.md)
+[**Objeto**](object.md)
 </dt> <dt>
 
-[**personalizado**](uuid.md)
+[**Uuid**](uuid.md)
 </dt> </dl>
 
  

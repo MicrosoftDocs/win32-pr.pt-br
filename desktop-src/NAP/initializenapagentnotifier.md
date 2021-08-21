@@ -1,9 +1,9 @@
 ---
-title: Função InitializeNapAgentNotifier (NapUtil. h)
-description: Assina o processo de chamada para notificações de alteração de estado NapAgent e notificações de alteração de estado de quarentena.
+title: Função InitializeNapAgentNotifier (NapUtil.h)
+description: Assina o processo de chamada para notificações de alteração de estado napAgent e notificações de alteração de estado de quarentena.
 ms.assetid: 24180194-50d7-4f54-845d-25402af9cf9a
 keywords:
-- Função InitializeNapAgentNotifier NAP
+- Nap da função InitializeNapAgentNotifier
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f59c4c342f693038040f374bbdbcdb8ab226f74d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1ac2d874f6138bcc1fbc97952d4464e56e05b0a497c7b0ff98e9c05e8c8434e3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918232"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118133451"
 ---
 # <a name="initializenapagentnotifier-function"></a>Função InitializeNapAgentNotifier
 
 > [!Note]  
-> A plataforma de proteção de acesso à rede não está disponível a partir do Windows 10
+> A plataforma de Proteção de Acesso à Rede não está disponível a partir do Windows 10
 
  
 
-A função **InitializeNapAgentNotifier** assina o processo de chamada para as notificações de alteração de estado NapAgent e as notificações de alteração de estado de quarentena. Essas notificações são fornecidas pelo serviço NapAgent.
+A **função InitializeNapAgentNotifier** assina o processo de chamada para notificações de alteração de estado napAgent e notificações de alteração de estado de quarentena. Essas notificações são fornecidas pelo serviço NapAgent.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,29 +46,29 @@ NAPAPI HRESULT WINAPI InitializeNapAgentNotifier(
 
 <dl> <dt>
 
-*tipo* \[ de no\]
+*tipo* \[ Em\]
 </dt> <dd>
 
-Um valor de [**NapNotifyType**](/windows/win32/api/naptypes/ne-naptypes-napnotifytype) que especifica o tipo de notificações de serviço a receber.
+Um [**valor NapNotifyType**](/windows/win32/api/naptypes/ne-naptypes-napnotifytype) que especifica o tipo de notificações de serviço a ser recebido.
 
 </dd> <dt>
 
-*hNotifyEvent* \[ no\]
+*hNotifyEvent* \[ Em\]
 </dt> <dd>
 
-Um identificador de evento usado para notificação. O chamador deve passar um identificador aberto para o parâmetro *hNotifyEvent* . O chamador também deve fechar o identificador de eventos quando ele não for mais necessário.
+Um alça de evento usado para notificação. O chamador deve passar um alça aberta para o *parâmetro hNotifyEvent.* O chamador também deve fechar o alçamento de evento quando ele não for mais necessário.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 
 
 | Código de retorno                                                                                                | Descrição                                                                                               |
 |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | <dl> <dt>**S \_ OK**</dt> </dl>                       | Inicialização concluída com êxito.<br/>                                                         |
-| <dl> <dt>**E \_ falha**</dt> </dl>                     | Falha de inicialização.<br/>                                                                         |
-| <dl> <dt>**ERRO \_ já \_ inicializado**</dt> </dl> | O processo já assinou as notificações do serviço NapAgent do *tipo* especificado. <br/> |
+| <dl> <dt>**E \_ FAIL**</dt> </dl>                     | Falha de inicialização.<br/>                                                                         |
+| <dl> <dt>**ERRO \_ JÁ \_ INICIALIZADO**</dt> </dl> | O processo já assinou notificações de serviço NapAgent do *tipo* especificado. <br/> |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>               | Um argumento inválido foi passado. <br/>                                                               |
 
 
@@ -79,9 +79,9 @@ Um identificador de evento usado para notificação. O chamador deve passar um i
 
 Essa função não é thread-safe.
 
-Cada processo que requer uma assinatura para notificações de serviço NapAgent do *tipo* especificado deve chamar **InitializeNapAgentNotifier** para assinar notificações. Se um processo precisar assinar mais de um tipo de notificação, ele deverá chamar **InitializeNapAgentNotifier** uma vez para cada tipo de notificação.
+Cada processo que requer uma assinatura para notificações de  serviço NapAgent do tipo especificado deve chamar **InitializeNapAgentNotifier** para assinar notificações. Se um processo deve assinar mais de um tipo de notificação, ele deve chamar **InitializeNapAgentNotifier** uma vez para cada tipo de notificação.
 
-Quando um processo não requer notificações adicionais, o processo deve chamar [**UninitializeNapAgentNotifier**](uninitializenapagentnotifier.md) para o *tipo* especificado.
+Depois que um processo não exigir mais notificações, o processo deverá chamar [**UninitializeNapAgentNotifier**](uninitializenapagentnotifier.md) para o tipo *especificado.*
 
 ## <a name="requirements"></a>Requisitos
 
@@ -89,9 +89,9 @@ Quando um processo não requer notificações adicionais, o processo deve chamar
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>NapUtil. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>NapUtil.h</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Qutil.dll</dt> </dl> |
 
 

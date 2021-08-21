@@ -1,5 +1,5 @@
 ---
-description: Definir a propriedade ARPSYSTEMCOMPONENT como 1 usando a linha de comando ou uma transformação impede que o aplicativo seja exibido na lista Adicionar ou remover programas do painel de controle.
+description: Definir a propriedade ARPSYSTEMCOMPONENT como 1 usando a linha de comando ou uma transformação impede que o aplicativo seja exibido na lista Adicionar ou Remover Programas de Painel de Controle.
 ms.assetid: fa3510b4-c4de-4261-ae6c-4292b88432ef
 title: Propriedade ARPSYSTEMCOMPONENT
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118381361"
 ---
 # <a name="arpsystemcomponent-property"></a>Propriedade ARPSYSTEMCOMPONENT
 
-Definir a propriedade **ARPSYSTEMCOMPONENT** como 1 usando a linha de comando ou uma transformação impede que o aplicativo seja exibido na lista **Adicionar ou remover programas** do **painel de controle**.
+Definir a **propriedade ARPSYSTEMCOMPONENT** como 1 usando a linha de comando ou  uma transformação impede que o aplicativo seja exibido na lista Adicionar ou Remover Programas do **Painel de Controle**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -21,7 +21,7 @@ Definir a propriedade **ARPSYSTEMCOMPONENT** como 1 usando a linha de comando ou
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows instalador 5,0 em Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou Windows Vista. Windows instalador no Windows Server 2003 ou Windows XP. consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre o service pack mínimo Windows exigido por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
 
 
 

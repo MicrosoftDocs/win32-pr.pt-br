@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_HealthAttestation
-description: A \_ classe MDM HealthAttestation permite que os gerentes de ti corporativos avaliem a integridade dos dispositivos gerenciados e tomem ações de política corporativa.
+title: MDM_HealthAttestation classe
+description: A classe MDM HealthAttestation permite que os gerentes de IT empresariais avaliem a saúde dos \_ dispositivos gerenciados e tomeem medidas de política corporativa.
 ms.assetid: 64f40ccc-98f6-48d6-bcd4-793375e3dbfb
 keywords:
-- Classe MDM_HealthAttestation
-- Classe MDM_HealthAttestation, descrita
+- MDM_HealthAttestation classe
+- MDM_HealthAttestation, descrita
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -12,25 +12,25 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 7f76af135e7eac09b3b104e924b26efbb359b256
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 81d1ebf7e4df529c54dc3af125e87569ea0d300f8bb6de3a42e5b670dc43cdd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118165809"
 ---
-# <a name="mdm_healthattestation-class"></a>\_Classe HealthAttestation do MDM
+# <a name="mdm_healthattestation-class"></a>Classe MDM \_ HealthAttestation
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ HealthAttestation** permite que os gerentes de ti corporativos avaliem a integridade dos dispositivos gerenciados e tomem ações de política corporativa.
+A **classe MDM \_ HealthAttestation** permite que os gerentes de IT empresariais avaliem a saúde dos dispositivos gerenciados e tomeem medidas de política corporativa.
 
-Veja a seguir uma lista de funções executadas pelo CSP HealthAttestation:
+Veja a seguir uma lista de funções executadas pelo CSP healthAttestation:
 
--   Coleta dados que são usados na verificação de Estados de integridade de dispositivos
+-   Coleta dados usados para verificar os estados de saúde de um dispositivo
 -   Encaminha os dados para o Serviço de Atestado de Integridade (HAS)
--   Provisiona o certificado de atestado de integridade do qual ele recebe
--   Mediante solicitação, o encaminha o certificado de atestado de integridade (recebido de) e as informações de tempo de execução relacionadas ao servidor MDM para verificação
+-   Provisiona o certificado de atestado de saúde que ele recebe do HAS
+-   Mediante solicitação, encaminha o Certificado de Atestado de Saúde (recebido de HAS) e as informações de runtime relacionadas ao Servidor MDM para verificação
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -57,20 +57,20 @@ class MDM_HealthAttestation
 
 ## <a name="members"></a>Membros
 
-A classe **MDM \_ HealthAttestation** tem estes tipos de membros:
+A **classe MDM \_ HealthAttestation** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **MDM \_ HealthAttestation** tem esses métodos.
+A **classe MDM \_ HealthAttestation** tem esses métodos.
 
 
 
 | Método                                                                 | Descrição                                                                                  |
 |:-----------------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
-| [**VerifyHealthMethod**](mdm-healthattestation-verifyhealthmethod.md) | Método para notificar o dispositivo para preparar uma solicitação de verificação de certificado de integridade.<br/> |
+| [**VerifyHealthMethod**](mdm-healthattestation-verifyhealthmethod.md) | Método para notificar o dispositivo para preparar uma solicitação de verificação de certificado de saúde.<br/> |
 
 
 
@@ -78,7 +78,7 @@ A classe **MDM \_ HealthAttestation** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **MDM \_ HealthAttestation** tem essas propriedades.
+A **classe MDM \_ HealthAttestation** tem essas propriedades.
 
 <dl> <dt>
 
@@ -88,21 +88,21 @@ A classe **MDM \_ HealthAttestation** tem essas propriedades.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: **octetstring**
+Qualificadores: **Octetstring**
 </dt> </dl>
 
 </dd> <dt>
 
-[CorrelationID](/windows/client-management/mdm/healthattestation-csp)
+[Correlationid](/windows/client-management/mdm/healthattestation-csp)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -113,7 +113,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 TBD
@@ -123,10 +123,10 @@ TBD
 [ForceRetrieve](/windows/client-management/mdm/healthattestation-csp)
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -137,7 +137,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -164,25 +164,25 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Healt
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 TBD
 
 </dd> <dt>
 
-[Momentos](/windows/client-management/mdm/healthattestation-csp)
+[Nonce](/windows/client-management/mdm/healthattestation-csp)
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -204,7 +204,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 TBD
@@ -217,7 +217,7 @@ TBD
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -228,7 +228,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -239,10 +239,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

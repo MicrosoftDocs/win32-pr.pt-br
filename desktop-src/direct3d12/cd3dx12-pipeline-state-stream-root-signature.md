@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 61a97402fa267693de23ed2085b3d41973dc409e
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ccddd5663b6a079656823efed4cb48b3183d88d0688149c7ae05d96e8dc1cdd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105785022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118530696"
 ---
 # <a name="cd3dx12_pipeline_state_stream_root_signature-structure"></a>\_Estrutura de \_ \_ \_ assinatura raiz do fluxo de estado do pipeline CD3DX12 \_
 

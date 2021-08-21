@@ -1,7 +1,7 @@
 ---
 description: O método CreateInstance cria uma nova instância da classe CMemAllocator.
 ms.assetid: 87a831a4-2414-4240-8448-c5d90f130470
-title: Método CMemAllocator. CreateInstance (Amfilter. h)
+title: Método CMemAllocator.CreateInstance (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 7ef85de95db74e8a9d7aa6a7b1ba977620a29826
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a8682a667685f38cd7a73e091067a86f528f64e1ec110c473f50000c18ba4d87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758853"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156015"
 ---
-# <a name="cmemallocatorcreateinstance-method"></a>Método CMemAllocator. CreateInstance
+# <a name="cmemallocatorcreateinstance-method"></a>Método CMemAllocator.CreateInstance
 
-O `CreateInstance` método cria uma nova instância da classe **CMemAllocator** .
+O `CreateInstance` método cria uma nova instância da classe **CMemAllocator.**
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -43,23 +43,23 @@ static CUnknown* CreateInstance(
 
 <dl> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
-Ponteiro para o proprietário deste objeto. Se o objeto for agregado, passe um ponteiro para a interface **IUnknown** do objeto de agregação. Caso contrário, defina esse parâmetro como **NULL**.
+Ponteiro para o proprietário desse objeto. Se o objeto for agregado, passe um ponteiro para a interface **IUnknown** do objeto de agregação. Caso contrário, de definido esse parâmetro como **NULL.**
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
-Ponteiro para uma variável que recebe um valor **HRESULT** que indica o êxito ou a falha do método.
+Ponteiro para uma variável que recebe um **valor HRESULT** que indica o êxito ou a falha do método.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um ponteiro para um novo objeto **CMemAllocator** , tipado como um objeto **CUnknown** .
+Retorna um ponteiro para um novo **objeto CMemAllocator,** digitado como um **objeto CUnknown.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -67,8 +67,8 @@ Retorna um ponteiro para um novo objeto **CMemAllocator** , tipado como um objet
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

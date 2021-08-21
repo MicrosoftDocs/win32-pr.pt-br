@@ -3,7 +3,7 @@ title: Exibir. maxWidth
 description: O atributo maxWidth especifica ou recupera a largura máxima em pixels da exibição ao redimensionar.
 ms.assetid: 41912c42-a43f-428c-9f52-6918561674db
 keywords:
-- Exibir. maxWidth Windows Media Player
+- VIEW. maxWidth Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4969a4cba3c874a2c5ec857b8a3e737c74bff420
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4fb566bf8925c8d6a79b107ce440504318d188c9b7ab551dd7dc405fa80dcd48
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787598"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116781"
 ---
 # <a name="viewmaxwidth"></a>Exibir. maxWidth
 

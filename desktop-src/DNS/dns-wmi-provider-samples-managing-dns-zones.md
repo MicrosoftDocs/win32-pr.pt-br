@@ -6,12 +6,12 @@ keywords:
 - Exemplos de provedor WMI de DNS 8212; Gerenciando Zonas DNS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb7f0468cd4550dc3c7c3ed0b2a7a585a3b17488
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 452c6ef3e9e072ffba6b1bf9ab58e9e15e15405b7bca418dc7619441ae43e125
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363925"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118163845"
 ---
 # <a name="dns-wmi-provider-samplesmanaging-dns-zones"></a>Exemplos de provedor WMI de DNS – Gerenciando Zonas DNS
 
@@ -2907,9 +2907,9 @@ End Function
 
 
 
- 
+ 
 
- 
+ 
 
 
 

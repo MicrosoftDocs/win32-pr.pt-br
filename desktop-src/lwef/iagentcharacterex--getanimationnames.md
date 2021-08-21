@@ -4,16 +4,16 @@ description: IAgentCharacterEx GetAnimationNames
 ms.assetid: d565b258-dc12-422b-a13d-aeec56057f64
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e31dcb7ea34a9f0d833f8c1665a092fe4f3a30e7
-ms.sourcegitcommit: baa7cd1709e48672f5f07ff83a9c9d5699c0efcd
+ms.openlocfilehash: 58c9cb1bc1b51b0bead2f071e0cd8561ef055ef6b7eb7986b3be969208452331
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "105759783"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118478019"
 ---
 # <a name="iagentcharacterexgetanimationnames"></a>IAgentCharacterEx:: getanimationnames
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetAnimationNames(

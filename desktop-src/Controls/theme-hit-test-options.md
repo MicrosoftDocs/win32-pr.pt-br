@@ -4,12 +4,12 @@ description: Esta seção lista os valores de opção que são usados com o par�
 ms.assetid: a0d5c6c8-bb50-46e1-98ae-2374842344c6
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 638a7aaca83c658ad852b195cdb9514210a14c16
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 90e3f9f3c7ba8b5c7a2c4468177befc3083bb2ed613b674cdb02f7fd3ad7f10c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104453609"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166521"
 ---
 # <a name="hit-test-options"></a>Opções de teste de clique
 
@@ -36,11 +36,11 @@ A tabela a seguir lista as opções de teste de clique.
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

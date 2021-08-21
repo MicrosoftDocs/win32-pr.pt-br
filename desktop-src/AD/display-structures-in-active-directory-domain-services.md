@@ -1,24 +1,24 @@
 ---
 title: Exibir estruturas no Active Directory Domain Services
-description: Exibir funções e interfaces no Active Directory Domain Services use as seguintes estruturas para conter dados de exibição sobre elementos da interface do usuário do diretório.
+description: As funções e interfaces de exibição Active Directory Domain Services as estruturas a seguir para conter dados de exibição sobre elementos de interface do usuário do diretório.
 ms.assetid: bf6aa066-ee7e-4b13-9a4b-1e097632ec5a
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f91b5b5dc91097a1d300e7f76970dc24211771d2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: b701ebb64134288778db6e6d10c82976e18bf2ccf237af656cbbef97588a2363
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915954"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118018713"
 ---
 # <a name="display-structures-in-active-directory-domain-services"></a>Exibir estruturas no Active Directory Domain Services
 
-Exibir funções e interfaces no Active Directory Domain Services usar as seguintes estruturas para conter dados de exibição sobre elementos da interface do usuário do diretório:
+As funções e interfaces de exibição Active Directory Domain Services as seguintes estruturas para conter dados de exibição sobre elementos de interface do usuário do diretório:
 
 -   [**CQFORM**](/windows/desktop/api/Cmnquery/ns-cmnquery-cqform)
 -   [**CQPAGE**](/windows/desktop/api/Cmnquery/ns-cmnquery-cqpage)
--   [**\_ \_ informações da página DSA SEC \_**](dsa-sec-page-info.md)
+-   [**INFORMAÇÕES DA PÁGINA DSA \_ SEC \_ \_**](dsa-sec-page-info.md)
 -   [**DOMAINDESC**](/windows/desktop/api/Dsclient/ns-dsclient-domaindesc)
 -   [**DOMAINTREE**](/windows/desktop/api/Dsclient/ns-dsclient-domain_tree)
 -   [**DSBITEM**](/windows/desktop/api/Dsclient/ns-dsclient-dsbitema)
@@ -35,9 +35,9 @@ Exibir funções e interfaces no Active Directory Domain Services usar as seguin
 -   [**OPENQUERYWINDOW**](/windows/desktop/api/Cmnquery/ns-cmnquery-openquerywindow)
 -   [**PROPSHEETCFG**](propsheetcfg.md)
 
- 
+ 
 
- 
+ 
 
 
 

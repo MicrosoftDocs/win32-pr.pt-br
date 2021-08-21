@@ -100,15 +100,15 @@ As PIDLs completas são usadas com pouca pouca segurança. Muitas funções e m�
 
 As PIDLs relativas mais usadas, *PIDLs* de nível único, são relativas à pasta pai do objeto. Eles contêm apenas a ID do item do objeto e um **NULL de terminação.** As PIDLs de vários níveis também são usadas para muitas finalidades. Eles contêm duas ou mais IDs de item e normalmente definem um caminho de uma pasta pai para um objeto por meio de uma série de uma ou mais subpastas. Observe que um PIDL de nível único ainda pode ser um PIDL totalmente qualificado. Em particular, os objetos da área de trabalho são filhos da área de trabalho, portanto, suas PIDLs totalmente qualificadas contêm apenas uma ID de item.
 
-Conforme discutido em [Obter a ID](folder-id.md)de uma pasta, a API do Shell fornece várias maneiras de recuperar o PIDL de um objeto. Depois de usá-lo, você geralmente apenas o usa para identificar o objeto quando chama outras funções e métodos da API do Shell. Nesse contexto, o conteúdo interno de um PIDL é opaco e irrelevante. Para os fins desta discussão, pense em PIDLs como tokens que representam objetos de namespace específicos e concentre-se em como usá-los para tarefas comuns.
+Conforme discutido em [Obter a ID](folder-id.md)de uma pasta, a API do Shell fornece várias maneiras de recuperar o PIDL de um objeto. Depois de tê-lo, você costuma apenas usá-lo para identificar o objeto ao chamar outras funções e métodos da API do Shell. Nesse contexto, o conteúdo interno de um PIDL é opaco e irrelevante. Para os fins desta discussão, imagine PIDLs como tokens que representam objetos de namespace específicos e concentre-se em como usá-los para tarefas comuns.
 
 ### <a name="allocating-pidls"></a>Alocando PIDLs
 
-Embora as PIDLs tenham alguma similaridade com caminhos, usá-los requer uma abordagem um pouco diferente. A principal diferença está em como alocar e desalocar memória para eles.
+Embora PIDLs tenha alguma semelhança com os caminhos, usá-los requer uma abordagem um pouco diferente. A principal diferença é em como alocar e desalocar memória para eles.
 
-Assim como a cadeia de caracteres usada para um caminho, a memória deve ser alocada para um PIDL. Se um aplicativo criar um PIDL, ele deverá alocar memória suficiente para a [**estrutura ITEMIDLIST.**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) Para a maioria dos casos discutidos aqui, o Shell cria o PIDL e lida com a alocação de memória. Independentemente do que alocou o PIDL, o aplicativo geralmente é responsável por desalocar o PIDL quando ele não é mais necessário.
+Assim como a cadeia de caracteres usada para um caminho, a memória deve ser alocada para um PIDL. Se um aplicativo criar um PIDL, ele deverá alocar memória suficiente para a estrutura [**ITEMIDLIST**](/windows/desktop/api/Shtypes/ns-shtypes-itemidlist) . Para a maioria dos casos discutidos aqui, o Shell cria o PIDL e manipula a alocação de memória. Independentemente do que alocou o PIDL, o aplicativo geralmente é responsável por desalocar o PIDL quando ele não é mais necessário.
 
-Use a [**função CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) para alocar o PIDL e a [**função CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para desalocar.
+Use a função [**CoTaskMemAlloc**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) para alocar o PIDL e a função [**CoTaskMemFree**](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) para desalocá-lo.
 
  
 

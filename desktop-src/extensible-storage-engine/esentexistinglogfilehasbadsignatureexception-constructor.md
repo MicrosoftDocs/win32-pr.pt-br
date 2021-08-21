@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a09ae63bfdba6ae86c4aeb406a1aed915eda171b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41245a26e922a77e34a5dbb9738b68c273652a2af4ce6138cf538a7afb71e943
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118496762"
 ---
 # <a name="esentexistinglogfilehasbadsignatureexception-constructor"></a>Construtor EsentExistingLogFileHasBadSignatureException
 
 Inicializa uma nova instância da classe EsentExistingLogFileHasBadSignatureException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentExistingLogFileHasBadSignatureException()
 
 [Classe EsentExistingLogFileHasBadSignatureException](./esentexistinglogfilehasbadsignatureexception-class.md)
 
-[Membros do EsentExistingLogFileHasBadSignatureException](./esentexistinglogfilehasbadsignatureexception-members.md)
+[Membros EsentExistingLogFileHasBadSignatureException](./esentexistinglogfilehasbadsignatureexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

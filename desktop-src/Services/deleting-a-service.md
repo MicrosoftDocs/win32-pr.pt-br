@@ -4,18 +4,18 @@ ms.assetid: 3bfe4d42-a8a0-4613-9b0f-a80eef54b622
 title: Excluindo um serviço
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 40b1e0e95e0ea943487a0d3fa513afa2c0563d3c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1e5f4f79b17de2e3726fcd8bc4ada8b34cc10c404789200ffa5eaa71373ff823
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117968193"
 ---
 # <a name="deleting-a-service"></a>Excluindo um serviço
 
-Um [programa de configuração de serviço](service-configuration-programs.md) usa a função [**OpenService**](/windows/desktop/api/Winsvc/nf-winsvc-openservicea) para obter um identificador para um objeto de serviço instalado. O programa pode usar o identificador de objeto de serviço na função [**DeleteService**](/windows/desktop/api/Winsvc/nf-winsvc-deleteservice) para excluir o serviço do banco de dados SCM.
+Um [programa de configuração de](service-configuration-programs.md) serviço usa a função [**OpenService**](/windows/desktop/api/Winsvc/nf-winsvc-openservicea) para obter um identificador para um objeto de serviço instalado. O programa pode usar o identificador de objeto de serviço na [**função DeleteService**](/windows/desktop/api/Winsvc/nf-winsvc-deleteservice) para excluir o serviço do banco de dados SCM.
 
-A função DoDeleteSvc no exemplo a seguir mostra como excluir um serviço do banco de dados SCM. A variável szSvcName é uma variável global que contém o nome do serviço a ser excluído. Para obter o exemplo completo que define essa variável, consulte [SvcConfig. cpp](svcconfig-cpp.md).
+A função DoDeleteSvc no exemplo a seguir mostra como excluir um serviço do banco de dados SCM. A variável szSvcName é uma variável global que contém o nome do serviço a ser excluído. Para ver o exemplo completo que define essa variável, consulte [SvcConfig.cpp](svcconfig-cpp.md).
 
 
 ```C++
@@ -81,7 +81,7 @@ VOID __stdcall DoDeleteSvc()
 
 <dl> <dt>
 
-[Instalação, remoção e enumeração de serviço](service-installation-removal-and-enumeration.md)
+[Instalação, remoção e enumeração do serviço](service-installation-removal-and-enumeration.md)
 </dt> <dt>
 
 [O exemplo de serviço completo](the-complete-service-sample.md)

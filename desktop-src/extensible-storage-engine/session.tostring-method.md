@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método Session. ToString'
-title: Método Session. ToString
+description: 'Saiba mais sobre: método Session.ToString'
+title: Método Session.ToString
 TOCTitle: 'ToString method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Session.ToString
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.session.tostring(v=EXCHG.10)
@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a76ccafcd72c57e5aaabf0f5f4981d81942cad44
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a31e0420a606052f83201a967bd5396789468d910c552f1f4f5bdff4f12f41a2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118485515"
 ---
-# <a name="sessiontostring-method"></a>Método Session. ToString
+# <a name="sessiontostring-method"></a>Método Session.ToString
 
-Retorna uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [sessão](./session-class.md)atual.
+Retorna uma [Cadeia de](/dotnet/api/system.string) Caracteres que representa a [sessão atual.](./session-class.md)
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,10 +54,10 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [sessão](./session-class.md)atual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Uma [Cadeia de](/dotnet/api/system.string) Caracteres que representa a sessão [atual.](./session-class.md)  
 
 ## <a name="see-also"></a>Confira também
 
@@ -67,4 +67,4 @@ Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [sessão]
 
 [Membros da sessão](./session-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

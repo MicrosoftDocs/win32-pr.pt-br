@@ -5,12 +5,12 @@ ms.assetid: 402B8502-DE17-440B-867D-45922582C30E
 ms.tgt_platform: multiple
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c0e4c8fefc2e443778b2ce177e61a314a3e0ef9
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: d91b24b95b6b19cb439350c0c6823306c66a8fab5fe47f0f9e9fb739df64e3cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "103638496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118128060"
 ---
 # <a name="itssbtaskinfo-properties"></a>Propriedades de ITsSbTaskInfo
 
@@ -20,14 +20,14 @@ A interface [**ITsSbTaskInfo**](/windows/desktop/api/sbtsv/nn-sbtsv-itssbtaskinf
 
 <dl> <dt>
 
-[**Propriedade de contexto**](itssbtaskinfo-context.md)
+[**Propriedade context**](itssbtaskinfo-context.md)
 </dt> <dd>
 
 Recupera os bytes de contexto associados à tarefa.
 
 </dd> <dt>
 
-[**Propriedade prazo**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtaskinfo-get_deadline)
+[**Propriedade Deadline**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtaskinfo-get_deadline)
 </dt> <dd>
 
 Recupera a hora pela qual a tarefa deve ser iniciada. Isso é usado para priorizar patches. O patch com o prazo mais antigo será iniciado primeiro.
@@ -48,14 +48,14 @@ Recupera um GUID que é usado como um identificador exclusivo pelo agente de tar
 
 </dd> <dt>
 
-[**Propriedade do rótulo**](itssbtaskinfo-label.md)
+[**Propriedade Label**](itssbtaskinfo-label.md)
 </dt> <dd>
 
 Recupera o rótulo que descreve a finalidade da tarefa.
 
 </dd> <dt>
 
-[**Propriedade plugin**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtaskinfo-get_plugin)
+[**Propriedade do plug-in**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtaskinfo-get_plugin)
 </dt> <dd>
 
 Recupera o nome de exibição do agente de tarefa.
@@ -65,14 +65,14 @@ Recupera o nome de exibição do agente de tarefa.
 [**Propriedade StartTime**](/windows/desktop/api/sbtsv/nf-sbtsv-itssbtaskinfo-get_starttime)
 </dt> <dd>
 
-Recupera a hora mais antiga em que o agente de tarefa pode iniciar a tarefa.
+Recupera a primeira vez que o agente de tarefa pode iniciar a tarefa.
 
 </dd> <dt>
 
-[**Propriedade de status**](itssbtaskinfo-status.md)
+[**Propriedade Status**](itssbtaskinfo-status.md)
 </dt> <dd>
 
-Recupera um valor de enumeração de [**\_ \_ status da tarefa RDV**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status) que representa o estado da tarefa.
+Recupera um valor [**de enumeração \_ \_ STATUS da TAREFA RDV**](/windows/desktop/api/SessDirPublicTypes/ne-sessdirpublictypes-rdv_task_status) que representa o estado da tarefa.
 
 </dd> <dt>
 
@@ -83,9 +83,9 @@ Recupera o identificador de destino.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

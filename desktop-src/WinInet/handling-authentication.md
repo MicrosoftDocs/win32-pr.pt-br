@@ -4,12 +4,12 @@ description: Alguns proxies e servidores exigem autenticação antes de conceder
 ms.assetid: f3752031-30d3-4e35-8eae-1d4971b66bc2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e82d8cd93f1010c71560d856793ad06d8bc5d9d5
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: 1797f34eb4f25f8d5e345b6790489acd5fad7e2bc21e6457642a1b4ffa022f9b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380850"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118113825"
 ---
 # <a name="handling-authentication"></a>Manipulando a autenticação
 
@@ -36,7 +36,7 @@ A tabela a seguir lista os esquemas de autenticação, o tipo de autenticação,
 
 
 
-| Esquema                                    | Type               | DLL                  | Descrição                                                                                                                                                                                                                                                                                                                                        |
+| Esquema                                    | Tipo               | DLL                  | Descrição                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------|--------------------|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Básico (texto não criptografado)                         | básico              | Wininet.dll          | Usa uma cadeia de caracteres codificada em base64 que contém o nome de usuário e a senha.                                                                                                                                                                                                                                                                             |
 | Digest                                    | desafio-resposta | Digest.dll           | Um esquema de desafio/resposta que desafia o uso de um valor nonce (uma cadeia de caracteres de dados especificada pelo servidor). Uma resposta válida contém uma soma de verificação do nome de usuário, a senha, o valor de nonce fornecido, o método HTTP e o Uniform Resource Identifier (URI) solicitado. O suporte à autenticação Digest foi introduzido no Microsoft Internet Explorer 5. |
@@ -57,7 +57,7 @@ As funções [**InternetOpenUrl**](/windows/desktop/api/Wininet/nf-wininet-inter
 
 ### <a name="registering-authentication-keys"></a>Registrando chaves de autenticação
 
-INTERNET \_ Open \_ Type a \_ preconfig examina os valores de registro **ProxyEnable**, **ProxyServer** e **ProxyOverride**. Esses valores estão localizados em **HKEY \_ Current \_ User** \\ **software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Internet Settings**.
+INTERNET \_ Open \_ Type a \_ preconfig examina os valores de registro **ProxyEnable**, **ProxyServer** e **ProxyOverride**. esses valores estão localizados em **HKEY \_ CURRENT \_ USER** \\ **Software** \\ **Microsoft** \\ **Windows** \\ **CurrentVersion** \\ **Internet Configurações**.
 
 Para esquemas de autenticação diferentes do básico, uma chave deve ser adicionada ao registro em **HKEY \_ local \_ Machine** \\ **software** \\ **Microsoft** \\ **Internet Explorer** \\ **Security**. Um valor **DWORD** , **flags**, deve ser definido com o valor apropriado. A lista a seguir mostra os valores possíveis para o valor de **flags** .
 
@@ -101,15 +101,15 @@ A função [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-intern
 
 Uma interface personalizada pode usar a função [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) para definir a [ \_ \_ \_ senha do proxy de opção da Internet](option-flags.md) e os valores de nome de [ \_ \_ \_ usuário do proxy de opção de Internet](option-flags.md) e, em seguida, reenviar a solicitação para o proxy.
 
-Se nenhum nome de usuário e senha de proxy forem definidos, o WinINet tentará usar o nome de usuário e a senha para o servidor. Esse comportamento permite que os clientes implementem a mesma interface de usuário personalizada usada para lidar com a autenticação do servidor.
+Se nenhum nome de usuário proxy e senha for definido, o WinINet tentará usar o nome de usuário e a senha para o servidor. Esse comportamento permite que os clientes implementem a mesma interface do usuário personalizada usada para lidar com a autenticação do servidor.
 
 ## <a name="handling-http-authentication"></a>Manipulando a autenticação HTTP
 
-A autenticação HTTP pode ser tratada com o [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) ou com uma função personalizada que usa [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) ou adiciona seus próprios cabeçalhos de autenticação. [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) pode examinar os cabeçalhos associados a um identificador [**HINTERNET**](appendix-a-hinternet-handles.md) para localizar erros ocultos, como códigos de status de um proxy ou servidor. O [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) pode ser usado para definir o nome de usuário e a senha para o proxy e o servidor. Para a autenticação do MSN e DPA, [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) deve ser usado para definir o nome de usuário e a senha.
+A autenticação HTTP pode ser tratada com [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) ou uma função personalizada que usa [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) ou adiciona seus próprios cabeçalhos de autenticação. [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) pode examinar os headers associados a um handle [**HINTERNET**](appendix-a-hinternet-handles.md) para encontrar erros ocultos, como códigos de status de um proxy ou servidor. [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona) pode ser usado para definir o nome de usuário e a senha para o proxy e o servidor. Para autenticação MSN e DPA, [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) deve ser usado para definir o nome de usuário e a senha.
 
-Para qualquer função personalizada que adicione seus próprios cabeçalhos WWW-Authenticate ou Proxy-Authenticate, o [sinalizador \_ Internet \_ não \_ ](api-flags.md) deve ser definido para desabilitar a autenticação.
+Para qualquer função personalizada que adiciona seus próprios WWW-Authenticate ou Proxy-Authenticate, o sinalizador [DE INTERNET \_ NO \_ \_ AUTH](api-flags.md) deve ser definido para desabilitar a autenticação.
 
-O exemplo a seguir mostra como [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) pode ser usado para manipular a autenticação http.
+O exemplo a seguir mostra como [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) pode ser usado para lidar com a autenticação HTTP.
 
 
 ```C++
@@ -159,9 +159,9 @@ if (dwError == ERROR_INTERNET_FORCE_RETRY)
 
 
 
-No exemplo, dwErrorCode é usado para armazenar quaisquer erros associados à chamada para [**HttpSendRequest**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta). O [**HttpSendRequest**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta) é concluído com êxito, mesmo que o proxy ou o servidor exija autenticação. Quando o \_ \_ \_ sinalizador filtro de IU \_ de erro de sinalizadores para \_ erros é passado para [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg), a função verifica os cabeçalhos em busca de erros ocultos. Esses erros ocultos incluem qualquer solicitação de autenticação. [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) exibe a caixa de diálogo apropriada para solicitar os dados necessários ao usuário. Os sinalizadores da interface do usuário de erros de sinalizadores \_ \_ \_ \_ GERAm \_ dados e sinalizadores sinalizadores de \_ \_ interface do usuário de erro de \_ \_ alteração \_ sinalizadores de opções também devem ser passados para [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg), para que a função Construa a estrutura de dados apropriada para o erro e armazene os resultados da caixa de diálogo no identificador [**HINTERNET**](appendix-a-hinternet-handles.md) .
+No exemplo, dwErrorCode é usado para armazenar todos os erros associados à chamada para [**HttpSendRequest.**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta) [**HttpSendRequest é**](/windows/desktop/api/Wininet/nf-wininet-httpsendrequesta) concluído com êxito, mesmo que o proxy ou servidor exija autenticação. Quando o sinalizador FILTER FOR ERROR UI FILTER FOR ERRORS de FLAGS for passado para \_ \_ \_ \_ \_ [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg), a função verificará se há erros ocultos nos headers. Esses erros ocultos incluiriam quaisquer solicitações de autenticação. [**InternetErrorDlg**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) exibe a caixa de diálogo apropriada para solicitar ao usuário os dados necessários. OS SINALIZADORES DE IU DE ERRO SINALIZADORES GERAM DADOS E SINALIZADORES SINALIZADORES DE ERRO SINALIZADORES DE ALTERAÇÃO OS SINALIZADORES DE OPÇÕES DE ALTERAÇÃO também devem ser passados para \_ \_ \_ \_ \_ \_ \_ \_ \_ \_ [**InternetErrorDlg,**](/windows/desktop/api/Wininet/nf-wininet-interneterrordlg) [](appendix-a-hinternet-handles.md) para que a função construa a estrutura de dados apropriada para o erro e armazene os resultados da caixa de diálogo no handle HINTERNET.
 
-O código de exemplo a seguir mostra como a autenticação pode ser tratada usando [**InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona).
+O código de exemplo a seguir mostra como a autenticação pode ser tratada [**usando InternetSetOption**](/windows/desktop/api/Wininet/nf-wininet-internetsetoptiona).
 
 
 ```C++
@@ -242,7 +242,7 @@ switch (dwStatus)
 
 
 > [!Note]  
-> O WinINet não oferece suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o Microsoft Windows http Services (WinHTTP)](/windows/desktop/WinHttp/winhttp-start-page).
+> O WinINet não dá suporte a implementações de servidor. Além disso, ele não deve ser usado de um serviço. Para implementações de servidor ou serviços, use [o WinHTTP (Microsoft Windows HTTP Services).](/windows/desktop/WinHttp/winhttp-start-page)
 
  
 

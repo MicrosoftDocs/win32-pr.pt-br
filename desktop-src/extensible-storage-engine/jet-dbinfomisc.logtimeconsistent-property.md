@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_DBINFOMISC. logtimeConsistent'
-title: Propriedade JET_DBINFOMISC. logtimeConsistent
+description: 'Saiba mais sobre: JET_DBINFOMISC.logtimeConsistent'
+title: JET_DBINFOMISC.logtimeConsistent
 TOCTitle: 'logtimeConsistent property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.JET_DBINFOMISC.logtimeConsistent
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_dbinfomisc.logtimeconsistent(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d46302373df17e147095c5ac5c37f02ffef1eb4a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c7f8a8db663dca151d1d2e8e46512ee44fe97074f906ae657af3e1fa2803bbda
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089913"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118486205"
 ---
-# <a name="jet_dbinfomisclogtimeconsistent-property"></a>Propriedade JET_DBINFOMISC. logtimeConsistent
+# <a name="jet_dbinfomisclogtimeconsistent-property"></a>JET_DBINFOMISC.logtimeConsistent
 
-Obtém a hora em que o banco de dados tornou-se consistente. Esse valor será nulo se o banco de dados estiver inconsistente.
+Obtém a hora em que o banco de dados se tornou consistente. Esse valor será nulo se o banco de dados estiver inconsistente.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -60,14 +60,14 @@ public JET_LOGTIME logtimeConsistent { get; internal set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [Microsoft.ISAM.ESENT.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
+Tipo: [Microsoft.Isam.Esent.Interop.JET_LOGTIME](./jet-logtime-structure2.md)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_DBINFOMISC](./jet-dbinfomisc-class.md)
+[JET_DBINFOMISC classe](./jet-dbinfomisc-class.md)
 
-[Membros do JET_DBINFOMISC](./jet-dbinfomisc-members.md)
+[JET_DBINFOMISC membros](./jet-dbinfomisc-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

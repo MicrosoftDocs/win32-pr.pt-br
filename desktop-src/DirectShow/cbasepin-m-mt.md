@@ -1,7 +1,7 @@
 ---
-description: Tipo de mídia para a conexão do PIN atual.
+description: Tipo de mídia para a conexão de pino atual.
 ms.assetid: ab5d9d3a-a9f6-4c14-b872-7e1d03c86fb0
-title: 'Membro CBasePin:: m_mt (Amfilter. h)'
+title: Membro CBasePin::m_mt (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 5ff990c9473a5ff65a2a4e0818d1f77c7fb414b2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f48fb7a80bad7d868281b0797ef3f18c7f31644b7479caa4565c1fe45fc353e9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105787421"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118158185"
 ---
-# <a name="cbasepinm_mt-member"></a>Membro CBasePin:: m \_ MT
+# <a name="cbasepinm_mt-member"></a>Membro CBasePin::mt \_
 
-Tipo de mídia para a conexão do PIN atual.
+Tipo de mídia para a conexão de pino atual.
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ CMediaType m_mt;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

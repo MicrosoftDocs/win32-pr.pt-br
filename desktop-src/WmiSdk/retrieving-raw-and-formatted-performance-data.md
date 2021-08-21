@@ -5,18 +5,18 @@ ms.tgt_platform: multiple
 title: Recuperando a documentação para objetos de dados de desempenho brutos e formatados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 57ab9cf66aa4536da25102511fdcbcab6bdd5202
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a28f155d89ffe8e01c3a21809c102780bcedbf461e4b3040ab876ed2836c37e7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297497"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117923072"
 ---
 # <a name="retrieving-documentation-for-raw-and-formatted-performance-data-objects"></a>Recuperando a documentação para objetos de dados de desempenho brutos e formatados
 
 O tópico a seguir descreve como recuperar a documentação de programação online para um objeto de dados brutos ou formatados criado dinamicamente.
 
-O WMI contém vários objetos que acompanham o desempenho. As classes derivadas do [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) contêm dados de desempenho brutos ou "não-cookied" e têm suporte do [provedor de contador de desempenho](performance-counter-provider.md). Por outro lado, as classes derivadas do [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) contêm "cooked", ou dados formatados, e têm suporte pelo [provedor de dados de desempenho formatado](formatted-performance-data-provider.md).
+O WMI contém vários objetos que acompanham o desempenho. As classes derivadas do [**Win32 \_ PerfRawData**](/windows/desktop/CIMWin32Prov/win32-perfrawdata) contêm dados de desempenho brutos ou "não-cookied" e têm suporte do [provedor de contador de desempenho](performance-counter-provider.md). por outro lado, as classes derivadas do [**Win32 \_ PerfFormattedData**](/windows/desktop/CIMWin32Prov/win32-perfformatteddata) contêm "cooked", ou dados formatados, e têm suporte pelo [Provedor de Dados de desempenho formatado](formatted-performance-data-provider.md).
 
 No entanto, ambos os provedores dão suporte a um número de classes filho criadas dinamicamente. Como as propriedades são adicionadas em tempo de execução, essas classes podem conter Propriedades não documentadas. Você pode usar o código a seguir para identificar quais propriedades uma determinada classe criada dinamicamente tem.
 

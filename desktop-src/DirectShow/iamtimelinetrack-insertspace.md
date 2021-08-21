@@ -1,7 +1,7 @@
 ---
-description: O método InsertSpace divide todos os objetos que existem no momento especificado e insere espaço entre eles.
+description: O método InsertSpace divide todos os objetos que existem no tempo especificado e insere um espaço entre eles.
 ms.assetid: f9e48f58-1867-405c-b208-1ab781912aa1
-title: Método IAMTimelineTrack::InsertSpace (Qedit.h)
+title: 'Método IAMTimelineTrack:: InsertSpace (QEdit. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,14 +21,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118399173"
 ---
-# <a name="iamtimelinetrackinsertspace-method"></a>Método IAMTimelineTrack::InsertSpace
+# <a name="iamtimelinetrackinsertspace-method"></a>Método IAMTimelineTrack:: InsertSpace
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O método divide todos os objetos que existem no momento especificado e `InsertSpace` insere espaço entre eles.
+O `InsertSpace` método divide todos os objetos existentes na hora especificada e insere o espaço entre eles.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,19 +56,19 @@ Hora na qual criar a divisão e o ponto inicial do espaço inserido, em unidades
 *rtEnd* 
 </dt> <dd>
 
-Ponto final do espaço inserido, em unidades de 100 nanossegundos.
+Ponto de extremidade do espaço inserido, em unidades de 100 nanossegundos.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um **valor HRESULT.** Os possíveis valores de retorno incluem o seguinte:
+Retorna um valor **HRESULT** . Os possíveis valores de retorno incluem o seguinte:
 
 
 
-| Código de retorno                                                                                   | Description                                            |
+| Código de retorno                                                                                   | Descrição                                            |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| <dl> <dt>**S \_ FALSE**</dt> </dl>       | Não há objetos no momento especificado.<br/> |
+| <dl> <dt>**\_falso**</dt> </dl>       | Não há objetos no horário especificado.<br/> |
 | <dl> <dt>**S \_ OK**</dt> </dl>          | Êxito.<br/>                                    |
 | <dl> <dt>**E \_ INVALIDARG**</dt> </dl>  | Argumento inválido.<br/>                           |
 | <dl> <dt>**E \_ OUTOFMEMORY**</dt> </dl> | Memória insuficiente.<br/>                        |
@@ -80,12 +80,12 @@ Retorna um **valor HRESULT.** Os possíveis valores de retorno incluem o seguint
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
+> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -95,8 +95,8 @@ Retorna um **valor HRESULT.** Os possíveis valores de retorno incluem o seguint
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 
 
@@ -104,7 +104,7 @@ Retorna um **valor HRESULT.** Os possíveis valores de retorno incluem o seguint
 
 <dl> <dt>
 
-[**IAMTimelineTrack Interface**](iamtimelinetrack.md)
+[**Interface IAMTimelineTrack**](iamtimelinetrack.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

@@ -1,6 +1,6 @@
 ---
-title: Visão geral do controle ToolTip
-description: Visão geral do controle ToolTip
+title: Visão geral do controle de dica de ferramenta
+description: Visão geral do controle de dica de ferramenta
 ms.assetid: 686455f6-9c72-433e-a1ee-60a83c49ee6e
 ms.topic: article
 ms.date: 05/31/2018
@@ -11,9 +11,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118414968"
 ---
-# <a name="tooltip-control-overview"></a>Visão geral do controle ToolTip
+# <a name="tooltip-control-overview"></a>Visão geral do controle de dica de ferramenta
 
--   [Sobre os controles de dica de ferramenta](tooltip-controls.md)
+-   [Sobre controles de dica de ferramenta](tooltip-controls.md)
 -   [Usando controles de dica de ferramenta](using-tooltip-contro.md)
 
  

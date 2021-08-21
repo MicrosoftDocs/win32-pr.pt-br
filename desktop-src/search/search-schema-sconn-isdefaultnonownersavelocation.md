@@ -1,19 +1,19 @@
 ---
-description: O elemento booliano opcional <isDefaultNonOwnerSaveLocation> especifica se o local descrito no conector de pesquisa deve ser usado como o local de salvamento padrão quando um usuário de outro computador em um grupo doméstico opta por salvar um item.
+description: O elemento booliana opcional especifica se o local descrito no conector de pesquisa deve ser usado como o local de salvar padrão quando um usuário de outro computador em um Grupo Doméstico optar por salvar <isDefaultNonOwnerSaveLocation> um item.
 ms.assetid: 4286b122-2454-4dc3-9c06-9967b7a763dd
 title: Elemento isDefaultNonOwnerSaveLocation (esquema do conector de pesquisa)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: edd39ab76ae1b99d6518ca40407d328f5da9778c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ae7bbffe620e5d59b3ff7a868048f3518b8fc0ea2737a1597f3594412b8839c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105790491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118051528"
 ---
 # <a name="isdefaultnonownersavelocation-element-search-connector-schema"></a>Elemento isDefaultNonOwnerSaveLocation (esquema do conector de pesquisa)
 
-O elemento booliano opcional <isDefaultNonOwnerSaveLocation> especifica se o local descrito no conector de pesquisa deve ser usado como o local de salvamento padrão quando um usuário de outro computador em um grupo doméstico opta por salvar um item. Este elemento não tem elementos filho e nenhum atributo.
+O elemento booliana opcional especifica se o local descrito no conector de pesquisa deve ser usado como o local de salvar padrão quando um usuário de outro computador em um Grupo Doméstico optar por salvar <isDefaultNonOwnerSaveLocation> um item. Esse elemento não tem nenhum elemento filho e nenhum atributos.
 
 ## <a name="syntax"></a>Syntax
 
@@ -47,7 +47,7 @@ O elemento booliano opcional <isDefaultNonOwnerSaveLocation> especifica se o loc
 
 ## <a name="remarks"></a>Comentários
 
-Se for true, quando um usuário de outro computador em um grupo doméstico optar por salvar um item, o Windows Explorer salvará o item no local especificado no <simpleLocation> elemento.
+Se for true, quando um usuário de outro computador em um Grupo Doméstico optar por salvar um item, o Windows Explorer salvará o item no local especificado no <simpleLocation> elemento.
 
 ## <a name="example"></a>Exemplo
 

@@ -4,12 +4,12 @@ ms.assetid: 4d0c880b-923d-4f83-91da-dd99bf111f13
 title: System. OfflineAvailability
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ceeefaf33acfc07bba2d552761ecd418257e8485
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e125a0a85d9792783ed7110cd41bf7ca7d32c71cedf0292b8885ed5e7348b046
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118052655"
 ---
 # <a name="systemofflineavailability"></a>System. OfflineAvailability
 

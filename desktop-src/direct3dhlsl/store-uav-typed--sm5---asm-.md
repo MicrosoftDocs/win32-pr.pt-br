@@ -1,23 +1,23 @@
 ---
-title: store_uav_typed (SM5-ASM)
-description: Gravação aleatória-acesso de um elemento em uma exibição de acesso não ordenado tipado (UAV).
+title: store_uav_typed (sm5 – asm)
+description: Gravação de acesso aleatório de um elemento em uma UAV (exibição de acesso não ordem) digitada.
 ms.assetid: AD8E035B-DACD-4241-A05B-7D6DC8E3222C
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6243e6fbb2092bac699dbbce04cb3c3478880866
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: cc190662ebab4629c92bba8fafbe75fe23704f8543c7eb9ceba53b9ab02b1029
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104006878"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118508236"
 ---
-# <a name="store_uav_typed-sm5---asm"></a>armazenar \_ UAV \_ tipados (SM5-ASM)
+# <a name="store_uav_typed-sm5---asm"></a>store \_ uav \_ digitado (sm5 - asm)
 
-Gravação aleatória-acesso de um elemento em uma exibição de acesso não ordenado tipado (UAV).
+Gravação de acesso aleatório de um elemento em uma UAV (exibição de acesso não ordem) digitada.
 
 
 
-| Store \_ UAV \_ tipada dstUAV. Xyzw, dstAddress \[ . swizzle \] , src0 \[ . swizzle\] |
+| store \_ uav \_ typed dstUAV.xyzw, dstAddress \[ .swizzle, \] src0 \[ .swizzle\] |
 |-------------------------------------------------------------------------|
 
 
@@ -28,9 +28,9 @@ Gravação aleatória-acesso de um elemento em uma exibição de acesso não ord
 
 | Item                                                                                                           | Descrição                                             |
 |----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/>                 | \[in \] contém o resultado da operação.<br/> |
-| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[no \] endereço no qual gravar.<br/>        |
-| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[nos \] componentes a serem gravados.<br/>              |
+| <span id="dstUAV"></span><span id="dstuav"></span><span id="DSTUAV"></span>*dstUAV*<br/>                 | \[em \] Contém o resultado da operação.<br/> |
+| <span id="dstAddress"></span><span id="dstaddress"></span><span id="DSTADDRESS"></span>*dstAddress*<br/> | \[em \] O endereço no qual gravar.<br/>        |
+| <span id="src0"></span><span id="SRC0"></span>*src0*<br/>                                                | \[em \] Os componentes a gravar.<br/>              |
 
 
 
@@ -38,23 +38,23 @@ Gravação aleatória-acesso de um elemento em uma exibição de acesso não ord
 
 ## <a name="remarks"></a>Comentários
 
-Essa instrução executa um elemento de 4 componentes de \* 32 bits gravado de *Src0* para *DstUAV* no endereço em *dstAddress*. *dstUAV* é um UAV tipado (u \# ).
+Essa instrução executa um elemento de 4 componentes de 32 bits escrito de \* *src0* para *dstUAV* no endereço *em dstAddress*. *dstUAV* é um UAV digitado (u \# ).
 
-O formato de UAV determina a conversão de formato.
+O formato da UAV determina a conversão de formato.
 
-O número de componentes inteiros sem sinal de 32 bits obtidos do endereço são determinados pela dimensionalidade do recurso declarado em *dstUAV*. Esse endereço está em elementos.
+O número de componentes inteiros sem sinal de 32 bits retirados do endereço é determinado pela dimensionalidade do recurso declarado em *dstUAV*. Esse endereço está em elementos .
 
-O endereçamento fora dos limites significa que nada é gravado na memória.
+Endereçamento fora dos limites significa que nada é gravado na memória.
 
-*dstUAV* sempre tem uma máscara de gravação. xyzw. Todos os componentes devem ser gravados.
+*dstUAV* sempre tem uma máscara de gravação .xyzw. Todos os componentes devem ser gravados.
 
-Ele é inválido e não está definido para usar essa instrução em um UAV que não seja declarado como tipado. Ou seja, fazer isso em um UAV estruturado ou de tipo não é válido.
+É inválido e indefinido usar essa instrução em um UAV que não é declarado como digitado. Ou seja, fazer isso em um UAV estruturado ou sem tipo é inválido.
 
-Essa instrução se aplica aos seguintes estágios de sombreador:
+Essa instrução se aplica aos seguintes estágios do sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | X     | X       |
 
@@ -62,11 +62,11 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
  
 
-Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3D 11,1, essa instrução se aplica a todos os estágios do sombreador para o tempo de execução do Direct3D 11,1, que está disponível a partir do Windows 8.
+Como os UAVs estão disponíveis em todos os estágios do sombreador para o Direct3D 11.1, essa instrução se aplica a todos os estágios do sombreador para o runtime do Direct3D 11.1, que está disponível a partir do Windows 8.
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | X      | X    | X      | X        | X     | X       |
 
@@ -74,7 +74,7 @@ Como UAVs estão disponíveis em todos os estágios do sombreador para o Direct3
 
  
 
-## <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
+## <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
 
 Essa instrução tem suporte nos seguintes modelos de sombreador:
 
@@ -83,7 +83,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 | Modelo de Sombreador                                              | Com suporte |
 |-----------------------------------------------------------|-----------|
 | [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md)        | sim       |
-| [Modelo do sombreador 4,1](dx-graphics-hlsl-sm4.md)              | não        |
+| [Modelo de sombreador 4.1](dx-graphics-hlsl-sm4.md)              | não        |
 | [Modelo de sombreador 4](dx-graphics-hlsl-sm4.md)                | não        |
 | [Modelo de sombreador 3 (DirectX HLSL)](dx-graphics-hlsl-sm3.md) | não        |
 | [Modelo de sombreador 2 (DirectX HLSL)](dx-graphics-hlsl-sm2.md) | não        |
@@ -97,7 +97,7 @@ Essa instrução tem suporte nos seguintes modelos de sombreador:
 
 <dl> <dt>
 
-[Assembly do Shader Model 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
+[Assembly do modelo de sombreador 5 (DirectX HLSL)](shader-model-5-assembly--directx-hlsl-.md)
 </dt> </dl>
 
  

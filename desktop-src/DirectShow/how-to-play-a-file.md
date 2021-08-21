@@ -17,7 +17,7 @@ Este artigo destina-se a dar a você o tipo de DirectShow programação. Ele apr
 
 Como descreve o artigo [Introdução DirectShow programação](introduction-to-directshow-application-programming.md) de aplicativos, um DirectShow aplicativo sempre executa as mesmas etapas básicas:
 
-1.  Crie uma instância do [Gerenciador Graph Filtro.](filter-graph-manager.md)
+1.  Crie uma instância do [Gerenciador Graph Filtro](filter-graph-manager.md).
 2.  Use o Gerenciador de Graph filtro para criar um grafo de filtro.
 3.  Execute o grafo, fazendo com que os dados se movam pelos filtros.
 
@@ -38,7 +38,7 @@ if (FAILED(hr))
 
 Para manter as coisas simples, este exemplo ignora o valor de retorno, mas você sempre deve verificar o valor **HRESULT** de qualquer chamada de método.
 
-Em seguida, [**chame CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para criar o Gerenciador de Graph Filter:
+Em seguida, [**chame CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) para criar o Gerenciador Graph Filter:
 
 
 ```C++
@@ -49,12 +49,12 @@ HRESULT hr = CoCreateInstance(CLSID_FilterGraph, NULL,
 
 
 
-Conforme mostrado, o CLSID (identificador de classe) é ClSID \_ FilterGraph. O Gerenciador Graph filtro é fornecido por uma DLL em processo, portanto, o contexto de execução é **CLSCTX \_ INPROC \_ SERVER**. DirectShow dá suporte ao modelo de threading livre, portanto, você também pode chamar [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) com o sinalizador **COINIT \_ MULTITHREADED.**
+Conforme mostrado, o CLSID (identificador de classe) é ClSID \_ FilterGraph. O Gerenciador Graph Filtro é fornecido por uma DLL em processo, portanto, o contexto de execução é **CLSCTX \_ INPROC \_ SERVER**. DirectShow dá suporte ao modelo de threading livre, portanto, você também pode chamar [**CoInitializeEx**](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) com o sinalizador **COINIT \_ MULTITHREADED.**
 
 A chamada para [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) retorna a interface [**IGraphBuilder,**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) que contém principalmente métodos para criar o grafo de filtro. Duas outras interfaces são necessárias para este exemplo:
 
 -   [**IMediaControl controla**](/windows/desktop/api/Control/nn-control-imediacontrol) o streaming. Ele contém métodos para parar e iniciar o grafo.
--   [**O IMediaEvent**](/windows/desktop/api/Control/nn-control-imediaevent) tem métodos para obter eventos do Gerenciador de Graph Filter. Neste exemplo, a interface é usada para aguardar a conclusão da reprodução.
+-   [**O IMediaEvent**](/windows/desktop/api/Control/nn-control-imediaevent) tem métodos para obter eventos do Gerenciador de Graph Filtro. Neste exemplo, a interface é usada para aguardar a conclusão da reprodução.
 
 Ambas as interfaces são expostas pelo Gerenciador de Graph Filtro. Use o ponteiro [**IGraphBuilder**](/windows/desktop/api/Strmif/nn-strmif-igraphbuilder) retornado para consulta-los:
 

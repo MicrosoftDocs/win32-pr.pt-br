@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_CAP_SET_PREVIEWRATE (VFW. h)
-description: A mensagem do conjunto de Cap do WM \_ \_ \_ PREVIEWRATE define a taxa de exibição do quadro no modo de visualização. Você pode enviar essa mensagem explicitamente ou usando a macro capPreviewRate.
+title: WM_CAP_SET_PREVIEWRATE mensagem (Vfw.h)
+description: A mensagem WM \_ CAP \_ SET \_ PREVIEWRATE define a taxa de exibição do quadro no modo de visualização. Você pode enviar essa mensagem explicitamente ou usando a macro capPreviewRate.
 ms.assetid: 1189ad4a-1f32-4684-920b-ee3c26ef97f8
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_SET_PREVIEWRATE
+- WM_CAP_SET_PREVIEWRATE mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1134255b73e579841800af6cd5f6900965217106
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fa9b9a24614a40c5efb545b91a80069bf915c77c4b7d8fb289ed581f750ac0cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919115"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118135078"
 ---
-# <a name="wm_cap_set_previewrate-message"></a>\_Mensagem de \_ PREVIEWRATE do conjunto de Cap do WM \_
+# <a name="wm_cap_set_previewrate-message"></a>Mensagem WM \_ CAP \_ SET \_ PREVIEWRATE
 
-A mensagem do **conjunto de Cap do WM \_ \_ \_ PREVIEWRATE** define a taxa de exibição do quadro no modo de visualização. Você pode enviar essa mensagem explicitamente ou usando a macro [**capPreviewRate**](/windows/desktop/api/Vfw/nf-vfw-cappreviewrate) .
+A **mensagem WM CAP SET \_ \_ \_ PREVIEWRATE** define a taxa de exibição do quadro no modo de visualização. Você pode enviar essa mensagem explicitamente ou usando a [**macro capPreviewRate.**](/windows/desktop/api/Vfw/nf-vfw-cappreviewrate)
 
 
 ```C++
@@ -38,7 +38,7 @@ lParam = 0L;
 
 <dl> <dt>
 
-<span id="wMS"></span><span id="wms"></span><span id="WMS"></span>*wMS*
+<span id="wMS"></span><span id="wms"></span><span id="WMS"></span>*Wms*
 </dt> <dd>
 
 Taxa, em milissegundos, na qual novos quadros são capturados e exibidos.
@@ -47,11 +47,11 @@ Taxa, em milissegundos, na qual novos quadros são capturados e exibidos.
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **true** se for bem-sucedido ou **false** se a janela de captura não estiver conectada a um driver de captura.
+Retornará **TRUE** se for bem-sucedido **ou FALSE** se a janela de captura não estiver conectada a um driver de captura.
 
 ## <a name="remarks"></a>Comentários
 
-O modo de visualização usa recursos de CPU substanciais. Os aplicativos podem desabilitar a visualização ou diminuir a taxa de visualização quando outro aplicativo tiver o foco. Durante a captura de vídeo de streaming, a tarefa de visualização é a prioridade mais baixa do que a gravação de quadros em disco, e os quadros de versão prévia serão exibidos somente se nenhum outro buffer estiver disponível para gravação.
+O modo de visualização usa recursos substanciais de CPU. Os aplicativos podem desabilitar a visualização ou reduzir a taxa de visualização quando outro aplicativo tem o foco. Durante a captura de vídeo de streaming, a tarefa de visualização é mais baixa do que a gravação de quadros no disco e os quadros de visualização são exibidos somente se nenhum outro buffer estiver disponível para gravação.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,7 +61,7 @@ O modo de visualização usa recursos de CPU substanciais. Os aplicativos podem 
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

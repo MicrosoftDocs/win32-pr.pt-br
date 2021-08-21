@@ -4,12 +4,12 @@ ms.assetid: 91a79d4e-a374-4dbc-9ec9-69cf3e1087e1
 title: Atributo bitdepth
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1cfe73531d9ef5cf8b9f21c62aa514c42bb9a364
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 96edc8bc2a2002f91c59e19e19326b3bd62d48dfa726e5f4fc8d1467d1ae9bb0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105754776"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159248"
 ---
 # <a name="bitdepth-attribute"></a>Atributo bitdepth
 
@@ -26,7 +26,7 @@ Deve ser 16, 24 ou 32. O valor padrão é 16.
 
 ## <a name="applies-to"></a>Aplica-se A
 
-[**Group**](group-element.md)
+[**group**](group-element.md)
 
 ## <a name="remarks"></a>Comentários
 

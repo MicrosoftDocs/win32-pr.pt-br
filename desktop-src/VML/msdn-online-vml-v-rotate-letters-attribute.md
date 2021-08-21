@@ -1,50 +1,50 @@
 ---
-title: Atributo da VML V-Rotate-Letters
-description: Atributo da VML V-Rotate-Letters
+title: Atributo VML V-Rotate-Letters
+description: Atributo VML V-Rotate-Letters
 ms.assetid: f9bd5c04-7479-4dc0-83d7-4a0bd5e2d41d
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9397fe8a819e9f4c8b517e1ac92e0094ad8e4458
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 779f7878b01765416560dacaed5e3b81a1e00a25d4bf7c53e0071c8bb487d16a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084578"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118123776"
 ---
-# <a name="vml-v-rotate-letters-attribute"></a>Atributo da VML V-Rotate-Letters
+# <a name="vml-v-rotate-letters-attribute"></a>Atributo VML V-Rotate-Letters
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se as letras do texto são giradas. Leitura/gravação. **VgTriState**.
+Determina se as letras do texto são giradas. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
-[TextPath](msdn-online-vml-textpath-element.md)
+[Textpath](msdn-online-vml-textpath-element.md)
 
 **Sintaxe de marca**
 
-<v: *elemento* Style = "v-Rotate-Letters: *expression* " >
+<v: *element* style="v-rotate-letters: *expression* ">
 
 **Sintaxe do script**
 
-*elemento* . Style. v-Rotate-Letters = "*expressão*"
+*expressão* element .style.v-rotate-letters=""
 
-*expressão* = de *elemento*. Style. v-Rotate-Letters
+*expressão* = *elemento*.style.v-rotate-letters
 
 **Comentários**
 
-Se **for true**, as letras do texto serão giradas 90 graus. O valor padrão é **Falso**.
+Se **True**, as letras do texto serão giradas em 90 graus. O valor padrão é **Falso**.
 
-*Atributo padrão da VML*
+*Atributo padrão VML*
 
 **Exemplo**
 
-As letras são giradas 90 graus.
+As letras são giradas em 90 graus.
 
 
 ```HTML
@@ -58,6 +58,6 @@ As letras são giradas 90 graus.
 
 
 
- 
+ 
 
- 
+ 

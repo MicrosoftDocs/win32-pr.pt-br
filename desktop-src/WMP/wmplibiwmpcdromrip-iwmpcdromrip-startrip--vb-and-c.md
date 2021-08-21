@@ -1,11 +1,11 @@
 ---
-title: Método IWMPCdromRip startRip
-description: O método startRip Rips o CD.
+title: Método startRip IWMPCdromRip
+description: O método startRip destrida o CD.
 ms.assetid: 3569e29c-e593-4bdd-8afb-74e39721cf80
 keywords:
-- método startRip Windows Media Player
-- método startRip Windows Media Player, interface IWMPCdromRip
-- Interface IWMPCdromRip Windows Media Player, método startRip
+- Método startRip Windows Media Player
+- método startRip Windows Media Player interface , IWMPCdromRip
+- Interface IWMPCdromRip Windows Media Player método , startRip
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 327ac9009cf1b8fb9ccfbcc460cde78ef40b3802
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a6686d3911123eee91dabec1f8750be7f80a6d8dc9c434d893560278ad291ded
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751938"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116204"
 ---
-# <a name="iwmpcdromripstartrip-method"></a>Método IWMPCdromRip:: startRip
+# <a name="iwmpcdromripstartrip-method"></a>Método IWMPCdromRip::startRip
 
-O método **startRip** Rips o CD.
+O **método startRip** destrida o CD.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -49,13 +49,13 @@ Implements IWMPCdromRip.startRip
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Copiar um CD usando a interface **IWMPCdromRip** tem o mesmo efeito que copiar música usando a interface do usuário do Windows Media Player. O conteúdo copiado é adicionado automaticamente à biblioteca de acordo com as preferências do usuário. Para obter mais informações sobre as preferências do usuário para a cópia de CD, consulte "copiando música de CDs" na ajuda do Windows Media Player.
+A replicação de um CD usando a interface **IWMPCdromRip** tem o mesmo efeito que a música de replicação usando a interface do Windows Media Player usuário. O conteúdo da biblioteca é adicionado automaticamente à biblioteca de acordo com as preferências do usuário. Para obter mais informações sobre as preferências do usuário para cd, consulte "Música de ressarção de CDs" Windows Media Player Ajuda.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,7 +79,7 @@ Copiar um CD usando a interface **IWMPCdromRip** tem o mesmo efeito que copiar m
 [**IWMPCdromRip.stopRip**](wmplibiwmpcdromrip-iwmpcdromrip-stoprip--vb-and-c.md)
 </dt> <dt>
 
-[**Copiando um CD**](ripping-a-cd.md)
+[**Ressarça um CD**](ripping-a-cd.md)
 </dt> </dl>
 
  

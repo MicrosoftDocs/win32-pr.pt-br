@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Cabinet.dll
-ms.openlocfilehash: 4ab032864e59d8e7379fe347d241874d9336e431
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 500de4df41c82f1956f50abcc25dc84f11484b693dc8d1a5f8bc53ab556ade0c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162087"
 ---
 # <a name="deleteextractedfiles-function"></a>Função DeleteExtractedFiles
 
@@ -41,7 +41,7 @@ VOID WINAPI DeleteExtractedFiles(
 
 <dl> <dt>
 
-*profissionais* 
+*ps* 
 </dt> <dd>
 
 Um ponteiro para uma estrutura de [**sessão**](session.md) que contém informações sobre a sessão atual.
@@ -72,7 +72,7 @@ Esta função não tem biblioteca de importação ou arquivo de cabeçalho assoc
 
 <dl> <dt>
 
-[**Extração**](extract.md)
+[**Auto-extraível**](extract.md)
 </dt> <dt>
 
 [**SESSÃO**](session.md)

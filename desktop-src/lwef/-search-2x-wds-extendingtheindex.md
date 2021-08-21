@@ -1,26 +1,26 @@
 ---
-title: Estendendo o índice (recursos herdados do ambiente Windows)
-description: Saiba como estender o índice no Windows Desktop Search 2. x. Para versões do Windows posteriores ao Windows XP e ao Windows Server 2003, use o Windows Search em vez disso.
+title: estendendo o índice (recursos herdados de Windows ambiente)
+description: saiba como estender o índice no Windows Desktop Search 2. x. para versões Windows posteriores ao Windows XP e Windows Server 2003, use Windows Search em vez disso.
 ms.assetid: vs|search|~\search\wds2x\extending_index_ovr.htm
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 63408cfe1efeb8da4d6a4540cc57b99ea56ae935
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: d73bbf1ab143bcac581a59467e7a3813511e7b20204434ee5ae7dd7d8893b636
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407349"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118480918"
 ---
-# <a name="extending-the-index-legacy-windows-environment-features"></a>Estendendo o índice (recursos herdados do ambiente Windows)
+# <a name="extending-the-index-legacy-windows-environment-features"></a>estendendo o índice (recursos herdados de Windows ambiente)
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use o [Windows Search](../search/-search-3x-wds-overview.md) em vez disso.
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use [Windows pesquisa](../search/-search-3x-wds-overview.md) em vez disso.
 
-O uso do e do desenvolvimento para as versões 2. x do Microsoft Windows Desktop Search (WDS) é fortemente desencorajado em favor do [Windows Search](../search/-search-3x-wds-overview.md).
+o uso do e do desenvolvimento para as versões 2. x do Microsoft Windows Desktop Search (WDS) é fortemente desencorajado em favor da [pesquisa de Windows](../search/-search-3x-wds-overview.md).
 
-O WDS pode ser estendido para indexar o conteúdo de novos tipos de arquivo e armazenamentos de dados. Atualmente, o WDS 2. x contém filtros para mais de 200 tipos de itens (incluindo itens de texto sem formatação, como HTML, XML e arquivos de código-fonte) e usa o mesmo [**IFilter**](/windows/desktop/api/filter/nn-filter-ifilter)e a mesma tecnologia de manipulador de protocolo que os serviços do SharePoint. Se você já tiver implementações de filtro instaladas para os novos tipos de arquivo, o WDS poderá usar as interfaces de filtro existentes para indexar esses dados.
+O WDS pode ser estendido para indexar o conteúdo de novos tipos de arquivo e armazenamentos de dados. Atualmente, o WDS 2. x contém filtros para mais de 200 tipos de itens (incluindo itens de texto sem formatação, como HTML, XML e arquivos de código-fonte) e usa o mesmo [**IFilter**](/windows/desktop/api/filter/nn-filter-ifilter)e a mesma tecnologia de manipulador de protocolo que SharePoint Services. Se você já tiver implementações de filtro instaladas para os novos tipos de arquivo, o WDS poderá usar as interfaces de filtro existentes para indexar esses dados.
 
-Os suplementos do WDS 2. x permitem que o índice Percorra e analise novos dados e estruturas de dados para obter informações a serem adicionadas ao catálogo pesquisável. Esses suplementos também podem estender o Shell do Windows para associar ícones e manipuladores de menu de contexto aos novos tipos de arquivo e armazenamentos de dados. Para incluir novos tipos de arquivo no catálogo do WDS, um suplemento deve implementar a interface [**IFilter**](/windows/desktop/api/filter/nn-filter-ifilter). Para incluir novos armazenamentos de dados, um suplemento deve ser um manipulador de protocolo. Se o novo armazenamento de dados incluir arquivos incorporados ou novos tipos de arquivo, também será necessário escrever um filtro apropriado.
+Os suplementos do WDS 2. x permitem que o índice Percorra e analise novos dados e estruturas de dados para obter informações a serem adicionadas ao catálogo pesquisável. esses suplementos também podem estender o Windows Shell para associar ícones e manipuladores de menu de contexto aos novos tipos de arquivo e armazenamentos de dados. Para incluir novos tipos de arquivo no catálogo do WDS, um suplemento deve implementar a interface [**IFilter**](/windows/desktop/api/filter/nn-filter-ifilter). Para incluir novos armazenamentos de dados, um suplemento deve ser um manipulador de protocolo. Se o novo armazenamento de dados incluir arquivos incorporados ou novos tipos de arquivo, também será necessário escrever um filtro apropriado.
 
 > [!Note]
 >

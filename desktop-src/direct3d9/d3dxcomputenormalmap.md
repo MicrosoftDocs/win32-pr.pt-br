@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 920ad763f478a2e6bcb9fbe98cc7e2a677ebe783
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: b561189c0aaafa42cc877246bb5a666ac26853133c227aa6c7a4f8beb1f23a28
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118299360"
 ---
 # <a name="d3dxcomputenormalmap-function"></a>Função D3DXComputeNormalMap
 
@@ -72,7 +72,7 @@ Ponteiro para um tipo [**PaletteEntry**](/windows/win32/api/wingdi/ns-wingdi-pal
 
 </dd> <dt>
 
-*Flags* \[in\]
+*Sinalizadores* \[ de no\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -99,7 +99,7 @@ Multiplicador de valor constante que aumenta (ou diminui) os valores no mapa nor
 
 </dd> </dl>
 
-## <a name="return-value"></a>Valor retornado
+## <a name="return-value"></a>Retornar valor
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
@@ -120,7 +120,7 @@ Esse método computa o normal usando a diferença central com um tamanho de kern
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

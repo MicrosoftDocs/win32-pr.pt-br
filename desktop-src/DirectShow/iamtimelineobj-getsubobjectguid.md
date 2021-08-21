@@ -1,7 +1,7 @@
 ---
-description: O método GetSubObjectGUID recupera o GUID do subobjeto associado a esse objeto de linha do tempo.
+description: O método GetSubObjectGUID recupera o GUID do subobjeto associado a este objeto Timeline.
 ms.assetid: c2787e6b-ed72-4a6c-9e1e-c79c00020585
-title: Método IAMTimelineObj::GetSubObjectGUID (Qedit.h)
+title: 'Método IAMTimelineObj:: GetSubObjectGUID (QEdit. h)'
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,14 +21,14 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118400754"
 ---
-# <a name="iamtimelineobjgetsubobjectguid-method"></a>Método IAMTimelineObj::GetSubObjectGUID
+# <a name="iamtimelineobjgetsubobjectguid-method"></a>Método IAMTimelineObj:: GetSubObjectGUID
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
 
  
 
-O `GetSubObjectGUID` método recupera o GUID do subobjeto associado a este objeto de linha do tempo.
+O `GetSubObjectGUID` método recupera o GUID do subobjeto associado a este objeto Timeline.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,26 +45,26 @@ HRESULT GetSubObjectGUID(
 
 <dl> <dt>
 
-*Pval* 
+*pVal* 
 </dt> <dd>
 
-Receberá o GUID do subobjeto ou GUID NULL se \_ o objeto não tiver um subobjeto.
+Recebe o GUID do subobjeto ou o GUID \_ NULL se o objeto não tiver um subobjeto.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
+> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 
@@ -74,8 +74,8 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
 
 
 
@@ -83,7 +83,7 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 
 <dl> <dt>
 
-[**IAMTimelineObj Interface**](iamtimelineobj.md)
+[**Interface IAMTimelineObj**](iamtimelineobj.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

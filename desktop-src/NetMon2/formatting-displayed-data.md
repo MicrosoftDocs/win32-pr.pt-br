@@ -4,12 +4,12 @@ ms.assetid: 60ab9253-ec0f-4c97-a475-ce2a74d469c4
 title: Formatar os dados exibidos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 017946dab9db443cf7083109dd75ccee1f6d278a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d843214804e50d6baa7bd60f49da170dbe561029e0643c5a57c8677da3735936
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501353"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117982462"
 ---
 # <a name="formatting-displayed-data"></a>Formatar os dados exibidos
 

@@ -3,7 +3,7 @@ title: Mensagem de TDM_UPDATE_ELEMENT_TEXT (commctrl. h)
 description: Mensagem de TDM_UPDATE_ELEMENT_TEXT-atualiza um elemento de texto em uma caixa de diálogo de tarefa.
 ms.assetid: 2df446c8-db87-42b5-b5bd-40fadbf9d45b
 keywords:
-- Controles de TDM_UPDATE_ELEMENT_TEXT de mensagens do Windows
+- controles de Windows de mensagem de TDM_UPDATE_ELEMENT_TEXT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c155b426b92645c0b9cdbabe00c44ffa722b89f3
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 5abf6eb91b3eadfea71d0c9a4b5386e44db100c3a548998d5113636ff7f8cc29
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108085804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118166909"
 ---
 # <a name="tdm_update_element_text-message"></a>\_Mensagem de \_ texto do elemento de atualização TDM \_
 
@@ -74,13 +74,13 @@ O acima também se aplica ao rodapé rodapé e TDE \_ .
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
