@@ -1,19 +1,19 @@
 ---
-description: O terminal do CAudioRenderTerminal é derivado de CSingleFilterTerminal e implementa um terminal de processamento de áudio estático para dispositivos de som wave usando o filtro de ondas do DirectShow. A maioria dos MSPs não precisará substituir a implementação desse terminal.
+description: o terminal CAudioRenderTerminal é derivado de CSingleFilterTerminal e implementa um terminal de processamento de áudio estático para dispositivos wave usando o filtro de DirectShow waveout. A maioria dos MSPs não precisará substituir a implementação desse terminal.
 ms.assetid: 58cd0765-9430-4333-ae96-4d8ca73727b5
 title: CAudioRenderTerminal
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ad9915ef03a210f4ca440cb7a7b66448228b41df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c1baaa4a2d1e5d7bbe3b72de19de8593be8976ed662e27595dccea4b7432daf2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757970"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118869811"
 ---
 # <a name="caudiorenderterminal"></a>CAudioRenderTerminal
 
-O terminal do **CAudioRenderTerminal** é derivado de [CSingleFilterTerminal](csinglefilterterminal.md) e implementa um terminal de processamento de áudio estático para dispositivos de som wave usando o filtro de ondas do DirectShow. A maioria dos MSPs não precisará substituir a implementação desse terminal.
+o terminal **CAudioRenderTerminal** é derivado de [CSingleFilterTerminal](csinglefilterterminal.md) e implementa um terminal de processamento de áudio estático para dispositivos wave usando o filtro de DirectShow waveout. A maioria dos MSPs não precisará substituir a implementação desse terminal.
 
 Definido em MSPtrmar. h.
 

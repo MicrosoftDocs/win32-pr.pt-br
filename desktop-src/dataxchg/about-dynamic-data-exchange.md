@@ -1,105 +1,105 @@
 ---
-title: Sobre troca dinâmica de dados
-description: Este tópico discute a transferência de dados entre aplicativos.
+title: Sobre Dados Dinâmicos Exchange
+description: Este tópico aborda a transferência de dados entre aplicativos.
 ms.assetid: 0bcd8de4-a6f0-4f2a-8b9d-0b1b638925fb
 keywords:
-- Troca dinâmica de dados (DDE), sobre
-- DDE (troca dinâmica de dados), sobre
-- troca de dados, troca dinâmica de dados (DDE)
-- Troca dinâmica de dados (DDE), vinculando a dados em tempo real
-- DDE (troca dinâmica de dados), vinculando a dados em tempo real
-- Troca dinâmica de dados (DDE), criando documentos compostos
-- DDE (troca dinâmica de dados), criando documentos compostos
-- Troca dinâmica de dados (DDE), consultas de dados
-- DDE (troca dinâmica de dados), consultas de dados
-- Troca dinâmica de dados (DDE), exemplos
-- DDE (troca dinâmica de dados), exemplos
-- Troca dinâmica de dados (DDE), representação
-- DDE (troca dinâmica de dados), representação
-- Troca dinâmica de dados (DDE), mensagens
-- DDE (troca dinâmica de dados), mensagens
-- Troca dinâmica de dados (DDE), Atoms
-- DDE (troca dinâmica de dados), Atoms
-- Troca dinâmica de dados (DDE), objetos de memória compartilhada
-- DDE (troca dinâmica de dados), objetos de memória compartilhada
-- Troca dinâmica de dados (DDE), funções de empacotamento de parâmetro
-- DDE (troca dinâmica de dados), funções de empacotamento de parâmetro
+- Dados Dinâmicos Exchange (DDE), sobre
+- DDE (Dados Dinâmicos Exchange),sobre
+- troca de dados, Dados Dinâmicos Exchange (DDE)
+- Dados Dinâmicos Exchange (DDE), vinculando a dados em tempo real
+- DDE (Dados Dinâmicos Exchange), vinculando a dados em tempo real
+- Dados Dinâmicos Exchange (DDE), criando documentos compostos
+- DDE (Dados Dinâmicos Exchange), criando documentos compostos
+- Dados Dinâmicos Exchange (DDE), consultas de dados
+- DDE (Dados Dinâmicos Exchange), consultas de dados
+- Dados Dinâmicos Exchange (DDE), exemplos
+- DDE (Dados Dinâmicos Exchange),exemplos
+- Dados Dinâmicos Exchange (DDE), representação
+- DDE (Dados Dinâmicos Exchange), representação
+- Dados Dinâmicos Exchange (DDE), mensagens
+- DDE (Dados Dinâmicos Exchange),mensagens
+- Dados Dinâmicos Exchange (DDE), átomos
+- DDE (Dados Dinâmicos Exchange), átomos
+- Dados Dinâmicos Exchange (DDE), objetos de memória compartilhada
+- DDE (Dados Dinâmicos Exchange), objetos de memória compartilhada
+- Dados Dinâmicos Exchange (DDE), funções de empacotamento de parâmetros
+- DDE (Dados Dinâmicos Exchange), funções de empacotamento de parâmetros
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d38574e9182255e8f6761520aea60575d8affbc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 50331a69fac11dbc6f49acdc6f3245f4a8f1da4434774ae8b2931d50f8921e1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366513"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118811975"
 ---
-# <a name="about-dynamic-data-exchange"></a>Sobre troca dinâmica de dados
+# <a name="about-dynamic-data-exchange"></a>Sobre Dados Dinâmicos Exchange
 
-O Windows fornece vários métodos para transferir dados entre aplicativos. Um método é usar o protocolo troca dinâmica de dados (DDE). O protocolo DDE é um conjunto de mensagens e diretrizes. Ele envia mensagens entre aplicativos que compartilham dados e usa a memória compartilhada para trocar dados entre aplicativos. Os aplicativos podem usar o protocolo DDE para transferências de dados one-time e para trocas contínuas nas quais os aplicativos enviam atualizações entre si à medida que novos dados ficam disponíveis.
+Windows fornece vários métodos para transferir dados entre aplicativos. Um método é usar o protocolo Dados Dinâmicos Exchange (DDE). O protocolo DDE é um conjunto de mensagens e diretrizes. Ele envia mensagens entre aplicativos que compartilham dados e usa memória compartilhada para trocar dados entre aplicativos. Os aplicativos podem usar o protocolo DDE para transferências de dados única e para trocas contínuas em que os aplicativos enviam atualizações entre si à medida que novos dados se tornam disponíveis.
 
-O Windows também dá suporte à DDEML (biblioteca de gerenciamento de troca dinâmica de dados). O DDEML é uma DLL (biblioteca de vínculo dinâmico) que os aplicativos podem usar para compartilhar dados. O DDEML fornece funções e mensagens que simplificam a tarefa de adicionar capacidade DDE a um aplicativo. Em vez de enviar, postar e processar mensagens DDE diretamente, um aplicativo usa as funções de DDEML para gerenciar conversas DDE. (Uma conversa DDE é a interação entre aplicativos cliente e servidor.)
+Windows também dá suporte à DDEML (Biblioteca de Gerenciamento Dados Dinâmicos Exchange) do Dados Dinâmicos Exchange. O DDEML é uma DLL (biblioteca de vínculo dinâmico) que os aplicativos podem usar para compartilhar dados. O DDEML fornece funções e mensagens que simplificam a tarefa de adicionar a funcionalidade DDE a um aplicativo. Em vez de enviar, postar e processar mensagens DDE diretamente, um aplicativo usa as funções DDEML para gerenciar conversas DDE. (Uma conversa de DDE é a interação entre aplicativos cliente e servidor.)
 
-O DDEML também fornece um recurso para gerenciar as cadeias de caracteres e os dados que os aplicativos DDE compartilham. Em vez de usar Atoms e ponteiros para objetos de memória compartilhados, os aplicativos DDE criam e trocam identificadores de cadeias de caracteres, que identificam cadeias e identificadores de dados, que identificam objetos de memória. O DDEML também possibilita que um aplicativo de servidor registre os nomes de serviço com suporte. Os nomes são transmitidos para outros aplicativos no sistema, que podem usar os nomes para se conectar ao servidor. Além disso, o DDEML garante a compatibilidade entre aplicativos DDE, forçando-os a implementar o protocolo DDE de maneira consistente.
+O DDEML também fornece uma instalação para gerenciar as cadeias de caracteres e os dados que os aplicativos DDE compartilham. Em vez de usar átomos e ponteiros para objetos de memória compartilhados, os aplicativos DDE criam e trocam identificador de cadeia de caracteres, que identificam cadeias de caracteres e identificador de dados, que identificam objetos de memória. O DDEML também possibilita que um aplicativo de servidor registre os nomes de serviço com suporte. Os nomes são transmitidos para outros aplicativos no sistema, que podem usar os nomes para se conectar ao servidor. Além disso, o DDEML garante a compatibilidade entre aplicativos DDE forçando-os a implementar o protocolo DDE de maneira consistente.
 
-Os aplicativos existentes que usam o protocolo DDE baseado em mensagem são totalmente compatíveis com aqueles que usam o DDEML. Ou seja, um aplicativo que usa o DDE baseado em mensagem pode estabelecer conversas e executar transações com aplicativos que usam o DDEML. Devido às muitas vantagens do DDEML, os novos aplicativos devem usá-lo em vez de mensagens DDE. Para usar os elementos de API do DDEML, você deve incluir o arquivo de cabeçalho DDEML em seus arquivos de origem, vincular com a biblioteca DDEML e garantir que a biblioteca de vínculo dinâmico de DDEML esteja no caminho de pesquisa do sistema.
+Os aplicativos existentes que usam o protocolo DDE baseado em mensagem são totalmente compatíveis com aqueles que usam o DDEML. Ou seja, um aplicativo que usa dDE baseado em mensagem pode estabelecer conversas e executar transações com aplicativos que usam o DDEML. Devido às muitas vantagens do DDEML, novos aplicativos devem usá-lo em vez das mensagens DDE. Para usar os elementos de API do DDEML, você deve incluir o arquivo de título DDEML em seus arquivos de origem, vincular com a biblioteca DDEML e garantir que a biblioteca de vínculo dinâmico DDEML está no caminho de pesquisa do sistema.
 
 Os tópicos a seguir são discutidos nesta seção.
 
--   [Protocolo troca dinâmica de dados](#dynamic-data-exchange-protocol)
--   [Usos do para Windows troca dinâmica de dados](#uses-for-windows-dynamic-data-exchange)
--   [troca dinâmica de dados do ponto de vista do usuário](#dynamic-data-exchange-from-the-users-point-of-view)
--   [Conceitos de troca dinâmica de dados](#dynamic-data-exchange-concepts)
+-   [protocolo Dados Dinâmicos Exchange](#dynamic-data-exchange-protocol)
+-   [Usos para Windows Dados Dinâmicos Exchange](#uses-for-windows-dynamic-data-exchange)
+-   [Dados Dinâmicos Exchange do ponto de vista do usuário](#dynamic-data-exchange-from-the-users-point-of-view)
+-   [Dados Dinâmicos Exchange conceitos](#dynamic-data-exchange-concepts)
     -   [Cliente, servidor e conversa](#client-server-and-conversation)
     -   [Nomes de aplicativo, tópico e item](#application-topic-and-item-names)
-    -   [O tópico System](#the-system-topic)
+    -   [O tópico do sistema](#the-system-topic)
     -   [Links de dados permanentes](#permanent-data-links)
-    -   [Atoms e objetos de memória compartilhada](#atoms-and-shared-memory-objects)
--   [Visão geral de mensagens de troca dinâmica de dados](#dynamic-data-exchange-messages-overview)
--   [Fluxo de mensagens troca dinâmica de dados](#dynamic-data-exchange-message-flow)
--   [Funções de empacotamento de parâmetro](#parameter-packing-functions)
--   [troca dinâmica de dados e representação](#dynamic-data-exchange-and-impersonation)
+    -   [Átomos e objetos de memória compartilhada](#atoms-and-shared-memory-objects)
+-   [Dados Dinâmicos Exchange de mensagens](#dynamic-data-exchange-messages-overview)
+-   [Dados Dinâmicos Exchange mensagem Flow](#dynamic-data-exchange-message-flow)
+-   [Funções de empacotamento de parâmetros](#parameter-packing-functions)
+-   [Dados Dinâmicos Exchange e representação](#dynamic-data-exchange-and-impersonation)
 
-## <a name="dynamic-data-exchange-protocol"></a>Protocolo troca dinâmica de dados
+## <a name="dynamic-data-exchange-protocol"></a>protocolo Dados Dinâmicos Exchange
 
-Como o Windows tem uma arquitetura baseada em mensagens, a passagem de mensagens é o método mais apropriado para transferir automaticamente as informações entre os aplicativos. No entanto, as mensagens contêm apenas dois parâmetros (*wParam* e *lParam*) para a passagem de dados. Como resultado, esses parâmetros devem se referir indiretamente a outras partes de dados quando mais de algumas palavras de informações forem passadas entre os aplicativos. O protocolo DDE define exatamente como os aplicativos devem usar os parâmetros *wParam* e *lParam* para passar grandes partes de dados por meio de átomos globais e identificadores de memória compartilhada. O protocolo DDE tem regras específicas para alocar e excluir Atoms globais e objetos de memória compartilhados.
+Como Windows tem uma arquitetura baseada em mensagem, passar mensagens é o método mais apropriado para transferir automaticamente informações entre aplicativos. No entanto, as mensagens contêm apenas dois parâmetros (*wParam* e *lParam*) para passar dados. Como resultado, esses parâmetros devem se referir indiretamente a outros dados quando mais de algumas palavras de informações passam entre aplicativos. O protocolo DDE define exatamente como os aplicativos devem usar os parâmetros *wParam* e *lParam* para passar partes maiores de dados por meio de átomos globais e alças de memória compartilhada. O protocolo DDE tem regras específicas para alocar e excluir átomos globais e objetos de memória compartilhada.
 
-Um Atom global é uma referência a uma cadeia de caracteres. No protocolo DDE, os Atoms identificam os aplicativos que trocam dados, a natureza dos dados que estão sendo trocados e os próprios itens de dados. Para obter mais informações sobre Atoms, consulte [sobre Atoms](about-atom-tables.md).
+Um atom global é uma referência a uma cadeia de caracteres. No protocolo DDE, os átomos identificam os aplicativos que trocam dados, a natureza dos dados que estão sendo trocados e os próprios itens de dados. Para obter mais informações sobre os átomos, consulte [About Atoms](about-atom-tables.md).
 
-## <a name="uses-for-windows-dynamic-data-exchange"></a>Usos do para Windows troca dinâmica de dados
+## <a name="uses-for-windows-dynamic-data-exchange"></a>Usos para Windows Dados Dinâmicos Exchange
 
-O DDE é mais apropriado para trocas de dados que não exigem interação contínua do usuário. Normalmente, um aplicativo fornece um método para que o usuário estabeleça o vínculo entre os aplicativos trocando dados. Quando esse link é estabelecido, no entanto, os aplicativos trocam dados sem o envolvimento adicional do usuário.
+O DDE é mais apropriado para trocas de dados que não exigem interação contínua do usuário. Normalmente, um aplicativo fornece um método para o usuário estabelecer o vínculo entre os aplicativos que trocam dados. No entanto, depois que esse link é estabelecido, os aplicativos trocam dados sem mais envolvimento do usuário.
 
-O DDE pode ser usado para implementar uma ampla gama de recursos de aplicativos, por exemplo:
+O DDE pode ser usado para implementar uma ampla variedade de recursos de aplicativo – por exemplo:
 
--   Vinculação a dados em tempo real, como atualizações de mercado de ações, instrumentos científicos ou controle de processo.
--   Criar documentos compostos, como um documento de processamento de texto que inclui um gráfico produzido por um aplicativo gráfico. Usando o DDE, o gráfico será alterado quando os dados de origem forem alterados, enquanto o restante do documento permanecerá o mesmo.
--   Executar consultas de dados entre aplicativos, como uma planilha consultando um banco de dado para contas vencidas.
+-   Vinculação a dados em tempo real, como atualizações do mercado de ações, instrumentos científicos ou controle de processo.
+-   Criando documentos compostos, como um documento de processamento de palavras que inclui um gráfico produzido por um aplicativo gráfico. Usando dDE, o gráfico será alterado quando os dados de origem são alterados, enquanto o restante do documento permanece o mesmo.
+-   Executar consultas de dados entre aplicativos, como uma planilha consultando um banco de dados para contas com vencimentos anteriores.
 
-## <a name="dynamic-data-exchange-from-the-users-point-of-view"></a>troca dinâmica de dados do ponto de vista do usuário
+## <a name="dynamic-data-exchange-from-the-users-point-of-view"></a>Dados Dinâmicos Exchange do ponto de vista do usuário
 
-O exemplo a seguir ilustra como dois aplicativos DDE podem cooperar, como visto no ponto de vista do usuário.
+O exemplo a seguir ilustra como dois aplicativos DDE podem cooperar, conforme visto do ponto de vista do usuário.
 
-Um usuário de planilha deseja usar o Microsoft Excel para controlar o preço de um estoque específico na bolsa de ações de Nova York. O usuário tem um aplicativo chamado quote que, por sua vez, tem acesso aos dados do NYSE. A conversa DDE entre o Excel e as cotações ocorre da seguinte maneira:
+Um usuário de planilha deseja usar Microsoft Excel para acompanhar o preço de uma determinada ação na Exchange. O usuário tem um aplicativo chamado Quote que, por sua vez, tem acesso aos dados nyse. A conversa de DDE entre Excel e Aspas ocorre da seguinte forma:
 
--   O usuário inicia a conversa fornecendo o nome do aplicativo (cotação) que fornecerá os dados e o tópico específico de interesse (NYSE). A conversa DDE resultante é usada para solicitar aspas em ações específicas.
--   O Excel transmite os nomes do aplicativo e do tópico para todos os aplicativos DDE atualmente em execução no sistema. A cotação responde, estabelecendo uma conversa com o Excel sobre o tópico da NYSE.
--   Em seguida, o usuário pode criar uma fórmula de planilha em uma célula que solicita que a planilha seja atualizada automaticamente sempre que uma determinada cotação de ações for alterada. Por exemplo, o usuário pode solicitar uma atualização automática sempre que uma alteração ocorrer no preço de venda de ZAXX Stock especificando a seguinte fórmula do Excel: = ' quote ' \| ' NYSE '! ZAXX
--   O usuário pode encerrar a atualização automática da cotação de ações do ZAXX a qualquer momento. Outros links de dados que foram estabelecidos separadamente (como para Cotações para outras ações) ainda permanecerão ativos na mesma conversa da NYSE.
--   O usuário também pode encerrar toda a conversa entre o Excel e as aspas no tópico da NYSE, para que não seja possível estabelecer links de dados específicos sobre esse tópico sem iniciar uma nova conversa.
+-   O usuário inicia a conversa fornecendo o nome do aplicativo (Aspas) que fornecerá os dados e o NYSE (tópico de interesse específico). A conversa DDE resultante é usada para solicitar aspas em ações específicas.
+-   Excel transmite os nomes de aplicativo e tópico para todos os aplicativos DDE atualmente em execução no sistema. Aspas respondem, estabelecendo uma conversa com Excel sobre o tópico NYSE.
+-   Em seguida, o usuário pode criar uma fórmula de planilha em uma célula que solicita que a planilha seja atualizada automaticamente sempre que uma cotação de estoque específica for muda. Por exemplo, o usuário pode solicitar uma atualização automática sempre que ocorrer uma alteração no preço de venda da ação ZAXX especificando a seguinte fórmula de Excel: ='Quote' \| 'NYSE'! ZAXX
+-   O usuário pode encerrar a atualização automática das cotações de ações do ZAXX a qualquer momento. Outros links de dados que foram estabelecidos separadamente (como aspas para outras ações) ainda permanecerão ativos na mesma conversa nyse.
+-   O usuário também pode encerrar toda a conversa entre Excel e Aspas no tópico NYSE, para que nenhum link de dados específico sobre esse tópico possa ser estabelecido sem iniciar uma nova conversa.
 
-## <a name="dynamic-data-exchange-concepts"></a>Conceitos de troca dinâmica de dados
+## <a name="dynamic-data-exchange-concepts"></a>Dados Dinâmicos Exchange conceitos
 
-As seções a seguir explicam os conceitos e a terminologia importantes que são fundamentais para compreender o intercâmbio dinâmico de dados.
+As seções a seguir explicam os conceitos e a terminologia importantes que são fundamentais para entender a troca de dados dinâmica.
 
 -   [Cliente, servidor e conversa](#client-server-and-conversation)
 -   [Nomes de aplicativo, tópico e item](#application-topic-and-item-names)
--   [O tópico System](#the-system-topic)
+-   [O tópico do sistema](#the-system-topic)
 -   [Links de dados permanentes](#permanent-data-links)
--   [Atoms e objetos de memória compartilhada](#atoms-and-shared-memory-objects)
+-   [Átomos e objetos de memória compartilhada](#atoms-and-shared-memory-objects)
 
 ### <a name="client-server-and-conversation"></a>Cliente, servidor e conversa
 
-Dois aplicativos que participam do DDE são considerados envolvidos em uma conversa DDE. O aplicativo que inicia a conversa é o aplicativo cliente DDE; o aplicativo que responde ao cliente é o aplicativo do servidor DDE. Um aplicativo pode envolver várias conversas ao mesmo tempo, agindo como o cliente em algum e como o servidor em outros.
+Dois aplicativos que participam do DDE são envolvidos em uma conversa de DDE. O aplicativo que inicia a conversa é o aplicativo cliente DDE; o aplicativo que responde ao cliente é o aplicativo de servidor DDE. Um aplicativo pode se envolver em várias conversas ao mesmo tempo, atuando como o cliente em algumas e como o servidor em outras.
 
 Uma conversa DDE ocorre entre duas janelas, uma para cada um dos aplicativos participantes. Uma janela pode ser a janela principal do aplicativo; uma janela associada a um documento específico, como em um aplicativo de interface de vários documentos (MDI); ou uma janela oculta (invisível) cuja única finalidade é processar mensagens DDE.
 
@@ -111,7 +111,7 @@ Um aplicativo pode garantir que um par de clientes e janelas de servidor nunca e
 
 O protocolo DDE identifica as unidades de dados passadas entre o cliente e o servidor com uma hierarquia de três níveis de nomes de aplicativo, de tópico e de item.
 
-Cada conversa DDE é definida exclusivamente pelo nome do aplicativo e pelo tópico. No início de uma conversa DDE, o cliente e o servidor determinam o nome e o tópico do aplicativo. O nome do aplicativo geralmente é o nome do aplicativo do servidor. Por exemplo, quando o Excel atua como o servidor em uma conversa, o nome do aplicativo é Excel.
+Cada conversa DDE é definida exclusivamente pelo nome do aplicativo e pelo tópico. No início de uma conversa DDE, o cliente e o servidor determinam o nome e o tópico do aplicativo. O nome do aplicativo geralmente é o nome do aplicativo do servidor. por exemplo, quando Excel atua como o servidor em uma conversa, o nome do aplicativo é Excel.
 
 O tópico DDE é uma classificação geral dos dados dentro dos quais vários itens de dados podem ser "discutidos" (trocados) durante a conversa. Para aplicativos que operam em documentos baseados em arquivo, o tópico geralmente é um nome de arquivo. Para outros aplicativos, o tópico é um nome específico do aplicativo.
 
@@ -139,7 +139,7 @@ Os valores de item de dados devem ser renderizados no formato de área de transf
 
 
 
- 
+ 
 
 ### <a name="permanent-data-links"></a>Links de dados permanentes
 
@@ -163,7 +163,7 @@ Um aplicativo que recebe um objeto de memória compartilhada DDE deve tratá-lo 
 
 Como acontece com um átomo DDE, um aplicativo deve liberar um objeto de memória compartilhada para gerenciar a memória com eficiência. O aplicativo também deve bloquear e desbloquear os objetos de memória.
 
-## <a name="dynamic-data-exchange-messages-overview"></a>Visão geral de mensagens de troca dinâmica de dados
+## <a name="dynamic-data-exchange-messages-overview"></a>visão geral de mensagens de troca dinâmica de dados
 
 Como o DDE é um protocolo baseado em mensagem, ele emprega nenhuma função ou biblioteca. Todas as transações DDE são realizadas passando determinadas mensagens DDE definidas entre as janelas do cliente e do servidor.
 
@@ -187,11 +187,11 @@ A tabela a seguir resume as mensagens DDE.
 
 
 
- 
+ 
 
 Um aplicativo chama [**SendMessage**](/windows/desktop/api/winuser/nf-winuser-sendmessage) para emitir a mensagem de [**\_ \_ início do WM DDE**](wm-dde-initiate.md) ou uma mensagem de [**\_ \_ ACK DDE do WM**](wm-dde-ack.md) enviada em resposta a **início do WM \_ DDE \_**. Todas as outras mensagens são enviadas por uma [**mensagem**](/windows/desktop/api/winuser/nf-winuser-postmessagea). O primeiro parâmetro dessas chamadas é um identificador para a janela de recebimento; o segundo parâmetro contém a mensagem a ser enviada; o terceiro parâmetro identifica a janela de envio; e o quarto parâmetro contém os argumentos específicos da mensagem.
 
-## <a name="dynamic-data-exchange-message-flow"></a>Fluxo de mensagens troca dinâmica de dados
+## <a name="dynamic-data-exchange-message-flow"></a>mensagem de troca dinâmica de dados Flow
 
 Uma conversa DDE típica consiste nos seguintes eventos:
 
@@ -225,6 +225,6 @@ Para permitir que um servidor represente um cliente, o cliente chama a função 
 
 Um servidor DDE pode representar um cliente DDE chamando a função [**ImpersonateDdeClientWindow**](/windows/desktop/api/Dde/nf-dde-impersonateddeclientwindow) . Um servidor DDEML deve usar a função [**DdeImpersonateClient**](/windows/desktop/api/Ddeml/nf-ddeml-ddeimpersonateclient) .
 
- 
+ 
 
- 
+ 

@@ -3,8 +3,8 @@ title: Enumeração de MPSTATUS_FLAG (MpClient. h)
 description: Possíveis sinalizadores de bit de status de produto geral.
 ms.assetid: BF2E6506-E76A-4785-8E91-99937B413548
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MPSTATUS_FLAG
-- PMPSTATUS_FLAG recursos de ambiente herdados do ponteiro de enumeração do Windows
+- recursos do ambiente de Windows herdado de enumeração de MPSTATUS_FLAG
+- Windows recursos de ambiente herdados do ponteiro de enumeração PMPSTATUS_FLAG
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9c7175980c09c63938be04626091c31b53335756
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4d850f0e8de9a3b0ed18a1a1353dfdef40d41bcb1ce4d17265ec245e82ba73f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105756839"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118747030"
 ---
 # <a name="mpstatus_flag-enumeration"></a>\_Enumeração de sinalizador MPSTATUS
 
@@ -168,7 +168,7 @@ O produto está sendo executado no modo de avaliação.
 <span id="MP_STATUS_FLAG_NONGENUINE"></span><span id="mp_status_flag_nongenuine"></span>**sinalizador de status do MP não \_ \_ \_ original**
 </dt> <dd>
 
-O produto está sendo executado no modo Windows não original.
+o produto está sendo executado no modo de Windows não original.
 
 </dd> <dt>
 
@@ -262,9 +262,9 @@ Valor máximo possível.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

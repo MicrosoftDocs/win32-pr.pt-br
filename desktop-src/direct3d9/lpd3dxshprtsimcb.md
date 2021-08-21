@@ -1,19 +1,19 @@
 ---
-description: Função de retorno de chamada para simulação e compactação de PRT (Transferência de Radiance Pré-comutada).
+description: Função de retorno de chamada para simulação e compactação de PRT (transferência de radiante preputada).
 ms.assetid: 1d7e2149-d2ca-47da-be1f-8273fd9bd30a
 title: LPD3DXSHPRTSIMCB
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e5a7c4911bf2a7b7fa2aa83422a206644f6eb747
-ms.sourcegitcommit: b40a986d5ded926ae7617119cdd35d99b533bad9
+ms.openlocfilehash: c81e510808dd2e14af1de0d9618591d8ea3b8587bb4015e72a3e01fa33157b5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110342801"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118799329"
 ---
 # <a name="lpd3dxshprtsimcb"></a>LPD3DXSHPRTSIMCB
 
-Função de retorno de chamada para simulação e compactação de PRT (Transferência de Radiance Pré-comutada).
+Função de retorno de chamada para simulação e compactação de PRT (transferência de radiante preputada).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -29,9 +29,9 @@ typedef HRESULT (WINAPI *LPD3DXSHPRTSIMCB)(
 
 ## <a name="parameters"></a>Parâmetros
 
-fPercentDone – número de ponto flutuante entre 0 e 1,0 que representa o percentual de cálculos concluídos (entre 0 e 100%).
+fPercentDone-número de ponto flutuante entre 0 e 1,0 que representa a porcentagem de cálculos concluídos (entre 0 e 100 por cento).
 
-lpUserContext – ponteiro para um valor definido pelo usuário que é passado para a função de retorno de chamada; normalmente usado por um aplicativo para passar um ponteiro para uma estrutura de dados que fornece informações de contexto para a função de retorno de chamada.
+lpUserContext-ponteiro para um valor definido pelo usuário que é passado para a função de retorno de chamada; normalmente usado por um aplicativo para passar um ponteiro para uma estrutura de dados que fornece informações de contexto para a função de retorno de chamada.
 
 ## <a name="return-value"></a>Valor Retornado
 
@@ -39,14 +39,14 @@ Essa função deve ser implementada para retornar S \_ OK para continuar executa
 
 ## <a name="remarks"></a>Comentários
 
-Especifique a convenção de chamada Tipos de [**Dados do Windows**](../winprog/windows-data-types.md) ao declarar a função de retorno de chamada. Caso contrário, podem ocorrer estouros de pilha.
+certifique-se de especificar a convenção de chamada de [**tipos de dados Windows**](../winprog/windows-data-types.md) ao declarar a função de chamada de retorno. Caso contrário, podem ocorrer estouros de pilha.
 
 
 
 | Requisito                         | Valor            |
 |--------------------------|-------------|
-| parâmetro                   | d3dx9mesh.h |
-| Bibliotecas de importação           | d3dx9.lib   |
+| parâmetro                   | d3dx9mesh. h |
+| Bibliotecas de importação           | d3dx9. lib   |
 | Sistema operacional mínimo | Windows 98  |
 
 

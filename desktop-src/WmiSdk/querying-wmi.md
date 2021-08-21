@@ -1,20 +1,20 @@
 ---
-description: Uma das principais ferramentas do Instrumentação de Gerenciamento do Windows (WMI) é a capacidade de consultar o repositório WMI quanto a informações de classe e instância.
+description: uma das principais ferramentas do Instrumentação de Gerenciamento do Windows (WMI) é a capacidade de consultar o repositório WMI quanto a informações de classe e instância.
 ms.assetid: 0cceda42-fba0-4a08-90dd-43f022d0be41
 ms.tgt_platform: multiple
 title: Consultando o WMI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fdae44d4c40e1127bfc4d3436d6230eafd52146a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cfc9cd51946bad1df482bb286c538e38bba8e2b3337776e3cd62e0a0da652574
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813545"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118817534"
 ---
 # <a name="querying-wmi"></a>Consultando o WMI
 
-Uma das principais ferramentas do Instrumentação de Gerenciamento do Windows (WMI) é a capacidade de consultar o repositório WMI quanto a informações de classe e instância. Por exemplo, você pode solicitar que o WMI retorne todos os objetos que representam eventos de desligamento do seu sistema de desktop. Você também pode recuperar dados de classe, instância ou esquema. A tabela a seguir lista os diferentes tipos de consultas que você pode fazer.
+uma das principais ferramentas do Instrumentação de Gerenciamento do Windows (WMI) é a capacidade de consultar o repositório WMI quanto a informações de classe e instância. Por exemplo, você pode solicitar que o WMI retorne todos os objetos que representam eventos de desligamento do seu sistema de desktop. Você também pode recuperar dados de classe, instância ou esquema. A tabela a seguir lista os diferentes tipos de consultas que você pode fazer.
 
 
 

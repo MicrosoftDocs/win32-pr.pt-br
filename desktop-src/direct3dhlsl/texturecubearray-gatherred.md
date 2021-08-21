@@ -1,6 +1,6 @@
 ---
-title: 'Métodos TextureCubeArray:: TextureCubeArray GatherRed'
-description: 'Retorna os componentes vermelhos dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear. | Métodos TextureCubeArray:: TextureCubeArray GatherRed'
+title: Métodos TextureCubeArray::TextureCubeArray GatherRed
+description: Retorna os componentes vermelhos dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear. | Métodos TextureCubeArray::TextureCubeArray GatherRed
 ms.assetid: EF52E362-D65B-4D5C-A09F-5E67303502C5
 keywords:
 - Métodos GatherRed HLSL
@@ -12,16 +12,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 6c867b17c1f5613b6a72a9e29d29b8b0b659b0c1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c96fc7a02855baa27c9790132df1bfb49d99cd1dca8f84ced298aa0b9656e151
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786274"
 ---
-# <a name="texturecubearraygatherred-methods"></a>Métodos TextureCubeArray:: GatherRed
+# <a name="texturecubearraygatherred-methods"></a>Métodos TextureCubeArray::GatherRed
 
-Retorna os componentes vermelhos dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear.
+Retorna os componentes vermelhos dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear.
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,7 +29,7 @@ Retorna os componentes vermelhos dos quatro valores Texel que seriam usados em u
 
 | Método                                                                | Descrição                                                                                                                                     |
 |:----------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**GatherRed (S, float, uint)**](tcubearray-gatherred-s-float-uint-.md)  | Retorna os componentes vermelhos dos quatro valores Texel que seriam usados em uma operação de filtragem de bi-linear, juntamente com o status de mapeamento de bloco.<br/> |
+| [**GatherRed(S,float,uint)**](tcubearray-gatherred-s-float-uint-.md)  | Retorna os componentes vermelhos dos quatro valores de texel que seriam usados em uma operação de filtragem bi-linear, juntamente com o status de mapeamento de peças.<br/> |
 
 
 

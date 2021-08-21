@@ -1,11 +1,11 @@
 ---
-title: Método asscaler ID3DX11EffectVariable (D3dx11effect. h)
+title: Método AsScalar ID3DX11EffectVariable (D3dx11effect.h)
 description: Obter uma variável escalar.
 ms.assetid: 5cc02fb3-351a-4309-9145-1ed7d759a650
 keywords:
-- Método asscaler Direct3D 11
-- Método asscaler Direct3D 11, interface ID3DX11EffectVariable
-- Interface ID3DX11EffectVariable Direct3D 11, método asscaler
+- Método AsScalar Direct3D 11
+- Método AsScalar Direct3D 11 , interface ID3DX11EffectVariable
+- ID3DX11EffectVariable interface Direct3D 11 , método AsScalar
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118531407"
 ---
-# <a name="id3dx11effectvariableasscalar-method"></a>Método ID3DX11EffectVariable:: asscaler
+# <a name="id3dx11effectvariableasscalar-method"></a>Método ID3DX11EffectVariable::AsScalar
 
 Obter uma variável escalar.
 
@@ -45,16 +45,16 @@ Esse método não tem parâmetros.
 
 Tipo: **[ **ID3DX11EffectScalarVariable**](id3dx11effectscalarvariable.md)\***
 
-Um ponteiro para uma variável escalar. Consulte [**ID3DX11EffectScalarVariable**](id3dx11effectscalarvariable.md).
+Um ponteiro para uma variável escalar. Consulte [**ID3DX11EffectScalarVariable.**](id3dx11effectscalarvariable.md)
 
 ## <a name="remarks"></a>Comentários
 
-O asscaler retorna uma versão da variável de efeito que foi especializada em uma variável escalar. De forma semelhante a uma conversão, essa especialização retornará um objeto inválido se a variável de efeito não contiver dados escalares.
+AsScalar retorna uma versão da variável de efeito que foi especializada para uma variável escalar. Semelhante a uma cast, essa especialização retornará um objeto inválido se a variável de efeito não contém dados escalares.
 
-Os aplicativos podem testar a validade do objeto retornado chamando [**IsValid**](id3dx11effectvariable-isvalid.md).
+Os aplicativos podem testar a validade do objeto retornado chamando [**IsValid.**](id3dx11effectvariable-isvalid.md)
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -64,8 +64,8 @@ Os aplicativos podem testar a validade do objeto retornado chamando [**IsValid**
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

@@ -117,7 +117,7 @@ Um valor booliana é representado como uma palavra-chave que indica o estado do 
 
 
 
-| Valor para true | Valor para false |
+| Valor para verdadeiro | Valor para false |
 |----------------|-----------------|
 | true           | false           |
 | sim            | não              |
@@ -129,9 +129,9 @@ Um valor booliana é representado como uma palavra-chave que indica o estado do 
 
  
 
-Uma implementação pode gravar qualquer valor e deve reconhecer todos os valores. Uma implementação é livre para alterar valores de uma representação para outra.
+Uma implementação pode gravar qualquer valor e deve reconhecer todos os valores. Uma implementação é gratuita para alterar valores de uma representação para outra.
 
-[![voltar ao início ](images/top.gif) Voltar ao início](#top)
+[![voltar ao início ](images/top.gif) para cima](#top)
 
 ## <a name="fraction"></a>fração
 
@@ -143,7 +143,7 @@ fraction
 
 
 
-Todos os valores numéricos (ou seja, valores de quantidades dimensionáveis) dentro dessa proposta podem ser armazenados como inteiros dimensionando-os em 2 6 (65536). Um número pode ser dado nesse formato, com o sufixo f ou como um número decimal sem sufixo. Portanto, os elementos hipotéticos a seguir representam o mesmo valor.
+Todos os valores numéricos (ou seja, valores de quantidades com dimensão) dentro dessa proposta podem ser armazenados como inteiros, dimensionando-os por 2 6 (65536). Um número pode ser fornecido neste formulário, com o sufixo f ou como um número decimal sem sufixo. Assim, os seguintes elementos hipotéticos representam o mesmo valor.
 
 
 ```HTML
@@ -153,17 +153,17 @@ Todos os valores numéricos (ou seja, valores de quantidades dimensionáveis) de
 
 
 
-Uma quantidade com o sufixo f deve ser um número inteiro; Números fracionais não são permitidos. O inteiro resultante deve ser representável como um número assinado de complemento de 2 de 32 bits; portanto, o intervalo efetivo da representação é 32768 (na verdade, menor que 32768 e maior ou igual a -32768.)
+Uma quantidade com o sufixo f deve ser um número inteiro; números fracionários não são permitidos. O inteiro resultante deve ser representável como um número assinado do complemento de 32 bits 2; assim, o intervalo efetivo da representação é 32768 (na verdade, menor que 32768 e maior ou igual a-32768).
 
-Uma implementação em conformidade é necessária para preservar valores expressos como valores f. Valores representados como números decimais podem ser convertidos em um valor f e armazenados dessa forma. Um aplicativo tem permissão para registrar valores gerados internamente em qualquer unidade apropriada; no entanto, um valor lido de um documento existente deve ser mantido para a precisão original completa ou deve ser convertido em um valor f.
+Uma implementação de conformidade é necessária para preservar valores que são expressos como valores f. Os valores representados como números decimais podem ser convertidos em um valor f e armazenados dessa forma. Um aplicativo tem permissão para registrar valores gerados internamente em qualquer unidade apropriada; no entanto, um valor lido em de um documento existente deve ser mantido para a precisão original completa ou deve ser convertido em um valor f.
 
-Se a implementação não puder fazer isso, ela deverá avisar o usuário de que os dados podem ser perdidos. (É aceitável emitir esse aviso uma vez quando dados gerados externamente são encontrados pela primeira vez.)
+Se a implementação não puder fazer isso, ela deverá avisar o usuário de que os dados podem ser perdidos. (É aceitável emitir um aviso desse tipo quando os dados gerados externamente são encontrados pela primeira vez.)
 
-Quando um valor decimal é convertido em formato f, a implementação pode usar qualquer modo de arredondamento aritmético; no entanto, um número inteiro deve ser convertido no formato f exatamente. É recomendável que as implementações convertam arredondamento para menos infinito e que a conversão sempre seja exata.
+Quando um valor decimal é convertido em formato f, a implementação pode usar qualquer modo de arredondamento aritmético; no entanto, um número inteiro deve ser convertido para o formato f exatamente. É recomendável que as implementações convertam por arredondamento para menos infinito e que a conversão sempre seja exata.
 
-[![voltar ao início ](images/top.gif) Voltar ao início](#top)
+[![voltar ao início ](images/top.gif) para cima](#top)
 
-## <a name="ordinate"></a>Ordenada
+## <a name="ordinate"></a>ordenada
 
 
 ```HTML
@@ -173,13 +173,13 @@ ordinate
 
 
 
-As unidades do sistema de coordenadas estabelecidas por coord são de algum tipo nominal, que é conhecido como ordinado. Essa é uma medida de comprimento, mas só é usada em relação ao retângulo que o coord estabelece. Qualquer valor do tipo ordinado será dimensionado pelos valores *w* e *h* do coord e a taxa resultante usada para estabelecer uma medida real no dispositivo de saída.
+As unidades do sistema de coordenadas estabelecido por coord são de algum tipo nominal, que é conhecido como ordenada. Essa é uma medida de comprimento, mas é usada somente em relação ao retângulo que o coord estabelece. Qualquer valor do tipo ordenada será dimensionado pelos valores *w* e *h* de coord e a taxa resultante usada para estabelecer uma medida real no dispositivo de saída.
 
-Uma implementação em conformidade deve ser capaz de lidar com valores ordinados de até 30 bits mais sinal (ou seja, um inteiro com sinal de 31 bits, não um inteiro com sinal de 32 bits). No entanto, é recomendável que as implementações tentem produzir coordenadas para o caminho e elementos semelhantes que tenham cerca de 16 bits de precisão. Isso minimizará a chance de estouro ou subfluxo em uma implementação não compatível.
+Uma implementação em conformidade deve ser capaz de lidar com valores de ordenada de até 30 bits de sinal de adição (ou seja, um inteiro com sinal de 31 bits, não um inteiro com sinal de 32 bits). No entanto, é recomendável que as implementações tentem produzir coordenadas para o caminho e elementos semelhantes que têm cerca de 16 bits de precisão. Isso minimizará a chance de estouro negativo em uma implementação de não conformidade.
 
-os valores ordinados são sempre integrais. Um ponto decimal pode não aparecer em um valor do tipo ordinate. Nenhum especificador de unidade pode ser anexado a valores do tipo ordinate.
+os valores de ordenada são sempre integrais. Um ponto decimal pode não aparecer em um valor do tipo ordenada. Nenhum especificador de unidade pode ser anexado aos valores do tipo ordenada.
 
-[![voltar ao início ](images/top.gif) Voltar ao início](#top)
+[![voltar ao início ](images/top.gif) para cima](#top)
 
 ## <a name="length"></a>comprimento
 
@@ -191,42 +191,42 @@ length
 
 
 
-Um comprimento é uma medida do mundo real ou, às vezes, uma medida em pixels do dispositivo. É recomendável que as implementações evitem o uso de pixels de dispositivo (px).
+Um comprimento é uma medida do mundo real ou, às vezes, uma medida em pixels de dispositivo. É recomendável que as implementações evitem o uso de pixels de dispositivo (px).
 
-Todos os qualificadores [de unidade CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1) padrão são permitidos em um comprimento. Além disso, a emu do qualificador pode ser usada. Esse qualificador refere-se a uma unidade – a EMU (Unidade de Métrica em Inglês) – que é um denominador comum das quantidades de medição em uso difundido em gráficos de computador. A EMU é de polegada/914400, ou seja, há 914400 EMU por polegada. <sup></sup> A tabela a seguir lista o número de EMUs em um pequeno número de unidades comumente encontradas.
+Todos os qualificadores de unidade [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1) padrão são permitidos em um comprimento. Além disso, o qualificador da emu pode ser usado. Esse qualificador refere-se a uma unidade – a EMU (unidade de métrica em inglês), que é um denominador comum das quantidades de medidas em uso generalizado em gráficos de computador. A EMU é <sup>centímetro</sup> /914400, ou seja, há 914400 de Emu por polegada. A tabela a seguir lista o número de EMUs em um pequeno número de unidades geralmente encontradas.
 
 
 
-| Número de EMUs | Número por Polegada | Número por milímetro | Descrição             |
+| Número de EMUs | Número por polegada | Número por milímetro | Descrição             |
 |----------------|-----------------|-----------------------|-------------------------|
-| 360            |                 | 0,01                  | Win32 HIMETRIC          |
-| 12700          | 72              |                       | "point"                 |
-| 635            | 1440            |                       | Win32 TWIP              |
+| 360            |                 | 0,01                  | HIMETRIC Win32          |
+| 12700          | 72              |                       | empresas                 |
+| 635            | 1440            |                       | TWIP Win32              |
 | 762            | 1200            |                       | Impressora de alta resolução |
 
 
 
  
 
-Números fracionados de EMUs não são permitidos. Qualquer medida deve ser representável como um número integral com assinatura de 32 bits de EMUs – isso limita a magnitude de uma medida a 2348 polegadas – cerca de 59 metros ou 65 centímetros. Como as medidas sempre se referem ao tamanho de uma renderização em um dispositivo de saída de tela ou de página nominalmente, elas sempre estarão dentro desse intervalo.
+Números fracionários de EMUs não são permitidos. Qualquer medida deve ser representável como um número integral assinado de 32 bits de EMUs--isso limita a magnitude de uma medida a 2348 polegadas--cerca de 59 metros ou 65 metros. Como as medidas sempre se referem ao tamanho de uma renderização em um dispositivo de saída de tamanho nominal da tela ou da página, elas sempre estarão dentro desse intervalo.
 
-Observe, no entanto, que a representação é inadequada para medidas do mundo real e que, onde elas são registradas (por exemplo, para registrar o tamanho real de um caminho), alguma outra representação deve ser usada.
+Observe, no entanto, que a representação não é apropriada para medidas do mundo real e que onde elas são registradas (por exemplo, para registrar o tamanho real de um caminho), alguma outra representação deve ser usada.
 
-Uma implementação em conformidade é necessária para preservar valores que são números exatos de EMUs. Os valores representados de qualquer outra maneira podem ser convertidos em um valor de EMU e armazenados dessa maneira. Um aplicativo tem permissão para registrar valores gerados internamente em qualquer unidade apropriada; no entanto, um valor lido de um documento existente deve ser mantido para a precisão original completa ou deve ser convertido em um valor de EMU.
+Uma implementação de conformidade é necessária para preservar valores que são exatamente números de EMUs. Os valores representados de qualquer outra maneira podem ser convertidos em um valor de UME e armazenados dessa maneira. Um aplicativo tem permissão para registrar valores gerados internamente em qualquer unidade apropriada; no entanto, um valor lido em de um documento existente deve ser mantido para a precisão original completa ou deve ser convertido em um valor de UME.
 
-Se a implementação não puder fazer isso, ela deverá avisar o usuário de que os dados podem ser perdidos. (É aceitável emitir esse aviso uma vez quando dados gerados externamente são encontrados pela primeira vez.)
+Se a implementação não puder fazer isso, ela deverá avisar o usuário de que os dados podem ser perdidos. (É aceitável emitir um aviso desse tipo quando os dados gerados externamente são encontrados pela primeira vez.)
 
-Na prática, os comprimentos físicos são usados para relativamente poucas medidas nesta proposta. Os dados que normalmente são mais importantes são os dados de caminho e são codificados no sistema de coordenadas definido, por forma, por coord.
+Na prática, os comprimentos físicos são usados para relativamente poucas medições nesta proposta. Os dados que normalmente são mais importantes são os dados de caminho e são codificados no sistema de coordenadas definido, de acordo com a forma, por coord.
 
 ### <a name="alternative-representations"></a>Representações alternativas
 
-As representações de comprimento padrão de HTML são definidas por [CSS1.](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) Unidades relativas, com exceção do pixel, não são significativas no contexto dentro do qual os comprimentos são usados nesta proposta e não devem ser usados. Se o documento registra o tamanho de pixel pretendido (destino), isso define a conversão de pixels em EMU; caso contrário, o padrão de 90 dpi definido por [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) deve ser usado.
+As representações de comprimento padrão de HTML são definidas por [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) . As unidades relativas, com exceção do pixel, não são significativas no contexto no qual os comprimentos são usados nesta proposta e não devem ser usados. Se o documento registra o tamanho de pixel pretendido (destino), isso define a tradução de pixels para a EMU; caso contrário, o padrão de 90 dpi definido por [CSS1](https://www.w3.org/pub/WWW/TR/REC-CSS1#length-units) deve ser usado.
 
-Com exceção da emu, qualquer valor pode ser dado como uma fração decimal. Quando um valor decimal é convertido em EMU, a implementação pode usar qualquer modo de arredondamento aritmético. (A única maneira de um aplicativo de autor garantir um resultado específico é especificá-lo em emu.)
+Com exceção da UME, qualquer valor pode ser dado como uma fração decimal. Quando um valor decimal é convertido em EMU, a implementação pode usar qualquer modo de arredondamento aritmético. (A única maneira de um aplicativo de criação garantir um resultado específico é especificá-lo na Emu.)
 
-Se nenhum especificador de unidade for dado em um valor de comprimento, a implementação deverá assumir emu.
+Se nenhum especificador de unidade for fornecido em um valor de comprimento, a implementação deverá assumir a emu.
 
-[![voltar ao início ](images/top.gif) Voltar ao início](#top)
+[![voltar ao início ](images/top.gif) para cima](#top)
 
 ## <a name="measure"></a>medida
 
@@ -238,21 +238,21 @@ measure
 
 
 
-Uma medida é uma quantidade que pode ser um [comprimento ou](#length) uma [fração](#fraction). Isso se assemelha muito às medidas de comprimento HTML e CSS, que podem, em muitos casos, ser medidas físicas ou percentuais de alguma outra quantidade. Se nenhum especificador de unidade for especificado, o valor deverá ser presumido como uma fração decimal (portanto, esse comportamento é herdado de fração, não de comprimento).)
+Uma medida é uma quantidade que pode ser um [comprimento](#length) ou uma [fração](#fraction). Isso se assemelha bastante às medidas de comprimento HTML e CSS, que podem, em muitos casos, ser medidas físicas ou porcentagens de alguma outra quantidade. Se nenhum especificador de unidade for fornecido, o valor deve ser considerado uma fração decimal (portanto, esse comportamento é herdado de fração, não de comprimento).
 
-Ao contrário do comprimento, um valor de pixel tem um significado definido pelo contexto, portanto, a conversão em emu normalmente é inadequada. Há três representações fundamentais possíveis que a implementação deve manter (ou seja, uma representação não pode ser convertida em outra sem perda de informações).
+Diferentemente do comprimento, um valor de pixel tem um significado definido pelo contexto, portanto, a conversão para a emu normalmente é inadequada. Há três representações fundamentais possíveis que a implementação deve manter (ou seja, uma representação não pode ser convertida em outra sem perda de informações).
 
-1.  Um valor fracionado deve ser mantido no formato [de](#fraction) fração (um valor " f ").
+1.  Um valor fracionário deve ser mantido no formato de [fração](#fraction) (um valor "f").
 2.  Um comprimento físico deve ser mantido na EMU.
 3.  Um valor de pixel deve ser mantido como um número inteiro de pixels.
 
-Números fracionados de pixels não são permitidos.
+Números fracionários de pixels não são permitidos.
 
 ### <a name="alternative-representations"></a>Representações alternativas
 
-Todas as representações alternativas de fração [e](#fraction) [comprimento](#length) são permitidas.
+Todas as representações alternativas de [fração](#fraction) e [comprimento](#length) são permitidas.
 
-[![voltar ao início ](images/top.gif) Voltar ao início](#top)
+[![voltar ao início ](images/top.gif) para cima](#top)
 
 ## <a name="angle"></a>angle
 
@@ -264,7 +264,7 @@ angle
 
 
 
-A representação fundamental de um ângulo é um número de graus múltiplos por 2 6 (65536) e armazenado como um inteiro. Como o espaço de coordenadas é invertido (o eixo y positivo está ino mesmo), um ângulo horário é positivo. Uma implementação em conformidade é necessária para preservar a precisão total desse valor.
+A representação fundamental de um ângulo é um número de graus múltiplos por 2 6 (65536) e armazenada como um inteiro. Como o espaço de coordenadas é invertido (o eixo y positivo está ino mesmo), um ângulo no sentido horário é positivo. Uma implementação em conformidade é necessária para preservar a precisão total desse valor.
 
 Uma implementação tem permissão para usar qualquer intervalo para ângulos e tem permissão para normalizar um ângulo (por exemplo, -180 a +180 ou 0 a 360 ). As implementações não precisam ser consistentes; no entanto, a representação integral de um ângulo não deve exceder o intervalo de um inteiro com sinal de 32 bits.
 
@@ -446,7 +446,7 @@ Aqua = " \# 00FFFF"
 
 ### <a name="scheme-colors"></a>Cores do esquema
 
-As cores do esquema referenciadas por esquema são definidas no nível do documento usando a marca meta com um atributo de nome de "Esquema de Cores do Tema".
+As cores do esquema referenciadas por esquema são definidas no nível do documento usando a meta tag com um atributo de nome de "Esquema de Cores do Tema".
 
 
 ```HTML

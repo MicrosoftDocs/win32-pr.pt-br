@@ -3,7 +3,7 @@ title: FFWDELEMENT
 description: Este é um BUTTONelement predefinido com os valores padrão a seguir. | FFWDELEMENT
 ms.assetid: 2745d960-9d86-42de-96cb-b9d14138d14e
 keywords:
-- FFWDELEMENT Windows Media Player
+- Windows Media Player FFWDELEMENT
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 2ca137f62e330e7cfe90c677bc39771801d0849a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5e6f0c230a610b0e6748fa2c5b6c93e5596c88205789fb769995d8eb91aceadb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105796415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118837701"
 ---
 # <a name="ffwdelement"></a>FFWDELEMENT
 

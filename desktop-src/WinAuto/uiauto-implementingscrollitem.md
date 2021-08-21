@@ -1,32 +1,32 @@
 ---
 title: Padrão de controle ScrollItem
-description: Descreve as diretrizes e convenções para implementar o IScrollItemProvider, incluindo informações sobre métodos.
+description: Descreve diretrizes e convenções para implementar IScrollItemProvider, incluindo informações sobre métodos.
 ms.assetid: ea0d7438-218c-4925-b24c-a8011f305b9d
 keywords:
-- Automação da interface do usuário, implementando o padrão de controle ScrollItem
-- Automação da interface do usuário, padrão de controle ScrollItem
-- Automação da interface do usuário, IScrollItemProvider
+- Automação da Interface do Usuário, implementando o padrão de controle ScrollItem
+- Automação da Interface do Usuário, padrão de controle ScrollItem
+- Automação da Interface do Usuário,IScrollItemProvider
 - IScrollItemProvider
-- Implementando padrões de controle ScrollItem de automação da interface do usuário
+- implementando padrões Automação da Interface do Usuário controle ScrollItem
 - Padrões de controle ScrollItem
 - padrões de controle, IScrollItemProvider
-- padrões de controle, implementando a automação da interface do usuário ScrollItem
+- padrões de controle, implementando Automação da Interface do Usuário ScrollItem
 - padrões de controle, ScrollItem
-- interfaces, IScrollItemProvider
+- interfaces,IScrollItemProvider
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7233dfe649d166a3172ff2dda3122895f259abcc
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a677a761c01afb5ad6feaf04df0197299a528a22741c0bd8ff72c02f45c74b0f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104159951"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118826886"
 ---
 # <a name="scrollitem-control-pattern"></a>Padrão de controle ScrollItem
 
-Descreve as diretrizes e convenções para implementar o [**IScrollItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollitemprovider), incluindo informações sobre métodos. O padrão de controle **ScrollItem** é usado para dar suporte a controles filho individuais de contêineres que implementam [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider). A existência do padrão de controle **ScrollItem** em um controle não significa que seu contêiner ou qualquer ancestral deve implementar o padrão de controle **Scroll** .
+Descreve diretrizes e convenções para implementar [**IScrollItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollitemprovider), incluindo informações sobre métodos. O **padrão de controle ScrollItem** é usado para dar suporte a controles filho individuais de contêineres que implementam [**IScrollProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollprovider). A existência do padrão **de controle ScrollItem** em um controle não implica que seu contêiner ou qualquer ancestral deve implementar o padrão **de controle Scroll.**
 
-Quando o contêiner implementa o padrão de controle **Scroll** , o padrão de controle **ScrollItem** atua como um canal de comunicação entre um controle filho e seu contêiner para garantir que o contêiner possa alterar o conteúdo visível no momento (ou região) dentro de seu visor para exibir o controle filho. Para obter exemplos de controles que implementam esse padrão de controle, consulte [tipos de controle e seus padrões de controle com suporte](uiauto-controlpatternmapping.md).
+Quando o contêiner  implementa o padrão de controle Scroll, o padrão de controle **ScrollItem** atua como um canal de comunicação entre um controle filho e seu contêiner para garantir que o contêiner possa alterar o conteúdo visível no momento (ou região) em seu visor para exibir o controle filho. Para exemplos de controles que implementam esse padrão de controle, consulte [Tipos de controle e seus padrões de controle com suporte](uiauto-controlpatternmapping.md).
 
 Este tópico inclui as seções a seguir.
 
@@ -36,13 +36,13 @@ Este tópico inclui as seções a seguir.
 
 ## <a name="implementation-guidelines-and-conventions"></a>Diretrizes e convenções de implementação
 
-Ao implementar o padrão de controle **ScrollItem** , observe as seguintes diretrizes e convenções:
+Ao implementar o padrão **de controle ScrollItem,** observe as seguintes diretrizes e convenções:
 
--   Os itens contidos em um controle de [janela](uiauto-supportwindowcontroltype.md) ou **Canvas** não são necessários para implementar a interface [**IScrollItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollitemprovider) . No entanto, como alternativa, eles devem expor um local válido para a propriedade [**IUIAutomationElement:: CurrentBoundingRectangle**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentboundingrectangle) (ou [**CachedBoundingRectangle**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedboundingrectangle)). Isso permitirá que um aplicativo cliente de automação da interface do usuário da Microsoft use os métodos de padrão de controle [**IUIAutomationScrollPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationscrollpattern) no contêiner para exibir o item filho.
+-   Itens contidos em [um controle Janela](uiauto-supportwindowcontroltype.md) ou **Tela** não são necessários para implementar a interface [**IScrollItemProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollitemprovider) Como alternativa, no entanto, eles devem expor um local válido para a propriedade [**IUIAutomationElement::CurrentBoundingRectangle**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_currentboundingrectangle) (ou [**CachedBoundingRectangle**](/windows/desktop/api/UIAutomationClient/nf-uiautomationclient-iuiautomationelement-get_cachedboundingrectangle)). Isso permitirá que um aplicativo cliente microsoft Automação da Interface do Usuário use os métodos de padrão de controle [**IUIAutomationScrollPattern**](/windows/desktop/api/UIAutomationClient/nn-uiautomationclient-iuiautomationscrollpattern) no contêiner para exibir o item filho.
 
 ## <a name="required-members-for-iscrollitemprovider"></a>Membros necessários para **IScrollItemProvider**
 
-O método a seguir é necessário para implementar a interface [**IScrollItemProvider**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollitemprovider) .
+O método a seguir é necessário para implementar a interface [**IScrollItemProvider.**](/windows/desktop/api/UIAutomationCore/nn-uiautomationcore-iscrollitemprovider)
 
 
 
@@ -52,9 +52,9 @@ O método a seguir é necessário para implementar a interface [**IScrollItemPro
 
 
 
- 
+ 
 
-Este padrão de controle não tem propriedades ou eventos associados.
+Esse padrão de controle não tem propriedades ou eventos associados.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -72,9 +72,9 @@ Este padrão de controle não tem propriedades ou eventos associados.
 [Visão geral da árvore de automação de interface do usuário](uiauto-treeoverview.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,7 +1,7 @@
 ---
 description: Define o tipo de tokens que podem ser usados para autenticação com um ponto de extremidade.
 ms.assetid: 2048BD09-056F-47C1-AD2F-998DE6C52EA6
-title: Enumeração UpdateEndpointAuthTokenType (UpdateEndpointAuth. h)
+title: Enumeração UpdateEndpointAuthTokenType (UpdateEndpointAuth.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - UpdateEndpointAuth.h
-ms.openlocfilehash: c978841511b7cfff895a15936a41d169a8500927
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b9e3efbff48097dcede12d5c8d3117171ef622f20a3bf017b12c6d3ce13a1c00
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105788731"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118814708"
 ---
 # <a name="updateendpointauthtokentype-enumeration"></a>Enumeração UpdateEndpointAuthTokenType
 
@@ -50,7 +50,7 @@ Nenhum token de autenticação é necessário.
 <span id="ueattSAML11Token"></span><span id="ueattsaml11token"></span><span id="UEATTSAML11TOKEN"></span>**ueattSAML11Token**
 </dt> <dd>
 
-O token de autenticação para o ponto de extremidade é um token WS-Security SAML (Security Assertion Markup Language) 1,1.
+O token de autenticação para o ponto de extremidade é WS-Security token SAML (Security Assertion Markup Language) 1.1.
 
 </dd> </dl>
 
@@ -60,10 +60,10 @@ O token de autenticação para o ponto de extremidade é um token WS-Security SA
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                              |
-| parâmetro<br/>                   | <dl> <dt>UpdateEndpointAuth. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>UpdateEndpointAuth. idl</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                        |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                              |
+| Cabeçalho<br/>                   | <dl> <dt>UpdateEndpointAuth.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>UpdateEndpointAuth.idl</dt> </dl> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectVariable GetAnnotationByIndex (D3dx11effect.h)
-description: Obter uma anotação por índice. | Método ID3DX11EffectVariable GetAnnotationByIndex (D3dx11effect.h)
+title: Método ID3DX11EffectVariable GetAnnotationByIndex (D3dx11effect. h)
+description: Obter uma anotação por índice. | Método ID3DX11EffectVariable GetAnnotationByIndex (D3dx11effect. h)
 ms.assetid: fc130098-0269-4c78-bc45-284aa0b77865
 keywords:
 - Método GetAnnotationByIndex Direct3D 11
-- Método GetAnnotationByIndex Direct3D 11 , interface ID3DX11EffectVariable
-- ID3DX11EffectVariable interface Direct3D 11 , método GetAnnotationByIndex
+- Método GetAnnotationByIndex Direct3D 11, interface ID3DX11EffectVariable
+- Interface ID3DX11EffectVariable Direct3D 11, método GetAnnotationByIndex
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118531140"
 ---
-# <a name="id3dx11effectvariablegetannotationbyindex-method"></a>Método ID3DX11EffectVariable::GetAnnotationByIndex
+# <a name="id3dx11effectvariablegetannotationbyindex-method"></a>Método ID3DX11EffectVariable:: GetAnnotationByIndex
 
 Obter uma anotação por índice.
 
@@ -46,9 +46,9 @@ ID3DX11EffectVariable* GetAnnotationByIndex(
 *Index* 
 </dt> <dd>
 
-Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
 
-Um índice baseado em zero.
+Um índice de base zero.
 
 </dd> </dl>
 
@@ -56,14 +56,14 @@ Um índice baseado em zero.
 
 Tipo: **[ **ID3DX11EffectVariable**](id3dx11effectvariable.md)\***
 
-Um ponteiro para um [**ID3DX11EffectVariable.**](id3dx11effectvariable.md)
+Um ponteiro para um [**ID3DX11EffectVariable**](id3dx11effectvariable.md).
 
 ## <a name="remarks"></a>Comentários
 
-Annonations podem ser anexadas a uma técnica, uma passagem ou uma variável global.
+Annonations pode ser anexado a uma técnica, uma passagem ou uma variável global.
 
 > [!Note]  
-> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
 
  
 
@@ -73,8 +73,8 @@ Annonations podem ser anexadas a uma técnica, uma passagem ou uma variável glo
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

@@ -1,17 +1,17 @@
 ---
 description: A geração de um novo patch pode exigir um tempo significativo.
 ms.assetid: 8be9a83a-8c36-43f5-8dda-05fc2f3ce0d2
-title: Cache de informações de patch (Patchwiz.dll)
+title: Caching de informações de Patch (Patchwiz.dll)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7000efceea62e9eef122a34f7700622e1e6e2e60
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71513ea1a9418506bbf9025f66a1689c12e9a53f8e6f2e713ddeb3b3d55de580
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118942617"
 ---
-# <a name="patch-information-caching-patchwizdll"></a>Cache de informações de patch (Patchwiz.dll)
+# <a name="patch-information-caching-patchwizdll"></a>Caching de informações de Patch (Patchwiz.dll)
 
 A geração de um novo patch pode exigir um tempo significativo. Depois de gerar um patch usando [Patchwiz.dll](patchwiz-dll.md), talvez seja necessário alterar a imagem de atualização novamente e gerar outro patch. O cache de informações de patch pode reduzir o tempo necessário para gerar patches subsequentes reutilizando patches existentes. Por exemplo, o tempo necessário para criar Service Packs pode ser reduzido usando os patches binários gerados de patches anteriores. Patchwiz.dll pode usar \_ \_ o dir do cache de patch para encontrar um patch binário existente e adicioná-lo ao gabinete do Service Pack sem precisar recriar o patch binário.
 

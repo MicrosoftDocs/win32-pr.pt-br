@@ -4,12 +4,12 @@ ms.assetid: 85f2bd02-8a2f-46b5-b765-1a0bc5b6ccc3
 title: Propriedade MFNETSOURCE_PROXYSETTINGS (Mfidl. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f1330773ab33674e58ef07b95a53c4493e6e6f6e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1a6af82b593899eb504818ff041c6c6839c4cca1b18ea29218f7259c41b4df9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118738671"
 ---
 # <a name="mfnetsource_proxysettings-property"></a>\_Propriedade MFNETSOURCE PROXYSETTINGS
 
@@ -43,8 +43,8 @@ Os aplicativos podem usar essa propriedade para configurar o localizador de prox
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
 | parâmetro<br/>                   | <dl> <dt>Mfidl. h</dt> </dl> |
 
 

@@ -1,10 +1,10 @@
 ---
-title: Interface IResultProperty (WdsSharedIDL.h)
-description: Expõe propriedades de resultado.
+title: Interface IResultProperty (WdsSharedIDL. h)
+description: Expõe as propriedades de resultado.
 ms.assetid: 58d8c516-47c6-4cae-b46c-5127baf3054d
 keywords:
-- Interface IResultProperty Herdado Windows ambiente
-- IResultProperty interface Legacy Windows Environment Features , descrito
+- recursos de ambiente de Windows herdado da interface IResultProperty
+- recursos de ambiente herdado Windows da interface IResultProperty, descritos
 topic_type:
 - apiref
 api_name:
@@ -25,13 +25,13 @@ ms.locfileid: "118754579"
 # <a name="iresultproperty-interface"></a>Interface IResultProperty
 
 > [!NOTE]
-> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use a [API Windows Search.](../search/-search-reference-entry-page.md) 
+> Windows o Desktop Search 2. x é uma tecnologia obsoleta que estava originalmente disponível como um suplemento para o Windows XP e o Windows Server 2003. em versões posteriores, use a [API de pesquisa Windows](../search/-search-reference-entry-page.md) em vez disso. 
 
-Expõe propriedades de resultado.
+Expõe as propriedades de resultado.
 
 ## <a name="members"></a>Membros
 
-A interface **IResultProperty** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IResultProperty** também tem estes tipos de membros:
+A interface **IResultProperty** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IResultProperty** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
@@ -45,7 +45,7 @@ A interface **IResultProperty** tem esses métodos.
 | Método                                                    | Descrição                 |
 |:----------------------------------------------------------|:----------------------------|
 | [**GoBack**](-search-2x-iresultproperty-goback.md)       | Não implementado.<br/> |
-| [**Goforward**](-search-2x-iresultproperty-goforward.md) | Não implementado.<br/> |
+| [**GoForward**](-search-2x-iresultproperty-goforward.md) | Não implementado.<br/> |
 
 
 
@@ -59,12 +59,12 @@ A interface **IResultProperty** tem essas propriedades.
 
 | Propriedade                                                                   | Tipo de acesso          | Descrição                                           |
 |:---------------------------------------------------------------------------|:---------------------|:------------------------------------------------------|
-| [**Datatype**](-search-2x-iresultproperty-datatype.md)<br/>         | Somente leitura<br/> | Um tipo de dados de propriedades. <br/>                   |
-| [**Displayname**](-search-2x-iresultproperty-displayname.md)<br/>   | Somente leitura<br/> | Nome de exibição localizado da propriedade. <br/>   |
-| [**DisplayState**](-search-2x-iresultproperty-displaystate.md)<br/> | Somente leitura<br/> | Visabilidade da propriedade. <br/>               |
-| [**Dica**](-search-2x-iresultproperty-hint.md)<br/>                 | Somente leitura<br/> | Valor especial usado para auxiliar na recuperação de dados. <br/> |
-| [**IndexColumn**](-search-2x-iresultproperty-indexcolumn.md)<br/>   | Somente leitura<br/> | Nome da coluna propriedades no índice. <br/>      |
-| [**UID**](-search-2x-iresultproperty-uid.md)<br/>                   | Somente leitura<br/> | Identificador exclusivo para a propriedade. <br/>       |
+| [**Tipo de dados**](-search-2x-iresultproperty-datatype.md)<br/>         | Somente leitura<br/> | Um tipo de dados de propriedades. <br/>                   |
+| [**DisplayName**](-search-2x-iresultproperty-displayname.md)<br/>   | Somente leitura<br/> | Nome de exibição localizado da propriedade. <br/>   |
+| [**DisplayState**](-search-2x-iresultproperty-displaystate.md)<br/> | Somente leitura<br/> | Visability da propriedade. <br/>               |
+| [**Hint**](-search-2x-iresultproperty-hint.md)<br/>                 | Somente leitura<br/> | Valor especial usado para auxiliar a recuperação de dados. <br/> |
+| [**IndexColumn**](-search-2x-iresultproperty-indexcolumn.md)<br/>   | Somente leitura<br/> | Nome da coluna de propriedades no índice. <br/>      |
+| [**UID**](-search-2x-iresultproperty-uid.md)<br/>                   | Somente leitura<br/> | Identificador exclusivo da propriedade. <br/>       |
 
 
 
@@ -80,10 +80,10 @@ Esses são os itens que retornam propriedades.
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/>                                      |
-| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com aplicativos da área de trabalho SP1 \[\]<br/>                             |
-| Redistribuível<br/>          | Windows Pesquisa de Área de Trabalho (WDS) 3.0<br/>                                               |
-| Cabeçalho<br/>                   | <dl> <dt>WdsSharedIDL.h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos de área de trabalho do SP2\]<br/>                                      |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com \[ aplicativos de área de trabalho do SP1\]<br/>                             |
+| Redistribuível<br/>          | Windows Pesquisa de desktop (WDS) 3,0<br/>                                               |
+| Cabeçalho<br/>                   | <dl> <dt>WdsSharedIDL. h</dt> </dl> |
 
 
 

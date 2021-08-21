@@ -1,28 +1,28 @@
 ---
-description: A \_ tabela Columns é uma tabela de sistema somente leitura que contém o catálogo de colunas. Ele lista as colunas de todas as tabelas. Você pode consultar esta tabela para descobrir se existe uma determinada coluna.
+description: A tabela Colunas é uma tabela do sistema \_ somente leitura que contém o catálogo de colunas. Ele lista as colunas de todas as tabelas. Você pode consultar essa tabela para descobrir se uma determinada coluna existe.
 ms.assetid: 1ddde4e2-90a9-4dd8-a4f9-b6802d0b11cf
-title: Tabela de _Columns
+title: _Columns tabela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3d896f330e5fc2e13b5f172581341eb11a09617d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f7cbb603c077d7873cdfbea88070e555902883ba579b422627b2581aca04745b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105754655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118640471"
 ---
 # <a name="_columns-table"></a>\_Tabela de colunas
 
-A \_ tabela Columns é uma tabela de sistema somente leitura que contém o catálogo de colunas. Ele lista as colunas de todas as tabelas. Você pode consultar esta tabela para descobrir se existe uma determinada coluna.
+A tabela Colunas é uma tabela do sistema \_ somente leitura que contém o catálogo de colunas. Ele lista as colunas de todas as tabelas. Você pode consultar essa tabela para descobrir se uma determinada coluna existe.
 
-A \_ tabela Columns tem as colunas a seguir.
+A \_ tabela Colunas tem as seguintes colunas.
 
 
 
 | Coluna | Tipo                   | Chave | Nullable |
 |--------|------------------------|-----|----------|
-| Tabela  | [Text](text.md)       | S   | N        |
-| Número | [Inteiro](integer.md) | S   | N        |
+| Tabela  | [Text](text.md)       | Y   | N        |
+| Número | [Inteiro](integer.md) | Y   | N        |
 | Nome   | [Text](text.md)       | N   | N        |
 
 
@@ -40,14 +40,14 @@ O nome da tabela que contém a coluna.
 
 </dd> <dt>
 
-<span id="Number"></span><span id="number"></span><span id="NUMBER"></span>Automática
+<span id="Number"></span><span id="number"></span><span id="NUMBER"></span>Número
 </dt> <dd>
 
-A ordem da coluna na tabela.
+A ordem da coluna dentro da tabela.
 
 </dd> <dt>
 
-<span id="Name"></span><span id="name"></span><span id="NAME"></span>Nomes
+<span id="Name"></span><span id="name"></span><span id="NAME"></span>Nome
 </dt> <dd>
 
 O nome da coluna.
@@ -56,9 +56,9 @@ O nome da coluna.
 
 ## <a name="remarks"></a>Comentários
 
-Como a \_ tabela Columns é uma tabela do sistema que não pode ser modificada por meio de consultas SQL, você não pode obter as chaves primárias com a função [**MsiDatabaseGetPrimaryKeys**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegetprimarykeysa) ou a [**Propriedade primarykeys**](database-primarykeys.md).
+Como a tabela Columns é uma tabela do sistema que não pode ser modificada por meio de consultas SQL, você não pode obter as chaves primárias com \_ a [**função MsiDatabaseGetPrimaryKeys**](/windows/desktop/api/Msiquery/nf-msiquery-msidatabasegetprimarykeysa) ou a propriedade [**PrimaryKeys**](database-primarykeys.md).
 
-Somente colunas persistentes são armazenadas na \_ tabela colunas. Para determinar se uma coluna temporária existe, é necessário criar uma exibição usando uma instrução SELECT \* em relação à tabela e, em seguida, fazer um loop por todos os campos em um registro retornado pela função [**MsiViewGetColumnInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewgetcolumninfo) com a \_ opção nomes de MSICOLINFO.
+Somente colunas persistentes são armazenadas na \_ tabela Colunas. Para determinar se existe uma coluna temporária, seria necessário criar uma exibição usando uma instrução SELECT na tabela e, em seguida, fazer um loop em todos os campos em um registro retornado pela \* [**função MsiViewGetColumnInfo**](/windows/desktop/api/Msiquery/nf-msiquery-msiviewgetcolumninfo) com a opção MSICOLINFO \_ NAMES.
 
  
 

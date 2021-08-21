@@ -1,5 +1,5 @@
 ---
-description: Abre o banco de dados de shims especificado.
+description: Abre o banco de dados shim especificado.
 ms.assetid: 148181d7-a20a-467c-984b-e32013960783
 title: Função SdbOpenDatabase
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: ae0bca035f203593c43bb36e70119fbaf3024059
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: df0081d7373bf67d3df1723be7d5beb272ef7ee4c77c54da8a6985dfe250d7c2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646238"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161189"
 ---
 # <a name="sdbopendatabase-function"></a>Função SdbOpenDatabase
 
-Abre o banco de dados de shims especificado.
+Abre o banco de dados shim especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,23 +40,23 @@ PDB WINAPI SdbOpenDatabase(
 
 <dl> <dt>
 
-*pwszPath* \[ no\]
+*pwszPath* \[ Em\]
 </dt> <dd>
 
-O caminho do banco de dados. Este parâmetro não pode ser **nulo**.
+O caminho do banco de dados. Esse parâmetro não pode ser **NULL.**
 
 </dd> <dt>
 
-*ETYPE* \[ no\]
+*eType* \[ Em\]
 </dt> <dd>
 
-O tipo de caminho. Consulte [**\_ tipo de caminho**](path-type.md) para obter uma lista de valores.
+O tipo de caminho. Consulte [**PATH \_ TYPE**](path-type.md) para ver uma lista de valores.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna um identificador para o banco de dados de Shim.
+A função retorna um alça para o banco de dados shim.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ A função retorna um identificador para o banco de dados de Shim.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

@@ -4,12 +4,12 @@ ms.assetid: 283fe5e9-689f-4b87-97a6-b345c22ec6a2
 title: Manipulação de identificador de chamada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 248f16088f891b1441626097de5c803a8fe14991
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 68be27add43b57dc1905a63d1a2ffffb8ae41f69efb195d21aa91ca65a5dff4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105813072"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118870326"
 ---
 # <a name="call-handle-manipulation"></a>Manipulação de identificador de chamada
 

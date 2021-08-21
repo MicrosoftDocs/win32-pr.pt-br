@@ -3,7 +3,7 @@ title: SLIDER. backgroundImage
 description: O atributo backgroundImage especifica ou recupera a imagem de plano de fundo do controle deslizante.
 ms.assetid: 73757635-4d1c-4ed0-8721-0608cd85859c
 keywords:
-- Controle deslizante. backgroundImage Windows Media Player
+- SLIDER. backgroundImage Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1188756c16b13bef69dfd0bcd9a5b66560856f99
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 4b2c4f6d31e3f870541310b23544a15c7b9af0043014a9013310cea7dd4ee072
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118832993"
 ---
 # <a name="sliderbackgroundimage"></a>SLIDER. backgroundImage
 

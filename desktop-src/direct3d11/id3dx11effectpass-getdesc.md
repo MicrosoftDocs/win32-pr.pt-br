@@ -1,11 +1,11 @@
 ---
-title: Método GetDesc de ID3DX11EffectPass (D3dx11effect. h)
-description: Obtenha uma descrição de Pass.
+title: Método ID3DX11EffectPass GetDesc (D3dx11effect.h)
+description: Obter uma descrição de aprovação.
 ms.assetid: 423766be-96b2-4038-834e-34125789e8b1
 keywords:
 - Método GetDesc Direct3D 11
-- Método GetDesc do Direct3D 11, interface ID3DX11EffectPass
-- Interface ID3DX11EffectPass Direct3D 11, método GetDesc
+- Método GetDesc Direct3D 11 , interface ID3DX11EffectPass
+- ID3DX11EffectPass interface Direct3D 11 , método GetDesc
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118535062"
 ---
-# <a name="id3dx11effectpassgetdesc-method"></a>Método ID3DX11EffectPass:: GetDesc
+# <a name="id3dx11effectpassgetdesc-method"></a>Método ID3DX11EffectPass::GetDesc
 
-Obtenha uma descrição de Pass.
+Obter uma descrição de aprovação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,9 +46,9 @@ HRESULT GetDesc(
 *pDesc* 
 </dt> <dd>
 
-Tipo: **[ **D3DX11 \_ Pass \_ desc**](d3dx11-pass-desc.md)\***
+Tipo: **[ **D3DX11 \_ PASS \_ DESC**](d3dx11-pass-desc.md)\***
 
-Um ponteiro para uma descrição de passagem (consulte [**D3DX11 \_ Pass \_ desc**](d3dx11-pass-desc.md)).
+Um ponteiro para uma descrição de passagem (consulte [**D3DX11 \_ PASS \_ DESC**](d3dx11-pass-desc.md)).
 
 </dd> </dl>
 
@@ -56,14 +56,14 @@ Um ponteiro para uma descrição de passagem (consulte [**D3DX11 \_ Pass \_ desc
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
-Uma passagem é um bloco de código que define o estado de renderização e os sombreadores (que, por sua vez, define buffers constantes, amostras e texturas). Uma técnica de efeito contém um ou mais passos.
+Uma passagem é um bloco de código que define o estado de renderização e sombreadores (que, por sua vez, define buffers constantes, amostras e texturas). Uma técnica de efeito contém uma ou mais passagens.
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -73,8 +73,8 @@ Uma passagem é um bloco de código que define o estado de renderização e os s
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 7b6e63d4-ce8f-4279-85d9-da6b2b589afa
 title: Armazenando dados privados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6281f77e66a4217bda534b34342d6cefd92bd7d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65bfb1d9a701a93a125d68f81d7f487ffc2e2c7a337fa6bec0276086c08ffabc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370640"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118893433"
 ---
 # <a name="storing-private-data"></a>Armazenando dados privados
 

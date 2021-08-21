@@ -1,15 +1,15 @@
 ---
-title: Navegando dos recursos do Windows Media Player
-description: Navegando dos recursos do Windows Media Player
+title: navegando de recursos do Windows Media Player
+description: navegando de recursos do Windows Media Player
 ms.assetid: 7c608b34-5263-4a4b-aff6-2e9f6fef1aca
 keywords:
-- Lojas online do Windows Media Player, navegando
+- Windows Media Player lojas online, navegando
 - lojas online, navegando
 - Digite 2 lojas online, navegando
-- Lojas online do Windows Media Player, painéis de tarefas de serviço
+- Windows Media Player lojas online, painéis de tarefas de serviço
 - lojas online, painéis de tarefas de serviço
 - Digite 2 lojas online, painéis de tarefas de serviço
-- Repositórios online do Windows Media Player, painéis de tarefas
+- Windows Media Player lojas online, painéis de tarefas
 - lojas online, painéis de tarefas
 - Digite 2 lojas online, painéis de tarefas
 - navegando no tipo 2 lojas online
@@ -18,14 +18,14 @@ keywords:
 - painéis de tarefas de serviço
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c7a1dbe89cc38748bf4b217efff8ed417a86e2be
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d57422b388a3818579f868d2eb717701209ae55e3effb9aac255dbff6990973b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103915856"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118836342"
 ---
-# <a name="navigating-from-windows-media-player-features"></a>Navegando dos recursos do Windows Media Player
+# <a name="navigating-from-windows-media-player-features"></a>navegando de recursos do Windows Media Player
 
 Se você fornecer uma loja online de música, poderá executar a navegação na exibição do centro de informações, informações de álbum e páginas HTMLView para os painéis de tarefas de serviço. O processo funciona exatamente conforme descrito em [navegando entre os painéis de tarefas de serviço](navigating-between-service-task-panes.md). A diferença é que você pode navegar de um recurso para um painel de tarefas de serviço, mas não de um painel de tarefas de serviço para um recurso.
 
@@ -39,9 +39,9 @@ Se você fornecer uma loja online de música, poderá executar a navegação na 
 [**Navegação para lojas online do tipo 2**](navigation-for-type-2-online-stores.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

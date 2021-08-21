@@ -1,33 +1,33 @@
 ---
-title: Backup do Single-Instance Store e do SIS
-description: O repositório de instância única ou o SIS mantém arquivos duplicados com um mínimo de disco, cache e sobrecarga de mídia de backup. O backup do repositório de instância única ou o backup do SIS é uma API que os aplicativos de backup chamam para acessar a arquitetura do SIS.
+title: Single-Instance Store e Backup do SIS
+description: O armazenamento de instância única, ou SIS, mantém arquivos duplicados com um mínimo de sobrecarga de mídia de backup, cache e disco. Backup de armazenamento de instância única ou backup do SIS é uma API que os aplicativos de backup chamam para acessar a arquitetura do SIS.
 ms.assetid: dc85ef6d-e7ba-47f8-8de7-6ec4bc64d144
 keywords:
-- Backup de backup, repositório de instância única (SIS)
-- Backup de repositório de instância única (SIS)
+- backup Backup , armazenamento de instância única (SIS)
+- Backup do SIS (armazenamento de instância única)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 898f181a47a789cce8e68e0410f384e656543c5c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: db67e037fdc670ddde43f54dce42f2b4fb66e33d8ee0ca953962f7a163a4377b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118174014"
 ---
-# <a name="single-instance-store-and-sis-backup"></a>Backup do Single-Instance Store e do SIS
+# <a name="single-instance-store-and-sis-backup"></a>Single-Instance Store e Backup do SIS
 
-O *repositório de instância única*, ou SIS, é uma arquitetura projetada para manter arquivos duplicados com um mínimo de disco, cache e sobrecarga de mídia de backup. O backup do *repositório de instância única* ou o backup do SIS é uma API que os aplicativos de backup chamam para acessar a arquitetura do SIS.
+*O SIS* ou o armazenamento de instância única é uma arquitetura projetada para manter arquivos duplicados com um mínimo de sobrecarga de mídia de backup, cache e disco. *Backup de armazenamento de instância única* ou backup do SIS é uma API que os aplicativos de backup chamam para acessar a arquitetura do SIS.
 
-Para mais informações, consulte os seguintes tópicos:
+Para obter mais informações, consulte estes tópicos:
 
--   [Links do SIS e pontos de nova análise](sis-links-and-reparse-points.md)
--   [Os arquivos de armazenamento e Common-Store comuns do SIS](the-sis-common-store-and-common-store-files.md)
--   [Vantagens do uso do SIS](advantages-of-using-sis.md)
+-   [Links e pontos de reparse do SIS](sis-links-and-reparse-points.md)
+-   [O Armazenamento Comum do SIS e Common-Store arquivos](the-sis-common-store-and-common-store-files.md)
+-   [Vantagens de usar o SIS](advantages-of-using-sis.md)
 -   [Referência de backup](backup-reference.md)
 
- 
+ 
 
- 
+ 
 
 
 

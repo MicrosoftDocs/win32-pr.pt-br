@@ -4,16 +4,16 @@ description: Propriedade Speed
 ms.assetid: 43d0480b-d3a5-4992-a2a5-80eba37221e4
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 24738ac17d7efac45f2aefe7e4beb5ec018915a0
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: eaca342dde91965ab381f95671a39c4ba9fdcae040835f09867b3fabf5899a6d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105798405"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118745948"
 ---
 # <a name="speed-property"></a>Propriedade Speed
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna um inteiro longo que especifica a velocidade atual da saída de fala do 
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do ***. Caracteres ("*** characterid * * *"). Rápida**
+*agente ***. Caracteres ("**_characterid_*_"). Velocidade_*
 
 </dd> </dl>
 
@@ -37,9 +37,9 @@ Essa propriedade retorna a configuração de velocidade de saída de fala atual 
 
 Embora seu aplicativo não possa gravar esse valor, você pode incluir marcas **SPD** (Speed) no texto de saída que acelerará temporariamente a saída para um determinado expressão. No entanto, usar a marca **SPD** para alterar a saída falada do caractere não afeta a configuração da propriedade **Speed** . Para obter mais informações, consulte [marcas de saída de fala](microsoft-agent-speech-output-tags.md).
 
- 
+ 
 
- 
+ 
 
 
 

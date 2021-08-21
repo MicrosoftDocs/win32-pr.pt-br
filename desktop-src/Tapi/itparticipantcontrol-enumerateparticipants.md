@@ -4,18 +4,18 @@ ms.assetid: 90a2b5f1-8749-42cd-92d4-f5ee4e680eae
 title: 'Método ITParticipantControl:: EnumerateParticipants (Confpriv. h)'
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 54079860a64f366826cda3a0339424148bff1214
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 791a54729840fc24d52f90587969b58503a004f7077df1b49992abdae3ea0b2d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118864717"
 ---
 # <a name="itparticipantcontrolenumerateparticipants-method"></a>Método ITParticipantControl:: EnumerateParticipants
 
-\[O **EnumerateParticipants** não está disponível para uso no Windows Vista, no windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
+\[o **EnumerateParticipants** não está disponível para uso no Windows Vista, no Windows Server 2008 e em versões subsequentes do sistema operacional. A API do cliente RTC fornece funcionalidade semelhante.\]
 
-O método **EnumerateParticipants** enumera os participantes associados à conferência atual. Esse método é fornecido para aplicativos C e C++. Aplicativos cliente de automação, como aqueles escritos em Visual Basic, devem usar o método [**Get \_ participantes**](itparticipantcontrol-get-participants.md) .
+O método **EnumerateParticipants** enumera os participantes associados à conferência atual. Esse método é fornecido para aplicativos C e C++. aplicativos cliente de automação, como aqueles escritos em Visual Basic, devem usar o método [**get \_ participantes**](itparticipantcontrol-get-participants.md) .
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,7 +39,7 @@ Ponteiro para a interface [**IEnumParticipant**](ienumparticipant.md) .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método pode retornar um desses valores.
 
@@ -66,7 +66,7 @@ A TAPI chama o método **AddRef** na interface [**IEnumParticipant**](ienumparti
 | Requisito | Valor |
 |-------------------------|---------------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                 |
-| parâmetro<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>Confpriv. h</dt> </dl> |
 | Biblioteca<br/>      | <dl> <dt>UUID. lib</dt> </dl>   |
 | DLL<br/>          | <dl> <dt>Tapi3.dll</dt> </dl>  |
 

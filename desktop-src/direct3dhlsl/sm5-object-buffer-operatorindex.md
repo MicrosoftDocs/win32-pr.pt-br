@@ -1,9 +1,9 @@
 ---
-title: 'Função buffer:: Operator'
-description: 'Retorna uma variável de recurso somente leitura. | Função buffer:: Operator'
+title: Função Buffer::Operator
+description: Retorna uma variável de recurso somente leitura. | Função Buffer::Operator
 ms.assetid: 6a9e1176-439b-4565-9c7e-957d7c4045f0
 keywords:
-- Função operador Direct Write
+- Função de operador Gravação Direta
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0b811dd2409a00bb07f0b2441f6d57d4bd122f50
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 6c2b89ec69fd81e4852be41521add3103b0b2e5472856cd6668f421ede46225a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104370844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118790428"
 ---
-# <a name="bufferoperator--function"></a>Função buffer:: Operator
+# <a name="bufferoperator--function"></a>Função Buffer::Operator
 
 Retorna uma variável de recurso somente leitura.
 
@@ -36,7 +36,7 @@ R Operator[](
 
 <dl> <dt>
 
-*pos* \[ no\]
+*pos* \[ Em\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -45,7 +45,7 @@ A posição do índice.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **R**
 
@@ -57,7 +57,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

@@ -36,8 +36,8 @@ ms.locfileid: "118487599"
 
 Obtém um valor que indica se o JET_BKLOGTIME está em UTC.
 
-**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -58,14 +58,14 @@ public bool IsUtc { get; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Tipo: [System.Boolean](/dotnet/api/system.boolean)  
+Tipo: [System. Boolean](/dotnet/api/system.boolean)  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[JET_BKLOGTIME estrutura](./jet-bklogtime-structure2.md)
+[Estrutura de JET_BKLOGTIME](./jet-bklogtime-structure2.md)
 
-[JET_BKLOGTIME membros](./jet-bklogtime-members.md)
+[Membros do JET_BKLOGTIME](./jet-bklogtime-members.md)
 
-[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)

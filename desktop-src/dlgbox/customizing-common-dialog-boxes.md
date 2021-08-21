@@ -8,12 +8,12 @@ keywords:
 - Personalizando caixas de diálogo comuns
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b7eaa71c4f6fc6aa038ef150eb53935f6b3ec280
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 6272cbff88b7544ea945851f4f347cb43031b93ae08852bc139c7fb7ca6dd91d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366605"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118786116"
 ---
 # <a name="customizing-common-dialog-boxes"></a>Personalizando caixas de diálogo comuns
 
@@ -45,7 +45,7 @@ Quando você cria um modelo de caixa de diálogo personalizada modificando o mod
 | **Fonte**                      | Fonte. Dlg      | Dlgs. h       |
 | **Abrir** (seleção múltipla) | FileOpen. Dlg  | Dlgs. h       |
 | **Abrir** (seleção única)   | FileOpen. Dlg  | Dlgs. h       |
-| **Configurar Página**                | Prnsetup. Dlg  | Dlgs. h       |
+| **Configuração de página**                | Prnsetup. Dlg  | Dlgs. h       |
 | **Imprimir**                     | Prnsetup. Dlg  | Dlgs. h       |
 | **Configuração de impressão** (obsoleto)    | Prnsetup. Dlg  | Dlgs. h       |
 | **Substituir**                   | LocalizarTexto. Dlg  | Dlgs. h       |
@@ -96,85 +96,85 @@ A tabela a seguir mostra o tipo de procedimento de gancho a ser fornecido para c
 | **Abrir** ou **salvar como** (estilo Explorer) | [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)                    |
 | **Abrir** ou **salvar como** (estilo antigo)      | [*OFNHookProcOldStyle*](/previous-versions/windows/desktop/legacy/ms646932(v=vs.85)) |
 | **Imprimir**                                | [*PrintHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpprinthookproc)                |
-| **Configurar Página**                           | [*PageSetupHook*](/windows/win32/api/commdlg/nc-commdlg-lppagesetuphook)                |
+| **Configuração de página**                           | [*PageSetupHook*](/windows/win32/api/commdlg/nc-commdlg-lppagesetuphook)                |
 
 
 
  
 
-Para a caixa de diálogo **Configurar página** , você também pode especificar um procedimento de gancho [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) . Este é um procedimento de gancho especial que você pode usar para personalizar a aparência da página de exemplo exibida pela caixa de diálogo **Configurar página** .
+Para a **caixa de diálogo Configuração** de Página, você também pode especificar um procedimento de gancho [*PagePaintHook.*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) Esse é um procedimento de gancho especial que você pode usar para personalizar a aparência da página de exemplo exibida pela caixa **de diálogo Configuração** da Página .
 
 > [!Note]  
-> A caixa de diálogo **configuração de impressão** foi substituída pela caixa de diálogo **Configurar página** . Os aplicativos devem usar a caixa de diálogo **Configurar página** . No entanto, para compatibilidade, a função [**PRINTDLG**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) continua a dar suporte à exibição da caixa de diálogo **configuração de impressão** . Você pode fornecer um procedimento de gancho [*SetupHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpsetuphookproc) para a caixa de diálogo **configuração de impressão** .
+> A **caixa de diálogo** Instalação de Impressão foi superada pela caixa de diálogo **Configuração** de Página . Os aplicativos devem usar a **caixa de diálogo Configuração** de Página. No entanto, para compatibilidade, a [**função PrintDlg**](/previous-versions/windows/desktop/legacy/ms646940(v=vs.85)) continua a dar suporte à exibição da caixa **de diálogo Instalação** de Impressão. Você pode fornecer um procedimento de gancho [*SetupHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpsetuphookproc) para a caixa **de diálogo Instalação de** Impressão.
 
  
 
 ## <a name="common-dialog-messages"></a>Mensagens de diálogo comuns
 
-As caixas de diálogo comuns usam mensagens para notificar o procedimento de janela ou o procedimento de gancho quando determinados eventos ocorrem. Além disso, há mensagens que você pode enviar a uma caixa de diálogo comum para recuperar informações ou para controlar o comportamento ou a aparência da caixa de diálogo. Esta seção descreve as mensagens de diálogo comuns registradas pela função [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) , as mensagens usadas pela caixa de diálogo **fonte** e a caixa de diálogo **configuração de página** e as mensagens usadas pelas caixas de diálogo **abrir** e **salvar como** do Explorer.
+Caixas de diálogo comuns usam mensagens para notificar o procedimento de janela ou o procedimento de gancho quando determinados eventos ocorrem. Além disso, há mensagens que você pode enviar para uma caixa de diálogo comum para recuperar informações ou para controlar o comportamento ou a aparência da caixa de diálogo. Esta seção descreve as mensagens de diálogo comuns registradas pela função  [**RegisterWindowMessage,**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) as mensagens usadas pela  caixa de diálogo Fonte e pela caixa de diálogo Configuração de Página e as mensagens usadas pelas caixas de diálogo Abrir e Salvar **como** no estilo Explorer. 
 
-A biblioteca de caixa de diálogo comum define um conjunto de cadeias de caracteres de mensagem. Você pode passar uma constante associada a uma dessas cadeias de caracteres de mensagem para [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obter um identificador de mensagem. Você pode usar o identificador para detectar e processar mensagens enviadas de uma caixa de diálogo comum ou para enviar mensagens para uma caixa de diálogo comum. A tabela a seguir mostra as constantes de mensagem e descreve seu uso.
+A Biblioteca de Caixas de Diálogo Comuns define um conjunto de cadeias de caracteres de mensagem. Você pode passar uma constante associada a uma dessas cadeias de caracteres de mensagem para [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) para obter um identificador de mensagem. Em seguida, você pode usar o identificador para detectar e processar mensagens enviadas de uma caixa de diálogo comum ou para enviar mensagens para uma caixa de diálogo comum. A tabela a seguir mostra as constantes de mensagem e descreve seu uso.
 
 
 
-| Contants                               | Uso                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Contants                               | Usar                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**COLOROKSTRING**](colorokstring.md) | Uma caixa de diálogo **cor** envia essa mensagem para o procedimento de gancho quando o usuário seleciona uma cor e clica no botão **OK** . O procedimento de gancho pode aceitar a cor ou rejeitá-la e forçar a caixa de diálogo a permanecer aberta.                                                                                                                                                                                             |
-| [**FILEOKSTRING**](fileokstring.md)   | Uma caixa de diálogo **abrir** ou **salvar como** envia essa mensagem ao procedimento de gancho quando o usuário seleciona um nome de arquivo e clica no botão **OK** . O procedimento de gancho pode aceitar o nome do arquivo ou rejeitá-lo e forçar a caixa de diálogo a permanecer aberta. Para as caixas de diálogo **abrir** e **salvar** no estilo do Gerenciador, essa mensagem foi substituída pela mensagem de notificação do [**CDN \_ FILEOK**](cdn-fileok.md) .<br/> |
-| [**FINDMSGSTRING**](findmsgstring.md) | Uma caixa de diálogo **Localizar** ou **substituir** envia essa mensagem para o procedimento de janela de sua janela pai quando o usuário clica em **Localizar próximo**, **substituir** ou **substituir tudo** ou fecha a caixa de diálogo. O parâmetro *lParam* da mensagem é um ponteiro para uma estrutura [**FINDREPLACE**](/windows/win32/api/commdlg/ns-commdlg-findreplacea) que contém a entrada do usuário.                                                                               |
-| [**HELPMSGSTRING**](helpmsgstring.md) | Todas as caixas de diálogo comuns enviam essa mensagem para o procedimento de janela de sua janela pai quando o usuário clica no botão **ajuda** . Para as caixas de diálogo **abrir** e **salvar** no estilo do Gerenciador, essa mensagem foi substituída pela mensagem de notificação da [**\_ ajuda da CDN**](cdn-help.md) .<br/>                                                                                                                    |
-| [**LBSELCHSTRING**](lbselchstring.md) | Uma caixa de diálogo **abrir** ou **salvar como** envia essa mensagem ao procedimento de gancho quando o usuário altera a seleção na caixa de listagem **nome de arquivo** . Para as caixas de diálogo **abrir** e **salvar** no estilo do Gerenciador, essa mensagem foi substituída pela mensagem de notificação do [**CDN \_ SELCHANGE**](cdn-selchange.md) .<br/>                                                                                           |
-| [**SETRGBSTRING**](setrgbstring.md)   | Um procedimento de gancho pode enviar essa mensagem a uma caixa de diálogo de **cor** para definir a seleção de cor atual.                                                                                                                                                                                                                                                                                                                   |
-| [**SHAREVISTRING**](sharevistring.md) | Uma caixa de diálogo **abrir** ou **salvar como** envia essa mensagem para o procedimento de gancho se ocorrer uma violação de compartilhamento para o arquivo selecionado quando o usuário clicar no botão **OK** . Para as caixas de diálogo **abrir** e **salvar** no estilo do Gerenciador, essa mensagem foi substituída pela mensagem de notificação do [**CDN \_ SHAREVIOLATION**](cdn-shareviolation.md) .<br/>                                                        |
+| [**COLOROKSTRING**](colorokstring.md) | Uma **caixa de** diálogo Cor envia essa mensagem para o procedimento de gancho quando o usuário seleciona uma cor e clica no botão **OK.** O procedimento de gancho pode aceitar a cor ou rejeitá-la e forçar a caixa de diálogo a permanecer aberta.                                                                                                                                                                                             |
+| [**FILEOKSTRING**](fileokstring.md)   | Uma **caixa** de **diálogo** Abrir ou Salvar como envia essa mensagem para o procedimento de gancho quando o usuário seleciona um nome de arquivo e clica no **botão OK.** O procedimento de gancho pode aceitar o nome do arquivo ou rejeitá-lo e forçar a caixa de diálogo a permanecer aberta. Para caixas de diálogo **Abrir** e Salvar **como** no estilo explorer, essa mensagem foi superada pela mensagem CDN notificação [**\_ FILEOK.**](cdn-fileok.md)<br/> |
+| [**FINDMSGSTRING**](findmsgstring.md) | Uma **caixa** **de** diálogo Encontrar ou Substituir envia essa mensagem para o procedimento de janela de sua janela pai quando o usuário clica na caixa de diálogo Encontrar Próximo **,** Substituir ou Substituir Tudo ou fecha a caixa de diálogo. O parâmetro *lParam* da mensagem é um ponteiro para uma [**estrutura FINDREPLACE**](/windows/win32/api/commdlg/ns-commdlg-findreplacea) que contém a entrada do usuário.                                                                               |
+| [**HELPMSGSTRING**](helpmsgstring.md) | Todas as caixas de diálogo comuns enviam essa mensagem para o procedimento de janela da janela pai quando o usuário clica no **botão Ajuda.** Para caixas de diálogo **Abrir** e Salvar **como** no estilo Explorer, essa mensagem foi superada pela CDN [**\_ de**](cdn-help.md) notificação da AJUDA.<br/>                                                                                                                    |
+| [**LBSELCHSTRING**](lbselchstring.md) | Uma **caixa** de **diálogo** Abrir ou Salvar como envia essa mensagem para o procedimento de gancho quando o usuário altera a seleção na caixa **de listagem Nome** do Arquivo . Para caixas  de diálogo Abrir e Salvar **como** no estilo explorer, essa mensagem foi superada pela mensagem CDN notificação [**\_ SELCHANGE.**](cdn-selchange.md)<br/>                                                                                           |
+| [**SETRGBSTRING**](setrgbstring.md)   | Um procedimento de gancho pode enviar essa mensagem para uma caixa **de diálogo** Cor para definir a seleção de cores atual.                                                                                                                                                                                                                                                                                                                   |
+| [**SHAREVISTRING**](sharevistring.md) | Uma **caixa** de **diálogo** Abrir ou Salvar como enviará essa mensagem para o procedimento de gancho se ocorrer uma violação de compartilhamento para o arquivo selecionado quando o usuário clicar no **botão OK.** Para caixas  de diálogo Abrir e Salvar **como** no estilo explorer, essa mensagem foi superada pela mensagem CDN notificação [**\_ SHAREVIOLATION.**](cdn-shareviolation.md)<br/>                                                        |
 
 
 
  
 
-Algumas caixas de diálogo comuns enviam e recebem outras mensagens da janela. O procedimento de gancho para uma caixa de diálogo de **fonte** pode enviar qualquer uma das mensagens **\_ ChooseFont \_ \* do WM** para a caixa de diálogo **fonte** . Para obter mais informações, consulte a [caixa de diálogo fonte](font-dialog-box.md). A caixa de diálogo **Configurar página** enviará as mensagens do **WM \_ \_ \* PSD** se você tiver habilitado um procedimento de gancho [*PagePaintHook*](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) . Para obter mais informações, consulte [a caixa de diálogo Configurar página](page-setup-dialog-box.md).
+Algumas caixas de diálogo comuns enviam e recebem outras mensagens de janela. O procedimento de gancho para uma **caixa de** diálogo Fonte pode enviar qualquer uma das mensagens **WM \_ CHOOSEFONT _ \_ \* *para*** a caixa de diálogo _ Fonte. Para obter mais informações, consulte [Caixa de diálogo Fonte](font-dialog-box.md). A **caixa de diálogo** Configuração de Página envia as mensagens * WM *\_ PSD \_ \** _ se você habilitar um procedimento de gancho [_PagePaintHook*.](/windows/win32/api/commdlg/nc-commdlg-lppagepainthook) Para obter mais informações, consulte [Caixa de diálogo Configuração de Página](page-setup-dialog-box.md).
 
-As caixas de diálogo **abrir** e **salvar como** no estilo do Gerenciador dão suporte a um conjunto de mensagens predefinidas. Isso inclui mensagens de notificação enviadas na forma de uma mensagem de notificação do [**WM \_**](../controls/wm-notify.md) ao seu procedimento de gancho e mensagens que o seu procedimento de gancho pode enviar para a caixa de diálogo. Para obter uma lista completa dessas mensagens, consulte [procedimentos de gancho de estilo do Explorer](open-and-save-as-dialog-boxes.md).
+As caixas de diálogo **Abrir** e **Salvar como** no estilo Explorer são suportadas por um conjunto de mensagens predefinidos. Isso inclui mensagens de notificação enviadas na forma de uma mensagem [**WM \_ NOTIFY**](../controls/wm-notify.md) para o procedimento de gancho e mensagens que o procedimento de gancho pode enviar para a caixa de diálogo. Para ver uma lista completa dessas mensagens, consulte [Procedimentos de gancho no estilo explorer.](open-and-save-as-dialog-boxes.md)
 
-## <a name="help-support"></a>Suporte de ajuda
+## <a name="help-support"></a>Suporte da Ajuda
 
-Caixas de diálogo comuns fornecem ajuda contextual para os controles padrão da caixa de diálogo. Para fornecer ajuda adicional para uma caixa de diálogo comum, você pode exibir um botão de **ajuda** e processar mensagens geradas quando o usuário clica no botão. O botão **ajuda** é um suplemento para a ajuda contextual padrão. O botão **ajuda** é útil para descrever a finalidade geral da caixa de diálogo, pois ela se aplica ao seu aplicativo.
+Caixas de diálogo comuns fornecem ajuda contextul para os controles padrão da caixa de diálogo. Para fornecer ajuda adicional para uma caixa  de diálogo comum, você pode exibir um botão ajuda e processar mensagens geradas quando o usuário clica no botão. O **botão** Ajuda é um suplemento para a ajuda contextuletivo padrão. O **botão** Ajuda é útil para descrever a finalidade geral da caixa de diálogo como ela se aplica ao seu aplicativo.
 
--   [Ajuda contextual](#context-sensitive-help)
--   [O botão ajuda](#the-help-button)
+-   [Ajuda contextitivo](#context-sensitive-help)
+-   [O botão Ajuda](#the-help-button)
 
 ### <a name="context-sensitive-help"></a>Context-Sensitive ajuda
 
-Todas as caixas de diálogo comuns fornecem ajuda contextual para os controles padrão da caixa de diálogo. O usuário pode exibir a ajuda para controles individuais por qualquer um dos seguintes métodos:
+Todas as caixas de diálogo comuns fornecem ajuda contextul para os controles padrão da caixa de diálogo. O usuário pode exibir ajuda para controles individuais por qualquer um dos seguintes métodos:
 
 -   Selecionando o controle e pressionando a tecla F1.
--   Clicando no botão **?** na barra de título e, subsequentemente, clicando em um controle.
--   Clicando com o botão direito do mouse sobre um controle.
+-   Clicando no **?** botão na barra de título e, subsequentemente, clicando em um controle .
+-   Clicando no botão direito do mouse sobre um controle.
 
-Se você personalizar uma caixa de diálogo adicionando novos controles, também deverá estender o suporte de ajuda para esses controles processando solicitações de ajuda no procedimento de gancho. O procedimento de gancho recebe as mensagens a seguir quando o usuário solicita ajuda.
+Se você personalizar uma caixa de diálogo adicionando novos controles, também deverá estender o suporte de ajuda para esses controles processando solicitações de ajuda no procedimento de gancho. O procedimento de gancho recebe as seguintes mensagens quando o usuário solicita ajuda.
 
 
 
 | Ação do usuário                                                           | Mensagem                                      |
 |-----------------------------------------------------------------------|----------------------------------------------|
-| Clique com o botão direito do mouse sobre um controle.                          | [**CONTEXTMENU do WM \_**](/windows/desktop/menurc/wm-contextmenu) |
-| Pressionada a tecla F1.                                                   | [**ajuda do WM \_**](../shell/wm-help.md)               |
-| Clicou no botão **?** na barra de título e, em seguida, clicou em um controle. | [**ajuda do WM \_**](../shell/wm-help.md)               |
+| Clique no botão direito do mouse sobre um controle.                          | [**WM \_ CONTEXTMENU**](/windows/desktop/menurc/wm-contextmenu) |
+| Pressione a tecla F1.                                                   | [**AJUDA DO WM \_**](../shell/wm-help.md)               |
+| Clicou no **?** botão na barra de título e, em seguida, clique em um controle . | [**AJUDA DO WM \_**](../shell/wm-help.md)               |
 
 
 
  
 
-Você deve processar essas mensagens para os controles que adicionou, mas deixar que o procedimento de caixa de diálogo padrão processe as mensagens para os controles padrão. Para obter mais informações sobre como processar essas mensagens, consulte [a ajuda](/previous-versions/windows/desktop/legacy/bb776786(v=vs.85)).
+Você deve processar essas mensagens para os controles que adicionou, mas permitir que o procedimento de caixa de diálogo padrão processe as mensagens para os controles padrão. Para obter mais informações sobre como processar essas mensagens, consulte [Ajuda](/previous-versions/windows/desktop/legacy/bb776786(v=vs.85)).
 
-### <a name="the-help-button"></a>O botão ajuda
+### <a name="the-help-button"></a>O botão Ajuda
 
-Você pode exibir um botão **ajuda** em qualquer uma das caixas de diálogo comuns, definindo um valor **SHOWHELP** no membro **flags** da estrutura de inicialização da caixa de diálogo. Se você exibir o botão **ajuda** , deverá processar a solicitação do usuário para obter ajuda. O processamento pode ser feito em um dos procedimentos de janela do aplicativo ou em um procedimento de gancho para a caixa de diálogo. Normalmente, você processaria a solicitação de ajuda chamando a função [**WinHelp**](/windows/win32/api/winuser/nf-winuser-winhelpa) .
+Você pode exibir um **botão Ajuda** em qualquer uma das caixas de diálogo comuns definindo um **valor SHOWHELP** no membro **Sinalizadores** da estrutura de inicialização da caixa de diálogo. Se você exibir o **botão Ajuda,** deverá processar a solicitação de ajuda do usuário. O processamento pode ser feito em um dos procedimentos de janela do aplicativo ou em um procedimento de gancho para a caixa de diálogo. Normalmente, você processaria a solicitação de ajuda chamando a [**função WinHelp.**](/windows/win32/api/winuser/nf-winuser-winhelpa)
 
-Para processar mensagens de ajuda em um dos procedimentos de janela, você deve obter um identificador de mensagem para a cadeia de caracteres definida pelo valor [**HELPMSGSTRING**](helpmsgstring.md) e identificar a janela para receber mensagens. Para obter o identificador da mensagem, especifique **HELPMSGSTRING** como o parâmetro em uma chamada para a função [**RegisterWindowMessage**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) . Ao criar a caixa de diálogo, use o membro **hwndOwner** da estrutura de inicialização da caixa de diálogo para identificar a janela que deve receber as mensagens. O procedimento da caixa de diálogo envia a mensagem para o procedimento da janela sempre que o usuário clica no botão **ajuda** .
+Para processar mensagens de ajuda em um de seus procedimentos de janela, você deve obter um identificador de mensagem para a cadeia de caracteres definida pelo valor [**HELPMSGSTRING**](helpmsgstring.md) e identificar a janela para receber mensagens. Para obter o identificador da mensagem, **especifique HELPMSGSTRING** como o parâmetro em uma chamada para a [**função RegisterWindowMessage.**](/windows/desktop/api/winuser/nf-winuser-registerwindowmessagea) Ao criar a caixa de diálogo, use o membro **hwndOwner** da estrutura de inicialização da caixa de diálogo para identificar a janela que deve receber as mensagens. O procedimento da caixa de diálogo envia a mensagem para o procedimento de janela sempre que o usuário clica no **botão Ajuda.**
 
-Para processar mensagens de ajuda em um procedimento de gancho, você deve processar a mensagem de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) . O procedimento de gancho fornece ajuda se o parâmetro *wParam* dessa mensagem indica que o usuário clicou no botão **ajuda** . O identificador do botão **ajuda** é a constante **pshHelp** definida no arquivo Dlgs. h.
+Para processar mensagens de ajuda em um procedimento de gancho, você deve processar a [**mensagem WM \_ COMMAND.**](/windows/desktop/menurc/wm-command) O procedimento de gancho fornece ajuda se *o parâmetro wParam* dessa mensagem indica que o usuário clicou no **botão Ajuda.** O identificador do botão **Ajuda** é a constante **pshHelp** definida no arquivo Dlgs.h.
 
-Os procedimentos de gancho para as caixas de diálogo **abrir** e **salvar como** do Gerenciador de navegador não recebem mensagens de [**\_ comando do WM**](/windows/desktop/menurc/wm-command) para o botão **ajuda** . Em vez disso, a caixa de diálogo envia uma mensagem de notificação da [**\_ ajuda da CDN**](cdn-help.md) para o procedimento de gancho quando o botão **ajuda** é clicado.
+Os procedimentos de gancho para as caixas de diálogo **Abrir** e Salvar **como** no estilo Explorer não recebem mensagens [**WM \_ COMMAND**](/windows/desktop/menurc/wm-command) para o **botão Ajuda.** Em vez disso, a caixa de diálogo envia uma CDN de notificação [**\_ da AJUDA**](cdn-help.md) para o procedimento de gancho quando o botão **Ajuda** é clicado.
 
  
 

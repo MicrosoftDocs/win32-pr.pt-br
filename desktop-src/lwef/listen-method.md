@@ -1,23 +1,23 @@
 ---
-title: Método de escuta
-description: Método de escuta
+title: Método Listen
+description: Método Listen
 ms.assetid: ceb3b62f-2a33-4a13-b608-4cfa800be38a
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6813fb155074c4cc47a51ec7241eddd332edbcc3
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: bc87a57d1ebdd3f36a2d56d85e0754f5005fd6c356fc9af98760bd0db90605f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007419"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118748650"
 ---
-# <a name="listen-method"></a>Método de escuta
+# <a name="listen-method"></a>Método Listen
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
-<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Ndescrição**
+<span id="Description"></span><span id="description"></span><span id="DESCRIPTION"></span>**Descrição**
 </dt> <dd>
 
 Ativa o modo de escuta (reconhecimento de fala) por um período de tempo.
@@ -27,13 +27,13 @@ Ativa o modo de escuta (reconhecimento de fala) por um período de tempo.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*agente do. ***Caracteres * * * * ("*** characterid * * *").* *  *Estado* de escuta
+*agent.***Characters***("**_CharacterID_*_"). Estado de_ *  *Escuta*
 
 
 
 | Parte    | Descrição                                                                                                                                                                      |
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *State* | Obrigatórios. Um valor booliano que determina se o modo de escuta deve ser ativado ou desativado. **Verdadeiro** Ativa o modo de escuta. <br/> **Falso** Desativa o modo de escuta.<br/> |
+| *State* | Obrigatórios. Um valor booliana que determina se o modo de escuta deve ser ativar ou desativar. **True** Ativa o modo de escuta. <br/> **False** Desliga o modo de escuta.<br/> |
 
 
 
@@ -43,9 +43,9 @@ Ativa o modo de escuta (reconhecimento de fala) por um período de tempo.
 
 ## <a name="remarks"></a>Comentários
 
-Definir esse método como **true** habilita o modo de escuta (ativa o reconhecimento de fala) por um período de tempo fixo (10 segundos). Embora não seja possível definir o valor do tempo limite, você pode desligar o modo de escuta antes que o tempo limite expire. Se você (ou outro cliente) tiver definido o modo de escuta com êxito e tentar definir essa propriedade como **true** antes da expiração do tempo limite, o método terá êxito e redefinirá o tempo limite. No entanto, se o modo de escuta estiver ativado porque o usuário está pressionando a tecla de escuta, o método terá sucesso, mas o tempo limite será ignorado e o modo de escuta terminará com base na interação do usuário com a chave de escuta.
+Definir esse método como **True** habilita o modo de escuta (ativa o reconhecimento de fala) por um período fixo (10 segundos). Embora não seja possível definir o valor do tempo-expirado, você pode desativar o modo de escuta antes que o tempo-expirar. Se você (ou outro cliente) definir com êxito o modo de Escuta e tentar definir essa propriedade como **True** antes que o tempo-expirar, o método terá êxito e redefinirá o tempo-expirado. No entanto, se o modo de Escuta estiver em porque o usuário está pressionando a tecla Listening, o método será bem-sucedido, mas o tempo-tempo será ignorado e o modo de escuta terminará com base na interação do usuário com a tecla Listening.
 
-Esse método tem sucesso apenas quando chamado pelo cliente de entrada-ativo e se os serviços de fala foram iniciados. Para garantir que os serviços de fala tenham sido iniciados, consulte ou defina o [**SRModeID**](srmodeid-property.md) ou defina a configuração de [**voz**](voice-property.md) para um [**comando**](/windows/desktop/lwef/the-command-object) antes de chamar **Listen** , caso contrário, o método falhará. Para detectar o sucesso desse método, chame-o como uma função e ele retornará um valor booliano indicando se o método teve êxito.
+Esse método só terá êxito quando chamado pelo cliente ativo de entrada e se os serviços de fala foram iniciados. Para garantir que os serviços de fala tenham sido iniciados, consulte ou de definido [**o SRModeID**](srmodeid-property.md) ou de definir [**a**](/windows/desktop/lwef/the-command-object) configuração Voz para um Comando antes de chamar **Escutar** caso contrário, o método falhará. [](voice-property.md) Para detectar o sucesso desse método, chame-o como uma função e ele retornará um valor booliana que indica se o método foi bem-sucedido.
 
 
 ```
@@ -60,13 +60,13 @@ Esse método tem sucesso apenas quando chamado pelo cliente de entrada-ativo e s
 
 
 
-O método também falhará se o usuário estiver pressionando a tecla de escuta e você tentar definir **escutar** como **false**. No entanto, se o usuário tiver liberado a chave de escuta e o modo de escuta não tiver expirado, ele terá sucesso.
+O método também falhará se o usuário estiver pressionando a tecla Listening e você tentar definir **Escutar** como **False.** No entanto, se o usuário tiver liberado a tecla Listening e o modo de escuta não tiver tempo de vida, ele terá êxito.
 
-A **escuta** também falhará se não houver nenhum mecanismo de fala compatível disponível que corresponda à configuração [**LanguageID**](languageid-property.md) do caractere, o usuário desabilitou a entrada de fala usando a folha de propriedades do Microsoft Agent ou o dispositivo de áudio está ocupado.
+**A** escuta também falhará se não houver nenhum mecanismo de fala compatível disponível que corresponde à configuração [**LanguageID**](languageid-property.md) do caractere, se o usuário tiver desabilitado a entrada de fala usando a folha de propriedades do Microsoft Agent ou se o dispositivo de áudio estiver ocupado.
 
-Quando você define com êxito esse método como **true**, o servidor dispara o evento [**ListenStart**](listenstart-event.md) . O servidor envia [**ListenComplete**](listencomplete-event.md) quando o tempo limite do modo de escuta é concluído ou quando você define **Listen** como **false**.
+Quando você definiu esse método com êxito como **True,** o servidor dispara o [**evento ListenStart.**](listenstart-event.md) O servidor envia [**ListenComplete quando**](listencomplete-event.md) o tempo-final do modo de escuta for concluído ou quando você definir **Escutar** como **False.**
 
-Esse método não chama automaticamente [**Stop**](stop-method.md) e executa uma animação de estado de escuta conforme o servidor faz quando a tecla de escuta é pressionada. Isso permite que você determine se deve interromper a animação atual usando a animação [**ListenStart**](listenstart-event.md) chamando **Stop** e jogando sua própria animação apropriada. No entanto, o servidor chama **Stop** e executa uma animação de estado audição quando um usuário expressão é detectado.
+Esse método não chama parar e [**reproduzir**](stop-method.md) automaticamente uma animação de estado de Escuta como o servidor faz quando a tecla Listening é pressionada. Isso permite que você determine se a animação atual deve ser interrompida usando a animação [**ListenStart**](listenstart-event.md) chamando **Parar** e tocando sua própria animação apropriada. No entanto, o servidor chama **Parar** e reproduz uma animação de estado auditivo quando um enunciado do usuário é detectado.
 
 ## <a name="see-also"></a>Consulte Também
 

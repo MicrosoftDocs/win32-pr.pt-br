@@ -8,12 +8,12 @@ keywords:
 - Partições de diretório de aplicativos AD, enumerando réplicas de
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d1415c147fe4320e5f8169487a656db4f365f03a
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: b52ff0ea5c2b4737079f4a44997f39dd027299f50c8acd96fe0456b0e5b60d03
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "103917137"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118694883"
 ---
 # <a name="enumerating-replicas-of-an-application-directory-partition"></a>Enumerando réplicas de uma partição de diretório de aplicativo
 
@@ -28,6 +28,6 @@ Quando uma réplica de uma partição de diretório de aplicativo é adicionada,
 
 Devido à latência de replicação e aos atrasos de execução agendados do KCC, é possível que as réplicas ativas reais para uma partição de diretório de aplicativo não correspondam à lista de controladores de domínio indicados pelo atributo [**msDS-NC-Replica-Locations**](/windows/desktop/ADSchema/a-msds-nc-replica-locations) do objeto [**crossRef**](/windows/desktop/ADSchema/c-crossref) . Uma maneira mais precisa, mas menos eficiente, de determinar as réplicas ativas reais de uma partição de diretório de aplicativos é Pesquisar todos os objetos [**nTDSDSA**](/windows/desktop/ADSchema/c-ntdsdsa) na floresta que têm um atributo [**msDS-hasMasterNCs**](/windows/desktop/ADSchema/a-msds-hasmasterncs) que contenha o nome distinto da partição de diretório do aplicativo. O atributo **msDS-hasMasterNCs** contém os nomes distintos de todas as partições de diretório graváveis que o controlador de domínio hospeda, incluindo partições de diretório de aplicativo.
 
- 
+ 
 
- 
+ 

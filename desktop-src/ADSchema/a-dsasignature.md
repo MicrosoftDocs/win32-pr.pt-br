@@ -1,11 +1,11 @@
 ---
 title: DSA-Signature atributo
-description: A DSA-Signature de um objeto é a ID de invocação do último diretório para modificar o objeto.
+description: A DSA-Signature de um objeto é a Invocation-ID do último diretório para modificar o objeto.
 ms.assetid: 7ae65f15-b0c9-4d73-8a65-92c23d0a239b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de DSA-Signature do atributo AD
-- Esquema de AD do atributo dSASignature
+- DSA-Signature atributo AD Schema
+- Esquema do AD do atributo dSASignature
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bdfed9e2cb871f3418c8bdbf4401d03c1e78492b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b7b5c7375474cefadf61e8c4d605e4dc812f0b3d1f66680b09a0f13f0cb11abd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754415"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118177387"
 ---
 # <a name="dsa-signature-attribute"></a>DSA-Signature atributo
 
-A DSA-Signature de um objeto é a ID de invocação do último diretório para modificar o objeto.
+A DSA-Signature de um objeto é a Invocation-ID do último diretório para modificar o objeto.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
 | CN                | DSA-Signature                                         |
-| LDAP-Display-Name | dSASignature                                          |
+| Ldap-Display-Name | dSASignature                                          |
 | Tamanho              | \-                                                    |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                      |
 | Frequência de atualização  | Sempre que um objeto é modificado.                       |
 | Attribute-Id      | 1.2.840.113556.1.2.74                                 |
-| System-ID-GUID    | 167757bc-47f3-11d1-a9c3-0000f80367c1                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 167757bc-47f3-11d1-a9c3-0000f80367c1                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ A DSA-Signature de um objeto é a ID de invocação do último diretório para m
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ A DSA-Signature de um objeto é a ID de invocação do último diretório para m
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8077                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -80,10 +80,10 @@ A DSA-Signature de um objeto é a ID de invocação do último diretório para m
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8077                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -92,7 +92,7 @@ A DSA-Signature de um objeto é a ID de invocação do último diretório para m
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ A DSA-Signature de um objeto é a ID de invocação do último diretório para m
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8077                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | True                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -122,10 +122,10 @@ A DSA-Signature de um objeto é a ID de invocação do último diretório para m
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8077                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -143,10 +143,10 @@ A DSA-Signature de um objeto é a ID de invocação do último diretório para m
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8077                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -164,10 +164,10 @@ A DSA-Signature de um objeto é a ID de invocação do último diretório para m
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8077                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -185,10 +185,10 @@ A DSA-Signature de um objeto é a ID de invocação do último diretório para m
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8077                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |

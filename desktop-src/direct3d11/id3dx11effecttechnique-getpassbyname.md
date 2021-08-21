@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectTechnique GetPassByName (D3dx11effect.h)
-description: Obter um nome de passagem.
+title: Método ID3DX11EffectTechnique GetPassByName (D3dx11effect. h)
+description: Obter uma passagem por nome.
 ms.assetid: 07c7502e-2af9-4898-8cd4-106d6814fb85
 keywords:
 - Método GetPassByName Direct3D 11
-- Método GetPassByName Direct3D 11 , interface ID3DX11EffectTechnique
-- ID3DX11EffectTechnique interface Direct3D 11 , método GetPassByName
+- Método GetPassByName Direct3D 11, interface ID3DX11EffectTechnique
+- Interface ID3DX11EffectTechnique Direct3D 11, método GetPassByName
 topic_type:
 - apiref
 api_name:
@@ -24,9 +24,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118532358"
 ---
-# <a name="id3dx11effecttechniquegetpassbyname-method"></a>Método ID3DX11EffectTechnique::GetPassByName
+# <a name="id3dx11effecttechniquegetpassbyname-method"></a>Método ID3DX11EffectTechnique:: GetPassByName
 
-Obter um nome de passagem.
+Obter uma passagem por nome.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -56,14 +56,14 @@ O nome da passagem.
 
 Tipo: **[ **ID3DX11EffectPass**](id3dx11effectpass.md)\***
 
-Um ponteiro para um [**ID3DX11EffectPass.**](id3dx11effectpass.md)
+Um ponteiro para um [**ID3DX11EffectPass**](id3dx11effectpass.md).
 
 ## <a name="remarks"></a>Comentários
 
-Uma técnica contém uma ou mais passagens; obter uma passagem usando um nome ou um índice.
+Uma técnica contém uma ou mais passagens; Obtenha uma passagem usando um nome ou um índice.
 
 > [!Note]  
-> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
+> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
 
  
 
@@ -73,8 +73,8 @@ Uma técnica contém uma ou mais passagens; obter uma passagem usando um nome ou
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

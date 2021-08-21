@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: b5df9f4edf7a4261e907bd715a5528b8036799b5
-ms.sourcegitcommit: 7e4322a6ec1f964d5ad26e2e5e06cc8ce840030e
+ms.openlocfilehash: e0d39562a6bbbaef7913e5be6ad4a60087f86b3b75bd7258164d0d5d6b7701ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113129874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118794584"
 ---
 # <a name="break---ps"></a>break - ps
 
 Saia do loop atual no [endloop](endloop---ps.md) mais próximo – ps ou [endrep – ps](endrep---ps.md).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 

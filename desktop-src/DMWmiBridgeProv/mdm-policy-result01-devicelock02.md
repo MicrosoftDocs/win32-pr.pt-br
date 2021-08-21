@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Result01_DeviceLock02
-description: A \_ classe MDM Policy \_ Result01 \_ DeviceLock02 representa as políticas de bloqueio de dispositivo disponíveis.
+title: MDM_Policy_Result01_DeviceLock02 classe
+description: A classe MDM \_ Policy \_ Result01 \_ DeviceLock02 representa as políticas de bloqueio de dispositivo disponíveis.
 ms.assetid: 9aac25a8-8502-468f-9478-1ac4ccccaf0b
 keywords:
-- Classe MDM_Policy_Result01_DeviceLock02
-- Classe MDM_Policy_Result01_DeviceLock02, descrita
+- MDM_Policy_Result01_DeviceLock02 classe
+- MDM_Policy_Result01_DeviceLock02 classe, descrita
 topic_type:
 - apiref
 api_name:
@@ -17,18 +17,18 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: aa93236b99add5cb49e0b54aa10eab9e959ab01a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8abd493eda688c8529c2ede6f05eae89545997c239d6d5b17eb59e45233cf204
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824439"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118164495"
 ---
-# <a name="mdm_policy_result01_devicelock02-class"></a>\_Classe MDM \_ Result01 \_ DeviceLock02
+# <a name="mdm_policy_result01_devicelock02-class"></a>Classe MDM \_ Policy \_ Result01 \_ DeviceLock02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A classe **MDM \_ Policy \_ Result01 \_ DeviceLock02** representa as políticas de bloqueio de dispositivo disponíveis.
+A **classe MDM \_ Policy \_ Result01 \_ DeviceLock02** representa as políticas de bloqueio de dispositivo disponíveis.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -60,13 +60,13 @@ class MDM_Policy_Result01_DeviceLock02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Result01 \_ DeviceLock02 da política MDM** tem estes tipos de membros:
+A **classe MDM \_ Policy \_ Result01 \_ DeviceLock02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Result01 \_ DeviceLock02 da política MDM** tem essas propriedades.
+A **classe MDM \_ Policy \_ Result01 \_ DeviceLock02** tem essas propriedades.
 
 <dl> <dt>
 
@@ -76,7 +76,7 @@ AllowScreenTimeoutWhileLockedUserConfig
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -87,7 +87,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -98,7 +98,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -109,7 +109,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -120,7 +120,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -131,7 +131,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -142,7 +142,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -153,7 +153,7 @@ EnforceLockScreenProvider
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -180,7 +180,7 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "Devic
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -191,7 +191,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -202,7 +202,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -213,7 +213,7 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -224,12 +224,12 @@ Tipo de acesso: leitura/gravação
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -251,7 +251,7 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -262,7 +262,7 @@ ScreenTimeoutWhileLocked
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> </dl>
@@ -273,10 +273,10 @@ Tipo de acesso: leitura/gravação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\DMMap de \\ MDM \\ CIMv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\DMMap de \\ MDM cimv2 \\ raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

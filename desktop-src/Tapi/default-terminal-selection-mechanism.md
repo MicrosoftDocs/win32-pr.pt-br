@@ -4,12 +4,12 @@ ms.assetid: fbdc7359-b44e-4605-baea-eef5155340c7
 title: Mecanismo de seleção de terminal padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5512797434fac028e91bf64a88bb9a22b8968c87
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: eb295c9ea54b0f8572b3ab87f3c8eb9b33ee10773191e3904070c2618b593175
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118867409"
 ---
 # <a name="default-terminal-selection-mechanism"></a>Mecanismo de seleção de terminal padrão
 
