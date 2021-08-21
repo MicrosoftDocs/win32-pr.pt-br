@@ -1,7 +1,7 @@
 ---
-description: Representa as configurações para o serviço de métrica. As propriedades desta classe não podem ser modificadas diretamente. O cliente deve chamar o método ModifyServiceSettings para modificar qualquer uma dessas propriedades.
+description: Representa as configurações do serviço de métrica. As propriedades dessa classe não podem ser modificadas diretamente. O cliente deve chamar o método ModifyServiceSettings para modificar qualquer uma dessas propriedades.
 ms.assetid: 578ddda7-4c8e-498e-8612-29c392390b73
-title: Classe Msvm_MetricServiceSettingData
+title: Msvm_MetricServiceSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -18,18 +18,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 4a1211b19692761dd8b92de69cf42e4ad55246f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ff0c8b9e4212624f4643efb7f7ef67ea4bc72f9488caa1b43d6260c9949011ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105761711"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521316"
 ---
-# <a name="msvm_metricservicesettingdata-class"></a>\_Classe Msvm MetricServiceSettingData
+# <a name="msvm_metricservicesettingdata-class"></a>Classe Msvm \_ MetricServiceSettingData
 
-Representa as configurações para o serviço de métrica. As propriedades desta classe não podem ser modificadas diretamente. O cliente deve chamar o método [**ModifyServiceSettings**](modifyservicesettings-msvm-metricservice.md) para modificar qualquer uma dessas propriedades.
+Representa as configurações do serviço de métrica. As propriedades dessa classe não podem ser modificadas diretamente. O cliente deve chamar o [**método ModifyServiceSettings**](modifyservicesettings-msvm-metricservice.md) para modificar qualquer uma dessas propriedades.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,13 +47,13 @@ class Msvm_MetricServiceSettingData : CIM_SettingData
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ MetricServiceSettingData** tem estes tipos de membros:
+A **classe Msvm \_ MetricServiceSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ MetricServiceSettingData** tem essas propriedades.
+A **classe Msvm \_ MetricServiceSettingData** tem essas propriedades.
 
 <dl> <dt>
 
@@ -66,7 +66,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações do serviço de métrica do Hyper-V".
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Serviço de Métrica do Hyper-V Configurações".
 
 </dd> <dt>
 
@@ -79,7 +79,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "define as configurações do serviço de métrica do Hyper-V".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Define o Serviço de Métrica do Hyper-V Configurações".
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações do serviço de métrica do Hyper-V".
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Serviço de Métrica do Hyper-V Configurações".
 
 </dd> <dt>
 
@@ -105,23 +105,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada do [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85))
 
 </dd> <dt>
 
 **MetricsFlushInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Define o intervalo no qual as métricas devem ser liberadas para o disco.
+Define o intervalo no qual as métricas devem ser liberados para o disco.
 
 </dd> </dl>
 
@@ -131,10 +131,10 @@ Define o intervalo no qual as métricas devem ser liberadas para o disco.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -143,7 +143,7 @@ Define o intervalo no qual as métricas devem ser liberadas para o disco.
 
 <dl> <dt>
 
-[**CIM \_ SettingData**](cim-settingdata.md)
+[**Configuração \_ cimData**](cim-settingdata.md)
 </dt> <dt>
 
 [**ModifyServiceSettings**](modifyservicesettings-msvm-metricservice.md)

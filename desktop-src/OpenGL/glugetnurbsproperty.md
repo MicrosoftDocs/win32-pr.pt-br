@@ -1,9 +1,9 @@
 ---
-title: função gluGetNurbsProperty (Glu. h)
-description: A função gluGetNurbsProperty Obtém uma propriedade B-spline racional não uniforme (NURBS).
+title: Função gluGetNheisProperty (Glu.h)
+description: A função gluGetNheisProperty obtém uma propriedade NGETS (Rational B-Spline) não uniforme.
 ms.assetid: 7dbc75a0-d04e-4794-b3dd-a602addf9dfa
 keywords:
-- função gluGetNurbsProperty OpenGL
+- Função gluGetNagisProperty OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 583da688e3495ebc2eb9d6f71972658c6426469c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a68e91fbdaafc2a1857a95e059125bf62347777edfbcc764868ceea0a8fce578
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085436"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119519586"
 ---
-# <a name="glugetnurbsproperty-function"></a>função gluGetNurbsProperty
+# <a name="glugetnurbsproperty-function"></a>Função gluGetNagisProperty
 
-A função **gluGetNurbsProperty** Obtém uma propriedade B-spline racional não uniforme ([NURBS](using-nurbs-curves-and-surfaces.md)).
+A **função gluGetNheisProperty** obtém uma propriedade [NGETS](using-nurbs-curves-and-surfaces.md)(Rational B-Spline) não uniforme.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,14 +45,14 @@ void WINAPI gluGetNurbsProperty(
 *nobj* 
 </dt> <dd>
 
-O objeto NURBS (criado com [**gluNewNurbsRenderer**](glunewnurbsrenderer.md)).
+O objeto N LTDA (criado com [**gluNewNheisRenderer**](glunewnurbsrenderer.md)).
 
 </dd> <dt>
 
 *property* 
 </dt> <dd>
 
-A propriedade cujo valor deve ser recuperado. Os seguintes valores são válidos: tolerância de amostragem de GLU \_ \_ , \_ modo de exibição Glu \_ , glu \_ de remoção, matriz de \_ carga automática Glu \_ \_ , \_ tolerância paramétrica Glu \_ , \_ \_ método de amostragem glu, \_ etapa Glu U \_ e \_ etapa Glu V \_ .
+A propriedade cujo valor deve ser recuperado. Os seguintes valores são válidos: GLU \_ SAMPLING \_ TOLERANCE, \_ GLU DISPLAY \_ MODE, GLU \_ SAMPLINGING, GLU \_ AUTO LOAD \_ \_ MATRIX, GLU \_ PARAMETRIC \_ TOLERANCE, GLU SAMPLING METHOD, GLU U \_ STEP \_ \_ \_ \_ \_ e GLU V STEP.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Use **gluGetNurbsProperty** para recuperar as propriedades armazenadas em um objeto NURBS. Essas propriedades afetam a maneira como as curvas NURBS e as superfícies são renderizadas. Para obter informações sobre as propriedades NURBS, consulte [**gluNurbsProperty**](glunurbsproperty.md).
+Use **gluGetNagisProperty** para recuperar propriedades armazenadas em um objeto NGETS. Essas propriedades afetam a maneira como as curvas e superfícies N LTDAS são renderizadas. Para obter informações sobre as propriedades NALTERS, consulte [**gluN gluPerty**](glunurbsproperty.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,8 +79,8 @@ Use **gluGetNurbsProperty** para recuperar as propriedades armazenadas em um obj
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                 |
-| Cabeçalho<br/>                   | <dl> <dt>GLU. h</dt> </dl>     |
-| Biblioteca<br/>                  | <dl> <dt>Glu32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Glu.h</dt> </dl>     |
+| Biblioteca<br/>                  | <dl> <dt>Glu32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Glu32.dll</dt> </dl> |
 
 
@@ -89,10 +89,10 @@ Use **gluGetNurbsProperty** para recuperar as propriedades armazenadas em um obj
 
 <dl> <dt>
 
-[**gluNewNurbsRenderer**](glunewnurbsrenderer.md)
+[**gluNewNagisRenderer**](glunewnurbsrenderer.md)
 </dt> <dt>
 
-[**gluNurbsProperty**](glunurbsproperty.md)
+[**gluNagisProperty**](glunurbsproperty.md)
 </dt> </dl>
 
  

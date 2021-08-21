@@ -1,7 +1,7 @@
 ---
-description: Função D3DXSHEvalDirectionalLight (D3dx9math. h) – avalia uma luz direcional e retorna dados de Spectral esférica harmônica (SH).
+description: Função D3DXSHEvalDirectionalLight (D3dx9math.h) – avalia uma luz direcional e retorna dados sh (spherical spherical) espectral.
 ms.assetid: 6e2e9b02-13bb-4cef-ae9d-343fbf64e5d7
-title: Função D3DXSHEvalDirectionalLight (D3dx9math. h)
+title: Função D3DXSHEvalDirectionalLight (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 488682eca230c8da6cc5048aded4a7a1e7f71bfd
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 4a726348c8c6049f0d3867af06aadfecbaaadc8fbf87e5bb30ae2abb8e996acf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495096"
 ---
-# <a name="d3dxshevaldirectionallight-function-d3dx9mathh"></a>Função D3DXSHEvalDirectionalLight (D3dx9math. h)
+# <a name="d3dxshevaldirectionallight-function-d3dx9mathh"></a>Função D3DXSHEvalDirectionalLight (D3dx9math.h)
 
-Avalia uma [luz direcional](light-types.md) e retorna dados Spectral esféricos (SH).
+Avalia uma [luz direcional e](light-types.md) retorna dados espéricos especulacionais (SH).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,75 +47,75 @@ HRESULT D3DXSHEvalDirectionalLight(
 
 <dl> <dt>
 
-*Ordem* \[ no\]
+*Ordem* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **uint**](../winprog/windows-data-types.md)**
+Tipo: **[ **UINT**](../winprog/windows-data-types.md)**
 
-Ordem da avaliação SH. Deve estar no intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusive. A avaliação gera coeficientes do Order ². O grau da avaliação é a ordem 1.
+Ordem da avaliação de SH. Deve estar no intervalo de [D3DXSH \_ MINORDER](other-d3dx-constants.md) a D3DXSH \_ MAXORDER, inclusive. A avaliação gera coeficientes orderâmicos. O grau da avaliação é Order - 1.
 
 </dd> <dt>
 
-*pDir* \[ no\]
+*pDir* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para o vetor de direção do eixo hemisfério (x, y, z) no qual avaliar as funções de base SH. Consulte Observações.
+Ponteiro para o vetor (x, y, z) de direção do eixo do sistema no qual as funções de base sh são avaliadas. Consulte Observações.
 
 </dd> <dt>
 
-*RIntensity* \[ no\]
+*RIntensity* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 A intensidade vermelha da luz.
 
 </dd> <dt>
 
-*GIntensity* \[ no\]
+*GIntensity* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 A intensidade verde da luz.
 
 </dd> <dt>
 
-*BIntensity* \[ no\]
+*BIntensity* \[ Em\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)**
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
 
 A intensidade azul da luz.
 
 </dd> <dt>
 
-*pROut* \[ fora\]
+*pROut* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro para o vetor SH de saída para o componente vermelho.
+Ponteiro para o vetor sh de saída para o componente vermelho.
 
 </dd> <dt>
 
-*pGOut* \[ fora\]
+*pGOut* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro opcional para o vetor de saída SH para o componente verde.
+Ponteiro opcional para o vetor sh de saída para o componente verde.
 
 </dd> <dt>
 
-*pBOut* \[ fora\]
+*pBOut* \[ out\]
 </dt> <dd>
 
-Tipo: **[ **float**](../winprog/windows-data-types.md)\***
+Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)\***
 
-Ponteiro opcional para o vetor de saída SH para o componente azul.
+Ponteiro opcional para o vetor SH de saída para o componente azul.
 
 </dd> </dl>
 
@@ -123,19 +123,19 @@ Ponteiro opcional para o vetor de saída SH para o componente azul.
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser: D3DERR \_ INVALIDCALL.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser: D3DERR \_ INVALIDCALL.
 
 ## <a name="remarks"></a>Comentários
 
-O vetor de saída é calculado de forma que, se a taxa de intensidade R/G/B for igual a 1, o radiante de saída resultante de um ponto diretamente sob a luz em um objeto difuso com um albedo de 1 seria 1,0. Isso computará três exemplos de Spectral; *pROut* será retornado, enquanto *pGOut* e *pBOut* podem ser retornados.
+O vetor de saída é calculado para que, se a taxa de intensidade R/G/B for igual a 1, o radiamento de saída resultante de um ponto diretamente sob a luz em um objeto difuso com um albedo de 1 seria 1,0. Isso calculará três exemplos espectrais; *pROut* será retornado, enquanto *pGOut* e *pBOut* podem ser retornados.
 
-Na esfera com raio de unidade, conforme mostrado na ilustração a seguir, a direção pode ser especificada simplesmente com teta, o ângulo sobre o eixo z na [direção da mão direita](coordinate-systems.md)e Phi, o ângulo de z.
+Na esfera com raio de unidade, conforme mostrado na ilustração a seguir, a direção pode [](coordinate-systems.md)ser especificada simplesmente com theta, o ângulo sobre o eixo z na direção à direita e, em seguida, o ângulo de z.
 
-![ilustração de um Sphere com raio de unidade](images/spherical-coordinates.png)
+![ilustração de uma esfera com raio de unidade](images/spherical-coordinates.png)
 
-As equações a seguir mostram a relação entre as coordenadas cartesianas (x, y, z) e esférico (teta, Phi) na esfera da unidade. O ângulo teta varia sobre o intervalo de 0 a 2 PI, enquanto Phi varia de 0 a PI.
+As equações a seguir mostram a relação entre as coordenadas cartesianas (x, y, z) e esféricas (theta, yo) na esfera de unidade. O ângulo de theta varia de 0 a 2 pi, enquanto que o valor varia de 0 a pi.
 
-![equações da relação entre coordenadas cartesianas e esférica](images/spherical-coordinates-equations.png)
+![equações da relação entre coordenadas cartesianas e esféricas](images/spherical-coordinates-equations.png)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -143,19 +143,19 @@ As equações a seguir mostram a relação entre as coordenadas cartesianas (x, 
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
 [Funções matemáticas](dx9-graphics-reference-d3dx-functions-math.md)
 </dt> <dt>
 
-[Transferência radiante de computação (Direct3D 9)](precomputed-radiance-transfer.md)
+[Transferência de Radiance pré-comutada (Direct3D 9)](precomputed-radiance-transfer.md)
 </dt> </dl>
 
  

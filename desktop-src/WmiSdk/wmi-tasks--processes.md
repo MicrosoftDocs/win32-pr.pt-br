@@ -1,5 +1,5 @@
 ---
-description: As tarefas do WMI para processos obtêm informações como a conta sob a qual um processo está sendo executado. Você pode executar ações como criar processos. Para obter outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
+description: As tarefas WMI para processos obtém informações como a conta na qual um processo está em execução. Você pode executar ações como a criação de processos. Para outros exemplos, consulte o TechNet ScriptCenter em https://www.microsoft.com/technet .
 ms.assetid: 2ae7c302-ab8b-4150-8ece-ffb66374b3f7
 ms.tgt_platform: multiple
 title: 'Tarefas WMI: processos '
@@ -10,35 +10,35 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a720046d8f5cd25c55f2d5f367d2c23d5e4fc882
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: 0847179cc67635ab872f71d79ed77c337ec6044291db13f5d1ca48101fc5dbad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "104461363"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049884"
 ---
 # <a name="wmi-tasks-processes"></a>Tarefas WMI: processos 
 
-As tarefas do WMI para processos obtêm informações como a conta sob a qual um processo está sendo executado. Você pode executar ações como criar processos. Para obter outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
+As tarefas WMI para processos obtém informações como a conta na qual um processo está em execução. Você pode executar ações como a criação de processos. Para outros exemplos, consulte o TechNet ScriptCenter em [https://www.microsoft.com/technet](https://technet.microsoft.com/default.aspx) .
 
-Os exemplos de script mostrados neste tópico obtêm dados somente do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md).
+Os exemplos de script mostrados neste tópico só obtém dados do computador local. Para obter mais informações sobre como usar o script para obter dados de computadores remotos, consulte Conectando-se [ao WMI em um computador remoto.](connecting-to-wmi-on-a-remote-computer.md)
 
 
 O procedimento a seguir descreve como executar um script.
 
 **Para executar um script**
 
-1.  Copie o código e salve-o em um arquivo com uma extensão. vbs, como *filename.vbs*. Verifique se o editor de texto não adiciona uma extensão. txt ao arquivo.
-2.  Abra uma janela de prompt de comando e navegue até o diretório em que você salvou o arquivo.
+1.  Copie o código e salve-o em um arquivo com uma extensão .vbs, *como* filename.vbs. Verifique se o editor de texto não adiciona uma .txt de texto ao arquivo.
+2.  Abra uma janela do prompt de comando e navegue até o diretório em que você salvou o arquivo.
 3.  Digite **cscript filename.vbs** no prompt de comando.
-4.  Se você não puder acessar um log de eventos, verifique se você está executando a partir de um prompt de comandos com privilégios elevados. Alguns logs de eventos, como o log de eventos de segurança, podem ser protegidos por UAC (controles de acesso do usuário).
+4.  Se não for possível acessar um log de eventos, verifique se você está executando em um prompt de comando Elevado. Alguns log de eventos, como o Log de Eventos de Segurança, podem ser protegidos por UAC (Controles de Acesso do Usuário).
 
 > [!Note]  
-> Por padrão, o cscript exibe a saída de um script na janela de prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, convém redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script de *filename.vbs* para *outfile.txt*.
+> Por padrão, o cscript exibe a saída de um script na janela do prompt de comando. Como os scripts WMI podem produzir grandes quantidades de saída, talvez você queira redirecionar a saída para um arquivo. Digite **cscript filename.vbs > outfile.txt** no prompt de comando para redirecionar a saída do script *filename.vbs* para *outfile.txt*.
 
  
 
-A tabela a seguir lista os exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
+A tabela a seguir lista exemplos de script que podem ser usados para obter vários tipos de dados do computador local.
 
 
 
@@ -56,7 +56,7 @@ A tabela a seguir lista os exemplos de script que podem ser usados para obter v�
 <tbody>
 <tr class="odd">
 <td>... executar um aplicativo em uma janela oculta?</td>
-<td>Chame o aplicativo de um script que usa as classes <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> e <a href="/windows/desktop/CIMWin32Prov/win32-processstartup"><strong>Win32_ProcessStartup</strong></a> .<br/> <span data-codelanguage="VisualBasic"></span>
+<td>Chame o aplicativo de um script que usa as <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>classes Win32_Process</strong></a> e <a href="/windows/desktop/CIMWin32Prov/win32-processstartup"><strong>Win32_ProcessStartup</strong></a> aplicativo.<br/> <span data-codelanguage="VisualBasic"></span>
 <table>
 <colgroup>
 <col style="width: 100%" />
@@ -101,7 +101,7 @@ $startup.Properties[&#39;ShowWindow&#39;].value=$False
 </tr>
 <tr class="even">
 <td>... determinar quais scripts estão em execução no computador local?</td>
-<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> e retorne todos os processos com o nome Cscript.exe ou Wscript.exe. Para determinar os scripts individuais em execução nesses processos, verifique o valor da propriedade <strong>CommandLine</strong> .</p>
+<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>classe Win32_Process</strong></a> e retorne todos os processos com o nome Cscript.exe ou Wscript.exe. Para determinar os scripts individuais em execução nesses processos, verifique o valor da <strong>propriedade CommandLine.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -150,8 +150,8 @@ Get-WmiObject -Class &quot;Win32_Process&quot; -ComputerName &quot;.&quot; | `
 </div></td>
 </tr>
 <tr class="odd">
-<td>... descobrir o nome da conta sob a qual um processo está sendo executado?</td>
-<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> e o método <a href="/windows/desktop/CIMWin32Prov/getowner-method-in-class-win32-process"><strong>GetOwner</strong></a> .</p>
+<td>... descobrir o nome da conta sob a qual um processo está em execução?</td>
+<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> e o <a href="/windows/desktop/CIMWin32Prov/getowner-method-in-class-win32-process"><strong>método GetOwner.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -196,7 +196,7 @@ Next</code></pre></td>
 </tr>
 <tr class="even">
 <td>... alterar a prioridade de um processo em execução?</td>
-<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> e o método <a href="/windows/desktop/CIMWin32Prov/setpriority-method-in-class-win32-process"><strong>setanteriority</strong></a> .</p>
+<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> e o <a href="/windows/desktop/CIMWin32Prov/setpriority-method-in-class-win32-process"><strong>método SetPriority.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -244,7 +244,7 @@ foreach ($objProcess in $colProcesses) { $objProcess.SetPriority($ABOVE_NORMAL) 
 </tr>
 <tr class="odd">
 <td>... encerrar um processo usando um script?</td>
-<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> e o método <a href="/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process"><strong>Terminate</strong></a> .</p>
+<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> e o <a href="/windows/desktop/CIMWin32Prov/terminate-method-in-class-win32-process"><strong>método Terminate.</strong></a></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -289,8 +289,8 @@ foreach ($objProcess in $colProcesses) { $objProcess.Terminate() }</code></pre><
 </div></td>
 </tr>
 <tr class="even">
-<td>... determinar quanto tempo de processador e memória cada processo está usando?</td>
-<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> e as propriedades como <strong>KernelModeTime</strong>, <strong>WorkingSetSize</strong>, <strong>PageFileUsage</strong>e <strong>PageFaults</strong>.</p>
+<td>... determinar quanto tempo e memória do processador cada processo está usando?</td>
+<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> e propriedades como <strong>KernelModeTime,</strong> <strong>WorkingSetSize,</strong> <strong>PageFileUsage</strong>e <strong>PageFaults.</strong></p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -341,8 +341,8 @@ Get-WmiObject -Class &quot;Win32s_Process&quot; -ComputerName $strComputer | `
 </div></td>
 </tr>
 <tr class="odd">
-<td>... informa quais aplicativos estão em execução em um computador remoto?</td>
-<td><p>Use a classe <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> .</p>
+<td>... dizer quais aplicativos estão em execução em um computador remoto?</td>
+<td><p>Use a <a href="/windows/desktop/CIMWin32Prov/win32-process"><strong>Win32_Process</strong></a> de dados.</p>
 <div class="code">
 <span data-codelanguage="VisualBasic"></span>
 <table>
@@ -402,13 +402,13 @@ get-wmiObject -class Win32_Process -Namespace &quot;root\cimv2&quot; -ComputerNa
 
 <dl> <dt>
 
-[Tarefas do WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
+[Tarefas WMI para scripts e aplicativos](wmi-tasks-for-scripts-and-applications.md)
 </dt> <dt>
 
-[Exemplos de aplicativos WMI C++](wmi-c---application-examples.md)
+[Exemplos de aplicativo WMI C++](wmi-c---application-examples.md)
 </dt> <dt>
 
-[ScriptCenter do TechNet](https://www.microsoft.com/technet/scriptcenter)
+[TechNet ScriptCenter](https://www.microsoft.com/technet/scriptcenter)
 </dt> </dl>
 
  

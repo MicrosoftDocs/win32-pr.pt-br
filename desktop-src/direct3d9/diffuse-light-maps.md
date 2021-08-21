@@ -1,21 +1,21 @@
 ---
-description: Quando iluminado por uma fonte de luz, as superfícies foscas exibem a reflexão de luz difusa.
+description: Quando exibidas por uma fonte de luz, as superfícies fosco exibem reflexão difusa de luz.
 ms.assetid: a6ed351a-7889-4993-96bf-b03352a815da
-title: Mapas de luz difusa (Direct3D 9)
+title: Luz difusa Mapas (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ab6a85fb93bc1ebcc15735431c1d54be4482a1f
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 758fc2b5054a30bf8df703941b3cedf0810c378a5fb459d8c5783bb295ff9abe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044444"
 ---
-# <a name="diffuse-light-maps-direct3d-9"></a>Mapas de luz difusa (Direct3D 9)
+# <a name="diffuse-light-maps-direct3d-9"></a>Luz difusa Mapas (Direct3D 9)
 
-Quando iluminado por uma fonte de luz, as superfícies foscas exibem a reflexão de luz difusa. O brilho da luz difusa depende da distância da fonte de luz e do ângulo entre a superfície normal e o vetor de direção da fonte de luz. Os efeitos de iluminação difusa simulados com cálculos de iluminação produzem apenas efeitos gerais.
+Quando exibidas por uma fonte de luz, as superfícies fosco exibem reflexão difusa de luz. O brilho da luz difusa depende da distância da fonte de luz e do ângulo entre a superfície normal e o vetor de direção da fonte de luz. Os efeitos de iluminação difusa simulados com cálculos de iluminação produzem apenas efeitos gerais.
 
-Seu aplicativo pode simular uma iluminação difusa mais complexa com mapas de luz de textura. Faça isso adicionando o mapa de luz difusa à textura base, conforme mostrado no exemplo de código C++ a seguir.
+Seu aplicativo pode simular uma iluminação difusa mais complexa com mapas de luz de textura. Faça isso adicionando o mapa de luz difuso à textura base, conforme mostrado no exemplo de código C++ a seguir.
 
 
 ```
@@ -49,7 +49,7 @@ d3dDevice->SetTextureStageState(1, D3DTSS_COLORARG2, D3DTA_CURRENT );
 
 <dl> <dt>
 
-[Mapeamento claro com texturas](light-mapping-with-textures.md)
+[Mapeamento de luz com texturas](light-mapping-with-textures.md)
 </dt> </dl>
 
  

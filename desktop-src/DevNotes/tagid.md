@@ -4,12 +4,12 @@ ms.assetid: 2ff58e01-cc47-4612-a3bc-a87ccb343bd2
 title: TAGID
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1e7d8b8a25633d3505936d105b0eef7ed38746ce
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: cd4c65183170c7304bf05a670b1eadb3a5953d6f33b1f6415210f12db8898760
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075772"
 ---
 # <a name="tagid"></a>TAGID
 
@@ -48,8 +48,8 @@ Indica uma marca de lista raiz que pode ser usada como um pai para obter um **Ta
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

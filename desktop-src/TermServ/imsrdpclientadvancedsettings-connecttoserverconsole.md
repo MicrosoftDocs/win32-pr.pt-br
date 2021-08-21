@@ -1,26 +1,26 @@
 ---
-title: Propriedade IMsRdpClientAdvancedSettings ConnectToServerConsole
-description: Não há suporte a esta propriedade. Chamadas para ConnectToServerConsole sempre retornam S \_ false.
+title: Propriedade ConnectToServerConsole de IMsRdpClientAdvancedSettings
+description: Não há suporte a esta propriedade. Chamadas para ConnectToServerConsole sempre retornam S \_ FALSE.
 ms.assetid: 58f79085-4364-408f-8bf1-97a82ad68f4b
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade ConnectToServerConsole
-- Propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade ConnectToServerConsole
-- Propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade ConnectToServerConsole
-- Propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade ConnectToServerConsole
-- Propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade ConnectToServerConsole
-- Propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade ConnectToServerConsole
-- Propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade ConnectToServerConsole
-- Propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade ConnectToServerConsole
-- Propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade ConnectToServerConsole
+- Propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota
+- A propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
+- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade ConnectToServerConsole
+- A propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade ConnectToServerConsole
+- A propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
+- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade ConnectToServerConsole
+- A propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade ConnectToServerConsole
+- A propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade ConnectToServerConsole
+- A propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade ConnectToServerConsole
+- A propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade ConnectToServerConsole
+- A propriedade ConnectToServerConsole Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade ConnectToServerConsole
 topic_type:
 - apiref
 api_name:
@@ -54,20 +54,20 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 18e3385b25a9dbe3e77085ae011b85e9be21b224
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 83c6b935c34dda3f8a676d025bc1995a30e1bbb3f11dd4db3c055f6e28437ba3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918371"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119515276"
 ---
-# <a name="imsrdpclientadvancedsettingsconnecttoserverconsole-property"></a>Propriedade IMsRdpClientAdvancedSettings:: ConnectToServerConsole
+# <a name="imsrdpclientadvancedsettingsconnecttoserverconsole-property"></a>Propriedade IMsRdpClientAdvancedSettings::ConnectToServerConsole
 
-Não há suporte a esta propriedade. Chamadas para **ConnectToServerConsole** sempre retornam **S \_ false**.
+Não há suporte a esta propriedade. Chamadas para **ConnectToServerConsole sempre** **retornam S \_ FALSE.**
 
-Use a propriedade [**ConnectToAdministerServer**](imsrdpclientadvancedsettings6-connecttoadministerserver.md) para se conectar à sessão que é usada para fins administrativos.
+Use a [**propriedade ConnectToAdministerServer**](imsrdpclientadvancedsettings6-connecttoadministerserver.md) para se conectar à sessão usada para fins administrativos.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -86,7 +86,7 @@ HRESULT get_ConnectToServerConsole(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Defina esse parâmetro como **Variant \_ false**. **Variante \_ TRUE** não tem suporte.
+De definir esse parâmetro como **VARIANT \_ FALSE.** **VARIANT \_ NÃO** há suporte para TRUE.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -94,7 +94,7 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -106,7 +106,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings é definido como 3c65b4ab-12B3-465b-acd4-b8dad3bff9e2<br/> |
+| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings é definido como 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
@@ -135,7 +135,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> </dl>
 
  

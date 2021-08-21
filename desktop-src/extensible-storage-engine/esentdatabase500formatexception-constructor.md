@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 0c893c511ec22409cd2af15de2d5f4693353354d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 20245e9f7e4461e3c377a100f9898a76a1269f4ed2ea243785641a3a8ca628ad
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813725"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119785346"
 ---
 # <a name="esentdatabase500formatexception-constructor"></a>Construtor EsentDatabase500FormatException
 
 Inicializa uma nova instância da classe EsentDatabase500FormatException.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -58,6 +58,6 @@ public EsentDatabase500FormatException()
 
 [Classe EsentDatabase500FormatException](./esentdatabase500formatexception-class.md)
 
-[Membros do EsentDatabase500FormatException](./esentdatabase500formatexception-members.md)
+[Membros EsentDatabase500FormatException](./esentdatabase500formatexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

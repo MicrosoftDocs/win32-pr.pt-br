@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bcbc246aa1a0f7c794b9dc0a9d2a725273a918e3
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b864b34d89455610700aff685bb879c499da7c4320bbcd4efb3b83725e34ad7a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103919543"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081300"
 ---
 # <a name="usn-dsa-last-obj-removed-attribute"></a>USN-DSA-Last-obj-removeu o atributo
 
@@ -36,7 +36,7 @@ Contém o USN (número de sequência de atualização) do último objeto do sist
 | Frequência de atualização  | Sempre que um objeto de diretório é alterado. |
 | Attribute-Id      | 1.2.840.113556.1.2.267               |
 | System-ID-GUID    | bf967a71-0de6-11d0-a285-00aa003049e2 |
-| Sintaxe            | [**Intervalo**](s-interval.md)       |
+| Syntax            | [**Intervalo**](s-interval.md)       |
 
 
 
@@ -58,8 +58,8 @@ Contém o USN (número de sequência de atualização) do último objeto do sist
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -79,8 +79,8 @@ Contém o USN (número de sequência de atualização) do último objeto do sist
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -100,8 +100,8 @@ Contém o USN (número de sequência de atualização) do último objeto do sist
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -121,11 +121,11 @@ Contém o USN (número de sequência de atualização) do último objeto do sist
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -142,11 +142,11 @@ Contém o USN (número de sequência de atualização) do último objeto do sist
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -163,11 +163,11 @@ Contém o USN (número de sequência de atualização) do último objeto do sist
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -184,11 +184,11 @@ Contém o USN (número de sequência de atualização) do último objeto do sist
 |------------------------|---------------------------------|
 | ID do link                | \-                              |
 | MAPI-Id                | 0x8155                          |
-| System-Only            | True                            |
-| É de valor único       | True                            |
+| System-Only            | Verdadeiro                            |
+| Tem valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -201,7 +201,7 @@ Contém o USN (número de sequência de atualização) do último objeto do sist
 
 <dl> <dt>
 
-[**USN-Last-obj-REM**](a-usnlastobjrem.md)
+[**USN-Last-Obj-Rem**](a-usnlastobjrem.md)
 </dt> </dl>
 
  

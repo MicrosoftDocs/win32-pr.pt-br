@@ -4,12 +4,12 @@ description: Declare a contagem de pontos de controle de entrada do sombreador e
 ms.assetid: 2E524BF0-3DD0-446A-8437-0CF17B348D83
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f0a674a05bfd66b4c1d94da73958dc68f00fe21
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: 68c5414d5c660cf0bbce2b6219769cd36d4da9bbf3e59d9d130bfce0e0dceea3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104365295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119789876"
 ---
 # <a name="dcl_input_control_point_count-sm5---asm"></a>\_ \_ \_ \_ contagem de pontos de controle de entrada de DCL (SM5-ASM)
 
@@ -42,7 +42,7 @@ Essa instrução se aplica aos seguintes estágios de sombreador:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        | X    |        |          |       |         |
 

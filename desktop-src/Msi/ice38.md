@@ -1,37 +1,37 @@
 ---
-description: ICE38 valida que cada componente que está sendo instalado no perfil do usuário atual também especifica uma chave do registro na \_ raiz do usuário atual da hKey \_ na coluna KeyPath da tabela de componentes.
+description: O ICE38 valida que cada componente que está sendo instalado no perfil do usuário atual também especifica uma chave do Registro na raiz HKEY CURRENT USER na coluna KeyPath da tabela \_ \_ Componente.
 ms.assetid: f1548b04-78c2-461a-a729-9a8c4856d0d8
 title: ICE38
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d001d244160f939a73e697e677bf43a1f5f825f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2ae3f90b7f6c0624da266b23dee3a50489f34604d6c99783b337eeca77bb32ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104011295"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528456"
 ---
 # <a name="ice38"></a>ICE38
 
-ICE38 valida que cada componente que está sendo instalado no perfil do usuário atual também especifica uma chave do registro na raiz do **\_ \_ usuário atual da hKey** na coluna KeyPath da [tabela de componentes](component-table.md).
+O ICE38 valida que todos os componentes que estão sendo instalados no perfil do usuário atual também especificam uma chave do Registro na raiz **HKEY \_ CURRENT \_ USER** na coluna KeyPath da tabela [Componente](component-table.md).
 
 ## <a name="result"></a>Resultado
 
-ICE38 posta um erro se um componente instalado no perfil do usuário não especificar uma chave do Registro HKCU.
+ICE38 postará um erro se um componente instalado no perfil do usuário não especificar uma chave do Registro HKCU.
 
 ## <a name="example"></a>Exemplo
 
-ICE38 relata os erros a seguir para o exemplo mostrado.
+ICE38 relata os seguintes erros para o exemplo mostrado.
 
 
 
-| Erro de ICE38                                                                                                                         | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Erro ICE38                                                                                                                         | Descrição                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| O componente Component1 é instalado no perfil do usuário. Ele deve usar uma chave do registro em HKCU como seu caminho Key, não um arquivo.                    | O valor da coluna Attributes de Component1 é 0, o que significa que o componente deve usar um arquivo como seu caminho KeyPath. Isso causa dificuldades quando vários usuários instalam o componente no mesmo computador. Para corrigir esse erro em Component1, defina o bit RegistryKeyPath na coluna Attributes da [tabela Component](component-table.md) e altere a entrada na coluna KeyPath para um valor listado na coluna Registry da [tabela Registry](registry-table.md).<br/>                                                                                |
-| O componente Component2 é instalado no perfil do usuário. Ele deve usar uma chave do registro em HKCU como seu caminho de chave. O caminho keyé nulo no momento. | Component2 tem o conjunto de bits RegistryKeyPath na coluna atributos da [tabela de componentes](component-table.md). O campo KeyPath deve, portanto, conter uma chave para a coluna Registry da [tabela do registro](registry-table.md) , mas a coluna KeyPath é NULL. Para corrigir esse erro, altere o valor do caminho-chave para uma entrada válida na tabela do registro.<br/>                                                                                                                                                                                                     |
-| O componente Component3 é instalado no perfil do usuário. É a chave do registro KeyPath deve estar sob HKCU.                                      | Component3 tem o conjunto de bits RegistryKeyPath na coluna atributos da [tabela de componentes](component-table.md) , mas a raiz da entrada do Registro especificada na coluna raiz da tabela do Registro especifica **HKEY \_ \_ Machine local** em vez de **HKEY \_ Current \_ User**. Para corrigir esse erro, use uma entrada de registro válida em **HKEY \_ local \_ Machine** como o caminho de chave para esse componente ou altere o valor na coluna raiz da [tabela de registro](registry-table.md) para-1 ou 1.<br/>                                                                  |
-| A entrada do registro KeyPath para o componente Component4 não existe.                                                                 | Component4 tem o conjunto de bits RegistryKeyPath na coluna atributos da [tabela de componentes](component-table.md) , mas a entrada na coluna KeyPath não existe na tabela de [registro](registry-table.md). Para corrigir esse erro, adicione uma entrada para Reg4 à tabela de registro que seja em **HKEY \_ Current \_ User**.<br/>                                                                                                                                                                                                                                      |
-| A entrada de registro Reg5 é definida como o caminho de chave para o componente Component5, mas essa entrada de registro não pertence a Component5.      | A entrada do registro referenciada na coluna KeyPath do componente foi encontrada e está sob a árvore HKCU, mas a coluna de componente da entrada do registro \_ não se refere ao mesmo componente que a listou como o caminho-chave. Isso significa que a entrada do Registro usada como o caminho de chave do componente só seria criada quando algum outro componente foi instalado. Para corrigir esse erro, altere o valor do caminho-chave para referir-se a uma entrada do registro que pertence ao componente ou altere a entrada do registro para pertencer ao componente usando-o como um caminho-chave.<br/> |
+| Component Component1 é instalado no perfil do usuário. Ele deve usar uma chave do Registro em HKCU como seu KeyPath, não um arquivo.                    | O valor da coluna de atributos de Component1 é 0, o que significa que o componente deve usar um arquivo como seu KeyPath. Isso causa dificuldades quando vários usuários instalam o componente no mesmo computador. Para corrigir esse erro no Component1, de definido o bit [](component-table.md) RegistryKeyPath na coluna Atributos da tabela Componente e altere a entrada na coluna KeyPath para um valor listado na coluna Registro da tabela registro [.](registry-table.md)<br/>                                                                                |
+| Component Component2 é instalado no perfil do usuário. Ele deve usar uma chave do Registro em HKCU como seu KeyPath. O KeyPath atualmente é NULL. | Component2 tem o bit RegistryKeyPath definido na coluna Atributos da [tabela Componente](component-table.md). Portanto, o campo KeyPath deve conter uma chave para a coluna Registro da Tabela do [Registro,](registry-table.md) mas a coluna KeyPath é Null. Para corrigir esse erro, altere o valor KeyPath para uma entrada válida na tabela Registro.<br/>                                                                                                                                                                                                     |
+| Component Component3 é instalado no perfil do usuário. A chave do Registro KeyPath deve se enquadrar em HKCU.                                      | Component3 tem o bit RegistryKeyPath definido [](component-table.md) na coluna Atributos da tabela Componente, mas a raiz da entrada do Registro especificada na coluna Raiz da tabela registro especifica **HKEY \_ LOCAL \_ MACHINE** em vez de **HKEY \_ CURRENT \_ USER**. Para corrigir esse erro, use uma entrada de Registro válida em **HKEY \_ LOCAL \_ MACHINE** como KeyPath para esse componente ou altere o valor na coluna Raiz da tabela Registro para -1 ou 1. [](registry-table.md)<br/>                                                                  |
+| A entrada do Registro KeyPath para o componente Component4 não existe.                                                                 | Component4 tem o bit RegistryKeyPath definido [](component-table.md) na coluna Atributos da tabela Componente, mas a entrada na coluna KeyPath não existe na Tabela [do Registro](registry-table.md). Para corrigir esse erro, adicione uma entrada para Reg4 à tabela registro que é um em **HKEY \_ CURRENT \_ USER**.<br/>                                                                                                                                                                                                                                      |
+| A Entrada do Registro Reg5 é definida como KeyPath para o componente Component5, mas essa entrada do Registro não pertence ao Component5.      | A entrada do Registro referenciada na coluna KeyPath do componente foi encontrada e está na árvore HKCU, mas a coluna Componente da entrada do Registro não se refere ao mesmo componente que o listou como \_ KeyPath. Isso significa que a entrada do Registro usada como KeyPath do componente só seria criada quando algum outro componente fosse instalado. Para corrigir esse erro, altere o valor keyPath para se referir a uma entrada do Registro que pertence ao componente ou altere a entrada do Registro para pertencer ao componente usando-o como um KeyPath.<br/> |
 
 
 
@@ -41,12 +41,12 @@ ICE38 relata os erros a seguir para o exemplo mostrado.
 
 
 
-| Diretório | Pai do diretório \_ | DefaultDir      |
+| Diretório | Pai do \_ Diretório | Defaultdir      |
 |-----------|-------------------|-----------------|
 | Dir1      |                   | StartMenuFolder |
 | Dir2      |                   | DesktopFolder   |
 | Dir3      | Dir3              | AppData         |
-| Dir4      | Dir3              | SubDir          |
+| Dir4      | Dir3              | Subdir          |
 
 
 
@@ -68,7 +68,7 @@ ICE38 relata os erros a seguir para o exemplo mostrado.
 
  
 
-[Tabela do registro](registry-table.md) (parcial)
+[Tabela do Registro](registry-table.md) (parcial)
 
 
 

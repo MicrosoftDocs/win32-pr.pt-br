@@ -4,12 +4,12 @@ ms.assetid: 60af1687-8958-4918-be21-a13780c60974
 title: Constantes de LINETERMMODE_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e689e2e4e432d6cf804e64babd462e749e7e9e2
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 411c1dd633ff1bef49e08eb127f4145f81f3d6785d07f3566431fe7b5d7e8fee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105766971"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119518806"
 ---
 # <a name="linetermmode_-constants"></a>\_Constantes LINETERMMODE
 
@@ -110,7 +110,7 @@ Essas constantes descrevem as classes de fluxo de controle e de informações qu
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

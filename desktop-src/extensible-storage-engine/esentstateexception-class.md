@@ -24,29 +24,29 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d5815c3b308874f69eab9dcc7b3803ee24f6831b
-ms.sourcegitcommit: 3bdf30edb314e0fcd17dc4ddbc70e4ec7d3596e6
+ms.openlocfilehash: 125680795e7cb1bda2a63dd871ef02bf4595970ba774fa74a72490de628f1b5a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "104172425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120064046"
 ---
 # <a name="esentstateexception-class"></a>Classe EsentStateException
 
-Classe base para exceções de estado.
+Classe base para exceções de Estado.
 
 ## <a name="inheritance-hierarchy"></a>Hierarquia de herança
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          Microsoft. ISAM. ESENT. Interop. EsentStateException  
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentStateException  
             
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Syntax
 
@@ -72,58 +72,58 @@ Qualquer membro estático público (Shared no Visual Basic) desse tipo é seguro
 
 #### <a name="reference"></a>Referência
 
-[Membros do EsentStateException](./esentstateexception-members.md)
+[Membros EsentStateException](./esentstateexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)
 
 ## <a name="derived-types"></a>Tipos derivados
 
 [System.Object](/dotnet/api/system.object)  
-  [System. Exception](/dotnet/api/system.exception)  
-    [Microsoft. ISAM. ESENT. EsentException](./esentexception-class.md)  
-      [Microsoft. ISAM. ESENT. Interop. EsentErrorException](./esenterrorexception-class.md)  
-        [Microsoft. ISAM. ESENT. Interop. EsentApiException](./esentapiexception-class.md)  
-          Microsoft. ISAM. ESENT. Interop. EsentStateException  
-            [Microsoft. ISAM. ESENT. Interop. EsentBackupInProgressException](./esentbackupinprogressexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentBackupNotAllowedYetException](./esentbackupnotallowedyetexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentBadItagSequenceException](./esentbaditagsequenceexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentBufferTooSmallException](./esentbuffertoosmallexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentCallbackFailedException](./esentcallbackfailedexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentDatabaseAlreadyUpgradedException](./esentdatabasealreadyupgradedexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentDatabaseFailedIncrementalReseedException](./esentdatabasefailedincrementalreseedexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentDatabaseIncompleteUpgradeException](./esentdatabaseincompleteupgradeexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentDatabaseLeakInSpaceException](./esentdatabaseleakinspaceexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentDirtyShutdownException](./esentdirtyshutdownexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentFileNotFoundException](./esentfilenotfoundexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentIndexInUseException](./esentindexinuseexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentIndexNotFoundException](./esentindexnotfoundexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentInvalidBufferSizeException](./esentinvalidbuffersizeexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentInvalidLogDataSequenceException](./esentinvalidlogdatasequenceexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentKeyDuplicateException](./esentkeyduplicateexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentKeyTruncatedException](./esentkeytruncatedexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentLogFileSizeMismatchDatabasesConsistentException](./esentlogfilesizemismatchdatabasesconsistentexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentLogSectorSizeMismatchDatabasesConsistentException](./esentlogsectorsizemismatchdatabasesconsistentexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentLSNotSetException](./esentlsnotsetexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentMissingFullBackupException](./esentmissingfullbackupexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentMultiValuedDuplicateAfterTruncationException](./esentmultivaluedduplicateaftertruncationexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentMultiValuedDuplicateException](./esentmultivaluedduplicateexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentNoAttachmentsFailedIncrementalReseedException](./esentnoattachmentsfailedincrementalreseedexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentNoBackupException](./esentnobackupexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentNoCurrentRecordException](./esentnocurrentrecordexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentObjectNotFoundException](./esentobjectnotfoundexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentOSSnapshotNotAllowedException](./esentossnapshotnotallowedexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentRecordDeletedException](./esentrecorddeletedexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentRecordNotFoundException](./esentrecordnotfoundexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentRecordTooBigException](./esentrecordtoobigexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentRecordTooBigForBackwardCompatibilityException](./esentrecordtoobigforbackwardcompatibilityexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentRecoveredWithoutUndoDatabasesConsistentException](./esentrecoveredwithoutundodatabasesconsistentexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentRecoveredWithoutUndoException](./esentrecoveredwithoutundoexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentRestoreInProgressException](./esentrestoreinprogressexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentSeparatedLongValueException](./esentseparatedlongvalueexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentSurrogateBackupInProgressException](./esentsurrogatebackupinprogressexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentTableDuplicateException](./esenttableduplicateexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentTableInUseException](./esenttableinuseexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentTestInjectionNotSupportedException](./esenttestinjectionnotsupportedexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentWriteConflictException](./esentwriteconflictexception-class.md)  
-            [Microsoft. ISAM. ESENT. Interop. EsentWriteConflictPrimaryIndexException](./esentwriteconflictprimaryindexexception-class.md)
+  [System.Exception](/dotnet/api/system.exception)  
+    [Microsoft.Isam.Esent.EsentException](./esentexception-class.md)  
+      [Microsoft.Isam.Esent.Interop.EsentErrorException](./esenterrorexception-class.md)  
+        [Microsoft.Isam.Esent.Interop.EsentApiException](./esentapiexception-class.md)  
+          Microsoft.Isam.Esent.Interop.EsentStateException  
+            [Microsoft.Isam.Esent.Interop.EsentBackupInProgressException](./esentbackupinprogressexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentBackupNotAllowedYetException](./esentbackupnotallowedyetexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentBadItagSequenceException](./esentbaditagsequenceexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentBufferTooSmallException](./esentbuffertoosmallexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentCallbackFailedException](./esentcallbackfailedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentDatabaseAlreadyUpgradedException](./esentdatabasealreadyupgradedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentDatabaseFailedIncrementalReseedException](./esentdatabasefailedincrementalreseedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentDatabaseIncompleteUpgradeException](./esentdatabaseincompleteupgradeexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentDatabaseLeakInSpaceException](./esentdatabaseleakinspaceexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentDirtyShutdownException](./esentdirtyshutdownexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentFileNotFoundException](./esentfilenotfoundexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentIndexInUseException](./esentindexinuseexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentIndexNotFoundException](./esentindexnotfoundexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentInvalidBufferSizeException](./esentinvalidbuffersizeexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentInvalidLogDataSequenceException](./esentinvalidlogdatasequenceexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentKeyDuplicateException](./esentkeyduplicateexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentKeyTruncatedException](./esentkeytruncatedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentLogFileSizeMismatchDatabasesConsistentException](./esentlogfilesizemismatchdatabasesconsistentexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentLogSectorSizeMismatchDatabasesConsistentException](./esentlogsectorsizemismatchdatabasesconsistentexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentLSNotSetException](./esentlsnotsetexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentMissingFullBackupException](./esentmissingfullbackupexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentMultiValuedDuplicateAfterTruncationException](./esentmultivaluedduplicateaftertruncationexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentMultiValuedDuplicateException](./esentmultivaluedduplicateexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentNoAttachmentsFailedIncrementalReseedException](./esentnoattachmentsfailedincrementalreseedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentNoBackupException](./esentnobackupexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentNoCurrentRecordException](./esentnocurrentrecordexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentObjectNotFoundException](./esentobjectnotfoundexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentOSSnapshotNotAllowedException](./esentossnapshotnotallowedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentRecordDeletedException](./esentrecorddeletedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentRecordNotFoundException](./esentrecordnotfoundexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentRecordTooBigException](./esentrecordtoobigexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentRecordTooBigForBackwardCompatibilityException](./esentrecordtoobigforbackwardcompatibilityexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentRecoveredWithErrorsException](./esentrecoveredwitherrorsexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentRecoveredWithoutUndoDatabasesConsistentException](./esentrecoveredwithoutundodatabasesconsistentexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentRecoveredWithoutUndoException](./esentrecoveredwithoutundoexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentRestoreInProgressException](./esentrestoreinprogressexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentSeparatedLongValueException](./esentseparatedlongvalueexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentSurrogateBackupInProgressException](./esentsurrogatebackupinprogressexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentTableDuplicateException](./esenttableduplicateexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentTableInUseException](./esenttableinuseexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentTestInjectionNotSupportedException](./esenttestinjectionnotsupportedexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentWriteConflictException](./esentwriteconflictexception-class.md)  
+            [Microsoft.Isam.Esent.Interop.EsentWriteConflictPrimaryIndexException](./esentwriteconflictprimaryindexexception-class.md)

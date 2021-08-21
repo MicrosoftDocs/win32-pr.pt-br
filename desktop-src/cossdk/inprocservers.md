@@ -12,40 +12,40 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 737627c99ac92a96883750bfc43dc3e2a9364d87
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b751f007082454832fe31172e35b834b66c36d13dbaf6a6687ba0036879b60c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105790326"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047454"
 ---
 # <a name="inprocservers-collection"></a>Coleção InprocServers
 
 Contém uma lista dos servidores em processo registrados no sistema. Ele contém um objeto para cada componente registrado como um servidor em processo.
 
-Essa coleção dá suporte ao método [**Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection**](comadmincatalogcollection.md) , mas não ao método [**Add**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) . Para instalar ou importar componentes em um aplicativo, use métodos no objeto [**COMAdminCatalog**](comadmincatalog.md) .
+Essa coleção dá suporte [**ao método Remove**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-remove) do objeto [**COMAdminCatalogCollection,**](comadmincatalogcollection.md) mas não ao [**método Add.**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogcollection-add) Para instalar ou importar componentes em um aplicativo, use métodos no [**objeto COMAdminCatalog.**](comadmincatalog.md)
 
 ## <a name="members"></a>Membros
 
-A coleção **InprocServers** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) , mas não tem membros adicionais.
+A **coleção InprocServers** herda da interface [**IUnknown,**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) mas não tem membros adicionais.
 
 ## <a name="related-collections"></a>Coleções relacionadas
 
 Você pode navegar desta coleção para qualquer uma das seguintes coleções:
 
--   [**PropertyInfo**](propertyinfo.md)
+-   [**Propertyinfo**](propertyinfo.md)
 -   [**RelatedCollectionInfo**](relatedcollectioninfo.md)
 
 Você pode navegar até essa coleção das seguintes coleções:
 
--   [**Básica**](root.md)
+-   [**Raiz**](root.md)
 
 ## <a name="properties"></a>Propriedades
 
-As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
+As propriedades a seguir têm suporte no [**objeto COMAdminCatalogObject**](comadmincatalogobject.md) dentro da coleção:
 
--   [CLSID](#clsid)
--   [InprocServer32](#inprocserver32)
+-   [Clsid](#clsid)
+-   [Inprocserver32](#inprocserver32)
 -   [ProgID](#progid)
 
 ### <a name="clsid"></a>CLSID
@@ -54,7 +54,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Um GUID para o componente. Essa propriedade é retornada quando o método de propriedade de [**chave**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) é chamado em um objeto desta coleção. |
+| Descrição    | Um GUID para o componente. Essa propriedade é retornada quando o [**método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_key) propriedade Key é chamado em um objeto desta coleção. |
 | Access         | ReadOnly                                                                                                                                                  |
 | Type           | String                                                                                                                                                    |
 | Padrão        | N/D                                                                                                                                                       |
@@ -64,7 +64,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
  
 
-### <a name="inprocserver32"></a>InprocServer32
+### <a name="inprocserver32"></a>Inprocserver32
 
 
 
@@ -86,7 +86,7 @@ As propriedades a seguir têm suporte pelo objeto [**COMAdminCatalogObject**](co
 
 | Entrada | Valor |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Descrição    | Um nome que identifica o componente. Essa propriedade é retornada quando o método de propriedade [**Name**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) é chamado em um objeto desta coleção. |
+| Descrição    | Um nome que identifica o componente. Essa propriedade é retornada quando o [**método de**](/windows/desktop/api/ComAdmin/nf-comadmin-icatalogobject-get_name) propriedade Name é chamado em um objeto desta coleção. |
 | Access         | ReadOnly                                                                                                                                                            |
 | Type           | String                                                                                                                                                              |
 | Padrão        | N/D                                                                                                                                                                 |

@@ -12,18 +12,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 52c51c3348f41f4cd3fad990a2cc7ef94a865173
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bc90f574edcf306b2141a54ccc3b34c79814e1dd5c705690af1b16103b1b8c05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366148"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119513856"
 ---
 # <a name="wsdl-interface-for-custom-vdi-solutions"></a>Interface WSDL para soluções de VDI personalizadas
 
 Os desenvolvedores podem criar serviços Web personalizados que gerenciam soluções de VDI (Virtual Desktop Infrastructure).
 
-A partir do Windows Server 2008 R2, os computadores cliente podem se comunicar com serviços Web que executam o gerenciamento de máquinas virtuais usando o plug-in de filtro VMMWebServerClient.dll. Você pode implementar um serviço Web personalizado que funciona com esse plug-in de filtro. Para se comunicar com o plug-in de filtro, o serviço Web deve implementar os métodos definidos no arquivo WSDL (Web Services Definition Language) a seguir.
+a partir do Windows Server 2008 R2, os computadores cliente podem se comunicar com serviços web que executam o gerenciamento de máquinas virtuais usando o plug-in de filtro de VMMWebServerClient.dll. Você pode implementar um serviço Web personalizado que funciona com esse plug-in de filtro. Para se comunicar com o plug-in de filtro, o serviço Web deve implementar os métodos definidos no arquivo WSDL (Web Services Definition Language) a seguir.
 
 
 ```XML
@@ -456,6 +456,6 @@ O serviço Web deve retornar o elemento a seguir para o plug-in de filtro.
 
 
 
- 
+ 
 
- 
+ 

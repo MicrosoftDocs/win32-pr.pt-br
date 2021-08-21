@@ -10,12 +10,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 49c6d6b0bf42951766cfd813ccb4b5eed041600a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b97ee9d0f2f407c0cae2c9c1466a1904cf79eaecb353b94ac11bb3373367ed2f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105807959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050244"
 ---
 # <a name="setting-up-a-fixed-port-for-wmi"></a>Configurando uma porta fixa para o WMI
 
@@ -26,8 +26,8 @@ O procedimento a seguir é uma configuração automatizada para permitir que o W
 **Para configurar uma porta fixa para o WMI**
 
 1.  No prompt de comando, digite **winmgmt-standalonehost**
-2.  Pare o serviço WMI digitando o comando **net stop "Instrumentação de gerenciamento do Windows"** ou use o nome curto de **winmgmt do net stop**
-3.  Reinicie o serviço WMI novamente em um novo host de serviço digitando **net start "Instrumentação de gerenciamento do Windows"** ou **net start winmgmt**
+2.  pare o serviço WMI digitando o comando **net stop "Instrumentação de Gerenciamento do Windows"** ou use o nome curto de **winmgmt do net stop**
+3.  reinicie o serviço WMI novamente em um novo host de serviço digitando **net start "Instrumentação de Gerenciamento do Windows"** ou **net start winmgmt**
 4.  Estabeleça um novo número de porta para o serviço WMI digitando **netsh firewall add abertura TCP 24158 WMIFixedPort**
 
 Para desfazer as alterações feitas no WMI, digite **winmgmt/sharedhost** e, em seguida, pare e inicie o serviço Winmgmt novamente.

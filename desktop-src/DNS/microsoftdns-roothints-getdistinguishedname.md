@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a0543bba7ac49201ca72c27da94971ff7a38d5db
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 635afd622e6266abb5cf37bca1f78adc2d11d3a04fd08939bf2fc8d4f8de62a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105751757"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587576"
 ---
 # <a name="getdistinguishedname-method-of-the-microsoftdns_roothints-class"></a>Método getdistinguiname da classe MicrosoftDNS \_ RootHints
 
@@ -40,7 +40,7 @@ string GetDistinguishedName();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o nome da zona.
 

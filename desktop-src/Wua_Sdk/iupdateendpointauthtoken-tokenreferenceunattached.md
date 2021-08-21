@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - UpdateEndpointAuth.dll
-ms.openlocfilehash: 7f9a25c444cf1ba8421d3787a9ead242750e5756
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2dada627d6e2b8832f4317c47e54a9c4417e14b821f6cd84bce44d9f53c99aaa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105782541"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049244"
 ---
 # <a name="iupdateendpointauthtokentokenreferenceunattached-method"></a>Método IUpdateEndpointAuthToken:: TokenReferenceUnattached
 
@@ -46,9 +46,9 @@ Ponteiro para a referência de token desanexado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **S \_ OK** se for bem-sucedido. Caso contrário, retorna um código de erro COM do Windows.
+Retornará **S \_ OK** se for bem-sucedido. caso contrário, retorna um código de erro COM ou Windows.
 
 ## <a name="remarks"></a>Comentários
 
@@ -60,9 +60,9 @@ Uma referência desanexada refere-se a um referece (como o assinatura que está 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>                   |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>                |
-| parâmetro<br/>                   | <dl> <dt>UpdateEndpointAuth. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com \[ aplicativos da área de trabalho do SP3\]<br/>                   |
+| Servidor mínimo com suporte<br/> | Windows servidor 2003, Windows 2000 servidor somente com \[ aplicativos de área de trabalho do SP3\]<br/>                |
+| Cabeçalho<br/>                   | <dl> <dt>UpdateEndpointAuth. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>UpdateEndpointAuth. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>UpdateEndpointAuth. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>UpdateEndpointAuth.dll</dt> </dl> |

@@ -1,29 +1,29 @@
 ---
-description: Um ventilador de triângulo é semelhante a uma faixa de triângulo, exceto pelo fato de que todos os triângulos compartilham um vértice, conforme mostrado na ilustração a seguir.
+description: Um ventilador de triângulo é semelhante a uma faixa de triângulo, exceto que todos os triângulos compartilham um vértice, conforme mostrado na ilustração a seguir.
 ms.assetid: a1fbfd78-121f-4f79-9ba8-44f23356a432
 title: Ventiladores de triângulo (Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2357af0d999cc759453e34cd278f61064a637cfd
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 806dc57545f4cb8341eee2b586aa062ba93d98568e6269e209dbf616fbb081d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104559253"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044164"
 ---
 # <a name="triangle-fans-direct3d-9"></a>Ventiladores de triângulo (Direct3D 9)
 
-Um ventilador de triângulo é semelhante a uma faixa de triângulo, exceto pelo fato de que todos os triângulos compartilham um vértice, conforme mostrado na ilustração a seguir.
+Um ventilador de triângulo é semelhante a uma faixa de triângulo, exceto que todos os triângulos compartilham um vértice, conforme mostrado na ilustração a seguir.
 
 ![ilustração de um ventilador de triângulo](images/trifan.gif)
 
-O sistema usa os vértices v2, v3 e V1 para desenhar o primeiro triângulo; V3, v4 e V1 para desenhar o segundo triângulo; v4, v5 e V1 para desenhar o terceiro triângulo; e assim por diante. Quando o sombreamento simples é habilitado, o sistema sombreia o triângulo com a cor de seu primeiro vértice.
+O sistema usa v2, v3 e v1 para desenhar o primeiro triângulo; v3, v4 e v1 para desenhar o segundo triângulo; v4, v5 e v1 para desenhar o terceiro triângulo; e assim por diante. Quando o sombreamento simples está habilitado, o sistema sombrea o triângulo com a cor de seu primeiro vértice.
 
-A ilustração a seguir mostra um ventilador de triângulo renderizado.
+A ilustração a seguir ilustra um ventilador de triângulo renderizado.
 
 ![ilustração de um ventilador de triângulo renderizado](images/tfan2.gif)
 
-O código a seguir mostra como criar vértices para este ventilador de triângulo.
+O código a seguir mostra como criar vértices para esse ventilador de triângulo.
 
 
 ```
@@ -45,7 +45,7 @@ CUSTOMVERTEX Vertices[] =
 
 
 
-O exemplo de código abaixo mostra como renderizar esse ventilador de triângulo no Direct3D 9 usando [**IDirect3DDevice9::D rawprimitive**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive).
+O exemplo de código abaixo mostra como renderizar esse ventilador de triângulo no Direct3D 9 usando [**IDirect3DDevice9::D rawPrimitive.**](/windows/win32/api/d3d9helper/nf-d3d9helper-idirect3ddevice9-drawprimitive)
 
 
 ```

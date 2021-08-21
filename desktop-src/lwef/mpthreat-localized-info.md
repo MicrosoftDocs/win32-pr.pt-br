@@ -1,10 +1,10 @@
 ---
-title: Estrutura de MPTHREAT_LOCALIZED_INFO (MpClient. h)
+title: estrutura MPTHREAT_LOCALIZED_INFO (MpClient.h)
 description: Informações localizadas para uma ameaça.
 ms.assetid: 99DC9737-9A61-4407-B544-A7A979C5B556
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPTHREAT_LOCALIZED_INFO
-- Ponteiro de estrutura de PMPTHREAT_LOCALIZED_INFO recursos de ambiente herdados do Windows
+- MPTHREAT_LOCALIZED_INFO estrutura herdada Windows recursos de ambiente
+- PMPTHREAT_LOCALIZED_INFO de estrutura herdada Windows recursos de ambiente
 topic_type:
 - apiref
 api_name:
@@ -15,14 +15,14 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 87ea0bee7c8cae15389b40b64038aad92a56dd5f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4ff28c77c60421fcaabe31580400ad87823ad3edf3536d96ba3ba5eec177ad94
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369587"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119555946"
 ---
-# <a name="mpthreat_localized_info-structure"></a>\_Estrutura de informações localizadas do MPTHREAT \_
+# <a name="mpthreat_localized_info-structure"></a>Estrutura MPTHREAT \_ LOCALIZED \_ INFO
 
 Informações localizadas para uma ameaça.
 
@@ -49,10 +49,10 @@ typedef struct tagMPTHREAT_LOCALIZED_INFO {
 
 <dl> <dt>
 
-**Threatid**
+**ThreatID**
 </dt> <dd>
 
-Tipo: **\_ ID de MPTHREAT**
+Tipo: **\_ ID MPTHREAT**
 
 </dd> <dd>
 
@@ -60,21 +60,21 @@ Identificador de ameaça. O bit superior é definido para identificar ameaças r
 
 </dd> <dt>
 
-**CategoryName**
+**Categoryname**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-Classificação de ameaças, como um cavalo de Troia ou um keylogger.
+Classificação de ameaças, como um troia ou um keylogger.
 
 </dd> <dt>
 
 **CategoryDescription**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -82,32 +82,32 @@ Descrição da categoria de ameaça.
 
 </dd> <dt>
 
-**Gravidadename**
+**SeverityName**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-Nível de severidade da ameaça, como grave ou moderado.
+Nível de gravidade da ameaça, como grave ou moderado.
 
 </dd> <dt>
 
 **SeverityDescription**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
-Descrição do nível de severidade da ameaça.
+Descrição do nível de gravidade da ameaça.
 
 </dd> <dt>
 
-**ShortDescription**
+**Shortdescription**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -115,10 +115,10 @@ Breve descrição da ameaça.
 
 </dd> <dt>
 
-**Defaultactionname;**
+**DefaultActionName;**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -126,10 +126,10 @@ Nome da ação padrão, como remover ou colocar em quarentena, sugerido pelo mec
 
 </dd> <dt>
 
-**Aconselhamento**
+**Conselho**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -140,7 +140,7 @@ Conselhos para a ameaça específica.
 **ThreatUrl**
 </dt> <dd>
 
-Tipo: **PG \_ MIDL \_ String LPWSTR**
+Tipo: **MP \_ MIDL STRING \_ LPWSTR**
 
 </dd> <dd>
 
@@ -154,9 +154,9 @@ Uma URL para uma página da Web que contém informações sobre a ameaça.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient.h</dt> </dl> |
 
 
 

@@ -3,7 +3,7 @@ title: Mensagem de TBM_SETTIC (commctrl. h)
 description: Define uma marca de escala em um TrackBar na posição lógica especificada.
 ms.assetid: 89b42cac-967e-40c7-9fab-2bd76f06f3f9
 keywords:
-- Controles de TBM_SETTIC de mensagens do Windows
+- controles de Windows de mensagem de TBM_SETTIC
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a42839157125c8def28a19dd9c2ccce21d3b96c3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 74f286a2f03e318629a10651d066da5aa6cfe70aa293f242ad7508d0ef4739a8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119540016"
 ---
 # <a name="tbm_settic-message"></a>Mensagem de TBM de Conguração \_
 
@@ -39,7 +39,7 @@ Posição da marca de escala. Esse parâmetro pode ser qualquer um dos valores i
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se a marca de escala estiver definida ou **false** caso contrário.
 
@@ -53,9 +53,9 @@ Um TrackBar cria suas próprias primeiras e últimas marcas de escala. Não use 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

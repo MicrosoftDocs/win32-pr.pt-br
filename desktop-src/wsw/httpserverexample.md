@@ -1,29 +1,29 @@
 ---
 title: HttpServerExample
-description: Consulte um exemplo de servidor HTTP que usa a API de serviços Web do Windows. Este exemplo mostra um servidor TCP que aceita um canal e recebe e responde a mensagens.
+description: Consulte um exemplo de servidor HTTP que usa a API Windows Web Services. Este exemplo mostra um servidor TCP que aceita um canal e recebe e responde às mensagens.
 ms.assetid: b8cf29af-f13f-47ae-9954-7845515135f9
 keywords:
-- HttpServerExample nativo – Web-Services
+- HttpServerExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 72859f9e59353fe926f18570e10de65cd40e0fd4
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: a5c5dac29464e8ce4258952b56647501f0fa394d54c3c2491910072b253c0a64
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112409749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119344906"
 ---
 # <a name="httpserverexample"></a>HttpServerExample
 
-Este exemplo mostra um servidor TCP que aceita um canal e recebe e responde a mensagens.
+Este exemplo mostra um servidor TCP que aceita um canal e recebe e responde às mensagens.
 
--   [HttpServer. cpp](#httpservercpp)
--   [PurchaseOrder. WSDL](#purchaseorderwsdl)
+-   [HttpServer.cpp](#httpservercpp)
+-   [PurchaseOrder.wsdl](#purchaseorderwsdl)
 -   [Makefile](#makefile)
 
-## <a name="httpservercpp"></a>HttpServer. cpp
+## <a name="httpservercpp"></a>HttpServer.cpp
 
 
 ```C++
@@ -489,7 +489,7 @@ Exit:
 
 
 
-## <a name="purchaseorderwsdl"></a>PurchaseOrder. WSDL
+## <a name="purchaseorderwsdl"></a>PurchaseOrder.wsdl
 
 ``` syntax
 <wsdl:definitions 

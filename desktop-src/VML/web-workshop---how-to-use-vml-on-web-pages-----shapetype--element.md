@@ -1,55 +1,55 @@
 ---
-title: Usando o elemento ShapeType
-description: Usando o elemento ShapeType
+title: Usando o elemento Shapetype
+description: Usando o elemento Shapetype
 ms.assetid: ad9e5c00-fbee-4bec-b4cd-075cf5a4d8c7
 keywords:
-- Web Workshop, elemento ShapeType
-- Criando páginas da Web, elemento ShapeType
-- Linguagem VML (VML), elemento ShapeType
-- VML (linguagem VML), elemento ShapeType
-- gráficos vetoriais, elemento ShapeType
-- elemento ShapeType
-- Elementos de VML, formatype
-- Formas de VML, elemento ShapeType
-- Linguagem VML (VML), definindo formas usadas com frequência
+- Workshop da Web, elemento shapetype
+- projetando páginas da Web, elemento shapetype
+- linguagem VML (VML), elemento shapetype
+- Elemento VML (linguagem VML),shapetype
+- gráficos vetoriais, elemento shapetype
+- Elemento shapetype
+- Elementos VML, shapetype
+- Formas VML, elemento shapetype
+- linguagem VML (VML), definindo formas usadas com frequência
 - VML (linguagem VML), definindo formas usadas com frequência
-- gráficos vetoriais, definição de formas usadas com frequência
+- gráficos vetoriais, definindo formas usadas com frequência
 - definindo formas usadas com frequência
-- Formas de VML, definindo frequentemente usadas
-- Linguagem VML (VML), instanciando cópias de formas
-- VML (linguagem VML), instanciando cópias de formas
-- gráficos vetoriais, instanciando cópias de formas
-- Criando uma instância de cópias de formas
-- Formas de VML, instanciando
+- Formas VML, definindo as usadas com frequência
+- linguagem VML (VML), instando cópias de formas
+- VML (linguagem VML), instando cópias de formas
+- gráficos vetoriais, instando cópias de formas
+- instando cópias de formas
+- Formas VML, instando
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5cfa7ec47dde492231e8bcd54f68e4637454613b
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f6d815d9f5f911e1a34d558496881ae606819d328a501c635ff463a84f2926ca
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104454289"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512637"
 ---
-# <a name="using-the-shapetype-element"></a>Usando o elemento ShapeType
+# <a name="using-the-shapetype-element"></a>Usando o elemento Shapetype
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Neste tópico, Ilustraremos como usar o `<shapetype>` elemento para definir suas próprias formas usadas com frequência e, em seguida, instanciar ou criar formas a partir de ShapeType.
+Neste tópico, ilustramos como usar o elemento para definir suas próprias formas usadas com frequência e, em seguida, criar ou criar formas do `<shapetype>` tipo de forma.
 
-Se você quisesse desenhar muitas formas que tenham Propriedades iguais ou semelhantes, seria entediante se você tivesse que digitar repetidamente os mesmos atributos de propriedade para cada forma. A VML fornece o `<shapetype>` elemento para que você possa definir um protótipo de uma forma. Em seguida, você pode usar o `<shape>` elemento para instanciar muitas cópias de formas do mesmo ShapeType.
+Se você quisesse desenhar muitas formas que têm as mesmas propriedades ou propriedades semelhantes, seria entediante se você tivesse que digitar repetidamente os mesmos atributos de propriedade para cada forma. O VML fornece `<shapetype>` o elemento para que você possa definir um protótipo de uma forma. Em seguida, você pode usar `<shape>` o elemento para insinuar muitas cópias de formas do mesmo tipo de forma.
 
-Você pode seguir as três etapas para definir um ShapeType e, em seguida, instanciar uma forma a partir de ShapeType:
+Você pode seguir as três etapas para definir um tipo de forma e, em seguida, insinuar uma forma do tipo de forma:
 
-1.  Digite um `<shapetype>` elemento e dê a ele um nome especificando o atributo de ID.
-2.  Descreva o tipo de forma usando seus atributos de propriedade ou subelementos.
-3.  Crie uma instância de uma forma digitando um `<shape>` elemento e consulte o atributo Type da forma para o atributo ID de ShapeType.
+1.  Digite um `<shapetype>` elemento e dê a ele um nome especificando o atributo id.
+2.  Descreva o tipo de forma usando seus atributos de propriedade ou subconjunto.
+3.  Insinue uma forma digitando um elemento e consulte o atributo de tipo da forma para o atributo `<shape>` id do tipo de forma.
 
-Por exemplo, você digita as linhas a seguir para criar um tipo de forma chamado "myShape":
+Por exemplo, digite as seguintes linhas para criar um tipo de forma chamado "MyShape":
 
 
 ```HTML
@@ -59,7 +59,7 @@ Por exemplo, você digita as linhas a seguir para criar um tipo de forma chamado
 
 
 
-Em seguida, você altera o tipo de forma definindo alguns atributos de propriedade, como `fillcolor="red" strokecolor="blue"` . Ou, você pode usar subelementos dentro de ShapeType, como `<path>` , `<fill>` (Falaremos `<stroke>` sobre esses subelementos nos tópicos posteriores).
+Em seguida, altere o tipo de forma definindo alguns atributos de propriedade, como `fillcolor="red" strokecolor="blue"` . Ou você pode usar subconjunto dentro do tipo de forma, como , , (vamos falar sobre esses `<path>` `<fill>` `<stroke>` subconjunto em tópicos posteriores).
 
 
 ```HTML
@@ -69,7 +69,7 @@ Em seguida, você altera o tipo de forma definindo alguns atributos de proprieda
 
 
 
-Em seguida, você cria uma instância de uma forma de forma "myforma" especificando `type="#MyShape"` , conforme mostrado na representação de VML a seguir. Essa forma herda todas as propriedades da forma "myFormat" e é exibida dentro de sua caixa de conteúdo em um tamanho de 100 por 80.
+Em seguida, você insinuou uma forma do tipo de forma "MyShape" especificando , conforme mostrado na representação VML a `type="#MyShape"` seguir. Essa forma herda todas as propriedades do tipo de forma "MyShape" e é exibida dentro de sua caixa de contenção com um tamanho de 100 por 80.
 
 
 ```HTML
@@ -78,7 +78,7 @@ Em seguida, você cria uma instância de uma forma de forma "myforma" especifica
 
 
 
-Você pode criar uma instância de outra forma com base no tipo de forma "myFormat" especificando `type="#MyShape"` e substitui algumas propriedades, como `fillcolor="maroon"` , conforme mostrado na representação de VML a seguir. Essa forma herda todas as propriedades da forma "myShape", exceto da propriedade FillColor, e é exibida dentro de sua caixa que contém um tamanho de 70 por 90.
+Você pode insinuar outra forma do tipo de forma "MyShape" especificando e substituindo algumas propriedades, como , conforme mostrado na representação VML a `type="#MyShape"` `fillcolor="maroon"` seguir. Essa forma herda todas as propriedades do tipo de forma "MyShape", exceto a propriedade fillcolor, e é exibida dentro de sua caixa de contenção com um tamanho de 70 por 90.
 
 
 ```HTML
@@ -90,7 +90,7 @@ style='width:70; height:90'/>
 
 Aqui está a representação de VML completa para o exemplo anterior:
 
-![\-1.gif type1 (477 bytes)](images/type1-1.gif)![\-2.gif type1 (471 bytes)](images/type1-2.gif)
+![type1 \-1.gif (477 bytes)](images/type1-1.gif)![type1 \-2.gif (471 bytes)](images/type1-2.gif)
 
 
 ```HTML
@@ -111,11 +111,11 @@ path="m10860,2187c10451,1746,9529,1018,9015,730,7865,152,6685,,5415,,4175,
 
 
 
-Como você aprendeu, quando uma forma é instanciada de um ShapeType, ela herda todos os atributos de Propriedade do ShapeType. Você pode substituir alguns ou todos os atributos herdados redefinindo atributos dentro do `<shape>` elemento. Lembre-se de que a herança é apenas um nível. Isso ocorre porque apenas um `<shape>` elemento pode referenciar um `<shapetype>` elemento. Um `<shapetype>` elemento não pode fazer referência A outro `<shapetype>` elemento.
+Como você aprendeu, quando uma forma é instautada de um tipo de forma, ela herda todos os atributos de propriedade do tipo de forma. Você pode substituir alguns ou todos os atributos herdados redefinindo atributos dentro do `<shape>` elemento . Esteja ciente de que a herança é apenas um nível. Isso porque apenas um `<shape>` elemento pode referenciar um `<shapetype>` elemento. Um `<shapetype>` elemento não pode referenciar outro `<shapetype>` elemento.
 
-Além disso, um ShapeType não pertence a nenhum grupo. Portanto, o `<shapetype>` elemento pode aparecer sozinha ou dentro de um `<group>` elemento. Você pode ter muitas formas dentro de grupos diferentes que referenciam o mesmo ShapeType. Se um ShapeType aparecer dentro de um grupo, uma forma que mora em outro grupo ainda poderá fazer referência a esse ShapeType.
+Além disso, um tipo de forma não pertence a nenhum grupo. Portanto, o `<shapetype>` elemento pode aparecer sozinho ou dentro de um elemento `<group>` . Você pode ter muitas formas dentro de grupos diferentes que referenciam o mesmo tipo de forma. Se um tipo de forma aparecer dentro de um grupo, uma forma que resida em outro grupo ainda poderá referenciar esse tipo de forma.
 
-Por exemplo, na seguinte representação de VML, Rect1 e Rect2 estão em GroupA e Rect3 está em GroupB. Todos os três retângulos são instanciados a partir de ShapeType de myFormat.
+Por exemplo, na representação VML a seguir, Rect1 e Rect2 estão em GroupA e Rect3 está em GroupB. Todos os três retângulos são instautados do tipo de forma MyShape.
 
 
 ```HTML
@@ -138,8 +138,8 @@ Por exemplo, na seguinte representação de VML, Rect1 e Rect2 estão em GroupA 
 
 
 
-Para obter mais informações sobre esse elemento, consulte a [especificação da VML](https://www.w3.org/TR/NOTE-VML#-toc416858387) .
+Para obter mais informações sobre esse elemento, consulte a [especificação de VML](https://www.w3.org/TR/NOTE-VML#-toc416858387) .
 
- 
+ 
 
- 
+ 

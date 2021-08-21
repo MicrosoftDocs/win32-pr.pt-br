@@ -1,133 +1,133 @@
 ---
 title: VRS (sombreamento de taxa variável)
-description: Sombreamento de taxa variável &mdash; ou sombreamento de pixel grosso &mdash; é um mecanismo que permite alocar desempenho de renderização/energia em taxas que variam em sua imagem renderizada.
+description: Sombreamento de taxa variável ou sombreamento de pixels altos é um mecanismo que permite alocar desempenho/potência de renderização em taxas que variam em toda &mdash; &mdash; a imagem renderizada.
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 04/08/2019
-ms.openlocfilehash: 2f207cddee978915788291fc0ffe55160e6a93c6
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: b26d2d67a6e4a5f7b599a9fc65f324b301346fde3170262e80235a25f8cfb88b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380760"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119045267"
 ---
 # <a name="variable-rate-shading-vrs"></a>VRS (sombreamento de taxa variável)
 
 ## <a name="the-motivation-for-vrs"></a>A motivação para VRS
-Devido a restrições de desempenho, um renderizador de elementos gráficos nem sempre é capaz de fornecer o mesmo nível de qualidade a cada parte de sua imagem de saída. Sombreamento de taxa variável &mdash; ou sombreamento de pixel grosso &mdash; é um mecanismo que permite alocar desempenho de renderização/energia em taxas que variam em sua imagem renderizada.
+Devido a restrições de desempenho, um renderador de gráficos nem sempre pode oferecer o mesmo nível de qualidade a cada parte de sua imagem de saída. Sombreamento de taxa variável ou sombreamento de pixels altos é um mecanismo que permite alocar desempenho/potência de renderização em taxas que variam em toda &mdash; &mdash; a imagem renderizada.
 
 Em alguns casos, a taxa de sombreamento pode ser reduzida com pouca ou nenhuma redução na qualidade de saída perceptível; levando a uma melhoria de desempenho que é essencialmente gratuita.
 
-## <a name="without-vrsmdashmulti-sample-anti-aliasing-with-supersampling"></a>Sem a &mdash; suavização de multiamostras do VRS com Superamostragem
-Sem o sombreamento de taxa variável, o único meio de controlar a taxa de sombreamento é com a MSAA (suavização de várias amostras) com a execução baseada em amostra (também conhecida como Superamostragem).
+## <a name="without-vrsmdashmulti-sample-anti-aliasing-with-supersampling"></a>Sem a suavização de vários exemplos de VRS &mdash; com a superampling
+Sem sombreamento de taxa variável, o único meio de controlar a taxa de sombreamento é com MSAA (suavização de várias amostras) com execução baseada em exemplo (também conhecida como supersampling).
 
-O MSAA é um mecanismo para reduzir o alias geométrico e melhorar a qualidade de renderização de uma imagem em comparação com o não uso de MSAA. A contagem de amostra de MSAA, que pode ser 1x, 2x, 4x, 8x ou 16x, governa o número de amostras alocadas por pixel de destino de renderização. A contagem de amostra de MSAA deve ser conhecida antecipadamente quando o destino é alocado e não pode ser alterada depois disso.
+A MSAA é um mecanismo para reduzir o alias geométrico e melhorar a qualidade de renderização de uma imagem em comparação com o não uso da MSAA. A contagem de exemploSAA, que pode ser 1x, 2x, 4x, 8x ou 16x, rege o número de amostras alocadas por pixel de destino de renderização. A contagem de exemploSAA deve ser conhecida antes quando o destino é alocado e não pode ser alterada posteriormente.
 
-A Superamostragem faz com que o sombreador de pixel seja invocado uma vez por amostra, com uma qualidade mais alta, mas também um custo de desempenho mais alto em comparação com a execução por pixel.
+A superamplagem faz com que o sombreador de pixel seja invocado uma vez por amostra, com uma qualidade mais alta, mas também um custo de desempenho mais alto em comparação com a execução por pixel.
 
-Seu aplicativo pode controlar sua taxa de sombreamento escolhendo entre a execução baseada em pixel, ou a amostragem de MSAA com sobreamostragem. Essas duas opções não fornecem um controle muito fino. Além disso, talvez você queira uma taxa de sombreamento inferior para uma determinada classe de objetos em comparação com o restante da imagem. Esses objetos podem incluir um objeto por trás de um elemento HUD ou uma transparência, um desfoque (profundidade de campo, movimento, etc.) ou uma distorção óptica devido à fibra óptica VR. Mas isso não seria possível, pois a qualidade do sombreamento e os custos são corrigidos em toda a imagem.
+Seu aplicativo pode controlar sua taxa de sombreamento escolhendo entre a execução baseada em pixel ou MSAA com supersampling. Essas duas opções não fornecem um controle muito bom. Além disso, talvez você queira uma taxa de sombreamento mais baixa para uma determinada classe de objetos em comparação com o restante da imagem. Esses objetos podem incluir um objeto por trás de um elemento MOTION ou uma transparência, um desfoque (profundidade do campo, movimento etc.) ou uma distorção óptica devido à métrica de VR. Mas isso não seria possível, porque a qualidade e os custos de sombreamento são corrigidos em toda a imagem.
 
-## <a name="with-variable-rate-shading-vrs"></a>Com sombreamento de taxa variável (VRS)
-O modelo de sombreamento de taxa variável (VRS) estende a Superamostragem com a MSAA para o oposto, "pixel grande", direção, adicionando o conceito de sombreamento grosso. É aí que o sombreamento pode ser executado em uma frequência mais grande do que um pixel. Em outras palavras, um grupo de pixels pode ser sombreado como uma única unidade e o resultado é transmitido para todos os exemplos no grupo.
+## <a name="with-variable-rate-shading-vrs"></a>Com VRS (sombreamento de taxa variável)
+O modelo vrS (sombreamento de taxa variável) estende a direção de supersampling-with-MSAA na direção oposta, "pixel alto", adicionando o conceito de sombreamento abstrato. É aí que o sombreamento pode ser executado em uma frequência mais alta do que um pixel. Em outras palavras, um grupo de pixels pode ser sombreado como uma única unidade e, em seguida, o resultado é transmitido para todos os exemplos no grupo.
 
-Uma API de alto sombreamento permite que seu aplicativo especifique o número de pixels que pertencem a um grupo sombreado ou um *pixel grande*. Você pode variar o tamanho de pixels grossos depois de alocar o destino de renderização. Portanto, partes diferentes da tela ou diferentes passagens de desenho podem ter taxas de sombreamento diferentes.
+Uma API de sombreamento asserção permite que seu aplicativo especifique o número de pixels que pertencem a um grupo sombreado ou pixel *alto.* Você pode variar o tamanho de pixel grande depois de alocar o destino de renderização. Portanto, diferentes partes da tela ou diferentes passagens de desenho podem ter taxas de sombreamento diferentes.
 
-Aqui está uma tabela que descreve qual nível de MSAA tem suporte com qual tamanho de pixel grosso. Alguns não têm suporte em nenhuma plataforma; enquanto outros estão condicionalmente habilitados com base em um recurso (*AdditionalShadingRatesSupported*), indicado por "Cap".
+Aqui está uma tabela que descreve qual nível de MSAA tem suporte com qual tamanho de pixel alto. Não há suporte para alguns em nenhuma plataforma; enquanto outros estão habilitados condicionalmente com base em um recurso (*AdditionalShadingRatesSupported*), indicado por "Cap".
 
-![A tabela mostra o tamanho de pixel grosso para M S um nível A.](images/CoarsePixelSizeSupport.PNG "Tamanhos de pixels grossos")
+![A tabela mostra o tamanho de pixel alto para níveis de MS A A.](images/CoarsePixelSizeSupport.PNG "Tamanhos de pixels grossos")
 
-Para as camadas de recurso abordadas na próxima seção, não há nenhuma combinação de tamanho máximo de pixel-e-amostra, em que o hardware precisa controlar mais de 16 amostras por invocação de sombreador de pixel. Essas combinações são de meio-tom sombreado na tabela acima.
+Para as camadas de recursos discutidas na próxima seção, não há nenhuma combinação de tamanho de pixel e contagem de exemplos, em que o hardware precisa acompanhar mais de 16 exemplos por invocação de sombreador de pixel. Essas combinações são sombreadas por meio tom na tabela acima.
 
-## <a name="feature-tiers"></a>Camadas de recurso
-Há duas camadas para a implementação de VRS e dois recursos que você pode consultar. Cada camada é descrita mais detalhadamente após a tabela.
+## <a name="feature-tiers"></a>Camadas de recursos
+Há duas camadas para a implementação de VRS e duas funcionalidades que você pode consultar. Cada camada é descrita em mais detalhes após a tabela.
 
-![A tabela mostra os recursos disponíveis na camada 1 e camada 2.](images/Tiers.PNG "Camadas VRS")
+![A tabela mostra os recursos disponíveis nas Camadas 1 e 2.](images/Tiers.PNG "Camadas VRS")
 
 ### <a name="tier-1"></a>Camada 1
-- A taxa de sombreamento só pode ser especificada em uma base por empate; Não é mais granular do que isso.
-- A taxa de sombreamento se aplica uniformemente ao que é desenhado independentemente de onde está dentro do destino de renderização.
+- A taxa de sombreamento pode ser especificada somente por desenho; não mais granular do que isso.
+- A taxa de sombreamento aplica-se uniformemente ao que é desenhado independentemente de onde ele está dentro do destino de renderização.
 
 ### <a name="tier-2"></a>Camada 2
-- A taxa de sombreamento pode ser especificada em uma base por empate, como na camada 1. Ele também pode ser especificado por uma combinação de base por empate e de:
-  - Semântica de cada vértice provocativa e
+- A taxa de sombreamento pode ser especificada por desenho, como na Camada 1. Ele também pode ser especificado por uma combinação de base por desenho e de:
+  - Semântica de cada vértice de provocação e
   - uma imagem de espaço na tela.
 - As taxas de sombreamento das três fontes são combinadas usando um conjunto de combinadores.
-- Tamanho do bloco da imagem de espaço na tela é 16x16 ou menor.
-- A taxa de sombreamento solicitada pelo seu aplicativo tem a garantia de ser entregue exatamente (para precisão do temporal e de outros filtros de reconstrução).
-- Há suporte para a entrada SV_ShadingRate PS.
-- A taxa de sombreamento por provocativa (também conhecida como por primitivo) é válida quando um visor é usado e `SV_ViewportArrayIndex` não é gravado.
-- A taxa por provocativa de vértice pode ser usada com mais de um visor se o recurso *SupportsPerVertexShadingRateWithMultipleViewports* estiver definido como `true` . Além disso, nesse caso, essa taxa pode ser usada quando `SV_ViewportArrayIndex` é gravada.
+- O tamanho do lado do lado da imagem de espaço na tela é 16x16 ou menor.
+- A taxa de sombreamento solicitada pelo aplicativo tem a garantia de ser entregue exatamente (para precisão de filtros temporais e outros filtros de reconstrução).
+- SV_ShadingRate entrada PS tem suporte.
+- A taxa de sombreamento por vértice de provocação (também conhecida como por primitivo), é válida quando um viewport é usado e `SV_ViewportArrayIndex` não é gravado.
+- A taxa de vértice por ataque pode ser usada com mais de um viewport se a funcionalidade *SupportsPerVertexShadingRateWithMultipleViewports* estiver definida como `true` . Além disso, nesse caso, essa taxa pode ser usada quando `SV_ViewportArrayIndex` é gravado.
 
 ### <a name="list-of-capabilities"></a>List of capabilities
 - *AdditionalShadingRatesSupported*
-  - Tipo booliano.
-  - Indica se há suporte para os tamanhos de pixel de 2x4, 4x e 4x4 para renderização de amostra única; e se o tamanho de pixel grande 2x4 tem suporte para 2x MSAA.
+  - Tipo booliana.
+  - Indica se os tamanhos de pixel 2x4, 4x2 e 4x4 são suportados para renderização de amostra única; e se o tamanho de pixel 2x4 é suportado para 2x MSAA.
 - *SupportsPerVertexShadingRateWithMultipleViewports*
-  - Tipo booliano.
-  - Indica se mais de um visor pode ser usado com a taxa de sombreamento por vértice (também conhecida como por primitivo).
+  - Tipo booliana.
+  - Indica se mais de um viewport pode ser usado com a taxa de sombreamento por vértice (também conhecida como por primitivo).
 
 ## <a name="specifying-shading-rate"></a>Especificando a taxa de sombreamento
-Para flexibilidade em aplicativos, há uma variedade de mecanismos fornecidos para controlar a taxa de sombreamento. Mecanismos diferentes estão disponíveis dependendo da camada de recurso de hardware.
+Para flexibilidade em aplicativos, há uma variedade de mecanismos fornecidos para controlar a taxa de sombreamento. Mecanismos diferentes estão disponíveis dependendo da camada de recursos de hardware.
 
 ### <a name="command-list"></a>Lista de comandos
 Esse é o mecanismo mais simples para definir a taxa de sombreamento. Ele está disponível em todas as camadas.
 
-Seu aplicativo pode especificar um tamanho de pixel grosso usando o [método **ID3D12GraphicsCommandList5:: RSSetShadingRate**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist5-rssetshadingrate). Essa API usa um único argumento de enumeração. A API fornece um controle geral do nível de qualidade para a renderização &mdash; da capacidade de definir a taxa de sombreamento por empate.
+Seu aplicativo pode especificar um tamanho de pixel alta usando o [ **método ID3D12GraphicsCommandList5::RSSetShadingRate**](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist5-rssetshadingrate). Essa API aceita um único argumento de enum. A API fornece um controle geral do nível de qualidade para renderizar a capacidade de definir a taxa de sombreamento &mdash; por desenho.
 
-Os valores para esse estado são expressos por meio da enumeração [**D3D12_SHADING_RATE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shading_rate) .
+Os valores para esse estado são expressos por meio [**da enumeração D3D12_SHADING_RATE**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_shading_rate) dados.
 
-#### <a name="coarse-pixel-size-support"></a>Suporte a tamanho de pixel grosso
+#### <a name="coarse-pixel-size-support"></a>Suporte a tamanho de pixels de grosseria
 As taxas de sombreamento 1x1, 1x2, 2x2 e 2x2 têm suporte em todas as camadas.
 
-Há um recurso, *AdditionalShadingRatesSupported*, para indicar se há suporte para 2x4, 4x e 4x4 no dispositivo.
+Há uma funcionalidade, *AdditionalShadingRatesSupported,* para indicar se há suporte para 2x4, 4x2 e 4x4 no dispositivo.
 
 ### <a name="screen-space-image-image-based"></a>Imagem de espaço na tela (baseada em imagem)
-Na camada 2 e superior, você pode especificar a taxa de sombreamento de pixels com uma imagem de espaço na tela.
+Na Camada 2 e superior, você pode especificar a taxa de sombreamento de pixel com uma imagem de espaço na tela.
 
-A imagem de espaço de tela permite que seu aplicativo crie uma imagem de "máscara de nível de detalhe (LOD)" indicando regiões de qualidade variável, como áreas que serão cobertas por desfoque de movimento, Desfoque de profundidade de campo, objetos transparentes ou elementos de interface do usuário HUD. A resolução da imagem está em macroblocos; Não está na resolução do destino de renderização. Em outras palavras, os dados da taxa de sombreamento são especificados em uma granularidade de blocos de pixels 8x8 ou 16x16, conforme indicado pelo tamanho do bloco VRS.
+A imagem de espaço na tela permite que seu aplicativo crie uma imagem de "máscara LOD (nível de detalhe) indicando regiões de qualidade variável, como áreas que serão cobertas por desfoque de movimento, desfoque de profundidade do campo, objetos transparentes ou elementos de interface do usuário DO MOTION. A resolução da imagem está em macroblocks; não está na resolução do destino de renderização. Em outras palavras, os dados de taxa de sombreamento são especificados em uma granularidade de blocos de 8x8 ou 16 x 16 pixels, conforme indicado pelo tamanho do bloco VRS.
 
 #### <a name="tile-size"></a>Tamanho de bloco
-Seu aplicativo pode consultar uma API para recuperar o tamanho de bloco VRS com suporte para seu dispositivo.
+Seu aplicativo pode consultar uma API para recuperar o tamanho do lado do vrs com suporte para seu dispositivo.
 
-Os blocos são quadrados e o tamanho se refere à largura ou altura do bloco em texels.
+Os blocos são quadrados e o tamanho refere-se à largura ou à altura do bloco em texels.
 
-Se o hardware não der suporte a sombreamento de taxa variável de camada 2, a consulta de recurso para o tamanho do bloco retornará 0.
+Se o hardware não dá suporte ao sombreamento de taxa variável da Camada 2, a consulta de funcionalidade para o tamanho do seu arquivo retornará 0.
 
-Se *o hardware der* suporte ao sombreamento de taxa variável de camada 2, o tamanho do bloco será um desses valores.
+Se o hardware *dá suporte* ao sombreamento de taxa variável de Camada 2, o tamanho do lado é um desses valores.
 
 - 8
 - 16
 - 32
 
-#### <a name="screen-space-image-size"></a>Tamanho da imagem de espaço da tela
-Para um destino de renderização de tamanho {rtWidth, rtHeight}, usando um determinado tamanho de bloco denominado **VRSTileSize**, a imagem de espaço de tela que o cobrirá é dessas dimensões.
+#### <a name="screen-space-image-size"></a>Tamanho da imagem de espaço na tela
+Para um destino de renderização de tamanho {rtWidth, rtHeight}, usando um determinado tamanho de bloco chamado **VRSTileSize**, a imagem de espaço na tela que a cobrirá é dessas dimensões.
 
 ```cpp
 { ceil((float)rtWidth / VRSTileSize), ceil((float)rtHeight / VRSTileSize) }
 ```
 
-A parte superior esquerda da imagem de espaço na tela (0, 0) está bloqueada para a parte superior esquerda do destino de renderização (0, 0).
+A parte superior esquerda da imagem de espaço na tela (0, 0) é bloqueada na parte superior esquerda do destino de renderização (0, 0).
 
-Para pesquisar a coordenada (x, y) de um bloco que corresponde a um local específico no destino de renderização, divida as coordenadas de espaço da janela de (x, y) pelo tamanho do bloco, ignorando os bits fracionários.
+Para procurar a coordenada (x,y) de um peças que corresponde a um local específico no destino de renderização, divida as coordenadas de espaço de janela de (x, y) pelo tamanho do peças, ignorando os bits fracionados.
 
-Se a imagem de espaço da tela for maior do que a necessária para um determinado destino de renderização, as partes extras à direita e/ou inferior não serão usadas.
+Se a imagem de espaço na tela for maior do que precisa ser para um determinado destino de renderização, as partes extras à direita e/ou inferior não serão usadas.
 
-Se a imagem de espaço da tela for muito pequena para um determinado destino de renderização, qualquer tentativa de ler da imagem além de suas extensões reais resultará em uma taxa de sombreamento padrão de 1x1. Isso ocorre porque a parte superior esquerda da imagem de espaço na tela (0, 0) está bloqueada para a parte superior esquerda do destino de renderização (0, 0) e "leitura além das extensões de destino de renderização" significa ler um valor muito grande de valores para x e y.
+Se a imagem de espaço na tela for muito pequena para um determinado destino de renderização, qualquer tentativa de leitura da imagem além de suas extensão reais produzirá uma taxa de sombreamento padrão de 1x1. Isso porque a parte superior esquerda da imagem de espaço na tela (0, 0) está bloqueada na parte superior esquerda do destino de renderização (0, 0) e "leitura além das extensão de destino de renderização" significa ler muito grandes valores para x e y.
 
-#### <a name="format-layout-resource-properties"></a>Propriedades de formato, layout e recurso
+#### <a name="format-layout-resource-properties"></a>Formato, layout, propriedades do recurso
 O formato dessa superfície é uma superfície de 8 bits de canal único ([**DXGI_FORMAT_R8_UINT**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_format)).
 
-O recurso é Dimension **TEXTURE2D**.
+O recurso é a **dimensão TEXTURE2D.**
 
-Ele não pode ser em matriz ou mipped. Ele deve ter explicitamente um nível de MIP.
+Ele não pode ser matriz ou mipped. Ele deve ter explicitamente um nível mip.
 
-Ele tem a contagem de amostras 1 e a qualidade de exemplo 0.
+Ele tem a contagem de exemplo 1 e a qualidade de exemplo 0.
 
-Ele tem o layout de textura **desconhecido**. Implicitamente não pode ser o layout de linha principal, porque não é permitido entre adaptadores.
+Ele tem layout de textura **DESCONHECIDO.** Implicitamente, ele não pode ser um layout de linha principal, porque o adaptador cruzado não é permitido.
 
-A maneira esperada na qual os dados de imagem de espaço da tela são preenchidos é
-1. Gravar os dados usando um sombreador de computação; a imagem de espaço de tela é associada como um UAV ou
-2. Copie os dados para a imagem de espaço da tela.
+A maneira esperada na qual os dados de imagem de espaço na tela são preenchidos é
+1. Gravar os dados usando um sombreador de computação; a imagem de espaço na tela é vinculada como um UAV ou
+2. Copie os dados para a imagem de espaço na tela.
 
 Ao criar a imagem de espaço na tela, esses sinalizadores são permitidos.
 
@@ -224,7 +224,7 @@ Se nenhum atributo por primitivo for especificado, uma taxa de sombreamento de 1
 ## <a name="querying-shading-rate-by-using-sv_shadingrate"></a>Consultando a taxa de sombreamento usando SV_ShadingRate
 É útil saber qual taxa de sombreamento foi selecionada pelo hardware em qualquer invocação de sombreador de pixel fornecida. Isso pode permitir uma variedade de otimizações em seu código do PS. Uma variável de sistema somente PS, `SV_ShadingRate` , fornece informações sobre a taxa de sombreamento.
 
-### <a name="type"></a>Type
+### <a name="type"></a>Tipo
 O tipo dessa semântica é uint.
 
 ### <a name="data-interpretation"></a>Interpretação de dados
@@ -253,27 +253,27 @@ Uma taxa de sombreamento com suporte é 1x1, 1x2, 2x1 ou 2x2 em uma operação d
 ## <a name="screen-space-derivatives"></a>Derivações de espaço na tela
 Os cálculos de gradientes de pixel para adjacentes são afetados por sombreamento de pixel grosso. Por exemplo, quando forem usados pixels grossos 2x2, um gradiente será o dobro do tamanho em comparação quando não forem usados pixels grossos. Seu aplicativo pode desejar ajustar os sombreadores para compensar isso &mdash; ou não, dependendo da funcionalidade desejada.
 
-Como os MIPS são escolhidos com base em uma derivação de espaço de tela, o uso de sombreamento de pixels grossos afeta a seleção MIP. O uso de sombreamento de pixel grosso faz com que MIPS menos detalhado seja selecionado em comparação com quando não são usados pixels grossos.
+Como os MIPS são escolhidos com base em uma derivação de espaço de tela, o uso de sombreamento de pixels grossos afeta a seleção MIP. O uso de sombreamento de pixels finos faz com que mips menos detalhados sejam selecionados em comparação com quando pixels mais finos não são usados.
 
 ## <a name="attribute-interpolation"></a>Interpolação de atributo
-As entradas para um sombreador de pixel podem ser interpoladas com base em seus vértices de origem. Como o sombreamento de taxa variável afeta as áreas do destino escritas por cada invocação do sombreador de pixel, ele interage com a interpolação de atributo. Os três tipos de interpolação são Center, centróide e Sample.
+Entradas para um sombreador de pixel podem ser interpoladas com base em seus vértices de origem. Como o sombreamento de taxa variável afeta as áreas do destino gravado por cada invocação do sombreador de pixel, ele interage com a interpolação de atributo. Os três tipos de interpolação são center, centroid e sample.
 
 ### <a name="center"></a>Centro
-O local de interpolação central para um grande pixel é o centro geométrico da área de pixels grossos cheia. `SV_Position` sempre é interpolado no centro da região de pixel grosso.
+O local de interpolação central para um pixel de grosseria é o centro geométrico da área de pixels inteiramente grosseira. `SV_Position` é sempre interpolado no centro da região de pixels grosseiras.
 
 ### <a name="centroid"></a>Centróide
-Quando sombreamento de pixel grosso é usado com MSAA, para cada pixel, ainda haverá gravações no número completo de amostras alocadas para o nível de MSAA do destino. Portanto, o local de interpolação de centróide considerará todos os exemplos de pixels finos em pixels grossos. Dito isso, o local de interpolação de centróide é definido como o primeiro exemplo coberto, em ordem crescente de índice de exemplo. A cobertura efetiva do exemplo é e-Ed com o bit correspondente do estado do rasterizador SampleMask.
+Quando o sombreamento de pixels alto é usado com MSAA, para cada pixel fino, ainda haverá gravações no número completo de amostras alocadas para o nível de MSAA do destino. Portanto, o local de interpolação de centroide considerará todos os exemplos de pixels finos em pixels finos. Dito isso, o local de interpolação de centroide é definido como o primeiro exemplo abordado, em ordem crescente de índice de exemplo. A cobertura efetiva do exemplo é AND-ed com o bit correspondente do sampleMask de estado do rasterizador.
 
 > [!NOTE]
-> Quando o sombreamento de pixel grosso é usado na camada 1, SampleMask é sempre uma máscara completa. Se SampleMask estiver configurado para não ser uma máscara completa, o sombreamento de pixel grosso será desabilitado na camada 1.
+> Quando o sombreamento de pixels alto é usado na Camada 1, SampleMask é sempre uma máscara completa. Se SampleMask estiver configurado para não ser uma máscara completa, o sombreamento de pixels está desabilitado na Camada 1.
 
-### <a name="sample-based-execution"></a>Execução baseada em amostra
-A execução baseada em amostra ou a *Superamostragem* &mdash; causada pelo uso do recurso de interpolação de exemplo &mdash; pode ser usada com sombreamento de pixel grosso e faz com que o sombreador de pixel seja invocado por amostra. Para destinos de contagem de exemplo N, o sombreador de pixel é invocado N vezes por pixel fino.
+### <a name="sample-based-execution"></a>Execução baseada em exemplo
+A execução baseada em exemplo ou a *supersamplagem,* que é causada pelo uso do recurso de interpolação de exemplo, pode ser usada com sombreamento de pixels e faz com que o sombreador de pixel seja invocado por &mdash; &mdash; exemplo. Para destinos da contagem de exemplo N, o sombreador de pixel é invocado N vezes por pixel fino.
 
-### <a name="evaluateattributesnapped"></a>EvaluateAttributeSnapped
-Intrínsecos de modelo de pull não são compatíveis com sombreamento de pixel grosso na camada 1. Se houver uma tentativa de usar intrínsecos de modelo de pull com sombreamento de pixel grosso na camada 1, o sombreamento de pixel grosso será desabilitado automaticamente.
+### <a name="evaluateattributesnapped"></a>EvaluateAttributeS sistemat
+Intrínsecos de modelo de pull não são compatíveis com sombreamento de pixels finos na Camada 1. Se houver uma tentativa de usar intrínsecos de modelo de pull com sombreamento de pixel alto na Camada 1, o sombreamento de pixels alto será desabilitado automaticamente.
 
-O intrínseco `EvaluateAttributeSnapped` pode ser usado com sombreamento de pixel grosso na camada 2. Sua sintaxe é a mesma que sempre foi.
+O `EvaluateAttributeSnapped` intrínseco pode ser usado com sombreamento de pixels alto na Camada 2. Sua sintaxe é a mesma que sempre foi.
 
 ```hlsl
 numeric EvaluateAttributeSnapped(   
@@ -281,145 +281,145 @@ numeric EvaluateAttributeSnapped(
     in int2 offset);
 ```
 
-Para o contexto, `EvaluateAttributeSnapped` tem um parâmetro offset com dois campos. Quando usado sem sombreamento de pixel grosso, apenas os quatro bits de ordem inferior de 32 completos são usados. Esses quatro bits representam o intervalo [-8, 7]. Esse intervalo abrange uma grade de 16x16 em um pixel. O intervalo é de tal forma que as bordas superior e esquerda do pixel são incluídas e as bordas inferior e direita não são. Offset (-8,-8) está no canto superior esquerdo e offset (7, 7) é pelo canto inferior direito. Offset (0, 0) é o centro do pixel.
+Para contexto, `EvaluateAttributeSnapped` tem um parâmetro offset com dois campos. Quando usado sem sombreamento de pixels, apenas os quatro bits de ordem inferior do total de 32 são usados. Esses quatro bits representam o intervalo [-8, 7]. Esse intervalo abrange uma grade 16x16 dentro de um pixel. O intervalo é tal que as bordas superior e esquerda do pixel são incluídas e as bordas inferior e direita não são. O deslocamento (-8, -8) está no canto superior esquerdo e o deslocamento (7, 7) é no canto inferior direito. Deslocamento (0, 0) é o centro do pixel.
 
-Quando usado com sombreamento de pixel grosso, `EvaluateAttributeSnapped` o parâmetro offset é capaz de especificar um intervalo maior de locais. O parâmetro offset seleciona uma grade de 16x16 para cada pixel e há vários pixels finos. O intervalo expresso e o número resultante de bits usados dependem do tamanho de pixel grosso. As bordas superior e esquerda do pixel grosso são incluídas e as bordas inferior e direita não são.
+Quando usado com sombreamento de pixels altos, o parâmetro offset de é capaz `EvaluateAttributeSnapped` de especificar um intervalo maior de locais. O parâmetro offset seleciona uma grade 16x16 para cada pixel fino e há vários pixels finos. O intervalo expressível e o número consequente de bits usados depende do tamanho de pixel alto. As bordas superior e esquerda do pixel alto estão incluídas e as bordas inferior e direita não estão.
 
-A tabela a seguir descreve a interpretação do `EvaluateAttributeSnapped` parâmetro offset de cada tamanho de pixel grosso.
+A tabela a seguir descreve a interpretação do `EvaluateAttributeSnapped` parâmetro offset de para cada tamanho de pixel alta.
 
-#### <a name="evaluateattributesnappeds-offset-range"></a>Faixa de deslocamento do EvaluateAttributeSnapped
+#### <a name="evaluateattributesnappeds-offset-range"></a>Intervalo de deslocamento de EvaluateAttributeS offset
 
-|Tamanho de pixel grosso  |Intervalo indexável             |Tamanho de intervalo representável  |Número de bits necessários {x, y}  |Máscara binária de bits utilizáveis          |    
+|Tamanho de pixel muito grande  |Intervalo indexável             |Tamanho do intervalo representável  |Número de bits necessários {x, y}  |Máscara binária de bits usáveis          |    
 |------------------:|---------------------------:|-------------------------:|-----------------------------:|-----------------------------------:|    
-|1x1 (bem)         |{ \[ -8, 7 \] , \[ -8, 7 \] }      |{16, 16}                  |{4, 4}                        |{000000000000xxxx, 000000000000xxxx}|    
-|1x2                |{ \[ -8, 7 \] , \[ -16, 15 \] }    |{16, 32}                  |{4, 5}                        |{000000000000xxxx, 00000000000xxxxx}|    
-|2x1                |{ \[ -16, 15 \] , \[ -8, 7 \] }    |{32, 16}                  |{5, 4}                        |{00000000000xxxxx, 000000000000xxxx}|    
-|2x2                |{ \[ -16, 15 \] , \[ -16, 15 \] }  |{32, 32}                  |{5, 5}                        |{00000000000xxxxx, 00000000000xxxxx}|    
-|2x4                |{ \[ -16, 15 \] , \[ -32, 31 \] }  |{32, 64}                  |{5, 6}                        |{00000000000xxxxx, 0000000000xxxxxx}|    
-|4x2                |{ \[ -32, 31 \] , \[ -16, 15 \] }  |{64, 32}                  |{6, 5}                        |{0000000000xxxxxx, 00000000000xxxxx}|    
-|4x4                |{ \[ -32, 31 \] , \[ -32, 31 \] }  |{64, 64}                  |{6, 6}                        |{0000000000xxxxxx, 0000000000xxxxxx}|   
+|1x1 (bom)         |{ \[ -8, 7 \] , \[ -8, 7 \] }      |{16, 16}                  |{4, 4}                        |{00000000000xxxx, 0000000000xxxx}|    
+|1x2                |{ \[ -8, 7 \] , \[ -16, 15 \] }    |{16, 32}                  |{4, 5}                        |{00000000000xxxx, 0000000000xxxx}|    
+|2x1                |{ \[ -16, 15 \] , \[ -8, 7 \] }    |{32, 16}                  |{5, 4}                        |{0000000000xxxxx, 00000000000xxxx}|    
+|2x2                |{ \[ -16, 15 \] , \[ -16, 15 \] }  |{32, 32}                  |{5, 5}                        |{0000000000xxxxx, 0000000000xxxx}|    
+|2x4                |{ \[ -16, 15 \] , \[ -32, 31 \] }  |{32, 64}                  |{5, 6}                        |{0000000000xxxxx, 000000000xxxxxx}|    
+|4x2                |{ \[ -32, 31 \] , \[ -16, 15 \] }  |{64, 32}                  |{6, 5}                        |{000000000xxxxxx, 0000000000xxxx}|    
+|4x4                |{ \[ -32, 31 \] , \[ -32, 31 \] }  |{64, 64}                  |{6, 6}                        |{000000000xxxxxx, 000000000xxxxxx}|   
 
-As tabelas a seguir são um guia para conversão de ponto fixo para representação decimal e fracionária. O primeiro bit utilizável na máscara binária é o bit de sinal e o restante da máscara binária é composto pela parte numérica.
+As tabelas a seguir são um guia para conversão do ponto fixo em representação decimal e fracionada. O primeiro bit acessível na máscara binária é o bit de sinal e o restante da máscara binária consiste na parte numérica.
 
-O esquema numérico para valores de quatro bits passados para `EvaluateAttributeSnapped` não é específico do sombreamento de taxa variável. Ele é reiterado aqui para fins de integridade.
+O esquema de número para valores de quatro bits passados para `EvaluateAttributeSnapped` não é específico para sombreamento de taxa variável. Ele é rebaixado aqui para a conclusão.
 
 Para valores de quatro bits.
 
 | Valor binário | Decimal  | Fracionário |
 |-------------:|---------:|-----------:|
-|         1000 |-0,5 f     |-8/16     |
-|         1001 |-0.4375 f  |-7/16|    |
-|         1010 |-0.375 f   |-6/16|    |
-|         1011 |-0.3125 f  |-5/16     |
-|         1100 |-0,25 f    |-4/16     |
-|         1101 |-0.1875 f  |-3/16     |
-|         1110 |-0,125 f   |-2/16     |
-|         1111 |-0.0625 f  |-1/16      |
-|         0000 |0,0 f      |0 / 16      |
-|         0001 |-0.0625 f  |1 / 16      |
-|         0010 |-0,125 f   |2 / 16      |
-|         0011 |-0.1875 f  |3 / 16      |
-|         0100 |-0,25 f    |4 / 16      |
-|         0101 |-0.3125 f  |5 / 16      |
-|         0110 |-0.375 f   |6 / 16      |
-|         0111 |-0.4375 f  |7 / 16      |
+|         1000 |-0,5f     |-8 / 16     |
+|         1001 |-0,4375f  |-7 / 16|    |
+|         1010 |-0,375f   |-6 / 16|    |
+|         1011 |-0,3125f  |-5 / 16     |
+|         1100 |-0,25f    |-4 / 16     |
+|         1101 |-0,1875f  |-3 / 16     |
+|         1110 |-0,125f   |-2 / 16     |
+|         1111 |-0,0625f  |-1 /16      |
+|         0000 |0.0f      |0 / 16      |
+|         0001 |-0,0625f  |1 / 16      |
+|         0010 |-0,125f   |2 / 16      |
+|         0011 |-0,1875f  |3 / 16      |
+|         0100 |-0,25f    |4 / 16      |
+|         0101 |-0,3125f  |5 / 16      |
+|         0110 |-0,375f   |6 / 16      |
+|         0111 |-0,4375f  |7 / 16      |
 
 Para valores de cinco bits.
 
 | Valor binário | Decimal  | Fracionário |
 |-------------:|---------:|-----------:|
-|        10000 |-1        |-16/16    |
-|        10001 |-0,9375   |-15/16    |
-|        10010 |-0,875    |-14/16    |
-|        10011 |-0,8125   |-13/16    |
-|        10100 |-0,75     |-12/16    |
-|        10101 |-0,6875   |-11/16    |
-|        10110 |-0,625    |-10/16    |
-|        10111 |-0,5625   |-9/16     |
-|        11000 |-0,5      |-8/16     |
-|        11001 |-0,4375   |-7/16     |
-|        11010 |-0,375    |-6/16     |
-|        11011 |-0,3125   |-5/16     |
-|        11100 |-0,25     |-4/16     |
-|        11101 |-0,1875   |-3/16     |
-|        11110 |-0,125    |-2/16     |
-|        11111 |-0, 625   |-1/16     |
+|        10000 |-1        |-16 / 16    |
+|        10001 |-0.9375   |-15 / 16    |
+|        10010 |-0.875    |-14 / 16    |
+|        10011 |-0.8125   |-13 / 16    |
+|        10100 |-0.75     |-12 / 16    |
+|        10101 |-0.6875   |-11 / 16    |
+|        10110 |-0.625    |-10 / 16    |
+|        10111 |-0.5625   |-9 / 16     |
+|        11000 |-0,5      |-8 / 16     |
+|        11001 |-0.4375   |-7 / 16     |
+|        11010 |-0.375    |-6 / 16     |
+|        11011 |-0.3125   |-5 / 16     |
+|        11100 |-0.25     |-4 / 16     |
+|        11101 |-0.1875   |-3 / 16     |
+|        11110 |-0.125    |-2 / 16     |
+|        11111 |-0.0625   |-1 / 16     |
 |        00000 |0         |0 / 16      |
-|        00001 |0, 625    |1 / 16      |
+|        00001 |0.0625    |1 / 16      |
 |        00010 |0,125     |2 / 16      |
-|        00011 |0,1875    |3 / 16      |
+|        00011 |0.1875    |3 / 16      |
 |        00100 |0,25      |4 / 16      |
-|        00101 |0,3125    |5 / 16      |
-|        00110 |0,375     |6 / 16      |
-|        00111 |0,4375    |7 / 16      |
+|        00101 |0.3125    |5 / 16      |
+|        00110 |0.375     |6 / 16      |
+|        00111 |0.4375    |7 / 16      |
 |        01000 |0,5       |8 / 16      |
-|        01001 |0,5625    |9 / 16      |
-|        01010 |0,625     |10 / 16     |
-|        01011 |0,6875    |11 / 16     |
+|        01001 |0.5625    |9 / 16      |
+|        01010 |0.625     |10 / 16     |
+|        01011 |0.6875    |11 / 16     |
 |        01100 |0,75      |12 / 16     |
-|        01101 |0,8125    |13 / 16     |
-|        01110 |0,875     |14 / 16     |
-|        01111 |0,9375    |15 / 16     |
+|        01101 |0.8125    |13 / 16     |
+|        01110 |0.875     |14 / 16     |
+|        01111 |0.9375    |15 / 16     |
 
 Para valores de seis bits.
 
 | Valor binário | Decimal  | Fracionário |
 |-------------:|---------:|-----------:|
-|       100000 |-2        |-32/16    |
-|       100001 |-1,9375   |-31/16    |
-|       100010 |-1,875    |-30/16    |
-|       100011 |-1,8125   |-29/16    |
-|       100100 |-1,75     |-28/16    |
-|       100101 |-1,6875   |-27/16    |
-|       100110 |-1,625    |-26/16    |
-|       100111 |-1,5625   |-25/16    |
-|       101000 |-1,5      |-24/16    |
-|       101001 |-1,4375   |-23/16    |
-|       101010 |-1,375    |-22/16    |
-|       101011 |-1,3125   |-21/16    |
-|       101100 |-1,25     |-20/16    |
-|       101101 |-1,1875   |-19/16    |
-|       101110 |-1,125    |-18/16    |
-|       101111 |-1, 625   |-17/16    |
-|       110000 |-1        |-16/16    |
-|       110001 |-0,9375   |-15/16    |
-|       110010 |-0,875    |-14/16    |
-|       110011 |-0,8125   |-13/16    |
-|       110100 |-0,75     |-12/16    |
-|       110101 |-0,6875   |-11/16    |
-|       110110 |-0,625    |-10/16    |
-|       110111 |-0,5625   |-9/16     |
-|       111000 |-0,5      |-8/16     |
-|       111001 |-0,4375   |-7/16     |
-|       111010 |-0,375    |-6/16     |
-|       111011 |-0,3125   |-5/16     |
-|       111100 |-0,25     |-4/16     |
-|       111101 |-0,1875   |-3/16     |
-|       111110 |-0,125    |-2/16     |
-|       111111 |-0, 625   |-1/16     |
+|       100000 |-2        |-32 / 16    |
+|       100001 |-1.9375   |-31 / 16    |
+|       100010 |-1.875    |-30 / 16    |
+|       100011 |-1.8125   |-29 / 16    |
+|       100100 |-1.75     |-28 / 16    |
+|       100101 |-1.6875   |-27 / 16    |
+|       100110 |-1.625    |-26 / 16    |
+|       100111 |-1.5625   |-25 / 16    |
+|       101000 |-1.5      |-24 / 16    |
+|       101001 |-1.4375   |-23 / 16    |
+|       101010 |-1.375    |-22 / 16    |
+|       101011 |-1.3125   |-21 / 16    |
+|       101100 |-1.25     |-20 / 16    |
+|       101101 |-1.1875   |-19 / 16    |
+|       101110 |-1.125    |-18 / 16    |
+|       101111 |-1.0625   |-17 / 16    |
+|       110000 |-1        |-16 / 16    |
+|       110001 |-0.9375   |-15 / 16    |
+|       110010 |-0.875    |-14 / 16    |
+|       110011 |-0.8125   |-13 / 16    |
+|       110100 |-0.75     |-12 / 16    |
+|       110101 |-0.6875   |-11 / 16    |
+|       110110 |-0.625    |-10 / 16    |
+|       110111 |-0.5625   |-9 / 16     |
+|       111000 |-0,5      |-8 / 16     |
+|       111001 |-0.4375   |-7 / 16     |
+|       111010 |-0.375    |-6 / 16     |
+|       111011 |-0.3125   |-5 / 16     |
+|       111100 |-0.25     |-4 / 16     |
+|       111101 |-0.1875   |-3 / 16     |
+|       111110 |-0.125    |-2 / 16     |
+|       111111 |-0.0625   |-1 / 16     |
 |       000000 |0         |0 / 16      |
-|       000001 |0, 625    |1 / 16      |
+|       000001 |0.0625    |1 / 16      |
 |       000010 |0,125     |2 / 16      |
-|       000011 |0,1875    |3 / 16      |
+|       000011 |0.1875    |3 / 16      |
 |       000100 |0,25      |4 / 16      |
-|       000101 |0,3125    |5 / 16      |
-|       000110 |0,375     |6 / 16      |
-|       000111 |0,4375    |7 / 16      |
+|       000101 |0.3125    |5 / 16      |
+|       000110 |0.375     |6 / 16      |
+|       000111 |0.4375    |7 / 16      |
 |       001000 |0,5       |8 / 16      |
-|       001001 |0,5625    |9 / 16      |
-|       001010 |0,625     |10 / 16     |
-|       001011 |0,6875    |11 / 16     |
+|       001001 |0.5625    |9 / 16      |
+|       001010 |0.625     |10 / 16     |
+|       001011 |0.6875    |11 / 16     |
 |       001100 |0,75      |12 / 16     |
-|       001101 |0,8125    |13 / 16     |
-|       001110 |0,875     |14 / 16     |
-|       001111 |0,9375    |15 / 16     |
+|       001101 |0.8125    |13 / 16     |
+|       001110 |0.875     |14 / 16     |
+|       001111 |0.9375    |15 / 16     |
 |       010000 |1         |16 / 16     |
-|       010001 |1, 625    |17 / 16     |
+|       010001 |1.0625    |17 / 16     |
 |       010010 |1.125     |18 / 16     |
-|       010011 |1,1875    |19 / 16     |
+|       010011 |1.1875    |19 / 16     |
 |       010100 |1,25      |20 / 16     |
-|       010101 |1,3125    |21 / 16     |
-|       010110 |1,375     |22 / 16     |
+|       010101 |1.3125    |21 / 16     |
+|       010110 |1.375     |22 / 16     |
 |       010111 |1,4375    |23 / 16     |
 |       011000 |1.5       |24 / 16     |
 |       011001 |1,5625    |25 / 16     |

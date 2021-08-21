@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: a68da290ecb04e9cb7ae49c5525997fbf4c112a3
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d278a6104a6c47d84623b185f78b921d61899f296eeaa557a6c6c6d5344097b6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104172810"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119487076"
 ---
 # <a name="setp_comp---ps"></a>setp \_ comp-PS
 
@@ -42,7 +42,7 @@ Em que:
     | \_GE   | Maior ou igual |
     | \_quivo   | Inferior ou igual    |
     | \_EQ   | Igual a              |
-    | \_m   | Não igual a          |
+    | \_m   | É diferente de          |
 
     
 

@@ -1,11 +1,11 @@
 ---
 title: Método IWMPClosedCaption2 getSAMILangID
-description: O método getSAMILangID retorna o LCID (identificador de localidade) de um idioma com suporte do arquivo SAMI atual.
+description: O método getSAMILangID retorna o LCID (identificador de localidade) de um idioma com suporte no arquivo SAMI atual.
 ms.assetid: 41aca317-6182-47c3-8bd9-ba42b92b10f4
 keywords:
-- método getSAMILangID Windows Media Player
-- método getSAMILangID Windows Media Player, interface IWMPClosedCaption2
-- Interface IWMPClosedCaption2 Windows Media Player, método getSAMILangID
+- Método getSAMILangID Windows Media Player
+- Método getSAMILangID Windows Media Player interface , IWMPClosedCaption2
+- Interface IWMPClosedCaption2 Windows Media Player , método getSAMILangID
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bb9aaebecf8e86c056fa9c91141042facc6bcc18
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a0fc62222f98d6c056bb8ce9ffd328582a6764202bb8446617471d3f7cb4a5ae
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759930"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119506425"
 ---
-# <a name="iwmpclosedcaption2getsamilangid-method"></a>Método IWMPClosedCaption2:: getSAMILangID
+# <a name="iwmpclosedcaption2getsamilangid-method"></a>Método IWMPClosedCaption2::getSAMILangID
 
-O método **getSAMILangID** retorna o LCID (identificador de localidade) de um idioma com suporte do arquivo Sami atual.
+O **método getSAMILangID** retorna o LCID (identificador de localidade) de um idioma com suporte no arquivo SAMI atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,22 +53,22 @@ Implements IWMPClosedCaption2.getSAMILangID
 
 <dl> <dt>
 
-*nIndex* \[ no\]
+*nIndex* \[ Em\]
 </dt> <dd>
 
-Um **System. Int32** que é o índice de base zero do LCID a ser recuperado.
+Um **System.Int32 que** é o índice baseado em zero do LCID a ser recuperado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Um **System. Int32** que é o LCID do idioma com o índice especificado.
+Um **System.Int32** que é o LCID da linguagem com o índice especificado.
 
 ## <a name="remarks"></a>Comentários
 
 Os idiomas em um arquivo SAMI são indexados na ordem mostrada no arquivo, começando com zero.
 
-Esse método retorna 0, a menos que um arquivo de mídia digital esteja aberto (AxWindowsMediaPlayer. OpenState é igual a 13).
+Esse método retorna 0, a menos que um arquivo de mídia digital esteja aberto (AxWindowsMediaPlayer.openState é igual a 13).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -76,7 +76,7 @@ Esse método retorna 0, a menos que um arquivo de mídia digital esteja aberto (
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 
@@ -86,7 +86,7 @@ Esse método retorna 0, a menos que um arquivo de mídia digital esteja aberto (
 
 <dl> <dt>
 
-[**Adicionando legendas ocultas à mídia digital**](adding-closed-captions-to-digital-media.md)
+[**Adicionando legendas fechadas à mídia digital**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Interface IWMPClosedCaption (VB e C#)**](iwmpclosedcaption--vb-and-c.md)

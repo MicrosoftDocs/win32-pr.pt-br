@@ -1,9 +1,9 @@
 ---
-title: CDN_FILEOK código de notificação (Commdlg. h)
-description: Enviado por uma caixa de diálogo abrir no estilo do Explorer ou salvar como quando o usuário especifica um nome de arquivo e clica no botão OK.
+title: CDN_FILEOK de notificação (Commdlg.h)
+description: Enviado por uma caixa de diálogo Abrir ou Salvar como no estilo Explorer quando o usuário especifica um nome de arquivo e clica no botão OK.
 ms.assetid: 7f3de96f-68d8-4f40-b74f-304835f9def2
 keywords:
-- Caixas de diálogo CDN_FILEOK código de notificação
+- CDN_FILEOK de diálogo de código de notificação
 topic_type:
 - apiref
 api_name:
@@ -14,18 +14,18 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5aef63d531b603c94369936374bc10531639254
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5e32e9b4abbae65c2c29020bdab191272921ee601eebff1e7b07e0c674c783dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105759020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119787416"
 ---
-# <a name="cdn_fileok-notification-code"></a>Código de notificação da CDN \_ FILEOK
+# <a name="cdn_fileok-notification-code"></a>\_CDN Código de notificação FILEOK
 
-Enviado por uma caixa de diálogo **abrir** no estilo do Explorer ou **salvar como** quando o usuário especifica um nome de arquivo e clica no botão **OK** .
+Enviado por uma caixa de diálogo **Abrir** ou Salvar **como** no estilo Explorer quando o usuário especifica um nome de arquivo e clica no **botão OK.**
 
-Seu procedimento de gancho [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recebe essa mensagem na forma de uma mensagem de [**\_ notificação do WM**](../controls/wm-notify.md) .
+O [*procedimento de gancho OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc) recebe essa mensagem na forma de uma mensagem WM [**\_ NOTIFY.**](../controls/wm-notify.md)
 
 
 ```C++
@@ -49,23 +49,23 @@ Este parâmetro não é usado.
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) .
+Um ponteiro para uma [**estrutura OFNOTIFY.**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 
-A estrutura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contém uma estrutura [**NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) cujo membro de **código** indica a mensagem de notificação **CDN \_ FILEOK** .
+A [**estrutura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) contém uma [**estrutura NMHDR**](/windows/win32/api/richedit/ns-richedit-nmhdr) **cujo** membro de código indica a CDN de notificação **\_ FILEOK.**
 
-A estrutura [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) também contém um ponteiro para uma estrutura [**da OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) cujo membro **lpstrFile** especifica o endereço do nome de arquivo selecionado.
+A [**estrutura OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya) também contém um ponteiro para uma estrutura [**OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) cujo membro **lpstrFile** especifica o endereço do nome de arquivo selecionado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se o procedimento de gancho retornar zero, a caixa de diálogo aceitará o nome de arquivo especificado e fechará.
 
-Para rejeitar o nome de arquivo especificado e forçar a caixa de diálogo a permanecer aberta, retorne um valor diferente de zero do procedimento de gancho e chame a função [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) para definir um valor de **\_ MSGRESULT de DWL** diferente.
+Para rejeitar o nome do arquivo especificado e forçar a caixa de diálogo a permanecer aberta, retorne um valor diferente de zero do procedimento de gancho e chame a função [**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) para definir um valor **\_ MSGRESULT** de DWL diferente de zero.
 
 ## <a name="remarks"></a>Comentários
 
-O sistema enviará essa notificação somente se a caixa de diálogo tiver sido criada usando o valor do **OFN \_ Explorer** .
+O sistema enviará essa notificação somente se a caixa de diálogo tiver sido criada usando o **valor OFN \_ EXPLORER.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ O sistema enviará essa notificação somente se a caixa de diálogo tiver sido 
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>Commdlg. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Commdlg.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -86,10 +86,10 @@ O sistema enviará essa notificação somente se a caixa de diálogo tiver sido 
 **Referência**
 </dt> <dt>
 
-[**GetOpenFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
+[**Getopenfilename**](/windows/desktop/api/Commdlg/nf-commdlg-getopenfilenamea)
 </dt> <dt>
 
-[**GetSaveFileName**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
+[**Getsavefilename**](/windows/desktop/api/Commdlg/nf-commdlg-getsavefilenamea)
 </dt> <dt>
 
 [*OFNHookProc*](/windows/win32/api/commdlg/nc-commdlg-lpofnhookproc)
@@ -98,22 +98,22 @@ O sistema enviará essa notificação somente se a caixa de diálogo tiver sido 
 [**OFNOTIFY**](/windows/desktop/api/Commdlg/ns-commdlg-ofnotifya)
 </dt> <dt>
 
-[**DA OPENFILENAME**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
+[**Openfilename**](/windows/win32/api/commdlg/ns-commdlg-openfilenamea)
 </dt> <dt>
 
-[**SetWindowLong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga)
+[**Setwindowlong**](/windows/desktop/api/winuser/nf-winuser-setwindowlonga)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
-[Biblioteca de caixa de diálogo comum](common-dialog-box-library.md)
+[Biblioteca de caixas de diálogo comuns](common-dialog-box-library.md)
 </dt> <dt>
 
 **Outros recursos**
 </dt> <dt>
 
-[**notificação do WM \_**](../controls/wm-notify.md)
+[**WM \_ NOTIFY**](../controls/wm-notify.md)
 </dt> </dl>
 
  

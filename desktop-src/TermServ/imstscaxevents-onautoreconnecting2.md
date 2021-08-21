@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 901bb196922d1772782ab7f1c911c96573c88b36
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 194c21fc8ddc6f93ac4816752956f8de5a1d5df71b3af98ddadf8aba48e421a2
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105759937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512486"
 ---
 # <a name="imstscaxeventsonautoreconnecting2-method"></a>Método IMsTscAxEvents:: OnAutoReconnecting2
 
@@ -74,7 +74,7 @@ O número máximo de tentativas que serão feitas no processo de reconexão auto
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

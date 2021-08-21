@@ -6,12 +6,12 @@ keywords:
 - Propriedade de tempos limite do servidor HTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 26fcd1376e8b7394a3a037bbbe00495466e32609
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: bfd0495950a83ba2e675fc5b89efd33d3c53c90e0c21ad306d5845b6bafae324
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090854"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119562466"
 ---
 # <a name="server-timeouts-property"></a>Propriedade de tempos limite do servidor
 
