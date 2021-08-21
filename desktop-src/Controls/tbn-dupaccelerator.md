@@ -3,7 +3,7 @@ title: TBN_DUPACCELERATOR código de notificação (commctrl. h)
 description: Asseguro se uma tecla aceleradora pode ser usada em duas ou mais barras de ferramentas ativas. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
 ms.assetid: 98068d1a-1460-4be3-8575-9294b82ce903
 keywords:
-- TBN_DUPACCELERATOR de código de notificação controles do Windows
+- TBN_DUPACCELERATOR código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4e530fa2101f8145148b7ede7d74f53a1828fa58
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a0ff0059a6071db79cab91fcf903a1e68f3550c766b3d16cd3571c3a785e7368
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009597"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829320"
 ---
 # <a name="tbn_dupaccelerator-notification-code"></a>Código de notificação do TBN \_ DUPACCELERATOR
 
@@ -45,7 +45,7 @@ Um ponteiro para uma estrutura que fornece um acelerador e que recebe um valor q
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se for bem-sucedido; caso contrário, **false**.
 
@@ -68,9 +68,9 @@ typedef struct tagNMTBDUPACCELERATOR
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

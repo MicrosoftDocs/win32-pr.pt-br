@@ -4,12 +4,12 @@ ms.assetid: 0592f7a4-cace-41b0-91e3-2811f72aeb3e
 title: JobDigitalSignatureProcessing
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f9491a921d9d733dd0de0a4e5133d5c6690b2b4a
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 1c23d8ca5286f87dc6a33291272de73a56408397bc6ad98149bd5c732ffc6348
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112408939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117686448"
 ---
 # <a name="jobdigitalsignatureprocessing"></a>JobDigitalSignatureProcessing
 
@@ -24,7 +24,7 @@ Descreve a configuração do processamento de assinatura digital para todo o tra
 
 
 
-| Name | Valor |
+| Nome | Valor |
 |----------------------------|--------------------|
 | Tipo de elemento <br/>   | Recurso<br/> |
 | Prefixo de escopo <br/> | Trabalho<br/>     |

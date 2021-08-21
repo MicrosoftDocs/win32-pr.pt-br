@@ -1,20 +1,20 @@
 ---
-title: Funções do coletor de eventos do Windows
-description: A lista a seguir descreve brevemente as funções que são usadas no coletor de eventos do Windows.
+title: Windows Funções do Coletor de Eventos
+description: A lista a seguir descreve brevemente as funções que são usadas no Windows de Eventos.
 ms.assetid: 48155df6-ba9c-4abe-ba84-6190cee95878
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 48c20e3bbee6226d385681c7471bb7fd3f337dfa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 17dd89cb98e3803f171633df0f902250f1147a25bce9d43c83947c2d1e83b6ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104291764"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117937218"
 ---
-# <a name="windows-event-collector-functions"></a>Funções do coletor de eventos do Windows
+# <a name="windows-event-collector-functions"></a>Windows Funções do Coletor de Eventos
 
-A lista a seguir descreve brevemente as funções que são usadas no coletor de eventos do Windows.
+A lista a seguir descreve brevemente as funções que são usadas no Windows de Eventos.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -23,7 +23,7 @@ A lista a seguir descreve brevemente as funções que são usadas no coletor de 
 [**EcClose**](/windows/desktop/api/Evcoll/nf-evcoll-ecclose)
 </dt> <dd>
 
-Fecha um identificador recebido de outras funções do coletor de eventos.
+Fecha um handle recebido de outras funções do Coletor de Eventos.
 
 </dd> <dt>
 
@@ -44,35 +44,35 @@ Continua a enumeração das assinaturas registradas no computador local.
 [**EcGetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarrayproperty)
 </dt> <dd>
 
-Recupera valores de propriedade para as origens de evento de uma assinatura.
+Recupera valores de propriedade para as fontes de evento de uma assinatura.
 
 </dd> <dt>
 
 [**EcGetObjectArraySize**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetobjectarraysize)
 </dt> <dd>
 
-Recupera o número de índices da matriz de valores de propriedade para as origens de evento de uma assinatura.
+Recupera o número de índices da matriz de valores de propriedade para as fontes de evento de uma assinatura.
 
 </dd> <dt>
 
 [**EcGetSubscriptionProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionproperty)
 </dt> <dd>
 
-Recupera um valor de propriedade de um objeto de assinatura.
+Recupera um valor da propriedade de um objeto de assinatura.
 
 </dd> <dt>
 
 [**EcGetSubscriptionRunTimeStatus**](/windows/desktop/api/Evcoll/nf-evcoll-ecgetsubscriptionruntimestatus)
 </dt> <dd>
 
-Recupera as informações de status de tempo de execução para uma origem de evento de uma assinatura ou a própria assinatura.
+Recupera as informações de status de tempo de run time para uma origem de evento de uma assinatura ou da própria assinatura.
 
 </dd> <dt>
 
 [**EcInsertObjectArrayElement**](/windows/desktop/api/Evcoll/nf-evcoll-ecinsertobjectarrayelement)
 </dt> <dd>
 
-Insere um objeto vazio em uma matriz de valores de propriedade para as origens de evento de uma assinatura.
+Insere um objeto vazio em uma matriz de valores de propriedade para as fontes de evento de uma assinatura.
 
 </dd> <dt>
 
@@ -93,14 +93,14 @@ Abre uma assinatura existente ou cria uma nova assinatura.
 [**EcSaveSubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecsavesubscription)
 </dt> <dd>
 
-Salva as informações de configuração da assinatura.
+Salva informações de configuração de assinatura.
 
 </dd> <dt>
 
 [**EcSetObjectArrayProperty**](/windows/desktop/api/Evcoll/nf-evcoll-ecsetobjectarrayproperty)
 </dt> <dd>
 
-Define um valor de propriedade em uma matriz de valores de propriedade para as origens de evento de uma assinatura.
+Define um valor da propriedade em uma matriz de valores de propriedade para as fontes de evento de uma assinatura.
 
 </dd> <dt>
 
@@ -114,20 +114,20 @@ Define novos valores ou atualiza os valores existentes de uma assinatura.
 [**EcRemoveObjectArrayElement**](/windows/desktop/api/Evcoll/nf-evcoll-ecremoveobjectarrayelement)
 </dt> <dd>
 
-Remove um elemento de uma matriz de objetos que contêm valores de propriedade para as origens de evento de uma assinatura.
+Remove um elemento de uma matriz de objetos que contêm valores de propriedade para as fontes de evento de uma assinatura.
 
 </dd> <dt>
 
 [**EcRetrySubscription**](/windows/desktop/api/Evcoll/nf-evcoll-ecretrysubscription)
 </dt> <dd>
 
-Tenta se conectar novamente à origem do evento de uma assinatura que não está conectada.
+Tentar se conectar à origem do evento de uma assinatura que não está conectada.
 
 </dd> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

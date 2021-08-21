@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7c1bd8435bbc742d3b2135d9f3b024b3196a7e7e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 49e89bb8424106aa9cdf104ce144d4118d8aae96520ddea106ae0a5efca443ef
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105754829"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117836621"
 ---
 # <a name="serial-number-attribute"></a>Serial-Number atributo
 
@@ -103,7 +103,7 @@ Parte da especificação X. 500. Não usado pelo Active Directory.
 | É de valor único       | Falso                                                                                                             |
 | É indexado             | Falso                                                                                                             |
 | No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| NT-Security-Descriptor | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
@@ -121,10 +121,10 @@ Parte da especificação X. 500. Não usado pelo Active Directory.
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | Falso                                                                                                             |
+| Tem valor único       | Falso                                                                                                             |
 | É indexado             | Falso                                                                                                             |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
@@ -142,10 +142,10 @@ Parte da especificação X. 500. Não usado pelo Active Directory.
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | Falso                                                                                                             |
+| Tem valor único       | Falso                                                                                                             |
 | É indexado             | Falso                                                                                                             |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |
@@ -163,10 +163,10 @@ Parte da especificação X. 500. Não usado pelo Active Directory.
 | ID do link                | \-                                                                                                                |
 | MAPI-Id                | 0x8130                                                                                                            |
 | System-Only            | Falso                                                                                                             |
-| É de valor único       | Falso                                                                                                             |
+| Tem valor único       | Falso                                                                                                             |
 | É indexado             | Falso                                                                                                             |
-| No catálogo global      | Falso                                                                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                      |
+| No Catálogo Global      | Falso                                                                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                      |
 | Range-Lower            | 1                                                                                                                 |
 | Range-Upper            | 64                                                                                                                |
 | Search-Flags           | 0x00000000                                                                                                        |

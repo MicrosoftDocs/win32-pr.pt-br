@@ -1,19 +1,19 @@
 ---
-description: Origem do identificador de fornecedor do dispositivo Bluetooth.
+description: origem do identificador de fornecedor do dispositivo Bluetooth.
 ms.assetid: 1e46f850-5f10-4de2-90fb-f9fe6e88c4d8
 title: System. DeviceInterface. Bluetooth. VendorIdSource
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 515fe628c7abe8672697f5f4acd054a87f4d4a54
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 450bbac63702137fac2008082abb9ff50f10ba73648537c726fe864859ed0347
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010962"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118054930"
 ---
 # <a name="systemdeviceinterfacebluetoothvendoridsource"></a>System. DeviceInterface. Bluetooth. VendorIdSource
 
-Origem do identificador de fornecedor do dispositivo Bluetooth.
+origem do identificador de fornecedor do dispositivo Bluetooth.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511
 

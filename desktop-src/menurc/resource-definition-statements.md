@@ -1,5 +1,5 @@
 ---
-title: Instruções Resource-Definition dados
+title: Instruções Resource-Definition de Resource-Definition
 description: As instruções de definição de recurso definem os recursos que o compilador de recursos coloca no recurso (. Res) file.
 ms.assetid: f96b8c1e-8188-40b7-8eda-c13b61b8fc41
 keywords:
@@ -14,7 +14,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117869902"
 ---
-# <a name="resource-definition-statements"></a>Instruções Resource-Definition dados
+# <a name="resource-definition-statements"></a>Instruções Resource-Definition de Resource-Definition
 
 As instruções de definição de recurso definem os recursos que o compilador de recursos coloca no recurso (. Res) file. Após o . O arquivo Res está vinculado ao arquivo executável, o aplicativo pode carregar seus recursos em tempo de execução, conforme necessário. Todas as instruções de recurso associam um nome ou número de identificação a um determinado recurso.
 
@@ -104,7 +104,7 @@ Para obter mais informações sobre recursos MFC predefinidos, consulte [TN023](
 | [**ADICIONARMENU**](menu-statement.md)                       | Define o menu para a caixa de diálogo.                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | [**MENUITEM**](menuitem-statement.md)               | Define um item de menu.                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | [**ESTILO**](style-statement.md)                     | Define o estilo da janela para a caixa de diálogo.                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| [**Versão**](version-statement.md)                 | Especifica informações de versão para um recurso que pode ser usado pela ferramenta que pode ler ou gravar arquivos de definição de recurso.                                                                                                                                                                                                                                                                                                                                                                     |
+| [**VERSÃO**](version-statement.md)                 | Especifica informações de versão para um recurso que pode ser usado pela ferramenta que pode ler ou gravar arquivos de definição de recurso.                                                                                                                                                                                                                                                                                                                                                                     |
 
 
 

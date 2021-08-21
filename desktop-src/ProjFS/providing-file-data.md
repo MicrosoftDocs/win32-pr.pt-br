@@ -4,12 +4,12 @@ description: Descreve como um provedor fornece informações de espaço reservad
 ms.assetid: <GUID-GOES-HERE>
 ms.date: 10/01/2018
 ms.topic: article
-ms.openlocfilehash: 341a0f1c477b605b2a437edf311c380910744ac0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 4f0da65095e908ec3211bb23be654ee9e0e2853c093bb36e8a92701c24106ff4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366385"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117792390"
 ---
 # <a name="providing-file-data"></a>Fornecer dados de arquivo
 
@@ -29,7 +29,7 @@ Quando ProjFS chama o retorno de chamada de **PRJ_GET_PLACEHOLDER_INFO_CB** do p
 
     > Se o armazenamento de backup der suporte a links simbólicos, o provedor deverá usar **[PrjWritePlaceholderInfo2](/windows/win32/api/projectedfslib/nf-projectedfslib-prjwriteplaceholderinfo2)** para enviar os dados de espaço reservado para ProjFS.  O **PrjWritePlaceholderInfo2** dá suporte a uma entrada de buffer extra que permite que o provedor especifique que o espaço reservado é um link simbólico e qual é seu destino.  Caso contrário, ele se comporta conforme descrito acima para **PrjWritePlaceholderInfo**.  O exemplo a seguir ilustra como usar o **PrjWritePlaceholderInfo2** para fornecer suporte para links simbólicos.
     >
-    > Observe que o **PrjWritePlaceholderInfo2** tem suporte a partir do Windows 10, versão 2004.  Um provedor deve investigar a existência de **PrjWritePlaceholderInfo2**, por exemplo, usando **[GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)**.
+    > observe que **PrjWritePlaceholderInfo2** tem suporte a partir de Windows 10, versão 2004.  Um provedor deve investigar a existência de **PrjWritePlaceholderInfo2**, por exemplo, usando **[GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress)**.
 
 ```C++
 HRESULT

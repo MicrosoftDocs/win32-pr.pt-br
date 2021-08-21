@@ -1,55 +1,55 @@
 ---
-title: Referência de joystick
-description: Referência de joystick
+title: Referência do Conector
+description: Referência do Conector
 ms.assetid: c2ad092f-a0c5-4e28-ada7-227dc52c3c83
 keywords:
-- Multimídia do Windows, referência de joystick
-- multimídia, referência de joystick
-- entrada de multimídia, referência de joystick
+- Windows multimídia, referência de player
+- multimídia, referência de player
+- entrada multimídia, referência de player
 - joysticks, referência
-- referência para joysticks, sobre
-- referência de joystick, sobre
+- referência para os joysticks, sobre
+- referência de ponto de referência,sobre
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 242f3fb21f9da9b1853ae8e9e7f694b9ad3bf711
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 5eb0386239b0d80d9bc23e324f5754a37e79b7caab7aaabc07649ddc655888f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103823692"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118140245"
 ---
-# <a name="joystick-reference"></a>Referência de joystick
+# <a name="joystick-reference"></a>Referência do Conector
 
-Esta seção descreve as funções, as estruturas e as mensagens associadas a joysticks. Os elementos são agrupados da seguinte maneira:
+Esta seção descreve as funções, estruturas e mensagens associadas a nós. Os elementos são agrupados da seguinte forma:
 
 ## <a name="device-capabilities"></a>Funcionalidades do dispositivo
 
--   [**joyGetDevCaps**](/windows/win32/api/joystickapi/nf-joystickapi-joygetdevcaps)
--   [**joyGetNumDevs**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs)
--   [**JOYCAPS**](/windows/win32/api/joystickapi/ns-joystickapi-joycaps)
+-   [**getDevCaps**](/windows/win32/api/joystickapi/nf-joystickapi-joygetdevcaps)
+-   [**getNumDevs**](/windows/win32/api/joystickapi/nf-joystickapi-joygetnumdevs)
+-   [**CAPS DECAPS**](/windows/win32/api/joystickapi/ns-joystickapi-joycaps)
 
-## <a name="querying-a-joystick"></a>Consultando um joystick
+## <a name="querying-a-joystick"></a>Consultando um Ltda
 
--   [**joyConfigChanged**](/windows/desktop/api/joystickapi/nf-joystickapi-joyconfigchanged)
--   [**joyGetPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos)
--   [**joyGetPosEx**](/windows/win32/api/joystickapi/nf-joystickapi-joygetposex)
--   [**JOYINFO**](/windows/win32/api/joystickapi/ns-joystickapi-joyinfo)
--   [**JOYINFOEX**](/windows/win32/api/joystickapi/ns-joystickapi-joyinfoex)
+-   [**fitConfigChanged**](/windows/desktop/api/joystickapi/nf-joystickapi-joyconfigchanged)
+-   [**getPos**](/windows/win32/api/joystickapi/nf-joystickapi-joygetpos)
+-   [**getPosEx**](/windows/win32/api/joystickapi/nf-joystickapi-joygetposex)
+-   [**INFO**](/windows/win32/api/joystickapi/ns-joystickapi-joyinfo)
+-   [**INFOEX**](/windows/win32/api/joystickapi/ns-joystickapi-joyinfoex)
 
-## <a name="capturing-a-joystick"></a>Capturando um joystick
+## <a name="capturing-a-joystick"></a>Capturando um Ltda
 
--   [**joyGetThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joygetthreshold)
--   [**joyReleaseCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joyreleasecapture)
--   [**joySetCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture)
--   [**joySetThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joysetthreshold)
--   [**\_JOY1BUTTONDOWN mm**](mm-joy1buttondown.md)
--   [**\_JOY1BUTTONUP mm**](mm-joy1buttonup.md)
--   [**\_JOY1MOVE mm**](mm-joy1move.md)
--   [**\_JOY1ZMOVE mm**](mm-joy1zmove.md)
--   [**\_JOY2BUTTONDOWN mm**](mm-joy2buttondown.md)
--   [**\_JOY2BUTTONUP mm**](mm-joy2buttonup.md)
--   [**\_JOY2MOVE mm**](mm-joy2move.md)
--   [**\_JOY2ZMOVE mm**](mm-joy2zmove.md)
+-   [**getThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joygetthreshold)
+-   [**tureReleaseCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joyreleasecapture)
+-   [**tureSetCapture**](/windows/win32/api/joystickapi/nf-joystickapi-joysetcapture)
+-   [**setThreshold**](/windows/win32/api/joystickapi/nf-joystickapi-joysetthreshold)
+-   [**MM \_ MM MM1BUTTONDOWN**](mm-joy1buttondown.md)
+-   [**MM \_ MM MM1BUTTONUP**](mm-joy1buttonup.md)
+-   [**MM \_ MM MM1MOVE**](mm-joy1move.md)
+-   [**MM \_ MM MM1ZMOVE**](mm-joy1zmove.md)
+-   [**MM \_ MMBUTTONDOWN**](mm-joy2buttondown.md)
+-   [**MM \_ MM2BUTTONUP**](mm-joy2buttonup.md)
+-   [**MM \_ MM2MOVE**](mm-joy2move.md)
+-   [**MM \_ MM2ZMOVE**](mm-joy2zmove.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -58,6 +58,6 @@ Esta seção descreve as funções, as estruturas e as mensagens associadas a jo
 [Joysticks](joysticks.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

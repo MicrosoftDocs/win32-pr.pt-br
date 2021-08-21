@@ -13,9 +13,9 @@ ms.locfileid: "117736850"
 ---
 # <a name="entering-the-passive-state"></a>Inserindo o estado passivo
 
-O fechamento do objeto força um objeto incorporado ou vinculado ao estado passivo. Normalmente, ele é iniciado a partir da interface do usuário do aplicativo de servidor OLE, como quando o usuário seleciona o comando File Close. Nesse caso, o aplicativo de servidor OLE notifica o contêiner, que libera sua contagem de referência no objeto. Quando todas as referências ao objeto forem liberadas, o objeto poderá ser liberado. Quando todos os objetos forem liberados, o aplicativo do servidor OLE poderá ser encerrado com segurança.
+O fechamento do objeto força um objeto inserido ou vinculado ao estado passivo. Normalmente, ele é iniciado na interface do usuário do aplicativo do servidor OLE, como quando o usuário seleciona o comando Fechar Arquivo. Nesse caso, o aplicativo de servidor OLE notifica o contêiner, que libera sua contagem de referência no objeto . Quando todas as referências ao objeto foram liberadas, o objeto pode ser liberado. Quando todos os objetos foram liberados, o aplicativo de servidor OLE pode ser encerrado com segurança.
 
-Um aplicativo de contêiner também pode iniciar o fechamento do objeto. Para fechar um objeto, o contêiner libera sua contagem de referência depois de concluir uma operação de salvamento opcional. Você pode criar contêineres para liberar objetos quando eles estiverem sendo desativados após uma sessão de ativação in-loco, permitindo que o usuário clique fora do objeto sem perder a sessão de edição ativa.
+Um aplicativo de contêiner também pode iniciar o fechamento do objeto. Para fechar um objeto, o contêiner libera sua contagem de referência depois de concluir uma operação de salvar opcional. Você pode criar contêineres para liberar objetos quando eles estão sendo desativados após uma sessão de ativação in-loco, permitindo que o usuário clique fora do objeto sem perder a sessão de edição ativa.
 
  
 

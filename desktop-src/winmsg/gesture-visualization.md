@@ -4,12 +4,12 @@ ms.assetid: 76D3DFF4-7BB2-49A9-8251-0B5D9376B649
 title: Visualização do gesto (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 551934380e1d5ec0902818466f5840e1dc6718e9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7f572addf2ad7a98dbe3afc63c69a305ea15546e9533918d952271372cf52b5a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105764080"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117849815"
 ---
 # <a name="gesture-visualization"></a>Visualização do gesto
 
@@ -120,9 +120,9 @@ Especifica comentários da interface do usuário para um toque à direita.
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser. h</dt> </dl> |
 
 
 

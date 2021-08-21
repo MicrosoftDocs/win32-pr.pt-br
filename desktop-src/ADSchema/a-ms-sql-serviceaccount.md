@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-netaccount
+title: atributo MS-SQL-la
 description: Uma cadeia de caracteres definida pelo usuário. O padrão é definido como USERACCOUNT.
 ms.assetid: 0db095c8-8492-45c0-b509-d4082cec2c13
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-netaccount
-- Esquema de AD do atributo mS-SQL-netaccount
+- esquema de AD do atributo MS-SQL-netaccount
+- esquema de AD do atributo mS-SQL-netaccount
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ab96de3d56dedd3178e579e100f00b77df4edb7
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 3c23a60f8b8930434e6f74ae414b21c0058da59693b1ae6ab53861c9254cfa1b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105748331"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118016087"
 ---
-# <a name="ms-sql-serviceaccount-attribute"></a>Atributo MS-SQL-netaccount
+# <a name="ms-sql-serviceaccount-attribute"></a>atributo MS-SQL-la
 
 Uma cadeia de caracteres definida pelo usuário. O padrão é definido como USERACCOUNT.
 
@@ -29,8 +29,8 @@ Uma cadeia de caracteres definida pelo usuário. O padrão é definido como USER
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | Conta do MS-SQL-Microsoft                       |
-| LDAP-Display-Name | Conta do mS-SQL-Microsoft                       |
+| CN                | conta do MS-SQL-microsoft                       |
+| LDAP-Display-Name | conta do mS-SQL-microsoft                       |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | Administrador de domínio                        |
 | Frequência de atualização  | Na configuração do sistema.                            |
@@ -121,7 +121,7 @@ Uma cadeia de caracteres definida pelo usuário. O padrão é definido como USER
 | ID do link                | \-                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                    |
 | System-Only            | Falso                                                                                                                 |
-| É de valor único       | True                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                  |
 | É indexado             | Falso                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                          |
@@ -163,7 +163,7 @@ Uma cadeia de caracteres definida pelo usuário. O padrão é definido como USER
 | ID do link                | \-                                                                                                                    |
 | MAPI-Id                | \-                                                                                                                    |
 | System-Only            | Falso                                                                                                                 |
-| É de valor único       | True                                                                                                                  |
+| É de valor único       | Verdadeiro                                                                                                                  |
 | É indexado             | Falso                                                                                                                 |
 | No catálogo global      | Falso                                                                                                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                          |

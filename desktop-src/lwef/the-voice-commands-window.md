@@ -4,16 +4,16 @@ description: A janela comandos de voz
 ms.assetid: 4cbf1eeb-be35-46e5-87c0-08e022db621c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 611ca232c3323b8bcfe3695bcfed42b546e34000
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a59fadeffc58580ea6844d162026066d48784483447cdaeafeb78d9626c9e262
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292503"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117882352"
 ---
 # <a name="the-voice-commands-window"></a>A janela comandos de voz
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 Se um mecanismo de fala compatível estiver instalado, o Microsoft Agent fornecerá uma janela especial chamada **janela de comandos de voz** que exibe os comandos que foram habilitados para voz para reconhecimento de fala. A **janela comandos de voz** serve como um prompt Visual para o que pode ser falado como entrada (comandos não podem ser selecionados com o mouse).
 
@@ -32,9 +32,9 @@ O usuário pode dimensionar e mover a **janela de comandos de voz**. O Microsoft
 [Janela de comandos de voz](voice-commands-window.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

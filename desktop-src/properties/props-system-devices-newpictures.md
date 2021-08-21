@@ -4,12 +4,12 @@ ms.assetid: f08ba9ad-07ab-4c8d-83c1-eb17ee96872a
 title: System. Devices. NewPictures
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ff93e0ecd7a19bbf0fe9e53a181a9a4609a4cb24
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dfe6fa81d317598dab175559f4f0f469692f2da5423fef940d396b242ae14020
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105765247"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117866460"
 ---
 # <a name="systemdevicesnewpictures"></a>System. Devices. NewPictures
 

@@ -1,89 +1,89 @@
 ---
-description: O utilitário de linha de comando do WMI (WMIC) fornece uma interface de linha de comando para o WMI.
+description: O utilitário de linha de comando WMI (WMIC) fornece uma interface de linha de comando para WMI.
 ms.assetid: a0f5c1e2-9a4d-4c2b-b324-58ec01e67b6e
 ms.tgt_platform: multiple
 title: wmic
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 070b21cb21381fb989b81795a6c7e0b787b5c89a
-ms.sourcegitcommit: 556bf3a984f2fc4d18e370329c3043bf3329c93f
+ms.openlocfilehash: a0248ea4ac6a584816da20e8feb8d278d7feab0a018739fa4328c3023179d4b0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107222924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117920996"
 ---
 # <a name="wmic"></a>wmic
 
-O utilitário de linha de comando do WMI (WMIC) fornece uma interface de linha de comando para Instrumentação de Gerenciamento do Windows (WMI). O WMIC é compatível com shells e comandos de utilitário existentes. Veja a seguir um tópico de referência geral para o WMIC. Para obter mais informações e diretrizes sobre como usar o WMIC, incluindo informações adicionais sobre aliases, verbos, switches e comandos, consulte [usando instrumentação de gerenciamento do Windows linha de comando](/previous-versions/windows/it-pro/windows-server-2003/cc779482(v=ws.10)) e [WMIC – use o controle de linha de comando sobre o WMI](/previous-versions/windows/it-pro/windows-2000-server/bb742610(v=technet.10)).
+O utilitário de linha de comando WMI (WMIC) fornece uma interface de linha de comando para Windows WMI (Instrumentação de Gerenciamento). O WMIC é compatível com shells e comandos de utilitário existentes. A seguir está um tópico de referência geral para o WMIC. Para obter mais informações e diretrizes sobre como usar o WMIC, incluindo informações adicionais sobre aliases, verbos, comutadores e comandos, consulte [Using Windows Management Instrumentation Command-line](/previous-versions/windows/it-pro/windows-server-2003/cc779482(v=ws.10)) and [WMIC - Take Command-line Control over WMI](/previous-versions/windows/it-pro/windows-2000-server/bb742610(v=technet.10)).
 
 ## <a name="alias"></a>Alias
 
-Um alias é uma renomeação amigável de uma classe, propriedade ou método que torna o WMI mais fácil de usar e ler. Você pode determinar quais aliases estão disponíveis para WMIC por meio do **/?** . Você também pode determinar os aliases para uma classe específica usando o **<className> /?** . Para obter mais informações, consulte [aliases do WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc736307(v=ws.10)).
+Um alias é uma renomeação amigável de uma classe, propriedade ou método que facilita o uso e a leitura do WMI. Você pode determinar quais aliases estão disponíveis para o WMIC por meio de **/?** . Você também pode determinar os aliases de uma classe específica usando **<className> o /?** . Para obter mais informações, consulte [Aliases WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc736307(v=ws.10)).
 
 ## <a name="switch"></a>Comutador
 
-Um comutador é uma opção WMIC que pode ser definida globalmente ou opcionalmente. Para obter uma lista de opções disponíveis, consulte [Opções de WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc787035(v=ws.10)).
+Uma opção é uma opção WMIC que você pode definir globalmente ou opcionalmente. Para ver uma lista de opções disponíveis, consulte [Comutadores WMIC.](/previous-versions/windows/it-pro/windows-server-2003/cc787035(v=ws.10))
 
 ## <a name="verbs"></a>Verbos
 
-Para usar verbos no WMIC, insira o nome do alias seguido pelo verbo. Se um alias não oferecer suporte a um verbo, você receberá a mensagem "o provedor não é capaz da operação tentada". Para obter mais informações, consulte [verbos do WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc784966(v=ws.10)).
+Para usar verbos no WMIC, insira o nome do alias seguido pelo verbo. Se um alias não dá suporte a um verbo, você recebe a mensagem "o provedor não é capaz da operação tentada". Para obter mais informações, consulte [Verbos WMIC](/previous-versions/windows/it-pro/windows-server-2003/cc784966(v=ws.10)).
 
-A maioria dos aliases dá suporte aos verbos a seguir.
+A maioria dos aliases é suportada com os verbos a seguir.
 
 <dl> <dt>
 
-<span id="ASSOC"></span><span id="assoc"></span>ASSOCIAÇÕES
+<span id="ASSOC"></span><span id="assoc"></span>Assoc
 </dt> <dd>
 
-Retorna o resultado da `Associators of (<wmi_object>)` consulta em que *<\_ objeto WMI>* é o caminho dos objetos retornados pelos comandos de **classe** ou **caminho** . Os resultados são instâncias associadas ao objeto. Quando ASSOC é usado com um alias, as classes com a classe subjacente ao alias são retornadas. Por padrão, a saída é retornada no formato HTML.
+Retorna o resultado da consulta em que<objeto wmi>é o caminho de objetos retornados pelos `Associators of (<wmi_object>)` **comandos PATH** **ou CLASS.** *\_* Os resultados são instâncias associadas ao objeto . Quando ASSOC é usado com um alias, as classes com a classe subjacente ao alias são retornadas. Por padrão, a saída é retornada no formato HTML.
 
-O verbo ASSOC tem as seguintes opções.
+O verbo ASSOC tem as opções a seguir.
 
 
 
 | Opção                         | Descrição                                                                                                       |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| /RESULTCLASS:<classname> | Os pontos de extremidade retornados associados ao objeto de origem devem pertencer ou derivar da classe especificada.      |
-| /RESULTROLE:<rolename>   | Os pontos de extremidade retornados devem reproduzir uma função específica em associações com o objeto de origem.                              |
-| /ASSOCCLASS:<assocclass> | Os pontos de extremidade retornados devem ser associados à origem por meio da classe especificada ou de uma de suas classes derivadas. |
+| /RESULTCLASS:<classname> | Os pontos de extremidade retornados associados ao objeto de origem devem pertencer ou ser derivados da classe especificada.      |
+| /RESULTROLE:<rolename>   | Os pontos de extremidade retornados devem desempenhar uma função específica em associações com o objeto de origem.                              |
+| /ASSOCCLASS:<assocclass> | Os pontos de extremidade retornados devem ser associados à origem por meio da classe especificada ou a uma de suas classes derivadas. |
 
 
 
  
 
-Exemplo: **assoc. do sistema operacional**
+Exemplo: **ASSOC do sistema operacional**
 
 </dd> <dt>
 
-<span id="CALL"></span><span id="call"></span>LIGAÇÃO
+<span id="CALL"></span><span id="call"></span>Chamar
 </dt> <dd>
 
-Executa um método.
+Executa um método .
 
-Exemplo: **serviço em que Caption = ' telnet ' chama STARTSERVICE**
+Exemplo: **SERVIÇO EM QUE CAPTION='TELNET' CHAMA STARTSERVICE**
 
 > [!Note]  
-> Para determinar os métodos disponíveis para uma determinada classe, use **/?**. Por exemplo, **serviço em que Caption = "Telnet" Call/?** lista as funções disponíveis para a classe de serviço.
+> Para determinar os métodos disponíveis para uma determinada classe, use **/?**. Por exemplo, **SERVICE WHERE CAPTION='TELNET' CALL /?** lista as funções disponíveis para a classe de serviço.
 
  
 
 </dd> <dt>
 
-<span id="CREATE"></span><span id="create"></span>CRIADA
+<span id="CREATE"></span><span id="create"></span>Criar
 </dt> <dd>
 
-Cria uma nova instância e define os valores de propriedade. CREATE não pode ser usado para criar uma nova classe.
+Cria uma nova instância e define os valores da propriedade. CREATE não pode ser usado para criar uma nova classe.
 
-Exemplo: **ambiente Create Name = "Temp"; VARIABLEVALUE = "NEW"**
+Exemplo: **ENVIRONMENT CREATE NAME="TEMP"; VARIABLEVALUE="NEW"**
 
 </dd> <dt>
 
-<span id="DELETE"></span><span id="delete"></span>APAGAR
+<span id="DELETE"></span><span id="delete"></span>Excluir
 </dt> <dd>
 
 Exclui a instância atual ou o conjunto de instâncias. DELETE pode ser usado para excluir uma classe.
 
-Exemplo: **processo em que Name = "CALC.EXE" Delete**
+Exemplo: **PROCESS WHERE NAME="CALC.EXE" DELETE**
 
 </dd> <dt>
 
@@ -92,7 +92,7 @@ Exemplo: **processo em que Name = "CALC.EXE" Delete**
 
 Recuperar valores de propriedade específicos.
 
-GET tem as seguintes opções.
+GET tem as opções a seguir.
 
 
 
@@ -100,31 +100,31 @@ GET tem as seguintes opções.
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | /VALUE                               | A saída é formatada com cada valor listado em uma linha separada e com o nome da propriedade.                                           |
 | /ALL                                 | A saída é formatada como uma tabela.                                                                                                            |
-| Vertida<translation table> | Traduza a saída usando a tabela de conversão chamada pelo comando. As tabelas de tradução BasicXml e novírgula estão incluídas com a WMIC. |
-| Cada<interval>              | Repita o comando a cada <interval> segundos.                                                                                         |
-| Ao<format specifier>     | Especifica um nome de arquivo de palavra-chave ou XSL para formatar os dados.                                                                                  |
+| /TRANSLATE:<translation table> | Traduza a saída usando a tabela de tradução chamada pelo comando . As tabelas de tradução BasicXml e NoComma estão incluídas no WMIC. |
+| /EVERY:<interval>              | Repita o comando a cada <interval> segundo.                                                                                         |
+| /format:<format specifier>     | Especifica uma palavra-chave ou nome de arquivo XSL para formatar os dados.                                                                                  |
 
 
 
  
 
-Exemplo: **processar Get Name**
+Exemplo: **PROCESS GET NAME**
 
 </dd> <dt>
 
-<span id="LIST"></span><span id="list"></span>LISTA
+<span id="LIST"></span><span id="list"></span>Lista
 </dt> <dd>
 
-Mostra os dados. LIST é o verbo padrão.
+Mostra dados. LIST é o verbo padrão.
 
-A lista tem os seguintes advérbios.
+LIST tem os seguintes adverbs.
 
 
 
 | Advérbio   | Descrição                                                  |
 |----------|--------------------------------------------------------------|
 | RESUMIDO    | Conjunto principal das propriedades.                                  |
-| FULL     | Conjunto completo de propriedades. Esse é o advérbio padrão para a lista. |
+| FULL     | Conjunto completo de propriedades. Esse é o adverb padrão para LIST. |
 | INSTANCE | Somente caminhos de instância.                                         |
 | STATUS   | Status dos objetos.                                       |
 | SYSTEM   | Propriedades de sistema.                                           |
@@ -133,28 +133,28 @@ A lista tem os seguintes advérbios.
 
  
 
-A lista tem as seguintes opções.
+LIST tem as opções a seguir.
 
 
 
 | Opção                               | Descrição                                                                                                                                |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Vertida<translation table> | Traduza a saída usando a tabela de conversão chamada pelo comando. As tabelas de tradução BasicXml e novírgula estão incluídas com a WMIC. |
-| Cada<interval>              | Repita o comando a cada <interval> segundos.                                                                                         |
-| Ao<format specifier>     | Especifica um nome de arquivo de palavra-chave ou XSL para formatar os dados.                                                                                  |
+| /TRANSLATE:<translation table> | Traduza a saída usando a tabela de tradução chamada pelo comando . As tabelas de tradução BasicXml e NoComma estão incluídas no WMIC. |
+| /EVERY:<interval>              | Repita o comando a cada <interval> segundo.                                                                                         |
+| /format:<format specifier>     | Especifica uma palavra-chave ou nome de arquivo XSL para formatar os dados.                                                                                  |
 
 
 
  
 
-Exemplo: **Resumo da lista de processos**
+Exemplo: **PROCESS LIST BRIEF**
 
 </dd> <dt>
 
-<span id="SET"></span><span id="set"></span>Definição
+<span id="SET"></span><span id="set"></span>Definir
 </dt> <dd>
 
-Atribui valores a propriedades. Exemplo: **ambiente Set Name = "Temp"**, **VARIABLEVALUE = "New"**
+Atribui valores a propriedades. Exemplo: **ENVIRONMENT SET NAME="TEMP"**, **VARIABLEVALUE="NEW"**
 
 </dd> </dl>
 

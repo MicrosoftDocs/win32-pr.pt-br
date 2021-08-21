@@ -15,12 +15,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7034001641029099d1b52090b3cc518b6589dc50
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9dbca67fba51e6e543bb0c79fa11fbd76f8c7226545fc5fcaae5f41da4c314f5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117812300"
 ---
 # <a name="cim_elementconformstoprofile-class"></a>\_Classe CIM ElementConformsToProfile
 

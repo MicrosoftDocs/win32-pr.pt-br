@@ -20,12 +20,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a607cb2bbb2d95451b4f9432b488d8016f94caba
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f11aafbb7ec2a354291cfe2f3de77c3a2f8a3369fe93ddcf11c1fa1d71ff27e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826749"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117718123"
 ---
 # <a name="apiretrievecolumnasdouble-method-jet_sesid-jet_tableid-jet_columnid-retrievecolumngrbit"></a>Método API. RetrieveColumnAsDouble (JET_SESID, JET_TABLEID, JET_COLUMNID, RetrieveColumnGrbit)
 
@@ -92,7 +92,7 @@ public static Nullable<double> RetrieveColumnAsDouble(
     
     Opções de recuperação.
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
 Tipo: [System. Nullable](/dotnet/api/system.nullable-1)\<[Double](/dotnet/api/system.double)\>  
 Os dados recuperados da coluna como um duplo. NULL se a coluna for nula.  

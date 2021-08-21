@@ -1,19 +1,19 @@
 ---
 title: Difxapi.h
-description: Esta seção contém tópicos de referência para o cabeçalho difxapi. h.
+description: Esta seção contém tópicos de referência para o header Difxapi.h.
 ms.assetid: 84da7e54-0677-495e-9dc5-aca4ac12c0b3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c549ed3fd781d9fde4e6ab48703e1df425986d0a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 5f5dcace8f7f8c8ed528849da02016f04e0ca32b2132c7b0587a96872d7cc561
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104162314"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117736015"
 ---
 # <a name="difxapih"></a>Difxapi.h
 
-Esta seção contém tópicos de referência para o cabeçalho difxapi. h.
+Esta seção contém tópicos de referência para o header Difxapi.h.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -21,15 +21,15 @@ Esta seção contém tópicos de referência para o cabeçalho difxapi. h.
 
 | Tópico                                                                 | Descrição                                                                                                                                                                                                                                                                                          |
 |-----------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [*DIFLOGCALLBACK*](/previous-versions/windows/hardware/difxapi/diflogcallback)<br/>                     | Uma função de tipo **DIFLOGCALLBACK** é uma função de retorno de chamada fornecida pelo aplicativo que um aplicativo registra chamando [**SetDifxLogCallback**](/previous-versions/windows/hardware/difxapi/setdifxlogcallback). DIFxAPI chama a função de retorno de chamada para registrar eventos que ocorrem durante a operação DIFxAPI.<br/>                        |
-| [*DIFXAPILOGCALLBACK*](/previous-versions/windows/hardware/difxapi/difxapilogcallback)<br/>             | Uma função de tipo **DIFXAPILOGCALLBACK** é uma função de retorno de chamada fornecida pelo aplicativo que um aplicativo registra com DIFxAPI chamando [**DIFXAPISetLogCallback**](/previous-versions/windows/hardware/difxapi/difxapisetlogcallback). DIFxAPI chama a função de retorno de chamada para registrar eventos que ocorrem durante a operação DIFxAPI.<br/> |
-| [**DIFXAPISetLogCallback**](/previous-versions/windows/hardware/difxapi/difxapisetlogcallback)<br/>     | A função **DIFXAPISetLogCallback** registra uma função de retorno de chamada fornecida pelo chamador que DIFxAPI chama para registrar em log informações sobre eventos que ocorrem durante operações de DIFxAPI. <br/>                                                                                                            |
-| [**DriverPackageGetPath**](/previous-versions/windows/hardware/difxapi/driverpackagegetpath)<br/>       | A função **DriverPackageGetPath** recupera o caminho totalmente qualificado do [arquivo inf](/windows-hardware/drivers/install/overview-of-inf-files) para um pacote de [Driver](/windows-hardware/drivers/install/driver-packages)pré-instalado.<br/>                                                                                                               |
-| [**DriverPackageInstall**](/previous-versions/windows/hardware/difxapi/driverpackageinstall)<br/>       | A função **DriverPackageInstall** pré-instala um pacote de [Driver](/windows-hardware/drivers/install/driver-packages) e instala o driver no sistema.<br/>                                                                                                                                                 |
-| [**DriverPackagePreinstall**](/previous-versions/windows/hardware/difxapi/driverpackagepreinstall)<br/> | A função **DriverPackagePreinstall** pré-instala um pacote de [Driver](/windows-hardware/drivers/install/driver-packages) para um [Driver de função](/windows-hardware/drivers/kernel/function-drivers) plug and Play (PnP) e instala o [arquivo inf](/windows-hardware/drivers/install/overview-of-inf-files) para o pacote de driver no diretório de arquivos INF do sistema.<br/>             |
-| [**DriverPackageUninstall**](/previous-versions/windows/hardware/difxapi/driverpackageuninstall)<br/>   | A função **DriverPackageUninstall** desinstala o [pacote de driver](/windows-hardware/drivers/install/driver-packages) especificado do sistema e remove o pacote de driver. <br/>                                                                                                                               |
-| [**INSTALLERINFO**](/previous-versions/windows/hardware/difxapi/installerinfo)<br/>                     | A estrutura INSTALLERINFO contém informações sobre um aplicativo que o DIFxAPI associa a um [pacote de driver](/windows-hardware/drivers/install/driver-packages). <br/>                                                                                                                                          |
-| [**SetDifxLogCallback**](/previous-versions/windows/hardware/difxapi/setdifxlogcallback)<br/>           | A função **SetDifxLogCallback** registra uma função de retorno de chamada fornecida pelo chamador que DIFxAPI chama para registrar em log informações sobre eventos que ocorrem durante operações de DIFxAPI. <br/>                                                                                                               |
+| [*DIFLOGCALLBACK*](/previous-versions/windows/hardware/difxapi/diflogcallback)<br/>                     | Uma **função de tipo DIFLOGCALLBACK** é uma função de retorno de chamada fornecida pelo aplicativo que um aplicativo registra chamando [**SetDifxLogCallback**](/previous-versions/windows/hardware/difxapi/setdifxlogcallback). DIFxAPI chama a função de retorno de chamada para registrar eventos que ocorrem durante a operação DIFxAPI.<br/>                        |
+| [*DIFXAPILOGCALLBACK*](/previous-versions/windows/hardware/difxapi/difxapilogcallback)<br/>             | Uma **função de tipo DIFXAPILOGCALLBACK** é uma função de retorno de chamada fornecida pelo aplicativo que um aplicativo registra com DIFxAPI chamando [**DIFXAPISetLogCallback**](/previous-versions/windows/hardware/difxapi/difxapisetlogcallback). DIFxAPI chama a função de retorno de chamada para registrar eventos que ocorrem durante a operação DIFxAPI.<br/> |
+| [**DIFXAPISetLogCallback**](/previous-versions/windows/hardware/difxapi/difxapisetlogcallback)<br/>     | A **função DIFXAPISetLogCallback** registra uma função de retorno de chamada fornecida pelo chamador que DIFxAPI chama para registrar informações sobre eventos que ocorrem durante operações DIFxAPI. <br/>                                                                                                            |
+| [**DriverPackageGetPath**](/previous-versions/windows/hardware/difxapi/driverpackagegetpath)<br/>       | A **função DriverPackageGetPath** recupera o caminho totalmente qualificado do arquivo [INF](/windows-hardware/drivers/install/overview-of-inf-files) para um pacote de [driver pré-instalado.](/windows-hardware/drivers/install/driver-packages)<br/>                                                                                                               |
+| [**DriverPackageInstall**](/previous-versions/windows/hardware/difxapi/driverpackageinstall)<br/>       | A **função DriverPackageInstall** pré-instala um [pacote de driver](/windows-hardware/drivers/install/driver-packages) e, em seguida, instala o driver no sistema.<br/>                                                                                                                                                 |
+| [**DriverPackagePreinstall**](/previous-versions/windows/hardware/difxapi/driverpackagepreinstall)<br/> | A **função DriverPackagePreinstall** pré-instala um pacote de [driver](/windows-hardware/drivers/install/driver-packages) para um [driver](/windows-hardware/drivers/kernel/function-drivers) de função Plug and Play (PnP) e instala o arquivo [INF](/windows-hardware/drivers/install/overview-of-inf-files) para o pacote de driver no diretório de arquivos INF do sistema.<br/>             |
+| [**DriverPackageUninstall**](/previous-versions/windows/hardware/difxapi/driverpackageuninstall)<br/>   | A **função DriverPackageUninstall** desinstala o pacote [de driver](/windows-hardware/drivers/install/driver-packages) especificado do sistema e remove o pacote de driver. <br/>                                                                                                                               |
+| [**INSTALLERINFO**](/previous-versions/windows/hardware/difxapi/installerinfo)<br/>                     | A estrutura INSTALLERINFO contém informações sobre um aplicativo associado por DIFxAPI a um [pacote de driver](/windows-hardware/drivers/install/driver-packages). <br/>                                                                                                                                          |
+| [**SetDifxLogCallback**](/previous-versions/windows/hardware/difxapi/setdifxlogcallback)<br/>           | A **função SetDifxLogCallback** registra uma função de retorno de chamada fornecida pelo chamador que DIFxAPI chama para registrar informações sobre eventos que ocorrem durante operações DIFxAPI. <br/>                                                                                                               |
 
 
 

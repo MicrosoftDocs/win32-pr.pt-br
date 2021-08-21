@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 042cebe4e678ac1715a37ec3425ec0f21561797c
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 20140b531990c9409ca02312d4dd338e3eff2ba87a699fd34fe5326c5603e3df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104506461"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117910469"
 ---
 # <a name="d3dxpreprocessshader-function"></a>Função D3DXPreprocessShader
 
@@ -104,7 +104,7 @@ Retorna um buffer que contém uma lista de erros e avisos que foram encontrados 
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

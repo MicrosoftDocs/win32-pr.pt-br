@@ -3,9 +3,9 @@ title: Método IWMPClosedCaption2 getSAMILangName
 description: O método getSAMILangName retorna o nome de um idioma com suporte do arquivo SAMI atual.
 ms.assetid: 52aaf1cc-89ef-4c4c-af43-3f88dc4a9539
 keywords:
-- método getSAMILangName Windows Media Player
+- Windows Media Player do método getSAMILangName
 - método getSAMILangName Windows Media Player, interface IWMPClosedCaption2
-- Interface IWMPClosedCaption2 Windows Media Player, método getSAMILangName
+- Windows Media Player de interface IWMPClosedCaption2, método getSAMILangName
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e50df643fdd6b665de1275873fb8de9d5d094a42
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 99941c7c8c62480ea13572b22083a2d64bda9924cdf3d26200dbc9ac6ba9bdf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105788018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117930299"
 ---
 # <a name="iwmpclosedcaption2getsamilangname-method"></a>Método IWMPClosedCaption2:: getSAMILangName
 
@@ -60,7 +60,7 @@ Implements IWMPClosedCaption2.getSAMILangName
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um **System. String** que é o nome do idioma conforme especificado no arquivo Sami.
 

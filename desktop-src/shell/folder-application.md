@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shldisp.h
-ms.openlocfilehash: 13a6a90dd324498c332f7bf580ff5ec987a0c5b9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41c0c3efd2664e7f3544ee5f58e4e1c530d97ca7ef754030c082103598011a10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117860351"
 ---
 # <a name="folderapplication-property"></a>Propriedade Folder. Application
 
@@ -56,7 +56,7 @@ Use essa propriedade com os comandos **set** e **CreateObject** ou com o comando
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                 |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/>                 |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl> |

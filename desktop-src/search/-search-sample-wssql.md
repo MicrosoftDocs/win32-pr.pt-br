@@ -1,19 +1,19 @@
 ---
-description: O exemplo de código WSSQL demonstra como se comunicar entre o Microsoft OLE DB e o Windows Search por meio de linguagem SQL (SQL).
+description: o exemplo de código WSSQL demonstra como se comunicar entre o Microsoft OLE DB e Windows pesquisar por meio de linguagem SQL (SQL).
 ms.assetid: 28663608-66b3-4404-9426-5a4b5f52a408
 title: WSSQL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5ac8f76b995d21a562f843344d1722cecec433af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c942203c6f92a3c6a0313672a0eede9a9cfe08822ca118f6a717192e23f3e6d0
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118051690"
 ---
 # <a name="wssql"></a>WSSQL
 
-O exemplo de código WSSQL demonstra como se comunicar entre o Microsoft OLE DB e o Windows Search por meio de linguagem SQL (SQL).
+o exemplo de código WSSQL demonstra como se comunicar entre o Microsoft OLE DB e Windows pesquisar por meio de linguagem SQL (SQL).
 
 Este tópico inclui as seções a seguir.
 
@@ -34,32 +34,32 @@ Este tópico inclui as seções a seguir.
 
 Este exemplo está disponível no local a seguir.
 
-| Local      | URL do caminho                                                                  |
+| Localização      | URL do caminho                                                                  |
 |---------------|---------------------------------------------------------------------------|
 | GitHub        | [Exemplo de WSSQL](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/winui/WindowsSearch/WSSQL)           |
 
 > [!NOTE]  
-> Para todas as versões do Windows, incluindo o Windows 7, é recomendável baixar os exemplos diretamente do GitHub para obter a versão mais atualizada.
+> para todas as versões do Windows, incluindo o Windows 7, é recomendável baixar os exemplos diretamente do GitHub para a versão mais atualizada.
 
 ## <a name="building-the-sample"></a>Compilando o exemplo
 
-1. Abra o Windows Explorer e navegue até o diretório do projeto **WSSQL** .
+1. abra Windows Explorer e navegue até o diretório do projeto **WSSQL** .
 2. Clique duas vezes no ícone do arquivo WSSQL. sln para abrir o projeto no Visual Studio.
     > [!NOTE]  
-    > O arquivo sln foi criado em uma versão mais antiga do Visual Studio, portanto, a atualização será necessária se você estiver executando o Visual Studio 2012 ou mais recente. Isso não afetará o comportamento do exemplo.
+    > o arquivo sln foi criado em uma versão mais antiga do Visual Studio, assim, a atualização será necessária se você estiver executando o Visual Studio 2012 ou mais recente. Isso não afetará o comportamento do exemplo.
 
-3. No menu **Compilar** , selecione **Compilar solução**.
+3. No menu **Compilar**, selecione **Compilar Solução**.
 
 ## <a name="running-the-sample"></a>Executando o exemplo
 
-1. Navegue até o diretório que contém o novo executável, usando a janela de prompt de comando ou o Windows Explorer.
-2. No prompt de comando, digite `WSSQL.exe` ou, no Windows Explorer, clique duas vezes no ícone para WSSQL.exe.
+1. navegue até o diretório que contém o novo executável, usando a janela de Prompt de comando ou Windows Explorer.
+2. no prompt de comando, digite `WSSQL.exe` ou, no Windows Explorer, clique duas vezes no ícone para WSSQL.exe.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 ### <a name="conceptual"></a>Conceitual
 
-[Usando a sintaxe SQL do Windows Search](-search-sql-windowssearch-entry.md)
+[usando a sintaxe de SQL de pesquisa do Windows](-search-sql-windowssearch-entry.md)
 
 [Informações gerais da linguagem de consulta](-search-sql-generalqueryinfo.md)
 

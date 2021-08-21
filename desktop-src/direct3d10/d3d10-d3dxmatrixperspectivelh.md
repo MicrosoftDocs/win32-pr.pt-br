@@ -1,7 +1,7 @@
 ---
-description: Função D3DXMatrixPerspectiveLH (D3DX10Math.h) – cria uma matriz de projeção de perspectiva à esquerda
+description: Função D3DXMatrixPerspectiveLH (D3DX10Math. h) – compila uma matriz de projeção de perspectiva do lado esquerdo
 ms.assetid: 5fd8da67-ff12-42fa-b915-b50fa2680b32
-title: Função D3DXMatrixPerspectiveLH (D3DX10Math.h)
+title: Função D3DXMatrixPerspectiveLH (D3DX10Math. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -21,9 +21,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118304500"
 ---
-# <a name="d3dxmatrixperspectivelh-function-d3dx10mathh"></a>Função D3DXMatrixPerspectiveLH (D3DX10Math.h)
+# <a name="d3dxmatrixperspectivelh-function-d3dx10mathh"></a>Função D3DXMatrixPerspectiveLH (D3DX10Math. h)
 
-Cria uma matriz de projeção de perspectiva à esquerda
+Cria uma matriz de projeção de perspectiva do lado esquerdo
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,48 +44,48 @@ D3DXMATRIX* D3DXMatrixPerspectiveLH(
 
 <dl> <dt>
 
-*pOut* \[ in, out\]
+*pout* \[ entrada, saída\]
 </dt> <dd>
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para a [**estrutura D3DXMATRIX**](d3d10-d3dxmatrix.md) que é o resultado da operação.
+Ponteiro para a estrutura [**D3DXMATRIX**](d3d10-d3dxmatrix.md) que é o resultado da operação.
 
 </dd> <dt>
 
 *w* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 Largura do volume de exibição no plano de exibição próximo.
 
 </dd> <dt>
 
-*h* \[ em\]
+*h* \[\]
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 Altura do volume de exibição no plano de exibição próximo.
 
 </dd> <dt>
 
-*zn* \[ Em\]
+*Zn* \[ no\]
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 Valor Z do plano de exibição próximo.
 
 </dd> <dt>
 
-*zf* \[ Em\]
+*ZF* \[ no\]
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
-Valor Z do plano de exibição distante.
+Z-valor do plano de exibição distante.
 
 </dd> </dl>
 
@@ -93,13 +93,13 @@ Valor Z do plano de exibição distante.
 
 Tipo: **[ **D3DXMATRIX**](../direct3d9/d3dxmatrix.md)\***
 
-Ponteiro para uma estrutura D3DXMATRIX que é uma matriz de projeção de perspectiva à esquerda.
+Ponteiro para uma estrutura D3DXMATRIX que é uma matriz de projeção de perspectiva do lado esquerdo.
 
 ## <a name="remarks"></a>Comentários
 
 Todos os parâmetros da função D3DXMatrixPerspectiveLH são distâncias no espaço da câmera. Os parâmetros descrevem as dimensões do volume de exibição.
 
-O valor retornado para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixPerspectiveLH pode ser usada como um parâmetro para outra função.
+O valor de retorno para essa função é o mesmo valor retornado no parâmetro pOut. Dessa forma, a função D3DXMatrixPerspectiveLH pode ser usada como um parâmetro para outra função.
 
 Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
@@ -119,8 +119,8 @@ Essa função usa a fórmula a seguir para calcular a matriz retornada.
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX10Math.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3DX10.lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX10Math. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3DX10. lib</dt> </dl>   |
 
 
 

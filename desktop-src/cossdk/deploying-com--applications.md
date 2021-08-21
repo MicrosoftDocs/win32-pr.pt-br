@@ -4,12 +4,12 @@ ms.assetid: e6b2df9e-a536-4629-916e-4e12a0d13771
 title: Implantando aplicativos COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 815cd2c48aca54246c59e8d790f8b4139fcc9491
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 98e67c5bee11c62bba4e8bcb467af1427293b72673535d5c28d748234db1a28e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370488"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117916767"
 ---
 # <a name="deploying-com-applications"></a>Implantando aplicativos COM+
 

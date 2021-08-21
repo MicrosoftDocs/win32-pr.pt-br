@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2821aaf79cd45e4e4db89fbf85ef2462ab99b95b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 14284653c0426a0ef932b839672eb953b2da76095ef1c9edf2577f8c7de58a87
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104163668"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118015976"
 ---
 # <a name="ms-authz-member-rules-in-central-access-policy-bl-attribute"></a>atributo ms-AuthZ-member-Rules-in-Central-Access-Policy-BL
 

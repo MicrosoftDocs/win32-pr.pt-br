@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 4ffc655129740f112a3ade9eb40c0bbe29dfc1fb
-ms.sourcegitcommit: cba7f424a292fd7f3a8518947b9466439b455419
+ms.openlocfilehash: 2c0357a902c793165149da5c853ac953cf5989f8a472fe936c6c2b95cb9e3197
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/23/2019
-ms.locfileid: "104293610"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118090109"
 ---
 # <a name="source-register-swizzling-hlsl-ps-reference"></a>Swizzling de registro de origem (referência do HLSL PS)
 
@@ -52,7 +52,7 @@ Algumas instruções têm restrições para swizzle de origem. Elas são listada
 |-----------------------|------|------|------|------|------|------|-------|------|-------|
 | . x                    |      |      |      | x    | x    | x    | x     | x    | x     |
 | . y                    |      |      |      | x    | x    | x    | x     | x    | x     |
-| . z                    | w.x.y.\*  | w.x.y.\*  | x\*  | x    | x    | x    | x     | x    | x     |
+| . z                    | w.x.y.\*  | w.x.y.\*  | w.x.y.\*  | x    | x    | x    | x     | x    | x     |
 | . w                    | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 | . xyzw (padrão)       | x    | x    | x    | x    | x    | x    | x     | x    | x     |
 | .yzxw                 |      |      |      |      | x    | x    | x     | x    | x     |
@@ -62,7 +62,7 @@ Algumas instruções têm restrições para swizzle de origem. Elas são listada
 
 
 
- 
+ 
 
 \* Disponível somente se a máscara de gravação de destino for. w (. a).
 
@@ -93,9 +93,9 @@ Replicate swizzle copia um componente para outro. Isso é, exatamente um dos com
 [\_registros PS 3 \_ 0](dx9-graphics-reference-asm-ps-registers-ps-3-0.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

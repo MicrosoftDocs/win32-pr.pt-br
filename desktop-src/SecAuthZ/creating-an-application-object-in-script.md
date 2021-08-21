@@ -1,5 +1,5 @@
 ---
-description: Para cada aplicativo que usa um repositório de política de autorização, você deve criar um objeto IAzApplication e, em seguida, salvá-lo em um repositório de políticas.
+description: Para cada aplicativo que usa um armazenamento de política de autorização, você deve criar um objeto IAzApplication e salvá-lo em um armazenamento de políticas.
 ms.assetid: 5df964de-e5b6-427e-b859-efb5866f1578
 title: Criando um objeto de aplicativo no script
 ms.topic: article
@@ -9,18 +9,18 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0a4852ef0c06d721f9409c000989895f6767eb9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 02a5ada4a8a79244cc454d9efc88e69a5d9a205241119b5dda371699f0c86552
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647648"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117782542"
 ---
 # <a name="creating-an-application-object-in-script"></a>Criando um objeto de aplicativo no script
 
-Um repositório de diretivas de autorização contém informações de política de autorização para um ou mais aplicativos. Para cada aplicativo que usa um repositório de política de autorização, você deve criar um objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) e salvá-lo em um repositório de políticas.
+Um armazenamento de política de autorização contém informações de política de autorização para um ou mais aplicativos. Para cada aplicativo que usa um armazenamento de política de autorização, você deve criar um objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) e salvá-lo em um armazenamento de políticas.
 
-O exemplo a seguir mostra como criar um objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) que representa um aplicativo e como adicionar o objeto **IAzApplication** ao armazenamento de política de autorização que o aplicativo usa. O exemplo supõe que haja um repositório de política XML existente chamado MyStore.xml no diretório raiz da unidade C.
+O exemplo a seguir mostra como criar um objeto [**IAzApplication**](/windows/desktop/api/Azroles/nn-azroles-iazapplication) que representa um aplicativo e como adicionar o objeto **IAzApplication** ao armazenamento de política de autorização usado pelo aplicativo. O exemplo supõe que haja um armazenamento de políticas XML existente chamado MyStore.xml no diretório raiz da unidade C.
 
 
 ```VB

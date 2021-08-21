@@ -4,12 +4,12 @@ ms.assetid: 371e72f1-40a2-4ed2-b0ab-33840075ff47
 title: Tabela ReserveCost
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e5f593fd11789cd2304385b97e96e50a009fbde0
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: df729e6afd66222bed3025991432354a7ec04023dcba17ce2bc5b5d81788827b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103921963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117990399"
 ---
 # <a name="reservecost-table"></a>Tabela ReserveCost
 
@@ -21,9 +21,9 @@ A tabela ReserveCost tem as colunas a seguir.
 
 | Coluna        | Tipo                               | Chave | Nullable |
 |---------------|------------------------------------|-----|----------|
-| ReserveKey    | [Identificador](identifier.md)       | S   | N        |
+| ReserveKey    | [Identificador](identifier.md)       | Y   | N        |
 | Componente\_   | [Identificador](identifier.md)       | N   | N        |
-| ReserveFolder | [Identificador](identifier.md)       | N   | S        |
+| ReserveFolder | [Identificador](identifier.md)       | N   | Y        |
 | ReserveLocal  | [DoubleInteger](doubleinteger.md) | N   | N        |
 | Conservar | [DoubleInteger](doubleinteger.md) | N   | N        |
 

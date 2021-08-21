@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 9cb050061b10de963258bcd7527d3c86260d5abc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 78b49e215a1df3b756f1020aeeda0ee6d3848e35c48d0ae2eb71ab7d0d32a14e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098104"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118095538"
 ---
 # <a name="d3dxmatrixtranspose-function-d3dx9mathh"></a>Função D3DXMatrixTranspose (D3dx9math. h)
 
@@ -80,7 +80,7 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

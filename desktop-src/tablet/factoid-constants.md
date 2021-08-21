@@ -1,19 +1,19 @@
 ---
-description: Define valores de cadeia de caracteres constantes que são usados para aumentar a precisão do reconhecimento fornecendo informações contextuais para o reconhecedor.
+description: Define valores de cadeia de caracteres constantes usados para aumentar a precisão do reconhecimento fornecendo informações contextuais ao reconhecedor.
 ms.assetid: 247a1f7d-8205-4e4d-9cfc-daad9bd2191f
-title: Constantes do factor (Msinkaut. h)
+title: Constantes factoid (Msinkaut.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a1353a4989ddfb5af3865788c0fa7fdc2d377f75
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 239818f4306e1a774c1384a89a25b0785cad03d840a292b61d4f30f2473945c7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118045384"
 ---
-# <a name="factoid-constants"></a>Constantes do factor
+# <a name="factoid-constants"></a>Constantes factoid
 
-Define valores de cadeia de caracteres constantes que são usados para aumentar a precisão do reconhecimento fornecendo informações contextuais para o reconhecedor.
+Define valores de cadeia de caracteres constantes usados para aumentar a precisão do reconhecimento fornecendo informações contextuais ao reconhecedor.
 
 
 
@@ -31,11 +31,11 @@ Define valores de cadeia de caracteres constantes que são usados para aumentar 
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><span id="FACTOID_NONE"></span><span id="factoid_none"></span><dl> <dt><strong>FACTOID_NONE</strong></dt> </dl></td>
-<td style="text-align: left;">Desabilita todas as outras paradeleções e dicionários.<br/></td>
+<td style="text-align: left;">Desabilita todos os outros factoids e dicionários.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="___________FACTOID_DEFAULT_________"></span><span id="___________factoid_default_________"></span><dl> <dt><strong>FACTOID_DEFAULT</strong></dt> </dl></td>
-<td style="text-align: left;">A configuração padrão de factores para idiomas ocidentais inclui o dicionário do sistema, o dicionário do usuário, várias pontuações e o factor da Web e do número. A configuração padrão para o factos para idiomas do leste asiático inclui todos os caracteres suportados pelo reconhecedor. <br/></td>
+<td style="text-align: left;">A configuração Padrão para factoids para idiomas do oeste inclui o dicionário do sistema, o dicionário de usuário, várias pontuações e o factoid Web e Number. A configuração Padrão para factoids para idiomas do Leste da Ásia inclui todos os caracteres com suporte pelo reconhecedor. <br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="___________FACTOID_SYSTEMDICTIONARY_________"></span><span id="___________factoid_systemdictionary_________"></span><dl> <dt><strong>FACTOID_SYSTEMDICTIONARY</strong></dt> </dl></td>
@@ -43,10 +43,10 @@ Define valores de cadeia de caracteres constantes que são usados para aumentar 
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="___________FACTOID_WORDLIST_________"></span><span id="___________factoid_wordlist_________"></span><dl> <dt><strong>FACTOID_WORDLIST</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor usar uma lista de palavras definida de forma programática. A lista de palavras é definida <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_wordlist"><strong>pela propriedade</strong></a> KeyList de um objeto <a href="inkrecognizercontext-class.md"><strong>InkRecognizerContext</strong></a> . <br/>
+<td style="text-align: left;">Indica para um reconhecedor usar uma lista de palavras definida programaticamente. A lista de palavras é definida pela propriedade <a href="/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_wordlist"><strong>WordList</strong></a> de um <a href="inkrecognizercontext-class.md"><strong>objeto InkRecognizerContext.</strong></a> <br/>
 <blockquote>
 [!Note]<br />
-Se uma cadeia de caracteres for adicionada a uma lista de palavras, suas versões em maiúsculas também serão adicionadas implicitamente. Por exemplo, adicionar &quot; Hello &quot; implicitamente adiciona &quot; Hello &quot; e &quot; Hello &quot; .
+Se uma cadeia de caracteres for adicionada a uma lista de palavras, suas versões em maiúsculas também serão adicionadas implicitamente. Por exemplo, adicionar &quot; hello &quot; adiciona implicitamente Hello e &quot; HELLO &quot; &quot; &quot; .
 </blockquote>
 <br/></td>
 </tr>
@@ -55,14 +55,14 @@ Se uma cadeia de caracteres for adicionada a uma lista de palavras, suas versõe
 <td style="text-align: left;">Indica para um reconhecedor procurar um endereço de email.<br/>
 <blockquote>
 [!Note]<br />
-Um endereço de email totalmente qualificado, como &quot; someone@example.com &quot; , deve ser usado para esse factor. Um alias solitário, como &quot; alguém &quot; , não é reconhecido.
+Um endereço de email totalmente qualificado, como &quot; someone@example.com &quot; , deve ser usado para esse factoid. Um alias de alias de alias, como &quot; alguém , não é &quot; reconhecido.
 </blockquote>
 <br/>
 <pre class="syntax" data-space="preserve"><code>someone@example.com</code></pre></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FACTOID_WEB"></span><span id="factoid_web"></span><dl> <dt><strong>FACTOID_WEB</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar um endereço da Web.<br/>
+<td style="text-align: left;">Indica para um reconhecedor procurar um endereço Web.<br/>
 <pre class="syntax" data-space="preserve"><code>`https://www.adatum.com`</code></pre></td>
 </tr>
 <tr class="odd">
@@ -70,7 +70,7 @@ Um endereço de email totalmente qualificado, como &quot; someone@example.com &q
 <td style="text-align: left;">Indica para um reconhecedor procurar um único caractere.<br/>
 <blockquote>
 [!Note]<br />
-Esse factor procura por qualquer caractere ANSI isolado.
+Esse factoid procura qualquer caractere ANSI isolado.
 </blockquote>
 <br/></td>
 </tr>
@@ -93,7 +93,7 @@ Os valores numéricos incluem separadores, decimais, ordinais e outros símbolos
 <td style="text-align: left;">Fornece um contexto numérico simples para um reconhecedor.<br/>
 <blockquote>
 [!Note]<br />
-Esse factor não tem suporte nesta versão do SDK do Tablet PC.
+Não há suporte para esse factoid nesta versão do SDK do Tablet PC.
 </blockquote>
 <br/></td>
 </tr>
@@ -104,12 +104,12 @@ Esse factor não tem suporte nesta versão do SDK do Tablet PC.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="___________FACTOID_POSTALCODE_________"></span><span id="___________factoid_postalcode_________"></span><dl> <dt><strong>FACTOID_POSTALCODE</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar CEPs.<br/>
+<td style="text-align: left;">Indica para um reconhecedor procurar códigos postais.<br/>
 <pre class="syntax" data-space="preserve"><code>98112</code></pre></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="___________FACTOID_PERCENT_________"></span><span id="___________factoid_percent_________"></span><dl> <dt><strong>FACTOID_PERCENT</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar por porcentagens.<br/>
+<td style="text-align: left;">Indica para um reconhecedor procurar por percentuais.<br/>
 <pre class="syntax" data-space="preserve"><code>87%</code></pre></td>
 </tr>
 <tr class="even">
@@ -134,14 +134,14 @@ Esse factor não tem suporte nesta versão do SDK do Tablet PC.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="___________FACTOID_UPPERCHAR_________"></span><span id="___________factoid_upperchar_________"></span><dl> <dt><strong>FACTOID_UPPERCHAR</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar um caractere maiúsculo único: A a Z.<br/></td>
+<td style="text-align: left;">Indica para um reconhecedor procurar um único caractere em letras maiúsculas: A a Z.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="___________FACTOID_LOWERCHAR_________"></span><span id="___________factoid_lowerchar_________"></span><dl> <dt><strong>FACTOID_LOWERCHAR</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar um caractere minúsculo em minúsculas: A a Z.<br/>
+<td style="text-align: left;">Indica para um reconhecedor procurar um único caractere minúsculo: A a Z.<br/>
 <blockquote>
 [!Note]<br />
-Esse factor não tem suporte nesta versão do SDK do Tablet PC.
+Não há suporte para esse factoid nesta versão do SDK do Tablet PC.
 </blockquote>
 <br/></td>
 </tr>
@@ -150,21 +150,21 @@ Esse factor não tem suporte nesta versão do SDK do Tablet PC.
 <td style="text-align: left;">Indica para um reconhecedor procurar caracteres de pontuação.<br/>
 <blockquote>
 [!Note]<br />
-Esse factor não tem suporte nesta versão do SDK do Tablet PC.
+Não há suporte para esse factoid nesta versão do SDK do Tablet PC.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FACTOID_JAPANESECOMMON"></span><span id="factoid_japanesecommon"></span><dl> <dt><strong>FACTOID_JAPANESECOMMON</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar caracteres kanji, Katakana e hiragana usados com frequência.<br/></td>
+<td style="text-align: left;">Indica para um reconhecedor procurar caracteres Kanji, Katakana e Hiragana comumente usados.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FACTOID_CHINESESIMPLECOMMON"></span><span id="factoid_chinesesimplecommon"></span><dl> <dt><strong>FACTOID_CHINESESIMPLECOMMON</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar caracteres chineses simplificados comumente usados.<br/></td>
+<td style="text-align: left;">Indica para um reconhecedor procurar caracteres chinês simplificados comumente usados.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FACTOID_CHINESETRADITIONALCOMMON"></span><span id="factoid_chinesetraditionalcommon"></span><dl> <dt><strong>FACTOID_CHINESETRADITIONALCOMMON</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar caracteres chineses tradicionais usados com frequência.<br/></td>
+<td style="text-align: left;">Indica para um reconhecedor procurar caracteres chineses tradicionais comumente usados.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FACTOID_KOREANCOMMON"></span><span id="factoid_koreancommon"></span><dl> <dt><strong>FACTOID_KOREANCOMMON</strong></dt> </dl></td>
@@ -172,11 +172,11 @@ Esse factor não tem suporte nesta versão do SDK do Tablet PC.
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FACTOID_HIRAGANA"></span><span id="factoid_hiragana"></span><dl> <dt><strong>FACTOID_HIRAGANA</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar somente caracteres hiragana.<br/></td>
+<td style="text-align: left;">Indica para um reconhecedor procurar apenas caracteres Hiragana.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FACTOID_KATAKANA"></span><span id="factoid_katakana"></span><dl> <dt><strong>FACTOID_KATAKANA</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar somente caracteres Katakana.<br/></td>
+<td style="text-align: left;">Indica para um reconhecedor procurar apenas caracteres Katakana.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FACTOID_KANJICOMMON"></span><span id="factoid_kanjicommon"></span><dl> <dt><strong>FACTOID_KANJICOMMON</strong></dt> </dl></td>
@@ -184,31 +184,31 @@ Esse factor não tem suporte nesta versão do SDK do Tablet PC.
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FACTOID_KANJIRARE"></span><span id="factoid_kanjirare"></span><dl> <dt><strong>FACTOID_KANJIRARE</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar caracteres kanji raramente usados.<br/>
+<td style="text-align: left;">Indica para um reconhecedor procurar caracteres Kanji raramente usados.<br/>
 <blockquote>
 [!Note]<br />
-Esse factor não tem suporte nesta versão do SDK do Tablet PC.
+Não há suporte para esse factoid nesta versão do SDK do Tablet PC.
 </blockquote>
 <br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FACTOID_BOPOMOFO"></span><span id="factoid_bopomofo"></span><dl> <dt><strong>FACTOID_BOPOMOFO</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar caracteres bopomofo.<br/></td>
+<td style="text-align: left;">Indica para um reconhecedor procurar caracteres Bopomofo.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FACTOID_JAMO"></span><span id="factoid_jamo"></span><dl> <dt><strong>FACTOID_JAMO</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar caracteres Hangul de compatibilidade com a Jamo.<br/></td>
+<td style="text-align: left;">Indica para um reconhecedor procurar caracteres Jamo de compatibilidade do Hangul.<br/></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><span id="FACTOID_HANGULCOMMON"></span><span id="factoid_hangulcommon"></span><dl> <dt><strong>FACTOID_HANGULCOMMON</strong></dt> </dl></td>
-<td style="text-align: left;">Indica para um reconhecedor procurar caracteres Hangul usados com frequência.<br/></td>
+<td style="text-align: left;">Indica para um reconhecedor procurar caracteres Hangul comumente usados.<br/></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><span id="FACTOID_HANGULRARE"></span><span id="factoid_hangulrare"></span><dl> <dt><strong>FACTOID_HANGULRARE</strong></dt> </dl></td>
 <td style="text-align: left;">Indica para um reconhecedor procurar caracteres Hangul raramente usados.<br/>
 <blockquote>
 [!Note]<br />
-Esse factor não tem suporte nesta versão do SDK do Tablet PC.
+Não há suporte para esse factoid nesta versão do SDK do Tablet PC.
 </blockquote>
 <br/></td>
 </tr>
@@ -219,28 +219,28 @@ Esse factor não tem suporte nesta versão do SDK do Tablet PC.
 
 ## <a name="remarks"></a>Comentários
 
-Em C++, você pode acessar essas constantes no arquivo de cabeçalho Msinkaut. h, que está localizado no <systemdrive> diretório: \\ arquivos \\ de programas Microsoft Tablet PC Platform SDK \\ include se você instalou o SDK no local padrão.
+No C++, você pode acessar essas constantes no arquivo de header Msinkaut.h, que está localizado no diretório : Arquivos de Programas Microsoft Tablet PC Platform SDK Include se você instalou o <systemdrive> SDK no local \\ \\ \\ padrão.
 
 > [!Note]  
-> Essas constantes são WCHARs, não BSTRs. Eles devem ser convertidos em BSTRs antes de usar como parâmetros para métodos de objeto. Para obter mais informações sobre o tipo de dados BSTR, consulte [usando a biblioteca com](using-the-com-library.md).
+> Essas constantes são WCHARs, não BSTRs. Eles devem ser convertidos em BSTRs antes de usar como parâmetros para métodos de objeto. Para obter mais informações sobre o tipo de dados BSTR, consulte [Usando a biblioteca COM](using-the-com-library.md).
 
  
 
 > [!Note]  
-> Para os reconhecedores do script Latin, as factos definidas nessa classe são fornecidas apenas para fins de compatibilidade com versões anteriores. Para o novo desenvolvimento, você é incentivado a usar os valores definidos na função [SetInputScope](/windows/desktop/api/inputscope/nf-inputscope-setinputscope) . Para obter detalhes, consulte [usando o contexto para melhorar a precisão](using-context-to-improve-accuracy.md).
+> Para reconhecedores de script latino, os factoids definidos nesta classe são fornecidos apenas para compatibilidade com backward. Para novos desenvolvimentos, você é incentivado a usar os valores definidos na [função SetInputScope.](/windows/desktop/api/inputscope/nf-inputscope-setinputscope) Para obter detalhes, consulte [Usando o contexto para melhorar a precisão.](using-context-to-improve-accuracy.md)
 
  
 
-Use esses identificadores para especificar qual factor deve ser usado durante o reconhecimento.
+Use esses identificadores para especificar qual factoid deve ser usado durante o reconhecimento.
 
-As seguintes combinações de factors têm suporte apenas para idiomas ocidentais. Elas não têm definições separadas, mas são entradas literais de cadeia de caracteres aceitáveis para a propriedade [**facto**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid) de objetos que usam os factos. Essas constantes de cadeia de caracteres de facto permitem que a entrada corresponda a qualquer um dos factos na expressão.
+As combinações de factoids a seguir têm suporte apenas para idiomas do oeste. Eles não têm definições separadas, mas são entradas literais de cadeia de caracteres aceitáveis para a propriedade [**Factoid**](/windows/desktop/api/msinkaut/nf-msinkaut-iinkrecognizercontext-get_factoid) de objetos que usam factoids. Essas constantes de cadeia de caracteres factoid permitem que a entrada corresponder a qualquer um dos factoids na expressão.
 
 
 
 | Combinação               | Definição                                                |
 |---------------------------|-----------------------------------------------------------|
-| "listas de palavras da WEB \| "           | O facto da Web ou a lista de palavras.                         |
-| "listas de palavras de EMAIL \| "         | O facto de email ou a lista de palavras.                       |
+| "WEB \| WORDLIST"           | O factoid da Web ou a lista de palavras.                         |
+| "EMAIL \| WORDLIST"         | O facto de email ou a lista de palavras.                       |
 | " \| listas de palavras da Web de nome de arquivo \| " | O nome do arquivo ou o factor da Web ou a lista de palavras. |
 
 
@@ -264,9 +264,9 @@ Como alternativa, você pode definir essa propriedade com a constante de cadeia 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                       |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                           |
-| parâmetro<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Msinkaut. h (também requer Msinkaut \_ i. c)</dt> </dl> |
 
 
 

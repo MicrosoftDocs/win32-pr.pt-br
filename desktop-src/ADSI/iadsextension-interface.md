@@ -9,12 +9,12 @@ keywords:
 - extensões ADSI, IADsExtension
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae7d59048d29620cdc2d3703b9ba26a852441a47
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: e3da7f29c59077b5fff312888ef614f0ed9eb34f259f40289a07e7a5193d2e6c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112405939"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118017342"
 ---
 # <a name="iadsextension-interface"></a>IADsExtension Interface
 
@@ -54,7 +54,7 @@ IADsExtension : public IUnknown
 
 O agregador (ADSI) chama o [**método IADsExtension::Operate.**](/windows/desktop/api/Iads/nf-iads-iadsextension-operate) A extensão deve interpretar o *parâmetro dwCode* e cada *parâmetro varData,* de acordo com a documentação do provedor.
 
-O agregador (ADSI), chama o [**método IADsExtension::P rivateGetIDsOfNames.**](/windows/desktop/api/Iads/nf-iads-iadsextension-privategetidsofnames) Ele é chamado depois que a ADSI determina a extensão para a expedição de serviço. A extensão pode usar as informações de tipo para obter a DISPID, ou seja, usando a [**função DispGetIDsOfNames.**](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-dispgetidsofnames)
+O agregador (ADSI), chama o [**método IADsExtension::P rivateGetIDsOfNames.**](/windows/desktop/api/Iads/nf-iads-iadsextension-privategetidsofnames) Ele é chamado depois que a ADSI determina a extensão para dar serviço à expedição. A extensão pode usar as informações de tipo para obter a DISPID, ou seja, usando a [**função DispGetIDsOfNames.**](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-dispgetidsofnames)
 
 ADSI normalmente chama o [**método PrivateInvoke**](/windows/desktop/api/Iads/nf-iads-iadsextension-privateinvoke) depois de chamar a [**função PrivateGetIDsOfNames.**](/windows/desktop/api/Iads/nf-iads-iadsextension-privategetidsofnames) A extensão deve chamar o método real que ela implementa. Como alternativa, a extensão pode usar informações de tipo e chamar a [**função DispInvoke.**](/windows/win32/api/oleauto/nf-oleauto-dispinvoke)
 

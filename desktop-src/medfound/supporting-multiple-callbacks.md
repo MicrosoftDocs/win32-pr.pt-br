@@ -1,19 +1,19 @@
 ---
-description: Dando suporte a vários retornos de chamada
+description: Suporte a vários retornos de chamada
 ms.assetid: d57544cc-f16c-4415-9411-d06d6c16cb2f
-title: Dando suporte a vários retornos de chamada
+title: Suporte a vários retornos de chamada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b77a15899488e44ea3c1499b11af65894d47483c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 614d92a50101a5ed4e7c281dc76a3edce930fa06d68e11484dc89a3cad83de05
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118057701"
 ---
-# <a name="supporting-multiple-callbacks"></a>Dando suporte a vários retornos de chamada
+# <a name="supporting-multiple-callbacks"></a>Suporte a vários retornos de chamada
 
-Se você chamar mais de um método assíncrono, cada um deles exigirá uma implementação separada de [**IMFAsyncCallback:: Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke). No entanto, talvez você queira implementar os retornos de chamada dentro de uma única classe C++. A classe pode ter apenas um método **Invoke** , portanto, uma solução é fornecer uma classe auxiliar **que delega chamadas** a outro método em uma classe de contêiner.
+Se você chamar mais de um método assíncrono, cada um exigirá uma implementação separada de [**IMFAsyncCallback::Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke). No entanto, talvez você queira implementar os retornos de chamada dentro de uma única classe C++. A classe pode ter apenas um método **Invoke,** portanto, uma solução é fornecer uma classe auxiliar que delega chamadas **Invoke** para outro método em uma classe de contêiner.
 
 O código a seguir mostra um modelo de classe chamado `AsyncCallback` , que demonstra essa abordagem.
 
@@ -88,9 +88,9 @@ public:
 
 
 
-O parâmetro de modelo é o nome da classe de contêiner. O `AsyncCallback` Construtor tem dois parâmetros: um ponteiro para a classe de contêiner e o endereço de um método de retorno de chamada na classe de contêiner. A classe de contêiner pode ter várias instâncias da `AsyncCallback` classe como variáveis de membro, uma para cada método assíncrono. Quando a classe de contêiner chama um método assíncrono, ela usa a interface [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) do `AsyncCallback` objeto apropriado. Quando o `AsyncCallback` método [**Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) do objeto é chamado, a chamada é delegada para o método correto na classe de contêiner.
+O parâmetro de modelo é o nome da classe de contêiner. O construtor tem dois parâmetros: um ponteiro para a classe de contêiner e o endereço de um método de retorno de `AsyncCallback` chamada na classe de contêiner. A classe de contêiner pode ter várias instâncias da classe `AsyncCallback` como variáveis de membro, uma para cada método assíncrono. Quando a classe de contêiner chama um método assíncrono, ela usa a interface [**IMFAsyncCallback**](/windows/desktop/api/mfobjects/nn-mfobjects-imfasynccallback) do objeto `AsyncCallback` apropriado. Quando o `AsyncCallback` método [**Invoke**](/windows/desktop/api/mfobjects/nf-mfobjects-imfasynccallback-invoke) do objeto é chamado, a chamada é delegada ao método correto na classe de contêiner.
 
-O `AsyncCallback` objeto também Delega chamadas **AddRef** e **Release** para a classe de contêiner, de modo que a classe de contêiner gerencia o tempo de vida do `AsyncCallback` objeto. Isso garante que o `AsyncCallback` objeto não será excluído até que o próprio objeto de contêiner seja excluído.
+O objeto também delega chamadas AddRef e Release para a classe de contêiner, de modo que a classe de contêiner `AsyncCallback` gerencia o tempo de vida do   `AsyncCallback` objeto. Isso garante que o objeto não será excluído até que o próprio objeto `AsyncCallback` de contêiner seja excluído.
 
 O código a seguir mostra como usar este modelo:
 
@@ -125,7 +125,7 @@ private:
 
 
 
-Neste exemplo, a classe de contêiner é nomeada `CMyObject` . A variável de membro de *\_ CB m* é um `AsyncCallback` objeto. No `CMyObject` Construtor, a variável de membro de *\_ CB m* é inicializada com o endereço do `CMyObject::OnInvoke` método.
+Neste exemplo, a classe de contêiner é chamada `CMyObject` . A *\_ variável de* membro m CB é um `AsyncCallback` objeto . No `CMyObject` construtor, a variável de membro *m \_ CB* é inicializada com o endereço do `CMyObject::OnInvoke` método .
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

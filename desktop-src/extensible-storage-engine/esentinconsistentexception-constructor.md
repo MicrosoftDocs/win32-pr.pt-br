@@ -14,12 +14,12 @@ dev_langs:
 - JScript
 - VB
 - other
-ms.openlocfilehash: 6e1aef80b1ff29e788f23db20b05a01baecbcf51
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2e44d8bed66053c036b8e72fdcdb3f1d8c86d0c1f8445ba5f738029f63877002
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104551815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118081219"
 ---
 # <a name="esentinconsistentexception-constructor"></a>Construtor EsentInconsistentException
 
@@ -39,12 +39,12 @@ Incluir membros herdados
 <tbody>
 <tr class="odd">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn274374(v=exchg.10).md">EsentInconsistentException (SerializationInfo, StreamingContext)</a></td>
-<td>Inicializa uma nova instância da classe EsentInconsistentException. Esse construtor é usado para desserializar uma exceção serializada.</td>
+<td><a href="dn274374(v=exchg.10).md">EsentInconsistentException(SerializationInfo, StreamingContext)</a></td>
+<td>Inicializa uma nova instância da classe EsentInconsistentException. Esse construtor é usado para desserlizar uma exceção serializada.</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292116.protmethod(exchg.10).gif" title="Método protegido" alt="Protected method" /></td>
-<td><a href="dn350429(v=exchg.10).md">EsentInconsistentException (cadeia de caracteres, JET_err)</a></td>
+<td><a href="dn350429(v=exchg.10).md">EsentInconsistentException(String, JET_err)</a></td>
 <td>Inicializa uma nova instância da classe EsentInconsistentException.</td>
 </tr>
 </tbody>
@@ -59,6 +59,6 @@ Parte superior
 
 [Classe EsentInconsistentException](./esentinconsistentexception-class.md)
 
-[Membros do EsentInconsistentException](./esentinconsistentexception-members.md)
+[Membros EsentInconsistentException](./esentinconsistentexception-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

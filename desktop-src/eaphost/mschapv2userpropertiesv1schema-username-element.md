@@ -1,9 +1,9 @@
 ---
-title: Elemento username (CHAP)
-description: Saiba mais sobre o elemento username, que identifica o usuário que está sendo autenticado. Consulte um exemplo de sintaxe e exiba recursos adicionais disponíveis.
+title: Elemento Username (CHAP)
+description: Saiba mais sobre o elemento Username, que identifica o usuário que está sendo autenticado. Consulte um exemplo de sintaxe e ex veja os recursos disponíveis adicionais.
 ms.assetid: 3dd12864-5e0a-492c-a2c3-28118d21a0f2
 keywords:
-- Elemento username EAPHost
+- Elemento Username EAPHost
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 29065a59e150d2a4295e91b41862250d58e017b5
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: d9ad861388ba8e15bb0df924610e6df1f833968794101cb1b04ccc47fb5ae541
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103917678"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086150"
 ---
-# <a name="username-element-chap"></a>Elemento username (CHAP)
+# <a name="username-element-chap"></a>Elemento Username (CHAP)
 
-O elemento **username** identifica o usuário que está sendo autenticado.
+O **elemento Username** identifica o usuário que está sendo autenticado.
 
 ``` syntax
 <xs:element name="Username"
@@ -33,7 +33,7 @@ O elemento **username** identifica o usuário que está sendo autenticado.
 
 ## <a name="remarks"></a>Comentários
 
-Se o elemento **username** não estiver presente, o nome de usuário será obtido do Winlogon. Esse elemento é opcional.
+Se o **elemento Username** não estiver presente, o nome de usuário será obtido do winlogon. Esse elemento é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,8 +41,8 @@ Se o elemento **username** não estiver presente, o nome de usuário será obtid
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -1,9 +1,9 @@
 ---
 title: Mensagem de ICM_DRAW_REALIZE (VFW. h)
-description: A mensagem de desenho do ICM \_ draw \_ Notifica um driver de renderização para perceber sua paleta de desenho durante o desenho. Você pode enviar essa mensagem explicitamente ou usando a macro ICDrawRealize.
+description: a \_ mensagem ICM DRAW \_ percebem notifica um driver de renderização para perceber sua paleta de desenho durante o desenho. Você pode enviar essa mensagem explicitamente ou usando a macro ICDrawRealize.
 ms.assetid: 501540cd-41e2-4f80-abf8-2ec2179970a9
 keywords:
-- Multimídia do Windows de mensagem ICM_DRAW_REALIZE
+- mensagem de ICM_DRAW_REALIZE Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dd054c16caae55cba25c30098337e54b0ec4b681
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: f05e9bd21cc8185afd17ec909fcf95bf3ac6bedba7477f47191b9f3d51383914
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369530"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117987241"
 ---
-# <a name="icm_draw_realize-message"></a>Mensagem de percepção de \_ desenho de ICM \_
+# <a name="icm_draw_realize-message"></a>ICM \_ DESENHAR a \_ mensagem de percepção
 
-A mensagem de **desenho do ICM \_ draw \_** notifica um driver de renderização para perceber sua paleta de desenho durante o desenho. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDrawRealize**](/windows/desktop/api/Vfw/nf-vfw-icdrawrealize) .
+a mensagem **ICM \_ DRAW \_ percebem** notifica um driver de renderização para perceber sua paleta de desenho durante o desenho. Você pode enviar essa mensagem explicitamente ou usando a macro [**ICDrawRealize**](/windows/desktop/api/Vfw/nf-vfw-icdrawrealize) .
 
 
 ```C++

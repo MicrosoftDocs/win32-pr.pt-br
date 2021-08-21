@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: ece8f653d7d3d296e2f3e264f7c2e97941c0bc21
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 256204d1214b2486831376c7d038fd0c92f0ef519c752878f785518038bb7b09
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828770"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118076416"
 ---
 # <a name="inullablejetstruct-interface"></a>Interface INullableJetStruct
 
-Interface para estruturas Jet que são anuláveis (podem ter valores nulos).
+Interface para estruturas Jet que podem ser anuladas (podem ter valores nulos).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,6 +55,6 @@ public interface INullableJetStruct
 
 #### <a name="reference"></a>Referência
 
-[Membros do INullableJetStruct](./inullablejetstruct-members.md)
+[Membros de INullableJetStruct](./inullablejetstruct-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

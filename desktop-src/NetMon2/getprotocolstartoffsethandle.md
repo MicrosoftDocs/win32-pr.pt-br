@@ -13,12 +13,12 @@ api_type:
 - DllExport
 api_location:
 - Nmapi.dll
-ms.openlocfilehash: bac8a10e2a0d8be667f1448c523f208c0c3e1512
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 18513b2b26233a5fc6680e5830f053fe2551d87bb9f09a95d39ab92cc4f7897a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117981824"
 ---
 # <a name="getprotocolstartoffsethandle-function"></a>Função GetProtocolStartOffsetHandle
 
@@ -54,7 +54,7 @@ Identificador para um protocolo.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se a função for bem-sucedida, o valor de retorno será o deslocamento do quadro medido em bytes.
 

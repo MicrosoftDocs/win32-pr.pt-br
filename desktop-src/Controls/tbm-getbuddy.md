@@ -3,7 +3,7 @@ title: Mensagem de TBM_GETBUDDY (commctrl. h)
 description: Recupera o identificador para uma janela de amigo do controle TrackBar em um determinado local. O local especificado é relativo à orientação do controle (horizontal ou vertical).
 ms.assetid: 69e4e467-150d-4505-b1c2-2ed9dd83f1a6
 keywords:
-- Controles de TBM_GETBUDDY de mensagens do Windows
+- controles de Windows de mensagem de TBM_GETBUDDY
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4c076f001a1dff62541c3aa32bc12744b30c012
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6e03053981ed16b97d68d5b2f0c77db64062d64fd2df7b5a347e4757736d4844
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919226"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117829610"
 ---
 # <a name="tbm_getbuddy-message"></a>Mensagem do TBM \_ GETbuddy
 
@@ -50,7 +50,7 @@ Valor que indica qual identificador de janela de amigo será recuperado, por loc
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o identificador para a janela Buddy no local especificado por *wParam* ou **NULL** se não existir nenhuma janela Buddy nesse local.
 
@@ -60,9 +60,9 @@ Retorna o identificador para a janela Buddy no local especificado por *wParam* o
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

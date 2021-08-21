@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Capicom.dll
-ms.openlocfilehash: dc5778e631abba9eb8cf122ddb99a4692c988f4b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e9eb69223eeabae3ca1803869bf887d66e77a4f2466f35bedbf87435839ee73f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769276"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117978442"
 ---
 # <a name="privatekeydelete-method"></a>Método PrivateKey. Delete
 
@@ -39,7 +39,7 @@ PrivateKey.Delete()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -58,7 +58,7 @@ Esse método gera CAPICOM \_ E \_ não \_ são permitidos quando são inseridos 
 
 | Requisito | Valor |
 |----------------------------|----------------------------------------------------------------------------------------|
-| Redistribuível<br/> | CAPICOM 2,0 ou posterior no Windows Server 2003 e no Windows XP<br/>                  |
+| Redistribuível<br/> | capicom 2,0 ou posterior no Windows Server 2003 e Windows XP<br/>                  |
 | DLL<br/>             | <dl> <dt>Capicom.dll</dt> </dl> |
 
 

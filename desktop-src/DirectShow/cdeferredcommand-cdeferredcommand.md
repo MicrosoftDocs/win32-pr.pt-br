@@ -1,7 +1,7 @@
 ---
-description: Construtor de CDeferredCommand. CDeferredCommand-método de construtor.
+description: Construtor CDeferredCommand.CDeferredCommand – método construtor.
 ms.assetid: 0b372fa2-78a9-4e38-813c-f18123716c6d
-title: Construtor CDeferredCommand. CDeferredCommand (Ctlutil. h)
+title: Construtor CDeferredCommand.CDeferredCommand (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "117822221"
 ---
-# <a name="cdeferredcommandcdeferredcommand-constructor"></a>Construtor CDeferredCommand. CDeferredCommand
+# <a name="cdeferredcommandcdeferredcommand-constructor"></a>Construtor CDeferredCommand.CDeferredCommand
 
-Método de construtor.
+Método do construtor.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -57,18 +57,18 @@ CDeferredCommand(
 *pQ* 
 </dt> <dd>
 
-Ponteiro para um objeto que expõe a interface [**IQueueCommand**](/windows/desktop/api/Control/nn-control-iqueuecommand) .
+Ponteiro para um objeto que expõe a interface [**IQueueCommand.**](/windows/desktop/api/Control/nn-control-iqueuecommand)
 
 </dd> <dt>
 
-*pUnk* 
+*Punk* 
 </dt> <dd>
 
 Ponteiro para a interface **IUnknown** externa para agregação.
 
 </dd> <dt>
 
-*phr* 
+*Phr* 
 </dt> <dd>
 
 Ponteiro para um valor **HRESULT** retornado.
@@ -89,10 +89,10 @@ Hora em que o comando será executado.
 
 </dd> <dt>
 
-*IID* 
+*Iid* 
 </dt> <dd>
 
-Ponteiro para o identificador global exclusivo (**GUID**) da interface que contém o método.
+Ponteiro para o **GUID**(identificador global exclusivo) da interface que contém o método .
 
 </dd> <dt>
 
@@ -103,45 +103,45 @@ Método na interface a ser chamada.
 
 </dd> <dt>
 
-*wFlags* 
+*Wflags* 
 </dt> <dd>
 
 Contexto da invocação.
 
 </dd> <dt>
 
-*cArgs* 
+*Cargs* 
 </dt> <dd>
 
 Número de argumentos passados.
 
 </dd> <dt>
 
-*pDispParams* 
+*Pdispparams* 
 </dt> <dd>
 
 Ponteiro para uma lista de tipos de variante de argumento.
 
 </dd> <dt>
 
-*pvarResult* 
+*Pvarresult* 
 </dt> <dd>
 
-Ponteiro para uma lista de tipo Variant retornada, se houver.
+Ponteiro para uma lista de tipos de variante retornada, se for o caso.
 
 </dd> <dt>
 
-*puArgErr* 
+*Puargerr* 
 </dt> <dd>
 
-Ponteiro para o último argumento na lista de parâmetros *pDispParams* com um erro.
+Ponteiro para o último argumento na lista *de parâmetros pDispParams* com um erro.
 
 </dd> <dt>
 
 *bStream* 
 </dt> <dd>
 
-Valor que indica se o tempo de comando adiado está em tempo de fluxo (**true**) ou tempo de apresentação (**false**).
+Valor que indica se a hora do comando adiada está em tempo de fluxo (**TRUE**) ou hora de apresentação (**FALSE**).
 
 </dd> </dl>
 
@@ -151,8 +151,8 @@ Valor que indica se o tempo de comando adiado está em tempo de fluxo (**true**)
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir Fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

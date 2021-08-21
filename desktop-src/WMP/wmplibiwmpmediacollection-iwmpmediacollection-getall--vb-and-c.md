@@ -3,9 +3,9 @@ title: Método IWMPMediaCollection getAll
 description: O método getAll retorna uma interface IWMPPlaylist que corresponde à playlist que contém todos os itens de mídia na biblioteca.
 ms.assetid: f2bbb4a4-7397-4c97-afd9-e8ee380af9da
 keywords:
-- método getAll Windows Media Player
+- Windows Media Player do método getAll
 - método getAll Windows Media Player, interface IWMPMediaCollection
-- Interface IWMPMediaCollection Windows Media Player, método getAll
+- Windows Media Player de interface IWMPMediaCollection, método getAll
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: be08548ae29db12ded788f34563ef5e319c27d61
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9f500723dc4f7f9f35239dfbf133a2f41162cb5efd6e6ba045a940ecd907fed9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105750729"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117929789"
 ---
 # <a name="iwmpmediacollectiongetall-method"></a>Método IWMPMediaCollection:: getAll
 
@@ -49,7 +49,7 @@ Implements IWMPMediaCollection.getAll
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A interface **WMPLib. IWMPPlaylist** da lista de reprodução que contém todos os itens de mídia solicitados.
 

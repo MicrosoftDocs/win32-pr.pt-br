@@ -13,12 +13,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 7f4530869b9f68772c28fefd6130ff8e4b6ffbec
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c32fd2c7a12fc8146a01d3722b31b46bad01f61b526397806a5121b7381b069e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826899"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117861703"
 ---
 # <a name="abm_remove-message"></a>ABM \_ remover mensagem
 
@@ -43,7 +43,7 @@ Um ponteiro para uma estrutura [**APPBARDATA**](/windows/desktop/api/Shellapi/ns
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sempre retorna **true**.
 
@@ -57,7 +57,7 @@ Essa mensagem faz com que o sistema envie a mensagem de notificação do [**ABN 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                           |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                  |
 | Cabeçalho<br/>                   | <dl> <dt>Shellapi. h</dt> </dl> |
 

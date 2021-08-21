@@ -1,11 +1,11 @@
 ---
-title: Método RegisteredTask. RunEx
-description: Para scripts, o executa a tarefa registrada imediatamente usando sinalizadores especificados e um identificador de sessão.
+title: Método RegisteredTask.RunEx
+description: Para scripts, executa a tarefa registrada imediatamente usando sinalizadores especificados e um identificador de sessão.
 ms.assetid: 427bb51b-ddb1-4e47-9313-297366ba5ab7
 keywords:
-- Agendador de Tarefas do método RunEx
-- Método RunEx Agendador de Tarefas, objeto RegisteredTask
-- Objeto RegisteredTask Agendador de Tarefas, método RunEx
+- Método RunEx Agendador de Tarefas
+- Método RunEx Agendador de Tarefas , objeto RegisteredTask
+- Objeto RegisteredTask Agendador de Tarefas , método RunEx
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d88eb8bb651929c905f080f97a9eaefd3b4dace
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ecea66d57bf473b5000e84c707e652f1c49431a840da5cc50e43f9e091c3eefb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085883"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117943388"
 ---
-# <a name="registeredtaskrunex-method"></a>Método RegisteredTask. RunEx
+# <a name="registeredtaskrunex-method"></a>Método RegisteredTask.RunEx
 
-Para scripts, o executa a tarefa registrada imediatamente usando sinalizadores especificados e um identificador de sessão.
+Para scripts, executa a tarefa registrada imediatamente usando sinalizadores especificados e um identificador de sessão.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,55 +45,55 @@ RegisteredTask.RunEx( _
 
 <dl> <dt>
 
-*parâmetros* \[ no\]
+*params* \[ Em\]
 </dt> <dd>
 
-Os parâmetros usados como valores nas ações da tarefa. Para não especificar nenhum valor de parâmetro para as ações de tarefa, defina esse parâmetro como **Nothing**. Caso contrário, um único valor de cadeia de caracteres ou uma matriz de valores de cadeia de caracteres pode ser especificado.
+Os parâmetros usados como valores nas ações da tarefa. Para não especificar nenhum valor de parâmetro para as ações da tarefa, de definido esse parâmetro como **Nothing**. Caso contrário, um único valor de cadeia de caracteres ou uma matriz de valores de cadeia de caracteres pode ser especificado.
 
-Os valores de cadeia de caracteres que você especifica são emparelhados com nomes e armazenados como pares de nome-valor. Se você especificar um único valor de cadeia de caracteres, Arg0 será o nome atribuído ao valor. O valor pode ser usado na ação da tarefa em que a variável $ (Arg0) é usada nas propriedades da ação.
+Os valores de cadeia de caracteres especificados são emparelhados com nomes e armazenados como pares nome-valor. Se você especificar um único valor de cadeia de caracteres, Arg0 será o nome atribuído ao valor. O valor pode ser usado na ação de tarefa em que a variável $(Arg0) é usada nas propriedades da ação.
 
-Se você passar valores como "0", "100" e "250" como uma matriz de valores de cadeia de caracteres, "0" substituirá as variáveis $ (Arg0), "100" substituirá as variáveis $ (arg1) e "250" substituirá as variáveis $ (arg2) usadas nas propriedades da ação.
+Se você passar valores como "0", "100" e "250" como uma matriz de valores de cadeia de caracteres, "0" substituirá as variáveis $(Arg0), "100" substituirá as variáveis $(Arg1) e "250" substituirá as variáveis $(Arg2) usadas nas propriedades de ação.
 
-Um máximo de 32 valores de cadeia de caracteres podem ser especificados.
+Um máximo de 32 valores de cadeia de caracteres pode ser especificado.
 
-Para obter mais informações e uma lista de propriedades de ação que podem usar as variáveis $ (Arg0), $ (arg1),..., $ (Arg32) em seus valores, consulte [ações de tarefas](task-actions.md).
+Para obter mais informações e uma lista de propriedades de ação que podem usar variáveis $(Arg0), $(Arg1), ..., $(Arg32) em seus valores, consulte [Ações de tarefa](task-actions.md).
 
 </dd> <dt>
 
-*sinalizadores* \[ de no\]
+*sinalizadores* \[ Em\]
 </dt> <dd>
 
-Uma constante de [ \_ \_ sinalizadores de execução de tarefa](/windows/desktop/api/taskschd/ne-taskschd-task_run_flags) que define como a tarefa é executada.
+Uma [constante TASK RUN \_ \_ FLAGS](/windows/desktop/api/taskschd/ne-taskschd-task_run_flags) que define como a tarefa é executado.
 
 </dd> <dt>
 
-*SessionID* \[ no\]
+*sessionID* \[ Em\]
 </dt> <dd>
 
-A sessão do Terminal Server na qual você deseja iniciar a tarefa.
+A sessão do servidor terminal na qual você deseja iniciar a tarefa.
 
-Se a execução da tarefa \_ \_ usar \_ constante de ID de sessão \_ (0x4) não for passada para o parâmetro *flags* , o valor especificado nesse parâmetro será ignorado. Se a execução da tarefa \_ \_ usar \_ \_ constante de ID de sessão for passada para o parâmetro *flags* e o valor SessionID for menor ou igual a 0, um erro de argumento inválido será retornado.
+Se a constante TASK \_ RUN \_ USE SESSION \_ \_ ID (0x4) não for passada para o parâmetro *flags,* o valor especificado nesse parâmetro será ignorado. Se a constante TASK RUN USE SESSION ID for passada para o parâmetro flags e o valor sessionID for menor ou igual \_ \_ a \_ \_ 0,  um erro de argumento inválido será retornado.
 
-Se a execução da tarefa \_ \_ usar \_ constante de ID de sessão \_ for passada para o parâmetro *flags* e o valor SessionID for uma ID de sessão válida maior que 0 e se nenhum valor for especificado para o parâmetro *User* , o serviço de Agendador de tarefas tentará iniciar a tarefa interativamente como o usuário que fez logon na sessão especificada.
+Se a constante TASK RUN USE SESSION ID for passada para o parâmetro flags e o valor sessionID for uma ID de sessão válida maior que 0 e se nenhum valor for especificado para o parâmetro de usuário, o serviço Agendador de Tarefas tentará iniciar a tarefa interativamente como o usuário que está conectado à sessão \_ \_ \_ \_ especificada.  
 
-Se a execução da tarefa \_ \_ usar \_ constante de ID de sessão \_ for passada para o parâmetro *flags* e o valor SessionID for uma ID de sessão válida maior que 0 e se um usuário for especificado no parâmetro *User* , o serviço de Agendador de tarefas tentará iniciar a tarefa interativamente como o usuário que é especificado no parâmetro *User* .
+Se a constante TASK RUN USE SESSION ID for passada para o parâmetro flags e o valor sessionID for uma ID de sessão válida maior que 0 e se um usuário for especificado no parâmetro de usuário, o serviço Agendador de Tarefas tentará iniciar a tarefa interativamente como o usuário especificado no parâmetro \_ \_ \_ \_ *user.*  
 
 </dd> <dt>
 
-*runningTask* \[ fora\]
+*runningTask* \[ out\]
 </dt> <dd>
 
-Um objeto [**RunningTask**](runningtask.md) que define a nova instância da tarefa.
+Um [**objeto RunningTask**](runningtask.md) que define a nova instância da tarefa.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método retornará sem erro, mas a tarefa não será executada se a propriedade [**TaskSettings. AllowDemandStart**](tasksettings-allowdemandstart.md) for definida como false para a tarefa registrada.
+Esse método retornará sem erro, mas a tarefa não será executado se a propriedade [**TaskSettings.AllowDemandStart**](tasksettings-allowdemandstart.md) estiver definida como false para a tarefa registrada.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -101,9 +101,9 @@ Esse método retornará sem erro, mas a tarefa não será executada se a proprie
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                          |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                    |
-| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd. tlb</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                          |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                    |
+| Biblioteca de tipos<br/>             | <dl> <dt>Taskschd.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Taskschd.dll</dt> </dl> |
 
 

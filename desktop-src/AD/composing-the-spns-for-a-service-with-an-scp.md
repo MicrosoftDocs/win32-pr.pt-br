@@ -1,21 +1,21 @@
 ---
-title: Compondo os SPNs de um serviço com um SCP
+title: Compondo os SPNs para um serviço com um SCP
 description: O exemplo de código a seguir compõe um SPN para um serviço que usa um SCP (ponto de conexão de serviço).
 ms.assetid: cbaa11ba-d32b-46cf-86a4-9050bb1be3a6
 ms.tgt_platform: multiple
 keywords:
-- Compor os SPNs de um serviço com um SCP AD
-- Nome da entidade de serviço anúncio, compondo SPNs para um serviço com um SCP
+- Compondo os SPNs para um serviço com um AD SCP
+- Nome da entidade de serviço AD , compondo SPNs para um serviço com um SCP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d0a9c44bc603372af35e874acfea4c1e12a2433d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 9e48175bc5fa3d686aab104f8e025d66d7900162235292ed5b853c3284285cd9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004813"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118022216"
 ---
-# <a name="composing-the-spns-for-a-service-with-an-scp"></a>Compondo os SPNs de um serviço com um SCP
+# <a name="composing-the-spns-for-a-service-with-an-scp"></a>Compondo os SPNs para um serviço com um SCP
 
 O exemplo de código a seguir compõe um SPN para um serviço que usa um SCP (ponto de conexão de serviço). O SPN retornado tem o seguinte formato.
 
@@ -26,7 +26,7 @@ O exemplo de código a seguir compõe um SPN para um serviço que usa um SCP (po
 
 
 
-" &lt; classe &gt; de serviço" e " &lt; nome &gt; do serviço" correspondem aos parâmetros *pszDNofSCP* e *pszServiceClass* . o &lt; padrão "host &gt; " é o nome DNS do computador local.
+" classe de serviço " e " nome do serviço " correspondem aos &lt; &gt; &lt; &gt; *parâmetros pszDNofSCP* e *pszServiceClass.* " &lt; host " assume como padrão o nome DNS do computador &gt; local.
 
 
 ```C++
@@ -57,9 +57,9 @@ return dwStatus;
 
 
 
- 
+ 
 
- 
+ 
 
 
 

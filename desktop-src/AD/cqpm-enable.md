@@ -1,10 +1,10 @@
 ---
-title: Mensagem de CQPM_ENABLE (Cmnquery. h)
+title: CQPM_ENABLE mensagem (Cmnquery.h)
 description: Enviado para a função de retorno de chamada CQPageProc de uma página de extensão de formulário de consulta para habilitar ou desabilitar a página.
 ms.assetid: dc75fab7-6de7-4138-86df-84d44e774120
 ms.tgt_platform: multiple
 keywords:
-- Mensagem de CQPM_ENABLE Active Directory
+- CQPM_ENABLE mensagem do Active Directory
 topic_type:
 - apiref
 api_name:
@@ -15,16 +15,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f0252c5e1ec7fd9633241416fbf01bb4ead52c45
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 653ecd692d5cba425112afb2a110cb905fd26c31175fafc1ec7501dea619b709
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009007"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118021352"
 ---
-# <a name="cqpm_enable-message"></a>CQPM \_ habilitar mensagem
+# <a name="cqpm_enable-message"></a>Mensagem CQPM \_ ENABLE
 
-A mensagem de **\_ habilitação CQPM** é enviada para a função de retorno de chamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) de uma página de extensão de formulário de consulta para habilitar ou desabilitar a página.
+A **mensagem CQPM \_ ENABLE** é enviada para a função de retorno de chamada [**CQPageProc**](/windows/desktop/api/Cmnquery/nc-cmnquery-lpcqpageproc) de uma página de extensão de formulário de consulta para habilitar ou desabilitar a página.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -33,7 +33,7 @@ A mensagem de **\_ habilitação CQPM** é enviada para a função de retorno de
 *wParam* 
 </dt> <dd>
 
-Contém zero para desabilitar a página ou diferente de zero para habilitar a página.
+Contém zero para desabilitar a página ou não zero para habilitar a página.
 
 </dd> <dt>
 
@@ -44,7 +44,7 @@ Não usado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno para essa mensagem é ignorado.
 
@@ -56,7 +56,7 @@ O valor de retorno para essa mensagem é ignorado.
 |-------------------------------------|---------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Cmnquery. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Cmnquery.h</dt> </dl> |
 
 
 

@@ -4,12 +4,12 @@ ms.assetid: 0f79de15-6ce9-4d89-afb5-b4a2f0cf2fe3
 title: Usando variáveis de condição
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 70989ca0f62271aa5afabfd60deddaeca2187866
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8c1b1bda85e0e5efecaf1572637601bc0031ac04cb91b6f7de735e1ca8590e31
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105769172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "117765540"
 ---
 # <a name="using-condition-variables"></a>Usando variáveis de condição
 
