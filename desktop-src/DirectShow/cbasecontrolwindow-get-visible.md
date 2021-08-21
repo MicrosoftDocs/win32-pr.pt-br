@@ -1,7 +1,7 @@
 ---
-description: O \_ método Get Visible recupera a visibilidade da janela atual.
+description: O método \_ get Visible recupera a visibilidade da janela atual.
 ms.assetid: 7e643569-1116-4562-be33-babd12a7e899
-title: Método de CBaseControlWindow.get_Visible (Ctlutil. h)
+title: CBaseControlWindow.get_Visible método (Ctlutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 3bc38a0b35f46de223ed84174c3b10f5300cc94d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: ef75aaf396e8677e9c470239d5dfca747729b534b67f8fef53a065280175f017
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105778646"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017374"
 ---
-# <a name="cbasecontrolwindowget_visible-method"></a>CBaseControlWindow. obter \_ método visível
+# <a name="cbasecontrolwindowget_visible-method"></a>Método CBaseControlWindow.get \_ Visible
 
 O `get_Visible` método recupera a visibilidade da janela atual.
 
@@ -45,17 +45,17 @@ HRESULT get_Visible(
 *pVisible* 
 </dt> <dd>
 
-Ponteiro para um sinalizador booliano de automação (0 está desativado, 1 está ativado).
+Ponteiro para um sinalizador booliana de automação (0 está desligado, 1 está on).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor **HRESULT** .
+Retorna um **valor HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Essa função de membro retornará 1 se a janela tiver o \_ estilo WS visível; caso contrário, 0.
+Essa função membro retornará 1 se a janela tiver o estilo VISÍVEL do \_ WS; caso contrário, 0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Essa função de membro retornará 1 se a janela tiver o \_ estilo WS visível; 
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Ctlutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Ctlutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

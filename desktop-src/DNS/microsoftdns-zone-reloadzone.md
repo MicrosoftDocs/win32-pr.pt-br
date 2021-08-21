@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 60e22d9becc5084407267e75d713082ce5dcbb73
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: d2809ab68b1cc52753c2fc160c5c2ba815101b84ed03f25093879c631d19f06e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918769"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076640"
 ---
 # <a name="reloadzone-method-of-the-microsoftdns_zone-class"></a>Método ReloadZone da classe de \_ zona MicrosoftDNS
 
@@ -40,7 +40,7 @@ void ReloadZone();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

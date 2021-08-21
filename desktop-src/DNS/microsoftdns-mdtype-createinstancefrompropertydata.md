@@ -1,10 +1,10 @@
 ---
-title: Método CreateInstanceFromPropertyData da classe MicrosoftDNS_MDType
-description: O método CreateInstanceFromPropertyData instancia um registro de recurso do agente de email para o domínio (MD).
+title: Método CreateInstanceFromPropertyData da classe MicrosoftDNS_MDType dados
+description: O método CreateInstanceFromPropertyData instanciou um registro de recurso do MD (Agente de Email para Domínio).
 ms.assetid: 23155a49-e2b3-4a69-8572-5dee61019d8f
 keywords:
-- DNS do método CreateInstanceFromPropertyData
-- Método CreateInstanceFromPropertyData DNS, classe MicrosoftDNS_MDType
+- Método CREATEInstanceFromPropertyData DNS
+- Classe DNS do método CreateInstanceFromPropertyData, MicrosoftDNS_MDType dados
 - MicrosoftDNS_MDType classe DNS, método CreateInstanceFromPropertyData
 topic_type:
 - apiref
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3b2e2cfdf3d2bb4b853a8e32716e51ca8e4c5b8e
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5bdbe84b4c5edb3d413191425a7be8dd177454edc394cb5533947cef2420c968
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455108"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076800"
 ---
-# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_mdtype-class"></a>Método CreateInstanceFromPropertyData da \_ classe MDType MicrosoftDNS
+# <a name="createinstancefrompropertydata-method-of-the-microsoftdns_mdtype-class"></a>Método CreateInstanceFromPropertyData da classe MDType do MicrosoftDNS \_
 
-O método **CreateInstanceFromPropertyData** instancia um registro de recurso do agente de email para o domínio (MD).
+O **método CreateInstanceFromPropertyData** instanciou um registro de recurso do MD (Agente de Email para Domínio).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,28 +48,28 @@ void CreateInstanceFromPropertyData(
 
 <dl> <dt>
 
-*DnsServerName* \[ no\]
+*DnsServerName* \[ Em\]
 </dt> <dd>
 
-FQDN ou endereço IP do servidor DNS que contém este RR.
+FQDN ou endereço IP do Servidor DNS que contém esse RR.
 
 </dd> <dt>
 
-*ContainerName* \[ no\]
+*ContainerName* \[ Em\]
 </dt> <dd>
 
-Nome do contêiner para a zona, o cache ou a instância de RootHints que contém esse RR.
+Nome do Contêiner para a instância Zone, Cache ou RootHints que contém esse RR.
 
 </dd> <dt>
 
-*OwnerName* \[ no\]
+*OwnerName* \[ Em\]
 </dt> <dd>
 
-Nome do proprietário do RR.
+Nome do proprietário para a RR.
 
 </dd> <dt>
 
-*RecordClass* \[ em, opcional\]
+*RecordClass* \[ in, opcional\]
 </dt> <dd>
 
 Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
@@ -78,10 +78,10 @@ Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
 
 | Valor                                                                                                | Significado                  |
 |------------------------------------------------------------------------------------------------------|--------------------------|
-| <span id="1"></span><dl> <dt>**1**</dt> </dl> | NO (Internet)<br/> |
+| <span id="1"></span><dl> <dt>**1**</dt> </dl> | IN (Internet)<br/> |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | CS (CSNET)<br/>    |
-| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CAOS)<br/>    |
-| <span id="4"></span><dl> <dt>**quatro**</dt> </dl> | HS (Hesiod)<br/>   |
+| <span id="3"></span><dl> <dt>**3**</dt> </dl> | CH (CHAOS)<br/>    |
+| <span id="4"></span><dl> <dt>**4**</dt> </dl> | HS (Hesiod)<br/>   |
 
 
 
@@ -89,14 +89,14 @@ Classe do RR. O valor padrão é 1. Os valores a seguir são válidos.
 
 </dd> <dt>
 
-*TTL* \[ em, opcional\]
+*TTL* \[ in, opcional\]
 </dt> <dd>
 
-Tempo, em segundos, que o RR pode ser armazenado em cache por um resolvedor de DNS.
+Tempo, em segundos, em que o RR pode ser armazenado em cache por um resolvedor de DNS.
 
 </dd> <dt>
 
-*MDHost* \[ no\]
+*MDHost* \[ Em\]
 </dt> <dd>
 
 Nome do host de entrega de email.
@@ -106,11 +106,11 @@ Nome do host de entrega de email.
 *RR* \[ out, ref\]
 </dt> <dd>
 
-Referência ao novo objeto.
+Referência ao novo objeto .
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -123,7 +123,7 @@ Esse método não retorna um valor.
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                   |
 | Namespace<br/>                | \\MicrosoftDNS raiz<br/>                                                          |
-| MOF<br/>                      | <dl> <dt>Dnsprov. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>Dnsprov.mof</dt> </dl> |
 
 
 
@@ -134,7 +134,7 @@ Esse método não retorna um valor.
 [**MicrosoftDNS \_ MDType**](microsoftdns-mdtype.md)
 </dt> <dt>
 
-[**Método Modify da classe MicrosoftDNS \_ MDType**](microsoftdns-mdtype-modify.md)
+[**Método Modify da classe MDType do MicrosoftDNS \_**](microsoftdns-mdtype-modify.md)
 </dt> <dt>
 
 [**MicrosoftDNS \_ ResourceRecord**](microsoftdns-resourcerecord.md)

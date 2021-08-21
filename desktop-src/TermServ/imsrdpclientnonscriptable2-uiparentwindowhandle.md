@@ -1,18 +1,18 @@
 ---
 title: Propriedade IMsRdpClientNonScriptable2 UIParentWindowHandle
-description: Define ou recupera o identificador de janela como a janela pai de qualquer caixa de diálogo exibida pelo controle. Isso permite que qualquer janela exibida pelo controle seja devidamente modal com relação a todas as janelas exibidas pelo aplicativo pai.
+description: Define ou recupera o alça de janela para ser a janela pai para todas as caixas de diálogo exibidas pelo controle . Isso permite que todas as janelas exibidas pelo controle sejam modais corretamente em relação a todas as janelas exibidas pelo aplicativo pai.
 ms.assetid: 5ecf1fc3-492e-4faf-89c5-7f7abb3778a0
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade UIParentWindowHandle
-- Propriedade UIParentWindowHandle Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable2, Propriedade UIParentWindowHandle
-- Propriedade UIParentWindowHandle Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable3, Propriedade UIParentWindowHandle
-- Propriedade UIParentWindowHandle Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable4, Propriedade UIParentWindowHandle
-- Propriedade UIParentWindowHandle Serviços de Área de Trabalho Remota, interface IMsRdpClientNonScriptable5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientNonScriptable5, Propriedade UIParentWindowHandle
+- Propriedade UIParentWindowHandle Serviços de Área de Trabalho Remota
+- A propriedade UIParentWindowHandle Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable2
+- Interface IMsRdpClientNonScriptable2 Serviços de Área de Trabalho Remota , propriedade UIParentWindowHandle
+- A propriedade UIParentWindowHandle Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable3
+- Interface IMsRdpClientNonScriptable3 Serviços de Área de Trabalho Remota , propriedade UIParentWindowHandle
+- A propriedade UIParentWindowHandle Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable4
+- Interface IMsRdpClientNonScriptable4 Serviços de Área de Trabalho Remota , propriedade UIParentWindowHandle
+- A propriedade UIParentWindowHandle Serviços de Área de Trabalho Remota , interface IMsRdpClientNonScriptable5
+- Interface IMsRdpClientNonScriptable5 Serviços de Área de Trabalho Remota , propriedade UIParentWindowHandle
 topic_type:
 - apiref
 api_name:
@@ -34,18 +34,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5526fd1a699c87e32c6acadd238c2144d00a10be
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0a2fb93fb7e68f7fe3755e3595d43129c5bf7ca4fa2a767a2b6a1786a803209f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104454649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001097"
 ---
-# <a name="imsrdpclientnonscriptable2uiparentwindowhandle-property"></a>Propriedade IMsRdpClientNonScriptable2:: UIParentWindowHandle
+# <a name="imsrdpclientnonscriptable2uiparentwindowhandle-property"></a>Propriedade IMsRdpClientNonScriptable2::UIParentWindowHandle
 
-Define ou recupera o identificador de janela como a janela pai de qualquer caixa de diálogo exibida pelo controle. Isso permite que qualquer janela exibida pelo controle seja devidamente modal com relação a todas as janelas exibidas pelo aplicativo pai.
+Define ou recupera o alça de janela para ser a janela pai para todas as caixas de diálogo exibidas pelo controle . Isso permite que todas as janelas exibidas pelo controle sejam modais corretamente em relação a todas as janelas exibidas pelo aplicativo pai.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -64,7 +64,7 @@ HRESULT get_UIParentWindowHandle(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O novo identificador de janela.
+O novo alça de janela.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
@@ -72,7 +72,7 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008, Windows Server 2008 com SP1<br/>                                  |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>        |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>        |
-| IID<br/>                      | IID \_ IMsRdpClientNonScriptable2 é definido como 17a5e535-4072-4fa4-AF32-c8d0d47345e9<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientNonScriptable2 é definido como 17a5e535-4072-4fa4-af32-c8d0d47345e9<br/> |
 
 
 

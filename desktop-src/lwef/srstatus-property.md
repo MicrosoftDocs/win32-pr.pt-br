@@ -4,16 +4,16 @@ description: Propriedade SRStatus
 ms.assetid: 67618a35-05e4-4bb3-b910-c75de6e32578
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a64cb6ba16bc024a52b65efa98c22fd089ad79da
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d7cc079c79b3539fa5ad90da4f45907236f19d3b841cf580142446b230ff7c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104006186"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975676"
 ---
 # <a name="srstatus-property"></a>Propriedade SRStatus
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[o Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 <dl> <dt>
 
@@ -27,7 +27,7 @@ Retorna se a entrada de fala pode ser iniciada para o caractere.
 <span id="Syntax"></span><span id="syntax"></span><span id="SYNTAX"></span>**Sintaxe**
 </dt> <dd>
 
-*Agente. ***Caracteres ("*** characterid * * *"). SRStatus**
+*caracteres Agent. ***("**_characterid_*_"). SRStatus_*
 
 
 
@@ -43,7 +43,7 @@ Retorna se a entrada de fala pode ser iniciada para o caractere.
 
 
 
- 
+ 
 
 </dd> </dl>
 
@@ -60,9 +60,9 @@ Essa propriedade só se aplica ao uso do caractere do aplicativo cliente; a conf
 [**Método de escuta**](listen-method.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

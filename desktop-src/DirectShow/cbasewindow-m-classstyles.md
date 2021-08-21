@@ -1,7 +1,7 @@
 ---
 description: Estilos de classe para a janela.
 ms.assetid: 2bf70b7e-c585-4511-aed5-e6d1b087dd74
-title: 'Membro CBaseWindow:: m_ClassStyles (Winutil. h)'
+title: Membro CBaseWindow::m_ClassStyles (Winutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 10afaf647862010fc8317c70fd5322b2b616e95d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 5cbe78847c99c82f72777731c5f2d5b673ba339e5c883bfafe623a0699a8bce2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758550"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119016554"
 ---
-# <a name="cbasewindowm_classstyles-member"></a>Membro de CBaseWindow:: m \_ ClassStyles
+# <a name="cbasewindowm_classstyles-member"></a>Membro ClassStyles CBaseWindow::m \_
 
 Estilos de classe para a janela.
 
@@ -42,8 +42,8 @@ DWORD m_ClassStyles;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Winutil. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Winutil.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

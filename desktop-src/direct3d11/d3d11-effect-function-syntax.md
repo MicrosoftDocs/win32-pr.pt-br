@@ -1,5 +1,5 @@
 ---
-title: Sintaxe da função de efeito (Direct3D 11)
+title: Sintaxe da função Effect (Direct3D 11)
 description: Uma função de efeito é escrita em HLSL e é declarada com a sintaxe descrita nesta seção.
 ms.assetid: 5e12ba65-98bf-4f21-be75-602687157eb1
 ms.topic: reference
@@ -11,13 +11,13 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119046614"
 ---
-# <a name="effect-function-syntax-direct3d-11"></a>Sintaxe da função de efeito (Direct3D 11)
+# <a name="effect-function-syntax-direct3d-11"></a>Sintaxe da função Effect (Direct3D 11)
 
 Uma função de efeito é escrita em HLSL e é declarada com a sintaxe descrita nesta seção.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
- *Função* do ReturnType ( \[ *ArgumentList* \] )
+*ReturnType* *FunctionName* ( \[ *ArgumentList* \] )
 
 {
 
@@ -30,20 +30,20 @@ Uma função de efeito é escrita em HLSL e é declarada com a sintaxe descrita 
 
 | Nome         | Descrição                                                                                                                                                                                                                                                          |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tipoderetorno   | Qualquer [tipo de HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)                                                                                                                                                                                                       |
+| Tipoderetorno   | Qualquer [tipo HLSL](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-variable-syntax)                                                                                                                                                                                                       |
 | FunctionName | Uma cadeia de caracteres ASCII que identifica exclusivamente o nome da função de sombreador.                                                                                                                                                                                            |
-| ArgumentList | Um ou mais argumentos, separados por vírgulas (consulte os [argumentos da função (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-parameters)).                                                                                                                             |
-| Instruções   | Uma ou mais instruções (consulte [instruções (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-statements)) que compõem o corpo da função. Se uma função for definida sem um corpo, será considerada um protótipo; e deve ser redefinido com um corpo antes de usar. |
+| Argumentlist | Um ou mais argumentos, separados por vírgulas (consulte [Argumentos de função (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-function-parameters)).                                                                                                                             |
+| Instruções   | Uma ou mais instruções (consulte [Instruções (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-statements)) que comem o corpo da função. Se uma função for definida sem um corpo, ela será considerada um protótipo; e devem ser redefinidos com um corpo antes do uso. |
 
 
 
  
 
-Uma função de efeito pode ser um sombreador ou pode simplesmente ser uma função chamada por um sombreador. Uma função é identificada exclusivamente por seu nome, os tipos de seus parâmetros e a plataforma de destino; Portanto, as funções podem ser sobrecarregadas. Qualquer função HLSL válida deve se ajustar a este formato; para obter uma lista mais detalhada de sintaxe para funções HLSL, consulte [funções (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-functions).
+Uma função de efeito pode ser um sombreador ou simplesmente uma função chamada por um sombreador. Uma função é identificada exclusivamente por seu nome, os tipos de seus parâmetros e a plataforma de destino; portanto, as funções podem ser sobrecarregadas. Qualquer função HLSL válida deve se ajustar a esse formato; para obter uma lista mais detalhada de sintaxe para funções HLSL, consulte [Funções (DirectX HLSL)](/windows/desktop/direct3dhlsl/dx-graphics-hlsl-functions).
 
 ## <a name="example"></a>Exemplo
 
-Veja a seguir um exemplo de uma função de sombreador de pixel.
+A seguir está um exemplo de uma função de sombreador de pixel.
 
 
 ```
@@ -70,7 +70,7 @@ PS_OUTPUT RenderScenePS( VS_OUTPUT In,
 
 <dl> <dt>
 
-[Formato do efeito](d3d11-effect-format.md)
+[Formato de efeito](d3d11-effect-format.md)
 </dt> </dl>
 
  

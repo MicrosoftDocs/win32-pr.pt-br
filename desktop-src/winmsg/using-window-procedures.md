@@ -4,12 +4,12 @@ ms.assetid: acc68991-4689-44dc-8547-a7b6153b0f62
 title: Usando os procedimentos de janela
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 79e0508119a2ba62c813c32e8fd0c00bd3dd1e85
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f05e5999b216ad8c51be4de6fdec80b5f58ff94956f8c1129d74c3f7075a90eb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103836875"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119028294"
 ---
 # <a name="using-window-procedures"></a>Usando os procedimentos de janela
 
@@ -118,7 +118,7 @@ int APIENTRY WinMain(
 Para subclasse de uma instância de uma janela, chame a função [**SetWindowLong**](/windows/win32/api/winuser/nf-winuser-setwindowlonga) e especifique o identificador para a janela para subclasse o \_ sinalizador GWL WndProc e um ponteiro para o procedimento de subclasse. **SetWindowLong** retorna um ponteiro para o procedimento de janela original; Use esse ponteiro para passar mensagens para o procedimento original. O procedimento de janela de subclasse deve usar a função [**CallWindowProc**](/windows/win32/api/winuser/nf-winuser-callwindowproca) para chamar o procedimento de janela original.
 
 > [!Note]  
-> Para escrever um código compatível com as versões de 32 bits e 64 bits do Windows, use a função [**SetWindowLongPtr**](/windows/win32/api/winuser/nf-winuser-setwindowlongptra) .
+> para escrever um código compatível com as versões de 32 bits e 64 bits de Windows, use a função [**SetWindowLongPtr**](/windows/win32/api/winuser/nf-winuser-setwindowlongptra) .
 
  
 

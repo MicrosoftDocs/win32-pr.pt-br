@@ -7,12 +7,12 @@ keywords:
 - Serviços de Área de Trabalho Remota Serviços de Área de Trabalho Remota, referência de API AudioEndpoint
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1958b21643083a14110ddad77f68024cc464dd36
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ae9a7aa83b519ca10128f9bea3b945492f387c0498c81f8b2959cb9830b91dbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364250"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119000086"
 ---
 # <a name="remote-desktop-services-audioendpoint-api-reference"></a>Serviços de Área de Trabalho Remota referência da API AudioEndpoint
 
@@ -41,9 +41,9 @@ O Serviços de Área de Trabalho Remota API AudioEndpoint dá suporte a tipos de
 
 O Serviços de Área de Trabalho Remota API AudioEndpoint é para uso em cenários de Área de Trabalho Remota; Não é para aplicativos cliente.
 
- 
+ 
 
- 
+ 
 
 
 

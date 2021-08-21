@@ -3,8 +3,8 @@ title: Enumeração de MPTHREAT_CATEGORY (MpClient. h)
 description: Categorias de ameaça possíveis.
 ms.assetid: 478ED59E-5D3C-43B3-A89D-44A649EDD086
 keywords:
-- Recursos do ambiente Windows herdado de enumeração de MPTHREAT_CATEGORY
-- PMPTHREAT_CATEGORY recursos de ambiente herdados do ponteiro de enumeração do Windows
+- recursos do ambiente de Windows herdado de enumeração de MPTHREAT_CATEGORY
+- Windows recursos de ambiente herdados do ponteiro de enumeração PMPTHREAT_CATEGORY
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6a149ef6ce6ebadacbac6f0dd35247d793ca7000
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 70cfd95de751d51be3ab4b61bc361687738422a6d31c234576e812efcd57bd4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105768288"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975966"
 ---
 # <a name="mpthreat_category-enumeration"></a>\_Enumeração de categoria MPTHREAT
 
@@ -104,7 +104,7 @@ Categoria de ameaça | Descrição
 <span id="MP_THREAT_CATEGORY_NUKER"></span><span id="mp_threat_category_nuker"></span>**MP \_ \_ \_ NUKER de categoria de ameaça** | Malware criado para falhar em um dispositivo ou deixá-lo menos estável.
 <span id="MP_THREAT_CATEGORY_SECURITYDISABLER"></span><span id="mp_threat_category_securitydisabler"></span>**MP \_ \_ \_ SECURITYDISABLER de categoria de ameaça** | Malware que desabilita as configurações de segurança ou os produtos.
 <span id="MP_THREAT_CATEGORY_JOKEPROGRAM"></span><span id="mp_threat_category_jokeprogram"></span>**MP \_ \_ \_ JOKEPROGRAM de categoria de ameaça** | Um aplicativo projetado para amuse ou assustam um usuário, sem realmente prejudicar o dispositivo.
-<span id="MP_THREAT_CATEGORY_HOSTILEACTIVEXCONTROL"></span><span id="mp_threat_category_hostileactivexcontrol"></span>**MP \_ \_ \_ HOSTILEACTIVEXCONTROL de categoria de ameaça** | Um controle ActiveX projetado por um invasor para danificar um dispositivo. Um controle ActiveX é um tipo de complemento do navegador específico do Internet Explorer.
+<span id="MP_THREAT_CATEGORY_HOSTILEACTIVEXCONTROL"></span><span id="mp_threat_category_hostileactivexcontrol"></span>**MP \_ \_ \_ HOSTILEACTIVEXCONTROL de categoria de ameaça** | um controle de ActiveX projetado por um invasor para danificar um dispositivo. um controle de ActiveX é um tipo de complemento do navegador específico do Internet Explorer.
 <span id="MP_THREAT_CATEGORY_SOFTWAREBUNDLER"></span><span id="mp_threat_category_softwarebundler"></span>**MP \_ \_ \_ SOFTWAREBUNDLER de categoria de ameaça** | Software que instala outros aplicativos potencialmente indesejados, como adware ou spyware. O contrato de licença do software de agrupamento pode exigir esses outros componentes para funcionar.
 <span id="MP_THREAT_CATEGORY_STEALTHNOTIFIER"></span><span id="mp_threat_category_stealthnotifier"></span>**MP \_ \_ \_ STEALTHNOTIFIER de categoria de ameaça** | Malware que se conecta a um servidor remoto por meio de uma conexão furtiva para notificar um invasor de que o malware foi instalado.
 <span id="MP_THREAT_CATEGORY_SETTINGSMODIFIER"></span><span id="mp_threat_category_settingsmodifier"></span>**MP \_ \_ \_ SETTINGSMODIFIER de categoria de ameaça** | Um aplicativo potencialmente indesejado que altera as configurações de um usuário sem o conhecimento ou o consentimento do usuário.
@@ -127,7 +127,7 @@ Categoria de ameaça | Descrição
 <span id="MP_THREAT_CATEGORY_VIRUS"></span><span id="mp_threat_category_virus"></span>**MP \_ \_ \_ vírus de categoria de ameaça** | Malware que Replica, normalmente, infectando outros arquivos no sistema, permitindo assim a execução do código de malware e sua propagação quando esses arquivos são ativados.
 <span id="MP_THREAT_CATEGORY_KNOWN"></span><span id="mp_threat_category_known"></span>**MP \_ Categoria de ameaça \_ \_ conhecida** | Uma ameaça de malware não especificada.
 <span id="MP_THREAT_CATEGORY_UNKNOWN"></span><span id="mp_threat_category_unknown"></span>**MP \_ Categoria de ameaça \_ \_ desconhecida** | Uma ameaça de malware não especificada que ainda não foi definida.
-<span id="MP_THREAT_CATEGORY_SPP"></span><span id="mp_threat_category_spp"></span>**MP \_ Categoria de ameaça \_ \_ spp** | Tecnologia antipirataria que exige que cada instalação de um produto Windows seja ativada com a Microsoft.
+<span id="MP_THREAT_CATEGORY_SPP"></span><span id="mp_threat_category_spp"></span>**MP \_ Categoria de ameaça \_ \_ spp** | tecnologia antipirataria que exige que cada instalação de um produto Windows seja ativada com a Microsoft.
 <span id="MP_THREAT_CATEGORY_BEHAVIOR"></span><span id="mp_threat_category_behavior"></span>**MP \_ \_ \_ comportamento da categoria de ameaça** | Um tipo de detecção com base em ações de arquivo que geralmente são associadas a atividades mal-intencionadas.
 <span id="MP_THREAT_CATEGORY_VULNERABILTIY"></span><span id="mp_threat_category_vulnerabiltiy"></span>**MP \_ \_ \_ VULNERABILTIY de categoria de ameaça** | Qualquer fraqueza, processo administrativo ou atividade que torna um dispositivo suscetível a explorar por uma ameaça.
 <span id="MP_THREAT_CATEGORY_POLICY"></span><span id="mp_threat_category_policy"></span>**MP \_ \_ \_ política de categoria de ameaça** | Um conjunto de regras definidas por um administrador, que controla recursos em desktops e dispositivos móveis, como atualizações de software.
@@ -136,6 +136,6 @@ Categoria de ameaça | Descrição
 
 | Requisito | Valor |
 |-|-|
-| Cliente mínimo com suporte | Windows 8 (somente aplicativos de área de trabalho) |
+| Cliente mínimo com suporte | Windows 8 (somente aplicativos da área de trabalho) |
 | Servidor mínimo com suporte | Windows Server 2012 (somente aplicativos da área de trabalho) |
-| parâmetro | MpClient. h |
+| Cabeçalho | MpClient. h |

@@ -13,85 +13,85 @@ ms.locfileid: "119015784"
 ---
 # <a name="event-notification-codes"></a>Códigos de notificação de eventos
 
-Esta seção lista os DirectShow eventos que não são específicos do DVD. Para eventos específicos ao DVD, consulte [Códigos de notificação de evento de DVD](dvd-notification-codes.md).
+esta seção lista os eventos de DirectShow que não são específicos do DVD. Para eventos específicos do DVD, consulte [códigos de notificação de eventos de DVD](dvd-notification-codes.md).
 
-Os filtros enviam eventos para o Gerenciador Graph Filtro chamando o [**método IMediaEventSink::Notify.**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify) O Gerenciador Graph Filtro lida com alguns eventos e enfiltre outros para o aplicativo. O aplicativo os recupera chamando o [**método IMediaEvent::GetEvent.**](/windows/desktop/api/Control/nf-control-imediaevent-getevent)
+os filtros enviam eventos para o gerenciador de Graph de filtro chamando o método [**IMediaEventSink:: Notify**](/windows/desktop/api/Strmif/nf-strmif-imediaeventsink-notify) . o filtro Graph Manager trata alguns eventos e enfileira outras pessoas para o aplicativo. O aplicativo os recupera chamando o método [**IMediaEvent:: GetEvent**](/windows/desktop/api/Control/nf-control-imediaevent-getevent) .
 
-Nas seções a seguir, cada entrada lista o código do evento, o significado dos parâmetros de evento e a ação padrão do Gerenciador Graph Filtro para o evento, se for o caso. Para substituir a ação padrão, chame [**IMediaEvent::CancelDefaultHandling**](/windows/desktop/api/Control/nf-control-imediaevent-canceldefaulthandling). Os códigos de evento são definidos nos arquivos de header Evcode.h e Audevcod.h. Se não houver nenhuma ação padrão, o Gerenciador Graph Filtrar encaminhará automaticamente o evento para o aplicativo (por meio da fila de eventos).
+nas seções a seguir, cada entrada lista o código do evento, o significado dos parâmetros do evento e a ação padrão do filtro Graph do gerenciador para o evento, se houver. Para substituir a ação padrão, chame [**IMediaEvent:: CancelDefaultHandling**](/windows/desktop/api/Control/nf-control-imediaevent-canceldefaulthandling). Os códigos de evento são definidos nos arquivos de cabeçalho Evcode. h e Audevcod. h. se não houver nenhuma ação padrão, o filtro Graph gerenciador encaminhará automaticamente o evento para o aplicativo (por meio da fila de eventos).
 
 **Eventos personalizados**
 
-Os filtros podem definir eventos personalizados com códigos de evento no intervalo EC \_ USER e superior. O Gerenciador Graph Filtro os colocará diretamente na fila de eventos. No entanto, as seguintes advertências se aplicam:
+Os filtros podem definir eventos personalizados com códigos de eventos no intervalo do usuário do EC \_ e superior. o filtro Graph Manager os colocará diretamente na fila de eventos. No entanto, as seguintes advertências se aplicam:
 
--   O Gerenciador Graph Filtro não pode liberar os parâmetros de evento usando o método [**normal IMediaEvent::FreeEventParams.**](/windows/desktop/api/Control/nf-control-imediaevent-freeeventparams) O aplicativo deve liberar todas as contagens de memória ou referência associadas aos parâmetros de evento.
--   O filtro só deve enviar o evento de dentro de um aplicativo que esteja preparado para manipular o evento. (Possivelmente, o aplicativo pode definir uma propriedade personalizada no filtro para indicar que é seguro enviar o evento.)
+-   o filtro Graph Manager não pode liberar os parâmetros de evento usando o método normal [**IMediaEvent:: FreeEventParams**](/windows/desktop/api/Control/nf-control-imediaevent-freeeventparams) . O aplicativo deve liberar qualquer quantidade de memória ou referência associada aos parâmetros do evento.
+-   O filtro só deve enviar o evento de dentro de um aplicativo que esteja preparado para manipular o evento. (Possivelmente o aplicativo pode definir uma propriedade personalizada no filtro para indicar que é seguro enviar o evento.)
 
 
 
 | Código de notificação de eventos                                                 | Descrição                                                                                                               |
 |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [**EC \_ ACTIVATE**](ec-activate.md)                                     | Uma janela de vídeo está sendo ativada ou desativada.                                                                         |
-| [**EC \_ BANDWIDTHCHANGE**](ec-bandwidthchange.md)                       | Sem suporte.                                                                                                            |
-| [**DADOS \_ DE BUFFER DE \_ EC**](ec-buffering-data.md)                        | O grafo está em buffer de dados ou parou de colocar dados em buffer.                                                               |
-| [**EC \_ BUILT**](ec-built.md)                                           | Enviar pelo Controle de Vídeo quando um grafo tiver sido criado. Não encaminhado para aplicativos.                                     |
-| [**RELÓGIO \_ DE EC \_ ALTERADO**](ec-clock-changed.md)                          | O relógio de referência foi alterado.                                                                                          |
-| [**EC \_ CLOCK \_ UNSET**](ec-clock-unset.md)                              | O provedor de relógio foi desconectado.                                                                                      |
-| [**EVENTO \_ EC CODECAPI \_**](ec-codecapi-event.md)                        | Enviado por um codificador para sinalizar um evento de codificação.                                                                           |
-| [**EC \_ COMPLETE**](ec-complete.md)                                     | Todos os dados de um fluxo específico foram renderizados.                                                                      |
-| [**EC \_ CONTENTPROPERTY \_ ALTERADO**](ec-contentproperty-changed.md)      | Sem suporte.                                                                                                            |
-| [**DISPOSITIVO \_ EC \_ PERDIDO**](ec-device-lost.md)                              | Um Plug and Play foi removido ou se tornou disponível novamente.                                                         |
-| [**EXIBIÇÃO DE EC \_ \_ ALTERADA**](ec-display-changed.md)                      | O modo de exibição foi alterado.                                                                                             |
-| [**EC \_ END \_ OF \_ SEGMENT**](ec-end-of-segment.md)                       | O final de um segmento foi atingido.                                                                                    |
-| [**EC \_ EOS \_ EM BREVE**](ec-eos-soon.md)                                    | Sem suporte.                                                                                                            |
-| [**ERRO \_ DE EC \_ STILLPLAYING**](ec-error-stillplaying.md)                | Um comando assíncrono para executar o grafo falhou.                                                                      |
-| [**EC \_ ERRORABORT**](ec-errorabort.md)                                 | Uma operação foi anulada devido a um erro.                                                                             |
-| [**EC \_ ERRORABORTEX**](ec-errorabortex.md)                             | Uma operação foi anulada devido a um erro.                                                                             |
-| [**EC \_ EXTDEVICE \_ MODE \_ CHANGE**](ec-extdevice-mode-change.md)         | Sem suporte.                                                                                                            |
-| [**ARQUIVO \_ DE EC \_ FECHADO**](ec-file-closed.md)                              | O arquivo de origem foi fechado devido a um evento inesperado.                                                                |
-| [**EC \_ FULLSCREEN \_ LOST**](ec-fullscreen-lost.md)                      | O renderador de vídeo está saindo do modo de tela inteira.                                                                  |
-| [**GRAFO DE EC \_ \_ ALTERADO**](ec-graph-changed.md)                          | O grafo de filtro foi alterado.                                                                                             |
-| [**COMPRIMENTO DA EC \_ \_ ALTERADO**](ec-length-changed.md)                        | O comprimento de uma origem foi alterado.                                                                                       |
-| [**EC \_ LOADSTATUS**](ec-loadstatus.md)                                 | Notifica o aplicativo de progresso ao abrir um arquivo de rede.                                                         |
-| [**EC \_ MARKER \_ HIT**](ec-marker-hit.md)                                | Sem suporte.                                                                                                            |
-| [**EC \_ NEED \_ RESTART**](ec-need-restart.md)                            | Um filtro está solicitando que o grafo seja reiniciado.                                                                       |
-| [**NOVO \_ PIN DE \_ EC**](ec-new-pin.md)                                      | Sem suporte.                                                                                                            |
-| [**JANELA \_ NOTIFICAÇÃO \_ DE EC**](ec-notify-window.md)                          | Notifica um filtro da janela do renderador de vídeo.                                                                         |
-| [**EVENTO \_ EC OLE \_**](ec-ole-event.md)                                  | Um filtro está passando uma cadeia de caracteres de texto para o aplicativo.                                                                     |
-| [**ARQUIVO DE \_ ABERTURA \_ DE EC**](ec-opening-file.md)                            | O grafo está abrindo um arquivo ou concluiu a abertura de um arquivo.                                                              |
-| [**PALETA \_ DE EC \_ ALTERADA**](ec-palette-changed.md)                      | A paleta de vídeos foi alterada.                                                                                            |
-| [**EC \_ PAUSED**](ec-paused.md)                                         | Uma solicitação de pausa foi concluída.                                                                                            |
-| [**EC \_ \_ REABRIR**](ec-please-reopen.md)                          | O arquivo de origem foi alterado.                                                                                              |
-| [**\_PRÉ-PROCESSAMENTO DE \_ EC CONCLUÍDO**](ec-preprocess-complete.md)              | Enviado pelo [filtro Wm ASF Writer](wm-asf-writer-filter.md) quando ele conclui o pré-processamento para codificação multipasso. |
-| [**LATÊNCIA \_ DE \_ PROCESSAMENTO DE EC**](ec-processing-latency.md)                | Indica a quantidade de tempo que um componente está levando para processar cada amostra.                                           |
-| [**ALTERAÇÃO \_ DE QUALIDADE DA \_ EC**](ec-quality-change.md)                        | O grafo está soltando amostras para controle de qualidade.                                                                       |
-| [**EC \_ RENDER \_ FINISHED**](ec-render-finished.md)                      | Sem suporte.                                                                                                            |
-| [**EC \_ REPAINT**](ec-repaint.md)                                       | Um renderador de vídeo requer uma reint.                                                                                      |
-| [**LATÊNCIA \_ DE \_ EXEMPLO DE EC**](ec-sample-latency.md)                        | Especifica o quão atrasado o agendamento de um componente está para processar exemplos.                                                  |
-| [**EXEMPLO \_ DE EC \_ NECESSÁRIO**](ec-sample-needed.md)                          | Solicita um novo exemplo de entrada do filtro EVR (Renderização de Vídeo Aprimorado).                                                |
-| [**TEMPO \_ DE LIMPEZA DE \_ EC**](ec-scrub-time.md)                                | Especifica o carimbo de data/hora da etapa de quadro mais recente.                                                                  |
-| [**SEGMENTO \_ DE EC \_ INICIADO**](ec-segment-started.md)                      | Um novo segmento foi iniciado.                                                                                                |
-| [**DESLIGAMENTO \_ DA \_ EC**](ec-shutting-down.md)                          | O grafo de filtro está sendo desligado, antes de ser destruído.                                                              |
-| [**EC \_ SNDDEV \_ EM \_ ERRO**](ec-snddev-in-error.md)                     | Ocorreu um erro de dispositivo em um filtro de captura de áudio.                                                                   |
-| [**ERRO \_ EC SNDDEV \_ \_ OUT**](ec-snddev-out-error.md)                   | Ocorreu um erro de dispositivo em um filtro do renderador de áudio.                                                                  |
-| [**EC \_ STARVATION**](ec-starvation.md)                                 | Um filtro não está recebendo dados suficientes.                                                                                    |
-| [**ALTERAÇÃO \_ DE ESTADO DA \_ EC**](ec-state-change.md)                            | O grafo de filtro alterou o estado.                                                                                       |
-| [**STATUS DA \_ EC**](ec-status.md)                                         | Contém duas cadeias de caracteres de status arbitrárias.                                                                                    |
-| [**ETAPA \_ EC \_ CONCLUÍDA**](ec-step-complete.md)                          | Um filtro executando a execução da execução de uma execução de quadro pisou o número especificado de quadros.                                            |
-| [**CONTROLE DE FLUXO DE EC \_ \_ \_ INICIADO**](ec-stream-control-started.md)       | Um comando de início de controle de fluxo teve efeito.                                                                          |
-| [**CONTROLE DE FLUXO DE EC \_ \_ \_ INTERROMPIDO**](ec-stream-control-stopped.md)       | Um comando stream-control stop teve efeito.                                                                           |
-| [**ERRO \_ DE FLUXO DE EC AINDA EM \_ \_ REPRODUÇÃO**](ec-stream-error-stillplaying.md) | Ocorreu um erro em um fluxo. O fluxo ainda está em reprodução.                                                           |
-| [**ERRO DE \_ FLUXO \_ DE EC \_ PARADO**](ec-stream-error-stopped.md)           | Um fluxo foi interrompido devido a um erro.                                                                                 |
-| [**EC \_ TIMECODE \_ DISPONÍVEL**](ec-timecode-available.md)                | Sem suporte.                                                                                                            |
-| [**EC \_ UNBUILT**](ec-unbuilt.md)                                       | Envie pelo Controle de Vídeo quando um grafo tiver sido dividido. Não encaminhado para aplicativos.                                 |
-| [**EC \_ USERABORT**](ec-userabort.md)                                   | O usuário terminou a reprodução.                                                                                         |
-| [**TAMANHO DO VÍDEO DE EC \_ \_ \_ ALTERADO**](ec-video-size-changed.md)               | O tamanho do vídeo nativo foi alterado.                                                                                        |
-| [**EC \_ VIDEOFRAMEREADY**](ec-videoframeready.md)                       | Um quadro de vídeo está pronto para exibição.                                                                                       |
-| [**FALHA NA RECONEXÃO DA \_ VMR \_ \_ DE EC**](ec-vmr-reconnection-failed.md)     | Enviado pela VMR-7 e pela VMR-9 quando não pôde aceitar uma solicitação de alteração de formato dinâmico do decodificador upstream.   |
-| [**EC \_ VMR \_ RENDERDEVICE \_ SET**](ec-vmr-renderdevice-set.md)           | Enviado quando a VMR selecionou seu mecanismo de renderização.                                                                   |
-| [**SUPERFÍCIE \_ DE VMR DE EC \_ \_ INVERTIDA**](ec-vmr-surface-flipped.md)             | Enviado quando o apresentador de alocador da VMR-7 chamou o método Flip do DirectDraw na superfície que está sendo apresentada.           |
-| [**JANELA \_ EC \_ DESTRUÍDA**](ec-window-destroyed.md)                    | O renderador de vídeo foi destruído ou removido do grafo.                                                               |
-| [**EVENTO \_ EC WMT \_**](ec-wmt-event.md)                                  | Enviado pelo filtro Leitor do WM ASF quando ele lê arquivos ASF protegidos pelo DRM (gerenciamento de direitos digitais).                    |
-| [**EVENTO EC \_ WMT \_ INDEX \_**](ec-wmt-index-event.md)                     | Enviado quando um aplicativo usa o Wm ASF Writer para indexar Windows de Vídeo de Mídia.                                       |
+| [**ativação do EC \_**](ec-activate.md)                                     | Uma janela de vídeo está sendo ativada ou desativada.                                                                         |
+| [**BANDWIDTHCHANGE do EC \_**](ec-bandwidthchange.md)                       | Sem suporte.                                                                                                            |
+| [**dados de buffer do EC \_ \_**](ec-buffering-data.md)                        | O grafo está armazenando dados em buffer ou parou de armazenar em buffer os dados.                                                               |
+| [**desenvolvido por EC \_**](ec-built.md)                                           | Envie pelo controle de vídeo quando um grafo tiver sido compilado. Não encaminhado para aplicativos.                                     |
+| [**relógio do EC \_ \_ alterado**](ec-clock-changed.md)                          | O relógio de referência foi alterado.                                                                                          |
+| [**desdefinição do relógio do EC \_ \_**](ec-clock-unset.md)                              | O provedor de relógio foi desconectado.                                                                                      |
+| [**\_evento de CODECAPI do EC \_**](ec-codecapi-event.md)                        | Enviado por um codificador para sinalizar um evento de codificação.                                                                           |
+| [**EC \_ concluído**](ec-complete.md)                                     | Todos os dados de um fluxo específico foram renderizados.                                                                      |
+| [**o EC \_ ContentProperty \_ foi alterado**](ec-contentproperty-changed.md)      | Sem suporte.                                                                                                            |
+| [**\_dispositivo EC \_ perdido**](ec-device-lost.md)                              | Um dispositivo Plug and Play foi removido ou ficou disponível novamente.                                                         |
+| [**exibição do EC \_ \_ alterada**](ec-display-changed.md)                      | O modo de exibição foi alterado.                                                                                             |
+| [**\_fim \_ do \_ segmento do EC**](ec-end-of-segment.md)                       | O fim de um segmento foi atingido.                                                                                    |
+| [**EC \_ EOS em \_ breve**](ec-eos-soon.md)                                    | Sem suporte.                                                                                                            |
+| [**\_STILLPLAYING de erro do EC \_**](ec-error-stillplaying.md)                | Falha em um comando assíncrono para executar o grafo.                                                                      |
+| [**ERRORABORT do EC \_**](ec-errorabort.md)                                 | Uma operação foi anulada devido a um erro.                                                                             |
+| [**ERRORABORTEX do EC \_**](ec-errorabortex.md)                             | Uma operação foi anulada devido a um erro.                                                                             |
+| [**\_alteração do \_ modo de EXTDEVICE do EC \_**](ec-extdevice-mode-change.md)         | Sem suporte.                                                                                                            |
+| [**\_arquivo EC \_ fechado**](ec-file-closed.md)                              | O arquivo de origem foi fechado devido a um evento inesperado.                                                                |
+| [**\_tela inteira do EC \_ perdida**](ec-fullscreen-lost.md)                      | O processador de vídeo está alternando para o modo de tela inteira.                                                                  |
+| [**gráfico do EC \_ \_ alterado**](ec-graph-changed.md)                          | O gráfico de filtro foi alterado.                                                                                             |
+| [**tamanho do EC \_ \_ alterado**](ec-length-changed.md)                        | O comprimento de uma fonte foi alterado.                                                                                       |
+| [**loadstatus do EC \_**](ec-loadstatus.md)                                 | Notifica o aplicativo sobre o progresso ao abrir um arquivo de rede.                                                         |
+| [**\_ocorrência do marcador do EC \_**](ec-marker-hit.md)                                | Sem suporte.                                                                                                            |
+| [**o EC \_ precisa ser \_ reiniciado**](ec-need-restart.md)                            | Um filtro está solicitando que o grafo seja reiniciado.                                                                       |
+| [**\_novo \_ PIN do EC**](ec-new-pin.md)                                      | Sem suporte.                                                                                                            |
+| [**\_janela de notificação do EC \_**](ec-notify-window.md)                          | Notifica um filtro sobre a janela do processador de vídeo.                                                                         |
+| [**\_evento OLE do EC \_**](ec-ole-event.md)                                  | Um filtro está passando uma cadeia de texto para o aplicativo.                                                                     |
+| [**\_arquivo de abertura do EC \_**](ec-opening-file.md)                            | O grafo está abrindo um arquivo ou terminou de abrir um arquivo.                                                              |
+| [**paleta do EC \_ \_ alterada**](ec-palette-changed.md)                      | A paleta de vídeos foi alterada.                                                                                            |
+| [**EC em \_ pausa**](ec-paused.md)                                         | Uma solicitação de pausa foi concluída.                                                                                            |
+| [**EC \_ , \_ reabra**](ec-please-reopen.md)                          | O arquivo de origem foi alterado.                                                                                              |
+| [**pré-processamento de EC \_ \_ concluído**](ec-preprocess-complete.md)              | Enviado pelo filtro do [gravador ASF do WM](wm-asf-writer-filter.md) quando ele conclui o pré-processamento para codificação de passagem. |
+| [**\_latência de processamento do EC \_**](ec-processing-latency.md)                | Indica a quantidade de tempo que um componente está demorando para processar cada exemplo.                                           |
+| [**\_alteração de qualidade do EC \_**](ec-quality-change.md)                        | O grafo está descartando amostras, para controle de qualidade.                                                                       |
+| [**renderização de EC \_ \_ concluída**](ec-render-finished.md)                      | Sem suporte.                                                                                                            |
+| [**redesenho de EC \_**](ec-repaint.md)                                       | Um processador de vídeo requer um redesenho.                                                                                      |
+| [**\_latência de exemplo de EC \_**](ec-sample-latency.md)                        | Especifica o quanto o agendamento de um componente é muito atrasado para o processamento de exemplos.                                                  |
+| [**exemplo de EC \_ \_ necessário**](ec-sample-needed.md)                          | Solicita uma nova amostra de entrada do filtro EVR (processador de vídeo avançado).                                                |
+| [**\_hora de limpeza do EC \_**](ec-scrub-time.md)                                | Especifica o carimbo de data/hora para a etapa de quadro mais recente.                                                                  |
+| [**segmento de EC \_ \_ iniciado**](ec-segment-started.md)                      | Um novo segmento foi iniciado.                                                                                                |
+| [**desligar \_ o EC \_**](ec-shutting-down.md)                          | O grafo de filtro está sendo desligado, antes de ser destruído.                                                              |
+| [**\_SNDDEV \_ de EC em \_ erro**](ec-snddev-in-error.md)                     | Ocorreu um erro de dispositivo em um filtro de captura de áudio.                                                                   |
+| [**erro do EC \_ SNDDEV \_ out \_**](ec-snddev-out-error.md)                   | Ocorreu um erro de dispositivo em um filtro de processador de áudio.                                                                  |
+| [**\_privação de EC**](ec-starvation.md)                                 | Um filtro não está recebendo dados suficientes.                                                                                    |
+| [**\_alteração de estado do EC \_**](ec-state-change.md)                            | O estado do grafo de filtro foi alterado.                                                                                       |
+| [**STATUS do EC \_**](ec-status.md)                                         | Contém duas cadeias de caracteres de status arbitrárias.                                                                                    |
+| [**etapa do EC \_ \_ concluída**](ec-step-complete.md)                          | Um filtro que executa a revisão do quadro excedeu o número especificado de quadros.                                            |
+| [**controle de fluxo de EC \_ \_ \_ iniciado**](ec-stream-control-started.md)       | Um comando de início de controle de fluxo entrou em vigor.                                                                          |
+| [**controle de fluxo do EC \_ \_ \_ interrompido**](ec-stream-control-stopped.md)       | Um comando de parada de controle de fluxo teve efeito.                                                                           |
+| [**\_STILLPLAYING de \_ erro de fluxo do EC \_**](ec-stream-error-stillplaying.md) | Ocorreu um erro em um fluxo. O fluxo ainda está em execução.                                                           |
+| [**erro de fluxo de EC \_ \_ \_ interrompido**](ec-stream-error-stopped.md)           | Um fluxo foi interrompido devido a um erro.                                                                                 |
+| [**código de meio do EC \_ \_ disponível**](ec-timecode-available.md)                | Sem suporte.                                                                                                            |
+| [**EC não \_ compilado**](ec-unbuilt.md)                                       | Envie pelo controle de vídeo quando um grafo tiver sido interrompido. Não encaminhado para aplicativos.                                 |
+| [**autoanulação do EC \_**](ec-userabort.md)                                   | O usuário terminou a reprodução.                                                                                         |
+| [**tamanho de vídeo do EC \_ \_ \_ alterado**](ec-video-size-changed.md)               | O tamanho do vídeo nativo foi alterado.                                                                                        |
+| [**VIDEOFRAMEREADY do EC \_**](ec-videoframeready.md)                       | Um quadro de vídeo está pronto para exibição.                                                                                       |
+| [**\_ \_ falha na reconexão do EC VMR \_**](ec-vmr-reconnection-failed.md)     | Enviado pelo VMR-7 e o VMR-9 quando não foi possível aceitar uma solicitação de alteração de formato dinâmico do decodificador upstream.   |
+| [**conjunto de RENDERDEVICE do EC \_ VMR \_ \_**](ec-vmr-renderdevice-set.md)           | Enviado quando o VMR seleciona seu mecanismo de renderização.                                                                   |
+| [**superfície do EC \_ VMR \_ \_ invertida**](ec-vmr-surface-flipped.md)             | Enviado quando o apresentador de alocador VMR-7's chamou o método flip do DirectDraw na superfície apresentada.           |
+| [**janela do EC \_ \_ destruída**](ec-window-destroyed.md)                    | O processador de vídeo foi destruído ou removido do grafo.                                                               |
+| [**\_evento de WMT do EC \_**](ec-wmt-event.md)                                  | Enviado pelo filtro de leitor ASF do WM quando ele lê arquivos ASF protegidos pelo DRM (gerenciamento de direitos digitais).                    |
+| [**evento de índice do EC \_ WMT \_ \_**](ec-wmt-index-event.md)                     | enviado quando um aplicativo usa o gravador ASF do WM para indexar Windows arquivos de vídeo de mídia.                                       |
 
 
 
@@ -104,7 +104,7 @@ Os filtros podem definir eventos personalizados com códigos de evento no interv
 [Constantes e GUIDs](constants-and-guids.md)
 </dt> <dt>
 
-[Notificação de eventos DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

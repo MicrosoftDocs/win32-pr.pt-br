@@ -1,7 +1,7 @@
 ---
-description: Valor booliano que especifica se o bloqueio deve ser rastreado.
+description: Valor booliana que especifica se esse bloqueio deve ser rastreado.
 ms.assetid: 23417410-cfdc-426e-a662-7d6580b43a28
-title: 'Membro CCritSec:: m_fTrace (Wxutil. h)'
+title: Membro CCritSec::m_fTrace (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 691e078bb3b502704aed585ba020d49b2bd99af1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f5a47437e4f9ab475b64979ec970604ac7a621d2ab53ea7a3c87742fa81a8aab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074390"
 ---
-# <a name="ccritsecm_ftrace-member"></a>Membro de CCritSec:: m \_ fTrace
+# <a name="ccritsecm_ftrace-member"></a>Membro CCritSec::m \_ fTrace
 
-Valor booliano que especifica se o bloqueio deve ser rastreado.
+Valor booliana que especifica se esse bloqueio deve ser rastreado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -38,7 +38,7 @@ BOOL m_fTrace;
 
 ## <a name="remarks"></a>Comentários
 
-Essa variável de membro é definida somente na versão de depuração da classe base. Se o valor for **true**, um rastreamento do estado de bloqueio será gravado no log de depuração. (O log de depuração para seções críticas deve estar ativo.) Para obter mais informações, consulte [**DbgLockTrace**](dbglocktrace.md).
+Essa variável de membro é definida apenas na versão de depuração da classe base. Se o valor for **TRUE,** um rastreamento do estado de bloqueio será gravado no log de depuração. (O log de depuração para seções críticas deve estar ativo.) Para obter mais informações, consulte [**DbgLockTrace**](dbglocktrace.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,8 +46,8 @@ Essa variável de membro é definida somente na versão de depuração da classe
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

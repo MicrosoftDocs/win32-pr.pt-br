@@ -9,23 +9,23 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: f625999d2abc90cee4e645df2a012ebadfbbcccc
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 61c2ed36550769e80601719f3f873ce21be06046c883b8d98dc85713447c83c4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641260"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057224"
 ---
 # <a name="vml-data-types"></a>Tipos de dados VML
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não faz nenhuma garantia, expressa ou implícita, com relação às informações fornecidas aqui.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Esta seção descreve os tipos de dados VML.
 
@@ -37,10 +37,10 @@ Esta seção descreve os tipos de dados VML.
 -   [Tipo de dados IVgVector2D](msdn-online-vml-ivgvector2d-data-type.md)
 -   [Tipo de dados VgAngleInDegrees](msdn-online-vml-vgangleindegrees-data-type.md)
 -   [VgBlackWhiteMode](msdn-online-vml-vgblackwhitemode.md)
--   [Tipo de dados VgFraction](msdn-online-vml-vgfraction-data-type.md)
+-   [Tipo de dados VgAção](msdn-online-vml-vgfraction-data-type.md)
 -   [VGLength](msdn-online-vml-vglength.md)
 -   [VgTriState](msdn-online-vml-vgtristate.md)
 
- 
+ 
 
- 
+ 

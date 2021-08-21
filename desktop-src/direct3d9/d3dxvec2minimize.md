@@ -1,7 +1,7 @@
 ---
-description: Retorna um vetor 2D que é composto pelos menores componentes de dois vetores 2D.
+description: Retorna um vetor 2D que é feito dos menores componentes de dois vetores 2D.
 ms.assetid: 6944523e-33dd-456e-9cc2-17760d76c548
-title: Função D3DXVec2Minimize (D3dx9math. h)
+title: Função D3DXVec2Minimize (D3dx9math.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 1914ae9317d686e369f1cb2c7eb36ab54a29845f
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: da16c90ee5757ec72ee98932164a7281194553e63b4921ca42c666f660f7f904
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105807898"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044624"
 ---
 # <a name="d3dxvec2minimize-function"></a>Função D3DXVec2Minimize
 
-Retorna um vetor 2D que é composto pelos menores componentes de dois vetores 2D.
+Retorna um vetor 2D que é feito dos menores componentes de dois vetores 2D.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,42 +42,42 @@ D3DXVECTOR2* D3DXVec2Minimize(
 
 <dl> <dt>
 
-*pout* \[ entrada, saída\]
+*pOut* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
-Ponteiro para a estrutura [**D3DXVECTOR2**](d3dxvector2.md) que é o resultado da operação.
+Ponteiro para a [**estrutura D3DXVECTOR2**](d3dxvector2.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*pV1* \[ no\]
+*pV1* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR2**](d3dxvector2.md) de origem.
+Ponteiro para uma estrutura [**D3DXVECTOR2 de**](d3dxvector2.md) origem.
 
 </dd> <dt>
 
-*pV2* \[ no\]
+*pV2* \[ Em\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR2**](d3dxvector2.md) \***
 
-Ponteiro para uma estrutura de [**D3DXVECTOR2**](d3dxvector2.md) de origem.
+Ponteiro para uma estrutura [**D3DXVECTOR2 de**](d3dxvector2.md) origem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **D3DXVECTOR2**](d3dxvector2.md)\***
 
-Ponteiro para uma estrutura [**D3DXVECTOR2**](d3dxvector2.md) que é composta pelos menores componentes dos dois vetores.
+Ponteiro para uma [**estrutura D3DXVECTOR2**](d3dxvector2.md) que é feita dos menores componentes dos dois vetores.
 
 ## <a name="remarks"></a>Comentários
 
-O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXVec2Minimize** pode ser usada como um parâmetro para outra função.
+O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXVec2Minimize** pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -85,8 +85,8 @@ O valor de retorno para essa função é o mesmo valor retornado no parâmetro *
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

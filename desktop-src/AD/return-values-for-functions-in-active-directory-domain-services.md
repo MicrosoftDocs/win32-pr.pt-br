@@ -9,12 +9,12 @@ keywords:
 - Retornar valores de anúncio
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c8c8dfd9f116a35edc162f6be01fd1bc1b1ad78b
-ms.sourcegitcommit: 460af18ea55f4b12d47d5b8d4b883896e21adf00
+ms.openlocfilehash: 1770be08f24d2085438cd04f8e31047e0aa0913713d898e7839241d41a7bf992
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/04/2019
-ms.locfileid: "104365355"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119025074"
 ---
 # <a name="function-return-values-in-active-directory-domain-services"></a>Valores de retorno de função em Active Directory Domain Services
 
@@ -26,9 +26,9 @@ Veja a seguir as categorias de valores de retorno para funções no Active Direc
 -   [Erros do Gerenciador de diretórios](directory-manager-errors.md)
 -   [Erros de log e recuperação em funções no Active Directory Domain Services](logging-and-recovery-errors-in-functions-in-active-directory-domain-services.md)
 
- 
+ 
 
- 
+ 
 
 
 

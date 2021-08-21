@@ -1,7 +1,7 @@
 ---
 description: Carrega uma malha de um objeto ID3DXFileData.
 ms.assetid: 3fcf6a91-fcd4-46da-8278-13bda8af8274
-title: Função D3DXLoadMeshFromXof (D3DX9Mesh. h)
+title: Função D3DXLoadMeshFromXof (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.locfileid: "119044934"
 ---
 # <a name="d3dxloadmeshfromxof-function"></a>Função D3DXLoadMeshFromXof
 
-Carrega uma malha de um objeto [**ID3DXFileData**](id3dxfiledata.md) .
+Carrega uma malha de um [**objeto ID3DXFileData.**](id3dxfiledata.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,75 +47,75 @@ HRESULT D3DXLoadMeshFromXof(
 
 <dl> <dt>
 
-*pxofMesh* \[ no\]
+*pxofMesh* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFILEDATA**](id3dxfiledata.md)**
 
-Ponteiro para uma interface [**ID3DXFileData**](id3dxfiledata.md) , representando o objeto de dados de arquivo a ser carregado.
+Ponteiro para uma interface [**ID3DXFileData,**](id3dxfiledata.md) que representa o objeto de dados do arquivo a ser carregado.
 
 </dd> <dt>
 
-*Opções* \[ do fora\]
+*Opções* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinação de um ou mais sinalizadores da enumeração [**D3DXMESH**](./d3dxmesh.md) , especificando as opções de criação para a malha.
+Combinação de um ou mais sinalizadores da enumeração [**D3DXMESH,**](./d3dxmesh.md) especificando opções de criação para a malha.
 
 </dd> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Ponteiro para uma interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , o objeto de dispositivo associado à malha.
+Ponteiro para uma interface [**IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) o objeto de dispositivo associado à malha.
 
 </dd> <dt>
 
-*ppAdjacency* \[ fora\]
+*ppAdjacency* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Ponteiro para um buffer que contém dados de adjacência. Os dados de adjacência contêm uma matriz de três DWORDs por face que especificam os três vizinhos para cada face na malha. Para obter mais informações sobre como acessar o buffer, consulte [**ID3DXBuffer**](id3dxbuffer.md).
+Ponteiro para um buffer que contém dados de adjacency. Os dados de adjacency contêm uma matriz de três DWORDs por face que especificam os três vizinhos para cada rosto na malha. Para obter mais informações sobre como acessar o buffer, consulte [**ID3DXBuffer**](id3dxbuffer.md).
 
 </dd> <dt>
 
-*ppMaterials* \[ entrada, saída\]
+*ppMaterials* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Endereço de um ponteiro para uma interface [**ID3DXBuffer**](id3dxbuffer.md) . Quando o método retorna, esse parâmetro é preenchido com uma matriz de estruturas [**D3DXMATERIAL**](d3dxmaterial.md) .
+Endereço de um ponteiro para uma [**interface ID3DXBuffer.**](id3dxbuffer.md) Quando o método retorna, esse parâmetro é preenchido com uma matriz de [**estruturas D3DXMATERIAL.**](d3dxmaterial.md)
 
 </dd> <dt>
 
-*ppEffectInstances* \[ fora\]
+*ppEffectInstances* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXBUFFER**](id3dxbuffer.md)\***
 
-Ponteiro para um buffer que contém uma matriz de instâncias de efeito, um por grupo de atributos na malha retornada. Uma instância de efeito é uma instância específica de informações de estado usada para inicializar um efeito. Consulte [**D3DXEFFECTINSTANCE**](d3dxeffectinstance.md). Para obter mais informações sobre como acessar o buffer, consulte [**ID3DXBuffer**](id3dxbuffer.md).
+Ponteiro para um buffer que contém uma matriz de instâncias de efeito, uma por grupo de atributos na malha retornada. Uma instância de efeito é uma instância específica de informações de estado usadas para inicializar um efeito. Consulte [**D3DXEFFECTINSTANCE**](d3dxeffectinstance.md). Para obter mais informações sobre como acessar o buffer, consulte [**ID3DXBuffer**](id3dxbuffer.md).
 
 </dd> <dt>
 
-*pNumMaterials* \[ entrada, saída\]
+*pNumMaterials* \[ in, out\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)\***
 
-Aponta para o número de estruturas [**D3DXMATERIAL**](d3dxmaterial.md) na matriz *ppMaterials* , quando o método retorna.
+Ponteiro para o número de [**estruturas D3DXMATERIAL**](d3dxmaterial.md) na *matriz ppMaterials,* quando o método retorna.
 
 </dd> <dt>
 
-*ppMesh* \[ fora\]
+*ppMesh* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXMESH**](id3dxmesh.md)\***
 
-Endereço de um ponteiro para uma interface [**ID3DXMesh**](id3dxmesh.md) , que representa a malha carregada.
+Endereço de um ponteiro para uma interface [**ID3DXMesh,**](id3dxmesh.md) representando a malha carregada.
 
 </dd> </dl>
 
@@ -123,13 +123,13 @@ Endereço de um ponteiro para uma interface [**ID3DXMesh**](id3dxmesh.md) , que 
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-Para arquivos de malha que não contêm informações de instância de efeito, as instâncias de efeito padrão serão geradas a partir das informações de material no arquivo. x. Uma instância de efeito padrão terá valores padrão que correspondem aos membros da estrutura [**D3DMATERIAL9**](d3dmaterial9.md) .
+Para arquivos de malha que não contêm informações de instância de efeito, as instâncias de efeito padrão serão geradas com as informações de material no arquivo .x. Uma instância de efeito padrão terá valores padrão que correspondem aos membros da [**estrutura D3DMATERIAL9.**](d3dmaterial9.md)
 
-O nome de textura padrão também é preenchido, mas é tratado de forma diferente. O nome será Texture0@Name , que corresponde a uma variável de efeito pelo nome de "Texture0" com uma anotação chamada "Name". Isso conterá o nome do arquivo de cadeia de caracteres para a textura.
+O nome da textura padrão também é preenchido, mas é tratado de maneira diferente. O nome será , que corresponde a uma variável de efeito pelo nome de "Texture0" com uma anotação Texture0@Name chamada "Name". Isso conterá o nome do arquivo de cadeia de caracteres para a textura.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -137,8 +137,8 @@ O nome de textura padrão também é preenchido, mas é tratado de forma diferen
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 

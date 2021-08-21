@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: dc3b6502a8015564207f208166cec15227d3b18a
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 59656e1716dcf3fbc7844c8369de032f5e6e69776e5b89452a35d71512aea87c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098124"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119044804"
 ---
 # <a name="d3dxmatrixtransformation-function-d3dx9mathh"></a>Função D3DXMatrixTransformation (D3dx9math. h)
 
@@ -152,7 +152,7 @@ Para transformações 2D, use [**D3DXMatrixTransformation2D**](d3dxmatrixtransfo
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

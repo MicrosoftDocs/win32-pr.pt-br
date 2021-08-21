@@ -4,21 +4,21 @@ description: Atributo de espaçamento da VML V-Text-
 ms.assetid: c0d83854-4009-4d1d-aa8a-37f660dd0ef7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ab31d1f0b0b1d41b7e99451c422028fe54498483
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bc0b699e70cd235bf7d0f7530f75a8fc5eaef52974180cc8d36a10a69c9197f7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366364"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057674"
 ---
 # <a name="vml-v-text-spacing-attribute"></a>Atributo de espaçamento da VML V-Text-
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). para obter informações, recomendações e orientações sobre a versão atual do Windows Internet explorer, consulte [internet explorer developer Center](https://msdn.microsoft.com/ie/).
 
- 
+ 
 
 Define a quantidade de espaçamento do texto. Leitura/gravação. **VgNumber**.
 
@@ -58,6 +58,6 @@ O espaçamento entre cada letra é reforçado por 200 unidades.
 
 
 
- 
+ 
 
- 
+ 

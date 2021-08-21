@@ -4,12 +4,12 @@ ms.assetid: 686fb391-d337-41b4-bb51-b70f27a0c300
 title: Conceitos de segurança do COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4ca5126f4b715f84c2b8801c8ec1adc29b3cbb83
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 8b93ac113cf4ff2b1c679936fd610c2d44f29689ff175930c6a67274002457d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010268"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047524"
 ---
 # <a name="com-security-concepts"></a>Conceitos de segurança do COM+
 
@@ -42,7 +42,7 @@ Para obter uma descrição de problemas de administração e segurança com base
 
 ## <a name="client-authentication"></a>Autenticação de cliente
 
-Antes de autorizar os clientes a serem capazes de acessar os recursos, você deve ter certeza de que eles são quem dizem que estão. Para habilitar essa verificação de identidade, o COM+ fornece serviços de autenticação. Embora esses serviços sejam realmente fornecidos em um nível mais fundamental pelo COM e pelo Microsoft Windows, um aplicativo COM+ permite que você simplesmente ative o serviço de autenticação administrativamente para que ele funcione nos bastidores, transparente para o aplicativo. Para obter uma descrição dos serviços de autenticação, consulte [autenticação de cliente](client-authentication.md).
+Antes de autorizar os clientes a serem capazes de acessar os recursos, você deve ter certeza de que eles são quem dizem que estão. Para habilitar essa verificação de identidade, o COM+ fornece serviços de autenticação. embora esses serviços sejam realmente fornecidos em um nível mais fundamental pelo com e pelo Microsoft Windows, um aplicativo COM+ permite que você simplesmente ative o serviço de autenticação administrativamente para que ele funcione nos bastidores, transparente para o aplicativo. Para obter uma descrição dos serviços de autenticação, consulte [autenticação de cliente](client-authentication.md).
 
 ## <a name="client-impersonation-and-delegation"></a>Representação e delegação de cliente
 

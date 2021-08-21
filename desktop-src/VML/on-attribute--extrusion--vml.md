@@ -1,26 +1,26 @@
 ---
-title: Em atributo (extrusão) (VML)
-description: Em atributo (extrusão) (VML)
+title: Atributo On (Ltdion)(VML)
+description: Atributo On (Ltdion)(VML)
 ms.assetid: 5400f165-1e86-4198-8be6-ebd7dd95f7f1
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0107da91ddca0dfd17c7f940be06f1bde40275a
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 0ae898a48d73c925169ed848b20f060d74e876a10559c1873bb9d28d04090a19
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641129"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119057564"
 ---
-# <a name="on-attribute-extrusionvml"></a>Em atributo (extrusão) (VML)
+# <a name="on-attribute-extrusionvml"></a>Atributo On (Ltdion)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
-Determina se uma extrusão será exibida. Leitura/gravação. **VgTriState**.
+Determina se umaion será exibida. Leitura/gravação. **VgTriState.**
 
 **Aplica-se a**
 
@@ -28,20 +28,20 @@ Determina se uma extrusão será exibida. Leitura/gravação. **VgTriState**.
 
 **Sintaxe de marca**
 
-<o: *Element* em = " *expression* " >
+<o: *elemento* on=" *expressão* ">
 
 **Sintaxe do script**
 
-*elemento* . on = "*expression*"
+*elemento* .on="*expression*"
 
-*expressão* = de *elemento*. on
+*expressão* = *elemento*.on
 
 **Comentários**
 
-O valor padrão é **Falso**. Uma extrusão não será exibida a menos que o valor seja definido como **true**.
+O valor padrão é **Falso**. Uma que não será exibida, a menos que o valor esteja definido como **True.**
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

@@ -4,17 +4,17 @@ ms.assetid: e4682f50-080c-4f38-b2ca-ce4ca6b746d7
 title: Propriedade FullScreenmode
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a96b3c0ca8261eb934e95eb7235b51e76e8c7579
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 103938afa6710b858329147eafadec4e06fd7d2ba244b896dd1ac39c74cd12c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087284"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119015614"
 ---
 # <a name="fullscreenmode-property"></a>Propriedade FullScreenmode
 
 > [!Note]  
-> Esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
+> esse componente está disponível para uso nos sistemas operacionais Microsoft Windows 2000, Windows XP e Windows Server 2003. Ele poderá ser alterado ou ficar indisponível em versões subsequentes.
 
  
 

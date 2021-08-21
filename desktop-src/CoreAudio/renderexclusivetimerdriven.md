@@ -4,12 +4,12 @@ ms.assetid: 9dcfccd2-a709-4b4e-bbb3-4c68a15cce03
 title: RenderExclusiveTimerDriven
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: eb6145f65de3de9425f7ba2f023a669ec0b57a3c
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6876c448aa7737683aff4e495416020af7def54cb01109c3d6ad2d1c26d20780
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119077440"
 ---
 # <a name="renderexclusivetimerdriven"></a>RenderExclusiveTimerDriven
 
@@ -50,9 +50,9 @@ Este exemplo está disponível nos locais a seguir.
 
 
 
-| Local    | Caminho/URL                                                                                                    |
+| Localização    | Caminho/URL                                                                                                    |
 |-------------|-------------------------------------------------------------------------------------------------------------|
-| SDK do Windows | \\Arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ áudio multimídia \\ \\ RenderExclusiveTimerDriven \\ ... |
+| SDK do Windows | \\arquivos de programas \\ Microsoft SDKs \\ Windows \\ v 7.0 \\ amostras \\ áudio multimídia \\ \\ RenderExclusiveTimerDriven \\ ... |
 
 
 
@@ -62,9 +62,9 @@ Este exemplo está disponível nos locais a seguir.
 
 Para criar o exemplo de RenderExclusiveTimerDriven, use as seguintes etapas:
 
-1.  Abra o Shell CMD para o SDK do Windows e altere para o diretório de exemplo RenderExclusiveTimerDriven.
-2.  Execute o comando `start WASAPIRenderExclusiveTimerDriven.sln` no diretório RenderExclusiveTimerDriven para abrir o projeto WASAPIRenderExclusiveTimerDriven na janela do Visual Studio.
-3.  De dentro da janela, selecione a configuração da solução de **depuração** ou **versão** , selecione o menu **Compilar** na barra de menus e selecione a opção **Compilar** . Se você não abrir o Visual Studio a partir do Shell CMD para o SDK, o Visual Studio não terá acesso ao ambiente de compilação do SDK. Nesse caso, o exemplo não será compilado, a menos que você defina explicitamente a variável de ambiente MSSdk, que é usada no arquivo de projeto, WASAPIRenderExclusiveTimerDriven. vcproj.
+1.  abra o shell CMD para o SDK do Windows e altere para o diretório de exemplo RenderExclusiveTimerDriven.
+2.  execute o comando `start WASAPIRenderExclusiveTimerDriven.sln` no diretório RenderExclusiveTimerDriven para abrir o projeto WASAPIRenderExclusiveTimerDriven na janela Visual Studio.
+3.  De dentro da janela, selecione a configuração da solução de **depuração** ou **versão** , selecione o menu **Compilar** na barra de menus e selecione a opção **Compilar** . se você não abrir Visual Studio do shell CMD para o SDK, Visual Studio não terão acesso ao ambiente de compilação do sdk. Nesse caso, o exemplo não será compilado, a menos que você defina explicitamente a variável de ambiente MSSdk, que é usada no arquivo de projeto, WASAPIRenderExclusiveTimerDriven. vcproj.
 
 ## <a name="view-the-sample-files"></a>Exibir os arquivos de exemplo
 

@@ -4,12 +4,12 @@ ms.assetid: c092592d-a4f4-4b2f-9b03-c07951ed214a
 title: MARCA (Exposeenums2managed. h)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dacbd3c8d29e1f41d7aaabc989848c561415ae4a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: dfc7e4df727245ead30ecefef0cd941148b8f4c76e2881ab19f41c3388934abd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752566"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119075790"
 ---
 # <a name="tag"></a>TAG
 
@@ -133,7 +133,7 @@ As entradas a seguir são do tipo **tag \_ Type \_ DWORD** (0x4000).
 | <span id="TAG_APP_NAME_RC_ID"></span><span id="tag_app_name_rc_id"></span><dl> <dt>**Marca \_ de \_Nome do \_ aplicativo \_ ID RC**</dt> <dt>( \| **tipo de marca 0x24 \_ \_ DWORD**)</dt> </dl>               | Nome do aplicativo atributo do identificador de recurso para entradas AppHelp.<br/>                                   |
 | <span id="TAG_VENDOR_NAME_RC_ID"></span><span id="tag_vendor_name_rc_id"></span><dl> <dt>**Marca \_ de \_ \_ \_ ID RC do nome do fornecedor**</dt> <dt>( \| **tipo de marca 0x25 \_ \_ DWORD**)</dt> </dl>      | Nome do fornecedor atributo de identificador de recurso para entradas AppHelp.<br/>                                        |
 | <span id="TAG_SUMMARY_MSG_RC_ID"></span><span id="tag_summary_msg_rc_id"></span><dl> <dt>**Marca \_ de \_ \_ \_ ID RC do resumo msg**</dt> <dt>( \| **tipo de marca 0x26 \_ \_ DWORD**)</dt> </dl>      | Atributo de identificador de recurso de mensagem de resumo para entradas AppHelp.<br/>                                    |
-| <span id="TAG_VISTA_SKU"></span><span id="tag_vista_sku"></span><dl> <dt>**Marca \_ de \_SKU do vista**</dt> <dt>( \| **tipo de marca 0x27 \_ \_ DWORD**)</dt> </dl>                                | Atributo SKU do Windows Vista.<br/>                                                                          |
+| <span id="TAG_VISTA_SKU"></span><span id="tag_vista_sku"></span><dl> <dt>**Marca \_ de \_SKU do vista**</dt> <dt>( \| **tipo de marca 0x27 \_ \_ DWORD**)</dt> </dl>                                | Windows Atributo de SKU do vista.<br/>                                                                          |
 | <span id="TAG_DESCRIPTION_RC_ID"></span><span id="tag_description_rc_id"></span><dl> <dt>**Marca \_ de Descrição \_ RC \_ ID**</dt> <dt>( \| **tipo de marca 0x28 \_ \_ DWORD**)</dt> </dl>       | Atributo de identificador de recurso de descrição para entradas de AppHelp.<br/>                                        |
 | <span id="TAG_PARAMETER1_RC_ID"></span><span id="tag_parameter1_rc_id"></span><dl> <dt>**Marca \_ de \_ \_ ID do parâmetro1 RC**</dt> <dt>( \| **tipo de marca 0x29 \_ \_ DWORD**)</dt> </dl>          | Atributo de identificador de recurso parâmetro1 para entradas AppHelp.<br/>                                         |
 | <span id="TAG_TAGID"></span><span id="tag_tagid"></span><dl> <dt>**Marca \_ de TAGID**</dt> <dt>( \| **tipo de marca 0x801 \_ \_ DWORD**)</dt> </dl>                                            | Atributo **TagId** .<br/>                                                                                  |

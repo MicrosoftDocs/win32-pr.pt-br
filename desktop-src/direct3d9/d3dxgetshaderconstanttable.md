@@ -1,7 +1,7 @@
 ---
 description: Função D3DXGetShaderConstantTable – Obtém a tabela de constante de sombreador inserida dentro de um sombreador.
 ms.assetid: eb965074-819f-44d2-889b-6c6eada4f062
-title: Função D3DXGetShaderConstantTable (D3DX9Shader.h)
+title: Função D3DXGetShaderConstantTable (D3DX9Shader. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -23,7 +23,7 @@ ms.locfileid: "119045004"
 ---
 # <a name="d3dxgetshaderconstanttable-function"></a>Função D3DXGetShaderConstantTable
 
-Obtém a tabela constante do sombreador inserida dentro de um sombreador.
+Obtém a tabela de sombreador-constante inserida dentro de um sombreador.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,21 +41,21 @@ HRESULT D3DXGetShaderConstantTable(
 
 <dl> <dt>
 
-*pFunction* \[ Em\]
+*pFunction* \[ no\]
 </dt> <dd>
 
 Tipo: **const [**DWORD**](../winprog/windows-data-types.md) \***
 
-Ponteiro para o fluxo DWORD da função.
+Ponteiro para a função de fluxo DWORD.
 
 </dd> <dt>
 
- *ppConstantTable* \[ out\]
+ *ppConstantTable* \[ fora\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXCONSTANTTABLE**](id3dxconstanttable.md)\***
 
-Retorna a interface de tabela constante (consulte [**ID3DXConstantTable**](id3dxconstanttable.md)) que gerencia a tabela constante.
+Retorna a interface da tabela de constantes (consulte [**ID3DXConstantTable**](id3dxconstanttable.md)) que gerencia a tabela de constantes.
 
 </dd> </dl>
 
@@ -63,11 +63,11 @@ Retorna a interface de tabela constante (consulte [**ID3DXConstantTable**](id3dx
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
+Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes: D3DERR \_ INVALIDCALL, D3DXERR \_ INVALIDDATA, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-Uma tabela constante é gerada por [**D3DXCompileShader**](d3dxcompileshader.md) e inserida no corpo do sombreador. Se você precisar de espaço de endereço virtual adicional, [**consulte D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md).
+Uma tabela constante é gerada por [**D3DXCompileShader**](d3dxcompileshader.md) e inserida no corpo do sombreador. Se você precisar de espaço de endereço virtual adicional, consulte [**D3DXGetShaderConstantTableEx**](d3dxgetshaderconstanttableex.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,8 +75,8 @@ Uma tabela constante é gerada por [**D3DXCompileShader**](d3dxcompileshader.md)
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Shader.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>     |
+| parâmetro<br/>  | <dl> <dt>D3DX9Shader. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>     |
 
 
 

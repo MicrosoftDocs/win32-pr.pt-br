@@ -1,33 +1,33 @@
 ---
-description: Os seguintes protocolos são definidos pela TAPI 3, e os CLSIDs estão em Tapi3. lib. Provedores de serviço podem definir protocolos adicionais.
+description: Os protocolos a seguir são definidos pela TAPI 3 e as CLSIDs estão em Tapi3.lib. Os provedores de serviços podem definir protocolos adicionais.
 ms.assetid: 4704eedb-12e7-440e-b1ca-2afd78d2499d
-title: Constantes de TAPIPROTOCOL_ (Tapi3if. h)
+title: TAPIPROTOCOL_ constantes (Tapi3if.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b1e9bd1b12c8b417087899abb2ea3f2c0e9dfd3d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1b68631549e2d8abbf9bb0e14bff17e8b92054ca3888b2f5f0d11d908ab873dc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105783348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002634"
 ---
-# <a name="tapiprotocol_-constants"></a>\_Constantes TAPIPROTOCOL
+# <a name="tapiprotocol_-constants"></a>Constantes TAPIPROTOCOL \_
 
-Os seguintes protocolos são definidos pela TAPI 3, e os CLSIDs estão em Tapi3. lib. Provedores de serviço podem definir protocolos adicionais.
+Os protocolos a seguir são definidos pela TAPI 3 e as CLSIDs estão em Tapi3.lib. Os provedores de serviços podem definir protocolos adicionais.
 
 <dl> <dt>
 
-<span id="CLSID_TAPIPROTOCOL_PSTN"></span><span id="clsid_tapiprotocol_pstn"></span>**PSTN TAPIPROTOCOL de CLSID \_**
+<span id="CLSID_TAPIPROTOCOL_PSTN"></span><span id="clsid_tapiprotocol_pstn"></span>**CLSID TAPIPROTOCOL \_ PSTN**
 </dt> <dd> <dl> <dt>
 
 
 
-Protocolo de rede telefônica pública comutada.
+Protocolo de rede de telefone público comutado.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="CLSID_TAPIPROTOCOL_H323"></span><span id="clsid_tapiprotocol_h323"></span>**\_TAPIPROTOCOL do CLSID**
+<span id="CLSID_TAPIPROTOCOL_H323"></span><span id="clsid_tapiprotocol_h323"></span>**CLSID TAPIPROTOCOL \_ H323**
 </dt> <dd> <dl> <dt>
 
 
@@ -37,7 +37,7 @@ Protocolo H323.
 
 </dt> </dl> </dd> <dt>
 
-<span id="CLSID_TAPIPROTOCOL_Multicast"></span><span id="clsid_tapiprotocol_multicast"></span><span id="CLSID_TAPIPROTOCOL_MULTICAST"></span>**Multicast TAPIPROTOCOL do CLSID \_**
+<span id="CLSID_TAPIPROTOCOL_Multicast"></span><span id="clsid_tapiprotocol_multicast"></span><span id="CLSID_TAPIPROTOCOL_MULTICAST"></span>**CLSID TAPIPROTOCOL \_ Multicast**
 </dt> <dd> <dl> <dt>
 
 
@@ -49,11 +49,11 @@ Protocolo multicast.
 
 ## <a name="remarks"></a>Comentários
 
-As versões **BSTR** das constantes de protocolo são declaradas para o uso de aplicativos Visual Basic.
+**As versões BSTR** das constantes de protocolo são declaradas para o uso de Visual Basic aplicativos.
 
--   Cadeia de \_ caracteres TAPIPROTOCOL BSTR \_ PSTN
--   Linha de TAPIPROTOCOL do BSTR \_ \_ H323
--   Multicast de \_ cadeia de caracteres TAPIPROTOCOL BSTR \_
+-   BSTR TAPIPROTOCOL \_ String \_ PSTN
+-   Cadeia de caracteres TAPIPROTOCOL \_ \_ BSTR H323
+-   Multicast de cadeia de caracteres TAPIPROTOCOL \_ \_ BSTR
 
 ## <a name="requirements"></a>Requisitos
 
@@ -61,8 +61,8 @@ As versões **BSTR** das constantes de protocolo são declaradas para o uso de a
 
 | Requisito | Valor |
 |-------------------------|--------------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 3,0 ou posterior<br/>                                                |
-| parâmetro<br/>       | <dl> <dt>Tapi3if. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 3.0 ou posterior<br/>                                                |
+| Cabeçalho<br/>       | <dl> <dt>Tapi3if.h</dt> </dl> |
 
 
 

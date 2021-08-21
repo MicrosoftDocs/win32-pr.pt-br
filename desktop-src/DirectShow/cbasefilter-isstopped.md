@@ -1,7 +1,7 @@
 ---
 description: O método IsStopped determina se o filtro está parado no momento.
 ms.assetid: 89358523-d8e2-4c79-9ab8-6cc2f77a277f
-title: Método CBaseFilter. IsStopped (Amfilter. h)
+title: Método CBaseFilter.IsStopped (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 681ceb0a8dcc6b82a2bd6845119e2ca7fe0128eb
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 8e7b2e5e74eafe118c6e1297320d33b222083c0b132311a8c99ec6a40d6d4531
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749041"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017174"
 ---
-# <a name="cbasefilterisstopped-method"></a>Método CBaseFilter. IsStopped
+# <a name="cbasefilterisstopped-method"></a>Método CBaseFilter.IsStopped
 
 O `IsStopped` método determina se o filtro está parado no momento.
 
@@ -40,9 +40,9 @@ BOOL IsStopped();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retornará **true** se o filtro for interrompido ou **false** caso contrário.
+Retornará **TRUE** se o filtro for interrompido ou **FALSE** caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Retornará **true** se o filtro for interrompido ou **false** caso contrário.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

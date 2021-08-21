@@ -1,6 +1,6 @@
 ---
 title: Elemento EapType (mschapv2connectionpropertiesv1schema)
-description: É um tipo derivado do elemento EapType do esquema baseeapconnectionpropertiesv1. Esse é o elemento superior que aparece dentro do elemento Config do esquema EapHostConfig.
+description: É um tipo derivado do elemento EapType do esquema baseeapconnectionpropertiesv1. Esse é o elemento superior que aparece dentro do elemento config do esquema EapHostConfig.
 ms.assetid: dbd63387-f8ed-4308-903f-7a555f3410f7
 keywords:
 - Elemento EapType EAPHost
@@ -23,7 +23,7 @@ ms.locfileid: "118984056"
 ---
 # <a name="eaptype-element-mschapv2connectionpropertiesv1schema"></a>Elemento EapType (mschapv2connectionpropertiesv1schema)
 
-O **elemento EapType** é um tipo derivado do elemento [EapType](baseeapconnectionpropertiesv1schema-eaptype-element.md) do esquema [baseeapconnectionpropertiesv1.](baseeapconnectionpropertiesv1schema-schema.md) Este é o elemento superior que aparece dentro do elemento Config do [esquema EapHostConfig](eaphostconfigschema-elements.md)
+O elemento **EapType** é um tipo derivado do elemento [EapType](baseeapconnectionpropertiesv1schema-eaptype-element.md) do esquema [baseeapconnectionpropertiesv1](baseeapconnectionpropertiesv1schema-schema.md) . Esse é o elemento superior que aparece dentro do elemento config do esquema [EapHostConfig](eaphostconfigschema-elements.md)
 
 ``` syntax
 <xs:element name="EapType"
@@ -59,13 +59,13 @@ O **elemento EapType** é um tipo derivado do elemento [EapType](baseeapconnecti
 
 | Elemento                                                                                                       | Type    | Descrição                                                                                                                                                                                                                                                                                                                                      |
 |---------------------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**UseWinLogonCredentials**](mschapv2connectionpropertiesv1schema-usewinlogoncredentials-eaptype-element.md) | booleano | Controla o uso das credenciais do winlogin. Se TRUE, o EAP MS-CHAPv2 obtém credenciais do winlogon. Se FALSE, o EAP MS-CHAPv2 obtém credenciais do usuário. <br/> O [**elemento UseWinLogonCredentials (EapType)**](mschapv2connectionpropertiesv1schema-usewinlogoncredentials-eaptype-element.md) é opcional.<br/> |
+| [**UseWinLogonCredentials**](mschapv2connectionpropertiesv1schema-usewinlogoncredentials-eaptype-element.md) | booleano | Controla o uso das credenciais Winlogin. Se for TRUE, o EAP MS-CHAPv2 obterá as credenciais do Winlogon. Se for FALSE, o EAP MS-CHAPv2 obterá as credenciais do usuário. <br/> O elemento [**UseWinLogonCredentials (EapType)**](mschapv2connectionpropertiesv1schema-usewinlogoncredentials-eaptype-element.md) é opcional.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-O **elemento processContents** permite aprimoramentos futuros para o esquema. O **elemento processContents** é opcional.
+O elemento **ProcessContents** permite aprimoramentos futuros no esquema. O elemento **ProcessContents** é opcional.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ O **elemento processContents** permite aprimoramentos futuros para o esquema. O 
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 
