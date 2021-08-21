@@ -3,28 +3,28 @@ title: Lendo arquivos ASF
 description: Lendo arquivos ASF
 ms.assetid: e0aabe05-b317-42ac-85fc-5a75165722d4
 keywords:
-- SDK do Windows Media Format, lendo arquivos ASF
-- SDK do Windows Media Format, formato de sistemas avançados (ASF)
+- Windows Media Format SDK, lendo arquivos ASF
+- Windows SDK do formato de mídia, formato de sistemas avançados (ASF)
 - ASF (Advanced Systems Format), lendo arquivos
 - ASF (formato de sistemas avançados), lendo arquivos
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 32f35cbd0e9a7dde800e23f83337ac30cdd66582
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e01f417cafad4e125c6c176ac35e95ff3ab8f08c4f600b811865a9fb6ae51362
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292673"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118197507"
 ---
 # <a name="reading-asf-files"></a>Lendo arquivos ASF
 
-O Windows Media Format SDK pode ser usado para fornecer amostras de mídia de um arquivo ASF. Dois objetos são usados para recuperar amostras, o objeto leitor e o objeto leitor síncrono.
+o SDK do formato de mídia Windows pode ser usado para fornecer amostras de mídia de um arquivo ASF. Dois objetos são usados para recuperar amostras, o objeto leitor e o objeto leitor síncrono.
 
-O objeto leitor é o objeto de leitura original no Windows Media Format SDK. O objeto leitor usa uma arquitetura assíncrona para enviar amostras por push a um aplicativo. Os aplicativos criados usando o objeto leitor devem implementar funções de retorno de chamada que respondam às várias mensagens e eventos resultantes desse modelo multi-threaded. Para maior clareza, esta seção fará referência ao objeto leitor como o leitor assíncrono.
+o objeto leitor é o objeto de leitura original no SDK do formato de mídia Windows. O objeto leitor usa uma arquitetura assíncrona para enviar amostras por push a um aplicativo. Os aplicativos criados usando o objeto leitor devem implementar funções de retorno de chamada que respondam às várias mensagens e eventos resultantes desse modelo multi-threaded. Para maior clareza, esta seção fará referência ao objeto leitor como o leitor assíncrono.
 
-O objeto leitor síncrono é novo para esta versão do SDK do Windows Media Format. O leitor síncrono não usa vários threads no processamento de amostras de arquivos ASF. Um aplicativo criado usando o leitor síncrono recupera amostras sob demanda, em vez de esperar que o leitor as envie.
+o objeto leitor síncrono é novo para esta versão do SDK do formato de mídia Windows. O leitor síncrono não usa vários threads no processamento de amostras de arquivos ASF. Um aplicativo criado usando o leitor síncrono recupera amostras sob demanda, em vez de esperar que o leitor as envie.
 
-Ao criar um aplicativo para ler arquivos ASF, você deve escolher qual objeto de leitor usar. Em geral, os aplicativos criados para fornecer conteúdo baseado no Windows Media devem ser criados usando o leitor assíncrono, enquanto os aplicativos criados para editar arquivos ASF devem ser criados com o leitor síncrono.
+Ao criar um aplicativo para ler arquivos ASF, você deve escolher qual objeto de leitor usar. em geral, os aplicativos criados para fornecer Windows conteúdo baseado em mídia devem ser criados usando o leitor assíncrono, enquanto os aplicativos criados para editar arquivos ASF devem ser criados com o leitor síncrono.
 
 A tabela a seguir lista os principais recursos de ambos os objetos do leitor. Use esta tabela para ajudar a determinar qual objeto usar para seu aplicativo.
 
@@ -45,7 +45,7 @@ A tabela a seguir lista os principais recursos de ambos os objetos do leitor. Us
 
 
 
- 
+ 
 
 As seções a seguir fornecem mais informações sobre como trabalhar com os dois objetos do leitor.
 
@@ -66,7 +66,7 @@ As seções a seguir fornecem mais informações sobre como trabalhar com os doi
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -81,9 +81,9 @@ As seções a seguir fornecem mais informações sobre como trabalhar com os doi
 [**Objeto de leitor síncrono**](synchronous-reader-object.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

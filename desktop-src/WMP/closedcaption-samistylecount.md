@@ -3,7 +3,7 @@ title: ClosedCaption.SAMIStyleCount
 description: A propriedade SAMIStyleCount recupera o número de estilos com suporte pelo arquivo SAMI atual.
 ms.assetid: 57a85e5d-1598-4cb3-b47d-a6d8f22adfff
 keywords:
-- ClosedCaption. SAMIStyleCount Windows Media Player
+- ClosedCaption.SAMIStyleCount Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ab48fc6660065da1635b58b67784f2ab0ff91b8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e6e5563e40fabfa2cc82dc24598414f312192f864ecacd6ed743834e12e06759
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105761478"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118119517"
 ---
 # <a name="closedcaptionsamistylecount"></a>ClosedCaption.SAMIStyleCount
 
-A propriedade **SAMIStyleCount** recupera o número de estilos com suporte pelo arquivo Sami atual.
+A **propriedade SAMIStyleCount** recupera o número de estilos com suporte pelo arquivo SAMI atual.
 
 ``` syntax
 player.closedCaption.SAMIStyleCount
@@ -31,11 +31,11 @@ player.closedCaption.SAMIStyleCount
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Essa propriedade é um **número** somente leitura (**Long**).
+Essa propriedade é um Número somente **leitura** (**long**).
 
 ## <a name="remarks"></a>Comentários
 
-Esse método não pode ser usado até que um arquivo de mídia digital esteja aberto (*Player*.**OpenState** é igual a 13).
+Esse método não pode ser usado até que um arquivo de mídia digital seja aberto (*Player*.**openState** é igual a 13).
 
 **Windows Media Player 10 Mobile:** Essa propriedade sempre retorna 0.
 
@@ -45,7 +45,7 @@ Esse método não pode ser usado até que um arquivo de mídia digital esteja ab
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/>                                 |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -54,7 +54,7 @@ Esse método não pode ser usado até que um arquivo de mídia digital esteja ab
 
 <dl> <dt>
 
-[**Adicionando legendas ocultas à mídia digital**](adding-closed-captions-to-digital-media.md)
+[**Adicionando legendas fechadas à mídia digital**](adding-closed-captions-to-digital-media.md)
 </dt> <dt>
 
 [**Objeto ClosedCaption**](closedcaption-object.md)
@@ -63,7 +63,7 @@ Esse método não pode ser usado até que um arquivo de mídia digital esteja ab
 [**ClosedCaption.getSAMIStyleName**](closedcaption-getsamistylename.md)
 </dt> <dt>
 
-[**ClosedCaption. SAMIstyle**](closedcaption-samistyle.md)
+[**ClosedCaption.SAMIStyle**](closedcaption-samistyle.md)
 </dt> </dl>
 
  

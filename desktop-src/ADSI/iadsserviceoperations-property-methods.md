@@ -57,7 +57,7 @@ A seguir estão os valores possíveis.
 
 <span id="ADS_SERVICE_STOP_PENDING"></span><span id="ads_service_stop_pending"></span>
 
-**ADS \_ PARADA \_ DE \_ SERVIÇO PENDENTE** (0x00000003)
+**ADS \_ PARADA \_ DE \_ SERVIÇO PENDENTE** (0X00000003)
 
 
 </dt> <dd></dd> <dt>
@@ -71,7 +71,7 @@ A seguir estão os valores possíveis.
 
 <span id="ADS_SERVICE_CONTINUE_PENDING"></span><span id="ads_service_continue_pending"></span>
 
-**ADS \_ MANUTENÇÃO \_ \_ PENDENTE** (0X00000005)
+**ADS \_ SERVIÇO \_ CONTINUAR \_ PENDENTE** (0x00000005)
 
 
 </dt> <dd></dd> <dt>
@@ -92,14 +92,14 @@ A seguir estão os valores possíveis.
 
 <span id="ADS_SERVICE_ERROR"></span><span id="ads_service_error"></span>
 
-**ADS \_ ERRO \_ DE SERVIÇO** (0x00000008)
+**ADS \_ ERRO \_ DE** SERVIÇO (0x00000008)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="ADS_SERVICE_OWN_PROCESS"></span><span id="ads_service_own_process"></span>
 
-**ADS \_ PROCESSO \_ PRÓPRIO \_ DO SERVIÇO** (0x00000010)
+**ADS \_ PROCESSO \_ PRÓPRIO \_ DE SERVIÇO** (0x00000010)
 
 
 </dt> <dd></dd> <dt>
@@ -210,7 +210,7 @@ HRESULT get_Status(
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir mostra como verificar o status de um Serviço de Fax da Microsoft em execução no Windows 2000.
+O exemplo de código a seguir mostra como verificar o status de um Serviço de Fax da Microsoft em execução Windows 2000.
 
 
 ```VB
@@ -299,7 +299,7 @@ Cleanup:
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| parâmetro<br/>                   | <dl> <dt>Iads.h</dt> </dl>        |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>        |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl>  |
 | IID<br/>                      | IID \_ IADsServiceOperations é definido como 5D7B33F0-31CA-11CF-A98A-00AAA006BC149<br/> |
 

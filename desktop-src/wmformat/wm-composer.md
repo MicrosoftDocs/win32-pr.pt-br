@@ -3,7 +3,7 @@ title: WM/Composer
 description: O atributo WM/Composer contém o nome do compositor de música.
 ms.assetid: ec606961-0196-4a11-81f7-066496e6e413
 keywords:
-- Formato de mídia do WINDOWS/Composer WM/windows
+- Formato de mídia do WM/Composer Windows
 topic_type:
 - apiref
 api_name:

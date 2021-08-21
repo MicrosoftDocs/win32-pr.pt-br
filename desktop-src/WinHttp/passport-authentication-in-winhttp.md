@@ -1,19 +1,19 @@
 ---
-description: O Microsoft Windows HTTP Services (WinHTTP) dá suporte total ao uso no lado do cliente do protocolo de autenticação Microsoft Passport. Este tópico fornece uma visão geral das transações envolvidas na autenticação do Passport e como tratá-las.
+description: o Microsoft Windows HTTP Services (WinHTTP) dá suporte total ao uso do cliente do protocolo de autenticação Microsoft Passport. Este tópico fornece uma visão geral das transações envolvidas na autenticação do Passport e como tratá-las.
 ms.assetid: 395d7aef-4da0-4664-8328-7d31ce58fedd
 title: Autenticação do Passport no WinHTTP
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b8fc00217c7c14fbd4635fab68398d2056c1ea5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f69d6aff7f8924c307d4e21efb77bc57ebae2469e50361b57d12dce5b348555e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104457240"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118114289"
 ---
 # <a name="passport-authentication-in-winhttp"></a>Autenticação do Passport no WinHTTP
 
-O Microsoft Windows HTTP Services (WinHTTP) dá suporte total ao uso no lado do cliente do protocolo de autenticação Microsoft Passport. Este tópico fornece uma visão geral das transações envolvidas na autenticação do Passport e como tratá-las.
+o Microsoft Windows HTTP Services (WinHTTP) dá suporte total ao uso do cliente do protocolo de autenticação Microsoft Passport. Este tópico fornece uma visão geral das transações envolvidas na autenticação do Passport e como tratá-las.
 
 > [!Note]  
 > No WinHTTP 5,1, a autenticação do Passport está desabilitada por padrão.
@@ -24,13 +24,13 @@ O Microsoft Windows HTTP Services (WinHTTP) dá suporte total ao uso no lado do 
 
 O Passport é um componente fundamental dos serviços de blocos de construção de Microsoft .NET. Ele permite que as empresas desenvolvam e ofereçam serviços Web distribuídos em uma ampla variedade de aplicativos e permite que seus membros usem um nome de entrada e senha em todos os sites participantes.
 
-O WinHTTP fornece suporte de plataforma para o Microsoft Passport 1,4 implementando o protocolo do lado do cliente para a autenticação do Passport 1,4. Ele libera os aplicativos dos detalhes da interação com a infraestrutura do Passport e os nomes de usuário e senhas armazenados no Windows XP. Essa abstração torna o uso do Passport não diferente da perspectiva de um desenvolvedor do que usar esquemas de autenticação tradicionais, como Basic ou Digest.
+O WinHTTP fornece suporte de plataforma para o Microsoft Passport 1,4 implementando o protocolo do lado do cliente para a autenticação do Passport 1,4. ele libera os aplicativos dos detalhes da interação com a infraestrutura do Passport e os nomes de usuário e senhas armazenados no Windows XP. Essa abstração torna o uso do Passport não diferente da perspectiva de um desenvolvedor do que usar esquemas de autenticação tradicionais, como Basic ou Digest.
 
-**Windows XP:** A chave de registro **HKCU \\ software \\ Microsoft \\ Windows \\ CurrentVersion \\ Internet Settings \\ Passport \\ NumRegistrationRuns** identifica o número de vezes que o assistente de autenticação do Passport é exibido quando a autenticação do Passport é necessária. Se o valor dessa chave for definido como um número maior que 5, o assistente não será exibido.
+**Windows XP:** a chave do registro **HKCU \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ Internet Configurações \\ passport \\ NumRegistrationRuns** identifica o número de vezes que o assistente de autenticação do passport é exibido quando a autenticação do passport é necessária. Se o valor dessa chave for definido como um número maior que 5, o assistente não será exibido.
 
 As seções a seguir descrevem as transações envolvidas na autenticação do Passport a partir do ponto de vista de um aplicativo cliente. Para o desenvolvimento do Passport no lado do servidor, consulte Visão geral da documentação do SDK do Passport.
 
--   [Solicitação inicial](#initial-request)
+-   [Solicitação Inicial](#initial-request)
 -   [Servidor de logon do Passport](#passport-login-server)
 -   [Solicitação autenticada](#authenticated-request)
 
@@ -96,7 +96,7 @@ Ao contrário dos esquemas de autenticação tradicionais com suporte do WinHTTP
 
 ### <a name="stored-user-names-and-passwords"></a>Nomes de usuário e senhas armazenados
 
-O Windows XP introduziu o conceito de nomes de usuário e senhas armazenados. Se as credenciais do Passport de um usuário forem salvas por meio do **Assistente de registro do Passport** ou da caixa de **diálogo credencial** padrão, ela será salva nos nomes de usuário e senhas armazenados. Ao usar o WinHTTP no Windows XP ou posterior, o WinHTTP usará automaticamente as credenciais nos nomes de usuário e senhas armazenados se as credenciais não estiverem definidas explicitamente. Isso é semelhante ao suporte de credenciais de logon padrão para NTLM/Kerberos. No entanto, o uso de credenciais padrão do Passport não está sujeito às configurações de política de logon automático.
+Windows O XP introduziu o conceito de nomes de usuário e senhas armazenados. Se as credenciais do Passport de um usuário forem salvas por meio do **Assistente de registro do Passport** ou da caixa de **diálogo credencial** padrão, ela será salva nos nomes de usuário e senhas armazenados. ao usar o WinHTTP no Windows XP ou posterior, o WinHTTP usará automaticamente as credenciais nos nomes de usuário e senhas armazenados se as credenciais não estiverem definidas explicitamente. Isso é semelhante ao suporte de credenciais de logon padrão para NTLM/Kerberos. No entanto, o uso de credenciais padrão do Passport não está sujeito às configurações de política de logon automático.
 
 ### <a name="disabling-passport-authentication"></a>Desabilitando a autenticação do Passport
 
@@ -143,9 +143,9 @@ LoginServerUrl (REG_SZ)      For example: https://private-login.passport.com/log
 ConfigVersion (REG_DWORD)    For example: 10
 ```
 
-Se LoginServerUrl estiver presente no registro, o WinHTTP não entrará em contato com o servidor Nexus para outros valores de configuração. Nesse caso, LoginServerRealm e ConfigVersion também devem ser definidos por meio do registro para corrigir os valores.
+Se LoginServerUrl estiver presente no Registro, o WinHTTP não contatará o servidor nexus para obter outros valores de configuração. Nesse caso, LoginServerRealm e ConfigVersion também devem ser definidos por meio do Registro para valores corretos.
 
-Um aplicativo pode, para fins de teste, ser necessário para baixar a configuração do Passport de um servidor de Nexus privado. Isso pode ser feito substituindo dois valores de registro em
+Um aplicativo pode, para fins de teste, ser necessário para baixar a configuração de passaporte de um servidor nexus privado. Isso pode ser feito substituindo dois valores do Registro em
 
 ```
 HKEY_LOCAL_MACHINE

@@ -3,7 +3,7 @@ title: Atributo WM/ContentGroupDescription
 description: O atributo WM/ContentGroupDescription é a descrição do grupo de conteúdo, que é uma coleção de itens de mídia, como um conjunto de CD na caixa.
 ms.assetid: b2615f78-2d45-45f0-89f7-f1e8e083be9b
 keywords:
-- Atributo WM/ContentGroupDescription do Windows Media Player
+- Windows Media Player do atributo WM/ContentGroupDescription
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c4690e52f2745fa2761252fdba4ad4df31b18619
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 49af85d5064da7950c3208e0307f027accb5e31b4e474eb743e629ecdf05aa0a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105780283"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118332445"
 ---
 # <a name="wmcontentgroupdescription-attribute"></a>Atributo WM/ContentGroupDescription
 
@@ -26,7 +26,7 @@ O atributo **WM/ContentGroupDescription** é a descrição do grupo de conteúdo
 ## <a name="applies-to"></a>Aplica-se A
 
 -   [Itens de áudio](audio-item-attributes.md)
--   [Atributos de arquivo de mídia do Windows comumente usados](commonly-used-windows-media-file-attributes.md)
+-   [atributos de arquivo de mídia Windows usados com frequência](commonly-used-windows-media-file-attributes.md)
 
 ## <a name="remarks"></a>Comentários
 
@@ -34,7 +34,7 @@ Esse atributo é armazenado tanto na biblioteca quanto no arquivo de mídia digi
 
 **ContentGroupDescription** é um alias para este atributo.
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMContentGroupDistribution.
+a constante do SDK do formato de mídia Windows para esse atributo é g \_ wszWMContentGroupDistribution.
 
 Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
 

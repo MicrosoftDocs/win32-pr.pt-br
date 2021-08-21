@@ -3,7 +3,7 @@ title: Mensagem de WM_CAP_GET_SEQUENCE_SETUP (VFW. h)
 description: A \_ mensagem de configuração de sequência Get da Cap do WM \_ \_ \_ recupera as configurações atuais dos parâmetros de captura de streaming. Você pode enviar essa mensagem explicitamente ou usando a macro capCaptureGetSetup.
 ms.assetid: 2220c92a-1994-4f15-9730-1cf01972dda6
 keywords:
-- Multimídia do Windows de mensagem WM_CAP_GET_SEQUENCE_SETUP
+- mensagem de WM_CAP_GET_SEQUENCE_SETUP Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: a5cd1585b165581f9c9646741b92c5dc841472ae
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55122a98846f23c609eb371ab5698198729c39e967d7953295850b61764459af
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103917966"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118369534"
 ---
 # <a name="wm_cap_get_sequence_setup-message"></a>\_Mensagem de \_ \_ configuração da sequência get \_ do WM Cap
 

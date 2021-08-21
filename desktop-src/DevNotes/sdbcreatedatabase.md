@@ -1,5 +1,5 @@
 ---
-description: Cria um novo banco de dados de Shim.
+description: Cria um novo banco de dados shim.
 ms.assetid: 91fb180d-1a21-4011-821d-ea0fc999dc76
 title: Função SdbCreateDatabase
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 1ab8b8071cc210f6129545985d2d2e089680f0f2
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 6c7ac5d30c9c5a0154d770266410d278c5c3f31a65166515078a5384b1b8b55d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920345"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161547"
 ---
 # <a name="sdbcreatedatabase-function"></a>Função SdbCreateDatabase
 
-Cria um novo banco de dados de Shim.
+Cria um novo banco de dados shim.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,23 +40,23 @@ PDB WINAPI SdbCreateDatabase(
 
 <dl> <dt>
 
-*pwszPath* \[ no\]
+*pwszPath* \[ Em\]
 </dt> <dd>
 
-O caminho em que o banco de dados deve ser salvo. Este parâmetro não pode ser **nulo**.
+O caminho em que o banco de dados deve ser salvo. Esse parâmetro não pode ser **NULL.**
 
 </dd> <dt>
 
-*ETYPE* \[ no\]
+*eType* \[ Em\]
 </dt> <dd>
 
-O tipo de caminho. Consulte [**\_ tipo de caminho**](path-type.md) para obter uma lista de valores.
+O tipo de caminho. Consulte [**PATH \_ TYPE**](path-type.md) para ver uma lista de valores.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-A função retorna um identificador para o banco de dados Shim ou **nulo** em caso de falha.
+A função retorna um alça para o banco de dados shim ou **NULL** em caso de falha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -64,8 +64,8 @@ A função retorna um identificador para o banco de dados Shim ou **nulo** em ca
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

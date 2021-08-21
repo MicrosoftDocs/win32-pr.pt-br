@@ -1,9 +1,9 @@
 ---
 title: WM/BeatsPerMinute
-description: O atributo WM/BeatsPerMinute contém os batidas por minuto do conteúdo.
+description: O atributo WM/BeatsPerMinute contém os ritmos por minuto do conteúdo.
 ms.assetid: 08ea6f9c-e21b-4d68-b325-633b8c6ccf04
 keywords:
-- Formato de mídia do Windows do WM/BeatsPerMinute
+- Formato de mídia do Windows WM/BeatsPerMinute
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.locfileid: "118431818"
 ---
 # <a name="wmbeatsperminute"></a>WM/BeatsPerMinute
 
-O atributo **WM/BeatsPerMinute** contém os batidas por minuto do conteúdo.
+O **atributo WM/BeatsPerMinute** contém os ritmos por minuto do conteúdo.
 
 ## <a name="global-constant"></a>Constante global
 
@@ -29,7 +29,7 @@ g \_ wszWMBeatsPerMinute
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**Cadeia de caracteres do \_ tipo WMT \_**
+**CADEIA DE CARACTERES DE \_ TIPO \_ WMT**
 
 ## <a name="remarks"></a>Comentários
 

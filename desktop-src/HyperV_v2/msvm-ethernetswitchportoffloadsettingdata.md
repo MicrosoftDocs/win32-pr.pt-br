@@ -1,7 +1,7 @@
 ---
-description: Representa os dados de configuração do recurso de descarregamento de porta.
+description: Representa os dados de configuração do recurso de descarregaamento de porta.
 ms.assetid: 7b8d8bee-86f3-4c55-bb32-987bf840d995
-title: Classe Msvm_EthernetSwitchPortOffloadSettingData
+title: Msvm_EthernetSwitchPortOffloadSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -33,18 +33,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 150a7b5e54e371c11741dd7c763b0ae145354b09
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ddf58a10e85003a00e0d757f29db55a49f98f0ba22e8c3124b83a593f2a3908f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105757414"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148295"
 ---
-# <a name="msvm_ethernetswitchportoffloadsettingdata-class"></a>\_Classe Msvm EthernetSwitchPortOffloadSettingData
+# <a name="msvm_ethernetswitchportoffloadsettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortOffloadSettingData
 
-Representa os dados de configuração do recurso de descarregamento de porta.
+Representa os dados de configuração do recurso de descarregaamento de porta.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -77,13 +77,13 @@ class Msvm_EthernetSwitchPortOffloadSettingData : Msvm_EthernetSwitchPortFeature
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ EthernetSwitchPortOffloadSettingData** tem estes tipos de membros:
+A **classe Msvm \_ EthernetSwitchPortOffloadSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ EthernetSwitchPortOffloadSettingData** tem essas propriedades.
+A **classe Msvm \_ EthernetSwitchPortOffloadSettingData** tem essas propriedades.
 
 <dl> <dt>
 
@@ -96,7 +96,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações de descarga de porta do comutador Ethernet".
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Descarregamento de porta do comutamento Ethernet Configurações".
 
 </dd> <dt>
 
@@ -109,7 +109,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "representa os dados de configuração do recurso de descarregamento de porta.".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Representa os dados de configuração do recurso de descarregamento de porta".
 
 </dd> <dt>
 
@@ -122,7 +122,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações de descarga de porta do comutador Ethernet".
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Descarregamento de porta do comutamento Ethernet Configurações".
 
 </dd> <dt>
 
@@ -135,26 +135,26 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
 **IOVInterruptModeration**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O valor de moderação de interrupção para descarregamento de IOV (virtualização de e/s). O padrão é 0.
+O valor de moderação de interrupção para descarregamento de IOV (virtualização de E/S). O padrão é 0.
 
 <dt>
 
@@ -174,7 +174,7 @@ O valor de moderação de interrupção para descarregamento de IOV (virtualiza�
 
 <span id="Off"></span><span id="off"></span><span id="OFF"></span>
 
-**Desativado** (2)
+**Off** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -195,7 +195,7 @@ O valor de moderação de interrupção para descarregamento de IOV (virtualiza�
 
 <span id="High"></span><span id="high"></span><span id="HIGH"></span>
 
-**Alta** (300)
+**Alto** (300)
 
 
 </dt> <dd></dd> </dl>
@@ -205,67 +205,67 @@ O valor de moderação de interrupção para descarregamento de IOV (virtualiza�
 **IOVOffloadWeight**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O peso atribuído a essa porta para descarregamento de IOV (virtualização de e/s). O peso é a importância relativa ao atribuir recursos de IOV. A definição da propriedade **IOVOffloadWeight** como 0 desabilita o descarregamento de IOV na porta. O padrão é 0.
+O peso atribuído a essa porta para descarregamento de IOV (virtualização de E/S). O peso é a importância relativa ao atribuir recursos de IOV. Definir a **propriedade IOVOffloadWeight** como 0 desabilita o descarregamento de IOV na porta. O padrão é 0.
 
 </dd> <dt>
 
 **IOVQueuePairsRequested**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O número de pares de fila solicitados para esta porta para o descarregamento de IOV (virtualização de e/s). O padrão é 1.
+O número de pares de fila solicitados para essa porta para descarregamento de IOV (virtualização de E/S). O padrão é 1.
 
 </dd> <dt>
 
 **IPSecOffloadLimit**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O número máximo de Slots de descarga de associação de segurança (SA) permitidos da porta.
+O número máximo de slots de descarregaamento de SA (associação de segurança) permitidos da porta.
 
 </dd> <dt>
 
 **PacketDirectModerationCount**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (7), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-O valor da contagem de moderação de interrupção para o pacote (PD) direto. O padrão é 0.
+O valor de contagem de moderação de interrupção para PD (Packet Direct). O padrão é 0.
 
 > [!Note]  
-> Propriedade adicionada no Windows 10.
+> Propriedade adicionada em Windows 10.
 
  
 
@@ -274,19 +274,19 @@ O valor da contagem de moderação de interrupção para o pacote (PD) direto. O
 **PacketDirectModerationInterval**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (8), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-O valor do intervalo de moderação de interrupção para o pacote (PD) direto. O padrão é 0.
+O valor do intervalo de moderação de interrupção para PD (Pacote Direto). O padrão é 0.
 
 > [!Note]  
-> Propriedade adicionada no Windows 10.
+> Propriedade adicionada em Windows 10.
 
  
 
@@ -295,19 +295,19 @@ O valor do intervalo de moderação de interrupção para o pacote (PD) direto. 
 **PacketDirectNumProcs**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (6), **InterfaceVersion** (2), **InterfaceRevision** (0)
 </dt> </dl>
 
-O número de processadores usados pelo host para processar pacotes enviados desta porta no modo de pacote direto. O padrão é 1.
+O número de processadores usados pelo host para processar pacotes enviados dessa porta no modo Direto de Pacote. O padrão é 1.
 
 > [!Note]  
-> Propriedade adicionada no Windows 10.
+> Propriedade adicionada em Windows 10.
 
  
 
@@ -316,16 +316,16 @@ O número de processadores usados pelo host para processar pacotes enviados dest
 **VmmqEnabled**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (10), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-Habilite o descarregamento de VMMQ se houver suporte do hardware. O padrão é false.
+Habilita o descarregador do VMMQ se tiver suporte pelo hardware. O padrão é False.
 
 > [!Note]  
 > Essa propriedade foi adicionada no Windows 10, versão 1703 e Windows Server 2016.
@@ -337,16 +337,16 @@ Habilite o descarregamento de VMMQ se houver suporte do hardware. O padrão é f
 **VmmqQueuePairs**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (11), **InterfaceVersion** (3), **InterfaceRevision** (0)
 </dt> </dl>
 
-O número de filas a serem alocadas quando o VRSS estiver habilitado. O padrão é 16.
+O número de filas a alocar quando o VRSS está habilitado. O padrão é 16.
 
 > [!Note]  
 > Essa propriedade foi adicionada no Windows 10, versão 1703 e Windows Server 2016.
@@ -358,16 +358,16 @@ O número de filas a serem alocadas quando o VRSS estiver habilitado. O padrão 
 **VMQOffloadWeight**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O peso atribuído a essa porta para o descarregamento da VMQ (fila de máquina virtual). O peso é a importância relativa ao atribuir recursos de VMQ. Definir a propriedade **VMQOffloadWeight** como 0 DESABILITA a VMQ na porta. O padrão é 100.
+O peso atribuído a essa porta para o descarregamento da VMQ (fila de máquinas virtuais). O peso é a importância relativa ao atribuir recursos de VMQ. Definir a propriedade **VMQOffloadWeight** como 0 DESABILITA a VMQ na porta. O padrão é 100.
 
 </dd> <dt>
 
@@ -386,7 +386,7 @@ Qualificadores: **WmiDataId** (9), **InterfaceVersion** (3), **InterfaceRevision
 Habilitar VRSS. O padrão é true.
 
 > [!Note]  
-> Essa propriedade foi adicionada no Windows 10, versão 1703 e Windows Server 2016.
+> essa propriedade foi adicionada em Windows 10, versão 1703 e Windows Server 2016.
 
  
 
@@ -407,7 +407,7 @@ Qualificadores: **WmiDataId** (14), **InterfaceVersion** (4), **InterfaceRevisio
 Se o processador de VMQ primário deve ser excluído da tabela de indireção VRSS quando o VRSS está habilitado. O padrão é false.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -428,7 +428,7 @@ Qualificadores: **WmiDataId** (15), **InterfaceVersion** (4), **InterfaceRevisio
 Se deseja sempre fazer o VRSS do lado do host quando o VRSS estiver habilitado, independentemente da configuração de RSS da NIC virtual. O padrão é false.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -449,7 +449,7 @@ Qualificadores: **WmiDataId** (12), **InterfaceVersion** (4), **InterfaceRevisio
 O número mínimo de filas a serem alocadas quando o VRSS estiver habilitado. O padrão é 1.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -470,7 +470,7 @@ Qualificadores: **WmiDataId** (13), **InterfaceVersion** (4), **InterfaceRevisio
 O modo de agendamento de fila a ser usado quando o VRSS estiver habilitado. O padrão é o agendamento estático.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -491,7 +491,7 @@ Qualificadores: **WmiDataId** (16), **InterfaceVersion** (4), **InterfaceRevisio
 A política de afinidade de canal VMBus a ser usada quando o VRSS estiver habilitado. O padrão é Strong.
 
 > [!Note]  
-> Adicionado no Windows 10, versão 1709.
+> adicionado em Windows 10, versão 1709.
 
  
 
@@ -503,8 +503,8 @@ A política de afinidade de canal VMBus a ser usada quando o VRSS estiver habili
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

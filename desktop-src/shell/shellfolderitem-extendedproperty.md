@@ -1,7 +1,7 @@
 ---
-description: Obtém o valor de uma propriedade do conjunto de propriedades de um item. A propriedade pode ser especificada por nome ou pelo identificador de formato do conjunto de Propriedades (FMTID) e pelo identificador de propriedade (PID).
+description: Obtém o valor de uma propriedade do conjunto de propriedades de um item. A propriedade pode ser especificada por nome ou pelo FMTID (identificador de formato) do conjunto de propriedades e pelo PID (identificador de propriedade).
 ms.assetid: ca787d7b-d95a-45b9-9627-fd505f99f868
-title: Método ShellFolderItem. Extended (shldisp. h)
+title: Método ShellFolderItem.ExtendedProperty (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118452812"
 ---
-# <a name="shellfolderitemextendedproperty-method"></a>Método ShellFolderItem. Extended
+# <a name="shellfolderitemextendedproperty-method"></a>Método ShellFolderItem.ExtendedProperty
 
-Obtém o valor de uma propriedade do conjunto de propriedades de um item. A propriedade pode ser especificada por nome ou pelo identificador de formato do conjunto de Propriedades (FMTID) e pelo identificador de propriedade (PID).
+Obtém o valor de uma propriedade do conjunto de propriedades de um item. A propriedade pode ser especificada por nome ou pelo FMTID (identificador de formato) do conjunto de propriedades e pelo PID (identificador de propriedade).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,34 +39,34 @@ retVal = ShellFolderItem.ExtendedProperty(
 
 <dl> <dt>
 
-*sPropName* \[ no\]
+*sPropName* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Um valor de **cadeia de caracteres** que especifica a propriedade. Consulte a seção comentários para obter detalhes.
+Um **valor string** que especifica a propriedade . Consulte a seção Comentários para obter detalhes.
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Tipo: **variante \***
+Tipo: **\* Variante**
 
-Quando esse método retornar, conterá o valor da propriedade, se existir para o item especificado. O valor terá uma digitação completa — por exemplo, datas são retornadas como datas, não cadeias de caracteres.
+Quando este método retorna, contém o valor da propriedade , se ele existir para o item especificado. O valor terá a digitação completa– por exemplo, as datas são retornadas como datas, não cadeias de caracteres.
 
-Esse método retornará uma cadeia de caracteres de comprimento zero se a propriedade for válida, mas não existir para o item especificado, ou então um código de erro.
+Esse método retornará uma cadeia de caracteres de comprimento zero se a propriedade for válida, mas não existir para o item especificado, caso contrário, um código de erro.
 
 ## <a name="remarks"></a>Comentários
 
-Há duas maneiras de especificar uma propriedade. A primeira é atribuir o nome conhecido da propriedade, como "autor" ou "data", ao *sPropName*. No entanto, cada propriedade é um membro de um conjunto de propriedades de Component Object Model (COM) e também pode ser identificada especificando sua ID de formato (FMTID) e ID de propriedade (PID). Um [**FMTID**](../stg/structured-storage-serialized-property-set-format.md) é um GUID que identifica o conjunto de propriedades e um [**pid**](../stg/structured-storage-serialized-property-set-format.md) é um inteiro que identifica uma propriedade específica dentro do conjunto de propriedades.
+Há duas maneiras de especificar uma propriedade. A primeira é atribuir o nome conhecido da propriedade, como "Author" ou "Date", a *sPropName.* No entanto, cada propriedade é membro de um conjunto de propriedades Component Object Model (COM) e também pode ser identificada especificando sua ID de formato (FMTID) e id da propriedade (PID). Um [**FMTID**](../stg/structured-storage-serialized-property-set-format.md) é um GUID que identifica o conjunto de propriedades e um [**PID**](../stg/structured-storage-serialized-property-set-format.md) é um inteiro que identifica uma propriedade específica dentro do conjunto de propriedades.
 
-Especificar uma propriedade por seus valores FMTID/PID é geralmente mais eficiente do que usar seu nome. Para usar os valores de FMTID/PID de uma propriedade com **Extendeproperty**, eles devem ser combinados em um scid. Um SCID é uma cadeia de caracteres que contém os valores FMTID/PID no formato "*FMTID * * PID*", em que FMTID é a forma de cadeia de caracteres do GUID do conjunto de propriedades. Por exemplo, o SCID da propriedade autor do conjunto de propriedades de informações de resumo é "{F29F85E0-4FF9-1068-AB91-08002B27B3D9} 4".
+Especificar uma propriedade por seus valores FMTID/PID geralmente é mais eficiente do que usar seu nome. Para usar os valores FMTID/PID de uma propriedade com **ExtendedProperty**, eles devem ser combinados em um SCID. Um SCID é uma cadeia de caracteres que contém os valores FMTID/PID no formato "*FMTID**PID*", em que FMTID é a forma de cadeia de caracteres do GUID do conjunto de propriedades. Por exemplo, o SCID da propriedade author do conjunto de propriedades de informações resumidas é "{F29F85E0-4FF9-1068-AB91-08002B27B3D9} 4".
 
-Para obter uma lista de FMTIDs e PIDs que atualmente têm suporte no Shell, consulte [**SHCOLUMNID**](./objects.md).
+Para ver uma lista de FMTIDs e PIDs que atualmente têm suporte no Shell, consulte [**SHCOLUMNID**](./objects.md).
 
 ## <a name="examples"></a>Exemplos
 
-Este código de exemplo ilustra como usar o **Extended** para recuperar as propriedades "title" e "Author" de um documento do Word. Depois que você tiver o objeto [**ShellFolderItem**](shellfolderitem-object.md) associado ao arquivo, *fiWordDoc* neste exemplo, recupere o valor da propriedade, passando seu nome para **Extended**.
+Este código de exemplo ilustra como usar **ExtendedProperty** para recuperar as propriedades "Title" e "Author" de um documento do Word. Depois de ter o objeto [**ShellFolderItem**](shellfolderitem-object.md) associado ao *arquivo, fiWordDoc* neste exemplo, recupere o valor da propriedade passando seu nome para **ExtendedProperty.**
 
 
 ```none
@@ -78,7 +78,7 @@ Doc_Author=fiWordDoc.ExtendedProperty("Author")
 
 
 
-Uma abordagem mais rápida e eficiente é passar um scid para o **Extended**.
+Uma abordagem mais rápida e eficiente é passar um SCID para **ExtendedProperty.**
 
 
 ```none
@@ -95,7 +95,7 @@ Doc_Author=fiWordDoc.ExtendedProperty(SCID_AUTHOR)
 
 
 
-os exemplos a seguir mostram o uso adequado desse método para JScript, VBScript e Visual Basic.
+Os exemplos a seguir mostram o uso adequado desse método para JScript, VBScript e Visual Basic.
 
 JScript:
 
@@ -128,7 +128,7 @@ JScript:
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -207,9 +207,9 @@ End Sub
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

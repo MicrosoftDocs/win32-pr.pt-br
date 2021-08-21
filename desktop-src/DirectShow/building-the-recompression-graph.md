@@ -1,29 +1,29 @@
 ---
-description: Criando o grafo de recompactação
+description: Criando a recompactação Graph
 ms.assetid: 8f25c60e-30be-4cc4-b924-b8d6654604d3
-title: Criando o grafo de recompactação
+title: Criando a recompactação Graph
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2b8ea604bead34c22c123bbabe5d88e985006a9e
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 0432f51e5309a308b32535993fef04da1762d45f179e1ab3a6826d4c5432b02b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103825549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159079"
 ---
-# <a name="building-the-recompression-graph"></a>Criando o grafo de recompactação
+# <a name="building-the-recompression-graph"></a>Criando a recompactação Graph
 
 Um grafo de filtro típico para a recompactação de arquivo AVI é semelhante ao seguinte:
 
 ![Grafo de recompactação avi](images/avi2avi4.png)
 
-O [filtro de Splitter AVI](avi-splitter-filter.md) extrai dados do filtro de [origem de arquivo (Async)](file-source--async--filter.md) e os analisa em fluxos de áudio e vídeo. O descompactador de vídeo decodifica o vídeo compactado, onde é recompactado pelo compactador de vídeo. A escolha dos decompactadores depende do arquivo de origem; Ele será manipulado automaticamente pelo [Intelligent Connect](intelligent-connect.md). O aplicativo deve escolher o compressor, normalmente apresentando uma lista para o usuário. (Consulte [escolher um filtro de compactação](choosing-a-compression-filter.md).)
+O [filtro de Splitter AVI](avi-splitter-filter.md) extrai dados do filtro de [origem de arquivo (Async)](file-source--async--filter.md) e os analisa em fluxos de áudio e vídeo. O descompactador de vídeo decodifica o vídeo compactado, onde é recompactado pelo compactador de vídeo. A escolha dos decompactadores depende do arquivo de origem; ele será manipulado automaticamente pelo [Conexão inteligente](intelligent-connect.md). O aplicativo deve escolher o compressor, normalmente apresentando uma lista para o usuário. (Consulte [escolher um filtro de compactação](choosing-a-compression-filter.md).)
 
 Em seguida, o vídeo compactado vai para o [filtro AVI Mux](avi-mux-filter.md). O fluxo de áudio neste exemplo não é compactado, portanto, ele vai diretamente do divisor AVI para o AVI Mux. O AVI Mux intercala os dois fluxos e o filtro do [gravador de arquivo](file-writer-filter.md) grava a saída no disco. Observe que o AVI Mux é necessário mesmo que o arquivo original não tenha um fluxo de áudio.
 
-A maneira mais fácil de criar esse grafo de filtro é usar o [Construtor de grafo de captura](capture-graph-builder.md), que é um componente do DirectShow para criar grafos de captura e outros gráficos de filtro personalizados.
+a maneira mais fácil de criar esse grafo de filtro é usar o [construtor de Graph de captura](capture-graph-builder.md), que é um componente DirectShow para criar grafos de captura e outros gráficos de filtro personalizados.
 
-Comece chamando CoCreateInstance para criar o construtor de grafo de captura:
+comece chamando CoCreateInstance para criar o construtor de Graph de captura:
 
 
 ```C++
@@ -35,11 +35,11 @@ hr = CoCreateInstance(CLSID_CaptureGraphBuilder2,
 
 
 
-Em seguida, use o construtor do grafo de captura para criar o grafo de filtro:
+em seguida, use o construtor de Graph de captura para criar o grafo de filtro:
 
 1.  Crie a seção de renderização do grafo, que inclui o filtro AVI Mux e o [gravador de arquivos](file-writer-filter.md).
 2.  Adicione o filtro de origem e o filtro de compactação ao grafo.
-3.  Conecte o filtro de origem ao filtro do MUX. O construtor de gráficos de captura insere quaisquer filtros de divisor e decodificador necessários para analisar o arquivo de origem. Ele também pode rotear os fluxos de áudio e vídeo por meio de filtros de compactação.
+3.  Conexão o filtro de origem ao filtro MUX. O construtor de gráficos de captura insere quaisquer filtros de divisor e decodificador necessários para analisar o arquivo de origem. Ele também pode rotear os fluxos de áudio e vídeo por meio de filtros de compactação.
 
 As seções a seguir explicam cada uma dessas etapas.
 
@@ -72,7 +72,7 @@ O filtro MUX expõe duas interfaces para controlar o formato AVI:
 
 Adicionar os filtros de origem e de compactação
 
-A próxima etapa é adicionar os filtros de origem e de compactação ao grafo de filtro. O construtor do grafo de captura cria automaticamente uma instância do Gerenciador do grafo de filtro quando você chama SetOutputFileName. Obtenha um ponteiro para ele chamando o método [**ICaptureGraphBuilder2:: GetFiltergraph**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-getfiltergraph) :
+A próxima etapa é adicionar os filtros de origem e de compactação ao grafo de filtro. o construtor de Graph de captura cria automaticamente uma instância do gerenciador de Graph de filtro quando você chama SetOutputFileName. Obtenha um ponteiro para ele chamando o método [**ICaptureGraphBuilder2:: GetFiltergraph**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-getfiltergraph) :
 
 
 ```C++
@@ -97,7 +97,7 @@ Neste ponto, o filtro de origem e o filtro de compactação não estão conectad
 
 ![gráfico de filtro com filtros de origem e de compactação](images/avi2avi2.png)
 
-Conectar a origem ao MUX
+Conexão a origem ao Mux
 
 A etapa final é conectar o filtro de origem ao filtro AVI Mux por meio do compactador de vídeo. Use o método [**ICaptureGraphBuilder2:: RenderStream**](/windows/desktop/api/Strmif/nf-strmif-icapturegraphbuilder2-renderstream) , que conecta um pino de saída no filtro de origem a um filtro de coletor especificado, opcionalmente por meio de um filtro de compactação.
 

@@ -1,23 +1,23 @@
 ---
-description: O instalador define a propriedade CommonFiles64Folder como o caminho completo da pasta predefinida de arquivos comuns de 64 bits. A propriedade CommonFilesFolder existente é definida como a pasta correspondente de 32 bits.
+description: O instalador define a propriedade CommonFiles64Folder como o caminho completo da pasta Common Files de 64 bits predefinida. A propriedade CommonFilesFolder existente é definida como a pasta de 32 bits correspondente.
 ms.assetid: 6730170a-0f73-4a84-b3fb-bd15c72917c7
 title: Propriedade CommonFiles64Folder
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c44a6720e609cfa79cd0e4adbfd5136c7a92a5ce
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 025645f7e5ef4b841115c1bedcfa4b6fccf027913b2b1708895f7ab21bd5d9df
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105747557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118145355"
 ---
 # <a name="commonfiles64folder-property"></a>Propriedade CommonFiles64Folder
 
-O instalador define a propriedade **CommonFiles64Folder** como o caminho completo da pasta predefinida de arquivos comuns de 64 bits. A propriedade [**CommonFilesFolder**](commonfilesfolder.md) existente é definida como a pasta correspondente de 32 bits.
+O instalador define a **propriedade CommonFiles64Folder** como o caminho completo da pasta Common Files de 64 bits predefinida. A propriedade [**CommonFilesFolder**](commonfilesfolder.md) existente é definida como a pasta de 32 bits correspondente.
 
 ## <a name="remarks"></a>Comentários
 
-O instalador define essa propriedade no Windows de 64 bits. Essa propriedade não é usada em janelas de 32 bits. Ao usar o Windows de 64 bits, o valor pode ser "C: Arquivos de \\ programas \\ Arquivos comuns".
+O instalador define essa propriedade em 64 bits Windows. Essa propriedade não é usada em 32 bits Windows. Ao usar arquivos de 64 bits Windows, o valor pode ser "C: Arquivos Comuns de Arquivos \\ \\ de Programas".
 
 ## <a name="requirements"></a>Requisitos
 
@@ -25,7 +25,7 @@ O instalador define essa propriedade no Windows de 64 bits. Essa propriedade nã
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP. Consulte os [requisitos de Run-Time Windows Installer](windows-installer-portal.md) para obter informações sobre a Service Pack mínima do Windows exigida por uma versão Windows Installer.<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP. Consulte o [Windows instalador Run-Time para](windows-installer-portal.md) obter informações sobre o Windows service pack mínimo exigido por uma versão Windows Installer.<br/> |
 
 
 

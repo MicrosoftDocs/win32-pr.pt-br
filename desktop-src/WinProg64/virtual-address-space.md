@@ -1,9 +1,9 @@
 ---
-title: Espaço de Endereço Virtual (Guia de Programação para Windows)
+title: Espaço de Endereço Virtual (Guia de Programação para 64 Windows)
 description: Por padrão, os aplicativos baseados em Windows Microsoft de 64 bits têm um espaço de endereço no modo de usuário de vários terabytes.
 ms.assetid: c5c4af39-727e-46e1-821e-8342c555bf4c
 keywords:
-- Guia de programação Windows de 64 Windows de 64 bits, espaço de endereço virtual
+- Guia de programação Windows de 64 bits Windows de 64 bits, espaço de endereço virtual
 - espaço de endereço virtual de 64 bits Windows Programação
 ms.topic: article
 ms.date: 05/31/2018
@@ -14,9 +14,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118113366"
 ---
-# <a name="virtual-address-space-programming-guide-for-64-bit-windows"></a>Espaço de Endereço Virtual (Guia de Programação para Windows)
+# <a name="virtual-address-space-programming-guide-for-64-bit-windows"></a>Espaço de Endereço Virtual (Guia de Programação para 64 Windows)
 
-Por padrão, os aplicativos baseados em Windows Microsoft de 64 bits têm um espaço de endereço no modo de usuário de vários terabytes. Para valores precisos, consulte [Limites de memória para Windows e Windows Server Releases](/windows/desktop/Memory/memory-limits-for-windows-releases). No entanto, os aplicativos podem especificar que o sistema deve alocar toda a memória para o aplicativo abaixo de 2 gigabytes. Esse recurso é benéfico para aplicativos de 64 bits se as seguintes condições são verdadeiras:
+Por padrão, os aplicativos baseados em Windows Microsoft de 64 bits têm um espaço de endereço no modo de usuário de vários terabytes. Para valores [precisos, consulte Limites de memória para Windows e Windows Server Releases](/windows/desktop/Memory/memory-limits-for-windows-releases). No entanto, os aplicativos podem especificar que o sistema deve alocar toda a memória para o aplicativo abaixo de 2 gigabytes. Esse recurso é benéfico para aplicativos de 64 bits se as seguintes condições são verdadeiras:
 
 -   Um espaço de endereço de 2 GB é suficiente.
 -   O código tem muitos avisos de truncamento de ponteiro.

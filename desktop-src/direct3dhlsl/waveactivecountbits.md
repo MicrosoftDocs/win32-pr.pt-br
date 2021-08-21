@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 4c4d2db55e9e3a0ad8f0a66be183d6e39d2a8b9c
-ms.sourcegitcommit: a232805e6c618673f2df904111cc4f5a33e15504
+ms.openlocfilehash: 4e1642cbd5cbdef162511185e9d2c05e849d78486b82e8219623286f33e39223
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "104294637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118504931"
 ---
 # <a name="waveactivecountbits-function"></a>Função WaveActiveCountBits
 
@@ -46,7 +46,7 @@ As variáveis Booleanas a serem avaliadas. Fornecer um valor booliano verdadeiro
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O número de que é avaliado como true em todas as pistas ativas na onda atual.
 

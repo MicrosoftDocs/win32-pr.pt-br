@@ -1,53 +1,53 @@
 ---
-title: Portando para cá
-description: Ao portar para o OpenGL, tenha os seguintes pontos em mente
+title: Esferas de portação
+description: Ao portar esferas para OpenGL, lembre-se dos seguintes pontos
 ms.assetid: ca6bb515-076d-45fc-bcdd-3d71877560fb
 keywords:
-- Portabilidade do íris GL,
-- portando do íris GL,
-- portando para OpenGL do íris GL,
-- Portabilidade OpenGL do íris GL,
-- funções de desenho,
-- esferas
+- Portação IRIS GL, esferas
+- portando de IRIS GL,spheres
+- portando para OpenGL de IRIS GL,spheres
+- Portação openGL de IRIS GL,spheres
+- funções de desenho, esferas
+- Esferas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9f48ac31c0204111173d9eb2d31a3119873ef45b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: af1e0666393e923767d342d215622e0ed58bfa7b1b620e045a0054b31918a7a1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364171"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118358304"
 ---
-# <a name="porting-spheres"></a>Portando para cá
+# <a name="porting-spheres"></a>Esferas de portação
 
-Ao portar para o OpenGL, tenha em mente os seguintes pontos:
+Ao portar esferas para OpenGL, lembre-se dos seguintes pontos:
 
--   Você não pode controlar o tipo de primitivas usadas para desenhar a esfera. Você pode controlar a precisão do desenho de outra maneira: Use os parâmetros Slices e Stacks. As fatias são longitudinal; as pilhas são latitudinais.
--   As difiram são desenhadas centralizadas na origem. Em vez de especificar o local, como você faz com a função **sphdraw** do íris GL, preceda uma chamada para a função [**gluSphere**](glusphere.md) do Glu com uma tradução.
--   A biblioteca de Sphere ainda não está disponível para OpenGL.
+-   Não é possível controlar o tipo de primitivos usados para desenhar a esfera. Você pode controlar a precisão de desenho de outra maneira: use os parâmetros de fatias e pilhas. As fatias são de ; as pilhas são latitudinais.
+-   As esferas são desenhadas centralizadas na origem. Em vez de especificar o local, como você faz com a função de **sphdraw** IRIS GL, preceda uma chamada para a função GLU [**gluSphere**](glusphere.md) com uma tradução.
+-   A biblioteca sphere ainda não está disponível para OpenGL.
 
-A tabela a seguir lista as funções do íris GL para desenhar por meio das suas funções GLU equivalentes, quando disponíveis.
+A tabela a seguir lista as funções IRIS GL para esferas de desenho e suas funções GLU equivalentes quando disponíveis.
 
 
 
-| Função GL de íris | Função GLU                                 | Significado                                       |
+| Função IRIS GL | Função GLU                                 | Significado                                       |
 |------------------|----------------------------------------------|-----------------------------------------------|
 | **sphobj**       | [**gluNewQuadric**](glunewquadric.md)       | Cria um novo objeto de esfera.                  |
-| **sphfree**      | [**gluDeleteQuadric**](gludeletequadric.md) | Exclui o objeto de esfera e a memória livre usada.   |
+| **sphfree**      | [**gluDeleteQuadric**](gludeletequadric.md) | Exclui o objeto sphere e a memória livre usada.   |
 | **sphdraw**      | [**gluSphere**](glusphere.md)               | Desenha uma esfera.                               |
-| **sphmode**      |                                              | Define os atributos de Sphere.                       |
+| **sphmode**      |                                              | Define atributos de esfera.                       |
 | **sphrotmatrix** |                                              | Controla a orientação da esfera.                  |
 | **sphgnpolys**   |                                              | Retorna o número de polígonos na esfera atual. |
 
 
 
- 
+ 
 
 ??
 
- 
+ 
 
- 
+ 
 
 
 

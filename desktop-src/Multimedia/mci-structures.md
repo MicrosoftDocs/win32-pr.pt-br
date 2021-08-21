@@ -7,12 +7,12 @@ keywords:
 - Referência de MCI, estruturas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ddd081d34795c4bf46890c3f19c05119d63e9c09
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9b65932790320bc8dead6ae2f19e463d66783b72c5e4ef839ca714fe7f59a7b5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007489"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374399"
 ---
 # <a name="mci-structures"></a>Estruturas MCI
 
@@ -93,6 +93,6 @@ As estruturas a seguir são usadas com o MCI.
 [Referência de MCI](mci-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

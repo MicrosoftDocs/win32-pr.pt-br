@@ -3,7 +3,7 @@ title: Exibir. categoria
 description: O atributo category especifica ou recupera a categoria para a qual a exibição é pretendida.
 ms.assetid: ab724647-8898-4bbf-82a3-b5852faed858
 keywords:
-- Exibir. categoria Windows Media Player
+- Windows Media Player de exibição. categoria
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f7623c321cbf2ff37724bbd99d24a4d94c1856dc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a483bf8e7ded89e10b46926fee82442becdb73f0a43e879310f55c915ce18b10
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748507"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118116771"
 ---
 # <a name="viewcategory"></a>Exibir. categoria
 

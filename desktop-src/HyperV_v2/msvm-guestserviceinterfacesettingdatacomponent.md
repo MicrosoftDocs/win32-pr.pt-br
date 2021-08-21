@@ -1,7 +1,7 @@
 ---
-description: Classe de associação entre um componente de interface de serviço de convidado e o recurso de serviço de convidado.
+description: Classe de associação entre um componente de interface de serviço convidado e o recurso de serviço convidado.
 ms.assetid: 4c16c3ab-4137-40ab-be2e-f385d8e36a41
-title: Classe Msvm_GuestServiceInterfaceSettingDataComponent
+title: Msvm_GuestServiceInterfaceSettingDataComponent classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,16 +15,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 988975fea1fd519a5e3917faeb73d345334d74b3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: cc9f988fcf5c7e4ee1c40f58360a2916b3bc8d82a833fdb69e267d4f27a1aab9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164641"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147792"
 ---
-# <a name="msvm_guestserviceinterfacesettingdatacomponent-class"></a>\_Classe Msvm GuestServiceInterfaceSettingDataComponent
+# <a name="msvm_guestserviceinterfacesettingdatacomponent-class"></a>Classe Msvm \_ GuestServiceInterfaceSettingDataComponent
 
-Classe de associação entre um componente de interface de serviço de convidado e o recurso de serviço de convidado.
+Classe de associação entre um componente de interface de serviço convidado e o recurso de serviço convidado.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -41,17 +41,17 @@ class Msvm_GuestServiceInterfaceSettingDataComponent : CIM_Component
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ GuestServiceInterfaceSettingDataComponent** tem estes tipos de membros:
+A **classe Msvm \_ GuestServiceInterfaceSettingDataComponent** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ GuestServiceInterfaceSettingDataComponent** tem essas propriedades.
+A **classe Msvm \_ GuestServiceInterfaceSettingDataComponent** tem essas propriedades.
 
 <dl> <dt>
 
-**GroupComponent**
+**Groupcomponent**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **Msvm \_ GuestServiceInterfaceComponentSettingData**
@@ -60,26 +60,26 @@ Tipo de dados: **Msvm \_ GuestServiceInterfaceComponentSettingData**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent")
 </dt> </dl>
 
-Um [**Msvm \_ GuestServiceInterfaceComponentSettingData**](msvm-guestserviceinterfacecomponentsettingdata.md) referenciando o componente de interface do serviço convidado.
+Um [**Msvm \_ GuestServiceInterfaceComponentSettingData**](msvm-guestserviceinterfacecomponentsettingdata.md) referenciando o componente da interface de serviço convidado.
 
 </dd> <dt>
 
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **CIM \_ SettingData**
+Tipo de dados: **\_ Configuração cimData**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**substituição**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
-Um [**CIM \_ SettingData**](cim-settingdata.md) que faz referência ao recurso de serviço de convidado.
+Um [**CIM \_ SettingData**](cim-settingdata.md) que faz referência ao recurso de serviço convidado.
 
 </dd> </dl>
 
@@ -89,10 +89,10 @@ Um [**CIM \_ SettingData**](cim-settingdata.md) que faz referência ao recurso d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -101,7 +101,7 @@ Um [**CIM \_ SettingData**](cim-settingdata.md) que faz referência ao recurso d
 
 <dl> <dt>
 
-[**\_Componente CIM**](cim-component.md)
+[**Componente \_ CIM**](cim-component.md)
 </dt> </dl>
 
  

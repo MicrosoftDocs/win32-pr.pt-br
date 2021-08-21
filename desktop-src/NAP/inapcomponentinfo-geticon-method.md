@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 795ad85f8497262f88fa55d8efb2da7466b8c3a9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1711c186d107418d95ccaf19e2a1440b0cecfc0e32fc8c425754d2d9fc19a9d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118134430"
 ---
 # <a name="inapcomponentinfogeticon-method"></a>Método INapComponentInfo:: GetIcon
 
@@ -62,7 +62,7 @@ Um ponteiro para o valor usado para retornar a ID de recurso do ícone a ser usa
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorne um desses códigos de erro com base no resultado dessa operação.
 
@@ -88,9 +88,9 @@ Os ícones devem ser localizados de acordo com a ID do idioma do thread de chama
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                     |
-| parâmetro<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                     |
+| Cabeçalho<br/>                   | <dl> <dt>NapCommon. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>NapCommon. idl</dt> </dl> |
 
 

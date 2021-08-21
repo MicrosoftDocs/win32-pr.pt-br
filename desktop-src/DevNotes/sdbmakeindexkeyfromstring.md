@@ -1,5 +1,5 @@
 ---
-description: Cria uma chave a partir de uma cadeia de caracteres.
+description: Cria uma chave de uma cadeia de caracteres.
 ms.assetid: 107138b9-96f0-4144-a4bc-7115b6deab60
 title: Função SdbMakeIndexKeyFromString
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 691e691f14692775f0c681a7efa3ce91f756be1d
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3298b0e038218aecb9676c596e7dbad09acbbdd4441d0f1cd79c3ec2a0188720
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920100"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161219"
 ---
 # <a name="sdbmakeindexkeyfromstring-function"></a>Função SdbMakeIndexKeyFromString
 
-Cria uma chave a partir de uma cadeia de caracteres.
+Cria uma chave de uma cadeia de caracteres.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,20 +39,20 @@ ULONGLONG WINAPI SdbMakeIndexKeyFromString(
 
 <dl> <dt>
 
-*pwszKey* \[ no\]
+*pwszKey* \[ Em\]
 </dt> <dd>
 
 A cadeia de caracteres.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 A função retornará a chave ou 0 se houver um erro.
 
 ## <a name="remarks"></a>Comentários
 
-A chave de índice padrão são os oito primeiros caracteres da cadeia de caracteres, convertidos em letras maiúsculas e, em seguida, convertidos em um valor de **ULONGLONG** .
+A chave de índice padrão é os oito primeiros caracteres da cadeia de caracteres, convertidos em letras maiúsculas e, em seguida, convertidos em **um valor ULONGLONG.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -60,8 +60,8 @@ A chave de índice padrão são os oito primeiros caracteres da cadeia de caract
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

@@ -1,9 +1,9 @@
 ---
-title: HDN_BEGINTRACK código de notificação (commctrl. h)
-description: Notifica uma janela pai do controle de cabeçalho que o usuário começou a arrastar um divisor no controle (ou seja, o usuário pressionou o botão esquerdo do mouse enquanto o cursor do mouse está sobre um divisor no controle de cabeçalho).
+title: HDN_BEGINTRACK de notificação (Commctrl.h)
+description: Notifica a janela pai de um controle de header de que o usuário começou a arrastar um divisor no controle (ou seja, o usuário pressionou o botão esquerdo do mouse enquanto o cursor do mouse está em um divisor no controle de header).
 ms.assetid: 363b14bc-2b7e-4c37-9caf-7671fcc3cfa5
 keywords:
-- HDN_BEGINTRACK de código de notificação controles do Windows
+- HDN_BEGINTRACK de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6da4ae2c360b13077a612b92ab19a739a58a07e3
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 4250f178c4e1e2322e1609159eabd2fbd99611c10420bb90ce7bd287c44a5d88
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118170936"
 ---
-# <a name="hdn_begintrack-notification-code"></a>Código de notificação do HDN \_ BEGINTRACK
+# <a name="hdn_begintrack-notification-code"></a>Código de \_ notificação DO HDN BEGINTRACK
 
-Notifica uma janela pai do controle de cabeçalho que o usuário começou a arrastar um divisor no controle (ou seja, o usuário pressionou o botão esquerdo do mouse enquanto o cursor do mouse está sobre um divisor no controle de cabeçalho). Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle de header de que o usuário começou a arrastar um divisor no controle (ou seja, o usuário pressionou o botão esquerdo do mouse enquanto o cursor do mouse está em um divisor no controle de header). Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -43,13 +43,13 @@ HDN_BEGINTRACK
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) que contém informações sobre o controle de cabeçalho e o item cujo divisor deve ser arrastado.
+Um ponteiro para uma [**estrutura NMHEADER**](/windows/win32/api/commctrl/ns-commctrl-nmheadera) que contém informações sobre o controle de cabeça e o item cujo divisor deve ser arrastado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **false** para permitir o acompanhamento do divisor ou **true** para impedir o acompanhamento.
+Retorna **FALSE** para permitir o acompanhamento do divisor ou **TRUE para** impedir o acompanhamento.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,9 +57,9 @@ Retorna **false** para permitir o acompanhamento do divisor ou **true** para imp
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 | Nomes Unicode e ANSI<br/>   | **HDN \_ BEGINTRACKW** (Unicode) e **HDN \_ BEGINTRACKA** (ANSI)<br/>             |
 
 

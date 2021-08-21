@@ -1,29 +1,29 @@
 ---
-title: Tipos de MIDI
-description: Tipos de MIDI
+title: Tipos MIDI
+description: Tipos MIDI
 ms.assetid: 2453ce4b-c4c9-47e1-a5f5-f0aaf28dbb39
 keywords:
-- áudio multimídia, tipos de MIDI
-- tipos de áudio, MIDI
-- MIDI (interface digital de instrumento musical), tipos
-- MIDI (interface digital de instrumentos musicais), tipos
+- áudio multimídia, tipos MIDI
+- áudio, tipos MIDI
+- MIDI (Interface Digital) do Instrument Instrument, tipos
+- MIDI (Interface Digital do Instrument Instrument), tipos
 - referência para MIDI, tipos
-- Referência de MIDI, tipos
-- Tipos de MIDI
+- Referência MIDI, tipos
+- Tipos MIDI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 723804b2673e489cd49788fba21434989acaea5a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5a06f035af217e04f89ac69be95e4665904fdce729dd8d412f59f6c633102bee
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005400"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137295"
 ---
-# <a name="midi-types"></a>Tipos de MIDI
+# <a name="midi-types"></a>Tipos MIDI
 
 Os tipos a seguir são usados com MIDI.
 
--   [Keyarray](keyarray.md)
+-   [KEYARRAY](keyarray.md)
 -   [PATCHARRAY](patcharray.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -33,9 +33,9 @@ Os tipos a seguir são usados com MIDI.
 [Referência de MIDI](midi-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

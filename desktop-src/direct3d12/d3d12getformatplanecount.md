@@ -15,12 +15,12 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0bfc2e88c162068de2b97c9df5071398e2fab068
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: c0791a3326286d6a6e784bc179890258fd7bf320511b37564f538b2d040ed10f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105782430"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118098261"
 ---
 # <a name="d3d12getformatplanecount-function"></a>Função D3D12GetFormatPlaneCount
 
@@ -60,7 +60,7 @@ O [**\_ formato dxgi**](/windows/desktop/api/dxgiformat/ne-dxgiformat-dxgi_forma
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **UINT8**
 

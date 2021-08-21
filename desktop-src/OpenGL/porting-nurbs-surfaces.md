@@ -12,12 +12,12 @@ keywords:
 - B-spline racional não uniforme (NURBS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f7260750db4d221743d3e764d6dd30e2de499383
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0a57de3a3b413d909ed034e9d355f4099c196a89b1e7ed93a69fe99ea72fca54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103636573"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118132345"
 ---
 # <a name="porting-nurbs-surfaces"></a>Portando superfícies NURBS
 
@@ -33,7 +33,7 @@ A tabela a seguir lista as funções do íris GL para desenhar superfícies NURB
 
 
 
- 
+ 
 
 A tabela a seguir lista os parâmetros do íris GL para tipos de superfície e seus parâmetros OpenGL equivalentes.
 
@@ -51,7 +51,7 @@ A tabela a seguir lista os parâmetros do íris GL para tipos de superfície e s
 
 
 
- 
+ 
 
 Para obter mais informações sobre os tipos de avaliadores disponíveis, consulte [**glMap2**](glmap2.md).
 
@@ -191,9 +191,9 @@ int main(int argc, char** argv)
 
 
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,24 +1,24 @@
 ---
-title: Atributo ext (distorção) (VML)
-description: Atributo ext (distorção) (VML)
+title: Atributo Ext (distorção)(VML)
+description: Atributo Ext (distorção)(VML)
 ms.assetid: ff1dfb2f-9098-4418-a2f7-c7159328bd09
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 153273f613d188ae9e6fe733b2d0337c5010295d
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 1b0a001812a5504940509fac82333b2ca637ae76a913218f44cd3a06b4c18bfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104162334"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118125356"
 ---
-# <a name="ext-attribute-skewvml"></a>Atributo ext (distorção) (VML)
+# <a name="ext-attribute-skewvml"></a>Atributo Ext (distorção)(VML)
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
- 
+ 
 
 Define a maneira como uma distorção é exibida. Leitura/gravação. **Cadeia de caracteres**.
 
@@ -28,26 +28,26 @@ Define a maneira como uma distorção é exibida. Leitura/gravação. **Cadeia d
 
 **Sintaxe de marca**
 
-<o: *Element* v:ext = " *expressão* " >
+<o: *elemento* v:ext=" *expressão* ">
 
 **Sintaxe do script**
 
-*Element* . ext = "*expressão*"
+*expressão* element .ext=""
 
-*expressão* = de *elemento*. ext
+*expressão* = *elemento*.ext
 
 **Comentários**
 
-Esse atributo é usado para informar aos editores gráficos como processar o elemento **skew** . Os valores são:
+Esse atributo é usado para dizer aos editores gráficos como processar o **elemento Skew.** Os valores são:
 
 -   **edit**
 -   **exibição** (padrão)
 -   **backwardCompatible**
 
-Se uma extensão for definida como **Editar**, ela poderá ser ignorada por um visualizador de software. Se definido como **Exibir**, o visualizador deverá renderizar a representação de bitmap em vez disso.
+Se uma extensão for definida para **editar**, ela poderá ser ignorada por um visualizador de software. Se definido para **exibir**, o visualizador deverá renderizar a representação de bitmap em vez disso.
 
-*Atributo de extensões de Microsoft Office*
+*Microsoft Office Atributo Extensions*
 
- 
+ 
 
- 
+ 

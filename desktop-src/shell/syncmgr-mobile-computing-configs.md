@@ -1,5 +1,5 @@
 ---
-description: Os aplicativos podem usar o Sychronization Manager para manter arquivos e recursos armazenados em cache localmente e sincronizados em computadores móveis e desktop.
+description: Os aplicativos podem usar o sincronização Manager para manter arquivos e recursos armazenados em cache localmente e sincronizados em computadores móveis e de desktop.
 title: Configurações de computação móvel
 ms.topic: article
 ms.date: 05/31/2018
@@ -18,14 +18,14 @@ ms.locfileid: "118451852"
 ---
 # <a name="mobile-computing-configurations"></a>Configurações de computação móvel
 
-O Synchronization Manager é útil para computadores configurados da seguinte forma:
+O Gerenciador de sincronização é útil para computadores configurados da seguinte maneira:
 
--   Computador móvel usado em uma estação de encaixe em uma rede de alta largura de banda, mas ocasionalmente usado por meio de uma conexão discagem.
--   Computador móvel usado principalmente por meio de uma conexão discagem.
--   Computador desktop usado estritamente por meio de uma conexão discada, como um computador usado por um operador de telecomunicações.
--   Computador desktop usado estritamente por meio de uma rede de alta largura de banda.
+-   Computador móvel usado em uma estação de encaixe em uma rede de largura de banda alta, mas usado ocasionalmente por meio de uma conexão de discagem.
+-   Computador móvel usado principalmente por meio de uma conexão de discagem.
+-   Computador desktop usado estritamente por meio de uma conexão de discagem, como um computador usado por um telecomutador.
+-   Computador desktop usado estritamente por meio de uma rede de largura de banda alta.
 
-Embora o último caso não seja um cenário móvel típico, problemas de latência com acesso à rede podem tornar conveniente armazenar em cache os recursos localmente. Em todas essas configurações, o aplicativo pode usar o SyncMgr para manter arquivos e outros recursos armazenados em cache localmente e sincronizados entre o uso online e offline.
+Embora o último caso não seja um cenário móvel típico, problemas de latência com acesso à rede podem torná-lo conveniente para armazenar os recursos localmente em cache. Em todas essas configurações, o aplicativo pode usar o SyncMgr para manter arquivos e outros recursos armazenados em cache localmente e sincronizados entre o uso online e offline.
 
  
 

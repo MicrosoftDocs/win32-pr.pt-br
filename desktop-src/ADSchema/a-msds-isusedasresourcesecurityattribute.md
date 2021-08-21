@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DS-Is-Used-As-Resource-Security-Attribute
+title: atributo ms-DS-is-used-as-Resource-Security-Attribute
 description: Para uma propriedade de recurso, esse atributo indica se ele está sendo usado como um atributo seguro.
 ms.assetid: d020515f-5225-4576-bcc8-86cef84556ac
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo ms-DS-Is-Used-As-Resource-Security-Attribute
-- MsDS-IsUsedAsResourceSecurityAttribute atributo AD Schema
+- ms-DS-is-used-as-Resource-Security-Attribute atributo AD Schema
+- atributo msDS-IsUsedAsResourceSecurityAttribute do AD Schema
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118425832"
 ---
-# <a name="ms-ds-is-used-as-resource-security-attribute-attribute"></a>Atributo ms-DS-Is-Used-As-Resource-Security-Attribute
+# <a name="ms-ds-is-used-as-resource-security-attribute-attribute"></a>atributo ms-DS-is-used-as-Resource-Security-Attribute
 
 Para uma propriedade de recurso, esse atributo indica se ele está sendo usado como um atributo seguro.
 
@@ -29,13 +29,13 @@ Para uma propriedade de recurso, esse atributo indica se ele está sendo usado c
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------|
-| CN                | ms-DS-Is-Used-As-Resource-Security-Attribute |
-| Ldap-Display-Name | msDS-IsUsedAsResourceSecurityAttribute       |
+| CN                | ms-DS-is-used-as-Resource-Security-Attribute |
+| LDAP-Display-Name | msDS-IsUsedAsResourceSecurityAttribute       |
 | Tamanho              | \-                                           |
 | Privilégio de atualização  | \-                                           |
 | Frequência de atualização  | \-                                           |
 | Attribute-Id      | 1.2.840.113556.1.4.2095                      |
-| System-Id-Guid    | 51c9f89d-4730-468d-a2b5-1d493212d17e         |
+| System-ID-GUID    | 51c9f89d-4730-468d-a2b5-1d493212d17e         |
 | Syntax            | [**Boolean**](s-boolean.md)                 |
 
 
@@ -53,10 +53,10 @@ Para uma propriedade de recurso, esse atributo indica se ele está sendo usado c
 | ID do link                | \-                                                                    |
 | MAPI-Id                | \-                                                                    |
 | System-Only            | Falso                                                                 |
-| Tem valor único       | Verdadeiro                                                                  |
+| É de valor único       | Verdadeiro                                                                  |
 | É indexado             | Falso                                                                 |
-| No Catálogo Global      | Falso                                                                 |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                          |
+| No catálogo global      | Falso                                                                 |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                          |
 | Range-Lower            | \-                                                                    |
 | Range-Upper            | \-                                                                    |
 | Search-Flags           | 0x00000000                                                            |

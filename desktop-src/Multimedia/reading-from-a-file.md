@@ -6,12 +6,12 @@ keywords:
 - Função AVIFileInfo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ba1ffe866e454a898c5c3b91c7721c24f6a861ed
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: ab95186b1ec8913623b0ab02e0d2bc5556302d4dcd03f7737ac12c5872b9f2fb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005935"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118371672"
 ---
 # <a name="reading-from-a-file"></a>Lendo de um arquivo
 
@@ -19,9 +19,9 @@ Você pode recuperar informações sobre um arquivo aberto usando a função [**
 
 Para recuperar informações suplementares em um arquivo AVI, use a função [**AVIFileReadData**](/windows/desktop/api/Vfw/nf-vfw-avifilereaddata) . As informações complementares são aplicáveis ao arquivo inteiro e não estão incluídas nos cabeçalhos de arquivo normais. Por exemplo, o nome da empresa ou pessoa que mantém os direitos autorais de um arquivo pode ser informações complementares. As informações suplementares não aderem a um formato específico; Ele pode ser específico do arquivo. **AVIFileReadData** retorna as informações suplementares em um buffer fornecido pelo aplicativo.
 
- 
+ 
 
- 
+ 
 
 
 

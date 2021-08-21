@@ -3,7 +3,7 @@ title: BUTTONelement. adesivo
 description: O atributo adesivo especifica ou recupera um valor que indica se o BUTTONelement é uma alternância, ou seja, se é um botão de dois Estados ou de estado único.
 ms.assetid: a7e74f70-9fa6-45a1-ab65-2db107e13551
 keywords:
-- BUTTONelement. adesivo do Windows Media Player
+- Windows Media Playercollection. adesivo
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 713b26fdee3062fbe803d05e034bc9896cdd5563
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: cc8a709fc28f0d1529c58725db5856931195a66cc370559dd9d14af61e869db6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105762096"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120030"
 ---
 # <a name="buttonelementsticky"></a>BUTTONelement. adesivo
 

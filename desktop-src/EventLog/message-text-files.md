@@ -4,12 +4,12 @@ ms.assetid: 99fbb3d6-6fde-4162-b0b9-99a1cdf0b8f8
 title: Arquivos de texto da mensagem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3e87547f44b0b556df4e3a2ffb67736b950321c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 818210cfe58fb8eafe939c70a2a57b358e306bb9bc072a64abebbec5ca41c266
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104165448"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151472"
 ---
 # <a name="message-text-files"></a>Arquivos de texto da mensagem
 
@@ -94,7 +94,7 @@ Language=Japanese
 .
 ```
 
-Você pode especificar as sequências de escape a seguir para formatar o texto da mensagem para uso pelo Visualizador de eventos ou seu aplicativo. O caractere de sinal de porcentagem (%) Inicia todas as sequências de escape. Qualquer outro caractere após um sinal de porcentagem é exibido sem o sinal de porcentagem.
+Você pode especificar as sequências de escape a seguir para formatar o texto da mensagem para uso pelo Visualizador de eventos ou seu aplicativo. O caractere de sinal de porcentagem (%) inicia todas as sequências de escape. Qualquer outro caractere após um sinal de porcentagem é exibido sem o sinal de porcentagem.
 
 <dl> <dt>
 

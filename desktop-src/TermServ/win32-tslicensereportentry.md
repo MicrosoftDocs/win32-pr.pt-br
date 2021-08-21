@@ -1,11 +1,11 @@
 ---
-title: Classe Win32_TSLicenseReportEntry
-description: Fornece detalhes do Serviços de Área de Trabalho Remota emitido por licença de acesso para cliente por usuário (RDS \ 160; CAL por usuário).
+title: Win32_TSLicenseReportEntry classe
+description: Fornece detalhes da licença de acesso do cliente Serviços de Área de Trabalho Remota por usuário (RDS \ 160; CAL por usuário).
 ms.assetid: 75fa7f39-af5b-45a0-ba2b-5c667edfec16
 ms.tgt_platform: multiple
 keywords:
-- Classe de Win32_TSLicenseReportEntry Serviços de Área de Trabalho Remota
-- Serviços de Área de Trabalho Remota de Win32_TSLicenseReportEntry classe, descrita
+- Win32_TSLicenseReportEntry classe Serviços de Área de Trabalho Remota
+- Win32_TSLicenseReportEntry classe Serviços de Área de Trabalho Remota , descrito
 topic_type:
 - apiref
 api_name:
@@ -21,16 +21,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 44fa97a91561a9d4cf3fd571c773288796754858
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e08041ac0878f3466712001a0a5e2cc90eb74ea1e360da9785b5d84805574389
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369263"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118126516"
 ---
-# <a name="win32_tslicensereportentry-class"></a>\_Classe Win32 TSLicenseReportEntry
+# <a name="win32_tslicensereportentry-class"></a>Classe Win32 \_ TSLicenseReportEntry
 
-Fornece detalhes do Serviços de Área de Trabalho Remota emitido por licença de acesso para cliente por usuário (RDS CAL por usuário).
+Fornece detalhes sobre a licença de acesso do cliente Serviços de Área de Trabalho Remota por usuário emitida (CAL de RDS por usuário).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -48,13 +48,13 @@ class Win32_TSLicenseReportEntry
 
 ## <a name="members"></a>Membros
 
-A classe **Win32 \_ TSLicenseReportEntry** tem estes tipos de membros:
+A **classe Win32 \_ TSLicenseReportEntry** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Win32 \_ TSLicenseReportEntry** tem essas propriedades.
+A **classe Win32 \_ TSLicenseReportEntry** tem essas propriedades.
 
 <dl> <dt>
 
@@ -67,36 +67,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Especifica o tipo de CAL emitida. Esse será um dos valores a seguir.
+Especifica o tipo de CAL emitido. Esse será um dos valores a seguir.
 
-**Windows server 2008 R2 e Windows server 2008:** Não há suporte para essa propriedade.
+**Windows Server 2008 R2 e Windows Server 2008:** Não há suporte para essa propriedade.
 
-"Interno de TS por dispositivo CAL"
+"TS por CAL de dispositivo integrado"
 
-"TS CAL por dispositivo"
+"TS por CAL do dispositivo"
 
-"CAL do conector de Internet TS"
+"CAL do Conector da Internet do TS"
 
-"TS CAL por usuário"
+"TS per User CAL"
 
-"TS ou RDS CAL por dispositivo"
+"TS ou RDS por CAL de dispositivo"
 
-"TS ou RDS CAL por usuário"
+"TS ou RDS por CAL de usuário"
 
-"VDI Standard Suite por licença de assinatura de dispositivo"
+"Licença de assinatura do VDI Standard Suite per Device"
 
-"VDI Premium Suite por licença de assinatura de dispositivo"
+"Licença de assinatura do VDI Premium Suite per Device"
 
-"RDS CAL por dispositivo"
+"CAL de RDS por dispositivo"
 
-"RDS CAL por usuário"
+"CAL de RDS por usuário"
 
 </dd> <dt>
 
 **ExpirationDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **DATETIME**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -106,7 +106,7 @@ Data de validade da licença que foi emitida para o usuário.
 
 </dd> <dt>
 
-**ProductVersion**
+**Productversion**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -115,43 +115,43 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Versão do Serviços de Área de Trabalho Remota para a qual a CAL RDS por usuário foi emitida.
+Versão do Serviços de Área de Trabalho Remota para a qual a CAL de RDS por usuário foi emitida.
 
 <dt>
 
 "Windows Server 2012"
 </dt> <dd>
 
-Somente os servidores que executam o Windows Server 2012, Windows Server 2008 R2 ou Windows Server 2008 têm suporte com esta licença.
+Somente servidores que executam Windows Server 2012, Windows Server 2008 R2 ou Windows Server 2008 têm suporte com essa licença.
 
 </dd> <dt>
 
 "Windows Server 7"
 </dt> <dd>
 
-Somente os servidores que executam o Windows Server 2008 R2 ou o Windows Server 2008 têm suporte com esta licença.
+Somente servidores que executam Windows Server 2008 R2 ou Windows Server 2008 têm suporte com essa licença.
 
 </dd> <dt>
 
 "Windows Server 2008"
 </dt> <dd>
 
-Somente servidores que executam o Windows Server 2008 têm suporte com esta licença.
+Somente servidores que executam Windows Server 2008 têm suporte com essa licença.
 
 </dd> </dl>
 
 </dd> <dt>
 
-**ProductVersionid**
+**ProductVersionID**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Identificador de versão do produto para o pacote de chaves de licença Serviços de Área de Trabalho Remota.
+Identificador de versão do produto para o Serviços de Área de Trabalho Remota de chaves de licença.
 
 <dt>
 
@@ -179,14 +179,14 @@ Windows Server 2008
 1
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> <dt>
 
 0
 </dt> <dd>
 
-Não há suporte.
+Sem suporte.
 
 </dd> </dl>
 
@@ -212,7 +212,7 @@ Nome do usuário para o qual a licença foi emitida.
 
 Você deve ser um membro do grupo Administradores para usar essa classe.
 
-Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumentação de Gerenciamento do Windows (WMI). Os arquivos MOF não são instalados como parte do SDK (Software Development Kit) do Microsoft Windows. Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, consulte [formato MOF (MOF)](/windows/desktop/WmiSdk/managed-object-format--mof-).
+arquivos Managed Object Format (MOF) contêm as definições para classes WMI (Instrumentação de Gerenciamento de Windows). Os arquivos MOF não são instalados como parte do Microsoft Windows Software Development Kit (SDK). Eles são instalados no servidor quando você adiciona a função associada usando o Gerenciador do Servidor. Para obter mais informações sobre arquivos MOF, [consulte Managed Object Format (MOF).](/windows/desktop/WmiSdk/managed-object-format--mof-)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -223,7 +223,7 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                            |
 | Namespace<br/>                | Raiz\\CIMv2<br/>                                                                    |
-| MOF<br/>                      | <dl> <dt>TlsWmiProv. mof</dt> </dl> |
+| MOF<br/>                      | <dl> <dt>TlsWmiProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>TlsWmiProv.dll</dt> </dl> |
 
 
@@ -235,16 +235,16 @@ Os arquivos de formato MOF (MOF) contêm as definições de classes de Instrumen
 [**FetchReportEntries**](fetchreportentries-win32-tslicensereport.md)
 </dt> <dt>
 
-[**\_TSIssuedLicense Win32**](win32-tsissuedlicense.md)
+[**Win32 \_ TSIssuedLicense**](win32-tsissuedlicense.md)
 </dt> <dt>
 
-[**\_TSLicenseKeyPack Win32**](win32-tslicensekeypack.md)
+[**Win32 \_ TSLicenseKeyPack**](win32-tslicensekeypack.md)
 </dt> <dt>
 
-[**\_TSLicenseReport Win32**](win32-tslicensereport.md)
+[**Win32 \_ TSLicenseReport**](win32-tslicensereport.md)
 </dt> <dt>
 
-[**\_TSLicenseServer Win32**](win32-tslicenseserver.md)
+[**Win32 \_ TSLicenseServer**](win32-tslicenseserver.md)
 </dt> </dl>
 
  

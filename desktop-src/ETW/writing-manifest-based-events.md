@@ -1,33 +1,33 @@
 ---
-description: Saiba como gravar eventos baseados em manifesto em uma sessão de rastreamento. Comece com o registro de seu provedor, para que ele esteja pronto para gravar eventos em uma sessão de rastreamento.
+description: Saiba mais sobre como escrever eventos baseados em manifesto em uma sessão de rastreamento. Comece registrando seu provedor para que ele esteja pronto para gravar eventos em uma sessão de rastreamento.
 ms.assetid: 76e7202e-74ce-40a3-a04b-9af5117fe20e
 title: Escrevendo eventos baseados em manifesto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bc2887194d731ca93379b07c9929de239cef3cdb
-ms.sourcegitcommit: d0eb44d0a95f5e5efbfec3d3e9c143f5cba25bc3
+ms.openlocfilehash: 6963051f65beb652eda04e3d0be6db99925e4eed81032c5687850915a0f1c173
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112261958"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151075"
 ---
 # <a name="writing-manifest-based-events"></a>Escrevendo eventos baseados em manifesto
 
-Antes de poder gravar eventos em uma sessão de rastreamento, você deve registrar seu provedor. O registro de um provedor informa ao ETW que seu provedor está pronto para gravar eventos em uma sessão de rastreamento. Um processo pode registrar até 1.024 GUIDs do provedor; no entanto, você deve limitar o número de provedores que seu processo registra em um ou dois.
+Antes de gravar eventos em uma sessão de rastreamento, você deve registrar seu provedor. Registrar um provedor informa ao ETW que seu provedor está pronto para gravar eventos em uma sessão de rastreamento. Um processo pode registrar até 1.024 GUIDs de provedor; No entanto, você deve limitar o número de provedores que seu processo registra a um ou dois.
 
 **Antes do Windows Vista:** Não há nenhum limite para o número de provedores que um processo pode registrar.
 
-Para registrar um provedor baseado em manifesto, chame a função [**EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) . A função registra o GUID do provedor e identifica um retorno de chamada opcional que o ETW chama quando um controlador habilita ou desabilita o provedor.
+Para registrar um provedor baseado em manifesto, chame a [**função EventRegister.**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) A função registra o GUID do provedor e identifica um retorno de chamada opcional que o ETW chama quando um controlador habilita ou desabilita o provedor.
 
-Antes de o provedor sair, chame a função [**EventUnregister**](/windows/desktop/api/Evntprov/nf-evntprov-eventunregister) para remover o registro do provedor do ETW. A função [**EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) retorna o identificador de registro que você passa para a função **EventUnregister** .
+Antes de o provedor sair, chame [**a função EventUnregister**](/windows/desktop/api/Evntprov/nf-evntprov-eventunregister) para remover o registro do provedor do ETW. A [**função EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister) retorna o alça de registro que você passa para a **função EventUnregister.**
 
-Os provedores [baseados em manifesto](about-event-tracing.md) não precisam implementar uma função [**EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback) para receber notificações quando uma sessão habilita ou desabilita o provedor. O retorno de chamada é opcional e é usado para fins informativos; Você não precisa especificar ou implementar o retorno de chamada ao registrar o provedor. Um provedor baseado em manifesto pode simplesmente gravar eventos, e o ETW decidirá se o evento é registrado em uma sessão de rastreamento. Se um evento exigir que você execute um trabalho extensivo para gerar os dados do evento, talvez você queira chamar a função [**EventEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventenabled) ou [**EventProviderEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventproviderenabled) primeiro para verificar se o evento será gravado em uma sessão antes de executar o trabalho.
+[Os provedores baseados](about-event-tracing.md) em manifesto não têm que implementar uma [**função EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback) para receber notificações quando uma sessão habilita ou desabilita o provedor. O retorno de chamada é opcional e é usado para fins informacionais; você não precisa especificar ou implementar o retorno de chamada ao registrar o provedor. Um provedor baseado em manifesto pode simplesmente gravar eventos e o ETW decidirá se o evento é registrado em uma sessão de rastreamento. Se um evento exigir que você execute um trabalho extensivo para gerar os dados do evento, chame a função [**EventEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventenabled) ou [**EventProviderEnabled**](/windows/desktop/api/Evntprov/nf-evntprov-eventproviderenabled) primeiro para verificar se o evento será gravado em uma sessão antes de executar o trabalho.
 
-Normalmente, você implementaria o retorno de chamada se seu provedor exigir que o controlador passe dados de filtro definidos pelo provedor (consulte o parâmetro *FilterData* de [**EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback)) para o provedor, ou o provedor usará as informações de contexto que ele especificou quando ele se registrou (consulte o parâmetro *CallbackContext* de [**EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister)).
+Normalmente, você implementará o retorno de chamada se o provedor exigir que o controlador passe dados de filtro definidos pelo provedor (consulte o parâmetro *FilterData* de [**EnableCallback**](/windows/desktop/api/Evntprov/nc-evntprov-penablecallback)) para o provedor ou o provedor usa as informações de contexto especificadas quando ele se registrou (consulte o parâmetro *CallbackContext* de [**EventRegister**](/windows/desktop/api/Evntprov/nf-evntprov-eventregister)).
 
-Os provedores [baseados em manifesto](about-event-tracing.md) chamam a função [**EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) ou [**EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) para gravar eventos em uma sessão. Se os dados do evento forem uma cadeia de caracteres ou se você não definir um manifesto para seu provedor e os dados do evento forem uma única cadeia de caracteres, chame a função [**EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) para gravar o evento. Para dados de eventos que contêm tipos de dados numéricos ou complexos, chame a função [**EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) para registrar o evento.
+[Os provedores baseados](about-event-tracing.md) em manifesto chamam a [**função EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) ou [**EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) para gravar eventos em uma sessão. Se os dados do evento são uma cadeia de caracteres ou se você não definir um manifesto para seu provedor e seus dados de evento são uma única cadeia de caracteres, chame a [**função EventWriteString**](/windows/desktop/api/Evntprov/nf-evntprov-eventwritestring) para gravar o evento. Para dados de evento que contêm tipos de dados numéricos ou complexos, chame a [**função EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) para registrar o evento.
 
-O exemplo a seguir mostra como preparar os dados de evento a serem gravados usando a função [**EventWrite**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) . O exemplo faz referência aos eventos definidos na [publicação do esquema de evento para um provedor baseado em manifesto](publishing-your-event-schema-for-a-manifest-base-provider.md).
+O exemplo a seguir mostra como preparar os dados de evento a serem gravados usando a [**função EventWrite.**](/windows/desktop/api/Evntprov/nf-evntprov-eventwrite) O exemplo faz referência aos eventos definidos [em Publicando seu esquema de evento para um provedor baseado em manifesto.](publishing-your-event-schema-for-a-manifest-base-provider.md)
 
 
 ```C++
@@ -158,7 +158,7 @@ cleanup:
 
 
 
-Quando você compila o manifesto (consulte [Compilando um manifesto de instrumentação](../wes/compiling-an-instrumentation-manifest.md)) que o exemplo acima usa, ele cria o seguinte arquivo de cabeçalho (referenciado no exemplo acima).
+Quando você compila o manifesto (consulte Compilando um manifesto de [instrumentação](../wes/compiling-an-instrumentation-manifest.md)) que o exemplo acima usa, ele cria o seguinte arquivo de header (referenciado no exemplo acima).
 
 
 ```C++

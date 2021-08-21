@@ -1,11 +1,11 @@
 ---
-title: Telefone-página inicial-atributo primário
-description: O número de telefone residencial principal do usuário.
+title: Telefone atributo home-primary
+description: O número de telefone da página principal do usuário.
 ms.assetid: 624d89fd-942c-448d-bd51-7d93954370b1
 ms.tgt_platform: multiple
 keywords:
-- Telefone-página inicial-esquema de AD do atributo primário
-- Esquema de AD do atributo homePhone
+- Telefone esquema do AD do atributo home-primary
+- Esquema do AD do atributo homePhone
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c2d2e68116a15dcbf4431d33bb56b4ffed8ee2e
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 321ba35912db00e8b33f840d73cd68010166c7e38a19e6b6a43e64bc886a8496
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749380"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118176705"
 ---
-# <a name="phone-home-primary-attribute"></a>Telefone-página inicial-atributo primário
+# <a name="phone-home-primary-attribute"></a>Telefone atributo home-primary
 
-O número de telefone residencial principal do usuário.
+O número de telefone da página principal do usuário.
 
 
 
 | Entrada | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| CN                | Telefone-residência-primário                                                               |
-| LDAP-Display-Name | homePhone                                                                        |
+| CN                | Telefone-Home-Primary                                                               |
+| Ldap-Display-Name | homePhone                                                                        |
 | Tamanho              | \-                                                                               |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                           |
 | Frequência de atualização  | Quando o registro do usuário é criado e sempre que o número de telefone precisa ser alterado. |
 | Attribute-Id      | 0.9.2342.19200300.100.1.20                                                       |
-| System-ID-GUID    | f0f8ffa1-1191-11d0-a060-00aa006c33ed                                             |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                      |
+| System-Id-Guid    | f0f8ffa1-1191-11d0-a060-00aa006c33ed                                             |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                      |
 
 
 
@@ -58,10 +58,10 @@ O número de telefone residencial principal do usuário.
 | ID do link                | \-                                                                 |
 | MAPI-Id                | 0x3A09                                                             |
 | System-Only            | Falso                                                              |
-| É de valor único       | True                                                               |
+| Tem valor único       | Verdadeiro                                                               |
 | É indexado             | Falso                                                              |
-| No catálogo global      | True                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                       |
+| No Catálogo Global      | Verdadeiro                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                       |
 | Range-Lower            | 1                                                                  |
 | Range-Upper            | 64                                                                 |
 | Search-Flags           | 0x00000000                                                         |
@@ -79,10 +79,10 @@ O número de telefone residencial principal do usuário.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| Tem valor único       | Verdadeiro                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
-| No catálogo global      | True                                                                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
@@ -100,10 +100,10 @@ O número de telefone residencial principal do usuário.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| Tem valor único       | Verdadeiro                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
-| No catálogo global      | True                                                                                                                                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
+| No Catálogo Global      | Verdadeiro                                                                                                                                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
 | Search-Flags           | 0x00000000                                                                                                                                               |
@@ -121,9 +121,9 @@ O número de telefone residencial principal do usuário.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
-| No catálogo global      | True                                                                                                                                                     |
+| No catálogo global      | Verdadeiro                                                                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
@@ -142,9 +142,9 @@ O número de telefone residencial principal do usuário.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
-| No catálogo global      | True                                                                                                                                                     |
+| No catálogo global      | Verdadeiro                                                                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |
@@ -163,9 +163,9 @@ O número de telefone residencial principal do usuário.
 | ID do link                | \-                                                                                                                                                       |
 | MAPI-Id                | 0x3A09                                                                                                                                                   |
 | System-Only            | Falso                                                                                                                                                    |
-| É de valor único       | True                                                                                                                                                     |
+| É de valor único       | Verdadeiro                                                                                                                                                     |
 | É indexado             | Falso                                                                                                                                                    |
-| No catálogo global      | True                                                                                                                                                     |
+| No catálogo global      | Verdadeiro                                                                                                                                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                             |
 | Range-Lower            | 1                                                                                                                                                        |
 | Range-Upper            | 64                                                                                                                                                       |

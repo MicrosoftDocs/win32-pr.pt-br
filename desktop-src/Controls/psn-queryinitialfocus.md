@@ -3,7 +3,7 @@ title: PSN_QUERYINITIALFOCUS de notificação (Prsht.h)
 description: Enviado por uma folha de propriedades para fornecer a uma página de folha de propriedades uma oportunidade de especificar qual controle de caixa de diálogo deve receber o foco inicial. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 29b5e598-75b2-4b6f-acdb-171b1f7a1850
 keywords:
-- PSN_QUERYINITIALFOCUS código de notificação Windows Controles
+- PSN_QUERYINITIALFOCUS de notificação Windows Controles
 topic_type:
 - apiref
 api_name:

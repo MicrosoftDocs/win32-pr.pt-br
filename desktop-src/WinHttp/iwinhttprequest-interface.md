@@ -1,5 +1,5 @@
 ---
-description: A interface IWinHttpRequest fornece todos os métodos não uniformes para o Microsoft Windows HTTP Services (WinHTTP).
+description: a interface IWinHttpRequest fornece todos os métodos não igualmente para o Microsoft Windows HTTP Services (WinHTTP).
 ms.assetid: 6417b3b5-b74a-4c7b-acf9-87e2e814a4df
 title: Interface IWinHttpRequest
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - Winhttp.dll
-ms.openlocfilehash: 77ebc8947ad36d2dc9efba121cdd6da2d6de359b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 87a31ebe116726d70eb847fe54d563be57477f7133147226657c4c74135defa7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104169816"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118114395"
 ---
 # <a name="iwinhttprequest-interface"></a>Interface IWinHttpRequest
 
-A interface **IWinHttpRequest** fornece todos os métodos não uniformes para [o Microsoft Windows http Services (WinHTTP)](about-winhttp.md).
+a interface **IWinHttpRequest** fornece todos os métodos não igualmente para [o Microsoft Windows HTTP Services (WinHTTP)](about-winhttp.md).
 
 ## <a name="members"></a>Membros
 
@@ -80,7 +80,7 @@ A interface **IWinHttpRequest** tem essas propriedades.
 A interface **IWinHttpRequest** definida em HttpRequest. idl é implementada por uma classe com ID de **CLSID \_ WinHttpRequest**. Um aplicativo obtém essa interface chamando [**CoCreateInstance**](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) com uma ID de classe de **CLSID \_ WinHttpRequest** e uma ID de interface **de \_ IWinHttpRequest de IID**.
 
 > [!Note]  
-> Para o Windows XP e o Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHTTP.
+> para Windows XP e Windows 2000, consulte a seção [requisitos de tempo de execução](winhttp-start-page.md) da página inicial do WinHttp.
 
  
 
@@ -90,9 +90,9 @@ A interface **IWinHttpRequest** definida em HttpRequest. idl é implementada por
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente Windows XP, Windows 2000 Professional com \[ aplicativos de área de trabalho do SP3\]<br/>            |
-| Servidor mínimo com suporte<br/> | Windows Server 2003, Windows 2000 Server com aplicativos de área de trabalho do SP3 \[ somente\]<br/>         |
-| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior no Windows XP e no Windows 2000.<br/> |
+| Cliente mínimo com suporte<br/> | Windows XP, Windows 2000 Professional somente com \[ aplicativos da área de trabalho do SP3\]<br/>            |
+| Servidor mínimo com suporte<br/> | Windows servidor 2003, Windows 2000 servidor somente com \[ aplicativos de área de trabalho do SP3\]<br/>         |
+| Redistribuível<br/>          | WinHTTP 5,0 e Internet Explorer 5, 1 ou posterior em Windows XP e Windows 2000.<br/> |
 | INSERI<br/>                      | <dl> <dt>HttpRequest. idl</dt> </dl> |
 | Biblioteca<br/>                  | <dl> <dt>WinHTTP. lib</dt> </dl>     |
 | DLL<br/>                      | <dl> <dt>Winhttp.dll</dt> </dl>     |

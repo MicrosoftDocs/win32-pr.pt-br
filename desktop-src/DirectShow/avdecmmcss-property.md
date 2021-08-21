@@ -1,21 +1,21 @@
 ---
-description: Especifica a classe do serviço do Agendador de classes de multimídia (MMCSS) para o thread de decodificação.
+description: Especifica a classe MMCSS (Serviço de Agendador de Classe Multimídia) para o thread de decodificação.
 ms.assetid: 77724879-62e4-439e-9dd0-3642cd7f75ca
-title: Propriedade AVDecMmcss (UUIDs. h)
+title: Propriedade AVDecMmcss (Uuids.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e0092ac516f9600929a9772d044f51e7e375548d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b9084db3cce8d555afa44097271a6b08f58cfea2f2edcb7acb5845730afc86b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105768412"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159940"
 ---
 # <a name="avdecmmcss-property"></a>Propriedade AVDecMmcss
 
-Especifica a classe do serviço do Agendador de classes de multimídia (MMCSS) para o thread de decodificação.
+Especifica a classe MMCSS (Serviço de Agendador de Classe Multimídia) para o thread de decodificação.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,15 +27,15 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-O valor dessa propriedade é o nome da classe do MMCSS.
+O valor dessa propriedade é o nome da classe MMCSS.
 
 ## <a name="remarks"></a>Comentários
 
-O MMCSS permite que os aplicativos garantam que o processamento sensível ao tempo tem acesso prioritário aos recursos da CPU. Ele funciona elevando threads registrados para prioridades de thread mais altas enquanto reduz periodicamente suas prioridades para gerar tempo para outros processos.
+O MMCSS permite que os aplicativos assegurem que o processamento sensível ao tempo tenha priorizado o acesso aos recursos da CPU. Ele funciona elevando threads registrados para prioridades de thread mais altas enquanto diminui periodicamente suas prioridades para gerar tempo para outros processos.
 
-O valor recomendado para decodificadores de áudio é "áudio", e o valor recomendado para decodificadores de vídeo é "reprodução".
+O valor recomendado para decodificadores de áudio é "Áudio" e o valor recomendado para decodificadores de vídeo é "Reprodução".
 
-Se o serviço do MMCSS não estiver disponível ou se a classe do MMCSS especificada não existir, a definição da propriedade não terá nenhum efeito.
+Se o serviço MMCSS não estiver disponível ou se a classe MMCSS especificada não existir, definir a propriedade não terá nenhum efeito.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,7 +43,7 @@ Se o serviço do MMCSS não estiver disponível ou se a classe do MMCSS especifi
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>UUIDs. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Uuids.h</dt> </dl> |
 
 
 
@@ -51,10 +51,10 @@ Se o serviço do MMCSS não estiver disponível ou se a classe do MMCSS especifi
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

@@ -23,10 +23,10 @@ Esta seção contém informações sobre as enumerações usadas na análise de 
 |----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | [**AnalysisModes**](analysismodes.md)                   | Especifica como o [**IInkAnalyzer**](iinkanalyzer.md) executa a análise de tinta.<br/>                                                  |
 | [**AnalysisWarningCode**](analysiswarningcode.md)       | Especifica o conjunto de avisos disponíveis que podem ocorrer durante a análise de tinta.<br/>                                                    |
-| [**ConfirmationType**](confirmationtype.md)             | Especifica o tipo de confirmação que pode ocorrer em um [**objeto IContextNode.**](icontextnode.md)<br/>                           |
-| [**ContextLinkDirection**](contextlinkdirection.md)     | Especifica os tipos de [**objetos IContextLink.**](icontextlink.md)<br/>                                                           |
-| [**Recognitionconfidence**](recognitionconfidence.md)   | Especifica o nível de confiança que o [**IInkAnalyzer**](iinkanalyzer.md) tem na precisão do resultado do reconhecimento.<br/> |
-| [**RecognizerCapabilities**](recognizercapabilities.md) | Especifica os atributos de um [**IInkAnalysisRecognizer.**](iinkanalysisrecognizer.md)<br/>                                       |
+| [**Confirmtype**](confirmationtype.md)             | Especifica o tipo de confirmação que pode ocorrer em um objeto [**IContextNode**](icontextnode.md) .<br/>                           |
+| [**ContextLinkDirection**](contextlinkdirection.md)     | Especifica os tipos de objetos [**IContextLink**](icontextlink.md) .<br/>                                                           |
+| [**RecognitionConfidence**](recognitionconfidence.md)   | Especifica o nível de confiança que o [**IInkAnalyzer**](iinkanalyzer.md) tem na precisão do resultado do reconhecimento.<br/> |
+| [**RecognizerCapabilities**](recognizercapabilities.md) | Especifica os atributos de um [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).<br/>                                       |
 | [**StrokeType**](stroketype.md)                         | Especifica como o [**IInkAnalyzer**](iinkanalyzer.md) deve classificar um traço durante a análise.<br/>                               |
 
 

@@ -1,7 +1,7 @@
 ---
-description: O \_ método Get streamLength recupera a duração do fluxo atual.
+description: O método \_ get StreamLength recupera a duração do fluxo atual.
 ms.assetid: b3c13abe-cd56-4960-9862-bda47a0e87ed
-title: 'Método IMediaDet:: get_StreamLength (QEdit. h)'
+title: Método IMediaDet::get_StreamLength (Qedit.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 61fe92fcb845a626fafc8ebb49126a35cf633aea
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f29b11c5b9b054a759648343ea8b27c8f883d044cd65073b0bddc5ea8884a6d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757015"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118154283"
 ---
-# <a name="imediadetget_streamlength-method"></a>Método IMediaDet:: get \_ streamLength
+# <a name="imediadetget_streamlength-method"></a>Método IMediaDet::get \_ StreamLength
 
 > [!Note]  
 > \[Preterido. Essa API pode ser removida de versões futuras do Windows.\]
@@ -45,30 +45,30 @@ HRESULT get_StreamLength(
 
 <dl> <dt>
 
-*PVal* \[ out, retval\]
+*pVal* \[ out, retval\]
 </dt> <dd>
 
 Recebe a duração do fluxo, em segundos.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
+Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
 
 ## <a name="remarks"></a>Comentários
 
-Antes de chamar esse método, defina o nome do arquivo e o fluxo chamando [**IMediaDet::p UT \_ filename**](imediadet-put-filename.md) e [**IMediaDet::p UT \_ CurrentStream**](imediadet-put-currentstream.md).
+Antes de chamar esse método, de definido o nome do arquivo e o fluxo chamando [**IMediaDet::p ut \_ Filename**](imediadet-put-filename.md) e [**IMediaDet::p ut \_ CurrentStream.**](imediadet-put-currentstream.md)
 
-Se o detector de mídia estiver no modo de captura de bitmap, esse método retornará E \_ INVALIDARG. Para obter mais informações, consulte [**IMediaDet:: EnterBitmapGrabMode**](imediadet-enterbitmapgrabmode.md).
+Se o detector de mídia estiver no modo de captura de bitmap, esse método retornará E \_ INVALIDARG. Para obter mais informações, [**consulte IMediaDet::EnterBitmapGrabMode.**](imediadet-enterbitmapgrabmode.md)
 
 > [!Note]  
-> O arquivo de cabeçalho QEdit. h não é compatível com cabeçalhos do Direct3D posteriores à versão 7.
+> O arquivo de título Qedit.h não é compatível com os headers direct3D posteriores à versão 7.
 
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> Para obter o Qedit.h, baixe [o Microsoft Windows SDK Update para Windows Vista e .NET Framework 3.0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O Qedit.h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3.5 Service Pack 1.
 
  
 
@@ -78,8 +78,8 @@ Se o detector de mídia estiver no modo de captura de bitmap, esse método retor
 
 | Requisito | Valor |
 |--------------------|-----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>QEdit. h</dt> </dl>      |
-| Biblioteca<br/> | <dl> <dt>Strmiids. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Qedit.h</dt> </dl>      |
+| Biblioteca<br/> | <dl> <dt>Strmiids.lib</dt> </dl> |
 
 
 
@@ -87,7 +87,7 @@ Se o detector de mídia estiver no modo de captura de bitmap, esse método retor
 
 <dl> <dt>
 
-[**Interface IMediaDet**](imediadet.md)
+[**IMediaDet Interface**](imediadet.md)
 </dt> <dt>
 
 [Códigos de erro e êxito](error-and-success-codes.md)

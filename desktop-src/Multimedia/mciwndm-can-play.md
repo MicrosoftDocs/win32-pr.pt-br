@@ -1,9 +1,9 @@
 ---
-title: Mensagem de MCIWNDM_CAN_PLAY (VFW. h)
-description: O MCIWNDM \_ pode \_ reproduzir a mensagem para determinar se um dispositivo MCI pode reproduzir um arquivo de dados ou conteúdo de algum outro tipo. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndCanPlay.
+title: MCIWNDM_CAN_PLAY mensagem (Vfw.h)
+description: A mensagem MCIWNDM CAN PLAY determina se um dispositivo MCI pode reproduzir um arquivo de dados ou \_ conteúdo de algum outro \_ tipo. Você pode enviar essa mensagem explicitamente ou usando a macro MCIWndCanPlay.
 ms.assetid: dbb742b0-b8ab-4b80-96da-c4823a4747c9
 keywords:
-- Multimídia do Windows de mensagem MCIWNDM_CAN_PLAY
+- MCIWNDM_CAN_PLAY mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 043a0fc15260f7448df8d009a6b468616244269d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 84d067b01dbce8aaab7c78ab24c3d11fc5d4a3a19b9bfdb663eb653ebc0c553c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105757771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118374238"
 ---
-# <a name="mciwndm_can_play-message"></a>MCIWNDM \_ pode \_ reproduzir a mensagem
+# <a name="mciwndm_can_play-message"></a>Mensagem MCIWNDM \_ CAN \_ PLAY
 
-O **MCIWNDM \_ pode \_ reproduzir** a mensagem para determinar se um dispositivo MCI pode reproduzir um arquivo de dados ou conteúdo de algum outro tipo. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndCanPlay**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanplay) .
+A **mensagem MCIWNDM \_ CAN \_ PLAY** determina se um dispositivo MCI pode reproduzir um arquivo de dados ou conteúdo de algum outro tipo. Você pode enviar essa mensagem explicitamente ou usando a macro [**MCIWndCanPlay.**](/windows/desktop/api/Vfw/nf-vfw-mciwndcanplay)
 
 
 ```C++
@@ -36,7 +36,7 @@ lParam = 0;
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará **true** se o dispositivo der suporte à reprodução dos dados ou **false** caso contrário.
+Retornará **TRUE se** o dispositivo for compatível com a reprodução dos dados ou **false** caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -46,7 +46,7 @@ Retornará **true** se o dispositivo der suporte à reprodução dos dados ou **
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 

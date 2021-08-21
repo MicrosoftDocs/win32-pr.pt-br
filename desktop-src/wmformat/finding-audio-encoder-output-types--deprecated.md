@@ -1,9 +1,9 @@
 ---
-title: Localizando tipos de saída do codificador de áudio (SDK do Windows Media Format 11)
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Localizando tipos de saída do codificador de áudio (SDK do Windows Media Format 11)
+title: Localizar tipos de saída do codificador de áudio (Windows formato de mídia 11 SDK)
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Localizar tipos de saída do codificador de áudio (Windows SDK de formato de mídia 11)
 ms.assetid: 79ac9d15-6e0d-449a-b780-cf2c1c0d1254
 keywords:
-- Localizando tipos de saída do codificador de áudio formato de mídia do Windows
+- Localizar tipos de saída do codificador de áudio windows Media Format
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7d193a5b9b71ae9b3154d3a4cf26bc0d7afe6b36
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ec92a454fc669dd9e5f51524d27b1d3827d5444736f0a1e7279849e64b19aa4d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118029040"
 ---
-# <a name="finding-audio-encoder-output-types-windows-media-format-11-sdk"></a>Localizando tipos de saída do codificador de áudio (SDK do Windows Media Format 11)
+# <a name="finding-audio-encoder-output-types-windows-media-format-11-sdk"></a>Localizar tipos de saída do codificador de áudio (Windows formato de mídia 11 SDK)
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows Codec de Áudio e Vídeo de Mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

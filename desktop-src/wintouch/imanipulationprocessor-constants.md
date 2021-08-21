@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2a686ae35f5b57a977ec77196dd3cf77bed48ef1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 2070615cbd40708c6cf818bf8f7b5324d55454491cd4afd469780de7976f1713
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824370"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118199474"
 ---
 # <a name="constants-manipulationsh"></a>Constantes (manipulações. h)
 
@@ -72,9 +72,9 @@ Indica o valor para manipulações em que o valor de retorno não é um número.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                      |
-| parâmetro<br/>                   | <dl> <dt>Manipulações. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>                                                   |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/>                                      |
+| Cabeçalho<br/>                   | <dl> <dt>Manipulações. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>Manipulações. idl</dt> </dl> |
 
 

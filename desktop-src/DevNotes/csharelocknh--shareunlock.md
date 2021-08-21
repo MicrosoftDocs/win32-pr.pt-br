@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Rwnh.dll
-ms.openlocfilehash: 80c4311f4bf66000440dac38da6300888a8e5d59
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2bf59b6e1aa0f6718cece105007a8ba502291c23868aca6ec55283dd7292f8b8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118162181"
 ---
 # <a name="csharelocknhshareunlock-method"></a>Método CShareLockNH:: ShareUnlock
 
@@ -37,7 +37,7 @@ void ShareUnlock();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 

@@ -1,9 +1,9 @@
 ---
-title: EC_WMT_EVENT (SDK do Windows Media Format 11)
+title: EC_WMT_EVENT (SDK do formato de mídia 11 Windows)
 description: '\_evento de WMT do EC \_'
 ms.assetid: 51d51659-8e7d-49b7-83f2-a80e99d39d78
 keywords:
-- SDK do Windows Media Format, EC_WMT_EVENT
+- Windows SDK do formato de mídia, EC_WMT_EVENT
 - DirectShow, EC_WMT_EVENT
 - EC_WMT_EVENT
 - DRM (gerenciamento de direitos digitais), EC_WMT_EVENT
@@ -12,16 +12,16 @@ keywords:
 - ASF (formato de sistemas avançados), EC_WMT_EVENT
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ebe74baaba676a97e609b4c03cd4db9010bd8f6a
-ms.sourcegitcommit: 8fa6614b715bddf14648cce36d2df22e5232801a
+ms.openlocfilehash: dbe0e53a759515914a352707550e281aca3aebe096f168352c36c1ff4200b2ed
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "104454526"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118029215"
 ---
-# <a name="ec_wmt_event-windows-media-format-11-sdk"></a>EC_WMT_EVENT (SDK do Windows Media Format 11)
+# <a name="ec_wmt_event-windows-media-format-11-sdk"></a>EC_WMT_EVENT (SDK do formato de mídia 11 Windows)
 
-Enviado pelo Windows Media Format SDK quando um aplicativo usa o filtro de leitor de ASF para reproduzir arquivos ASF protegidos pelo DRM (gerenciamento de direitos digitais).
+enviado pelo SDK do formato de mídia Windows quando um aplicativo usa o filtro de leitor de asf para reproduzir arquivos ASF protegidos pelo DRM (gerenciamento de direitos digitais).
 
 Parâmetros
 
@@ -45,7 +45,7 @@ Pode ser um dos seguintes valores de \_ status de WMT.
 
 *lParam2*
 
-Ponteiro para uma estrutura de **\_ \_ \_ dados de evento WMT** que contém informações sobre o evento no ponteiro do membro **pData** , bem como um código de status **HRESULT** enviado pelo Windows Media Format SDK. O valor de *lParam2* depende do valor de *lParam1*, conforme descrito na tabela a seguir. (As estruturas "WM \_ " são definidas no Windows Media Format SDK.)
+ponteiro para uma estrutura de **\_ \_ \_ dados de evento WMT** que contém informações sobre o evento no ponteiro do membro **pData** , bem como um código de status **HRESULT** enviado pelo SDK do formato de mídia Windows. O valor de *lParam2* depende do valor de *lParam1*, conforme descrito na tabela a seguir. (as estruturas "WM \_ " são definidas no SDK do formato de mídia Windows.)
 
 
 
@@ -68,7 +68,7 @@ Ponteiro para uma estrutura de **\_ \_ \_ dados de evento WMT** que contém info
 [**Recursos de Rights Management digital**](digital-rights-management-features.md)
 </dt> <dt>
 
-[**Referência do QASF do DirectShow**](directshow-qasf-reference.md)
+[**DirectShow Referência de QASF**](directshow-qasf-reference.md)
 </dt> <dt>
 
 [**Habilitando o suporte a DRM**](enabling-drm-support.md)

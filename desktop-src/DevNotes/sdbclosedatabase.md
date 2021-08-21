@@ -1,5 +1,5 @@
 ---
-description: Fecha o banco de dados de shims especificado.
+description: Fecha o banco de dados shim especificado.
 ms.assetid: e4480860-8055-4134-b6ed-926c010d462f
 title: Função SdbCloseDatabase
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Apphelp.dll
-ms.openlocfilehash: 376d97b8386f127a945cb118639be1e38ae68737
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 06e7b493d6114b4085dcabcfd5f241413b431daa081c53fd467b100e225f486c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010181"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118161587"
 ---
 # <a name="sdbclosedatabase-function"></a>Função SdbCloseDatabase
 
-Fecha o banco de dados de shims especificado.
+Fecha o banco de dados shim especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,10 +39,10 @@ void WINAPI SdbCloseDatabase(
 
 <dl> <dt>
 
-*PDB* \[ entrada, saída\]
+*pdb* \[ in, out\]
 </dt> <dd>
 
-Um identificador para o banco de dados de Shim. Este parâmetro não pode ser **nulo**.
+Um alça para o banco de dados shim. Esse parâmetro não pode ser **NULL.**
 
 </dd> </dl>
 
@@ -56,8 +56,8 @@ Essa função não retorna um valor.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                   |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                   |
 | DLL<br/>                      | <dl> <dt>Apphelp.dll</dt> </dl> |
 
 

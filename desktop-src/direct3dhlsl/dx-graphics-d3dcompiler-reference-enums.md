@@ -11,12 +11,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: 0df5c590b308ff8dd2992566b7519018bbe3b057
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: db9acf03af6dfee919f452a58dca64f72200646713d16cc426422b2020eb12bf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104366211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118091513"
 ---
 # <a name="enumerations-hlsl-reference"></a>Enumerações (referência de HLSL)
 
@@ -31,7 +31,7 @@ Esta seção contém informações sobre as seguintes enumerações do compilado
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -40,6 +40,6 @@ Esta seção contém informações sobre as seguintes enumerações do compilado
 [Referência de D3DCompiler](dx-graphics-d3dcompiler-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

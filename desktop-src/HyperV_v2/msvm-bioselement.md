@@ -53,12 +53,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d8d36ea50791bf6f1413815583fe1168f564d50d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8433c8fda6d438e4f77fb763be42467aab05ab976927f018e895a30d5f9c6226
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827387"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118149296"
 ---
 # <a name="msvm_bioselement-class"></a>\_Classe bioselement Msvm
 
@@ -353,9 +353,9 @@ Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/deskto
 
 | Valor                                                                                                                                                                                                                                                            | Significado                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>5</dt> </dl>                                                                               | A máquina virtual é totalmente funcional e está operando em parâmetros operacionais normais e sem erros.<br/>                                                                                                                                                                                    |
-| <span id="Major_Failure"></span><span id="major_failure"></span><span id="MAJOR_FAILURE"></span><dl> <dt>**Maior falha**</dt> <dt>20</dt> </dl>             | A máquina virtual sofreu uma falha grave. Esse valor é usado quando um ou mais discos que contêm VHDs da máquina virtual estão com pouco espaço em disco e a máquina virtual foi pausada.<br/>                                                                                                   |
-| <span id="Critical_failure"></span><span id="critical_failure"></span><span id="CRITICAL_FAILURE"></span><dl> <dt>**Falha crítica**</dt> <dt>25</dt> </dl> | O elemento não é funcional e a recuperação pode não ser possível. Isso pode indicar que o processo de trabalho para a máquina virtual (Vmwp.exe) não está respondendo às solicitações de controle ou de informações, ou que um ou mais discos que contêm VHDs para a máquina virtual estão com pouco espaço em disco.<br/> |
+| <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>5</dt> </dl>                                                                               | A máquina virtual é totalmente funcional e está operando dentro de parâmetros operacionais normais e sem erro.<br/>                                                                                                                                                                                    |
+| <span id="Major_Failure"></span><span id="major_failure"></span><span id="MAJOR_FAILURE"></span><dl> <dt>**Falha principal**</dt> <dt>20</dt> </dl>             | A máquina virtual sofreu uma falha grave. Esse valor é usado quando um ou mais discos que contêm VHDs da máquina virtual estão com pouco espaço em disco e a máquina virtual foi pausada.<br/>                                                                                                   |
+| <span id="Critical_failure"></span><span id="critical_failure"></span><span id="CRITICAL_FAILURE"></span><dl> <dt>**Falha crítica**</dt> <dt>25</dt> </dl> | O elemento é nãofuncional e a recuperação pode não ser possível. Isso pode indicar que o processo de trabalho da máquina virtual (Vmwp.exe) não está respondendo a solicitações de controle ou informações ou que um ou mais discos que contêm os VHDs da máquina virtual estão com pouco espaço em disco.<br/> |
 
 
 
@@ -372,23 +372,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (64)
+Qualificadores: **MaxLen** (64)
 </dt> </dl>
 
-O identificador do fabricante para este elemento de software. Geralmente, essa será uma SKU (unidade de manutenção de estoque) ou um número de peça. Essa propriedade é herdada de [**CIM \_ softwareelement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como **nula**.
+O identificador do fabricante para esse elemento de software. Geralmente, isso será uma SKU (unidade de manutenção de estoque) ou um número de parte. Essa propriedade é herdada [**de CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Preenchido automaticamente pelo BIOS quando a máquina virtual é criada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Populado automaticamente pelo BIOS quando a máquina virtual é criada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
@@ -401,10 +401,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -417,23 +417,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (32)
+Qualificadores: **MaxLen** (32)
 </dt> </dl>
 
-A edição de idioma deste elemento de software. Essa propriedade é herdada de [**CIM \_ softwareelement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como **nula**.
+A edição de linguagem deste elemento de software. Essa propriedade é herdada [**de CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **ListOfLanguages**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma lista de idiomas instaláveis para o BIOS. Essa propriedade é herdada de [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como "en \| US \| ISO8859-1".
+Uma lista de idiomas instaláveis para o BIOS. Essa propriedade é herdada [**de CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como "en \| US \| iso8859-1".
 
 </dd> <dt>
 
@@ -446,7 +446,7 @@ Tipo de dados: **unit64**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O endereço final da memória que este BIOS ocupa. Essa propriedade é herdada do [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como 0xFFFFF.
+O endereço final da memória que esse BIOS ocupa. Essa propriedade é herdada [**de CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e sempre é definida como 0xFFFFF.
 
 </dd> <dt>
 
@@ -459,7 +459,7 @@ Tipo de dados: **unit64**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O endereço inicial da memória que este BIOS ocupa. Essa propriedade é herdada do [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como 0xE0000.
+O endereço inicial da memória que esse BIOS ocupa. Essa propriedade é herdada [**de CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e sempre é definida como 0xE0000.
 
 </dd> <dt>
 
@@ -472,11 +472,11 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma cadeia de caracteres que descreve o Utilitário Flash/Load do BIOS que é necessário para atualizar o elemento BIOS. A versão e outras informações podem ser indicadas nesta propriedade. Essa propriedade é herdada do [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como **NULL**.
+Uma cadeia de caracteres que descreve o utilitário de flash/carga do BIOS necessário para atualizar o elemento BIOS. A versão e outras informações podem ser indicadas nesta propriedade. Essa propriedade é herdada [**de CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como **Null.**
 
 </dd> <dt>
 
-**Manufacturer**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -485,10 +485,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (256)
+Qualificadores: **MaxLen** (256)
 </dt> </dl>
 
-O fabricante deste BIOS. Essa propriedade é herdada do [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como "Microsoft Corporation".
+O fabricante desse BIOS. Essa propriedade é herdada [**de CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e sempre é definida como "Microsoft Corporation".
 
 </dd> <dt>
 
@@ -501,53 +501,53 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (1024)
+Qualificadores: **MaxLen** (1024)
 </dt> </dl>
 
-O nome usado para identificar este elemento de software. Quando em uma subclasse, essa propriedade pode ser substituída como uma propriedade de chave. Essa propriedade é herdada de [**CIM \_ softwareelement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como "BIOS".
+O nome usado para identificar esse elemento de software. Quando subclasse, essa propriedade pode ser substituído para ser uma propriedade de chave. Essa propriedade é herdada [**de CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como "BIOS".
 
 </dd> <dt>
 
 **OperatingStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da propriedade **enabledstate** . Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status atuais para a condição operacional do elemento e pode ser usado para fornecer mais detalhes em relação ao valor da **propriedade EnabledState.** Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **OperationalStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: a matriz **UInt16**
+Tipo de dados: **matriz uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma matriz que contém os status atuais do objeto. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement). O valor no índice zero (0) é um dos valores a seguir.
+Uma matriz que contém os status atuais do objeto . Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement) O valor no índice zero (0) é um dos valores a seguir.
 
 
 
 | Valor                                                                                                                                                                                                                                                                   | Significado                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span id="OK"></span><span id="ok"></span><dl> <dt>**OK**</dt> <dt>2</dt> </dl>                                                                                      | A máquina virtual está funcional e funcionando normalmente.<br/>                                                                                                                                                                                              |
-| <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt>**Degradado**</dt> <dt>3</dt> </dl>                                         | A máquina virtual só está parcialmente funcional. Isso indica que o armazenamento que contém a configuração não está acessível. Uma máquina virtual nesse estado só pode ser desativada ou excluída. <br/>                                               |
-| <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span><dl> <dt>**Falha preditiva**</dt> <dt>5</dt> </dl> | A máquina virtual é funcional, mas pode falhar no futuro. Isso indica que o armazenamento que contém o disco rígido virtual da máquina virtual está com pouco espaço livre. A máquina virtual será pausada se mais espaço em disco não for disponibilizado.<br/> |
-| <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span><dl> <dt>**Parado**</dt> <dt>10</dt> </dl>                                            | Não há suporte para esse valor. Se a máquina virtual for interrompida, a propriedade **enabledstate** terá um valor de 3 (desabilitado).<br/>                                                                                                                       |
-| <span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span><dl> <dt>**No serviço**</dt> <dt>11</dt> </dl>                                | A máquina virtual está processando uma solicitação.<br/>                                                                                                                                                                                                           |
-| <span id="Dormant"></span><span id="dormant"></span><span id="DORMANT"></span><dl> <dt>15</dt> <dt>**inativos**</dt> </dl>                                            | Não há suporte para esse valor. Se a máquina virtual for suspensa ou pausada, a propriedade **enabledstate** terá um valor de 32769 (suspenso) ou 32768 (em pausa).<br/>                                                                                    |
+| <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span><dl> <dt>**Degradado**</dt> <dt>3</dt> </dl>                                         | A máquina virtual só é parcialmente funcional. Isso indica que o armazenamento que contém a configuração não está acessível. Uma máquina virtual nesse estado só pode ser desligada ou excluída. <br/>                                               |
+| <span id="Predictive_Failure"></span><span id="predictive_failure"></span><span id="PREDICTIVE_FAILURE"></span><dl> <dt>**Falha preditiva**</dt> <dt>5</dt> </dl> | A máquina virtual é funcional, mas pode falhar no futuro. Isso indica que o armazenamento que contém o disco rígido virtual da máquina virtual tem pouco espaço livre. A máquina virtual será pausada se mais espaço em disco não for disponibilizado.<br/> |
+| <span id="Stopped"></span><span id="stopped"></span><span id="STOPPED"></span><dl> <dt>**10**</dt> <dt>interrompido</dt> </dl>                                            | Não há suporte para esse valor. Se a máquina virtual for interrompida, a **propriedade EnabledState** terá um valor de 3 (Desabilitado).<br/>                                                                                                                       |
+| <span id="In_Service"></span><span id="in_service"></span><span id="IN_SERVICE"></span><dl> <dt>**No Serviço**</dt> <dt>11</dt> </dl>                                | A máquina virtual está processando uma solicitação.<br/>                                                                                                                                                                                                           |
+| <span id="Dormant"></span><span id="dormant"></span><span id="DORMANT"></span><dl> <dt>**Inativo**</dt> <dt>15</dt> </dl>                                            | Não há suporte para esse valor. Se a máquina virtual estiver suspensa ou em pausa, a propriedade **EnabledState** terá um valor de 32769 (Suspenso) ou 32768 (Pausado).<br/>                                                                                    |
 
 
 
  
 
-O valor no índice one (1) é opcional e contém informações de status secundárias. Um cliente deve usar o status principal do índice zero (0) para determinar se uma nova solicitação pode ser emitida para a máquina virtual. Se **OperationalStatus** \[ 0 \] for 2 (OK), a operação indicada por **OperationalStatus** \[ 1 \] poderá ser interrompida.
+O valor no índice um (1) é opcional e contém informações de status secundário. Um cliente deve usar o status primário do índice zero (0) para determinar se uma nova solicitação pode ser emitida para a máquina virtual. Se **OperationalStatus** 0 for 2 (OK), a operação indicada por \[ \] **OperationalStatus** \[ 1 poderá ser \] interrompida.
 
 O valor em **OperationalStatus** \[ 1 \] é um dos valores a seguir.
 
@@ -555,13 +555,13 @@ O valor em **OperationalStatus** \[ 1 \] é um dos valores a seguir.
 
 | Valor                                                                                                                                                                                                                                                                                                   | Significado                                                                                       |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| <span id="Creating_Snapshot"></span><span id="creating_snapshot"></span><span id="CREATING_SNAPSHOT"></span><dl> <dt>**Criando o instantâneo**</dt> <dt>32768</dt> </dl>                                 | Um instantâneo está em processo de criação para a máquina virtual.<br/>             |
-| <span id="Applying_Snapshot"></span><span id="applying_snapshot"></span><span id="APPLYING_SNAPSHOT"></span><dl> <dt>**Aplicando o instantâneo**</dt> <dt>32769</dt> </dl>                                 | Um instantâneo está no processo de ser aplicado à máquina virtual.<br/>              |
-| <span id="Deleting_Snapshot"></span><span id="deleting_snapshot"></span><span id="DELETING_SNAPSHOT"></span><dl> <dt>**Excluindo o instantâneo**</dt> <dt>32770</dt> </dl>                                 | Um instantâneo está no processo de ser excluído da máquina virtual.<br/>            |
-| <span id="Waiting_to_Start"></span><span id="waiting_to_start"></span><span id="WAITING_TO_START"></span><dl> <dt>**Aguardando para iniciar**</dt> o <dt>32771</dt> </dl>                                     | A máquina virtual será iniciada depois que o atraso de inicialização automática tiver decorrido.<br/> |
-| <span id="Merging_Disks"></span><span id="merging_disks"></span><span id="MERGING_DISKS"></span><dl> <dt>**Mesclando discos**</dt> <dt>32772</dt> </dl>                                                 | Os discos rígidos virtuais dos instantâneos excluídos anteriormente estão sendo mesclados.<br/>             |
-| <span id="Exporting_Virtual_Machine"></span><span id="exporting_virtual_machine"></span><span id="EXPORTING_VIRTUAL_MACHINE"></span><dl> <dt>**Exportando a máquina Virtual**</dt> <dt>32773</dt> </dl> | A máquina virtual está sendo exportada.<br/>                                             |
-| <span id="Migrating_Virtual_Machine"></span><span id="migrating_virtual_machine"></span><span id="MIGRATING_VIRTUAL_MACHINE"></span><dl> <dt>**Migrando a máquina Virtual**</dt> <dt>32774</dt> </dl> | A máquina virtual está sendo migrada ao vivo de um computador físico para outro.<br/>  |
+| <span id="Creating_Snapshot"></span><span id="creating_snapshot"></span><span id="CREATING_SNAPSHOT"></span><dl> <dt>**Criando o instantâneo**</dt> <dt>32768</dt> </dl>                                 | Um instantâneo está no processo de ser criado para a máquina virtual.<br/>             |
+| <span id="Applying_Snapshot"></span><span id="applying_snapshot"></span><span id="APPLYING_SNAPSHOT"></span><dl> <dt>**Aplicando o instantâneo**</dt> <dt>32769</dt> </dl>                                 | Um instantâneo está em processo de ser aplicado à máquina virtual.<br/>              |
+| <span id="Deleting_Snapshot"></span><span id="deleting_snapshot"></span><span id="DELETING_SNAPSHOT"></span><dl> <dt>**Excluindo o instantâneo**</dt> <dt>32770</dt> </dl>                                 | Um instantâneo está no processo de exclusão da máquina virtual.<br/>            |
+| <span id="Waiting_to_Start"></span><span id="waiting_to_start"></span><span id="WAITING_TO_START"></span><dl> <dt>**Aguardando o início**</dt> <dt>32771</dt> </dl>                                     | A máquina virtual será iniciada depois que o atraso automático de inicialização tiver decorrido.<br/> |
+| <span id="Merging_Disks"></span><span id="merging_disks"></span><span id="MERGING_DISKS"></span><dl> <dt>**Mesclando discos**</dt> <dt>32772</dt> </dl>                                                 | Discos rígidos virtuais de instantâneos excluídos anteriormente estão sendo mesclados.<br/>             |
+| <span id="Exporting_Virtual_Machine"></span><span id="exporting_virtual_machine"></span><span id="EXPORTING_VIRTUAL_MACHINE"></span><dl> <dt>**Exportando a Máquina Virtual**</dt> <dt>32773</dt> </dl> | A máquina virtual está sendo exportada.<br/>                                             |
+| <span id="Migrating_Virtual_Machine"></span><span id="migrating_virtual_machine"></span><span id="MIGRATING_VIRTUAL_MACHINE"></span><dl> <dt>**Migrando a Máquina Virtual**</dt> <dt>32774</dt> </dl> | A máquina virtual está sendo migrada ao vivo de um computador físico para outro.<br/>  |
 
 
 
@@ -578,66 +578,66 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (64)
+Qualificadores: **MaxLen** (64)
 </dt> </dl>
 
-O fabricante e o sistema operacional de um elemento de software quando a propriedade **TargetOperatingSystem** tem um valor de 1 (outro), que exige que a propriedade **OtherTargetOS** tenha um valor não **nulo** . Para todos os outros valores de **TargetOperatingSystem**, a propriedade **OtherTargetOS** deve ser **NULL**. Essa propriedade é herdada de [**CIM \_ softwareelement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como **nula**.
+O fabricante e o sistema operacional de um elemento de software quando a propriedade **TargetOperatingSystem** tem um valor de 1 (Outro), que exige que a propriedade **OtherTargetOS** tenha um valor não **Nulo.** Para todos os outros valores de **TargetOperatingSystem**, a **propriedade OtherTargetOS** deve ser **Null.** Essa propriedade é herdada [**de CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como **Null.**
 
 </dd> <dt>
 
 **PrimaryBIOS**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for true, esse é o BIOS primário do sistema de computador. Essa propriedade é herdada de [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como **true**.
+Se True, esse é o BIOS primário do sistema de computador. Essa propriedade é herdada [**de CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como **True.**
 
 </dd> <dt>
 
 **PrimaryStatus**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer informações de status de integridade detalhadas e de alto nível para o elemento e seus subcomponentes. Um valor **nulo** indica que essa propriedade não está implementada. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Fornece informações de status de alto nível. Essa propriedade deve ser usada em conjunto com a propriedade **DetailedStatus** para fornecer informações de status de saúde detalhadas e de alto nível para o elemento e seus subcomponentes. Um **valor** Nulo indica que essa propriedade não está implementada. Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **RegistryURIs**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma matriz de cadeias de caracteres que representa o local de publicação do registro de atributo do BIOS ou registros em conformidade com a implementação. Essa propriedade é herdada do [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement).
+Uma matriz de cadeias de caracteres que representa o local de publicação do registro de atributo BIOS ou registra a implementação em conformidade. Essa propriedade é herdada de [**CIM \_ BIOSElement.**](/windows/desktop/CIMWin32Prov/cim-bioselement)
 
 </dd> <dt>
 
-**Liberado**
+**Releasedate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data em que o BIOS foi lançado. Essa propriedade é herdada do [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement).
+A data em que o BIOS foi lançado. Essa propriedade é herdada de [**CIM \_ BIOSElement.**](/windows/desktop/CIMWin32Prov/cim-bioselement)
 
 </dd> <dt>
 
-**SerialNumber**
+**Serialnumber**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -646,10 +646,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (64)
+Qualificadores: **MaxLen** (64)
 </dt> </dl>
 
-O número de série atribuído do BIOS. Essa propriedade é herdada de [**CIM \_ softwareelement**](/windows/desktop/CIMWin32Prov/cim-softwareelement).
+O número de série atribuído do BIOS. Essa propriedade é herdada de [**CIM \_ SoftwareElement.**](/windows/desktop/CIMWin32Prov/cim-softwareelement)
 
 </dd> <dt>
 
@@ -662,23 +662,23 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (256)
+Qualificadores: **MaxLen** (256)
 </dt> </dl>
 
-Um identificador para o elemento de software. Essa propriedade é herdada de [**CIM \_ softwareelement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como "Microsoft:*GUID* \\ *específico de dispositivo-dados*".
+Um identificador para o elemento de software. Essa propriedade é herdada [**do CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e sempre é definida como "Microsoft: dados \\ *específicos do dispositivo GUID".*
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O estado do ciclo de vida de um elemento de software. Essa propriedade é herdada de [**CIM \_ softwareelement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como 2 (executável).
+O estado do ciclo de vida de um elemento de software. Essa propriedade é herdada [**de CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como 2 (executável).
 
 </dd> <dt>
 
@@ -691,36 +691,36 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement), mas não é usada.
+Essa propriedade é herdada [**de CIM \_ ManagedSystemElement,**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)mas não é usada.
 
 </dd> <dt>
 
 **StatusDescriptions**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **ArrayType** ("indexado")
+Qualificadores: **ArrayType** ("Indexado")
 </dt> </dl>
 
-Uma matriz que contém cadeias de caracteres que descrevem os valores correspondentes da matriz **OperationalStatus** . Por exemplo, se 11 (em serviço) for o valor atribuído a **OperationalStatus** \[ 0 \] , **StatusDescriptions** \[ 0 \] poderá conter uma explicação sobre o motivo pelo qual a máquina virtual está processando uma solicitação. Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement).
+Uma matriz que contém cadeias de caracteres que descrevem os valores de **matriz OperationalStatus** correspondentes. Por exemplo, se 11 (em serviço) for o valor atribuído a **OperationalStatus** \[ 0 \] , **StatusDescriptions** 0 poderá conter uma explicação sobre por que a máquina virtual está processando uma \[ solicitação. \] Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](/windows/desktop/CIMWin32Prov/cim-managedsystemelement)
 
 </dd> <dt>
 
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O ambiente do sistema operacional do elemento. Essa propriedade é herdada de [**CIM \_ softwareelement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e é sempre definida como 0 (desconhecido).
+O ambiente do sistema operacional do elemento. Essa propriedade é herdada [**de CIM \_ SoftwareElement**](/windows/desktop/CIMWin32Prov/cim-softwareelement)e sempre é definida como 0 (Desconhecido).
 
 </dd> <dt>
 
@@ -733,16 +733,16 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **maxlen** (64)
+Qualificadores: **MaxLen** (64)
 </dt> </dl>
 
-A versão do BIOS. Essa propriedade é herdada do [**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como "8.02.00".
+A versão do BIOS. Essa propriedade é herdada [**de CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)e é sempre definida como "8.02.00".
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O acesso à **classe \_ bioselement Msvm** pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à **classe Msvm \_ BIOSElement** pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -750,10 +750,10 @@ O acesso à **classe \_ bioselement Msvm** pode ser restringido pela filtragem d
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -762,13 +762,13 @@ O acesso à **classe \_ bioselement Msvm** pode ser restringido pela filtragem d
 
 <dl> <dt>
 
-[**CIM \_ bioselement**](cim-bioselement.md)
+[**CIM \_ BIOSElement**](cim-bioselement.md)
 </dt> <dt>
 
-[Classes do BIOS](bios-classes.md)
+[BIOS Classes](bios-classes.md)
 </dt> <dt>
 
-[**CIM \_ bioselement**](/windows/desktop/CIMWin32Prov/cim-bioselement)
+[**CIM \_ BIOSElement**](/windows/desktop/CIMWin32Prov/cim-bioselement)
 </dt> </dl>
 
  

@@ -1,11 +1,11 @@
 ---
-title: Método playlistcollection. getAll
-description: O método getAll recupera um objeto PlaylistArray que contém todas as listas de reprodução na biblioteca.
+title: Método PlaylistCollection.getAll
+description: O método getAll recupera um objeto PlaylistArray que contém todas as playlists na biblioteca.
 ms.assetid: ec3cb7d7-9c03-4dec-a0aa-ec8bf23547a5
 keywords:
-- método getAll Windows Media Player
-- método getAll Windows Media Player, classe Playlistcollection
-- Classe playlistcollection Windows Media Player, método getAll
+- Método getAll Windows Media Player
+- Método getAll Windows Media Player , classe PlaylistCollection
+- Classe PlaylistCollection Windows Media Player método , getAll
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: eb3c947b774093f83d6ef627a3ddc9f08381d971
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d662c86385bb948684cab0abba161fc70b2f502442cc4d9c093bdd148a2320b1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105771294"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118334954"
 ---
-# <a name="playlistcollectiongetall-method"></a>Método playlistcollection. getAll
+# <a name="playlistcollectiongetall-method"></a>Método PlaylistCollection.getAll
 
-O método **getAll** recupera um objeto **PlaylistArray** que contém todas as listas de reprodução na biblioteca.
+O **método getAll** recupera um **objeto PlaylistArray** que contém todas as playlists na biblioteca.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ retVal = PlaylistCollection.getAll()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um objeto **PlaylistArray** .
+Esse método retorna um **objeto PlaylistArray.**
 
 ## <a name="remarks"></a>Comentários
 
-Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [acesso à biblioteca](library-access.md).
+Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para obter mais informações, consulte [Acesso à biblioteca.](library-access.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 
@@ -66,13 +66,13 @@ Para usar esse método, é necessário ter acesso de leitura à biblioteca. Para
 [**Objeto PlaylistArray**](playlistarray-object.md)
 </dt> <dt>
 
-[**Objeto playlistcollection**](playlistcollection-object.md)
+[**Objeto PlaylistCollection**](playlistcollection-object.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações.mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações.requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

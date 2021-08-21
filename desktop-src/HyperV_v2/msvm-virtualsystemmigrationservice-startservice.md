@@ -1,7 +1,7 @@
 ---
-description: Método StartService da classe Msvm_VirtualSystemMigrationService – inicia o serviço.
+description: Método StartService da classe Msvm_VirtualSystemMigrationService - Inicia o serviço.
 ms.assetid: 2803cc6f-64ea-4502-ae5a-075bdd3f8c96
-title: Método StartService da classe Msvm_VirtualSystemMigrationService
+title: Método StartService da Msvm_VirtualSystemMigrationService classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 7bdd457e545c8a443952bc8fdaa08dedb1db478b
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: f88db5a78044d4382ad4daf1c154fb29b5dd88fe956847dede88bc3d64bcc8e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118624"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146445"
 ---
 # <a name="startservice-method-of-the-msvm_virtualsystemmigrationservice-class"></a>Método StartService da classe Msvm \_ VirtualSystemMigrationService
 
@@ -57,13 +57,13 @@ Esse método retorna um dos seguintes valores:
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -3,19 +3,19 @@ title: Elemento de botão
 description: Elemento de botão
 ms.assetid: 4756c016-3347-4129-be5e-e822270a24de
 keywords:
-- Capas do Windows Media Player, elemento de botão
+- Windows Media Player capas, elemento de botão
 - capas, elemento de botão
 - Elemento de botão
 - referência de capas, elemento de botão
 - elementos, um botão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a4de489e779b5e20214778b56fd8d19c7627e444
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6021d29322b98fe4cea96a67998aaf82fbd11e1abe397578a9b0f8999179ee1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104084117"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118120032"
 ---
 # <a name="buttongroup-element"></a>Elemento de botão
 
@@ -43,7 +43,7 @@ O elemento **Button** dá suporte aos seguintes atributos.
 
 
 
- 
+ 
 
 O elemento **Button** dá suporte aos métodos a seguir.
 
@@ -56,7 +56,7 @@ O elemento **Button** dá suporte aos métodos a seguir.
 
 
 
- 
+ 
 
 O elemento de **botão** é compatível com os atributos de ambiente e pode implementar os manipuladores de eventos de ambiente. Para obter mais informações, consulte [atributos de ambiente](ambient-attributes.md) e [manipuladores de eventos de ambiente](ambient-event-handlers.md).
 
@@ -67,9 +67,9 @@ O elemento de **botão** é compatível com os atributos de ambiente e pode impl
 [**Referência de programação de capa**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

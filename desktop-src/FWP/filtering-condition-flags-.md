@@ -1,6 +1,6 @@
 ---
 title: Filtrando sinalizadores de condição (Fwptypes. h)
-description: Os sinalizadores de condição de filtragem da WFP (Windows Filtering Platform) são representados por um campo de bits.
+description: os sinalizadores de condição de filtragem da WFP (plataforma de filtragem Windows) são representados por um campo de bits.
 ms.assetid: fe879479-331d-42ef-ac2f-634f0c13c21d
 topic_type:
 - apiref
@@ -51,16 +51,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c88fa56f37332d52ed31f5ef042c5064a82ac4d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 5a43ae080a9ef1c17baa262cc1154f9ae89a837f0ec6f6919d80c22376f3b995
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103645062"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118150889"
 ---
 # <a name="filtering-condition-flags"></a>Filtrando sinalizadores de condição
 
-Os sinalizadores de condição de filtragem da WFP (Windows Filtering Platform) são representados por um campo de bits.
+os sinalizadores de condição de filtragem da WFP (plataforma de filtragem Windows) são representados por um campo de bits.
 
 Esses sinalizadores e as camadas de filtragem em que podem ser usados são definidos da seguinte maneira.
 
@@ -81,32 +81,32 @@ Filtrando camadas:
 -   \_Transporte de saída da camada FWPM \_ \_ \_ V {4 \| 6}
 -   Fluxo da camada de FWPM \_ \_ \_ {v4 \| 6}
     > [!Note]  
-    > Disponível apenas no Windows Server 2008, Windows Vista com SP1 e posterior.
+    > disponível somente no Windows Server 2008, Windows Vista com SP1 e posterior.
 
      
 
 -   \_Erro de ICMP de entrada na camada FWPM \_ \_ \_ \_ V {4 \| 6}
     > [!Note]  
-    > Disponível apenas no Windows Server 2008, Windows Vista com SP1 e posterior.
+    > disponível somente no Windows Server 2008, Windows Vista com SP1 e posterior.
 
      
 
 -   Erro de ICMP de saída de camada de FWPM \_ \_ \_ \_ \_ V {4 \| 6}
     > [!Note]  
-    > Disponível apenas no Windows Server 2008, Windows Vista com SP1 e posterior.
+    > disponível somente no Windows Server 2008, Windows Vista com SP1 e posterior.
 
      
 
 -   \_Aceitação da autenticação Ale de camada FWPM de \_ \_ \_ recebimento \_ \_ V {4 \| 6}
 -   \_Conexão de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
     > [!Note]  
-    > Disponível apenas no Windows Server 2008, Windows Vista com SP1 e posterior.
+    > disponível somente no Windows Server 2008, Windows Vista com SP1 e posterior.
 
      
 
 -   O \_ fluxo Ale da camada FWPM foi \_ \_ \_ estabelecido \_ V {4 \| 6}
     > [!Note]  
-    > Disponível apenas no Windows Server 2008, Windows Vista com SP1 e posterior.
+    > disponível somente no Windows Server 2008, Windows Vista com SP1 e posterior.
 
      
 
@@ -170,19 +170,19 @@ Filtrando camadas:
 
 -   \_Transporte de entrada da camada FWPM \_ \_ \_ V {4 \| 6}
     > [!Note]  
-    > Disponível apenas no Windows Server 2008, Windows Vista com SP1 e posterior.
+    > disponível somente no Windows Server 2008, Windows Vista com SP1 e posterior.
 
      
 
 -   \_Transporte de saída da camada FWPM \_ \_ \_ V {4 \| 6}
     > [!Note]  
-    > Disponível apenas no Windows Server 2008, Windows Vista com SP1 e posterior.
+    > disponível somente no Windows Server 2008, Windows Vista com SP1 e posterior.
 
      
 
 -   \_Dados de \_ datagrama de camada FWPM \_ \_ {v4 \| 6}
     > [!Note]  
-    > Disponível apenas no Windows Server 2008, Windows Vista com SP1 e posterior.
+    > disponível somente no Windows Server 2008, Windows Vista com SP1 e posterior.
 
      
 
@@ -247,9 +247,9 @@ Indica que o pacote será reclassificado na camada de recepção/aceitação ALE
 
 
 
-Testa se o Windows Sockets está executando uma ligação implícita.
+testa se Windows soquetes está executando uma associação implícita.
 
-Disponível apenas no Windows Vista e no Windows Server 2008.
+disponível somente no Windows Vista e no Windows Server 2008.
 
 
 </dt> </dl> </dd> <dt>
@@ -262,7 +262,7 @@ Disponível apenas no Windows Vista e no Windows Server 2008.
 Testa se o pacote foi remontado.
 
 > [!Note]  
-> Disponível apenas no Windows Server 2008, Windows Vista com SP1 e posterior.
+> disponível somente no Windows Server 2008, Windows Vista com SP1 e posterior.
 
  
 
@@ -281,7 +281,7 @@ Camada de filtragem:
 Testa se o nome do computador par ao qual o aplicativo está esperando se conectar foi recebido por meio de uma API como [**WSASetSocketPeerTargetName**](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-wsasetsocketpeertargetname) e não obtido por meio da heurística de cache.
 
 > [!Note]  
-> Disponível apenas no Windows Server 2008 R2, Windows 7 e posterior.
+> disponível somente no Windows Server 2008 R2, Windows 7 e posterior.
 
  
 
@@ -310,7 +310,7 @@ Reservado.
 Testa se a conexão é autenticada de ponta a ponta, mesmo que os pacotes individuais não tenham sido verificados.
 
 > [!Note]  
-> Disponível apenas no Windows Server 2008 R2, Windows 7 e posterior.
+> disponível somente no Windows Server 2008 R2, Windows 7 e posterior.
 
  
 
@@ -330,7 +330,7 @@ Camada de filtragem:
 Testa se o mecanismo de filtragem está reclassificando uma associação ou solicitação de escuta anterior.
 
 > [!Note]  
-> Disponível apenas no Windows Server 2008 R2, Windows 7 e posterior.
+> disponível somente no Windows Server 2008 R2, Windows 7 e posterior.
 
  
 
@@ -350,7 +350,7 @@ Camada de filtragem:
 Testa se a conexão usa um proxy.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> disponível somente em Windows 8 e Windows Server 2012.
 
  
 
@@ -365,7 +365,7 @@ Testa se a conexão usa um proxy.
 Testa se o tráfego de rede é o tráfego de loopback do contêiner de aplicativo.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> disponível somente em Windows 8 e Windows Server 2012.
 
  
 
@@ -380,14 +380,14 @@ Testa se o tráfego de rede é o tráfego de loopback do contêiner de aplicativ
 Testa se o tráfego de rede é um tráfego de loopback de contêiner não aplicativo.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> disponível somente em Windows 8 e Windows Server 2012.
 
  
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_RESERVED"></span><span id="fwp_condition_flag_is_reserved"></span>**o \_ sinalizador de condição fwp \_ \_ está \_ reservado**
+<span id="FWP_CONDITION_FLAG_IS_RESERVED"></span><span id="fwp_condition_flag_is_reserved"></span>**O SINALIZADOR DE CONDIÇÃO FWP \_ \_ ESTÁ \_ \_ RESERVADO**
 </dt> <dd> <dl> <dt>
 
 
@@ -397,50 +397,50 @@ Reservado.
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_FLAG_IS_HONORING_POLICY_AUTHORIZE"></span><span id="fwp_condition_flag_is_honoring_policy_authorize"></span>**o \_ sinalizador de condição fwp \_ \_ está \_ respeitando a \_ política de \_ autorização**
+<span id="FWP_CONDITION_FLAG_IS_HONORING_POLICY_AUTHORIZE"></span><span id="fwp_condition_flag_is_honoring_policy_authorize"></span>**O SINALIZADOR DE \_ CONDIÇÃO FWP \_ ESTÁ \_ \_ ACANDO A \_ AUTORIZAÇÃO DA \_ POLÍTICA**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que a classificação atual está sendo executada para honrar a intenção de um aplicativo Redirecionado da Windows Store para se conectar a um host especificado. Essa classificação conterá os mesmos valores de campo classificáveis como se o aplicativo nunca fosse Redirecionado. O sinalizador também indica que uma classificação futura será invocada para corresponder ao destino Redirecionado efetivo. Se o aplicativo for Redirecionado para um serviço de proxy para inspeção, isso também significará que uma classificação futura será invocada na conexão de proxy. Os drivers de texto explicativo geralmente devem permitir essa classificação.
+Indica que a classificação atual está sendo executada para manter a intenção de um aplicativo redirecionado Windows Store para se conectar a um host especificado. Essa classificação conterá os mesmos valores de campo classificáveis como se o aplicativo nunca tivesse sido redirecionado. O sinalizador também indica que uma classificação futura será invocada para corresponder ao destino redirecionado efetivo. Se o aplicativo for redirecionado para um serviço proxy para inspeção, isso também significa que uma classificação futura será invocada na conexão de proxy. Os drivers de chamada geralmente devem permitir essa classificação.
 
 > [!Note]  
-> Disponível somente no Windows 8 e no Windows Server 2012.
+> Disponível somente em Windows 8 e Windows Server 2012.
 
  
 
 Camada de filtragem:
 
--   \_Conexão de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> </dl>
 
-Os sinalizadores a seguir especificam o motivo para a Reautorização de uma conexão autorizada anteriormente. Esses sinalizadores e as camadas de filtragem em que podem ser usados são definidos da seguinte maneira.
+Os sinalizadores a seguir especificam o motivo para autorizar uma conexão autorizada anteriormente. Esses sinalizadores e as camadas de filtragem em que podem ser usados são definidos da seguinte forma.
 
 > [!Note]  
-> Essas condições de filtragem estão disponíveis apenas no Windows Server 2008 R2, Windows 7 e posterior.
+> Essas condições de filtragem estão disponíveis somente no Windows Server 2008 R2, Windows 7 e posterior.
 
  
 
 <dl> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_POLICY_CHANGE"></span><span id="fwp_condition_reauthorize_reason_policy_change"></span>**FWP \_ condição de \_ reautorizar \_ alteração de política de motivo \_ \_**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_POLICY_CHANGE"></span><span id="fwp_condition_reauthorize_reason_policy_change"></span>**FWP \_ CONDITION \_ REAUTHORIZE \_ REASON \_ POLICY \_ CHANGE**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que a conexão foi reautorizada devido a filtros sendo adicionados ou removidos.
+Indica que a conexão foi autorizada de acordo com a adoção ou remoção dos filtros.
 
 Camada de filtragem:
 
--   \_Conexão de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Aceitação da autenticação Ale de camada FWPM de \_ \_ \_ recebimento \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_ARRIVAL_INTERFACE"></span><span id="fwp_condition_reauthorize_reason_new_arrival_interface"></span>**FWP \_ condição de \_ reautorizar \_ motivo \_ nova \_ interface de chegada \_**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_ARRIVAL_INTERFACE"></span><span id="fwp_condition_reauthorize_reason_new_arrival_interface"></span>**FWP \_ CONDITION \_ REAUTHORIZE \_ REASON \_ NEW \_ ARRIVAL \_ INTERFACE**
 </dt> <dd> <dl> <dt>
 
 
@@ -449,28 +449,28 @@ Indica que o pacote chegou de uma interface desconhecida.
 
 Camada de filtragem:
 
--   \_Conexão de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Aceitação da autenticação Ale de camada FWPM de \_ \_ \_ recebimento \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_NEXTHOP_INTERFACE"></span><span id="fwp_condition_reauthorize_reason_new_nexthop_interface"></span>**FWP \_ condição de \_ reautorizar \_ motivo \_ nova \_ \_ interface NEXTHOP**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_NEXTHOP_INTERFACE"></span><span id="fwp_condition_reauthorize_reason_new_nexthop_interface"></span>**FWP \_ CONDITION \_ REAUTHORIZE \_ REASON \_ NEW \_ NEXTHOP \_ INTERFACE**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que o pacote será desparte de uma interface desconhecida.
+Indica que o pacote partirá de uma interface desconhecida.
 
 Camada de filtragem:
 
--   \_Conexão de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Aceitação da autenticação Ale de camada FWPM de \_ \_ \_ recebimento \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_PROFILE_CROSSING"></span><span id="fwp_condition_reauthorize_reason_profile_crossing"></span>**FWP \_ condição de \_ Reautorização de \_ perfil de motivo \_ \_ cruzado**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_PROFILE_CROSSING"></span><span id="fwp_condition_reauthorize_reason_profile_crossing"></span>**PASSAGEM DE PERFIL DE MOTIVO \_ \_ DE AUTORIZAÇÃO DE \_ \_ CONDIÇÃO FWP \_**
 </dt> <dd> <dl> <dt>
 
 
@@ -479,43 +479,43 @@ Indica que o pacote passou por interfaces de mais de uma categoria de rede.
 
 Camada de filtragem:
 
--   \_Conexão de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Aceitação da autenticação Ale de camada FWPM de \_ \_ \_ recebimento \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_CLASSIFY_COMPLETION"></span><span id="fwp_condition_reauthorize_reason_classify_completion"></span>**FWP \_ condição de \_ reautorizar \_ motivo \_ classificar \_ conclusão**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_CLASSIFY_COMPLETION"></span><span id="fwp_condition_reauthorize_reason_classify_completion"></span>**FWP \_ CONDITION \_ REAUTHORIZE \_ REASON \_ CLASSIFY \_ COMPLETION**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que uma conexão anteriormente armazenada agora está sendo permitida para ser concluída.
+Indica que uma conexão mantida anteriormente agora está sendo permitida para ser concluída.
 
 Camada de filtragem:
 
--   \_Conexão de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Aceitação da autenticação Ale de camada FWPM de \_ \_ \_ recebimento \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_IPSEC_PROPERTIES_CHANGED"></span><span id="fwp_condition_reauthorize_reason_ipsec_properties_changed"></span>**FWP \_ condição de \_ reautorização do \_ motivo da \_ \_ alteração das propriedades de IPSec \_**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_IPSEC_PROPERTIES_CHANGED"></span><span id="fwp_condition_reauthorize_reason_ipsec_properties_changed"></span>**FWP \_ CONDITION \_ REAUTHORIZE \_ REASON \_ IPSEC \_ PROPERTIES \_ CHANGED**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que as propriedades de IPsec foram alteradas ou que a conexão foi alterada de texto não criptografado para uma conexão segura.
+Indica que as propriedades IPsec foram alteradas ou que a conexão foi alterada de texto não claro para uma conexão segura.
 
 Camada de filtragem:
 
--   \_Conexão de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Aceitação da autenticação Ale de camada FWPM de \_ \_ \_ recebimento \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_MID_STREAM_INSPECTION"></span><span id="fwp_condition_reauthorize_reason_mid_stream_inspection"></span>**FWP \_ condição de \_ reautorizar \_ motivo \_ médio \_ inspeção de fluxo \_**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_MID_STREAM_INSPECTION"></span><span id="fwp_condition_reauthorize_reason_mid_stream_inspection"></span>**FWP \_ CONDITION \_ REAUTHORIZE \_ REASON \_ MID \_ STREAM \_ INSPECTION**
 </dt> <dd> <dl> <dt>
 
 
@@ -524,13 +524,13 @@ Indica que uma conexão TCP estabelecida anteriormente agora está sendo inspeci
 
 Camada de filtragem:
 
--   \_Conexão de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Aceitação da autenticação Ale de camada FWPM de \_ \_ \_ recebimento \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_SOCKET_PROPERTY_CHANGED"></span><span id="fwp_condition_reauthorize_reason_socket_property_changed"></span>**FWP \_ condição de \_ reautorizar a \_ propriedade de soquete de motivo \_ \_ \_ alterada**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_SOCKET_PROPERTY_CHANGED"></span><span id="fwp_condition_reauthorize_reason_socket_property_changed"></span>**FWP \_ CONDITION \_ REAUTHORIZE \_ REASON \_ SOCKET \_ PROPERTY \_ CHANGED**
 </dt> <dd> <dl> <dt>
 
 
@@ -539,36 +539,36 @@ Indica que as propriedades de soquete foram definidas depois que uma conexão fo
 
 Camada de filtragem:
 
--   \_Conexão de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Aceitação da autenticação Ale de camada FWPM de \_ \_ \_ recebimento \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ CONNECT \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_INBOUND_MCAST_BCAST_PACKET"></span><span id="fwp_condition_reauthorize_reason_new_inbound_mcast_bcast_packet"></span>**FWP \_ condição de \_ reautorizar \_ motivo \_ novo \_ \_ pacote mcast \_ BCAST \_ de entrada**
+<span id="FWP_CONDITION_REAUTHORIZE_REASON_NEW_INBOUND_MCAST_BCAST_PACKET"></span><span id="fwp_condition_reauthorize_reason_new_inbound_mcast_bcast_packet"></span>**FWP \_ CONDITION \_ REAUTHORIZE \_ REASON \_ NEW \_ INBOUND \_ MCAST \_ BCAST \_ PACKET**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que novos pacotes multicast de entrada ou difusão estão sendo autorizados novamente em \_ \_ textos explicativos de aceitação Ale de recepção.
+Indica que novos pacotes de multicast ou difusão de entrada estão sendo autorizados de novo em callouts ALE \_ RECV \_ ACCEPT.
 
 Camada de filtragem:
 
--   \_Aceitação da autenticação Ale de camada FWPM de \_ \_ \_ recebimento \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ RECV ACCEPT \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> </dl>
 
-Os sinalizadores a seguir especificam as propriedades de soquete que estão relacionadas a se um aplicativo deseja receber o tráfego de percurso de borda. Esses sinalizadores e as camadas de filtragem em que podem ser usados são definidos da seguinte maneira.
+Os sinalizadores a seguir especificam propriedades de soquete que estão relacionadas a se um aplicativo deseja receber o tráfego de Travessia de Borda. Esses sinalizadores e as camadas de filtragem em que podem ser usados são definidos da seguinte forma.
 
 > [!Note]  
-> Essas condições de filtragem estão disponíveis apenas no Windows Server 2008 R2, Windows 7 e posterior.
+> Essas condições de filtragem estão disponíveis somente no Windows Server 2008 R2, Windows 7 e posterior.
 
  
 
 <dl> <dt>
 
-<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_IS_SYSTEM_PORT_RPC"></span><span id="fwp_condition_socket_property_flag_is_system_port_rpc"></span>**o \_ sinalizador de propriedade de soquete de condição fwp \_ \_ \_ \_ é \_ RPC de porta do sistema \_ \_**
+<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_IS_SYSTEM_PORT_RPC"></span><span id="fwp_condition_socket_property_flag_is_system_port_rpc"></span>**O SINALIZADOR DE PROPRIEDADE DE SOQUETE DE CONDIÇÃO FWP \_ \_ É \_ \_ \_ \_ \_ RPC DE PORTA DO \_ SISTEMA**
 </dt> <dd> <dl> <dt>
 
 
@@ -577,52 +577,52 @@ Indica que o aplicativo está se comunicando com uma porta RPC dinâmica.
 
 Camada de filtragem:
 
--   \_Escuta de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Atribuição de \_ recursos Ale de camada FWPM \_ \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ LISTEN \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_ALLOW_EDGE_TRAFFIC"></span><span id="fwp_condition_socket_property_flag_allow_edge_traffic"></span>**\_sinalizador de propriedade de soquete de condição fwp \_ \_ \_ \_ permitir \_ tráfego de borda \_**
+<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_ALLOW_EDGE_TRAFFIC"></span><span id="fwp_condition_socket_property_flag_allow_edge_traffic"></span>**SINALIZADOR DE PROPRIEDADE \_ DE \_ SOQUETE DE CONDIÇÃO FWP \_ PERMITIR TRÁFEGO DE \_ \_ \_ \_ BORDA**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que o aplicativo deseja receber tráfego específico de passagem de borda.
+Indica que o aplicativo deseja receber tráfego específico da borda.
 
 Camada de filtragem:
 
--   \_Escuta de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Atribuição de \_ recursos Ale de camada FWPM \_ \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ LISTEN \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_DENY_EDGE_TRAFFIC"></span><span id="fwp_condition_socket_property_flag_deny_edge_traffic"></span>**\_sinalizador de Propriedade do soquete de condição fwp \_ \_ \_ \_ negar \_ tráfego de borda \_**
+<span id="FWP_CONDITION_SOCKET_PROPERTY_FLAG_DENY_EDGE_TRAFFIC"></span><span id="fwp_condition_socket_property_flag_deny_edge_traffic"></span>**SINALIZADOR DE PROPRIEDADE \_ DE \_ SOQUETE DE CONDIÇÃO FWP \_ NEGAR TRÁFEGO DE \_ \_ \_ \_ BORDA**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que o aplicativo não deseja receber ou processar o tráfego específico de passagem de borda.
+Indica que o aplicativo não deseja receber ou processar tráfego específico da borda.
 
 Camada de filtragem:
 
--   \_Escuta de \_ autenticação Ale de camada FWPM \_ \_ \_ V {4 \| 6}
--   \_Atribuição de \_ recursos Ale de camada FWPM \_ \_ \_ V {4 \| 6}
+-   FWPM \_ LAYER \_ ALE \_ AUTH \_ LISTEN \_ V{4 \| 6}
+-   FWPM \_ LAYER \_ ALE RESOURCE ASSIGNMENT \_ \_ \_ V{4 \| 6}
 
 
 </dt> </dl> </dd> </dl>
 
-Os sinalizadores a seguir especificam detalhes de conexão relacionados à filtragem de L2.
+Os sinalizadores a seguir especificam detalhes de conexão relacionados à filtragem L2.
 
 > [!Note]  
-> Essas condições de filtragem estão disponíveis apenas no Windows 8 e no Windows Server 2012.
+> Essas condições de filtragem estão disponíveis somente Windows 8 e Windows Server 2012.
 
  
 
 <dl> <dt>
 
-<span id="FWP_CONDITION_L2_IS_NATIVE_ETHERNET"></span><span id="fwp_condition_l2_is_native_ethernet"></span>**FWP \_ condição \_ L2 \_ é \_ \_ Ethernet nativa**
+<span id="FWP_CONDITION_L2_IS_NATIVE_ETHERNET"></span><span id="fwp_condition_l2_is_native_ethernet"></span>**A CONDIÇÃO DE FWP \_ \_ L2 \_ É ETHERNET \_ \_ NATIVA**
 </dt> <dd> <dl> <dt>
 
 
@@ -631,15 +631,15 @@ Indica que a conexão é Ethernet nativa.
 
 Camada de filtragem:
 
--   \_ \_ \_ Mac \_ frame \_ Ethernet de entrada da camada FWPM
--   \_quadro de Mac de entrada da camada FWPM \_ \_ \_ \_ nativa
--   quadro de Mac de saída da camada do FWPM \_ \_ \_ \_ \_ Ethernet
--   \_quadro do Mac de saída da camada FWPM \_ \_ \_ \_ nativa
+-   ETHERNET DE QUADRO \_ MAC DE \_ ENTRADA DA \_ \_ CAMADA FWPM \_
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ NATIVE
+-   ETHERNET DE QUADRO \_ MAC DE SAÍDA DA \_ CAMADA \_ \_ FWPM \_
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_WIFI"></span><span id="fwp_condition_l2_is_wifi"></span>**FWP \_ condição \_ L2 \_ é \_ WiFi**
+<span id="FWP_CONDITION_L2_IS_WIFI"></span><span id="fwp_condition_l2_is_wifi"></span>**FWP \_ CONDITION \_ L2 \_ IS \_ WIFI**
 </dt> <dd> <dl> <dt>
 
 
@@ -648,15 +648,15 @@ Indica que a conexão é Wi-Fi.
 
 Camada de filtragem:
 
--   \_ \_ \_ Mac \_ frame \_ Ethernet de entrada da camada FWPM
--   \_quadro de Mac de entrada da camada FWPM \_ \_ \_ \_ nativa
--   quadro de Mac de saída da camada do FWPM \_ \_ \_ \_ \_ Ethernet
--   \_quadro do Mac de saída da camada FWPM \_ \_ \_ \_ nativa
+-   ETHERNET DE QUADRO \_ MAC DE \_ ENTRADA DA \_ \_ CAMADA FWPM \_
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ NATIVE
+-   ETHERNET DE QUADRO \_ MAC DE SAÍDA DA \_ CAMADA \_ \_ FWPM \_
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_MOBILE_BROADBAND"></span><span id="fwp_condition_l2_is_mobile_broadband"></span>**FWP \_ condição \_ L2 \_ é \_ \_ banda larga móvel**
+<span id="FWP_CONDITION_L2_IS_MOBILE_BROADBAND"></span><span id="fwp_condition_l2_is_mobile_broadband"></span>**A CONDIÇÃO FWP \_ \_ L2 \_ É BANDA \_ LARGA \_ MÓVEL**
 </dt> <dd> <dl> <dt>
 
 
@@ -665,32 +665,32 @@ Indica que a conexão é de banda larga móvel.
 
 Camada de filtragem:
 
--   \_ \_ \_ Mac \_ frame \_ Ethernet de entrada da camada FWPM
--   \_quadro de Mac de entrada da camada FWPM \_ \_ \_ \_ nativa
--   quadro de Mac de saída da camada do FWPM \_ \_ \_ \_ \_ Ethernet
--   \_quadro do Mac de saída da camada FWPM \_ \_ \_ \_ nativa
+-   ETHERNET DE QUADRO \_ MAC DE \_ ENTRADA DA \_ \_ CAMADA FWPM \_
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ NATIVE
+-   ETHERNET DE QUADRO \_ MAC DE SAÍDA DA \_ CAMADA \_ \_ FWPM \_
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_WIFI_DIRECT_DATA"></span><span id="fwp_condition_l2_is_wifi_direct_data"></span>**FWP \_ condição \_ L2 \_ são \_ \_ dados diretos de WiFi \_**
+<span id="FWP_CONDITION_L2_IS_WIFI_DIRECT_DATA"></span><span id="fwp_condition_l2_is_wifi_direct_data"></span>**FWP \_ CONDITION \_ L2 \_ IS \_ WIFI \_ DIRECT \_ DATA**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica que a conexão é Wi-Fi direta.
+Indica que a conexão é Wi-Fi Direct.
 
 Camada de filtragem:
 
--   \_ \_ \_ Mac \_ frame \_ Ethernet de entrada da camada FWPM
--   \_quadro de Mac de entrada da camada FWPM \_ \_ \_ \_ nativa
--   quadro de Mac de saída da camada do FWPM \_ \_ \_ \_ \_ Ethernet
--   \_quadro do Mac de saída da camada FWPM \_ \_ \_ \_ nativa
+-   ETHERNET DE QUADRO \_ MAC DE \_ ENTRADA DA \_ \_ CAMADA FWPM \_
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ NATIVE
+-   ETHERNET DE QUADRO \_ MAC DE SAÍDA DA \_ CAMADA \_ \_ FWPM \_
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_VM2VM"></span><span id="fwp_condition_l2_is_vm2vm"></span>**FWP \_ condição \_ L2 \_ é \_ VM2VM**
+<span id="FWP_CONDITION_L2_IS_VM2VM"></span><span id="fwp_condition_l2_is_vm2vm"></span>**FWP \_ CONDITION \_ L2 \_ IS \_ VM2VM**
 </dt> <dd> <dl> <dt>
 
 
@@ -699,15 +699,15 @@ Indica que a conexão está entre máquinas virtuais.
 
 Camada de filtragem:
 
--   \_ \_ \_ Mac \_ frame \_ Ethernet de entrada da camada FWPM
--   \_quadro de Mac de entrada da camada FWPM \_ \_ \_ \_ nativa
--   quadro de Mac de saída da camada do FWPM \_ \_ \_ \_ \_ Ethernet
--   \_quadro do Mac de saída da camada FWPM \_ \_ \_ \_ nativa
+-   ETHERNET DE QUADRO \_ MAC DE \_ ENTRADA DA \_ \_ CAMADA FWPM \_
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ NATIVE
+-   ETHERNET DE QUADRO \_ MAC DE SAÍDA DA \_ CAMADA \_ \_ FWPM \_
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_MALFORMED_PACKET"></span><span id="fwp_condition_l2_is_malformed_packet"></span>**FWP \_ condição \_ L2 \_ é um \_ pacote malformado \_**
+<span id="FWP_CONDITION_L2_IS_MALFORMED_PACKET"></span><span id="fwp_condition_l2_is_malformed_packet"></span>**A CONDIÇÃO DE FWP \_ \_ L2 \_ É UM PACOTE \_ \_ MALFORMADO**
 </dt> <dd> <dl> <dt>
 
 
@@ -716,32 +716,32 @@ Indica que um pacote parece estar malformado.
 
 Camada de filtragem:
 
--   \_ \_ \_ Mac \_ frame \_ Ethernet de entrada da camada FWPM
--   \_quadro de Mac de entrada da camada FWPM \_ \_ \_ \_ nativa
--   quadro de Mac de saída da camada do FWPM \_ \_ \_ \_ \_ Ethernet
--   \_quadro do Mac de saída da camada FWPM \_ \_ \_ \_ nativa
+-   ETHERNET DE QUADRO \_ MAC DE \_ ENTRADA DA \_ \_ CAMADA FWPM \_
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ NATIVE
+-   ETHERNET DE QUADRO \_ MAC DE SAÍDA DA \_ CAMADA \_ \_ FWPM \_
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IS_IP_FRAGMENT_GROUP"></span><span id="fwp_condition_l2_is_ip_fragment_group"></span>**FWP \_ condição \_ L2 \_ é \_ \_ grupo de fragmentos IP \_**
+<span id="FWP_CONDITION_L2_IS_IP_FRAGMENT_GROUP"></span><span id="fwp_condition_l2_is_ip_fragment_group"></span>**FWP \_ CONDITION \_ L2 \_ IS \_ IP \_ FRAGMENT \_ GROUP**
 </dt> <dd> <dl> <dt>
 
 
 
-Indica um grupo de fragmentos de pacotes IP.
+Indica um grupo de fragmentos de pacote IP.
 
 Camada de filtragem:
 
--   \_ \_ \_ Mac \_ frame \_ Ethernet de entrada da camada FWPM
--   \_quadro de Mac de entrada da camada FWPM \_ \_ \_ \_ nativa
--   quadro de Mac de saída da camada do FWPM \_ \_ \_ \_ \_ Ethernet
--   \_quadro do Mac de saída da camada FWPM \_ \_ \_ \_ nativa
+-   ETHERNET DE QUADRO \_ MAC DE \_ ENTRADA DA \_ \_ CAMADA FWPM \_
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ NATIVE
+-   ETHERNET DE QUADRO \_ MAC DE SAÍDA DA \_ CAMADA \_ \_ FWPM \_
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="FWP_CONDITION_L2_IF_CONNECTOR_PRESENT"></span><span id="fwp_condition_l2_if_connector_present"></span>**FWP \_ condição \_ L2 \_ se o \_ conector \_ estiver presente**
+<span id="FWP_CONDITION_L2_IF_CONNECTOR_PRESENT"></span><span id="fwp_condition_l2_if_connector_present"></span>**CONDIÇÃO FWP \_ \_ L2 \_ SE O CONECTOR \_ ESTIVER \_ PRESENTE**
 </dt> <dd> <dl> <dt>
 
 
@@ -750,10 +750,10 @@ Indica que um conector está presente.
 
 Camada de filtragem:
 
--   \_ \_ \_ Mac \_ frame \_ Ethernet de entrada da camada FWPM
--   \_quadro de Mac de entrada da camada FWPM \_ \_ \_ \_ nativa
--   quadro de Mac de saída da camada do FWPM \_ \_ \_ \_ \_ Ethernet
--   \_quadro do Mac de saída da camada FWPM \_ \_ \_ \_ nativa
+-   ETHERNET DE QUADRO \_ MAC DE \_ ENTRADA DA \_ \_ CAMADA FWPM \_
+-   FWPM \_ LAYER \_ INBOUND \_ MAC \_ FRAME \_ NATIVE
+-   ETHERNET DE QUADRO \_ MAC DE SAÍDA DA \_ CAMADA \_ \_ FWPM \_
+-   FWPM \_ LAYER \_ OUTBOUND \_ MAC \_ FRAME \_ NATIVE
 
 
 </dt> </dl> </dd> </dl>
@@ -764,9 +764,9 @@ Camada de filtragem:
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Fwptypes. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Fwptypes.h</dt> </dl> |
 
 
 

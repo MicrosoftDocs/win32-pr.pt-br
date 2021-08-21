@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: cc2637a76b52b28eefcfb3637cc8b2d406c02c06
-ms.sourcegitcommit: fe03c5d92ca6a0d66a114b2303e99c0a19241ffb
+ms.openlocfilehash: a1f220cb0a5becf823ecc547e29c9d4c7363aa8b885355bb76f1182fae333f84
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "104006876"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118089147"
 ---
 # <a name="negate"></a>Negar
 
@@ -27,7 +27,7 @@ Inverte o sinal do valor de um operando de origem usado em uma operação aritm�
 
 
 
- 
+ 
 
 Para ponto flutuante e instruções de precisão simples e dupla, o modificador de negação inverte o sinal dos números no operando de origem, incluindo os valores INF. A aplicação de **negação** em NaN preserva Nan, embora o padrão de bit Nan específico que resulte não esteja definido.
 
@@ -50,7 +50,7 @@ Esse modificador tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -59,9 +59,9 @@ Esse modificador tem suporte nos seguintes modelos de sombreador.
 [Modificadores de instrução](instruction-modifiers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

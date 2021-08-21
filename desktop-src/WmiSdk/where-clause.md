@@ -5,16 +5,16 @@ ms.tgt_platform: multiple
 title: Cláusula WHERE (WMI)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b0587bffb1a10c4611773de8a61fdb7ac1576952
-ms.sourcegitcommit: cb87082135319cbdc5df541e3071eebb83a58972
+ms.openlocfilehash: 6a6a51657dac26a002890bde8346cd7570f6057f2ace5cdfb5350d6c90d0fee8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111386715"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118312177"
 ---
 # <a name="where-clause-wmi"></a>Cláusula WHERE (WMI)
 
-Use a cláusula WHERE para restringir o escopo de uma consulta de dados, eventos ou esquemas. Para obter mais informações, [consulte Consultando com WQL](querying-with-wql.md). A cláusula WHERE é feita de uma propriedade ou palavra-chave, um operador e uma constante. Todas as cláusulas WHERE devem especificar um dos operadores predefinidos que estão incluídos no WQL (Linguagem de Consulta Instrumentação de Gerenciamento do Windows) do Instrumentação de Gerenciamento do Windows (WQL). Você pode anexar a cláusula WHERE à instrução SELECT usando um dos seguintes formulários:
+Use a cláusula WHERE para restringir o escopo de uma consulta de dados, eventos ou esquemas. Para obter mais informações, [consulte Consultando com WQL](querying-with-wql.md). A cláusula WHERE é feita de uma propriedade ou palavra-chave, um operador e uma constante. Todas as cláusulas WHERE devem especificar um dos operadores predefinidos incluídos no WQL (Instrumentação de Gerenciamento Windows) do Windows. Você pode anexar a cláusula WHERE à instrução SELECT usando um dos seguintes formulários:
 
 
 ```sql
@@ -70,7 +70,7 @@ SELECT * FROM MyClass WHERE Prop1 = "cAt"
 
 
 
-Você pode construir uma consulta que inclui tipos de dados boolianas, mas os únicos tipos de operand booliana válidos são os tipos =, != e <> . O valor **TRUE** é equivalente ao número 1 e o valor **FALSE** é equivalente ao número 0. Os exemplos a seguir são de consultas que comparam um valor booliana com os **valores TRUE** ou **FALSE.**
+Você pode construir uma consulta que inclui tipos de dados boolianas, mas os únicos tipos de operand booliana válidos são os tipos =, != e <> dados. O valor **TRUE** é equivalente ao número 1 e o valor **FALSE** é equivalente ao número 0. Os exemplos a seguir são de consultas que comparam um valor booliana com os **valores TRUE** ou **FALSE.**
 
 
 ```sql
@@ -165,7 +165,7 @@ REFERENCES OF {myClass} WHERE SchemaOnly
 
 
 
-Além do formato [DATETIME](date-and-time-format.md) do WMI, a cláusula WHERE do WQL dá suporte a vários outros formatos de data e hora:
+Além do formato [DATETIME do](date-and-time-format.md) WMI, a cláusula WHERE do WQL dá suporte a vários outros formatos de data e hora:
 
 -   [Formatos de data com suporte do WQL](wql-supported-date-formats.md)
 -   [Formatos de tempo com suporte do WQL](wql-supported-time-formats.md)

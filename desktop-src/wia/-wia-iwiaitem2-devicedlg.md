@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Wia.h
-ms.openlocfilehash: 3337e74a621b6431b5bbfa429692717def447c82
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9eaab17f0a76bfc5c6ac919a9abef92ca7288539c9705ca30c02b1dd0a8d1ec
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104090511"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118035217"
 ---
 # <a name="iwiaitem2devicedlg-method"></a>IWiaItem2: método eviceDlg de:D
 
@@ -57,7 +57,7 @@ Especifica um conjunto de sinalizadores que controlam a operação da caixa de d
 *hwndParent* \[ no\]
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
 Um identificador para a janela pai.
 
@@ -84,9 +84,9 @@ Especifica o nome do arquivo de modelo.
 *plNumFiles* \[ no\]
 </dt> <dd>
 
-Tipo: **Long \** _
+Tipo: **longo \***
 
-Um ponteiro para o número de itens na matriz _ppbstrFilePaths *.
+Um ponteiro para o número de itens na matriz *ppbstrFilePaths* .
 
 </dd> <dt>
 
@@ -108,7 +108,7 @@ O endereço de uma matriz de ponteiros para interfaces [**IWiaItem2**](-wia-iwia
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -128,9 +128,9 @@ Os aplicativos devem chamar o método [IUnknown:: Release](/windows/win32/api/un
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                     |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                               |
-| parâmetro<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                     |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                               |
+| Cabeçalho<br/>                   | <dl> <dt>WIA. h</dt> </dl>   |
 | INSERI<br/>                      | <dl> <dt>WIA. idl</dt> </dl> |
 
 

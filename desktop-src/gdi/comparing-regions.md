@@ -4,12 +4,12 @@ ms.assetid: 5a1d3d55-616b-47a8-8819-42c9b65552de
 title: Comparando regiões
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6c00eaba765a30a65a68a04f10d5dd92ecc53eeb
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 377bf93164a3ef72074bafdc7f3f1eb35f5d64cbf1f5a2b57d8e9e617a1a4a2e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010736"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118068342"
 ---
 # <a name="comparing-regions"></a>Comparando regiões
 

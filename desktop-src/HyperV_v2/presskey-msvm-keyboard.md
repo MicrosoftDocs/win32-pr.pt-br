@@ -1,7 +1,7 @@
 ---
-description: Simula um pressionamento de tecla.
+description: Simula uma tecla pressionada.
 ms.assetid: 42C11F92-6143-40D7-9C07-56A6514EB4D1
-title: Método PressKey da classe Msvm_Keyboard
+title: Método PressKey da classe Msvm_Keyboard classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 5e9f196c5af3f8946460564e56bb425ffc24b51c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 93dfa4ca5ad1233f1d36323e5d59c31e194398df2b0b941036c8fc0ff182d505
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756755"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118146155"
 ---
-# <a name="presskey-method-of-the-msvm_keyboard-class"></a>Método PressKey da classe de \_ teclado Msvm
+# <a name="presskey-method-of-the-msvm_keyboard-class"></a>Método PressKey da classe Teclado Msvm \_
 
-Simula um pressionamento de tecla. Quando for bem-sucedida, a chave estará no estado inoperante.
+Simula uma tecla pressionada. Quando for bem-sucedida, a chave estará no estado ino para baixo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,27 +39,27 @@ uint32 PressKey(
 
 <dl> <dt>
 
-*KeyCode* \[ no\]
+*keyCode* \[ Em\]
 </dt> <dd>
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-O código de chave virtual da chave a ser pressionada. Para obter a lista de códigos de chave virtual, consulte [**códigos de chave virtual**](../inputdev/virtual-key-codes.md).
+O código de chave virtual da chave a ser pressionada. Para ver a lista de códigos de chave virtual, consulte [**Códigos de chave virtual.**](../inputdev/virtual-key-codes.md)
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Tipo: **UInt32**
+Tipo: **uint32**
 
-Um valor de retorno igual A zero indica êxito. Um valor diferente de zero indica uma falha ao modificar o estado da chave.
+Um valor de retorno de zero indica êxito. Um valor não zero indica uma falha ao modificar o estado da chave.
 
 <dl> <dt>
 
 **Concluído sem erro** (0)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
 **Falha** (32768)
@@ -71,16 +71,16 @@ Um valor de retorno igual A zero indica êxito. Um valor diferente de zero indic
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em usado** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -89,21 +89,21 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-O método **PressKey** mapeia referências ao **\_ menu VK** (18), **\_ controle VK** (17) e **VK \_ Shift** (16) para **VK \_ LMENU** (164), **VK \_ LCONTROL** (162) e **VK \_ LSHIFT** (160), respectivamente, porque os códigos de **\_ menu VK**, **VK \_ Control** e **VK \_ Shift** Virtual Key não representam chaves reais em um teclado.
+O método **PressKey** mapeia referências ao **\_ MENU da VK** (18), CONTROLE da **VK \_** (17) e SHIFT da **VK \_** (16) para **VK \_ LMENU** (164), **VK \_ LCONTROL** (162) e **VK \_ LSHIFT** (160), respectivamente, porque o **\_ MENU da VK,** CONTROLE de **VK \_** e códigos de chave virtual SHIFT da **VK \_** não representam chaves reais em um teclado.
 
-O acesso à classe de [**\_ teclado Msvm**](msvm-keyboard.md) pode ser restringido pela filtragem do UAC. Para obter mais informações, consulte [controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
+O acesso à [**classe \_ Teclado Msvm**](msvm-keyboard.md) pode ser restrito pela Filtragem de UAC. Para obter mais informações, consulte [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi).
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de C# a seguir simula um pressionamento de tecla. Os utilitários referenciados podem ser encontrados em [utilitários comuns para os exemplos de virtualização (v2)](common-utilities-for-the-virtualization-samples-v2.md).
+O exemplo de C# a seguir simula uma pressionada de tecla. Os utilitários referenciados podem ser encontrados em [Utilitários comuns para as amostras de virtualização (V2)](common-utilities-for-the-virtualization-samples-v2.md).
 
 
 ```CSharp
@@ -185,7 +185,7 @@ namespace HyperVSamples
 
 
 
-O exemplo a seguir Visual Basic Scripting Edition (VBScript) simula um pressionamento de tecla.
+O exemplo Visual Basic VBScript (Scripting Edition) a seguir simula um pressionamento de tecla.
 
 
 ```VB
@@ -323,10 +323,10 @@ End Function
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -335,7 +335,7 @@ End Function
 
 <dl> <dt>
 
-[**\_Teclado Msvm**](msvm-keyboard.md)
+[**Teclado Msvm \_**](msvm-keyboard.md)
 </dt> <dt>
 
 [**Códigos de chave virtual**](../inputdev/virtual-key-codes.md)

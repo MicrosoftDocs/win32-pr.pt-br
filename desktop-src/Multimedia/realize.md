@@ -1,9 +1,9 @@
 ---
-title: obter o comando
-description: O comando perceber instrui um dispositivo a selecionar e a perceber sua paleta no contexto de exibição da janela exibida. Dispositivos de vídeo digital reconhecem este comando.
+title: comando realize
+description: O comando realize instrui um dispositivo a selecionar e perceber sua paleta no contexto de exibição da janela exibida. Os dispositivos de vídeo digital reconhecem esse comando.
 ms.assetid: ad3a52dc-5c8d-47fc-95bd-437b700fc029
 keywords:
-- perceba o multimídia do Windows de comando
+- realize o comando Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -12,18 +12,18 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 33accaa9638210adf4385a1776fcd8d2bd2021e7
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: fc0aba1e610f4636c7dbfb71fbc959d9b4b8496cc23e91a97100ef6edce133b3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919009"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118371431"
 ---
-# <a name="realize-command"></a>obter o comando
+# <a name="realize-command"></a>comando realize
 
-O comando perceber instrui um dispositivo a selecionar e a perceber sua paleta no contexto de exibição da janela exibida. Dispositivos de vídeo digital reconhecem este comando.
+O comando realize instrui um dispositivo a selecionar e perceber sua paleta no contexto de exibição da janela exibida. Os dispositivos de vídeo digital reconhecem esse comando.
 
-Para enviar esse comando, chame a função [**mciSendString**](/previous-versions//dd757161(v=vs.85)) com o parâmetro *lpszCommand* definido da seguinte maneira.
+Para enviar esse comando, chame a [**função mciSendString**](/previous-versions//dd757161(v=vs.85)) com *o parâmetro lpszCommand* definido da seguinte forma.
 
 ``` syntax
 _stprintf_s(
@@ -55,8 +55,8 @@ Um dos sinalizadores a seguir.
 
 | Valor      | Significado                                                                   |
 |------------|---------------------------------------------------------------------------|
-| background | Percebe a paleta como uma paleta de plano de fundo.                             |
-| normal     | Percebe a paleta para uma janela de nível superior. Essa é a configuração padrão. |
+| background | Realiza a paleta como uma paleta de plano de fundo.                             |
+| normal     | Realiza a paleta para uma janela de nível superior. Essa é a configuração padrão. |
 
 
 
@@ -67,21 +67,21 @@ Um dos sinalizadores a seguir.
 <span id="lpszFlags"></span><span id="lpszflags"></span><span id="LPSZFLAGS"></span>*lpszFlags*
 </dt> <dd>
 
-Pode ser "Wait", "notificar" ou ambos. Para dispositivos de vídeo digital, "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [os sinalizadores aguardar, notificar e testar](the-wait-notify-and-test-flags.md).
+Pode ser "wait", "notify" ou ambos. Para dispositivos de vídeo digital, "teste" também pode ser especificado. Para obter mais informações sobre esses sinalizadores, consulte [Os sinalizadores de espera, notificação e teste.](the-wait-notify-and-test-flags.md)
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará zero se for bem-sucedido ou um erro de outra forma.
+Retornará zero se for bem-sucedido ou um erro, caso contrário.
 
 ## <a name="remarks"></a>Comentários
 
-Use este comando somente se o seu aplicativo usar um identificador de janela e receber uma mensagem do **WM \_ QUERYNEWPALLETTE** ou do **WM da \_ paletachanged** .
+Use esse comando somente se o aplicativo usar um alça de janela e receber uma mensagem **WM \_ QUERYNEWPALLETTE** ou **WM \_ PALETTECHANGED.**
 
 ## <a name="examples"></a>Exemplos
 
-O comando a seguir informa o dispositivo "MyVideo" para perceber sua paleta.
+O comando a seguir informa o dispositivo "myvideo" para perceber sua paleta.
 
 ``` syntax
 realize myvideo normal
@@ -102,7 +102,7 @@ realize myvideo normal
 
 <dl> <dt>
 
-[MCI](mci.md)
+[Mci](mci.md)
 </dt> <dt>
 
 [Cadeias de caracteres de comando MCI](mci-command-strings.md)
