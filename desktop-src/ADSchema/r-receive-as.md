@@ -1,6 +1,6 @@
 ---
 title: Receive-As estendido à direita
-description: O direito do Exchange permite receber emails como uma determinada caixa de correio.
+description: Exchange direito permite receber emails como uma determinada caixa de correio.
 ms.assetid: 3fa0cab3-5de4-4bd9-9e6c-95b0b6a4c0f8
 ms.tgt_platform: multiple
 keywords:
@@ -13,16 +13,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ca5a79de774579ac7c259d5a1c8ca9c590ac5cb2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 1a1e2d8650e2db18b5b76447446aa1e7d510f869e15d6ee0a1eccf4aa1d8d569
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645317"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118680219"
 ---
 # <a name="receive-as-extended-right"></a>Receive-As estendido à direita
 
-Trocar à direita: permite receber emails como uma determinada caixa de correio.
+Exchange direito: permite receber emails como uma determinada caixa de correio.
 
 
 

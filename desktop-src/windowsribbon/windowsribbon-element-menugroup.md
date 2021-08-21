@@ -3,7 +3,7 @@ title: Elemento MenuGroup
 description: Representa um contêiner de controles a ser exibido em uma galeria, menu ou barra de ferramentas.
 ms.assetid: 75da63fe-dd9e-46af-8f13-a8d8e7575641
 keywords:
-- MenuGroup elemento Faixa de Opções do Windows
+- Elemento MenuGroup Windows Faixa de Opções
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 95cbda43fe2f652888a7b84539752b5d671868c3
-ms.sourcegitcommit: 099ecdda1e83618b844387405da0db0ebda93a65
+ms.openlocfilehash: 854b33d1e11df15b5b383bf004986edc18418f6204ae1298c3171a6653cf5301
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111442847"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118707080"
 ---
 # <a name="menugroup-element"></a>Elemento MenuGroup
 
@@ -59,7 +59,7 @@ Representa um contêiner de controles a ser exibido em uma galeria, menu ou barr
 <td>xs:string<br/></td>
 <td>Não<br/></td>
 <td>Especifica o tamanho e o estilo de layout para elementos na interface do usuário do menu.<br/> Um recurso de imagem pode ser fornecido em dois tamanhos (grande e pequeno) e associado ao elemento na marcação usando os elementos de propriedade <a href="windowsribbon-element-command-largeimages.md"><strong>Command.LargeImages</strong></a> e <a href="windowsribbon-element-command-smallimages.md"><strong>Command.SmallImages.</strong></a> Se apenas uma imagem for fornecida, a estrutura a reorganizará conforme necessário.<br/> Restrito a um dos seguintes valores:<br/> <br/>
-<dt><span></span><span></span><strong></strong> (StandardItems)<br/> </dt> <dd> Padrão. <br/> Estilo: imagem pequena e texto desaloqueado.<br/><img src="images/markup/menugroup-standarditems.png" alt="Screen shot of a StandardItems button." /></dd> <dt><span></span><span></span><strong></strong> (MajorItems)<br/> </dt> <dd> Estilo: imagem grande e texto em negrito.<br/>
+<dt><span></span><span></span><strong></strong> (StandardItems)<br/> </dt> <dd> Padrão. <br/> Estilo: imagem pequena e texto desalinhado.<br/><img src="images/markup/menugroup-standarditems.png" alt="Screen shot of a StandardItems button." /></dd> <dt><span></span><span></span><strong></strong> (MajorItems)<br/> </dt> <dd> Estilo: imagem grande e texto em negrito.<br/>
 <blockquote>
 [!Note]<br />
 Se <strong>MenuGroup</strong> for um filho de <a href="windowsribbon-element-applicationmenu.md"><strong>ApplicationMenu,</strong></a>o atributo <em>Class</em> será ignorado e um estilo de será imposto pela <code>MajorItems</code> estrutura .

@@ -4,12 +4,12 @@ ms.assetid: 1b0943fb-076e-4feb-9a4f-36a06bdd19ae
 title: Usando o cliente de depuração WSD para verificar o tráfego multicast
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4a814ac97512ef4b0691c22d3238d151372023a7
-ms.sourcegitcommit: 59ec383331366f8a62c94bb88468ca03e95c43f8
+ms.openlocfilehash: 6831fa0583a4525c5df3a42d0ce4679d217f63e57e2c645ef429157fdf8cafbc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107380660"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118552323"
 ---
 # <a name="using-wsd-debug-client-to-verify-multicast-traffic"></a>Usando o cliente de depuração WSD para verificar o tráfego multicast
 
@@ -32,7 +32,7 @@ Se as mensagens necessárias forem exibidas na saída do cliente de depuração 
 
 ## <a name="verifying-that-messages-are-being-multicast"></a>Verificando se as mensagens estão sendo multicast
 
-Sempre verifique se as mensagens de [investigação](probe-message.md) estão sendo multicast. Opcionalmente, verifique se as mensagens de [saudação](hello-message.md) e de [resolução](resolve-message.md) estão sendo multicast. Observe que nem todos os aplicativos usam as mensagens de resolução. Para obter mais informações sobre os padrões de mensagem usados por clientes e hosts, consulte [padrões de mensagens de descoberta e de metadados do Exchange](discovery-and-metadata-exchange-message-patterns.md) e [introdução com a solução de problemas de WSDAPI](getting-started-with-wsdapi-troubleshooting.md).
+Sempre verifique se as mensagens de [investigação](probe-message.md) estão sendo multicast. Opcionalmente, verifique se as mensagens de [saudação](hello-message.md) e de [resolução](resolve-message.md) estão sendo multicast. Observe que nem todos os aplicativos usam as mensagens de resolução. para obter mais informações sobre os padrões de mensagem usados por clientes e hosts, consulte [descoberta e metadados Exchange padrões de mensagem](discovery-and-metadata-exchange-message-patterns.md) e [Introdução com a solução de problemas de WSDAPI](getting-started-with-wsdapi-troubleshooting.md).
 
 As mensagens devem ser disparadas para serem enviadas conforme descrito na etapa 3 acima. O cliente de depuração WSD exibe a mensagem SOAP bruta como saída. Como todas as mensagens impressas pelo cliente de depuração WSD no modo multicast são recebidas por um soquete de multicast, o endereço de destino da mensagem não é exibido.
 

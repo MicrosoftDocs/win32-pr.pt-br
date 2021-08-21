@@ -3,7 +3,7 @@ title: Mensagem de HKM_GETHOTKEY (commctrl. h)
 description: Obtém o código de chave virtual e os sinalizadores de modificador de uma tecla de acesso de um controle de tecla de atalho.
 ms.assetid: 8b061411-604d-46ea-a082-3eca2d47d992
 keywords:
-- Controles de HKM_GETHOTKEY de mensagens do Windows
+- controles de Windows de mensagem de HKM_GETHOTKEY
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16e23e02f32a4dd6f82f61fd735688353f48ec19
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 79bfbad1eb5e9a6679a1b3e419a0877e61cd90247ef0cf91b0a30c655f755a57
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118672264"
 ---
 # <a name="hkm_gethotkey-message"></a>\_Mensagem hkm GETtecla de atalho
 
@@ -35,7 +35,7 @@ Obtém o código de chave virtual e os sinalizadores de modificador de uma tecla
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o código de chave virtual e os sinalizadores de modificador. O [**LOBYTE**](/previous-versions/windows/desktop/legacy/ms632658(v=vs.85)) do [**LOWORD**](/previous-versions/windows/desktop/legacy/ms632659(v=vs.85)) é o código de chave virtual da tecla de atalho. O [**HIBYTE**](/previous-versions/windows/desktop/legacy/ms632656(v=vs.85)) de **LOWORD** é o modificador de chave que especifica as chaves que definem uma combinação de teclas de acesso. Os sinalizadores de modificadores podem ser uma combinação dos valores a seguir.
 
@@ -62,8 +62,8 @@ O valor de 16 bits retornado por essa mensagem pode ser usado como o parâmetro 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

@@ -1,7 +1,7 @@
 ---
-description: O método getamostrate recupera o tamanho da amostra.
+description: O método GetSampleSize recupera o tamanho da amostra.
 ms.assetid: 5cc98556-cca6-46ca-ad33-cd40011ff6f4
-title: Método CMediaType. getsampleize (mtype. h)
+title: Método CMediaType.GetSampleSize (Mtype.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: cc5b80e20ad2a16af9c25c68499348ffa744c0fa
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 120ae54e615e96b368f44c1523703ca35f89d40313f79b450e2cbbd8923829dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105769227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156400"
 ---
-# <a name="cmediatypegetsamplesize-method"></a>Método CMediaType. getsampleize
+# <a name="cmediatypegetsamplesize-method"></a>Método CMediaType.GetSampleSize
 
 O `GetSampleSize` método recupera o tamanho da amostra.
 
@@ -40,9 +40,9 @@ ULONG GetSampleSize() const;
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Se o tamanho da amostra for fixo, o retornará o tamanho da amostra em bytes. Caso contrário, retornará zero.
+Se o tamanho da amostra for fixo, retornará o tamanho da amostra em bytes. Caso contrário, retornará zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -50,8 +50,8 @@ Se o tamanho da amostra for fixo, o retornará o tamanho da amostra em bytes. Ca
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Mtype. h (incluir fluxos. h)</dt> </dl>                                                                                     |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Mtype.h (incluir Fluxos.h)</dt> </dl>                                                                                     |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

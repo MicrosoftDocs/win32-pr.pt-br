@@ -1,7 +1,7 @@
 ---
-description: Representa a lista de controle de acesso (ACL) para as configurações de porta do comutador.
+description: Representa a ACL (lista de controle de acesso) para configurações de porta de comutagem.
 ms.assetid: c0d6dfa1-017c-4e66-9ee3-425182d84231
-title: Classe Msvm_EthernetSwitchPortAclSettingData
+title: Msvm_EthernetSwitchPortAclSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -26,18 +26,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 92735718e339a0caf33910dec703276aea946a67
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a9cecb30265de4a86c3b6bd6b07d7047607349a74cef9da379fb384ca5a5dc9d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105792522"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119524186"
 ---
-# <a name="msvm_ethernetswitchportaclsettingdata-class"></a>\_Classe Msvm EthernetSwitchPortAclSettingData
+# <a name="msvm_ethernetswitchportaclsettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortAclSettingData
 
-Representa a lista de controle de acesso (ACL) para as configurações de porta do comutador.
+Representa a ACL (lista de controle de acesso) para configurações de porta de comutagem.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -63,13 +63,13 @@ class Msvm_EthernetSwitchPortAclSettingData : Msvm_EthernetSwitchPortFeatureSett
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ EthernetSwitchPortAclSettingData** tem estes tipos de membros:
+A **classe Msvm \_ EthernetSwitchPortAclSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ EthernetSwitchPortAclSettingData** tem essas propriedades.
+A **classe Msvm \_ EthernetSwitchPortAclSettingData** tem essas propriedades.
 
 <dl> <dt>
 
@@ -79,13 +79,13 @@ A classe **Msvm \_ EthernetSwitchPortAclSettingData** tem essas propriedades.
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Isso indica o tipo de ponto de extremidade ACL.
+Isso indica o tipo de ponto de extremidade de ACL.
 
 <dt>
 
@@ -98,21 +98,21 @@ Isso indica o tipo de ponto de extremidade ACL.
 
 <span id="MAC_Acl"></span><span id="mac_acl"></span><span id="MAC_ACL"></span>
 
-**ACL do Mac** (1)
+**MAC Acl** (1)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPv4_Acl"></span><span id="ipv4_acl"></span><span id="IPV4_ACL"></span>
 
-**ACL IPv4** (2)
+**Acl IPv4** (2)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IPv6_Acl"></span><span id="ipv6_acl"></span><span id="IPV6_ACL"></span>
 
-**ACL IPv6** (3)
+**Acl IPv6** (3)
 
 
 </dt> <dd></dd> </dl>
@@ -125,7 +125,7 @@ Isso indica o tipo de ponto de extremidade ACL.
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -171,7 +171,7 @@ Isso indica a ação da ACL.
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -213,7 +213,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações de ACL de porta do comutador Ethernet".
+Uma breve descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "ACL de porta de comutamento Ethernet Configurações".
 
 </dd> <dt>
 
@@ -226,7 +226,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "representa a classe base para as configurações de porta do comutador.".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Representa a classe base para configurações de porta de comutamento".
 
 </dd> <dt>
 
@@ -236,7 +236,7 @@ Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelem
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -278,7 +278,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações de ACL de porta do comutador Ethernet".
+Um nome de exibição para o objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "ACL de porta de comutamento Ethernet Configurações".
 
 </dd> <dt>
 
@@ -291,10 +291,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**\_ ManagedElement do CIM.**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)
 
 </dd> <dt>
 
@@ -304,10 +304,10 @@ Identifica exclusivamente uma instância dessa classe. Essa propriedade é herda
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 O endereço local da máquina virtual. Pode ser um endereço IPv4, IPv6 ou MAC.
@@ -320,13 +320,13 @@ O endereço local da máquina virtual. Pode ser um endereço IPv4, IPv6 ou MAC.
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O comprimento do prefixo do endereço local.
+O comprimento do prefixo de endereço local.
 
 </dd> <dt>
 
@@ -336,10 +336,10 @@ O comprimento do prefixo do endereço local.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 O nome de exibição da ACL.
@@ -352,10 +352,10 @@ O nome de exibição da ACL.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 O endereço remoto da máquina virtual. Pode ser IPv4, IPv6 ou um endereço MAC.
@@ -368,13 +368,13 @@ O endereço remoto da máquina virtual. Pode ser IPv4, IPv6 ou um endereço MAC.
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O comprimento do prefixo do endereço remoto.
+O comprimento do prefixo de endereço remoto.
 
 </dd> </dl>
 
@@ -384,10 +384,10 @@ O comprimento do prefixo do endereço remoto.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

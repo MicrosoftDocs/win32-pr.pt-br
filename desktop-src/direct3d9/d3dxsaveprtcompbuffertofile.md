@@ -1,7 +1,7 @@
 ---
-description: Salva um buffer de PRT (transferência radiante em cluster) compactado em disco.
+description: Salva um buffer de PRT (transferência de radiance pré-compactado) compactado no disco.
 ms.assetid: cc94a83e-f755-411d-a993-4529c5d53cd5
-title: Função D3DXSavePRTCompBufferToFile (D3DX9Mesh. h)
+title: Função D3DXSavePRTCompBufferToFile (D3DX9Mesh.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: d06629185637ce6fa0d7d33d5454282d2bbb8ec2
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: a62bd164ce8eb8175c62658b19dd5ce6282d6c75b081db45f8b0af4994322579
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930584"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118524506"
 ---
 # <a name="d3dxsaveprtcompbuffertofile-function"></a>Função D3DXSavePRTCompBufferToFile
 
-Salva um buffer de PRT (transferência radiante em cluster) compactado em disco.
+Salva um buffer de PRT (transferência de radiance pré-compactado) compactado no disco.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -36,29 +36,29 @@ HRESULT D3DXSavePRTCompBufferToFile(
 
 ## <a name="parameters"></a>Parâmetros
 
-*pFileName* \[ no\]
+*pFileName* \[ Em\]
 
 Tipo: **[LPCSTR](../winprog/windows-data-types.md)**
 
 Nome do arquivo no qual o buffer compactado deve ser salvo.
 
-*pBuffer* \[ no\]
+*pBuffer* \[ Em\]
 
 Tipo: **[LPD3DXPRTCOMPBUFFER](id3dxprtcompbuffer.md)**
 
-Endereço de um ponteiro para o objeto [**ID3DXPRTCompBuffer**](id3dxprtcompbuffer.md) de entrada.
+Endereço de um ponteiro para o objeto [**ID3DXPRTCompBuffer de**](id3dxprtcompbuffer.md) entrada.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[HRESULT](../com/structure-of-com-error-codes.md)**
 
-Se o método for bem sucedido, o valor de retorno será **D3D \_ OK**. Se o método falhar, o valor de retorno poderá ser **D3DERR \_ INVALIDCALL**.
+Se o método for bem-sucedido, o valor de retorno será **D3D \_ OK.** Se o método falhar, o valor de retorno poderá ser **D3DERR \_ INVALIDCALL.**
 
 ## <a name="remarks"></a>Comentários
 
-A configuração do compilador também determina a versão da função. Se o Unicode estiver definido, a chamada de função será resolvida como [D3DXSavePRTCompBufferToFileW](). Caso contrário, a chamada de função será resolvida como **D3DXSavePRTCompBufferToFileA**.
+A configuração do compilador também determina a versão da função. Se Unicode for definido, a chamada de função será resolvida para [D3DXSavePRTCompBufferToFileW.]() Caso contrário, a chamada de função será resolvida **para D3DXSavePRTCompBufferToFileA.**
 
-O formato de arquivo do PCA é um arquivo binário na forma de um cabeçalho e dois ou três blocos de dados.
+O formato de arquivo PCA é um arquivo binário na forma de um header e, em seguida, dois ou três blocos de dados.
 
 ```cpp
 struct PRTCompressHeader
@@ -74,11 +74,11 @@ struct PRTCompressHeader
 };
 ```
 
-Para o caso de *bIsTex* ser diferente de zero, *NumSamples* deve ser igual `TexWidth * TexHeight` .
+Para o caso de *bIsTex* ser não zero, *NumSamples* deve ser igual a `TexWidth * TexHeight` .
 
-O bloco de dados base que segue o cabeçalho é de `NumCoeffs * NumChannels * (NumPCA + 1) * NumClusters * sizeof(float)` bytes.
+O bloco de dados base que segue o header é `NumCoeffs * NumChannels * (NumPCA + 1) * NumClusters * sizeof(float)` bytes.
 
-Depois disso, está o bloco de dados de pesos do PCA, que é de `NumPCA * NumSamples * sizeof(float)` bytes.
+A seguir está o bloco de dados de pesos pcA, que é `NumPCA * NumSamples * sizeof(float)` bytes.
 
 Se *NumClusters* for maior que 1, o arquivo terminará com o bloco de dados de IDs de cluster de `NumSamples * sizeof(UINT)` bytes.
 
@@ -86,9 +86,9 @@ Se *NumClusters* for maior que 1, o arquivo terminará com o bloco de dados de I
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX9Mesh. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3DX9Mesh.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 ## <a name="see-also"></a>Confira também
 
-[Funções de transferência radiante preputadas](dx9-graphics-reference-d3dx-functions-prt.md)
+[Funções de transferência de Radiance pré-comutadas](dx9-graphics-reference-d3dx-functions-prt.md)

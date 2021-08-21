@@ -3,18 +3,18 @@ title: Fazer um esboço
 description: Fazer um esboço
 ms.assetid: 4030aae7-26e7-4acd-a988-6ac53ce43639
 keywords:
-- Capas do Windows Media Player Mobile, esboços
+- Windows Media Player Capas móveis, esboços
 - capas, esboços
 - Criando capas, esboços
 - Esboços em capas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aff7edba0eaa115f6cc88c2a62f0060b700ed21a
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1e498850b723645f43cb2858cac9d40f7bf06822c49b70155ae5448c9d012910
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104160508"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118837219"
 ---
 # <a name="make-a-sketch"></a>Fazer um esboço
 
@@ -26,7 +26,7 @@ Inicie o Photoshop e crie uma nova imagem do tamanho necessário. Crie uma nova 
 
 O botão PlayPause está no canto superior esquerdo, os botões stop, Next e Ant estão à esquerda, o volume TrackBar está na parte inferior e o letreiro está entre o botão PlayPause e o volume TrackBar.
 
-Ao criar uma capa para o Windows Media Player 10 Mobile ou posterior, um botão PlayPauseStop deve ser usado em vez de um botão PlayPause. Um botão de parada adicional não é necessário.
+ao criar uma capa para Windows Media Player 10 Mobile ou posterior, um botão PlayPauseStop deve ser usado em vez de um botão PlayPause. Um botão de parada adicional não é necessário.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -35,9 +35,9 @@ Ao criar uma capa para o Windows Media Player 10 Mobile ou posterior, um botão 
 [**Criando a arte**](creating-the-art.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

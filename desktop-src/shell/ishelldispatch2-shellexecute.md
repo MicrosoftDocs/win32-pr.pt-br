@@ -1,7 +1,7 @@
 ---
-description: Método IShellDispatch2. ShellExecute-executa uma operação especificada em um arquivo especificado.
+description: Método IShellDispatch2.ShellExecute – executa uma operação especificada em um arquivo especificado.
 ms.assetid: a55e804c-ed7c-4b22-b86f-8e5653976654
-title: Método IShellDispatch2. ShellExecute (shldisp. h)
+title: Método IShellDispatch2.ShellExecute (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 5c058275948d5d96805ae24a76389321d7c69b8e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 8e524ea4a4422e92068d432a91165dfeb97155cfba1d5e6bd9a06ed75b7550cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108117014"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118721031"
 ---
-# <a name="ishelldispatch2shellexecute-method"></a>Método IShellDispatch2. ShellExecute
+# <a name="ishelldispatch2shellexecute-method"></a>Método IShellDispatch2.ShellExecute
 
 Executa uma operação especificada em um arquivo especificado.
 
@@ -57,46 +57,46 @@ IShellDispatch2.ShellExecute( _
 
 <dl> <dt>
 
-*sfile* \[ no\]
+*sFile* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **BSTR**](/previous-versions/windows/desktop/automat/bstr)**
 
-Uma **cadeia de caracteres** que contém o nome do arquivo no qual **ShellExecute** executará a ação especificada por *vOperation*.
+Uma **Cadeia de** Caracteres que contém o nome do arquivo no qual **ShellExecute** executará a ação especificada por *vOperation*.
 
 </dd> <dt>
 
-*vArguments* \[ em, opcional\]
+*vArguments* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
 Uma cadeia de caracteres que contém valores de parâmetro para a operação.
 
 </dd> <dt>
 
-*vDirectory* \[ em, opcional\]
+*vDirectory* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-O caminho totalmente qualificado do diretório que contém o arquivo especificado por *sfile*. Se esse parâmetro não for especificado, o diretório de trabalho atual será usado.
+O caminho totalmente qualificado do diretório que contém o arquivo especificado por *sFile*. Se esse parâmetro não for especificado, o diretório de trabalho atual será usado.
 
 </dd> <dt>
 
-*vOperation* \[ em, opcional\]
+*vOperation* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
-A operação a ser executada. Esse valor é definido como uma das cadeias de caracteres de verbo com suporte no arquivo. Para obter uma discussão sobre verbos, consulte a seção comentários. Se esse parâmetro não for especificado, a operação padrão será executada.
+A operação a ser executada. Esse valor é definido como uma das cadeias de caracteres verbais com suporte no arquivo. Para uma discussão sobre verbos, consulte a seção Comentários. Se esse parâmetro não for especificado, a operação padrão será executada.
 
 </dd> <dt>
 
-*vShow* \[ em, opcional\]
+*vShow* \[ in, opcional\]
 </dt> <dd>
 
-Tipo: **variante**
+Tipo: **Variante**
 
 Uma recomendação sobre como a janela do aplicativo deve ser exibida inicialmente. O aplicativo pode ignorar essa recomendação. Esse parâmetro pode usar um dos valores a seguir. Se esse parâmetro não for especificado, o aplicativo usará seu valor padrão.
 
@@ -121,17 +121,17 @@ Uma recomendação sobre como a janela do aplicativo deve ser exibida inicialmen
 
 ## <a name="remarks"></a>Comentários
 
-Esse método é implementado e acessado por meio do método [**shell. ShellExecute**](./shell-shellexecute.md) .
+Esse método é implementado e acessado por meio do [**método Shell.ShellExecute.**](./shell-shellexecute.md)
 
-Esse método é equivalente a iniciar um dos comandos associados ao menu de atalho de um arquivo. Cada comando é representado por uma cadeia de caracteres de verbo. O conjunto de verbos com suporte varia de arquivo para arquivo. O verbo mais comumente suportado é "Open", que também é geralmente o verbo padrão. Outros verbos podem ter suporte apenas em determinados tipos de arquivos. Para obter mais informações sobre os verbos do Shell, consulte [iniciando aplicativos](launch.md) ou [estendendo menus de atalho](context.md).
+Esse método é equivalente a iniciar um dos comandos associados ao menu de atalho de um arquivo. Cada comando é representado por uma cadeia de caracteres de verbo. O conjunto de verbos com suporte varia de arquivo para arquivo. O verbo com suporte mais comum é "open", que também é geralmente o verbo padrão. Outros verbos podem ser suportados apenas por determinados tipos de arquivos. Para mais discussão sobre verbos do Shell, consulte [Iniciando aplicativos](launch.md) ou [Estendendo menus de atalho.](context.md)
 
-Este método não está disponível atualmente no Microsoft Visual Basic.
+Esse método não está disponível atualmente no Microsoft Visual Basic.
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso de **ShellExecute** para abrir o bloco de notas. O uso é mostrado para JScript e VBScript.
+Os exemplos a seguir mostram o uso de **ShellExecute para** abrir Bloco de notas. O uso é mostrado para JScript e VBScript.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -147,7 +147,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -172,11 +172,11 @@ VBScript
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, Windows aplicativos da área de \[ trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 5.0 ou posterior)</dt> </dl> |
 
 
 

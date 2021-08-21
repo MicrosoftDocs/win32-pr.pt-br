@@ -1,8 +1,8 @@
 ---
-description: A \_ classe CIM PhysicalFrame é uma classe pai de rack, chassi e outros compartimentos de quadro, pois são definidos em classes de extensão.
+description: A classe CIM PhysicalFrame é uma classe pai de rack, chassi e outros compartimentos de quadro conforme eles são \_ definidos em classes de extensão.
 ms.assetid: 571c8ca2-1644-4060-8d89-d9625a591f86
 ms.tgt_platform: multiple
-title: Classe CIM_PhysicalFrame
+title: CIM_PhysicalFrame classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -44,23 +44,23 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 0b445c928412bc475a3269ba59be48395b254efa
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 1472088ae2aa094381611fa58da3a67122fddd7255ef9b8364189ee17c881644
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118678167"
 ---
-# <a name="cim_physicalframe-class"></a>\_Classe CIM PhysicalFrame
+# <a name="cim_physicalframe-class"></a>Classe Cim \_ PhysicalFrame
 
-A classe **CIM \_ PhysicalFrame** é uma classe pai de rack, chassi e outros compartimentos de quadro, pois são definidos em classes de extensão. Propriedades como **VisibleAlarm** e **AudibleAlarm** e dados relacionados a violações de segurança são incluídos nessa classe pai.
+A **classe CIM \_ PhysicalFrame** é uma classe pai de rack, chassi e outros compartimentos de quadro conforme eles são definidos em classes de extensão. Propriedades como **VisibleAlarm** e **VisibleAlarm** e dados relacionados a violações de segurança são incluídos nessa classe pai.
 
 > [!IMPORTANT]
-> As classes DMTF (Distributed Management Task Force) CIM (modelo CIM) são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos [esquemas de versão do CIM 2. x](https://dmtf.org/standards/cim/schemas).
+> As classes CIM (Distributed Management Task Force) modelo CIM DMTF são as classes pai nas quais as classes WMI são criadas. Atualmente, o WMI dá suporte apenas aos esquemas de versão [do CIM 2.x.](https://dmtf.org/standards/cim/schemas)
 
  
 
-A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
+A sintaxe a seguir é simplificada do Managed Object Format (MOF) e inclui todas as suas propriedades herdadas. As propriedades são listadas em ordem alfabética, não em ordem MOF.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -103,20 +103,20 @@ class CIM_PhysicalFrame : CIM_PhysicalPackage
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ PhysicalFrame** tem estes tipos de membros:
+A **classe \_ Cim PhysicalFrame** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-A classe **CIM \_ PhysicalFrame** tem esses métodos.
+A **classe Cim \_ PhysicalFrame** tem esses métodos.
 
 
 
 | Método                                                                 | Descrição                                                                                                                                      |
 |:-----------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**Iscompatível**](iscompatible-method-in-class-cim-physicalframe.md) | Verifica se o elemento físico referenciado pode ser contido ou inserido no pacote físico. Não implementado pelo WMI.<br/> |
+| [**IsCompatible**](iscompatible-method-in-class-cim-physicalframe.md) | Verifica se o elemento físico referenciado pode ser contido ou inserido no pacote físico. Não implementado pelo WMI.<br/> |
 
 
 
@@ -124,20 +124,20 @@ A classe **CIM \_ PhysicalFrame** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ PhysicalFrame** tem essas propriedades.
+A **classe Cim \_ PhysicalFrame** tem essas propriedades.
 
 <dl> <dt>
 
 **AudibleAlarm**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for **true**, o quadro será equipado com um alarme audível.
+Se **TRUE**, o quadro será equipado com um alarme audível.
 
 </dd> <dt>
 
@@ -166,7 +166,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Cadeia de caracteres de forma livre que contém informações sobre como os vários cabos são conectados e agrupados para o quadro. Com muitos cabos de rede, relacionados ao armazenamento e de energia, o gerenciamento de cabos pode ser um esforço complexo e desafiador. Essa propriedade de cadeia de caracteres contém informações para auxiliar no assembly e no serviço do quadro.
+Cadeia de caracteres de forma livre que contém informações sobre como os vários cabos são conectados e agrupados para o quadro. Com muitos cabos de rede, de armazenamento e de energia, o gerenciamento de cabos pode ser um esforço complexo e desafiador. Essa propriedade de cadeia de caracteres contém informações para auxiliar no assembly e no serviço do quadro.
 
 </dd> <dt>
 
@@ -179,12 +179,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Caption")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Legenda")
 </dt> </dl>
 
-Breve descrição textual do objeto.
+Descrição textual curta do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -197,12 +197,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**\_ chave CIM**](/windows/desktop/WmiSdk/standard-wmi-qualifiers), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**\_ Chave CIM,**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome da classe ou subclasse usada na criação de uma instância. Quando usado com outras propriedades de chave da classe, essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
+Nome da classe ou subclasse usada na criação de uma instância. Quando usada com outras propriedades de chave da classe , essa propriedade permite que todas as instâncias da classe e suas subclasses sejam identificadas exclusivamente.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -220,7 +220,7 @@ Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("po
 
 Profundidade do pacote físico, em polegadas.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
@@ -238,7 +238,7 @@ Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (
 
 Descrição textual do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -256,57 +256,57 @@ Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("po
 
 Altura do pacote físico, em polegadas.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
 **HotSwappable**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se **for true**, o pacote poderá ser intercambiável. Um pacote físico pode ser intercambiável se o elemento puder ser substituído por um fisicamente diferente (mas equivalente) um enquanto o pacote que o contém está ativado. Por exemplo, um componente de ventilador pode ser projetado para ser intercambiável. Todos os componentes que podem ser intercambiáveis são inerentemente removíveis e substituíveis.
+Se **TRUE**, o pacote poderá ser trocado por hot-swapp. Um pacote físico poderá ser trocado por hot-swapp se o elemento puder ser substituído por um fisicamente diferente (mas equivalente) enquanto o pacote que o contém está ligado. Por exemplo, um componente de ventilador pode ser projetado para ser trocado por hot-swapp. Todos os componentes que podem ser trocados por hot-swapp são inerentemente removíveis e substituíveis.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Data e hora em que o objeto foi instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
 **LockPresent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Se for **true**, o quadro será protegido com um bloqueio.
+Se **TRUE**, o quadro será protegido com um bloqueio.
 
 </dd> <dt>
 
-**Manufacturer**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -315,12 +315,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome da organização responsável por produzir o elemento físico. Para obter mais informações, consulte a propriedade **Vendor** do [**\_ produto CIM**](cim-product.md).
+Nome da organização responsável por produzir o elemento físico. Para obter mais informações, consulte **a propriedade Vendor** do produto [**CIM \_**](cim-product.md).
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -333,7 +333,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Nome pelo qual o elemento físico é geralmente conhecido.
@@ -842,7 +842,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Confira também
+## <a name="see-also"></a>Consulte também
 
 <dl> <dt>
 

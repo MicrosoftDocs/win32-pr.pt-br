@@ -1,9 +1,9 @@
 ---
 title: Tipo complexo triggerBaseType
-description: Define o atributo, os elementos filho de base e as informações de sequenciamento para todos os tipos complexos de gatilho.
+description: Define o atributo, elementos filho base e informações de sequenciamento para todos os tipos complexos de gatilho.
 ms.assetid: 1a2d004a-6f52-42b7-b0d0-ace8d27e9166
 keywords:
-- Agendador de Tarefas tipo complexo triggerBaseType
+- tipo complexo triggerBaseType Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 56602e4a7e6599b7b756ff6bc109376dddc63ac0
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 21eed68ff260d199a46adabc0e560533658c6cc1398d00f9507b80b40fb69955
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295907"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118611007"
 ---
 # <a name="triggerbasetype-complex-type"></a>Tipo complexo triggerBaseType
 
-Define o atributo, os elementos filho de base e as informações de sequenciamento para todos os tipos complexos de gatilho.
+Define o atributo, elementos filho base e informações de sequenciamento para todos os tipos complexos de gatilho.
 
 ``` syntax
 <xs:complexType name="triggerBaseType"
@@ -65,9 +65,9 @@ Define o atributo, os elementos filho de base e as informações de sequenciamen
 | Elemento                                                                                      | Type                                                                     | Descrição                                                                                                            |
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | [**habilitado**](taskschedulerschema-enabled-triggerbasetype-element.md)                       | booleano                                                                  | Especifica que o gatilho está habilitado.<br/>                                                                      |
-| [**Limite de fim**](taskschedulerschema-endboundary-triggerbasetype-element.md)               | dateTime                                                                 | A data e a hora em que o gatilho é desativado.<br/>                                                          |
+| [**EndBoundary**](taskschedulerschema-endboundary-triggerbasetype-element.md)               | dateTime                                                                 | A data e a hora em que o gatilho é desativado.<br/>                                                          |
 | [**ExecutionTimeLimit**](taskschedulerschema-executiontimelimit-triggerbasetype-element.md) | duration                                                                 | Especifica o intervalo quando o gatilho pode iniciar a tarefa.<br/>                                                 |
-| [**Repetição**](taskschedulerschema-repetition-triggerbasetype-element.md)                 | [**repetição**](taskschedulerschema-repetitiontype-complextype.md) | Especifica com que frequência a tarefa é executada e por quanto tempo o padrão de repetição é repetido quando o gatilho é acionado.<br/> |
+| [**Repetição**](taskschedulerschema-repetition-triggerbasetype-element.md)                 | [**repetitionType**](taskschedulerschema-repetitiontype-complextype.md) | Especifica com que frequência a tarefa é executado e por quanto tempo o padrão de repetição é repetido depois que o gatilho é acionado.<br/> |
 | [**StartBoundary**](taskschedulerschema-startboundary-triggerbasetype-element.md)           | dateTime                                                                 | A data e a hora em que o gatilho é ativado.<br/>                                                            |
 
 
@@ -84,15 +84,15 @@ Define o atributo, os elementos filho de base e as informações de sequenciamen
 
 ## <a name="remarks"></a>Comentários
 
-Os tipos complexos de gatilho incluem o seguinte.
+Tipos complexos de gatilho incluem o seguinte.
 
 -   [**bootTriggerType**](taskschedulerschema-boottriggertype-complextype.md)
 -   [**calendarTriggerType**](taskschedulerschema-calendartriggertype-complextype.md)
--   [**eventTriggertype**](taskschedulerschema-eventtriggertype-complextype.md)
+-   [**eventTriggerType**](taskschedulerschema-eventtriggertype-complextype.md)
 -   [**idleTriggerType**](taskschedulerschema-idletriggertype-complextype.md)
 -   [**logonTriggerType**](taskschedulerschema-logontriggertype-complextype.md)
 -   [**registrationTriggerType**](taskschedulerschema-registrationtriggertype-complextype.md)
--   [**timetriggertype**](taskschedulerschema-timetriggertype-complextype.md)
+-   [**timeTriggerType**](taskschedulerschema-timetriggertype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -100,8 +100,8 @@ Os tipos complexos de gatilho incluem o seguinte.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -109,7 +109,7 @@ Os tipos complexos de gatilho incluem o seguinte.
 
 <dl> <dt>
 
-[Tipos complexos de esquema de Agendador de Tarefas](task-scheduler-schema-complex-types.md)
+[Agendador de Tarefas complexos de esquema](task-scheduler-schema-complex-types.md)
 </dt> <dt>
 
 [Agendador de Tarefas](task-scheduler-start-page.md)

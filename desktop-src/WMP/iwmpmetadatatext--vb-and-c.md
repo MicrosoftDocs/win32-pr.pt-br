@@ -1,10 +1,10 @@
 ---
-title: Interface IWMPMetadataText (VB e C ) (Wmp.h)
+title: Interface IWMPMetadataText (VB e C) (WMP. h)
 description: Fornece propriedades para obter informações sobre atributos de metadados textuais complexos.
 ms.assetid: c0f300d2-6ddb-470b-849d-771d3719bb97
 keywords:
-- Interface IWMPMetadataText (VB e C ) Windows Media Player
-- Interface IWMPMetadataText (VB e C ) Windows Media Player , descrita
+- Windows Media Player de interface IWMPMetadataText (VB e C)
+- Windows Media Player de interface IWMPMetadataText (VB e C), descrita
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 146afd709d0805043603cfb3b14b1c1fc1838075
-ms.sourcegitcommit: 0f7a8198bacd5493ab1e78a9583c7a3578794765
+ms.openlocfilehash: 9e39e82b117bcf4425ac09d7d18357fbfe5bfb73ed5c2848087f1cc7cab95fde
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110424296"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118575402"
 ---
 # <a name="iwmpmetadatatext-vb-and-c-interface"></a>Interface IWMPMetadataText (VB e C#)
 
@@ -39,7 +39,7 @@ A interface **IWMPMetadataText** expõe as propriedades a seguir.
 
  
 
-Obter uma interface **IWMPMetadataText** passando um nome de atributo como **WM/UserWebURL** para o método a seguir e lançando o objeto retornado.
+Obtenha uma interface **IWMPMetadataText** passando um nome de atributo como **WM/UserWebURL** para o método a seguir e convertendo o objeto retornado.
 
 
 
@@ -61,7 +61,7 @@ A interface **IWMPMetadataText (VB e C#)** não define nenhum membro.
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Wmp.h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>WMP. h</dt> </dl> |
 
 
 
@@ -69,7 +69,7 @@ A interface **IWMPMetadataText (VB e C#)** não define nenhum membro.
 
 <dl> <dt>
 
-[**Interfaces para Visual Basic .NET e C #**](interfaces-for-visual-basic--net-and-c.md)
+[**Interfaces para Visual Basic .net e C #**](interfaces-for-visual-basic--net-and-c.md)
 </dt> </dl>
 
  

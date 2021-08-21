@@ -1,19 +1,19 @@
 ---
 title: Infraestrutura de WinEvents
-description: O sistema operacional Microsoft Windows inclui um recurso, chamado WinEvents, que permite que processos e aplicativos em execução na área de trabalho do Windows troquem determinados tipos de informações.
+description: o sistema operacional Microsoft Windows inclui um recurso, chamado WinEvents, que permite que processos e aplicativos em execução na área de trabalho Windows troquem determinados tipos de informações.
 ms.assetid: ba97b00b-4a4c-4889-ae9c-8e92eb742849
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e8846582a6d18f304cc08e3cb13ddb444cb278d7
-ms.sourcegitcommit: 85688bbfbe5b121bc05ddf112d54c23a469dfbc0
+ms.openlocfilehash: 8662cdcbfa9546ce04dc787e7089f68ba1c03137c41067c20792f7da111cf2a6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "103639076"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118563281"
 ---
 # <a name="winevents"></a>WinEvents
 
-O sistema operacional Microsoft Windows inclui um recurso, chamado *WinEvents*, que permite que processos e aplicativos em execução na área de trabalho do Windows troquem determinados tipos de informações. As ferramentas de acessibilidade que usam a automação da interface do usuário da Microsoft e o Microsoft Acessibilidade Ativa estão entre os usuários primários do WinEvents.
+o sistema operacional Microsoft Windows inclui um recurso, chamado *WinEvents*, que permite que processos e aplicativos em execução na área de trabalho Windows troquem determinados tipos de informações. As ferramentas de acessibilidade que usam a automação da interface do usuário da Microsoft e o Microsoft Acessibilidade Ativa estão entre os usuários primários do WinEvents.
 
 No contexto de acessibilidade, os provedores de automação da interface do usuário e os Microsoft Acessibilidade Ativa Servers usam WinEvents para notificar os clientes sobre alterações em uma interface do usuário do aplicativo, como quando um elemento de interface do usuário foi criado ou destruído, ou quando um nome de elemento, estado ou valor foi alterado.
 
@@ -37,9 +37,9 @@ Para obter uma visão geral do processo de notificação de eventos no Microsoft
 [Infraestrutura comum](common-infrastructure.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

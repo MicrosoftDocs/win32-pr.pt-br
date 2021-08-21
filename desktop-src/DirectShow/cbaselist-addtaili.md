@@ -1,7 +1,7 @@
 ---
-description: O método addcaudai adiciona um item ao final da lista.
+description: O método AddTailI adiciona um item ao final da lista.
 ms.assetid: 699408d1-fee2-43d7-b2c3-51637d063b2c
-title: Método CBaseList. addcaudai (Wxlist. h)
+title: Método CBaseList.AddTailI (Wxlist.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 8c702256d75a2de6f914838f5c3412a4308a7241
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d3317877bfa67d2d39d469882e0b12b9fd79a923873022a51ee48712fc772743
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751914"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118659122"
 ---
-# <a name="cbaselistaddtaili-method"></a>Método CBaseList. addcaudai
+# <a name="cbaselistaddtaili-method"></a>Método CBaseList.AddTailI
 
 O `AddTailI` método adiciona um item ao final da lista.
 
@@ -49,13 +49,13 @@ Ponteiro para o item.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna um valor de posição para a nova posição de cauda.
+Retorna um valor POSITION para a nova posição da parte final.
 
 ## <a name="remarks"></a>Comentários
 
-Se o método falhar, ele retornará **NULL**.
+Se o método falhar, ele retornará **NULL.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,8 +63,8 @@ Se o método falhar, ele retornará **NULL**.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxlist. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxlist.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

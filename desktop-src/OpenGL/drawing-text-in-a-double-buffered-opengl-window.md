@@ -1,21 +1,21 @@
 ---
-title: Desenho de texto em uma janela Double-Buffered OpenGL
-description: Você desenha o texto em uma janela OpenGL com buffer duplo criando listas de exibição para os caracteres selecionados em uma fonte e, em seguida, executando a lista de exibição apropriada para cada caractere que você deseja desenhar.
+title: Desenhando texto em uma Double-Buffered OpenGL
+description: Você desenha texto em uma janela OpenGL com buffer duplo criando listas de exibição para caracteres selecionados em uma fonte e, em seguida, executando a lista de exibição apropriada para cada caractere que você deseja desenhar.
 ms.assetid: 59ac0414-a845-4f40-be9c-9962fd1585f6
 keywords:
-- OpenGL no Windows, texto
+- OpenGL no Windows,texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8b0bf4cc99a1806d734ccde5cfae98f4d367da13
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 84202f59ca1a232bae37603b2ff657cb5c61ae0a1d3961b960b624d061ab20cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103637050"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118618538"
 ---
-# <a name="drawing-text-in-a-double-buffered-opengl-window"></a>Desenho de texto em uma janela Double-Buffered OpenGL
+# <a name="drawing-text-in-a-double-buffered-opengl-window"></a>Desenhando texto em uma Double-Buffered OpenGL
 
-Você desenha o texto em uma janela OpenGL com buffer duplo criando listas de exibição para os caracteres selecionados em uma fonte e, em seguida, executando a lista de exibição apropriada para cada caractere que você deseja desenhar. O exemplo de código a seguir cria um contexto de renderização, desenha um triângulo vermelho e o rotula com texto. Para este código de exemplo, presumimos que haja um contexto de dispositivo, com um formato de fonte e pixel.
+Você desenha texto em uma janela OpenGL com buffer duplo criando listas de exibição para caracteres selecionados em uma fonte e, em seguida, executando a lista de exibição apropriada para cada caractere que você deseja desenhar. O exemplo de código a seguir cria um contexto de renderização, desenha um triângulo vermelho e, em seguida, rotula-o com texto. Para este código de exemplo, presumimos que haja um contexto de dispositivo, com um formato de fonte e pixel.
 
 
 ```C++
@@ -72,9 +72,9 @@ wglDeleteContext(hglrc);
 
 
 
- 
+ 
 
- 
+ 
 
 
 

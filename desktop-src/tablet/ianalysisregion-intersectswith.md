@@ -1,7 +1,7 @@
 ---
-description: Determina se a área do IAnalysisRegion intersecciona com o retângulo especificado.
+description: Determina se a área da IAnalysisRegion intersecções com o retângulo especificado.
 ms.assetid: 683c3ad8-0236-474e-a16d-6164c2244cfb
-title: 'Método IAnalysisRegion:: IntersectsWith (IACom. h)'
+title: Método IAnalysisRegion::IntersectsWith (IACom.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - IACom.dll
-ms.openlocfilehash: 99ff1ce8d3039b04d83f9cdd5c1d6aebe00be407
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 04613e061929bba04c14be37914b22a51de0377f125b21fa29db9c56fc8dfeff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501822"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720013"
 ---
-# <a name="ianalysisregionintersectswith-method"></a>Método IAnalysisRegion:: IntersectsWith
+# <a name="ianalysisregionintersectswith-method"></a>Método IAnalysisRegion::IntersectsWith
 
-Determina se a área do [**IAnalysisRegion**](ianalysisregion.md) intersecciona com o retângulo especificado.
+Determina se a área da [**IAnalysisRegion**](ianalysisregion.md) intersecções com o retângulo especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,27 +40,27 @@ HRESULT IntersectsWith(
 
 <dl> <dt>
 
-*pRectangle* \[ no\]
+*pRectangle* \[ Em\]
 </dt> <dd>
 
-Um ponteiro para o retângulo com o qual comparar, em coordenadas de espaço de tinta.
+Um ponteiro para o retângulo com o qual comparar, em coordenadas de espaço em tinta.
 
 </dd> <dt>
 
-*pfIsIntersecting* \[ fora\]
+*pfIsIntersecting* \[ out\]
 </dt> <dd>
 
-**Variante \_ TRUE** se a área do [**IAnalysisRegion**](ianalysisregion.md) Interseccionar com o retângulo especificado; caso contrário, **Variant \_ false**.
+**VARIANT \_ TRUE** se a área da [**IAnalysisRegion**](ianalysisregion.md) intersecções com o retângulo especificado; caso contrário, **VARIANT \_ FALSE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Para obter uma descrição dos valores de retorno, consulte [classes e interfaces – análise de tinta](classes-and-interfaces---ink-analysis.md).
+Para ver uma descrição dos valores de retorno, consulte [Classes e interfaces – Análise de Tinta.](classes-and-interfaces---ink-analysis.md)
 
 ## <a name="remarks"></a>Comentários
 
-A comparação está em coordenadas de espaço de tinta.
+A comparação está em coordenadas de espaço em tinta.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -68,9 +68,9 @@ A comparação está em coordenadas de espaço de tinta.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do XP Tablet PC \[ Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom.h (também requer IACom \_ i.c)</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>IACom.dll</dt> </dl>                          |
 
 

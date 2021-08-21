@@ -8,18 +8,18 @@ keywords:
 - Implementando ADSI de provedores ADSI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 30bdd0da406d9e65af898664e76b5e455540ebeb
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: cd3eb1275398a82a2ef179678e56cb9a7eda2e63eb4278906fc925fcb1d7cf6a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103634873"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118427554"
 ---
 # <a name="implementing-active-directory-service-interfaces-providers"></a>Implementando provedores de interfaces de serviço Active Directory
 
 As interfaces de serviço do Active Directory (ADSI) são interfaces COM que encapsulam objetos de serviço de diretório para expô-los aos clientes dos serviços de diretório. Ao fornecer uma implementação do ADSI, você expande sua base de clientes para o conjunto de aplicativos cliente ADSI.
 
-Assim como acontece com qualquer implementação de COM, você pode escrever um provedor ADSI em vários idiomas. As interfaces COM do ADSI são definidas como interfaces duplas que permitem a resolução de nomes em tempo de execução e de compilação e podem ser chamadas por linguagens em conformidade com a automação, como Visual Basic, Visual Basic Scripting Edition, e também as linguagens mais conscientes de desempenho e eficiência, como C e C++. Os clientes ADSI também incluem aplicativos Web que usam Active Server páginas e snap-ins de administração por meio do console de gerenciamento Microsoft.
+Assim como acontece com qualquer implementação de COM, você pode escrever um provedor ADSI em vários idiomas. as interfaces COM do ADSI são definidas como interfaces duplas que permitem a resolução de nomes em tempo de execução e de compilação e podem ser chamadas por linguagens em conformidade com a automação, como o Visual Basic, o Visual Basic scripting Edition, e também as linguagens mais conscientes de desempenho e eficiência, como C e C++. Os clientes ADSI também incluem aplicativos Web que usam Active Server páginas e snap-ins de administração por meio do console de gerenciamento Microsoft.
 
 Como a ADSI fornece seu próprio provedor de OLE DB, a implementação dos recursos de pesquisa definidos pelo [**IDirectorySearch**](/windows/desktop/api/Iads/nn-iads-idirectorysearch) também permite que os clientes ADSI consultem os dados do serviço de diretório.
 
@@ -29,9 +29,9 @@ Além disso, as metainterfaces ADSI representam objetos comuns usados por admini
 
 Se o serviço de diretório oferecer suporte a uma representação de esquema, o suporte às interfaces de gerenciamento de esquema tornará seu namespace diretamente acessível aos navegadores do serviço de diretório. Ao publicar seus recursos por meio do esquema, os clientes podem consultar seu serviço de diretório online e aproveitar os serviços que você oferece. Devido à disponibilidade do esquema online e à vantagem da interface COM, você pode continuar disponibilizando novos recursos para o software cliente ao mesmo tempo em que oferece suporte a versões de nível inferior.
 
- 
+ 
 
- 
+ 
 
 
 

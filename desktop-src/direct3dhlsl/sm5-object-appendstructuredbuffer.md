@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6c140052c861c8da3df6378fc3bc49816998c130
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 23efdb58b8effc0ccdaf32da31ad93dfaf8f6eae602c6769c947ffa0c0f505d7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641321"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118510105"
 ---
 # <a name="appendstructuredbuffer"></a>AppendStructuredBuffer
 
@@ -33,7 +33,7 @@ Buffer de saída que aparece como um fluxo ao qual o sombreador pode acrescentar
 
 
 
- 
+ 
 
 O formato UAV associado a esse recurso precisa ser criado com o formato \_ desconhecido de formato dxgi \_ .
 
@@ -53,19 +53,19 @@ Esse objeto tem suporte nos seguintes modelos de sombreador.
 
 
 
- 
+ 
 
 Este objeto tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 
 
 
- 
+ 
 
 ## <a name="see-also"></a>Confira também
 
@@ -74,6 +74,6 @@ Este objeto tem suporte para os seguintes tipos de sombreadores:
 [Objetos do Shader Model 5](d3d11-graphics-reference-sm5-objects.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

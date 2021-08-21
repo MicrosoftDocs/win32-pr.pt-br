@@ -3,21 +3,21 @@ title: Imagens primárias
 description: Imagens primárias
 ms.assetid: 6f8e4b33-c84f-4404-82a5-2f1eabe323d4
 keywords:
-- Capas do Windows Media Player, arquivos de arte
+- Windows Media Player capas, arquivos de arte
 - capas, arquivos de arte
 - arquivos para capas, arte
 - arquivos de arte para capas, imagens primárias
-- Capas do Windows Media Player, imagens primárias
+- capas de Windows Media Player, imagens primárias
 - capas, imagens primárias
 - imagens primárias em capas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ed3759dbfe22eb1a9bf0e3ac8812b797b5eb89f2
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 1cc3877ff59536318df27d726acd2766870ebbca8d24f9e48d0ab9058608feab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105786211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118571107"
 ---
 # <a name="primary-images"></a>Imagens primárias
 
@@ -30,9 +30,9 @@ Você desejará criar imagens primárias para sua capa. A imagem primária é co
 [**Arquivos de arte**](art-files.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

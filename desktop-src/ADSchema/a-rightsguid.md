@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4da47ec8e4736dd13b6ba39da0208aed505aa8a9
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 057ede64b269e607e9f8e7f914756dd541b7d1d473bc0628c490d5b7fccb618d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086996"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118681717"
 ---
 # <a name="rights-guid-attribute"></a>Rights-Guid atributo
 
@@ -59,7 +59,7 @@ O GUID usado para representar um direito estendido dentro de uma entrada de cont
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -80,7 +80,7 @@ O GUID usado para representar um direito estendido dentro de uma entrada de cont
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -101,7 +101,7 @@ O GUID usado para representar um direito estendido dentro de uma entrada de cont
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -122,7 +122,7 @@ O GUID usado para representar um direito estendido dentro de uma entrada de cont
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -143,7 +143,7 @@ O GUID usado para representar um direito estendido dentro de uma entrada de cont
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -164,7 +164,7 @@ O GUID usado para representar um direito estendido dentro de uma entrada de cont
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -185,7 +185,7 @@ O GUID usado para representar um direito estendido dentro de uma entrada de cont
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | True                                                            |
+| É de valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
 | No catálogo global      | Falso                                                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
@@ -193,7 +193,7 @@ O GUID usado para representar um direito estendido dentro de uma entrada de cont
 | Range-Upper            | 36                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**Controle-acesso-à direita**](c-controlaccessright.md)<br/> |
+| Classes usadas em        | [**Control-Access-Right**](c-controlaccessright.md)<br/> |
 
 
 

@@ -1,11 +1,11 @@
 ---
-title: Atributo Address-Book-raízes
-description: Usado pelo Exchange. O Exchange configura árvores de contêineres de catálogo de endereços para aparecer no catálogo de endereços MAPI. Esse atributo no objeto de configuração do Exchange lista as raízes das árvores de contêiner do catálogo de endereços. | Atributo Address-Book-raízes
+title: Atributo Address-Book-Roots
+description: Usado por Exchange. Exchange configura árvores de contêineres do livro de endereços para aparecer no livro de endereços MAPI. Esse atributo no objeto Exchange Config lista as raízes das árvores de contêiner do livro de endereços. | Atributo Address-Book-Roots
 ms.assetid: 7e6d2677-9818-4870-8429-50f73f9c8c1f
 ms.tgt_platform: multiple
 keywords:
-- Atributo de raiz de catálogo de endereços-esquema do AD
-- Esquema de AD do atributo addressBookRoots
+- Esquema do AD do atributo Address-Book-Roots
+- Esquema do AD do atributo addressBookRoots
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ab195744bb7fb5029a9a48aeca55d703e6e05b62
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: d2a1d6edd1ba18da126be413224bd32c71c707e8cb905dca9445513467b9af22
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105756067"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118689003"
 ---
-# <a name="address-book-roots-attribute"></a>Atributo Address-Book-raízes
+# <a name="address-book-roots-attribute"></a>Atributo Address-Book-Roots
 
-Usado pelo Exchange. O Exchange configura árvores de contêineres de catálogo de endereços para aparecer no catálogo de endereços MAPI. Esse atributo no objeto de configuração do Exchange lista as raízes das árvores de contêiner do catálogo de endereços.
+Usado por Exchange. Exchange configura árvores de contêineres do livro de endereços para aparecer no livro de endereços MAPI. Esse atributo no objeto Exchange Config lista as raízes das árvores de contêiner do livro de endereços.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Raízes de catálogo de endereços                      |
-| LDAP-Display-Name | addressBookRoots                        |
+| CN                | Raízes de livro de endereços                      |
+| Ldap-Display-Name | addressBookRoots                        |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.1244                 |
-| System-ID-GUID    | f70b6e48-06f4-11d2-aa53-00c04fd7d83a    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | f70b6e48-06f4-11d2-aa53-00c04fd7d83a    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,15 +58,15 @@ Usado pelo Exchange. O Exchange configura árvores de contêineres de catálogo 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Usado pelo Exchange. O Exchange configura árvores de contêineres de catálogo 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Usado pelo Exchange. O Exchange configura árvores de contêineres de catálogo 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Usado pelo Exchange. O Exchange configura árvores de contêineres de catálogo 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Usado pelo Exchange. O Exchange configura árvores de contêineres de catálogo 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Usado pelo Exchange. O Exchange configura árvores de contêineres de catálogo 
 | ID do link                | \-                                                                                   |
 | MAPI-Id                | \-                                                                                   |
 | System-Only            | Falso                                                                                |
-| É de valor único       | Falso                                                                                |
+| Tem valor único       | Falso                                                                                |
 | É indexado             | Falso                                                                                |
-| No catálogo global      | Falso                                                                                |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                         |
+| No Catálogo Global      | Falso                                                                                |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                         |
 | Range-Lower            | \-                                                                                   |
 | Range-Upper            | \-                                                                                   |
 | Search-Flags           | 0x00000000                                                                           |
 | System-Flags           | 0x00000010                                                                           |
-| Classes usadas em        | [**Ms-Exch-Configuration-contêiner**](c-msexchconfigurationcontainer.md)<br/> |
+| Classes usadas em        | [**ms-Exch-Configuration-Container**](c-msexchconfigurationcontainer.md)<br/> |
 
 
 

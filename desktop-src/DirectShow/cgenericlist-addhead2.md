@@ -1,7 +1,7 @@
 ---
 description: O método AddHead adiciona uma lista à frente da lista.
 ms.assetid: 9a344bed-d871-4082-9bbb-330f2ff42cca
-title: Método CGenericList. AddHead (Wxlist. h)-parâmetro pList
+title: Método CGenericList.AddHead (Wxlist.h) – parâmetro pList
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,14 +16,14 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 0039566f111033062bca080cb24924c7ea4324ac
-ms.sourcegitcommit: 168d11879cb9fd89d26f826482725c0a626be00f
+ms.openlocfilehash: c26667ce12af902f3d5cf355a6556dc95e5dd1f5e0cad77f944e663eeef8ce67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "105754539"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118656142"
 ---
-# <a name="cgenericlistaddhead-method-wxlisth---plist-parameter"></a>Método CGenericList. AddHead (Wxlist. h)-parâmetro pList
+# <a name="cgenericlistaddhead-method-wxlisth---plist-parameter"></a>Método CGenericList.AddHead (Wxlist.h) – parâmetro pList
 
 O `AddHead` método adiciona uma lista à frente da lista.
 
@@ -42,23 +42,23 @@ BOOL AddHead(
 
 <dl> <dt>
 
-*pList* 
+*Plist* 
 </dt> <dd>
 
-Ponteiro para a lista de itens a serem adicionados.
+Ponteiro para a lista de itens a adicionar.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna **verdadeiro** se for bem-sucedido ou **false** caso contrário.
+Retorna **TRUE se** for bem-sucedido ou FALSE **caso** contrário.
 
 ## <a name="requirements"></a>Requisitos
 
 | Requisito | Valor |
 |-|-|
-| parâmetro | Wxlist. h (incluir fluxos. h) |
-| Biblioteca| Strmbase. lib (compilações de varejo); Strmbasd. lib (compilações de depuração) |
+| parâmetro | Wxlist.h (incluir Fluxos.h) |
+| Biblioteca| Strmbase.lib (builds de varejo); Strmbasd.lib (builds de depuração) |
 
 ## <a name="see-also"></a>Confira também
 

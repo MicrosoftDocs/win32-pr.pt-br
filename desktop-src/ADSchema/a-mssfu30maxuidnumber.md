@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38ba4e4d3a4b85d6faf83386078aae413447bfc4
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 8f55ee108bb58ef3c4121ee06631f39f9430feeeda9795c062cec5fd0b089c91
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499972"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118682492"
 ---
 # <a name="mssfu-30-max-uid-number-attribute"></a>atributo msSFU-30-Max-Uid-Number
 
@@ -56,8 +56,8 @@ Contém o número máximo de usuários que podem ser migrados para um domínio N
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
@@ -77,8 +77,8 @@ Contém o número máximo de usuários que podem ser migrados para um domínio N
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
@@ -98,8 +98,8 @@ Contém o número máximo de usuários que podem ser migrados para um domínio N
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
@@ -119,8 +119,8 @@ Contém o número máximo de usuários que podem ser migrados para um domínio N
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
-| É indexado             | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
+| É indexado             | Verdadeiro                                                           |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |

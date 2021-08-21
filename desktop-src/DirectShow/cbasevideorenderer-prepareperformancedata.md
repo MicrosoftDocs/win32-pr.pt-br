@@ -1,7 +1,7 @@
 ---
-description: O método PreparePerformanceData define os \_ valores m trLate e m \_ trFrame do quadro atual.
+description: O método PreparePerformanceData define os valores m \_ trLate e m \_ trFrame do quadro atual.
 ms.assetid: c4c5701b-eccd-4259-a1d1-7c5000f6b2df
-title: Método CBaseVideoRenderer. PreparePerformanceData (Renbase. h)
+title: Método CBaseVideoRenderer.PreparePerformanceData (Renbase.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 12dd61dee7416ce8ca7ac07cba62cbc769df5973
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e8cb276b37e64b6bb34751ed2d034666f7ceeddd90d8e52e47b2a1fca499ff9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749026"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118658330"
 ---
-# <a name="cbasevideorendererprepareperformancedata-method"></a>Método CBaseVideoRenderer. PreparePerformanceData
+# <a name="cbasevideorendererprepareperformancedata-method"></a>Método CBaseVideoRenderer.PreparePerformanceData
 
-O `PreparePerformanceData` método define os valores **m \_ trLate** e **m \_ trFrame** do quadro atual.
+O `PreparePerformanceData` método define os valores m **\_ trLate** e **m \_ trFrame** do quadro atual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,26 +46,26 @@ void PreparePerformanceData(
 *trLate* 
 </dt> <dd>
 
-Valor que indica o quão tarde o exemplo estava além do tempo de vida, em unidades de tempo de referência.
+Valor que indica a atraso da amostra além do tempo devido, em unidades de tempo de referência.
 
 </dd> <dt>
 
 *trFrame* 
 </dt> <dd>
 
-Tempo entre quadros, em unidades de tempo de referência.
+Tempo entre períodos, em unidades de tempo de referência.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função de membro **define m \_ trLate** como o valor de *trLate* e **m \_ trFrame** como o valor de *trFrame*.
+Essa função membro define **m \_ trLate como** o valor de *trLate* e **m \_ trFrame** com o valor *de trFrame*.
 
-Quando a função de membro [**CBaseVideoRenderer:: RecordFrameLateness**](cbasevideorenderer-recordframelateness.md) é chamada de [**CBaseVideoRenderer:: OnRenderStart**](cbasevideorenderer-onrenderstart.md) ou [**CBaseVideoRenderer:: OnDirectRender**](cbasevideorenderer-ondirectrender.md), ela passa os valores de **m \_ trLate** e **m \_ trFrame** para que ele atualize as estatísticas. `PreparePerformanceData` é chamado de [**CBaseVideoRenderer:: OnWaitEnd**](cbasevideorenderer-onwaitend.md) para definir esses valores de membro de dados.
+Quando a função membro [**CBaseVideoRenderer::RecordFrameLateness**](cbasevideorenderer-recordframelateness.md) é chamada de [**CBaseVideoRenderer::OnRenderStart**](cbasevideorenderer-onrenderstart.md) ou [**CBaseVideoRenderer::OnDirectRender**](cbasevideorenderer-ondirectrender.md), ela passa os valores **de m \_ trLate** e **m \_ trFrame** para que ele atualize as estatísticas. `PreparePerformanceData` é chamado de [**CBaseVideoRenderer::OnWaitEnd**](cbasevideorenderer-onwaitend.md) para definir esses valores de membro de dados.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -73,8 +73,8 @@ Quando a função de membro [**CBaseVideoRenderer:: RecordFrameLateness**](cbase
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Renbase. h (incluir fluxos. h)</dt> </dl>                                                                                   |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Renbase.h (incluir Fluxos.h)</dt> </dl>                                                                                   |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

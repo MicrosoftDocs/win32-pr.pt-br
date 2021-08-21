@@ -25,12 +25,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1fa2cf2099c5177be6f295ef6455646762525b26
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7b91bf70333d4ba7d607e465851f7f217aec43b0a081ec020017321fe30a7ede
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105793670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118565061"
 ---
 # <a name="object-identifiers-winuserh"></a>Identificadores de objeto (WinUser. h)
 
@@ -69,7 +69,7 @@ As constantes a seguir são definidas em winuser. h:
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

@@ -4,8 +4,8 @@ description: A propriedade baseURL Obtém ou define a URL base usada para resolu
 ms.assetid: e136303f-ba08-434f-ad7e-9fffa66785c4
 keywords:
 - Propriedade baseURL Windows Media Player
-- Propriedade baseURL Windows Media Player, interface IWMPSettings
-- Interface IWMPSettings Windows Media Player, Propriedade baseURL
+- propriedade baseURL Windows Media Player, interface IWMPSettings
+- interface IWMPSettings Windows Media Player, propriedade baseURL
 topic_type:
 - apiref
 api_name:
@@ -16,18 +16,18 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 393575a93bf904f6fe312b13647ad5a7557b15bc
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: a3224a43a2689fd49dee2b2a66cc768250b1a829e61863d8cfbd029e3cdf783c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105791342"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118568413"
 ---
 # <a name="iwmpsettingsbaseurl-property"></a>Propriedade IWMPSettings:: baseURL
 
 A propriedade **baseURL** Obtém ou define a URL base usada para resolução de caminho relativo com comandos de script de URL inseridos no conteúdo de mídia digital.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```CSharp
@@ -59,7 +59,7 @@ Essa propriedade especifica a URL HTTP base que é passada como o parâmetro de 
 
 **Observação**
 
-O controle do Windows Media Player não oferece suporte ao uso de dois pontos (..) na URL relativa para indicar o pai do local atual.
+o controle de Windows Media Player não oferece suporte ao uso de dois pontos (..) na URL relativa para indicar o pai do local atual.
 
 ## <a name="requirements"></a>Requisitos
 

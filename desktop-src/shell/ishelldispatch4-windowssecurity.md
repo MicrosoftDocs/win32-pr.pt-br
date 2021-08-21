@@ -1,6 +1,6 @@
 ---
-description: Método IShellDispatch4. WindowsSecurity – exibe a caixa de diálogo Segurança do Windows.
-title: Método IShellDispatch4. WindowsSecurity (shldisp. h)
+description: Método IShellDispatch4.WindowsSecurity – exibe a Segurança do Windows de diálogo.
+title: Método IShellDispatch4.WindowsSecurity (Shldisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 api_location:
 - Shell32.dll
 ms.assetid: 665c4644-7749-446e-8212-3ecc9901a035
-ms.openlocfilehash: 6eadb580c73e5e56592c94e997bdc22c2cf894b4
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 8142867d8d0423729794460a077a0f7f12d97f5d9744a119571d3ddd2b90a592
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109843017"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118720708"
 ---
-# <a name="ishelldispatch4windowssecurity-method"></a>Método IShellDispatch4. WindowsSecurity
+# <a name="ishelldispatch4windowssecurity-method"></a>Método IShellDispatch4.WindowsSecurity
 
-Exibe a caixa de diálogo **segurança do Windows** .
+Exibe a caixa **Segurança do Windows** caixa de diálogo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,7 +45,7 @@ IShellDispatch4.WindowsSecurity()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 ### <a name="jscript"></a>JScript
 
@@ -57,7 +57,7 @@ Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método exibe a caixa de diálogo mostrada após pressionar CTRL + ALT + DELETE ou usar a opção de segurança no menu **Iniciar** .
+Esse método exibe a caixa de diálogo mostrada depois de pressionar CTRL+ALT+DELETE ou usar a opção de segurança **no** menu Iniciar.
 
 > [!Note]  
 > Esse método pode ser usado somente quando conectado por uma sessão de terminal ao Microsoft Terminal Server.
@@ -66,9 +66,9 @@ Esse método exibe a caixa de diálogo mostrada após pressionar CTRL + ALT + DE
 
 ## <a name="examples"></a>Exemplos
 
-Os exemplos a seguir mostram o uso de **WindowsSecurity** para JScript, VBScript e Visual Basic.
+Os exemplos a seguir mostram o uso do **WindowsSecurity** para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript
@@ -84,7 +84,7 @@ JScript
 
 
 
-VBScript
+Vbscript:
 
 
 ```VB
@@ -122,11 +122,11 @@ End Sub
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                                   |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Shldisp. h</dt> </dl>                          |
-| INSERI<br/>                      | <dl> <dt>Shldisp. idl</dt> </dl>                        |
-| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6,0 ou posterior)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                                                   |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                                          |
+| Cabeçalho<br/>                   | <dl> <dt>Shldisp.h</dt> </dl>                          |
+| Idl<br/>                      | <dl> <dt>Shldisp.idl</dt> </dl>                        |
+| DLL<br/>                      | <dl> <dt>Shell32.dll (versão 6.0 ou posterior)</dt> </dl> |
 
 
 

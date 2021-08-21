@@ -4,12 +4,12 @@ ms.assetid: addde51d-2982-4964-b16a-406fea89a0ce
 title: Filtro de compressor AVI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 212ab58eb3800e0ad5531ebc5c50d3b054e7866c
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: fa074f5ad4a72fe1e1a32f45baa4888a526b1a0532a562c2fadb7753ea71e0aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909464"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159268"
 ---
 # <a name="avi-compressor-filter"></a>Filtro de compressor AVI
 
@@ -20,20 +20,20 @@ O PIN de entrada do filtro se conecta a filtros que geram dados de vídeo não c
 Se o codec der suporte a uma caixa de diálogo de configuração de VFW estilo antigo ou a caixa de diálogo sobre, um aplicativo poderá exibi-lo usando a interface [**IAMVfwCompressDialogs**](/windows/desktop/api/Strmif/nn-strmif-iamvfwcompressdialogs) .
 
 > [!Note]  
-> Os compactadores MPEG nunca são implementados como codecs VCM, mas somente como filtros nativos do DirectShow.
+> os compactadores MPEG nunca são implementados como codecs VCM, mas somente como filtros de DirectShow nativos.
 
  
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Filtrar interfaces                        | [**IAMVfwCompressDialogs**](/windows/desktop/api/Strmif/nn-strmif-iamvfwcompressdialogs), [**IBaseFilter**](/windows/desktop/api/Strmif/nn-strmif-ibasefilter), IPersistPropertyBag, ISpecifyPropertyPages                                                                                                             |
 | Tipos de mídia de pino de entrada                    | \_Vídeo de MediaType, MEDIASUBTYPE \_ nulo                                                                                                                                                                                                               |
 | Interfaces de pino de entrada                     | [**IMemInputPin**](/windows/desktop/api/Strmif/nn-strmif-imeminputpin), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol)                                                                                                                                             |
 | Tipos de mídia do pino de saída                   | \_Vídeo de MediaType, MEDIASUBTYPE \_ nulo                                                                                                                                                                                                               |
 | Interfaces de pino de saída                    | [**IAMStreamConfig**](/windows/desktop/api/Strmif/nn-strmif-iamstreamconfig), [**IAMVideoCompression**](/windows/desktop/api/Strmif/nn-strmif-iamvideocompression), [**IMediaPosition**](/windows/desktop/api/Control/nn-control-imediaposition), [**IMediaSeeking**](/windows/desktop/api/Strmif/nn-strmif-imediaseeking), [**IPin**](/windows/desktop/api/Strmif/nn-strmif-ipin), [**IQualityControl**](/windows/desktop/api/Strmif/nn-strmif-iqualitycontrol) |
-| CLSID do filtro                             | Não aplicável                                                                                                                                                                                                                                     |
+| CLSID do filtro                             | Não se aplica                                                                                                                                                                                                                                     |
 | CLSID de página de propriedades                      | Nenhuma página de propriedades.                                                                                                                                                                                                                                  |
 | Executável                               | qcap.dll                                                                                                                                                                                                                                           |
 | [Núcleo](merit.md)                       | MÉRITO \_ \_ não \_ use                                                                                                                                                                                                                                |
@@ -47,7 +47,7 @@ Se o codec der suporte a uma caixa de diálogo de configuração de VFW estilo a
 
 <dl> <dt>
 
-[Filtros do DirectShow](directshow-filters.md)
+[DirectShow Filter](directshow-filters.md)
 </dt> </dl>
 
  

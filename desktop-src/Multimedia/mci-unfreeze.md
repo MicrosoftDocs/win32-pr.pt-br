@@ -3,7 +3,7 @@ title: MCI_UNFREEZE comando (mmsystem. h)
 description: O \_ comando de descongelar do MCI restaura o movimento para uma área do buffer de vídeo congelada com o \_ comando MCI Freeze. Dispositivos digitais de vídeo, VCR e de sobreposição de vídeo reconhecem este comando.
 ms.assetid: 79ff1be5-6e30-4ef4-ab81-fc5643e3a72d
 keywords:
-- Multimídia do Windows de comando MCI_UNFREEZE
+- MCI_UNFREEZE comando Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 8736e27998330f9337bb21569e145a4395e90020
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3011f3d2c05c304b37957c6f4cb78f2ada9389ab727a7af63a358fd4b5afdd3c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119525566"
 ---
 # <a name="mci_unfreeze-command"></a>\_Comando de DEScongelar do MCI
 

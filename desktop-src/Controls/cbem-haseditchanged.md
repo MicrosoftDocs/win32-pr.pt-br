@@ -3,7 +3,7 @@ title: Mensagem de CBEM_HASEDITCHANGED (commctrl. h)
 description: Determina se o usuário alterou o texto de um controle de edição ComboBoxEx.
 ms.assetid: 8bf8c40a-e1ab-4748-899b-a9ed27767884
 keywords:
-- Controles de CBEM_HASEDITCHANGED de mensagens do Windows
+- controles de Windows de mensagem de CBEM_HASEDITCHANGED
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c5234b816a2ec080449ade072981b489968df8f9
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: ae5949827dbabf962ec9a9e9bd9d3b6d27d09a3b7e62f7fc71f2c4343e8ce370
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919173"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528036"
 ---
 # <a name="cbem_haseditchanged-message"></a>\_Mensagem CBEM HASEDITCHANGED
 
@@ -35,7 +35,7 @@ Determina se o usuário alterou o texto de um controle de edição ComboBoxEx.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará **true** se o texto na caixa de edição do controle tiver sido alterado ou **false** caso contrário.
 
@@ -53,9 +53,9 @@ O [**estilo \_ simples do CBS**](combo-box-styles.md) não funciona corretamente
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

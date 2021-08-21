@@ -3,7 +3,7 @@ title: Objeto do gerenciador de perfis
 description: Objeto do gerenciador de perfis
 ms.assetid: 8d174243-334e-418e-a1c8-77486b940de7
 keywords:
-- SDK do Windows Media Format, objetos do Gerenciador de perfis
+- Windows SDK do formato de mídia, objetos do Gerenciador de perfis
 - ASF (Advanced Systems Format), objetos do Gerenciador de perfis
 - ASF (formato de sistemas avançados), objetos do Gerenciador de perfis
 - objetos, objetos do Gerenciador de perfis
@@ -11,12 +11,12 @@ keywords:
 - perfis, objetos do Gerenciador de perfis
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1ce3d77598f52e43a840c1b6b3ef58baa47f77bd
-ms.sourcegitcommit: ad672d3a10192c5ccac619ad2524407109266e93
+ms.openlocfilehash: 7ce272067e98f787d5136cacc0a2d02f474264f14f14aa785b28162945ef1b41
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/25/2020
-ms.locfileid: "105780684"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119084643"
 ---
 # <a name="profile-manager-object"></a>Objeto do gerenciador de perfis
 
@@ -39,7 +39,7 @@ As interfaces a seguir têm suporte do objeto Gerenciador de perfis.
 
 
 
- 
+ 
 
 ## <a name="remarks"></a>Comentários
 
@@ -49,7 +49,7 @@ Quando um objeto do Gerenciador de perfis é criado, ele analisa todos os perfis
 
 <dl> <dt>
 
-[**Objetos**](objects.md)
+[**Objeto**](objects.md)
 </dt> <dt>
 
 [**Objeto de perfil**](profile-object.md)
@@ -58,9 +58,9 @@ Quando um objeto do Gerenciador de perfis é criado, ele analisa todos os perfis
 [**Perfis**](profiles.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 
