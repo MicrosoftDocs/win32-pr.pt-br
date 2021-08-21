@@ -65,7 +65,7 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-O nome de classe usado para criar uma instância dessa classe. **CreationClassName** é combinado com outras propriedades de chave dessa classe para identificar exclusivamente instâncias dessa classe e suas subclasses.
+O nome de classe usado para criar uma instância dessa classe. **CreationClassName** é combinado com outras propriedades de chave dessa classe para identificar exclusivamente as instâncias dessa classe e suas subclasses.
 
 </dd> <dt>
 

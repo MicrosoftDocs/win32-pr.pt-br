@@ -9,12 +9,12 @@ keywords:
 - consulta ADSI, pesquisando com OLE DB, código de exemplo para usar OLE DB para acessar Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: bb98e84035cdfef3c95d47919354622df3808b86
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 5d55e115978025a95cc4c48f99f9ab05061c3cf384860eeb25b96f793d664605
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "105762844"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118428439"
 ---
 # <a name="example-code-for-using-ole-db-to-search-active-directory"></a>Código de exemplo para usar OLE DB para pesquisar Active Directory
 
@@ -22,12 +22,12 @@ O exemplo de código a seguir mostra como Pesquisar Active Directory usando C++,
 
 Há dois dialetos de consulta que podem ser usados com o provedor de OLE DB ADSI, LDAP e SQL. O dialeto é especificado no método [ICommandText:: SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) com um dos seguintes GUIDs:
 
--   **Dbguid \_ SQL** para o DIALETO SQL.
+-   **DBGUID \_ SQL** para o dialeto de SQL.
 -   **Dbguid \_ LDAPDialect** para o DIALETO LDAP.
 
 Este exemplo usa o dialeto LDAP.
 
-O método [ICommandText:: SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) também pode aceitar o **GUID \_ padrão dbguid** para o dialeto. Nesse caso, a ADSI tentará usar o dialeto SQL primeiro; Se isso falhar, a ADSI tentará usar o dialeto LDAP. Para obter mais informações, consulte dialeto e [dialeto de SQL](sql-dialect.md)do [LDAP](ldap-dialect.md) .
+O método [ICommandText:: SetCommandText](/previous-versions/windows/desktop/ms709757(v=vs.85)) também pode aceitar o **GUID \_ padrão dbguid** para o dialeto. nesse caso, a ADSI tentará usar o SQL dialeto primeiro; Se isso falhar, a ADSI tentará usar o dialeto LDAP. para obter mais informações, consulte [dialeto de LDAP](ldap-dialect.md) e dialeto de [SQL](sql-dialect.md).
 
 Para obter mais informações sobre OLE DB, consulte o guia do programador de OLE DB.
 

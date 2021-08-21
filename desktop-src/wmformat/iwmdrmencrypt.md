@@ -3,8 +3,8 @@ title: Interface IWMDRMEncrypt
 description: A interface IWMDRMEncrypt fornece um método para criptografar dados no local.
 ms.assetid: da57d72e-da6b-4e27-9bcb-72f87b3e5c90
 keywords:
-- Formato de mídia do Windows da interface IWMDRMEncrypt
-- Formato de mídia do Windows da interface IWMDRMEncrypt, descrito
+- Formato de mídia da interface IWMDRMEncrypt
+- Formato de mídia da interface IWMDRMEncrypt , descrito
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 6f9fdd0c7123b8abb1fc180f1a43947cc179f1ce
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 424b3be1394d2989ac9328ce088d05fbfd0a9192360ef56acbfd70d58be7864f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084756"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118433585"
 ---
 # <a name="iwmdrmencrypt-interface"></a>Interface IWMDRMEncrypt
 
@@ -27,7 +27,7 @@ A interface **IWMDRMEncrypt** fornece um método para criptografar dados no loca
 
 ## <a name="members"></a>Membros
 
-A interface **IWMDRMEncrypt** herda da interface [**IUnknown**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) . **IWMDRMEncrypt** também tem estes tipos de membros:
+A interface **IWMDRMEncrypt** herda da interface [**IUnknown.**](/windows/desktop/api/unknwn/nn-unknwn-iunknown) **IWMDRMEncrypt** também tem estes tipos de membros:
 
 -   [Métodos](#methods)
 
@@ -52,7 +52,7 @@ A interface **IWMDRMEncrypt** tem esses métodos.
 [**Interfaces**](drm-interfaces.md)
 </dt> <dt>
 
-[**Interface IWMDRMDecrypt**](iwmdrmdecrypt.md)
+[**IWMDRMDecrypt Interface**](iwmdrmdecrypt.md)
 </dt> </dl>
 
  

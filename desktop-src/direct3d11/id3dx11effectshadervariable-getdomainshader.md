@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectShaderVariable GetDomainShader (D3dx11effect. h)
-description: Obtenha um sombreador de domínio.
+title: Método GetDomainShaderVariable ID3DX11EffectShaderVariable (D3dx11effect.h)
+description: Obter um sombreador de domínio.
 ms.assetid: fd95a4f0-7df3-4098-843f-0a1e22209603
 keywords:
 - Método GetDomainShader Direct3D 11
-- Método GetDomainShader Direct3D 11, interface ID3DX11EffectShaderVariable
-- Interface ID3DX11EffectShaderVariable Direct3D 11, método GetDomainShader
+- Método GetDomainShader Direct3D 11 , interface ID3DX11EffectShaderVariable
+- ID3DX11EffectShaderVariable interface Direct3D 11 , método GetDomainShader
 topic_type:
 - apiref
 api_name:
@@ -17,16 +17,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0b7f097fb950b60aaa9c7fa2d5b763b393d5e275
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 0e66bb99f170e6b638587d7da5a8d3cc57a34d3cab6bb04968b049d39dcb09c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104173207"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118533292"
 ---
-# <a name="id3dx11effectshadervariablegetdomainshader-method"></a>Método ID3DX11EffectShaderVariable:: GetDomainShader
+# <a name="id3dx11effectshadervariablegetdomainshader-method"></a>Método ID3DX11EffectShaderVariable::GetDomainShader
 
-Obtenha um sombreador de domínio.
+Obter um sombreador de domínio.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,31 +47,31 @@ HRESULT GetDomainShader(
 *ShaderIndex* 
 </dt> <dd>
 
-Tipo: **[ **uint**](/windows/desktop/WinProg/windows-data-types)**
+Tipo: **[ **UINT**](/windows/desktop/WinProg/windows-data-types)**
 
 Índice do sombreador de domínio.
 
 </dd> <dt>
 
-*ppPS* 
+*Ppp* 
 </dt> <dd>
 
 Tipo: **[ **ID3D11DomainShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11domainshader)\*\***
 
-Ponteiro para um ponteiro [**ID3D11DomainShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11domainshader) que será definido para o sombreador de domínio no retorno.
+Ponteiro para um [**ponteiro ID3D11DomainShader**](/windows/win32/api/d3d11/nn-d3d11-id3d11domainshader) que será definido como o sombreador de domínio no retorno.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -81,8 +81,8 @@ Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-ref
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

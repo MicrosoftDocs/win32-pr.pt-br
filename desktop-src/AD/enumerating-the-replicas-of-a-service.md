@@ -1,24 +1,24 @@
 ---
 title: Enumerando as réplicas de um serviço
-description: Este tópico inclui um exemplo de código que enumera as instâncias instaladas de um serviço replicado em computadores host diferentes em uma empresa.
+description: Este tópico inclui um exemplo de código que enumera as instâncias instaladas de um serviço replicado em computadores host diferentes em toda a empresa.
 ms.assetid: 9dc3f932-c3e1-4ce1-a945-12d68838304e
 ms.tgt_platform: multiple
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 995cd665476a55b6bf717f356fafa54b0d2e10e6
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 8cce0b1a9da8eac974682514cd283f8e530388727a2b674765a39056e94a0c95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "104499018"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118429249"
 ---
 # <a name="enumerating-the-replicas-of-a-service"></a>Enumerando as réplicas de um serviço
 
-Este tópico inclui um exemplo de código que enumera as instâncias instaladas de um serviço replicado em computadores host diferentes em uma empresa. Para alterar a senha da conta de serviço para cada instância de um serviço replicado, use este exemplo de código em conjunto com o exemplo de código no tópico [alterando a senha no usuário de uma conta do serviço](changing-the-password-on-a-serviceampaposs-user-account.md) .
+Este tópico inclui um exemplo de código que enumera as instâncias instaladas de um serviço replicado em computadores host diferentes em toda a empresa. Para alterar a senha da conta de serviço para cada instância de um serviço replicado, use este exemplo de código em conjunto com o exemplo de código no tópico Alterando [a](changing-the-password-on-a-serviceampaposs-user-account.md) senha na conta de usuário de um serviço.
 
-O exemplo de código supõe que cada instância de serviço tenha seu próprio objeto SCP (ponto de conexão de serviço) no diretório. Um SCP é um objeto da classe [**serviceConnectionPoint**](/windows/desktop/ADSchema/c-serviceconnectionpoint) . Essa classe tem um atributo de **palavras-chave** , que é um atributo com vários valores replicado para cada GC (catálogo global) na floresta. O atributo de **palavras-chave** do SCP de cada instância contém o GUID do produto do serviço. Isso permite encontrar todos os SCPs para as várias instâncias de serviço pesquisando um GC para objetos com um atributo de **palavras-chave** que é igual ao GUID do produto.
+O exemplo de código pressupõe que cada instância de serviço tem seu próprio objeto SCP (ponto de conexão de serviço) no diretório. Um SCP é um objeto da classe [**serviceConnectionPoint.**](/windows/desktop/ADSchema/c-serviceconnectionpoint) Essa classe tem um **atributo de palavras-chave,** que é um atributo de vários valores replicado para cada GC (catálogo global) na floresta. O **atributo de** palavras-chave do SCP de cada instância contém o GUID do produto do serviço. Isso permite localizar todos os SCPs para as várias instâncias de  serviço pesquisando um GC em busca de objetos com um atributo de palavras-chave que seja igual ao GUID do produto.
 
-O exemplo de código obtém um ponteiro [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) para um GC e usa o método [**IDirectorySearch:: ExecuteSearch**](/windows/desktop/api/iads/nf-iads-idirectorysearch-executesearch) para pesquisar o SCPs. Lembre-se de que o GC contém uma réplica parcial para cada SCP. Ou seja, ele contém alguns dos atributos SCP, mas não todos. Neste exemplo de código, concentre-se no atributo **serviceDNSName** , que contém o nome DNS do servidor host para essa instância de serviço. Como **serviceDNSName** não é um dos atributos replicados em um GC, o exemplo de código usa um processo de duas etapas para recuperá-lo. Primeiro, ele usa a pesquisa GC para obter o DN (nome distinto) do SCP e, em seguida, ele usa esse DN para associar diretamente ao SCP para recuperar a propriedade **serviceDNSName** .
+O exemplo de código obtém um ponteiro [**IDirectorySearch**](/windows/desktop/api/iads/nn-iads-idirectorysearch) para um GC e usa o método [**IDirectorySearch::ExecuteSearch**](/windows/desktop/api/iads/nf-iads-idirectorysearch-executesearch) para pesquisar os SCPs. Esteja ciente de que o GC contém uma réplica parcial para cada SCP. Ou seja, ele contém alguns dos atributos SCP, mas não todos. Neste exemplo de código, concentre-se no **atributo serviceDNSName,** que contém o nome DNS do servidor host para essa instância de serviço. Como **serviceDNSName** não é um dos atributos replicados em um GC, o exemplo de código usa um processo de duas etapas para recuperá-lo. Primeiro, ele usa a pesquisa de GC para obter o nome diferenciado (DN) do SCP e, em seguida, usa esse DN para se vincular diretamente ao SCP para recuperar a propriedade **serviceDNSName.**
 
 
 ```C++
@@ -181,6 +181,6 @@ return hr;
 
 
 
- 
+ 
 
- 
+ 

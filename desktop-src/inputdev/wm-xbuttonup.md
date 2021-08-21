@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 08/23/2019
-ms.openlocfilehash: 521faefb2e2a76e94a0517c28a5fa812ef34ef5c
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 55b26ae92889261e7a5fea3e57281d6407fc39fb03aad0124d00aa135f9ed438
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118757107"
 ---
 # <a name="wm_xbuttonup-message"></a>Mensagem do WM \_ XBUTTONUP
 
@@ -83,7 +83,7 @@ A palavra de ordem superior especifica a coordenada y do cursor. A coordenada é
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se um aplicativo processar essa mensagem, ele deverá retornar **true**. Para obter mais informações sobre como processar o valor de retorno, consulte a seção comentários.
 
@@ -116,7 +116,7 @@ Conforme observado acima, a coordenada x está **na ordem inferior** do valor de
 
  
 
-Ao contrário das mensagens do [**WM \_ LBUTTONUP**](wm-lbuttonup.md), do [**WM \_ MBUTTONUP**](wm-mbuttonup.md)e do [**WM \_ RBUTTONUP**](wm-rbuttonup.md) , um aplicativo deve retornar **true** dessa mensagem se a processar. Isso permitirá que o software que simula essa mensagem em sistemas Windows anteriores ao Windows 2000 determine se o procedimento de janela processou a mensagem ou chamou [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para processá-la.
+Ao contrário das mensagens do [**WM \_ LBUTTONUP**](wm-lbuttonup.md), do [**WM \_ MBUTTONUP**](wm-mbuttonup.md)e do [**WM \_ RBUTTONUP**](wm-rbuttonup.md) , um aplicativo deve retornar **true** dessa mensagem se a processar. isso permitirá que o software que simula essa mensagem em sistemas Windows anteriores a Windows 2000 para determinar se o procedimento de janela processou a mensagem ou se chamou [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) para processá-la.
 
 ## <a name="requirements"></a>Requisitos
 

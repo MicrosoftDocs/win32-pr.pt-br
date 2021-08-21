@@ -4,12 +4,12 @@ ms.assetid: ed68b85e-8382-4450-b07d-0422b44dc2e3
 title: Redesenhando toda a área do cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d67640d1b464173755029bef1d0feb91f215cda6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7e3c438fe36160f27b1015daf7874e237035f927825199b93b3a508668f40bd5
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104988782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118759142"
 ---
 # <a name="redrawing-the-entire-client-area"></a>Redesenhando toda a área do cliente
 

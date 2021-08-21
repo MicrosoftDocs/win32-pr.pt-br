@@ -1,11 +1,11 @@
 ---
-title: atributo ms-DS-AZ-Application-Version
-description: Um número de versão para indicar que o AzApplication é atualizado.
+title: Atributo ms-DS-Az-Application-Version
+description: Um número de versão para indicar que o AzApplication foi atualizado.
 ms.assetid: e7a2771a-cada-48a3-979e-59af6a398a79
 ms.tgt_platform: multiple
 keywords:
-- ms-DS-AZ-Application-Version atributo AD Schema
-- atributo msDS-AzApplicationVersion do AD Schema
+- Esquema do AD do atributo ms-DS-Az-Application-Version
+- Esquema do AD do atributo msDS-AzApplicationVersion
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118426961"
 ---
-# <a name="ms-ds-az-application-version-attribute"></a>atributo ms-DS-AZ-Application-Version
+# <a name="ms-ds-az-application-version-attribute"></a>Atributo ms-DS-Az-Application-Version
 
-Um número de versão para indicar que o AzApplication é atualizado.
+Um número de versão para indicar que o AzApplication foi atualizado.
 
 
 
 | Entrada | Valor |
 |-------------------|------------------------------------------------------|
-| CN                | ms-DS-AZ-Application-Version                         |
-| LDAP-Display-Name | msDS-AzApplicationVersion                            |
+| CN                | ms-DS-Az-Application-Version                         |
+| Ldap-Display-Name | msDS-AzApplicationVersion                            |
 | Tamanho              | \-                                                   |
 | Privilégio de atualização  | Administrador do AzRoles                                        |
-| Frequência de atualização  | Quando o número de versão do aplicativo é alterado. |
+| Frequência de atualização  | Quando o número de versão do aplicativo muda. |
 | Attribute-Id      | 1.2.840.113556.1.4.1817                              |
-| System-ID-GUID    | 7184a120-3ac4-47ae-848f-fe0ab20784d4                 |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)          |
+| System-Id-Guid    | 7184a120-3ac4-47ae-848f-fe0ab20784d4                 |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)          |
 
 
 
@@ -57,15 +57,15 @@ Um número de versão para indicar que o AzApplication é atualizado.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | Verdadeiro                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -78,15 +78,15 @@ Um número de versão para indicar que o AzApplication é atualizado.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | Verdadeiro                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -99,15 +99,15 @@ Um número de versão para indicar que o AzApplication é atualizado.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | Verdadeiro                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -120,15 +120,15 @@ Um número de versão para indicar que o AzApplication é atualizado.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | Verdadeiro                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 
@@ -141,15 +141,15 @@ Um número de versão para indicar que o AzApplication é atualizado.
 | ID do link                | \-                                                              |
 | MAPI-Id                | \-                                                              |
 | System-Only            | Falso                                                           |
-| É de valor único       | Verdadeiro                                                            |
+| Tem valor único       | Verdadeiro                                                            |
 | É indexado             | Falso                                                           |
-| No catálogo global      | Falso                                                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                    |
+| No Catálogo Global      | Falso                                                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                    |
 | Range-Lower            | \-                                                              |
 | Range-Upper            | \-                                                              |
 | Search-Flags           | 0x00000000                                                      |
 | System-Flags           | 0x00000010                                                      |
-| Classes usadas em        | [**ms-DS-AZ-Application**](c-msds-azapplication.md)<br/> |
+| Classes usadas em        | [**ms-DS-Az-Application**](c-msds-azapplication.md)<br/> |
 
 
 

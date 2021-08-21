@@ -1,6 +1,6 @@
 ---
-title: Método ID3DX12PipelineParserCallbacks PrimitiveTopologyTypeCb (D3DX12. h)
-description: Chama o retorno de chamada de subobjeto do tipo de topologia primitiva de um objeto que implementa essa interface.
+title: Método PrimitiveTopologyTypeCb ID3DX12PipelineParserCallbacks (D3DX12.h)
+description: Chama o retorno de chamada de subobjeto do tipo topologia primitivo de um objeto que implementa essa interface.
 ms.assetid: FF9D8D5C-3A6A-40D8-8EA4-3EA305EB4568
 keywords:
 - Método PrimitiveTopologyTypeCb
@@ -17,16 +17,16 @@ api_type:
 ms.localizationpriority: low
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b01a2d73edd6ac94719905757d75a756c905c832
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 9e67f7d3c6805c411222e6e4202e21d2f31ced78211fb364829e7ace2dac2ea1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105780691"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118807226"
 ---
-# <a name="id3dx12pipelineparsercallbacksprimitivetopologytypecb-method"></a>ID3DX12PipelineParserCallbacks: método rimitiveTopologyTypeCb de:P
+# <a name="id3dx12pipelineparsercallbacksprimitivetopologytypecb-method"></a>Método ID3DX12PipelineParserCallbacks::P rimitiveTopologyTypeCb
 
-Chama o retorno de chamada de subobjeto do tipo de topologia primitiva de um objeto que implementa essa interface.
+Chama o retorno de chamada de subobjeto do tipo topologia primitivo de um objeto que implementa essa interface.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,13 +46,13 @@ void PrimitiveTopologyTypeCb(
 *PrimitiveTopologyType* 
 </dt> <dd>
 
-Tipo: **[ **\_ tipo de \_ topologia \_ primitivo D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_primitive_topology_type)**
+Tipo: **[ **TIPO DE \_ \_ TOPOLOGIA \_ PRIMITIVA D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_primitive_topology_type)**
 
-Detalhes do subobjeto do tipo de topologia primitiva analisado de um fluxo de estado do pipeline.
+Detalhes do subobjeto de tipo de topologia primitivo analisado de um fluxo de estado de pipeline.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Não retorna nada.
 
@@ -62,8 +62,8 @@ Não retorna nada.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3DX12. h</dt> </dl>  |
-| Biblioteca<br/> | <dl> <dt>D3D12. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3DX12.h</dt> </dl>  |
+| Biblioteca<br/> | <dl> <dt>D3D12.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D3D12.dll</dt> </dl> |
 
 
@@ -78,7 +78,7 @@ Não retorna nada.
 [**ID3DX12PipelineParserCallbacks**](id3dx12pipelineparsercallbacks.md)
 </dt> <dt>
 
-[**\_Tipo de \_ topologia \_ primitivo D3D12**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_primitive_topology_type)
+[**TIPO DE \_ TOPOLOGIA PRIMITIVA D3D12 \_ \_**](/windows/desktop/api/d3d12/ne-d3d12-d3d12_primitive_topology_type)
 </dt> </dl>
 
  

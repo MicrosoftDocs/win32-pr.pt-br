@@ -1,11 +1,11 @@
 ---
-title: Propriedade IResultsViewer PropertyFilters (WdsView. h)
+title: Propriedade PropertyFilters IResultsViewer (WdsView.h)
 description: Ao chamar a coleção de filtros de propriedade, ele retornará o seguinte
 ms.assetid: 8673f2de-f156-4910-8f2f-e8bfe3369f71
 keywords:
-- Recursos do ambiente Windows herdado da propriedade PropertyFilters
-- Propriedade PropertyFilters recursos de ambiente do Windows herdados, interface IResultsViewer
-- Recursos do ambiente Windows herdado da interface IResultsViewer, Propriedade PropertyFilters
+- Propriedade PropertyFilters Herdou Windows recursos de ambiente
+- Propriedade PropertyFilters Recursos Windows ambiente herdado, interface IResultsViewer
+- Interface IResultsViewer Recursos Windows ambiente herdado, propriedade PropertyFilters
 topic_type:
 - apiref
 api_name:
@@ -16,17 +16,17 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bda2dfef16f370cdf77dc4ea62857f7f9db28162
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 335c27f03da29b7bf48380ae84fadb601c8dc4df0473749bdf60615bb595590b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918722"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118753740"
 ---
-# <a name="iresultsviewerpropertyfilters-property"></a>IResultsViewer: Propriedade ropertyFilters de:P
+# <a name="iresultsviewerpropertyfilters-property"></a>Propriedade IResultsViewer::P ropertyFilters
 
 > [!NOTE]
-> O Windows Desktop Search 2. x é uma tecnologia obsoleta que originalmente estava disponível como um suplemento para o Windows XP e o Windows Server 2003. Em versões posteriores, use a [API de pesquisa do Windows](../search/-search-reference-entry-page.md) em vez disso. 
+> Windows A Pesquisa de Área de Trabalho 2.x é uma tecnologia obsoleta que estava originalmente disponível como um complemento para Windows XP e Windows Server 2003. Em versões posteriores, use a [API Windows Search.](../search/-search-reference-entry-page.md) 
 
 Ao chamar a coleção de filtros de propriedade, ele retornará o seguinte:
 
@@ -42,10 +42,10 @@ Quando chamado, isso retornará um ponteiro para o endereço da coleção de fil
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows XP com SP2\]<br/>                                 |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003 com SP1\]<br/>                        |
-| Redistribuível<br/>          | Windows Desktop Search (WDS) 2.6.5<br/>                                        |
-| parâmetro<br/>                   | <dl> <dt>WdsView. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows XP somente com \[ aplicativos da área de trabalho SP2\]<br/>                                 |
+| Servidor mínimo com suporte<br/> | Windows Servidor 2003 somente com aplicativos da área de trabalho SP1 \[\]<br/>                        |
+| Redistribuível<br/>          | Windows Pesquisa de Área de Trabalho (WDS) 2.6.5<br/>                                        |
+| Cabeçalho<br/>                   | <dl> <dt>WdsView.h</dt> </dl> |
 
 
 

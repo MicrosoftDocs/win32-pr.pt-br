@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: f84467c798337ac2cc81283637636900933c9e41
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 1f5314fb143d8607a66402ca2b27fdf4902ffb08646d55b6fed0702c0979c8b4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103930361"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118507603"
 ---
 # <a name="texture2dgathercmpredsfloatfloatint2int2int2int2-function"></a>Função Texture2D:: GatherCmpRed (S, float, float, Int2, Int2, Int2, Int2)
 
@@ -108,7 +108,7 @@ O quarto componente de deslocamento aplicado às coordenadas de textura antes da
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **TemplateType**
 
@@ -122,7 +122,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

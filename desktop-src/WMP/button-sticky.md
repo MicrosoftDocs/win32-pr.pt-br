@@ -1,9 +1,9 @@
 ---
-title: BUTTON.sticky
-description: O atributo sticky especifica ou recupera um valor que indica se BUTTON é uma alternância, ou seja, se é um BUTTON de dois estados ou de estado único.
+title: BOTÃO. adesivo
+description: O atributo adesivo especifica ou recupera um valor que indica se o botão é uma alternância, ou seja, se é um botão de dois Estados ou de estado único.
 ms.assetid: aa0b48b4-29ce-440c-aeb9-dce31ab3cb63
 keywords:
-- BUTTON.sticky Windows Media Player
+- BOTÃO. autoadesiva Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118342741"
 ---
-# <a name="buttonsticky"></a>BUTTON.sticky
+# <a name="buttonsticky"></a>BOTÃO. adesivo
 
-O **atributo sticky** especifica ou recupera um valor que indica se **o BUTTON** é uma alternância, ou seja, se é um BUTTON de dois estados ou de estado **único.**
+O atributo **adesivo** especifica ou recupera um valor que indica se o **botão** é uma alternância, ou seja, se é um **botão** de dois Estados ou de estado único.
 
 ``` syntax
         elementID.sticky
@@ -29,14 +29,14 @@ O **atributo sticky** especifica ou recupera um valor que indica se **o BUTTON**
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um booliana **de leitura/gravação.**
+Esse atributo é um **booliano** de leitura/gravação.
 
 
 
 | Valor | Descrição                        |
 |-------|------------------------------------|
-| true  | **BUTTON** é sticky.              |
-| false | Padrão. **BUTTON** não é sticky. |
+| true  | O **botão** é adesivo.              |
+| false | Padrão. O **botão** não é adesivo. |
 
 
 
@@ -44,7 +44,7 @@ Esse atributo é um booliana **de leitura/gravação.**
 
 ## <a name="remarks"></a>Comentários
 
-Se **sticky** for definido como true, **o BOTÃO** será alterado para o estado para baixo quando clicado e permanecerá nesse estado até ser clicado novamente. Quando **o BUTTON** estiver no estado ino mesmo, o atributo **down** será true e **a downImage** será exibida.
+Se **adesivo** estiver definido como true, o **botão** será alterado para o estado Down quando clicado e permanecerá nesse estado até que seja clicado novamente. Quando o **botão** estiver no estado inativo, o atributo **down** será true e o **downImage** será exibido.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Se **sticky** for definido como true, **o BOTÃO** será alterado para o estado 
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
 
 
 
@@ -63,10 +63,10 @@ Se **sticky** for definido como true, **o BOTÃO** será alterado para o estado 
 [**Elemento BUTTON**](button-element.md)
 </dt> <dt>
 
-[**BUTTON.down**](button-down.md)
+[**BOTÃO. para baixo**](button-down.md)
 </dt> <dt>
 
-[**BUTTON.downImage**](button-downimage.md)
+[**BUTTON. downImage**](button-downimage.md)
 </dt> </dl>
 
  

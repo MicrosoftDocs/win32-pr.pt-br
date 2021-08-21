@@ -1,11 +1,11 @@
 ---
-title: Método ID3DX11EffectPass ComputeStateBlockMask (D3dx11effect. h)
+title: Método ID3DX11EffectPass ComputeStateBlockMask (D3dx11effect.h)
 description: Gere uma máscara para permitir/impedir alterações de estado.
 ms.assetid: 584be931-0e22-43e6-b852-f0d2ab050bdd
 keywords:
 - Método ComputeStateBlockMask Direct3D 11
-- Método ComputeStateBlockMask Direct3D 11, interface ID3DX11EffectPass
-- Interface ID3DX11EffectPass Direct3D 11, método ComputeStateBlockMask
+- Método ComputeStateBlockMask Direct3D 11 , interface ID3DX11EffectPass
+- ID3DX11EffectPass interface Direct3D 11 , método ComputeStateBlockMask
 topic_type:
 - apiref
 api_name:
@@ -24,7 +24,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118535052"
 ---
-# <a name="id3dx11effectpasscomputestateblockmask-method"></a>Método ID3DX11EffectPass:: ComputeStateBlockMask
+# <a name="id3dx11effectpasscomputestateblockmask-method"></a>Método ID3DX11EffectPass::ComputeStateBlockMask
 
 Gere uma máscara para permitir/impedir alterações de estado.
 
@@ -46,9 +46,9 @@ HRESULT ComputeStateBlockMask(
 *pStateBlockMask* 
 </dt> <dd>
 
-Tipo: **[ **\_ máscara de \_ bloco \_ de estado D3DX11**](d3dx11-state-block-mask.md)\***
+Tipo: **[ **D3DX11 \_ STATE \_ BLOCK \_ MASK**](d3dx11-state-block-mask.md)\***
 
-Um ponteiro para uma máscara de bloco de estado ( [**consulte \_ \_ \_ máscara de bloco de estado D3DX11**](d3dx11-state-block-mask.md)).
+Um ponteiro para uma máscara de bloco de estado (consulte [**D3DX11 \_ STATE \_ BLOCK \_ MASK**](d3dx11-state-block-mask.md)).
 
 </dd> </dl>
 
@@ -56,12 +56,12 @@ Um ponteiro para uma máscara de bloco de estado ( [**consulte \_ \_ \_ máscara
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-reference-returnvalues.md).
+Retorna um dos códigos de [retorno do Direct3D 11 a seguir.](d3d11-graphics-reference-returnvalues.md)
 
 ## <a name="remarks"></a>Comentários
 
 > [!Note]  
-> O SDK do DirectX não fornece nenhum binário compilado para efeitos. Você deve usar a fonte Effects 11 para criar seu aplicativo de tipo de efeitos. Para obter mais informações sobre como usar a fonte Effects 11, consulte [diferenças entre os efeitos 10 e os efeitos 11](d3d11-graphics-programming-guide-effects-differences.md).
+> O SDK do DirectX não fornece binários compilados para efeitos. Você deve usar a origem efeitos 11 para criar seu aplicativo do tipo efeitos. Para obter mais informações sobre como usar a origem dos Efeitos 11, consulte [Diferenças entre efeitos 10 e efeitos 11.](d3d11-graphics-programming-guide-effects-differences.md)
 
  
 
@@ -71,8 +71,8 @@ Retorna um dos seguintes [códigos de retorno do Direct3D 11](d3d11-graphics-ref
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx11effect. h</dt> </dl>                                                    |
-| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca Effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D3dx11effect.h</dt> </dl>                                                    |
+| Biblioteca<br/> | <dl> <dt>N/A (uma biblioteca effects 11 está disponível online como fonte compartilhada.)</dt> </dl> |
 
 
 

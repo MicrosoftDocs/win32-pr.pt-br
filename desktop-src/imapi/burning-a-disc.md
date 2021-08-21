@@ -4,12 +4,12 @@ description: A criação de mestre (gravação de um disco) usando o IMAPi consi
 ms.assetid: f2eee14e-695d-4678-b3c1-b521ab4d4a7e
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d6e3086f728ca0b0826a001d26841edcfe07c6a1
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 237a4aa73b6820b75b4a9a1ed03baeeb87ac093bfc549cb9cc0ed947077515dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104293989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118758906"
 ---
 # <a name="burning-a-disc-image"></a>Gravando uma imagem de disco
 
@@ -52,7 +52,7 @@ Outras interfaces de gravação de formato fornecidas pelo IMAPi funcionam da me
 > [!Note]  
 > É possível que uma transição de estado de energia ocorra durante uma operação de gravação (ou seja, logoff do usuário ou suspensão do sistema) que leva à interrupção do processo de gravação e possível perda de dados. Para considerações de programação, consulte [impedindo o logoff ou suspender durante uma gravação](preventing-logoff-or-suspend-during-a-burn.md).
 
- 
+ 
 
 ## <a name="vbscript-example"></a>Exemplo de VBScript
 
@@ -168,6 +168,6 @@ End Function
 [**IStream**](/windows/desktop/api/objidl/nn-objidl-istream)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

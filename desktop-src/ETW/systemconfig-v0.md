@@ -12,12 +12,12 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 24f0c579f4fb9c947ea02ff677cd433da3103cfc
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6986e5ac907784a19c14fb8dc6b9c086031863f322c3c35a58edcf3fd4089ea8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108105904"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118151216"
 ---
 # <a name="systemconfig_v0-class"></a>\_Classe SystemConfig V0
 
@@ -40,7 +40,7 @@ A classe **SystemConfig \_ V0** não define nenhum membro.
 
 ## <a name="remarks"></a>Comentários
 
-Para eventos de configuração de hardware no Windows XP, consulte a classe [**HWConfig**](hwconfig.md) .
+para eventos de configuração de hardware no Windows XP, consulte a classe [**HWConfig**](hwconfig.md) .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,11 +49,11 @@ Para eventos de configuração de hardware no Windows XP, consulte a classe [**H
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

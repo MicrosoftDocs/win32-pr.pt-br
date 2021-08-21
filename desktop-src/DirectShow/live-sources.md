@@ -4,12 +4,12 @@ ms.assetid: 571fe5e5-9616-463b-837c-f8dbb8adf1be
 title: Fontes dinâmicas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 43486cf3db797f493c9446bf782989b8beaae829
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 8872cc5489ae61f3b7b9629e97303ad033630346094f8f1faa013f5da81d9142
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104456632"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118153194"
 ---
 # <a name="live-sources"></a>Fontes dinâmicas
 
@@ -20,15 +20,15 @@ Um filtro é considerado uma fonte ao vivo se uma das seguintes opções for ver
 -   O filtro retorna os \_ sinalizadores diversos do filtro am \_ é o \_ \_ \_ sinalizador de origem do método [**IAMFilterMiscFlags:: GetMiscFlags**](/windows/desktop/api/Strmif/nf-strmif-iamfiltermiscflags-getmiscflags) e pelo menos um de seus PINs de saída expõe a interface [**IAMPushSource**](/windows/desktop/api/Strmif/nn-strmif-iampushsource) .
 -   O filtro expõe a interface [**IKsPropertySet**](ikspropertyset.md) e tem um PIN de captura (fixar \_ categoria \_ Capture). Consulte [fixar conjunto de propriedades](pin-property-set.md) para obter mais informações.
 
-Se um filtro de origem ao vivo fornecer um relógio, o Gerenciador de grafo de filtro preferirá esse relógio quando escolher o relógio de referência do grafo. Consulte [relógios de referência](reference-clocks.md) para obter mais informações.
+se um filtro de origem ao vivo fornecer um relógio, o filtro Graph Manager preferirá esse relógio quando escolher o relógio de referência do grafo. Consulte [relógios de referência](reference-clocks.md) para obter mais informações.
 
 **Latência**
 
 A latência de um filtro é a quantidade de tempo que leva para o filtro processar um exemplo. Para fontes dinâmicas, a latência é determinada pelo tamanho do buffer usado para manter amostras. Por exemplo, suponha que o grafo de filtro tenha uma fonte de vídeo com uma latência de 33 milissegundos (MS) e uma fonte de áudio com uma latência de 500 ms. Cada quadro de vídeo chega no processador de vídeo cerca de 470 MS antes da amostra de áudio correspondente atingir o processador de áudio. A menos que o grafo compensasse a diferença, o áudio e o vídeo não serão sincronizados.
 
-As fontes dinâmicas podem ser sincronizadas por meio da interface [**IAMPushSource**](/windows/desktop/api/Strmif/nn-strmif-iampushsource) . O Gerenciador de gráfico de filtro não sincroniza fontes dinâmicas, a menos que o aplicativo habilite a sincronização chamando o método [**IAMGraphStreams:: SyncUsingStreamOffset**](/windows/desktop/api/Strmif/nf-strmif-iamgraphstreams-syncusingstreamoffset) . Se a sincronização estiver habilitada, o Gerenciador de gráfico de filtro consultará cada filtro de origem para **IAMPushSource**. Se o filtro der suporte a **IAMPushSource**, o Gerenciador de gráfico de filtro chamará [**IAMLatency:: getlatência**](/windows/desktop/api/Strmif/nf-strmif-iamlatency-getlatency) para recuperar a latência esperada do filtro. (A interface **IAMPushSource** herda [**IAMLatency**](/windows/desktop/api/Strmif/nn-strmif-iamlatency).) Dos valores de latência combinados, o Gerenciador de gráfico de filtro determina a latência máxima esperada no grafo. Em seguida, ele chama [**IAMPushSource:: SetStreamOffset**](/windows/desktop/api/Strmif/nf-strmif-iampushsource-setstreamoffset) para dar a cada filtro de origem um deslocamento de fluxo, que o filtro adiciona aos carimbos de data/hora que ele gera.
+As fontes dinâmicas podem ser sincronizadas por meio da interface [**IAMPushSource**](/windows/desktop/api/Strmif/nn-strmif-iampushsource) . o filtro Graph Manager não sincroniza fontes dinâmicas, a menos que o aplicativo habilite a sincronização chamando o método [**IAMGraphStreams:: SyncUsingStreamOffset**](/windows/desktop/api/Strmif/nf-strmif-iamgraphstreams-syncusingstreamoffset) . se a sincronização estiver habilitada, o filtro Graph gerenciador consultará cada filtro de origem para **IAMPushSource**. se o filtro der suporte a **IAMPushSource**, o filtro Graph Manager chamará [**IAMLatency:: getlatência**](/windows/desktop/api/Strmif/nf-strmif-iamlatency-getlatency) para recuperar a latência esperada do filtro. (A interface **IAMPushSource** herda [**IAMLatency**](/windows/desktop/api/Strmif/nn-strmif-iamlatency).) dos valores de latência combinados, o filtro Graph Manager determina a latência máxima esperada no grafo. Em seguida, ele chama [**IAMPushSource:: SetStreamOffset**](/windows/desktop/api/Strmif/nf-strmif-iampushsource-setstreamoffset) para dar a cada filtro de origem um deslocamento de fluxo, que o filtro adiciona aos carimbos de data/hora que ele gera.
 
-Esse método destina-se principalmente à visualização dinâmica. No entanto, observe que um pino de visualização em um dispositivo de captura ao vivo (como uma câmera) não define carimbos de data/hora nas amostras que ele fornece. Portanto, para usar esse método com um dispositivo de captura ao vivo, você deve Visualizar a partir do PIN de captura. Para obter mais informações, consulte [filtros de captura de vídeo do DirectShow](directshow-video-capture-filters.md).
+Esse método destina-se principalmente à visualização dinâmica. No entanto, observe que um pino de visualização em um dispositivo de captura ao vivo (como uma câmera) não define carimbos de data/hora nas amostras que ele fornece. Portanto, para usar esse método com um dispositivo de captura ao vivo, você deve Visualizar a partir do PIN de captura. para obter mais informações, consulte [DirectShow filtros de captura de vídeo](directshow-video-capture-filters.md).
 
 Atualmente, a interface [**IAMPushSource**](/windows/desktop/api/Strmif/nn-strmif-iampushsource) é suportada pelo filtro de [captura VFW](vfw-capture-filter.md) e pelo filtro de [captura de áudio](audio-capture-filter.md) .
 

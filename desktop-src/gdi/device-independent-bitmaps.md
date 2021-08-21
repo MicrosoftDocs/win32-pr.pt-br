@@ -4,12 +4,12 @@ ms.assetid: 56b39a3d-48a4-4620-9652-ec41ea4d6423
 title: Device-Independent bitmaps
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1aa35201a9a27c2d16a5a18b0125d25a3938890c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 5a6672857aadda714e7016616ca78654d7da102b48c1229c5b322953fc716f5b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118761385"
 ---
 # <a name="device-independent-bitmaps"></a>Device-Independent bitmaps
 
@@ -42,7 +42,7 @@ O aplicativo pode recuperar a resolução vertical usando o mesmo processo de tr
 
 A paleta é representada por uma matriz de estruturas [**RGBQUAD**](/windows/win32/api/wingdi/ns-wingdi-rgbquad) que especificam os componentes de intensidade vermelha, verde e azul para cada cor em uma paleta de cores do dispositivo de vídeo. Cada índice de cor na matriz da paleta é mapeado para um pixel específico na região retangular associada ao bitmap. O tamanho dessa matriz, em bits, é equivalente à largura do retângulo, em pixels, multiplicado pela altura do retângulo, em pixels, multiplicado pela contagem de bits de cor para o dispositivo. Um aplicativo pode recuperar o tamanho da paleta do dispositivo chamando a função [**GetDeviceCaps**](/windows/desktop/api/Wingdi/nf-wingdi-getdevicecaps) , especificando NUMCOLORS como o segundo argumento.
 
-O Windows dá suporte à compactação da matriz de paleta para 8-bpp e 4-bpp de baixo para cima. Essas matrizes podem ser compactadas usando o esquema RLE (codificação de comprimento de execução). O esquema RLE usa valores de 2 bytes, o primeiro byte que especifica o número de pixels consecutivos que usam um índice de cores e o segundo byte que especifica o índice. Para obter mais informações sobre compactação de bitmap, consulte a descrição das estruturas [**BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)), [**BITMAPFILEHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapfileheader), [**BITMAPV4HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv4header)e [**BITMAPV5HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv5header) .
+Windows dá suporte à compactação da matriz de paleta para 8-bpp e 4-bpp de baixo para cima. Essas matrizes podem ser compactadas usando o esquema RLE (codificação de comprimento de execução). O esquema RLE usa valores de 2 bytes, o primeiro byte que especifica o número de pixels consecutivos que usam um índice de cores e o segundo byte que especifica o índice. Para obter mais informações sobre compactação de bitmap, consulte a descrição das estruturas [**BITMAPINFOHEADER**](/previous-versions//dd183376(v=vs.85)), [**BITMAPFILEHEADER**](/windows/win32/api/wingdi/ns-wingdi-bitmapfileheader), [**BITMAPV4HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv4header)e [**BITMAPV5HEADER**](/windows/desktop/api/Wingdi/ns-wingdi-bitmapv5header) .
 
 Um aplicativo pode criar um DIB de um BDD Inicializando as estruturas necessárias e chamando a função [**GetDIBits**](/windows/desktop/api/Wingdi/nf-wingdi-getdibits) . Para determinar se um dispositivo dá suporte a essa função, chame a função [**GetDeviceCaps**](/windows/desktop/api/Wingdi/nf-wingdi-getdevicecaps) , especificando o \_ \_ bitmap de di RC como o sinalizador RasterCaps.
 

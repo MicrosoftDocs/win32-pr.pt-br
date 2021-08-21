@@ -54,12 +54,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d0fc31954ff191f795146e3894b0394b29484fb1
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e984eef21fa74aa3f3134f19c1d6e7503a24ec9fb67e0ef3bfb0daa6330cfcd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105764743"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118353267"
 ---
 # <a name="imsrdpclientadvancedsettingsbitmapvirtualcache24bppsize-property"></a>Propriedade IMsRdpClientAdvancedSettings:: BitmapVirtualCache24BppSize
 
@@ -67,7 +67,7 @@ Especifica o tamanho, em megabytes, do arquivo de cache de bitmap persistente a 
 
 Esta propriedade é de leitura/gravação.
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
