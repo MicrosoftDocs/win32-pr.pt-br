@@ -3,7 +3,7 @@ title: Mensagem de TB_SETROWS (commctrl. h)
 description: Define o número de linhas de botões em uma barra de ferramentas.
 ms.assetid: d8ea7b80-d23e-4593-8eb1-d23808173fc9
 keywords:
-- Controles de TB_SETROWS de mensagens do Windows
+- controles de Windows de mensagem de TB_SETROWS
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5d0065a3f5f6a277713e368177886ebd064ea132
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b2c0e95d6f0f19c2b1c9b76cf22a37da0086987b22fe144603cdb2afa8a1ad83
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009772"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119293636"
 ---
 # <a name="tb_setrows-message"></a>Mensagem de TB \_ SETrows
 
@@ -45,7 +45,7 @@ Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) qu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -59,9 +59,9 @@ Como o sistema não divide os grupos de botões ao definir o número de linhas, 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

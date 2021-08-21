@@ -121,15 +121,15 @@ Esse atributo indica a última vez que um arquivo no volume de armazenamento rem
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| Tem valor único       | Verdadeiro                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Verdadeiro                                                           |
-| No Catálogo Global      | Falso                                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
+| No catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Esse atributo indica a última vez que um arquivo no volume de armazenamento rem
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| Tem valor único       | Verdadeiro                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Verdadeiro                                                           |
-| No Catálogo Global      | Falso                                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
+| No catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Esse atributo indica a última vez que um arquivo no volume de armazenamento rem
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| Tem valor único       | Verdadeiro                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Verdadeiro                                                           |
-| No Catálogo Global      | Falso                                                          |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                   |
+| No catálogo global      | Falso                                                          |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
 | Range-Lower            | \-                                                             |
 | Range-Upper            | \-                                                             |
 | Search-Flags           | 0x00000001                                                     |
 | System-Flags           | 0x00000010                                                     |
-| Classes usadas em        | [**Link-Track-Vol-Entry**](c-linktrackvolentry.md)<br/> |
+| Classes usadas em        | [**Link-Track-Vol-entry**](c-linktrackvolentry.md)<br/> |
 
 
 

@@ -1,19 +1,19 @@
 ---
-description: Número do modelo do dispositivo Bluetooth.
+description: Bluetooth número do modelo do dispositivo.
 ms.assetid: a2b131c0-42e3-4d1e-91df-839638388f9a
 title: System. DeviceInterface. Bluetooth. ModelNumber
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d65f77aa38fb7f97c528e109f5d0dd4a76d44b65
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 41003a64c1ee854365bd058262f8d6d2a1bd5cf4699afd9358304e9c84ae083a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105814487"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120010996"
 ---
 # <a name="systemdeviceinterfacebluetoothmodelnumber"></a>System. DeviceInterface. Bluetooth. ModelNumber
 
-Número do modelo do dispositivo Bluetooth.
+Bluetooth número do modelo do dispositivo.
 
 ## <a name="windows-10-version-1703-windows-10-version-1607-windows-10-version-1511-windows-10-version-1507-windows-81"></a>Windows 10, versão 1703, Windows 10, versão 1607, Windows 10, versão 1511, Windows 10, versão 1507, Windows 8.1
 

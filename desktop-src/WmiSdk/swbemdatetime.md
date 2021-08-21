@@ -15,12 +15,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 65f3f9836b52693e3f74bac5cfd94553e02d7bf9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 25f8b04aa8c581d8d7e40ab1d52162d305c97d0d8ce3f7d626cb3d29e7262666
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105790637"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050084"
 ---
 # <a name="swbemdatetime-object"></a>Objeto SWbemDateTime
 
@@ -28,7 +28,7 @@ O objeto **SWbemDateTime** é um objeto auxiliar para analisar e definir os valo
 
 Um objeto **SWbemDateTime** pode ser inicializado e formatado em um **VT \_ Date** ou em valores **FILETIME** usando métodos no objeto. Usando as propriedades do objeto, o valor pode ser analisado no ano do componente, mês, dia, hora, minutos, segundos ou em microssegundos. O objeto **SWbemDateTime** pode ser formatado em valores de UTC (tempo Universal local ou coordenado). Para obter mais informações, consulte [formato de data e hora](date-and-time-format.md).
 
-**SWbemDateTime** é o único objeto de script Instrumentação de gerenciamento do Windows (WMI) que é marcado como seguro para inicialização e scripts em execução em páginas HTML no Internet Explorer.
+**SWbemDateTime** é o único objeto de script Instrumentação de Gerenciamento do Windows (WMI) que é marcado como seguro para inicialização e scripts em execução em páginas HTML no Internet Explorer.
 
 ## <a name="members"></a>Membros
 
@@ -281,7 +281,7 @@ O código do PowerShell a seguir converte o código em um formato pronto para se
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMDATETIME CLSID<br/>                                                         |

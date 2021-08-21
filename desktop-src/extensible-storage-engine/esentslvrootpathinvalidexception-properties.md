@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentSLVRootPathInvalidException'
-title: Propriedades de EsentSLVRootPathInvalidException
+description: 'Saiba mais sobre: propriedades EsentSLVRootPathInvalidException'
+title: Propriedades EsentSLVRootPathInvalidException
 TOCTitle: EsentSLVRootPathInvalidException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentSLVRootPathInvalidException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentslvrootpathinvalidexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102906
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: bad636da29522e8a5e130adce94ad1f6bb727969
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 89cc7b1c77dec5a134d06b3c1d8ab948f4ff1bc44bb19f4d3aa779c5e83dd262
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297311"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120116586"
 ---
-# <a name="esentslvrootpathinvalidexception-properties"></a>Propriedades de EsentSLVRootPathInvalidException
+# <a name="esentslvrootpathinvalidexception-properties"></a>Propriedades EsentSLVRootPathInvalidException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentSLVRootPathInvalidException](./esentslvrootpathinvalidexception-class.md) expõe os membros a seguir.
+O [tipo EsentSLVRootPathInvalidException](./esentslvrootpathinvalidexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentSLVRootPathInvalidException](./esentslvrootpathinvalidexception-cla
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentSLVRootPathInvalidException](./esentslvrootpathinvalidexception-cla
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentSLVRootPathInvalidException](./esentslvrootpathinvalidexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

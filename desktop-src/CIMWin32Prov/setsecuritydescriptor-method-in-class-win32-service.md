@@ -1,8 +1,8 @@
 ---
-description: Método SetSecurityDescriptor da classe Win32_Service (provedores WMI CIMWin32) – grava uma versão atualizada do descritor de segurança que controla o acesso ao serviço.
+description: Método SetSecurityDescriptor da classe Win32_Service (Provedores WMI CIMWin32) – grava uma versão atualizada do descritor de segurança que controla o acesso ao serviço.
 ms.assetid: c1745b69-f355-4b4c-9e58-6a76c230f498
 ms.tgt_platform: multiple
-title: Método SetSecurityDescriptor da classe Win32_Service (provedores WMI CIMWin32)
+title: Método SetSecurityDescriptor da classe Win32_Service (Provedores WMI CIMWin32)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 20619a459171841d0a3bd5b7acabe984dc835dac
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: c79de15c251cc38e35b218aaba7ad0efec725d6baaf074df87a69453d81bf359
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108099994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119700096"
 ---
-# <a name="setsecuritydescriptor-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método SetSecurityDescriptor da classe Win32_Service (provedores WMI CIMWin32)
+# <a name="setsecuritydescriptor-method-of-the-win32_service-class-cimwin32-wmi-providers"></a>Método SetSecurityDescriptor da classe Win32_Service (Provedores WMI CIMWin32)
 
-O método **SetSecurityDescriptor** grava uma versão atualizada do descritor de segurança que controla o acesso ao serviço.
+O **método SetSecurityDescriptor** grava uma versão atualizada do descritor de segurança que controla o acesso ao serviço.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ uint32 SetSecurityDescriptor(
 
 <dl> <dt>
 
-*Descritor* \[ no\]
+*Descritor* \[ Em\]
 </dt> <dd>
 
 O descritor de segurança associado ao serviço.
@@ -49,7 +49,7 @@ O descritor de segurança associado ao serviço.
 
 ## <a name="return-value"></a>Valor retornado
 
-Retorna um dos valores listados na lista a seguir ou um valor diferente para indicar um erro. Para obter códigos de erro adicionais, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para obter valores gerais de **HRESULT** , consulte [códigos de erro do sistema](/windows/desktop/Debug/system-error-codes).
+Retorna um dos valores listados na lista a seguir ou um valor diferente para indicar um erro. Para obter códigos de erro adicionais, [**consulte Constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum). Para valores **gerais de HRESULT,** consulte [Códigos de erro do sistema.](/windows/desktop/Debug/system-error-codes)
 
 <dl> <dt>
 
@@ -95,7 +95,7 @@ O código de controle pedido não é válido ou é inaceitável para o serviço.
 **5**
 </dt> <dd>
 
-O código de controle solicitado não pode ser enviado ao serviço porque o estado do serviço ([**Win32 \_ BaseService**](win32-baseservice.md).**** A propriedade State) é igual a 0, 1 ou 2.
+O código de controle solicitado não pode ser enviado para o serviço porque o estado do serviço ([**Win32 \_ BaseService**](win32-baseservice.md).**A** propriedade State) é igual a 0, 1 ou 2.
 
 </dd> <dt>
 
@@ -127,7 +127,7 @@ Falha desconhecida ao iniciar o serviço.
 
 9
 
-O caminho do diretório para o arquivo executável do serviço não foi encontrado.
+O caminho do diretório para o arquivo executável de serviço não foi encontrado.
 
 </dd> <dt>
 
@@ -148,7 +148,7 @@ O banco de dados para adicionar um serviço novo está bloqueado.
 **12**
 </dt> <dd>
 
-Uma dependência da qual esse serviço depende foi removida do sistema.
+Uma dependência de que esse serviço depende foi removida do sistema.
 
 </dd> <dt>
 
@@ -176,7 +176,7 @@ O serviço não tem a autenticação correta para ser executado no sistema.
 **16**
 </dt> <dd>
 
-Este serviço está sendo removido do sistema.
+Esse serviço está sendo removido do sistema.
 
 </dd> <dt>
 
@@ -187,17 +187,17 @@ O serviço não tem nenhum thread de execução.
 
 </dd> <dt>
 
-**anos**
+**18**
 </dt> <dd>
 
-O serviço tem dependências circulares quando é iniciado.
+O serviço tem dependências circulares quando ele é iniciado.
 
 </dd> <dt>
 
-**aprimora**
+**19**
 </dt> <dd>
 
-Um serviço está sendo executado com o mesmo nome.
+Um serviço está em execução com o mesmo nome.
 
 </dd> <dt>
 
@@ -220,7 +220,7 @@ Parâmetros inválidos foram passados para o serviço.
 **22**
 </dt> <dd>
 
-A conta sob a qual este serviço é executado é inválida ou não tem as permissões para executar o serviço.
+A conta na qual esse serviço é executado é inválida ou não tem as permissões para executar o serviço.
 
 </dd> <dt>
 
@@ -238,7 +238,7 @@ O serviço está pausado atualmente no sistema.
 
 </dd> <dt>
 
-**Outros**
+**Outras**
 </dt> <dd>
 
 22 4294967295
@@ -247,25 +247,25 @@ O serviço está pausado atualmente no sistema.
 
 ## <a name="remarks"></a>Comentários
 
-A instância do [**Win32 \_ SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa um tipo de dados de [**\_ \_ controle do descritor de segurança**](/windows/desktop/SecAuthZ/security-descriptor-control) e contém uma DACL ( [*lista de controle de acesso discricionário*](/windows/desktop/SecGloss/d-gly) ) e uma SACL ( [*lista de controle de acesso*](/windows/desktop/SecGloss/s-gly) ) do sistema. Para obter mais informações, consulte [listas de controle de acesso](/windows/desktop/SecAuthZ/access-control-lists).
+A [**instância \_ securityDescriptor do Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) representa um tipo de dados [**SECURITY \_ DESCRIPTOR \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) e contém uma DACL [*(lista*](/windows/desktop/SecGloss/d-gly) de controle de acesso discricionário) e uma SACL [*(lista*](/windows/desktop/SecGloss/s-gly) de controle de acesso do sistema). Para obter mais informações, consulte [Listas de controle de acesso](/windows/desktop/SecAuthZ/access-control-lists).
 
-Se **SeSecurityPrivilege** não for concedido ou habilitado ao obter um descritor de segurança, somente a DACL será retornada no descritor de segurança retornado. Para obter mais informações, consulte [**constantes de privilégio**](/windows/desktop/WmiSdk/privilege-constants) e [executando operações privilegiadas](/windows/desktop/WmiSdk/executing-privileged-operations).
+Se **o SeSecurityPrivilege** não for concedido ou habilitado ao obter um descritor de segurança, somente a DACL será retornada no descritor de segurança retornado. Para obter mais informações, consulte [**Constantes de privilégio**](/windows/desktop/WmiSdk/privilege-constants) [e Executando operações privilegiadas](/windows/desktop/WmiSdk/executing-privileged-operations).
 
-Você pode atualizar a DACL e a SACL na instância [**\_ SecurityDescriptor do Win32**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) ao chamar esse método, mas também pode atualizar apenas a DACL ou apenas a SACL.
+Você pode atualizar a DACL e a SACL na instância [**\_ do Win32 SecurityDescriptor**](/previous-versions/windows/desktop/secrcw32prov/win32-securitydescriptor) ao chamar esse método, mas também pode atualizar apenas a DACL ou apenas a SACL.
 
-Os valores a seguir [**no \_ \_ controle do descritor de segurança**](/windows/desktop/SecAuthZ/security-descriptor-control) determinam se a DACL, a SACL ou ambas são atualizadas.
+Os valores a seguir [**em SECURITY \_ DESCRIPTOR \_ CONTROL**](/windows/desktop/SecAuthZ/security-descriptor-control) determinam se a DACL, a SACL ou ambas são atualizadas.
 
--   **\_DACL \_ presente**
+-   **\_ES DACL \_ PRESENT**
 
     Indica que a DACL deve ser atualizada. Se isso não for definido, o WMI preservará o valor original da DACL.
 
--   **\_SACL \_ presente**
+-   **\_ES SACL \_ PRESENT**
 
-    Indica que a SACL deve ser atualizada. Se isso não for definido, o WMI preservará o valor original da SACL. Para atualizar a SACL, a conta deve ter o privilégio **SeSecurityPrivilege** habilitado. Para scripts, o nome do privilégio é **SeSecurityPrivilege**. Para obter mais informações, consulte [**constantes de privilégio**](/windows/desktop/WmiSdk/privilege-constants).
+    Indica que a SACL deve ser atualizada. Se isso não estiver definido, o WMI preservará o valor original da SACL. Para atualizar a SACL, a conta deve ter o privilégio **SeSecurityPrivilege** habilitado. Para scripts, o nome do privilégio **é SeSecurityPrivilege.** Para obter mais informações, consulte [**Constantes de privilégio**](/windows/desktop/WmiSdk/privilege-constants).
 
-Se o grupo de confiança e as propriedades de confiança do proprietário não forem **nulas**, eles serão atualizados. Caso contrário, o WMI preservará os valores originais. Para obter mais informações, consulte [objetos do descritor de segurança do WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects).
+Se as propriedades do usuário confiável grupo e proprietário não são **NULL,** elas são atualizadas. Caso contrário, o WMI preservará os valores originais. Para obter mais informações, consulte [Objetos do descritor de](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)segurança WMI .
 
-Quando uma nova SACL é **nula** em uma chamada desse método, a SACL do descritor de segurança no objeto protegível de destino permanece inalterada.
+Quando uma nova SACL é **NULL** em uma chamada a esse método, o SACL descritor de segurança no objeto passível de proteger de destino é deixado inalterado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -275,26 +275,26 @@ Quando uma nova SACL é **nula** em uma chamada desse método, a SACL do descrit
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 
-[**\_Serviço Win32**](win32-service.md)
+[**Serviço \_ Win32**](win32-service.md)
 </dt> <dt>
 
 [**Constantes de privilégio**](/windows/desktop/WmiSdk/privilege-constants)
 </dt> <dt>
 
-[Objetos do descritor de segurança do WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
+[Objetos do descritor de segurança WMI](/windows/desktop/WmiSdk/wmi-security-descriptor-objects)
 </dt> <dt>
 
-[Alterando a segurança de acesso em objetos protegíveis](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
+[Alterando a segurança de acesso em objetos securáveis](/windows/desktop/WmiSdk/changing-access-security-on-securable-objects)
 </dt> <dt>
 
 [Controle de conta de usuário e WMI](/windows/desktop/WmiSdk/user-account-control-and-wmi)

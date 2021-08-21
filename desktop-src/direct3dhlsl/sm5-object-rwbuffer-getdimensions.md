@@ -1,6 +1,6 @@
 ---
-title: 'Função RWBuffer:: GetDimensions'
-description: 'Obtém o comprimento do buffer. | Função RWBuffer:: GetDimensions'
+title: Função RWBuffer::GetDimensions
+description: Obtém o comprimento do buffer. | Função RWBuffer::GetDimensions
 ms.assetid: 600147cb-9513-4b74-a873-1ed22b31cdf7
 keywords:
 - Função GetDimensions HLSL
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 98e419d3e77a27f211f0e063573caffcd6c61ce8
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 586f266fea0dbc035e8ff3a61e39cb18a7102d792ee05c44345a1b702cc1b574
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104989234"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120118236"
 ---
-# <a name="rwbuffergetdimensions-function"></a>Função RWBuffer:: GetDimensions
+# <a name="rwbuffergetdimensions-function"></a>Função RWBuffer::GetDimensions
 
 Obtém o comprimento do buffer.
 
@@ -36,7 +36,7 @@ void GetDimensions(
 
 <dl> <dt>
 
-*esmaecer* \[\]
+*esmaecimento* \[\]
 </dt> <dd>
 
 Tipo: **uint**
@@ -45,9 +45,9 @@ O comprimento, em bytes, do buffer.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Nothing
+Nada
 
 ## <a name="remarks"></a>Comentários
 
@@ -55,7 +55,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          | x     | x       |
 

@@ -1,18 +1,18 @@
 ---
-title: Método GetStatusText IMsRdpClient7 (Openservice.h)
-description: Recupera o texto de status para o código de status especificado.
+title: Método IMsRdpClient7 GetStatusText (OpenService. h)
+description: Recupera o texto de status do código de status especificado.
 ms.assetid: 1da2280a-c26d-4caa-b227-c289055f3aa9
 ms.tgt_platform: multiple
 keywords:
-- Método GetStatusText Serviços de Área de Trabalho Remota
-- Método GetStatusText Serviços de Área de Trabalho Remota interface , IMsRdpClient7
-- Interface IMsRdpClient7 Serviços de Área de Trabalho Remota , método GetStatusText
-- Método GetStatusText Serviços de Área de Trabalho Remota interface , IMsRdpClient8
-- Interface IMsRdpClient8 Serviços de Área de Trabalho Remota , método GetStatusText
-- Método GetStatusText Serviços de Área de Trabalho Remota interface , IMsRdpClient9
-- Interface IMsRdpClient9 Serviços de Área de Trabalho Remota , método GetStatusText
-- Método GetStatusText Serviços de Área de Trabalho Remota interface , IMsRdpClient10
-- Interface IMsRdpClient10 Serviços de Área de Trabalho Remota , método GetStatusText
+- Serviços de Área de Trabalho Remota do método GetStatusText
+- Método GetStatusText Serviços de Área de Trabalho Remota, interface IMsRdpClient7
+- Serviços de Área de Trabalho Remota de interface IMsRdpClient7, método GetStatusText
+- Método GetStatusText Serviços de Área de Trabalho Remota, interface IMsRdpClient8
+- Serviços de Área de Trabalho Remota de interface IMsRdpClient8, método GetStatusText
+- Método GetStatusText Serviços de Área de Trabalho Remota, interface IMsRdpClient9
+- Serviços de Área de Trabalho Remota de interface IMsRdpClient9, método GetStatusText
+- Método GetStatusText Serviços de Área de Trabalho Remota, interface IMsRdpClient10
+- Serviços de Área de Trabalho Remota de interface IMsRdpClient10, método GetStatusText
 topic_type:
 - apiref
 api_name:
@@ -33,9 +33,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119285186"
 ---
-# <a name="imsrdpclient7getstatustext-method"></a>Método IMsRdpClient7::GetStatusText
+# <a name="imsrdpclient7getstatustext-method"></a>Método IMsRdpClient7:: GetStatusText
 
-Recupera o texto de status para o código de status especificado.
+Recupera o texto de status do código de status especificado.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,10 +53,10 @@ HRESULT GetStatusText(
 
 <dl> <dt>
 
-*statusCode* \[ Em\]
+*StatusCode* \[ no\]
 </dt> <dd>
 
-Um **UINT** que especifica o código de status para o que recuperar o texto.
+Um **uint** que especifica o código de status para o qual recuperar o texto.
 
 </dd> <dt>
 
@@ -69,7 +69,7 @@ O endereço de um **BSTR** que recebe o texto de status.
 
 ## <a name="return-value"></a>Valor retornado
 
-Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, ele retornará um **código de erro HRESULT.**
+Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
 ## <a name="requirements"></a>Requisitos
 
@@ -79,10 +79,10 @@ Se esse método for bem-sucedido, ele **retornará S \_ OK.** Caso contrário, e
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 7<br/>                                                                     |
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Openservice.h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>OpenService. h</dt> </dl> |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>   |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>   |
-| IID<br/>                      | IID \_ IMsRdpClient7 é definido como b2a5b5ce-3461-444a-91d4-add26d070638<br/>         |
+| IID<br/>                      | IID \_ IMsRdpClient7 é definido como b2a5b5ce-3461-444A-91D4-add26d070638<br/>         |
 
 
 

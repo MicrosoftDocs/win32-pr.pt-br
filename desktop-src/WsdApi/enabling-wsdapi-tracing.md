@@ -1,25 +1,25 @@
 ---
-description: Os logs de WSDAPI contêm informações de depuração que podem ser usadas para encontrar a causa raiz das falhas do aplicativo WSDAPI.
+description: Os logs WSDAPI contêm informações de depuração que podem ser usadas para encontrar a causa raiz de falhas do aplicativo WSDAPI.
 ms.assetid: 28b4c032-1c9a-4b3a-9a6a-2948456572b2
 title: Habilitando o rastreamento WSDAPI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 951f8ddfee6043cc662a456c70960e78ed1a3625
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd8f765249f4888a1dcfd2c6a44a81d3e2652a75bb983e85a881093d3c266b5d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010812"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049694"
 ---
 # <a name="enabling-wsdapi-tracing"></a>Habilitando o rastreamento WSDAPI
 
-Os logs de WSDAPI contêm informações de depuração que podem ser usadas para encontrar a causa raiz das falhas do aplicativo WSDAPI. Quando o rastreamento está habilitado, as informações de log são armazenadas em um arquivo. etl em um local especificado pelo usuário. Esse arquivo. etl pode ser enviado para o suporte do desenvolvedor da Microsoft para análise da causa raiz. Para obter informações sobre como contatar o suporte, acesse [https://support.microsoft.com](https://support.microsoft.com) .
+Os logs WSDAPI contêm informações de depuração que podem ser usadas para encontrar a causa raiz de falhas do aplicativo WSDAPI. Quando o rastreamento está habilitado, as informações de log são armazenadas em um arquivo .etl em um local especificado pelo usuário. Esse arquivo .etl pode ser enviado ao suporte do desenvolvedor da Microsoft para análise de causa raiz. Para obter informações sobre como entrar em contato com o suporte, acesse [https://support.microsoft.com](https://support.microsoft.com) .
 
 Esse procedimento deve ser feito duas vezes: uma vez no cliente e uma vez no host.
 
 **Para habilitar o rastreamento WSDAPI**
 
-1.  Usando o bloco de notas ou outro editor de texto, crie um arquivo de texto com o seguinte texto:
+1.  Usando Bloco de notas ou outro editor de texto, crie um arquivo de texto com o seguinte texto:
 
     ``` syntax
     "{480217a9-f824-4bd4-bbe8-f371caaf9a0d}" 0xFF 0xFF
@@ -35,19 +35,19 @@ Esse procedimento deve ser feito duas vezes: uma vez no cliente e uma vez no hos
     "{836767a6-af31-4938-b4c0-ef86749a9aef}" 0xFF 0xFF
     ```
 
-2.  Salve o arquivo de texto como `C:\temp\traceguids.txt` e feche o arquivo.
+2.  Salve o arquivo de texto `C:\temp\traceguids.txt` como e feche o arquivo.
 3.  Abra uma janela de prompt de comando elevado.
-4.  Execute o seguinte comando: **logman.exe Create Trace wsdlog-o c: \\ temp \\ WSD**
-5.  Execute o seguinte comando: **logman.exe Update wsdlog-PF c: \\ temp \\traceguids.txt**
-6.  Execute o seguinte comando: **logman.exe Start wsdlog**
-7.  Reproduza a falha iniciando o host e o cliente ou pressionando F5 no Gerenciador de rede.
+4.  Execute o seguinte comando: **logman.exe criar rastreamento wsdlog -o c: \\ temp \\ wsd**
+5.  Execute o seguinte comando: **logman.exe update wsdlog -pf c: \\ temp \\traceguids.txt**
+6.  Execute o seguinte comando: **logman.exe start wsdlog**
+7.  Reproduza a falha iniciando o host e o cliente ou pressionando F5 no Gerenciador de Rede.
 
 **Para desabilitar o rastreamento WSDAPI**
 
 1.  Abra uma janela de prompt de comando elevado.
-2.  Execute o seguinte comando: **logman.exe parar wsdlog**
+2.  Execute o seguinte comando: **logman.exe stop wsdlog**
 
-Depois que a falha do aplicativo for capturada, os \* arquivos. etl poderão ser enviados ao suporte da Microsoft. Esses arquivos estão localizados em `C:\temp\wsd_*.etl` .
+Depois que a falha do aplicativo for capturada, os \* arquivos .etl poderão ser enviados para o suporte da Microsoft. Esses arquivos estão localizados em `C:\temp\wsd_*.etl` .
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -56,7 +56,7 @@ Depois que a falha do aplicativo for capturada, os \* arquivos. etl poderão ser
 [Procedimentos de diagnóstico do WSDAPI](wsdapi-diagnostic-procedures.md)
 </dt> <dt>
 
-[Introdução com a solução de problemas de WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
+[Ponto de Partida solução de problemas do WSDAPI](getting-started-with-wsdapi-troubleshooting.md)
 </dt> <dt>
 
 [https://support.microsoft.com](https://support.microsoft.com)

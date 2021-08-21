@@ -1,39 +1,39 @@
 ---
-title: Como processar a notificação de DTN_FORMATQUERY
-description: Este tópico demonstra como processar uma notificação de consulta de formato que é enviada pelo controle do seletor de data e hora (DTP).
+title: Como processar a notificação DTN_FORMATQUERY dados
+description: Este tópico demonstra como processar uma notificação formatar consulta enviada pelo controle DTP (selador de data e hora).
 ms.assetid: 74E29438-2F50-4ADD-B0C4-DB3450BF08D7
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2e8de1e1a80d04f9a7f9e9d0cfcda198118e67c2
-ms.sourcegitcommit: a716ca2a6a22a400f02c6b31699cf4da83ee3619
+ms.openlocfilehash: 941c148332c36711e68b7c3b773fdb47acef202c5fd2a67f5620319f06c7fbc3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "103917815"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119696936"
 ---
 # <a name="how-to-process-the-dtn_formatquery-notification"></a>Como processar a notificação DTN \_ FORMATQUERY
 
-Este tópico demonstra como processar uma notificação de consulta de formato que é enviada pelo controle do seletor de data e hora (DTP).
+Este tópico demonstra como processar uma notificação formatar consulta enviada pelo controle DTP (selador de data e hora).
 
 ## <a name="what-you-need-to-know"></a>O que você precisa saber
 
 ### <a name="technologies"></a>Tecnologias
 
--   [Controles do Windows](window-controls.md)
+-   [Windows Controles](window-controls.md)
 
 ### <a name="prerequisites"></a>Pré-requisitos
 
 -   C/C++
--   Programação da interface do usuário do Windows
+-   Windows Interface do Usuário programação
 
 ## <a name="instructions"></a>Instruções
 
 
-Um controle DTP envia um código de notificação [DTN \_ FORMATQUERY](dtn-formatquery.md) para solicitar informações sobre o tamanho máximo possível de um campo de retorno de chamada dentro do controle. Seu aplicativo deve lidar com essa mensagem para garantir que todos os campos sejam exibidos corretamente.
+Um controle DTP envia um código de notificação [DTN \_ FORMATQUERY](dtn-formatquery.md) para solicitar informações sobre o tamanho máximo possível de um campo de retorno de chamada dentro do controle . Seu aplicativo deve lidar com essa mensagem para garantir que todos os campos sejam exibidos corretamente.
 
-O exemplo de código C++ a seguir é uma função definida pelo aplicativo que processa o código de notificação [DTN \_ FORMATQUERY](dtn-formatquery.md) calculando a largura da cadeia de caracteres mais larga possível para um determinado campo de retorno de chamada.
+O exemplo de código C++ a seguir é uma função definida pelo aplicativo que processa o código de notificação [ \_ FORMATQUERY DTN](dtn-formatquery.md) calculando a largura da cadeia de caracteres mais ampla possível para um determinado campo de retorno de chamada.
 
-**Aviso de segurança:** O uso incorreto do **lstrcmp** pode comprometer a segurança do seu aplicativo. Por exemplo, antes de chamar **lstrcmp** no exemplo de código a seguir, você deve verificar se as duas cadeias de caracteres são terminadas em nulo. Você deve examinar as [considerações de segurança: controles do Microsoft Windows](sec-comctls.md) antes de continuar.
+**Aviso de segurança:** Usar **lstrcmp** incorretamente pode comprometer a segurança do seu aplicativo. Por exemplo, antes de chamar **lstrcmp** no exemplo de código a seguir, você deve garantir que as duas cadeias de caracteres sejam terminadas em nulo. Você deve revisar [considerações de segurança: Controles Windows Microsoft antes](sec-comctls.md) de continuar.
 
 
 
@@ -81,13 +81,13 @@ void WINAPI DoFormatQuery(
 
 <dl> <dt>
 
-[Usando controles de seletor de data e hora](using-date-and-time-picker.md)
+[Usando controles de selador de data e hora](using-date-and-time-picker.md)
 </dt> <dt>
 
-[Referência de controle do seletor de data e hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
+[Referência de controle do selador de data e hora](bumper-date-and-time-picker-date-and-time-picker-control-reference.md)
 </dt> <dt>
 
-[Seletor de data e hora](date-and-time-picker-control-reference.md)
+[Selador de data e hora](date-and-time-picker-control-reference.md)
 </dt> </dl>
 
  

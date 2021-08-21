@@ -1,27 +1,27 @@
 ---
-description: Quando um aplicativo cliente faz logon no Instrumentação de Gerenciamento do Windows (WMI) pela primeira vez, ele deve definir o nível de segurança do processo padrão com uma chamada para CoInitializeSecurity.
+description: Quando um aplicativo cliente faz logon no WMI (Instrumentação de Gerenciamento de Windows) pela primeira vez, ele deve definir o nível de segurança do processo padrão com uma chamada para CoInitializeSecurity.
 ms.assetid: 4248fd1b-0867-40d8-8c9c-541156212df8
 ms.tgt_platform: multiple
 title: Definindo o nível de segurança do processo padrão usando C++
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 33bb51deb2c228f0958209c774e7526b4eeed958
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fcaec4ebbcd39c8cee9ee8aae002621a4a5a1853d1e4cfd4282194115c15ce3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104506221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119050284"
 ---
 # <a name="setting-the-default-process-security-level-using-c"></a>Definindo o nível de segurança do processo padrão usando C++
 
-Quando um aplicativo cliente faz logon no Instrumentação de Gerenciamento do Windows (WMI) pela primeira vez, ele deve definir o nível de segurança do processo padrão com uma chamada para [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). COM usa as informações na chamada para determinar a quantidade de segurança que outro processo deve ter para acessar o processo do aplicativo cliente.
+Quando um aplicativo cliente faz logon no WMI (Instrumentação de Gerenciamento de Windows) pela primeira vez, ele deve definir o nível de segurança do processo padrão com uma chamada para [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity). O COM usa as informações na chamada para determinar a segurança que outro processo deve ter para acessar o processo do aplicativo cliente.
 
 As seções a seguir são discutidas neste tópico:
 
 -   [Alterando as credenciais de autenticação padrão usando C++](#changing-the-default-authentication-credentials-using-c)
 -   [Alterando os níveis de representação padrão usando C++](#changing-the-default-impersonation-levels-using-c)
 
-Para a maioria dos aplicativos cliente, os argumentos mostrados no exemplo a seguir definem a segurança padrão para o WMI.
+Para a maioria dos aplicativos cliente, os argumentos mostrados no exemplo a seguir configuram a segurança padrão para WMI.
 
 
 ```C++
@@ -48,7 +48,7 @@ if (FAILED(hr))
 
 
 
-O código requer as referências a seguir e \# inclui instruções para compilar corretamente.
+O código requer as seguintes referências e instruções \# include para compilar corretamente.
 
 
 ```C++
@@ -62,7 +62,7 @@ using namespace std;
 
 
 
-Definir o nível de autenticação para o **\_ padrão de \_ \_ nível \_ da autenticação RPC C** permite que o DCOM negocie o nível de autenticação para corresponder às demandas de segurança do computador de destino. Para obter mais informações, consulte [alterando as credenciais de autenticação padrão usando c++](#changing-the-default-authentication-credentials-using-c) e [alterando as configurações de representação padrão usando c++](#changing-the-default-impersonation-levels-using-c).
+Definir o nível de autenticação como **RPC \_ C \_ AUTHN \_ LEVEL \_ DEFAULT** permite que o DCOM negocie o nível de autenticação para corresponder às demandas de segurança do computador de destino. Para obter mais informações, consulte Alterando as credenciais de autenticação padrão usando [C++](#changing-the-default-authentication-credentials-using-c) e Alterando a representação padrão Configurações [usando C++.](#changing-the-default-impersonation-levels-using-c)
 
 ## <a name="changing-the-default-authentication-credentials-using-c"></a>Alterando as credenciais de autenticação padrão usando C++
 
@@ -74,19 +74,19 @@ A tabela a seguir lista e descreve os diferentes níveis de autenticação.
 
 | Nível de autenticação                 | Descrição                                                                           |
 |--------------------------------------|---------------------------------------------------------------------------------------|
-| \_padrão de \_ nível de autenticação RPC C \_ \_        | Autenticação de segurança padrão.                                                      |
-| RPC \_ C \_ Authn \_ nível \_ nenhum           | Sem autenticação.                                                                    |
-| \_conexão em \_ nível de autenticação RPC C \_ \_        | Autenticação somente quando o cliente cria uma relação com o servidor.           |
-| \_chamada de \_ nível de autenticação RPC C \_ \_           | Autenticação toda vez que o servidor recebe um RPC.                                  |
-| \_PCT do \_ nível de autenticação RPC C \_ \_            | Autenticação toda vez que o servidor recebe dados de um cliente.                      |
-| \_integridade de \_ pkt do \_ nível \_ de \_ autenticação RPC C | Autenticação que nenhum dado do pacote foi modificado.                        |
-| \_privacidade do \_ PCT do \_ nível \_ de \_ autenticação RPC C   | Inclui todos os níveis de autenticação anteriores e criptografa o valor de cada chamada RPC. |
+| RPC \_ C \_ AUTHN \_ LEVEL \_ DEFAULT        | Autenticação de segurança padrão.                                                      |
+| RPC \_ C \_ AUTHN \_ LEVEL \_ NONE           | Sem autenticação.                                                                    |
+| RPC \_ C \_ AUTHN \_ LEVEL \_ CONNECT        | Autenticação somente quando o cliente cria uma relação com o servidor.           |
+| RPC C CHAMADA DE NÍVEL \_ \_ AUTHN \_ \_           | Autenticação sempre que o servidor recebe um RPC.                                  |
+| RPC \_ C \_ AUTHN \_ LEVEL \_ PKT            | Autenticação sempre que o servidor recebe dados de um cliente.                      |
+| INTEGRIDADE \_ PKT NO NÍVEL DE \_ AUTHN \_ \_ RPC C \_ | Autenticação de que nenhum dado do pacote foi modificado.                        |
+| RPC \_ C \_ AUTHN \_ LEVEL \_ PKT \_ PRIVACY   | Inclui todos os níveis de autenticação anteriores e criptografa o valor de cada chamada RPC. |
 
 
 
  
 
-Você pode especificar as credenciais de autenticação padrão para vários usuários usando uma estrutura de **\_ \_ lista de autenticação exclusiva** no parâmetro *pAuthList* de [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity).
+Você pode especificar as credenciais de autenticação padrão para vários usuários usando uma estrutura **SOLE \_ AUTHENTICATION \_ LIST** no parâmetro *pAuthList* de [**CoInitializeSecurity**](/windows/win32/api/combaseapi/nf-combaseapi-coinitializesecurity).
 
 O exemplo de código a seguir mostra como alterar as credenciais de autenticação.
 
@@ -137,17 +137,17 @@ CoInitializeSecurity(
 
 ## <a name="changing-the-default-impersonation-levels-using-c"></a>Alterando os níveis de representação padrão usando C++
 
-O COM fornece níveis de segurança padrão lidos no registro do sistema. No entanto, a menos que seja especificamente modificado, as configurações do registro definem o nível de representação muito baixo para que o WMI funcione. Normalmente, o nível de representação padrão é a **identificação do nível de imp do RPC \_ c \_ \_ \_**, mas o WMI precisa de pelo menos a representação de **nível de imp do RPC \_ c \_ \_ \_** para funcionar com a maioria dos provedores, e você pode encontrar uma situação em que você precisa definir um nível mais alto de representação. Para obter mais informações, consulte [conectando-se ao WMI em um computador remoto](connecting-to-wmi-on-a-remote-computer.md). A tabela a seguir lista os diferentes níveis de representação.
+O COM fornece níveis de segurança padrão lidos do registro do sistema. No entanto, a menos que especificamente modificadas, as configurações do Registro definirão o nível de representação muito baixo para que o WMI funcione. Normalmente, o nível de representação padrão é **RPC \_ C IMP LEVEL \_ \_ \_ IDENTIFY**, mas o WMI precisa de pelo menos **RPC C IMP LEVEL \_ \_ \_ \_ IMPERSONATE** para funcionar com a maioria dos provedores, e você pode encontrar uma situação em que você precisa definir um nível mais alto de representação. Para obter mais informações, [consulte Conectando-se ao WMI em um computador remoto.](connecting-to-wmi-on-a-remote-computer.md) A tabela a seguir lista os diferentes níveis de representação.
 
 
 
 | Nível                           | Descrição                                                                                                   |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------|
-| \_padrão de \_ nível de imp \_ \_ de RPC C     | O sistema operacional escolhe o nível de representação.                                                      |
-| nível de imp do RPC \_ C- \_ \_ \_ anônimo   | O servidor pode representar o cliente, mas o token de representação não pode ser usado para nada.               |
-| \_identificação de \_ nível de imp \_ \_ de RPC C    | O servidor pode obter a identidade do cliente e representar o cliente para verificação de ACL.                 |
-| \_representação de \_ nível de imp \_ \_ do RPC C | O servidor pode representar o cliente em um limite de computador.                                           |
-| \_delegado de \_ nível de imp \_ \_ de RPC C    | O servidor pode representar o cliente entre vários limites e pode fazer chamadas em nome do cliente. |
+| RPC \_ C \_ IMP \_ LEVEL \_ DEFAULT     | O sistema operacional escolhe o nível de representação.                                                      |
+| RPC \_ C \_ IMP \_ LEVEL \_ ANONYMOUS   | O servidor pode representar o cliente, mas o token de representação não pode ser usado para nada.               |
+| RPC \_ C \_ IMP \_ LEVEL \_ IDENTIFY    | O servidor pode obter a identidade do cliente e representar o cliente para verificação de ACL.                 |
+| REPRESENTAÇÃO NO NÍVEL DE IMP DO RPC \_ C \_ \_ \_ | O servidor pode representar o cliente em um limite de computador.                                           |
+| DELEGADO DE NÍVEL DE IMP DO RPC \_ C \_ \_ \_    | O servidor pode representar o cliente em vários limites e pode fazer chamadas em nome do cliente. |
 
 
 

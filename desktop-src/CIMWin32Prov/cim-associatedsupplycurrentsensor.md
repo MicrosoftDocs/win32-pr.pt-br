@@ -1,5 +1,5 @@
 ---
-description: A classe CIM \_ AssociatedSupplyCurrentSensor associa uma fonte de alimentação a um sensor atual (amperage) que monitora sua frequência de entrada.
+description: A classe CIM AssociatedSupplyCurrentSensor associa uma fonte de alimentação a um \_ sensor atual (amperage) que monitora sua frequência de entrada.
 ms.assetid: bed4714f-ecf4-4c53-b231-c8fac673371f
 ms.tgt_platform: multiple
 title: CIM_AssociatedSupplyCurrentSensor classe

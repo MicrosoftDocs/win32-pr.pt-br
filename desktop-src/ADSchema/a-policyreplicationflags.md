@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 42da6509662d11c4a069ba58dff5f648e7ab2261
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ad117106c5a3223641a15d0f996409499fc36475d51e317a0aa2e20357e0e148
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105753013"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704376"
 ---
 # <a name="policy-replication-flags-attribute"></a>Política-replicação-atributo de sinalizadores
 
@@ -58,7 +58,7 @@ Determina quais propriedades LSA são replicadas para os clientes.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -79,7 +79,7 @@ Determina quais propriedades LSA são replicadas para os clientes.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -100,7 +100,7 @@ Determina quais propriedades LSA são replicadas para os clientes.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| É de valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
 | No catálogo global      | Falso                                     |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
@@ -121,10 +121,10 @@ Determina quais propriedades LSA são replicadas para os clientes.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -142,10 +142,10 @@ Determina quais propriedades LSA são replicadas para os clientes.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |
@@ -163,10 +163,10 @@ Determina quais propriedades LSA são replicadas para os clientes.
 | ID do link                | \-                                        |
 | MAPI-Id                | \-                                        |
 | System-Only            | Falso                                     |
-| É de valor único       | True                                      |
+| Tem valor único       | Verdadeiro                                      |
 | É indexado             | Falso                                     |
-| No catálogo global      | Falso                                     |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                              |
+| No Catálogo Global      | Falso                                     |
+| Descritor de segurança NT | O:BAG:BAD:S:                              |
 | Range-Lower            | \-                                        |
 | Range-Upper            | \-                                        |
 | Search-Flags           | 0x00000000                                |

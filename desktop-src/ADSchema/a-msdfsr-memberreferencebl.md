@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e40e963c1477ed67cc347db1f101d30a49be370c
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 2595cbb565fffd7d4100be34982f473c5770df3da035a5b8e8239f9bd276bac9
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825378"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119298756"
 ---
 # <a name="ms-dfsr-memberreferencebl-attribute"></a>atributo ms-DFSR-MemberReferenceBL
 
@@ -119,10 +119,10 @@ Contém o link para trás para o atributo [**MS-DFSR-MemberReference**](a-msdfsr
 | ID do link                | 2053                            |
 | MAPI-Id                | \-                              |
 | System-Only            | Falso                           |
-| É de valor único       | Falso                           |
+| Tem valor único       | Falso                           |
 | É indexado             | Falso                           |
-| No catálogo global      | Falso                           |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
+| No Catálogo Global      | Falso                           |
+| Descritor de segurança NT | O:BAG:BAD:S:                    |
 | Range-Lower            | \-                              |
 | Range-Upper            | \-                              |
 | Search-Flags           | 0x00000000                      |
@@ -133,7 +133,7 @@ Contém o link para trás para o atributo [**MS-DFSR-MemberReference**](a-msdfsr
 
 ## <a name="remarks"></a>Comentários
 
-O atributo **MS-DFSR-MemberReferenceBL** faz parte do suporte ao serviço de replicação do sistema de arquivos distribuído (DFS).
+O **atributo ms-DFSR-MemberReferenceBL** faz parte do suporte do serviço de replicação Sistema de Arquivos Distribuído (DFS).
 
  
 

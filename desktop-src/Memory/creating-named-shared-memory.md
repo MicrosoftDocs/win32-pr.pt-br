@@ -1,29 +1,29 @@
 ---
-description: Para compartilhar dados, vários processos podem usar arquivos mapeados por memória que o arquivo de paginação do sistema armazena.
+description: Para compartilhar dados, vários processos podem usar arquivos mapeados em memória que o arquivo de paging do sistema armazena.
 ms.assetid: 17458be2-3ef7-42f2-a717-abf73ac4846f
-title: Criando a memória compartilhada nomeada
+title: Criando memória compartilhada nomeada
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 18ac708497ceb12ed099c7a9c0b3788d7a05a925
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b2fc5ec3d9865d310807d01ac9f76967d4378fc92e4c9588d00b2933a08c953f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105767625"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869916"
 ---
-# <a name="creating-named-shared-memory"></a>Criando a memória compartilhada nomeada
+# <a name="creating-named-shared-memory"></a>Criando memória compartilhada nomeada
 
-Para compartilhar dados, vários processos podem usar arquivos mapeados por memória que o arquivo de paginação do sistema armazena.
+Para compartilhar dados, vários processos podem usar arquivos mapeados em memória que o arquivo de paging do sistema armazena.
 
 ## <a name="first-process"></a>Primeiro processo
 
-O primeiro processo cria o objeto de mapeamento de arquivo chamando a função [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) com um **\_ \_ valor de identificador inválido** e um nome para o objeto. Usando o sinalizador de **página \_ ReadWrite** , o processo tem permissão de leitura/gravação para a memória por meio de qualquer exibição de arquivo que é criada.
+O primeiro processo cria o objeto de mapeamento de arquivo chamando a [**função CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) com **VALOR DE \_ \_ IDENTIFICADOR INVÁLIDO** e um nome para o objeto . Usando o sinalizador **PAGE \_ READWRITE,** o processo tem permissão de leitura/gravação na memória por meio de quaisquer exibições de arquivo criadas.
 
-Em seguida, o processo usa o identificador de objeto de mapeamento de arquivo que [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) retorna em uma chamada para [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para criar uma exibição do arquivo no espaço de endereço do processo. A função **MapViewOfFile** retorna um ponteiro para a exibição de arquivo, `pBuf` . Em seguida, o processo usa a função [**CopyMemory**](/previous-versions/windows/desktop/legacy/aa366535(v=vs.85)) para gravar uma cadeia de caracteres na exibição que pode ser acessada por outros processos.
+Em seguida, o processo usa o identificador de objeto de mapeamento de arquivo que [**CreateFileMapping**](/windows/desktop/api/WinBase/nf-winbase-createfilemappinga) retorna em uma chamada para [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para criar uma exibição do arquivo no espaço de endereço do processo. A **função MapViewOfFile** retorna um ponteiro para a exibição de arquivo, `pBuf` . Em seguida, o processo usa a [**função CopyMemory**](/previous-versions/windows/desktop/legacy/aa366535(v=vs.85)) para gravar uma cadeia de caracteres na exibição que pode ser acessada por outros processos.
 
-A prefixação dos nomes de objeto de mapeamento de arquivo com "global \\ " permite que os processos se comuniquem entre si mesmo se estiverem em sessões do Terminal Server diferentes. Isso requer que o primeiro processo tenha o privilégio [**SeCreateGlobalPrivilege**](../secauthz/privilege-constants.md) .
+Prefixar os nomes de objeto de mapeamento de arquivo com "Global" permite que os processos se comuniquem entre si mesmo se eles estão em sessões de \\ servidor de terminal diferentes. Isso exige que o primeiro processo tenha o privilégio [**SeCreateGlobalPrivilege.**](../secauthz/privilege-constants.md)
 
-Quando o processo não precisar mais de acesso ao objeto de mapeamento de arquivo, ele deverá chamar a função [**CloseHandle**](/windows/win32/api/handleapi/nf-handleapi-closehandle) . Quando todos os identificadores são fechados, o sistema pode liberar a seção do arquivo de paginação que o objeto usa.
+Quando o processo não precisar mais acessar o objeto de mapeamento de arquivo, ele deverá chamar a [**função CloseHandle.**](/windows/win32/api/handleapi/nf-handleapi-closehandle) Quando todos os identificador são fechados, o sistema pode liberar a seção do arquivo de paging que o objeto usa.
 
 
 ```C++
@@ -85,9 +85,9 @@ int _tmain()
 
 
 
-## <a name="second-process"></a>Segundo processo
+## <a name="second-process"></a>Segundo Processo
 
-Um segundo processo pode acessar a cadeia de caracteres gravada na memória compartilhada pelo primeiro processo chamando a função [**OpenFileMapping**](/windows/desktop/api/WinBase/nf-winbase-openfilemappinga) especificando o mesmo nome para o objeto de mapeamento como o primeiro processo. Em seguida, ele pode usar a função [**MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para obter um ponteiro para a exibição de arquivo, `pBuf` . O processo pode exibir essa cadeia de caracteres como faria com qualquer outra cadeia de caracteres. Neste exemplo, a caixa de mensagem exibida contém a mensagem "mensagem do primeiro processo", que foi gravada pelo primeiro processo.
+Um segundo processo pode acessar a cadeia de caracteres escrita na memória compartilhada pelo primeiro processo chamando a [**função OpenFileMapping**](/windows/desktop/api/WinBase/nf-winbase-openfilemappinga) especificando o mesmo nome para o objeto de mapeamento que o primeiro processo. Em seguida, ele pode usar a [**função MapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffile) para obter um ponteiro para a exibição de arquivo, `pBuf` . O processo pode exibir essa cadeia de caracteres como faria com qualquer outra cadeia de caracteres. Neste exemplo, a caixa de mensagem exibida contém a mensagem "Mensagem do primeiro processo" que foi escrita pelo primeiro processo.
 
 
 ```C++

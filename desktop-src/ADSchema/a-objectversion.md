@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4f038f6286db575f4141c2e306086bb9a8faac71
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: facf10e8ea5466b75f9ce87f9a980a0ddc197dde839f40d76157f128c15b5d49
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105750362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119704546"
 ---
 # <a name="object-version-attribute"></a>Object-Version atributo
 
@@ -59,7 +59,7 @@ Isso pode ser usado para armazenar um número de versão para o objeto.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x80F7                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -80,7 +80,7 @@ Isso pode ser usado para armazenar um número de versão para o objeto.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x80F7                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -101,7 +101,7 @@ Isso pode ser usado para armazenar um número de versão para o objeto.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x80F7                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -122,7 +122,7 @@ Isso pode ser usado para armazenar um número de versão para o objeto.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x80F7                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -143,7 +143,7 @@ Isso pode ser usado para armazenar um número de versão para o objeto.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x80F7                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -164,7 +164,7 @@ Isso pode ser usado para armazenar um número de versão para o objeto.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x80F7                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |
@@ -185,7 +185,7 @@ Isso pode ser usado para armazenar um número de versão para o objeto.
 | ID do link                | \-                              |
 | MAPI-Id                | 0x80F7                          |
 | System-Only            | Falso                           |
-| É de valor único       | True                            |
+| É de valor único       | Verdadeiro                            |
 | É indexado             | Falso                           |
 | No catálogo global      | Falso                           |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                    |

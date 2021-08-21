@@ -1,11 +1,11 @@
 ---
-title: Atributo MS-SQL-Description
-description: A descrição do banco de dados SQL Server.
+title: atributo MS-SQL-Description
+description: a descrição do banco de dados SQL Server.
 ms.assetid: 30daa51a-078f-44ae-8c67-19c26a8a2e85
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-Description
-- Esquema de AD do atributo mS-SQL-Description
+- esquema de AD do atributo MS-SQL-Description
+- esquema de AD do atributo mS-SQL-Description
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 385d62d48e0e6a313d64a7c09da14482646e2530
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: b242c9f6e0876d90b7334ac86616e183e3c1ff56fde528c7ab51fd662d8736c0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749112"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119299867"
 ---
-# <a name="ms-sql-description-attribute"></a>Atributo MS-SQL-Description
+# <a name="ms-sql-description-attribute"></a>atributo MS-SQL-Description
 
-A descrição do banco de dados SQL Server.
+a descrição do banco de dados SQL Server.
 
 
 
@@ -66,7 +66,7 @@ A descrição do banco de dados SQL Server.
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -87,7 +87,7 @@ A descrição do banco de dados SQL Server.
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-sqlpúblico**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-sqldatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -108,7 +108,7 @@ A descrição do banco de dados SQL Server.
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ A descrição do banco de dados SQL Server.
 | ID do link                | \-                                                                                                                                                                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                       |
-| É de valor único       | True                                                                                                                                                                                                                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                                                                                                                                                        |
 | É indexado             | Falso                                                                                                                                                                                                                                                                                                                       |
-| No catálogo global      | Falso                                                                                                                                                                                                                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                                                                |
+| No Catálogo Global      | Falso                                                                                                                                                                                                                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ A descrição do banco de dados SQL Server.
 | ID do link                | \-                                                                                                                                                                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                       |
-| É de valor único       | True                                                                                                                                                                                                                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                                                                                                                                                        |
 | É indexado             | Falso                                                                                                                                                                                                                                                                                                                       |
-| No catálogo global      | Falso                                                                                                                                                                                                                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                                                                |
+| No Catálogo Global      | Falso                                                                                                                                                                                                                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ A descrição do banco de dados SQL Server.
 | ID do link                | \-                                                                                                                                                                                                                                                                                                                          |
 | MAPI-Id                | \-                                                                                                                                                                                                                                                                                                                          |
 | System-Only            | Falso                                                                                                                                                                                                                                                                                                                       |
-| É de valor único       | True                                                                                                                                                                                                                                                                                                                        |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                                                                                                                                                        |
 | É indexado             | Falso                                                                                                                                                                                                                                                                                                                       |
-| No catálogo global      | Falso                                                                                                                                                                                                                                                                                                                       |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                                                                                                                                                                |
+| No Catálogo Global      | Falso                                                                                                                                                                                                                                                                                                                       |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                                                                                                                                                                |
 | Range-Lower            | \-                                                                                                                                                                                                                                                                                                                          |
 | Range-Upper            | \-                                                                                                                                                                                                                                                                                                                          |
 | Search-Flags           | 0x00000000                                                                                                                                                                                                                                                                                                                  |
 | System-Flags           | 0x00000010                                                                                                                                                                                                                                                                                                                  |
-| Classes usadas em        | [**MS-SQL-sqlrepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-sqlpublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
+| Classes usadas em        | [**MS-SQL-SQLRepository**](c-ms-sql-sqlrepository.md)<br/> [**MS-SQL-SQLPublication**](c-ms-sql-sqlpublication.md)<br/> [**MS-SQL-SQLDatabase**](c-ms-sql-sqldatabase.md)<br/> [**MS-SQL-OLAPDatabase**](c-ms-sql-olapdatabase.md)<br/> [**MS-SQL-OLAPCube**](c-ms-sql-olapcube.md)<br/> |
 
 
 

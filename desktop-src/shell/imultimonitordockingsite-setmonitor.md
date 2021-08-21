@@ -12,12 +12,12 @@ api_type:
 - COM
 api_location: ''
 ms.assetid: ba4ace13-7096-4f05-bcb0-ab37f1632406
-ms.openlocfilehash: be773ee68c214f6a2fab8da89f1f48b867e71239
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: c79a2ec497e8eaaafead20e6fa01e10844f9c4786a158f869fe16e4eee19e7c9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109841937"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032394"
 ---
 # <a name="imultimonitordockingsitesetmonitor-method"></a>Método IMultiMonitorDockingSite:: setmonitor
 
@@ -67,7 +67,7 @@ Quando essa função retorna, contém um ponteiro para a alça do monitor padrã
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **HRESULT**
 
@@ -79,8 +79,8 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos da área de trabalho do Windows XP\]<br/> |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                   |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional, \[ somente aplicativos de área de trabalho do Windows XP\]<br/> |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                   |
 
 
 

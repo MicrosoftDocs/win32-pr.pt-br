@@ -1,10 +1,10 @@
 ---
-title: Métodos de propriedade IADs (IADs. h)
-description: Métodos de propriedade da interface IADs.
+title: Métodos de propriedade IADsGroup (Iads.h)
+description: Métodos de propriedade da interface IADsGroup.
 ms.assetid: a8aa88d4-4695-47bc-bf7f-a17236a5671c
 ms.tgt_platform: multiple
 keywords:
-- ADSI dos métodos de propriedade de IADs
+- Métodos de propriedade IADsGroup ADSI
 topic_type:
 - apiref
 api_name:
@@ -25,9 +25,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119082400"
 ---
-# <a name="iadsgroup-property-methods"></a>Métodos de propriedade IADs
+# <a name="iadsgroup-property-methods"></a>Métodos de propriedade IADsGroup
 
-Os métodos de propriedade da interface [**IADs**](/windows/desktop/api/Iads/nn-iads-iadsgroup) lêem e gravam as propriedades a seguir. Para obter mais informações, consulte [interface Property Methods](interface-property-methods.md).
+Os métodos de propriedade da interface [**IADsGroup**](/windows/desktop/api/Iads/nn-iads-iadsgroup) leem e escrevem as propriedades a seguir. Para obter mais informações, consulte [Métodos de propriedade de interface](interface-property-methods.md).
 
 ## <a name="properties"></a>Propriedades
 
@@ -36,11 +36,11 @@ Os métodos de propriedade da interface [**IADs**](/windows/desktop/api/Iads/nn-
 **Descrição**
 </dt> <dd> <dl>
 
-Indica a descrição textual da Associação de grupo.
+Indica a descrição textual da associação de grupo.
 
 <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Tipo de dados de script: **BSTR**
@@ -65,13 +65,13 @@ HRESULT put_Description(
 
 ## <a name="remarks"></a>Comentários
 
-### <a name="using-iadsgroup-to-retrieve-descriptions-of-built-in-groups"></a>Usando o IADs para recuperar descrições de grupos internos
+### <a name="using-iadsgroup-to-retrieve-descriptions-of-built-in-groups"></a>Usando IADsGroup para recuperar descrições de grupos internos
 
-os exemplos a seguir mostram como recuperar informações sobre Windows objetos de grupo por nome. Em um ambiente multilíngue, os grupos internos são, às vezes, conhecidos por diferentes nomes localizados, o que significa que eles não podem ser recuperados diretamente usando identificadores de cadeia de caracteres como "WinNT://Microsoft/Administrators". Nesse caso, o usuário pode se associar ao objeto SID conhecido para o grupo, recuperar o nome do grupo localizado e fornecê-lo ao método GetObject. Para obter mais informações, consulte [SIDs conhecidos](/windows/desktop/SecAuthZ/well-known-sids).
+Os exemplos a seguir mostram como recuperar informações sobre Windows de grupo por nome. Em um ambiente multilíngue, grupos integrados às vezes são conhecidos por nomes localizados diferentes, o que significa que eles não podem ser recuperados diretamente usando identificadores de cadeia de caracteres, como "WinNT://Microsoft/Administrators". Nesse caso, o usuário pode se vincular ao objeto SID conhecido do grupo, recuperar o nome do grupo localizado e fornecioná-lo ao método GetObject. Para obter mais informações, consulte [SIDs conhecidos.](/windows/desktop/SecAuthZ/well-known-sids)
 
 ## <a name="examples"></a>Exemplos
 
-o exemplo a seguir Visual Basic mostra como associar a um objeto de grupo e exibir a descrição do grupo.
+O exemplo Visual Basic a seguir mostra como se vincular a um objeto de grupo e exibir a descrição do grupo.
 
 
 ```VB
@@ -90,7 +90,7 @@ Cleanup
 
 
 
-O exemplo de C++ a seguir mostra como associar a um objeto de grupo e exibir a descrição do grupo.
+O exemplo C++ a seguir mostra como se vincular a um objeto de grupo e exibir a descrição do grupo.
 
 
 ```C++
@@ -126,9 +126,9 @@ Cleanup:
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>Iads.h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
-| IID<br/>                      | \_O IID IADs é definido como 27636B00-410f-11CF-B1FF-02608C9E7553<br/>            |
+| IID<br/>                      | IID IADsGroup é definido como \_ 27636B00-410F-11CF-B1FF-02608C9E7553<br/>            |
 
 
 
@@ -136,13 +136,13 @@ Cleanup:
 
 <dl> <dt>
 
-[**IADs**](/windows/desktop/api/Iads/nn-iads-iads)
+[**Iads**](/windows/desktop/api/Iads/nn-iads-iads)
 </dt> <dt>
 
-[**IADs**](/windows/desktop/api/Iads/nn-iads-iadsgroup)
+[**IADsGroup**](/windows/desktop/api/Iads/nn-iads-iadsgroup)
 </dt> <dt>
 
-[Métodos de propriedade de interface](interface-property-methods.md)
+[Métodos de propriedade interface](interface-property-methods.md)
 </dt> </dl>
 
  

@@ -4,12 +4,12 @@ ms.assetid: 65e22e4e-e346-41c2-929a-ba0d1f7f1732
 title: Bloquear
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2df54b246c5bde5914a14b53dd56b71688d92a5e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: afacd6d9664e9a095a1e8b0c725dc0171da709fdecffb88b428231a5b5359a4f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827445"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003634"
 ---
 # <a name="hold"></a>Bloquear
 

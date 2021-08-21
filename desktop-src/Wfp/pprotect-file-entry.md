@@ -1,7 +1,7 @@
 ---
 description: Estrutura usada pela função SfcGetFiles.
 ms.assetid: 958167e3-3eb3-406a-85bf-ffe2851a95a1
-title: Estrutura de PPROTECT_FILE_ENTRY (sfcfiles. h)
+title: PPROTECT_FILE_ENTRY estrutura (Sfcfiles.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - Sfcfiles.h
-ms.openlocfilehash: 98cda570a3677560d51800d58822d93a942847c2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c9070290170febf08e532b071812600fb0ef8755302a4bd1603858659196d0c1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105771553"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053194"
 ---
-# <a name="pprotect_file_entry-structure"></a>Estrutura de entrada de \_ arquivo PPROTECT \_
+# <a name="pprotect_file_entry-structure"></a>Estrutura PPROTECT \_ FILE \_ ENTRY
 
-\[Essa estrutura está disponível para uso nos sistemas operacionais especificados na seção requisitos. O suporte para essa estrutura foi removido no Windows Vista e no Windows Server 2008. Use as funções com suporte listadas em [funções WRP](wfp-functions.md) em vez disso.\]
+\[Essa estrutura está disponível para uso nos sistemas operacionais especificados na seção Requisitos. O suporte para essa estrutura foi removido no Windows Vista e Windows Server 2008. Em vez disso, use as funções com suporte listadas [no WRP Functions.](wfp-functions.md)\]
 
-Estrutura usada pela função [**SfcGetFiles**](sfcgetfiles.md) .
+Estrutura usada pela [**função SfcGetFiles.**](sfcgetfiles.md)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -46,21 +46,21 @@ typedef struct _PPROTECT_FILE_ENTRY {
 **SourceFileName**
 </dt> <dd>
 
-Ponteiro para um valor de cadeia de caracteres que contém o nome do arquivo de origem. Isso será **nulo** se o arquivo não for renomeado na instalação.
+Ponteiro para um valor de cadeia de caracteres que contém o nome do arquivo de origem. Isso será **NULL se** o arquivo não for renomeado na instalação.
 
 </dd> <dt>
 
 **FileName**
 </dt> <dd>
 
-Ponteiro para o valor de cadeia de caracteres que contém o nome de arquivo de destino mais o caminho completo para o arquivo.
+Ponteiro para o valor da cadeia de caracteres que contém o nome do arquivo de destino mais o caminho completo para o arquivo.
 
 </dd> <dt>
 
 **InfName**
 </dt> <dd>
 
-Ponteiro para o valor da cadeia de caracteres que contém o nome do arquivo INF que fornece informações de layout. Esse parâmetro pode ser **nulo** ao usar o layout padrão.
+Ponteiro para o valor da cadeia de caracteres que contém o nome do arquivo INF que fornece informações de layout. Esse parâmetro pode ser **NULL** ao usar o layout padrão.
 
 </dd> </dl>
 
@@ -70,11 +70,11 @@ Ponteiro para o valor da cadeia de caracteres que contém o nome do arquivo INF 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                 |
-| Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                        |
-| parâmetro<br/>                   | <dl> <dt>Sfcfiles. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Fim do suporte ao cliente<br/>    | Windows XP<br/>                                                                 |
+| Fim do suporte ao servidor<br/>    | Windows Server 2003<br/>                                                        |
+| Cabeçalho<br/>                   | <dl> <dt>Sfcfiles.h</dt> </dl> |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Função SisFreeAllocatedMemory (Sisbkup. h)
-description: Libera memória alocada pelas funções de API do SIS.
+title: Função SisFreeAllocatedMemory (Sisbkup.h)
+description: Libera a memória alocada pelas funções de API do SIS.
 ms.assetid: 8fab79c8-593c-46df-a885-09a59620a977
 keywords:
-- Backup de função SisFreeAllocatedMemory
+- Backup da função SisFreeAllocatedMemory
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 724970817b89f6a9f2490b0776775f6a3a4e69ca
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: a4510e464c2201952823d144721614caa7b5f1397c68f4f129dac73a4015b86a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824274"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119702176"
 ---
 # <a name="sisfreeallocatedmemory-function"></a>Função SisFreeAllocatedMemory
 
-A função **SisFreeAllocatedMemory** libera a memória alocada pelas funções de API do SIS.
+A **função SisFreeAllocatedMemory** libera a memória alocada pelas funções de API do SIS.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ void SisFreeAllocatedMemory(
 
 <dl> <dt>
 
-*allocatedSpace* \[ no\]
+*allocatedSpace* \[ Em\]
 </dt> <dd>
 
 Ponteiro para a memória alocada pela API do SIS.
@@ -55,7 +55,7 @@ Essa função não retorna um valor.
 
 Depois que a chamada para essa função for concluída, o chamador poderá não acessar mais a memória liberada.
 
-Essa chamada deve ser usada para desalocar a memória alocada para as cadeias de caracteres de parâmetro *commonStoreRootPathname* retornadas de [**SisCreateBackupStructure**](siscreatebackupstructure.md) e [**SisCreateRestoreStructure**](siscreaterestorestructure.md), e a matriz de cadeias de caracteres que contém nomes de arquivo de repositório comum retornado de **SisCreateBackupStructure**, [**SisCSFilesToBackupForLink**](siscsfilestobackupforlink.md), **SisCreateRestoreStructure** e [**SisRestoredLink**](sisrestoredlink.md). No último caso, a própria matriz também deve ser liberada chamando **SisFreeAllocatedMemory**.
+Essa chamada deve ser usada para desalocar a memória alocada para as cadeias de caracteres de parâmetro *commonStoreRootPathname* retornadas de [**SisCreateBackupStructure**](siscreatebackupstructure.md) e [**SisCreateRestoreStructure**](siscreaterestorestructure.md)e a matriz de cadeias de caracteres que contêm nomes de arquivo de repositório comum retornados de **SisCreateBackupStructure**, [**SisCSFilesToBackupForLink,**](siscsfilestobackupforlink.md) **SisCreateRestoreStructure** e [**SisRestoredLink**](sisrestoredlink.md). No último caso, a matriz em si também deve ser liberada chamando **SisFreeAllocatedMemory**.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -63,10 +63,10 @@ Essa chamada deve ser usada para desalocar a memória alocada para as cadeias de
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                   |
-| parâmetro<br/>                   | <dl> <dt>Sisbkup. h</dt> </dl>   |
-| Biblioteca<br/>                  | <dl> <dt>Sisbkup. lib</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho XP\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Sisbkup.h</dt> </dl>   |
+| Biblioteca<br/>                  | <dl> <dt>Sisbkup.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Sisbkup.dll</dt> </dl> |
 
 

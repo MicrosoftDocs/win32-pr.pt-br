@@ -1,9 +1,9 @@
 ---
-title: otimizar atributo
-description: O atributo \ Optimize \ ACF é usado para ajustar o nível de gradação para o marshaling de dados.
+title: atributo optimize
+description: O atributo \ optimize\ ACF é usado para ajustar o nível de gradação para marshaling de dados.
 ms.assetid: d636d940-0550-417f-a21a-065bdeaeb5d9
 keywords:
-- otimizar o atributo MIDL
+- otimizar atributo MIDL
 topic_type:
 - apiref
 api_name:
@@ -12,21 +12,21 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c6025c40465ecf2e8fe7a33dcda50ece07d34b9d
-ms.sourcegitcommit: 57758ecb246c84d65e6e0e4bd5570d9176fa39cd
+ms.openlocfilehash: a7703a3539ff16c7f2dc78d51c62cfe05612dcb6e935bb5c5701f9a7b59a9f1d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "105750020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119869566"
 ---
-# <a name="optimize-attribute"></a>otimizar atributo
+# <a name="optimize-attribute"></a>atributo optimize
 
-O atributo **\[ Optimize \]** ACF é usado para ajustar o nível de gradação de dados de marshaling.
+O **\[ atributo \]** optimize ACF é usado para ajustar o nível de gradação para marshaling de dados.
 
 > [!Note]  
-> Essa palavra-chave é superceeded e não deve ser usada. Compilações de MIDL atuais devem usar [**/Oicf**](-oi.md)[**/robust**](-robust.md) em vez disso.
+> Essa palavra-chave é superada e não deve ser usada. As compilações MIDL atuais devem usar [**/Oicf**](-oi.md)[**/robust.**](-robust.md)
 
- 
+ 
 
 ``` syntax
 optimize ("optimization-options")
@@ -36,20 +36,20 @@ optimize ("optimization-options")
 
 <dl> <dt>
 
-*otimização – opções* 
+*opções de otimização* 
 </dt> <dd>
 
-Especifica o método de marshaling de dados. Use "s" para o marshaling de modo misto ou "i" para o marshaling interpretado.
+Especifica o método de marshaling de dados. Use "s" para marshaling de modo misto ou "i" para marshaling interpretado.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Esta versão do RPC fornece dois métodos para empacotamento de dados: modo misto ("s") e interpretado ("i"). Esses métodos correspondem às opções de linha de comando [**/os**](-os.md) e [**/Oi**](-oi.md) . O método interpretado realiza marshaling de dados completamente offline. Embora isso possa reduzir consideravelmente o tamanho do stub, o desempenho pode ser afetado.
+Esta versão do RPC fornece dois métodos para marshaling de dados: modo misto ("s") e interpretado ("i"). Esses métodos correspondem às opções de linha de [**comando /Os**](-os.md) e [**/Oi.**](-oi.md) O método interpretado marshals de dados completamente offline. Embora isso possa reduzir consideravelmente o tamanho do stub, o desempenho pode ser afetado.
 
-Se o desempenho for uma preocupação, o método de modo misto poderá ser a melhor abordagem. O modo misto permite que o compilador MIDL faça a determinação entre quais dados serão empacotados embutidos e que serão empacotados por uma chamada para uma biblioteca de vínculo dinâmico offline. Se muitos procedimentos usarem os mesmos tipos de dados, um único procedimento poderá ser chamado repetidamente para empacotar os dados. Dessa forma, os dados mais adequados para o marshaling embutido são processados em linha, enquanto outros dados podem ser empacotados com mais eficiência offline.
+Se o desempenho for uma preocupação, o método de modo misto poderá ser a melhor abordagem. O modo misto permite que o compilador MIDL faça a determinação entre quais dados serão empacotados em linha e quais serão empacotados por uma chamada para uma biblioteca de vínculo dinâmico offline. Se muitos procedimentos usarem os mesmos tipos de dados, um único procedimento poderá ser chamado repetidamente para fazer marshal dos dados. Dessa forma, os dados mais adequados para marshaling em linha são processados em linha, enquanto outros dados podem ter marshaling offline mais eficiente.
 
-Observe que o atributo **\[ Optimize \]** pode ser usado como um atributo de interface ou como um atributo de operação. Se ele for usado como um atributo de interface, ele definirá o padrão para a interface inteira, substituindo opções de linha de comando. No entanto, se ele for usado como um atributo de operação, ele afetará apenas essa operação, substituindo as opções de linha de comando e o padrão da interface.
+Observe que o **\[ atributo optimize \]** pode ser usado como um atributo de interface ou como um atributo de operação. Se for usado como um atributo de interface, ele define o padrão para toda a interface, substituindo opções de linha de comando. Se, no entanto, ele for usado como um atributo de operação, afetará apenas essa operação, substituindo as opções de linha de comando e o padrão da interface.
 
 ## <a name="examples"></a>Exemplos
 
@@ -68,15 +68,15 @@ optimize ("i") HRESULT SmallerProcedure(...);
 [**/Oi**](-oi.md)
 </dt> <dt>
 
-[**/Os**](-os.md)
+[**/os**](-os.md)
 </dt> <dt>
 
 [**/robust**](-robust.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

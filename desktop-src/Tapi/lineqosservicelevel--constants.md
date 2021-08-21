@@ -1,23 +1,23 @@
 ---
-description: Essas constantes são usadas por um TSP para identificar o tipo de nível de QoS (qualidade de serviço) necessário.
+description: Essas constantes são usadas por um TSP para identificar o tipo de nível de QoS (Qualidade de Serviço) necessário.
 ms.assetid: 9fc3f6eb-7103-43c5-84f8-3842757e5be7
-title: Constantes de LINEQOSSERVICELEVEL_ (TSPI. h)
+title: LINEQOSSERVICELEVEL_ constantes (Tspi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4c0629715e461a15e21e1730f86edb61d83d60db
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 1a74a4508b54a8b56e8e9cb359f966122c5c009f0e5ede0f1b8544cd1e46330c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119003004"
 ---
-# <a name="lineqosservicelevel_-constants"></a>\_Constantes LINEQOSSERVICELEVEL
+# <a name="lineqosservicelevel_-constants"></a>Constantes LINEQOSSERVICELEVEL \_
 
-Essas constantes são usadas por um TSP para identificar o tipo de nível de QoS (qualidade de serviço) necessário.
+Essas constantes são usadas por um TSP para identificar o tipo de nível de QoS (Qualidade de Serviço) necessário.
 
 <dl> <dt>
 
-<span id="LINEQOSSERVICELEVEL_NEEDED"></span><span id="lineqosservicelevel_needed"></span>**LINEQOSSERVICELEVEL \_ necessário**
+<span id="LINEQOSSERVICELEVEL_NEEDED"></span><span id="lineqosservicelevel_needed"></span>**LINEQOSSERVICELEVEL \_ NECESSÁRIO**
 </dt> <dd> <dl> <dt>
 
  0x00000001
@@ -38,12 +38,12 @@ A qualidade do nível de serviço solicitada é um requisito.
 
 
 
-A qualidade de nível de serviço necessária, se disponível.
+A qualidade do nível de serviço necessária, se disponível.
 
 
 </dt> </dl> </dd> <dt>
 
-<span id="LINEQOSSERVICELEVEL_BESTEFFORT"></span><span id="lineqosservicelevel_besteffort"></span>**LINEQOSSERVICELEVEL \_ BESTEFFORT**
+<span id="LINEQOSSERVICELEVEL_BESTEFFORT"></span><span id="lineqosservicelevel_besteffort"></span>**LINEQOSSERVICELEVEL \_ BESTEFIÇO**
 </dt> <dd> <dl> <dt>
 
  0x00000003
@@ -62,8 +62,8 @@ A qualidade do nível de serviço necessária é o "melhor esforço".
 
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
-| Versão da TAPI<br/> | Requer TAPI 2,2<br/>                                                      |
-| parâmetro<br/>       | <dl> <dt>TSPI. h</dt> </dl> |
+| Versão do TAPI<br/> | Requer TAPI 2.2<br/>                                                      |
+| Cabeçalho<br/>       | <dl> <dt>Tspi.h</dt> </dl> |
 
 
 

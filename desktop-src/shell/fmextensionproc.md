@@ -1,6 +1,6 @@
 ---
-description: Especifica uma função de chamada de retorno definida pelo aplicativo chamada pelo Gerenciador de arquivos para se comunicar com uma extensão do Gerenciador de arquivos.
-title: Função de retorno de chamada FMExtensionProc (Wfext. h)
+description: Especifica uma função de retorno de chamada definida pelo aplicativo chamada pelo Gerenciador de Arquivos para se comunicar com uma extensão do Gerenciador de Arquivos.
+title: Função de retorno de chamada FMExtensionProc (Wfext.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - Wfext.h
 ms.assetid: 6e02d655-f7d8-460a-97d2-5b369493e941
-ms.openlocfilehash: 5e7b1f0142ea77967af15087131d3036aaec505e
-ms.sourcegitcommit: 3caaa3c92dcb1ef12f84464d14ce6262e65e988e
+ms.openlocfilehash: 7cd13fe534f3bb121a4056f67ceff47ddfa71fa5506c2020a243ab340768ce35
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109842237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032654"
 ---
 # <a name="fmextensionproc-callback-function"></a>Função de retorno de chamada FMExtensionProc
 
-Especifica uma função de chamada de retorno definida pelo aplicativo chamada pelo Gerenciador de arquivos para se comunicar com uma extensão do Gerenciador de arquivos.
+Especifica uma função de retorno de chamada definida pelo aplicativo chamada pelo Gerenciador de Arquivos para se comunicar com uma extensão do Gerenciador de Arquivos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,21 +42,21 @@ LONG CALLBACK FMExtensionProc(
 
 <dl> <dt>
 
-*HWND* 
+*Hwnd* 
 </dt> <dd>
 
 Digite: **HWND**
 
-Um identificador de janela para o Gerenciador de arquivos. Uma extensão usa esse identificador para especificar a janela pai de qualquer caixa de diálogo ou caixa de mensagem que deve ser exibida e para enviar mensagens de consulta ao Gerenciador de arquivos.
+Um alça de janela para o Gerenciador de Arquivos. Uma extensão usa esse alça para especificar a janela pai para qualquer caixa de diálogo ou caixa de mensagem que deve ser exibida e para enviar mensagens de consulta ao Gerenciador de Arquivos.
 
 </dd> <dt>
 
 *wMsg* 
 </dt> <dd>
 
-Tipo: **Word**
+Tipo: **WORD**
 
-Uma das mensagens do Gerenciador de arquivos a seguir.
+Uma das seguintes mensagens do Gerenciador de Arquivos.
 
 <dt>
 
@@ -78,18 +78,18 @@ O usuário selecionou um item no menu fornecido pela extensão. O valor é o ide
 
 </dt> <dd>
 
-O usuário pressionou F1 ao selecionar um menu de extensão ou um item de comando de barra de ferramentas. Indica que a extensão deve chamar **WinHelp** adequadamente para o item de comando.
+O usuário pressionou F1 ao selecionar um menu de extensão ou item de comando da barra de ferramentas. Indica que a extensão deve chamar **WinHelp** adequadamente para o item de comando.
 
 </dd> <dt>
 
 <span id="FMEVENT_HELPSTRING"></span><span id="fmevent_helpstring"></span>
 
-<span id="FMEVENT_HELPSTRING"></span><span id="fmevent_helpstring"></span>**FMEVENT \_ HelpString**
+<span id="FMEVENT_HELPSTRING"></span><span id="fmevent_helpstring"></span>**FMEVENT \_ HELPSTRING**
 
 
 </dt> <dd>
 
-O usuário selecionou um menu de extensão ou um item de comando de barra de ferramentas. Indica que a extensão deve fornecer uma cadeia de caracteres de ajuda.
+O usuário selecionou um menu de extensão ou item de comando da barra de ferramentas. Indica que a extensão deve fornecer uma cadeia de caracteres de Ajuda.
 
 </dd> <dt>
 
@@ -168,7 +168,7 @@ Valor específico da mensagem.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **LONG**
 

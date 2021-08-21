@@ -4,12 +4,12 @@ description: Quando você carrega um arquivo, o BITS cria uma ID de sessão que 
 ms.assetid: 97283f8e-d2fa-4383-9b92-a05f46680443
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ae59bb1d605af7e4dd53b0c1d66618b6816e7886
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e4c08555acf8bcdc99576675b0ec5852f322f7b37fea9821f3f0156352a29b61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004967"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119701696"
 ---
 # <a name="preventing-multiple-uploads"></a>Impedindo vários carregamentos
 
@@ -21,9 +21,9 @@ O servidor BITS tentará enviar o arquivo de upload apenas uma vez para o aplica
 
 Um caso semelhante pode ocorrer mesmo com um único servidor front-end. Por exemplo, quando o cliente carregou o arquivo inteiro no servidor, o bloco final faz com que o servidor encaminhe o arquivo para o aplicativo de servidor. Se o servidor BITS ou o aplicativo de servidor terminar depois que o arquivo for processado, mas antes que a confirmação seja enviada ao cliente, o cliente receberá um código de erro e tentará novamente mais tarde. Quando o cliente tentar novamente, o servidor BITS verá que o bloco final foi carregado, e ele encaminhará novamente o arquivo para o aplicativo de servidor. Se receber o arquivo de carregamento várias vezes for um problema para o aplicativo de servidor, você deverá considerar a inclusão de um identificador de transação nos dados.
 
- 
+ 
 
- 
+ 
 
 
 

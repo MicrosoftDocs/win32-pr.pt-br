@@ -4,12 +4,12 @@ ms.assetid: 3749095c-f0c0-498c-969f-a6c445cfdd62
 title: Tabela de verbo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7182c425e2613aa463f94bca0e6a1e62c1504c8c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9fc546cd3db5fecb3861120fa15b1ffa3f21327b889599b77a1b067193c886c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105787057"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499106"
 ---
 # <a name="verb-table"></a>Tabela de verbo
 
@@ -21,11 +21,11 @@ A tabela de verbos tem as colunas a seguir.
 
 | Coluna      | Tipo                       | Chave | Nullable |
 |-------------|----------------------------|-----|----------|
-| Extensão\_ | [Text](text.md)           | S   | N        |
-| Verbo        | [Text](text.md)           | S   | N        |
+| Extensão\_ | [Text](text.md)           | Y   | N        |
+| Verbo        | [Text](text.md)           | Y   | N        |
 | Sequência    | [Inteiro](integer.md)     | N   | Y        |
-| Comando     | [Binário](formatted.md) | N   | S        |
-| Argumento    | [Binário](formatted.md) | N   | S        |
+| Comando     | [Binário](formatted.md) | N   | Y        |
+| Argumento    | [Binário](formatted.md) | N   | Y        |
 
 
 

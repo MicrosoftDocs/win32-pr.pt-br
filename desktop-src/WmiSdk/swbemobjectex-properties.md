@@ -5,20 +5,20 @@ ms.tgt_platform: multiple
 title: Propriedades de SWbemObjectEx
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c61d39dd8d2d0829b703a14a67658cb66848995c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ea56bcced535a52f489fc18b5935deb09b0abb468e9e283d2cdf540c8fba9a1f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104297491"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504066"
 ---
 # <a name="swbemobjectex-properties"></a>Propriedades de SWbemObjectEx
 
-O objeto [**SWbemObjectEx**](swbemobjectex.md) expõe as propriedades a seguir.
+O [**objeto SWbemObjectEx**](swbemobjectex.md) expõe as propriedades a seguir.
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [**Propriedade SystemProperties \_**](swbemobjectex-systemproperties-.md)
+-   [**Propriedade \_ SystemProperties**](swbemobjectex-systemproperties-.md)
 
  
 

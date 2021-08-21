@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6fdc67d0a7dad18f8850c283f0d5eb224ff9ebbd
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 562eb4040323452379659a068dbc4844a2e84c51009cb0ac843b2e5aa1b641a4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295855"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119493366"
 ---
 # <a name="glislist-function"></a>função glIsList
 

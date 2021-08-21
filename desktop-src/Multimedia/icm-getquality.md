@@ -1,9 +1,9 @@
 ---
-title: Mensagem de ICM_GETQUALITY (VFW. h)
-description: A \_ mensagem ICM getquality consulta um driver de compactação de vídeo para retornar sua configuração de qualidade atual.
+title: ICM_GETQUALITY mensagem (Vfw.h)
+description: A ICM GETQUALITY consulta um driver de compactação \_ de vídeo para retornar sua configuração de qualidade atual.
 ms.assetid: 8da99a26-7b2a-4118-89e1-7485915cbdc9
 keywords:
-- Multimídia do Windows de mensagem ICM_GETQUALITY
+- ICM_GETQUALITY mensagem Windows Multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c4fa2a26e1fe5fa111585ce0a59422a2fe9b072
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: cef214fe36c713e63659fcbd4dde2021c8d410b36ea9f5525ed54c76c5c4b6a7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103919218"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119495856"
 ---
-# <a name="icm_getquality-message"></a>\_Mensagem de GETquality do ICM
+# <a name="icm_getquality-message"></a>\_ICM Mensagem GETQUALITY
 
-A mensagem **ICM \_ getquality** consulta um driver de compactação de vídeo para retornar sua configuração de qualidade atual.
+A **ICM \_ GETQUALITY** consulta um driver de compactação de vídeo para retornar sua configuração de qualidade atual.
 
 
 ```C++
@@ -47,7 +47,7 @@ Endereço para conter o valor de qualidade atual. Os valores de qualidade variam
 
 ## <a name="return-value"></a>Valor Retornado
 
-Retornará ICERR \_ OK se o driver der suporte a essa mensagem ou ICERR \_ sem suporte.
+Retorna ICERR \_ OK se o driver dá suporte a essa mensagem ou ICERR \_ SEM SUPORTE caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -57,7 +57,7 @@ Retornará ICERR \_ OK se o driver der suporte a essa mensagem ou ICERR \_ sem s
 |-------------------------------------|----------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                       |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                             |
-| Cabeçalho<br/>                   | <dl> <dt>VFW. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Vfw.h</dt> </dl> |
 
 
 
@@ -65,7 +65,7 @@ Retornará ICERR \_ OK se o driver der suporte a essa mensagem ou ICERR \_ sem s
 
 <dl> <dt>
 
-[Gerenciador de compactação de vídeo](video-compression-manager.md)
+[Gerenciador de Compactação de Vídeo](video-compression-manager.md)
 </dt> <dt>
 
 [Mensagens de compactação de vídeo](video-compression-messages.md)

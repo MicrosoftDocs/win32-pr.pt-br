@@ -1,19 +1,19 @@
 ---
-description: Se esse bit de estilo for definido, o texto no controle será alinhado à direita.
+description: Se esse bit de estilo estiver definido, o texto no controle será alinhado à direita.
 ms.assetid: 444fb9ac-8626-4079-80be-6c210a69d984
 title: Atributo de controle RightAligned
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ea94807801845ee18458f6c3105c6e1e5fc3834c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fc8a2df776adb167dd82575a8a926e814ecede47e1e7cc07e49c759ea3b046ac
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827602"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119868886"
 ---
 # <a name="rightaligned-control-attribute"></a>Atributo de controle RightAligned
 
-Se esse bit de estilo for definido, o texto no controle será alinhado à direita.
+Se esse bit de estilo estiver definido, o texto no controle será alinhado à direita.
 
 ## <a name="valid-controls"></a>Controles válidos
 
@@ -41,7 +41,7 @@ Se esse bit de estilo for definido, o texto no controle será alinhado à direit
 
  
 
-[Directorylist](directorylist-control.md)
+[DirectoryList](directorylist-control.md)
 
  
 
@@ -65,7 +65,7 @@ Se esse bit de estilo for definido, o texto no controle será alinhado à direit
 
  
 
-[Botão de opção](radiobuttongroup-control.md)
+[RadioButtonGroup](radiobuttongroup-control.md)
 
  
 
@@ -87,9 +87,9 @@ Se esse bit de estilo for definido, o texto no controle será alinhado à direit
 
 ## <a name="remarks"></a>Comentários
 
-Para definir esse atributo em um controle, inclua o bit RightAligned na coluna atributos do registro do controle na [tabela de controle](control-table.md).
+Para definir esse atributo em um controle, inclua o bit RightAligned na coluna Atributos do registro do controle na [tabela Controle](control-table.md).
 
-Consulte [controlar atributos](control-attributes.md) e [controles](controls.md).
+Consulte [Controlar atributos](control-attributes.md) e [controles](controls.md).
 
  
 

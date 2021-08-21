@@ -4,23 +4,23 @@ description: Atributos de item de vídeo
 ms.assetid: 000bc03d-aa2e-4922-b611-7d6e8ebb22e9
 keywords:
 - Windows Media Player, atributos de item de vídeo
-- Windows Media Player Mobile, atributos de item de vídeo
-- Modelo de objeto do Windows Media Player, atributos de item de vídeo
+- Windows Media Player Atributos de item de vídeo, móveis
+- modelo de objeto Windows Media Player, atributos de item de vídeo
 - modelo de objeto, atributos de item de vídeo
-- Controle ActiveX, atributos de item de vídeo
-- Controle ActiveX do Windows Media Player, atributos de item de vídeo
-- Controle ActiveX móvel do Windows Media Player, atributos de item de vídeo
+- controle de ActiveX, atributos de item de vídeo
+- Windows Media Player controle de ActiveX, atributos de item de vídeo
+- Windows Media Player controle de ActiveX móvel, atributos de item de vídeo
 - referência para modelo de objeto, atributos de item de vídeo
 - atributos, itens de vídeo
 - atributos de item de vídeo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9ab23559ca6322ffd6ebc38517a73d802d7001ce
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: e2b3fa64fe3898708a3df85b01fadbb372d1fad76abe99379ec914016c602585
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104004785"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054174"
 ---
 # <a name="video-item-attributes"></a>Atributos de item de vídeo
 
@@ -99,7 +99,7 @@ Os atributos a seguir estão disponíveis para um item de vídeo na biblioteca.
 -   [**Atributo do WM/provedor**](wm-provider-attribute.md)
 -   [**Atributo WM/ProviderRating**](wm-providerrating-attribute.md)
 -   [**Atributo do WM/Provedorstyle**](wm-providerstyle-attribute.md)
--   [**Atributo do WM/Publisher**](wm-publisher-attribute.md)
+-   [**atributo do WM/Publisher**](wm-publisher-attribute.md)
 -   [**Atributo WM/SubscriptionContentID**](wm-subscriptioncontentid-attribute.md)
 -   [**Atributo do WM/subtítulo**](wm-subtitle-attribute.md)
 -   [**Atributo WM/SubTitleDescription**](wm-subtitledescription-attribute.md)
@@ -114,9 +114,9 @@ Os atributos a seguir estão disponíveis para um item de vídeo na biblioteca.
 [**Referência de atributo**](attribute-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

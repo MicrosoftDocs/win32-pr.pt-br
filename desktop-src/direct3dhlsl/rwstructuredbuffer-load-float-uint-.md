@@ -1,9 +1,9 @@
 ---
-title: 'Função RWStructuredBuffer:: Load (int, uint)'
-description: 'Lê os dados do buffer e retorna o status sobre a operação. | Função RWStructuredBuffer:: Load (int, uint)'
+title: Função RWStructuredBuffer::Load(int,uint)
+description: Lê dados de buffer e retorna o status sobre a operação. | Função RWStructuredBuffer::Load(int,uint)
 ms.assetid: 19FAA031-F31E-4B73-BC69-489CDF0CF184
 keywords:
-- Carregar função HLSL
+- Função de carregamento HLSL
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 74a153d4b56ec16b80dec180287005666747d259
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 24aee1d7abfcec66fe9e005fdc65010be52b89fdb820374276f12091ddfe2903
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "104968325"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118986246"
 ---
-# <a name="rwstructuredbufferloadintuint-function"></a>Função RWStructuredBuffer:: Load (int, uint)
+# <a name="rwstructuredbufferloadintuint-function"></a>Função RWStructuredBuffer::Load(int,uint)
 
-Lê os dados do buffer e retorna o status sobre a operação.
+Lê dados de buffer e retorna o status sobre a operação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ Lê os dados do buffer e retorna o status sobre a operação.
 
 <dl> <dt>
 
-*Local* \[ do no\]
+*Localização* \[ Em\]
 </dt> <dd>
 
 Tipo: **int**
@@ -49,20 +49,20 @@ O local do buffer.
 
 </dd> <dt>
 
-*Status* \[ do fora\]
+*Status* \[ out\]
 </dt> <dd>
 
 Tipo: **uint**
 
-O status da operação. Você não pode acessar o status diretamente; em vez disso, passe o status para a função intrínseca [**CheckAccessFullyMapped**](checkaccessfullymapped.md) . **CheckAccessFullyMapped** retornará **true** se todos os valores da operação de **amostra**, **coleta** ou **carregamento** correspondente acessaram os blocos mapeados em um recurso de bloco ao [lado](/windows/desktop/direct3d11/direct3d-11-2-features). Se qualquer valor tiver sido tirado de um bloco não mapeado, **CheckAccessFullyMapped** retornará **false**.
+O status da operação. Você não pode acessar o status diretamente; Em vez disso, passe o status para a [**função intrínseca CheckAccessFullyMapped.**](checkaccessfullymapped.md) **CheckAccessFullyMapped** retornará **TRUE** se todos os valores  da operação de **Exemplo,** **Coletar** ou Carregar correspondente acessarem blocos mapeados em um recurso lado a [lado.](/windows/desktop/direct3d11/direct3d-11-2-features) Se algum valor tiver sido retirado de um tile não mapeado, **CheckAccessFullyMapped** retornará **FALSE.**
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo:
 
-O tipo de retorno corresponde ao tipo na declaração para o objeto [**RWStructuredBuffer**](sm5-object-rwstructuredbuffer.md) .
+O tipo de retorno corresponde ao tipo na declaração para o [**objeto RWStructuredBuffer.**](sm5-object-rwstructuredbuffer.md)
 
 ## <a name="remarks"></a>Comentários
 
@@ -70,7 +70,7 @@ Essa função tem suporte para os seguintes tipos de sombreadores:
 
 
 
-| Vértice | Envoltória | Domínio | Geometria | 16x16 | Computação |
+| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
 |--------|------|--------|----------|-------|---------|
 | x      | x    | x      | x        | x     | x       |
 

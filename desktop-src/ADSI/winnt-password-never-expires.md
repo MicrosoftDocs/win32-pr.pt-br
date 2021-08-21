@@ -1,33 +1,33 @@
 ---
 title: A senha nunca expira (provedor WinNT)
-description: 'Para habilitar essa opção usando o provedor ADSI do WinNT, defina o sinalizador da UF do ADS que não \_ \_ \_ expirar de \_ senha (0x10000) no atributo UserFlags. Observação: para o Windows 2000 e posterior, use o provedor ADSI LDAP para operações de gerenciamento de usuário, conforme mostrado.'
+description: Para habilitar essa opção usando o provedor ADSI do WinNT, defina o sinalizador ADS \_ UF \_ DONT \_ EXPIRE \_ PASSWD (0x10000) no atributo UserFlags. Observação Para Windows 2000 e posteriores, use o provedor ADSI LDAP para operações de gerenciamento de usuário, conforme mostrado.
 ms.assetid: 9e38b31c-399b-447f-bceb-36c599b2714e
 ms.tgt_platform: multiple
 keywords:
 - A senha nunca expira (provedor WinNT)
-- A senha nunca expira em ADSI, provedor WinNT
-- ADSI do provedor WinNT, exemplos de gerenciamento de usuário, senha nunca expira
+- A senha nunca expira ADSI, provedor WinNT
+- ADSI do provedor WinNT, exemplos de gerenciamento de usuário, Senha Nunca Expira
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 343871e7ba8748b3e406f7c84a5a34c01a2793a7
-ms.sourcegitcommit: 6515eef99ca0d1bbe3e27d4575e9986f5255f277
+ms.openlocfilehash: b47cdd7dc181c2875e8de06b66233d727c5b132963921b163b02fc09cbdc051d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "105754048"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082160"
 ---
 # <a name="password-never-expires-winnt-provider"></a>A senha nunca expira (provedor WinNT)
 
-Para habilitar essa opção usando o provedor ADSI do WinNT, defina o sinalizador da UF do ADS que não **\_ \_ \_ expirar de \_ senha** (0x10000) no atributo **UserFlags** .
+Para habilitar essa opção usando o provedor ADSI do WinNT, defina o sinalizador **ADS \_ UF \_ DONT EXPIRE \_ \_ PASSWD** (0x10000) no atributo **UserFlags.**
 
 > [!Note]  
-> Para o Windows 2000 e posterior, use o provedor ADSI LDAP para operações de gerenciamento de usuário, conforme mostrado. Para obter mais informações, consulte a [senha nunca expira (provedor LDAP)](password-never-expires.md).
+> Por Windows 2000 e posteriores, use o provedor ADSI LDAP para operações de gerenciamento de usuário, conforme mostrado. Para obter mais informações, consulte [Password Never Expires (Provedor LDAP).](password-never-expires.md)
 
  
 
 ## <a name="example-1"></a>Exemplo 1
 
-O exemplo de código a seguir mostra como definir a opção a senha nunca expira usando Visual Basic com ADSI.
+O exemplo de código a seguir mostra como definir a opção de senha nunca expira usando Visual Basic ADSI.
 
 
 ```VB
@@ -45,7 +45,7 @@ usr.SetInfo
 
 ## <a name="example-2"></a>Exemplo 2
 
-O exemplo de código a seguir mostra como definir a opção a senha nunca expira usando C++ com ADSI.
+O exemplo de código a seguir mostra como definir a opção de senha nunca expira usando C++ com ADSI.
 
 
 ```C++

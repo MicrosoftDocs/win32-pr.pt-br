@@ -3,7 +3,7 @@ title: Código de notificação CBN_SETFOCUS (WinUser. h)
 description: Enviado quando uma caixa de combinação recebe o foco do teclado. A janela pai da caixa de combinação recebe esse código de notificação por meio da mensagem de comando do WM \_ .
 ms.assetid: 8072edc6-aedc-4daf-80df-d3acd82fcffa
 keywords:
-- CBN_SETFOCUS de código de notificação controles do Windows
+- CBN_SETFOCUS código de notificação Windows controles
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 885bbaebac0a79fc600cbcc2b7864cbdfd19ea93
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0c70edb99a18cc7f1e2f1051670bbc9d9596c3630f2dfc01e14aa8b68fd61ca3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104295924"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119699046"
 ---
 # <a name="cbn_setfocus-notification-code"></a>\_Código de notificação CBN SETFOCUS
 
@@ -59,9 +59,9 @@ Identificador para a caixa de combinação.
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

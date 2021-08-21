@@ -4,12 +4,12 @@ ms.assetid: 8d1d034f-8a09-40ae-842a-5251135bd3c8
 title: Conceitos do Gerenciador de recursos de compensação COM+
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 14206a54ffcb4f7e06ddf7362736a722393b0791
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: b546f10e9a99f827c512e6dd7662ead05476774f7ff8dc32c40fa123b0ffe272
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103920340"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119047624"
 ---
 # <a name="com-compensating-resource-manager-concepts"></a>Conceitos do Gerenciador de recursos de compensação COM+
 
@@ -39,7 +39,7 @@ Os tópicos a seguir nesta seção fornecem mais detalhes sobre o serviço CRM d
 -   [Inicialização e recuperação do CRM do COM+](com--crm-startup-and-recovery.md)
 -   [Usando o CRM do COM+ em um ambiente de cluster](using-the-com--crm-in-a-cluster-environment.md)
 -   [Tratamento de erros no CRM COM+](error-handling-in-the-com--crm.md)
--   [Configurações do registro do CRM do COM+](com--crm-registry-settings.md)
+-   [Configurações de registro do COM+ CRM](com--crm-registry-settings.md)
 -   [Solucionando problemas do CRM do COM+](troubleshooting-the-com--crm.md)
 -   [Sugestões de design para o desenvolvimento de um CRM COM+](design-suggestions-for-developing-a-com--crm.md)
 -   [Interfaces de monitoramento do COM+ CRM](com--crm-monitoring-interfaces.md)

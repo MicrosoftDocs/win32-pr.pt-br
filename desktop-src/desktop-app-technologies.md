@@ -1,37 +1,38 @@
 ---
-description: Este artigo fornece um índice de documentação sobre as APIs do Win32 disponíveis para recursos e tecnologias do Windows.
+description: este artigo fornece um índice de documentação sobre as APIs do Win32 disponíveis para recursos e tecnologias do Windows.
 ms.assetid: FF115416-220F-4FCD-8690-F9C0890CD6CC
 title: Tecnologias de aplicativos de desktop
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7b5b6e077c5f8fde2e723fbf9a971cbe09b8d008
-ms.sourcegitcommit: 11f52354f570aacaf1ba2a266b2e507abd73352a
+ms.openlocfilehash: fd764c23b38e7239cea1d4d26d018ecbf9711b22
+ms.sourcegitcommit: 0dec0044816af3f2b2e6403659e1cf11138c90cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "105765284"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121812214"
 ---
 # <a name="desktop-app-technologies"></a>Tecnologias de aplicativos de desktop
 
-Esta seção fornece orientações detalhadas e exemplos de código sobre os recursos do Windows que estão disponíveis para aplicativos da área de trabalho usando a API do Win32.
+esta seção fornece orientações detalhadas e exemplos de código sobre Windows recursos que estão disponíveis para aplicativos de área de trabalho usando a API do Win32.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 | Tópico | Descrição  |  
 |----------------------------------|---|
-| [Acessibilidade](accessibility/accessibility.md) | Fornece orientação para desenvolvedores do Windows que projetam aplicativos acessíveis, desenvolvedores de tecnologia assistencial que criam ferramentas como leitores de tela e lentes de desenvolvimento, além de engenheiros de teste de software criando scripts automatizados para testar aplicativos do Windows. |
+| [Acessibilidade](accessibility/accessibility.md) | fornece orientação para os desenvolvedores de Windows que projetam aplicativos acessíveis, desenvolvedores de tecnologia assistencial que criam ferramentas como leitores de tela e lentes de desenvolvimento, além de engenheiros de teste de software criando scripts automatizados para testar Windows aplicativos. |
 | [Interface do usuário da Área de Trabalho](windows-application-ui-development.md) | Fornece informações que permitem que você desenvolva interfaces gráficas do usuário para seus aplicativos, incluindo recursos como Windows e mensagens, recursos e controles. |
-| [Ambiente de desktop](user-interface.md) | Fornece orientação para integrar e estender os recursos voltados para o usuário da área de trabalho do Windows, incluindo a barra de tarefas, a área de trabalho e o explorador de arquivos. |
-| [Instalação e manutenção de aplicativos](application-installing-and-servicing.md) | Fornece informações sobre como usar APIs e serviços fornecidos pelo Windows para instalar, gerenciar e atender seus aplicativos de desktop. |
+| [Ambiente de desktop](user-interface.md) | fornece orientação para integrar e estender os recursos voltados para o usuário da área de trabalho do Windows, incluindo a barra de tarefas, a área de trabalho e o explorador de arquivos. |
+| [Instalação e manutenção de aplicativos](application-installing-and-servicing.md) | fornece informações sobre como usar APIs e serviços fornecidos pelo Windows para instalar, gerenciar e atender seus aplicativos de desktop. |
 | [Áudio e vídeo](audio-and-video.md) | Fornece orientação sobre como usar os recursos de áudio e vídeo fornecidos pelo Windows. |
 | [Acesso a dados e armazenamento](data-access-and-storage.md) | Fornece informações sobre o acesso a dados e recursos de armazenamento que você pode usar em seus aplicativos de área de trabalho, incluindo o gerenciamento do sistema de arquivos e mecanismos de sincronização de nuvem.  |
 | [Dispositivos](devices.md) | Descreve as APIs para interagir com dispositivos e sensores. |
 | [Diagnóstico](diagnostics.md) | Fornece orientação sobre depuração e tratamento de erros, criação de perfil de desempenho, monitoramento de rede e outros recursos de diagnóstico. |
-| [Documentos e impressão](printdocs/documents-and-printing.md) | Descreve os documentos e os recursos de impressão do Windows que permitem que os aplicativos salvem, exibam e imprimam.  |
-| [Elementos gráficos e jogos](graphics-and-multimedia.md) | Fornece informações sobre os recursos de gráficos e jogos do Windows, incluindo DirectX e imagens digitais.  |
-| [Rede e Internet](networking.md) | Fornece orientação sobre a rede e os recursos relacionados à Internet do Windows, incluindo gerenciamento de rede, APIs HTTP e RPC (chamada de procedimento remoto). |
+| [Documentos e impressão](printdocs/documents-and-printing.md) | descreve os documentos e os recursos de impressão de Windows que permitem que os aplicativos salvem, exibam e imprimam.  |
+| [Elementos gráficos e jogos](graphics-and-multimedia.md) | fornece informações sobre os recursos de gráficos e jogos do Windows, incluindo DirectX e imagens digitais.  |
+| [Rede e Internet](networking.md) | fornece orientação sobre a rede e os recursos relacionados à Internet do Windows, incluindo gerenciamento de rede, APIs HTTP e RPC (chamada de procedimento remoto). |
 | [Segurança e identidade](security.md) | Fornece informações sobre autenticação, autorização, criptografia e outros recursos de segurança do Windows. |
 | [Serviços do sistema](system-services.md) | Fornece orientação sobre OS recursos fundamentais do sistema operacional, como processos e threads, serviços, bibliotecas de vínculo dinâmico, COM, o registro e muito mais. |
+| [AI e Machine Learning](/windows/ai/) | Transforme seu aplicativo do Windows com o poder da inteligência artificial. A IA do Windows permite que você e sua empresa obtenham mais, fornecendo soluções inteligentes para problemas complexos. |
 
 <!--
 <br/>

@@ -1,11 +1,11 @@
 ---
-title: Atributo usuário-compartilhado-pasta
-description: Especifica um caminho UNC para a pasta de documentos compartilhados do usuário. O caminho deve ser um caminho UNC de rede do diretório de compartilhamento do servidor de formulário \\ \\ \\ \\ . Esse valor pode ser uma cadeia de caracteres nula.
+title: Atributo User-Shared-Folder
+description: Especifica um caminho UNC para a pasta de documentos compartilhados do usuário. O caminho deve ser um caminho UNC de rede do formato \\ \\ Diretório de \\ Compartilhamento do \\ Servidor. Esse valor pode ser uma cadeia de caracteres nula.
 ms.assetid: 23b4177a-0a05-4111-affe-d81bc115580d
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo de pasta compartilhada do usuário
-- Esquema de AD do atributo userSharedFolder
+- Esquema do AD do atributo User-Shared-Folder
+- Esquema do AD do atributo userSharedFolder
 topic_type:
 - apiref
 api_name:
@@ -21,22 +21,22 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119021984"
 ---
-# <a name="user-shared-folder-attribute"></a>Atributo usuário-compartilhado-pasta
+# <a name="user-shared-folder-attribute"></a>Atributo User-Shared-Folder
 
-Especifica um caminho UNC para a pasta de documentos compartilhados do usuário. O caminho deve ser um caminho UNC de rede do **\\\\** diretório de compartilhamento do _servidor_ de formulário *_\\_*  *_\\_* . Esse valor pode ser uma cadeia de caracteres nula.
+Especifica um caminho UNC para a pasta de documentos compartilhados do usuário. O caminho deve ser um caminho UNC de rede do formato **\\\\** _Diretório de_ *_\\_* _Compartilhamento do_ *_\\_* _Servidor_. Esse valor pode ser uma cadeia de caracteres nula.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------------------------------------|
-| CN                | Pasta compartilhada pelo usuário                                                                |
-| LDAP-Display-Name | userSharedFolder                                                                  |
+| CN                | User-Shared-Folder                                                                |
+| Ldap-Display-Name | userSharedFolder                                                                  |
 | Tamanho              | \-                                                                                |
 | Privilégio de atualização  | Administrador de domínio ou proprietário da conta.                                            |
-| Frequência de atualização  | Quando o registro do usuário é criado e sempre que a pasta compartilhada precisa ser alterada. |
+| Frequência de atualização  | Quando o registro do usuário é criado e sempre que a pasta compartilhada precisa ser mudada. |
 | Attribute-Id      | 1.2.840.113556.1.4.751                                                            |
-| System-ID-GUID    | 9a9a021f-4a5b-11d1-a9c3-0000f80367c1                                              |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md)                                       |
+| System-Id-Guid    | 9a9a021f-4a5b-11d1-a9c3-0000f80367c1                                              |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md)                                       |
 
 
 
@@ -58,10 +58,10 @@ Especifica um caminho UNC para a pasta de documentos compartilhados do usuário.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Verdadeiro                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -79,10 +79,10 @@ Especifica um caminho UNC para a pasta de documentos compartilhados do usuário.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Verdadeiro                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -100,10 +100,10 @@ Especifica um caminho UNC para a pasta de documentos compartilhados do usuário.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | Verdadeiro                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -121,10 +121,10 @@ Especifica um caminho UNC para a pasta de documentos compartilhados do usuário.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| Tem valor único       | Verdadeiro                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No Catálogo Global      | Falso                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                      |
+| No catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -142,10 +142,10 @@ Especifica um caminho UNC para a pasta de documentos compartilhados do usuário.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| Tem valor único       | Verdadeiro                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No Catálogo Global      | Falso                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                      |
+| No catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -163,10 +163,10 @@ Especifica um caminho UNC para a pasta de documentos compartilhados do usuário.
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| Tem valor único       | Verdadeiro                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No Catálogo Global      | Falso                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                      |
+| No catálogo global      | Falso                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
