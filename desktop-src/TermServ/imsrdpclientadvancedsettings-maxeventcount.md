@@ -4,23 +4,23 @@ description: Não há suporte a esta propriedade. | Propriedade IMsRdpClientAdva
 ms.assetid: d7b5951d-8cc3-48b4-af1b-1f547afbc6ae
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota da propriedade maxEventCount
-- Propriedade maxEventCount Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade maxEventCount
-- Propriedade maxEventCount Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade maxEventCount
-- Propriedade maxEventCount Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade maxEventCount
-- Propriedade maxEventCount Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade maxEventCount
-- Propriedade maxEventCount Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade maxEventCount
-- Propriedade maxEventCount Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade maxEventCount
-- Propriedade maxEventCount Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade maxEventCount
-- Propriedade maxEventCount Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
-- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade maxEventCount
+- propriedade maxEventCount Serviços de Área de Trabalho Remota
+- propriedade maxEventCount Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
+- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade maxEventCount
+- a propriedade maxEventCount Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
+- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade maxEventCount
+- a propriedade maxEventCount Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
+- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade maxEventCount
+- a propriedade maxEventCount Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
+- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade maxEventCount
+- a propriedade maxEventCount Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
+- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade maxEventCount
+- a propriedade maxEventCount Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
+- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade maxEventCount
+- a propriedade maxEventCount Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
+- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade maxEventCount
+- a propriedade maxEventCount Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
+- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade maxEventCount
 topic_type:
 - apiref
 api_name:
@@ -61,11 +61,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118353025"
 ---
-# <a name="imsrdpclientadvancedsettingsmaxeventcount-property"></a>Propriedade IMsRdpClientAdvancedSettings:: maxEventCount
+# <a name="imsrdpclientadvancedsettingsmaxeventcount-property"></a>Propriedade IMsRdpClientAdvancedSettings::maxEventCount
 
 Não há suporte a esta propriedade.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -88,11 +88,11 @@ A nova contagem de eventos. O padrão é 100.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Retorna **S \_ false**.
+Retorna **S \_ FALSE.**
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -102,11 +102,11 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 |-------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                       |
-| Fim do suporte do cliente<br/>    | Nenhum compatível<br/>                                                                       |
-| Fim do suporte do servidor<br/>    | Nenhum compatível<br/>                                                                       |
+| Fim do suporte ao cliente<br/>    | Nenhum compatível<br/>                                                                       |
+| Fim do suporte ao servidor<br/>    | Nenhum compatível<br/>                                                                       |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings é definido como 3c65b4ab-12B3-465b-acd4-b8dad3bff9e2<br/> |
+| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings é definido como 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
@@ -135,7 +135,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
+[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> </dl>
 
  

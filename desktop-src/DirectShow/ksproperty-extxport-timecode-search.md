@@ -1,26 +1,26 @@
 ---
-description: Essa propriedade envia um comando para o dispositivo para procurar um código de tempo especificado. O driver de dispositivo UVC dá suporte a essa propriedade.
+description: Essa propriedade envia um comando para o dispositivo para pesquisar um código de hora especificado. O driver de dispositivo UVC dá suporte a essa propriedade.
 ms.assetid: 0502d59a-0a9e-4192-af9f-1553cd13a69c
 title: KSPROPERTY_EXTXPORT_TIMECODE_SEARCH
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6852dc44e6ef10eebb59721f16a276ac5d4306a3
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: b5f49b8e71d664cf266428d33c99b87859765623ca8205843bbfee108da5f7d8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107909434"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118153184"
 ---
-# <a name="ksproperty_extxport_timecode_search"></a>pesquisa de código de KSPROPERTY \_ EXTXPORT \_ \_
+# <a name="ksproperty_extxport_timecode_search"></a>KSPROPERTY \_ EXTXPORT \_ TIMECODE \_ SEARCH
 
-Essa propriedade envia um comando para o dispositivo para procurar um código de tempo especificado. O driver de dispositivo UVC dá suporte a essa propriedade.
+Essa propriedade envia um comando para o dispositivo para pesquisar um código de hora especificado. O driver de dispositivo UVC dá suporte a essa propriedade.
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------|----------------------------------------|
-| GUID do Conjunto de Propriedades | transporte de extensão propsetid \_ \_              |
-| ID da propriedade       | pesquisa de código de KSPROPERTY \_ EXTXPORT \_ \_ |
+| GUID do Conjunto de Propriedades | PROPSETID \_ EXT \_ TRANSPORT              |
+| ID da propriedade       | KSPROPERTY \_ EXTXPORT \_ TIMECODE \_ SEARCH |
 | Tipo de Dados         | **KSPROPERTY \_ Estrutura EXTXPORT \_ S**  |
 
 
@@ -29,7 +29,7 @@ Essa propriedade envia um comando para o dispositivo para procurar um código de
 
 ## <a name="remarks"></a>Comentários
 
-Preencha o membro de **código** de tempo da estrutura **KSPROPERTY \_ EXTXPORT \_ S** com o quadro desejado, segundo, minuto e hora. A estrutura **KSPROPERTY \_ EXTXPORT \_ S** é descrita no Windows DDK.
+Preencha o **membro timecode** da estrutura **\_ EXTXPORT \_ S da KSPROPERTY** com o quadro desejado, o segundo, o minuto e a hora desejados. A **estrutura \_ EXTXPORT \_ S da KSPROPERTY** é descrita no DDK Windows.
 
 ## <a name="see-also"></a>Confira também
 

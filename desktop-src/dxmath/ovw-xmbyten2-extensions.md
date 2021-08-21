@@ -1,5 +1,5 @@
 ---
-description: XMBYTEN2 descreve um vetor 2D para armazenar valores assinados e normalizados como inteiros com sinal de 8 bits (1 byte).
+description: XMBYTEN2 descreve um vetor 2D para armazenar valores normalizados assinados como inteiros de 8 bits (1 byte) assinados.
 ms.assetid: da3c6c06-8dbb-4497-8e13-905ebf7eaa87
 title: Extensões XMBYTEN2
 ms.topic: reference
@@ -13,7 +13,7 @@ ms.locfileid: "118501514"
 ---
 # <a name="xmbyten2-extensions"></a>Extensões XMBYTEN2
 
-[**XMBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyten2) descreve um vetor 2D para armazenar valores assinados e normalizados como inteiros com sinal de 8 bits (1 byte).
+[**XMBYTEN2**](/windows/desktop/api/DirectXPackedVector/ns-directxpackedvector-xmbyten2) descreve um vetor 2D para armazenar valores normalizados assinados como inteiros de 8 bits (1 byte) assinados.
 
 > [!Note]  
 > Os recursos listados aqui só estão disponíveis ao desenvolver com C++.

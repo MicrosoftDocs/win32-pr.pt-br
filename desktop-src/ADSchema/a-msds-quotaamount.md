@@ -1,11 +1,11 @@
 ---
-title: Atributo ms-DS-Quota-Amount
+title: atributo ms-DS-quota-amount
 description: A cota atribuída em termos de número de objetos pertencentes ao banco de dados.
 ms.assetid: 6ae57661-e384-493b-82a9-c002eab277a1
 ms.tgt_platform: multiple
 keywords:
-- Esquema do AD do atributo ms-DS-Quota-Amount
-- Esquema do AD do atributo msDS-QuotaAmount
+- ms-DS-quota-valor atributo AD Schema
+- atributo msDS-QuotaAmount do AD Schema
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118425748"
 ---
-# <a name="ms-ds-quota-amount-attribute"></a>Atributo ms-DS-Quota-Amount
+# <a name="ms-ds-quota-amount-attribute"></a>atributo ms-DS-quota-amount
 
 A cota atribuída em termos de número de objetos pertencentes ao banco de dados.
 
@@ -29,13 +29,13 @@ A cota atribuída em termos de número de objetos pertencentes ao banco de dados
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ms-DS-Quota-Amount                   |
-| Ldap-Display-Name | msDS-QuotaAmount                     |
+| CN                | ms-DS-quota-amount                   |
+| LDAP-Display-Name | msDS-QuotaAmount                     |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.1845              |
-| System-Id-Guid    | fbb9a00d-3a8c-4233-9cf9-7189264903a1 |
+| System-ID-GUID    | fbb9a00d-3a8c-4233-9cf9-7189264903a1 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -43,7 +43,7 @@ A cota atribuída em termos de número de objetos pertencentes ao banco de dados
 ## <a name="implementations"></a>Implementações
 
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**Adam**](#adam)
+-   [**ADAM**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,19 +58,19 @@ A cota atribuída em termos de número de objetos pertencentes ao banco de dados
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| Tem valor único       | Verdadeiro                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No Catálogo Global      | Falso                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
+| No catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
+| Classes usadas em        | [**ms-DS-quota-control**](c-msds-quotacontrol.md)<br/> |
 
 
 
-## <a name="adam"></a>Adam
+## <a name="adam"></a>ADAM
 
 
 
@@ -79,15 +79,15 @@ A cota atribuída em termos de número de objetos pertencentes ao banco de dados
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| Tem valor único       | Verdadeiro                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No Catálogo Global      | Falso                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
+| No catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
+| Classes usadas em        | [**ms-DS-quota-control**](c-msds-quotacontrol.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ A cota atribuída em termos de número de objetos pertencentes ao banco de dados
 | ID do link                | \-                                                            |
 | MAPI-Id                | \-                                                            |
 | System-Only            | Falso                                                         |
-| Tem valor único       | Verdadeiro                                                          |
+| É de valor único       | Verdadeiro                                                          |
 | É indexado             | Falso                                                         |
-| No Catálogo Global      | Falso                                                         |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                  |
+| No catálogo global      | Falso                                                         |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                  |
 | Range-Lower            | \-                                                            |
 | Range-Upper            | \-                                                            |
 | Search-Flags           | 0x00000000                                                    |
 | System-Flags           | 0x00000010                                                    |
-| Classes usadas em        | [**ms-DS-Quota-Control**](c-msds-quotacontrol.md)<br/> |
+| Classes usadas em        | [**ms-DS-quota-control**](c-msds-quotacontrol.md)<br/> |
 
 
 

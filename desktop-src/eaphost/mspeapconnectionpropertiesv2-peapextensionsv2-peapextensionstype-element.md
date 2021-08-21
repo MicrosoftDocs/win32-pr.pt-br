@@ -14,12 +14,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: a3cc78337fe3feb899dee47abe45904d26f863ae
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 094778bde778bf6d8252473b75583760507ff448c945939152e3e1501228ae72
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "103663921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086012"
 ---
 # <a name="peapextensionsv2-peapextensionstype-element-connection-properties-v1"></a>Elemento PeapExtensionsV2 (PeapExtensionsType) (Propriedades de conexão v1)
 
@@ -43,8 +43,8 @@ O elemento **PeapExtensionsV2** é opcional.
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

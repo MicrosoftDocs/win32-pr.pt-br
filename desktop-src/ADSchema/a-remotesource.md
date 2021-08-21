@@ -1,11 +1,11 @@
 ---
 title: Remote-Source atributo
-description: Ponteiro para trás para objetos externos.
+description: Ponteiro para trás para objetos estrangeiros.
 ms.assetid: 99d6d80f-b11a-48f2-93c9-866a99105488
 ms.tgt_platform: multiple
 keywords:
-- Remote-Source atributo AD Schema
-- Esquema do AD do atributo remoteSource
+- Esquema de Remote-Source do atributo AD
+- Esquema de AD do atributo RemoteException
 topic_type:
 - apiref
 api_name:
@@ -23,20 +23,20 @@ ms.locfileid: "118423817"
 ---
 # <a name="remote-source-attribute"></a>Remote-Source atributo
 
-Ponteiro para trás para objetos externos.
+Ponteiro para trás para objetos estrangeiros.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Remote-Source                               |
-| Ldap-Display-Name | remoteSource                                |
+| LDAP-Display-Name | remoto                                |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.107                      |
-| System-Id-Guid    | bf967a14-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
+| System-ID-GUID    | bf967a14-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Ponteiro para trás para objetos externos.
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| Tem valor único       | Verdadeiro                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
-| No Catálogo Global      | Falso                                                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
+| No catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classes usadas em        | [**Destinatário de email remoto**](c-remotemailrecipient.md)<br/> |
+| Classes usadas em        | [**Email remoto-destinatário**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Ponteiro para trás para objetos externos.
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| Tem valor único       | Verdadeiro                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
-| No Catálogo Global      | Falso                                                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
+| No catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classes usadas em        | [**Destinatário de email remoto**](c-remotemailrecipient.md)<br/> |
+| Classes usadas em        | [**Email remoto-destinatário**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Ponteiro para trás para objetos externos.
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| Tem valor único       | Verdadeiro                                                              |
+| É de valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
-| No Catálogo Global      | Falso                                                             |
-| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
+| No catálogo global      | Falso                                                             |
+| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classes usadas em        | [**Email remoto-destinatário**](c-remotemailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário de email remoto**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Ponteiro para trás para objetos externos.
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | Verdadeiro                                                              |
+| Tem valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
-| No catálogo global      | Falso                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
+| No Catálogo Global      | Falso                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classes usadas em        | [**Email remoto-destinatário**](c-remotemailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário de email remoto**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Ponteiro para trás para objetos externos.
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | Verdadeiro                                                              |
+| Tem valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
-| No catálogo global      | Falso                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
+| No Catálogo Global      | Falso                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classes usadas em        | [**Email remoto-destinatário**](c-remotemailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário de email remoto**](c-remotemailrecipient.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Ponteiro para trás para objetos externos.
 | ID do link                | \-                                                                |
 | MAPI-Id                | \-                                                                |
 | System-Only            | Falso                                                             |
-| É de valor único       | Verdadeiro                                                              |
+| Tem valor único       | Verdadeiro                                                              |
 | É indexado             | Falso                                                             |
-| No catálogo global      | Falso                                                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                      |
+| No Catálogo Global      | Falso                                                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                      |
 | Range-Lower            | 1                                                                 |
 | Range-Upper            | 1024                                                              |
 | Search-Flags           | 0x00000000                                                        |
 | System-Flags           | 0x00000010                                                        |
-| Classes usadas em        | [**Email remoto-destinatário**](c-remotemailrecipient.md)<br/> |
+| Classes usadas em        | [**Destinatário de email remoto**](c-remotemailrecipient.md)<br/> |
 
 
 

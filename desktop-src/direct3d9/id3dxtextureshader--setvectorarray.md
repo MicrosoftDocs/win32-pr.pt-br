@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 0878594baa8828c9cca4eca8dd2c20f225fb530e
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e41f530946166e3bb20db5f1d7acccc7f3e55f12dbb8567bff901ee8da09f6d4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108090184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118093525"
 ---
 # <a name="id3dxtextureshadersetvectorarray-method"></a>Método ID3DXTextureShader:: SetVectorArray
 
@@ -86,7 +86,7 @@ Se o método for bem sucedido, o valor de retorno será D3D \_ OK. Se o método 
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

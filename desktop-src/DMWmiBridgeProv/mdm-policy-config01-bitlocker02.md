@@ -1,10 +1,10 @@
 ---
-title: Classe MDM_Policy_Config01_BitLocker02
-description: A \_ classe Config01 Bitlocker02 de política de MDM \_ \_ representa as políticas de BitLocker disponíveis.
+title: MDM_Policy_Config01_BitLocker02 classe
+description: A classe MDM \_ Policy \_ Config01 \_ Bitlocker02 representa as políticas do BitLocker disponíveis.
 ms.assetid: 885df93f-41f5-4cf7-8bce-9b253b190e17
 keywords:
-- Classe MDM_Policy_Config01_BitLocker02
-- Classe MDM_Policy_Config01_BitLocker02, descrita
+- MDM_Policy_Config01_BitLocker02 classe
+- MDM_Policy_Config01_BitLocker02 classe , descrita
 topic_type:
 - apiref
 api_name:
@@ -24,11 +24,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118165397"
 ---
-# <a name="mdm_policy_config01_bitlocker02-class"></a>\_Classe MDM \_ Config01 \_ BitLocker02
+# <a name="mdm_policy_config01_bitlocker02-class"></a>Classe MDM \_ Policy \_ Config01 \_ BitLocker02
 
-\[Algumas informações estão relacionadas ao produto de pré-lançamento que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
+\[Algumas informações estão relacionadas ao produto pré-lançado, que pode ser substancialmente modificado antes de ser lançado comercialmente. A Microsoft não oferece garantias, expressas ou implícitas, das informações aqui fornecidas.\]
 
-A **classe \_ \_ Config01 \_ Bitlocker02 de política de MDM** representa as políticas de BitLocker disponíveis.
+A **classe MDM \_ Policy \_ Config01 \_ Bitlocker02** representa as políticas do BitLocker disponíveis.
 
 A sintaxe a seguir é simplificada do código MOF e inclui todas as propriedades herdadas.
 
@@ -46,13 +46,13 @@ class MDM_Policy_Config01_BitLocker02
 
 ## <a name="members"></a>Membros
 
-A **classe \_ \_ Config01 \_ BitLocker02 da política MDM** tem estes tipos de membros:
+A **classe MDM \_ Policy \_ Config01 \_ BitLocker02** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe \_ \_ Config01 \_ BitLocker02 da política MDM** tem essas propriedades.
+A **classe MDM \_ Policy \_ Config01 \_ BitLocker02** tem essas propriedades.
 
 <dl> <dt>
 
@@ -62,7 +62,7 @@ A **classe \_ \_ Config01 \_ BitLocker02 da política MDM** tem essas propriedad
 Tipo de dados: **sint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> </dl>
 
 </dd> <dt>
@@ -83,7 +83,7 @@ Identifica o nome do nó pai. Para essa classe, a cadeia de caracteres é "BitLo
 
 </dd> <dt>
 
-**ParentID**
+**Parentid**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -105,10 +105,10 @@ Descreve o caminho completo para o nó pai. Para essa classe, a cadeia de caract
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                      |
-| Namespace<br/>                | \\Dmmap de \\ MDM \\ cimv2 raiz<br/>                                                             |
-| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv. mof</dt> </dl> |
+| Namespace<br/>                | \\Cimv2 \\ mdm \\ dmmap raiz<br/>                                                             |
+| MOF<br/>                      | <dl> <dt>DMWmiBridgeProv.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>DMWmiBridgeProv.dll</dt> </dl> |
 
 

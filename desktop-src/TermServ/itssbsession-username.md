@@ -1,12 +1,12 @@
 ---
-title: Propriedade nome de usuário ITsSbSession
-description: Recupera o nome de usuário para esta sessão.
+title: Propriedade de nome de usuário ITsSbSession
+description: Recupera o nome de usuário desta sessão.
 ms.assetid: 0034e8cc-b67b-4e30-a059-47a269bab0fd
 ms.tgt_platform: multiple
 keywords:
-- Propriedades de nome de usuário Serviços de Área de Trabalho Remota
-- Propriedade username Serviços de Área de Trabalho Remota , interface ITsSbSession
-- Interface ITsSbSession Serviços de Área de Trabalho Remota , propriedade Username
+- Propriedade de nome de usuário Serviços de Área de Trabalho Remota
+- Propriedade UserName Serviços de Área de Trabalho Remota, interface ITsSbSession
+- Serviços de Área de Trabalho Remota de interface ITsSbSession, Propriedade UserName
 topic_type:
 - apiref
 api_name:
@@ -25,9 +25,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118351196"
 ---
-# <a name="itssbsessionusername-property"></a>Propriedade ITsSbSession::Username
+# <a name="itssbsessionusername-property"></a>Propriedade ITsSbSession:: username
 
-Recupera o nome de usuário para esta sessão.
+Recupera o nome de usuário desta sessão.
 
 Esta propriedade é somente para leitura.
 
@@ -44,7 +44,7 @@ HRESULT get_Username(
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um ponteiro para uma **variável BSTR** que recebe o nome de usuário para esta sessão.
+Um ponteiro para uma variável **BSTR** que recebe o nome de usuário para esta sessão.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,7 +54,7 @@ Um ponteiro para uma **variável BSTR** que recebe o nome de usuário para esta 
 |-------------------------------------|--------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                            |
 | Servidor mínimo com suporte<br/> | Windows Server 2012<br/>                                                       |
-| Idl<br/>                      | <dl> <dt>Sbtsv.idl</dt> </dl> |
+| INSERI<br/>                      | <dl> <dt>Sbtsv. idl</dt> </dl> |
 
 
 

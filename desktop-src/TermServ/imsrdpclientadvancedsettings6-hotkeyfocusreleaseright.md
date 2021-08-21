@@ -1,16 +1,16 @@
 ---
 title: Propriedade IMsRdpClientAdvancedSettings6 HotKeyFocusReleaseRight
-description: Especifica o código de chave virtual a ser adicionar a Ctrl+Alt para determinar a substituição da tecla de atalho para Ctrl+Alt+Seta para a Direita.
+description: Especifica o código de chave virtual a ser adicionado a CTRL + ALT para determinar a substituição de tecla de atalho para Ctrl + Alt + seta direita.
 ms.assetid: 9AEEB712-E4C4-435E-A847-40C2B3A41C15
 ms.tgt_platform: multiple
 keywords:
-- Propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota
-- A propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
-- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade HotKeyFocusReleaseRight
-- A propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
-- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade HotKeyFocusReleaseRight
-- Propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
-- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade HotKeyFocusReleaseRight
+- Serviços de Área de Trabalho Remota da propriedade HotKeyFocusReleaseRight
+- Propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade HotKeyFocusReleaseRight
+- Propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade HotKeyFocusReleaseRight
+- Propriedade HotKeyFocusReleaseRight Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade HotKeyFocusReleaseRight
 topic_type:
 - apiref
 api_name:
@@ -36,11 +36,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118352270"
 ---
-# <a name="imsrdpclientadvancedsettings6hotkeyfocusreleaseright-property"></a>Propriedade IMsRdpClientAdvancedSettings6::HotKeyFocusReleaseRight
+# <a name="imsrdpclientadvancedsettings6hotkeyfocusreleaseright-property"></a>Propriedade IMsRdpClientAdvancedSettings6:: HotKeyFocusReleaseRight
 
-Especifica o código de chave virtual a ser adicionar a Ctrl+Alt para determinar a substituição da tecla de atalho para Ctrl+Alt+Seta para a Direita.
+Especifica o código de chave virtual a ser adicionado a CTRL + ALT para determinar a substituição de tecla de atalho para Ctrl + Alt + seta direita.
 
-Essa propriedade é leitura/gravação.
+Esta propriedade é de leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -63,7 +63,7 @@ O novo código de chave virtual.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade só tem suporte Conexão de Área de Trabalho Remota clientes 6.1 e 7.0.
+Essa propriedade só tem suporte nos clientes Conexão de Área de Trabalho Remota 6,1 e 7,0.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -75,7 +75,7 @@ Essa propriedade só tem suporte Conexão de Área de Trabalho Remota clientes 6
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                                   |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>           |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>           |
-| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings6 é definido como 222c4b5d-45d9-4df0-a7c6-60cf9089d285<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings6 é definido como 222c4b5d-45D9-4df0-a7c6-60cf9089d285<br/> |
 
 
 

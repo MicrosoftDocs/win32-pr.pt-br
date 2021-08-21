@@ -1,25 +1,25 @@
 ---
-description: 'Saiba mais sobre: Propriedades de EsentReadVerifyFailureException'
-title: Propriedades de EsentReadVerifyFailureException
+description: 'Saiba mais sobre: propriedades EsentReadVerifyFailureException'
+title: Propriedades EsentReadVerifyFailureException
 TOCTitle: EsentReadVerifyFailureException properties
 ms:assetid: Properties.T:Microsoft.Isam.Esent.Interop.EsentReadVerifyFailureException
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esentreadverifyfailureexception_properties(v=EXCHG.10)
 ms:contentKeyID: 55102561
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: f666d4785560e8cecc959690fbd7868fce9a3a98
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1d9d140b5ea81063604182ba6cc2df54d6770703eef3166b7e85497bd0918dbd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103663066"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118079744"
 ---
-# <a name="esentreadverifyfailureexception-properties"></a>Propriedades de EsentReadVerifyFailureException
+# <a name="esentreadverifyfailureexception-properties"></a>Propriedades EsentReadVerifyFailureException
 
 Incluir membros protegidos  
 Incluir membros herdados  
 
-O tipo [EsentReadVerifyFailureException](./esentreadverifyfailureexception-class.md) expõe os membros a seguir.
+O [tipo EsentReadVerifyFailureException](./esentreadverifyfailureexception-class.md) expõe os membros a seguir.
 
 ## <a name="properties"></a>Propriedades
 
@@ -40,16 +40,16 @@ O tipo [EsentReadVerifyFailureException](./esentreadverifyfailureexception-class
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
 <td><a href="dn274313(v=exchg.10).md">Erro</a></td>
-<td>Obtém o erro de ESENT subjacente para esta exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
+<td>Obtém o erro Esent subjacente para essa exceção. (Herdado de <a href="dn274314(v=exchg.10).md">EsentErrorException</a>.)</td>
 </tr>
 <tr class="odd">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">HelpLink</a></td>
+<td><a href="/dotnet/api/system.exception.helplink#System_Exception_HelpLink">Helplink</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentReadVerifyFailureException](./esentreadverifyfailureexception-class
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -89,4 +89,4 @@ Parte superior
 
 [Classe EsentReadVerifyFailureException](./esentreadverifyfailureexception-class.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

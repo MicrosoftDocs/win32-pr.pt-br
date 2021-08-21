@@ -1,19 +1,19 @@
 ---
-description: Além de todos os elementos de informações descritos anteriormente, que podem ser especificados na estrutura QoS específica do ATM ao chamar WSAConnect, há uma causa que pode ser usada apenas durante o lançamento da chamada.
+description: Além de todos os elementos de informações descritos anteriormente, que podem ser especificados na estrutura QoS específica do ATM ao chamar WSAConnect, há um IE de causa que só pode ser usado durante a versão da chamada.
 ms.assetid: 258b22d7-b58a-499a-be00-de548578db83
 title: Causa
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f93d2a2864db347183ca42f5458681e4de3ecc6d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3d0539918e745c9b158a5a56923c45f37f87d5069ce63ef74083d7270204c5a4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164475"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118322377"
 ---
 # <a name="cause"></a>Causa
 
-Além de todos os elementos de informações descritos anteriormente, que podem ser especificados na estrutura [**QoS**](/windows/win32/api/winsock2/ns-winsock2-qos) específica do ATM ao chamar [**WSAConnect**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect), há uma causa que pode ser usada apenas durante o lançamento da chamada. Após a desconexão, os aplicativos do Windows Sockets 2 podem opcionalmente especificar esse IE como os dados de desconexão no [**WSASendDisconnect**](/windows/desktop/api/Winsock2/nf-winsock2-wsasenddisconnect). A parte remota pode recuperar esse IE por meio do [**WSARecvDisconnect**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecvdisconnect) depois de receber a \_ notificação de fechamento FD.
+Além de todos os elementos de informações descritos anteriormente, que podem ser especificados na estrutura [**QoS**](/windows/win32/api/winsock2/ns-winsock2-qos) específica do ATM ao chamar [**WSAConnect,**](/windows/desktop/api/Winsock2/nf-winsock2-wsaconnect)há um IE de causa que só pode ser usado durante a versão da chamada. Após a desconexão, Windows aplicativos soquetes 2 podem, opcionalmente, especificar esse IE como os dados de [**desconexão em WSASendDisconnect**](/windows/desktop/api/Winsock2/nf-winsock2-wsasenddisconnect). A parte remota pode recuperar esse IE por meio [**de WSARecvDisconnect**](/windows/desktop/api/Winsock2/nf-winsock2-wsarecvdisconnect) depois de receber a notificação FD \_ CLOSE.
 
 ``` syntax
 #include <windows.h>

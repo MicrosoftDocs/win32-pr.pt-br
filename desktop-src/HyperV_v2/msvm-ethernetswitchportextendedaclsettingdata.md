@@ -1,7 +1,7 @@
 ---
 description: Representa as configurações de ACL de porta estendida.
 ms.assetid: 357dd891-6692-4ffc-b8a8-4ece40d4af28
-title: Classe Msvm_EthernetSwitchPortExtendedAclSettingData
+title: Msvm_EthernetSwitchPortExtendedAclSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -25,14 +25,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 25ae81e4f00e87e41170ac5713ced0d9b523c844
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 27f94de089df73c246de887268d34c187bef2507391ceeb33dd7c8cc8068bc43
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105756928"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118148315"
 ---
-# <a name="msvm_ethernetswitchportextendedaclsettingdata-class"></a>\_Classe Msvm EthernetSwitchPortExtendedAclSettingData
+# <a name="msvm_ethernetswitchportextendedaclsettingdata-class"></a>Classe Msvm \_ EthernetSwitchPortExtendedAclSettingData
 
 Representa as configurações de ACL de porta estendida.
 
@@ -61,13 +61,13 @@ class Msvm_EthernetSwitchPortExtendedAclSettingData : Msvm_EthernetSwitchPortFea
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ EthernetSwitchPortExtendedAclSettingData** tem estes tipos de membros:
+A **classe Msvm \_ EthernetSwitchPortExtendedAclSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ EthernetSwitchPortExtendedAclSettingData** tem essas propriedades.
+A **classe Msvm \_ EthernetSwitchPortExtendedAclSettingData** tem essas propriedades.
 
 <dl> <dt>
 
@@ -77,7 +77,7 @@ A classe **Msvm \_ EthernetSwitchPortExtendedAclSettingData** tem essas propried
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (3), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -116,7 +116,7 @@ A ação da ACL estendida.
 Tipo de dados: **uint8**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (2), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -152,26 +152,26 @@ Indica se a ACL estendida se aplica à direção de entrada ou saída.
 **IdleSessionTimeout**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **Uint16**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (11), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-Valor de tempo limite de sessão ociosa (em segundos) para ACL com estado.
+Valor de tempo de tempo de sessão ocioso (em segundos) para ACL com estado.
 
 </dd> <dt>
 
-**Isolamentoid**
+**IsolationID**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **Uint32**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **InterfaceVersion** (1), **InterfaceRevision** (0), **WmiDataId** (12)
@@ -187,10 +187,10 @@ ID de isolamento para a qual a ACL estendida deve ser aplicada.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (4), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 O endereço IP local.
@@ -203,10 +203,10 @@ O endereço IP local.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (21), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (21), **WmiDataId** (6), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 O intervalo de portas local.
@@ -219,13 +219,13 @@ O intervalo de portas local.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), **WmiDataId** (1), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-O nome amigável da ACL estendida.
+O nome amigável da ACL Estendida.
 
 </dd> <dt>
 
@@ -235,13 +235,13 @@ O nome amigável da ACL estendida.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (15), **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (15), **WmiDataId** (8), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
-A cadeia de caracteres do protocolo.
+A cadeia de caracteres de protocolo.
 
 </dd> <dt>
 
@@ -251,10 +251,10 @@ A cadeia de caracteres do protocolo.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (40), **WmiDataId** (5), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 O endereço IP remoto.
@@ -267,23 +267,23 @@ O endereço IP remoto.
 Tipo de dados: **cadeia de caracteres**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (21), **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (21), **WmiDataId** (7), **InterfaceVersion** (1), **InterfaceRevision** (0)
 </dt> </dl>
 
 O intervalo de portas remotas.
 
 </dd> <dt>
 
-**Dinâmico**
+**Com estado**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (10), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -296,10 +296,10 @@ Indica se a ACL estendida tem estado ou sem estado.
 **Weight**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **Uint16**
 </dt> <dt>
 
-Tipo de acesso: leitura/gravação
+Tipo de acesso: Leitura/gravação
 </dt> <dt>
 
 Qualificadores: **WmiDataId** (9), **InterfaceVersion** (1), **InterfaceRevision** (0)
@@ -317,8 +317,8 @@ O peso aplicado à ACL estendida.
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 8.1<br/>                                                                                  |
 | Servidor mínimo com suporte<br/> | Windows Server 2012 R2<br/>                                                                       |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

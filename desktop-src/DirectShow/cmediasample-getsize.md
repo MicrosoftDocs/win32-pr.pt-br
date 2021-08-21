@@ -1,7 +1,7 @@
 ---
-description: 'O método GetSize recupera o tamanho do buffer. Esse método implementa o método IMediaSample:: GetSize.'
+description: O método GetSize recupera o tamanho do buffer. Esse método implementa o método IMediaSample::GetSize.
 ms.assetid: 14562ef4-f554-4d5a-83d3-1a29abae08a4
-title: Método CMediaSample. GetSize (Amfilter. h)
+title: Método CMediaSample.GetSize (Amfilter.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ff4146b66ca62905fe54eeb88d1e38ccf56ceea9
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f3559f972f35a01738c60f32414ab0b42a079032ac5bc6b3ab0e5b7212900d61
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757702"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118156747"
 ---
-# <a name="cmediasamplegetsize-method"></a>Método CMediaSample. GetSize
+# <a name="cmediasamplegetsize-method"></a>Método CMediaSample.GetSize
 
-O `GetSize` método recupera o tamanho do buffer. Esse método implementa o método [**IMediaSample:: GetSize**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getsize) .
+O `GetSize` método recupera o tamanho do buffer. Esse método implementa o [**método IMediaSample::GetSize.**](/windows/desktop/api/Strmif/nf-strmif-imediasample-getsize)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,7 +40,7 @@ LONG GetSize();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o tamanho do buffer, em bytes.
 
@@ -50,8 +50,8 @@ Retorna o tamanho do buffer, em bytes.
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Amfilter. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Amfilter.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

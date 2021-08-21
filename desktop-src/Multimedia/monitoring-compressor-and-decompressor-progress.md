@@ -1,23 +1,23 @@
 ---
-title: Progresso do monitoramento e do descompactador
-description: Progresso do monitoramento e do descompactador
+title: Monitorando o progresso do Descompactador e o Progresso do Descompactador
+description: Monitorando o progresso do Descompactador e o Progresso do Descompactador
 ms.assetid: 7c87c688-75b6-4d3e-9dd5-5f509ff2e473
 keywords:
-- VCM (Gerenciador de compactação de vídeo), monitoramento
-- VCM (Gerenciador de compactação de vídeo), monitoramento
+- VCM (gerenciador de compactação de vídeo), monitoramento
+- VCM (gerenciador de compactação de vídeo), monitoramento
 - Função ICSetStatusProc
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: beb86a40bb653380dc93e758ada1b2eef6ec9ca7
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 724d3e6a8bee645717ef624eddd1276d3e55e856f1aab3c6edc5f9585b3f5feb
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118137177"
 ---
-# <a name="monitoring-compressor-and-decompressor-progress"></a>Progresso do monitoramento e do descompactador
+# <a name="monitoring-compressor-and-decompressor-progress"></a>Monitorando o progresso do Descompactador e o Progresso do Descompactador
 
-O exemplo a seguir mostra como a função [**ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) é usada para informar o compressor ou o descompactador do endereço da função de retorno de chamada:
+O exemplo a seguir mostra como a [**função ICSetStatusProc**](/windows/desktop/api/Vfw/nf-vfw-icsetstatusproc) é usada para informar o descompactador ou o descompactador do endereço da função de retorno de chamada:
 
 
 ```C++
@@ -78,9 +78,9 @@ LONG CALLBACK export PreviewStatusProc(LPARAM lParam,
 
 
 
- 
+ 
 
- 
+ 
 
 
 

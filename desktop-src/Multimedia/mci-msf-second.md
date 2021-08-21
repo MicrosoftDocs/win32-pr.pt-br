@@ -3,7 +3,7 @@ title: Macro MCI_MSF_SECOND (Mciapi. h)
 description: A \_ segunda macro MCI do MSF \_ recupera o componente de segundos de um parâmetro que contém informações de minutos/segundos/quadros compactados (MSF).
 ms.assetid: 2d455ce3-1823-46fa-a59e-b9c5c2fe5eb9
 keywords:
-- Multimídia MCI_MSF_SECOND macro do Windows
+- macro de MCI_MSF_SECOND Windows multimídia
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 85dffd36354b335818079ea5b0c88d16752b4501
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: eb09643ae8d3ecdf59c6f3631c9dc28f43bba7ee0434ebabed3e4260c3fec01d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103824498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118138355"
 ---
 # <a name="mci_msf_second-macro"></a>\_Segunda macro do MSF MCI \_
 
@@ -47,7 +47,7 @@ Hora no formato MSF.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna o componente de segundos das informações de MSF especificadas.
 
