@@ -4,12 +4,12 @@ ms.assetid: 2e05f9e5-28a6-48f3-956d-a14eaf3bf4ba
 title: Propriedade AVDecVideoAcceleration_MPEG2 (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d943459ae3810e1a0dc668c1f11c4c5d2354afaf
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: cc2aa5db2d738afc0097ee4e09e7562dd7a3ae30b6138b2a003d85c6058fb22b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "103646087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118159949"
 ---
 # <a name="avdecvideoacceleration_mpeg2-property"></a>\_Propriedade MPEG2 AVDecVideoAcceleration
 
@@ -27,7 +27,7 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Se o valor for zero, o decodificador não usará a DXVA (aceleração de vídeo do DirectX) para decodificação de vídeo MPEG-2. Para filtros do DirectShow, defina essa propriedade antes que o pino de saída do decodificador seja conectado.
+Se o valor for zero, o decodificador não usará a DXVA (aceleração de vídeo do DirectX) para decodificação de vídeo MPEG-2. para filtros de DirectShow, defina essa propriedade antes que o pino de saída do decodificador seja conectado.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -35,9 +35,9 @@ Se o valor for zero, o decodificador não usará a DXVA (aceleração de vídeo 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 

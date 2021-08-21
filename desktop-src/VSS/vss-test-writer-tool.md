@@ -190,7 +190,7 @@ O seguinte elemento ComponentFile contém um atributo alternatePath:
                    alternatePath="c:\files\spit" />
 ```
 
-Este exemplo configura o Test Writer para copiar todos os arquivos correspondentes a c: arquivos.txt para o diretório c: arquivos imediatamente antes da criação da cópia de \\ \\ \* sombra de \\ \\ volume. O solicitante deve fazer o back-up dos arquivos do diretório c: \\ files \\ directory. Se o Test Writer estiver configurado para excluir arquivos, ele excluirá os arquivos originais antes que a cópia de sombra seja criada, para que eles não apareçam no diretório de arquivos c: no volume de cópia \\ de sombra. Nesse caso, os arquivos em c: arquivos são excluídos depois que a cópia de sombra é criada, portanto, eles devem ser copiados em backup do diretório de arquivos c: no volume de cópia \\ \\ de \\ \\ sombra.
+Este exemplo configura o Test Writer para copiar todos os arquivos correspondentes a arquivos c: arquivos.txt diretório c: arquivos imediatamente antes da criação da cópia de \\ \\ \* sombra de \\ \\ volume. O solicitante deve fazer o back-up dos arquivos do diretório c: \\ files \\ directory. Se o Test Writer estiver configurado para excluir arquivos, ele excluirá os arquivos originais antes que a cópia de sombra seja criada, para que eles não apareçam no diretório de arquivos c: no volume de cópia \\ de sombra. Nesse caso, os arquivos em c: arquivos são excluídos depois que a cópia de sombra é criada, portanto, eles devem ser copiados em backup do diretório de arquivos c: no volume de cópia \\ \\ de \\ \\ sombra.
 
 ## <a name="reporting-component-dependencies"></a>Dependências do componente de relatório
 
@@ -344,7 +344,7 @@ Se um autor dá suporte a novos destinos, o solicitante pode informar o autor de
 
 ## <a name="more-information"></a>Mais informações
 
-O Test Writer dá suporte a mais opções de configuração que não são descritas aqui. o esquema completo para todos os recursos de configuração do gravador de teste é especificado em swriter.xml `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\x64\vsstools` (para Windows de 64 bits) e `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\vsstools` (para Windows de 32 bits). Esse arquivo contém um esquema XML que descreve completamente todos os elementos e atributos que compõem um arquivo de configuração. Cada elemento e cada atributo nesse arquivo é comentado com uma descrição que documenta o uso do elemento ou do atributo.
+O Test Writer dá suporte a mais opções de configuração que não são descritas aqui. O esquema completo para todos os recursos de configuração do Test Writer é especificado no swriter.xml no (para Windows de `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\x64\vsstools` 64 bits) e `%ProgramFiles%\Microsoft SDKs\Windows\v7.0\bin\vsstools` (para 32 bits Windows). Esse arquivo contém um esquema XML que descreve completamente todos os elementos e atributos que comem um arquivo de configuração. Cada elemento e cada atributo nesse arquivo é comentado com uma descrição que documenta o uso desse elemento ou atributo.
 
  
 

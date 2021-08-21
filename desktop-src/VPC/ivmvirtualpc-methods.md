@@ -13,7 +13,7 @@ ms.locfileid: "118344293"
 ---
 # <a name="ivmvirtualpc-methods"></a>Métodos IVMVirtualPC
 
-\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 A interface [**IVMVirtualPC**](ivmvirtualpc.md) expõe os métodos a seguir.
 
@@ -27,7 +27,7 @@ A interface [**IVMVirtualPC**](ivmvirtualpc.md) expõe os métodos a seguir.
 -   [**Método DeleteVirtualMachine**](ivmvirtualpc-deletevirtualmachine.md)
 -   [**Método FindVirtualMachine**](ivmvirtualpc-findvirtualmachine.md)
 -   [**Método FindVirtualNetwork**](ivmvirtualpc-findvirtualnetwork.md)
--   [**Método getconfigurationvalue**](ivmvirtualpc-getconfigurationvalue.md)
+-   [**Método GetConfigurationValue**](ivmvirtualpc-getconfigurationvalue.md)
 -   [**Método GetDVDFiles**](ivmvirtualpc-getdvdfiles.md)
 -   [**Método GetFloppyDiskFiles**](ivmvirtualpc-getfloppydiskfiles.md)
 -   [**Método GetFloppyDiskImageType**](ivmvirtualpc-getfloppydiskimagetype.md)
@@ -36,7 +36,7 @@ A interface [**IVMVirtualPC**](ivmvirtualpc.md) expõe os métodos a seguir.
 -   [**Método GetVirtualMachineFiles**](ivmvirtualpc-getvirtualmachinefiles.md)
 -   [**Método RegisterVirtualMachine**](ivmvirtualpc-registervirtualmachine.md)
 -   [**Método RemoveConfigurationValue**](ivmvirtualpc-removeconfigurationvalue.md)
--   [**Método setconfigurationvalue**](ivmvirtualpc-setconfigurationvalue.md)
+-   [**Método SetConfigurationValue**](ivmvirtualpc-setconfigurationvalue.md)
 -   [**Método UnregisterVirtualMachine**](ivmvirtualpc-unregistervirtualmachine.md)
 
  

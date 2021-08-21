@@ -14,12 +14,12 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 646fa3574c3b9be788ad32ef402a7ca2051d04de
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: 5bed9e7ae8cccca03654113ed48245b11124e1b6fd001a11074933ea4e34738a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "104012116"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118094048"
 ---
 # <a name="id3dxspritegettransform-method"></a>Método ID3DXSprite:: GetTransform
 
@@ -49,7 +49,7 @@ Ponteiro para um [**D3DXMATRIX**](d3dxmatrix.md) que contém uma transformação
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

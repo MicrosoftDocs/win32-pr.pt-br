@@ -4,18 +4,18 @@ ms.assetid: 0e173fe5-0b9d-48e8-bcbd-403614d51558
 title: Pacote de origem do AAUX (AS)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: fe479a0740da08f42ca5d80e1f0b6f5174f6917b
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 89a2d8aa11c9560b2aa59165afd9bdaae775be7755a7a7d2a5e87a80df412d1d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104163860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118160257"
 ---
 # <a name="aaux-source-as-pack"></a>Pacote de origem do AAUX (AS)
 
-As tabelas a seguir listam os valores usados pelo driver MSDV para preencher os membros **dwDVAAuxSrc** e **DwDVAAuxSrc1** da estrutura [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) . Para obter mais informações, consulte [configurações de campo DVINFO no driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
+As tabelas a seguir listam os valores usados pelo driver MSDV para preencher os membros **dwDVAAuxSrc** e **DwDVAAuxSrc1** da estrutura [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) . para obter mais informações, consulte [o campo DVINFO Configurações no Driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md).
 
-Configurações de DVCR
+Configurações DVCR
 
 
 
@@ -227,13 +227,13 @@ Como pacote
 
  
 
-Configurações do DVCR 25 e DVCPRO 50 (planejadas)
+DVCR 25 e DVCPRO 50 Configurações (Planejado)
 
 
 
 DV Standard
 
-DVCPRO (SMPTE 314M) – planejado
+DVCPRO (SMPTE 314M) — Planejado
 
 FOURCC
 
@@ -271,7 +271,7 @@ Reservado (1)
 
 1
 
-TAMANHO DA AF (6)
+AF SIZE (6)
 
 01:0110
 
@@ -383,7 +383,7 @@ SMP (3)
 
 000
 
-T (3)
+QU (3)
 
 000
 
@@ -393,7 +393,7 @@ T (3)
 
 000
 
-Como pacote
+Pacote AS
 
     Audio Block 1\*
 
@@ -420,17 +420,17 @@ Como pacote
  
 
 > [!Note]  
-> \* A estrutura [**DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) contém dois AAUX como pacotes para os blocos de áudio 1 e 2. DV50 tem quatro blocos de áudio; os blocos 3 e 4 não são representados na estrutura **DVINFO** .
+> \* A [**estrutura DVINFO**](/windows/desktop/api/strmif/ns-strmif-dvinfo) contém dois pacotes AS ATORIAL, para blocos de áudio 1 e 2. DV50 tem quatro blocos de áudio; os blocos 3 e 4 não são representados na estrutura **DVINFO.**
 
  
 
-Configurações do DVCR 100 (planejadas)
+DVCR 100 Configurações (Planejado)
 
 
 
 DV Standard
 
-DVCPRO 100 – planejado
+DVCPRO 100 — Planejado
 
 FOURCC
 
@@ -629,14 +629,14 @@ Os códigos de campo a seguir são de interesse:
 -   50/60: número de campos.
     -   0 = 60 campos
     -   1 = 50 campos
--   STYPE: tipo de sistema.
+-   STYPE: Tipo de sistema.
 
-    Definição de IEC 61834:
+    Definição do IEC 61834:
 
     -   00000 = 525-60 ou 625-50, dvsd
     -   00001 = 525-60 ou 625-50, dvsl (consulte IEC 61883-5)
 
-    Definição de 314M/SPMTE 370 SMPTE:
+    Definição do SMPTE 314M/SPMTE 370:
 
     -   00000 = 2 blocos de áudio por quadro de vídeo
     -   00010 = 4 blocos de áudio por quadro de vídeo
@@ -645,8 +645,8 @@ Os códigos de campo a seguir são de interesse:
 -   SMP: frequência de amostragem.
     -   000 = 48 kHz
     -   010 = 32 kHz
--   T: quantização.
-    -   0 = 16 bits linear
+-   QU: Quantization.
+    -   0 = 16 bits lineares
     -   1 = 12 bits não lineares
 
 ## <a name="related-topics"></a>Tópicos relacionados
@@ -656,7 +656,7 @@ Os códigos de campo a seguir são de interesse:
 [Vídeo digital no DirectShow](digital-video-in-directshow.md)
 </dt> <dt>
 
-[Configurações de campo DVINFO no driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
+[Campo DVINFO Configurações no Driver MSDV](dvinfo-field-settings-in-the-msdv-driver.md)
 </dt> </dl>
 
  

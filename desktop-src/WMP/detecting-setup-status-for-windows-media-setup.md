@@ -1,44 +1,44 @@
 ---
-title: Detectando o status da instalação da instalação do Windows Media
-description: Detectando o status da instalação da instalação do Windows Media
+title: Detectando o status de instalação para Windows de mídia
+description: Detectando o status de instalação para Windows de mídia
 ms.assetid: c3acc268-934b-4a10-aab5-4b1764cb4c87
 keywords:
 - Windows Media Player, detectando o status da instalação
 - Windows Media Player, status da instalação
 - Windows Media Player, redistribuindo software
-- Windows Media Player, redistribuição de software
+- Windows Media Player,redistribuição de software
 - detectando o status da instalação
 - status da instalação
 - redistribuindo software
 - redistribuição de software
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e28a4df9b842a1b6491a0ec98ca0a3182630c389
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 797c7cb5fe4d34895109777c4da7e15489a0d32acd9cf42660b3346521f6f059
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364368"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118340895"
 ---
-# <a name="detecting-setup-status-for-windows-media-setup"></a>Detectando o status da instalação da instalação do Windows Media
+# <a name="detecting-setup-status-for-windows-media-setup"></a>Detectando o status de instalação para Windows de mídia
 
-O código a seguir pode ser usado com os pacotes de redistribuição do Windows Media Player. O status da instalação é armazenado na entrada do registro **InstallResult** sob a seguinte subchave:
+O código a seguir pode ser usado com os Windows Media Player pacotes de redistribuição. O status da instalação é armazenado na entrada do Registro **InstallResult** na seguinte sub-chave:
 
-**HKEY \_ Current \_ user \\ software \\ Microsoft \\ MediaPlayer \\ instalação**
+**HKEY \_ CURRENT \_ USER \\ Software \\ Microsoft \\ MediaPlayer \\ Setup**
 
-A entrada do registro **InstallResult** tem o seguinte formato.
+A **entrada do Registro InstallResult** tem o seguinte formulário.
 
 
 
 | Nome              | Tipo           | Valor                                                                                                                   |
 |-------------------|----------------|-------------------------------------------------------------------------------------------------------------------------|
-| **InstallResult** | **REG \_ DWORD** | Um **HRESULT** que indica se a instalação do Windows Media Player foi bem-sucedida e se uma reinicialização é necessária. |
+| **InstallResult** | **REG \_ DWORD** | Um **HRESULT que** indica se a Windows Media Player foi bem-sucedida e se uma reinicialização é necessária. |
 
 
 
- 
+ 
 
-Este é um código C++ de exemplo que pode ser incorporado a um aplicativo de instalação de chamada. Esse código irá definir as `fSuccess` `fRebootNeeded` variáveis e como **true** ou **false**, conforme apropriado, com base no valor **HRESULT** gravado pela instalação do Windows Media Player no pacote de redistribuição de componentes.
+Aqui está um código C++ de exemplo que pode ser incorporado em um aplicativo de configuração de chamada. Esse código definirá as variáveis e como true ou false, conforme apropriado, com base no valor HRESULT escrito por Windows Media Player Instalação no `fSuccess` `fRebootNeeded` pacote de redistribuição de componente.   
 
 
 ```C++
@@ -103,12 +103,12 @@ if( ERROR_SUCCESS == RegQueryValueExA(
 
 <dl> <dt>
 
-[**Redistribuindo o software Windows Media Player**](redistributing-windows-media-player-software.md)
+[**Redistribuindo Windows Media Player Software**](redistributing-windows-media-player-software.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

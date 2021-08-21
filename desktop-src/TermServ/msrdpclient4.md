@@ -25,7 +25,7 @@ ms.locfileid: "118350238"
 ---
 # <a name="msrdpclient4-class"></a>Classe MsRdpClient4
 
-Controle de Cliente RDP da Microsoft (redistribuível) – versão 5
+Controle de cliente RDP da Microsoft (redistribuível) – versão 5
 
 Essa classe implementa as interfaces a seguir.
 
@@ -135,9 +135,9 @@ A classe **MsRdpClient4** tem essas propriedades.
 | [**SecuredSettings2**](imsrdpclient-securedsettings2.md)<br/>                       | Somente leitura<br/>  | Ponteiro para a interface [**IMsRdpClientSecuredSettings**](imsrdpclientsecuredsettings-interface.md) , usado para definir configurações protegidas para o controle de cliente.<br/>                                       |
 | [**SecuredSettingsEnabled**](imstscax-securedsettingsenabled.md)<br/>               | Somente leitura<br/>  | Indica se a interface [**IMsTscSecuredSettings**](imstscsecuredsettings-interface.md) está disponível.<br/>                                                                                    |
 | [**Servidor**](imstscax-server.md)<br/>                                               | Leitura/gravação<br/> | O nome do servidor ao qual o controle atual está conectado.<br/>                                                                                                                                 |
-| [**StartConnected**](imstscax-startconnected.md)<br/>                               | Leitura/gravação<br/> | Indica se o controle estabelecerá a conexão de Host da Sessão RD servidor imediatamente após a inicialização.<br/>                                                                                      |
-| [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md)<br/> | Leitura/gravação<br/> | O alça de janela para ser a janela pai do controle. Isso permite que todas as janelas exibidas pelo controle sejam modais corretamente em relação a todas as janelas exibidas pelo aplicativo pai.<br/> |
-| [**Username**](imstscax-username.md)<br/>                                           | Leitura/gravação<br/> | A credencial de logon de nome de usuário.<br/>                                                                                                                                                                   |
+| [**StartConnected**](imstscax-startconnected.md)<br/>                               | Leitura/gravação<br/> | Indica se o controle irá estabelecer a conexão do Host da Sessão RD Server imediatamente após a inicialização.<br/>                                                                                      |
+| [**UIParentWindowHandle**](imsrdpclientnonscriptable2-uiparentwindowhandle.md)<br/> | Leitura/gravação<br/> | O identificador de janela para ser a janela pai do controle. Isso permite que qualquer janela exibida pelo controle seja devidamente modal com relação a todas as janelas exibidas pelo aplicativo pai.<br/> |
+| [**Usu**](imstscax-username.md)<br/>                                           | Leitura/gravação<br/> | A credencial de logon do nome de usuário.<br/>                                                                                                                                                                   |
 | [**Versão**](imstscax-version.md)<br/>                                             | Somente leitura<br/>  | O número de versão do controle atual.<br/>                                                                                                                                                        |
 | [**VerticalScrollBarVisible**](imstscax-verticalscrollbarvisible.md)<br/>           | Somente leitura<br/>  | Indica se o controle exibe uma barra de rolagem vertical.<br/>                                                                                                                                     |
 

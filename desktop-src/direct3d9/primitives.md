@@ -4,12 +4,12 @@ ms.assetid: vs|directx_sdk|~\primitives.htm
 title: Primitivos (gráficos do Direct3D 9)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 38916e85add69574a2437b0e48c209b14a341e44
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 6af846ded9798a25238287be7dd017dcf6efecdfb2976723638881c7e00f9642
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104087243"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118092549"
 ---
 # <a name="primitives-direct3d-9-graphics"></a>Primitivos (gráficos do Direct3D 9)
 

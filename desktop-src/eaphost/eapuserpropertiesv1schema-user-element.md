@@ -1,6 +1,6 @@
 ---
 title: Elemento User
-description: Saiba mais sobre o elemento user. Esse elemento não é usado ao usar métodos herdados por meio de APIs do EAPHost.
+description: Saiba mais sobre o elemento User. Esse elemento não é usado ao usar métodos herdado por meio das APIs EAPHost.
 ms.assetid: d35fb4ba-5f48-431d-b2bf-738043f5d1ff
 keywords:
 - Elemento de usuário EAPHost
@@ -14,16 +14,16 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: b564b6f91244a6839bc256dcdb2f79c630a4b065
-ms.sourcegitcommit: b0ebdefc3dcd5c04bede94091833aa1015a2f95c
+ms.openlocfilehash: d0f21b22320029bf1d10a209eae6a3b2192512a541c1e681b71e112d488c87ce
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "103641865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118086400"
 ---
 # <a name="user-element"></a>Elemento User
 
-O elemento **User** não é usado ao usar métodos herdados por meio de APIs EAPHost.
+O **elemento** User não é usado ao usar métodos herdado por meio das APIs EAPHost.
 
 ``` syntax
 <xs:element name="User">
@@ -44,7 +44,7 @@ O elemento **User** não é usado ao usar métodos herdados por meio de APIs EAP
 
 | Elemento                                                  | Type | Descrição                                                                     |
 |----------------------------------------------------------|------|---------------------------------------------------------------------------------|
-| [**EAP**](baseeapuserpropertiesv1schema-eap-element.md) |      | Captura o tipo de método e as informações de credencial específicas do método.<br/> |
+| [**Eap**](baseeapuserpropertiesv1schema-eap-element.md) |      | Captura o tipo de método e as informações de credencial específicas do método.<br/> |
 
 
 
@@ -54,8 +54,8 @@ O elemento **User** não é usado ao usar métodos herdados por meio de APIs EAP
 
 | Função | Versão mínima do sistema operacional com suporte |
 |------|------------------------------|
-| Cliente<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 93f132b24c6c20826b1551e979c128b1aa38c8d3
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 40865847b1deef877c70c1c99349c12915a464b394a38b5b804ea9139d5d0cf1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105764685"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118147505"
 ---
 # <a name="showmetricsbyclass-method-of-the-msvm_metricservice-class"></a>Método ShowMetricsByClass da \_ classe MetricService Msvm
 
@@ -113,7 +113,7 @@ Indica se uma métrica está sendo coletada para todas as instâncias de uma cla
 
 </dt> <dd></dd> </dl> </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos seguintes valores:
 

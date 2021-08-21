@@ -1,26 +1,26 @@
 ---
-title: Propriedade minInputSendInterval de IMsRdpClientAdvancedSettings
+title: Propriedade IMsRdpClientAdvancedSettings minInputSendInterval
 description: Especifica o intervalo mínimo, em milissegundos, entre o envio de eventos do mouse.
 ms.assetid: d186c05f-0b45-47bd-8a8e-e1f9baf2bd75
 ms.tgt_platform: multiple
 keywords:
-- propriedade minInputSendInterval Serviços de Área de Trabalho Remota
-- propriedade minInputSendInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings
-- Interface IMsRdpClientAdvancedSettings Serviços de Área de Trabalho Remota , propriedade minInputSendInterval
-- propriedade minInputSendInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings2
-- Interface IMsRdpClientAdvancedSettings2 Serviços de Área de Trabalho Remota , propriedade minInputSendInterval
-- propriedade minInputSendInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings3
-- Interface IMsRdpClientAdvancedSettings3 Serviços de Área de Trabalho Remota , propriedade minInputSendInterval
-- A propriedade minInputSendInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings4
-- Interface IMsRdpClientAdvancedSettings4 Serviços de Área de Trabalho Remota , propriedade minInputSendInterval
-- propriedade minInputSendInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings5
-- Interface IMsRdpClientAdvancedSettings5 Serviços de Área de Trabalho Remota , propriedade minInputSendInterval
-- propriedade minInputSendInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings6
-- Interface IMsRdpClientAdvancedSettings6 Serviços de Área de Trabalho Remota , propriedade minInputSendInterval
-- A propriedade minInputSendInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings7
-- Interface IMsRdpClientAdvancedSettings7 Serviços de Área de Trabalho Remota , propriedade minInputSendInterval
-- propriedade minInputSendInterval Serviços de Área de Trabalho Remota , interface IMsRdpClientAdvancedSettings8
-- Interface IMsRdpClientAdvancedSettings8 Serviços de Área de Trabalho Remota , propriedade minInputSendInterval
+- Serviços de Área de Trabalho Remota da propriedade minInputSendInterval
+- Propriedade minInputSendInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings, Propriedade minInputSendInterval
+- Propriedade minInputSendInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings2
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings2, Propriedade minInputSendInterval
+- Propriedade minInputSendInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings3
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings3, Propriedade minInputSendInterval
+- Propriedade minInputSendInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings4
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings4, Propriedade minInputSendInterval
+- Propriedade minInputSendInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings5
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings5, Propriedade minInputSendInterval
+- Propriedade minInputSendInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings6
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings6, Propriedade minInputSendInterval
+- Propriedade minInputSendInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings7
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings7, Propriedade minInputSendInterval
+- Propriedade minInputSendInterval Serviços de Área de Trabalho Remota, interface IMsRdpClientAdvancedSettings8
+- Serviços de Área de Trabalho Remota de interface IMsRdpClientAdvancedSettings8, Propriedade minInputSendInterval
 topic_type:
 - apiref
 api_name:
@@ -61,11 +61,11 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "118352961"
 ---
-# <a name="imsrdpclientadvancedsettingsmininputsendinterval-property"></a>Propriedade IMsRdpClientAdvancedSettings::minInputSendInterval
+# <a name="imsrdpclientadvancedsettingsmininputsendinterval-property"></a>Propriedade IMsRdpClientAdvancedSettings:: minInputSendInterval
 
 Especifica o intervalo mínimo, em milissegundos, entre o envio de eventos do mouse.
 
-Essa propriedade é leitura/gravação.
+Esta propriedade é de leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -92,7 +92,7 @@ Retornará **S \_ OK** se for bem-sucedido.
 
 ## <a name="remarks"></a>Comentários
 
-Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for Conexão Web de Área de Trabalho Remota](requirements-for-remote-desktop-web-connection.md).
+Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, consulte [Requirements for conexão Web de área de trabalho remota](requirements-for-remote-desktop-web-connection.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -104,7 +104,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 | Servidor mínimo com suporte<br/> | Windows Server 2008 R2<br/>                                                               |
 | Biblioteca de tipos<br/>             | <dl> <dt>MsTscAx.dll</dt> </dl>          |
 | DLL<br/>                      | <dl> <dt>MsTscAx.dll</dt> </dl>          |
-| IID<br/>                      | \_IMs IIDRdpClientAdvancedSettings é definido como 3c65b4ab-12b3-465b-acd4-b8dad3bff9e2<br/> |
+| IID<br/>                      | IID \_ IMsRdpClientAdvancedSettings é definido como 3c65b4ab-12B3-465b-acd4-b8dad3bff9e2<br/> |
 
 
 
@@ -133,7 +133,7 @@ Para obter mais informações sobre Conexão Web de Área de Trabalho Remota, co
 [**IMsRdpClientAdvancedSettings8**](imsrdpclientadvancedsettings8.md)
 </dt> <dt>
 
-[**Imsrdpclientadvancedsettings**](imsrdpclientadvancedsettings-interface.md)
+[**IMsRdpClientAdvancedSettings**](imsrdpclientadvancedsettings-interface.md)
 </dt> </dl>
 
  

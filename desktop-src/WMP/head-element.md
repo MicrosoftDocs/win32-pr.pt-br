@@ -1,9 +1,9 @@
 ---
 title: Elemento head
-description: O elemento head contém metadados que se aplica à playlist inteira.
+description: O elemento head contém metadados que se aplicam a toda a lista de reprodução.
 ms.assetid: 9554c84a-34af-4492-964a-4b262cd7c4a4
 keywords:
-- elemento head Windows Media Player
+- Elemento de cabeçalho Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -22,7 +22,7 @@ ms.locfileid: "118339160"
 ---
 # <a name="head-element"></a>Elemento head
 
-O **elemento head** contém metadados que se aplica à playlist inteira.
+O elemento **Head** contém metadados que se aplicam a toda a lista de reprodução.
 
 ``` syntax
 <head>
@@ -39,8 +39,8 @@ Esse elemento não tem atributos.
 
 | Hierarquia | Elementos                                                  |
 |-----------|-----------------------------------------------------------|
-| Pai    | [Smil](smil-element.md)                                  |
-| Filho     | [title](title-element--wpl.md), [meta](meta-element.md) |
+| Pai    | [SMIL](smil-element.md)                                  |
+| Filho     | [título](title-element--wpl.md), [meta](meta-element.md) |
 
 
 
@@ -48,7 +48,7 @@ Esse elemento não tem atributos.
 
 ## <a name="remarks"></a>Comentários
 
-Normalmente, o **elemento principal** contém um elemento **de título** e um ou mais **metadados** que definem características globais da playlist.
+Normalmente, o elemento **Head** contém um elemento **title** e um ou mais **meta** Elements que definem características globais da playlist.
 
 ## <a name="examples"></a>Exemplos
 
@@ -72,7 +72,7 @@ Normalmente, o **elemento principal** contém um elemento **de título** e um ou
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------|
-| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/> |
+| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/> |
 
 
 
@@ -80,13 +80,13 @@ Normalmente, o **elemento principal** contém um elemento **de título** e um ou
 
 <dl> <dt>
 
-[**elemento meta**](meta-element.md)
+[**Elemento meta**](meta-element.md)
 </dt> <dt>
 
-[**Elemento title (WPL)**](title-element--wpl.md)
+[**Elemento Title (WPL)**](title-element--wpl.md)
 </dt> <dt>
 
-[**Windows Referência de elementos da playlist de mídia**](windows-media-playlist-elements-reference.md)
+[**Windows Referência de elementos de playlist de mídia**](windows-media-playlist-elements-reference.md)
 </dt> </dl>
 
  
