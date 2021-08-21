@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo do EventType
+title: Tipo complexo EventType
 description: Define o nó raiz do esquema de evento.
 ms.assetid: 1ff9299b-71ee-4bb3-8a9a-fb9880dbf577
 keywords:
-- Log de eventos do tipo complexo do EventType
+- Tipo complexo EventType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 1103570b6c1d9f51a8cbe8fe5628460690fb32cf
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: da5948021c4a2db50776544c38adfa4ddc6e8ce5bcc1285c879ef528dec759e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369290"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119957896"
 ---
-# <a name="eventtype-complex-type"></a>Tipo complexo do EventType
+# <a name="eventtype-complex-type"></a>Tipo complexo EventType
 
 Define o nó raiz do esquema de evento.
 
@@ -76,19 +76,19 @@ Define o nó raiz do esquema de evento.
 
 | Elemento                                                                          | Type                                                                               | Descrição                                                                                                                                                                                                                                                                                                                              |
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**BinaryEventData**](eventschema-binaryeventdata-eventtype-element.md)         | hexBinary                                                                          | Contém os dados de evento como um blob binário. Os dados do evento são renderizados como um blob binário se a função de renderização não puder localizar os metadados usados para decodificar o evento.<br/>                                                                                                                                                            |
-| [**DebugData**](eventschema-debugdata-eventtype-element.md)                     | [**DebugDataType**](eventschema-debugdatatype-complextype.md)                     | Contém os dados que podem ser registrados para eventos de pré-processamento (pré-processador de rastreamento de software) do Windows.<br/>                                                                                                                                                                                                                                    |
-| [**EventData**](eventschema-eventdata-eventtype-element.md)                     | [**EventDataType**](eventschema-eventdatatype-complextype.md)                     | Contém os dados do evento. A ordem dos itens de dados no modelo determina o layout dos dados do evento.<br/>                                                                                                                                                                                                                 |
-| [**ProcessingErrorData**](eventschema-processingerrordata-eventtype-element.md) | [**ProcessingErrorDataType**](eventschema-processingerrordatatype-complextype.md) | Contém detalhes do erro que ocorreu ao tentar renderizar o evento. Isso pode ocorrer se os dados do evento não corresponderem à definição de dados do evento no manifesto. Os dados do evento são incluídos como um blob binário.<br/>                                                                                                         |
-| [**RenderingInfo**](eventschema-renderinginfo-eventtype-element.md)             | [**RenderingInfoType**](eventschema-renderingtype-complextype.md)                 | Contém as cadeias de caracteres de mensagem renderizadas para o evento (inclui a cadeia de mensagem do evento e as cadeias de mensagens para qualquer uma das propriedades do evento, como nível, tarefa e opcode). Somente os eventos que foram coletados usando o serviço [coletor de eventos do Windows](/windows/desktop/WEC/windows-event-collector) conterão esta seção.<br/> |
-| [**Sistema**](eventschema-system-eventtype-element.md)                           | [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md)       | Contém informações que identificam o provedor e como ele foi habilitado, o evento, o canal no qual o evento foi gravado e informações do sistema, como as IDs de processo e thread.<br/>                                                                                                                                   |
+| [**BinaryEventData**](eventschema-binaryeventdata-eventtype-element.md)         | Hexbinary                                                                          | Contém os dados de evento como um blob binário. Os dados do evento serão renderizados como um blob binário se a função de renderização não puder encontrar os metadados usados para decodificar o evento.<br/>                                                                                                                                                            |
+| [**DebugData**](eventschema-debugdata-eventtype-element.md)                     | [**DebugDataType**](eventschema-debugdatatype-complextype.md)                     | Contém os dados que podem ser registrados em Windows de pré-processador de rastreamento de software (WPP).<br/>                                                                                                                                                                                                                                    |
+| [**Eventdata**](eventschema-eventdata-eventtype-element.md)                     | [**EventDataType**](eventschema-eventdatatype-complextype.md)                     | Contém os dados do evento. A ordem dos itens de dados no modelo determina o layout dos dados do evento.<br/>                                                                                                                                                                                                                 |
+| [**ProcessingErrorData**](eventschema-processingerrordata-eventtype-element.md) | [**ProcessingErrorDataType**](eventschema-processingerrordatatype-complextype.md) | Contém detalhes do erro que ocorreu ao tentar renderizar o evento. Isso poderá ocorrer se os dados do evento não corresponderem à definição de dados de evento no manifesto. Os dados do evento são incluídos como um blob binário.<br/>                                                                                                         |
+| [**RenderingInfo**](eventschema-renderinginfo-eventtype-element.md)             | [**RenderingInfoType**](eventschema-renderingtype-complextype.md)                 | Contém as cadeias de caracteres de mensagem renderizadas para o evento (inclui a cadeia de caracteres de mensagem do evento e as cadeias de caracteres de mensagem para qualquer uma das propriedades do evento, como level, task e opcode). Somente os eventos que foram coletados usando o [Windows coletor de](/windows/desktop/WEC/windows-event-collector) eventos conterão esta seção.<br/> |
+| [**Sistema**](eventschema-system-eventtype-element.md)                           | [**SystemPropertiesType**](eventschema-systempropertiestype-complextype.md)       | Contém informações que identificam o provedor e como ele foi habilitado, o evento, o canal no qual o evento foi gravado e informações do sistema, como o processo e as IDs de thread.<br/>                                                                                                                                   |
 | [**UserData**](eventschema-userdata-eventtype-element.md)                       | [**UserDataType**](eventschema-userdatatype-complextype.md)                       | Contém os dados do evento. A seção de dados do usuário do modelo determina o layout dos dados do evento.<br/>                                                                                                                                                                                                                       |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Normalmente, esta seção conterá com a seção **EVENTDATA** ou **UserData** . A seção **EVENTDATA** será usada se o modelo não contiver uma seção **UserData** .
+Normalmente, esta seção conterá com a **seção EventData** ou **UserData.** A **seção EventData** será usada se o modelo não tiver uma **seção UserData.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -96,8 +96,8 @@ Normalmente, esta seção conterá com a seção **EVENTDATA** ou **UserData** .
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -17,12 +17,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1b90d068da3b8dca1bbcae361d1dbacafcf44464
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3993c3f3680dca46d2f880705fae44812a3bb5fd7a046084c1d818c3433ea7f1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918888"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082380"
 ---
 # <a name="iadsnametranslate-property-methods"></a>Métodos de propriedade IADsNameTranslate
 
@@ -75,7 +75,7 @@ A configuração padrão para a procura de referência está habilitada (o **ADS
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
+| Cabeçalho<br/>                   | <dl> <dt>IADs. h</dt> </dl>       |
 | DLL<br/>                      | <dl> <dt>Activeds.dll</dt> </dl> |
 | IID<br/>                      | IID \_ IADsNameTranslate é definido como B1B272A3-3625-11D1-A3A4-00C04FB950DC<br/>    |
 

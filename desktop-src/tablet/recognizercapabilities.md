@@ -13,18 +13,18 @@ api_type:
 - HeaderDef
 api_location:
 - IACom.h
-ms.openlocfilehash: b2471e77fec02900804de831fc1197c071b9f566
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 96e932b8e47f323198e1b0cc87da0df7839a593a76850c00c2c2e4d095854851
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105786285"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119091446"
 ---
 # <a name="recognizercapabilities-enumeration"></a>Enumeração RecognizerCapabilities
 
 Especifica os atributos de um [**IInkAnalysisRecognizer**](iinkanalysisrecognizer.md).
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 
 ```C++
@@ -200,9 +200,9 @@ Essa enumeração permite uma combinação de bit a bit de seus valores de membr
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Somente aplicativos de área de trabalho do Windows XP Tablet PC Edition \[\]<br/>                                                 |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do XP Tablet PC Edition\]<br/>                                                 |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                     |
-| parâmetro<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>IACom. h (também requer IACom \_ i. c)</dt> </dl> |
 
 
 

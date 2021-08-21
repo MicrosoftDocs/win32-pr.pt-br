@@ -1,10 +1,10 @@
 ---
-title: ACS-Max-token-taxa/atributo por fluxo
+title: ACS-Max-Token-taxa por Flow atributo
 description: A taxa máxima de token que qualquer fluxo individual pode ter para um determinado usuário.
 ms.assetid: 2898b7a6-f2b1-4e08-aba6-9e1ac655a4db
 ms.tgt_platform: multiple
 keywords:
-- ACS-Max-token-Rate-Taxa por fluxo de esquema do AD
+- ACS-Max-Token-Rate-taxa por Flow esquema de AD do atributo
 - Esquema de AD do atributo aCSMaxTokenRatePerFlow
 topic_type:
 - apiref
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b5165c20a27f7d1a389b9aada118d89786c015d2
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 33e3c4319345e47a90b09e5f101fec875fbd97dde7d704618f39fbbb76385e14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104009811"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119082070"
 ---
-# <a name="acs-max-token-rate-per-flow-attribute"></a>ACS-Max-token-taxa/atributo por fluxo
+# <a name="acs-max-token-rate-per-flow-attribute"></a>ACS-Max-Token-taxa por Flow atributo
 
 A taxa máxima de token que qualquer fluxo individual pode ter para um determinado usuário.
 
@@ -29,7 +29,7 @@ A taxa máxima de token que qualquer fluxo individual pode ter para um determina
 
 | Entrada | Valor |
 |-------------------|--------------------------------------|
-| CN                | ACS-Max-token-taxa por fluxo          |
+| CN                | ACS-Max-token-Rate por Flow          |
 | LDAP-Display-Name | aCSMaxTokenRatePerFlow               |
 | Tamanho              | 8 bytes                              |
 | Privilégio de atualização  | \-                                   |
@@ -58,7 +58,7 @@ A taxa máxima de token que qualquer fluxo individual pode ter para um determina
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -79,7 +79,7 @@ A taxa máxima de token que qualquer fluxo individual pode ter para um determina
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -100,7 +100,7 @@ A taxa máxima de token que qualquer fluxo individual pode ter para um determina
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -121,7 +121,7 @@ A taxa máxima de token que qualquer fluxo individual pode ter para um determina
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -142,7 +142,7 @@ A taxa máxima de token que qualquer fluxo individual pode ter para um determina
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |
@@ -163,7 +163,7 @@ A taxa máxima de token que qualquer fluxo individual pode ter para um determina
 | ID do link                | \-                                                                                                                                                      |
 | MAPI-Id                | \-                                                                                                                                                      |
 | System-Only            | Falso                                                                                                                                                   |
-| É de valor único       | True                                                                                                                                                    |
+| É de valor único       | Verdadeiro                                                                                                                                                    |
 | É indexado             | Falso                                                                                                                                                   |
 | No catálogo global      | Falso                                                                                                                                                   |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                            |

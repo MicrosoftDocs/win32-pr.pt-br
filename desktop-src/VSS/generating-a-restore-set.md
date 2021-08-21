@@ -4,12 +4,12 @@ ms.assetid: 3196c26c-3407-4c00-a800-c3497df583e5
 title: Gerando um conjunto de restauração
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: db3447ba6d258a5f22fff958761abc7ac0e4f27f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b85dd620869614420e5073f47ef4ac8732b1e2c0d0d218ea0e94ae690cb9f773
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958446"
 ---
 # <a name="generating-a-restore-set"></a>Gerando um conjunto de restauração
 

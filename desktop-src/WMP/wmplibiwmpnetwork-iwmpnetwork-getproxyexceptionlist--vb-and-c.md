@@ -3,9 +3,9 @@ title: Método IWMPNetwork getProxyExceptionList
 description: O método getProxyExceptionList retorna a lista de exceções de proxy.
 ms.assetid: 1b209d75-0fa7-420e-831c-160f3826cf3a
 keywords:
-- método getProxyExceptionList Windows Media Player
+- Windows Media Player do método getProxyExceptionList
 - método getProxyExceptionList Windows Media Player, interface IWMPNetwork
-- Interface IWMPNetwork Windows Media Player, método getProxyExceptionList
+- Windows Media Player de interface IWMPNetwork, método getProxyExceptionList
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 402e3b28d5423314b499213c9ddb02bca482d629
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 96434d4ea2341a8d33fcb9673898f4adca5eae7ace27eb7a7cafb9d482d74a53
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753901"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053534"
 ---
 # <a name="iwmpnetworkgetproxyexceptionlist-method"></a>Método IWMPNetwork:: getProxyExceptionList
 
@@ -60,7 +60,7 @@ Um **System. String** que é o nome do protocolo. Para obter uma lista de protoc
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Um **System. String** que é uma lista delimitada por ponto-e-vírgula de hosts para os quais o servidor proxy é ignorado. O valor é significativo somente quando **IWMPNetwork. getProxySettings** retorna um valor de 2 (use as configurações manuais).
 
@@ -74,7 +74,7 @@ Esse método falha a menos que o aplicativo de chamada esteja em execução no c
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código a seguir usa **getProxyExceptionList** para exibir se o Windows Media Player está definido para ignorar o servidor proxy para endereços locais. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
+o exemplo de código a seguir usa **getProxyExceptionList** para exibir se Windows Media Player está definido para ignorar o servidor proxy para endereços locais. O objeto **AxWMPLib. AxWindowsMediaPlayer** é representado pela variável chamada Player.
 
 
 ```CSharp

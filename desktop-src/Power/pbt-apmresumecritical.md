@@ -4,16 +4,16 @@ ms.assetid: f2997905-26c9-4884-ae79-64df5ce6bc55
 title: Evento de PBT_APMRESUMECRITICAL (WinUser. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3ef4a76e163f2e61e723f4df6572254e8ef89b40
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f13214a97e99954d0649df0647bdf6ee3823b91926c0f2f2dc1212fa780a7b6c
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105787470"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119961697"
 ---
 # <a name="pbt_apmresumecritical-event"></a>\_Evento PBT APMRESUMECRITICAL
 
-\[PBT \_ APMRESUMECRITICAL está disponível para uso nos sistemas operacionais especificados na seção requisitos. O suporte para esse evento foi removido no Windows Vista. Em vez disso, use [PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) .\]
+\[PBT \_ APMRESUMECRITICAL está disponível para uso nos sistemas operacionais especificados na seção requisitos. o suporte para esse evento foi removido no Windows Vista. Em vez disso, use [PBT \_ APMRESUMEAUTOMATIC](pbt-apmresumeautomatic.md) .\]
 
 Notifica os aplicativos de que o sistema retomou a operação. Esse evento pode indicar que alguns ou todos os aplicativos não receberam um evento [PBT \_ APMSUSPEND](pbt-apmsuspend.md) . Por exemplo, esse evento pode ser transmitido após uma suspensão crítica causada por uma bateria com falha.
 
@@ -69,7 +69,7 @@ Reservado deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
@@ -83,11 +83,11 @@ Como uma suspensão crítica ocorre sem notificação anterior, os recursos e os
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
 | Fim do suporte do cliente<br/>    | Windows XP<br/>                                                                                    |
 | Fim do suporte do servidor<br/>    | Windows Server 2003<br/>                                                                           |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
 
 
 

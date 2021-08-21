@@ -15,23 +15,23 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6bbed2cad9f9c7816d010a429b1db8eb5306fc1c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 71e5c60b07c7152cf52d1e2ab68925b181d4b356
+ms.sourcegitcommit: 9b5faa61c38b2d0c432b7f2dbee8c127b0e28a7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811509"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122467233"
 ---
 # <a name="jet_pstr"></a>JET_PSTR
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_pstr"></a>JET_PSTR
 
-O tipo de dados JET_PSTR contém uma cadeia de caracteres ASCII terminada em nulo (Char \* ).
+O JET_PSTR de dados contém uma cadeia de caracteres ASCII terminada em nulo (char \* ).
 
-**Windows Vista: a JET_PSTR** é introduzida no Windows Vista.
+**Windows Vista: JET_PSTR** é introduzido no Windows Vista.
 
 ```cpp
     typedef __nullterminated char *  JET_PSTR;
@@ -41,28 +41,11 @@ O tipo de dados JET_PSTR contém uma cadeia de caracteres ASCII terminada em nul
 
 JET_PSTR
 
-Terminação nula, Cadeia de caracteres ASCII (Char \* ).
+Cadeia de caracteres ASCII terminada em nulo (char \* ).
 
 ### <a name="requirements"></a>Requisitos
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
-</tr>
-</tbody>
-</table>
+
+| | | <p><strong>Cliente</strong></p> | <p>Requer Windows Vista.</p> | | <p><strong>Servidor</strong></p> | <p>Requer Windows Server 2008.</p> | | <p><strong>Cabeçalho</strong></p> | <p>Declarado em Esent.h.</p> | 
+
 

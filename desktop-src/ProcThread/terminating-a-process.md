@@ -4,12 +4,12 @@ ms.assetid: af24d157-2719-4052-8029-1eb8010047cc
 title: Finalizando um processo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2010f1d4332a575c8ee94cf1b0f196e00ba7fb9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 6d1a97b2b7342b67eaab72cae244b188df4cfeafbf2875d3bd62136ab6139748
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105778529"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120081296"
 ---
 # <a name="terminating-a-process"></a>Finalizando um processo
 

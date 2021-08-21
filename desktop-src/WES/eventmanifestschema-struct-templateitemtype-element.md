@@ -3,7 +3,7 @@ title: Elemento struct (TemplateItemType)
 description: Define uma estrutura que inclui um ou mais itens de dados que você deseja incluir com o evento. | Elemento struct (TemplateItemType)
 ms.assetid: 3da56e9b-70da-4b58-9261-76f24a6f3377
 keywords:
-- EventLog do elemento struct
+- Elemento struct EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,12 +13,12 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: a0cdb4682751ee236a8660a4cbc64e32290997d1
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 343b815657c13b0bdf0fdc01d3a8a9149d84e55daf79f8777db03c2e0524c586
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105763953"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119958226"
 ---
 # <a name="struct-templateitemtype-element"></a>Elemento struct (TemplateItemType)
 
@@ -30,7 +30,7 @@ Define uma estrutura que inclui um ou mais itens de dados que você deseja inclu
  />
 ```
 
-O elemento **struct** é definido pelo tipo complexo [**TemplateItemType**](eventmanifestschema-templateitemtype-complextype.md) .
+O **elemento struct** é definido pelo tipo complexo [**TemplateItemType.**](eventmanifestschema-templateitemtype-complextype.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -38,8 +38,8 @@ O elemento **struct** é definido pelo tipo complexo [**TemplateItemType**](even
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -50,7 +50,7 @@ O elemento **struct** é definido pelo tipo complexo [**TemplateItemType**](even
 **Elemento pai**
 </dt> <dt>
 
-[**modelo (TemplateListType)**](eventmanifestschema-template-templatelisttype-element.md)
+[**template (TemplateListType)**](eventmanifestschema-template-templatelisttype-element.md)
 </dt> </dl>
 
  

@@ -4,8 +4,8 @@ description: O tipo de serviço fornecido pelo MSMQ instalado neste servidor.
 ms.assetid: a4deb3de-e77c-4788-8719-c9573ddb8b91
 ms.tgt_platform: multiple
 keywords:
-- Esquema de MSMQ-Services do atributo AD
-- Esquema de AD do atributo mSMQservices
+- MSMQ-Services atributo AD Schema
+- Esquema do AD do atributo mSMQServices
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 48b40de9d10fe563ea5514cd1c773dbdfcb5f691
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e444fc2a9d27b4157218d3e51948d62eda13bb4649c4be3fc6e49c7d8ea6f350
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104086910"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081750"
 ---
 # <a name="msmq-services-attribute"></a>MSMQ-Services atributo
 
@@ -30,12 +30,12 @@ O tipo de serviço fornecido pelo MSMQ instalado neste servidor.
 | Entrada | Valor |
 |-------------------|--------------------------------------|
 | CN                | MSMQ-Services                        |
-| LDAP-Display-Name | mSMQServices                         |
+| Ldap-Display-Name | Msmqservices                         |
 | Tamanho              | \-                                   |
 | Privilégio de atualização  | \-                                   |
 | Frequência de atualização  | \-                                   |
 | Attribute-Id      | 1.2.840.113556.1.4.950               |
-| System-ID-GUID    | 9a0dc33d-c100-11d1-bbc5-0080c76670c0 |
+| System-Id-Guid    | 9a0dc33d-c100-11d1-football5-0080c76670c0 |
 | Syntax            | [**Enumeração**](s-enumeration.md) |
 
 
@@ -58,15 +58,15 @@ O tipo de serviço fornecido pelo MSMQ instalado neste servidor.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O tipo de serviço fornecido pelo MSMQ instalado neste servidor.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O tipo de serviço fornecido pelo MSMQ instalado neste servidor.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ O tipo de serviço fornecido pelo MSMQ instalado neste servidor.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ O tipo de serviço fornecido pelo MSMQ instalado neste servidor.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ O tipo de serviço fornecido pelo MSMQ instalado neste servidor.
 | ID do link                | \-                                                 |
 | MAPI-Id                | \-                                                 |
 | System-Only            | Falso                                              |
-| É de valor único       | True                                               |
+| Tem valor único       | Verdadeiro                                               |
 | É indexado             | Falso                                              |
-| No catálogo global      | Falso                                              |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                       |
+| No Catálogo Global      | Falso                                              |
+| Descritor de segurança NT | O:BAG:BAD:S:                                       |
 | Range-Lower            | \-                                                 |
 | Range-Upper            | \-                                                 |
 | Search-Flags           | 0x00000000                                         |
 | System-Flags           | 0x00000010                                         |
-| Classes usadas em        | [**Configurações do MSMQ**](c-msmqsettings.md)<br/> |
+| Classes usadas em        | [**MSMQ-Configurações**](c-msmqsettings.md)<br/> |
 
 
 

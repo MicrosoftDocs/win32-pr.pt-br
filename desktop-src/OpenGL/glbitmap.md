@@ -1,9 +1,9 @@
 ---
-title: função glBitmap (GL. h)
+title: Função glBitmap (Gl.h)
 description: A função glBitmap desenha um bitmap.
 ms.assetid: 3cd8e41b-016b-4610-833a-048b5e50ae7c
 keywords:
-- função glBitmap OpenGL
+- Função glBitmap OpenGL
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7aeb97bb16a1e3c4c29d1dfb1a5320c02f44404d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8da90b8e592f8cd9d1702c7810990042b3929ef40e70814e8fb7d3326d902cb4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009474"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120082226"
 ---
-# <a name="glbitmap-function"></a>função glBitmap
+# <a name="glbitmap-function"></a>Função glBitmap
 
-A função **glBitmap** desenha um bitmap.
+A **função glBitmap** desenha um bitmap.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -63,28 +63,28 @@ A altura de pixel da imagem de bitmap.
 *xorig* 
 </dt> <dd>
 
-O local *x* da origem na imagem de bitmap. A origem é medida do canto inferior esquerdo do bitmap, com direções para a direita e para cima sendo os eixos positivos.
+O *local x* da origem na imagem de bitmap. A origem é medida do canto inferior esquerdo do bitmap, com as direções para a direita e para cima sendo os eixos positivos.
 
 </dd> <dt>
 
 *yorig* 
 </dt> <dd>
 
-A localização *y* da origem na imagem de bitmap. A origem é medida do canto inferior esquerdo do bitmap, com direções para a direita e para cima sendo os eixos positivos.
+O *local y* da origem na imagem de bitmap. A origem é medida do canto inferior esquerdo do bitmap, com as direções para a direita e para cima sendo os eixos positivos.
 
 </dd> <dt>
 
 *xmove* 
 </dt> <dd>
 
-O deslocamento *x* a ser adicionado à posição de varredura atual após o bitmap ser desenhado.
+O *deslocamento x* a ser adicionado à posição de raster atual depois que o bitmap é desenhado.
 
 </dd> <dt>
 
 *ymove* 
 </dt> <dd>
 
-O deslocamento *y* a ser adicionado à posição de varredura atual após o bitmap ser desenhado.
+O *deslocamento y* a ser adicionado à posição de raster atual depois que o bitmap é desenhado.
 
 </dd> <dt>
 
@@ -101,52 +101,52 @@ Essa função não retorna um valor.
 
 ## <a name="error-codes"></a>Códigos do Erro
 
-Os códigos de erro a seguir podem ser recuperados pela função [**glGetError**](glgeterror.md) .
+Os códigos de erro a seguir podem ser recuperados pela [**função glGetError.**](glgeterror.md)
 
 
 
 | Nome                                                                                                  | Significado                                                                                                                               |
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| <dl> <dt>**\_valor inválido do GL \_**</dt> </dl>     | a *largura* ou a *altura* é negativa.<br/>                                                                                           |
-| <dl> <dt>**GL \_ operação inválida \_**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd**](glend.md).<br/> |
+| <dl> <dt>**VALOR INVÁLIDO DE GL \_ \_**</dt> </dl>     | *largura* ou *altura* é negativa.<br/>                                                                                           |
+| <dl> <dt>**OPERAÇÃO \_ GL \_ INVÁLIDA**</dt> </dl> | A função foi chamada entre uma chamada para [**glBegin**](glbegin.md) e a chamada correspondente para [**glEnd.**](glend.md)<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Um bitmap é uma imagem binária. Quando desenhado, o bitmap é posicionado em relação à posição atual da rasterização e os pixels de framebuffer correspondentes ao 1s no bitmap são gravados usando a cor ou índice de rasterização atual. Os pixels do buffer de quadros correspondentes a zeros no bitmap não são modificados.
+Um bitmap é uma imagem binária. Quando desenhado, o bitmap é posicionado em relação à posição de raster atual e os pixels de framebuffer correspondentes a 1s no bitmap são gravados usando a cor ou o índice de raster atual. Os pixels de buffer de quadro correspondentes a zeros no bitmap não são modificados.
 
-A imagem de bitmap é interpretada como dados de imagem para a função [**glDrawPixels**](gldrawpixels.md) , com *largura* e *altura* correspondentes aos argumentos de largura e altura dessa função, e com o *tipo* definido como bitmap GL \_ e o *formato* definido como o índice de \_ cores GL \_ . Os modos que você especifica usando [**glPixelStore**](glpixelstore-functions.md) afetam a interpretação de dados de imagem de bitmap; os modos que você especificar usando [**glPixelTransfer**](glpixeltransfer.md) não.
+A imagem de bitmap é interpretada como dados de imagem para  a  função [**glDrawPixels,**](gldrawpixels.md) com largura  e altura correspondentes aos argumentos de largura e altura dessa função e com o tipo definido como GL BITMAP e formato definido como \_ GL COLOR  \_ \_ INDEX. Os modos especificados usando [**glPixelStore afetam**](glpixelstore-functions.md) a interpretação de dados de imagem de bitmap; os modos que você especifica [**usando glPixelTransfer**](glpixeltransfer.md) não especificam.
 
-Se a posição atual da rasterização for inválida, **glBitmap** será ignorado. Caso contrário, o canto inferior esquerdo da imagem de bitmap será posicionado nas seguintes coordenadas da janela:
+Se a posição atual do raster for inválida, **glBitmap** será ignorado. Caso contrário, o canto inferior esquerdo da imagem de bitmap será posicionado nas seguintes coordenadas de janela:
 
 *x*<sub>w</sub>  =  *x*<sub>r</sub> *x*?
 
-*y*<sub>l</sub>  =  *y*<sub>r</sub> *y*?
+*y*<sub>w</sub>  =  *y*<sub>r</sub> *y*?
 
-Nessas coordenadas, (*x*<sub>r</sub> , *y*<sub>r</sub> ) é a posição da rasterização e (*x*? , *y*? ) é a origem do bitmap. Os fragmentos são então gerados para cada pixel correspondente a um 1 na imagem de bitmap. Esses fragmentos são gerados usando a coordenada *z* de rasterização atual, o índice de cor ou cor e as coordenadas de textura de rasterização atuais. Eles são tratados como se tivessem sido gerados por um ponto, uma linha ou um polígono, incluindo o mapeamento de textura, fogging e todas as operações por fragmento, como os testes alfa e Depth.
+Nessas coordenadas, (*x*<sub>r</sub> , *y*<sub>r</sub> ) é a posição de raster e (*x*? , *y*? ) é a origem do bitmap. Os fragmentos são gerados para cada pixel correspondente a um 1 na imagem de bitmap. Esses fragmentos são gerados usando o raster *z*-coordinate, color ou color index atual e as coordenadas de textura raster atuais. Em seguida, eles são tratados como se tivessem sido gerados por um ponto, linha ou polígono, incluindo mapeamento de textura, desaqueamento e todas as operações por fragmento, como teste alfa e profundidade.
 
-Depois que o bitmap tiver sido desenhado, as coordenadas *x* e *y* da posição de rasterização atual serão compensadas por *xmove* e *ymove*. Nenhuma alteração é feita na coordenada *z* da posição atual de rasterização ou nas coordenadas de cor de rasterização, índice ou textura atuais.
+Depois que o bitmap tiver sido desenhado, as coordenadas *x* e *y* da posição de raster atual serão deslocadas por *xmove* *e ymove.* Nenhuma alteração é feita na *coordenada z* da posição atual do raster ou nas coordenadas de cor, índice ou textura atuais.
 
-As funções a seguir recuperam informações relacionadas à função **glBitmap** :
+As funções a seguir recuperam informações relacionadas à **função glBitmap:**
 
-[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento \_ GL \_ posição de rasterização atual \_
-
- 
-
-**glGet** com o argumento \_ GL \_ cor de rasterização atual \_
+[**glGet**](glgetbooleanv--glgetdoublev--glgetfloatv--glgetintegerv.md) com o argumento GL \_ CURRENT \_ RASTER \_ POSITION
 
  
 
- \_ \_ índice de varredura atual glGet com Argument GL \_
+**glGet** com o argumento GL \_ CURRENT \_ RASTER \_ COLOR
 
  
 
-**glGet** com Argument GL \_ \_ textura de rasterização atual \_ \_ CoOrds
+**glGet** com o argumento GL \_ CURRENT \_ RASTER \_ INDEX
 
  
 
-**glGet** com Argument GL \_ \_ posição de rasterização atual \_ \_ válida
+**glGet com** argumento GL \_ CURRENT \_ RASTER TEXTURE \_ \_ COORDS
+
+ 
+
+**glGet com** o argumento GL \_ CURRENT \_ RASTER POSITION \_ \_ VALID
 
 ## <a name="requirements"></a>Requisitos
 
@@ -156,8 +156,8 @@ As funções a seguir recuperam informações relacionadas à função **glBitma
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                              |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                    |
-| Cabeçalho<br/>                   | <dl> <dt>GL. h</dt> </dl>         |
-| Biblioteca<br/>                  | <dl> <dt>Opengl32. lib</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Gl.h</dt> </dl>         |
+| Biblioteca<br/>                  | <dl> <dt>Opengl32.lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Opengl32.dll</dt> </dl> |
 
 

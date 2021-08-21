@@ -1,28 +1,28 @@
 ---
-description: O grafo está abrindo um arquivo ou terminou de abrir um arquivo.
+description: O grafo está abrindo um arquivo ou concluiu a abertura de um arquivo.
 ms.assetid: 352867e1-025f-4adb-be32-f7941c0ec8cf
-title: EC_OPENING_FILE (DShow. h)
+title: EC_OPENING_FILE (Dshow.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bf275a2f9b64f9a30c8049b5207622270edc5098
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 436a48a90640577504871dfe835d6c81c398680ae070065189cb4031493e7fc3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105758469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120079116"
 ---
-# <a name="ec_opening_file"></a>\_arquivo de abertura do EC \_
+# <a name="ec_opening_file"></a>ARQUIVO DE \_ ABERTURA \_ DE EC
 
-O grafo está abrindo um arquivo ou terminou de abrir um arquivo.
+O grafo está abrindo um arquivo ou concluiu a abertura de um arquivo.
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
-**True** se o grafo estiver começando a abrir um arquivo ou **false** se o grafo não estiver mais abrindo o arquivo.
+**TRUE** se o grafo estiver começando a abrir um arquivo ou **FALSE** se o grafo não estiver mais abrindo o arquivo.
 
 </dd> <dt>
 
@@ -39,7 +39,7 @@ Nenhum.
 
 ## <a name="remarks"></a>Comentários
 
-Um filtro pode enviar esse evento se ele gastar um tempo significativo abrindo um arquivo. (Por exemplo, o arquivo pode estar localizado em uma rede). O aplicativo pode usar esse evento para ajustar sua interface do usuário.
+Um filtro poderá enviar esse evento se ele gastar um tempo significativo abrindo um arquivo. (Por exemplo, o arquivo pode estar localizado em uma rede.) O aplicativo pode usar esse evento para ajustar sua interface do usuário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -47,7 +47,7 @@ Um filtro pode enviar esse evento se ele gastar um tempo significativo abrindo u
 
 | Requisito | Valor |
 |-------------------|------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>DShow. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dshow.h</dt> </dl> |
 
 
 
@@ -58,7 +58,7 @@ Um filtro pode enviar esse evento se ele gastar um tempo significativo abrindo u
 [Códigos de notificação de eventos](event-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  
