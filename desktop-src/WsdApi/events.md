@@ -1,7 +1,7 @@
 ---
 description: Especifica se os eventos relacionados estão incluídos nas funções geradas.
 ms.assetid: 23ca463c-b305-496b-a1e3-58dbb793f17e
-title: elemento Events
+title: elemento events
 ms.topic: reference
 ms.date: 05/31/2018
 ms.openlocfilehash: fea6d4d3c87ac15ee14864f7e12c419f13d97503eeab27d28c5bdec5dbcc1414
@@ -11,7 +11,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119049684"
 ---
-# <a name="events-element"></a>elemento Events
+# <a name="events-element"></a>elemento events
 
 Especifica se os eventos relacionados estão incluídos nas funções geradas.
 
@@ -38,8 +38,8 @@ Não há elementos filho.
 | [**functionDeclarations**](functiondeclarations.md)<br/>                 | Gera declarações de implementação para funções de proxy para operações de tipo de porta.<br/> <br/> |
 | [**idlFunctionDeclarations**](idlfunctiondeclarations.md)<br/>           | Gera declarações IDL para funções de proxy para operações de tipo de porta.<br/> <br/>            |
 | [**proxyFunctionImplementations**](proxyfunctionimplementations.md)<br/> | Gera implementações para funções de proxy para operações de tipo de porta.<br/> <br/>             |
-| [**stubDeclarations**](stubdeclarations.md)<br/>                         | Gera declarações para funções de stub para operações de tipo de porta.<br/> <br/>                 |
-| [**stubDefinitions**](stubdefinitions.md)<br/>                           | Gera implementações para funções de stub para operações de tipo de porta.<br/> <br/>              |
+| [**stubDeclarations**](stubdeclarations.md)<br/>                         | Gera declarações para funções stub para operações de tipo de porta.<br/> <br/>                 |
+| [**stubDefinitions**](stubdefinitions.md)<br/>                           | Gera implementações para funções stub para operações de tipo de porta.<br/> <br/>              |
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: External. appColorLight
-description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | External. appColorLight
+title: External.appColorLight
+description: Observação Este tópico descreve a funcionalidade projetada para uso por lojas online. | External.appColorLight
 ms.assetid: d0fae7c2-ccda-4141-997f-bf861e358ed0
 keywords:
-- Windows Media Player externo. appColorLight
+- External.appColorLight Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -14,21 +14,21 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 097b2a71cb8013bc4f39aaec86e7a5ac5bc71691
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 17db35cc1f683c581009135332c413c7c5e5379e3b3a1d9ad71abc8423f8c0cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105760069"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649596"
 ---
-# <a name="externalappcolorlight"></a>External. appColorLight
+# <a name="externalappcolorlight"></a>External.appColorLight
 
 > [!Note]  
 > Este tópico descreve a funcionalidade projetada para uso por lojas online. Não há suporte para o uso dessa funcionalidade fora do contexto de uma loja online.
 
  
 
-A propriedade **appColorLight** recupera a cor de sombreamento da luz atual da interface do usuário do Windows Media Player.
+A **propriedade appColorLight** recupera a cor sombreada à luz atual da Windows Media Player do usuário.
 
 ``` syntax
 window.external.appColorLight
@@ -37,11 +37,11 @@ window.external.appColorLight
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esta propriedade é uma **cadeia de caracteres** somente leitura.
+Essa propriedade é uma Cadeia de Caracteres somente **leitura.**
 
 ## <a name="remarks"></a>Comentários
 
-Os usuários podem alterar a cor da interface do usuário do Windows Media Player. Você pode usar essa propriedade para personalizar a aparência da sua página da web hospedada para corresponder ao Player.
+Os usuários podem alterar a cor da interface Windows Media Player usuário. Você pode usar essa propriedade para personalizar a aparência da página da Web hospedada para corresponder ao Player.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -49,7 +49,7 @@ Os usuários podem alterar a cor da interface do usuário do Windows Media Playe
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior.<br/>                                 |
+| Versão<br/> | Windows Media Player Série 9 ou posterior.<br/>                                 |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

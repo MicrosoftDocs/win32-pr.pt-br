@@ -1,5 +1,5 @@
 ---
-description: 'Permite que o objeto de retorno de chamada modifique um menu pop-up do Windows Explorer antes de ser exibido. Usado por IShellFolderViewCB:: MessageSFVCB.'
+description: 'permite que o objeto de retorno de chamada modifique um menu pop-up do Windows Explorer antes de ser exibido. Usado por IShellFolderViewCB:: MessageSFVCB.'
 title: Mensagem de SFVM_INITMENUPOPUP (shlobj. h)
 ms.topic: reference
 ms.date: 05/31/2018
@@ -13,16 +13,16 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: 1f9a2a169b232fe3ad16eeee8816536ed81c74dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fd69d19f753c1c72c1e0c143a0aface2cdb234cb2ace8c87d559834b97bbf0f3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104968221"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119592308"
 ---
 # <a name="sfvm_initmenupopup-message"></a>\_Mensagem SFVM INITMENUPOPUP
 
-Permite que o objeto de retorno de chamada modifique um menu pop-up do Windows Explorer antes de ser exibido. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
+permite que o objeto de retorno de chamada modifique um menu pop-up do Windows Explorer antes de ser exibido. Usado por [**IShellFolderViewCB:: MessageSFVCB**](/windows/win32/api/shlobj_core/nf-shlobj_core-ishellfolderviewcb-messagesfvcb).
 
 
 ```C++

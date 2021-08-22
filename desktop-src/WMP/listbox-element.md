@@ -3,19 +3,19 @@ title: Elemento LISTBOX
 description: Elemento LISTBOX
 ms.assetid: b83ba0cb-1838-494d-b4cb-55b4da18a038
 keywords:
-- Capas do Windows Media Player, elemento LISTBOX
+- Windows Media Player skins, elemento LISTBOX
 - elemento LISTBOX e skins
 - Elemento LISTBOX
 - referência para capas, elemento LISTBOX
 - elementos, LISTBOX
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b1d9566d11586e995b289a0048dacb29a91921b4
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 5b9108d8e252260a8aa7a2d9f654118d62ff84f0d53a6f80bc934323a1107ffe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005305"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054764"
 ---
 # <a name="listbox-element"></a>Elemento LISTBOX
 
@@ -44,7 +44,7 @@ O elemento **ListBox** dá suporte aos seguintes atributos.
 
 
 
- 
+ 
 
 O elemento **ListBox** dá suporte aos seguintes métodos.
 
@@ -66,12 +66,12 @@ O elemento **ListBox** dá suporte aos seguintes métodos.
 
 
 
- 
+ 
 
 > [!Note]  
-> Esse elemento requer o Windows Media Player para Windows XP ou posterior.
+> este elemento requer Windows Media Player para Windows XP ou posterior.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -83,9 +83,9 @@ O elemento **ListBox** dá suporte aos seguintes métodos.
 [**Referência de programação de capa**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

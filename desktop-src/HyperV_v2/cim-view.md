@@ -1,7 +1,7 @@
 ---
-description: A \_ classe de exibição CIM é uma superclasse para classes que fornecem representações de agregação desnormalizadas de recursos gerenciados.
+description: A classe Exibição CIM é uma superclasse para classes que fornecem representações de agregação \_ de recursos gerenciados des normalizadas.
 ms.assetid: 1e8e3c5f-3c27-4bfb-9f9b-b02936e0b4cf
-title: Classe CIM_View
+title: CIM_View classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 6d330a3ea2de2bda2a6713ae3b2413f6d388f03a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a74d4e4efb3fcc12d31554904368b0565d4cad21545effb5a5a7bbb1a9d6d704
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757152"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532796"
 ---
-# <a name="cim_view-class"></a>\_Classe de exibição CIM
+# <a name="cim_view-class"></a>Classe de \_ exibição CIM
 
-A classe de **\_ exibição CIM** é uma superclasse para classes que fornecem representações de agregação desnormalizadas de recursos gerenciados.
+A **classe \_ Exibição CIM** é uma superclasse para classes que fornecem representações de agregação de recursos gerenciados des normalizadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -35,7 +35,7 @@ class CIM_View : CIM_ManagedElement
 
 ## <a name="members"></a>Membros
 
-A classe de **\_ exibição CIM** não define nenhum membro.
+A **classe \_ Exibição CIM** não define nenhum membro.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -43,10 +43,10 @@ A classe de **\_ exibição CIM** não define nenhum membro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 
@@ -55,7 +55,7 @@ A classe de **\_ exibição CIM** não define nenhum membro.
 
 <dl> <dt>
 
-[**\_Managedelement do CIM**](cim-managedelement.md)
+[**ManagedElement do CIM \_**](cim-managedelement.md)
 </dt> </dl>
 
  

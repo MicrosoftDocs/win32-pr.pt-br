@@ -1,11 +1,11 @@
 ---
-title: Método Network. getProxySettings
+title: Método Network.getProxySettings
 description: O método getProxySettings recupera a configuração de proxy para um determinado protocolo.
 ms.assetid: a7b21eab-93e1-458b-aab0-60fd298cce44
 keywords:
-- Windows Media Player do método getProxySettings
-- método getProxySettings Windows Media Player, classe de rede
-- classe de rede Windows Media Player, método getProxySettings
+- Método getProxySettings Windows Media Player
+- Método getProxySettings Windows Media Player , classe network
+- Classe de Windows Media Player , método getProxySettings
 topic_type:
 - apiref
 api_name:
@@ -23,9 +23,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119647436"
 ---
-# <a name="networkgetproxysettings-method"></a>Método Network. getProxySettings
+# <a name="networkgetproxysettings-method"></a>Método Network.getProxySettings
 
-O método **getProxySettings** recupera a configuração de proxy para um determinado protocolo.
+O **método getProxySettings** recupera a configuração de proxy para um determinado protocolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -42,23 +42,23 @@ retVal = Network.getProxySettings(
 
 <dl> <dt>
 
-*protocolo* \[ do no\]
+*protocolo* \[ Em\]
 </dt> <dd>
 
-**Cadeia de caracteres** que especifica o nome do protocolo. Para obter uma lista de protocolos com suporte, consulte [protocolos e tipos de arquivos com suporte](supported-protocols-and-file-types.md).
+**Cadeia de** caracteres que especifica o nome do protocolo. Para ver uma lista de protocolos com suporte, consulte [Protocolos com suporte e tipos de arquivo](supported-protocols-and-file-types.md).
 
 </dd> </dl>
 
 ## <a name="return-value"></a>Valor retornado
 
-Esse método retorna um **número** (**Long**) contendo um dos valores a seguir.
+Esse método retorna um **Número** (**longo**) que contém um dos valores a seguir.
 
 
 
 | Valor | Descrição                                                                      |
 |-------|----------------------------------------------------------------------------------|
 | 0     | Um servidor proxy não está sendo usado.                                                |
-| 1     | As configurações de proxy para o navegador atual estão sendo usadas (válida somente para HTTP). |
+| 1     | As configurações de proxy para o navegador atual estão sendo usadas (válidas somente para HTTP). |
 | 2     | As configurações de proxy especificadas manualmente estão sendo usadas.                            |
 | 3     | As configurações de proxy estão sendo detectadas automaticamente.                                      |
 
@@ -68,13 +68,13 @@ Esse método retorna um **número** (**Long**) contendo um dos valores a seguir.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método falha a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
+Esse método falha, a menos que o aplicativo de chamada esteja em execução no computador local ou na intranet.
 
 **Windows Media Player 10 Mobile:** Não há suporte para esse método.
 
 ## <a name="examples"></a>Exemplos
 
-o exemplo a seguir JScript usa a *rede*. **getProxySettings** para exibir uma mensagem, que fornece informações sobre as configurações de proxy atuais do Player, na janela do navegador. O objeto de **jogador** foi criado com ID = "Player".
+O exemplo JScript a seguir usa *Rede*. **getProxySettings** para exibir uma mensagem, que fornece informações sobre as configurações de proxy atuais do Player, na janela do navegador. O **objeto** Player foi criado com ID = "Player".
 
 
 ```JScript
@@ -114,7 +114,7 @@ case 3:
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior.<br/>                              |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior.<br/>                              |
 | DLL<br/>     | <dl> <dt>Wmp.dll</dt> </dl> |
 
 

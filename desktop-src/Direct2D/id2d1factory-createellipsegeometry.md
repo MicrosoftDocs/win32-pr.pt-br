@@ -1,9 +1,9 @@
 ---
-title: Métodos createellipsegeometry ID2D1Factory (D2d1. h)
-description: Cria um ID2D1EllipseGeometry.
+title: Métodos ID2D1Factory CreateEllipseGeometry (D2d1.h)
+description: Cria uma ID2D1EllipseGeometry.
 ms.assetid: 4c03bb0b-74fe-456a-aa26-5449d758c0ea
 keywords:
-- Métodos createellipsegeometry Direct2D
+- Métodos CreateEllipseGeometry Direct2D
 topic_type:
 - apiref
 api_location:
@@ -19,9 +19,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119259107"
 ---
-# <a name="id2d1factorycreateellipsegeometry-methods"></a>Métodos ID2D1Factory:: createellipsegeometry
+# <a name="id2d1factorycreateellipsegeometry-methods"></a>Métodos ID2D1Factory::CreateEllipseGeometry
 
-Cria um [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry).
+Cria um [**ID2D1EllipseGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry)
 
 ### <a name="overload-list"></a>Lista de sobrecargas
 
@@ -29,14 +29,14 @@ Cria um [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipseg
 
 | Método                                                                                                                                                      | Descrição                                                                  |
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------|
-| [**Createellipsegeometry (D2D1 \_ ELLIPSE&, ID2D1EllipseGeometry \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createellipsegeometry(constd2d1_ellipse__id2d1ellipsegeometry))  | Cria um [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry). <br/> |
-| [**Createellipsegeometry ( \_ elipse d2d1 \* , ID2D1EllipseGeometry \* \* )**](/previous-versions/windows/desktop/legacy/dd371265(v=vs.85)) | Cria um [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry). <br/> |
+| [**CreateEllipseGeometry(D2D1 \_ ELLIPSE&,ID2D1EllipseGeometry \* \* )**](/windows/win32/api/d2d1/nf-d2d1-id2d1factory-createellipsegeometry(constd2d1_ellipse__id2d1ellipsegeometry))  | Cria um [**ID2D1EllipseGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) <br/> |
+| [**CreateEllipseGeometry(D2D1 \_ ELLIPSE, \* ID2D1EllipseGeometry \* \* )**](/previous-versions/windows/desktop/legacy/dd371265(v=vs.85)) | Cria um [**ID2D1EllipseGeometry.**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) <br/> |
 
 
 
 ## <a name="examples"></a>Exemplos
 
-O seguinte cria dois objetos [**ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) e os combina usando os diferentes modos de combinação de geometria.
+O exemplo a seguir [**cria dois objetos ID2D1EllipseGeometry**](/windows/win32/api/d2d1/nn-d2d1-id2d1ellipsegeometry) e os combina usando os diferentes modos de combinação de geometria.
 
 
 ```C++
@@ -202,7 +202,7 @@ HRESULT DemoApp::CreateGeometryResources()
 
 Esse código produz a saída mostrada na ilustração a seguir.
 
-![ilustração de duas elipses combinadas usando quatro modos de combinação de geometria (Union, Intersect, Xor e Exclude)](images/combine-modes.png)
+![ilustração de duas reellipses combinadas usando quatro modos de combinação de geometria (união, interseção, xor e exclusão)](images/combine-modes.png)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -210,8 +210,8 @@ Esse código produz a saída mostrada na ilustração a seguir.
 
 | Requisito | Valor |
 |--------------------|-------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D2d1. h</dt> </dl>   |
-| Biblioteca<br/> | <dl> <dt>D2d1. lib</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>D2d1.h</dt> </dl>   |
+| Biblioteca<br/> | <dl> <dt>D2d1.lib</dt> </dl> |
 | DLL<br/>     | <dl> <dt>D2d1.dll</dt> </dl> |
 
 

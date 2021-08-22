@@ -15,21 +15,21 @@ api_type:
 - COM
 api_location: ''
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: e2eae9590d0151bcdb2dc5621ae6df9e41e068a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: fabc6b68d42765e2ad5551c8934a321e64933c4c1b472fb23158537c33af92ab
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105784993"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119615786"
 ---
 # <a name="jet_tableid"></a>JET_TABLEID
 
 
-_**Aplica-se a:** Windows | Windows Server_
+_**Aplica-se a:** Windows | Windows Servidor_
 
 ## <a name="jet_tableid"></a>JET_TABLEID
 
-O tipo de dados JET_TABLEID contém um identificador para o cursor de banco de dado a ser usado para uma chamada para a API do JET. Um cursor só pode ser usado com a sessão que foi usada para abrir esse cursor.
+O JET_TABLEID de dados contém um identificador para o cursor de banco de dados a ser usado para uma chamada à API jet. Um cursor só pode ser usado com a sessão que foi usada para abrir esse cursor.
 
 ```cpp
     typedef JET_API_PTR JET_TABLEID;
@@ -39,11 +39,11 @@ O tipo de dados JET_TABLEID contém um identificador para o cursor de banco de d
 
 JET_TABLEID
 
-**Nulo** ou [JET_tableidNil](./invalid-handle-constants.md) pode ser usado para indicar um identificador de cursor inválido.
+NULL **ou** [JET_tableidNil](./invalid-handle-constants.md) pode ser usado para indicar um alça de cursor inválido.
 
 ### <a name="remarks"></a>Comentários
 
-Um cursor gerencia o uso de uma tabela para o mecanismo de banco de dados. Um cursor pode executar as seguintes tarefas:
+Um cursor gerencia o uso de uma tabela para o mecanismo de banco de dados. Um cursor pode realizar as seguintes tarefas:
 
   - Verificar registros
 
@@ -55,9 +55,9 @@ Um cursor gerencia o uso de uma tabela para o mecanismo de banco de dados. Um cu
 
   - Modificar o esquema da tabela
 
-A funcionalidade com suporte do cursor pode mudar à medida que o status ou o tipo da tabela subjacente é alterado. Por exemplo, uma tabela temporária pode não permitir a pesquisa de dados quando ela é aberta com determinadas opções. O cursor sempre está totalmente conectado à tabela subjacente e interage com esses dados diretamente sem qualquer cache. Quase todas as funcionalidades de ISAM principais que são expostas por esse mecanismo de banco de dados funcionam com o cursor.
+A funcionalidade com suporte do cursor pode mudar conforme o status ou o tipo da tabela subjacente muda. Por exemplo, uma tabela temporária pode não permitir a pesquisa de dados quando ela é aberta com determinadas opções. O cursor está sempre totalmente conectado à tabela subjacente e interage com esses dados diretamente sem nenhum cache. Quase toda a funcionalidade principal do ISAM exposta por esse mecanismo de banco de dados funciona por meio do cursor.
 
-Um cursor pode ser criado usando [JetOpenTable](./jetopentable-function.md) ou [JetOpenTempTable](./jetopentemptable-function.md). Um cursor pode ser duplicado usando [JetDupCursor](./jetdupcursor-function.md). Um cursor pode ser fechado explicitamente usando [JetCloseTable](./jetclosetable-function.md) ou implicitamente fechado usando [JetEndSession](./jetendsession-function.md) ou [JetTerm](./jetterm-function.md). Um cursor também pode ser fechado implicitamente pelo [JetRollback](./jetrollback-function.md) se ele foi aberto na transação que foi anulada. O número máximo de cursores que podem ser criados a qualquer momento é controlado por [JET_paramMaxCursors](./resource-parameters.md), que pode ser configurado usando [JetSetSystemParameter](./jetsetsystemparameter-function.md).
+Um cursor pode ser criado usando [JetOpenTable](./jetopentable-function.md) ou [JetOpenTempTable.](./jetopentemptable-function.md) Um cursor pode ser duplicado usando [JetDupCursor](./jetdupcursor-function.md). Um cursor pode ser fechado explicitamente usando [JetCloseTable](./jetclosetable-function.md) ou implicitamente fechado usando [JetEndSession](./jetendsession-function.md) ou [JetTerm](./jetterm-function.md). Um cursor também poderá ser fechado implicitamente pelo [JetRollback](./jetrollback-function.md) se ele tiver sido aberto na transação que foi anulada. O número máximo de cursores que podem ser criados a qualquer momento é controlado por [JET_paramMaxCursors](./resource-parameters.md), que pode ser configurado usando [JetSetSystemParameter](./jetsetsystemparameter-function.md).
 
 ### <a name="requirements"></a>Requisitos
 
@@ -69,15 +69,15 @@ Um cursor pode ser criado usando [JetOpenTable](./jetopentable-function.md) ou [
 <tbody>
 <tr class="odd">
 <td><p><strong>Cliente</strong></p></td>
-<td><p>Requer o Windows Vista, o Windows XP ou o Windows 2000 Professional.</p></td>
+<td><p>Requer Windows Vista, Windows XP ou Windows 2000 Professional.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Servidor</strong></p></td>
-<td><p>Requer o Windows Server 2008, o Windows Server 2003 ou o Windows 2000 Server.</p></td>
+<td><p>Requer Windows Server 2008, Windows Server 2003 ou Windows 2000 Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cabeçalho</strong></p></td>
-<td><p>Declarado em ESENT. h.</p></td>
+<td><p>Declarado em Esent.h.</p></td>
 </tr>
 </tbody>
 </table>

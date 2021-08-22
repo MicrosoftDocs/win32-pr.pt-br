@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Enumeração LegacyFileNames'
-title: Enumeração LegacyFileNames (Microsoft. ISAM. ESENT. Interop. vista)
+description: 'Saiba mais sobre: enumeração LegacyFileNames'
+title: Enumeração LegacyFileNames (Microsoft.Isam.Esent.Interop.Vista)
 TOCTitle: LegacyFileNames enumeration
 ms:assetid: T:Microsoft.Isam.Esent.Interop.Vista.LegacyFileNames
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.vista.legacyfilenames(v=EXCHG.10)
@@ -28,19 +28,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: d7f3cade11450bcfbad13dcdd114dca6701c5369
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 8265724c8f69cc9b8e90e6f2d7c777940aa1251ac99f436b9976e2a3c13f03fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921012"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119614566"
 ---
 # <a name="legacyfilenames-enumeration"></a>Enumeração LegacyFileNames
 
 Opções para LegacyFileNames
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -69,12 +69,12 @@ public enum LegacyFileNames
 <tr class="odd">
 <td></td>
 <td>ESE98FileNames</td>
-<td>Quando essa opção estiver presente, o mecanismo de banco de dados usará as seguintes convenções de nomenclatura para seus arquivos: o arquivos de log de transações usarão. LOG para sua extensão de arquivo o que os arquivos de ponto de verificação usarão. CHK para sua extensão de arquivo</td>
+<td>Quando essa opção estiver presente, o mecanismo de banco de dados usará as seguintes convenções de nomenização para seus arquivos: o os arquivos de Log de Transações usarão . LOG para sua extensão de arquivo os arquivos de ponto de verificação usarão . CHK para sua extensão de arquivo</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>EightDotThreeSoftCompat</td>
-<td>Preserve a sintaxe de nomenclatura 8,3 o mais longo possível. (isso não deve ser alterado, o que garante que não haja arquivos de log)</td>
+<td>Preservar a sintaxe de nomen entre 8.3 e o máximo possível. (isso não deve ser alterado, garantindo que não haja arquivos de log)</td>
 </tr>
 </tbody>
 </table>
@@ -84,4 +84,4 @@ public enum LegacyFileNames
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop. vista](./microsoft.isam.esent.interop.vista-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Vista](./microsoft.isam.esent.interop.vista-namespace.md)

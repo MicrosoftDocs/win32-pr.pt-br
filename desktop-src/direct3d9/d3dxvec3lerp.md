@@ -1,7 +1,7 @@
 ---
 description: Executa uma interpolação linear entre dois vetores 3D.
 ms.assetid: f3f06f1b-8824-47f0-b2ed-c212fa4c3225
-title: Função D3DXVec3Lerp (D3dx9math.h)
+title: Função D3DXVec3Lerp (D3dx9math. h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -43,37 +43,37 @@ D3DXVECTOR3* D3DXVec3Lerp(
 
 <dl> <dt>
 
-*pOut* \[ in, out\]
+*pout* \[ entrada, saída\]
 </dt> <dd>
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Ponteiro para a [**estrutura D3DXVECTOR3**](d3dxvector3.md) que é o resultado da operação.
+Ponteiro para a estrutura [**D3DXVECTOR3**](d3dxvector3.md) que é o resultado da operação.
 
 </dd> <dt>
 
-*pV1* \[ Em\]
+*pV1* \[ no\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3 de**](d3dxvector3.md) origem.
+Ponteiro para uma estrutura de [**D3DXVECTOR3**](d3dxvector3.md) de origem.
 
 </dd> <dt>
 
-*pV2* \[ Em\]
+*pV2* \[ no\]
 </dt> <dd>
 
 Tipo: **const [**D3DXVECTOR3**](d3dxvector3.md) \***
 
-Ponteiro para uma estrutura [**D3DXVECTOR3 de**](d3dxvector3.md) origem.
+Ponteiro para uma estrutura de [**D3DXVECTOR3**](d3dxvector3.md) de origem.
 
 </dd> <dt>
 
 *s* \[ em\]
 </dt> <dd>
 
-Tipo: **[ **FLOAT**](../winprog/windows-data-types.md)**
+Tipo: **[ **float**](../winprog/windows-data-types.md)**
 
 Parâmetro que interpola linearmente entre os vetores.
 
@@ -83,13 +83,13 @@ Parâmetro que interpola linearmente entre os vetores.
 
 Tipo: **[ **D3DXVECTOR3**](d3dxvector3.md)\***
 
-Ponteiro para uma [**estrutura D3DXVECTOR3**](d3dxvector3.md) que é o resultado da interpolação linear.
+Ponteiro para uma estrutura [**D3DXVECTOR3**](d3dxvector3.md) que é o resultado da interpolação linear.
 
 ## <a name="remarks"></a>Comentários
 
-Essa função executa a interpolação linear com base na seguinte fórmula: V1 + s(V2-V1).
+Essa função executa a interpolação linear com base na seguinte fórmula: v1 + s (v2-v1).
 
-O valor retornado para essa função é o mesmo valor retornado no *parâmetro pOut.* Dessa forma, a **função D3DXVec3Lerp** pode ser usada como um parâmetro para outra função.
+O valor de retorno para essa função é o mesmo valor retornado no parâmetro *pout* . Dessa forma, a função **D3DXVec3Lerp** pode ser usada como um parâmetro para outra função.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -97,8 +97,8 @@ O valor retornado para essa função é o mesmo valor retornado no *parâmetro p
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9math.h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9math. h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
 
 
 

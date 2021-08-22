@@ -1,7 +1,7 @@
 ---
-description: Descreve os aspectos virtuais de um sistema virtual por meio de um conjunto de propriedades específicas de virtualização. \_O CIM VirtualSystemSettingData também é usado como a classe de nível superior das configurações do sistema virtual.
+description: Descreve os aspectos virtuais de um sistema virtual por meio de um conjunto de propriedades específicas da virtualização. O CIM \_ VirtualSystemSettingData também é usado como a classe de nível superior das configurações do sistema virtual.
 ms.assetid: 501e659d-f190-41f9-aafa-447048a60e7c
-title: Classe CIM_VirtualSystemSettingData
+title: CIM_VirtualSystemSettingData classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -37,9 +37,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119068486"
 ---
-# <a name="cim_virtualsystemsettingdata-class"></a>\_Classe CIM VirtualSystemSettingData
+# <a name="cim_virtualsystemsettingdata-class"></a>Classe CIM \_ VirtualSystemSettingData
 
-Descreve os aspectos virtuais de um sistema virtual por meio de um conjunto de propriedades específicas de virtualização. **CIM \_ O VirtualSystemSettingData** também é usado como a classe de nível superior das configurações do sistema virtual.
+Descreve os aspectos virtuais de um sistema virtual por meio de um conjunto de propriedades específicas da virtualização. **CIM \_ VirtualSystemSettingData** também é usado como a classe de nível superior de configurações do sistema virtual.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -69,26 +69,26 @@ class CIM_VirtualSystemSettingData : CIM_SettingData
 
 ## <a name="members"></a>Membros
 
-A classe **CIM \_ VirtualSystemSettingData** tem estes tipos de membros:
+A **classe CIM \_ VirtualSystemSettingData** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **CIM \_ VirtualSystemSettingData** tem essas propriedades.
+A **classe CIM \_ VirtualSystemSettingData** tem essas propriedades.
 
 <dl> <dt>
 
 **AutomaticRecoveryAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A ação a ser tomada para o sistema virtual quando o software executado pelo sistema virtual falha. As falhas abordadas por essa propriedade incluem apenas aquelas que podem ser detectadas pela plataforma de host, como uma condição de estado de espera não passível de interrupção.
+A ação a ser tomada para o sistema virtual quando o software executado pelo sistema virtual falhar. As falhas resolvidas por essa propriedade incluem apenas aquelas detectáveis pela plataforma de host, como uma condição de estado de espera não interruptível.
 
 <dt>
 
@@ -108,14 +108,14 @@ A ação a ser tomada para o sistema virtual quando o software executado pelo si
 
 <span id="Revert_to_snapshot"></span><span id="revert_to_snapshot"></span><span id="REVERT_TO_SNAPSHOT"></span>
 
-**Reverter para instantâneo** (4)
+**Reverter para o instantâneo** (4)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -125,7 +125,7 @@ A ação a ser tomada para o sistema virtual quando o software executado pelo si
 **AutomaticShutdownAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -137,7 +137,7 @@ A ação a ser tomada para o sistema virtual quando o host é desligado.
 
 <span id="Turn_Off"></span><span id="turn_off"></span><span id="TURN_OFF"></span>
 
-**Desligar (2** )
+**Desligar** (2)
 
 
 </dt> <dd></dd> <dt>
@@ -158,7 +158,7 @@ A ação a ser tomada para o sistema virtual quando o host é desligado.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -168,7 +168,7 @@ A ação a ser tomada para o sistema virtual quando o host é desligado.
 **AutomaticStartupAction**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -187,7 +187,7 @@ A ação a ser tomada no sistema virtual quando o host é iniciado.
 
 <span id="Restart_if_previously_active"></span><span id="restart_if_previously_active"></span><span id="RESTART_IF_PREVIOUSLY_ACTIVE"></span>
 
-**Reiniciar se anteriormente ativo** (3)
+**Reiniciar se estiver ativo anteriormente** (3)
 
 
 </dt> <dd></dd> <dt>
@@ -201,7 +201,7 @@ A ação a ser tomada no sistema virtual quando o host é iniciado.
 
 <span id="DMTF_Reserved"></span><span id="dmtf_reserved"></span><span id="DMTF_RESERVED"></span>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 
 
 </dt> <dd></dd> </dl>
@@ -211,26 +211,26 @@ A ação a ser tomada no sistema virtual quando o host é iniciado.
 **AutomaticStartupActionDelay**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O atraso para a ação de inicialização. Esse valor é uma variante de intervalo do tipo de dados **DateTime** .
+O atraso para a ação de inicialização. Esse valor é uma variante de intervalo do **tipo de dados datetime.**
 
 </dd> <dt>
 
 **AutomaticStartupActionSequenceNumber**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O número de sequência para ativação do sistema virtual quando o sistema host é iniciado. Um número mais baixo indica ativação anterior. Se uma ou mais configurações mostrarem o mesmo valor, a sequência será dependente da implementação. Um valor de "0" indica que a sequência é dependente de implementação.
+O número de sequência para ativação do sistema virtual quando o sistema host é iniciado. Um número inferior indica a ativação anterior. Se uma ou mais configurações mostrarem o mesmo valor, a sequência dependerá da implementação. Um valor de "0" indica que a sequência depende da implementação.
 
 </dd> <dt>
 
@@ -243,11 +243,11 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O caminho do arquivo do diretório em que as informações sobre a configuração do sistema virtual são armazenadas. O formato dessa propriedade é um URI baseado em RFC 2079.
+O caminho do arquivo do diretório em que as informações sobre a configuração do sistema virtual são armazenadas. O formato dessa propriedade é um URI baseado no RFC 2079.
 
 </dd> <dt>
 
-**ConfigurationFile**
+**Configurationfile**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -256,7 +256,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O caminho relativo do arquivo em que as informações sobre a configuração do sistema virtual são armazenadas. O caminho relativo é acrescentado ao valor da propriedade **ConfigurationDataRoot** . O formato dessa propriedade é um URI baseado em RFC 2079.
+O caminho relativo do arquivo em que as informações sobre a configuração do sistema virtual são armazenadas. O caminho relativo é anexado ao valor da **propriedade ConfigurationDataRoot.** O formato dessa propriedade é um URI baseado no RFC 2079.
 
 </dd> <dt>
 
@@ -272,16 +272,16 @@ Tipo de acesso: Somente leitura
 A ID exclusiva da configuração do sistema virtual.
 
 > [!Note]  
-> **ConfigurationId** é diferente da **InstanceId** e é atribuída pela implementação a um sistema virtual ou a uma configuração de sistema virtual. **ConfigurationId** não é uma chave e o mesmo valor pode ocorrer para mais de uma instância.
+> **ConfigurationID** é diferente da **InstanceID** e é atribuída pela implementação a um sistema virtual ou uma configuração de sistema virtual. **ConfigurationID** não é uma chave e o mesmo valor pode ocorrer para mais de uma instância.
 
  
 
 </dd> <dt>
 
-**CreationTime**
+**Creationtime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -300,24 +300,24 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O caminho de arquivo relativo do diretório onde as informações de log para o sistema virtual são armazenadas. O caminho relativo é acrescentado ao valor da propriedade **ConfigurationDataRoot** . O formato dessa propriedade é um URI baseado em RFC 2079.
+O caminho do arquivo relativo do diretório em que as informações de log do sistema virtual são armazenadas. O caminho relativo é anexado ao valor da **propriedade ConfigurationDataRoot.** O formato dessa propriedade é um URI baseado no RFC 2079.
 
 </dd> <dt>
 
 **Observações**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma matriz que contém notas fornecidas pelo usuário que estão relacionadas ao sistema virtual.
+Uma matriz que contém observações fornecidas pelo usuário relacionadas ao sistema virtual.
 
 </dd> <dt>
 
-**Recuperação de**
+**RecoveryFile**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -326,7 +326,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O caminho do arquivo em que as informações relacionadas à recuperação do sistema virtual são armazenadas. O formato dessa propriedade é um URI baseado em RFC 2079.
+O caminho do arquivo em que as informações relacionadas à recuperação do sistema virtual são armazenadas. O formato dessa propriedade é um URI baseado no RFC 2079.
 
 </dd> <dt>
 
@@ -339,7 +339,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O caminho relativo do diretório em que as informações sobre instantâneos do sistema virtual são armazenadas. O caminho relativo é acrescentado ao valor da propriedade **ConfigurationDataRoot** . O formato dessa propriedade é um URI baseado em RFC 2079.
+O caminho relativo do diretório em que as informações sobre instantâneos do sistema virtual são armazenadas. O caminho relativo é anexado ao valor da **propriedade ConfigurationDataRoot.** O formato dessa propriedade é um URI baseado no RFC 2079.
 
 </dd> <dt>
 
@@ -352,7 +352,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O caminho relativo do diretório em que as informações relacionadas à suspensão do sistema virtual são armazenadas. O caminho relativo é acrescentado ao valor da propriedade **ConfigurationDataRoot** . O formato dessa propriedade é um URI baseado em RFC 2079.
+O caminho relativo do diretório em que as informações relacionadas de suspensão sobre o sistema virtual são armazenadas. O caminho relativo é anexado ao valor da **propriedade ConfigurationDataRoot.** O formato dessa propriedade é um URI baseado no RFC 2079.
 
 </dd> <dt>
 

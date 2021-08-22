@@ -1,11 +1,11 @@
 ---
-title: Atributo System-deve-conter
+title: Atributo System-Must-Contain
 description: A lista de atributos obrigatórios para uma classe. Esses atributos devem ser especificados quando uma instância da classe é criada. A lista de atributos só pode ser modificada pelo sistema.
 ms.assetid: 5131bd16-1a8d-4d4a-98e4-6140438c6517
 ms.tgt_platform: multiple
 keywords:
-- Sistema-deve conter o atributo AD Schema
-- Esquema de AD do atributo systemMustContain
+- Esquema do AD do atributo System-Must-Contain
+- Esquema do AD do atributo systemMustContain
 topic_type:
 - apiref
 api_name:
@@ -21,7 +21,7 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119645196"
 ---
-# <a name="system-must-contain-attribute"></a>Atributo System-deve-conter
+# <a name="system-must-contain-attribute"></a>Atributo System-Must-Contain
 
 A lista de atributos obrigatórios para uma classe. Esses atributos devem ser especificados quando uma instância da classe é criada. A lista de atributos só pode ser modificada pelo sistema.
 
@@ -29,14 +29,14 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------------------------------|
-| CN                | Sistema-deve conter                                                           |
-| LDAP-Display-Name | systemMustContain                                                             |
+| CN                | System-Must-Contain                                                           |
+| Ldap-Display-Name | systemMustContain                                                             |
 | Tamanho              | \-                                                                            |
 | Privilégio de atualização  | Administrador de esquema                                                          |
-| Frequência de atualização  | Quando a classe é criada ou um novo atributo obrigatório é adicionado à classe. |
+| Frequência de atualização  | Quando a classe é criada ou um novo atributo obrigatório é adicionado à classe . |
 | Attribute-Id      | 1.2.840.113556.1.4.197                                                        |
-| System-ID-GUID    | bf967a45-0de6-11d0-a285-00aa003049e2                                          |
-| Syntax            | [**Cadeia de caracteres (identificador de objeto)**](s-string-object-identifier.md)               |
+| System-Id-Guid    | bf967a45-0de6-11d0-a285-00aa003049e2                                          |
+| Syntax            | [**String(Object-Identifier)**](s-string-object-identifier.md)               |
 
 
 
@@ -44,7 +44,7 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,10 +59,10 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -80,10 +80,10 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -92,7 +92,7 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,10 +101,10 @@ A lista de atributos obrigatórios para uma classe. Esses atributos devem ser es
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Verdadeiro                                             |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |

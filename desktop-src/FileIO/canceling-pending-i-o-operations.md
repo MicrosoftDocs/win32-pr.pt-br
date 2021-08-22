@@ -1,50 +1,50 @@
 ---
-description: Permitir que os usuários cancelem solicitações de e/s lentas ou bloqueadas pode melhorar a usabilidade e a robustez do seu aplicativo.
+description: Permitir que os usuários cancelem solicitações de E/S lentas ou bloqueadas pode melhorar a usabilidade e a robustez do seu aplicativo.
 ms.assetid: adfe6d05-f30b-40a1-b3b0-58e2593e7b25
-title: Cancelando operações de e/s pendentes
+title: Cancelando operações de E/S pendentes
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e3d108409eea32cf18a94f83bf7aacd282c60d3e
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c6ca0f938420888934dccb28c9837bdff5dd8515bbdeeb1b3acf4078ae558ccd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761738"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119534116"
 ---
-# <a name="canceling-pending-io-operations"></a>Cancelando operações de e/s pendentes
+# <a name="canceling-pending-io-operations"></a>Cancelando operações de E/S pendentes
 
-Permitir que os usuários cancelem solicitações de e/s lentas ou bloqueadas pode melhorar a usabilidade e a robustez do seu aplicativo. Por exemplo, se uma chamada para a função [**OpenFile**](/windows/desktop/api/WinBase/nf-winbase-openfile) for bloqueada porque a chamada é para um dispositivo muito lento, cancelá-la permite que a chamada seja feita novamente, com novos parâmetros, sem encerrar o aplicativo.
+Permitir que os usuários cancelem solicitações de E/S lentas ou bloqueadas pode melhorar a usabilidade e a robustez do seu aplicativo. Por exemplo, se uma chamada para a função [**OpenFile**](/windows/desktop/api/WinBase/nf-winbase-openfile) for bloqueada porque a chamada é para um dispositivo muito lento, cancelá-la permitirá que a chamada seja feita novamente, com novos parâmetros, sem encerrar o aplicativo.
 
-O Windows Vista estende os recursos de cancelamento e inclui suporte ao cancelamento de operações síncronas.
+Windows O Vista estende os recursos de cancelamento e inclui suporte para cancelar operações síncronas.
 
-**Observação**  Chamar a função [**CancelIoEx**](cancelioex-func.md) não garante que uma operação de e/s será cancelada; o driver que está lidando com a operação deve dar suporte ao cancelamento e a operação deve estar em um estado que possa ser cancelado.
+**Observação**  Chamar a [**função CancelIoEx**](cancelioex-func.md) não garante que uma operação de E/S será cancelada; O driver que está tratando a operação deve dar suporte ao cancelamento e a operação deve estar em um estado que possa ser cancelado.
 
 ## <a name="cancellation-considerations"></a>Considerações sobre cancelamento
 
 Ao programar chamadas de cancelamento, tenha em mente as seguintes considerações:
 
--   Não há nenhuma garantia de que os drivers subjacentes dão suporte ao cancelamento corretamente.
--   Ao cancelar a e/s assíncrona, quando nenhuma estrutura sobreposta é fornecida para a função [**CancelIoEx**](cancelioex-func.md) , a função tenta cancelar todas as e/s pendentes no arquivo em todos os threads no processo. Cada thread é processado individualmente, portanto, depois que um thread é processado, ele pode iniciar outra e/s no arquivo antes que todos os outros threads tenham tido sua e/s para o arquivo cancelado, causando problemas de sincronização.
--   Ao cancelar a e/s assíncrona, não reutilize as estruturas sobrepostas com o cancelamento de destino. Depois que a operação de e/s for concluída (com êxito ou com um status cancelado), a estrutura sobreposta não será mais usada pelo sistema e poderá ser reutilizada.
--   Ao cancelar a e/s síncrona, chamar a função [**CancelSynchronousIo**](cancelsynchronousio-func.md) tenta cancelar qualquer chamada síncrona atual no thread. Você deve tomar cuidado para garantir que a sincronização das chamadas esteja correta; a chamada errada em uma série de chamadas pode ser cancelada. Por exemplo, se a função **CancelSynchronousIo** for chamada para uma operação síncrona, X, a operação Y só será iniciada depois que a operação x for concluída (normalmente ou com um erro). Se o thread que chamou a operação X iniciar outra chamada síncrona para X, a chamada de cancelamento poderá interromper essa nova solicitação de e/s.
--   Ao cancelar a e/s síncrona, lembre-se de que uma condição de corrida pode existir sempre que um thread for compartilhado entre diferentes partes de um aplicativo, por exemplo, com um thread de pool de threads.
+-   Não há nenhuma garantia de que os drivers subjacentes suportam corretamente o cancelamento.
+-   Ao cancelar a E/S assíncrona, quando nenhuma estrutura sobrecarronada é fornecida para a função [**CancelIoEx,**](cancelioex-func.md) a função tenta cancelar todas as E/Ss pendentes no arquivo em todos os threads no processo. Cada thread é processado individualmente, portanto, depois que um thread é processado, ele pode iniciar outra E/S no arquivo antes que todos os outros threads tenham tido sua E/S para o arquivo cancelado, causando problemas de sincronização.
+-   Ao cancelar a E/S assíncrona, não reutilizar estruturas sobrecarronadas com o cancelamento de destino. Depois que a operação de E/S for concluída (com êxito ou com um status cancelado), a estrutura sobrecarreada não estará mais em uso pelo sistema e poderá ser reutilizada.
+-   Ao cancelar a E/S síncrona, chamar a [**função CancelSynchronousIo**](cancelsynchronousio-func.md) tenta cancelar qualquer chamada síncrona atual no thread. Você deve tomar cuidado para garantir que a sincronização das chamadas está correta; a chamada errada em uma série de chamadas pode ser cancelada. Por exemplo, se a função **CancelSynchronousIo** for chamada para uma operação síncrona, X, a operação Y será iniciada somente depois que a operação X for concluída (normalmente ou com um erro). Se o thread que chamou a operação X iniciar outra chamada síncrona para X, a chamada de cancelamento poderá interromper essa nova solicitação de E/S.
+-   Ao cancelar a E/S síncrona, esteja ciente de que uma condição de corrida pode existir sempre que um thread for compartilhado entre diferentes partes de um aplicativo, por exemplo, com um thread de pool de threads.
 
 ## <a name="operations-that-cannot-be-canceled"></a>Operações que não podem ser canceladas
 
-Algumas funções não podem ser canceladas usando a função [**CancelIo**](cancelio.md), [**CancelIoEx**](cancelioex-func.md)ou [**CancelSynchronousIo**](cancelsynchronousio-func.md) . Algumas dessas funções foram estendidas para permitir o cancelamento (por exemplo, a função [**CopyFileEx**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa) ) e você deve usá-las em vez disso. Além de oferecer suporte ao cancelamento, essas funções também têm retornos de chamada internos para dar suporte a você durante o rastreamento do progresso da operação. As funções a seguir não oferecem suporte ao cancelamento:
+Algumas funções não podem ser canceladas usando a [**função CancelIo,**](cancelio.md) [**CancelIoEx**](cancelioex-func.md)ou [**CancelSynchronousIo.**](cancelsynchronousio-func.md) Algumas dessas funções foram estendidas para permitir o cancelamento (por exemplo, a [**função CopyFileEx)**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa) e você deve usá-los em vez disso. Além de dar suporte ao cancelamento, essas funções também têm retornos de chamada integrados para dar suporte ao acompanhar o progresso da operação. As seguintes funções não são suportadas ao cancelamento:
 
 -   [**CopyFile**](/windows/desktop/api/WinBase/nf-winbase-copyfile)— use [ **CopyFileEx**](/windows/desktop/api/WinBase/nf-winbase-copyfileexa)
--   [**MoveFile**](/windows/desktop/api/WinBase/nf-winbase-movefile)– use [ **MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa)
+-   [**MoveFile**](/windows/desktop/api/WinBase/nf-winbase-movefile)— use [ **MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa)
 -   [**MoveFileEx**](/windows/desktop/api/WinBase/nf-winbase-movefileexa)— use [ **MoveFileWithProgress**](/windows/desktop/api/WinBase/nf-winbase-movefilewithprogressa)
 -   [**ReplaceFile**](/windows/desktop/api/WinBase/nf-winbase-replacefilea)
 
-Para obter mais informações, consulte [diretrizes de conclusão/cancelamento de e/s](https://www.microsoft.com/whdc/driver/kernel/iocancel.mspx).
+Para obter mais informações, consulte [Diretrizes de conclusão/cancelamento de E/S.](https://www.microsoft.com/whdc/driver/kernel/iocancel.mspx)
 
-## <a name="canceling-asynchronous-io"></a>Cancelando e/s assíncrona
+## <a name="canceling-asynchronous-io"></a>Cancelando E/S assíncrona
 
-Você pode cancelar a e/s assíncrona de qualquer thread no processo que emitiu a operação de e/s. Você deve especificar o identificador em que a e/s foi executada e, opcionalmente, a estrutura sobreposta que foi usada para executar a e/s. Você pode determinar se o cancelamento ocorreu examinando o status retornado na estrutura sobreposta ou no retorno de chamada de conclusão. Um status de **operação de erro \_ \_ anulada** indica que a operação foi cancelada.
+Você pode cancelar a E/S assíncrona de qualquer thread no processo que emitiu a operação de E/S. Você deve especificar o handle no qual a E/S foi executada e, opcionalmente, a estrutura sobrecarrada que foi usada para executar a E/S. Você pode determinar se o cancelamento ocorreu examinando o status retornado na estrutura sobreexplorada ou no retorno de chamada de conclusão. Um status de **ERROR \_ OPERATION \_ ABORTED** indica que a operação foi cancelada.
 
-O exemplo a seguir mostra uma rotina que leva um tempo limite e tenta uma operação de leitura, cancelando-a com a função [**CancelIoEx**](cancelioex-func.md) se o tempo limite expirar.
+O exemplo a seguir mostra uma rotina que leva um tempoout e tenta uma operação de leitura, cancelando-a com a [**função CancelIoEx**](cancelioex-func.md) se o tempo expirar.
 
 
 ```C++
@@ -170,21 +170,21 @@ BOOL DoCancelableRead(HANDLE hFile,
 
 
 
-## <a name="canceling-synchronous-io"></a>Cancelando e/s síncrona
+## <a name="canceling-synchronous-io"></a>Cancelando E/S síncrona
 
-Você pode cancelar a e/s síncrona de qualquer thread no processo que emitiu a operação de e/s. Você deve especificar o identificador para o thread que está executando a operação de e/s no momento.
+Você pode cancelar a E/S síncrona de qualquer thread no processo que emitiu a operação de E/S. Você deve especificar o handle para o thread que está executando a operação de E/S no momento.
 
 O exemplo a seguir mostra duas rotinas:
 
--   A função **SynchronousIoWorker** é um thread de trabalho que implementa alguma e/s de arquivo síncrono, começando com uma chamada para a função [**CreateFile**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) . Se a rotina for bem-sucedida, a rotina poderá ser seguida por operações adicionais, que não estão incluídas aqui. A variável global *gCompletionStatus* pode ser usada para determinar se todas as operações foram bem-sucedidas ou se uma operação falhou ou foi cancelada. A variável global *dwOperationInProgress* indica se a e/s de arquivo ainda está em andamento.
+-   A **função SynchronousIoWorker** é um thread de trabalho que implementa alguma E/S de arquivo síncrona, começando com uma chamada para a [**função CreateFile.**](/windows/desktop/api/FileAPI/nf-fileapi-createfilea) Se a rotina for bem-sucedida, a rotina poderá ser seguida por operações adicionais, que não estão incluídas aqui. A variável global *gCompletionStatus* pode ser usada para determinar se todas as operações foram bem-sucedidas ou se uma operação falhou ou foi cancelada. A variável global *dwOperationInProgress* indica se a E/S do arquivo ainda está em andamento.
 
-    **Observação**  Neste exemplo, o thread de interface do usuário também pode verificar a existência do thread de trabalho.
+    **Observação**  Neste exemplo, o thread da interface do usuário também pode verificar a existência do thread de trabalho.
 
-    Verificações manuais adicionais, que não estão incluídas aqui, são necessárias na função **SynchronousIoWorker** é garantir que, se o cancelamento for solicitado durante os breves períodos entre as chamadas de e/s de arquivo, o restante das operações será cancelado.
+    Verificações manuais adicionais, que não estão incluídas aqui, são necessárias na função **SynchronousIoWorker** para garantir que, se o cancelamento tiver sido solicitado durante os breves períodos entre chamadas de E/S de arquivo, o restante das operações será cancelado.
 
--   A função **MainUIThreadMessageHandler** simula o manipulador de mensagens dentro de um procedimento de janela do thread de interface do usuário. O usuário solicita um conjunto de operações de arquivo síncrono clicando em um controle, que gera uma mensagem de janela definida pelo usuário, (na seção marcada pelo **WM \_ MYSYNCOPS**). Isso cria um novo thread usando a função **CreateFileThread** , que, em seguida, inicia a função **SynchronousIoWorker** . O thread da interface do usuário continua processando mensagens enquanto o thread de trabalho executa a e/s solicitada. Se o usuário decidir cancelar as operações não concluídas (normalmente, clicando em um botão Cancelar), a rotina (na seção marcada pelo **WM \_ mycancel**) chamará a função [**CancelSynchronousIo**](cancelsynchronousio-func.md) usando o identificador de thread retornado pela função **CreateFileThread** . A função **CancelSynchronousIo** retorna imediatamente após a tentativa de cancelamento. Por fim, o usuário ou aplicativo pode solicitar, posteriormente, alguma outra operação que depende se as operações de arquivo foram concluídas. Nesse caso, a rotina (na seção marcada pelo **WM \_ PROCESSDATA**) primeiro verifica se as operações foram concluídas e, em seguida, executa as operações de limpeza.
+-   A **função MainUIThreadMessageHandler** simula o manipulador de mensagens dentro do procedimento de janela de um thread de interface do usuário. O usuário solicita um conjunto de operações de arquivo síncrono clicando em um controle , que gera uma mensagem de janela definida pelo usuário (na seção marcada por **WM \_ MYSYNCOPS**). Isso cria um novo thread usando a **função CreateFileThread,** que inicia a **função SynchronousIoWorker.** O thread da interface do usuário continua a processar mensagens enquanto o thread de trabalho executa a E/S solicitada. Se o usuário decidir cancelar as operações não terminadas (normalmente clicando em um botão cancelar), a rotina (na seção marcada por **WM \_ MYCANCEL**) chamará a função [**CancelSynchronousIo**](cancelsynchronousio-func.md) usando o alça de thread retornado pela **função CreateFileThread.** A **função CancelSynchronousIo** retorna imediatamente após a tentativa de cancelamento. Por fim, o usuário ou o aplicativo pode solicitar posteriormente alguma outra operação que dependa se as operações de arquivo foram concluídas. Nesse caso, a rotina (na seção marcada por **WM \_ PROCESSDATA**) primeiro verifica se as operações foram concluídas e, em seguida, executa as operações de limpeza.
 
-    **Observação**  Neste exemplo, como o cancelamento pode ter ocorrido em qualquer lugar na sequência de operações, pode ser necessário que o chamador Verifique se o estado é consistente ou, pelo menos, compreendido antes de continuar.
+    **Observação**  Neste exemplo, como o cancelamento pode ter ocorrido em qualquer lugar na sequência de operações, pode ser necessário que o chamador garanta que o estado seja consistente ou pelo menos compreendido antes de continuar.
 
 
 ```C++
@@ -307,7 +307,7 @@ MainUIThreadMessageHandler(HWND hwnd,
 
 <dl> <dt>
 
-[E/s síncrona e síncrona](synchronous-and-asynchronous-i-o.md)
+[E/S síncrona e assíncrona](synchronous-and-asynchronous-i-o.md)
 </dt> </dl>
 
  

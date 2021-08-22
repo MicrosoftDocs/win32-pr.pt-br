@@ -1,19 +1,19 @@
 ---
-description: 'O Windows GDI+ fornece as seguintes classes:'
+description: 'Windows GDI+ fornece as seguintes classes:'
 ms.assetid: 992388a6-11b7-4e14-b061-e2821aa6c970
 title: Classes (GDI+)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 573311a6f061734ef1e6c97a5d7334c644e5d2af
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3890bbaf8af943e6afeeae8a393f9390d45c9fac9dd8b2b507ab6497daa93e84
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661944"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119557456"
 ---
 # <a name="classes-gdi"></a>Classes (GDI+)
 
-O Windows GDI+ fornece as seguintes classes:
+Windows GDI+ fornece as seguintes classes:
 
 -   [**AdjustableArrowCap**](/windows/desktop/api/gdipluslinecaps/nl-gdipluslinecaps-adjustablearrowcap)
 -   [**Bitmap**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap)
@@ -23,7 +23,7 @@ O Windows GDI+ fornece as seguintes classes:
 -   [**Pincel**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-brush)
 -   [**CachedBitmap**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-cachedbitmap)
 -   [**CharacterRange**](/windows/desktop/api/gdiplustypes/nl-gdiplustypes-characterrange)
--   [**Cor**](/windows/desktop/api/gdipluscolor/nl-gdipluscolor-color)
+-   [**Color**](/windows/desktop/api/gdipluscolor/nl-gdipluscolor-color)
 -   [**ColorBalance**](/windows/desktop/api/gdipluseffects/nl-gdipluseffects-colorbalance)
 -   [**ColorCurve**](/windows/desktop/api/gdipluseffects/nl-gdipluseffects-colorcurve)
 -   [**ColorLUT**](/windows/desktop/api/gdipluseffects/nl-gdipluseffects-colorlut)
@@ -32,11 +32,11 @@ O Windows GDI+ fornece as seguintes classes:
 -   [**Funciona**](/windows/desktop/api/gdipluseffects/nl-gdipluseffects-effect)
 -   [**EncoderParameter**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameter)
 -   [**EncoderParameters**](/windows/win32/api/gdiplusimaging/nl-gdiplusimaging-encoderparameters)
--   [**Fonte**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-font)
+-   [**La**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-font)
 -   [**Fonte de fontes**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-fontcollection)
 -   [**FontFamily**](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-fontfamily)
 -   [**GdiplusBase**](/windows/desktop/api/gdiplusbase/nl-gdiplusbase-gdiplusbase)
--   [**Elementos gráficos**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics)
+-   [**Gráficos**](/windows/desktop/api/gdiplusgraphics/nl-gdiplusgraphics-graphics)
 -   [**GraphicsPath**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspath)
 -   [**GraphicsPathIterator**](/windows/desktop/api/gdipluspath/nl-gdipluspath-graphicspathiterator)
 -   [**HatchBrush**](/windows/desktop/api/gdiplusbrush/nl-gdiplusbrush-hatchbrush)

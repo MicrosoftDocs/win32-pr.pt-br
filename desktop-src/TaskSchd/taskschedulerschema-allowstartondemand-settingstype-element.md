@@ -1,9 +1,9 @@
 ---
-title: Elemento AllowStartOnDemand (settingstype)
-description: Especifica que a tarefa pode ser iniciada usando o comando executar ou o menu de contexto.
+title: Elemento AllowStartOnDemand (settingsType)
+description: Especifica que a tarefa pode ser iniciada usando o comando Executar ou o menu Contexto.
 ms.assetid: 5a0f0842-9f09-4d52-bed2-45740945d9a5
 keywords:
-- Agendador de Tarefas do elemento AllowStartOnDemand
+- Elemento AllowStartOnDemand Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: ec396bf10efbd11024fe39e57bdf05025db0e610
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: be89197c4ae88188fc1d2a746c40d69e385edc7ba08aaf2d3bf29067ee5f4a9e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "103918146"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119516986"
 ---
-# <a name="allowstartondemand-settingstype-element"></a>Elemento AllowStartOnDemand (settingstype)
+# <a name="allowstartondemand-settingstype-element"></a>Elemento AllowStartOnDemand (settingsType)
 
-Especifica que a tarefa pode ser iniciada usando o comando executar ou o menu de contexto.
+Especifica que a tarefa pode ser iniciada usando o comando Executar ou o menu Contexto.
 
 ``` syntax
 <xs:element name="AllowStartOnDemand"
@@ -32,7 +32,7 @@ Especifica que a tarefa pode ser iniciada usando o comando executar ou o menu de
  />
 ```
 
-O elemento **AllowStartOnDemand** é definido pelo tipo complexo [**settingstype**](taskschedulerschema-settingstype-complextype.md) .
+O **elemento AllowStartOnDemand** é definido pelo tipo complexo [**settingsType.**](taskschedulerschema-settingstype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
@@ -40,21 +40,21 @@ O elemento **AllowStartOnDemand** é definido pelo tipo complexo [**settingstype
 
 | Elemento                                                           | Derivado de                                                         | Descrição                                                                        |
 |-------------------------------------------------------------------|----------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**settingstype**](taskschedulerschema-settingstype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
+| [**Configurações**](taskschedulerschema-settings-tasktype-element.md) | [**settingsType**](taskschedulerschema-settingstype-complextype.md) | Contém as configurações que o Agendador de Tarefas usa para executar a tarefa.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Quando esse elemento é definido como true, a tarefa pode ser iniciada independentemente de quando os gatilhos iniciam a tarefa.
+Quando esse elemento é definido como True, a tarefa pode ser iniciada independentemente de quando qualquer gatilho inicia a tarefa.
 
-Para desenvolvimento em C++, consulte a [**Propriedade AllowDemandStart de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_allowdemandstart).
+Para desenvolvimento em C++, consulte a [**propriedade AllowDemandStart de ITaskSettings**](/windows/desktop/api/taskschd/nf-taskschd-itasksettings-get_allowdemandstart).
 
-Para desenvolvimento de script, consulte [**TaskSettings. AllowDemandStart**](tasksettings-allowdemandstart.md).
+Para desenvolvimento de scripts, [**consulte TaskSettings.AllowDemandStart**](tasksettings-allowdemandstart.md).
 
 ## <a name="examples"></a>Exemplos
 
-Para obter um exemplo completo do XML para uma tarefa que permite iniciar a demanda, consulte [exemplo de gatilho de tempo (XML)](time-trigger-example--xml-.md).
+Para ver um exemplo completo do XML para uma tarefa que permite o início da demanda, consulte [Exemplo de gatilho de tempo (XML).](time-trigger-example--xml-.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -62,8 +62,8 @@ Para obter um exemplo completo do XML para uma tarefa que permite iniciar a dema
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 
@@ -71,7 +71,7 @@ Para obter um exemplo completo do XML para uma tarefa que permite iniciar a dema
 
 <dl> <dt>
 
-[Elementos do esquema de Agendador de Tarefas](task-scheduler-schema-elements.md)
+[Agendador de Tarefas de esquema](task-scheduler-schema-elements.md)
 </dt> </dl>
 
  

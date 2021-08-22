@@ -1,5 +1,5 @@
 ---
-description: Esta seção identifica as estruturas que são usadas no gerenciamento do Hyper-V.
+description: Esta seção identifica as estruturas usadas no gerenciamento do Hyper-V.
 ms.assetid: 73D81935-C903-46A9-B50A-D9907110C1F8
 title: Estruturas de gerenciamento do Hyper-V
 ms.topic: article
@@ -13,7 +13,7 @@ ms.locfileid: "119532276"
 ---
 # <a name="hyper-v-management-structures"></a>Estruturas de gerenciamento do Hyper-V
 
-Esta seção identifica as estruturas que são usadas no gerenciamento do Hyper-V.
+Esta seção identifica as estruturas usadas no gerenciamento do Hyper-V.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -21,7 +21,7 @@ Esta seção identifica as estruturas que são usadas no gerenciamento do Hyper-
 
 | Tópico                                              | Descrição                                                   |
 |----------------------------------------------------|---------------------------------------------------------------|
-| [**\_GENCOUNTER VM**](/windows/desktop/api/Vmgenerationcounter/ns-vmgenerationcounter-vm_gencounter)<br/> | Descreve um identificador de geração de máquina virtual.<br/> |
+| [**VM \_ GENCOUNTER**](/windows/desktop/api/Vmgenerationcounter/ns-vmgenerationcounter-vm_gencounter)<br/> | Descreve um identificador de geração de máquina virtual.<br/> |
 
 
 

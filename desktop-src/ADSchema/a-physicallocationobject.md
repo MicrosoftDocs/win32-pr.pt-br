@@ -1,11 +1,11 @@
 ---
-title: Atributo físico-Location-Object
+title: Atributo Physical-Location-Object
 description: Usado para mapear um dispositivo (por exemplo, uma impressora, um computador e assim por diante) para um local físico.
 ms.assetid: 1055d278-a4fc-47a3-b59f-9d63be39a5e7
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo de local físico
-- Esquema de AD do atributo physicalLocationObject
+- Esquema do AD do atributo Physical-Location-Object
+- Esquema do AD do atributo physicalLocationObject
 topic_type:
 - apiref
 api_name:
@@ -14,14 +14,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ce247ec2a73d8644497ce152402f4ad08b8bb7f5
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: f225830d47635da2cd6e9da5e227dd2ad7f518ab0998e1cc34e0ed96f3ed73c3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104499959"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119325236"
 ---
-# <a name="physical-location-object-attribute"></a>Atributo físico-Location-Object
+# <a name="physical-location-object-attribute"></a>Atributo Physical-Location-Object
 
 Usado para mapear um dispositivo (por exemplo, uma impressora, um computador e assim por diante) para um local físico.
 
@@ -29,14 +29,14 @@ Usado para mapear um dispositivo (por exemplo, uma impressora, um computador e a
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | Físico-local-objeto                |
-| LDAP-Display-Name | physicalLocationObject                  |
+| CN                | Physical-Location-Object                |
+| Ldap-Display-Name | physicalLocationObject                  |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.514                  |
-| System-ID-GUID    | b7b13119-b82e-11d0-afee-0000f80367c1    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | b7b13119-b82e-11d0-afee-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,15 +58,15 @@ Usado para mapear um dispositivo (por exemplo, uma impressora, um computador e a
 | ID do link                | \-                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                             |
 | System-Only            | Falso                                                                                                                          |
-| É de valor único       | True                                                                                                                           |
-| É indexado             | True                                                                                                                           |
-| No catálogo global      | Falso                                                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                   |
+| Tem valor único       | Verdadeiro                                                                                                                           |
+| É indexado             | Verdadeiro                                                                                                                           |
+| No Catálogo Global      | Falso                                                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                   |
 | Range-Lower            | \-                                                                                                                             |
 | Range-Upper            | \-                                                                                                                             |
 | Search-Flags           | 0x00000001                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                     |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Usado para mapear um dispositivo (por exemplo, uma impressora, um computador e a
 | ID do link                | \-                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                             |
 | System-Only            | Falso                                                                                                                          |
-| É de valor único       | True                                                                                                                           |
-| É indexado             | True                                                                                                                           |
-| No catálogo global      | Falso                                                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                   |
+| Tem valor único       | Verdadeiro                                                                                                                           |
+| É indexado             | Verdadeiro                                                                                                                           |
+| No Catálogo Global      | Falso                                                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                   |
 | Range-Lower            | \-                                                                                                                             |
 | Range-Upper            | \-                                                                                                                             |
 | Search-Flags           | 0x00000001                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                     |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de Impressão**](c-printqueue.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Usado para mapear um dispositivo (por exemplo, uma impressora, um computador e a
 | ID do link                | \-                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                             |
 | System-Only            | Falso                                                                                                                          |
-| É de valor único       | True                                                                                                                           |
-| É indexado             | True                                                                                                                           |
-| No catálogo global      | Falso                                                                                                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                   |
+| Tem valor único       | Verdadeiro                                                                                                                           |
+| É indexado             | Verdadeiro                                                                                                                           |
+| No Catálogo Global      | Falso                                                                                                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                   |
 | Range-Lower            | \-                                                                                                                             |
 | Range-Upper            | \-                                                                                                                             |
 | Search-Flags           | 0x00000001                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                     |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Usado para mapear um dispositivo (por exemplo, uma impressora, um computador e a
 | ID do link                | \-                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                             |
 | System-Only            | Falso                                                                                                                          |
-| É de valor único       | True                                                                                                                           |
-| É indexado             | True                                                                                                                           |
+| É de valor único       | Verdadeiro                                                                                                                           |
+| É indexado             | Verdadeiro                                                                                                                           |
 | No catálogo global      | Falso                                                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                   |
 | Range-Lower            | \-                                                                                                                             |
 | Range-Upper            | \-                                                                                                                             |
 | Search-Flags           | 0x00000001                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                     |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Usado para mapear um dispositivo (por exemplo, uma impressora, um computador e a
 | ID do link                | \-                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                             |
 | System-Only            | Falso                                                                                                                          |
-| É de valor único       | True                                                                                                                           |
-| É indexado             | True                                                                                                                           |
+| É de valor único       | Verdadeiro                                                                                                                           |
+| É indexado             | Verdadeiro                                                                                                                           |
 | No catálogo global      | Falso                                                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                   |
 | Range-Lower            | \-                                                                                                                             |
 | Range-Upper            | \-                                                                                                                             |
 | Search-Flags           | 0x00000001                                                                                                                     |
 | System-Flags           | 0x00000010                                                                                                                     |
-| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Redes**](c-subnet.md)<br/> |
+| Classes usadas em        | [**Computador**](c-computer.md)<br/> [**Fila de impressão**](c-printqueue.md)<br/> [**Sub-rede**](c-subnet.md)<br/> |
 
 
 
@@ -163,8 +163,8 @@ Usado para mapear um dispositivo (por exemplo, uma impressora, um computador e a
 | ID do link                | \-                                                                                                                             |
 | MAPI-Id                | \-                                                                                                                             |
 | System-Only            | Falso                                                                                                                          |
-| É de valor único       | True                                                                                                                           |
-| É indexado             | True                                                                                                                           |
+| É de valor único       | Verdadeiro                                                                                                                           |
+| É indexado             | Verdadeiro                                                                                                                           |
 | No catálogo global      | Falso                                                                                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                   |
 | Range-Lower            | \-                                                                                                                             |

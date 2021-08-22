@@ -1,30 +1,30 @@
 ---
-description: Disponibilidade do MUI
+description: Disponibilidade da MUI
 ms.assetid: 850c6369-2d49-4f1f-9a26-308a1f101b5a
-title: Disponibilidade do MUI
+title: Disponibilidade da MUI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0ab49cee0cc82ed1d2571feac97c4556e2891f7
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 66014d3ae53f6abdf87b1238701ac220b2b6bd6d50c5440298cdb5bcf9811b7a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105760182"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119328766"
 ---
-# <a name="availability-of-mui"></a>Disponibilidade do MUI
+# <a name="availability-of-mui"></a>Disponibilidade da MUI
 
-As seguintes versões do Windows incluem APIs e construções para fornecer suporte nativo ao desenvolvimento de aplicativos multilíngues usando a tecnologia MUI:
+As seguintes versões do Windows incluem APIs e constructos para fornecer suporte nativo para o desenvolvimento de aplicativos multilíngues usando a tecnologia MUI:
 
 -   Windows 7 e posterior.
 -   Windows Vista.
 
-Uma biblioteca de nível inferior, [**LoadMUILibrary**](/windows/desktop/api/Muiload/nf-muiload-loadmuilibrarya), é fornecida para permitir a criação de aplicativos multilíngues para versões do Windows anteriores ao Windows Vista, fornecendo um comportamento compatível com o de aplicativos do MUI writen para Windows Vista e versões posteriores do Windows.
+Uma biblioteca de nível baixo, [**LoadMUILibrary,**](/windows/desktop/api/Muiload/nf-muiload-loadmuilibrarya)é fornecida para permitir a escrita de aplicativos multilíngues para versões do Windows antes do Windows Vista, fornecendo um comportamento compatível com o dos aplicativos de MUI escritos para o Windows Vista e versões posteriores do Windows.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Sobre a interface do usuário multilíngue](about-multilingual-user-interface.md)
+[Sobre Interface de Usuário Multilíngue](about-multilingual-user-interface.md)
 </dt> </dl>
 
  

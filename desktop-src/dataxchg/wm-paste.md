@@ -1,9 +1,9 @@
 ---
-title: Mensagem de WM_PASTE (WinUser. h)
-description: Um aplicativo envia uma mensagem de colagem do WM \_ para um controle de edição ou caixa de combinação para copiar o conteúdo atual da área de transferência para o controle de edição na posição atual do cursor. Os dados só serão inseridos se a área de transferência contiver dados no formato de texto do CF \_ .
+title: WM_PASTE mensagem (Winuser.h)
+description: Um aplicativo envia uma mensagem WM PASTE para uma caixa de combinação ou controle de edição para copiar o conteúdo atual da área de transferência para o controle de edição na posição atual \_ do aparador. Os dados serão inseridos somente se a área de transferência contiver dados no formato CF \_ TEXT.
 ms.assetid: 6830b511-986f-46ef-a977-7adedffe86ea
 keywords:
-- Troca de dados de mensagem WM_PASTE
+- WM_PASTE de dados de Exchange
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 86b723830ecdd0f8b7e3faa9da9adcb51161b297
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 1a3cc1815349a2194d5dd7e2a65eb1c9ae77a2947f41361a90e92bae73357f81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369834"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499116"
 ---
-# <a name="wm_paste-message"></a>Mensagem de colagem do WM \_
+# <a name="wm_paste-message"></a>Mensagem WM \_ PASTE
 
-Um aplicativo envia uma mensagem de **\_ colagem do WM** para um controle de edição ou caixa de combinação para copiar o conteúdo atual da área de transferência para o controle de edição na posição atual do cursor. Os dados só serão inseridos se a área de transferência contiver dados no formato de [**\_ texto do CF**](standard-clipboard-formats.md) .
+Um aplicativo envia uma mensagem **WM \_ PASTE** para uma caixa de combinação ou controle de edição para copiar o conteúdo atual da área de transferência para o controle de edição na posição atual do aparador. Os dados serão inseridos somente se a área de transferência contiver dados no [**formato CF \_ TEXT.**](standard-clipboard-formats.md)
 
 
 ```C++
@@ -50,13 +50,13 @@ Esse parâmetro não é usado e deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Essa mensagem não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Quando enviado para uma caixa de combinação, a mensagem de **\_ colagem do WM** é tratada por seu controle de edição. Esta mensagem não tem nenhum efeito quando enviada para uma caixa de combinação com o estilo de [**CBS \_**](../controls/combo-box-styles.md) .
+Quando enviada para uma caixa de combinação, a **mensagem WM \_ PASTE** é manipulada por seu controle de edição. Essa mensagem não tem efeito quando enviada para uma caixa de combinação com o [**estilo \_ CBS DROPDOWNLIST.**](../controls/combo-box-styles.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -66,7 +66,7 @@ Quando enviado para uma caixa de combinação, a mensagem de **\_ colagem do WM*
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows 2000 Professional \[somente aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows 2000 Server \[somente aplicativos da área de trabalho\]<br/>                                                     |
-| Cabeçalho<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Winuser.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -77,19 +77,19 @@ Quando enviado para uma caixa de combinação, a mensagem de **\_ colagem do WM*
 **Referência**
 </dt> <dt>
 
-[**limpeza do WM \_**](wm-clear.md)
+[**WM \_ CLEAR**](wm-clear.md)
 </dt> <dt>
 
-[**cópia do WM \_**](wm-copy.md)
+[**CÓPIA DO WM \_**](wm-copy.md)
 </dt> <dt>
 
-[**recorte do WM \_**](wm-cut.md)
+[**WM \_ CUT**](wm-cut.md)
 </dt> <dt>
 
-[**desfazer o WM \_**](/windows/desktop/Controls/wm-undo)
+[**WM \_ UNDO**](/windows/desktop/Controls/wm-undo)
 </dt> <dt>
 
-**Conceitua**
+**Conceitual**
 </dt> <dt>
 
 [Área de transferência](clipboard.md)

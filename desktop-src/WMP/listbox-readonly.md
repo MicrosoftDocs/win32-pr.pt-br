@@ -1,9 +1,9 @@
 ---
-title: Caixa de listagem. readOnly
-description: O atributo readOnly Especifica ou recupera um valor que indica se o texto é somente leitura ou pode ser selecionado pelo usuário. Só pode ser definido em tempo de design.
+title: LISTBOX.readOnly
+description: O atributo readOnly especifica ou recupera um valor que indica se o texto é somente leitura ou pode ser selecionado pelo usuário. Só pode ser definido em tempo de design.
 ms.assetid: 2c76c486-c533-4583-8615-82876317a908
 keywords:
-- Caixa de listagem do Windows Media Player. readOnly
+- LISTBOX.readOnly Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ec6e926d69d9d2c504d33591d9a72d741911193c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 201cc8350b3fb248d85b1d57fc186c526a9f814a7f3411703834ce81ca176c4b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105797614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054644"
 ---
-# <a name="listboxreadonly"></a>Caixa de listagem. readOnly
+# <a name="listboxreadonly"></a>LISTBOX.readOnly
 
-O atributo **ReadOnly** especifica ou recupera um valor que indica se o texto é somente leitura ou pode ser selecionado pelo usuário. Só pode ser definido em tempo de design.
+O **atributo readOnly** especifica ou recupera um valor que indica se o texto é somente leitura ou pode ser selecionado pelo usuário. Só pode ser definido em tempo de design.
 
 ``` syntax
         elementID.readOnly
@@ -29,7 +29,7 @@ O atributo **ReadOnly** especifica ou recupera um valor que indica se o texto é
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 

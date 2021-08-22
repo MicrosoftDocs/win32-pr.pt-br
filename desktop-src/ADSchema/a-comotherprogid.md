@@ -1,11 +1,11 @@
 ---
-title: Atributo COM-Other-PROG-ID
-description: Lista de outras cadeias de caracteres de ID de programa para a classe de host.
+title: Atributo COM-Other-Prog-Id
+description: Lista de outras cadeias de caracteres de ID do programa para a classe de host.
 ms.assetid: dcea2a2a-2680-4e9c-abbf-57946c4c9ea2
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD de atributo COM-Other-PROG-ID
-- Esquema de AD do atributo cOMOtherProgId
+- Esquema do AD do atributo COM-Other-Prog-Id
+- Esquema do AD do atributo cOMOtherProgId
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 881b4f55f4512e6c66b934b41c112dac49c260bc
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 09b218f7d634371a23c61d2b132558930c35e744d4572fcdfc6bd97ab4ee185a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104087156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509586"
 ---
-# <a name="com-other-prog-id-attribute"></a>Atributo COM-Other-PROG-ID
+# <a name="com-other-prog-id-attribute"></a>Atributo COM-Other-Prog-Id
 
-Lista de outras cadeias de caracteres de ID de programa para a classe de host.
+Lista de outras cadeias de caracteres de ID do programa para a classe de host.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | COM-Other-PROG-ID                           |
-| LDAP-Display-Name | cOMOtherProgId                              |
+| CN                | COM-Other-Prog-Id                           |
+| Ldap-Display-Name | cOMOtherProgId                              |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.253                      |
-| System-ID-GUID    | 281416dd-1968-11d0-a28f-00aa003049e2        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 281416dd-1968-11d0-a28f-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ Lista de outras cadeias de caracteres de ID de programa para a classe de host.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -79,10 +79,10 @@ Lista de outras cadeias de caracteres de ID de programa para a classe de host.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -100,10 +100,10 @@ Lista de outras cadeias de caracteres de ID de programa para a classe de host.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -121,10 +121,10 @@ Lista de outras cadeias de caracteres de ID de programa para a classe de host.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -142,10 +142,10 @@ Lista de outras cadeias de caracteres de ID de programa para a classe de host.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |
@@ -163,10 +163,10 @@ Lista de outras cadeias de caracteres de ID de programa para a classe de host.
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
+| Tem valor único       | Falso                                                        |
 | É indexado             | Falso                                                        |
-| No catálogo global      | Falso                                                        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| No Catálogo Global      | Falso                                                        |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000000                                                   |

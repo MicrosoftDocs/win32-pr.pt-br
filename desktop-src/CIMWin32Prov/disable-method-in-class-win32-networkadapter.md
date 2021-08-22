@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: a9c6b1a506310460d9131709092b739f68986e02
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a6f5b51d21dfea0a3bc29ed1bd47a5026618f3b373bdc70e8a99c3aa16ae7424
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105756044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119643067"
 ---
 # <a name="disable-method-of-the-win32_networkadapter-class"></a>Método Disable da classe Win32 \_ adaptador
 
@@ -38,7 +38,7 @@ uint32 Disable();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna zero (0) para indicar êxito. Qualquer outro número indica um erro. Para códigos de erro, consulte [**constantes de erro WMI**](/windows/desktop/WmiSdk/wmi-error-constants) ou [**WbemErrorEnum**](/windows/desktop/api/wbemdisp/ne-wbemdisp-wbemerrorenum).
 

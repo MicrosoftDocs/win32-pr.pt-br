@@ -1,11 +1,11 @@
 ---
-title: Objeto Enumerator (WSManDisp. h)
-description: Representa um fluxo de resultados retornados de operações, como uma operação de pull.
+title: Objeto enumerador (WSManDisp.h)
+description: Representa um fluxo de resultados retornados de operações, como uma operação pull.
 ms.assetid: 8d8b461d-06a7-4600-8b68-2faf741a394b
 ms.tgt_platform: multiple
 keywords:
-- objeto de enumerador Gerenciamento Remoto do Windows
-- objeto Enumerator Gerenciamento Remoto do Windows, descrito
+- Objeto enumerador Windows Gerenciamento Remoto
+- Objeto enumerador Windows Gerenciamento Remoto , descrito
 topic_type:
 - apiref
 api_name:
@@ -25,24 +25,24 @@ ms.locfileid: "119051824"
 ---
 # <a name="enumerator-object"></a>Objeto Enumerator
 
-Representa um fluxo de resultados retornados de operações, como uma operação de pull. Por exemplo, o método [**Session. enumerar**](session-enumerate.md) retorna vários resultados.
+Representa um fluxo de resultados retornados de operações, como uma operação pull. Por exemplo, o [**método Session.Enumerate**](session-enumerate.md) retorna vários resultados.
 
 ## <a name="members"></a>Membros
 
-O objeto **Enumerator** tem estes tipos de membros:
+O **objeto Enumerador** tem estes tipos de membros:
 
 -   [Métodos](#methods)
 -   [Propriedades](#properties)
 
 ### <a name="methods"></a>Métodos
 
-O objeto **Enumerator** tem esses métodos.
+O **objeto Enumerator** tem esses métodos.
 
 
 
 | Método                                  | Descrição                                                                                   |
 |:----------------------------------------|:----------------------------------------------------------------------------------------------|
-| [**ReadItem**](enumerator-readitem.md) | Recupera um item do recurso e retorna uma representação XML do item.<br/> |
+| [**Readitem**](enumerator-readitem.md) | Recupera um item do recurso e retorna uma representação XML do item.<br/> |
 
 
 
@@ -50,13 +50,13 @@ O objeto **Enumerator** tem esses métodos.
 
 ### <a name="properties"></a>Propriedades
 
-O objeto **Enumerator** tem essas propriedades.
+O **objeto Enumerator** tem essas propriedades.
 
 
 
 | Propriedade                                                     | Descrição                                                                                    |
 |:-------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|
-| [**AtEndOfStream**](enumerator-atendofstream.md)<br/> | Obtém um valor booliano que indica se há mais itens na coleção.<br/> |
+| [**AtEndOfStream**](enumerator-atendofstream.md)<br/> | Obtém um valor booliana que indica se há mais itens na coleção.<br/> |
 | [**Erro**](enumerator-error.md)<br/>                 | Obtém uma representação XML de informações de erro adicionais.<br/>                         |
 
 
@@ -65,13 +65,13 @@ O objeto **Enumerator** tem essas propriedades.
 
 ## <a name="remarks"></a>Comentários
 
-Para iniciar uma enumeração, use [**Session. Enumerate**](session-enumerate.md). Para fazer uma operação [*WS-Enumeration:*](windows-remote-management-glossary.md)[*pull*](windows-remote-management-glossary.md) que continua lendo itens na enumeração, use [**Enumerator. ReadItem**](enumerator-readitem.md).
+Para iniciar uma enumeração, use [**Session.Enumerate**](session-enumerate.md). Para fazer uma [*enumeração WS: operação*](windows-remote-management-glossary.md)[*de pull*](windows-remote-management-glossary.md) que continua lendo itens na enumeração, use [**Enumerator.ReadItem**](enumerator-readitem.md).
 
-O objeto **enumerador** corresponde à interface [**IWSManEnumerator**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanenumerator) .
+O **objeto Enumerador** corresponde à interface [**IWSManEnumerator.**](/windows/desktop/api/WSManDisp/nn-wsmandisp-iwsmanenumerator)
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo de código VBScript a seguir enumera todos os discos em um computador remoto especificado pelo nome de domínio totalmente qualificado (servername.domain.com). A sub-rotina DisplayOutput formata a saída de dados da mesma maneira que a ferramenta WinRM. cmd.
+O exemplo de código VBScript a seguir enumera todos os discos em um computador remoto especificado pelo nome de domínio totalmente qualificado (servername.domain.com). A sub-rotina DisplayOutput formata a saída de dados da mesma maneira que a ferramenta WinRM.cmd.
 
 
 ```VB
@@ -120,9 +120,9 @@ End Sub
 |-------------------------------------|------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                 |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                           |
-| Cabeçalho<br/>                   | <dl> <dt>WSManDisp. h</dt> </dl>   |
-| INSERI<br/>                      | <dl> <dt>WSManDisp. idl</dt> </dl> |
-| Biblioteca<br/>                  | <dl> <dt>WSManDisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>WSManDisp.h</dt> </dl>   |
+| Idl<br/>                      | <dl> <dt>WSManDisp.idl</dt> </dl> |
+| Biblioteca<br/>                  | <dl> <dt>WSManDisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>WSMAuto.dll</dt> </dl>   |
 
 
@@ -131,13 +131,13 @@ End Sub
 
 <dl> <dt>
 
-[API de script do WinRM](winrm-scripting-api.md)
+[API de Script WinRM](winrm-scripting-api.md)
 </dt> <dt>
 
 [Enumerando ou listando todas as instâncias de um recurso](enumerating-or-listing-all-instances-of-a-resource.md)
 </dt> <dt>
 
-[criando scripts no Gerenciamento Remoto do Windows](scripting-in-windows-remote-management.md)
+[Scripts no Windows Gerenciamento Remoto](scripting-in-windows-remote-management.md)
 </dt> </dl>
 
  

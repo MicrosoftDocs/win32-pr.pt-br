@@ -619,12 +619,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (64)
 </dt> </dl>
 
 Indica a versão do elemento físico.
 
-Essa propriedade é herdada do [**CIM \_ físicoelement**](cim-physicalelement.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalElement.**](cim-physicalelement.md)
 
 </dd> <dt>
 
@@ -637,12 +637,12 @@ Tipo de dados: **real32**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("libras")
+Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("quilogramas")
 </dt> </dl>
 
-Peso do pacote físico, em libras.
+Peso do pacote físico, em quilogramas.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> <dt>
 
@@ -660,17 +660,17 @@ Qualificadores: [**unidades**](/windows/desktop/WmiSdk/standard-qualifiers) ("po
 
 Largura do pacote físico, em polegadas.
 
-Essa propriedade é herdada do [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
+Essa propriedade é herdada de [**CIM \_ PhysicalPackage.**](cim-physicalpackage.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe de **\_ placa CIM** é derivada do [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
+A **classe \_ cartão CIM** é derivada de [**CIM \_ PhysicalPackage**](cim-physicalpackage.md).
 
-O WMI não implementa essa classe. Para obter mais informações sobre classes derivadas **do \_ cartão CIM**, consulte [classes Win32](win32-provider.md).
+O WMI não implementa essa classe. Para obter mais informações sobre classes derivadas do **cartão CIM, \_** consulte [Classes Win32](win32-provider.md).
 
-Esta documentação é derivada das descrições da classe CIM publicadas pela DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, obedecer aos padrões de documentação do Microsoft SDK ou fornecer mais informações.
+Esta documentação é derivada das descrições da classe CIM publicadas pelo DMTF. A Microsoft pode ter feito alterações para corrigir erros secundários, estar em conformidade com os padrões de documentação do SDK da Microsoft ou fornecer mais informações.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -680,8 +680,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -690,7 +690,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 <dl> <dt>
 
-[**\_PHYSICALPACKAGE CIM**](cim-physicalpackage.md)
+[**CIM \_ PhysicalPackage**](cim-physicalpackage.md)
 </dt> </dl>
 
  

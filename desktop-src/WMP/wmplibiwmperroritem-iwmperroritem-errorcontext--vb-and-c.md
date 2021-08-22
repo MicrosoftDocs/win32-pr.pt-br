@@ -1,11 +1,11 @@
 ---
-title: Propriedade IWMPErrorItem errorContext
-description: A propriedade errorContext Obtém um valor que indica o contexto do erro.
+title: Propriedade errorContext de IWMPErrorItem
+description: A propriedade errorContext obtém um valor que indica o contexto do erro.
 ms.assetid: e9ebd636-e611-49c6-9533-a02ff74db7bc
 keywords:
 - Propriedade errorContext Windows Media Player
-- Propriedade errorContext Windows Media Player, interface IWMPErrorItem
-- Interface IWMPErrorItem Windows Media Player, Propriedade errorContext
+- propriedade errorContext Windows Media Player interface , IWMPErrorItem
+- Interface IWMPErrorItem Windows Media Player , propriedade errorContext
 topic_type:
 - apiref
 api_name:
@@ -16,16 +16,16 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 50f421a681708610a99f05eb7263660bb15b7dce
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 60320df74d139e1cba3802c664ebff96e4531f569cd3321ae8821fc89ea5b0fd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105755916"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053644"
 ---
-# <a name="iwmperroritemerrorcontext-property"></a>Propriedade IWMPErrorItem:: errorContext
+# <a name="iwmperroritemerrorcontext-property"></a>Propriedade IWMPErrorItem::errorContext
 
-A propriedade **errorContext** Obtém um valor que indica o contexto do erro.
+A **propriedade errorContext** obtém um valor que indica o contexto do erro.
 
 ## <a name="syntax"></a>Syntax
 
@@ -46,11 +46,11 @@ Public ReadOnly Property errorContext As System.Object
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Um **System. Object** que é o contexto de erro.
+Um **System.Object que** é o contexto de erro.
 
 ## <a name="remarks"></a>Comentários
 
-O contexto de erro é uma informação que é usada pela Microsoft para fornecer informações adicionais para a equipe de suporte técnico.
+O contexto de erro são informações que são usadas pela Microsoft para fornecer informações adicionais para a equipe de suporte técnico.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -58,7 +58,7 @@ O contexto de erro é uma informação que é usada pela Microsoft para fornecer
 
 | Requisito | Valor |
 |----------------------|------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/>   | Windows Media Player 9 Series ou posterior<br/>                                                                      |
+| Versão<br/>   | Windows Media Player série 9 ou posterior<br/>                                                                      |
 | Namespace<br/> | **WMPLib**<br/>                                                                                                  |
 | Assembly<br/>  | <dl> <dt>Interop.WMPLib.dll (Interop.WMPLib.dll.dll)</dt> </dl> |
 

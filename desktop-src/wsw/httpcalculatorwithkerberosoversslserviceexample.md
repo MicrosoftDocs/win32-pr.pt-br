@@ -1,29 +1,29 @@
 ---
 title: HttpCalculatorWithKerberosOverSslServiceExample
-description: Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora sobre HTTP, com segurança de modo misto Kerberos sobre SSL.
+description: Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora por HTTP, com kerberos sobre segurança de modo misto SSL.
 ms.assetid: a006ce15-9470-49f7-80d6-8d40ffec8651
 keywords:
-- HttpCalculatorWithKerberosOverSslServiceExample nativo – Web-Services
+- HttpCalculatorWithKerberosOverSslServiceExample Native-Web-Services
 - WWSAPI
-- WWS
+- Wws
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0c970a66a0884f9a28ec7ab9157444be9ddcca6
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 6c69ccf64482368212d35ccbf93d234088b3e8516e7d9669c08bb321b4c91c04
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104364482"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119590046"
 ---
 # <a name="httpcalculatorwithkerberosoversslserviceexample"></a>HttpCalculatorWithKerberosOverSslServiceExample
 
-Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora sobre HTTP, com segurança de modo misto Kerberos sobre SSL. Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL que também fornece autenticação de servidor. A autenticação de cliente é fornecida por um tíquete APREQ do Kerberos em um cabeçalho WS-Security na mensagem.
+Este exemplo mostra como usar o host de serviço para hospedar um serviço de calculadora por HTTP, com kerberos sobre segurança de modo misto SSL. Nessa configuração, a conexão de transporte é protegida (assinada, criptografada) pelo SSL, que também fornece autenticação de servidor. A autenticação do cliente é fornecida por um tíquete kerberos APREQ em um WS-Security na mensagem.
 
--   [CalculatorServiceKerberosOverSsl. cpp](#calculatorservicekerberosoversslcpp)
--   [CalculatorService. WSDL](#calculatorservicewsdl)
+-   [CalculatorServiceKerberosOverSsl.cpp](#calculatorservicekerberosoversslcpp)
+-   [CalculatorService.wsdl](#calculatorservicewsdl)
 -   [Makefile](#makefile)
 
-## <a name="calculatorservicekerberosoversslcpp"></a>CalculatorServiceKerberosOverSsl. cpp
+## <a name="calculatorservicekerberosoversslcpp"></a>CalculatorServiceKerberosOverSsl.cpp
 
 
 ```C++
@@ -271,7 +271,7 @@ Exit:
 
 
 
-## <a name="calculatorservicewsdl"></a>CalculatorService. WSDL
+## <a name="calculatorservicewsdl"></a>CalculatorService.wsdl
 
 ``` syntax
 <wsdl:definitions 
@@ -396,9 +396,9 @@ clean:
     $(CLEANUP)
 ```
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Introdução com o Windows Media Format SDK (preterido)
-description: Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte codec de áudio e vídeo do Windows Media e APIs do DSP. | Introdução
+title: Ponto de Partida com Windows SDK de Formato de Mídia (preterido)
+description: Para ver a documentação atual sobre Windows de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e APIs DSP. | Ponto de Partida
 ms.assetid: dfbae491-1041-4153-ba19-214465f5d641
 keywords:
-- Introdução o formato Windows Media
+- Ponto de Partida formato de mídia do Windows
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b06e22022ff993e6f4cfe27a45b4aa2d04fecb23
-ms.sourcegitcommit: 4570ac533e129ff88b23f2c2b69e0140ead3a4a4
+ms.openlocfilehash: dfbaf05e0b6558840e872b62fccc1b442ed55fddb21cf4d46e77416b38b74b92
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105764039"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119591206"
 ---
 # <a name="getting-started"></a>Introdução
 
-Para obter a documentação atual sobre os codecs de mídia do Windows e os processadores de sinal digital, consulte [codec de áudio e vídeo do Windows Media e APIs do DSP.](/previous-versions//dd464626(v=vs.85))
+Para ver a documentação atual Windows codecs de mídia e processadores de sinal digital, consulte Windows codec de áudio e vídeo de mídia e [APIs DSP.](/previous-versions//dd464626(v=vs.85))
 
  
 

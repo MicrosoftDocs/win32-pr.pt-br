@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b37e2acb97806ad6cf72736d39e0c9a0e6c6d217
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ed3f5c805c72f83bfab28a9272448e87a7ec34053979e1066f06196584e18155
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105749337"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509276"
 ---
 # <a name="current-location-attribute"></a>Current-Location atributo
 
@@ -58,7 +58,7 @@ O local do computador para um objeto que foi movido.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -79,7 +79,7 @@ O local do computador para um objeto que foi movido.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -100,7 +100,7 @@ O local do computador para um objeto que foi movido.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -121,7 +121,7 @@ O local do computador para um objeto que foi movido.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -142,7 +142,7 @@ O local do computador para um objeto que foi movido.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |
@@ -163,7 +163,7 @@ O local do computador para um objeto que foi movido.
 | ID do link                | \-                                                             |
 | MAPI-Id                | \-                                                             |
 | System-Only            | Falso                                                          |
-| É de valor único       | True                                                           |
+| É de valor único       | Verdadeiro                                                           |
 | É indexado             | Falso                                                          |
 | No catálogo global      | Falso                                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                   |

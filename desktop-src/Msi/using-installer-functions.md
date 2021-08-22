@@ -1,19 +1,19 @@
 ---
-description: Para adicionar Windows Installer funcionalidade ao seu aplicativo, use as funções de serviço do instalador.
+description: para adicionar Windows Installer funcionalidade ao seu aplicativo, use as funções de serviço do instalador.
 ms.assetid: 1cb0fd3e-5f39-4a3f-8348-93e74496903d
 title: Usando funções do instalador
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: da4718c462119ac0e5bef018a595d17551561684
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d7dd95671d08fea4fbc3186eaa6736a33ea7e03c1d1f24cb8beb17140972a943
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105748754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119499346"
 ---
 # <a name="using-installer-functions"></a>Usando funções do instalador
 
-Para adicionar Windows Installer funcionalidade ao seu aplicativo, use as funções de serviço do instalador. Como o instalador é um utilitário de instalação e um sistema de gerenciamento de componentes, um aplicativo que usa o instalador deve incorporar as funções de serviço do instalador como parte da operação normal.
+para adicionar Windows Installer funcionalidade ao seu aplicativo, use as funções de serviço do instalador. Como o instalador é um utilitário de instalação e um sistema de gerenciamento de componentes, um aplicativo que usa o instalador deve incorporar as funções de serviço do instalador como parte da operação normal.
 
 Os tópicos e procedimentos a seguir explicam como implementar a funcionalidade do instalador em seu aplicativo:
 

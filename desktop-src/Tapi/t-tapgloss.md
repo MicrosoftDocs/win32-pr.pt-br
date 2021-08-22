@@ -5,12 +5,12 @@ ms.assetid: 36b1d6c3-2d57-4b38-a35f-6bf632411c6e
 title: T (API de telefonia)
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 342a27d4ed54458f8645ac5bb49b7ea49baafb02
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9fef6d897365042552429cc7679363c2e23152cef6492dfc84f25b6b32fb7a99
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828324"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119518396"
 ---
 # <a name="t-telephony-api"></a>T (API de telefonia)
 
@@ -70,7 +70,7 @@ Conjunto de funções que permite a programação de dispositivos baseados em li
 <span id="tapi2.telephony_service_provider_interface_tspi__tapgloss"></span><span id="TAPI2.TELEPHONY_SERVICE_PROVIDER_INTERFACE_TSPI__TAPGLOSS"></span>**Interface do provedor de serviços de telefonia (TSPI)**
 </dt> <dd>
 
-Ferramenta para criar provedores de serviços para sistemas operacionais Microsoft Windows. TSPI define como a rede compartilha informações com a telefonia do Windows, que, por sua vez, conversa com a API, que se comunica com os aplicativos de telefonia do Windows. Para obter informações adicionais, consulte [TSPI (interface do provedor de serviços de telefonia)](./telephony-service-provider-interface-tspi-.md).
+ferramenta para criar provedores de serviços para sistemas operacionais Microsoft Windows. TSPI define como a rede compartilha informações com Windows telefonia, que, por sua vez, conversa com a API, que se comunica com os aplicativos de telefonia Windows. Para obter informações adicionais, consulte [TSPI (interface do provedor de serviços de telefonia)](./telephony-service-provider-interface-tspi-.md).
 
 </dd> <dt>
 

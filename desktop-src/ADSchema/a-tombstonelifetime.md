@@ -4,8 +4,8 @@ description: O número de dias antes que um objeto excluído seja removido dos s
 ms.assetid: 58898097-912b-4fe6-b6ea-91f49aaa2b1b
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Tombstone-Lifetime do atributo AD
-- Esquema de AD do atributo tombstoneLifetime
+- Tombstone-Lifetime atributo AD Schema
+- Esquema do AD do atributo tombstoneLifetime
 topic_type:
 - apiref
 api_name:
@@ -23,19 +23,19 @@ ms.locfileid: "119644946"
 ---
 # <a name="tombstone-lifetime-attribute"></a>Tombstone-Lifetime atributo
 
-O número de dias antes que um objeto excluído seja removido dos serviços de diretório. Isso ajuda a remover objetos de servidores replicados e a impedir que as restaurações reintroduzam um objeto excluído. Esse valor está no objeto de serviço de diretório na NIC de configuração.
+O número de dias antes que um objeto excluído seja removido dos serviços de diretório. Isso ajuda a remover objetos de servidores replicados e impedir que restaurações reintrodução de um objeto excluído. Esse valor está no objeto Serviço de Diretório na NIC de configuração.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------------------------|
 | CN                | Tombstone-Lifetime                                        |
-| LDAP-Display-Name | tombstoneLifetime                                         |
+| Ldap-Display-Name | Tombstonelifetime                                         |
 | Tamanho              | 4 bytes. O padrão é 60 dias quando nenhum valor é inserido. |
 | Privilégio de atualização  | \-                                                        |
 | Frequência de atualização  | \-                                                        |
 | Attribute-Id      | 1.2.840.113556.1.2.54                                     |
-| System-ID-GUID    | 16c3a860-1273-11d0-a060-00aa006c33ed                      |
+| System-Id-Guid    | 16c3a860-1273-11d0-a060-00aa006c33ed                      |
 | Syntax            | [**Enumeração**](s-enumeration.md)                      |
 
 
@@ -44,7 +44,7 @@ O número de dias antes que um objeto excluído seja removido dos serviços de d
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -59,15 +59,15 @@ O número de dias antes que um objeto excluído seja removido dos serviços de d
 | ID do link                | \-                                               |
 | MAPI-Id                | 0x8145                                           |
 | System-Only            | Falso                                            |
-| É de valor único       | Verdadeiro                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -80,19 +80,19 @@ O número de dias antes que um objeto excluído seja removido dos serviços de d
 | ID do link                | \-                                               |
 | MAPI-Id                | 0x8145                                           |
 | System-Only            | Falso                                            |
-| É de valor único       | Verdadeiro                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -101,15 +101,15 @@ O número de dias antes que um objeto excluído seja removido dos serviços de d
 | ID do link                | \-                                               |
 | MAPI-Id                | 0x8145                                           |
 | System-Only            | Falso                                            |
-| É de valor único       | Verdadeiro                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -122,15 +122,15 @@ O número de dias antes que um objeto excluído seja removido dos serviços de d
 | ID do link                | \-                                               |
 | MAPI-Id                | 0x8145                                           |
 | System-Only            | Falso                                            |
-| É de valor único       | Verdadeiro                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -143,15 +143,15 @@ O número de dias antes que um objeto excluído seja removido dos serviços de d
 | ID do link                | \-                                               |
 | MAPI-Id                | 0x8145                                           |
 | System-Only            | Falso                                            |
-| É de valor único       | Verdadeiro                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -164,15 +164,15 @@ O número de dias antes que um objeto excluído seja removido dos serviços de d
 | ID do link                | \-                                               |
 | MAPI-Id                | 0x8145                                           |
 | System-Only            | Falso                                            |
-| É de valor único       | Verdadeiro                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 
@@ -185,15 +185,15 @@ O número de dias antes que um objeto excluído seja removido dos serviços de d
 | ID do link                | \-                                               |
 | MAPI-Id                | 0x8145                                           |
 | System-Only            | Falso                                            |
-| É de valor único       | Verdadeiro                                             |
+| Tem valor único       | Verdadeiro                                             |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
 | System-Flags           | 0x00000010                                       |
-| Classes usadas em        | [**NTDS-serviço**](c-ntdsservice.md)<br/> |
+| Classes usadas em        | [**NTDS-Service**](c-ntdsservice.md)<br/> |
 
 
 

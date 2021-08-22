@@ -1,27 +1,27 @@
 ---
-description: Especifica QP. Os valores possíveis são 1,0 a 31,0.
+description: Especifica qp. Os valores possíveis são de 1,0 a 31,0.
 ms.assetid: 927c2fd3-9790-4e23-98f5-f3ac0c0d77dc
-title: Propriedade MFPKEY_QPPERFRAME (Wmcodecdsp. h)
+title: MFPKEY_QPPERFRAME propriedade (Wmcodecdsp.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: bccaabcc5c123f16f00d43ac81b77e21c155b5c0
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 00c9bf24c3d4d6851fee63cc6352bdc6a1f550a380f42c58795e6fe6f27a5a0e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105814101"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119663226"
 ---
-# <a name="mfpkey_qpperframe-property"></a>\_Propriedade MFPKEY QPPERFRAME
+# <a name="mfpkey_qpperframe-property"></a>Propriedade \_ QPPERFRAME MFPKEY
 
-Especifica QP. Os valores possíveis são 1,0 a 31,0.
+Especifica qp. Os valores possíveis são de 1,0 a 31,0.
 
 ## <a name="constant-for-ipropertybag"></a>Constante para IPropertyBag
 
-Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-propsys-ipropertystore).
+Disponível somente usando [**IPropertyStore.**](/windows/win32/api/propsys/nn-propsys-ipropertystore)
 
 ## <a name="data-type"></a>Tipo de Dados
 
-**R8 de VT \_**
+**VT \_ R8**
 
 ## <a name="default-value"></a>Valor padrão
 
@@ -38,7 +38,7 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 | Requisito | Valor |
 |-------------------|-----------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows Vista ou Windows 7<br/>                                                   |
-| parâmetro<br/> | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>Wmcodecdsp.h</dt> </dl> |
 
 
 
@@ -46,7 +46,7 @@ Disponível apenas usando [**IPropertyStore**](/windows/win32/api/propsys/nn-pro
 
 <dl> <dt>
 
-[Propriedades de Media Foundation](media-foundation-properties.md)
+[Media Foundation propriedades](media-foundation-properties.md)
 </dt> </dl>
 
  

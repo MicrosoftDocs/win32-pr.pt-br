@@ -4,9 +4,9 @@ description: Chamado quando uma janela do RemoteApp é exibida.
 ms.assetid: B1E83486-50CB-4CA4-BD01-2C72938335AF
 ms.tgt_platform: multiple
 keywords:
-- Serviços de Área de Trabalho Remota do método OnRemoteWindowDisplayed
-- Método OnRemoteWindowDisplayed Serviços de Área de Trabalho Remota, interface IMsTscAxEvents
-- Serviços de Área de Trabalho Remota de interface IMsTscAxEvents, método OnRemoteWindowDisplayed
+- Método OnRemoteWindowDisplayed Serviços de Área de Trabalho Remota
+- O método OnRemoteWindowDisplayed Serviços de Área de Trabalho Remota interface , IMsTscAxEvents
+- Interface IMsTscAxEvents Serviços de Área de Trabalho Remota método , OnRemoteWindowDisplayed
 topic_type:
 - apiref
 api_name:
@@ -17,14 +17,14 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f03029f31e1ce2133c74c92c0d6d57f192e4d85f
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 6985a71fe6351a81b2daef69401dfd5c65543e9984fd64c28a120704a34d5a8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104369727"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119512106"
 ---
-# <a name="imstscaxeventsonremotewindowdisplayed-method"></a>Método IMsTscAxEvents:: OnRemoteWindowDisplayed
+# <a name="imstscaxeventsonremotewindowdisplayed-method"></a>Método IMsTscAxEvents::OnRemoteWindowDisplayed
 
 Chamado quando uma janela do RemoteApp é exibida.
 
@@ -45,34 +45,34 @@ void OnRemoteWindowDisplayed(
 
 <dl> <dt>
 
-*vbDisplayed* \[ no\]
+*vbDisplayed* \[ Em\]
 </dt> <dd>
 
-Tipo: **\_ booliano de variante**
+Tipo: **VARIANT \_ BOOL**
 
-Indica se a janela do RemoteApp é exibida ou oculta.
+Indica se a janela RemoteApp é exibida ou oculta.
 
 </dd> <dt>
 
-*HWND* \[ no\]
+*hwnd* \[ Em\]
 </dt> <dd>
 
-Tipo: **HWND**
+Digite: **HWND**
 
-O identificador da janela exibida.
+O alça da janela exibida.
 
 </dd> <dt>
 
-*janelaattribute* \[ no\]
+*windowAttribute* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md)**
 
-Um valor da enumeração [**RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md) que especifica mais informações sobre o evento.
+Um valor da [**enumeração RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md) que especifica mais informações sobre o evento.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -96,7 +96,7 @@ Esse método não retorna um valor.
 [**RemoteWindowDisplayedAttribute**](remotewindowdisplayedattribute.md)
 </dt> <dt>
 
-[**IMsTscAxEvents**](imstscaxevents-interface.md)
+[**Imstscaxevents**](imstscaxevents-interface.md)
 </dt> </dl>
 
  

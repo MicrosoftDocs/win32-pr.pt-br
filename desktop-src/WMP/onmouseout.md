@@ -1,9 +1,9 @@
 ---
-title: onmouseout
-description: O manipulador de eventos onratoout manipula um evento que ocorre quando o usuário move o ponteiro para fora do elemento.
+title: Onmouseout
+description: O manipulador de eventos onmouseout lida com um evento que ocorre quando o usuário move o ponteiro para fora do elemento.
 ms.assetid: 8d4c5aec-0d4e-4912-a5e6-9aa1cf3e0971
 keywords:
-- Windows Media Player onmouseout
+- onmouseout Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119616726"
 ---
-# <a name="onmouseout"></a>onmouseout
+# <a name="onmouseout"></a>Onmouseout
 
-O manipulador de eventos **onratoout** manipula um evento que ocorre quando o usuário move o ponteiro para fora do elemento.
+O **manipulador de eventos onmouseout** lida com um evento que ocorre quando o usuário move o ponteiro para fora do elemento.
 
 ``` syntax
 onmouseout
@@ -30,7 +30,7 @@ onmouseout
 
 ## <a name="remarks"></a>Comentários
 
-Este manipulador de eventos não é aplicável ao elemento **playlist** .
+Esse manipulador de eventos não é aplicável ao **elemento PLAYLIST.**
 
 ## <a name="requirements"></a>Requisitos
 

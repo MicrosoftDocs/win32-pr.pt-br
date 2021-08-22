@@ -3,9 +3,9 @@ title: Método IWMPMedia setItemInfo
 description: O método setItemInfo define o valor do atributo especificado para o item de mídia.
 ms.assetid: 247bbba5-7d9b-489d-8e41-ae8ec6e266fd
 keywords:
-- método setItemInfo Windows Media Player
+- Windows Media Player do método setItemInfo
 - método setItemInfo Windows Media Player, interface IWMPMedia
-- Interface IWMPMedia Windows Media Player, método setItemInfo
+- Windows Media Player de interface IWMPMedia, método setItemInfo
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 6702c80c13090a370e2922ccecade49bc06645de
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 24265e94880899df96aa954f2df30ca6e4f5ae1e5b4fc20c419085e3f9f0ab14
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105811779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053634"
 ---
 # <a name="iwmpmediasetiteminfo-method"></a>Método IWMPMedia:: setItemInfo
 
@@ -69,7 +69,7 @@ Um **System. String** que é o novo valor.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -83,7 +83,7 @@ Antes de chamar esse método, você deve ter acesso completo à biblioteca. Para
 
 Observação
 
-Se você inserir o controle do Windows Media Player em seu aplicativo, os atributos de arquivo alterados não serão gravados no arquivo de mídia digital até que o usuário execute o Windows Media Player.
+se você inserir o controle de Windows Media Player em seu aplicativo, os atributos de arquivo que você alterar não serão gravados no arquivo de mídia digital até que o usuário seja executado Windows Media Player.
 
 ## <a name="examples"></a>Exemplos
 

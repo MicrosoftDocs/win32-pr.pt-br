@@ -3,19 +3,19 @@ title: Atributos de ambiente
 description: Atributos de ambiente
 ms.assetid: 9dc8c770-4de3-42d8-b388-4426a4b0e788
 keywords:
-- Capas do Windows Media Player, atributos de ambiente
+- aparências de Windows Media Player, atributos de ambiente
 - capas, atributos de ambiente
 - referência para capas, atributos de ambiente
 - atributos de ambiente
 - atributos, ambiente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 5157dc3cbb528cf546ff91d879d00c9b3ec2de8f
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: fc81cdfb1775f985ecc63e8823bb36b3107d749a836a792dc9f72dc42b5832a7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822423"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119509676"
 ---
 # <a name="ambient-attributes"></a>Atributos de ambiente
 
@@ -35,7 +35,7 @@ Os seguintes atributos são ambiente.
 | [clippingColor](ambientattributes-clippingcolor.md)             | Especifica ou recupera a cor a ser recortada do bitmap **clippingImage** .                                                           |
 | [clippingImage](ambientattributes-clippingimage.md)             | Especifica ou recupera a região para a qual o controle será recortado.                                                                                 |
 | [elementType](ambientattributes-elementtype.md)                 | Recupera o tipo do elemento (por exemplo, **botão**).                                                                             |
-| [habilitado](ambientattributes-enabled.md)                         | Especifica ou recupera um valor que indica se o controle está habilitado ou desabilitado.                                                     |
+| [Habilitado](ambientattributes-enabled.md)                         | Especifica ou recupera um valor que indica se o controle está habilitado ou desabilitado.                                                     |
 | [altura](ambientattributes-height.md)                           | Especifica ou recupera a altura do controle.                                                                                         |
 | [horizontalAlignment](ambientattributes-horizontalalignment.md) | Especifica ou recupera um valor que indica o posicionamento horizontal do controle quando a **exibição** ou a **subexibição** pai é redimensionada. |
 | [id](ambientattributes-id.md)                                   | Especifica ou recupera o identificador de um controle. Só pode ser definido em tempo de design.                                                       |
@@ -47,13 +47,13 @@ Os seguintes atributos são ambiente.
 | [Parada](ambientattributes-tabstop.md)                         | Especifica ou recupera um valor que indica se o controle estará na ordem de tabulação.                                               |
 | [início](ambientattributes-top.md)                                 | Especifica ou recupera a coordenada superior do controle.                                                                                 |
 | [verticalAlignment](ambientattributes-verticalalignment.md)     | Especifica ou recupera um valor que indica o posicionamento vertical do controle quando a **exibição** ou a **subexibição** pai é redimensionada.   |
-| [visível](ambientattributes-visible.md)                         | Especifica ou recupera a visibilidade do controle.                                                                                     |
+| [visible](ambientattributes-visible.md)                         | Especifica ou recupera a visibilidade do controle.                                                                                     |
 | [width](ambientattributes-width.md)                             | Especifica ou recupera a largura do controle.                                                                                          |
 | [zIndex](ambientattributes-zindex.md)                           | Especifica ou recupera a ordem na qual o controle é renderizado.                                                                        |
 
 
 
- 
+ 
 
 Os métodos a seguir são ambientes.
 
@@ -68,7 +68,7 @@ Os métodos a seguir são ambientes.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -77,9 +77,9 @@ Os métodos a seguir são ambientes.
 [**Referência de programação de capa**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: Função AllMemoryBaory
-description: Bloqueia a execução de todos os threads em um grupo até que todos os acessos de memória tenham sido concluídos.
+title: Função AllMemoryBarrier
+description: Bloqueia a execução de todos os threads em um grupo até que todos os acessos à memória tenham sido concluídos.
 ms.assetid: 63593de6-7b92-4f29-bcd9-21c69b9defcb
 keywords:
-- Função AllMemoryBaory HLSL
+- HLSL da função AllMemoryBarrier
 topic_type:
 - apiref
 api_name:
@@ -20,9 +20,9 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119626746"
 ---
-# <a name="allmemorybarrier-function"></a>Função AllMemoryBaory
+# <a name="allmemorybarrier-function"></a>Função AllMemoryBarrier
 
-Bloqueia a execução de todos os threads em um grupo até que todos os acessos de memória tenham sido concluídos.
+Bloqueia a execução de todos os threads em um grupo até que todos os acessos à memória tenham sido concluídos.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,17 +40,17 @@ Essa função não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Uma barreira de memória garante que as operações de memória pendentes tenham sido concluídas. Os threads são sincronizados em barreiras groupSync. Isso pode parar um thread ou threads se as operações de memória estão em andamento.
+Uma barreira de memória garante que as operações de memória pendentes tenham sido concluídas. Os threads são sincronizados em barreiras de GroupSync. Isso pode paralisar um thread ou threads se as operações de memória estiverem em andamento.
 
-### <a name="minimum-shader-model"></a>Modelo de sombreador mínimo
+### <a name="minimum-shader-model"></a>Modelo de sombreamento mínimo
 
-Essa função tem suporte nos modelos de sombreador a seguir.
+Essa função tem suporte nos seguintes modelos de sombreador.
 
 
 
 | Modelo de Sombreador                                                                | Com suporte |
 |-----------------------------------------------------------------------------|-----------|
-| [Modelo de sombreador 5](d3d11-graphics-reference-sm5.md) e modelos de sombreador superior | sim       |
+| [Modelo](d3d11-graphics-reference-sm5.md) de sombreador 5 e modelos de sombreador mais altos | sim       |
 
 
 
@@ -60,7 +60,7 @@ Essa função tem suporte nos seguintes tipos de sombreadores:
 
 
 
-| Vértice | Casco | Domínio | Geometry | Pixel | Computação |
+| Vértice | Envoltória | Domínio | Geometry | 16x16 | Computação |
 |--------|------|--------|----------|-------|---------|
 |        |      |        |          |       | x       |
 

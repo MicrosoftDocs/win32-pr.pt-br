@@ -3,8 +3,8 @@ title: Estrutura de MPFASTPATH_DATA (MpClient. h)
 description: Notificação de atualização do FastPath.
 ms.assetid: E19F153D-DD46-4E27-9A4B-33586794DAC2
 keywords:
-- Recursos do ambiente Windows herdado da estrutura de MPFASTPATH_DATA
-- Ponteiro de estrutura de PMPFASTPATH_DATA recursos de ambiente herdados do Windows
+- recursos de ambiente de Windows herdado da estrutura de MPFASTPATH_DATA
+- Windows recursos de ambiente herdados do ponteiro de estrutura do PMPFASTPATH_DATA
 topic_type:
 - apiref
 api_name:
@@ -15,12 +15,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2850a48074fee6984564550683c7fe595d0779ff
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e138e9c45657cfc4ebeba1d1dbeed38070b6e07d09c512ec96835a04702d0c8a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105791591"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119556146"
 ---
 # <a name="mpfastpath_data-structure"></a>\_Estrutura de dados MPFASTPATH
 
@@ -142,9 +142,9 @@ Motivo para remoção de assinatura.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                            |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                            |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>MpClient. h</dt> </dl> |
 
 
 

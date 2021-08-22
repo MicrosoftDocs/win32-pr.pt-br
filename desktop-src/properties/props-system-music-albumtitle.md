@@ -4,12 +4,12 @@ ms.assetid: 7335e246-3a3e-4610-8db5-baddb0b80901
 title: System. Music. campos AlbumTitle
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f0c3acbd72d84dd9369b51d313533c4eb302d15f
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: e4b8ce3ddc8ea258130c9b3bd7c1092f2ae866512c0be8b09958b87a93edf7e8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091874"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597246"
 ---
 # <a name="systemmusicalbumtitle"></a>System. Music. campos AlbumTitle
 

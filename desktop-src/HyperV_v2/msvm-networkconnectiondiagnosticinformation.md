@@ -1,7 +1,7 @@
 ---
 description: Fornece informações sobre a conectividade de rede para uma máquina virtual.
 ms.assetid: 59503c1b-203b-46ec-8a65-f21a746f170f
-title: Classe Msvm_NetworkConnectionDiagnosticInformation
+title: Msvm_NetworkConnectionDiagnosticInformation classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,14 +14,14 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 416392702e5bc06e54fe5a23b6784b87e98b7027
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d12109c562dff014a9864146f8ba27f4863d2249644708d550b308dbd5744a9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922695"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119521016"
 ---
-# <a name="msvm_networkconnectiondiagnosticinformation-class"></a>\_Classe Msvm NetworkConnectionDiagnosticInformation
+# <a name="msvm_networkconnectiondiagnosticinformation-class"></a>Classe Msvm \_ NetworkConnectionDiagnosticInformation
 
 Fornece informações sobre a conectividade de rede para uma máquina virtual.
 
@@ -39,26 +39,26 @@ class Msvm_NetworkConnectionDiagnosticInformation
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ NetworkConnectionDiagnosticInformation** tem estes tipos de membros:
+A **classe Msvm \_ NetworkConnectionDiagnosticInformation** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ NetworkConnectionDiagnosticInformation** tem essas propriedades.
+A **classe Msvm \_ NetworkConnectionDiagnosticInformation** tem essas propriedades.
 
 <dl> <dt>
 
-**RoundTripTime**
+**Roundtriptime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt32**
+Tipo de dados: **uint32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O tempo de ida e volta para a solicitação ping.
+O tempo de ida e volta para a solicitação de ping.
 
 </dd> </dl>
 
@@ -68,10 +68,10 @@ O tempo de ida e volta para a solicitação ping.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, versão 1703 somente \[ para aplicativos da área de trabalho\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

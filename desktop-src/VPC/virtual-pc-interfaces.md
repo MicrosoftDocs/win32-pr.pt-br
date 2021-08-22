@@ -1,23 +1,23 @@
 ---
-title: Interfaces do Windows Virtual PC
-description: As interfaces a seguir têm suporte do Windows Virtual PC.
+title: Windows Interfaces do Virtual PC
+description: as interfaces a seguir têm suporte pelo Windows Virtual PC.
 ms.assetid: de003075-8609-4303-838e-da449b91dc8d
 keywords:
-- PC Virtual PC do Windows, interfaces
+- Windows Virtual PC Virtual PC, interfaces
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f4a505fab360214d92b844c282fe12722281770f
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 963574a5293a7c48b29096e3dbc563c0f2073c7a697f84a86fa0b5750feeabe9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "105794593"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119511756"
 ---
-# <a name="windows-virtual-pc-interfaces"></a>Interfaces do Windows Virtual PC
+# <a name="windows-virtual-pc-interfaces"></a>Windows Interfaces do Virtual PC
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O Virtual PC não está mais disponível para uso a partir de Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
-As interfaces a seguir têm suporte do Windows Virtual PC.
+as interfaces a seguir têm suporte pelo Windows Virtual PC.
 
 
 
@@ -49,11 +49,11 @@ As interfaces a seguir têm suporte do Windows Virtual PC.
 | [**IVMUSBDevice**](ivmusbdevice.md)<br/>                                       | Define a interface para um dispositivo USB conectado ao sistema host.<br/>                                    |
 | [**IVMUSBDeviceCollection**](ivmusbdevicecollection.md)<br/>                   | Define a coleção de dispositivos USB conectados ao sistema host.<br/>                                     |
 | [**IVMVirtualMachine**](ivmvirtualmachine.md)<br/>                             | Define a interface para uma VM.<br/>                                                                        |
-| [**IVMVirtualMachineCollection**](ivmvirtualmachinecollection.md)<br/>         | Define a coleção de VMs no Windows Virtual PC.<br/>                                               |
+| [**IVMVirtualMachineCollection**](ivmvirtualmachinecollection.md)<br/>         | define a coleção de VMs dentro do Windows Virtual PC.<br/>                                               |
 | [**IVMVirtualMachineEvents**](ivmvirtualmachineevents.md)<br/>                 | Define a interface de evento de saída para a interface [**IVMVirtualMachine**](ivmvirtualmachine.md) .<br/> |
 | [**IVMVirtualNetwork**](ivmvirtualnetwork.md)<br/>                             | Define uma rede virtual.<br/>                                                                             |
 | [**IVMVirtualNetworkCollection**](ivmvirtualnetworkcollection.md)<br/>         | Define uma coleção de objetos [**IVMVirtualNetwork**](ivmvirtualnetwork.md) .<br/>                        |
-| [**IVMVirtualPC**](ivmvirtualpc.md)<br/>                                       | Define o objeto de aplicativo do Windows Virtual PC de nível superior.<br/>                                           |
+| [**IVMVirtualPC**](ivmvirtualpc.md)<br/>                                       | define o objeto de aplicativo Windows Virtual PC de nível superior.<br/>                                           |
 | [**IVMVirtualPCEvents**](ivmvirtualpcevents.md)<br/>                           | Define a interface de evento de saída para a interface [**IVMVirtualPC**](ivmvirtualpc.md) .<br/>           |
 
 
@@ -62,11 +62,11 @@ As interfaces a seguir têm suporte do Windows Virtual PC.
 
 ## <a name="note-for-developers-on-64-bit-windows"></a>Observação para desenvolvedores em Windows de 64 bits
 
-Nas edições de 64 bits do Windows, a biblioteca de tipos para o Windows Virtual PC está em um binário de 64 bits (VPC.exe) no diretório% WinDir% \\ System32. Esse diretório não é visível por padrão para processos de 32 bits; O WOW64 mapeia todo o acesso ao diretório% WinDir% \\ System32 para o diretório% windir% \\ SysWOW64 por padrão. O Visual Studio é um binário de 32 bits e, portanto, não pode abrir o arquivo neste local. Para gerar um assembly de interoperabilidade para o Windows Virtual PC, use TlbImp.exe, que vem com o Visual Studio e o SDK do Windows. Para gerar *Microsoft.VirtualPC.Interop.dll*, use a seguinte linha de comando:
+nas edições de 64 bits do Windows, a biblioteca de tipos para Windows Virtual PC está em um binário de 64 bits (VPC.exe) no diretório% WinDir% \\ System32. Esse diretório não é visível por padrão para processos de 32 bits; O WOW64 mapeia todo o acesso ao diretório% WinDir% \\ System32 para o diretório% windir% \\ SysWOW64 por padrão. Visual Studio é um binário de 32 bits e, portanto, não pode abrir o arquivo neste local. para gerar um assembly de interoperabilidade para Windows Virtual PC, use TlbImp.exe, que vem com Visual Studio e SDK do Windows. Para gerar *Microsoft.VirtualPC.Interop.dll*, use a seguinte linha de comando:
 
-**TlbImp.exe/out: * * * Microsoft.VirtualPC.Interop.dll* **/namespace: Microsoft. VirtualPC. Interop% WinDir% \\ System32 \\VPC.exe**
+**TlbImp.exe/out:** _Microsoft.VirtualPC.Interop.dll_ **/namespace: Microsoft. VirtualPC. Interop% windir% \\ System32 \\VPC.exe**
 
-Outras soluções incluem copiar VPC.exe para um diretório diferente onde o compilador pode encontrá-lo, ou usar a ferramenta de OleView.exe da SDK do Windows para extrair um arquivo. idl da biblioteca de tipos no VPC.exe.
+outras soluções incluem copiar VPC.exe para um diretório diferente onde o compilador pode encontrá-lo, ou usar a ferramenta de OleView.exe da SDK do Windows para extrair um arquivo. idl da biblioteca de tipos no VPC.exe.
 
  
 

@@ -46,13 +46,13 @@ class ReadyThread : Thread_V2
 
 ## <a name="members"></a>Membros
 
-A **classe ReadyThread** tem estes tipos de membros:
+A classe **ReadyThread** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A **classe ReadyThread** tem essas propriedades.
+A classe **ReadyThread** tem essas propriedades.
 
 <dl> <dt>
 
@@ -65,7 +65,7 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId(3)
+Qualificadores: WmiDataId (3)
 </dt> </dl>
 
 O valor pelo qual a prioridade está sendo ajustada.
@@ -81,18 +81,18 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId(2)
+Qualificadores: WmiDataId (2)
 </dt> </dl>
 
-O motivo do aumento de prioridade.
+O motivo para o aumento de prioridade.
 
 
 
 | Valor                                                                        | Significado                                                                                                                 |
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | <dl> <dt>0</dt> </dl> | Ignore o incremento.<br/>                                                                                        |
-| <dl> <dt>1</dt> </dl> | Aplique o incremento, que será decair incrementalmente no final de cada quantum.<br/>                              |
-| <dl> <dt>2</dt> </dl> | Aplique o incremento como um aumento que decairá em sua totalidade em quantum (normalmente para a prioridade de prioridade).<br/> |
+| <dl> <dt>1</dt> </dl> | Aplique o incremento, que irá decaimento incrementalmente ao final de cada Quantum.<br/>                              |
+| <dl> <dt>2</dt> </dl> | Aplique o incremento como um aumento que será decaimentodo em sua totalidade no Quantum (normalmente para doação de prioridade).<br/> |
 
 
 
@@ -109,24 +109,24 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId(4)
+Qualificadores: WmiDataId (4)
 </dt> </dl>
 
-Veja a seguir os possíveis sinalizadores de estado:
+A seguir estão os possíveis sinalizadores de Estado:
 
 
 
 | Valor                                                                          | Significado                                                                    |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| <dl> <dt>0x1</dt> </dl> | O thread foi lido do DPC (chamada de procedimento adiado).<br/> |
-| <dl> <dt>0x2</dt> </dl> | No momento, a pilha de kernel é trocada.<br/>                      |
+| <dl> <dt>0x1</dt> </dl> | O thread foi pronto do DPC (chamada de procedimento adiado).<br/> |
+| <dl> <dt>0x2</dt> </dl> | A pilha do kernel está permutada no momento.<br/>                      |
 | <dl> <dt>0x4</dt> </dl> | O espaço de endereço do processo é trocado.<br/>                       |
 
 
 
  
 
-Observe que quando a pilha do kernel ou o espaço de endereço do processo for trocado, haverá um evento ReadyThread adicional após a pilha do kernel ou o espaço de endereço do processo ter sido trocado novamente e o thread estiver pronto para ser expedido.
+Observe que, quando a pilha do kernel ou o espaço de endereço do processo for trocado, haverá um evento ReadyThread adicional depois que a pilha do kernel ou o espaço de endereço do processo tiver sido trocado novamente e o thread estiver pronto para ser despachado.
 
 </dd> <dt>
 
@@ -139,7 +139,7 @@ Tipo de dados: **sint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId(5)
+Qualificadores: WmiDataId (5)
 </dt> </dl>
 
 Reservado.
@@ -149,16 +149,16 @@ Reservado.
 TThreadId
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **uint32**
+Tipo de dados: **UInt32**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: WmiDataId(1), Format("x")
+Qualificadores: WmiDataId (1), formato ("x")
 </dt> </dl>
 
-O identificador de thread do thread que está sendo lido para execução.
+O identificador de thread do thread que está sendo pronto para execução.
 
 </dd> </dl>
 
@@ -177,7 +177,7 @@ O identificador de thread do thread que está sendo lido para execução.
 
 <dl> <dt>
 
-[**Thread \_ V2**](thread-v2.md)
+[**Thread \_ v2**](thread-v2.md)
 </dt> </dl>
 
  

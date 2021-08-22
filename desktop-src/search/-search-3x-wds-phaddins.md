@@ -1,17 +1,17 @@
 ---
 description: Esta seção fornece informações conceituais necessárias para a implementação, a extensão e o teste de manipuladores de protocolo.
 ms.assetid: c76d5c82-d62b-4dd4-9743-9572be61e2be
-title: Desenvolvendo manipuladores de protocolo para o Windows Search
+title: desenvolvendo manipuladores de protocolo para pesquisa de Windows
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e56c237dd4876ae05bcd7b983c4da2708f299a4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 31ef01d36e565471756ee9d6680833401054a6e29b9c570dad7852d316797067
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646881"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119597826"
 ---
-# <a name="developing-protocol-handlers-for-windows-search"></a>Desenvolvendo manipuladores de protocolo para o Windows Search
+# <a name="developing-protocol-handlers-for-windows-search"></a>desenvolvendo manipuladores de protocolo para pesquisa de Windows
 
 Esta seção fornece informações conceituais necessárias para a implementação, a extensão e o teste de manipuladores de protocolo.
 
@@ -28,7 +28,7 @@ Esta seção fornece informações conceituais necessárias para a implementaç�
 Para obter informações conceituais sobre indexação, consulte os seguintes tópicos:
 
 -   Para obter uma visão geral do processo de indexação, consulte [o processo de indexação](-search-indexing-process-overview.md).
--   Para estender o Windows Search para indexar o conteúdo e as propriedades de novos formatos de arquivo e armazenamentos de dados, consulte [estendendo o índice](-search-3x-wds-extidx-overview.md).
+-   para estender Windows pesquisa para indexar o conteúdo e as propriedades dos novos formatos de arquivo e armazenamentos de dados, consulte [estendendo o índice](-search-3x-wds-extidx-overview.md).
 -   Para obter visões gerais do Gerenciador de catálogo e do CSM (Gerenciador de pesquisa de catálogo), consulte [usando o Gerenciador de catálogo](-search-3x-wds-mngidx-catalog-manager.md) e [usando o Gerenciador de escopo de rastreamento](-search-3x-wds-extidx-csm.md).
 
 Para obter um plano de fundo conceitual sobre os tipos de arquivo e manipuladores, consulte os seguintes tópicos:
@@ -39,13 +39,13 @@ Para obter um plano de fundo conceitual sobre os tipos de arquivo e manipuladore
 
 Para obter informações sobre tecnologias relacionadas e sobre como implementar um armazenamento de dados, consulte os seguintes tópicos:
 
--   Os manipuladores de protocolo de pesquisa do Windows usam especificações de design semelhantes ao SharePoint Server e, em geral, podem ser usados de maneira intercambiável. Para obter mais informações, consulte [SharePoint Server Developer Center](https://developer.microsoft.com/office/docs).
--   No Windows 7 e posterior, o SharePoint Search Server 2008 e o MOSS 2007 SP2 também oferecem suporte à pesquisa federada. Para obter mais informações sobre a pesquisa federada e a implantação do servidor de pesquisa 2008 com o Office SharePoint Server 2007, consulte [servidor de pesquisa de pesquisa federada \[ 2008 \] ](/previous-versions/office/bb931109(v=office.14)).
+-   Windows os manipuladores de protocolo de pesquisa usam especificações de design semelhantes ao SharePoint Server e, em geral, podem ser usados de maneira intercambiável. para obter mais informações, consulte [SharePoint Server developer Center](https://developer.microsoft.com/office/docs).
+-   no Windows 7 e posterior, o SharePoint search Server 2008 e o MOSS 2007 SP2 também oferecem suporte à pesquisa federada. para obter mais informações sobre a pesquisa federada e a implantação do servidor de pesquisa 2008 com Office SharePoint server 2007, consulte [servidor de pesquisa de pesquisa federada \[ 2008 \] ](/previous-versions/office/bb931109(v=office.14)).
 -   Para criar um armazenamento de dados do Shell, consulte [implementando as interfaces de objeto de pasta básica](/previous-versions/windows/desktop/legacy/cc144093(v=vs.85)).
 
 Para obter exemplos de código, consulte as seguintes páginas do portal:
 
--   Para obter exemplos de código de pesquisa, consulte [exemplos do SDK do Windows Search](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8).
+-   para obter exemplos de código de pesquisa, consulte [exemplos de SDK de pesquisa Windows](https://www.microsoft.com/downloads/details.aspx?FamilyID=645300AE-5E7A-4CE7-95F0-49793F8F76E8).
 -   Para obter exemplos de código de Shell, consulte [shell SDK Samples](/previous-versions/windows/desktop/legacy/dd940376(v=vs.85)).
 
  

@@ -1,5 +1,5 @@
 ---
-description: O histórico recente de alterações nos dados de encaminhamento de um computador de destino.
+description: O histórico recente de alterações nos dados de encaminhamento para um computador de destino.
 ms.assetid: 621e2734-fc75-4e7a-9fae-de3d1b0272ae
 ms.tgt_platform: multiple
 title: Classe TargetForwardingHistory
@@ -26,16 +26,16 @@ api_type:
 - DllExport
 api_location:
 - BEvtCol.exe
-ms.openlocfilehash: 7fb713f98709f65de5fa32424f8a3484edaac758
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: a58168995adf81f01d20486bcb7ceeef85b9424b2034da98ef628e098a674f39
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104089682"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119529636"
 ---
 # <a name="targetforwardinghistory-class"></a>Classe TargetForwardingHistory
 
-O histórico recente de alterações nos dados de encaminhamento de um computador de destino.
+O histórico recente de alterações nos dados de encaminhamento para um computador de destino.
 
 A sintaxe a seguir é simplificada do código MOF (Managed Object Format) e inclui todas as propriedades herdadas.
 
@@ -62,13 +62,13 @@ class TargetForwardingHistory
 
 ## <a name="members"></a>Membros
 
-A classe **TargetForwardingHistory** tem estes tipos de membros:
+A **classe TargetForwardingHistory** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **TargetForwardingHistory** tem essas propriedades.
+A **classe TargetForwardingHistory** tem essas propriedades.
 
 <dl> <dt>
 
@@ -81,10 +81,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **corrigidos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-As informações do ponto de extremidade do servidor do coletor. Essa propriedade é formatada como uma cadeia de caracteres de *host*:*porta* .
+As informações de ponto de extremidade do servidor coletor. Essa propriedade é formatada como um *host*: cadeia *de caracteres de* porta.
 
 </dd> <dt>
 
@@ -97,7 +97,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **corrigidos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 O nome do computador de destino.
@@ -107,16 +107,16 @@ O nome do computador de destino.
 **ConnectedSince**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **DATETIME**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **corrigidos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-O carimbo de data/hora que indica quando a conexão foi estabelecida para os dados de encaminhamento.
+O timestamp que indica quando a conexão foi estabelecida para os dados de encaminhamento.
 
 </dd> <dt>
 
@@ -129,7 +129,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **corrigidos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 O destino dos dados de encaminhamento, como um nome de arquivo.
@@ -145,7 +145,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **corrigidos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 O formato usado para gerar o destino dos dados de encaminhamento.
@@ -155,16 +155,16 @@ O formato usado para gerar o destino dos dados de encaminhamento.
 **DisconnectedSince**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **DATETIME**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **corrigidos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-O carimbo de data/hora que indica quando a conexão foi desconectada.
+O timestamp que indica quando a conexão foi desconectada.
 
 </dd> <dt>
 
@@ -177,10 +177,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **corrigidos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Uma mensagem de erro que descreve um erro encontrado. Essa propriedade estará vazia se nenhum erro for encontrado.
+Uma mensagem de erro que descreve um erro encontrado. Essa propriedade será vazia se nenhum erro for encontrado.
 
 </dd> <dt>
 
@@ -193,7 +193,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **corrigidos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 O tipo de arquivo que contém os dados de encaminhamento, como ETL.
@@ -209,10 +209,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**fixo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Fixo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-As informações do ponto de extremidade do computador de destino, no formato legível por humanos. Essa propriedade é formatada como uma cadeia de caracteres de *host*:*porta* . Por exemplo, "127.0.0.1:50000".
+As informações de ponto de extremidade do computador de destino, em formato acessível por humanos. Essa propriedade é formatada como um *host*: cadeia *de caracteres de* porta. Por exemplo, "127.0.0.1:50000".
 
 </dd> <dt>
 
@@ -225,10 +225,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**fixo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Fixo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-O SMBIOS **GUID** do computador de destino.
+O **GUID** SMBIOS do computador de destino.
 
 </dd> <dt>
 
@@ -241,7 +241,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**fixo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [**Chave**](/windows/desktop/WmiSdk/key-qualifier), [**Fixo**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
 O endereço MAC do computador de destino.
@@ -251,16 +251,16 @@ O endereço MAC do computador de destino.
 **WmiDateTime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **DATETIME**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [ **fixos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
+Qualificadores: [ **corrigidos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers)
 </dt> </dl>
 
-Carimbo de data/hora de quando essa alteração de estado foi registrada.
+O data/hora de quando essa alteração de estado foi registrada.
 
 </dd> </dl>
 
@@ -272,8 +272,8 @@ Carimbo de data/hora de quando essa alteração de estado foi registrada.
 |-------------------------------------|------------------------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Nenhum compatível<br/>                                                                            |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                       |
-| Namespace<br/>                | Raiz \\ do Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
-| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI. mof</dt> </dl> |
+| Namespace<br/>                | Root \\ Microsoft \\ Windows \\ BootEventCollector<br/>                                              |
+| MOF<br/>                      | <dl> <dt>BootEventCollectorWMI.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>BEvtCol.exe</dt> </dl>               |
 
 
@@ -282,7 +282,7 @@ Carimbo de data/hora de quando essa alteração de estado foi registrada.
 
 <dl> <dt>
 
-[Provedor WMI do coletor de eventos de inicialização](boot-event-collector-wmi-provider-portal.md)
+[Provedor WMI do Coletor de Eventos de Inicialização](boot-event-collector-wmi-provider-portal.md)
 </dt> </dl>
 
  

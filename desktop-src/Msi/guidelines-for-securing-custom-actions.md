@@ -1,19 +1,19 @@
 ---
-description: Para ajudar a manter uma instalação de software segura, siga estas diretrizes ao criar uma Windows Installer ação personalizada.
+description: para ajudar a manter uma instalação de software segura, siga estas diretrizes ao criar uma Windows Installer ação personalizada.
 ms.assetid: f7081b0c-bfa2-47a1-840b-28881ad97071
 title: Diretrizes para proteger ações personalizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 119c045833b165222756702244cf65bb2225a8f4
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 00b5ea12bd8d38025587cb09fd7a17d3e87739acedf31d85f72ff4b1b76b0432
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170237"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119649286"
 ---
 # <a name="guidelines-for-securing-custom-actions"></a>Diretrizes para proteger ações personalizadas
 
-A adesão às seguintes diretrizes ao criar um pacote de Windows Installer com ações personalizadas ajuda a manter um ambiente seguro durante a instalação:
+a adesão às seguintes diretrizes ao criar um pacote de Windows Installer com ações personalizadas ajuda a manter um ambiente seguro durante a instalação:
 
 -   Proteja todos os arquivos adicionais gravados por sua ação personalizada.
 -   Verifique os comprimentos do buffer e a validade de todos os dados lidos por sua ação personalizada. Isso inclui propriedades que podem fornecer dados para sua ação personalizada, particularmente aquelas que usam propriedades públicas fornecidas por um usuário.
