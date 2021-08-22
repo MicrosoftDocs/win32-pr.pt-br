@@ -4,12 +4,12 @@ description: O copaper empacota a cor, a largura e as coordenadas da caneta em e
 ms.assetid: 25e68c39-5306-4ad6-85dd-a8a5e256abf0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a9868f38d7915185b8d3511bd1bf6faa9c7a1e1b
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3f81b46f2f0a992f27ed405361734fe53db98cf9272697b88866451ef1d7d4b4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916172"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119796886"
 ---
 # <a name="structures---stoserve"></a>Estruturas-StoServe
 
@@ -74,9 +74,9 @@ Embora não seja usado nos exemplos de **StoServe** / **StoClien** , um título 
 
 A data de criação e as datas da última modificação não são incluídas nessas propriedades de papel, pois a interface [**IStorage**](/windows/desktop/api/Objidl/nn-objidl-istorage) usada para acessar arquivos compostos gerencia essas informações.
 
- 
+ 
 
- 
+ 
 
 
 

@@ -1,44 +1,44 @@
 ---
-title: Mapas de patch
-description: Mapas de patch
+title: Patch Mapas
+description: Patch Mapas
 ms.assetid: d0c91001-d19d-439c-9773-78d6228a6642
 keywords:
-- MIDI (interface digital de instrumento musical), mapeador de MIDI
-- MIDI (interface digital de instrumentos musicais), mapeador de MIDI
-- Mapeador de MIDI, mapas de patch
+- MIDI (Interface Digital do Instrument Instrument), Mapeado MIDI
+- MIDI (Interface Digital Instrument Instrument), Mapeado MIDI
+- Mapeado MIDI, mapas de patch
 - mapas de patch
-- Programa MIDI – alterar mensagens
-- Mensagens de controlador de volume de MIDI
-- programa-alterar mensagens
+- Mensagens de alteração de programa MIDI
+- Mensagens do controlador de volume MIDI
+- mensagens de alteração de programa
 - mensagens do controlador de volume
-- Mapeador de MIDI, mensagens de alteração de programa
-- Mapeador de MIDI, mensagens de controlador de volume
+- Mapeado MIDI, mensagens de alteração de programa
+- Mapeado MIDI, mensagens do controlador de volume
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e418b0616d9ba9d2c2bcd05ebcb312ba0176ef5c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: bb32f60ac486d7e8812b5cf71febe3794ae37d650bc795baa4c06ffb48ce5f42
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104292094"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120038256"
 ---
-# <a name="patch-maps"></a>Mapas de patch
+# <a name="patch-maps"></a>Patch Mapas
 
-Cada entrada de mapa de canal pode ter um mapa de patch associado. Mapas de patch afetam as mensagens de alteração de programa MIDI e controlador de volume. Mensagens de alteração de programa informam um sintetizador para alterar o som do instrumento (patch) para um canal especificado. As mensagens do controlador de volume definem o volume para um canal.
+Cada entrada de mapa de canal pode ter um mapa de patch associado. Os mapas de patch afetam as mensagens MIDI program-change e volume-controller. Mensagens de alteração de programa dizem a um sintetizador para alterar o som do instrumento (patch) para um canal especificado. As mensagens do controlador de volume configuram o volume de um canal.
 
-Um mapa de patch tem uma tabela de conversão com uma entrada para cada um dos valores de alteração de programa 128. Cada mapa de patch especifica o seguinte:
+Um mapa de patch tem uma tabela de tradução com uma entrada para cada um dos 128 valores de alteração de programa. Cada mapa de patch especifica o seguinte:
 
--   Um programa de destino-alterar valor.
--   Um volume escalar. (Para obter mais informações, consulte [o volume escalar](the-volume-scalar.md).)
--   Um mapa de chave opcional. (Para obter mais informações, consulte [mapas de chaves](key-maps.md).)
+-   Um valor de alteração do programa de destino.
+-   Um escalar de volume. (Para obter mais informações, consulte [The Volume Scalar](the-volume-scalar.md).)
+-   Um mapa de chaves opcional. (Para obter mais informações, consulte [Key Mapas](key-maps.md).)
 
-Quando as mensagens de alteração de programa são recebidas pelo mapeador de MIDI, o valor de alteração do programa de destino é substituído pelo valor de alteração de programa na mensagem. Por exemplo, se o programa de destino-alterar o valor da alteração de programa 16 for 18, o mapeador de MIDI modificará a mensagem de alteração do programa MIDI, conforme mostrado na ilustração a seguir.
+Quando as mensagens de alteração de programa são recebidas pelo Mapeado MIDI, o valor de alteração do programa de destino é substituído pelo valor program-change na mensagem. Por exemplo, se o valor program-change de destino para program-change 16 for 18, o Mapeado MIDI modificará a mensagem de alteração de programa MIDI, conforme mostrado na ilustração a seguir.
 
-![imagem do Mapeador MIDI](images/mmap-a03.gif)
+![Imagem do mapeado midi](images/mmap-a03.gif)
 
- 
+ 
 
- 
+ 
 
 
 

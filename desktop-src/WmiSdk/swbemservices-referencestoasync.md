@@ -16,12 +16,12 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: 64a8b9b336a1e7aa6007b17d2e878f1ace5e6163
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 98b2ab6963bf547b3fbf8321fde37359264286f77da98697f5ef88cc145be2e8
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105785125"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119794386"
 ---
 # <a name="swbemservicesreferencestoasync-method"></a>Método SWbemServices. ReferencesToAsync
 
@@ -140,7 +140,7 @@ Impede que chamadas assíncronas enviem atualizações de status para o manipula
 
 </dt> <dd>
 
-Faz com que Instrumentação de Gerenciamento do Windows (WMI) retorne dados de alteração de classe junto com a definição de classe base. Para obter mais informações, consulte [localizando informações da classe WMI](localizing-wmi-class-information.md).
+faz com que Instrumentação de Gerenciamento do Windows (WMI) retorne dados de alteração de classe junto com a definição de classe base. Para obter mais informações, consulte [localizando informações da classe WMI](localizing-wmi-class-information.md).
 
 </dd> </dl> </dd> <dt>
 
@@ -158,7 +158,7 @@ Esse é um objeto [**SWbemNamedValueSet**](swbemnamedvalueset.md) que retorna ao
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor. Se for bem-sucedido, o coletor receberá um evento [**OnObjectReady**](swbemsink-onobjectready.md) por instância. Após a última instância, o coletor de objeto recebe um evento [**OnCompleted**](swbemsink-oncompleted.md) .
 
@@ -215,7 +215,7 @@ Um retorno de chamada assíncrono permite que um usuário não autenticado forne
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
 | Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
 | CLSID<br/>                    | \_SWBEMSERVICES CLSID<br/>                                                         |
@@ -233,10 +233,10 @@ Um retorno de chamada assíncrono permite que um usuário não autenticado forne
 [**SWbemObject. ASSOCIATORS\_**](swbemobject-associators-.md)
 </dt> <dt>
 
-[**SWbemObject. referências\_**](swbemobject-references-.md)
+[**SWbemObject.References\_**](swbemobject-references-.md)
 </dt> <dt>
 
-[**SWbemServices. AssociatorsOf**](swbemservices-referencesto.md)
+[**SWbemServices.AssociatorsOf**](swbemservices-referencesto.md)
 </dt> </dl>
 
  

@@ -17,12 +17,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: cf11c453ccf1d9431e5273ec909015de5916ff3faccc0c3d06d1cb8d29073870
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 5f13e97596de9874c3983ce28535a07860c7fa42
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "119981576"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122624572"
 ---
 # <a name="span-idvspixengineidebugshadercallbackspanidebugshadercallback-interface"></a><span id="vspixengine.idebugshadercallback"></span>Interface IDebugShaderCallback
 
@@ -34,17 +34,17 @@ A interface **IDebugShaderCallback** herda da interface [**IUnknown**](/windows/
 
 -   [Métodos](#methods)
 
-### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Métodos
+### <a name="span-idmethodsspanmethods"></a><span id="methods"></span>Maneiras
 
 A interface **IDebugShaderCallback** tem esses métodos.
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/idebugshadercallback-resultinstructions-dword-byte-arr"><strong>ResultInstructions</strong></a></td><td style="text-align: left;"><p>Um retorno de chamada que notifica o host das informações de instructrion retornadas pela solicitação associada.</p></td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><thead><tr class="header"><th style="text-align: left;">Método</th><th style="text-align: left;">Descrição</th></tr></thead><tbody><tr class="odd"><td style="text-align: left;"><a href="/windows/desktop/direct3dtools/idebugshadercallback-resultinstructions-dword-byte-arr"><strong>ResultInstructions</strong></a></td><td style="text-align: left;"><p>Um retorno de chamada que notifica o host das informações de instructrion retornadas pela solicitação associada.</p></td></tr></tbody></table>
 
  
 
 ## <a name="requirements"></a>Requisitos
 
-<table><colgroup><col style="width: 50%" /><col style="width: 50%" /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
+<table><colgroup><col  /><col  /></colgroup><tbody><tr class="odd"><td><p>Cabeçalho</p></td><td>Vspixengine. h</td></tr></tbody></table>
 
  
 

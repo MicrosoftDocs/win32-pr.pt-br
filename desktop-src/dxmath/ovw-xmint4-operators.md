@@ -13,7 +13,7 @@ ms.locfileid: "119979586"
 ---
 # <a name="xmint4-operators"></a>Operadores XMINT4
 
-A estrutura [**XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4) expõe os operadores a seguir.
+A [**estrutura XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4) expõe os operadores a seguir.
 
 > [!Note]  
 > Os operadores listados aqui só estão disponíveis em C++.
@@ -26,7 +26,7 @@ A estrutura [**XMINT4**](/windows/win32/api/directxmath/ns-directxmath-xmint4) e
 
 | Métodos                                             | Descrição                                                                                                     |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [**operador =**](/windows/win32/api/directxmath/nf-directxmath-xmint4-operator-assign)<br/> | Atribui os dados do componente de vetor de uma instância do `XMINT4` à instância atual do `XMINT4` .<br/> |
+| [**operator =**](/windows/win32/api/directxmath/nf-directxmath-xmint4-operator-assign)<br/> | Atribui os dados do componente de vetor de uma instância `XMINT4` do à instância atual do `XMINT4` .<br/> |
 
 
 

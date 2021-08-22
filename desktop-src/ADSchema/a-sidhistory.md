@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 16474a6463fc99e7ed2c1d2b1a2cdbf6ea9b6614
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c5c2dbfb3572392bdbed3f13683adc1cbf64b70e061962975a178f8380f55f5a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456174"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119836286"
 ---
 # <a name="sid-history-attribute"></a>SID-History atributo
 
@@ -57,10 +57,10 @@ Contém os SIDs anteriores usados para o objeto se o objeto foi movido de outro 
 |------------------------|--------------------------------------------------------------|
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
-| System-Only            | True                                                         |
+| System-Only            | Verdadeiro                                                         |
 | É de valor único       | Falso                                                        |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
+| É indexado             | Verdadeiro                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
@@ -80,8 +80,8 @@ Contém os SIDs anteriores usados para o objeto se o objeto foi movido de outro 
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
 | É de valor único       | Falso                                                        |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
+| É indexado             | Verdadeiro                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
@@ -101,14 +101,14 @@ Contém os SIDs anteriores usados para o objeto se o objeto foi movido de outro 
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
 | É de valor único       | Falso                                                        |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
+| É indexado             | Verdadeiro                                                         |
+| No catálogo global      | Verdadeiro                                                         |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Contém os SIDs anteriores usados para o objeto se o objeto foi movido de outro 
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| Tem valor único       | Falso                                                        |
+| É indexado             | Verdadeiro                                                         |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Contém os SIDs anteriores usados para o objeto se o objeto foi movido de outro 
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| Tem valor único       | Falso                                                        |
+| É indexado             | Verdadeiro                                                         |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Contém os SIDs anteriores usados para o objeto se o objeto foi movido de outro 
 | ID do link                | \-                                                           |
 | MAPI-Id                | \-                                                           |
 | System-Only            | Falso                                                        |
-| É de valor único       | Falso                                                        |
-| É indexado             | True                                                         |
-| No catálogo global      | True                                                         |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                 |
+| Tem valor único       | Falso                                                        |
+| É indexado             | Verdadeiro                                                         |
+| No Catálogo Global      | Verdadeiro                                                         |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                 |
 | Range-Lower            | \-                                                           |
 | Range-Upper            | \-                                                           |
 | Search-Flags           | 0x00000001                                                   |
 | System-Flags           | 0x00000012                                                   |
-| Classes usadas em        | [**Segurança-principal**](c-securityprincipal.md)<br/> |
+| Classes usadas em        | [**Entidade de segurança**](c-securityprincipal.md)<br/> |
 
 
 

@@ -12,32 +12,32 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 7bf2b9c4700cb45ca5daf2c7d9290456beefbf1b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 7888273aaca38a4fb87c5a19fc7c7bc8d47b13a8b6a03a578354b1a8bcd2b3dd
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105810866"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119900346"
 ---
 # <a name="wmprotectiontype-attribute"></a>Atributo WM/ProtectionType
 
-O atributo **WM/ProtectionType** é o tipo de proteção usado no conteúdo.
+O **atributo WM/ProtectionType** é o tipo de proteção usado no conteúdo.
 
 ## <a name="applies-to"></a>Aplica-se A
 
 -   [Itens de áudio](audio-item-attributes.md)
--   [Atributos de arquivo de mídia do Windows comumente usados](commonly-used-windows-media-file-attributes.md)
+-   [Atributos de arquivo Windows mídia comumente usados](commonly-used-windows-media-file-attributes.md)
 -   [Itens de vídeo](video-item-attributes.md)
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo é armazenado tanto na biblioteca quanto no arquivo de mídia digital.
+Esse atributo é armazenado na biblioteca e no arquivo de mídia digital.
 
-**ProtectionType** é um alias para este atributo.
+**ProtectionType** é um alias para esse atributo.
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMProtectionType.
+A Windows constante do SDK de Formato de Mídia para esse atributo é g \_ wszWMProtectionType.
 
-Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
+Para determinar se você pode alterar o valor desse atributo, use o [método Media.isReadOnlyItem.](media-isreadonlyitem.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,7 +45,7 @@ Para determinar se você pode alterar o valor desse atributo, use o método [Med
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------|
-| Versão<br/> | Windows Media Player 9 Series ou posterior<br/> |
+| Versão<br/> | Windows Media Player série 9 ou posterior<br/> |
 
 
 

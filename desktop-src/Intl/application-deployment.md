@@ -4,12 +4,12 @@ ms.assetid: 6c10b355-9bdd-4dba-8446-91034d4fe9b8
 title: Implantação do aplicativo
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c2023e5fc2dbde51a6ef996126e7557c9ffce8d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bcb2d7605a2c6a39629749c00d175be4df8a3c66d8b0dc6c870926ec665d9ce6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105768496"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120041606"
 ---
 # <a name="application-deployment"></a>Implantação do aplicativo
 
@@ -17,17 +17,17 @@ Esta seção descreve as considerações para implantar seu aplicativo MUI para 
 
 ## <a name="packaging"></a>Empacotamento
 
-O empacotamento do aplicativo depende do tipo de suporte de idioma fornecido, pois o Windows instala os pacotes de idiomas com base nas preferências do usuário. Por exemplo, se você tiver decidido o suporte às configurações de idioma do sistema, talvez queira fornecer todo o suporte ao idioma em um único pacote, independentemente do usuário pretendido.
+o empacotamento do aplicativo depende do tipo de suporte de idioma fornecido, pois Windows instala os pacotes de idiomas com base nas preferências do usuário. Por exemplo, se você tiver decidido o suporte às configurações de idioma do sistema, talvez queira fornecer todo o suporte ao idioma em um único pacote, independentemente do usuário pretendido.
 
 Se o aplicativo e os recursos forem grandes, você deverá usar um pacote por idioma com suporte. Por exemplo, você pode usar esse tipo de empacotamento se seu aplicativo estiver apresentando idiomas selecionáveis pelo usuário e o usuário precisar de adição dinâmica e remoção de recursos de idioma.
 
-## <a name="file-placement-on-windows-vista-and-later"></a>Posicionamento de arquivos no Windows Vista e posterior
+## <a name="file-placement-on-windows-vista-and-later"></a>posicionamento de arquivos no Windows Vista e posterior
 
-Esta seção descreve o posicionamento de arquivos para um aplicativo MUI destinado apenas ao Windows Vista e posterior.
+esta seção descreve o posicionamento de arquivos para um aplicativo MUI direcionado apenas para o Windows Vista e posterior.
 
 ### <a name="place-the-ln-file"></a>Coloque o arquivo LN
 
-Um arquivo LN típico para um aplicativo MUI é um arquivo. exe ou um arquivo. dll, por exemplo, BakerDelta.dll. Você deve posicionar esse arquivo na pasta raiz onde seu aplicativo está instalado, por exemplo, X: \\ \\ <somepath> \\BakerDelta.dll.
+Um arquivo LN típico para um aplicativo MUI é um arquivo .exe ou um arquivo .dll, por exemplo, BakerDelta.dll. Você deve posicionar esse arquivo na pasta raiz onde seu aplicativo está instalado, por exemplo, X: \\ \\ <somepath> \\BakerDelta.dll.
 
 ### <a name="place-language-specific-resource-files"></a>Coloque Language-Specific arquivos de recurso
 
@@ -43,11 +43,11 @@ Seus arquivos de recursos específicos de idioma devem ter nomes previsíveis fo
 
 Os arquivos de recursos devem ser colocados em seus locais corretos durante a instalação do aplicativo MUI ou de um pacote de idiomas. É importante posicionar cada arquivo na pasta correta, pois o carregador de recursos não pode operar corretamente de outra forma. Usando o exemplo acima, o carregador de recursos examina X: \\ <somepath> \\ en-US \\BakerDelta.dll. mui para recursos em inglês (Estados Unidos). Se o carregador examinar esse arquivo e encontrar apenas recursos em espanhol, ele falhará.
 
-## <a name="file-placement-on-a-pre-windows-vista-operating-system"></a>Posicionamento de arquivos em um sistema operacional anterior ao Windows Vista
+## <a name="file-placement-on-a-pre-windows-vista-operating-system"></a>posicionamento de arquivos em um sistema operacional Windows Vista anterior
 
-Um aplicativo a ser executado em um sistema operacional anterior ao Windows Vista pode usar a Convenção do Windows Vista de colocar arquivos de recursos específicos de idioma em pastas com base em nomes de idiomas. Como alternativa, o aplicativo pode estar em conformidade com uma convenção mais antiga que forma caminhos a partir de [identificadores de idioma](language-identifiers.md). Para aplicativos que oferecem suporte apenas a um único idioma, você pode apenas posicionar o arquivo de recursos específico do idioma no diretório raiz com o arquivo binário.
+um aplicativo a ser executado em um sistema operacional Windows vista anterior pode usar a convenção Windows vista de colocar arquivos de recursos específicos do idioma em pastas com base em nomes de idiomas. Como alternativa, o aplicativo pode estar em conformidade com uma convenção mais antiga que forma caminhos a partir de [identificadores de idioma](language-identifiers.md). Para aplicativos que oferecem suporte apenas a um único idioma, você pode apenas posicionar o arquivo de recursos específico do idioma no diretório raiz com o arquivo binário.
 
-Por exemplo, considere um arquivo LN chamado BakerDelta.dll, com arquivos de recursos específicos de idioma para inglês (Reino Unido), inglês (Estados Unidos), inglês neutro, espanhol (Espanha), espanhol (México) e espanhol neutro. Uma instalação em um sistema operacional anterior ao Windows Vista pode posicionar esses arquivos da seguinte maneira:
+Por exemplo, considere um arquivo LN chamado BakerDelta.dll, com arquivos de recursos específicos de idioma para inglês (Reino Unido), inglês (Estados Unidos), inglês neutro, espanhol (Espanha), espanhol (México) e espanhol neutro. uma instalação em um sistema operacional Windows Vista anterior pode posicionar esses arquivos da seguinte maneira:
 
 -   X: \\ \\ <somepath> \\BakerDelta.dll
 -   X: \\ \\ <somepath> \\BakerDelta.dll. mui (arquivo. mui opcional contendo recursos no idioma do sistema operacional como o fallback final)
@@ -66,17 +66,17 @@ A lógica de instalação para copiar e configurar arquivos de aplicativo depend
 
 Se o seu aplicativo simplesmente instalar o idioma do sistema operacional de destino, o instalador deverá detectar a interface do usuário do sistema operacional para determinar os recursos do aplicativo a serem instalados. Para dar suporte à melhor experiência do usuário, o instalador também deve detectar o idioma da interface do usuário para apresentar uma interface do usuário localizada para a própria instalação.
 
-É recomendável usar Windows Installer (MSI) para criar o software de instalação. Os recursos associados devem ser incluídos no arquivo de recurso de idioma base, conforme descrito em [criando o arquivo de recurso de idioma base](creating-the-base-language-resource-file.md). Para obter instruções sobre como usar o MSI para preparar o instalador do aplicativo, consulte [Windows Installer](../msi/windows-installer-portal.md).
+é recomendável usar Windows Installer (MSI) para criar o software de instalação. Os recursos associados devem ser incluídos no arquivo de recurso de idioma base, conforme descrito em [criando o arquivo de recurso de idioma base](creating-the-base-language-resource-file.md). para obter instruções sobre como usar o MSI para preparar o instalador do aplicativo, consulte [Windows Installer](../msi/windows-installer-portal.md).
 
 ## <a name="uninstall-program"></a>Programa de desinstalação
 
-Você também pode querer fornecer um programa de desinstalação com seu aplicativo MUI. O MSI também é recomendado para a criação deste programa. Para obter instruções sobre como usar o MSI para preparar o software de desinstalação, consulte [Windows Installer](../msi/windows-installer-portal.md).
+Você também pode querer fornecer um programa de desinstalação com seu aplicativo MUI. O MSI também é recomendado para a criação deste programa. para obter instruções sobre como usar o MSI para preparar o software de desinstalação, consulte [Windows Installer](../msi/windows-installer-portal.md).
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Usando a interface do usuário multilíngue](using-multilingual-user-interface.md)
+[usando Interface de Usuário Multilíngue](using-multilingual-user-interface.md)
 </dt> </dl>
 
  

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: método API. JetSetCurrentIndex'
-title: Método API. JetSetCurrentIndex
+description: 'Saiba mais sobre: Método Api.JetSetCurrentIndex'
+title: Método Api.JetSetCurrentIndex
 TOCTitle: 'JetSetCurrentIndex method '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.Api.JetSetCurrentIndex(Microsoft.Isam.Esent.Interop.JET_SESID,Microsoft.Isam.Esent.Interop.JET_TABLEID,System.String)
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.api.jetsetcurrentindex(v=EXCHG.10)
@@ -31,12 +31,12 @@ ms.contentlocale: pt-BR
 ms.lasthandoff: 08/11/2021
 ms.locfileid: "119977586"
 ---
-# <a name="apijetsetcurrentindex-method"></a>Método API. JetSetCurrentIndex
+# <a name="apijetsetcurrentindex-method"></a>Método Api.JetSetCurrentIndex
 
-Define o índice atual de um cursor.
+Definir o índice atual de um cursor.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -65,23 +65,23 @@ public static void JetSetCurrentIndex(
 #### <a name="parameters"></a>Parâmetros
 
   - sesid  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_SESID](./jet-sesid-structure.md)  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_SESID](./jet-sesid-structure.md)  
     
     A sessão a ser usada.
 
 <!-- end list -->
 
-  - TableID  
-    Tipo: [Microsoft.ISAM.ESENT.Interop.JET_TABLEID](./jet-tableid-structure.md)  
+  - Tableid  
+    Tipo: [Microsoft.Isam.Esent.Interop.JET_TABLEID](./jet-tableid-structure.md)  
     
-    O cursor no qual definir o índice.
+    O cursor no que definir o índice.
 
 <!-- end list -->
 
   - índice  
-    Tipo: [System. String](/dotnet/api/system.string)  
+    Tipo: [System.String](/dotnet/api/system.string)  
     
-    O nome do índice a ser selecionado. Se isso for nulo ou vazio, o índice primário será selecionado.
+    O nome do índice a ser selecionado. Se for nulo ou vazio, o índice primário será selecionado.
 
 ## <a name="see-also"></a>Confira também
 
@@ -91,4 +91,4 @@ public static void JetSetCurrentIndex(
 
 [Membros da API](./api-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre: Construtor de JET_CONDITIONALCOLUMN'
-title: Construtor de JET_CONDITIONALCOLUMN
+description: 'Saiba mais sobre: JET_CONDITIONALCOLUMN construtor'
+title: JET_CONDITIONALCOLUMN construtor
 TOCTitle: 'JET_CONDITIONALCOLUMN constructor '
 ms:assetid: M:Microsoft.Isam.Esent.Interop.JET_CONDITIONALCOLUMN.#ctor
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.jet_conditionalcolumn.jet_conditionalcolumn(v=EXCHG.10)
@@ -24,17 +24,17 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 70b8252a10c0b40f91d4b0c2c8d6a9e06e9d6c76
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 99a0d12b93ff20cefdc1bb8620728a8213214c6a766c1968b994998d9b745dd7
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105750885"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119833956"
 ---
-# <a name="jet_conditionalcolumn-constructor"></a>Construtor de JET_CONDITIONALCOLUMN
+# <a name="jet_conditionalcolumn-constructor"></a>JET_CONDITIONALCOLUMN construtor
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,8 +54,8 @@ public JET_CONDITIONALCOLUMN()
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-class.md)
+[JET_CONDITIONALCOLUMN classe](./jet-conditionalcolumn-class.md)
 
-[Membros do JET_CONDITIONALCOLUMN](./jet-conditionalcolumn-members.md)
+[JET_CONDITIONALCOLUMN membros](./jet-conditionalcolumn-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

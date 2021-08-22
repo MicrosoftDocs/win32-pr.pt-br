@@ -1,19 +1,19 @@
 ---
-description: A ação SelfUnregModules cancela o registro de todos os módulos listados na tabela SelfReg que estão agendados para serem desinstalados. O instalador não registra automaticamente. Arquivos EXE.
+description: A ação SelfUnregModules cancela o registro de todos os módulos listados na tabela SelfReg que estão agendados para serem desinstalados. O instalador não registra automaticamente .EXE arquivos.
 ms.assetid: fa5a5abb-ecd4-434c-b176-83cdca280a13
 title: Ação SelfUnregModules
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 3c3a0d98d8a8afe45b9b78f5c8af8ca2f84b2244
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2ba95a745716d512a72e9541064f56bdc663e2e6c9658a9c35744449217952f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105751836"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120040326"
 ---
 # <a name="selfunregmodules-action"></a>Ação SelfUnregModules
 
-A ação SelfUnregModules cancela o registro de todos os módulos listados na [tabela selfreg](selfreg-table.md) que estão agendados para serem desinstalados. O instalador não registra automaticamente. Arquivos EXE.
+A ação SelfUnregModules cancela o registro de todos os módulos listados na [tabela selfreg](selfreg-table.md) que estão agendados para serem desinstalados. O instalador não registra automaticamente .EXE arquivos.
 
 ## <a name="sequence-restrictions"></a>Restrições de sequência
 

@@ -1,11 +1,11 @@
 ---
-title: atributo RPC-NS-Group
-description: Uma referência a uma entrada de servidor RPC ou outro grupo RPC.
+title: Atributo rpc-Ns-Group
+description: Uma referência a uma entrada de servidor RPC ou a outro grupo RPC.
 ms.assetid: d497b58d-28b6-4b31-a784-5df79ebc81bd
 ms.tgt_platform: multiple
 keywords:
-- atributo do AD de atributos RPC-NS-Group
-- Esquema de AD do atributo rpcNsGroup
+- Esquema do AD do atributo rpc-Ns-Group
+- Esquema do AD do atributo rpcNsGroup
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b4e5e577f929ea31ed0c4affeb9585674a23f1d8
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 53bfe60da4d61628ac4a9ed48ece35d96f8546aaf43209c4d3525cc5d76d569f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104370000"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119646546"
 ---
-# <a name="rpc-ns-group-attribute"></a>atributo RPC-NS-Group
+# <a name="rpc-ns-group-attribute"></a>Atributo rpc-Ns-Group
 
-Uma referência a uma entrada de servidor RPC ou outro grupo RPC.
+Uma referência a uma entrada de servidor RPC ou a outro grupo RPC.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
-| CN                | RPC-NS-Group                                |
-| LDAP-Display-Name | rpcNsGroup                                  |
+| CN                | rpc-Ns-Group                                |
+| Ldap-Display-Name | rpcNsGroup                                  |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.114                      |
-| System-ID-GUID    | bf967a24-0de6-11d0-a285-00aa003049e2        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | bf967a24-0de6-11d0-a285-00aa003049e2        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ Uma referência a uma entrada de servidor RPC ou outro grupo RPC.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | Falso                                      |
+| Tem valor único       | Falso                                      |
 | É indexado             | Falso                                      |
-| No catálogo global      | Falso                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
+| No Catálogo Global      | Falso                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classes usadas em        | [**Grupo de RPC**](c-rpcgroup.md)<br/> |
+| Classes usadas em        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ Uma referência a uma entrada de servidor RPC ou outro grupo RPC.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | Falso                                      |
+| Tem valor único       | Falso                                      |
 | É indexado             | Falso                                      |
-| No catálogo global      | Falso                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
+| No Catálogo Global      | Falso                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classes usadas em        | [**Grupo de RPC**](c-rpcgroup.md)<br/> |
+| Classes usadas em        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ Uma referência a uma entrada de servidor RPC ou outro grupo RPC.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | Falso                                      |
+| Tem valor único       | Falso                                      |
 | É indexado             | Falso                                      |
-| No catálogo global      | Falso                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
+| No Catálogo Global      | Falso                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classes usadas em        | [**Grupo de RPC**](c-rpcgroup.md)<br/> |
+| Classes usadas em        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -121,15 +121,15 @@ Uma referência a uma entrada de servidor RPC ou outro grupo RPC.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | Falso                                      |
+| Tem valor único       | Falso                                      |
 | É indexado             | Falso                                      |
-| No catálogo global      | Falso                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
+| No Catálogo Global      | Falso                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classes usadas em        | [**Grupo de RPC**](c-rpcgroup.md)<br/> |
+| Classes usadas em        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -142,15 +142,15 @@ Uma referência a uma entrada de servidor RPC ou outro grupo RPC.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | Falso                                      |
+| Tem valor único       | Falso                                      |
 | É indexado             | Falso                                      |
-| No catálogo global      | Falso                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
+| No Catálogo Global      | Falso                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classes usadas em        | [**Grupo de RPC**](c-rpcgroup.md)<br/> |
+| Classes usadas em        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 
@@ -163,15 +163,15 @@ Uma referência a uma entrada de servidor RPC ou outro grupo RPC.
 | ID do link                | \-                                         |
 | MAPI-Id                | \-                                         |
 | System-Only            | Falso                                      |
-| É de valor único       | Falso                                      |
+| Tem valor único       | Falso                                      |
 | É indexado             | Falso                                      |
-| No catálogo global      | Falso                                      |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                               |
+| No Catálogo Global      | Falso                                      |
+| Descritor de segurança NT | O:BAG:BAD:S:                               |
 | Range-Lower            | \-                                         |
 | Range-Upper            | \-                                         |
 | Search-Flags           | 0x00000000                                 |
 | System-Flags           | 0x00000010                                 |
-| Classes usadas em        | [**Grupo de RPC**](c-rpcgroup.md)<br/> |
+| Classes usadas em        | [**rpc-Group**](c-rpcgroup.md)<br/> |
 
 
 

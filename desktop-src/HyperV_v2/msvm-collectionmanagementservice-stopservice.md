@@ -1,5 +1,5 @@
 ---
-description: Método StopService da classe Msvm_CollectionManagementService - interrompe o serviço.
+description: Método StopService da classe Msvm_CollectionManagementService - Interrompe o serviço.
 ms.assetid: 26d0aa9f-f5ca-481f-9bed-6788b0dc2803
 title: Método StopService da classe Msvm_CollectionManagementService serviço
 ms.topic: reference

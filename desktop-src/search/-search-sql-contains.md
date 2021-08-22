@@ -4,16 +4,16 @@ ms.assetid: 53083966-54cc-4a16-a161-caa663bea7ea
 title: Predicado CONTAINS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b6c821431bb5f00319fe47414dcce5240775f2ce78335998c1bb30b84dc9fe17
-ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
+ms.openlocfilehash: 2885187d0dd25f38e6bbf40b3259164f0aa91e05
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "117863709"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625282"
 ---
 # <a name="contains-predicate"></a>Predicado CONTAINS
 
-O predicado CONTAINS faz parte da cláusula WHERE e dá suporte à pesquisa de palavras e frases em colunas de texto. O predicado CONTAINS tem recursos para palavras correspondentes, correspondência de formas de palavras informativas, pesquisa usando caracteres curinga e pesquisa usando a proximidade. Você também pode aplicar pesos em um predicado CONTAINS para definir a importância das colunas em que o termo de pesquisa é encontrado. O predicado CONTAINS é mais adequado para correspondências exatas, em contraste com o predicado [FREETEXT](-search-sql-freetext.md) , que é mais adequado para localizar documentos que contenham combinações das palavras de pesquisa espalhadas por toda a coluna. As pesquisas não diferenciam letras maiúsculas de minúsculas.
+O predicado CONTAINS faz parte da cláusula WHERE e dá suporte à pesquisa de palavras e frases em colunas de texto. O predicado CONTAINS tem recursos para correspondência de palavras, correspondência de formas de palavras inflexas, pesquisa usando caracteres curinga e pesquisa usando proximidade. Você também pode aplicar pesos em um predicado CONTAINS para definir a importância das colunas em que o termo de pesquisa é encontrado. O predicado CONTAINS é mais adequado para as correspondeções exatas, ao contrário do predicado [FREETEXT,](-search-sql-freetext.md) que é mais adequado para localizar documentos que contenham combinações das palavras de pesquisa distribuídas pela coluna. As pesquisas não diferenciam letras maiúsculas de minúsculas.
 
 Veja a seguir a sintaxe básica do predicado CONTAINS:
 
@@ -21,17 +21,17 @@ Veja a seguir a sintaxe básica do predicado CONTAINS:
 ...CONTAINS(["<fulltext_column>",]'<contains_condition>'[,<LCID>])...
 ```
 
-A referência de coluna de texto completo \_ é opcional. Com ele, você pode limitar a pesquisa a uma única coluna ou a um grupo de colunas no qual o predicado CONTAINS é testado. Quando a coluna FULLTEXT é especificada como "ALL" ou " \* ", todas as propriedades de texto indexado são pesquisadas. Embora a coluna não precise ser uma propriedade de texto, os resultados poderão ser insignificantes se a coluna for outro tipo de dados. O nome da coluna pode ser um [identificador](-search-sql-identifiers.md)regular ou delimitado, e você deve separá-lo da condição por uma vírgula. Se nenhuma coluna de texto completo for especificada, a coluna System. Search. Content, que é o corpo do documento, será usada.
+A referência de \_ coluna de texto completo é opcional. Com ele, você pode limitar a pesquisa a uma única coluna ou um grupo de colunas no qual o predicado CONTAINS é testado. Quando a coluna de texto completo é especificada como "ALL" ou " ", todas \* as propriedades de texto indexadas são pesquisadas. Embora a coluna não seja necessária para ser uma propriedade de texto, os resultados poderão não ter sentido se a coluna for algum outro tipo de dados. O nome da coluna pode ser um [identificador](-search-sql-identifiers.md)regular ou delimitado e você deve separá-lo da condição por uma vírgula. Se nenhuma coluna de texto completo for especificada, a coluna System.Search.Contents, que é o corpo do documento, será usada.
 
-A parte LCID do predicado especifica a localidade de pesquisa. Isso instrui o mecanismo de pesquisa a usar o separador de palavras apropriado e formulários de inflexão para a consulta de pesquisa. para especificar a localidade, forneça o Windows identificador de código de idioma padrão (LCID). Por exemplo, 1033 é o LCID para o Estados Unidos-Inglês. Coloque o LCID como o último item dentro dos parênteses da cláusula CONTAINS. Para obter informações importantes sobre a pesquisa e os idiomas, consulte [usando pesquisas localizadas](-search-sql-usinglocsearches.md).
+A parte LCID do predicado especifica a localidade de pesquisa. Isso instrui o mecanismo de pesquisa a usar o disjuntor de palavras e formulários flexicionais apropriados para a consulta de pesquisa. Para especificar a localidade, forneça o Windows LCID (identificador de código de idioma padrão). Por exemplo, 1033 é o LCID para Estados Unidos-inglês. Coloque o LCID como o último item dentro dos parênteses da cláusula CONTAINS. Para obter informações importantes sobre pesquisa e idiomas, consulte [Usando pesquisas localizadas.](-search-sql-usinglocsearches.md)
 
 > [!NOTE]  
 > A localidade de pesquisa padrão é a localidade padrão do sistema.
 
-A \_ parte da condição Contains deve ser colocada entre aspas simples por palavras únicas ou aspas duplas para frases e consiste em um ou mais termos de pesquisa de conteúdo que são combinados usando os operadores lógicos  **e** ou. Você pode usar o operador unário opcional **não** após um operador **and** para negar o valor lógico de um termo de pesquisa de conteúdo.
+A parte de condição contém deve ser entre aspas simples para palavras simples ou aspas duplas para frases e consiste em um ou mais termos de pesquisa de conteúdo que são combinados usando os operadores lógicos \_ **AND** ou **OR**. Você pode usar o operador unário opcional **NOT** após um **operador AND** para negar o valor lógico de um termo de pesquisa de conteúdo.
 
 > [!NOTE]  
-> O operador **not** só pode ocorrer depois **de e**. Você não poderá usar o operador **not** se houver apenas uma condição de correspondência ou depois do operador **or** .
+> O **operador NOT** pode ocorrer somente após **AND.** Você não poderá usar **o operador NOT** se houver apenas uma condição de corresponder ou após o operador **OR.**
 
 Você pode usar parênteses para agrupar e aninhar termos de pesquisa de conteúdo. A tabela a seguir descreve a ordem de precedência para os operadores lógicos.
 
@@ -41,20 +41,20 @@ Você pode usar parênteses para agrupar e aninhar termos de pesquisa de conteú
 | Segundo             | **AND**          |
 | Terceiro (mais baixo)     | **OR**           |
 
-Os operadores lógicos do mesmo tipo são associativos e não há nenhuma ordem de cálculo especificada. Por exemplo, (A **e** B) **e** (C **e** d) podem ser calculados (B **e** C) **e** (a **e** d) sem alteração no resultado lógico.
+Operadores lógicos do mesmo tipo são associativos e não há nenhuma ordem de cálculo especificada. Por exemplo, (A **AND** B) **AND** (C **AND** D) pode ser calculado (B **E** C) **AND** (A **AND** D) sem nenhuma alteração no resultado lógico.
 
 A tabela a seguir descreve os tipos de termos de pesquisa de conteúdo.
 
 <!-- markdownlint-disable MD033 -->
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col  />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tipo</th>
+<th>Type</th>
 <th>Descrição</th>
 <th>Exemplos</th>
 </tr>
@@ -62,11 +62,11 @@ A tabela a seguir descreve os tipos de termos de pesquisa de conteúdo.
 <tbody>
 <tr class="odd">
 <td>Word</td>
-<td>Uma única palavra sem espaços ou outra Pontuação. Aspas duplas não são necessárias.</td>
+<td>Uma única palavra sem espaços ou outra pontuação. Aspas duplas não são necessárias.</td>
 <td><span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -83,7 +83,7 @@ A tabela a seguir descreve os tipos de termos de pesquisa de conteúdo.
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -102,12 +102,12 @@ Or, to use a double quote mark:
 </tr>
 <tr class="odd">
 <td>Curinga</td>
-<td>Palavras ou frases com o asterisco (*) adicionado ao final. Para obter mais informações, consulte <a href="-search-sql-wildcards.md">usando curingas no predicado CONTAINS</a>.</td>
+<td>Palavras ou frases com o asterisco (*) adicionado ao final. Para obter mais informações, <a href="-search-sql-wildcards.md">consulte Using Wildcards in the CONTAINS Predicate</a>.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -124,12 +124,12 @@ Matches &quot;computer&quot;, &quot;computers&quot;,
 </tr>
 <tr class="even">
 <td>Coluna de texto completo</td>
-<td>Um nome de coluna de propriedade no qual corresponder à consulta restante.</td>
+<td>Um nome de coluna de propriedade em relação ao qual corresponder à consulta restante.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -142,12 +142,12 @@ Matches &quot;computer&quot;, &quot;computers&quot;,
 </tr>
 <tr class="odd">
 <td>Boolean</td>
-<td>Palavras, frases e cadeias de caracteres curinga combinadas usando os operadores boolianos <strong>and</strong>, <strong>or</strong>ou <strong>not</strong>. Coloque os termos boolianos entre aspas duplas.</td>
+<td>Palavras, frases e cadeias de caracteres curinga combinadas usando os operadores boolianas <strong>AND</strong>, <strong>OR</strong>ou <strong>NOT</strong>. Coloque os termos boolianas entre aspas duplas.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -171,12 +171,12 @@ Matches &quot;computer&quot;, &quot;computers&quot;,
 </tr>
 <tr class="even">
 <td>Near</td>
-<td>Palavras, frases ou caracteres curinga separados pela função perto de. Para obter mais informações, consulte a <a href="-search-sql-near.md">curto prazo</a>.</td>
+<td>Palavras, frases ou curingas separados pela função NEAR. Para obter mais informações, consulte <a href="-search-sql-near.md">NEAR Term</a>.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -190,12 +190,12 @@ Matches &quot;computer&quot;, &quot;computers&quot;,
 </tr>
 <tr class="odd">
 <td>FormsOf</td>
-<td>Corresponde a uma palavra e as versões de inflexão dessa palavra. Para obter mais informações, consulte <a href="-search-sql-formsof.md">FORMSOF Term</a>.</td>
+<td>Corresponde a uma palavra e às versões inflecionais dessa palavra. Para obter mais informações, consulte <a href="-search-sql-formsof.md">Termo FORMSOF</a>.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -213,12 +213,12 @@ Matches &quot;happy&quot;, &quot;happier&quot;,
 </tr>
 <tr class="even">
 <td>IsAbout</td>
-<td>Combina os resultados correspondentes em vários termos de pesquisa de palavras, frases ou caracteres curinga. Cada termo de pesquisa pode, opcionalmente, ser ponderado. Opcionalmente, você pode especificar o método de cálculo de classificação, que combina os pesos e quantos itens o documento corresponde. Para obter mais informações, consulte o <a href="-search-sql-isabout.md">termo ISABOUT</a>.</td>
+<td>Combina resultados correspondentes em vários termos de pesquisa de palavras, frases ou curingas. Opcionalmente, cada termo de pesquisa pode ser ponderado. Opcionalmente, você pode especificar o método de cálculo de classificação, que combina os pesos e quantos itens o documento corresponde. Para obter mais informações, consulte <a href="-search-sql-isabout.md">Termo ISABOUT</a>.</td>
 <td><div class="code">
 <span data-codelanguage=""></span>
 <table>
 <colgroup>
-<col style="width: 100%" />
+<col  />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -241,9 +241,9 @@ Matches &quot;happy&quot;, &quot;happier&quot;,
 Esta seção inclui os tópicos a seguir:
 
 - [Usando curingas no predicado CONTAINS](-search-sql-wildcards.md)
-- [FORMSOF termo](-search-sql-formsof.md)
-- [@ SOBRE o termo](-search-sql-isabout.md)
-- [CURTO prazo](-search-sql-near.md)
+- [Termo FORMSOF](-search-sql-formsof.md)
+- [Termo ISABOUT](-search-sql-isabout.md)
+- [Curto prazo](-search-sql-near.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -255,4 +255,4 @@ Esta seção inclui os tópicos a seguir:
 
 [Predicados de texto completo](-search-sql-fulltextpredicates.md)
 
-[Predicados de texto não completo](-search-sql-nonfulltextpredicates.md)
+[Predicados que não são de texto completo](-search-sql-nonfulltextpredicates.md)

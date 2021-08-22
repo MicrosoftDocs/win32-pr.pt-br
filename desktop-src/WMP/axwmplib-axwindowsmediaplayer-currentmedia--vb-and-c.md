@@ -3,9 +3,9 @@ title: Propriedade AxWindowsMediaPlayer. currentMedia
 description: A propriedade currentMedia Obtém ou define a interface IWMPMedia que corresponde ao item de mídia atual.
 ms.assetid: 814ccb1d-713d-4b91-b225-d2199a7c9b6b
 keywords:
-- Propriedade currentMedia Windows Media Player
-- Propriedade currentMedia Windows Media Player, classe AxWindowsMediaPlayer
-- Classe AxWindowsMediaPlayer do Windows Media Player, Propriedade currentMedia
+- Windows Media Player da propriedade currentMedia
+- propriedade currentMedia Windows Media Player, classe AxWindowsMediaPlayer
+- classe AxWindowsMediaPlayer Windows Media Player, propriedade currentMedia
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3720a36d2a1969c652ed757f31301cf6a9ead706
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 027949872b2ff988fcfcad5a8464d9a48ed69d3389ddbca0ad4f91b2d9e3c8d7
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105813196"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120098836"
 ---
 # <a name="axwindowsmediaplayercurrentmedia-property"></a>Propriedade AxWindowsMediaPlayer. currentMedia
 

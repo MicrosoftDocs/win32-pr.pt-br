@@ -4,19 +4,19 @@ description: Referência de programação de visualização personalizada
 ms.assetid: b76cd0a2-7c15-468e-9673-7e607a208ddd
 keywords:
 - Windows Media Player, visualizações
-- Plug-ins do Windows Media Player, visualizações
+- plug-ins Windows Media Player, visualizações
 - plug-ins, visualizações
 - visualizações, referência de programação
 - visualizações personalizadas, referência de programação
 - referência para visualizações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 50b8c5ef4ed9b2c51106052c9fdd00ab5d87b78d
-ms.sourcegitcommit: b04e152a7f51618fc174ffa872654623fe088db2
+ms.openlocfilehash: 01779655a930df18f628d31579ec30d18ecbd7dbbae46aecee2de00fe976c996
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "104007227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119736506"
 ---
 # <a name="custom-visualization-programming-reference"></a>Referência de programação de visualização personalizada
 
@@ -32,18 +32,18 @@ A referência de visualização personalizada documenta os itens a seguir.
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[**Visualizações personalizadas do Windows Media Player**](windows-media-player-custom-visualizations.md)
+[**Windows Media Player Visualizações personalizadas**](windows-media-player-custom-visualizations.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

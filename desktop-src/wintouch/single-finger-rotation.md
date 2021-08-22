@@ -1,39 +1,39 @@
 ---
-title: Rotação de Single-Finger
-description: Esta seção explica como girar um objeto usando um ponto dinâmico.
+title: Single-Finger rotação
+description: Esta seção explica como girar um objeto usando um ponto de pivô.
 ms.assetid: b9c19009-8ac0-4168-bf26-393280fc589f
 keywords:
-- Windows Touch, rotação
-- Windows Touch, manipulações
-- Windows Touch, rotação de dedo único
-- Windows Touch, rotação de ponto dinâmico
+- Windows Toque, rotação
+- Windows Toque, manipulações
+- Windows Toque, rotação de dedo único
+- Windows Toque, rotação de ponto de pivô
 - manipulações, rotação
-- rotação, pontos dinâmicos
-- rotação, um único dedo
+- rotação, pontos de pivô
+- rotation,single-finger
 - gestos, rotação de dedo único
 - rotação de dedo único
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 93d74263f502749e2aaf942c4bbec5aa0a284e76
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 36fe7e92f6d68515e1d13b39c32ee4af5b6b03e675479242210fe302b84e6395
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103822429"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120110638"
 ---
-# <a name="single-finger-rotation"></a>Rotação de Single-Finger
+# <a name="single-finger-rotation"></a>Single-Finger rotação
 
-Esta seção explica como girar um objeto usando um ponto dinâmico.
+Esta seção explica como girar um objeto usando um ponto de pivô.
 
-A imagem a seguir ilustra a rotação de um único dedo.
+A imagem a seguir ilustra a rotação de dedo único.
 
-![ilustração mostrando dois tipos de rotação de um único dedo: ao lado do centro ou ao lado da borda](images/sfrotation.png)
+![ilustração mostrando dois tipos de rotação de dedo único: ao redor do centro ou ao redor da borda](images/sfrotation.png)
 
-No exemplo A, o objeto é girado em volta do ponto central do objeto usando o gesto de rotação. No exemplo B, o objeto é girado movendo-se um único dedo ao lado da borda do objeto. O processador de manipulação habilita essa rotação usando os valores de ponto dinâmico e raio dinâmico. A imagem a seguir ilustra os componentes da rotação de um único dedo.
+No exemplo A, o objeto é girado em torno do ponto central do objeto usando o gesto de rotação. No exemplo B, o objeto é girado movendo um único dedo ao redor da borda do objeto. O processador de manipulação habilita essa rotação usando valores de ponto de pivô e raio de pivô. A imagem a seguir ilustra os componentes da rotação de dedo único.
 
-![ilustração mostrando os componentes de rotação de um único dedo: pivotpointx, pivotpointy e pivotradius](images/sfrotation-components.png)
+![ilustração mostrando os componentes da rotação de dedo único: pivotpointx, pivotpointy e pivotradius](images/sfrotation-components.png)
 
-Depois de definir os valores [**PivotPointX**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointx), [**PivotPointY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy)e [**PivotRadius**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius) , as mensagens de tradução subsequentes incorporarão a rotação. Quanto maior o raio dinâmico, maior a alteração em x e y deve ser para girar o objeto. O código a seguir mostra como esses valores podem ser definidos no processador de manipulação.
+Depois de definir os [**valores PivotPointX,**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointx) [**PivotPointY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy)e [**PivotRadius,**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius) as mensagens de tradução subsequentes incorporarão a rotação. Quanto maior o raio de pivô, maior a alteração em x e y deve ser para girar o objeto. O código a seguir mostra como esses valores podem ser definidos no processador de manipulação.
 
 
 ```C++
@@ -60,12 +60,12 @@ HRESULT STDMETHODCALLTYPE CManipulationEventSink::ManipulationDelta(
 
 
 
-No exemplo anterior, a distância para a borda do objeto (dimensionada para 40 por cento) é usada como o raio dinâmico. Como o tamanho do objeto é levado em consideração, esse cálculo é válido para cada Delta de objeto. À medida que o objeto é dimensionado, o raio dinâmico aumenta. Esse valor e os valores x e y centrais do objeto são passados para o processador de manipulação para girar o objeto em volta do ponto dinâmico.
+No exemplo anterior, a distância até a borda do objeto (dimensionada para 40%) é usada como o raio de pivô. Como o tamanho do objeto é levado em consideração, esse cálculo é válido para cada delta de objeto. À medida que o objeto é dimensionado, o raio de pivô aumenta. Esse valor e os valores x e y do objeto são passados para o processador de manipulação para girar o objeto em torno do ponto pivô.
 
 > [!Note]  
-> O valor de [**PivotRadius**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius) nunca deve estar entre 0,0 e 1,0.
+> O [**valor pivotRadius**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotradius) nunca deve estar entre 0,0 e 1,0.
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -83,9 +83,9 @@ No exemplo anterior, a distância para a borda do objeto (dimensionada para 40 p
 [**PivotPointY**](/windows/desktop/api/manipulations/nf-manipulations-imanipulationprocessor-get_pivotpointy)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

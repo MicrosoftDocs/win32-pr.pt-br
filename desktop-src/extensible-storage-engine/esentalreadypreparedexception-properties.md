@@ -7,12 +7,12 @@ ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.esen
 ms:contentKeyID: 55101014
 ms.date: 07/30/2014
 ms.topic: article
-ms.openlocfilehash: 2333c7301dd10e15f5bb0f47c4ee1352be638897
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 17ded38addee76c650dde840e108b4512e43bb7ae4fecf92d470fb57793d7136
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104566516"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119669806"
 ---
 # <a name="esentalreadypreparedexception-properties"></a>Propriedades de EsentAlreadyPreparedException
 
@@ -49,7 +49,7 @@ O tipo [EsentAlreadyPreparedException](./esentalreadypreparedexception-class.md)
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.protproperty(exchg.10).gif" title="Propriedade protegida" alt="Protected property" /></td>
-<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">Resultado</a></td>
+<td><a href="/dotnet/api/system.exception.hresult#System_Exception_HResult">HResult</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">
@@ -69,7 +69,7 @@ O tipo [EsentAlreadyPreparedException](./esentalreadypreparedexception-class.md)
 </tr>
 <tr class="even">
 <td><img src="../images/dn292128.pubproperty(exchg.10).gif" title="Propriedade pública" alt="Public property" /></td>
-<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">Pilha</a></td>
+<td><a href="/dotnet/api/system.exception.stacktrace#System_Exception_StackTrace">StackTrace</a></td>
 <td>(Herdado da <a href="/dotnet/api/system.exception">exceção</a>.)</td>
 </tr>
 <tr class="odd">

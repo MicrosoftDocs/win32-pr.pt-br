@@ -1,19 +1,19 @@
 ---
-description: Este tópico fornece uma visão geral conceitual da tecnologia MUI (Multilingual User interface), o suporte de plataforma que ele fornece para habilitar experiências de usuário multilíngues e os benefícios que ele oferece ao ecossistema do Windows.
+description: este tópico fornece uma visão geral conceitual da tecnologia de Interface de Usuário Multilíngue (MUI), o suporte de plataforma que ele fornece para habilitar experiências de usuário multilíngues e os benefícios que ele oferece ao ecossistema de Windows.
 ms.assetid: ef828da8-61cd-43d9-a5fe-e09a1f8af5c7
 title: Visão geral do MUI
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 674cb5e0fee4e7b8d3990a99f13f981c4a8c5803
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 42e4e92c9103b27b35be427a74174c644a285266
+ms.sourcegitcommit: c276a8912787b2cda74dcf54eb96df961bb1188b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104564145"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122625772"
 ---
 # <a name="overview-of-mui"></a>Visão geral do MUI
 
-Este tópico fornece uma visão geral conceitual da tecnologia MUI (Multilingual User interface), o suporte de plataforma que ele fornece para habilitar experiências de usuário multilíngues e os benefícios que ele oferece ao ecossistema do Windows.
+este tópico fornece uma visão geral conceitual da tecnologia de Interface de Usuário Multilíngue (MUI), o suporte de plataforma que ele fornece para habilitar experiências de usuário multilíngues e os benefícios que ele oferece ao ecossistema de Windows.
 
 Nessa página:
 
@@ -31,21 +31,21 @@ A linguagem, a cultura e as especificações de mercado ainda são extremamente 
 
 ![gráfico de pizza com três segmentos; o rótulo "alto-falantes que não são do Inglês 91,5%" é muito maior do que os outros dois combinados](images/overview-of-mui-fig1.gif)
 
-Em todo o mundo, há 193 países e mais de 6.900 idiomas de vida conhecidos em uso hoje. O inglês, apesar de sua função como a linguagem de negócios do mundo, é falado apenas em 8,5% da população do mundo como primeira ou segunda linguagem. Para fornecer informações nativas a 94% da população do mundo, essas informações precisariam estar disponíveis no 347 (cerca de 5%) das linguagens do mundo que têm pelo menos um milhão de alto-falantes. Isso é especialmente verdadeiro, pois as tendências de globalização aumentaram as expectativas desses usuários em relação à tecnologia e à sua disponibilidade em seus mercados.
+Em todo o mundo, há 193 países e mais de 6.900 idiomas de vida conhecidos em uso hoje. O inglês, apesar de sua função como a linguagem de negócios do mundo, é falado apenas em 8,5% da população do mundo como primeira ou segunda linguagem. Para fornecer informações nativas a 94% da população do mundo, essas informações precisariam estar disponíveis no 347 (cerca de 5%) dos idiomas do mundo que têm pelo menos um milhão de alto-falantes. Isso é especialmente verdadeiro, pois as tendências de globalização aumentaram as expectativas desses usuários em relação à tecnologia e à sua disponibilidade em seus mercados.
 
-A necessidade de localizar software em mais idiomas aumentou ao longo dos anos e a Microsoft agora está fornecendo o Windows Vista e outros produtos em mais idiomas do que nunca. Essa evolução é especialmente clara com o Microsoft Windows, já que deixou de dar suporte a 30 idiomas com o Windows 98 a quase 100 com o Windows Vista, conforme ilustrado no gráfico de barras a seguir.
+a necessidade de localizar software em mais idiomas aumentou ao longo dos anos e a Microsoft agora está fornecendo Windows Vista e outros produtos em mais idiomas do que nunca. essa evolução é especialmente clara com o Microsoft Windows, já que ela deixou de dar suporte a 30 idiomas com Windows 98 a quase 100 com o Windows Vista, conforme ilustrado no gráfico de barras a seguir.
 
 ![gráfico de barras mostrando que o número de idiomas é muito maior no Windows Vista do que no Windows 98 ou no Windows XP](images/overview-of-mui-fig2.gif)
 
-*Figura 2 — número de idiomas com suporte das versões do Microsoft Windows*
+*figura 2 — número de idiomas com suporte nas versões do Microsoft Windows*
 
 ## <a name="the-role-of-mui-in-enabling-multilingual-computing"></a>A função do MUI na habilitação da computação multilíngue
 
 Conforme discutido na seção anterior, a [globalização](glossary-for-understanding-mui.md) e a [localização](glossary-for-understanding-mui.md) de aplicativos se tornaram uma necessidade em um mundo mais integrado globalmente. Em particular, como cada vez mais empresas estão se tornando globais, seja internamente ou por meio de suas redes comerciais, a necessidade de aplicativos multilíngües é cada vez mais significativa. Portanto, os obstáculos que essas empresas enfrentam atualmente na implantação desses aplicativos globalmente.
 
-Fornecer suporte para mais idiomas para sistemas operacionais Windows, bem como aplicativos de software criados para a plataforma Windows, requer novas estratégias que permitem que todos os principais cenários sejam implementados com sobrecarga mínima de engenharia.
+fornecer suporte para mais idiomas para sistemas operacionais Windows, bem como aplicativos de software criados para a plataforma Windows, requer novas estratégias que permitem que todos os principais cenários sejam implementados com sobrecarga mínima de engenharia.
 
-A tecnologia MUI destina-se a desenvolvedores e ISVs que visam criar e dar suporte a aplicativos multilíngües para a plataforma Windows. O MUI também é de importante importância para OEMs e empresas, que pode aproveitá-lo para implantar o sistema operacional Windows e adicionar aplicativos a computadores em diferentes idiomas por meio de implantação de imagem única.
+a tecnologia MUI destina-se a desenvolvedores e ISVs que visam criar e dar suporte a aplicativos multilíngües para a plataforma Windows. o MUI também é de importante importância para OEMs e empresas, que pode aproveitá-lo para implantar o sistema operacional Windows e adicionar aplicativos a computadores em diferentes idiomas por meio de implantação de imagem única.
 
 ## <a name="core-concepts-of-mui"></a>Conceitos principais do MUI
 
@@ -62,11 +62,11 @@ Esses atributos fundamentais do MUI ajudam a facilitar os cenários de negócios
 
 ## <a name="history-of-mui-in-windows"></a>Histórico do MUI no Windows
 
-O nível de suporte disponível para uma experiência de usuário multilíngüe no nível do sistema operacional Windows e para o desenvolvimento de aplicativos multilíngues na plataforma Windows evoluiu ao longo do tempo e nas diferentes versões do Windows.
+o nível de suporte disponível para uma experiência de usuário multilíngüe no nível Windows sistema operacional e para o desenvolvimento de aplicativos multilíngues na plataforma Windows evoluiu ao longo do tempo e entre as diferentes versões do Windows.
 
-A funcionalidade com suporte [antes do Windows Vista](evolution-of-mui-support-across-windows-versions.md) era bastante básica, com imagens do Windows de idioma único e uma opção para complementar pacotes de interface do usuário multilíngüe em cenários específicos. Nenhum suporte ao desenvolvedor para aplicativos multilíngues estava disponível.
+a funcionalidade com suporte [antes do Windows Vista](evolution-of-mui-support-across-windows-versions.md) era bastante básica, com imagens de Windows de idioma único e uma opção para complemento Interface de Usuário Multilíngue packs em cenários específicos. Nenhum suporte ao desenvolvedor para aplicativos multilíngues estava disponível.
 
-[Com o Windows Vista](evolution-of-mui-support-across-windows-versions.md), a Microsoft fez um investimento significativo em MUI, e o Windows Vista foi criado desde o início em uma plataforma mui. Embora isso represente um grande avanço na estratégia de localização do Windows, como é um habilitador de chave para a Microsoft fornecer janelas em mais idiomas do que nunca, ela é primeiro e mais importante para usuários, desenvolvedores e clientes do Windows. Ele fornece vários benefícios importantes, como:
+[com o Windows Vista](evolution-of-mui-support-across-windows-versions.md), a Microsoft fez um investimento significativo em MUI e o Windows Vista foi criado desde o início em uma plataforma mui. embora isso represente um grande avanço na estratégia de localização de Windows, como é um habilitador de chave para a Microsoft fornecer Windows em mais idiomas do que nunca, ele é o primeiro e mais importante para Windows usuários, desenvolvedores e clientes. Ele fornece vários benefícios importantes, como:
 
 -   Um sistema operacional com neutralidade de idioma com suporte interno para o MUI.
 -   Empacotamento, implantação e instalação configuráveis para dar suporte a cenários multilíngües.
@@ -74,34 +74,34 @@ A funcionalidade com suporte [antes do Windows Vista](evolution-of-mui-support-a
 -   Um modelo de manutenção aprimorado em que o código executável pode ser atualizado independentemente dos recursos.
 -   Suporte ao desenvolvedor para a criação de aplicativos multilíngues.
 
-A tabela a seguir fornece uma visão geral detalhada do suporte da plataforma Windows para o MUI:
+a tabela a seguir fornece uma visão geral detalhada do suporte da plataforma Windows para o MUI:
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col  />
+<col  />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Category</th>
+<th>Categoria</th>
 <th>Suporte</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Versões do Windows com suporte (somente suporte para SO)</td>
+<td>versões Windows com suporte (somente suporte para so)</td>
 <td><ul>
 <li>Windows 2000 Professional</li>
-<li>Família do Windows 2000 Server</li>
+<li>família de servidores Windows 2000</li>
 <li>Windows XP Professional</li>
 <li>Windows XP Tablet PC Edition</li>
-<li>Família Windows Server 2003</li>
+<li>Windows Família do servidor 2003</li>
 <li>Windows XP Embedded</li>
 </ul>
 <br/></td>
 </tr>
 <tr class="even">
-<td>Versões do Windows com suporte (so & suporte a aplicativos)</td>
+<td>versões de Windows com suporte (suporte a aplicativo de & do so)</td>
 <td><ul>
 <li>Windows Vista</li>
 </ul>
@@ -111,7 +111,7 @@ A tabela a seguir fornece uma visão geral detalhada do suporte da plataforma Wi
 <td>Versões do Windows sem suporte</td>
 <td><ul>
 <li>Windows 9x</li>
-<li>Windows me</li>
+<li>Windows Vou</li>
 <li>Windows XP Home Edition</li>
 </ul>
 <br/></td>
@@ -125,9 +125,9 @@ A tabela a seguir fornece uma visão geral detalhada do suporte da plataforma Wi
 
 ## <a name="benefits-of-mui-technology"></a>Benefícios da tecnologia MUI
 
-O MUI afeta positivamente vários aspectos do ecossistema do Windows:
+o MUI afeta positivamente vários aspectos do ecossistema Windows:
 
--   [Benefícios para os desenvolvedores](benefits-of-mui-explained.md): vários benefícios são oferecidos aos desenvolvedores de aplicativos pela disponibilidade do suporte à API do MUI para criar aplicativos multilíngües modelados nos mesmos princípios que o suporte multilíngue no próprio sistema operacional Windows. Esses benefícios incluem:
+-   [benefícios para os desenvolvedores](benefits-of-mui-explained.md): vários benefícios são oferecidos aos desenvolvedores de aplicativos pela disponibilidade do suporte à API do MUI para criar aplicativos multilíngües modelados nos mesmos princípios que o suporte multilíngue no principal Windows sistema operacional. Esses benefícios incluem:
     -   A capacidade de fornecer uma experiência de linguagem de exibição consistente com o que o próprio sistema operacional oferece.
     -   A capacidade de estender facilmente o suporte a idiomas para um aplicativo.
     -   A capacidade de manter e atender facilmente ao aplicativo.

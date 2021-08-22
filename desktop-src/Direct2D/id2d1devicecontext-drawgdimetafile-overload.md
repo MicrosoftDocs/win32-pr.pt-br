@@ -3,7 +3,7 @@ title: Métodos ID2D1DeviceContext DrawGdiMetafile
 description: Desenhe um metarquivo para o contexto do dispositivo. | Métodos ID2D1DeviceContext DrawGdiMetafile
 ms.assetid: 57A08FFE-7B2D-477F-AEAD-E6A315B5B932
 keywords:
-- Métodos DrawGdiMetafile Direct2D
+- Direct2D métodos de DrawGdiMetafile
 topic_type:
 - apiref
 api_type:
@@ -12,12 +12,12 @@ ms.topic: reference
 ms.date: 05/31/2018
 api_name: ''
 api_location: ''
-ms.openlocfilehash: 063643272134d209ea2267f6ba00c4a293d3af77
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: ff3173a6e58545ec2fcfc943222cd5678892c1f708100b4dec285933618eef29
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105755630"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "120044156"
 ---
 # <a name="id2d1devicecontextdrawgdimetafile-methods"></a>ID2D1DeviceContext: métodos de rawGdiMetafile de:D
 

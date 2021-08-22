@@ -4,12 +4,12 @@ ms.assetid: f33259f4-bb96-4d6d-8d03-6975bc32e226
 title: Propriedade AVEncDDHeadphoneMode (Codecapi. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: df75a6c726fc748e623ae9bded67ca6e1197b990
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: b92b0c554bf7d6c1d6ef7c0fdd4ea1b51bf50d1beab444a8700777c3195487cc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "105784040"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119690176"
 ---
 # <a name="avencddheadphonemode-property"></a>Propriedade AVEncDDHeadphoneMode
 
@@ -35,9 +35,9 @@ O valor dessa propriedade é um membro da enumeração [**eAVEncDDHeadphoneMode*
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | aplicativos Windows 2000 Professional \[ desktop aplicativos \| UWP\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows \[ aplicativos da área de trabalho do servidor 2000 \| aplicativo UWP\]<br/>                           |
+| Cabeçalho<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
 
 
 
