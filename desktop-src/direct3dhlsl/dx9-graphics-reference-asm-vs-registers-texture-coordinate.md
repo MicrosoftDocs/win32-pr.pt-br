@@ -9,12 +9,12 @@ topic_type:
 api_name: ''
 api_type: ''
 api_location: ''
-ms.openlocfilehash: ad3937b8f0b3f7acd6313774f6de7cde133e69c5
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: e695765d57c7e74c94fe0605ca7ec7b96705d7b37d1dc24cad068a5aed6a2ca3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104084846"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119457756"
 ---
 # <a name="texture-coordinate-register-hlsl-vs-reference"></a>Registro de coordenadas de textura (referência de HLSL VS)
 
@@ -26,13 +26,13 @@ Um registro consiste em propriedades que determinam se o registro se comporta.
 
 | Propriedade        | Descrição   |
 |-----------------|---------------|
-| Name            | oT0 - oT7     |
+| Nome            | oT0 - oT7     |
 | Contagem           | Oito vetores |
 | Permissões de e/s | Somente gravação    |
 
 
 
- 
+ 
 
 Os registros de coordenadas de textura de saída são uma matriz de registros de dados de saída. Os dados de registro são iterados e usados como coordenadas de textura pelos estágios de amostragem de textura para fornecer dados ao sombreador de pixel.
 
@@ -72,7 +72,7 @@ mov oT0, v7
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -81,6 +81,6 @@ mov oT0, v7
 [Registros de sombreador de vértice](dx9-graphics-reference-asm-vs-registers.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

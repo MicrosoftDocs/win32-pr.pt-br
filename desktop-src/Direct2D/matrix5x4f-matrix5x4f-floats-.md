@@ -4,8 +4,8 @@ description: Instancia uma nova instância de uma classe Matrix5x4F que é inici
 ms.assetid: 46C2741F-9E49-4ABD-9DA5-D4E6D3CA2B09
 keywords:
 - Direct2D do Construtor Matrix5x4F
-- Direct2D do Construtor Matrix5x4F, interface Matrix5x4F
-- Matrix5x4F interface Direct2D, Construtor Matrix5x4F
+- Direct2D do construtor Matrix5x4F, interface Matrix5x4F
+- Direct2D de interface Matrix5x4F, construtor Matrix5x4F
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2582e58f535ddf4f87d54e16dd2edaec2aa37e91
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 3626e4af5e51555779a2d14c731fbeb4a2ad30ce542ce2ca9447116332c9faea
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105761779"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119430626"
 ---
 # <a name="matrix5x4fmatrix5x4ffloat-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-float-constructor"></a>Matrix5x4F:: Matrix5x4F (FLOAT, FLOAT, FLOAT, FLOAT, FLOAT, float, float, FLOAT, FLOAT, float, FLOAT, float, FLOAT, float, float, FLOAT, FLOAT, FLOAT, FLOAT, FLOAT) constructor
 
@@ -247,11 +247,11 @@ O valor na quinta linha e na quarta coluna da matriz.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma para aplicativos de área de trabalho do Windows Vista \[ somente\]<br/>                          |
-| Servidor mínimo com suporte<br/> | Windows Server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para Windows Server 2008 \[ Desktop apps somente\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows 7, Windows Vista com SP2 e atualização de plataforma somente para \[ aplicativos da área de trabalho do Windows Vista\]<br/>                          |
+| Servidor mínimo com suporte<br/> | Windows server 2008 R2, Windows Server 2008 com SP2 e atualização de plataforma para aplicativos de área de trabalho do Windows Server 2008 \[ somente\]<br/> |
 | Número mínimo de telefone com suporte<br/>  | Windows Phone 8,1 \[ Windows Phone Silverlight 8,1 e aplicativos de Windows Runtime\]<br/>                                           |
 | Namespace<br/>                | D2D1<br/>                                                                                                                   |
-| parâmetro<br/>                   | <dl> <dt>\_Auxiliar D2d1. h</dt> </dl>                                         |
+| Cabeçalho<br/>                   | <dl> <dt>\_Auxiliar D2d1. h</dt> </dl>                                         |
 | Biblioteca<br/>                  | <dl> <dt>D2d1. lib</dt> </dl>                                               |
 | DLL<br/>                      | <dl> <dt>D2d1.dll</dt> </dl>                                               |
 

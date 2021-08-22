@@ -4,12 +4,12 @@ ms.assetid: 7ea47452-3147-4d39-961d-a10eca8328c9
 title: ICE26
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0d7b110d0b15b37441170980d0fd3e96e2eb00d5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bbf63e0efeec79de35122f7a210c32746af9de50f27ac3e47ad1f88984a6ec77
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103828976"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528856"
 ---
 # <a name="ice26"></a>ICE26
 

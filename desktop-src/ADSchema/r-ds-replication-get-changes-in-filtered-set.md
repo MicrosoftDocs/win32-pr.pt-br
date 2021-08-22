@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2d64e1e2d53e0a8f58e58235d8b92ecddfad0b68
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: e3f059bb5203602b59dafc7fad25ac055d14fa037b6c14c623120b504a7aad9b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456303"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532066"
 ---
 # <a name="ds-replication-get-changes-in-filtered-set-extended-right"></a>DS-Replication-Get-Changes-in-Filtered-Set Extended Right
 

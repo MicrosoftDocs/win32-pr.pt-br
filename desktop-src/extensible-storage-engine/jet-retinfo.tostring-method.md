@@ -24,19 +24,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 18ff196c9ff3aa210cfc91cd294b534abf8e8585
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: b27f1a509181b0f6fdea4955144d127ee864f835dba13d446bc005f83bb634d1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119473586"
 ---
 # <a name="jet_retinfotostring-method"></a>JET_RETINFO. Método ToString
 
-Retorna uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_RETINFO](./jet-retinfo-class.md)atual.
+Retorna uma [Cadeia de](/dotnet/api/system.string) caracteres que representa o [valor JET_RETINFO](./jet-retinfo-class.md).
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -54,17 +54,17 @@ returnValue = instance.ToString()
 public override string ToString()
 ```
 
-#### <a name="return-value"></a>Retornar valor
+#### <a name="return-value"></a>Valor retornado
 
-Tipo: [System. String](/dotnet/api/system.string)  
-Uma [cadeia de caracteres](/dotnet/api/system.string) que representa a [JET_RETINFO](./jet-retinfo-class.md)atual.  
+Tipo: [System.String](/dotnet/api/system.string)  
+Uma [Cadeia de](/dotnet/api/system.string) caracteres que representa o valor [JET_RETINFO](./jet-retinfo-class.md).  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_RETINFO](./jet-retinfo-class.md)
+[JET_RETINFO classe](./jet-retinfo-class.md)
 
-[Membros do JET_RETINFO](./jet-retinfo-members.md)
+[JET_RETINFO membros](./jet-retinfo-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

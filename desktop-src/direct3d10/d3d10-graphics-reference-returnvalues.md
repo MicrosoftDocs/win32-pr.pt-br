@@ -4,12 +4,12 @@ ms.assetid: 7b67d428-d000-4c3e-adc1-b5fc67a15a6a
 title: Códigos de retorno do Direct3D 10
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: d15a2fcdc4db5bd2d295b7cd3078ed80d401ce52
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 32c7e7bca25d240bf7775a6f4d6476148e3749e283ab4f8fb3511bf8b53bb711
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105789422"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119282796"
 ---
 # <a name="direct3d-10-return-codes"></a>Códigos de retorno do Direct3D 10
 

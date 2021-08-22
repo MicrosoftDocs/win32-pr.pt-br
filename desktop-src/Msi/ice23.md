@@ -4,12 +4,12 @@ ms.assetid: d425f8c6-4615-439d-8194-3a0325eb3cc3
 title: ICE23
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8c1823a70e50d7dd3c42c2e90d6a2d0f11f2fa5b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dbab2d50c07fce208edc845e64cff0061f513c102a55da2d56b49c4a4c17e867
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811843"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119528996"
 ---
 # <a name="ice23"></a>ICE23
 

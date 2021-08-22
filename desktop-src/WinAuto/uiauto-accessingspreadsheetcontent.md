@@ -9,12 +9,12 @@ keywords:
 - clientes, padrão de controle SpreadsheetItem
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31495086614f34aeff378a8565200fa03f2dad62
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: f09d34aeb484da056920a2b77d47ca199e11c00c99832412e9bf007807c49563
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104294425"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052344"
 ---
 # <a name="accessing-spreadsheet-content"></a>Acessando conteúdo da planilha
 
@@ -34,6 +34,6 @@ Para acessar o conteúdo da planilha, recupere a interface [**IUIAutomationSprea
 [Trabalhando com controles baseados em texto](uiauto-workingwithtextbasedcontrols.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

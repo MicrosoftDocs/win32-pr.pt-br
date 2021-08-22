@@ -3,7 +3,7 @@ title: Atributo WM/OriginalAlbumTitle
 description: O atributo WM/OriginalAlbumTitle é o nome do álbum no qual a faixa apareceu primeiro.
 ms.assetid: e670c793-bae3-4dc5-92a1-4407cb2a094b
 keywords:
-- Atributo WM/OriginalAlbumTitle do Windows Media Player
+- Windows Media Player do atributo WM/OriginalAlbumTitle
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f0dc2344c95bf3d0b09448277f1522baa879c80
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 2fd025d78c5d4fb3a3fca20cdb6ba6bf092c45465e7e738ddd4c1921301c6899
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105789399"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119053851"
 ---
 # <a name="wmoriginalalbumtitle-attribute"></a>Atributo WM/OriginalAlbumTitle
 
@@ -31,7 +31,7 @@ O atributo **WM/OriginalAlbumTitle** é o nome do álbum no qual a faixa aparece
 
 Esse atributo é armazenado somente em um arquivo de música que não está na biblioteca do.
 
-A constante do Windows Media Format SDK para esse atributo é g \_ wszWMOriginalAlbumTitle.
+a constante do SDK do formato de mídia Windows para esse atributo é g \_ wszWMOriginalAlbumTitle.
 
 Para determinar se você pode alterar o valor desse atributo, use o método [Media. isReadOnlyItem](media-isreadonlyitem.md) .
 

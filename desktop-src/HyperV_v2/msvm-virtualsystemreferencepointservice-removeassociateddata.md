@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: b5291e4e018edc89909ccde36ce0e420698af8e6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 3f8cef79e55379df1f91a0e1291144a7f4fdf92378e44cd9ed3588c83b3a3d4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108118614"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147899"
 ---
 # <a name="removeassociateddata-method-of-the-msvm_virtualsystemreferencepointservice-class"></a>Método RemoveAssociatedData da \_ classe VirtualSystemReferencePointService Msvm
 
@@ -105,7 +105,7 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
@@ -113,7 +113,7 @@ O **sistema não está disponível** (32777)
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

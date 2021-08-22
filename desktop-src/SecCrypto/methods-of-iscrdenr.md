@@ -4,12 +4,12 @@ ms.assetid: 471d47c9-8d5a-41f0-9dd1-b6cf1631fed1
 title: Métodos de ISCrdEnr
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ce9fe9875b4544201fadaf1287c42a16fd445d38
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2d44248d8182b164cfdc572dcd39bfd84d60fd749bf85b944a0bf88b622472b0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105766821"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119425556"
 ---
 # <a name="methods-of-iscrdenr"></a>Métodos de ISCrdEnr
 

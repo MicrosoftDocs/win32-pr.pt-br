@@ -12,17 +12,17 @@ api_name:
 api_type:
 - NA
 api_location: ''
-ms.openlocfilehash: 219eb85dec0cdda77ca8741ae42df1f63d1a7dbc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3c9a638d962db908b24387d7baeb2f34d4e09ece561fdd1796a8a44930a5dfb1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761022"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051284"
 ---
 # <a name="winsock_ws2help_lsp_reset-event"></a>\_Evento de \_ \_ redefinição de LSP do Winsock WS2HELP
 
 > [!Note]  
-> Os provedores de serviço em camadas são preteridos. A partir do Windows 8 e do Windows Server 2012, use a [plataforma de filtragem do Windows](../fwp/windows-filtering-platform-start-page.md).
+> Os provedores de serviço em camadas são preteridos. começando com Windows 8 e Windows Server 2012, use [Windows plataforma de filtragem](../fwp/windows-filtering-platform-start-page.md).
 
  
 
@@ -56,8 +56,8 @@ O evento **Winsock \_ ws2help \_ LSP \_ Reset** é rastreado para uma operação
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/> |
 
 
 

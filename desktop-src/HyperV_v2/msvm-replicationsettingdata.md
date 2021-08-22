@@ -55,12 +55,12 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: 35bb97e531f8aca5f74801d55a71e5b3f2850c08
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 90e16e70f7b5bd0a075ffdef54cf0c591719d4993031f3abee19dd8186ec5996
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104170064"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119148249"
 ---
 # <a name="msvm_replicationsettingdata-class"></a>\_Classe Msvm ReplicationSettingData
 
@@ -142,7 +142,7 @@ Tipo de acesso: Somente leitura
 
 Configurações de replicação adicionais que o provedor de ponto de extremidade pode usar.
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -338,7 +338,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma breve descrição do objeto. Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "configurações de replicação".
+Uma breve descrição do objeto. essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "Replication Configurações".
 
 </dd> <dt>
 
@@ -382,11 +382,11 @@ Tipo de acesso: Somente leitura
 
 Não usado.
 
-Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Essa propriedade é herdada de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
 
 </dd> <dt>
 
-**ConfigurationFile**
+**Configurationfile**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -395,7 +395,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O caminho relativo e o nome de arquivo de um arquivo em que as informações sobre a configuração da máquina virtual são armazenadas. Esse caminho é relativo à propriedade **ConfigurationDataRoot** . Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), mas não é usada.
+O caminho relativo e o nome de arquivo de um arquivo em que as informações sobre a configuração da máquina virtual são armazenadas. Esse caminho é relativo à **propriedade ConfigurationDataRoot.** Essa propriedade é herdada de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), mas não é usada.
 
 </dd> <dt>
 
@@ -408,24 +408,24 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O identificador exclusivo da configuração da máquina virtual. Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), mas não é usada.
+O identificador exclusivo da configuração da máquina virtual. Essa propriedade é herdada de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), mas não é usada.
 
 </dd> <dt>
 
-**CreationTime**
+**Creationtime**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-A data e a hora em que as configurações da máquina virtual foram criadas. Se esse objeto representar as configurações atuais para a máquina virtual, esse valor será a hora em que o sistema foi criado. Se esse objeto representar as configurações de instantâneo para a máquina virtual, esse valor será a hora em que o instantâneo foi tirado. Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+A data e a hora em que as configurações da máquina virtual foram criadas. Se esse objeto representa as configurações atuais para a máquina virtual, esse valor seria a hora em que o sistema foi criado. Se esse objeto representa as configurações de instantâneo para a máquina virtual, esse valor seria a hora em que o instantâneo foi tirado. Essa propriedade é herdada de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
 
-Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifySystemSettings**](modifysystemsettings-msvm-virtualsystemmanagementservice.md) da classe [**Msvm \_ VirtualSystemManagementService**](msvm-virtualsystemmanagementservice.md) .
+Essa é uma propriedade somente leitura, mas pode ser alterada usando o método [**ModifySystemSettings**](modifysystemsettings-msvm-virtualsystemmanagementservice.md) da [**classe Msvm \_ VirtualSystemManagementService.**](msvm-virtualsystemmanagementservice.md)
 
-Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Essa propriedade é herdada de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
 
 </dd> <dt>
 
@@ -438,7 +438,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Uma descrição do objeto . Essa propriedade é herdada de [**CIM \_ managedelement**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e é sempre definida como "dados de configurações de replicação da máquina virtual".
+Uma descrição do objeto . Essa propriedade é herdada de [**\_ ManagedElement do CIM**](/previous-versions/windows/desktop/iscsitarg/cim-managedelement)e sempre é definida como "Dados de Replicação de Máquina Virtual Configurações".
 
 </dd> <dt>
 
@@ -451,41 +451,41 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Um nome de exibição para o objeto. Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))e é definida como o nome de exibição para a máquina virtual.
+Um nome de exibição para o objeto . Essa propriedade é herdada [**de CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85))e é definida como o nome de exibição da máquina virtual.
 
 </dd> <dt>
 
 **EnableWriteOrderPreservationAcrossDisks**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**preteridos**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("sem valor")
+Qualificadores: [**preterido**](/windows/desktop/WmiSdk/standard-wmi-qualifiers) ("Sem valor")
 </dt> </dl>
 
-Especifica se todos os discos rígidos virtuais de replicação para a máquina virtual são replicados para o mesmo ponto no tempo. Isso garante que a replicação obedeça a ordem de gravação dos aplicativos na máquina virtual.
+Especifica se todos os discos rígidos virtuais de replicação para a máquina virtual são replicados para o mesmo ponto no tempo. Isso garante que a replicação anote a ordem de gravação dos aplicativos na máquina virtual.
 
-**Windows 8.1:** A partir do Windows 8.1 e do Windows Server 2012 R2, essa propriedade é preterida e sempre é definida como **true**.
+**Windows 8.1:** Começando com Windows 8.1 e Windows Server 2012 R2, essa propriedade é preterida e sempre definida como **TRUE.**
 
 </dd> <dt>
 
 **IncludedDisks**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **HyperVEmbeddedInstance** ("CIM \_ StorageAllocationSettingData"), [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("indexado")
+Qualificadores: **HyperVEmbeddedInstance** ("CIM \_ StorageAllocationSettingData"), [**ArrayType**](/windows/desktop/WmiSdk/standard-qualifiers) ("Indexado")
 </dt> </dl>
 
-A lista de VHDs (discos rígidos virtuais) conectados ao sistema que será replicado pelo mecanismo de replicação. Essa é uma matriz de cadeias de caracteres, cada uma contendo a **InstanceId** do [**\_ StorageAllocationSettingData MSVM**](msvm-storageallocationsettingdata.md) que representa o VHD.
+A lista de VHDs (discos rígidos virtuais) anexados ao sistema que serão replicados pelo mecanismo de replicação. Essa é uma matriz de cadeias de caracteres, cada uma contendo a **InstanceID** do [**Msvm \_ StorageAllocationSettingData**](msvm-storageallocationsettingdata.md) que representa o VHD.
 
 </dd> <dt>
 
@@ -498,10 +498,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: **chave**
+Qualificadores: **Chave**
 </dt> </dl>
 
-Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada do [**CIM \_ SettingData**](/previous-versions//cc136911(v=vs.85)). Para o Windows 8, ele é sempre definido como "Microsoft:*Virtual Machine GUID* \\ HVR". Por Windows 8.1, ele é definido como "Microsoft:*GUID da máquina virtual* \\ HVR \\<0/1>". No Windows 8.1 valor, 0 indica primário e 1 indica replicação estendida. Para obter mais informações sobre a replicação estendida, consulte [**Msvm \_ ReplicationRelationship**](msvm-replicationrelationship.md).
+Identifica exclusivamente uma instância dessa classe. Essa propriedade é herdada de [**CIM \_ SettingData.**](/previous-versions//cc136911(v=vs.85)) Por Windows 8, ele é sempre definido como "Microsoft:*HVR do GUID da* Máquina \\ Virtual". Por Windows 8.1, ele é definido como "Microsoft:*HVR do GUID* da Máquina Virtual<\\ \\ 0/1>". No valor Windows 8.1, 0 indica primário e 1 indica replicação estendida. Para obter mais informações sobre a replicação estendida, consulte [**Msvm \_ ReplicationRelationship**](msvm-replicationrelationship.md).
 
 </dd> <dt>
 
@@ -514,22 +514,22 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O caminho de um diretório em que as informações de log para a máquina virtual são armazenadas. Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), mas não é usada.
+O caminho de um diretório em que as informações de log da máquina virtual são armazenadas. Essa propriedade é herdada de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), mas não é usada.
 
 </dd> <dt>
 
 **Observações**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Não usado e não pode ser definido.
+Não é usado e não pode ser definido.
 
-Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
+Essa propriedade é herdada de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)).
 
 </dd> <dt>
 
@@ -542,10 +542,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-O nome do ponto de conexão primário. No caso de um cluster primário, esse é o nome da extremidade do agente. No caso de um servidor primário autônomo, esse é o nome do sistema host.
+O nome do ponto de conexão primário. No caso de um cluster primário, esse é o nome CAP do agente. No caso de um servidor primário autônomo, esse é o nome do sistema de host.
 
 </dd> <dt>
 
@@ -558,7 +558,7 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 O nome de domínio totalmente qualificado do sistema de host primário que está hospedando a máquina virtual.
@@ -574,14 +574,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-O nome do ponto de conexão de recuperação. No caso de um cluster de recuperação, esse é o nome da extremidade do agente. No caso de um servidor de recuperação autônomo, esse é o nome do sistema de host.
+O nome do ponto de conexão de recuperação. No caso de um cluster de recuperação, esse é o nome CAP do agente. No caso de um servidor de recuperação autônomo, esse é o nome do sistema de host.
 
 </dd> <dt>
 
-**Recuperação de**
+**RecoveryFile**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -590,14 +590,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-O caminho completo de um arquivo em que as informações relacionadas à recuperação para a máquina virtual são armazenadas. Essa propriedade é herdada do [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), mas não é usada.
+O caminho completo de um arquivo em que as informações relacionadas à recuperação para a máquina virtual são armazenadas. Essa propriedade é herdada de [**CIM \_ VirtualSystemSettingData**](/previous-versions//cc136954(v=vs.85)), mas não é usada.
 
 </dd> <dt>
 
 **RecoveryHistory**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -616,10 +616,10 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-O nome de domínio totalmente qualificado do sistema host de recuperação que está hospedando a máquina virtual.
+O nome de domínio totalmente qualificado do sistema de host de recuperação que está hospedando a máquina virtual.
 
 </dd> <dt>
 
@@ -668,7 +668,7 @@ Intervalo de replicação de uma relação de replicação em segundos. Os valor
 
 O valor padrão é 300 segundos.
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -683,7 +683,7 @@ Tipo de acesso: Somente leitura
 
 O caminho para a instância da classe [**Msvm \_ replicationprovider**](msvm-replicationprovider.md) que identifica o ponto de extremidade do provedor de replicação.
 
-**Windows 8.1:** Não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
+**Windows 8.1:** não há suporte para esse valor até Windows 8.1 e Windows Server 2012 R2.
 
 </dd> <dt>
 
@@ -774,8 +774,8 @@ Especifica o tipo de máquina virtual que os dados de configuração representam
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 8 \[ somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | Windows Server 2012 \[ somente aplicativos da área de trabalho\]<br/>                                                    |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |

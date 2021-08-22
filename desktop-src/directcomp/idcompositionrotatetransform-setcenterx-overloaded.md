@@ -12,12 +12,12 @@ api_type:
 - DllExport
 ms.date: 07/02/2019
 ms.topic: reference
-ms.openlocfilehash: 5fafe66e910ddba5015448f9f7a102ec90ba617b
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 8f97ad673f675e511e113cf5635be3bec0ddcc29dbc16cd49144afb39cfdaaaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499396"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119562246"
 ---
 # <a name="idcompositionrotatetransformsetcenterx-methods"></a>Métodos IDCompositionRotateTransform:: SetCenterX
 
@@ -40,9 +40,9 @@ Altera ou anima o valor da propriedade CenterX de uma transformação de rotaç�
 
 | Requisito | Valor |
 |-------------------------------------|--------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                 |
-| parâmetro<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
+| Cliente mínimo com suporte<br/> | \[apenas aplicativos de área de trabalho Windows 8\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2012\]<br/>                                 |
+| Cabeçalho<br/>                   | <dl> <dt>DCOMP. h</dt> </dl>   |
 | Biblioteca<br/>                  | <dl> <dt>DCOMP. lib</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Dcomp.dll</dt> </dl> |
 

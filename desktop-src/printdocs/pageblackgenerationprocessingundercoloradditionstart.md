@@ -4,12 +4,12 @@ description: Revise o parâmetro PageBlackGenerationProcessingUnderColorAddition
 ms.assetid: 6c2a7bb5-436d-40ed-a855-242a6a04bc16
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 11bdbd970f30a7d573b7c803ea447e4ac3e94ca2
-ms.sourcegitcommit: 998d50f6def8a25850fc113fc8a2df903c829c5e
+ms.openlocfilehash: dd92834e85f4d95ea81eba7080632330e6951d6a99af29894d7f3adfcf3c18d2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549344"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034094"
 ---
 # <a name="pageblackgenerationprocessingundercoloradditionstart"></a>PageBlackGenerationProcessingUnderColorAdditionStart
 
@@ -27,7 +27,7 @@ Descreve o nível de sombra abaixo do qual o LTDA será aplicado.
 | Nome | Valor |
 |----------------------------|------------------------------------------------------------|
 | Tipo de elemento <br/>   | ParameterDef<br/>                                    |
-| Prefixo de definição de scoping <br/> | Página<br/>                                            |
+| Prefixo de definição de scoping <br/> | ?<br/>                                            |
 | Observações <br/>          | Vinculado ao elemento PageBlackGenerationProcessing<br/> |
 
 

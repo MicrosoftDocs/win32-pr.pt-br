@@ -1,9 +1,9 @@
 ---
-title: Elemento CC (sendEmailType)
-description: Contém os endereços de email usados na linha CC de uma mensagem de email.
+title: Elemento Cc (sendEmailType)
+description: Contém os endereços de email usados na linha Cc de uma mensagem de email.
 ms.assetid: cb8bc5b3-c352-43e3-bf28-d2090a519c7f
 keywords:
-- Agendador de Tarefas de elemento CC
+- Elemento Cc Agendador de Tarefas
 topic_type:
 - apiref
 api_name:
@@ -13,16 +13,16 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: 0bc49f2d7eebc2fbb1b5818fee2efa0e54f579a8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b639116a514a48eeab35561d936b6e5b8a4b479a9f8f0f09b6d1b596bd5e4bba
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455505"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119334605"
 ---
-# <a name="cc-sendemailtype-element"></a>Elemento CC (sendEmailType)
+# <a name="cc-sendemailtype-element"></a>Elemento Cc (sendEmailType)
 
-Contém os endereços de email usados na linha CC de uma mensagem de email.
+Contém os endereços de email usados na linha Cc de uma mensagem de email.
 
 ``` syntax
 <xs:element name="Cc"
@@ -30,23 +30,23 @@ Contém os endereços de email usados na linha CC de uma mensagem de email.
  />
 ```
 
-O elemento **CC** é definido pelo tipo complexo [**sendEmailType**](taskschedulerschema-sendemailtype-complextype.md) .
+O **elemento Cc** é definido pelo tipo complexo [**sendEmailType.**](taskschedulerschema-sendemailtype-complextype.md)
 
 ## <a name="parent-element"></a>Elemento pai
 
 
 
-| Elemento                                                                              | Derivado de                                                           | Descrição                                                  |
+| Elemento                                                                              | Derivado de                                                           | Description                                                  |
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------|--------------------------------------------------------------|
-| [**SendEmail (The Action)**](taskschedulerschema-sendemail-actiongroup-element.md) | [**sendEMailType**](taskschedulerschema-sendemailtype-complextype.md) | Representa uma ação que envia uma mensagem de email.<br/> |
+| [**SendEmail (actionGroup)**](taskschedulerschema-sendemail-actiongroup-element.md) | [**sendEMailType**](taskschedulerschema-sendemailtype-complextype.md) | Representa uma ação que envia uma mensagem de email.<br/> |
 
 
 
 ## <a name="remarks"></a>Comentários
 
-Para desenvolvimento em C++, consulte a [**Propriedade CC de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_cc).
+Para desenvolvimento em C++, consulte [**Propriedade Cc de IEmailAction**](/windows/desktop/api/taskschd/nf-taskschd-iemailaction-get_cc).
 
-Para o desenvolvimento de scripts, consulte [**EmailAction.CC**](emailaction-cc.md).
+Para desenvolvimento de script, [**consulte EmailAction.Cc**](emailaction-cc.md).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Para o desenvolvimento de scripts, consulte [**EmailAction.CC**](emailaction-cc.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

@@ -6,12 +6,12 @@ keywords:
 - tipos de dados MIDL, predefinidos e base
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0c1afaa479969d65f162a9d57935aa7fbc539701
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a6ecbc76b3f680f0fffbabcff38e8562475e26be8ae4ac583a78c614d1651151
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005402"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067076"
 ---
 # <a name="midl-predefined-and-base-types"></a>Tipos de base e predefinidos MIDL
 
@@ -23,10 +23,10 @@ O MIDL dá suporte aos seguintes tipos de base e predefinidos.
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | [**Boolean**](boolean.md)                 | 8 bits. Não compatível com interfaces [**oleautomation**](oleautomation.md) ; \_em vez disso, use Variant bool.                                                                                               | Não assinado         |
 | [**minuciosa**](byte.md)                       | 8 bits.                                                                                                                                                                                                 | (não se aplica) |
-| [**º**](char-idl.md)                   | 8 bits.                                                                                                                                                                                                 | Não assinado         |
-| [**double**](double.md)                   | número de ponto flutuante de 64 bits.                                                                                                                                                                           | (não se aplica) |
+| [**char**](char-idl.md)                   | 8 bits.                                                                                                                                                                                                 | Não assinado         |
+| [**Clique**](double.md)                   | número de ponto flutuante de 64 bits.                                                                                                                                                                           | (não se aplica) |
 | [**status de erro \_ \_ t**](error-status-t.md) | inteiro de 32 bits sem sinal para retornar valores de status para tratamento de erro.                                                                                                                                 | Não assinado         |
-| [**float**](float.md)                     | número de ponto flutuante de 32 bits.                                                                                                                                                                           | (não se aplica) |
+| [**barra**](float.md)                     | número de ponto flutuante de 32 bits.                                                                                                                                                                           | (não se aplica) |
 | [**lidar com \_ t**](handle-t.md)              | Tipo de identificador primitivo para associação.                                                                                                                                                                      | (não se aplica) |
 | [**Hyper**](hyper.md)                     | inteiro de 64 bits.                                                                                                                                                                                         | Com sinal           |
 | [**INT**](int.md)                         | inteiro de 32 bits. Em plataformas de 16 bits, o não pode aparecer em funções remotas sem um qualificador de tamanho como [**curto**](short.md), [**pequeno**](small.md), [**longo**](long.md) ou [**Hyper**](hyper.md). | Com sinal           |
@@ -35,20 +35,20 @@ O MIDL dá suporte aos seguintes tipos de base e predefinidos.
 | **\_\_Int32**                              | inteiro de 32 bits. Equivalente a [**Long**](long.md).                                                                                                                                                     | Com sinal           |
 | [**\_\_int3264**](--int3264.md)           | Um inteiro que é de 32 bits em plataformas de 32 bits e é de 64 bits em plataformas de 64 bits.                                                                                                                       | Com sinal           |
 | [**\_\_Int64**](--int64.md)               | inteiro de 64 bits. Equivalente a [**Hyper**](hyper.md).                                                                                                                                                   | Com sinal           |
-| [**Longas**](long.md)                       | inteiro de 32 bits.                                                                                                                                                                                         | Com sinal           |
+| [**long**](long.md)                       | inteiro de 32 bits.                                                                                                                                                                                         | Com sinal           |
 | [**short**](short.md)                     | inteiro de 16-BT.                                                                                                                                                                                          | Com sinal           |
 | [**menores**](small.md)                     | inteiro de 8 bits.                                                                                                                                                                                          | Com sinal           |
-| [**void**](void.md)                       | Indica que o procedimento não retorna um valor.                                                                                                                                                   | (não se aplica) |
+| [**livre**](void.md)                       | Indica que o procedimento não retorna um valor.                                                                                                                                                   | (não se aplica) |
 | **livre \***                                | ponteiro de 32 bits somente para identificadores de contexto.                                                                                                                                                                | (não se aplica) |
 | [**WCHAR \_ t**](wchar-t.md)                | tipo predefinido de 16 bits para caracteres largos.                                                                                                                                                             | Não assinado         |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

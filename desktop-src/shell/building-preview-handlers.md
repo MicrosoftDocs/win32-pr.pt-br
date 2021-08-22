@@ -4,12 +4,12 @@ ms.assetid: 6c240a63-c184-4b65-9483-794f5de4d695
 title: Criando gerenciadores de visualização
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a309873cf082071d5f426ce0ba6d039107c59665
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a810f15fed66d69bce32387249a2e0d678a1eb6c0dd918ec5df2e1ddbeb5be8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296219"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032914"
 ---
 # <a name="building-preview-handlers"></a>Criando gerenciadores de visualização
 
@@ -110,7 +110,7 @@ Se o acelerador de teclado passado para esse método por meio da bomba de mensag
 
 Há duas opções para encaminhar aceleradores de teclado de volta ao quadro:
 
-O modelo mais simples é encaminhar todos os pressionamentos de tecla para o host usando [**IPreviewHandlerFrame:: TranslateAccelerator**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandlerframe-translateaccelerator). Isso é feito no exemplo do Gerenciador de visualização fornecido com o SDK (Software Development Kit) do Windows. Todos os gerenciadores de visualização de baixa integridade devem usar esse modelo. Se o acelerador não for tratado pelo seu Gerenciador de visualização, chame **IPreviewHandlerFrame:: TranslateAccelerator** e retorne seu resultado.
+O modelo mais simples é encaminhar todos os pressionamentos de tecla para o host usando [**IPreviewHandlerFrame:: TranslateAccelerator**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandlerframe-translateaccelerator). isso é feito no exemplo do gerenciador de visualização fornecido com o SDK (Software Development Kit) do Windows. Todos os gerenciadores de visualização de baixa integridade devem usar esse modelo. Se o acelerador não for tratado pelo seu Gerenciador de visualização, chame **IPreviewHandlerFrame:: TranslateAccelerator** e retorne seu resultado.
 
 O outro modelo é usar uma tabela de acelerador como uma otimização para evitar o envio de muitos pressionamentos de tecla entre limites de processo:
 
@@ -138,27 +138,27 @@ Esses métodos devem ser implementados ao direcionar o Gerenciador de visualiza�
 
 Armazene essa cor e use-a durante a renderização quando desejar fornecer uma cor de plano de fundo. Por exemplo, para preencher a janela quando o manipulador é renderizado para uma área menor do que a área fornecida por [**IPreviewHandler:: SetWindow**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandler-setwindow) e [**IPreviewHandler:: SetRect**](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-ipreviewhandler-setrect). Observe, no entanto, que você não deve desenhar fora da área fornecida por esses métodos.
 
-Se esse método for chamado enquanto a visualização já estiver sendo processada, a renderização deverá ser reiniciada usando essa cor de plano de fundo.
+Se esse método for chamado enquanto a versão prévia já estiver sendo renderizada, a renderização deverá ser reiniciada usando essa cor da tela de fundo.
 
-### <a name="ipreviewhandlervisualssetfont"></a>IPreviewHandlerVisuals:: SetFont
+### <a name="ipreviewhandlervisualssetfont"></a>IPreviewHandlerVisuals::SetFont
 
-Armazene essas informações de fonte e use-as durante a renderização quando desejar exibir texto consistente com as configurações atuais do Windows Vista.
+Armazene essas informações de fonte e use-as durante a renderização quando quiser exibir texto consistente com as configurações Windows Vista atuais.
 
 ### <a name="ipreviewhandlervisualssettextcolor"></a>IPreviewHandlerVisuals::SetTextColor
 
-Armazene essas informações de cor do texto e use-as durante a renderização quando desejar exibir texto consistente com as configurações atuais do Windows Vista.
+Armazene essas informações de cor de texto e use-as durante a renderização quando quiser exibir texto consistente com as configurações Windows Vista atuais.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
 <dl> <dt>
 
-[Gerenciadores de visualização e host de visualização do Shell](preview-handlers.md)
+[Manipuladores de visualização e host de visualização do Shell](preview-handlers.md)
 </dt> <dt>
 
-[Como registrar um Gerenciador de visualização](how-to-register-a-preview-handler.md)
+[Como registrar um manipulador de visualização](how-to-register-a-preview-handler.md)
 </dt> <dt>
 
-[Diretrizes do Gerenciador de visualização](preview-handler-guidelines.md)
+[Diretrizes do manipulador de visualização](preview-handler-guidelines.md)
 </dt> </dl>
 
  

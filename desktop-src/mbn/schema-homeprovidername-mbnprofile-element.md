@@ -11,12 +11,12 @@ api_name:
 - HomeProviderName
 api_type:
 - Schema
-ms.openlocfilehash: 3d0af51e4873915838f2d55f683d07e9098aad3f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 1868be18dc7acf9d5146f987658feb006714fbcc3db35883007afd01c308609e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647097"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119035824"
 ---
 # <a name="homeprovidername-mbnprofile-element"></a>Elemento HomeProviderName (MBNProfile)
 
@@ -38,7 +38,7 @@ O elemento **HomeProviderName** é definido pelo elemento [**MBNProfile**](schem
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos de \[ aplicativos da área de trabalho do Windows 7 \| UWP\]<br/> |
+| Cliente mínimo com suporte<br/> | \[aplicativos UWP para aplicativos de área de trabalho Windows 7 \|\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                         |
 
 

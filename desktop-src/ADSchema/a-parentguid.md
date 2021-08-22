@@ -1,11 +1,11 @@
 ---
-title: Atributo pai-GUID
-description: Este é um atributo construído, inventado para dar suporte ao controle DirSync. Esse atributo contém o objectGUID do pai de um objeto ao replicar a criação, renomeação ou movimentação de um objeto.
+title: Atributo PARENT-GUID
+description: Esse é um atributo construído, com suporte para o controle DirSync. Esse atributo contém o objectGuid do pai de um objeto ao replicar a criação, a renomeação ou a movimentação de um objeto.
 ms.assetid: caf2491b-c0bf-4ea1-80ec-d44cf9307551
 ms.tgt_platform: multiple
 keywords:
-- Atributo pai-GUID AD Schema
-- Esquema de AD do atributo parentGUID
+- Esquema do AD do atributo PARENT-GUID
+- Esquema do AD do atributo parentGUID
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 38b01faf958f4add9c7788d630321d7c225f5026
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 39f42ba5aedc73f04d8967b84bcfbff39c54ce0dbcdf769e48a747ffa0d3e8c4
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825298"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119325426"
 ---
-# <a name="parent-guid-attribute"></a>Atributo pai-GUID
+# <a name="parent-guid-attribute"></a>Atributo PARENT-GUID
 
-Este é um atributo construído, inventado para dar suporte ao controle DirSync. Esse atributo contém o objectGUID do pai de um objeto ao replicar a criação, renomeação ou movimentação de um objeto.
+Esse é um atributo construído, com suporte para o controle DirSync. Esse atributo contém o objectGuid do pai de um objeto ao replicar a criação, a renomeação ou a movimentação de um objeto.
 
 
 
 | Entrada | Valor |
 |-------------------|-------------------------------------------------------|
-| CN                | GUID-pai                                           |
-| LDAP-Display-Name | parentGUID                                            |
+| CN                | GUID pai                                           |
+| Ldap-Display-Name | parentGUID                                            |
 | Tamanho              | 16 bytes                                              |
 | Privilégio de atualização  | Esse valor é definido pelo sistema.                      |
 | Frequência de atualização  | Durante a replicação                                    |
 | Attribute-Id      | 1.2.840.113556.1.4.1224                               |
-| System-ID-GUID    | 2df90d74-009f-11d2-aa4c-00c04fd7d83a                  |
-| Syntax            | [**Objeto (link de réplica)**](s-object-replica-link.md) |
+| System-Id-Guid    | 2df90d74-009f-11d2-aa4c-00c04fd7d83a                  |
+| Syntax            | [**Object(Replica-Link)**](s-object-replica-link.md) |
 
 
 
@@ -44,7 +44,7 @@ Este é um atributo construído, inventado para dar suporte ao controle DirSync.
 
 -   [**Windows 2000 Server**](#windows-2000-server)
 -   [**Windows Server 2003**](#windows-server-2003)
--   [**ADAM**](#adam)
+-   [**Adam**](#adam)
 -   [**Windows Server 2003 R2**](#windows-server-2003-r2)
 -   [**Windows Server 2008**](#windows-server-2008)
 -   [**Windows Server 2008 R2**](#windows-server-2008-r2)
@@ -58,11 +58,11 @@ Este é um atributo construído, inventado para dar suporte ao controle DirSync.
 |------------------------|--------------|
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| É de valor único       | True         |
+| System-Only            | Verdadeiro         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -79,11 +79,11 @@ Este é um atributo construído, inventado para dar suporte ao controle DirSync.
 |------------------------|--------------|
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| É de valor único       | True         |
+| System-Only            | Verdadeiro         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -92,7 +92,7 @@ Este é um atributo construído, inventado para dar suporte ao controle DirSync.
 
 
 
-## <a name="adam"></a>ADAM
+## <a name="adam"></a>Adam
 
 
 
@@ -100,11 +100,11 @@ Este é um atributo construído, inventado para dar suporte ao controle DirSync.
 |------------------------|--------------|
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| É de valor único       | True         |
+| System-Only            | Verdadeiro         |
+| Tem valor único       | Verdadeiro         |
 | É indexado             | Falso        |
-| No catálogo global      | Falso        |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
+| No Catálogo Global      | Falso        |
+| Descritor de segurança NT | O:BAG:BAD:S: |
 | Range-Lower            | \-           |
 | Range-Upper            | \-           |
 | Search-Flags           | 0x00000000   |
@@ -121,8 +121,8 @@ Este é um atributo construído, inventado para dar suporte ao controle DirSync.
 |------------------------|--------------|
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| É de valor único       | True         |
+| System-Only            | Verdadeiro         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -142,8 +142,8 @@ Este é um atributo construído, inventado para dar suporte ao controle DirSync.
 |------------------------|--------------|
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| É de valor único       | True         |
+| System-Only            | Verdadeiro         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -163,8 +163,8 @@ Este é um atributo construído, inventado para dar suporte ao controle DirSync.
 |------------------------|--------------|
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| É de valor único       | True         |
+| System-Only            | Verdadeiro         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |
@@ -184,8 +184,8 @@ Este é um atributo construído, inventado para dar suporte ao controle DirSync.
 |------------------------|--------------|
 | ID do link                | \-           |
 | MAPI-Id                | \-           |
-| System-Only            | True         |
-| É de valor único       | True         |
+| System-Only            | Verdadeiro         |
+| É de valor único       | Verdadeiro         |
 | É indexado             | Falso        |
 | No catálogo global      | Falso        |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S: |

@@ -4,12 +4,12 @@ ms.assetid: 1ecb1805-73ce-4741-b969-6eb88982ee26
 title: Evento MEStreamSinkPrerolled (Mfobjects. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 312daa90c995ccbbe8667cfa5acdf47975248474
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: d46c4c4e076651cb38318bb908df280c503c0880a256087f4192433ecdb5406a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103661579"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119464796"
 ---
 # <a name="mestreamsinkprerolled-event"></a>Evento MEStreamSinkPrerolled
 
@@ -33,9 +33,9 @@ Os valores possíveis recuperados de [**IMFMediaEvent:: GetValue**](/windows/des
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2008\]<br/>                                                     |
+| Cabeçalho<br/>                   | <dl> <dt>Mfobjects. h (incluir Mfidl. h)</dt> </dl> |
 
 
 

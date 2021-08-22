@@ -13,12 +13,12 @@ api_type:
 - HeaderDef
 api_location:
 - D3DX10Async.h
-ms.openlocfilehash: fbb4a716df4a893ea122e7badfd6faad536aacce
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: f5cd6772079f872fe575a3a2f49fee536b89dab00f29a62dba151842dbc99b45
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103930717"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119281706"
 ---
 # <a name="d3dx10compilefrommemory-function"></a>Função D3DX10CompileFromMemory
 
@@ -173,7 +173,7 @@ Um ponteiro para o valor de retorno. Pode ser **NULL**. Se *pPump* não for **NU
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 

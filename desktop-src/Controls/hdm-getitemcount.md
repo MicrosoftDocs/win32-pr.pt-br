@@ -1,9 +1,9 @@
 ---
-title: Mensagem de HDM_GETITEMCOUNT (commctrl. h)
-description: Obtém uma contagem dos itens em um controle de cabeçalho. Você pode enviar essa mensagem explicitamente ou usar a \_ macro GetItemCount do cabeçalho.
+title: HDM_GETITEMCOUNT mensagem (Commctrl.h)
+description: Obtém uma contagem dos itens em um controle de header. Você pode enviar essa mensagem explicitamente ou usar a \_ macro Header GetItemCount.
 ms.assetid: 0e6d2131-53b4-4927-bd0f-577b8eaf237a
 keywords:
-- Controles de HDM_GETITEMCOUNT de mensagens do Windows
+- HDM_GETITEMCOUNT controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 52ac0e647a675adf2bf29b9ff1f204bbd8b040d8
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 7e4500277528cc76012631734d6f7316b29fdcb7a5a92cec3cf7b6bbb42693ff
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085824"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119436026"
 ---
-# <a name="hdm_getitemcount-message"></a>\_Mensagem HDM GETitemcount
+# <a name="hdm_getitemcount-message"></a>Mensagem \_ GETITEMCOUNT do HDM
 
-Obtém uma contagem dos itens em um controle de cabeçalho. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ GetItemCount do cabeçalho**](/windows/desktop/api/Commctrl/nf-commctrl-header_getitemcount) .
+Obtém uma contagem dos itens em um controle de header. Você pode enviar essa mensagem explicitamente ou usar a [**macro \_ Header GetItemCount.**](/windows/desktop/api/Commctrl/nf-commctrl-header_getitemcount)
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -35,9 +35,9 @@ Obtém uma contagem dos itens em um controle de cabeçalho. Você pode enviar es
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-Retorna o número de itens, se for bem-sucedido, ou-1 caso contrário.
+Retorna o número de itens se for bem-sucedido ou -1 caso contrário.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -45,9 +45,9 @@ Retorna o número de itens, se for bem-sucedido, ou-1 caso contrário.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| parâmetro<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

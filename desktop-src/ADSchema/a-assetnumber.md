@@ -1,11 +1,11 @@
 ---
 title: Asset-Number atributo
-description: O número de rastreamento do objeto.
+description: O número de acompanhamento do objeto.
 ms.assetid: f9d6ae58-454c-47c4-a83d-ddccaeea817e
 ms.tgt_platform: multiple
 keywords:
-- Esquema de Asset-Number do atributo AD
-- Esquema de AD do atributo assetNumber
+- Asset-Number atributo AD Schema
+- Esquema do AD do atributo assetNumber
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f624cce036488cf4a0752a93dea9271916d4216
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: c1ee7f04d317e97ff688a577007513c0df14cc418deee53bf9d326e7d3371901
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103645599"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119081960"
 ---
 # <a name="asset-number-attribute"></a>Asset-Number atributo
 
-O número de rastreamento do objeto.
+O número de acompanhamento do objeto.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | Asset-Number                                |
-| LDAP-Display-Name | assetNumber                                 |
+| Ldap-Display-Name | assetNumber                                 |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.283                      |
-| System-ID-GUID    | ba305f75-47e3-11d0-a1a6-00c04fd930c9        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ba305f75-47e3-11d0-a1a6-00c04fd930c9        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,15 +58,15 @@ O número de rastreamento do objeto.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -79,15 +79,15 @@ O número de rastreamento do objeto.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -100,15 +100,15 @@ O número de rastreamento do objeto.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| Tem valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
-| No catálogo global      | Falso                                          |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
+| No Catálogo Global      | Falso                                          |
+| Descritor de segurança NT | O:BAG:BAD:S:                                   |
 | Range-Lower            | \-                                             |
 | Range-Upper            | \-                                             |
 | Search-Flags           | 0x00000000                                     |
 | System-Flags           | 0x00000010                                     |
-| Classes usadas em        | [**Fila de impressão**](c-printqueue.md)<br/> |
+| Classes usadas em        | [**Fila de Impressão**](c-printqueue.md)<br/> |
 
 
 
@@ -121,7 +121,7 @@ O número de rastreamento do objeto.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -142,7 +142,7 @@ O número de rastreamento do objeto.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |
@@ -163,7 +163,7 @@ O número de rastreamento do objeto.
 | ID do link                | \-                                             |
 | MAPI-Id                | \-                                             |
 | System-Only            | Falso                                          |
-| É de valor único       | True                                           |
+| É de valor único       | Verdadeiro                                           |
 | É indexado             | Falso                                          |
 | No catálogo global      | Falso                                          |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                   |

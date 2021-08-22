@@ -3,7 +3,7 @@ title: Mensagem de LB_GETSELCOUNT (WinUser. h)
 description: Obtém o número total de itens selecionados em uma caixa de listagem de seleção múltipla.
 ms.assetid: 1597f6d0-e8f2-4e10-8a0e-ef76192e6238
 keywords:
-- Controles de LB_GETSELCOUNT de mensagens do Windows
+- controles de Windows de mensagem de LB_GETSELCOUNT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: ed73b387315d1b612241d41e47e6b613a3a75f12
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: e8cacbf266931daaeba4a98c95c7c428630708d833af7603b0be09cef3071212
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104085407"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119434106"
 ---
 # <a name="lb_getselcount-message"></a>GETSELCOUNT de mensagens de LB \_
 
@@ -43,7 +43,7 @@ Não usado; deve ser zero.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O valor de retorno é a contagem de itens selecionados na caixa de listagem. Se a caixa de listagem for uma caixa de listagem de seleção única, o valor de retorno será um erro de LB \_ .
 
@@ -53,9 +53,9 @@ O valor de retorno é a contagem de itens selecionados na caixa de listagem. Se 
 
 | Requisito | Valor |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                                     |
-| parâmetro<br/>                   | <dl> <dt>WinUser. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                                           |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                                     |
+| parâmetro<br/>                   | <dl> <dt>Winuser. h (incluir Windows. h)</dt> </dl> |
 
 
 

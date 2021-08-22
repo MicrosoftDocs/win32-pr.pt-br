@@ -1,9 +1,9 @@
 ---
-title: CBEN_BEGINEDIT código de notificação (commctrl. h)
-description: Enviado quando o usuário ativa a lista suspensa ou clica na caixa de edição do controle. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: CBEN_BEGINEDIT de notificação (Commctrl.h)
+description: Enviado quando o usuário ativa a lista de listas listadas ou clica na caixa de edição do controle. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 77236471-b1c0-4679-b7b8-93e85867fe3b
 keywords:
-- CBEN_BEGINEDIT de código de notificação controles do Windows
+- CBEN_BEGINEDIT código de notificação Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c7d4cc80d12b01b9374173f413f0aee3701e5040
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 109af3e9ccfdd7d8679ac7a5d467cafa966de6faf76adbd06450fd6ba782e80d
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105749078"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119527896"
 ---
-# <a name="cben_beginedit-notification-code"></a>\_Código de notificação CBEN BEGINEDIT
+# <a name="cben_beginedit-notification-code"></a>Código de notificação CBEN \_ BEGINEDIT
 
-Enviado quando o usuário ativa a lista suspensa ou clica na caixa de edição do controle. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Enviado quando o usuário ativa a lista de listas listadas ou clica na caixa de edição do controle. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ CBEN_BEGINEDIT
 *lParam* 
 </dt> <dd>
 
-Um ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações sobre o código de notificação.
+Um ponteiro para uma [**estrutura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações sobre o código de notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O aplicativo que processa esse código de notificação deve retornar zero.
+O aplicativo que está processando esse código de notificação deve retornar zero.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ O aplicativo que processa esse código de notificação deve retornar zero.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

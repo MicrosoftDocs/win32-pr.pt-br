@@ -8,12 +8,12 @@ keywords:
 - WWS
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: b8511bf755f80f124071f658a65249243dc2f2af
-ms.sourcegitcommit: 6f8c895f4d43c4463f6f33fa8014c5de413ece1f
+ms.openlocfilehash: 8048a2e6e3e222de82234769813cead3ee7eb362c51355a1b516396de2c6d58b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "105813618"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119325296"
 ---
 # <a name="url"></a>Url
 
@@ -43,9 +43,9 @@ As seguintes estruturas fazem parte da URL:
 -   [**URL do WS \_ SOAPUDP \_**](/windows/desktop/api/WebServices/ns-webservices-ws_soapudp_url)
 -   [**URL do WS \_**](/windows/desktop/api/WebServices/ns-webservices-ws_url)
 
- 
+ 
 
- 
+ 
 
 
 

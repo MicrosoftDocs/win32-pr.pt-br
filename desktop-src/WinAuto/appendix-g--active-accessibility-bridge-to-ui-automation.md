@@ -4,16 +4,16 @@ description: Este apêndice contém informações sobre a ponte do Microsoft Ace
 ms.assetid: f19036c7-5a18-4faa-a98d-564e5e63a94f
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: df5fdc1ebc4d6e17781e383463974f78bb9334aa
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 14991f869706a16c4def8fdaf49ae255e3ddf413eec416cefd1e151ee470cc02
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105780151"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119052964"
 ---
 # <a name="appendix-g-active-accessibility-bridge-to-ui-automation"></a>Apêndice G: Acessibilidade Ativa ponte à automação da interface do usuário
 
-Este apêndice contém informações sobre a ponte do Microsoft Acessibilidade Ativa. A ponte Acessibilidade Ativa permite que os aplicativos que implementam o Microsoft Acessibilidade Ativa acessem aplicativos que implementam a automação da interface do usuário da Microsoft. Ao unir o Microsoft Acessibilidade Ativa e a automação da interface do usuário, os clientes baseados no Microsoft Acessibilidade Ativa, como um screenreader no Windows XP, podem interagir programaticamente com provedores baseados na automação da interface do usuário, como um aplicativo Windows Presentation Foundation (WPF). Ele faz parte da API principal de automação da interface do usuário (UIAutomationCore.dll).
+Este apêndice contém informações sobre a ponte do Microsoft Acessibilidade Ativa. A ponte Acessibilidade Ativa permite que os aplicativos que implementam o Microsoft Acessibilidade Ativa acessem aplicativos que implementam a automação da interface do usuário da Microsoft. ao unir o microsoft Acessibilidade Ativa e a automação da interface do usuário, os clientes baseados no microsoft Acessibilidade Ativa, como um screenreader no Windows XP, podem interagir programaticamente com provedores baseados na automação da interface do usuário, como um aplicativo Windows Presentation Foundation (WPF). Ele faz parte da API principal de automação da interface do usuário (UIAutomationCore.dll).
 
 O Acessibilidade Ativa Bridge mapeia Propriedades de automação da interface do usuário e eventos para os do Microsoft Acessibilidade Ativa. As tabelas a seguir mapeiam os métodos e as propriedades da interface Microsoft Acessibilidade Ativa [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) para a automação da interface do usuário. Use essas tabelas para determinar as práticas de codificação apropriadas para o desenvolvimento de seu cliente baseado no Microsoft Acessibilidade Ativa.
 
@@ -30,7 +30,7 @@ O Acessibilidade Ativa Bridge mapeia Propriedades de automação da interface do
 
 
 
- 
+ 
 
 ### <a name="descriptive-properties-and-methods"></a>Propriedades e métodos descritivos
 
@@ -52,7 +52,7 @@ O Acessibilidade Ativa Bridge mapeia Propriedades de automação da interface do
 
 
 
- 
+ 
 
 ### <a name="control-types-and-accrole"></a>Tipos de controle e accRole
 
@@ -91,7 +91,7 @@ A função padrão Microsoft Acessibilidade Ativa é [**\_ \_ cliente do sistema
 | [StatusBar](uiauto-supportstatusbarcontroltype.md)     | [**\_STATUSBAR do sistema de funções \_**](object-roles.md)       | Nenhum                                                     |
 | [Tab](uiauto-supporttabcontroltype.md)                 | [**\_PAGETABLIST do sistema de função \_**](object-roles.md)   | Nenhum                                                     |
 | [TabItem](uiauto-supporttabitemcontroltype.md)         | [**\_PAGETAB do sistema de função \_**](object-roles.md)           | Comutador                                                   |
-| [Table](uiauto-supporttablecontroltype.md)             | [**\_tabela do sistema de funções \_**](object-roles.md)               | Nenhum                                                     |
+| [Tabela](uiauto-supporttablecontroltype.md)             | [**\_tabela do sistema de funções \_**](object-roles.md)               | Nenhum                                                     |
 | [Text](uiauto-supporttextcontroltype.md)               | [**\_STATICTEXT do sistema de função \_**](object-roles.md)     | Nenhum                                                     |
 | [Comum](uiauto-supportthumbcontroltype.md)             | [**\_indicador do sistema de funções \_**](object-roles.md)       | Nenhum                                                     |
 | [TitleBar](uiauto-supporttitlebarcontroltype.md)       | [**\_TITLEBAR do sistema de funções \_**](object-roles.md)         | Nenhum                                                     |
@@ -103,7 +103,7 @@ A função padrão Microsoft Acessibilidade Ativa é [**\_ \_ cliente do sistema
 
 
 
- 
+ 
 
 ### <a name="ui-automation-properties-and-accstate"></a>Propriedades de automação da interface do usuário e accState
 
@@ -130,7 +130,7 @@ A função padrão Microsoft Acessibilidade Ativa é [**\_ \_ cliente do sistema
 
 
 
- 
+ 
 
 ### <a name="selection-and-focus"></a>Seleção e foco
 
@@ -144,7 +144,7 @@ A função padrão Microsoft Acessibilidade Ativa é [**\_ \_ cliente do sistema
 
 
 
- 
+ 
 
 ### <a name="ui-automation-properties-and-accselect-selflags"></a>Propriedades de automação da interface do usuário e accSelect SELFLAGs
 
@@ -161,7 +161,7 @@ A função padrão Microsoft Acessibilidade Ativa é [**\_ \_ cliente do sistema
 
 
 
- 
+ 
 
 ### <a name="spatial-mapping"></a>Mapeamento espacial
 
@@ -174,7 +174,7 @@ A função padrão Microsoft Acessibilidade Ativa é [**\_ \_ cliente do sistema
 
 
 
- 
+ 
 
 ### <a name="events"></a>Eventos
 
@@ -208,7 +208,7 @@ A função padrão Microsoft Acessibilidade Ativa é [**\_ \_ cliente do sistema
 
 
 
- 
+ 
 
 
 
@@ -218,17 +218,17 @@ A função padrão Microsoft Acessibilidade Ativa é [**\_ \_ cliente do sistema
 | [**objeto de evento \_ \_ VALUECHANGE**](event-constants.md)         | Valorproperty (padrão de controle de valor e padrão de controle RangeValue)                   |
 | [**\_seleção de objeto de evento \_**](event-constants.md)             | ElementSelectedEvent (padrão de controle SelectionItem)                                   |
 | [**objeto de evento \_ \_ SELECTIONADD**](event-constants.md)       | ElementAddedToSelectionEvent (padrão de controle SelectionItem)                           |
-| [**objeto de evento \_ \_ SELECTIONREMOVE**](event-constants.md) | ElementRemovedFromSelectionEvent                                                       |
-| [**objeto de evento \_ \_ SELECTIONWITHIN**](event-constants.md) | EventsSelectionInvalidatedEvent                                                        |
-| [**objeto de evento \_ \_ STATECHANGE**](event-constants.md)         | Consulte Propriedades de automação da interface do usuário e tabela accState para Estados que disparam uma alteração de estado |
+| [**SELEÇÃO \_ DE OBJETO DE \_ EVENTOREMOVE**](event-constants.md) | Elementremovedfromselectionevent                                                       |
+| [**EVENT \_ OBJECT \_ SELECTIONWITHIN**](event-constants.md) | EventsSelectionInvalidatedEvent                                                        |
+| [**EVENT \_ OBJECT \_ STATECHANGE**](event-constants.md)         | Consulte Automação da Interface do Usuário Propriedades e tabela accState para ver os estados que disparam uma alteração de estado |
 
 
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

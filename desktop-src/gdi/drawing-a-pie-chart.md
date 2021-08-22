@@ -1,19 +1,19 @@
 ---
-description: Você pode usar as funções linha e curva para desenhar um gráfico de pizza.
+description: Você pode usar as funções de linha e curva para desenhar um gráfico de pizza.
 ms.assetid: 788d3bc2-1010-436c-a95f-6fe55daac88e
-title: Desenho de um gráfico de pizza
+title: Desenhando um gráfico de pizza
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 02d14928c3f90c3222c2a01d6a063d46f109ad7c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0a9bfc5d60ca425deb7d099558366f627d1f94dfbf4889090b5d494f1a5770d6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104091193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119038074"
 ---
-# <a name="drawing-a-pie-chart"></a>Desenho de um gráfico de pizza
+# <a name="drawing-a-pie-chart"></a>Desenhando um gráfico de pizza
 
-Você pode usar as funções linha e curva para desenhar um gráfico de pizza. A função principal usada para desenhar gráficos de pizza é a função [**AngleArc**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) , que exige que você forneça as coordenadas do centro da pizza, o raio da pizza, um ângulo inicial e um ângulo de flecha. A captura de tela a seguir mostra uma caixa de diálogo que o usuário pode usar para inserir esses valores.
+Você pode usar as funções de linha e curva para desenhar um gráfico de pizza. A função principal usada para desenhar gráficos de pizza é a função [**AngleArc,**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) que exige que você forneça as coordenadas do centro da pizza, o raio da pizza, um ângulo inicial e um ângulo de varredura. A captura de tela a seguir mostra uma caixa de diálogo que o usuário pode usar para inserir esses valores.
 
 ![captura de tela mostrando uma caixa de diálogo para inserir valores para o gráfico de pizza](images/pie.png)
 
@@ -21,7 +21,7 @@ Os valores mostrados acima produzem o gráfico de pizza a seguir.
 
 ![captura de tela do gráfico de pizza resultante](images/sampleapp.png)
 
-O modelo de caixa de diálogo encontrado no script de recurso do aplicativo (. RC) o arquivo especifica as características da caixa de diálogo anterior (sua altura, os controles que ela contém e seu estilo), da seguinte maneira.
+O modelo de caixa de diálogo encontrado no script de recurso do aplicativo (. O arquivo RC especifica características da caixa de diálogo anterior (sua altura, os controles que ele contém e seu estilo), da seguinte forma.
 
 
 ```C++
@@ -48,9 +48,9 @@ END
 
 
 
-O procedimento da caixa de diálogo, encontrado no arquivo de origem do aplicativo, recupera dados (coordenadas do centro, raio do arco e ângulos de início e limpeza) seguindo estas etapas:
+O procedimento da caixa de diálogo, encontrado no arquivo de origem do aplicativo, recupera dados (coordenadas do centro, raio do arco e ângulos de início e varredura) seguindo estas etapas:
 
-1.  A função ClearBits definida pelo aplicativo Inicializa a matriz que recebe a entrada do usuário para zero.
+1.  A função ClearBits definida pelo aplicativo inicializa a matriz que recebe a entrada do usuário como zero.
 2.  A função GetStrLngth definida pelo aplicativo recupera o comprimento da cadeia de caracteres inserida pelo usuário.
 3.  A função RetrieveInput definida pelo aplicativo recupera o valor inserido pelo usuário.
 
@@ -180,7 +180,7 @@ DWORD RetrieveInput(LPTSTR cArray, int iLength)
 
 
 
-Para desenhar cada seção do gráfico de pizza, passe os valores inseridos pelo usuário para a função [**AngleArc**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) . Para preencher o gráfico de pizza usando o pincel atual, incorpore a chamada para **AngleArc** em um colchete de caminho. O exemplo de código a seguir mostra o colchete de caminho definido e a chamada para **AngleArc**.
+Para desenhar cada seção do gráfico de pizza, passe os valores inseridos pelo usuário para a [**função AngleArc.**](/windows/desktop/api/Wingdi/nf-wingdi-anglearc) Para preencher o gráfico de pizza usando o pincel atual, insera a chamada para **AngleArc** em um colchete de caminho. O exemplo de código a seguir mostra o colchete de caminho definido e a chamada para **AngleArc**.
 
 
 ```C++

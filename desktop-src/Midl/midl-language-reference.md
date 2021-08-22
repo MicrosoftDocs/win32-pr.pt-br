@@ -1,116 +1,116 @@
 ---
 title: Referência da linguagem MIDL
-description: Esta seção fornece uma entrada de referência para cada palavra-chave no linguagem IDL da Microsoft (MIDL). As entradas de referência também são incluídas para importantes produções e conceitos de linguagem.
+description: Esta seção fornece uma entrada de referência para cada palavra-chave no linguagem IDL da Microsoft (MIDL). As entradas de referência também são incluídas para conceitos e produção de linguagem importantes.
 ms.assetid: ca49c9ed-95b5-4d02-9a98-457ddc3399e3
 keywords:
-- Linguagem IDL da Microsoft MIDL, referência, idioma
-- MIDL de referência de linguagem MIDL
+- linguagem IDL da Microsoft MIDL, referência, linguagem
+- REFERÊNCIA DA linguagem MIDL MIDL
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c543e8f49b2f79b49548bac3b1b0dfdb55775866
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 6313497b995ccc8ccc0f47827ab871e86a95dc6b4b09e5b9841fe32ba3c76e8d
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "103917267"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119067136"
 ---
 # <a name="midl-language-reference"></a>Referência da linguagem MIDL
 
-Esta seção fornece uma entrada de referência para cada palavra-chave no linguagem IDL da Microsoft (MIDL). As entradas de referência também são incluídas para importantes produções e conceitos de linguagem.
+Esta seção fornece uma entrada de referência para cada palavra-chave no linguagem IDL da Microsoft (MIDL). As entradas de referência também são incluídas para conceitos e produção de linguagem importantes.
 
 | Tópico | Descrição |
 | - | - |
-| [Palavras-chave reservadas](reserved-keywords.md) | Este tópico lista as palavras-chave reservadas no MIDL. Você não pode usar essas palavras-chave nos nomes dos seus tipos e membros. |
-| [Serialização de modo misto de identificadores de contexto](mixed-mode-serialization-of-context-handles.md) | No Microsoft Windows XP, uma única interface pode acomodar identificadores de contexto serializados e não serializados, que é chamado de serialização de modo misto. |
+| [Palavras-chave reservadas](reserved-keywords.md) | Este tópico lista as palavras-chave reservadas em MIDL. Você não pode usar essas palavras-chave nos nomes de seus tipos e membros. |
+| [Serialização de modo misto de alças de contexto](mixed-mode-serialization-of-context-handles.md) | No Microsoft Windows XP, uma única interface pode acomodar as alças de contexto serializadas e não serializadas, que é chamada de serialização de modo misto. |
 
-As entradas de referência são organizadas em ordem alfabética, e cada entrada inclui sintaxe, exemplos, descrições e referências cruzadas.
+As entradas de referência são organizadas em ordem alfabética e cada entrada inclui sintaxe, exemplos, descrições e referências cruzadas.
 
 <dl>
 
 [**aggregatable**](aggregatable.md)  
-[**aloca**](allocate.md)  
-[**anotar**](annotate.md)  
+[**Alocar**](allocate.md)  
+[**Anotar**](annotate.md)  
 [**appobject**](appobject.md)  
-[**Storage**](/windows/desktop/Rpc/arrays)  
+[**matrizes**](/windows/desktop/Rpc/arrays)  
 [**Async**](async.md)  
-[**\_UUID assíncrono**](async-uuid.md)  
-[**\_identificador automático**](auto-handle.md)  
+[**async \_ uuid**](async-uuid.md)  
+[**auto \_ handle**](auto-handle.md)  
 [**bindable**](bindable.md)  
 [**Boolean**](boolean.md)  
-[**difusor**](broadcast.md)  
-[**minuciosa**](byte.md)  
-[**contagem de bytes \_**](byte-count.md)  
+[**Transmissão**](broadcast.md)  
+[**Byte**](byte.md)  
+[**contagem de \_ byte**](byte-count.md)  
 [**chamar \_ como**](call-as.md)  
 [**retorno de chamada**](callback.md)  
 [**char**](char-idl.md)  
 [**coclass**](coclass.md)  
-[**auto-completar**](code.md)  
-[**status de comunicação \_**](comm-status.md)  
+[**Código**](code.md)  
+[**status do \_ comm**](comm-status.md)  
 [**const**](const.md)  
-[**identificador de contexto \_**](context-handle.md)  
-[**identificador de contexto \_ \_ noserializeize**](context-handle-noserialize.md)  
-[**\_serializar identificador de contexto \_**](context-handle-serialize.md)  
-[**controlo**](control.md)  
-[**citação de CPP \_**](cpp-quote.md)  
-[**Personalizar**](custom.md)  
-[**RET**](decode.md)  
-[**os**](default.md)  
+[**alça de \_ contexto**](context-handle.md)  
+[**\_ \_ naerialize do context handle**](context-handle-noserialize.md)  
+[**serializar \_ o \_ alça de contexto**](context-handle-serialize.md)  
+[**Controle**](control.md)  
+[**Cotação \_ cpp**](cpp-quote.md)  
+[**Personalizado**](custom.md)  
+[**Decodificar**](decode.md)  
+[**Padrão**](default.md)  
 [**defaultbind**](defaultbind.md)  
 [**defaultcollelem**](defaultcollelem.md)  
-[**ValorPadrão**](defaultvalue.md)  
+[**Defaultvalue**](defaultvalue.md)  
 [**defaultvtable**](defaultvtable.md)  
-[desabilitar \_ verificação de consistência \_](disable-consistence-check.md)  
+[desabilitar \_ verificação de \_ consistência](disable-consistence-check.md)  
 [**dispinterface**](dispinterface.md)  
 [**displaybind**](displaybind.md)  
-[**DllName (Str)**](dllname-str-.md)  
-[**double**](double.md)  
-[**simplifica**](dual.md)  
-[**Habilitar \_ alocação**](enable-allocate.md)  
-[**codificado**](encode.md)  
-[**extremidade**](endpoint.md)  
-[**inicial**](entry.md)  
-[**enumera**](enum.md)  
-[**status de erro \_ \_ t**](error-status-t.md)  
-[**\_identificador explícito**](explicit-handle.md)  
-[**status de falha \_**](fault-status.md)  
+[**dllname(str)**](dllname-str-.md)  
+[**Duplo**](double.md)  
+[**Dupla**](dual.md)  
+[**\_habilitar alocar**](enable-allocate.md)  
+[**Codificar**](encode.md)  
+[**Extremidade**](endpoint.md)  
+[**Entrada**](entry.md)  
+[**Enum**](enum.md)  
+[**status \_ de \_ erro t**](error-status-t.md)  
+[**alça \_ explícita**](explicit-handle.md)  
+[**status \_ de falha**](fault-status.md)  
 [**primeiro \_ é**](first-is.md)  
-[**float**](float.md)  
-[**forçar \_ alocação**](force-allocate.md)  
-[**processamento**](handle.md)  
-[**lidar com \_ t**](handle-t.md)  
+[**Flutuar**](float.md)  
+[**force \_ allocate**](force-allocate.md)  
+[**Lidar com**](handle.md)  
+[**handle \_ t**](handle-t.md)  
 [**helpcontext**](helpcontext.md)  
 [**helpfile**](helpfile.md)  
 [**helpstring**](helpstring.md)  
 [**helpstringcontext**](helpstringcontext.md)  
 [**helpstringdll**](helpstringdll.md)  
-[**oculto**](hidden.md)  
+[**Escondidos**](hidden.md)  
 [**Hyper**](hyper.md)  
-[**sessão**](id.md)  
+[**Id**](id.md)  
 [**idempotente**](idempotent.md)  
-[**ignorar**](ignore.md)  
-[**IID \_ é**](iid-is.md)  
+[**Ignorar**](ignore.md)  
+[**iid \_ é**](iid-is.md)  
 [**immediatebind**](immediatebind.md)  
-[**\_identificador implícito**](implicit-handle.md)  
-[**importe**](import.md)  
+[**alça \_ implícita**](implicit-handle.md)  
+[**Importação**](import.md)  
 [**importlib**](importlib.md)  
-[**no**](in.md)  
-[**incluir**](include.md)  
+[**Em**](in.md)  
+[**Incluem**](include.md)  
 [**na \_ linha**](in-line.md)  
-[**int**](int.md)  
+[**INT**](int.md)  
 [**\_\_Int32**](--int3264.md)  
-[**\_\_Int64**](--int64.md)  
-[**interface**](interface.md)  
-[**último \_ é**](last-is.md)  
-[**LCID**](lcid.md)  
-[**comprimento \_ é**](length-is.md)  
-[**biblioteca**](library.md)  
+[**\_\_int64**](--int64.md)  
+[**Interface**](interface.md)  
+[**o último \_ é**](last-is.md)  
+[**Lcid**](lcid.md)  
+[**length \_ é**](length-is.md)  
+[**Biblioteca**](library.md)  
 [**licensed**](licensed.md)  
-[**local**](local.md)  
-[**Longas**](long.md)  
-[**máximo \_ é**](max-is.md)  
-[**Eu**](maybe.md)  
+[**Local**](local.md)  
+[**long**](long.md)  
+[**max \_ é**](max-is.md)  
+[**Talvez**](maybe.md)  
 [**Mensagem**](message.md)  
-[**aviso de pragma de MIDL \_**](midl-pragma-warning.md)  
+[**midl \_ pragma warning**](midl-pragma-warning.md)  
 [**\_alocar usuário de MIDL \_**](midl-user-allocate-1.md)  
 [**usuário de MIDL \_ \_ gratuito**](midl-user-free-1.md)  
 [**mín. \_ é**](min-is.md)  
@@ -144,7 +144,7 @@ As entradas de referência são organizadas em ordem alfabética, e cada entrada
 [**fora**](out-idl.md)  
 [**fora \_ de \_ linha**](out-of-line.md)  
 [**\_ignorar parcial**](partial-ignore.md)  
-[**pipe**](pipe.md)  
+[**conexão**](pipe.md)  
 [**padrão de ponteiro \_**](pointer-default.md)  
 [**pragma**](pragma.md)  
 [**propget**](propget.md)  
@@ -152,7 +152,7 @@ As entradas de referência são organizadas em ordem alfabética, e cada entrada
 [**propputref**](propputref.md)  
 [**acionista**](proxy.md)  
 [**ptr**](ptr.md)  
-[**publicada**](public.md)  
+[**público**](public.md)  
 [**amplitude**](range.md)  
 [**leitura**](readonly.md)  
 [**ref**](ref.md)  
@@ -184,11 +184,11 @@ As entradas de referência são organizadas em ordem alfabética, e cada entrada
 [**\_Enumeração v1**](v1-enum.md)  
 [**vararg**](vararg.md)  
 [**Versão**](version.md)  
-[**void**](void.md)  
+[**livre**](void.md)  
 [**WCHAR \_ t**](wchar-t.md)  
 [**\_marshaling de transmissão**](wire-marshal.md)  
 </dl>
 
- 
+ 
 
- 
+ 

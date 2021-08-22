@@ -3,7 +3,7 @@ title: Player. tela inteira
 description: A propriedade fullScreen especifica ou recupera um valor que indica se o conteúdo do vídeo é reproduzido no modo de tela inteira.
 ms.assetid: 43eeeddd-13a6-44d8-9cff-a60e976fc189
 keywords:
-- Player. tela inteira do Windows Media Player
+- Windows Media Player Player. fullScreen
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - DllExport
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: c3f71b4100c359effd95f79c574a52b5a5bae28c
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: f380dcbcaeedddd23c5e6ff42f9750ea8bcd2f552942e19ba7b847e725edc3b2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105781356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119054374"
 ---
 # <a name="playerfullscreen"></a>Player. tela inteira
 
@@ -46,19 +46,19 @@ Esta propriedade é um **booliano** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Para que o modo de tela inteira funcione corretamente ao inserir o controle do Windows Media Player, a área de exibição de vídeo deve ter uma altura e largura de pelo menos um pixel. Se **UIMODE** for definido como "mini" ou "Full", a altura do controle em si deverá ser 65 ou maior para acomodar a área de exibição do vídeo além da interface do usuário.
+para que o modo de tela inteira funcione corretamente ao inserir o controle de Windows Media Player, a área de exibição de vídeo deve ter uma altura e largura de pelo menos um pixel. Se **UIMODE** for definido como "mini" ou "Full", a altura do controle em si deverá ser 65 ou maior para acomodar a área de exibição do vídeo além da interface do usuário.
 
 Se **UIMODE** for definido como "invisível", a configuração dessa propriedade como true gerará um erro e não afetará o comportamento do controle.
 
-Durante a reprodução de tela inteira, o Windows Media Player oculta o cursor do mouse quando **enableContextMenu** é igual a false e **UIMODE** é igual a "None".
+durante a reprodução de tela inteira, Windows Media Player oculta o cursor do mouse quando **enableContextMenu** é igual a false e **uiMode** é igual a "none".
 
-Se **UIMODE** for definido como "Full" ou "mini", o Windows Media Player exibirá controles de transporte no modo de tela inteira quando o cursor do mouse se mover. Após um breve intervalo de sem movimento do mouse, os controles de transporte ficam ocultos. Se **UIMODE** for definido como "None", nenhum controle será exibido no modo de tela inteira.
+se **uiMode** for definido como "full" ou "mini", Windows Media Player exibirá controles de transporte no modo de tela inteira quando o cursor do mouse se mover. Após um breve intervalo de sem movimento do mouse, os controles de transporte ficam ocultos. Se **UIMODE** for definido como "None", nenhum controle será exibido no modo de tela inteira.
 
 **Observação**
 
-A exibição de controles de transporte no modo de tela inteira requer o sistema operacional Windows XP.
+a exibição de controles de transporte no modo de tela inteira requer o sistema operacional Windows XP.
 
-Se os controles de transporte não forem exibidos no modo de tela inteira, o Windows Media Player sairá automaticamente do modo de tela inteira quando a reprodução for interrompida.
+se os controles de transporte não forem exibidos no modo de tela inteira, Windows Media Player sairá automaticamente no modo de tela inteira quando a reprodução for interrompida.
 
 **Observação**
 

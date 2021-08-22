@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b2e103b3d2648bf2c061eb047090cfdfeb907518
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: b5e74de96ad24ff16ea2c2effaef78003011f5d6bd5d421336084ac5c7701f79
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105762737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119432636"
 ---
 # <a name="startservice-method-of-the-microsoftdns_server-class"></a>Método StartService da classe de \_ servidor MicrosoftDNS
 
@@ -40,7 +40,7 @@ uint32 StartService();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 \_O êxito do erro indica que o serviço foi iniciado com êxito. Qualquer outro valor é um código de erro.
 

@@ -14,12 +14,12 @@ api_type:
 api_location:
 - strmiids.lib
 - strmiids.dll
-ms.openlocfilehash: 51438a21782d1a703a3b43134517e8337ce9f75e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 3db1e8ba8f565cdc0917afffbc2cc4c4455cfa7f5e401fcc6c3abcf75d0c0ce6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757287"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119329976"
 ---
 # <a name="idxtjpegloaddefsettings-method"></a>Método IDxtJpeg:: LoadDefSettings
 
@@ -43,7 +43,7 @@ HRESULT LoadDefSettings();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, ele retorna um código de erro **HRESULT** .
 
@@ -55,7 +55,7 @@ Se esse método for bem sucedido, ele retornará **S \_ OK**. Caso contrário, e
  
 
 > [!Note]  
-> Para obter o QEdit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). O QEdit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
+> para obter o Qedit. h, baixe a [atualização SDK do Microsoft Windows para Windows Vista e .NET Framework 3,0](https://msdn.microsoft.com/windowsvista/bb980924.aspx). Qedit. h não está disponível no SDK do Microsoft Windows para Windows 7 e .NET Framework 3,5 Service Pack 1.
 
  
 

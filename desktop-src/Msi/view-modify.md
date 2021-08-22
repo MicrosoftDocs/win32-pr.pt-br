@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Msi.dll
-ms.openlocfilehash: b4dc97f2e3b5f85d472cfcbfad6017ce4e051e4b
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e4149afb638c01b31d51c45f5d55c6f43fe50b4a85b77c25b4f6a5e0ed5993fa
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105748562"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498856"
 ---
 # <a name="viewmodify-method"></a>Método View. Modify
 
@@ -76,26 +76,26 @@ Obrigatórios. Objeto de [**registro**](record-object.md) obtido pelo método [*
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método deve ser chamado após o método [**Execute**](view-execute.md) .
+Esse método deve ser chamado após o [**método Execute.**](view-execute.md)
 
-Para executar qualquer instrução SQL, é necessário criar uma exibição. No entanto, uma exibição que não cria um conjunto de resultados, como CREATE TABLE ou INSERT INTO, não pode ser usada com o método **Modify** para atualizar tabelas por meio da exibição.
+Para executar qualquer instrução SQL, uma exibição deve ser criada. No entanto, uma exibição que não cria um conjunto de resultados, como CREATE TABLE ou INSERT INTO, não pode ser usada com o método **Modify** para atualizar tabelas por meio da exibição.
 
-Os valores msiViewModifyValidate, msiViewModifyValidateNew, msiViewModifyValidateField e msiViewModifyValidateDelete do método **Modify** não executam atualizações reais; Eles garantem que os dados no registro sejam válidos. O uso dessas ações requer que o banco de dados contenha uma [ \_ tabela de validação](-validation-table.md) .
+Os valores msiViewModifyValidate, msiViewModifyValidateNew, msiViewModifyValidateField e msiViewModifyValidateDelete do método **Modify** não executam atualizações reais; eles garantem que os dados no registro são válidos. O uso dessas ações exige que o banco de dados contenha uma [ \_ tabela validação](-validation-table.md) .
 
-Você não pode buscar um registro que contém dados binários de um banco de dado e, em seguida, usar esse registro para inserir os dados em um banco de dado completamente diferente. Você deve exportar os dados para um arquivo e, em seguida, importá-los para o novo banco de dados usando o método [**SetStream**](record-setstream.md) do objeto [**Record**](record-object.md) . Isso garante que cada banco de dados tenha sua própria cópia dos dados binários.
+Você não pode buscar um registro que contém dados binários de um banco de dados e, em seguida, usar esse registro para inserir os dados em um banco de dados completamente diferente. Para mover dados binários de um banco de dados para outro, você deve exportar os dados para um arquivo e importá-los para o novo banco de dados usando o [**método SetStream**](record-setstream.md) do [**objeto Record.**](record-object.md) Isso garante que cada banco de dados tenha sua própria cópia dos dados binários.
 
 > [!Note]  
-> As ações personalizadas só podem adicionar, modificar ou remover linhas, colunas ou tabelas temporárias de um banco de dados. As ações personalizadas não podem modificar dados persistentes em um banco de dados, como os que fazem parte do banco de dado armazenado em disco. Para obter mais informações, consulte [acessando a sessão do instalador atual de dentro de uma ação personalizada](accessing-the-current-installer-session-from-inside-a-custom-action.md).
+> Ações personalizadas só podem adicionar, modificar ou remover linhas, colunas ou tabelas temporárias de um banco de dados. Ações personalizadas não podem modificar dados persistentes em um banco de dados, como dados que fazem parte do banco de dados armazenado em disco. Para obter mais informações, [consulte Acessando a sessão do instalador atual de dentro de uma ação personalizada](accessing-the-current-installer-session-from-inside-a-custom-action.md).
 
  
 
-Se o método falhar, você poderá obter informações de erro estendidas usando o método [**LastErrorRecord**](installer-lasterrorrecord.md) .
+Se o método falhar, você poderá obter informações de erro estendidas usando o [**método LastErrorRecord.**](installer-lasterrorrecord.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -103,9 +103,9 @@ Se o método falhar, você poderá obter informações de erro estendidas usando
 
 | Requisito | Valor |
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Versão<br/> | Windows Installer 5,0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Installer 4,0 ou Windows Installer 4,5 no Windows Server 2008 ou no Windows Vista. Windows Installer no Windows Server 2003 ou no Windows XP<br/> |
+| Versão<br/> | Windows Instalador 5.0 no Windows Server 2012, Windows 8, Windows Server 2008 R2 ou Windows 7. Windows Instalador 4.0 ou Windows Instalador 4.5 no Windows Server 2008 ou Windows Vista. Windows Instalador no Windows Server 2003 ou Windows XP<br/> |
 | DLL<br/>     | <dl> <dt>Msi.dll</dt> </dl>                                                                                                                                                                      |
-| IID<br/>     | IID \_ IView é definido como 000C109C-0000-0000-C000-000000000046<br/>                                                                                                                                                                                |
+| IID<br/>     | IID IView é definido como \_ 000C109C-0000-0000-C000-00000000046<br/>                                                                                                                                                                                |
 
 
 

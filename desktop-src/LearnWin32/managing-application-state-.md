@@ -4,12 +4,12 @@ description: Um procedimento de janela é apenas uma função que é invocada pa
 ms.assetid: 2f03961e-a886-4947-8f5d-62543c6b8815
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e275833c30c612b5b40ab29d089d07ed7794b429
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 6b0cde27195ba0dfc16668da11beac243821902995a9d01daa337f8962944343
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "104007523"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119068056"
 ---
 # <a name="managing-application-state"></a>Gerenciando o estado do aplicativo
 
@@ -26,7 +26,7 @@ Essas mensagens são enviadas na ordem listada. (Essas não são as duas únicas
 
 A mensagem de [**\_ criação**](/windows/desktop/winmsg/wm-create) do [**WM \_ NCCREATE**](/windows/desktop/winmsg/wm-nccreate) e do WM são enviadas antes que a janela fique visível. Isso os torna um bom lugar para inicializar sua interface do usuário, por exemplo, para determinar o layout inicial da janela.
 
-O último parâmetro de [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) é um ponteiro do tipo **void \***. Você pode passar qualquer valor de ponteiro que desejar nesse parâmetro. Quando o procedimento de janela manipula a mensagem do [**WM \_ NCCREATE**](/windows/desktop/winmsg/wm-nccreate) ou do [**WM \_ Create**](/windows/desktop/winmsg/wm-create) , ele pode extrair esse valor dos dados da mensagem.
+O último parâmetro de [**CreateWindowEx**](/windows/desktop/api/winuser/nf-winuser-createwindowexa) é um ponteiro do tipo **void \** _. Você pode passar qualquer valor de ponteiro que desejar nesse parâmetro. Quando o procedimento de janela manipula a mensagem de [**\_ criação**](/windows/desktop/winmsg/wm-create) [_ * *WM \_ NCCREATE*](/windows/desktop/winmsg/wm-nccreate) ou WM, ele pode extrair esse valor dos dados da mensagem.
 
 Vamos ver como você usaria esse parâmetro para passar dados de aplicativo para sua janela. Primeiro, defina uma classe ou estrutura que contém informações de estado.
 
@@ -325,11 +325,11 @@ LRESULT MainWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 
 Observe que o identificador de janela é armazenado em uma variável de membro (*m \_ HWND*), portanto, não precisamos passá-lo como um parâmetro para `HandleMessage` .
 
-Muitas das estruturas de programação existentes do Windows, como MFC (MFC) e Active Template Library (ATL), usam abordagens que são basicamente semelhantes àquelas mostradas aqui. É claro que uma estrutura totalmente generalizada, como MFC, é mais complexa do que esse exemplo relativamente simplista.
+muitas das estruturas de programação Windows existentes, como MFC (MFC) e Active Template Library (ATL), usam abordagens que são basicamente semelhantes àquelas mostradas aqui. É claro que uma estrutura totalmente generalizada, como MFC, é mais complexa do que esse exemplo relativamente simplista.
 
 ## <a name="next"></a>Avançar
 
-[Módulo 2: usando COM em seu programa do Windows](module-2--using-com-in-your-windows-program.md)
+[módulo 2: usando com em seu programa de Windows](module-2--using-com-in-your-windows-program.md)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

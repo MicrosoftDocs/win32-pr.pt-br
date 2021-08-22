@@ -1,7 +1,7 @@
 ---
-description: Função D3DXLoadMeshHierarchyFromXInMemory – carrega a primeira hierarquia de quadro de um arquivo. x.
+description: Função D3DXLoadMeshHierarchyFromXInMemory – carrega a primeira hierarquia de quadros de um arquivo .x.
 ms.assetid: 428e5cfb-d6a5-4a7f-b082-2d8898e65490
-title: Função D3DXLoadMeshHierarchyFromXInMemory (D3dx9anim. h)
+title: Função D3DXLoadMeshHierarchyFromXInMemory (D3dx9fastm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -14,16 +14,16 @@ api_type:
 api_location:
 - d3dx9.lib
 - d3dx9.dll
-ms.openlocfilehash: 551810c839e619985d9a380197553f5fe4fc9be8
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 85929a4cca88d9547ac0f00861f694932c7566cb3b6f5db6d4e6da189842e712
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108098204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564806"
 ---
 # <a name="d3dxloadmeshhierarchyfromxinmemory-function"></a>Função D3DXLoadMeshHierarchyFromXInMemory
 
-Carrega a primeira hierarquia de quadros de um arquivo. x.
+Carrega a primeira hierarquia de quadros de um arquivo .x.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -47,7 +47,7 @@ HRESULT D3DXLoadMeshHierarchyFromXInMemory(
 
 <dl> <dt>
 
-*pMemory* \[ no\]
+*pMemory* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPCVOID**](../winprog/windows-data-types.md)**
@@ -56,7 +56,7 @@ Ponteiro para um buffer que contém a hierarquia de malha.
 
 </dd> <dt>
 
-*SizeOfMemory* \[ no\]
+*SizeOfMemory* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
@@ -65,34 +65,34 @@ Tamanho do buffer pMemory, em bytes.
 
 </dd> <dt>
 
-*Malhas* \[ no\]
+*MeshOptions* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **DWORD**](../winprog/windows-data-types.md)**
 
-Combinação de um ou mais sinalizadores da enumeração [**D3DXMESH**](./d3dxmesh.md) que especificam as opções de criação para a malha.
+Combinação de um ou mais sinalizadores da enumeração [**D3DXMESH**](./d3dxmesh.md) que especificam opções de criação para a malha.
 
 </dd> <dt>
 
-*pDevice* \[ no\]
+*pDevice* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPDIRECT3DDEVICE9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9)**
 
-Ponteiro para uma interface [**IDirect3DDevice9**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) , o objeto de dispositivo associado à malha.
+Ponteiro para uma interface [**IDirect3DDevice9,**](/windows/win32/api/d3d9helper/nn-d3d9helper-idirect3ddevice9) o objeto de dispositivo associado à malha.
 
 </dd> <dt>
 
-*pAlloc* \[ no\]
+*pAlloc* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXALLOCATEHIERARCHY**](id3dxallocatehierarchy.md)**
 
-Ponteiro para uma interface [**ID3DXAllocateHierarchy**](id3dxallocatehierarchy.md) .
+Ponteiro para uma [**interface ID3DXAllocateHierarchy.**](id3dxallocatehierarchy.md)
 
 </dd> <dt>
 
-*pUserDataLoader* \[ no\]
+*pUserDataLoader* \[ Em\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXLOADUSERDATA**](id3dxloaduserdata.md)**
@@ -101,21 +101,21 @@ Interface fornecida pelo aplicativo que permite o carregamento de dados do usuá
 
 </dd> <dt>
 
-*ppFrameHeirarchy* \[ fora\]
+*ppFrameHeirarchy* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXFRAME**](d3dxframe.md)\***
 
-Retorna um ponteiro para a hierarquia de quadro carregada. Consulte [**D3DXFRAME**](d3dxframe.md).
+Retorna um ponteiro para a hierarquia de quadros carregada. Consulte [**D3DXFRAME**](d3dxframe.md).
 
 </dd> <dt>
 
-*ppAnimController* \[ fora\]
+*ppRiamController* \[ out\]
 </dt> <dd>
 
 Tipo: **[ **LPD3DXANIMATIONCONTROLLER**](id3dxanimationcontroller.md)\***
 
-Retorna um ponteiro para o controlador de animação correspondente à animação no arquivo. x. Isso é criado com rastreamentos e eventos padrão. Consulte [**ID3DXAnimationController**](id3dxanimationcontroller.md).
+Retorna um ponteiro para o controlador de animação correspondente à animação no arquivo .x. Isso é criado com faixas e eventos padrão. Consulte [**ID3DXAnimationController**](id3dxanimationcontroller.md).
 
 </dd> </dl>
 
@@ -123,11 +123,11 @@ Retorna um ponteiro para o controlador de animação correspondente à animaçã
 
 Tipo: **[ **HRESULT**](https://msdn.microsoft.com/library/Bb401631(v=MSDN.10).aspx)**
 
-Se a função for bem sucedido, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
+Se a função for bem-sucedida, o valor de retorno será D3D \_ OK. Se a função falhar, o valor de retorno poderá ser um dos seguintes valores: D3DERR \_ INVALIDCALL, E \_ OUTOFMEMORY.
 
 ## <a name="remarks"></a>Comentários
 
-Todas as malhas no arquivo serão recolhidas em uma malha de saída. Se o arquivo contiver uma hierarquia de quadros, todas as transformações serão aplicadas à malha.
+Todas as malhas no arquivo serão recolhidos em uma malha de saída. Se o arquivo contiver uma hierarquia de quadros, todas as transformações serão aplicadas à malha.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -135,12 +135,12 @@ Todas as malhas no arquivo serão recolhidas em uma malha de saída. Se o arquiv
 
 | Requisito | Valor |
 |--------------------|----------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>D3dx9anim. h</dt> </dl> |
-| Biblioteca<br/> | <dl> <dt>D3dx9. lib</dt> </dl>   |
+| parâmetro<br/>  | <dl> <dt>D3dx9anim.h</dt> </dl> |
+| Biblioteca<br/> | <dl> <dt>D3dx9.lib</dt> </dl>   |
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

@@ -25,12 +25,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 55414184fd25a90f3fbb57be8fb5d84264fde5dc
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0bcf0360ea2c901c1fc68c97c8b29f222c1df2e9a65dacf87297e3b560ece0d3
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761921"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119272426"
 ---
 # <a name="jet_instance_infoszdatabasefilename-property"></a>Propriedade JET_INSTANCE_INFO. szDatabaseFileName
 
@@ -39,7 +39,7 @@ Obtém uma coleção de cadeias de caracteres, cada uma mantendo o nome de arqui
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Syntax
+## <a name="syntax"></a>Sintaxe
 
 ``` vb
 'Declaration
