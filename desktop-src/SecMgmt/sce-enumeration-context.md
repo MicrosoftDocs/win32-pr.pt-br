@@ -4,12 +4,12 @@ ms.assetid: 05629c49-e36b-4045-93d0-d0f4bc09b08a
 title: SCE_ENUMERATION_CONTEXT (Scesvc. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: e380f6f99d68ad63199c3b82f5aa1e5ace8ddf0d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 16b102c1eb2998f09dbe95c79c500e0bc66f4a790464071dbf9704a17a1348c3
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104296272"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119004994"
 ---
 # <a name="sce_enumeration_context"></a>\_contexto de enumeração do SCE \_
 
@@ -28,9 +28,9 @@ typedef ULONG SCE_ENUMERATION_CONTEXT, *PSCE_ENUMERATION_CONTEXT;
 
 | Requisito | Valor |
 |-------------------------------------|-------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                |
-| parâmetro<br/>                   | <dl> <dt>Scesvc. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                |
+| Cabeçalho<br/>                   | <dl> <dt>Scesvc. h</dt> </dl> |
 
 
 

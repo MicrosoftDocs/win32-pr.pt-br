@@ -1,19 +1,19 @@
 ---
-description: Permite que o processador de vídeo avançado (EVR) aprimore o desempenho usando Bob desentrelaçar.
+description: Permite que o EVR (Renderização de Vídeo Aprimorado) melhore o desempenho usando a desintercalação de Bob.
 ms.assetid: e145e862-b987-4962-a94b-f8370bbcd5ac
-title: Atributo EVRConfig_AllowDropToBob (UUIDs. h)
+title: EVRConfig_AllowDropToBob atributo (Uuids.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3940edd0945999f7300060d963806e3572a5d0fa
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 0dea0dc405f746ad6bbcd37e5bf5428e1f50b5e32049e10c71a196b461f03f62
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104370524"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118974475"
 ---
-# <a name="evrconfig_allowdroptobob-attribute"></a>\_Atributo EVRConfig AllowDropToBob
+# <a name="evrconfig_allowdroptobob-attribute"></a>Atributo EVRConfig \_ AllowDropToBob
 
-Permite que o processador de vídeo avançado (EVR) aprimore o desempenho usando Bob desentrelaçar.
+Permite que o EVR (Renderização de Vídeo Aprimorado) melhore o desempenho usando a desintercalação de Bob.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -21,17 +21,17 @@ Permite que o processador de vídeo avançado (EVR) aprimore o desempenho usando
 
 ## <a name="getset"></a>Obter/definir
 
-Para obter esse atributo, chame [**IMFAttributes:: GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
+Para obter esse atributo, chame [**IMFAttributes::GetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-getuint32).
 
-Para definir esse atributo, chame [**IMFAttributes:: setuint32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
+Para definir esse atributo, chame [**IMFAttributes::SetUINT32**](/windows/desktop/api/mfobjects/nf-mfobjects-imfattributes-setuint32).
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo pode ser definido no coletor EVRmedia. Para definir o atributo, **QueryInterface** para consultar o coletor de mídia do EVR para a interface [**IMFAttributes**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes) .
+Esse atributo pode ser definido no sink EVRmedia. Para definir o atributo, **QueryInterface** para consultar o sink de mídia EVR para a interface [**IMFAttributes.**](/windows/desktop/api/mfobjects/nn-mfobjects-imfattributes)
 
-Definir esse atributo tem o mesmo efeito que definir o sinalizador **MFVideoMixPrefs \_ ALLOWDROPTOBOB** no EVR. Consulte [**MFVideoMixPrefs**](/windows/desktop/api/evr/ne-evr-mfvideomixprefs) para obter uma descrição desse sinalizador.
+Definir esse atributo tem o mesmo efeito que definir o sinalizador **\_ AllowDropToBob MFVideoMixPrefs** no EVR. Consulte [**MFVideoMixPrefs**](/windows/desktop/api/evr/ne-evr-mfvideomixprefs) para ver uma descrição desse sinalizador.
 
-A constante de GUID para esse atributo é exportada de strmiids. lib.
+A constante GUID para esse atributo é exportada de strmiids.lib.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -39,9 +39,9 @@ A constante de GUID para esse atributo é exportada de strmiids. lib.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                         |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                            |
-| parâmetro<br/>                   | <dl> <dt>UUIDs. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                         |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                            |
+| Cabeçalho<br/>                   | <dl> <dt>Uuids.h</dt> </dl> |
 
 
 
@@ -49,7 +49,7 @@ A constante de GUID para esse atributo é exportada de strmiids. lib.
 
 <dl> <dt>
 
-[Lista alfabética de atributos de Media Foundation](alphabetical-list-of-media-foundation-attributes.md)
+[Lista alfabética de Media Foundation atributos](alphabetical-list-of-media-foundation-attributes.md)
 </dt> <dt>
 
 [Atributos EVR](enhanced-video-renderer-attributes.md)

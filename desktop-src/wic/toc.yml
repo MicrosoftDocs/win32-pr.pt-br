@@ -6,7 +6,7 @@
     - name: Guia de Programação
       href: '-wic-programming-guide.md'
       items:
-        - name: Visão geral do Windows Imaging Component
+        - name: Windows Visão geral do componente de geração de imagens
           href: '-wic-about-windows-imaging-codec.md'
         - name: Visão geral da API do WIC
           href: '-wic-api.md'
@@ -101,7 +101,7 @@
               items:
                 - name: Introdução
                   href: '-wic-howtowriteacodec-intro.md'
-                - name: Como funciona o Windows Imaging Component
+                - name: como funciona o componente de Windows Imaging
                   href: '-wic-howwicworks.md'
                 - name: Implementando um decodificador de WIC-Enabled
                   href: '-wic-implementingwicdecoder.md'
@@ -146,7 +146,7 @@
                       href: '-wic-encoderregentries.md'
                     - name: Decoder-Specific entradas do registro
                       href: '-wic-decoderregentries.md'
-                    - name: Integração com a Galeria de fotos do Windows e o Windows Explorer
+                    - name: integração com Windows galeria de fotos e o Windows Explorer
                       href: '-wic-integrationregentries.md'
                 - name: Conclusão (como escrever um codec de WIC-Enabled)
                   href: '-wic-howtowriteacodec-conclusion.md'
@@ -156,7 +156,7 @@
                 - name: Introdução
                   href: '-wic-rawguidelines-intro.md'
                   items:
-                    - name: Formatos de imagem BRUTOs no Windows Vista
+                    - name: formatos de imagem brutos no Windows Vista
                       href: '-wic-rawguidelines-intro-vista.md'
                     - name: Diretrizes gerais para implementação de codecs BRUTOs
                       href: '-wic-rawguidelines-intro-implement.md'
@@ -173,7 +173,7 @@
                       href: '-wic-rawguidelines-metadata-encoding.md'
                 - name: Suporte para IWICDevelopRaw
                   href: '-wic-rawguidelines-iwicdevelopraw.md'
-                - name: Diretrizes de implementação para a serialização de configurações de IWICDevelopRaw
+                - name: diretrizes de implementação para a serialização de Configurações IWICDevelopRaw
                   href: '-wic-rawguidelines-iwicdevelopraw-serializing.md'
                 - name: Desempenho
                   href: '-wic-rawguidelines-performance.md'
@@ -185,7 +185,7 @@
                   href: '-wic-rawguidelines-reliability-security.md'
                 - name: Disponibilidade de codec e suporte de plataforma
                   href: '-wic-rawguidelines-availability.md'
-                - name: Requisitos de codec BRUTOs para o Windows 7
+                - name: requisitos de Codec brutos para o Windows 7
                   href: '-wic-rawguidelines-win7.md'
                 - name: Para obter mais informações
                   href: '-wic-rawguidelines-moreinfo.md'
@@ -222,7 +222,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-doessupportmultiframe
                 - name: GetColorManagementVersion
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getcolormanagementversion
-                - name: GetContainerFormat
+                - name: Getcontainerformat
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getcontainerformat
                 - name: GetDeviceManufacturer
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getdevicemanufacturer
@@ -230,9 +230,9 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getdevicemodels
                 - name: GetFileExtensions
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getfileextensions
-                - name: Getmimetypes
+                - name: GetMimeTypes
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getmimetypes
-                - name: Getpixelformats
+                - name: GetPixelFormats
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-getpixelformats
                 - name: MatchesMimeType
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecinfo-matchesmimetype
@@ -241,18 +241,18 @@
               items:
                 - name: Método RegisterProgressNotification
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapcodecprogressnotification-registerprogressnotification
-            - name: IWICBitmapDecoder
+            - name: Iwicbitmapdecoder
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapdecoder
               items:
                 - name: CopyPalette
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-copypalette
                 - name: GetColorContexts
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getcolorcontexts
-                - name: GetContainerFormat
+                - name: Getcontainerformat
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getcontainerformat
                 - name: GetDecoderInfo
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getdecoderinfo
-                - name: GetFrame
+                - name: Getframe
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getframe
                 - name: GetFrameCount
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoder-getframecount
@@ -271,7 +271,7 @@
               items:
                 - name: CreateInstance
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoderinfo-createinstance
-                - name: Padrões de
+                - name: GetPatterns
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoderinfo-getpatterns
                 - name: MatchesPattern
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapdecoderinfo-matchespattern
@@ -280,9 +280,9 @@
               items:
                 - name: Commit
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-commit
-                - name: CreateNewFrame
+                - name: Createnewframe
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-createnewframe
-                - name: GetContainerFormat
+                - name: Getcontainerformat
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-getcontainerformat
                 - name: GetEncoderInfo
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-getencoderinfo
@@ -292,7 +292,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-initialize
                 - name: SetColorContexts
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setcolorcontexts
-                - name: SetPalette
+                - name: Setpalette
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpalette
                 - name: SetPreview
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapencoder-setpreview
@@ -308,7 +308,7 @@
               items:
                 - name: Inicializar
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapfliprotator-initialize
-            - name: IWICBitmapFrameDecode
+            - name: Iwicbitmapframedecode
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframedecode
               items:
                 - name: GetColorContexts
@@ -317,7 +317,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getmetadataqueryreader
                 - name: GetThumbnail
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframedecode-getthumbnail
-            - name: IWICBitmapFrameEncode
+            - name: Iwicbitmapframeencode
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapframeencode
               items:
                 - name: Commit
@@ -328,53 +328,53 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-initialize
                 - name: SetColorContexts
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setcolorcontexts
-                - name: SetPalette
+                - name: Setpalette
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setpalette
                 - name: SetPixelFormat
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setpixelformat
-                - name: Resolution
+                - name: SetResolution
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setresolution
-                - name: Size
+                - name: Setsize
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setsize
                 - name: SetThumbnail
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-setthumbnail
-                - name: WritePixels
+                - name: Writepixels
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writepixels
-                - name: Gravação
+                - name: WriteSource
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapframeencode-writesource
             - name: IWICBitmapLock
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmaplock
               items:
-                - name: Getdatapointr
+                - name: GetDataPointer
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getdatapointer
                 - name: GetPixelFormat
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getpixelformat
                 - name: GetSize
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getsize
-                - name: Getstride
+                - name: GetStride
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmaplock-getstride
             - name: IWICBitmapScaler
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapscaler
               items:
                 - name: Inicializar
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapscaler-initialize
-            - name: IWICBitmapSource
+            - name: Iwicbitmapsource
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsource
               items:
                 - name: CopyPalette
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypalette
-                - name: CopyPixels
+                - name: Copypixels
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-copypixels
                 - name: GetPixelFormat
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getpixelformat
-                - name: Resolution
+                - name: GetResolution
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getresolution
                 - name: GetSize
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsource-getsize
             - name: IWICBitmapSourceTransform
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicbitmapsourcetransform
               items:
-                - name: CopyPixels
+                - name: Copypixels
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-copypixels
                 - name: DoesSupportTransform
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicbitmapsourcetransform-doessupporttransform
@@ -422,13 +422,13 @@
             - name: IWICComponentInfo
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwiccomponentinfo
               items:
-                - name: Getauthor
+                - name: GetAuthor
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getauthor
                 - name: GetCLSID
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getclsid
-                - name: Getcomponenttype
+                - name: GetComponentType
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getcomponenttype
-                - name: Getamigávelname
+                - name: GetFriendlyName
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getfriendlyname
                 - name: GetSigningStatus
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwiccomponentinfo-getsigningstatus
@@ -441,16 +441,16 @@
             - name: IWICDdsDecoder
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicddsdecoder
               items:
-                - name: Método Parameters
+                - name: Método GetParameters
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsdecoder-getparameters
                 - name: Método GetFrame
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsdecoder-getframe
             - name: IWICDdsEncoder
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicddsencoder
               items:
-                - name: Método Parameters
+                - name: Método SetParameters
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsencoder-setparameters
-                - name: Método Parameters
+                - name: Método GetParameters
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsencoder-getparameters
                 - name: Método CreateNewFrame
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicddsencoder-createnewframe
@@ -463,7 +463,7 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getcurrentparameterset
                 - name: GetExposureCompensation
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getexposurecompensation
-                - name: Getgama
+                - name: GetGamma
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getgamma
                 - name: GetKelvinRangeInfo
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getkelvinrangeinfo
@@ -471,15 +471,15 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getnamedwhitepoint
                 - name: GetNoiseReduction
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getnoisereduction
-                - name: Getrenderingmode
+                - name: GetRenderMode
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getrendermode
-                - name: Getrotation
+                - name: GetRotation
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getrotation
-                - name: GetSaturation
+                - name: Obter Saturação
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getsaturation
-                - name: Getnitidez
+                - name: GetSharpness
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getsharpness
-                - name: Getmatiz
+                - name: GetTint
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-gettint
                 - name: GetToneCurve
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-gettonecurve
@@ -487,17 +487,17 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getwhitepointkelvin
                 - name: GetWhitePointRGB
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-getwhitepointrgb
-                - name: Parameterset
+                - name: LoadParameterSet
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-loadparameterset
                 - name: QueryRawCapabilitiesInfo
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-queryrawcapabilitiesinfo
-                - name: Por contraste
+                - name: SetContrast
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setcontrast
                 - name: SetDestinationColorContext
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setdestinationcolorcontext
                 - name: SetExposureCompensation
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setexposurecompensation
-                - name: Setgama
+                - name: Setgamma
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setgamma
                 - name: SetNamedWhitePoint
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setnamedwhitepoint
@@ -505,15 +505,15 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setnoisereduction
                 - name: SetNotificationCallback
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setnotificationcallback
-                - name: Setrenderingmode
+                - name: SetRenderMode
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setrendermode
                 - name: SetRotation
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setrotation
-                - name: Setsaturação
+                - name: SetS saturação
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setsaturation
-                - name: Setnitidez
+                - name: SetSharpness
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-setsharpness
-                - name: Settonalidade
+                - name: SetTint
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-settint
                 - name: SetToneCurve
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicdevelopraw-settonecurve
@@ -556,7 +556,7 @@
             - name: IWICFormatConverter
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicformatconverter
               items:
-                - name: Canconverter
+                - name: Canconvert
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicformatconverter-canconvert
                 - name: Inicializar
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicformatconverter-initialize
@@ -565,7 +565,7 @@
               items:
                 - name: CreateInstance
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicformatconverterinfo-createinstance
-                - name: Getpixelformats
+                - name: GetPixelFormats
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicformatconverterinfo-getpixelformats
             - name: IWICImageEncoder
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicimageencoder
@@ -579,7 +579,7 @@
             - name: IWICImagingFactory
               href: /windows/desktop/api/Wincodec/nn-wincodec-iwicimagingfactory
               items:
-                - name: CreateBitmap
+                - name: Createbitmap
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmap
                 - name: CreateBitmapClipper
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createbitmapclipper
@@ -619,9 +619,9 @@
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createfastmetadataencoderfromdecoder
                 - name: CreateFastMetadataEncoderFromFrameDecode
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createfastmetadataencoderfromframedecode
-                - name: CreateFormat
+                - name: CreateFormatConverter
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createformatconverter
-                - name: CreatePalette
+                - name: Createpalette
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createpalette
                 - name: CreateQueryWriter
                   href: /windows/desktop/api/Wincodec/nf-wincodec-iwicimagingfactory-createquerywriter
@@ -1507,9 +1507,9 @@
           items:
             - name: Exemplo de decodificação progressiva de WIC
               href: '-wic-sample-progressive-decoding.md'
-            - name: Visualizador de imagem de WIC usando o exemplo de Direct2D
+            - name: visualizador de imagem de WIC usando Direct2D exemplo
               href: '-wic-sample-d2d-viewer.md'
-            - name: Exemplo de GIF animado por WIC
+            - name: Exemplo de GIF animado do WIC
               href: '-wic-sample-animated-gif.md'
         - name: Amostras de codificação de imagem
           href: image-encoding-samples.md

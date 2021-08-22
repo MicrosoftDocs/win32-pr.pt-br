@@ -1,7 +1,7 @@
 ---
-description: Seção crítica que protege o estado do filtro. Para obter mais informações, consulte fluxo de dados para os desenvolvedores de filtro.
+description: Seção crítica que protege o estado do filtro. Para obter mais informações, consulte Data Flow for Filter Developers.
 ms.assetid: 75b9c8b0-e911-41fd-8d07-b854dbe25551
-title: 'Membro CTransformFilter:: m_csFilter (Transfrm. h)'
+title: Membro CTransformFilter::m_csFilter (Transfrm.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: 991b07aa654ce42a651f4fa169e757d8380fdc8e
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 58fc725c29ef322cc310aae2735ffb8fcd7298d29214a51037e49682028caa81
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105752687"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118953575"
 ---
-# <a name="ctransformfilterm_csfilter-member"></a>Membro de CTransformFilter:: m \_ csFilter
+# <a name="ctransformfilterm_csfilter-member"></a>Membro CTransformFilter::m \_ csFilter
 
-Seção crítica que protege o estado do filtro. Para obter mais informações, consulte [fluxo de dados para os desenvolvedores de filtro](data-flow-for-filter-developers.md).
+Seção crítica que protege o estado do filtro. Para obter mais informações, consulte [Data Flow for Filter Developers](data-flow-for-filter-developers.md).
 
 ## <a name="syntax"></a>Syntax
 
@@ -42,8 +42,8 @@ CCritSec m_csFilter;
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Transfrm. h (incluir fluxos. h)</dt> </dl>                                                                                  |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Transfrm.h (incluir Fluxos.h)</dt> </dl>                                                                                  |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

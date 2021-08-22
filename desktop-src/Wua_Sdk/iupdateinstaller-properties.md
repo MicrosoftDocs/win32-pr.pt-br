@@ -4,12 +4,12 @@ ms.assetid: 876a2150-40a1-42a3-bc9a-05dec94fccd3
 title: Propriedades de IUpdateInstaller
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 77df235c49e7b6f27b0f93ec3b0c4def12135065
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 49c6076e395e98ef21cd54fbf45ffdc5e57bc29fa8ceffc78c16d9a9a0d2bc4a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103827227"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049144"
 ---
 # <a name="iupdateinstaller-properties"></a>Propriedades de IUpdateInstaller
 
@@ -26,7 +26,7 @@ A interface [**IUpdateInstaller**](/windows/desktop/api/Wuapi/nn-wuapi-iupdatein
 | [**ParentHwnd**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_parenthwnd)                                             | Obtém e define um identificador para a janela pai que pode conter uma caixa de diálogo.                                                            |
 | [**ParentWindow**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_parentwindow)                                         | Obtém e define a interface que representa a janela pai que pode conter uma caixa de diálogo.                                          |
 | [**RebootRequiredBeforeInstallation**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_rebootrequiredbeforeinstallation) | Obtém um valor booliano que indica se uma reinicialização do sistema é necessária antes de instalar ou desinstalar atualizações.                   |
-| [**Atualizações**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_updates)                                                   | Obtém e define uma interface que contém uma coleção somente leitura das atualizações que são especificadas para instalação ou desinstalação. |
+| [**Actualiza**](/windows/desktop/api/Wuapi/nf-wuapi-iupdateinstaller-get_updates)                                                   | Obtém e define uma interface que contém uma coleção somente leitura das atualizações que são especificadas para instalação ou desinstalação. |
 
 
 

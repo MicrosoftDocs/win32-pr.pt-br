@@ -1,5 +1,5 @@
 ---
-description: MBNProfileExt \/ ... \/ Senha (v4)
+description: MBNProfileExt... \/ \/ Senha (v4)
 MS-HAID: WWAN\_profile\_v4.element\_Password
 MSHAttr:
 - PreferredSiteName:MSDN
@@ -16,18 +16,18 @@ api_location: ''
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: c90b2481aa503b7b616d21fca24917b960a92dc9
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 905254641f696c772dec008a3824d5307a09f96b95fad9c561e2e3f87646c668
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104164580"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118975326"
 ---
-# <a name="span-idwwan_profile_v4element_passwordspanmbnprofileextpassword-v4"></a><span id="WWAN_profile_v4.element_Password"></span>MBNProfileExt \/ ... \/ Senha (v4)
+# <a name="span-idwwan_profile_v4element_passwordspanmbnprofileextpassword-v4"></a><span id="WWAN_profile_v4.element_Password"></span>MBNProfileExt... \/ \/ Senha (v4)
 
 Especifica a senha usada para autenticar um usuário.
 
-Para obter mais informações, consulte a documentação do elemento de [**senha**](./schema-password-userlogoncred-element.md) v1.
+Para obter mais informações, consulte a documentação do elemento [**Password**](./schema-password-userlogoncred-element.md) v1.
 
 ## <a name="element-hierarchy"></a>Hierarquia de elementos
 

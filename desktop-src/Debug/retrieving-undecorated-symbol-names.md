@@ -1,19 +1,19 @@
 ---
-description: O código a seguir demonstra como recuperar um nome de símbolo não decorado de um nome de símbolo usando UnDecorateSymbolName.
+description: O código a seguir demonstra como recuperar um nome de símbolo indecoerdo de um nome de símbolo usando UnDecorateSymbolName.
 ms.assetid: fcb0591a-dac3-45eb-b4c0-4a35c42450e5
-title: Recuperando nomes de símbolo não decorados
+title: Recuperando nomes de símbolos não rateados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 99b0f21c884a0a58f0546ef275f2f3096abe2c50
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: f18a1cbdf51c64134489850343b466e49d9867fab483699a719997c3be9b5798
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105751356"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119076340"
 ---
-# <a name="retrieving-undecorated-symbol-names"></a>Recuperando nomes de símbolo não decorados
+# <a name="retrieving-undecorated-symbol-names"></a>Recuperando nomes de símbolos não rateados
 
-O código a seguir demonstra como recuperar um nome de símbolo não decorado de um nome de símbolo usando [**UnDecorateSymbolName**](/windows/desktop/api/Dbghelp/nf-dbghelp-undecoratesymbolname). O nome decorado é armazenado em `szName` . O exemplo supõe que você tenha inicializado o manipulador de símbolo usando o código na [inicialização do manipulador de símbolo](initializing-the-symbol-handler.md).
+O código a seguir demonstra como recuperar um nome de símbolo indecoerdo de um nome de símbolo usando [**UnDecorateSymbolName**](/windows/desktop/api/Dbghelp/nf-dbghelp-undecoratesymbolname). O nome decorado é armazenado em `szName` . O exemplo pressu que você inicializou o manipulador de símbolos usando o código em [Inicializando o Manipulador de Símbolos](initializing-the-symbol-handler.md).
 
 
 ```C++

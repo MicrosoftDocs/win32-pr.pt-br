@@ -1,5 +1,5 @@
 ---
-description: Indica que ocorreu um evento de sistema de interface de gerenciamento de plataforma inteligente (IPMI). O erro é gravado no SEL (log de eventos do sistema) do SMBIOS. Essa classe está disponível somente em sistemas Windows de 64 bits.
+description: Indica que ocorreu um evento de sistema de interface de gerenciamento de plataforma inteligente (IPMI). O erro é gravado no SEL (log de eventos do sistema) do SMBIOS. essa classe está disponível somente em sistemas Windows de 64 bits.
 ms.assetid: 1964f850-ac55-4639-9205-2eb0996dbaae
 title: Classe MSMCAEvent_SystemEventError
 ms.topic: reference
@@ -35,16 +35,16 @@ api_type:
 - DllExport
 api_location:
 - Wmiprov.dll
-ms.openlocfilehash: f20f95fb5e1b1bf07b0f70c25d54122642b13569
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4ff5d05cb1b9db7430f2f91a0f2a5ad3a97a56557c3fc5ae832eecc85d13128c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105749719"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051244"
 ---
 # <a name="msmcaevent_systemeventerror-class"></a>\_Classe MSMCAEvent SystemEventError
 
-A classe **MSMCAEvent \_ SystemEventError** indica que ocorreu um evento de sistema de interface de gerenciamento de plataforma inteligente (IPMI). O erro é gravado no SEL (log de eventos do sistema) do SMBIOS. Essa classe está disponível somente em sistemas Windows de 64 bits.
+A classe **MSMCAEvent \_ SystemEventError** indica que ocorreu um evento de sistema de interface de gerenciamento de plataforma inteligente (IPMI). O erro é gravado no SEL (log de eventos do sistema) do SMBIOS. essa classe está disponível somente em sistemas Windows de 64 bits.
 
 A sintaxe a seguir é simplificada do código formato MOF (MOF) e inclui todas as suas propriedades herdadas. As propriedades e os métodos estão em ordem alfabética, não em ordem de MOF.
 
@@ -144,7 +144,7 @@ Nível de severidade do erro relatado.
 
 | Valor                                                                                                | Significado                |
 |------------------------------------------------------------------------------------------------------|------------------------|
-| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperado<br/> |
+| <span id="0"></span><dl> <dt>**0**</dt> </dl> | Recuperável<br/> |
 | <span id="1"></span><dl> <dt>**1**</dt> </dl> | Fatais<br/>       |
 | <span id="2"></span><dl> <dt>**2**</dt> </dl> | Corrigível<br/> |
 
@@ -378,7 +378,7 @@ Tipo de dados: **UInt32**
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Tipo de mensagem de log de eventos. Essas mensagens correspondem aos códigos de mensagem de log de eventos usados para inserir mensagens de log de eventos pelo provedor de consumidor do log de eventos do Windows quando ele recebe um dos eventos.
+Tipo de mensagem de log de eventos. essas mensagens correspondem aos códigos de mensagem de log de eventos usados para inserir mensagens de log de eventos pelo provedor de consumidor Windows log de eventos quando ele recebe um dos eventos.
 
 </dd> <dt>
 

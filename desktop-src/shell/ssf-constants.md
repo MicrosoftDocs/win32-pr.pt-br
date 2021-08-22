@@ -39,12 +39,12 @@ api_location:
 topic_type:
 - APIRef
 - kbSyntax
-ms.openlocfilehash: b26ba102ff72caf235a51d3888183ccafba9d639
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: c022b1d93cb411f0cce73822a47f2d8f85b30e8093bbe2064fb3c50eab5c4870
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104989020"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967935"
 ---
 # <a name="ssf-constants"></a>Constantes SSF
 
@@ -179,7 +179,7 @@ O membro **fShowAttribCol** está sendo solicitado.
 
 
 
-O membro **fDesktopHTML** está sendo solicitado. O conjunto não está disponível. Em vez disso, para versões do Windows anteriores ao Windows XP, habilite o HTML da área de trabalho por [**IActiveDesktop**](/windows/win32/api/shlobj_core/nn-shlobj_core-iactivedesktop). No entanto, o uso de **IActiveDesktop** para essa finalidade não é recomendado para o Windows XP e versões posteriores do Windows e é preterido no Windows Vista.
+O membro **fDesktopHTML** está sendo solicitado. O conjunto não está disponível. em vez disso, para versões do Windows antes do Windows XP, habilite o HTML da área de trabalho por [**IActiveDesktop**](/windows/win32/api/shlobj_core/nn-shlobj_core-iactivedesktop). no entanto, o uso de **IActiveDesktop** para essa finalidade não é recomendado para Windows XP e versões posteriores do Windows e é preterido no Windows Vista.
 
 
 </dt> </dl> </dd> <dt>

@@ -4,12 +4,12 @@ ms.assetid: b94f8a6f-b84d-4976-b4d4-10dee5a1a4d8
 title: Constantes de LINESPECIALINFO_ (TAPI. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78154757515ebd5bfa36778795c26ef9fdc96db1
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: d1585146040db4392a271f5095420eee61f9873906443b58198676de806cb37f
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105757616"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119002974"
 ---
 # <a name="linespecialinfo_-constants"></a>\_Constantes LINESPECIALINFO
 
@@ -80,7 +80,7 @@ Os tons de informação especiais são definidos para mensagens de consultoria e
 | Requisito | Valor |
 |-------------------------|-----------------------------------------------------------------------------------|
 | Versão da TAPI<br/> | Requer TAPI 2,0 ou posterior<br/>                                             |
-| parâmetro<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
+| Cabeçalho<br/>       | <dl> <dt>TAPI. h</dt> </dl> |
 
 
 

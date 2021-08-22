@@ -4,18 +4,18 @@ ms.assetid: 9a918cd3-60a0-4231-975a-bee12de5c812
 title: Status do WoW64 no Server Core
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0fad947dac85707d3c9c89a2cffea38c4a4850a6
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 6f836d361e172527bf23c7e51ea0071790d3857d6611d8a12ff62185226d3f1c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108084044"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994462"
 ---
 # <a name="wow64-is-now-an-optional-feature-for-server-core"></a>O WoW64 agora é um recurso opcional para o Server Core
 
 ## <a name="affected-platforms"></a>Plataformas afetadas
 
-**Servidores** -Windows Server 2008 R2  
+**servidores** -Windows Server 2008 R2  
 
 
 
@@ -30,9 +30,9 @@ ms.locfileid: "108084044"
 
 ## <a name="description"></a>Descrição
 
-A opção de instalação Server Core para o Windows Server 2008 R2 permite que você desinstale o WoW64. O WoW64 agora é um recurso opcional que você pode desinstalar se não for necessário executar o código de 32 bits.
+a opção de instalação server Core para o Windows Server 2008 R2 permite desinstalar o WoW64. O WoW64 agora é um recurso opcional que você pode desinstalar se não for necessário executar o código de 32 bits.
 
-Além disso, as funções Active Directory e serviços AD LDS exigem o WoW64 para serem executadas no Windows Server 2008 R2.
+além disso, as funções Active Directory e serviços AD LDS exigem WoW64 para serem executadas no Windows Server 2008 R2.
 
 ## <a name="manifestation-of-impact"></a>Manifestação do impacto
 

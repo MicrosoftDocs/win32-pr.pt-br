@@ -3,9 +3,9 @@ title: Método cdrom. EJECT
 description: O método EJECT ejeta o CD ou DVD da unidade. | Método cdrom. EJECT
 ms.assetid: f43c7f10-7de2-488c-833a-ecd3ac21744b
 keywords:
-- método de ejeção do Windows Media Player
-- método de ejeção Windows Media Player, classe cdrom
-- Classe de cdrom Windows Media Player, método de ejeção
+- método EJECT Windows Media Player
+- método eject Windows Media Player, classe Cdrom
+- classe Cdrom Windows Media Player, método eject
 topic_type:
 - apiref
 api_name:
@@ -16,12 +16,12 @@ api_type:
 - COM
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 78326ca57dcf097344fc073681fae772222ea9ad
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: c9bd1c5a7a79c2a9b76b3a7a1997c43713fe0f3c1ae28e635a235feb82d214ad
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105788184"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997676"
 ---
 # <a name="cdromeject-method"></a>Método cdrom. EJECT
 
@@ -40,7 +40,7 @@ Cdrom.eject()
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -73,8 +73,8 @@ O exemplo a seguir cria um elemento de botão HTML que usa *cdrom*. **ejete** pa
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                               |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                               |
 | Versão<br/>                  | Windows Media Player versão 7,0 ou posterior.<br/>                              |
 | DLL<br/>                      | <dl> <dt>Wmp.dll</dt> </dl> |
 
@@ -90,10 +90,10 @@ O exemplo a seguir cria um elemento de botão HTML que usa *cdrom*. **ejete** pa
 [**Player. PlayState**](player-playstate.md)
 </dt> <dt>
 
-[**Settings. mediaAccessRights**](settings-mediaaccessrights.md)
+[**Configurações. mediaAccessRights**](settings-mediaaccessrights.md)
 </dt> <dt>
 
-[**Settings. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
+[**Configurações. requestMediaAccessRights**](settings-requestmediaaccessrights.md)
 </dt> </dl>
 
  

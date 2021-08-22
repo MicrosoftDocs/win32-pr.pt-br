@@ -14,12 +14,12 @@ api_type:
 api_location:
 - PortableDeviceGUIDs.lib
 - PortableDeviceGUIDs.dll
-ms.openlocfilehash: de5ea5b1eeaa9cf494c24e13b8b9b36f7490b84d
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0c29e47cd08b5c31012df92ca04e018d38f7adb7f8802ec534682289852f518b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105759994"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118963735"
 ---
 # <a name="iportabledevicepropvariantcollectiongettype-method"></a>Método IPortableDevicePropVariantCollection:: GetType
 
@@ -47,7 +47,7 @@ Um valor de enumeração do **VarType** do Platform SDK que indica o tipo de dad
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 O método retorna um **HRESULT**. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.
 

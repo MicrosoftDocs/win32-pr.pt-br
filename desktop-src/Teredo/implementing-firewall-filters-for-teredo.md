@@ -1,23 +1,23 @@
 ---
 title: Implementando filtros de firewall para Teredo
-description: O Windows permite que os aplicativos definam uma opção de soquete que permite que os aplicativos indiquem uma intenção explícita de receber o tráfego Teredo enviado ao firewall do host por meio da plataforma de filtragem do Windows.
+description: Windows permite que os aplicativos devam definir uma opção de soquete que permite que os aplicativos indiquem uma intenção explícita de receber o tráfego Teredo enviado ao firewall do host por meio da Windows Filtering Platform.
 ms.assetid: 9e53e28c-e0e5-438d-b624-27d7bd65e4a3
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 0f24d4351f10a3b37f2bf63c952e81883d97b781
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 9fe854b210e6b07f0777a492d5c952f502e2f7c2b6c1c4b40497bad3a9e8248a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641538"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119001801"
 ---
 # <a name="implementing-firewall-filters-for-teredo"></a>Implementando filtros de firewall para Teredo
 
-O Windows permite que os aplicativos definam uma opção de soquete que permite que os aplicativos indiquem uma intenção explícita de receber o tráfego Teredo enviado ao firewall do host por meio da plataforma de filtragem do Windows. No Windows, uma opção de soquete para definir um nível de proteção é usada para permitir que um aplicativo defina o tipo de tráfego que ele está disposto a receber. Mais especificamente, em cenários que envolvem o tráfego de Teredo, a opção de soquete de [ \_ \_ nível de proteção IPv6](/windows/desktop/WinSock/ipv6-protection-level) é especificada. É recomendável que as implementações de firewall do host mantenham os filtros a seguir para permitir seletivamente o tráfego Teredo para um aplicativo, ao mesmo tempo que bloqueia o tráfego por padrão para qualquer aplicativo sem isenção.
+Windows permite que os aplicativos devam definir uma opção de soquete que permite que os aplicativos indiquem uma intenção explícita de receber o tráfego Teredo enviado ao firewall do host por meio da Windows Filtering Platform. No Windows, uma opção de soquete para definir um nível de proteção é usada para permitir que um aplicativo defina o tipo de tráfego que está disposto a receber. Mais especificamente, em cenários que envolvem o tráfego Teredo, a [opção de soquete NÍVEL de \_ PROTEÇÃO \_ IPV6](/windows/desktop/WinSock/ipv6-protection-level) é especificada. É recomendável que as implementações de firewall de host mantenham os seguintes filtros para permitir seletivamente o tráfego Teredo para um aplicativo, enquanto bloqueiam o tráfego por padrão para qualquer aplicativo sem uma isenção.
 
-## <a name="default-block-filter-for-edge-traversed-traffic"></a>Filtro de bloco padrão para tráfego de borda atravessado
+## <a name="default-block-filter-for-edge-traversed-traffic"></a>Filtro de bloco padrão para tráfego de borda percorrido
 
-Um firewall de host sempre deve manter um filtro de bloqueio padrão dentro \_ da \_ camada de \_ filtragem V6 de aceitação de autenticação \_ de Ale para tráfego correspondente ao **túnel de tipo de interface** especificado e às condições de Teredo do tipo de **túnel** . Quando implementada, esse filtro indica a presença de um firewall de host com reconhecimento de borda no sistema. Esse filtro é exibido como um contrato de API entre o Firewall do host e o Windows. Por padrão, esse filtro bloqueará o tráfego de borda atravessado para qualquer aplicativo.
+Um firewall de host sempre deve manter um filtro de bloco padrão dentro da camada de filtragem RECV ACCEPT V6 de ALE AUTH para o tráfego que corresponde às condições de Teredo do tipo de interface Tunnel e \_ \_ \_ \_  **Tunnel** especificadas. Quando implementado, esse filtro indica a presença de um firewall de host com conhecimento de travessia de borda no sistema. Esse filtro é exibido como um contrato de API entre o firewall do host e Windows. Por padrão, esse filtro bloqueará o tráfego de borda percorrido para qualquer aplicativo.
 
 ``` syntax
    filter.layerKey  = FWPM_LAYER_ALE_AUTH_RECV_ACCEPT_V6;
@@ -52,13 +52,13 @@ Um firewall de host sempre deve manter um filtro de bloqueio padrão dentro \_ d
 ```
 
 > [!Note]  
-> As classes ' Delivery ', ' chegada ' e ' próximo salto ' de condições de interface são usadas para controlar um modelo de host fraco e encaminhamento de pacotes entre interfaces. O exemplo acima utiliza a classe ' Delivery '. Examine as [condições de filtragem disponíveis em cada camada de filtragem](/windows/desktop/FWP/filtering-conditions-available-at-each-filtering-layer) na documentação do SDK do WFP, já que seu design de segurança deve levar cada caso em consideração.
+> As classes 'Delivery', 'Arrival' e 'Next Hop' de condições de interface são usadas para controlar um modelo de host fraco e o encaminhamento de pacotes entre interfaces. O exemplo acima utiliza a classe 'Delivery'. Revise [As Condições de Filtragem Disponíveis](/windows/desktop/FWP/filtering-conditions-available-at-each-filtering-layer) em Cada Camada de Filtragem na documentação do SDK do WFP, pois seu design de segurança deve levar cada caso em consideração.
 
- 
+ 
 
 ## <a name="allow-filter-for-exempt-applications"></a>Permitir filtro para aplicativos isentos
 
-Se um aplicativo estiver isento de receber tráfego Teredo em um soquete de escuta, um filtro de permissão deverá ser implementado dentro da \_ camada de filtragem de autenticação Ale \_ RCV \_ Accept \_ V6 no firewall do host. É importante observar que, dependendo de como a isenção é configurada pelo usuário ou aplicativo, o Firewall do host pode incluir uma opção de soquete.
+Se um aplicativo estiver isento de receber tráfego Teredo em um soquete de escuta, um filtro de permissão deverá ser implementado dentro da camada de filtragem ALE \_ AUTH \_ RCV ACCEPT V6 no \_ firewall do \_ host. É importante observar que, dependendo de como a isenção é configurada pelo usuário ou aplicativo, o firewall do host pode incluir uma opção de soquete.
 
 ``` syntax
    filter.layerKey   = FWPM_LAYER_ALE_AUTH_RCV_ACCEPT_V6;
@@ -98,9 +98,9 @@ Se um aplicativo estiver isento de receber tráfego Teredo em um soquete de escu
    filterConditions[3].conditionValue.uint32 = FWP_CONDITION_SOCKET_PROPERTY_FLAG_ALLOW_EDGE_TRAFFIC;
 ```
 
-## <a name="dormancy-callout-filter"></a>Filtro de texto explicativo dormência
+## <a name="dormancy-callout-filter"></a>Filtro de saída de chamada de doiancy
 
-O serviço Teredo no Windows implementa um modelo dormência. A qualquer momento, se nenhum aplicativo estiver escutando em um soquete UDP ou TCP com percurso de borda habilitado, o serviço passará para um estado inativo. Para que o mecanismo dormência funcione, o Firewall do host deve manter um filtro de texto explicativo para cada aplicativo isento especificado na \_ \_ camada de \_ filtragem V6 de escuta de autenticação Ale para TCP e \_ \_ \_ camada de filtragem V6 de atribuição de recursos Ale para aplicativos baseados em UDP. O exemplo a seguir demonstra um texto explicativo dormência para um aplicativo **TCP** .
+O serviço Teredo no Windows implementa um modelo de doncy. A qualquer momento, se nenhum aplicativo estiver escutando em um soquete UDP ou TCP com a travessia de borda habilitada, o serviço passará para um estado inativo. Para que o mecanismo de doiancy funcione, o firewall do host deve manter um filtro de texto explicado para cada aplicativo isento especificado na camada de filtragem ALE AUTH LISTEN V6 para TCP e a camada de filtragem ALE RESOURCE ASSIGNMENT V6 para aplicativos baseados em \_ \_ \_ \_ \_ \_ UDP. O exemplo a seguir demonstra um texto explicado para um **aplicativo TCP.**
 
 ``` syntax
    filter.layerKey = FWPM_LAYER_ALE_AUTH_LISTEN_V6;
@@ -135,6 +135,6 @@ O serviço Teredo no Windows implementa um modelo dormência. A qualquer momento
    filterConditions[1].conditionValue.uint32 = FWP_CONDITION_SOCKET_PROPERTY_FLAG_ALLOW_EDGE_TRAFFIC;
 ```
 
- 
+ 
 
- 
+ 

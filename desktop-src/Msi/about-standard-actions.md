@@ -1,25 +1,25 @@
 ---
-description: O Windows Installer tem muitas ações padrão internas que são usadas nas tabelas de sequência. Os tópicos nesta seção abrangem informações sobre ações padrão.
+description: O Windows instalador tem muitas ações padrão integradas que são usadas nas tabelas de sequência. Os tópicos nesta seção abrangem informações sobre ações padrão.
 ms.assetid: d2fd77e0-c949-4405-9fe4-41d44a76e6fb
-title: Sobre as ações padrão
+title: Sobre ações padrão
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f6557f779876d62ce40b4efaea7fe2f76ac2fa4b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc12854ad21039fac2a24044d9e63c727eaebdc4219237868d99e50b32597400
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105811860"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119013274"
 ---
-# <a name="about-standard-actions"></a>Sobre as ações padrão
+# <a name="about-standard-actions"></a>Sobre ações padrão
 
-O Windows Installer tem muitas ações padrão internas que são usadas nas [*tabelas de sequência*](s-gly.md). Os tópicos nesta seção abrangem informações sobre ações padrão.
+O Windows instalador tem muitas ações padrão integradas que são usadas nas tabelas [*de sequência*](s-gly.md). Os tópicos nesta seção abrangem informações sobre ações padrão.
 
 -   [Ordem de execução da ação](action-execution-order.md)
 -   [Ações com restrições de sequenciamento](actions-with-sequencing-restrictions.md)
 -   [Ações sem restrições de sequenciamento](actions-without-sequencing-restrictions.md)
 
-Consulte também [usando ações padrão](using-standard-actions.md) ou [referência de ações padrão](standard-actions-reference.md).
+Consulte também [Usando ações padrão ou](using-standard-actions.md) referência de ações [padrão](standard-actions-reference.md).
 
  
 

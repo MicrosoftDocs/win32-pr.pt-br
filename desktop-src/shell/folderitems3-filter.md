@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - Shell32.dll
-ms.openlocfilehash: 26a24dc3ef1f4d0de09dbd97a5dce4c8ed8c783b
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: dd4983d340645e916595534f17dccb2ef09e2f5c185b6eaf97cc7de2e52669dd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103646559"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119032584"
 ---
 # <a name="folderitems3filter-method"></a>Método FolderItems3. Filter
 
@@ -60,9 +60,9 @@ Uma cadeia de caracteres de filtro que especifica o que deve ser listado na cole
 
 ## <a name="examples"></a>Exemplos
 
-O exemplo a seguir mostra o uso adequado de **filtro** para JScript, VBScript e Visual Basic.
+o exemplo a seguir mostra o uso adequado de **filtro** para JScript, VBScript e Visual Basic.
 
-JScript
+JScript:
 
 
 ```JScript

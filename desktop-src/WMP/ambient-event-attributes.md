@@ -3,19 +3,19 @@ title: Atributos de evento de ambiente
 description: Atributos de evento de ambiente
 ms.assetid: 56cd2701-53b3-4456-8fcd-d65f8a6aefd7
 keywords:
-- Capas do Windows Media Player, atributos de evento de ambiente
+- aparências de Windows Media Player, atributos de evento de ambiente
 - capas, atributos de evento de ambiente
 - referência para capas, atributos de evento de ambiente
 - atributos de evento de ambiente
 - atributos, evento de ambiente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: a40522a741509e56d2e4c9201c305126067a0fe3
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 7fe9cb8353b684597ba18d7b1dc2a7fb23c3d7e6e95b6f76d847bc9aa5eb39cf
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103635313"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055244"
 ---
 # <a name="ambient-event-attributes"></a>Atributos de evento de ambiente
 
@@ -46,7 +46,7 @@ Os atributos a seguir são comuns a todos os eventos de capa. Eles são acessado
 
 
 
- 
+ 
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
@@ -55,9 +55,9 @@ Os atributos a seguir são comuns a todos os eventos de capa. Eles são acessado
 [**Referência de programação de capa**](skin-programming-reference.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

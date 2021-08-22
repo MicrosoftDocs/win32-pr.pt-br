@@ -1,21 +1,21 @@
 ---
-title: API de dispositivo de software
-description: Você pode usar a API de dispositivo de software para criar um dispositivo PnP a partir de um aplicativo.
+title: API de Dispositivo de Software
+description: Você pode usar a API de Dispositivo de Software para criar um dispositivo PnP de um aplicativo.
 ms.assetid: 203abb2c-526f-4995-95de-4eb0ecee63d5
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e011d806ea21310fccc6ca96517a5465cb41add1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: a0bd1ae07b18171a6ed81c5db73d70083a8cf32e16deacf9d623c5a77c69a854
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641701"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967945"
 ---
-# <a name="software-device-api"></a>API de dispositivo de software
+# <a name="software-device-api"></a>API de Dispositivo de Software
 
 ## <a name="purpose"></a>Finalidade
 
-Você pode usar a API de dispositivo de software para criar um dispositivo PnP a partir de um aplicativo. A API permite enumerar o dispositivo como um filho de qualquer dispositivo pai existente. A API também permite que você registre as interfaces do dispositivo em relação aos dispositivos enumerados e defina as propriedades para os dispositivos e as interfaces.
+Você pode usar a API de Dispositivo de Software para criar um dispositivo PnP de um aplicativo. A API permite enumerar o dispositivo como um filho de qualquer dispositivo pai existente. A API também permite registrar interfaces de dispositivo em dispositivos enumerados e definir propriedades para os dispositivos e interfaces.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -23,8 +23,8 @@ Você pode usar a API de dispositivo de software para criar um dispositivo PnP a
 
 | Tópico                                                                                         | Descrição                                                                                                                                                                        |
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Guia de programação de API de dispositivo de software](/previous-versions/windows/hardware/drivers/dn315034(v=vs.85))<br/> | Este guia contém informações sobre como usar a API de dispositivo de software para enumerar dispositivos PnP. <br/>                                                                               |
-| [Referência de API de dispositivo de software](software-device-api-reference.md)<br/>                 | Esta referência descreve as funções de API de dispositivo de software que um aplicativo cliente chama e uma função de retorno de chamada que um aplicativo cliente implementa e estruturas de API de dispositivo de software.<br/> |
+| [Guia de Programação de API de Dispositivo de Software](/previous-versions/windows/hardware/drivers/dn315034(v=vs.85))<br/> | Este guia contém informações sobre como usar a API de Dispositivo de Software para enumerar dispositivos PnP. <br/>                                                                               |
+| [Referência da API de Dispositivo de Software](software-device-api-reference.md)<br/>                 | Esta referência descreve as funções de API de Dispositivo de Software que um aplicativo cliente chama e uma função de retorno de chamada que um aplicativo cliente implementa e estruturas de API de Dispositivo de Software.<br/> |
 
 
 
@@ -32,7 +32,7 @@ Você pode usar a API de dispositivo de software para criar um dispositivo PnP a
 
 ## <a name="developer-audience"></a>Público de desenvolvedores
 
-A API de dispositivo de software foi projetada para ser usada por desenvolvedores que desejam publicar a funcionalidade do dispositivo no "diretório" PnP ou carregar um driver de dispositivo.
+A API de Dispositivo de Software foi projetada para uso por desenvolvedores que querem publicar a funcionalidade do dispositivo no "diretório" do PnP ou carregar um driver de dispositivo.
 
  
 

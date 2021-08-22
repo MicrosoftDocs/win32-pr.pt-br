@@ -1,9 +1,9 @@
 ---
-title: Enumeração VMTaskResult (VPCCOMInterfaces. h)
+title: Enumeração VMTaskResult (VPCCOMInterfaces.h)
 description: Especifica o resultado de uma tarefa.
 ms.assetid: 34aa193a-466d-492e-8648-467c286a8c11
 keywords:
-- VMTaskResult de enumeração Virtual PC
+- VMTaskResult enumeration Virtual PC
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 903425ca8036e1862df7042f16946fc0f2e9cc7d
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 0884d89776ac840586f221f21f8335f1d93c18886fd36bbe790164ebd1ba4cd8
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104499751"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118998436"
 ---
 # <a name="vmtaskresult-enumeration"></a>Enumeração VMTaskResult
 
-\[O Windows Virtual PC não está mais disponível para uso a partir do Windows 8. Em vez disso, use o [provedor WMI do Hyper-V (v2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
+\[Windows O PC virtual não está mais disponível para uso a partir Windows 8. Em vez disso, use o provedor WMI do [Hyper-V (V2)](/windows/desktop/HyperV_v2/windows-virtualization-portal).\]
 
 Especifica o resultado de uma tarefa.
 
@@ -51,7 +51,7 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="vmTaskResult_Success"></span><span id="vmtaskresult_success"></span><span id="VMTASKRESULT_SUCCESS"></span>**vmTaskResult \_ êxito**
+<span id="vmTaskResult_Success"></span><span id="vmtaskresult_success"></span><span id="VMTASKRESULT_SUCCESS"></span>**vmTaskResult \_ Success**
 </dt> <dd>
 
 A tarefa foi bem-sucedida.
@@ -68,7 +68,7 @@ A tarefa foi cancelada.
 <span id="vmTaskResult_UnexpectedError"></span><span id="vmtaskresult_unexpectederror"></span><span id="VMTASKRESULT_UNEXPECTEDERROR"></span>**vmTaskResult \_ UnexpectedError**
 </dt> <dd>
 
-A tarefa tinha um erro inesperado.
+A tarefa teve um erro inesperado.
 
 </dd> <dt>
 
@@ -82,35 +82,35 @@ Não havia memória suficiente para a tarefa ser concluída.
 <span id="vmTaskResult_DiskRelatedError"></span><span id="vmtaskresult_diskrelatederror"></span><span id="VMTASKRESULT_DISKRELATEDERROR"></span>**vmTaskResult \_ DiskRelatedError**
 </dt> <dd>
 
-A tarefa teve um erro ao gravar no disco (verifique se há espaço em disco suficiente).
+A tarefa teve um erro ao escrever no disco (certifique-se de que há espaço em disco suficiente).
 
 </dd> <dt>
 
 <span id="vmTaskResult_IncompatibleSavedStateError"></span><span id="vmtaskresult_incompatiblesavedstateerror"></span><span id="VMTASKRESULT_INCOMPATIBLESAVEDSTATEERROR"></span>**vmTaskResult \_ IncompatibleSavedStateError**
 </dt> <dd>
 
-A máquina virtual não pôde ser restaurada porque o estado salvo era incompatível.
+A máquina virtual não pôde restaurar porque o estado salvo era incompatível.
 
 </dd> <dt>
 
 <span id="vmTaskResult_TimeOutError"></span><span id="vmtaskresult_timeouterror"></span><span id="VMTASKRESULT_TIMEOUTERROR"></span>**vmTaskResult \_ TimeOutError**
 </dt> <dd>
 
-O tempo limite da tarefa foi atingido.
+A tarefa foi o tempo de vida.
 
 </dd> <dt>
 
 <span id="vmTaskResult_IllegalValueError"></span><span id="vmtaskresult_illegalvalueerror"></span><span id="VMTASKRESULT_ILLEGALVALUEERROR"></span>**vmTaskResult \_ IllegalValueError**
 </dt> <dd>
 
-Um valor de preferência inválido foi lido enquanto a tarefa estava sendo processada.
+Um valor de preferência ilegal foi lido durante o processamento da tarefa.
 
 </dd> <dt>
 
 <span id="vmTaskResult_ThreadCrashError"></span><span id="vmtaskresult_threadcrasherror"></span><span id="VMTASKRESULT_THREADCRASHERROR"></span>**vmTaskResult \_ ThreadCrashError**
 </dt> <dd>
 
-Um thread associado à tarefa falhou.
+Um thread associado à tarefa teve uma queda.
 
 </dd> <dt>
 
@@ -127,11 +127,11 @@ O desligamento solicitado foi anulado.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                    |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                    |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                     |
-| Fim do suporte do cliente<br/>    | Windows 7<br/>                                                                          |
+| Fim do suporte ao cliente<br/>    | Windows 7<br/>                                                                          |
 | Produto<br/>                  | Windows Virtual PC<br/>                                                                 |
-| parâmetro<br/>                   | <dl> <dt>VPCCOMInterfaces. h</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>VPCCOMInterfaces.h</dt> </dl> |
 
 
 
@@ -139,7 +139,7 @@ O desligamento solicitado foi anulado.
 
 <dl> <dt>
 
-[**IVMTask:: resultado**](ivmtask-result.md)
+[**IVMTask::Result**](ivmtask-result.md)
 </dt> </dl>
 
  

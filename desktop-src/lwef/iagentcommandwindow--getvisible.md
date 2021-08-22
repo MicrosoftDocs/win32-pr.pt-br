@@ -1,19 +1,19 @@
 ---
-title: IAgentCommandWindow getVisible
-description: IAgentCommandWindow getVisible
+title: IAgentCommandWindow GetVisible
+description: IAgentCommandWindow GetVisible
 ms.assetid: a69a2aaa-5a3a-46b8-b505-49609a2aa5ba
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: c66c6d7bf2ee59512f478fd8daa7cee882515690
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 949591bc22c93711af19ce18cb024ede9714335f249839eb4819a73e231e0d83
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "105785933"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118976236"
 ---
-# <a name="iagentcommandwindowgetvisible"></a>IAgentCommandWindow:: getVisible
+# <a name="iagentcommandwindowgetvisible"></a>IAgentCommandWindow::GetVisible
 
-\[O Microsoft Agent foi preterido a partir do Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
+\[O Microsoft Agent foi preterido a partir Windows 7 e pode não estar disponível nas versões subsequentes do Windows.\]
 
 ``` syntax
 HRESULT GetVisible(
@@ -21,7 +21,7 @@ HRESULT GetVisible(
 );                   // Voice Commands Window
 ```
 
-Determina se a janela de comandos de voz está visível ou oculta.
+Determina se a Janela comandos de voz está visível ou oculta.
 
 -   Retorna S \_ OK para indicar que a operação foi bem-sucedida.
 
@@ -30,18 +30,18 @@ Determina se a janela de comandos de voz está visível ou oculta.
 <span id="pbVisible"></span><span id="pbvisible"></span><span id="PBVISIBLE"></span>*pbVisible*
 </dt> <dd>
 
-Endereço de uma variável que recebe **true** se a janela de comandos de voz estiver visível ou **false** se estiver oculta.
+Endereço de uma variável que receberá **True se a** Janela comandos de voz estiver visível ou **False** se estiver oculta.
 
 </dd> </dl>
 
 ## <a name="see-also"></a>Consulte Também
 
-[**IAgentCommandWindow:: setVisible**](iagentcommandwindow--setvisible.md)
+[**IAgentCommandWindow::SetVisible**](iagentcommandwindow--setvisible.md)
 
 
- 
+ 
 
- 
+ 
 
 
 

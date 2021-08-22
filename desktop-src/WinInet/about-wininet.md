@@ -1,28 +1,28 @@
 ---
 title: Sobre o WinINet
-description: A API (interface de programação de aplicativo) do Windows Internet (WinINet) permite que seu aplicativo interaja com protocolos FTP e HTTP para acessar recursos da Internet.
+description: a API (interface de programação de aplicativo) do Windows Internet (WinINet) permite que seu aplicativo interaja com protocolos FTP e HTTP para acessar recursos da Internet.
 ms.assetid: 0a06f2af-957a-4dff-a8cc-187370181b5c
 keywords:
 - Sobre o WinINet WinINet
 - WinINet WinINet, sobre
 - WinINet WinINet, página inicial
-- Windows Internet WinINet
-- Internet, Windows Internet WinINet
+- Windows WinINet da Internet
+- internet, Windows internet WinINet
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4513e5c3912a483fd4dbef96f452c5712717c8a5
-ms.sourcegitcommit: 3e70ae762629e244028b437420ed50b5850db4e3
+ms.openlocfilehash: be38840c33735a1e064e9bdc5e044651130d6e15a6fe22d004a2e8d7c29bf140
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "103917028"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119051864"
 ---
 # <a name="about-wininet"></a>Sobre o WinINet
 
 > [!NOTE]
-> Para contêineres de aplicativos, desde que o Windows 10, versão 1709, HTTP/2 (consulte [RFC7540](https://tools.ietf.org/html/rfc7540)) esteja ativado por padrão.
+> para contêineres de aplicativos desde Windows 10, a versão 1709, HTTP/2 (consulte [RFC7540](https://tools.ietf.org/html/rfc7540)) está ativada por padrão.
 
-A API (interface de programação de aplicativo) do Windows Internet (WinINet) permite que seu aplicativo interaja com protocolos FTP e HTTP para acessar recursos da Internet. À medida que os padrões evoluem, essas funções manipulam as alterações nos protocolos subjacentes, permitindo que eles mantenham o comportamento consistente.
+a API (interface de programação de aplicativo) do Windows Internet (WinINet) permite que seu aplicativo interaja com protocolos FTP e HTTP para acessar recursos da Internet. À medida que os padrões evoluem, essas funções manipulam as alterações nos protocolos subjacentes, permitindo que eles mantenham o comportamento consistente.
 
 **Windows XP e Windows Server 2003 R2 e anteriores:** Também habilitou aplicativos para interagir com o Gopher.
 

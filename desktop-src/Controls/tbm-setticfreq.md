@@ -1,9 +1,9 @@
 ---
-title: Mensagem de TBM_SETTICFREQ (commctrl. h)
-description: Define a frequência de intervalo para marcas de escala em um TrackBar.
+title: TBM_SETTICFREQ mensagem (Commctrl.h)
+description: Define a frequência de intervalo para marcas de escala em uma barra de faixa.
 ms.assetid: c391260c-d6c2-4b6a-84e8-7fe5d734035b
 keywords:
-- Controles de TBM_SETTICFREQ de mensagens do Windows
+- TBM_SETTICFREQ controles de Windows mensagem
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b68a555a7803e663fa1708fc02214deecbb05aad
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: c7c1b3e029abc8027d8708da31698f44db85ec78e427ba9461f0a71a740fb05a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104009118"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119078010"
 ---
-# <a name="tbm_setticfreq-message"></a>\_Mensagem tbm SETTICFREQ
+# <a name="tbm_setticfreq-message"></a>Mensagem TBM \_ SETTICFREQ
 
-Define a frequência de intervalo para marcas de escala em um TrackBar. Por exemplo, se a frequência for definida como dois, uma marca de escala será exibida para todos os outros incrementos no intervalo do TrackBar. A configuração padrão para a frequência é uma; ou seja, cada incremento no intervalo é associado a uma marca de escala.
+Define a frequência de intervalo para marcas de escala em uma barra de faixa. Por exemplo, se a frequência for definida como dois, uma marca de escala será exibida para todos os outros incrementos no intervalo da barra de faixas. A configuração padrão para a frequência é uma; ou seja, cada incremento no intervalo é associado a uma marca de escala.
 
 ## <a name="parameters"></a>Parâmetros
 
@@ -39,13 +39,13 @@ Frequência das marcas de escala.
 *lParam* 
 </dt> <dd>Deve ser zero.</dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Sem valor de retorno.
 
 ## <a name="remarks"></a>Comentários
 
-O TrackBar deve ter o estilo de [**\_ autotiques TBS**](trackbar-control-styles.md) para usar essa mensagem.
+A barra de faixa deve ter o [**estilo TBS \_ AUTOTICKS**](trackbar-control-styles.md) para usar essa mensagem.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -53,9 +53,9 @@ O TrackBar deve ter o estilo de [**\_ autotiques TBS**](trackbar-control-styles.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

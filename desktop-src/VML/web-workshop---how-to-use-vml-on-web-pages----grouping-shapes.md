@@ -1,47 +1,47 @@
 ---
 title: Agrupando formas
-description: Este artigo descreve as formas de agrupamento no VML, um recurso que foi preterido a partir do Windows Internet Explorer 9.
+description: Este artigo descreve como agrupar formas no VML, um recurso que foi preterido a partir Windows Internet Explorer 9.
 ms.assetid: 469c9e4d-d1ae-4285-b2cb-ac833ebe59ff
 keywords:
-- Web Workshop, agrupando formas
-- Criando páginas da Web, agrupando formas
-- Linguagem VML (VML), agrupamento de formas
-- VML (linguagem VML), agrupamento de formas
-- gráficos vetoriais, agrupamento de formas
-- Formas de VML, agrupamento
+- Workshop da Web, agrupando formas
+- projetando páginas da Web, agrupando formas
+- linguagem VML (VML), agrupando formas
+- VML (linguagem VML), agrupando formas
+- gráficos vetoriais, formas de agrupação
+- Formas de VML, agrupando
 - agrupando formas
-- Linguagem VML (VML), elemento de grupo
-- VML (linguagem VML), elemento de grupo
-- gráficos vetoriais, elemento Group
+- linguagem VML (VML), elemento group
+- VML (linguagem VML), elemento group
+- gráficos vetoriais, elemento group
 - elemento de grupo
-- Elementos de VML, grupo
-- Linguagem VML (VML), espaço de coordenadas local
+- Elementos VML, grupo
+- linguagem VML (VML), espaço de coordenadas local
 - VML (linguagem VML), espaço de coordenadas local
 - gráficos vetoriais, espaço de coordenadas local
 - espaço de coordenadas local
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 61e0c3073f55d23c15734b5d5ddfa886e7291530
-ms.sourcegitcommit: 5d4e99f4c8f42f5f543e52cb9beb9fb13ec56c5f
+ms.openlocfilehash: 2bc9ac6da1d38bb6b30f685ebfd0f5a1d9d6026620a0e0c65366ee021668240a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112407699"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119056954"
 ---
 # <a name="grouping-shapes"></a>Agrupando formas
 
-Este tópico descreve a VML, um recurso que foi preterido a partir do Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem de VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
+Este tópico descreve o VML, um recurso que foi preterido a partir Windows Internet Explorer 9. As páginas da Web e os aplicativos que dependem do VML devem ser migrados para o SVG ou outros padrões amplamente suportados.
 
 > [!Note]  
-> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [conteúdo arquivado](/previous-versions/windows/internet-explorer/ie-developer/). Para obter informações, recomendações e orientações sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center](https://msdn.microsoft.com/ie/).
+> A partir de dezembro de 2011, este tópico foi arquivado. Como resultado, ele não é mais mantido ativamente. Para obter mais informações, consulte [Conteúdo arquivado.](/previous-versions/windows/internet-explorer/ie-developer/) Para obter informações, recomendações e diretrizes sobre a versão atual do Windows Internet Explorer, consulte [Internet Explorer Developer Center.](https://msdn.microsoft.com/ie/)
 
  
 
-Como você aprendeu, você pode facilmente desenhar formas individuais usando VML. Nesta seção, explicaremos os benefícios do agrupamento de formas e como agrupar formas.
+Como você aprendeu, você pode facilmente desenhar formas individuais usando o VML. Nesta seção, explicaremos os benefícios de agrupar formas e como agrupar formas.
 
-Se você tivesse muitas formas que precisavam ser dimensionadas, movidas ou giradas juntas, você acharia entediante definir os atributos individualmente para cada forma. Além disso, você aumentaria a margem de erros. Seria melhor se você pudesse agrupar as formas e, em seguida, definir os atributos de todo o grupo.
+Se você tivesse muitas formas que precisavam ser dimensionada, movidas ou giradas juntas, seria entediante definir os atributos individualmente para cada forma. Além disso, você aumentaria a margem para erros. Seria melhor se você pudesse agrupar as formas e, em seguida, definir os atributos para todo o grupo.
 
-Na VML, você pode usar o `<group>` elemento para agrupar muitas formas para que elas possam ser transformadas como uma unidade. Por exemplo, conforme mostrado na representação de VML a seguir, você pode facilmente agrupar duas formas.
+No VML, você pode usar o elemento para agrupar várias formas para `<group>` que elas possam ser transformadas como uma unidade. Por exemplo, conforme mostrado na representação VML a seguir, você pode agrupar facilmente duas formas.
 
 
 ```HTML
@@ -54,11 +54,11 @@ width:150pt;height:100pt; ...>
 
 
 
-Quando as formas são agrupadas, elas usam o [espaço de coordenadas local](web-workshop---how-to-use-vml-on-web-pages----local-coordinate-space.md) do grupo. Portanto, as formas dentro de um grupo podem ser dimensionadas e movidas juntas. Você verá mais exemplos no tópico usar espaço de coordenadas local.
+Quando as formas são agrupadas, elas usam [o espaço de coordenadas local](web-workshop---how-to-use-vml-on-web-pages----local-coordinate-space.md) do grupo. Portanto, as formas em um grupo podem ser dimensionados e movidos juntos. Você verá mais exemplos no tópico Usar Espaço de Coordenadas Local.
 
-Dentro de um grupo, você pode ter quantas formas ou grupos desejar. Quando um grupo está dentro de outro grupo, ele é chamado de "grupo aninhado". Não há nenhuma limitação nos níveis de aninhamento.
+Dentro de um grupo, você pode ter quantas formas ou grupos quiser. Quando um grupo está dentro de outro grupo, ele é chamado de "grupo aninhado". Não há nenhuma limitação nos níveis de aninhamento.
 
-Por exemplo, as linhas a seguir demonstram um grupo aninhado de 3 níveis. Shape3 e Shape4 estão em GroupC. Shape2 e GroupC estão em GroupB. Shape1 e GroupB estão no GroupA.
+Por exemplo, as linhas a seguir demonstram um grupo aninhado de três níveis. Shape3 e Shape4 estão em GroupC. Shape2 e GroupC estão em GroupB. Shape1 e GroupB estão em GroupA.
 
 
 ```HTML
@@ -78,13 +78,13 @@ Por exemplo, as linhas a seguir demonstram um grupo aninhado de 3 níveis. Shape
 
 
 
-Para obter mais informações sobre esse elemento, consulte a [especificação da VML](https://www.w3.org/TR/NOTE-VML#-toc416858388) .
+Para obter mais informações sobre esse elemento, consulte a [especificação de VML](https://www.w3.org/TR/NOTE-VML#-toc416858388) .
 
-[![voltar ao início ](images/top.gif) para cima](#top)
+[![voltar ao início ](images/top.gif) Voltar ao início](#top)
 
 ## <a name="summary"></a>Resumo
 
-Você pode usar o `<group>` elemento para agrupar muitas formas para que elas possam ser transformadas como uma unidade.
+Você pode usar o `<group>` elemento para agrupar várias formas para que elas possam ser transformadas como uma unidade.
 
  
 

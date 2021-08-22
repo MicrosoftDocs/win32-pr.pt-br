@@ -3,21 +3,21 @@ title: Arquivo desabilitado
 description: Arquivo desabilitado
 ms.assetid: 8b3339f6-a5d5-4501-826c-6ce33bfbf0cb
 keywords:
-- Capas móveis do Windows Media Player, arquivos de arte
+- Windows Media Player Capas móveis, arquivos de arte
 - capas, arquivos de arte
 - arquivos para capas, arte
 - arquivos de arte para capas, arquivos desabilitados
-- Capas móveis do Windows Media Player, arquivos desabilitados
+- Windows Media Player Capas móveis, arquivos desabilitados
 - capas, arquivos desabilitados
 - Arquivos desabilitados em capas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9608c67ded6625d46126955ad42a24548a9d002c
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: d7b7d7c052ed0de1a3e231bc204b87a84f1e9e10262acfe43df310d76f76577b
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005768"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118997347"
 ---
 # <a name="disabled-file"></a>Arquivo desabilitado
 
@@ -38,9 +38,9 @@ Observe que o plano de fundo da imagem do botão corresponde exatamente à área
 [**Arquivos de arte**](art-files-mobile.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

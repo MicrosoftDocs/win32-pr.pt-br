@@ -1,7 +1,7 @@
 ---
-description: O método Unlock desbloqueia o objeto da seção crítica.
+description: O método Unlock desbloqueia o objeto de seção crítico.
 ms.assetid: 61811e0e-df77-48e9-96d5-b7dff8c8db9b
-title: Método CCritSec. Unlock (Wxutil. h)
+title: Método CCritSec.Unlock (Wxutil.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,16 +16,16 @@ api_location:
 - Strmbase.dll
 - Strmbasd.lib
 - Strmbasd.dll
-ms.openlocfilehash: ca84ce452d71d0d3111039d7a95d8f5dd3155058
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 919b73e5e1fc0becfb7c5fad40b87a5eb28fa008ba5cea1706373ddec9128682
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105749840"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119074380"
 ---
-# <a name="ccritsecunlock-method"></a>Método CCritSec. Unlock
+# <a name="ccritsecunlock-method"></a>Método CCritSec.Unlock
 
-O método **Unlock** desbloqueia o objeto da seção crítica.
+O **método Unlock** desbloqueia o objeto de seção crítico.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,13 +40,13 @@ void Unlock();
 
 Esse método não tem parâmetros.
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
 ## <a name="remarks"></a>Comentários
 
-Esse método chama a função [**LeaveCriticalSection**](/windows/desktop/api/synchapi/nf-synchapi-leavecriticalsection) . Chame esse método uma vez para cada chamada para o método [**CCritSec:: Lock**](ccritsec-lock.md) .
+Esse método chama a [**função LeaveCriticalSection.**](/windows/desktop/api/synchapi/nf-synchapi-leavecriticalsection) Chame esse método uma vez para cada chamada para o [**método CCritSec::Lock.**](ccritsec-lock.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -54,8 +54,8 @@ Esse método chama a função [**LeaveCriticalSection**](/windows/desktop/api/sy
 
 | Requisito | Valor |
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| parâmetro<br/>  | <dl> <dt>Wxutil. h (incluir fluxos. h)</dt> </dl>                                                                                    |
-| Biblioteca<br/> | <dl> <dt>Strmbase. lib (compilações de varejo); </dt> <dt>Strmbasd. lib (compilações de depuração)</dt> </dl> |
+| parâmetro<br/>  | <dl> <dt>Wxutil.h (incluir Fluxos.h)</dt> </dl>                                                                                    |
+| Biblioteca<br/> | <dl> <dt>Strmbase.lib (builds de varejo); </dt> <dt>Strmbasd.lib (builds de depuração)</dt> </dl> |
 
 
 

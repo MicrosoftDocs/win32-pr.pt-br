@@ -4,18 +4,18 @@ description: XInput é uma API que permite que os aplicativos recebam entrada do
 ms.assetid: 7b5eec3e-b3da-de5c-c926-8258c1418ef0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 91f590f54bbb2641881cf89cd6d31539d75665c0
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: 68a9ca17e3046db676887290b9b9dcbb7318f2dc89d4dd9543cbe790bf271b60
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "103641189"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118962495"
 ---
 # <a name="getting-started-with-xinput"></a>Introdução com XInput
 
 XInput é uma API que permite que os aplicativos recebam entrada do controlador Xbox para Windows. Há suporte para efeitos de Rumble de controlador e entrada e saída de voz.
 
-Este tópico fornece uma breve visão geral dos recursos do XInput e como configurá-lo em um aplicativo. Ele inclui o seguinte:
+Este tópico fornece uma breve visão geral dos recursos do XInput e como configurá-lo em um aplicativo. Isso inclui o seguinte:
 
 -   [Introdução ao XInput](#introduction-to-xinput)
     -   [O controlador Xbox](#the-xbox-controller)
@@ -30,7 +30,7 @@ Este tópico fornece uma breve visão geral dos recursos do XInput e como config
 
 ## <a name="introduction-to-xinput"></a>Introdução ao XInput
 
-O console do Xbox usa um controlador de jogo que é compatível com o Windows. Os aplicativos podem usar a API XInput para se comunicar com esses controladores quando estiverem conectados a um computador Windows (até quatro controladores exclusivos podem ser conectados por vez).
+O console do Xbox usa um controlador de jogos compatível com o Windows. os aplicativos podem usar a API XInput para se comunicar com esses controladores quando estiverem conectados a um computador Windows (até quatro controladores exclusivos podem ser conectados por vez).
 
 Usando essa API, qualquer controlador Xbox conectado pode ser consultado em seu estado e os efeitos de vibração podem ser definidos. Os controladores que têm o headset anexado também podem ser consultados para dispositivos de entrada e saída de som que podem ser usados com o headset para processamento de voz.
 
@@ -207,7 +207,7 @@ O headset que pode ser conectado a um controlador Xbox tem duas funções: ele p
 Para associar o microfone do headset e o fone de ouvido às interfaces [DirectSound](/previous-versions/windows/desktop/ee416960(v=vs.85)) apropriadas, você deve obter o DirectSoundGUIDs para os dispositivos de captura e renderização chamando [**XInputGetDSoundAudioDeviceGuids**](/windows/desktop/api/XInput/nf-xinput-xinputgetdsoundaudiodeviceguids).
 
 > [!Note]  
-> O uso do [DirectSound](/previous-versions/windows/desktop/ee416960(v=vs.85)) herdado não é recomendado e não está disponível em aplicativos da Windows Store. As informações nesta seção se aplicam somente à versão SDK do DirectX do XInput (XInput 1,3). A versão do Windows 8 do XInput (XInput 1,4) usa exclusivamente os identificadores de dispositivo da API de sessão de áudio do Windows (WASAPI) que são obtidos por meio do [**XInputGetAudioDeviceIds**](/windows/desktop/api/XInput/nf-xinput-xinputgetaudiodeviceids).
+> o uso do [DirectSound](/previous-versions/windows/desktop/ee416960(v=vs.85)) herdado não é recomendado e não está disponível em aplicativos da Windows Store. As informações nesta seção se aplicam somente à versão SDK do DirectX do XInput (XInput 1,3). a versão Windows 8 do XInput (XInput 1,4) usa exclusivamente Windows identificadores de dispositivo WASAPI (API de sessão de áudio) que são obtidos por meio de [**XInputGetAudioDeviceIds**](/windows/desktop/api/XInput/nf-xinput-xinputgetaudiodeviceids).
 
 ```cpp
 XInputGetDSoundAudioDeviceGuids( i, &dsRenderGuid, &dsCaptureGuid );

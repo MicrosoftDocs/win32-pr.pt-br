@@ -11,12 +11,12 @@ api_name:
 - VirtualDesktopManager
 api_type:
 - COM
-ms.openlocfilehash: 9f08a4c6b565a733593ba8b9972ce3de36907ce6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 52becd94c0426c19d6a53658e2eef43c8d1f2396f1974cf5107f695c4e1734f2
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921661"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118967785"
 ---
 # <a name="virtualdesktopmanager-class"></a>Classe VirtualDesktopManager
 
@@ -32,9 +32,9 @@ Use essa interface para interagir com as áreas de trabalho virtuais e controlar
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                           |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2016\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>ShObjIdl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 10 \[ somente aplicativos da área de trabalho\]<br/>                                           |
+| Servidor mínimo com suporte<br/> | Windows Server 2016 \[ somente aplicativos da área de trabalho\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>ShObjIdl. h</dt> </dl> |
 
 
 

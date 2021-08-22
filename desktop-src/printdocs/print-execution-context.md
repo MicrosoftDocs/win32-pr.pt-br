@@ -1,7 +1,7 @@
 ---
 description: Representa o contexto de execução quando GetPrintExecutionData é chamado.
 ms.assetid: b6c026b2-8519-45d3-9614-b502eec23cde
-title: Enumeração de PRINT_EXECUTION_CONTEXT (winspool. h)
+title: PRINT_EXECUTION_CONTEXT enumeração (Winspool.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - HeaderDef
 api_location:
 - Winspool.h
-ms.openlocfilehash: 20b1050edc0088fb629ee10cf63dc9cffa07228a
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 78e4afb29b75c0a73799302ddb76e270b18ca2c38cb6325b59ebae5041d5f99e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104169456"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119033954"
 ---
-# <a name="print_execution_context-enumeration"></a>Enumeração de contexto de \_ execução de impressão \_
+# <a name="print_execution_context-enumeration"></a>Enumeração PRINT \_ EXECUTION \_ CONTEXT
 
-Representa o contexto de execução quando [**GetPrintExecutionData**](getprintexecutiondata.md) é chamado.
+Representa o contexto de execução [**quando GetPrintExecutionData**](getprintexecutiondata.md) é chamado.
 
 ## <a name="syntax"></a>Syntax
 
@@ -43,38 +43,38 @@ typedef enum  {
 
 <dl> <dt>
 
-<span id="PRINT_EXECUTION_CONTEXT_APPLICATION"></span><span id="print_execution_context_application"></span>**\_aplicativo de \_ contexto de execução de impressão \_**
+<span id="PRINT_EXECUTION_CONTEXT_APPLICATION"></span><span id="print_execution_context_application"></span>**IMPRIMIR \_ APLICATIVO DE CONTEXTO DE \_ \_ EXECUÇÃO**
 </dt> <dd>
 
-O chamador está sendo executado em um aplicativo.
+O chamador está em execução em um aplicativo.
 
 </dd> <dt>
 
-<span id="PRINT_EXECUTION_CONTEXT_SPOOLER_SERVICE"></span><span id="print_execution_context_spooler_service"></span>**\_ \_ serviço spooler do contexto de execução de \_ impressão \_**
+<span id="PRINT_EXECUTION_CONTEXT_SPOOLER_SERVICE"></span><span id="print_execution_context_spooler_service"></span>**SERVIÇO \_ \_ SPOOLER DE CONTEXTO \_ DE EXECUÇÃO \_ DE IMPRESSÃO**
 </dt> <dd>
 
 O chamador está em execução no serviço de spooler (spoolsv.exe).
 
 </dd> <dt>
 
-<span id="PRINT_EXECUTION_CONTEXT_SPOOLER_ISOLATION_HOST"></span><span id="print_execution_context_spooler_isolation_host"></span>**\_host de \_ isolamento do spooler do contexto de execução de \_ \_ impressão \_**
+<span id="PRINT_EXECUTION_CONTEXT_SPOOLER_ISOLATION_HOST"></span><span id="print_execution_context_spooler_isolation_host"></span>**PRINT \_ EXECUTION \_ CONTEXT \_ SPOOLER \_ ISOLATION \_ HOST**
 </dt> <dd>
 
 O chamador está em execução no host de isolamento de impressão (PrintIsolationHost.exe)
 
 </dd> <dt>
 
-<span id="PRINT_EXECUTION_CONTEXT_FILTER_PIPELINE"></span><span id="print_execution_context_filter_pipeline"></span>**\_pipeline de \_ filtro do contexto de execução de impressão \_ \_**
+<span id="PRINT_EXECUTION_CONTEXT_FILTER_PIPELINE"></span><span id="print_execution_context_filter_pipeline"></span>**PIPELINE DE \_ FILTRO DE CONTEXTO DE EXECUÇÃO DE \_ \_ \_ IMPRESSÃO**
 </dt> <dd>
 
 O chamador está em execução no pipeline de filtro de impressão (printfilterpipelinesvc.exe)
 
 </dd> <dt>
 
-<span id="PRINT_EXECUTION_CONTEXT_WOW64"></span><span id="print_execution_context_wow64"></span>**Contexto de execução de impressão \_ \_ \_ WOW64**
+<span id="PRINT_EXECUTION_CONTEXT_WOW64"></span><span id="print_execution_context_wow64"></span>**PRINT \_ EXECUTION \_ CONTEXT \_ WOW64**
 </dt> <dd>
 
-O chamador está em execução no splwow64.exe
+O chamador está em execução splwow64.exe
 
 </dd> </dl>
 
@@ -84,9 +84,9 @@ O chamador está em execução no splwow64.exe
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>                                                                |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/>                                                   |
-| parâmetro<br/>                   | <dl> <dt>Winspool. h (incluir Windows. h)</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 7 \[ aplicativos da área de trabalho\]<br/>                                                                |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho do Server 2008 R2 \[\]<br/>                                                   |
+| Cabeçalho<br/>                   | <dl> <dt>Winspool.h (incluir Windows.h)</dt> </dl> |
 
 
 
@@ -97,7 +97,7 @@ O chamador está em execução no splwow64.exe
 [**GetPrintExecutionData**](getprintexecutiondata.md)
 </dt> <dt>
 
-[**IMPRIMIR \_ dados de execução \_**](print-execution-data.md)
+[**IMPRIMIR \_ DADOS DE \_ EXECUÇÃO**](print-execution-data.md)
 </dt> </dl>
 
  

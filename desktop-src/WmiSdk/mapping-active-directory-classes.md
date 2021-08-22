@@ -1,20 +1,20 @@
 ---
-description: Fornece regras para mapeamento de classes WMI para Active Directory.
+description: Fornece regras para mapear classes WMI para o Active Directory.
 ms.assetid: 295d3233-5729-4eb0-9fa3-1cf64fef2909
 ms.tgt_platform: multiple
-title: Mapeando classes de Active Directory
+title: Mapeando classes do Active Directory
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 7a606cfacc2e9d56ef07973df182f5ce1a65be35
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bc38e91d52b59a206a0b64465d0f9710f6d515c9487853824477b7f4f6a126aa
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105811988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118992896"
 ---
-# <a name="mapping-active-directory-classes"></a>Mapeando classes de Active Directory
+# <a name="mapping-active-directory-classes"></a>Mapeando classes do Active Directory
 
-Como Active Directory tem uma ampla variedade de objetos possíveis, o WMI não pode criar um mapeamento direto de um para um. Em vez disso, o provedor de serviços de diretório usa regras para mapear classes entre as duas tecnologias.
+Como o Active Directory tem uma ampla variedade de objetos possíveis, o WMI não pode criar um mapeamento direto de um para um. Em vez disso, o provedor de Serviços de Diretório usa regras para mapear classes entre as duas tecnologias.
 
 As seções a seguir são discutidas neste tópico:
 
@@ -23,45 +23,45 @@ As seções a seguir são discutidas neste tópico:
 -   [Classes de associação](#association-classes)
 
 > [!Note]  
-> Para obter mais informações sobre o suporte e a instalação desse componente em um sistema operacional específico, consulte [disponibilidade do sistema operacional de componentes WMI](operating-system-availability-of-wmi-components.md).
+> Para obter mais informações sobre o suporte e a instalação desse componente em um sistema operacional específico, consulte Disponibilidade do sistema operacional [de componentes WMI](operating-system-availability-of-wmi-components.md).
 
  
 
 ## <a name="mapping-classes"></a>Classes de mapeamento
 
-A lista a seguir descreve as diretrizes que o provedor de serviços de diretório usa para mapear Active Directory classes para classes WMI:
+A lista a seguir descreve as diretrizes que o provedor de Serviços de Diretório usa para mapear classes do Active Directory para classes WMI:
 
--   Cada classe abstrata no esquema de Active Directory é mapeada para uma classe abstrata no esquema WMI.
+-   Cada classe abstrata no esquema do Active Directory é mapeado para uma classe abstrata no esquema WMI.
 
-    No esquema WMI, cada classe abstrata é prefixada com DS \_ . Por exemplo, a classe **Person** do esquema de Active Directory é mapeada para a classe WMI **\_ Person do DS** .
+    No esquema WMI, cada classe abstrata é prefixada com DS \_ . Por exemplo, a **classe person** do esquema do Active Directory é mapeado para a **classe WMI de \_ pessoa DS.**
 
--   Cada classe não abstrata do esquema de Active Directory mapeia para as duas classes a seguir no esquema WMI:
+-   Cada classe nãoabstrata do esquema do Active Directory é mapeado para as duas classes a seguir no esquema WMI:
 
-    -   A primeira classe mapeada é prefixada com anúncios \_ . Essas são classes abstratas, mapeadas de acordo com as regras abaixo.
-    -   A segunda classe mapeada é uma classe não abstrata com o \_ prefixo de nome DS. Essa classe é derivada da \_ classe abstrata ADS, com a adição do qualificador do [**provedor**](/windows/desktop/api/Provider/nl-provider-provider) .
+    -   A primeira classe mapeada é prefixada com \_ ADS. Essas são classes abstratas, mapeadas de acordo com as regras abaixo.
+    -   A segunda classe mapeada é uma classe nãoabstrata com o prefixo de \_ nome DS. Essa classe é derivada da classe \_ abstrata ADS, com a adição do [**qualificador provider.**](/windows/desktop/api/Provider/nl-provider-provider)
 
-    Por exemplo, a classe de **usuário** do esquema de Active Directory é mapeada para duas classes. A primeira classe é a classe abstrata do **\_ usuário ADS** , mapeada de acordo com as regras abaixo. A segunda classe é a classe não abstrata do **\_ usuário do DS** . Ele é derivado do **\_ usuário do ADS** e tem o qualificador do [**provedor**](/windows/desktop/api/Provider/nl-provider-provider) adicionado.
+    Por exemplo, a **classe de** usuário do esquema do Active Directory é mapeado para duas classes. A primeira classe é a classe **\_ abstrata de** usuário ADS, mapeada de acordo com as regras abaixo. A segunda classe é a classe nãoabstrata de usuário **DS. \_** Ele é derivado do usuário **ads \_ e** tem o qualificador [**de**](/windows/desktop/api/Provider/nl-provider-provider) Provedor adicionado.
 
--   A menos que especificado de outra forma, o nome de uma classe mapeada é o valor desconfigurado da propriedade **LDAP-Display-Name** na classe Active Directory.
--   Se a propriedade **subclasse-of** estiver presente na classe Active Directory, a classe MAPEADA por WMI será derivada da classe especificada.
+-   A menos que especificado de outra forma, o nome de uma classe mapeada é o valor emaranhado da propriedade **LDAP-Display-Name** na classe do Active Directory.
+-   Se a **propriedade Sub-Class-Of** estiver presente na classe active directory, a classe mapeada por WMI será derivada da classe especificada.
 
-    Se a propriedade **subclasse-of** não estiver presente, a classe MAPEADA por WMI será derivada da classe de **\_ \_ \_ classe raiz LDAP do DS** , conforme especificado no arquivo MOF.
+    Se a **propriedade Sub-Class-Of** não estiver presente, a classe mapeada por WMI será derivada da classe **raiz \_ LDAP \_ \_ DS,** conforme especificado no arquivo MOF.
 
     > [!Note]  
-    > Essa classe tem a propriedade de chave **ADSIPath** , com um tipo **VT \_ BSTR**. Este é o caminho ADSI exclusivo que identifica essa instância. O Active Directory dá suporte apenas à herança única e, portanto, isso funciona.
+    > Essa classe tem a **propriedade de chave ADSIPath,** com um **tipo VT \_ BSTR**. Esse é o caminho ADSI exclusivo que identifica essa instância. O Active Directory dá suporte apenas à herança única, portanto, isso funciona.
 
      
 
--   Um qualificador **dinâmico** do tipo **VT \_ bool** e o tipo `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` definido como **true** são criados para cada classe. Esse é um qualificador WMI padrão que indica que as instâncias dessa classe são fornecidas dinamicamente.
--   Se a classe não for abstrata, o provedor criará um qualificador de [**provedor**](/windows/desktop/api/Provider/nl-provider-provider) do tipo **VT \_ BSTR bool** e o tipo de qualificador `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` definido como "provedor de instância DS" para cada classe. Este é um qualificador WMI padrão que indica o nome do provedor que fornece dinamicamente instâncias dessa classe.
+-   Um **qualificador** dinâmico do tipo **\_ BOOL VT** e flavor definido como `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` **TRUE** é criado para cada classe. Esse é um qualificador WMI padrão que indica que as instâncias dessa classe são fornecidas dinamicamente.
+-   Se [**a**](/windows/desktop/api/Provider/nl-provider-provider) classe não for abstrata, o provedor criará um qualificador de Provedor do tipo **\_ BOOL VT BSTR** e tipo de qualificador definido como `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` "Provedor de Instância DS" para cada classe. Esse é um qualificador WMI padrão que indica o nome do provedor fornecendo dinamicamente instâncias dessa classe.
 
-O restante das propriedades ADSI é mapeado para qualificadores de classe e propriedades de acordo com as tabelas a seguir. Todos os qualificadores são mapeados com um valor de sinalizador de qualificador de `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` .
+O restante das propriedades ADSI é mapeada para qualificadores de classe e propriedades de acordo com as tabelas a seguir. Todos os qualificadores são mapeadores com um valor de sinalizador qualificador de `WBEM_FLAVOR_FLAG_PROPAGATE_TO_INSTANCE | WBEM_FLAVOR_FLAG_PROPAGATE_TO_DERIVED_CLASS` .
 
-O a seguir lista informações de mapeamento para a classe Active Directory, mostrando o qualificador WMI e o tipo de qualificador WMI para cada propriedade Active Directory.
+A seguir, são listadas informações de mapeamento para a classe do Active Directory, mostrando o qualificador WMI e o tipo de qualificador WMI para cada propriedade do Active Directory.
 
 <dl> <dt>
 
-**Nome comum**
+**Common-Name**
 </dt> <dd>
 
 **CN** (**VT \_ BSTR**)
@@ -70,7 +70,7 @@ Mapeado diretamente do valor da cadeia de caracteres.
 
 </dd> <dt>
 
-**Categoria de objeto-padrão**
+**Default-Object-Category**
 </dt> <dd>
 
 **DefaultObjectCategory** (**VT \_ BSTR**)
@@ -79,7 +79,7 @@ Mapeado diretamente do valor da cadeia de caracteres.
 
 </dd> <dt>
 
-**Padrão-descritor de segurança**
+**Descritor de segurança padrão**
 </dt> <dd>
 
 **DefaultSecurityDescriptor** (**VT \_ BSTR**)
@@ -88,12 +88,12 @@ Mapeado diretamente do valor da cadeia de caracteres.
 
 </dd> <dt>
 
-**Regis-ID**
+**Governs-Id**
 </dt> <dd>
 
 **GovernsId** (**VT \_ BSTR**)
 
-Mapeado da representação de cadeia de caracteres da OID; por exemplo, "{1 3 3 6}".
+Mapeado da representação de cadeia de caracteres do OID; por exemplo, "{ 1 3 3 6 }".
 
 </dd> <dt>
 
@@ -106,12 +106,12 @@ Não mapeado.
 
 </dd> <dt>
 
-**Categoria de classe de objeto**
+**Object-Class-Category**
 </dt> <dd>
 
-**ObjectClassCategory** (**VT \_ i4**)
+**ObjectClassCategory** (**VT \_ I4**)
 
-Mapeado diretamente do valor inteiro. Além disso, se o valor for Abstract (2), o qualificador **CIM \_ bool Standard VT** , chamado de qualificador **"Abstract"** , também será criado.
+Mapeado diretamente do valor inteiro. Além disso, se o valor for Abstract(2), o qualificador CIM **\_ BOOL** da VT padrão, chamado de **qualificador** "Abstrato", também será criado.
 
 </dd> <dt>
 
@@ -120,75 +120,75 @@ Mapeado diretamente do valor inteiro. Além disso, se o valor for Abstract (2), 
 
 **RDNATTID** (**VT \_ BSTR**)
 
-Mapeado da representação de cadeia de caracteres do valor de OID; por exemplo, "{1 3 3 6}". Além disso, a propriedade identificada aqui é anotada com o qualificador de CIM **indexado** padrão definido como **true**.
+Mapeado da representação de cadeia de caracteres do valor OID; por exemplo, "{ 1 3 3 6 }". Além disso, a propriedade identificada aqui é anotada com o qualificador CIM **indexado** padrão definido como **TRUE.**
 
 </dd> <dt>
 
 **Somente sistema**
 </dt> <dd>
 
-**SystemOnly** (**VT \_ bool**)
+**SystemOnly** (**VT \_ BOOL**)
 
-Mapeado diretamente do valor booliano.
+Mapeado diretamente do valor booliana.
 
 </dd> </dl>
 
  
 
-O seguinte lista as propriedades de classe de Active Directory mapeadas para propriedades de classe WMI.
+O exemplo a seguir lista as propriedades de classe do Active Directory mapeadas para propriedades da classe WMI.
 
 <dl> <dt>
 
-**Pode-conter**
+**May-Contain**
 </dt> <dd>
 
 Cada propriedade nessa lista é mapeada para uma propriedade WMI.
 
 </dd> <dt>
 
-**Deve conter**
+**Must-Contain**
 </dt> <dd>
 
-Cada propriedade nessa lista é mapeada para uma propriedade WMI. O qualificador CIM padrão **não \_ nulo** é criado para cada um deles.
+Cada propriedade nessa lista é mapeada para uma propriedade WMI. O **qualificador \_** cim não nulo padrão é criado para cada um deles.
 
 </dd> <dt>
 
-**Sistema-pode-conter**
+**System-May-Contain**
 </dt> <dd>
 
-Cada propriedade nessa lista é mapeada para uma propriedade WMI. Além disso, cada propriedade é anotada com um qualificador de **sistema** , definida como **true**.
+Cada propriedade nessa lista é mapeada para uma propriedade WMI. Além disso, cada propriedade é anotada com um **qualificador System,** definido como **TRUE.**
 
 </dd> <dt>
 
-**Sistema-deve conter**
+**System-Must-Contain**
 </dt> <dd>
 
-Cada propriedade nessa lista é mapeada para uma propriedade WMI. O qualificador CIM padrão **não \_ nulo** é criado para cada um deles. Além disso, cada propriedade é anotada com um qualificador de **sistema** , definida como **true**.
+Cada propriedade nessa lista é mapeada para uma propriedade WMI. O **qualificador \_** cim não nulo padrão é criado para cada um deles. Além disso, cada propriedade é anotada com um **qualificador System,** definido como **TRUE.**
 
 </dd> </dl>
 
 ## <a name="mapping-attributes"></a>Atributos de mapeamento
 
-O provedor de serviços de diretório mapeia cada atributo de uma classe Active Directory para exatamente uma propriedade da classe WMI correspondente de acordo com as regras nesta seção. Em geral, o provedor de serviços de diretório nomeia a propriedade WMI como a versão desconfigurado do valor **LDAP-Display-Name** do atributo Active Directory.
+O provedor de Serviços de Diretório mapeia cada atributo de uma classe do Active Directory para exatamente uma propriedade da classe WMI correspondente de acordo com as regras nesta seção. Em geral, o Provedor de Serviços de Diretório nomeia a propriedade WMI como a versão emaranhada do valor **LDAP-Display-Name** do atributo do Active Directory.
 
-Se a propriedade Active Directory **for de valor único** for **false**, essa propriedade WMI será combinada com o operador OR com a **matriz de \_ sinalizador \_ CIM**. Observe que cada propriedade é marcada com o qualificador **VT \_ BSTR** , **ADSyntax**. Representa a sintaxe de Active Directory subjacente.
+Se a propriedade **Is-Single-Valued** do Active Directory for **FALSE,** essa propriedade WMI será combinada com o operador OR com **CIM FLAG \_ \_ ARRAY**. Observe que cada propriedade é marcada com o qualificador **\_ BSTR VT,** **ADSyntax**. Ele representa a sintaxe subjacente do Active Directory.
 
-A tabela a seguir lista o mapeamento da sintaxe de Active Directory para o tipo de dados de Propriedade do WMI.
+A tabela a seguir lista o mapeamento da sintaxe do Active Directory para o tipo de dados da propriedade WMI.
 
 
 
 | Elemento Active Directory                                      | Tipo de dados WMI                                                           |
 |---------------------------------------------------------------|-------------------------------------------------------------------------|
-| [**Ponto de acesso**](/windows/desktop/ADSchema/s-object-access-point)            | **\_cadeia de caracteres CIM**                                                         |
-| [**Boolean**](/windows/desktop/ADSchema/s-boolean)                             | **\_booliano de CIM**                                                        |
-| **Cadeia de caracteres sem diferenciação de maiúsculas**                                   | **\_cadeia de caracteres CIM**                                                         |
-| [**Cadeia de caracteres diferencia maiúsculas de minúscula**](/windows/desktop/ADSchema/s-string-case-sensitive) | **\_cadeia de caracteres CIM**                                                         |
-| [**Nome distinto**](/windows/desktop/ADSchema/s-object-ds-dn)             | **\_cadeia de caracteres CIM**                                                         |
-| [**DN binário**](/windows/desktop/ADSchema/s-object-dn-binary)                  | Objeto inserido do DN de classe **\_ com \_ binário** definido abaixo.<br/> |
-| [**Cadeia de caracteres DN**](/windows/desktop/ADSchema/s-object-dn-string)                  | Objeto inserido do DN de classe **\_ com a \_ cadeia de caracteres** definida abaixo.<br/> |
+| [**Ponto de acesso**](/windows/desktop/ADSchema/s-object-access-point)            | **CADEIA DE \_ CARACTERES CIM**                                                         |
+| [**Boolean**](/windows/desktop/ADSchema/s-boolean)                             | **CIM \_ BOOLEAN**                                                        |
+| **Cadeia de caracteres sem maiúsculas e minúsculas**                                   | **CADEIA DE \_ CARACTERES CIM**                                                         |
+| [**Cadeia de caracteres que pode ser sensível a minúsculas**](/windows/desktop/ADSchema/s-string-case-sensitive) | **CADEIA DE \_ CARACTERES CIM**                                                         |
+| [**Nome diferenciado**](/windows/desktop/ADSchema/s-object-ds-dn)             | **CADEIA DE \_ CARACTERES CIM**                                                         |
+| [**DN-Binary**](/windows/desktop/ADSchema/s-object-dn-binary)                  | Objeto inserido da classe **DN \_ Com Binário \_ definido** abaixo.<br/> |
+| [**Cadeia de caracteres DN**](/windows/desktop/ADSchema/s-object-dn-string)                  | Objeto inserido da classe **DN \_ Com Cadeia de \_ Caracteres** definida abaixo.<br/> |
 | [**Enumeração**](/windows/desktop/ADSchema/s-enumeration)                     | **\_Sint32 CIM**                                                         |
 | [**Enumeração**](/windows/desktop/ADSchema/s-enumeration)                     | **\_cadeia de caracteres CIM**                                                         |
-| [**Valores**](/windows/desktop/ADSchema/s-integer)                             | **\_Sint32 CIM**                                                         |
+| [**Integer**](/windows/desktop/ADSchema/s-integer)                             | **\_Sint32 CIM**                                                         |
 | [**LargeInteger**](/windows/desktop/ADSchema/s-largeinteger)                   | **\_cadeia de caracteres CIM**                                                         |
 | Descritor de Segurança                                           | Objeto inserido da classe **Uint8Array** definido abaixo.<br/>       |
 | Cadeia de caracteres numérica                                                | **\_cadeia de caracteres CIM**                                                         |
@@ -199,7 +199,7 @@ A tabela a seguir lista o mapeamento da sintaxe de Active Directory para o tipo 
 | Imprimir cadeia de caracteres de caso                                             | **\_cadeia de caracteres CIM**                                                         |
 | Link de réplica                                                  | Objeto inserido da classe **Uint8Array** definido abaixo.<br/>       |
 | [**Cadeia de caracteres (SID)**](/windows/desktop/ADSchema/s-string-sid)                      | Objeto inserido da classe **Uint8Array** definido abaixo.<br/>       |
-| Hora                                                          | **\_data e hora CIM**                                                       |
+| Tempo                                                          | **\_data e hora CIM**                                                       |
 | Hora codificada UTC                                                | **\_data e hora CIM**                                                       |
 | Cadeia de caracteres Unicode                                                | **\_cadeia de caracteres CIM**                                                         |
 
@@ -244,7 +244,7 @@ A tabela a seguir lista como o WMI mapeia o restante das propriedades de interfa
 | Atributo de Active Directory-nome da propriedade | Qualificador WMI       | Tipo de dados    | Informações de mapeamento                               |
 |------------------------------------------|---------------------|--------------|---------------------------------------------------|
 | **Sintaxe de atributo**                     | **AttributeSyntax** | **VT \_ BSTR** | Mapeado a partir da representação de cadeia de caracteres do OID. |
-| **Nome comum**                          | **Hong**              | **VT \_ BSTR** | Mapeado a partir do valor da cadeia de caracteres.                     |
+| **Nome comum**                          | **CN**              | **VT \_ BSTR** | Mapeado a partir do valor da cadeia de caracteres.                     |
 | **Somente sistema**                          | **System**          | **BOOL do VT \_** | Mapeado a partir do valor booliano.                    |
 
 

@@ -34,12 +34,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 6cda73597f88d2c8fca911ebb96d7a3c6399ed9f
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 2fe0125291952fc8af7e9c2d2b565dcb8ce7d50ca94b1104b430834d30ab2a1e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105760300"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118978546"
 ---
 # <a name="setindexrangegrbit-enumeration"></a>Enumeração SetIndexRangeGrbit
 
@@ -47,8 +47,8 @@ Opções para JetSetIndexRange.
 
 Esta enumeração tem um atributo [FlagsAttribute](/dotnet/api/system.flagsattribute) que permite uma combinação bit a bit dos valores membros dela.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -89,17 +89,17 @@ public enum SetIndexRangeGrbit
 <tr class="odd">
 <td></td>
 <td>RangeUpperLimit</td>
-<td>A chave de pesquisa no cursor representa os critérios de pesquisa para a entrada de índice mais próxima do final do índice que corresponderá ao intervalo de índice.</td>
+<td>A chave de pesquisa no cursor representa os critérios de pesquisa para a entrada de índice mais próxima ao final do índice que corresponderá ao intervalo de índice.</td>
 </tr>
 <tr class="even">
 <td></td>
 <td>RangeInstantDuration</td>
-<td>O intervalo de índice deve ser removido assim que tiver sido estabelecido. Isso é útil para testar a existência de entradas de índice que correspondam aos critérios de pesquisa.</td>
+<td>O intervalo de índice deve ser removido assim que tiver sido estabelecido. Isso é útil para testar a existência de entradas de índice que corresponderem aos critérios de pesquisa.</td>
 </tr>
 <tr class="odd">
 <td></td>
 <td>RangeRemove</td>
-<td>Cancelar e intervalo de índice existente.</td>
+<td>Cancele e o intervalo de índice existente.</td>
 </tr>
 </tbody>
 </table>
@@ -109,4 +109,4 @@ public enum SetIndexRangeGrbit
 
 #### <a name="reference"></a>Referência
 
-[Namespace Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop](./microsoft.isam.esent.interop-namespace.md)

@@ -1,29 +1,29 @@
 ---
-description: Mostra como reproduzir conteúdo de mídia protegido no Microsoft Media Foundation.
+description: Mostra como reproduzir conteúdo de mídia protegido em Microsoft Media Foundation.
 ms.assetid: e4a47e1c-16aa-45c1-8aa8-8929d6e1e653
 title: Exemplo de ProtectedPlayback
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: ee64b2a64ce4d40b6f15c2e5afb3b9a39e84c619
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: bd4290a92ba18695d1780fc0401334c4bce252754353d8757b3e904a2aa979fe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103647750"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119034974"
 ---
 # <a name="protectedplayback-sample"></a>Exemplo de ProtectedPlayback
 
-Mostra como reproduzir conteúdo de mídia protegido no Microsoft Media Foundation.
+Mostra como reproduzir conteúdo de mídia protegido em Microsoft Media Foundation.
 
 ## <a name="usage"></a>Uso
 
-O exemplo ProtectedPlayback cria um aplicativo do Windows.
+O exemplo ProtectedPlayback cria um Windows aplicativo.
 
-Para reproduzir um arquivo de mídia local, selecione **Abrir arquivo** no menu **arquivo** . Para especificar um arquivo por URL, selecione **abrir URL** no menu **arquivo** . Depois de selecionar um arquivo, a reprodução é iniciada automaticamente. Para pausar a reprodução, pressione a barra de espaços. Para retomar a reprodução, pressione a barra de espaços novamente.
+Para reproduzir um arquivo de mídia local, **selecione Abrir Arquivo** no menu Arquivo.  Para especificar um arquivo por URL, selecione **Abrir URL** **no** menu Arquivo. Depois de selecionar um arquivo, a reprodução começa automaticamente. Para pausar a reprodução, pressione SPACEBAR. Para retomar a reprodução, pressione a BARRA DE ESPAÇOS novamente.
 
 ## <a name="apis-demonstrated"></a>APIs demonstradas
 
-Este exemplo demonstra as seguintes interfaces de Media Foundation:
+Este exemplo demonstra as seguintes Media Foundation interfaces:
 
 -   [**IMFContentEnabler**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentenabler)
 -   [**IMFContentProtectionManager**](/windows/desktop/api/mfidl/nn-mfidl-imfcontentprotectionmanager)
@@ -42,7 +42,7 @@ Este exemplo demonstra as seguintes interfaces de Media Foundation:
 
 ## <a name="downloading-the-sample"></a>Baixando o exemplo
 
-Este exemplo está disponível no [repositório GitHub de exemplos clássicos do Windows](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/protectedplayback).
+Este exemplo está disponível no repositório [Windows github de exemplos clássicos.](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/mediafoundation/protectedplayback)
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

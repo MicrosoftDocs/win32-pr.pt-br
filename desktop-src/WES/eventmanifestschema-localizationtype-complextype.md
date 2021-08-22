@@ -1,9 +1,9 @@
 ---
-title: Tipo complexo de corlocalizatype
-description: Define um grupo de recursos localizados que você referencia em seu manifesto. | Tipo complexo de corlocalizatype
+title: Tipo complexo LocalizationType
+description: Define um grupo de recursos localizados que você referencia em seu manifesto. | Tipo complexo LocalizationType
 ms.assetid: fecab4e0-7136-4b13-8c24-bebbad0812e6
 keywords:
-- LogType tipo complexo EventLog
+- Tipo complexo LocalizationType EventLog
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 ms.topic: reference
 ms.date: 05/31/2018
 api_location: ''
-ms.openlocfilehash: cbb6911ea606ea30d8e656f20b4c566d4f6d0e08
-ms.sourcegitcommit: 92e74c99f8f4d097676959d0c317f533c2400a80
+ms.openlocfilehash: 09a596ff981944943c193fb158f14aa04eafb0b0b3d4df660d2034c5b5d281be
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "105800192"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119055944"
 ---
-# <a name="localizationtype-complex-type"></a>Tipo complexo de corlocalizatype
+# <a name="localizationtype-complex-type"></a>Tipo complexo LocalizationType
 
 Define um grupo de recursos localizados que você referencia em seu manifesto.
 
@@ -72,10 +72,10 @@ Define um grupo de recursos localizados que você referencia em seu manifesto.
 
 
 
-| Elemento                                                                         | Type                                                                       | Description                                                                                                         |
+| Elemento                                                                         | Type                                                                       | Descrição                                                                                                         |
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [**os**](eventmanifestschema-resources-localizationtype-element.md)     |                                                                            | Define um grupo de tabelas de cadeia que contém as cadeias de caracteres localizadas que você referencia em seu manifesto.<br/> |
-| [**stringTable**](eventmanifestschema-stringtable-localizationtype-element.md) | [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) | Define uma lista de cadeias de caracteres localizadas que você pode referenciar em seu manifesto.<br/>                             |
+| [**Recursos**](eventmanifestschema-resources-localizationtype-element.md)     |                                                                            | Define um grupo de tabelas de cadeia de caracteres que contêm as cadeias de caracteres localizadas que você referencia em seu manifesto.<br/> |
+| [**Stringtable**](eventmanifestschema-stringtable-localizationtype-element.md) | [**StringTableType**](eventmanifestschema-stringtabletype-complextype.md) | Define uma lista de cadeias de caracteres localizadas que você pode referenciar em seu manifesto.<br/>                             |
 
 
 
@@ -83,10 +83,10 @@ Define um grupo de recursos localizados que você referencia em seu manifesto.
 
 
 
-| Nome            | Tipo   | Description                                                                                                                                            |
+| Nome            | Tipo   | Descrição                                                                                                                                            |
 |-----------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| culture         | string | Um nome de idioma que identifica a cultura das cadeias de caracteres localizadas na tabela de cadeias. Por exemplo, "en-US" para inglês (Estados Unidos).<br/> |
-| fallbackCulture | string | Não usado.<br/>                                                                                                                                   |
+| culture         | string | Um nome de idioma que identifica a cultura das cadeias de caracteres localizadas na tabela de cadeia de caracteres. Por exemplo, "en-US" para inglês (Estados Unidos).<br/> |
+| Fallbackculture | string | Não usado.<br/>                                                                                                                                   |
 
 
 
@@ -96,8 +96,8 @@ Define um grupo de recursos localizados que você referencia em seu manifesto.
 
 | Requisito | Valor |
 |-------------------------------------|------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>       |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>       |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2008 \[\]<br/> |
 
 
 

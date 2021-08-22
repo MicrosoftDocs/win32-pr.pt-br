@@ -1,7 +1,7 @@
 ---
 description: Exclui um arquivo. Consulte DeleteFile.
 ms.assetid: 8c1f4368-8b0e-41af-9bf8-f3d9f58c3700
-title: Função _DeleteFile
+title: _DeleteFile função
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - DllExport
 api_location:
 - Msmdun80.dll
-ms.openlocfilehash: 8d7bb675d76d5e455ffa6bf5099d8f1fe7f88e61
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 9cbf792b3b1aa2f22550a88a0c24920c86b6874cf81a29cec6b36356a189e1fc
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105753775"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119017784"
 ---
 # <a name="_deletefile-function"></a>\_Função DeleteFile
 
-\[Essa função é um wrapper sobre a função **DeleteFile** . Essa função pode ser alterada ou não estar disponível no futuro. Os aplicativos devem chamar **DeleteFile** diretamente.\]
+\[Essa função é um wrapper sobre a **função DeleteFile.** Essa função pode ser alterada ou não disponível no futuro. Os aplicativos devem **chamar DeleteFile** diretamente.\]
 
 Exclui um arquivo. Consulte [**DeleteFile**](/windows/desktop/api/fileapi/nf-fileapi-deletefilea).
 

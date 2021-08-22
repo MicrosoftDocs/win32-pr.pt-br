@@ -1,47 +1,47 @@
 ---
-title: Janela da área de trabalho (referência de elemento de interface do usuário MSAA)
-description: A janela da área de trabalho exibe o modo de exibição de lista de desktops (que contém ícones como Meu Computador) e a barra de tarefas que contém o botão Iniciar.
+title: Janela área de trabalho (Referência de elemento de interface do usuário MSAA)
+description: A janela da área de trabalho exibe a exibição de lista da área de trabalho (que contém ícones como Meu Computador) e a barra de tarefas que contém o botão Iniciar.
 ms.assetid: 3668c26e-6462-4219-95d3-507811ed7f3c
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1d58208b3993964a367d093174d58d705beda23d
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: c0a1c096ea759f9df2115a35e79e72fe7257e93b9d9a21d9f596b890644a6a67
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104363754"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "118994216"
 ---
-# <a name="desktop-window-msaa-ui-element-reference"></a>Janela da área de trabalho (referência de elemento de interface do usuário MSAA)
+# <a name="desktop-window-msaa-ui-element-reference"></a>Janela área de trabalho (Referência de elemento de interface do usuário MSAA)
 
-A janela da área de trabalho exibe o modo de exibição de lista de desktops (que contém ícones como Meu Computador) e a barra de tarefas que contém o botão **Iniciar** .
+A janela da área de trabalho exibe a exibição de lista da área de trabalho (que contém ícones como Meu Computador) e a barra de tarefas que contém o **botão** Iniciar.
 
-Esse objeto raramente é consultado pelos clientes, pois a exibição de lista e a barra de tarefas cobrem toda a área de trabalho. O objeto da área de trabalho é recuperado quando você faz logon, antes de o Shell do sistema operacional exibir o modo de exibição de lista e a barra de tarefas. Em alguns casos, a área de trabalho é obtida ao navegar de outros objetos.
+Esse objeto raramente é consultado por clientes porque a exibição de lista e a barra de tarefas abrangem toda a área de trabalho. O objeto da área de trabalho é recuperado quando você faz logoff, antes que o shell do sistema operacional exibe a exibição de lista e a barra de tarefas. Em alguns casos, a área de trabalho é obtida ao navegar de outros objetos.
 
-O nome da classe da janela da área de trabalho é " \# 32769".
+O nome da classe de janela para a janela da área de trabalho é " \# 32769".
 
 ## <a name="iaccessible-methods"></a>Métodos IAccessible
 
-A janela da área de trabalho dá suporte aos seguintes métodos de [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+A janela da área de trabalho dá suporte aos seguintes métodos [**IAccessible:**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
--   [**accHitTest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest)
--   [**accLocation**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation)
--   [**accNavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate)
--   [**accSelect**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accselect)
+-   [**Acchittest**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acchittest)
+-   [**Acclocation**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-acclocation)
+-   [**Accnavigate**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accnavigate)
+-   [**Accselect**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-accselect)
 
-## <a name="iaccessible-properties"></a>Propriedades de IAccessible
+## <a name="iaccessible-properties"></a>Propriedades IAccessible
 
-A janela da área de trabalho dá suporte às seguintes propriedades de [**IAccessible**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) :
+A janela da área de trabalho dá suporte às [**seguintes propriedades IAccessible:**](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 
 
 
 | Propriedade                                                                 | Comentários                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [**obter \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount) |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [**obter \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [**obter \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)             | A propriedade Name é "desktop".                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [**obter \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)             | A propriedade **role** é [**\_ \_ cliente do sistema de função**](object-roles.md).                                                                                                                                                                                                                                                                                                                                                                                |
-| [**obter \_ accSelection**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accselection)   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| [**obter \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)           | A propriedade de **estado** é uma combinação de um ou mais dos seguintes [valores](object-state-constants.md):[**estado \_ sistema \_ invisível**](object-state-constants.md) \| [**estado \_ sistema \_ indisponível**](object-state-constants.md) sistema de estado \| [**\_ \_ focalizado**](object-state-constants.md) sistema estado \| [**\_ \_ foco**](object-state-constants.md)<br/> |
+| [**get \_ accChildCount**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accchildcount) |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**get \_ accFocus**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accfocus)           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**get \_ accName**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accname)             | A propriedade Name é "Desktop".                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**get \_ accRole**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accrole)             | A **propriedade Role** é ROLE SYSTEM [**\_ \_ CLIENT.**](object-roles.md)                                                                                                                                                                                                                                                                                                                                                                                |
+| [**get \_ accSelection**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accselection)   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [**get \_ accState**](/windows/desktop/api/Oleacc/nf-oleacc-iaccessible-get_accstate)           | A **propriedade State** é uma combinação de um ou mais dos seguintes valores: STATE SYSTEM [**\_ \_ INVISIBLE**](object-state-constants.md) STATE [](object-state-constants.md)SYSTEM UNAVAILABLE STATE SYSTEM FOCUSED STATE SYSTEM \| [**\_ \_**](object-state-constants.md) \| [**\_ \_**](object-state-constants.md) \| [**\_ \_ FOCUSABLE**](object-state-constants.md)<br/> |
 
 
 
@@ -51,7 +51,7 @@ A janela da área de trabalho dá suporte às seguintes propriedades de [**IAcce
 
 <dl> <dt>
 
-[Interface IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
+[IAccessible Interface](/windows/desktop/api/oleacc/nn-oleacc-iaccessible)
 </dt> </dl>
 
  

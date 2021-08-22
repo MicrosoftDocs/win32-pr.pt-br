@@ -1,23 +1,23 @@
 ---
 title: Como criar um pacote do aplicativo (C++)
-description: Saiba como criar um pacote de aplicativo para um aplicativo do Windows usando a API de empacotamento.
+description: saiba como criar um pacote de aplicativo para um aplicativo Windows usando a API de empacotamento.
 ms.assetid: FD677D75-50D5-4228-891F-73B5F40679B0
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1f1808ebf57d4c7125f5509db68e22b78ce949f7
-ms.sourcegitcommit: 803f3ccd65bdefe36bd851b9c6e7280be9489016
+ms.openlocfilehash: 9ac2e471443acd22a39128c046590eed29d320b75bafee0a65cb6d37fb4fb8d9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "105764376"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119049054"
 ---
 # <a name="how-to-create-an-app-package-c"></a>Como criar um pacote do aplicativo (C++)
 
-Saiba como criar um pacote de aplicativo para um aplicativo do Windows usando a [API de empacotamento](interfaces.md).
+saiba como criar um pacote de aplicativo para um aplicativo Windows usando a [API de empacotamento](interfaces.md).
 
 Se você quiser criar um pacote de aplicativo de desktop manualmente, também poderá usar a ferramenta de MakeAppx.exe que utiliza a [API de empacotamento](interfaces.md). Consulte [app Packager (MakeAppx.exe)](make-appx-package--makeappx-exe-.md) para obter mais informações.
 
-Se você estiver usando o Visual Studio, é recomendável usar o assistente de empacotamento do Visual Studio para empacotar seu aplicativo. Para obter mais detalhes, consulte [empacotar um aplicativo UWP usando o Visual Studio](/windows/msix/package/packaging-uwp-apps).
+se você estiver usando Visual Studio, é recomendável usar o assistente de empacotamento de Visual Studio para empacotar seu aplicativo. Para obter mais detalhes, consulte [empacotar um aplicativo UWP usando Visual Studio](/windows/msix/package/packaging-uwp-apps).
 
 ## <a name="instructions"></a>Instruções
 
@@ -309,6 +309,6 @@ CoUninitialize();
 [**IAppxPackageWriter**](/windows/desktop/api/AppxPackaging/nn-appxpackaging-iappxpackagewriter)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
