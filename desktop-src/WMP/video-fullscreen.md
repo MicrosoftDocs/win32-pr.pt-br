@@ -1,9 +1,9 @@
 ---
-title: VÍDEO. tela inteira
+title: VIDEO.fullScreen
 description: O atributo fullScreen especifica ou recupera um valor que indica se o vídeo é exibido no modo de tela inteira.
 ms.assetid: de74d95a-31a2-4f65-811c-4e8018ee484a
 keywords:
-- VÍDEO. tela inteira do Windows Media Player
+- Video.fullScreen Windows Media Player
 topic_type:
 - apiref
 api_name:
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 5c27fa1bde6437b55689494751410145995862d8
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: e8150843ab14148d398b11cba82aa52711621c15962976ca37d5332a6ae58f24
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105765781"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465686"
 ---
-# <a name="videofullscreen"></a>VÍDEO. tela inteira
+# <a name="videofullscreen"></a>VIDEO.fullScreen
 
-O atributo **fullscreen** especifica ou recupera um valor que indica se o vídeo é exibido no modo de tela inteira.
+O **atributo fullScreen** especifica ou recupera um valor que indica se o vídeo é exibido no modo de tela inteira.
 
 ``` syntax
         elementID.fullScreen
@@ -29,13 +29,13 @@ O atributo **fullscreen** especifica ou recupera um valor que indica se o vídeo
 
 ## <a name="possible-values"></a>Valores possíveis
 
-Esse atributo é um **booliano** de leitura/gravação.
+Esse atributo é um booliana **de leitura/gravação.**
 
 
 
 | Valor | Descrição                                          |
 |-------|------------------------------------------------------|
-| true  | O vídeo é exibido no modo de tela inteira.                  |
+| true  | Vídeo é exibido no modo de tela inteira.                  |
 | false | Padrão. O vídeo não é exibido no modo de tela inteira. |
 
 
@@ -44,7 +44,7 @@ Esse atributo é um **booliano** de leitura/gravação.
 
 ## <a name="remarks"></a>Comentários
 
-Essa propriedade pode ser especificada somente em tempo de execução, após o carregamento de um arquivo. Portanto, ele deve ser definido dentro de um manipulador de eventos de script. O botão de escape é usado para retornar à exibição normal.
+Essa propriedade pode ser especificada somente em tempo de executar, depois que um arquivo tiver sido carregado. Portanto, ele deve ser definido dentro de um manipulador de eventos de script. O botão de escape é usado para retornar à exibição normal.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Essa propriedade pode ser especificada somente em tempo de execução, após o c
 
 | Requisito | Valor |
 |--------------------|------------------------------------------------------|
-| Versão<br/> | Windows Media Player versão 7,0 ou posterior<br/> |
+| Versão<br/> | Windows Media Player versão 7.0 ou posterior<br/> |
 
 
 
@@ -63,13 +63,13 @@ Essa propriedade pode ser especificada somente em tempo de execução, após o c
 [**Elemento VIDEO**](video-element.md)
 </dt> <dt>
 
-[**VÍDEO. maintainAspectRatio**](video-maintainaspectratio.md)
+[**VIDEO.maintainAspectRatio**](video-maintainaspectratio.md)
 </dt> <dt>
 
-[**VÍDEO. shrinkToFit**](video-shrinktofit.md)
+[**VIDEO.shrinkToFit**](video-shrinktofit.md)
 </dt> <dt>
 
-[**VÍDEO. stretchToFit**](video-stretchtofit.md)
+[**VIDEO.stretchToFit**](video-stretchtofit.md)
 </dt> </dl>
 
  

@@ -13,12 +13,12 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: bd12d7cd5b79e38260e671bf1408304390985dac
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 520fb0d50c503da1fcacbd7fef8469e483f030b3567f229a1ca442f62d0d72ff
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108109304"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531136"
 ---
 # <a name="requeststatechange-method-of-the-msvm_virtualsystemreferencepointexportjob-class"></a>Método RequestStateChange da classe Msvm \_ VirtualSystemReferencePointExportJob
 
@@ -171,7 +171,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10, versão 1703\]<br/>                                               |
+| Cliente mínimo com suporte<br/> | Windows 10, \[ somente aplicativos da área de trabalho da versão 1703\]<br/>                                               |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
 | Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
 | MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
@@ -179,7 +179,7 @@ Retorna um 0 em caso de êxito; caso contrário, retornará um erro.
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

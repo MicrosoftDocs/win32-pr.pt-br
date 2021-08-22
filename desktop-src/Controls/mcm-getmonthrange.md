@@ -3,7 +3,7 @@ title: Mensagem de MCM_GETMONTHRANGE (commctrl. h)
 description: Recupera informações de data (usando estruturas SYSTEMTIME) que representam os limites altos e baixos da exibição de um controle de calendário mensal. Você pode enviar essa mensagem explicitamente ou usando a macro calendário mensal \_ GetMonthRange.
 ms.assetid: f50ac4b7-1f58-4639-8c78-341bb33db3c3
 keywords:
-- Controles de MCM_GETMONTHRANGE de mensagens do Windows
+- controles de Windows de mensagem de MCM_GETMONTHRANGE
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 022ca7e05cc0c69cd32f6ad92531420cdaed7c7a
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: bc55f9732199f2e6e031248003c6dcad4abe8cb713182081666cfbee6a4ce50b
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105753963"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119319576"
 ---
 # <a name="mcm_getmonthrange-message"></a>\_Mensagem MCM GETMONTHRANGE
 
@@ -54,7 +54,7 @@ Ponteiro para uma matriz de dois elementos de estruturas [**SYSTEMTIME**](/windo
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retorna um valor INT que representa o intervalo, em meses, estendido pelos dois limites retornados em *lParam*.
 
@@ -64,8 +64,8 @@ Retorna um valor INT que representa o intervalo, em meses, estendido pelos dois 
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
 | parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 

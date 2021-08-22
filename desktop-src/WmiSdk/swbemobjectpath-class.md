@@ -2,7 +2,7 @@
 description: A propriedade Class do objeto SWbemObjectPath é o nome da classe que faz parte do caminho do objeto.
 ms.assetid: 60123963-31be-4112-9d06-611b4c599fd4
 ms.tgt_platform: multiple
-title: Propriedade SWbemObjectPath. Class (Wbemdisp. h)
+title: Propriedade SWbemObjectPath.Class (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -17,20 +17,20 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: ec4b28e5ec50e200f4f385272981fd21df74825d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 4a838ca8aba688d0aff8dd10f08bf0620c17ce1a76a7718d96ec84d4525c5b54
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105815546"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503946"
 ---
-# <a name="swbemobjectpathclass-property"></a>Propriedade SWbemObjectPath. Class
+# <a name="swbemobjectpathclass-property"></a>Propriedade SWbemObjectPath.Class
 
-A propriedade **Class** do objeto [**SWbemObjectPath**](swbemobjectpath.md) é o nome da classe que faz parte do caminho do objeto.
+A **propriedade** Class do [**objeto SWbemObjectPath**](swbemobjectpath.md) é o nome da classe que faz parte do caminho do objeto.
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="syntax"></a>Syntax
 
@@ -51,11 +51,11 @@ SWbemObjectPath.Class As String
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMOBJECTPATH CLSID<br/>                                                       |
-| IID<br/>                      | ISWbemObjectPath de IID \_<br/>                                                        |
+| CLSID<br/>                    | CLSID \_ SWbemObjectPath<br/>                                                       |
+| IID<br/>                      | IID \_ ISWbemObjectPath<br/>                                                        |
 
 
 

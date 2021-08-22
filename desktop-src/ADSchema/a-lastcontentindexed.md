@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 34d2d1c9432a650845229b05e04eb22079e87e10
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 7913490178de46843d31f1cefb08e363228a7b7727d28453e975f89de4fa610e
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103824989"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119302266"
 ---
 # <a name="last-content-indexed-attribute"></a>Atributo indexado do último conteúdo
 
@@ -58,7 +58,7 @@ A hora em que este volume foi indexado pelo último conteúdo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -79,7 +79,7 @@ A hora em que este volume foi indexado pelo último conteúdo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -100,7 +100,7 @@ A hora em que este volume foi indexado pelo último conteúdo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -121,7 +121,7 @@ A hora em que este volume foi indexado pelo último conteúdo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -142,7 +142,7 @@ A hora em que este volume foi indexado pelo último conteúdo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |
@@ -163,7 +163,7 @@ A hora em que este volume foi indexado pelo último conteúdo.
 | ID do link                | \-                                    |
 | MAPI-Id                | \-                                    |
 | System-Only            | Falso                                 |
-| É de valor único       | True                                  |
+| É de valor único       | Verdadeiro                                  |
 | É indexado             | Falso                                 |
 | No catálogo global      | Falso                                 |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                          |

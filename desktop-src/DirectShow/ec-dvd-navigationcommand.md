@@ -1,7 +1,7 @@
 ---
-description: Enviado quando o navegador de DVD processa um comando de navegação de DVD.
+description: Enviado quando o Navegador de DVD processa um comando de navegação de DVD.
 ms.assetid: 95e502b6-330f-4bc7-8adc-851913987370
-title: EC_DVD_NavigationCommand (Dvdevcode. h)
+title: EC_DVD_NavigationCommand (Dvdevcode.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,38 +13,38 @@ api_type:
 - HeaderDef
 api_location:
 - dvdevcode.h
-ms.openlocfilehash: e81dbf108868cbaec4c44a436f2c8271bb5f282a
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 6fbca42d3a9f0056bfd040b49e1426275a71bd7e6aaa8a71032389ab636f4cfe
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105751469"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119303356"
 ---
-# <a name="ec_dvd_navigationcommand"></a>\_NavigationCommand de DVD do EC \_
+# <a name="ec_dvd_navigationcommand"></a>Navegação \_ de DVD de \_ ECCommand
 
-Enviado quando o [navegador de DVD](dvd-navigator-filter.md) processa um comando de navegação de DVD.
+Enviado quando o Navegador [de DVD](dvd-navigator-filter.md) processa um comando de navegação de DVD.
 
 ## <a name="parameters"></a>Parâmetros
 
 <dl> <dt>
 
-<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*lParam1*
+<span id="lParam1"></span><span id="lparam1"></span><span id="LPARAM1"></span>*Lparam1*
 </dt> <dd>
 
-Os menores 32 bits do comando de navegação bruto.
+Os 32 bits inferiores do comando de navegação bruto.
 
 </dd> <dt>
 
 <span id="lParam2"></span><span id="lparam2"></span><span id="LPARAM2"></span>*lParam2*
 </dt> <dd>
 
-Os bits superiores de 32 do comando de navegação bruto.
+Os 32 bits superiores do comando de navegação bruto.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Esse evento é desabilitado por padrão. Para habilitar esse evento, chame [**IDvdControl2:: SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) e defina a opção **DVD \_ EnableLoggingEvents** como **true**.
+Esse evento está desabilitado por padrão. Para habilitar esse evento, chame [**IDvdControl2::SetOption**](/windows/desktop/api/Strmif/nf-strmif-idvdcontrol2-setoption) e de definido a **opção DVD \_ EnableLoggingEvents** como **TRUE.**
 
 ## <a name="requirements"></a>Requisitos
 
@@ -52,7 +52,7 @@ Esse evento é desabilitado por padrão. Para habilitar esse evento, chame [**ID
 
 | Requisito | Valor |
 |-------------------|----------------------------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>Dvdevcode. h (incluir DShow. h)</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>Dvdevcode.h (inclua Dshow.h)</dt> </dl> |
 
 
 
@@ -63,10 +63,10 @@ Esse evento é desabilitado por padrão. Para habilitar esse evento, chame [**ID
 [Aplicativos de DVD](dvd-applications.md)
 </dt> <dt>
 
-[Códigos de notificação de eventos de DVD](dvd-notification-codes.md)
+[Códigos de notificação de evento de DVD](dvd-notification-codes.md)
 </dt> <dt>
 
-[Notificação de eventos no DirectShow](event-notification-in-directshow.md)
+[Notificação de eventos DirectShow](event-notification-in-directshow.md)
 </dt> </dl>
 
  

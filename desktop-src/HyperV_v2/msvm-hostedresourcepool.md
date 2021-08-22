@@ -1,7 +1,7 @@
 ---
-description: Representa uma especialização da Associação de componente do sistema que estabelece que o pool de recursos é definido no contexto do sistema.
+description: Representa uma especialização da associação de componentes do sistema que estabelece que o pool de recursos é definido no contexto do sistema.
 ms.assetid: 72b68687-2b5f-4fef-bdca-a5c0bbfa3564
-title: Classe Msvm_HostedResourcePool
+title: Msvm_HostedResourcePool classe
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -15,18 +15,18 @@ api_type:
 - DllExport
 api_location:
 - vmms.exe
-ms.openlocfilehash: d64488a845e8d51bfe27829b01ebcf0ac7d944c6
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce61d5ee2c0b676e9c4ab6099bd592533e7821ae5cd529499c111f4c5349221e
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103826865"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531276"
 ---
-# <a name="msvm_hostedresourcepool-class"></a>\_Classe Msvm HostedResourcePool
+# <a name="msvm_hostedresourcepool-class"></a>Classe \_ HostedResourcePool Msvm
 
-Representa uma especialização da Associação de componente do sistema que estabelece que o pool de recursos é definido no contexto do sistema.
+Representa uma especialização da associação de componentes do sistema que estabelece que o pool de recursos é definido no contexto do sistema.
 
-A sintaxe a seguir é simplificada formato MOF código (MOF) e inclui todas as propriedades herdadas.
+A sintaxe a seguir é simplificada Managed Object Format código MOF e inclui todas as propriedades herdadas.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -41,17 +41,17 @@ class Msvm_HostedResourcePool : CIM_SystemComponent
 
 ## <a name="members"></a>Membros
 
-A classe **Msvm \_ HostedResourcePool** tem estes tipos de membros:
+A **classe \_ HostedResourcePool do Msvm** tem estes tipos de membros:
 
 -   [Propriedades](#properties)
 
 ### <a name="properties"></a>Propriedades
 
-A classe **Msvm \_ HostedResourcePool** tem essas propriedades.
+A **classe \_ HostedResourcePool Msvm** tem essas propriedades.
 
 <dl> <dt>
 
-**GroupComponent**
+**Groupcomponent**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **[ **Msvm \_ ComputerSystem**](msvm-computersystem.md)**
@@ -60,7 +60,7 @@ Tipo de dados: **[ **Msvm \_ ComputerSystem**](msvm-computersystem.md)**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**agregação**](/windows/desktop/WmiSdk/standard-qualifiers), [**min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("GroupComponent"), [**Aggregate**](/windows/desktop/WmiSdk/standard-qualifiers), [**Min**](/windows/desktop/WmiSdk/standard-qualifiers) (1), [**Max**](/windows/desktop/WmiSdk/standard-qualifiers) (1)
 </dt> </dl>
 
 O sistema pai na associação.
@@ -70,13 +70,13 @@ O sistema pai na associação.
 **PartComponent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **[ **CIM \_ ResourcePool**](/previous-versions//cc136903(v=vs.85))**
+Tipo de dados: **[ **\_ ResourcePool cim**](/previous-versions//cc136903(v=vs.85))**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**override**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
+Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("PartComponent")
 </dt> </dl>
 
 O pool de recursos que é um componente do sistema.
@@ -89,10 +89,10 @@ O pool de recursos que é um componente do sistema.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -26,12 +26,12 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 474ed77a5309da4b48107bcb5477ad9914563709
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 969562ad81147178470e531da0cb1669e32709f3624c4d25fe5ea7f6bce68e95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105813771"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119109811"
 ---
 # <a name="jet_indexlistcolumnidcpage-property"></a>Propriedade JET_INDEXLIST. columnidcPage
 
@@ -40,7 +40,7 @@ Obtém o columnid da coluna na tabela temporária que armazena o número de pág
 **Namespace:**  [Microsoft. ISAM. ESENT. Interop](./microsoft.isam.esent.interop-namespace.md)  
 **Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
 
-## <a name="syntax"></a>Sintaxe
+## <a name="syntax"></a>Syntax
 
 ``` vb
 'Declaration

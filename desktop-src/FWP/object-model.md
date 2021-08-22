@@ -1,19 +1,19 @@
 ---
 title: Modelo de Objeto
-description: A tabela a seguir lista os tipos de objeto que podem ser manipulados por meio de vários conjuntos de API fornecidos pela WFP (Windows Filtering Platform).
+description: a tabela a seguir lista os tipos de objeto que podem ser manipulados por meio de vários conjuntos de API fornecidos pelo Windows a plataforma de filtragem (WFP).
 ms.assetid: 6931583f-785c-4e27-b5e4-d185d23a54ee
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: aa90b4757a39617616c6f83b6b79fe322b2e64c8
-ms.sourcegitcommit: 60ad94096619da5476f9bbcd4cc231b40b6f5358
+ms.openlocfilehash: 12acbb2ece5049a8c9bf19bb3796be88f4fed0fbba8d46d75b9d41e206522ce0
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "104007156"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119255696"
 ---
 # <a name="object-model"></a>Modelo de Objeto
 
-A tabela a seguir lista os tipos de objeto que podem ser manipulados por meio de vários conjuntos de API fornecidos pela WFP (Windows Filtering Platform).
+a tabela a seguir lista os tipos de objeto que podem ser manipulados por meio de vários conjuntos de API fornecidos pelo Windows a plataforma de filtragem (WFP).
 
 
 
@@ -67,7 +67,7 @@ A tabela a seguir lista os tipos de objeto que podem ser manipulados por meio de
 <td><ul>
 <li>Peso</li>
 </ul></td>
-<td>A subcamada de túnel IPsec<br/></td>
+<td>a subcamada de Tunnel IPsec<br/></td>
 </tr>
 <tr class="odd">
 <td>Provedor</td>

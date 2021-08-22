@@ -1,8 +1,8 @@
 ---
-description: O método SWbemRefresher. Refresh atualiza todos os itens contidos no objeto SWbemRefresher. Objeto SWbemRefresher.
+description: O método SWbemRefresher.Refresh atualiza todos os itens contidos no objeto SWbemRefresher. Objeto SWbemRefresher.
 ms.assetid: 85a4777a-4be7-44f2-b7a6-e18b5e57f7af
 ms.tgt_platform: multiple
-title: Método SWbemRefresher. Refresh (Wbemdisp. h)
+title: Método SWbemRefresher.Refresh (Wbemdisp.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -16,18 +16,18 @@ api_type:
 - COM
 api_location:
 - Wbemdisp.dll
-ms.openlocfilehash: d8b2522227041858770c7256d7d2520cc661948e
-ms.sourcegitcommit: c16214e53680dc71d1c07111b51f72b82a4512d8
+ms.openlocfilehash: da92a9bc0de6667b80a74945adb23f1a4f5e4b18e2d614ec130990f3bcddaa69
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "105768213"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119503286"
 ---
-# <a name="swbemrefresherrefresh-method"></a>Método SWbemRefresher. Refresh
+# <a name="swbemrefresherrefresh-method"></a>Método SWbemRefresher.Refresh
 
-O método **SWbemRefresher. Refresh** atualiza todos os itens contidos no objeto [**SWbemRefresher**](swbemrefresher.md) .
+O **método SWbemRefresher.Refresh** atualiza todos os itens contidos no [**objeto SWbemRefresher.**](swbemrefresher.md)
 
-Para obter uma explicação dessa sintaxe, consulte [convenções de documento para a API de script](document-conventions-for-the-scripting-api.md).
+Para uma explicação dessa sintaxe, consulte [Convenções de documento para a API de Script](document-conventions-for-the-scripting-api.md).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,14 +44,14 @@ SWbemRefresher.Refresh( _
 
 <dl> <dt>
 
-*iFlags* \[ adicional\]
+*iFlags* \[ Opcional\]
 </dt> <dd>
 
 Os sinalizadores devem ser definidos como 0 (zero).
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método não retorna um valor.
 
@@ -63,11 +63,11 @@ Esse método não retorna um valor.
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| parâmetro<br/>                   | <dl> <dt>Wbemdisp. h</dt> </dl>   |
-| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp. tlb</dt> </dl> |
+| Cabeçalho<br/>                   | <dl> <dt>Wbemdisp.h</dt> </dl>   |
+| Biblioteca de tipos<br/>             | <dl> <dt>Wbemdisp.tlb</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Wbemdisp.dll</dt> </dl> |
-| CLSID<br/>                    | \_SWBEMREFRESHER CLSID<br/>                                                        |
-| IID<br/>                      | ISWbemRefresher de IID \_<br/>                                                         |
+| CLSID<br/>                    | CLSID \_ SWbemRefresher<br/>                                                        |
+| IID<br/>                      | IID \_ ISWbemRefresher<br/>                                                         |
 
 
 

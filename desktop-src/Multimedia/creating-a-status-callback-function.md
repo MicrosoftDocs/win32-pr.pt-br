@@ -6,16 +6,16 @@ keywords:
 - macro capSetCallbackOnStatus
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 592a5582bca37f644810f3496a39321d22da43be
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 3d7c7d8ed6adc409eef338213c8c4e1febf2ca0825e13d41735710938e733b97
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "104005241"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119497916"
 ---
 # <a name="creating-a-status-callback-function"></a>Criando uma função de retorno de chamada de status
 
-O exemplo a seguir é uma função de retorno de chamada de status simples. Registre esse retorno de chamada usando a macro [**capSetCallbackOnStatus**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonstatus) .
+O exemplo a seguir é uma função de retorno de chamada de status simples. Registre esse retorno de chamada usando a [**macro capSetCallbackOnStatus.**](/windows/desktop/api/Vfw/nf-vfw-capsetcallbackonstatus)
 
 
 ```C++
@@ -53,12 +53,12 @@ LRESULT PASCAL StatusCallbackProc(HWND hWnd, int nID,
 
 <dl> <dt>
 
-[Usando a captura de vídeo](using-video-capture.md)
+[Usando a Captura de Vídeo](using-video-capture.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 
 
 
 

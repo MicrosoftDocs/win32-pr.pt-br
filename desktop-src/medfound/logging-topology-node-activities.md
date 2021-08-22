@@ -1,27 +1,27 @@
 ---
-description: Registrando atividades do nó de topologia
+description: Registrando atividades de nó de topologia
 ms.assetid: 853b3900-1214-43b9-bf0e-e45c1159c5f1
-title: Registrando atividades do nó de topologia
+title: Registrando atividades de nó de topologia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 327ca83d0513b97d053e27388bd0f2a418dfb253
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 65b2325b7f300ac7ebc9b11e442169ad81f5769a8b54ba0ecf4537d637a9e7cd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104010636"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119465516"
 ---
-# <a name="logging-topology-node-activities"></a>Registrando atividades do nó de topologia
+# <a name="logging-topology-node-activities"></a>Registrando atividades de nó de topologia
 
-TopoEdit fornece a opção para coletar informações de log para um nó de transformação ou um nó de saída de uma topologia.
+TopEdit fornece a opção de coletar informações de log para um nó de transformação ou um nó de saída de uma topologia.
 
-## <a name="to-setup-logging"></a>Para configurar o log
+## <a name="to-setup-logging"></a>Para configurar o registro em log
 
-1.  No **painel topologia**, selecione um nó de transformação ou um nó de saída clicando nele.
+1.  No Painel **de Topologia**, selecione um nó de transformação ou um nó de saída clicando nele.
 
-2.  No menu **ferramentas** , clique em **Spy selecione nó selecionado**.
+2.  No menu **Ferramentas,** clique em **Espiar Nó Selecionado.**
 
-Durante a compilação da topologia, todas as chamadas de método no nó selecionado são registradas em um arquivo de texto. Isso é salvo na pasta em que o arquivo de mídia está localizado. O arquivo de log é salvo com o nome do nó e o identificador do nó de topologia exclusivo. Isso garante que nenhum outro nó grave no log. Para obter o identificador programaticamente, chame [**IMFTopologyNode:: GetTopoNodeID**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-gettoponodeid).
+Durante a criação da topologia, todas as chamadas de método no nó selecionado são registradas em um arquivo de texto. Isso é salvo na pasta em que o arquivo de mídia está localizado. O arquivo de log é salvo com o nome do nó e o identificador de nó de topologia exclusivo. Isso garante que nenhum outro nó grava no log. Para obter o identificador programaticamente, chame [**IMFTopologyNode::GetTopoNodeID**](/windows/desktop/api/mfidl/nf-mfidl-imftopologynode-gettoponodeid).
 
 Veja a seguir um trecho de um arquivo de log.
 
@@ -63,7 +63,7 @@ Veja a seguir um trecho de um arquivo de log.
 
 <dl> <dt>
 
-[TopoEdit](topoedit.md)
+[TopEdit](topoedit.md)
 </dt> </dl>
 
  

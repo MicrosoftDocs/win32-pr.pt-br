@@ -4,12 +4,12 @@ ms.assetid: 6eadd648-bffb-4227-bdcd-cd733f692734
 title: Mensagem de MICROSOFT_TIP_OPENING_MSG (PenInputPanel. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 3f0938b8a00e39f54817b8ec52e86e00aae52111
-ms.sourcegitcommit: c8ec1ded1ffffc364d3c4f560bb2171da0dc5040
+ms.openlocfilehash: 0e183cc426cd5d73e52c6aaef007bc5579ceb3eb0f4ceaf3f9f4084677b7a556
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "105815549"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119335896"
 ---
 # <a name="microsoft_tip_opening_msg-message"></a>\_Mensagem do \_ msg de abertura do Microsoft Tip \_
 
@@ -33,7 +33,7 @@ Atualmente não usado, deve ser **nulo**.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Os aplicativos devem chamar [**DefWindowProc**](/windows/desktop/api/winuser/nf-winuser-defwindowproca) depois de manipular essa mensagem. Consulte **DefWindowProc** para obter informações sobre seus valores de retorno.
 
@@ -53,7 +53,7 @@ Essa notificação permite que você saiba quando o painel de entrada está abri
 | Requisito | Valor |
 |-------------------|--------------------------------------------------------------------------------------------|
 | Cliente<br/> | Windows Vista<br/>                                                                   |
-| parâmetro<br/> | <dl> <dt>PenInputPanel. h</dt> </dl> |
+| Cabeçalho<br/> | <dl> <dt>PenInputPanel. h</dt> </dl> |
 
 
 

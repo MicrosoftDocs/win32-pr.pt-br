@@ -1,6 +1,6 @@
 ---
-description: 'Saiba mais sobre a propriedade: JET_ERRINFOBASIC. rgCategoricalHierarchy'
-title: Propriedade JET_ERRINFOBASIC. rgCategoricalHierarchy (Microsoft. ISAM. ESENT. Interop. Windows8)
+description: 'Saiba mais sobre: JET_ERRINFOBASIC.rgCategoricalHierarchy'
+title: JET_ERRINFOBASIC.rgCategoricalHierarchy (Microsoft.Isam.Esent.Interop.Windows8)
 TOCTitle: 'rgCategoricalHierarchy property '
 ms:assetid: P:Microsoft.Isam.Esent.Interop.Windows8.JET_ERRINFOBASIC.rgCategoricalHierarchy
 ms:mtpsurl: https://msdn.microsoft.com/library/microsoft.isam.esent.interop.windows8.jet_errinfobasic.rgcategoricalhierarchy(v=EXCHG.10)
@@ -26,19 +26,19 @@ api_type:
 api_location:
 - Microsoft.Isam.Esent.Interop.dll
 ROBOTS: INDEX,FOLLOW
-ms.openlocfilehash: 37034ca35427c9470d69f5e90dd43a4640601574
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: a64c043ccd63cfc8c60bd89e38b1b2bfa4c3cbb3f300144c4a6d436e7c67f2fc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105785256"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119232746"
 ---
-# <a name="jet_errinfobasicrgcategoricalhierarchy-property"></a>Propriedade JET_ERRINFOBASIC. rgCategoricalHierarchy
+# <a name="jet_errinfobasicrgcategoricalhierarchy-property"></a>JET_ERRINFOBASIC.rgCategoricalHierarchy
 
 Obtém ou define a hierarquia de erros. A posição 0 é o nível mais alto na hierarquia e o restante é JET_errcatUnknown.
 
-**Namespace:**  [Microsoft. ISAM. ESENT. Interop. Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
-**Assembly:**  Microsoft. ISAM. ESENT. Interop (em Microsoft.Isam.Esent.Interop.dll)
+**Namespace:**  [Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)  
+**Assembly:**  Microsoft.Isam.Esent.Interop (em Microsoft.Isam.Esent.Interop.dll)
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -62,14 +62,14 @@ public JET_ERRCAT[] rgCategoricalHierarchy { get; set; }
 
 #### <a name="property-value"></a>Valor da propriedade
 
-Escreva \[\]  
+Tipo: \[\]  
 
 ## <a name="see-also"></a>Confira também
 
 #### <a name="reference"></a>Referência
 
-[Classe JET_ERRINFOBASIC](./jet-errinfobasic-class.md)
+[JET_ERRINFOBASIC classe](./jet-errinfobasic-class.md)
 
-[Membros do JET_ERRINFOBASIC](./jet-errinfobasic-members.md)
+[JET_ERRINFOBASIC membros](./jet-errinfobasic-members.md)
 
-[Namespace Microsoft. ISAM. ESENT. Interop. windows8](./microsoft.isam.esent.interop.windows8-namespace.md)
+[Namespace Microsoft.Isam.Esent.Interop.Windows8](./microsoft.isam.esent.interop.windows8-namespace.md)

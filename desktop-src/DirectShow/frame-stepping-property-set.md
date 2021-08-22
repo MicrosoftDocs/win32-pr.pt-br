@@ -4,20 +4,20 @@ ms.assetid: 01abe1fe-fc2f-44cb-9546-45a8d682a179
 title: Conjunto de propriedades de revisão do quadro
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: e0ccd79feda0e5e2e537390fe5598822fb3787f6
-ms.sourcegitcommit: 63753fcfb0afbbe5ec283fb8316e62c2dc950f66
+ms.openlocfilehash: 5ccddab4cd7f302dc850a4581ce8e70dcffc9cb6a4943c8f768a74c890edfb9a
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107908444"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564996"
 ---
 # <a name="frame-stepping-property-set"></a>Conjunto de propriedades de revisão do quadro
 
-Os decodificadores que implementam a busca precisa do quadro no Microsoft DirectShow devem implementar o \_ conjunto de propriedades am KSPROPSETID \_ FrameStep, que é usado em conjunto com a interface [**IVideoFrameStep**](/windows/desktop/api/Strmif/nn-strmif-ivideoframestep) .
+os decodificadores que implementam a busca precisa do quadro no Microsoft DirectShow devem implementar o \_ conjunto de propriedades AM KSPROPSETID \_ FrameStep, que é usado em conjunto com a interface [**IVideoFrameStep**](/windows/desktop/api/Strmif/nn-strmif-ivideoframestep) .
 
 
 
-| Label | Valor |
+| Rótulo | Valor |
 |-------------------|----------------------------|
 | GUID do Conjunto de Propriedades | \_KSPROPSETID \_ FrameStep |
 

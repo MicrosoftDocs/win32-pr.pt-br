@@ -1,10 +1,10 @@
 ---
-title: Change-RID-mestre estendido à direita
-description: Direito estendido necessário para alterar o proprietário relativo da função FSMO do mestre de identificação (RID).
+title: Direito estendido Change-Rid-Master
+description: Direito estendido necessário para alterar o proprietário da função FSMO mestre do RID (identificador relativo).
 ms.assetid: 6d726697-1841-4b9b-9d51-1b6c8d5df1b2
 ms.tgt_platform: multiple
 keywords:
-- Change-RID-mestre estendido esquema do AD
+- Esquema do AD estendido do Change-Rid-Master
 topic_type:
 - apiref
 api_name:
@@ -13,24 +13,24 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 2c184630836ea92d5d51ca34e9afd44cd05cfd02
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 12f18dc8a4ffe00cace69647dbb4f06b5e5a7c2b0dd8222c86827f3adb703926
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104163670"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119532596"
 ---
-# <a name="change-rid-master-extended-right"></a>Change-RID-mestre estendido à direita
+# <a name="change-rid-master-extended-right"></a>Direito estendido Change-Rid-Master
 
-Direito estendido necessário para alterar o proprietário relativo da função FSMO do mestre de identificação (RID).
+Direito estendido necessário para alterar o proprietário da função FSMO mestre do RID (identificador relativo).
 
 
 
 | Entrada | Valor |
 |--------------|--------------------------------------|
-| CN           | Change-RID-mestre                    |
-| Display-Name | Alterar mestre RID                    |
-| GUID de direitos  | d58d5f36-0a98-11d1-adbb-00c04fd8d5cd |
+| CN           | Change-Rid-Master                    |
+| Display-Name | Alterar Mestre de Rid                    |
+| RIGHTS-GUID  | d58d5f36-0a98-11d1-adbb-00c04fd8d5cd |
 
 
 
@@ -49,8 +49,8 @@ Direito estendido necessário para alterar o proprietário relativo da função 
 
 | Entrada | Valor |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Gerenciador de RID**](c-ridmanager.md)<br/> |
-| Localização-exibição-ID | 29                                             |
+| Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -60,8 +60,8 @@ Direito estendido necessário para alterar o proprietário relativo da função 
 
 | Entrada | Valor |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Gerenciador de RID**](c-ridmanager.md)<br/> |
-| Localização-exibição-ID | 29                                             |
+| Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -71,8 +71,8 @@ Direito estendido necessário para alterar o proprietário relativo da função 
 
 | Entrada | Valor |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Gerenciador de RID**](c-ridmanager.md)<br/> |
-| Localização-exibição-ID | 29                                             |
+| Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -82,8 +82,8 @@ Direito estendido necessário para alterar o proprietário relativo da função 
 
 | Entrada | Valor |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Gerenciador de RID**](c-ridmanager.md)<br/> |
-| Localização-exibição-ID | 29                                             |
+| Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -93,8 +93,8 @@ Direito estendido necessário para alterar o proprietário relativo da função 
 
 | Entrada | Valor |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Gerenciador de RID**](c-ridmanager.md)<br/> |
-| Localização-exibição-ID | 29                                             |
+| Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 
@@ -104,8 +104,8 @@ Direito estendido necessário para alterar o proprietário relativo da função 
 
 | Entrada | Valor |
 |-------------------------|------------------------------------------------|
-| Applies-To              | [**Gerenciador de RID**](c-ridmanager.md)<br/> |
-| Localização-exibição-ID | 29                                             |
+| Applies-To              | [**RID-Manager**](c-ridmanager.md)<br/> |
+| Localization-Display-ID | 29                                             |
 
 
 

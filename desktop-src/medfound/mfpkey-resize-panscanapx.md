@@ -4,12 +4,12 @@ ms.assetid: 1aed8614-d856-4885-80fe-c3f2bf3304ad
 title: Propriedade MFPKEY_RESIZE_PANSCANAPX (Wmcodecdsp. h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 37a30f1bb97e1c21b651f975b43ad8bf871ff066
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 22e127601764a9131a5dd494e3c8d6fddc2692106275ad5912bbfdd3b8026951
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105808252"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119463216"
 ---
 # <a name="mfpkey_resize_panscanapx-property"></a>MFPKEY \_ redimensionar \_ PANSCANAPX Propriedade
 
@@ -37,9 +37,9 @@ O valor é um número real de ponto fixo. A parte inteira do número é armazena
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows XP\]<br/>                                             |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                    |
-| parâmetro<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho XP\]<br/>                                             |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                    |
+| Cabeçalho<br/>                   | <dl> <dt>Wmcodecdsp. h</dt> </dl> |
 
 
 

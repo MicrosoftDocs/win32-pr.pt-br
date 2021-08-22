@@ -14,12 +14,12 @@ api_type:
 - COM
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: cce77ce076eb17132be6ed6908a49d1fcfc77f21
-ms.sourcegitcommit: 95685061d5b0333bbf9e6ebd208dde8190f97005
+ms.openlocfilehash: 088230f2b09089fafaa1fbe4cb67684a873c97d14d612801383222d011e1ecfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108091004"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119283736"
 ---
 # <a name="reset-method-of-the-cim_diskpartition-class"></a>Método Reset da classe CIM \_ DiskPartition
 
@@ -67,7 +67,7 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 
 
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Confira também
 
 <dl> <dt>
 

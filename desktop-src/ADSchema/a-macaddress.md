@@ -13,12 +13,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 17be059be5aec041436393f9c9f251d8f15556de
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 374eb0078c172fd51507891c7e4fea5cdf8ad1b15529b6a318edf8be38355ddc
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "104456135"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301486"
 ---
 # <a name="macaddress-attribute"></a>atributo macAddress
 
@@ -118,10 +118,10 @@ Contém o endereço MAC na notação de hexadecimal máxima separada por dois-po
 | ID do link                | \-                                                  |
 | MAPI-Id                | \-                                                  |
 | System-Only            | Falso                                               |
-| É de valor único       | Falso                                               |
+| Tem valor único       | Falso                                               |
 | É indexado             | Falso                                               |
-| No catálogo global      | Falso                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                        |
+| No Catálogo Global      | Falso                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                        |
 | Range-Lower            | \-                                                  |
 | Range-Upper            | \-                                                  |
 | Search-Flags           | 0x00000000                                          |

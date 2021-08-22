@@ -4,35 +4,35 @@ ms.assetid: 349ea57f-dd25-4e33-bbdf-63a320eae3a0
 title: Usando uma fonte de estoque para desenhar texto
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 56a7e580175956185bcc26a7ebbae8d46dfff078
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: e9bd140a931a13f6232235036fb7b9cf3de1a20505666e869f214219b7a60a95
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "103922498"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119468326"
 ---
 # <a name="using-a-stock-font-to-draw-text"></a>Usando uma fonte de estoque para desenhar texto
 
-O sistema fornece seis fontes de estoque. Uma fonte de ações é uma fonte lógica que um aplicativo pode obter chamando a função [GetStockObject](/windows/desktop/api/Wingdi/nf-wingdi-getstockobject) e especificando a fonte solicitada. A lista a seguir contém os valores que você pode especificar para obter uma fonte de estoque.
+O sistema fornece seis fontes de estoque. Uma fonte de estoque é uma fonte lógica que um aplicativo pode obter chamando a [função GetStockObject](/windows/desktop/api/Wingdi/nf-wingdi-getstockobject) e especificando a fonte solicitada. A lista a seguir contém os valores que você pode especificar para obter uma fonte de estoque.
 
 
 
 | Valor                 | Significado                                                                                                                                                                                                                                                                                         |
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| \_fonte fixa \_ ANSI     | Especifica uma fonte monospace com base no conjunto de caracteres do Windows. Uma fonte Courier normalmente é usada.                                                                                                                                                                                                |
-| \_fonte de var ANSI \_       | Especifica uma fonte proporcional com base no conjunto de caracteres do Windows. MS Sans Serif é normalmente usado.                                                                                                                                                                                              |
-| \_fonte padrão do dispositivo \_ | Especifica a fonte preferencial para o dispositivo especificado. Normalmente, essa é a fonte do sistema para dispositivos de vídeo; no entanto, para algumas impressoras de matriz de pontos, essa é uma fonte residente no dispositivo. (A impressão com essa fonte geralmente é mais rápida do que a impressão com uma fonte de bitmap baixada).    |
-| \_fonte fixa do OEM \_      | Especifica uma fonte monospace com base em um conjunto de caracteres OEM. Para computadores IBM e compatíveis, a fonte OEM é baseada no conjunto de caracteres do PC IBM.                                                                                                                                                 |
-| fonte do sistema \_          | Especifica a fonte do sistema. Essa é uma fonte proporcional baseada no conjunto de caracteres do Windows e é usada pelo sistema operacional para exibir títulos de janela, nomes de menu e texto nas caixas de diálogo. A fonte do sistema está sempre disponível. Outras fontes estarão disponíveis somente se tiverem sido instaladas. |
-| \_fonte fixa do sistema \_   | Especifica uma fonte monospace compatível com a fonte do sistema nas versões anteriores do Windows.                                                                                                                                                                                                        |
+| FONTE FIXA \_ ANSI \_     | Especifica uma fonte monospace com base no conjunto Windows caracteres. Normalmente, uma fonte Courier é usada.                                                                                                                                                                                                |
+| FONTE ANSI \_ VAR \_       | Especifica uma fonte proporcional com base no conjunto Windows caracteres. O MS Sans Serif normalmente é usado.                                                                                                                                                                                              |
+| FONTE \_ PADRÃO DO \_ DISPOSITIVO | Especifica a fonte preferencial para o dispositivo especificado. Normalmente, essa é a fonte Do sistema para dispositivos de exibição; no entanto, para algumas impressoras de matriz de ponto, essa é uma fonte que é residente no dispositivo. (Imprimir com essa fonte geralmente é mais rápido do que imprimir com uma fonte de bitmap baixada).    |
+| FONTE \_ FIXA OEM \_      | Especifica uma fonte de monospace com base em um conjunto de caracteres OEM. Para computadores IBM e compatíveis, a fonte OEM é baseada no conjunto de caracteres do COMPUTADOR IBM.                                                                                                                                                 |
+| FONTE DO \_ SISTEMA          | Especifica a fonte System. Essa é uma fonte proporcional com base no conjunto Windows caracteres e é usada pelo sistema operacional para exibir títulos de janela, nomes de menu e texto nas caixas de diálogo. A fonte System está sempre disponível. Outras fontes só estarão disponíveis se elas foram instaladas. |
+| FONTE \_ FIXA DO \_ SISTEMA   | Especifica uma fonte monospace compatível com a fonte System nas versões anteriores do Windows.                                                                                                                                                                                                        |
 
 
 
  
 
-Para obter mais informações sobre fontes, consulte [about fonts](about-fonts.md).
+Para obter mais informações sobre fontes, consulte [Sobre fontes](about-fonts.md).
 
-O exemplo a seguir recupera um identificador para a fonte de ações da variável, seleciona-a em um contexto de dispositivo e, em seguida, grava uma cadeia de caracteres usando essa fonte:
+O exemplo a seguir recupera um alça para a fonte de estoque variável, seleciona-o em um contexto de dispositivo e, em seguida, grava uma cadeia de caracteres usando essa fonte:
 
 
 ```C++
@@ -54,7 +54,7 @@ if (hOldFont = (HFONT)SelectObject(hdc, hFont))
 
 
 
-Se outras fontes de estoque não estiverem disponíveis, [GetStockObject](/windows/desktop/api/Wingdi/nf-wingdi-getstockobject) retornará um identificador para a fonte do sistema (fonte do sistema \_ ). Você deve usar fontes de estoque somente se o modo de mapeamento para o contexto do dispositivo do seu aplicativo for um \_ texto mm.
+Se outras fontes de estoque não estão disponíveis, [GetStockObject](/windows/desktop/api/Wingdi/nf-wingdi-getstockobject) retorna um handle para a fonte System (SYSTEM \_ FONT). Você deve usar fontes de estoque somente se o modo de mapeamento para o contexto do dispositivo do aplicativo for MM \_ TEXT.
 
  
 

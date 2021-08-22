@@ -45,12 +45,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: cebab65cc067018b3a57aa5f6890fffad1cb4c7a
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 38f41b28689ac8ae4bebc29248e27d8e6b17eae1b265237acd91ed2b03d97c9a
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105769053"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119321596"
 ---
 # <a name="cim_directory-class"></a>\_Classe de diretório CIM
 
@@ -127,7 +127,7 @@ A classe de **\_ diretório CIM** tem esses métodos.
 | [**Excluir**](delete-method-in-class-cim-directory.md)                                           | Exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Não implementado pelo WMI.<br/>                                                 |
 | [**DeleteEx**](deleteex-method-in-class-cim-directory.md)                                       | Exclui o arquivo lógico (ou diretório) especificado no caminho do objeto. Não implementado pelo WMI.<br/>                                                 |
 | [**GetEffectivePermission**](geteffectivepermission-method-in-class-cim-directory.md)           | Determina se o chamador tem as permissões agregadas especificadas pelo argumento de **permissão** . Não implementado pelo WMI.<br/>                |
-| [**Renomear**](rename-method-in-class-cim-directory.md)                                           | Renomeia o arquivo lógico (ou diretório) especificado no caminho do objeto. Não implementado pelo WMI.<br/>                                                 |
+| [**Nome**](rename-method-in-class-cim-directory.md)                                           | Renomeia o arquivo lógico (ou diretório) especificado no caminho do objeto. Não implementado pelo WMI.<br/>                                                 |
 | [**TakeOwnerShip**](takeownership-method-in-class-cim-directory.md)                             | Obtém a propriedade do arquivo lógico especificado no caminho do objeto. Não implementado pelo WMI.<br/>                                                   |
 | [**TakeOwnerShipEx**](takeownershipex-method-in-class-cim-directory.md)                         | Obtém a propriedade do arquivo lógico especificado no caminho do objeto. Não implementado pelo WMI.<br/>                                                   |
 | [**Descompactar**](uncompress-method-in-class-cim-directory.md)                                   | Descompacta o arquivo lógico (ou diretório) especificado no caminho do objeto. Não implementado pelo WMI.<br/>                                            |
@@ -540,7 +540,7 @@ Exemplo: "mydatafile"
 
 </dd> <dt>
 
-**Tamanho**
+**FileSize**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **UInt64**
@@ -560,7 +560,7 @@ Para obter mais informações sobre como usar valores de **UInt64** em scripts, 
 
 </dd> <dt>
 
-**Talvez**
+**FileType**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -722,7 +722,7 @@ Nome herdado que serve como uma chave de uma instância de arquivo lógico em um
 
 Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
 
-Exemplo: "C: \\ Windows \\ System \\win.ini"
+exemplo: "C: \\ Windows do \\ sistema \\win.ini"
 
 </dd> <dt>
 
@@ -920,8 +920,8 @@ Esta documentação é derivada das descrições da classe CIM publicadas pela D
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 

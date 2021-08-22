@@ -45,12 +45,12 @@ api_type:
 - DllExport
 api_location:
 - CIMWin32.dll
-ms.openlocfilehash: 53c1e953c9c1348a133cf4755ab04f6024c42034
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: bda0a1a07de4411b9a8c683fb2c7e84156b658361df4f2eaf3aa5709c6d11a95
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104501065"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119504286"
 ---
 # <a name="win32_bios-class"></a>\_Classe do Win32 BIOS
 
@@ -559,7 +559,7 @@ Qualificadores: [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (
 
 Descrição do objeto.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -572,14 +572,14 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| versão principal do firmware do controlador do tipo SMBIOS 0 \| ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 Embedded Controller Firmware Major \| Release")
 </dt> </dl>
 
-A versão principal do firmware do controlador incorporado.
+A versão principal do firmware do controlador inserido.
 
-Esse valor é proveniente do membro de **liberação principal do firmware do controlador incorporado** da estrutura de **informações do BIOS** nas informações do SMBIOS.
+Esse valor vem do membro **versão principal** do firmware do controlador inserido da estrutura informações do **BIOS** nas informações do SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows 10 e do Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não é suportada antes Windows 10 e Windows Server 2016.
 
 </dd> <dt>
 
@@ -592,14 +592,14 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| versão secundária do firmware do controlador do tipo SMBIOS 0 \| ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 Embedded Controller Firmware Minor \| Release")
 </dt> </dl>
 
-A versão secundária do firmware do controlador incorporado.
+A versão secundária do firmware do controlador inserido.
 
-Esse valor é proveniente do membro de **liberação secundária do firmware do controlador incorporado** da estrutura de **informações do BIOS** nas informações do SMBIOS.
+Esse valor vem do membro **versão secundária** do firmware do controlador inserido da estrutura informações **do BIOS** nas informações do SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows 10 e do Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não é suportada antes Windows 10 e Windows Server 2016.
 
 </dd> <dt>
 
@@ -612,46 +612,46 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informações do componente de software DMTF \| 2,7 ")
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Informações do componente de software DMTF \| \| 002.7")
 </dt> </dl>
 
-Identificador do fabricante para este elemento de software. Geralmente, essa será uma SKU (unidade de manutenção de estoque) ou um número de peça.
+Identificador do fabricante para esse elemento de software. Geralmente, isso será uma SKU (unidade de manutenção de estoque) ou um número de parte.
 
-Essa propriedade é herdada de [**CIM \_ softwareelement**](cim-softwareelement.md).
+Essa propriedade é herdada de [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **InstallableLanguages**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 13 \| idiomas instaláveis")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 13 \| Installable Languages")
 </dt> </dl>
 
-Número de idiomas disponíveis para instalação neste sistema. A linguagem pode determinar propriedades como a necessidade de texto Unicode e bidirecional.
+Número de idiomas disponíveis para instalação nesse sistema. O idioma pode determinar propriedades como a necessidade de Unicode e texto bidirecional.
 
 </dd> <dt>
 
 **InstallDate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,5 "), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) (" data de instalação ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.5"), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Data de instalação")
 </dt> </dl>
 
 Data e hora em que o objeto foi instalado. Essa propriedade não precisa de um valor para indicar que o objeto está instalado.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -664,32 +664,32 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informações do componente de software DMTF \| 2,6 ")
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (32), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. Informações do componente de software DMTF \| \| 002.6")
 </dt> </dl>
 
-Language Edition deste elemento de software. Os códigos de idioma definidos no ISO 639 devem ser usados. Onde o elemento software representa uma versão multilíngue ou internacional de um produto, a cadeia de caracteres "multilíngue" deve ser usada.
+Edição de linguagem deste elemento de software. Os códigos de idioma definidos no ISO 639 devem ser usados. Quando o elemento de software representa uma versão multilíngue ou internacional de um produto, a cadeia de caracteres "multilíngue" deve ser usada.
 
-Essa propriedade é herdada de [**CIM \_ softwareelement**](cim-softwareelement.md).
+Essa propriedade é herdada de [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **ListOfLanguages**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: matriz de **cadeia de caracteres**
+Tipo de dados: matriz **de cadeia de** caracteres
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| tipo 13 \| Language Strings")
+Qualificadores: [**MappingStrings ("Cadeias**](/windows/desktop/WmiSdk/standard-qualifiers) de caracteres de linguagem do tipo SMBIOS \| 13") \|
 </dt> </dl>
 
-Matriz de nomes de idiomas do BIOS instaláveis disponíveis.
+Matriz de nomes de idiomas disponíveis que podem ser instalados pelo BIOS.
 
 </dd> <dt>
 
-**Manufacturer**
+**Fabricante**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -698,14 +698,14 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|BIOS do sistema DMTF \| 1,2 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. SISTEMA DMTF \| BIOS \| 001.2")
 </dt> </dl>
 
-Fabricante deste elemento de software.
+Fabricante desse elemento de software.
 
-Esse valor é proveniente do membro do **fornecedor** da estrutura de **informações do BIOS** nas informações do SMBIOS.
+Esse valor vem do **membro Vendor** da estrutura de Informações **do BIOS** nas informações do SMBIOS.
 
-Essa propriedade é herdada de [**CIM \_ softwareelement**](cim-softwareelement.md).
+Essa propriedade é herdada de [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
@@ -718,12 +718,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
-Nome usado para identificar este elemento de software.
+Nome usado para identificar esse elemento de software.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 </dd> <dt>
 
@@ -736,49 +736,49 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**sistema \_ operacional CIM**](cim-operatingsystem.md).**OtherTypeDescription**")
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OtherTypeDescription**")
 </dt> </dl>
 
-Registra o tipo de fabricante e sistema operacional para um elemento de software quando a propriedade **TargetOperatingSystem** tem um valor de 1 (outro). Quando **TargetOperatingSystem** tem um valor de 1, **OtherTargetOS** deve ter um valor não nulo. Para todos os outros valores de **TargetOperatingSystem**, **OtherTargetOS** é **nulo**.
+Registra o fabricante e o tipo de sistema operacional para um elemento de software quando a **propriedade TargetOperatingSystem** tem um valor de 1 (Outro). Quando **TargetOperatingSystem** tem um valor de 1, **OtherTargetOS** deve ter um valor nãonull. Para todos os outros valores de **TargetOperatingSystem,** **OtherTargetOS** é **NULL.**
 
-Essa propriedade é herdada de [**CIM \_ softwareelement**](cim-softwareelement.md).
+Essa propriedade é herdada de [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **PrimaryBIOS**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|BIOS do sistema DMTF \| 1,9 ")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. SISTEMA DMTF \| BIOS \| 001.9")
 </dt> </dl>
 
-Se for **true**, esse é o BIOS primário do sistema de computador.
+Se **TRUE**, este é o BIOS primário do sistema de computador.
 
-Essa propriedade é herdada do [**CIM \_ bioselement**](cim-bioselement.md).
+Essa propriedade é herdada de [**CIM \_ BIOSElement.**](cim-bioselement.md)
 
 </dd> <dt>
 
-**Liberado**
+**Releasedate**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **DateTime**
+Tipo de dados: **datetime**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> </dl>
 
-Data de lançamento do BIOS do Windows no formato UTC (tempo Universal Coordenado) de AAAAMMDDHHMMSS. MMMMMM (+-) OOO.
+Data de lançamento do Windows BIOS no formato TEMPO UNIVERSAL COORDENADO (UTC) de AAAAMMDDHHMMSS. MMMMMM(+-)OOO.
 
-Esse valor é proveniente do membro de **data de lançamento do BIOS** da estrutura de **informações do BIOS** nas informações do SMBIOS.
+Esse valor vem do membro **Data de Lançamento do BIOS** da estrutura Informações do **BIOS** nas informações do SMBIOS.
 
 </dd> <dt>
 
-**SerialNumber**
+**Serialnumber**
 </dt> <dd> <dl> <dt>
 
 Tipo de dados: **cadeia de caracteres**
@@ -787,12 +787,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Componente DMTF \| 1,4 ")
+Qualificadores: [**Maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (64), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| ComponentID \| 001.4")
 </dt> </dl>
 
 Número de série atribuído do elemento de software.
 
-Essa propriedade é herdada de [**CIM \_ softwareelement**](cim-softwareelement.md).
+Essa propriedade é herdada de [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
@@ -805,19 +805,19 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| \| versão do SMBIOS do tipo 0")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 \| BIOS Version")
 </dt> </dl>
 
-Versão do BIOS conforme relatado pelo SMBIOS.
+Versão do BIOS conforme relatado por SMBIOS.
 
-Esse valor é proveniente do membro da **versão do BIOS** da estrutura de **informações do BIOS** nas informações do SMBIOS.
+Esse valor vem do membro **versão do BIOS** da estrutura de Informações **do BIOS** nas informações do SMBIOS.
 
 </dd> <dt>
 
 **SMBIOSMajorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -826,14 +826,14 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| CSMBios \| GetVersion")
 </dt> </dl>
 
-Número de versão principal do SMBIOS. Essa propriedade será **nula** se o Smbios não for encontrado.
+Número de versão principal do SMBIOS. Essa propriedade será **NULL** se SMBIOS não for encontrado.
 
 </dd> <dt>
 
 **SMBIOSMinorVersion**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -842,23 +842,23 @@ Tipo de acesso: Somente leitura
 Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| CSMBios \| GetVersion")
 </dt> </dl>
 
-Número de versão do SMBIOS secundário. Essa propriedade será **nula** se o Smbios não for encontrado.
+Número de versão do SMBIOS secundário. Essa propriedade será **NULL** se SMBIOS não for encontrado.
 
 </dd> <dt>
 
 **SMBIOSPresent**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **booliano**
+Tipo de dados: **booliana**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| CSMBios \| init")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| CSMBios \| Init")
 </dt> </dl>
 
-Se for **true**, o Smbios estará disponível neste sistema de computador.
+Se **for true,** o SMBIOS estará disponível neste sistema de computador.
 
 </dd> <dt>
 
@@ -871,19 +871,19 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
+Qualificadores: [**key**](/windows/desktop/WmiSdk/key-qualifier), [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (256)
 </dt> </dl>
 
 Identificador para este elemento de software; projetado para ser usado em conjunto com outras chaves para criar uma representação exclusiva dessa instância.
 
-Essa propriedade é herdada de [**CIM \_ softwareelement**](cim-softwareelement.md).
+Essa propriedade é herdada de [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> <dt>
 
 **SoftwareElementState**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
@@ -894,7 +894,7 @@ Qualificadores: [ **chave**](/windows/desktop/WmiSdk/key-qualifier)
 
 Estado de um elemento de software.
 
-Essa propriedade é herdada de [**CIM \_ softwareelement**](cim-softwareelement.md).
+Essa propriedade é herdada de [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 Os valores possíveis são.
 
@@ -923,7 +923,7 @@ Os valores possíveis são.
 
 <span id="Running"></span><span id="running"></span><span id="RUNNING"></span>
 
-**Em execução** (3)
+**Executando** (3)
 
 
 </dt> <dd></dd> </dl>
@@ -939,12 +939,12 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**maxlen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("status")
+Qualificadores: [**MaxLen**](/windows/desktop/WmiSdk/standard-qualifiers) (10), [**DisplayName**](/windows/desktop/WmiSdk/standard-qualifiers) ("Status")
 </dt> </dl>
 
-Status atual do objeto. Vários status de operação e não operacional podem ser definidos. Os status operacionais incluem: "OK", "degradado" e "Pred falha" (um elemento, como uma unidade de disco rígido habilitado para inteligente, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status não operacionais incluem: "erro", "Iniciando", "parando" e "serviço". O último, "Service", pode ser aplicado durante o espelhamento de espelho de um disco, recarregar uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros Estados.
+Status atual do objeto. Vários status operacionais e não operacionais podem ser definidos. Os status operacionais incluem: "OK", "Degradado" e "Pred Fail" (um elemento, como uma unidade de disco rígido habilitada para SMART, pode estar funcionando corretamente, mas prevendo uma falha em um futuro próximo). Os status nãooperacionais incluem: "Error", "Starting", "Stopping" e "Service". O último, "Serviço", pode ser aplicado durante o espelhamento de um disco, o recarregamento de uma lista de permissões de usuário ou outro trabalho administrativo. Nem todo esse trabalho está online, mas o elemento gerenciado não é "OK" nem em um dos outros estados.
 
-Essa propriedade é herdada do [**CIM \_ ManagedSystemElement**](cim-managedsystemelement.md).
+Essa propriedade é herdada de [**CIM \_ ManagedSystemElement.**](cim-managedsystemelement.md)
 
 Os valores possíveis são.
 
@@ -959,28 +959,28 @@ Os valores possíveis são.
 
 <span id="Error"></span><span id="error"></span><span id="ERROR"></span>
 
-**Erro** ("erro")
+**Erro** ("Erro")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Degraded"></span><span id="degraded"></span><span id="DEGRADED"></span>
 
-**Degradado** ("degradado")
+**Degradado** ("Degradado")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Unknown"></span><span id="unknown"></span><span id="UNKNOWN"></span>
 
-**Desconhecido** ("desconhecido")
+**Desconhecido** ("Desconhecido")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Pred_Fail"></span><span id="pred_fail"></span><span id="PRED_FAIL"></span>
 
-**Falha de Pred** ("Pred Fail")
+**Pred Fail** ("Pred Fail")
 
 
 </dt> <dd></dd> <dt>
@@ -994,42 +994,42 @@ Os valores possíveis são.
 
 <span id="Stopping"></span><span id="stopping"></span><span id="STOPPING"></span>
 
-**Parando** ("parando")
+**Parando** ("Parando")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Service"></span><span id="service"></span><span id="SERVICE"></span>
 
-**Serviço** ("serviço")
+**Serviço** ("Serviço")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Stressed"></span><span id="stressed"></span><span id="STRESSED"></span>
 
-**Sob estresse** ("sob estresse")
+**Stressed** ("Stressed")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="NonRecover"></span><span id="nonrecover"></span><span id="NONRECOVER"></span>
 
-Não **recuperar** ("Recover")
+**NonRecover** ("NonRecover")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="No_Contact"></span><span id="no_contact"></span><span id="NO_CONTACT"></span>
 
-**Sem contato** ("sem contato")
+**Sem contato** ("Sem contato")
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Lost_Comm"></span><span id="lost_comm"></span><span id="LOST_COMM"></span>
 
-**Perda de comunicação** ("perda de comunicação")
+**Perda de vírgula** ("comm perdida")
 
 
 </dt> <dd></dd> </dl>
@@ -1045,14 +1045,14 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| \| versão principal do BIOS do sistema do SMBIOS tipo 0")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 System \| BIOS Major Release")
 </dt> </dl>
 
 A versão principal do BIOS do sistema.
 
-Esse valor é proveniente do membro da **versão principal do BIOS do sistema** da estrutura de **informações do BIOS** nas informações do SMBIOS.
+Esse valor vem do membro **da Versão Principal do BIOS** do Sistema da estrutura de Informações do **BIOS** nas informações do SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows 10 e do Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não é suportada antes Windows 10 e Windows Server 2016.
 
 </dd> <dt>
 
@@ -1065,32 +1065,32 @@ Tipo de dados: **uint8**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) (" \| \| versão secundária do BIOS do sistema do tipo SMBIOS 0")
+Qualificadores: [**MappingStrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("SMBIOS \| Type 0 System \| BIOS Minor Release")
 </dt> </dl>
 
 A versão secundária do BIOS do sistema.
 
-Esse valor é proveniente do membro da **versão secundária do BIOS do sistema** da estrutura de **informações do BIOS** nas informações do SMBIOS.
+Esse valor vem do membro da Versão **Secundária do BIOS** do Sistema da estrutura de Informações **do BIOS** nas informações do SMBIOS.
 
-**Windows server 2012 R2, Windows 8.1, Windows server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows server 2008 e Windows Vista:** Não há suporte para essa propriedade antes do Windows 10 e do Windows Server 2016.
+**Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008 e Windows Vista:** Essa propriedade não é suportada antes Windows 10 e Windows Server 2016.
 
 </dd> <dt>
 
 **TargetOperatingSystem**
 </dt> <dd> <dl> <dt>
 
-Tipo de dados: **UInt16**
+Tipo de dados: **uint16**
 </dt> <dt>
 
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualifiers: [**Key**](/windows/desktop/WmiSdk/key-qualifier), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. \|Informações de componente de software DMTF \| 2,5 "), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) (" sistema [**\_ operacional CIM**](cim-operatingsystem.md).**OSType**")
+Qualificadores: [**chave**](/windows/desktop/WmiSdk/key-qualifier), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("MIF. DMTF \| Software Component Information \| 002.5"), [**ModelCorrespondence**](/windows/desktop/WmiSdk/standard-qualifiers) ("[**CIM \_ OperatingSystem**](cim-operatingsystem.md).**OSType**")
 </dt> </dl>
 
-Sistema operacional de destino do elemento de software proprietário.
+Sistema operacional de destino do elemento de software de propriedade.
 
-Essa propriedade é herdada de [**CIM \_ softwareelement**](cim-softwareelement.md).
+Essa propriedade é herdada de [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 Os valores possíveis são.
 
@@ -1105,7 +1105,7 @@ Os valores possíveis são.
 
 <span id="Other"></span><span id="other"></span><span id="OTHER"></span>
 
-**Outro** (1)
+**Outros** (1)
 
 
 </dt> <dd></dd> <dt>
@@ -1140,7 +1140,7 @@ Os valores possíveis são.
 
 <span id="Digital_Unix"></span><span id="digital_unix"></span><span id="DIGITAL_UNIX"></span>
 
-**Unix Digital** (6)
+**Digital Unix** (6)
 
 
 </dt> <dd></dd> <dt>
@@ -1154,7 +1154,7 @@ Os valores possíveis são.
 
 <span id="HPUX"></span><span id="hpux"></span>
 
-HP **(8** )
+**HPUX** (8)
 
 
 </dt> <dd></dd> <dt>
@@ -1182,7 +1182,7 @@ HP **(8** )
 
 <span id="OS_2"></span><span id="os_2"></span>
 
-**Sistema operacional/2** (12)
+**SO/2** (12)
 
 
 </dt> <dd></dd> <dt>
@@ -1210,28 +1210,28 @@ HP **(8** )
 
 <span id="WIN95"></span><span id="win95"></span>
 
-**Win95** (16)
+**WIN95** (16)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WIN98"></span><span id="win98"></span>
 
-**Win98** (17)
+**WIN98** (17)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WINNT"></span><span id="winnt"></span>
 
-**WinNT** (18)
+**WINNT** (18)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="WINCE"></span><span id="wince"></span>
 
-**WinCE** (19)
+**WINCE** (19)
 
 
 </dt> <dd></dd> <dt>
@@ -1252,21 +1252,21 @@ HP **(8** )
 
 <span id="OSF"></span><span id="osf"></span>
 
-**Uso** (22)
+**OSF** (22)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="DC_OS"></span><span id="dc_os"></span>
 
-**DC/os** (23)
+**DC/SO** (23)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Reliant_UNIX"></span><span id="reliant_unix"></span><span id="RELIANT_UNIX"></span>
 
-**Unix dependente** (24)
+**Reliant UNIX** (24)
 
 
 </dt> <dd></dd> <dt>
@@ -1287,14 +1287,14 @@ HP **(8** )
 
 <span id="Sequent"></span><span id="sequent"></span><span id="SEQUENT"></span>
 
-**Subsequentes** (27)
+**Sequenciado** (27)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="IRIX"></span><span id="irix"></span>
 
-**IRIX** (28)
+**I LTDA** (28)
 
 
 </dt> <dd></dd> <dt>
@@ -1322,7 +1322,7 @@ HP **(8** )
 
 <span id="ASERIES"></span><span id="aseries"></span>
 
-**ASeries** (32)
+**ASERIES** (32)
 
 
 </dt> <dd></dd> <dt>
@@ -1350,7 +1350,7 @@ HP **(8** )
 
 <span id="LINUX"></span><span id="linux"></span>
 
-**Linux** (36)
+**LINUX** (36)
 
 
 </dt> <dd></dd> <dt>
@@ -1364,7 +1364,7 @@ HP **(8** )
 
 <span id="XENIX"></span><span id="xenix"></span>
 
-**Xenix** (38)
+**XENIX** (38)
 
 
 </dt> <dd></dd> <dt>
@@ -1378,7 +1378,7 @@ HP **(8** )
 
 <span id="Interactive_UNIX"></span><span id="interactive_unix"></span><span id="INTERACTIVE_UNIX"></span>
 
-**Unix interativo** (40)
+**Interactive UNIX** (40)
 
 
 </dt> <dd></dd> <dt>
@@ -1406,7 +1406,7 @@ HP **(8** )
 
 <span id="GNU_Hurd"></span><span id="gnu_hurd"></span><span id="GNU_HURD"></span>
 
-**GNU Hurd** (44)
+**GNU – Obstáculos** (44)
 
 
 </dt> <dd></dd> <dt>
@@ -1420,14 +1420,14 @@ HP **(8** )
 
 <span id="MACH_Kernel"></span><span id="mach_kernel"></span><span id="MACH_KERNEL"></span>
 
-**Kernel Mach** (46)
+**Kernel DE NUM** (46)
 
 
 </dt> <dd></dd> <dt>
 
 <span id="Inferno"></span><span id="inferno"></span><span id="INFERNO"></span>
 
-**Inferno** (47)
+**Ela** (47)
 
 
 </dt> <dd></dd> <dt>
@@ -1462,7 +1462,7 @@ HP **(8** )
 
 <span id="MiNT"></span><span id="mint"></span><span id="MINT"></span>
 
-**Menta** (52)
+**MiNT** (52)
 
 
 </dt> <dd></dd> <dt>
@@ -1483,7 +1483,7 @@ HP **(8** )
 
 <span id="NextStep"></span><span id="nextstep"></span><span id="NEXTSTEP"></span>
 
-**NEXTSTEP** (55)
+**NextStep** (55)
 
 
 </dt> <dd></dd> <dt>
@@ -1541,28 +1541,28 @@ Tipo de dados: **cadeia de caracteres**
 Tipo de acesso: Somente leitura
 </dt> <dt>
 
-Qualificadores: [**substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("versão"), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry de \| Descrição de hardware \\ \\ \\ \\ \| SystemBiosVersion")
+Qualificadores: [**Substituir**](/windows/desktop/WmiSdk/standard-qualifiers) ("Versão"), [**Mappingstrings**](/windows/desktop/WmiSdk/standard-qualifiers) ("Win32Registry \| HARDWARE Description \\ \\ \\ \\ \| SystemBiosVersion")
 </dt> </dl>
 
 Versão do BIOS. Essa cadeia de caracteres é criada pelo fabricante do BIOS.
 
-Essa propriedade é herdada de [**CIM \_ softwareelement**](cim-softwareelement.md).
+Essa propriedade é herdada de [**CIM \_ SoftwareElement.**](cim-softwareelement.md)
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-A classe **Win32 \_ BIOS** é derivada de [**CIM \_ bioselement**](cim-bioselement.md).
+A **classe \_ BIOS win32** é derivada de [**CIM \_ BIOSElement.**](cim-bioselement.md)
 
-As propriedades na classe **\_ BIOS do Win32** podem ser alteradas para um sistema de computador específico com o mesmo BIOS, por exemplo, inicializando por meio de um modo BIOS herdado versus inicializando por meio do modo de BIOS UEFI. No entanto, as propriedades recuperadas das estruturas do SMBIOS devem permanecer as mesmas.
+As propriedades na classe **\_ BIOS do Win32** podem mudar para um sistema de computador específico com o mesmo BIOS, por exemplo, inicializando por meio de um modo BIOS herdado versus inicializando por meio do modo UEFI BIOS. No entanto, as propriedades recuperadas das estruturas SMBIOS devem permanecer as mesmas.
 
 ## <a name="examples"></a>Exemplos
 
-As [informações do computador get-ComputerInfo-Query de computadores locais/remotos-(WMI) exemplo do](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) PowerShell na galeria do TechNet usam várias chamadas para hardware e software, incluindo o **Win32 \_ BIOS**, para exibir informações sobre um sistema local ou remoto.
+O exemplo [do PowerShell Get-ComputerInfo – Query Computer From Local/Remote Computers – (WMI) na](https://Gallery.TechNet.Microsoft.Com/Get-ComputerInfo-Query-23dd6042) Galeria do TechNet usa várias chamadas para hardware e software, incluindo **o Win32 \_ BIOS,** para exibir informações sobre um sistema local ou remoto.
 
-A amostra [gerar informações do sistema como uma hierarquia XML](https://Gallery.TechNet.Microsoft.Com/Generate-system-information-3f40629f) do VBScript na galeria do TechNet usa várias chamadas para hardware e software, incluindo o **Win32 \_ BIOS**, para gerar uma representação XML de um sistema usando uma saída de XML manual.
+O exemplo Gerar informações do sistema como VBScript da hierarquia XML na Galeria do TechNet usa várias chamadas para hardware e software, incluindo o **\_ WIN32 BIOS,** para gerar uma representação [XML](https://Gallery.TechNet.Microsoft.Com/Generate-system-information-3f40629f) de um sistema usando uma saída XML manual.
 
-O exemplo de código do PowerShell a seguir usa o **\_ BIOS Win32** para retornar características do BIOS
+O exemplo de código do PowerShell a seguir **usa o \_ BIOS do Win32** para retornar características do BIOS
 
 
 ```PowerShell
@@ -1730,8 +1730,8 @@ Version               :  DELL   - 27d60a0d
 |-------------------------------------|-----------------------------------------------------------------------------------------|
 | Cliente mínimo com suporte<br/> | Windows Vista<br/>                                                                |
 | Servidor mínimo com suporte<br/> | Windows Server 2008<br/>                                                          |
-| Namespace<br/>                | Raiz \\ cimv2<br/>                                                                  |
-| MOF<br/>                      | <dl> <dt>CIMWin32. mof</dt> </dl> |
+| Namespace<br/>                | RAIZ \\ CIMV2<br/>                                                                  |
+| MOF<br/>                      | <dl> <dt>CIMWin32.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>CIMWin32.dll</dt> </dl> |
 
 
@@ -1740,7 +1740,7 @@ Version               :  DELL   - 27d60a0d
 
 <dl> <dt>
 
-[**CIM \_ bioselement**](cim-bioselement.md)
+[**CIM \_ BIOSElement**](cim-bioselement.md)
 </dt> <dt>
 
 [Classes de hardware do sistema de computador](computer-system-hardware-classes.md)

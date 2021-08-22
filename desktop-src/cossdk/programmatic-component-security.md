@@ -4,16 +4,16 @@ ms.assetid: 6117970c-5dbd-485e-978e-3aa96e42b359
 title: Segurança de componente programática
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 31622608e4d4f54aeb53b403b5d8711ff9c6a9af
-ms.sourcegitcommit: c7add10d695482e1ceb72d62b8a4ebd84ea050f7
+ms.openlocfilehash: 3b3fc8813b6aff98f19e7c051067f3246c25b336ea7a99a2371f03c7f3f50883
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105763087"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119462106"
 ---
 # <a name="programmatic-component-security"></a>Segurança de componente programática
 
-Quando você usa a segurança baseada em função no aplicativo COM+ que contém o componente, você tem acesso à funcionalidade de segurança programática de dentro do seu componente. Você pode verificar a associação de função para determinar se seções específicas de código são executadas. você pode acessar informações de segurança usando o objeto de contexto de chamada de segurança e pode determinar se a segurança está habilitada para a chamada atual. Você pode executar todas essas tarefas usando uma referência a um objeto [**SecurityCallContext**](securitycallcontext.md) (para aplicativos do Microsoft Visual Basic) ou um ponteiro para a interface [**ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext) (para aplicativos C e Microsoft Visual C++).
+Quando você usa a segurança baseada em função no aplicativo COM+ que contém o componente, você tem acesso à funcionalidade de segurança programática de dentro do seu componente. Você pode verificar a associação de função para determinar se seções específicas de código são executadas. você pode acessar informações de segurança usando o objeto de contexto de chamada de segurança e pode determinar se a segurança está habilitada para a chamada atual. você pode executar todas essas tarefas usando uma referência a um objeto [**SecurityCallContext**](securitycallcontext.md) (para aplicativos do Microsoft Visual Basic) ou um ponteiro para a interface [**ISecurityCallContext**](/windows/desktop/api/ComSvcs/nn-comsvcs-isecuritycallcontext) (para aplicativos C e Microsoft Visual C++).
 
 Para obter mais informações sobre a segurança baseada em função programática, consulte os seguintes tópicos nesta seção:
 

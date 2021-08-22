@@ -4,12 +4,12 @@ ms.assetid: 8e999524-4fe9-49b0-8b59-081fa7a42c72
 title: Clusters e extensões
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 6e6b379e0dbc4f70ccf001f0be0517e25c0c99a5
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: ce987dc5c8afea842d6c92196474f88d17c36d2011995a2d760b83bfc1e5a644
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105761737"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119533836"
 ---
 # <a name="clusters-and-extents"></a>Clusters e extensões
 

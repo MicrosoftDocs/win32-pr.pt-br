@@ -3,7 +3,7 @@ title: Mensagem de LVM_GETSUBITEMRECT (commctrl. h)
 description: Recupera informações sobre o retângulo delimitador de um subitem em um controle de exibição de lista.
 ms.assetid: 985876b2-6eb3-4c96-88ea-ddec67ef5b5a
 keywords:
-- Controles de LVM_GETSUBITEMRECT de mensagens do Windows
+- controles de Windows de mensagem de LVM_GETSUBITEMRECT
 topic_type:
 - apiref
 api_name:
@@ -14,12 +14,12 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: cd1184c52d60b86e008685b87c9f5555cf801b35
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 651be72c23113940fc30adb2e7a9de581289a8f4ddf580f27d01e2edf337c053
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104086159"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119293886"
 ---
 # <a name="lvm_getsubitemrect-message"></a>\_Mensagem GETSUBITEMRECT LVM
 
@@ -54,7 +54,7 @@ Ponteiro para uma estrutura [**Rect**](/previous-versions//dd162897(v=vs.85)) qu
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Retornará zero se for bem-sucedido ou nenhum outro.
 
@@ -66,7 +66,7 @@ A seguir estão os valores de sinalizador que podem ser definidos.
 
 | Requisito | Valor |
 |----------------|---------------------------------------------------------------------------------------------------------------------|
-| **Valor de sinalizador** | **Significado**                                                                                                         |
+| **Valor do sinalizador** | **Significado**                                                                                                         |
 | limites do LVIR \_   | Retorna o retângulo delimitador do item inteiro, incluindo o ícone e o rótulo.                                    |
 | ícone de LVIR \_     | Retorna o retângulo delimitador do ícone ou ícone pequeno.                                                           |
 | rótulo de LVIR \_    | Retorna o retângulo delimitador do item inteiro, incluindo o ícone e o rótulo. Isso é idêntico aos limites de LVIR \_ . |
@@ -81,9 +81,9 @@ A seguir estão os valores de sinalizador que podem ser definidos.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do servidor 2003\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
 
 
 

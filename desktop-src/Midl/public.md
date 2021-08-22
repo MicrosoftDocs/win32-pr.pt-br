@@ -1,6 +1,6 @@
 ---
 title: atributo público
-description: O atributo \ Public \ inclui um alias declarado com a palavra-chave typedef na biblioteca de tipos.
+description: O atributo \ public\ inclui um alias declarado com a palavra-chave typedef na biblioteca de tipos.
 ms.assetid: d4e90165-8b0d-47bb-998d-e515226be935
 keywords:
 - atributo público MIDL
@@ -12,16 +12,16 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d8451ddf77b5074dbea609bfed144340dc877c00
-ms.sourcegitcommit: ebd3ce6908ff865f1ef66f2fc96769be0aad82e1
+ms.openlocfilehash: 9f8e4944404bccc734594f3847c0ff9de17e54d0b5bcc444a56abe9b8f1e0eaf
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "105752058"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119328716"
 ---
 # <a name="public-attribute"></a>atributo público
 
-O atributo **\[ \] Public** inclui um alias declarado com a palavra-chave [**typedef**](typedef.md) na biblioteca de tipos.
+O **\[ atributo \]** público inclui um alias declarado com a [**palavra-chave typedef**](typedef.md) na biblioteca de tipos.
 
 ``` syntax
 typedef [public] data-type identifier;
@@ -41,18 +41,18 @@ O tipo de dados para o qual o identificador será um alias.
 *identifier* 
 </dt> <dd>
 
-Outro nome pelo qual o *tipo de dados* será conhecido no software.
+Outro nome pelo qual *o tipo de dados* será conhecido no software.
 
 </dd> </dl>
 
 ## <a name="remarks"></a>Comentários
 
-Por padrão, um alias declarado com [**typedef**](typedef.md) e nenhum outro atributo é tratado como uma **\# definição** e não é incluído na biblioteca de tipos. O uso do atributo **\[ Public \]** garante que o alias se torne parte da biblioteca de tipos.
+Por padrão, um alias que é declarado com [**typedef**](typedef.md) e não tem outros atributos é tratado como um **\# define** e não está incluído na biblioteca de tipos. Usar o **\[ atributo \]** público garante que o alias se torne parte da biblioteca de tipos.
 
 > [!Note]  
-> O compilador MIDL requer que você aplique explicitamente o atributo **\[ Public \]** a cada TypeDef que você deseja público.
+> O compilador MIDL requer que você aplique explicitamente o **\[ atributo \]** público a cada typedef que você deseja público.
 
- 
+ 
 
 ## <a name="examples"></a>Exemplos
 
@@ -70,15 +70,15 @@ typedef [public] long MEMBERID;
 [Exemplo de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-example)
 </dt> <dt>
 
-[**interface**](interface.md)
+[**Interface**](interface.md)
 </dt> <dt>
 
-[Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
+[Sintaxe de arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax)
 </dt> <dt>
 
-[**typedef**](typedef.md)
+[**Typedef**](typedef.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

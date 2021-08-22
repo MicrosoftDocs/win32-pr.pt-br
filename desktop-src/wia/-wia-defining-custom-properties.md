@@ -4,18 +4,18 @@ ms.assetid: 6adcf414-2c5a-451c-b30a-d1c161886c9a
 title: Definindo propriedades personalizadas
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: dd91ee4d4e657ce0d6c01330d85e8df4ef57a36d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 3b78516913c898e3b3d814e96a40d227cc3cc1cc70c13a290949f91eb9f447c6
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105781633"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119348046"
 ---
 # <a name="defining-custom-properties"></a>Definindo propriedades personalizadas
 
 **Definindo propriedades personalizadas**.
 
-Se for necessário que o minidriver da aquisição de imagens do Windows (WIA) defina propriedades personalizadas, a \_ \_ Propriedade DEVPROP privada WIA deverá ser usada para propriedades de item raiz personalizadas e a \_ propriedade de ItemProperty particular do WIA \_ deverá ser usada para outras propriedades de item. Essas constantes são definidas em *wiadef. h*.
+se for necessário para a minidriver de aquisição de imagem de Windows (WIA) definir propriedades personalizadas, a \_ \_ propriedade DEVPROP privada wia deverá ser usada para propriedades de item raiz personalizadas e a \_ propriedade de itemproperty privada do wia \_ deverá ser usada para outras propriedades de item. Essas constantes são definidas em *wiadef. h*.
 
 O código de exemplo a seguir mostra definições para três propriedades de item raiz. A ID de propriedade da primeira propriedade de item raiz Personalizada, \_ prop raiz personalizada \_ \_ , 1, é definida em termos \_ de \_ DEVPROP privada WIA. As IDs de propriedade para propriedades adicionais do item raiz são definidas em termos de \_ DEVPROP privada WIA \_ + 1, WIA \_ privado \_ DEVPROP + 2 e assim por diante. O padrão pode ser continuado se forem necessárias propriedades de item raiz personalizadas adicionais.
 

@@ -1,21 +1,21 @@
 ---
 description: Especifica o número padrão de quadros B consecutivos entre quadros I e P.
 ms.assetid: d41ed713-0159-4325-bc44-f4a3eea10aa2
-title: Propriedade AVEncMPVDefaultBPictureCount (Codecapi. h)
+title: Propriedade AVEncMPVDefaultBPictureCount (Codecapi.h)
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: d2026ddcb6a2b4ce813bd8ba2f6144f0c4a32344
-ms.sourcegitcommit: a47bd86f517de76374e4fff33cfeb613eb259a7e
+ms.openlocfilehash: 95604d8b3849175e579d276fa006f5a8c4d2833a167228316c4cf830b01618b9
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "104010029"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119276256"
 ---
 # <a name="avencmpvdefaultbpicturecount-property"></a>Propriedade AVEncMPVDefaultBPictureCount
 
 Especifica o número padrão de quadros B consecutivos entre quadros I e P.
 
-Esta propriedade é de leitura/gravação.
+Essa propriedade é leitura/gravação.
 
 ## <a name="data-type"></a>Tipo de dados
 
@@ -27,13 +27,13 @@ Esta propriedade é de leitura/gravação.
 
 ## <a name="property-value"></a>Valor da propriedade
 
-Esta propriedade tem um intervalo linear de valores. Para obter o intervalo com suporte, chame [**ICodecAPI:: GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
+Essa propriedade tem um intervalo linear de valores. Para obter o intervalo com suporte, chame [**ICodecAPI::GetParameterRange**](/windows/desktop/api/Strmif/nf-strmif-icodecapi-getparameterrange).
 
 ## <a name="remarks"></a>Comentários
 
-Antes do Windows 8, essa propriedade se aplica aos codificadores de vídeo MPEG. A partir do Windows 8, essa propriedade é usada por codificadores de vídeo MPEG, WMV e H. 264.
+Antes de Windows 8, essa propriedade se aplica aos codificadores de vídeo MPEG. Começando com Windows 8, essa propriedade é usada por codificadores de vídeo MPEG, WMV e H.264.
 
-Se o codificador der suporte a essa propriedade, ele poderá ser usado para controlar a estrutura do grupo de imagens (GOP).
+Se o codificador dá suporte a essa propriedade, ele pode ser usado para controlar a estrutura gop (grupo de imagens).
 
 ## <a name="requirements"></a>Requisitos
 
@@ -41,9 +41,9 @@ Se o codificador der suporte a essa propriedade, ele poderá ser usado para cont
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Aplicativos do Windows 2000 Professional \[ Desktop aplicativos \| UWP\]<br/>                     |
-| Servidor mínimo com suporte<br/> | Aplicativos da área de trabalho do Windows 2000 Server aplicativos \[ \| UWP\]<br/>                           |
-| parâmetro<br/>                   | <dl> <dt>Codecapi. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows 2000 Professional \[ aplicativos UWP da área de \| trabalho\]<br/>                     |
+| Servidor mínimo com suporte<br/> | Windows aplicativos da área de trabalho do servidor 2000 \[ \| aplicativos UWP\]<br/>                           |
+| parâmetro<br/>                   | <dl> <dt>Codecapi.h</dt> </dl> |
 
 
 
@@ -51,10 +51,10 @@ Se o codificador der suporte a essa propriedade, ele poderá ser usado para cont
 
 <dl> <dt>
 
-[Propriedades da API do codec](codec-api-properties.md)
+[Propriedades da API do Codec](codec-api-properties.md)
 </dt> <dt>
 
-[**Interface ICodecAPI**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
+[**ICodecAPI Interface**](/windows/desktop/api/Strmif/nn-strmif-icodecapi)
 </dt> </dl>
 
  

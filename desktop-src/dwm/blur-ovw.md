@@ -17,23 +17,23 @@ keywords:
 - estendendo o quadro da janela na área do cliente
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 4fcf7378cfcaff93aa9a54ce399890ec1bfd8cc1
-ms.sourcegitcommit: 592c9bbd22ba69802dc353bcb5eb30699f9e9403
+ms.openlocfilehash: bfb7b357719ea3aa5a4853a933350ee2dda417842777354e2bbf1711e1cbeff1
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "104008063"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119456066"
 ---
 # <a name="dwm-blur-behind-overview"></a>Desfoque do DWM por trás da visão geral
 
 Um dos efeitos de Gerenciador de Janelas da Área de Trabalho de assinatura (DWM) é uma área de não-cliente translúcida e borrada. As APIs do DWM permitem que os aplicativos apliquem esses efeitos à área do cliente de suas janelas de nível superior.
 
 > [!Note]  
-> O Windows Vista Home Basic Edition não dá suporte ao efeito de vidro transparente. As áreas que normalmente renderizariam com o efeito de vidro transparente em outras edições do Windows são renderizadas como opacas.
-> A partir do Windows 8, chamar essa função não resulta no efeito de desfoque, devido a uma alteração de estilo na maneira como as janelas são renderizadas.
+> Windows O Vista Home Basic Edition não dá suporte ao efeito de vidro transparente. as áreas que normalmente renderizariam com o efeito de vidro transparente em outras edições de Windows são renderizadas como opacas.
+> começando com Windows 8, chamar essa função não resulta no efeito de desfoque, devido a uma alteração de estilo na maneira como as janelas são renderizadas.
 
 
- 
+ 
 
 Este tópico discute os seguintes cenários de desfoque do cliente que o DWM habilita.
 
@@ -158,6 +158,6 @@ A imagem a seguir ilustra o desfoque no estilo de janela "folha de vidro".
 [Considerações sobre desempenho e práticas recomendadas](bestpractices-ovw.md)
 </dt> </dl>
 
- 
+ 
 
- 
+ 

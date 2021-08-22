@@ -1,9 +1,9 @@
 ---
-title: Código de notificação de NM_RELEASEDCAPTURE (up-down) (commctrl. h)
-description: Notifica uma janela pai do controle up que o controle está liberando a captura do mouse. Esse código de notificação é enviado na forma de uma mensagem de notificação do WM \_ .
+title: NM_RELEASEDCAPTURE de notificação (up-down) (Commctrl.h)
+description: Notifica a janela pai de um controle para cima para baixo de que o controle está liberando a captura do mouse. Esse código de notificação é enviado na forma de uma mensagem WM \_ NOTIFY.
 ms.assetid: 88a4a9a2-ba7f-4ccc-b5bf-749f49dc666b
 keywords:
-- NM_RELEASEDCAPTURE (up) código de notificação controles do Windows
+- NM_RELEASEDCAPTURE de notificação (para cima para baixo) Windows Controles
 topic_type:
 - apiref
 api_name:
@@ -14,16 +14,16 @@ api_type:
 - HeaderDef
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 4b94f2a61727861cbf47720a41c7255763992b54
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 54e0adb7ace7f5a185cf7f0231622d4931c22af6932cf5547a7e9365bbca8669
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "105769033"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119344206"
 ---
-# <a name="nm_releasedcapture-up-down-notification-code"></a>\_Código de notificação nm RELEASEDCAPTURE (up-down)
+# <a name="nm_releasedcapture-up-down-notification-code"></a>Código de notificação NM \_ RELEASEDCAPTURE (up-down)
 
-Notifica uma janela pai do controle up que o controle está liberando a captura do mouse. Esse código de notificação é enviado na forma de uma mensagem de [**\_ notificação do WM**](wm-notify.md) .
+Notifica a janela pai de um controle para cima para baixo de que o controle está liberando a captura do mouse. Esse código de notificação é enviado na forma de uma mensagem [**WM \_ NOTIFY.**](wm-notify.md)
 
 
 ```C++
@@ -41,13 +41,13 @@ NM_RELEASEDCAPTURE
 *lParam* 
 </dt> <dd>
 
-Ponteiro para uma estrutura [**NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre esta notificação.
+Ponteiro para uma [**estrutura NMHDR**](/windows/desktop/api/richedit/ns-richedit-nmhdr) que contém informações adicionais sobre essa notificação.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
-O controle ignora o valor de retorno deste código de notificação.
+O controle ignora o valor de retorno desse código de notificação.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -55,9 +55,9 @@ O controle ignora o valor de retorno deste código de notificação.
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Vista\]<br/>                                        |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2003\]<br/>                                  |
-| parâmetro<br/>                   | <dl> <dt>Commctrl. h</dt> </dl> |
+| Cliente mínimo com suporte<br/> | Windows Somente \[ aplicativos da área de trabalho do Vista\]<br/>                                        |
+| Servidor mínimo com suporte<br/> | Windows Somente aplicativos da área de trabalho server 2003 \[\]<br/>                                  |
+| Cabeçalho<br/>                   | <dl> <dt>Commctrl.h</dt> </dl> |
 
 
 

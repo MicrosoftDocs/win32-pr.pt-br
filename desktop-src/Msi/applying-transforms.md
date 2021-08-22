@@ -4,12 +4,12 @@ ms.assetid: dde2ef55-7794-4eb1-984a-ed13e990c97f
 title: Aplicando transformações
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2367e02396ec33e517f8abfe579060c0a0986be2
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: daf6c1bd60a084b745df14d89772008867b618f3b21116ca20c5313747950b5c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103828068"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119264246"
 ---
 # <a name="applying-transforms"></a>Aplicando transformações
 
@@ -20,7 +20,7 @@ A propriedade [**TRANSformações**](transforms.md) é definida especificando a 
 Observe que a lista transformações não pode ser modificada depois de instalada e só pode ser removida pela desinstalação do aplicativo.
 
 > [!Note]  
-> Um pacote Windows Installer pode aplicar no máximo 255 transformações ao instalar um aplicativo ou atualizar. Quando muitas transformações são necessárias, elas devem ser combinadas e as transformações obsoletas anteriores devem ser eliminadas.
+> um pacote Windows Installer pode aplicar no máximo 255 transformações ao instalar um aplicativo ou atualizar. Quando muitas transformações são necessárias, elas devem ser combinadas e as transformações obsoletas anteriores devem ser eliminadas.
 
  
 

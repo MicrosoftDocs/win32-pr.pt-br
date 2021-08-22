@@ -1,20 +1,20 @@
 ---
-title: Criando um arquivo de fluxos existentes
-description: Criando um arquivo de fluxos existentes
+title: criando um arquivo a partir de Fluxos existentes
+description: criando um arquivo a partir de Fluxos existentes
 ms.assetid: 5149a766-7809-42b7-8e5c-b67b847b9218
 keywords:
 - Função AVISave
 - Função AVISaveV
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 2bc422d2170ccd49b8a9746666db7ebbcd7dff14
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: a15a6ad3770f93bc2fb77dcb79975e1e9aa1fc8da7319e34c140baf488a69554
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916193"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119498006"
 ---
-# <a name="creating-a-file-from-existing-streams"></a>Criando um arquivo de fluxos existentes
+# <a name="creating-a-file-from-existing-streams"></a>criando um arquivo a partir de Fluxos existentes
 
 Uma maneira de criar um arquivo que contém fluxos de dados é combinar fluxos existentes em um novo arquivo. Os fluxos que fornecem dados para o novo arquivo podem residir na memória ou em um ou mais arquivos.
 
@@ -33,11 +33,11 @@ Você pode criar um ponteiro de interface de arquivo (e um arquivo virtual) para
 > [!Note]  
 > Para minimizar a degradação da imagem e do áudio, evite compactar um arquivo AVI mais de uma vez. Combine pedaços de vídeo não compactados em seu sistema de edição e, em seguida, compacte o produto final. Para obter informações sobre opções de compactação, consulte [Gerenciador de compactação de vídeo](video-compression-manager.md).
 
- 
+ 
 
- 
+ 
 
- 
+ 
 
 
 

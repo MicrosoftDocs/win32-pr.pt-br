@@ -1,11 +1,11 @@
 ---
-title: IPSec-NFA-atributo de referência
-description: O atributo IPSec-NFA-Reference é somente para uso interno.
+title: Atributo Ipsec-NFA-Reference
+description: O atributo Ipsec-NFA-Reference é apenas para uso interno.
 ms.assetid: 660bb1a1-c953-4768-afe5-006f436ef0cf
 ms.tgt_platform: multiple
 keywords:
-- IPSec-NFA-atributo de referência de esquema do AD
-- Esquema de AD do atributo ipsecNFAReference
+- Esquema do AD do atributo Ipsec-NFA-Reference
+- Esquema do AD do atributo ipsecNFAReference
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 9717364dbd2317da35a6e25e80ebd9d8f37a7c6b
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 57ee5131e6bbd2181cf64c4b87627d4903f9fc8301b4bb0d7970f6003125dbb6
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105755224"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119322516"
 ---
-# <a name="ipsec-nfa-reference-attribute"></a>IPSec-NFA-atributo de referência
+# <a name="ipsec-nfa-reference-attribute"></a>Atributo Ipsec-NFA-Reference
 
-O atributo **IPSec-NFA-Reference** é somente para uso interno.
+O **atributo Ipsec-NFA-Reference** é apenas para uso interno.
 
 
 
 | Entrada | Valor |
 |-------------------|-----------------------------------------|
-| CN                | IPSec-NFA-referência                     |
-| LDAP-Display-Name | ipsecNFAReference                       |
+| CN                | Referência de Ipsec-NFA                     |
+| Ldap-Display-Name | ipsecNFAReference                       |
 | Tamanho              | \-                                      |
 | Privilégio de atualização  | \-                                      |
 | Frequência de atualização  | \-                                      |
 | Attribute-Id      | 1.2.840.113556.1.4.627                  |
-| System-ID-GUID    | b40ff821-427a-11d1-a9c2-0000f80367c1    |
-| Syntax            | [**Objeto (DS-DN)**](s-object-ds-dn.md) |
+| System-Id-Guid    | b40ff821-427a-11d1-a9c2-0000f80367c1    |
+| Syntax            | [**Object(DS-DN)**](s-object-ds-dn.md) |
 
 
 
@@ -58,10 +58,10 @@ O atributo **IPSec-NFA-Reference** é somente para uso interno.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -79,10 +79,10 @@ O atributo **IPSec-NFA-Reference** é somente para uso interno.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -100,10 +100,10 @@ O atributo **IPSec-NFA-Reference** é somente para uso interno.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -121,10 +121,10 @@ O atributo **IPSec-NFA-Reference** é somente para uso interno.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -142,10 +142,10 @@ O atributo **IPSec-NFA-Reference** é somente para uso interno.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |
@@ -163,10 +163,10 @@ O atributo **IPSec-NFA-Reference** é somente para uso interno.
 | ID do link                | \-                                               |
 | MAPI-Id                | \-                                               |
 | System-Only            | Falso                                            |
-| É de valor único       | Falso                                            |
+| Tem valor único       | Falso                                            |
 | É indexado             | Falso                                            |
-| No catálogo global      | Falso                                            |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                     |
+| No Catálogo Global      | Falso                                            |
+| Descritor de segurança NT | O:BAG:BAD:S:                                     |
 | Range-Lower            | \-                                               |
 | Range-Upper            | \-                                               |
 | Search-Flags           | 0x00000000                                       |

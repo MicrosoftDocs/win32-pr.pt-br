@@ -1,10 +1,10 @@
 ---
-title: atributo meetingAdvertiseScope
+title: Atributo meetingAdvertiseScope
 description: Indica se uma entrada deve ser anunciada fora de um gateway corporativo ou proxy.
 ms.assetid: 9e53486a-7717-4033-913e-7436a77cba00
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo meetingAdvertiseScope
+- Esquema do AD do atributo meetingAdvertiseScope
 topic_type:
 - apiref
 api_name:
@@ -13,14 +13,14 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: 62fa1731b96f34403587c71944e94dd1e7502751
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: 14207720379bdd0e441cadff04844bf70bf7e6aae40ceb192de99fca561c0c5f
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "105756486"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119300966"
 ---
-# <a name="meetingadvertisescope-attribute"></a>atributo meetingAdvertiseScope
+# <a name="meetingadvertisescope-attribute"></a>Atributo meetingAdvertiseScope
 
 Indica se uma entrada deve ser anunciada fora de um gateway corporativo ou proxy.
 
@@ -29,13 +29,13 @@ Indica se uma entrada deve ser anunciada fora de um gateway corporativo ou proxy
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | meetingAdvertiseScope                       |
-| LDAP-Display-Name | meetingAdvertiseScope                       |
+| Ldap-Display-Name | meetingAdvertiseScope                       |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.582                      |
-| System-ID-GUID    | 11b6cc8b-48c4-11d1-a9c3-0000f80367c1        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | 11b6cc8b-48c4-11d1-a9c3-0000f80367c1        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -57,10 +57,10 @@ Indica se uma entrada deve ser anunciada fora de um gateway corporativo ou proxy
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -78,10 +78,10 @@ Indica se uma entrada deve ser anunciada fora de um gateway corporativo ou proxy
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -99,10 +99,10 @@ Indica se uma entrada deve ser anunciada fora de um gateway corporativo ou proxy
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -120,10 +120,10 @@ Indica se uma entrada deve ser anunciada fora de um gateway corporativo ou proxy
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -141,10 +141,10 @@ Indica se uma entrada deve ser anunciada fora de um gateway corporativo ou proxy
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |
@@ -162,10 +162,10 @@ Indica se uma entrada deve ser anunciada fora de um gateway corporativo ou proxy
 | ID do link                | \-                                      |
 | MAPI-Id                | \-                                      |
 | System-Only            | Falso                                   |
-| É de valor único       | True                                    |
+| Tem valor único       | Verdadeiro                                    |
 | É indexado             | Falso                                   |
-| No catálogo global      | Falso                                   |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                            |
+| No Catálogo Global      | Falso                                   |
+| Descritor de segurança NT | O:BAG:BAD:S:                            |
 | Range-Lower            | \-                                      |
 | Range-Upper            | \-                                      |
 | Search-Flags           | 0x00000000                              |

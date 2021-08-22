@@ -3,15 +3,15 @@ title: Funções de gerenciamento de perfil
 description: Funções de gerenciamento de perfil
 ms.assetid: 185863b7-0b74-4c65-97c3-3c60b86d37fd
 keywords:
-- WCS (sistema de cores do Windows), funções
-- WCS (sistema de cores do Windows), funções
+- Windows Sistema de cores (WCS), funções
+- WCS (Windows sistema de cores), funções
 - gerenciamento de cores de imagem, funções
 - gerenciamento de cores, funções
 - cores, funções
 - Referência do WCS, funções
 - referência para WCS, funções
-- WCS (sistema de cores do Windows), perfis
-- WCS (sistema de cores do Windows), perfis
+- Windows Sistema de cores (WCS), perfis
+- WCS (Windows sistema de cores), perfis
 - gerenciamento de cores de imagem, perfis
 - gerenciamento de cores, perfis
 - cores, perfis
@@ -21,12 +21,12 @@ keywords:
 ms.localizationpriority: high
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8a0e80e300532b20148eef6d9dc362438b6714a3
-ms.sourcegitcommit: 3f366316c02c411c4c5e14620a699f6f30608634
+ms.openlocfilehash: d9f047c2dee199800fad976dd7b959fbbb54d585fd252fb8b5390c3223415db4
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "105808411"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119587766"
 ---
 # <a name="profile-management-functions"></a>Funções de gerenciamento de perfil
 
@@ -42,11 +42,11 @@ As seguintes funções de API são úteis no gerenciamento de perfil.
 | [**CreateProfileFromLogColorSpaceW**] ((/windows/win32/api/icm/nf-icm-createprofilefromlogcolorspacew) | Converte um [espaço de cor](c.md) lógico em um [perfil de dispositivo](d.md). |
 | [**DisassociateColorProfileFromDeviceW**](/windows/win32/api/icm/nf-icm-disassociatecolorprofilefromdevicew) | Desassocia um perfil de cor especificado a um dispositivo especificado em um computador especificado. |
 | [**EnumColorProfilesW**](/windows/win32/api/icm/nf-icm-enumcolorprofilesw) | Enumera todos os perfis que atendem aos critérios de enumeração fornecidos. |
-| [**GetColorDirectoryW**](/windows/win32/api/icm/nf-icm-getcolordirectoryw) | Recupera o caminho do diretório de cores do Windows em um computador especificado. |
+| [**GetColorDirectoryW**](/windows/win32/api/icm/nf-icm-getcolordirectoryw) | recupera o caminho do Windows diretório de cores em um computador especificado. |
 | [**GetDeviceGammaRamp**](/windows/desktop/api/Wingdi/nf-wingdi-getdevicegammaramp)                                       | Obtém a rampa de gama de placas de exibição de cor direta.                                                                                                |
 | [**GetStandardColorSpaceProfileW**](/windows/win32/api/icm/nf-icm-getstandardcolorspaceprofilew) | Recupera o perfil de cor registrado para o [espaço de cores](c.md)padrão especificado. |
 | [**InstallColorProfileW**](/windows/win32/api/icm/nf-icm-installcolorprofilew) | Instala um determinado perfil para uso em um computador especificado. O perfil também é copiado para o diretório de cores. |
-| [**RegisterCMMW**](/windows/win32/api/icm/nf-icm-registercmmw) | Associa um valor de identificação especificado com a DLL do CMM (Dynamic Link Library) do módulo de gerenciamento de cores especificado. Quando essa ID aparece em um perfil de cor, o Windows pode localizar o CMM correspondente para criar uma transformação. |
+| [**RegisterCMMW**](/windows/win32/api/icm/nf-icm-registercmmw) | Associa um valor de identificação especificado com a DLL do CMM (Dynamic Link Library) do módulo de gerenciamento de cores especificado. quando essa ID aparece em um perfil de cor, Windows pode localizar o CMM correspondente para criar uma transformação. |
 | [**SetDeviceGammaRamp**](/windows/desktop/api/Wingdi/nf-wingdi-setdevicegammaramp)                                       | Define a rampa de gama em placas de exibição de cor direta.                                                                                                  |
 | [**SetStandardColorSpaceProfileW**](/windows/win32/api/icm/nf-icm-setstandardcolorspaceprofilew) | Registra um perfil especificado para um espaço de [cores](c.md)padrão específico. O perfil pode ser consultado usando [GetStandardColorSpaceProfileW](/windows/win32/api/icm/nf-icm-getstandardcolorspaceprofilew). |
 | [**UninstallColorProfileW**](/windows/win32/api/icm/nf-icm-uninstallcolorprofilew) | Remove um perfil de cor especificado de um computador especificado. Os arquivos associados são excluídos opcionalmente do sistema. |
@@ -113,7 +113,7 @@ A meta do design descrito no documento atual é a seguinte:
 
  
 
-2. Todas as APIs de gerenciamento de perfil ICM2 herdadas modificam configurações de todo o sistema e exigem privilégios administrativos. No Windows Vista, todos os usuários são executados em configurações de LUA (conta de usuário com privilégios mínimos) na maioria das vezes, e os administradores podem elevar o privilégio de forma seletiva para executar aplicativos que modificam as configurações de todo o sistema. No gerenciamento de perfil WCS, todas as configurações de perfil por usuário são configuráveis no contexto LUA. Os aplicativos de gerenciamento de perfil podem ser executados como configurações de LUA, aumentando seu escopo de uso e garantindo que a segurança do sistema não seja comprometida.
+2. Todas as APIs de gerenciamento de perfil ICM2 herdadas modificam configurações de todo o sistema e exigem privilégios administrativos. no Windows Vista, todos os usuários são executados em configurações de LUA (conta de usuário com privilégios mínimos) na maioria das vezes, e os administradores podem elevar o privilégio de forma seletiva para executar aplicativos que modificam as configurações de todo o sistema. No gerenciamento de perfil WCS, todas as configurações de perfil por usuário são configuráveis no contexto LUA. Os aplicativos de gerenciamento de perfil podem ser executados como configurações de LUA, aumentando seu escopo de uso e garantindo que a segurança do sistema não seja comprometida.
 
 O gerenciamento de perfil no Vista fornece os seguintes aprimoramentos em relação à infraestrutura de ICM2 herdada:
 
@@ -155,7 +155,7 @@ Todo o sistema
 
 Perfil copiado, instalado no sistema e disponível para uso. O perfil é enumerável em todo o sistema e no escopo do usuário atual para todos os usuários.
 
-Durante a instalação do driver de dispositivo, governada pelas políticas de instalação do driver. Não, caso contrário.
+Durante a instalação do driver de dispositivo, governada pelas políticas de instalação do driver. No, otherwise.
 
 Usuário atual
 
@@ -169,7 +169,7 @@ O perfil está instalado no sistema
 
 Perfil desinstalado do sistema e, opcionalmente, excluído do repositório de perfis. O perfil não está mais disponível para uso e não é enumerável em nenhum escopo.
 
-No
+Não
 
 Usuário atual
 
@@ -183,7 +183,7 @@ O perfil está instalado e é do tipo ICC ou CDMP
 
 O perfil está disponível para uso com o dispositivo por todos os usuários. Ele é enumerável, no escopo de todo o sistema e também no escopo do usuário atual para todos os usuários, como associado ao dispositivo.
 
-No
+Não
 
 Usuário atual
 
@@ -191,7 +191,7 @@ O perfil está instalado. Não importa se o perfil já está associado ao dispos
 
 O perfil está disponível para uso com o dispositivo pelo usuário atual. Ele é enumerável somente no escopo do usuário atual (a menos que também haja uma associação em todo o sistema) como associado ao dispositivo.
 
-Yes
+Sim
 
 $ {ROWSPAN2} $Disassociate o perfil do dispositivo $ {REMOVE} $  
 
@@ -201,7 +201,7 @@ O perfil está associado ao dispositivo no escopo de todo o sistema e é do tipo
 
 O perfil não está mais disponível para uso (exceto para usuários que têm essa associação em seu escopo de usuário atual também). Não é enumerável no escopo de todo o sistema. No entanto, pode ser enumerável no escopo do usuário atual, para um usuário que tenha essa associação em seu escopo.
 
-No
+Não
 
 Usuário atual
 
@@ -209,7 +209,7 @@ O perfil está associado ao dispositivo no escopo do usuário atual (independent
 
 O perfil não está mais disponível para uso ou enumerável como associado ao dispositivo, pelo usuário atual (a menos que ele também esteja associado no escopo de todo o sistema ao dispositivo).
 
-Yes
+Sim
 
 $ {ROWSPAN2} $Set o perfil para um tipo (DMP ou ICC) como padrão para um dispositivo $ {REMOVE} $  
 
@@ -219,7 +219,7 @@ O perfil é do tipo ICC ou CDMP
 
 O perfil é usado por padrão para o tipo específico com o dispositivo, para todos os usuários, exceto aqueles que substituíram essa configuração em seu escopo de usuário atual. (O perfil é instalado e associado ao sistema de dispositivos em todo, se esse ainda não for o caso.)
 
-No
+Não
 
 Usuário atual
 
@@ -237,7 +237,7 @@ Somente perfis ICC e CDMP podem ser associados a dispositivos.
 
 O perfil é usado por padrão para o tipo específico. Os usuários podem substituir essa configuração no escopo do usuário atual. (O perfil é instalado, se esse ainda não for o caso.)
 
-No
+Não
 
 Usuário atual
 
@@ -251,13 +251,13 @@ $ {ROWSPAN2} $Erase a substituição do usuário atual para uma configuração d
 
 Todo o sistema
 
-Não aplicável
+Não se aplica
 
 Usuário atual
 
 Mesmo para consultas de usuário atual em configurações de perfil padrão, as configurações de todo o sistema são retornadas para uso.
 
-Yes
+Sim
 
 $ {ROWSPAN2} $Enumerate perfis instalados que atendem a critérios específicos (como classe de dispositivo, classe de perfil, etc.) $ {REMOVER} $  
 
@@ -267,7 +267,7 @@ Somente perfis ICC e CDMP podem ser associados e enumerados para dispositivos.
 
 Os perfis que estão instalados e atendem aos critérios especificados no escopo de todo o sistema são enumerados.
 
-Yes
+Sim
 
 Usuário atual
 
@@ -275,7 +275,7 @@ Somente perfis ICC e CDMP podem ser associados a dispositivos e, portanto, enume
 
 Os perfis que estão instalados e atendem aos critérios especificados no escopo de todo o sistema são enumerados.
 
-Yes
+Sim
 
 $ {ROWSPAN2} $Enumerate perfis associados a um dispositivo específico que atendem a critérios específicos, como classe de dispositivo e classe de perfil $ {REMOVE} $  
 
@@ -285,7 +285,7 @@ Somente perfis ICC e CDMP podem ser associados e enumerados para dispositivos.
 
 Os perfis associados ao dispositivo no escopo de todo o sistema e atendem aos critérios especificados no escopo de todo o sistema são enumerados.
 
-Yes
+Sim
 
 Usuário atual
 
@@ -293,7 +293,7 @@ Somente perfis ICC e CDMP podem ser associados e enumerados para dispositivos.
 
 Os perfis que estão disponíveis como associados ao dispositivo no escopo do usuário atual, que inclui as associações de todo o sistema e atendem aos critérios especificados no escopo do usuário atual são enumerados.
 
-Yes
+Sim
 
 
 
@@ -388,7 +388,7 @@ Nova API WCS com suporte a escopo de gerenciamento de perfil de usuário atual e
 
 
 
-Camada de armazenamento de configuração de gerenciamento de perfil
+configuração de gerenciamento de perfil Armazenamento camada
 
 Rotinas de configuração global independentes de dispositivo
 
@@ -398,7 +398,7 @@ $ {ROWSPAN3} $Profile a instalação e o gerenciamento de configurações de per
 
 Associação de dispositivo e gerenciamento de configurações de perfil padrão específicas do dispositivo, com suporte no escopo de armazenamento de todo o sistema e do usuário atual.
 
-Device-Specific camada de armazenamento
+Device-Specific Armazenamento camada
 
 Imprimir armazenamento específico
 

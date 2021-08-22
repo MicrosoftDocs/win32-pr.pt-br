@@ -14,12 +14,12 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: f6ba7865cb3b90f42ede71b169f98f8ce45e722d
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: ac737353c08bc937f62212e98358909c8619873c51775b1ad15f802bdcc46a52
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825235"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119301576"
 ---
 # <a name="logon-count-attribute"></a>Logon-Count atributo
 
@@ -58,7 +58,7 @@ O número de vezes que a conta foi conectada com êxito. Um valor de 0 indica qu
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -79,7 +79,7 @@ O número de vezes que a conta foi conectada com êxito. Um valor de 0 indica qu
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -100,7 +100,7 @@ O número de vezes que a conta foi conectada com êxito. Um valor de 0 indica qu
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| É de valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
 | No catálogo global      | Falso                             |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
@@ -121,10 +121,10 @@ O número de vezes que a conta foi conectada com êxito. Um valor de 0 indica qu
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -142,10 +142,10 @@ O número de vezes que a conta foi conectada com êxito. Um valor de 0 indica qu
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -163,10 +163,10 @@ O número de vezes que a conta foi conectada com êxito. Um valor de 0 indica qu
 | ID do link                | \-                                |
 | MAPI-Id                | \-                                |
 | System-Only            | Falso                             |
-| É de valor único       | True                              |
+| Tem valor único       | Verdadeiro                              |
 | É indexado             | Falso                             |
-| No catálogo global      | Falso                             |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                      |
+| No Catálogo Global      | Falso                             |
+| Descritor de segurança NT | O:BAG:BAD:S:                      |
 | Range-Lower            | \-                                |
 | Range-Upper            | \-                                |
 | Search-Flags           | 0x00000000                        |
@@ -177,10 +177,10 @@ O número de vezes que a conta foi conectada com êxito. Um valor de 0 indica qu
 
 ## <a name="remarks"></a>Comentários
 
-Esse atributo não é replicado e é mantido em cada controlador de domínio no domínio. Para obter um valor preciso para o número total de tentativas de logon bem-sucedidas do usuário no domínio, cada controlador de domínio no domínio deve ser consultado e a soma dos valores deve ser usada. Lembre-se de que o atributo não é replicado, portanto, os controladores de domínio que são desativados também podem ter os logons contados para o usuário, e eles ficarão ausentes da contagem.
+Esse atributo não é replicado e é mantido em cada controlador de domínio no domínio. Para obter um valor preciso para o número total de tentativas de logon bem-sucedidas do usuário no domínio, cada controlador de domínio no domínio deve ser consultado e a soma dos valores deve ser usada. Tenha em mente que o atributo não é replicado, portanto, os controladores de domínio que estão desapossados também podem ter contado logons para o usuário, e eles estarão ausentes da contagem.
 
 > [!IMPORTANT]
-> Devido à compatibilidade com as versões de 16 bits do LAN Manager, o atributo tem um limite superior de 65535. Depois que esse limite for atingido, você não poderá usá-lo como um indicador de atividade do usuário nesse controlador de domínio.
+> Devido à compatibilidade com versões de 16 bits do LAN Manager, o atributo tem um limite superior de 65535. Depois que esse limite tiver sido atingido, você não poderá usá-lo como um indicador de atividade do usuário neste controlador de domínio.
 
  
 

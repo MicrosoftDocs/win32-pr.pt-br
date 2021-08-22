@@ -1,7 +1,7 @@
 ---
-description: Destrói uma coleção de pontos de referência existente. Esse método pode, como efeito colateral, destruir outros pontos de referência que dependem da coleção de pontos de referência afetada.
+description: Destrói uma coleção de pontos de referência existente. Esse método pode como um efeito colateral destruir outros pontos de referência que dependem da coleção de pontos de referência afetados.
 ms.assetid: 72c116f4-f844-494c-96ea-e97c49a2af7e
-title: Método DestroyReferencePoint da classe Msvm_CollectionReferencePointService
+title: Método DestroyReferencePoint da classe Msvm_CollectionReferencePointService dados
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: d7fb3fd9168778854518022744f1a0c5ba3c5f79
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 95745646c410c2752f146fc05042b26215f41ef23d3637701497ad565e06583c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "104091804"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119531986"
 ---
-# <a name="destroyreferencepoint-method-of-the-msvm_collectionreferencepointservice-class"></a>Método DestroyReferencePoint da \_ classe CollectionReferencePointService Msvm
+# <a name="destroyreferencepoint-method-of-the-msvm_collectionreferencepointservice-class"></a>Método DestroyReferencePoint da classe Msvm \_ CollectionReferencePointService
 
-Destrói uma coleção de pontos de referência existente. Esse método pode, como efeito colateral, destruir outros pontos de referência que dependem da coleção de pontos de referência afetada.
+Destrói uma coleção de pontos de referência existente. Esse método pode como um efeito colateral destruir outros pontos de referência que dependem da coleção de pontos de referência afetados.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -40,21 +40,21 @@ uint32 DestroyReferencePoint(
 
 <dl> <dt>
 
-*AffectedReferencePointCollection* \[ no\]
+*AffectedReferencePointCollection* \[ Em\]
 </dt> <dd>
 
 Referência à coleção de pontos de referência do sistema virtual afetado.
 
 </dd> <dt>
 
-*Trabalho* \[ do fora\]
+*Trabalho* \[ out\]
 </dt> <dd>
 
-Se a operação for de longa execução, opcionalmente, um trabalho poderá ser retornado.
+Se a operação for de execução longa, opcionalmente, um trabalho poderá ser retornado.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Se for bem-sucedido, retornará 0 (sem erro) ou 4096 (trabalho iniciado); caso contrário, retorne um erro.
 
@@ -69,7 +69,7 @@ Se for bem-sucedido, retornará 0 (sem erro) ou 4096 (trabalho iniciado); caso c
 **Falha** (2)
 </dt> <dt>
 
-**Tempo limite** (3)
+**Tempoout** (3)
 </dt> <dt>
 
 **Parâmetro inválido** (4)
@@ -81,16 +81,16 @@ Se for bem-sucedido, retornará 0 (sem erro) ou 4096 (trabalho iniciado); caso c
 **Tipo inválido** (6)
 </dt> <dt>
 
-**DMTF reservado** (..)
+**DMTF Reservado** (..)
 </dt> <dt>
 
-**Parâmetros de método marcados-trabalho iniciado** (4096)
+**Parâmetros de método verificados – Trabalho iniciado** (4096)
 </dt> <dt>
 
-**Método reservado** (4097.. 32767)
+**Método Reservado** (4097..32767)
 </dt> <dt>
 
-**Específico do fornecedor** (32768.. 65535)
+**Específico do** fornecedor (32768..65535)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -99,10 +99,10 @@ Se for bem-sucedido, retornará 0 (sem erro) ou 4096 (trabalho iniciado); caso c
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows 10\]<br/>                                                             |
+| Cliente mínimo com suporte<br/> | \[Windows 10 somente aplicativos da área de trabalho\]<br/>                                                             |
 | Servidor mínimo com suporte<br/> | Windows Server 2016<br/>                                                                          |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Namespace<br/>                | Virtualização \\ raiz \\ v2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

@@ -1,5 +1,5 @@
 ---
-description: Inicializa um objeto de serviço do sistema para instalar um objeto ActiveX quando o usuário atual não tem permissão para instalar o objeto.
+description: inicializa um objeto de serviço do sistema para instalar um objeto de ActiveX quando o usuário atual não tem permissão para instalar o objeto.
 ms.assetid: 42f7cf83-789b-42ea-bb1a-4b79137188ea
 title: Interface IeAxiService
 ms.topic: reference
@@ -12,16 +12,16 @@ api_name:
 api_type:
 - COM
 api_location: ''
-ms.openlocfilehash: 34c4743327b2539616dee6b09c34d9f479aa3303
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f799b0b306d10e8246afbef83e4677729f6a735a52e5e4ed4954b873ec5b6201
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "105755968"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119414716"
 ---
 # <a name="ieaxiservice-interface"></a>Interface IeAxiService
 
-A interface **IAxiService** Inicializa um objeto de serviço do sistema para instalar um objeto ActiveX quando o usuário atual não tem permissão para instalar o objeto.
+a interface **IAxiService** inicializa um objeto de serviço do sistema para instalar um objeto de ActiveX quando o usuário atual não tem permissão para instalar o objeto.
 
 A classe [**CIeAxiInstallerService**](cieaxiinstallerservice.md) implementa essa interface.
 
@@ -65,8 +65,8 @@ A interface **IeAxiService** tem esses métodos.
 
 | Método                                        | Descrição                                                        |
 |:----------------------------------------------|:-------------------------------------------------------------------|
-| [**Eliminação**](ieaxiservice-cleanup.md)       | Libera recursos usados pela interface **IeAxiService** .<br/> |
-| [**Inicializar**](ieaxiservice-initialize.md) | Verifica e baixa um objeto ActiveX.<br/>                 |
+| [**Limpeza**](ieaxiservice-cleanup.md)       | Libera recursos usados pela interface **IeAxiService** .<br/> |
+| [**Inicializar**](ieaxiservice-initialize.md) | verifica e baixa um objeto de ActiveX.<br/>                 |
 
 
 
@@ -78,7 +78,7 @@ A interface **IeAxiService** tem esses métodos.
 
 | Requisito | Valor |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | Windows Vista Business, Windows Vista Enterprise, \[ somente aplicativos de área de trabalho do Windows Vista Ultimate\]<br/> |
+| Cliente mínimo com suporte<br/> | Windows vista Business, Windows vista Enterprise, \[ somente os aplicativos de área de trabalho do Windows vista Ultimate\]<br/> |
 | Servidor mínimo com suporte<br/> | Nenhum compatível<br/>                                                                                 |
 | IID<br/>                      | IID \_ IeAxiService é definido como E9E92380-9ECD-4982-A0EB-6815A56CCF27<br/>                           |
 

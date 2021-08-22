@@ -4,12 +4,12 @@ ms.assetid: 68bf064c-dd85-4796-8e08-6af307f94ad8
 title: Tabela BindImage
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: f47b97efc8886d7748d0426a49ed76567810939c
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 729ae4f36f3b258845bcba13748495dc9dfb53c86268bd61e98475d1c7c0c282
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "103921483"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119500757"
 ---
 # <a name="bindimage-table"></a>Tabela BindImage
 
@@ -21,8 +21,8 @@ A tabela BindImage tem as colunas a seguir.
 
 | Coluna | Tipo                         | Chave | Nullable |
 |--------|------------------------------|-----|----------|
-| Arquivo\_ | [Identificador](identifier.md) | S   | N        |
-| Caminho   | [Caminhos](paths.md)           | N   | S        |
+| Arquivo\_ | [Identificador](identifier.md) | Y   | N        |
+| Caminho   | [Caminhos](paths.md)           | N   | Y        |
 
 
 

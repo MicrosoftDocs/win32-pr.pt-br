@@ -1,5 +1,5 @@
 ---
-description: Remove os parâmetros DH-CHAP (Diffie Hellman-Challenge Handshake Authentication Protocol) de uma porta de Fibre Channel sintética em uma máquina virtual.
+description: Remove parâmetros DH-CHAP (Diffie Hellman – Challenge Handshake Authentication Protocol) de uma porta Fibre Channel sintética em uma máquina virtual.
 ms.assetid: f15673e2-287d-4e87-bee4-6c0f5f9178c8
 title: Método RemoveFibreChannelChap da classe Msvm_VirtualSystemManagementService
 ms.topic: reference
@@ -13,16 +13,16 @@ api_type:
 - COM
 api_location:
 - vmms.exe
-ms.openlocfilehash: 06e944c3c592b0b61ace8a72b5d42a801ab0f5df
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9b934839f6d908594ee58f0838c884fdedc48f372de061482ddf2147123a351c
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105757404"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119147789"
 ---
-# <a name="removefibrechannelchap-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveFibreChannelChap da \_ classe VirtualSystemManagementService Msvm
+# <a name="removefibrechannelchap-method-of-the-msvm_virtualsystemmanagementservice-class"></a>Método RemoveFibreChannelChap da classe Msvm \_ VirtualSystemManagementService
 
-Remove os parâmetros DH-CHAP (Diffie Hellman-Challenge Handshake Authentication Protocol) de uma porta de Fibre Channel sintética em uma máquina virtual. Esse método falhará se a máquina virtual estiver em execução.
+Remove parâmetros DH-CHAP (Diffie Hellman – Challenge Handshake Authentication Protocol) de uma porta Fibre Channel sintética em uma máquina virtual. Esse método falhará se a máquina virtual estiver em execução.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,14 +39,14 @@ uint32 RemoveFibreChannelChap(
 
 <dl> <dt>
 
-*FcPortSettings* \[ no\]
+*FcPortSettings* \[ Em\]
 </dt> <dd>
 
-Uma matriz de cadeias de caracteres que contém uma instância inserida da classe [**Msvm \_ SyntheticFcPortSettingData**](msvm-syntheticfcportsettingdata.md) que define as portas de Fibre Channel sintéticas das quais os parâmetros DH-CHAP são removidos. A propriedade **InstanceId** de cada uma dessas instâncias identifica os elementos a serem modificados.
+Uma matriz de cadeias de caracteres que contêm uma instância inserida da classe [**Msvm \_ SyntheticFcPortSettingData**](msvm-syntheticfcportsettingdata.md) que define as portas Fibre Channel sintéticas das quais remover os parâmetros DH-CHAP. A **propriedade InstanceID** de cada uma dessas instâncias identifica os elementos a serem modificados.
 
 </dd> </dl>
 
-## <a name="return-value"></a>Retornar valor
+## <a name="return-value"></a>Valor retornado
 
 Esse método retorna um dos valores a seguir.
 
@@ -64,16 +64,16 @@ Esse método retorna um dos valores a seguir.
 **Sem suporte** (32770)
 </dt> <dt>
 
-O **status é desconhecido** (32771)
+**O status é desconhecido** (32771)
 </dt> <dt>
 
-**Tempo limite** (32772)
+**Tempoout** (32772)
 </dt> <dt>
 
 **Parâmetro inválido** (32773)
 </dt> <dt>
 
-O **sistema está em uso** (32774)
+**O sistema está em uso** (32774)
 </dt> <dt>
 
 **Estado inválido para esta operação** (32775)
@@ -82,10 +82,10 @@ O **sistema está em uso** (32774)
 **Tipo de dados incorreto** (32776)
 </dt> <dt>
 
-O **sistema não está disponível** (32777)
+**O sistema não está disponível** (32777)
 </dt> <dt>
 
-**Memória insuficiente** (32778)
+**Memória sem memória** (32778)
 </dt> </dl>
 
 ## <a name="requirements"></a>Requisitos
@@ -94,10 +94,10 @@ O **sistema não está disponível** (32777)
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 8\]<br/>                                                              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2012\]<br/>                                                    |
-| Namespace<br/>                | \\Virtualização \\ v2 de raiz<br/>                                                                     |
-| MOF<br/>                      | <dl> <dt>WindowsVirtualization. v2. mof</dt> </dl> |
+| Cliente mínimo com suporte<br/> | \[Windows 8 somente aplicativos da área de trabalho\]<br/>                                                              |
+| Servidor mínimo com suporte<br/> | \[Windows Server 2012 somente aplicativos da área de trabalho\]<br/>                                                    |
+| Namespace<br/>                | Virtualização \\ raiz \\ V2<br/>                                                                     |
+| MOF<br/>                      | <dl> <dt>WindowsVirtualization.V2.mof</dt> </dl> |
 | DLL<br/>                      | <dl> <dt>Vmms.exe</dt> </dl>                     |
 
 

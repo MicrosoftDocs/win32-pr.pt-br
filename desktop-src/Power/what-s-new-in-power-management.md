@@ -1,19 +1,19 @@
 ---
-description: O Windows 10 ajuda seu aplicativo a otimizar o consumo de energia quando ele está em execução em um dispositivo móvel.
+description: Windows 10 ajuda seu aplicativo a otimizar o consumo de energia quando estiver em execução em um dispositivo móvel.
 ms.assetid: a956b88c-8a75-4c1c-af27-53c69feb1596
 title: Novidades no gerenciamento de energia
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 8e6c8394c2e5e6750b5d01fd997d374a9f87e10d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: f2ac6ba320a98fce339f5bfacfe2d9b4a259be5a8150b2bcaabcac41179869e1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "105775666"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119143189"
 ---
 # <a name="whats-new-in-power-management"></a>Novidades do gerenciamento de energia
 
-O Windows 10 ajuda seu aplicativo a otimizar o consumo de energia quando ele está em execução em um dispositivo móvel.
+Windows 10 ajuda seu aplicativo a otimizar o consumo de energia quando ele está em execução em um dispositivo móvel.
 
 ## <a name="battery-saver"></a>Economia de bateria
 

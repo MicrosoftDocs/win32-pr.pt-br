@@ -1,7 +1,7 @@
 ---
 description: Identifica os dados do recurso.
 ms.assetid: f2ace2ad-228f-4f76-ab31-16e045e09331
-title: Estrutura de D3DXF_FILELOADRESOURCE (D3dx9xof. h)
+title: D3DXF_FILELOADRESOURCE (D3dx9xof.h)
 ms.topic: reference
 ms.date: 05/31/2018
 topic_type:
@@ -13,14 +13,14 @@ api_type:
 - HeaderDef
 api_location:
 - d3dx9xof.h
-ms.openlocfilehash: ee5dc27b551382a5fa5d1c7f4833c94b205e5521
-ms.sourcegitcommit: 14010c34b35fa268046c7683f021f86de08ddd0a
+ms.openlocfilehash: ddc105d3df7732e1572e41c3d9cb47a285caf69cba0a24f6ea65090706394592
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "105781217"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119564926"
 ---
-# <a name="d3dxf_fileloadresource-structure"></a>\_Estrutura D3DXF FILELOADRESOURCE
+# <a name="d3dxf_fileloadresource-structure"></a>Estrutura FILELOADRESOURCE D3DXF \_
 
 Identifica os dados do recurso.
 
@@ -41,25 +41,25 @@ typedef struct D3DXF_FILELOADRESOURCE {
 
 <dl> <dt>
 
-**hModule**
+**Hmodule**
 </dt> <dd>
 
 Tipo: **[ **HMODULE**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Identificador do módulo que contém o recurso a ser carregado. Se esse membro for **nulo**, o recurso deverá ser anexado ao arquivo executável que o usará.
+Lidar com o módulo que contém o recurso a ser carregado. Se esse membro for **NULL,** o recurso deverá ser anexado ao arquivo executável que o usará.
 
 </dd> <dt>
 
-**lpName**
+**Lpname**
 </dt> <dd>
 
 Tipo: **[ **LPCSTR**](../winprog/windows-data-types.md)**
 
 </dd> <dd>
 
-Ponteiro para uma cadeia de caracteres especificando o nome do recurso a ser carregado. Por exemplo, se o recurso for uma malha, esse membro deverá especificar o nome do arquivo de malha.
+Ponteiro para uma cadeia de caracteres que especifica o nome do recurso a ser carregado. Por exemplo, se o recurso for uma malha, esse membro deverá especificar o nome do arquivo de malha.
 
 </dd> <dt>
 
@@ -76,7 +76,7 @@ Ponteiro para uma cadeia de caracteres que especifica o tipo definido pelo usuá
 
 ## <a name="remarks"></a>Comentários
 
-Essa estrutura identifica um recurso a ser carregado quando um aplicativo usa o método [**Createenumobject**](id3dxfile--createenumobject.md) e especifica o [sinalizador \_ \_ FROMRESOURCE fileload D3DXF](d3dxf.md) .
+Essa estrutura identifica um recurso a ser carregado quando um aplicativo usa o método [**CreateEnumObject**](id3dxfile--createenumobject.md) e especifica o sinalizador [D3DXF \_ FILELOAD \_ FROMRESOURCE.](d3dxf.md)
 
 ## <a name="requirements"></a>Requisitos
 
@@ -84,7 +84,7 @@ Essa estrutura identifica um recurso a ser carregado quando um aplicativo usa o 
 
 | Requisito | Valor |
 |-------------------|---------------------------------------------------------------------------------------|
-| parâmetro<br/> | <dl> <dt>D3dx9xof. h</dt> </dl> |
+| parâmetro<br/> | <dl> <dt>D3dx9xof.h</dt> </dl> |
 
 
 

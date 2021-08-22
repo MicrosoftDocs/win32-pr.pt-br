@@ -3,7 +3,7 @@ title: Propriedade Command. SmallImages
 description: Representa um contêiner de imagens; Nesse caso, imagens pequenas.
 ms.assetid: 15c00e61-543a-4cc8-b329-516985d02359
 keywords:
-- Faixa de das propriedades do Windows de Propriedade Command. SmallImages
+- propriedade Command. SmallImages da faixa de Windows
 topic_type:
 - apiref
 api_name:
@@ -12,12 +12,12 @@ api_type:
 - NA
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: b18556cf519c21b01c3e80b63cbfc9cdf9d7d153
-ms.sourcegitcommit: a1494c819bc5200050696e66057f1020f5b142cb
+ms.openlocfilehash: 63445f2dbfce88e9793b3563d0ce8ed9861f45fa0831680a455b1a0a04bb4bd1
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "104455782"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119329266"
 ---
 # <a name="commandsmallimages-property"></a>Propriedade Command. SmallImages
 
@@ -61,7 +61,7 @@ Opcional.
 
 Pode ocorrer no máximo uma vez para cada [**comando**](windowsribbon-element-command.md).
 
-Os recursos de imagem devem estar em conformidade com o formato gráfico BMP (bitmap padrão) usado no Windows.
+Os recursos de imagem devem estar em conformidade com o formato gráfico BMP (bitmap padrão) usado em Windows.
 
 ## <a name="examples"></a>Exemplos
 
@@ -117,8 +117,8 @@ Esta seção de código mostra as declarações de comando [**SplitButton**](win
 
 | Requisito | Valor |
 |-------------------------------------|---------------------------------------------------------|
-| Cliente mínimo com suporte<br/> | \[Somente aplicativos de área de trabalho do Windows 7\]<br/>              |
-| Servidor mínimo com suporte<br/> | \[Somente aplicativos da área de trabalho do Windows Server 2008 R2\]<br/> |
+| Cliente mínimo com suporte<br/> | \[somente aplicativos de área de trabalho Windows 7\]<br/>              |
+| Servidor mínimo com suporte<br/> | Windows \[Somente aplicativos da área de trabalho do Server 2008 R2\]<br/> |
 
 
 

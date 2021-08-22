@@ -1,11 +1,11 @@
 ---
 title: Atributo MS-SQL-PublicationURL
-description: O atributo MS-SQL-PublicationURL não está sendo usado no momento.
+description: O atributo MS-SQL-PublicationURL não é usado no momento.
 ms.assetid: d758274e-7b55-4f94-a652-a33960a78fef
 ms.tgt_platform: multiple
 keywords:
-- Esquema de AD do atributo MS-SQL-PublicationURL
-- Esquema de AD do atributo mS-SQL-PublicationURL
+- Esquema do AD do atributo MS-SQL-PublicationURL
+- Esquema do AD do atributo mS-SQL-PublicationURL
 topic_type:
 - apiref
 api_name:
@@ -14,29 +14,29 @@ api_type:
 - Schema
 ms.topic: reference
 ms.date: 05/31/2018
-ms.openlocfilehash: dbea0cdad10c046d544529ad7b0467c32556c63a
-ms.sourcegitcommit: b77ace27b0432e7cd3863191b11926be032fbe2f
+ms.openlocfilehash: de0c2eb666cc848f7d64156bec109e8ae17dcd1b7a5a30828c4ea0974688d6df
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "103825397"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119299596"
 ---
 # <a name="ms-sql-publicationurl-attribute"></a>Atributo MS-SQL-PublicationURL
 
-O atributo **MS-SQL-PublicationURL** não está sendo usado no momento.
+O **atributo MS-SQL-PublicationURL** não é usado no momento.
 
 
 
 | Entrada | Valor |
 |-------------------|---------------------------------------------|
 | CN                | MS-SQL-PublicationURL                       |
-| LDAP-Display-Name | mS-SQL-PublicationURL                       |
+| Ldap-Display-Name | mS-SQL-PublicationURL                       |
 | Tamanho              | \-                                          |
 | Privilégio de atualização  | \-                                          |
 | Frequência de atualização  | \-                                          |
 | Attribute-Id      | 1.2.840.113556.1.4.1384                     |
-| System-ID-GUID    | ae0c11b8-ccee-11d2-9993-0000f87a57d4        |
-| Syntax            | [**Cadeia de caracteres (Unicode)**](s-string-unicode.md) |
+| System-Id-Guid    | ae0c11b8-ccee-11d2-9993-0000f87a57d4        |
+| Syntax            | [**String(Unicode)**](s-string-unicode.md) |
 
 
 
@@ -58,10 +58,10 @@ O atributo **MS-SQL-PublicationURL** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| É de valor único       | True                                                                                                                                                                                |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                |
 | É indexado             | Falso                                                                                                                                                                               |
-| No catálogo global      | Falso                                                                                                                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                        |
+| No Catálogo Global      | Falso                                                                                                                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
@@ -79,10 +79,10 @@ O atributo **MS-SQL-PublicationURL** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| É de valor único       | True                                                                                                                                                                                |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                |
 | É indexado             | Falso                                                                                                                                                                               |
-| No catálogo global      | Falso                                                                                                                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                        |
+| No Catálogo Global      | Falso                                                                                                                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
@@ -100,10 +100,10 @@ O atributo **MS-SQL-PublicationURL** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| É de valor único       | True                                                                                                                                                                                |
+| Tem valor único       | Verdadeiro                                                                                                                                                                                |
 | É indexado             | Falso                                                                                                                                                                               |
-| No catálogo global      | Falso                                                                                                                                                                               |
-| NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                        |
+| No Catálogo Global      | Falso                                                                                                                                                                               |
+| Descritor de segurança NT | O:BAG:BAD:S:                                                                                                                                                                        |
 | Range-Lower            | \-                                                                                                                                                                                  |
 | Range-Upper            | \-                                                                                                                                                                                  |
 | Search-Flags           | 0x00000000                                                                                                                                                                          |
@@ -121,7 +121,7 @@ O atributo **MS-SQL-PublicationURL** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| É de valor único       | True                                                                                                                                                                                |
+| É de valor único       | Verdadeiro                                                                                                                                                                                |
 | É indexado             | Falso                                                                                                                                                                               |
 | No catálogo global      | Falso                                                                                                                                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                        |
@@ -142,7 +142,7 @@ O atributo **MS-SQL-PublicationURL** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| É de valor único       | True                                                                                                                                                                                |
+| É de valor único       | Verdadeiro                                                                                                                                                                                |
 | É indexado             | Falso                                                                                                                                                                               |
 | No catálogo global      | Falso                                                                                                                                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                        |
@@ -163,7 +163,7 @@ O atributo **MS-SQL-PublicationURL** não está sendo usado no momento.
 | ID do link                | \-                                                                                                                                                                                  |
 | MAPI-Id                | \-                                                                                                                                                                                  |
 | System-Only            | Falso                                                                                                                                                                               |
-| É de valor único       | True                                                                                                                                                                                |
+| É de valor único       | Verdadeiro                                                                                                                                                                                |
 | É indexado             | Falso                                                                                                                                                                               |
 | No catálogo global      | Falso                                                                                                                                                                               |
 | NT-Security-Descriptor | O:BAG: INADEQUADO: S:                                                                                                                                                                        |

@@ -4,12 +4,12 @@ description: Entrando no estado de execução
 ms.assetid: 2173eaa9-0e60-4411-81e4-dbabc5fe89b2
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 959038c8f64fe8750ab1bcf0f06b753371f04136
-ms.sourcegitcommit: 2d531328b6ed82d4ad971a45a5131b430c5866f7
+ms.openlocfilehash: 0e91261df578697afef0e33dd8c8ea847eb50cfd546dd96ee0a0085d67100bfd
+ms.sourcegitcommit: e858bbe701567d4583c50a11326e42d7ea51804b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "103916211"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119501056"
 ---
 # <a name="entering-the-running-state"></a>Entrando no estado de execução
 
@@ -23,9 +23,9 @@ Quando um objeto vinculado faz a transição para o estado de execução, o proc
 -   Quando a origem do link está em execução, o OLE é associado à instância em execução do objeto em vez de executar outra instância. No caso de objetos incorporados aninhados, um dos quais é a origem do link, o OLE deve ser capaz de se associar a um objeto já em execução em qualquer ponto.
 -   A execução de um objeto requer o acesso à área de armazenamento para o objeto. Quando um objeto inserido é executado, o OLE recebe um ponteiro para o armazenamento durante o processo de carregamento, que passa para o aplicativo do servidor OLE. Para objetos vinculados, no entanto, não há nenhuma interface padrão para acessar o armazenamento. O aplicativo do servidor OLE pode usar a interface do sistema de arquivos ou algum outro mecanismo.
 
- 
+ 
 
- 
+ 
 
 
 

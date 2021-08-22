@@ -3,12 +3,12 @@ description: Como excluir um aplicativo da caixa de diálogo abrir com para o ti
 title: Como excluir um aplicativo da caixa de diálogo abrir com para tipos de arquivo não associados
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 9443416e95fca112623d487bf58f4fce1d51d13d
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 9d90ae5ab49128df1eedd9b760286ce54f6b6498cbe00d4a945145a80f956cde
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104560557"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119350906"
 ---
 # <a name="how-to-exclude-an-application-from-the-open-with-dialog-box-for-unassociated-file-types"></a>Como excluir um aplicativo da caixa de diálogo abrir com para tipos de arquivo não associados
 
@@ -22,7 +22,7 @@ Para impedir que um aplicativo apareça na caixa de diálogo **abrir com** quand
 
 ### <a name="step-1"></a>Etapa 1:
 
-Adicione uma entrada NoOpenWith à subchave do aplicativo. Quando um aplicativo usa um tipo de arquivo, o Windows registra essas informações para criar a lista de **programas recomendados** . Essa lista é apresentada no submenu **abrir com** , conforme mostrado na captura de tela a seguir.
+Adicione uma entrada NoOpenWith à subchave do aplicativo. quando um aplicativo usa um tipo de arquivo, o Windows registra essas informações para criar a lista de **programas recomendados** . Essa lista é apresentada no submenu **abrir com** , conforme mostrado na captura de tela a seguir.
 
 ![captura de tela do menu de atalho com o submenu abrir com mostrado](images/file-assoc/openwithsubmenu.png)
 

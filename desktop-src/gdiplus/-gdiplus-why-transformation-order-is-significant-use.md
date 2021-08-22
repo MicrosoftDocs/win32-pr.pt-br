@@ -4,18 +4,18 @@ ms.assetid: 1dc68ff8-6b17-4934-82da-ab2fc612aafa
 title: Por que a ordem das transformações é importante
 ms.topic: article
 ms.date: 05/31/2018
-ms.openlocfilehash: 1a7350d63456902ff47183faa08170b3b2fef481
-ms.sourcegitcommit: 831e8f3db78ab820e1710cede244553c70e50500
+ms.openlocfilehash: 7b8a7c0c840fa5c2debaccef4450c525bab8cf7f6e4373653eadaf53a6538891
+ms.sourcegitcommit: e6600f550f79bddfe58bd4696ac50dd52cb03d7e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "104967394"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "119359576"
 ---
 # <a name="why-transformation-order-is-significant"></a>Por que a ordem das transformações é importante
 
 Um único objeto [**matriz**](/windows/desktop/api/gdiplusmatrix/nl-gdiplusmatrix-matrix) pode armazenar uma única transformação ou uma sequência de transformações. O último é chamado de *transformação* composta.   A matriz de uma transformação composta é obtida multiplicando-se as matrizes das transformações individuais.
 
-Em uma transformação composta, a ordem das transformações individuais é importante. Por exemplo, girar, ajustar a escala e mover terá um resultado diferente de mover, girar e ajustar a escala. No Windows GDI+, as transformações de composição são criadas da esquerda para a direita. Se S, R e T forem matrizes de escala, rotação e translação, respectivamente, o produto SRT (nesta ordem) será a matriz da transformação composta que primeiro ajusta a escala, em seguida girará e finalmente fará a translação. A matriz produzida pelo produto SRT será diferente da matriz produzida pelo produto TRS.
+Em uma transformação composta, a ordem das transformações individuais é importante. Por exemplo, girar, ajustar a escala e mover terá um resultado diferente de mover, girar e ajustar a escala. no Windows GDI+, as transformações de composição são criadas da esquerda para a direita. Se S, R e T forem matrizes de escala, rotação e translação, respectivamente, o produto SRT (nesta ordem) será a matriz da transformação composta que primeiro ajusta a escala, em seguida girará e finalmente fará a translação. A matriz produzida pelo produto SRT será diferente da matriz produzida pelo produto TRS.
 
 Um motivo de a ordem ser importante é que transformações, como rotação e colocação em escala, são feitas em relação a origem do sistema de coordenadas. O dimensionamento de um objeto que é centralizado na origem produz um resultado diferente do dimensionamento de um objeto que foi movido para fora da origem. Da mesma forma, girar um objeto centralizado na origem produz um resultado diferente de girar um objeto movido para fora da origem.
 
